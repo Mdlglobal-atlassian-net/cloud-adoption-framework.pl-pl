@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 8fccc60eb9944aca6801deb79310ebf07e10b109
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b6c526f407a50327aad8dd2fb2639cb7172cb8d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819467"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025223"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Wdrażanie strefy docelowej migracji
 
@@ -33,7 +33,7 @@ Na poniższej ilustracji przedstawiono strategię strefy docelowej migracji w st
 ![Dostosowywanie strategii](../../_images/ready/blueprint-overview.png)
 
 - Litera A znajduje po wewnętrznej stronie zakrzywionej linii, która oznacza zakres tej strategii. Ten zakres informuje, że strategia obejmuje ograniczoną złożoność architektury, ale jest oparta na względnie średnich wymaganiach dotyczących zgodności.
-- Dla klientów, którzy mają architekturę o wysokim stopniu złożoności i rygorystyczne wymagania w zakresie zgodności, bardziej odpowiednie będzie użycie rozszerzonej strategii partnera lub jednego z [przykładów strategii opartych na standardach](/azure/governance/blueprints/samples/).
+- Dla klientów, którzy mają architekturę o wysokim stopniu złożoności i rygorystyczne wymagania w zakresie zgodności, bardziej odpowiednie będzie użycie rozszerzonej strategii partnera lub jednego z [przykładów strategii opartych na standardach](https://docs.microsoft.com/azure/governance/blueprints/samples/).
 - Potrzeby większości klientów znajdują się między tymi dwoma skrajnymi przypadkami. Litera B reprezentuje proces opisany w artykułach na temat [zagadnień dotyczących strefy docelowej](../considerations/index.md). W przypadku klientów w tym obszarze można skorzystać ze wskazówek dotyczących podejmowania decyzji znajdujących się w tych artykułach, aby zidentyfikować węzły, które należy dodać do strategii strefy docelowej migracji w strukturze wdrażania chmury. Takie podejście umożliwia dostosowanie strategii do potrzeb.
 
 ## <a name="use-this-blueprint"></a>Korzystanie z tej strategii
@@ -67,7 +67,7 @@ Strategia strefy docelowej odzwierciedla następujące decyzje.
 |Grupy zasobów|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../considerations/scaling-subscriptions.md)         |
 |Data|ND|[Wybieranie odpowiedniej opcji programu SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
 |Magazyn|ND|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-guidance.md)         |
-|Standardy nazewnictwa i tagowania|ND|[Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../considerations/name-and-tag.md)         |
+|Standardy nazewnictwa i tagowania|ND|[Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../considerations/naming-and-tagging.md)         |
 |Zarządzanie kosztami|ND|[Śledzenie kosztów](../azure-best-practices/track-costs.md)|
 |Wystąpienia obliczeniowe|ND|[Opcje środowiska obliczeniowego](../considerations/compute-decisions.md)|
 

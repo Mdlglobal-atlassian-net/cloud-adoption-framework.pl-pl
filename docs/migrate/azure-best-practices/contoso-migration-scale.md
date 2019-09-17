@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 30a510d5acd5773253524200ea65e52a3325e10d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 52e78e6f1e9dd5ee19b9def9a1b9cb4cbcc869ae
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829620"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023992"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skalowanie migracji na platformę Azure
 
@@ -46,7 +46,7 @@ Po ustaleniu zamierzonych celów i wymagań firma Contoso przegląda zużycie za
 
 ## <a name="current-deployment"></a>Bieżące wdrożenie
 
-Po zaplanowaniu i skonfigurowaniu [infrastruktury platformy Azure](contoso-migration-infrastructure.md) i wypróbowaniu różnych kombinacji migracji w celu weryfikacji koncepcji zgodnie z opisem w powyższej tabeli firma Contoso jest gotowa do przystąpienia do pełnej migracji na platformę Azure na dużą skalę. Firma Contoso chce przeprowadzić migrację następujących elementów.
+Po zaplanowaniu i skonfigurowaniu [infrastruktury platformy Azure](./contoso-migration-infrastructure.md) i wypróbowaniu różnych kombinacji migracji w celu weryfikacji koncepcji zgodnie z opisem w powyższej tabeli firma Contoso jest gotowa do przystąpienia do pełnej migracji na platformę Azure na dużą skalę. Firma Contoso chce przeprowadzić migrację następujących elementów.
 
 <!--markdownlint-disable MD033 -->
 
@@ -123,7 +123,7 @@ Kandydat do weryfikacji koncepcji | T/N | Czy aplikacja może być używana do w
 Dług techniczny | Brak/Pewien/Poważny | Czy element spisu uruchamia lub wykorzystuje nieobsługiwane produkty, platformy lub systemy operacyjne?
 Konsekwencje dotyczące zapory | T/N | Czy aplikacja komunikuje się z ruchem internetowym/zewnętrznym?  Czy jest zintegrowana z zaporą?
 Problemy z zabezpieczeniami | T/N | Czy istnieją znane problemy z zabezpieczeniami aplikacji?  Czy aplikacja używa nieszyfrowanych danych lub nieaktualnych platform?
-Strategia migracji | Ponowne hostowanie/Refaktoryzacja/Zmiana architektury/Ponowna kompilacja | Jakiego rodzaju migracja jest potrzebna dla aplikacji? W jaki sposób aplikacja zostanie wdrożona na platformie Azure? [Dowiedz się więcej](contoso-migration-overview.md#migration-patterns).
+Strategia migracji | Ponowne hostowanie/Refaktoryzacja/Zmiana architektury/Ponowna kompilacja | Jakiego rodzaju migracja jest potrzebna dla aplikacji? W jaki sposób aplikacja zostanie wdrożona na platformie Azure? [Dowiedz się więcej](./contoso-migration-overview.md#migration-patterns).
 Złożoność techniczna | 1–5 | Jak złożona jest migracja? Ta wartość powinna być definiowana przez dział DevOps firmy Contoso i odpowiednich partnerów.
 Znaczenie biznesowe | 1–5 | Jak ważna jest aplikacja dla firmy? Na przykład niewielka aplikacja grupy roboczej może uzyskać wynik 1, a krytyczna aplikacja używana w całej organizacji może uzyskać wynik 5. Ten wynik będzie miał wpływ na poziom priorytetu migracji.
 Priorytet migracji | 1/2/3 | Jaki jest priorytet migracji aplikacji?
@@ -156,7 +156,7 @@ Usługa Azure Migrate pomaga odnajdywać i oceniać lokalne maszyny wirtualne VM
 Firma Contoso musi prawidłowo korzystać z usługi Azure Migrate, uwzględniając skalę tej migracji.
 
 - Firma Contoso przeprowadzi ocenę poszczególnych aplikacji przy użyciu usługi Azure Migrate. To zapewnia, że usługa Azure Migrate zwraca aktualne dane do witryny Azure Portal.
-- Administratorzy firmy Contoso czytają informacje o [wdrażaniu Azure Migrate na dużą skalę](/azure/migrate/how-to-scale-assessment)
+- Administratorzy firmy Contoso czytają informacje o [wdrażaniu Azure Migrate na dużą skalę](https://docs.microsoft.com/azure/migrate/how-to-scale-assessment)
 - Firma Contoso zauważa ograniczenia usługi Azure Migrate, które zostały podsumowane w poniższej tabeli.
 
 **Akcja** | **Limit**
@@ -209,8 +209,8 @@ Należy również zastanowić się nad danymi, szczególnie w przypadku wielu ba
 
 Firma Contoso korzysta głównie z kilku usług i narzędzi platformy Azure służących do migracji:
 
-- [Azure Site Recovery](/azure/site-recovery/site-recovery-overview): Organizuje odzyskiwanie po awarii i migruje lokalne maszyny wirtualne na platformę Azure.
-- [Azure Database Migration Service](/azure/dms/dms-overview): Migruje lokalne bazy danych, takie jak SQL Server, MySQL i Oracle, na platformę Azure.
+- [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview): Organizuje odzyskiwanie po awarii i migruje lokalne maszyny wirtualne na platformę Azure.
+- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview): Migruje lokalne bazy danych, takie jak SQL Server, MySQL i Oracle, na platformę Azure.
 
 #### <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -219,7 +219,7 @@ Azure Site Recovery to podstawowa usługa platformy Azure do organizowania odzys
 1. Site Recovery umożliwia organizowanie replikacji z lokacji lokalnych na platformę Azure.
 2. Po skonfigurowaniu i uruchomieniu replikacji maszyny lokalne można przełączać w tryb failover na platformę Azure, kończąc proces migracji.
 
-Firma Contoso już [ukończyła weryfikację koncepcji](contoso-migration-rehost-vm.md), aby zobaczyć, jak usługa Site Recovery może pomóc w migracji do chmury.
+Firma Contoso już [ukończyła weryfikację koncepcji](./contoso-migration-rehost-vm.md), aby zobaczyć, jak usługa Site Recovery może pomóc w migracji do chmury.
 
 ##### <a name="using-site-recovery-at-scale"></a>Korzystanie z usługi Site Recovery na dużą skalę
 
@@ -233,7 +233,7 @@ Firma Contoso planuje uruchamianie wielu migracji metodą „lift-and-shift”. 
 
 ###### <a name="gather-on-premises-information"></a>Zbieranie informacji lokalnych
 
-Firma Contoso może użyć narzędzia [Planista wdrażania usługi Site Recovery](/azure/site-recovery/site-recovery-deployment-planner), aby wykonać następujące czynności:
+Firma Contoso może użyć narzędzia [Planista wdrażania usługi Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-deployment-planner), aby wykonać następujące czynności:
 
 - Firma Contoso może używać narzędzia do zdalnego profilowania maszyn wirtualnych bez wpływu na środowisko produkcyjne. Ułatwia to ustalanie wymagań dotyczących przepustowości i pamięci masowej na potrzeby replikacji i trybu failover.
 - Firma Contoso może uruchomić narzędzie bez instalowania składników usługi Site Recovery w środowisku lokalnym.
@@ -262,10 +262,10 @@ Firma Contoso potrzebuje dowiedzieć się, jak wdrażać te składniki, na podst
 --- | ---
 **Maksymalny dzienny współczynnik zmian** | Pojedynczy serwer przetwarzania może obsłużyć dziennie do 2 TB zmian. Ponieważ maszyna wirtualna może korzystać tylko z jednego serwera przetwarzania, maksymalna szybkość dziennej zmiany danych obsługiwana dla replikowanej maszyny wirtualnej wynosi 2 TB.
 **Maksymalna przepływność** | Standardowe konto usługi magazynu Azure może obsłużyć maksymalnie 20 000 żądań na sekundę, a liczba operacji wejścia/wyjścia na sekundę (IOPS) w ramach replikacji maszyny wirtualnej powinna mieścić się w tym limicie. Na przykład, jeśli maszyna wirtualna ma 5 dysków, a każdy dysk generuje 120 operacji we/wy na sekundę (rozmiar 8K) na maszynie wirtualnej, będzie się mieścić w limicie 500 operacji we/wy na sekundę na każdym dysku.<br/><br/> Należy pamiętać, że liczba potrzebnych kont magazynu jest równa łącznej liczbie operacji we/wy na sekundę na maszynie źródłowej, podzielonej przez 20 000. Replikowana maszyna może należeć tylko do jednego konta magazynu na platformie Azure.
-**Serwer konfiguracji** | W oparciu o szacunkową łączną replikację 100 = 200 maszyn wirtualnych w firmie Contoso i [wymagania dotyczące ustalania wielkości serwera konfiguracji](/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) firma Contoso oszacowała, że potrzebuje następującej maszyny serwera konfiguracji:<br/><br/> Procesor: 16 procesorów wirtualnych (2 gniazda * 8 rdzeni o 2,5 GHz)<br/><br/> Pamięć: 32 GB<br/><br/> Dysk pamięci podręcznej: 1 TB<br/><br/> Współczynnik zmian danych: od 1 TB do 2 TB.<br/><br/> Oprócz określania wymagań dotyczących rozmiarów firma Contoso potrzebuje upewnić się, że serwer konfiguracji jest optymalnie zlokalizowany, w tej samej sieci i segmencie LAN co maszyny wirtualne, które będą migrowane.
+**Serwer konfiguracji** | W oparciu o szacunkową łączną replikację 100 = 200 maszyn wirtualnych w firmie Contoso i [wymagania dotyczące ustalania wielkości serwera konfiguracji](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) firma Contoso oszacowała, że potrzebuje następującej maszyny serwera konfiguracji:<br/><br/> Procesor: 16 procesorów wirtualnych (2 gniazda * 8 rdzeni o 2,5 GHz)<br/><br/> Pamięć: 32 GB<br/><br/> Dysk pamięci podręcznej: 1 TB<br/><br/> Współczynnik zmian danych: od 1 TB do 2 TB.<br/><br/> Oprócz określania wymagań dotyczących rozmiarów firma Contoso potrzebuje upewnić się, że serwer konfiguracji jest optymalnie zlokalizowany, w tej samej sieci i segmencie LAN co maszyny wirtualne, które będą migrowane.
 **Serwer przetwarzania** | Firma Contoso będzie wdrażać autonomiczny dedykowany serwer przetwarzania z możliwością replikowania 100–200 maszyn wirtualnych:<br/><br/> Procesor: 16 procesorów wirtualnych (2 gniazda * 8 rdzeni o 2,5 GHz)<br/><br/> Pamięć: 32 GB<br/><br/> Dysk pamięci podręcznej: 1 TB<br/><br/> Współczynnik zmian danych: od 1 TB do 2 TB.<br/><br/> Serwer przetwarzania będzie działać intensywnie i dlatego powinien znajdować się na hoście ESXi, który może obsłużyć dyskowe operacje we/wy, ruch sieciowy i procesor wymagany do replikacji. Firma Contoso rozważy zastosowanie w tym celu dedykowanego hosta.
-**Sieć** | Firma Contoso przejrzała bieżącą infrastrukturę międzylokacyjnej sieci VPN i zdecydowała się na wdrożenie usługi Azure ExpressRoute. Implementacja ma kluczowe znaczenie, ponieważ zmniejszy opóźnienie i zwiększy przepustowość do głównego regionu Azure firmy Contoso, czyli Wschodnie stany USA 2.<br/><br/> **Monitorowanie:** Firma Contoso będzie musiała starannie monitorować przepływ danych z serwera przetwarzania. Jeśli dane przeciążą przepustowość sieci, firma Contoso [rozważyć ograniczanie przepustowości serwera przetwarzania](/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
-**Magazyn platformy Azure** | Firma Contoso musi określić odpowiedni typ i liczbę docelowych kont magazynu platformy Azure na potrzeby migracji. Usługa Site Recovery replikuje dane maszyn wirtualnych do magazynu Azure.<br/><br/> Usługa Site Recovery może przeprowadzać replikację do kont magazynu w warstwie Standardowa lub Premium (SSD).<br/><br/> W celu podjęcia decyzji na temat magazynu firma Contoso musi przejrzeć [limity przestrzeni dyskowej](/azure/virtual-machines/windows/disks-types) i wziąć pod uwagę oczekiwany wzrost oraz zwiększone użycie w miarę upływu czasu. Mając na względzie szybkość i priorytet migracji, firma Contoso zdecydowała się korzystać z dysków SSD warstwy Premium<br/><br/>
+**Sieć** | Firma Contoso przejrzała bieżącą infrastrukturę międzylokacyjnej sieci VPN i zdecydowała się na wdrożenie usługi Azure ExpressRoute. Implementacja ma kluczowe znaczenie, ponieważ zmniejszy opóźnienie i zwiększy przepustowość do głównego regionu Azure firmy Contoso, czyli Wschodnie stany USA 2.<br/><br/> **Monitorowanie:** Firma Contoso będzie musiała starannie monitorować przepływ danych z serwera przetwarzania. Jeśli dane przeciążą przepustowość sieci, firma Contoso [rozważyć ograniczanie przepustowości serwera przetwarzania](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
+**Magazyn platformy Azure** | Firma Contoso musi określić odpowiedni typ i liczbę docelowych kont magazynu platformy Azure na potrzeby migracji. Usługa Site Recovery replikuje dane maszyn wirtualnych do magazynu Azure.<br/><br/> Usługa Site Recovery może przeprowadzać replikację do kont magazynu w warstwie Standardowa lub Premium (SSD).<br/><br/> W celu podjęcia decyzji na temat magazynu firma Contoso musi przejrzeć [limity przestrzeni dyskowej](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) i wziąć pod uwagę oczekiwany wzrost oraz zwiększone użycie w miarę upływu czasu. Mając na względzie szybkość i priorytet migracji, firma Contoso zdecydowała się korzystać z dysków SSD warstwy Premium<br/><br/>
 Firma Contoso podjęła decyzję o użyciu dysków zarządzanych dla wszystkich maszyn wirtualnych wdrożonych na platformie Azure. Wymagana liczba operacji we/wy decyduje o wyborze dysków HDD w warstwie Standardowa, SSD w warstwie Standardowa lub Premium (SSD).<br/><br/>
 
 <!--markdownlint-enable MD033 -->
@@ -309,7 +309,7 @@ Aby jak najlepiej wykorzystać inwestycję w chmurę, firma Contoso będzie korz
 - To licencjonowane rozwiązanie stworzone przez Cloudyn, jednostkę zależną firmy Microsoft, umożliwia firmie Contoso przejrzyste i dokładne zarządzanie wydatkami na chmurę. Zapewnia narzędzia do monitorowania, przydzielania i przycinania kosztów chmury.
 - Usługa Azure Cost Management oferuje proste raporty pulpitu nawigacyjnego, które ułatwiają przydzielanie kosztów, przewidywanie kosztów i obciążenia zwrotne.
 - Usługa Cost Management pozwala optymalizować wydatki na chmurę przez identyfikowanie niedostatecznie wykorzystywanych zasobów, którymi firma Contoso może później zarządzać oraz je dostosowywać.
-- [Dowiedz się więcej](/azure/cost-management/overview) o usłudze Azure Cost Management.
+- [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
 
 ![Zarządzanie kosztami](./media/contoso-migration-scale/cost-management.png)
 
@@ -350,16 +350,16 @@ Firma Contoso potrzebuje wglądu w kondycję i wydajność nowo zmigrowanych apl
 
 - Dzięki tym narzędziom firma Contoso może łatwo gromadzić dane ze źródeł i uzyskiwać dokładne informacje. Na przykład firma Contoso może mierzyć użycie procesora, dysku i pamięci swoich maszyn wirtualnych, wyświetlać zależności w ramach aplikacji i sieci dotyczące wielu maszyn wirtualnych oraz śledzić wydajność aplikacji.
 - Firma Contoso będzie używać tych narzędzi do monitorowania chmury w celu podejmowania działań i zapewniania integracji z rozwiązaniami usług.
-- [Dowiedz się więcej](/azure/monitoring-and-diagnostics/monitoring-overview) o monitorowaniu platformy Azure.
+- [Dowiedz się więcej](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview) o monitorowaniu platformy Azure.
 
 ### <a name="business-continuity-and-disaster-recovery"></a>Ciągłość działania i odzyskiwanie po awarii
 
 Firma Contoso będzie potrzebować strategii ciągłości działania i odzyskiwania po awarii (BCDR) dla swoich zasobów platformy Azure.
 
-- Platforma Azure zapewnia [wbudowane funkcje BCDR](/azure/architecture/resiliency/disaster-recovery-azure-applications), aby zapewnić bezpieczeństwo danych i działanie aplikacji/usług.
+- Platforma Azure zapewnia [wbudowane funkcje BCDR](https://docs.microsoft.com/azure/architecture/resiliency/disaster-recovery-azure-applications), aby zapewnić bezpieczeństwo danych i działanie aplikacji/usług.
 - Oprócz wbudowanych funkcji firma Contoso chce mieć pewność, że może przeprowadzić odzyskiwanie w razie awarii, uniknąć kosztownych przerw w działaniu firmy, osiągać cele zgodności oraz chronić dane przed oprogramowaniem wymuszającym okup i błędami ludzkimi. W tym celu:
   - Firma Contoso będzie wdrażać usługę Azure Backup jako ekonomiczne rozwiązanie do tworzenia kopii zapasowych zasobów platformy Azure. Ponieważ ta usługa jest wbudowana, firma Contoso może skonfigurować kopie zapasowe chmury w kilku prostych krokach.
-  - Firma Contoso skonfiguruje odzyskiwanie po awarii dla maszyn wirtualnych platformy Azure przy użyciu usługi Azure Site Recovery do replikacji, trybu failover i powrotu po awarii między określonymi przez nią regionami platformy Azure. To zapewni, że aplikacje działające na maszynach wirtualnych platformy Azure pozostaną dostępne w regionie pomocniczym firmy Contoso, wybranym na wypadek wystąpienia awarii w regionie podstawowym. [Dowiedz się więcej](/azure/site-recovery/azure-to-azure-quickstart).
+  - Firma Contoso skonfiguruje odzyskiwanie po awarii dla maszyn wirtualnych platformy Azure przy użyciu usługi Azure Site Recovery do replikacji, trybu failover i powrotu po awarii między określonymi przez nią regionami platformy Azure. To zapewni, że aplikacje działające na maszynach wirtualnych platformy Azure pozostaną dostępne w regionie pomocniczym firmy Contoso, wybranym na wypadek wystąpienia awarii w regionie podstawowym. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ## <a name="conclusion"></a>Wniosek
 

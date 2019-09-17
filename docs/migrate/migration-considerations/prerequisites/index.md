@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96ab62dc2adf17890989160c0af4fb80636b31b9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818169"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022613"
 ---
 # <a name="prerequisites-for-migration"></a>Wymagania wstępne dotyczące migracji
 
@@ -25,10 +25,10 @@ Zapewnienie gotowości przedsiębiorstwa, kultury i infrastruktury technicznej p
 
 ## <a name="review-business-drivers"></a>Przegląd celów biznesowych
 
-Przed rozpoczęciem jakiejkolwiek migracji do chmury należy zapoznać się ze wskazówkami dotyczącymi [planowania](../../../business-strategy/index.md) i [gotowości](../../../ready/index.md) w przewodniku Cloud Adoption Framework, aby upewnić się, że organizacja jest przygotowana na wdrożenie chmury i procesy migracji. W szczególności należy sprawdzić wymagania biznesowe i oczekiwane wyniki migracji:
+Przed rozpoczęciem jakiejkolwiek migracji do chmury należy zapoznać się ze wskazówkami dotyczącymi [planowania](../../../strategy/index.md) i [gotowości](../../../ready/index.md) w przewodniku Cloud Adoption Framework, aby upewnić się, że organizacja jest przygotowana na wdrożenie chmury i procesy migracji. W szczególności należy sprawdzić wymagania biznesowe i oczekiwane wyniki migracji:
 
 - [Wprowadzenie: Migracja](../../../getting-started/migrate.md)
-- [Dlaczego przechodzimy do chmury?](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md)
+- [Dlaczego przechodzimy do chmury?](../../../strategy/motivations.md)
 
 ## <a name="definition-of-done"></a>Definicja *gotowości*
 
@@ -56,7 +56,7 @@ Jeden członek każdego zespołu będzie odpowiedzialny za każdą z trzech defi
 
 Oprócz odpowiedzialności wysokiego poziomu istnieją również akcje, za które powinny być bezpośrednio odpowiedzialne poszczególne osoby lub grupy. Poniżej przedstawiono kilka obowiązków, które mają wpływ na te działania:
 
-- **Określanie priorytetów biznesowych** Podejmij decyzje biznesowe dotyczące migrowanych obciążeń i ogólnych ograniczeń czasowych. Aby uzyskać więcej informacji, zobacz temat [Cele biznesowe migracji do chmury](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md).
+- **Określanie priorytetów biznesowych** Podejmij decyzje biznesowe dotyczące migrowanych obciążeń i ogólnych ograniczeń czasowych. Aby uzyskać więcej informacji, zobacz temat [Cele biznesowe migracji do chmury](../../../strategy/motivations.md).
 - **Gotowość do zarządzania zmianami** Określ plan śledzenia zmian technicznych podczas migracji i poinformuj o nim. Więcej informacji na ten temat będzie dostępnych w III kwartale 2019 r.
 - **Uzgadnianie stanowiska użytkowników biznesowych** Określ plan przygotowania społeczności użytkowników biznesowych na wykonanie migracji. Więcej informacji na ten temat będzie dostępnych w III kwartale 2019 r.
 - **Spis i analiza infrastruktury cyfrowej** Wykonanie narzędzi wymaganych do utworzenia spisu i analizy infrastruktury cyfrowej. Aby uzyskać więcej informacji, zobacz omówienie [infrastruktury cyfrowej](../../../digital-estate/index.md) w przewodniku Cloud Adoption Framework.

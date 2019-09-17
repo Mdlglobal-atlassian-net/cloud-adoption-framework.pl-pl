@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8f1d622401eff58710e016b690292e81d9b7f1d7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47148153d63137e6281b37bcb2be28e63bc6586c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905284"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025169"
 ---
 # <a name="azure-fundamental-concepts"></a>Podstawowe pojęcia dotyczące platformy Azure
 
@@ -69,7 +69,7 @@ Podczas tworzenia subskrypcji platformy Azure można ją skojarzyć z istniejąc
 
 Konto e-mail może być skojarzone z wieloma subskrypcjami platformy Azure. Administrator konta może przenieść subskrypcję na inne konto.
 
-Aby zapoznać się ze szczegółowym opisem ról zdefiniowanych na platformie Azure, zobacz [Role klasycznego administratora subskrypcji, role kontroli dostępu opartej rolach platformy Azure i role administratora usługi Azure AD](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+Aby zapoznać się ze szczegółowym opisem ról zdefiniowanych na platformie Azure, zobacz [Role klasycznego administratora subskrypcji, role kontroli dostępu opartej rolach platformy Azure i role administratora usługi Azure AD](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
 ## <a name="subscriptions-and-regions"></a>Subskrypcje a regiony
 
@@ -84,13 +84,13 @@ Subskrypcja nie jest powiązana z określonym regionem platformy Azure. Jednak k
 
 Poniższe zasoby zawierają szczegółowe informacje na temat pojęć omówionych w tym artykule:
 
-- [Jak działa platforma Azure?](/azure/architecture/cloud-adoption/getting-started/what-is-azure)
-- [Resource access management in Azure](../../governance/resource-consistency/azure-resource-access.md) (Zarządzanie dostępem do zasobów na platformie Azure)
-- [Omówienie usługi Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)
-- [Kontrola dostępu oparta na rolach (RBAC) dla zasobów platformy Azure](/azure/role-based-access-control/overview)
-- [Co to jest usługa Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis)
-- [Kojarzenie subskrypcji platformy Azure z dzierżawą usługi Azure Active Directory lub dodawanie subskrypcji](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-- [Topologie obsługiwane w programie Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies)
+- [Jak działa platforma Azure?](../../getting-started/what-is-azure.md)
+- [Resource access management in Azure](../../govern/resource-consistency/resource-access-management.md) (Zarządzanie dostępem do zasobów na platformie Azure)
+- [Omówienie usługi Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Kontrola dostępu oparta na rolach (RBAC) dla zasobów platformy Azure](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [Co to jest usługa Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [Kojarzenie subskrypcji platformy Azure z dzierżawą usługi Azure Active Directory lub dodawanie subskrypcji](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
+- [Topologie obsługiwane w programie Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [Subskrypcje, licencje, konta i dzierżawy dla ofert w chmurze firmy Microsoft](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>Następne kroki

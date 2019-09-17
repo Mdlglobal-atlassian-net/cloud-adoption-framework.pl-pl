@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 19265b154a239fb4a01d8b4f468eab7e5e4f04cd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e670391bd475445b195e73f996fe999d32953232
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828684"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022320"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Lista kontrolna wymagań wstępnych dla efektywnego planu wdrażania chmury
 
@@ -21,7 +21,7 @@ Plan jest efektywny tylko jako dane, które są w nim umieszczone. Aby plan wdro
 
 ## <a name="strategic-inputs"></a>Dane wejściowe strategiczne
 
-Dokładne dane wejściowe strategiczne zapewniają, że praca odbywa się w celu osiągnięcia wyników działalności biznesowej. [Sekcja strategia struktury wdrażania w chmurze](../business-strategy/index.md) zawiera szereg ćwiczeń do opracowania jasnej strategii. Dane wyjściowe tych ćwiczeń są podawane przez plan wdrożenia chmury. Przed rozpoczęciem opracowywania planu upewnij się, że następujące elementy są dobrze zdefiniowane w wyniku tych ćwiczeń:
+Dokładne dane wejściowe strategiczne zapewniają, że praca odbywa się w celu osiągnięcia wyników działalności biznesowej. [Sekcja strategia struktury wdrażania w chmurze](../strategy/index.md) zawiera szereg ćwiczeń do opracowania jasnej strategii. Dane wyjściowe tych ćwiczeń są podawane przez plan wdrożenia chmury. Przed rozpoczęciem opracowywania planu upewnij się, że następujące elementy są dobrze zdefiniowane w wyniku tych ćwiczeń:
 
 - **Jasne motywacje**: Dlaczego wdrażamy chmurę?
 - **Zdefiniowane wyniki biznesowe**: Jakie wyniki oczekujemy na przyjęciu chmury?

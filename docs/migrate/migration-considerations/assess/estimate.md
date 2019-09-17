@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 09492fea252ac9b07372c2def75d61df62e727ec
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2bbafffd50cba58fc5304489f31521e6da8a8345
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819493"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025434"
 ---
 # <a name="estimate-cloud-costs"></a>Szacowanie kosztów chmury
 
@@ -23,7 +23,7 @@ Podczas migracji występuje kilka czynników, które mogą wpływać na decyzje 
 
 Rozmiar majątku cyfrowego ma bezpośredni wpływ na decyzje dotyczące migracji. Migracje obejmujące mniej niż 250 maszyn wirtualnych można oszacować znacznie łatwiej niż migrację obejmującą ponad 10 000 maszyn wirtualnych. Zdecydowanie zaleca się wybranie mniejszego obciążenia jako pierwszej migracji. Dzięki temu Twój zespół może dowiedzieć się, jak oszacować koszty prostej migracji przed podjęciem próby oszacowania większych i bardziej skomplikowanych migracji obciążeń.
 
-Należy jednak pamiętać, że mniejsze migracje pojedynczych obciążeń mogą nadal obejmować bardzo zróżnicowane ilości zasobów pomocniczych. Jeśli migracja obejmuje mniej niż 1000 maszyn wirtualnych, narzędzie takie jak [Azure Migrate](/azure/migrate/migrate-overview) powinno być wystarczające do zebrania danych dotyczących zapasów i utworzenia prognozy kosztów. Dodatkowe opcje i narzędzia do szacowania kosztów opisano w artykule dotyczącym [obliczania kosztu majątku cyfrowego](../../../digital-estate/calculate.md).
+Należy jednak pamiętać, że mniejsze migracje pojedynczych obciążeń mogą nadal obejmować bardzo zróżnicowane ilości zasobów pomocniczych. Jeśli migracja obejmuje mniej niż 1000 maszyn wirtualnych, narzędzie takie jak [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) powinno być wystarczające do zebrania danych dotyczących zapasów i utworzenia prognozy kosztów. Dodatkowe opcje i narzędzia do szacowania kosztów opisano w artykule dotyczącym [obliczania kosztu majątku cyfrowego](../../../digital-estate/calculate.md).
 
 W przypadku majątków obejmujących ponad 1000 jednostek wciąż możliwe jest podzielenie szacunku na cztery lub pięć iteracji z możliwością działania, co umożliwia zarządzanie procesem szacowania. W przypadku większych majątków lub gdy wymagany jest wyższy stopień dokładności prognozy, prawdopodobnie będzie wymagane bardziej kompleksowe podejście, jak to opisane w sekcji „[Majątek cyfrowy](../../../digital-estate/index.md)” przewodnika Cloud Adoption Framework.
 

@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f36e524fea15df572df8ef74c6b5c81f5fa08932
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829243"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023439"
 ---
 # <a name="enable-success-across-any-cloud-adoption-journey"></a>Włącz sukces w ramach dowolnej podróży w chmurze
 
@@ -22,12 +22,12 @@ Platforma wdrażania Microsoft Cloud dla platformy Azure jest świadczona bezpł
 
 W tej architekturze włączenie jest podstawową kompozycją. Poniższa lista kontrolna zawiera szereg tematów, które powinny być osadzone w ramach wszelkich wysiłków związanych z wdrażaniem w chmurze w celu zapewnienia, że podróż zakończyła się sukcesem i działaniem:
 
-- **Zamierza** Ustanawianie jasnego [rezultatu biznesowego](../business-strategy/business-outcomes/index.md), zdefiniowanego [planu podpisywania cyfrowego](../digital-estate/index.md)oraz dobrze rozumianych [wpisów zaległości](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
+- **Zamierza** Ustanawianie jasnego [rezultatu biznesowego](../strategy/business-outcomes/index.md), zdefiniowanego [planu podpisywania cyfrowego](../digital-estate/index.md)oraz dobrze rozumianych [wpisów zaległości](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
 - **Gotowe** Zadbaj o gotowość personelu poprzez [plany umiejętności i nauki](../ready/technical-skills.md).
 - **Prowadzenie** Zdefiniuj model systemu operacyjnego, który można zarządzać, aby poprowadzić działania w trakcie i po jego przyjęciu.
-  - **[Organizowanie](../organization/index.md):** Wyrównaj osoby i zespoły, aby zapewnić prawidłowe operacje i wdrożenia w chmurze.
-  - **Decydując** Wyrównaj odpowiednie [dyscypliny ładu](../governance/index.md) , aby stale stosować zarządzanie kosztami, ograniczanie ryzyka, zgodność i linie bazowe zabezpieczeń we wszystkich wdrożeniach chmurowych.
-  - **Zarządzanie:** Trwające [operacje](../operations/index.md) portfolio IT umożliwiają zminimalizowanie przerw w procesach biznesowych i zapewnienie stabilności portfolio IT.
+  - **[Organizowanie](../organize/index.md):** Wyrównaj osoby i zespoły, aby zapewnić prawidłowe operacje i wdrożenia w chmurze.
+  - **Decydując** Wyrównaj odpowiednie [dyscypliny ładu](../govern/index.md) , aby stale stosować zarządzanie kosztami, ograniczanie ryzyka, zgodność i linie bazowe zabezpieczeń we wszystkich wdrożeniach chmurowych.
+  - **Zarządzanie:** Ciągłe [Zarządzanie działaniem](../manage/index.md) portfolio IT w celu zminimalizowania przerw w procesach biznesowych i zapewnienia stabilności portfolio IT.
   - **Pomocy** Wyrównaj prawidłowe [Opcje partnerstwa i pomocy technicznej](../migrate/migration-considerations/assess/partnership-options.md).
 
 ## <a name="additional-tools"></a>Dodatkowe narzędzia
@@ -38,7 +38,7 @@ Oprócz struktury wdrażania w chmurze firma Microsoft omawia dodatkowe tematy, 
 
 <ul class="panelContent cardsH">
 <li style="display: flex; flex-direction: column;">
-    <a href="../governance/journeys/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../govern/guides/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">

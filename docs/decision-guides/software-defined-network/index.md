@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ac8d65ab897ddeac94305c9d2c365281808b36c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817965"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023760"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Przewodnik po decyzjach dotyczących sieci zdefiniowanej programowo
 
@@ -22,9 +22,9 @@ Sieć zdefiniowana programowo (SDN, Software Defined Networking) to architektura
 
 ## <a name="networking-decision-guide"></a>Przewodnik po decyzjach związanych z siecią
 
-![Wykres opcji sieci od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/discovery-guides/discovery-guide-sdn.png)
+![Wykres opcji sieci od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-Idź do: [Tylko usługa PaaS](paas-only.md) | [Natywne dla chmury](cloud-native.md) | [Strefa DMZ w chmurze](cloud-dmz.md) [Hybrydowe](hybrid.md) | [Model gwiazdy](hub-spoke.md) | [Dowiedz się więcej](#learn-more)
+Idź do: [Tylko usługa PaaS](./paas-only.md) | [Natywne dla chmury](./cloud-native.md) | [Strefa DMZ w chmurze](./cloud-dmz.md) [Hybrydowe](./hybrid.md) | [Model gwiazdy](./hub-spoke.md) | [Dowiedz się więcej](#learn-more)
 
 Sieć SDN oferuje kilka opcji z różnymi poziomami cen i złożoności. Powyższy przewodnik odnajdywania zawiera informacje referencyjne na temat szybkiego personalizowania tych opcji w celu najlepszego dopasowania ich do określonych strategii biznesowych i technologicznych.
 
@@ -53,18 +53,18 @@ Podczas planowania, którą architekturę sieci wirtualnej lub kombinację archi
 
 Dowiedz się więcej na temat podstawowych architektur sieci zdefiniowanych programowo:
 
-- **[Tylko usługa PaaS](paas-only.md):** większość produktów typu „platforma jako usługa” (PaaS) obsługuje ograniczony zestaw wbudowanych funkcji sieciowych i nie musi wymagać sieci jawnie zdefiniowanej programowo do obsługi wymagań dotyczących obciążenia.
-- **[Natywne dla chmury](cloud-native.md):** architektura natywna dla chmury obsługuje oparte na chmurze obciążenia przy użyciu sieci wirtualnych zbudowanych za pomocą domyślnych możliwości sieci zdefiniowanej programowo opartych na platformie w chmurze bez konieczności polegania na zasobach lokalnych lub innych zasobach zewnętrznych.
-- **[Strefa DMZ w chmurze](cloud-dmz.md):** obsługuje ograniczoną łączność między sieciami lokalnymi i w chmurze zabezpieczoną za pomocą implementacji strefy zdemilitaryzowanej, która ściśle kontroluje ruch między dwoma środowiskami.
-- **[Hybrydowe](hybrid.md):** hybrydowa architektura sieci w chmurze umożliwia sieciom wirtualnym w środowiskach chmur zaufanych uzyskiwanie dostępu do zasobów w środowisku lokalnym i na odwrót.
-- **[Gwiazda](hub-spoke.md):** architektura gwiazdy umożliwia centralne zarządzanie połączeniami zewnętrznymi i usługami udostępnionymi, wyodrębnianie poszczególnych obciążeń i rozwiązywanie potencjalnych problemów z limitami subskrypcji.
+- **[Tylko usługa PaaS](./paas-only.md):** większość produktów typu „platforma jako usługa” (PaaS) obsługuje ograniczony zestaw wbudowanych funkcji sieciowych i nie musi wymagać sieci jawnie zdefiniowanej programowo do obsługi wymagań dotyczących obciążenia.
+- **[Natywne dla chmury](./cloud-native.md):** architektura natywna dla chmury obsługuje oparte na chmurze obciążenia przy użyciu sieci wirtualnych zbudowanych za pomocą domyślnych możliwości sieci zdefiniowanej programowo opartych na platformie w chmurze bez konieczności polegania na zasobach lokalnych lub innych zasobach zewnętrznych.
+- **[Strefa DMZ w chmurze](./cloud-dmz.md):** obsługuje ograniczoną łączność między sieciami lokalnymi i w chmurze zabezpieczoną za pomocą implementacji strefy zdemilitaryzowanej, która ściśle kontroluje ruch między dwoma środowiskami.
+- **[Hybrydowe](./hybrid.md):** hybrydowa architektura sieci w chmurze umożliwia sieciom wirtualnym w środowiskach chmur zaufanych uzyskiwanie dostępu do zasobów w środowisku lokalnym i na odwrót.
+- **[Gwiazda](./hub-spoke.md):** architektura gwiazdy umożliwia centralne zarządzanie połączeniami zewnętrznymi i usługami udostępnionymi, wyodrębnianie poszczególnych obciążeń i rozwiązywanie potencjalnych problemów z limitami subskrypcji.
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
 Aby uzyskać więcej informacji na temat sieci zdefiniowanej programowo na platformie Azure, zobacz:
 
-- [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview). Na platformie Azure podstawowe możliwości sieci SDN są oferowane przez usługę Azure Virtual Network, która działa jako analogia chmury do fizycznych sieci lokalnych. Sieci wirtualne działają jako domyślna granicy izolacji między zasobami na platformie.
-- [Najlepsze rozwiązania z zakresu zabezpieczeń sieci na platformie Azure](/azure/security/azure-security-network-security-best-practices) Zalecenia zespołu ds. zabezpieczeń platformy Azure dotyczące sposobu konfigurowania sieci wirtualnych w celu zminimalizowania luk w zabezpieczeniach.
+- [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview). Na platformie Azure podstawowe możliwości sieci SDN są oferowane przez usługę Azure Virtual Network, która działa jako analogia chmury do fizycznych sieci lokalnych. Sieci wirtualne działają jako domyślna granicy izolacji między zasobami na platformie.
+- [Najlepsze rozwiązania z zakresu zabezpieczeń sieci na platformie Azure](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices) Zalecenia zespołu ds. zabezpieczeń platformy Azure dotyczące sposobu konfigurowania sieci wirtualnych w celu zminimalizowania luk w zabezpieczeniach.
 
 ## <a name="next-steps"></a>Następne kroki
 

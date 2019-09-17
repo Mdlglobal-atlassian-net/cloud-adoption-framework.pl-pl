@@ -9,25 +9,25 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f47bf0256e00eafe37ebf71ed2da9b64f0b07484
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2337ea5fdcd18fc2f56c60c64a35ee878710e65
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829542"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023564"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>Sieć zdefiniowana przez oprogramowanie: Gwiazda
 
 Model sieci piasty i szprych organizuje infrastrukturę sieci opartą na platformie Azure w wielu połączonych sieciach wirtualnych. Ten model pozwala wydajniej zarządzać typowymi wymaganiami dotyczącymi komunikacji lub bezpieczeństwa i obsłużyć potencjalne ograniczenia dotyczące subskrypcji.
 
-W _modelu gwiazdy centrum jest siecią_ wirtualną, która pełni rolę centralnej lokalizacji do zarządzania łącznością zewnętrzną i usługami hostingu używanymi przez wiele obciążeń. _Szprychy_ to sieci wirtualne, które obsługują obciążenia i łączą się z centralnym koncentratorem za pomocą [komunikacji równorzędnej sieci wirtualnej](/azure/virtual-network/virtual-network-peering-overview).
+W _modelu gwiazdy centrum jest siecią_ wirtualną, która pełni rolę centralnej lokalizacji do zarządzania łącznością zewnętrzną i usługami hostingu używanymi przez wiele obciążeń. _Szprychy_ to sieci wirtualne, które obsługują obciążenia i łączą się z centralnym koncentratorem za pomocą [komunikacji równorzędnej sieci wirtualnej](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview).
 
 Cały ruch przechodzący z lub z sieci szprych obciążenia jest kierowany przez sieć centralną, w której może być kierowany, sprawdzany lub zarządzany w inny sposób przez centralne zarządzane reguły lub procesy IT.
 
 Ten model ma na celu rozwiązanie następujących problemów:
 
 - **Oszczędność kosztów i efektywność zarządzania.** Scentralizowanie usług, które mogą być współużytkowane przez wiele obciążeń, takich jak wirtualne urządzenia sieciowe (urządzeń WUS) i serwery DNS, w jednej lokalizacji pozwala na zminimalizowanie nadmiarowych zasobów i nakładu pracy związanego z zarządzaniem w wielu obciążeniach.
-- **Limity dotyczące nadchodzących subskrypcji.** Duże obciążenia oparte na chmurze mogą wymagać użycia większej liczby zasobów niż jest to dozwolone w ramach jednej subskrypcji platformy Azure (zobacz [limity subskrypcji](/azure/azure-subscription-service-limits)). Komunikacja równorzędna sieci wirtualnych obciążenia z różnych subskrypcji do centrum może pokonać te ograniczenia.
+- **Limity dotyczące nadchodzących subskrypcji.** Duże obciążenia oparte na chmurze mogą wymagać użycia większej liczby zasobów niż jest to dozwolone w ramach jednej subskrypcji platformy Azure (zobacz [limity subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits)). Komunikacja równorzędna sieci wirtualnych obciążenia z różnych subskrypcji do centrum może pokonać te ograniczenia.
 - **Rozdzielenie obaw.** Możliwość wdrażania pojedynczych obciążeń między centralnymi zespołami IT i zespołami obciążeń.
 
 Na poniższym diagramie przedstawiono przykładową architekturę Hub i szprych, w tym centralnie zarządzane połączenie hybrydowe.
@@ -47,7 +47,7 @@ Implementacja architektury sieci wirtualnych Hub i gwiazdy zakłada następując
 
 ## <a name="global-hub-and-spoke"></a>Centrum globalne i szprycha
 
-Architektury Hub i szprych są zwykle implementowane przy użyciu sieci wirtualnych wdrożonych w tym samym regionie świadczenia usługi Azure, aby zminimalizować opóźnienia między sieciami. Jednak duże organizacje z globalnym zasięgiem mogą wymagać wdrożenia obciążeń w wielu regionach w celu zapewnienia dostępności, odzyskiwania po awarii lub wymagań prawnych. Model gwiazdy umożliwia korzystanie z [globalnej sieci wirtualnej](/azure/virtual-network/virtual-network-peering-overview) platformy Azure w celu rozbudowania scentralizowanych usług zarządzania i współużytkowanych w różnych regionach oraz obsługi obciążeń rozmieszczonych na całym świecie.
+Architektury Hub i szprych są zwykle implementowane przy użyciu sieci wirtualnych wdrożonych w tym samym regionie świadczenia usługi Azure, aby zminimalizować opóźnienia między sieciami. Jednak duże organizacje z globalnym zasięgiem mogą wymagać wdrożenia obciążeń w wielu regionach w celu zapewnienia dostępności, odzyskiwania po awarii lub wymagań prawnych. Model gwiazdy umożliwia korzystanie z [globalnej sieci wirtualnej](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) platformy Azure w celu rozbudowania scentralizowanych usług zarządzania i współużytkowanych w różnych regionach oraz obsługi obciążeń rozmieszczonych na całym świecie.
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 

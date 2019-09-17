@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7895094ea0297f725ae4f0451989055cb1afab93
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825356"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025357"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Przygotowanie do złożoności technicznej: zarządzanie zmianami zwinnymi (Agile)
 
@@ -46,7 +46,7 @@ Lista prac związanych z migracją umożliwia śledzenie portfolio wysokiego poz
 
 Początkowo obciążenia listy prac związanych z migracją prawdopodobnie nie spełnią kryteriów INVEST przedstawionych w poprzedniej sekcji. Zamiast tego służą jako logiczne grupowanie zasobów z początkowego spisu jako symbol zastępczy na potrzeby pracy w przyszłości. Te symbole zastępcze mogą nie być dokładne z technicznego punktu widzenia, ale stanowią podstawę do koordynacji z działaniami biznesowymi.
 
-![Relacja między migracją, wersją i listą prac iteracji użytymi podczas procesu migracji](../../../_images/migration/migrate-release-iteration-backlog-relationship.png)
+![Relacja między migracją, wersją i listą prac iteracji użytymi podczas procesu migracji](../../../_images/migrate/backlog-relationships.png)
 
 *Migracja, wersja i lista prac iteracji śledzą różne poziomy aktywności podczas procesów migracji.*
 

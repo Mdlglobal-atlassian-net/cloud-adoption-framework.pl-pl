@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 44296faa9b5be56988babe9e0a847564d51148c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833403"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025477"
 ---
 # <a name="business-change-plan"></a>Plan zmian biznesowych
 
@@ -25,7 +25,7 @@ Plany wdrażania użytkowników koncentrują się na sposobie wdrażania nowej t
 
 Chociaż podejścia mogą się różnić, ogólne motywy są wspólne dla większości planów wdrażania użytkowników. Motywy te są zwykle oparte na kontroli ryzyka i podejściu ułatwiającym dostosowanie do przyrostowych ulepszeń. Macierz Eason pokazana na poniższym rysunku reprezentuje czynniki wspierające te motywy w szerokim spektrum typów wdrażania.
 
-![Macierz Eason z zagadnieniami dotyczącymi wdrażania użytkowników](../../../_images/eason-matrix.jpg)
+![Macierz Eason z zagadnieniami dotyczącymi wdrażania użytkowników](../../../_images/migrate/eason-matrix.jpg)
 
 *Macierz Eason typów wdrażania użytkowników.*
 
@@ -37,8 +37,8 @@ Plan zmian biznesowych wykracza poza zmianę techniczną i zakłada, że każde 
 
 **Pytania dotyczące strumieni wychodzących.** Pytania dotyczące strumieni wychodzących są związane z wpływem lub zmianami, które zachodzą przed wdrożeniem użytkowników:
 
-- Czy oczekiwany [wynik biznesowy](../../../business-strategy/business-outcomes/index.md) został osiągnięty?
-- Czy wpływ na firmę jest mapowany na zdefiniowane [metryki szkoleniowe](../../../business-strategy/learning-metrics.md)?
+- Czy oczekiwany [wynik biznesowy](../../../strategy/business-outcomes/index.md) został osiągnięty?
+- Czy wpływ na firmę jest mapowany na zdefiniowane [metryki szkoleniowe](../../../strategy/learning-metrics.md)?
 - Które procesy biznesowe i zespoły korzystają z zalet tego rozwiązania technicznego?
 - Kto w firmie może najlepiej zidentyfikować użytkowników zaawansowanych na potrzeby testowania i formułowania opinii?
 - Czy wybrani liderzy biznesowi brali udział w priorytetyzacji i planowaniu migracji?

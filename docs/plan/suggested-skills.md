@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9be3818dd12dff913aae6a2eef86587d869ce5a1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fd046fadbc7be08aa1064427fbef5b9e38f55a8c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828697"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025317"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Wprowadzenie do ścieżki gotowości do kwalifikacji
 
@@ -24,7 +24,7 @@ hostowanym w chmurze*rysunek 1 — Mapowanie umiejętności do ról IT w środow
 
 Środowisko wdrażania w chmurze prowadzi dla czytelników przez pełny cykl życia. W tym środowisku czytelnicy otrzymują okazję do tworzenia niezbędnych umiejętności. Aby ułatwić Ci rozpoczęcie pracy z tą podróżą, artykuły z gotowością do kwalifikacji są zawarte w następującym konspekcie w celu ułatwienia dostępu. Każdy z poniższych linków jest mapowany na umiejętności wymagane do pomyślnego osiągnięcia w każdej z tych faz wdrażania.
 
-- **[Strategia](../business-strategy/suggested-skills.md):** Opracowuj umiejętności wymagane do przygotowania planu migracji z możliwością działania. Dotyczy to również uzasadnienia biznesowego i innych wymaganych umiejętności związanych z planowaniem biznesowym.
+- **[Strategia](../strategy/suggested-skills.md):** Opracowuj umiejętności wymagane do przygotowania planu migracji z możliwością działania. Dotyczy to również uzasadnienia biznesowego i innych wymaganych umiejętności związanych z planowaniem biznesowym.
 - **[Plan](./suggested-skills.md):** Opracowuj umiejętności wymagane do przygotowania planu migracji z możliwością działania. Dotyczy to również uzasadnienia biznesowego i innych wymaganych umiejętności związanych z planowaniem biznesowym.
 - **[Gotowość](../ready/suggested-skills.md):** Opracowuj umiejętności wymagane do przygotowania firmy, kultury, osób i środowiska w celu wprowadzenia zmian.
 

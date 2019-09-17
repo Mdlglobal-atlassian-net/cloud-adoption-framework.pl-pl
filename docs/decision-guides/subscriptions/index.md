@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0997698660f19ff47a2eebe6dcdccb122e7f20b5
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906099"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023634"
 ---
 # <a name="subscription-decision-guide"></a>Przewodnik po decyzjach związanych z subskrypcjami
 
@@ -37,7 +37,8 @@ Każda organizacja jest inna, dlatego grupy zarządzania platformy Azure są ela
 
 Przed zakończeniem projektu subskrypcji należy zastanowić się, jak decyzje dotyczące [spójności zasobów](../resource-consistency/index.md) mogą wpływać na wybory tych elementów.
 
-> ![UWAGA] Umowy Enterprise Agreement (EA) platformy Azure umożliwiają definiowanie innej hierarchii organizacji na potrzeby rozliczeń. Ta hierarchia różni się od hierarchii grup zarządzania, która zapewnia model dziedziczenia na potrzeby łatwego stosowania odpowiednich zasad i mechanizmów kontroli dostępu do zasobów.
+> [!NOTE]
+> Umowy Enterprise Agreement (EA) platformy Azure umożliwiają definiowanie innej hierarchii organizacji na potrzeby rozliczeń. Ta hierarchia różni się od hierarchii grup zarządzania, która zapewnia model dziedziczenia na potrzeby łatwego stosowania odpowiednich zasad i mechanizmów kontroli dostępu do zasobów.
 
 Poniższe wzorce subskrypcji odzwierciedlają wstępny wzrost stopnia zaawansowania projektów subskrypcji. Dalej przedstawiono kilka bardziej zaawansowanych hierarchii, które mogą dobrze pasować do Twojej organizacji:
 
@@ -94,9 +95,9 @@ Hierarchie grup zarządzania mogą mieć do sześciu poziomów głębokości. Za
 
 ## <a name="related-resources"></a>Powiązane zasoby
 
-- [Resource access management in Azure](../../governance/resource-consistency/azure-resource-access.md) (Zarządzanie dostępem do zasobów na platformie Azure)
-- [Multiple layers of governance in large enterprises](/azure/architecture/cloud-adoption/governance/journeys/large-enterprise/multiple-layers-of-governance) (Wiele warstw nadzoru w dużych przedsiębiorstwach)
-- [Multiple geographic regions](/azure/architecture/cloud-adoption/migrate/expanded-scope/multiple-regions) (Wiele regionów geograficznych)
+- [Resource access management in Azure](../../govern/resource-consistency/resource-access-management.md) (Zarządzanie dostępem do zasobów na platformie Azure)
+- [Multiple layers of governance in large enterprises](../../govern/guides/complex/multiple-layers-of-governance.md) (Wiele warstw nadzoru w dużych przedsiębiorstwach)
+- [Multiple geographic regions](../../migrate/expanded-scope/multiple-regions.md) (Wiele regionów geograficznych)
 
 ## <a name="next-steps"></a>Następne kroki
 

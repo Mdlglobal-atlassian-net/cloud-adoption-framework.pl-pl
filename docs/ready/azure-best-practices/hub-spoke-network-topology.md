@@ -11,19 +11,19 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 48f73d7c7f2e7f3bba8183464c786a3e0744807c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 35750064b0a88c65796f662d20dc51e9a38e77ac
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905489"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022361"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Topologia sieci piasty i szprych
 
 *Piasta i szprychy* to model sieci umożliwiający bardziej efektywne zarządzanie typowymi wymaganiami dotyczącymi komunikacji i zabezpieczeń. Pomaga również uniknąć ograniczeń subskrypcji platformy Azure. Ten model dotyczy następujących kwestii:
 
 - **Oszczędność kosztów i efektywność zarządzania**. Scentralizowanie w jednej lokalizacji usług, które mogą być współużytkowane przez wiele obciążeń, takich jak wirtualne urządzenia sieciowe (NVA) i serwery DNS, umożliwia działowi IT zminimalizowanie nadmiarowych zasobów i zadań związanych z zarządzaniem.
-- **Pokonywanie ograniczeń subskrypcji**. Duże obciążenia oparte na chmurze mogą wymagać użycia większej ilości zasobów, niż jest to dozwolone w pojedynczej subskrypcji platformy Azure. (Zobacz [ograniczenia subskrypcji][Limits]). Komunikacja równorzędna sieci wirtualnych obciążenia z różnych subskrypcji do centrum może pokonać te ograniczenia.
+- **Pokonywanie ograniczeń subskrypcji**. Duże obciążenia oparte na chmurze mogą wymagać użycia większej ilości zasobów, niż jest to dozwolone w pojedynczej subskrypcji platformy Azure. Komunikacja równorzędna sieci wirtualnych obciążenia z różnych subskrypcji do centrum może pokonać te ograniczenia. Aby uzyskać więcej informacji, zobacz [limity subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 - **Separacja problemów**. Poszczególne obciążenia można wdrożyć między centralnymi zespołami IT i zespołami obciążeń.
 
 Dodatkowa struktura i możliwości oferowane przez ten model mogą nie przynieść korzyści mniejszym majątkom w chmurze. Jednak w przypadku większych nakładów pracy związanych z wdrożeniem chmury warto rozważyć implementację architektury sieciowej typu piasta i szprychy, jeśli występują problemy wymienione wcześniej.
@@ -31,10 +31,10 @@ Dodatkowa struktura i możliwości oferowane przez ten model mogą nie przynieś
 > [!NOTE]
 > Strona Architektury referencyjne platformy Azure zawiera przykładowe szablony, których można użyć jako podstawy do zaimplementowania własnych sieci piasty i szprych:
 >
-> - [Implementowanie topologii sieci piasty i szprych na platformie Azure](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-> - [Implementowanie topologii sieci piasty i szprych za pomocą usług udostępnionych na platformie Azure](/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+> - [Implementowanie topologii sieci piasty i szprych na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+> - [Implementowanie topologii sieci piasty i szprych za pomocą usług udostępnionych na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
-## <a name="overview"></a>Omówienie
+## <a name="overview"></a>Przegląd
 
 ![Przykłady topologii sieci piasty i szprych][1]
 
@@ -45,7 +45,7 @@ Piasta to centralna strefa sieciowa, która kontroluje i sprawdza ruch przychodz
 Piasta zawiera często wspólne składniki usługi używane przez szprychy. Poniżej przedstawiono typowe usługi centralne:
 
 - Infrastruktura usługi Active Directory systemu Windows Server, wymagana do uwierzytelniania użytkowników innych firm, którzy uzyskują dostęp z niezaufanych sieci przed uzyskaniem dostępu do obciążeń w szprysze. Obejmuje ona powiązane usługi Active Directory Federation Services (AD FS).
-- Usługa DNS do rozpoznawania nazw obciążeń w szprychach, do uzyskiwania dostępu do zasobów lokalnych i w Internecie, jeśli usługa [Azure DNS][DNS] nie jest używana.
+- Usługa DNS do rozpoznawania nazw obciążeń w szprychach, do uzyskiwania dostępu do zasobów lokalnych i w Internecie, jeśli usługa [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) nie jest używana.
 - Infrastruktura kluczy publicznych (PKI) do implementowania obciążeń logowania jednokrotnego.
 - Kontrola przepływu ruchu TCP i UDP między strefami sieciowymi szprych i Internetem.
 - Sterowanie przepływem między szprychami i środowiskiem lokalnym.
@@ -61,7 +61,7 @@ Szprychy mogą również dzielić różne grupy w obrębie organizacji i umożli
 
 Na platformie Azure każdy składnik, niezależnie od typu, jest wdrażany w ramach subskrypcji platformy Azure. Izolacja składników platformy Azure w różnych subskrypcjach platformy Azure może spełniać różne wymagania biznesowe, takie jak konfigurowanie różnych poziomów dostępu i autoryzacji.
 
-Pojedyncza implementacja piasty i szprych może być skalowana w górę do dużej liczby szprych. Jednak podobnie jak w przypadku każdego systemu informatycznego, istnieją ograniczenia platformy. Wdrożenie piasty jest powiązane z określoną subskrypcją platformy Azure, która ma ograniczenia i limity. (Przykładem może być maksymalna liczba komunikacji równorzędnych sieci wirtualnych. Zobacz [Limity, przydziały i ograniczenia usługi i subskrypcji platformy Azure][Limits], aby uzyskać szczegółowe informacje).
+Pojedyncza implementacja piasty i szprych może być skalowana w górę do dużej liczby szprych. Jednak podobnie jak w przypadku każdego systemu informatycznego, istnieją ograniczenia platformy. Wdrożenie piasty jest powiązane z określoną subskrypcją platformy Azure, która ma ograniczenia i limity. (Przykładem może być maksymalna liczba komunikacji równorzędnych sieci wirtualnych. Aby uzyskać szczegółowe informacje, zobacz [limity subskrypcji i usług platformy Azure, przydziały i ograniczenia] [limity].
 
 W przypadkach, gdy ograniczenia mogą stanowić problem, można skalować w górę architekturę, rozszerzając model z jednej piasty i szprych do klastra piast i szprych. Możesz połączyć wiele piast w jednym lub większej liczbie regionów świadczenia usługi Azure za pomocą komunikacji równorzędnej sieci wirtualnych, usługi Azure ExpressRoute, wirtualnej sieci WAN lub sieci VPN typu lokacja-lokacja.
 
@@ -83,53 +83,48 @@ Szprychy mogą być również połączone ze szprychą, która pełni rolę pias
 
 <!-- images -->
 
-[0]: ./images/network-redundant-equipment.png "Przykłady nakładania się składników"
-[1]: ./images/network-hub-spoke-high-level.png "Ogólny przykład piasty i szprych"
-[2]: ./images/network-hub-spokes-cluster.png "Klaster piast i szprych"
-[3]: ./images/network-spoke-to-spoke.png "Szprycha do szprychy"
-[4]: ./images/network-hub-spoke-block-level-diagram.png "Diagram na poziomie bloku piasty i szprych"
-[5]: ./images/network-users-groups-subsciptions.png "Użytkownicy, grupy, subskrypcje i projekty"
-[6]: ./images/network-infrastructure-high-level.png "Ogólny diagram infrastruktury"
-[7]: ./images/network-highlevel-perimeter-networks.png "Ogólny diagram infrastruktury"
-[8]: ./images/network-vnet-peering-perimeter-neworks.png "Komunikacja równorzędna sieci wirtualnych i sieci obwodowe"
-[9]: ./images/network-high-level-diagram-monitoring.png "Ogólny diagram dla monitorowania"
-[10]: ./images/network-high-level-workloads.png "Ogólny diagram dla obciążenia"
+[0]: ../../_images/azure-best-practices/network-redundant-equipment.png "Przykłady nakładania się składników"
+[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "Ogólny przykład piasty i szprych"
+[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Klaster piast i szprych"
+[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Szprycha do szprychy"
+[4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "Diagram na poziomie bloku piasty i szprych"
+[5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "Użytkownicy, grupy, subskrypcje i projekty"
+[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Ogólny diagram infrastruktury"
+[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "Ogólny diagram infrastruktury"
+[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "Komunikacja równorzędna sieci wirtualnych i sieci obwodowe"
+[9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "Ogólny diagram dla monitorowania"
+[10]: ../../_images/azure-best-practices/network-high-level-workloads.png "Ogólny diagram dla obciążenia"
 
 <!-- links -->
 
-[Limits]: /azure/azure-subscription-service-limits
-[Roles]: /azure/role-based-access-control/built-in-roles
-[VNet]: /azure/virtual-network/virtual-networks-overview
-[network-security-groups]: /azure/virtual-network/virtual-networks-nsg
-[DNS]: /azure/dns/dns-overview
-[PrivateDNS]: /azure/dns/private-dns-overview
-[VNetPeering]: /azure/virtual-network/virtual-network-peering-overview
-[user-defined-routes]: /azure/virtual-network/virtual-networks-udr-overview
-[RBAC]: /azure/role-based-access-control/overview
-[azure-ad]: /azure/active-directory/active-directory-whatis
-[VPN]: /azure/vpn-gateway/vpn-gateway-about-vpngateways
-[ExR]: /azure/expressroute/expressroute-introduction
-[ExRD]: /azure/expressroute/expressroute-erdirect-about
-[vWAN]: /azure/virtual-wan/virtual-wan-about
-[NVA]: /azure/architecture/reference-architectures/dmz/nva-ha
-[AzFW]: /azure/firewall/overview
-[SubMgmt]: /azure/architecture/cloud-adoption/appendix/azure-scaffold
-[RGMgmt]: /azure/azure-resource-manager/resource-group-overview
-[DMZ]: /azure/best-practices-network-security
-[ALB]: /azure/load-balancer/load-balancer-overview
-[PIP]: /azure/virtual-network/resource-groups-networking#public-ip-address
-[AFD]: /azure/frontdoor/front-door-overview
-[AppGW]: /azure/application-gateway/application-gateway-introduction
-[WAF]: /azure/application-gateway/application-gateway-web-application-firewall-overview
-[Monitor]: /azure/monitoring-and-diagnostics/
-[ActLog]: /azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
-[DiagLog]: /azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
-[nsg-log]: /azure/virtual-network/virtual-network-nsg-manage-log
-[OMS]: /azure/operations-management-suite/operations-management-suite-overview
-[NPM]: /azure/log-analytics/log-analytics-network-performance-monitor
-[NetWatch]: /azure/network-watcher/network-watcher-monitoring-overview
-[WebApps]: /azure/app-service/
-[HDI]: /azure/hdinsight/hdinsight-hadoop-introduction
-[EventHubs]: /azure/event-hubs/event-hubs-what-is-event-hubs
-[ServiceBus]: /azure/service-bus-messaging/service-bus-messaging-overview
-[traffic-manager]: /azure/traffic-manager/traffic-manager-overview
+[PrivateDNS]: https://docs.microsoft.com/azure/dns/private-dns-overview
+[VNetPeering]: https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview
+[user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
+[RBAC]: https://docs.microsoft.com/azure/role-based-access-control/overview
+[azure-ad]: https://docs.microsoft.com/azure/active-directory/active-directory-whatis
+[VPN]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways
+[ExR]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction
+[ExRD]: https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about
+[vWAN]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about
+[NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
+[AzFW]: https://docs.microsoft.com/azure/firewall/overview
+[SubMgmt]: ../../reference/azure-scaffold.md
+[RGMgmt]: https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview
+[DMZ]: https://docs.microsoft.com/azure/best-practices-network-security
+[ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
+[PIP]: https://docs.microsoft.com/azure/virtual-network/resource-groups-networking#public-ip-address
+[AFD]: https://docs.microsoft.com/azure/frontdoor/front-door-overview
+[AppGW]: https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction
+[WAF]: https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-overview
+[Monitor]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/
+[ActLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
+[DiagLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
+[nsg-log]: https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-manage-log
+[OMS]: https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview
+[NPM]: https://docs.microsoft.com/azure/log-analytics/log-analytics-network-performance-monitor
+[NetWatch]: https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview
+[WebApps]: https://docs.microsoft.com/azure/app-service/
+[HDI]: https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-introduction
+[EventHubs]: https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs
+[ServiceBus]: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
+[traffic-manager]: https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview

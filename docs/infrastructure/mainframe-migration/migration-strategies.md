@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3296a471540c921d465859d0dfd800a91996f721
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 00b2ee80709c36658a58f23b2848fdf1b64d856d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70831362"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024379"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Przełączenie z komputerów mainframe na platformę Azure
 
@@ -48,7 +48,7 @@ Dzięki porównaniu z tym, platforma Azure oferuje umowy dotyczące poziomu usł
 
 Platforma Azure zapewnia dodatkową dostępność poprzez replikowanie danych z wielu urządzeń magazynujących lokalnie lub w innych regionach geograficznych. W przypadku awarii opartych na platformie Azure zasoby obliczeniowe mogą uzyskać dostęp do replikowanych danych na poziomie lokalnym lub regionalnym.
 
-W przypadku używania zasobów platformy Azure jako usługi (PaaS), takich jak [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) i [Azure Cosmos Database](/azure/cosmos-db/introduction), platforma Azure może automatycznie obsłużyć tryb failover. Gdy korzystasz z usługi Azure Infrastructure as (IaaS), tryb failover zależy od określonych funkcji systemu, takich jak SQL Server zawsze włączona funkcja, wystąpienia klastra trybu failover i grupy dostępności.
+W przypadku używania zasobów platformy Azure jako usługi (PaaS), takich jak [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) i [Azure Cosmos Database](https://docs.microsoft.com/azure/cosmos-db/introduction), platforma Azure może automatycznie obsłużyć tryb failover. Gdy korzystasz z usługi Azure Infrastructure as (IaaS), tryb failover zależy od określonych funkcji systemu, takich jak SQL Server zawsze włączona funkcja, wystąpienia klastra trybu failover i grupy dostępności.
 
 ## <a name="scalability"></a>Skalowalność
 
@@ -60,7 +60,7 @@ CF również oferuje ściśle sprzężone obliczenia, podczas gdy funkcje skalow
 
 Komputery mainframe zwykle utrzymują Lokacje odzyskiwania po awarii lub wykorzystują lub niezależnym dostawcą systemu mainframe w przypadku awarii awaryjnych. Synchronizacja z lokacją odzyskiwania po awarii zazwyczaj odbywa się za pomocą kopii danych w trybie offline. Obie opcje ponoszą wysokie koszty.
 
-Zautomatyzowana nadmiarowość geograficzna jest również dostępna za pomocą funkcji sprzęgu komputera mainframe, chociaż z dużym obciążeniem i jest zazwyczaj zarezerwowana dla systemów o znaczeniu krytycznym. W przeciwieństwie do systemu Azure dostępne są łatwe w implementacji i ekonomiczne opcje [tworzenia kopii zapasowych](/azure/backup/backup-introduction-to-azure-backup), [odzyskiwania](/azure/site-recovery/site-recovery-overview)i [nadmiarowości](/azure/storage/common/storage-redundancy) na poziomach lokalnym lub regionalnym lub za pośrednictwem nadmiarowości geograficznej.
+Zautomatyzowana nadmiarowość geograficzna jest również dostępna za pomocą funkcji sprzęgu komputera mainframe, chociaż z dużym obciążeniem i jest zazwyczaj zarezerwowana dla systemów o znaczeniu krytycznym. W przeciwieństwie do systemu Azure dostępne są łatwe w implementacji i ekonomiczne opcje [tworzenia kopii zapasowych](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [odzyskiwania](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)i [nadmiarowości](https://docs.microsoft.com/azure/storage/common/storage-redundancy) na poziomach lokalnym lub regionalnym lub za pośrednictwem nadmiarowości geograficznej.
 
 ## <a name="storage"></a>Magazyn
 
@@ -73,7 +73,7 @@ Typy magazynów fizycznych dla komputerów mainframe obejmują:
 - **Magazyn centralny:** Zlokalizowane bezpośrednio na procesorze mainframe, jest to również nazywane procesorem lub rzeczywistym magazynem.
 - **Magazyn pomocniczy:** W odróżnieniu od komputera mainframe ten typ obejmuje magazyn w systemie DASDs i jest nazywany magazynem stronicowania.
 
-Chmura oferuje szereg elastycznych, skalowalnych opcji i płacisz tylko za te opcje, które są potrzebne. Usługa [Azure Storage](/azure/storage/common/storage-introduction) oferuje wysoce skalowalny magazyn obiektów dla obiektów danych, usługę systemu plików dla chmury, niezawodny magazyn komunikatów i Magazyn NoSQL. W przypadku maszyn wirtualnych dyski zarządzane i niezarządzane zapewniają trwały, bezpieczny magazyn dyskowy.
+Chmura oferuje szereg elastycznych, skalowalnych opcji i płacisz tylko za te opcje, które są potrzebne. Usługa [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction) oferuje wysoce skalowalny magazyn obiektów dla obiektów danych, usługę systemu plików dla chmury, niezawodny magazyn komunikatów i Magazyn NoSQL. W przypadku maszyn wirtualnych dyski zarządzane i niezarządzane zapewniają trwały, bezpieczny magazyn dyskowy.
 
 ## <a name="mainframe-development-and-testing"></a>Tworzenie i testowanie komputerów mainframe
 
@@ -88,4 +88,4 @@ Gdy rozwiązania są opracowywane i testowane na platformie Azure i są gotowe d
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Migracja aplikacji mainframe](application-strategies.md)
+> [Migracja aplikacji mainframe](./application-strategies.md)

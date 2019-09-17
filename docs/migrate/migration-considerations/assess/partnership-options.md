@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b19353ebe22faf089ff56b5ee84289928a8eaca7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 01d41b3b1486ea563ab1c0b100559e80ad3a03f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905626"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022678"
 ---
 # <a name="understand-partnership-options"></a>Informacje o opcjach partnerstwa
 
@@ -34,10 +34,10 @@ Jeśli organizacja planuje samodzielnie przeprowadzić migrację na platformę A
 
 - **Narzędzia do oceny i migracji.** Platforma Azure oferuje szeroką gamę narzędzi, które mogą być używane w różnych fazach transformacji w chmurze, w tym do oceny istniejącej infrastruktury. Więcej informacji można znaleźć w sekcji „Ocena” w rozdziale „Migracja” poniżej.
 - **[Microsoft Cloud Adoption Framework](../../index.md).** Ta struktura zapewnia strukturalne podejście do wdrażania i migracji w chmurze. Jest ona oparta na sprawdzonych rozwiązaniach w wielu wdrożeniach klientów obsługiwanych przez firmę Microsoft i jest zorganizowana jako seria kroków, od architektury i projektowania do wdrożenia. Dla każdego kroku udostępniono pomocne wskazówki, które ułatwią zaprojektowanie architektury aplikacji.
-- **[Wzorce projektowe oparte na chmurze](/azure/architecture/patterns).** Platforma Azure udostępnia przydatne wzorce projektowe oparte na chmurze służące do tworzenia niezawodnych, skalowalnych i bezpiecznych obciążeń w chmurze. Dla każdego wzorca opisano problem rozwiązywany przez ten wzorzec, uwagi dotyczące stosowania wzorca oraz przykład oparty na platformie Azure. Większość wzorców zawiera przykłady lub fragmenty kodu, które pokazują sposób implementacji wzorca na platformie Azure. Są jednak one odpowiednie dla dowolnego systemu rozproszonego, hostowanego na platformie Azure lub na innych platformach w chmurze.
-- **[Podstawy chmury](/azure/architecture/guide).** Podstawy ułatwiają naukę podstawowych metod implementacji kluczowych pojęć. Ten przewodnik pomaga inżynierom projektować rozwiązania, które wykraczają poza pojedynczą usługę platformy Azure.
-- **[Przykładowe scenariusze](/azure/architecture/example-scenario).** Ten przewodnik zawiera odwołania do prawdziwych implementacji klientów, opisując narzędzia, metody i procesy, które zostały kiedyś zastosowane przez klientów w celu osiągnięcia określonych celów biznesowych.
-- **[Architektury referencyjne](/azure/architecture/reference-architectures).** Architektury referencyjne są uporządkowane według scenariuszy, a powiązane ze sobą architektury odpowiednio pogrupowane. Każda architektura zawiera zalecane rozwiązania z uwzględnieniem zagadnień dotyczących skalowalności, dostępności, możliwości zarządzania i zabezpieczeń. Większość obejmuje również rozwiązanie gotowe do wdrożenia.
+- **[Wzorce projektowe oparte na chmurze](https://docs.microsoft.com/azure/architecture/patterns).** Platforma Azure udostępnia przydatne wzorce projektowe oparte na chmurze służące do tworzenia niezawodnych, skalowalnych i bezpiecznych obciążeń w chmurze. Dla każdego wzorca opisano problem rozwiązywany przez ten wzorzec, uwagi dotyczące stosowania wzorca oraz przykład oparty na platformie Azure. Większość wzorców zawiera przykłady lub fragmenty kodu, które pokazują sposób implementacji wzorca na platformie Azure. Są jednak one odpowiednie dla dowolnego systemu rozproszonego, hostowanego na platformie Azure lub na innych platformach w chmurze.
+- **[Podstawy chmury](https://docs.microsoft.com/azure/architecture/guide).** Podstawy ułatwiają naukę podstawowych metod implementacji kluczowych pojęć. Ten przewodnik pomaga inżynierom projektować rozwiązania, które wykraczają poza pojedynczą usługę platformy Azure.
+- **[Przykładowe scenariusze](https://docs.microsoft.com/azure/architecture/example-scenario).** Ten przewodnik zawiera odwołania do prawdziwych implementacji klientów, opisując narzędzia, metody i procesy, które zostały kiedyś zastosowane przez klientów w celu osiągnięcia określonych celów biznesowych.
+- **[Architektury referencyjne](https://docs.microsoft.com/azure/architecture/reference-architectures).** Architektury referencyjne są uporządkowane według scenariuszy, a powiązane ze sobą architektury odpowiednio pogrupowane. Każda architektura zawiera zalecane rozwiązania z uwzględnieniem zagadnień dotyczących skalowalności, dostępności, możliwości zarządzania i zabezpieczeń. Większość obejmuje również rozwiązanie gotowe do wdrożenia.
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
@@ -76,7 +76,7 @@ Główne fazy typowej asysty w ramach usługi FastTrack for Azure to:
 
 ## <a name="microsoft-services-offerings-aligned-to-cloud-adoption-framework-approaches"></a>Oferty usług firmy Microsoft dostosowane do struktury wdrażania chmury
 
-![Metoda z wykorzystaniem struktury wdrażania chmury usług firmy Microsoft](../../../_images/mcs-program-approach.jpg)
+![Metoda z wykorzystaniem struktury wdrażania chmury usług firmy Microsoft](../../../_images/migrate/mcs-program-approach.jpg)
 
 **Ocena:** Usługi firmy Microsoft korzystają z [ujednoliconego, opartego na danych i narzędziach podejścia](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf), na które składają się warsztaty architektoniczne, informacje o platformie Azure dostarczane w czasie rzeczywistym, modele zagrożeń związanych z zabezpieczeniami i tożsamościami oraz różne narzędzia do uzyskiwania szczegółowych informacji na temat wyzwań, czynników ryzyka, zaleceń i problemów związanych z istniejącym środowiskiem platformy Azure, zapewniającego kluczowe wyniki. Może to być na przykład [harmonogram działania wysokiego poziomu](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
 

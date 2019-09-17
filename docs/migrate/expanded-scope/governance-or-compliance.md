@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5a5becd757d1bca3f10b30297f4c502b49a659c4
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 6c1ac4000f5b79d6b177e8703f5e58b6dd9c9e56
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905609"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022731"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategia utrzymania ładu lub zgodności
 
@@ -27,11 +27,11 @@ Gdy wymagany jest ład lub zgodność, największe znaczenie mają działania do
 
 Konfiguracja podstawowego środowiska platformy Azure może zmienić się znacząco podczas integrowania wymagań dotyczących ładu lub zgodności. Aby zrozumieć, jak zmieniają się wymagania wstępne, ważne jest zrozumienie charakteru wymagań. Przed rozpoczęciem migracji wymagającej utrzymania ładu lub zachowania zgodności należy wybrać odpowiednie podejście i zaimplementować je w środowisku chmury. Poniżej przedstawiono kilka podejść wysokiego poziomu, które są często spotykane podczas migracji:
 
-**Typowe podejście do ładu:** W przypadku większości organizacji [model ładu Cloud Adoption Framework](../../governance/journeys/index.md) jest wystarczającym podejściem, które składa się z implementacji produktu o minimalnej koniecznej funkcjonalności (MVP), po której następują iteracje dojrzałości ładu nakierowane na wymierne ryzyka określone w planie wdrożenia. Takie podejście zapewnia minimalny zestaw narzędzi niezbędnych do ustanowienia spójnego ładu, co pozwala zespołowi zaznajomić się z narzędziami. Następnie zespół rozszerza te narzędzia, aby rozwiązywać typowe problemy dotyczące ładu.
+**Typowe podejście do ładu:** W przypadku większości organizacji [model ładu Cloud Adoption Framework](../../govern/guides/index.md) jest wystarczającym podejściem, które składa się z implementacji produktu o minimalnej koniecznej funkcjonalności (MVP), po której następują iteracje dojrzałości ładu nakierowane na wymierne ryzyka określone w planie wdrożenia. Takie podejście zapewnia minimalny zestaw narzędzi niezbędnych do ustanowienia spójnego ładu, co pozwala zespołowi zaznajomić się z narzędziami. Następnie zespół rozszerza te narzędzia, aby rozwiązywać typowe problemy dotyczące ładu.
 
-**Strategie zgodności ISO 27001:** W przypadku klientów, którzy są zobowiązani do przestrzegania standardów zgodności ISO, [przykłady strategii usług udostępnionych ISO 27001](/azure/governance/blueprints/samples/iso27001-shared/index) mogą posłużyć jako bardziej wydajny produkt MVP, aby generować bardziej zaawansowane ograniczenia ładu na wcześniejszym etapie procesu iteracyjnego. [Przykład App Service Environment/SQL Database ISO 27001](/azure/governance/blueprints/samples/iso27001-ase-sql-workload) rozszerza strategię, aby mapować sterowanie i wdrażać typową architekturę w środowisku aplikacji. W miarę wydawania dodatkowych strategii zgodności będą one przywoływane również tutaj.
+**Strategie zgodności ISO 27001:** W przypadku klientów, którzy są zobowiązani do przestrzegania standardów zgodności ISO, [przykłady strategii usług udostępnionych ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index) mogą posłużyć jako bardziej wydajny produkt MVP, aby generować bardziej zaawansowane ograniczenia ładu na wcześniejszym etapie procesu iteracyjnego. [Przykład App Service Environment/SQL Database ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) rozszerza strategię, aby mapować sterowanie i wdrażać typową architekturę w środowisku aplikacji. W miarę wydawania dodatkowych strategii zgodności będą one przywoływane również tutaj.
 
-**Wirtualne centrum danych:** Wymagany może być bardziej niezawodny punkt początkowy nadzoru. W takich przypadkach należy wziąć pod uwagę [Wirtualne centrum danych Azure (VDC)](https://docs.microsoft.com/azure/architecture/vdc). To podejście zazwyczaj jest zalecane podczas wysiłku wdrażania w skali przedsiębiorstwa, a szczególnie w przypadku nakładów pracy, które przekraczają 10 000 zasobów. Jest to de facto wybór dla złożonych scenariuszy nadzoru, gdy konieczne jest spełnienie dowolnej z następujących kwestii: rozbudowane wymagania dotyczące zgodności z innymi firmami, głęboka znajomość danej dziedziny lub zgodność z dojrzałymi zasadami nadzoru IT i wymaganiami dotyczącymi zgodności.
+**Wirtualne centrum danych:** Wymagany może być bardziej niezawodny punkt początkowy nadzoru. W takich przypadkach należy wziąć pod uwagę [Wirtualne centrum danych Azure (VDC)](../../reference/vdc.md). To podejście zazwyczaj jest zalecane podczas wysiłku wdrażania w skali przedsiębiorstwa, a szczególnie w przypadku nakładów pracy, które przekraczają 10 000 zasobów. Jest to de facto wybór dla złożonych scenariuszy nadzoru, gdy konieczne jest spełnienie dowolnej z następujących kwestii: rozbudowane wymagania dotyczące zgodności z innymi firmami, głęboka znajomość danej dziedziny lub zgodność z dojrzałymi zasadami nadzoru IT i wymaganiami dotyczącymi zgodności.
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>Opcja partnerstwa w celu spełnienia wymagań wstępnych
 
@@ -49,19 +49,19 @@ W trakcie oceny wymagane są dodatkowe decyzje, które należy dostosować do wy
 
 Wymagania dotyczące oceny ładu i zgodności są zbyt specyficzne dla klienta, aby można było podać ogólne wskazówki dotyczące faktycznych czynności podejmowanych podczas oceny. Zaleca się jednak, aby proces obejmował zadania i przydziały czasu dotyczące „dostosowania do wymagań zgodności/ładu”. Aby uzyskać dodatkowe informacje na temat tych wymagań, zobacz następujące linki:
 
-Aby lepiej zrozumieć ład, zapoznaj się z [omówieniem pięciu dyscyplin ładu chmury](/azure/architecture/cloud-adoption/governance/governance-disciplines). Ta część przewodnika Cloud Adoption Framework zawiera również szablony służące do dokumentowania zasad, wskazówek i wymagań dotyczących każdej z pięciu dyscyplin:
+Aby lepiej zrozumieć ład, zapoznaj się z [omówieniem pięciu dyscyplin ładu chmury](../../govern/governance-disciplines.md). Ta część przewodnika Cloud Adoption Framework zawiera również szablony służące do dokumentowania zasad, wskazówek i wymagań dotyczących każdej z pięciu dyscyplin:
 
-- [Zarządzanie kosztami](/azure/architecture/cloud-adoption/governance/cost-management/template)
-- [Punkt odniesienia zabezpieczeń](/azure/architecture/cloud-adoption/governance/security-baseline/template)
-- [Spójność zasobów](/azure/architecture/cloud-adoption/governance/resource-consistency/template)
-- [Punkt odniesienia obsługi tożsamości](/azure/architecture/cloud-adoption/governance/identity-baseline/template)
-- [Przyspieszanie wdrażania](/azure/architecture/cloud-adoption/governance/deployment-acceleration/template)
+- [Zarządzanie kosztami](../../govern/cost-management/template.md)
+- [Punkt odniesienia zabezpieczeń](../../govern/security-baseline/template.md)
+- [Spójność zasobów].. /.. /govern/resource-consistency/template.md)
+- [Linia bazowa tożsamości].. /.. /govern/identity-baseline/template.md)
+- [Przyspieszanie wdrażania](../../govern/deployment-acceleration/template.md)
 
-Aby uzyskać wskazówki dotyczące opracowywania wytycznych dotyczących ładu opartych na modelu ładu Cloud Adoption Framework, zobacz artykuł [Implementing a cloud governance strategy](/azure/architecture/cloud-adoption/governance/corporate-policy) (Implementacja strategii ładu chmury).
+Aby uzyskać wskazówki dotyczące opracowywania wytycznych dotyczących ładu opartych na modelu ładu Cloud Adoption Framework, zobacz artykuł [Implementing a cloud governance strategy](../../govern/corporate-policy.md) (Implementacja strategii ładu chmury).
 
 ## <a name="optimize-and-promote-process-changes"></a>Zmiany procesu optymalizacji i podwyższania poziomu
 
-W trakcie procesów optymalizacji i podwyższania poziomu zaleca się, aby zespół ds. ładu chmury zainwestował czas na przetestowanie i zweryfikowanie zgodności ze standardami ładu i zgodności. Ponadto ten krok to dobry moment, aby wprowadzić procesy do zespołu ds. ładu chmury w celu zadbanie o szablony, które mogą zapewnić dodatkowe [przyspieszenie wdrażania](/azure/architecture/cloud-adoption/governance/deployment-acceleration) przyszłych projektów.
+W trakcie procesów optymalizacji i podwyższania poziomu zaleca się, aby zespół ds. ładu chmury zainwestował czas na przetestowanie i zweryfikowanie zgodności ze standardami ładu i zgodności. Ponadto ten krok to dobry moment, aby wprowadzić procesy do zespołu ds. ładu chmury w celu zadbanie o szablony, które mogą zapewnić dodatkowe [przyspieszenie wdrażania](../../govern/deployment-acceleration/index.md) przyszłych projektów.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Sugerowana akcja w trakcie procesu optymalizacji i podwyższania poziomu
 

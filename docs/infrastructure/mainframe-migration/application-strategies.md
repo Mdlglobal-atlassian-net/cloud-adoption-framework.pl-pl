@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 39b52cc79041a5d4df445c416ae7bf8cb8c14879
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906331"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024410"
 ---
 # <a name="mainframe-application-migration"></a>Migracja aplikacji mainframe
 
@@ -51,7 +51,7 @@ Wiele systemów mainframe wykonuje comiesięczne lub roczne aktualizacje milion�
 
 ### <a name="data-ingestion-systems"></a>Systemy pozyskiwania danych
 
-Komputery mainframe pobierają duże partie danych z usług detalicznych, finansowych, produkcyjnych i innych rozwiązań do przetworzenia. Na platformie Azure można używać prostych narzędzi wiersza polecenia, takich jak [AzCopy](/azure/storage/common/storage-use-azcopy) do kopiowania danych do i z lokalizacji magazynu. Można również użyć usługi [Azure Data Factory](/azure/data-factory/introduction) , co pozwala na pozyskiwanie danych z różnych magazynów danych w celu tworzenia i planowania przepływów pracy opartych na danych.
+Komputery mainframe pobierają duże partie danych z usług detalicznych, finansowych, produkcyjnych i innych rozwiązań do przetworzenia. Na platformie Azure można używać prostych narzędzi wiersza polecenia, takich jak [AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) do kopiowania danych do i z lokalizacji magazynu. Można również użyć usługi [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) , co pozwala na pozyskiwanie danych z różnych magazynów danych w celu tworzenia i planowania przepływów pracy opartych na danych.
 
 Oprócz środowisk emulacji platforma Azure zapewnia usługi platformy jako usługa (PaaS) i usługi analityczne, które mogą ulepszyć istniejące środowiska mainframe.
 
@@ -63,9 +63,9 @@ Monitory TP są dostępne od różnych dostawców i uruchamiane na maszynach wir
 
 !["Podnieś i Przenieś" Migracja środowiska mainframe na platformę Azure przy użyciu oprogramowania do emulacji](../../_images/mainframe-migration/mainframe-vs-azure.png)
 
-Na platformie Azure środowiska emulacji są używane do uruchamiania Menedżera TP i zadań wsadowych korzystających z JCL. W warstwie danych DB2 jest zastępowany przez [Azure SQL Database](/azure/sql-database/sql-database-technical-overview), chociaż Microsoft SQL Server, DB2 LUW lub Oracle Database może być również używany. Emulator obsługuje funkcję IMS, VSAM i SEQ. Narzędzia do zarządzania systemem komputera mainframe są zastępowane przez usługi platformy Azure i oprogramowanie od innych dostawców, które są uruchamiane na maszynach wirtualnych.
+Na platformie Azure środowiska emulacji są używane do uruchamiania Menedżera TP i zadań wsadowych korzystających z JCL. W warstwie danych DB2 jest zastępowany przez [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), chociaż Microsoft SQL Server, DB2 LUW lub Oracle Database może być również używany. Emulator obsługuje funkcję IMS, VSAM i SEQ. Narzędzia do zarządzania systemem komputera mainframe są zastępowane przez usługi platformy Azure i oprogramowanie od innych dostawców, które są uruchamiane na maszynach wirtualnych.
 
-Funkcje obsługi ekranu i wpisów formularzy są powszechnie implementowane przy użyciu serwerów sieci Web, które można łączyć z interfejsami API bazy danych, takimi jak ADO, ODBC i JDBC na potrzeby dostępu do danych i transakcji. Dokładny wiersz składników usługi Azure IaaS do użycia zależy od preferowanego systemu operacyjnego. Przykład:
+Funkcje obsługi ekranu i wpisów formularzy są powszechnie implementowane przy użyciu serwerów sieci Web, które można łączyć z interfejsami API bazy danych, takimi jak ADO, ODBC i JDBC na potrzeby dostępu do danych i transakcji. Dokładny wiersz składników usługi Azure IaaS do użycia zależy od preferowanego systemu operacyjnego. Na przykład:
 
 - Maszyny wirtualne oparte na systemie Windows: Internet Information Server (IIS) wraz z ASP.NET na potrzeby obsługi ekranu i logiki biznesowej. Użyj ADO.NET do uzyskiwania dostępu do danych i transakcji.
 
@@ -75,7 +75,7 @@ Funkcje obsługi ekranu i wpisów formularzy są powszechnie implementowane przy
 
 Operacje wsadowe na platformie Azure różnią się od typowego środowiska wsadowego na mainframe. Zadania wsadowe komputera mainframe są zwykle szeregowe i są zależne od liczby operacji we/wy dostarczonej przez szkielet mainframe w celu uzyskania wydajności. Oparte na chmurze środowiska wsadowe wykorzystują równoległe i szybkie sieci do wydajności.
 
-Aby zoptymalizować wydajność przetwarzania wsadowego przy użyciu platformy Azure, należy rozważyć opcje [obliczeń](/azure/virtual-machines/windows/overview), [magazynu](/azure/storage/blobs/storage-blobs-introduction), [sieci](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)i [monitorowania](/azure/azure-monitor/overview) w następujący sposób.
+Aby zoptymalizować wydajność przetwarzania wsadowego przy użyciu platformy Azure, należy rozważyć opcje [obliczeń](https://docs.microsoft.com/azure/virtual-machines/windows/overview), [magazynu](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction), [sieci](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)i [monitorowania](https://docs.microsoft.com/azure/azure-monitor/overview) w następujący sposób.
 
 ### <a name="compute"></a>Wystąpienia obliczeniowe
 
@@ -93,7 +93,7 @@ Używanych
 
 Używanych
 
-- [Dysk SSD Azure Premium](/azure/virtual-machines/windows/premium-storage) lub [Azure Ultra SSD](/azure/virtual-machines/windows/disks-ultra-ssd) dla maksymalnej liczby operacji we/wy na sekundę.
+- [Dysk SSD Azure Premium](https://docs.microsoft.com/azure/virtual-machines/windows/premium-storage) lub [Azure Ultra SSD](https://docs.microsoft.com/azure/virtual-machines/windows/disks-ultra-ssd) dla maksymalnej liczby operacji we/wy na sekundę.
 
 - Rozłożenie z wieloma dyskami dla większej liczby operacji we/wy na rozmiar magazynu.
 
@@ -101,11 +101,11 @@ Używanych
 
 ### <a name="networking"></a>Networking
 
-- Używaj [przyspieszonej sieci platformy Azure](/azure/virtual-network/create-vm-accelerated-networking-powershell) , aby zminimalizować opóźnienia.
+- Używaj [przyspieszonej sieci platformy Azure](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell) , aby zminimalizować opóźnienia.
 
 ### <a name="monitoring"></a>Monitorowanie
 
-- Korzystaj z narzędzi do monitorowania, [Azure monitor](/azure/azure-monitor/overview), [Azure Application Insights](/azure/application-insights/app-insights-overview), a nawet Dzienniki systemu Azure umożliwiają administratorom monitorowanie dowolnej wydajności przebiegów wsadowych i eliminowanie wąskich gardeł.
+- Korzystaj z narzędzi do monitorowania, [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview), a nawet Dzienniki systemu Azure umożliwiają administratorom monitorowanie dowolnej wydajności przebiegów wsadowych i eliminowanie wąskich gardeł.
 
 ## <a name="migrate-development-environments"></a>Migruj środowiska deweloperskie
 
@@ -125,7 +125,7 @@ Rozproszone architektury chmury polegają na różnych zestawach narzędzi progr
 
 ## <a name="migrate-databases-and-data"></a>Migrowanie baz danych i danych
 
-Migracja aplikacji zwykle obejmuje rehostowanie warstwy danych. Można migrować SQL Server, Open-Source i innych relacyjnych baz danych do w pełni zarządzanych rozwiązań na platformie Azure, takich jak [Azure SQL Database wystąpienie zarządzane](/azure/sql-database/sql-database-managed-instance), [usługa Azure Database Service for PostgreSQL](/azure/postgresql/overview), i [Azure Database for MySQL](/azure/mysql/overview) z [ Azure Database Migration Service](/azure/dms/dms-overview).
+Migracja aplikacji zwykle obejmuje rehostowanie warstwy danych. Można migrować SQL Server, Open-Source i innych relacyjnych baz danych do w pełni zarządzanych rozwiązań na platformie Azure, takich jak [Azure SQL Database wystąpienie zarządzane](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [usługa Azure Database Service for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview), i [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) z [ Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 
 Na przykład można przeprowadzić migrację, jeśli używasz warstwy danych komputera mainframe:
 
@@ -159,7 +159,7 @@ Ponadto każda warstwa może również zapewnić odpowiednie usługi odzyskiwani
 
 Na poniższej ilustracji przedstawiono możliwe wdrożenie platformy Azure przy użyciu lokacji podstawowej i dodatkowej. W lokacji głównej maszyny wirtualne produkcyjne, przejściowe i testowe są wdrażane z wysoką dostępnością. Lokacja dodatkowa służy do tworzenia kopii zapasowych i odzyskiwania po awarii.
 
-![Możliwe wdrożenie platformy Azure przy użyciu lokacji podstawowej i dodatkowej](../../_images/mainframe-migration/migration-backup-DR.png)
+![Możliwe wdrożenie platformy Azure przy użyciu lokacji podstawowej i dodatkowej](../../_images/mainframe-migration/migration-backup-dr.png)
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>Wykonywanie przemieszczanego komputera mainframe na platformie Azure
 
@@ -167,7 +167,7 @@ Przenoszenie rozwiązań z komputera mainframe na platformę Azure może wymaga�
 
 Typowym scenariuszem jest przeniesienie aplikacji na platformę Azure, zachowując dane używane przez aplikację na komputerze mainframe. Określone oprogramowanie służy do włączania dostępu do danych z komputera mainframe przez aplikacje na platformie Azure. Na szczęście wiele różnych rozwiązań zapewnia integrację między platformą Azure i istniejącymi środowiskami mainframe, obsługą scenariuszy hybrydowych oraz migracją w czasie. Partnerzy firmy Microsoft, niezależni dostawcy oprogramowania i Integratory systemów mogą pomóc Ci w podróży.
 
-Jedną z opcji jest [Microsoft Host Integration Server](/host-integration-server), rozwiązanie, które zapewnia rozproszoną architekturę relacyjnej bazy danych (DRDA) wymaganą dla aplikacji na platformie Azure, aby uzyskiwać dostęp do danych w programie DB2, które pozostają na komputerze mainframe. Inne opcje integracji komputerów typu mainframe z platformą Azure obejmują rozwiązania firmy IBM, Attunity, Codit, innych dostawców i opcje typu open source.
+Jedną z opcji jest [Microsoft Host Integration Server](https://docs.microsoft.com/host-integration-server), rozwiązanie, które zapewnia rozproszoną architekturę relacyjnej bazy danych (DRDA) wymaganą dla aplikacji na platformie Azure, aby uzyskiwać dostęp do danych w programie DB2, które pozostają na komputerze mainframe. Inne opcje integracji komputerów typu mainframe z platformą Azure obejmują rozwiązania firmy IBM, Attunity, Codit, innych dostawców i opcje typu open source.
 
 ## <a name="partner-solutions"></a>Rozwiązania partnerskie
 
@@ -179,8 +179,8 @@ System Azure zapewnia sprawdzoną, wysoką dostępność i skalowalną infrastru
 
 Aby uzyskać więcej informacji, zobacz następujące zasoby:
 
-- [Rozpoczynanie pracy z platformą Azure](/azure)
+- [Rozpoczynanie pracy z platformą Azure](https://docs.microsoft.com/azure)
 
 - [Wdrażanie programu IBM DB2 pureScale na platformie Azure](https://azure.microsoft.com/resources/deploy-ibm-db2-purescale-on-azure)
 
-- [Dokumentacja Host Integration Server](/host-integration-server)
+- [Dokumentacja Host Integration Server](https://docs.microsoft.com/host-integration-server)

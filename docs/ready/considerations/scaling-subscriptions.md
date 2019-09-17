@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0f2bf93d8659804db3bdcd41caa832310fe2f46c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905357"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025144"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Skalowanie za pomocą wielu subskrypcji platformy Azure
 
@@ -39,7 +39,7 @@ Inne sytuacje mogą wymagać użycia dodatkowych subskrypcji. Rozszerzając swó
 
 - Subskrypcje mają różne limity dla różnych typów zasobów. Na przykład liczba sieci wirtualnych w subskrypcji jest ograniczona. Gdy subskrypcja wkrótce osiągnie limit, należy utworzyć kolejną subskrypcję i umieścić w niej nowe zasoby.
 
-  Aby uzyskać więcej informacji, zobacz [Limity, przydziały i ograniczenia usług i subskrypcji platformy Azure](/azure/azure-subscription-service-limits).
+  Aby uzyskać więcej informacji, zobacz [Limity, przydziały i ograniczenia usług i subskrypcji platformy Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 
 - Każda subskrypcja może zaimplementować własne zasady dla typów zasobów do wdrożenia i obsługiwanych regionów.
 
@@ -59,7 +59,7 @@ Inne sytuacje mogą wymagać użycia dodatkowych subskrypcji. Rozszerzając swó
 
 Można również utworzyć dodatkowe subskrypcje z innych powodów biznesowych lub technicznych specyficznych dla organizacji. Mogą występować dodatkowe koszty związane z ruchem przychodzącym i wychodzącym danych przesyłanych między subskrypcjami.
 
-Wiele typów zasobów można przenosić między subskrypcjami lub używać zautomatyzowanych wdrożeń w celu migracji zasobów do innej subskrypcji. Aby uzyskać więcej informacji, zobacz [Przenoszenie zasobów platformy Azure do innej grupy zasobów lub subskrypcji](/azure/azure-resource-manager/resource-group-move-resources).
+Wiele typów zasobów można przenosić między subskrypcjami lub używać zautomatyzowanych wdrożeń w celu migracji zasobów do innej subskrypcji. Aby uzyskać więcej informacji, zobacz [Przenoszenie zasobów platformy Azure do innej grupy zasobów lub subskrypcji](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 ## <a name="managing-multiple-subscriptions"></a>Zarządzanie wieloma subskrypcjami
 
@@ -76,7 +76,7 @@ Platforma Azure oferuje cztery poziomy zakresu zarządzania: grupy zarządzania,
 
 Przy użyciu tego modelu dziedziczenia można rozmieścić subskrypcje w hierarchii, tak aby w każdej subskrypcji były stosowane odpowiednie zasady i kontrole zabezpieczeń.
 
-![Cztery poziomy zakresu do organizowania zasobów platformy Azure](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![Cztery poziomy zakresu do organizowania zasobów platformy Azure](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
 
 Każdy dostęp lub zasady w głównej grupie zarządzania dotyczy wszystkich zasobów w katalogu. Należy starannie rozważyć, które elementy są definiowane w tym zakresie. Należy uwzględnić tylko te przypisania, które muszą być dostępne.
 
@@ -86,26 +86,26 @@ Gdy subskrypcja jest przenoszona do istniejącej grupy zarządzania, dziedziczy 
 
 ![Przykład hierarchii grupy zarządzania](../../_images/ready/management-group-hierarchy.png)
 
-Aby uzyskać więcej informacji, zobacz [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](/azure/governance/management-groups).
+Aby uzyskać więcej informacji, zobacz [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](https://docs.microsoft.com/azure/governance/management-groups).
 
 ## <a name="tips-for-creating-new-subscriptions"></a>Porady dotyczące tworzenia nowych subskrypcji
 
 - Określ, kto będzie odpowiedzialny za tworzenie nowych subskrypcji.
 - Zdecyduj, jakie zasoby subskrypcja będzie zawierać domyślnie.
 - Zdecyduj, jak powinny wyglądać wszystkie standardowe subskrypcje. Rozważ kwestie związane z kontrolą dostępu opartą na rolach, zasadami, tagami zasobami infrastruktury.
-- Jeśli to możliwe, podczas tworzenia nowych subskrypcji [używaj nazwy głównej usługi](/azure/azure-resource-manager/grant-access-to-create-subscription). Zdefiniuj grupę zabezpieczeń, która może żądać nowych subskrypcji za pośrednictwem zautomatyzowanego przepływu pracy.
+- Jeśli to możliwe, podczas tworzenia nowych subskrypcji [używaj nazwy głównej usługi](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription). Zdefiniuj grupę zabezpieczeń, która może żądać nowych subskrypcji za pośrednictwem zautomatyzowanego przepływu pracy.
 - Jeśli jesteś klientem mającym umowę Enterprise (EA), poproś pomoc techniczną platformy Azure o zablokowanie możliwości tworzenia subskrypcji niezwiązanych z umową EA dla organizacji.
 
 ## <a name="related-resources"></a>Powiązane zasoby
 
 - [Podstawowe pojęcia dotyczące platformy Azure](./fundamental-concepts.md).
-- [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](/azure/governance/management-groups).
-- [Podnoszenie poziomu dostępu w celu zarządzania wszystkimi subskrypcjami platformy Azure i grupami zarządzania](/azure/role-based-access-control/elevate-access-global-admin)
-- [Przenoszenie zasobów platformy Azure do innej grupy zasobów lub subskrypcji](/azure/azure-resource-manager/resource-group-move-resources)
+- [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](https://docs.microsoft.com/azure/governance/management-groups).
+- [Podnoszenie poziomu dostępu w celu zarządzania wszystkimi subskrypcjami platformy Azure i grupami zarządzania](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)
+- [Przenoszenie zasobów platformy Azure do innej grupy zasobów lub subskrypcji](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Zapoznaj się z [zalecanymi konwencjami nazewnictwa i tagowania](./name-and-tag.md), które warto stosować podczas wdrażania zasobów platformy Azure.
+Zapoznaj się z [zalecanymi konwencjami nazewnictwa i tagowania](./naming-and-tagging.md), które warto stosować podczas wdrażania zasobów platformy Azure.
 
 > [!div class="nextstepaction"]
-> [Zalecane konwencje nazewnictwa i tagowania](./name-and-tag.md)
+> [Zalecane konwencje nazewnictwa i tagowania](./naming-and-tagging.md)

@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dc567c80b6193d651c8bf3884476728a8d3daa7f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2dddb4893a2781da38969949972fa516e32b46c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833481"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025400"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>Zarządzanie zmianami w procesie migracji przyrostowej
 
-W tym artykule przyjęto założenie, że procesy migracji mają charakter przyrostowy i działają równolegle do [procesu zarządzania](../../../governance/index.md). Jednak te same wskazówki mogą mieć zastosowanie w przypadku wypełniania zadań początkowych w strukturze podziału pracy dla tradycyjnych podejść zarządzania zmianami kaskadowymi.
+W tym artykule przyjęto założenie, że procesy migracji mają charakter przyrostowy i działają równolegle do [procesu zarządzania](../../../govern/index.md). Jednak te same wskazówki mogą mieć zastosowanie w przypadku wypełniania zadań początkowych w strukturze podziału pracy dla tradycyjnych podejść zarządzania zmianami kaskadowymi.
 
 ## <a name="release-backlog"></a>Lista prac wydania
 

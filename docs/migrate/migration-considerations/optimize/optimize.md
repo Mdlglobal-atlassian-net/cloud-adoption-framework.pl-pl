@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3709b37e1604ff966d043c142e86a1dbb78ecffb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825499"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022647"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Testy porównawcze i zmiana rozmiaru zasobów w chmurze
 
@@ -36,7 +36,7 @@ Podczas migracji można używać popartych wiedzą i doświadczeniem przypuszcze
 
 ## <a name="benchmark-and-optimize-with-azure-cost-management"></a>Testy porównawcze i optymalizacja przy użyciu usługi Azure Cost Management
 
-Usługa [Azure Cost Management](/azure/cost-management/overview) licencjonowana przez firmę Cloudyn, podmiot zależny firmy Microsoft, zapewnia przejrzyste i dokładne zarządzanie wydatkami na chmurę. Ta usługa monitoruje, przeprowadza testy porównawcze, przydziela i optymalizuje koszty chmury.
+Usługa [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview) licencjonowana przez firmę Cloudyn, podmiot zależny firmy Microsoft, zapewnia przejrzyste i dokładne zarządzanie wydatkami na chmurę. Ta usługa monitoruje, przeprowadza testy porównawcze, przydziela i optymalizuje koszty chmury.
 
 Dane historyczne mogą pomóc w zarządzaniu kosztami przez analizowanie użycia i kosztów w czasie w celu zidentyfikowania trendów, które następnie są używane do prognozowania przyszłych wydatków. Usługa Cost Management zawiera także przydatne raporty kosztów planowanych. Alokacja kosztów zarządza kosztami, analizując koszty na podstawie zasad tagowania. Alokacji kosztów można użyć na potrzeby przewidywanych kosztów i obciążeń zwrotnych, aby uwidocznić wykorzystanie zasobów i związane z tym koszty oraz wpływać na zachowania zużycia lub obciążać klientów dzierżawy. Kontrola dostępu ułatwia zarządzanie kosztami, zapewniając, że użytkownicy i zespoły mają dostęp tylko do potrzebnych im danych usługi Cost Management. Generowanie alertów ułatwia zarządzanie kosztami, automatycznie generując powiadomienia, gdy występują nietypowe lub nadmiarowe wydatki. Alerty mogą także automatycznie powiadamiać innych uczestników projektu o anomaliach wydatków i ryzykach związanych z nadmiarowymi wydatkami. Różne raporty obsługują alerty oparte na budżecie i progach kosztów.
 

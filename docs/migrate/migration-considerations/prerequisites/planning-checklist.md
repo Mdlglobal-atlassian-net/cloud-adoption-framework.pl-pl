@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d216d65685c7e58fc622a5d7f820f0c23097fa4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833299"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022595"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Lista kontrolna dotycząca planowania środowiska migracji — weryfikacja gotowości środowiska przed migracją
 
@@ -33,7 +33,7 @@ Pierwszą i najważniejszą decyzją dotyczącą środowiska gotowego do migracj
 
 Niezależnie od tego, czy zdecydujesz się na zastosowanie szerszej strategii ładu w chmurze dla początkowej migracji czy nie, musisz się upewnić, że środowisko wdrożenia w chmurze jest skonfigurowane w sposób umożliwiający obsługę obciążeń.
 
-Jeśli planujesz zapewnienie zgodności migracji ze strategią ładu w chmurze od początku, musisz zastosować [Pięć dziedzin nadzoru chmury](../../../governance/governance-disciplines.md), aby łatwiej podejmować decyzje dotyczące zasad, łańcuchów narzędzi i mechanizmów wymuszania, które dostosują środowisko w chmurze do ogólnych wymagań przedsiębiorstwa. Zapoznaj się z [praktycznymi przewodnikami po projektowaniu rozwiązań utrzymania ładu](../../../governance/journeys/index.md), aby uzyskać przykłady wdrożenia tego modelu przy użyciu usług platformy Azure.
+Jeśli planujesz zapewnienie zgodności migracji ze strategią ładu w chmurze od początku, musisz zastosować [Pięć dziedzin nadzoru chmury](../../../govern/governance-disciplines.md), aby łatwiej podejmować decyzje dotyczące zasad, łańcuchów narzędzi i mechanizmów wymuszania, które dostosują środowisko w chmurze do ogólnych wymagań przedsiębiorstwa. Zapoznaj się z [praktycznymi przewodnikami po projektowaniu rozwiązań utrzymania ładu](../../../govern/guides/index.md), aby uzyskać przykłady wdrożenia tego modelu przy użyciu usług platformy Azure.
 
 Jeśli początkowe migracje nie są ściśle dostosowane do szerszej strategii ładu w chmurze, nadal konieczne jest rozwiązywanie ogólnych problemów związanych z organizacją, dostępem i planowaniem infrastruktury. Zapoznaj się z [przewodnikiem Gotowość na platformę Azure](../../../ready/azure-readiness-guide/index.md), aby uzyskać pomoc związaną z podejmowaniem decyzji dotyczących gotowości chmury.
 
@@ -64,7 +64,7 @@ Usługi tożsamości oparte na chmurze są warunkiem wstępnym, aby można było
 
 ## <a name="next-steps"></a>Następne kroki
 
-Jeśli środowisko spełnia wymagania minimalne, można je uznać za zatwierdzone pod względem gotowości do migracji. Sekcja [Złożoność kulturowa i zarządzanie zmianami](./culture-complexity.md) zawiera informacje ułatwiające dopasowywanie ról i obowiązków w celu spełnienia odpowiednich oczekiwań podczas wykonywania planu.
+Jeśli środowisko spełnia wymagania minimalne, można je uznać za zatwierdzone pod względem gotowości do migracji. Sekcja [Złożoność kulturowa i zarządzanie zmianami](./cultural-complexity.md) zawiera informacje ułatwiające dopasowywanie ról i obowiązków w celu spełnienia odpowiednich oczekiwań podczas wykonywania planu.
 
 > [!div class="nextstepaction"]
-> [Złożoność kulturowa i zarządzanie zmianami](./culture-complexity.md)
+> [Złożoność kulturowa i zarządzanie zmianami](./cultural-complexity.md)

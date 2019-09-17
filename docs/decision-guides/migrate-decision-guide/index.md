@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 39254fdf2dd5638978899308c4fe79cd40cf249f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 17f462802a9ff5b44dfd734b299057649bbd797b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816962"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023846"
 ---
 # <a name="migration-tools-decision-guide"></a>Przewodnik po decyzjach dotyczących narzędzi migracji
 
@@ -21,7 +21,7 @@ Wybór strategii i narzędzi używanych do migrowania aplikacji na platformę Az
 
 Decyzja o przeprowadzeniu migracji przy użyciu technologii platformy jako usługi (PaaS) lub infrastruktury jako usługi (IaaS) zależy od równowagi między kosztami, czasem, istniejącym długiem technicznym i długoterminowymi zwrotami. Technologia IaaS to często najszybsza droga do chmury, wymagająca najmniejszych zmian obciążenia. Technologia PaaS może wymagać modyfikacji struktury danych lub kodu źródłowego, jednak generuje znaczące długoterminowe korzyści w postaci zmniejszenia kosztów operacyjnych i większej elastyczności technicznej. Na poniższym diagramie termin _modernizowanie_ został użyty w celu odzwierciedlenia decyzji o zmodernizowaniu zasobu podczas migracji i przeprowadzaniu migracji zmodernizowanego zasobu na platformę PaaS.
 
-![Przykładowe drzewo decyzyjne dotyczące narzędzi migracji.](../../_images/migration/migration-tools-decision-tree.png)
+![Przykładowe drzewo decyzyjne dotyczące narzędzi migracji.](../../_images/migrate/migration-tools-decision-tree.png)
 
 ## <a name="key-questions"></a>Kluczowe pytania
 
@@ -40,7 +40,7 @@ Mimo że w przewodniku Cloud Adoption Framework podkreślono [migrację przyrost
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-- **[Podstawy chmury: Omówienie opcji obliczeniowych na platformie Azure](/azure/architecture/guide/technology-choices/compute-overview)** . Zawiera informacje dotyczące możliwości opcji obliczeniowych rozwiązań Azure IaaS i PaaS.
-- **[Podstawy chmury: Wybór odpowiedniego magazynu danych](/azure/architecture/guide/technology-choices/data-store-overview)** . Omówienie opcji magazynowania technologii PaaS dostępnych na platformie Azure.
+- **[Podstawy chmury: Omówienie opcji obliczeniowych na platformie Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)** . Zawiera informacje dotyczące możliwości opcji obliczeniowych rozwiązań Azure IaaS i PaaS.
+- **[Podstawy chmury: Wybór odpowiedniego magazynu danych](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)** . Omówienie opcji magazynowania technologii PaaS dostępnych na platformie Azure.
 - **[Migracja o rozszerzonym zakresie: Wymagania dotyczące magazynu przekraczają pojemność sieci podczas prac nad migracją](../../migrate/expanded-scope/network-capacity-exceeded.md)** . Omówienie alternatywnych mechanizmów migracji danych dla scenariuszy, w których migracja danych jest utrudniona przez dostępną przepustowość sieci.
-- **[SQL Database: Wybieranie odpowiedniej opcji programu SQL Server na platformie Azure](/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Omówienie opcji i uzasadnień biznesowych dotyczących hostowania obciążeń programu SQL Server w środowisku hostowanej infrastruktury (IaaS) lub hostowanej usługi (PaaS).
+- **[SQL Database: Wybieranie odpowiedniej opcji programu SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Omówienie opcji i uzasadnień biznesowych dotyczących hostowania obciążeń programu SQL Server w środowisku hostowanej infrastruktury (IaaS) lub hostowanej usługi (PaaS).

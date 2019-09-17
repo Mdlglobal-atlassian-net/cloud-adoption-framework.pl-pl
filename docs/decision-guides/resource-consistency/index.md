@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2fc051e232fde095ca511bad3f4035198488b5f4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 04d0a1e2ed63145baf94010fdf071a271461e7d0
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817591"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023791"
 ---
 # <a name="resource-consistency-decision-guide"></a>Przewodnik podejmowania decyzji dotyczących spójności zasobów
 
 [Projekt subskrypcji](../subscriptions/index.md) platformy Azure określa sposób organizowania zasobów w chmurze w odniesieniu do struktury organizacji, praktyk księgowych i wymagań dotyczących obciążenia. Oprócz tego poziomu struktury spełnienie wymagań dotyczących zasad ładu organizacyjnego dla infrastruktury w chmurze wymaga umiejętności spójnego organizowania i wdrażania zasobów oraz zarządzania nimi w ramach subskrypcji.
 
-![Wykres opcji spójności zasobów od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/discovery-guides/discovery-guide-resource-consistency.png)
+![Wykres opcji spójności zasobów od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/decision-guides/decision-guide-resource-consistency.png)
 
 Idź do: [Grupowanie podstawowe](#basic-grouping) | [Spójność wdrożenia](#deployment-consistency) | [Spójność zasad](#policy-consistency) | [Spójność hierarchiczna](#hierarchical-consistency) | [Spójność zautomatyzowana](#automated-consistency)
 
@@ -30,7 +30,7 @@ Wraz ze wzrostem znaczenia tych czynników coraz ważniejsze stają się korzyś
 
 ## <a name="basic-grouping"></a>Grupowanie podstawowe
 
-Na platformie Azure [grupy zasobów](/azure/azure-resource-manager/resource-group-overview#resource-groups) stanowią podstawowy mechanizm organizacji zasobów umożliwiający logiczne grupowanie zasobów w ramach subskrypcji.
+Na platformie Azure [grupy zasobów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) stanowią podstawowy mechanizm organizacji zasobów umożliwiający logiczne grupowanie zasobów w ramach subskrypcji.
 
 Grupy zasobów działają jak kontenery dla zasobów o typowym cyklu życia lub ograniczeniach zarządzania współdzielonego, takich jak wymagania dotyczące zasad lub kontroli dostępu opartej na rolach (RBAC). Grup zasobów nie można zagnieżdżać, a zasoby mogą należeć tylko do jednej grupy zasobów. Niektóre akcje mogą działać na wszystkie zasoby w grupie zasobów. Na przykład usunięcie grupy zasobów powoduje usunięcie wszystkich zasobów w obrębie tej grupy. Podczas tworzenia grup zasobów dostępne są typowe wzorce, często podzielone na dwie kategorie:
 
@@ -41,7 +41,7 @@ Grupy zasobów działają jak kontenery dla zasobów o typowym cyklu życia lub 
 
 Opierając się na mechanizmie podstawowego grupowania zasobów, platforma Azure udostępnia system wdrażania zasobów w środowisku chmury przy użyciu szablonów. Przy użyciu szablonów można tworzyć spójne konwencje organizacji i nazewnictwa podczas wdrażania obciążeń, wymuszając te aspekty projektu wdrażania zasobów i zarządzania.
 
-[Szablony usługi Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview#template-deployment) umożliwiają wielokrotne wdrażanie zasobów w spójnym stanie przy użyciu wstępnie określonej konfiguracji i struktury grupy zasobów. Szablony usługi Resource Manager pomagają w zdefiniowaniu zestawu standardów jako podstawy dla wdrożeń.
+[Szablony usługi Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) umożliwiają wielokrotne wdrażanie zasobów w spójnym stanie przy użyciu wstępnie określonej konfiguracji i struktury grupy zasobów. Szablony usługi Resource Manager pomagają w zdefiniowaniu zestawu standardów jako podstawy dla wdrożeń.
 
 Na przykład można mieć standardowy szablon do wdrażania obciążenia serwera internetowego, który zawiera dwie maszyny wirtualne jako serwery internetowe w połączeniu z modułem równoważenia obciążenia rozdzielającym ruch między serwerami. Za pomocą tego szablonu można ponownie utworzyć identyczny strukturalnie zestaw składający się z maszyn wirtualnych i modułu równoważenia obciążenia za każdym razem, gdy jest potrzebne tego typu obciążenie, zmieniając tylko nazwę wdrożenia i używane adresy IP.
 
@@ -51,7 +51,7 @@ Można również programowo wdrażać te szablony i integrować je z systemami c
 
 Aby zapewnić stosowanie zasad utrzymania ładu podczas tworzenia zasobów, część projektu grupowania zasobów obejmuje użycie typowej konfiguracji podczas wdrażania zasobów.
 
-Łącząc grupy zasobów i ustandaryzowane szablony usługi Resource Manager, można wymuszać standardy dotyczące ustawień wymaganych we wdrożeniu i reguł usługi [Azure Policy](/azure/governance/policy/overview) stosowanych do poszczególnych zasobów lub grup zasobów.
+Łącząc grupy zasobów i ustandaryzowane szablony usługi Resource Manager, można wymuszać standardy dotyczące ustawień wymaganych we wdrożeniu i reguł usługi [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) stosowanych do poszczególnych zasobów lub grup zasobów.
 
 Na przykład może być wymagane, aby wszystkie maszyny wirtualne wdrożone w ramach subskrypcji łączyły się ze wspólną podsiecią zarządzaną przez centralny zespół IT. Można utworzyć standardowy szablon do wdrażania maszyn wirtualnych obciążenia, aby utworzyć oddzielną grupę zasobów dla obciążenia i wdrożyć w niej wymagane maszyny wirtualne. Ta grupa zasobów musiałaby mieć regułę zasad umożliwiającą dołączanie do udostępnionej podsieci tylko interfejsów sieciowych należących do grupy zasobów.
 
@@ -61,13 +61,13 @@ Aby uzyskać bardziej szczegółowe omówienie wymuszania decyzji dotyczących z
 
 Grupy zasobów umożliwiają obsługę dodatkowych poziomów hierarchii w organizacji w ramach subskrypcji dzięki stosowaniu reguł usługi Azure Policy i kontrolek dostępu na poziomie grupy zasobów. Jednak w miarę zwiększania rozmiaru infrastruktury w chmurze może być konieczna obsługa bardziej skomplikowanych wymagań dotyczących ładu między subskrypcjami, z których można korzystać, używając hierarchii Przedsiębiorstwo/Dział/Konto/Subskrypcja w ramach umowy Azure Enterprise Agreement.
 
-[Grupy zarządzania platformy Azure](/azure/governance/management-groups) umożliwiają organizowanie subskrypcji w bardziej zaawansowane struktury organizacyjne dzięki możliwości grupowania ich w hierarchię inną niż hierarchia z umowy Enterprise Agreement. Ta alternatywna hierarchia umożliwia stosowanie kontroli dostępu i mechanizmów wymuszania zasad w wielu subskrypcjach i zawartych w nich zasobach. Hierarchie grup zarządzania umożliwiają dopasowywanie subskrypcji infrastruktury w chmurze do operacji lub wymagań dotyczących ładu biznesowego. Aby uzyskać więcej informacji, zobacz [przewodnik po decyzji dotyczącej subskrypcji](../subscriptions/index.md).
+[Grupy zarządzania platformy Azure](https://docs.microsoft.com/azure/governance/management-groups) umożliwiają organizowanie subskrypcji w bardziej zaawansowane struktury organizacyjne dzięki możliwości grupowania ich w hierarchię inną niż hierarchia z umowy Enterprise Agreement. Ta alternatywna hierarchia umożliwia stosowanie kontroli dostępu i mechanizmów wymuszania zasad w wielu subskrypcjach i zawartych w nich zasobach. Hierarchie grup zarządzania umożliwiają dopasowywanie subskrypcji infrastruktury w chmurze do operacji lub wymagań dotyczących ładu biznesowego. Aby uzyskać więcej informacji, zobacz [przewodnik po decyzji dotyczącej subskrypcji](../subscriptions/index.md).
 
 ## <a name="automated-consistency"></a>Spójność zautomatyzowana
 
 W przypadku dużych wdrożeń w chmurze ład globalny staje się ważniejszy i bardziej skomplikowany. Kluczowe jest automatyczne stosowanie i wymuszanie wymagań w zakresie utrzymania ładu podczas wdrażania zasobów, a także spełnianie zaktualizowanych wymagań dotyczących istniejących wdrożeń.
 
-Usługa [Azure Blueprints](/azure/governance/blueprints/overview) umożliwia organizacjom obsługę globalnego ładu dla dużych infrastruktur w chmurze na platformie Azure. Usługa Blueprints ma dużo większe możliwości tworzenia kompletnych aranżacji procesu wdrażania, które umożliwiają wdrażanie zasobów i stosowanie reguł zasad, niż standardowe szablony usługi Azure Resource Manager. Usługa Blueprints umożliwia obsługę wersji, aktualizowanie wszystkich subskrypcji, w których została użyta strategia, oraz blokowanie wdrożonych subskrypcji w celu uniknięcia nieautoryzowanego tworzenia i modyfikowania zasobów.
+Usługa [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) umożliwia organizacjom obsługę globalnego ładu dla dużych infrastruktur w chmurze na platformie Azure. Usługa Blueprints ma dużo większe możliwości tworzenia kompletnych aranżacji procesu wdrażania, które umożliwiają wdrażanie zasobów i stosowanie reguł zasad, niż standardowe szablony usługi Azure Resource Manager. Usługa Blueprints umożliwia obsługę wersji, aktualizowanie wszystkich subskrypcji, w których została użyta strategia, oraz blokowanie wdrożonych subskrypcji w celu uniknięcia nieautoryzowanego tworzenia i modyfikowania zasobów.
 
 Te pakiety wdrożeniowe umożliwiają zespołom informatyków i deweloperów błyskawiczne wdrażanie nowych obciążeń i zasobów sieciowych zgodnych ze zmieniającymi się wymaganiami w zakresie zasad organizacyjnych. Usługę Blueprints można również zintegrować z potokami ciągłej integracji/ciągłego wdrażania, aby stosować poprawione standardy utrzymania ładu do wdrożeń podczas ich aktualizowania.
 

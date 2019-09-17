@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: governance
-ms.openlocfilehash: a3e819cdd726e3df6edb4cbe0c20a7d652fde152
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e425a61f6b9da7fed044d06ac9323306d728261
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819168"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71021987"
 ---
 # <a name="initial-organization-alignment"></a>Początkowe dopasowywanie organizacji
 
@@ -43,7 +43,7 @@ Na przykład zespół strategiczny ds. chmury może być prowadzony przez dyrekt
 
 Ważne jest również, aby utworzyć dwa inne zespoły wysokiego poziomu: zespół ds. ładu i zespół ds. zabezpieczeń. Zespoły te są odpowiedzialne za projektowanie, wdrażanie i bieżącą inspekcję zasad ładu i zabezpieczeń przedsiębiorstwa. Zespół ds. ładu potrzebuje członków, którzy pracowali nad ochroną zasobów, zarządzaniem kosztami, zasadami grup i pokrewnymi tematami. Zespół ds. zabezpieczeń potrzebuje członków, którzy biegle znają branżowe standardy zabezpieczeń, a także wymagania dotyczące zabezpieczeń przedsiębiorstwa.
 
-![Zespół strategiczny ds. chmury z zespołami ds. ładu i zabezpieczeń](../_images/getting-started-overview-1.png)
+![Zespół strategiczny ds. chmury z zespołami ds. ładu i zabezpieczeń](../_images/ready/getting-started-overview-1.png)
 
 Zespół ds. ładu jest odpowiedzialny za projektowanie i implementację modelu ładu przedsiębiorstwa w chmurze, a także wdrażanie i konserwowanie zasobów infrastruktury współdzielonej, które są częścią transformacji cyfrowej. Te zasoby obejmują zasoby sprzętowe, programowe i chmurowe niezbędne do połączenia sieci lokalnej z siecią wirtualną w chmurze.
 
@@ -53,9 +53,9 @@ Zespół ds. zabezpieczeń jest odpowiedzialny za projektowanie i implementowani
 
 Następnym krokiem cyfrowej transformacji przedsiębiorstwa jest nauczenie się przez członków zespołu strategicznego ds. chmury, w jaki sposób technologia chmury zmieni biznesowy sposób działania przedsiębiorstwa. Jest to przygotowywanie i planowanie zmian biznesowych, personalnych i technologicznych. Ważne jest, aby członkowie zespołu strategicznego ds. chmury mogli zrozumieć, co jest nowego w chmurze i czym różni się ona od rozwiązań lokalnych.
 
-![Zespół strategiczny ds. chmury oraz zespoły ds. ładu i zabezpieczeń poznają najlepsze rozwiązania dotyczące działalności w chmurze.](../_images/getting-started-overview-2.png)
+![Zespół strategiczny ds. chmury oraz zespoły ds. ładu i zabezpieczeń poznają najlepsze rozwiązania dotyczące działalności w chmurze.](../_images/ready/getting-started-overview-2.png)
 
-Punktem początkowym do zrozumienia chmury jest nauczenie się [jak platforma Azure działa](../getting-started/what-is-azure.md) na wysokim poziomie. Następnie warto poznać podstawy [ładu na platformie Azure](../governance/resource-consistency/what-is-governance.md) w celu przygotowania się do [zarządzania dostępem do zasobów](../governance/resource-consistency/azure-resource-access.md).
+Punktem początkowym do zrozumienia chmury jest nauczenie się [jak platforma Azure działa](../getting-started/what-is-azure.md) na wysokim poziomie. Następnie warto poznać podstawy [ładu na platformie Azure](../govern/resource-consistency/what-is-governance.md) w celu przygotowania się do [zarządzania dostępem do zasobów](../govern/resource-consistency/resource-access-management.md).
 
 Aby poznać zaawansowaną wiedzę, zespół ds. ładu powinien przejrzeć koncepcje i przewodniki projektowe w sekcji ładu zawartej w spisie treści. Sekcje infrastruktury i obciążeń są przydatne do poznawania typowych architektur i obciążeń w chmurze.
 
@@ -93,7 +93,7 @@ Teraz, gdy cele transformacji cyfrowej zostały wyliczone, określono ich priory
 
 Zespoły przyjmują listy z priorytetami i opracowują poszczególne rozwiązania wysokiego poziomu, aby zaprojektować każde z rozwiązań. Proces projektowania obejmuje określenie nowej infrastruktury i nowych obciążeń. Mogą być również wprowadzane zmiany dotyczące ról osób i wykonywanych przez nie procesów. Na tym etapie ważne jest także, aby zespoły ds. ładu i zabezpieczeń przejrzały każdy projekt wykonany przez każdy z zespołów projektowych. Każdy projekt musi podlegać zasadom i procedurom zdefiniowanym przez zespoły ds. ładu i zabezpieczeń, a te zespoły muszą być uwzględnione w ostatecznym zatwierdzaniu każdego projektu.
 
-![Zespół strategiczny ds. chmury dostarcza rozwiązania wysokiego poziomu zespołom projektowym i implementującym.](../_images/getting-started-overview-3.png)
+![Zespół strategiczny ds. chmury dostarcza rozwiązania wysokiego poziomu zespołom projektowym i implementującym.](../_images/ready/getting-started-overview-3.png)
 
 Projektowanie poszczególnych rozwiązań nie jest prostym zadaniem. W miarę tworzenia projektów należy je rozpatrywać w kontekście innych projektów rozwiązań pochodzących od innych zespołów. Jeśli na przykład kilka z projektów powoduje migrację istniejących lokalnych aplikacji i usług do chmury, bardziej wydajne może być zgrupowanie ich razem i zaprojektowanie ogólnej strategii migracji. W innym przykładzie może nie być możliwe migrowanie niektórych istniejących lokalnych aplikacji i usług, a rozwiązaniem może być zastąpienie ich przez usługi zaprogramowane na nowo lub dostarczone przez inne firmy. W takim przypadku może być wydajniejsze ich zgrupowanie i sprawdzenie, czy nie nakładają się, aby wyznaczyć, czy można zastosować usługę innej firmy do większej liczby rozwiązań.
 

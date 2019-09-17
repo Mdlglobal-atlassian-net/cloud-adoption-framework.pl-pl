@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d370f8e868be1186aad17b89915f52ad0413d04d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b77b8fbbe6479b716d9b9f91d6e0154db8c0db7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816435"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022800"
 ---
 ::: zone target="chromeless"
 
@@ -67,7 +67,7 @@ Ten przewodnik pomaga odpowiedzieć na te pytania. Zawiera sugerowane zadania i 
 
 ::: zone target="docs"
 
-Aby dowiedzieć się więcej na temat organizowania i tworzenia struktury subskrypcji, zarządzania wdrożonymi zasobami i zapewniania zgodności z wymaganiami dotyczącymi zasad przedsiębiorstwa, zobacz temat [Ład na platformie Azure](/azure/security/governance-in-azure).
+Aby dowiedzieć się więcej na temat organizowania i tworzenia struktury subskrypcji, zarządzania wdrożonymi zasobami i zapewniania zgodności z wymaganiami dotyczącymi zasad przedsiębiorstwa, zobacz temat [Ład na platformie Azure](https://docs.microsoft.com/azure/security/governance-in-azure).
 
 ::: zone-end
 
@@ -112,8 +112,8 @@ Te metody nie wykluczają się wzajemnie &mdash; na przykład mimo że podczas p
 
 ::: zone target="docs"
 
-Te metody nie wykluczają się wzajemnie &mdash; na przykład mimo że podczas początkowej migracji mógł zostać zastosowany model **ponownego hostowania**, można wdrożyć **refaktoryzację** lub **zmianę architektury** jako część fazy optymalizacji po migracji. Omówiono to również w części [Optymalizowanie i przekształcanie](optimize-and-transform.md) tego przewodnika.
+Te metody nie wykluczają się wzajemnie &mdash; na przykład mimo że podczas początkowej migracji mógł zostać zastosowany model **ponownego hostowania**, można wdrożyć **refaktoryzację** lub **zmianę architektury** jako część fazy optymalizacji po migracji. Omówiono to również w części [Optymalizowanie i przekształcanie](./optimize-and-transform.md) tego przewodnika.
 
 ::: zone-end
 
-![Grafika informacyjna dotycząca opcji migracji](../../_images/migration/migration-options.png)
+![Grafika informacyjna dotycząca opcji migracji](../../_images/migrate/migration-options.png)

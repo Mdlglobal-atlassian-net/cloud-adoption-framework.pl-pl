@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 7bb9eb697beb44aa5bf4e9eec736a5be4b575eb7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829256"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023431"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racjonalizacja majątku cyfrowego
 
-Racjonalizacja chmury to proces oceniania zasobów w celu ustalenia najlepszego podejścia do obsługi ich w chmurze. Po ustaleniu [podejścia](approach.md) i zagregowaniu spisu można [](inventory.md)rozpocząć racjonalizację chmury. [Racjonalizacja chmury](rationalize.md) omawia najbardziej typowe opcje racjonalizacji.
+Racjonalizacja chmury to proces oceniania zasobów w celu ustalenia najlepszego podejścia do obsługi ich w chmurze. Po ustaleniu [podejścia](./approach.md) i zagregowaniu spisu można [](./inventory.md)rozpocząć racjonalizację chmury. [Racjonalizacja chmury](./rationalize.md) omawia najbardziej typowe opcje racjonalizacji.
 
 ## <a name="traditional-view-of-rationalization"></a>Tradycyjny widok racjonalizacji
 
@@ -30,7 +30,7 @@ Można łatwo zrozumieć racjonalizację podczas wizualizowania tradycyjnego pro
 
 **Analiza jakościowa:** Kolejny zestaw decyzji wymaga analizy ludzkiej w formie analizy jakościowej. Często pytania, które znajdują się w tym miejscu, są unikatowe dla rozwiązania i można do nich odpowiedzieć tylko osoby zainteresowane i Użytkownicy zaawansowani. Te decyzje zwykle opóźnią proces, co zmniejsza się znacznie. Ta analiza zwykle wykorzystuje od 40 do 80 godzin w danym miesiącu.
 
-Aby uzyskać wskazówki dotyczące tworzenia listy pytań dotyczących analizy jakościowej, zobacz [podejścia do planowania elementów cyfrowych](approach.md).
+Aby uzyskać wskazówki dotyczące tworzenia listy pytań dotyczących analizy jakościowej, zobacz [podejścia do planowania elementów cyfrowych](./approach.md).
 
 **Decyzja o racjonalizacji:** Dane jakościowe i ilościowe są tworzone w ramach praktycznego zespołu z racjonalizacją. Niestety, zespoły o wysokim stopniu racjonalizacji są kosztowne do wynajmu lub podjęcia miesięcy do szkolenia.
 
@@ -60,7 +60,7 @@ W procesie zwiększania racjonalizacji rozwiązanie bez agenta może służyć d
 
 ### <a name="quantitative-analysis-streamline-decisions"></a>Analiza ilościowa: Usprawnij decyzje
 
-Bez względu na sposób odnajdywania spisu analizy ilościowe mogą być na początku podejmowane decyzje i założenia. Jest to szczególnie ważne podczas próby zidentyfikowania pierwszego obciążenia lub, gdy celem racjonalizacji jest porównanie kosztów wysokiego poziomu. W procesie zwiększania racjonalizacji zespół strategii chmury i zespoły wdrożeniowe chmury ograniczają [pięć pięciu](5-rs-of-rationalization.md) decyzji i stosują te czynniki ilościowe. Usprawnia to analizę i zmniejsza ilość danych początkowych wymaganych do zmiany dysku.
+Bez względu na sposób odnajdywania spisu analizy ilościowe mogą być na początku podejmowane decyzje i założenia. Jest to szczególnie ważne podczas próby zidentyfikowania pierwszego obciążenia lub, gdy celem racjonalizacji jest porównanie kosztów wysokiego poziomu. W procesie zwiększania racjonalizacji zespół strategii chmury i zespoły wdrożeniowe chmury ograniczają [pięć pięciu](./5-rs-of-rationalization.md) decyzji i stosują te czynniki ilościowe. Usprawnia to analizę i zmniejsza ilość danych początkowych wymaganych do zmiany dysku.
 
 Na przykład jeśli organizacja jest w pośrodku migracji IaaS do chmury, można założyć, że większość obciążeń zostanie wycofana lub przeszukana.
 
@@ -116,7 +116,7 @@ Pierwsze obciążenie jest często wdrażane w eksperymentalnym środowisku bez 
 
 ### <a name="qualitative-analysis"></a>Analiza jakościowa
 
-Zespoły rozwiązań w chmurze i zespół strategii chmury mogą współdziałać ze sobą, aby analizować to małe obciążenie. Ta współpraca tworzy kontrolowaną możliwość tworzenia i testowania kryteriów analizy jakościowej. Mniejsza populacja pozwala na zbadanie użytkowników, których dotyczy ten komunikat, oraz ukończenie szczegółowej analizy jakościowej w ciągu tygodnia lub mniej. W przypadku typowych czynników analizy jakościowej zapoznaj się z konkretną tarczą racjonalizacji w [5 RS](5-rs-of-rationalization.md).
+Zespoły rozwiązań w chmurze i zespół strategii chmury mogą współdziałać ze sobą, aby analizować to małe obciążenie. Ta współpraca tworzy kontrolowaną możliwość tworzenia i testowania kryteriów analizy jakościowej. Mniejsza populacja pozwala na zbadanie użytkowników, których dotyczy ten komunikat, oraz ukończenie szczegółowej analizy jakościowej w ciągu tygodnia lub mniej. W przypadku typowych czynników analizy jakościowej zapoznaj się z konkretną tarczą racjonalizacji w [5 RS](./5-rs-of-rationalization.md).
 
 ### <a name="migration"></a>Migracja
 
@@ -161,4 +161,4 @@ W niektórych przypadkach model finansowy może być zbyt ścisły, aby podejmow
 Wynikiem wysiłku związanego z racjonalizacją jest priorytetowe zaległości wszystkich zasobów, których dotyczy wybrana transformacja. Ta zaległość jest teraz gotowa do użycia jako podstawa dla modeli kosztów usług Cloud Services.
 
 > [!div class="nextstepaction"]
-> [Wyrównaj modele kosztów z użyciem cyfr cyfrowych](calculate.md)
+> [Wyrównaj modele kosztów z użyciem cyfr cyfrowych](./calculate.md)

@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2e1ba47201285559be784fafe6b39bdbde0c35ed
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ceb9fb6ff6be481f665a0bb70e3afcc2eddb6e92
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817081"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023864"
 ---
 # <a name="identity-decision-guide"></a>Przewodnik po decyzjach związanych z tożsamością
 
 W dowolnym środowisku, zarówno lokalnym, hybrydowym, jak i tylko w chmurze, dział IT musi kontrolować, którzy administratorzy, użytkownicy i grupy mają dostęp do zasobów. Usługi zarządzania dostępem i tożsamościami (IAM, identity and access management) umożliwiają zarządzanie kontrolą dostępu w chmurze.
 
-![Wykres opcji tożsamości od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/discovery-guides/discovery-guide-identity.png)
+![Wykres opcji tożsamości od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/decision-guides/decision-guide-identity.png)
 
 Idź do: [Określanie wymagań dotyczących integracji tożsamości](#determine-identity-integration-requirements) | [Punkt odniesienia chmury](#cloud-baseline) | [Synchronizacja katalogów](#directory-synchronization) | [Usługi domenowe hostowane w chmurze](#cloud-hosted-domain-services) | [Usługi Active Directory Federation Services](#active-directory-federation-services) | [Dowiedz się więcej](#learn-more)
 
@@ -61,7 +61,7 @@ Usługa Azure AD to natywny system zarządzania dostępem i tożsamościami (IAM
 
 W przypadku organizacji z istniejącą lokalną infrastrukturą usługi Active Directory synchronizacja katalogów jest często najlepszym rozwiązaniem mającym na celu zachowanie istniejących użytkowników i zarządzanie dostępem przy jednoczesnym zapewnieniu wymaganych możliwości zarządzania tożsamościami i dostępem do zarządzania zasobami w chmurze. Ten proces stale replikuje informacje o katalogu między usługami Azure AD i lokalnymi usługami katalogowymi, umożliwiając wspólne poświadczenia dla użytkowników i spójny system tożsamości, roli i uprawnień w całej organizacji.
 
-Uwaga: Organizacje, które zaadaptowały usługi Office 365, mogły już wdrożyć [synchronizację katalogów](/office365/enterprise/set-up-directory-synchronization) między ich lokalną infrastrukturą usługi Active Directory i usługą Azure Active Directory.
+Uwaga: Organizacje, które zaadaptowały usługi Office 365, mogły już wdrożyć [synchronizację katalogów](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) między ich lokalną infrastrukturą usługi Active Directory i usługą Azure Active Directory.
 
 **Założenia dotyczące synchronizacji katalogów:** Korzystanie z rozwiązania do obsługi zsynchronizowanych tożsamości obejmuje następujące założenia:
 
@@ -91,16 +91,16 @@ Prawdopodobnie istniejące katalogi i usługi domenowe nadal będą używane w �
 
 Federacja tożsamości ustanawia relacje zaufania w wielu systemach zarządzania tożsamościami w celu zapewnienia typowych możliwości uwierzytelniania i autoryzacji. Następnie można obsługiwać możliwości logowania jednokrotnego w wielu domenach w ramach organizacji lub systemów tożsamości zarządzanych przez klientów lub partnerów biznesowych.
 
-Usługa Azure AD obsługuje federację domen usługi Active Directory w środowisku lokalnym za pomocą usług [Active Directory Federation Services](/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS). Zobacz architekturę referencyjną [Rozszerzanie usług AD FS na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs), aby dowiedzieć się, jak można to wdrożyć na platformie Azure.
+Usługa Azure AD obsługuje federację domen usługi Active Directory w środowisku lokalnym za pomocą usług [Active Directory Federation Services](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS). Zobacz architekturę referencyjną [Rozszerzanie usług AD FS na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs), aby dowiedzieć się, jak można to wdrożyć na platformie Azure.
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
 Aby uzyskać więcej informacji na temat usługi zarządzania tożsamościami na platformie Azure, zobacz:
 
 - [Azure AD](https://azure.microsoft.com/services/active-directory). Usługa Azure AD dostarcza usługi zarządzania tożsamościami oparte na chmurze. Umożliwia zarządzanie dostępem do zasobów platformy Azure i kontrolę zarządzania tożsamościami, rejestrację urządzeń, inicjowanie obsługi użytkowników, kontrolę dostępu do aplikacji i ochronę danych.
-- [Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity). Narzędzie Azure AD Connect umożliwia łączenie wystąpień usługi Azure AD z istniejącymi rozwiązaniami zarządzania tożsamościami, umożliwiając synchronizację istniejącego katalogu w chmurze.
-- [Kontrola dostępu oparta na rolach ](/azure/role-based-access-control/overview) (RBAC). Usługa Azure AD zapewnia kontrolę RBAC w celu efektywnego i bezpiecznego zarządzania dostępem do zasobów na płaszczyźnie zarządzania. Zadania i obowiązki są zorganizowane w role, do których są przypisani użytkownicy. Funkcja RBAC umożliwia kontrolę nad tym, kto ma dostęp do zasobów oraz jakie działania użytkownik może wykonywać na takich zasobach.
-- [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) (PIM). Usługa PIM obniża czas ekspozycji uprawnień dostępu do zasobów i zwiększa widoczność korzystania z nich dzięki raportom i alarmom. Ogranicza przypadki podejmowania przez użytkowników uprawnień dokładnie na czas (JIT, just in time) lub nadawania uprawnień na krótszy czas, po którym uprawnienia są automatycznie odbierane.
+- [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity). Narzędzie Azure AD Connect umożliwia łączenie wystąpień usługi Azure AD z istniejącymi rozwiązaniami zarządzania tożsamościami, umożliwiając synchronizację istniejącego katalogu w chmurze.
+- [Kontrola dostępu oparta na rolach ](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC). Usługa Azure AD zapewnia kontrolę RBAC w celu efektywnego i bezpiecznego zarządzania dostępem do zasobów na płaszczyźnie zarządzania. Zadania i obowiązki są zorganizowane w role, do których są przypisani użytkownicy. Funkcja RBAC umożliwia kontrolę nad tym, kto ma dostęp do zasobów oraz jakie działania użytkownik może wykonywać na takich zasobach.
+- [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) (PIM). Usługa PIM obniża czas ekspozycji uprawnień dostępu do zasobów i zwiększa widoczność korzystania z nich dzięki raportom i alarmom. Ogranicza przypadki podejmowania przez użytkowników uprawnień dokładnie na czas (JIT, just in time) lub nadawania uprawnień na krótszy czas, po którym uprawnienia są automatycznie odbierane.
 - [Integrowanie lokalnych domen usługi Active Directory z usługą Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad). Ta architektura referencyjna zawiera przykład synchronizacji katalogów między domenami usługi Active Directory w środowisku lokalnym i usługą Azure AD.
 - [Rozszerzanie usług Active Directory Domain Services (AD DS) na platformę Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain). Ta architektura referencyjna zawiera przykład wdrażania serwerów usługi AD DS w celu rozszerzenia usług domenowych na zasoby oparte na chmurze.
 - [Rozszerzanie usług Active Directory Federation Services (AD FS) na platformę Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs). Ta architektura referencyjna przedstawia konfigurację usługi Active Directory Federation Services (AD FS) w celu przeprowadzenia uwierzytelniania federacyjnego i autoryzacji przy użyciu katalogu usługi Azure AD.

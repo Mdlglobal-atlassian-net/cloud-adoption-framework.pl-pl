@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fc992a4c00a1acd99481d6090563ecef38c5fedb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 43e577eb429928efd0857549319e46a36c49a9e1
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70832311"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025092"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Refaktoryzowanie wdrożenia serwera Team Foundation Server do usług Azure DevOps Services
 
@@ -47,7 +47,7 @@ Zespół ds. chmury firmy Contoso ustalił cele migracji do usług Azure DevOps 
 - Serwer TFS zostanie poddany migracji do usług Azure DevOps Services.
 - Obecnie firma Contoso ma jedną kolekcję serwera TFS o nazwie `ContosoDev`, która zostanie przeniesiona do organizacji usług Azure DevOps Services o nazwie `contosodevmigration.visualstudio.com`.
 - Do usługi Azure DevOps Services zostaną przeniesione projekty, elementy robocze, błędy i iteracje z całego ostatniego roku.
-- Firma Contoso będzie używać usługi Azure Active Directory, skonfigurowanej podczas [wdrażania infrastruktury platformy Azure](contoso-migration-infrastructure.md) na początkowym etapie planowania migracji.
+- Firma Contoso będzie używać usługi Azure Active Directory, skonfigurowanej podczas [wdrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md) na początkowym etapie planowania migracji.
 
 ![Architektura scenariusza](./media/contoso-migration-tfs-vsts/architecture.png)
 
@@ -71,8 +71,8 @@ Oto elementy, których firma Contoso potrzebuje do realizacji tego scenariusza.
 
 **Wymagania** | **Szczegóły**
 --- | ---
-**Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje we wcześniejszym artykule z tej serii. Jeśli nie masz subskrypcji platformy Azure, utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.<br/><br/> Jeśli potrzebujesz bardziej szczegółowych uprawnień, zapoznaj się z [tym artykułem](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Infrastruktura platformy Azure wymagana do migracji](contoso-migration-infrastructure.md).
+**Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje we wcześniejszym artykule z tej serii. Jeśli nie masz subskrypcji platformy Azure, utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.<br/><br/> Jeśli potrzebujesz bardziej szczegółowych uprawnień, zapoznaj się z [tym artykułem](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Infrastruktura platformy Azure wymagana do migracji](./contoso-migration-infrastructure.md).
 **Lokalny serwer TFS** | W środowisku lokalnym musi działać wersja serwera TFS 2018 Update 2 lub musi zostać przeprowadzone uaktualnienie do tej wersji w ramach procesu migracji.
 
 ## <a name="scenario-steps"></a>Etapy scenariusza
@@ -95,15 +95,15 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 
 **Potrzebujesz dodatkowej pomocy?**
 
-- [Introduction to Azure Storage (Wprowadzenie do usługi Azure Storage)](/azure/storage/common/storage-introduction).
-- [Create a storage account (Tworzenie konta magazynu)](/azure/storage/common/storage-create-storage-account).
+- [Introduction to Azure Storage (Wprowadzenie do usługi Azure Storage)](https://docs.microsoft.com/azure/storage/common/storage-introduction).
+- [Create a storage account (Tworzenie konta magazynu)](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account).
 
 ## <a name="step-2-upgrade-tfs"></a>Krok 2: Uaktualnienie serwera TFS
 
 Administratorzy firmy Contoso uaktualniają serwer TFS do wersji TFS 2018 Update 2. Przed rozpoczęciem:
 
 - Pobierają program [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads)
-- Sprawdzają [wymagania sprzętowe](/tfs/server/requirements) i zapoznają się z [informacjami o wersji](/visualstudio/releasenotes/tfs2018-relnotes) oraz [potencjalnymi problemami z uaktualnieniem](/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
+- Sprawdzają [wymagania sprzętowe](https://docs.microsoft.com/tfs/server/requirements) i zapoznają się z [informacjami o wersji](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) oraz [potencjalnymi problemami z uaktualnieniem](https://docs.microsoft.com/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
 
 Administratorzy przeprowadzają uaktualnienie w następujący sposób:
 
@@ -128,7 +128,7 @@ Administratorzy przeprowadzają uaktualnienie w następujący sposób:
      ![TFS](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> Niektóre uaktualnienia serwera TFS wymagają uruchomienia Kreatora konfigurowania funkcji po zakończeniu uaktualniania. [Dowiedz się więcej](/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts).
+> Niektóre uaktualnienia serwera TFS wymagają uruchomienia Kreatora konfigurowania funkcji po zakończeniu uaktualniania. [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts).
 
 **Potrzebujesz dodatkowej pomocy?**
 
@@ -464,13 +464,13 @@ Po zakończeniu migracji firma Contoso chce zmienić sposób zarządzania kodem 
 
 **Potrzebujesz dodatkowej pomocy?**
 
-[Dowiedz się więcej](/azure/devops/repos/git/import-from-TFVC?view=vsts) o importowaniu z kontroli wersji serwera Team Foundation.
+[Dowiedz się więcej](https://docs.microsoft.com/azure/devops/repos/git/import-from-TFVC?view=vsts) o importowaniu z kontroli wersji serwera Team Foundation.
 
 ## <a name="clean-up-after-migration"></a>Czyszczenie zasobów po migracji
 
 Po zakończeniu migracji firma Contoso musi:
 
-- Zapoznać się z informacjami o dodatkowych czynnościach związanych z importowaniem w artykule [Post import (Po imporcie)](/azure/devops/articles/migration-post-import?view=vsts).
+- Zapoznać się z informacjami o dodatkowych czynnościach związanych z importowaniem w artykule [Post import (Po imporcie)](https://docs.microsoft.com/azure/devops/articles/migration-post-import?view=vsts).
 - Usunąć repozytoria TFVC lub przełączyć je w tryb tylko do odczytu. Nie można używać tych baz kodu, ale można korzystać z ich historii.
 
 ## <a name="post-migration-training"></a>Szkolenie po migracji

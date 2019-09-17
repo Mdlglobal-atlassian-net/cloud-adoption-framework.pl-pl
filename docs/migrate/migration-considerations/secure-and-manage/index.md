@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14bd697a3332466fb97043d3420d80b1dca50679
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818135"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022585"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Bezpieczne narzędzia do monitorowania i zarządzania
 
@@ -26,7 +26,7 @@ Po zakończeniu migracji zmigrowane zasoby powinny być zarządzane przez kontro
 - **Monitorowanie podstawowe** Monitorowanie podstawowe zapewnia niezbędne, wymagane monitorowanie w zasobach platformy Azure. Te usługi wymagają minimalnej konfiguracji i zbierają podstawowe dane telemetryczne, z których korzystają usługi monitorowania Premium.
 - **Zaawansowane monitorowanie aplikacji i infrastruktury** Usługi platformy Azure zapewniają bogate możliwości bardziej szczegółowego zbierania i analizowania danych monitorowania. Te usługi opierają się na monitorowaniu podstawowym i wykorzystują wspólną funkcjonalność platformy Azure. Umożliwiają zaawansowaną analizę z użyciem zebranych danych, dostarczając unikatowe szczegółowe informacje dotyczące aplikacji i infrastruktury.
 
-Dowiedz się więcej o usłudze [Azure Monitor](/azure/azure-monitor/overview) służącej do monitorowania zmigrowanych zasobów.
+Dowiedz się więcej o usłudze [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) służącej do monitorowania zmigrowanych zasobów.
 
 ## <a name="security-monitoring"></a>Monitorowanie zabezpieczeń
 
@@ -39,7 +39,7 @@ Usługa Azure Security Center zapewnia ujednolicone monitorowanie zabezpieczeń 
 - **Alerty i zdarzenia uszeregowane według priorytetów** Zdarzenia i alerty zabezpieczeń uszeregowane według priorytetów pozwalają koncentrować się najpierw na krytycznych zagrożeniach.
 - **Zintegrowane rozwiązania zabezpieczeń** Zbieranie, wyszukiwanie i analizowanie danych zabezpieczeń z różnych źródeł, w tym połączonych rozwiązań partnerskich.
 
-Dowiedz się więcej o usłudze [Azure Security Center](/azure/security-center) do zabezpieczania zmigrowanych zasobów.
+Dowiedz się więcej o usłudze [Azure Security Center](https://docs.microsoft.com/azure/security-center) do zabezpieczania zmigrowanych zasobów.
 
 ## <a name="protect-assets-and-data"></a>Ochrona zasobów i danych
 
@@ -50,4 +50,4 @@ Usługa Azure Backup umożliwia ochronę maszyn wirtualnych, plików i danych. U
 - Tworzenie kopii zapasowych baz danych programu SQL Server
 - Odzyskiwanie chronionych zasobów
 
-Dowiedz się więcej o usłudze [Azure Backup](/azure/backup) do ochrony zmigrowanych zasobów.
+Dowiedz się więcej o usłudze [Azure Backup](https://docs.microsoft.com/azure/backup) do ochrony zmigrowanych zasobów.

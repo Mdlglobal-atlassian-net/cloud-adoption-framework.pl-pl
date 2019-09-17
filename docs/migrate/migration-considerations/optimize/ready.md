@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7d3e7f408e38634a9472ce75542d9e0ae1fdc38b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b7f526cbf2b7efba981058d5614b4378adc8c6f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825486"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022627"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Przygotowanie zmigrowanej aplikacji do podwyższenia poziomu środowiska produkcyjnego
 
@@ -21,7 +21,7 @@ Po podwyższeniu poziomu obciążenia ruch użytkowników w środowisku produkcy
 
 ## <a name="validate-the-business-change-plan"></a>Walidacja planu zmian biznesowych
 
-Przekształcanie ma miejsce, gdy użytkownicy biznesowi lub klienci wykorzystują rozwiązanie techniczne do wykonywania procesów umożliwiających prowadzenie działalności. Gotowość stanowi doskonałą okazję do walidacji [planu zmian biznesowych](business-change-plan.md) oraz zagwarantowania odpowiedniego przeszkolenia zaangażowanych zespołów biznesowych i technicznych. W szczególności należy się upewnić, czy zostały prawidłowo przekazane następujące kwestie techniczne dotyczące planu zmian:
+Przekształcanie ma miejsce, gdy użytkownicy biznesowi lub klienci wykorzystują rozwiązanie techniczne do wykonywania procesów umożliwiających prowadzenie działalności. Gotowość stanowi doskonałą okazję do walidacji [planu zmian biznesowych](./business-change-plan.md) oraz zagwarantowania odpowiedniego przeszkolenia zaangażowanych zespołów biznesowych i technicznych. W szczególności należy się upewnić, czy zostały prawidłowo przekazane następujące kwestie techniczne dotyczące planu zmian:
 
 - Odbyło się szkolenie dla użytkowników końcowych (lub przynajmniej zostało zaplanowane).
 - Wszystkie okna awarii zostały przekazane i zatwierdzone.

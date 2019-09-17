@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a1522713ccc96bdaf713d9a72b49dc4815823eb2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2ca59288d74b8a7578a91a160f3c3960ac3cedda
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817982"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023860"
 ---
 # <a name="architectural-decision-guides"></a>Przewodniki podejmowania decyzji dotyczących architektury
 
@@ -42,11 +42,11 @@ Każda z poniższych kategorii reprezentuje fundamentalną technologię wszystki
 
 [Szyfrowanie](./encryption/index.md): Zabezpiecz poufne dane przy użyciu szyfrowania, aby dostosować je do wymagań dotyczących zasad zabezpieczeń i zgodności w Twojej organizacji.
 
-[Dzienniki i raportowanie](./log-and-report/index.md): Monitoruj dane dzienników generowane przez zasoby oparte na chmurze. Analizowanie danych zapewnia wgląd w związane z kondycją informacje dotyczące operacji, konserwacji i stanu zgodności Twoich obciążeń.
+[Dzienniki i raportowanie](./logging-and-reporting/index.md): Monitoruj dane dzienników generowane przez zasoby oparte na chmurze. Analizowanie danych zapewnia wgląd w związane z kondycją informacje dotyczące operacji, konserwacji i stanu zgodności Twoich obciążeń.
 
 ## <a name="next-steps"></a>Następne kroki
 
 Dowiedz się, w jaki sposób subskrypcje i konta tworzą podstawę wdrożenia w chmurze.
 
 > [!div class="nextstepaction"]
-> [Projekt subskrypcji](subscriptions/index.md)
+> [Projekt subskrypcji](./subscriptions/index.md)

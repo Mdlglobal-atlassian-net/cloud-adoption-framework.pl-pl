@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 91c1433f300efc3950cb54852a00b5020a992e8f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833728"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022306"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan wdrażania chmury i usługa Azure DevOps
 
@@ -59,7 +59,7 @@ Najwyraźniejszy widok planu wdrażania w chmurze pochodzi z widoku zaległości
 
 ## <a name="align-the-cloud-adoption-plan"></a>Dopasuj plan wdrażania chmury
 
-Na stronach przeglądu faz strategii i planowania cyklu życia wdrożenia chmury każdy odwołuje się do [strategii i szablonu planowania struktury wdrażania w chmurze](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Ten szablon organizuje decyzje i punkty danych, które będą wyrównać szablon planu wdrożenia chmury przy użyciu określonych planów na potrzeby wdrażania. Jeśli jeszcze tego nie zrobiono, warto wykonać ćwiczenia związane z [strategią](../business-strategy/index.md) i planowaniem przed [](../plan/index.md) wyrównaniem nowego projektu.
+Na stronach przeglądu faz strategii i planowania cyklu życia wdrożenia chmury każdy odwołuje się do [strategii i szablonu planowania struktury wdrażania w chmurze](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Ten szablon organizuje decyzje i punkty danych, które będą wyrównać szablon planu wdrożenia chmury przy użyciu określonych planów na potrzeby wdrażania. Jeśli jeszcze tego nie zrobiono, warto wykonać ćwiczenia związane z [strategią](../strategy/index.md) i planowaniem przed [](../plan/index.md) wyrównaniem nowego projektu.
 
 Poniższe artykuły obsługują wyrównania planu wdrażania chmury:
 

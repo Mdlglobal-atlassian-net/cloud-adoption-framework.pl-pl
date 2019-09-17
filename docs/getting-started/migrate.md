@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 83518d5b6bfdd0572161847e505569dc63da60a7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906022"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023409"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Wprowadzenie do podróży migracji do chmury
 
@@ -70,7 +70,7 @@ Migracje w chmurze są często traktowane jako pojedynczy projekt w ramach szers
 
 Strategia i planowanie chmury to metodologia, która koncentruje się na dostosowywaniu wyników, priorytetów i ograniczeń firmy w celu ustalenia jasnej strategii i planu migracji. Wynikowy plan (lub zaległości migracji) stanowi opis podejścia do migracji i modernizacji w całym portfolio IT, który może obejmować całe centra danych, wiele obciążeń lub różne kolekcje infrastruktury, aplikacji i danych. Prawidłowe zarządzanie portfolio IT w ramach wysiłków związanych z implementacją w chmurze pomoże Ci uzyskać odpowiednie wyniki biznesowe.
 
-![Omówienie przewodnika Cloud Adoption Framework](../_images/cloud-adoption-framework-overview.png)
+![Omówienie przewodnika Cloud Adoption Framework](../_images/caf-overview.png)
 
 **Pierwsze kroki:** Pozostała część tego artykułu przygotowuje czytelnika do odpowiedniego zastosowania strategii chmurowej i planowania struktury wdrożenia w chmurze. Opisano w nim również dodatkowe zasoby i linki, które mogą pomóc czytelnikowi wdrożyć te podejście w celu zaplanowania wysiłków związanych z implementacją w chmurze.
 
@@ -80,14 +80,14 @@ Strategia chmurowa i planowanie rozwiązań w chmurze opracowano na podstawie pr
 
 Jak pokazano na powyższym obrazie, Ta struktura przedstawia decyzje strategiczne w niewielkiej liczbie zawartych procesów, które działają w modelu iteracyjnym. Chociaż opisano w dokumencie liniowym, każdy z następujących procesów jest oczekiwany równolegle z iteracjami implementacji w chmurze. Linki dla każdego procesu będą pomocne w definiowaniu stanu zakończenia i sposobach wykupu w kierunku żądanego stanu końcowego:
 
-- **[Plan](../business-strategy/index.md):** Gdy wdrożenie techniczne jest wyrównane z jasnymi celami biznesowymi, znacznie ułatwia mierzenie i dostosowanie sukcesu w wielu działaniach związanych z implementacją w chmurze, bez względu na decyzje techniczne.
+- **[Plan](../strategy/index.md):** Gdy wdrożenie techniczne jest wyrównane z jasnymi celami biznesowymi, znacznie ułatwia mierzenie i dostosowanie sukcesu w wielu działaniach związanych z implementacją w chmurze, bez względu na decyzje techniczne.
 - **[Gotowość](../ready/index.md):** Przygotowanie firmy, kultury, osób i środowiska do wprowadzania zmian prowadzi do sukcesu w każdym wysiłku i przyspiesza implementację i zmienia projekty.
 - **Wdrażanie:** Zapewnij prawidłowe wdrożenie żądanych zmian, w ramach procesów IT i firmowych, aby osiągnąć wyniki biznesowe.
   - **[Migracja](../migrate/index.md):** Iteracyjne wykonywanie [metodologii implementacji chmury](#cloud-implementation) zgodnej z przetestowanym procesem oceny, migracji, optymalizacji i bezpiecznego & zarządzania, aby utworzyć powtarzalny proces migracji obciążeń.
 - **[Działa](../operating-model/index.md):** Zdefiniuj model systemu operacyjnego, który można zarządzać, aby poprowadzić działania w trakcie i po jego przyjęciu.
-  - **[Organizowanie](../organization/index.md):** Wyrównaj osoby i zespoły, aby zapewnić prawidłowe operacje i wdrożenia w chmurze.
-  - **[Utrzymanie ładu](../governance/index.md):** Wyrównaj zasady firmowe jako materialne czynniki ryzyka, które zostały skorygowane za pomocą zasad, procesów i narzędzi do zarządzania opartego na chmurze.
-  - **[Zarządzanie](../operations/index.md):** Rozwiń operacje IT, aby zapewnić, że rozwiązania oparte na chmurze mogą być obsługiwane za pośrednictwem bezpiecznych, ekonomicznych procesów przy użyciu nowoczesnych narzędzi do obsługi chmurowej.
+  - **[Organizowanie](../organize/index.md):** Wyrównaj osoby i zespoły, aby zapewnić prawidłowe operacje i wdrożenia w chmurze.
+  - **[Utrzymanie ładu](../govern/index.md):** Wyrównaj zasady firmowe jako materialne czynniki ryzyka, które zostały skorygowane za pomocą zasad, procesów i narzędzi do zarządzania opartego na chmurze.
+  - **[Zarządzanie](../manage/index.md):** Rozwiń operacje IT, aby zapewnić, że rozwiązania oparte na chmurze mogą być obsługiwane za pośrednictwem bezpiecznych, ekonomicznych procesów przy użyciu nowoczesnych narzędzi do obsługi chmurowej.
 
 W ramach tego środowiska migracji Ta platforma zostanie użyta w celu rozróżnienia, zarządzania zmianami i popełniania zespołów funkcjonalnych przez realizację wyników działalności biznesowej.
 
@@ -140,6 +140,6 @@ Platforma wdrażania w chmurze to rozwiązanie cyklu życia. Jest ona przeznaczo
 >
 > [Migrate (Migracja)](../migrate/index.md)
 >
-> [Prowadzenie](../operations/index.md)
+> [Zarządzanie](../manage/index.md)
 >
-> [Decydując](../governance/index.md)
+> [Decydując](../govern/index.md)

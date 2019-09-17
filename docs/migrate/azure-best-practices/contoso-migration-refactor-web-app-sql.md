@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: a2798f3d3abe9c301ea35b7b8dd6b4b16cd0056b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c94ad845571c5007f14773268d383764cdc89a6c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820780"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025046"
 ---
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Refaktoryzowanie aplikacji lokalnej do aplikacji internetowej Azure App Service i bazy danych Azure SQL Database
 
@@ -61,7 +61,7 @@ Po określeniu celów i wymagań firma Contoso planuje i ocenia rozwiązanie do 
 
 ### <a name="proposed-solution"></a>Proponowane rozwiązanie
 
-- W przypadku warstwy bazy danych w aplikacji firma Contoso porównała bazę danych Azure SQL Database z programem SQL Server w [tym artykule](/azure/sql-database/sql-database-features). Firma Contoso zdecydowała się na zastosowanie bazy danych Azure SQL Database z kilku powodów:
+- W przypadku warstwy bazy danych w aplikacji firma Contoso porównała bazę danych Azure SQL Database z programem SQL Server w [tym artykule](https://docs.microsoft.com/azure/sql-database/sql-database-features). Firma Contoso zdecydowała się na zastosowanie bazy danych Azure SQL Database z kilku powodów:
   - Azure SQL Database to usługa zarządzana z relacyjnymi bazami danych. Zapewnia ona przewidywalną wydajność na wielu poziomach usługi z niemal zerową liczbą czynności administracyjnych. Zalety obejmują dynamiczną skalowalność bez przestojów, wbudowaną inteligentną optymalizację oraz globalną skalowalność i dostępność.
   - Firma Contoso może używać lekkiej wersji narzędzia Data Migration Assistant (DMA) do uzyskiwania dostępu do lokalnej bazy danych i migrowania jej do usług SQL Azure.
   - Dzięki pakietowi Software Assurance firma Contoso może wymienić istniejące licencje na obniżone stawki bazy danych SQL Database, używając korzyści użycia hybrydowego platformy Azure dla programu SQL Server. Może to zapewnić oszczędności do 30%.
@@ -99,8 +99,8 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 --- | --- | ---
 [Data Migration Assistant (DMA)](/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia DMA do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie DMA ocenia równoważność funkcji między obiektami źródłowymi i docelowymi SQL oraz rekomenduje ulepszenia dotyczące wydajności i niezawodności. | Narzędzie to można pobrać bezpłatnie.
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database) | Usługa inteligentnej, w pełni zarządzanej relacyjnej bazy danych w chmurze. | Koszt oparty na funkcjach, przepływności i rozmiarze. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/sql-database/managed).
-[Usługa Azure App Service](/azure/app-service/overview) | Tworzenie zaawansowanych aplikacji w chmurze za pomocą w pełni zarządzanej platformy | Koszt oparty na rozmiarze, lokalizacji i czasie użytkowania. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/app-service/windows).
-[Azure DevOps](/azure/azure-portal/tutorial-azureportal-devops) | Zapewnia potok ciągłej integracji i ciągłego wdrażania (CI/CD) na potrzeby tworzenia aplikacji. Potok rozpoczyna się od repozytorium Git na potrzeby zarządzania kodem aplikacji, systemu kompilacji na potrzeby produkcji pakietów i innych artefaktów kompilacji oraz systemu zarządzania wydaniami na potrzeby wdrażania zmian w środowiskach deweloperskich, testowych i produkcyjnych.
+[Usługa Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Tworzenie zaawansowanych aplikacji w chmurze za pomocą w pełni zarządzanej platformy | Koszt oparty na rozmiarze, lokalizacji i czasie użytkowania. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/app-service/windows).
+[Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Zapewnia potok ciągłej integracji i ciągłego wdrażania (CI/CD) na potrzeby tworzenia aplikacji. Potok rozpoczyna się od repozytorium Git na potrzeby zarządzania kodem aplikacji, systemu kompilacji na potrzeby produkcji pakietów i innych artefaktów kompilacji oraz systemu zarządzania wydaniami na potrzeby wdrażania zmian w środowiskach deweloperskich, testowych i produkcyjnych.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -111,7 +111,7 @@ Oto elementy, których firma Contoso potrzebuje do uruchomienia tego scenariusza
 **Wymagania** | **Szczegóły**
 --- | ---
 **Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje w jednym z poprzednich artykułów. Jeśli nie masz subskrypcji platformy Azure, utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.
-**Infrastruktura platformy Azure** | [Dowiedz się](contoso-migration-infrastructure.md), jak firma Contoso skonfigurowała infrastrukturę platformy Azure.
+**Infrastruktura platformy Azure** | [Dowiedz się](./contoso-migration-infrastructure.md), jak firma Contoso skonfigurowała infrastrukturę platformy Azure.
 
 <!--markdownlint-enable MD033 -->
 
@@ -157,8 +157,8 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 
 **Potrzebujesz dalszej pomocy?**
 
-- [Uzyskaj pomoc](/azure/sql-database/sql-database-get-started-portal) przy aprowizacji bazy danych SQL Database.
-- [Dowiedz](/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) się więcej na temat limitów zasobów rdzeni wirtualnych.
+- [Uzyskaj pomoc](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) przy aprowizacji bazy danych SQL Database.
+- [Dowiedz](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) się więcej na temat limitów zasobów rdzeni wirtualnych.
 
 ## <a name="step-2-migrate-the-database-with-dma"></a>Krok 2: Migrowanie bazy danych przy użyciu narzędzia DMA
 
@@ -382,21 +382,21 @@ Po migracji zasobów na platformę Azure firma Contoso musi w pełni zoperacjona
 
 ### <a name="security"></a>Bezpieczeństwo
 
-- Firma Contoso musi upewnić się, że nowa baza danych **SmartHotel-Registration** jest bezpieczna. [Dowiedz się więcej](/azure/sql-database/sql-database-security-overview).
+- Firma Contoso musi upewnić się, że nowa baza danych **SmartHotel-Registration** jest bezpieczna. [Dowiedz się więcej](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview).
 - W szczególności firma Contoso powinna zaktualizować aplikacje internetowe tak, aby używały protokołu SSL z certyfikatami.
 
 ### <a name="backups"></a>Tworzenie kopii zapasowych
 
-- Firma Contoso musi zapoznać się z wymaganiami tworzenia kopii zapasowych dla usługi Azure SQL Database. [Dowiedz się więcej](/azure/sql-database/sql-database-automated-backups).
-- Firma Contoso musi również zapoznać się z informacjami na temat zarządzania kopiami zapasowymi i operacjami przywracania bazy danych SQL Database. [Dowiedz się więcej](/azure/sql-database/sql-database-automated-backups) o automatycznych kopiach zapasowych.
-- Firma Contoso powinna rozważyć wdrożenie grup trybu failover w celu zapewnienia regionalnego przechodzenia bazy danych w tryb failover. [Dowiedz się więcej](/azure/sql-database/sql-database-geo-replication-overview).
+- Firma Contoso musi zapoznać się z wymaganiami tworzenia kopii zapasowych dla usługi Azure SQL Database. [Dowiedz się więcej](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
+- Firma Contoso musi również zapoznać się z informacjami na temat zarządzania kopiami zapasowymi i operacjami przywracania bazy danych SQL Database. [Dowiedz się więcej](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) o automatycznych kopiach zapasowych.
+- Firma Contoso powinna rozważyć wdrożenie grup trybu failover w celu zapewnienia regionalnego przechodzenia bazy danych w tryb failover. [Dowiedz się więcej](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview).
 - Firma Contoso musi rozważyć wdrożenie aplikacji internetowej w głównym regionie Wschodnie stany USA 2 i Środkowe stany USA w celu uzyskania odporności. Firma Contoso może skonfigurować usługę Traffic Manager w celu zapewnienia możliwości przełączenia w tryb failover w przypadku awarii regionalnych.
 
 ### <a name="licensing-and-cost-optimization"></a>Licencjonowanie i optymalizacja kosztów
 
-- Po wdrożeniu wszystkich zasobów firma Contoso powinna przypisać tagi platformy Azure zgodnie z [planem infrastruktury](contoso-migration-infrastructure.md#set-up-tagging).
+- Po wdrożeniu wszystkich zasobów firma Contoso powinna przypisać tagi platformy Azure zgodnie z [planem infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging).
 - Wszystkie koszty licencjonowania są wliczone w koszt usług PaaS używanych przez firmę Contoso. Ten koszt zostanie odjęty od umowy EA.
-- Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](/azure/cost-management/overview) o usłudze Azure Cost Management.
+- Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
 
 ## <a name="conclusion"></a>Wniosek
 

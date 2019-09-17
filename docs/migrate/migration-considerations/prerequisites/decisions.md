@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d1b07e5bc0dd578527e4e4c8c7271fad5fa967c9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825382"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025413"
 ---
 # <a name="decisions-that-affect-migrations"></a>Decyzje, które mają wpływ na migracje
 
@@ -49,7 +49,7 @@ W tej sekcji opisującej strukturę wdrażania chmury przedstawiono teoretyczne 
 
 ## <a name="effort"></a>Nakład pracy
 
-Nakład pracy związany z migracją może się znacznie różnić w zależności od rozmiaru i złożoności obciążeń. Migracja mniejszych obciążeń obejmująca kilkaset maszyn wirtualnych jest procesem taktycznym, który można zaimplementować przy użyciu zautomatyzowanych narzędzi, takich jak usługa [Azure Migrate](/azure/migrate/migrate-overview). Z kolei migracja dużego przedsiębiorstwa obejmująca setki tysięcy obciążeń wymaga wysoce strategicznego procesu i może być związana z szeroko zakrojoną refaktoryzacją, przebudową i zastępowaniem istniejących aplikacji integrujących możliwości platformy jako usługi (PaaS) oraz oprogramowania jako usługi (SaaS). [Identyfikacja i zrównoważenie zakresu](../../expanded-scope/balance-the-portfolio.md) planowanych migracji ma krytyczne znaczenie.
+Nakład pracy związany z migracją może się znacznie różnić w zależności od rozmiaru i złożoności obciążeń. Migracja mniejszych obciążeń obejmująca kilkaset maszyn wirtualnych jest procesem taktycznym, który można zaimplementować przy użyciu zautomatyzowanych narzędzi, takich jak usługa [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview). Z kolei migracja dużego przedsiębiorstwa obejmująca setki tysięcy obciążeń wymaga wysoce strategicznego procesu i może być związana z szeroko zakrojoną refaktoryzacją, przebudową i zastępowaniem istniejących aplikacji integrujących możliwości platformy jako usługi (PaaS) oraz oprogramowania jako usługi (SaaS). [Identyfikacja i zrównoważenie zakresu](../../expanded-scope/balance-the-portfolio.md) planowanych migracji ma krytyczne znaczenie.
 
 Przed podjęciem jakichkolwiek decyzji, które mogą mieć długoterminowy wpływ na bieżący program migracji, należy koniecznie osiągnąć porozumienie dotyczące następujących decyzji.
 

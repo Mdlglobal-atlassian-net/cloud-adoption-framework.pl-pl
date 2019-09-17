@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 12373dea4bffaaa1b4894e4a34f291d190caab7e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829373"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023616"
 ---
 # <a name="cloud-rationalization"></a>Racjonalizacja chmury
 
-Racjonalizacja chmury to proces oceniania zasobów w celu ustalenia najlepszego sposobu migracji lub modernizacji każdego elementu zawartości w chmurze. Aby uzyskać więcej informacji na temat procesu racjonalizacji, zobacz [co to jest znak cyfrowy?](index.md).
+Racjonalizacja chmury to proces oceniania zasobów w celu ustalenia najlepszego sposobu migracji lub modernizacji każdego elementu zawartości w chmurze. Aby uzyskać więcej informacji na temat procesu racjonalizacji, zobacz [co to jest znak cyfrowy?](./index.md).
 
 ## <a name="rationalization-context"></a>Kontekst racjonalizacji
 
@@ -161,4 +161,4 @@ Czynniki analizy jakościowej:
 Zbiorczo można zastosować te pięć informacji o racjonalizacji do cyfr cyfrowych, aby ułatwić podejmowanie decyzji o racjonalizacji w przyszłości.
 
 > [!div class="nextstepaction"]
-> [Co to jest znak cyfrowy?](index.md)
+> [Co to jest znak cyfrowy?](./index.md)

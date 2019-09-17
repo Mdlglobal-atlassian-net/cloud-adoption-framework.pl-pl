@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9613e4be1173687e5f40409c34799c26480b0702
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 704dbb16be57c4203199ca972aa61b520eece3ca
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829451"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023547"
 ---
 # <a name="software-defined-networking-paas-only"></a>Sieć zdefiniowana przez oprogramowanie: Tylko usługa PaaS
 
 W przypadku zaimplementowania zasobu platformy jako usługi (PaaS) proces wdrażania automatycznie tworzy przydzieloną sieć podstawową z ograniczoną liczbą kontroli nad tą siecią, w tym Równoważenie obciążenia, blokowanie portów i połączenia z innymi PaaS Services.
 
-Na platformie Azure można [wdrożyć](/azure/virtual-network/virtual-network-for-azure-services) kilka typów zasobów PaaS lub [połączyć je](/azure/virtual-network/virtual-network-service-endpoints-overview) z siecią wirtualną, umożliwiając integrację tych zasobów z istniejącą infrastrukturą sieci wirtualnej. Inne usługi, takie jak [środowiska App Service](/azure/app-service/environment/intro), [usługi Azure Kubernetes Services](/azure/aks/intro-kubernetes)i [Service Fabric](/azure/service-fabric/service-fabric-overview) , muszą zostać wdrożone w ramach sieci wirtualnej. Jednak w wielu przypadkach PaaS tylko architekturę sieciową, która polega tylko na domyślnych natywnych możliwościach sieci udostępnianych przez zasoby PaaS, jest wystarczająca do spełnienia wymagań związanych z zarządzaniem obciążeniem i ruchem.
+Na platformie Azure można [wdrożyć](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services) kilka typów zasobów PaaS lub [połączyć je](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) z siecią wirtualną, umożliwiając integrację tych zasobów z istniejącą infrastrukturą sieci wirtualnej. Inne usługi, takie jak [środowiska App Service](https://docs.microsoft.com/azure/app-service/environment/intro), [usługi Azure Kubernetes Services](https://docs.microsoft.com/azure/aks/intro-kubernetes)i [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) , muszą zostać wdrożone w ramach sieci wirtualnej. Jednak w wielu przypadkach PaaS tylko architekturę sieciową, która polega tylko na domyślnych natywnych możliwościach sieci udostępnianych przez zasoby PaaS, jest wystarczająca do spełnienia wymagań związanych z zarządzaniem obciążeniem i ruchem.
 
 Jeśli rozważasz architekturę sieci PaaS, upewnij się, że wymagane są odpowiednie założenia dostosowane do Twoich wymagań.
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d77a17af60c8ed4540b2c40ddf8d75a4e4f6f306
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833741"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022270"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Określanie priorytetów i Definiowanie obciążeń dla planu wdrażania chmury
 
@@ -44,7 +44,7 @@ W przypadku podjęcia decyzji o tym, że nie jest wymagana racjonalizacja dotycz
 
 W poprzednim artykule [Plan wdrażania chmury i Azure DevOps](./template.md)został utworzony plan wdrażania chmury w usłudze Azure DevOps.
 
-Teraz można reprezentować obciążenia na mocy 10 list w planie wdrożenia chmury. Najprostszym sposobem na to jest przeprowadzenie edycji zbiorczej w programie Microsoft Excel. Aby przygotować stację roboczą do edycji zbiorczej, zobacz [zbiorcze Dodawanie lub modyfikowanie elementów roboczych za pomocą programu Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Teraz można reprezentować obciążenia na mocy 10 list w planie wdrożenia chmury. Najprostszym sposobem na to jest przeprowadzenie edycji zbiorczej w programie Microsoft Excel. Aby przygotować stację roboczą do edycji zbiorczej, zobacz [zbiorcze Dodawanie lub modyfikowanie elementów roboczych za pomocą programu Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 Krok 5 w tym artykule informuje o wybraniu **listy danych wejściowych**. Zamiast tego wybierz pozycję **Lista zapytań**. Następnie na liście rozwijanej **Wybierz zapytanie** wybierz zapytanie **szablon obciążenia** . Ta kwerenda ładuje wszystkie działania związane z migracją pojedynczego obciążenia do arkusza kalkulacyjnego.
 

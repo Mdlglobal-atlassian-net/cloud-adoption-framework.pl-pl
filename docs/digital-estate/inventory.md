@@ -8,16 +8,16 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 616bf15db1fac01966573cd5822717c59286434b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829295"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023496"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Zbierz dane spisu dla elektronicznej sieci
 
-Tworzenie spisu jest pierwszym krokiem w przypadku [planowania w formie cyfrowej](index.md). W tym procesie Lista zasobów IT, które obsługują określone funkcje biznesowe, jest zbierana na potrzeby późniejszej analizy i racjonalizacji. W tym artykule założono, że podejście dolne do analizy jest najbardziej odpowiednie do planowania. Aby uzyskać więcej informacji, zobacz [podejścia do planowania w formie elektronicznej](./approach.md).
+Tworzenie spisu jest pierwszym krokiem w przypadku [planowania w formie cyfrowej](./index.md). W tym procesie Lista zasobów IT, które obsługują określone funkcje biznesowe, jest zbierana na potrzeby późniejszej analizy i racjonalizacji. W tym artykule założono, że podejście dolne do analizy jest najbardziej odpowiednie do planowania. Aby uzyskać więcej informacji, zobacz [podejścia do planowania w formie elektronicznej](./approach.md).
 
 ## <a name="take-inventory-of-a-digital-estate"></a>Sporządzanie spisu rzeczy cyfrowych
 
@@ -38,4 +38,4 @@ Zapasy są rzadko uzupełniane w pierwszej iteracji. Zdecydowanie zalecamy, aby 
 Po skompilowaniu i zweryfikowaniu spisu można je zastanowić racjonalnie. Racjonalizacja spisu to kolejny krok dotyczący planowania w formie elektronicznej.
 
 > [!div class="nextstepaction"]
-> [Racjonalizacja cyfrowej](rationalize.md)
+> [Racjonalizacja cyfrowej](./rationalize.md)

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cd4d6e7a017c9a71c090110720c28701082ce792
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4d28e0ec6dea61a96e463df8fd2717ed0a8c8f02
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817557"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023644"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Przewodnik po decyzjach dotyczących nazewnictwa i tagowania zasobów
 
@@ -26,7 +26,7 @@ Organizowanie zasobów opartych na chmurze jest jednym z najważniejszych zadań
 
 ## <a name="tagging-decision-guide"></a>Przewodnik po decyzjach związanych z tagowaniem
 
-![Wykres opcji tagowania od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/discovery-guides/discovery-guide-tagging.png)
+![Wykres opcji tagowania od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/decision-guides/decision-guide-resource-tagging.png)
 
 Idź do: [Konwencje nazewnictwa punktów odniesienia](#baseline-naming-conventions) | [Wzorce tagowania wzorców](#resource-tagging-patterns) | [Dowiedz się więcej](#learn-more)
 
@@ -74,7 +74,7 @@ Typowe wzorce tagowania wymienione poniżej przedstawiają przykłady organizowa
 Aby uzyskać więcej informacji na temat nazewnictwa i tagowania na platformie Azure, zobacz:
 
 - [Konwencje nazewnictwa dla zasobów platformy Azure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Te wskazówki dotyczą zalecanych konwencji nazewnictwa zasobów platformy Azure.
-- [Organizowanie zasobów platformy Azure przy użyciu tagów](/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). Tagi można stosować na platformie Azure na poziomie grupy zasobów i indywidualnego zasobu, co zapewnia elastyczność określania stopnia szczegółowości dowolnych raportów księgowych w oparciu o zastosowane tagi.
+- [Organizowanie zasobów platformy Azure przy użyciu tagów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). Tagi można stosować na platformie Azure na poziomie grupy zasobów i indywidualnego zasobu, co zapewnia elastyczność określania stopnia szczegółowości dowolnych raportów księgowych w oparciu o zastosowane tagi.
 
 ## <a name="next-steps"></a>Następne kroki
 

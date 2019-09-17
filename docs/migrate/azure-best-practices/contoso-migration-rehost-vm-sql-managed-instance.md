@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 9264a6c44ecd134dc8e25d68d35015d02d845cca
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4b9f6bcb8ce2732cda094e83b832c0e4c920c665
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829880"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024174"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ponowne hostowanie aplikacji lokalnej na maszynie wirtualnej platformy Azure i wystąpieniu zarządzanym usługi SQL Database
 
@@ -111,9 +111,9 @@ Firma Contoso przeprowadzi migrację warstw internetowych i danych aplikacji Sma
 
 Usługa | Opis | Koszt
 --- | --- | ---
-[Azure Database Migration Service](/azure/dms/dms-overview) | Usługa Azure Database Migration Service umożliwia bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. | Dowiedz się więcej o [obsługiwanych regionach](/azure/dms/dms-overview#regional-availability) i [cenniku usługi Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
-[Wystąpienie zarządzane usługi Azure SQL Database](/azure/sql-database/sql-database-managed-instance) | Wystąpienie zarządzane to usługa zarządzanej bazy danych, która reprezentuje w pełni zarządzane wystąpienie programu SQL Server w chmurze platformy Azure. Używa tego samego kodu co najnowsza wersja aparatu bazy danych programu SQL Server oraz ma najnowsze funkcje, ulepszenia wydajności i poprawki zabezpieczeń. | Korzystanie z wystąpienia zarządzanego usługi SQL Database uruchomionego na platformie Azure powoduje naliczanie opłat zależnych od pojemności. Dowiedz się więcej o [cenach wystąpienia zarządzanego](https://azure.microsoft.com/pricing/details/sql-database/managed).
-[Azure Site Recovery](/azure/site-recovery) | Usługa Site Recovery organizuje migrację i odzyskiwanie po awarii maszyn wirtualnych platformy Azure, lokalnych maszyn wirtualnych i serwerów fizycznych oraz zarządza tymi procesami. | Podczas replikacji na platformę Azure naliczane są opłaty za usługę Azure Storage. Maszyny wirtualne platformy Azure zostaną utworzone w momencie przejścia do trybu failover i wówczas będą naliczane opłaty. Dowiedz się więcej o [opłatach za usługę Site Recovery i cenach](https://azure.microsoft.com/pricing/details/site-recovery).
+[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Usługa Azure Database Migration Service umożliwia bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. | Dowiedz się więcej o [obsługiwanych regionach](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) i [cenniku usługi Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
+[Wystąpienie zarządzane usługi Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Wystąpienie zarządzane to usługa zarządzanej bazy danych, która reprezentuje w pełni zarządzane wystąpienie programu SQL Server w chmurze platformy Azure. Używa tego samego kodu co najnowsza wersja aparatu bazy danych programu SQL Server oraz ma najnowsze funkcje, ulepszenia wydajności i poprawki zabezpieczeń. | Korzystanie z wystąpienia zarządzanego usługi SQL Database uruchomionego na platformie Azure powoduje naliczanie opłat zależnych od pojemności. Dowiedz się więcej o [cenach wystąpienia zarządzanego](https://azure.microsoft.com/pricing/details/sql-database/managed).
+[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Usługa Site Recovery organizuje migrację i odzyskiwanie po awarii maszyn wirtualnych platformy Azure, lokalnych maszyn wirtualnych i serwerów fizycznych oraz zarządza tymi procesami. | Podczas replikacji na platformę Azure naliczane są opłaty za usługę Azure Storage. Maszyny wirtualne platformy Azure zostaną utworzone w momencie przejścia do trybu failover i wówczas będą naliczane opłaty. Dowiedz się więcej o [opłatach za usługę Site Recovery i cenach](https://azure.microsoft.com/pricing/details/site-recovery).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -124,10 +124,10 @@ Firma Contoso i inni użytkownicy muszą spełniać następujące wymagania wst�
 Wymagania | Szczegóły
 --- | ---
 **Rejestracja w wersji zapoznawczej wystąpienia zarządzanego** | Musisz zarejestrować się w ograniczonej wersji zapoznawczej wystąpienia zarządzanego usługi SQL Database. Aby [zarejestrować się](https://portal.azure.com#create/Microsoft.SQLManagedInstance), potrzebna jest subskrypcja platformy Azure. Rejestracja może potrwać kilka dni, dlatego należy zarejestrować się przed rozpoczęciem wdrażania tego scenariusza.
-**Subskrypcja platformy Azure** | Subskrypcję należy utworzyć jeszcze przed przeprowadzeniem oceny w pierwszym artykule w tej serii. Jeśli nie masz subskrypcji platformy Azure, utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.<br/><br/> Jeśli potrzebujesz bardziej szczegółowych uprawnień, zobacz [Zarządzanie dostępem do usługi Site Recovery przy użyciu kontroli dostępu opartej na rolach](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Infrastruktura platformy Azure wymagana do migracji](contoso-migration-infrastructure.md).
-**Usługa Site Recovery (lokalna)** | Lokalne wystąpienie programu vCenter Server w wersji 5.5, 6.0 lub 6.5<br/><br/> Host ESXi w wersji 5.5, 6.0 lub 6.5<br/><br/> Co najmniej jedna maszyna wirtualna programu VMware uruchomiona na hoście ESXi.<br/><br/> Maszyny wirtualne muszą spełniać [wymagania platformy Azure](/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Obsługiwana konfiguracja [sieci](/azure/site-recovery/vmware-physical-azure-support-matrix#network) i [magazynu](/azure/site-recovery/vmware-physical-azure-support-matrix#storage).
-**Usługa Database Migration Service** | W przypadku usługi Azure Database Migration Service potrzebne jest [zgodne lokalne urządzenie sieci VPN](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).<br/><br/> Musisz mieć możliwość skonfigurowania lokalnego urządzenia sieci VPN. Musi ono mieć widoczny zewnętrznie publiczny adres IPv4. Adres nie może znajdować się za urządzeniem NAT.<br/><br/> Upewnij się, że masz dostęp do lokalnej bazy danych programu SQL Server.<br/><br/> Zapora systemu Windows powinna mieć dostęp do aparatu źródłowej bazy danych. Dowiedz się, jak [skonfigurować zaporę systemu Windows pod kątem dostępu do aparatu bazy danych](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access).<br/><br/> Jeśli przed maszyną bazy danych znajduje się zapora, dodaj reguły zezwalające na dostęp do bazy danych za pośrednictwem portu SMB 445.<br/><br/> Poświadczenia, które służą do nawiązywania połączenia ze źródłowym wystąpieniem programu SQL Server i których elementem docelowym jest wystąpienie zarządzane, muszą być elementami członkowskimi roli serwera sysadmin.<br/><br/> Musisz mieć udział sieciowy w lokalnej bazie danych umożliwiający wykonanie kopii zapasowej źródłowej bazy danych za pomocą usługi Azure Database Migration Service.<br/><br/> Upewnij się, że konto usługi, na którym uruchomiono źródłowe wystąpienie programu SQL Server, ma uprawnienia do zapisu w udziale sieciowym.<br/><br/> Zanotuj nazwę i hasło użytkownika systemu Windows, który ma uprawnienia do pełnej kontroli nad udziałem sieciowym. Usługa Azure Database Migration Service personifikuje te poświadczenia użytkownika w celu przekazania plików kopii zapasowej do kontenera usługi Azure Storage.<br/><br/> Proces instalacji programu SQL Server Express domyślnie zmienia ustawienie protokołu TCP/IP na wartość **Wyłączony**. Upewnij się, że ustawienie to jest włączone.
+**Subskrypcja platformy Azure** | Subskrypcję należy utworzyć jeszcze przed przeprowadzeniem oceny w pierwszym artykule w tej serii. Jeśli nie masz subskrypcji platformy Azure, utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.<br/><br/> Jeśli potrzebujesz bardziej szczegółowych uprawnień, zobacz [Zarządzanie dostępem do usługi Site Recovery przy użyciu kontroli dostępu opartej na rolach](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Infrastruktura platformy Azure wymagana do migracji](./contoso-migration-infrastructure.md).
+**Usługa Site Recovery (lokalna)** | Lokalne wystąpienie programu vCenter Server w wersji 5.5, 6.0 lub 6.5<br/><br/> Host ESXi w wersji 5.5, 6.0 lub 6.5<br/><br/> Co najmniej jedna maszyna wirtualna programu VMware uruchomiona na hoście ESXi.<br/><br/> Maszyny wirtualne muszą spełniać [wymagania platformy Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Obsługiwana konfiguracja [sieci](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) i [magazynu](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage).
+**Usługa Database Migration Service** | W przypadku usługi Azure Database Migration Service potrzebne jest [zgodne lokalne urządzenie sieci VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).<br/><br/> Musisz mieć możliwość skonfigurowania lokalnego urządzenia sieci VPN. Musi ono mieć widoczny zewnętrznie publiczny adres IPv4. Adres nie może znajdować się za urządzeniem NAT.<br/><br/> Upewnij się, że masz dostęp do lokalnej bazy danych programu SQL Server.<br/><br/> Zapora systemu Windows powinna mieć dostęp do aparatu źródłowej bazy danych. Dowiedz się, jak [skonfigurować zaporę systemu Windows pod kątem dostępu do aparatu bazy danych](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access).<br/><br/> Jeśli przed maszyną bazy danych znajduje się zapora, dodaj reguły zezwalające na dostęp do bazy danych za pośrednictwem portu SMB 445.<br/><br/> Poświadczenia, które służą do nawiązywania połączenia ze źródłowym wystąpieniem programu SQL Server i których elementem docelowym jest wystąpienie zarządzane, muszą być elementami członkowskimi roli serwera sysadmin.<br/><br/> Musisz mieć udział sieciowy w lokalnej bazie danych umożliwiający wykonanie kopii zapasowej źródłowej bazy danych za pomocą usługi Azure Database Migration Service.<br/><br/> Upewnij się, że konto usługi, na którym uruchomiono źródłowe wystąpienie programu SQL Server, ma uprawnienia do zapisu w udziale sieciowym.<br/><br/> Zanotuj nazwę i hasło użytkownika systemu Windows, który ma uprawnienia do pełnej kontroli nad udziałem sieciowym. Usługa Azure Database Migration Service personifikuje te poświadczenia użytkownika w celu przekazania plików kopii zapasowej do kontenera usługi Azure Storage.<br/><br/> Proces instalacji programu SQL Server Express domyślnie zmienia ustawienie protokołu TCP/IP na wartość **Wyłączony**. Upewnij się, że ustawienie to jest włączone.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -153,10 +153,10 @@ Aby skonfigurować wystąpienie zarządzane usługi Azure SQL Database, firma Co
 - Po utworzeniu wystąpienia zarządzanego firma Contoso nie powinna dodawać zasobów do tej podsieci.
 - Z podsiecią nie może być skojarzona żadna sieciowa grupa zabezpieczeń.
 - Podsieć musi mieć zdefiniowaną przez użytkownika tabelę tras. Jedyną przypisaną trasą powinna być 0.0.0.0/0 z następnym przeskokiem do Internetu.
-- Opcjonalny niestandardowy serwer DNS: jeśli w sieci wirtualnej platformy Azure jest określony niestandardowy serwer DNS, do listy należy dodać adres IP cyklicznego programu rozpoznawania nazw platformy Azure (na przykład 168.63.129.16). Dowiedz się, jak [skonfigurować niestandardowy serwer DNS dla wystąpienia zarządzanego](/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Opcjonalny niestandardowy serwer DNS: jeśli w sieci wirtualnej platformy Azure jest określony niestandardowy serwer DNS, do listy należy dodać adres IP cyklicznego programu rozpoznawania nazw platformy Azure (na przykład 168.63.129.16). Dowiedz się, jak [skonfigurować niestandardowy serwer DNS dla wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
 - Z podsiecią nie może być skojarzony żaden punkt końcowy usługi (magazyn lub SQL). Punkty końcowe usługi powinny być wyłączone w sieci wirtualnej.
-- Podsieć musi mieć co najmniej 16 adresów IP. Dowiedz się, jak [zmienić rozmiar podsieci wystąpienia zarządzanego](/azure/sql-database/sql-database-managed-instance-vnet-configuration).
-- W środowisku hybrydowym firmy Contoso wymagane są niestandardowe ustawienia DNS. Firma Contoso skonfiguruje ustawienia DNS, aby używać co najmniej jednego serwera DNS platformy Azure firmy. Dowiedz się więcej o [dostosowywaniu serwerów DNS](/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Podsieć musi mieć co najmniej 16 adresów IP. Dowiedz się, jak [zmienić rozmiar podsieci wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration).
+- W środowisku hybrydowym firmy Contoso wymagane są niestandardowe ustawienia DNS. Firma Contoso skonfiguruje ustawienia DNS, aby używać co najmniej jednego serwera DNS platformy Azure firmy. Dowiedz się więcej o [dostosowywaniu serwerów DNS](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
 
 ### <a name="set-up-a-virtual-network-for-the-managed-instance"></a>Konfigurowanie sieci wirtualnej dla wystąpienia zarządzanego
 
@@ -188,10 +188,10 @@ Administratorzy firmy Contoso konfigurują sieć wirtualną w następujący spos
 
 **Potrzebujesz dodatkowej pomocy?**
 
-- Zapoznaj się z omówieniem [wystąpienia zarządzanego usługi SQL Database](/azure/sql-database/sql-database-managed-instance).
-- Dowiedz się, jak [utworzyć sieć wirtualną dla wystąpienia zarządzanego usługi SQL Database](/azure/sql-database/sql-database-managed-instance-vnet-configuration).
-- Dowiedz się, jak [skonfigurować komunikację równorzędną](/azure/virtual-network/virtual-network-manage-peering).
-- Dowiedz się, jak [zaktualizować ustawienia DNS usługi Azure Active Directory](/azure/active-directory-domain-services/active-directory-ds-getting-started-dns).
+- Zapoznaj się z omówieniem [wystąpienia zarządzanego usługi SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
+- Dowiedz się, jak [utworzyć sieć wirtualną dla wystąpienia zarządzanego usługi SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration).
+- Dowiedz się, jak [skonfigurować komunikację równorzędną](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering).
+- Dowiedz się, jak [zaktualizować ustawienia DNS usługi Azure Active Directory](https://docs.microsoft.com/azure/active-directory-domain-services/active-directory-ds-getting-started-dns).
 
 ### <a name="set-up-routing"></a>Konfigurowanie routingu
 
@@ -220,7 +220,7 @@ Firma Contoso bierze pod uwagę następujące czynniki:
 
 **Potrzebujesz dodatkowej pomocy?**
 
-Dowiedz się, jak [skonfigurować trasy dla wystąpienia zarządzanego](/azure/sql-database/sql-database-managed-instance-create-tutorial-portal).
+Dowiedz się, jak [skonfigurować trasy dla wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-create-tutorial-portal).
 
 ### <a name="create-a-managed-instance"></a>Tworzenie wystąpienia zarządzanego
 
@@ -240,7 +240,7 @@ Teraz administratorzy firmy Contoso mogą zaaprowizować wystąpienie zarządzan
 
 **Potrzebujesz dodatkowej pomocy?**
 
-Dowiedz się, jak [zaaprowizować wystąpienie zarządzane](/azure/sql-database/sql-database-managed-instance-create-tutorial-portal).
+Dowiedz się, jak [zaaprowizować wystąpienie zarządzane](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-create-tutorial-portal).
 
 ## <a name="step-2-prepare-the-azure-database-migration-service"></a>Krok 2: przygotowanie usługi Azure Database Migration Service
 
@@ -271,8 +271,8 @@ Następnie wykonują następujące czynności:
 
 **Potrzebujesz dodatkowej pomocy?**
 
-- Dowiedz się, jak [skonfigurować usługę Azure Database Migration Service](/azure/dms/quickstart-create-data-migration-service-portal).
-- Dowiedz się, jak [utworzyć sygnaturę dostępu współdzielonego i jej używać](/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2).
+- Dowiedz się, jak [skonfigurować usługę Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal).
+- Dowiedz się, jak [utworzyć sygnaturę dostępu współdzielonego i jej używać](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2).
 
 ## <a name="step-3-prepare-azure-for-the-site-recovery-service"></a>Krok 3: przygotowanie platformy Azure do wdrożenia usługi Site Recovery
 
@@ -284,7 +284,7 @@ Potrzebnych jest kilka elementów platformy Azure, aby firma Contoso mogła skon
 
 Administratorzy firmy Contoso konfigurują usługę Site Recovery w następujący sposób:
 
-1. Ponieważ maszyna wirtualna jest frontonem internetowym dla aplikacji SmartHotel360, firma Contoso przełącza maszynę wirtualną w tryb failover do istniejącej sieci produkcyjnej (**VNET-PROD-EUS2**) i podsieci (**PROD-FE-EUS2**). Sieć i podsieć znajdują się w regionie podstawowym Wschodnie stany USA 2. Firma Contoso skonfigurowała sieć podczas [wdrażania infrastruktury platformy Azure](contoso-migration-infrastructure.md).
+1. Ponieważ maszyna wirtualna jest frontonem internetowym dla aplikacji SmartHotel360, firma Contoso przełącza maszynę wirtualną w tryb failover do istniejącej sieci produkcyjnej (**VNET-PROD-EUS2**) i podsieci (**PROD-FE-EUS2**). Sieć i podsieć znajdują się w regionie podstawowym Wschodnie stany USA 2. Firma Contoso skonfigurowała sieć podczas [wdrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md).
 2. Tworzą konto magazynu (**contosovmsacc20180528**). Firma Contoso używa konta ogólnego przeznaczenia. Firma Contoso wybiera magazyny w warstwie Standardowa i lokalnie nadmiarową replikację magazynu.
 
     ![Site Recovery — tworzenie konta magazynu](media/contoso-migration-rehost-vm-sql-managed-instance/asr-storage.png)
@@ -295,7 +295,7 @@ Administratorzy firmy Contoso konfigurują usługę Site Recovery w następując
 
 **Potrzebujesz dodatkowej pomocy?**
 
-Dowiedz się, jak [skonfigurować platformę Azure do wdrożenia usługi Site Recovery](/azure/site-recovery/tutorial-prepare-azure).
+Dowiedz się, jak [skonfigurować platformę Azure do wdrożenia usługi Site Recovery](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure).
 
 ## <a name="step-4-prepare-on-premises-vmware-for-site-recovery"></a>Krok 4: przygotowanie lokalnego oprogramowania VMware do korzystania z usługi Site Recovery
 
@@ -319,7 +319,7 @@ Administratorzy firmy Contoso konfigurują konto, wykonując następujące zadan
 
 **Potrzebujesz dodatkowej pomocy?**
 
-Dowiedz się, jak [utworzyć i przypisać rolę na potrzeby automatycznego odnajdywania](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery).
+Dowiedz się, jak [utworzyć i przypisać rolę na potrzeby automatycznego odnajdywania](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery).
 
 ### <a name="prepare-an-account-for-mobility-service-installation"></a>Przygotowanie konta do instalacji usługi Mobility Service
 
@@ -332,7 +332,7 @@ Usługa Mobility Service musi być zainstalowana na maszynie wirtualnej, którą
 
 **Potrzebujesz dodatkowej pomocy?**
 
-Dowiedz się, jak [utworzyć konto na potrzeby instalacji wypychanej usługi Mobility Service](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation).
+Dowiedz się, jak [utworzyć konto na potrzeby instalacji wypychanej usługi Mobility Service](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation).
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Przygotowanie do połączenia z maszynami wirtualnymi Azure po przejściu do trybu failover
 
@@ -432,8 +432,8 @@ Po skonfigurowaniu środowiska źródłowego i docelowego administratorzy firmy 
 
 **Potrzebujesz dodatkowej pomocy?**
 
-- Pełne instrukcje dotyczące tych kroków można znaleźć w artykule [Konfigurowanie odzyskiwania po awarii dla lokalnych maszyn wirtualnych VMware](/azure/site-recovery/vmware-azure-tutorial).
-- Szczegółowe instrukcje pomogą Ci w [skonfigurowaniu środowiska źródłowego](/azure/site-recovery/vmware-azure-set-up-source), [wdrożeniu serwera konfiguracji](/azure/site-recovery/vmware-azure-deploy-configuration-server) i [skonfigurowaniu ustawień replikacji](/azure/site-recovery/vmware-azure-set-up-replication).
+- Pełne instrukcje dotyczące tych kroków można znaleźć w artykule [Konfigurowanie odzyskiwania po awarii dla lokalnych maszyn wirtualnych VMware](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
+- Szczegółowe instrukcje pomogą Ci w [skonfigurowaniu środowiska źródłowego](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [wdrożeniu serwera konfiguracji](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) i [skonfigurowaniu ustawień replikacji](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
 
 ### <a name="enable-replication"></a>Włączanie replikacji
 
@@ -460,7 +460,7 @@ Teraz administratorzy firmy Contoso mogą rozpocząć replikację maszyny wirtua
 
 **Potrzebujesz dodatkowej pomocy?**
 
-Pełne instrukcje do wszystkich kroków można znaleźć w artykule [Włączanie replikacji](/azure/site-recovery/vmware-azure-enable-replication).
+Pełne instrukcje do wszystkich kroków można znaleźć w artykule [Włączanie replikacji](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication).
 
 ## <a name="step-6-migrate-the-database"></a>Krok 6: migrowanie bazy danych
 
@@ -557,9 +557,9 @@ W ostatnim kroku procesu migracji administratorzy firmy Contoso aktualizują par
 
 **Potrzebujesz dodatkowej pomocy?**
 
-- Dowiedz się, jak [uruchomić test trybu failover](/azure/site-recovery/tutorial-dr-drill-azure).
-- Dowiedz się, jak [utworzyć plan odzyskiwania](/azure/site-recovery/site-recovery-create-recovery-plans).
-- Dowiedz się, jak [przełączyć się do trybu failover na platformie Azure](/azure/site-recovery/site-recovery-failover).
+- Dowiedz się, jak [uruchomić test trybu failover](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure).
+- Dowiedz się, jak [utworzyć plan odzyskiwania](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans).
+- Dowiedz się, jak [przełączyć się do trybu failover na platformie Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover).
 
 ## <a name="clean-up-after-migration"></a>Czyszczenie zasobów po migracji
 
@@ -584,24 +584,24 @@ Zespół ds. zabezpieczeń firmy Contoso przegląda maszyny wirtualne platformy 
 
 - Zespół przegląda sieciowe grupy zabezpieczeń używane do kontroli dostępu do maszyn wirtualnych. Sieciowe grupy zabezpieczeń pomagają zapewnić, że może być przekazywany tylko ruch dozwolony dla aplikacji.
 - Zespół ds. zabezpieczeń firmy Contoso rozważa również objęcie ochroną danych na dysku przy użyciu usług Azure Disk Encryption i Azure Key Vault.
-- Zespół włącza wykrywanie zagrożeń w wystąpieniu zarządzanym. Funkcja wykrywania zagrożeń wysyła alert do zespołu ds. zabezpieczeń firmy Contoso / systemu pomocy technicznej, aby otworzyć bilet w przypadku wykrycia zagrożenia. Dowiedz się więcej na temat [wykrywania zagrożeń dla wystąpienia zarządzanego](/azure/sql-database/sql-database-managed-instance-threat-detection).
+- Zespół włącza wykrywanie zagrożeń w wystąpieniu zarządzanym. Funkcja wykrywania zagrożeń wysyła alert do zespołu ds. zabezpieczeń firmy Contoso / systemu pomocy technicznej, aby otworzyć bilet w przypadku wykrycia zagrożenia. Dowiedz się więcej na temat [wykrywania zagrożeń dla wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-threat-detection).
 
      ![Zabezpieczenia wystąpienia zarządzanego — wykrywanie zagrożeń](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-security.png)
 
-Aby dowiedzieć się więcej na temat rozwiązań z zakresu bezpieczeństwa dotyczących maszyn wirtualnych, zobacz [Najlepsze rozwiązania dotyczące zabezpieczeń dla obciążeń IaaS na platformie Azure](/azure/security/azure-security-best-practices-vms).
+Aby dowiedzieć się więcej na temat rozwiązań z zakresu bezpieczeństwa dotyczących maszyn wirtualnych, zobacz [Najlepsze rozwiązania dotyczące zabezpieczeń dla obciążeń IaaS na platformie Azure](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms).
 
 ### <a name="bcdr"></a>BCDR
 
 W celu zapewnienia ciągłości działania i odzyskiwania po awarii (BCDR, Business Continuity and Disaster Recovery) firma Contoso podejmuje następujące działania:
 
-- Zachowanie bezpieczeństwa danych: Firma Contoso tworzy kopie zapasowe danych na maszynach wirtualnych za pomocą usługi Azure Backup. [Dowiedz się więcej](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-- Zapewnienie ciągłości działania aplikacji: firma Contoso replikuje maszyny wirtualne aplikacji w regionie pomocniczym platformy Azure za pomocą usługi Site Recovery. [Dowiedz się więcej](/azure/site-recovery/azure-to-azure-quickstart).
-- Firma Contoso zdobywa więcej informacji o zarządzaniu wystąpieniem zarządzanym SQL, w tym o [tworzeniu kopii zapasowych bazy danych](/azure/sql-database/sql-database-automated-backups).
+- Zachowanie bezpieczeństwa danych: Firma Contoso tworzy kopie zapasowe danych na maszynach wirtualnych za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- Zapewnienie ciągłości działania aplikacji: firma Contoso replikuje maszyny wirtualne aplikacji w regionie pomocniczym platformy Azure za pomocą usługi Site Recovery. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
+- Firma Contoso zdobywa więcej informacji o zarządzaniu wystąpieniem zarządzanym SQL, w tym o [tworzeniu kopii zapasowych bazy danych](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
 
 ### <a name="licensing-and-cost-optimization"></a>Licencjonowanie i optymalizacja kosztów
 
 - Firma Contoso ma już licencję na maszynę WEBVM. Aby skorzystać z cen wynikających z korzyści użycia hybrydowego platformy Azure, firma Contoso konwertuje istniejącą maszynę wirtualną platformy Azure.
-- Firma Contoso włącza usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Cost Management to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia firmie Contoso korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. Dowiedz się więcej na temat usługi [Azure Cost Management](/azure/cost-management/overview).
+- Firma Contoso włącza usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Cost Management to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia firmie Contoso korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. Dowiedz się więcej na temat usługi [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview).
 
 ## <a name="conclusion"></a>Wniosek
 

@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d5444b340dbb0252f3aaf70b9cfca88126234e4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3936307ec1062d36e890b65d8687ad0acbb5b129
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819155"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025117"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Ścieżka gotowości w zakresie umiejętności w fazie gotowości do migracji
 
@@ -24,7 +24,7 @@ W fazie gotowości do migracji celem jest przygotowanie z wyprzedzeniem do tej p
 W zależności od motywacji i wyników biznesowych związanych z nakładami na wdrożenie chmury, liderzy mogą być zobowiązani do ustanowienia nowych struktur organizacyjnych lub zespołów wirtualnych (V-Teams) w celu ułatwienia różnych funkcji. Poniższe artykuły ułatwiają opracowywanie umiejętności, które są niezbędne do utworzenia struktury tych zespołów zgodnie z wymaganymi rezultatami:
 
 - [Początkowe dopasowywanie organizacji](./index.md): Omówienie dopasowania organizacyjnego i różnych struktur zespołu w celu ułatwienia określonych celów.
-- [Omówienie silosów i lenna (fiefdoms)](../organization/fiefdoms-silos.md): Poznaj dwa popularne antywzorce organizacyjne i sposoby, aby doprowadzić zespół do wydajnej współpracy.
+- [Omówienie silosów i lenna (fiefdoms)](../organize/fiefdoms-silos.md): Poznaj dwa popularne antywzorce organizacyjne i sposoby, aby doprowadzić zespół do wydajnej współpracy.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Ścieżki szkoleniowe dotyczące gotowości środowiska (technicznej)
 

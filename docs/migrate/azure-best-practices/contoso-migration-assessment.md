@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 021dccdbabc7d2c51b26e98b7bc6380f3a2aa8d3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821079"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025034"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Ocena obciążeń lokalnych pod kątem migracji do platformy Azure
 
@@ -24,7 +24,7 @@ W tym artykule przedstawiono sposób, w jaki fikcyjna firma Contoso ocenia proce
 
 Ponieważ Contoso rozważa migrację na platformę Azure, firma musi przeprowadzić ocenę techniczną i finansową, aby określić, czy lokalne obciążenia są dobrym kandydatami do migracji do chmury. W szczególności zespół firmy Contoso chce ocenić zgodność maszyny i bazy danych na potrzeby migracji. Oszacowane powinny zostać wydajność i koszty działania zasobów firmy Contoso na platformie Azure.
 
-Aby rozpocząć pracę i lepiej zrozumieć odpowiednie technologie, firma Contoso ocenia dwie ze swoich aplikacji lokalnych, które podsumowano w poniższej tabeli. Firma ocenia scenariusze migracji, w których następuje ponowne hostowanie i refaktoryzacja aplikacji na potrzeby migracji. Więcej informacji na temat ponownego hostowania i refaktoryzacji zawiera [przegląd przykładów migracji](contoso-migration-overview.md).
+Aby rozpocząć pracę i lepiej zrozumieć odpowiednie technologie, firma Contoso ocenia dwie ze swoich aplikacji lokalnych, które podsumowano w poniższej tabeli. Firma ocenia scenariusze migracji, w których następuje ponowne hostowanie i refaktoryzacja aplikacji na potrzeby migracji. Więcej informacji na temat ponownego hostowania i refaktoryzacji zawiera [przegląd przykładów migracji](./contoso-migration-overview.md).
 
 <!-- markdownlint-disable MD033 -->
 
@@ -74,8 +74,8 @@ Do oceny migracji firma Contoso używa narzędzi firmy Microsoft. Narzędzia te 
 Technologia | Opis | Koszt
 --- | --- | ---
 [Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia Data Migration Assistant do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie Data Migration Assistant ocenia równoważność funkcji między źródłowymi i docelowymi elementami SQL. Wynikiem działania tego narzędzia są zalecenia dotyczące poprawy wydajności i niezawodności. | Narzędzie Data Migration Assistant można bezpłatnie pobrać.
-[Azure Migrate](/azure/migrate/migrate-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną.
-[Mapa usługi](/azure/operations-management-suite/operations-management-suite-service-map) | Usługa Azure Migrate za pomocą rozwiązania Service Map przedstawia zależności między maszynami, które firma chce zmigrować. | Rozwiązanie Service Map jest częścią dzienników usługi Azure Monitor. Obecnie firma Contoso może używać rozwiązania Service Map przez 180 dni bez naliczania opłat.
+[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną.
+[Mapa usługi](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Usługa Azure Migrate za pomocą rozwiązania Service Map przedstawia zależności między maszynami, które firma chce zmigrować. | Rozwiązanie Service Map jest częścią dzienników usługi Azure Monitor. Obecnie firma Contoso może używać rozwiązania Service Map przez 180 dni bez naliczania opłat.
 
 W tym scenariuszu przedstawiciel firmy Contoso pobiera i uruchamia narzędzie Data Migration Assistant w celu oceny lokalnej bazy danych SQL Server pod kątem przydatności dla swojej aplikacji do obsługi podróży. Za pomocą usługi Azure Migrate z mapowaniem zależności firma Contoso ocenia maszyny wirtualne aplikacji przed ich zmigrowaniem na platformę Azure.
 
@@ -110,8 +110,8 @@ Firma Contoso i inni użytkownicy muszą spełniać następujące wymagania wst�
 - Co najmniej dwie lokalne maszyny wirtualne VMware, w tym jedna z uruchomioną bazą danych programu SQL Server.
 - Uprawnienia do zainstalowania agentów usługi Azure Migrate na każdej maszynie wirtualnej.
 - Maszyny wirtualne powinny mieć bezpośrednie połączenie z Internetem.
-  - Możesz ograniczyć dostęp do Internetu do [wymaganych adresów URL](/azure/migrate/concepts-collector).
-  - Jeśli maszyny wirtualne nie mają łączności z Internetem, należy zainstalować na nich [bramę usługi Azure Log Analytics](/azure/azure-monitor/platform/gateway) i przekierować przez nią ruch agentów.
+  - Możesz ograniczyć dostęp do Internetu do [wymaganych adresów URL](https://docs.microsoft.com/azure/migrate/concepts-collector).
+  - Jeśli maszyny wirtualne nie mają łączności z Internetem, należy zainstalować na nich [bramę usługi Azure Log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/gateway) i przekierować przez nią ruch agentów.
 - Nazwa FQDN maszyny wirtualnej z uruchomionym wystąpieniem programu SQL Server, używana do oceny bazy danych.
 - Zapora systemu Windows uruchomiona na maszynie wirtualnej programu SQL Server powinna zezwalać na połączenia zewnętrzne na porcie TCP 1433 (domyślnym). Taka konfiguracja umożliwia narzędziu Data Migration Assistant nawiązanie połączenia.
 
@@ -218,7 +218,7 @@ Przedstawiciel firmy Contoso weryfikuje, czy ma uprawnienia do tworzenia maszyny
 
 ### <a name="verify-ports"></a>Weryfikowanie portów
 
-Ocena firmy Contoso korzysta z mapowania zależności. Mapowanie zależności wymaga zainstalowania agenta na maszynach wirtualnych, które będą oceniane. Agent musi mieć możliwość połączenia się z platformą Azure przez port TCP 443 na każdej maszynie wirtualnej. Dowiedz się więcej o [wymaganiach dotyczących połączenia](/azure/log-analytics/log-analytics-concept-hybrid).
+Ocena firmy Contoso korzysta z mapowania zależności. Mapowanie zależności wymaga zainstalowania agenta na maszynach wirtualnych, które będą oceniane. Agent musi mieć możliwość połączenia się z platformą Azure przez port TCP 443 na każdej maszynie wirtualnej. Dowiedz się więcej o [wymaganiach dotyczących połączenia](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid).
 
 ## <a name="step-4-discover-vms"></a>Krok 4: Odnajdywanie maszyn wirtualnych
 
@@ -279,7 +279,7 @@ Przed wdrożeniem maszyny wirtualnej przedstawiciel firmy Contoso sprawdza zabez
     **Przykład:**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
-3. Wygenerowana wartość skrótu powinna być zgodna z wartościami skrótu opisanymi w sekcji [Weryfikowanie zabezpieczeń](/azure/migrate/tutorial-assess-vmware#verify-security) w samouczku [Ocena maszyn wirtualnych VMware do migracji](/azure/migrate/tutorial-assess-vmware).
+3. Wygenerowana wartość skrótu powinna być zgodna z wartościami skrótu opisanymi w sekcji [Weryfikowanie zabezpieczeń](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) w samouczku [Ocena maszyn wirtualnych VMware do migracji](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware).
 
 ### <a name="create-the-collector-appliance"></a>Tworzenie urządzenia modułu zbierającego
 
@@ -449,7 +449,7 @@ Przedstawiciel firmy Contoso może teraz sprawdzić zależności maszyny i utwor
 
 2. Aby wyświetlić ocenę, przedstawiciel firmy Contoso wybiera pozycję **Zarządzaj** > **Oceny**.
 
-Przedstawiciel firmy Contoso korzysta z domyślnych ustawień oceny, ale możesz [je dostosować](/azure/migrate/how-to-modify-assessment).
+Przedstawiciel firmy Contoso korzysta z domyślnych ustawień oceny, ale możesz [je dostosować](https://docs.microsoft.com/azure/migrate/how-to-modify-assessment).
 
 ### <a name="analyze-the-vm-assessment"></a>Analizowanie oceny maszyny wirtualnej
 
@@ -519,4 +519,4 @@ W tym scenariuszu firma Contoso ocenia swoją bazę danych aplikacji SmartHotel3
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gdy firma Contoso oceni to obciążenie jako potencjalnie nadające się do migracji, może rozpocząć przygotowywanie swojej infrastruktury lokalnej i infrastruktury platformy Azure na potrzeby migracji. Zapoznaj się z artykułem dotyczącym [wdrażania infrastruktury platformy Azure](contoso-migration-infrastructure.md) w sekcji najlepszych rozwiązań w zakresie migrowania struktury wdrażania chmury, aby zobaczyć przykład, jak firma Contoso wykonuje te procesy.
+Gdy firma Contoso oceni to obciążenie jako potencjalnie nadające się do migracji, może rozpocząć przygotowywanie swojej infrastruktury lokalnej i infrastruktury platformy Azure na potrzeby migracji. Zapoznaj się z artykułem dotyczącym [wdrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md) w sekcji najlepszych rozwiązań w zakresie migrowania struktury wdrażania chmury, aby zobaczyć przykład, jak firma Contoso wykonuje te procesy.

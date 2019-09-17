@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 276718f4a0fba49949db1b29f4ecfeee1238ad9c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: db21fb74e09e57f542a7a90f546afe01c68f7a81
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817251"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025385"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Ustanawianie modelu operacyjnego dla chmury
 
@@ -26,13 +26,13 @@ Obecne modele operacyjne można skalować, tak aby wspierały Twoje wdrożenie c
 
 Ta sekcja przewodnika Cloud Adoption Framework przedstawia praktyczny model operacyjny, ułatwiający podejmowanie decyzji nietechnicznych. Ten model operacyjny składa się z trzech metodologii, które są pomocne podczas tworzenia własnego chmurowego modelu operacyjnego:
 
-- [Utrzymanie ładu](../governance/index.md): Zapewnij spójność wszystkich działań wdrożeniowych. Dostosuj je do wymagań dotyczących ładu i zgodności, aby zachować dobrze zarządzane środowisko międzychmurowe.
-- [Organizowanie](../organization/index.md): Zsynchronizuj działania w organizacji, aby zapewnić powodzenie modelu operacyjnego i różnorodnych wysiłków podejmowanych na rzecz wdrożenia chmury.
-- [Zarządzanie](../operations/index.md): Dopasowanie bieżących procesów operacyjnego zarządzania technologią w celu maksymalizacji zyskiwanej wartości i minimalizacji zakłóceń.
+- [Utrzymanie ładu](../govern/index.md): Zapewnij spójność wszystkich działań wdrożeniowych. Dostosuj je do wymagań dotyczących ładu i zgodności, aby zachować dobrze zarządzane środowisko międzychmurowe.
+- [Organizowanie](../organize/index.md): Zsynchronizuj działania w organizacji, aby zapewnić powodzenie modelu operacyjnego i różnorodnych wysiłków podejmowanych na rzecz wdrożenia chmury.
+- [Zarządzanie](../manage/index.md): Dopasowanie bieżących procesów operacyjnego zarządzania technologią w celu maksymalizacji zyskiwanej wartości i minimalizacji zakłóceń.
 
 ## <a name="next-steps"></a>Następne kroki
 
 Ustanowienie ładu to typowy pierwszy krok w kierunku ustanowienia modelu operacyjnego dla chmury.
 
 > [!div class="nextstepaction"]
-> [Więcej informacji o ładzie w chmurze](../governance/index.md)
+> [Więcej informacji o ładzie w chmurze](../govern/index.md)
