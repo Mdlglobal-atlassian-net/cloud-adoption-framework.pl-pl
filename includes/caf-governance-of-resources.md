@@ -1,7 +1,7 @@
 <!-- TEMPLATE FILE - DO NOT ADD METADATA -->
 <!-- markdownlint-disable MD002 MD041 -->
 > [!NOTE]
->W przypadku zmian wymagań biznesowych funkcja grup zarządzania platformy Azure umożliwia łatwą zmianę organizacji hierarchii zarządzania i przypisań grup subskrypcji. Należy jednak pamiętać, że przypisania zasad i ról zastosowane do grupy zarządzania są dziedziczone przez wszystkie subskrypcje poniżej tej grupy w hierarchii. Jeśli planujesz ponowne przypisywanie subskrypcji między grupami zarządzania, upewnij się, że masz świadomość zmian dotyczących przypisań zasad i ról, które może to powodować. Więcej informacji zawiera [dokumentacja grup zarządzania platformy Azure](/azure/governance/management-groups).
+>W przypadku zmian wymagań biznesowych funkcja grup zarządzania platformy Azure umożliwia łatwą zmianę organizacji hierarchii zarządzania i przypisań grup subskrypcji. Należy jednak pamiętać, że przypisania zasad i ról zastosowane do grupy zarządzania są dziedziczone przez wszystkie subskrypcje poniżej tej grupy w hierarchii. Jeśli planujesz ponowne przypisywanie subskrypcji między grupami zarządzania, upewnij się, że masz świadomość zmian dotyczących przypisań zasad i ról, które może to powodować. Więcej informacji zawiera [dokumentacja grup zarządzania platformy Azure](https://docs.microsoft.com/azure/governance/management-groups).
 
 ### <a name="governance-of-resources"></a>Zarządzanie zasobami
 
@@ -19,15 +19,15 @@ Definicje zasad niestandardowych są zapisywane w grupie zarządzania lub subskr
 
 Ponieważ zasady wymagane do obsługi produktu o minimalnej wymaganej funkcjonalności utrzymania ładu mają zastosowanie do wszystkich bieżących subskrypcji, następujące wymagania biznesowe zostaną zaimplementowane przy użyciu połączenia definicji wbudowanych i definicji niestandardowych utworzonych w głównej grupie zarządzania:
 
-1. Ogranicz listę dostępnych przypisań ról do zestawu wbudowanych ról platformy Azure autoryzowanego przez zespół ds. zarządzania chmurą. Będzie to wymagało [definicji zasad niestandardowych](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions). 
+1. Ogranicz listę dostępnych przypisań ról do zestawu wbudowanych ról platformy Azure autoryzowanego przez zespół ds. zarządzania chmurą. Będzie to wymagało [definicji zasad niestandardowych](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
 2. Wymagaj użycia jednego z następujących tagów dla wszystkich zasobów: *Dział/jednostka rozliczeniowa*, *Lokalizacja geograficzna*, *Klasyfikacja danych*, *Krytyczność*, *SLA*, *Środowisko*, *Archetyp aplikacji*, *Aplikacja* i *Właściciel aplikacji*. Można to zrealizować za pomocą definicji wbudowanej „Wymagaj określonego tagu”.
 3. Wymagaj, aby tag *Aplikacja* zasobów był zgodny z nazwą odpowiedniej grupy zasobów. Można to zrealizować za pomocą definicji wbudowanej „Wymagaj tagu i jego wartości”.
 
-Informacje na temat definiowania zasad niestandardowych zawiera [dokumentacja usługi Azure Policy](/azure/governance/policy/tutorials/create-custom-policy-definition). Aby uzyskać wskazówki i przykłady zasad niestandardowych, skorzystaj z [witryny przykładów usługi Azure Policy](/azure/governance/policy/samples) i powiązanego [repozytorium GitHub](https://github.com/Azure/azure-policy).
+Informacje na temat definiowania zasad niestandardowych zawiera [dokumentacja usługi Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Aby uzyskać wskazówki i przykłady zasad niestandardowych, skorzystaj z [witryny przykładów usługi Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples) i powiązanego [repozytorium GitHub](https://github.com/Azure/azure-policy).
 
 #### <a name="assign-azure-policy-and-rbac-roles-using-azure-blueprints"></a>Przypisywanie zasad usługi Azure Policy i ról RBAC przy użyciu usługi Azure Blueprints
 
-Zasady platformy Azure można przypisywać na poziomie grupy zasobów, subskrypcji i grupy zarządzania. Można je też uwzględniać w definicjach [Azure Blueprints](/azure/governance/blueprints/overview). Mimo że wymagania dotyczące zasad zdefiniowane w tym produkcie o minimalnej wymaganej funkcjonalności utrzymania ładu mają zastosowanie do wszystkich bieżących subskrypcji, bardzo prawdopodobne jest, że przyszłe wdrożenia będą wymagać wyjątków lub alternatywnych zasad. W efekcie przypisanie zasad przy użyciu grup zarządzania, co powoduje dziedziczenie tych przypisań przez wszystkie subskrypcje podrzędne, może nie zapewniać elastyczności wystarczającej do obsługi tych scenariuszy.
+Zasady platformy Azure można przypisywać na poziomie grupy zasobów, subskrypcji i grupy zarządzania. Można je też uwzględniać w definicjach [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview). Mimo że wymagania dotyczące zasad zdefiniowane w tym produkcie o minimalnej wymaganej funkcjonalności utrzymania ładu mają zastosowanie do wszystkich bieżących subskrypcji, bardzo prawdopodobne jest, że przyszłe wdrożenia będą wymagać wyjątków lub alternatywnych zasad. W efekcie przypisanie zasad przy użyciu grup zarządzania, co powoduje dziedziczenie tych przypisań przez wszystkie subskrypcje podrzędne, może nie zapewniać elastyczności wystarczającej do obsługi tych scenariuszy.
 
 Usługa Azure Blueprints umożliwia spójne przypisywanie zasad i ról, stosowanie szablonów usługi Resource Manager oraz wdrażanie grup zasobów w wielu subskrypcjach. Tak jak w przypadku definicji zasad, definicje strategii są zapisywane w grupach zarządzania lub subskrypcji i są dostępne za pośrednictwem dziedziczenia dla wszystkich elementów podrzędnych w hierarchii grupy zarządzania.
 
@@ -41,7 +41,7 @@ Zespół ds. zarządzania chmurą zdecydował, że wymuszanie wymaganych zasad u
 3. Opublikuj definicję strategii.
 4. Przypisz definicję strategii `governance-baseline` do wszystkich subskrypcji.
 
-Więcej informacji na temat tworzenia definicji strategii i korzystania z nich zawiera [dokumentacja usługi Azure Blueprints](/azure/governance/blueprints/overview).
+Więcej informacji na temat tworzenia definicji strategii i korzystania z nich zawiera [dokumentacja usługi Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview).
 
 ### <a name="secure-hybrid-vnet"></a>Bezpieczna hybrydowa sieć wirtualna
 
@@ -50,9 +50,9 @@ Określone subskrypcje często wymagają pewnego poziomu dostępu do zasobów lo
 Dopóki nie zostanie w pełni ustanowiona relacja zaufania w środowisku chmury, należy ściśle kontrolować i monitorować całą dozwoloną komunikację między obciążeniami w środowisku lokalnym i w chmurze oraz zabezpieczyć sieć lokalną przed potencjalnym nieautoryzowanym dostępem z zasobów opartych na chmurze. W celu zapewnienia obsługi tych scenariuszy do produktu o minimalnej wymaganej funkcjonalności utrzymania ładu dodano następujące najlepsze rozwiązania:
 
 1. Ustanów bezpieczną hybrydową sieć wirtualną w chmurze.
-    1. [Architektura referencyjna sieci VPN](/azure/architecture/reference-architectures/hybrid-networking/vpn) określa wzorzec i model wdrożenia na potrzeby tworzenia usługi VPN Gateway na platformie VPN.
+    1. [Architektura referencyjna sieci VPN](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) określa wzorzec i model wdrożenia na potrzeby tworzenia usługi VPN Gateway na platformie VPN.
     2. Upewnij się, że lokalne mechanizmy zabezpieczeń i zarządzania ruchem traktują połączone sieci w chmurze jako niezaufane. Zasoby i usługi hostowane w chmurze powinny mieć dostęp tylko do autoryzowanych usług lokalnych.
-    3. Upewnij się, że lokalne urządzenie brzegowe w lokalnym centrum danych jest zgodne z [wymaganiami usługi Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpn-devices) i jest skonfigurowane do uzyskiwania dostępu do publicznej sieci Internet.
+    3. Upewnij się, że lokalne urządzenie brzegowe w lokalnym centrum danych jest zgodne z [wymaganiami usługi Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) i jest skonfigurowane do uzyskiwania dostępu do publicznej sieci Internet.
 1. W głównej grupie zarządzania utwórz drugą definicję strategii o nazwie `secure-hybrid-vnet`.
     1. Dodaj szablon usługi Resource Manager dla usługi VPN Gateway jako artefakt definicji strategii.
     2. Dodaj szablon usługi Resource Manager dla sieci wirtualnej jako artefakt definicji strategii.
