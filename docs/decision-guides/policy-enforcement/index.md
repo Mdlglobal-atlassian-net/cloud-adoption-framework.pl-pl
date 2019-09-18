@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3c519de24d6c7ac83240d1b1e14b0a21c67f67df
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817659"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023727"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Przewodnik podejmowania decyzji dotyczących wymuszania zasad
 
 Definiowanie zasad organizacyjnych jest nieefektywne, jeśli nie istnieje sposób wymuszania ich w organizacji. Kluczowym aspektem planowania jakiejkolwiek migracji do chmury jest określenie najlepszego sposobu połączenia narzędzi dostarczanych przez platformę chmury z istniejącymi procesami informatycznymi w celu zapewnienia maksymalnej zgodności z zasadami dla całej infrastruktury w chmurze.
 
-![Wykres opcji wymuszania zasad od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/discovery-guides/discovery-guide-policy-enforcement.png)
+![Wykres opcji wymuszania zasad od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
 Idź do: [Zalecane praktyki dotyczące punktu odniesienia](#baseline-recommended-practices) | [Monitorowanie zgodności zasad](#policy-compliance-monitoring) | [Wymuszanie zasad](#policy-enforcement) | [Zasady dla wielu organizacji](#cross-organization-policy) | [Wymuszanie automatyczne](#automated-enforcement)
 
@@ -28,7 +28,7 @@ Wraz z rozwojem infrastruktury w chmurze pojawi się potrzeba odpowiedniej obsł
 
 Dostarczane przez platformę mechanizmy wymuszania zasad na poziomie zasobów lub subskrypcji zazwyczaj są wystarczające w przypadku mniejszych infrastruktur w chmurze. Większe wdrożenia uzasadniają większy zakres wymuszania i mogą wymagać korzystania z bardziej zaawansowanych mechanizmów wymuszania obejmujących standardy wdrażania, grupowanie i organizację zasobów oraz integrację wymuszania zasad z systemami rejestrowania i raportowania.
 
-Podstawowe czynniki przy ustalaniu zakresu procesów wymuszania zasad to [wymagania dotyczące utrzymania ładu w chmurze](/azure/architecture/cloud-adoption/governance/overview) w organizacji, rozmiar i rodzaj infrastruktury w chmurze oraz sposób odzwierciedlenia organizacji w [projekcie subskrypcji](../subscriptions/index.md). Zwiększenie rozmiaru infrastruktury lub większa potrzeba centralnego zarządzania wymuszaniem zasad może usprawiedliwić zwiększenie zakresu wymuszania.
+Podstawowe czynniki przy ustalaniu zakresu procesów wymuszania zasad to [wymagania dotyczące utrzymania ładu w chmurze](../../govern/index.md) w organizacji, rozmiar i rodzaj infrastruktury w chmurze oraz sposób odzwierciedlenia organizacji w [projekcie subskrypcji](../subscriptions/index.md). Zwiększenie rozmiaru infrastruktury lub większa potrzeba centralnego zarządzania wymuszaniem zasad może usprawiedliwić zwiększenie zakresu wymuszania.
 
 ## <a name="baseline-recommended-practices"></a>Zalecane praktyki dotyczące punktu odniesienia
 
@@ -43,15 +43,15 @@ Planowanie wymuszania zasad w chmurze można rozpocząć, sprawdzając, jak apli
 
 ## <a name="policy-compliance-monitoring"></a>Monitorowanie zgodności zasad
 
-Pierwszym krokiem poza proste korzystanie z mechanizmów wymuszania zasad dostarczanych przez platformę Azure jest zapewnienie możliwości sprawdzania, czy oparte na chmurze aplikacje i usługi są zgodne z zasadami organizacyjnymi. Obejmuje to funkcje powiadomień służących do alarmowania odpowiednich podmiotów, gdy zasób przestaje być zgodny. Skuteczne [rejestrowanie i raportowanie](../log-and-report/index.md) stanu zgodności obciążeń w chmurze jest kluczowym elementem strategii wymuszania zasad firmowych.
+Pierwszym krokiem poza proste korzystanie z mechanizmów wymuszania zasad dostarczanych przez platformę Azure jest zapewnienie możliwości sprawdzania, czy oparte na chmurze aplikacje i usługi są zgodne z zasadami organizacyjnymi. Obejmuje to funkcje powiadomień służących do alarmowania odpowiednich podmiotów, gdy zasób przestaje być zgodny. Skuteczne [rejestrowanie i raportowanie](../logging-and-reporting/index.md) stanu zgodności obciążeń w chmurze jest kluczowym elementem strategii wymuszania zasad firmowych.
 
-Gdy infrastruktura w chmurze rośnie, dodatkowe narzędzia, takie jak usługa [Azure Security Center](/azure/security-center), mogą zapewnić zintegrowane zabezpieczenia i wykrywanie zagrożeń oraz ułatwić stosowanie scentralizowanego zarządzania zasadami i alarmowania w przypadku zasobów lokalnych i zasobów w chmurze.
+Gdy infrastruktura w chmurze rośnie, dodatkowe narzędzia, takie jak usługa [Azure Security Center](https://docs.microsoft.com/azure/security-center), mogą zapewnić zintegrowane zabezpieczenia i wykrywanie zagrożeń oraz ułatwić stosowanie scentralizowanego zarządzania zasadami i alarmowania w przypadku zasobów lokalnych i zasobów w chmurze.
 
 ## <a name="policy-enforcement"></a>Wymuszanie zasad
 
 Na platformie Azure można stosować ustawienia konfiguracji i reguły tworzenia zasobów na poziomie grupy zarządzania, subskrypcji lub grupy zasobów w celu zapewnienia dostosowania zasad.
 
-[Azure Policy](/azure/governance/policy/overview) to usługa platformy Azure służąca do tworzenia zasad, przypisywania ich i zarządzania nimi. Te zasady wymuszają różne reguły i efekty dotyczące zasobów, dzięki czemu zasoby te pozostają zgodne ze standardami firmy i umowami dotyczącymi poziomu usług. Usługa Azure Policy ocenia zasoby pod kątem niezgodności z przypisanymi zasadami. Na przykład można ograniczyć rozmiar jednostki SKU maszyn wirtualnych w danym środowisku. Po zaimplementowaniu odpowiednich zasad nowe i istniejące zasoby będą oceniane pod kątem zgodności. Użycie odpowiednich zasad umożliwia zapewnienie zgodności istniejących zasobów.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) to usługa platformy Azure służąca do tworzenia zasad, przypisywania ich i zarządzania nimi. Te zasady wymuszają różne reguły i efekty dotyczące zasobów, dzięki czemu zasoby te pozostają zgodne ze standardami firmy i umowami dotyczącymi poziomu usług. Usługa Azure Policy ocenia zasoby pod kątem niezgodności z przypisanymi zasadami. Na przykład można ograniczyć rozmiar jednostki SKU maszyn wirtualnych w danym środowisku. Po zaimplementowaniu odpowiednich zasad nowe i istniejące zasoby będą oceniane pod kątem zgodności. Użycie odpowiednich zasad umożliwia zapewnienie zgodności istniejących zasobów.
 
 ## <a name="cross-organization-policy"></a>Zasady dla wielu organizacji
 
@@ -61,7 +61,7 @@ Gdy infrastruktura w chmurze powiększy się na wiele subskrypcji wymagających 
 
 ## <a name="automated-enforcement"></a>Wymuszanie automatyczne
 
-Podczas gdy standardowe szablony wdrażania są skuteczne na mniejszą skalę, usługa [Azure Blueprints](/azure/governance/blueprints/overview) umożliwia standardową aprowizację i aranżację wdrożenia rozwiązań platformy Azure w dużej skali. Obciążenia w wielu subskrypcjach można wdrażać przy użyciu spójnych ustawień zasad dla wszystkich utworzonych zasobów.
+Podczas gdy standardowe szablony wdrażania są skuteczne na mniejszą skalę, usługa [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) umożliwia standardową aprowizację i aranżację wdrożenia rozwiązań platformy Azure w dużej skali. Obciążenia w wielu subskrypcjach można wdrażać przy użyciu spójnych ustawień zasad dla wszystkich utworzonych zasobów.
 
 W przypadku środowisk IT, w których zintegrowano zasoby w chmurze z zasobami lokalnymi, konieczne może być użycie systemów rejestrowania i raportowania w celu zapewnienia funkcji monitorowania hybrydowego. Niestandardowe systemy monitorowania operacyjnego lub systemy innych firm mogą oferować dodatkowe funkcje wymuszania zasad. W przypadku większych lub bardziej dojrzałych infrastruktur w chmurze warto zastanowić się, jak najlepiej zintegrować te systemy z zasobami w chmurze.
 
