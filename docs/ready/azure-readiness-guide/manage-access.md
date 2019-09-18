@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8f16380af623a6d9cd01e5064599f2688f5136df
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e79966dbcbb00cb59fc88133c3ac62255a395a27
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818663"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022103"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Zarządzanie dostępem do środowiska platformy Azure przy użyciu kontroli dostępu na podstawie ról
 
@@ -87,7 +87,7 @@ Aby udzielić użytkownikowi dostępu do subskrypcji:
 
 Aby dowiedzieć się więcej, zobacz:
 
-- [Czym jest kontrola dostępu oparta na rolach (RBAC)?](/azure/role-based-access-control/overview)
+- [Czym jest kontrola dostępu oparta na rolach (RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
 - [Struktura wdrażania chmury: Korzystanie z kontroli dostępu opartej na rolach](../azure-best-practices/roles.md)
 
 ::: zone-end

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dbfc365f874b9ad6045454c53270275a5008935d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818748"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022769"
 ---
 # <a name="organize-your-azure-resources"></a>Organizowanie zasobów platformy Azure
 
@@ -76,9 +76,9 @@ Utwórz grupę zasobów do przechowywania zasobów, takich jak aplikacje interne
 
 Aby dowiedzieć się więcej, zobacz:
 
-- [Informacje o zarządzaniu dostępem do zasobów na platformie Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](/azure/azure-resource-manager/management-groups-overview)
-- [Limity usług subskrypcji](/azure/azure-subscription-service-limits)
+- [Informacje o zarządzaniu dostępem do zasobów na platformie Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Limity usług subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -124,7 +124,7 @@ Odpowiedni standard nazewnictwa ułatwia identyfikowanie zasobów w portalu, na 
 
 ::: zone target="docs"
 
-Zalecamy zapoznanie się ze [wskazówkami dotyczącymi wzorców i rozwiązań](/azure/architecture/best-practices/naming-conventions), a następnie stosowanie ich.
+Zalecamy zapoznanie się ze [wskazówkami dotyczącymi wzorców i rozwiązań](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions), a następnie stosowanie ich.
 
 >[!TIP]
 >Należy unikać używania znaków specjalnych (`-` lub `_`) jako pierwszego lub ostatniego znaku w dowolnej nazwie. Te znaki sprawiają, że większość reguł walidacji kończy się niepowodzeniem.
@@ -151,7 +151,7 @@ Tagów można używać do wielu innych celów. Najczęstsze zastosowania to:
 
 Każdy zasób lub grupa zasobów może mieć co najwyżej 15 par nazwa/wartość tagu. Jednak to ograniczenie dotyczy tylko tagów stosowanych bezpośrednio do grupy zasobów lub zasobu.
 
-Aby uzyskać więcej informacji na temat tagowania, zobacz [konwencje nazewnictwa Centrum architektury platformy Azure dla zasobów platformy Azure](../../ready/considerations/name-and-tag.md#metadata-tags).
+Aby uzyskać więcej informacji na temat tagowania, zobacz [konwencje nazewnictwa Centrum architektury platformy Azure dla zasobów platformy Azure](../../ready/considerations/naming-and-tagging.md#metadata-tags).
 
 ::: zone target="docs"
 
@@ -166,7 +166,7 @@ Aby zastosować tag do grupy zasobów:
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-Aby dowiedzieć się więcej, zobacz [Organizowanie zasobów platformy Azure przy użyciu tagów](/azure/azure-resource-manager/resource-group-using-tags).
+Aby dowiedzieć się więcej, zobacz [Organizowanie zasobów platformy Azure przy użyciu tagów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 

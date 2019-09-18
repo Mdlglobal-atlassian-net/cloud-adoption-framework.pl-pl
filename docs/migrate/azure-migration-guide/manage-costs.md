@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 294a426aef047bb7acd418c19574a4fd7e0b2320
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905641"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024806"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanizmy kontroli kosztów skoncentrowane na migracji
 
@@ -70,8 +70,8 @@ Przedstawiony poniżej otrzymany wynik szacunkowy obejmuje miesięczne koszty ob
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Konfiguracja i przegląd oceny w usłudze Azure Migrate](/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../governance/journeys/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../governance/cost-management/index.md) oraz [przewodnik dla dużych przedsiębiorstw dotyczący ulepszeń usługi Cost Management](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
+- [Konfiguracja i przegląd oceny w usłudze Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
+- Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [przewodnik dla dużych przedsiębiorstw dotyczący ulepszeń usługi Cost Management](../../govern/guides/complex/cost-management-improvement.md).
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Szacowanie i optymalizowanie kosztów maszyn wirtualnych podczas migracji i po niej](#tab/EstimateOptimize)
 
@@ -91,7 +91,7 @@ W poniższych krokach przedstawiono zalecenia dotyczące kosztów dla zasobów (
 
 Usługa Azure Cost Management może zapewnić bardziej całościowe podsumowanie nawyków związanych z wydatkami, w tym szczegółowe podsumowanie kosztów i trendów związanych z wydatkami w czasie. W przypadku dużych lub złożonych migracji podsumowanie to może zawierać szczegółowe informacje potrzebne do podejmowania ogólnych decyzji w zakresie zarządzania dużymi kosztami.
 
-Wymagania wstępne: W pozostałej części karty założono, że czytelnik zakończył konfigurację usługi Azure Cost Management podczas zapoznawania się z przewodnikiem dotyczącym gotowości platformy Azure. Aby uzyskać więcej informacji na temat konfigurowania usługi Azure Cost Management, zobacz [artykuł w przewodniku dotyczącym gotowości platformy Azure](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/manage-costs). Po wypełnieniu danych wykonaj kolejne kroki, aby oszacować miesięczne koszty na podstawie zebranych danych.
+Wymagania wstępne: W pozostałej części karty założono, że czytelnik zakończył konfigurację usługi Azure Cost Management podczas zapoznawania się z przewodnikiem dotyczącym gotowości platformy Azure. Aby uzyskać więcej informacji na temat konfigurowania usługi Azure Cost Management, zobacz [artykuł w przewodniku dotyczącym gotowości platformy Azure](../../ready/azure-readiness-guide/manage-costs.md). Po wypełnieniu danych wykonaj kolejne kroki, aby oszacować miesięczne koszty na podstawie zebranych danych.
 
 W poniższych krokach opisano ładowanie danych analizy kosztów w usłudze Azure Cost Management dla subskrypcji:
 
@@ -104,9 +104,9 @@ Ta analiza umożliwi przegląd łącznego kosztu, budżetu (jeśli jest dostępn
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../governance/journeys/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../governance/cost-management/index.md) oraz [przewodnik dla dużych przedsiębiorstw dotyczący przyrostowych ulepszeń usługi Cost Management](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
-- Aby uzyskać więcej informacji na temat usługi Azure Advisor, zobacz temat [Reducing service costs using Azure Advisor](/azure/advisor/advisor-cost-recommendations) (Obniżanie kosztów usług przy użyciu Azure Advisor).
-- Aby uzyskać więcej informacji na temat usługi Azure Cost Management, zobacz tematy [Understand and work with scopes](/azure/cost-management/understand-work-scopes) (Zapoznanie się z zakresami i praca z nimi) oraz [Explore and analyze costs with Cost Analysis](/azure/cost-management/quick-acm-cost-analysis) (Poznawanie i analizowanie kosztów za pomocą funkcji analizy kosztów — Szybki start).
+- Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [przewodnik dla dużych przedsiębiorstw dotyczący przyrostowych ulepszeń usługi Cost Management](../../govern/guides/complex/cost-management-improvement.md).
+- Aby uzyskać więcej informacji na temat usługi Azure Advisor, zobacz temat [Reducing service costs using Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) (Obniżanie kosztów usług przy użyciu Azure Advisor).
+- Aby uzyskać więcej informacji na temat usługi Azure Cost Management, zobacz tematy [Understand and work with scopes](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) (Zapoznanie się z zakresami i praca z nimi) oraz [Explore and analyze costs with Cost Analysis](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis) (Poznawanie i analizowanie kosztów za pomocą funkcji analizy kosztów — Szybki start).
 
 # <a name="tips-and-tricks-to-optimize-coststabtipstricks"></a>[Porady i wskazówki dotyczące optymalizacji kosztów](#tab/TipsTricks)
 
@@ -130,7 +130,7 @@ Skontaktuj się z przedstawicielem swojego konta Microsoft, aby dowiedzieć się
 
 ## <a name="azure-reservations"></a>Rezerwacje platformy Azure
 
-[Rezerwacje platformy Azure](/azure/billing/billing-save-compute-costs-reservations) umożliwiają przedpłatę za pojemność obliczeniową maszyn wirtualnych lub usługi SQL Database za rok lub trzy lata. Przedpłaty umożliwiają uzyskanie rabatu na używane zasoby. Rezerwacje platformy Azure mogą znacząco obniżyć koszty obliczeniowe maszyny wirtualnej lub usługi SQL Database, do 72% w przypadku płatności zgodnie z rzeczywistym użyciem ze zobowiązaniem do zapłaty z góry za jeden rok lub trzy lata. Rezerwacje umożliwiają skorzystanie z rabatu na rozliczenia i nie mają wpływu na stan środowiska uruchomieniowego maszyn wirtualnych lub baz danych SQL.
+[Rezerwacje platformy Azure](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) umożliwiają przedpłatę za pojemność obliczeniową maszyn wirtualnych lub usługi SQL Database za rok lub trzy lata. Przedpłaty umożliwiają uzyskanie rabatu na używane zasoby. Rezerwacje platformy Azure mogą znacząco obniżyć koszty obliczeniowe maszyny wirtualnej lub usługi SQL Database, do 72% w przypadku płatności zgodnie z rzeczywistym użyciem ze zobowiązaniem do zapłaty z góry za jeden rok lub trzy lata. Rezerwacje umożliwiają skorzystanie z rabatu na rozliczenia i nie mają wpływu na stan środowiska uruchomieniowego maszyn wirtualnych lub baz danych SQL.
 
 ## <a name="use-azure-hybrid-benefit"></a>Korzystaj z zalet użycia hybrydowego platformy Azure
 
@@ -138,8 +138,8 @@ Jeśli masz już licencje na system Windows Server lub program SQL Server w rama
 
 ## <a name="low-priority-vms-with-batch"></a>Maszyny wirtualne o niskim priorytecie z usługą Batch
 
-W przypadku procesów w tle o niższym priorytecie usługa Batch oferuje możliwość zarządzania maszynami wirtualnymi usługi w tle oraz obniżenia kosztów. Jednak przed wybraniem tej opcji z rabatem ważne jest, by poznać wpływ na wydajność [maszyn wirtualnych o niskim priorytecie z usługą Batch](/azure/batch/batch-low-pri-vms).
+W przypadku procesów w tle o niższym priorytecie usługa Batch oferuje możliwość zarządzania maszynami wirtualnymi usługi w tle oraz obniżenia kosztów. Jednak przed wybraniem tej opcji z rabatem ważne jest, by poznać wpływ na wydajność [maszyn wirtualnych o niskim priorytecie z usługą Batch](https://docs.microsoft.com/azure/batch/batch-low-pri-vms).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../governance/journeys/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../governance/cost-management/index.md) oraz [przewodnik w zakresie ładu dla dużych przedsiębiorstw dotyczący przyrostowych ulepszeń usługi Cost Management](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
+Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [przewodnik w zakresie ładu dla dużych przedsiębiorstw dotyczący przyrostowych ulepszeń usługi Cost Management](../../govern/guides/complex/cost-management-improvement.md).

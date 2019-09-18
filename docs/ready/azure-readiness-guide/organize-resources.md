@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2951c3049a22036199e2bc73a6d3f9283582e7e1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 8be46c21a009b7dca11cfc628476ae46315b23e5
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818510"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025227"
 ---
 # <a name="organize-your-azure-resources"></a>Organizowanie zasobów platformy Azure
 
@@ -80,9 +80,9 @@ Aby dowiedzieć się więcej, zobacz:
 
 - [Podstawy platformy Azure](../considerations/fundamental-concepts.md)
 - [Skalowanie za pomocą wielu subskrypcji platformy Azure](../considerations/scaling-subscriptions.md)
-- [Informacje o zarządzaniu dostępem do zasobów na platformie Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](/azure/azure-resource-manager/management-groups-overview)
-- [Limity usług subskrypcji](/azure/azure-subscription-service-limits)
+- [Informacje o zarządzaniu dostępem do zasobów na platformie Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Limity usług subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Odpowiedni standard nazewnictwa ułatwia identyfikowanie zasobów w witrynie Azu
 
 - Strona operacyjna powinna zapewniać, że nazwy zawierają informacje, których potrzebują zespoły IT. Użyj szczegółów, które identyfikują obciążenie, aplikację, środowisko, informacje krytyczne i inne informacje przydatne do zarządzania zasobami.
 
-Różne typy zasobów mogą mieć różne limity długości i dozwolone znaki, z których wiele zostało wymienionych w artykule na temat najlepszych rozwiązaniach platformy Azure dotyczących [konwencji nazewnictwa](/azure/architecture/best-practices/naming-conventions). Aby uzyskać więcej informacji i zaleceń dotyczących w szczególności obsługi zadań związanych z wdrażaniem chmury w przedsiębiorstwie, zobacz [wskazówki dotyczące nazewnictwa i tagowania](../considerations/name-and-tag.md) w przewodniku Cloud Adoption Framework.
+Różne typy zasobów mogą mieć różne limity długości i dozwolone znaki, z których wiele zostało wymienionych w artykule na temat najlepszych rozwiązaniach platformy Azure dotyczących [konwencji nazewnictwa](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Aby uzyskać więcej informacji i zaleceń dotyczących w szczególności obsługi zadań związanych z wdrażaniem chmury w przedsiębiorstwie, zobacz [wskazówki dotyczące nazewnictwa i tagowania](../considerations/naming-and-tagging.md) w przewodniku Cloud Adoption Framework.
 
 Poniższa tabela zawiera wzorce nazewnictwa dla kilku przykładowych typów zasobów platformy Azure.
 
@@ -161,7 +161,7 @@ Tagów można używać do wielu innych celów. Najczęstsze zastosowania to:
 
 Każdy zasób lub grupa zasobów może mieć co najwyżej 15 par nazwy i wartości tagu. To ograniczenie dotyczy tylko tagów stosowanych bezpośrednio do grupy zasobów lub zasobu.
 
-Aby uzyskać więcej zaleceń i przykładów dotyczących tagowania, zobacz [wskazówki dotyczące tagowania](../considerations/name-and-tag.md) w przewodniku Cloud Adoption Framework.
+Aby uzyskać więcej zaleceń i przykładów dotyczących tagowania, zobacz [wskazówki dotyczące tagowania](../considerations/naming-and-tagging.md) w przewodniku Cloud Adoption Framework.
 
 ::: zone target="docs"
 
@@ -176,7 +176,7 @@ Aby zastosować tag do grupy zasobów:
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-Aby dowiedzieć się więcej, zobacz [Organizowanie zasobów platformy Azure przy użyciu tagów](/azure/azure-resource-manager/resource-group-using-tags).
+Aby dowiedzieć się więcej, zobacz [Organizowanie zasobów platformy Azure przy użyciu tagów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 

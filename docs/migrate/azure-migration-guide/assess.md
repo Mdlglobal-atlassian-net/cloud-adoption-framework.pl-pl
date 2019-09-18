@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c95134909838f11377b16e90c5deb68850388938
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818833"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022835"
 ---
 # <a name="assess-the-digital-estate"></a>Szacowanie majątku cyfrowego
 
@@ -58,8 +58,8 @@ Aby rozpocząć ocenę migracji serwera przy użyciu usługi Azure Migrate, wyko
 
 ### <a name="read-more"></a>Dowiedz się więcej
 
-- [Azure Migrate — przegląd](/azure/migrate/migrate-services-overview)
-- [Migrowanie serwerów fizycznych lub zwirtualizowanych na platformę Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Azure Migrate — przegląd](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
+- [Migrowanie serwerów fizycznych lub zwirtualizowanych na platformę Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 - [Usługa Azure Migrate w witrynie Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview)
 
 ::: zone-end
@@ -68,22 +68,22 @@ Aby rozpocząć ocenę migracji serwera przy użyciu usługi Azure Migrate, wyko
 
 Mapa usługi automatycznie odnajduje składniki aplikacji w systemach Windows i Linux oraz mapuje komunikację między usługami. Dzięki usłudze Service Map można wyświetlać serwery w sposób, w jakich się o nich myśli: jako wzajemnie połączone systemy dostarczające usługi. Usługa Service Map pokazuje połączenia między serwerami i procesami, opóźnienie połączeń przychodzących i wychodzących oraz porty dla każdej architektury połączonej za pomocą protokołu TCP. Nie jest wymagana żadna konfiguracja, wystarczy zainstalować agenta.
 
-Usługi Azure Migrate korzystają z usługi Service Map, aby zwiększyć możliwości raportowania i zależności w środowisku. Wszystkie szczegóły tej integracji zostały opisane w [wizualizacji zależności](/azure/migrate/concepts-dependency-visualization). W przypadku korzystania z usługi Azure Migration Service nie ma dodatkowych kroków wymaganych do skonfigurowania i korzystania z usługi Service Map. Poniższe instrukcje udostępniono w celach informacyjnych użytkownikom, którzy chcą używać usługi Service Map do innych celów lub projektów.
+Usługi Azure Migrate korzystają z usługi Service Map, aby zwiększyć możliwości raportowania i zależności w środowisku. Wszystkie szczegóły tej integracji zostały opisane w [wizualizacji zależności](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization). W przypadku korzystania z usługi Azure Migration Service nie ma dodatkowych kroków wymaganych do skonfigurowania i korzystania z usługi Service Map. Poniższe instrukcje udostępniono w celach informacyjnych użytkownikom, którzy chcą używać usługi Service Map do innych celów lub projektów.
 
 ### <a name="enable-dependency-visualization-using-service-map"></a>Włączanie wizualizacji zależności przy użyciu usługi Service Map
 
 Aby można było używać wizualizacji zależności, należy pobrać i zainstalować agenty na każdej maszynie lokalnej, która ma zostać przeanalizowana.
 
-- [Program Microsoft Monitoring Agent (MMA) ](/azure/log-analytics/log-analytics-agent-windows) musi być zainstalowany na każdej maszynie.
-- [Agent zależności](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) musi być zainstalowany na każdej maszynie.
+- [Program Microsoft Monitoring Agent (MMA) ](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) musi być zainstalowany na każdej maszynie.
+- [Agent zależności](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) musi być zainstalowany na każdej maszynie.
 - Ponadto w przypadku maszyn, które nie są połączone z Internetem, należy pobrać i zainstalować na nich bramę usługi Log Analytics.
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="read-more"></a>Dowiedz się więcej
 
-- [Korzystanie z rozwiązania Service Map na platformie Azure](/azure/azure-monitor/insights/service-map)
-- [Azure Migrate i Service Map: wizualizacja zależności](/azure/migrate/concepts-dependency-visualization)
+- [Korzystanie z rozwiązania Service Map na platformie Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
+- [Azure Migrate i Service Map: wizualizacja zależności](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[Scenariusze i osoby biorące udział w projekcie](#tab/Scenarios)

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c44bcd45783ee6ea61bbbe33b6b76ce7034eca2c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e6c5f0aa120339ecd2c3a968503b5ee0be824307
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818901"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024745"
 ---
 # <a name="optimize-and-transform"></a>Optymalizowanie i przekształcanie
 
@@ -60,13 +60,13 @@ Należy pamiętać, że zmiana rozmiarów produkcyjnych maszyn wirtualnych może
 
 ::: zone target="docs"
 
-- [Zarządzanie rezerwacjami zasobów platformy Azure](/azure/billing/billing-manage-reserved-vm-instance)
-- [Zmienianie rozmiaru maszyny wirtualnej z systemem Windows](/azure/virtual-machines/windows/resize-vm)
-- [Zmienianie rozmiaru maszyny wirtualnej z systemem Linux przy użyciu interfejsu wiersza polecenia platformy Azure](/azure/virtual-machines/linux/change-vm-size)
+- [Zarządzanie rezerwacjami zasobów platformy Azure](https://docs.microsoft.com/azure/billing/billing-manage-reserved-vm-instance)
+- [Zmienianie rozmiaru maszyny wirtualnej z systemem Windows](https://docs.microsoft.com/azure/virtual-machines/windows/resize-vm)
+- [Zmienianie rozmiaru maszyny wirtualnej z systemem Linux przy użyciu interfejsu wiersza polecenia platformy Azure](https://docs.microsoft.com/azure/virtual-machines/linux/change-vm-size)
 
 W celu sprawdzenia użycia partnerzy mogą skorzystać z Centrum partnerskiego.
 
-- [Ustalanie rozmiarów maszyn wirtualnych Microsoft Azure na potrzeby maksymalnego użycia rezerwacji](/partner-center/azure-usage)
+- [Ustalanie rozmiarów maszyn wirtualnych Microsoft Azure na potrzeby maksymalnego użycia rezerwacji](https://docs.microsoft.com/partner-center/azure-usage)
 
 ::: zone-end
 
@@ -126,8 +126,8 @@ Możesz również użyć narzędzia **Advisor** i wybrać kartę **Koszty**, aby
 
 ::: zone target="docs"
 
-- [Samouczek: Optymalizowanie kosztów na podstawie zaleceń](/azure/cost-management/tutorial-acm-opt-recommendations)
-- [Zapobieganie nieoczekiwanym opłatom za pomocą funkcji rozliczeń i zarządzania kosztami platformy Azure](/azure/billing/billing-getting-started)
-- [Eksplorowanie kosztów za pomocą funkcji analizy kosztów](/azure/cost-management/quick-acm-cost-analysis)
+- [Samouczek: Optymalizowanie kosztów na podstawie zaleceń](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [Zapobieganie nieoczekiwanym opłatom za pomocą funkcji rozliczeń i zarządzania kosztami platformy Azure](https://docs.microsoft.com/azure/billing/billing-getting-started)
+- [Eksplorowanie kosztów za pomocą funkcji analizy kosztów](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end

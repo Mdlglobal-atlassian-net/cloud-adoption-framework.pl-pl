@@ -10,16 +10,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 94ab5fd4907d7c95ca0d1b0ca932aa25eea5be41
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818646"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025257"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Ład, zabezpieczenia i zgodność na platformie Azure
 
-Podczas ustanawiania zasad firmowych i planowania strategii utrzymywania ładu możesz skorzystać z narzędzi i usług, takich jak Azure Policy, Azure Blueprints i Azure Security Center, aby wymusić i zautomatyzować decyzje dotyczące ładu w organizacji. Przed rozpoczęciem planowania ładu, użyj [narzędzia do porównywania stanu nadzoru nad ładem](http://aka.ms/caf/gov/assess), aby zidentyfikować potencjalne luki w podejściu do ładu w organizacji. Aby uzyskać więcej informacji na temat sposobu opracowywania procesów ładu, zapoznaj się ze [wskazówkami dotyczącymi ładu na platformie Azure w przewodniku Cloud Adoption Framework](../../governance/index.md).
+Podczas ustanawiania zasad firmowych i planowania strategii utrzymywania ładu możesz skorzystać z narzędzi i usług, takich jak Azure Policy, Azure Blueprints i Azure Security Center, aby wymusić i zautomatyzować decyzje dotyczące ładu w organizacji. Przed rozpoczęciem planowania ładu, użyj [narzędzia do porównywania stanu nadzoru nad ładem](http://aka.ms/caf/gov/assess), aby zidentyfikować potencjalne luki w podejściu do ładu w organizacji. Aby uzyskać więcej informacji na temat sposobu opracowywania procesów ładu, zapoznaj się ze [wskazówkami dotyczącymi ładu na platformie Azure w przewodniku Cloud Adoption Framework](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
@@ -90,9 +90,9 @@ Aby opublikować artefakty strategii w subskrypcji:
 
 Aby dowiedzieć się więcej, zobacz:
 
-- [Azure Blueprints](/azure/governance/blueprints)
+- [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints)
 - [Cloud Adoption Framework: Przewodnik podejmowania decyzji dotyczących spójności zasobów](../../decision-guides/resource-consistency/index.md)
-- [Przykłady strategii opartych na standardach](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Przykłady strategii opartych na standardach](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Aby zastosować zasady do grupy zasobów:
 
 Aby dowiedzieć się więcej, zobacz:
 
-- [Azure Policy](/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
 - [Cloud Adoption Framework: Przewodnik podejmowania decyzji dotyczących wymuszania zasad](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -157,10 +157,10 @@ Aby zapoznać się z usługą Azure Security Center, przejdź do witryny [Azure 
 
 Aby dowiedzieć się więcej, zobacz:
 
-- [Azure Security Center](/azure/security-center)
-- [Dostęp just in time do maszyny wirtualnej](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Azure Security Center](https://docs.microsoft.com/azure/security-center)
+- [Dostęp just in time do maszyny wirtualnej](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [Porównanie warstw Standardowa i Bezpłatna](https://azure.microsoft.com/pricing/details/security-center)
-- [Cloud Adoption Framework: Dyscyplina ładu w zakresie punktu odniesienia zabezpieczeń](../../governance/security-baseline/index.md)
+- [Cloud Adoption Framework: Dyscyplina ładu w zakresie punktu odniesienia zabezpieczeń](../../govern/security-baseline/index.md)
 
 ::: zone-end
 
