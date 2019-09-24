@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a2ce2529073c40abf73432d562d241890a8d805
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026459"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223628"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Przewodnik po decyzjach dotyczących rejestrowania i raportowania
 
@@ -69,7 +69,7 @@ Założenia dotyczące wyłącznie rozwiązań lokalnych:
 
 ### <a name="gateway-aggregation"></a>Agregacja za pomocą bramy
 
-W przypadku scenariuszy, w których ilość danych telemetrycznych z chmury jest duża lub istniejące lokalne systemy monitorowania muszą rejestrować zmodyfikowane dane zanim mogą one być przetwarzane, może być wymagana usługa [agregacji za pomocą bramy](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation.md).
+W przypadku scenariuszy, w których ilość danych telemetrycznych z chmury jest duża lub istniejące lokalne systemy monitorowania muszą rejestrować zmodyfikowane dane zanim mogą one być przetwarzane, może być wymagana usługa [agregacji za pomocą bramy](/azure/architecture/patterns/gateway-aggregation).
 
 Usługa bramy jest wdrażana u dostawcy usług w chmurze. Następnie odpowiednie aplikacje i usługi są konfigurowane w celu przesyłania danych telemetrycznych do bramy zamiast do domyślnego systemu rejestrowania. Brama może następnie przetwarzać dane: agregując, łącząc lub formatując je w inny sposób przed przesłaniem ich do usługi monitorowania w celu ich pozyskania i analizy.
 

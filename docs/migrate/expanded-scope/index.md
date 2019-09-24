@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lista kontrolna dotycząca zakresu rozszerzonego migracji do chmury
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 125c6d044fd766896971aced5bedbc515c14417f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4daf4b01a2fde83de1040f224b8096475a24fe60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817336"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224360"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Zakres rozszerzony dla migracji do chmury
 
@@ -27,7 +27,7 @@ Poniższa lista kontrolna zawiera typowe obszary złożoności, które mogą wym
 
 - **Zmiany zakresu związane z działalnością biznesową:**
   - [Równoważenie portfela](./balance-the-portfolio.md)
-  - [Obsługa rynków globalnych](./multiple-regions.md)
+  - [Obsługa rynków globalnych](../../decision-guides/regions/index.md)
   - Świadomość kosztów podczas migracji *(dostępne w 3 kwartale 2019 r.)*
 - **Zmiany zakresu związane z kulturą:**
   - Zarządzanie zmianami i procesy zatwierdzania *(dostępne w 3 kwartale 2019 r.)*
