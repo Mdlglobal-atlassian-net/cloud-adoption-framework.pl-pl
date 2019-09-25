@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Co to jest klasyfikacja danych?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d293aa5b4427b8f714175b85c6bb5197b53f107a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86c57efed1be2760aca607197eb8d28f0151097a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027204"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223573"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -40,7 +40,7 @@ Poniżej znajduje się lista klasyfikacji używanych przez firmę Microsoft. W z
 
 ## <a name="tagging-data-classification-in-azure"></a>Klasyfikowanie klasyfikacji danych na platformie Azure
 
-Każdy dostawca chmury powinien oferować mechanizm rejestrowania metadanych dotyczących dowolnego elementu zawartości. W przypadku platformy Azure, znaczniki zasobów to sugerowane podejście do magazynu metadanych. te Tagi mogą służyć do stosowania informacji o klasyfikacji danych do wdrożonych zasobów. Mimo że oznakowanie zasobów w chmurze według klasyfikacji nie zastępuje formalnego procesu klasyfikacji danych, zapewnia cenne narzędzie do zarządzania zasobami i stosowania zasad.
+Tagi zasobów to sugerowane podejście do magazynu metadanych. te Tagi mogą służyć do stosowania informacji o klasyfikacji danych do wdrożonych zasobów. Mimo że oznakowanie zasobów w chmurze według klasyfikacji nie zastępuje formalnego procesu klasyfikacji danych, zapewnia cenne narzędzie do zarządzania zasobami i stosowania zasad. [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) to doskonałe rozwiązanie ułatwiające klasyfikowanie _danych_ bez względu na to, gdzie się znajduje (na Premium na platformie Azure, w innym miejscu) i powinno być traktowane jako część ogólnej strategii klasyfikacji.
 
 Aby uzyskać dodatkowe informacje na temat tagowania zasobów na platformie Azure, zobacz artykuł dotyczący [używania tagów do organizowania zasobów platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 

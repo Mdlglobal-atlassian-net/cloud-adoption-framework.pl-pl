@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motywacje linii bazowej tożsamości i ryzyko biznesowe
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c838063c77b02af4ec86187854a15d93b2998ef
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028437"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222179"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Motywacje linii bazowej tożsamości i ryzyko biznesowe
 
@@ -22,11 +22,11 @@ W tym artykule omówiono przyczyny, w których klienci zazwyczaj przyjmują dysc
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-identity-baseline-relevant"></a>Czy linia bazowa tożsamości jest odpowiednia?
+## <a name="identity-baseline-relevancy"></a>Dokładność linii bazowej tożsamości
 
 Tradycyjne katalogi lokalne zostały zaprojektowane tak, aby umożliwić firmom ścisłą kontrolę uprawnień i zasad dla użytkowników, grup i ról w swoich sieciach wewnętrznych i centrach danych. Jest to zwykle przeznaczone do obsługi implementacji pojedynczej dzierżawy z usługami mającymi zastosowanie tylko w środowisku lokalnym.
 
-Usługi tożsamości w chmurze mają na celu rozszerzanie możliwości uwierzytelniania i kontroli dostępu w organizacji do Internetu. Obsługują one Wielodostępność i mogą służyć do zarządzania użytkownikami i zasadami dostępu w aplikacjach i wdrożeniach w chmurze. Platformy chmury publicznej mają pewną postać natywnych usług Identity Services obsługujących zadania związane z zarządzaniem i wdrażaniem, które mogą mieć [różne poziomy integracji](../../decision-guides/identity/index.md) z istniejącymi lokalnymi rozwiązaniami do obsługi tożsamości. Wszystkie te funkcje mogą spowodować, że zasady tożsamości w chmurze są bardziej skomplikowane niż wymagania dotyczące tradycyjnych rozwiązań lokalnych.
+Usługi tożsamości w chmurze rozszerzają możliwości uwierzytelniania i kontroli dostępu w organizacji do Internetu. Obsługują one Wielodostępność i mogą służyć do zarządzania użytkownikami i zasadami dostępu w aplikacjach i wdrożeniach w chmurze. Platformy chmury publicznej mają natywne usługi tożsamości obsługujące zadania związane z zarządzaniem i wdrażaniem oraz mogą mieć [różne poziomy integracji](../../decision-guides/identity/index.md) z istniejącymi lokalnymi rozwiązaniami do obsługi tożsamości. Wszystkie te funkcje mogą spowodować, że zasady tożsamości w chmurze są bardziej skomplikowane niż wymagania dotyczące tradycyjnych rozwiązań lokalnych.
 
 Znaczenie planu bazowego tożsamości dla wdrożenia w chmurze będzie zależeć od wielkości zespołu i konieczności zintegrowania rozwiązania do obsługi tożsamości opartej na chmurze z istniejącą lokalną usługą tożsamości. Początkowe wdrożenia testów mogą nie wymagać wielu działań w zakresie organizacji użytkownika ani zarządzania nimi, ale w miarę dojrzałości w chmurze, prawdopodobnie trzeba będzie obsługiwać bardziej skomplikowaną integrację organizacji i scentralizowane zarządzanie.
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Podstawy zabezpieczeń i zagrożenia biznesowe
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a77df6b190db7f9fd5f44e233e175670ff7f4855
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028257"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222284"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Podstawy zabezpieczeń i zagrożenia biznesowe
 
@@ -22,7 +22,7 @@ W tym artykule omówiono przyczyny, w których klienci zazwyczaj przyjmują dysc
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-a-security-baseline-relevant"></a>Czy jest to linia bazowa zabezpieczeń?
+## <a name="security-baseline-relevancy"></a>Dokładność linii bazowej zabezpieczeń
 
 Bezpieczeństwo jest kluczowym problemem dla każdej organizacji IT. Wdrożenia w chmurze mają wiele takich samych zagrożeń bezpieczeństwa jak obciążenia hostowane w tradycyjnych lokalnych centrach danych. Jednak charakter platformy chmury publicznej, z braku bezpośredniej własności fizycznego sprzętu do przechowywania i uruchamiania obciążeń, oznacza, że zabezpieczenia chmury wymagają własnych zasad i procesów.
 

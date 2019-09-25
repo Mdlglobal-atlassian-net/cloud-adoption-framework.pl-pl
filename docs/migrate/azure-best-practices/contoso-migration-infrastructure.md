@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c367bb500cf9271603cab07ac07649607bfc04a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024343"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224156"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Wdrażanie infrastruktury migracji
 
@@ -23,7 +23,7 @@ W tym artykule przedstawiono sposób, w jaki fikcyjna firma Contoso przygotowuje
 - Udostępniona przykładowa architektura jest specyficzna dla firmy Contoso. Podczas podejmowania ważnych decyzji dotyczących infrastruktury, w tym projektu subskrypcji lub architektury sieci, uwzględnij potrzeby biznesowe, strukturę i wymagania techniczne swojej organizacji.
 - To, czy potrzebujesz wszystkich elementów opisanych w tym artykule, zależy od Twojej strategii migracji. Na przykład jeśli tworzysz tylko aplikacje natywne w chmurze na platformie Azure, możesz potrzebować mniej złożonej struktury sieci.
 
-## <a name="overview"></a>Omówienie
+## <a name="overview"></a>Przegląd
 
 Aby firma Contoso mogła przeprowadzić migrację na platformę Azure, kluczowe jest przygotowanie infrastruktury platformy Azure. Ogólnie rzecz biorąc, należy wziąć pod uwagę sześć szerokich obszarów firmy Contoso:
 
@@ -72,7 +72,7 @@ Firma Contoso zdecydowała się na [umowę Enterprise Agreement (EA)](https://az
 - Jeśli z jakiegoś powodu firma Contoso przekroczy swoje zobowiązanie i wyda więcej, firma Microsoft wystawi fakturę za nadwyżkę.
 - W przypadku wszelkich kosztów przekraczających zobowiązanie będą obowiązywały te same stawki, które określono w umowie z firmą Contoso. Nie ma kar za przekroczenie zobowiązania.
 
-### <a name="manage-subscriptions"></a>Zarządzaj subskrypcjami
+### <a name="manage-subscriptions"></a>Zarządzanie subskrypcjami
 
 Po zapłaceniu za platformę Azure firma Contoso musi ustalić, jak zarządzać subskrypcjami platformy Azure. Firma Contoso ma umowę EA i w rezultacie nie ma limitu liczby subskrypcji platformy Azure, które może skonfigurować.
 
@@ -204,7 +204,7 @@ Aby ułatwić integrację, firma Contoso używa [narzędzia Azure AD Connect](ht
 
 1. W witrynie Azure Portal administratorzy firmy Contoso przechodzą do pozycji **Azure Active Directory** > **Azure AD Connect** i pobierają najnowszą wersję narzędzia na serwer, którego używają do synchronizacji.
 
-    ![Pobierz program Azure AD Connect](./media/contoso-migration-infrastructure/download-ad-connect.png)
+    ![Pobieranie programu Azure AD Connect](./media/contoso-migration-infrastructure/download-ad-connect.png)
 
 2. Uruchamiają instalację pliku **AzureADConnect.msi**, klikając przycisk **Użyj ustawień ekspresowych**. Jest to najbardziej typowa instalacja, która może być używana dla topologii z jednym lasem, z synchronizacją skrótów haseł na potrzeby uwierzytelniania.
 
@@ -496,7 +496,7 @@ Poniższa tabela zawiera podsumowanie sieci wirtualnych w regionie Środkowe sta
 
 #### <a name="subnets-in-the-central-us-production-network-vnet-prod-cus"></a>Podsieci w sieci produkcyjnej w regionie Środkowe stany USA (VNET-PROD-CUS)
 
-Równolegle z siecią produkcyjną w regionie podstawowym Wschodnie stany USA 2 istnieje sieć produkcyjna w regionie pomocniczym Środkowe stany USA.
+Równolegle z siecią produkcyjną w podstawowym regionie Wschodnie stany USA 2 istnieje sieć produkcyjna w regionie pomocnicze stany USA.
 
 **Podsieć** | **CIDR** | **Adresy** | **W podsieci**
 --- | --- | --- | ---
@@ -685,7 +685,7 @@ Zasady zaczynają obowiązywać natychmiast, a firma Contoso może sprawdzić za
 1. W witrynie Azure Portal wybierz link **Zgodność**.
 2. Zostanie wyświetlony pulpit nawigacyjny zgodności. Możesz przejść do szczegółów, aby uzyskać więcej informacji.
 
-    ![Zgodność z zasadami](./media/contoso-migration-infrastructure/policy-compliance.png)
+    ![Zgodność zasad](./media/contoso-migration-infrastructure/policy-compliance.png)
 
 ### <a name="set-up-locks"></a>Konfigurowanie blokad
 
@@ -716,7 +716,7 @@ ServiceManager | Alias adresu e-mail menedżera usługi ITIL dla zasobu.
 COBPriority | Priorytet ustawiony przez firmę dla ciągłości działania i odzyskiwania po awarii. Wartości 1–5.
 ENV | Możliwe wartości to DEV, STG, PROD. Reprezentują one, odpowiednio, środowisko deweloperskie, przejściowe i produkcyjne.
 
-Przykład:
+Na przykład:
 
  ![Tagi platformy Azure](./media/contoso-migration-infrastructure/azure-tag.png)
 
@@ -792,7 +792,7 @@ Usługa Azure Disk Encryption integruje się z usługą Azure Key Vault, aby pom
 - Firma Contoso ustaliła, że określone maszyny wirtualne wymagają szyfrowania.
 - Firma Contoso zastosuje szyfrowanie do maszyn wirtualnych z danymi klienta, poufnymi lub podlegającymi ochronie danych osobowych.
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 W tym artykule firma Contoso konfiguruje infrastrukturę i zasady platformy Azure dla subskrypcji platformy Azure oraz funkcji identyfikacji hybrydowej, odzyskiwania po awarii, sieci, ładu i zabezpieczeń.
 
