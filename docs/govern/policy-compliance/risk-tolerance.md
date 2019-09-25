@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wyjaśnienie ryzyka biznesowego związanego z przekształcaniem w chmurze
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cd8bee6cf7cf0ff06cb2846b440263cc83757f5f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027195"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223546"
 ---
 # <a name="evaluate-risk-tolerance"></a>Ocena tolerancja ryzyka
 
@@ -47,7 +47,7 @@ Identyfikowanie ryzyka to dość bezpośredni proces. Zagrożenia związane z IT
 Aby pomóc w zrozumieniu tolerancji ryzyka, przejdźmy do danych klienta. Jeśli firma w żadnej branży ogłasza dane klientów na niezabezpieczonym serwerze, ryzyko techniczne tego lub kradzieży tych danych jest w pełni takie samo. Jednak tolerancja firmy dla tego ryzyka będzie się różnić w zależności od rodzaju i potencjalnej wartości danych.
 
 - Firmy w dziedzinie opieki zdrowotnej i finansów w Stany Zjednoczone podlegają sztywnym wymaganiom dotyczącym zgodności innych firm. Przyjęto założenie, że dane osobowe lub dane związane z opieką zdrowotną są niezwykle poufne. Istnieją poważne konsekwencje dla tych typów firm, jeśli są one uwzględnione w scenariuszu ryzyka powyżej. Ich tolerancja będzie niezwykle niska. Wszystkie dane klienta opublikowane wewnątrz lub poza siecią będą musiały podlegać zasadom zgodności innych firm.
-- Firma do gier, której dane klienta są ograniczone do nazwy użytkownika, czasy odtwarzania i wysokie wyniki, nie mogą mieć znaczących skutków, jeśli zaangażują się w powyższe zachowanie. Mimo że niezabezpieczone dane są zagrożone, wpływ tego ryzyka jest niewielki. W związku z tym tolerancja dla ryzyka w tym przypadku jest wysoka.
+- Firma do gier, której dane klienta są ograniczone do nazwy użytkownika, czasy odtwarzania i wysokie wyniki, nie mogą mieć znaczących skutków poza utratą w reputacji, jeśli prowadzą do powyższego zachowania. Mimo że niezabezpieczone dane są zagrożone, wpływ tego ryzyka jest niewielki. W związku z tym tolerancja dla ryzyka w tym przypadku jest wysoka.
 - Średniej wielkości przedsiębiorstwa, która zapewnia usługom czyszczenia dywanów tysiącom klientów, będzie między tymi dwoma skrajnymi tolerancjami. Dane klientów mogą być bardziej niezawodne, zawierające szczegółowe informacje, takie jak adres lub numer telefonu. Oba te elementy mogą być traktowane jako dane osobowe i powinny być chronione. Niemniej jednak mogą nie istnieć żadne szczególne wymagania ładu, które mają na celu zabezpieczenie danych. Z perspektywy INFORMATYCZNej odpowiedź jest prosta i zabezpiecza dane. Z perspektywy biznesowej może nie być to proste. Aby określić poziom tolerancji dla tego ryzyka, firma będzie musiała uzyskać więcej szczegółów.
 
 W następnej sekcji udostępniono kilka przykładowych pytań, które mogą pomóc firmie określić poziom odporności na ryzyko dla przypadków użycia powyżej lub innych.
@@ -56,12 +56,13 @@ W następnej sekcji udostępniono kilka przykładowych pytań, które mogą pom�
 
 W tej sekcji wymieniono pytania wywołujące konwersacje w trzech kategoriach: wpływ na utratę, prawdopodobieństwo utraty i koszty korygowania. Gdy firma i partner IT odnoszą się do każdego z tych obszarów, można łatwo określić decyzję o wydatkach na zarządzanie ryzykiem oraz ogólną tolerancję dla określonego ryzyka.
 
-**Wpływ na utratę:** Pytania dotyczące określania wpływu ryzyka. Te pytania mogą być trudne (czasami niemożliwe) do odpowiedzi. Oszacowanie wpływu jest najlepsze, ale czasami sama konwersacja jest wystarczająca, aby zrozumieć tolerancję. Zakresy są również akceptowalne, szczególnie jeśli obejmują założenia, które określają te zakresy.
+**Wpływ na utratę:** Pytania dotyczące określania wpływu ryzyka. Odpowiedzi na te pytania mogą być trudne. Oszacowanie wpływu jest najlepsze, ale czasami sama konwersacja jest wystarczająca, aby zrozumieć tolerancję. Zakresy są również akceptowalne, szczególnie jeśli obejmują założenia, które określają te zakresy.
 
-- Czy to ryzyko narusza wymagania dotyczące zgodności innych firm?
-- Czy to ryzyko narusza wewnętrzne zasady firmowe?
+- Czy to ryzyko może naruszać wymagania dotyczące zgodności innych firm?
+- Czy to ryzyko może naruszać wewnętrzne zasady firmowe?
+- Czy to ryzyko może spowodować utratę życia, koniec lub właściwość?
 - Czy ten czynnik ryzyka może być opłacalny dla klientów i udziału w rynku? Jeśli tak, czy można to posłużyć do policzalnego kosztu?
-- Czy to zagrożenie może stworzyć negatywne środowiska klienta? Czy te środowiska mogą mieć wpływ na realizację sprzedaży czy przychodu?
+- Czy to zagrożenie może stworzyć negatywne środowiska klienta? Czy te środowiska mogą mieć wpływ na sprzedaż lub dochody?
 - Czy w tym ryzyku można utworzyć nową odpowiedzialność prawną? Jeśli tak, czy istnieje pierwszeństwo dla nieprawidłowych nagród w tych typach przypadków?
 - Czy może to spowodować zatrzymanie operacji firmowych? Jeśli tak, jak długo będą działać operacje?
 - Czy może to spowodować spowolnienie operacji biznesowej? Jeśli tak, jak wolno i jak długo?
@@ -74,7 +75,7 @@ Te pytania podstawowe będą prowadzić do wielu innych. Po zbadaniu dialogu w d
 
 **Koszty korygowania ryzyka:** Pytania dotyczące określania kosztów usuwania lub w inny sposób minimalizowania ryzyka. Te pytania mogą być dość bezpośrednie, szczególnie w przypadku reprezentowania ich w zakresie.
 
-- Czy istnieje jasne rozwiązanie? Co to jest koszt?
+- Czy istnieje jasne rozwiązanie i jaki jest koszt IT?
 - Czy istnieją opcje zapobiegania i minimalizowania tego ryzyka? Jaki jest zakres kosztów dla tych rozwiązań?
 - Co jest potrzebne od firmy, aby wybrać najlepsze, jasne rozwiązanie?
 - Co jest potrzebne od firmy w celu sprawdzenia kosztów?

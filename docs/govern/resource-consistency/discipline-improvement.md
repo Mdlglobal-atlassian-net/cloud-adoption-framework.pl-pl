@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Udoskonalenie dyscypliny spójności zasobów
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 12a1dbd734d4159f814c093c104709b950dddad8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028015"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223008"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Udoskonalenie dyscypliny spójności zasobów
 
@@ -101,7 +101,7 @@ Migracja to proces przyrostowy, który koncentruje się na przeniesieniu, testow
 - Ustal, czy Twoja organizacja wymaga jasnego wyrównania finansowego do & LS dla jednostek roboczych.
 - W przypadku organizacji globalnych należy zaimplementować wymagania dotyczące zgodności z umową SLA lub suwerenności.
 - W przypadku agregacji w chmurze Wdróż rozwiązanie bramy dla dostawcy chmury.
-- W przypadku narzędzi, które nie zezwalają na opcje hybrydowe lub bramy ścisłe, monitorowanie za pomocą narzędzia do monitorowania operacyjnego.
+- W przypadku narzędzi, które nie zezwalają na opcje hybrydowe lub bramy ścisłie integrują monitorowanie za pomocą narzędzia do monitorowania operacyjnego obejmującego wszystkie centra danych i chmurę.
 
 ## <a name="operate-and-post-implementation"></a>Działanie i po wdrożeniu
 

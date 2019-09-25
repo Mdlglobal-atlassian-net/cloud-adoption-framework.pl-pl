@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 459d4255a959d2911f56dd08186b92c4e89317dd
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 17538d7c49278a00a5927b0110a2591a03d59e5c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026819"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221470"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Etap 1: Planowanie wymagań wstępnych dotyczących usług zarządzania serwerem Azure
 
@@ -48,7 +48,7 @@ Przykłady omówione w tym przewodniku zakładają wdrożenie, które nie ma jes
 
 Podczas przygotowywania obszarów roboczych i kont utworzonych w celu dołączania usług zarządzania należy zapoznać się z następującymi dyskusjami o problemach:
 
-- **Lokalizacje geograficzne platformy Azure i zgodność z przepisami**. Regiony platformy Azure są zorganizowane w *lokalizacje geograficzne*. [Lokalizacja geograficzna platformy Azure](https://azure.microsoft.com/global-infrastructure/geographies/) zapewnia, że wymagania dotyczące miejsca zamieszkania, suwerenności, zgodności i odporności są honorowane w granicach geograficznych. Jeśli obciążenia podlegają suwerenności danych lub innych wymaganiach dotyczących zgodności, należy wdrożyć obszary robocze i usługi Automation w regionach w tej samej lokalizacji geograficznej platformy Azure, w której są obsługiwane zasoby obciążeń.
+- **Lokalizacje geograficzne platformy Azure i zgodność z przepisami**. Regiony platformy Azure są zorganizowane w *lokalizacje geograficzne*. [Lokalizacja geograficzna platformy Azure](https://azure.microsoft.com/global-infrastructure/geographies) zapewnia, że wymagania dotyczące miejsca zamieszkania, suwerenności, zgodności i odporności są honorowane w granicach geograficznych. Jeśli obciążenia podlegają suwerenności danych lub innych wymaganiach dotyczących zgodności, należy wdrożyć obszary robocze i usługi Automation w regionach w tej samej lokalizacji geograficznej platformy Azure, w której są obsługiwane zasoby obciążeń.
 - **Liczba obszarów roboczych**. Jako zasada identyfikatora GUID należy utworzyć minimalną liczbę obszarów roboczych wymaganych dla każdej lokalizacji geograficznej platformy Azure. Zalecamy co najmniej jeden obszar roboczy dla każdej lokalizacji geograficznej platformy Azure, w której znajdują się zasoby obliczeniowe lub magazynowe. To wstępne wyrównanie pomaga uniknąć problemów z przepisami w przyszłości podczas migrowania danych do różnych lokalizacje geograficzne.
 - **Przechowywanie i limitowanie danych**. Podczas tworzenia obszarów roboczych lub kont usługi Automation może być również konieczne uwzględnienie zasad przechowywania danych lub wymagań dotyczących pułapek danych. Aby uzyskać więcej informacji na temat tych zasad i dodatkowych zagadnień związanych z planowaniem obszarów roboczych, zobacz [Zarządzanie danymi dzienników i obszarami roboczymi w Azure monitor](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access).
 - **Mapowanie regionów**. Łączenie obszaru roboczego Log Analytics i konta Azure Automation jest obsługiwane tylko w niektórych regionach świadczenia usługi Azure. Na przykład jeśli obszar roboczy Log Analytics jest hostowany w regionie *wschodniego* , należy utworzyć połączone konto usługi Automation w regionie *EastUS2* , aby można było go używać z usługami zarządzania. Jeśli masz konto usługi Automation, które zostało utworzone w innym regionie, nie będzie można połączyć się z obszarem roboczym w *Wschodzie*. Wybór regionów wdrożenia może znacząco wpłynąć na wymagania dotyczące lokalizacji geograficznej platformy Azure. Zapoznaj się z [tabelą mapowanie regionów](https://docs.microsoft.com/azure/automation/how-to/region-mappings) , aby określić, który region powinien obsługiwać obszary robocze i konta usługi Automation.

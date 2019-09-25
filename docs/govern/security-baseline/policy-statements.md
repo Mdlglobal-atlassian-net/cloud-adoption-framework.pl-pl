@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Instrukcje dotyczące przykładowych zasad linii bazowej zabezpieczeń
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 253646b16d98a35c8cae8eb7f5c57aa60d55d580
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030619"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221658"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Instrukcje dotyczące przykładowych zasad linii bazowej zabezpieczeń
 
@@ -40,7 +40,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Wszystkie chronione dane muszą być szyfrowane, gdy są przechowywane.
 
-**Potencjalna opcja projektowania:** Zapoznaj się z artykułem [Omówienie usługi Azure Encryption](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) , aby poznać sposób wykonywania danych przechowywanych na platformie Azure.
+**Potencjalna opcja projektowania:** Zapoznaj się z artykułem [Omówienie usługi Azure Encryption](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) , aby poznać sposób wykonywania danych przechowywanych na platformie Azure. Należy również uwzględnić dodatkowe kontrolki, takie jak szyfrowanie danych konta i kontrola nad sposobem, w jaki można zmienić ustawienia konta magazynu.
 
 ## <a name="network-isolation"></a>Izolacja sieci
 
@@ -54,17 +54,17 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Ryzyko techniczne:** Umożliwienie dostępu do obciążeń z publicznej sieci Internet wprowadza ryzyko włamania wynikające z nieautoryzowanego narażenia na dane lub przerw w działaniu firmy.
 
-**Instrukcja zasad:** Nie można bezpośrednio uzyskać dostępu do podsieci zawierającej chronione dane za pośrednictwem publicznej sieci Internet lub między centrami danych. Dostęp do tych podsieci musi być kierowany przez pośrednią podsieć. Cały dostęp do tych podsieci musi następować przez rozwiązanie zapory, które może wykonywać funkcje skanowania pakietów i blokowania.
+**Instrukcja zasad:** Nie można bezpośrednio uzyskać dostępu do podsieci zawierającej chronione dane za pośrednictwem publicznej sieci Internet lub między centrami danych. Dostęp do tych podsieci musi być kierowany za pośrednictwem podsieci pośrednich. Cały dostęp do tych podsieci musi następować przez rozwiązanie zapory, które może wykonywać funkcje skanowania pakietów i blokowania.
 
-**Potencjalna opcja projektowania:** Na platformie Azure Zabezpiecz publiczne punkty końcowe, wdrażając [strefę DMZ między publicznym Internetem a siecią opartą na chmurze](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
+**Potencjalna opcja projektowania:** Na platformie Azure Zabezpiecz publiczne punkty końcowe, wdrażając [strefę DMZ między publicznym Internetem a siecią opartą na chmurze](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). Rozważ wdrożenie, konfigurację i automatyzację [zapory platformy Azure](https://docs.microsoft.com/azure/firewall).
 
 ## <a name="ddos-protection"></a>Ochrona przed atakami DDoS
 
 **Ryzyko techniczne:** Ataki rozproszonego typu "odmowa usługi" (DDoS) mogą spowodować przerwanie działania biznesowego.
 
-**Instrukcja zasad:** Wdróż zautomatyzowane mechanizmy ograniczania DDoS do wszystkich dostępnych publicznie punktów końcowych sieci.
+**Instrukcja zasad:** Wdróż zautomatyzowane mechanizmy ograniczania DDoS do wszystkich dostępnych publicznie punktów końcowych sieci. Żadna publiczna witryna sieci Web utworzona przez IaaS nie powinna być udostępniona w Internecie bez DDoS.
 
-**Potencjalna opcja projektowania:** Użyj [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) , aby zminimalizować zakłócenia spowodowane atakami DDoS.
+**Potencjalna opcja projektowania:** Użyj [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) Standard, aby zminimalizować zakłócenia spowodowane atakami DDoS.
 
 ## <a name="secure-on-premises-connectivity"></a>Bezpieczna łączność lokalna
 
@@ -88,7 +88,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Trendy i potencjalne luki w zabezpieczeniach, które mogą mieć wpływ na wdrożenia w chmurze, powinny być regularnie weryfikowane przez zespół ds. zabezpieczeń, aby zapewnić aktualizacje narzędzi linii bazowej zabezpieczeń używanej w chmurze.
 
-**Potencjalna opcja projektowania:** Ustanów regularne spotkania przeglądów zabezpieczeń, które obejmują odpowiednich członków zespołu IT i nadzoru. Zapoznaj się z istniejącymi danymi zabezpieczeń i metrykami, aby określić luki w bieżącym narzędziu zasady i zabezpieczenia i zasady aktualizacji w celu skorygowania wszelkich nowych zagrożeń.
+**Potencjalna opcja projektowania:** Ustanów regularne spotkania przeglądów zabezpieczeń, które obejmują odpowiednich członków zespołu IT i nadzoru. Zapoznaj się z istniejącymi danymi zabezpieczeń i metrykami, aby określić luki w bieżącym narzędziu zasady i zabezpieczenia i zasady aktualizacji w celu skorygowania wszelkich nowych zagrożeń. Skorzystaj z [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) i [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) , aby uzyskać szczegółowe informacje na temat nowych zagrożeń związanych z wdrożeniami.
 
 ## <a name="next-steps"></a>Następne kroki
 

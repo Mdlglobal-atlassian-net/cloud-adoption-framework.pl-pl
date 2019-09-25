@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wprowadzenie do zgodności z przepisami
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b0bc28f46671c4ccf62bba9f3fa68f14e2b79aee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031022"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222034"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Wprowadzenie do zgodności z przepisami
 
-Jest to artykuł wprowadzający dotyczący zgodności z przepisami, dlatego nie jest on przeznaczony do wdrażania strategii zgodności. Jest to tylko ogólna świadomość. Bardziej szczegółowe informacje na temat [ofert zgodności platformy Azure](https://aka.ms/allcompliance) są dostępne w [Centrum zaufania firmy Microsoft](https://www.microsoft.com/trustcenter/default.aspx). Ponadto cała dokumentacja do pobrania jest dostępna dla niektórych klientów platformy Azure w [portalu zaufania usługi firmy Microsoft](https://servicetrust.microsoft.com).
+Jest to artykuł wprowadzający dotyczący zgodności z przepisami, dlatego nie jest on przeznaczony do wdrażania strategii zgodności. Bardziej szczegółowe informacje na temat [ofert zgodności platformy Azure](https://aka.ms/allcompliance) są dostępne w [Centrum zaufania firmy Microsoft](https://www.microsoft.com/trustcenter/default.aspx). Ponadto cała dokumentacja do pobrania jest dostępna dla niektórych klientów platformy Azure w [portalu zaufania usługi firmy Microsoft](https://servicetrust.microsoft.com).
 
 Zgodność z przepisami dotyczy dyscypliny i procesu zapewnienia, że firma przestrzega obowiązujących przepisów przez zarządzanie organami w ich geograficznym lub regułach wymaganych przez dobrowolne normy branżowe. W celu zapewnienia zgodności z przepisami IT osoby i procesy monitorują systemy firmowe w celu wykrywania i zapobiegania naruszeniom zasad i procedur ustanowionych przez przepisy prawne, regulacje i standardy. To z kolei dotyczy szerokiej gamy procesów monitorowania i wymuszania. W zależności od branży i geografii procesy te mogą stać się długie i złożone.
 
@@ -42,7 +42,7 @@ Dane osobowe są informacjami, których można użyć do zidentyfikowania konsum
 
 ## <a name="gdpr"></a>GDPR
 
-Jednym z najważniejszych osiągnięć w tym obszarze jest ostatnie nanoszenie przez Wspólnotę Europejską Ogólne rozporządzenie o ochronie danych (Rodo), zaprojektowane w celu wzmocnienia ochrony danych dla osób w Unii Europejskiej. Rodo wymaga, aby dane dotyczące osób indywidualnych (takich jak "nazwa, adres domowy, Zdjęcie, adres e-mail, szczegóły banku, wpisy w witrynach sieci społecznościowych, informacje medyczne lub adresy IP komputera") były utrzymywane na serwerach w Unii Europejskiej i nie zostały przeniesione z niego. Wymaga również, aby firmy powiadomiły osoby o naruszeniu danych i mieli upoważnienia, że firmy mają oficera ochrony danych (DPO). Inne kraje mają lub rozwijają podobne rodzaje rozporządzeń.
+Jednym z najważniejszych osiągnięć w tym obszarze jest Ogólne rozporządzenie o ochronie danych (Rodo), zaprojektowany w celu wzmocnienia ochrony danych dla osób w Unii Europejskiej. Rodo wymaga, aby dane dotyczące osób indywidualnych (takich jak "nazwa, adres domowy, Zdjęcie, adres e-mail, szczegóły banku, wpisy w witrynach sieci społecznościowych, informacje medyczne lub adresy IP komputera") były utrzymywane na serwerach w Unii Europejskiej i nie zostały przeniesione z niego. Wymaga również, aby firmy powiadomiły osoby o naruszeniu danych i mieli upoważnienia, że firmy mają oficera ochrony danych (DPO). Inne kraje mają lub rozwijają podobne rodzaje rozporządzeń.
 
 ## <a name="compliant-foundation-in-azure"></a>Zgodna podstawa na platformie Azure
 

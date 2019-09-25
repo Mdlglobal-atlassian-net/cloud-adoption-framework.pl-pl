@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 651144a519103c1a35f6a189af88e2f3690ecbfc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031058"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220650"
 ---
 # <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Wskazówki dotyczące preskryptowe wyjaśnione
 
@@ -59,13 +59,17 @@ Decyzja dotycząca tego, w jaki sposób konstrukcja subskrypcji pozwala określi
 
 ### <a name="resource-consistency"></a>Spójność zasobów
 
-Decyzje dotyczące spójności zasobów określają narzędzia, procesy i nakłady potrzebne do zapewnienia spójnego wdrażania i konfigurowania zasobów platformy Azure w ramach subskrypcji. W tym rozpisaniach w ramach wzorca spójności zasobu podstawowego wybrano **[spójność hierarchiczną](../../../decision-guides/resource-consistency/index.md#hierarchical-consistency)** .
+Decyzje dotyczące spójności zasobów określają narzędzia, procesy i nakłady potrzebne do zapewnienia spójnego wdrażania i konfigurowania zasobów platformy Azure w ramach subskrypcji. W tym opisie **[spójność wdrożenia](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** została wybrana jako wzorzec spójności zasobów podstawowych.
 
-- Dla każdej aplikacji należy utworzyć grupy zasobów. Dla każdej aplikacji należy utworzyć grupy zarządzania. Azure Policy należy zastosować do wszystkich subskrypcji w skojarzonej grupie zarządzania.
-- W ramach procesu wdrażania szablony spójności zasobów dla wszystkich zasobów powinny być przechowywane w kontroli źródła.
-- Każda grupa zasobów powinna być wyrównana do określonego obciążenia lub aplikacji.
-- Zdefiniowana Hierarchia grup zarządzania platformy Azure powinna reprezentować odpowiedzialność za korzystanie z rozliczeń i własność aplikacji przy użyciu grup zagnieżdżonych.
-- Rozbudowana implementacja Azure Policy może przekroczyć zobowiązania zespołu czasowego i może nie zapewnić większej wartości w tym punkcie. Należy jednak utworzyć proste zasady domyślne i zastosować je do każdej grupy zasobów, aby wymusić kilka pierwszych instrukcji dotyczących zasad nadzoru w chmurze. Służy to do definiowania implementacji konkretnych wymagań dotyczących ładu. Te implementacje można następnie zastosować dla wszystkich wdrożonych zasobów.
+- Grupy zasobów są tworzone dla aplikacji przy użyciu podejścia do cyklu życia: wszystko, co zostało utworzone, utrzymane i wycofane, powinno znajdować się w jednej grupie zasobów. Aby uzyskać więcej informacji na temat grup zasobów, zobacz [tutaj](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Azure Policy należy zastosować do wszystkich subskrypcji ze skojarzonej grupy zarządzania.
+- W ramach procesu wdrażania szablony spójności zasobów platformy Azure dla grupy zasobów powinny być przechowywane w kontroli źródła.
+- Każda grupa zasobów jest skojarzona z określonym obciążeniem lub aplikacją na podstawie opisanego powyżej podejścia cyklu życia.
+- Grupy zarządzania platformy Azure umożliwiają aktualizowanie projektów ładu jako dojrzałych zasad firmowych.
+- Rozbudowana implementacja Azure Policy może przekroczyć zobowiązania dotyczące czasu zespołu i może nie zapewniać w tym momencie ogromnej wartości. Należy jednak utworzyć proste zasady domyślne i zastosować je do każdej grupy zarządzania w celu wymuszenia niewielkiej liczby bieżących instrukcji zasad ładu w chmurze. Te zasady określają implementację określonych wymagań ładu. Te implementacje można następnie zastosować dla wszystkich wdrożonych zasobów.
+
+>[!IMPORTANT]
+>Gdy zasób w grupie zasobów nie będzie już współużytkować tego samego cyklu życia, powinien zostać przeniesiony do innej grupy zasobów. Przykłady obejmują typowe bazy danych i składniki sieciowe. Chociaż mogą one obsłużać opracowywaną aplikację, mogą również być w innych grupach zasobów.
 
 ### <a name="resource-tagging"></a>Tagowanie zasobów
 
@@ -122,7 +126,7 @@ Jeśli którykolwiek z wzorców wybranych w tym przewodniku ładu nie jest wyró
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po wdrożeniu tych wskazówek każdy zespół rozwiązań w chmurze może kontynuować pracę z ciągłym zarządzaniem. Zespół ds. zarządzania chmurą będzie działał równolegle w celu ciągłego aktualizowania zasad firmowych i dyscyplin nadzoru.
+Po wdrożeniu tych wskazówek każdy zespół rozwiązań w chmurze może kontynuować pracę z ciągłym zarządzaniem. W tym samym czasie zespół ds. zarządzania chmurą będzie działał w celu ciągłego aktualizowania zasad firmowych i dyscyplin nadzoru.
 
 Oba zespoły będą używać wskaźników tolerancji do identyfikowania następnego zestawu ulepszeń niezbędnych do kontynuowania obsługi wdrożenia chmury. Następnym krokiem dla tej firmy jest przyrostowe ulepszenie planu bazowego zarządzania w celu obsługi aplikacji ze starszymi lub niezależnymi wymaganiami usługi uwierzytelniania wieloskładnikowego.
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Przykładowe instrukcje zasad linii bazowej tożsamości
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae5bb8283487ef7724f872fc293def2c1a80071
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028033"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222133"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Przykładowe instrukcje zasad linii bazowej tożsamości
 
@@ -67,11 +67,11 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Wdrożenie wszelkich aplikacji, które wymagają uwierzytelnienia klienta, musi używać zatwierdzonego dostawcy tożsamości, który jest zgodny z podstawowym dostawcą tożsamości dla użytkowników wewnętrznych.
 
-**Potencjalne opcje projektu:** Zaimplementuj [Federacji z Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) między wewnętrznymi i dostawcami tożsamości klienta.
+**Potencjalne opcje projektu:** Implementowanie [Federacji z Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) między wewnętrznymi dostawcami tożsamości klienta lub wykorzystaniem [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
 
 ## <a name="identity-reviews"></a>Przeglądy tożsamości
 
-**Ryzyko techniczne:** W miarę upływu czasu zmiany biznesowe dodanie nowych wdrożeń w chmurze lub innych problemów związanych z bezpieczeństwem może zwiększyć ryzyko nieautoryzowanego dostępu do zabezpieczonych zasobów.
+**Ryzyko techniczne:** W miarę wprowadzania zmian w czasie, dodanie nowych wdrożeń w chmurze lub innych problemów związanych z bezpieczeństwem może zwiększyć ryzyko nieautoryzowanego dostępu do zabezpieczonych zasobów.
 
 **Instrukcja zasad:** Procesy nadzoru chmur muszą obejmować kwartalne przeglądy z zespołami zarządzania tożsamościami w celu identyfikowania złośliwych aktorów lub wzorców użytkowania, które powinny być blokowane przez konfigurację zasobów w chmurze.
 

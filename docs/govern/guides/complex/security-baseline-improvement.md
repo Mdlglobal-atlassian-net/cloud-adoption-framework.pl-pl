@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 58dcbc125f0f4b65b4f4e4f2b292bbe1a4890ec0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028175"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220553"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Ulepszanie dyscypliny linii bazowej zabezpieczeń
 
@@ -105,26 +105,26 @@ Nowe najlepsze rozwiązania należą do dwóch kategorii: Firma IT (Hub) i wdra�
 **Ustanowienie firmowej subskrypcji centrum IT i satelity w celu scentralizowania linii bazowej zabezpieczeń:** W ramach tego najlepszego rozwiązania istniejąca pojemność ładu jest opakowana przez [topologię Hub i szprychy z usługami udostępnionymi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), a kilka najważniejszych dodatków z zespołu nadzoru chmurowego.
 
 1. Repozytorium usługi Azure DevOps. Utwórz repozytorium w usłudze Azure DevOps, aby przechowywać i wypełniać wszystkie odpowiednie szablony Azure Resource Manager i konfiguracje inicjowane przez skrypty.
-1. Szablon gwiazdy:
+2. Szablon gwiazdy:
     1. Wskazówki w [topologii Hub i szprych z](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) architekturą referencyjną usług udostępnionych mogą służyć do generowania Menedżer zasobów szablonów dla zasobów wymaganych w firmowym centrum IT.
-    1. Korzystając z tych szablonów, tę strukturę można powtarzać w ramach strategii ładu centralnej.
-    1. Oprócz obecnej architektury referencyjnej zaleca się utworzenie szablonu sieciowej grupy zabezpieczeń, który przechwytuje wszelkie wymagania dotyczące blokowania portów lub listy dozwolonych dla sieci wirtualnej, aby hostować zaporę. Ta sieciowa Grupa zabezpieczeń różni się od wcześniejszych grup, ponieważ będzie to pierwsza sieciowa Grupa zabezpieczeń zezwalająca na ruch publiczny do sieci wirtualnej.
-1. Utwórz zasady platformy Azure. Utwórz zasady o nazwie `Hub NSG Enforcement` , aby wymusić konfigurację sieciowej grupy zabezpieczeń przypisanej do dowolnej sieci wirtualnej utworzonej w ramach tej subskrypcji. Zastosuj wbudowane zasady konfiguracji gościa w następujący sposób:
+    2. Korzystając z tych szablonów, tę strukturę można powtarzać w ramach strategii ładu centralnej.
+    3. Oprócz obecnej architektury referencyjnej zaleca się utworzenie szablonu sieciowej grupy zabezpieczeń, który przechwytuje wszelkie wymagania dotyczące blokowania portów lub listy dozwolonych dla sieci wirtualnej, aby hostować zaporę. Ta sieciowa Grupa zabezpieczeń różni się od wcześniejszych grup, ponieważ będzie to pierwsza sieciowa Grupa zabezpieczeń zezwalająca na ruch publiczny do sieci wirtualnej.
+3. Utwórz zasady platformy Azure. Utwórz zasady o nazwie `Hub NSG Enforcement` , aby wymusić konfigurację sieciowej grupy zabezpieczeń przypisanej do dowolnej sieci wirtualnej utworzonej w ramach tej subskrypcji. Zastosuj wbudowane zasady konfiguracji gościa w następujący sposób:
     1. Inspekcja serwerów sieci Web systemu Windows korzystających z bezpiecznych protokołów komunikacyjnych.
-    1. Inspekcja ustawień zabezpieczeń hasła w maszynach z systemem Linux i Windows.
-1. Firmowy plan IT
+    2. Inspekcja ustawień zabezpieczeń hasła w maszynach z systemem Linux i Windows.
+4. Firmowy plan IT
     1. Utwórz plan platformy Azure o `corporate-it-subscription`nazwie.
-    1. Dodaj szablony i `Hub NSG Enforcement` zasady gwiazdy i gwiazdy.
-1. Rozwijanie w hierarchii początkowej grupy zarządzania.
+    2. Dodaj szablony i `Hub NSG Enforcement` zasady gwiazdy i gwiazdy.
+5. Rozwijanie w hierarchii początkowej grupy zarządzania.
     1. W przypadku każdej grupy zarządzania, która zażądała obsługi chronionych danych `corporate-it-subscription-blueprint` , plan udostępnia przyspieszone rozwiązanie centrum.
-    1. Ponieważ grupy zarządzania w tym fikcyjnym przykładzie zawierają hierarchię regionalną oprócz hierarchii jednostek biznesowej, plan ten zostanie wdrożony w każdym regionie.
-    1. Dla każdego regionu w hierarchii grupy zarządzania Utwórz subskrypcję o nazwie `Corporate IT Subscription`.
-    1. `corporate-it-subscription-blueprint` Zastosuj plan do każdego wystąpienia regionalnego.
-    1. Spowoduje to utworzenie centrum dla każdej jednostki biznesowej w każdym regionie. Uwaga: Dalsze oszczędności kosztów można uzyskać, ale udostępnić centra w różnych jednostkach roboczych w poszczególnych regionach.
-1. Integrowanie obiektów zasad grupy (GPO) przy użyciu konfiguracji żądanego stanu (DSC):
+    2. Ponieważ grupy zarządzania w tym fikcyjnym przykładzie zawierają hierarchię regionalną oprócz hierarchii jednostek biznesowej, plan ten zostanie wdrożony w każdym regionie.
+    3. Dla każdego regionu w hierarchii grupy zarządzania Utwórz subskrypcję o nazwie `Corporate IT Subscription`.
+    4. `corporate-it-subscription-blueprint` Zastosuj plan do każdego wystąpienia regionalnego.
+    5. Spowoduje to utworzenie centrum dla każdej jednostki biznesowej w każdym regionie. Uwaga: Dalsze oszczędności kosztów można uzyskać, ale udostępnić centra w różnych jednostkach roboczych w poszczególnych regionach.
+6. Integrowanie obiektów zasad grupy (GPO) przy użyciu konfiguracji żądanego stanu (DSC):
     1. Konwertowanie obiektu zasad grupy na DSC — [projekt zarządzania Microsoft Baseline](https://github.com/Microsoft/BaselineManagement) w serwisie GitHub może przyspieszyć ten nakład pracy. * Upewnij się, że w repozytorium jest przechowywane rozwiązanie DSC równolegle z szablonami Menedżer zasobów.
-    1. Wdróż konfigurację stanu Azure Automation do wszystkich wystąpień firmowej subskrypcji IT. Azure Automation może służyć do zastosowania DSC do maszyn wirtualnych wdrożonych w ramach obsługiwanych subskrypcji w grupie zarządzania.
-    1. Bieżące plany planu, które umożliwiają włączenie niestandardowych zasad konfiguracji gościa. Po wydaniu tej funkcji użycie Azure Automation w ramach tego najlepszego rozwiązania nie będzie już wymagane.
+    2. Wdróż konfigurację stanu Azure Automation do wszystkich wystąpień firmowej subskrypcji IT. Azure Automation może służyć do zastosowania DSC do maszyn wirtualnych wdrożonych w ramach obsługiwanych subskrypcji w grupie zarządzania.
+    3. Bieżące plany planu, które umożliwiają włączenie niestandardowych zasad konfiguracji gościa. Po wydaniu tej funkcji użycie Azure Automation w ramach tego najlepszego rozwiązania nie będzie już wymagane.
 
 **Zastosowanie dodatkowego ładu do subskrypcji wdrażania w chmurze (szprych):** `Corporate IT Subscription`Opracowywanie drobnych zmian wprowadzonych w programie ładu MVP zastosowanych do każdej subskrypcji przeznaczonej do obsługi aplikacji Archetypes może dawać szybkie ulepszanie.
 
@@ -132,40 +132,40 @@ We wcześniejszych zmianach iteracyjnych najlepszym rozwiązaniem jest zdefiniow
 
 1. Szablon komunikacji równorzędnej sieci. Ten szablon spowoduje równorzędną sieć wirtualną w każdej subskrypcji z centralną siecią wirtualną w firmowej subskrypcji IT.
     1. Architektura referencyjna z poprzedniej sekcji, [gwiazdy i topologii z usługami udostępnionymi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), wygenerowała Menedżer zasobów szablon służący do włączania komunikacji równorzędnej w sieci wirtualnej.
-    1. Ten szablon może służyć jako przewodnik modyfikowania szablonu DMZ z wcześniejszej iteracji ładu.
-    1. Zasadniczo teraz dodawana jest Komunikacja równorzędna sieci wirtualnych do sieci wirtualnej DMZ, która była wcześniej połączona z lokalnym urządzeniem brzegowym przez sieć VPN.
-    1. Zaleca się również usunięcie sieci VPN z tego szablonu, aby upewnić się, że żaden ruch nie jest kierowany bezpośrednio do lokalnego centrum danych, bez przechodzenia przez firmową subskrypcję IT i zaporę.
-    1. Dodatkowa [Konfiguracja sieci](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) będzie wymagana przez Azure Automation, aby zastosować DSC do hostowanych maszyn wirtualnych.
-1. Zmodyfikuj grupę zabezpieczeń sieci. Zablokuj cały publiczny **i** bezpośredni ruch lokalny w sieciowej grupie zabezpieczeń. Jedyny ruch przychodzący powinien należeć przez równorzędną sieć wirtualną w firmowej subskrypcji IT.
+    2. Ten szablon może służyć jako przewodnik modyfikowania szablonu DMZ z wcześniejszej iteracji ładu.
+    3. Teraz dodawana jest Komunikacja równorzędna sieci wirtualnych do sieci wirtualnej DMZ, która była wcześniej połączona z lokalnym urządzeniem brzegowym przez sieć VPN.
+    4. Zaleca się również usunięcie sieci VPN z tego szablonu, aby upewnić się, że żaden ruch nie jest kierowany bezpośrednio do lokalnego centrum danych, bez przechodzenia przez firmową subskrypcję IT i zaporę. Możesz również ustawić tę sieć VPN jako obwód trybu failover w przypadku outge obwodu ExpressRoute.
+    5. Dodatkowa [Konfiguracja sieci](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) będzie wymagana przez Azure Automation, aby zastosować DSC do hostowanych maszyn wirtualnych.
+2. Zmodyfikuj grupę zabezpieczeń sieci. Zablokuj cały publiczny **i** bezpośredni ruch lokalny w sieciowej grupie zabezpieczeń. Jedyny ruch przychodzący powinien należeć przez równorzędną sieć wirtualną w firmowej subskrypcji IT.
     1. W poprzedniej iteracji utworzono grupę zabezpieczeń sieci, która blokuje cały ruch publiczny i listy dozwolonych cały ruch wewnętrzny. Teraz chcemy przetworzyć tę siećową grupę zabezpieczeń jako bitową.
-    1. Nowa konfiguracja sieciowej grupy zabezpieczeń powinna blokować cały ruch publiczny oraz cały ruch z lokalnego centrum danych.
-    1. Ruch wprowadzający tę sieć wirtualną powinien pochodzić tylko z sieci wirtualnej po drugiej stronie elementu równorzędnego sieci wirtualnej.
-1. Implementacja Azure Security Center:
+    2. Nowa konfiguracja sieciowej grupy zabezpieczeń powinna blokować cały ruch publiczny oraz cały ruch z lokalnego centrum danych.
+    3. Ruch wprowadzający tę sieć wirtualną powinien pochodzić tylko z sieci wirtualnej po drugiej stronie elementu równorzędnego sieci wirtualnej.
+3. Implementacja Azure Security Center:
     1. Skonfiguruj Azure Security Center dla każdej grupy zarządzania zawierającej klasyfikacje chronionych danych.
-    1. Domyślnie Ustaw automatyczne Inicjowanie obsługi, aby zapewnić zgodność z poprawkami.
-    1. Ustanów konfiguracje zabezpieczeń systemu operacyjnego. Zabezpieczenia INFORMATYCZNe w celu zdefiniowania konfiguracji.
-    1. Zapewnianie bezpieczeństwa IT w początkowym użyciu Azure Security Center. Przejście do zabezpieczeń IT przy użyciu usługi Security Center, ale zachowanie dostępu do ciągłego ulepszania zarządzania.
-    1. Utwórz szablon Menedżer zasobów odzwierciedlający zmiany wymagane w przypadku konfiguracji Azure Security Center w ramach subskrypcji.
-1. Aktualizacja Azure Policy dla wszystkich subskrypcji.
+    2. Domyślnie Ustaw automatyczne Inicjowanie obsługi, aby zapewnić zgodność z poprawkami.
+    3. Ustanów konfiguracje zabezpieczeń systemu operacyjnego. Zabezpieczenia INFORMATYCZNe w celu zdefiniowania konfiguracji.
+    4. Zapewnianie bezpieczeństwa IT w początkowym użyciu Azure Security Center. Przejście do zabezpieczeń IT przy użyciu usługi Security Center, ale zachowanie dostępu do ciągłego ulepszania zarządzania.
+    5. Utwórz szablon Menedżer zasobów odzwierciedlający zmiany wymagane w przypadku konfiguracji Azure Security Center w ramach subskrypcji.
+4. Aktualizacja Azure Policy dla wszystkich subskrypcji.
     1. Przeprowadzaj inspekcję i wymuszanie stopnia ważności i klasyfikacji danych we wszystkich grupach zarządzania i subskrypcjach, aby identyfikować wszystkie subskrypcje z chronionymi klasyfikacjami danych.
-    1. Inspekcja i wymuszanie korzystania tylko z zatwierdzonych obrazów systemu operacyjnego.
-    1. Inspekcja i wymuszanie konfiguracji gościa na podstawie wymagań dotyczących zabezpieczeń dla każdego węzła.
-1. Aktualizacja Azure Policy dla wszystkich subskrypcji, które zawierają chronione klasyfikacje danych.
+    2. Inspekcja i wymuszanie korzystania tylko z zatwierdzonych obrazów systemu operacyjnego.
+    3. Inspekcja i wymuszanie konfiguracji gościa na podstawie wymagań dotyczących zabezpieczeń dla każdego węzła.
+5. Aktualizacja Azure Policy dla wszystkich subskrypcji, które zawierają chronione klasyfikacje danych.
     1. Inspekcja i wymuszanie korzystania tylko z ról standardowych
-    1. Inspekcja i wymuszanie stosowania szyfrowania dla wszystkich kont magazynu i plików przechowywanych w poszczególnych węzłach.
-    1. Inspekcja i wymuszanie zastosowania nowej wersji sieciowej grupy zabezpieczeń DMZ.
-    1. Inspekcja i wymuszanie użycia zatwierdzonej podsieci sieciowej i sieci wirtualnej dla każdego interfejsu sieciowego.
-    1. Inspekcja i wymuszanie ograniczenia zdefiniowanych przez użytkownika tabel routingu.
-1. Plan platformy Azure:
+    2. Inspekcja i wymuszanie stosowania szyfrowania dla wszystkich kont magazynu i plików przechowywanych w poszczególnych węzłach.
+    3. Inspekcja i wymuszanie zastosowania nowej wersji sieciowej grupy zabezpieczeń DMZ.
+    4. Inspekcja i wymuszanie użycia zatwierdzonej podsieci sieciowej i sieci wirtualnej dla każdego interfejsu sieciowego.
+    5. Inspekcja i wymuszanie ograniczenia zdefiniowanych przez użytkownika tabel routingu.
+6. Plan platformy Azure:
     1. Utwórz plan platformy Azure o `protected-data`nazwie.
-    1. Dodaj do planu elementy równorzędne sieci wirtualnej, sieciowe grupy zabezpieczeń i Azure Security Center.
-    1. Upewnij się, że szablon Active Directory z poprzedniej iteracji **nie** jest uwzględniony w planie. Wszystkie zależności dotyczące Active Directory będą udostępniane przez firmową subskrypcję IT.
-    1. Przerwij wszystkie istniejące Active Directory maszyny wirtualne wdrożone w poprzedniej iteracji.
-    1. Dodaj nowe zasady dla chronionych subskrypcji danych.
-    1. Opublikuj plan w dowolnej grupie zarządzania przeznaczonej do hostowania chronionych danych.
-    1. Zastosuj nową strategię do każdej powiązanej subskrypcji wraz z istniejącymi planami.
+    2. Dodaj do planu elementy równorzędne sieci wirtualnej, sieciowe grupy zabezpieczeń i Azure Security Center.
+    3. Upewnij się, że szablon Active Directory z poprzedniej iteracji **nie** jest uwzględniony w planie. Wszystkie zależności dotyczące Active Directory będą udostępniane przez firmową subskrypcję IT.
+    4. Przerwij wszystkie istniejące Active Directory maszyny wirtualne wdrożone w poprzedniej iteracji.
+    5. Dodaj nowe zasady dla chronionych subskrypcji danych.
+    6. Opublikuj plan w dowolnej grupie zarządzania, która będzie hostować chronione dane.
+    7. Zastosuj nową strategię do każdej powiązanej subskrypcji wraz z istniejącymi planami.
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 Dodanie tych procesów i zmian do ładu SPECJALISTy pomaga skorygować wiele zagrożeń związanych z zarządzaniem zabezpieczeniami. Razem dodają narzędzia do monitorowania sieci, tożsamości i zabezpieczeń, które są konieczne do ochrony danych.
 

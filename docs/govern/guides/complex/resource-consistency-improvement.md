@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Ulepszanie dyscypliny spójności zasobów'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7e10f9262e7b29df98e2341cbae0ef05f85cd954
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028640"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223813"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Ulepszanie dyscypliny spójności zasobów
 
@@ -65,7 +65,7 @@ Poniższe zmiany zasad pomogą skorygować nowe zagrożenia i implementację prz
 5. Narzędzia ładu muszą sprawdzić, czy odpowiedni poziom danych rejestrowania jest zbierany dla wszystkich aplikacji o kluczowym znaczeniu lub chronionych danych.
 6. Proces ładu musi sprawdzać poprawność wdrożenia kopii zapasowej, odzyskiwania i umowy SLA dla aplikacji o kluczowym znaczeniu i chronionych danych.
 7. Narzędzia ładu muszą ograniczać wdrożenie maszyny wirtualnej tylko do zatwierdzonych obrazów.
-8. Narzędzia ładu muszą wymusić, że aktualizacje automatyczne są **blokowane** we wszystkich wdrożonych zasobach, które obsługują aplikacje o znaczeniu strategicznym. Naruszenia muszą zostać sprawdzone za pomocą zespołów zarządzania operacyjnego i korygowane zgodnie z zasadami operacji. Zasoby, które nie są automatycznie aktualizowane, muszą być uwzględnione w procesach należących do operacji IT.
+8. Narzędzia ładu muszą wymusić, że aktualizacje automatyczne są **blokowane** we wszystkich wdrożonych zasobach, które obsługują aplikacje o znaczeniu strategicznym. Naruszenia muszą zostać sprawdzone za pomocą zespołów zarządzania operacyjnego i korygowane zgodnie z zasadami operacji. Zasoby, które nie są automatycznie aktualizowane, muszą być zawarte w procesach należących do operacji IT, aby szybko i efektywnie aktualizować te serwery.
 9. Narzędzia ładu muszą sprawdzać poprawność tagowania związanego z kosztami, krytycznością, umową SLA, aplikacją i klasyfikacją danych. Wszystkie wartości muszą być wyrównane do wstępnie zdefiniowanych wartości zarządzanych przez zespół zarządzający chmurą.
 10. Procesy nadzoru muszą obejmować inspekcje w punkcie wdrożenia oraz regularne cykle w celu zapewnienia spójności wszystkich zasobów.
 11. Trendy i luki w zabezpieczeniach, które mogą mieć wpływ na wdrożenia w chmurze, powinny być regularnie weryfikowane przez zespół ds. zabezpieczeń, aby zapewnić aktualizacje narzędzi linii bazowej zabezpieczeń używanej w chmurze.
@@ -85,27 +85,27 @@ W przypadku korzystania z tego fikcyjnego przykładu zakłada się, że zmiany c
 
 1. Jako zależność zewnętrzna zespół operacyjny w chmurze będzie musiał definiować narzędzia do monitorowania operacyjnego, ciągłość działania i odzyskiwanie po awarii (BCDR) oraz automatyczne narzędzia do korygowania. Zespół ds. zarządzania chmurą może następnie obsługiwać niezbędne procesy odnajdywania.
     1. W tym przypadku użycia zespół operacyjny w chmurze wybiera Azure Monitor jako podstawowe narzędzie do monitorowania aplikacji o krytycznym znaczeniu.
-    1. Zespół wybiera również Azure Site Recovery jako podstawowe narzędzia BCDR.
-1. Implementacja Azure Site Recovery.
-    1. Zdefiniuj i Wdróż magazyn platformy Azure na potrzeby procesów tworzenia kopii zapasowych i odzyskiwania.
-    1. Utwórz szablon zarządzania zasobami platformy Azure na potrzeby tworzenia magazynu w ramach każdej subskrypcji.
-1. Implementacja Azure Monitor.
-    1. Po zidentyfikowaniu subskrypcji krytycznej dla działalności można utworzyć obszar roboczy usługi log Analytics za pomocą programu PowerShell. Jest to proces wdrożenia wstępnego.
+    2. Zespół wybiera również Azure Site Recovery jako podstawowe narzędzia BCDR.
+2. Implementacja Azure Site Recovery.
+    1. Zdefiniuj i Wdróż Magazyn Azure Site Recovery na potrzeby procesów tworzenia kopii zapasowych i odzyskiwania.
+    2. Utwórz szablon zarządzania zasobami platformy Azure na potrzeby tworzenia magazynu w ramach każdej subskrypcji.
+3. Implementacja Azure Monitor.
+    1. Po zidentyfikowaniu subskrypcji o krytycznym znaczeniu można utworzyć obszar roboczy usługi log Analytics.
 
 **Subskrypcja wdrożenia poszczególnych chmur:** Poniżej zapewnią możliwość odnajdywania każdej subskrypcji przez rozwiązanie do monitorowania i gotowe do uwzględnienia w praktykach BCDR.
 
 1. Azure Policy dla węzłów o kluczowym znaczeniu:
     1. Inspekcja i wymuszanie korzystania tylko z ról standardowych.
-    1. Inspekcja i wymuszanie stosowania szyfrowania dla wszystkich kont magazynu.
-    1. Inspekcja i wymuszanie użycia zatwierdzonej podsieci sieciowej i sieci wirtualnej dla każdego interfejsu sieciowego.
-    1. Inspekcja i wymuszanie ograniczenia zdefiniowanych przez użytkownika tabel routingu.
-    1. Inspekcja i egzekwowanie wdrożenia agentów Log Analytics dla maszyn wirtualnych z systemami Windows i Linux.
+    2. Inspekcja i wymuszanie stosowania szyfrowania dla wszystkich kont magazynu.
+    3. Inspekcja i wymuszanie użycia zatwierdzonej podsieci sieciowej i sieci wirtualnej dla każdego interfejsu sieciowego.
+    4. Inspekcja i wymuszanie ograniczenia zdefiniowanych przez użytkownika tabel routingu.
+    5. Inspekcja i egzekwowanie wdrożenia agentów Log Analytics dla maszyn wirtualnych z systemami Windows i Linux.
 2. Plan platformy Azure:
     1. Utwórz plan o nazwie `mission-critical-workloads-and-protected-data`. Ten plan zastosuje zasoby oprócz planu chronionego danych.
-    1. Dodaj nowe zasady platformy Azure do planu.
-    1. Zastosuj plan do każdej subskrypcji, która będzie hostować aplikację o znaczeniu krytycznym.
+    2. Dodaj nowe zasady platformy Azure do planu.
+    3. Zastosuj plan do każdej subskrypcji, która będzie hostować aplikację o znaczeniu krytycznym.
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 Dodanie tych procesów i zmian do ładu programu MVP pomaga skorygować wiele zagrożeń związanych z zarządzaniem zasobami. Razem dodają kontrolę odzyskiwania, rozmiarów i monitorowania, które są niezbędne do upoważnienia operacji obsługujących chmurę.
 

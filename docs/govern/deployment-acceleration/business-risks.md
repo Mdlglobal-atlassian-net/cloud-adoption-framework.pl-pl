@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się więcej na temat dyscypliny wdrożenia w ramach strategii zarządzania chmurą.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: feaf5a7f0f2622c2b2289fe81315ea9ccf2ada4e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027429"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220721"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Motywacje do przyspieszenia wdrożenia i ryzyko biznesowe
 
@@ -22,7 +22,7 @@ W tym artykule omówiono przyczyny, w których klienci zazwyczaj przyjmują dysc
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-deployment-acceleration-relevant"></a>Czy przyspieszenie wdrożenia jest odpowiednie?
+## <a name="deployment-acceleration-relevancy"></a>Przyspieszenie wdrożenia dokładność
 
 Systemy lokalne są często wdrażane przy użyciu obrazów linii bazowej lub skryptów instalacji. Dodatkowa konfiguracja jest zwykle konieczna, co może wiązać się z wieloma krokami lub interwencją człowieka. Te procesy ręczne są podatne na błędy i często skutkują "dryfem konfiguracji", wymagając czasochłonnych zadań związanych z rozwiązywaniem problemów i korygowaniem.
 

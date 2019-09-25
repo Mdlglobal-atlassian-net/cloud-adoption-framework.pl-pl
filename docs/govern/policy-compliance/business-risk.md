@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Zrozumienie ryzyka biznesowego podczas migracji do chmury
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 26f110e808039fe17ac4186cdafa9e6a200f6fee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 078ba561384c07cee6ce3a174d1663f7590e228c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029671"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220396"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ W trakcie transformacji istnieją takie same względne zagrożenia.
 
 - W trakcie wczesnego eksperymentu kilka zasobów jest wdrażanych z niewielkimi danymi. Ryzyko jest małe.
 - Po wdrożeniu pierwszego obciążenia ryzyka zajmują trochę czasu. To ryzyko można łatwo skorygować, wybierając nieodłącznie zagrożoną aplikację z niewielką bazą użytkownika.
-- Ponieważ większe obciążenia przechodzą w tryb online, ryzyka zmieniają się w każdej wersji. Nowe aplikacje są aktywne, ryzyka zmieniają się.
+- Ponieważ większe obciążenia przechodzą w tryb online, ryzyka zmieniają się w każdej wersji. Nowe aplikacje są na bieżąco i są zmieniane.
 - Gdy firma przywróci pierwsze aplikacje 10-20 do trybu online, profil ryzyka jest znacznie różny, gdy aplikacje 1000th są uwzględniane w środowisku produkcyjnym w chmurze.
 
 Zasoby, które są gromadzone w tradycyjnym miejscu, w którym jest to możliwe, w miarę upływu czasu. Termin zapadalności działalności biznesowej i zespołów IT prawdopodobnie rośnie w podobny sposób. Ten równoległy wzrost może być w stanie utworzyć niezbędny bagaż zasad.
@@ -54,10 +54,10 @@ Z kolei podejście MVP pozwala zespołowi definiować początkowy punkt początk
 
 Poniżej przedstawiono kilka podstawowych przykładów ryzyka biznesowego, które mogą zostać uwzględnione w ramach programu MVP:
 
-- Wszystkie zasoby są zagrożone zakończonymi (w wyniku błędu, błędu lub konserwacji).
+- Wszystkie zasoby są zagrożone usunięciem (w wyniku błędu, błędu lub konserwacji).
 - Wszystkie zasoby są zagrożone generowaniem zbyt dużej ilości wydatków.
-- Wszystkie zasoby mogą być złamane przez słabe hasła.
-- Każdy element zawartości ze wszystkimi otwartymi portami narażonymi na Internet ma ryzyko złamania.
+- Wszystkie zasoby mogą zostać naruszone przez słabe hasła lub ustawienia niezabezpieczone.
+- Każdy element zawartości z otwartymi portami narażony na Internet ma ryzyko złamania.
 
 Powyższe przykłady są przeznaczone do ustanowienia ryzyka biznesowego MVP jako teorii. Rzeczywista lista będzie unikatowa dla każdego środowiska.
 Po ustaleniu ryzyka biznesowego, można je przekonwertować na [zasady](./index.md) , aby skorygować każde ryzyko.

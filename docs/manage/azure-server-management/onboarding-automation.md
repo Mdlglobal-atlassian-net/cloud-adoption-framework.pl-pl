@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a3a1ae1f49fea514ce2ab194f7e959e428b37ad6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030639"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221375"
 ---
 # <a name="automate-onboarding"></a>Automatyzowanie dołączania
 
@@ -21,7 +21,7 @@ Aby zwiększyć wydajność wdrażania usług zarządzania systemu Azure, należ
 
 ## <a name="onboarding-by-using-automation"></a>Dołączanie przy użyciu automatyzacji
 
-Te wskazówki zawierają obsługę repozytorium GitHub przykładowego kodu, [CloudAdoptionFramework](https://aka.ms/CAF/manage/automation-samples), który zawiera przykładowe skrypty i szablony Azure Resource Manager ułatwiające automatyzację wdrażania usług zarządzania serwerem Azure.
+Te wskazówki zawierają obsługę repozytorium GitHub przykładowego kodu, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), który zawiera przykładowe skrypty i szablony Azure Resource Manager ułatwiające automatyzację wdrażania usług zarządzania serwerem Azure.
 
 Te przykładowe pliki ilustrują sposób korzystania z Azure PowerShell poleceń cmdlet do automatyzacji następujących zadań:
 
@@ -33,7 +33,7 @@ Te przykładowe pliki ilustrują sposób korzystania z Azure PowerShell poleceń
 
 4. Włącz Update Management i Change Tracking i spis dla obszaru roboczego.
 
-5. Dołączanie maszyn wirtualnych platformy Azure przy użyciu Azure Policy (zasady instalują Log Analytics agenta i Agent zależności na maszynach wirtualnych platformy Azure).
+5. Dołączanie maszyn wirtualnych platformy Azure przy użyciu Azure Policy (zasady instalują agenta Log Analytics i agenta zależności na maszynach wirtualnych platformy Azure).
 
 6. Dołączanie serwerów lokalnych przez zainstalowanie na nich agenta Log Analytics.
 

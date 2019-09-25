@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Procesy zgodności z zasadami spójności zasobów
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5daec332aa4fdbc75e15bfd9948fe6db52935d20
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028663"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223708"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Procesy zgodności z zasadami spójności zasobów
 
@@ -60,6 +60,7 @@ Następujące wyzwalacze i akcje wymuszania zawierają przykłady, które można
 - **Wykryto nieudostępniany zasób.** Zasoby wykryte przy użyciu ponad 80% pojemności procesora lub pamięci powinny automatycznie skalować w górę lub aprowizacji dodatkowe zasoby w celu zapewnienia dodatkowej pojemności.
 - **Nieoznakowane tworzenie zasobów.** Każde żądanie utworzenia zasobu bez wymaganych tagów Meta zostanie odrzucone automatycznie.
 - **Wykryto krytyczną awarię zasobów.** Pracownicy działu IT są powiadamiani o wszystkich wykrytych przestojach. Jeśli przestój nie zostanie natychmiast rozpoznawalny, personel będzie eskalować problem i powiadomić właścicieli obciążeń i zespół nadzorujący chmurę. Zespół ds. zarządzania chmurą będzie śledził problem do momentu rozwiązania problemu i aktualizacji, jeśli konieczna jest zmiana zasad w celu zapobieżenia przyszłym zdarzeniom.
+- **Dryf konfiguracji.** Wykryte zasoby, które nie są zgodne z ustalonymi liniami bazowymi, powinny wyzwalać alerty i być automatycznie korygowane przy użyciu narzędzi do zarządzania konfiguracją, takich jak Azure Automation, Chef, Puppet, rozwiązania ansible itd.
 
 ## <a name="next-steps"></a>Następne kroki
 

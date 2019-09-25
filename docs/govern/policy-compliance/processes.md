@@ -4,25 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ustanów procesy w celu zapewnienia zgodności z zasadami firmowymi.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eff80cb530141a64f706d046bb9f76319f03e3c1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029257"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222045"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="establish-policy-adherence-processes"></a>Ustalanie procesów zapewniania zgodności zasad
-
-<!---
-I've defined policies, I've provided an architecture guide. Now how do I monitor adherence to policy? If there is a violation, how do I enforce the policy?
---->
 
 Po ustaleniu zasad dotyczących chmury i opracowaniu projektu przewodnika projektowego należy utworzyć strategię w celu zapewnienia zgodności wdrożenia w chmurze z wymaganiami dotyczącymi zasad. Ta strategia będzie musiała obejmować bieżące procesy przeglądu i komunikacji zespołu nadzoru w chmurze, ustanawiać kryteria dotyczące sytuacji, w których naruszenia zasad wymagają akcji i definiowania wymagań dla zautomatyzowanych systemów monitorowania i zgodności, które będą Wykrywaj naruszenia i Wyzwalaj akcje korygowania.
 
@@ -52,11 +48,13 @@ Po wdrożeniu dodatkowych zasobów i obciążeń zespół ds. zarządzania chmur
 
 Zaplanuj ocenę nowych potencjalnych zagrożeń i aktualizowanie instrukcji zasad i zaprojektowanie przewodników zgodnie z wymaganiami. Współpracuj z pracownikami działu IT i zespołami obciążeń, aby regularnie szacować nowe funkcje i usługi platformy Azure. Zaplanuj także regularne przeglądy dla każdej z pięciu dyscyplin ładu, aby zapewnić aktualność i spełnienie zasad.
 
-### <a name="education"></a>Edukacja
+### <a name="education"></a>Education
 
 Zgodność z zasadami wymaga, aby pracownicy IT i deweloperzy mogli zrozumieć wymagania dotyczące zasad, które mają wpływ na ich obszary odpowiedzialności. Zaplanuj, aby przeznaczyć zasoby na decyzje i wymagania oraz poinformować wszystkie odpowiednie zespoły dotyczące przewodników projektowych, które obsługują wymagania dotyczące zasad.
 
 Wraz ze zmianami zasad, regularne aktualizowanie dokumentacji i materiałów szkoleniowych oraz zapewnienie wysiłków edukacyjnych komunikuje się z odpowiednim personelem działu IT.
+
+Na różnych etapach podróży w chmurze może okazać się, że najlepiej skontaktować się z partnerami i programami szkoleniowymi w dziedzinie profesjonalnych, aby usprawnić edukację swojego zespołu, zarówno technicznie, jak i proceduralne. Ponadto wiele można znaleźć, że formalne certyfikaty są cennym uzupełnieniem portfela edukacji i powinny być brane pod uwagę.
 
 ### <a name="establish-escalation-paths"></a>Ustanów ścieżki eskalacji
 

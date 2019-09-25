@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metryki linii bazowej tożsamości, wskaźniki i tolerancja ryzyka
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ad0b06cad7aefc70eea6366eb9ef2b5844c871a6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028433"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220434"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metryki linii bazowej tożsamości, wskaźniki i tolerancja ryzyka
 
-Ten artykuł ma na celu ułatwienie określenia tolerancji ryzyka biznesowego odnoszącego się do linii bazowej tożsamości. Zdefiniowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy do składania inwestycji w odkupu dyscypliny linii bazowej tożsamości.
+Ten artykuł pomoże Ci określić tolerancję ryzyka biznesowego, która odnosi się do linii bazowej tożsamości. Zdefiniowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy do składania inwestycji w odkupu dyscypliny linii bazowej tożsamości.
 
 ## <a name="metrics"></a>Metryki
 
@@ -28,13 +28,13 @@ Poniżej przedstawiono przykłady przydatnych metryk, które należy zebrać, ab
 
 - **Rozmiar systemów tożsamości.** Łączna liczba użytkowników, grup lub innych obiektów zarządzanych przez systemy tożsamości.
 - **Ogólny rozmiar infrastruktury usług katalogowych.** Liczba lasów katalogów, domen i dzierżawców używanych w organizacji.
-- **Zależność od starszych lub lokalnych mechanizmów uwierzytelniania.** Liczba obciążeń, które są zależne od starszych mechanizmów uwierzytelniania lub usług uwierzytelniania wieloskładnikowego innych firm.
+- **Zależność od starszych lub lokalnych mechanizmów uwierzytelniania.** Liczba obciążeń, które są zależne od starszych lub wieloskładnikowych mechanizmów usługi uwierzytelniania.
 - **Zakres usług katalogowych wdrożonych w chmurze.** Liczba lasów katalogów, domen i dzierżawców, które zostały wdrożone w chmurze.
 - **Active Directory serwerów wdrożonych w chmurze.** Liczba serwerów Active Directory wdrożonych w chmurze.
 - **Jednostki organizacyjne wdrożone w chmurze.** Liczba Active Directory jednostek organizacyjnych (OU) wdrożonych w chmurze.
 - **Zakres Federacji.** Liczba systemów bazowych tożsamości federacyjnych z systemami organizacji.
 - **Użytkownicy z podwyższonym poziomem uprawnień.** Liczba kont użytkowników z podwyższonym poziomem dostępu do zasobów lub narzędzi do zarządzania.
-- **Użycie kontroli dostępu opartej na rolach.** Liczba subskrypcji, grup zasobów lub pojedynczych zasobów niezarządzanych przez funkcję kontroli dostępu opartej na rolach (RBAC).
+- **Użycie kontroli dostępu opartej na rolach.** Liczba subskrypcji, grup zasobów lub poszczególnych zasobów, które nie są zarządzane przez funkcję kontroli dostępu opartej na rolach (RBAC) za pośrednictwem grup.
 - **Oświadczenia uwierzytelniania.** Liczba prób uwierzytelnienia użytkownika zakończonych powodzeniem i niepowodzeniem.
 - **Oświadczenia autoryzacji.** Liczba pomyślnych i nieudanych prób uzyskania dostępu do zasobów przez użytkowników.
 - **Naruszone konta.** Liczba kont użytkowników, których zabezpieczenia zostały naruszone.
@@ -56,7 +56,7 @@ Po utworzeniu planu bazowego należy ustanowić minimalne wzorce reprezentujące
 - **Wyzwalacz RBAC.** Firma o wartości poniżej _x%_ zasobów przy użyciu metod kontroli dostępu opartej na rolach powinna rozważyć inwestowanie w dyscypliny linii bazowej tożsamości, aby zidentyfikować zoptymalizowane sposoby przypisywania dostępu użytkowników do zasobów.
 - **Wyzwalacz błędu uwierzytelniania.** Firma, w której błędy uwierzytelniania reprezentują ponad _x%_ prób, powinna inwestować w dyscyplinę bazową tożsamości, aby upewnić się, że metody uwierzytelniania nie są objęte atakiem zewnętrznym i że użytkownicy będą mogli korzystać z metod uwierzytelniania prawidłowego.
 - **Wyzwalacz błędu autoryzacji.** Firma, w której próby dostępu są odrzucane ponad _x%_ czasu, powinien inwestować w dyscyplinę bazową tożsamości w celu ulepszania aplikacji i aktualizowania kontroli dostępu, a następnie identyfikować potencjalnie złośliwe próby dostępu.
-- **Naruszony wyzwalacz konta.** Firma z więcej niż _x_ kontami z naruszeniem zabezpieczeń powinna inwestować w dyscyplinę bazową tożsamości w celu poprawy siły i bezpieczeństwa mechanizmów uwierzytelniania oraz ulepszania mechanizmów korygowania zagrożeń związanych z naruszonymi kontami.
+- **Naruszony wyzwalacz konta.** Firma z ponad 1 złamanym kontem powinna zainwestować w dyscyplinę bazową tożsamości, aby zwiększyć siłę i bezpieczeństwo mechanizmów uwierzytelniania oraz poprawić mechanizmy korygowania zagrożeń związanych z naruszonymi kontami.
 
 Dokładne metryki i wyzwalacze służące do oceny tolerancji ryzyka i poziom inwestycji w dyscyplinę bazową tożsamości będą specyficzne dla organizacji, ale powyższe przykłady powinny służyć jako przydatny dla dyskusji w zespole nadzoru chmurowego.
 

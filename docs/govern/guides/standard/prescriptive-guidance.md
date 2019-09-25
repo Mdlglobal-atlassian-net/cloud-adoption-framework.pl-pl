@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8cc3c5564d51a096f2794ec62e50c19a2a8e740c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027220"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223834"
 ---
 # <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>Standardowa Przewodnik po przedsiębiorstwie: Wskazówki dotyczące preskryptowe wyjaśnione
 
@@ -61,7 +61,7 @@ Decyzja dotycząca tego, w jaki sposób konstrukcja subskrypcji pozwala określi
 
 Decyzje dotyczące spójności zasobów określają narzędzia, procesy i nakłady potrzebne do zapewnienia spójnego wdrażania i konfigurowania zasobów platformy Azure w ramach subskrypcji. W tym opisie **[spójność wdrożenia](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** została wybrana jako wzorzec spójności zasobów podstawowych.
 
-- Grupy zasobów są tworzone dla aplikacji przy użyciu podejścia do cyklu życia: wszystko, co jest tworzone razem, jest utrzymywane razem, a oba te elementy mogą znajdować się w jednej grupie zasobów.
+- Grupy zasobów są tworzone dla aplikacji przy użyciu podejścia do cyklu życia: wszystko, co zostało utworzone, utrzymane i wycofane, powinno znajdować się w jednej grupie zasobów. Aby uzyskać więcej informacji na temat grup zasobów, zobacz [tutaj](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy należy zastosować do wszystkich subskrypcji ze skojarzonej grupy zarządzania.
 - W ramach procesu wdrażania szablony spójności zasobów platformy Azure dla grupy zasobów powinny być przechowywane w kontroli źródła.
 - Każda grupa zasobów jest skojarzona z określonym obciążeniem lub aplikacją na podstawie opisanego powyżej podejścia cyklu życia.
@@ -116,7 +116,7 @@ Jeśli którykolwiek z wzorców wybranych w tym przewodniku ładu nie jest wyró
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po zaimplementowaniu tego przewodnika każdy zespół rozwiązań w chmurze może przechodzić przez solidną podstawę zarządzania. Zespół ds. zarządzania chmurą będzie działał równolegle w celu ciągłego aktualizowania zasad firmowych i dyscyplin nadzoru.
+Po zaimplementowaniu tego przewodnika każdy zespół rozwiązań w chmurze może przechodzić przez solidną podstawę zarządzania. W tym samym czasie zespół ds. zarządzania chmurą będzie działał w celu ciągłego aktualizowania zasad korporacyjnych i dyscyplin nadzoru.
 
 Dwa zespoły będą używać wskaźników tolerancji do identyfikowania następnego zestawu ulepszeń niezbędnych do kontynuowania obsługi wdrożenia chmury. W przypadku fikcyjnej firmy w tym przewodniku następnym krokiem jest ulepszenie podstawy zabezpieczeń w celu zapewnienia obsługi przeniesienia chronionych danych do chmury.
 

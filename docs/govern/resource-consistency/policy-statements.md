@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Instrukcje dotyczące przykładowych zasad spójności zasobów
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 654ec56f2196af4d16b3e19a47ae117b9936b38f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027607"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221983"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Instrukcje dotyczące przykładowych zasad spójności zasobów
 
@@ -74,8 +74,8 @@ Poniższe przykładowe instrukcje dotyczące zasad umożliwiają rozwiązywanie 
 
 **Instrukcja zasad:** Następujące zasady zostaną zaimplementowane:
 
-- Narzędzia ładu muszą sprawdzić, czy wszystkie zasoby dotyczące aplikacji o znaczeniu krytycznym lub chronionych danych są uwzględniane w monitorowaniu w celu wyczerpania zasobów i optymalizacji.
-- Narzędzia ładu muszą sprawdzić, czy odpowiedni poziom danych rejestrowania jest zbierany dla wszystkich aplikacji o kluczowym znaczeniu lub chronionych danych.
+- Narzędzia ładu muszą sprawdzać, czy wszystkie zasoby są uwzględniane w monitorowaniu dla niszczenia zasobów, zabezpieczeń, zgodności i optymalizacji.
+- Narzędzia ładu muszą sprawdzić, czy odpowiedni poziom danych rejestrowania jest zbierany dla wszystkich aplikacji i danych.
 
 **Potencjalne opcje projektu:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) jest domyślną usługą monitorowania na platformie Azure, a spójne monitorowanie można wymusić za pośrednictwem [planów platformy Azure](https://docs.microsoft.com/azure/governance/blueprints) podczas wdrażania zasobów.
 
@@ -85,7 +85,7 @@ Poniższe przykładowe instrukcje dotyczące zasad umożliwiają rozwiązywanie 
 
 **Instrukcja zasad:** Wszystkie aplikacje o kluczowym znaczeniu i chronione dane muszą mieć wdrożone rozwiązania do tworzenia kopii zapasowych i odzyskiwania, aby zminimalizować wpływ awarii na firmę lub awarie systemu.
 
-**Potencjalne opcje projektu:** Usługa [Azure Site Recovery] udostępnia funkcje tworzenia kopii zapasowej, odzyskiwania i replikacji, które umożliwiają zminimalizowanie czasu przestojów w scenariuszach ciągłości działania i odzyskiwania po awarii (BCDR).
+**Potencjalne opcje projektu:** Usługa [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) udostępnia funkcje tworzenia kopii zapasowej, odzyskiwania i replikacji, które minimalizują czas przestoju w scenariuszach ciągłości biznesowej i odzyskiwania po awarii (BCDR).
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metryki linii bazowej zabezpieczeń, wskaźniki i tolerancja ryzyka
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2eeab224a9f025b9e93cf407626455e74d69ccd4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b8171839b79ffbe9e3849cf303180d1f1ee049f2
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027773"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222841"
 ---
 # <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>Metryki linii bazowej zabezpieczeń, wskaźniki i tolerancja ryzyka
 
-Ten artykuł ma na celu ułatwienie określenia tolerancji ryzyka biznesowego, która odnosi się do linii bazowej zabezpieczeń. Definiowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy na potrzeby inwestycji w wykupu dyscypliny linii bazowej zabezpieczeń.
+Ten artykuł pomoże Ci określić tolerancję ryzyka biznesowego, która odnosi się do linii bazowej zabezpieczeń. Definiowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy na potrzeby inwestycji w wykupu dyscypliny linii bazowej zabezpieczeń.
 
 ## <a name="metrics"></a>Metryki
 

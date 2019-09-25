@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wyjaśnienie planu bazowego zabezpieczeń koncepcji w odniesieniu do ładu w chmurze.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 03d8e9cf2a5e4679b61a318aeee41b982f08ac51
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2a691223ccb3e6264b53fbf0e018d303cbcf091a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029710"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222805"
 ---
 # <a name="security-baseline-template"></a>Szablon linii bazowej zabezpieczeń
 
-Pierwszym krokiem do wdrożenia zmiany jest komunikowanie się z pożądaną zmianą. To samo jest prawdziwe w przypadku zmiany praktyk ładu. Poniższy szablon ogólny zawiera punkt wyjścia do tworzenia dokumentów i przekazywania oświadczeń dotyczących zasad, które regulują problemy związane z bezpieczeństwem w chmurze.
+Pierwszym krokiem do wdrożenia zmiany jest komunikowanie się z oczekiwaniami. To samo jest prawdziwe w przypadku zmiany praktyk ładu. Poniższy szablon zawiera punkt wyjścia do dokumentowania i przekazywania instrukcji zasad, które regulują problemy związane z bezpieczeństwem w chmurze.
 
 W miarę postępu dyskusji Użyj struktury tego szablonu jako modelu do przechwytywania ryzyka biznesowego, odporności na zagrożenia, procesów zgodności i narzędzi niezbędnych do zdefiniowania instrukcji zasad bazowych zabezpieczeń organizacji.
 

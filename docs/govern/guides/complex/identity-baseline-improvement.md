@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0c17f9043dd88f401b07293a6b93e50ccefe0137
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028840"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222314"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Ulepszanie dyscypliny linii bazowej tożsamości
 
@@ -79,16 +79,16 @@ Oto nowe najlepsze rozwiązania:
 - **Bezpieczny hybrydowy plan sieci wirtualnej:** Lokalna Strona sieci hybrydowej powinna być skonfigurowana w taki sposób, aby zezwalała na komunikację między następującym rozwiązaniem i lokalnymi serwerami Active Directory. To najlepsze rozwiązanie wymaga obwodu DMZ, aby umożliwić Active Directory Domain Services między granicami sieci.
 - **Szablony Azure Resource Manager:**
     1. Zdefiniuj sieciowej grupy zabezpieczeń do blokowania ruchu zewnętrznego i zezwalania na ruch wewnętrzny.
-    1. Wdróż dwie Active Directory maszyny wirtualne w parze z równoważeniem obciążenia na podstawie złota obrazu. Przy pierwszym rozruchu ten obraz uruchamia skrypt programu PowerShell w celu przyłączenia do domeny i zarejestrowania się w usługach domenowych. Aby uzyskać więcej informacji, zobacz [rozszerzając Active Directory Domain Services (AD DS) na platformę Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
+    2. Wdróż dwie Active Directory maszyny wirtualne w parze z równoważeniem obciążenia na podstawie złota obrazu. Przy pierwszym rozruchu ten obraz uruchamia skrypt programu PowerShell w celu przyłączenia do domeny i zarejestrowania się w usługach domenowych. Aby uzyskać więcej informacji, zobacz [rozszerzając Active Directory Domain Services (AD DS) na platformę Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
 - Azure Policy: Zastosuj sieciowej grupy zabezpieczeń do wszystkich zasobów.
 - Plan platformy Azure:
     1. Utwórz plan o nazwie `active-directory-virtual-machines`.
-    1. Dodaj do planu wszystkie Active Directory szablony i zasady.
-    1. Opublikuj plan w odpowiedniej grupie zarządzania.
-    1. Zastosuj plan do dowolnej subskrypcji wymagającej starszej wersji usługi uwierzytelniania wieloskładnikowego lub innej firmy.
-    1. Wystąpienie Active Directory uruchomione na platformie Azure może być teraz używane jako rozszerzenie lokalnego Active Directory rozwiązanie, które umożliwia integrację z istniejącym narzędziem uwierzytelniania wieloskładnikowego i zapewnianie uwierzytelniania opartego na oświadczeniach. istniejące Active Directory funkcje.
+    2. Dodaj do planu wszystkie Active Directory szablony i zasady.
+    3. Opublikuj plan w odpowiedniej grupie zarządzania.
+    4. Zastosuj plan do dowolnej subskrypcji wymagającej starszej wersji usługi uwierzytelniania wieloskładnikowego lub innej firmy.
+    5. Wystąpienie Active Directory uruchomione na platformie Azure może być teraz używane jako rozszerzenie lokalnego Active Directory rozwiązanie, które umożliwia integrację z istniejącym narzędziem uwierzytelniania wieloskładnikowego i zapewnianie uwierzytelniania opartego na oświadczeniach. istniejące Active Directory funkcje.
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 Dodanie tych zmian do ładu SPECJALISTy pomaga skorygować wiele zagrożeń w tym artykule, co pozwoli każdemu zespołowi rozwiązań w chmurze na szybkie przechodzenie do Roadblock.
 

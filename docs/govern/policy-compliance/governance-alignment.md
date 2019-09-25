@@ -4,24 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dopasuj Przewodnik dotyczący projektowania ładu w chmurze przy użyciu zasad firmowych
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: c7be14efe6723a32808ba9bd2ba01f48292305df
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029866"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223747"
 ---
-<!---
-I've established policies. How to help developers adopt these policies?
-Draft an architecture design guide.
-
-[Aspirational statement] If you're using Azure, you can use one of ours as a starting point. The choose one of the following 6 as a starting point and mold it to fit your policies.
---->
-
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Dopasuj Przewodnik dotyczący projektowania ładu w chmurze przy użyciu zasad firmowych
 
 Po [zdefiniowaniu zasad w chmurze](./policy-definition.md) na podstawie [zidentyfikowanych zagrożeń](./business-risk.md)należy wygenerować wskazówki umożliwiające podjęcie odpowiednich działań, które są dostosowane do tych zasad dla personelu i deweloperów IT, do których się odwołuje. Szkicowanie przewodnika projektowego dotyczącego zarządzania chmurą umożliwia określenie określonych rozwiązań strukturalnych, technologicznych i procesów opartych na zestawieniach zasad wygenerowanych dla każdej z [pięciu dyscyplin ładu](../governance-disciplines.md).

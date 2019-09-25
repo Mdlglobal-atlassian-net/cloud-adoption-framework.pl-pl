@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cost Management motywacje i ryzyko biznesowe
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328352ac7ccd8cacbc92cc09ce0c07e2843afcf1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030833"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223603"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Cost Management motywacje i ryzyko biznesowe
 
@@ -37,9 +37,9 @@ Dyscyplina Cost Management próbuje rozwiązać podstawowe ryzyko biznesowe zwi�
 Zagrożenia będą się różnić między organizacjami, ale poniżej przedstawiono typowe ryzyka związane z kosztami, których można użyć jako punktu wyjścia dla dyskusji w zespole nadzoru chmurowego:
 
 - **Kontrola budżetu:** Niesterowanie budżetem może prowadzić do nadmiernych wydatków u dostawcy chmury.
-- **Utrata użycia:** Przed zakupami lub zobowiązaniami, które nie są używane, mogą wynikać z inwestycji.
+- **Utrata użycia:** Przed zakupami lub zobowiązaniami, które nie są używane, mogą spowodować utratę inwestycji.
 - **Anomalie wydatków:** Nieoczekiwane skoki w dowolnym kierunku mogą być wskaźnikami nieprawidłowego użycia.
-- **Zasoby o nadmiernej aprowizacji:** Gdy zasoby są wdrażane w konfiguracji, która przekracza potrzeby aplikacji lub maszyny wirtualnej, może zwiększyć koszty i utworzyć odpady.
+- **Zasoby o nadmiernej aprowizacji:** Po wdrożeniu zasobów w konfiguracji, która przekracza wymagania aplikacji lub maszyny wirtualnej, mogą one tworzyć odpady.
 
 ## <a name="next-steps"></a>Następne kroki
 

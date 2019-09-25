@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c96ad14ab98dd5a6da1b81eb2f4add6281732da7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8056ef1a53a47bc79e106f0fcd4fcf768e3a5126
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024189"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224316"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Ponowne hostowanie aplikacji lokalnej dla systemu Linux na maszynach wirtualnych platformy Azure i w usłudze Azure Database for MySQL
 
@@ -129,7 +129,7 @@ Administratorzy firmy Contoso tworzą konto usługi Storage i magazyn w następu
 
 2. Po utworzeniu sieci i konta usługi Storage administratorzy tworzą magazyn (ContosoMigrationVault), który umieszczają w grupie zasobów **ContosoFailoverRG**, w regionie podstawowym Wschodnie stany USA 2.
 
-    ![Magazyn usług Recovery Services](./media/contoso-migration-rehost-linux-vm-mysql/asr-vault.png)
+    ![magazyn usług Recovery Services](./media/contoso-migration-rehost-linux-vm-mysql/asr-vault.png)
 
 **Potrzebujesz dalszej pomocy?**
 
@@ -279,7 +279,7 @@ Po skonfigurowaniu środowiska źródłowego i docelowego administratorzy firmy 
     - **Przechowywanie punktów odzyskiwania:** wartość domyślna — 24 godziny. Ta wartość określa długość okna przechowywania dla każdego punktu odzyskiwania. Replikowane maszyny wirtualne można odzyskać do dowolnego punktu w tym oknie.
     - **Częstotliwość wykonywania migawek na poziomie aplikacji:** wartość domyślna — jedna godzina. Ta wartość określa częstotliwość tworzenia migawek spójnych na poziomie aplikacji.
 
-        ![Tworzenie zasad replikacji](./media/contoso-migration-rehost-linux-vm-mysql/replication-policy.png)
+        ![Utwórz zasady replikacji](./media/contoso-migration-rehost-linux-vm-mysql/replication-policy.png)
 
 3. Zasady zostaną automatycznie skojarzone z serwerem konfiguracji.
 
@@ -432,7 +432,7 @@ Teraz firma Contoso musi wykonać następujące czynności:
 - Usunięcie lokalnych maszyn wirtualnych z lokalnych zadań kopii zapasowej.
 - Zaktualizowanie wewnętrznej dokumentacji tak, aby wskazywała nowe lokalizacje i adresy IP.
 - Przegląd wszystkich zasobów korzystających z lokalnych maszyn wirtualnych i zaktualizowanie wszystkich ustawień lub dokumentów w celu uwzględnienia nowej konfiguracji.
-- Firma Contoso skorzystała z usługi Azure Migrate z mapowaniem zależności do przeprowadzenia oceny maszyny wirtualnej **OSTICKETWEB** pod kątem migracji. Administratorzy powinni teraz usunąć z maszyny wirtualnej zainstalowanego w tym celu agenta Microsoft Monitoring Agent oraz agenta zależności.
+- Firma Contoso skorzystała z usługi Azure Migrate z mapowaniem zależności do przeprowadzenia oceny maszyny wirtualnej **OSTICKETWEB** pod kątem migracji. Powinni teraz usunąć agentów (Microsoft Monitoring Agent i Microsoft Dependency Agent) zainstalowanych w tym celu z poziomu maszyny wirtualnej.
 
 ## <a name="review-the-deployment"></a>Przegląd wdrożenia
 

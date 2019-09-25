@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023409"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223074"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Wprowadzenie do podróży migracji do chmury
 
@@ -36,7 +36,7 @@ Migracje w chmurze mogą pomóc firmom w osiągnięciu żądanych wyników firmy
 
 |Krytyczne zdarzenia biznesowe | Motywacje migracji | Motywacje innowacji |
 |---------|---------|---------|
-| Wyjście centrum danych<br/><br/>Fuzje, pozyskiwanie lub zbycie<br/><br/>Obniżki wydatków inwestycyjnych<br/><br/>Koniec wsparcia dla technologii o kluczowym znaczeniu<br/><br/>Odpowiedź na zmiany zgodności z przepisami<br/><br/>Spełniaj nowe wymagania dotyczące suwerenności danych<br/><br/>Zmniejsz zakłócenia i zwiększ stabilność IT|Oszczędności kosztów<br/><br/>Zmniejszenie liczby dostawców lub technicznych<br/><br/>Optymalizacja operacji wewnętrznych<br/><br/>Zwiększenie sprawności biznesowej<br/><br/>Przygotuj się na nowe możliwości techniczne<br/><br/>Skalowanie w celu spełnienia wymagań dotyczących rynku<br/><br/>Skalowanie w celu spełnienia wymagań geograficznych|Przygotuj się na nowe możliwości techniczne<br/><br/>Twórz nowe możliwości techniczne<br/><br/>Skalowanie w celu spełnienia wymagań dotyczących rynku<br/><br/>Skalowanie w celu spełnienia wymagań geograficznych<br/><br/>Ulepszanie środowisk i zaangażowania klientów<br/><br/>Przekształć produkty lub usługi<br/><br/>Zakłócenie rynku dzięki nowym produktom lub usługom|
+| Wyjście centrum danych<br/><br/>Fuzje, pozyskiwanie lub zbycie<br/><br/>Obniżki wydatków inwestycyjnych<br/><br/>Koniec wsparcia dla technologii o kluczowym znaczeniu<br/><br/>Odpowiedź na zmiany zgodności z przepisami<br/><br/>Spełniaj nowe wymagania dotyczące suwerenności danych<br/><br/>Zmniejsz zakłócenia i zwiększ stabilność IT|Redukcja kosztów<br/><br/>Zmniejszenie liczby dostawców lub technicznych<br/><br/>Optymalizacja operacji wewnętrznych<br/><br/>Zwiększenie sprawności biznesowej<br/><br/>Przygotuj się na nowe możliwości techniczne<br/><br/>Skalowanie w celu spełnienia wymagań dotyczących rynku<br/><br/>Skalowanie w celu spełnienia wymagań geograficznych|Przygotuj się na nowe możliwości techniczne<br/><br/>Twórz nowe możliwości techniczne<br/><br/>Skalowanie w celu spełnienia wymagań dotyczących rynku<br/><br/>Skalowanie w celu spełnienia wymagań geograficznych<br/><br/>Ulepszanie środowisk i zaangażowania klientów<br/><br/>Przekształć produkty lub usługi<br/><br/>Zakłócenie rynku dzięki nowym produktom lub usługom|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -84,7 +84,7 @@ Jak pokazano na powyższym obrazie, Ta struktura przedstawia decyzje strategiczn
 - **[Gotowość](../ready/index.md):** Przygotowanie firmy, kultury, osób i środowiska do wprowadzania zmian prowadzi do sukcesu w każdym wysiłku i przyspiesza implementację i zmienia projekty.
 - **Wdrażanie:** Zapewnij prawidłowe wdrożenie żądanych zmian, w ramach procesów IT i firmowych, aby osiągnąć wyniki biznesowe.
   - **[Migracja](../migrate/index.md):** Iteracyjne wykonywanie [metodologii implementacji chmury](#cloud-implementation) zgodnej z przetestowanym procesem oceny, migracji, optymalizacji i bezpiecznego & zarządzania, aby utworzyć powtarzalny proces migracji obciążeń.
-- **[Działa](../operating-model/index.md):** Zdefiniuj model systemu operacyjnego, który można zarządzać, aby poprowadzić działania w trakcie i po jego przyjęciu.
+- **[Działa](../operate/index.md):** Zdefiniuj model systemu operacyjnego, który można zarządzać, aby poprowadzić działania w trakcie i po jego przyjęciu.
   - **[Organizowanie](../organize/index.md):** Wyrównaj osoby i zespoły, aby zapewnić prawidłowe operacje i wdrożenia w chmurze.
   - **[Utrzymanie ładu](../govern/index.md):** Wyrównaj zasady firmowe jako materialne czynniki ryzyka, które zostały skorygowane za pomocą zasad, procesów i narzędzi do zarządzania opartego na chmurze.
   - **[Zarządzanie](../manage/index.md):** Rozwiń operacje IT, aby zapewnić, że rozwiązania oparte na chmurze mogą być obsługiwane za pośrednictwem bezpiecznych, ekonomicznych procesów przy użyciu nowoczesnych narzędzi do obsługi chmurowej.

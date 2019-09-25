@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Wyjaśnienie konstrukcji zarządzania dostępem do zasobów na platformie Azure: Azure Resource Manager, subskrypcje, grupy zasobów i zasoby'
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 46c6de1ecaba5b8278138114b6aa27a2608bfb74
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 87e0918f4d1dad896576d322c8754bc2f6c56fb3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030860"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223037"
 ---
 # <a name="resource-access-management-in-azure"></a>Zarządzanie dostępem do zasobów na platformie Azure
 
@@ -33,7 +33,7 @@ Na platformie Azure termin " _zasób_ " odnosi się do jednostki zarządzanej pr
 
 ## <a name="what-is-an-azure-resource-group"></a>Co to jest Grupa zasobów platformy Azure?
 
-Każdy zasób na platformie Azure musi należeć do [grupy zasobów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups). Grupa zasobów to po prostu konstrukcja logiczna, która grupuje wiele zasobów, dzięki czemu można nimi zarządzać jako pojedynczą jednostką. Na przykład zasoby, które mają podobny cykl życia, takie jak zasoby dla [aplikacji n-warstwowej](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier) , można utworzyć lub usunąć jako grupę.
+Każdy zasób na platformie Azure musi należeć do [grupy zasobów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups). Grupa zasobów to po prostu konstrukcja logiczna, która jednocześnie grupuje wiele zasobów, dzięki czemu można nimi zarządzać jako pojedynczą jednostką _w oparciu o cykl życia i zabezpieczenia_. Na przykład zasoby, które mają podobny cykl życia, takie jak zasoby dla [aplikacji n-warstwowej](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier) , można utworzyć lub usunąć jako grupę. Można to zrobić w inny sposób: wszystkie informacje, które ponosisz, są zarządzane razem i są przestarzałe, razem z grupą zasobów.
 
 ![Diagram grupy zasobów zawierającej](../../_images/govern/design/governance-1-10.png)
 *rysunek 2. Grupa zasobów zawiera zasób.*
@@ -42,7 +42,7 @@ Grupy zasobów i zawarte w nich zasoby są skojarzone z **subskrypcją**platform
 
 ## <a name="what-is-an-azure-subscription"></a>Co to jest subskrypcja platformy Azure?
 
-Subskrypcja platformy Azure jest podobna do grupy zasobów, ponieważ jest to konstrukcja logiczna, która grupuje grupy zasobów i ich zasoby. Jednak subskrypcja platformy Azure jest również skojarzona z kontrolkami używanymi przez Azure Resource Manager. Co to oznacza? Zapoznaj się z Azure Resource Manager, aby dowiedzieć się więcej o relacji między działem IT i subskrypcją platformy Azure.
+Subskrypcja platformy Azure jest podobna do grupy zasobów, ponieważ jest to konstrukcja logiczna, która grupuje grupy zasobów i ich zasoby. Jednak subskrypcja platformy Azure jest również skojarzona z kontrolkami używanymi przez Azure Resource Manager. Zapoznaj się z Azure Resource Manager, aby dowiedzieć się więcej o relacji między działem IT i subskrypcją platformy Azure.
 
 ![Diagram subskrypcji](../../_images/govern/design/governance-1-11.png)
 platformy Azure*3 — subskrypcja platformy Azure.*

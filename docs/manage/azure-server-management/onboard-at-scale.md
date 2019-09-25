@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 56a989e975625c9d8f0f3db80dab9043dca3a479
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5b1d551f52ae8800e9a29d4c8a92c14965645cc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027858"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221501"
 ---
 # <a name="configure-azure-management-services-at-scale"></a>Konfigurowanie usług zarządzania platformy Azure na dużą skalę
 
@@ -30,7 +30,7 @@ Dołączanie usług zarządzania platformy Azure do serwerów obejmuje dwa zadan
 
 Wszystkie rozwiązania do zarządzania omówione w ramach [narzędzi i usług zarządzania platformy Azure](./tools-services.md) wymagają zainstalowania agenta log Analytics na maszynach wirtualnych platformy Azure i na serwerach lokalnych. Możesz dołączać maszyny wirtualne platformy Azure na dużą skalę przy użyciu Azure Policy. Przypisz zasady, aby upewnić się, że Agent jest zainstalowany na wszystkich maszynach wirtualnych platformy Azure i połączony z prawidłowym obszarem roboczym Log Analytics.
 
-Azure Policy ma wbudowaną inicjatywę [Policy](https://docs.microsoft.com/azure/governance/policy/index.md#initiative-definition) , która obejmuje zarówno agenta log Analytics, jak i [agenta zależności Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), który jest wymagany przez Azure monitor dla maszyn wirtualnych.
+Azure Policy ma wbudowaną inicjatywę [Policy](/azure/governance/policy/index#initiative-definition) , która obejmuje zarówno agenta log Analytics, jak i [agenta zależności Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), który jest wymagany przez Azure monitor dla maszyn wirtualnych.
 
 <!-- TODO: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.
@@ -40,7 +40,7 @@ Azure Policy ma wbudowaną inicjatywę [Policy](https://docs.microsoft.com/azure
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat różnych agentów monitorowania platformy Azure, zobacz [Omówienie agentów monitorowania platformy Azure](https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview).
 
-### <a name="assign-policies"></a>Przypisywanie zasad
+### <a name="assign-policies"></a>Przypisz zasady
 
 Aby przypisać zasady wymienione w poprzedniej sekcji:
 

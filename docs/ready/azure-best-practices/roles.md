@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 10f1ae3bc7d1f7a298a020d2079c0f7e486810f7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 98f456bf9af0ab5a7533acf9a9d49f445b7fe37b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025287"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224329"
 ---
 # <a name="role-based-access-control"></a>Kontrola dostępu oparta na rolach
 
@@ -28,7 +28,7 @@ Omówienie zalecanych rozwiązań kontroli dostępu opartej na rolach w ramach s
 
 Przy użyciu [kontroli dostępu opartej na rolach](https://docs.microsoft.com/azure/role-based-access-control/overview) można dokonać podziału obowiązków w zespole i nadawać określonym użytkownikom usługi Azure Active Directory (Azure AD), grupom, jednostkom usług lub jednostkom zarządzanym uprawnienia dostępu wystarczające do wykonania ich pracy. Zamiast udzielać wszystkim użytkownikom nieograniczonych uprawnień dostępu do subskrypcji lub zasobów platformy Azure możesz ograniczyć uprawnienia poszczególnych zestawów zasobów.
 
-[Definicje ról kontroli dostępu opartej na rolach](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) zawierają listę operacji, które są dozwolone lub niedozwolone dla użytkowników lub grup przypisanych do tej roli. [Zakres](https://docs.microsoft.com/azure/role-based-access-control/index.md#scope) roli określa, których zasobów dotyczą zdefiniowane uprawnienia. Zakres można określić na wielu poziomach (grupa zarządzania, subskrypcja, grupa zasobów lub zasób). Zakresy mają strukturę relacji element nadrzędny/element podrzędny.
+[Definicje ról kontroli dostępu opartej na rolach](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) zawierają listę operacji, które są dozwolone lub niedozwolone dla użytkowników lub grup przypisanych do tej roli. [Zakres](/azure/role-based-access-control/index#scope) roli określa, których zasobów dotyczą zdefiniowane uprawnienia. Zakres można określić na wielu poziomach (grupa zarządzania, subskrypcja, grupa zasobów lub zasób). Zakresy mają strukturę relacji element nadrzędny/element podrzędny.
 
 ![Hierarchia zakresu kontroli dostępu opartej na rolach](../../_images/azure-best-practices/rbac-scope.png)
 

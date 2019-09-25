@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Udoskonalenie ulepszeń wdrożenia
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7cff2c0cbf8fea06ea7ebdfaaade1c8538802639
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029886"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220753"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Udoskonalenie ulepszeń wdrożenia
 
@@ -52,6 +52,7 @@ W tej fazie działania ładu mostkuje podział między wynikami biznesowymi i st
 
 - W przypadku nowych aplikacji opartych na chmurze wprowadź w pełni zautomatyzowane wdrożenia na początku procesu tworzenia oprogramowania. Ta inwestycja poprawi niezawodność procesów testowych i zapewnia spójność w środowiskach deweloperskich, pytań i odpowiedzi.
 - Wszystkie artefakty wdrożenia, takie jak szablony wdrażania lub skrypty konfiguracyjne, są przechowywane przy użyciu platformy kontroli źródła, takiej jak GitHub lub Azure DevOps.
+- Przechowuj wszystkie wpisy tajne, hasła, certyfikaty i parametry połączeń w [Azure Key Vault](https://docs.microsoft.com/azure/key-vault)
 - Rozważmy test pilotażowy przed wdrożeniem [przyspieszania wdrażania łańcucha narzędzi](./toolchain.md), aby upewnić się, że usprawnia wdrożenia tak jak to możliwe. Zastosuj opinię z testów pilotażowych w fazie prewdrażania, powtarzając się w razie konieczności.
 - Oceń logiczną i fizyczną architekturę aplikacji, a także Zidentyfikuj możliwości automatyzacji wdrażania zasobów aplikacji lub Popraw fragmenty architektury przy użyciu innych zasobów opartych na chmurze.
 - Aktualizacja dokumentu z instrukcjami dotyczącymi architektury w celu uwzględnienia planów wdrażania i wdrożenia użytkowników oraz dystrybucji do kluczowych udziałowców.

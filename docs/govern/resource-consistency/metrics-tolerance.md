@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metryki spójności zasobów, wskaźniki i tolerancja ryzyka
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4ec7b4700f80a8ad7b46900ed0f3f869ccfbb94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028414"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222951"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metryki spójności zasobów, wskaźniki i tolerancja ryzyka
 
-Ten artykuł ma na celu ułatwienie określenia tolerancji ryzyka biznesowego, które wiążą się ze spójnością zasobów. Zdefiniowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy do składania inwestycji w celu wykupu dyscypliny spójności zasobów.
+Ten artykuł pomoże Ci określić tolerancję ryzyka biznesowego, która odnosi się do spójności zasobów. Zdefiniowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy do składania inwestycji w celu wykupu dyscypliny spójności zasobów.
 
 ## <a name="metrics"></a>Metryki
 
@@ -33,7 +33,7 @@ Każda organizacja ma inne scenariusze operacyjne, ale następujące elementy st
 - **Wiek zasobu.** Czas od ostatniego wdrożenia lub modyfikacji zasobu.
 - **Maszyny wirtualne w warunku krytycznym.** Liczba wdrożonych maszyn wirtualnych, w których wykryto co najmniej jeden krytyczny problem, który należy rozwiązać, aby przywrócić normalne funkcje.
 - **Alerty według ważności.** Łączna liczba alertów dla wdrożonego elementu zawartości podzielona według ważności.
-- **Linki podsieci w złej kondycji.** Liczba zasobów z problemami z łącznością sieciową.
+- **Linki sieci w złej kondycji.** Liczba zasobów z problemami z łącznością sieciową.
 - **Punkty końcowe usługi w złej kondycji.** Liczba problemów z punktami końcowymi sieci zewnętrznych.
 - **Zdarzenia dotyczące kondycji usługi dostawcy chmury.** Liczba zakłóceń lub zdarzeń wydajności spowodowanych przez dostawcę chmury.
 - **Umowy dotyczące poziomu usług.** Może to obejmować zobowiązania firmy Microsoft dotyczące czasu przestoju i łączności usług platformy Azure, a także zobowiązania podejmowane przez firmę klientom zewnętrznym i wewnętrznym.

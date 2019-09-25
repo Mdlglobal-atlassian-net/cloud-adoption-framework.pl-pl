@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Przykładowe instrukcje dotyczące zasad przyspieszania wdrażania
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4a2b1666332ca884dfb95b2b2372f3b5518bd635
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026565"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222667"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Przykładowe instrukcje dotyczące zasad przyspieszania wdrażania
 
@@ -32,7 +32,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Wszystkie zasoby wdrożone w chmurze powinny być wdrażane za pomocą szablonów lub skryptów automatyzacji wszędzie tam, gdzie to możliwe.
 
-**Potencjalne opcje projektu:** [Szablony Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) udostępniają podejście "infrastruktura jako kod" do wdrażania zasobów na platformie Azure. [Bloki konstrukcyjne platformy Azure](https://github.com/mspnp/template-building-blocks/wiki) udostępniają narzędzie wiersza polecenia i zestaw szablonów Menedżer zasobów zaprojektowanych w celu uproszczenia wdrażania zasobów platformy Azure.
+**Potencjalne opcje projektu:** [Szablony Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) udostępniają podejście "infrastruktura jako kod" do wdrażania zasobów na platformie Azure. Można również użyć [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) jako spójnego lokalnego i opartego na chmurze narzędzia do wdrażania.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Brak wglądu w problemy systemowe
 
@@ -43,21 +43,21 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 - Kluczowe metryki i środki diagnostyki zostaną zidentyfikowane dla wszystkich systemów i składników produkcyjnych, a narzędzia do monitorowania i diagnostyki zostaną zastosowane do tych systemów i monitorowane regularnie przez pracowników operacyjnych.
 - Operacje będą brane pod uwagę przy użyciu narzędzi do monitorowania i diagnostyki w środowiskach nieprodukcyjnych, takich jak przygotowanie i kontrola jakości, aby identyfikować problemy systemowe przed ich wystąpieniem w środowisku produkcyjnym.
 
-**Potencjalne opcje projektu:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor), która obejmuje także Log Analytics i Application Insights, oferuje narzędzia do zbierania i analizowania danych telemetrycznych, które pomagają zrozumieć, jak działają aplikacje i aktywnie identyfikują problemy wpływające na nie i zasoby, od których zależą.
+**Potencjalne opcje projektu:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor), która obejmuje także Log Analytics i Application Insights, oferuje narzędzia do zbierania i analizowania danych telemetrycznych, które pomagają zrozumieć, jak działają aplikacje i aktywnie identyfikują problemy wpływające na nie i zasoby, od których zależą. Ponadto [Dziennik aktywności platformy Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) raportuje wszystkie zmiany wprowadzane na poziomie platformy i powinny być monitorowane/poddane inspekcji pod kątem niezgodnych zmian.
 
 ## <a name="configuration-security-reviews"></a>Przeglądy zabezpieczeń konfiguracji
 
 **Ryzyko techniczne:** W miarę upływu czasu nowe zagrożenia lub problemy związane z bezpieczeństwem mogą zwiększyć ryzyko nieautoryzowanego dostępu do zabezpieczonych zasobów.
 
-**Instrukcja zasad:** Procesy nadzoru chmur muszą obejmować kwartalne przeglądy z zespołami zarządzania konfiguracją w celu identyfikowania złośliwych aktorów lub wzorców użytkowania, które powinny być blokowane przez konfigurację zasobów w chmurze.
+**Instrukcja zasad:** Procesy nadzoru chmur muszą obejmować comiesięczne przeglądy z zespołami zarządzania konfiguracją w celu identyfikowania złośliwych aktorów lub wzorców użytkowania, które powinny być blokowane przez konfigurację zasobów w chmurze.
 
-**Potencjalne opcje projektu:** Ustanów kwartalne spotkanie przeglądowe dotyczące zabezpieczeń, które obejmuje członków zespołu nadzoru i personel IT odpowiedzialny za konfigurację aplikacji i zasobów w chmurze. Zapoznaj się z istniejącymi danymi i metrykami zabezpieczeń, aby ustalić luki w bieżącym narzędziu do przyspieszania wdrażania i narzędziach, a także zasady aktualizacji w celu skorygowania wszelkich nowych zagrożeń.
+**Potencjalne opcje projektu:** Ustanów comiesięczne spotkanie przeglądowe dotyczące zabezpieczeń, które obejmuje członków zespołu nadzoru i personel IT odpowiedzialny za konfigurację aplikacji i zasobów w chmurze. Zapoznaj się z istniejącymi danymi i metrykami zabezpieczeń, aby ustalić luki w bieżącym narzędziu do przyspieszania wdrażania i narzędziach, a także zasady aktualizacji w celu skorygowania wszelkich nowych zagrożeń.
 
 ## <a name="next-steps"></a>Następne kroki
 
 Skorzystaj z przykładów przedstawionych w tym artykule jako punktu wyjścia do opracowania zasad, które wiążą się z konkretnymi zagrożeniami biznesowymi, które są dostosowane do planów wdrażania w chmurze.
 
-Aby rozpocząć tworzenie własnych niestandardowych instrukcji zasad związanych z zarządzaniem tożsamościami, Pobierz [szablon linii bazowej tożsamości](./template.md).
+Aby rozpocząć tworzenie własnych niestandardowych instrukcji zasad związanych z zarządzaniem tożsamościami, Pobierz [szablon linii bazowej tożsamości](../identity-baseline/template.md).
 
 Aby przyspieszyć wdrażanie tego dyscypliny, wybierz [Przewodnik dotyczący ładu](../guides/index.md) z możliwością działania, który najlepiej odpowiada Twojemu środowisku. Następnie zmodyfikuj projekt, aby uwzględnić określone decyzje dotyczące zasad firmowych.
 

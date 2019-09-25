@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a0a2674a91b963154d757eb35290b8aeead5c503
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4efd5b3de5551297a6ef5813a5108f3ad039472c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028177"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222305"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Wiele warstw nadzoru
 
@@ -57,4 +57,3 @@ Ważnym aspektem każdego z tych narzędzi jest możliwość zastosowania wielu 
 - **Zespoły wdrażania chmury:** Szczegółowe decyzje i implementacje dotyczące aplikacji lub obciążeń mogą być podejmowane przez każdego zespołu adopcji w chmurze w kontekście wymagań ładu. Czasami zespół może również zażądać dodatkowych szablonów spójności zasobów platformy Azure, aby przyspieszyć wdrażanie.
 
 Szczegóły dotyczące wdrożenia ładu na każdym poziomie będą wymagały koordynacji między poszczególnymi członkami zespołu. Udoskonalenia ładu i ładu, które opisano w tym przewodniku, mogą pomóc w dostosowywaniu tej koordynacji.
-

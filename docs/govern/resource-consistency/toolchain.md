@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Narzędzia spójności zasobów na platformie Azure
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e67d172b936c37aefb6764a304aaaf8f6788ffbe
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a09e4748dd805757d9f78e8dd927737ca9a91f7f
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026830"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222928"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Narzędzia spójności zasobów na platformie Azure
 
@@ -25,7 +25,7 @@ Poniżej znajduje się lista narzędzi platformy Azure, które mogą pomóc w za
 | Tool | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | Wdrażanie zasobów                             | Tak | Yes | Yes | Yes | Nie  | Nie | Nie |
-| Zarządzanie zasobami                             | Tak | Yes | Yes | Yes | Nie  | Nie | Nie |
+| Zarządzaj zasobami                             | Tak | Yes | Yes | Yes | Nie  | Nie | Nie |
 | Wdrażanie zasobów przy użyciu szablonów             | Nie  | Yes | Nie  | Yes | Nie  | Nie | Nie |
 | Wdrożenie środowiska aranżacjowego          | Nie  | Nie  | Yes | Nie  | Nie  | Nie | Nie |
 | Definiowanie grup zasobów                       | Tak | Yes | Yes | Nie  | Nie  | Nie | Nie |
@@ -39,7 +39,7 @@ Poniżej znajduje się lista narzędzi platformy Azure, które mogą pomóc w za
 | Stosowanie tagów do zasobów                      | Tak | Yes | Yes | Nie  | Nie  | Nie | Nie |
 | Przypisywanie reguł Azure Policy                    | Tak | Yes | Yes | Nie  | Nie  | Nie | Nie |
 | Zastosuj automatyczne korygowanie                  | Nie  | Nie  | Nie  | Yes | Nie  | Nie | Nie |
-| Zarządzanie rozliczeniami                               | Tak | Nie  | Nie  | Nie  | Nie  | Nie | Nie |
+| Zarządzaj rozliczeniami                               | Tak | Nie  | Nie  | Nie  | Nie  | Nie | Nie |
 | Planowanie zasobów na potrzeby odzyskiwania po awarii         | Tak | Yes | Yes | Nie  | Nie  | Yes | Tak |
 |Odzyskiwanie danych podczas awarii lub naruszenia umowy SLA     | Nie | Nie  | Nie  | Nie  | Nie  | Yes | Tak |
 |Odzyskiwanie aplikacji i danych podczas awarii lub naruszenia umowy SLA     | Nie | Nie  | Nie  | Nie  | Nie  | Yes | Tak |

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f8b78ab958f732920d7282ade80e9da421e5b0e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031062"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220170"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Ulepszanie dyscypliny Cost Management
 
@@ -66,16 +66,16 @@ Poniższe zmiany zasad pomogą skorygować nowe zagrożenia i implementację prz
 Ta część artykułu poprawi projekt ładu MVP, aby uwzględnić nowe zasady platformy Azure i implementację Azure Cost Management. Te dwie zmiany w projekcie zostaną spełnione w ramach nowych instrukcji dotyczących zasad firmowych.
 
 1. Wprowadź zmiany w usłudze Azure Enterprise Portal, aby obciążyć administratora działu na potrzeby kanadyjskiego wdrożenia.
-1. Zaimplementuj Azure Cost Management.
+2. Zaimplementuj Azure Cost Management.
     1. Ustal zakres dostępu odpowiedni do dopasowania przy użyciu wzorca subskrypcji i wzorca grupowania zasobów. Przy założeniu, że wyrównanie jest stosowane w przypadku zarządzania MVP, zdefiniowanego w poprzednich artykułach, wymaga to dostępu do **zakresu kont rejestracji** dla zespołu nadzoru chmurowego wykonywanego na potrzeby raportowania wysokiego poziomu. Dodatkowe zespoły poza nadzorem, takie jak zespół ds. zakupów, będą wymagały dostępu do **zakresu grupy zasobów** .
-    1. Ustanów budżet w Azure Cost Management.
-    1. Przejrzyj i zapoznaj się z wstępnymi zaleceniami. Zaleca się wykonanie cyklicznego procesu do obsługi procesu raportowania.
-    1. Skonfiguruj i wykonaj raportowanie Azure Cost Management, zarówno początkowych, jak i cyklicznych.
-1. Aktualizacja Azure Policy.
+    2. Ustanów budżet w Azure Cost Management.
+    3. Przejrzyj i zapoznaj się z wstępnymi zaleceniami. Zaleca się wykonanie cyklicznego procesu do obsługi procesu raportowania.
+    4. Skonfiguruj i wykonaj raportowanie Azure Cost Management, zarówno początkowych, jak i cyklicznych.
+3. Aktualizacja Azure Policy.
     1. Tagowanie inspekcji, grupy zarządzania, subskrypcji i wartości grupy zasobów, aby zidentyfikować wszelkie odchylenia.
-    1. Ustanów opcje rozmiaru jednostki SKU, aby ograniczyć wdrożenia do jednostek SKU wymienionych w dokumentacji planowania wdrożenia.
+    2. Ustanów opcje rozmiaru jednostki SKU, aby ograniczyć wdrożenia do jednostek SKU wymienionych w dokumentacji planowania wdrożenia.
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 Dodanie powyższych procesów i zmian do ładu MVP pomaga skorygować wiele zagrożeń związanych z zarządzaniem kosztami. Wspólnie tworzą one widoczność, odpowiedzialność i optymalizacje, które są konieczne do kontrolowania kosztów.
 

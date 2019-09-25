@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Duże Przewodnik po przedsiębiorstwie: Poprawa chmury'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6f015fcc7a0cb4000502d90ff971341fd6d26ca5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9e7b968683e2ab7295b4178cb8b7f9fbf43e33b1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027755"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220611"
 ---
 # <a name="large-enterprise-guide-multicloud-improvement"></a>Duże Przewodnik po przedsiębiorstwie: Poprawa chmury
 
 ## <a name="advancing-the-narrative"></a>Przesuwanie narracji
 
-Firma Microsoft uznaje, że klienci przyjmują wiele chmur do określonych celów. Fikcyjna firma w tym przewodniku nie jest wyjątkiem. Równolegle z podróżą w zakresie wdrażania platformy Azure, sukces biznesowy doprowadził do nabycia małego, ale dodatkowej firmy. Firma pracuje nad wszystkimi swoimi operacjami IT na innym dostawcy chmury.
+Firma Microsoft uznaje, że klienci mogą zastosować wiele chmur do określonych celów. Fikcyjna firma w tym przewodniku nie jest wyjątkiem. Równolegle ze swoją podróżą w zakresie wdrażania platformy Azure, sukces biznesowy doprowadził do nabycia niewielkiej, ale dodatkowej firmy. Firma pracuje nad wszystkimi swoimi operacjami IT na innym dostawcy chmury.
 
 W tym artykule opisano, jak zmieniają się zmiany podczas integrowania nowej organizacji. Na potrzeby postanowień przyjęto, że firma Microsoft zakończyła wszystkie iteracje ładu opisane w tym przewodniku ładu.
 
@@ -64,23 +64,23 @@ W tej części artykułu Ulepszono projekt ładu MVP w celu uwzględnienia nowyc
 
 1. Połącz sieci. Wykonywane przez sieci i zabezpieczenia INFORMATYCZNe, obsługiwane przez zarządzanie.
     1. Dodanie połączenia od dostawcy MPLS lub dzierżawy do nowej chmury spowoduje integrację sieci. Dodanie tabel routingu i konfiguracji zapory umożliwi sterowanie dostępem i ruchem między środowiskami.
-1. Konsolidowanie dostawców tożsamości. W zależności od obciążeń obsługiwanych w chmurze dodatkowej istnieje wiele opcji konsolidacji dostawców tożsamości. Poniżej przedstawiono kilka przykładów:
+2. Konsolidowanie dostawców tożsamości. W zależności od obciążeń obsługiwanych w chmurze dodatkowej istnieje wiele opcji konsolidacji dostawców tożsamości. Poniżej przedstawiono kilka przykładów:
     1. W przypadku aplikacji, które uwierzytelniają się za pomocą protokołu OAuth 2, użytkownicy w Active Directory w chmurze pomocniczej mogą być po prostu zreplikowane do istniejącej dzierżawy usługi Azure AD.
-    1. W drugiej skrajnym federacji między dwoma lokalnymi dostawcami tożsamości wszyscy użytkownicy z nowych domen Active Directory mogą być replikowane na platformę Azure.
-1. Dodaj zasoby do Azure Site Recovery.
+    2. W drugiej skrajnym federacji między dwoma lokalnymi dostawcami tożsamości wszyscy użytkownicy z nowych domen Active Directory mogą być replikowane na platformę Azure.
+3. Dodaj zasoby do Azure Site Recovery.
     1. Azure Site Recovery została skompilowana jako narzędzie hybrydowe i wielochmurowe od początku.
-    1. Maszyny wirtualne w chmurze pomocniczej mogą być chronione za pomocą tych samych Azure Site Recoveryych procesów, które są używane do ochrony zasobów lokalnych.
-1. Dodaj zasoby do Azure Cost Management.
+    2. Maszyny wirtualne w chmurze pomocniczej mogą być chronione za pomocą tych samych Azure Site Recoveryych procesów, które są używane do ochrony zasobów lokalnych.
+4. Dodaj zasoby do Azure Cost Management.
     1. Azure Cost Management zostało skompilowane jako narzędzie wielochmurowe od początku.
-    1. Maszyny wirtualne w chmurze pomocniczej mogą być zgodne z Azure Cost Managementami dla niektórych dostawców chmury. Mogą obowiązywać dodatkowe koszty.
-1. Dodaj zasoby do Azure Monitor.
+    2. Maszyny wirtualne w chmurze pomocniczej mogą być zgodne z Azure Cost Managementami dla niektórych dostawców chmury. Mogą obowiązywać dodatkowe koszty.
+5. Dodaj zasoby do Azure Monitor.
     1. Azure Monitor zostało skompilowane jako narzędzie chmury hybrydowej od początku.
-    1. Maszyny wirtualne w chmurze pomocniczej mogą być zgodne z Azure Monitor agentami, co umożliwia ich uwzględnienie w Azure Monitor monitorowania operacyjnego.
-1. Narzędzia wymuszania ładu.
+    2. Maszyny wirtualne w chmurze pomocniczej mogą być zgodne z Azure Monitor agentami, co umożliwia ich uwzględnienie w Azure Monitor monitorowania operacyjnego.
+6. Narzędzia wymuszania ładu.
     1. Wymuszanie ładu jest specyficzne dla chmury.
-    1. Zasady firmowe ustanowione w przewodniku ładu nie są specyficzne dla chmury. Chociaż implementacja może się różnić w zależności od chmury, można zastosować instrukcje zasad do dostawcy pomocniczego.
+    2. Zasady firmowe ustanowione w przewodniku ładu nie są specyficzne dla chmury. Chociaż implementacja może się różnić w zależności od chmury, można zastosować instrukcje zasad do dostawcy pomocniczego.
 
-Po rozwojem wdrożenia wielochmurowego powyższy projekt ładu będzie kontynuował pracę.
+Wdrożenie w chmurze powinno być zawarte w miejscu, w którym jest wymagane na podstawie wymagań technicznych lub określonych wymagań firmy. W miarę rozwoju wdrożenia z zastosowaniem rozwiązań w chmurze, w związku z czym złożoność i zagrożenia bezpieczeństwa.
 
 ## <a name="next-steps"></a>Następne kroki
 

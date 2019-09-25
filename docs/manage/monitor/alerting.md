@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 76fb8084aad799d3bbfdaf3bd2ef4330fd080ac0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030416"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221366"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Przewodnik monitorowania chmury: Generowanie alertów
 
@@ -94,7 +94,7 @@ Tym samym, istnieje kilka ważnych przypisów dla tej reguły.
 
 **Telemetrię systemu operacyjnego gościa** ma wiele ścieżek do pobrania w systemie.
 
-- Najszybszy sposób na wysłanie alertów dotyczących tych danych polega na zaimportowaniu ich jako metryki niestandardowych. W tym celu należy użyć rozszerzenia Diagnostyka Azure, a następnie użyć alertu dotyczącego metryki. Jednak metryki niestandardowe są obecnie dostępne w wersji zapoznawczej i są [droższe niż inne opcje](https://azure.microsoft.com/pricing/details/monitor/).
+- Najszybszy sposób na wysłanie alertów dotyczących tych danych polega na zaimportowaniu ich jako metryki niestandardowych. W tym celu należy użyć rozszerzenia Diagnostyka Azure, a następnie użyć alertu dotyczącego metryki. Jednak metryki niestandardowe są obecnie dostępne w wersji zapoznawczej i są [droższe niż inne opcje](https://azure.microsoft.com/pricing/details/monitor).
 
 - Najtańsza, ale najwolniejsza Metoda polega na wysłaniu jej do magazynu Kusto dzienników platformy Azure. Uruchomienie agenta Log Analytics na maszynie wirtualnej jest najlepszym sposobem na uzyskanie wszystkich metryk systemu operacyjnego gościa i danych dzienników do tego magazynu.
 
@@ -113,9 +113,9 @@ Jeśli nie używasz Azure Monitor dla maszyn wirtualnych, zapoznaj się z nastę
 
 - [Progi dynamiczne](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds). Progi dynamiczne sprawdzają aktywność zasobu w danym okresie i tworzą górne i dolne progi "normalne zachowanie". Gdy monitorowana Metryka wykracza poza te progi, zostanie wyświetlony alert.
 
-- [Alerty wielokrotne](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). Można utworzyć alert dotyczący metryki, który używa kombinacji dwóch różnych danych wejściowych z dwóch różnych typów zasobów. Na przykład jeśli chcesz uruchomić alert, gdy procesor maszyny wirtualnej przekracza 90 procent, a liczba komunikatów w określonej Azure Service Bus kolejce obsłużyć tę maszynę wirtualną, można to zrobić bez tworzenia zapytania dziennika. Działa to tylko w przypadku dwóch sygnałów. W przypadku bardziej złożonej kwerendy podawanie danych metryki do magazynu dzienników Azure Monitor i użycie zapytania dziennika.
+- [Alerty wielokrotne](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). Można utworzyć alert dotyczący metryki, który używa kombinacji dwóch różnych danych wejściowych z dwóch różnych typów zasobów. Na przykład jeśli chcesz uruchomić alert, gdy procesor maszyny wirtualnej przekracza 90 procent, a liczba komunikatów w określonej Azure Service Bus kolejce obsłużyć tę maszynę wirtualną, można to zrobić bez tworzenia zapytania dziennika. Działa to tylko w przypadku dwóch sygnałów. W przypadku bardziej złożonej kwerendy podawanie danych metryki do magazynu dzienników Azure Monitor i użycie zapytania dziennika.
 
-- [Alerty wielozasobów](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). Azure Monitor zezwala na regułę alertu o pojedynczej metryce, która ma zastosowanie do wszystkich zasobów maszyny wirtualnej. Ta funkcja może zaoszczędzić czas, ponieważ nie trzeba tworzyć poszczególnych alertów dla każdej maszyny wirtualnej. Cennik tego typu alertu jest taki sam. Jeśli utworzono alerty 50 na potrzeby monitorowania użycia procesora CPU dla maszyn wirtualnych 50 lub 1 alert, który monitoruje użycie procesora dla wszystkich maszyn wirtualnych 50, koszt ten jest taki sam. Te typy alertów można również używać w połączeniu z progami dynamicznymi.
+- [Alerty wielozasobów](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). Azure Monitor zezwala na regułę alertu o pojedynczej metryce, która ma zastosowanie do wszystkich zasobów maszyny wirtualnej. Ta funkcja może zaoszczędzić czas, ponieważ nie trzeba tworzyć poszczególnych alertów dla każdej maszyny wirtualnej. Cennik tego typu alertu jest taki sam. Jeśli utworzono alerty 50 na potrzeby monitorowania użycia procesora CPU dla maszyn wirtualnych 50 lub 1 alert, który monitoruje użycie procesora dla wszystkich maszyn wirtualnych 50, koszt ten jest taki sam. Te typy alertów można również używać w połączeniu z progami dynamicznymi.
 
 Te funkcje umożliwiają zaoszczędzenie czasu przez zminimalizowanie powiadomień o alertach i zarządzanie alertami.
 

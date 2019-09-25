@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metryki, wskaźniki i odporność na przyspieszenie wdrożenia
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5049b41abc03c5f59d0d750373b48a39b0638084
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7a7965acb7b1ace74983c7d0e1e65c3d47b2cc5
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027759"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220708"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Metryki, wskaźniki i odporność na przyspieszenie wdrożenia
 
-Ten artykuł ma na celu ułatwienie określenia tolerancji ryzyka biznesowego, które wiążą się z przyspieszeniem wdrażania. Definiowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy dla inwestycji w okres zapadalności dyscypliny wdrożenia.
+Ten artykuł pomoże Ci określić tolerancję ryzyka biznesowego, która odnosi się do przyspieszenia wdrażania. Definiowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy dla inwestycji w okres zapadalności dyscypliny wdrożenia.
 
 ## <a name="metrics"></a>Metryki
 
@@ -34,7 +34,7 @@ Ryzyko związane z przyspieszeniem wdrażania jest w dużym stopniu związane z 
 
 <!-- "en-us" location is required for the URL below. -->
 
-Rozważ przyjęcie kultury organizacyjnej DevOps lub [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) na wczesnej platformie w podróży wdrażania w chmurze. Tradycyjni korporacyjne organizacje IT często korzystają z silosów, zabezpieczeń i zespołów programistycznych, które często nie współpracują ze sobą lub są nawet adversarial lub nieszkodliwe. Aby zapewnić wczesne Rozwiązywanie problemów i integrowanie najważniejszych osób biorących udział w każdym z zespołów, może pomóc w zapewnieniu elastyczności wdrożenia chmury, gdy pozostała bezpieczna i dobrze zarządzana.
+Tradycyjni korporacyjne organizacje IT często korzystają z silosów, zabezpieczeń i zespołów programistycznych, które często nie współpracują ze sobą lub są nawet adversarial lub nieszkodliwe. Aby zapewnić wczesne Rozwiązywanie problemów i integrowanie najważniejszych osób biorących udział w każdym z zespołów, może pomóc w zapewnieniu elastyczności wdrożenia chmury, gdy pozostała bezpieczna i dobrze zarządzana. W związku z tym, należy rozważyć przyjęcie kultury organizacyjnej DevOps lub [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) na wczesnej platformie w podróży do wdrożenia w chmurze. 
 
 Współpracuj z zespołem DevSecOps oraz zainteresowanymi stronami biznesowymi, aby identyfikować [zagrożenia biznesowe](./business-risks.md) związane z konfiguracją, a następnie określić akceptowalny punkt odniesienia dla tolerancji ryzyka konfiguracji. W tej sekcji wskazówek dotyczących struktury wdrażania chmury przedstawiono przykłady, ale szczegóły dotyczące zagrożeń i linii bazowych dla Twojej firmy lub wdrożeń będą prawdopodobnie inne.
 

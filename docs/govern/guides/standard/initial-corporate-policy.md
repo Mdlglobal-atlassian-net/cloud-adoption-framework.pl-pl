@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4da4899038ca86bec2f1d003f9eaaee293119a09
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028834"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223666"
 ---
 # <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Standardowa Przewodnik po przedsiębiorstwie: Wstępne zasady korporacyjne związane z strategią ładu
 
@@ -33,7 +33,7 @@ W tym opisie zespół zarządzający chmurą składa się z dwóch administrator
 
 Aktualna tolerancja dla ryzyka jest wysoka i akceptowalnego poziomu do inwestowania w zarządzanie chmurą jest niska. W związku z tym wskaźniki tolerancji działają jako system wczesnego ostrzegania, aby wyzwolić większe inwestycje czasu i energii. Jeśli i gdy są obserwowane następujące wskaźniki, należy iteracyjnie poprawić strategię zarządzania.
 
-- **Cost Management:** Skala wdrożenia przekracza 100 zasobów do chmury, a miesięczne wydatki przekraczają $1 000 USD miesięcznie.
+- **Cost Management:** Skala wdrożenia przekracza wstępnie określone limity liczby zasobów lub miesięcznych kosztów.
 - **Linia bazowa zabezpieczeń:** Uwzględnianie chronionych danych w zdefiniowanych planach wdrożenia chmury.
 - **Spójność zasobów:** Uwzględnianie wszystkich aplikacji o znaczeniu krytycznym w określonych planach wdrożenia chmury.
 

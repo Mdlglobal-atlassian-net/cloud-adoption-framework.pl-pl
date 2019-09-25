@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: e46c045d51bd4961f1cf355352cb84b110a81d81
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: afac61c918f90c21e8d96032199d5e8c1cdfa50c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023538"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222623"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Wyrównaj modele kosztów za pomocą cyfrowej infrastruktury do prognozowania kosztów chmury
 
@@ -24,7 +24,7 @@ Narzędzia cen platformy Azure ułatwiają zarządzanie wydatkami w chmurze dzi�
 
 - [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview): Azure Migrate jest najtańszym podejściem do wyrównania modelu kosztów. To narzędzie umożliwia [spis inwentarza](./inventory.md)cyfrowego, [ograniczoną racjonalizację](./rationalize.md)i obliczenia kosztów w jednym narzędziu.
 
-- [Kalkulator całkowitego kosztu posiadania (TCO)](https://azure.microsoft.com/pricing/tco/calculator/): Obniż całkowity koszt posiadania infrastruktury lokalnej na platformie Azure Cloud Platform. Skorzystaj z kalkulatora TCO na platformie Azure, aby oszacować oszczędności kosztów, które możesz zrealizować przez Migrowanie obciążeń aplikacji do platformy Azure. Podaj krótki opis środowiska lokalnego, aby uzyskać raport natychmiastowy.
+- [Kalkulator całkowitego kosztu posiadania (TCO)](https://azure.microsoft.com/pricing/tco/calculator): Obniż całkowity koszt posiadania infrastruktury lokalnej na platformie Azure Cloud Platform. Skorzystaj z kalkulatora TCO na platformie Azure, aby oszacować oszczędności kosztów, które możesz zrealizować przez Migrowanie obciążeń aplikacji do platformy Azure. Podaj krótki opis środowiska lokalnego, aby uzyskać raport natychmiastowy.
 
 - [Kalkulator cen platformy Azure](https://azure.microsoft.com/pricing): Oszacuj oczekiwany rachunek miesięczny, korzystając z kalkulatora cen. Śledź rzeczywiste użycie konta i rachunku w dowolnym momencie przy użyciu portalu rozliczeń. Skonfiguruj automatyczne alerty e-mail dotyczące rozliczeń, aby powiadomić Cię, jeśli Twoje wydatki przekraczają skonfigurowaną kwotę.
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Zapoznaj się z opcjami, które są dostępne w celu racjonalizacji cyfrowego podpisywania.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 09/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023616"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223867"
 ---
 # <a name="cloud-rationalization"></a>Racjonalizacja chmury
 
@@ -69,7 +69,7 @@ Typowe sterowniki mogą obejmować:
 
 - Szybsze i krótsze aktualizacje
 - Przenośność kodu
-- Większa wydajność chmury (zasoby, szybkość, koszt)
+- Większa wydajność chmury (zasoby, szybkość, koszt, operacje zarządzane)
 
 Czynniki analizy ilościowej:
 
@@ -77,6 +77,7 @@ Czynniki analizy ilościowej:
 - Zależności (ruch sieciowy)
 - Ruch użytkownika (wyświetlenia stron, czas na stronie, czas ładowania)
 - Platforma programistyczna (Języki, platforma danych, usługi warstwy środkowej)
+- Baza danych (procesor CPU, pamięć, magazyn, wersja)
 
 Czynniki analizy jakościowej:
 
@@ -102,6 +103,7 @@ Czynniki analizy ilościowej:
 - Zależności (ruch sieciowy)
 - Ruch użytkownika (wyświetlenia stron, czas na stronie, czas ładowania)
 - Platforma programistyczna (Języki, platforma danych, usługi warstwy środkowej)
+- Baza danych (procesor CPU, pamięć, magazyn, wersja)
 
 Czynniki analizy jakościowej:
 
@@ -125,6 +127,7 @@ Czynniki analizy ilościowej:
 - Zależności (ruch sieciowy)
 - Ruch użytkownika (wyświetlenia stron, czas na stronie, czas ładowania)
 - Platforma programistyczna (Języki, platforma danych, usługi warstwy środkowej)
+- Baza danych (procesor CPU, pamięć, magazyn, wersja)
 
 Czynniki analizy jakościowej:
 
@@ -148,6 +151,7 @@ Czynniki analizy ilościowej:
 - Rozmiar maszyny wirtualnej (procesor, pamięć, magazyn)
 - Zależności (ruch sieciowy)
 - Zasoby do wycofania
+- Baza danych (procesor CPU, pamięć, magazyn, wersja)
 
 Czynniki analizy jakościowej:
 

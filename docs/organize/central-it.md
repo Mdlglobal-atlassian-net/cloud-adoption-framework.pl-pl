@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: b99fbeca1d9761d16c780bf8329572e5b84fffe9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 54e08a42a64d06005620b450b1458288316df74e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030004"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224018"
 ---
 # <a name="central-it-capabilities"></a>Centralne możliwości IT
 
@@ -111,7 +111,7 @@ Jednak jeden z zespołów wdrażania chmury wymaga teraz środowiska z dedykowan
 
 **Negocjacji** Sama klasyfikacja nie jest wystarczająca. Usługi udostępnione zostały wdrożone w celu spójnego działania zasobów poufnych i o kluczowym znaczeniu. Zmiana reguł spowoduje naruszenie zasad zarządzania i zgodności dla zasobów, które wymagają większej ochrony. Nie można nawiązać przyjęcia na koszt stabilności, bezpieczeństwa lub zarządzania. Prowadzi to do negocjacji z zespołem ds. wdrażania, aby odpowiedzieć na określone pytania. Czy zespół DevOps, który prowadzi działalność biznesową, będzie w stanie zapewnić zarządzanie operacjami w tym środowisku? Czy to rozwiązanie wymaga bezpośredniego dostępu do innych zasobów wewnętrznych? Jeśli zespół adopcji w chmurze jest wygodny dla tych kompromisów, może być możliwy ruch przychodzący.
 
-**Izolacji** Ponieważ firma może zapewnić własne bieżące zarządzanie operacjami, a ponieważ rozwiązanie nie jest zależne od bezpośredniego ruchu do innych zasobów wewnętrznych, można je odizolowywane w nowej subskrypcji. Ta subskrypcja jest również dodawana do oddzielnego węzła nowej hierarchii grupy zarządzania.
+**Izolacji** Ponieważ firma może zapewnić własne bieżące zarządzanie operacjami, a ponieważ rozwiązanie nie polega na kierowaniu ruchu do innych zasobów wewnętrznych, można je odizolowywane w nowej subskrypcji. Ta subskrypcja jest również dodawana do oddzielnego węzła nowej hierarchii grupy zarządzania.
 
 **Automatyzacja:** Kolejną oznaką zapadalności w tym zespole są zasady automatyzacji. Zespół używa Azure Policy do automatyzowania wymuszania zasad. Używają one również planów platformy Azure do automatyzowania wdrażania wspólnych składników platformy i wymuszania zgodności z określoną linią bazową tożsamości. W przypadku tej subskrypcji i innych w nowej grupie zarządzania zasady i szablony są nieco inne. Zasady blokujące przepustowość transferu danych przychodzących zostały zniesione. Zostały one zastąpione przez wymagania związane z kierowaniem ruchu przez subskrypcję usług udostępnionych, podobnie jak w przypadku ruchu przychodzącego, aby wymusić izolację ruchu. Ponieważ lokalne narzędzia do zarządzania operacjami nie mogą uzyskać dostępu do tej subskrypcji, agenci tego narzędzia nie są już wymagani. Wszystkie inne guardrailsy ładu wymagane przez inne subskrypcje w hierarchii grupy zarządzania nadal są wymuszane, co zapewnia wystarczającą guardrails.
 

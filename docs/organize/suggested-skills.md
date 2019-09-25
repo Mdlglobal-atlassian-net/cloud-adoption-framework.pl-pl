@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7b450165c1356e5297a3424ea8f699dced0422a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 75aa65f9a39576eb807e7b147c2c4a658f693619
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030147"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224294"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Ścieżka gotowości do kwalifikacji w fazie "gotowe" migracji
 
@@ -44,9 +44,9 @@ W fazie gotowości personel techniczny musi utworzyć strefę wypełniania migra
 
 W fazie gotowości architekty muszą projektować rozwiązania obejmujące wszystkie środowiska platformy Azure. Następujące zasoby mogą przygotować je do następujących zadań:
 
-- [Foundations for cloud architecture](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/) (Podstawy architektury chmury): PluralSight kurs ułatwiający architektom właściwych rozwiązań.
-- [Microsoft Azure architecture](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/) (Architektura platformy Microsoft Azure): PluralSighty kurs w architekturze platformy Azure.
-- [Designing migrations for Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/) (Projektowanie migracji dla platformy Microsoft Azure): PluralSighty kurs ułatwiający architektom projektowanie rozwiązania migracji.
+- [Foundations for cloud architecture](https://app.pluralsight.com/library/courses/cloud-architecture-foundations) (Podstawy architektury chmury): PluralSight kurs ułatwiający architektom właściwych rozwiązań.
+- [Microsoft Azure architecture](https://app.pluralsight.com/library/courses/cloud-architecture-foundations) (Architektura platformy Microsoft Azure): PluralSighty kurs w architekturze platformy Azure.
+- [Designing migrations for Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations) (Projektowanie migracji dla platformy Microsoft Azure): PluralSighty kurs ułatwiający architektom projektowanie rozwiązania migracji.
 
 ## <a name="deeper-skills-exploration"></a>Nabywanie głębszych umiejętności
 
@@ -75,4 +75,4 @@ Poniżej przedstawiono kilka przykładów ścieżek szkoleniowych specyficznych 
 
 - [Deweloperzy](/learn/browse/?roles=developer&term=infrastructure) mogą korzystać z informacji o zasobach, aby pomóc w podejmowaniu działań związanych z architekturą, zarządzaniem, modernizacją.
 
-Aby uzyskać dodatkowe ścieżki szkoleniowe, przejrzyj [Katalog szkoleń](/learn/browse/). Użyj filtru role, aby wyrównać ścieżki szkoleniowe do roli.
+Aby uzyskać dodatkowe ścieżki szkoleniowe, przejrzyj [Katalog szkoleń](/learn/browse). Użyj filtru role, aby wyrównać ścieżki szkoleniowe do roli.

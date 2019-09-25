@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motywacje spójności zasobów i ryzyko biznesowe
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42510f62cb3f673698832403126901789b05e978
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028025"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222021"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Motywacje spójności zasobów i ryzyko biznesowe
 
@@ -22,7 +22,7 @@ W tym artykule omówiono przyczyny, w których klienci zazwyczaj przyjmują dysc
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-resource-consistency-relevant"></a>Czy jest istotna spójność zasobów?
+## <a name="resource-consistency-relevancy"></a>Dokładność spójności zasobów
 
 Gdy chodzi o wdrażanie zasobów i obciążeń, Chmura zapewnia zwiększoną elastyczność i elastyczność w porównaniu z najbardziej tradycyjnymi lokalnymi centrami danych. Jednak te zalety oparte na chmurze również są sparowane z potencjalnymi wadą zarządzania, które mogą poważnie zagrozić sukcesem wdrożenia chmury. Jakie zasoby zostały wdrożone? Jakie zespoły są właścicielami zasobów? Czy masz wystarczającą ilość zasobów obsługujących obciążenie? Jak wiadomo, czy obciążenia są w dobrej kondycji?
 

@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025034"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221447"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Ocena obciążeń lokalnych pod kątem migracji do platformy Azure
 
 W tym artykule przedstawiono sposób, w jaki fikcyjna firma Contoso ocenia proces migracji aplikacji lokalnej na platformę Azure. W przykładowym scenariuszu lokalna aplikacja SmartHotel360 firmy Contoso działa obecnie w oprogramowaniu VMware. Firma Contoso ocenia maszyny wirtualne aplikacji przy użyciu usługi Azure Migrate, a bazę danych programu SQL Server aplikacji przy użyciu narzędzia Data Migration Assistant.
 
-## <a name="overview"></a>Omówienie
+## <a name="overview"></a>Przegląd
 
 Ponieważ Contoso rozważa migrację na platformę Azure, firma musi przeprowadzić ocenę techniczną i finansową, aby określić, czy lokalne obciążenia są dobrym kandydatami do migracji do chmury. W szczególności zespół firmy Contoso chce ocenić zgodność maszyny i bazy danych na potrzeby migracji. Oszacowane powinny zostać wydajność i koszty działania zasobów firmy Contoso na platformie Azure.
 
@@ -242,8 +242,8 @@ Skonfiguruj nowy projekt usługi Azure Migrate w następujący sposób.
 
 6. W obszarze **Szczegóły projektu* określ nazwę projektu i lokalizację geograficzną, w której chcesz utworzyć projekt. Obsługiwane są następujące lokalizacje: Stany Zjednoczone, Azja, Europa, Australia, Zjednoczone Królestwo, Kanada, Indie i Japonia.
 
-    * Lokalizacja geograficzna projektu jest używana wyłącznie do przechowywania metadanych zebranych z lokalnych maszyn wirtualnych.
-    * Podczas przeprowadzania migracji można wybrać dowolny region docelowy.
+    - Lokalizacja geograficzna projektu jest używana wyłącznie do przechowywania metadanych zebranych z lokalnych maszyn wirtualnych.
+    - Podczas przeprowadzania migracji można wybrać dowolny region docelowy.
 
 7. Kliknij przycisk **Dalej**.
 
@@ -312,16 +312,15 @@ Teraz przedstawiciel firmy Contoso uruchamia moduł zbierający w celu odnalezie
 
     ![Azure Migrate Collector — sprawdzanie wymagań wstępnych](./media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-6. Zaloguj się do **konta** platformy Azure i wybierz wcześniej utworzoną subskrypcję oraz projekt usługi Migrate. Wprowadź również nazwę **urządzenia**, aby można było je zidentyfikować w witrynie Azure Portal. 
-7. W oknie **Określanie szczegółów programu vCenter Server** przedstawiciel firmy Contoso wprowadza nazwę (FQDN) lub adres IP wystąpienia programu vCenter Server i poświadczenia tylko do odczytu używane do odnajdywania.
-8. Przedstawiciel firmy Contoso wybiera zakres odnajdowania maszyn wirtualnych. Moduł zbierający może odnajdywać tylko maszyny wirtualne znajdujące się w określonym zakresie. Zakresem może być określony folder, centrum danych albo klaster. 
+5. Zaloguj się do **konta** platformy Azure i wybierz wcześniej utworzoną subskrypcję oraz projekt usługi Migrate. Wprowadź również nazwę **urządzenia** , aby można było je zidentyfikować w Azure Portal.
+6. W oknie **Określanie szczegółów programu vCenter Server** przedstawiciel firmy Contoso wprowadza nazwę (FQDN) lub adres IP wystąpienia programu vCenter Server i poświadczenia tylko do odczytu używane do odnajdywania.
+7. Przedstawiciel firmy Contoso wybiera zakres odnajdowania maszyn wirtualnych. Moduł zbierający może odnajdywać tylko maszyny wirtualne znajdujące się w określonym zakresie. Zakresem może być określony folder, centrum danych albo klaster.
 
     ![Określanie szczegółów programu vCenter Server](./media/contoso-migration-assessment/collector-connect-vcenter.png)
 
+8. Moduł zbierający zacznie teraz odnajdywać i zbierać informacje o środowisku firmy Contoso.
 
-8. Moduł zbierający zacznie teraz odnajdywać i zbierać informacje o środowisku firmy Contoso. 
-
-    ![Wyświetl postęp zbierania](./media/contoso-migration-assessment/migrate-disccovery.png)
+    ![Wyświetlanie postępu zbierania](./media/contoso-migration-assessment/migrate-disccovery.png)
 
 ### <a name="verify-vms-in-the-portal"></a>Weryfikowanie maszyn wirtualnych w portalu
 
@@ -349,8 +348,8 @@ Aby zachować kopię maszyn wirtualnych przed ich zmodyfikowaniem, przedstawicie
 
 1. W obszarze **Maszyny** przedstawiciel firmy Contoso wybiera maszynę. W kolumnie **Zależności** przedstawiciel firmy Contoso wybiera pozycję **Wymaga instalacji**.
 2. W okienku **Odnajdź maszyny** przedstawiciel firmy Contoso wykonuje następujące czynności:
-    - Pobiera agenta Microsoft Monitoring Agent (MMA) i Agenta zależności dla każdej maszyny wirtualnej z systemem Windows.
-    - Pobiera agenta MMA i Agenta zależności dla każdej maszyny wirtualnej z systemem Linux.
+    - Pobiera Microsoft Monitoring Agent (MMA) i agenta zależności Microsoft dla każdej maszyny wirtualnej z systemem Windows.
+    - Pobiera MMA i agenta zależności dla każdej maszyny wirtualnej z systemem Linux.
 3. Przedstawiciel firmy Contoso kopiuje identyfikator i klucz obszaru roboczego. Identyfikator i klucz obszaru roboczego będzie potrzebny podczas instalowania agenta MMA.
 
     ![Pobieranie agenta](./media/contoso-migration-assessment/download-agents.png)
@@ -375,10 +374,10 @@ Przedstawiciel firmy Contoso uruchamia instalację na każdej maszynie wirtualne
 
 #### <a name="install-the-dependency-agent-on-windows-vms"></a>Instalowanie Agenta zależności na maszynach wirtualnych z systemem Windows
 
-1. Przedstawiciel firmy Contoso klika dwukrotnie pobranego Agenta zależności.
+1. Contoso klika dwukrotnie pobranego agenta zależności.
 2. Następnie akceptuje postanowienia licencyjne i czeka na zakończenie instalacji.
 
-    ![Konfiguracja Agenta zależności — instalowanie](./media/contoso-migration-assessment/dependency-agent.png)
+    ![Konfiguracja Agent zależności — Instalowanie](./media/contoso-migration-assessment/dependency-agent.png)
 
 ### <a name="install-the-agents-on-linux-vms"></a>Instalowanie agentów na maszynach wirtualnych z systemem Linux
 
@@ -389,9 +388,11 @@ Przedstawiciel firmy Contoso uruchamia instalację na każdej maszynie wirtualne
 1. Przedstawiciel firmy Contoso instaluje bibliotekę ctypes języka Python na każdej maszynie wirtualnej za pomocą następującego polecenia:
 
     `sudo apt-get install python-ctypeslib`
+
 2. Przedstawiciel firmy Contoso musi uruchomić to polecenie, aby zainstalować agenta MMA jako użytkownik główny. Aby stać się użytkownikiem głównym, przedstawiciel firmy Contoso uruchamia następujące polecenie, a następnie wprowadza hasło główne:
 
     `sudo -i`
+
 3. Przedstawiciel firmy Contoso instaluje agenta MMA w następujący sposób:
     - Przedstawiciel firmy Contoso wprowadza identyfikator i klucz obszaru roboczego w poleceniu.
     - Polecenia są przeznaczone dla środowiska 64-bitowego.
@@ -404,11 +405,11 @@ Przedstawiciel firmy Contoso uruchamia instalację na każdej maszynie wirtualne
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>Instalowanie Agenta zależności na maszynach wirtualnych z systemem Linux
 
-Po zainstalowaniu agenta MMA przedstawiciel firmy Contoso instaluje Agenta zależności na maszynach wirtualnych z systemem Linux:
+Po zainstalowaniu MMA firmy Contoso instaluje agenta zależności na maszynach wirtualnych z systemem Linux:
 
-1. Agent zależności jest instalowany na komputerach z systemem Linux za pomocą pliku InstallDependencyAgent-Linux64.bin, czyli skryptu powłoki z samowyodrębniającym plikiem binarnym. Przedstawiciel firmy Contoso uruchamia ten plik przy użyciu polecenia sh lub dodaje uprawnienia do wykonywania do samego pliku.
+1. Agent zależności jest instalowany na komputerach z systemem Linux przy użyciu InstallDependencyAgent-Linux64. bin, skryptu powłoki, który ma samowyodrębniający się plik binarny. Przedstawiciel firmy Contoso uruchamia ten plik przy użyciu polecenia sh lub dodaje uprawnienia do wykonywania do samego pliku.
 
-2. Przedstawiciel firmy Contoso instaluje Agenta zależności w systemie Linux jako użytkownik główny:
+2. Firma Contoso instaluje agenta zależności systemu Linux jako element główny:
 
     ```console
     wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s
@@ -513,7 +514,7 @@ Ten widok przedstawia łączne koszty zasobów obliczeniowych i magazynowych w p
 - Projekt **Contoso Migration** zostanie również zachowany na platformie Azure. Ten projekt jest obecnie wdrożony w grupie zasobów **ContosoFailoverRG** w regionie Wschodnie stany USA na platformie Azure.
 - Maszyna wirtualna modułu zbierającego ma 180-dniową licencję ewaluacyjną. Po wygaśnięciu jej ważności przedstawiciel firmy Contoso będzie musiał pobrać moduł zbierający i ponownie go skonfigurować.
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 W tym scenariuszu firma Contoso ocenia swoją bazę danych aplikacji SmartHotel360 przy użyciu narzędzia do oceny migracji danych. Za pomocą usługi Azure Migrate dokonywana jest również ocena lokalnych maszyn wirtualnych. Przedstawiciel firmy Contoso przegląda oceny w celu upewnienia się, że lokalne zasoby są gotowe do migracji na platformę Azure.
 

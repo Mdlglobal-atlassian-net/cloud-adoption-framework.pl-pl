@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 3659f5e965e5a80c3b490f8b106a4cc30f1711a9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: badf03f3616de8e6612221282aa24996f0b6e8f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026837"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221134"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Przewodnik monitorowania chmury: Strategia monitorowania dla modeli wdrożenia w chmurze
 
@@ -50,7 +50,7 @@ Dzierżawa platformy Azure|Usługa Azure Active Directory || Włącz rejestrowan
 
 ## <a name="hybrid-cloud-monitoring"></a>Monitorowanie chmury hybrydowej
 
-Ta sekcja jest obecnie opracowywana w celu dostarczenia kompleksowego zestawu zaleceń, które są przeznaczone do rozwiązania Twojego zainteresowania dla tego modelu chmury i wkrótce zostaną udostępnione.  
+Ta sekcja jest obecnie opracowywana w celu dostarczenia kompleksowego zestawu zaleceń, które wiążą Cię z Twoim modelem chmury i wkrótce zostaną udostępnione.  
 
 ## <a name="private-cloud-monitoring"></a>Monitorowanie chmury prywatnej
 

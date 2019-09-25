@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Narzędzia Cost Management na platformie Azure
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 230e36d1ca59c208109eedbbdf7466f6373f4b00
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3b301f8dfcc50539f4325901cd32553368a0da55
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029293"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222636"
 ---
 # <a name="cost-management-tools-in-azure"></a>Narzędzia Cost Management na platformie Azure
 
@@ -31,6 +31,6 @@ Poniżej znajduje się lista narzędzi macierzystych platformy Azure, które mog
 |Kontrola wydatków w ramach pojedynczego zasobu     | Tak — rozmiar ręczny         | Tak         | Nie         | Tak         |
 |Wymuś wydatki dla wielu zasobów    | Nie         | Yes         | Nie         | Tak         |
 |Wymuszaj metadane ewidencjonowania aktywności zasobów    | Nie         | Nie         | Nie         | Tak         |
-|Monitorowanie i wykrywanie trendów     | Tak — ograniczone         | Tak        | Yes         | Nie         |
+|Monitorowanie i wykrywanie trendów     | Tak          | Yes        | Yes         | Nie         |
 |Wykrywanie anomalii wydatków     | Nie         | Yes        | Yes         | Nie        |
 |Odchylenia Socialize     | Nie        | Yes        | Yes        | Nie        |

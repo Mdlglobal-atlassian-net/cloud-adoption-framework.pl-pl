@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7db1ed24f23ff9ba931e556356c04b6bb127092a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 590875a336b8af23723ab122e2af8f2290404ab3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027594"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224139"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -63,7 +63,7 @@ Dodatkowe przykłady projektów z pierwszego wdrożenia obejmują:
 - **Tworzenie i testowanie:** Usuń tworzenie i testowanie z środowisk lokalnych, aby zapewnić deweloperom kontrolę, elastyczność i samoobsługową obsługę.
 - **Proste aplikacje (mniej niż pięć):** Unowocześnienie i migrowanie prostej aplikacji, aby szybko uzyskać środowisko programistyczne i operacyjne.
 - **Laboratoria wydajności:** Gdy w ustawieniach laboratorium potrzebna jest wysoka wydajność, użyj chmury, aby szybko i ekonomicznie obsługiwać te laboratoria przez krótki czas.
-- **Platforma danych:** Tworzenie usługi Data Lake z skalowalnymi obliczeniami dla obciążeń analitycznych, raportowania i uczenia maszynowego.
+- **Platforma danych:** Tworzenie usługi Data Lake przy użyciu skalowalnych obciążeń obliczeniowych, usług raportowania i uczenia maszynowego oraz Migrowanie do zarządzanych baz danych przy użyciu metod zrzutów/przywracania lub usług migracji danych.
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3bc125145afce529507a341eae6b818cceee9330
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1d4538230ae99fd7c22f53e2873645c9b112e46a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024031"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224126"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>Ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure
 
@@ -95,7 +95,7 @@ Firma Contoso będzie migrować maszyny wirtualne bazy danych i frontonu aplikac
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
-[Migracja serwera usługi Azure Migrate](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | Usługa organizuje migrację lokalnych aplikacji i obciążeń oraz wystąpień maszyn wirtualnych AWS/GCP, a także zarządza tym procesem. | Podczas replikacji na platformę Azure naliczane są opłaty za usługę Azure Storage. Maszyny wirtualne platformy Azure zostaną utworzone w momencie przejścia w tryb failover i wówczas będą naliczane opłaty. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/azure-migrate/) o opłatach i cenach.
+[Migracja serwera usługi Azure Migrate](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | Usługa organizuje migrację lokalnych aplikacji i obciążeń oraz wystąpień maszyn wirtualnych AWS/GCP, a także zarządza tym procesem. | Podczas replikacji na platformę Azure naliczane są opłaty za usługę Azure Storage. Maszyny wirtualne platformy Azure zostaną utworzone w momencie przejścia w tryb failover i wówczas będą naliczane opłaty. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/azure-migrate) o opłatach i cenach.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -144,7 +144,7 @@ Składniki te są konfigurowane w następujący sposób:
 
 **Potrzebujesz dalszej pomocy?**
 
-[Dowiedz się więcej](https://docs.microsoft.com/azure/migrate/) o konfigurowaniu narzędzia migracji serwera usługi Azure Migrate.
+[Dowiedz się więcej](https://docs.microsoft.com/azure/migrate) o konfigurowaniu narzędzia migracji serwera usługi Azure Migrate.
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Przygotowanie do połączenia z maszynami wirtualnymi Azure po przejściu do trybu failover
 
@@ -297,6 +297,6 @@ W celu zapewnienia ciągłości działania i odzyskiwania po awarii (BCDR, Busin
 1. Firma Contoso ma istniejące licencje dla swoich maszyn wirtualnych i zastosuje korzyść użycia hybrydowego platformy Azure. Firma Contoso przekonwertuje istniejące maszyny wirtualne platformy Azure, aby skorzystać z tych cen.
 2. Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 W tym artykule firma Contoso przeprowadziła ponowne hostowanie aplikacji SmartHotel360 na platformie Azure, migrując maszyny wirtualne aplikacji do maszyn wirtualnych platformy Azure za pomocą narzędzia migracji serwera usługi Azure Migrate.

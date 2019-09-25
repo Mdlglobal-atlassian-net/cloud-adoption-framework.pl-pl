@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 854653882b8a07662da092ee4ec0006644000f56
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028251"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221425"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Narzędzia i usługi zarządzania serwerem platformy Azure
 
@@ -96,4 +96,4 @@ Aby dowiedzieć się więcej o cenach dla usług zarządzania platformy Azure, p
 - [Usługa Azure File Sync](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> Rozwiązanie Update Management platformy Azure jest bezpłatne, ale istnieje niewielkie koszty związane z wprowadzaniem danych. Zgodnie z zasadą, pierwsze 5 GB na miesiąc pozyskiwania danych jest bezpłatne. Zwykle obserwujemy, że każda maszyna korzysta z około 25 MB miesięcznie. Dzięki temu około 200 maszyn miesięcznie jest bezpłatnie oferowana. Dla każdego dodatkowego serwera pomnóż liczbę dodatkowych serwerów o 25 MB miesięcznie. Pomnóż, że koszt magazynu dla łącznej ilości magazynu jest wymagany. [Koszty magazynu są dostępne tutaj](https://azure.microsoft.com/pricing/details/storage/). Każdy dodatkowy serwer powinien mieć nominalnyy wpływ na koszt.
+> Rozwiązanie Update Management platformy Azure jest bezpłatne, ale istnieje niewielkie koszty związane z wprowadzaniem danych. Zgodnie z zasadą, pierwsze 5 GB na miesiąc pozyskiwania danych jest bezpłatne. Zwykle obserwujemy, że każda maszyna korzysta z około 25 MB miesięcznie. Dzięki temu około 200 maszyn miesięcznie jest bezpłatnie oferowana. Dla każdego dodatkowego serwera pomnóż liczbę dodatkowych serwerów o 25 MB miesięcznie. Pomnóż, że koszt magazynu dla łącznej ilości magazynu jest wymagany. [Koszty magazynu są dostępne tutaj](https://azure.microsoft.com/pricing/details/storage). Każdy dodatkowy serwer powinien mieć nominalnyy wpływ na koszt.

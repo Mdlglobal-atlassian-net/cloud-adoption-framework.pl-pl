@@ -4,24 +4,24 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Zasady linii bazowej zabezpieczeń w chmurze
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aef22e31d632a585e59dd946c5c0ef71c13d46de
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030849"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222904"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Zasady linii bazowej zabezpieczeń w chmurze
 
 [Linia bazowa zabezpieczeń](./index.md) jest jednym z [pięciu dyscyplin zarządzania chmurą](../governance-disciplines.md). Ta dyscyplina koncentruje się na ogólnych tematach zabezpieczeń, w tym o ochronie sieci, zasobów cyfrowych, danych itp. Jak opisano w [przewodniku przegląd zasad](../policy-compliance/cloud-policy-review.md), struktura wdrażania chmury obejmuje trzy poziomy **zasad przykładowych**: Zasady projektowania w chmurze, przedsiębiorstwa i chmury zgodne z poszczególnymi dyscyplinami. W tym artykule omówiono przykładowe natywne zasady w chmurze dotyczące dyscypliny linii bazowej zabezpieczeń.
 
 > [!NOTE]
-> Firma Microsoft nie jest w stanie podyktować zasad firmowych ani INFORMATYCZNych. Ten artykuł ma na celu ułatwienie przygotowania do przeglądu zasad wewnętrznych. Przyjęto założenie, że te przykładowe zasady zostaną rozszerzone, zweryfikowane i przetestowane względem zasad korporacyjnych przed podjęciem próby jej użycia. Użycie tych przykładowych zasad jest niezalecane.
+> Firma Microsoft nie jest w stanie podyktować zasad firmowych ani INFORMATYCZNych. Ten artykuł pomoże Ci przygotować się do przeglądu zasad wewnętrznych. Przyjęto założenie, że te przykładowe zasady zostaną rozszerzone, zweryfikowane i przetestowane względem zasad korporacyjnych przed podjęciem próby jej użycia. Użycie tych przykładowych zasad jest niezalecane.
 
 ## <a name="policy-alignment"></a>Wyrównanie zasad
 
@@ -54,10 +54,10 @@ Kontrola sieci obejmuje konfigurację, zarządzanie i zabezpieczanie elementów 
 
 Zasady natywne w chmurze dla kontrolek sieci mogą obejmować wymagania podobne do następujących:
 
-- Połączenia hybrydowe z zasobami lokalnymi (na przykład technicznie możliwe na platformie Azure) mogą nie być dozwolone w zasadach natywnych w chmurze. W przypadku niepotrzebnego połączenia hybrydowego przykładem bardziej niezawodnej Zasady zabezpieczeń przedsiębiorstwa będzie bardziej odpowiednie odwołanie.
+- Połączenia hybrydowe z zasobami lokalnymi mogą nie być dozwolone w zasadach natywnych w chmurze. W przypadku niepotrzebnego połączenia hybrydowego przykładem bardziej niezawodnej Zasady zabezpieczeń przedsiębiorstwa będzie bardziej odpowiednie odwołanie.
 - Użytkownicy mogą nawiązywać bezpieczne połączenia z platformą Azure i na nim przy użyciu sieci wirtualnych i sieciowych grup zabezpieczeń.
-- Natywna Zapora systemu Windows Azure chroni hosty przed złośliwym ruchem sieciowym przez ograniczony dostęp do portów. Dobrym przykładem tych zasad jest wymóg blokowania (lub nie włączania) ruchu bezpośrednio do maszyny wirtualnej za pośrednictwem protokołu RDP-TCP/UDP 3389.
-- Usługi, takie jak usługa Azure Application Gateway Web Application Firewall (WAF) i Azure DDoS Protection zabezpieczenia aplikacji i zapewniają dostępność dla maszyn wirtualnych działających na platformie Azure. Te funkcje nie powinny być wyłączone ani nieużywane.
+- Natywna Zapora systemu Windows Azure chroni hosty przed złośliwym ruchem sieciowym przez ograniczony dostęp do portów. Dobrym przykładem tych zasad jest wymóg blokowania ruchu (lub nie włączania) bezpośrednio do maszyny wirtualnej za pośrednictwem protokołu SSH/RDP.
+- Usługi, takie jak usługa Azure Application Gateway Web Application Firewall (WAF) i Azure DDoS Protection zabezpieczenia aplikacji i zapewniają dostępność dla maszyn wirtualnych działających na platformie Azure. Tych funkcji nie należy wyłączać.
 
 ### <a name="data-protection"></a>Ochrona danych
 
@@ -65,7 +65,7 @@ Jednym z kluczy ochrony danych w chmurze jest uwzględnienie możliwych stanów,
 
 - Formanty szyfrowania danych są wbudowane w usługi z maszyn wirtualnych do magazynu i SQL Database.
 - Dane przenoszone między chmurami i klientami mogą być chronione przy użyciu standardowych protokołów szyfrowania.
-- Azure Key Vault pozwala użytkownikom chronić i kontrolować klucze kryptograficzne oraz inne wpisy tajne używane przez aplikacje i usługi w chmurze.
+- Azure Key Vault pozwala użytkownikom chronić i kontrolować klucze kryptograficzne, hasła, ciągi połączeń i certyfikaty używane przez aplikacje i usługi w chmurze.
 - Azure Information Protection ułatwia klasyfikowanie, etykietowanie i ochronę poufnych danych w aplikacjach.
 
 Chociaż te funkcje są wbudowane w platformę Azure, każda z powyższych elementów wymaga konfiguracji i może zwiększyć koszty. Wyrównanie każdej funkcji natywnej w chmurze z [strategią klasyfikacji danych](../policy-compliance/data-classification.md) jest wysoce zalecane.
@@ -78,6 +78,7 @@ Monitorowanie zabezpieczeń jest aktywną strategią, która przeprowadza inspek
 - Ciągłe monitorowanie i oceny zabezpieczeń, aby zapewnić zgodność i skorygować wszelkie luki w zabezpieczeniach.
 - Interaktywne narzędzia i kontekstowe analizy zagrożeń w celu usprawnienia badania.
 - Obszerne rejestrowanie i integracja z istniejącymi informacjami o zabezpieczeniach.
+- Zmniejsza konieczność korzystania z kosztownych, niezintegrowanych rozwiązań w zakresie zabezpieczeń.
 
 ### <a name="extending-cloud-native-policies"></a>Rozszerzanie zasad natywnych w chmurze
 
@@ -87,7 +88,9 @@ Nawet w przypadku inwestycji w natywną w chmurze linię bazową zabezpieczeń z
 
 - **Zabezpieczanie maszyn wirtualnych.** Zabezpieczenia powinny mieć najwyższy priorytet w każdej organizacji i wydajnie wymagają kilku rzeczy. Należy ocenić stan zabezpieczeń, chronić przed zagrożeniami bezpieczeństwa, a następnie szybko wykrywać zagrożenia i reagować na nie.
 - **Ochrona zawartości maszyny wirtualnej.** Konfigurowanie zwykłych zautomatyzowanych kopii zapasowych jest niezbędne do ochrony przed błędami użytkowników. Jest to niewystarczające, chociaż należy również upewnić się, że kopie zapasowe są bezpieczne z cyberattacks i są dostępne, gdy będą potrzebne.
-- **Monitoruj maszyny wirtualne i aplikacje.** Ten wzorzec obejmuje kilka zadań, w tym uzyskiwanie wglądu w kondycję maszyn wirtualnych, zrozumienie interakcji między nimi oraz ustanawianie sposobów monitorowania aplikacji uruchamianych przez te maszyny wirtualne. Wszystkie te zadania są niezbędne do utrzymywania działania aplikacji na zegarie.
+- **Monitorowanie aplikacji.** Ten wzorzec obejmuje kilka zadań, w tym uzyskiwanie wglądu w kondycję maszyn wirtualnych, zrozumienie interakcji między nimi oraz ustanawianie sposobów monitorowania aplikacji uruchamianych przez te maszyny wirtualne. Wszystkie te zadania są niezbędne do utrzymywania działania aplikacji na zegarie.
+- **Zabezpiecz i Przeprowadź inspekcję dostępu do danych.** Organizacje powinny przeprowadzać inspekcję całego dostępu do danych i korzystać z zaawansowanych funkcji uczenia maszynowego, aby wywoływać odchylenia od zwykłych wzorców dostępu.
+- **Tryb failover.** Operacje w chmurze, które mają małą tolerancję dla awarii, muszą mieć możliwość przełączenia w tryb failover i/lub odzyskania z cyberbezpieczeństwa lub zdarzenia platformy. Te procedury nie mogą być po prostu udokumentowane, ale powinny być rozłożone kwartalnie.
 
 ## <a name="next-steps"></a>Następne kroki
 

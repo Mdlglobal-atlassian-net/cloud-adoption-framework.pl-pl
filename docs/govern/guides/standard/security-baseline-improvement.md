@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Standardowa Przewodnik po przedsiębiorstwie: Ulepszanie dyscypliny linii bazowej zabezpieczeń'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a9b67b20f0f9169f5da7f941615612218ef29f94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027413"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223787"
 ---
 # <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>Standardowa Przewodnik po przedsiębiorstwie: Ulepszanie dyscypliny linii bazowej zabezpieczeń
 
@@ -71,7 +71,7 @@ Poniższe zmiany zasad pomogą skorygować nowe zagrożenia i implementację prz
 
 1. Wszystkie wdrożone zasoby muszą być pogrupowane według stopnia ważności i klasyfikacji danych. Klasyfikacje muszą być przeglądane przez zespół ładu chmury i właściciela aplikacji przed wdrożeniem w chmurze.
 2. Aplikacje, które przechowują lub uzyskują dostęp do chronionych danych, są zarządzane inaczej niż te, które nie są. Należy je podzielić na mniejsze, aby uniknąć niezamierzonego dostępu do chronionych danych.
-3. Wszystkie chronione dane muszą być szyfrowane, gdy są przechowywane.
+3. Wszystkie chronione dane muszą być szyfrowane, gdy są przechowywane. Chociaż jest to wartość domyślna dla wszystkich kont usługi Azure Storage, może być konieczna dodatkowa strategia szyfrowania, w tym szyfrowanie danych w ramach konta magazynu, szyfrowanie maszyn wirtualnych i szyfrowanie na poziomie bazy danych, jeśli jest to możliwe przy użyciu języka SQL na maszynie wirtualnej (TDE i kolumna). szyfrowanie).
 4. Uprawnienia podwyższonego poziomu w dowolnym segmencie zawierającym chronione dane powinny być wyjątkiem. Wszelkie takie wyjątki będą rejestrowane w zespole ładu chmur i regularnie poddawane inspekcji.
 5. Podsieci sieciowe zawierające chronione dane muszą być odizolowane od innych podsieci. Ruch sieciowy między podsieciami chronionych danych zostanie regularnie poddany inspekcji.
 6. Nie można bezpośrednio uzyskać dostępu do podsieci zawierającej chronione dane za pośrednictwem publicznego Internetu lub między centrami danych. Dostęp do tych podsieci musi być kierowany za pośrednictwem podsieci pośrednich. Każdy dostęp do tych podsieci musi następować przez rozwiązanie zapory, które może wykonywać funkcje skanowania pakietów i blokowania.
@@ -93,37 +93,37 @@ Poniższe zmiany zasad pomogą skorygować nowe zagrożenia i implementację prz
 Projekt ładu MVP zmieni się w taki sposób, aby obejmował nowe zasady platformy Azure i implementację Azure Cost Management. Te dwie zmiany w projekcie zostaną spełnione w ramach nowych instrukcji dotyczących zasad firmowych.
 
 1. Sieci i zespoły ds. zabezpieczeń IT definiują wymagania sieciowe. Zespół ds. zarządzania chmurą będzie obsługiwał konwersację.
-1. Tożsamość i zespoły zabezpieczeń IT definiują wymagania dotyczące tożsamości i wprowadzają niezbędne zmiany w lokalnej implementacji Active Directory. Zespół nadzorujący chmury będzie przeglądać zmiany.
-1. Utwórz repozytorium w usłudze Azure DevOps, aby przechowywać i wypełniać wszystkie odpowiednie szablony Azure Resource Manager i konfiguracje inicjowane przez skrypty.
-1. Implementacja Azure Security Center:
+2. Tożsamość i zespoły zabezpieczeń IT definiują wymagania dotyczące tożsamości i wprowadzają niezbędne zmiany w lokalnej implementacji Active Directory. Zespół nadzorujący chmury będzie przeglądać zmiany.
+3. Utwórz repozytorium w usłudze Azure DevOps, aby przechowywać i wypełniać wszystkie odpowiednie szablony Azure Resource Manager i konfiguracje inicjowane przez skrypty.
+4. Implementacja Azure Security Center:
     1. Skonfiguruj Azure Security Center dla każdej grupy zarządzania zawierającej klasyfikacje chronionych danych.
-    1. Domyślnie Ustaw automatyczne Inicjowanie obsługi, aby zapewnić zgodność z poprawkami.
-    1. Ustanów konfiguracje zabezpieczeń systemu operacyjnego. Zespół ds. zabezpieczeń IT określi konfigurację.
-    1. Obsługa zespołu ds. zabezpieczeń IT w początkowym użyciu Security Center. Przechodzenie Security Center do zespołu ds. zabezpieczeń IT, ale utrzymuje dostęp do celów ciągłego ulepszania zarządzania.
-    1. Utwórz szablon Menedżer zasobów, który odzwierciedla zmiany wymagane do Security Center konfiguracji w ramach subskrypcji.
-1. Aktualizuj zasady platformy Azure dla wszystkich subskrypcji:
+    2. Domyślnie Ustaw automatyczne Inicjowanie obsługi, aby zapewnić zgodność z poprawkami.
+    3. Ustanów konfiguracje zabezpieczeń systemu operacyjnego. Zespół ds. zabezpieczeń IT określi konfigurację.
+    4. Obsługa zespołu ds. zabezpieczeń IT w początkowym użyciu Security Center. Przechodzenie Security Center do zespołu ds. zabezpieczeń IT, ale utrzymuje dostęp do celów ciągłego ulepszania zarządzania.
+    5. Utwórz szablon Menedżer zasobów, który odzwierciedla zmiany wymagane do Security Center konfiguracji w ramach subskrypcji.
+5. Aktualizuj zasady platformy Azure dla wszystkich subskrypcji:
     1. Przeprowadzaj inspekcję i Wymuszaj klasyfikację stopnia ważności i danych dla wszystkich grup zarządzania i subskrypcji, aby identyfikować subskrypcje z klasyfikacjami chronionych danych.
-    1. Inspekcja i wymuszanie używania tylko zatwierdzonych obrazów.
-1. Zaktualizuj zasady platformy Azure dla wszystkich subskrypcji, które zawierają klasyfikacje chronionych danych:
+    2. Inspekcja i wymuszanie używania tylko zatwierdzonych obrazów.
+6. Zaktualizuj zasady platformy Azure dla wszystkich subskrypcji, które zawierają klasyfikacje chronionych danych:
     1. Inspekcja i wymuszanie używania standardowych ról RBAC platformy Azure.
-    1. Inspekcja i wymuszanie szyfrowania dla wszystkich kont magazynu i plików przechowywanych w poszczególnych węzłach.
-    1. Inspekcja i wymuszanie aplikacji sieciowej grupy zabezpieczeń na wszystkich kartach sieciowych i podsieciach. Sieci i zespoły ds. zabezpieczeń IT definiują sieciowej grupy zabezpieczeń.
-    1. Inspekcja i wymuszanie użycia zatwierdzonej podsieci sieciowej i sieci wirtualnej dla każdego interfejsu sieciowego.
-    1. Inspekcja i wymuszanie ograniczenia zdefiniowanych przez użytkownika tabel routingu.
-    1. Zastosuj wbudowane zasady konfiguracji gościa w następujący sposób:
+    2. Inspekcja i wymuszanie szyfrowania dla wszystkich kont magazynu i plików przechowywanych w poszczególnych węzłach.
+    3. Inspekcja i wymuszanie aplikacji sieciowej grupy zabezpieczeń na wszystkich kartach sieciowych i podsieciach. Sieci i zespoły ds. zabezpieczeń IT definiują sieciowej grupy zabezpieczeń.
+    4. Inspekcja i wymuszanie użycia zatwierdzonej podsieci sieciowej i sieci wirtualnej dla każdego interfejsu sieciowego.
+    5. Inspekcja i wymuszanie ograniczenia zdefiniowanych przez użytkownika tabel routingu.
+    6. Zastosuj wbudowane zasady konfiguracji gościa w następujący sposób:
         1. Inspekcja serwerów sieci Web systemu Windows korzystających z bezpiecznych protokołów komunikacyjnych.
-        1. Inspekcja ustawień zabezpieczeń hasła w maszynach z systemem Linux i Windows.
-1. Konfiguracja zapory:
+        2. Inspekcja ustawień zabezpieczeń hasła w maszynach z systemem Linux i Windows.
+7. Konfiguracja zapory:
     1. Zidentyfikuj konfigurację zapory platformy Azure, która spełnia niezbędne wymagania dotyczące zabezpieczeń. Alternatywnie Zidentyfikuj zgodne urządzenie innej firmy, które jest zgodne z platformą Azure.
-    1. Utwórz szablon Menedżer zasobów, aby wdrożyć zaporę z wymaganymi konfiguracjami.
-1. Plan platformy Azure:
+    2. Utwórz szablon Menedżer zasobów, aby wdrożyć zaporę z wymaganymi konfiguracjami.
+8. Plan platformy Azure:
     1. Utwórz nowy plan o nazwie `protected-data`.
-    1. Dodaj zaporę i Azure Security Center szablonów do planu.
-    1. Dodaj nowe zasady dla chronionych subskrypcji danych.
-    1. Opublikuj plan w każdej grupie zarządzania, która aktualnie planuje hostowanie chronionych danych.
-    1. Zastosuj nową strategię do każdej powiązanej subskrypcji, poza istniejącymi planami.
+    2. Dodaj zaporę i Azure Security Center szablonów do planu.
+    3. Dodaj nowe zasady dla chronionych subskrypcji danych.
+    4. Opublikuj plan w każdej grupie zarządzania, która aktualnie planuje hostowanie chronionych danych.
+    5. Zastosuj nową strategię do każdej powiązanej subskrypcji, poza istniejącymi planami.
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 Dodanie powyższych procesów i zmian do ładu MVP pomoże rozwiązać wiele zagrożeń związanych z zarządzaniem zabezpieczeniami. Razem dodają narzędzia do monitorowania sieci, tożsamości i zabezpieczeń, które są konieczne do ochrony danych.
 

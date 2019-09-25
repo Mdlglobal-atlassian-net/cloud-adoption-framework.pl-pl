@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Szablon spójności zasobów
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 372f9ca64b87b51b1404d4c47e07e7aa638191b6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 831c40b2bf8f7e8fb64fc6cddcf8d6817376be00
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028070"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221908"
 ---
 # <a name="resource-consistency-template"></a>Szablon spójności zasobów
 
-Pierwszym krokiem do wdrożenia zmiany jest komunikowanie się z pożądaną zmianą. To samo jest prawdziwe w przypadku zmiany praktyk ładu. Szablon poniżej służy jako punkt wyjścia do tworzenia dokumentów i przekazywania instrukcji zasad, które regulują operacje IT i zarządzanie nimi w chmurze.
+Pierwszym krokiem do wdrożenia zmiany jest komunikowanie się z oczekiwaniami. To samo jest prawdziwe w przypadku zmiany praktyk ładu. Szablon poniżej służy jako punkt wyjścia do tworzenia dokumentów i przekazywania instrukcji zasad, które regulują operacje IT i zarządzanie nimi w chmurze.
 
 W miarę postępu dyskusji Użyj struktury tego szablonu jako modelu do przechwytywania ryzyka biznesowego, odporności na zagrożenia, procesów zgodności i narzędzi niezbędnych do zdefiniowania instrukcji zasad spójności zasobów organizacji.
 

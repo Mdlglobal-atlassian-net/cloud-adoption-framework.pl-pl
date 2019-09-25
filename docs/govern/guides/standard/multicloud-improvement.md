@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d1953e190e2581d96db443be00aad74a6b94d5f9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2616193b01b252a74ad17a241d97bfd0ebc4860c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030367"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223803"
 ---
 # <a name="small-to-medium-enterprise-guide-multicloud-improvement"></a>Przewodnik po małych i średnich przedsiębiorstwach: Poprawa chmury
 
@@ -22,7 +22,7 @@ W tym artykule naliczą się opisy, dodając formanty do wdrożenia wielochmurow
 
 ## <a name="advancing-the-narrative"></a>Przesuwanie narracji
 
-Firma Microsoft uznaje, że klienci przyjmują wiele chmur do określonych celów. Fikcyjny klient w tym przewodniku nie ma żadnego wyjątku. Równolegle z podróżą w zakresie wdrażania platformy Azure, sukces biznesowy doprowadził do nabycia małego, ale dodatkowej firmy. Firma pracuje nad wszystkimi swoimi operacjami IT na innym dostawcy chmury.
+Firma Microsoft uznaje, że klienci mogą zastosować wiele chmur do określonych celów. Fikcyjny klient w tym przewodniku nie ma żadnego wyjątku. Równolegle ze swoją podróżą w zakresie wdrażania platformy Azure, sukces biznesowy doprowadził do nabycia niewielkiej, ale dodatkowej firmy. Firma pracuje nad wszystkimi swoimi operacjami IT na innym dostawcy chmury.
 
 W tym artykule opisano, jak zmieniają się zmiany podczas integrowania nowej organizacji. Na potrzeby postanowień przyjęto, że firma Microsoft zakończyła wszystkie iteracje ładu opisane w tym przewodniku ładu.
 
@@ -65,24 +65,24 @@ Następujące zmiany zasad ułatwią skorygowanie nowych zagrożeń i implementa
 W tej części artykułu zostanie zmieniony projekt ładu MVP, który obejmuje nowe zasady platformy Azure i implementację Azure Cost Management. Te zmiany w projekcie zostaną spełnione w ramach nowych instrukcji dotyczących zasad firmowych.
 
 1. Połącz sieci. Ten krok jest wykonywany przez zespoły ds. sieci i IT i obsługiwane przez zespół nadzorujący chmurę. Dodanie połączenia z dostawcy MPLS/dzierżawy do nowej chmury spowoduje integrację sieci. Dodanie tabel routingu i konfiguracji zapory umożliwi sterowanie dostępem i ruchem między środowiskami.
-1. Konsolidowanie dostawców tożsamości. W zależności od obciążeń obsługiwanych w chmurze dodatkowej istnieje wiele opcji konsolidacji dostawców tożsamości. Poniżej przedstawiono kilka przykładów:
+2. Konsolidowanie dostawców tożsamości. W zależności od obciążeń obsługiwanych w chmurze dodatkowej istnieje wiele opcji konsolidacji dostawców tożsamości. Poniżej przedstawiono kilka przykładów:
     1. W przypadku aplikacji, które uwierzytelniają się za pomocą protokołu OAuth 2, użytkownicy z Active Directory w chmurze pomocniczej mogą po prostu przeprowadzić replikację do istniejącej dzierżawy usługi Azure AD. Dzięki temu wszyscy użytkownicy mogą być uwierzytelniani w dzierżawie.
-    1. W drugiej lokalizacji Federacja umożliwia jednostek organizacyjnych przepływ do Active Directory lokalnego, a następnie do wystąpienia usługi Azure AD.
-1. Dodaj zasoby do Azure Site Recovery.
+    2. W drugiej lokalizacji Federacja umożliwia jednostek organizacyjnych przepływ do Active Directory lokalnego, a następnie do wystąpienia usługi Azure AD.
+3. Dodaj zasoby do Azure Site Recovery.
     1. Azure Site Recovery został zaprojektowany od początku jako narzędzie hybrydowe lub wielochmurowe.
-    1. Maszyny wirtualne w chmurze pomocniczej mogą być chronione za pomocą tych samych Azure Site Recovery procesów, które są używane do ochrony zasobów lokalnych.
-1. Dodaj zasoby do Azure Cost Management.
+    2. Maszyny wirtualne w chmurze pomocniczej mogą być chronione za pomocą tych samych Azure Site Recovery procesów, które są używane do ochrony zasobów lokalnych.
+4. Dodaj zasoby do Azure Cost Management.
     1. Azure Cost Management został zaprojektowany od początku jako narzędzie do wielochmurowego.
-    1. Maszyny wirtualne w chmurze pomocniczej mogą być zgodne z Azure Cost Managementami dla niektórych dostawców chmury. Mogą obowiązywać dodatkowe koszty.
-1. Dodaj zasoby do Azure Monitor.
+    2. Maszyny wirtualne w chmurze pomocniczej mogą być zgodne z Azure Cost Managementami dla niektórych dostawców chmury. Mogą obowiązywać dodatkowe koszty.
+5. Dodaj zasoby do Azure Monitor.
     1. Azure Monitor został zaprojektowany jako narzędzie chmury hybrydowej.
-    1. Maszyny wirtualne w chmurze pomocniczej mogą być zgodne z Azure Monitor agentami, co umożliwia ich uwzględnienie w Azure Monitor monitorowania operacyjnego.
-1. Przyjmowanie narzędzi do wymuszania ładu.
+    2. Maszyny wirtualne w chmurze pomocniczej mogą być zgodne z Azure Monitor agentami, co umożliwia ich uwzględnienie w Azure Monitor monitorowania operacyjnego.
+6. Przyjmowanie narzędzi do wymuszania ładu.
     1. Wymuszanie ładu jest specyficzne dla chmury.
-    1. Zasady firmowe ustanowione w przewodniku ładu nie są specyficzne dla chmury. Chociaż implementacja może się różnić w zależności od chmury, zasady mogą być stosowane do pomocniczego dostawcy.
+    2. Zasady firmowe ustanowione w przewodniku ładu nie są specyficzne dla chmury. Chociaż implementacja może się różnić w zależności od chmury, zasady mogą być stosowane do pomocniczego dostawcy.
 
-Po rozwojem wdrożenia wielochmurowego zmiany projektu powyżej będą nadal dojrzałe.
+Wdrożenie w chmurze powinno być zawarte w miejscu, w którym jest wymagane na podstawie wymagań technicznych lub określonych wymagań firmy. W miarę rozwoju wdrożenia z zastosowaniem rozwiązań w chmurze, w związku z czym złożoność i zagrożenia bezpieczeństwa.
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 W tej serii artykułów opisano przyrostowe opracowywanie najlepszych praktyk nadzoru, które są dostosowane do środowiska tej fikcyjnej firmy. Rozpoczynając od małych, ale z właściwą podstawą, firma może szybko przełączać się i nadal stosować odpowiednią ilość ładu w odpowiednim czasie. Sam SPECJALISTa nie chroni klienta. Zamiast tego tworzy podstawę do zarządzania ryzykiem i dodawania ochrony. Z tego miejsca zostały zastosowane warstwy ładu, które korygują zagrożenia materialne. Dokładna podróż przedstawiona w tym miejscu nie wyrównuje 100% z doświadczeniami każdego czytnika. Zamiast tego służy jako wzorzec dla ładu przyrostowego. Czytelnik jest Doradzany do Mold tych najlepszych rozwiązań, aby dopasować własne ograniczenia i wymagania dotyczące zarządzania.

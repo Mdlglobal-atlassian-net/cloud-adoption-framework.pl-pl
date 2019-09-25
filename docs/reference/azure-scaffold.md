@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: b65f0ea129888440fbfa7598a6bc7790ad91b177
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027601"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223987"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: Narzucony nadzór subskrypcji
 
@@ -168,7 +168,7 @@ Jednym z pierwszych i najbardziej najważniejszych pytań, które należy zadać
 
 Aby zabezpieczyć dostęp do zasobów, należy najpierw skonfigurować dostawcę tożsamości, a następnie skonfigurować role i dostęp. Usługa Azure Active Directory (Azure AD), połączona z lokalnym Active Directory, jest podstawą tożsamości platformy Azure. Wspomniane informacje *nie* są takie same, jak w przypadku Active Directory lokalnych, a ważne jest, aby zrozumieć, co to jest dzierżawa usługi Azure AD i jak odnosi się do rejestracji na platformie Azure. Zapoznaj się z dostępnymi [informacjami](../govern/resource-consistency/resource-access-management.md) , aby uzyskać pełną podstawę w usłudze Azure AD i Active Directory lokalnych. Aby nawiązać połączenie i zsynchronizować Active Directory z usługą Azure AD, zainstaluj i skonfiguruj [narzędzie Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) lokalnie.
 
-![Diagram architektury](../_images/reference/ad-architecture.png)
+![Diagram architektury usługi AD](../_images/reference/ad-architecture.png)
 
 Po wstępnym udostępnieniu platformy Azure kontrola dostępu do subskrypcji była podstawowa: Administrator lub współadministrator. Dostęp do subskrypcji w modelu klasycznym implikuje dostęp do wszystkich zasobów w portalu. Ten braku szczegółowych kontroli prowadzi do rozprzestrzeniania się subskrypcji w celu zapewnienia poziomu uzasadnionej kontroli dostępu do rejestracji na platformie Azure. Ta proliferacja subskrypcji nie jest już wymagana. Za pomocą kontroli dostępu opartej na rolach (RBAC) można przypisywać użytkowników do ról standardowych, które zapewniają wspólny dostęp, taki jak "Owner", "Współautor" lub "Reader", a nawet tworzyć własne role.
 

@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 9726cc5bea1d8f7852dbb8831fc211dda2f4f4f7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027190"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224343"
 ---
 # <a name="cloud-center-of-excellence"></a>Centrum doskonałości chmury
 
@@ -32,7 +32,7 @@ CCoE wymaga współpracy między każdą z następujących możliwości:
 
 ## <a name="impact-and-cultural-change"></a>Wpływ i zmiana kulturowa
 
-Gdy ta funkcja jest prawidłowo strukturalna i obsługiwana, uczestnicy mogą przyspieszyć innowacje i migracje, jednocześnie zmniejszając całkowity koszt zmian i zwiększając elastyczność biznesową. Po pomyślnym wdrożeniu ta funkcja może generować zauważalne redukcje w czasie wprowadzania na rynek. Podobnie jak w przypadku najlepszych praktyk zespołów, wzrost wskaźników jakości może być widoczny, w tym niezawodność, wydajność wydajności, bezpieczeństwo, łatwość utrzymania i zadowolenie klientów. Te korzyści w zakresie wydajności, elastyczności i jakości są szczególnie istotne, jeśli firma planuje zaimplementowanie wysiłków migracji w chmurze na dużą skalę lub chęci do korzystania z chmury w celu zwiększenia innowacji związanych z rozróżnieniem rynku.
+Gdy ta funkcja jest prawidłowo strukturalna i obsługiwana, uczestnicy mogą przyspieszyć innowacje i migracje, jednocześnie zmniejszając całkowity koszt zmian i zwiększając elastyczność biznesową. Po pomyślnym wdrożeniu ta funkcja może generować zauważalne redukcje w czasie wprowadzania na rynek. Zgodnie z oczekiwaniami, wskaźniki jakości będą ulepszane, w tym niezawodność, wydajność wydajności, bezpieczeństwo, łatwość utrzymania i zadowolenie klientów. Te korzyści w zakresie wydajności, elastyczności i jakości są szczególnie istotne, jeśli firma planuje zaimplementowanie wysiłków migracji w chmurze na dużą skalę lub chęci do korzystania z chmury w celu zwiększenia innowacji związanych z rozróżnieniem rynku.
 
 Po pomyślnym utworzeniu modelu CCoE będzie on miał znaczny wpływ na zmianę kulturowe. Podstawową podstawą podejścia CCoE jest to, że służy on jako Broker, partner lub przedstawiciel firmy. Ten model to wzór przesunięty od tradycyjnego widoku jako jednostkę operacji lub warstwę abstrakcji między zasobami biznesowymi i INFORMATYCZNymi.
 

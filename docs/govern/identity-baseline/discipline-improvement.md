@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Poprawa dyscypliny linii bazowej tożsamości
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c044e4af0560fe21229cb1790ce0eff6340d2a58
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029473"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220490"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Poprawa dyscypliny linii bazowej tożsamości
 
@@ -46,7 +46,7 @@ W tej fazie działania ładu mostkuje podział między wynikami biznesowymi i st
 - Zdefiniuj role i przydziały, które będą zarządzać zarządzaniem tożsamościami i dostępem w chmurze.
 - Zdefiniuj grupy lokalne i Mapuj je na odpowiednie role oparte na chmurze.
 - Dostawcy tożsamości spisu (w tym tożsamości oparte na bazie danych używane przez aplikacje niestandardowe).
-- Należy rozważyć opcje konsolidacji lub integracji dostawców tożsamości, w których istnieje duplikacja, aby uprościć ogólne rozwiązanie do tworzenia tożsamości.
+- Konsolidowanie i integrowanie dostawców tożsamości, w których istnieje duplikacja, w celu uproszczenia ogólnego rozwiązania do tworzenia tożsamości i zmniejszania ryzyka.
 - Oceń zgodność hybrydową istniejących dostawców tożsamości.
 - W przypadku dostawców tożsamości, które nie są zgodne ze standardem hybrydowym, Oceń opcje konsolidacji lub zamiany.
 
@@ -98,7 +98,7 @@ Migracja to proces przyrostowy, który koncentruje się na przeniesieniu, testow
 - Weryfikuj i udoskonalaj [strategię tożsamości hybrydowej](../../decision-guides/identity/index.md).
 - Upewnij się, że każda aplikacja lub obciążenie nadal są wyrównane z strategią tożsamości przed wydaniem.
 - Sprawdź, czy logowanie jednokrotne (SSO) i bezproblemowe logowanie jednokrotne działają zgodnie z oczekiwaniami dla aplikacji.
-- Należy zmniejszyć lub wyeliminować liczbę alternatywnych magazynów tożsamości, jeśli jest to możliwe.
+- Zmniejsz lub Usuń liczbę alternatywnych magazynów tożsamości.
 - Scrutinize potrzebę dla wszystkich magazynów tożsamości w aplikacji lub w bazie danych. Tożsamości, które znajdują się poza właściwym dostawcą tożsamości (podmiot pierwszej lub innej firmy), mogą reprezentować ryzyko dla aplikacji i użytkowników.
 - Włącz dostęp warunkowy dla [lokalnych aplikacji federacyjnych](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup).
 - Dystrybuuj tożsamość między regionami globalnymi w wielu centrach z synchronizacją między regionami.
@@ -120,6 +120,7 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 **Potencjalne działania:**
 
 - Przeprowadzaj okresowe inspekcje zasad tożsamości i praktyk przestrzegania.
+- Upewnij się, że poufne konta użytkowników (prezes, dyrektor finansowy, wiceprezes itp.) są zawsze włączone na potrzeby uwierzytelniania wieloskładnikowego i wykrywania nietypowego logowania.
 - Skanuj w poszukiwaniu złośliwych podmiotów i naruszeń danych regularnie, szczególnie tych związanych z oszustwem tożsamości, takimi jak potencjalne przejęcie kont administratorów.
 - Skonfiguruj narzędzie do monitorowania i raportowania.
 - Rozważ ścisłą integrację z systemami zabezpieczeń i zapobiegania oszustwom.

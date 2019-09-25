@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec9263b1e1ab47e2018d86093a5198cdb1ac7b67
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028438"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222237"
 ---
 # <a name="standard-enterprise-guide-improving-resource-consistency"></a>Standardowa Przewodnik po przedsiębiorstwie: Poprawianie spójności zasobów
 
@@ -84,33 +84,33 @@ Poniższe zmiany zasad pomogą skorygować nowe zagrożenia i implementację prz
 W tej części artykułu zostanie zmieniony projekt ładu MVP, który obejmuje nowe zasady platformy Azure i implementację Azure Cost Management. Te dwie zmiany w projekcie zostaną spełnione w ramach nowych instrukcji dotyczących zasad firmowych.
 
 1. Zespół operacyjny w chmurze będzie definiować narzędzia monitorowania operacyjnego i zautomatyzowane narzędzia do korygowania. Zespół ds. zarządzania chmurą będzie obsługiwał te procesy odnajdywania. W tym przypadku użycia zespół operacyjny w chmurze wybiera Azure Monitor jako podstawowe narzędzie do monitorowania aplikacji o krytycznym znaczeniu.
-1. Utwórz repozytorium w usłudze Azure DevOps, aby przechowywać i wypełniać wszystkie odpowiednie szablony Menedżer zasobów i konfiguracje inicjowane przez skrypty.
-1. Implementacja magazynu platformy Azure:
-    1. Zdefiniuj i Wdróż magazyn platformy Azure na potrzeby procesów tworzenia kopii zapasowych i odzyskiwania.
-    1. Utwórz szablon Menedżer zasobów na potrzeby tworzenia magazynu w ramach każdej subskrypcji.
-1. Azure Policy aktualizacji dla wszystkich subskrypcji:
+2. Utwórz repozytorium w usłudze Azure DevOps, aby przechowywać i wypełniać wszystkie odpowiednie szablony Menedżer zasobów i konfiguracje inicjowane przez skrypty.
+3. Implementacja magazynu Recovery Services platformy Azure:
+    1. Zdefiniuj i Wdróż magazyn Recovery Services platformy Azure na potrzeby procesów tworzenia kopii zapasowych i odzyskiwania.
+    2. Utwórz szablon Menedżer zasobów na potrzeby tworzenia magazynu w ramach każdej subskrypcji.
+4. Azure Policy aktualizacji dla wszystkich subskrypcji:
     1. Przeprowadzaj inspekcję i wymuszanie stopnia ważności i klasyfikacji danych w ramach wszystkich subskrypcji, aby identyfikować wszystkie subskrypcje z zasobami o kluczowym znaczeniu.
-    1. Inspekcja i wymuszanie używania tylko zatwierdzonych obrazów.
-1. Implementacja Azure Monitor:
-    1. Po zidentyfikowaniu subskrypcji o krytycznym znaczeniu należy utworzyć Azure Monitor obszar roboczy przy użyciu programu PowerShell. Jest to proces wdrożenia wstępnego.
-    1. Podczas testowania wdrożenia zespół operacyjny chmury wdraża niezbędnych agentów i testy odnajdywania.
-1. Aktualizacja Azure Policy dla wszystkich subskrypcji, które zawierają aplikacje o znaczeniu krytycznym.
+    2. Inspekcja i wymuszanie używania tylko zatwierdzonych obrazów.
+5. Implementacja Azure Monitor:
+    1. Po zidentyfikowaniu obciążenia o krytycznym znaczeniu należy utworzyć obszar roboczy Azure Monitor.
+    2. Podczas testowania wdrożenia zespół operacyjny chmury wdraża niezbędnych agentów i testy odnajdywania.
+6. Aktualizacja Azure Policy dla wszystkich subskrypcji, które zawierają aplikacje o znaczeniu krytycznym.
     1. Inspekcja i wymuszanie aplikacji sieciowej grupy zabezpieczeń na wszystkich kartach sieciowych i podsieciach. Sieć i zabezpieczenia IT definiują sieciowej grupy zabezpieczeń.
-    1. Inspekcja i wymuszanie użycia zatwierdzonych podsieci sieciowych i sieci wirtualnych dla każdego interfejsu sieciowego.
-    1. Inspekcja i wymuszanie ograniczenia zdefiniowanych przez użytkownika tabel routingu.
-    1. Inspekcja i wymuszanie wdrażania agentów Azure Monitor dla wszystkich maszyn wirtualnych.
-    1. Inspekcja i wymuszanie, że magazyn platformy Azure istnieje w subskrypcji.
-1. Konfiguracja zapory:
+    2. Inspekcja i wymuszanie użycia zatwierdzonych podsieci sieciowych i sieci wirtualnych dla każdego interfejsu sieciowego.
+    3. Inspekcja i wymuszanie ograniczenia zdefiniowanych przez użytkownika tabel routingu.
+    4. Inspekcja i wymuszanie wdrażania agentów Azure Monitor dla wszystkich maszyn wirtualnych.
+    5. Inspekcja i wymuszanie, że magazyny usługi Azure Recovery Services istnieją w ramach subskrypcji.
+7. Konfiguracja zapory:
     1. Zidentyfikuj konfigurację zapory platformy Azure spełniającą wymagania dotyczące zabezpieczeń. Alternatywnie Zidentyfikuj urządzenie innej firmy zgodne z platformą Azure.
     1. Utwórz szablon Menedżer zasobów, aby wdrożyć zaporę z wymaganymi konfiguracjami.
-1. Plan platformy Azure:
+8. Plan platformy Azure:
     1. Utwórz nowy plan platformy Azure o `protected-data`nazwie.
-    1. Dodaj zaporę i szablony magazynu platformy Azure do planu.
-    1. Dodaj nowe zasady dla chronionych subskrypcji danych.
-    1. Publikuj plan w dowolnej grupie zarządzania przeznaczonej do hostowania aplikacji o kluczowym znaczeniu.
-    1. Zastosuj nowy plan do każdej powiązanej subskrypcji, a także istniejące plany.
+    2. Dodaj zaporę i szablony magazynu platformy Azure do planu.
+    3. Dodaj nowe zasady dla chronionych subskrypcji danych.
+    4. Opublikuj plan w dowolnej grupie zarządzania, która będzie hostować aplikacje o kluczowym znaczeniu.
+    5. Zastosuj nowy plan do każdej powiązanej subskrypcji, a także istniejące plany.
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 Te dodatkowe procesy i zmiany wprowadzane przez ładu MVP są pomocne w korygowaniu wielu zagrożeń związanych z zarządzaniem zasobami. Razem dodają funkcje kontroli odzyskiwania, rozmiarów i monitorowania, które umożliwiają wykonywanie operacji opartych na chmurze.
 

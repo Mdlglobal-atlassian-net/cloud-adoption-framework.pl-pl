@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Objaśnienia dotyczące dziedziny Zarządzanie kosztami w odniesieniu do utrzymania ładu w chmurze
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be1d4456ac8924c87241089c637fa3aacc38fb47
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 575eace59b33163c1f0020b005bda2ceeb14dc9b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027645"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220965"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management metryki, wskaźniki i tolerancję ryzyka
 
-Ten artykuł ma na celu ułatwienie określenia tolerancji ryzyka biznesowego, która odnosi się do Cost Management. Definiowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy dla inwestycji w Cost Management dyscypliny.
+Ten artykuł pomoże Ci określić tolerancję ryzyka biznesowego, która odnosi się do Cost Management. Definiowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy dla inwestycji w Cost Management dyscypliny.
 
 ## <a name="metrics"></a>Metryki
 

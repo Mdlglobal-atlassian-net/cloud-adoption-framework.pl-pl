@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 52e78e6f1e9dd5ee19b9def9a1b9cb4cbcc869ae
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fbb1e57d1073286d9b92db96dbf923eb28612f49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023992"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224080"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skalowanie migracji na platformę Azure
 
@@ -298,11 +298,11 @@ Oprócz DMS firma Contoso może używać innych narzędzi i usług do identyfiko
 - Firma ma skrypty pomocne w ręcznych migracjach. Są one dostępne w repozytorium GitHub.
 - Do migracji mogą być również wykorzystywane różne [narzędzia partnerskie](https://azure.microsoft.com/migration/partners).
 
-## <a name="phase-3-optimize"></a>Etap 3: Optymalizacja
+## <a name="phase-3-optimize"></a>Etap 3: Optymalizuj
 
 Po przeniesieniu zasobów na platformę Azure firma Contoso potrzebuje usprawnić je, aby zwiększyć wydajność i zmaksymalizować zwrot z inwestycji przy użyciu narzędzi do zarządzania kosztami. Ponieważ platforma Azure jest usługą z opłatami za użycie, zrozumienie sposobu działania systemów i upewnienie się, że ich rozmiary są prawidłowe, jest krytyczne dla firmy Contoso.
 
-### <a name="azure-cost-management"></a>Zarządzanie kosztami platformy Azure
+### <a name="azure-cost-management"></a>Azure Cost Management
 
 Aby jak najlepiej wykorzystać inwestycję w chmurę, firma Contoso będzie korzystać z bezpłatnego narzędzia Azure Cost Management.
 
@@ -361,6 +361,6 @@ Firma Contoso będzie potrzebować strategii ciągłości działania i odzyskiwa
   - Firma Contoso będzie wdrażać usługę Azure Backup jako ekonomiczne rozwiązanie do tworzenia kopii zapasowych zasobów platformy Azure. Ponieważ ta usługa jest wbudowana, firma Contoso może skonfigurować kopie zapasowe chmury w kilku prostych krokach.
   - Firma Contoso skonfiguruje odzyskiwanie po awarii dla maszyn wirtualnych platformy Azure przy użyciu usługi Azure Site Recovery do replikacji, trybu failover i powrotu po awarii między określonymi przez nią regionami platformy Azure. To zapewni, że aplikacje działające na maszynach wirtualnych platformy Azure pozostaną dostępne w regionie pomocniczym firmy Contoso, wybranym na wypadek wystąpienia awarii w regionie podstawowym. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 W tym artykule firma Contoso zaplanowała migrację na platformę Azure na dużą skalę. Proces migracji został podzielony na cztery etapy. Od oceny i migracji, przez optymalizację, aż do zabezpieczenia i zarządzania po ukończeniu migracji. Najważniejsze, aby zaplanować projekt migracji jako cały proces, jednak rozdzielając migrację systemów w organizacji na podstawie klasyfikacji i liczb, które mają znaczenie biznesowe. Dzięki ocenie danych i zastosowaniu klasyfikacji projekt może być podzielony na serię mniejszych migracji, które mogą być przeprowadzone bezpiecznie i szybko. Suma tych mniejszych migracji szybko doprowadzi do dużej pomyślnej migracji na platformę Azure.

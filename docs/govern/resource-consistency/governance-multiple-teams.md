@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wskazówki dotyczące konfigurowania kontrolek ładu platformy Azure dla wielu zespołów, wielu obciążeń i wielu środowisk.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d9b1dddff5cadd9219e6dffad87690145214b162
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d6a21e852ff44a9036f2fbb9d0d0e60a0f4c930f
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029387"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223957"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Projekt nadzoru dla wielu zespołów
 
@@ -26,16 +26,17 @@ Wymagania są następujące:
   - Osoby w organizacji odpowiedzialne za własność **subskrypcji**.
   - Osoby w organizacji odpowiedzialne za **udostępnione zasoby infrastruktury** używane do łączenia sieci lokalnej z siecią wirtualną platformy Azure.
   - Dwie osoby w organizacji odpowiedzialne za zarządzanie **obciążeniem**.
-- Obsługa wielu **środowisk**. Środowisko to logiczne grupowanie zasobów, takich jak maszyny wirtualne, sieci wirtualne i usługi routingu ruchu sieciowego. Te grupy zasobów mają podobne wymagania dotyczące zarządzania i zabezpieczeń i są zwykle używane do określonego celu, takiego jak testowanie lub produkcja. W tym przykładzie wymagania dotyczą trzech środowisk:
+- Obsługa wielu **środowisk**. Środowisko to logiczne grupowanie zasobów, takich jak maszyny wirtualne, sieci wirtualne i usługi routingu ruchu sieciowego. Te grupy zasobów mają podobne wymagania dotyczące zarządzania i zabezpieczeń i są zwykle używane do określonego celu, takiego jak testowanie lub produkcja. W tym przykładzie wymagania dotyczą czterech środowisk:
   - **Udostępnione środowisko infrastruktury** , które obejmuje zasoby współużytkowane przez obciążenia w innych środowiskach. Na przykład Sieć wirtualna z podsiecią bramy, która zapewnia łączność z lokalnymi.
   - **Środowisko produkcyjne** z najbardziej restrykcyjnymi zasadami zabezpieczeń. Może obejmować obciążenia wewnętrzne lub zewnętrzne.
-  - **Środowisko programistyczne** do sprawdzania koncepcji i testowania. To środowisko ma zabezpieczenia, zgodność i zasady dotyczące kosztów, które różnią się od tych w środowisku produkcyjnym.
+  - **Środowisko produkcyjne** na potrzeby projektowania i testowania. To środowisko ma zabezpieczenia, zgodność i zasady dotyczące kosztów, które różnią się od tych w środowisku produkcyjnym. Na platformie Azure ma to formę subskrypcji Enterprise — tworzenie i testowanie.
+  - **Środowisko piaskownicy** do weryfikacji koncepcji i celów edukacyjnych. To środowisko jest zwykle przypisywany dla pracowników uczestniczących w działaniach programistycznych i ma ścisłe procedury i funkcjonalne mechanizmy kontroli bezpieczeństwa, aby zapobiec wyładunku danych firmowych w tym miejscu. Na platformie Azure mają one formę subskrypcji programu Visual Studio. Te subskrypcje _nie_ powinny również być powiązane z Azure Active Directoryami przedsiębiorstwa.
 - **Model uprawnień o** najniższych uprawnieniach, w którym użytkownicy domyślnie nie mają uprawnień. Model musi obsługiwać następujące elementy:
-  - Pojedynczy zaufany użytkownik w zakresie subskrypcji z uprawnieniami do przypisywania praw dostępu do zasobów.
-  - Każdy właściciel obciążenia domyślnie odmówił dostępu do zasobów. Prawa dostępu do zasobów są udzielane jawnie przez jednego zaufanego użytkownika w zakresie subskrypcji.
-  - Dostęp do zarządzania zasobami infrastruktury udostępnionej ograniczony do właściciela infrastruktury udostępnionej.
-  - Dostęp do zarządzania dla każdego obciążenia ograniczonego do właściciela obciążenia.
-  - Przedsiębiorstwo nie chce, aby zarządzać rolami niezależnie w każdym z tych trzech środowisk i w związku z tym wymagało użycia tylko [wbudowanych ról](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) dostępnych w kontroli dostępu opartej na ROLACH (RBAC) na platformie Azure. Jeśli w przedsiębiorstwie użyto niestandardowych ról RBAC, do synchronizowania ról niestandardowych w trzech środowiskach jest wymagany dodatkowy proces.
+  - Pojedynczy zaufany użytkownik (konto usługi quasi) w zakresie subskrypcji z uprawnieniami do przypisywania praw dostępu do zasobów.
+  - Każdy właściciel obciążenia domyślnie odmówił dostępu do zasobów. Prawa dostępu do zasobów są udzielane jawnie przez jednego zaufanego użytkownika w zakresie grupy zasobów.
+  - Dostęp do zarządzania zasobami infrastruktury udostępnionej ograniczony do właścicieli infrastruktury udostępnionej.
+  - Dostęp do zarządzania dla każdego obciążenia ograniczonego do właściciela obciążenia (w środowisku produkcyjnym) i zwiększenia poziomu kontroli w miarę rozwoju zwiększa się od dev do testowania do etapu produkcyjnego.
+  - Przedsiębiorstwo nie chce, aby zarządzać rolami niezależnie w każdym z trzech głównych środowisk i w związku z tym wymagało użycia tylko [wbudowanych ról](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) dostępnych w kontroli dostępu opartej na ROLACH (RBAC) na platformie Azure. Jeśli w przedsiębiorstwie absolutnie wymagane są niestandardowe role RBAC, do synchronizowania ról niestandardowych w trzech środowiskach wymagane są dodatkowe procesy.
 - Śledzenie kosztów według nazwy właściciela obciążenia, środowiska lub obu tych funkcji.
 
 ## <a name="identity-management"></a>Zarządzanie tożsamościami
@@ -54,7 +55,7 @@ Gdy Twoja organizacja zarejestrowano na potrzeby konta platformy Azure, przypisa
 Tożsamości użytkowników zarówno dla właściciela konta platformy Azure, jak i administratora globalnego usługi Azure AD są przechowywane w wysoce zabezpieczonym systemie tożsamości, który jest zarządzany przez firmę Microsoft. Właściciel konta platformy Azure jest autoryzowany do tworzenia, aktualizowania i usuwania subskrypcji. Administrator globalny usługi Azure AD jest autoryzowany do wykonywania wielu działań w usłudze Azure AD, ale w przypadku tego przewodnika projektowego należy skoncentrować się na tworzeniu i usuwaniu tożsamości użytkownika.
 
 > [!NOTE]
-> Twoja organizacja może już mieć istniejącą dzierżawę usługi Azure AD, jeśli istnieje skojarzona z kontem licencję Office 365 lub Intune.
+> Twoja organizacja może już mieć istniejącą dzierżawę usługi Azure AD, jeśli istnieje skojarzona z kontem licencję Office 365, Intune lub Dynamics.
 
 Właściciel konta platformy Azure ma uprawnienia do tworzenia, aktualizowania i usuwania subskrypcji:
 
@@ -134,11 +135,11 @@ W przypadku porównania każdego przykładu z wymaganiami zobaczysz, że oba prz
 
 Teraz, Po zaprojektowaniu modelu uprawnień o najniższych uprawnieniach, przyjrzyjmy się, aby zapoznać się z niektórymi praktycznymi aplikacjami tych modeli ładu. Należy odwoływać się od wymagań, które muszą obsługiwać następujące trzy środowiska:
 
-1. **Infrastruktura udostępniona:** Pojedyncza grupa zasobów współdzielona przez wszystkie obciążenia. Są to takie zasoby, jak bramy sieci, zapory i usługi zabezpieczeń.
-2. **Rozwija** Wiele grup zasobów reprezentujących wiele gotowych obciążeń nieprodukcyjnych. Te zasoby są używane do sprawdzania koncepcji, testowania i innych działań deweloperskich. Te zasoby mogą mieć bardziej swobodny model ładu, aby zapewnić lepszą elastyczność deweloperów.
-3. **Narzędzi** Wiele grup zasobów reprezentujących wiele obciążeń produkcyjnych. Te zasoby są używane do obsługi prywatnych i publicznych artefaktów aplikacji. Te zasoby zwykle mają ścisłe modele zarządzania i zabezpieczeń, aby chronić zasoby, kod aplikacji i dane przed nieautoryzowanym dostępem.
+1. **Infrastruktura udostępniona:** Grupa zasobów współużytkowana przez wszystkie obciążenia. Są to takie zasoby, jak bramy sieci, zapory i usługi zabezpieczeń.
+2. **Narzędzi** Wiele grup zasobów reprezentujących wiele obciążeń produkcyjnych. Te zasoby są używane do obsługi prywatnych i publicznych artefaktów aplikacji. Te zasoby zwykle mają ścisłe modele zarządzania i zabezpieczeń, aby chronić zasoby, kod aplikacji i dane przed nieautoryzowanym dostępem.
+3. **Nie produkcja:** Wiele grup zasobów reprezentujących wiele gotowych obciążeń nieprodukcyjnych. Te zasoby są używane na potrzeby tworzenia i testowania tych zasobów może mieć bardziej swobodny model ładu, aby zapewnić lepszą elastyczność deweloperów. Zabezpieczenia w tych grupach powinny zwiększyć się bliżej od "produkcji" procesu tworzenia aplikacji.
 
-Dla każdego z tych trzech środowisk istnieje wymóg śledzenia danych kosztów według **właściciela obciążenia**, **środowiska**lub obu. Oznacza to, że chcesz poznać bieżący koszt **infrastruktury udostępnionej**, koszty związane z indywidualnymi środowiskami **deweloperskimi** i produkcyjnymi, a wreszcie ogólny koszt **rozwoju** **i środowisko produkcyjne**.
+Dla każdego z tych trzech środowisk istnieje wymóg śledzenia danych kosztów według **właściciela obciążenia**, **środowiska**lub obu. Oznacza to, że chcesz poznać ciągły koszt **infrastruktury udostępnionej**, koszty związane z indywidualnymi środowiskami w środowiskach **nieprodukcyjnych** i **produkcyjnych** , a wreszcie łączny koszt **nieprodukcji** **i środowisko produkcyjne**.
 
 Wiesz już, że zasoby są objęte zakresem dwóch poziomów: **subskrypcji** i **grupy zasobów**. W związku z tym pierwsza decyzja polega na tym, jakorganizować środowiska przez subskrypcję. Dostępne są tylko dwie możliwości: pojedyncza subskrypcja lub wiele subskrypcji.
 

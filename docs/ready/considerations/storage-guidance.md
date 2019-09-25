@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e32d85fb16ec68eba0896bfb2cf2087c436c050e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c4733dbb77d7feb8fd2a0fdd289105cd5e112327
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71021916"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224206"
 ---
 # <a name="storage-design-decisions"></a>Decyzje dotyczące projektowania magazynu
 
@@ -39,7 +39,7 @@ Odpowiedz na następujące pytania dotyczące obciążeń, aby ułatwić podejmo
 - **Czy konieczna będzie obsługa obciążeń analizy danych big data?** Usługa [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) jest oparta na usłudze Azure Blob Storage. Usługa Data Lake Storage Gen 2 może obsługiwać funkcję Data Lake dla dużych przedsiębiorstw. Może również obsługiwać przechowywanie petabajtów informacji przy jednoczesnym utrzymaniu setek gigabitów przepływności.
 - **Czy trzeba będzie udostępnić udziały plików natywne dla chmury?** Platforma Azure oferuje dwie podstawowe usługi, które udostępniają udziały plików hostowane w chmurze: Azure NetApp Files i Azure Files. [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) udostępnia udziały NFS o wysokiej wydajności, które są dobrze dopasowane do typowych obciążeń przedsiębiorstwa, takich jak system SAP. [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) udostępnia udziały plików dostępne za pośrednictwem protokołów SMB 3.0 i HTTPS.
 - **Czy konieczna będzie obsługa magazynu w chmurze hybrydowej dla lokalnych obciążeń w ramach obliczeń o wysokiej wydajności (HPC)?** [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) to rozwiązanie do buforowania hybrydowego, za pomocą którego można rozszerzyć możliwości magazynu lokalnego przy użyciu magazynu opartego na chmurze. Avere vFXT for Azure jest rozwiązaniem zoptymalizowanym do obciążeń HPC z dużą liczbą odczytów, które obejmują farmy obliczeniowe zawierające od 1000 do 40 000 rdzeni procesora CPU. Avere vFXT for Azure można zintegrować z lokalnym sprzętowym magazynem dołączonym do sieci (NAS), magazynem obiektów blob na platformie Azure lub równocześnie z oboma.
-- **Czy konieczne będzie przeprowadzenie na dużą skalę archiwizowania i synchronizowania danych lokalnych z chmurą?** Produkty [Azure Data Box](https://docs.microsoft.com/azure/databox-family/) zostały zaprojektowane w celu ułatwienia przenoszenia dużych ilości danych ze środowiska lokalnego do chmury. [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) jest urządzeniem wirtualnym umieszczonym w środowisku lokalnym. Data Box Gateway ułatwia zarządzanie migracją danych do chmury na dużą skalę. Jeśli konieczne jest przeanalizowanie, przekształcenie lub przefiltrowanie danych przed ich przeniesieniem do chmury, można użyć [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview), brzegowego urządzenia fizycznego do przetwarzania danych z włączoną obsługą sztucznej inteligencji, które jest wdrażane w środowisku lokalnym. Data Box Edge przyspiesza przetwarzanie i bezpieczny transfer danych na platformę Azure.
+- **Czy konieczne będzie przeprowadzenie na dużą skalę archiwizowania i synchronizowania danych lokalnych z chmurą?** Produkty [Azure Data Box](https://docs.microsoft.com/azure/databox-family) zostały zaprojektowane w celu ułatwienia przenoszenia dużych ilości danych ze środowiska lokalnego do chmury. [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) jest urządzeniem wirtualnym umieszczonym w środowisku lokalnym. Data Box Gateway ułatwia zarządzanie migracją danych do chmury na dużą skalę. Jeśli konieczne jest przeanalizowanie, przekształcenie lub przefiltrowanie danych przed ich przeniesieniem do chmury, można użyć [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview), brzegowego urządzenia fizycznego do przetwarzania danych z włączoną obsługą sztucznej inteligencji, które jest wdrażane w środowisku lokalnym. Data Box Edge przyspiesza przetwarzanie i bezpieczny transfer danych na platformę Azure.
 - **Czy chcesz rozszerzyć istniejący lokalny udział plików w celu korzystania z magazynu w chmurze?** [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide) umożliwia korzystanie z usługi Azure Files jak z rozszerzenia udziałów plików, które są hostowane na lokalnych maszynach z systemem Windows Server. Usługa synchronizacji przekształca system Windows Server w szybką pamięć podręczną udziału plików platformy Azure. Umożliwia to lokalnym maszynom uzyskującym dostęp do udziału korzystanie z dowolnego protokołu dostępnego w systemie Windows Server.
 
 ## <a name="common-storage-scenarios"></a>Typowe scenariusze magazynu
