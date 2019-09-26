@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informacje na temat subskrypcji platformy w chmurze jako podstawowej usługi w przypadku migracji na platformę Azure.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 06/07/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5774cc1f22265c532bc9d885aab354cc1b2d297
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023634"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221009"
 ---
 # <a name="subscription-decision-guide"></a>Przewodnik po decyzjach związanych z subskrypcjami
 
@@ -67,13 +67,8 @@ Wraz z rozwojem infrastruktury chmurowej organizacji są zazwyczaj tworzone doda
 Każda organizacja wybierze inny sposób kategoryzowania aplikacji, często oddzielając subskrypcje na podstawie określonych aplikacji lub usług albo wzdłuż linii archetypów aplikacji. Ta kategoryzacja jest często projektowana z myślą o obsłudze obciążeń, które będą prawdopodobnie zużywać większość limitów zasobów subskrypcji, albo osobnych obciążeń o kluczowym znaczeniu, aby upewnić się, że nie są one konkurencyjne względem innych obciążeń w ramach tych limitów. Niektóre obciążenia, które mogą uzasadniać oddzielną subskrypcję w ramach tego wzorca, to:
 
 - Obciążenia niezbędne dla działalności.
-- Aplikacje korzystające z chronionych danych.
-- Aplikacje eksperymentalne.
-- Aplikacje podlegające wymogom prawnym (takim jak HIPAA lub FedRAMP).
-- Obciążenia usługi Batch.
-- Obciążenia z danymi big data, takie jak usługa Hadoop.
-- Konteneryzowane obciążenia używające koordynatorów wdrożenia, takich jak usługa Kubernetes.
-- Obciążenia analityczne.
+- Aplikacje, które są częścią kosztu własnego sprzedaży (COGS, Cost of Goods Sold) w firmie. Przykład: każde wystąpienie widżetu firmy X zawiera moduł Azure IoT, który wysyła dane telemetryczne. Może to wymagać dedykowanej subskrypcji dla celów księgowości i zarządzania w ramach kosztu własnego sprzedaży.
+- Aplikacje podlegają wymogom prawnym, takim jak ustawy HIPAA lub FedRAMP.
 
 ### <a name="functional-pattern"></a>Wzorzec funkcjonalny
 
@@ -97,7 +92,7 @@ Hierarchie grup zarządzania mogą mieć do sześciu poziomów głębokości. Za
 
 - [Resource access management in Azure](../../govern/resource-consistency/resource-access-management.md) (Zarządzanie dostępem do zasobów na platformie Azure)
 - [Multiple layers of governance in large enterprises](../../govern/guides/complex/multiple-layers-of-governance.md) (Wiele warstw nadzoru w dużych przedsiębiorstwach)
-- [Multiple geographic regions](../../migrate/expanded-scope/multiple-regions.md) (Wiele regionów geograficznych)
+- [Multiple geographic regions](../regions/index.md) (Wiele regionów geograficznych)
 
 ## <a name="next-steps"></a>Następne kroki
 

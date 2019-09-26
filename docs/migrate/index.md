@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 982451c9043f775c2e211d9b166ca2d094479ca9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3734a9b692dd345f45ee6a2987abf773b3391c63
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816401"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224376"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migracja do chmury w podręczniku Cloud Adoption Framework
 
-Każdy [plan wdrożenia chmury](../plan/index.md) w skali przedsiębiorstwa będzie zawierać obciążenia, które nie gwarantują znacznych inwestycji w przypadku tworzenia nowej logiki biznesowej. Te obciążenia można przenieść do chmury za pomocą różnorodnych podejść: metodą „lift & shift” czy „lift & optimize” albo przez modernizację. Każda z nich jest traktowana jako migracja. Poniższe ćwiczenia pomogą ustanowić iteracyjne procesy oceniania, migrowania, optymalizacji i zabezpieczania tych obciążeń oraz zarządzania nimi.
+Każdy [plan wdrożenia chmury](../plan/index.md) w skali przedsiębiorstwa będzie zawierać obciążenia, które nie gwarantują znacznych inwestycji w przypadku tworzenia nowej logiki biznesowej. Te obciążenia można przenieść do chmury za pomocą różnorodnych podejść: metodą „lift and shift” czy „lift and optimize” albo przez modernizację. Każda z tych metod jest traktowana jako migracja. Poniższe ćwiczenia pomogą ustanowić iteracyjne procesy oceniania, migrowania, optymalizacji i zabezpieczania tych obciążeń oraz zarządzania nimi.
 
 ## <a name="getting-started"></a>Wprowadzenie
 
@@ -126,7 +126,7 @@ Migracja to działanie mocno obciążone procesami. Skalując nakład pracy zwi�
 
 ## <a name="iterative-migration-process"></a>Iteracyjny proces migracji
 
-Zasadniczo migracja do chmury składa się z czterech prostych faz: ocena, migracja, optymalizacja, zabezpieczenia i zarządzanie. Ta sekcja podręcznika CAF uczy czytelników, jak zmaksymalizować zwrot z każdej fazy tego procesu i jak dostosować te fazy do swojego planu wdrożenia chmury. Poniższa ilustracja przedstawia fazy w podejściu iteracyjnym:
+Zasadniczo migracja do chmury składa się z czterech prostych faz: ocena, migracja, optymalizacja, zabezpieczenia i zarządzanie. Ta sekcja podręcznika Cloud Adoption Framework uczy czytelników, jak zmaksymalizować zwrot z każdej fazy tego procesu i jak dostosować te fazy do swojego planu wdrożenia chmury. Poniższa ilustracja przedstawia fazy w podejściu iteracyjnym:
 
 ![Model migracji opisany w przewodniku Cloud Adoption Framework](../_images/operational-transformation-migrate.png)
 

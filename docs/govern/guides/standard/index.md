@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b4418b86e5fc77e4ae292351a6773b1808ce5e38
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 18d6d5d70d504e6575e54c4b00767a585f8ef43a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025764"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222391"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Przewodnik dotyczący ładu dla przedsiębiorstw standardowych
 
@@ -41,8 +41,9 @@ Każda aplikacja powinna zostać wdrożona w odpowiednim obszarze grupy zarządz
 
 1. Jedna grupa zarządzania dla każdego typu środowiska (np. produkcyjne, deweloperskie i testowe).
 2. Dwie subskrypcje, pierwsza dla środowiska produkcyjnego i druga dla nieprodukcyjnego.
-3. Odpowiednie grupy zasobów z kontrolą dostępu opartą na rolach zastosowaną w ramach tych subskrypcji.
-4. Na każdym poziomie tej hierarchii grupowania należy stosować [spójną nomenklaturę](../../../ready/considerations/naming-and-tagging.md).
+3. Na każdym poziomie tej hierarchii grupowania należy stosować [spójną nomenklaturę](../../../ready/considerations/naming-and-tagging.md).
+4. Grupy zasobów należy wdrażać w sposób, który uwzględnia cykl życia ich zawartości: wszystko co jest wspólnie opracowywane, zarządzane i wycofywane, podlega tym samym operacjom. Więcej informacji o najlepszych rozwiązaniach dotyczących grup zasobów możesz znaleźć [tutaj](../../../decision-guides/resource-consistency/index.md).
+5. [Wybór regionu](../../../decision-guides/regions/index.md) jest niezwykle istotny i należy o nim pamiętać, aby praca w sieci, monitorowanie i inspekcja odbywały się w odpowiedni sposób względem operacji przełączenia w tryb failover i powrotu po awarii, oraz wysyłane było potwierdzenie, że [wymagane jednostki SKU są dostępne w preferowanych regionach](https://azure.microsoft.com/global-infrastructure/services).
 
 Oto przykład zastosowania tego wzorca:
 

@@ -53,6 +53,7 @@ Dopóki nie zostanie w pełni ustanowiona relacja zaufania w środowisku chmury,
     1. [Architektura referencyjna sieci VPN](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) określa wzorzec i model wdrożenia na potrzeby tworzenia usługi VPN Gateway na platformie VPN.
     2. Upewnij się, że lokalne mechanizmy zabezpieczeń i zarządzania ruchem traktują połączone sieci w chmurze jako niezaufane. Zasoby i usługi hostowane w chmurze powinny mieć dostęp tylko do autoryzowanych usług lokalnych.
     3. Upewnij się, że lokalne urządzenie brzegowe w lokalnym centrum danych jest zgodne z [wymaganiami usługi Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) i jest skonfigurowane do uzyskiwania dostępu do publicznej sieci Internet.
+    4. Pamiętaj, że tuneli VPN nie należy traktować jako obwodów gotowych do użycia w warunkach produkcyjnych dla jakichkolwiek obciążeń z wyjątkiem tych najprostszych. Wszystkie obciążenia poza kilkoma najprostszymi wymagającymi łączności lokalnej powinny korzystać z usługi Azure ExpressRoute.
 1. W głównej grupie zarządzania utwórz drugą definicję strategii o nazwie `secure-hybrid-vnet`.
     1. Dodaj szablon usługi Resource Manager dla usługi VPN Gateway jako artefakt definicji strategii.
     2. Dodaj szablon usługi Resource Manager dla sieci wirtualnej jako artefakt definicji strategii.

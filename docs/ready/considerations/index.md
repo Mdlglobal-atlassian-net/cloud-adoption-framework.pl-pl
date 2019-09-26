@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f9926fd59133303960338ac4e8b45cc9007dad51
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816231"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224238"
 ---
 # <a name="landing-zone-considerations"></a>Zagadnienia dotyczące strefy docelowej
 
@@ -48,5 +48,5 @@ Następujące artykuły mogą pomóc w podjęciu decyzji dotyczących ładu dla 
 - **Wymagania związane z kosztami**. Na podstawie motywacji organizacji do wdrożenia chmury i zobowiązania operacyjne względem jej środowiska, może być konieczne wprowadzenie zmian w różnych konfiguracjach zarządzania kosztami dla strefy docelowej.
 - **Decyzje dotyczące monitorowania**. W zależności od wymagań operacyjnych dla strefy docelowej można wdrożyć różne narzędzia do monitorowania. Artykuł na temat decyzji dotyczących monitorowania pomoże określić najbardziej odpowiednie narzędzia do wdrożenia.
 - **Korzystanie z kontroli dostępu na podstawie ról**. [Kontrola dostępu na podstawie ról](../azure-best-practices/roles.md) na platformie Azure (RBAC) oferuje szczegółowe, oparte na grupach zarządzanie dostępem dla zasobów zorganizowanych wokół ról użytkownika.
-- **Decyzje dotyczące zasad**. Przykłady strategii platformy Azure oferują wstępnie utworzone strategie zgodności — każdą ze wstępnie zdefiniowanymi inicjatywami zasad. Decyzje dotyczące zasad ułatwiają wybór najlepszego planu lub inicjatywy zasad na podstawie Twoich wymagań i ograniczeń.
+- **Decyzje dotyczące zasad**. [Przykłady strategii platformy Azure](https://docs.microsoft.com/azure/governance/blueprints/samples) zawierają wstępnie utworzone strategie zgodności — każdą ze wstępnie zdefiniowanymi inicjatywami zasad. Decyzje dotyczące zasad ułatwiają wybór najlepszego planu lub inicjatywy zasad na podstawie Twoich wymagań i ograniczeń.
 - **[Uzyskiwanie zgodności w chmurze hybrydowej](../../infrastructure/misc/hybrid-consistency.md)** . Utwórz rozwiązania chmury hybrydowej, które zapewniają organizacji korzyści z innowacji w chmurze przy zachowaniu wielu udogodnień zarządzania w środowisku lokalnym.

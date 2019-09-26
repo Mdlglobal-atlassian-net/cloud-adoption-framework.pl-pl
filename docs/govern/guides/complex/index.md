@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Przewodnik dotyczący ładu dla przedsiębiorstw złożonych
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 63b66858c023ff85e1ff6f8adc811540f3034e2d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d2218c812c131c16716e9df1f347b4615e0c6b60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025964"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220564"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Przewodnik dotyczący ładu dla przedsiębiorstw złożonych
 
@@ -40,9 +40,10 @@ Poniższy diagram przedstawia hierarchię MVP ładu na potrzeby organizowania za
 Każda aplikacja powinna zostać wdrożona w odpowiednim obszarze grupy zarządzania, subskrypcji i hierarchii grupy zasobów. Podczas planowania wdrożenia zespół ds. zapewnienia ładu w chmurze utworzy w hierarchii niezbędne węzły, aby pomóc zespołom wdrażania chmury.
 
 1. Zdefiniuj grupę zarządzania dla każdej jednostki biznesowej ze szczegółową hierarchią, która odzwierciedla lokalizację geograficzną, a następnie typ środowiska (na przykład środowisko produkcyjne lub nieprodukcyjne).
-1. Utwórz subskrypcję dla każdej unikatowej kombinacji jednostki biznesowej, lokalizacji geograficznej, środowiska i „kategoryzacji aplikacji”.
-1. Utwórz oddzielną grupę zasobów dla każdej aplikacji.
-1. Na każdym poziomie tej hierarchii grupowania zastosuj [spójną nomenklaturę](../../../ready/considerations/naming-and-tagging.md).
+2. Utwórz subskrypcję produkcyjną i nieprodukcyjną dla każdej unikatowej kombinacji odrębnej jednostki biznesowej lub lokalizacji geograficznej. Zachowaj ostrożność w przypadku tworzenia wielu subskrypcji. Więcej informacji możesz znaleźć [tutaj](../../../decision-guides/subscriptions/index.md).
+3. Na każdym poziomie tej hierarchii grupowania zastosuj [spójną nomenklaturę](../../../ready/considerations/naming-and-tagging.md).
+4. Grupy zasobów należy wdrażać w sposób, który uwzględnia cykl życia ich zawartości: wszystko co jest wspólnie opracowywane, zarządzane i wycofywane, podlega tym samym operacjom. Więcej informacji o najlepszych rozwiązaniach dotyczących grup zasobów możesz znaleźć [tutaj](../../../decision-guides/resource-consistency/index.md).
+5. [Wybór regionu](../../../decision-guides/regions/index.md) jest niezwykle istotny i należy o nim pamiętać, aby praca w sieci, monitorowanie i inspekcja odbywały się w odpowiedni sposób względem operacji przełączenia w tryb failover i powrotu po awarii, oraz wysyłane było potwierdzenie, że [wymagane jednostki SKU są dostępne w preferowanych regionach](https://azure.microsoft.com/global-infrastructure/services).
 
 ![Diagram organizacji zasobów w dużym przedsiębiorstwie](../../../_images/govern/large-enterprise-resource-organization.png)
 

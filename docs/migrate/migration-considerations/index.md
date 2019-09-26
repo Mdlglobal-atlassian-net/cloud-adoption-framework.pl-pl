@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f8a5b1bc61fd44752bae7989ff19779f8ad61882
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 99e5deee6551d7e4db3a0404c6dd0e81deffe35d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024684"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224034"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Model migracji opisany w przewodniku Cloud Adoption Framework
 
@@ -26,7 +26,7 @@ Migracja do chmury stanowi wysiłek związany z zarządzaniem portfolio, który 
 Model migracji opisany w przewodniku Cloud Adoption Framework wymaga przeprowadzenia procesu zapewnienia gotowości biznesowej do wdrożenia chmury przez organizację. Pamiętaj, aby zapoznać się z wskazówkami dotyczącymi [planowania](../../strategy/index.md) i [gotowości](../../ready/index.md) w ramach modelu Cloud Adoption Framework w celu określenia celów biznesowych i innych powodów migracji do chmury, jak również wymaganych planów lub szkoleń w organizacji przed przeprowadzeniem procesu migracji w odpowiedniej skali.
 
 > [!NOTE]
-> Mimo że planowanie biznesowe jest istotne, równie ważne jest podejście rozwojowe. Równolegle do szerzej zakrojonego planowania biznesowego przez zespół ds. strategii chmurowej, sugerujemy rozpoczęcie migracji pierwszego obciążenia przez zespół ds. wdrożenia chmury jako wstępu do działań związanych z migracją na większą skalę. Ta początkowa migracja umożliwi zespołowi uzyskanie praktycznego doświadczenia dotyczącego problemów biznesowych i technicznych związanych z migracją.
+> Mimo że planowanie biznesowe jest istotne, równie ważne jest podejście rozwojowe. Równolegle do szerzej zakrojonego planowania biznesowego przez zespół strategiczny ds. chmury, sugerujemy rozpoczęcie migracji pierwszego obciążenia przez zespół wdrożeniowy ds. chmury jako wstępu do działań związanych z migracją na większą skalę. Ta początkowa migracja umożliwi zespołowi uzyskanie praktycznego doświadczenia dotyczącego problemów biznesowych i technicznych związanych z migracją.
 
 ## <a name="envision-an-end-state"></a>Przewidywanie stanu końcowego
 

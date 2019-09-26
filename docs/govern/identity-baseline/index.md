@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Objaśnienia dotyczące dziedziny Punkt odniesienia obsługi tożsamości w odniesieniu do utrzymania ładu w chmurze
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 888e9e7381f5dba0dd2b3797bb4cc06e79a2c9b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026232"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222248"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Omówienie dziedziny Punkt odniesienia obsługi tożsamości
 
@@ -26,7 +26,7 @@ Punkt odniesienia obsługi tożsamości jest jedną z [pięciu dziedzin utrzyman
 
 W tej sekcji przewodnika Cloud Adoption Framework opisano model tworzenia dziedziny Punkt odniesienia obsługi tożsamości w ramach strategii utrzymania ładu w chmurze. Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Jednak decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie i dyskusje odpowiednich członków zespołów informatycznych odpowiedzialnych za implementowanie rozwiązań zarządzania tożsamościami w organizacji i zarządzanie nimi.
 
-Jeśli Twoja organizacja nie ma własnych specjalistów zajmujących się punktem odniesienia obsługi tożsamości i zabezpieczeniami, należy w ramach tej dziedziny rozważyć zatrudnienie zewnętrznych konsultantów. Ponadto należy wziąć pod uwagę skorzystanie z [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services) — usług wdrażania w chmurze będących częścią programu [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) — lub innych zewnętrznych ekspertów ds. wdrażania w chmurze, aby przedyskutować z nimi kwestie związane z tą dziedziną.
+Jeśli Twoja organizacja nie ma własnych specjalistów zajmujących się punktem odniesienia obsługi tożsamości i zabezpieczeniami, należy w ramach tej dziedziny rozważyć zatrudnienie zewnętrznych konsultantów. Ponadto należy wziąć pod uwagę skorzystanie z [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services) — usług wdrażania w chmurze będących częścią programu [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) — lub innych zewnętrznych partnerów ds. wdrażania w chmurze, aby przedyskutować z nimi kwestie związane z tą dziedziną.
 
 ## <a name="policy-statements"></a>Instrukcje zasad
 
@@ -54,7 +54,7 @@ W poniższych sześciu krokach zamieszczono przykłady i potencjalne opcje, któ
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Szablon dziedziny Punkt odniesienia obsługi tożsamości</h3>
-                        <p class="x-hidden-focus">Pobierz szablon umożliwiający dokumentowanie dziedziny Punkt odniesienia obsługi tożsamości</p>
+                        <p class="x-hidden-focus">Pobierz szablon umożliwiający dokumentowanie dziedziny Punkt odniesienia obsługi tożsamości.</p>
                     </div>
                 </div>
             </div>

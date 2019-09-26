@@ -143,11 +143,11 @@
             - name: Networking
               items:
                 - name: Planowanie sieci wirtualnych
-                  href: 'https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Najlepsze rozwiązania z zakresu zabezpieczeń sieci
-                  href: 'https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Najlepsze rozwiązania dotyczące sieci podczas migracji obciążeń
-                  href: 'https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Sieci obwodowe
                   href: ready/azure-best-practices/perimeter-networks.md
                 - name: Topologia sieci piasty i szprych
@@ -155,35 +155,35 @@
             - name: Mechanizmy kontroli tożsamości i dostępu
               items:
                 - name: Najlepsze rozwiązania dotyczące zarządzania tożsamościami
-                  href: 'https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Zabezpieczanie dostępu administratora w usłudze Azure AD
-                  href: 'https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Wybieranie uwierzytelniania w usłudze Azure AD
-                  href: 'https://docs.microsoft.com/azure/security/azure-ad-choose-authn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/security/azure-ad-choose-authn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Magazyn
               items:
                 - name: Przewodnik po zabezpieczeniach magazynu
-                  href: 'https://docs.microsoft.com/azure/storage/common/storage-security-guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/storage/common/storage-security-guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Bazy danych
               items:
                 - name: Najlepsze rozwiązania z zakresu zabezpieczeń bazy danych
-                  href: 'https://docs.microsoft.com/azure/security/azure-database-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/security/azure-database-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Wybieranie wersji usługi SQL Azure
-                  href: 'https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Zarządzanie kosztami
               items:
                 - name: 'Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach'
                   href: ready/azure-best-practices/track-costs.md
                 - name: Najlepsze rozwiązania dotyczące usługi Azure Cost Management
-                  href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Tworzenie budżetów i zarządzanie nimi
-                  href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Eksportowanie danych kosztów
-                  href: 'https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Optymalizowanie kosztów na podstawie rekomendacji
-                  href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                 - name: Monitorowanie użycia i wydatków za pomocą alertów o kosztach
-                  href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                  href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
         - name: Sugerowane umiejętności
           href: ready/suggested-skills.md
     - name: Wdrażanie
@@ -219,7 +219,7 @@
                     - name: Równoważenie portfela
                       href: migrate/expanded-scope/balance-the-portfolio.md
                     - name: Wiele regionów geograficznych
-                      href: migrate/expanded-scope/multiple-regions.md
+                      href: decision-guides/regions/index.md
                 - name: Zmiany zakresu związane z kulturą
                   items:
                     - name: Gotowość w zakresie umiejętności
@@ -303,33 +303,33 @@
                         - name: Najlepsze rozwiązania dotyczące zabezpieczeń granicznych platformy Azure
                           href: reference/networking-vdc.md
                         - name: Najlepsze rozwiązania dotyczące zabezpieczeń bazy danych na platformie Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-database-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/azure-database-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Najlepsze rozwiązania z zakresu zabezpieczeń i szyfrowania danych platformy Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Najlepsze rozwiązania dotyczące zabezpieczeń kontroli dostępu i zarządzania tożsamościami na platformie Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Najlepsze rozwiązania z zakresu zabezpieczeń sieci platformy Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Najlepsze rozwiązania dotyczące bezpieczeństwa działania na platformie Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-operational-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/azure-operational-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Najlepsze rozwiązania dotyczące usługi Azure PaaS
-                          href: 'https://docs.microsoft.com/azure/security/security-paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/security-paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Najlepsze rozwiązania dotyczące zabezpieczeń usługi Azure Service Fabric
-                          href: 'https://docs.microsoft.com/azure/security/azure-service-fabric-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/azure-service-fabric-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Najlepsze rozwiązania dotyczące zabezpieczeń maszyny wirtualnej platformy Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-security-best-practices-vms?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/azure-security-best-practices-vms?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Implementowanie bezpiecznej hybrydowej architektury sieci na platformie Azure
-                          href: 'https://docs.microsoft.com/azure/guidance/guidance-iaas-ra-secure-vnet-hybrid?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/guidance/guidance-iaas-ra-secure-vnet-hybrid?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Najlepsze rozwiązania dotyczące zabezpieczeń Internetu rzeczy
-                          href: 'https://docs.microsoft.com/azure/security/azure-security-iot-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/azure-security-iot-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Zabezpieczanie baz danych PaaS na platformie Azure
-                          href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Zabezpieczanie internetowych i mobilnych aplikacji PaaS przy użyciu usługi Azure App Service
-                          href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Zabezpieczanie internetowych i mobilnych aplikacji PaaS przy użyciu usługi Azure Storage
-                          href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/security-paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Najlepsze rozwiązania dotyczące zabezpieczeń dla obciążeń IaaS na platformie Azure
-                          href: 'https://docs.microsoft.com/azure/security/azure-security-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json'
+                          href: 'https://docs.microsoft.com/azure/security/azure-security-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Zagadnienia dotyczące migracji
               items:
                 - name: Omówienie
@@ -409,7 +409,7 @@
     - name: Obsługa
       items:
         - name: Omówienie
-          href: operating-model/index.md
+          href: operate/index.md
         - name: Ład
           items:
             - name: Omówienie
@@ -711,7 +711,7 @@
                   href: decision-guides/software-defined-network/hybrid.md
                 - name: Model gwiazdy
                   href: decision-guides/software-defined-network/hub-spoke.md
-            - name: Dzienniki i raportowanie
+            - name: Rejestrowanie i raportowanie
               href: decision-guides/logging-and-reporting/index.md
             - name: Narzędzia migracji
               href: decision-guides/migrate-decision-guide/index.md
