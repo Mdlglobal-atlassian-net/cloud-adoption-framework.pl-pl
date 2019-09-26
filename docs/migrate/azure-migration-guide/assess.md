@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022835"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224392"
 ---
 # <a name="assess-the-digital-estate"></a>Szacowanie majątku cyfrowego
 
@@ -75,7 +75,7 @@ Usługi Azure Migrate korzystają z usługi Service Map, aby zwiększyć możliw
 Aby można było używać wizualizacji zależności, należy pobrać i zainstalować agenty na każdej maszynie lokalnej, która ma zostać przeanalizowana.
 
 - [Program Microsoft Monitoring Agent (MMA) ](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) musi być zainstalowany na każdej maszynie.
-- [Agent zależności](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) musi być zainstalowany na każdej maszynie.
+- [Agent zależności firmy Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) musi być zainstalowany na każdej maszynie.
 - Ponadto w przypadku maszyn, które nie są połączone z Internetem, należy pobrać i zainstalować na nich bramę usługi Log Analytics.
 
 <!-- markdownlint-disable MD024 -->
@@ -84,7 +84,6 @@ Aby można było używać wizualizacji zależności, należy pobrać i zainstalo
 
 - [Korzystanie z rozwiązania Service Map na platformie Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate i Service Map: wizualizacja zależności](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
-
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[Scenariusze i osoby biorące udział w projekcie](#tab/Scenarios)
 

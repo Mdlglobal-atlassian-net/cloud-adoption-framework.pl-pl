@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022781"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224072"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrowanie elementów zawartości (infrastruktury, aplikacji i danych)
 
@@ -196,6 +196,14 @@ Aby uzyskać więcej informacji, zobacz:
 
 - [Overview of Database Experimentation Assistant](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview) (Omówienie dotyczące Asystenta eksperymentowania z bazą danych)
 
+## <a name="cosmos-db-data-migration-tool"></a>Narzędzie do migracji danych usługi Cosmos DB
+
+Narzędzie do migracji danych usługi Azure Cosmos DB umożliwia importowanie danych z różnych źródeł do kolekcji i tabel usługi Azure Cosmos DB. Dane można importować z plików JSON, plików CSV, kodu SQL, bazy danych MongoDB, usługi Azure Table Storage, bazy danych Amazon DynamoDB, a nawet z kolekcji interfejsu API SQL usługi Azure Cosmos DB. Narzędzie do migracji danych może być również używane podczas migracji z kolekcji z pojedynczą partycją do kolekcji z wieloma partycjami na potrzeby interfejsu SQL API.
+
+Aby uzyskać więcej informacji, zobacz:
+
+- [Narzędzie do migracji danych usługi Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Narzędzia migracji innych firm](#tab/third-party-tools)
 
 Niektóre narzędzia migracji innych firm i usługi niezależnych dostawców oprogramowania mogą pomóc w procesie migracji. Wszystkie oferują różne korzyści i zalety. Do tych narzędzi należą:
@@ -224,16 +232,28 @@ Movere jest rozwiązaniem do odnajdywania, które zapewnia dane i szczegółowe 
 
 [Dowiedz się więcej](https://www.movere.io)
 
+## <a name="cosmos-db-partners"></a>Partnerzy usługi Cosmos DB
+
+Do obsługi migracji w usłudze Azure Cosmos DB dla baz danych NoSQL można wybrać opcje spośród wielu dostępnych narzędzi i doświadczonych partnerów zajmujących się integracją systemów.
+
+[Dowiedz się więcej](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+
 Odwiedź [Centrum migracji platformy Azure](https://azure.microsoft.com/migration/support), aby odnaleźć organizacje oferujące gotowe do użycia technologiczne rozwiązania partnerskie odpowiednie do swoich scenariuszy migracji i dowiedzieć się więcej na temat dodatkowych narzędzi migracji innych firm oraz usług pomocy technicznej.
+
+W [przewodniku po migracji bazy danych na platformę Azure](https://datamigration.microsoft.com) przedstawiono szereg opcji i szczegółowych wskazówek dotyczących migracji przy użyciu rozwiązań natywnych i partnerskich.
 
 # <a name="project-management-toolstabproject-management-tools"></a>[Narzędzia do zarządzania projektami](#tab/project-management-tools)
 
-Jeśli projekty nie są śledzone i zarządzane, istnieje większe prawdopodobieństwo wystąpienia problemów. Uważamy, że aby osiągnąć zamierzony cel, należy korzystać z narzędzia do zarządzania projektami. Dostępnych jest wiele różnych narzędzi i menedżerowie projektów w organizacji mogą już mieć swoje ulubione. Firma Microsoft oferuje następujące narzędzia do zarządzania projektami, które mogą ze sobą współdziałać, aby zapewnić szersze możliwości:
+Jeśli projekty nie są śledzone i zarządzane, istnieje większe prawdopodobieństwo wystąpienia problemów. Uważamy, że aby osiągnąć zamierzony cel, należy korzystać z narzędzia do zarządzania projektami. Dostępnych jest wiele różnych narzędzi i menedżerowie projektów w organizacji mogą już mieć swoje ulubione.
+
+Sugerowanym narzędziem do zarządzania projektami podczas migracji do chmury jest usługa Azure DevOps. Aby przyspieszyć korzystanie z usługi Azure DevOps, przewodnik Cloud Adoption Framework obejmuje narzędzie do automatycznego wdrażania szablonu projektu. Ten szablon obejmuje zadania często wykonywane podczas pracy związanej z migracją. Wdróż ten szablon przy użyciu [tych instrukcji](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template). Następnie możesz zmodyfikować ten szablon w celu odzwierciedlenia [obciążeń](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) i [zasobów](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) do zmigrowania.
+
+Firma Microsoft oferuje też następujące narzędzia do zarządzania projektami, które mogą ze sobą współdziałać, aby zapewnić szersze możliwości:
 
 - [Microsoft Planner](https://tasks.office.com): prosta, wizualna metoda organizowania pracy zespołowej.
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): zarządzanie projektami i portfolio, zarządzanie zdolnościami produkcyjnymi zasobów, zarządzanie finansami, zarządzanie grafikiem i harmonogramem.
 - [Microsoft Teams](https://products.office.com/microsoft-teams): narzędzie do współpracy i komunikacji zespołowej. Rozwiązanie Teams można również zintegrować z narzędziem Planner oraz innymi narzędziami, aby ułatwić współpracę.
-- [Azure DevOps](https://dev.azure.com): Za pomocą usługi Azure DevOps można zarządzać infrastrukturą jak kodem lub używać elementów roboczych i tablic do zarządzania projektami. Z czasem Twoja organizacja może skorzystać z funkcji ciągłej integracji/ciągłego wdrażania.
+- [Azure DevOps](https://dev.azure.com): do korzystania z usługi Azure DevOps nie jest wymagany szablon planowania przewodnika Cloud Adoption Framework. Usługi można używać bez tego szablonu, aby zarządzać infrastrukturą jak kodem lub używać elementów roboczych i tablic do zarządzania projektami. Z czasem Twoja organizacja może skorzystać z funkcji ciągłej integracji/ciągłego wdrażania.
 
 Nie są to jedyne dostępne narzędzia. Wiele innych narzędzi innych firm jest szeroko używanych w społeczności zajmującej się zarządzaniem projektami.
 

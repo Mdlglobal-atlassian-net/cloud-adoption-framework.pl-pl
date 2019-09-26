@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025257"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224272"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Ład, zabezpieczenia i zgodność na platformie Azure
 
@@ -69,7 +69,7 @@ Aby opublikować artefakty strategii w subskrypcji:
 1. Przejdź do obszaru **Strategie — Definicje strategii**.
 1. Wybierz strategię utworzoną w poprzednim kroku.
 1. Przejrzyj definicję strategii i wybierz pozycję **Opublikuj strategię**.
-1. Podaj **wersję** (np. 1.0) i wszelkie **uwagi dotyczące zmian**, a następnie wybierz pozycję **Publikuj**.
+1. Podaj **wersję** (np. _1.0_) i wszelkie **uwagi dotyczące zmian**, a następnie wybierz pozycję **Publikuj**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -80,7 +80,7 @@ Aby opublikować artefakty strategii w subskrypcji:
 1. Przejdź obszaru [Strategie — Definicje strategii](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Wybierz strategię utworzoną w poprzednim kroku.
 1. Przejrzyj definicję strategii i wybierz pozycję **Opublikuj strategię**.
-1. Podaj **wersję** (np. 1.0) i wszelkie **uwagi dotyczące zmian**, a następnie wybierz pozycję **Publikuj**.
+1. Podaj **wersję** (np. _1.0_) i wszelkie **uwagi dotyczące zmian**, a następnie wybierz pozycję **Publikuj**.
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Aby dowiedzieć się więcej, zobacz:
 
 - [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints)
 - [Cloud Adoption Framework: Przewodnik podejmowania decyzji dotyczących spójności zasobów](../../decision-guides/resource-consistency/index.md)
-- [Przykłady strategii opartych na standardach](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
+- [Przykłady strategii opartych na standardach](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 
