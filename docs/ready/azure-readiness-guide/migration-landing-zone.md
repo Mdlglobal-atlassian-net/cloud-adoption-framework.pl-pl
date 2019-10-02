@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, jak wdrożyć strefę docelową migracji na platformie Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 5/19/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 329274859f50aa83ebb90e79597fa1ffe0973ab8
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223940"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71811105"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Wdrażanie strefy docelowej migracji
 
@@ -75,7 +75,7 @@ Strategia strefy docelowej odzwierciedla następujące decyzje.
 
 Dowiedz się więcej i Pobierz przykład referencyjny struktury wdrażania w chmurze Migrowanie planu strefy ładunkowej w celu wdrożenia lub dostosowania z [przykładów planów platformy Azure](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
-Przykłady strategii są również dostępne w portalu. Aby uzyskać szczegółowe informacje na temat sposobu wdrażania strategii, zobacz artykuł dotyczący usługi [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
+Przykłady strategii są również dostępne w portalu. Aby uzyskać szczegółowe informacje na temat sposobu tworzenia planu, zobacz [Azure Plans](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 
 Aby uzyskać wskazówki dotyczące dostosowywania tej strategii lub utworzonej strefy docelowej, zobacz artykuły na temat [zagadnień dotyczących strefy docelowej](../considerations/index.md).
 
