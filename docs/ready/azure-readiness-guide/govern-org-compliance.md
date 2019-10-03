@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, jak skonfigurować ład, zabezpieczenia i zgodność w środowisku platformy Azure.
 author: tvuylsteke
 ms.author: kfollis
-ms.date: 04/09/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b94c1cac96fa5458c722d0a66e1ef2dac9d167f9
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224272"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71804482"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Ład, zabezpieczenia i zgodność na platformie Azure
 
-Podczas ustanawiania zasad firmowych i planowania strategii utrzymywania ładu możesz skorzystać z narzędzi i usług, takich jak Azure Policy, Azure Blueprints i Azure Security Center, aby wymusić i zautomatyzować decyzje dotyczące ładu w organizacji. Przed rozpoczęciem planowania ładu, użyj [narzędzia do porównywania stanu nadzoru nad ładem](http://aka.ms/caf/gov/assess), aby zidentyfikować potencjalne luki w podejściu do ładu w organizacji. Aby uzyskać więcej informacji na temat sposobu opracowywania procesów ładu, zapoznaj się ze [wskazówkami dotyczącymi ładu na platformie Azure w przewodniku Cloud Adoption Framework](../../govern/index.md).
+Podczas ustanawiania zasad firmowych i planowania strategii utrzymywania ładu możesz skorzystać z narzędzi i usług, takich jak Azure Policy, Azure Blueprints i Azure Security Center, aby wymusić i zautomatyzować decyzje dotyczące ładu w organizacji. Przed rozpoczęciem planowania ładu, użyj [narzędzia do porównywania stanu nadzoru nad ładem](https://cafbaseline.com), aby zidentyfikować potencjalne luki w podejściu do ładu w organizacji. Aby uzyskać więcej informacji na temat sposobu opracowywania procesów ładu, zapoznaj się ze [wskazówkami dotyczącymi ładu na platformie Azure w przewodniku Cloud Adoption Framework](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
@@ -78,7 +78,7 @@ Aby opublikować artefakty strategii w subskrypcji:
 ::: zone target="docs"
 
 1. Przejdź obszaru [Strategie — Definicje strategii](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
-1. Wybierz strategię utworzoną w poprzednim kroku.
+1. Wybierz definicję strategii utworzoną w poprzednim kroku.
 1. Przejrzyj definicję strategii i wybierz pozycję **Opublikuj strategię**.
 1. Podaj **wersję** (np. _1.0_) i wszelkie **uwagi dotyczące zmian**, a następnie wybierz pozycję **Publikuj**.
 
@@ -165,6 +165,7 @@ Aby dowiedzieć się więcej, zobacz:
 ::: zone-end
 
 ::: zone target="chromeless"
+
 ## <a name="action"></a>Akcja
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
