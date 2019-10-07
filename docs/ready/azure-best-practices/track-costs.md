@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022158"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967759"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach
 
@@ -40,7 +40,7 @@ Pierwszym krokiem w procesie dokładnego śledzenia informacji o kosztach w ró�
 
 ### <a name="resource-organization"></a>Organizacja zasobów
 
-Istnieje kilka metod organizowania zasobów. W tej sekcji przedstawiono najlepsze rozwiązanie oparte na potrzebach dużego przedsiębiorstwa, w którym struktury kosztów są rozmieszczone między różnymi jednostkami biznesowymi, lokalizacjami geograficznymi oraz organizacjami informatycznymi. Podobne najlepsze rozwiązanie dla mniejszej, mniej złożonej organizacji zostało opisane w temacie [Podróż po ładzie dla małych i średnich przedsiębiorstw](../../govern/guides/standard/index.md).
+Istnieje kilka metod organizowania zasobów. W tej sekcji przedstawiono najlepsze rozwiązanie oparte na potrzebach dużego przedsiębiorstwa, w którym struktury kosztów są rozmieszczone między różnymi jednostkami biznesowymi, lokalizacjami geograficznymi oraz organizacjami informatycznymi. Podobnym najlepszym rozwiązaniem dla mniejszej, mniej skomplikowanej organizacji jest dostęp do [standardowego przewodnika dotyczącego zarządzania przedsiębiorstwem](../../govern/guides/standard/index.md).
 
 W przypadku dużego przedsiębiorstwa następujący model grup zarządzania, subskrypcji i grup zasobów utworzy hierarchię, która umożliwi każdemu zespołowi uzyskanie poziomu widoczności odpowiedniego do wykonywania swoich obowiązków. Gdy przedsiębiorstwo wymaga kontroli kosztów, aby zapobiec przekroczeniu budżetu, może stosować narzędzia do zarządzania, takie jak Azure Blueprints lub Azure Policy, do subskrypcji w tej strukturze, aby szybko blokować przyszłe błędy związane z kosztami.
 

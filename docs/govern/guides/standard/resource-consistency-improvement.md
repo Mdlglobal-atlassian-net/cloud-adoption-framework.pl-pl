@@ -1,7 +1,7 @@
 ---
-title: 'Standardowa Przewodnik po przedsiębiorstwie: Poprawianie spójności zasobów'
+title: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Poprawianie spójności zasobów'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standardowa Przewodnik po przedsiębiorstwie: Poprawianie spójności zasobów'
+description: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Poprawianie spójności zasobów'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222237"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967448"
 ---
-# <a name="standard-enterprise-guide-improving-resource-consistency"></a>Standardowa Przewodnik po przedsiębiorstwie: Poprawianie spójności zasobów
+# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Poprawianie spójności zasobów
 
 W tym artykule opisano sposób dodawania kontroli spójności zasobów do obsługi aplikacji o znaczeniu strategicznym.
 
@@ -104,7 +104,7 @@ W tej części artykułu zostanie zmieniony projekt ładu MVP, który obejmuje n
     1. Zidentyfikuj konfigurację zapory platformy Azure spełniającą wymagania dotyczące zabezpieczeń. Alternatywnie Zidentyfikuj urządzenie innej firmy zgodne z platformą Azure.
     1. Utwórz szablon Menedżer zasobów, aby wdrożyć zaporę z wymaganymi konfiguracjami.
 8. Plan platformy Azure:
-    1. Utwórz nowy plan platformy Azure o `protected-data`nazwie.
+    1. Utwórz nowy plan platformy Azure o nazwie `protected-data`.
     2. Dodaj zaporę i szablony magazynu platformy Azure do planu.
     3. Dodaj nowe zasady dla chronionych subskrypcji danych.
     4. Opublikuj plan w dowolnej grupie zarządzania, która będzie hostować aplikacje o kluczowym znaczeniu.

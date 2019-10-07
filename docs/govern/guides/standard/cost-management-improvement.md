@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5cbf9a6cdb3776e763fc27492ad499679b4d1327
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b4ff2db2b8d7009eb9d5a50dee630c1a8a60723c
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030592"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967587"
 ---
 # <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>Standardowa Przewodnik po przedsiębiorstwie: Ulepszanie dyscypliny Cost Management
 
@@ -75,7 +75,7 @@ W tej części artykułu zostanie zmieniony projekt ładu MVP, który obejmuje n
     1. Przeprowadź inspekcję wartości tagowania, grupy zarządzania, subskrypcji i grupy zasobów, aby zidentyfikować wszelkie odchylenia.
     1. Ustanów opcje rozmiaru jednostki SKU, aby ograniczyć wdrożenia do jednostek SKU wymienionych w dokumentacji planowania wdrożenia.
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 Dodanie tych procesów i zmian do ładu MVP pomaga skorygować wiele zagrożeń związanych z zarządzaniem kosztem. Wspólnie tworzą one widoczność, odpowiedzialność i optymalizacje, które są konieczne do kontrolowania kosztów.
 

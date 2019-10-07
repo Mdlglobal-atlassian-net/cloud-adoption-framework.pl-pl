@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0d1aaa76f36125819ebb8f5c6225dc74bb60aabf
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: acc82a629adf32cd9a7bfe638b0ad176f1de7933
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030596"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967669"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Opis pomocniczy
 
-Poniższe opisy stanowią przypadek użycia dla [ładu w trakcie podróży w dużych przedsiębiorstwach](./index.md). Przed przystąpieniem do zaleceń w przewodniku należy zrozumieć założenia i przyczynę, które są odzwierciedlone w tym opisie. Następnie można lepiej dostosować strategię ładu do swojej organizacji.
+Poniższe opisy stanowią przypadek użycia dla ładu, [podczas gdy złożona jest przepodróż w chmurze złożonego przedsiębiorstwa](./index.md). Przed przystąpieniem do zaleceń w przewodniku należy zrozumieć założenia i przyczynę, które są odzwierciedlone w tym opisie. Następnie można lepiej dostosować strategię ładu do swojej organizacji.
 
 ## <a name="back-story"></a>Historia z tyłu
 
@@ -58,7 +58,7 @@ Następujące zmiany są przewidywane w ciągu następnych kilku lat:
 - CIO chce korzystać z migracji w chmurze jako funkcji wymuszania w celu poprawy spójności i stabilności między jednostkami biznesowymi i lokalizacje geograficzne. Natomiast w przyszłości należy przestrzegać wszelkich zewnętrznych wymagań dotyczących zgodności, które wymagają odchylenia od standardowych podejścia do określonych zespołów IT.
 - Jeśli wczesne eksperymenty w aplikacji dev i BI pokażą wiodące wskaźniki sukcesu, chcą, aby wystawić w ciągu najbliższych 24 miesięcy rozwiązania produkcyjne o małych skali.
 - CIO i dyrektor finansowy posiadają architekta i wiceprzewodniczący infrastruktury do tworzenia analiz kosztów i studiów wykonalności. Te wysiłki określają, czy firma może i powinna przenieść zasoby 5 000 do chmury w ciągu następnych 36 miesięcy. Pomyślna migracja zezwoli CIO na wyeliminowanie dwóch centrów danych, co zmniejsza koszty za pośrednictwem $100 mln USD w ramach planu pięciu lat. Jeśli trzy do czterech centrów danych mogą mieć podobne wyniki, budżet zostanie przywrócony do czerni, dzięki czemu budżet CIO będzie obsługiwał bardziej innowacyjne inicjatywy.
-    ![Koszty lokalne w porównaniu z kosztami platformy Azure, które pokazują zwrot z $100 mln USD w ciągu najbliższych pięciu lat](../../../_images/govern/calculator-enterprise.png)
+    0On — koszty lokalne i koszty związane z platformą Azure, które pokazują powrót z $100 mln USD w ciągu najbliższych pięciu lat @ no__t-1 @no__t
 - Wraz z tym obniżeniem kosztów firma planuje zmienić zarządzanie niektórymi inwestycjami IT, zmieniając rozmieszczenie zaliczonych wydatków inwestycyjnych jako kosztów operacyjnych w ramach tego kosztu. Ta zmiana zapewni większą kontrolę kosztów, której można użyć do przyspieszenia innych planowanych wysiłków.
 
 ## <a name="next-steps"></a>Następne kroki

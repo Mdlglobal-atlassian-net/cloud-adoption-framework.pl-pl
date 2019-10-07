@@ -1,7 +1,7 @@
 ---
-title: 'Standardowa Przewodnik po przedsiębiorstwie: Wstępne zasady korporacyjne związane z strategią ładu'
+title: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Wstępne zasady korporacyjne związane z strategią ładu'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standardowa Przewodnik po przedsiębiorstwie: Wstępne zasady korporacyjne związane z strategią ładu'
+description: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Wstępne zasady korporacyjne związane z strategią ładu'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5e269e623f22fa976f85c75c130ef0b19e4e9620
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223666"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967531"
 ---
-# <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Standardowa Przewodnik po przedsiębiorstwie: Wstępne zasady korporacyjne związane z strategią ładu
+# <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Wstępne zasady korporacyjne związane z strategią ładu
 
 Następujące zasady firmowe określają początkową pozycję ładu, która jest punktem początkowym tego przewodnika. Ten artykuł definiuje wczesne zagrożenia, wstępne instrukcje zasad i wczesne procesy w celu wymuszenia instrukcji zasad.
 

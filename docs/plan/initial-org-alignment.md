@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 7b80d61aea9f713de422b5575e7cb3617314857f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4a1135ec23d508cdd0f013439bb034ff66cf0c4d
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022487"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967787"
 ---
 # <a name="initial-organization-alignment"></a>Początkowe dopasowywanie organizacji
 
@@ -43,9 +43,11 @@ Przy założeniu, że Sugerowana struktura jest wyrównana do planu wdrożenia w
 - Jakie osoby będą odpowiedzialne za Definiowanie tych kontrolek ładu?
 - Czy istnieją inne możliwości lub osoby, które będą podlegać odpowiedzialnością lub odpowiedzialnością w ramach planu wdrażania chmury?
 
+Po udokumentowaniu odpowiedzi na te pytania można utworzyć [plany dla gotowości do umiejętności](./adapt-roles-skills-processes.md) , aby zdefiniować plany przygotowania tych osób do przygotowanych zadań.
+
 ## <a name="next-steps"></a>Następne kroki
 
-Po udokumentowaniu odpowiedzi na te pytania przejdź do [artykułu przygotowanie do kwalifikacji](./adapt-roles-skills-processes.md) , aby zdefiniować plany przygotowywania tych osób do pracy.
+Dowiedz się, jak planować wdrażanie w chmurze.
 
 > [!div class="nextstepaction"]
-> [Definiowanie planu gotowości do kwalifikacji](./adapt-roles-skills-processes.md)
+> [Planowanie wdrażania chmury](./plan-intro.md)
