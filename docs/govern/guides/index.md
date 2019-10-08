@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b5d5bca79d08a0084026c027a242086cefb0100f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025729"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967604"
 ---
 # <a name="cloud-governance-guides"></a>Przewodniki dotyczące ładu w chmurze
 
@@ -76,27 +76,27 @@ Aby rozpocząć podróż nadzoru, wybierz jedną z dwóch poniższych opcji. Opc
 
 ### <a name="business-characteristics"></a>Charakterystyka firmy
 
-| Charakterystyka | Organizacja standardowa                                                                              | Przedsiębiorstwo złożone                                                                                               |
-|--------------------------------------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Lokalizacja geograficzna (kraj lub region geopolityczny) | Klienci lub personel znajdują się głównie w jednej lokalizacji geograficznej                                                      | Klienci lub personel znajdują się w wielu lokalizacjach geograficznych lub wymagają suwerennych chmur.                                                             |
-| Jednostki biznesowe, których to dotyczy                    | Jednostki biznesowe korzystające ze wspólnej infrastruktury IT                                                                                    | Wiele jednostek biznesowych nie korzystających ze wspólnej infrastruktury IT                                                                                        |
-| Budżet działu IT                                  | Pojedynczy budżet działu IT                                                                                        | Przydzielony budżet w różnych jednostkach biznesowych i walutach                                                                         |
-| Inwestycje związane z infrastrukturą IT                             | Inwestycje kapitałowe oparte na wydatkach są planowane co rok i zwykle obejmują tylko podstawowe czynności konserwacyjne. | Inwestycje kapitałowe oparte na wydatkach są planowane co rok i często obejmują czynności konserwacyjne oraz cykl odświeżania od trzech do pięciu lat. |
+| Charakterystyka | Organizacja standardowa | Przedsiębiorstwo złożone |
+|---|---|---|
+| Lokalizacja geograficzna (kraj lub region geopolityczny) | Klienci lub personel znajdują się głównie w jednej lokalizacji geograficznej | Klienci lub personel znajdują się w wielu lokalizacjach geograficznych lub wymagają suwerennych chmur. |
+| Jednostki biznesowe, których to dotyczy | Jednostki biznesowe korzystające ze wspólnej infrastruktury IT | Wiele jednostek biznesowych nie korzystających ze wspólnej infrastruktury IT |
+| Budżet działu IT | Pojedynczy budżet działu IT | Przydzielony budżet w różnych jednostkach biznesowych i walutach |
+| Inwestycje związane z infrastrukturą IT | Inwestycje kapitałowe oparte na wydatkach są planowane co rok i zwykle obejmują tylko podstawowe czynności konserwacyjne. | Inwestycje kapitałowe oparte na wydatkach są planowane co rok i często obejmują czynności konserwacyjne oraz cykl odświeżania od trzech do pięciu lat. |
 
 ### <a name="current-state-before-adopting-cloud-governance"></a>Bieżący stan przed wdrożeniem nadzoru chmury
 
-| Stan | Przedsiębiorstwo standardowe                                                                               | Przedsiębiorstwo złożone                                                                                                          |
-|---------------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Centrum danych lub inni dostawcy hostingu | Mniej niż pięć centrów danych                                                                                  | Więcej niż pięć centrów danych                                                                                                   |
-| Networking                                  | Brak sieci WAN lub jeden bądź dwóch dostawców sieci WAN                                                                             | Złożona sieć lub globalna sieć WAN                                                                                             |
-| Tożsamość                                    | Pojedynczy las, pojedyncza domena. | Złożone, wiele lasów, wiele domen.  |
+| Stan | Przedsiębiorstwo standardowe | Przedsiębiorstwo złożone |
+|---|---|---|
+| Centrum danych lub inni dostawcy hostingu | Mniej niż pięć centrów danych | Więcej niż pięć centrów danych |
+| Networking | Brak sieci WAN lub jeden bądź dwóch dostawców sieci WAN | Złożona sieć lub globalna sieć WAN |
+| Tożsamość | Pojedynczy las, pojedyncza domena. | Złożone, wiele lasów, wiele domen. |
 
 ### <a name="desired-future-state-after-incremental-improvement-of-cloud-governance"></a>Żądany przyszły stan po przyrostowym ulepszaniu ładu chmury
 
-| Stan | Organizacja standardowa                                                                        | Przedsiębiorstwo złożone                                                                                        |
-|----------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Zarządzanie kosztami — księgowość w chmurze           | Model przewidywania kosztów. Rozliczenia są scentralizowana za pośrednictwem działu IT.                                                | Model obciążeń zwrotnych. Rozliczenia mogą być dystrybuowane za pośrednictwem zaopatrzenia działu IT.                                  |
-| Punkt odniesienia zabezpieczeń — zabezpieczone dane           | Dane finansowe i własność intelektualna firmy. Ograniczone dane klienta. Brak wymagań dotyczących zgodności z innymi firmami.     | Wiele kolekcji danych finansowych i osobistych klientów. Konieczne może być wzięcie pod uwagę zgodności z innymi firmami. |
+| Stan | Organizacja standardowa | Przedsiębiorstwo złożone |
+|---|---|---|
+| Zarządzanie kosztami — księgowość w chmurze | Model przewidywania kosztów. Rozliczenia są scentralizowana za pośrednictwem działu IT. | Model obciążeń zwrotnych. Rozliczenia mogą być dystrybuowane za pośrednictwem zaopatrzenia działu IT. |
+| Punkt odniesienia zabezpieczeń — zabezpieczone dane | Dane finansowe i własność intelektualna firmy. Ograniczone dane klienta. Brak wymagań dotyczących zgodności z innymi firmami. | Wiele kolekcji danych finansowych i osobistych klientów. Konieczne może być wzięcie pod uwagę zgodności z innymi firmami. |
 
 ## <a name="azure-virtual-datacenter"></a>Wirtualne centrum danych Azure
 
@@ -124,6 +124,6 @@ Aby uzyskać więcej informacji, odwiedź sekcję [wirtualnego centrum danych Az
 Wybierz jeden z tych przewodników:
 
 > [!div class="nextstepaction"]
-> [Standardowy przewodnik dotyczący ładu](./standard/index.md)
+> [Przewodnik dotyczący ładu dla przedsiębiorstw standardowych](./standard/index.md)
 >
 > [Przewodnik dotyczący ładu dla przedsiębiorstw złożonych](./complex/index.md)

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 041e1ccaf6ec0e928b6868f4e8c90849c8d4dea8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224596"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967710"
 ---
 # <a name="azure-regions"></a>Regiony świadczenia usługi Azure
 
@@ -110,7 +110,7 @@ Takie podejście jest oparte na informacjach wymiernych. W związku z tym podej�
 Gdy zakres migracji obejmuje wiele regionów, zespół wdrożeniowy ds. chmury powinien ocenić następujące zagadnienia dotyczące gotowości:
 
 - Niezależność danych może wymagać lokalizacji niektórych zasobów, ale istnieje wiele zasobów, które mogą nie podlegać tym ograniczeniom zgodności. Elementy, takie jak rejestrowanie, raportowanie, routing sieciowy, tożsamość i inne centralne usługi IT, mogą być hostowane jako usługi udostępnione w wielu subskrypcjach, a nawet w wielu regionach. Zaleca się, aby zespół rozwiązań w chmurze mógł oszacować model usługi udostępniania dla tych usług, jak opisano w temacie dotyczącym [architektury referencyjnej topologii gwiazdy z usługami udostępnionymi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
-- W przypadku wdrażania wielu wystąpień podobnych środowisk fabryka środowisk może stworzyć spójność, poprawić zarządzanie i przyspieszyć wdrażanie. W przypadku [podróży do zapewnienia ładu w dużych przedsiębiorstwach](../../govern/guides/complex/index.md) jest ustanawiane podejście, które tworzy środowisko skalujące się w wielu regionach.
+- W przypadku wdrażania wielu wystąpień podobnych środowisk fabryka środowisk może stworzyć spójność, poprawić zarządzanie i przyspieszyć wdrażanie. W przypadku [przewodnika dotyczącego ładu dla przedsiębiorstw złożonych](../../govern/guides/complex/index.md) jest ustanawiane podejście, które tworzy środowisko skalujące się w wielu regionach.
 
 Gdy zespół zdobędzie doświadczenie dotyczące podejścia obejmującego punkty odniesienia, a elementy gotowości zostaną dopasowane, trzeba będzie wziąć pod uwagę kilka wymagań wstępnych opartych na danych:
 
