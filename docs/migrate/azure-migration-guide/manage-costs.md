@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024806"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967210"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanizmy kontroli kosztów skoncentrowane na migracji
 
@@ -71,7 +71,7 @@ Przedstawiony poniżej otrzymany wynik szacunkowy obejmuje miesięczne koszty ob
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Konfiguracja i przegląd oceny w usłudze Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [przewodnik dla dużych przedsiębiorstw dotyczący ulepszeń usługi Cost Management](../../govern/guides/complex/cost-management-improvement.md).
+- Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [ulepszania usługi Cost Management w przewodniku dotyczącym ładu dla złożonych przedsiębiorstw](../../govern/guides/complex/cost-management-improvement.md).
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Szacowanie i optymalizowanie kosztów maszyn wirtualnych podczas migracji i po niej](#tab/EstimateOptimize)
 
@@ -104,7 +104,7 @@ Ta analiza umożliwi przegląd łącznego kosztu, budżetu (jeśli jest dostępn
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [przewodnik dla dużych przedsiębiorstw dotyczący przyrostowych ulepszeń usługi Cost Management](../../govern/guides/complex/cost-management-improvement.md).
+- Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [przyrostowego ulepszania usługi Cost Management w przewodniku dotyczącym ładu dla złożonych przedsiębiorstw](../../govern/guides/complex/cost-management-improvement.md).
 - Aby uzyskać więcej informacji na temat usługi Azure Advisor, zobacz temat [Reducing service costs using Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) (Obniżanie kosztów usług przy użyciu Azure Advisor).
 - Aby uzyskać więcej informacji na temat usługi Azure Cost Management, zobacz tematy [Understand and work with scopes](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) (Zapoznanie się z zakresami i praca z nimi) oraz [Explore and analyze costs with Cost Analysis](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis) (Poznawanie i analizowanie kosztów za pomocą funkcji analizy kosztów — Szybki start).
 
@@ -142,4 +142,4 @@ W przypadku procesów w tle o niższym priorytecie usługa Batch oferuje możliw
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [przewodnik w zakresie ładu dla dużych przedsiębiorstw dotyczący przyrostowych ulepszeń usługi Cost Management](../../govern/guides/complex/cost-management-improvement.md).
+Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [przyrostowych ulepszeń usługi Cost Management w przewodniku dotyczącym ładu dla złożonych przedsiębiorstw](../../govern/guides/complex/cost-management-improvement.md).
