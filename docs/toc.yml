@@ -92,24 +92,24 @@
       items:
         - name: Omówienie
           href: ready/index.md
-        - name: Gotowość na platformę Azure — przewodnik
+        - name: Przewodnik konfiguracji platformy Azure
           items:
             - name: Przed rozpoczęciem
-              href: ready/azure-readiness-guide/index.md
+              href: ready/azure-setup-guide/index.md
             - name: Organizowanie zasobów
-              href: ready/azure-readiness-guide/organize-resources.md
+              href: ready/azure-setup-guide/organize-resources.md
             - name: Zarządzanie dostępem
-              href: ready/azure-readiness-guide/manage-access.md
+              href: ready/azure-setup-guide/manage-access.md
             - name: Zarządzanie kosztami i rozliczeniami
-              href: ready/azure-readiness-guide/manage-costs.md
+              href: ready/azure-setup-guide/manage-costs.md
             - name: 'Planowanie ładu, zabezpieczeń i zgodności'
-              href: ready/azure-readiness-guide/govern-org-compliance.md
+              href: ready/azure-setup-guide/govern-org-compliance.md
             - name: Używanie monitorowania i raportowania
-              href: ready/azure-readiness-guide/monitoring-reporting.md
+              href: ready/azure-setup-guide/monitoring-reporting.md
             - name: Bycie na bieżąco z platformą Azure
-              href: ready/azure-readiness-guide/staying-current.md
+              href: ready/azure-setup-guide/staying-current.md
             - name: Wdrażanie strefy docelowej migracji
-              href: ready/azure-readiness-guide/migration-landing-zone.md
+              href: ready/azure-setup-guide/migration-landing-zone.md
         - name: Zagadnienia dotyczące strefy docelowej
           items:
             - name: Omówienie
@@ -404,196 +404,196 @@
           items:
             - name: Omówienie
               href: innovate/index.md
+    - name: Ład
+      items:
+        - name: Omówienie
+          href: govern/index.md
+        - name: Metodologia
+          href: govern/methodology.md
+        - name: Punkt odniesienia
+          href: govern/benchmark.md
+        - name: Początkowe podstawy ładu
+          href: govern/initial-foundation.md
+        - name: Udoskonalenia podstaw ładu
+          href: govern/foundation-improvements.md
+        - name: Przewodniki dotyczące nadzoru
+          items:
+            - name: Omówienie
+              href: govern/guides/index.md
+            - name: Przewodnik dotyczący ładu dla przedsiębiorstw standardowych
+              items:
+                - name: Omówienie
+                  href: govern/guides/standard/index.md
+                - name: Narracja
+                  href: govern/guides/standard/narrative.md
+                - name: Początkowe zasady firmowe
+                  href: govern/guides/standard/initial-corporate-policy.md
+                - name: Nakazowe wskazówki
+                  href: govern/guides/standard/prescriptive-guidance.md
+                - name: Udoskonalanie dyscypliny punktu odniesienia zabezpieczeń
+                  href: govern/guides/standard/security-baseline-improvement.md
+                - name: Udoskonalanie dyscypliny spójności zasobów
+                  href: govern/guides/standard/resource-consistency-improvement.md
+                - name: Udoskonalanie dyscypliny zarządzania kosztami
+                  href: govern/guides/standard/cost-management-improvement.md
+                - name: Scenariusze z wieloma chmurami
+                  href: govern/guides/standard/multicloud-improvement.md
+            - name: Przewodnik dotyczący ładu dla przedsiębiorstw złożonych
+              items:
+                - name: Omówienie
+                  href: govern/guides/complex/index.md
+                - name: Narracja
+                  href: govern/guides/complex/narrative.md
+                - name: Początkowe zasady firmowe
+                  href: govern/guides/complex/initial-corporate-policy.md
+                - name: Nakazowe wskazówki
+                  href: govern/guides/complex/prescriptive-guidance.md
+                - name: Udoskonalanie dyscypliny punktu odniesienia zabezpieczeń
+                  href: govern/guides/complex/identity-baseline-improvement.md
+                - name: Udoskonalanie dyscypliny punktu odniesienia zabezpieczeń
+                  href: govern/guides/complex/security-baseline-improvement.md
+                - name: Udoskonalanie dziedziny spójności zasobów
+                  href: govern/guides/complex/resource-consistency-improvement.md
+                - name: Udoskonalanie dziedziny zarządzania kosztami
+                  href: govern/guides/complex/cost-management-improvement.md
+                - name: Scenariusze z wieloma chmurami
+                  href: govern/guides/complex/multicloud-improvement.md
+                - name: Wiele warstw nadzoru
+                  href: govern/guides/complex/multiple-layers-of-governance.md
+        - name: Zagadnienia związane z nadzorem
+          items:
+            - name: Ocenianie zasad firmowych
+              href: govern/corporate-policy.md
+            - name: Zasady i zgodność w firmie gotowe do użycia w chmurze
+              items:
+                - name: Przygotowywanie zasad firmowych do użycia w chmurze
+                  href: govern/policy-compliance/index.md
+                - name: Omówienie ryzyka biznesowego
+                  href: govern/policy-compliance/business-risk.md
+                - name: Ocena tolerancja ryzyka
+                  href: govern/policy-compliance/risk-tolerance.md
+                - name: Definiowanie zasad firmowych
+                  href: govern/policy-compliance/policy-definition.md
+                - name: Dopasowywanie projektu do zasad
+                  href: govern/policy-compliance/governance-alignment.md
+                - name: Ustalanie procesów zapewniania zgodności zasad
+                  href: govern/policy-compliance/processes.md
+                - name: Zgodność z przepisami
+                  href: govern/policy-compliance/regulatory-compliance.md
+                - name: Gotowość do bezpieczeństwa chmury
+                  href: govern/policy-compliance/cloud-security-readiness.md
+                - name: Przegląd zasad chmury
+                  href: govern/policy-compliance/cloud-policy-review.md
+                - name: Klasyfikacja danych
+                  href: govern/policy-compliance/data-classification.md
+        - name: Dyscypliny ładu w chmurze
+          href: govern/governance-disciplines.md
+        - name: Implementowanie dyscyplin ładu w chmurze
+          items:
+            - name: Zarządzanie kosztami
+              items:
+                - name: Omówienie zarządzania kosztami
+                  href: govern/cost-management/index.md
+                - name: Pobieranie szablonu
+                  href: govern/cost-management/template.md
+                - name: Omówienie ryzyka biznesowego
+                  href: govern/cost-management/business-risks.md
+                - name: Metryki i wskaźniki tolerancji ryzyka
+                  href: govern/cost-management/metrics-tolerance.md
+                - name: Przykładowe zasady zarządzania kosztami
+                  href: govern/cost-management/policy-statements.md
+                - name: Procesy związane ze zgodnością zasad
+                  href: govern/cost-management/compliance-processes.md
+                - name: Ulepszanie zarządzania kosztami
+                  href: govern/cost-management/discipline-improvement.md
+                - name: Narzędzia platformy Azure do zarządzania kosztami
+                  href: govern/cost-management/toolchain.md
+            - name: Punkt odniesienia zabezpieczeń
+              items:
+                - name: Omówienie punktu odniesienia zabezpieczeń
+                  href: govern/security-baseline/index.md
+                - name: Pobieranie szablonu
+                  href: govern/security-baseline/template.md
+                - name: Omówienie ryzyka biznesowego
+                  href: govern/security-baseline/business-risks.md
+                - name: Metryki i wskaźniki tolerancji ryzyka
+                  href: govern/security-baseline/metrics-tolerance.md
+                - name: Przykładowe zasady punktu odniesienia zabezpieczeń
+                  href: govern/security-baseline/policy-statements.md
+                - name: Procesy związane ze zgodnością zasad
+                  href: govern/security-baseline/compliance-processes.md
+                - name: Ulepszanie punktu odniesienia zabezpieczeń
+                  href: govern/security-baseline/discipline-improvement.md
+                - name: Punkt odniesienia zabezpieczeń natywny dla chmury
+                  href: govern/security-baseline/cloud-native-policy.md
+                - name: Dodatkowe wskazówki dotyczące bezpieczeństwa na platformie Azure
+                  href: govern/security-baseline/azure-security-guidance.md
+                - name: Narzędzia platformy Azure na potrzeby punktu odniesienia zabezpieczeń
+                  href: govern/security-baseline/toolchain.md
+            - name: Punkt odniesienia obsługi tożsamości
+              items:
+                - name: Omówienie punktu odniesienia obsługi tożsamości
+                  href: govern/identity-baseline/index.md
+                - name: Pobieranie szablonu
+                  href: govern/identity-baseline/template.md
+                - name: Omówienie ryzyka biznesowego
+                  href: govern/identity-baseline/business-risks.md
+                - name: Metryki i wskaźniki tolerancji ryzyka
+                  href: govern/identity-baseline/metrics-tolerance.md
+                - name: Przykładowe zasady punktu odniesienia obsługi tożsamości
+                  href: govern/identity-baseline/policy-statements.md
+                - name: Procesy związane ze zgodnością zasad
+                  href: govern/identity-baseline/compliance-processes.md
+                - name: Ulepszanie punktu odniesienia obsługi tożsamości
+                  href: govern/identity-baseline/discipline-improvement.md
+                - name: Narzędzia platformy na potrzeby punktu obsługi tożsamości
+                  href: govern/identity-baseline/toolchain.md
+            - name: Spójność zasobów
+              items:
+                - name: Omówienie spójności zasobów
+                  href: govern/resource-consistency/index.md
+                - name: Pobieranie szablonu
+                  href: govern/resource-consistency/template.md
+                - name: Omówienie ryzyka biznesowego
+                  href: govern/resource-consistency/business-risks.md
+                - name: Metryki i wskaźniki tolerancji ryzyka
+                  href: govern/resource-consistency/metrics-tolerance.md
+                - name: Przykładowe zasady spójności zasobów
+                  href: govern/resource-consistency/policy-statements.md
+                - name: Procesy związane ze zgodnością zasad
+                  href: govern/resource-consistency/compliance-processes.md
+                - name: Zwiększanie spójności zasobów
+                  href: govern/resource-consistency/discipline-improvement.md
+                - name: Narzędzia platformy Azure do zapewniania spójności zasobów
+                  href: govern/resource-consistency/toolchain.md
+                - name: Zarządzanie dostępem do zasobów
+                  href: govern/resource-consistency/resource-access-management.md
+                - name: Projekt nadzoru dla jednego obciążenia
+                  href: govern/resource-consistency/governance-simple-workload.md
+                - name: Projekt nadzoru dla wielu zespołów
+                  href: govern/resource-consistency/governance-multiple-teams.md
+            - name: Przyspieszanie wdrażania
+              items:
+                - name: Omówienie przyspieszania wdrażania
+                  href: govern/deployment-acceleration/index.md
+                - name: Pobieranie szablonu
+                  href: govern/deployment-acceleration/template.md
+                - name: Omówienie ryzyka biznesowego
+                  href: govern/deployment-acceleration/business-risks.md
+                - name: Metryki i wskaźniki tolerancji ryzyka
+                  href: govern/deployment-acceleration/metrics-tolerance.md
+                - name: Przykładowe zasady przyspieszania wdrażania
+                  href: govern/deployment-acceleration/policy-statements.md
+                - name: Procesy związane ze zgodnością zasad
+                  href: govern/deployment-acceleration/compliance-processes.md
+                - name: Zwiększanie przyspieszania wdrażania
+                  href: govern/deployment-acceleration/discipline-improvement.md
+                - name: Narzędzia platformy Azure do przyspieszania wdrażania
+                  href: govern/deployment-acceleration/toolchain.md
     - name: Obsługa
       items:
         - name: Omówienie
           href: operate/index.md
-        - name: Ład
-          items:
-            - name: Omówienie
-              href: govern/index.md
-            - name: Metodologia
-              href: govern/methodology.md
-            - name: Punkt odniesienia
-              href: govern/benchmark.md
-            - name: Początkowe podstawy ładu
-              href: govern/initial-foundation.md
-            - name: Udoskonalenia podstaw ładu
-              href: govern/foundation-improvements.md
-            - name: Przewodniki dotyczące nadzoru
-              items:
-                - name: Omówienie
-                  href: govern/guides/index.md
-                - name: Przewodnik dotyczący ładu dla przedsiębiorstw standardowych
-                  items:
-                    - name: Omówienie
-                      href: govern/guides/standard/index.md
-                    - name: Narracja
-                      href: govern/guides/standard/narrative.md
-                    - name: Początkowe zasady firmowe
-                      href: govern/guides/standard/initial-corporate-policy.md
-                    - name: Nakazowe wskazówki
-                      href: govern/guides/standard/prescriptive-guidance.md
-                    - name: Udoskonalanie dyscypliny punktu odniesienia zabezpieczeń
-                      href: govern/guides/standard/security-baseline-improvement.md
-                    - name: Udoskonalanie dyscypliny spójności zasobów
-                      href: govern/guides/standard/resource-consistency-improvement.md
-                    - name: Udoskonalanie dyscypliny zarządzania kosztami
-                      href: govern/guides/standard/cost-management-improvement.md
-                    - name: Scenariusze z wieloma chmurami
-                      href: govern/guides/standard/multicloud-improvement.md
-                - name: Przewodnik dotyczący ładu dla przedsiębiorstw złożonych
-                  items:
-                    - name: Omówienie
-                      href: govern/guides/complex/index.md
-                    - name: Narracja
-                      href: govern/guides/complex/narrative.md
-                    - name: Początkowe zasady firmowe
-                      href: govern/guides/complex/initial-corporate-policy.md
-                    - name: Nakazowe wskazówki
-                      href: govern/guides/complex/prescriptive-guidance.md
-                    - name: Udoskonalanie dyscypliny punktu odniesienia zabezpieczeń
-                      href: govern/guides/complex/identity-baseline-improvement.md
-                    - name: Udoskonalanie dyscypliny punktu odniesienia zabezpieczeń
-                      href: govern/guides/complex/security-baseline-improvement.md
-                    - name: Udoskonalanie dziedziny spójności zasobów
-                      href: govern/guides/complex/resource-consistency-improvement.md
-                    - name: Udoskonalanie dziedziny zarządzania kosztami
-                      href: govern/guides/complex/cost-management-improvement.md
-                    - name: Scenariusze z wieloma chmurami
-                      href: govern/guides/complex/multicloud-improvement.md
-                    - name: Wiele warstw nadzoru
-                      href: govern/guides/complex/multiple-layers-of-governance.md
-            - name: Zagadnienia związane z nadzorem
-              items:
-                - name: Ocenianie zasad firmowych
-                  href: govern/corporate-policy.md
-                - name: Zasady i zgodność w firmie gotowe do użycia w chmurze
-                  items:
-                    - name: Przygotowywanie zasad firmowych do użycia w chmurze
-                      href: govern/policy-compliance/index.md
-                    - name: Omówienie ryzyka biznesowego
-                      href: govern/policy-compliance/business-risk.md
-                    - name: Ocena tolerancja ryzyka
-                      href: govern/policy-compliance/risk-tolerance.md
-                    - name: Definiowanie zasad firmowych
-                      href: govern/policy-compliance/policy-definition.md
-                    - name: Dopasowywanie projektu do zasad
-                      href: govern/policy-compliance/governance-alignment.md
-                    - name: Ustalanie procesów zapewniania zgodności zasad
-                      href: govern/policy-compliance/processes.md
-                    - name: Zgodność z przepisami
-                      href: govern/policy-compliance/regulatory-compliance.md
-                    - name: Gotowość do bezpieczeństwa chmury
-                      href: govern/policy-compliance/cloud-security-readiness.md
-                    - name: Przegląd zasad chmury
-                      href: govern/policy-compliance/cloud-policy-review.md
-                    - name: Klasyfikacja danych
-                      href: govern/policy-compliance/data-classification.md
-                - name: Dyscypliny ładu w chmurze
-                  href: govern/governance-disciplines.md
-                - name: Implementowanie dyscyplin ładu w chmurze
-                  items:
-                    - name: Zarządzanie kosztami
-                      items:
-                        - name: Omówienie zarządzania kosztami
-                          href: govern/cost-management/index.md
-                        - name: Pobieranie szablonu
-                          href: govern/cost-management/template.md
-                        - name: Omówienie ryzyka biznesowego
-                          href: govern/cost-management/business-risks.md
-                        - name: Metryki i wskaźniki tolerancji ryzyka
-                          href: govern/cost-management/metrics-tolerance.md
-                        - name: Przykładowe zasady zarządzania kosztami
-                          href: govern/cost-management/policy-statements.md
-                        - name: Procesy związane ze zgodnością zasad
-                          href: govern/cost-management/compliance-processes.md
-                        - name: Ulepszanie zarządzania kosztami
-                          href: govern/cost-management/discipline-improvement.md
-                        - name: Narzędzia platformy Azure do zarządzania kosztami
-                          href: govern/cost-management/toolchain.md
-                    - name: Punkt odniesienia zabezpieczeń
-                      items:
-                        - name: Omówienie punktu odniesienia zabezpieczeń
-                          href: govern/security-baseline/index.md
-                        - name: Pobieranie szablonu
-                          href: govern/security-baseline/template.md
-                        - name: Omówienie ryzyka biznesowego
-                          href: govern/security-baseline/business-risks.md
-                        - name: Metryki i wskaźniki tolerancji ryzyka
-                          href: govern/security-baseline/metrics-tolerance.md
-                        - name: Przykładowe zasady punktu odniesienia zabezpieczeń
-                          href: govern/security-baseline/policy-statements.md
-                        - name: Procesy związane ze zgodnością zasad
-                          href: govern/security-baseline/compliance-processes.md
-                        - name: Ulepszanie punktu odniesienia zabezpieczeń
-                          href: govern/security-baseline/discipline-improvement.md
-                        - name: Punkt odniesienia zabezpieczeń natywny dla chmury
-                          href: govern/security-baseline/cloud-native-policy.md
-                        - name: Dodatkowe wskazówki dotyczące bezpieczeństwa na platformie Azure
-                          href: govern/security-baseline/azure-security-guidance.md
-                        - name: Narzędzia platformy Azure na potrzeby punktu odniesienia zabezpieczeń
-                          href: govern/security-baseline/toolchain.md
-                    - name: Punkt odniesienia obsługi tożsamości
-                      items:
-                        - name: Omówienie punktu odniesienia obsługi tożsamości
-                          href: govern/identity-baseline/index.md
-                        - name: Pobieranie szablonu
-                          href: govern/identity-baseline/template.md
-                        - name: Omówienie ryzyka biznesowego
-                          href: govern/identity-baseline/business-risks.md
-                        - name: Metryki i wskaźniki tolerancji ryzyka
-                          href: govern/identity-baseline/metrics-tolerance.md
-                        - name: Przykładowe zasady punktu odniesienia obsługi tożsamości
-                          href: govern/identity-baseline/policy-statements.md
-                        - name: Procesy związane ze zgodnością zasad
-                          href: govern/identity-baseline/compliance-processes.md
-                        - name: Ulepszanie punktu odniesienia obsługi tożsamości
-                          href: govern/identity-baseline/discipline-improvement.md
-                        - name: Narzędzia platformy na potrzeby punktu obsługi tożsamości
-                          href: govern/identity-baseline/toolchain.md
-                    - name: Spójność zasobów
-                      items:
-                        - name: Omówienie spójności zasobów
-                          href: govern/resource-consistency/index.md
-                        - name: Pobieranie szablonu
-                          href: govern/resource-consistency/template.md
-                        - name: Omówienie ryzyka biznesowego
-                          href: govern/resource-consistency/business-risks.md
-                        - name: Metryki i wskaźniki tolerancji ryzyka
-                          href: govern/resource-consistency/metrics-tolerance.md
-                        - name: Przykładowe zasady spójności zasobów
-                          href: govern/resource-consistency/policy-statements.md
-                        - name: Procesy związane ze zgodnością zasad
-                          href: govern/resource-consistency/compliance-processes.md
-                        - name: Zwiększanie spójności zasobów
-                          href: govern/resource-consistency/discipline-improvement.md
-                        - name: Narzędzia platformy Azure do zapewniania spójności zasobów
-                          href: govern/resource-consistency/toolchain.md
-                        - name: Zarządzanie dostępem do zasobów
-                          href: govern/resource-consistency/resource-access-management.md
-                        - name: Projekt nadzoru dla jednego obciążenia
-                          href: govern/resource-consistency/governance-simple-workload.md
-                        - name: Projekt nadzoru dla wielu zespołów
-                          href: govern/resource-consistency/governance-multiple-teams.md
-                    - name: Przyspieszanie wdrażania
-                      items:
-                        - name: Omówienie przyspieszania wdrażania
-                          href: govern/deployment-acceleration/index.md
-                        - name: Pobieranie szablonu
-                          href: govern/deployment-acceleration/template.md
-                        - name: Omówienie ryzyka biznesowego
-                          href: govern/deployment-acceleration/business-risks.md
-                        - name: Metryki i wskaźniki tolerancji ryzyka
-                          href: govern/deployment-acceleration/metrics-tolerance.md
-                        - name: Przykładowe zasady przyspieszania wdrażania
-                          href: govern/deployment-acceleration/policy-statements.md
-                        - name: Procesy związane ze zgodnością zasad
-                          href: govern/deployment-acceleration/compliance-processes.md
-                        - name: Zwiększanie przyspieszania wdrażania
-                          href: govern/deployment-acceleration/discipline-improvement.md
-                        - name: Narzędzia platformy Azure do przyspieszania wdrażania
-                          href: govern/deployment-acceleration/toolchain.md
         - name: Organizowanie
           items:
             - name: Zarządzanie dopasowaniem organizacji
@@ -681,7 +681,7 @@
     - name: Dokumentacja
       items:
         - name: Harmonogram działania dotyczący struktury wdrażania chmury
-          href: reference/roadmap.md
+          href: reference/index.md
         - name: Przewodniki po decyzjach
           items:
             - name: Omówienie

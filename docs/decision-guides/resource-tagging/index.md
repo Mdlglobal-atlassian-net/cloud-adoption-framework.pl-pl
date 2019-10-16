@@ -2,19 +2,19 @@
 title: Przewodnik po decyzjach dotyczących nazewnictwa i tagowania zasobów
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informacje na temat organizacji i tagowania zasobów jako podstawowej usługi podczas operacji migracji na platformę Azure.
-author: rotycenh
-ms.author: v-tyhopk
+author: alexbuckgit
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4d28e0ec6dea61a96e463df8fd2717ed0a8c8f02
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ef226d55d6b16c69b35c57734de25efec6abaa00
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023644"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378027"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Przewodnik po decyzjach dotyczących nazewnictwa i tagowania zasobów
 
@@ -40,7 +40,7 @@ Schematy tagowania, które są skoncentrowane na działalności biznesowej, taki
 
 Standardowa konwencja nazewnictwa to punkt wyjścia do organizowania zasobów hostowanych w chmurze. Prawidłowo ustrukturyzowany system nazw pozwala szybko identyfikować zasoby na potrzeby zarządzania i księgowości. Jeśli w innych częściach organizacji istnieją konwencje nazewnictwa IT, należy zastanowić się, czy konwencje nazewnictwa w chmurze mają być z nimi zgodne, czy też trzeba ustanowić odrębne standardy oparte na chmurze.
 
-Należy również zauważyć, że różne typy zasobów platformy Azure mają różne [wymagania w zakresie nazewnictwa](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions#naming-rules-and-restrictions). Konwencje nazewnictwa muszą być zgodne z tymi wymaganiami dotyczącymi nazewnictwa.
+Należy również zauważyć, że różne typy zasobów platformy Azure mają różne [wymagania w zakresie nazewnictwa](../../ready/considerations/naming-and-tagging.md). Konwencje nazewnictwa muszą być zgodne z tymi wymaganiami dotyczącymi nazewnictwa.
 
 ## <a name="resource-tagging-patterns"></a>Wzorce tagowania zasobów
 
