@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: fa7777f0c6be9c3cd93cfb24cac4ee8e87bee553
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d5fada848418093b4d1ac7ae3ccc08b492544567
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816163"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378331"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -30,7 +30,7 @@ Poniższe ćwiczenia ułatwiają przejście przez proces tworzenia strefy docelo
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/index.md">
+        <a href="./azure-setup-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -40,8 +40,8 @@ Poniższe ćwiczenia ułatwiają przejście przez proces tworzenia strefy docelo
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Gotowość na platformę Azure — przewodnik</h3>
-Przejrzyj przewodnik gotowości na platformę Azure, aby zapoznać się z narzędziami i metodami potrzebnymi do utworzenia strefy docelowej.
+                            <h3>Przewodnik konfiguracji platformy Azure</h3>
+Przejrzyj przewodnik konfiguracji platformy Azure, aby zapoznać się z narzędziami i metodami potrzebnymi do utworzenia strefy docelowej.
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ Przejrzyj przewodnik gotowości na platformę Azure, aby zapoznać się z narzę
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/migration-landing-zone.md">
+        <a href="./azure-setup-guide/migration-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ Zweryfikuj zmiany w strefie docelowej, korzystając z sekcji najlepszych rozwią
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby przygotować się na wdrożenie chmury, przejrzyj [przewodnik gotowości na platformę Azure](./azure-readiness-guide/index.md).
+Aby przygotować się na wdrożenie chmury, przejrzyj [przewodnik konfiguracji platformy Azure](./azure-setup-guide/index.md).
 
 > [!div class="nextstepaction"]
-> [Gotowość na platformę Azure — przewodnik](./azure-readiness-guide/index.md)
+> [Przewodnik konfiguracji platformy Azure](./azure-setup-guide/index.md)
