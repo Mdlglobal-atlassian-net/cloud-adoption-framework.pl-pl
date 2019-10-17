@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967210"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378409"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanizmy kontroli kosztów skoncentrowane na migracji
 
@@ -91,7 +91,7 @@ W poniższych krokach przedstawiono zalecenia dotyczące kosztów dla zasobów (
 
 Usługa Azure Cost Management może zapewnić bardziej całościowe podsumowanie nawyków związanych z wydatkami, w tym szczegółowe podsumowanie kosztów i trendów związanych z wydatkami w czasie. W przypadku dużych lub złożonych migracji podsumowanie to może zawierać szczegółowe informacje potrzebne do podejmowania ogólnych decyzji w zakresie zarządzania dużymi kosztami.
 
-Wymagania wstępne: W pozostałej części karty założono, że czytelnik zakończył konfigurację usługi Azure Cost Management podczas zapoznawania się z przewodnikiem dotyczącym gotowości platformy Azure. Aby uzyskać więcej informacji na temat konfigurowania usługi Azure Cost Management, zobacz [artykuł w przewodniku dotyczącym gotowości platformy Azure](../../ready/azure-readiness-guide/manage-costs.md). Po wypełnieniu danych wykonaj kolejne kroki, aby oszacować miesięczne koszty na podstawie zebranych danych.
+Wymagania wstępne: W pozostałej części karty założono, że czytelnik zakończył konfigurację usługi Azure Cost Management podczas zapoznawania się z przewodnikiem dotyczącym konfiguracji platformy Azure. Aby uzyskać więcej informacji na temat konfigurowania usługi Azure Cost Management, zobacz [artykuł w przewodniku dotyczącym konfiguracji platformy Azure](../../ready/azure-setup-guide/manage-costs.md). Po wypełnieniu danych wykonaj kolejne kroki, aby oszacować miesięczne koszty na podstawie zebranych danych.
 
 W poniższych krokach opisano ładowanie danych analizy kosztów w usłudze Azure Cost Management dla subskrypcji:
 
