@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c32bbb180bc7b78a74681dc4a2554fd449bb21dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221113"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547883"
 ---
 # <a name="resource-consistency-decision-guide"></a>Przewodnik podejmowania decyzji dotyczących spójności zasobów
 
@@ -47,7 +47,7 @@ Jeśli odpowiesz _Nie_ na którekolwiek z powyższych pytań, odpowiedni zasób 
 
 Opierając się na mechanizmie podstawowego grupowania zasobów, platforma Azure udostępnia system wdrażania zasobów w środowisku chmury przy użyciu szablonów. Przy użyciu szablonów można tworzyć spójne konwencje organizacji i nazewnictwa podczas wdrażania obciążeń, wymuszając te aspekty projektu wdrażania zasobów i zarządzania.
 
-[Szablony usługi Azure Resource Manager](/azure/azure-resource-manager/template-deployment-overview) umożliwiają wielokrotne wdrażanie zasobów w spójnym stanie przy użyciu wstępnie określonej konfiguracji i struktury grupy zasobów. Szablony usługi Resource Manager pomagają w zdefiniowaniu zestawu standardów jako podstawy dla wdrożeń.
+[Szablony usługi Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) umożliwiają wielokrotne wdrażanie zasobów w spójnym stanie przy użyciu wstępnie określonej konfiguracji i struktury grupy zasobów. Szablony usługi Resource Manager pomagają w zdefiniowaniu zestawu standardów jako podstawy dla wdrożeń.
 
 Na przykład można mieć standardowy szablon do wdrażania obciążenia serwera internetowego, który zawiera dwie maszyny wirtualne jako serwery internetowe w połączeniu z modułem równoważenia obciążenia rozdzielającym ruch między serwerami. Za pomocą tego szablonu można ponownie utworzyć identyczny strukturalnie zestaw składający się z maszyn wirtualnych i modułu równoważenia obciążenia za każdym razem, gdy jest potrzebne tego typu obciążenie, zmieniając tylko nazwę wdrożenia i używane adresy IP.
 
