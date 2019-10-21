@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 0e6bcc4e41855db5288b1f503a8f091fefd05500
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 977a1f58d59a182df6451b27f15747477a1a1de9
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378901"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683748"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Struktura wdrażania chmury firmy Microsoft dla platformy Azure
 
@@ -65,47 +65,3 @@ Aby pomyślnie wdrożyć chmurę, klient musi przygotować swoich pracowników, 
   - Działanie zasobów i obciążeń w chmurze oraz zarządzanie nimi.
 
 Te fazy nie są liniowe i prawdopodobnie staną się cyklem, w którym klienci ponownie analizują i rozszerzają plany wdrażania, gdy ich pracownicy bieglej posługują się chmurą, a aplikacje i obciążenia działają prawidłowo i są prawidłowo zarządzane, są zgodne z zasadami firmowymi oraz zapewniają odpowiednie wyniki biznesowe.
-
-## <a name="quarterly-roadmap"></a>Kwartalny harmonogram działania
-
-Poniżej przedstawiono określone wersje na kwartał, aby przedstawiać dojrzałość każdej sekcji zawartości w cyklu kwartalnym.
-
-### <a name="q2-2019"></a>2\. kwartał 2019 r.
-
-- **Pierwsza wersja:** Sekcje Migracja, Gotowość i Planowanie zostaną udostępnione jako pierwsze wersje w bieżącym kwartale, przy czym planowane jest udostępnianie jednej sekcji w danym miesiącu.
-- **Wersja wczesnego testowania:** W przypadku sekcji Ład, Migracja i Gotowość należy spodziewać się ukończenia wersji wczesnego testowania w bieżącym kwartale.
-- **Wersja ciągłej dojrzałości:** W przypadku sekcji Ład i Migracja należy spodziewać się przynajmniej jednej wersji skupiającej się na bardziej szczegółowej definicji następnych kroków z możliwością działania. Należy oczekiwać, że w sekcji Ład zostaną dokładniej opisane takie zagadnienia jak najlepsze rozwiązania i zakres rozszerzony.
-- **Wersja poza pasmem:** Sekcja Gotowość będzie dostępna w wersji poza pasmem od drugiej połowy kwietnia do maja. Zawartość sekcji Gotowość zostanie ściągnięta bezpośrednio z podręcznika Gotowość na platformę Azure w celu zapewnienia nadchodzącej integracji z witryną Azure Portal. Ta zawartość zostanie udoskonalona i dopasowana do metodologii przewodnika Cloud Adoption Framework przed udostępnieniem oficjalnej pierwszej wersji sekcji Gotowość w drugiej połowie Maja.
-
-### <a name="q3-2019"></a>3\. kwartał 2019 r.
-
-- **Pierwsza wersja:** Innowacje aplikacji i innowacje danych.
-- **Wersja wczesnego testowania:** Planowanie i innowacje aplikacji.
-- **Wersja ciągłej dojrzałości:** W sekcjach Gotowość, Planowanie, Migracja i Ład zostaną opisane w bieżącym kwartale takie zagadnienia jak automatyzacja, najlepsze rozwiązania i zakres rozszerzony.
-
-## <a name="looking-back-recent-releases"></a>Patrząc wstecz (ostatnie wersje)
-
-**Utworzenie przewodnika Cloud Adoption Framework (1 października 2018 r.):** Klienci chcą, abyśmy im pomogli wdrożyć usystematyzowane podejście do przekształcenia firmy przy użyciu chmury.
-
-Na początku 2018 roku firma Microsoft udostępniła przewodnik Cloud Operating Model (COM). Przewodnik COM ułatwiał klientom zrozumienie, _czym jest_ i _na czym polega_ transformacja cyfrowa. Dzięki temu klienci poznawali wszystkie obszary, którymi trzeba się zająć: strategia biznesowa, strategia kulturowa i strategia technologiczna. Przewodnik COM nie zawierał jednak konkretnych _instrukcji_. Klienci często zadawali sobie pytanie „co dalej?”. Z powodu tej luki wiele naszych zespołów zaczęło tworzyć własne modele i podejścia. Mimo iż wszystkie zespoły skupiały się na tym samym celu, każdy z nich przekazywał nieco inne informacje, co w rezultacie prowadziło do nieporozumień.
-
-W październiku 2018 roku zaczęliśmy przeglądać wszystkie modele wdrażania chmury, które powstały w naszej organizacji. Było ich około 60. Został wtedy utworzony zespół, którego zadaniem było połączenie wszystkich tych modeli w jeden. Wynikiem tych starań było utworzenie modelu Microsoft Cloud Adoption Framework dla platformy Azure, który ułatwia klientom zrozumienie, _czym jest_ i _na czym polega_ wdrożenie chmury, oraz zapewnia _wskazówki_ od firmy Microsoft przyspieszające ten proces.
-
-**Wersja z 1. kwartału 2019 roku (11 lutego 2019 r.):** Na podstawie opinii klientów rozpoczęliśmy tworzenie filaru Ład. Klienci wskazywali, że ten składnik jest niezbędny do przyspieszenia migracji i udoskonalenia procesu wdrażania usług w chmurze. Zaufanie i ochrona, które są wynikiem utworzenia silnego modelu ładu, zwiększają ufność, której firmy potrzebują do realizowania celów związanych z wdrażaniem chmury.
-
-Ta pierwsza wersja pomogła przetestować ważne przesłanie firmy Microsoft ujednolicone w przewodniku Cloud Adoption Framework. Zachowując praktyczne zastosowanie tego ujednoliconego przesłania, skupiliśmy się na utworzeniu 4-etapowego procesu z możliwością działania:
-
-1. Zdefiniowanie stanu końcowego klienta na podstawie wspólnej metodologii.
-2. Sporządzenie oceny w celu zdefiniowania luk i obszarów inwestycji w ład.
-3. Zdefiniowanie minimalnej koniecznej funkcjonalności (MVP), aby ułatwić klientowi szybką iterację.
-4. Zapewnienie możliwości stopniowego ulepszania MVP w celu ograniczenia ryzyka i spełniania wymagań biznesowych.
-
-**Wersja z 2. kwartału 2019 roku (15 kwietnia 2019 r.):** Narzędzia migracji do chmury mogą łatwo migrować dziesiątki tysięcy zasobów IT do chmury. Jednak według opinii klientów migracje do chmury są blokowane przez gotowość techniczną i kulturową. W wersji wiosennej omówiono kwestię tych elementów blokujących przez zdefiniowanie podejścia iteracyjnego do migracji do chmury. Podstawowa metodologia obejmuje ulepszony przewodnik po migracji na platformę Azure, w którym omówiono narzędzia oraz podstawowe procesy i w którym zawarto sekcje dotyczące zakresu rozszerzonego i najlepszych rozwiązań umożliwiające dalszą pracę w oparciu o te podstawowe wskazówki.
-
-Ta wersja zawiera również rozszerzenia sekcji Plan w przewodniku Cloud Adoption Framework skupiające się na planowaniu biznesowym. Obejmuje również istniejący przewodnik konfigurowania platformy Azure w ramach nowej sekcji Gotowość w przewodniku Cloud Adoption Framework.
-
-_Zmiany w spisie treści (okienko nawigacji po lewej stronie):_ Okienko nawigacji po lewej stronie zostało udoskonalone, aby było zgodne z sekcjami Planowanie, Gotowość i Wdrażanie. Sekcja Wprowadzenie została przeprojektowana tak, aby zapewniała czytelnikowi podsumowanie trzech procesów opisanych w przewodniku Cloud Adoption Framework.
-
-## <a name="next-steps"></a>Następne kroki
-
-Dodaj tę stronę do zakładek i co miesiąc sprawdzaj na niej aktualizacje harmonogramu działania oraz informacje dotyczące ostatnich zmian w przewodniku Cloud Adoption Framework.

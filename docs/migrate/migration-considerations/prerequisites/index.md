@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: ce4cf827f391c5fb15f6b9e78997dd0f02e1751b
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378398"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683776"
 ---
 # <a name="prerequisites-for-migration"></a>Wymagania wstępne dotyczące migracji
 
@@ -57,8 +57,8 @@ Jeden członek każdego zespołu będzie odpowiedzialny za każdą z trzech defi
 Oprócz odpowiedzialności wysokiego poziomu istnieją również akcje, za które powinny być bezpośrednio odpowiedzialne poszczególne osoby lub grupy. Poniżej przedstawiono kilka obowiązków, które mają wpływ na te działania:
 
 - **Określanie priorytetów biznesowych** Podejmij decyzje biznesowe dotyczące migrowanych obciążeń i ogólnych ograniczeń czasowych. Aby uzyskać więcej informacji, zobacz temat [Cele biznesowe migracji do chmury](../../../strategy/motivations.md).
-- **Gotowość do zarządzania zmianami** Określ plan śledzenia zmian technicznych podczas migracji i poinformuj o nim. Więcej informacji na ten temat będzie dostępnych w III kwartale 2019 r.
-- **Uzgadnianie stanowiska użytkowników biznesowych** Określ plan przygotowania społeczności użytkowników biznesowych na wykonanie migracji. Więcej informacji na ten temat będzie dostępnych w III kwartale 2019 r.
+- **Gotowość do zarządzania zmianami** Określ plan śledzenia zmian technicznych podczas migracji i poinformuj o nim.
+- **Uzgadnianie stanowiska użytkowników biznesowych** Określ plan przygotowania społeczności użytkowników biznesowych na wykonanie migracji.
 - **Spis i analiza infrastruktury cyfrowej** Wykonanie narzędzi wymaganych do utworzenia spisu i analizy infrastruktury cyfrowej. Aby uzyskać więcej informacji, zobacz omówienie [infrastruktury cyfrowej](../../../digital-estate/index.md) w przewodniku Cloud Adoption Framework.
 - **Gotowość chmury** Oceń docelowe środowisko wdrażania, aby mieć pewność, że spełnia ono wymagania kilku pierwszych kandydujących obciążeń. Aby uzyskać więcej informacji, zobacz [przewodnik konfiguracji platformy Azure](../../../ready/azure-setup-guide/index.md).
 
