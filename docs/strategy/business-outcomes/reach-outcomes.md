@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 89c3e17dcc1a76e46eabb0155b9dc9bee7c7ea93
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dda348b5e0707a949df0171d718b8615918d9dff
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027845"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548647"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Przykłady wyników uzyskiwania dostępu globalnego
 
@@ -27,13 +27,13 @@ Rozwiązania w chmurze umożliwiają przeniesienie kosztów globalizacji do dost
 
 Rozszerzanie na nowy rynek może być jednym z najbardziej cennych wyników firmy podczas transformacji. Możliwość szybkiego wdrażania zasobów na rynku bez długoterminowego zobowiązania umożliwia liderom sprzedaży i operacji badanie opcji, które nie były brane pod uwagę w przeszłości.
 
-- **Przykład**: Producent kosmetyków zidentyfikował trend. Niektóre produkty są dostarczane do regionu Azja i Pacyfik, nawet jeśli żaden zespół sprzedaży nie działa w tym regionie. Minimalna ilość systemów wymaganych przez zdalną siłę sprzedaży jest mała, ale opóźnienie uniemożliwia rozwiązanie dostępu zdalnego. Aby zrobić wielką część tego trendu, wiceprezes działu sprzedaży chce eksperymentować z zespołami ds. sprzedaży w Japonii i Korei. Ze względu na to, że firma przeszła migrację w chmurze, mogła w ciągu dni wdrożyć niezbędne systemy w Japonii i Korei. Dzięki temu wiceprezes sprzedaży może zwiększyć przychód w regionie o _x procent_ w ciągu trzech miesięcy. Te dwa rynki nadal outperformą inne części świata, co prowadzi do operacji sprzedaży w całym regionie.
+- **Przykład**: producent kosmetyków zidentyfikował trend. Niektóre produkty są dostarczane do regionu Azja i Pacyfik, nawet jeśli żaden zespół sprzedaży nie działa w tym regionie. Minimalna ilość systemów wymaganych przez zdalną siłę sprzedaży jest mała, ale opóźnienie uniemożliwia rozwiązanie dostępu zdalnego. Aby zrobić wielką część tego trendu, wiceprezes działu sprzedaży chce eksperymentować z zespołami ds. sprzedaży w Japonii i Korei. Ze względu na to, że firma przeszła migrację w chmurze, mogła w ciągu dni wdrożyć niezbędne systemy w Japonii i Korei. Dzięki temu wiceprezes sprzedaży może zwiększyć przychód w regionie o _x procent_ w ciągu trzech miesięcy. Te dwa rynki nadal outperformą inne części świata, co prowadzi do operacji sprzedaży w całym regionie.
 
 ## <a name="data-sovereignty"></a>Niezależność danych
 
 Na nowych rynkach wprowadzono dodatkowe ograniczenia ładu. Rodo to jeden przykład kryteriów ładu, które mogą spowodować znaczny wpływ na finanse. Platforma Azure oferuje oferty zgodności, które pomagają klientom spełnić zobowiązania w zakresie zgodności między branżami objętymi regulacją i rynkami globalnymi. Aby uzyskać więcej informacji, zobacz [Omówienie zgodności Microsoft Azure](https://aka.ms/AzureCompliance).
 
-- **Przykład**: Dostawca narzędzi opartych na Stanach Zjednoczonych otrzymał umowę umożliwiającą dostarczenie narzędzi w Kanadzie. Kanadyjskie prawo dotyczące suwerenności danych wymaga, aby kanadyjskie dane były przechowywane w Kanadzie. Ta firma pracowała w sposób dzięki wykorzystaniu innowacji przez aplikacje obsługujące chmurę przez lata. W związku z tym ich oprogramowanie było możliwe do wdrożenia za pomocą w pełni inicjowanych procesów DevOps. Z kilkoma drobnymi zmianami w bazie kodu, mogli wdrożyć działającą kopię kodu w centrum danych platformy Azure w Kanadzie, przyczynić się do zachowania zgodności i obsłużyć klienta.
+- **Przykład**: dostawca narzędzi opartych na USA otrzymał umowę o dostarczenie narzędzi w Kanadzie. Kanadyjskie prawo dotyczące suwerenności danych wymaga, aby kanadyjskie dane były przechowywane w Kanadzie. Ta firma pracowała w sposób dzięki wykorzystaniu innowacji przez aplikacje obsługujące chmurę przez lata. W związku z tym ich oprogramowanie było możliwe do wdrożenia za pomocą w pełni inicjowanych procesów DevOps. Z kilkoma drobnymi zmianami w bazie kodu, mogli wdrożyć działającą kopię kodu w centrum danych platformy Azure w Kanadzie, przyczynić się do zachowania zgodności i obsłużyć klienta.
 
 ## <a name="next-steps"></a>Następne kroki
 

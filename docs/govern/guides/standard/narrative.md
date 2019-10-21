@@ -1,5 +1,5 @@
 ---
-title: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Opisowe zagadnienia związane z strategią ładu'
+title: 'Przewodnik dotyczący zarządzania przedsiębiorstwem w warstwie Standardowa: Opis strategii zarządzania'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ten opis określa przypadek użycia dla ładu podczas podróży w ramach wdrożenia chmury w standardowej firmie.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be679c1265907f2b4a6be86d82ce287dc94d4b70
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 8bf9b65c71defd57c319f46a83b5d4540967b012
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967472"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547443"
 ---
-# <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Opisowe zagadnienia związane z strategią ładu
+# <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Przewodnik dotyczący zarządzania przedsiębiorstwem w warstwie Standardowa: Opis strategii zarządzania
 
 Poniższe kroki opisują przypadek użycia dla ładu podczas podróży w ramach wdrożenia [chmury w standardowej firmie](./index.md). Przed wdrożeniem podróży należy zrozumieć założenia i racjonalne uzasadnienie, które są odzwierciedlone w tych rozdziałach. Następnie można lepiej dostosować strategię ładu do swojej organizacji.
 
@@ -52,7 +52,7 @@ Następujące zmiany są przewidywane w ciągu następnych kilku lat:
 - CIO przegląda zasady dotyczące danych osobowych i danych finansowych, aby umożliwić przyszłe cele stanu.
 - Zespoły projektowe i analizy biznesowej chcą wystawić rozwiązania w chmurze w środowisku produkcyjnym w ciągu najbliższych 24 miesięcy w oparciu o wizję i nowe produkty.
 - W tym roku zespół IT ukończy wycofywanie obciążeń związanych z odzyskiwaniem po awarii w centrum danych DR przez Migrowanie maszyn wirtualnych 2 000 do chmury. Oczekuje się, że w ciągu najbliższych pięciu lat zostanie wygenerowane szacowane oszczędności kosztów $25M USD.
-    0On — koszty lokalne i koszty związane z platformą Azure, które pokazują powrót z $25M USD w ciągu najbliższych pięciu lat @ no__t-1 @no__t
+    koszty związane z ![Onami i kosztami platformy Azure, które pokazują zwrot z $25M USD w ciągu najbliższych pięciu lat ](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 - Firma planuje zmienić sposób jej inwestycji, zmieniając rozmieszczenie zaliczonych wydatków kapitałowych jako kosztów operacyjnych w ramach tego rozwiązania. Ta zmiana zapewni większą kontrolę kosztów i umożliwi jej przyspieszenie innych planowanych wysiłków.
 
 ## <a name="next-steps"></a>Następne kroki

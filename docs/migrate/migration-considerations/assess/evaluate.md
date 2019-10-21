@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 186aa4d4dc5218e2166e7dfb4c9834917e647a02
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 34d9cd3252849353b0fe765db4d84f7e9f2e5ea7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024662"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549151"
 ---
 # <a name="evaluate-workload-readiness"></a>Ocena gotowości obciążeń
 
@@ -27,8 +27,8 @@ Ten artykuł nie uwzględnia wszystkich możliwych działań ewaluacyjnych. Zak�
 
 ## <a name="common-infrastructure-evaluation-activities"></a>Typowe działania oceny infrastruktury
 
-- Wymagania dotyczące oprogramowania VMware: [Przejrzyj wymagania usługi Azure Site Recovery dotyczące oprogramowania VMware](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix).
-- Wymagania dotyczące funkcji Hyper-V: [Przejrzyj wymagania usługi Azure Site Recovery dotyczące funkcji Hyper-V](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-support-matrix).
+- Wymagania dotyczące oprogramowania VMware: [zapoznaj się z wymaganiami Azure Site Recovery dla programu VMware](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix).
+- Wymagania dotyczące funkcji Hyper-V: [zapoznaj się z wymaganiami dotyczącymi Azure Site Recovery funkcji Hyper-v](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-support-matrix).
 
 Pamiętaj o udokumentowaniu wszelkich rozbieżności w konfiguracji hosta, konfiguracji zreplikowanej maszyny wirtualnej, wymaganiach dotyczących magazynu lub konfiguracji sieci.
 
@@ -36,7 +36,7 @@ Pamiętaj o udokumentowaniu wszelkich rozbieżności w konfiguracji hosta, konfi
 
 - Udokumentowanie celów punktu odzyskiwania i celów czasu odzyskiwania bieżącego wdrożenia bazy danych. Są one używane w [działaniach dotyczących architektury](./architect.md) w celu ułatwienia podejmowania decyzji.
 - Udokumentowanie wszelkich wymagań dotyczących konfiguracji o wysokiej dostępności. Aby uzyskać pomoc dotyczącą wymagań programu SQL Server, zobacz [Przewodnik po rozwiązaniach wysokiej dostępności programu SQL Server](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server).
-- Ocena zgodności rozwiązań PaaS. [Przewodnik po migracji danych na platformę Azure](https://datamigration.microsoft.com) mapuje lokalne bazy danych do zgodnych rozwiązań PaaS platformy Azure, takich jak usługa [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) albo usługa [Azure DB](https://docs.microsoft.com/azure/sql-database) for [MySQL](https://docs.microsoft.com/azure/mysql), [Postgres](https://docs.microsoft.com/azure/postgresql) lub [MariaDB](https://docs.microsoft.com/azure/mariadb).
+- Ocena zgodności rozwiązań PaaS. [Przewodnik migracji danych platformy Azure](https://datamigration.microsoft.com) mapuje lokalne bazy danych na zgodne rozwiązania PaaS platformy Azure, takie jak [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) lub [Azure DB](https://docs.microsoft.com/azure/sql-database) dla [MySQL](https://docs.microsoft.com/azure/mysql), [PostgreSQL](https://docs.microsoft.com/azure/postgresql)lub [MariaDB](https://docs.microsoft.com/azure/mariadb).
 - Gdy zgodność rozwiązań PaaS jest opcją bez konieczności korygowania, należy skonsultować się z zespołem odpowiedzialnym za [działania dotyczące architektury](./architect.md). Migracje PaaS mogą zapewnić znaczną oszczędność czasu i obniżyć całkowity koszt posiadania w przypadku większości rozwiązań w chmurze.
 - Jeśli zgodność rozwiązań PaaS jest opcją, ale wymagane jest korygowanie, należy skonsultować się z zespołami odpowiedzialnymi za [działania dotyczące architektury](./architect.md) i [działania korygujące](../migrate/remediate.md). W wielu scenariuszach korzyści z migracji PaaS dla rozwiązań baz danych mogą przeważać nad zwiększeniem czasu korygowania.
 - Udokumentowanie rozmiaru i szybkości zmian dla każdej bazy danych, która ma zostać poddana migracji.

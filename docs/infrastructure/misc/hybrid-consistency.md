@@ -8,12 +8,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 819d0c058acf48402296bbac8d4cb4837271259e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5b2de64af3d7e48a38fd1f125fc5f8b37b190dd2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821651"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547195"
 ---
 # <a name="create-hybrid-cloud-consistency"></a>Uzyskiwanie zgodności w chmurze hybrydowej
 
@@ -25,8 +25,8 @@ Hybrydowe modele wdrażania podczas migracji mogą zmniejszyć ryzyko i przyczyn
 
 Rozwiązanie w chmurze hybrydowej umożliwia organizacjom skalowanie zasobów obliczeniowych. Eliminuje to również potrzebę wykonywania dużych nakładów inwestycyjnych do obsługi krótkoterminowych przekroczeń popytu. Zmiany w firmie mogą zwiększyć konieczność zwolnienia zasobów lokalnych w celu uzyskania bardziej poufnych danych lub aplikacji. Anulowanie aprowizacji zasobów w chmurze jest łatwiejsze, szybsze i tańsze. Płacisz tylko za zasoby, których Twoja organizacja tymczasowo używa, zamiast konieczności kupowania i konserwowania dodatkowych zasobów. Takie podejście zmniejsza ilość sprzętu, który może pozostawać bezczynny w długim okresie czasu. Przetwarzanie w chmurze hybrydowej zapewnia wszystkie korzyści wynikające z elastyczności i skalowalności w chmurze, co pozwala na najniższe ryzyko narażenia na dane.
 
-![Tworzenie hybrydowej spójności w chmurze w ramach tożsamości, zarządzania, zabezpieczeń, danych, programowania](../../_images/hybrid-consistency.png)
-i DevOps*rysunek 1 — Tworzenie hybrydowej spójności chmury między tożsamościami, zarządzaniem, zabezpieczeniami, danymi, programowaniem i DevOps.*
+![Creatingj spójność chmury hybrydowej w ramach tożsamości, zarządzania, zabezpieczeń, danych, programowania i DevOps ](../../_images/hybrid-consistency.png)
+*rysunek 1 — Tworzenie spójności chmury hybrydowej między tożsamościami, zarządzaniem, zabezpieczeniami, danymi, programowaniem i DevOps.*
 
 Prawdziwe rozwiązanie w chmurze hybrydowej musi udostępniać cztery składniki, z których każdy ma znaczące korzyści:
 

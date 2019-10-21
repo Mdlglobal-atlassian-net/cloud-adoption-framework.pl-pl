@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 590875a336b8af23723ab122e2af8f2290404ab3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 46c7d77aecc93f5c129f098145bfec97820995a2
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224139"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378074"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -49,18 +49,18 @@ Aby można było obsłużyć powyższe kryteria, ta lista zawiera przykład pier
 
 - **Krytyczne zdarzenia biznesowe:** Gdy krytyczne zdarzenie biznesowe jest główną motywacją, implementacja narzędzia, takiego jak [Azure Site Recovery](../migrate/azure-migration-guide/migrate.md?tabs=Tools#azure-site-recovery) , może być dobrym pierwszym projektem. Podczas migracji można użyć tego narzędzia do szybkiej migracji zasobów centrum danych. Jednak podczas pierwszego projektu można używać go w sposób czysty jako narzędzie do odzyskiwania po awarii, co zmniejsza zależności od zasobów odzyskiwania po awarii w centrum danych.
 
-- **Motywacje migracji:** Gdy migracja jest główną motywacją, warto zacząć od migracji niekrytycznego obciążenia. [Przewodnik po gotowości platformy Azure](../ready/azure-readiness-guide/index.md) i [Przewodnik migracji platformy Azure](../migrate/azure-migration-guide/index.md) mogą zapewnić wskazówki dotyczące migracji pierwszego obciążenia.
+- **Motywacje migracji:** Gdy migracja jest główną motywacją, warto zacząć od migracji niekrytycznego obciążenia. [Przewodnik po konfiguracji platformy Azure](../ready/azure-setup-guide/index.md) i [Przewodnik migracji platformy Azure](../migrate/azure-migration-guide/index.md) mogą zapewnić wskazówki dotyczące migracji pierwszego obciążenia.
 
 - **Motywacje innowacji:** Gdy innowacje są główną motywacją, tworzenie dostosowanego środowiska deweloperskiego/testowego może być doskonałym pierwszym projektem.
 
 Dodatkowe przykłady projektów z pierwszego wdrożenia obejmują:
 
 - **Odzyskiwanie po awarii i ciągłość biznesowa (DRBC):** Poza Azure Site Recovery można zaimplementować wiele strategii DRBC jako pierwszy projekt.
-- **Produkcji wstępnej** Wdróż wystąpienie nieprodukcyjne w obciążeniu.
-- **Folderu** Chłodny magazyn może nakładać na zasoby centrum danych. Przeniesienie tych danych do chmury jest trwałą szybką licytacją.
+- **Nieprodukcja:** Wdróż wystąpienie nieprodukcyjne w obciążeniu.
+- **Archiwizuj:** Chłodny magazyn może nakładać na zasoby centrum danych. Przeniesienie tych danych do chmury jest trwałą szybką licytacją.
 - **Koniec wsparcia (EOS):** Migrowanie zasobów, które osiągnęły koniec wsparcia, to kolejna szybka wersja, która kompiluje umiejętności techniczne. Może to również stanowić niedrogią możliwość uniknięcia kosztownych umów pomocy technicznej lub kosztów licencjonowania.
 - **Interfejs pulpitu wirtualnego (VDI):** Tworzenie pulpitów wirtualnych dla pracowników zdalnych umożliwia szybkie wygranie. W niektórych przypadkach ten pierwszy ten projekt może również zmniejszyć zależność od kosztownych sieci prywatnych na korzyść publicznej łączności z Internetem.
-- **Tworzenie i testowanie:** Usuń tworzenie i testowanie z środowisk lokalnych, aby zapewnić deweloperom kontrolę, elastyczność i samoobsługową obsługę.
+- Tworzenie **i testowanie:** Usuń tworzenie i testowanie z środowisk lokalnych, aby zapewnić deweloperom kontrolę, elastyczność i samoobsługową obsługę.
 - **Proste aplikacje (mniej niż pięć):** Unowocześnienie i migrowanie prostej aplikacji, aby szybko uzyskać środowisko programistyczne i operacyjne.
 - **Laboratoria wydajności:** Gdy w ustawieniach laboratorium potrzebna jest wysoka wydajność, użyj chmury, aby szybko i ekonomicznie obsługiwać te laboratoria przez krótki czas.
 - **Platforma danych:** Tworzenie usługi Data Lake przy użyciu skalowalnych obciążeń obliczeniowych, usług raportowania i uczenia maszynowego oraz Migrowanie do zarządzanych baz danych przy użyciu metod zrzutów/przywracania lub usług migracji danych.

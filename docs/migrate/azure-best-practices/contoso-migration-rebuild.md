@@ -9,26 +9,26 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: cbe5de4242baedfa704bd90baa7fa3ca0f0aa026
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 258b5a656293001228aab51dd1319fe6a89780a9
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025131"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548226"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Ponowne kompilowanie aplikacji lokalnej na platformie Azure
 
 W tym artykule pokazano, jak fikcyjna firma Contoso ponownie kompiluje dwuwarstwową aplikację .NET systemu Windows uruchomioną na maszynach wirtualnych VMware w ramach migracji do platformy Azure. Firma Contoso migruje maszynę wirtualną frontonu aplikacji do aplikacji internetowej usługi Azure App Service. Zaplecze aplikacji jest tworzone przy użyciu mikrousług wdrożonych w kontenerach zarządzanych przez usługę Azure Kubernetes Service (AKS). Witryna współdziała z usługą Azure Functions w celu udostępnienia funkcji obsługi zdjęć zwierząt domowych.
 
-Używana w tym przykładzie aplikacja SmartHotel360 jest dostępna jako aplikacja open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
+Aplikacja SmartHotel360 używana w tym przykładzie jest oferowana jako aplikacja typu open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
 
-## <a name="business-drivers"></a>Cele biznesowe
+## <a name="business-drivers"></a>Czynniki biznesowe
 
 Zespół liderów IT w ścisłej współpracy z partnerami biznesowymi firmy ustalił, co firma będzie chciała osiągnąć dzięki migracji:
 
 - **Reagowanie na rosnące potrzeby biznesowe.** Firma Contoso się rozwija i chce zapewnić klientom zróżnicowane środowiska w witrynach internetowych firmy Contoso.
 - **Zwinność.** Firma Contoso chce być w stanie szybciej reagować na zmiany na rynku, aby odnosić sukcesy w gospodarce światowej.
-- **Skalowalność.** W miarę rozwoju firmy Contoso jej dział IT musi zapewnić systemy, które będą mogły rosnąć w tym samym tempie.
+- **Skalowalność.** W miarę pomyślnego rozwoju firmy Contoso jej dział IT musi zapewnić systemy, które będą mogły rosnąć w tym samym tempie.
 - **Redukcja kosztów.** Firma Contoso chce zminimalizować koszty licencjonowania.
 
 ## <a name="migration-goals"></a>Cele migracji
@@ -91,14 +91,14 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
     ![Proces migracji](./media/contoso-migration-rebuild/migration-process.png)
 
-### <a name="azure-services"></a>Usługi Azure
+### <a name="azure-services"></a>Usługi platformy Azure
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
 [AKS](/sql/dma/dma-overview?view=ssdt-18vs2017) | Upraszcza wdrażanie i obsługę platformy Kubernetes oraz zarządzanie nią. Zapewnia w pełni zarządzaną usługę organizowania kontenerów Kubernetes. | AKS to bezpłatna usługa. Płaci się wyłącznie za maszyny wirtualne, skojarzony magazyn i wykorzystane zasoby sieciowe. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/kubernetes-service).
 [Azure Functions](https://azure.microsoft.com/services/functions) | Przyspiesza opracowywanie zawartości dzięki opartemu na zdarzeniach bezserwerowemu środowisku obliczeniowemu. Umożliwia skalowanie na żądanie. | Płaci się tylko za wykorzystane zasoby. Plan jest rozliczany na podstawie liczby wykonań i użycia zasobów na sekundę. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/functions).
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Przechowuje obrazy dla dowolnego typu wdrożeń kontenerów. | Koszt zależy od funkcji, magazynu i czasu użytkowania. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/container-registry).
-[Usługa Azure App Service](https://azure.microsoft.com/services/app-service/containers) | Zapewnia możliwość szybkiego kompilowania, wdrażania i skalowania aplikacji internetowych, aplikacji mobilnych i aplikacji interfejsów API klasy korporacyjnej działających na dowolnej platformie. | Opłaty za plany usługi App Service są naliczane co sekundę. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/app-service/windows).
+[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | Szybko kompiluj, wdrażaj i skaluj aplikacje internetowe, aplikacje mobilne i aplikacje interfejsów API klasy korporacyjnej działające na dowolnej platformie. | Opłaty za plany usługi App Service są naliczane co sekundę. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/app-service/windows).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -110,7 +110,7 @@ W tym scenariuszu firma Contoso potrzebuje następujących elementów:
 --- | ---
 **Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje w jednym z poprzednich artykułów. Jeśli nie masz subskrypcji platformy Azure, utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.
 **Infrastruktura platformy Azure** | [Dowiedz się](./contoso-migration-infrastructure.md), jak firma Contoso skonfigurowała infrastrukturę platformy Azure.
-**Wymagania wstępne dla deweloperów** | Firma Contoso potrzebuje następujących narzędzi na stacji roboczej dewelopera:<br/><br/> - [Program Visual Studio 2017 Community Edition: wersja 15.5](https://www.visualstudio.com)<br/><br/> Włączony pakiet roboczy platformy .NET.<br/><br/> [Usługa Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Interfejs wiersza polecenia platformy Azure](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> Program [Docker CE (dla systemu Windows 10) lub Docker EE (dla systemu Windows Server)](https://docs.docker.com/docker-for-windows/install) skonfigurowany pod kątem korzystania z kontenerów systemu Windows.
+**Wymagania wstępne dla deweloperów** | Firma Contoso potrzebuje następujących narzędzi na stacji roboczej dewelopera:<br/><br/> - [Visual Studio 2017 Community Edition: wersja 15,5](https://www.visualstudio.com)<br/><br/> Włączony pakiet roboczy platformy .NET.<br/><br/> [Usługa Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Interfejs wiersza polecenia platformy Azure](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> Program [Docker CE (dla systemu Windows 10) lub Docker EE (dla systemu Windows Server)](https://docs.docker.com/docker-for-windows/install) skonfigurowany pod kątem korzystania z kontenerów systemu Windows.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -120,14 +120,14 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 
 > [!div class="checklist"]
 >
-> - **Krok 1. Aprowizowanie usług AKS i ACR.** Firma Contoso aprowizuje zarządzany klaster usługi AKS i usługę ACR przy użyciu programu PowerShell.
-> - **Krok 2. Skompilowanie kontenerów platformy Docker.** Firma skonfiguruje ciągłą integrację kontenerów platformy Docker przy użyciu usługi Azure DevOps i wypchnie je do usługi ACR.
-> - **Krok 3. Wdrożenie mikrousług zaplecza.** Firma wdroży resztę infrastruktury, która będzie używana przez mikrousługi zaplecza.
-> - **Krok 4. Wdrożenie infrastruktury frontonu.** Firma wdroży infrastrukturę frontonu, w tym usługę Blob Storage do przechowywania zdjęć zwierząt, usługę Cosmos DB i interfejs API przetwarzania obrazów.
-> - **Krok 5. Migracja zaplecza.** Firma wdroży mikrousługi i uruchomi je w usłudze AKS w celu migracji zaplecza.
-> - **Krok 6. Opublikowanie frontonu.** Firma opublikuje aplikację SmartHotel360 w usłudze App Service oraz aplikację funkcji, która będzie wywoływana przez usługę do przetwarzania zdjęć zwierząt.
+> - **Krok 1: Inicjowanie obsługi AKS i ACR.** Firma Contoso aprowizuje zarządzany klaster usługi AKS i usługę ACR przy użyciu programu PowerShell.
+> - **Krok 2. Kompilowanie kontenerów platformy Docker.** Firma skonfiguruje ciągłą integrację kontenerów platformy Docker przy użyciu usługi Azure DevOps i wypchnie je do usługi ACR.
+> - **Krok 3. wdrażanie mikrousług zaplecza.** Firma wdroży resztę infrastruktury, która będzie używana przez mikrousługi zaplecza.
+> - **Krok 4. wdrażanie infrastruktury frontonu.** Firma wdroży infrastrukturę frontonu, w tym usługę Blob Storage do przechowywania zdjęć zwierząt, usługę Cosmos DB i interfejs API przetwarzania obrazów.
+> - **Krok 5. Migrowanie zaplecza.** Firma wdroży mikrousługi i uruchomi je w usłudze AKS w celu migracji zaplecza.
+> - **Krok 6. publikowanie frontonu.** Firma opublikuje aplikację SmartHotel360 w usłudze App Service oraz aplikację funkcji, która będzie wywoływana przez usługę do przetwarzania zdjęć zwierząt.
 
-## <a name="step-1-provision-back-end-resources"></a>Krok 1: Aprowizowanie zasobów zaplecza
+## <a name="step-1-provision-back-end-resources"></a>Krok 1. Udostępnianie zasobów zaplecza
 
 Administratorzy firmy Contoso uruchamiają skrypt wdrożenia w celu utworzenia zarządzanego klastra platformy Kubernetes przy użyciu usług AKS i Azure Container Registry (ACR).
 
@@ -143,7 +143,7 @@ Administratorzy firmy Contoso uruchamiają skrypt wdrożenia w celu utworzenia z
 
 Administratorzy firmy Contoso przeprowadzają aprowizację w następujący sposób:
 
-1. W programie Visual Studio Code otwierają folder i przechodzą do katalogu **/deploy/k8s** zawierającego skrypt **gen-aks-env.ps1**.
+1. otwierają folder przy użyciu Visual Studio Code i przejdź do katalogu **/Deploy/k8s** , który zawiera skrypt **Gen-AKS-ENV. ps1**.
 2. Uruchamiają skrypt, aby utworzyć zarządzany klaster platformy Kubernetes za pomocą usług AKS i ACR.
     ![AKS](./media/contoso-migration-rebuild/aks1.png)
 3. Po otwarciu pliku aktualizują parametr $location, używając wartości **eastus2**, i zapisują plik.
@@ -184,7 +184,7 @@ Administratorzy firmy Contoso przeprowadzają aprowizację w następujący spos�
 
     ![AKS](./media/contoso-migration-rebuild/aks9.png)
 
-## <a name="step-2-configure-the-back-end-pipeline"></a>Krok 2: Konfigurowanie potoku zaplecza
+## <a name="step-2-configure-the-back-end-pipeline"></a>Krok 2. Konfigurowanie potoku zaplecza
 
 ### <a name="create-an-azure-devops-project-and-build"></a>Tworzenie projektu i kompilacji usługi Azure DevOps
 
@@ -333,7 +333,7 @@ Tworzą potok:
 
 14. Po zakończeniu wdrażania uruchamiają następujące polecenie w usłudze Azure Cloud Shell, aby sprawdzić stan usług: **kubectl get services**.
 
-## <a name="step-3-provision-front-end-services"></a>Krok 3: Aprowizowanie usług frontonu
+## <a name="step-3-provision-front-end-services"></a>Krok 3. Udostępnianie usług frontonu
 
 Administratorzy firmy Contoso muszą wdrożyć infrastrukturę, która będzie używana przez aplikacje frontonu. Tworzą kontener obiektów blob do przechowywania obrazów zwierząt, bazę danych Cosmos do przechowywania dokumentów z informacjami o zwierzętach; oraz interfejs API przetwarzania obrazów dla witryny internetowej.
 
@@ -422,7 +422,7 @@ W witrynie Azure Portal administratorzy firmy Contoso aprowizują aplikację fun
 
 3. Po wdrożeniu aplikacji przechodzą do adresu aplikacji, aby sprawdzić, czy została utworzona pomyślnie.
 
-## <a name="step-4-set-up-the-front-end-pipeline"></a>Krok 4: Konfigurowanie potoku frontonu
+## <a name="step-4-set-up-the-front-end-pipeline"></a>Krok 4. Konfigurowanie potoku frontonu
 
 Administratorzy firmy Contoso tworzą dwa różne projekty dla witryny frontonu.
 
@@ -482,7 +482,7 @@ Administratorzy firmy Contoso mogą teraz opublikować witrynę internetową.
 
 5. W obszarze **Triggers** (Wyzwalacze) włączają ciągłą integrację i dodają gałąź master. Gwarantuje to, że po każdym wprowadzeniu nowego kodu do gałęzi master będzie uruchamiany potok kompilacji.
 
-    ![Ciągła integracja](./media/contoso-migration-rebuild/vsts-publishfront3.png)
+    ![Integracja ciągła](./media/contoso-migration-rebuild/vsts-publishfront3.png)
 
 6. Wybierają pozycję **Save & Queue** (Zapisz i dodaj do kolejki), aby rozpocząć kompilację.
 7. Po zakończeniu kompilacji konfigurują potok wydania, wybierając pozycję **Azure App Service Deployment** (Wdrożenie usługi Azure App Service).
@@ -583,7 +583,7 @@ Administratorzy firmy Contoso wdrażają aplikację w następujący sposób.
 
 Po migracji zasobów na platformę Azure firma Contoso musi teraz w pełni zoperacjonalizować i zabezpieczyć nową infrastrukturę.
 
-### <a name="security"></a>Bezpieczeństwo
+### <a name="security"></a>Zabezpieczenia
 
 - Firma Contoso musi upewnić się, że nowe bazy danych są bezpieczne. [Dowiedz się więcej](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview).
 - Aplikacja musi zostać zaktualizowana w celu korzystania z protokołu SSL z certyfikatami. Wystąpienie kontenera należy wdrożyć ponownie, aby odpowiadało na porcie 443.
@@ -600,8 +600,8 @@ Po migracji zasobów na platformę Azure firma Contoso musi teraz w pełni zoper
 
 - Po wdrożeniu wszystkich zasobów firma Contoso powinna przypisać tagi platformy Azure zgodnie z [planem infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging).
 - Wszystkie koszty licencjonowania są wliczone w koszt usług PaaS używanych przez firmę Contoso. Ten koszt zostanie odjęty od umowy EA.
-- Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) na temat usługi Azure Cost Management.
+- Firma włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
 
-## <a name="conclusion"></a>Wniosek
+## <a name="conclusion"></a>Podsumowanie
 
 W tym artykule firma Contoso ponownie skompilowała aplikację SmartHotel360 na platformie Azure. Lokalna maszyna wirtualna frontonu aplikacji została ponownie skompilowana w aplikacjach internetowych usługi Azure App Service. Zaplecze aplikacji zostało skompilowane przy użyciu mikrousług wdrożonych w kontenerach zarządzanych przez usługę Azure Kubernetes Service (AKS). Firma Contoso rozszerzyła funkcjonalność aplikacji o aplikację do obsługi zdjęć zwierząt.

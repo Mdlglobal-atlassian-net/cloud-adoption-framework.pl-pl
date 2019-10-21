@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1bf9497684c1043d23eec48b1ab5d5f1f12ef752
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829958"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547234"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Migracja do chmury w przewodniku Microsoft Cloud Adoption Framework dla platformy Azure
 
@@ -34,11 +34,11 @@ Wskazówki w przewodniku Cloud Adoption Framework dotyczą działalności biznes
 
 Architekt chmury pełni rolę lidera myśli i osoby ułatwiającej kontakt między tymi odbiorcami. Zawartość tej kolekcji przewodników ma pomóc architektowi chmury w ułatwieniu odpowiednich konwersacji z odpowiednimi odbiorcami, aby umożliwić podjęcie koniecznych decyzji. Transformacja firmy, która jest napędzana i obsługiwana przez chmurę, zależy od tego, czy architekt chmury pomoże w podejmowaniu decyzji w zakresie działalności biznesowej i IT.
 
-**Specjalizacja architekta chmury w tej sekcji:** Każda sekcja przewodnika Cloud Adoption Framework reprezentuje różną specjalizację lub wariant roli architekta chmury. Tę sekcję zaprojektowano z myślą o architektach chmury z dużą wiedzą specjalistyczną o istniejącym środowisku lokalnym i jego wpływie na opcje migracji.
+**Specjalizacja architekta w chmurze w tej sekcji:** Każda sekcja struktury wdrażania w chmurze reprezentuje inną specjalizację lub wariant roli architekta chmury. Tę sekcję zaprojektowano z myślą o architektach chmury z dużą wiedzą specjalistyczną o istniejącym środowisku lokalnym i jego wpływie na opcje migracji.
 
-**Podział obowiązków:** W wielu przedsiębiorstwach wprowadzono podział obowiązków, aby ograniczyć dostęp do systemów produkcyjnych lub segmentów środowiska firmowego. W takim przypadku proces migracji staje się bardziej złożony. W niektórych przypadkach te role i obowiązki mogą wymagać wielu architektów chmury do przeprowadzenia całego procesu migracji.
+**Rozdzielenie obowiązków:** W wielu przedsiębiorstwach istnieje Rozdzielenie obowiązków mających na celu ograniczenie dostępu do systemów produkcyjnych lub segmentów środowiska firmowego. W takim przypadku proces migracji staje się bardziej złożony. W niektórych przypadkach te role i obowiązki mogą wymagać wielu architektów chmury do przeprowadzenia całego procesu migracji.
 
-**Opcje partnerstwa** W ramach każdego z tych procesów zespoły będą uczyć się nowych umiejętności i podejść do wykonania technicznego. Rozwijanie umiejętności technicznych aktualnych członków zespołu jest jedną z opcji podczas wykonywania. Drugą opcją jest zatrudnienie dodatkowych pracowników. Współpraca z podmiotami trzecimi może często zapewniać znaczne przyspieszenie i redukcje ryzyka. Artykuł [Opcje partnerstwa](./migration-considerations/assess/partnership-options.md) może pomóc w podjęciu decyzji o wyborze najlepszej opcji partnerstwa.
+**Opcje partnerstwa** W ramach każdego z tych procesów zespoły będą uczyć się nowych umiejętności i podejść do wykonania technicznego. Podczas wykonywania można rozwijać umiejętności techniczne wśród istniejących członków zespołu. Drugą opcją jest zatrudnienie dodatkowych pracowników. Współpraca z podmiotami trzecimi może często zapewniać znaczne przyspieszenie i redukcje ryzyka. Artykuł [Opcje partnerstwa](./migration-considerations/assess/partnership-options.md) może pomóc w podjęciu decyzji o wyborze najlepszej opcji partnerstwa.
 
 ## <a name="next-steps"></a>Następne kroki
 

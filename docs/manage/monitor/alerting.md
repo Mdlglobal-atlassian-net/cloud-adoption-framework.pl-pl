@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0157cf5c50cd676478b28889b565c7f3f6952e32
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221366"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548603"
 ---
-# <a name="cloud-monitoring-guide-alerting"></a>Przewodnik monitorowania chmury: Generowanie alertów
+# <a name="cloud-monitoring-guide-alerting"></a>Przewodnik po monitorowaniu w chmurze: alerty
 
 W latach organizacje IT miały problemy z zwalczaniem zmęczenia alertów utworzonego przez narzędzia monitorowania wdrożone w przedsiębiorstwie. Wiele systemów generuje dużą liczbę alertów często uważanych za bezużyteczne, a inne są istotne, ale są lub ignorowane. W związku z tym, działania IT i dla deweloperów zostały niezmienione w celu zaspokojenia jakości poziomu usług wykorzystanej dla klientów wewnętrznych lub zewnętrznych. Konieczna jest znajomość stanu infrastruktury i aplikacji w celu zapewnienia niezawodności. Należy szybko identyfikować przyczyny, aby zminimalizować spadek wydajności i przerwy w działaniu usługi lub zmniejszyć liczbę incydentów.
 
@@ -81,7 +81,7 @@ Azure Monitor obejmuje obsługę integracji z innymi platformami monitorowania i
 
 Rozwiązanie| Typ danych | Zachowanie alertu
 :---|:---|:---
-Usługa Azure Monitor dla kontenerów | Obliczone średnie dane wydajności z węzłów i zasobników są zapisywane w magazynie metryk. | Tworzenie alertów dotyczących metryk, jeśli chcesz otrzymywać alerty w oparciu o wahania wydajności zmierzonego wykorzystania, zagregowane w danym okresie czasu.
+Usługa Azure Monitor dla kontenerów | Obliczone średnie dane wydajności z węzłów i zasobników są zapisywane w magazynie metryk. | Tworzenie alertów dotyczących metryk, jeśli chcesz otrzymywać alerty w oparciu o wahania wydajności zmierzonego wykorzystania, zagregowane w czasie.
 || Obliczone dane wydajności używające percentylów z węzłów, kontrolerów, kontenerów i zasobników są zapisywane w magazynie dzienników. Dzienniki kontenerów i informacje o spisie są również zapisywane w magazynie dzienników. | Utwórz alerty kwerendy dziennika, jeśli chcesz otrzymywać alerty na podstawie zmienności mierzonego użycia z klastrów i kontenerów. Alerty zapytań dzienników można również skonfigurować na podstawie liczby faz i liczby węzłów stanu.
 Usługa Azure Monitor dla maszyn wirtualnych | Kryteria kondycji są metrykami zapisanymi w magazynie metryk. | Alerty są generowane, gdy stan kondycji ulegnie zmianie z kondycji na stan w złej kondycji. Obsługuje tylko grupy akcji skonfigurowane do wysyłania wiadomości SMS lub powiadomień e-mail.
 || Dane dziennika wydajności mapy i systemu operacyjnego gościa są zapisywane w magazynie dzienników. | Utwórz alerty zapytania dziennika.
@@ -106,7 +106,7 @@ Tym samym, istnieje kilka ważnych przypisów dla tej reguły.
 
 Jeśli używasz rozwiązania, takiego jak Azure Monitor dla maszyn wirtualnych i Znajdź domyślne kryteria kondycji, które monitoruje akceptowalny stopień wykorzystania wydajności, nie twórz nakładających się metryk ani zapytań dziennika na podstawie tych samych liczników wydajności.
 
-Jeśli nie używasz Azure Monitor dla maszyn wirtualnych, zapoznaj się z następującymi funkcjami, aby utworzyć zadanie tworzenia alertów i zarządzać powiadomieniami:  
+Jeśli nie używasz Azure Monitor dla maszyn wirtualnych, zapoznaj się z następującymi funkcjami, aby utworzyć zadanie tworzenia alertów i zarządzać powiadomieniami:
 
 > [!NOTE]
 > Te funkcje mają zastosowanie tylko do alertów metryk; oznacza to, że alerty na podstawie danych wysyłanych do bazy danych metryk Azure Monitor. Nie dotyczą one innych typów alertów. Jak wspomniano wcześniej, głównym celem alertów dotyczących metryk jest szybkość. Jeśli alert w ciągu mniej niż 5 minut nie jest istotny, możesz zamiast tego użyć alertu zapytania dziennika.

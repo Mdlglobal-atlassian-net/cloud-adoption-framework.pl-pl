@@ -1,7 +1,7 @@
 ---
-title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Wskazówki dotyczące preskryptowe wyjaśnione'
+title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: objaśniono najlepsze rozwiązania'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Zapoznaj się ze wskazówkami opisowymi dotyczącymi nadzoru w złożonych przedsiębiorstwach.
+description: Poznaj najlepsze rozwiązania dotyczące zarządzania w złożonych przedsiębiorstwach.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 543f4e59645fb389b00508fbd9d6426ded6f41f9
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220650"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547649"
 ---
-# <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Wskazówki dotyczące preskryptowe wyjaśnione
+# <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: objaśniono najlepsze rozwiązania
 
 Przewodnik dotyczący ładu rozpoczyna się od zestawu początkowych [zasad firmowych](./initial-corporate-policy.md). Te zasady służą do ustanowienia minimalnego produktu żywotnego dla ładu, który odzwierciedla [najlepsze rozwiązania](./index.md).
 
@@ -38,7 +38,7 @@ Implementacja programu ładu MVP ma zależności dotyczące tożsamości, zabezp
 
 Tę implementację można również opisać przy użyciu prostej listy kontrolnej:
 
-1. Decyzje dotyczące żądania dotyczące podstawowych zależności: Tożsamość, Sieć i szyfrowanie.
+1. Prośba o decyzje dotyczące podstawowych zależności: tożsamości, sieci i szyfrowania.
 1. Określ wzorzec, który ma być używany podczas wymuszania zasad firmowych.
 1. Określ odpowiednie wzorce ładu dotyczące spójności zasobów, tagowania zasobów oraz dyscyplin rejestrowania i raportowania.
 1. Zaimplementuj narzędzia ładu dostosowane do wybranego wzorca wymuszania zasad, aby zastosować zależne decyzje i decyzje nadzoru.
@@ -54,14 +54,14 @@ Zespół ds. zarządzania chmurą będzie odpowiedzialny za następujące decyzj
 Decyzja dotycząca tego, w jaki sposób konstrukcja subskrypcji pozwala określić, jak subskrypcje platformy Azure mają być strukturalne i w jaki sposób grupy zarządzania platformy Azure będą używane do wydajnego zarządzania dostępem, zasadami i zgodnością z tą subskrypcją. W tym opisie zespół nadzoru określił Wzorzec projektowy subskrypcji **[mieszanej](../../../decision-guides/subscriptions/index.md#mixed-patterns)** .
 
 - W miarę istnienia nowych żądań dotyczących zasobów platformy Azure należy ustalić "dział" dla każdej głównej jednostki biznesowej w każdej lokalizacji geograficznej. W ramach każdego z działów należy utworzyć "subskrypcje" dla każdej aplikacji Archetype.
-- Aplikacja Archetype to metoda grupowania aplikacji z podobnymi potrzebami. Typowe przykłady obejmują: Aplikacje z chronionymi danymi, zarządzanymi aplikacjami (na przykład HIPAA lub FedRAMP), aplikacjami o niskim ryzyku, aplikacjami z lokalnymi zależnościami, oprogramowaniem SAP lub innymi aplikacjami typu mainframe na platformie Azure lub aplikacjami rozszerzającymi lokalny system SAP lub mainframe zastosowania. Każda organizacja ma unikatowe potrzeby na podstawie klasyfikacji danych i typów aplikacji, które obsługują działalność biznesową. Mapowanie zależności podpisu cyfrowego może pomóc w definiowaniu Archetypes aplikacji w organizacji.
+- Aplikacja Archetype to metoda grupowania aplikacji z podobnymi potrzebami. Typowe przykłady obejmują: aplikacje z chronionymi danymi, zarządzanymi aplikacjami (na przykład HIPAA lub FedRAMP), aplikacje o niskim ryzyku, aplikacje z zależnościami lokalnymi, oprogramowaniem SAP lub innymi aplikacjami mainframe na platformie Azure lub aplikacjami rozszerzającymi lokalne aplikacje SAP lub mainframe. Każda organizacja ma unikatowe potrzeby na podstawie klasyfikacji danych i typów aplikacji, które obsługują działalność biznesową. Mapowanie zależności podpisu cyfrowego może pomóc w definiowaniu Archetypes aplikacji w organizacji.
 - Wspólna konwencja nazewnictwa powinna zostać uzgodniona w ramach projektu subskrypcji, w oparciu o powyższe dwa Punktory.
 
 ### <a name="resource-consistency"></a>Spójność zasobów
 
 Decyzje dotyczące spójności zasobów określają narzędzia, procesy i nakłady potrzebne do zapewnienia spójnego wdrażania i konfigurowania zasobów platformy Azure w ramach subskrypcji. W tym opisie **[spójność wdrożenia](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** została wybrana jako wzorzec spójności zasobów podstawowych.
 
-- Grupy zasobów są tworzone dla aplikacji przy użyciu podejścia do cyklu życia: wszystko, co zostało utworzone, utrzymane i wycofane, powinno znajdować się w jednej grupie zasobów. Aby uzyskać więcej informacji na temat grup zasobów, zobacz [tutaj](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Grupy zasobów są tworzone dla aplikacji przy użyciu podejścia cyklu życia. Wszystkie elementy, które są tworzone, konserwowane i wycofane, powinny znajdować się w jednej grupie zasobów. Aby uzyskać więcej informacji na temat grup zasobów, zobacz [tutaj](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy należy zastosować do wszystkich subskrypcji ze skojarzonej grupy zarządzania.
 - W ramach procesu wdrażania szablony spójności zasobów platformy Azure dla grupy zasobów powinny być przechowywane w kontroli źródła.
 - Każda grupa zasobów jest skojarzona z określonym obciążeniem lub aplikacją na podstawie opisanego powyżej podejścia cyklu życia.
@@ -77,7 +77,7 @@ Decyzje dotyczące tagowania zasobów określają sposób stosowania metadanych 
 
 - Wdrożone zasoby powinny być oznaczone wartościami dla:
   - Dział/jednostka rozliczeniowa
-  - Współrzędne geograficzne
+  - Geograficzne
   - Klasyfikacja danych
   - Zagrożenia
   - Umowa SLA

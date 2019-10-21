@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: cc4567495d60f76be760d532dc16a66274834396
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 431895263473481fbd43fc9c63d832a538a499db
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026789"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547395"
 ---
 # <a name="cloud-governance-methodology"></a>Metodologia ładu chmury
 
@@ -24,21 +24,21 @@ Struktura wdrażania w chmurze zawiera przewodniki ładu, które opisują środo
 
 ## <a name="envision-an-end-state"></a>Przewidywanie stanu końcowego
 
-Podróż bez celu to tylko tułaczka. Przed podjęciem pierwszego kroku należy ustalić przybliżoną wizję stanu końcowego. Na następującej grafice informacyjnej przedstawiono układ odniesienia dla stanu końcowego. Nie przedstawia punktu początkowego, ale potencjalny cel.
+Podróż bez celu to tylko tułaczka. Ważne jest, aby przed wykonaniem pierwszego kroku ustalić nieaktualną wizję stanu końcowego. Na następującej grafice informacyjnej przedstawiono układ odniesienia dla stanu końcowego. To nie jest punkt początkowy, ale pokazuje potencjalne miejsce docelowe.
 
-![Grafika informacyjna dotycząca modelu nadzoru Cloud Adoption Framework](../_images/operational-transformation-govern-highres.png)
+![Grafika informacyjna dotycząca modelu nadzoru z przewodnika Cloud Adoption Framework](../_images/operational-transformation-govern-highres.png)
 
-Model nadzoru Cloud Adoption Framework identyfikuje obszary o kluczowym znaczeniu podczas podróży. Każdego z tych obszarów dotyczą różne rodzaje czynników ryzyka, które przedsiębiorstwa muszą uwzględnić podczas wdrażania kolejnych usług w chmurze. W ramach tej struktury przewodnik dotyczący zapewnienia ładu identyfikuje wymagane akcje dla zespołu ds. utrzymania ładu w chmurze. Podczas kolejnych etapów podróży poszczególne reguły modelu nadzoru z przewodnika Cloud Adoption Framework zostały bardziej szczegółowo opisane. Ogólnie należą do nich:
+Model nadzoru z przewodnika Cloud Adoption Framework identyfikuje obszary o kluczowym znaczeniu podczas podróży. Każdego z tych obszarów dotyczą różne rodzaje czynników ryzyka, które przedsiębiorstwa muszą uwzględnić podczas wdrażania kolejnych usług w chmurze. W ramach tej struktury przewodnik dotyczący zapewnienia ładu identyfikuje wymagane akcje dla zespołu ds. utrzymania ładu w chmurze. Podczas kolejnych etapów podróży poszczególne reguły modelu nadzoru z przewodnika Cloud Adoption Framework zostały bardziej szczegółowo opisane. Ogólnie należą do nich:
 
-**Zasady firmowe:** Zasady firmowe sterują nadzorem chmury. Przewodnik po zapewnianiu ładu koncentruje się na konkretnych aspektach zasad firmowych:
+**Zasady firmowe:** Zasady firmowe — zarządzanie chmurą. Przewodnik po zapewnianiu ładu koncentruje się na konkretnych aspektach zasad firmowych:
 
-- **Czynniki ryzyka biznesowego:** Identyfikowanie i interpretowanie firmowych czynników ryzyka.
-- **Zasady i zgodność:** Konwertowanie czynników ryzyka na instrukcje zasad, które obsługują wymagania dotyczące zgodności.
-- **Procesy:** Zapewnienie zgodności z określonymi zasadami.
+- **Ryzyka biznesowe:** Identyfikowanie i zrozumienie zagrożeń firmy.
+- **Zasady i zgodność:** Konwertowanie ryzyka na instrukcje zasad, które obsługują wszystkie wymagania dotyczące zgodności.
+- **Procesy:** Zapewnienie przestrzegania określonych zasad.
 
-**Pięć dyscyplin nadzoru chmury:** Te dyscypliny obsługują zasady firmowe. Każda dyscyplina chroni firmę przed potencjalnymi problemami:
+**Pięć dyscyplin zarządzania chmurą:** Te dyscypliny obsługują zasady firmowe. Każda dyscyplina chroni firmę przed potencjalnymi problemami:
 
-- Cost Management
+- Zarządzanie kosztami
 - Punkt odniesienia zabezpieczeń
 - Spójność zasobów
 - Punkt odniesienia obsługi tożsamości
@@ -50,7 +50,7 @@ Zasadniczo zasady firmowe działają jako system wczesnego ostrzegania służąc
 
 Ponieważ wymagania dotyczące nadzoru będą zmieniać się w trakcie podróży po wdrażaniu chmury, wymagane jest inne podejście do nadzoru. Firmy nie mogą już czekać, aż mały zespół utworzy zabezpieczenia i plany na każdej drodze *przed wykonaniem pierwszego kroku*. Oczekuje się, że wyniki biznesowe będą osiągane szybciej i płynniej. Nadzór IT musi odbywać się szybko i nadążać za wymaganiami biznesowymi, aby być w gotowości podczas wdrażania chmury i uniknąć niezatwierdzonych zasobów IT.
 
-Podejście polegające na **nadzorze przyrostowym** zapewnia takie cechy. Nadzór przyrostowy opiera się na niewielkim zestawie firmowych zasad, procesów i narzędzi służących do ustanowienia podstawy do wdrażania i zarządzania. Ta podstawa nosi nazwę **minimalnej koniecznej funkcjonalności (MVP, Minimum Viable Product)** . Minimalna konieczna funkcjonalność umożliwia zespołowi ds. utrzymania ładu szybkie włączenie nadzoru do implementacji w całym cyklu życia wdrożenia. Minimalna konieczna funkcjonalność może zostać ustanowiona w dowolnym momencie procesu wdrażania chmury. Dobrą praktyką jest jednak wdrożenie jej możliwie jak najszybciej.
+Podejście polegające na **nadzorze przyrostowym** zapewnia takie cechy. Nadzór przyrostowy opiera się na niewielkim zestawie firmowych zasad, procesów i narzędzi służących do ustanowienia podstawy do wdrażania i zarządzania. Ta podstawa nosi nazwę **minimalnej koniecznej funkcjonalności (MVP, Minimum Viable Product)** . Minimalna konieczna funkcjonalność umożliwia zespołowi ds. utrzymania ładu szybkie włączenie nadzoru do implementacji w całym cyklu życia wdrożenia. Minimalna konieczna funkcjonalność może zostać ustanowiona w dowolnym momencie procesu wdrażania chmury. Jest jednak dobrym sposobem na wczesne przyjęcie MVP.
 
 Możliwość szybkiego reagowania na zmieniające się czynniki ryzyka umożliwia zespołowi ds. utrzymania ładu w chmurze angażowanie się na nowe sposoby. Zespół ds. utrzymania ładu w chmurze może dołączyć do zespołu strategii chmury jako „zwiadowcy”, którzy będą poruszali się przed zespołami wdrażania w chmurze, kreślili trasy i szybko ustanawiali zabezpieczenia w celu zarządzania ryzykiem związanym z planami wdrażania. Te warstwy nadzoru just-in-time są znane jako **iteracje ładu**. Przy takim podejściu strategia ładu rozwija się jeden krok przed zespołami wdrażania chmury.
 

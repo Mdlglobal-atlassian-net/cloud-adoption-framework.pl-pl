@@ -1,7 +1,7 @@
 ---
-title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Wstępne zasady korporacyjne związane z strategią ładu'
+title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wstępne zasady firmowe związane z strategią ładu'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Wstępne zasady korporacyjne związane z strategią ładu'
+description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wstępne zasady firmowe związane z strategią ładu'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2d8c2923820883561f75902830425b1bd81eb846
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 56629e6f313614965ee1baddaa08e4264b4bef53
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029285"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547671"
 ---
-# <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Wstępne zasady korporacyjne związane z strategią ładu
+# <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wstępne zasady firmowe związane z strategią ładu
 
 Poniższe zasady korporacyjne określają początkową pozycję ładu, która jest punktem początkowym tego przewodnika. Ten artykuł definiuje wczesne zagrożenia, wstępne instrukcje zasad i wczesne procesy w celu wymuszenia instrukcji zasad.
 
@@ -47,4 +47,4 @@ Aktualna tolerancja ryzyka jest wysoka i akceptowalnego poziomu do inwestowania 
 Te zasady firmowe przygotowuje zespół nadzorujący chmurę do wdrożenia programu MVP (ładu), który będzie podstawą do przyjęcia. Następnym krokiem jest zaimplementowanie tego programu MVP.
 
 > [!div class="nextstepaction"]
-> [Wskazówki dotyczące preskryptowe wyjaśnione](./prescriptive-guidance.md)
+> [Objaśniono najlepsze rozwiązania](./prescriptive-guidance.md)

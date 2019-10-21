@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223546"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547175"
 ---
 # <a name="evaluate-risk-tolerance"></a>Ocena tolerancja ryzyka
 
@@ -30,7 +30,7 @@ Prawdziwe zagrożenia biznesowe opierają się na szczegółach określonych tra
 > [!IMPORTANT]
 > Przed przeczytaniem poniższych informacji należy pamiętać, że każde z tych zagrożeń może być zarządzane. Celem tego artykułu jest informowanie i przygotowanie czytelników do bardziej wydajnej dyskusji w zakresie zarządzania ryzykiem.
 
-- **Naruszenie danych:** Liczba jednego ryzyka skojarzonego z dowolnym transformacjęm jest ochroną danych. Przecieki danych mogą spowodować znaczące szkody dla firmy, co prowadzi do utraty klientów, obniżenia biznesowej lub nawet odpowiedzialności prawnej. Wszelkie zmiany sposobu, w jaki dane są przechowywane, przetwarzane lub wykorzystywane, tworzą ryzyko. Przekształcenia w chmurze tworzą wysoki stopień zmian w zakresie zarządzania danymi, więc ryzyko nie powinno być podejmowane w sposób jasny. [Poziom odniesienia zabezpieczeń](../security-baseline/index.md), [Klasyfikacja danych](./data-classification.md)i [racjonalizacja przyrostowa](../../digital-estate/rationalize.md#incremental-rationalization) mogą pomóc w zarządzaniu tym ryzykiem.
+- **Naruszenie danych:** Najważniejszym ryzykiem związanym z jakimkolwiek transformację jest naruszenie danych. Przecieki danych mogą spowodować znaczące szkody dla firmy, co prowadzi do utraty klientów, obniżenia biznesowej lub nawet odpowiedzialności prawnej. Wszelkie zmiany sposobu, w jaki dane są przechowywane, przetwarzane lub wykorzystywane, tworzą ryzyko. Przekształcenia w chmurze tworzą wysoki stopień zmian w zakresie zarządzania danymi, więc ryzyko nie powinno być podejmowane w sposób jasny. [Poziom odniesienia zabezpieczeń](../security-baseline/index.md), [Klasyfikacja danych](./data-classification.md)i [racjonalizacja przyrostowa](../../digital-estate/rationalize.md#incremental-rationalization) mogą pomóc w zarządzaniu tym ryzykiem.
 
 - **Przerwanie działania usługi:** Działania biznesowe i środowiska klienta często polegają na operacjach technicznych. Przekształcenia w chmurze spowodują zmianę w operacjach IT. W niektórych organizacjach ta zmiana jest mała i łatwa do dostosowania. W innych organizacjach te zmiany mogą wymagać ponownego narzędzia, przeszkolenia lub nowych metod obsługi operacji w chmurze. Im większa zmiana, tym większy potencjalny wpływ na działalność biznesową i obsługę klienta. Zarządzanie tym ryzykiem wymaga zaangażowania firmy w planowanie transformacji. Planowanie wersji i wybór pierwszego obciążenia w artykule z [racjonalizacją przyrostową](../../digital-estate/rationalize.md#incremental-rationalization) omawia sposoby wybierania obciążeń dla projektów transformacji. Rolą biznesową w tym działaniu jest komunikacja polegające na tym, że ryzyko związane z ryzykiem związanym z zmianami obciążeń priorytetyzacji. Pomoc w wyborze obciążeń, które mają niższy wpływ na operacje, obniży ogólny czynnik ryzyka.
 
@@ -66,7 +66,7 @@ W tej sekcji wymieniono pytania wywołujące konwersacje w trzech kategoriach: w
 - Czy w tym ryzyku można utworzyć nową odpowiedzialność prawną? Jeśli tak, czy istnieje pierwszeństwo dla nieprawidłowych nagród w tych typach przypadków?
 - Czy może to spowodować zatrzymanie operacji firmowych? Jeśli tak, jak długo będą działać operacje?
 - Czy może to spowodować spowolnienie operacji biznesowej? Jeśli tak, jak wolno i jak długo?
-- Czy na tym etapie transformacji czy jest to ryzyko jednorazowe czy powtarzane?
+- Na tym etapie transformacji występuje ryzyko jednorazowe lub będzie powtarzane?
 - Czy ryzyko zwiększa się i zmniejsza częstotliwość w miarę postępu transformacji?
 - Czy ryzyko zwiększa się i zmniejsza prawdopodobieństwo z upływem czasu?
 - Czy ryzyko związane z czasem jest poufne? Czy ryzyko zostanie przekazane lub nastąpi gorsze, jeśli nie jest to rozkierowane?

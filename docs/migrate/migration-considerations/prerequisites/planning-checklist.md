@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022595"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378380"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Lista kontrolna dotycząca planowania środowiska migracji — weryfikacja gotowości środowiska przed migracją
 
@@ -35,7 +35,7 @@ Niezależnie od tego, czy zdecydujesz się na zastosowanie szerszej strategii ł
 
 Jeśli planujesz zapewnienie zgodności migracji ze strategią ładu w chmurze od początku, musisz zastosować [Pięć dziedzin nadzoru chmury](../../../govern/governance-disciplines.md), aby łatwiej podejmować decyzje dotyczące zasad, łańcuchów narzędzi i mechanizmów wymuszania, które dostosują środowisko w chmurze do ogólnych wymagań przedsiębiorstwa. Zapoznaj się z [praktycznymi przewodnikami po projektowaniu rozwiązań utrzymania ładu](../../../govern/guides/index.md), aby uzyskać przykłady wdrożenia tego modelu przy użyciu usług platformy Azure.
 
-Jeśli początkowe migracje nie są ściśle dostosowane do szerszej strategii ładu w chmurze, nadal konieczne jest rozwiązywanie ogólnych problemów związanych z organizacją, dostępem i planowaniem infrastruktury. Zapoznaj się z [przewodnikiem Gotowość na platformę Azure](../../../ready/azure-readiness-guide/index.md), aby uzyskać pomoc związaną z podejmowaniem decyzji dotyczących gotowości chmury.
+Jeśli początkowe migracje nie są ściśle dostosowane do szerszej strategii ładu w chmurze, nadal konieczne jest rozwiązywanie ogólnych problemów związanych z organizacją, dostępem i planowaniem infrastruktury. Zapoznaj się z [przewodnikiem Instalatora platformy Azure](../../../ready/azure-setup-guide/index.md) , aby uzyskać pomoc dotyczącą tych decyzji dotyczących przygotowania do chmury.
 
 > [!CAUTION]
 > Zdecydowanie zalecamy opracowanie strategii ładu dla wszystkich procesów poza początkową migracją obciążeń.

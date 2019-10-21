@@ -1,25 +1,25 @@
 ---
 title: Równoważenie portfela
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Równoważenie portfela
+description: Oszczędne, aby zrównoważyć portfolio w chmurze.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1227b798972ce7e139181c9267a1a1e860390029
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2b26f8c763d477d95b21e302158c318e3ab4b101
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825759"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548587"
 ---
 # <a name="balance-the-portfolio"></a>Równoważenie portfela
 
-Wdrażanie chmury to nakład pracy związany z zarządzaniem portfelem, zręcznie ukryty pod maską implementacji technicznej. Podobnie jak w przypadku wszystkich zadań związanych z zarządzaniem portfelem, równowaga portfela jest elementem krytycznym dla sukcesu. Na poziomie strategicznym oznacza to zrównoważenie migracji, innowacji i eksperymentów w celu maksymalnego wykorzystania chmury. Gdy nakłady pracy związane z wdrażaniem chmury posuwają się zbyt daleko w jedną lub drugą stronę, wysiłek związany z migracją staje się nazbyt złożony. W tym artykule przedstawimy Czytelnikowi podejścia do osiągnięcia równowagi portfela.
+Wdrażanie chmury to nakład pracy związany z zarządzaniem portfelem, zręcznie ukryty pod maską implementacji technicznej. Podobnie jak w przypadku wszystkich ćwiczeń związanych z zarządzaniem portfolio, bilansowanie portfolio ma kluczowe znaczenie. Na poziomie strategicznym oznacza to zrównoważenie migracji, innowacji i eksperymentów w celu maksymalnego wykorzystania chmury. Gdy nakłady pracy związane z wdrażaniem chmury posuwają się zbyt daleko w jedną lub drugą stronę, wysiłek związany z migracją staje się nazbyt złożony. W tym artykule przedstawimy Czytelnikowi podejścia do osiągnięcia równowagi portfela.
 
-## <a name="general-scope-expansion"></a>Rozszerzenie zakresu ogólnego
+## <a name="general-scope-expansion"></a>Ogólne rozszerzenie zakresu
 
 Ten temat ma charakter strategiczny. W związku z tym zaprezentowane w nim podejście jest równie strategiczne. W celu umocowania strategii podejmowania decyzji opartych na danych w tym artykule przyjęto, że Czytelnik ocenił istniejący [majątek cyfrowy](../../digital-estate/index.md) (lub jest w trakcie tego procesu). Celem tego podejścia jest pomoc w ocenie obciążeń, aby zapewnić odpowiednią równowagę portfela przez pytania jakościowe i udoskonalanie portfela.
 
@@ -66,7 +66,7 @@ Jeśli odpowiedź na dowolne z tych pytań brzmi „nie”, może być konieczne
 
 ## <a name="suggested-prerequisites"></a>Sugerowane wymagania wstępne
 
-Wymagania wstępne określone w podstawowym przewodniku powinny być wystarczające dla tego złożonego tematu. Jednak spis zasobów i majątek cyfrowy powinny zostać szczególnie wyróżnione w wymaganiach wstępnych, ponieważ te dane wpływają na kolejne działania.
+Wymagania wstępne określone w podstawowym przewodniku powinny być wystarczające dla tego złożonego tematu. Jednak spisu zasobów i znak cyfrowy powinny być wyróżnione i pogrubione wśród tych wymagań wstępnych, ponieważ te dane spowodują na przykład następujące działania.
 
 ## <a name="assess-process-changes"></a>Zmiany procesu oceniania
 
@@ -107,15 +107,15 @@ Racjonalizacja portfela wymaga różnorodności technicznych nakładów pracy. Z
 
 Zaleca się, aby te różnorodne wysiłki były podzielone co najmniej dwa zespoły wdrożeniowe ds. chmury. W przykładowym trybie wykonywania z zastosowaniem modelu dwóch zespołów zespół 1 jest zespołem ds. migracji, a zespół 2 jest zespołem ds. innowacji. W przypadku większych nakładów pracy te zespoły mogą być dodatkowo podzielone na inne podejścia, takie jak wysiłki zastępowania/PaaS lub niewielka refaktoryzacja. Poniżej przedstawiono umiejętności i role wymagane do ponownego hostowania, refaktoryzacji lub niewielkiej refaktoryzacji:
 
-**Ponowne hostowanie:** Ponowne hostowanie wymaga, aby członkowie zespołu implementowali zmiany ukierunkowane na infrastrukturę. Zasadniczo odbywa się to przy użyciu narzędzia, takiego jak Azure Site Recovery, do migrowania maszyn wirtualnych lub innych zasobów na platformę Azure. Ta praca dobrze pasuje do administratorów centrum danych lub realizatorów IT. Zespół ds. migracji do chmury ma odpowiednią strukturę, aby wykonać tę pracę na dużą skalę. Jest to najszybszy sposób migrowania istniejących zasobów w większości scenariuszy.
+**Rehostowanie:** Rehostowanie wymaga, aby członkowie zespołu implementują zmiany ukierunkowane na infrastrukturę. Zasadniczo odbywa się to przy użyciu narzędzia, takiego jak Azure Site Recovery, do migrowania maszyn wirtualnych lub innych zasobów na platformę Azure. Ta praca dobrze pasuje do administratorów centrum danych lub realizatorów IT. Zespół ds. migracji do chmury ma odpowiednią strukturę, aby wykonać tę pracę na dużą skalę. Jest to najszybszy sposób migrowania istniejących zasobów w większości scenariuszy.
 
-**Refaktoryzacja:** Refaktoryzacja wymaga, aby członkowie zespołu mogli modyfikować kod źródłowy, zmieniać architekturę aplikacji lub wdrażać nowe usługi w chmurze. Zasadniczo ten w tych nakładach pracy wykorzystuje się narzędzia programistyczne, takie jak program Visual Studio i narzędzia potoku wdrażania, takie jak Azure DevOps, do ponownego wdrożenia zmodernizowanych nowoczesnych aplikacji na platformie Azure. Ta praca jest dopasowana do ról wytwarzania aplikacji lub ról wytwarzania potoku DevOps. Zespół ds. innowacji w chmurze ma najlepszą strukturę do wykonania tej pracy. Zastępowanie istniejących zasobów zasobami w chmurze w tym podejściu może zająć więcej czasu, ale natywne funkcje chmury mogą być korzystne dla aplikacji.
+**Refaktoryzacja:** Refaktoryzacja wymaga, aby członkowie zespołu mogli modyfikować kod źródłowy, zmieniać architekturę aplikacji lub przyjmować nowe usługi w chmurze. Zasadniczo ten w tych nakładach pracy wykorzystuje się narzędzia programistyczne, takie jak program Visual Studio i narzędzia potoku wdrażania, takie jak Azure DevOps, do ponownego wdrożenia zmodernizowanych nowoczesnych aplikacji na platformie Azure. Ta praca jest dopasowana do ról wytwarzania aplikacji lub ról wytwarzania potoku DevOps. Zespół ds. innowacji w chmurze ma najlepszą strukturę do wykonania tej pracy. Zastępowanie istniejących zasobów zasobami w chmurze w tym podejściu może zająć więcej czasu, ale natywne funkcje chmury mogą być korzystne dla aplikacji.
 
-**Niewielka refaktoryzacja:** Niektóre aplikacje można zmodernizować za pomocą niewielkiej refaktoryzacji na poziomie danych lub aplikacji. Ta praca wymaga, aby członkowie zespołu wdrażali dane na platformach danych opartych na chmurze lub wprowadzali niewielkie zmiany konfiguracji w aplikacjach. Może to wymagać ograniczonego wsparcia ekspertów zajmujących się danymi lub rozwojem aplikacji. Jednak ta praca jest podobna do pracy wykonywanej przez realizatorów IT podczas wdrażania aplikacji innych firm. Pracę tę można łatwo dopasować do zespołu ds. migracji do chmury lub zespołu strategicznego ds. chmury. Chociaż ten nakład pracy nie zbliża się do szybkości migracji polegającej na ponownym hostowaniu, jego wykonanie zajmuje mniej czasu niż nakład pracy na refaktoryzację.
+**Niewielka Refaktoryzacja:** Niektóre aplikacje można nowoczesny z niewielkim refaktoryzacją na poziomie danych lub aplikacji. Ta praca wymaga, aby członkowie zespołu wdrażali dane na platformach danych opartych na chmurze lub wprowadzali niewielkie zmiany konfiguracji w aplikacjach. Może to wymagać ograniczonego wsparcia ekspertów zajmujących się danymi lub rozwojem aplikacji. Jednak ta praca jest podobna do pracy wykonywanej przez realizatorów IT podczas wdrażania aplikacji innych firm. Pracę tę można łatwo dopasować do zespołu ds. migracji do chmury lub zespołu strategicznego ds. chmury. Chociaż ten nakład pracy nie zbliża się do szybkości migracji polegającej na ponownym hostowaniu, jego wykonanie zajmuje mniej czasu niż nakład pracy na refaktoryzację.
 
 Podczas migracji zaleca się, aby nakłady pracy zostały podzielone na trzy sposoby wymienione powyżej, a ponadto, aby te nakłady pracy były wykonywane przez odpowiedni zespół w odpowiedniej iteracji. Chociaż zaleca się, aby portfel był zróżnicowany, zaleca się również, aby nakłady pracy były bardzo skoncentrowane i posegregowane.
 
-## <a name="optimize-and-promote-process-changes"></a>Zmiany procesu optymalizacji i podwyższania poziomu
+## <a name="optimize-and-promote-process-changes"></a>Optymalizacja i podwyższenie poziomu zmian procesu
 
 Nie są wymagane żadne dodatkowe zmiany w trakcie procesów optymalizacji i podwyższania poziomu w ramach nakładu pracy migracji.
 

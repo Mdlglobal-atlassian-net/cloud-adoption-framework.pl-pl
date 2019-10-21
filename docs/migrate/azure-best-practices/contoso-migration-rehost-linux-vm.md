@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 579f6eb761a6e59ab179e99c4c607f87897b4215
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0b743ffbace5c2b246df6f03d7e5b23570277dd0
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224173"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548144"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Ponowne hostowanie aplikacji lokalnej dla systemu Linux na maszynach wirtualnych platformy Azure
 
@@ -22,13 +22,13 @@ W tym artykule pokazano, jak fikcyjna firma Contoso przeprowadza ponowne hostowa
 
 Używana w tym przykładzie aplikacja do obsługi pomocy technicznej, osTicket, jest dostępna jako aplikacja open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/osTicket/osTicket).
 
-## <a name="business-drivers"></a>Cele biznesowe
+## <a name="business-drivers"></a>Czynniki biznesowe
 
 Zespół liderów IT w ścisłej współpracy z partnerami biznesowymi firmy ustalił, co firma będzie chciała osiągnąć dzięki migracji:
 
 - **Reagowanie na rosnące potrzeby biznesowe.** Firma Contoso rozwija się, przez co lokalne systemy i infrastruktura stają się przeciążone.
 - **Ograniczanie ryzyka.** Aplikacja do obsługi pomocy technicznej ma kluczowe znaczenie dla działalności firmy Contoso. Firma Contoso chce przenieść ją na platformę Azure, eliminując ryzyko.
-- **Rozszerzenie.** Firma Contoso nie chce teraz zmieniać używanej aplikacji. Po prostu chce mieć pewność, że aplikacja jest stabilna.
+- **Rozszerzanie.** Firma Contoso nie chce teraz zmieniać używanej aplikacji. Po prostu chce mieć pewność, że aplikacja jest stabilna.
 
 ## <a name="migration-goals"></a>Cele migracji
 
@@ -37,7 +37,7 @@ Zespół ds. chmury w firmie Contoso określił cele migracji, zgodnie z którym
 - Po migracji aplikacja na platformie Azure powinna mieć taką samą wydajność jak obecnie, gdy działa w lokalnym środowisku programu VMware. Aplikacja działająca w chmurze będzie miała tak samo krytyczne znaczenie jak w środowisku lokalnym.
 - Firma Contoso nie chce inwestować w tę aplikację. Jest ona ważna dla działalności firmy, ale firma Contoso chce po prostu bezpiecznie przenieść ją do chmury w obecnej postaci.
 - Firma Contoso nie chce zmieniać modelu operacyjnego dla tej aplikacji. Chce korzystać z aplikacji w chmurze w taki sam sposób, jak korzysta z niej teraz.
-- Firma Contoso nie chce zmieniać funkcjonalności aplikacji. Zmieni się tylko jej lokalizacja.
+- Firma Contoso nie chce zmieniać funkcjonalności aplikacji. Zmieni się tylko lokalizacja aplikacji.
 - Firma Contoso przeprowadziła już kilka procesów migracji aplikacji dla systemu Windows, a teraz chce poznać sposób korzystania z infrastruktury platformy Azure z systemem Linux.
 
 ## <a name="solution-design"></a>Projekt rozwiązania
@@ -47,7 +47,7 @@ Po określeniu celów i wymagań firma Contoso planuje i ocenia rozwiązanie do 
 ### <a name="current-app"></a>Bieżąca aplikacja
 
 - Aplikacja OSTicket działa na dwóch maszynach wirtualnych (**OSTICKETWEB** i **OSTICKETMYSQL**).
-- Obie maszyny wirtualne znajdują się na hoście VMware ESXi **contosohost1.contoso.com** (wersja 6.5).
+- Maszyny wirtualne znajdują się na hoście VMware ESXi **contosohost1.contoso.com** (wersja 6.5).
 - Środowisko VMware jest zarządzane przez program vCenter Server 6.5 (**vcenter.contoso.com**) uruchomiony na maszynie wirtualnej.
 - Firma Contoso ma lokalne centrum danych (**contoso-datacenter**) i lokalny kontroler domeny (**contosodc1**).
 
@@ -85,7 +85,7 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 
 ![Proces migracji](./media/contoso-migration-rehost-linux-vm/migration-process-az-migrate.png)
 
-### <a name="azure-services"></a>Usługi Azure
+### <a name="azure-services"></a>Usługi platformy Azure
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
@@ -112,12 +112,12 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 
 > [!div class="checklist"]
 >
-> - **Krok 1. Przygotowywanie platformy Azure do migracji serwera usługi Azure Migrate.** Dodają narzędzie migracji serwera do projektu usługi Azure Migrate.
-> - **Krok 2. Przygotowywanie lokalnego programu VMware do migracji serwera usługi Azure Migrate.** Przygotowują konta do użycia na potrzeby odnajdowania maszyn wirtualnych oraz przygotowują się do połączenia z maszynami wirtualnymi platformy Azure po przejściu w tryb failover.
-> - **Krok 3. Replikowanie maszyn wirtualnych.** Konfigurują replikację i rozpoczynają replikowanie maszyn wirtualnych w magazynie platformy Azure.
-> - **Krok 4. Migrowanie maszyn wirtualnych przy użyciu procesu migracji serwera usługi Azure Migrate.** Przeprowadzają próbne przejście do trybu failover, aby sprawdzić, czy wszystko działa prawidłowo, a następnie przeprowadzają pełne przejście do trybu failover, aby zmigorwać maszyny wirtualne na platformę Azure.
+> - **Krok 1. Przygotowywanie platformy Azure do Azure Migrate migracji serwera.** Dodają narzędzie migracji serwera do projektu usługi Azure Migrate.
+> - **Krok 2: Przygotowanie lokalnej migracji programu VMware do Azure Migrate serwera.** Przygotowują konta do użycia na potrzeby odnajdowania maszyn wirtualnych oraz przygotowują się do połączenia z maszynami wirtualnymi platformy Azure po przejściu w tryb failover.
+> - **Krok 3. replikowanie maszyn wirtualnych.** Konfigurują replikację i rozpoczynają replikowanie maszyn wirtualnych w magazynie platformy Azure.
+> - **Krok 4. Migrowanie maszyn wirtualnych przy użyciu migracji Azure Migrate Server.** Przeprowadzają próbne przejście do trybu failover, aby sprawdzić, czy wszystko działa prawidłowo, a następnie przeprowadzają pełne przejście do trybu failover, aby zmigorwać maszyny wirtualne na platformę Azure.
 
-## <a name="step-1-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>Krok 1: Przygotowywanie platformy Azure do użycia narzędzia migracji serwera usługi Azure Migrate
+## <a name="step-1-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>Krok 1. Przygotowanie platformy Azure do narzędzia migracji Azure Migrate Server
 
 Oto składniki platformy Azure, których firma Contoso potrzebuje do zmigrowania maszyn wirtualnych na platformę Azure:
 
@@ -137,7 +137,7 @@ Składniki te są konfigurowane w następujący sposób:
 
     ![Narzędzie migracji serwera usługi Azure Migrate](./media/contoso-migration-rehost-linux-vm/server-migration-tool.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate) o konfigurowaniu narzędzia migracji serwera usługi Azure Migrate.
 
@@ -145,21 +145,21 @@ Składniki te są konfigurowane w następujący sposób:
 
 Po przełączeniu do trybu failover na platformie Azure firma Contoso chce mieć możliwość nawiązania połączenia z replikowanymi maszynami wirtualnymi na platformie Azure. W tym celu administratorzy firmy Contoso muszą wykonać kilka czynności:
 
-- Aby mieć dostęp do maszyn wirtualnych platformy Azure za pośrednictwem Internetu, muszą włączyć protokół SSH na lokalnych maszynach wirtualnych systemu Linux przed migracją. W przypadku systemu Ubuntu można to zrobić za pomocą następującego polecenia: **Sudo apt-get ssh install -y**.
+- Aby mieć dostęp do maszyn wirtualnych platformy Azure za pośrednictwem Internetu, muszą włączyć protokół SSH na lokalnych maszynach wirtualnych systemu Linux przed migracją. W przypadku Ubuntu można to zrobić za pomocą następującego polecenia: **sudo apt-get SSH Install-y**.
 - Po rozpoczęciu migracji (przełączeniu do trybu failover) mogą sprawdzić **diagnostykę rozruchu**, aby wyświetlić zrzut ekranu maszyny wirtualnej.
 - Jeśli to nie zadziała, muszą upewnić się, że maszyna wirtualna jest uruchomiona, i zapoznać się z tymi [poradami dotyczącymi rozwiązywania problemów](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx).
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration) na temat przygotowywania maszyn wirtualnych do migracji
 
-## <a name="step-3-replicate-the-on-premises-vms"></a>Krok 3: replikowanie lokalnych maszyn wirtualnych
+## <a name="step-3-replicate-the-on-premises-vms"></a>Krok 3. replikowanie lokalnych maszyn wirtualnych
 
 Przed uruchomieniem migracji na platformę Azure administratorzy firmy Contoso muszą skonfigurować i włączyć replikację.
 
 Po ukończeniu odnajdywania można rozpocząć replikację maszyn wirtualnych VMware na platformę Azure.
 
-1. W projekcie usługi Azure Migrate wybierz pozycję > **Serwery**, **Azure Migrate: Migracja serwera** i kliknij pozycję **Replikuj**.
+1. Na **serwerach**Azure Migrate project > **Azure Migrate: Migracja serwera**, kliknij przycisk **replikacja**.
 
     ![Replikowanie maszyn wirtualnych](./media/contoso-migration-rehost-linux-vm/select-replicate.png)
 
@@ -175,7 +175,7 @@ Po ukończeniu odnajdywania można rozpocząć replikację maszyn wirtualnych VM
 
     ![Wybieranie oceny](./media/contoso-migration-rehost-linux-vm/select-assessment.png)
 
-5. W obszarze **Maszyny wirtualne** wyszukaj potrzebne maszyny wirtualne i sprawdź każdą maszynę wirtualną, którą chcesz migrować. Następnie kliknij pozycję **Dalej: Ustawienia elementu docelowego**.
+5. W obszarze **Maszyny wirtualne** wyszukaj potrzebne maszyny wirtualne i sprawdź każdą maszynę wirtualną, którą chcesz migrować. Następnie kliknij przycisk **Dalej: ustawienia docelowe**.
 
 6. W obszarze **Ustawienia elementu docelowego** wybierz subskrypcję i docelowy region migracji, a następnie określ grupę zasobów, w której będą znajdować się maszyny wirtualne platformy Azure po migracji. W obszarze **Sieć wirtualna** wybierz sieć wirtualną/podsieć platformy Azure, do której zostaną dołączone maszyny wirtualne platformy Azure po migracji.
 7. W obszarze **Korzyść użycia hybrydowego platformy Azure**:
@@ -185,9 +185,9 @@ Po ukończeniu odnajdywania można rozpocząć replikację maszyn wirtualnych VM
 
 8. W obszarze **Obliczenia** sprawdź nazwę, rozmiar, typ dysku systemu operacyjnego i zestaw dostępności maszyny wirtualnej. Maszyny wirtualne muszą być zgodne z [wymaganiami platformy Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements).
 
-    - **Rozmiar maszyny wirtualnej**: jeśli używasz rekomendacji dotyczących oceny, lista rozwijana rozmiarów maszyny wirtualnej będzie zawierać zalecany rozmiar. W przeciwnym razie usługa Azure Migrate wybierze rozmiar na podstawie najbliższego dopasowania w subskrypcji platformy Azure. Alternatywnie możesz wybrać rozmiar ręczny w obszarze **rozmiaru maszyny wirtualnej platformy Azure**.
-    - **Dysk systemu operacyjnego**: określ dysk systemu operacyjnego (rozruchowy) dla maszyny wirtualnej. Dysk systemu operacyjnego to dysk, na którym jest zainstalowany program ładujący i instalator systemu operacyjnego.
-    - **Zestaw dostępności**: jeśli maszyna wirtualna powinna znajdować się w zestawie dostępności platformy Azure po migracji, określ ten zestaw. Zestaw musi znajdować się w docelowej grupie zasobów określonej dla migracji.
+    - **Rozmiar maszyny wirtualnej**: Jeśli korzystasz z zaleceń dotyczących oceny, lista rozwijana rozmiaru maszyny wirtualnej będzie zawierać zalecany rozmiar. W przeciwnym razie usługa Azure Migrate wybierze rozmiar na podstawie najbliższego dopasowania w subskrypcji platformy Azure. Alternatywnie możesz wybrać rozmiar ręczny w obszarze **rozmiaru maszyny wirtualnej platformy Azure**.
+    - **Dysk systemu operacyjnego**: Określ dysk systemu operacyjnego (Boot) dla maszyny wirtualnej. Dysk systemu operacyjnego to dysk, na którym jest zainstalowany program ładujący i instalator systemu operacyjnego.
+    - **Zestaw dostępności**: Jeśli maszyna wirtualna powinna znajdować się w zestawie dostępności platformy Azure po migracji, określ zestaw. Zestaw musi znajdować się w docelowej grupie zasobów określonej dla migracji.
 
 9. W obszarze **Dyski** określ, czy dyski maszyn wirtualnych mają być replikowane na platformę Azure, a następnie wybierz typ dysku (standardowe dyski SSD/dyski twarde lub dyski zarządzane w warstwie Premium) na platformie Azure. Następnie kliknij przycisk **Next** (Dalej).
     - Dyski można wykluczyć z replikacji.
@@ -198,13 +198,13 @@ Po ukończeniu odnajdywania można rozpocząć replikację maszyn wirtualnych VM
 > [!NOTE]
 > Ustawienia replikacji możesz zaktualizować w dowolnym momencie przed rozpoczęciem replikacji w obszarze **Zarządzanie** > **Replikowanie maszyn**. Ustawień nie można zmienić po rozpoczęciu replikacji.
 
-## <a name="step-4-migrate-the-vms"></a>Krok 4: migrowanie maszyn wirtualnych
+## <a name="step-4-migrate-the-vms"></a>Krok 4. Migrowanie maszyn wirtualnych
 
 Administratorzy firmy Contoso uruchamiają szybki test przejścia do trybu failover, a następnie pełne przełączenie w tryb failover, aby zmigrować maszyny wirtualne.
 
 ### <a name="run-a-test-failover"></a>Wykonywanie próby przejścia w tryb failover
 
-1. W obszarze **Cele migracji** > **Serwery** > **Azure Migrate: migracja serwera** kliknij pozycję **Przeprowadzono migrację testową serwerów**.
+1. W obszarze **cele migracji**  > **serwery**  > **Azure Migrate: Migracja serwera**, kliknij przycisk **Testuj zmigrowane serwery**.
 
      ![Serwery z przeprowadzoną migracją testową](./media/contoso-migration-rehost-linux-vm/test-migrated-servers.png)
 
@@ -219,11 +219,11 @@ Administratorzy firmy Contoso uruchamiają szybki test przejścia do trybu failo
 
     ![Czyszczenie migracji](./media/contoso-migration-rehost-linux-vm/clean-up.png)
 
-### <a name="migrate-the-vms"></a>Migrowanie maszyn wirtualnych
+### <a name="migrate-the-vms"></a>migrowanie maszyn wirtualnych
 
 Teraz administratorzy firmy Contoso uruchamiają pełne przejście do trybu failover w celu ukończenia migracji.
 
-1. W projekcie usługi Azure Migrate wybierz pozycję > **Serwery** > **Azure Migrate: migracja serwera** i kliknij pozycję **Replikowanie serwerów**.
+1. Na **serwerach** Azure Migrate > project  > **Azure Migrate: Migracja serwera**, kliknij przycisk **replikowanie serwerów**.
 
     ![Replikowanie serwerów](./media/contoso-migration-rehost-linux-vm/replicating-servers.png)
 
@@ -278,14 +278,14 @@ Teraz firma Contoso musi wykonać następujące czynności w celu wyczyszczenia 
 - Usunięcie lokalnych maszyn wirtualnych ze spisu serwera vCenter.
 - Usunięcie lokalnych maszyn wirtualnych z lokalnych zadań kopii zapasowej.
 - Aktualizacja dokumentacji wewnętrznej w celu wskazania nowej lokalizacji i adresów IP maszyn wirtualnych OSTICKETWEB i OSTICKETMYSQL.
-- Przegląd wszystkich zasobów korzystających z tych maszyn wirtualnych i aktualizacja wszelkich ustawień lub dokumentów w celu uwzględnienia nowej konfiguracji.
+- Przejrzeć wszystkie zasoby korzystające z tych maszyn wirtualnych i zaktualizować wszelkie ustawienia lub dokumenty, aby odzwierciedlały nową konfigurację.
 - Firma Contoso skorzystała z usługi Azure Migrate z mapowaniem zależności do przeprowadzenia oceny maszyn wirtualnych pod kątem migracji. Administratorzy powinni usunąć Microsoft Monitoring Agent oraz agenta zależności firmy Microsoft zainstalowanych w tym celu z maszyny wirtualnej.
 
 ## <a name="review-the-deployment"></a>Przegląd wdrożenia
 
 Po uruchomieniu aplikacji firma Contoso musi w pełni zoperacjonalizować i zabezpieczyć nową infrastrukturę.
 
-### <a name="security"></a>Bezpieczeństwo
+### <a name="security"></a>Zabezpieczenia
 
 Zespół ds. zabezpieczeń w firmie Contoso przeprowadza przegląd maszyn wirtualnych OSTICKETWEB i OSTICKETMYSQL w celu wykrycia ewentualnych problemów z zabezpieczeniami.
 
@@ -305,4 +305,4 @@ W celu zapewnienia ciągłości działania i odzyskiwania po awarii firma Contos
 
 - Po wdrożeniu zasobów firma Contoso przypisuje tagi platformy Azure zdefiniowane na etapie [wrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md#set-up-tagging).
 - Firma Contoso nie ma żadnych problemów z licencjonowaniem serwerów z systemem Ubuntu.
-- Firma włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) na temat usługi Azure Cost Management.
+- Firma włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d669d720d1bf56a5adc0df42a505608ab76b02ec
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025357"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548265"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Przygotowanie do złożoności technicznej: zarządzanie zmianami zwinnymi (Agile)
 
@@ -31,16 +31,16 @@ W strukturze Cloud Adoption Framework pojawia się termin _obciążenie_. Obcią
 
 INVEST jest powszechnym akronimem w wielu metodologiach zwinnych do pisania historii użytkownika lub elementów listy prac i w obu przypadkach są to jednostki danych wyjściowych w narzędziach do zarządzania projektami zwinnymi. Wymierną jednostką danych wyjściowych w migracji jest zmigrowane obciążenie. Struktura Cloud Adoption Framework modyfikuje nieco akronim INVEST, aby utworzyć konstrukcję do definiowania obciążeń:
 
-- **Independent** (Niezależność): Obciążenie nie powinno mieć żadnych niedostępnych zależności. Aby obciążenie zostało uznane za zmigrowane, wszystkie zależności powinny być dostępne i uwzględnione w nakładzie prac związanych z migracją.
-- **Negotiable** (Możliwość negocjacji): W miarę przeprowadzania dodatkowego odnajdywania definicja obciążenia ulega zmianie. Architekci planujący migrację mogą negocjować czynniki dotyczące zależności. Przykłady punktów negocjacji mogą obejmować wstępną wersję funkcji, udostępnianie funkcji za pośrednictwem sieci hybrydowej lub pakowanie wszystkich zależności w jednej wersji.
-- **Valuable** (Wartość): Wartość w obciążeniu jest mierzona w oparciu o możliwość zapewnienia użytkownikom dostępu do obciążeń produkcyjnych.
-- **Estimable** (Możliwość oszacowania): Wszystkie zależności, zasoby, czas migracji, wydajność i koszty chmury powinny nadawać się do oszacowania i powinny zostać oszacowane przed migracją.
-- **Small** (Niewielki rozmiar): Celem jest utworzenie pakietu obciążeń w jednym przebiegu. Jednak nie zawsze może to być możliwe. Zamiast tego zachęcamy zespoły do planowania przebiegów i wersji tak, aby zminimalizować czas wymagany do przeniesienia obciążenia do środowiska produkcyjnego.
-- **Testable** (Możliwość testowania): Zawsze powinien istnieć zdefiniowany sposób testowania lub walidacji zakończenia migracji obciążenia.
+- **Niezależne:** Obciążenie nie powinno mieć żadnych niedostępnych zależności. Aby obciążenie zostało uznane za zmigrowane, wszystkie zależności powinny być dostępne i uwzględnione w nakładzie prac związanych z migracją.
+- **Zbywalne:** W miarę przeprowadzania dodatkowego odnajdywania zostanie zmieniona definicja obciążenia. Architekci planujący migrację mogą negocjować czynniki dotyczące zależności. Przykłady punktów negocjacji mogą obejmować wstępną wersję funkcji, udostępnianie funkcji za pośrednictwem sieci hybrydowej lub pakowanie wszystkich zależności w jednej wersji.
+- **Cenne:** Wartość w obciążeniu jest mierzona przez możliwość zapewnienia użytkownikom dostępu do obciążeń produkcyjnych.
+- **Estimable:** Wszystkie zależności, zasoby, czas migracji, wydajność i koszty chmury powinny być estimable i powinny być szacowane przed migracją.
+- **Małe:** Celem jest przypakowanie obciążeń w jednym przebiegu. Jednak nie zawsze może to być możliwe. Zamiast tego zachęcamy zespoły do planowania przebiegów i wersji tak, aby zminimalizować czas wymagany do przeniesienia obciążenia do środowiska produkcyjnego.
+- **Weryfikowalne:** Zawsze powinien być zdefiniowany sposób testowania lub sprawdzania poprawności zakończenia migracji obciążenia.
 
 Ten akronim nie musi być ściśle przestrzegany, ale powinien pomóc w wyjaśnieniu definicji terminu _obciążenie_.
 
-## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Lista prac związanych z migracją: pogodzenie priorytetów firmy i terminów
+## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Zaległości migracji: wyrównywanie priorytetów i terminów firmy
 
 Lista prac związanych z migracją umożliwia śledzenie portfolio wysokiego poziomu możliwych do zmigrowania obciążeń. Zachęcamy, aby przed migracją zespół strategiczny ds. chmury i zespół wdrożeniowy ds. chmury przeprowadziły przegląd bieżącego [majątku cyfrowego](../../../digital-estate/index.md) oraz uzgodniły uporządkowaną według priorytetów listę obciążeń do migracji. Ta lista stanowi podstawę początkowej listy prac związanych z migracją.
 
@@ -63,7 +63,7 @@ W ramach każdej listy prac migracji zespół zarządzający zmianami powinien d
 - **Nazwa obciążenia.**
 - **Początkowy spis.** Wszystkie zasoby wymagane do zapewnienia funkcjonalności obciążenia, w tym maszyny wirtualne, urządzenia IT, potoki danych, aplikacji, wdrażania itp. Te informacje są prawdopodobnie niedokładne.
 
-## <a name="release-backlog-aligning-business-change-and-technical-coordination"></a>Lista prac wydania: Pogodzenie zmian w firmie i koordynacji technicznej
+## <a name="release-backlog-aligning-business-change-and-technical-coordination"></a>Zaległości wydania: wyrównywanie zmian w firmie i koordynacji technicznej
 
 W kontekście migracji _wydanie_ jest działaniem, które wdraża w środowisku produkcyjnym co najmniej jedno obciążenie. Wydanie zazwyczaj obejmuje kilka iteracji lub prace techniczne. Reprezentuje jednak jedną iterację zmiany w firmie. Wydanie pojawia się po przygotowaniu co najmniej jednego obciążenia do podwyższenia poziomu produkcji. Decyzja o spakowaniu wydania jest podejmowana, gdy zmigrowane obciążenia stanowią wystarczającą wartość dla firmy, aby uzasadnić wprowadzenie zmian w środowisku biznesowym. Wersje są wykonywane w połączeniu z [planem zmian w firmie](../optimize/business-change-plan.md) po zakończeniu [testowania biznesowego](../optimize/business-test.md). Zespół strategiczny ds. chmury jest odpowiedzialny za planowanie i nadzorowanie wykonania wydania w celu zapewnienia, że wymagana zmiana w firmie zostanie wydana.
 
@@ -86,13 +86,13 @@ Zespół strategiczny ds. chmury i zespół wdrożeniowy ds. chmury współpracu
 
 ### <a name="release-backlog-cadence"></a>Terminy listy prac wydania
 
-W przypadku migracji nowszeh wydania pojawiają się regularnie. Szybkość pracy zespołu wdrożeniowego ds. chmury często się normalizuje, generując wydanie co dwie do czterech iteracji (mniej więcej co miesiąc lub co dwa miesiące). Powinien to być jednak wynik organiczny. Tworzenie terminów sztucznego wydania może wpłynąć negatywnie na możliwości zespołu wdrożeniowego ds. chmury w zakresie uzyskania spójnej przepływności.
+W przypadku migracji nowszeh wydania pojawiają się regularnie. Szybkość pracy zespołu wdrożeniowego ds. chmury często się normalizuje, generując wydanie co dwie do czterech iteracji (mniej więcej co miesiąc lub co dwa miesiące). Powinien to być jednak wynik organiczny. Tworzenie sztucznej cadences wydania może negatywnie wpłynąć na zdolność zespołu wdrażania chmury do osiągnięcia spójnej przepływności.
 
 Aby zapewnić stabilny wpływ na działalność biznesową, zespół strategiczny ds. chmury powinien ustanowić miesięczny proces wydania w firmie, aby utrzymać systematyczny dialog, jak również wyrazić oczekiwania, zgodnie z którymi minie kilka miesięcy, zanim będzie można przewidzieć regularny cykl wydania.
 
-## <a name="sprint-or-iteration-backlog-aligning-technical-change-and-effort"></a>Lista prac przebiegu lub iteracji: pogodzenie zmian technicznych i nakładów pracy
+## <a name="sprint-or-iteration-backlog-aligning-technical-change-and-effort"></a>Zaległości przebiegu lub iteracji: wyrównywanie zmian technicznych i nakładów pracy
 
-*Przebieg* lub *iteracja* to spójna, ograniczona czasowo jednostka pracy. W procesie migracji jest ona często mierzona w przyrostach dwutygodniowych. Zdarza się jednak, że iteracje występują co tydzień lub co cztery tygodnie. Tworzenie iteracji ograniczonych czasowo powoduje wymuszenie spójnych interwałów ukończenia nakładów pracy i pozwala na częstsze dostosowywanie planów na podstawie nowych informacji. W trakcie danego przebiegu są zwykle wykonywane zadania oceny, migracji i optymalizacji obciążeń zdefiniowane na liście prac migracji. Te jednostki pracy powinny być śledzone i zarządzane w tym samym narzędziu do zarządzania projektami, co lista prac migracji i wydania, aby zapewnić spójność na każdym poziomie zarządzania zmianami.
+*Przebieg* lub *iteracja* to spójna, ograniczona czasowo jednostka pracy. W procesie migracji jest ona często mierzona w przyrostach dwutygodniowych. Nie jest to jednak możliwe w przypadku iteracji tygodniowych lub czterech tygodni. Tworzenie iteracji ograniczonych czasowo powoduje wymuszenie spójnych interwałów ukończenia nakładów pracy i pozwala na częstsze dostosowywanie planów na podstawie nowych informacji. W trakcie danego przebiegu są zwykle wykonywane zadania oceny, migracji i optymalizacji obciążeń zdefiniowane na liście prac migracji. Te jednostki pracy powinny być śledzone i zarządzane w tym samym narzędziu do zarządzania projektami, co lista prac migracji i wydania, aby zapewnić spójność na każdym poziomie zarządzania zmianami.
 
 Działanie *listy prac przebiegu* lub *listy prac iteracji* polega na ukończeniu prac technicznych w ramach jednego przebiegu lub jednej iteracji, co prowadzi do migracji poszczególnych zasobów. Te prace powinny pochodzić z listy migrowanych obciążeń. W przypadku korzystania z narzędzi takich jak Azure DevOps (wcześniej Visual Studio Online) do zarządzania projektami elementy robocze w przebiegu będą elementami podrzędnymi elementów listy prac produktu na liście prac wydania oraz w epikach na liście prac migracji. Taka relacja nadrzędny-podrzędny umożliwia przejrzystość na wszystkich poziomach zarządzania zmianami.
 

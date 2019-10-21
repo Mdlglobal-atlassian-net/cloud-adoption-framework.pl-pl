@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 51dc23c07ff11327a2c221dcf0e424ccd222bf78
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3fb87179de2dac492b506f8aba610cc52d69a751
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029102"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548709"
 ---
 # <a name="examples-of-agility-outcomes"></a>Przykłady wyników dotyczącej elastyczności 
 
@@ -25,7 +25,7 @@ Tradycyjni funkcjonariusze inwestycji (dyrektorzy działu informatyki) i zespoł
 
 ## <a name="why-is-agility-so-important"></a>Dlaczego taka elastyczność jest ważna?
 
-Rynki zmieniają się w szybszym tempie niż kiedykolwiek wcześniej. Począwszy od 2015, tylko firmy 57 w listy Fortune 500 61 lat w późniejszym 88,6&mdash;czasie. Oznacza to zmianę na rynku w poprzednio nieprawidłowym tempie. Nie ma to wpływu na działalność informatyczną i nawet agilities biznesową w organizacji na listy Fortune 500, ale te wyniki pomagają nam zrozumieć tempo, w jaki sposób nadal zmieniają się rynki.
+Rynki zmieniają się w szybszym tempie niż kiedykolwiek wcześniej. Począwszy od 2015, w ciągu lat listy Fortune 500 61, tylko firmy 57 w latach, w 88,6 &mdash;an. Oznacza to zmianę na rynku w poprzednio nieprawidłowym tempie. Nie ma to wpływu na działalność informatyczną i nawet agilities biznesową w organizacji na listy Fortune 500, ale te wyniki pomagają nam zrozumieć tempo, w jaki sposób nadal zmieniają się rynki.
 
 W przypadku operatorów dominujących i współdziałania, elastyczność biznesowa może być różnicą między sukcesem lub niepowodzeniem inicjatywy biznesowej. Szybka adaptacja do zmian wprowadzonych na rynku może pomóc istniejącym klientom lub zastrzec udział w rynku od konkurentów. Wyniki związane z elastycznością w następnych sekcjach mogą pomóc w przekazywaniu informacji o chmurze podczas transformacji.
 
@@ -33,11 +33,11 @@ W przypadku operatorów dominujących i współdziałania, elastyczność biznes
 
 W trakcie wysiłków innowacyjnych w chmurze czas wprowadzenia na rynek to kluczowa miara umożliwiająca rozwiązanie zmiany rynku. W wielu przypadkach lider biznesowy może mieć istniejący budżet do tworzenia aplikacji lub uruchamiania nowego produktu. Jasno komunikuje się z korzyścią z przedziału czasowego na rynek, aby skierować ten lidera do podróży transformację budżetu.
 
-- **Przykład 1**: Europejski Wydział firmy opartej na USA musi zapewnić zgodność z przepisami Rodo przez ochronę danych klienta w bazie danych, która obsługuje operacje na Wielkiej Brytanii. Istniejąca wersja programu SQL nie obsługuje wymaganego zabezpieczenia na poziomie wiersza. Uaktualnienie w miejscu byłoby zbyt uciążliwe. Przy użyciu usługi Azure SQL do replikowania i uaktualniania bazy danych klient dodaje konieczną miarę zgodności w ciągu tygodni.
+- **Przykład 1**: Europejski Wydział firmy opartej na USA musi być zgodny z przepisami Rodo przez ochronę danych klienta w bazie danych, która obsługuje operacje na Wielkiej Brytanii. Istniejąca wersja programu SQL nie obsługuje wymaganego zabezpieczenia na poziomie wiersza. Uaktualnienie w miejscu byłoby zbyt uciążliwe. Przy użyciu usługi Azure SQL do replikowania i uaktualniania bazy danych klient dodaje konieczną miarę zgodności w ciągu tygodni.
 
-- **Przykład 2**: Firma logistyki wykryła niewykorzystany segment rynku, ale potrzebuje nowej wersji aplikacji sztandarowe do przechwycenia tego udziału w rynku. Ich większy konkurent ma takie samo odnajdywanie. Dzięki wykonaniu wysiłków programistycznych aplikacji obsługujących chmurę firma obejmuje Obsession klienta i podejście deweloperskie oparte na DevOpsach, aby zmniejszyć liczbę starszych konkurentów o _x_ miesiącach. Dzięki temu w systemie wejścia na rynek zabezpieczony jest podstawowy klient.
+- **Przykład 2**: firma logistyczna odnalazła niewykorzystany segment rynku, ale potrzebuje nowej wersji swojej aplikacji sztandarowe do przechwycenia tego udziału w rynku. Ich większy konkurent ma takie samo odnajdywanie. Dzięki wykonaniu wysiłków programistycznych aplikacji obsługujących chmurę firma obejmuje Obsession klienta i podejście deweloperskie oparte na DevOpsach, aby zmniejszyć liczbę starszych konkurentów o _x_ miesiącach. Dzięki temu w systemie wejścia na rynek zabezpieczony jest podstawowy klient.
 
-**Aurora kondycji**: System opieki zdrowotnej przekształca Usługi online w przyjazne środowisko cyfrowe. Aby przekształcić swoje usługi cyfrowe, Aurora opiekę zdrowotną swoich witryn internetowych na platformę Microsoft Azure i przyjęto strategię ciągłego innowacji.
+**Opieka zdrowotna Aurora**: system opieki zdrowotnej przekształca usługi online w przyjazną cyfrową obsługę. Aby przekształcić swoje usługi cyfrowe, Aurora opiekę zdrowotną swoich witryn internetowych na platformę Microsoft Azure i przyjęto strategię ciągłego innowacji.
 
 > "Jako zespół koncentrujemy się na rozwiązaniach o wysokiej jakości i szybkości. Wybranie platformy Azure było bardzo analizie przekształceńą decyzją dla nas ".  
 > Jamey Shiels  
@@ -48,7 +48,7 @@ W trakcie wysiłków innowacyjnych w chmurze czas wprowadzenia na rynek to klucz
 
 Gdy firma wymaga nowych usług IT lub skaluje się do istniejących usług, nabycie i udostępnienie nowego sprzętu lub zasobów wirtualnych może zająć kilka tygodni. Po migracji do chmury można łatwiej włączyć funkcję samoobsługowego udostępniania, co pozwala na skalowanie w godzinach pracy.
 
-- **Przykład**: Firma z towarami opakowanymi w konsumenta wymaga utworzenia i rozdzielenia setek klastrów bazy danych na rok w celu spełnienia wymagań operacyjnych firmy. Lokalne hosty wirtualne mogą zapewnić szybkie udostępnianie, ale proces odzyskiwania zasobów wirtualnych jest powolny i wymaga znacznego czasu od zespołu. W związku z tym starsze środowisko lokalne cierpi z przeładowanie i może być rzadko zachowywać się z zapotrzebowaniem. Po przeprowadzeniu migracji do chmury można łatwiej zapewnić skryptowe Inicjowanie obsługi administracyjnej zasobów przy użyciu podejścia obciążenia zwrotnego do rozliczania. Dzięki temu firma może przełączać się tak szybko, jak to konieczne, ale nadal będzie można uwzględnić koszt zasobów, których wymagają. To działanie w chmurze ogranicza wdrożenia wyłącznie do budżetu firmy.
+- **Przykład**: firma z towarami zapakowanymi przez odbiorcę wymaga tworzenia i wyrywania setek klastrów baz danych rocznie w celu spełnienia wymagań operacyjnych firmy. Lokalne hosty wirtualne mogą zapewnić szybkie udostępnianie, ale proces odzyskiwania zasobów wirtualnych jest powolny i wymaga znacznego czasu od zespołu. W związku z tym starsze środowisko lokalne cierpi z przeładowanie i może być rzadko zachowywać się z zapotrzebowaniem. Po przeprowadzeniu migracji do chmury można łatwiej zapewnić skryptowe Inicjowanie obsługi administracyjnej zasobów przy użyciu podejścia obciążenia zwrotnego do rozliczania. Dzięki temu firma może przełączać się tak szybko, jak to konieczne, ale nadal będzie można uwzględnić koszt zasobów, których wymagają. To działanie w chmurze ogranicza wdrożenia wyłącznie do budżetu firmy.
 
 ## <a name="next-steps"></a>Następne kroki
 

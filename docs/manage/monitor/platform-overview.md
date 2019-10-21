@@ -1,7 +1,7 @@
 ---
-title: Przewodnik monitorowania chmury — Omówienie platform monitorowania
+title: 'Przewodnik monitorowania w chmurze: monitorowanie Platform przegląd'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Określ, kiedy używać Azure Monitor lub System Center Operations Manager w Microsoft Azure
+description: Określ, kiedy używać Azure Monitor lub System Center Operations Manager w Microsoft Azure.
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33d9647a0804859a611d45e130c753cab89a6ef6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 668710d38fe6d3aa03761580f530f484133df792
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031072"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547251"
 ---
-# <a name="cloud-monitoring-guide-overview-of-our-monitoring-platforms"></a>Przewodnik monitorowania chmury: Omówienie naszych platform monitorowania
+# <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Przewodnik monitorowania w chmurze: monitorowanie Platform przegląd
 
-Firma Microsoft oferuje szereg możliwości monitorowania z dwóch produktów: System Center Operations Manager, która została zaprojektowana dla lokalnego, a następnie rozszerzona do chmury i Azure Monitor, która została zaprojektowana dla chmury, ale również może monitorować systemy lokalne. Te dwie oferty zapewniają podstawowe usługi monitorowania, takie jak alerty, śledzenie czasu przestoju usługi, monitorowanie kondycji aplikacji i infrastruktury, Diagnostyka i analiza.
+Firma Microsoft udostępnia wiele możliwości monitorowania z dwóch produktów: System Center Operations Manager zaprojektowana dla lokalnego, a następnie rozszerzona do chmury i Azure Monitor, która została zaprojektowana dla chmury, ale również może monitorować systemy lokalne . Te dwie oferty zapewniają podstawowe usługi monitorowania, takie jak alerty, śledzenie czasu przestoju usługi, monitorowanie kondycji aplikacji i infrastruktury, Diagnostyka i analiza.
 
 Wiele organizacji korzysta z najnowszych wskazówek dotyczących elastyczności DevOps i innowacji w chmurze do zarządzania środowiskami heterogenicznych. Jednak są one również zaangażowane w odpowiednie i odpowiedzialne decyzje dotyczące monitorowania tych obciążeń.
 
@@ -34,7 +34,7 @@ Gdy platforma Azure została wydana w 2010, monitorowanie usług Cloud Services 
 
 Application Insights wprowadzono zmiany w branży, gdzie rośnie rozprzestrzenianie się rozwiązań chmurowych, mobilnych i IoT oraz wprowadzenie praktyk DevOps. Zwiększył się z programu Application Performance Monitoring w Operations Manager do usługi platformy Azure, która zapewnia rozbudowane monitorowanie aplikacji sieci Web, które są zapisywane w różnych językach. W 2015, wersja zapoznawcza Application Insights programu Visual Studio została ogłoszona i nowsza, stała się znana jako Application Insights. Gromadzi szczegółowe informacje o wydajności aplikacji, żądaniach i wyjątkach oraz śladach.
 
-W 2015 usługa Azure Operational Insights była ogólnie dostępna. Dostarczono usługę analizy Log Analytics, która zbiera i przeszukuje dane z maszyn na platformie Azure, w Premium lub innych środowiskach chmurowych i podłączonych do System Center Operations Manager. Oferowane są pakiety analiz, które udostępniają różne wstępnie spakowane konfiguracje zarządzania i monitorowania, które zawierały kolekcję zapytań i logiki analitycznych, wizualizacje i reguły zbierania danych na potrzeby takich scenariuszy jak Inspekcja zabezpieczeń, kondycja oceny i zarządzanie alertami.  Późniejsza usługa Azure Operational Insights stała się znana jako Log Analytics.  
+W 2015 usługa Azure Operational Insights była ogólnie dostępna. Dostarczono usługę analizy Log Analytics, która zbiera i przeszukuje dane z maszyn na platformie Azure, lokalnie lub w innych środowiskach w chmurze i podłączonych do System Center Operations Manager. Oferowane są pakiety analiz, które udostępniają różne wstępnie spakowane konfiguracje zarządzania i monitorowania, które zawierały kolekcję zapytań i logiki analitycznych, wizualizacje i reguły zbierania danych na potrzeby takich scenariuszy jak Inspekcja zabezpieczeń, kondycja oceny i zarządzanie alertami. Późniejsza usługa Azure Operational Insights stała się znana jako Log Analytics.  
 
 W 2016, wersja zapoznawcza Azure Monitor była ogłoszona jako "zapłon". Zapewnia ona wspólną strukturę zbierania metryk platformy, dzienników diagnostyki zasobów i zdarzeń dziennika aktywności na poziomie subskrypcji z dowolnej usługi platformy Azure, która została uruchomiona przy użyciu platformy. Wcześniej każda usługa platformy Azure miała własną metodę monitorowania.
 
@@ -52,9 +52,9 @@ Od 2015 do 2018 kwietnia, pakiet Operations Management Suite (OMS) to zbiór nas
 
 - Application Insights
 - Azure Automation
-- Azure Backup
+- Usługa Azure Backup
 - Operational Insights (później Log Analytics z oznaczeniem)
-- Site Recovery
+- Odzyskiwanie witryn
 
 Funkcje usług, które były częścią pakietu OMS, nie uległy zmianie, gdy pakiet OMS został wycofany, został przewyrównany w obszarze Azure Monitor.
 
@@ -132,7 +132,7 @@ Azure Monitor nie zapewnia użytkownikowi definiowanej metody implementacji mode
 
 - **Azure monitor dla maszyn wirtualnych** zapewnia środowisko monitorowania kondycji maszyn wirtualnych platformy Azure gościa, podobnie jak Operations Manager, podczas monitorowania maszyn wirtualnych z systemami Windows i Linux. Szacuje kondycję kluczowych składników systemu operacyjnego z perspektywy dostępności i wydajności w celu ustalenia bieżącego stanu kondycji. Po ustaleniu, że maszyna wirtualna gościa ma zrównoważone wykorzystanie zasobów, pojemność miejsca na dysku lub problem związany z podstawową funkcjonalnością systemu operacyjnego, generuje alert, aby uzyskać ten stan do uwagi.
 
-- **Azure monitor kontenerów służy do** monitorowania wydajności i kondycji usług Azure Kubernetes Services lub Azure Container Instances. Zbiera metryki pamięci i procesora z kontrolerów, węzły i kontenerów, które są dostępne w usłudze Kubernetes za pomocą interfejsu API metryki. Gromadzi również dzienniki kontenerów oraz dane spisu dotyczące kontenerów i ich obrazów. Wstępnie zdefiniowane kryteria kondycji na podstawie zebranych danych wydajności pomagają ustalić, czy występuje wąskie gardło zasobów lub problemy z pojemnością. Można także zrozumieć ogólną wydajność lub wydajność z określonego typu obiektu Kubernetes (pod, węzła, kontrolera lub kontenera).
+- **Azure monitor kontenerów służy do** monitorowania wydajności i kondycji usług Azure Kubernetes Services lub Azure Container Instances. Zbiera metryki pamięci i procesora z kontrolerów, węzłów i kontenerów, które są dostępne w Kubernetes za pośrednictwem interfejsu API metryk. Gromadzi również dzienniki kontenerów oraz dane spisu dotyczące kontenerów i ich obrazów. Wstępnie zdefiniowane kryteria kondycji na podstawie zebranych danych wydajności pomagają ustalić, czy występuje wąskie gardło zasobów lub problemy z pojemnością. Można także zrozumieć ogólną wydajność lub wydajność z określonego typu obiektu Kubernetes (pod, węzła, kontrolera lub kontenera).
 
 ## <a name="analyzing-data"></a>Analizowanie danych
 
@@ -152,7 +152,7 @@ Operations Manager oferuje cztery podstawowe sposoby analizowania danych po ich 
 
 Azure Monitor ma wydajny aparat analityczny, który pozwala interaktywnie współpracować z danymi dzienników i połączyć je z innymi danymi monitorowania w celu uzyskania trendu i analizy danych. Widoki i pulpity nawigacyjne pozwalają wizualizować dane zapytań na różne sposoby z Azure Portal i importować do Power BI. Rozwiązania do monitorowania obejmują zapytania i widoki umożliwiające prezentowanie zbieranych danych. Szczegółowe informacje, takie jak Application Insights, Azure Monitor dla maszyn wirtualnych i Azure Monitor dla kontenerów obejmują dostosowane wizualizacje obsługujące interaktywne scenariusze monitorowania.
 
-## <a name="alerting"></a>Generowanie alertów
+## <a name="alerting"></a>Alerty
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -166,7 +166,7 @@ Azure Monitor umożliwia tworzenie alertów na podstawie metryki przekraczające
 
 Chociaż rozwiązania monitorujące mogą obejmować reguły alertów, zwykle są one tworzone na podstawie własnych wymagań.
 
-## <a name="workflows"></a>Workflows
+## <a name="workflows"></a>Przepływy
 
 ### <a name="operations-manager"></a>Operations Manager
 

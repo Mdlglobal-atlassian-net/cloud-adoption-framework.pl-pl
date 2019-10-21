@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e605766e06b106fab61576e64bd5059569c8b38
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223987"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548768"
 ---
-# <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: Narzucony nadzór subskrypcji
+# <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: zalecenia dotyczące zarządzania subskrypcjami
 
 > [!NOTE]
-> Tworzenie szkieletu przedsiębiorstwa platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud. Zawartość tego artykułu jest teraz reprezentowana w sekcji gotowych [](../ready/index.md) nowej struktury. Ten artykuł zostanie uznany za przestarzały na początku 2020. Aby rozpocząć korzystanie z nowego procesu, zapoznaj się z tematem gotowym do [omówienia](../ready/index.md), [tworzeniu pierwszej strefy docelowej](../ready/azure-readiness-guide/migration-landing-zone.md)i/lub zagadnieniami dotyczącymi [strefy docelowej](../ready/considerations/index.md).
+> Tworzenie szkieletu przedsiębiorstwa platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud. Zawartość tego artykułu jest teraz reprezentowana w sekcji [gotowych](../ready/index.md) nowej struktury. Ten artykuł zostanie uznany za przestarzały na początku 2020. Aby rozpocząć korzystanie z nowego procesu, zapoznaj się z tematem [gotowym do omówienia](../ready/index.md), [tworzeniu pierwszej strefy docelowej](../ready/azure-setup-guide/migration-landing-zone.md)i/lub [zagadnieniami dotyczącymi strefy docelowej](../ready/considerations/index.md).
 
 Przedsiębiorstwa coraz częściej wdrażają chmurę publiczną pod kątem elastyczności i elastyczność. Są one zależne od siły chmury w celu generowania przychodów i optymalizowania użycia zasobów dla firmy. Microsoft Azure zapewnia wiele usług i możliwości, które przedsiębiorstwa tworzą, takie jak bloki konstrukcyjne, aby zająć szeroką gamę obciążeń i aplikacji.
 
@@ -34,7 +34,7 @@ Ten artykuł zawiera punkt wyjścia dla specjalistów technicznych w celu rozwi�
 
 ## <a name="need-for-governance"></a>Potrzeba dla ładu
 
-Podczas przejścia na platformę Azure należy zająć się zagadnieniem Nadzoru wczesnego, aby zapewnić pomyślne korzystanie z chmury w przedsiębiorstwie. Niestety, czas i Bureaucracy tworzenia kompleksowego systemu zarządzania oznacza, że niektóre grupy biznesowe bezpośrednio przechodzą do dostawców, bez konieczności od przedsiębiorstwa. Takie podejście może spowodować, że otwarty w przedsiębiorstwie nie zostanie naruszony, jeśli zasoby nie są prawidłowo zarządzane. Cechy charakterystyczne dla elastyczności&mdash;, elastycznej i&mdash;opartej na użyciu chmury publicznej są ważne dla grup gospodarczych, które muszą szybko spełnić wymagania klientów (zarówno wewnętrznych, jak i zewnętrznych). Jednak przedsiębiorstwo musi zapewnić skuteczną ochronę danych i systemów.
+Podczas przejścia na platformę Azure należy zająć się zagadnieniem Nadzoru wczesnego, aby zapewnić pomyślne korzystanie z chmury w przedsiębiorstwie. Niestety, czas i Bureaucracy tworzenia kompleksowego systemu zarządzania oznacza, że niektóre grupy biznesowe bezpośrednio przechodzą do dostawców, bez konieczności od przedsiębiorstwa. Takie podejście może spowodować, że otwarty w przedsiębiorstwie nie zostanie naruszony, jeśli zasoby nie są prawidłowo zarządzane. Charakterystyka &mdash;agility chmury publicznej, elastyczności i cen opartych na użyciu &mdash;are ważnych dla grup gospodarczych, które muszą szybko spełnić wymagania klientów (zarówno wewnętrznych, jak i zewnętrznych). Jednak przedsiębiorstwo musi zapewnić skuteczną ochronę danych i systemów.
 
 Podczas tworzenia budynku tworzenie szkieletu jest używane do tworzenia podstawy struktury. Szkielet jest przewodnikiem ogólnym i zawiera punkty zakotwiczenia umożliwiające zamontowanie systemów trwałych. Szkielet przedsiębiorstwa jest taki sam: Zestaw elastycznych kontrolek i możliwości platformy Azure, które zapewniają strukturę środowiska oraz kotwice dla usług skompilowanych w chmurze publicznej. Zapewnia ona konstruktorom (grupom IT i biznesowym) podstawę do tworzenia i dołączania nowych usług w celu zapewnienia szybszego dostarczania.
 
@@ -79,7 +79,7 @@ Chociaż każdy z tych wzorców ma swoje miejsce, wzorzec **jednostki biznesowej
 
 ### <a name="azure-management-groups"></a>Grupy zarządzania platformy Azure
 
-Firma Microsoft oferuje teraz inny sposób modelowania hierarchii: [Grupy zarządzania platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview). Grupy zarządzania są znacznie bardziej elastyczne niż działy i konta i mogą być zagnieżdżane do sześciu poziomów. Grupy zarządzania pozwalają utworzyć hierarchię, która jest oddzielona od hierarchii rozliczeń, wyłącznie w celu wydajnego zarządzania zasobami. Grupy zarządzania mogą dublować hierarchie rozliczeń i często zaczynają się one w ten sposób. Jednak możliwości grup zarządzania są używane do modelowania organizacji, grupowania powiązanych subskrypcji (niezależnie od ich lokalizacji w hierarchii rozliczeń) i przypisywania wspólnych ról, zasad i inicjatyw. Oto niektóre przykłady:
+Firma Microsoft oferuje teraz inny sposób modelowania hierarchii: [grupy zarządzania platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview). Grupy zarządzania są znacznie bardziej elastyczne niż działy i konta i mogą być zagnieżdżane do sześciu poziomów. Grupy zarządzania pozwalają utworzyć hierarchię, która jest oddzielona od hierarchii rozliczeń, wyłącznie w celu wydajnego zarządzania zasobami. Grupy zarządzania mogą dublować hierarchie rozliczeń i często zaczynają się one w ten sposób. Jednak możliwości grup zarządzania są używane do modelowania organizacji, grupowania powiązanych subskrypcji (niezależnie od ich lokalizacji w hierarchii rozliczeń) i przypisywania wspólnych ról, zasad i inicjatyw. Oto niektóre przykłady:
 
 - **Produkcja a nieprodukcja.** Niektóre przedsiębiorstwa tworzą grupy zarządzania, aby identyfikować ich subskrypcje produkcyjne i nieprodukcyjne. Grupy zarządzania jeszcze bardziej ułatwiają tym klientom zarządzanie rolami i zasadami. Na przykład subskrypcja nieprodukcyjnego może pozwolić deweloperom na dostęp współautorów, ale w środowisku produkcyjnym ma tylko dostęp do czytnika.
 - **Usługi wewnętrzne a usługi zewnętrzne.** Przedsiębiorstwa często mają różne wymagania, zasady i role dla usług wewnętrznych i usług przeznaczonych dla klientów.
@@ -91,10 +91,10 @@ Dobrze zaprojektowane grupy zarządzania to między innymi Azure Policy i inicja
 Podczas decydowania o działach i kontach (lub grupach zarządzania) przede wszystkim przeglądasz, jak podział środowiska platformy Azure jest zgodny z organizacją. Subskrypcje są jednak wykonywane w rzeczywistości, a decyzje mają wpływ na bezpieczeństwo, skalowalność i rozliczenia. Wiele organizacji Przyjrzyj następujące wzorce jako przewodniki:
 
 - **Aplikacja/usługa:** Subskrypcje reprezentują aplikację lub usługę (portfolio aplikacji)
-- **Witrynę** Subskrypcje reprezentują cykl życia usługi, na przykład produkcyjne lub deweloperskie.
-- **Dział:** subskrypcje reprezentują działy w organizacji.
+- **Cykl życia:** Subskrypcje reprezentują cykl życia usługi, na przykład produkcyjne lub deweloperskie.
+- **Dział:** Subskrypcje reprezentują działy w organizacji.
 
-Dwa pierwsze wzorce są najczęściej używane i obie są zdecydowanie zalecane. Podejście do cyklu życia jest odpowiednie dla większości organizacji. W takim przypadku generalnym zaleceniem jest użycie dwóch subskrypcji podstawowych, `Production` `Nonproduction`a następnie użycie grup zasobów w celu dodatkowego rozdzielenia środowiska.
+Dwa pierwsze wzorce są najczęściej używane i obie są zdecydowanie zalecane. Podejście do cyklu życia jest odpowiednie dla większości organizacji. W takim przypadku generalnym zaleceniem jest użycie dwóch podstawowych subskrypcji, `Production` i `Nonproduction`, a następnie użycie grup zasobów w celu dodatkowego rozdzielenia środowiska.
 
 ### <a name="resource-groups"></a>Grupy zasobów
 
@@ -129,7 +129,7 @@ Tagi zasobów są ściśle wyrównane ze standardami nazewnictwa. Gdy zasoby są
 > [!IMPORTANT]
 > Tagi mogą zawierać dane osobowe i mogą być objęte przepisami Rodo. Uważnie Zaplanuj zarządzanie tagami. Jeśli szukasz ogólnych informacji o Rodo, zobacz sekcję Rodo w [portalu zaufania usługi](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
-Tagi są używane na wiele sposobów poza rozliczeniami i zarządzaniem. Są one często używane jako część automatyzacji (zobacz sekcję w dalszej części). Może to spowodować konflikty, jeśli nie są one rozpatrywane na początku. Zalecaną metodą jest zidentyfikowanie wszystkich typowych tagów na poziomie przedsiębiorstwa (na przykład ApplicationOwner i CostCenter) i zastosowanie ich konsekwentnie podczas wdrażania zasobów przy użyciu automatyzacji.
+Tagi są używane na wiele sposobów poza rozliczeniami i zarządzaniem. Są one często używane jako część automatyzacji (zobacz sekcję w dalszej części). Może to spowodować konflikty, jeśli nie są one rozpatrywane na początku. Najlepszym rozwiązaniem jest zidentyfikowanie wszystkich typowych tagów na poziomie przedsiębiorstwa (na przykład ApplicationOwner i CostCenter) i ich spójność podczas wdrażania zasobów przy użyciu automatyzacji.
 
 ## <a name="azure-policy-and-initiatives"></a>Azure Policy i inicjatywy
 
@@ -139,7 +139,7 @@ Zasady i inicjatywy są jeszcze bardziej zaawansowane, gdy są używane z wymien
 
 ### <a name="common-uses-of-resource-manager-policies"></a>Typowe zastosowania zasad Menedżer zasobów
 
-Zasady i inicjatywy to zaawansowane narzędzie dostępne w zestawie narzędzi platformy Azure. Zasady umożliwiają firmom zapewnienie kontroli nad obciążeniami "tradycyjnym", które umożliwiają stabilność potrzebną dla aplikacji biznesowych, a także umożliwianie "Agile" obciążeń&mdash;na przykład opracowywania aplikacji klienta bez uwidaczniania przedsiębiorstwa do dodatkowego ryzyka. Najczęstsze wzorce dla zasad są następujące:
+Zasady i inicjatywy to zaawansowane narzędzie dostępne w zestawie narzędzi platformy Azure. Zasady umożliwiają firmom zapewnienie kontroli nad obciążeniami "tradycyjnym", które pozwalają na stabilność, która jest wymagana w przypadku aplikacji biznesowych, a także umożliwianie "Agile" obciążeń &mdash;for przykład, opracowywanie aplikacji klienta bez ujawnienie przedsiębiorstwa do dodatkowego ryzyka. Najczęstsze wzorce dla zasad są następujące:
 
 - **Zgodność geograficzna i niezależność danych.** Platforma Azure oferuje coraz większą listę regionów na całym świecie. Przedsiębiorstwa często muszą zapewnić, że zasoby w określonym zakresie pozostają w regionie geograficznym, aby spełnić wymagania prawne.
 - **Unikaj ujawniania serwerów publicznie.** Azure Policy może zabronić wdrożenia niektórych typów zasobów. Często należy utworzyć zasady, aby odmówić tworzenia publicznego adresu IP w określonym zakresie, co pozwala uniknąć niezamierzonego narażenia serwera z Internetem.
@@ -170,21 +170,21 @@ Aby zabezpieczyć dostęp do zasobów, należy najpierw skonfigurować dostawcę
 
 ![Diagram architektury usługi AD](../_images/reference/ad-architecture.png)
 
-Po wstępnym udostępnieniu platformy Azure kontrola dostępu do subskrypcji była podstawowa: Administrator lub współadministrator. Dostęp do subskrypcji w modelu klasycznym implikuje dostęp do wszystkich zasobów w portalu. Ten braku szczegółowych kontroli prowadzi do rozprzestrzeniania się subskrypcji w celu zapewnienia poziomu uzasadnionej kontroli dostępu do rejestracji na platformie Azure. Ta proliferacja subskrypcji nie jest już wymagana. Za pomocą kontroli dostępu opartej na rolach (RBAC) można przypisywać użytkowników do ról standardowych, które zapewniają wspólny dostęp, taki jak "Owner", "Współautor" lub "Reader", a nawet tworzyć własne role.
+Po wstępnym udostępnieniu platformy Azure kontrola dostępu do subskrypcji była podstawowa: administrator lub administrator współpracujący. Dostęp do subskrypcji w modelu klasycznym implikuje dostęp do wszystkich zasobów w portalu. Ten braku szczegółowych kontroli prowadzi do rozprzestrzeniania się subskrypcji w celu zapewnienia poziomu uzasadnionej kontroli dostępu do rejestracji na platformie Azure. Ta proliferacja subskrypcji nie jest już wymagana. Za pomocą kontroli dostępu opartej na rolach (RBAC) można przypisywać użytkowników do ról standardowych, które zapewniają wspólny dostęp, taki jak "Owner", "Współautor" lub "Reader", a nawet tworzyć własne role.
 
 W przypadku implementowania dostępu opartego na rolach należy wykonać następujące czynności:
 
 - Kontroluj administratorów/współadministratorów subskrypcji, ponieważ te role mają rozległe uprawnienia. Aby zarządzać klasycznymi wdrożeniami platformy Azure, wystarczy dodać właściciela subskrypcji jako współadministratora.
 - Grupy zarządzania umożliwiają przypisywanie [ról](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview#management-group-access) w wielu subskrypcjach i zmniejszanie obciążeń związanych z zarządzaniem nimi na poziomie subskrypcji.
 - Dodaj użytkowników platformy Azure do grupy (na przykład właściciele aplikacji X) w Active Directory. Użyj zsynchronizowanej grupy, aby zapewnić członkom grupy odpowiednie prawa do zarządzania grupą zasobów zawierającą aplikację.
-- Postępuj zgodnie z zasadami udzielenia najmniejszego poziomu **uprawnień** wymaganego do wykonania oczekiwanej pracy.
+- Postępuj zgodnie z zasadami udzielenia **najmniejszego poziomu uprawnień** wymaganego do wykonania oczekiwanej pracy.
 
 > [!IMPORTANT]
->Rozważ użycie [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), [uwierzytelniania](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) wieloskładnikowego platformy Azure i możliwości [dostępu warunkowego](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) , aby zapewnić lepsze zabezpieczenia i większą widoczność działań administracyjnych na platformie Azure opłaty. Te funkcje pochodzą z prawidłowej licencji Azure AD — wersja Premium (w zależności od funkcji) w celu dalszego zabezpieczania tożsamości i zarządzania nią. Usługa Azure AD PIM umożliwia dostęp administracyjny "just-in-Time" z przepływem pracy zatwierdzania, a także pełną inspekcję aktywacji i działań administratorów. Uwierzytelnianie wieloskładnikowe systemu Azure jest kolejną funkcją krytyczną i umożliwia weryfikację dwuetapową logowania do Azure Portal. W połączeniu z kontrolami dostępu warunkowego można efektywnie zarządzać ryzykiem naruszenia.
+>Rozważ skorzystanie z usług [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) i [dostępu warunkowego](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) , aby zapewnić lepsze zabezpieczenia i wgląd w działania administracyjne na platformie Azure opłaty. Te funkcje pochodzą z prawidłowej licencji Azure AD — wersja Premium (w zależności od funkcji) w celu dalszego zabezpieczania tożsamości i zarządzania nią. Usługa Azure AD PIM umożliwia dostęp administracyjny "just-in-Time" z przepływem pracy zatwierdzania, a także pełną inspekcję aktywacji i działań administratorów. Usługa Azure Multi-Factor Authentication jest kolejną funkcją krytyczną i umożliwia weryfikację dwuetapową logowania do Azure Portal. W połączeniu z kontrolami dostępu warunkowego można efektywnie zarządzać ryzykiem naruszenia.
 
 Planowanie i przygotowywanie do kontroli tożsamości i dostępu oraz stosowanie najlepszych rozwiązań w zakresie zarządzania tożsamościami ([link](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)) jest jednym z najlepszych strategii zaradczych, które można zastosować i powinny być uznawane za obowiązkowe dla każdego wdrożenia.
 
-## <a name="security"></a>Bezpieczeństwo
+## <a name="security"></a>Zabezpieczenia
 
 Jeden z największych blokad do wdrożenia w chmurze tradycyjnie ma wpływ na bezpieczeństwo. Menedżerowie ryzyka IT i działy zabezpieczeń muszą zapewnić, że zasoby na platformie Azure są chronione i zabezpieczone domyślnie. Platforma Azure udostępnia funkcje, których można używać do ochrony zasobów podczas wykrywania i eliminowania zagrożeń związanych z tymi zasobami.
 
@@ -228,13 +228,13 @@ Zbieranie i analizowanie danych telemetrycznych, które zawierają szczegółowe
 
 Te informacje mogą być wyświetlane i przetwarzane na wielu poziomach i stale ulepszane. Platforma Azure oferuje funkcje **udostępnione**, **podstawowe**i **głębokiego** monitorowania zasobów platformy Azure za pomocą usług przedstawionych na poniższym diagramie.
 
-![monitorowanie](../_images/reference/monitoring.png)
+![kontrolą](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Współdzielone możliwości
 
-- **Alerty** Można zbierać wszystkie dzienniki, zdarzenia i metryki z zasobów platformy Azure, ale bez możliwości powiadomienia o warunkach krytycznych i działaniach, dane te są przydatne tylko w celach historycznych i dowodowych. Alerty platformy Azure aktywnie powiadamiają użytkownika o warunkach definiowanych we wszystkich aplikacjach i infrastrukturze. Można tworzyć reguły alertów w dziennikach, zdarzeniach i metrykach, które używają grup akcji do powiadamiania zestawów odbiorców. Grupy akcji umożliwiają również automatyzację korygowania przy użyciu akcji zewnętrznych, takich jak elementy webhook, aby uruchamiać Azure Automation Runbook i Azure Functions.
+- **Alerty:** Można zbierać wszystkie dzienniki, zdarzenia i metryki z zasobów platformy Azure, ale bez możliwości powiadomienia o warunkach krytycznych i działaniach, dane te są przydatne tylko w celach historycznych i dowodowych. Alerty platformy Azure aktywnie powiadamiają użytkownika o warunkach definiowanych we wszystkich aplikacjach i infrastrukturze. Można tworzyć reguły alertów w dziennikach, zdarzeniach i metrykach, które używają grup akcji do powiadamiania zestawów odbiorców. Grupy akcji umożliwiają również automatyzację korygowania przy użyciu akcji zewnętrznych, takich jak elementy webhook, aby uruchamiać Azure Automation Runbook i Azure Functions.
 
-- **Pulpitów nawigacyjnych** Pulpity nawigacyjne umożliwiają agregowanie widoków monitorowania i łączenie danych między zasobami i subskrypcjami w celu udostępnienia całej korporacyjnemu widoku telemetrii zasobów platformy Azure. Możesz tworzyć i konfigurować własne widoki oraz udostępniać je innym osobom. Na przykład możesz utworzyć pulpit nawigacyjny składający się z różnych kafelków dla administratorów baz danych, aby podać informacje w ramach wszystkich usług Azure Database, w tym Azure SQL DB, Azure DB for PostgreSQL i Azure DB for MySQL.
+- **Pulpity nawigacyjne:** Pulpity nawigacyjne umożliwiają agregowanie widoków monitorowania i łączenie danych między zasobami i subskrypcjami w celu udostępnienia całej korporacyjnemu widoku telemetrii zasobów platformy Azure. Możesz tworzyć i konfigurować własne widoki oraz udostępniać je innym osobom. Na przykład możesz utworzyć pulpit nawigacyjny składający się z różnych kafelków dla administratorów baz danych, aby podać informacje w ramach wszystkich usług Azure Database, w tym Azure SQL DB, Azure DB for PostgreSQL i Azure DB for MySQL.
 
 - **Eksplorator metryk:** Metryki to wartości liczbowe generowane przez zasoby platformy Azure (takie jak% procesora CPU lub we/wy dysku), które zapewniają wgląd w działanie i wydajność zasobów. Za pomocą Eksplorator metryk można definiować i wysyłać metryki, które są przydatne do Log Analytics do agregacji i analizy.
 
@@ -244,7 +244,7 @@ Te informacje mogą być wyświetlane i przetwarzane na wielu poziomach i stale 
 
 - **Azure Advisor:** Azure Advisor stale monitoruje dane telemetryczne w ramach subskrypcji i środowisk i zawiera zalecenia dotyczące najlepszych rozwiązań dotyczących optymalizacji zasobów platformy Azure w celu oszczędności i poprawy wydajności, bezpieczeństwa i dostępności zasobów. tworzące swoje aplikacje.
 
-- **Kondycja usługi:** Azure Service Health identyfikuje wszelkie problemy z usługami platformy Azure, które mogą mieć wpływ na Twoje aplikacje, a także pomaga w planowaniu okien obsługi zaplanowanych.
+- **Service Health:** Azure Service Health identyfikuje wszelkie problemy z usługami platformy Azure, które mogą mieć wpływ na Twoje aplikacje, a także pomaga w planowaniu okien obsługi zaplanowanych.
 
 - **Dziennik aktywności:** Dziennik aktywności zawiera opis wszystkich operacji na zasobach w Twoich subskrypcjach. Zawiera on dziennik inspekcji, aby określić, co "co", "kto" i "When" każdej operacji tworzenia, aktualizowania i usuwania zasobów. Zdarzenia dziennika aktywności są przechowywane na platformie i są dostępne do wykonywania zapytań przez 90 dni. Dzienniki aktywności można pozyskać do Log Analytics w celu uzyskania dłuższych okresów przechowywania oraz dokładniejszego wykonywania zapytań i analiz w wielu zasobach.
 
@@ -260,14 +260,14 @@ Te informacje mogą być wyświetlane i przetwarzane na wielu poziomach i stale 
 
 - **Rozwiązania do zarządzania:** Rozwiązania do zarządzania to spakowane zestawy logiki, szczegółowe dane i wstępnie zdefiniowane zapytania Log Analytics dla aplikacji lub usługi. Są one zależne od Log Analytics jako podstaw do przechowywania i analizowania danych zdarzeń. Przykładowe rozwiązania do zarządzania obejmują kontenery monitorowania i analizę Azure SQL Database.
 
-- **Service Map:** Service Map udostępnia widok graficzny składników infrastruktury, ich procesów i współzależności z innymi komputerami i procesami zewnętrznymi. Integruje zdarzenia, dane dotyczące wydajności i rozwiązania do zarządzania w usłudze Log Analytics.
+- **Service map:** Service Map udostępnia widok graficzny składników infrastruktury, ich procesów i współzależności z innymi komputerami i procesami zewnętrznymi. Integruje zdarzenia, dane dotyczące wydajności i rozwiązania do zarządzania w usłudze Log Analytics.
 
 > [!TIP]
 > Przed utworzeniem poszczególnych alertów należy utworzyć i zachować zestaw udostępnionych grup akcji, które mogą być używane w ramach alertów platformy Azure. Dzięki temu można centralnie zarządzać cyklem życia list odbiorców, metodami dostarczania powiadomień (adresami e-mail, numerami telefonów SMS) i elementami webhook do akcji zewnętrznych (Azure Automation elementy Runbook, Azure Functions/Logic Apps, narzędzia ITSM).
 
 ## <a name="cost-management"></a>Zarządzanie kosztami
 
-Jednym z najważniejszych zmian, które należy wykonać podczas przechodzenia z chmury lokalnej do chmury publicznej, jest przełączenie z wydatków inwestycyjnych (Kupowanie sprzętu) do wydatków operacyjnych (płacisz za usługę w miarę ich używania). Ten przełącznik wymaga również bardziej dokładnego zarządzania kosztami. Zaletą chmury jest to, że można się w sposób zasadniczy i pozytywnie wpływać na koszt usługi używanej przez zaledwie wyłączenie lub zmianę ich rozmiarów, gdy nie jest to konieczne. Świadome zarządzanie kosztami w chmurze jest zalecanym postępowaniem i jednym, który z nich jest codzienny.
+Jednym z najważniejszych zmian, które należy wykonać podczas przechodzenia z chmury lokalnej do chmury publicznej, jest przełączenie z wydatków inwestycyjnych (Kupowanie sprzętu) do wydatków operacyjnych (płacisz za usługę w miarę ich używania). Ten przełącznik wymaga również bardziej dokładnego zarządzania kosztami. Zaletą chmury jest to, że można się w sposób zasadniczy i pozytywnie wpływać na koszt usługi używanej przez zaledwie wyłączenie lub zmianę ich rozmiarów, gdy nie jest to konieczne. Świadome zarządzanie kosztami w chmurze jest najlepszym rozwiązaniem i jednym, który jest codziennie codziennym klientom.
 
 Firma Microsoft udostępnia kilka narzędzi, które umożliwiają wizualizowanie, śledzenie i zarządzanie kosztami. Udostępniamy również pełny zestaw interfejsów API umożliwiających Dostosowywanie i integrację zarządzania kosztami w własnych narzędziach i pulpitach nawigacyjnych. Te narzędzia są luźno pogrupowane w Azure Portal możliwości i funkcje zewnętrzne.
 
@@ -286,7 +286,7 @@ Są to narzędzia zapewniające natychmiastowe informacje o kosztach, a także m
 
 - **Interfejs API użycia:** [Interfejsy API użycia](/rest/api/consumption) zapewniają programistyczny dostęp do danych kosztów i użycia oprócz informacji o budżetach, wystąpieniach zarezerwowanych i opłatach za witrynę Marketplace. Te interfejsy API są dostępne tylko dla rejestracji w przedsiębiorstwie i niektórych subskrypcji sieci Web bezpośrednich, ale zapewniają możliwość integracji danych kosztów z własnymi narzędziami i magazynami danych. [Dostęp do tych interfejsów API można także uzyskać za pomocą interfejsu wiersza polecenia platformy Azure](/cli/azure/consumption?view=azure-cli-latest).
 
-Klienci, którzy są użytkownikami długoterminowymi i dojrzałymi w chmurze, przestrzegają niektórych wysoce zalecanych praktyk:
+Klienci, którzy są użytkownikami długoterminowymi i dojrzałymi w chmurze, przestrzegają pewnych najlepszych rozwiązań:
 
 - **Aktywne monitorowanie kosztów.** Organizacje, które są dojrzałymi użytkownikami platformy Azure, stale monitorują koszty i podejmują działania w razie konieczności. Niektóre organizacje mogą nawet przeznaczyć na przeanalizowanie i zasugerować zmiany w użyciu, a te osoby nie są opłacane za pierwszym razem, gdy znajdą nieużywany klaster usługi HDInsight uruchomiony przez miesiące.
 - **Użyj wystąpień zarezerwowanych maszyn wirtualnych.** Inna usługa Key cechą do zarządzania kosztami w chmurze polega na użyciu odpowiedniego narzędzia dla tego zadania. Jeśli masz maszynę wirtualną IaaS, która musi pozostać w 24x7, użycie wystąpienia zarezerwowanej maszyny wirtualnej spowoduje znaczne oszczędności. Znalezienie odpowiedniej równowagi między automatyzacją zamykania maszyn wirtualnych i korzystaniem z wystąpień zarezerwowanych maszyn wirtualnych wymaga środowiska i analizy.
@@ -303,7 +303,7 @@ Kilka narzędzi może pomóc Ci w rozpoczęciu tej możliwości od narzędzi pie
 
 - **Azure Automation** Usługa to oparta na chmurze funkcja umożliwiająca tworzenie elementów Runbook (w programach PowerShell lub Python) i pozwala zautomatyzować procesy, konfigurować zasoby, a nawet stosować poprawki. [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) zawiera rozbudowany zestaw funkcji międzyplatformowych, które są integralną częścią wdrożenia, ale są zbyt obszerne, aby można je było szczegółowo znaleźć w tym miejscu.
 - **Event Grid** to w pełni zarządzany system routingu zdarzeń, który umożliwia reagowanie na zdarzenia w środowisku platformy Azure. Podobnie jak Azure Automation to dołączona tkana organizacja w chmurze, [Event Grid](https://docs.microsoft.com/azure/event-grid) to tkana tkanka dobrej automatyzacji. Za pomocą Event Grid można utworzyć prostą akcję bezserwerową, aby wysłać wiadomość e-mail do administratora po każdym utworzeniu nowego zasobu i zalogować go do bazy danych. Ten sam Event Grid może powiadamiać o usunięciu zasobu i usunięciu elementu z bazy danych.
-- **Azure Cloud Shell** to interaktywna Powłoka oparta na [](https://docs.microsoft.com/azure/cloud-shell/overview) przeglądarce służąca do zarządzania zasobami na platformie Azure. Zapewnia całe środowisko dla programu PowerShell lub bash, które są uruchamiane zgodnie z potrzebami (i obsługiwane przez Ciebie), dzięki czemu masz spójne środowisko, z którego można uruchamiać skrypty. Azure Cloud Shell zapewnia dostęp do dodatkowych narzędzi kluczowych — już zainstalowane — w celu zautomatyzowania środowiska, w tym [interfejsu wiersza polecenia platformy Azure](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) i coraz większej listy dodatkowych [narzędzi](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection) do zarządzania kontenerami, bazami danych (sqlcmd) i szczegółowe.
+- **Azure Cloud Shell** to interaktywna [powłoka](https://docs.microsoft.com/azure/cloud-shell/overview) oparta na przeglądarce służąca do zarządzania zasobami na platformie Azure. Zapewnia całe środowisko dla programu PowerShell lub bash, które są uruchamiane zgodnie z potrzebami (i obsługiwane przez Ciebie), dzięki czemu masz spójne środowisko, z którego można uruchamiać skrypty. Azure Cloud Shell zapewnia dostęp do dodatkowych narzędzi kluczowych — już zainstalowane — w celu zautomatyzowania środowiska, w tym [interfejsu wiersza polecenia platformy Azure](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) i coraz większej listy dodatkowych [narzędzi](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection) do zarządzania kontenerami, bazami danych (sqlcmd) i szczegółowe.
 
 Automatyzacja to zadanie w pełnym czasie i szybko staje się jednym z najważniejszych zadań operacyjnych w ramach zespołu w chmurze. Organizacje, które przyjmują podejście "Automatyzacja First", przewyższają sukces korzystania z platformy Azure:
 
@@ -334,7 +334,7 @@ Ostatnim składnikiem modelu referencyjnego szkieletu platformy Azure jest rdze�
 - **Grupy zabezpieczeń** to obszerny zestaw reguł, które zapewniają możliwość zezwalania na ruch przychodzący i wychodzący do/z zasobów platformy Azure. [Grupy zabezpieczeń](https://docs.microsoft.com/azure/virtual-network/security-overview) składają się z reguł zabezpieczeń, które można rozszerzyć za pomocą **tagów usługi** (które definiują typowe usługi platformy Azure, takie jak Azure Key Vault lub Azure SQL Database) i **grup zabezpieczeń aplikacji** (które definiują i obsługują aplikacje). Struktura, taka jak serwery sieci Web lub serwery aplikacji).
 
 > [!TIP]
-> Użyj tagów usługi i grup zabezpieczeń aplikacji w sieciowych grupach zabezpieczeń nie tylko, aby zwiększyć czytelność reguł&mdash;, co jest decydujące dla zrozumienie wpływu&mdash;, ale również w celu włączenia efektywnego mikrosegmentu w ramach większa podsieć, zmniejszanie rozwojem i zwiększanie elastyczności.
+> Użyj tagów usługi i grup zabezpieczeń aplikacji w sieciowych grupach zabezpieczeń nie tylko, aby zwiększyć czytelność reguł &mdash;which ma kluczowe znaczenie dla zrozumienie wpływu &mdash;but, aby umożliwić efektywne mikrosegmentację w większej podsieci, zmniejszenie rozwojem i zwiększanie elastyczności.
 
 ### <a name="azure-virtual-datacenter"></a>Wirtualne centrum danych Azure
 

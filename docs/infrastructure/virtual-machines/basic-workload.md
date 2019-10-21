@@ -8,12 +8,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6cf1be3679032976efa0331e13ea6806f2f8a79f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5c3fcb72fc58f4b33735a95a7fcf1623fe081795
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024370"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548107"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Wdrażanie podstawowego obciążenia na platformie Azure
 
@@ -41,7 +41,7 @@ W przypadku podstawowej aplikacji sieci Web Wybierz jeden z 5-minutowego przewod
 > [!NOTE]
 > Niektóre Przewodniki Szybki Start będą wdrażać grupę zasobów domyślnie. W takim przypadku nie jest konieczne jawne utworzenie grupy zasobów. W przeciwnym razie Wdróż aplikację sieci Web w utworzonej powyżej grupie zasobów.
 
-Po wdrożeniu prostego obciążenia można dowiedzieć się więcej na temat sprawdzonych praktyk wdrażania [podstawowej aplikacji sieci Web](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) na platformie Azure.
+Po wdrożeniu prostego obciążenia można dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących wdrażania [podstawowej aplikacji sieci Web](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) na platformie Azure.
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>Pojedyncza maszyna wirtualna z systemem Windows lub Linux (IaaS)
 
@@ -49,7 +49,7 @@ W przypadku prostego obciążenia, które jest uruchamiane na maszynie wirtualne
 
 Następnym krokiem jest podjęcie decyzji o tym, czy wdrożyć pojedynczą maszynę wirtualną z systemem Windows lub Linux. W przypadku maszyny wirtualnej z systemem Windows wykonaj kroki, aby [wdrożyć maszynę wirtualną z systemem Windows na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Po określeniu ustawień dla maszyny wirtualnej w Azure Portal należy określić nazwę utworzonej powyżej grupy zasobów.
 
-Po wykonaniu kroków i wdrożeniu maszyny wirtualnej można dowiedzieć się więcej [na temat sprawdzonych rozwiązań dotyczących uruchamiania maszyny wirtualnej z systemem Windows na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). W przypadku maszyny wirtualnej z systemem Linux postępuj zgodnie z instrukcjami, aby [wdrożyć maszynę wirtualną z systemem Linux na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Możesz również dowiedzieć się więcej [na temat sprawdzonych rozwiązań dotyczących uruchamiania maszyny wirtualnej z systemem Linux na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
+Po wykonaniu kroków i wdrożeniu maszyny wirtualnej można zapoznać się z [najlepszymi rozwiązaniami dotyczącymi uruchamiania maszyn wirtualnych z systemem Windows na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). W przypadku maszyny wirtualnej z systemem Linux postępuj zgodnie z instrukcjami, aby [wdrożyć maszynę wirtualną z systemem Linux na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Możesz również dowiedzieć się więcej o [najlepszych rozwiązaniach dotyczących uruchamiania maszyny wirtualnej z systemem Linux na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
 
 ## <a name="next-steps"></a>Następne kroki
 

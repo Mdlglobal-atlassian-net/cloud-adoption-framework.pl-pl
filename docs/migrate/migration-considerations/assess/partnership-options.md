@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 01d41b3b1486ea563ab1c0b100559e80ad3a03f6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5eabc654c174ac3eff895e6b2ff94700789f5de5
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022678"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549164"
 ---
 # <a name="understand-partnership-options"></a>Informacje o opcjach partnerstwa
 
@@ -33,11 +33,11 @@ W trakcie planowania, kompilowania lub migrowania firma zazwyczaj ma cztery opcj
 Jeśli organizacja planuje samodzielnie przeprowadzić migrację na platformę Azure, firma Microsoft może wspierać ją na wszystkich etapach tej operacji. Aby uprościć proces migracji do platformy Azure, firma Microsoft i jej partnerzy opracowali rozbudowany zestaw architektur, przewodników, narzędzi i usług zmniejszających ryzyko i przyspieszających migrację maszyn wirtualnych, aplikacji oraz baz danych. Te narzędzia i usługi obsługują szeroki zakres systemów operacyjnych, języków programowania, struktur i baz danych.
 
 - **Narzędzia do oceny i migracji.** Platforma Azure oferuje szeroką gamę narzędzi, które mogą być używane w różnych fazach transformacji w chmurze, w tym do oceny istniejącej infrastruktury. Więcej informacji można znaleźć w sekcji „Ocena” w rozdziale „Migracja” poniżej.
-- **[Microsoft Cloud Adoption Framework](../../index.md).** Ta struktura zapewnia strukturalne podejście do wdrażania i migracji w chmurze. Jest ona oparta na sprawdzonych rozwiązaniach w wielu wdrożeniach klientów obsługiwanych przez firmę Microsoft i jest zorganizowana jako seria kroków, od architektury i projektowania do wdrożenia. Dla każdego kroku udostępniono pomocne wskazówki, które ułatwią zaprojektowanie architektury aplikacji.
+- **[Microsoft Cloud Adoption Framework](../../index.md).** Ta struktura zapewnia strukturalne podejście do wdrażania i migracji w chmurze. Jest on oparty na najlepszych rozwiązaniach w wielu klientach obsługiwanych przez firmę Microsoft i jest zorganizowany jako seria kroków, od architektury i projektowania do wdrożenia. Dla każdego kroku udostępniono pomocne wskazówki, które ułatwią zaprojektowanie architektury aplikacji.
 - **[Wzorce projektowe oparte na chmurze](https://docs.microsoft.com/azure/architecture/patterns).** Platforma Azure udostępnia przydatne wzorce projektowe oparte na chmurze służące do tworzenia niezawodnych, skalowalnych i bezpiecznych obciążeń w chmurze. Dla każdego wzorca opisano problem rozwiązywany przez ten wzorzec, uwagi dotyczące stosowania wzorca oraz przykład oparty na platformie Azure. Większość wzorców zawiera przykłady lub fragmenty kodu, które pokazują sposób implementacji wzorca na platformie Azure. Są jednak one odpowiednie dla dowolnego systemu rozproszonego, hostowanego na platformie Azure lub na innych platformach w chmurze.
 - **[Podstawy chmury](https://docs.microsoft.com/azure/architecture/guide).** Podstawy ułatwiają naukę podstawowych metod implementacji kluczowych pojęć. Ten przewodnik pomaga inżynierom projektować rozwiązania, które wykraczają poza pojedynczą usługę platformy Azure.
 - **[Przykładowe scenariusze](https://docs.microsoft.com/azure/architecture/example-scenario).** Ten przewodnik zawiera odwołania do prawdziwych implementacji klientów, opisując narzędzia, metody i procesy, które zostały kiedyś zastosowane przez klientów w celu osiągnięcia określonych celów biznesowych.
-- **[Architektury referencyjne](https://docs.microsoft.com/azure/architecture/reference-architectures).** Architektury referencyjne są uporządkowane według scenariuszy, a powiązane ze sobą architektury odpowiednio pogrupowane. Każda architektura zawiera zalecane rozwiązania z uwzględnieniem zagadnień dotyczących skalowalności, dostępności, możliwości zarządzania i zabezpieczeń. Większość obejmuje również rozwiązanie gotowe do wdrożenia.
+- **[Architektury referencyjne](https://docs.microsoft.com/azure/architecture/reference-architectures).** Architektury referencyjne są uporządkowane według scenariuszy, a powiązane ze sobą architektury odpowiednio pogrupowane. Każda architektura zawiera najlepsze rozwiązania, a także zagadnienia dotyczące skalowalności, dostępności, możliwości zarządzania i zabezpieczeń. Większość obejmuje również rozwiązanie gotowe do wdrożenia.
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
@@ -46,7 +46,7 @@ Usługa [FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-
 - Migracja centrum danych
 - System Windows Server na platformie Azure
 - System Linux na platformie Azure
-- Rozwiązania SAP na platformie Azure
+- SAP w systemie Azure
 - Ciągłość biznesowa i odzyskiwanie po awarii (BCDR)
 - Obliczenia o wysokiej wydajności*
 - Aplikacje natywne dla chmury
@@ -60,7 +60,7 @@ Usługa [FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-
 - Dane rozproszone globalnie
 - IoT***
 
-*Ograniczona wersja zapoznawcza w Stanach Zjednoczonych, Kanadzie, Zjednoczonym Królestwie i Europie Zachodniej
+*Ograniczona wersja zapoznawcza w Stanach Zjednoczonych, Zjednoczonym Królestwie i Europie Zachodniej
 
 **Ograniczona wersja zapoznawcza w Zjednoczonym Królestwie i Europie Zachodniej
 
@@ -68,7 +68,7 @@ Usługa [FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-
 
 W typowym zastosowaniu usługi FastTrack for Azure firma Microsoft pomaga zdefiniować wizję biznesową w celu pomyślnego zaplanowania i opracowania rozwiązań platformy Azure. Zespół ocenia potrzeby architektury i udostępnia wskazówki, zasady projektowania, narzędzia oraz zasoby ułatwiające tworzenie i wdrażanie rozwiązań platformy Azure oraz zarządzanie nimi. Zespół organizuje wykwalifikowanych partnerów do obsługi usług wdrażania na żądanie i okresowo sprawdza, czy wdrożenie przebiega zgodnie z planem, oraz pomaga w usunięciu czynników blokujących.
 
-Główne fazy typowej asysty w ramach usługi FastTrack for Azure to:
+Główne fazy typowej asysty w ramach programu FastTrack for Azure to:
 
 - **Odnajdywanie.** Identyfikuj kluczowe osoby biorące udział w projekcie, poznawaj cele lub wizje dotyczące rozwiązywanych problemów, a następnie oceniaj potrzeby dotyczące architektury.
 - **Włączenie rozwiązania.** Poznaj zasady projektowania podczas tworzenia aplikacji, przeglądaj architekturę aplikacji i rozwiązań, a także wskazówki i narzędzia dotyczące wdrażania od weryfikacji koncepcji (PoC) po środowisko produkcyjne.
@@ -78,15 +78,15 @@ Główne fazy typowej asysty w ramach usługi FastTrack for Azure to:
 
 ![Metoda z wykorzystaniem struktury wdrażania chmury usług firmy Microsoft](../../../_images/migrate/mcs-program-approach.jpg)
 
-**Ocena:** Usługi firmy Microsoft korzystają z [ujednoliconego, opartego na danych i narzędziach podejścia](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf), na które składają się warsztaty architektoniczne, informacje o platformie Azure dostarczane w czasie rzeczywistym, modele zagrożeń związanych z zabezpieczeniami i tożsamościami oraz różne narzędzia do uzyskiwania szczegółowych informacji na temat wyzwań, czynników ryzyka, zaleceń i problemów związanych z istniejącym środowiskiem platformy Azure, zapewniającego kluczowe wyniki. Może to być na przykład [harmonogram działania wysokiego poziomu](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
+**Oceń:** Usługi firmy Microsoft korzystają z [ujednoliconego, opartego na danych i narzędziowego podejścia](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) składającego się z warsztatów architektonicznych, informacji w czasie rzeczywistym platformy Azure, modeli zagrożeń związanych z zabezpieczeniami i tożsamościami oraz różnych narzędzi do zapewniania szczegółowych informacji na temat wyzwań, ryzyka, zaleceń i problemy z istniejącym środowiskiem platformy Azure, które mają kluczowe wyniki, takie jak [plan modernizacji wysokiego poziomu](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
 
-**Wdrażanie:** Korzystając z platformy [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) dla usług firmy Microsoft możesz ustanowić podstawowe projekty platformy Azure, wzorce i architekturę ładu przez zamapowanie wymagań na najbardziej odpowiednią architekturę referencyjną oraz zaplanować, zaprojektować i wdrożyć infrastrukturę, zarządzanie, zabezpieczenia i tożsamość wymagane dla obciążeń.
+**Zastosuj:** Korzystając z usług firmy Microsoft " [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf)", ustal podstawowe projekty platformy Azure, wzorce i architekturę ładu, mapując wymagania do najbardziej odpowiedniej architektury referencyjnej i planuj, Projektuj i wdrażaj infrastrukturę, Zarządzanie, zabezpieczenia i tożsamość wymagane dla obciążeń.
 
-**Migracja/Optymalizacja:** Rozwiązanie [Cloud Modernization Solution](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) dla usług firmy Microsoft oferuje kompleksowe podejście do przenoszenia aplikacji i infrastruktury na platformę Azure, a także do optymalizacji i modernizacji rozwiązań w chmurze w ramach usprawnienia migracji.
+**Migracja/Optymalizacja:** [Rozwiązanie do modernizacji w chmurze](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) usług firmy Microsoft oferuje kompleksowe podejście do przenoszenia aplikacji i infrastruktury na platformę Azure, a także do optymalizowania i modernizacji w chmurze w ramach usprawnienia migracji.
 
 **Innowacje:** [Rozwiązanie Cloud Center (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) usług firmy Microsoft oferuje DevOps szkoleń Engagement i używa zasad DevOps w połączeniu z wbudowaną w chmurze funkcją zarządzania usługami i kontrolami zabezpieczeń, aby pomóc w ulepszaniu innowacji biznesowych. Zwiększ elastyczność i Ogranicz czas do korzyści w ramach bezpiecznej, przewidywalnej i elastycznej funkcji dostarczania usług i zarządzania operacjami.
 
-## <a name="azure-support"></a>Pomoc techniczna platformy Azure
+## <a name="azure-support"></a>Pomoc techniczna systemu Azure
 
 Jeśli masz pytania lub potrzebujesz pomocy, [utwórz wniosek o pomoc techniczną](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest). Jeśli wniosek o pomoc techniczną wymaga szczegółowych wskazówek, zapoznaj się z [planami pomocy technicznej platformy Azure](https://azure.microsoft.com/support/plans), aby dostosować najlepszy plan do swoich potrzeb.
 

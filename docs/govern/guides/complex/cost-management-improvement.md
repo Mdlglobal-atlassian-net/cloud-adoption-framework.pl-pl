@@ -1,7 +1,7 @@
 ---
-title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Ulepszanie dyscypliny Cost Management'
+title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny Cost Management'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Ulepszanie dyscypliny Cost Management'
+description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny Cost Management'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3a6e2effbd47c3516e3663d3c0f1f75d9db924e8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220170"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547689"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Ulepszanie dyscypliny Cost Management
+# <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny Cost Management
 
 Ten artykuł postępuje zgodnie z opisami, dodając kontrolki kosztów do nadzoru nad produktem minimalnym (MVP).
 

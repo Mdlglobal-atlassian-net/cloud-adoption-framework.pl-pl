@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 33942811554556b1f67dc6515a8c679b09bfa983
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224007"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549099"
 ---
 # <a name="cloud-governance-capabilities"></a>Możliwości ładu chmury
 
@@ -34,7 +34,7 @@ W zależności od żądanych wyników działalności biznesowej umiejętności p
 - Ciągłość działania i odzyskiwanie po awarii
 - Właściciele aplikacji w ramach tej
 
-Możliwości ładu chmury identyfikują ryzyko związane z bieżącymi i przyszłymi wersjami. Ta funkcja jest widoczna w obszarze wysiłki, aby oszacować ryzyko, zrozumieć potencjalne oddziaływania i podejmować decyzje dotyczące odporności na ryzyko. W takim przypadku plany można szybko zaktualizować, aby odzwierciedlały zmiany w możliwościach wdrożenia [chmury](./cloud-adoption.md).
+Możliwości ładu chmury identyfikują ryzyko związane z bieżącymi i przyszłymi wersjami. Ta funkcja jest widoczna w obszarze wysiłki, aby oszacować ryzyko, zrozumieć potencjalne oddziaływania i podejmować decyzje dotyczące odporności na ryzyko. W takim przypadku plany można szybko zaktualizować, aby odzwierciedlały zmiany w [możliwościach wdrożenia chmury](./cloud-adoption.md).
 
 ## <a name="key-responsibilities"></a>Kluczowe obowiązki
 
@@ -73,7 +73,7 @@ Niektóre duże organizacje mają istniejące, dedykowane zespoły, które konce
 
 **Brak ładu:** Organizacja jest często przenoszona do chmury bez jasnego planu na potrzeby zarządzania. Przed długim zagadnieniami dotyczącymi zabezpieczeń, kosztów, skali i operacji zaczynają wyzwalać konwersacje na temat potrzeb modelu ładu i osób, które mogą personelować procesy skojarzone z tym modelem. Rozpoczęcie tych konwersacji jest zawsze dobrym pierwszym krokiem w celu pokonania antywzorców "No ładu". Sekcja dotycząca [definiowania zasad firmowych](../govern/corporate-policy.md) może ułatwić wykonywanie tych konwersacji.
 
-**Zablokowano zarządzanie:** Jeśli problemy związane z bezpieczeństwem, kosztem, skalą i operacjami nie są przekazywane, projekty i cele biznesowe mają być zablokowane. Brak odpowiedniego ładu nie powoduje wygenerowania obaw, niepewności i wątpliwości między uczestnikami projektu i inżynierów. Zatrzymaj tę funkcję w jej śladach, podejmując wczesną akcję. Dwie prowadnice ładu zdefiniowane w strukturze wdrażania w chmurze mogą pomóc w rozpoczęciu małego zestawu, a wstępnie ograniczyć zasady w celu zminimalizowania niepewności i wczesnego nadzoru w czasie. Wybierz jedną z [złożonych przewodników dla przedsiębiorstw](../govern/guides/complex/index.md) lub [standardowego przewodnika Enterprise](../govern/guides/standard/index.md).
+**Zablokowano zarządzanie:** Jeśli problemy związane z bezpieczeństwem, kosztem, skalą i operacjami nie są przekazywane, projekty i cele biznesowe mają być zablokowane. Brak odpowiedniego nadzoru powoduje wygenerowanie obaw, niepewności i wątpliwości między uczestnikami projektu i inżynierów. Zatrzymaj tę funkcję w jej śladach, podejmując wczesną akcję. Dwie prowadnice ładu zdefiniowane w strukturze wdrażania w chmurze mogą pomóc w rozpoczęciu małego zestawu, a wstępnie ograniczyć zasady w celu zminimalizowania niepewności i wczesnego nadzoru w czasie. Wybierz jedną z [złożonych przewodników dla przedsiębiorstw](../govern/guides/complex/index.md) lub [standardowego przewodnika Enterprise](../govern/guides/standard/index.md).
 
 **Dobrowolne zarządzanie:** Brave Souls w każdym przedsiębiorstwie. Gallant to kilka osób, które chcą przeskoczyć i pomóc zespołowi poznać ich błędy. Często jest to sposób uruchamiania ładu, szczególnie w mniejszych firmach. Te Brave soulsją czas na naprawianie niektórych problemów i wypychanie zespołów wdrażania chmurowego do spójnego, dobrze zarządzanego zestawu najlepszych rozwiązań.
 

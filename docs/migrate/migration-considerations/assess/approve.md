@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 360565a9d42dadc25c5ddcce5e8f1b3941d9ee42
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cdc6abe2be94bb0d91047d4d64a0774bac6a8e0e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833533"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549223"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>Zatwierdzanie zmian architektury przed migracją
 
@@ -21,9 +21,9 @@ Podczas procesu oceny migracji każde obciążenie jest oceniane, projektowane i
 
 ## <a name="business-impact-and-approval"></a>Znaczenie zatwierdzania dla działalności firmy
 
-Podczas migracji niektóre elementy mogą ulec zmianie w sposób mający wpływ na działalność firmy. Zmiany są czasami nieuniknione, jednak warto uniknąć zaskoczenia z powodu nieujawnionych lub nieudokumentowanych zmian. Aby zachować wsparcie uczestników projektu przez cały proces migracji, należy unikać nieprzewidzianych sytuacji. Zaskoczenie właścicieli aplikacji lub uczestników projektu w firmie może spowolnić lub wstrzymać proces wdrożenia chmury.
+Podczas migracji niektóre elementy mogą ulec zmianie w sposób mający wpływ na działalność firmy. Chociaż czasami nie można uniknąć zmiany, nieujawnione jest skutkiem niejawnych lub nieudokumentowanych zmian. Aby zapewnić wsparcie uczestnikom projektu w trakcie pracy nad migracją, ważne jest, aby uniknąć zaskakujących prób. Zaskoczenie właścicieli aplikacji lub uczestników projektu w firmie może spowolnić lub wstrzymać proces wdrożenia chmury.
 
-Przed migracją należy przygotować właściciela firmy, do której należy obciążenie, na wszystkie zmiany mogące mieć wpływ na procesy biznesowe, takie jak zmiany dotyczące następujących elementów:
+Przed migracją należy przygotować właściciela służbowego dla wszystkich zmian, które mogą wpływać na procesy biznesowe, takie jak zmiany w:
 
 - umowy dotyczące poziomu usług;
 - wzorce dostępu lub wymagania dotyczące zabezpieczeń, które mają wpływ na użytkownika końcowego;

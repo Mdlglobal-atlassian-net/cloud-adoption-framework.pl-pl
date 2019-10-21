@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025413"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548314"
 ---
 # <a name="decisions-that-affect-migrations"></a>Decyzje, które mają wpływ na migracje
 
@@ -43,7 +43,7 @@ Jeśli udział w rynku i jakość obsługi klienta są głównymi celami, ta sek
 
 Jeśli dane, eksperymentowanie, badania i rozwój lub nowe produkty są priorytetem w ciągu następnych sześciu miesięcy, to nie jest to sekcja opisująca najodpowiedniejszą strukturę wdrażania chmury, którą należy się kierować podczas podejmowania wysiłków przez zespoły. W przypadku wszelkich wysiłków związanych z innowacjami dotyczącymi danych warto skorzystać ze wskazówek dotyczących migracji istniejących danych źródłowych. Jednak wysiłki powinny być skupione w szerszym zakresie na ruchu przychodzącym i integracji dodatkowych źródeł danych. Rozszerzenie tych wskazówek o prognozy i nowe środowiska jest znacznie ważniejsze niż migracja zasobów IaaS.
 
-## <a name="balancing-the-portfolio"></a>Równoważenie portfolio
+## <a name="balancing-the-portfolio"></a>Równoważenie portfela
 
 W tej sekcji opisującej strukturę wdrażania chmury przedstawiono teoretyczne rozwiązania, aby pomóc czytelnikom zrozumieć różne podejścia do zmian w ramach zrównoważonego portfolio. Artykuł dotyczący [równoważenia portfolio](../../expanded-scope/balance-the-portfolio.md) jest jednym z przykładów rozszerzonego zakresu w celu ułatwienia realizacji tej teorii.
 
@@ -55,7 +55,7 @@ Przed podjęciem jakichkolwiek decyzji, które mogą mieć długoterminowy wpły
 
 ### <a name="effort-type"></a>Typ nakładu pracy
 
-W przypadku migracji o dużej skali (> 250 maszyn wirtualnych) zasoby są migrowane przy użyciu różnych opcji przenoszenia, które omówiono w pięciu zasadach racjonalizacji: *ponowne hostowanie*, *refaktoryzacja*, *zmiana architektury*, *przebudowa* i *zastąpienie*.
+W przypadku każdej migracji znaczącej skali (> 250 maszyn wirtualnych) zasoby są migrowane przy użyciu różnych opcji przejścia, które zostały omówione w pięciu rozwiązaniach: ponowne *hostowanie*, *Refaktoryzacja* *,* *rekonstrukcja*, ponowna kompilacja i *zastąpienie*.
 
 Niektóre obciążenia są modernizowane w ramach procesu *przebudowy* lub *zmiany architektury*, co umożliwia utworzenie nowocześniejszych aplikacji z nowymi funkcjami i możliwościami technicznymi. Inne zasoby podlegają procesowi *refaktoryzacji*, na przykład są przenoszone do kontenerów lub innych nowocześniejszych rozwiązań hostingu i operacji, które nie muszą mieć wpływu na bazę kodu rozwiązania. Często maszyny wirtualne i inne lepiej ugruntowane zasoby podlegają procesowi *ponownego hostowania*, który polega na przeniesieniu tych zasobów z centrum danych do chmury. Niektóre obciążenia mogą być potencjalnie migrowane do chmury, ale zamiast tego należy je *zastąpić* przy użyciu usług w chmurze opartych na usługach (SaaS), które spełniają te same potrzeby biznesowe, na przykład korzystając z pakietu Office 365 jako alternatywy dla migrowania wystąpień programu Exchange Server.
 
@@ -88,9 +88,9 @@ Przed kontynuowaniem należy udokumentować następujące założenia i udostęp
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po zrozumieniu tego procesu przez zespół należy zapoznać się z wstępnymi wymaganiami technicznymi. [Lista kontrolna planowania migracji](./planning-checklist.md) pomaga zapewnić gotowość podstawowych elementów technicznych do migracji.
+Po zrozumieniu tego procesu wśród zespołu czasu na zapoznanie się z wymaganiami technicznymi. [Lista kontrolna planowania migracji](./planning-checklist.md) pomaga zapewnić gotowość podstawowych elementów technicznych do migracji.
 
-Po zrozumieniu tego procesu przez zespół należy zapoznać się z wstępnymi wymaganiami technicznymi. [Lista kontrolna planowania migracji] pomaga zapewnić gotowość podstawowej infrastruktury technicznej do migracji.
+Po zrozumieniu tego procesu wśród zespołu jego czasu na zapoznanie się z wymaganiami technicznymi [Lista kontrolna planowania migracji] zagwarantuje, że podstawa techniczna będzie gotowa do migracji.
 
 > [!div class="nextstepaction"]
 > [Zapoznaj się z listą kontrolną planowania migracji](./planning-checklist.md)

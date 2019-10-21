@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 93c0bb52159b4573ed796ca3a1aa7cb0ac2d8149
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224156"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547345"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Wdrażanie infrastruktury migracji
 
@@ -29,12 +29,12 @@ Aby firma Contoso mogła przeprowadzić migrację na platformę Azure, kluczowe 
 
 > [!div class="checklist"]
 >
-> - **Krok 1. Subskrypcje platformy Azure.** Jak firma Contoso dokona zakupu platformy Azure i w jaki sposób będzie korzystać z platformy Azure oraz jej usług?
-> - **Krok 2. Tożsamość hybrydowa.** Jak będzie zarządzać dostępem do zasobów lokalnych i zasobów platformy Azure oraz kontrolować do nich dostęp po migracji? Jak firma Contoso rozszerzy lub przeniesie zarządzanie tożsamościami do chmury?
-> - **Krok 3. Odzyskiwanie po awarii i odporność.** W jaki sposób firma Contoso zapewnia odporność aplikacji i infrastruktury na przestoje i awarie?
-> - **Krok 4. Sieć.** Jak firma Contoso powinna zaprojektować infrastrukturę sieciową i ustanowić połączenie między lokalnym centrum danych a platformą Azure?
-> - **Krok 5. Bezpieczeństwo.** Jak firma Contoso będzie zabezpieczać wdrożenie hybrydowe/wdrożenie platformy Azure?
-> - **Krok 6: Ład.** W jaki sposób firma Contoso będzie zapewniać zgodność wdrożenia z wymaganiami dotyczącymi zabezpieczeń i ładu?
+> - **Krok 1: subskrypcje platformy Azure.** Jak firma Contoso dokona zakupu platformy Azure i w jaki sposób będzie korzystać z platformy Azure oraz jej usług?
+> - **Krok 2: tożsamość hybrydowa.** Jak będzie zarządzać dostępem do zasobów lokalnych i zasobów platformy Azure oraz kontrolować do nich dostęp po migracji? Jak firma Contoso rozszerzy lub przeniesie zarządzanie tożsamościami do chmury?
+> - **Krok 3. odzyskiwanie awaryjne i odporność.** W jaki sposób firma Contoso zapewnia odporność aplikacji i infrastruktury na przestoje i awarie?
+> - **Krok 4. sieć.** Jak firma Contoso powinna zaprojektować infrastrukturę sieciową i ustanowić połączenie między lokalnym centrum danych a platformą Azure?
+> - **Krok 5. zabezpieczenia.** Jak firma Contoso będzie zabezpieczać wdrożenie hybrydowe/wdrożenie platformy Azure?
+> - **Krok 6. zarządzanie.** W jaki sposób firma Contoso będzie zapewniać zgodność wdrożenia z wymaganiami dotyczącymi zabezpieczeń i ładu?
 
 ## <a name="before-you-start"></a>Przed rozpoczęciem
 
@@ -59,7 +59,7 @@ Oto diagram przedstawiający bieżącą infrastrukturę lokalną firmy Contoso.
 - Firma Contoso korzysta z usługi Active Directory na potrzeby zarządzania tożsamościami oraz serwerów DNS w sieci wewnętrznej.
 - Kontrolery domeny w centrum danych działają na maszynach wirtualnych VMware. Kontrolery domeny w oddziałach lokalnych działają na serwerach fizycznych.
 
-## <a name="step-1-buy-and-subscribe-to-azure"></a>Krok 1: Kupowanie i subskrybowanie platformy Azure
+## <a name="step-1-buy-and-subscribe-to-azure"></a>Krok 1. Kupowanie i subskrybowanie na platformie Azure
 
 Firma Contoso musi ustalić, jak kupić platformę Azure, utworzyć architekturę subskrypcji oraz jak licencjonować usługi i zasoby.
 
@@ -90,25 +90,25 @@ Po zapłaceniu za platformę Azure firma Contoso musi ustalić, jak zarządzać 
 
 Po skonfigurowaniu subskrypcji firma Contoso może przyjrzeć się licencjonowaniu firmy Microsoft. Strategia licencjonowania będzie zależeć od zasobów, które firma Contoso chce migrować na platformę Azure, oraz sposobu wybierania i wdrażania maszyn wirtualnych oraz usług platformy Azure.
 
-#### <a name="azure-hybrid-benefit"></a>Korzyści użycia hybrydowego platformy Azure
+#### <a name="azure-hybrid-benefit"></a>Korzyść użycia hybrydowego platformy Azure
 
 W przypadku wdrażania maszyn wirtualnych na platformie Azure obrazy standardowe obejmują licencję, która spowoduje obciążanie firmy Contoso opłatami za każdą minutę korzystania z oprogramowania. Firma Contoso jest jednak długoterminowym klientem firmy Microsoft i utrzymywała umowy EA oraz licencje Open z pakietem Software Assurance (SA).
 
 Korzyść użycia hybrydowego platformy Azure oferuje ekonomiczną metodę migracji dla firmy Contoso, umożliwiając jej zaoszczędzenie na obciążeniach maszyn wirtualnych platformy Azure i programu SQL Server przez przekonwertowanie lub ponowne użycie licencji systemu Windows Server w wersji Standard i Datacenter objętych pakietem Software Assurance. Dzięki temu firma Contoso będzie płacić niższą stawkę za zasoby obliczeniowe w przypadku maszyn wirtualnych i programu SQL Server. [Dowiedz się więcej](https://azure.microsoft.com/pricing/hybrid-benefit).
 
-#### <a name="license-mobility"></a>Przenośność licencji
+#### <a name="license-mobility"></a>Przenoszenie licencji
 
 Przenośność licencji w ramach pakietu Software Assurance zapewnia klientom licencjonowania zbiorowego firmy Microsoft, takim jak firma Contoso, elastyczność wdrażania kwalifikujących się aplikacji serwerowych przy użyciu aktywnego pakietu Software Assurance na platformie Azure. Eliminuje to konieczność kupowania nowych licencji. Brak powiązanych opłat za przenośność umożliwia łatwe wdrożenie istniejących licencji na platformie Azure. [Dowiedz się więcej](https://azure.microsoft.com/pricing/license-mobility).
 
 #### <a name="reserve-instances-for-predictable-workloads"></a>Rezerwacja wystąpień dla przewidywalnych obciążeń
 
-Przewidywalne obciążenia to te, które zawsze muszą być dostępne z działającymi maszynami wirtualnymi. Przykładem są aplikacje biznesowe, takie jak system SAP ERP. Z kolei nieprzewidywalne obciążenia są zmiennymi, takimi jak maszyny wirtualne, które są włączone podczas wysokiego zapotrzebowania i wyłączone, gdy zapotrzebowanie jest niskie.
+Przewidywalne obciążenia to te, które zawsze muszą być dostępne z działającymi maszynami wirtualnymi. Na przykład aplikacje biznesowe, takie jak system SAP ERP. Z kolei nieprzewidywalne obciążenia są zmiennymi, takimi jak maszyny wirtualne, które są włączone podczas wysokiego zapotrzebowania i wyłączone, gdy zapotrzebowanie jest niskie.
 
 ![Wystąpienie zarezerwowane](./media/contoso-migration-infrastructure/reserved-instance.png)
 
 W zamian za używanie wystąpień zarezerwowanych dla konkretnych wystąpień maszyn wirtualnych przez długi czas, firma Contoso może uzyskać zarówno rabat, jak i priorytetyzowane możliwości obliczeniowe. Korzystając z [wystąpień zarezerwowanych platformy Azure](https://azure.microsoft.com/pricing/reserved-vm-instances) w połączeniu z korzyścią użycia hybrydowego platformy Azure firma Contoso może zaoszczędzić nawet 82% w stosunku do normalnych cen w modelu płatności zgodnie z rzeczywistym użyciem (kwiecień 2018 r.).
 
-## <a name="step-2-manage-hybrid-identity"></a>Krok 2: Zarządzanie tożsamością hybrydową
+## <a name="step-2-manage-hybrid-identity"></a>Krok 2. Zarządzanie tożsamością hybrydową
 
 Udzielanie i kontrolowanie dostępu użytkowników do zasobów platformy Azure za pomocą zarządzania dostępem i tożsamościami (IAM) to ważny krok podczas składania infrastruktury platformy Azure.
 
@@ -220,7 +220,7 @@ Aby ułatwić integrację, firma Contoso używa [narzędzia Azure AD Connect](ht
 
 5. Na ekranie **Wszystko gotowe do skonfigurowania** wybierają pozycję **Uruchom proces synchronizacji po ukończeniu konfiguracji**, aby natychmiast uruchomić synchronizację. Następnie uruchamiają instalację.
 
-Należy pamiętać o następujących kwestiach:
+Należy pamiętać, że:
 
 - Firma Contoso ma połączenie bezpośrednie z platformą Azure. Jeśli lokalna usługa Active Directory znajduje się za serwerem proxy, przeczytaj ten [artykuł](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity).
 
@@ -245,7 +245,7 @@ Administratorzy firmy Contoso przypisują teraz role do grup usługi Active Dire
 
     ![Członkowie lokalnej usługi Active Directory na platformie Azure](./media/contoso-migration-infrastructure/on-prem-ad-groups.png)
 
-## <a name="step-3-design-for-resiliency"></a>Krok 3: Projektowanie pod kątem odporności
+## <a name="step-3-design-for-resiliency"></a>Krok 3. Projektowanie pod kątem odporności
 
 ### <a name="set-up-regions"></a>Konfigurowanie regionów
 
@@ -315,7 +315,7 @@ Usługa Azure Site Recovery pomaga zapewnić ciągłość działania dzięki utr
 
 Firma Contoso zaimplementuje usługę Azure Site Recovery dla wszystkich produkcyjnych maszyn wirtualnych używanych w obciążeniach o krytycznym znaczeniu, aby zminimalizować przerwy w działaniu podczas awarii w regionie podstawowym. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
 
-## <a name="step-4-design-a-network-infrastructure"></a>Krok 4: Projektowanie infrastruktury sieci
+## <a name="step-4-design-a-network-infrastructure"></a>Krok 4. Projektowanie infrastruktury sieciowej
 
 Po wdrożeniu projektu regionalnego firma Contoso jest gotowa do rozważenia strategii sieci. Należy wziąć pod uwagę sposób, w jaki lokalne centrum danych i platforma Azure łączą się i komunikują ze sobą, oraz sposób projektowania infrastruktury sieci na platformie Azure. Firma Contoso musi:
 
@@ -410,8 +410,8 @@ Po wdrożeniu topologii sieci i routingu firma Contoso jest gotowa do skonfiguro
 
 Wschodnie stany USA 2 to region podstawowy, którego firma Contoso będzie używać do wdrażania zasobów i usług. Oto, jak firma Contoso zaprojektuje architekturę sieci w tym regionie:
 
-- **Piasta:** Sieć wirtualna piasty w regionie Wschodnie stany USA 2 jest centralnym punktem podstawowej łączności z lokalnym centrum danych.
-- **Sieci wirtualne:** Sieci wirtualne będące szprychami w regionie Wschodnie stany USA 2 mogą w razie potrzeby służyć do izolowania obciążeń. Oprócz sieci wirtualnej piasty w regionie Wschodnie stany USA 2 firma Contoso będzie miała dwie sieci wirtualne szprych:
+- **Centrum:** Sieć wirtualna centrum w regionie Wschodnie stany USA 2 to centralny punkt łączności podstawowej z lokalnym centrum danych.
+- **Sieci wirtualnych:** Sieci wirtualnych szprych w regionie Wschodnie stany USA 2 może służyć do izolowania obciążeń, jeśli jest to wymagane. Oprócz sieci wirtualnej piasty w regionie Wschodnie stany USA 2 firma Contoso będzie miała dwie sieci wirtualne szprych:
   - **VNET-DEV-EUS2**. Ta sieć wirtualna zapewni zespołowi programistycznemu i testującemu w pełni funkcjonalną sieć dla projektów deweloperskich. Będzie działać jako produkcyjny obszar pilotażowy i będzie polegać na infrastrukturze produkcyjnej.
     - **VNET-PROD-EUS2**. W tej sieci będą znajdować się składniki produkcyjne IaaS platformy Azure.
   - Każda sieć wirtualna będzie miała własną unikatową przestrzeń adresową, bez nakładania się. Firma Contoso zamierza skonfigurować routing niewymagający używania translatora adresów sieciowych.
@@ -467,12 +467,12 @@ Składniki IaaS platformy Azure znajdują się w sieci produkcyjnej. Każda wars
 
 Środkowe stany USA to region pomocniczy firmy Contoso. Oto, jak firma Contoso zaprojektuje architekturę sieci w tym regionie:
 
-- **Piasta:** Sieć wirtualna piasty w regionie Wschodnie stany USA 2 jest centralnym punktem łączności z lokalnym centrum danych, a sieci wirtualne szprych w regionie Wschodnie stany USA 2 mogą być w razie potrzeby używane do izolowania obciążeń i zarządzane oddzielnie od innych szprych.
-- **Sieci wirtualne:** Firma Contoso będzie miała dwie sieci wirtualne w regionie Środkowe stany USA:
+- **Centrum:** Sieć wirtualna centrum w regionie Wschodnie stany USA 2 to centralny punkt łączności z lokalnym centrum danych, a szprycha sieci wirtualnych w regionie Wschodnie stany USA 2 może służyć do izolowania obciążeń, jeśli jest to wymagane, zarządzane oddzielnie od innych szprych.
+- **Sieci wirtualnych:** Firma Contoso będzie miała dwie sieci wirtualnych w środkowe stany USA:
   - VNET-PROD-CUS. Ta sieć wirtualna jest siecią produkcyjną, podobną do sieci VNET-PROD_EUS2.
   - VNET-ASR-CUS. Ta sieć wirtualna będzie działać jako lokalizacja, w której maszyny wirtualne są tworzone po przełączeniu w tryb failover ze środowiska lokalnego, lub jako lokalizacja maszyn wirtualnych platformy Azure, które są przełączane w tryb failover z regionu podstawowego do pomocniczego. Ta sieć jest podobna do sieci produkcyjnych, ale nie ma w niej żadnych kontrolerów domeny.
   - Każda sieć wirtualna w regionie będzie mieć własną przestrzeń adresową, bez nakładania się. Firma Contoso skonfiguruje routing bez translatora adresów sieciowych.
-- **Podsieci:** Podsieci zostaną zaprojektowane w podobny sposób jak te w regionie Wschodnie stany USA 2. Wyjątkiem jest to, że firma Contoso nie potrzebuje podsieci dla kontrolerów domeny.
+- **Podsieci:** Podsieci zostaną zaprojektowane w podobny sposób do tych w regionie Wschodnie stany USA 2. Wyjątkiem jest to, że firma Contoso nie potrzebuje podsieci dla kontrolerów domeny.
 
 Poniższa tabela zawiera podsumowanie sieci wirtualnych w regionie Środkowe stany USA.
 
@@ -521,7 +521,7 @@ Sieć VNET-ASR-CUS jest tą samą podstawową podsiecią co produkcyjna sieć wi
 
 #### <a name="configure-peered-connections"></a>Konfigurowanie połączeń komunikacji równorzędnej
 
-Piasta w każdym regionie będzie połączona za pomocą komunikacji równorzędnej z piastą w drugim regionie i ze wszystkimi sieciami wirtualnymi w obrębie regionu piasty. Dzięki temu piasty mogą komunikować się i wyświetlać wszystkie sieci wirtualne w regionie. Należy pamiętać o następujących kwestiach:
+Piasta w każdym regionie będzie połączona za pomocą komunikacji równorzędnej z piastą w drugim regionie i ze wszystkimi sieciami wirtualnymi w obrębie regionu piasty. Dzięki temu piasty mogą komunikować się i wyświetlać wszystkie sieci wirtualne w regionie. Należy pamiętać, że:
 
 - Komunikacja równorzędna tworzy połączenie dwustronne. Jedno z inicjującego elementu równorzędnego w pierwszej sieci wirtualnej i drugie w drugiej sieci wirtualnej.
 - We wdrożeniu hybrydowym ruch między elementami równorzędnymi musi być widoczny z połączenia sieci VPN między lokalnym centrum danych i platformą Azure. Aby to umożliwić, istnieją pewne określone ustawienia, które należy ustawić dla połączeń komunikacji równorzędnej.
@@ -567,7 +567,7 @@ Administratorzy firmy Contoso zdecydowali, że usługa Azure DNS nie jest dobrym
 
 Oprócz lokalnych kontrolerów domeny firma Contoso chce zaimplementować jeszcze cztery dodatkowe na potrzeby obsługi sieci platformy Azure, po dwa dla każdego regionu. Oto, co firma Contoso wdroży na platformie Azure.
 
-**Region** | **DC** | **Sieć wirtualna** | **Podsieć** | **Adres IP**
+**Region** | **Kontroler domeny** | **Sieć wirtualna** | **Podsieć** | **Adres IP**
 --- | --- | --- | --- | ---
 EUS2 | CONTOSODC3 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.4
 EUS2 | CONTOSODC4 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.5
@@ -590,7 +590,7 @@ Po zaktualizowaniu ustawień sieci administratorzy firmy Contoso są gotowi do u
 
 3. Po wdrożeniu maszyny wirtualnej otwierają interfejs sieciowy maszyny wirtualnej. Ustawiają prywatny adres IP jako statyczny i określają prawidłowy adres.
 
-    ![VM NIC](./media/contoso-migration-infrastructure/vm-nic.png)
+    ![Karta sieciowa maszyny wirtualnej](./media/contoso-migration-infrastructure/vm-nic.png)
 
 4. Teraz dołączają nowy dysk danych do maszyny wirtualnej. Ten dysk zawiera bazę danych usługi Active Directory i udział sysvol.
     - Od rozmiaru dysku będzie zależeć liczba operacji we/wy, które obsługuje.
@@ -636,15 +636,15 @@ Usługa Active Directory jest usługą o znaczeniu krytycznym w sieci i musi by�
 
     ![Centrum administracyjne usługi Active Directory](./media/contoso-migration-infrastructure/ad-center.png)
 
-## <a name="step-5-plan-for-governance"></a>Krok 5. Planowanie pod kątem ładu
+## <a name="step-5-plan-for-governance"></a>Krok 5. Planowanie zarządzania
 
 Platforma Azure udostępnia szereg mechanizmów kontroli ładu w usługach i na platformie Azure. [Przeczytaj więcej](https://docs.microsoft.com/azure/security/governance-in-azure), aby uzyskać podstawową wiedzę na temat opcji.
 
 Podczas konfigurowania tożsamości i kontroli dostępu firma Contoso zaczęła już implementować pewne aspekty ładu i bezpieczeństwa. Ogólnie istnieją trzy obszary, które należy wziąć pod uwagę:
 
-- **Zasady:** Usługa Azure Policy stosuje i wymusza reguły i efekty dotyczące zasobów, dzięki czemu zasoby pozostają zgodne z wymaganiami firmy i umowami SLA.
-- **Blokady:** Platforma Azure umożliwia blokowanie subskrypcji, grup zasobów i innych zasobów, tak aby mogły być modyfikowane tylko przez osoby z odpowiednimi uprawnieniami.
-- **Tagi:** Zasoby można kontrolować, poddawać inspekcji i zarządzać nimi za pomocą tagów. Tagi dołączają do zasobów metadane, dostarczając informacje o zasobach lub właścicielach.
+- **Zasady:** Azure Policy stosuje i wymusza reguły oraz efekty dotyczące zasobów, dzięki czemu zasoby pozostają zgodne z wymaganiami firmy i umowy SLA.
+- **Blokady:** System Azure umożliwia blokowanie subskrypcji, grup zasobów i innych zasobów, dzięki czemu mogą być modyfikowane tylko przez te osoby, które mają odpowiednie uprawnienia.
+- **Tagi:** Zasoby można kontrolować, przeprowadzać inspekcję i zarządzać nimi za pomocą tagów. Tagi dołączają do zasobów metadane, dostarczając informacje o zasobach lub właścicielach.
 
 ### <a name="set-up-policies"></a>Konfigurowanie zasad
 
@@ -708,7 +708,7 @@ Firma Contoso musi zwizualizować swoje zasoby platformy Azure w sposób, który
 
 **Nazwa tagu** | **Wartość**
 --- | ---
-CostCenter | 12345: Musi być prawidłowym centrum kosztów z systemu SAP.
+CostCenter | 12345: musi być prawidłowym centrum kosztów z platformy SAP.
 BusinessUnit | Nazwa jednostki biznesowej (z oprogramowania SAP). Dopasowuje CostCenter.
 ApplicationTeam | Alias adresu e-mail zespołu, który jest właścicielem pomocy technicznej dla aplikacji.
 CatalogName | Nazwa aplikacji lub ShareServices dla katalogu usług obsługiwanego przez zasób.
@@ -722,15 +722,15 @@ Na przykład:
 
 Po utworzeniu tagu firma Contoso wróci i utworzy nowe definicje i przypisania zasad, aby wymusić używanie wymaganych tagów w całej organizacji.
 
-## <a name="step-6-consider-security"></a>Krok 6: Uwzględnianie zabezpieczeń
+## <a name="step-6-consider-security"></a>Krok 6. Rozważ bezpieczeństwo
 
 W chmurze bezpieczeństwo ma kluczowe znaczenie, a platforma Azure oferuje szeroką gamę narzędzi i możliwości zabezpieczeń. Ułatwiają one tworzenie bezpiecznych rozwiązań na bezpiecznej platformie Azure. Przeczytaj artykuł [Chmura, której można zaufać](https://azure.microsoft.com/overview/trusted-cloud), aby dowiedzieć się więcej o zabezpieczeniach platformy Azure.
 
 Istnieje kilka aspektów, którymi firma Contoso musi się zająć:
 
-- **Azure Security Center:** Usługa Azure Security Center zapewnia ujednolicone zarządzanie zabezpieczeniami i zaawansowaną ochronę przed zagrożeniami na potrzeby różnych obciążeń chmury hybrydowej. Usługa Security Center umożliwia stosowanie zasad zabezpieczeń do różnych obciążeń, ograniczanie podatności na zagrożenia i wykrywanie ataków oraz reagowanie na nie. [Dowiedz się więcej](https://docs.microsoft.com/azure/security-center/security-center-intro).
-- **Sieciowe grupy zabezpieczeń (NSG):** Sieciowa grupa zabezpieczeń (zapora) jest filtrem zawierającym listę reguł zabezpieczeń, które po zastosowaniu blokują lub zezwalają na ruch sieciowy do zasobów połączonych z sieciami wirtualnymi platformy Azure. [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-network/security-overview).
-- **Szyfrowanie danych:** Usługa Azure Disk Encryption jest możliwością ułatwiającą szyfrowanie dysków maszyn wirtualnych IaaS z systemami Windows i Linux. [Dowiedz się więcej](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest).
+- **Azure Security Center:** Azure Security Center zapewnia ujednolicone Zarządzanie zabezpieczeniami i zaawansowaną ochronę przed zagrożeniami w ramach obciążeń chmury hybrydowej. Usługa Security Center umożliwia stosowanie zasad zabezpieczeń do różnych obciążeń, ograniczanie podatności na zagrożenia i wykrywanie ataków oraz reagowanie na nie. [Dowiedz się więcej](https://docs.microsoft.com/azure/security-center/security-center-intro).
+- **Sieciowe grupy zabezpieczeń (sieciowych grup zabezpieczeń):** SIECIOWEJ grupy zabezpieczeń to filtr (Zapora), który zawiera listę reguł zabezpieczeń, które w przypadku zastosowania zezwalają na ruch sieciowy lub odrzucają je do zasobów podłączonych do usługi Azure sieci wirtualnych. [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-network/security-overview).
+- **Szyfrowanie danych:** Azure Disk Encryption to funkcja, która ułatwia szyfrowanie dysków maszyn wirtualnych z systemem Windows i Linux IaaS. [Dowiedz się więcej](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest).
 
 ### <a name="work-with-the-azure-security-center"></a>Praca z usługą Azure Security Center
 
@@ -750,7 +750,7 @@ Dzięki scentralizowanemu zarządzaniu zasadami firma Contoso będzie zapewniać
 
 Firma Contoso będzie korzystać z ciągłej oceny zabezpieczeń, która monitoruje zabezpieczenia maszyn, sieci, magazynu, danych i aplikacji pod kątem potencjalnych problemów z zabezpieczeniami.
 
-- Usługa Security Center będzie analizować stan zabezpieczeń zasobów obliczeniowych, infrastruktury i danych firmy Contoso oraz usług i aplikacji platformy Azure.
+- Security Center przeanalizuje stan zabezpieczeń zasobów obliczeniowych, infrastruktury i danych firmy Contoso oraz usług i aplikacji platformy Azure.
 - Ciągła ocena ułatwia zespołowi operacyjnemu firmy Contoso wykrywanie potencjalnych problemów z zabezpieczeniami, takich jak systemy bez aktualizacji zabezpieczeń lub uwidocznione porty sieciowe.
 - W szczególności firma Contoso chce upewnić się, że wszystkie maszyny wirtualne są chronione. Usługa Security Center ułatwia to zadanie, sprawdzając kondycję maszyn wirtualnych i udostępniając praktyczne rekomendacje uszeregowane według priorytetu, które umożliwiają podjęcie działań w celu skorygowania luk w zabezpieczeniach, zanim zostaną wykorzystane.
 
@@ -774,16 +774,16 @@ Firma Contoso zaimplementuje kombinację sieciowych grup zabezpieczeń i grup za
 
 Firma Contoso utworzyła model pokazujący, jak to będzie wyglądać w przypadku jej aplikacji.
 
-![Bezpieczeństwo](./media/contoso-migration-infrastructure/asg.png)
+![Zabezpieczenia](./media/contoso-migration-infrastructure/asg.png)
 
 Sieciowe grupy zabezpieczeń skojarzone z grupami zabezpieczeń aplikacji zostaną skonfigurowane z najniższymi uprawnieniami w celu zapewnienia, że tylko dozwolone pakiety mogą przepływać z jednej części sieci do jej lokalizacji docelowej.
 
 **Akcja** | **Nazwa** | **Element źródłowy** | **Obiekt docelowy** | **Port**
 --- | --- | --- | --- | ---
-Allow | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
-Allow | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
-Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433
-Zablokuj | DenyAllInbound | Any | Any | Any
+Zezwól | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+Zezwól | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
+Zezwól | AllowAppToDB | APP1-APP | APP1-DB | 1433
+Odmów | DenyAllInbound | Dowolne | Dowolne | Dowolne
 
 ### <a name="encrypt-data"></a>Szyfrowanie danych
 

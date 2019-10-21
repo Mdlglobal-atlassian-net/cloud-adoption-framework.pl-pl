@@ -8,18 +8,18 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4e095dd90711f201935e88ea5f2712e881a8574b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c5bafd4504a0df9570bf65846a5a077e54e158ca
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828736"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549030"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>Osie czasu w planie wdrażania chmury
 
 W poprzednim artykule z tej serii, obciążenia i zadania zostały przypisane do [wydań i iteracji](./iteration-paths.md). Te przydziały ponoszą oszacowania osi czasu w tym artykule.
 
-Struktury podziału pracy (SPP) są często używane w sekwencyjnych narzędziach do zarządzania projektami. Przedstawiają one, jak zadania zależne będą wykonywane w danym okresie czasu. Struktury te działają dobrze, gdy zadania są sekwencyjnie. Współzależności między zadaniami znajdującymi się w temacie Wdrażanie w chmurze sprawiają, że takie struktury są trudne do zarządzania. Aby wypełnić tę lukę, możesz oszacować osie czasu na podstawie przypisań ścieżek iteracji, ukrywając złożoność.
+Struktury podziału pracy (SPP) są często używane w sekwencyjnych narzędziach do zarządzania projektami. Przedstawiają one, jak zadania zależne będą wykonywane z upływem czasu. Struktury te działają dobrze, gdy zadania są sekwencyjnie. Współzależności między zadaniami znajdującymi się w temacie Wdrażanie w chmurze sprawiają, że takie struktury są trudne do zarządzania. Aby wypełnić tę lukę, możesz oszacować osie czasu na podstawie przypisań ścieżek iteracji, ukrywając złożoność.
 
 ## <a name="estimate-timelines"></a>Szacowanie osi czasu
 

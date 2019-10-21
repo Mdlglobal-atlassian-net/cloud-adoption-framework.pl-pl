@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 35750064b0a88c65796f662d20dc51e9a38e77ac
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fcbcda63ff080de234075f0a8784731e591ca0f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022361"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549016"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Topologia sieci piasty i szprych
 
@@ -75,7 +75,7 @@ Istnieje możliwość zaimplementowania złożonych, wielowarstwowych obciąże�
 
 Architekt może chcieć wdrożyć obciążenie wielowarstwowe w wielu sieciach wirtualnych. Za pomocą komunikacji równorzędnej sieci wirtualnych szprychy mogą łączyć się z innymi szprychami w tej samej piaście lub w różnych piastach.
 
-Typowym przykładem tego scenariusza jest przypadek, w którym serwery przetwarzania aplikacji znajdują się w jednej szprysze lub sieci wirtualnej. Baza danych jest wdrażana w innej szprysze lub sieci wirtualnej. W takim przypadku można łatwo połączyć szprychy za pomocą komunikacji równorzędnej sieci wirtualnych, aby uniknąć przesyłania danych przez piastę. Rozwiązaniem jest przeprowadzenie starannego przeglądu architektury i zabezpieczeń, aby upewnić się, że pominięcie piasty nie pomija ważnych punktów zabezpieczeń lub inspekcji, które mogą istnieć tylko w piaście.
+Typowym przykładem tego scenariusza jest przypadek, w którym serwery przetwarzania aplikacji znajdują się w jednej szprysze lub sieci wirtualnej. Baza danych jest wdrażana w innej szprysze lub sieci wirtualnej. W takim przypadku można łatwo połączyć szprychy za pomocą komunikacji równorzędnej sieci wirtualnych, aby uniknąć przesyłania danych przez piastę. Rozwiązaniem jest przeprowadzenie starannej architektury i przeglądu zabezpieczeń, aby upewnić się, że pominięcie centrum nie pomija ważnych punktów zabezpieczeń lub inspekcji, które mogą istnieć tylko w centrum.
 
 ![Szprychy połączone ze sobą i z piastą][3]
 
@@ -89,8 +89,8 @@ Szprychy mogą być również połączone ze szprychą, która pełni rolę pias
 [3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Szprycha do szprychy"
 [4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "Diagram na poziomie bloku piasty i szprych"
 [5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "Użytkownicy, grupy, subskrypcje i projekty"
-[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Ogólny diagram infrastruktury"
-[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "Ogólny diagram infrastruktury"
+[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Diagram infrastruktury wysokiego poziomu"
+[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "Diagram infrastruktury wysokiego poziomu"
 [8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "Komunikacja równorzędna sieci wirtualnych i sieci obwodowe"
 [9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "Ogólny diagram dla monitorowania"
 [10]: ../../_images/azure-best-practices/network-high-level-workloads.png "Ogólny diagram dla obciążenia"

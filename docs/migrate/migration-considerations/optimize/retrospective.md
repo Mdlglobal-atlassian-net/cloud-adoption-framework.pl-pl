@@ -8,18 +8,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cd58f4e369100ab55556b7c492c0a46d7c543b92
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 881f8f396d40ca189267d6dbf50eac65abf0b56d
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825460"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548376"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="how-do-retrospectives-help-build-a-growth-mindset"></a>Jak retrospektywy ułatwiają wywołanie nastawienia na rozwój?
 
-Kultura firmy może całkowicie zrujnować strategię. Najlepszy plan migracji może zostać łatwo cofnięty, jeśli brakuje wsparcia i zachęty od kierownictwa. Nauka, rozwój, a nawet niepowodzenia stanowią integralne elementy nastawienia na rozwój. Są one również nieodłączną częścią wszystkich działań związanych z transformacją.
+Kultura firmy może całkowicie zrujnować strategię. Najlepszy plan migracji może być łatwo cofnięty, jeśli nie ma wsparcia dla kierownictwa i zachęty od lidera. Nauka, rozwój, a nawet niepowodzenia stanowią integralne elementy nastawienia na rozwój. Są one również nieodłączną częścią wszystkich działań związanych z transformacją.
 
 Nigdy dotąd pokora i ciekawość nie były tak ważne, jak teraz w procesie transformacji w firmie. Obie te cechy są niezbędne, aby móc skorzystać z transformacji cyfrowej. Można je wzmacniać poprzez regularną introspekcję oraz kreowanie atmosfery zachęty. Gdy pracownicy są zachęcani do podejmowania ryzyka, znajdują lepsze rozwiązania. Gdy istnieje przyzwolenie na to, by pracownicy doznawali niepowodzeń i uczyli się, mogą odnosić sukcesy. Retrospektywy stanowią okazję do analiz i rozwoju.
 

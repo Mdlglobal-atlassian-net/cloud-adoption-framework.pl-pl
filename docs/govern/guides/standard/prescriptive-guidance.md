@@ -1,7 +1,7 @@
 ---
-title: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Wskazówki dotyczące preskryptowe wyjaśnione'
+title: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: objaśniono najlepsze rozwiązania'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Zapoznaj się ze wskazówkami opisowymi dotyczącymi nadzoru w standardowych przedsiębiorstwach.
+description: Poznaj najlepsze rozwiązania dotyczące zarządzania w standardowych przedsiębiorstwach.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3f9149c3edc90a12b0e9dd1f99e20172cf277fb2
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 0f7a6b76ba348414b4aed7b40aaffa4867e62c02
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967506"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547495"
 ---
-# <a name="standard-enterprise-governance-guide-prescriptive-guidance-explained"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Wskazówki dotyczące preskryptowe wyjaśnione
+# <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: objaśniono najlepsze rozwiązania
 
-Przewodnik dotyczący ładu rozpoczyna się od zestawu początkowych [zasad firmowych](./initial-corporate-policy.md). Te zasady są używane do ustanowienia ładu SPECJALISTy, który odzwierciedla [zalecane praktyki](./index.md).
+Przewodnik dotyczący ładu rozpoczyna się od zestawu początkowych [zasad firmowych](./initial-corporate-policy.md). Te zasady są używane do ustanowienia ładu SPECJALISTy, który odzwierciedla [najlepsze rozwiązania](./index.md).
 
 W tym artykule omówiono strategie wysokiego poziomu, które są wymagane do utworzenia programu MVP (ładu). Rdzeń programu ładu MVP to dyscyplina [wdrażania](../../deployment-acceleration/index.md) . Narzędzia i wzorce stosowane na tym etapie umożliwiają udoskonalenia przyrostowe, które są konieczne do rozwinięcia ładu w przyszłości.
 
@@ -38,7 +38,7 @@ Implementacja programu ładu MVP ma zależności dotyczące tożsamości, zabezp
 
 Tę implementację można również opisać przy użyciu prostej listy kontrolnej:
 
-1. Decyzje dotyczące żądania dotyczące podstawowych zależności: Tożsamość, Sieć, monitorowanie i szyfrowanie.
+1. Prośba o decyzje dotyczące podstawowych zależności: tożsamości, sieci, monitorowania i szyfrowania.
 2. Określ wzorzec, który ma być używany podczas wymuszania zasad firmowych.
 3. Określ odpowiednie wzorce ładu dotyczące spójności zasobów, tagowania zasobów oraz dyscyplin rejestrowania i raportowania.
 4. Zaimplementuj narzędzia ładu dostosowane do wybranego wzorca wymuszania zasad, aby zastosować zależne decyzje i decyzje nadzoru.
@@ -61,7 +61,7 @@ Decyzja dotycząca tego, w jaki sposób konstrukcja subskrypcji pozwala określi
 
 Decyzje dotyczące spójności zasobów określają narzędzia, procesy i nakłady potrzebne do zapewnienia spójnego wdrażania i konfigurowania zasobów platformy Azure w ramach subskrypcji. W tym opisie **[spójność wdrożenia](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** została wybrana jako wzorzec spójności zasobów podstawowych.
 
-- Grupy zasobów są tworzone dla aplikacji przy użyciu podejścia do cyklu życia: wszystko, co zostało utworzone, utrzymane i wycofane, powinno znajdować się w jednej grupie zasobów. Aby uzyskać więcej informacji na temat grup zasobów, zobacz [tutaj](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Grupy zasobów są tworzone dla aplikacji przy użyciu podejścia cyklu życia. Wszystkie elementy, które są tworzone, konserwowane i wycofane, powinny znajdować się w jednej grupie zasobów. Aby uzyskać więcej informacji na temat grup zasobów, zobacz [tutaj](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy należy zastosować do wszystkich subskrypcji ze skojarzonej grupy zarządzania.
 - W ramach procesu wdrażania szablony spójności zasobów platformy Azure dla grupy zasobów powinny być przechowywane w kontroli źródła.
 - Każda grupa zasobów jest skojarzona z określonym obciążeniem lub aplikacją na podstawie opisanego powyżej podejścia cyklu życia.

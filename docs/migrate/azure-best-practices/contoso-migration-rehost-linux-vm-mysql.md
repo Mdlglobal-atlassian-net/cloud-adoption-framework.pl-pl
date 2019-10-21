@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8056ef1a53a47bc79e106f0fcd4fcf768e3a5126
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3e39452782f1966e0efe2742264d26a60062d78b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224316"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547323"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Ponowne hostowanie aplikacji lokalnej dla systemu Linux na maszynach wirtualnych platformy Azure i w usłudze Azure Database for MySQL
 
@@ -21,13 +21,13 @@ W tym artykule opisano, w jaki sposób fikcyjna firma Contoso ponownie hostuje d
 
 Używana w tym przykładzie aplikacja do obsługi pomocy technicznej, osTicket, jest dostępna jako aplikacja open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/osTicket/osTicket).
 
-## <a name="business-drivers"></a>Cele biznesowe
+## <a name="business-drivers"></a>Czynniki biznesowe
 
 Zespół liderów IT w ścisłej współpracy z partnerami biznesowymi firmy ustalił, co firma będzie chciała osiągnąć:
 
 - **Reagowanie na rosnące potrzeby biznesowe.** Firma Contoso rozwija się, przez co lokalne systemy i infrastruktura stają się przeciążone.
 - **Ograniczanie ryzyka.** Aplikacja do obsługi pomocy technicznej ma kluczowe znaczenie dla działalności firmy. Firma Contoso chce przenieść ją na platformę Azure, eliminując ryzyko.
-- **Rozszerzenie.** Firma Contoso nie chce teraz zmieniać używanej aplikacji. Po prostu chce mieć pewność, że aplikacja jest stabilna.
+- **Rozszerzanie.** Firma Contoso nie chce teraz zmieniać używanej aplikacji. Po prostu chce mieć pewność, że aplikacja jest stabilna.
 
 ## <a name="migration-goals"></a>Cele migracji
 
@@ -63,7 +63,7 @@ Firma Contoso przeprowadzi proces migracji w następujący sposób:
 
 Migracja maszyny wirtualnej warstwy internetowej:
 
-1. W pierwszej kolejności firma Contoso skonfiguruje platformę Azure i infrastrukturę lokalną pod kątem wdrożenia usługi Site Recovery.
+1. W pierwszym kroku firma Contoso skonfiguruje platformę Azure i infrastrukturę lokalną pod kątem wdrożenia usługi Site Recovery.
 2. Po przygotowaniu platformy Azure i składników lokalnych firma Contoso skonfiguruje i włączy replikację maszyn wirtualnych.
 3. Gdy replikacja zacznie działać, firma Contoso przeprowadzi migrację maszyny wirtualnej na platformę Azure przez przełączenie jej do trybu failover.
 
@@ -75,12 +75,12 @@ Migracja bazy danych:
 
 ![Proces migracji](./media/contoso-migration-rehost-linux-vm-mysql/migration-process.png)
 
-### <a name="azure-services"></a>Usługi Azure
+### <a name="azure-services"></a>Usługi platformy Azure
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Usługa organizuje migrację i odzyskiwanie po awarii maszyn wirtualnych platformy Azure, lokalnych maszyn wirtualnych i serwerów fizycznych oraz zarządza tymi procesami. | Podczas replikacji na platformę Azure naliczane są opłaty za usługę Azure Storage. Maszyny wirtualne platformy Azure zostaną utworzone w momencie przejścia w tryb failover i wówczas będą naliczane opłaty. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/site-recovery) o opłatach i cenach.
-[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Baza danych opiera się na aparacie serwera MySQL typu open source. Udostępnia on w pełni zarządzaną, gotową do używania w przedsiębiorstwie bazę danych MySQL w wersji Community jako usługę do opracowywania i wdrażania aplikacji.
+[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Baza danych opiera się na aparacie serwera MySQL typu open-source. Udostępnia on w pełni zarządzaną, gotową do używania w przedsiębiorstwie bazę danych MySQL w wersji Community jako usługę do opracowywania i wdrażania aplikacji.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -103,20 +103,20 @@ Administratorzy firmy Contoso przeprowadzają migrację w następujący sposób:
 
 > [!div class="checklist"]
 >
-> - **Krok 1. Przygotowanie platformy Azure do wdrożenia usługi Site Recovery.** Tworzą konto usługi Azure Storage do przechowywania replikowanych danych oraz magazyn usługi Recovery Services.
-> - **Krok 2. Przygotowanie lokalnego oprogramowania VMware do korzystania z usługi Site Recovery.** Przygotowują konta do użycia na potrzeby odnajdowania maszyn wirtualnych i instalacji agenta oraz przygotowują się do połączenia z maszynami wirtualnymi platformy Azure po przejściu w tryb failover.
-> - **Krok 3. Aprowizowanie bazy danych.** Na platformie Azure aprowizują wystąpienie usługi Azure Database for MySQL.
-> - **Krok 4. Replikowanie maszyn wirtualnych.** Konfigurują źródłowe i docelowe środowiska usługi Site Recovery, konfigurują zasady replikacji i uruchamiają replikację maszyn wirtualnych do usługi Azure Storage.
-> - **Krok 5. Migracja bazy danych.** Konfigurują migrację przy użyciu narzędzi usługi MySQL.
-> - **Krok 6. Migracja maszyn wirtualnych za pomocą usługi Site Recovery.** Na końcu przeprowadzają próbne przejście w tryb failover, aby sprawdzić, czy wszystko działa prawidłowo, a następnie przeprowadzają pełne przejście w tryb failover, aby ukończyć migrację maszyn wirtualnych na platformę Azure.
+> - **Krok 1: przygotowanie platformy Azure dla Site Recovery.** Tworzą konto usługi Azure Storage do przechowywania replikowanych danych oraz magazyn usługi Recovery Services.
+> - **Krok 2: Przygotowanie lokalnego programu VMware do Site Recovery.** Przygotowują konta do użycia na potrzeby odnajdowania maszyn wirtualnych i instalacji agenta oraz przygotowują się do połączenia z maszynami wirtualnymi platformy Azure po przejściu w tryb failover.
+> - **Krok 3. Przeprowadź obsługę administracyjną bazy danych.** Na platformie Azure aprowizują oni wystąpienie usługi Azure Database for MySQL.
+> - **Krok 4. replikowanie maszyn wirtualnych.** Konfigurują źródłowe i docelowe środowiska usługi Site Recovery, konfigurują zasady replikacji i uruchamiają replikację maszyn wirtualnych do usługi Azure Storage.
+> - **Krok 5. Migrowanie bazy danych.** Konfigurują migrację przy użyciu narzędzi usługi MySQL.
+> - **Krok 6. Migrowanie maszyn wirtualnych przy użyciu Site Recovery.** Na końcu przeprowadzają próbne przejście w tryb failover, aby sprawdzić, czy wszystko działa prawidłowo, a następnie przeprowadzają pełne przejście w tryb failover, aby ukończyć migrację maszyn wirtualnych na platformę Azure.
 
-## <a name="step-1-prepare-azure-for-the-site-recovery-service"></a>Krok 1: Przygotowanie platformy Azure do wdrożenia usługi Site Recovery
+## <a name="step-1-prepare-azure-for-the-site-recovery-service"></a>Krok 1. Przygotowywanie platformy Azure dla usługi Site Recovery
 
 Firma Contoso musi utworzyć kilka składników platformy Azure na potrzeby usługi Site Recovery:
 
-- Sieć wirtualną, w której będą znajdować się zasoby w po przejściu w tryb failover. Firma Contoso już utworzyła tę sieć wirtualną na etapie [wdrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md).
+- Sieć wirtualną, w której będą znajdować się zasoby w trybie failover. Firma Contoso już utworzyła tę sieć wirtualną na etapie [wdrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md).
 - Nowe konto usługi Azure Storage do przechowywania replikowanych danych.
-- Magazyn usługi Recovery Services na platformie Azure.
+- Magazyn usług Recovery Services na platformie Azure.
 
 Administratorzy firmy Contoso tworzą konto usługi Storage i magazyn w następujący sposób:
 
@@ -129,13 +129,13 @@ Administratorzy firmy Contoso tworzą konto usługi Storage i magazyn w następu
 
 2. Po utworzeniu sieci i konta usługi Storage administratorzy tworzą magazyn (ContosoMigrationVault), który umieszczają w grupie zasobów **ContosoFailoverRG**, w regionie podstawowym Wschodnie stany USA 2.
 
-    ![magazyn usług Recovery Services](./media/contoso-migration-rehost-linux-vm-mysql/asr-vault.png)
+    ![Magazyn usługi Recovery Services](./media/contoso-migration-rehost-linux-vm-mysql/asr-vault.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) na temat konfigurowania platformy Azure pod kątem usługi Site Recovery.
 
-## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>Krok 2: Przygotowanie lokalnego oprogramowania VMware do korzystania z usługi Site Recovery
+## <a name="step-2-prepare-on-premises-vmware-for-site-recovery"></a>Krok 2: Przygotowanie lokalnego programu VMware do Site Recovery
 
 Administratorzy firmy Contoso przygotowują lokalną infrastrukturę VMware w następujący sposób:
 
@@ -168,7 +168,7 @@ Usługa mobilności musi być zainstalowana na każdej maszynie wirtualnej, któ
 
 Po przełączeniu w tryb failover na platformie Azure firma Contoso chce mieć możliwość nawiązania połączenia z maszynami wirtualnymi na platformie Azure. Aby to umożliwić, administratorzy firmy Contoso muszą wykonać następujące czynności:
 
-- Aby uzyskać dostęp za pośrednictwem Internetu, muszą włączyć protokół SSH na lokalnych maszynach wirtualnych systemu Linux przed migracją. W przypadku systemu Ubuntu można to zrobić za pomocą następującego polecenia: **Sudo apt-get ssh install -y**.
+- Aby uzyskać dostęp za pośrednictwem Internetu, muszą włączyć protokół SSH na lokalnych maszynach wirtualnych systemu Linux przed migracją. W przypadku Ubuntu można to zrobić za pomocą następującego polecenia: **sudo apt-get SSH Install-y**.
 - Po przełączeniu w tryb failover powinni sprawdzić **diagnostykę rozruchu**, aby wyświetlić zrzut ekranu maszyny wirtualnej.
 - Jeśli to nie zadziała, muszą sprawdzić, czy maszyna wirtualna jest uruchomiona, i zapoznać się z tymi [poradami dotyczącymi rozwiązywania problemów](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx).
 
@@ -177,7 +177,7 @@ Po przełączeniu w tryb failover na platformie Azure firma Contoso chce mieć m
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) na temat tworzenia i przypisywania roli na potrzeby automatycznego odnajdowania.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) na temat tworzenia konta na potrzeby instalacji wypychanej usługi mobilności.
 
-## <a name="step-3-provision-azure-database-for-mysql"></a>Krok 3: Aprowizowanie usługi Azure Database for MySQL
+## <a name="step-3-provision-azure-database-for-mysql"></a>Krok 3. Udostępnianie Azure Database for MySQL
 
 Administratorzy firmy Contoso aprowizują wystąpienie bazy danych MySQL w regionie podstawowym Wschodnie stany USA 2.
 
@@ -202,14 +202,14 @@ Administratorzy firmy Contoso aprowizują wystąpienie bazy danych MySQL w regio
 
     ![MySQL](./media/contoso-migration-rehost-linux-vm-mysql/mysql-4.png)
 
-## <a name="step-4-replicate-the-on-premises-vms"></a>Krok 4: Replikowanie lokalnych maszyn wirtualnych
+## <a name="step-4-replicate-the-on-premises-vms"></a>Krok 4. replikowanie lokalnych maszyn wirtualnych
 
 Przed migracją maszyny wirtualnej warstwy internetowej na platformę Azure administratorzy firmy Contoso muszą skonfigurować i włączyć replikację.
 
 ### <a name="set-a-protection-goal"></a>Określanie celu ochrony
 
 1. W obszarze magazynu po wybraniu nazwy magazynu (ContosoVMVault) należy ustawić cel replikacji (**Wprowadzenie** > **Site Recovery** > **Przygotowanie infrastruktury**).
-2. Administratorzy określają, że ich maszyny wirtualne znajdują się w środowisku lokalnym, że są to maszyny wirtualne programu VMware, i że chcą przeprowadzić replikację na platformie Azure.
+2. Administratorzy określają, że ich maszyny wirtualne znajdują się w środowisku lokalnym, że są to maszyny wirtualne VMware, i że chcą przeprowadzić replikację na platformie Azure.
 
     ![Cel replikacji](./media/contoso-migration-rehost-linux-vm-mysql/replication-goal.png)
 
@@ -219,7 +219,7 @@ Aby przejść dalej, należy potwierdzić, że zakończono planowanie wdrożenia
 
 ### <a name="set-up-the-source-environment"></a>Konfigurowanie środowiska źródłowego
 
-Teraz administratorzy firmy Contoso konfigurują środowisko źródłowe. W tym celu za pomocą szablonu OVF wdrożą serwer konfiguracji usługi Site Recovery jako wysoce dostępną lokalną maszynę wirtualną programu VMware. Po uruchomieniu serwera konfiguracji zarejestrują go w magazynie.
+Teraz administratorzy firmy Contoso konfigurują środowisko źródłowe. W tym celu za pomocą szablonu OVF wdrożą serwer konfiguracji usługi Site Recovery jako wysoce dostępną lokalną maszynę wirtualną programu VMware. Po uruchomieniu serwera konfiguracji rejestrują go w magazynie.
 
 Na serwerze konfiguracji jest uruchomionych kilka składników:
 
@@ -241,7 +241,7 @@ Administratorzy firmy Contoso robią to w następujący sposób:
 4. Po zakończeniu instalacji logują się na maszynie wirtualnej jako administrator. Po pierwszym zalogowaniu zostanie domyślnie uruchomione narzędzie do konfiguracji usługi Azure Site Recovery.
 5. W tym narzędziu należy określić nazwę używaną do zarejestrowania serwera konfiguracji w magazynie.
 6. Narzędzie sprawdza, czy maszyna wirtualna może połączyć się z platformą Azure.
-7. Po nawiązaniu połączenia administratorzy logują się do subskrypcji platformy Azure. Użyte poświadczenia muszą zapewniać dostęp do magazynu, w którym zarejestrują serwer konfiguracji.
+7. Po nawiązaniu połączenia administratorzy logują się w subskrypcji platformy Azure. Użyte poświadczenia muszą zapewniać dostęp do magazynu, w którym zarejestrują serwer konfiguracji.
 
     ![Rejestrowanie serwera konfiguracji](./media/contoso-migration-rehost-linux-vm-mysql/config-server-register2.png)
 
@@ -265,7 +265,7 @@ Administratorzy firmy Contoso robią to w następujący sposób:
 
 Teraz administratorzy firmy Contoso wprowadzają ustawienia replikacji w środowisku docelowym.
 
-1. W obszarze **Przygotowanie infrastruktury** > **Docelowa** określają ustawienia środowiska docelowego.
+1. W obszarze **Przygotowanie infrastruktury** > **Docelowa** wybierają ustawienia środowiska docelowego.
 2. Usługa Site Recovery sprawdza, czy we wskazanym środowisku docelowym istnieje konto usługi Azure Storage i sieć.
 
 ### <a name="create-a-replication-policy"></a>Tworzenie zasad replikacji
@@ -275,11 +275,11 @@ Po skonfigurowaniu środowiska źródłowego i docelowego administratorzy firmy 
 1. W obszarze **Przygotowanie infrastruktury** > **Ustawienia replikacji** > **Zasady replikacji** >  **Utwórz i skojarz** administratorzy tworzą zasady o nazwie **ContosoMigrationPolicy**.
 
 2. Korzystają z ustawień domyślnych:
-    - **Wartość progowa celu punktu odzyskiwania:** wartość domyślna — 60 minut. Ta wartość określa częstość tworzenia punktów odzyskiwania. Przekroczenie tego limitu przez replikację ciągłą spowoduje wygenerowanie alertu.
-    - **Przechowywanie punktów odzyskiwania:** wartość domyślna — 24 godziny. Ta wartość określa długość okna przechowywania dla każdego punktu odzyskiwania. Replikowane maszyny wirtualne można odzyskać do dowolnego punktu w tym oknie.
-    - **Częstotliwość wykonywania migawek na poziomie aplikacji:** wartość domyślna — jedna godzina. Ta wartość określa częstotliwość tworzenia migawek spójnych na poziomie aplikacji.
+    - **Próg punktu odzyskiwania:** Domyślnie 60 minut. Ta wartość określa częstość tworzenia punktów odzyskiwania. Przekroczenie tego limitu przez replikację ciągłą spowoduje wygenerowanie alertu.
+    - **Przechowywanie punktów odzyskiwania:** Domyślnie 24 godziny. Ta wartość określa długość okna przechowywania dla każdego punktu odzyskiwania. Replikowane maszyny wirtualne można odzyskać do dowolnego punktu w tym oknie.
+    - **Częstotliwość migawek spójnych na poziomie aplikacji:** Wartość domyślna to godzina. Ta wartość określa częstotliwość tworzenia migawek spójnych na poziomie aplikacji.
 
-        ![Utwórz zasady replikacji](./media/contoso-migration-rehost-linux-vm-mysql/replication-policy.png)
+        ![Tworzenie zasad replikacji](./media/contoso-migration-rehost-linux-vm-mysql/replication-policy.png)
 
 3. Zasady zostaną automatycznie skojarzone z serwerem konfiguracji.
 
@@ -295,7 +295,7 @@ Po skonfigurowaniu środowiska źródłowego i docelowego administratorzy firmy 
 
 Teraz administratorzy firmy Contoso mogą rozpocząć replikację maszyny wirtualnej **OSTICKETWEB**.
 
-1. W obszarze **Replikowanie aplikacji** > **Źródło** >  **+Replikuj** wybierają ustawienia środowiska źródłowego.
+1. W obszarze **Replikowanie aplikacji** > **Źródło** >  **+Replikuj** wybierają ustawienia źródła.
 2. Wskazują, że chcą włączyć maszyny wirtualne i wybierają ustawienia środowiska źródłowego, w tym serwer vCenter i serwer konfiguracji.
 
     ![Włączanie replikacji](./media/contoso-migration-rehost-linux-vm-mysql/enable-replication-source.png)
@@ -313,21 +313,21 @@ Teraz administratorzy firmy Contoso mogą rozpocząć replikację maszyny wirtua
      ![Usługa mobilności](./media/contoso-migration-rehost-linux-vm-mysql/linux-mobility.png)
 
 6. W obszarze **Ustawienia replikacji** > **Konfigurowanie ustawień replikacji** sprawdzają, czy zastosowano właściwe zasady replikacji, a następnie wybierają pozycję **Włącz replikację**. Usługa mobilności zostanie zainstalowana automatycznie.
-7. Śledzą postęp replikacji w obszarze **Zadania**. Po uruchomieniu zadania **Sfinalizuj ochronę** maszyna jest gotowa do przejścia w tryb failover.
+7. Postęp replikacji można śledzić w obszarze **Zadania**. Po uruchomieniu zadania **Sfinalizuj ochronę** maszyna jest gotowa do przejścia w tryb failover.
 
 **Potrzebujesz dodatkowej pomocy?**
 
 Pełne instrukcje do wszystkich kroków można znaleźć w artykule [Enable replication (Włączanie replikacji)](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication).
 
-## <a name="step-5-migrate-the-database"></a>Krok 5. Migracja bazy danych
+## <a name="step-5-migrate-the-database"></a>Krok 5. Migrowanie bazy danych
 
 Administratorzy firmy Contoso migrują bazę danych przy użyciu funkcji tworzenia kopii zapasowych i przywracania za pomocą narzędzi MySQL. Instalują aplikację MySQL Workbench, tworzą kopię zapasową bazy danych z maszyny wirtualnej OSTICKETMYSQL, a następnie przywracają ją na serwer usługi Azure Database for MySQL.
 
-### <a name="install-mysql-workbench"></a>Zainstaluj program MySQL Workbench
+### <a name="install-mysql-workbench"></a>Instalacja aplikacji MySQL Workbench
 
 1. Sprawdzają [wymagania wstępne i pliki do pobrania aplikacji MySQL Workbench](https://dev.mysql.com/downloads/workbench/?utm_source=tuicool).
-2. Instalują aplikację MySQL Workbench dla systemu Windows zgodnie z [instrukcjami instalacji](https://dev.mysql.com/doc/workbench/en/wb-installing.html).
-3. W aplikacji MySQL Workbench tworzą połączenie MySQL z maszyną OSTICKETMYSQL.
+2. Instalują program MySQL Workbench dla systemu Windows zgodnie [z instrukcjami instalacji](https://dev.mysql.com/doc/workbench/en/wb-installing.html).
+3. W programie MySQL Workbench tworzą połączenie usługi MySQL z maszyną OSTICKETMYSQL.
 
     ![MySQL Workbench](./media/contoso-migration-rehost-linux-vm-mysql/workbench1.png)
 
@@ -343,7 +343,7 @@ Administratorzy firmy Contoso migrują bazę danych przy użyciu funkcji tworzen
 
     ![MySQL Workbench](./media/contoso-migration-rehost-linux-vm-mysql/workbench4.png)
 
-## <a name="step-6-migrate-the-vms-with-site-recovery"></a>Krok 6: Migracja maszyn wirtualnych za pomocą usługi Site Recovery
+## <a name="step-6-migrate-the-vms-with-site-recovery"></a>Krok 6. Migrowanie maszyn wirtualnych za pomocą Site Recovery
 
 Na koniec administratorzy firmy Contoso uruchamiają szybki test przejścia w tryb failover, a następnie przeprowadzają migrację maszyny wirtualnej.
 
@@ -351,7 +351,7 @@ Na koniec administratorzy firmy Contoso uruchamiają szybki test przejścia w tr
 
 Próba przejścia w tryb failover pozwala sprawdzić, czy wszystko działa zgodnie z oczekiwaniami, przed przeprowadzeniem faktycznej migracji.
 
-1. Uruchamiają próbę przejścia w tryb failover przy użyciu najnowszego dostępnego punktu w czasie (**Najnowszy przetworzony**).
+1. Uruchamiają testowe przełączenie w tryb failover przy użyciu najnowszego dostępnego punktu w czasie (**Najnowszy przetworzony**).
 2. Wybierają opcję **Zamknij maszynę przed rozpoczęciem pracy w trybie failover**, aby usługa Site Recovery podjęła próbę zamknięcia źródłowej maszyny wirtualnej przed jej przełączeniem w tryb failover. Przełączanie do trybu failover będzie kontynuowane, nawet jeśli zamknięcie nie powiedzie się.
 3. Próbne przełączenia do trybu failover:
 
@@ -362,7 +362,7 @@ Próba przejścia w tryb failover pozwala sprawdzić, czy wszystko działa zgodn
 4. Po zakończeniu przechodzenia w tryb failover w witrynie Azure Portal będzie widoczna replika maszyny wirtualnej na platformie Azure. Administratorzy sprawdzają, czy maszyna wirtualna ma prawidłowy rozmiar, jest połączona z odpowiednią siecią i jest uruchomiona.
 5. Gdy wszystko zostanie sprawdzone, przeprowadzają czyszczenie po przejściu do trybu failover oraz rejestrują i zapisują wszelkie obserwacje.
 
-### <a name="migrate-the-vm"></a>Migracja maszyny wirtualnej
+### <a name="migrate-the-vm"></a>Migrowanie maszyny wirtualnej
 
 Aby przeprowadzić migrację maszyny wirtualnej, administratorzy firmy Contoso tworzą plan odzyskiwania, który obejmuje maszynę wirtualną, i wykonują przejście w tryb failover na platformie Azure.
 
@@ -370,7 +370,7 @@ Aby przeprowadzić migrację maszyny wirtualnej, administratorzy firmy Contoso t
 
     ![Plan odzyskiwania](./media/contoso-migration-rehost-linux-vm-mysql/recovery-plan.png)
 
-2. Uruchamiają tryb failover z użyciem utworzonego planu. Wybierają najnowszy punkt odzyskiwania i określają, że usługa Site Recovery powinna podjąć próbę zamknięcia lokalnej maszyny wirtualnej przed wyzwoleniem trybu failover. Na stronie **Zadania** mogą śledzić postęp trybu failover.
+2. Uruchamiają tryb failover z użyciem utworzonego planu. Wybierają najnowszy punkt odzyskiwania i określają, że usługa Site Recovery powinna podjąć próbę zamknięcia lokalnej maszyny wirtualnej przed wyzwoleniem trybu failover. Na stronie **Zadania** można śledzić postęp trybu failover.
 
     ![Tryb failover](./media/contoso-migration-rehost-linux-vm-mysql/failover1.png)
 
@@ -390,7 +390,7 @@ Aby przeprowadzić migrację maszyny wirtualnej, administratorzy firmy Contoso t
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure) o próbnym uruchamianiu trybu failover.
 - [Dowiedz się](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans), jak utworzyć plan odzyskiwania.
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) na temat przechodzenia w tryb failover na platformie Azure.
+- [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) na temat przechodzenia do trybu failover na platformie Azure.
 
 ### <a name="connect-the-vm-to-the-database"></a>Łączenie maszyny wirtualnej z bazą danych
 
@@ -428,7 +428,7 @@ Po zakończeniu migracji warstwy aplikacji osTicket działają na maszynach wirt
 
 Teraz firma Contoso musi wykonać następujące czynności:
 
-- Usunięcie maszyn wirtualnych programu VMware ze spisu programu vCenter.
+- Usunięcie maszyn wirtualnych VMware ze spisu programu vCenter.
 - Usunięcie lokalnych maszyn wirtualnych z lokalnych zadań kopii zapasowej.
 - Zaktualizowanie wewnętrznej dokumentacji tak, aby wskazywała nowe lokalizacje i adresy IP.
 - Przegląd wszystkich zasobów korzystających z lokalnych maszyn wirtualnych i zaktualizowanie wszystkich ustawień lub dokumentów w celu uwzględnienia nowej konfiguracji.
@@ -438,13 +438,13 @@ Teraz firma Contoso musi wykonać następujące czynności:
 
 Po uruchomieniu aplikacji firma Contoso musi w pełni zoperacjonalizować i zabezpieczyć nową infrastrukturę.
 
-### <a name="security"></a>Bezpieczeństwo
+### <a name="security"></a>Zabezpieczenia
 
 Zespół ds. zabezpieczeń firmy Contoso sprawdza maszynę wirtualną i bazę danych, aby określić problemy z zabezpieczeniami.
 
 - Administratorzy przeglądają sieciowe grupy zabezpieczeń używane do kontroli dostępu do maszyny wirtualnej. Sieciowe grupy zabezpieczeń zapewniają, że do aplikacji będzie przekazywany tylko dozwolony ruch.
 - Rozważają również zabezpieczenie danych na dyskach maszyn wirtualnych przy użyciu usług Disk Encryption i Azure Key Vault.
-- Nie skonfigurowano komunikacji między maszyną wirtualną a wystąpieniem bazy danych z użyciem protokołu SSL. Należy to zrobić, aby upewnić się, że hakerzy nie mogą zaatakować bazy danych.
+- Nie skonfigurowano komunikacji między maszyną wirtualną a wystąpieniem bazy danych z użyciem protokołu SSL. Trzeba to zrobić, aby upewnić się, że hakerzy nie mogą zaatakować bazy danych.
 
 [Dowiedz się więcej](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) na temat rozwiązań zabezpieczeń dla maszyn wirtualnych.
 
@@ -452,11 +452,11 @@ Zespół ds. zabezpieczeń firmy Contoso sprawdza maszynę wirtualną i bazę da
 
 W celu zapewnienia ciągłości działania i odzyskiwania po awarii firma Contoso podejmuje następujące działania:
 
-- **Zapewnienie bezpieczeństwa danych.** Firma Contoso tworzy kopie zapasowe danych na maszynie wirtualnej aplikacji za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json). Nie trzeba konfigurować kopii zapasowej bazy danych. Usługa Azure Database for MySQL automatycznie tworzy kopie zapasowe i magazyny serwerów. Wybrano opcję użycia nadmiarowości geograficznej bazy danych, aby była odporna na awarie i gotowa do użycia w środowisku produkcyjnym.
+- **Zapewnienie bezpieczeństwa danych.** Firma Contoso tworzy kopie zapasowe danych na maszynie wirtualnej aplikacji za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json). Nie trzeba konfigurować kopii zapasowej bazy danych. Usługa Azure Database for MySQL automatycznie tworzy kopie zapasowe i magazyny serwerów. Wybrano opcję użycia nadmiarowości geograficznej bazy danych, aby była odporna na awarie i gotowa do produkcji.
 - **Zapewnienie ciągłości działania aplikacji.** Firma Contoso replikuje maszyny wirtualne aplikacji w regionie pomocniczym platformy Azure za pomocą usługi Site Recovery. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licencjonowanie i optymalizacja kosztów
 
 - Po wdrożeniu zasobów firma Contoso przypisuje tagi platformy Azure zgodnie z decyzjami podjętymi na etapie wdrażania [infrastruktury platformy Azure](./contoso-migration-infrastructure.md#set-up-tagging).
 - Nie ma problemów z licencjonowaniem dla wdrożenia serwerów Contoso Ubuntu.
-- Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) na temat usługi Azure Cost Management.
+- Firma włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.

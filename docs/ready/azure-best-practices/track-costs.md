@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967759"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548961"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach
 
@@ -59,7 +59,7 @@ Na diagramie przedstawiono najlepsze rozwiązania oprócz następujących opcji:
 
 W pozostałej części tego artykułu przyjęto, że użyto najlepszego rozwiązania na diagramie powyżej. Jednak artykuły poniżej mogą pomóc w zastosowaniu tego rozwiązania do organizacji zasobów, która najlepiej pasuje do Twojej firmy:
 
-- [Scaling with multiple Azure subscriptions](../considerations/scaling-subscriptions.md) (Skalowanie za pomocą wielu subskrypcji platformy Azure)
+- [Skalowanie za pomocą wielu subskrypcji platformy Azure](../considerations/scaling-subscriptions.md)
 - [Deploying a Governance MVP to govern well-managed environment standards](../../govern/guides/complex/index.md) (Wdrażanie ładu programu MVP w celu nadzorowania standardów dobrze zarządzanego środowiska)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Zapewnienie odpowiedniego poziomu dostępu do kosztów
@@ -83,7 +83,7 @@ Usługa Azure Cost Management obsługuje następujące wbudowane role dla poszcz
 
 Najlepszym rozwiązaniem jest przypisanie członkom wszystkich zespołów roli współautora zarządzania kosztami. Ta rola zapewnia dostęp niezbędny do tworzenia budżetów i eksportów oraz zarządzania nimi w celu skuteczniejszego monitorowania i tworzenia raportów kosztów. Jednak członkowie [zespołu ds. strategii chmury](../../organize/cloud-strategy.md) powinni mieć tylko rolę czytelnika zarządzania kosztami. Wynika to z faktu, że nie zajmują się oni ustalaniem budżetów w narzędziu usługi Azure Cost Management.
 
-### <a name="scope"></a>Scope
+### <a name="scope"></a>Zakres
 
 Poniższe ustawienia zakresu i ról zapewnią niezbędną widoczność w zakresie zarządzania kosztami. To najlepsze rozwiązanie może wymagać drobnych zmian w celu dostosowania do decyzji związanych z organizacją zasobów.
 
@@ -115,7 +115,7 @@ Usługa Azure Cost Management to dobrze udokumentowane narzędzie do ustalania b
 
 ### <a name="get-started-with-azure-cost-management"></a>Wprowadzenie do usługi Azure Cost Management
 
-Aby uzyskać więcej informacji na temat rozpoczynania pracy z usługą Azure Cost Management, zobacz temat [How to optimize your cloud investment with Azure Cost Management](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json) (Jak zoptymalizować inwestycję w chmurę przy użyciu usługi Azure Cost Management).
+Aby uzyskać więcej informacji na temat rozpoczynania pracy z usługą Azure Cost Management, zobacz temat [How to optimize your cloud investment with Azure Cost Management](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) (Jak zoptymalizować inwestycję w chmurę przy użyciu usługi Azure Cost Management).
 
 ### <a name="use-azure-cost-management"></a>Korzystanie z usługi Azure Cost Management
 

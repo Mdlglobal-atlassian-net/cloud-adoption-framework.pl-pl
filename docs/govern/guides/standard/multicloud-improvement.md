@@ -1,7 +1,7 @@
 ---
-title: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Poprawa chmury'
+title: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: udoskonalenie wielochmurowe'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Poprawa chmury'
+description: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: udoskonalenie wielochmurowe'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3a14603574430272004d9fe40654409409dd563e
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 78ffb3b3d91f1f00fb92d70147fd7177ffa9f1b0
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967310"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547506"
 ---
-# <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Poprawa chmury
+# <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: udoskonalenie wielochmurowe
 
 W tym artykule naliczą się opisy, dodając formanty do wdrożenia wielochmurowego.
 
@@ -81,7 +81,7 @@ W tej części artykułu zostanie zmieniony projekt ładu MVP, który obejmuje n
     1. Wymuszanie ładu jest specyficzne dla chmury.
     2. Zasady firmowe ustanowione w przewodniku ładu nie są specyficzne dla chmury. Chociaż implementacja może się różnić w zależności od chmury, zasady mogą być stosowane do pomocniczego dostawcy.
 
-Wdrożenie w chmurze powinno być zawarte w miejscu, w którym jest wymagane na podstawie wymagań technicznych lub określonych wymagań firmy. W miarę rozwoju wdrożenia z zastosowaniem rozwiązań w chmurze, w związku z czym złożoność i zagrożenia bezpieczeństwa.
+Wdrożenie wielochmurowe powinno być zawarte w miejscu, w którym jest wymagane na podstawie wymagań technicznych lub określonych wymagań firmy. W miarę rozwoju rozwiązania do obsługi rozwiązań w chmurze, w związku z czym złożoność i zagrożenia bezpieczeństwa.
 
 ## <a name="conclusion"></a>Podsumowanie
 

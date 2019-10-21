@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wprowadzenie do podróży migracji do chmury
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223074"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547825"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Wprowadzenie do podróży migracji do chmury
 
 Dowiedz się więcej na temat używania platformy wdrażania Microsoft Cloud dla platformy Azure w celu rozpoczęcia podróży migracji do chmury. Ta struktura zawiera kompleksowe wskazówki dotyczące przenoszenia starszych obciążeń aplikacji przy użyciu innowacyjnych technologii opartych na chmurze.
 
-## <a name="executive-summary"></a>Streszczenie działań
+## <a name="executive-summary"></a>Podsumowanie dla kierownictwa
 
 Platforma wdrażania w chmurze pomaga klientom podejmować uproszczone podróże w chmurze. Ta struktura zawiera szczegółowe informacje obejmujące kompleksową podróż do wdrożenia w chmurze, rozpoczynając od docelowych wyników firmy oraz dopasowując gotowość do chmury i oceny z jasno określonymi celami biznesowymi. Te wyniki są osiągane przez zdefiniowaną ścieżkę do wdrożenia chmury. Po wdrożeniu opartym na migracji zdefiniowana ścieżka koncentruje się głównie na zakończeniu migracji obciążeń lokalnych do chmury. Czasami ta podróż obejmuje modernizację obciążeń, aby zwiększyć zwrot z inwestycji w miarę wysiłków związanych z migracją.
 
@@ -52,7 +52,7 @@ Przygotowanie wszystkich uczestników w ramach wysiłków związanych z migracj�
 
 Struktura wdrażania w chmurze stanowi ogólny zbiór planów, gotowy, zastosowany w celu pogrupowania typów nakładu pracy w ramach dowolnego wdrożenia chmury. To podsumowanie programu Executive kompiluje się na tym przepływie wysokiego poziomu w celu ustalenia iteracji procesów, które mogą ułatwić podniesienie/przewinięcie/optymalizację wysiłków **i** modernizację w jednym podejściu w ramach wszystkich działań związanych z migracją w chmurze.
 
-Takie podejście składa się z dwóch metodologii lub obszarów fokusu: Strategia chmury & planowanie i implementację w chmurze. [Motywacja](#motivations) lub pożądany wynik biznesowy dla migracji w chmurze często określa, jak dużo zespół powinien inwestować w [strategię i planowanie](#cloud-strategy-and-planning) i [implementację](#cloud-implementation). Te motywacje mogą również wpływać na decyzje wykonywane sekwencyjnie lub równolegle.
+Takie podejście obejmuje dwie metodologie i obszary ostrości: strategia chmury & planowanie i implementację w chmurze. [Motywacja](#motivations) lub pożądany wynik biznesowy dla migracji w chmurze często określa, jak dużo zespół powinien inwestować w [strategię i planowanie](#cloud-strategy-and-planning) i [implementację](#cloud-implementation). Te motywacje mogą również wpływać na decyzje wykonywane sekwencyjnie lub równolegle.
 
 ## <a name="cloud-implementation"></a>Implementacja w chmurze
 
@@ -64,7 +64,7 @@ Celem tego nakładu jest migracja lub modernizacja obciążeń. Obciążenie to 
 
 Migracje w chmurze są często traktowane jako pojedynczy projekt w ramach szerszego programu w celu usprawnienia operacji, kosztów lub złożoności IT. Metodologia implementacji chmury pomaga w wyrównaniu wysiłków technicznych w ramach serii migracji obciążeń do wartości biznesowych wyższego poziomu, które opisano w strategii i planowaniu chmury.
 
-**Pierwsze kroki:** Aby rozpocząć pracę z implementacją w chmurze, [Przewodnik migracji platformy Azure](../migrate/azure-migration-guide/index.md) i [Przewodnik po gotowości platformy Azure](../ready/azure-readiness-guide/index.md) przedstawiają narzędzia i procesy wysokiego poziomu, które są konieczne do pomyślnego wykonania implementacji w chmurze. Migrowanie pierwszego obciążenia przy użyciu tych przewodników ułatwi zespołowi pokonanie wstępnych krzywych szkoleniowych w procesie planowania. Po wykonaniu tych czynności należy uzyskać dodatkowe zagadnienia dotyczące [rozwiniętej listy kontrolnej zakresu](../migrate/expanded-scope/index.md), najlepszych rozwiązań dotyczących [migracji](../migrate/azure-best-practices/index.md) i kwestii związanych z [migracją](../migrate/migration-considerations/index.md), aby wyrównać wskazówki dotyczące podstawowych ograniczeń, procesów, zespołu struktury i cele.
+**Pierwsze kroki:** Aby rozpocząć pracę z implementacją w chmurze, [Przewodnik migracji platformy Azure](../migrate/azure-migration-guide/index.md) i [Przewodnik po Instalatorze platformy Azure](../ready/azure-setup-guide/index.md) przedstawiają narzędzia i procesy wysokiego poziomu, które są konieczne do pomyślnego wykonania implementacji w chmurze. Migrowanie pierwszego obciążenia przy użyciu tych przewodników ułatwi zespołowi pokonanie wstępnych krzywych szkoleniowych w procesie planowania. Po wykonaniu tych czynności należy uzyskać dodatkowe zagadnienia dotyczące [rozwiniętej listy kontrolnej zakresu](../migrate/expanded-scope/index.md), najlepszych rozwiązań dotyczących [migracji](../migrate/azure-best-practices/index.md) i kwestii związanych z [migracją](../migrate/migration-considerations/index.md), aby wyrównać wskazówki dotyczące podstawowych ograniczeń, procesów, zespołu struktury i cele.
 
 ## <a name="cloud-strategy-and-planning"></a>Strategia i planowanie chmury
 
@@ -81,13 +81,13 @@ Strategia chmurowa i planowanie rozwiązań w chmurze opracowano na podstawie pr
 Jak pokazano na powyższym obrazie, Ta struktura przedstawia decyzje strategiczne w niewielkiej liczbie zawartych procesów, które działają w modelu iteracyjnym. Chociaż opisano w dokumencie liniowym, każdy z następujących procesów jest oczekiwany równolegle z iteracjami implementacji w chmurze. Linki dla każdego procesu będą pomocne w definiowaniu stanu zakończenia i sposobach wykupu w kierunku żądanego stanu końcowego:
 
 - **[Plan](../strategy/index.md):** Gdy wdrożenie techniczne jest wyrównane z jasnymi celami biznesowymi, znacznie ułatwia mierzenie i dostosowanie sukcesu w wielu działaniach związanych z implementacją w chmurze, bez względu na decyzje techniczne.
-- **[Gotowość](../ready/index.md):** Przygotowanie firmy, kultury, osób i środowiska do wprowadzania zmian prowadzi do sukcesu w każdym wysiłku i przyspiesza implementację i zmienia projekty.
-- **Wdrażanie:** Zapewnij prawidłowe wdrożenie żądanych zmian, w ramach procesów IT i firmowych, aby osiągnąć wyniki biznesowe.
-  - **[Migracja](../migrate/index.md):** Iteracyjne wykonywanie [metodologii implementacji chmury](#cloud-implementation) zgodnej z przetestowanym procesem oceny, migracji, optymalizacji i bezpiecznego & zarządzania, aby utworzyć powtarzalny proces migracji obciążeń.
-- **[Działa](../operate/index.md):** Zdefiniuj model systemu operacyjnego, który można zarządzać, aby poprowadzić działania w trakcie i po jego przyjęciu.
-  - **[Organizowanie](../organize/index.md):** Wyrównaj osoby i zespoły, aby zapewnić prawidłowe operacje i wdrożenia w chmurze.
-  - **[Utrzymanie ładu](../govern/index.md):** Wyrównaj zasady firmowe jako materialne czynniki ryzyka, które zostały skorygowane za pomocą zasad, procesów i narzędzi do zarządzania opartego na chmurze.
-  - **[Zarządzanie](../manage/index.md):** Rozwiń operacje IT, aby zapewnić, że rozwiązania oparte na chmurze mogą być obsługiwane za pośrednictwem bezpiecznych, ekonomicznych procesów przy użyciu nowoczesnych narzędzi do obsługi chmurowej.
+- **[Gotowe](../ready/index.md):** Przygotowanie firmy, kultury, osób i środowiska do wprowadzania zmian prowadzi do sukcesu w każdym wysiłku i przyspiesza implementację i zmienia projekty.
+- **Zastosuj:** Zapewnij prawidłowe wdrożenie żądanych zmian, w ramach procesów IT i firmowych, aby osiągnąć wyniki biznesowe.
+  - **[Migrowanie](../migrate/index.md):** iteracyjne wykonywanie [metodologii implementacji w chmurze](#cloud-implementation) przestrzegane przez testowany proces oceny, migracji, optymalizacji i bezpiecznego & zarządzania, aby utworzyć powtarzalny proces migracji obciążeń.
+  - **[Innowacje](../innovate/index.md):** Zwiększ wartość biznesową, korzystając z działań innowacyjnych, które odblokują nowe umiejętności techniczne i rozbudowane możliwości biznesowe.
+- **[Zarządzanie](../govern/index.md):** Wyrównaj zasady firmowe jako materialne czynniki ryzyka, które zostały skorygowane za pomocą zasad, procesów i narzędzi do zarządzania opartego na chmurze.
+- **[Zarządzanie](../manage/index.md):** Rozwiń operacje IT, aby zapewnić, że rozwiązania oparte na chmurze mogą być obsługiwane za pośrednictwem bezpiecznych, ekonomicznych procesów przy użyciu nowoczesnych narzędzi do obsługi chmurowej.
+- **[Organizuj](../organize/index.md):** Wyrównaj osoby i zespoły, aby zapewnić prawidłowe operacje i wdrożenia w chmurze.
 
 W ramach tego środowiska migracji Ta platforma zostanie użyta w celu rozróżnienia, zarządzania zmianami i popełniania zespołów funkcjonalnych przez realizację wyników działalności biznesowej.
 
@@ -112,9 +112,9 @@ Podczas wdrażania strategii chmury i planowania zespołu IT będzie skoncentrow
 
 Strategia i planowanie chmury często kierują się szeroką kolekcją obciążeń i aplikacji. W portfolio są zwykle migrowane popularne aplikacje lub typy obciążeń. Poniżej przedstawiono kilka przykładów:
 
-- Line-of-business aplikacji
+- Aplikacje biznesowe
 - Aplikacje dla klientów
-- Aplikacje innych producentów
+- Aplikacje innych firm
 - Platformy do analizy danych
 - Rozwiązania rozproszone globalnie
 - Wysoce skalowalne rozwiązania
@@ -126,20 +126,26 @@ Technologie migrowane do chmury ciągle rozszerzają się w miarę jak dostawcy 
 - Windows i SQL Server
 - Bazy danych systemu Linux i typu Open Source (OSS)
 - Destructure/NoSQL bazy danych
-- Rozwiązania SAP na platformie Azure
+- SAP w systemie Azure
 - Analiza (magazyn danych, Data Lake)
 
-## <a name="next-steps-lifecycle-solution"></a>Następne kroki: Rozwiązanie cyklu życia
+## <a name="next-steps-lifecycle-solution"></a>Następne kroki: rozwiązanie cyklu życia
 
 Platforma wdrażania w chmurze to rozwiązanie cyklu życia. Jest ona przeznaczona do ułatwienia czytelnikom, którzy dopiero zaczynają podróży, a także czytelnicy, którzy mają wgląd w migrację. W związku z tym zawartość jest bardzo kontekstowa i charakterystyczna dla odbiorców. Następne kroki są najlepiej wyrównane do procesu wysokiego poziomu, który czytelnik chce ulepszyć.
 
 > [!div class="nextstepaction"]
+> [Strategia](../strategy/index.md)
+>
 > [Planowanie](../plan/index.md)
 >
 > [Gotowe](../ready/index.md)
 >
 > [Migrate (Migracja)](../migrate/index.md)
 >
-> [Zarządzanie](../manage/index.md)
+> [Wprowadzaj innowacje](../innovate/index.md)
 >
 > [Decydując](../govern/index.md)
+>
+> [Zarządzanie](../manage/index.md)
+>
+> [Organizowanie](../organize/index.md)

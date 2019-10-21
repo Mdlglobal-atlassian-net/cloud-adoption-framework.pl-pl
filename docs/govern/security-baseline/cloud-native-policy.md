@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 037cfa2a10ecce9bc56d747eb658824014758827
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222904"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548039"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Zasady linii bazowej zabezpieczeń w chmurze
 
-[Linia bazowa zabezpieczeń](./index.md) jest jednym z [pięciu dyscyplin zarządzania chmurą](../governance-disciplines.md). Ta dyscyplina koncentruje się na ogólnych tematach zabezpieczeń, w tym o ochronie sieci, zasobów cyfrowych, danych itp. Jak opisano w [przewodniku przegląd zasad](../policy-compliance/cloud-policy-review.md), struktura wdrażania chmury obejmuje trzy poziomy **zasad przykładowych**: Zasady projektowania w chmurze, przedsiębiorstwa i chmury zgodne z poszczególnymi dyscyplinami. W tym artykule omówiono przykładowe natywne zasady w chmurze dotyczące dyscypliny linii bazowej zabezpieczeń.
+[Linia bazowa zabezpieczeń](./index.md) jest jednym z [pięciu dyscyplin zarządzania chmurą](../governance-disciplines.md). Ta dyscyplina koncentruje się na ogólnych tematach zabezpieczeń, w tym o ochronie sieci, zasobów cyfrowych, danych itp. Zgodnie z opisem w [przewodniku przegląd zasad](../policy-compliance/cloud-policy-review.md), struktura wdrażania chmury obejmuje trzy poziomy **przykładowych zasad**: zasady projektowania w chmurze, przedsiębiorstwa i chmury, które są zgodne dla każdej dyscypliny. W tym artykule omówiono przykładowe natywne zasady w chmurze dotyczące dyscypliny linii bazowej zabezpieczeń.
 
 > [!NOTE]
 > Firma Microsoft nie jest w stanie podyktować zasad firmowych ani INFORMATYCZNych. Ten artykuł pomoże Ci przygotować się do przeglądu zasad wewnętrznych. Przyjęto założenie, że te przykładowe zasady zostaną rozszerzone, zweryfikowane i przetestowane względem zasad korporacyjnych przed podjęciem próby jej użycia. Użycie tych przykładowych zasad jest niezalecane.
@@ -78,7 +78,7 @@ Monitorowanie zabezpieczeń jest aktywną strategią, która przeprowadza inspek
 - Ciągłe monitorowanie i oceny zabezpieczeń, aby zapewnić zgodność i skorygować wszelkie luki w zabezpieczeniach.
 - Interaktywne narzędzia i kontekstowe analizy zagrożeń w celu usprawnienia badania.
 - Obszerne rejestrowanie i integracja z istniejącymi informacjami o zabezpieczeniach.
-- Zmniejsza konieczność korzystania z kosztownych, niezintegrowanych rozwiązań w zakresie zabezpieczeń.
+- Zmniejsza potrzebę korzystania z kosztownych, niezintegrowanych rozwiązań z zakresu zabezpieczeń.
 
 ### <a name="extending-cloud-native-policies"></a>Rozszerzanie zasad natywnych w chmurze
 
@@ -90,7 +90,7 @@ Nawet w przypadku inwestycji w natywną w chmurze linię bazową zabezpieczeń z
 - **Ochrona zawartości maszyny wirtualnej.** Konfigurowanie zwykłych zautomatyzowanych kopii zapasowych jest niezbędne do ochrony przed błędami użytkowników. Jest to niewystarczające, chociaż należy również upewnić się, że kopie zapasowe są bezpieczne z cyberattacks i są dostępne, gdy będą potrzebne.
 - **Monitorowanie aplikacji.** Ten wzorzec obejmuje kilka zadań, w tym uzyskiwanie wglądu w kondycję maszyn wirtualnych, zrozumienie interakcji między nimi oraz ustanawianie sposobów monitorowania aplikacji uruchamianych przez te maszyny wirtualne. Wszystkie te zadania są niezbędne do utrzymywania działania aplikacji na zegarie.
 - **Zabezpiecz i Przeprowadź inspekcję dostępu do danych.** Organizacje powinny przeprowadzać inspekcję całego dostępu do danych i korzystać z zaawansowanych funkcji uczenia maszynowego, aby wywoływać odchylenia od zwykłych wzorców dostępu.
-- **Tryb failover.** Operacje w chmurze, które mają małą tolerancję dla awarii, muszą mieć możliwość przełączenia w tryb failover i/lub odzyskania z cyberbezpieczeństwa lub zdarzenia platformy. Te procedury nie mogą być po prostu udokumentowane, ale powinny być rozłożone kwartalnie.
+- **Tryb failover.** Operacje w chmurze, które mają niską tolerancję dla niepowodzenia, muszą mieć możliwość przełączenia w tryb failover lub odzyskania z cyberbezpieczeństwa lub zdarzenia platformy. Te procedury nie mogą być po prostu udokumentowane, ale powinny być rozłożone kwartalnie.
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -8,17 +8,17 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 208bab0093d8add065a8c8f5ad2b92d9ff012fe8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028409"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378041"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>Przykłady implementacji szkieletu platformy Azure Enterprise
 
 > [!NOTE]
-> Tworzenie szkieletu przedsiębiorstwa platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud. Zawartość tego artykułu jest teraz reprezentowana w sekcji gotowych [](../ready/index.md) nowej struktury. Ten artykuł zostanie uznany za przestarzały na początku 2020. Aby rozpocząć korzystanie z nowego procesu, zapoznaj się z tematem gotowym do [omówienia](../ready/index.md), [tworzeniu pierwszej strefy docelowej](../ready/azure-readiness-guide/migration-landing-zone.md)i/lub zagadnieniami dotyczącymi [strefy docelowej](../ready/considerations/index.md).
+> Tworzenie szkieletu przedsiębiorstwa platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud. Zawartość tego artykułu jest teraz reprezentowana w sekcji [gotowych](../ready/index.md) nowej struktury. Ten artykuł zostanie uznany za przestarzały na początku 2020. Aby rozpocząć korzystanie z nowego procesu, zapoznaj się z tematem [gotowym do omówienia](../ready/index.md), [tworzeniu pierwszej strefy docelowej](../ready/azure-setup-guide/migration-landing-zone.md)i/lub [zagadnieniami dotyczącymi strefy docelowej](../ready/considerations/index.md).
 
 W tym artykule przedstawiono przykłady zastosowania przez przedsiębiorstwo zaleceń dla [szkieletu platformy Azure Enterprise](./azure-scaffold.md). Używa fikcyjnej firmy o nazwie contoso do zilustrowania najlepszych rozwiązań dla typowych scenariuszy.
 
@@ -45,11 +45,11 @@ Firma Contoso tworzy system zarządzania kodem źródłowym (BitBucket), który 
 
 Dave tworzy subskrypcję do obsługi narzędzi deweloperskich, które są wspólne dla wszystkich jednostek firmy. Dave musi utworzyć znaczące nazwy dla subskrypcji i grup zasobów (dla aplikacji i sieci). Tworzy następujące grupy zasobów i subskrypcji:
 
-| Element | Name | Opis |
+| Element | Nazwa | Opis |
 | --- | --- | --- |
-| Subscription |Produkcja contoso ETS DeveloperTools |Obsługuje popularne narzędzia deweloperskie |
-| Resource group |BitBucket — prod-RG |Zawiera serwer sieci Web aplikacji i serwer bazy danych |
-| Resource group |corenetworks-prod-rg |Zawiera sieci wirtualne i połączenie bramy lokacja-lokacja |
+| Subskrypcja |Produkcja contoso ETS DeveloperTools |Obsługuje popularne narzędzia deweloperskie |
+| Grupa zasobów |BitBucket — prod-RG |Zawiera serwer sieci Web aplikacji i serwer bazy danych |
+| Grupa zasobów |corenetworks — prod-RG |Zawiera sieci wirtualne i połączenie bramy lokacja-lokacja |
 
 ### <a name="role-based-access-control"></a>Kontrola dostępu oparta na rolach
 
@@ -57,7 +57,7 @@ Po utworzeniu subskrypcji Dave chce mieć pewność, że odpowiednie zespoły i 
 
 Dave przypisuje następujące role dla subskrypcji:
 
-| Role | Przypisane do | Opis |
+| Rola | Przypisane do | Opis |
 | --- | --- | --- |
 | [Właściciel](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) |Identyfikator zarządzany z lokalnego Active Directory firmy Contoso |Ten identyfikator jest kontrolowany z dostępem just-in-Time (JIT) za pomocą narzędzia do zarządzania tożsamościami firmy Contoso i zapewnia pełną inspekcję dostępu właściciela subskrypcji |
 | [Czytelnik zabezpieczeń](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#security-reader) |Dział zarządzania zabezpieczeniami i ryzykiem |Ta rola umożliwia użytkownikom przeglądanie Azure Security Center i stanu zasobów |
@@ -76,10 +76,10 @@ Tworzy następujące zasady za pośrednictwem [Azure Policy](https://docs.micros
 
 | Pole | Efekt | Opis |
 | --- | --- | --- |
-| location |Wizyjn |Inspekcja tworzenia zasobów w dowolnym regionie |
-| type |odrzuć |Odmowa tworzenia maszyn wirtualnych z serii G |
-| tags |odrzuć |Wymagaj tagu właściciela aplikacji |
-| tags |odrzuć |Wymagaj tagu centrum kosztów |
+| location |wizyjn |Inspekcja tworzenia zasobów w dowolnym regionie |
+| type |pozbawić |Odmowa tworzenia maszyn wirtualnych z serii G |
+| tags |pozbawić |Wymagaj tagu właściciela aplikacji |
+| tags |pozbawić |Wymagaj tagu centrum kosztów |
 | tags |łączono |Dołącz nazwę tagu **BusinessUnit** i wartość tagu **ETS** do wszystkich zasobów |
 
 ### <a name="resource-tags"></a>Tagi zasobów
@@ -100,9 +100,9 @@ Firma Contoso — informacje o zabezpieczeniach i zespół ds. zarządzania ryzy
 
 Tworzy następujące zasoby:
 
-| Typ zasobu | Name | Opis |
+| Typ zasobu | Nazwa | Opis |
 | --- | --- | --- |
-| Sieć wirtualna |internal-vnet |Używany z aplikacją BitBucket i jest połączony za pośrednictwem ExpressRoute z siecią firmową firmy Contoso. Podsieć (`bitbucket`) udostępnia aplikację z określoną przestrzenią adresów IP |
+| Sieć wirtualna |wewnętrzna sieć wirtualna |Używany z aplikacją BitBucket i jest połączony za pośrednictwem ExpressRoute z siecią firmową firmy Contoso. Podsieć (`bitbucket`) udostępnia aplikację z określoną przestrzenią adresów IP |
 | Sieć wirtualna |zewnętrzna Sieć wirtualna |Dostępne dla przyszłych aplikacji, które wymagają publicznych punktów końcowych |
 | Sieciowa grupa zabezpieczeń |BitBucket — sieciowej grupy zabezpieczeń |Zapewnia, że obszar ataków tego obciążenia jest zminimalizowany przez umożliwienie połączeń tylko na porcie 443 dla podsieci, w której przebywa aplikacja (`bitbucket`) |
 
@@ -112,9 +112,9 @@ Dave uznaje, że łączność z firmowej sieci firmy Contoso z wewnętrzną siec
 
 Tworzy następującą [blokadę zasobu](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources):
 
-| Typ blokady | Resource | Opis |
+| Typ blokady | Zasób | Opis |
 | --- | --- | --- |
-| **CanNotDelete** |internal-vnet |Uniemożliwia użytkownikom usuwanie sieci wirtualnej lub podsieci, ale nie uniemożliwia dodawania nowych podsieci |
+| **CanNotDelete** |wewnętrzna sieć wirtualna |Uniemożliwia użytkownikom usuwanie sieci wirtualnej lub podsieci, ale nie uniemożliwia dodawania nowych podsieci |
 
 ### <a name="azure-automation"></a>Azure Automation
 
@@ -134,9 +134,9 @@ Liderzy biznesowi w jednostce biznesowej łańcucha dostaw zidentyfikowano róż
 
 Dave loguje się do Enterprise Portal platformy Azure i zauważa, że dział łańcucha dostaw już istnieje. Jednak ponieważ ten projekt jest pierwszym projektem programistycznym dla zespołu łańcucha dostaw na platformie Azure, Dave rozpoznaje potrzebę nowego konta dla zespołu deweloperów. Tworzy konto "R & D" dla swojego zespołu i przypisuje do niego dostęp. Alicja loguje się za pośrednictwem Azure Portal i tworzy dwie subskrypcje: jeden do przechowywania serwerów deweloperskich i jeden do przechowywania serwerów produkcyjnych. Podczas tworzenia następujących subskrypcji następuje zgodność z określonymi wcześniej standardami nazewnictwa:
 
-| Użycie subskrypcji | Name |
+| Użycie subskrypcji | Nazwa |
 | --- | --- |
-| Programowanie |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
+| Tworzenie oprogramowania |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
 | Produkcja |Produkcja contoso SupplyChain Operations LoyaltyCard |
 
 ### <a name="policies"></a>Zasady
@@ -147,7 +147,7 @@ W przypadku **subskrypcji deweloperskich**tworzone są następujące zasady:
 
 | Pole | Efekt | Opis |
 | --- | --- | --- |
-| location |Wizyjn |Inspekcja tworzenia zasobów w dowolnym regionie |
+| location |wizyjn |Inspekcja tworzenia zasobów w dowolnym regionie |
 
 Nie ograniczają one typu jednostki SKU, którą użytkownik może utworzyć podczas opracowywania i nie wymagają tagów dla żadnych grup zasobów ani zasobów.
 
@@ -155,9 +155,9 @@ W przypadku **subskrypcji produkcyjnej**tworzone są następujące zasady:
 
 | Pole | Efekt | Opis |
 | --- | --- | --- |
-| location |odrzuć |Odmów tworzenia wszelkich zasobów poza centrami danych USA |
-| tags |odrzuć |Wymagaj tagu właściciela aplikacji |
-| tags |odrzuć |Wymagaj tagu działu |
+| location |pozbawić |Odmów tworzenia wszelkich zasobów poza centrami danych USA |
+| tags |pozbawić |Wymagaj tagu właściciela aplikacji |
+| tags |pozbawić |Wymagaj tagu działu |
 | tags |łączono |Dołącz tag do każdej grupy zasobów, która wskazuje środowisko produkcyjne |
 
 Nie ograniczają one typu jednostki SKU, którą użytkownik może utworzyć w środowisku produkcyjnym.
@@ -170,7 +170,7 @@ Dave rozumie, że musi mieć określone informacje w celu zidentyfikowania odpow
 | --- | --- |
 | ApplicationOwner |Nazwa osoby, która zarządza tą aplikacją |
 | Dział |Centrum kosztów grupy, która płaci za użycie platformy Azure |
-| EnvironmentType |**Produkcja** (Mimo że subskrypcja obejmuje **produkcyjną** nazwę, łącznie z tym tagiem umożliwia łatwą identyfikację podczas przeglądania zasobów w portalu lub na rachunku) |
+| EnvironmentType |**Produkcja** (mimo że subskrypcja obejmuje **produkcyjną** nazwę, łącznie z tym znacznikiem, umożliwia łatwą identyfikację podczas przeglądania zasobów w portalu lub na rachunku) |
 
 ### <a name="core-networks"></a>Sieci podstawowe
 
@@ -178,13 +178,13 @@ Firma Contoso — informacje o zabezpieczeniach i zespół ds. zarządzania ryzy
 
 W przypadku **subskrypcji deweloperskiej**tworzone są:
 
-| Typ zasobu | Name | Opis |
+| Typ zasobu | Nazwa | Opis |
 | --- | --- | --- |
-| Sieć wirtualna |internal-vnet |Obsługuje środowisko deweloperskie kart lojalnościowych Contoso i jest połączone przez ExpressRoute z siecią firmową firmy Contoso |
+| Sieć wirtualna |wewnętrzna sieć wirtualna |Obsługuje środowisko deweloperskie kart lojalnościowych Contoso i jest połączone przez ExpressRoute z siecią firmową firmy Contoso |
 
 W przypadku **subskrypcji produkcyjnej**tworzone są:
 
-| Typ zasobu | Name | Opis |
+| Typ zasobu | Nazwa | Opis |
 | --- | --- | --- |
 | Sieć wirtualna |zewnętrzna Sieć wirtualna |Obsługuje aplikację karty lojalnościowej i nie jest połączona bezpośrednio z ExpressRoute firmy Contoso. Kod jest wypychany przez system kodu źródłowego bezpośrednio do usług PaaS. |
 | Sieciowa grupa zabezpieczeń |loyaltycard — sieciowej grupy zabezpieczeń |Zapewnia, że obszar ataków tego obciążenia jest zminimalizowany przez umożliwienie komunikacji wyłącznie w ramach protokołu TCP 443. Firma Contoso bada także za pomocą zapory aplikacji sieci Web w celu uzyskania dodatkowej ochrony. |
@@ -195,7 +195,7 @@ Dave i Alicja przydaje i decyduje się dodać blokady zasobów dla niektórych k
 
 Tworzą następujące blokady:
 
-| Typ blokady | Resource | Opis |
+| Typ blokady | Zasób | Opis |
 | --- | --- | --- |
 | **CanNotDelete** |zewnętrzna Sieć wirtualna |Aby uniemożliwić osobom usuwanie sieci wirtualnej lub podsieci. Blokada nie zapobiega dodawaniu nowych podsieci |
 

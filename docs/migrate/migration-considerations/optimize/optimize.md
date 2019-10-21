@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 53ff6f0d32b80ef9c89d4ebd0234dd3442412907
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022647"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548427"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Testy porównawcze i zmiana rozmiaru zasobów w chmurze
 
@@ -30,7 +30,7 @@ W chmurze modele ewidencjonowania i aprowizacji eliminują opóźnienia, które 
 Kiedy zasób powinien być optymalizowany &mdash; podczas czy po migracji? Prosta odpowiedź brzmi: *podczas i po*. Nie jest to jednak całkowicie dokładna odpowiedź. Aby to wyjaśnić, zapoznaj się z dwoma podstawowymi scenariuszami optymalizacji rozmiaru zasobów:
 
 - **Planowana zmiana rozmiaru.** Często zasób jest ewidentnie zbyt duży i nie w pełni wykorzystywany, w związku z czym należy zmienić jego rozmiar podczas wdrażania. W tym przypadku określenie, czy rozmiar zasobu został pomyślnie zmieniony, wymaga testowania akceptacyjnego przez użytkowników po migracji. Jeśli użytkownik zaawansowany nie doświadcza żadnych strat wydajności i funkcjonalności podczas testowania, można wnioskować, że rozmiar tego zasobu został ustalony pomyślnie.
-- **Optymalizacja.** W przypadkach, gdy potrzeba optymalizacji jest niejasna, zespoły IT powinny używać podejścia opartego na danych do zarządzania rozmiarem zasobów. Korzystając z testów porównawczych wydajności zasobu, zespół IT może podjąć poparte wiedzą decyzje dotyczące najbardziej odpowiedniego rozmiaru, usług, skali i architektury rozwiązania. Następnie może zmienić rozmiar i przetestować teorie wydajności po migracji.
+- **Optymalizacja.** W przypadkach, gdy potrzeba optymalizacji jest niejasna, zespoły IT powinny używać podejścia opartego na danych do zarządzania rozmiarem zasobów. Korzystając z wzorców wydajności zasobów, zespół IT może podejmować decyzje o najbardziej odpowiednim rozmiarze, usługach, skali i architekturze rozwiązania. Następnie może zmienić rozmiar i przetestować teorie wydajności po migracji.
 
 Podczas migracji można używać popartych wiedzą i doświadczeniem przypuszczeń i eksperymentować z rozmiarem. Jednak prawdziwa optymalizacja zasobów wymaga danych opartych na rzeczywistej wydajności w środowisku chmury. W celu zapewnienia prawdziwej optymalizacji zespół IT musi najpierw zaimplementować metody monitorowania wydajności i wykorzystania zasobów.
 

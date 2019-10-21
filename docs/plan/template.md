@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022306"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549187"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan wdrażania chmury i usługa Azure DevOps
 
@@ -45,10 +45,10 @@ Aby przygotować stację roboczą do edycji zbiorczej, zobacz [zbiorcze Dodawani
 
 Plan wdrażania chmury organizuje działania według typu działania:
 
-- **Epiki**: *Epiku* reprezentuje ogólną fazę cyklu wdrożenia chmury.
-- **Funkcje**: Funkcje służą do organizowania określonych celów w każdej fazie. Na przykład migracja określonego obciążenia będzie jedną funkcją.
-- **Historie użytkownika**: Grupa historie użytkownika działa w logicznych kolekcjach działań na podstawie określonego celu.
-- **Zadania podrzędne**: Zadania są rzeczywistą czynnością do wykonania.
+- **Epiki**: *epiku* reprezentuje ogólną fazę cyklu wdrożenia chmury.
+- **Funkcje**: funkcje są używane do organizowania określonych celów w każdej fazie. Na przykład migracja określonego obciążenia będzie jedną funkcją.
+- **Scenariusze użytkownika**: Grupa historie użytkownika działa w logicznych kolekcjach działań na podstawie określonego celu.
+- **Zadania**: zadania są rzeczywistą czynnością do wykonania.
 
 W każdej warstwie działania są następnie sekwencjonowane na podstawie zależności. Działania są połączone z artykułami w strukturze wdrażania w chmurze w celu wyjaśnienia zamierzenia lub zadania.
 
@@ -59,15 +59,15 @@ Najwyraźniejszy widok planu wdrażania w chmurze pochodzi z widoku zaległości
 
 ## <a name="align-the-cloud-adoption-plan"></a>Dopasuj plan wdrażania chmury
 
-Na stronach przeglądu faz strategii i planowania cyklu życia wdrożenia chmury każdy odwołuje się do [strategii i szablonu planowania struktury wdrażania w chmurze](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Ten szablon organizuje decyzje i punkty danych, które będą wyrównać szablon planu wdrożenia chmury przy użyciu określonych planów na potrzeby wdrażania. Jeśli jeszcze tego nie zrobiono, warto wykonać ćwiczenia związane z [strategią](../strategy/index.md) i planowaniem przed [](../plan/index.md) wyrównaniem nowego projektu.
+Na stronach przeglądu faz strategii i planowania cyklu życia wdrożenia chmury każdy odwołuje się do [strategii i szablonu planowania struktury wdrażania w chmurze](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Ten szablon organizuje decyzje i punkty danych, które będą wyrównać szablon planu wdrożenia chmury przy użyciu określonych planów na potrzeby wdrażania. Jeśli jeszcze tego nie zrobiono, warto wykonać ćwiczenia związane z [strategią](../strategy/index.md) i [planowaniem](../plan/index.md) przed wyrównaniem nowego projektu.
 
 Poniższe artykuły obsługują wyrównania planu wdrażania chmury:
 
-- [Obciążenia](./workloads.md): Wyrównaj funkcje w Migracja do chmury epiku, aby przechwytywać każde obciążenie, które ma zostać zmigrowane lub zmodernizowane. Dodawanie i modyfikowanie tych funkcji w celu przechwycenia nakładu pracy w celu przeprowadzenia migracji 10 najważniejszych obciążeń.
-- [Zasoby](./assets.md): Każdy element zawartości (maszyna wirtualna, aplikacja lub dane) jest reprezentowany przez scenariusze użytkownika w poszczególnych obciążeniach. Dodaj i zmodyfikuj te historie użytkownika, aby dostosować je do swoich cyfr.
-- [Racjonalizacja](./review-rationalization.md): W miarę definiowania każdego obciążenia można zakwestionować początkowe założenia dotyczące tego obciążenia. Może to spowodować wprowadzenie zmian w zadaniach w ramach każdego elementu zawartości.
-- [Utwórz plany wydania](./iteration-paths.md): Ścieżki iteracji ustanawiają plany wydań, dopasowując wysiłki do różnych wersji i iteracji.
-- [Ustalanie osi czasu](./timelines.md): Zdefiniowanie dat rozpoczęcia i zakończenia dla każdej iteracji powoduje utworzenie osi czasu do zarządzania ogólnym projektem.
+- [Obciążenia](./workloads.md): Wyrównaj funkcje w migracja do chmury epiku, aby przechwytywać każde obciążenie, które ma zostać zmigrowane lub zmodernizowane. Dodawanie i modyfikowanie tych funkcji w celu przechwycenia nakładu pracy w celu przeprowadzenia migracji 10 najważniejszych obciążeń.
+- [Zasoby](./assets.md): każdy zasób (maszyna wirtualna, aplikacja lub dane) jest reprezentowany przez scenariusze użytkownika w poszczególnych obciążeniach. Dodaj i zmodyfikuj te historie użytkownika, aby dostosować je do swoich cyfr.
+- [Racjonalizacja](./review-rationalization.md): w miarę definiowania każdego obciążenia można zakwestionować początkowe założenia dotyczące tego obciążenia. Może to spowodować wprowadzenie zmian w zadaniach w ramach każdego elementu zawartości.
+- [Tworzenie planów wydania](./iteration-paths.md): ścieżki iteracji ustanawiają plany wydania przez dostosowanie wysiłków do różnych wersji i iteracji.
+- [Ustalanie osi czasu](./timelines.md): Definiowanie dat rozpoczęcia i zakończenia dla każdej iteracji powoduje utworzenie osi czasu do zarządzania ogólnym projektem.
 
 Te pięć artykułów ułatwiają wykonywanie zadań związanych z wyrównywaniem wymaganych do rozpoczęcia zarządzania zastosowaniami. W następnym kroku zostanie rozpoczęte ćwiczenie wyrównania.
 

@@ -9,24 +9,24 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 24799668ab898822cf4a1d82ee2bf6906af71773
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023431"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547808"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racjonalizacja majątku cyfrowego
 
-Racjonalizacja chmury to proces oceniania zasobów w celu ustalenia najlepszego podejścia do obsługi ich w chmurze. Po ustaleniu [podejścia](./approach.md) i zagregowaniu spisu można [](./inventory.md)rozpocząć racjonalizację chmury. [Racjonalizacja chmury](./rationalize.md) omawia najbardziej typowe opcje racjonalizacji.
+Racjonalizacja chmury to proces oceniania zasobów w celu ustalenia najlepszego podejścia do obsługi ich w chmurze. Po ustaleniu [podejścia](./approach.md) i zagregowaniu [spisu](./inventory.md)można rozpocząć racjonalizację chmury. [Racjonalizacja chmury](./rationalize.md) omawia najbardziej typowe opcje racjonalizacji.
 
 ## <a name="traditional-view-of-rationalization"></a>Tradycyjny widok racjonalizacji
 
 Można łatwo zrozumieć racjonalizację podczas wizualizowania tradycyjnego procesu racjonalizacji jako złożonego drzewa decyzyjnego. Każdy element zawartości w obszarze cyfrowym jest podawany przez proces, który skutkuje jedną z pięciu odpowiedzi (5 RS). W przypadku małych Estates ten proces działa prawidłowo. W przypadku większych Estates jest to niewydajne i może prowadzić do znaczących opóźnień. Przeanalizujmy proces, aby zobaczyć dlaczego. Następnie przedstawimy bardziej wydajny model.
 
-**Towar** Dokładne spisy zasobów, w tym aplikacje, oprogramowanie, sprzęt, systemy operacyjne i metryki wydajności systemu, są wymagane do ukończenia pełnej racjonalizacji przy użyciu tradycyjnych modeli.
+**Spis:** Dokładne spisy zasobów, w tym aplikacje, oprogramowanie, sprzęt, systemy operacyjne i metryki wydajności systemu, są wymagane do ukończenia pełnej racjonalizacji przy użyciu tradycyjnych modeli.
 
-**Analiza ilościowa:** W drzewie decyzyjnym pytania ilościowe decydują o pierwszej warstwie decyzji. Często zadawane pytania są następujące: Czy zasób jest używany dzisiaj? Jeśli tak, czy jest to zoptymalizowane i poprawnie dopasowane? Jakie zależności istnieją między elementami zawartości? Te pytania mają kluczowe znaczenie dla klasyfikacji spisu.
+**Analiza ilościowa:** W drzewie decyzyjnym pytania ilościowe decydują o pierwszej warstwie decyzji. Często zadawane pytania są następujące: czy zasób jest używany dzisiaj? Jeśli tak, czy jest to zoptymalizowane i poprawnie dopasowane? Jakie zależności istnieją między elementami zawartości? Te pytania mają kluczowe znaczenie dla klasyfikacji spisu.
 
 **Analiza jakościowa:** Kolejny zestaw decyzji wymaga analizy ludzkiej w formie analizy jakościowej. Często pytania, które znajdują się w tym miejscu, są unikatowe dla rozwiązania i można do nich odpowiedzieć tylko osoby zainteresowane i Użytkownicy zaawansowani. Te decyzje zwykle opóźnią proces, co zmniejsza się znacznie. Ta analiza zwykle wykorzystuje od 40 do 80 godzin w danym miesiącu.
 
@@ -48,7 +48,7 @@ W pozostałej części tego artykułu opisano alternatywne podejście, znane jak
 
 Pełna racjonalizacja dużej ilości cyfrowej jest podatna na ryzyko i może odnieść opóźnienia ze względu na złożoność. Przyjęto założenie, że opóźnione decyzje rozkładają obciążenie firmy, aby zmniejszyć ryzyko wystąpienia przeszkody. W miarę upływu czasu takie podejście tworzy model organiczny służący do opracowywania procesów i doświadczenia wymagane do bardziej wydajnego podejmowania kwalifikowaną decyzje o racjonalizacji.
 
-### <a name="inventory-reduce-discovery-data-points"></a>Towar Zmniejsz liczbę punktów danych odnajdywania
+### <a name="inventory-reduce-discovery-data-points"></a>Spis: Zmniejsz liczbę punktów danych odnajdywania
 
 Niektóre organizacje zainwestowają czas, energię i koszty w celu zapewnienia dokładnego, w czasie rzeczywistym spisu pełnej cyfrowej. W przypadku utraty, kradzieży, cykli odświeżania i pracowników często należy uzasadnić szczegółowe śledzenie zasobów urządzeń użytkowników końcowych. Jednak zwrot z inwestycji związanych z utrzymywaniem dokładnego serwera i spisu aplikacji w tradycyjnym lokalnym centrum danych jest często niski. Większość organizacji IT ma inne problemy, które należy spełnić, aby nie śledzić użycia stałych zasobów w centrum danych.
 
@@ -64,7 +64,7 @@ Bez względu na sposób odnajdywania spisu analizy ilościowe mogą być na pocz
 
 Na przykład jeśli organizacja jest w pośrodku migracji IaaS do chmury, można założyć, że większość obciążeń zostanie wycofana lub przeszukana.
 
-### <a name="qualitative-analysis-temporary-assumptions"></a>Analiza jakościowa: Tymczasowe założenia
+### <a name="qualitative-analysis-temporary-assumptions"></a>Analiza jakościowa: tymczasowe założenia
 
 Zmniejszając liczbę potencjalnych wyników, łatwiej jest uzyskać wstępną decyzję dotyczącą przyszłego stanu elementu zawartości. Po zmniejszeniu tych opcji można także zmniejszyć liczbę pytań na ten wczesny etap.
 

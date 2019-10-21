@@ -1,19 +1,19 @@
 ---
 title: Jaką rolę odgrywa replikacja i synchronizacja w procesie migracji?
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Proces migracji w chmurze, który koncentruje się na zadaniach migrowania obciążeń do chmury.
+description: Proces migracji do chmury, który koncentruje się na zadaniach migrowania obciążeń do chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e65631f0adf2584bbf0ee24b10d20df73ece715
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 62c12796abf8921c13cebe471fe555d012bab15c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833416"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549130"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,7 @@ Aby móc wykonywać procesy replikacji i synchronizacji oraz zarządzać nimi, k
 Podczas planowania i wykonywania replikacji dowolnego źródła danych binarnych do nowego miejsca docelowego należy pamiętać o istnieniu kilku podstawowych praw, których trzeba przestrzegać.
 
 - **Szybkość światła.** Podczas przenoszenia dużych ilości danych światłowód jest nadal najszybszą opcją. Niestety, za pomocą tych kabli można przenosić dane z szybkością tylko dwóch trzecich szybkości światła. Oznacza to, że nie ma metody zapewniającej natychmiastową lub nieograniczoną replikację danych.
-- **Szybkość potoku WAN.** Innym czynnikiem oprócz szybkości przenoszenia danych jest przepustowość pasma. Jest on definiowany jako ilość danych na sekundę, które mogą być przenoszone przez istniejącą sieć WAN do docelowego centrum danych.
+- **Szybkość potoku WAN.** Większa niż szybkość przenoszenia danych to przepustowość pasma, która definiuje ilość danych na sekundę, które mogą być przenoszone przez istniejącą sieć WAN do docelowego centrum danych.
 - **Szybkość rozbudowy sieci WAN.** Jeśli pozwala na to budżet, do rozwiązania WAN firmy można dodać dodatkową przepustowość. Może jednak upłynąć kilka tygodni lub nawet miesięcy, zanim dodatkowe połączenia światłowodowe zostaną zainstalowane, zainicjowane i zintegrowane.
 - **Szybkość dysków.** Jeśli dane mogłyby być szybciej przenoszone i nie byłoby limitu przepustowości między źródłowymi plikami binarnymi i ich miejscem docelowym, ograniczeniem byłyby prawa fizyki. Dane można replikować maksymalnie z taką szybkością, z jaką można je odczytać z dysków źródłowych. Odczytanie poszczególnych jedynek i zer z każdego obracającego się dysku w centrum danych zabiera nieco czasu.
 - **Szybkość obliczeń ludzkich.** Dyski i światło zapewniają większą szybkość niż szybkość podejmowania decyzji przez ludzi. Czas ten wydłuża się jeszcze, gdy osoby muszą współpracować ze sobą w grupie i podejmować wspólne decyzje. Replikacja nigdy nie przezwycięży opóźnień związanych z ludzkimi procesami analitycznymi.

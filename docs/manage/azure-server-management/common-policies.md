@@ -8,19 +8,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9eee6f81922c88304c0ca5bf7edd6572daf493d8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0d998f06e73c03a74cdaf5fbd75cb605fa9a2fbb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029304"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547316"
 ---
 # <a name="common-azure-policy-examples"></a>Typowe przykłady Azure Policy
 
 [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) może pomóc w zastosowaniu ładu w zasobach w chmurze. Ta usługa może pomóc w tworzeniu guardrails, które zapewniają zgodność całej firmy z wymaganiami dotyczącymi zasad zarządzania. Aby utworzyć zasady, użyj Azure Portal lub poleceń cmdlet programu PowerShell. W tym artykule przedstawiono przykłady poleceń cmdlet programu PowerShell.
 
 > [!NOTE]
-> W przypadku Azure Policy zasady wymuszania (**deployIfNotExists**) nie są automatycznie wdrażane na istniejących maszynach wirtualnych. Aby zapewnić zgodność tych maszyn wirtualnych, należy przeprowadzić korygowanie. Aby uzyskać więcej informacji, zobacz korygowanie niezgodnych [zasobów przy użyciu Azure Policy](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
+> W przypadku Azure Policy zasady wymuszania (**deployIfNotExists**) nie są automatycznie wdrażane na istniejących maszynach wirtualnych. Aby zapewnić zgodność tych maszyn wirtualnych, należy przeprowadzić korygowanie. Aby uzyskać więcej informacji, zobacz [korygowanie niezgodnych zasobów przy użyciu Azure Policy](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
 
 ## <a name="common-policy-examples"></a>Typowe przykłady zasad
 
@@ -36,7 +36,7 @@ Możesz też uruchomić to polecenie cmdlet, aby znaleźć zasady:
 Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*location*") }
 ```
 
-Poniższy skrypt przedstawia sposób przypisywania zasad. Aby użyć skryptu, Zmień `$SubscriptionID` wartość tak, aby wskazywała na subskrypcję, do której chcesz przypisać zasady. Przed uruchomieniem skryptu należy zalogować się przy użyciu polecenia cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
+Poniższy skrypt przedstawia sposób przypisywania zasad. Aby użyć skryptu, Zmień wartość `$SubscriptionID` tak, aby wskazywała na subskrypcję, do której chcesz przypisać zasady. Przed uruchomieniem skryptu należy zalogować się przy użyciu polecenia cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
 
 ```powershell
 #Specify the value for $SubscriptionID.
@@ -51,7 +51,7 @@ $policyParam = '{"listOfAllowedLocations":{"value":["eastus","westus"]}}'
 New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations for resource creation" -Scope $scope -PolicyDefinition $AllowedLocationPolicy -Location eastus -PolicyParameter $policyparam
 ```
 
-Za pomocą tego samego skryptu można zastosować inne zasady omówione w tym artykule. Wystarczy zamienić identyfikator GUID w wierszu, który `$AllowedLocationPolicy` ustawia identyfikator GUID zasad, które chcesz zastosować.
+Za pomocą tego samego skryptu można zastosować inne zasady omówione w tym artykule. Wystarczy zamienić identyfikator GUID w wierszu, który ustawia `$AllowedLocationPolicy` z identyfikatorem GUID zasad, które chcesz zastosować.
 
 ### <a name="block-certain-resource-types"></a>Blokuj wybrane typy zasobów
 
@@ -73,9 +73,9 @@ Platforma Azure oferuje szeroką gamę rozmiarów maszyn wirtualnych do obsługi
 
 Za pomocą tych zasad można wdrożyć rozszerzenie Microsoft IaaSAntimalware z konfiguracją domyślną na maszynach wirtualnych, które nie są chronione przez oprogramowanie chroniące przed złośliwym kodem.
 
-Identyfikator GUID zasad to `2835b622-407b-4114-9198-6f7064cbe0dc`.
+Identyfikator GUID zasad jest `2835b622-407b-4114-9198-6f7064cbe0dc`.
 
-Poniższy skrypt przedstawia sposób przypisywania zasad. Aby użyć skryptu, Zmień `$SubscriptionID` wartość tak, aby wskazywała na subskrypcję, do której chcesz przypisać zasady. Przed uruchomieniem skryptu należy zalogować się przy użyciu polecenia cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
+Poniższy skrypt przedstawia sposób przypisywania zasad. Aby użyć skryptu, Zmień wartość `$SubscriptionID` tak, aby wskazywała na subskrypcję, do której chcesz przypisać zasady. Przed uruchomieniem skryptu należy zalogować się przy użyciu polecenia cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
 
 ```powershell
 #Specify the value for $SubscriptionID.

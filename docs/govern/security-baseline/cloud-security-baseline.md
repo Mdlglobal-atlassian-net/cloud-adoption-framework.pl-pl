@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 40bcd90d632bedd4e924942ac6efae5034cc0af8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 216614c06f1638bf25149dac99f9bd258e9364aa
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221770"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548016"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Informacje o linii bazowej zabezpieczeń chmury
 
@@ -36,7 +36,7 @@ Co więcej, Każda strategia zabezpieczeń w chmurze powinna uwzględniać nast�
 
 ## <a name="protecting-data-and-privacy"></a>Ochrona danych i prywatności
 
-W przypadku organizacji w całym&mdash;świecie, niezależnie od tego, czy przedsiębiorstwa,&mdash;organizacje niedochodowe lub firmy w chmurze, stały się częścią ich trwającej strategii IT. Usługi Cloud Services zapewniają organizacjom o wszystkich rozmiarach dostęp do praktycznie nieograniczonego magazynu danych przy zwalnianiu ich z konieczności zakupu, obsługi i aktualizowania własnych sieci i systemów komputerowych. Dostawcy usług w chmurze firmy Microsoft i innych dostawców oferują infrastrukturę IT, platformę i oprogramowanie jako usługę (SaaS), dzięki czemu klienci mogą szybko skalować w górę lub w dół w miarę potrzeb i płacić tylko za moc obliczeniową i używane przez nich magazyn.
+W przypadku organizacji na całym świecie &mdash;whether rządy, organizacje niedochodowe lub firmy &mdash;cloud Computing stają się kluczową częścią ich ciągłej strategii INFORMATYCZNej. Usługi Cloud Services zapewniają organizacjom o wszystkich rozmiarach dostęp do praktycznie nieograniczonego magazynu danych przy zwalnianiu ich z konieczności zakupu, obsługi i aktualizowania własnych sieci i systemów komputerowych. Dostawcy usług w chmurze firmy Microsoft i innych dostawców oferują infrastrukturę IT, platformę i oprogramowanie jako usługę (SaaS), dzięki czemu klienci mogą szybko skalować w górę lub w dół w miarę potrzeb i płacić tylko za moc obliczeniową i używane przez nich magazyn.
 
 Jednak w miarę jak organizacje nadal korzystają z zalet usług w chmurze, takich jak zwiększone wybór, elastyczność i elastyczność przy jednoczesnym zwiększeniu wydajności i obniżeniu kosztów IT, muszą rozważyć, jak wprowadzenie usług w chmurze wpływa na ich prywatność, bezpieczeństwo i zgodność stan. Firma Microsoft pracowała nad nieskalowalnością, niezawodnością i zarządzaniem ofertami w chmurze, ale również w celu zapewnienia, że dane klientów są chronione i używane w przejrzysty sposób.
 
@@ -44,7 +44,7 @@ Zabezpieczenia to zasadniczy składnik silnych zabezpieczeń danych we wszystkic
 
 ## <a name="risk-mitigation"></a>Ograniczanie ryzyka
 
-Dwa największe ryzyka w dowolnym centrum danych można grupować w dwa źródła: Systemy przedawnienia i błąd ludzki. Ochrona przed tymi dwoma zagrożeniami jest minimalnym warunkiem definiującym strategię zabezpieczeń IT. Ta sama wartość dotyczy chmury. Poniżej przedstawiono kilka przykładów kontroli, które mogą być wprowadzane w celu korygowania ryzyka i wzmocnienia strategii zabezpieczeń w chmurze.
+Dwa największe ryzyka w dowolnym centrum danych można zgrupować do dwóch źródeł: systemów przedawnienia i błędu ludzkiego. Ochrona przed tymi dwoma zagrożeniami jest minimalnym warunkiem definiującym strategię zabezpieczeń IT. Ta sama wartość dotyczy chmury. Poniżej przedstawiono kilka przykładów kontroli, które mogą być wprowadzane w celu korygowania ryzyka i wzmocnienia strategii zabezpieczeń w chmurze.
 
 - **Starsze systemy:** Wiele składników w lokalnych rozwiązaniach centrów danych obejmuje oprogramowanie, sprzęt i procesy, które stanowią wstępne bieżące zagrożenia bezpieczeństwa. Jeśli to możliwe, należy skorygować, zamienić lub wycofać te systemy podczas transformacji w chmurze. Oczywiście nie zawsze jest to możliwe. Jeśli wszystkie starsze systemy pozostaną w środowisku produkcyjnym w ramach rozwiązania hybrydowego, ważne jest, aby te systemy zostały objęte spisem i zrozumiałe podczas wirtualnego projektu centrum danych. Dzięki temu zespół projektu może wyeliminować lub kontrolować dostęp do tych systemów z chmury.
 - **Procesy i mechanizmy zabezpieczeń IT:** Zespoły projektowe w chmurze powinny być odświeżane w istniejących procesach zabezpieczeń IT i kontrolach, aby przekazywać je do chmury. W idealnym scenariuszu członek zespołu ds. zabezpieczeń IT będzie szkolony w cyberbezpieczeństwa i dedykowany jako członek zespołów projektowych i wykonawczych.

@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be35763ea3beeec5977073dab8ef98c2e441b537
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025144"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548794"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Skalowanie za pomocą wielu subskrypcji platformy Azure
 
@@ -45,7 +45,7 @@ Inne sytuacje mogą wymagać użycia dodatkowych subskrypcji. Rozszerzając swó
 
 - Subskrypcje w regionach chmury publicznej i regionach w chmurze suwerennych lub rządowych mają różne ograniczenia. Wynikają one często z różnych poziomów klasyfikacji danych w poszczególnych środowiskach.
 
-- W przypadku całkowitej segregacji różnych grup użytkowników z powodów związanych z zabezpieczeniami lub zgodnością mogą być wymagane oddzielne subskrypcje. Na przykład krajowe organizacje rządowe mogą wymagać ograniczenia dostępu do subskrypcji tylko do obywateli.
+- W przypadku całkowitej segregacji różnych grup użytkowników z powodów związanych z zabezpieczeniami lub zgodnością mogą być wymagane oddzielne subskrypcje. Na przykład Krajowa organizacja rządowa może potrzebować ograniczyć dostęp do subskrypcji tylko dla obywateli.
 
 - Różne subskrypcje mogą mieć różne typy ofert z indywidualnymi warunkami i korzyściami.
 
@@ -53,7 +53,7 @@ Inne sytuacje mogą wymagać użycia dodatkowych subskrypcji. Rozszerzając swó
 
 - Rygorystyczne kontrole finansowe lub geopolityczne mogą wymagać oddzielnych ustaleń finansowych dla określonych subskrypcji. Te problemy mogą obejmować zagadnienia dotyczące suwerenności danych, firm z wieloma jednostkami zależnymi, a także oddzielnego księgowania i rozliczeń za jednostki biznesowe w różnych krajach i różnych walutach.
 
-- Zasoby platformy Azure utworzone przy użyciu klasycznego modelu wdrażania należy wyizolować w oddzielnej subskrypcji. Zabezpieczenia zasobów klasycznych różnią się od zabezpieczeń zasobów wdrażanych za pomocą narzędzia Azure Resource Manager. Zasad platformy Azure nie można stosować do zasobów klasycznych.
+- Zasoby platformy Azure utworzone przy użyciu klasycznego modelu wdrażania należy wyizolować w oddzielnej subskrypcji. Zabezpieczenia zasobów klasycznych różnią się od zabezpieczeń zasobów wdrażanych za pomocą narzędzia Azure Resource Manager. Nie można zastosować zasad platformy Azure do zasobów klasycznych.
 
 - Administratorzy usługi korzystający z zasobów klasycznych mają takie same uprawnienia jak właściciele subskrypcji z kontrolą dostępu opartą na rolach. Trudno jest wystarczająco ograniczyć dostęp tych administratorów usługi w subskrypcji, w której zasoby klasyczne są używane w połączeniu z zasobami narzędzia Resource Manager.
 
@@ -65,7 +65,7 @@ Wiele typów zasobów można przenosić między subskrypcjami lub używać zauto
 
 Jeśli masz tylko kilka subskrypcji, niezależne zarządzanie nimi jest stosunkowo proste. Jeśli jednak masz wiele subskrypcji, rozważ utworzenie hierarchii grup zarządzania, aby uprościć zarządzanie subskrypcjami i zasobami.
 
-Grupy zarządzania umożliwiają efektywne zarządzanie dostępem, zasadami i zgodnością w subskrypcjach organizacji. Każda grupa zarządzania jest kontenerem dla co najmniej jednej subskrypcji.
+Grupy zarządzania umożliwiają wydajne zarządzanie dostępem, zasadami i zgodnością z subskrypcjami organizacji. Każda grupa zarządzania jest kontenerem dla co najmniej jednej subskrypcji.
 
 Grupy zarządzania są uporządkowane w jednej hierarchii. Ta hierarchia jest definiowana w dzierżawie usługi Azure Active Directory (Azure AD) w celu dopasowania jej do struktury i potrzeb organizacji. Najwyższy poziom jest nazywany *główną grupą zarządzania*. W hierarchii można zdefiniować maksymalnie sześć poziomów grup zarządzania. Każda subskrypcja jest zawarta tylko w jednej grupie zarządzania.
 
@@ -76,7 +76,7 @@ Platforma Azure oferuje cztery poziomy zakresu zarządzania: grupy zarządzania,
 
 Przy użyciu tego modelu dziedziczenia można rozmieścić subskrypcje w hierarchii, tak aby w każdej subskrypcji były stosowane odpowiednie zasady i kontrole zabezpieczeń.
 
-![Cztery poziomy zakresu do organizowania zasobów platformy Azure](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![Cztery poziomy zakresu do organizowania zasobów platformy Azure](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
 
 Każdy dostęp lub zasady w głównej grupie zarządzania dotyczy wszystkich zasobów w katalogu. Należy starannie rozważyć, które elementy są definiowane w tym zakresie. Należy uwzględnić tylko te przypisania, które muszą być dostępne.
 
@@ -96,7 +96,7 @@ Aby uzyskać więcej informacji, zobacz [Organizowanie zasobów przy użyciu gru
 - Jeśli to możliwe, podczas tworzenia nowych subskrypcji [używaj nazwy głównej usługi](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription). Zdefiniuj grupę zabezpieczeń, która może żądać nowych subskrypcji za pośrednictwem zautomatyzowanego przepływu pracy.
 - Jeśli jesteś klientem mającym umowę Enterprise (EA), poproś pomoc techniczną platformy Azure o zablokowanie możliwości tworzenia subskrypcji niezwiązanych z umową EA dla organizacji.
 
-## <a name="related-resources"></a>Powiązane zasoby
+## <a name="related-resources"></a>Zasoby powiązane
 
 - [Podstawowe pojęcia dotyczące platformy Azure](./fundamental-concepts.md).
 - [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](https://docs.microsoft.com/azure/governance/management-groups).

@@ -1,19 +1,19 @@
 ---
-title: 'Migracja komputera mainframe: Migracja aplikacji mainframe'
+title: 'Migracja komputera mainframe: migracja aplikacji mainframe'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Migruj aplikacje ze środowisk mainframe na platformę Azure, sprawdzoną, wysoką dostępność i skalowalną infrastrukturę dla systemów, które są obecnie uruchamiane na komputerach mainframe.
+description: Migruj aplikacje ze środowisk mainframe na platformę Azure, czyli sprawdzoną, wysoce dostępną i skalowalną infrastrukturę dla systemów, które obecnie działają na komputerach mainframe.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ba2d68a2b382ccccf0d124a57d33d1344476c3dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024410"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547944"
 ---
 # <a name="mainframe-application-migration"></a>Migracja aplikacji mainframe
 
@@ -21,15 +21,15 @@ W przypadku migrowania aplikacji ze środowisk mainframe na platformę Azure wi�
 
 Migracja aplikacji zwykle obejmuje co najmniej jedną z następujących strategii:
 
-- **Ponowne hostowanie:** Możesz przenieść istniejący kod, programy i aplikacje z komputera mainframe, a następnie ponownie skompilować kod do uruchomienia w emulatorze mainframe hostowanym w wystąpieniu w chmurze. Takie podejście zwykle zaczyna się od przeniesienia aplikacji do emulatora opartego na chmurze, a następnie Migrowanie bazy danych do bazy danych opartej na chmurze. Niektóre Inżynieria i refaktoryzacji są wymagane wraz z konwertowaniem danych i plików.
+- **Rehostowanie:** Możesz przenieść istniejący kod, programy i aplikacje z komputera mainframe, a następnie ponownie skompilować kod do uruchomienia w emulatorze mainframe hostowanym w wystąpieniu w chmurze. Takie podejście zwykle zaczyna się od przeniesienia aplikacji do emulatora opartego na chmurze, a następnie Migrowanie bazy danych do bazy danych opartej na chmurze. Niektóre Inżynieria i refaktoryzacji są wymagane wraz z konwertowaniem danych i plików.
 
     Alternatywnie można rehostować za pomocą tradycyjnego dostawcy hostingu. Jedną z głównych korzyści związanych z chmurą jest zarządzanie infrastrukturą. Możesz znaleźć dostawcę centrum danych, który będzie hostować Twoje obciążenia komputera mainframe. Ten model może kupić czas, zmniejszyć liczbę dostawców i zwiększyć koszty przejściowe.
 
-- **Zwolnić** Wszystkie aplikacje, które nie są już potrzebne, powinny zostać wycofane przed migracją.
+- **Wycofywanie:** Wszystkie aplikacje, które nie są już potrzebne, powinny zostać wycofane przed migracją.
 
-- **Przebudowa:** Niektóre organizacje decydują się na całkowite odpisanie programów przy użyciu nowoczesnych technik. Mając na względzie dodatkowy koszt i złożoność tego podejścia, nie jest to powszechnie zgodne z podejściem "Unieś i Shift". Często po migracji tego typu warto rozpocząć zastępowanie modułów i kodu za pomocą aparatów transformacji kodu.
+- **Kompiluj ponownie:** Niektóre organizacje decydują się na całkowite odpisanie programów przy użyciu nowoczesnych technik. Mając na względzie dodatkowy koszt i złożoność tego podejścia, nie jest to powszechnie zgodne z podejściem "Unieś i Shift". Często po migracji tego typu warto rozpocząć zastępowanie modułów i kodu za pomocą aparatów transformacji kodu.
 
-- **Zastąpienie:** Takie podejście zastępuje funkcję mainframe z równoważnymi funkcjami w chmurze. Oprogramowanie jako usługa (SaaS) to jedna z opcji, która korzysta z rozwiązania utworzonego w ramach problemu dla przedsiębiorstw, takiego jak finanse, zasoby ludzkie, produkcja i planowanie zasobów przedsiębiorstwa. Ponadto dostępne są wiele aplikacji specyficznych dla branży, które rozwiązują problemy, które są używane do rozwiązywania niestandardowych rozwiązań typu mainframe.
+- **Zamień:** Takie podejście zastępuje funkcję mainframe z równoważnymi funkcjami w chmurze. Oprogramowanie jako usługa (SaaS) to jedna z opcji, która korzysta z rozwiązania utworzonego w ramach problemu dla przedsiębiorstw, takiego jak finanse, zasoby ludzkie, produkcja i planowanie zasobów przedsiębiorstwa. Ponadto dostępne są wiele aplikacji specyficznych dla branży, które rozwiązują problemy, które są używane do rozwiązywania niestandardowych rozwiązań typu mainframe.
 
 Należy rozważyć rozpoczęcie od planowania obciążeń, które mają być początkowo migrowane, a następnie określić te wymagania dotyczące przenoszenie skojarzonych aplikacji, starszych baz kodu i bazy danych.
 
@@ -69,7 +69,7 @@ Funkcje obsługi ekranu i wpisów formularzy są powszechnie implementowane przy
 
 - Maszyny wirtualne oparte na systemie Windows: Internet Information Server (IIS) wraz z ASP.NET na potrzeby obsługi ekranu i logiki biznesowej. Użyj ADO.NET do uzyskiwania dostępu do danych i transakcji.
 
-- Maszyny wirtualne oparte na systemie Linux: Dostępne serwery aplikacji oparte na języku Java, takie jak Apache Tomcat na potrzeby obsługi ekranu i funkcjonalności biznesowej opartej na języku Java. Użyj JDBC do uzyskiwania dostępu do danych i transakcji.
+- Maszyny wirtualne oparte na systemie Linux: dostępne serwery aplikacji oparte na języku Java, takie jak Apache Tomcat na potrzeby obsługi ekranu i funkcjonalności biznesowej opartej na języku Java. Użyj JDBC do uzyskiwania dostępu do danych i transakcji.
 
 ## <a name="migrate-batch-workloads-to-azure"></a>Migrowanie obciążeń wsadowych do platformy Azure
 
@@ -89,7 +89,7 @@ Używanych
 
 - Przetwarzanie równoległe, jak platforma Azure umożliwia łatwe skalowanie do przetwarzania równoległego, zapewniając większą moc obliczeniową dla uruchomienia partii.
 
-### <a name="storage"></a>Magazyn
+### <a name="storage"></a>Usługa Storage
 
 Używanych
 
@@ -113,7 +113,7 @@ Rozproszone architektury chmury polegają na różnych zestawach narzędzi progr
 
 | Składnik        | Opcje platformy Azure                                                                                                                                  |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| z/OS             | Windows, Linux lub UNIX                                                                                                                      |
+| System z/OS             | Windows, Linux lub UNIX                                                                                                                      |
 | CICS             | Usługi platformy Azure oferowane przez firmę Micro Focus, Oracle, GT Software (Fujitsu), TmaxSoft, Raincode i NTT, lub Przepisz przy użyciu Kubernetes |
 | ISP              | Usługi platformy Azure oferowane przez firmę Micro Focus i Oracle                                                                                  |
 | Asemblera        | Usługi platformy Azure z Raincode i TmaxSoft; lub COBOL, C lub Java lub mapowanie na funkcje systemu operacyjnego               |
@@ -177,7 +177,7 @@ System Azure zapewnia sprawdzoną, wysoką dostępność i skalowalną infrastru
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-Aby uzyskać więcej informacji, zobacz następujące zasoby:
+Więcej informacji zawierają następujące zasoby:
 
 - [Rozpoczynanie pracy z platformą Azure](https://docs.microsoft.com/azure)
 

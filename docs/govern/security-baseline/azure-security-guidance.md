@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: daad23e411b48414a0eb7ca535345fbd5e64fabd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8449878d46c939c58f690e585aac07fa0e827484
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222916"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548049"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,7 +42,7 @@ Te narzędzia zostały zaprojektowane w celu ułatwienia organizacjom zaspokajan
   - Architektura referencyjna z modelami zagrożeń.
   - Macierze implementacji kontroli.
   - Automatyzacja wdrażania architektury referencyjnej.
-  - Zasoby dotyczące prywatności: Dokumentacja dotycząca ocen dotyczących wpływu ochrony danych, żądania podmiotu danych (żądania podmiotów danych) i powiadomienia o naruszeniu danych są dostarczane w celu włączenia ich do własnego programu w celu obsługi Ogólne rozporządzenie o ochronie danych (Rodo).
+  - Zasoby związane z ochroną prywatności: Dokumentacja oceny wpływu na dane, żądania podmiotu danych (żądania podmiotów danych) i powiadomienia o naruszeniu danych są udostępniane w ramach własnego programu w celu obsługi Ogólne rozporządzenie o ochronie danych (Rodo).
 - **Rozpocznij pracę z usługą Rodo:** Produkty i usługi firmy Microsoft pomagają organizacjom spełnić wymagania Rodo podczas zbierania lub przetwarzania danych osobowych. STP zaprojektowano w celu udostępnienia informacji o możliwościach usługi firmy Microsoft, których można użyć do rozwiązywania określonych wymagań Rodo. Dokumentacja może pomóc w Rodo odpowiedzialności i zrozumieniu środków technicznych i organizacyjnych. Dokumentacja dotycząca ocen wpływu na ochronę danych, żądania podmiotu danych (żądania podmiotów danych) i powiadomienia o naruszeniu danych są dostarczane w celu włączenia ich do własnego programu w celu obsługi Rodo.
   - **Żądania podmiotu danych:** Rodo przyznaje osobom (lub podmiotom danych) pewne prawa związane z przetwarzaniem danych osobowych. Obejmuje to prawo do poprawiania nieprawidłowych danych, wymazywania danych lub ograniczania ich przetwarzania, a także odbierania ich danych i realizacji żądania przesyłania danych do innego kontrolera.
   - **Naruszenie danych:** Rodo zezwala na wymagania dotyczące powiadomień dla kontrolerów danych i procesorów w przypadku naruszenia danych osobowych. STP zawiera informacje o tym, w jaki sposób firma Microsoft próbuje uniknąć naruszeń w pierwszym miejscu, w jaki sposób firma Microsoft wykrywa naruszenie i jak firma Microsoft reaguje na wypadek naruszenia i powiadomi Cię jako kontroler danych.

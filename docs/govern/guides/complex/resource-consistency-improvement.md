@@ -1,7 +1,7 @@
 ---
-title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Ulepszanie dyscypliny spójności zasobów'
+title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny spójności zasobów'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Ulepszanie dyscypliny spójności zasobów'
+description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny spójności zasobów'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/19/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5b381bf483937e2edfbf503063fd4e520203b819
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223813"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547634"
 ---
-# <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Ulepszanie dyscypliny spójności zasobów
+# <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny spójności zasobów
 
 Ten artykuł postępuje zgodnie z opisami, dodając kontrolki spójności zasobów do ładu MVP, aby obsługiwały aplikacje o znaczeniu strategicznym.
 
