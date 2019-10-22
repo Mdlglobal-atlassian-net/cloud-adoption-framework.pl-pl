@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wskazówki dotyczące podstaw operacyjnych
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/20/2018
+ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 04afedc133d001405c5042b309a45c9b41f3268e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9e7dca64941a07e091cc6b107d8390970d0a19a4
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029991"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683710"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Ustanowienie przeglądu sprawności operacyjnej
 
@@ -25,7 +25,7 @@ Istnieje pięć podstawowych kategorii niefunkcjonalnych wymagań, które są na
 - Dostępność
 - Odporność, w tym ciągłość biznesowa i odzyskiwanie po awarii
 - Zarządzanie
-- Bezpieczeństwo
+- Zabezpieczenia
 
 Proces kontroli sprawności operacyjnej zapewnia, że obciążenia o kluczowym znaczeniu są zgodne z oczekiwaniami firmy w odniesieniu do filarów jakości.
 
@@ -39,16 +39,16 @@ Procesy, które firma Microsoft stosuje jako podstawy dla procesów przedstawion
 
 ## <a name="understand-the-problem"></a>Opis problemu
 
-Po rozpoczęciu [pracy](../getting-started/migrate.md), pierwszym krokiem w ramach transformacji cyfrowej przedsiębiorstwa jest zidentyfikowanie problemów firmy, które należy rozwiązać, przyjmując platformę Azure. Następnym krokiem jest określenie rozwiązania wysokiego poziomu problemu, takiego jak Migrowanie obciążenia do chmury lub dostosowanie istniejącej usługi lokalnej do uwzględnienia funkcjonalności chmury. Na koniec rozwiązanie zostało zaprojektowane i zaimplementowane.
+Po [rozpoczęciu pracy](../getting-started/migrate.md), pierwszym krokiem w ramach transformacji cyfrowej przedsiębiorstwa jest zidentyfikowanie problemów firmy, które należy rozwiązać, przyjmując platformę Azure. Następnym krokiem jest określenie rozwiązania wysokiego poziomu problemu, takiego jak Migrowanie obciążenia do chmury lub dostosowanie istniejącej usługi lokalnej do uwzględnienia funkcjonalności chmury. Na koniec rozwiązanie zostało zaprojektowane i zaimplementowane.
 
-W trakcie tego procesu fokus jest często dotyczący funkcji usługi: zestawu wymagań funkcjonalnych, które mają być wykonywane przez usługę. Na przykład usługa dostarczania produktów wymaga funkcji do określania lokalizacji źródłowej i docelowej produktu, śledzenia produktu podczas dostarczania, powiadomień klientów i innych.
+W trakcie tego procesu fokus jest często dotyczący funkcji usługi: zestawu wymagań _funkcjonalnych_ , które mają być wykonywane przez usługę. Na przykład usługa dostarczania produktów wymaga funkcji do określania lokalizacji źródłowej i docelowej produktu, śledzenia produktu podczas dostarczania, powiadomień klientów i innych.
 
-_Niefunkcjonalne_ wymagania, w przeciwieństwie, odnoszą się do właściwości, takich jak [dostępność](https://docs.microsoft.com/azure/architecture/checklist/availability), [odporność](https://docs.microsoft.com/azure/architecture/resiliency)i skalowalność usługi [](https://docs.microsoft.com/azure/architecture/checklist/scalability). Te właściwości różnią się w zależności od wymagań funkcjonalnych, ponieważ nie wpływają one bezpośrednio na końcową funkcję żadnej konkretnej funkcji w usłudze. Jednak niefunkcjonalne wymagania odnoszą się do wydajności i ciągłości usługi.
+_Niefunkcjonalne_ wymagania, w przeciwieństwie, odnoszą się do właściwości, takich jak [dostępność](https://docs.microsoft.com/azure/architecture/checklist/availability), [odporność](https://docs.microsoft.com/azure/architecture/resiliency)i [skalowalność](https://docs.microsoft.com/azure/architecture/checklist/scalability)usługi. Te właściwości różnią się w zależności od wymagań funkcjonalnych, ponieważ nie wpływają one bezpośrednio na końcową funkcję żadnej konkretnej funkcji w usłudze. Jednak niefunkcjonalne wymagania odnoszą się do wydajności i ciągłości usługi.
 
-Niektóre niefunkcjonalne wymagania można określić w ramach umowy dotyczącej poziomu usług (SLA). W celu zapewnienia ciągłości usługi przykładowo wymagania dotyczące dostępności usługi mogą być wyrażone jako wartość procentowa: "Dostępne przez 99,99% czasu". Inne niefunkcjonalne wymagania mogą być trudniejsze do zdefiniowania i mogą ulec zmianie w miarę zmieniania potrzeb produkcyjnych. Na przykład usługi zorientowane konsumentowo mogą ulec nieprzewidzianej przepływności po przejściu do większej popularności.
+Niektóre niefunkcjonalne wymagania można określić w ramach umowy dotyczącej poziomu usług (SLA). W celu zapewnienia ciągłości usługi, na przykład, wymagania dotyczące dostępności usługi mogą być wyrażone jako wartość procentowa: "dostępne przez 99,99% czasu". Inne niefunkcjonalne wymagania mogą być trudniejsze do zdefiniowania i mogą ulec zmianie w miarę zmieniania potrzeb produkcyjnych. Na przykład usługi zorientowane konsumentowo mogą ulec nieprzewidzianej przepływności po przejściu do większej popularności.
 
 > [!NOTE]
-> Wymagania dotyczące odporności są bardziej szczegółowe w projektowaniu [niezawodnych aplikacji platformy Azure](https://docs.microsoft.com/azure/architecture/reliability#define-requirements). Ten artykuł zawiera wyjaśnienia dotyczące pojęć, takich jak cel punktu odzyskiwania (RPO), cel czasu odzyskiwania (RTO), umowa SLA i inne.
+> Wymagania dotyczące odporności są bardziej szczegółowe w [projektowaniu niezawodnych aplikacji platformy Azure](https://docs.microsoft.com/azure/architecture/reliability#define-requirements). Ten artykuł zawiera wyjaśnienia dotyczące pojęć, takich jak cel punktu odzyskiwania (RPO), cel czasu odzyskiwania (RTO), umowa SLA i inne.
 
 ## <a name="process-for-operational-fitness-review"></a>Proces przeglądu sprawności operacyjnej
 
@@ -64,7 +64,7 @@ Kroki opisane w tej fazie przechwytują wymagania dotyczące przeprowadzania reg
 
 1. **Identyfikuj krytyczne operacje biznesowe**. Zidentyfikuj działania biznesowe o kluczowym znaczeniu dla przedsiębiorstwa. Operacje biznesowe są niezależne od funkcjonalności usługi pomocniczej. Innymi słowy, operacje biznesowe reprezentują rzeczywiste działania, które firma musi wykonać, i które są obsługiwane przez zestaw usług IT.
 
-    Termin *"krytyczny"* (lub "krytyczny dla *działalności firmy*") odzwierciedla poważny wpływ na działalność firmy, jeśli operacja jest utrudniona. Na przykład sprzedaż detaliczna w trybie online może być operacją biznesową, taką jak "Włącz klienta, aby dodać element do koszyka" lub "Przetwarzaj płatność kartą kredytową". Jeśli jedna z tych operacji zakończy się niepowodzeniem, klient nie będzie mógł ukończyć transakcji, a firma nie będzie mogła zrealizować sprzedaży.
+    Termin *"krytyczny"* (lub " *krytyczny dla działalności firmy*") odzwierciedla poważny wpływ na działalność firmy, jeśli operacja jest utrudniona. Na przykład sprzedaż detaliczna w trybie online może być operacją biznesową, taką jak "Włącz klienta, aby dodać element do koszyka" lub "Przetwarzaj płatność kartą kredytową". Jeśli jedna z tych operacji zakończy się niepowodzeniem, klient nie będzie mógł ukończyć transakcji, a firma nie będzie mogła zrealizować sprzedaży.
 
 1. **Mapuj operacje na usługi**. Mapuj krytyczne operacje biznesowe na usługi, które je obsługują. W przypadku koszyka zakupów może być uwzględnionych kilka usług: Usługa zarządzania zapasami spisu, usługa koszyka zakupów i inne. Aby przetwarzać płatność kartą kredytową, lokalna usługa płatnicza może korzystać z usługi przetwarzania płatności innej firmy.
 
@@ -94,11 +94,11 @@ Ten proces jest iteracyjny i jest idealnym rozwiązaniem dla przedsiębiorstwa. 
 
 Zespół odpowiedzialny za przegląd sprawności operacyjnej składa się z następujących ról:
 
-- **Właściciel biznesowy**: Zawiera informacje o firmie umożliwiające identyfikację i określanie priorytetów każdej operacji biznesowej o kluczowym znaczeniu. Ta rola również porównuje koszt środków zaradczych z wpływem firmy i kieruje ostateczną decyzję o skorygowaniu.
+- **Właściciel biznesowy**: zawiera informacje o firmie w celu zidentyfikowania i określenia priorytetów każdej operacji biznesowej o kluczowym znaczeniu. Ta rola również porównuje koszt środków zaradczych z wpływem firmy i kieruje ostateczną decyzję o skorygowaniu.
 
-- Ambasadorzy biznesowi: Dzieli operacje biznesowe na części niejawne i mapuje te części do usług i infrastruktury, niezależnie od tego, czy są lokalne, czy w chmurze. Rola wymaga głębokiej znajomości technologii skojarzonej z każdą operacją biznesową.
+- Ambasadorzy **biznesowi**: dzieli operacje biznesowe na niejawne części i mapują te części na usługi i infrastrukturę, zarówno lokalnie, jak i w chmurze. Rola wymaga głębokiej znajomości technologii skojarzonej z każdą operacją biznesową.
 
-- **Właściciel inżyniera**: Implementuje usługi skojarzone z operacją biznesową. Osoby te mogą uczestniczyć w projektowaniu, wdrażaniu i wdrażaniu wszelkich rozwiązań niefunkcjonalnych problemów, które nie zostały omówione przez zespół recenzji.
+- **Właściciel inżynierów**: implementuje usługi skojarzone z operacją biznesową. Osoby te mogą uczestniczyć w projektowaniu, wdrażaniu i wdrażaniu wszelkich rozwiązań niefunkcjonalnych problemów, które nie zostały omówione przez zespół recenzji.
 
 - **Właściciel usługi**. Obsługuje aplikacje i usługi firmy. Te osoby te zbierają dane dotyczące rejestrowania i użycia dla tych aplikacji i usług. Te dane są używane zarówno do identyfikowania problemów, jak i weryfikowania poprawek po ich wdrożeniu.
 
@@ -127,6 +127,6 @@ Dostosuj szczegóły procesu i spotkania zgodnie z konkretnymi potrzebami. Zalec
 - [Dziesięć zasad projektowania dla aplikacji platformy Azure](https://docs.microsoft.com/azure/architecture/guide/design-principles).
     W tej sekcji przewodnika po architekturze aplikacji platformy Azure omówiono zestaw zasad projektowania, dzięki którym aplikacja jest bardziej skalowalna, odporna na błędy i łatwość zarządzania.
 - [Projektowanie odpornych aplikacji na platformę Azure](https://docs.microsoft.com/azure/architecture/resiliency).
-    Ten przewodnik rozpoczyna się od definicji odporności i powiązanych koncepcji. Następnie opisuje proces osiągania odporności przy użyciu podejścia strukturalnego w czasie trwania aplikacji, od projektowania i implementacji do wdrożenia i operacji.
+    Ten przewodnik rozpoczyna się od definicji _odporności_ i powiązanych koncepcji. Następnie opisuje proces osiągania odporności przy użyciu podejścia strukturalnego w czasie trwania aplikacji, od projektowania i implementacji do wdrożenia i operacji.
 - [Wzorce projektowe w chmurze](https://docs.microsoft.com/azure/architecture/patterns).
     Te wzorce projektowe są przydatne dla zespołów inżynieryjnych podczas kompilowania aplikacji na filarach jakości oprogramowania.

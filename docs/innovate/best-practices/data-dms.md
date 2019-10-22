@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Innowacje w chmurze — usługa migracji danych
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 7b6d9d2bb08bd4e3e34fe1cc67f4c6a006a75bb5
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c75efe3576bb61ecb116ab22e4946b8d87da3d4a
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557403"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683419"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Zbierz dane za pomocą migracji i modernizacji istniejących źródeł danych
 
@@ -46,5 +46,5 @@ W przypadku korzystania z usługi DMS do migracji i modernizacji danych ważne j
 |PostgreSQL|Azure Database for PostgreSQL|DMS|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
 |Istniejącą|Azure Cosmos DB interfejs API Mongo|DMS|Stanie|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
 |MongoDB|Azure Cosmos DB interfejs API Mongo|DMS|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
-|Oracle|Zakres opcji PaaS & IaaS|Inna firma lub Azure Migrate|Poszczególne|[Drzewo decyzyjne](../considerations/data-oracle-migration.md)|
-|Różne NoSQL baz danych|Cosmo DB lub IaaS opcje|Migracje proceduralne lub Azure Migrate|Poszczególne|[Drzewo decyzyjne](../considerations/data-no-sql-migration.md)|
+|Oracle|Zakres opcji PaaS & IaaS|Inna firma lub Azure Migrate|Poszczególne|[Drzewo decyzyjne](../../migrate/expanded-scope/data-oracle-migration.md)|
+|Różne NoSQL baz danych|Cosmo DB lub IaaS opcje|Migracje proceduralne lub Azure Migrate|Poszczególne|[Drzewo decyzyjne](../../migrate/expanded-scope/data-no-sql-migration.md)|
