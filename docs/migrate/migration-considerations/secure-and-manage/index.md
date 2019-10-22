@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022585"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683762"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Bezpieczne narzędzia do monitorowania i zarządzania
 
@@ -41,6 +41,16 @@ Usługa Azure Security Center zapewnia ujednolicone monitorowanie zabezpieczeń 
 
 Dowiedz się więcej o usłudze [Azure Security Center](https://docs.microsoft.com/azure/security-center) do zabezpieczania zmigrowanych zasobów.
 
+## <a name="service-health-monitoring"></a>Monitorowanie kondycji usługi
+
+Usługa Azure Service Health udostępnia spersonalizowane alerty i wytyczne, gdy wystąpią problemy z usługą platformy Azure, które mają wpływ na Twoją pracę. Może ona generować powiadomienia, pomagać zrozumieć znaczenie problemów i informować na bieżąco o rozwiązywaniu problemu. Może też ułatwić przygotowanie się do zaplanowanej konserwacji i zmian, które mogą wpłynąć na dostępność zasobów.
+
+- **Pulpit nawigacyjny kondycji usługi.** Sprawdź ogólną kondycję regionów i usług platformy Azure oraz uzyskaj szczegółowe informacje dotyczące bieżących problemów z usługą, nadchodzącej planowanej konserwacji i przenoszenia usług.
+- **Alerty o kondycji usługi.** Skonfiguruj alerty, które powiadomią Ciebie i Twoje zespoły o wystąpieniu problemu z usługą, np. awarii lub nadchodzącej planowanej konserwacji.
+- **Historia kondycji usługi.** Przejrzyj wcześniejsze problemy z usługą oraz pobierz oficjalne podsumowania i raporty przygotowane przez firmę Microsoft.
+
+Dowiedz się więcej o usłudze [Azure Service Health](https://docs.microsoft.com/azure/service-health), która zapewnia aktualne informacje o kondycji migrowanych zasobów.
+
 ## <a name="protect-assets-and-data"></a>Ochrona zasobów i danych
 
 Usługa Azure Backup umożliwia ochronę maszyn wirtualnych, plików i danych. Usługa Azure Backup może zapewnić pomoc dotyczącą wielu funkcji, takich jak:
@@ -51,3 +61,13 @@ Usługa Azure Backup umożliwia ochronę maszyn wirtualnych, plików i danych. U
 - Odzyskiwanie chronionych zasobów
 
 Dowiedz się więcej o usłudze [Azure Backup](https://docs.microsoft.com/azure/backup) do ochrony zmigrowanych zasobów.
+
+## <a name="optimize-resources"></a>Optymalizacja zasobów
+
+Usługa Azure Advisor to spersonalizowany przewodnik po najlepszych rozwiązaniach dla platformy Azure. Analizuje konfigurację i dane telemetryczne użycia, aby przedstawić zalecenia ułatwiające zoptymalizowanie zasobów platformy Azure pod kątem wysokiej dostępności, bezpieczeństwa, wydajności i kosztów. Wbudowane akcje usługi Advisor pomagają w szybkim i łatwym stosowaniu zaleceń oraz optymalizowaniu wdrożeń.
+
+- **Najlepsze rozwiązania platformy Azure.** Zoptymalizuj migrowane zasoby pod kątem wysokiej dostępności, bezpieczeństwa, wydajności i kosztów.
+- **Szczegółowe wskazówki.** Efektywnie wprowadzaj zalecenia dzięki szybkim linkom z przewodnikiem.
+- **Alerty o nowych zaleceniach.** Bądź na bieżąco z nowymi zaleceniami, np. dodatkowymi możliwościami dobrania odpowiedniego rozmiaru maszyn wirtualnych i zaoszczędzenia pieniędzy.
+
+Dowiedz się więcej o usłudze [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), aby zoptymalizować migrowane zasoby.
