@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wprowadzenie do innowacji w chmurze — wdrażanie
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 727686b70c7fb604274f74da7a043f589f79fa4c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0c6f55ec7f82756658fc67fb9412d7d83d503b97
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557221"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683240"
 ---
 # <a name="empower-adoption"></a>Przyjęcie akceptacji
 

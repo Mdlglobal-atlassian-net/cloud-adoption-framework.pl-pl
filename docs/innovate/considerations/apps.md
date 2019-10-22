@@ -4,22 +4,24 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wprowadzenie do innowacji w chmurze — Zaangażuj aplikacje
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/24/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5dcfbc34c31346b4efada049fc46effac149cd68
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3db2349e3c1da7c80f3089ea187a3de72d006d1f
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557260"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683289"
 ---
 # <a name="engage-through-applications"></a>Zaangażuj aplikacje
 
 Zgodnie z opisem w artykule dotyczącym [danych democratizing](./data.md), dane są nową olejem. Paliwa IT są najbardziej innowacje w całej sieci cyfrowej. W przypadku tego analogu aplikacje są stacjami paliw i infrastrukturami wymaganymi do uzyskania tego paliwa w odpowiednich rąk.
 
 W niektórych przypadkach dane są wystarczające do zmiany dysku i zaspokajania potrzeb klientów. Zwykle rozwiązanie do potrzeb klientów będzie wymagało zastosowania aplikacji do kształtowania danych i utworzenia środowiska. Aplikacje są sposobem, w jaki udostępniamy użytkownika. Są one domem dla procesów wymaganych do reagowania na wyzwalacze klientów. Są to klienci, którzy chcą dostarczać dane i otrzymywać wskazówki. W tym artykule opisano kilka zasad, które będą pomocne w dostosowywaniu właściwych rozwiązań aplikacji w oparciu o te, które mają zostać sprawdzone.
+
+![Zaangażuj za pośrednictwem aplikacji](../../_images/innovate/engage-via-apps.png)
 
 ## <a name="shared-code"></a>Udostępniony kod
 
@@ -36,11 +38,27 @@ Deweloperzy deweloperów mogą być niezależni, gdy wczesne poprawność można
 > [!NOTE]
 > W przypadku korzystania z nich deweloperzy mogą testować, że profesjonalne deweloperzy zapewniają pomoc techniczną, przegląd i wskazówki. Po sprawdzeniu hipotezy na dużą skalę proces przejścia aplikacji do bardziej niezawodnego modelu programowania przyspieszy powracanie do innowacji. Dzięki profesjonalnym deweloperom w ramach wczesnych definicji procesów mogą wystąpić późniejsze przejścia.
 
-## <a name="modern-web-experiences"></a>Nowoczesne środowiska sieci Web
+## <a name="intelligent-experiences"></a>Inteligentne środowiska
+
+Inteligentne środowiska łączą szybkość i skalę nowoczesnych aplikacji sieci Web przy użyciu analizy usług poznawczych i botów. Niezależnie, każdy z nich może być wystarczający do zaspokajania potrzeb klientów. Łączne spektrum potrzeb, które mogą być spełnione przez środowisko cyfrowe, są rozbudowane, ale nadal mogą być zawarte inwestycje rozwojowe.
+
+### <a name="modern-web-apps"></a>Nowoczesne aplikacje sieci Web
 
 Gdy aplikacja lub środowisko jest wymagane do zaspokajania potrzeb klientów, nowoczesne aplikacje sieci Web mogą być najszybszym sposobem na spełnienie tego zapotrzebowania. Nowoczesne środowiska sieci Web mogą szybko współpracować z klientami wewnętrznymi lub zewnętrznymi i umożliwiać szybką iterację rozwiązania.
 
-Azure App Service zapewnia środowisko hostingu dla aplikacji, które usuwają obciążenie związane z zarządzaniem infrastrukturą i stosowaniem poprawek systemu operacyjnego. Zapewnia automatyzację skalowania, aby zaspokoić wymagania użytkowników, ale jest powiązany przez zdefiniowane limity, aby zachować koszty kontroli. App Service zapewnia obsługę pierwszej klasy dla języków takich jak ASP.NET, ASP.NET Core, Java, Ruby, Node. js, PHP lub Python. Jeśli istnieje potrzeba hostowania innego stosu środowiska uruchomieniowego, aplikacja sieci Web dla kontenera oferuje możliwość szybkiego i łatwego hostowania kontenera Docker w środowisku App Service, aby umożliwić hostowanie niestandardowego stosu kodu w środowisku, w którym znajduje się serwer Busin ES.
+### <a name="infusing-intelligence"></a>Odmowa analizy
+
+Uczenie maszynowe i sztuczne inteligencje stają się coraz bardziej dostępne dla deweloperów. Szeroka dostępność wspólnych interfejsów API przy użyciu funkcji predykcyjnych umożliwia deweloperom lepsze zaspokajanie potrzeb klienta dzięki rozszerzonemu dostępowi do danych i prognoz.
+
+Dodanie analizy do rozwiązania może umożliwić zamianę mowy na tekst, tłumaczenie tekstu, obsługę komputera, a nawet Wyszukiwanie wizualne. Dzięki tym rozszerzonym funkcjom deweloperzy mogą tworzyć rozwiązania, które wykorzystują inteligencję do tworzenia interaktywnego i nowoczesnego środowiska.
+
+### <a name="bots"></a>Boty
+
+Botów zapewniają środowisko, które może być mniej podobne do korzystania z komputera i bardziej przypominające pracę z osobą lub co najmniej z inteligentną robotem. Mogą one służyć do przesuwania prostych, powtarzalnych zadań, takich jak przyjmowanie rezerwacji na obiad lub gromadzenie informacji o profilach, w systemach zautomatyzowanych, które mogą nie wymagać bezpośredniej interwencji ludzkiej. Użytkownicy przewracają do bot przy użyciu tekstu, kart interaktywnych i mowy. Interakcja bot może być szybkim pytaniem i odpowiedzią lub może być zaawansowaną konwersacją, która inteligentnie zapewnia dostęp do usług.
+
+Botów to wiele takich, jak nowoczesne aplikacje sieci Web, żyjące w Internecie i Używanie interfejsów API do wysyłania i odbierania komunikatów. Zawartość bot różni się znacznie w zależności od rodzaju bot. Nowoczesne oprogramowanie bot opiera się na stosie technologii i narzędzi, które zapewniają coraz bardziej skomplikowane środowiska na różnych platformach. Jednak proste bot może po prostu odebrać komunikat i odtworzyć go z powrotem do użytkownika przy użyciu bardzo małego kodu.
+
+Botów mogą wykonywać te same czynności, które inne typy oprogramowania mogą wykonywać operacje odczytu i zapisu, używać baz danych i interfejsów API oraz wykonywać regularne zadania obliczeniowe. Dzięki temu botów się, że używają mechanizmów ogólnie zarezerwowanych do komunikacji między ludźmi i ludźmi.
 
 ## <a name="cloud-native-solutions"></a>Rozwiązania natywne w chmurze
 
@@ -54,7 +72,7 @@ Wiele postanowień klienta można najlepiej dostarczyć przez nowoczesne wersje 
 
 Większość form modernizacji, w tym niewielkie Refaktoryzacja aplikacji, jest uwzględniona w [metodologii migracji](../../migrate/index.md) w ramach struktury wdrażania chmury. Ta metodologia prowadzi zespoły do wdrażania rozwiązań chmurowych poprzez procesy umożliwiające Migrowanie sieci [cyfrowych](../../digital-estate/index.md) do chmury. [Przewodnik migracji platformy Azure](../../migrate/azure-migration-guide/index.md) zapewnia usprawnione podejście do tej samej metodologii, która jest odpowiednia dla niewielkiej liczby obciążeń lub nawet pojedynczej aplikacji.
 
-Po przeprowadzeniu migracji i modernizacji istnieją różne sposoby wykorzystania rozwiązania podczas tworzenia nowych innowacyjnych rozwiązań dla potrzeb klientów. Na przykład [deweloperzy deweloperów](#citizen-developers) mogą testować jednostronne aplikacje lub profesjonalne deweloperzy mogą tworzyć [nowoczesne środowiska internetowe](#modern-web-experiences) lub [natywne rozwiązania w chmurze](#cloud-native-solutions).
+Po przeprowadzeniu migracji i modernizacji istnieją różne sposoby wykorzystania rozwiązania podczas tworzenia nowych innowacyjnych rozwiązań dla potrzeb klientów. Na przykład [deweloperzy deweloperów](#citizen-developers) mogą testować założenia lub profesjonalne deweloperzy mogą tworzyć [inteligentne środowiska](#intelligent-experiences) lub [natywne rozwiązania w chmurze](#cloud-native-solutions).
 
 ### <a name="extend-an-existing-solution"></a>Zwiększ istniejące rozwiązanie
 
@@ -69,7 +87,7 @@ Rozszerzanie rozwiązania to jedna powszechna forma modernizacji. Takie podejśc
 Jeśli aplikacja nie może być łatwo rozszerzona, może być konieczne Refaktoryzacja rozwiązania. W tym podejściu obciążenie zostanie zmigrowane do chmury. Po migracji części aplikacji są modyfikowane lub duplikowane jako usługi sieci Web lub [mikrousługi](/azure/architecture/guide/architecture-styles/microservices), które są wdrażane równolegle z istniejącym rozwiązaniem. Rozwiązanie oparte na usługach równoległych może być traktowane jak rozszerzone rozwiązanie. To rozwiązanie po prostu otacza istniejące rozwiązanie nowym środowiskom hostowanym w chmurze. Na platformie Azure to rozwiązanie prawdopodobnie będzie aktywne na platformie Azure App Services.
 
 > [!CAUTION]
-> Refaktoryzacja/rearchitektura rozwiązań lub scentralizowana logika biznesowa może szybko stać się czasochłonnym wzrostem [technicznym](./build.md#reduce-complexity-and-delay-technical-spikes), w przeciwieństwie do źródła wartości klienta. Jest to ryzykowne dla innowacji, szczególnie wczesne w przypadku weryfikacji hipotez. Mając nieco dużo kreatywności w projektowaniu rozwiązania, powinna istnieć ścieżka do programu MVP, która nie wymaga refaktoryzacji istniejących rozwiązań. Należy opóźnić refaktoryzację, dopóki nie zostanie sprawdzona Poprzednia hipoteza w odpowiedniej skali.
+> Refaktoryzacja lub rearchitektura rozwiązań lub scentralizowana logika biznesowa może szybko stać się czasochłonnym wzrostem [technicznym](./build.md#reduce-complexity-and-delay-technical-spikes), w przeciwieństwie do źródła wartości klienta. Jest to ryzykowne dla innowacji, szczególnie wczesne w przypadku weryfikacji hipotez. Mając nieco dużo kreatywności w projektowaniu rozwiązania, powinna istnieć ścieżka do programu MVP, która nie wymaga refaktoryzacji istniejących rozwiązań. Należy opóźnić refaktoryzację, dopóki nie zostanie sprawdzona Poprzednia hipoteza w odpowiedniej skali.
 
 ## <a name="operating-model-innovations"></a>Innowacje modelu operacyjnego
 
@@ -85,7 +103,7 @@ Im większa jest obsługa w rozwiązaniu, tym wolniejsze rozwiązanie będzie si
 
 Aby przygotować się do wielu iteracji wymaganych do dostarczenia innowacyjnego rozwiązania, ważne jest, aby wziąć pod uwagę. Minimalizacja obciążeń operacyjnych na początku procesu przez preferowanie opcji bezserwerowych.
 
-Na platformie Azure Opcje aplikacji bezserwerowych mogą obejmować [Azure App Service](https://docs.microsoft.com/azure/app-service/overview), [Service Fabric](https://docs.microsoft.com/azure/architecture/example-scenario/infrastructure/service-fabric-microservices), [kontenery](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql)itp.
+Na platformie Azure Opcje aplikacji bezserwerowych mogą zawierać [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) lub [kontenery](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql).
 
 Równolegle platforma Azure zapewnia opcje danych transakcji bezserwerowych, co również zmniejsza obciążenie. [Lista produkty bazy danych](https://docs.microsoft.com/azure/#pivot=products&panel=databases) zawiera opcje hostingu danych bez konieczności stosowania pełnej platformy danych.
 
