@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się więcej o wyborze regionów platformy w chmurze.
 author: doodlemania2
 ms.author: dermar
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
+ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547846"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72769403"
 ---
 # <a name="azure-regions"></a>Regiony świadczenia usługi Azure
 
@@ -44,7 +44,7 @@ Wraz z uzyskiwaniem informacji dotyczących złożonych kwestii, zaczniesz rozum
 
 Każde niezawodne wdrożenie w chmurze wymaga dobrze przemyślanej sieci, która uwzględnia regiony platformy Azure. Po uwzględnieniu powyższych cech względem regionów, w których ma zostać przeprowadzone wdrożenie, należy wdrożyć sieć. Wyczerpujące omówienie sieci wykracza poza zakres tego artykułu, jednak należy uwzględnić pewne kwestie:
 
-1. Regiony platformy Azure są wdrażane w parach. W przypadku katastrofalnej awarii regionu inny region w ramach tych samych granic geopolitycznych* jest wyznaczany jako jego sparowany region. Wdrażanie w sparowanych regionach powinno być rozumiane jako podstawowa i pomocnicza strategia odporności. *Region Azure (Brazylia) to istotny wyjątek, którego sparowany region to Południowo-środkowe stany USA. Więcej informacji możesz uzyskać [tutaj](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions).
+1. Regiony platformy Azure są wdrażane w parach. W przypadku katastrofalnej awarii regionu inny region w ramach tych samych granic geopolitycznych* jest wyznaczany jako jego sparowany region. Wdrażanie w sparowanych regionach powinno być rozumiane jako podstawowa i pomocnicza strategia odporności. *Region Azure (Brazylia) to istotny wyjątek, którego sparowany region to Południowo-środkowe stany USA. Aby dowiedzieć się więcej, zobacz [Sparowane regiony platformy Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
     1. Usługa Azure Storage obsługuje [magazyn geograficznie nadmiarowy (GRS, Geographically Redundant Storage)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs), co oznacza, że trzy kopie danych są przechowywane w regionie podstawowym, a trzy dodatkowe kopie są przechowywane w sparowanym regionie. Nie można zmienić parowania w przypadku magazynu geograficznie nadmiarowego.
     1. Usługi oparte na magazynie geograficznie nadmiarowym usługi Azure Storage mogą korzystać z tej możliwości sparowanego regionu. W tym celu aplikacje i sieci muszą być ukierunkowane na obsługę tej możliwości.
     1. Jeśli nie planujesz korzystać z magazynu geograficznie nadmiarowego w celu spełnienia regionalnych wymagań dotyczących odporności, zaleca się, aby _nie_ korzystać ze sparowanego regionu jako regionu pomocniczego. W przypadku awarii regionalnej nastąpi intensywne wykorzystanie zasobów w sparowanym regionie w miarę migrowania zasobów. Uniknięcie takiego obciążenia może przyspieszyć proces odzyskiwania przez odzyskiwanie do lokacji alternatywnej.
