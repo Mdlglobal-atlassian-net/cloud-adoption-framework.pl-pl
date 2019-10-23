@@ -10,18 +10,25 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 589e8b118ce85b54acdf53bde91d0e03228a5e3f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 354fbe7333e1e2deccc0a7894387a8fa1a78be11
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548851"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72698474"
 ---
-# <a name="before-you-start"></a>Przed rozpoczęciem
-
 ::: zone target="docs"
+
+# <a name="azure-setup-guide-before-you-start"></a>Przewodnik konfiguracji platformy Azure: Przed rozpoczęciem
+
 > [!NOTE]
 > W tym przewodniku przedstawiono punkt początkowy wskazówek dotyczących gotowości w ramach przewodnika Cloud Adoption Framework. Jest on również dostępny w Centrum przewodników Szybki start platformy Azure (link znajduje się w poradzie w artykule).
+
+::: zone-end
+
+::: zone target="chromeless"
+
+# <a name="before-you-start"></a>Przed rozpoczęciem
 
 ::: zone-end
 
@@ -29,8 +36,6 @@ Przed rozpoczęciem tworzenia i wdrażania rozwiązań przy użyciu usług platf
 
 Omawiane tematy:
 
-::: zone target="chromeless"
-
 > [!div class="checklist"]
 >
 > - **Organizowanie zasobów:** konfigurowanie hierarchii zarządzania w celu spójnego stosowania kontroli dostępu, zasad i zgodności do grup zasobów oraz używanie tagowania do śledzenia powiązanych zasobów.
@@ -39,19 +44,8 @@ Omawiane tematy:
 > - **Planowanie ładu, zabezpieczeń i zgodności:** wymuszanie i automatyzowanie ustawień zasad i zabezpieczeń, które ułatwiają spełnianie odpowiednich wymagań prawnych.
 > - **Korzystanie z monitorowania i raportowania:** uzyskiwanie widoczności zasobów, które ułatwiają identyfikowanie i rozwiązywanie problemów, optymalizowanie wydajności i uzyskiwanie szczegółowych informacji na temat zachowania klientów.
 > - **Śledzenie platformy Azure:** śledzenie aktualizacji produktu, które umożliwia stosowanie aktywnego podejścia do zarządzania zmianami.
-
-::: zone-end
 
 ::: zone target="docs"
-
-> [!div class="checklist"]
->
-> - **Organizowanie zasobów:** konfigurowanie hierarchii zarządzania w celu spójnego stosowania kontroli dostępu, zasad i zgodności do grup zasobów oraz używanie tagowania do śledzenia powiązanych zasobów.
-> - **Zarządzanie dostępem:** korzystanie z kontroli dostępu opartego na podstawie ról w celu upewnienia się, że użytkownicy mają uprawnienia, których naprawdę potrzebują.
-> - **Zarządzanie kosztami i rozliczeniami:** identyfikowanie typu subskrypcji oraz przedstawienie sposobu działania rozliczeń i kontrolowania kosztów.
-> - **Planowanie ładu, zabezpieczeń i zgodności:** wymuszanie i automatyzowanie ustawień zasad i zabezpieczeń, które ułatwiają spełnianie odpowiednich wymagań prawnych.
-> - **Korzystanie z monitorowania i raportowania:** uzyskiwanie widoczności zasobów, które ułatwiają identyfikowanie i rozwiązywanie problemów, optymalizowanie wydajności i uzyskiwanie szczegółowych informacji na temat zachowania klientów.
-> - **Śledzenie platformy Azure:** śledzenie aktualizacji produktu, które umożliwia stosowanie aktywnego podejścia do zarządzania zmianami.
 
 > [!TIP]
 > Aby zapoznać się z tym przewodnikiem w środowisku interaktywnym, skorzystaj z witryny Azure Portal. Przejdź do [centrum przewodników Szybki start platformy Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) w witrynie Azure Portal i wybierz pozycję **Introduction to Azure Setup (Wprowadzenie do konfiguracji platformy Azure)** . Następnie postępuj zgodnie z instrukcjami krok po kroku.

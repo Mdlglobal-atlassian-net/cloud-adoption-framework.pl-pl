@@ -10,19 +10,25 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c71dea28532c2bd90359e650a3462dddd059a2c5
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 58a01e02abad2de68fac9a94d2a2aa3ad22d32a1
+ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72556500"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72769144"
 ---
-# <a name="before-you-start"></a>Przed rozpoczęciem
-
 ::: zone target="docs"
+
+# <a name="azure-management-guide-before-you-start"></a>Przewodnik po zarządzaniu platformą Azure: Przed rozpoczęciem
 
 > [!NOTE]
 > Ten przewodnik jest punktem wyjścia do wskazówek dotyczących innowacji w przewodniku Cloud Adoption Framework. Jest dostępny także w centrum Szybki start platformy Azure. Porada w dalszej części tego artykułu zawiera link do centrum Szybki start platformy Azure.
+
+::: zone-end
+
+::: zone target="chromeless"
+
+# <a name="before-you-start"></a>Przed rozpoczęciem
 
 ::: zone-end
 
