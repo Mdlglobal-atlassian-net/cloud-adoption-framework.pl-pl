@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 492415da236ad54b66d6aeb6b1571f623793db0a
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 059e60e44ccf393bb731005bd4a579f3e3e41951
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967638"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547595"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Przewodnik dotyczący ładu dla przedsiębiorstw standardowych
 
 ## <a name="overview-of-best-practices"></a>Omówienie najlepszych rozwiązań
 
-Ten przewodnik po ładzie śledzi doświadczenia fikcyjnej firmy na różnych etapach dojrzałości ładu. Jest ona oparta na doświadczeniach prawdziwych klientów. Zalecane najlepsze rozwiązania są oparte na ograniczeniach i potrzebach fikcyjnej firmy.
+Ten przewodnik po ładzie śledzi doświadczenia fikcyjnej firmy na różnych etapach dojrzałości ładu. Jest ona oparta na doświadczeniach prawdziwych klientów. Najlepsze rozwiązania są oparte na ograniczeniach i potrzebach fikcyjnej firmy.
 
-To omówienie jest szybkim punktem startowym i jako takie definiuje minimalną konieczną funkcjonalność (MVP) dla ładu na podstawie nakazowych wskazówek. Zawiera także linki do pewnych etapów rozwoju ładu, które wprowadzają kolejne zalecane rozwiązania w miarę pojawiania się nowego ryzyka biznesowego lub technicznego.
+Jako szybki punkt startowy, to omówienie definiuje minimalną konieczną funkcjonalność (MVP) dla ładu na podstawie najlepszych rozwiązań. Zawiera także linki do pewnych etapów rozwoju ładu, które wprowadzają kolejne najlepsze rozwiązania w miarę pojawiania się nowego ryzyka biznesowego lub technicznego.
 
 > [!WARNING]
 > Ten program MVP jest punktem startowym planu bazowego opartego na zestawie założeń. Nawet ten minimalny zestaw najlepszych rozwiązań jest oparty na zasadach firmowych opracowanych na podstawie unikatowego ryzyka biznesowego i tolerancji ryzyka. Aby sprawdzić, czy te założenia mają zastosowanie do Twojego przypadku, przeczytaj [dłuższy opis](./narrative.md) dla tego artykułu.

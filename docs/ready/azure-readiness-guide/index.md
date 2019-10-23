@@ -10,18 +10,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 124b308538161423c3f1b0c34f9834f4454c1e69
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: f2954bafecf542d9fc62587ca051c4cd527ef620
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378366"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548933"
 ---
 # <a name="before-you-start"></a>Przed rozpoczęciem
 
 ::: zone target="docs"
+
 > [!NOTE]
-> W tym przewodniku przedstawiono punkt początkowy wskazówek dotyczących gotowości w ramach przewodnika Cloud Adoption Framework. Jest on również dostępny w Centrum przewodników Szybki start platformy Azure (link znajduje się w poradzie w artykule).
+> Ten przewodnik jest punktem wyjścia do wskazówek dotyczących innowacji w przewodniku Cloud Adoption Framework. Jest dostępny także w centrum Szybki start platformy Azure. Porada w dalszej części tego artykułu zawiera link do centrum Szybki start platformy Azure.
 
 ::: zone-end
 
@@ -62,6 +63,6 @@ Następne kroki: [Organize your resources to simplify how you apply settings (Or
 
 ::: zone target="chromeless"
 
-Ten przewodnik zawiera listę interaktywnych kroków, które umożliwiają wypróbowanie funkcji po ich wprowadzeniu. Aby wrócić do miejsca, w którym przerwano pracę, przejdź do niego, korzystając z linków do stron nadrzędnych.
+Ten przewodnik zawiera listę interaktywnych kroków, które umożliwiają wypróbowanie omawianych funkcji. Aby wrócić do miejsca, w którym przerwano pracę, przejdź do niego, korzystając z linków do stron nadrzędnych.
 
 ::: zone-end

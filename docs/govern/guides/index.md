@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967604"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547569"
 ---
 # <a name="cloud-governance-guides"></a>Przewodniki dotyczące ładu w chmurze
 
@@ -71,6 +71,8 @@ Aby rozpocząć podróż nadzoru, wybierz jedną z dwóch poniższych opcji. Opc
 > [!WARNING]
 > Wymagany może być bardziej niezawodny punkt początkowy nadzoru. W takich przypadkach należy wziąć pod uwagę podejście [wirtualnego centrum danych Azure](#azure-virtual-datacenter), które zostało krótko opisane [poniżej](#azure-virtual-datacenter). To podejście zazwyczaj jest zalecane podczas wdrażania w skali przedsiębiorstwa, a szczególnie w przypadku działań, które przekraczają 10 000 zasobów. Jest to de facto wybór dla złożonych scenariuszy nadzoru, gdy konieczne jest spełnienie dowolnej z następujących kwestii: rozbudowane wymagania dotyczące zgodności z innymi firmami, głęboka znajomość danej dziedziny lub zgodność z dojrzałymi zasadami nadzoru IT i wymaganiami dotyczącymi zgodności.
 
+<!-- markdownlint-disable MD028 -->
+
 > [!NOTE]
 > Jest mało prawdopodobne, że jeden z przewodników będzie całkowicie pasował do Twojej sytuacji. Wybierz przewodnik najbliższy Twoim potrzebom i użyj go jako punktu początkowego. W przewodniku udostępniane będą dodatkowe informacje w celu ułatwienia dostosowywania decyzji dotyczących spełniania określonych kryteriów.
 
@@ -96,7 +98,7 @@ Aby rozpocząć podróż nadzoru, wybierz jedną z dwóch poniższych opcji. Opc
 | Stan | Organizacja standardowa | Przedsiębiorstwo złożone |
 |---|---|---|
 | Zarządzanie kosztami — księgowość w chmurze | Model przewidywania kosztów. Rozliczenia są scentralizowana za pośrednictwem działu IT. | Model obciążeń zwrotnych. Rozliczenia mogą być dystrybuowane za pośrednictwem zaopatrzenia działu IT. |
-| Punkt odniesienia zabezpieczeń — zabezpieczone dane | Dane finansowe i własność intelektualna firmy. Ograniczone dane klienta. Brak wymagań dotyczących zgodności z innymi firmami. | Wiele kolekcji danych finansowych i osobistych klientów. Konieczne może być wzięcie pod uwagę zgodności z innymi firmami. |
+| Punkt odniesienia zabezpieczeń — zabezpieczone dane | Dane finansowe i własność intelektualna firmy. Ograniczone dane klienta. Brak wymagań dotyczących zgodności z innymi firmami. | Wiele kolekcji danych finansowych i osobowych klientów. Konieczne może być wzięcie pod uwagę zgodności z innymi firmami. |
 
 ## <a name="azure-virtual-datacenter"></a>Wirtualne centrum danych Azure
 

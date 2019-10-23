@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223628"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547892"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Przewodnik po decyzjach dotyczących rejestrowania i raportowania
 
@@ -58,7 +58,7 @@ Użycie rozwiązań w chmurze do rejestrowania i monitorowania, takich jak usłu
 
 W celu zapewnienia obsługi tego podejścia zasoby w chmurze będą musiały komunikować się bezpośrednio z systemami lokalnymi przy użyciu kombinacji [sieci hybrydowej](../software-defined-network/hybrid.md) i [usług domenowych hostowanych w chmurze](../identity/index.md#cloud-hosted-domain-services). Dzięki temu sieć wirtualna w chmurze działa jako rozszerzenie sieci środowiska lokalnego. W związku z tym obciążenia hostowane w chmurze mogą komunikować się bezpośrednio z lokalnym systemem rejestrowania i raportowania.
 
-To podejście wykorzystuje istniejące inwestycje w narzędzia do monitorowania z niewielkimi modyfikacjami aplikacji lub usług wdrożonych w chmurze. Jest to często najszybsze podejście umożliwiające zapewnienie obsługi monitorowania podczas migracji metodą „lift and shift”. Jednak nie będzie ono przechwytywać danych dzienników generowanych przez zasoby PaaS i SaaS w chmurze oraz będzie pomijać wszystkie dzienniki dotyczące maszyn wirtualnych generowane przez platformę chmury, takie jak zawierające informacje o stanie maszyn wirtualnych. Z tego względu ten wzorzec powinien stanowić tymczasowe rozwiązanie, dopóki nie zostanie wdrożone bardziej kompleksowe, hybrydowe rozwiązanie do monitorowania.
+To podejście wykorzystuje istniejące inwestycje w narzędzia do monitorowania z niewielkimi modyfikacjami aplikacji lub usług wdrożonych w chmurze. Jest to często najszybsze podejście umożliwiające zapewnienie obsługi monitorowania podczas migracji metodą „lift and shift”. Jednak nie będzie ono rejestrować danych dzienników generowanych przez zasoby PaaS i SaaS w chmurze oraz będzie pomijać wszystkie dzienniki dotyczące maszyn wirtualnych generowane przez platformę chmury, takie jak zawierające informacje o stanie maszyn wirtualnych. Z tego względu ten wzorzec powinien stanowić tymczasowe rozwiązanie, dopóki nie zostanie wdrożone bardziej kompleksowe, hybrydowe rozwiązanie do monitorowania.
 
 Założenia dotyczące wyłącznie rozwiązań lokalnych:
 
@@ -69,7 +69,7 @@ Założenia dotyczące wyłącznie rozwiązań lokalnych:
 
 ### <a name="gateway-aggregation"></a>Agregacja za pomocą bramy
 
-W przypadku scenariuszy, w których ilość danych telemetrycznych z chmury jest duża lub istniejące lokalne systemy monitorowania muszą rejestrować zmodyfikowane dane zanim mogą one być przetwarzane, może być wymagana usługa [agregacji za pomocą bramy](/azure/architecture/patterns/gateway-aggregation).
+W przypadku scenariuszy, w których ilość danych telemetrycznych z chmury jest duża lub istniejące lokalne systemy monitorowania muszą rejestrować zmodyfikowane dane zanim mogą one być przetwarzane, może być wymagana usługa [agregacji za pomocą bramy](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation).
 
 Usługa bramy jest wdrażana u dostawcy usług w chmurze. Następnie odpowiednie aplikacje i usługi są konfigurowane w celu przesyłania danych telemetrycznych do bramy zamiast do domyślnego systemu rejestrowania. Brama może następnie przetwarzać dane: agregując, łącząc lub formatując je w inny sposób przed przesłaniem ich do usługi monitorowania w celu ich pozyskania i analizy.
 

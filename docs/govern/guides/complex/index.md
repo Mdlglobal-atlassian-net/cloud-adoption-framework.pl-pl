@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Przewodnik dotyczący ładu dla przedsiębiorstw złożonych
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d2218c812c131c16716e9df1f347b4615e0c6b60
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7542fafccd5b1ef4c5e944db8c14322c76772ed4
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220564"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683560"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Przewodnik dotyczący ładu dla przedsiębiorstw złożonych
 
@@ -83,7 +83,7 @@ Wraz z upływem czasu ten program MVP ładu będzie używany do przyrostowego ul
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, kiedy znasz już program MVP ładu i nadchodzące zmiany ładu, przeczytaj opis pomocniczy, aby uzyskać dodatkowy kontekst.
+Teraz, kiedy znasz już program MVP ładu i nadchodzące zmiany w zakresie ładu, przeczytaj opis pomocniczy, aby uzyskać dodatkowy kontekst.
 
 > [!div class="nextstepaction"]
 > [Przeczytaj opis pomocniczy](./narrative.md)

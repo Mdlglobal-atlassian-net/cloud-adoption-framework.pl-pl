@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: ef754732e45b15da29a2471341b234ae02656ce7
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 589e8b118ce85b54acdf53bde91d0e03228a5e3f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378935"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548851"
 ---
 # <a name="before-you-start"></a>Przed rozpoczęciem
 
@@ -62,6 +62,6 @@ Następne kroki: [Organize your resources to simplify how you apply settings (Or
 
 ::: zone target="chromeless"
 
-Ten przewodnik zawiera listę interaktywnych kroków, które umożliwiają wypróbowanie funkcji po ich wprowadzeniu. Aby wrócić do miejsca, w którym przerwano pracę, przejdź do niego, korzystając z linków do stron nadrzędnych.
+Ten przewodnik zawiera listę interaktywnych kroków, które umożliwiają wypróbowanie omawianych funkcji. Aby wrócić do miejsca, w którym przerwano pracę, przejdź do niego, korzystając z linków do stron nadrzędnych.
 
 ::: zone-end

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: fffbb4c2017d05ab6eccb350615ef18572b601d5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e67d3e0ed1e13fc4c7a5cfdca1bb2f6c138601ba
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026135"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548725"
 ---
 <!-- markdownlint-disable -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "71026135"
 
 Najbardziej pomyślne procesy transformacji rozpoczynają się od określenia wyników biznesowych. Wdrażanie chmury może być kosztowe i czasochłonne. Zapewnienie odpowiedniego poziomu wsparcia technicznego przez dział IT i inne obszary działalności ma kluczowe znaczenie dla powodzenia. [Struktura wyników biznesowych](../index.md) firmy Microsoft ma na celu pomoc klientom w identyfikowaniu wyników biznesowych, które są zwięzłe, zdefiniowane i umożliwiają osiąganie obserwowalnych wyników lub zmian wydajności biznesowej z zastosowaniem określonej miary.
 
-Podczas każdej transformacji do chmury możliwość komunikacji wyników biznesowych pomaga w zachowaniu jawności i relacji partnerstwa o wielu różnych funkcjach. Struktura wyników biznesowych rozpoczyna się od prostego szablonu, który pomaga osobom ukierunkowanym technicznie w tworzeniu dokumentacji i uzyskaniu konsensusu. Przy użyciu tego szablonu można wraz z kilkoma osobami biorącymi udział w projekcie zebrać informacje o wynikach biznesowych, na które może mieć wpływ proces transformacji firmy. Możesz używać tego szablonu w wersji elektronicznej lub, jeszcze lepiej, narysować go na tablicy, aby zaangażować liderów biznesowych i osoby biorące udział w projekcie w dyskusje na temat wyników.
+Podczas każdej transformacji do chmury możliwość komunikacji wyników biznesowych pomaga w zachowaniu jawności i relacji partnerstwa o wielu różnych funkcjach. Struktura wyników biznesowych rozpoczyna się od prostego szablonu, który pomaga osobom ukierunkowanym technicznie w tworzeniu dokumentacji i uzyskaniu konsensusu. Przy użyciu tego szablonu można wraz z osobami biorącymi udział w projekcie zebrać informacje o wynikach biznesowych, na które może mieć wpływ proces transformacji firmy. Możesz używać tego szablonu w wersji elektronicznej lub, jeszcze lepiej, narysować go na tablicy, aby zaangażować liderów biznesowych i osoby biorące udział w projekcie w dyskusje na temat wyników.
 
 Aby dowiedzieć się więcej na temat wyników biznesowych i szablonu wyników biznesowych, zobacz [Dokumentowanie wyników biznesowych](./business-outcome-template.md) lub pobierz [szablon wyników biznesowych](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx).
 

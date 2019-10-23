@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dba9732220d5219b7d58a60ba93aec68792a24f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023727"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547864"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Przewodnik podejmowania decyzji dotyczących wymuszania zasad
 
@@ -22,7 +22,7 @@ Definiowanie zasad organizacyjnych jest nieefektywne, jeśli nie istnieje sposó
 
 ![Wykres opcji wymuszania zasad od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
-Idź do: [Zalecane praktyki dotyczące punktu odniesienia](#baseline-recommended-practices) | [Monitorowanie zgodności zasad](#policy-compliance-monitoring) | [Wymuszanie zasad](#policy-enforcement) | [Zasady dla wielu organizacji](#cross-organization-policy) | [Wymuszanie automatyczne](#automated-enforcement)
+Idź do: [Najlepsze rozwiązania dotyczące planu bazowego](#baseline-best-practices) | [Monitorowanie zgodności z zasadami](#policy-compliance-monitoring) | [Wymuszanie zasad](#policy-enforcement) | [Zasady dla wielu organizacji](#cross-organization-policy) | [Wymuszanie automatyczne](#automated-enforcement)
 
 Wraz z rozwojem infrastruktury w chmurze pojawi się potrzeba odpowiedniej obsługi i wymuszania zasad w większym zbiorze zasobów i subskrypcji. Gdy infrastruktura staje się coraz większa i rosną wymagania dotyczące zasad organizacji, zakres procesów wymuszania zasad musi zostać rozszerzony, aby zapewnić spójne przestrzeganie zasad i szybkie wykrywanie naruszeń.
 
@@ -30,7 +30,7 @@ Dostarczane przez platformę mechanizmy wymuszania zasad na poziomie zasobów lu
 
 Podstawowe czynniki przy ustalaniu zakresu procesów wymuszania zasad to [wymagania dotyczące utrzymania ładu w chmurze](../../govern/index.md) w organizacji, rozmiar i rodzaj infrastruktury w chmurze oraz sposób odzwierciedlenia organizacji w [projekcie subskrypcji](../subscriptions/index.md). Zwiększenie rozmiaru infrastruktury lub większa potrzeba centralnego zarządzania wymuszaniem zasad może usprawiedliwić zwiększenie zakresu wymuszania.
 
-## <a name="baseline-recommended-practices"></a>Zalecane praktyki dotyczące punktu odniesienia
+## <a name="baseline-best-practices"></a>Najlepsze rozwiązania dotyczące planu bazowego
 
 W przypadku pojedynczej subskrypcji i prostych wdrożeń w chmurze wiele zasad firmowych można wymusić przy użyciu funkcji, które są natywne dla zasobów i subskrypcji na platformie Azure. Spójne używanie wzorców omówionych w [przewodnikach podejmowania decyzji](../index.md) dotyczących usługi Cloud Adoption Framework ułatwiają ustalenie poziomu odniesienia zgodności z zasadami bez konieczności inwestowania w wymuszanie zasad. Między innymi są to następujące funkcje:
 

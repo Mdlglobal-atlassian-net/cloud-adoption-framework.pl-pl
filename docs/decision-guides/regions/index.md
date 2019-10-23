@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967710"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547846"
 ---
 # <a name="azure-regions"></a>Regiony świadczenia usługi Azure
 
@@ -25,7 +25,7 @@ Platforma Azure składa się z wielu regionów na całym świecie. Każdy z [reg
 1. **Ograniczenia:** Niektóre ograniczenia są wprowadzane podczas wdrażania usług w określonych regionach. Na przykład niektóre regiony są dostępne tylko jako miejsce docelowe kopii zapasowej lub pracy w trybie failover. Inne istotne ograniczenia to [wymagania dotyczące niezależności danych](https://azure.microsoft.com/global-infrastructure/geographies).
 1. **Niezależność:** Istnieją określone regiony przeznaczone dla konkretnych niezależnych jednostek. Wszystkie regiony są regionami platformy Azure, ale te niezależne regiony są całkowicie odizolowane od reszty platformy Azure, nie muszą być zarządzane przez firmę Microsoft i mogą w nich obowiązywać ograniczenia typu klienta. Te niezależne regiony są następujące:
     1. [Chińska wersja platformy Azure](https://azure.microsoft.com/global-infrastructure/china)
-    1. [Azure (Niemcy)](https://azure.microsoft.com/global-infrastructure/germany): wycofywane — zalecane jest użycie standardowych regionów platformy Azure (Niemcy), które są inne niż niezależne
+    1. [Azure (Niemcy)](https://azure.microsoft.com/global-infrastructure/germany) (wycofywane — zalecane jest użycie standardowych regionów platformy Azure w Niemczech, które nie są regionami suwerennej chmury)
     1. [Wersja platformy Azure dla administracji USA](https://azure.microsoft.com/global-infrastructure/government)
     1. Uwaga: w [Australii](https://azure.microsoft.com/global-infrastructure/australia) istnieją dwa regiony, które są zarządzane przez firmę Microsoft, ale są udostępniane dla instytucji rządowych Australii oraz jej klientów i wykonawców, w związku z czym obowiązują w nich podobne ograniczenia klienta co w przypadku innych chmur suwerennych.
 
@@ -51,9 +51,9 @@ Każde niezawodne wdrożenie w chmurze wymaga dobrze przemyślanej sieci, która
     > [!WARNING]
     > Nie należy próbować korzystać z magazynu geograficznie nadmiarowego platformy Azure do tworzenia kopii zapasowych maszyn wirtualnych ani ich odzyskiwania. Zamiast tego można wykorzystać usługi [Azure Backup](https://azure.microsoft.com/services/backup) i [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) wraz z usługą [Managed Disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) do obsługi odporności obciążeń IaaS.
 2. Usługi Azure Backup i Azure Site Recovery współpracują ze sobą w ramach zaprojektowanej sieci, aby ułatwić zapewnienie odporności regionalnej na potrzeby usług IaaS i kopii zapasowych danych. Upewnij się, że sieć jest zoptymalizowana, dzięki czemu transfery danych pozostaną w sieci szkieletowej firmy Microsoft i będą wykorzystywać [wirtualne sieci równorzędne](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview), jeśli będzie to możliwe. Niektóre większe organizacje z wdrożeniami globalnymi mogą zamiast tego użyć usługi [ExpressRoute w warstwie Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction), aby kierować ruchem między regionami, co może pozwolić uniknąć regionalnych opłat za ruch wychodzący.
-3. Grupy zasobów platformy Azure są konstrukcjami specyficznymi dla regionu. Jest to jednak normalne, że zasoby należące do grupy zasobów istnieją w wielu regionach. Jeśli ma to miejsce, należy koniecznie pamiętać, że w przypadku awarii regionalnej operacje płaszczyzny sterowania względem grupy zasobów zakończą się niepowodzeniem w regionie, w którym miała miejsce awaria, nawet jeśli zasoby w innych regionach (w ramach tej grupy zasobów) będą nadal działać. Może to mieć wpływ zarówno na sieć, jak i projekt grupy zasobów.
-4. Wiele usług PaaS na platformie Azure obsługuje [punkty końcowe usługi](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) i/lub usługę [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview). Oba te rozwiązania w istotny sposób wpływają na kwestie dotyczące sieci w kontekście odporności regionalnej, migracji i zarządzania.
-5. Wiele usług PaaS korzysta z własnych rozwiązań zapewniających odporność. Na przykład usługa Azure SQL Database umożliwia łatwą replikację do dowolnej liczby dodatkowych regionów, podobnie jak usługa CosmosDB. W przypadku niektórych usług, np. Azure DNS, nie obowiązują zależności regionalne. Podczas podejmowania decyzji o usługach wykorzystywanych w procesie wdrażania, pamiętaj, aby w pełni zrozumieć możliwości przełączania w tryb failover i kroki odzyskiwania, które mogą być wymagane dla każdej usługi platformy Azure.
+3. Grupy zasobów platformy Azure są konstrukcjami specyficznymi dla regionu. Jest to jednak normalne, że zasoby należące do grupy zasobów istnieją w wielu regionach. W tej sytuacji należy koniecznie pamiętać, że w przypadku awarii regionalnej operacje płaszczyzny sterowania względem grupy zasobów zakończą się niepowodzeniem w regionie, w którym miała miejsce awaria, nawet jeśli zasoby w innych regionach (w ramach tej grupy zasobów) będą nadal działać. Może to mieć wpływ zarówno na sieć, jak i projekt grupy zasobów.
+4. Wiele usług PaaS na platformie Azure obsługuje [punkty końcowe usługi](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) lub usługę [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview). Oba te rozwiązania w istotny sposób wpływają na kwestie dotyczące sieci w kontekście odporności regionalnej, migracji i zarządzania.
+5. Wiele usług PaaS korzysta z własnych rozwiązań zapewniających odporność. Na przykład usługa Azure SQL Database umożliwia łatwą replikację do dowolnej liczby dodatkowych regionów, podobnie jak usługa Cosmos DB. W przypadku niektórych usług, np. Azure DNS, nie obowiązują zależności regionalne. Podczas podejmowania decyzji o usługach wykorzystywanych w procesie wdrażania, pamiętaj, aby w pełni zrozumieć możliwości przełączania w tryb failover i kroki odzyskiwania, które mogą być wymagane dla każdej usługi platformy Azure.
 6. Oprócz wdrażania w wielu regionach w celu zapewnienia obsługi odzyskiwania po awarii, wiele organizacji wybiera wdrożenie zgodnie ze wzorcem aktywne/aktywne, dzięki czemu nie jest wymagane przełączenie w tryb failover. Ma to dodatkową zaletę w postaci zapewniania globalnego równoważenia obciążenia oraz dodatkowego zwiększenia odporności na uszkodzenia i wydajności sieci. Aby skorzystać z tego wzorca, aplikacje muszą obsługiwać działanie w trybie aktywne/aktywne w wielu regionach.
 
 > [!WARNING]
@@ -62,10 +62,10 @@ Każde niezawodne wdrożenie w chmurze wymaga dobrze przemyślanej sieci, która
 Po uwzględnieniu topologii sieci, która będzie wymagana do zapewnienia odpowiedniego działania, konieczne będzie utworzenie dodatkowej dokumentacji i dostosowanie procesu. Poniższe podejście może pomóc ocenić potencjalne wyzwania i ustanowić ogólny sposób działania:
 
 - Rozważ bardziej niezawodną implementację gotowości i ładu.
-- Sporządź spis uwzględnionych obszarów geograficznych. Kompiluj listę regionów i krajów, których dotyczy problem.
-- Udokumentuj wymagania dotyczące niezależności danych: czy zidentyfikowane kraje mają wymagania dotyczące zgodności, które regulują niezależność danych?
-- Udokumentuj bazę użytkowników: czy migracja w chmurze wpłynie na pracowników, partnerów lub klientów w zidentyfikowanym kraju?
-- Udokumentuj centra danych i zasoby: czy w zidentyfikowanym kraju istnieją zasoby, które mogą zostać uwzględnione podczas pracy związanej z migracją?
+- Sporządź spis uwzględnionych obszarów geograficznych. Skompiluj listę regionów i krajów, których dotyczy problem.
+- Udokumentuj wymagania dotyczące niezależności danych. czy zidentyfikowane kraje mają wymagania dotyczące zgodności, które regulują niezależność danych?
+- Udokumentuj bazę użytkowników. czy migracja w chmurze wpłynie na pracowników, partnerów lub klientów w zidentyfikowanym kraju?
+- Udokumentuj centra danych i zasoby. czy w zidentyfikowanym kraju istnieją zasoby, które mogą zostać uwzględnione podczas pracy związanej z migracją?
 - Udokumentuj wymagania dotyczące regionalnej dostępności jednostek SKU i przechodzenia w tryb failover.
 
 Dopasuj zmiany w procesie migracji, aby obsługiwać początkowy spis.

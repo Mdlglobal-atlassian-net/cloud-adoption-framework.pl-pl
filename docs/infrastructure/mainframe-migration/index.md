@@ -8,12 +8,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f4e8f8c1ef9a145fc1497727738d6d12e8f13d7b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 88f844cb0a80971457beeb8814a109d70bb5d814
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025071"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547933"
 ---
 # <a name="mainframe-migration-overview"></a>Omówienie migracji komputera mainframe
 
@@ -69,7 +69,7 @@ Poniżej przedstawiono typowe operacje komputera mainframe:
 
 - **Język kontroli zadań (JCL):** Określ zasoby, które są konieczne do przetwarzania zadań wsadowych. Język JCL przekazuje te informacje do systemu z/OS za pomocą zestawu instrukcji kontroli zadań. Podstawowy język JCL zawiera sześć typów instrukcji: JOB, ASSGN, DLBL, EXTENT, LIBDEF i EXEC. Zadanie może zawierać kilka instrukcji EXEC (kroków), a każdy krok może mieć kilka instrukcji LIBDEF, ASSGN, DLBL i EXTENT.
 
-- **Proces początkowego ładowania programu (IPL):**  Odnosi się do ładowania kopii systemu operacyjnego z dysku do rzeczywistego magazynu procesora i uruchamiania go. Procesy IPL są używane do przywracania działania po przestoju. Proces IPL przypomina rozruch systemu operacyjnego na maszynach wirtualnych z systemem Windows lub Linux.
+- **Proces początkowego ładowania programu (IPL):**  Oznacza ładowanie kopii systemu operacyjnego z dysku do rzeczywistego magazynu procesora i uruchamianie go. Procesy IPL są używane do przywracania działania po przestoju. Proces IPL przypomina rozruch systemu operacyjnego na maszynach wirtualnych z systemem Windows lub Linux.
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 99e5deee6551d7e4db3a0404c6dd0e81deffe35d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 15c4be90354e30333384023e67090ef6103464e2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224034"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548470"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Model migracji opisany w przewodniku Cloud Adoption Framework
 
@@ -30,7 +30,7 @@ Model migracji opisany w przewodniku Cloud Adoption Framework wymaga przeprowadz
 
 ## <a name="envision-an-end-state"></a>Przewidywanie stanu końcowego
 
-Przed rozpoczęciem działań związanych z migracją należy określić w przybliżeniu stan końcowy. Na poniższym diagramie przedstawiono punkt początkowy dla infrastruktury, aplikacji i danych w środowisku lokalnym, który definiuje Twój *majątek cyfrowy*. Podczas procesu migracji te zasoby są przenoszone przy użyciu jednej z pięciu strategii migracji opisanych w temacie [5 zasad racjonalizacji](../../digital-estate/5-rs-of-rationalization.md).
+Przed rozpoczęciem działań związanych z migracją należy określić w przybliżeniu oczekiwany stan końcowy. Na poniższym diagramie przedstawiono punkt początkowy dla infrastruktury, aplikacji i danych w środowisku lokalnym, który definiuje Twój *majątek cyfrowy*. Podczas procesu migracji te zasoby są przenoszone przy użyciu jednej z pięciu strategii migracji opisanych w temacie [5 zasad racjonalizacji](../../digital-estate/5-rs-of-rationalization.md).
 
 ![Grafika informacyjna dotycząca opcji migracji](../../_images/migrate/migration-options.png)
 
