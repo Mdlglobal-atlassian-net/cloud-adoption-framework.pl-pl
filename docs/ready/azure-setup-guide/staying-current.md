@@ -10,18 +10,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 29241833514a205c08f311fc57156e70603948ba
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: fef411923327fe9f3318c4cb20c6dd456aa112d5
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378969"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72698499"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Bądź na bieżąco z platformą Microsoft Azure
 
 Tempo zmian platform w chmurze, takich jak Microsoft Azure, jest większe niż tempo, do którego przyzwyczaiła się większość organizacji. To tempo zmian oznacza, że organizacje muszą dostosować pracowników i procesy do nowego rytmu. Jeśli odpowiadasz w organizacji za nadążanie za zmianami, czasami może Cię to przytłaczać. Zasoby wymienione w tej sekcji mogą pomóc zachować aktualność.
 
+<!-- markdownlint-disable MD025 -->
+
 # <a name="top-resourcestabtopresources"></a>[Najważniejsze zasoby](#tab/TopResources)
+
+<!-- markdownlint-enable MD025 -->
 
 Następujące zasoby mogą pomóc pozostać na bieżąco z platformą Azure:
 
@@ -29,10 +33,10 @@ Następujące zasoby mogą pomóc pozostać na bieżąco z platformą Azure:
   - Usługa Service Health i alerty oferują terminowe powiadomienia o aktualnych problemach z usługą, planowanej konserwacji i poradach dotyczących kondycji. Ten zasób zawiera również informacje o funkcjach usuwanych z platformy Azure.
 - [Aktualizacje platformy Azure](https://azure.microsoft.com/updates)
   - Zasubskrybuj aktualizacje platformy Azure, aby odbierać powiadomienia o aktualizacjach produktów. Link do skróconych podsumowań z dodatkowymi informacjami, które ułatwiają śledzenie aktualizacji.
-  - Subskrybuj przy użyciu kanału informacyjnego [RSS](https://azurecomcdn.azureedge.net/en-us/updates/feed).
+  - Subskrybuj przy użyciu kanału informacyjnego [RSS](https://azurecomcdn.azureedge.net/updates/feed).
 - [Blog platformy Azure](https://azure.microsoft.com/blog)
   - Blog platformy Azure zawiera najważniejsze ogłoszenia dotyczące platformy Azure. Śledź ten blog, aby uzyskiwać aktualne informacje o krytycznym znaczeniu.
-  - Subskrybuj przy użyciu kanału informacyjnego [RSS](https://azurecomcdn.azureedge.net/en-us/blog/feed).
+  - Subskrybuj przy użyciu kanału informacyjnego [RSS](https://azurecomcdn.azureedge.net/blog/feed).
 - Blogi dotyczące konkretnych usług
   - Blogi dotyczące poszczególnych usług platformy Azure warto śledzić, jeśli korzystasz z tych usług.
   - Dostępnych jest wiele blogów dotyczących usług platformy Azure. Blogi, które Cię interesują, możesz wyszukać w Internecie.
@@ -40,7 +44,11 @@ Następujące zasoby mogą pomóc pozostać na bieżąco z platformą Azure:
   - Ta witryna to zasób nieoficjalny, który udostępnia większość zasobów wymienionych tutaj w jednym miejscu. Skorzystaj z linków do poszczególnych usług, aby uzyskać szczegółowe informacje i znaleźć blogi dotyczące konkretnych usług.
   - Subskrybuj przy użyciu kanału informacyjnego [RSS](https://azureinfohub.azurewebsites.net/Feed?serviceTitle=Azure).
 
+<!-- markdownlint-disable MD025 -->
+
 # <a name="additional-resourcestabadditionalresources"></a>[Dodatkowe zasoby](#tab/AdditionalResources)
+
+<!-- markdownlint-enable MD025 -->
 
 W przypadku bardziej zaawansowanej zawartości, która pomaga być na bieżąco z platformą Azure, przejrzyj wymienione tutaj zasoby:
 
