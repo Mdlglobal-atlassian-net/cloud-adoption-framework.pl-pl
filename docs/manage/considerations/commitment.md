@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e9ac7b930018e8eb8a8d750692de808be943db0c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7e7618163b15d17eab51571779e573dd9acb726e
+ms.sourcegitcommit: 73dbedf580951f25bf4b5544b83451cb075b1fa1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558131"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72805818"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Zobowiązania biznesowe w zarządzaniu chmurą
 
@@ -54,6 +54,8 @@ Linia bazowa zarządzania operacjami będzie służyć jako początkowy punkt po
 
 W tradycyjnych środowiskach lokalnych koszt zarządzania środowiskiem jest zwykle uznawany za Sunk kosztem firmy. W chmurze zarządzanie jest decyzją nigdy wykonywane celowo z bezpośrednim wpływem na budżet. Koszty każdej funkcji zarządzania mogą być bezpośrednio przypisane do poszczególnych obciążeń wdrożonych w chmurze. Takie podejście pozwala na większą kontrolę, ale tworzy wymaganie zespołów operacyjnych w chmurze i zespołów strategii chmurowej, aby najpierw zatwierdzić umowę dotyczącą odpowiedzialności.
 
+Organizacje mogą również zdecydować się na [przetworzyć niektóre z ich bieżących funkcji zarządzania dla dostawcy usług](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Dostawcy usług mogą korzystać z [usługi Azure Lighthouse](https://azure.com/lighthouse) , aby zapewnić organizacjom większą precyzję i kontrolę nad udzieleniem dostępu do zasobów, a także większą przejrzystością działań wykonywanych przez dostawców usług.
+
 **Delegowana odpowiedzialność:** Ze względu na to, że nie ma potrzeby scentralizowania i przyjmowania kosztów zarządzania operacyjnego, operacje działu IT w wielu organizacjach rozważają nowe podejścia. Jedną z typowych metod nazywa się delegowanie odpowiedzialności. W centrum usług w chmurze, operacje na platformie i Automatyzacja platformy zapewniają samoobsługowe narzędzia do zarządzania, które mogą być używane przez zespoły operacyjne prowadzone przez firmę, niezależnie od centralnych zespołów operacyjnych IT. Takie podejście zapewnia uczestnikom współpracy pełną kontrolę nad budżetami związanymi z zarządzaniem. Umożliwia także CCoE, aby upewnić się, że minimalny zestaw guardrails jest prawidłowo zaimplementowany. W tym modelu działa jako Broker i przewodnik ułatwiający podejmowanie decyzji w firmie. Operacje biznesowe nadzorują codzienne operacje zależnych obciążeń.
 
 **Centralna odpowiedzialność:** Wymagania dotyczące zgodności, złożoność techniczna i niektóre modele usług udostępnionych mogą wymagać centralnego modelu IT. W tym modelu kontynuuje konserwację obowiązków zarządzania operacjami. W związku z tym, projektowanie środowiska, kontrole zarządzania i narzędzia ładu mogą być centralnie zarządzane i kontrolowane, co ogranicza rolę zainteresowanych uczestników firmy podczas wykonywania zobowiązań w zakresie zarządzania. Jednak widoczność kosztów i architektury rozwiązań w chmurze znacznie ułatwia scentralizowanemu działowi IT przekazanie kosztów i poziomu zarządzania dla każdego obciążenia.
@@ -66,7 +68,7 @@ Pierwszym krokiem jest zatwierdzenie do podejścia do odpowiedzialności, które
 
 ## <a name="cloud-tenancy"></a>Dzierżawa w chmurze
 
-Chociaż nie jest to zalecane, firma nie może obsługiwać zasobów w wielu dzierżawach. Artykuł w witrynie Lighthouse dla wielu dzierżawców zawiera kilka przykładów dla wielodostępnych środowisk platformy Azure. W oparciu o przykłady w tym artykule następnym zobowiązaniem jest dzierżawa.
+W przypadku większości firm zarządzanie jest łatwiejsze, gdy wszystkie zasoby znajdują się w jednej dzierżawie. Niektóre organizacje mogą jednak wymagać obsługi wielu dzierżawców. Artykuł na temat [scentralizowania operacji zarządzania za pomocą usługi Azure Lighthouse](../centralize-operations.md) zawiera kilka przykładów, w których firmy mogą wymagać wielodostępnych środowisk platformy Azure.
 
 **Czy to obciążenie będzie się znajdować w jednej dzierżawie platformy Azure wraz ze wszystkimi innymi obciążeniami?**
 
