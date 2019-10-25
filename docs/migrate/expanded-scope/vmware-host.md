@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b09c1dcbb36e5f630ca0ae86c95c5c874e29d60b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: da05a1acea8029620e55ffbd11c108ab656bd491
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558209"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888862"
 ---
 # <a name="accelerate-migration-with-vmware-hosts"></a>Przyspieszanie migracji przy użyciu hostów VMWare
 
@@ -29,22 +29,22 @@ Podczas migrowania pierwszego hosta VMWare na platformę Azure istnieje kilka wy
 
 ### <a name="secure-your-azure-environment"></a>Zabezpiecz swoje środowisko platformy Azure
 
-Zaimplementuj odpowiednie rozwiązanie w chmurze dla usług RBAC i łączności sieciowej w środowisku platformy Azure. [Przewodnik po środowisku](https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) może pomóc w tej implementacji.
+Zaimplementuj odpowiednie rozwiązanie w chmurze dla usług RBAC i łączności sieciowej w środowisku platformy Azure. [Przewodnik po środowisku](https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) może pomóc w tej implementacji.
 
 ### <a name="private-cloud-management"></a>Zarządzanie chmurą prywatną
 
-Istnieją dwa wymagane zadania i jedno opcjonalne zadanie do ustanowienia zarządzania chmurą prywatną. [Eskalacja uprawnień w chmurze prywatnej](https://docs.microsoft.com/azure/vmware-cloudsimple/escalate-privileges.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) oraz [obciążenia DNS i DHCP](https://docs.microsoft.com/azure/vmware-cloudsimple/dns-dhcp-setup.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) są wymagane najlepsze rozwiązania.
+Istnieją dwa wymagane zadania i jedno opcjonalne zadanie do ustanowienia zarządzania chmurą prywatną. [Eskalacja uprawnień w chmurze prywatnej](https://docs.microsoft.com/azure/vmware-cloudsimple/escalate-privileges?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) oraz [obciążenia DNS i DHCP](https://docs.microsoft.com/azure/vmware-cloudsimple/dns-dhcp-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) są wymagane najlepsze rozwiązania.
 
-Jeśli celem jest [Migrowanie obciążeń przy użyciu rozproszonych sieci warstwy 2](https://docs.microsoft.com/azure/vmware-cloudsimple/migration-layer-2-vpn.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json), to trzecie najlepsze rozwiązanie będzie wymagane.
+Jeśli celem jest [Migrowanie obciążeń przy użyciu rozproszonych sieci warstwy 2](https://docs.microsoft.com/azure/vmware-cloudsimple/migration-layer-2-vpn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json), to trzecie najlepsze rozwiązanie będzie wymagane.
 
 ### <a name="private-cloud-networking"></a>Sieć prywatna w chmurze
 
 Po ustaleniu wymagań związanych z zarządzaniem sieci w chmurze prywatnej można nawiązać przy użyciu następujących najlepszych rozwiązań:
 
-- [Połączenie sieci VPN z chmurą prywatną](https://docs.microsoft.com/azure/vmware-cloudsimple/set-up-vpn.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-- [Lokalne połączenie sieciowe z usługą ExpressRoute](https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-connection.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-- [Połączenie sieci wirtualnej platformy Azure z usługą ExpressRoute](https://docs.microsoft.com/azure/vmware-cloudsimple/azure-expressroute-connection.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-- [Konfigurowanie rozpoznawania nazw DNS](https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-dns-setup.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Połączenie sieci VPN z chmurą prywatną](https://docs.microsoft.com/azure/vmware-cloudsimple/set-up-vpn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Lokalne połączenie sieciowe z usługą ExpressRoute](https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Połączenie sieci wirtualnej platformy Azure z usługą ExpressRoute](https://docs.microsoft.com/azure/vmware-cloudsimple/azure-expressroute-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Konfigurowanie rozpoznawania nazw DNS](https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-dns-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integracja z planem wdrażania chmury
 
@@ -58,14 +58,14 @@ Podczas każdej iteracji zespół ds. wdrażania działa w zaległościach w cel
 
 Poniżej przedstawiono kilka przykładów narzędzi, których można użyć w celu przepracowania migracji:
 
-- [Natywne narzędzia VMWare](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-- [Azure Data Box](https://docs.microsoft.com/azure/vmware-cloudsimple/migration-using-azure-data-box.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Natywne narzędzia VMWare](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Azure Data Box](https://docs.microsoft.com/azure/vmware-cloudsimple/migration-using-azure-data-box?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 Alternatywnie można migrować obciążenia za pośrednictwem trybu failover odzyskiwania po awarii przy użyciu następujących narzędzi:
 
-- [Tworzenie kopii zapasowych maszyn wirtualnych obciążeń](https://docs.microsoft.com/azure/vmware-cloudsimple/backup-workloads-veeam.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-- [Skonfiguruj chmurę prywatną jako lokację odzyskiwania po awarii przy użyciu Zerto](https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-- [Skonfiguruj chmurę prywatną jako lokację odzyskiwania po awarii przy użyciu programu VMware SRM](https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager.md?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Tworzenie kopii zapasowych maszyn wirtualnych obciążeń](https://docs.microsoft.com/azure/vmware-cloudsimple/backup-workloads-veeam?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Skonfiguruj chmurę prywatną jako lokację odzyskiwania po awarii przy użyciu Zerto](https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Skonfiguruj chmurę prywatną jako lokację odzyskiwania po awarii przy użyciu programu VMware SRM](https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 ## <a name="next-steps"></a>Następne kroki
 

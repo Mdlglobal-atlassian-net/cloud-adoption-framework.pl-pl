@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e365cca30b5fe98e0737beb3005a13544844dc41
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221425"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888882"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Narzędzia i usługi zarządzania serwerem platformy Azure
 
@@ -28,7 +28,7 @@ Zgodnie z [omówieniem](./index.md) tej sekcji pakiet usług Azure Server Manage
 
 W poniższych sekcjach krótko opisano te obszary zarządzania i przedstawiono linki do szczegółowej zawartości dotyczącej głównych usług platformy Azure, które je obsługują.
 
-## <a name="migrate"></a>Migrate (Migracja)
+## <a name="migrate"></a>Migrowanie
 
 Usługi migracji mogą ułatwić Migrowanie obciążeń do platformy Azure. Aby zapewnić najlepsze wskazówki, usługa Azure Migrate rozpoczyna się od mierzenia wydajności serwera lokalnego i oceny przydatności do migracji. Po Azure Migrate zakończeniu oceny można przeprowadzić migrację maszyn lokalnych do platformy Azure za pomocą [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) i [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) .
 
@@ -56,11 +56,11 @@ W przypadku danych serwera plików inna usługa do rozważenia jest [Azure File 
 - Log Analytics ([dzienniki](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection#logs)) to funkcja Azure monitor. Jego rolą jest centralny ogólny scenariusz zarządzania platformy Azure. Służy jako magazyn danych do analizy dzienników i dla wielu innych usług platformy Azure. Oferuje on bogaty język zapytań i aparat analityczny, który zapewnia wgląd w działanie aplikacji i zasobów.
 - [Dziennik aktywności platformy Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) jest również funkcją Azure monitor. Zapewnia wgląd w zdarzenia na poziomie subskrypcji występujące na platformie Azure.
 
-## <a name="configure"></a>Konfigurowanie
+## <a name="configure"></a>Konfiguracja
 
 Kilka usług mieści się w tej kategorii. Mogą one pomóc zautomatyzować zadania operacyjne, zarządzać konfiguracjami serwera, mierzyć zgodność aktualizacji, planować aktualizacje i wykrywać zmiany na serwerach. Te usługi są podstawowe do obsługi bieżących operacji.
 
-- [Update Management](https://docs.microsoft.com/azure/automation/automation-update-management#viewing-update-assessments) automatyzuje wdrażanie poprawek w środowisku, w tym wdrażanie do wystąpień systemu operacyjnego działającego poza platformą Azure. Obsługuje zarówno systemy operacyjne Windows, jak i Linux i śledzi najważniejsze luki w zabezpieczeniach systemu operacyjnego i niezgodności spowodowane przez brakujące poprawki.
+- [Update Management](https://docs.microsoft.com/azure/automation/automation-update-management#view-update-assessments) automatyzuje wdrażanie poprawek w środowisku, w tym wdrażanie do wystąpień systemu operacyjnego działającego poza platformą Azure. Obsługuje zarówno systemy operacyjne Windows, jak i Linux i śledzi najważniejsze luki w zabezpieczeniach systemu operacyjnego i niezgodności spowodowane przez brakujące poprawki.
 - [Change Tracking i spis](https://docs.microsoft.com/azure/automation/change-tracking) zapewniają wgląd w oprogramowanie, które jest uruchomione w danym środowisku, i wyświetla wszystkie zmiany, które wystąpiły.
 - [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) umożliwia uruchamianie skryptów Python i PowerShell oraz elementów Runbook w celu zautomatyzowania zadań w środowisku. Korzystając z tego [hybrydowego procesu roboczego elementu Runbook](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker), można również rozłożyć elementy Runbook do zasobów lokalnych.
 - [Azure Automation konfiguracja stanu](https://docs.microsoft.com/azure/automation/automation-dsc-overview) umożliwia wypychanie konfiguracji stanu żądanego (DSC) programu PowerShell bezpośrednio z platformy Azure. Z kolei Konfiguracja DSC umożliwia monitorowanie i zachowanie konfiguracji systemów operacyjnych gościa i obciążeń.
@@ -71,7 +71,7 @@ Przyjęcie i przechodzenie do chmury tworzy nowe wyzwania związane z zarządzan
 
 Projekt dotyczący zarządzania organizacjami standardowymi często różni się od projektowania ładu dla złożonych przedsiębiorstw. Aby dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących ładu dla standardowej organizacji, zobacz [Przewodnik dotyczący zarządzania w warstwie Standardowa](../../govern/guides/standard/index.md). Aby dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących ładu dla złożonego przedsiębiorstwa, zobacz Przewodnik dotyczący [zarządzania złożonymi przedsiębiorstwami](../../govern/guides/complex/index.md).
 
-## <a name="billing-information"></a>Informacja o rozliczeniach
+## <a name="billing-information"></a>Informacje o rozliczeniach
 
 Aby dowiedzieć się więcej o cenach dla usług zarządzania platformy Azure, przejdź do następujących stron:
 

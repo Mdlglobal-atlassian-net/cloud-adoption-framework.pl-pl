@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c0ef1165fc416814e0563ec29c4ad5901a83b032
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 80cd8c74f283436d9f32ce647c27bb7c67d3c92c
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683273"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888888"
 ---
 # <a name="democratize-data"></a>Zdemokratyzuj proces dane
 
@@ -47,7 +47,7 @@ Udostępnianie danych może szybko utworzyć SPECJALISTę, który może być uż
 Zarządzanie danymi jest szerokim tematem, który może wymagać jego własnej dedykowanej struktury. Jest to poza zakresem [struktury wdrożenia chmury](../../index.md). Istnieje jednak kilka aspektów nadzoru nad danymi, które należy wziąć pod uwagę, gdy tylko zostanie sprawdzona hipoteza klienta. Poniżej przedstawiono kilka przykładów tych pytań:
 
 - **Czy dane są udostępnione poufne?** [Dane powinny być klasyfikowane](../../govern/policy-compliance/data-classification.md) przed wszelkimi publicznymi udziałami w celu ochrony interesów klientów i firmy.
-- **Czy dane są poufne, czy zostały zabezpieczone?** Ochrona danych poufnych powinna być wymagana w przypadku dowolnych danych z demokratyzacją. Przykładowe obciążenie dotyczące [zabezpieczania rozwiązań danych](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions.md) zawiera kilka odwołań do zabezpieczania danych.
+- **Czy dane są poufne, czy zostały zabezpieczone?** Ochrona danych poufnych powinna być wymagana w przypadku dowolnych danych z demokratyzacją. Przykładowe obciążenie dotyczące [zabezpieczania rozwiązań danych](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) zawiera kilka odwołań do zabezpieczania danych.
 - **Czy dane są w wykazie?** Przechwycenie szczegółowych informacji o udostępnianych danych będzie pomocne w zarządzaniu długoterminowymi danymi. Narzędzia do dokumentowania danych, takie jak Azure Data Catalog, mogą znacznie ułatwić ten proces w chmurze. Wskazówki dotyczące [adnotacji danych](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate) i [dokumentacji źródeł danych](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation) mogą pomóc przyspieszyć proces.
 
 Gdy Democratization danych jest ważne dla hipotez ukierunkowanych na klienta, zarządzanie danymi udostępnionymi powinno znajdować się w tym miejscu w planie wydania, aby chronić klientów, odbiorców danych i firmę.

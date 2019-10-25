@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549099"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888839"
 ---
 # <a name="cloud-governance-capabilities"></a>Możliwości ładu chmury
 
@@ -63,7 +63,7 @@ Możliwość zarządzania chmurą jest zwykle dostarczana przez zespół pracuj�
 Poniżej przedstawiono uczestników, którzy często biorą udział w działaniach ładu w chmurze:
 
 - Liderzy od środkowego zarządzania i bezpośrednich współautorów w kluczowych rolach, które zostały wyznaczone do reprezentowania firmy, będą pomóc w ocenie tolerancji ryzyka.
-- Oferowane funkcje ładu chmury są rozszerzeniem [możliwości strategii chmury](./cloud-strategy.md). Tak jak CIO i liderzy biznesowi powinni wziąć udział w możliwościach strategii chmury, ich bezpośrednie raporty mogą uczestniczyć w działaniach związanych z zarządzaniem chmurą.
+- Możliwości ładu chmury są dostarczane przez rozszerzenie [możliwości strategii chmury](./cloud-strategy.md). Tak jak CIO i liderzy biznesowi powinni wziąć udział w możliwościach strategii chmury, ich bezpośrednie raporty mogą uczestniczyć w działaniach związanych z zarządzaniem chmurą.
 - Pracownicy biznesowi, którzy są członkami jednostki biznesowej, którzy ściśle współpracują z liderem biznesowym firmy, powinni być uprawnieni do podejmowania decyzji dotyczących zagrożenia firmowego i technicznego.
 - Technologie informatyczne (IT) i bezpieczeństwo informacji (IS) pracownicy, którzy rozumieją techniczne aspekty transformacji w chmurze, mogą obsłużyć wydajność, a nie jest spójnym dostawcą możliwości zarządzania chmurą.
 
