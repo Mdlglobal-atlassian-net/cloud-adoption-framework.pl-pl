@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 24799668ab898822cf4a1d82ee2bf6906af71773
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547808"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915018"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racjonalizacja majątku cyfrowego
 
@@ -50,7 +50,7 @@ Pełna racjonalizacja dużej ilości cyfrowej jest podatna na ryzyko i może odn
 
 ### <a name="inventory-reduce-discovery-data-points"></a>Spis: Zmniejsz liczbę punktów danych odnajdywania
 
-Niektóre organizacje zainwestowają czas, energię i koszty w celu zapewnienia dokładnego, w czasie rzeczywistym spisu pełnej cyfrowej. W przypadku utraty, kradzieży, cykli odświeżania i pracowników często należy uzasadnić szczegółowe śledzenie zasobów urządzeń użytkowników końcowych. Jednak zwrot z inwestycji związanych z utrzymywaniem dokładnego serwera i spisu aplikacji w tradycyjnym lokalnym centrum danych jest często niski. Większość organizacji IT ma inne problemy, które należy spełnić, aby nie śledzić użycia stałych zasobów w centrum danych.
+Niektóre organizacje zainwestowają czas, energię i koszty w celu zapewnienia dokładnego, w czasie rzeczywistym spisu pełnej cyfrowej. Nieprzerwane, kradzież, cykle odświeżania i dołączanie pracownika często uzasadnia szczegółowe śledzenie zasobów urządzeń użytkowników końcowych. Jednak zwrot z inwestycji związanych z utrzymywaniem dokładnego serwera i spisu aplikacji w tradycyjnym lokalnym centrum danych jest często niski. Większość organizacji IT ma inne problemy, które należy spełnić, aby nie śledzić użycia stałych zasobów w centrum danych.
 
 W przypadku transformacji w chmurze spis bezpośrednio jest skorelowany z kosztami operacyjnymi. Dokładne planowanie jest wymagane w celu zapewnienia odpowiednich danych spisu. Niestety, bieżące opcje skanowania środowiska mogą opóźniać decyzje według tygodni lub miesięcy. Na szczęście kilka lew może przyspieszyć zbieranie danych.
 
