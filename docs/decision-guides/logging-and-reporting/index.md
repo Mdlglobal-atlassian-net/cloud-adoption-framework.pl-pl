@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3254cf195c001f7ce575bf067cd434649293b970
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547892"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915042"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Przewodnik po decyzjach dotyczących rejestrowania i raportowania
 
@@ -26,7 +26,7 @@ Idź do: [Planowanie infrastruktury monitorowania](#planning-your-monitoring-inf
 
 Punkt przegięcia podczas określania strategii rejestrowania i raportowania w chmurze zależy głównie od istniejących inwestycji dokonanych w organizacji w procesy operacyjne, a w pewnym stopniu od wymagań dotyczących obsługi strategii wielochmurowej.
 
-Istnieje kilka sposobów rejestrowania i raportowania działań w chmurze. Rejestrowanie natywne dla chmury i scentralizowane to dwie typowe opcje typu „oprogramowanie jako usługa” (SaaS) oparte na modelu subskrypcyjnym i liczbie subskrypcji.
+Istnieje kilka sposobów rejestrowania i raportowania działań w chmurze. Rejestrowanie natywne dla chmury i scentralizowane to dwie typowe opcje usług zarządzanych opartych na modelu subskrypcyjnym i liczbie subskrypcji.
 
 ## <a name="planning-your-monitoring-infrastructure"></a>Planowanie infrastruktury monitorowania
 
