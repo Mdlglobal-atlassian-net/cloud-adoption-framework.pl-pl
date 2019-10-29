@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 219f5868f8fa8f3f5d26fa4c3c63db7786479a2c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378409"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683841"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanizmy kontroli kosztów skoncentrowane na migracji
 
@@ -31,7 +31,7 @@ W tym artykule mowa o następujących narzędziach:
 > - Azure Cost Management
 > - Azure Advisor
 
-Procesy opisane w tym artykule mogą wymagać współpracy z kierownikami działów informatycznych, z działem finansowym lub z właścicielami aplikacji biznesowych. Aby uzyskać wskazówki dotyczące współpracy z tymi rolami, zobacz artykuł dotyczący struktury Cloud Adoption Framework poświęcony tworzeniu organizacji świadomej w zakresie kosztów (będzie dostępny od 3 kwartału 2019 r.).
+Procesy opisane w tym artykule mogą wymagać współpracy z kierownikami działów informatycznych, z działem finansowym lub z właścicielami aplikacji biznesowych.
 
 <!-- markdownlint-disable MD024 MD025 -->
 
@@ -54,14 +54,14 @@ Te ręczne kalkulatory kosztów mogą być używane niezależnie do prognozowani
 
 Usługa Azure Migrate oblicza **szacunkowe koszty miesięczne** na podstawie danych przechwytywanych przez moduł zbierający i mapę usług. W poniższych krokach opisano ładowanie szacunkowych kosztów:
 
-1. Przejdź do bloku Ocena usługi Azure Migrate w portalu.
-1. Na stronie **Omówienie** projektu wybierz pozycję **+Utwórz ocenę**.
-1. Kliknij pozycję **Wyświetl wszystko**, aby sprawdzić właściwości oceny.
-1. Utwórz grupę i określ jej nazwę.
-1. Wybierz maszyny wirtualne, które chcesz dodać do grupy.
-1. Kliknij pozycję **Utwórz ocenę**, aby utworzyć grupę i ocenę.
-1. Po utworzeniu oceny możesz ją wyświetlić w obszarze Omówienie > Pulpit nawigacyjny.
-1. W sekcji „Szczegóły oceny” w nawigacji bloku wybierz pozycję **Szczegóły kosztów**.
+1. Przejdź do obszaru Ocena usługi Azure Migrate w portalu.
+2. Na stronie **Omówienie** projektu wybierz pozycję **+Utwórz ocenę**.
+3. Kliknij pozycję **Wyświetl wszystko**, aby sprawdzić właściwości oceny.
+4. Utwórz grupę i określ jej nazwę.
+5. Wybierz maszyny wirtualne, które chcesz dodać do grupy.
+6. Kliknij pozycję **Utwórz ocenę**, aby utworzyć grupę i ocenę.
+7. Po utworzeniu oceny możesz ją wyświetlić w obszarze Omówienie > Pulpit nawigacyjny.
+8. W sekcji „Szczegóły oceny” w okienku nawigacji portalu wybierz pozycję **Szczegóły kosztów**.
 
 Przedstawiony poniżej otrzymany wynik szacunkowy obejmuje miesięczne koszty obliczania i magazynu, które często stanowią największą część kosztów związanych z chmurą.
 
@@ -83,9 +83,9 @@ W ciągu 24 godzin od zmigrowania zasobów (infrastruktury, aplikacji i danych) 
 
 W poniższych krokach przedstawiono zalecenia dotyczące kosztów dla zasobów (infrastruktury, aplikacji i danych) w ramach bieżących subskrypcji:
 
-1. Przejdź do bloku **Azure Advisor** w witrynie. W tym celu wybierz pozycję **Advisor** w lewym okienku nawigacji w witrynie Azure Portal. Jeśli pozycja Advisor w lewym okienku nie będzie widoczna, wybierz pozycję **Wszystkie usługi**. W okienku menu usługi w obszarze **Monitorowanie i zarządzanie** wybierz pozycję **Advisor**.
-1. Na pulpicie nawigacyjnym usługi Advisor zostanie wyświetlone podsumowanie zaleceń dla wszystkich wybranych subskrypcji. Możesz wybrać subskrypcje, do których mają być wyświetlane zalecenia, przy użyciu listy rozwijanej filtru subskrypcji.
-1. Aby wyświetlić zalecenia dotyczące kosztów, wybierz kartę Koszty.
+1. Przejdź do obszaru **Azure Advisor** w portalu. W tym celu wybierz pozycję **Advisor** w lewym okienku nawigacji w witrynie Azure Portal. Jeśli pozycja Advisor w lewym okienku nie będzie widoczna, wybierz pozycję **Wszystkie usługi**. W okienku menu usługi w obszarze **Monitorowanie i zarządzanie** wybierz pozycję **Advisor**.
+2. Na pulpicie nawigacyjnym usługi Advisor zostanie wyświetlone podsumowanie zaleceń dla wszystkich wybranych subskrypcji. Możesz wybrać subskrypcje, do których mają być wyświetlane zalecenia, przy użyciu listy rozwijanej filtru subskrypcji.
+3. Aby wyświetlić zalecenia dotyczące kosztów, wybierz kartę Koszty.
 
 ## <a name="azure-cost-management"></a>Azure Cost Management
 
@@ -95,10 +95,10 @@ Wymagania wstępne: W pozostałej części karty założono, że czytelnik zako�
 
 W poniższych krokach opisano ładowanie danych analizy kosztów w usłudze Azure Cost Management dla subskrypcji:
 
-1. Przejdź do bloku **Zarządzanie kosztami i rozliczenia** w witrynie. Jeśli w lewym okienku pozycja Zarządzanie kosztami i rozliczenia nie jest widoczna, kliknij pozycję **Wszystkie usługi**. W okienku menu usługi w obszarze **Monitorowanie i zarządzanie** kliknij pozycję **Zarządzanie kosztami i rozliczenia**.
-1. W bloku Zarządzanie kosztami i rozliczenia wybierz pozycję **Zarządzanie kosztami** w lewym oknie nawigacji, aby rozpocząć analizowanie i optymalizowanie kosztów chmury w otwartym bloku.
-1. W bloku Zarządzanie kosztami wybierz pozycję **Analiza kosztów**.
-    1. Użyj kapsułki **Zakres**, aby przełączyć na inny zakres w analizie kosztów.
+1. Przejdź do obszaru **Zarządzanie kosztami i rozliczenia** w portalu. Jeśli w lewym okienku pozycja Zarządzanie kosztami i rozliczenia nie jest widoczna, kliknij pozycję **Wszystkie usługi**. W okienku menu usługi w obszarze **Monitorowanie i zarządzanie** kliknij pozycję **Zarządzanie kosztami i rozliczenia**.
+2. W obszarze Zarządzanie kosztami i rozliczenia wybierz pozycję **Zarządzanie kosztami** w lewym okienku nawigacji, aby rozpocząć analizowanie i optymalizowanie kosztów chmury.
+3. W obszarze Zarządzanie kosztami wybierz pozycję **Analiza kosztów**.
+    a. Użyj kapsułki **Zakres**, aby przełączyć na inny zakres w analizie kosztów.
 
 Ta analiza umożliwi przegląd łącznego kosztu, budżetu (jeśli jest dostępny) i kosztów skumulowanych. Każde obliczenie może być wyświetlane według usługi, zasobu oraz w czasie. Co ważne, koszty mogą być analizowane według tagów. Prawidłowe nazewnictwo i tagowanie zasobów (infrastruktury, aplikacji i danych) stanowi punkt wyjścia dla wszystkich procesów zarządzania dźwiękiem i kosztami. Odpowiednie tagi umożliwiają lepsze zarządzanie kosztami i wyraźniejszy wpływ optymalizacji wydajności i kosztów.
 

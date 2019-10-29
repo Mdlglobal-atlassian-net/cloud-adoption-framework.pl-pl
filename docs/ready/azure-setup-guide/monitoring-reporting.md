@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e7d68ee904a5ef82c0ac7effd18e775483c441b7
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 1be663168815af9067268cd18d9db51cfe10291c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378986"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548879"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Monitorowanie i raportowanie na platformie Azure
 
@@ -139,7 +139,7 @@ Usługa Azure Security Center jest oferowana w dwóch warstwach: bezpłatna i st
 
 **Wypróbuj usługę w warstwie Standardowa bezpłatnie przez pierwsze 30 dni.**
 
-Po włączeniu i skonfigurowaniu zasad zabezpieczeń dla zasobów subskrypcji w sekcji **zapobiegania** można wyświetlić stan zabezpieczeń zasobów oraz informacje o problemach. Listę tych problemów można również wyświetlić na kafelku **Zalecenia**.
+Po włączeniu i skonfigurowaniu zasad zabezpieczeń dla zasobów subskrypcji w sekcji **Zapobieganie** można wyświetlać stan zabezpieczeń zasobów oraz informacje o problemach. Listę tych problemów można również wyświetlić na kafelku **Zalecenia**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
 

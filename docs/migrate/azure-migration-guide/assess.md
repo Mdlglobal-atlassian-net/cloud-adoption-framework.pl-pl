@@ -10,18 +10,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224392"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549272"
 ---
 # <a name="assess-the-digital-estate"></a>Szacowanie majątku cyfrowego
 
 W idealnej migracji każdy zasób (infrastruktury, aplikacji lub danych) jest zgodny z platformą w chmurze oraz gotowy do migracji. W rzeczywistości nie wszystkie elementy można zmigrować do chmury. Ponadto nie każdy zasób jest zgodny z platformami w chmurze. Przed przeprowadzeniem migracji obciążenia do chmury ważne jest, aby ocenić obciążenie i każdy powiązany z nim zasób (infrastrukturę, aplikacje i dane).
 
 Zasoby w tej sekcji ułatwią ocenę środowiska i określenie jego przydatności do migracji oraz metod, które należy wziąć pod uwagę.
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="toolstabtools"></a>[Narzędzia](#tab/Tools)
 
@@ -39,7 +41,7 @@ Aby rozpocząć ocenę migracji serwera przy użyciu usługi Azure Migrate, wyko
 
 1. Wybierz opcję **Azure Migrate**.
 1. W obszarze **Przegląd** kliknij pozycję **Ocena i migracja serwerów**.
-1. Wybierz opcję **Dodaj narzędzia**.
+1. Wybierz pozycję **Dodaj narzędzia**.
 1. W obszarze **Odnajdywanie, ocena i migracja serwerów** kliknij pozycję **Dodaj narzędzia**.
 1. W obszarze **Projekt migracji**wybierz subskrypcję platformy Azure i utwórz grupę zasobów, jeśli jej nie masz.
 1. W obszarze **Szczegóły projektu** określ nazwę projektu i lokalizację geograficzną, w której chcesz utworzyć projekt, a następnie kliknij przycisk **Dalej**.
