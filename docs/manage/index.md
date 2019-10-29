@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 3f66a3ef43c16c9a331fabdaf718c85f9f131d8a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682710"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72979891"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Zarządzanie w chmurze w przewodniku Cloud Adoption Framework
 
-Realizacja [strategii chmury](../strategy/index.md) wymaga starannego planowania, przygotowania i wdrożenia. Ale to ciągłe działanie zasobów cyfrowych daje konkretne wyniki biznesowe. Bez planu zapewniającego niezawodne i właściwie zarządzanie rozwiązaniami w chmurze wszelkie wysiłki przyniosą niewielkie rezultaty. Poniższe ćwiczenia pomogą opracować metody biznesowe i techniczne konieczne do zaoferowania zarządzania w chmurze, które wspomaga działania operacyjne.
+Realizacja [strategii chmury](../strategy/index.md) wymaga starannego planowania, przygotowania i wdrożenia. Ale to ciągłe działanie zasobów cyfrowych daje konkretne wyniki biznesowe. Bez planu zapewniającego niezawodne i właściwie zarządzanie rozwiązaniami w chmurze wszelkie wysiłki przyniosą niewielkie rezultaty. Poniższe ćwiczenia pomagają opracować metody biznesowe i techniczne konieczne do zapewnienia zarządzania w chmurze, które wspomaga działania operacyjne.
 
 ## <a name="getting-started"></a>Wprowadzenie
 
@@ -107,7 +107,7 @@ Platformy lub obciążenia, które wymagają wyższego poziomu zobowiązania biz
 
 ## <a name="scalable-cloud-management-methodology"></a>Skalowalna metodologia zarządzania chmurą
 
-Powyższe kroki określają praktyczne sposoby realizacji metodologii zarządzania przedstawionej w przewodniku Cloud Adoption Framework.
+Poprzednie kroki określają praktyczne sposoby realizacji metodologii zarządzania przedstawionej w przewodniku Cloud Adoption Framework.
 
 ![Metodologia zarządzania w przewodniku Cloud Adoption Framework](../_images/manage/caf-manage.png)
 
@@ -130,7 +130,7 @@ Zawartość przewodnika Cloud Adoption Framework dotyczy działalności biznesow
 
 Architekt chmury pełni rolę lidera myśli i osoby ułatwiającej kontakt między tymi odbiorcami. Zawartość tej kolekcji przewodników ma pomóc architektowi chmury w ułatwieniu odpowiednich konwersacji z odpowiednimi odbiorcami, aby umożliwić podjęcie koniecznych decyzji. Transformacja firmy, która jest napędzana i obsługiwana przez chmurę, zależy od tego, czy architekt chmury pomoże w podejmowaniu decyzji w zakresie działalności biznesowej i IT.
 
-**Specjalizacja architekta chmury w tej sekcji:** Każda sekcja przewodnika Cloud Adoption Framework reprezentuje różną specjalizację lub wariant roli architekta chmury. Ta sekcja przewodnika Cloud Adoption Framework jest przeznaczona dla architektów chmury pasjonujących się operacjami i zarządzaniem wdrażanymi rozwiązaniami. W ramach tej struktury ci specjaliści są często nazywani specjalistami ds. *operacji w chmurze* lub zbiorczo *zespołem ds. operacji w chmurze*.
+**Specjalizacja architekta chmury w tej sekcji:** Każda sekcja przewodnika Cloud Adoption Framework reprezentuje różną specjalizację lub wariant roli architekta chmury. Ta sekcja przewodnika Cloud Adoption Framework jest przeznaczona dla architektów chmury pasjonujących się operacjami i zarządzaniem rozwiązaniami wdrożeniowymi. W ramach tej struktury ci specjaliści są często nazywani specjalistami ds. *operacji w chmurze* lub zbiorczo *zespołem ds. operacji w chmurze*.
 
 ## <a name="use-this-guide"></a>Korzystanie z tego przewodnika
 
@@ -140,7 +140,7 @@ Jeśli chcesz postępować zgodnie z tym przewodnikiem od początku do końca, t
 
 ## <a name="next-steps"></a>Następne kroki
 
-Zastosuj tę metodologię, aby [opracować czytelne zobowiązania biznesowe](./considerations/business-alignment.md).
+Zastosuj tę metodologię, aby opracować czytelne zobowiązania biznesowe.
 
 > [!div class="nextstepaction"]
 > [Opracowywanie czytelnych zobowiązań biznesowych](./considerations/business-alignment.md)
