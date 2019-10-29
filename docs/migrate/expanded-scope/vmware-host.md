@@ -8,38 +8,34 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: da05a1acea8029620e55ffbd11c108ab656bd491
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: 66a39d53adeaf73e96cf04bdc5f80fc9574b675a
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888862"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980207"
 ---
 # <a name="accelerate-migration-with-vmware-hosts"></a>Przyspieszanie migracji przy użyciu hostów VMWare
 
-Migrowanie całego hosta VMWare może przenosić wiele obciążeń i wielu zasobów w ramach jednego wysiłku migracji. Poniższe wskazówki pomogą rozszerzyć zakres [przewodnika migracji platformy Azure](../azure-migration-guide/index.md) za pomocą migracji hosta VMware.
-
-## <a name="general-scope-expansion"></a>Ogólne rozszerzenie zakresu
-
-Większość tego nakładu pracy wymaganego do rozwinięcia tego zakresu będzie miała miejsce w ramach wymagań wstępnych i procesów migracji związanych z migracją.
+Migrowanie całego hosta VMWare może przenosić wiele obciążeń i wielu zasobów w ramach jednego wysiłku migracji. Poniższe wskazówki rozszerzają zakres [przewodnika migracji platformy Azure](../azure-migration-guide/index.md) za pomocą migracji hosta VMware. Większość wysiłku wymaganego do rozwinięcia tego zakresu występuje w ramach wymagań wstępnych i procesów migracji związanych z pracą związanymi z migracją.
 
 ## <a name="suggested-prerequisites"></a>Sugerowane wymagania wstępne
 
-Podczas migrowania pierwszego hosta VMWare na platformę Azure istnieje kilka wymagań wstępnych, które muszą zostać spełnione, aby przygotować wymagania dotyczące tożsamości, sieci i zarządzania. Po spełnieniu tych wymagań wstępnych każdy dodatkowy host powinien wymagać znacznie mniejszego wysiłku do migracji. Te wymagania wstępne są dostosowane do kilku kluczowych wysiłków: Zabezpieczanie środowiska platformy Azure, zarządzania chmurą prywatną i sieci prywatnej chmury.
+Podczas migrowania pierwszego hosta VMWare na platformę Azure należy spełnić pewne wymagania wstępne, aby przygotować wymagania dotyczące tożsamości, sieci i zarządzania. Po spełnieniu tych wymagań wstępnych każdy dodatkowy host powinien wymagać znacznie mniejszego wysiłku do migracji. Poniższe sekcje zawierają więcej szczegółowych informacji o wymaganiach wstępnych.
 
 ### <a name="secure-your-azure-environment"></a>Zabezpiecz swoje środowisko platformy Azure
 
-Zaimplementuj odpowiednie rozwiązanie w chmurze dla usług RBAC i łączności sieciowej w środowisku platformy Azure. [Przewodnik po środowisku](https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) może pomóc w tej implementacji.
+Zaimplementuj odpowiednie rozwiązanie w chmurze na potrzeby kontroli dostępu opartej na rolach i łączności sieciowej w środowisku platformy Azure. [Przewodnik po środowisku](https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) może pomóc w tej implementacji.
 
 ### <a name="private-cloud-management"></a>Zarządzanie chmurą prywatną
 
 Istnieją dwa wymagane zadania i jedno opcjonalne zadanie do ustanowienia zarządzania chmurą prywatną. [Eskalacja uprawnień w chmurze prywatnej](https://docs.microsoft.com/azure/vmware-cloudsimple/escalate-privileges?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) oraz [obciążenia DNS i DHCP](https://docs.microsoft.com/azure/vmware-cloudsimple/dns-dhcp-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) są wymagane najlepsze rozwiązania.
 
-Jeśli celem jest [Migrowanie obciążeń przy użyciu rozproszonych sieci warstwy 2](https://docs.microsoft.com/azure/vmware-cloudsimple/migration-layer-2-vpn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json), to trzecie najlepsze rozwiązanie będzie wymagane.
+Jeśli celem jest [Migrowanie obciążeń przy użyciu rozproszonych sieci warstwy 2](https://docs.microsoft.com/azure/vmware-cloudsimple/migration-layer-2-vpn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json), ta trzecia Najlepsza Metoda jest również wymagana.
 
-### <a name="private-cloud-networking"></a>Sieć prywatna w chmurze
+### <a name="private-cloud-networking"></a>Sieć chmury prywatnej
 
-Po ustaleniu wymagań związanych z zarządzaniem sieci w chmurze prywatnej można nawiązać przy użyciu następujących najlepszych rozwiązań:
+Po ustaleniu wymagań związanych z zarządzaniem można ustanowić sieć prywatną w chmurze, wykonując następujące najlepsze rozwiązania:
 
 - [Połączenie sieci VPN z chmurą prywatną](https://docs.microsoft.com/azure/vmware-cloudsimple/set-up-vpn?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 - [Lokalne połączenie sieciowe z usługą ExpressRoute](https://docs.microsoft.com/azure/vmware-cloudsimple/on-premises-connection?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
@@ -48,15 +44,13 @@ Po ustaleniu wymagań związanych z zarządzaniem sieci w chmurze prywatnej moż
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integracja z planem wdrażania chmury
 
-Po spełnieniu wymagań wstępnych każdy host VMWare zostanie uwzględniony w [planie wdrożenia chmury](../../plan/template.md). W ramach planu wdrażania chmury należy dodać każdy host do migracji jako [odrębne obciążenie](../../plan/workloads.md). W każdym obciążeniu maszyny wirtualne do migracji mogą być dodawane jako [zasoby](../../plan/workloads.md). Aby przeprowadzić zbiorcze dodawanie obciążeń i zasobów do planu wdrożenia, zobacz [Dodawanie/Edytowanie elementów roboczych w programie Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Po spełnieniu innych wymagań wstępnych należy uwzględnić każdy host VMWare w [planie wdrożenia chmury](../../plan/template.md). W ramach planu wdrażania chmury należy dodać każdy host do migracji jako [odrębne obciążenie](../../plan/workloads.md). W każdym obciążeniu Dodaj maszyny wirtualne, które mają zostać zmigrowane jako [zasoby](../../plan/workloads.md). Aby dodać obciążenia i zasoby do planu wdrożenia zbiorczo, zobacz [Dodawanie/Edytowanie elementów roboczych w programie Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 ## <a name="migrate-process-changes"></a>Zmiany procesu migracji
 
 Podczas każdej iteracji zespół ds. wdrażania działa w zaległościach w celu migrowania obciążeń o najwyższym priorytecie. Proces nie zmienia się w rzeczywistości z hostami VMWare. Gdy następne obciążenie w zaległości jest hostem VMWare, jedyną zmianą będzie użycie narzędzia.
 
-### <a name="suggested-action-during-the-migrate-process"></a>Sugerowana akcja w trakcie procesu migracji
-
-Poniżej przedstawiono kilka przykładów narzędzi, których można użyć w celu przepracowania migracji:
+W celu przepracowania migracji można użyć następujących narzędzi:
 
 - [Natywne narzędzia VMWare](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 - [Azure Data Box](https://docs.microsoft.com/azure/vmware-cloudsimple/migration-using-azure-data-box?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
@@ -69,7 +63,7 @@ Alternatywnie można migrować obciążenia za pośrednictwem trybu failover odz
 
 ## <a name="next-steps"></a>Następne kroki
 
-Wróć do [listy kontrolnej dotyczącej zakresu rozszerzonego](./index.md), aby upewnić się, że metoda migracji jest w pełni dopasowana.
+Wróć do rozwiniętej listy kontrolnej zakresu, aby upewnić się, że metoda migracji jest w pełni wyrównana.
 
 > [!div class="nextstepaction"]
 > [Lista kontrolna dotycząca zakresu rozszerzonego](./index.md)
