@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f0349afd5507300588df9b10628d3b28b25827c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 45c4f22613a559add109c1fbfd608452911d0c86
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027324"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047940"
 ---
 # <a name="examples-of-customer-engagement-outcomes"></a>Przykłady wyników zaangażowania klienta
 
@@ -29,7 +29,7 @@ Poniżej przedstawiono przykłady i wyniki związane z zaangażowaniem klientów
 
 Podczas transformacji zorientowaniu przez klienta, takich jak nakłady programistyczne aplikacji z obsługą chmury, klienci reagują na bezpośrednią pracę i mogą zobaczyć, że ich potrzeby zostały szybko spełnione przez zespół deweloperów. Czas cyklu to termin zawierający sześć Sigma, który odwołuje się do czasu trwania od początku do końca funkcji. Dla liderów firmy, którzy są zorientowaniu i inwestowają w dużym stopniu w ulepszaniu zaangażowania klientów, czas cyklu może być silnym wynikiem biznesowym.
 
-- **Przykład**: Firma usług, która zapewnia usługi biznesowe (B2B, Business-to-Business), podejmuje próbę zaczekania na udział w rynku na konkurencyjnym rynku. Klienci, którzy pozostali za konkurencyjny dostawca usług, stwierdziły, że ich zbyt złożone rozwiązanie techniczne zakłóca proces biznesowy i stanowi główną przyczynę opuszczenia. W tym przypadku czas cyklu jest konieczny. Dzisiaj trwa 12 miesięcy, aby funkcja mogła przejść od żądania do wersji. Jeśli jest on objęty priorytetem zespołu wykonawczego, ten cykl można skrócić do szóstego miesiąca. Dzięki wykorzystaniu rozwiązań programistycznych w chmurze, modeli aplikacji natywnych w chmurze i integracji z platformą Azure DevOps zespół mógł skrócić czas cyklu do jednego miesiąca, dzięki czemu zespoły deweloperów firmy i aplikacji mogą bezpośrednio współdziałać z klientów.
+- **Przykład:** Firma usług, która zapewnia usługi biznesowe (B2B, Business-to-Business), podejmuje próbę zaczekania na udział w rynku na konkurencyjnym rynku. Klienci, którzy pozostali za konkurencyjny dostawca usług, stwierdziły, że ich zbyt złożone rozwiązanie techniczne zakłóca proces biznesowy i stanowi główną przyczynę opuszczenia. W tym przypadku czas cyklu jest konieczny. Dzisiaj trwa 12 miesięcy, aby funkcja mogła przejść od żądania do wersji. Jeśli jest on objęty priorytetem zespołu wykonawczego, ten cykl można skrócić do szóstego miesiąca. Dzięki wykorzystaniu rozwiązań programistycznych w chmurze, modeli aplikacji natywnych w chmurze i integracji z platformą Azure DevOps zespół mógł skrócić czas cyklu do jednego miesiąca, dzięki czemu zespoły deweloperów firmy i aplikacji mogą bezpośrednio współdziałać z klientów.
 
 > **ExakTime**
 >

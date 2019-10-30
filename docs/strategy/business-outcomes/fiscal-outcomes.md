@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 1a0c1bfe2943176d647e53e8f91c8d92e168af12
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 350b13e993d2130dc72482cbe7cafb3823b6a4d8
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548696"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048370"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Przykłady wyników fiskalnych
 
 Na najwyższym poziomie konwersacje fiskalne składają się z trzech podstawowych koncepcji:
 
-- **Przychód**: w wyniku sprzedaży towarów lub usług będzie więcej pieniędzy na działalność biznesową.
-- **Koszt**: spowoduje to zmniejszenie nakładu na tworzenie, Marketing, sprzedaż lub dostarczenie towarów lub usług.
-- **Zysk**: Chociaż są rzadkie, niektóre przekształcenia mogą jednocześnie zwiększyć przychód i obniżyć koszty. Jest to wynik zysku.
+- **Przychód:** W wyniku sprzedaży towarów lub usług będzie więcej pieniędzy na działalność biznesową.
+- **Koszt:** W przypadku tworzenia, marketingu, sprzedaży lub dostarczania towarów lub usług będzie mniej pieniędzy.
+- **Zysk:** Chociaż są rzadkie, niektóre przekształcenia mogą jednocześnie zwiększyć przychód i obniżyć koszty. Jest to wynik zysku.
 
 W pozostałej części tego artykułu objaśniono te wyniki fiskalne w kontekście transformacji w chmurze.
 
@@ -35,13 +35,13 @@ W pozostałej części tego artykułu objaśniono te wyniki fiskalne w kontekśc
 
 Chmura może pomóc w tworzeniu możliwości dostarczania nowych produktów klientom lub dostarczania istniejących produktów w nowy sposób. Nowe strumienie przychodu są innowacyjne, przedsiębiorcze i atrakcyjne dla wielu osób w świecie biznesowym. Nowe strumienie przychodu są również podatne na awarie i są traktowane przez wiele firm jako wysokie ryzyko. Gdy proponowane są wyniki związane z przychodem, prawdopodobnie wystąpi odporność. Aby dodać wiarygodność do tych wyników, partner z liderem firmy, który jest sprawdzoną innowacyjnością. Sprawdzenie, czy strumień przychodu jest wczesny w procesie, pozwala uniknąć przeszkody firmy.
 
-- **Przykład**: firma sprzedała książki za ponad sto lat. Pracownik firmy zdaje sobie sprawę, że zawartość może być dostarczana elektronicznie. Pracownik tworzy urządzenie, które może zostać sprzedane w księgarni, co pozwala bezpośrednio pobrać te same książki, co wiąże się $X z nową książką sprzedaży.
+- **Przykład:** Firma sprzedała książki za ponad sto lat. Pracownik firmy zdaje sobie sprawę, że zawartość może być dostarczana elektronicznie. Pracownik tworzy urządzenie, które może zostać sprzedane w księgarni, co pozwala bezpośrednio pobrać te same książki, co wiąże się $X z nową książką sprzedaży.
 
 ### <a name="revenue-increases"></a>Wzrost przychodu
 
 Dzięki globalnym skalowaniu i zasięgowi cyfrowemu Chmura może pomóc firmom w zwiększeniu przychodów z istniejących strumieni przychodów. Często ten typ wyników pochodzi z wyrównania ze liderem sprzedaży lub marketingu.
 
-- **Przykład**: firma, która sprzedaje widżety, może sprzedawać więcej elementów widget, jeśli sprzedawcy mogą bezpiecznie uzyskać dostęp do wykazu cyfrowego i poziomów zapasów firmy. Niestety, te dane są tylko w systemach ERP firmy, do których można uzyskać dostęp tylko za pośrednictwem urządzenia połączonego z siecią. Utworzenie usługi elewacji do interfejsu z systemem ERP i udostępnienie listy katalogów i niewrażliwych poziomów zapasów do aplikacji w chmurze umożliwi sprzedawcom uzyskanie dostępu do danych, których potrzebują, podczas gdy jest to klient z klientem. Rozszerzanie lokalnych Active Directory przy użyciu Azure Active Directory (Azure AD) i integrowanie dostępu opartego na rolach z aplikacją umożliwi firmie zagwarantowanie, że dane pozostaną bezpieczne. Ten prosty projekt może mieć wpływ na przychód z istniejącej linii produktu o _x%_ .
+- **Przykład:** Firma, która sprzedaje widżety, może sprzedawać więcej elementów widget, jeśli sprzedawcy mogą bezpiecznie uzyskać dostęp do wykazu cyfrowego i poziomów zapasów firmy. Niestety, te dane są tylko w systemach ERP firmy, do których można uzyskać dostęp tylko za pośrednictwem urządzenia połączonego z siecią. Utworzenie usługi elewacji do interfejsu z systemem ERP i udostępnienie listy katalogów i niewrażliwych poziomów zapasów do aplikacji w chmurze umożliwi sprzedawcom uzyskanie dostępu do danych, których potrzebują, podczas gdy jest to klient z klientem. Rozszerzanie lokalnych Active Directory przy użyciu Azure Active Directory (Azure AD) i integrowanie dostępu opartego na rolach z aplikacją umożliwi firmie zagwarantowanie, że dane pozostaną bezpieczne. Ten prosty projekt może mieć wpływ na przychód z istniejącej linii produktu o _x%_ .
 
 ### <a name="profit-increases"></a>Wzrost zysku
 
@@ -53,9 +53,9 @@ Rzadko pojedynczy nakład pracy powoduje zwiększenie przychodu i obniżenie kos
 
 W chmurze obliczeniowej można zredukować wydatki inwestycyjne dotyczące sprzętu i oprogramowania, konfigurować centra danych, uruchamiać centra danych w lokacji i tak dalej. Koszty stojaków serwerów, rundy energii elektrycznej na potrzeby zasilania i chłodzenia oraz specjaliści IT do zarządzania infrastrukturą. Zamknięcie centrum danych może obniżyć zobowiązania z tytułu wydatków inwestycyjnych. Jest to często określane jako "Uzyskiwanie informacji o firmie centrum danych". Obniżka kosztu jest zwykle mierzona w dolarach w bieżącym budżecie, które mogą obejmować od jednej do pięciu lat w zależności od tego, jak dyrektor zarządza finansami.
 
-- **Przykład #1**: centrum danych firmy zużywa znaczną część rocznego budżetu IT. Umożliwia ona przeprowadzenie migracji w chmurze i przejście zasobów w tym centrum danych do rozwiązań infrastruktury jako usługi (IaaS).
-- **Przykład #2**: firma holdingowa niedawno uzyskała nową firmę. W ramach przejęcia warunki określają, że nowa jednostka powinna zostać usunięta z bieżących centrów danych w ciągu sześciu miesięcy. Niewykonanie tej czynności spowoduje powstanie 1 000 000 USD miesięcznie od firmy holdingowej. Przenoszenie zasobów cyfrowych do chmury w ramach migracji do chmury może pozwolić na szybką likwidację starych zasobów.
-- **Przykład #3**: Firma podatkowa, która pozyskuje odbiorców w przypadku 70 procent rocznego przychodu w ciągu pierwszych trzech miesięcy roku. Pozostała część roku, jej duża inwestycja w IT jest stosunkowo nieaktywny. Migracja w chmurze może umożliwić jej wdrożenie pojemności obliczeniowej/hostingu wymaganej przez te trzy miesiące. W pozostałych dziewięciu miesiącach koszty IaaS mogą być znacząco ograniczone przez zmniejszenie wpływu obliczeń.
+- **Przykład #1:** Centrum danych firmy zużywa znaczną część rocznego budżetu IT. Umożliwia ona przeprowadzenie migracji w chmurze i przejście zasobów w tym centrum danych do rozwiązań infrastruktury jako usługi (IaaS).
+- **Przykład #2:** Firma holdingowa niedawno uzyskała nową firmę. W ramach przejęcia warunki określają, że nowa jednostka powinna zostać usunięta z bieżących centrów danych w ciągu sześciu miesięcy. Niewykonanie tej czynności spowoduje powstanie 1 000 000 USD miesięcznie od firmy holdingowej. Przenoszenie zasobów cyfrowych do chmury w ramach migracji do chmury może pozwolić na szybką likwidację starych zasobów.
+- **Przykład #3:** Firma podatkowa korzystająca z podatku dochodowego, która pozyskuje odbiorców w przypadku 70 procent rocznego przychodu w ciągu pierwszych trzech miesięcy roku. Pozostała część roku, jej duża inwestycja w IT jest stosunkowo nieaktywny. Migracja w chmurze może umożliwić jej wdrożenie pojemności obliczeniowej/hostingu wymaganej przez te trzy miesiące. W pozostałych dziewięciu miesiącach koszty IaaS mogą być znacząco ograniczone przez zmniejszenie wpływu obliczeń.
 
 ### <a name="example-coverdell"></a>Przykład: Coverdell
 
@@ -70,7 +70,7 @@ Coverdell zmodernizowanie infrastruktury w celu nanoszenia oszczędności koszt�
 
 Zakończenie centrum danych może również zapewnić uniknięcie kosztów, uniemożliwiając w przyszłości cykle odświeżania. Cykl odświeżania to proces kupowania nowego sprzętu i oprogramowania w celu zastąpienia systemów lokalnych. Na platformie Azure sprzęt i system operacyjny są rutynowie utrzymywane, poprawiane i odświeżane bez dodatkowych kosztów dla klientów. Dzięki temu dyrektor finansowy może usunąć planowane przyszłe wydatki na podstawie długoterminowych prognoz finansowych. Unikanie kosztów jest mierzone w dolarach. Różni się to od obniżenia kosztów, zwykle koncentrując się na przyszłym budżecie, który nie został jeszcze w pełni zatwierdzony.
 
-- **Przykład**: centrum danych firmy jest w trakcie odnawiania dzierżawy w ciągu sześciu miesięcy. Centrum danych jest w trakcie obsługi przez osiem lat. Cztery lata temu wszystkie serwery zostały odświeżone i zwirtualizowane, co kosztuje miliony dolarów firmy. W następnym roku firma planuje odświeżanie sprzętu i oprogramowania ponownie. Migrowanie zasobów w tym centrum danych w ramach migracji do chmury umożliwi uniknięcie kosztów przez usunięcie zaplanowanego odświeżania z prognozowanego budżetu w następnym roku. Może ona również generować obniżkę kosztów przez zmniejszenie lub wyeliminowanie kosztów leasingu nieruchomości.
+- **Przykład:** Centrum danych firmy jest przeznaczone do odnawiania dzierżawy w ciągu sześciu miesięcy. Centrum danych jest w trakcie obsługi przez osiem lat. Cztery lata temu wszystkie serwery zostały odświeżone i zwirtualizowane, co kosztuje miliony dolarów firmy. W następnym roku firma planuje odświeżanie sprzętu i oprogramowania ponownie. Migrowanie zasobów w tym centrum danych w ramach migracji do chmury umożliwi uniknięcie kosztów przez usunięcie zaplanowanego odświeżania z prognozowanego budżetu w następnym roku. Może ona również generować obniżkę kosztów przez zmniejszenie lub wyeliminowanie kosztów leasingu nieruchomości.
 
 ### <a name="capital-expenses-vs-operating-expenses"></a>Koszty kapitałowe a koszty operacyjne
 
@@ -91,7 +91,7 @@ Jednak przed skojarzeniem każdej transformacji z tym typem kapitału a konwersj
 
 W przypadku pożądanego modelu wydatków operacyjnych Poniższy przykład może być opłacalnym wynikiem działalności:
 
-- **Przykład**: centrum danych firmy jest obecnie amortyzowane o _x USD_ rocznie przez następne trzy lata. Oczekuje się, że do odświeżenia sprzętu w następnym roku jest wymagana dodatkowa wartość _y USD_ . Możemy przekonwertować wydatki inwestycyjne na model wydatków operacyjnych z parzystą stawką z _USD_ na miesiąc, co pozwala na lepsze zarządzanie kosztami korzystania z technologii i odpowiedzialność za nie.
+- **Przykład:** Centrum danych firmy jest obecnie amortyzowane o _x USD_ rocznie przez następne trzy lata. Oczekuje się, że do odświeżenia sprzętu w następnym roku jest wymagana dodatkowa wartość _y USD_ . Możemy przekonwertować wydatki inwestycyjne na model wydatków operacyjnych z parzystą stawką z _USD_ na miesiąc, co pozwala na lepsze zarządzanie kosztami korzystania z technologii i odpowiedzialność za nie.
 
 ## <a name="next-steps"></a>Następne kroki
 

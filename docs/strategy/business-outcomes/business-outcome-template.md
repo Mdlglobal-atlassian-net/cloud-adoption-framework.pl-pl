@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3874b1af74d7604e3e5c5dd3376b11c43ce24e05
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8703734cbb287003edfd38ddac4395ac0e437332
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027862"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048380"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Jak używać szablonu wyniku biznesowego
 
@@ -51,15 +51,15 @@ Odnajdywanie to podstawowe cechą architektury przedsiębiorstwa. Jeśli odnajdo
 
 *Rysunek 3 — pięć obszarów fokusu odnajdywania: uczestnicy projektu, wyniki, Sterowniki, wskaźniki KPI i możliwości.*
 
-**Uczestnicy projektu**: Kto w organizacji prawdopodobnie zobaczy największą wartość w określonym wyniku firmy? Kto najprawdopodobniej obsługuje tę transformację, szczególnie w przypadku, gdy będą one wytrzymałe lub czasochłonne? Kto ma największy udział w pomyślnym przekształceniu? Ta osoba jest potencjalnym udziałowcem.
+**Uczestnicy projektu:** Kto w organizacji prawdopodobnie zobaczy największą wartość w określonym wyniku firmy? Kto najprawdopodobniej obsługuje tę transformację, szczególnie w przypadku, gdy będą one wytrzymałe lub czasochłonne? Kto ma największy udział w pomyślnym przekształceniu? Ta osoba jest potencjalnym udziałowcem.
 
-**Wyniki biznesowe**: Wynik biznesowy to zwięzły, zdefiniowany i zauważalny wynik lub zmiana wydajności firmy obsługiwana przez określoną miarę. Jak uczestnik projektu chce zmienić firmę? Jak będzie to miało wpływ na działalność firmy? Jaka jest wartość tego przekształcenia?
+**Wyniki biznesowe:** Wynik biznesowy to zwięzły, zdefiniowany i zauważalny wynik lub zmiana wydajności firmy obsługiwana przez określoną miarę. Jak uczestnik projektu chce zmienić firmę? Jak będzie to miało wpływ na działalność firmy? Jaka jest wartość tego przekształcenia?
 
-**Sterowniki biznesowe**: Sterowniki biznesowe przechwytują bieżące wyzwanie, które uniemożliwia firmie uzyskanie żądanych wyników. Mogą również przechwytywać nowe możliwości, które firma może zrobić, korzystając z odpowiedniego rozwiązania. Jak opisać bieżące wyzwania lub przyszły stan działalności firmy? Jakie funkcje biznesowe można zmienić w celu spełnienia żądanych wyników?
+**Sterowniki biznesowe:** Sterowniki biznesowe przechwytują bieżące wyzwanie, które uniemożliwia firmie uzyskanie żądanych wyników. Mogą również przechwytywać nowe możliwości, które firma może zrobić, korzystając z odpowiedniego rozwiązania. Jak opisać bieżące wyzwania lub przyszły stan działalności firmy? Jakie funkcje biznesowe można zmienić w celu spełnienia żądanych wyników?
 
-**Wskaźniki KPI**: Jak będzie mierzona ta zmiana? W jaki sposób firma wiedzą o tym, czy są one pomyślne? Jak często będzie obserwowana ten wskaźnik KPI? Zrozumienie każdego wskaźnika KPI pomaga zapewnić przyrostową zmianę i eksperymentowanie.
+**Wskaźniki KPI:** Jak będzie mierzona ta zmiana? W jaki sposób firma wiedzą o tym, czy są one pomyślne? Jak często będzie obserwowana ten wskaźnik KPI? Zrozumienie każdego wskaźnika KPI pomaga zapewnić przyrostową zmianę i eksperymentowanie.
 
-**Możliwości**: W jaki sposób funkcje techniczne przyspieszają realizację wyniku działania firmy? Jakie aplikacje muszą być uwzględnione w transformacji, aby osiągnąć cele biznesowe? W jaki sposób różne aplikacje i obciążenia są dostępne według priorytetów, aby można było dostarczać informacje o możliwościach? Jak należy rozszerzyć lub ponownie rozmieścić części rozwiązania, aby spełnić wszystkie wyniki? Czy można zmienić rozmieszczenie podejść (lub osi czasu), aby określić priorytety wyników firmy o dużym wpływie?
+**Możliwości:** W jaki sposób funkcje techniczne przyspieszają realizację wyniku działania firmy? Jakie aplikacje muszą być uwzględnione w transformacji, aby osiągnąć cele biznesowe? W jaki sposób różne aplikacje i obciążenia są dostępne według priorytetów, aby można było dostarczać informacje o możliwościach? Jak należy rozszerzyć lub ponownie rozmieścić części rozwiązania, aby spełnić wszystkie wyniki? Czy można zmienić rozmieszczenie podejść (lub osi czasu), aby określić priorytety wyników firmy o dużym wpływie?
 
 ## <a name="next-steps"></a>Następne kroki
 

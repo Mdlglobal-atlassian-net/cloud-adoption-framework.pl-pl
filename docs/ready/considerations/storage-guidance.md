@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d1fbc6fb2d16672c7ebfe0eabb28b77288856a3b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0505b9e09492c5533d17e2f6369794aaa9b6619b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548750"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048427"
 ---
 # <a name="storage-design-decisions"></a>Decyzje dotyczące projektowania magazynu
 
@@ -61,7 +61,7 @@ Platforma Azure oferuje wiele produktów i usług w zakresie różnych możliwo�
 | Korzystam z kontenerów z woluminami trwałymi. | [Azure Files (w warstwie Standardowa lub Premium)](https://docs.microsoft.com/azure/storage/files/storage-files-planning) <br/><br/> [Azure Disk Storage (SSD w warstwie Standardowa, Premium lub Ultra)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Opcje sterownika woluminów pliku (RWX) i bloku (RWO) są dostępne dla wdrożeń usługi Azure Kubernetes Service (AKS) i niestandardowej usługi Kubernetes. Woluminy trwałe mogą być mapowane na dysk Azure Disk Storage lub zarządzany udział usługi Azure Files. Wybierz opcję Premium lub Standardową w zależności od wymagań związanych z obciążeniami dla woluminów trwałych. |
 | Mam usługi Data Lake (na przykład klaster Hadoop dla danych HDFS). | [Azure Data Lake Storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) <br/><br/> [Azure Disk Storage (SSD w warstwie Standardowa lub Premium)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Funkcja Data Lake Storage Gen 2 usługi Azure Blob Storage zapewnia zgodność z HDFS po stronie serwera i skalę petabajtów na potrzeby analizy równoległej. Zapewnia również wysoką dostępność i niezawodność. Oprogramowanie takie jak Cloudera może w razie konieczności korzystać z SSD w wersji Premium lub Standardowa na węzłach głównych lub roboczych. |
 | Mam wdrożenie SAP lub SAP HANA. | [Azure Disk Storage (SSD w warstwie Premium lub Ultra)](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) | Usługa SSD w warstwie Ultra została zoptymalizowana do zagwarantowania opóźnień poniżej milisekund dla obciążeń SAP warstwy 1. Usługa SSD w warstwie Ultra jest teraz dostępna w wersji zapoznawczej. Usługa SSD w warstwie Premium w połączeniu z serią M oferuje opcję ogólnej dostępności. |
-| Mam lokację do odzyskiwania po awarii z rygorystycznie określonym celem punktu odzyskiwania, która synchronizuje się z serwerami podstawowymi. | [Stronicowe obiekty blob platformy Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Stronicowe obiekty blob platformy Azure są używane przez oprogramowanie do replikacji, co umożliwia tanią replikację na platformie Azure bez konieczności używania obliczeniowych maszyn wirtualnych do chwili przejścia w tryb failover. Aby uzyskać więcej informacji, zobacz [dokumentację dotyczącą funkcji Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks). **Uwaga**: stronicowe obiekty blob obsługują maksymalnie 8 TB. |
+| Mam lokację do odzyskiwania po awarii z rygorystycznie określonym celem punktu odzyskiwania, która synchronizuje się z serwerami podstawowymi. | [Stronicowe obiekty blob platformy Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blob-pageblob-overview) | Stronicowe obiekty blob platformy Azure są używane przez oprogramowanie do replikacji, co umożliwia tanią replikację na platformie Azure bez konieczności używania obliczeniowych maszyn wirtualnych do chwili przejścia w tryb failover. Aby uzyskać więcej informacji, zobacz [dokumentację dotyczącą funkcji Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/backup-and-disaster-recovery-for-azure-iaas-disks). **Uwaga:** Stronicowe obiekty blob obsługują maksymalnie 8 TB. |
 
 ### <a name="file-and-object-storage-scenarios"></a>Scenariusze przechowywania plików i obiektów
 
@@ -145,7 +145,7 @@ Gorąca i chłodna warstwa magazynowania obiektów blob, usługa Data Lake Stora
 
 Aby dowiedzieć się więcej o globalnej infrastrukturze platformy Azure, zobacz temat [Regiony systemu Azure](https://azure.microsoft.com/global-infrastructure/regions). Aby uzyskać szczegółowe informacje o tym, co jest dostępne w poszczególnych regionach świadczenia usługi Azure, można także przejść na stronę [Dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services/?products=storage).
 
-## <a name="data-residency-and-compliance-requirements"></a>Wymagania dotyczące miejsca przechowywania danych oraz zgodności
+## <a name="data-residency-and-compliance-requirements"></a>Wymagania dotyczące miejsca przechowywania danych oraz ich zgodności
 
 Twoich obciążeń często dotyczą wymagania prawne i umowne związane z magazynem danych. Te wymagania mogą się różnić w zależności od lokalizacji organizacji, jurysdykcji, której podlegają zasoby fizyczne obsługujące magazyny danych, oraz od sektora działalności. Ze względu na obowiązki związane z danymi, należy wziąć pod uwagę następujące elementy: klasyfikacja danych, lokalizacja danych oraz odpowiednie obowiązki w zakresie ochrony danych w ramach modelu dzielenia się odpowiedzialnością. Aby łatwiej zrozumieć te wymagania, zobacz oficjalny dokument [Osiąganie rezydencji i bezpieczeństwa zgodnych danych na platformie Azure](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure).
 

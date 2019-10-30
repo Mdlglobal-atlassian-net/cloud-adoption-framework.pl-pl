@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 74fd1f02455d822ae8f8266bc3f6deb5935c09fe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 027b685b2c75edc59e03cca9f9d2614422684bf0
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833767"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048284"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planowanie wdrażania chmury
 
@@ -35,11 +35,11 @@ Modele pozyskiwania w chmurze zmieniają podstawowe zależności, w przypadku kt
 
 W tej serii artykułów omówiono każdy krok tłumaczenia strategii i wysiłku na plan wdrażania chmury z możliwością podejmowania działań:
 
-1. **Wymagania wstępne**: Przed utworzeniem planu upewnij się, że zostały ukończone wszystkie kroki wymagane wstępnie.
-2. **Definiuj i ustalaj priorytety obciążeń**: Ustaw priorytety pierwszych 10 obciążeń, aby ustalić początkową zaległość wdrażania.
-3. **Wyrównaj elementy zawartości**: Określ, które zasoby (proponowane lub istniejące) są wymagane do obsługi obciążeń z priorytetyzacją.
-4. **Zapoznaj**się z racjonalizacją: Przejrzyj decyzje dotyczące racjonalizacji, aby uściślić decyzje dotyczące decyzji o przyjęciu: Migruj lub innowacje.
-5. **Zdefiniuj iteracje i wersje**: *Iteracje* to bloki czasu przydzielono do pracy. *Wersje* są definicją pracy, która ma zostać wykonana przed zainicjowaniem zmiany w procesach produkcyjnych.
+1. **Wymagania wstępne:** Przed utworzeniem planu upewnij się, że zostały ukończone wszystkie kroki wymagane wstępnie.
+2. **Definiuj i ustalaj priorytety obciążeń:** Ustaw priorytety pierwszych 10 obciążeń, aby ustalić początkową zaległość wdrażania.
+3. **Wyrównaj elementy zawartości:** Określ, które zasoby (proponowane lub istniejące) są wymagane do obsługi obciążeń z priorytetyzacją.
+4. Zapoznaj się z **racjonalizacją:** Przejrzyj decyzje dotyczące racjonalizacji, aby uściślić decyzje dotyczące wdrożenia: Migruj lub innowacje.
+5. **Definiowanie iteracji i wydań:** *iteracje* to bloki czasu przydzielono do pracy. *Wersje* są definicją pracy, która ma zostać wykonana przed zainicjowaniem zmiany w procesach produkcyjnych.
 6. **Szacowanie osi czasu:** Ustanów przybliżone osie czasu na potrzeby planowania wydań na podstawie początkowych oszacowań.
 
 ## <a name="next-steps"></a>Następne kroki

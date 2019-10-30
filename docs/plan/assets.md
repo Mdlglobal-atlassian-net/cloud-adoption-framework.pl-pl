@@ -8,33 +8,33 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9d98a9e368f71310a05ae6242ef75a57771824d5
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ef5ffecd998bbe4e5adadd30cf24fe965e22b703
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828710"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048261"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>Dopasuj zasoby do obciążeń z priorytetyzacją
 
-Obciążenie to koncepcyjny opis kolekcji elementów zawartości: Maszyny wirtualne, aplikacje i źródła danych. W poprzednim artykule, [określanie priorytetów i Definiowanie obciążeń](./workloads.md), wydała wskazówki dotyczące zbierania danych, które definiują obciążenie. Przed migracją niektóre dane wejściowe techniczne z tej listy wymagają dodatkowej weryfikacji. Ten artykuł pomaga w sprawdzeniu poprawności następujących danych wejściowych:
+Obciążenie to koncepcyjny opis kolekcji elementów zawartości: maszyn wirtualnych, aplikacji i źródeł danych. W poprzednim artykule, [określanie priorytetów i Definiowanie obciążeń](./workloads.md), wydała wskazówki dotyczące zbierania danych, które definiują obciążenie. Przed migracją niektóre dane wejściowe techniczne z tej listy wymagają dodatkowej weryfikacji. Ten artykuł pomaga w sprawdzeniu poprawności następujących danych wejściowych:
 
-- **Aplikacje**: Wyświetl listę wszystkich aplikacji uwzględnionych w tym obciążeniu.
-- **Maszyny wirtualne/serwery**: Wyświetl listę wszystkich maszyn wirtualnych lub serwerów uwzględnionych w obciążeniu.
-- **Źródła danych**: Wyświetl listę wszystkich źródeł danych uwzględnionych w obciążeniu.
-- **Zależności**: Wyświetl listę wszystkich zależności zasobów, które nie są uwzględnione w obciążeniu.
+- **Aplikacje:** Wyświetl listę wszystkich aplikacji uwzględnionych w tym obciążeniu.
+- **Maszyny wirtualne i serwery:** Wyświetl listę wszystkich maszyn wirtualnych lub serwerów uwzględnionych w obciążeniu.
+- **Źródła danych:** Wyświetl listę wszystkich źródeł danych uwzględnionych w obciążeniu.
+- **Zależności:** Wyświetl listę wszystkich zależności zasobów, które nie są uwzględnione w obciążeniu.
 
 Istnieje kilka opcji związanych z montażem tych danych. Poniżej przedstawiono kilka najczęstszych metod.
 
-## <a name="alternative-inputs-migrate-modernize-innovate"></a>Alternatywne dane wejściowe: Migrowanie, modernizacja, innowacje
+## <a name="alternative-inputs-migrate-modernize-innovate"></a>Alternatywne dane wejściowe: Migruj, modernizacja, innowacje
 
 Celem powyższych punktów danych jest przechwycenie względnych nakładów technicznych i zależności jako pomocy do priorytetyzacji. W zależności od żądanego przejścia może być konieczne zebranie alternatywnych punktów danych w celu zapewnienia obsługi właściwej priorytetyzacji.
 
 **Migracja:** W przypadku czystych wysiłków związanych z migracją istniejący spis i zależności zasobów stanowią godziwą miarę relatywnej złożoności.
 
-**Modernizowanie** Gdy celem obciążenia jest modernizacja aplikacji lub innych zasobów, te punkty danych są nadal trwałymi środkami złożoności. Można jednak dodać dane wejściowe dla możliwości modernizacji do dokumentacji dotyczącej obciążeń.
+**Modernizacja:** Gdy celem obciążenia jest modernizacja aplikacji lub innych zasobów, te punkty danych są nadal trwałymi środkami złożoności. Można jednak dodać dane wejściowe dla możliwości modernizacji do dokumentacji dotyczącej obciążeń.
 
-**Innowacje:** Gdy dane lub logika biznesowa zmieniają się istotnie podczas nakładu pracy związanej z wdrażaniem w chmurze, uważa się, że typ transformacji jest innowacyjny. Ta sama wartość jest prawdziwa podczas tworzenia nowych danych lub nowej logiki biznesowej. W przypadku jakichkolwiek scenariuszy innowacji migracja zasobów będzie prawdopodobnie stanowić najmniejszą ilość wymaganego nakładu pracy. Dla tych scenariuszy zespół powinien opracować zestaw danych technicznych, aby zmierzyć relatywną złożoność.
+**Innowacje:** Gdy dane lub logika biznesowa zmieniają się istotnie podczas nakładu pracy związanej z wdrażaniem w chmurze, uważa się, że typ transformacji jest *innowacyjny* . Ta sama wartość jest prawdziwa podczas tworzenia nowych danych lub nowej logiki biznesowej. W przypadku jakichkolwiek scenariuszy innowacji migracja zasobów będzie prawdopodobnie stanowić najmniejszą ilość wymaganego nakładu pracy. Dla tych scenariuszy zespół powinien opracować zestaw danych technicznych, aby zmierzyć relatywną złożoność.
 
 ## <a name="azure-migrate"></a>Azure Migrate
 
@@ -48,7 +48,7 @@ Niektóre organizacje mają dobrze obsługiwaną bazę danych zarządzania konfi
 
 ## <a name="next-steps"></a>Następne kroki
 
-[Sprawdź decyzje](./review-rationalization.md) dotyczące racjonalizacji na podstawie wyrównania zasobów i definicji obciążeń.
+[Sprawdź decyzje dotyczące racjonalizacji](./review-rationalization.md) na podstawie wyrównania zasobów i definicji obciążeń.
 
 > [!div class="nextstepaction"]
 > [Przegląd decyzji o racjonalizacji](./review-rationalization.md)

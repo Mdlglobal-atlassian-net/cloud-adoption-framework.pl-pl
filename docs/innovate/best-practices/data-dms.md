@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c75efe3576bb61ecb116ab22e4946b8d87da3d4a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 538cbc89fb592ecc19a5c25c42cf21231bfe05fe
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683419"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047754"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Zbierz dane za pomocą migracji i modernizacji istniejących źródeł danych
 
@@ -25,7 +25,7 @@ W tym artykule opisano szereg metod, które są zgodne z procesem migracji, ale 
 
 ## <a name="primary-toolset"></a>Podstawowy zestaw narzędzi
 
-Podczas migrowania i modernizacji danych, które znajdują się w Premium, najbardziej typowym wyborem narzędzia platformy Azure jest [Usługa Data Migration Service (DMS)](https://docs.microsoft.com/azure/dms) , która jest częścią szerszego [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) łańcucha narzędzi. W przypadku istniejących źródeł danych SQL Server [Data Migration Assistant (DMA)](/sql/dma/dma-overview) może także zapewnić pomoc w ocenie i migracji mniejszej liczby struktur danych.
+Podczas migrowania i modernizacji danych, które znajdują się w Premium, najbardziej typowym wyborem narzędzia platformy Azure jest [Usługa Data Migration Service (DMS)](https://docs.microsoft.com/azure/dms) , która jest częścią szerszego [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) łańcucha narzędzi. W przypadku istniejących źródeł danych SQL Server [Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview) może także zapewnić pomoc w ocenie i migracji mniejszej liczby struktur danych.
 
 Aby zapewnić obsługę migracji rozwiązań Oracle i NoSQL, można także użyć [usługi Data Migration Service (DMS)](https://docs.microsoft.com/azure/dms) dla niektórych typów źródeł docelowych baz danych, takich jak Oracle to PostgreSQL lub MongoDB, aby Cosmos DB. Jest to bardziej powszechne dla zespołów, które mogą korzystać z narzędzi innych firm lub niestandardowych skryptów migracji w celu migrowania do Cosmos DB, usługi HDInsight lub opcji maszyn wirtualnych opartych na IaaS.
 

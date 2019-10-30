@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 02d4cf1218c6b00dd0d42dfb877af49a92498115
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7b635ea417502a175b7fe308e5faeee1ff8a65a5
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548832"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048397"
 ---
 # <a name="azure-fundamental-concepts"></a>Podstawowe pojęcia dotyczące platformy Azure
 
@@ -23,25 +23,25 @@ Poznaj podstawowe pojęcia i terminy używane na platformie Azure i dowiedz się
 
 Rozpoczynając pracę związaną z wdrażaniem w chmurze platformy Azure warto znać następujące definicje:
 
-- **Zasób**: jednostka, która jest zarządzana przez platformę Azure. Przykłady: maszyny wirtualne platformy Azure, sieci wirtualne i konta magazynu.
-- **Subskrypcja**: logiczny kontener dla zasobów. Każdy zasób platformy Azure jest skojarzony tylko z jedną subskrypcją. Tworzenie subskrypcji to pierwszy krok w ramach wdrażania platformy Azure.
-- **Konto platformy Azure**: adres e-mail, który jest udostępniany podczas tworzenia subskrypcji platformy Azure, to konto platformy Azure dla subskrypcji. Jednostka skojarzona z kontem e-mail jest odpowiedzialna za miesięczne koszty naliczane dla zasobów w ramach subskrypcji. Podczas tworzenia konta platformy Azure należy podać informacje kontaktowe i szczegółowe dane rozliczeniowe, takie jak karta kredytowa. Możesz użyć tego samego konta platformy Azure (adresu e-mail) dla wielu subskrypcji. Każda subskrypcja jest skojarzona tylko z jednym kontem platformy Azure.
-- **Administrator konta**: Strona skojarzona z adresem e-mail używanym do tworzenia subskrypcji platformy Azure. Administrator konta jest odpowiedzialny za zapłacenie za wszystkie koszty wynikające z zasobów subskrypcji.
-- **Azure Active Directory** (Azure AD): Usługa zarządzania tożsamościami i dostępem w chmurze firmy Microsoft. Usługa Azure AD umożliwia pracownikom logowanie się i dostęp do zasobów.
-- **Dzierżawa usługi Azure AD**: dedykowane i zaufane wystąpienie usługi Azure AD. Dzierżawa usługi Azure AD jest tworzona automatycznie, gdy organizacja rejestruje się po raz pierwszy w subskrypcji usługi w chmurze firmy Microsoft, takiej jak Microsoft Azure, Microsoft Intune lub Office 365. Dzierżawa usługi Azure reprezentuje jedną organizację.
-- **Katalog usługi Azure AD**: Każda dzierżawa usługi Azure AD ma jeden, dedykowany i zaufany katalog. Katalog ten zawiera użytkowników, grupy i aplikacje dzierżawy. Katalog służy do obsługi funkcji związanych z zarządzaniem tożsamościami i dostępem do zasobów dzierżawy. Katalog może być skojarzony z wieloma subskrypcjami, ale każda subskrypcja jest skojarzona tylko z jednym katalogiem.
-- **Grupy zasobów**: kontenery logiczne używane do grupowania powiązanych zasobów w ramach subskrypcji. Każdy zasób może znajdować się tylko w jednej grupie zasobów.
-- **Grupy zarządzania**: kontenery logiczne używane dla co najmniej jednej subskrypcji. Można zdefiniować hierarchię grup zarządzania, subskrypcji, grup zasobów i zasobów, aby efektywnie zarządzać dostępem, zasadami i zgodnością przez dziedziczenie.
-- **Region**: zestaw centrów danych platformy Azure, które są wdrażane w ramach określonego czasu oczekiwania. Centra danych są połączone za pomocą dedykowanej, regionalnej sieci o małym opóźnieniu. Większość zasobów platformy Azure działa w określonym regionie platformy Azure.
+- **Zasób:** Jednostka zarządzana przez platformę Azure. Przykłady: maszyny wirtualne platformy Azure, sieci wirtualne i konta magazynu.
+- **Subskrypcja:** Kontener logiczny dla zasobów. Każdy zasób platformy Azure jest skojarzony tylko z jedną subskrypcją. Tworzenie subskrypcji to pierwszy krok w ramach wdrażania platformy Azure.
+- **Konto platformy Azure:** Adres e-mail, który należy podać podczas tworzenia subskrypcji platformy Azure, to konto platformy Azure dla subskrypcji. Jednostka skojarzona z kontem e-mail jest odpowiedzialna za miesięczne koszty naliczane dla zasobów w ramach subskrypcji. Podczas tworzenia konta platformy Azure należy podać informacje kontaktowe i szczegółowe dane rozliczeniowe, takie jak karta kredytowa. Możesz użyć tego samego konta platformy Azure (adresu e-mail) dla wielu subskrypcji. Każda subskrypcja jest skojarzona tylko z jednym kontem platformy Azure.
+- **Administrator konta:** Strona skojarzona z adresem e-mail używanym do tworzenia subskrypcji platformy Azure. Administrator konta jest odpowiedzialny za zapłacenie za wszystkie koszty wynikające z zasobów subskrypcji.
+- **Azure Active Directory (Azure AD):** Usługa zarządzania tożsamościami i dostępem w chmurze firmy Microsoft. Usługa Azure AD umożliwia pracownikom logowanie się i dostęp do zasobów.
+- **Dzierżawa usługi Azure AD:** Dedykowane i zaufane wystąpienie usługi Azure AD. Dzierżawa usługi Azure AD jest tworzona automatycznie, gdy organizacja rejestruje się po raz pierwszy w subskrypcji usługi w chmurze firmy Microsoft, takiej jak Microsoft Azure, Microsoft Intune lub Office 365. Dzierżawa usługi Azure reprezentuje jedną organizację.
+- **Katalog usługi Azure AD:** Każda dzierżawa usługi Azure AD ma jeden, dedykowany i zaufany katalog. Katalog ten zawiera użytkowników, grupy i aplikacje dzierżawy. Katalog służy do obsługi funkcji związanych z zarządzaniem tożsamościami i dostępem do zasobów dzierżawy. Katalog może być skojarzony z wieloma subskrypcjami, ale każda subskrypcja jest skojarzona tylko z jednym katalogiem.
+- **Grupy zasobów:** Kontenery logiczne używane do grupowania powiązanych zasobów w ramach subskrypcji. Każdy zasób może znajdować się tylko w jednej grupie zasobów.
+- **Grupy zarządzania:** Kontenery logiczne, które są używane dla co najmniej jednej subskrypcji. Można zdefiniować hierarchię grup zarządzania, subskrypcji, grup zasobów i zasobów, aby efektywnie zarządzać dostępem, zasadami i zgodnością przez dziedziczenie.
+- **Region:** Zestaw centrów danych platformy Azure, które są wdrażane w ramach określonego czasu oczekiwania. Centra danych są połączone za pomocą dedykowanej, regionalnej sieci o małym opóźnieniu. Większość zasobów platformy Azure działa w określonym regionie platformy Azure.
 
 ## <a name="azure-subscription-purposes"></a>Cele subskrypcji platformy Azure
 
 Subskrypcja platformy Azure umożliwia realizację kilku celów. Subskrypcja platformy Azure to:
 
-- **Umowa prawna** Każda subskrypcja jest powiązana z [ofertą platformy Azure](https://azure.microsoft.com/support/legal/offer-details) (np. z bezpłatną wersją próbną lub z opcją płatności zgodnie z rzeczywistym użyciem). Każda oferta ma określony plan taryfowy, korzyści oraz powiązane warunki i postanowienia. Ofertę platformy Azure można wybrać podczas tworzenia subskrypcji.
-- **Umowa dotycząca płatności** Podczas tworzenia subskrypcji należy podać informacje o płatności dla tej subskrypcji, takie jak numer karty kredytowej. W każdym miesiącu koszty wynikające z zasobów wdrożonych w ramach tej subskrypcji są obliczane i rozliczane za pośrednictwem tej metody płatności.
-- **Ograniczenie skalowania** Dla subskrypcji definiowane są limity skalowania. Zasoby subskrypcji nie mogą przekraczać ustawionych limitów skali. Na przykład istnieje ograniczenie liczby maszyn wirtualnych, które można utworzyć w ramach jednej subskrypcji.
-- **Ograniczenie administracyjne** Subskrypcja może działać jako granica administrowania, zabezpieczeń i zasad. Platforma Azure udostępnia również inne mechanizmy w celu spełnienia tych wymagań, takie jak grupy zarządzania, grupy zasobów i kontrola dostępu oparta na rolach.
+- **Umowa prawna.** Każda subskrypcja jest powiązana z [ofertą platformy Azure](https://azure.microsoft.com/support/legal/offer-details) (np. z bezpłatną wersją próbną lub z opcją płatności zgodnie z rzeczywistym użyciem). Każda oferta ma określony plan taryfowy, korzyści oraz powiązane warunki i postanowienia. Ofertę platformy Azure można wybrać podczas tworzenia subskrypcji.
+- **Umowa dotycząca płatności.** Podczas tworzenia subskrypcji należy podać informacje o płatności dla tej subskrypcji, takie jak numer karty kredytowej. W każdym miesiącu koszty wynikające z zasobów wdrożonych w ramach tej subskrypcji są obliczane i rozliczane za pośrednictwem tej metody płatności.
+- **Granica skali.** Dla subskrypcji definiowane są limity skalowania. Zasoby subskrypcji nie mogą przekraczać ustawionych limitów skali. Na przykład istnieje ograniczenie liczby maszyn wirtualnych, które można utworzyć w ramach jednej subskrypcji.
+- **Granica administracyjna.** Subskrypcja może działać jako granica administrowania, zabezpieczeń i zasad. Platforma Azure udostępnia również inne mechanizmy w celu spełnienia tych wymagań, takie jak grupy zarządzania, grupy zasobów i kontrola dostępu oparta na rolach.
 
 ## <a name="azure-subscription-considerations"></a>Zagadnienia dotyczące subskrypcji platformy Azure
 
