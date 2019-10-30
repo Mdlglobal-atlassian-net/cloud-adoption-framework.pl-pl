@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e67d3e0ed1e13fc4c7a5cfdca1bb2f6c138601ba
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548725"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048018"
 ---
-<!-- markdownlint-disable -->
+<!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Jakie wyniki biznesowe są powiązane z procesami transformacji?
 
@@ -29,42 +29,42 @@ Aby dowiedzieć się więcej na temat wyników biznesowych i szablonu wyników b
 
 Poniżej przedstawiono kilka wyników biznesowych, które zwykle są powodem do rozmów z różnymi osobami:
 
-- **Kierownictwo działu finansów**: Zwiększenie rentowności przy jednoczesnym zapewnieniu zgodności.
-- **Dział marketingu**: Pozyskiwanie i utrzymywanie klientów oraz budowanie reputacji.
-- **Dział sprzedaży**: Zwiększenie sprzedaży i wartości w okresie istnienia klienta.
-- **Dział kadr**: Zachowanie, rekrutacja i zwiększanie możliwości pracowników.
+- **Kierownictwo działu finansów:** Zwiększenie rentowności przy jednoczesnym zapewnieniu zgodności.
+- **Dział marketingu:** Pozyskiwanie i utrzymywanie klientów oraz budowanie reputacji.
+- **Dział sprzedaży:** Zwiększenie sprzedaży i wartości w okresie istnienia klienta.
+- **Kadry:** Zachowanie, rekrutacja i zwiększanie możliwości pracowników.
 
-# <a name="sample-outcomes-by-category"></a>Przykładowe wyniki według kategorii
+## <a name="sample-outcomes-by-category"></a>Przykładowe wyniki według kategorii
 
 Komunikacja wyników biznesowych może wydawać się obcym zagadnieniem dla wielu osób ukierunkowanych technicznie. W celu ułatwienia translacji dostępny jest zestaw przykładów wyników biznesowych w [strukturze wyników biznesowych](../index.md) nadzorowany przez firmę Microsoft. Użyj tych przykładów, aby łatwiej inspirować i prezentować wyniki biznesowe w oparciu o rzeczywiste procesy transformacji.
 
 Aby ułatwić znalezienie wyników biznesowych, podzieliliśmy je na poniższe kategorie. Pozwala to prowadzić rozmowy prowadzące do konsensusu między jednostkami biznesowymi.
 
-## <a name="fiscal-outcomes"></a>Wyniki obrachunkowe
+### <a name="fiscal-outcomes"></a>Wyniki obrachunkowe
 
 Wyniki finansowe lub obrachunkowe są najbardziej zrozumiałymi wynikami biznesowymi dla wielu liderów biznesowych, ale nie są jedynymi.
 
 Wyświetl przykłady [wyników fiskalnych](./fiscal-outcomes.md).
 
-## <a name="agility-outcomes"></a>Wyniki związane z elastycznością
+### <a name="agility-outcomes"></a>Wyniki związane z elastycznością
 
 W dzisiejszym szybko zmieniającym się środowisku biznesowym czas jest szczególnie cenny. Możliwość szybkiej reakcji na zmiany na rynku oraz ich wspieranie jest podstawową miarą elastyczności biznesowej.
 
 Wyświetl przykłady [wyników związanych z elastycznością](./agility-outcomes.md).
 
-## <a name="reach-outcomes"></a>Wyniki związane z zasięgiem
+### <a name="reach-outcomes"></a>Wyniki związane z zasięgiem
 
 Na stale kurczącym się rynku globalny zasięg (możliwość obsługi globalnych klientów i użytkowników) można mierzyć na podstawie zgodności w obszarach geograficznych, które są istotne dla działalności.
 
 Wyświetl wyniki związane z [globalnym zasięgiem](./reach-outcomes.md).
 
-## <a name="customer-engagement-outcomes"></a>Wyniki związane z zaangażowaniem klientów
+### <a name="customer-engagement-outcomes"></a>Wyniki związane z zaangażowaniem klientów
 
 Społecznościowe platformy handlowe na nowo definiują zwycięzców i przegranych w niespotykanym dotąd tempie. Odpowiadanie na potrzeby klientów jest kluczową miarą zaangażowania klientów.
 
 Przeczytaj więcej na temat [wyników związanych z zaangażowaniem klientów](./engagement-outcomes.md).
 
-## <a name="performance-outcomes"></a>Wyniki związane z wydajnością
+### <a name="performance-outcomes"></a>Wyniki związane z wydajnością
 
 Oczekuje się wydajności i niezawodności. Gdy któraś z nich słabnie, spadek reputacji może być bolesny i długotrwały.
 

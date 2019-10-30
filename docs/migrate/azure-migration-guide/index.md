@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2fa30c01de9d09af2c2947f940264d9156941589
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 221259ce6550f42aad6e8dbb0a1dd2144bbdb6b4
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72698519"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048518"
 ---
 ::: zone target="docs"
 
@@ -34,7 +34,7 @@ Przed przeprowadzeniem migracji zasobów na platformę Azure musisz wybrać meto
 ::: zone target="docs"
 
 > [!TIP]
-> Aby zapoznać się z tym przewodnikiem w środowisku interaktywnym, skorzystaj z witryny Azure Portal. Przejdź do [Centrum Szybki start platformy Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) w witrynie Azure Portal i wybierz opcję **Migracja środowiska na platformę Azure**.
+> Aby zapoznać się z tym przewodnikiem w środowisku interaktywnym, skorzystaj z witryny Azure Portal. Przejdź do [centrum przewodników Szybki start platformy Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) w witrynie Azure Portal, wybierz pozycję **Migrowanie swojego środowiska na platformę Azure**, a następnie postępuj zgodnie z instrukcjami krok po kroku.
 
 ::: zone-end
 
