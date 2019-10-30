@@ -1,27 +1,27 @@
 ---
-title: Wprowadzenie do podróży migracji do chmury
+title: Rozpocznij podróż do migracji w chmurze na platformie Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Wprowadzenie do podróży migracji do chmury
+description: Rozpocznij podróż do migracji w chmurze na platformie Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547825"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048320"
 ---
-# <a name="getting-started-with-a-cloud-migration-journey"></a>Wprowadzenie do podróży migracji do chmury
+# <a name="begin-a-cloud-migration-journey-in-azure"></a>Rozpocznij podróż do migracji w chmurze na platformie Azure
 
-Dowiedz się więcej na temat używania platformy wdrażania Microsoft Cloud dla platformy Azure w celu rozpoczęcia podróży migracji do chmury. Ta struktura zawiera kompleksowe wskazówki dotyczące przenoszenia starszych obciążeń aplikacji przy użyciu innowacyjnych technologii opartych na chmurze.
+Użyj platformy wdrażania Microsoft Cloud dla platformy Azure, aby rozpocząć podróż do migracji do chmury. Ta struktura zawiera kompleksowe wskazówki dotyczące przenoszenia starszych obciążeń aplikacji do chmury przy użyciu innowacyjnych technologii opartych na chmurze.
 
 ## <a name="executive-summary"></a>Podsumowanie dla kierownictwa
 
-Platforma wdrażania w chmurze pomaga klientom podejmować uproszczone podróże w chmurze. Ta struktura zawiera szczegółowe informacje obejmujące kompleksową podróż do wdrożenia w chmurze, rozpoczynając od docelowych wyników firmy oraz dopasowując gotowość do chmury i oceny z jasno określonymi celami biznesowymi. Te wyniki są osiągane przez zdefiniowaną ścieżkę do wdrożenia chmury. Po wdrożeniu opartym na migracji zdefiniowana ścieżka koncentruje się głównie na zakończeniu migracji obciążeń lokalnych do chmury. Czasami ta podróż obejmuje modernizację obciążeń, aby zwiększyć zwrot z inwestycji w miarę wysiłków związanych z migracją.
+Platforma wdrażania w chmurze pomaga klientom podejmować uproszczone podróże w chmurze. Ta struktura zawiera szczegółowe informacje dotyczące kompleksowej podróży w chmurze, rozpoczynając od docelowych rezultatów firmy, a następnie dopasowując gotowość do chmury i oceny z jasno określonymi celami biznesowymi. Te wyniki są osiągane przez zdefiniowaną ścieżkę do wdrożenia chmury. Po wdrożeniu opartym na migracji zdefiniowana ścieżka koncentruje się głównie na migrowaniu obciążeń lokalnych do chmury. Czasami ta podróż obejmuje modernizację obciążeń, aby zwiększyć zwrot z inwestycji w miarę wysiłków związanych z migracją.
 
 Ta platforma została zaprojektowana głównie dla architektów chmury i zespołów strategii chmurowej, które prowadzą do rozwoju chmury. Jednak wiele tematów w tej strukturze dotyczy innych ról w firmie i. Architektzy chmury często sprawują rolę ułatwiającą zaangażowanie każdej z odpowiednich ról. To podsumowanie dotyczące programu Executive zostało zaprojektowane z założeniami, aby przygotować różne role przed ułatwieniem konwersacji.
 

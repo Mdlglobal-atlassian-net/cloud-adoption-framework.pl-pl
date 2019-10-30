@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3bd26321eca1747e5ed579e4394b0a4b7b713294
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549187"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048217"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan wdrażania chmury i usługa Azure DevOps
 
@@ -45,10 +45,10 @@ Aby przygotować stację roboczą do edycji zbiorczej, zobacz [zbiorcze Dodawani
 
 Plan wdrażania chmury organizuje działania według typu działania:
 
-- **Epiki**: *epiku* reprezentuje ogólną fazę cyklu wdrożenia chmury.
-- **Funkcje**: funkcje są używane do organizowania określonych celów w każdej fazie. Na przykład migracja określonego obciążenia będzie jedną funkcją.
-- **Scenariusze użytkownika**: Grupa historie użytkownika działa w logicznych kolekcjach działań na podstawie określonego celu.
-- **Zadania**: zadania są rzeczywistą czynnością do wykonania.
+- **Epiki:** *Epiku* reprezentuje ogólną fazę cyklu wdrożenia chmury.
+- **Funkcje:** Funkcje służą do organizowania określonych celów w każdej fazie. Na przykład migracja określonego obciążenia będzie jedną funkcją.
+- **Historie użytkownika:** Grupa historie użytkownika działa w logicznych kolekcjach działań na podstawie określonego celu.
+- **Zadania:** Zadania są rzeczywistą czynnością do wykonania.
 
 W każdej warstwie działania są następnie sekwencjonowane na podstawie zależności. Działania są połączone z artykułami w strukturze wdrażania w chmurze w celu wyjaśnienia zamierzenia lub zadania.
 

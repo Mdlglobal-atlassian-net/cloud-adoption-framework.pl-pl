@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: bfa693155bb017f377b3a19c95c8cdb98ae3baa0
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769502"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048245"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Wirtualne centra danych: perspektywa sieci
 
@@ -321,17 +321,17 @@ Składniki obciążenia to miejsce, w którym znajdują się rzeczywiste aplikac
 
 Możliwości obciążeń są nieograniczone. Poniżej przedstawiono zaledwie kilka możliwych typów obciążeń:
 
-**Wewnętrzne aplikacje LOB**: aplikacje biznesowe to aplikacje komputerowe krytyczne dla trwającej operacji przedsiębiorstwa. Aplikacje LOB mają pewne typowe cechy:
+**Wewnętrzne aplikacje LOB:** Aplikacje biznesowe to aplikacje komputerowe krytyczne dla trwającej operacji przedsiębiorstwa. Aplikacje LOB mają pewne typowe cechy:
 
-- **Interaktywnie** według charakteru. Wprowadzono dane i są zwracane wyniki lub raporty.
-- **Oparte na danych**&mdash;intensywna dostęp do baz danych lub innych magazynów.
-- **Zintegrowana**&mdash;oferować integrację z innymi systemami w organizacji lub poza nią.
+- **Interaktywny według natury:** Wprowadzono dane i są zwracane wyniki lub raporty.
+- **Oparte na danych:** Obciążenia intensywnie korzystające z danych z częstego dostępu do baz danych lub innych magazynów.
+- **Zintegrowane:** Obciążenia zapewniające integrację z innymi systemami w organizacji lub poza nią.
 
 **Witryny sieci Web przeznaczone dla klientów (Internet lub wewnętrzny)** : większość aplikacji, które współdziałają z Internetem, to witryny sieci Web. Platforma Azure oferuje możliwość uruchamiania witryny sieci Web na maszynie wirtualnej IaaS lub witrynie [Azure Web Apps][WebApps] site (PaaS). Usługa Azure Web Apps obsługuje integrację z usługą sieci wirtualnych, która pozwala na wdrożenie Web Apps w strefie sieci szprych. Wewnętrzne witryny sieci Web nie muszą ujawniać publicznego punktu końcowego, ponieważ zasoby są dostępne za pośrednictwem prywatnych adresów IP bez obsługi routingu z prywatnej sieci wirtualnej.
 
-**Dane Big Data/analiza**: gdy dane wymagają skalowania do dużego woluminu, bazy danych mogą nie być prawidłowo skalowane. Technologia Hadoop oferuje system do równoległego uruchamiania zapytań rozproszonych na dużej liczbie węzłów. Klienci mają możliwość uruchamiania obciążeń danych w maszynach wirtualnych IaaS lub PaaS ([HDInsight][HDI]). Usługa HDInsight obsługuje wdrażanie w sieci wirtualnej opartej na lokalizacji, ale można ją wdrożyć w klastrze w szprychie wirtualnego centrum danych.
+**Dane Big Data i analiza:** Gdy dane wymagają skalowania w górę do dużego woluminu, bazy danych mogą nie skalować się prawidłowo. Technologia Hadoop oferuje system do równoległego uruchamiania zapytań rozproszonych na dużej liczbie węzłów. Klienci mają możliwość uruchamiania obciążeń danych w maszynach wirtualnych IaaS lub PaaS ([HDInsight][HDI]). Usługa HDInsight obsługuje wdrażanie w sieci wirtualnej opartej na lokalizacji, ale można ją wdrożyć w klastrze w szprychie wirtualnego centrum danych.
 
-**Zdarzenia i komunikaty**: usługa [Azure Event Hubs][EventHubs] jest usługą pozyskiwania danych telemetrycznych w skali, która gromadzi, przekształca i przechowuje miliony zdarzeń. Usługa Distributed Streaming platform oferuje niewielkie opóźnienia i możliwość konfigurowania czasu przechowywania, dzięki czemu można pozyskiwanie ogromnych ilości danych telemetrycznych na platformie Azure i odczytywać te dane z wielu aplikacji. Przy Event Hubs pojedynczy strumień może obsługiwać zarówno potoki w czasie rzeczywistym, jak i oparte na partiach.
+**Zdarzenia i komunikaty:** usługa [Azure Event Hubs][EventHubs] jest usługą pozyskiwania danych telemetrycznych w skali, która gromadzi, przekształca i przechowuje miliony zdarzeń. Usługa Distributed Streaming platform oferuje niewielkie opóźnienia i możliwość konfigurowania czasu przechowywania, dzięki czemu można pozyskiwanie ogromnych ilości danych telemetrycznych na platformie Azure i odczytywać te dane z wielu aplikacji. Przy Event Hubs pojedynczy strumień może obsługiwać zarówno potoki w czasie rzeczywistym, jak i oparte na partiach.
 
 Możesz zaimplementować wysoce niezawodną usługę do obsługi komunikatów w chmurze między aplikacjami i usługami za pomocą [Azure Service Bus][ServiceBus]. Oferuje asynchroniczne komunikaty obsługiwane przez brokera między klientem i serwerem, strukturalną funkcją pierwszej pierwszej wyewidencjonowywania (FIFO) oraz możliwościami publikowania i subskrybowania.
 
