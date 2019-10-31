@@ -8,17 +8,17 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 3cc5071ca4b57473b52e0478e59b3c6a0dd49bea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378041"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058053"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>Przykłady implementacji szkieletu platformy Azure Enterprise
 
 > [!NOTE]
-> Tworzenie szkieletu przedsiębiorstwa platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud. Zawartość tego artykułu jest teraz reprezentowana w sekcji [gotowych](../ready/index.md) nowej struktury. Ten artykuł zostanie uznany za przestarzały na początku 2020. Aby rozpocząć korzystanie z nowego procesu, zapoznaj się z tematem [gotowym do omówienia](../ready/index.md), [tworzeniu pierwszej strefy docelowej](../ready/azure-setup-guide/migration-landing-zone.md)i/lub [zagadnieniami dotyczącymi strefy docelowej](../ready/considerations/index.md).
+> Tworzenie szkieletu przedsiębiorstwa platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud. Zawartość tego artykułu jest teraz reprezentowana w sekcji [gotowych](../ready/index.md) nowej struktury. Ten artykuł zostanie uznany za przestarzały na początku 2020. Aby rozpocząć korzystanie z nowego procesu, zapoznaj się z tematem [gotowy przegląd](../ready/index.md), [Tworzenie pierwszej strefy docelowej](../ready/azure-setup-guide/migration-landing-zone.md)i [zagadnieniami](../ready/considerations/index.md)dotyczącymi strefy.
 
 W tym artykule przedstawiono przykłady zastosowania przez przedsiębiorstwo zaleceń dla [szkieletu platformy Azure Enterprise](./azure-scaffold.md). Używa fikcyjnej firmy o nazwie contoso do zilustrowania najlepszych rozwiązań dla typowych scenariuszy.
 
@@ -138,6 +138,8 @@ Dave loguje się do Enterprise Portal platformy Azure i zauważa, że dział ła
 | --- | --- |
 | Tworzenie oprogramowania |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
 | Produkcja |Produkcja contoso SupplyChain Operations LoyaltyCard |
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="policies"></a>Zasady
 

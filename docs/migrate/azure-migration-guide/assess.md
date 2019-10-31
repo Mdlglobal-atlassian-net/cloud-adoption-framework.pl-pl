@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 39c756c1d90cc9baf7927b2a0ba02814a82f6031
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549272"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058800"
 ---
 # <a name="assess-the-digital-estate"></a>Szacowanie majątku cyfrowego
 
@@ -58,7 +58,7 @@ Aby rozpocząć ocenę migracji serwera przy użyciu usługi Azure Migrate, wyko
 
 ::: zone target="docs"
 
-### <a name="read-more"></a>Dowiedz się więcej
+### <a name="learn-more"></a>Dowiedz się więcej
 
 - [Azure Migrate — przegląd](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
 - [Migrowanie serwerów fizycznych lub zwirtualizowanych na platformę Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
@@ -82,7 +82,7 @@ Aby można było używać wizualizacji zależności, należy pobrać i zainstalo
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="read-more"></a>Dowiedz się więcej
+### <a name="learn-more"></a>Dowiedz się więcej
 
 - [Korzystanie z rozwiązania Service Map na platformie Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate i Service Map: wizualizacja zależności](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
@@ -104,7 +104,7 @@ Pełna lista osób biorących udział w projekcie zależy od konkretnego projekt
 
 Utworzenie podstawowego zespołu ds. strategii w chmurze, opartego na najważniejszych osobach biorących udział w projekcie, może pomóc w przygotowaniu organizacji do wdrożenia w chmurze i przeprowadzeniu ogólnych działań związanych z migracją w chmurze. Ten zespół jest odpowiedzialny za interpretację technologii chmurowych i procesów migracji, uzasadnienie biznesowe migracji oraz określenie najlepszych rozwiązań wysokiego poziomu na potrzeby migracji. Członkowie zespołu ułatwiają również identyfikację konkretnych osób biorących udział w projekcie z ramienia grup ds. zastosowań i firmy w celu zapewnienia pomyślnej migracji oraz współpracę z nimi.
 
-Aby uzyskać więcej informacji na temat przygotowywania organizacji do działań związanych z migracją do chmury, zobacz artykuł dotyczący struktury wdrażania w chmurze na temat [wstępnej zgodności organizacyjnej](../../ready/initial-org-alignment.md).
+Aby uzyskać więcej informacji na temat przygotowywania organizacji do działań związanych z migracją do chmury, zobacz artykuł dotyczący struktury wdrażania w chmurze na temat [wstępnej zgodności organizacyjnej](../../plan/initial-org-alignment.md).
 
 # <a name="timelinestabtimelines"></a>[Harmonogram](#tab/Timelines)
 
