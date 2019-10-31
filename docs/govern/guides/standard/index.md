@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 059e60e44ccf393bb731005bd4a579f3e3e41951
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ea7d9c51ced367734b28fd550ec1caa69ffe1f27
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547595"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058683"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Przewodnik dotyczący ładu dla przedsiębiorstw standardowych
 
@@ -40,7 +40,7 @@ Poniższy diagram przedstawia hierarchię MVP ładu na potrzeby organizowania za
 Każda aplikacja powinna zostać wdrożona w odpowiednim obszarze grupy zarządzania, subskrypcji i hierarchii grupy zasobów. Podczas planowania wdrożenia zespół ds. zapewnienia ładu w chmurze utworzy w hierarchii niezbędne węzły, aby pomóc zespołom wdrażania chmury.
 
 1. Jedna grupa zarządzania dla każdego typu środowiska (np. produkcyjne, deweloperskie i testowe).
-2. Dwie subskrypcje, pierwsza dla środowiska produkcyjnego i druga dla nieprodukcyjnego.
+2. Dwie subskrypcje, pierwsza dla obciążeń produkcyjnych, a druga dla obciążeń nieprodukcyjnych.
 3. Na każdym poziomie tej hierarchii grupowania należy stosować [spójną nomenklaturę](../../../ready/considerations/naming-and-tagging.md).
 4. Grupy zasobów należy wdrażać w sposób, który uwzględnia cykl życia ich zawartości: wszystko co jest wspólnie opracowywane, zarządzane i wycofywane, podlega tym samym operacjom. Więcej informacji o najlepszych rozwiązaniach dotyczących grup zasobów możesz znaleźć [tutaj](../../../decision-guides/resource-consistency/index.md).
 5. [Wybór regionu](../../../decision-guides/regions/index.md) jest niezwykle istotny i należy o nim pamiętać, aby praca w sieci, monitorowanie i inspekcja odbywały się w odpowiedni sposób względem operacji przełączenia w tryb failover i powrotu po awarii, oraz wysyłane było potwierdzenie, że [wymagane jednostki SKU są dostępne w preferowanych regionach](https://azure.microsoft.com/global-infrastructure/services).

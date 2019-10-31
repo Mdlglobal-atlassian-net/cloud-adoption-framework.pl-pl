@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7542fafccd5b1ef4c5e944db8c14322c76772ed4
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: be75f4315d90c09c277846f8608ca0552f1d9853
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683560"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058706"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Przewodnik dotyczący ładu dla przedsiębiorstw złożonych
 
@@ -39,7 +39,7 @@ Poniższy diagram przedstawia hierarchię MVP ładu na potrzeby organizowania za
 
 Każda aplikacja powinna zostać wdrożona w odpowiednim obszarze grupy zarządzania, subskrypcji i hierarchii grupy zasobów. Podczas planowania wdrożenia zespół ds. zapewnienia ładu w chmurze utworzy w hierarchii niezbędne węzły, aby pomóc zespołom wdrażania chmury.
 
-1. Zdefiniuj grupę zarządzania dla każdej jednostki biznesowej ze szczegółową hierarchią, która odzwierciedla lokalizację geograficzną, a następnie typ środowiska (na przykład środowisko produkcyjne lub nieprodukcyjne).
+1. Zdefiniuj grupę zarządzania dla każdej jednostki biznesowej ze szczegółową hierarchią, która odzwierciedla lokalizację geograficzną, a następnie typ środowiska (na przykład środowisko produkcyjne lub przedprodukcyjne).
 2. Utwórz subskrypcję produkcyjną i nieprodukcyjną dla każdej unikatowej kombinacji odrębnej jednostki biznesowej lub lokalizacji geograficznej. Zachowaj ostrożność w przypadku tworzenia wielu subskrypcji. Więcej informacji możesz znaleźć [tutaj](../../../decision-guides/subscriptions/index.md).
 3. Na każdym poziomie tej hierarchii grupowania zastosuj [spójną nomenklaturę](../../../ready/considerations/naming-and-tagging.md).
 4. Grupy zasobów należy wdrażać w sposób, który uwzględnia cykl życia ich zawartości: wszystko co jest wspólnie opracowywane, zarządzane i wycofywane, podlega tym samym operacjom. Więcej informacji o najlepszych rozwiązaniach dotyczących grup zasobów możesz znaleźć [tutaj](../../../decision-guides/resource-consistency/index.md).

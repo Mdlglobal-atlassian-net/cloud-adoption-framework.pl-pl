@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 000d1aba1ec496e7b6583c84351e2d6ca29b3e1f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683515"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058717"
 ---
 # <a name="subscription-decision-guide"></a>Przewodnik po decyzjach związanych z subskrypcjami
 
@@ -26,7 +26,7 @@ Wraz z rozwojem Twojej infrastruktury cyfrowej na platformie Azure będzie prawd
 
 Podstawowe przykłady korzystania z grup zarządzania do rozdzielania różnych obciążeń:
 
-- **Środowisko produkcyjne a nieprodukcyjne:** niektóre przedsiębiorstwa tworzą grupy zarządzania, aby oddzielić subskrypcje produkcyjne i nieprodukcyjne. Grupy zarządzania jeszcze bardziej ułatwiają tym klientom zarządzanie rolami i zasadami. Na przykład subskrypcja nieprodukcyjna może umożliwić deweloperom dostęp typu **Współautor**, ale w środowisku produkcyjnym mają tylko dostęp typu **Czytelnik**.
+- **Obciążenia produkcyjne a nieprodukcyjne:** niektóre przedsiębiorstwa tworzą grupy zarządzania, aby oddzielić subskrypcje produkcyjne i nieprodukcyjne. Grupy zarządzania jeszcze bardziej ułatwiają tym klientom zarządzanie rolami i zasadami. Na przykład subskrypcja nieprodukcyjna może umożliwić deweloperom dostęp typu **Współautor**, ale w środowisku produkcyjnym mają tylko dostęp typu **Czytelnik**.
 - **Usługi wewnętrzne a usługi zewnętrzne:** bardzo podobnie jak w przypadku obciążeń środowisk produkcyjnych i nieprodukcyjnych przedsiębiorstwa często mają różne wymagania, zasady i role dla usług wewnętrznych w porównaniu z usługami zewnętrznymi przeznaczonymi dla klientów.
 
 Ten przewodnik po podejmowaniu decyzji pomaga rozważyć różne podejścia do organizowania hierarchii grup zarządzania.

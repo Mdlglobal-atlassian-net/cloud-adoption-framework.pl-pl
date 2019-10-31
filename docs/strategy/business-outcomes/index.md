@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: faa1728dd72828478a167cf09535bdf9f2ac1a82
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048018"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058871"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -62,13 +62,13 @@ Wyświetl wyniki związane z [globalnym zasięgiem](./reach-outcomes.md).
 
 Społecznościowe platformy handlowe na nowo definiują zwycięzców i przegranych w niespotykanym dotąd tempie. Odpowiadanie na potrzeby klientów jest kluczową miarą zaangażowania klientów.
 
-Przeczytaj więcej na temat [wyników związanych z zaangażowaniem klientów](./engagement-outcomes.md).
+Dowiedz się więcej na temat [wyników związanych z zaangażowaniem klientów](./engagement-outcomes.md).
 
 ### <a name="performance-outcomes"></a>Wyniki związane z wydajnością
 
 Oczekuje się wydajności i niezawodności. Gdy któraś z nich słabnie, spadek reputacji może być bolesny i długotrwały.
 
-Więcej informacji na temat [wyników związanych z wydajnością](./performance-outcomes.md).
+Dowiedz się więcej na temat [wyników związanych z wydajnością](./performance-outcomes.md).
 
 Każdy z wyników biznesowych wymienionych w powyższych kategoriach ułatwia prowadzenie konkretnej rozmowy z pracownikami firmy i członkami zespołu technicznego. Należy jednak ograniczyć rozmowy do tych ogólnych przykładów. Zrozumienie unikatowych potrzeb firmy i dążenie do wyników, które są z nimi zgodne, zapewnia maksymalną wartość transformacji do chmury.
 

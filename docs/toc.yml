@@ -127,6 +127,12 @@
           href: ready/azure-best-practices/roles.md
         - name: Uzyskiwanie zgodności w chmurze hybrydowej
           href: infrastructure/misc/hybrid-consistency.md
+    - name: Zakres rozszerzony
+      items:
+        - name: Strefy docelowe narzędzia Terraform
+          href: ready/expanded-scope/terraform-landing-zone.md
+        - name: Zabezpieczenia granicy sieci
+          href: reference/networking-vdc.md
     - name: Najlepsze praktyki
       items:
         - name: Omówienie
@@ -437,8 +443,6 @@
                   href: migrate/azure-best-practices/migrate-best-practices-security-management.md
                 - name: Dodatkowe najlepsze rozwiązania
                   items:
-                    - name: Najlepsze rozwiązania dotyczące zabezpieczeń granicznych platformy Azure
-                      href: reference/networking-vdc.md
                     - name: Najlepsze rozwiązania dotyczące zabezpieczeń bazy danych na platformie Azure
                       href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Najlepsze rozwiązania z zakresu zabezpieczeń i szyfrowania danych platformy Azure
@@ -707,7 +711,7 @@
                       items:
                         - name: 'Projektowanie, tworzenie i obsługiwanie mikrousług na platformie Azure'
                           href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Architektura referencyjna mikrousług z użyciem usług Azure Kubernetes Service (AKS)
+                        - name: Architektura referencyjna mikrousług z użyciem usługi Azure Kubernetes Service (AKS)
                           href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: Architektura referencyjna — przykład mikrousług bezserwerowych
                           href: 'https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
