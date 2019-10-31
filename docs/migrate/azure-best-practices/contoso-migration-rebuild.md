@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 258b5a656293001228aab51dd1319fe6a89780a9
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: bd9042fcd0b7ae6d18a5cc522a4006b7f8bfdbc6
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548226"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058568"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Ponowne kompilowanie aplikacji lokalnej na platformie Azure
 
@@ -132,11 +132,11 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 Administratorzy firmy Contoso uruchamiają skrypt wdrożenia w celu utworzenia zarządzanego klastra platformy Kubernetes przy użyciu usług AKS i Azure Container Registry (ACR).
 
 - Instrukcje w tej sekcji korzystają z repozytorium **SmartHotel360-Azure-backend**.
-- Repozytorium GitHub **SmartHotel360-Azure-backend** zawiera całe oprogramowanie potrzebne do tej części wdrożenia.
+- Repozytorium GitHub **SmartHotel360-Azure-backend** zawiera całe oprogramowanie potrzebne do tej części wdrożenia.  
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
-1. Przed rozpoczęciem administratorzy firmy Contoso upewniają się, że zainstalowano całe oprogramowanie wymagane wstępnie na maszynie deweloperskiej używanej do wdrożenia.
+1. Przed rozpoczęciem Administratorzy firmy Contoso muszą upewnić się, że wszystkie wstępnie wymagane oprogramowanie zainstalowane na komputerze deweloperskim, którego używa do wdrożenia.
 2. Klonują repozytorium lokalnie na maszynę deweloperską przy użyciu usługi Git: `git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git`
 
 ### <a name="provision-aks-and-acr"></a>Aprowizowanie usług AKS i ACR
@@ -152,7 +152,7 @@ Administratorzy firmy Contoso przeprowadzają aprowizację w następujący spos�
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
 5. W zintegrowanym terminalu programu PowerShell logują się na platformie Azure przy użyciu polecenia Connect-AzureRmAccount. [Dowiedz się więcej](https://docs.microsoft.com/powershell/azure/get-started-azureps) o rozpoczynaniu pracy z programem PowerShell.
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. Uwierzytelniają interfejs wiersza polecenia platformy Azure, uruchamiając polecenie **az login** i postępując według instrukcji uwierzytelniania w przeglądarce internetowej. [Dowiedz się więcej](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) na temat logowania za pomocą interfejsu wiersza polecenia platformy Azure.
+6. Umożliwiają one uwierzytelnianie interfejsu wiersza polecenia platformy Azure, uruchamiając polecenie `az login` i postępując zgodnie z instrukcjami dotyczącymi uwierzytelniania przy użyciu przeglądarki sieci Web. [Dowiedz się więcej](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) na temat logowania za pomocą interfejsu wiersza polecenia platformy Azure.
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
 7. Uruchamiają następujące polecenie, przekazując nazwę grupy zasobów ContosoRG, nazwę klastra usługi AKS smarthotel-aks-eus2 i nazwę nowego rejestru.
 
@@ -178,7 +178,9 @@ Administratorzy firmy Contoso przeprowadzają aprowizację w następujący spos�
 
 11. Wykonują następujące polecenie, aby uruchomić pulpit nawigacyjny rozwiązania Kubernetes:
 
-    **az aks browse --resource-group ContosoRG --name smarthotelakseus2**
+    ```console
+    az aks browse --resource-group ContosoRG --name smarthotelakseus2
+    ```
 
 12. Pulpit nawigacyjny zostaje otwarty na nowej karcie przeglądarki. Jest to połączenie tunelowane, wykorzystujące interfejs wiersza polecenia platformy Azure.
 
@@ -278,7 +280,7 @@ Teraz administratorzy firmy Contoso wykonują następujące czynności:
 - Wdrażają mikrousługi w klastrze usług AKS.
 - Na początku aktualizują parametry połączenia mikrousług przy użyciu usługi Azure DevOps. Konfigurują nowy potok wydania Azure DevOps w celu wdrożenia mikrousług.
 - Instrukcje w tej sekcji korzystają z repozytorium [SmartHotel360-Azure-Backend](https://github.com/Microsoft/SmartHotel360-Azure-backend).
-- Należy zauważyć, że niektóre ustawienia konfiguracji (na przykład Active Directory B2C) nie są omówione w tym artykule. Zapoznaj się z informacjami na temat tych ustawień w repozytorium.
+- Niektóre ustawienia konfiguracji (na przykład Active Directory B2C) nie zostały omówione w tym artykule. Aby uzyskać więcej informacji na temat tych ustawień, przejrzyj repozytorium powyżej.
 
 Tworzą potok:
 
@@ -600,7 +602,7 @@ Po migracji zasobów na platformę Azure firma Contoso musi teraz w pełni zoper
 
 - Po wdrożeniu wszystkich zasobów firma Contoso powinna przypisać tagi platformy Azure zgodnie z [planem infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging).
 - Wszystkie koszty licencjonowania są wliczone w koszt usług PaaS używanych przez firmę Contoso. Ten koszt zostanie odjęty od umowy EA.
-- Firma włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
+- Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
 
 ## <a name="conclusion"></a>Podsumowanie
 

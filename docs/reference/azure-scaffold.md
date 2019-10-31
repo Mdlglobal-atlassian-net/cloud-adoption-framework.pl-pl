@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2e605766e06b106fab61576e64bd5059569c8b38
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf717841e7ac42e0957ce540fc974c84d112a79
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548768"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058177"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: zalecenia dotyczące zarządzania subskrypcjami
 
 > [!NOTE]
-> Tworzenie szkieletu przedsiębiorstwa platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud. Zawartość tego artykułu jest teraz reprezentowana w sekcji [gotowych](../ready/index.md) nowej struktury. Ten artykuł zostanie uznany za przestarzały na początku 2020. Aby rozpocząć korzystanie z nowego procesu, zapoznaj się z tematem [gotowym do omówienia](../ready/index.md), [tworzeniu pierwszej strefy docelowej](../ready/azure-setup-guide/migration-landing-zone.md)i/lub [zagadnieniami dotyczącymi strefy docelowej](../ready/considerations/index.md).
+> Tworzenie szkieletu przedsiębiorstwa platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud. Zawartość tego artykułu jest teraz reprezentowana w sekcji [gotowych](../ready/index.md) nowej struktury. Ten artykuł zostanie uznany za przestarzały na początku 2020. Aby rozpocząć korzystanie z nowego procesu, zapoznaj się z tematem [gotowy przegląd](../ready/index.md), [Tworzenie pierwszej strefy docelowej](../ready/azure-setup-guide/migration-landing-zone.md)i [zagadnieniami](../ready/considerations/index.md)dotyczącymi strefy.
 
 Przedsiębiorstwa coraz częściej wdrażają chmurę publiczną pod kątem elastyczności i elastyczność. Są one zależne od siły chmury w celu generowania przychodów i optymalizowania użycia zasobów dla firmy. Microsoft Azure zapewnia wiele usług i możliwości, które przedsiębiorstwa tworzą, takie jak bloki konstrukcyjne, aby zająć szeroką gamę obciążeń i aplikacji.
 

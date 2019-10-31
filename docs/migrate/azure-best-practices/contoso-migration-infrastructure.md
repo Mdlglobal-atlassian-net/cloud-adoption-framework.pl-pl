@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 93c0bb52159b4573ed796ca3a1aa7cb0ac2d8149
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 13a3a8a8734ffe67298d09544882c612916b995f
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547345"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058908"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Wdrażanie infrastruktury migracji
 
@@ -325,7 +325,7 @@ Po wdrożeniu projektu regionalnego firma Contoso jest gotowa do rozważenia str
 
 ### <a name="plan-hybrid-network-connectivity"></a>Planowanie hybrydowej łączności sieciowej
 
-Firma Contoso rozważała [wiele architektur](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) dla sieci hybrydowej między platformą Azure a lokalnym centrum danych. [Przeczytaj więcej](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations) na temat porównywania opcji.
+Firma Contoso rozważała [wiele architektur](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) dla sieci hybrydowej między platformą Azure a lokalnym centrum danych. Aby uzyskać więcej informacji, zobacz [Wybieranie rozwiązania do łączenia sieci lokalnej z platformą Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations).
 
 Przypomnijmy, że lokalna infrastruktura sieciowa firmy Contoso obecnie składa się z centrum danych w Nowym Jorku i lokalnych oddziałów we wschodniej części USA. Wszystkie lokalizacje mają połączenie klasy biznesowej z Internetem. Każdy oddział jest następnie połączony z centrum danych za pośrednictwem tunelu IPSec VPN przez Internet.
 
@@ -638,7 +638,7 @@ Usługa Active Directory jest usługą o znaczeniu krytycznym w sieci i musi by�
 
 ## <a name="step-5-plan-for-governance"></a>Krok 5. Planowanie zarządzania
 
-Platforma Azure udostępnia szereg mechanizmów kontroli ładu w usługach i na platformie Azure. [Przeczytaj więcej](https://docs.microsoft.com/azure/security/governance-in-azure), aby uzyskać podstawową wiedzę na temat opcji.
+Platforma Azure udostępnia szereg mechanizmów kontroli ładu w usługach i na platformie Azure. Aby uzyskać więcej informacji, zobacz [Opcje ładu platformy Azure](https://docs.microsoft.com/azure/security/governance-in-azure).
 
 Podczas konfigurowania tożsamości i kontroli dostępu firma Contoso zaczęła już implementować pewne aspekty ładu i bezpieczeństwa. Ogólnie istnieją trzy obszary, które należy wziąć pod uwagę:
 

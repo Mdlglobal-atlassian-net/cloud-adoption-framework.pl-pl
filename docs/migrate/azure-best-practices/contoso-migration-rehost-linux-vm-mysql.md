@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e39452782f1966e0efe2742264d26a60062d78b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c623d7c537d19f700fed4d28523f60c4fd03d4ea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547323"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058626"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Ponowne hostowanie aplikacji lokalnej dla systemu Linux na maszynach wirtualnych platformy Azure i w usłudze Azure Database for MySQL
 
@@ -362,7 +362,7 @@ Próba przejścia w tryb failover pozwala sprawdzić, czy wszystko działa zgodn
 4. Po zakończeniu przechodzenia w tryb failover w witrynie Azure Portal będzie widoczna replika maszyny wirtualnej na platformie Azure. Administratorzy sprawdzają, czy maszyna wirtualna ma prawidłowy rozmiar, jest połączona z odpowiednią siecią i jest uruchomiona.
 5. Gdy wszystko zostanie sprawdzone, przeprowadzają czyszczenie po przejściu do trybu failover oraz rejestrują i zapisują wszelkie obserwacje.
 
-### <a name="migrate-the-vm"></a>Migrowanie maszyny wirtualnej
+### <a name="migrate-the-vm"></a>migrowanie maszyny wirtualnej
 
 Aby przeprowadzić migrację maszyny wirtualnej, administratorzy firmy Contoso tworzą plan odzyskiwania, który obejmuje maszynę wirtualną, i wykonują przejście w tryb failover na platformie Azure.
 
@@ -446,7 +446,7 @@ Zespół ds. zabezpieczeń firmy Contoso sprawdza maszynę wirtualną i bazę da
 - Rozważają również zabezpieczenie danych na dyskach maszyn wirtualnych przy użyciu usług Disk Encryption i Azure Key Vault.
 - Nie skonfigurowano komunikacji między maszyną wirtualną a wystąpieniem bazy danych z użyciem protokołu SSL. Trzeba to zrobić, aby upewnić się, że hakerzy nie mogą zaatakować bazy danych.
 
-[Dowiedz się więcej](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) na temat rozwiązań zabezpieczeń dla maszyn wirtualnych.
+Aby uzyskać więcej informacji, zobacz [najlepsze rozwiązania w zakresie zabezpieczeń dotyczące obciążeń IaaS na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ### <a name="bcdr"></a>Zapewnienie ciągłości działania i odzyskiwanie po awarii
 
@@ -459,4 +459,4 @@ W celu zapewnienia ciągłości działania i odzyskiwania po awarii firma Contos
 
 - Po wdrożeniu zasobów firma Contoso przypisuje tagi platformy Azure zgodnie z decyzjami podjętymi na etapie wdrażania [infrastruktury platformy Azure](./contoso-migration-infrastructure.md#set-up-tagging).
 - Nie ma problemów z licencjonowaniem dla wdrożenia serwerów Contoso Ubuntu.
-- Firma włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
+- Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.

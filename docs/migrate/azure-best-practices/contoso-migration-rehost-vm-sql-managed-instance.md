@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 4948035001cba4ba9b433a6f31811f0c66e1704f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 574fa1ede2d7ddeb0fe41f05c8519e9b16ba6c51
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548148"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058497"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ponowne hostowanie aplikacji lokalnej na maszynie wirtualnej platformy Azure i wystąpieniu zarządzanym usługi SQL Database
 
@@ -125,7 +125,7 @@ Wymagania | Szczegóły
 --- | ---
 **Rejestracja w wersji zapoznawczej wystąpienia zarządzanego** | Musisz zarejestrować się w ograniczonej wersji zapoznawczej wystąpienia zarządzanego usługi SQL Database. Aby [zarejestrować się](https://portal.azure.com#create/Microsoft.SQLManagedInstance), potrzebna jest subskrypcja platformy Azure. Rejestracja może potrwać kilka dni, dlatego należy zarejestrować się przed rozpoczęciem wdrażania tego scenariusza.
 **Subskrypcja platformy Azure** | Subskrypcję należy utworzyć jeszcze przed przeprowadzeniem oceny w pierwszym artykule w tej serii. Jeśli nie masz subskrypcji platformy Azure, utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.<br/><br/> Jeśli potrzebujesz bardziej szczegółowych uprawnień, zobacz [Zarządzanie dostępem do usługi Site Recovery przy użyciu kontroli dostępu opartej na rolach](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Infrastruktura platformy Azure wymagana do migracji](./contoso-migration-infrastructure.md).
+**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Azure infrastructure for Migration (Infrastruktura platformy Azure wymagana do migracji)](./contoso-migration-infrastructure.md).
 **Usługa Site Recovery (lokalna)** | Lokalne wystąpienie programu vCenter Server w wersji 5.5, 6.0 lub 6.5<br/><br/> Host ESXi w wersji 5.5, 6.0 lub 6.5<br/><br/> Co najmniej jedna maszyna wirtualna programu VMware uruchomiona na hoście ESXi.<br/><br/> Maszyny wirtualne muszą spełniać [wymagania platformy Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Obsługiwana konfiguracja [sieci](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) i [magazynu](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage).
 **Usługa Database Migration Service** | W przypadku usługi Azure Database Migration Service potrzebne jest [zgodne lokalne urządzenie sieci VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).<br/><br/> Musisz mieć możliwość skonfigurowania lokalnego urządzenia sieci VPN. Musi ono mieć widoczny zewnętrznie publiczny adres IPv4. Adres nie może znajdować się za urządzeniem NAT.<br/><br/> Upewnij się, że masz dostęp do lokalnej bazy danych programu SQL Server.<br/><br/> Zapora systemu Windows powinna mieć dostęp do aparatu źródłowej bazy danych. Dowiedz się, jak [skonfigurować zaporę systemu Windows pod kątem dostępu do aparatu bazy danych](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access).<br/><br/> Jeśli przed maszyną bazy danych znajduje się zapora, dodaj reguły zezwalające na dostęp do bazy danych za pośrednictwem portu SMB 445.<br/><br/> Poświadczenia, które służą do nawiązywania połączenia ze źródłowym wystąpieniem programu SQL Server i których elementem docelowym jest wystąpienie zarządzane, muszą być elementami członkowskimi roli serwera sysadmin.<br/><br/> Musisz mieć udział sieciowy w lokalnej bazie danych umożliwiający wykonanie kopii zapasowej źródłowej bazy danych za pomocą usługi Azure Database Migration Service.<br/><br/> Upewnij się, że konto usługi, na którym uruchomiono źródłowe wystąpienie programu SQL Server, ma uprawnienia do zapisu w udziale sieciowym.<br/><br/> Zanotuj nazwę i hasło użytkownika systemu Windows, który ma uprawnienia do pełnej kontroli nad udziałem sieciowym. Usługa Azure Database Migration Service personifikuje te poświadczenia użytkownika w celu przekazania plików kopii zapasowej do kontenera usługi Azure Storage.<br/><br/> Proces instalacji programu SQL Server Express domyślnie zmienia ustawienie protokołu TCP/IP na wartość **Wyłączony**. Upewnij się, że ustawienie to jest włączone.
 
@@ -523,7 +523,7 @@ Testowe przełączenie w tryb failover przed przeprowadzeniem migracji maszyny w
 4. Po zakończeniu trybu failover w witrynie Azure Portal będzie widoczna replika maszyny wirtualnej platformy Azure. Sprawdzają, czy wszystko działa prawidłowo: maszyna wirtualna ma odpowiedni rozmiar, jest połączona z odpowiednią siecią i jest uruchomiona.
 5. Po zweryfikowaniu testowego przełączenia w tryb failover przeprowadzają czyszczenie po przejściu do trybu failover oraz rejestrują wszelkie obserwacje.
 
-### <a name="migrate-the-vm"></a>Migrowanie maszyny wirtualnej
+### <a name="migrate-the-vm"></a>migrowanie maszyny wirtualnej
 
 1. Jeśli próbne przejście do trybu failover przebiegło zgodnie z oczekiwaniami, administratorzy firmy Contoso mogą utworzyć plan odzyskiwania na potrzeby migracji i dodać maszynę wirtualną WEBVM do planu:
 
@@ -588,7 +588,7 @@ Zespół ds. zabezpieczeń firmy Contoso przegląda maszyny wirtualne platformy 
 
      ![Zabezpieczenia wystąpienia zarządzanego — wykrywanie zagrożeń](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-security.png)
 
-Aby dowiedzieć się więcej na temat rozwiązań z zakresu bezpieczeństwa dotyczących maszyn wirtualnych, zobacz [Najlepsze rozwiązania dotyczące zabezpieczeń dla obciążeń IaaS na platformie Azure](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms).
+Aby dowiedzieć się więcej na temat rozwiązań z zakresu bezpieczeństwa dotyczących maszyn wirtualnych, zobacz [Najlepsze rozwiązania dotyczące zabezpieczeń dla obciążeń IaaS na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ### <a name="bcdr"></a>Zapewnienie ciągłości działania i odzyskiwanie po awarii
 

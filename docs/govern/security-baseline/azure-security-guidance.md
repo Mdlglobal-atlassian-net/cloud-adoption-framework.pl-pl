@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8449878d46c939c58f690e585aac07fa0e827484
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 18fce98055f72e43ea7ecc2565ab859845cea356
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548049"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058827"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -52,7 +52,7 @@ Te narzędzia zostały zaprojektowane w celu ułatwienia organizacjom zaspokajan
 
 ## <a name="unique-intelligent-insights"></a>Unikatowy inteligentny wgląd w szczegółowe dane
 
-Wraz ze wzrostem ilości i złożoności sygnałów zabezpieczeń, określenie, czy te sygnały są wiarygodnymi zagrożeniami, a następnie działające, trwa zbyt długo. Firma Microsoft oferuje niezrównaną szeroką skalę analizy zabezpieczeń, która została dostarczona w skali chmury, aby pomóc w szybkim wykrywaniu i korygowaniu zagrożeń. [Przeczytaj więcej](https://docs.microsoft.com/azure/security-center/security-center-intro)
+Wraz ze wzrostem ilości i złożoności sygnałów zabezpieczeń, określenie, czy te sygnały są wiarygodnymi zagrożeniami, a następnie działające, trwa zbyt długo. Firma Microsoft oferuje niezrównaną szeroką skalę analizy zabezpieczeń, która została dostarczona w skali chmury, aby pomóc w szybkim wykrywaniu i korygowaniu zagrożeń. Aby uzyskać więcej informacji, zobacz [omówienie Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro).
 
 ## <a name="azure-threat-intelligence"></a>Analiza zagrożeń platformy Azure
 

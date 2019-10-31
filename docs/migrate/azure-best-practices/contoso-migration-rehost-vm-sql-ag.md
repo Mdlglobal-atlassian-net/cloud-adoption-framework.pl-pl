@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3869103c257fa03806fe09b840ab41fd6365c152
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1292eeec6559fc6caa6cd6ff265a37147cf0b887
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547228"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058651"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Ponowne hostowanie aplikacji lokalizacji na maszynach wirtualnych platformy Azure i w zawsze włączonej grupie dostępności programu SQL Server
 
@@ -659,7 +659,7 @@ Zespół ds. zabezpieczeń firmy Contoso sprawdza maszyny wirtualne platformy Az
 - Zespół rozważa zabezpieczenie danych na dysku przy użyciu usług Azure Disk Encryption i Key Vault.
 - Zespół powinien oszacować szyfrowanie Transparent Data Encryption (TDE), a następnie włączyć je w bazie danych SmartHotel360 działającej na nowym odbiorniku AOG SQL. [Dowiedz się więcej](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017).
 
-[Dowiedz się więcej](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) na temat rozwiązań zabezpieczeń dla maszyn wirtualnych.
+Aby uzyskać więcej informacji, zobacz [najlepsze rozwiązania w zakresie zabezpieczeń dotyczące obciążeń IaaS na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ## <a name="bcdr"></a>Zapewnienie ciągłości działania i odzyskiwanie po awarii
 
@@ -672,7 +672,7 @@ Zespół ds. zabezpieczeń firmy Contoso sprawdza maszyny wirtualne platformy Az
 ### <a name="licensing-and-cost-optimization"></a>Licencjonowanie i optymalizacja kosztów
 
 1. Firma Contoso ma istniejące licencje dla maszyny wirtualnej WEBVM i zastosuje korzyść użycia hybrydowego platformy Azure. Firma Contoso przekonwertuje istniejące maszyny wirtualne platformy Azure, aby skorzystać z tych cen.
-2. Firma włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
+2. Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
 
 ## <a name="conclusion"></a>Podsumowanie
 

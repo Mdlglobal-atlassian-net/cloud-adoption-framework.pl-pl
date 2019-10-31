@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 54621d366f0ae0a3e2e3504532ace183bc7f49c4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833455"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058853"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Korygowanie zasobów przed migracją
 
@@ -31,7 +31,7 @@ W każdym środowisku firmowym istnieje dług techniczny. Częściowo jest on oc
 - **Zmiany konfiguracji aplikacji.** Migrowane aplikacje mogą wymagać zmian zmiennych, takich jak ścieżki sieciowe do zasobów zależnych, zmiany konta usługi lub aktualizacje zależnych adresów IP.
 - **Drobne zmiany ścieżek sieciowych.** Wzorce routingu mogą wymagać modyfikacji w celu prawidłowego kierowania ruchu użytkowników do nowych zasobów.
     > [!NOTE]
-    > To nie jest routing produkcyjny do nowych zasobów — jest to konfiguracja umożliwiająca ogólny odpowiedni routing do zasobów.
+    > To nie jest Routing produkcyjny do nowych zasobów, ale raczej konfiguracja pozwala na ogólne kierowanie do zasobów.
 
 ## <a name="large-scale-remediation-tasks"></a>Zadania korygowania na dużą skalę
 

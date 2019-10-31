@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d0fff6d3c88d62ed3efc9f4cf2140981e8be331a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0bfadba7f6cefc5cd597d002c3cb18b0cfcc8c3d
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547214"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058188"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure
 
@@ -283,7 +283,7 @@ Zespół ds. zabezpieczeń firmy Contoso sprawdza maszyny wirtualne platformy Az
 - Aby kontrolować dostęp, zespół przegląda sieciowe grupy zabezpieczeń maszyn wirtualnych. Sieciowe grupy zabezpieczeń zapewniają, że do aplikacji będzie przekazywany tylko dozwolony ruch.
 - Zespół rozważa również zabezpieczenie danych na dysku przy użyciu usług Azure Disk Encryption i Key Vault.
 
-[Dowiedz się więcej](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) na temat rozwiązań zabezpieczeń dla maszyn wirtualnych.
+Aby uzyskać więcej informacji, zobacz [najlepsze rozwiązania w zakresie zabezpieczeń dotyczące obciążeń IaaS na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ## <a name="bcdr"></a>Zapewnienie ciągłości działania i odzyskiwanie po awarii
 
@@ -295,7 +295,7 @@ W celu zapewnienia ciągłości działania i odzyskiwania po awarii (BCDR, Busin
 ### <a name="licensing-and-cost-optimization"></a>Licencjonowanie i optymalizacja kosztów
 
 1. Firma Contoso ma istniejące licencje dla swoich maszyn wirtualnych i zastosuje korzyść użycia hybrydowego platformy Azure. Firma Contoso przekonwertuje istniejące maszyny wirtualne platformy Azure, aby skorzystać z tych cen.
-2. Firma włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
+2. Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
 
 ## <a name="conclusion"></a>Podsumowanie
 

@@ -1,5 +1,5 @@
 ---
-title: Strefa docelowa z Terraform
+title: Tworzenie stref wyładunkowych przy użyciu Terraform
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, jak tworzyć strefy wyładunkowe przy użyciu Terraform.
 author: arnaudlh
@@ -8,16 +8,16 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b540e2f4ea2a9c7f091a5505a19ad61eac05c971
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 51751ab0033505e34c02c17db363bc985b83e44d
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73049772"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058152"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Tworzenie stref wyładunkowych przy użyciu Terraform
 
-Oprócz usług natywnych platformy Azure, klienci i partnerzy często używają Terraform Hashicorp do wdrażania stref wypełniania. W tej sekcji opisano sposób użycia prototypowej strefy docelowej do wdrożenia podstawowych możliwości rejestrowania, ewidencjonowania aktywności i zabezpieczeń dla subskrypcji platformy Azure.
+Platforma Azure zapewnia natywne usługi do wdrażania stref wyładunkowej. Inne narzędzia innych firm mogą również pomóc w tym wysiłku. Jednym z tych narzędzi, które klienci i partnerzy często używają stref umieszczania wdrażania, jest Hashicorp Terraform. W tej sekcji przedstawiono sposób użycia prototypowej strefy docelowej do wdrożenia podstawowych możliwości rejestrowania, ewidencjonowania aktywności i zabezpieczeń dla subskrypcji platformy Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Przeznaczenie strefy docelowej
 
