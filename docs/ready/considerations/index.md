@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 775e41b0bc671756f372ed4ce382f1b8c91db6f5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224238"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239799"
 ---
 # <a name="landing-zone-considerations"></a>Zagadnienia dotyczące strefy docelowej
 
@@ -27,10 +27,10 @@ Na tej ilustracji przedstawiono główne kwestie do rozważenia podczas implemen
 
 Wszystkie strefy docelowe zapewniają strukturę dla opcji hostingu. Struktura jest tworzona jawnie za pośrednictwem mechanizmów kontroli ładu lub organicznie przez wdrożenie usług w strefie docelowej. Następujące artykuły mogą pomóc w podjęciu decyzji, które zostaną odzwierciedlone w strategii lub innych skryptach automatyzacji tworzących strefę docelową:
 
-- **[Decyzje dotyczące zasobów obliczeniowych](./compute-decisions.md)** . Dostosuj opcje obliczeniowe do przeznaczenia strefy docelowej, aby zminimalizować złożoność operacyjną. Tę decyzję można wymusić przy użyciu łańcuchów narzędzi automatyzacji, takich jak inicjatywy usługi Azure Policy i strategie strefy docelowej.
-- **[Decyzje dotyczące magazynu](./storage-guidance.md)** . Wybierz odpowiednie rozwiązanie usługi Azure Storage do obsługi wymagań swoich obciążeń.
-- **[Decyzje dotyczące sieci](./network-decisions.md)** . Wybierz usługi, narzędzia i architektury sieciowe, które spełnią wymagania dotyczące obciążeń, ładu i łączności Twojej organizacji.
-- **[Decyzje dotyczące bazy danych](./data-decisions.md)** . Ustal, która technologia baz danych najlepiej odpowiada wymaganiom Twoich obciążeń.
+- **[Decyzje dotyczące zasobów obliczeniowych](./compute-options.md)** . Dostosuj opcje obliczeniowe do przeznaczenia strefy docelowej, aby zminimalizować złożoność operacyjną. Tę decyzję można wymusić przy użyciu łańcuchów narzędzi automatyzacji, takich jak inicjatywy usługi Azure Policy i strategie strefy docelowej.
+- **[Decyzje dotyczące magazynu](./storage-options.md)** . Wybierz odpowiednie rozwiązanie usługi Azure Storage do obsługi wymagań swoich obciążeń.
+- **[Decyzje dotyczące sieci](./networking-options.md)** . Wybierz usługi, narzędzia i architektury sieciowe, które spełnią wymagania dotyczące obciążeń, ładu i łączności Twojej organizacji.
+- **[Decyzje dotyczące bazy danych](./data-options.md)** . Ustal, która technologia baz danych najlepiej odpowiada wymaganiom Twoich obciążeń.
 
 ## <a name="azure-fundamentals"></a>Podstawy platformy Azure
 
@@ -47,6 +47,6 @@ Następujące artykuły mogą pomóc w podjęciu decyzji dotyczących ładu dla 
 
 - **Wymagania związane z kosztami**. Na podstawie motywacji organizacji do wdrożenia chmury i zobowiązania operacyjne względem jej środowiska, może być konieczne wprowadzenie zmian w różnych konfiguracjach zarządzania kosztami dla strefy docelowej.
 - **Decyzje dotyczące monitorowania**. W zależności od wymagań operacyjnych dla strefy docelowej można wdrożyć różne narzędzia do monitorowania. Artykuł na temat decyzji dotyczących monitorowania pomoże określić najbardziej odpowiednie narzędzia do wdrożenia.
-- **Korzystanie z kontroli dostępu na podstawie ról**. [Kontrola dostępu na podstawie ról](../azure-best-practices/roles.md) na platformie Azure (RBAC) oferuje szczegółowe, oparte na grupach zarządzanie dostępem dla zasobów zorganizowanych wokół ról użytkownika.
+- **Korzystanie z kontroli dostępu na podstawie ról**. [Kontrola dostępu na podstawie ról](../considerations/roles.md) na platformie Azure (RBAC) oferuje szczegółowe, oparte na grupach zarządzanie dostępem dla zasobów zorganizowanych wokół ról użytkownika.
 - **Decyzje dotyczące zasad**. [Przykłady strategii platformy Azure](https://docs.microsoft.com/azure/governance/blueprints/samples) zawierają wstępnie utworzone strategie zgodności — każdą ze wstępnie zdefiniowanymi inicjatywami zasad. Decyzje dotyczące zasad ułatwiają wybór najlepszego planu lub inicjatywy zasad na podstawie Twoich wymagań i ograniczeń.
-- **[Uzyskiwanie zgodności w chmurze hybrydowej](../../infrastructure/misc/hybrid-consistency.md)** . Utwórz rozwiązania chmury hybrydowej, które zapewniają organizacji korzyści z innowacji w chmurze przy zachowaniu wielu udogodnień zarządzania w środowisku lokalnym.
+- **[Uzyskiwanie zgodności w chmurze hybrydowej](./hybrid-consistency.md)** . Utwórz rozwiązania chmury hybrydowej, które zapewniają organizacji korzyści z innowacji w chmurze przy zachowaniu wielu udogodnień zarządzania w środowisku lokalnym.

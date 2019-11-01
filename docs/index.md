@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 10/14/2019
-ms.openlocfilehash: 73012184e5eab2592cfbeac1e9b5f294284ae270
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 72a3a5310ae0eaea52cffdec41ea2b1fb6c9a585
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547974"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239563"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Struktura wdrażania chmury firmy Microsoft dla platformy Azure
 
@@ -149,25 +149,6 @@ Administrowanie środowiskiem i obciążeniami.
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Zarządzanie</h3>
 Zarządzanie operacjami w rozwiązaniach hybrydowych i chmurowych.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./organize/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="./_images/caf-organize.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Organizowanie</h3>
-Przygotowywanie ludzi na potrzeby umożliwienia wdrażania chmury i jej obsługi.
                         </div>
                     </div>
                 </div>
