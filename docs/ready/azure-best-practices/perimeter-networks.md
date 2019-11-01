@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 3ac29e353f04370daf36e4c780fde8a14be45a37
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 92aa03c07a6652f15a0400a025b8911a4d0d07dd
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022221"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240174"
 ---
 # <a name="perimeter-networks"></a>Sieci obwodowe
 
@@ -42,9 +42,9 @@ Sieci obwodowe korzystają z następujących funkcji i usług platformy Azure:
 
 Zazwyczaj centralne zespoły IT oraz zespoły ds. bezpieczeństwa są odpowiedzialne za określenie wymagań dotyczących obsługi sieci obwodowych.
 
-![Przykładowa sieć piasty i szprych (typu gwiazda)][7]
+![Przykład topologii sieci gwiazdy i gwiazdy][7]
 
-Na diagramie powyżej przedstawiono przykładową [sieć piasty i szprych](./hub-spoke-network-topology.md), która wdraża wymuszanie dwóch obwodów z dostępem do Internetu i sieci lokalnej. Oba obwody znajdują się w koncentratorze DMZ. W koncentratorze DMZ sieć obwodowa połączona z Internetem może skalować w górę w celu zapewnienia obsługi wielu aplikacji biznesowych (LOB), korzystając z wielu farm zapór aplikacji internetowych oraz wystąpień usługi Azure Firewall, które pomagają chronić sieci wirtualne szprych. Koncentrator umożliwia również w zależności od potrzeb łączność za pośrednictwem sieci VPN lub usługi Azure ExpressRoute.
+Na powyższym diagramie przedstawiono przykładową [topologię sieci Hub i szprych](./hub-spoke-network-topology.md) , która implementuje wymuszanie dwóch obwodów z dostępem do Internetu i sieci lokalnej. Oba obwody znajdują się w koncentratorze DMZ. W koncentratorze DMZ sieć obwodowa połączona z Internetem może skalować w górę w celu zapewnienia obsługi wielu aplikacji biznesowych (LOB), korzystając z wielu farm zapór aplikacji internetowych oraz wystąpień usługi Azure Firewall, które pomagają chronić sieci wirtualne szprych. Koncentrator umożliwia również w zależności od potrzeb łączność za pośrednictwem sieci VPN lub usługi Azure ExpressRoute.
 
 ## <a name="virtual-networks"></a>Sieci wirtualne
 
@@ -54,7 +54,7 @@ Sieci obwodowe są zwykle tworzone przy użyciu [sieci wirtualnej][virtual-netwo
 
 Korzystając z [tras definiowanych przez użytkownika][user-defined-routes], klienci mogą wdrażać zapory, systemy wykrywania nieautoryzowanego dostępu/adresy IP oraz inne urządzenia wirtualne. Klienci mogą następnie kierować ruch sieciowy przez te urządzenia zabezpieczające w celu wymuszania zasad granicy zabezpieczeń, inspekcji i kontroli. Trasy definiowane przez użytkownika mogą być tworzone w celu zagwarantowania, że ruch będzie przechodzić przez określone niestandardowe maszyny wirtualne, urządzenia WUS i moduły równoważenia obciążenia.
 
-W przykładzie sieci piasty i szprych zagwarantowanie, że ruch generowany przez maszyny wirtualne znajdujące się w szprysze przechodzi przez poprawne urządzenia wirtualne w koncentratorze, wymaga trasy definiowanej przez użytkownika definiowanej w podsieciach szprychy. Ta trasa ustawia adres IP frontonu wewnętrznego modułu równoważenia obciążenia w następnym przeskoku. Wewnętrzny moduł równoważenia obciążenia rozkłada ruch wewnętrzny na urządzenia wirtualne (pula wewnętrznej bazy danych modułu równoważenia obciążenia).
+W przykładzie sieci typu Hub i szprych gwarantujemy, że ruch generowany przez maszyny wirtualne znajdujące się w szprychie przechodzi przez poprawne urządzenia wirtualne w centrum, wymaga zdefiniowanej przez użytkownika trasy zdefiniowanej w podsieciach szprychy. Ta trasa ustawia adres IP frontonu wewnętrznego modułu równoważenia obciążenia w następnym przeskoku. Wewnętrzny moduł równoważenia obciążenia rozkłada ruch wewnętrzny na urządzenia wirtualne (pula wewnętrznej bazy danych modułu równoważenia obciążenia).
 
 ## <a name="azure-firewall"></a>Azure Firewall
 
@@ -80,7 +80,7 @@ Użyj jednego zestawu wystąpień usługi Azure Firewall (lub urządzeń WUS) dl
 
 Usługa Azure Load Balancer może również sondować kondycję różnych wystąpień serwera. Jeśli wystąpienie nie zareaguje na sondę, moduł równoważenia obciążenia przestaje wysyłać ruch do wystąpienia o złej kondycji.
 
-Przykładem użycia sieci piasty i szprych (topologii gwiazdy) może być wdrożenie zewnętrznego modułu równoważenia obciążenia zarówno na piaście, jak i na szprychach. Na piaście moduł równoważenia obciążenia skutecznie kieruje ruch do usług na szprychach. W szprychach moduły równoważenia obciążenia zarządzają ruchem aplikacji.
+Przykładem użycia topologii sieci gwiazdy i satelity jest wdrożenie zewnętrznego modułu równoważenia obciążenia zarówno w centrum, jak i szprych. Na piaście moduł równoważenia obciążenia skutecznie kieruje ruch do usług na szprychach. W szprychach moduły równoważenia obciążenia zarządzają ruchem aplikacji.
 
 ## <a name="azure-front-door-service"></a>Azure Front Door Service
 
@@ -116,7 +116,7 @@ Dane telemetryczne w czasie rzeczywistym są dostępne w widokach usługi Azure 
 [3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Szprycha do szprychy"
 [4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "Diagram poziomu bloku sieci piasty i szprych"
 [5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "Użytkownicy, grupy, subskrypcje i projekty"
-[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Ogólny diagram infrastruktury"
+[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Diagram infrastruktury wysokiego poziomu"
 [7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "Diagram infrastruktury wysokiego poziomu"
 [8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "Wirtualne sieci równorzędne i sieci obwodowe"
 [9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "Diagram wysokiego poziomu na potrzeby monitorowania"

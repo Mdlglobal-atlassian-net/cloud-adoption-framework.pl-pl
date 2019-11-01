@@ -1,5 +1,5 @@
 ---
-title: Ponowne hostowanie aplikacji przez migrowanie jej na maszyny wirtualne platformy Azure i do zawsze włączonej grupy dostępności programu SQL Server
+title: Hostowanie aplikacji przez Migrowanie jej do maszyn wirtualnych platformy Azure i zawsze dostępnych grup dostępności SQL Server
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, jak firma Contoso przeprowadza ponowne hostowanie lokalnej aplikacji przez migrowanie jej na maszyny wirtualne platformy Azure i do zawsze włączonych grup dostępności programu SQL Server.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 1292eeec6559fc6caa6cd6ff265a37147cf0b887
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 3f80454b864ae89f15a3be6d736192545683a0ed
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058651"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239270"
 ---
-# <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Ponowne hostowanie aplikacji lokalizacji na maszynach wirtualnych platformy Azure i w zawsze włączonej grupie dostępności programu SQL Server
+# <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure i zawsze włączone grupy dostępności SQL Server
 
 W tym artykule pokazano, jak fikcyjna firma Contoso ponownie hostuje dwuwarstwową aplikację .NET systemu Windows uruchomioną na maszynach wirtualnych VMware w ramach migracji do platformy Azure. Firma Contoso migruje maszynę wirtualną frontonu aplikacji do maszyny wirtualnej platformy Azure oraz bazę danych aplikacji do maszyny wirtualnej usługi Azure SQL Server działającej w klastrze trybu failover systemu Windows Server z zawsze włączonymi grupami dostępności programu SQL Server.
 
@@ -141,7 +141,7 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 > - **Krok 5: Przygotowanie lokalnego programu VMware do Site Recovery.** Przygotowywanie kont do odnajdywania maszyn wirtualnych i instalacji agenta. Przygotowywanie lokalnych maszyn wirtualnych, aby użytkownicy mogli łączyć się z maszynami wirtualnymi platformy Azure po migracji.
 > - **Krok 6. replikowanie maszyn wirtualnych.** Włączanie replikacji maszyny wirtualnej do platformie Azure.
 > - **Krok 7. Instalowanie systemu DMA.** Pobieranie i instalowanie narzędzia Data Migration Assistant.
-> - **Krok 7. Migrowanie bazy danych za pomocą DMA.** Migrowanie bazy danych na platformę Azure.
+> - **Krok 8. Migrowanie bazy danych za pomocą DMA.** Migrowanie bazy danych na platformę Azure.
 > - **Krok 9. Ochrona bazy danych programu.** Tworzenie zawsze dostępnej grupy dostępności dla klastra.
 > - **Krok 10. Migrowanie maszyny wirtualnej aplikacji sieci Web.** Uruchom testowanie trybu failover, aby upewnić się, że wszystko działa zgodnie z oczekiwaniami. Następnie uruchom pełne przejście do trybu failover na platformie Azure.
 
@@ -224,7 +224,7 @@ Przed skonfigurowaniem klastra administratorzy firmy Contoso tworzą migawkę dy
 
      ![Tworzenie klastra](media/contoso-migration-rehost-vm-sql-ag/create-cluster2.png)
 
-## <a name="configure-the-cloud-witness"></a>Konfigurowanie monitora w chmurze
+### <a name="configure-the-cloud-witness"></a>Konfigurowanie monitora w chmurze
 
 1. Administratorzy firmy Contoso konfigurują monitor w chmurze za pomocą **kreatora konfiguracji kworum** w Menedżerze klastra trybu failover.
 2. W kreatorze wybierają opcję utworzenia monitora w chmurze na koncie magazynu.
@@ -534,7 +534,7 @@ Administratorzy firmy Contoso będą migrować bazę danych SmartHotel360 do mas
 
 Narzędzie DMA nawiązuje połączenie z lokalną maszyną wirtualną z programem SQL Server przy użyciu połączenia sieci VPN typu lokacja-lokacja między centrum danych firmy Contoso i platformą Azure, a następnie migruje bazę danych.
 
-## <a name="step-7-protect-the-database-with-always-on"></a>Krok 7. Ochrona bazy danych zawsze włączona
+## <a name="step-9-protect-the-database-with-always-on"></a>Krok 9. Ochrona bazy danych zawsze włączona
 
 W przypadku bazy danych aplikacji działającej na maszynie wirtualnej **SQLAOG1** administratorzy firmy Contoso mogą teraz chronić ją przy użyciu zawsze włączonych grup dostępności. Konfigurują rozwiązanie Zawsze włączone przy użyciu programu SQL Management Studio, a następnie przypisują odbiornik przy użyciu klastrowania systemu Windows.
 
@@ -581,7 +581,7 @@ Po skonfigurowaniu wszystkich elementów firma Contoso ma teraz działającą gr
 - Ręcznie [skonfiguruj klaster tak, aby używał adresu IP modułu równoważenia obciążenia](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address).
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2) na temat tworzenia i używania sygnatur dostępu współdzielonego.
 
-## <a name="step-8-migrate-the-vm-with-site-recovery"></a>Krok 8. Migrowanie maszyny wirtualnej za pomocą Site Recovery
+## <a name="step-10-migrate-the-vm-with-site-recovery"></a>Krok 10. Migrowanie maszyny wirtualnej za pomocą Site Recovery
 
 Administratorzy firmy Contoso uruchamiają szybki test przejścia do trybu failover, a następnie przeprowadzają migrację maszyny wirtualnej.
 
@@ -635,7 +635,7 @@ W ostatnim kroku procesu migracji administratorzy firmy Contoso aktualizują par
 - [Dowiedz się](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans), jak utworzyć plan odzyskiwania.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) na temat przechodzenia do trybu failover na platformie Azure.
 
-## <a name="clean-up-after-migration"></a>Czyszczenie zasobów po migracji
+### <a name="clean-up-after-migration"></a>Czyszczenie zasobów po migracji
 
 Po migracji aplikacja SmartHotel360 działa na maszynie wirtualnej platformy Azure, a baza danych SmartHotel360 znajduje się w klastrze usług SQL Azure.
 
@@ -647,7 +647,7 @@ Teraz firma Contoso musi wykonać następujące kroki dotyczące czyszczenia:
 - Przegląd wszystkich zasobów korzystających z zlikwidowanych maszyn wirtualnych i zaktualizowanie wszystkich ustawień lub dokumentów w celu uwzględnienia nowej konfiguracji.
 - Dodanie dwóch nowych maszyn wirtualnych (SQLAOG1 i SQLAOG2) do systemów monitorowania produkcji.
 
-## <a name="review-the-deployment"></a>Przegląd wdrożenia
+### <a name="review-the-deployment"></a>Przegląd wdrożenia
 
 Po migracji zasobów na platformę Azure firma Contoso musi w pełni zoperacjonalizować i zabezpieczyć nową infrastrukturę.
 
@@ -663,11 +663,11 @@ Aby uzyskać więcej informacji, zobacz [najlepsze rozwiązania w zakresie zabez
 
 ## <a name="bcdr"></a>Zapewnienie ciągłości działania i odzyskiwanie po awarii
 
- W celu zapewnienia ciągłości działania i odzyskiwania po awarii (BCDR, Business Continuity and Disaster Recovery) firma Contoso podejmuje następujące działania:
+W celu zapewnienia ciągłości działania i odzyskiwania po awarii (BCDR, Business Continuity and Disaster Recovery) firma Contoso podejmuje następujące działania:
 
-- Zachowaj bezpieczeństwo danych: Firma Contoso tworzy kopie zapasowe danych na maszynach wirtualnych WEBVM, SQLAOG1 i SQLAOG2 za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- Aby zapewnić bezpieczeństwo danych, firma Contoso tworzy kopie zapasowe danych na maszynach wirtualnych WEBVM, SQLAOG1 i SQLAOG2 za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
 - Firma Contoso sprawdza również, jak używać usługi Azure Storage do tworzenia kopii zapasowych programu SQL Server bezpośrednio do magazynu obiektów blob. [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore).
-- Przechowuj aplikacje i uruchamiaj je: contoso replikuje maszyny wirtualne aplikacji na platformie Azure do regionu pomocniczego za pomocą Site Recovery. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
+- Aby zachować działanie aplikacji, firma Contoso replikuje maszyny wirtualne aplikacji na platformie Azure do regionu pomocniczego za pomocą Site Recovery. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licencjonowanie i optymalizacja kosztów
 

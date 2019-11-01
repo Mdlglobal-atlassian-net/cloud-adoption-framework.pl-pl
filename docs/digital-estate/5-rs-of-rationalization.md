@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 91ea4b076740bb745a32f2197d9ddc14970d75f0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223867"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238800"
 ---
 # <a name="cloud-rationalization"></a>Racjonalizacja chmury
 
@@ -24,11 +24,11 @@ Racjonalizacja chmury to proces oceniania zasobów w celu ustalenia najlepszego 
 
 "Pięć RS racjonalizacji" wymienione w tym artykule jest świetnym sposobem na oznaczenie potencjalnego przyszłego stanu wszelkich obciążeń, które są uważane za kandydata w chmurze. Jednak ten proces etykietowania powinien być umieszczony w odpowiednim kontekście przed podjęciem próby racjonalizacji środowiska. Aby zapewnić ten kontekst, przejrzyj następujący mitów:
 
-- **Omówienia W ten sposób można łatwo podejmować decyzje o racjonalizacji.** Dokładne racjonalizacja wymaga głębokiej znajomości obciążeń i skojarzonych zasobów (aplikacji, maszyn wirtualnych i danych). Najważniejsze decyzje podejmowane są z dokładnością. Zalecamy korzystanie z [procesu racjonalizacji przyrostowej](./rationalize.md#incremental-rationalization).
+- **Omówienia: łatwo jest szybko podejmować decyzje o racjonalizacji w procesie.** Dokładne racjonalizacja wymaga głębokiej znajomości obciążeń i skojarzonych zasobów (aplikacji, maszyn wirtualnych i danych). Najważniejsze decyzje podejmowane są z dokładnością. Zalecamy korzystanie z [procesu racjonalizacji przyrostowej](./rationalize.md#incremental-rationalization).
 
-- **Omówienia Wdrażanie w chmurze musi oczekiwać na uzasadnienie wszystkich obciążeń.** Racjonalizacja całego portfolio IT lub nawet jednego centrum danych może opóźnić realizację wartości biznesowej według miesięcy lub nawet lat. W miarę możliwości należy unikać pełnej racjonalizacji. Zamiast tego należy użyć [mocy 10 podejścia do wydania planowania](./rationalize.md#release-planning) , aby podejmować odpowiednie decyzje dotyczące kolejnych 10 obciążeń, które są styczeń na potrzeby wdrażania w chmurze.
+- **Omówienia: wdrażanie w chmurze musi oczekiwać na uzasadnienie wszystkich obciążeń.** Racjonalizacja całego portfolio IT lub nawet jednego centrum danych może opóźnić realizację wartości biznesowej według miesięcy lub nawet lat. W miarę możliwości należy unikać pełnej racjonalizacji. Zamiast tego należy użyć [mocy 10 podejścia do wydania planowania](./rationalize.md#release-planning) , aby podejmować odpowiednie decyzje dotyczące kolejnych 10 obciążeń, które są styczeń na potrzeby wdrażania w chmurze.
 
-- **Omówienia Uzasadnienie biznesowe musi oczekiwać na uzasadnienie wszystkich obciążeń.** Aby opracować uzasadnienie biznesowe dla wysiłku związanego z wdrażaniem w chmurze, należy wprowadzić kilka podstawowych założeń na poziomie portfela. Gdy motywacje są wyrównane do innowacyjności, założono, że architektura zostanie wdrożona. Gdy motywacje są wyrównane do migracji, założono, że rehosty. Te założenia mogą przyspieszyć proces uzasadnienia biznesowego. Założenia są następnie zakwestionowane i budżety są udoskonalane w fazie oceny poszczególnych cykli wdrażania obciążeń.
+- **Omówienia: uzasadnienie biznesowe musi oczekiwać na uzasadnienie wszystkich obciążeń.** Aby opracować uzasadnienie biznesowe dla wysiłku związanego z wdrażaniem w chmurze, należy wprowadzić kilka podstawowych założeń na poziomie portfela. Gdy motywacje są wyrównane do innowacyjności, założono, że architektura zostanie wdrożona. Gdy motywacje są wyrównane do migracji, założono, że rehosty. Te założenia mogą przyspieszyć proces uzasadnienia biznesowego. Założenia są następnie zakwestionowane i budżety są udoskonalane w fazie oceny poszczególnych cykli wdrażania obciążeń.
 
 Zapoznaj się z poniższą piątą z pięciu usprawnień, aby zaznajomić się z długoterminowym procesem. Podczas opracowywania planu wdrażania w chmurze wybierz opcję, która najlepiej odpowiada Twoim potrzebom, rezultatom biznesowym i bieżącemu środowisku stanu. Celem na potrzeby racjonalizacji cyfrowej jest ustawienie linii bazowej, a nie podniesienia poziomu każdego obciążenia.
 
@@ -38,7 +38,7 @@ Pięć z pięciu usprawnień, które są wymienione w tym miejscu, opisują najb
 
 ## <a name="rehost"></a>Ponowne hostowanie
 
-Również w przypadku migracji "wind i Shift" przenoszone jest bieżący zasób stanu do wybranego dostawcy chmury z minimalną zmianą ogólnej architektury.
+Zgodnie z potrzebami migracji przenoszonych _i przenoszonych_ na przechodzenie przenoszone jest bieżący zasób stanu do wybranego dostawcy chmury z minimalnymi zmianami ogólnej architektury.
 
 Typowe sterowniki mogą obejmować:
 
@@ -111,9 +111,9 @@ Czynniki analizy jakościowej:
 - Koszty operacyjne
 - Potencjalni pętle opinii i DevOps inwestycje.
 
-## <a name="rebuild"></a>Kompiluj ponownie
+## <a name="rebuild"></a>Ponowne kompilowanie
 
-W niektórych scenariuszach różnica, którą należy przezwyciężyć w celu przeniesienia aplikacji, może być zbyt duża, aby uzasadnić dalsze inwestycje. Jest to szczególnie ważne w przypadku aplikacji, które wcześniej spełniały potrzeby biznesowe, ale są teraz nieobsługiwane lub nieprawidłowo wyrównane z bieżącymi procesami biznesowymi. W takim przypadku tworzony jest nowy podstawowy kod, który będzie wyrównany z podejściem natywnym w [chmurze](https://azure.microsoft.com/overview/cloudnative) .
+W niektórych scenariuszach różnica, którą należy przezwyciężyć w celu przeniesienia aplikacji, może być zbyt duża, aby uzasadnić dalsze inwestycje. Jest to szczególnie ważne w przypadku aplikacji, które wcześniej spełniały potrzeby biznesowe, ale są teraz nieobsługiwane lub nieprawidłowo wyrównane z bieżącymi procesami biznesowymi. W takim przypadku tworzony jest nowy podstawowy kod, który będzie wyrównany z podejściem [natywnym w chmurze](https://azure.microsoft.com/overview/cloudnative) .
 
 Typowe sterowniki mogą obejmować:
 

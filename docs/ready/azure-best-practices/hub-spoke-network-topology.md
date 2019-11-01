@@ -1,7 +1,7 @@
 ---
-title: Topologia sieci piasty i szprych
+title: Topologia sieci gwiazdy i szprych
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Topologia sieci piasty i szprych
+description: Poznaj topologie sieci gwiazdy i gwiazdy.
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -11,14 +11,14 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: fcbcda63ff080de234075f0a8784731e591ca0f3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 4bd368bacd68a44d0b825eb0e2ad0b91b07b3b48
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549016"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239926"
 ---
-# <a name="hub-and-spoke-network-topology"></a>Topologia sieci piasty i szprych
+# <a name="hub-and-spoke-network-topology"></a>Topologia sieci gwiazdy i szprych
 
 *Piasta i szprychy* to model sieci umożliwiający bardziej efektywne zarządzanie typowymi wymaganiami dotyczącymi komunikacji i zabezpieczeń. Pomaga również uniknąć ograniczeń subskrypcji platformy Azure. Ten model dotyczy następujących kwestii:
 
@@ -26,21 +26,21 @@ ms.locfileid: "72549016"
 - **Pokonywanie ograniczeń subskrypcji**. Duże obciążenia oparte na chmurze mogą wymagać użycia większej ilości zasobów, niż jest to dozwolone w pojedynczej subskrypcji platformy Azure. Komunikacja równorzędna sieci wirtualnych obciążenia z różnych subskrypcji do centrum może pokonać te ograniczenia. Aby uzyskać więcej informacji, zobacz [limity subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 - **Separacja problemów**. Poszczególne obciążenia można wdrożyć między centralnymi zespołami IT i zespołami obciążeń.
 
-Dodatkowa struktura i możliwości oferowane przez ten model mogą nie przynieść korzyści mniejszym majątkom w chmurze. Jednak w przypadku większych nakładów pracy związanych z wdrożeniem chmury warto rozważyć implementację architektury sieciowej typu piasta i szprychy, jeśli występują problemy wymienione wcześniej.
+Dodatkowa struktura i możliwości oferowane przez ten model mogą nie przynieść korzyści mniejszym majątkom w chmurze. Jednak większe działania związane z wdrażaniem w chmurze powinny uwzględniać implementację architektury sieci typu Hub i szprychy, jeśli mają one jakiekolwiek problemy wymienione wcześniej.
 
 > [!NOTE]
-> Strona Architektury referencyjne platformy Azure zawiera przykładowe szablony, których można użyć jako podstawy do zaimplementowania własnych sieci piasty i szprych:
+> Lokacja architektury referencyjnej platformy Azure zawiera przykładowe szablony, których można użyć jako podstawy do implementowania własnych sieci Hub i szprych:
 >
-> - [Implementowanie topologii sieci piasty i szprych na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-> - [Implementowanie topologii sieci piasty i szprych za pomocą usług udostępnionych na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+> - [Implementowanie topologii sieci gwiazdy i gwiazdy na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+> - [Implementowanie topologii sieci gwiazdy i gwiazdy przy użyciu usług udostępnionych na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
 ## <a name="overview"></a>Przegląd
 
-![Przykłady topologii sieci piasty i szprych][1]
+![Przykłady topologii sieci gwiazdy i gwiazdy][1]
 
-Jak pokazano na diagramie, platforma Azure obsługuje dwa typy projektów piasty i szprych. Obsługuje ona komunikację, zasoby udostępnione i scentralizowane zasady zabezpieczeń („centrum sieci wirtualnej” na diagramie) lub typ wirtualnej sieci WAN („wirtualna sieć WAN” na diagramie) na potrzeby wielkoskalowej komunikacji między oddziałami lub między oddziałem i platformą Azure.
+Jak pokazano na diagramie, platforma Azure obsługuje dwa typy centrów i satelitów. Obsługuje ona komunikację, zasoby udostępnione i scentralizowane zasady zabezpieczeń („centrum sieci wirtualnej” na diagramie) lub typ wirtualnej sieci WAN („wirtualna sieć WAN” na diagramie) na potrzeby wielkoskalowej komunikacji między oddziałami lub między oddziałem i platformą Azure.
 
-Piasta to centralna strefa sieciowa, która kontroluje i sprawdza ruch przychodzący i wychodzący między strefami: Internet, środowisko lokalne i szprychy. Topologia piasty i szprych zapewnia działowi IT efektywną metodę wymuszania zasad zabezpieczeń w lokalizacji centralnej. Minimalizuje również ryzyko błędnej konfiguracji i ekspozycji.
+Piasta to centralna strefa sieciowa, która kontroluje i sprawdza ruch przychodzący i wychodzący między strefami: Internet, środowisko lokalne i szprychy. Topologia gwiazdy umożliwia działowi IT efektywną metodę wymuszania zasad zabezpieczeń w centralnej lokalizacji. Minimalizuje również ryzyko błędnej konfiguracji i ekspozycji.
 
 Piasta zawiera często wspólne składniki usługi używane przez szprychy. Poniżej przedstawiono typowe usługi centralne:
 
@@ -61,7 +61,7 @@ Szprychy mogą również dzielić różne grupy w obrębie organizacji i umożli
 
 Na platformie Azure każdy składnik, niezależnie od typu, jest wdrażany w ramach subskrypcji platformy Azure. Izolacja składników platformy Azure w różnych subskrypcjach platformy Azure może spełniać różne wymagania biznesowe, takie jak konfigurowanie różnych poziomów dostępu i autoryzacji.
 
-Pojedyncza implementacja piasty i szprych może być skalowana w górę do dużej liczby szprych. Jednak podobnie jak w przypadku każdego systemu informatycznego, istnieją ograniczenia platformy. Wdrożenie piasty jest powiązane z określoną subskrypcją platformy Azure, która ma ograniczenia i limity. (Przykładem może być maksymalna liczba komunikacji równorzędnych sieci wirtualnych. Aby uzyskać szczegółowe informacje, zobacz [limity subskrypcji i usług platformy Azure, przydziały i ograniczenia] [limity].
+Pojedyncze implementacje Hub i szprychy mogą być skalowane do dużej liczby szprych. Jednak podobnie jak w przypadku każdego systemu informatycznego, istnieją ograniczenia platformy. Wdrożenie piasty jest powiązane z określoną subskrypcją platformy Azure, która ma ograniczenia i limity. (Przykładem może być maksymalna liczba komunikacji równorzędnych sieci wirtualnych. Aby uzyskać szczegółowe informacje, zobacz [limity subskrypcji i usług platformy Azure, przydziały i ograniczenia] [limity].
 
 W przypadkach, gdy ograniczenia mogą stanowić problem, można skalować w górę architekturę, rozszerzając model z jednej piasty i szprych do klastra piast i szprych. Możesz połączyć wiele piast w jednym lub większej liczbie regionów świadczenia usługi Azure za pomocą komunikacji równorzędnej sieci wirtualnych, usługi Azure ExpressRoute, wirtualnej sieci WAN lub sieci VPN typu lokacja-lokacja.
 
@@ -79,7 +79,7 @@ Typowym przykładem tego scenariusza jest przypadek, w którym serwery przetwarz
 
 ![Szprychy połączone ze sobą i z piastą][3]
 
-Szprychy mogą być również połączone ze szprychą, która pełni rolę piasty. Takie podejście tworzy hierarchię dwupoziomową: szprycha na wyższym poziomie (poziom 0) staje się piastą dla małych szprych (poziom 1) w hierarchii. Szprychy w implementacji piasty i szprych są wymagane do przekazywania ruchu do piasty centralnej, aby ruch mógł zostać przesłany do miejsca docelowego w sieci lokalnej lub w publicznym Internecie. Architektura z dwoma poziomami piast obejmuje złożony routing, który eliminuje zalety prostej relacji piasty i szprych.
+Szprychy mogą być również połączone ze szprychą, która pełni rolę piasty. Takie podejście tworzy hierarchię dwupoziomową: szprycha na wyższym poziomie (poziom 0) staje się piastą dla małych szprych (poziom 1) w hierarchii. Szprychy wdrożenia gwiazdy i gwiazdy są wymagane do przekazywania ruchu do centralnego koncentratora, dzięki czemu ruch może być przesyłany do miejsca docelowego w sieci lokalnej lub w publicznym Internecie. Architektura z dwoma poziomami koncentratorów wprowadza skomplikowany Routing, który usuwa zalety prostej relacji gwiazdy i satelity.
 
 <!-- images -->
 

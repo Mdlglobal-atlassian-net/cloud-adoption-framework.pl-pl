@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 14946c48e69471f72d4979d18f39e43e6ce374e1
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548314"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239937"
 ---
 # <a name="decisions-that-affect-migrations"></a>Decyzje, które mają wpływ na migracje
 
@@ -33,7 +33,7 @@ To wymaganie wstępne nie jest zaleceniem, aby wybrać jeden z tych trzech celó
 
 ### <a name="acting-on-migration-outcomes"></a>Działania w kierunku osiągnięcia wyników migracji
 
-Jeśli wyniki operacyjne mają najwyższy priorytet na liście, ta sekcja struktury wdrażania chmury będzie odpowiednia dla Twojego zespołu. W tej sekcji założono, że konieczna jest priorytetyzacja szybkości i oszczędności kosztów jako kluczowych wskaźników wydajności (KPI), co sprawia, że model migracji do wdrożenia jest zgodny z wynikami. Model skoncentrowany na migracji jest w dużym stopniu oparty na migracji metodą „lift-and-shift” zasobów infrastruktury jako usługi (IaaS) w celu usunięcia zasobów z centrum danych i uzyskania oszczędności kosztów. W takim modelu może mieć miejsce modernizacja, ale jest ona drugorzędnym celem, dopóki nie zostanie zrealizowana główna misja migracji.
+Jeśli wyniki operacyjne mają najwyższy priorytet na liście, ta sekcja struktury wdrażania chmury będzie odpowiednia dla Twojego zespołu. W tej sekcji założono, że konieczna jest priorytetyzacja szybkości i oszczędności kosztów jako kluczowych wskaźników wydajności (KPI), co sprawia, że model migracji do wdrożenia jest zgodny z wynikami. Model skoncentrowany na migracji jest silnie predykatowo związany z przenoszeniem i przenoszeniem zasobów infrastruktury jako usługi (IaaS) w celu wyczerpywania centrum danych i tworzenia oszczędności kosztów. W takim modelu może mieć miejsce modernizacja, ale jest ona drugorzędnym celem, dopóki nie zostanie zrealizowana główna misja migracji.
 
 ### <a name="acting-on-application-innovations"></a>Działania w kierunku innowacji dotyczących aplikacji
 

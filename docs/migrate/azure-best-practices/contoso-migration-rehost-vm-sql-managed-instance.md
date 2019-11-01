@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 574fa1ede2d7ddeb0fe41f05c8519e9b16ba6c51
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 15bce39a8ffee6c3f35a8de3d205f863374ae3ff
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058497"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239172"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ponowne hostowanie aplikacji lokalnej na maszynie wirtualnej platformy Azure i wystąpieniu zarządzanym usługi SQL Database
 
@@ -78,7 +78,7 @@ W ramach procesu projektowania rozwiązania firma Contoso wykonała porównanie 
 
 - Wystąpienie zarządzane ma na celu zapewnienie niemal 100% zgodności z najnowszą wersją lokalnego programu SQL Server. Firma Microsoft zaleca wystąpienie zarządzane dla klientów z programem SQL Server działającym lokalnie lub na maszynie wirtualnej IaaS, którzy chcą zmigrować swoje aplikacje do w pełni zarządzanej usługi przy minimalnych zmianach projektowych.
 - Firma Contoso planuje migrację dużej liczby aplikacji z lokalizacji lokalnej do modelu IaaS. Wiele z nich jest udostępnianych przez niezależnych dostawców oprogramowania. Firma Contoso wie, że korzystanie z wystąpienia zarządzanego pomoże zapewnić zgodność bazy danych dla tych aplikacji, ale nie zapewni tego usługa SQL Database, która może nie być obsługiwana.
-- Firma Contoso może po prostu wykonać migrację do wystąpienia zarządzanego metodą „lift and shift” przy użyciu w pełni zautomatyzowanej usługi Azure Database Migration Service. Firma Contoso może w przyszłości ponownie wykorzystać tę usługę do migracji baz danych.
+- Firma Contoso może po prostu przetworzyć dźwig i przenieść migrację do wystąpienia zarządzanego przy użyciu w pełni zautomatyzowanego Azure Database Migration Service. Firma Contoso może w przyszłości ponownie wykorzystać tę usługę do migracji baz danych.
 - Wystąpienie zarządzane SQL obsługuje program SQL Server Agent, co jest ważną kwestią w przypadku aplikacji SmartHotel360. Firma Contoso potrzebuje tej zgodności, ponieważ w przeciwnym razie będzie musiała ponownie zaprojektować plany konserwacji wymagane przez aplikację.
 - Dzięki programowi Software Assurance firma Contoso może wymienić swoje istniejące licencje na obniżone stawki na wystąpienie zarządzane usługi SQL Database, używając korzyści użycia hybrydowego platformy Azure dla programu SQL Server. Dzięki temu firma Contoso może zaoszczędzić do 30% na wystąpieniu zarządzanym.
 - Wystąpienie zarządzane SQL jest w pełni zawarte w sieci wirtualnej, dzięki czemu zapewnia większą izolację i bezpieczeństwo danych firmy Contoso. Firma Contoso może korzystać z zalet chmury publicznej, jednocześnie zapewniając izolację środowiska od publicznego Internetu.
@@ -103,7 +103,7 @@ Firma Contoso przeprowadzi migrację warstw internetowych i danych aplikacji Sma
 
 1. Firma Contoso ma już swoją infrastrukturę platformy Azure, więc w tym scenariuszu wystarczy dodać kilka określonych składników platformy Azure.
 2. Warstwa danych zostanie zmigrowana przy użyciu usługi Azure Database Migration Service. Ta usługa nawiązuje połączenie z lokalną maszyną wirtualną z programem SQL Server przy użyciu połączenia sieci VPN typu lokacja-lokacja między centrum danych firmy Contoso i platformą Azure. Następnie usługa migruje bazę danych.
-3. Warstwa internetowa zostanie zmigrowana za pomocą migracji „lift and shift” przy użyciu usługi Site Recovery. Proces ten obejmuje przygotowanie lokalnego środowiska VMware, skonfigurowanie i włączenie replikacji oraz zmigrowanie maszyn wirtualnych przez przełączenie ich w tryb failover na platformie Azure.
+3. Warstwa sieci Web zostanie zmigrowana przy użyciu podnośnika i migracji przesuniętej przy użyciu Site Recovery. Proces ten obejmuje przygotowanie lokalnego środowiska VMware, skonfigurowanie i włączenie replikacji oraz zmigrowanie maszyn wirtualnych przez przełączenie ich w tryb failover na platformie Azure.
 
      ![Architektura migracji](media/contoso-migration-rehost-vm-sql-managed-instance/migration-architecture.png)
 

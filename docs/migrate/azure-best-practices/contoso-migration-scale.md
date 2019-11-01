@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1e8b42170a4db025087acdabba14544cea9c8194
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 16289952e74f81c885f15d69436c17e9d012d80a
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548125"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238922"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skalowanie migracji na platformę Azure
 
@@ -196,7 +196,7 @@ Istnieją cztery szerokie strategie migracji, które firma Contoso może rozważ
 
 **Strategia** | **Szczegóły** | **Użycie**
 --- | --- | ---
-**Ponowne hostowanie** | Ta opcja, często nazywana migrowaniem metodą „lift-and-shift”, nie wymaga pisania kodu i umożliwia szybkie migrowanie istniejących aplikacji na platformę Azure.<br/><br/> Aplikacje są jest migrowane bez zmian, co umożliwia wykorzystanie zalet chmury bez ryzyka i kosztów związanych z wprowadzaniem zmian w kodzie. | Firma Contoso może ponownie hostować mniej strategiczne aplikacje bez konieczności wprowadzania zmian w kodzie.
+**Ponowne hostowanie** | Jest to opcja bez kodu, która jest często określana jako przechodzenie _i_ przenoszenie do platformy Azure.<br/><br/> Aplikacje są jest migrowane bez zmian, co umożliwia wykorzystanie zalet chmury bez ryzyka i kosztów związanych z wprowadzaniem zmian w kodzie. | Firma Contoso może ponownie hostować mniej strategiczne aplikacje bez konieczności wprowadzania zmian w kodzie.
 **Refaktoryzacja** | Ta strategia, określana również jako „ponowne pakowanie”, wymaga minimalnych zmian kodu lub konfiguracji aplikacji potrzebnych, aby połączyć aplikację z usługą Azure PaaS i zapewnić lepsze wykorzystanie możliwości chmury. | Firma Contoso może poddać refaktoryzacji aplikacje strategiczne, aby zachować tę samą podstawową funkcjonalność, ale przenieść ich działanie na platformę Azure, taką jak Azure App Service.<br/><br/> Wymaga to minimalnych zmian w kodzie.<br/><br/> Z drugiej strony firma Contoso będzie musiała zachować platformę maszyny wirtualnej, ponieważ nie będzie ona zarządzana przez firmę Microsoft.
 **Zmiana architektury** | Ta strategia modyfikuje lub rozszerza bazę kodu aplikacji w celu optymalizacji architektury aplikacji na potrzeby możliwości i skalowania chmury.<br/><br/> Aplikacja jest modernizowana w celu zapewnienia odpornej, wysoce skalowalnej architektury z możliwością niezależnego wdrażania.<br/><br/> Usługi Azure pozwalają przyspieszyć ten proces, bezproblemowo skalować aplikacje i łatwo nimi zarządzać.
 **Ponowne kompilowanie** | Ta strategia polega na ponownym kompilowaniu aplikacji od podstaw, z wykorzystaniem natywnych technologii chmury.<br/><br/> Rozwiązanie PaaS platformy Azure zapewnia kompletne środowisko deweloperskie i środowisko wdrażania w chmurze. Eliminuje to pewne wydatki i złożoność licencji na oprogramowanie oraz eliminuje konieczność użycia podstawowej infrastruktury aplikacji, oprogramowania pośredniczącego i innych zasobów. | Firma Contoso może ponownie napisać kod najważniejszych aplikacji od podstaw, aby korzystać z technologii chmurowych, takich jak komputer bezserwerowy lub mikrousługi.<br/><br/> Firma Contoso będzie zarządzać aplikacją i usługami, które opracowuje, a platforma Azure zarządza wszystkim innym.
@@ -223,7 +223,7 @@ Firma Contoso już [ukończyła weryfikację koncepcji](./contoso-migration-reho
 
 ##### <a name="using-site-recovery-at-scale"></a>Korzystanie z usługi Site Recovery na dużą skalę
 
-Firma Contoso planuje uruchamianie wielu migracji metodą „lift-and-shift”. W celu zapewnienia takiego działania usługa Site Recovery będzie przeprowadzać replikację partiami po około 100 maszyn wirtualnych jednocześnie. Aby ustalić, jak to będzie działać, firma Contoso potrzebuje przeprowadzić planowanie wydajności dla proponowanej migracji Site Recovery.
+Firma Contoso planuje przeprowadzić migrację do wielu przesunięć i przesunięcia. W celu zapewnienia takiego działania usługa Site Recovery będzie przeprowadzać replikację partiami po około 100 maszyn wirtualnych jednocześnie. Aby ustalić, jak to będzie działać, firma Contoso potrzebuje przeprowadzić planowanie wydajności dla proponowanej migracji Site Recovery.
 
 - Firma Contoso musi zebrać informacje o rozmiarach ruchu. W szczególności:
   - Firma Contoso musi określić częstotliwość zmian dla maszyn wirtualnych, które mają być replikowane.

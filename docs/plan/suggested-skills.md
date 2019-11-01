@@ -8,18 +8,18 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3caefb507f2348f48d39c055000c3a0250fcc28a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 70308733893ac3a8baf1d910b23c9d9162719b5f
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549068"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240208"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Wprowadzenie do ścieżki gotowości do kwalifikacji
 
 Pracownicy działu IT mogą obawiać się o swoje role i stanowiska, ponieważ realizują one różne umiejętności w zakresie obsługi rozwiązań w chmurze. Pracownicy Agile, którzy eksplorują i znają nowe technologie w chmurze, nie muszą mieć tej obaw. Mogą oni prowadzić do wdrażania usług w chmurze, pomagając organizacji zrozumieć i wdrożyć powiązane zmiany.
 
-![Mapping umiejętności dla ról IT w środowisku hostowanym w chmurze ](../_images/skills-guidance.png)
+![Mapowanie umiejętności do ról IT w środowisku hostowanym w chmurze](../_images/skills-guidance.png)
 *rysunek 1 — Mapowanie umiejętności do ról IT w środowisku hostowanym w chmurze.*
 
 Środowisko wdrażania w chmurze prowadzi dla czytelników przez pełny cykl życia. W tym środowisku czytelnicy otrzymują okazję do tworzenia niezbędnych umiejętności. Aby ułatwić Ci rozpoczęcie pracy z tą podróżą, artykuły z gotowością do kwalifikacji są zawarte w następującym konspekcie w celu ułatwienia dostępu. Każdy z poniższych linków jest mapowany na umiejętności wymagane do pomyślnego osiągnięcia w każdej z tych faz wdrażania.
@@ -37,3 +37,19 @@ Pracownicy działu IT mogą obawiać się o swoje role i stanowiska, ponieważ r
   - **Zarządzanie:** Uzyskaj umiejętności wymagane do zarządzania środowiskiem w chmurze.
 
 Każda z poprzednich ścieżek szkoleniowych udostępnia szanse sprzedaży na wielu typach multimediów, aby zmaksymalizować pozyskiwanie wiedzy.
+
+# <a name="microsoft-learn"></a>Microsoft Learn
+
+Microsoft Learn to nowe podejście do uczenia się. Nie jest łatwo dostępna gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Uzyskaj punkty i poziomy i uzyskaj więcej informacji!
+Poniżej przedstawiono kilka przykładów dostosowanych ścieżek szkoleniowych na Microsoft Learn, które są wyrównane do sekcji plan struktury wdrażanie w chmurze:
+
+[Rozwijanie praktyk DevOps](learn/paths/evolve-your-devops-practices/):D evops to związek ludzi, procesów i produktów w celu zapewnienia ciągłego dostarczania wartości użytkownikom końcowym. Azure DevOps to zestaw usług, które udostępniają narzędzia, które należy wykonać. Za pomocą usługi Azure DevOps można kompilować, testować i wdrażać aplikacje w chmurze lub lokalnie.
+
+[Platforma Azure dla inżyniera danych](learn/paths/azure-for-the-data-engineer/): Dowiedz się, jak świat danych został rozbudowany i jak pojawieniu technologii chmurowych udostępniają nowe możliwości do eksplorowania. Poznasz różne technologie platformy danych, które są dostępne, oraz sposób, w jaki inżynier danych może wykorzystać tę technologię do skorzystania z zalet organizacji.     
+
+Aby odnaleźć dodatkowe ścieżki szkoleniowe, przejrzyj [informacje o katalogu] (/Learn/Browse). Użyj filtru role, aby wyrównać ścieżki szkoleniowe do roli.
+
+
+
+
+

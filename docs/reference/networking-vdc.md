@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cbd72c04c7d938aae41e20fae82a29b731f4b256
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048245"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240083"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Wirtualne centra danych: perspektywa sieci
 
@@ -378,7 +378,7 @@ Ponieważ używa usługi DNS, Traffic Manager jest tylko do użytku z publicznym
 
 ### <a name="summary"></a>Podsumowanie
 
-Wirtualne centrum danych to podejście do migracji centrów danych w celu utworzenia skalowalnej architektury platformy Azure, która maksymalizuje użycie zasobów w chmurze, zmniejsza koszty i upraszcza zarządzanie systemem. Wirtualne centrum danych jest oparte na topologii sieci gwiazdy, zapewniającej wspólne usługi udostępnione w centrum i zezwalającej na określone aplikacje i obciążenia w szprychach. Wirtualne centrum danych jest również zgodne ze strukturą ról firmy, w której różne działy, takie jak centralne IT, DevOps i Operations and Maintenance, działają razem podczas wykonywania ich określonych ról. Wirtualne centrum danych spełnia wymagania dotyczące migracji "wind i Shift", ale zapewnia również wiele zalet w przypadku natywnych wdrożeń w chmurze.
+Wirtualne centrum danych to podejście do migracji centrów danych w celu utworzenia skalowalnej architektury platformy Azure, która maksymalizuje użycie zasobów w chmurze, zmniejsza koszty i upraszcza zarządzanie systemem. Wirtualne centrum danych jest oparte na topologii sieci gwiazdy, zapewniającej wspólne usługi udostępnione w centrum i zezwalającej na określone aplikacje i obciążenia w szprychach. Wirtualne centrum danych jest również zgodne ze strukturą ról firmy, w której różne działy, takie jak centralne IT, DevOps i Operations and Maintenance, działają razem podczas wykonywania ich określonych ról. Wirtualne centrum danych spełnia wymagania związane z przełączaniem i przenoszeniem zmian, ale również ma wiele zalet do natywnych wdrożeń w chmurze.
 
 ## <a name="references"></a>Informacje
 
@@ -388,7 +388,7 @@ W tym dokumencie omówiono następujące funkcje. Postępuj zgodnie z linkami, a
 
 |Funkcje sieciowe|Równoważenie obciążenia|Łączność|
 |-|-|-|
-|[Sieci wirtualne platformy Azure][VNet]</br>[Sieciowe grupy zabezpieczeń][network-security-groups]</br>[Dzienniki sieciowych grup zabezpieczeń][nsg-log]</br>[Trasy zdefiniowane przez użytkownika][user-defined-routes]</br>[Wirtualne urządzenia sieciowe][NVA]</br>[Publiczne adresy IP][PIP]</br>[Azure DDoS][DDoS]</br>[Azure Firewall][AzFW]</br>[System DNS platformy Azure][DNS]|[Moje drzwi platformy Azure][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Application Gateway (P7)][AppGW]</br>[Zapora aplikacji sieci Web] WAF</br>[Azure Traffic Manager][traffic-manager]</br></br></br></br></br> |[Komunikacja równorzędna sieci wirtualnych][VNetPeering]</br>[Wirtualna sieć prywatna][VPN]</br>[Wirtualna sieć WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute bezpośrednie][ExRD]</br></br></br></br></br>
+|[Sieci wirtualne platformy Azure][VNet]</br>[Sieciowe grupy zabezpieczeń][network-security-groups]</br>[Dzienniki sieciowych grup zabezpieczeń][nsg-log]</br>[Trasy zdefiniowane przez użytkownika][user-defined-routes]</br>[Wirtualne urządzenia sieciowe][NVA]</br>[Publiczne adresy IP][PIP]</br>[Azure DDoS][DDoS]</br>[Azure Firewall][AzFW]</br>[System DNS platformy Azure][DNS]|[Azure Front Door][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Application Gateway (P7)][AppGW]</br>[Zapora aplikacji sieci Web] WAF</br>[Azure Traffic Manager][traffic-manager]</br></br></br></br></br> |[Komunikacja równorzędna sieci wirtualnych][VNetPeering]</br>[Wirtualna sieć prywatna][VPN]</br>[Wirtualna sieć WAN][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute bezpośrednie][ExRD]</br></br></br></br></br>
 
 |Tożsamość</br>|Monitorowanie</br>|Najlepsze rozwiązania</br>|
 |-|-|-|

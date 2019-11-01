@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d62b2f5957dc5cee19f462e3c7d74c85672eadfe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 151698c836add7c46c389cc94c76b942e52b0341
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819506"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240248"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Definiowanie architektury obciążeń przed migracją
 
@@ -23,7 +23,7 @@ Ten artykuł rozszerza proces oceny i zawiera przegląd działań związanych z 
 
 Następujące założenia są typowe dla dowolnego procesu migracji:
 
-- **IaaS.** Często zakłada się, że migrowanie obciążeń obejmuje głównie przeniesienie maszyn wirtualnych z fizycznego centrum danych do centrum danych w chmurze za pomocą migracji IaaS, wymagając minimalnej przebudowy lub rekonfiguracji. Ta metoda migracji jest nazywana migracją „lift and shift”. (Wyjątki przedstawiono w dalszej części artykułu).
+- **IaaS.** Często zakłada się, że migrowanie obciążeń obejmuje głównie przeniesienie maszyn wirtualnych z fizycznego centrum danych do centrum danych w chmurze za pomocą migracji IaaS, wymagając minimalnej przebudowy lub rekonfiguracji. Jest to tzw. Migracja _i przesunięcia_ . (Wyjątki przedstawiono w dalszej części artykułu).
 - **Spójność architektury.** Zmiany w architekturze podstawowej podczas migracji znacząco zwiększają złożoność. Debugowanie zmienionego systemu na nowej platformie wprowadza wiele zmiennych, które mogą być trudne do izolowania. Z tego powodu obciążenia powinny być poddawane tylko drobnym zmianom podczas migracji, a wszelkie zmiany powinny być dokładnie przetestowane.
 - **Test wycofania.** Migracje i hosting zasobów wiążą się z wydatkami operacyjnymi i potencjalnymi nakładami inwestycyjnymi. Przyjmuje się założenie, że wszystkie migrowane obciążenia zostały sprawdzone w celu zweryfikowania ciągłego użycia. Wycofanie nieużywanych zasobów zapewnia natychmiastowe oszczędności.
 - **Zmiana rozmiaru zasobów.** Zakłada się, że niewiele zasobów lokalnych w pełni wykorzystuje przydzielone zasoby. Przed migracją przyjmuje się założenie, że rozmiar zasobów zostanie zmieniony w celu najlepszego dopasowania do rzeczywistych wymagań dotyczących użycia.

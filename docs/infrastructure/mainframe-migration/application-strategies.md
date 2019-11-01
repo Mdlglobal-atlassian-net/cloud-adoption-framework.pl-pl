@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba2d68a2b382ccccf0d124a57d33d1344476c3dc
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 9eb8c85c2355ae06e63d58e3078f1101bf7e3412
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547944"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239449"
 ---
 # <a name="mainframe-application-migration"></a>Migracja aplikacji mainframe
 
@@ -27,7 +27,7 @@ Migracja aplikacji zwykle obejmuje co najmniej jedną z następujących strategi
 
 - **Wycofywanie:** Wszystkie aplikacje, które nie są już potrzebne, powinny zostać wycofane przed migracją.
 
-- **Kompiluj ponownie:** Niektóre organizacje decydują się na całkowite odpisanie programów przy użyciu nowoczesnych technik. Mając na względzie dodatkowy koszt i złożoność tego podejścia, nie jest to powszechnie zgodne z podejściem "Unieś i Shift". Często po migracji tego typu warto rozpocząć zastępowanie modułów i kodu za pomocą aparatów transformacji kodu.
+- **Kompiluj ponownie:** Niektóre organizacje decydują się na całkowite odpisanie programów przy użyciu nowoczesnych technik. Mając na względzie dodatkowy koszt i złożoność tego podejścia, nie jest to powszechnie zgodne z podejściem do podnoszenia i przesunięcia. Często po migracji tego typu warto rozpocząć zastępowanie modułów i kodu za pomocą aparatów transformacji kodu.
 
 - **Zamień:** Takie podejście zastępuje funkcję mainframe z równoważnymi funkcjami w chmurze. Oprogramowanie jako usługa (SaaS) to jedna z opcji, która korzysta z rozwiązania utworzonego w ramach problemu dla przedsiębiorstw, takiego jak finanse, zasoby ludzkie, produkcja i planowanie zasobów przedsiębiorstwa. Ponadto dostępne są wiele aplikacji specyficznych dla branży, które rozwiązują problemy, które są używane do rozwiązywania niestandardowych rozwiązań typu mainframe.
 
@@ -57,7 +57,7 @@ Oprócz środowisk emulacji platforma Azure zapewnia usługi platformy jako usł
 
 ## <a name="migrate-oltp-workloads-to-azure"></a>Migrowanie obciążeń OLTP na platformę Azure
 
-Podejście "Unieś i Shift" to opcja bez kodu umożliwiająca szybkie Migrowanie istniejących aplikacji na platformę Azure. Każda aplikacja jest migrowana zgodnie z oczekiwaniami, która zapewnia korzyści z chmury bez ryzyka i kosztów związanych z wprowadzaniem zmian w kodzie. Użycie emulatora na potrzeby monitorów transakcji typu mainframe (TP) na platformie Azure obsługuje takie podejście.
+Podejście do podnoszenia i przesunięcia to opcja bez kodu umożliwiająca szybkie Migrowanie istniejących aplikacji na platformę Azure. Każda aplikacja jest migrowana zgodnie z oczekiwaniami, która zapewnia korzyści z chmury bez ryzyka i kosztów związanych z wprowadzaniem zmian w kodzie. Użycie emulatora na potrzeby monitorów transakcji typu mainframe (TP) na platformie Azure obsługuje takie podejście.
 
 Monitory TP są dostępne od różnych dostawców i uruchamiane na maszynach wirtualnych — opcja infrastruktura jako usługa (IaaS) na platformie Azure. Poniższe diagramy przed i po pokazują migrację aplikacji online obsługiwanej przez IBM DB2, system zarządzania relacyjnymi bazami danych (DBMS) na komputerze mainframe firmy IBM z/OS. W programie DB2 dla systemu z/OS są wykorzystywane pliki metody dostępu do magazynu wirtualnego (VSAM) w celu przechowywania danych i indeksowania metody dostępu sekwencyjnego (ISAM) dla plików prostych. Ta architektura używa również CICS do monitorowania transakcji.
 

@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f9dc2a7276a8845ad19ce4196822b730e7a6502d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a35579cbb26f292e349cd2d1101596bdd4a94b86
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029097"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240021"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Ścieżka gotowości do kwalifikacji w fazie planu podróży migracji
 
@@ -58,7 +58,7 @@ W fazie przygotowywania pracownicy techniczni tworzą strefę wyładunkowej migr
 - [Utwórz konto platformy Azure](/learn/modules/create-an-azure-account). Pierwszym krokiem podczas korzystania z platformy Azure jest utworzenie konta. Twoje konto zawiera usługi platformy Azure, które udostępniamy, i obsługuje Twoje ustawienia osobiste, takie jak tożsamość, rozliczenia i preferencje.
 - [Azure Portal](/learn/modules/tour-azure-portal). Przedstawienie funkcji i usług witryny Azure Portal oraz możliwości dostosowywania portalu.
 - [Wprowadzenie do platformy Azure](/learn/modules/welcome-to-azure). Rozpocznij pracę z platformą Azure od utworzenia i konfiguracji swojej pierwszej maszyny wirtualnej w chmurze.
-- [Wprowadzenie do zabezpieczeń na platformie Azure](/learn/modules/intro-to-security-in-azure). Zapoznaj się z podstawowymi pojęciami dotyczącymi ochrony infrastruktury i danych podczas pracy w chmurze. Dowiedz się, jakie są Twoje obowiązki, a za co odpowiada platforma Azure.
+- [Wprowadzenie do zabezpieczeń na platformie Azure](/learn/modules/intro-to-security-in-azure). Poznaj podstawowe pojęcia związane z ochroną infrastruktury i danych podczas pracy w chmurze. Dowiedz się, jakie są Twoje obowiązki, a za co odpowiada platforma Azure.
 - [Zarządzanie zasobami na platformie Azure](/learn/paths/manage-resources-in-azure). Dowiedz się, jak pracować z wierszem polecenia i portalem internetowym platformy Azure na potrzeby tworzenia zasobów opartych na chmurze, zarządzania nimi i kontrolowania ich.
 - [Utwórz maszynę wirtualną](/learn/modules/create-windows-virtual-machine-in-azure). Utwórz maszynę wirtualną pomocą witryny Azure Portal.
 - [Sieć platformy Azure](/learn/modules/intro-to-azure-networking). Poznaj podstawy sieci platformy Azure i sposób, w jaki usługa Azure Networks ułatwia zwiększenie odporności i skrócenie opóźnienia.
@@ -81,24 +81,16 @@ Oprócz tych początkowych opcji tworzenia umiejętności dostępne są różne 
 
 Firma Microsoft i partnerzy oferują różne opcje, aby pomóc wszystkim odbiorcom rozwijać swoje umiejętności dzięki usługom platformy Azure:
 
-- [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/microsoft-azure). Oferuje szkolenia, których autorami są osoby pomagające w budowaniu platformy Azure. Od podstawowego omówienia do głębokiego szkolenia technicznego te kursy ułatwiają realizatorom IT Korzystanie z platformy Azure na potrzeby swojej firmy.
-- [Microsoft IT Pro Cloud Essentials](https://www.microsoft.com/azureessentials). Zapewnia bezpłatną roczną subskrypcję, która oferuje korzyści związane z usługami chmury, edukacją i pomocą techniczną. Specjalista IT Pro Cloud Essentials udostępnia realizatorom IT funkcje praktyczne, przeznaczone do profesjonalnego szkolenia i dostęp do ekspertów w dziedzinach, które są najbardziej istotne, aby zwiększyć wiedzę i utworzyć ścieżkę do rozwoju kariery.
 - [Microsoft IT Pro Center](https://www.microsoft.com/itpro). Służy jako darmowy zasób online w celu ułatwienia odwzorowania ścieżki kariery związanej z chmurą. Dowiedz się, co sugerują eksperci branżowi dla Twoje roli związanej z chmurą i umiejętności, które do tego prowadzą. Zapoznaj się z materiałami szkoleniowymi w swoim własnym tempie, aby nabyć najpotrzebniejsze umiejętności.
 
 Zalecamy włączenie znajomości platformy Azure do oficjalnego uznania przy użyciu [szkoleń i egzaminów certyfikacyjnych Microsoft Azure](https://www.microsoft.com/learning/azure-certification.aspx).
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych obowiązków, które są związane z wdrażaniem chmury, nie przychodzi łatwo. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Uzyskaj punkty i poziomy i uzyskaj więcej informacji!
+Microsoft Learn to nowe podejście do uczenia się. Nie jest łatwo dostępna gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty, poziomy i Osiągaj więcej!
 
-Poniżej przedstawiono kilka przykładów ścieżek szkoleniowych dotyczących ról na Microsoft Learn:
+Poniżej znajduje się przykład dopasowane ścieżki szkoleniowe, które są wyrównane do Potion strategii wdrożenia chmury. 
 
-[Użytkownicy biznesowi](/learn/browse/?roles=business-user) mogą uzyskać szeroką krzywą szkoleniową, gdy pojawi się prośba o uczestnictwo w planowaniu, testowaniu i wdrażaniu technologii opartych na chmurze. Moduły Microsoft Learn ukierunkowane na wdrażanie modeli i narzędzi w chmurze mogą ułatwić tym użytkownikom zarządzanie swoimi firmami za pośrednictwem usług w chmurze.
+[Poznaj wartość biznesową Microsoft Azure](/learn/paths/learn-business-value-of-azure/): to środowisko szkoleniowe zajmie się podróżą, która rozpocznie się, pokazując, w jaki sposób cyfrowe przekształcanie i możliwości chmury mogą przekształcić swoją firmę. Dowiesz się, jak usługi w chmurze Microsoft Azure mogą obsługiwać organizację na zaufanej platformie w chmurze. Na koniec zajmiemy się tym, jak to zrobić w rzeczywistości dla Twojej organizacji. 
 
-[Architekty rozwiązań](/learn/browse/?roles=solution-architect) mogą korzystać z setek modułów i ścieżek szkoleniowych. Dostępne tematy obejmują zakres od podstawowych usług infrastruktury do zaawansowanej transformacji danych.
-
-[Administratorzy](/learn/browse/?roles=administrator) mogą korzystać z modułów, które koncentrują się na Azure Fundamentals, konfigurowaniu kontenerów, a nawet w zaawansowanej administracji w chmurze.
-
-[Deweloperzy](/learn/browse/?roles=developer&term=infrastructure) odgrywają ważną rolę w migracji zasobów do chmury. Deweloperzy mogą dowiedzieć się więcej na temat sposobów, aby pomóc w podejmowaniu działań w zakresie architektury, zarządzania i modernizacji.
-
-Aby poznać dodatkowe ścieżki szkoleniowe, przejrzyj [katalog informacji](/learn/browse). Użyj filtru role, aby wyrównać ścieżki szkoleniowe do roli.
+Aby poznać dodatkowe ścieżki szkoleniowe, przejrzyj [katalog informacji](/learn/browse). Użyj filtru **Role**, aby dopasować ścieżki szkoleniowe do swojej roli.

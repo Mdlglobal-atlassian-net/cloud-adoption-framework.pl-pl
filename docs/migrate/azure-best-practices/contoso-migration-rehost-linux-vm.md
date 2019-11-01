@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: aa7ce8c882521e9a346e3f00da8c664af7585423
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 8b925564b3186e153cdd9a8139499a83a1fd96ff
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058223"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239407"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Ponowne hostowanie aplikacji lokalnej dla systemu Linux na maszynach wirtualnych platformy Azure
 
@@ -69,8 +69,8 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
 **Zagadnienie** | **Szczegóły**
 --- | ---
-**Zalety** | Obie maszyny wirtualne aplikacji zostaną przeniesione na platformę Azure bez zmian, co oznacza prostą migrację.<br/><br/> Ponieważ firma Contoso zastosuje metodę „lift and shift” w przypadku obu maszyn wirtualnych aplikacji, nie będą potrzebne żadne specjalne narzędzia do migracji i konfiguracji bazy danych aplikacji.<br/><br/> Firma Contoso zachowa pełną kontrolę nad maszynami wirtualnymi aplikacji na platformie Azure. <br/><br/> Maszyny wirtualne aplikacji mają system Ubuntu 16.04-TLS, który jest zalecaną dystrybucją systemu Linux. [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
-**Wady** | Warstwa internetowa i warstwa danych aplikacji wciąż będą stanowiły pojedynczy punkt awarii. <br/><br/> Firma Contoso nadal będzie musiała obsługiwać aplikację na maszynach wirtualnych na platformie Azure, zamiast przenieść ją do usługi zarządzanej, takiej jak Azure App Service czy Azure Database for MySQL.<br/><br/> Firma Contoso ma świadomość, że ze względu na zastosowanie prostej metody „lift and shift” do migracji maszyn wirtualnych nie będzie mogła skorzystać ze wszystkich funkcji oferowanych przez usługę [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) (takich jak wbudowana wysoka dostępność, przewidywalna wydajność, proste skalowanie, automatyczna kopia zapasowa i wbudowane zabezpieczenia).
+**Zalety** | Obie maszyny wirtualne aplikacji zostaną przeniesione na platformę Azure bez zmian, co oznacza prostą migrację.<br/><br/> Ponieważ firma Contoso używa metody podnoszenia i przesunięcia dla maszyn wirtualnych aplikacji, nie jest wymagana specjalna konfiguracja ani narzędzia migracji dla bazy danych aplikacji.<br/><br/> Firma Contoso zachowa pełną kontrolę nad maszynami wirtualnymi aplikacji na platformie Azure. <br/><br/> Maszyny wirtualne aplikacji mają system Ubuntu 16.04-TLS, który jest zalecaną dystrybucją systemu Linux. [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
+**Wady** | Warstwa internetowa i warstwa danych aplikacji wciąż będą stanowiły pojedynczy punkt awarii. <br/><br/> Firma Contoso nadal będzie musiała obsługiwać aplikację na maszynach wirtualnych na platformie Azure, zamiast przenieść ją do usługi zarządzanej, takiej jak Azure App Service czy Azure Database for MySQL.<br/><br/> Firma Contoso wie, że przez utrzymywanie prostoty i przełączenie migracji maszyn wirtualnych nie w pełni wykorzystują funkcje zapewniane przez [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) (wbudowana wysoka dostępność, przewidywalna wydajność, proste skalowanie, automatyczne kopie zapasowe i wbudowane zabezpieczenia).
 
 <!-- markdownlint-enable MD033 -->
 

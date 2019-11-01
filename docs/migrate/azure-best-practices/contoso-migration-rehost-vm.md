@@ -1,7 +1,7 @@
 ---
-title: Ponowne hostowanie aplikacji przy użyciu migracji na maszyny wirtualne platformy Azure za pomocą usługi Azure Site Recovery
+title: Hostowanie aplikacji na maszynach wirtualnych platformy Azure za pomocą Azure Site Recovery
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Dowiedz się, w jaki sposób firma Contoso przeprowadza ponowne hostowanie aplikacji lokalnej przy użyciu migracji typu „lift and shift” maszyn lokalnych na platformę Azure za pomocą usługi Azure Site Recovery.
+description: Dowiedz się, w jaki sposób firma Contoso rehostuje aplikację lokalną za pomocą dźwigu i przeniesie migrację maszyn lokalnych na platformę Azure przy użyciu usługi Azure Site Recovery.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0bfadba7f6cefc5cd597d002c3cb18b0cfcc8c3d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 61f329bbd708417dc98994946eb4754682413a34
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058188"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239019"
 ---
-# <a name="rehost-an-on-premises-app-to-azure-vms"></a>ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure
+# <a name="rehost-an-on-premises-app-on-azure-vms"></a>Ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure
 
 W tym artykule pokazano, w jaki sposób fikcyjna firma Contoso ponownie hostuje dwuwarstwową aplikację frontonu .NET systemu Windows działającą na maszynach wirtualnych VMware, migrując maszyny wirtualne aplikacji na platformę Azure.
 
@@ -75,7 +75,7 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
 **Zagadnienie** | **Szczegóły**
 --- | ---
-**Zalety** | Obie maszyny wirtualne aplikacji zostaną przeniesione na platformę Azure bez zmian, co oznacza prostą migrację.<br/><br/> Ponieważ firma Contoso zastosuje metodę „lift and shift” w przypadku obu maszyn wirtualnych aplikacji, nie będą potrzebne żadne specjalne narzędzia do migracji i konfiguracji bazy danych aplikacji.<br/><br/> Firma Contoso może skorzystać z inwestycji w program Software Assurance i zastosować korzyść użycia hybrydowego platformy Azure.<br/><br/> Firma Contoso zachowa pełną kontrolę nad maszynami wirtualnymi aplikacji na platformie Azure.
+**Zalety** | Obie maszyny wirtualne aplikacji zostaną przeniesione na platformę Azure bez zmian, co oznacza prostą migrację.<br/><br/> Ponieważ firma Contoso używa metody podnoszenia i przesunięcia dla maszyn wirtualnych aplikacji, nie jest wymagana specjalna konfiguracja ani narzędzia migracji dla bazy danych aplikacji.<br/><br/> Firma Contoso może skorzystać z inwestycji w program Software Assurance i zastosować korzyść użycia hybrydowego platformy Azure.<br/><br/> Firma Contoso zachowa pełną kontrolę nad maszynami wirtualnymi aplikacji na platformie Azure.
 **Wady** | Na maszynach wirtualnych WEBVM i SQLVM działa system Windows Server 2008 R2. System operacyjny jest obsługiwany przez platformę Azure dla określonych ról (lipiec 2018). [Dowiedz się więcej](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines).<br/><br/> Warstwa internetowa i warstwa danych aplikacji wciąż będą stanowiły pojedynczy punkt awarii.<br/><br/> Maszyna wirtualna SQLVM działa na serwerze SQL Server 2008 R2, który nie jest objęty wsparciem podstawowym. Jest jednak obsługiwany w przypadku maszyn wirtualnych platformy Azure (lipiec 2018). [Dowiedz się więcej](https://support.microsoft.com/help/956893).<br/><br/> Firma Contoso nadal będzie musiała obsługiwać aplikację na maszynach wirtualnych na platformie Azure, zamiast przenieść ją do usługi zarządzanej, takiej jak Azure App Service czy Azure SQL Database.
 
 <!-- markdownlint-enable MD033 -->

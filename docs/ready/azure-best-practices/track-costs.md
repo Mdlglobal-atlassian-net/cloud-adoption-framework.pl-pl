@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548961"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240137"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach
 
@@ -25,7 +25,7 @@ ms.locfileid: "72548961"
 
 Kontrola kosztów, podobnie jak ład i inne konstrukcje zarządzania, zależy od dobrze zarządzanego środowiska. Ustanowienie takiego środowiska (szczególnie złożonego) wymaga spójnych procesów w klasyfikacji i organizacji wszystkich zasobów.
 
-Zasoby obejmują wszystkie maszyny wirtualne, źródła danych i aplikacje wdrożone w chmurze. Platforma Azure oferuje kilka mechanizmów klasyfikowania i organizowania zasobów. W temacie [Scaling with multiple Azure subscriptions](../considerations/scaling-subscriptions.md) (Skalowanie za pomocą wielu subskrypcji platformy Azure) przedstawiono szczegółowe informacje dotyczące opcji organizowania zasobów według wielu kryteriów, aby ustanowić dobrze zarządzane środowisko. Ten artykuł koncentruje się na zastosowaniu podstawowych koncepcji platformy Azure w celu zapewnienia widoczności kosztów chmury.
+Zasoby obejmują wszystkie maszyny wirtualne, źródła danych i aplikacje wdrożone w chmurze. Platforma Azure oferuje kilka mechanizmów klasyfikowania i organizowania zasobów. W temacie [Scaling with multiple Azure subscriptions](../azure-best-practices/scaling-subscriptions.md) (Skalowanie za pomocą wielu subskrypcji platformy Azure) przedstawiono szczegółowe informacje dotyczące opcji organizowania zasobów według wielu kryteriów, aby ustanowić dobrze zarządzane środowisko. Ten artykuł koncentruje się na zastosowaniu podstawowych koncepcji platformy Azure w celu zapewnienia widoczności kosztów chmury.
 
 ### <a name="classification"></a>Klasyfikacja
 
@@ -35,7 +35,7 @@ Tagowanie jest podstawowym sposobem na zrozumienie danych w dowolnych raportach 
 
 Pierwszym krokiem w procesie dokładnego śledzenia informacji o kosztach w różnych jednostkach biznesowych, środowiskach i projektach jest zdefiniowanie standardu tagowania. Drugim krokiem jest upewnienie się, że standard tagowania jest stosowany w sposób spójny. Poniższe artykuły mogą pomóc w wykonaniu każdego z tych kroków:
 
-- [Develop naming and tagging standards](../considerations/naming-and-tagging.md) (Opracowywanie standardów nazewnictwa i tagowania)
+- [Develop naming and tagging standards](../azure-best-practices/naming-and-tagging.md) (Opracowywanie standardów nazewnictwa i tagowania)
 - [Establish a governance MVP to enforce tagging standards](../../govern/guides/complex/index.md) (Ustanowienie ładu w programie MVP, aby wymusić standardy tagowania)
 
 ### <a name="resource-organization"></a>Organizacja zasobów
@@ -59,7 +59,7 @@ Na diagramie przedstawiono najlepsze rozwiązania oprócz następujących opcji:
 
 W pozostałej części tego artykułu przyjęto, że użyto najlepszego rozwiązania na diagramie powyżej. Jednak artykuły poniżej mogą pomóc w zastosowaniu tego rozwiązania do organizacji zasobów, która najlepiej pasuje do Twojej firmy:
 
-- [Skalowanie za pomocą wielu subskrypcji platformy Azure](../considerations/scaling-subscriptions.md)
+- [Skalowanie za pomocą wielu subskrypcji platformy Azure](../azure-best-practices/scaling-subscriptions.md)
 - [Deploying a Governance MVP to govern well-managed environment standards](../../govern/guides/complex/index.md) (Wdrażanie ładu programu MVP w celu nadzorowania standardów dobrze zarządzanego środowiska)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Zapewnienie odpowiedniego poziomu dostępu do kosztów
@@ -102,7 +102,7 @@ Poniższe ustawienia zakresu i ról zapewnią niezbędną widoczność w zakresi
 
 - [Cloud Center of Excellence](../../organize/cloud-center-of-excellence.md). Odpowiedzialność za zarządzanie kosztami związanymi z udostępnionymi usługami wymaga, aby współautor zarządzania kosztami miał dostęp na poziomie subskrypcji. Ponadto zespół ten może wymagać, by współautor zarządzania kosztami miał dostęp do grup zasobów lub subskrypcji zawierających zasoby wdrożone przy użyciu automatyzacji CCoE, aby zrozumieć, jak ta automatyzacja wpływa na koszty.
 
-  - **Usługi udostępnione**. W przypadku zaangażowania zespołu Cloud Center of Excellence najlepszym rozwiązaniem jest, by zasoby zarządzane przez CCoE były obsługiwane ze scentralizowanej subskrypcji na usługi udostępnione w ramach modelu układu gwiaździstego. W tym scenariuszu zespół CCoE ma prawdopodobnie dostęp do tej subskrypcji w roli współautora lub właściciela, co sprawia, że dodatkowe przypisanie do zakresu [współautora zarządzania kosztami](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) jest zbędne.
+  - **Usługi udostępnione**. W przypadku, gdy jest zaangażowany centrum usług w chmurze, najlepszym rozwiązaniem jest zasugerowanie, że zasoby zarządzane przez CCoE są obsługiwane przez scentralizowaną subskrypcję usługi udostępnionej w ramach modelu gwiazdy i satelity. W tym scenariuszu zespół CCoE ma prawdopodobnie dostęp do tej subskrypcji w roli współautora lub właściciela, co sprawia, że dodatkowe przypisanie do zakresu [współautora zarządzania kosztami](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) jest zbędne.
   - **Automatyzacja i sterowanie przez zespół CCoE**. Zespół CCoE często zapewnia sterowanie i skrypty wdrażania automatycznego zespołom ds. wdrażania chmury. Zespół CCoE ma obowiązek wiedzieć, jaki wpływ mają te akceleratory na koszty. Aby uzyskać taką widoczność, zespół potrzebuje dostępu w roli [współautora zarządzania kosztami](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) do grup zasobów lub subskrypcji, na których działają te akceleratory.
 
 - **Zespół ds. operacji w chmurze**. Odpowiedzialność za zarządzanie bieżącymi kosztami środowisk produkcyjnych wymaga dostępu w roli współautora zarządzania kosztami do wszystkich subskrypcji produkcyjnych.

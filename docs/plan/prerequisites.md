@@ -1,21 +1,21 @@
 ---
-title: Lista kontrolna wymagań wstępnych dla efektywnego planu wdrażania chmury
+title: Wymagania wstępne dotyczące efektywnego planu wdrażania chmury
 titleSuffix: Microsoft Cloud Adoption Framework
-description: Lista kontrolna wymagań wstępnych dla efektywnego planu wdrażania chmury
+description: Zapoznaj się z wymaganiami wstępnymi dla efektywnego planu wdrażania chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0933474aef96d01862f0f230073e275ac262cd83
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 6689945769c7eb31ba306567e2a09e51456d47cc
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048503"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240223"
 ---
-# <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Lista kontrolna wymagań wstępnych dla efektywnego planu wdrażania chmury
+# <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Wymagania wstępne dotyczące efektywnego planu wdrażania chmury
 
 Plan jest efektywny tylko jako dane, które są w nim umieszczone. Aby plan wdrożenia chmury był skuteczny, istnieją dwie kategorie danych wejściowych: *strategiczne* i *taktyczne*. W poniższych sekcjach znajdują się minimalne punkty danych wymagane w każdej kategorii.
 

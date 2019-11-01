@@ -8,16 +8,16 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 51751ab0033505e34c02c17db363bc985b83e44d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 99d5e42f8c7e506ba28617022f2a8076c9501979
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058152"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239759"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Tworzenie stref wyładunkowych przy użyciu Terraform
 
-Platforma Azure zapewnia natywne usługi do wdrażania stref wyładunkowej. Inne narzędzia innych firm mogą również pomóc w tym wysiłku. Jednym z tych narzędzi, które klienci i partnerzy często używają stref umieszczania wdrażania, jest Hashicorp Terraform. W tej sekcji przedstawiono sposób użycia prototypowej strefy docelowej do wdrożenia podstawowych możliwości rejestrowania, ewidencjonowania aktywności i zabezpieczeń dla subskrypcji platformy Azure.
+Platforma Azure zapewnia natywne usługi do wdrażania stref wyładunkowej. Inne narzędzia innych firm mogą również pomóc w tym wysiłku. Jednym z tych narzędzi, które klienci i partnerzy często używają Hashicorp, jest Terraform. W tej sekcji przedstawiono sposób użycia prototypowej strefy docelowej do wdrożenia podstawowych możliwości rejestrowania, ewidencjonowania aktywności i zabezpieczeń dla subskrypcji platformy Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Przeznaczenie strefy docelowej
 
@@ -56,7 +56,7 @@ Podczas definiowania początkowej strefy wyładunkowej zostały uwzględnione na
 - **Limity subskrypcji:** W przypadku tego wysiłku nie można przekroczyć [limitów subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits). Dwa typowe wskaźniki to przekroczenie 25 000 maszyn wirtualnych lub 10 000 procesorów wirtualnych.
 - **Zgodność:** Dla tej strefy wyładunkowej nie są wymagane żadne wymagania dotyczące zgodności innych firm.
 - **Złożoność architektury:** Złożoność architektury nie wymaga dodatkowych subskrypcji produkcyjnych.
-- **Usługi udostępnione:** Na platformie Azure nie ma istniejących usług udostępnionych, które wymagają, aby ta subskrypcja była traktowana jak szprycha w architekturze gwiazdy i szprych.
+- **Usługi udostępnione:** Na platformie Azure nie ma istniejących usług udostępnionych, które wymagają, aby ta subskrypcja była traktowana jak szprycha w architekturze gwiazdy.
 
 Jeśli te założenia pasują do bieżącego środowiska, ten plan może być dobrym sposobem na rozpoczęcie tworzenia strefy docelowej.
 
@@ -67,17 +67,17 @@ Następujące decyzje są reprezentowane w Terraformej strefie docelowej:
 | Składnik | Decyzje | Alternatywne podejścia |
 | --- | --- | --- |
 |Rejestrowanie i monitorowanie | Zostanie użyty obszar roboczy Azure Monitor Log Analytics. Zostanie zainicjowana obsługa konta magazynu diagnostyki oraz centrum zdarzeń. |         |
-|Sieć | N/A — sieć zostanie wdrożona w innej strefie docelowej. |[Decyzje dotyczące sieci](../considerations/network-decisions.md) |
+|Sieć | N/A — sieć zostanie wdrożona w innej strefie docelowej. |[Decyzje dotyczące sieci](../considerations/networking-options.md) |
 |Tożsamość | Przyjęto założenie, że subskrypcja jest już skojarzona z wystąpieniem usługi Azure Active Directory. | [Najlepsze rozwiązania dotyczące zarządzania tożsamościami](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Zasady | W tej strefie wyładunkowej założono, że nie mają być stosowane żadne zasady platformy Azure. | |
-|Projekt subskrypcji | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej | [Skalowanie subskrypcji](../considerations/scaling-subscriptions.md) |
-| Grupy zarządzania | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej |[Skalowanie subskrypcji](../considerations/scaling-subscriptions.md) |
-| Grupy zasobów | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej | [Skalowanie subskrypcji](../considerations/scaling-subscriptions.md) |
+|Projekt subskrypcji | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej | [Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md) |
+| Grupy zarządzania | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej |[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md) |
+| Grupy zasobów | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej | [Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md) |
 | Dane | ND | [Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Usługa Storage|ND|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-guidance.md) |
-| Standardy nazewnictwa | Po utworzeniu środowiska zostanie również utworzony unikatowy prefiks. Zasoby, które wymagają unikatowej nazwy globalnej (na przykład kont magazynu), używają tego prefiksu. Nazwa niestandardowa zostanie dołączona z losowym sufiksem. Użycie tagów jest wymagane zgodnie z opisem w poniższej tabeli. | [Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../considerations/naming-and-tagging.md) |
+|Usługa Storage|ND|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md) |
+| Standardy nazewnictwa | Po utworzeniu środowiska zostanie również utworzony unikatowy prefiks. Zasoby, które wymagają unikatowej nazwy globalnej (na przykład kont magazynu), używają tego prefiksu. Nazwa niestandardowa zostanie dołączona z losowym sufiksem. Użycie tagów jest wymagane zgodnie z opisem w poniższej tabeli. | [Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md) |
 | Zarządzanie kosztami | ND | [Śledzenie kosztów](../azure-best-practices/track-costs.md) |
-| Wystąpienia obliczeniowe | ND | [Opcje środowiska obliczeniowego](../considerations/compute-decisions.md) |
+| Wystąpienia obliczeniowe | ND | [Opcje środowiska obliczeniowego](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>Standardy tagowania
 

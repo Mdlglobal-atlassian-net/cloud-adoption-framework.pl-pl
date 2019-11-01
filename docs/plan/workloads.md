@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022270"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240194"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Określanie priorytetów i Definiowanie obciążeń dla planu wdrażania chmury
 
@@ -29,11 +29,11 @@ W kontekście wdrożenia chmury obciążenie to zbiór zasobów IT (serwerów, m
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Strategiczne dane wejściowe z listy kontrolnej dotyczącej wymagań wstępnych znacznie ułatwiają wykonywanie następujących zadań. Aby uzyskać pomoc dotyczącą zbierania danych opisanych w tym artykule, zapoznaj się z [listą kontrolną wymagania wstępne](./prerequisites.md).
+Strategiczne dane wejściowe z listy wymagań wstępnych znacznie ułatwiają wykonywanie następujących zadań. Aby uzyskać pomoc dotyczącą zbierania danych opisanych w tym artykule, zapoznaj się z [wymaganiami wstępnymi](./prerequisites.md).
 
 ## <a name="initial-workload-prioritization"></a>Początkowa priorytetyzacja obciążeń
 
-Podczas procesu racjonalizacji [przyrostowej](../digital-estate/rationalize.md)zespół powinien wyrazić zgodę na podejście "moc 10", które składa się z 10 obciążeń priorytetowych. Te obciążenia stanowią początkową granicę planowania wdrożenia.
+Podczas procesu [racjonalizacji przyrostowej](../digital-estate/rationalize.md)zespół powinien wyrazić zgodę na podejście "moc 10", które składa się z 10 obciążeń priorytetowych. Te obciążenia stanowią początkową granicę planowania wdrożenia.
 
 W przypadku podjęcia decyzji o tym, że nie jest wymagana racjonalizacja dotyczącej typu cyfrowego, firma Microsoft zaleca, aby zespoły wdrożenia chmury i zespół strategii chmurowych zgadzali się na listę 10 aplikacji, które będą stanowić początkowy fokus migracji. Zalecamy dalsze, aby te 10 obciążeń zawierało kombinację prostych obciążeń (mniej niż 10 zasobów w ramach wdrożenia samodzielnego) i bardziej złożonych obciążeń. Te 10 obciążeń rozpocznie proces priorytetyzacji obciążenia.
 
@@ -92,7 +92,7 @@ Po zdefiniowaniu priorytetów początkowych i dodaniu obciążeń do planu, każ
 | Klasyfikacja danych | Wyświetl listę klasyfikacji czułości danych. |         |
 | Lokalizacje geograficzne operacyjny | Utwórz listę wszystkich lokalizacje geograficzne, w których obciążenie jest lub powinny być hostowane. |         |
 | Aplikacje | Określ początkową listę lub liczbę wszystkich aplikacji uwzględnionych w tym obciążeniu. |         |
-| maszyn wirtualnych | Określ początkową listę lub liczbę wszystkich maszyn wirtualnych lub serwerów uwzględnionych w obciążeniu. |         |
+| Maszyny wirtualne | Określ początkową listę lub liczbę wszystkich maszyn wirtualnych lub serwerów uwzględnionych w obciążeniu. |         |
 | Źródła danych | Określ początkową listę lub liczbę wszystkich źródeł danych uwzględnionych w obciążeniu. |         |
 | Zależności | Wyświetl listę wszystkich zależności zasobów, które nie są uwzględnione w obciążeniu. |         |
 | Lokalizacje geograficzne ruchu użytkownika | Utwórz listę lokalizacje geograficzne, która ma znaczną kolekcję ruchu użytkownika. |         |
