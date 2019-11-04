@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 15c4be90354e30333384023e67090ef6103464e2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8087c67d07a17475e49d70a2b70b78d8af20460a
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548470"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240279"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Model migracji opisany w przewodniku Cloud Adoption Framework
 
@@ -34,7 +34,7 @@ Przed rozpoczęciem działań związanych z migracją należy określić w przyb
 
 ![Grafika informacyjna dotycząca opcji migracji](../../_images/migrate/migration-options.png)
 
-Migracja i modernizacja obciążeń może obejmować zakres od prostej migracji opartej na *ponownym hostowaniu* („lift and shift”) przy użyciu funkcji infrastruktury jako usługi (IaaS), które nie wymagają wprowadzania zmian w kodzie i aplikacji, przez *refaktoryzację* z minimalnymi zmianami, po *zmianę architektury* w celu zmodyfikowania i rozszerzenia kodu i funkcji aplikacji, aby wykorzystać możliwości technologii chmurowych.
+Migracja i modernizacja obciążeń może obejmować zakres od prostej migracji opartej na _ponownym hostowaniu_ (nazywanej także migracją _lift and shift_) przy użyciu funkcji infrastruktury jako usługi (IaaS), które nie wymagają wprowadzania zmian w kodzie i aplikacji, przez _refaktoryzację_ z minimalnymi zmianami, po _zmianę architektury_ w celu zmodyfikowania i rozszerzenia kodu i funkcji aplikacji, aby wykorzystać możliwości technologii chmurowych.
 
 Natywne strategie chmurowe i strategie typu „platforma jako usługa” (PaaS) polegają na *przebudowaniu* lokalnych obciążeń przy użyciu ofert platformy Azure i usług zarządzanych. Obciążenia, które mają odpowiednik w postaci ofert w pełni zarządzanego oprogramowania jako usługi (SaaS) w chmurze, można często całkowicie *zastąpić* tymi usługami w ramach procesu migracji.
 

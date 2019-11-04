@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 4f024a95afcb993bd0fe314737ee4d2f97daffb0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058717"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238790"
 ---
 # <a name="subscription-decision-guide"></a>Przewodnik po decyzjach związanych z subskrypcjami
 
@@ -22,7 +22,7 @@ Skuteczny projekt subskrypcji ułatwia organizacjom ustanowienie struktury do or
 
 Każdy zasób na platformie Azure, taki jak maszyna wirtualna lub baza danych, jest skojarzony z subskrypcją. Wdrażanie platformy Azure rozpoczyna się od utworzenia subskrypcji platformy Azure, skojarzenia jej z kontem i wdrożenia zasobów w subskrypcji. Omówienie tych pojęć przedstawiono w temacie [Azure fundamental concepts](../../ready/considerations/fundamental-concepts.md) (Podstawowe pojęcia dotyczące platformy Azure).
 
-Wraz z rozwojem Twojej infrastruktury cyfrowej na platformie Azure będzie prawdopodobnie konieczne utworzenie dodatkowych subskrypcji w celu spełnienia wymagań. Platforma Azure umożliwia definiowanie hierarchii grup zarządzania do organizowania subskrypcji i łatwego stosowania właściwych zasad do odpowiednich zasobów. Aby uzyskać więcej informacji, zobacz [Scaling with multiple Azure subscriptions](../../ready/considerations/scaling-subscriptions.md) (Skalowanie z wieloma subskrypcjami platformy Azure).
+Wraz z rozwojem Twojej infrastruktury cyfrowej na platformie Azure będzie prawdopodobnie konieczne utworzenie dodatkowych subskrypcji w celu spełnienia wymagań. Platforma Azure umożliwia definiowanie hierarchii grup zarządzania do organizowania subskrypcji i łatwego stosowania właściwych zasad do odpowiednich zasobów. Aby uzyskać więcej informacji, zobacz [Scaling with multiple Azure subscriptions](../../ready/azure-best-practices/scaling-subscriptions.md) (Skalowanie z wieloma subskrypcjami platformy Azure).
 
 Podstawowe przykłady korzystania z grup zarządzania do rozdzielania różnych obciążeń:
 

@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 layout: LandingPage
-ms.openlocfilehash: 1c112665ed11ba0f4e9ca205a5eec6bb719e95f9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6e051b5272535ccb9fe080176e04859ccf20470c
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025845"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240058"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -98,7 +98,7 @@ Opracuj uzasadnienie biznesowe, aby umocnić model finansowy wspierający motywa
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Wybór odpowiedniego pierwszego projektu</h3>
-Pierwszy projekt chmurowy ułatwi uzgodnienie motywacji i działań technicznych. Ten artykuł ułatwia wybranie właściwego pierwszego projektu.
+Pierwszy projekt wdrażania chmury ułatwi uzgodnienie motywacji i działań technicznych. Ten artykuł ułatwia wybranie właściwego pierwszego projektu.
                         </div>
                     </div>
                 </div>
