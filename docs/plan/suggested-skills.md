@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 70308733893ac3a8baf1d910b23c9d9162719b5f
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240208"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564212"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Wprowadzenie do ścieżki gotowości do kwalifikacji
 
@@ -38,18 +38,15 @@ Pracownicy działu IT mogą obawiać się o swoje role i stanowiska, ponieważ r
 
 Każda z poprzednich ścieżek szkoleniowych udostępnia szanse sprzedaży na wielu typach multimediów, aby zmaksymalizować pozyskiwanie wiedzy.
 
-# <a name="microsoft-learn"></a>Microsoft Learn
+## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn to nowe podejście do uczenia się. Nie jest łatwo dostępna gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Uzyskaj punkty i poziomy i uzyskaj więcej informacji!
 Poniżej przedstawiono kilka przykładów dostosowanych ścieżek szkoleniowych na Microsoft Learn, które są wyrównane do sekcji plan struktury wdrażanie w chmurze:
 
-[Rozwijanie praktyk DevOps](learn/paths/evolve-your-devops-practices/):D evops to związek ludzi, procesów i produktów w celu zapewnienia ciągłego dostarczania wartości użytkownikom końcowym. Azure DevOps to zestaw usług, które udostępniają narzędzia, które należy wykonać. Za pomocą usługi Azure DevOps można kompilować, testować i wdrażać aplikacje w chmurze lub lokalnie.
+[Rozwijanie praktyk DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices):D evops to związek ludzi, procesów i produktów w celu zapewnienia ciągłego dostarczania wartości użytkownikom końcowym. Azure DevOps to zestaw usług, które udostępniają narzędzia, które należy wykonać. Za pomocą usługi Azure DevOps można kompilować, testować i wdrażać aplikacje w chmurze lub lokalnie.
 
-[Platforma Azure dla inżyniera danych](learn/paths/azure-for-the-data-engineer/): Dowiedz się, jak świat danych został rozbudowany i jak pojawieniu technologii chmurowych udostępniają nowe możliwości do eksplorowania. Poznasz różne technologie platformy danych, które są dostępne, oraz sposób, w jaki inżynier danych może wykorzystać tę technologię do skorzystania z zalet organizacji.     
+[Platforma Azure dla inżyniera danych](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Dowiedz się, jak świat danych został rozbudowany i jak pojawieniu technologii chmurowych udostępniają nowe możliwości do eksplorowania. Poznasz różne technologie platformy danych, które są dostępne, oraz sposób, w jaki inżynier danych może wykorzystać tę technologię do skorzystania z zalet organizacji.
 
-Aby odnaleźć dodatkowe ścieżki szkoleniowe, przejrzyj [informacje o katalogu] (/Learn/Browse). Użyj filtru role, aby wyrównać ścieżki szkoleniowe do roli.
+## <a name="learn-more"></a>Dowiedz się więcej
 
-
-
-
-
+Aby odnaleźć dodatkowe ścieżki szkoleniowe, przejrzyj [katalog Microsoft Learn](https://docs.microsoft.com/learn/browse). Użyj filtru role, aby wyrównać ścieżki szkoleniowe do roli.

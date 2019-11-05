@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 30b3a88a8ce7c90f4b3925af7ead21489c2fb821
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a272a9b8633f60544aca9982654a899288e3b4e8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223914"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564151"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>Dostosuj istniejące role, umiejętności i procesy w chmurze
 
@@ -23,9 +23,9 @@ Role prawdopodobnie zmienią się w zależności od instytucji obliczeniowych w 
 
 Pracownicy działu IT mogą zainteresować swoje role i stanowiska, ponieważ chcą, że potrzebują oni innego zestawu umiejętności do obsługi rozwiązań w chmurze. Jednak pracownicy Agile, którzy eksplorują i znają nowe technologie chmury, nie powinni obawiać się. Mogą oni prowadzić do wdrażania usług w chmurze i pomóc organizacji w nauce i wdrażaniu skojarzonych zmian.
 
-Aby uzyskać wskazówki dotyczące tworzenia nowego zestawu umiejętności, zapoznaj się ze ścieżką gotowości do [umiejętności](./suggested-skills.md).
+Aby uzyskać wskazówki dotyczące tworzenia nowego zestawu umiejętności, zapoznaj się ze [ścieżką gotowości do umiejętności](./suggested-skills.md).
 
-## <a name="capturing-concerns"></a>Wychwytywanie problemów
+## <a name="capture-concerns"></a>Zagadnienia dotyczące przechwytywania
 
 Gdy organizacja przygotowuje się do wysiłków związanych z wdrażaniem w chmurze, każdy zespół powinien udokumentować problemy pracowników w miarę ich wyznaczania, identyfikując:
 

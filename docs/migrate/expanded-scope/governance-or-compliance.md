@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a6371fe5f3d90e72b29ecfc1e66b3d4991ef5822
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549237"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566907"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategia utrzymania ładu lub zgodności
 
@@ -38,7 +38,7 @@ Konfiguracja podstawowego środowiska platformy Azure może zmienić się znacz�
 **Usługi firmy Microsoft:** Usługi firmy Microsoft udostępniają oferty rozwiązań, które można dostosować do modelu ładu platformy wdrażania w chmurze, planów zgodności lub opcji wirtualnego centrum danych w celu zapewnienia najbardziej odpowiedniego modelu zarządzania lub zgodności. Oferta rozwiązania [Secure Cloud Insights (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) pozwala określić oparty na danych obraz wdrożenia klienckiego na platformie Azure i sprawdzić dojrzałość implementacji Azure klienta podczas identyfikowania optymalizacji istniejących architektur wdrażania, usuwania zagrożeń związanych z ładem, zabezpieczeniami i dostępnością. Szczegółowe informacje o kliencie pozwolą przeprowadzić następujące podejścia:
 
 - **Cloud Foundation:** Ustanów podstawowe projekty, wzorce i zarządzanie architekturą platformy Azure, korzystając z oferty [hybrydowej rozwiązania Cloud Foundation (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) . Zamapuj wymagania klienta do najbardziej odpowiedniej architektury referencyjnej. Zaimplementuj produkt o minimalnej koniecznej funkcjonalności, składający się z usług udostępnionych i obciążeń IaaS.
-- **Modernizacja chmury:** Skorzystaj z oferty rozwiązania do [modernizacji w chmurze](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) jako kompleksowego podejścia do przenoszenia aplikacji, danych i infrastruktury do chmury gotowej do użycia w przedsiębiorstwie, a także do optymalizowania i modernizacji w chmurze.
+- **Modernizacja chmury:** Oferta rozwiązania do [modernizacji w chmurze](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) służy jako kompleksowe podejście do przenoszenia aplikacji, danych i infrastruktury do chmury gotowej do użycia w przedsiębiorstwie, a także do optymalizowania i modernizacji po wdrożeniu w chmurze.
 - Wprowadzanie **innowacji w chmurze:** Zaangażuj klienta dzięki innowacyjnemu i unikatowemu podejściu rozwiązania [Cloud Center doskonałości (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) , które kompiluje nowoczesne organizacje IT, aby zapewnić elastyczność na dużą skalę z DevOps, zachowując kontrolę. Implementacja podejścia Agile pozwala przechwycić wymagania biznesowe, ponownie użyć pakietów wdrożeniowych, które są dostosowane do zasad zabezpieczeń, zgodności i zarządzania usługami, i utrzymać platformę Azure dostosowaną do procedur operacyjnych.
 
 ## <a name="assess-process-changes"></a>Zmiany procesu oceniania

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cdc6abe2be94bb0d91047d4d64a0774bac6a8e0e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8e3030a53a7812eea87ec8cd12d492888cc3c421
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549223"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566846"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>Zatwierdzanie zmian architektury przed migracją
 
@@ -54,7 +54,7 @@ Poniższe najlepsze rozwiązania mogą pomóc zespołowi zarządzania zmianą za
 
 ### <a name="standardize-change"></a>Standaryzacja zmian
 
-Dla zespołu wdrożeniowego ds. chmury może być kuszące szczegółowe rozważanie decyzji dotyczących architektury dla każdego obciążenia migrowanego do chmury. Równie kuszące jest użycie migracji do chmury jako katalizatora refaktoryzacji wcześniejszych decyzji dotyczących architektury. Niezależnie od tego, czy organizacja migruje kilkaset maszyn wirtualnych czy kilkadziesiąt obciążeń, każdym podejściem można prawidłowo zarządzać. Podczas migrowania centrum danych składającego się z 1000 lub więcej zasobów każde z tych podejść jest uważane za antywzorzec wysokiego ryzyka, który znacząco zmniejsza prawdopodobieństwo sukcesu. Modernizacja, refaktoryzacja i zmiana architektury każdej aplikacji wymaga różnych zestawów umiejętności i różnorodnych zmian, a te zadania w dużej skali powodują występowanie zależności od ludzkiej pracy. Każda z tych zależności zwiększa ryzyko niepowodzenia migracji.
+Dla zespołu wdrożeniowego ds. chmury może być kuszące szczegółowe rozważanie decyzji dotyczących architektury dla każdego obciążenia migrowanego do chmury. Równie kuszące jest użycie migracji do chmury jako katalizatora refaktoryzacji wcześniejszych decyzji dotyczących architektury. Niezależnie od tego, czy organizacja migruje kilkaset maszyn wirtualnych czy kilkadziesiąt obciążeń, każdym podejściem można prawidłowo zarządzać. Podczas migrowania centrum danych składającego się z 1000 lub więcej zasobów każde z tych podejść jest uważane za antywzorzec wysokiego ryzyka, który znacząco zmniejsza prawdopodobieństwo sukcesu. Modernizacja, refaktoryzacja i zmiana architektury każdej aplikacji wymaga różnorodnych zestawów umiejętności i znaczących zmian, a te zadania tworzą zależności dotyczące wysiłków ludzkich na dużą skalę. Każda z tych zależności zwiększa ryzyko niepowodzenia migracji.
 
 W artykule dotyczącym [racjonalizacji majątku cyfrowego](../../../digital-estate/rationalize.md) omówiono wpływ podstawowych założeń przyjętych podczas racjonalizacji majątku cyfrowego na elastyczność i oszczędność czasu. Standaryzacja zmian ma dodatkową korzyść. Wybierając domyślne podejście racjonalizacyjne do zarządzania procesem migracji, zespół doradczy ds. chmury lub właściciel produktu może sprawdzić i zatwierdzić zastosowanie jednej zmiany do długiej listy obciążeń. Ogranicza to konieczność zatwierdzania technicznego poszczególnych obciążeń do tych, które wymagają znaczącej zmiany architektury w celu zapewnienia zgodności z chmurą.
 

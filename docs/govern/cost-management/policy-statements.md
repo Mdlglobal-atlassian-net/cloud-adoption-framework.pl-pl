@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: efc105298462afa9dfac76f0505854fdc157c17d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 086740f6677896220824096a5afe66618779a2d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220943"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566401"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Cost Management przykładowe instrukcje zasad
 
 Poszczególne instrukcje dotyczące zasad chmury to wskazówki dotyczące rozwiązywania określonych zagrożeń zidentyfikowanych podczas procesu oceny ryzyka. Te instrukcje powinny dostarczyć zwięzłe podsumowanie zagrożeń i plany postępowania z nimi. Każda definicja instrukcji powinna zawierać następujące informacje:
 
-- **Ryzyko biznesowe.** Podsumowanie ryzyka, którego dotyczy ta zasada.
-- **Instrukcja zasad.** Jasne wyjaśnienie wymagań zasad.
-- **Opcje projektowania.** Zalecenia z możliwością wykonania akcji, specyfikacje lub inne wskazówki, które mogą być używane przez zespoły IT i deweloperów podczas implementowania zasad.
+- **Ryzyko biznesowe:** Podsumowanie ryzyka, którego dotyczy ta zasada.
+- **Instrukcja zasad:** Jasne wyjaśnienie wymagań zasad.
+- **Opcje projektowania:** Zalecenia z możliwością wykonania akcji, specyfikacje lub inne wskazówki, które mogą być używane przez zespoły IT i deweloperów podczas implementowania zasad.
 
 Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń związanych z kosztami firmy. Te instrukcje są przykładami, które można przywołać podczas sporządzania projektów instrukcji zasad w celu rozwiązania potrzeb organizacji. Te przykłady nie są przeznaczone do obsługi skryptów i mogą być dostępne różne opcje dotyczące ponoszenia określonych zagrożeń. Ścisła współpraca z firmowymi i zespołami IT w celu zidentyfikowania najlepszych zasad dla unikatowego zestawu zagrożeń.
 

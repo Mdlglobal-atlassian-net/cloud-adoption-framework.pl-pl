@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8623a845a6c8d8b0a8cc50d404ead85eae256134
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: dbdabb6edc425ea3c70706313d2357323d2a523c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243190"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561878"
 ---
 # <a name="review-your-compute-options"></a>Przejrzyj opcje obliczeń
 
@@ -35,7 +35,7 @@ W przypadku każdej aplikacji lub usługi, która zostanie wdrożona w środowis
 Odpowiedz na następujące pytania dotyczące obciążeń, aby ułatwić podejmowanie decyzji na podstawie drzewa decyzyjnego usług obciążeniowych platformy Azure:
 
 - **Tworzysz nowe aplikacji i usługi czy przeprowadzasz migrację z istniejących obciążeń lokalnych?** Tworzenie nowych aplikacji w ramach działań związanych z wdrażaniem w chmurze umożliwia pełne wykorzystanie nowoczesnych technologii hostingu opartego na chmurze od etapu projektowania.
-- **Czy w przypadku migrowania istniejących obciążeń można korzystać z nowoczesnych technologii chmurowych?** Migrowanie obciążeń lokalnych wymaga analizy: można łatwo zoptymalizować istniejące aplikacje i usługi, aby móc korzystać z nowoczesnych technologii chmurowych, czy też rozwiązanie do *przesunięcia i* przełączenia będzie bardziej przydatne w przypadku obciążeń?
+- **Czy w przypadku migrowania istniejących obciążeń można korzystać z nowoczesnych technologii chmurowych?** Migrowanie obciążeń lokalnych wymaga analizy: można łatwo zoptymalizować istniejące aplikacje i usługi, aby móc korzystać z nowoczesnych technologii chmurowych, czy też rozwiązanie _i przesunięcia_ przewyższają wydajność dla obciążeń?
 - **Czy aplikacje lub usługi mogą korzystać z kontenerów?** Jeśli Twoje aplikacje są dobrymi kandydatami do hostingu w kontenerach, możesz korzystać z efektywnego użycia zasobów, skalowalności i możliwości aranżacji oferowanych przez [usługi kontenerów platformy Azure](https://azure.microsoft.com/product-categories/containers). Do trwałego magazynowania konteneryzowanych aplikacji można używać usług [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) i [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction).
 - **Czy aplikacje są oparte na sieci Web czy na interfejsie API i czy korzystają z technologii PHP, ASP.NET, Node.js lub podobnych?** Aplikacje internetowe można wdrażać w zarządzanych wystąpieniach usługi [Azure App Service](https://docs.microsoft.com/azure/app-service/overview), dzięki czemu nie trzeba obsługiwać maszyn wirtualnych na potrzeby hostingu.
 - **Czy wymagana będzie pełna kontrola nad systemem operacyjnym i środowiskiem hostingu obciążenia?** Jeśli istnieje potrzeba kontroli środowiska hostingu, w tym systemu operacyjnego, dysków, oprogramowania uruchamianego lokalnie i innych konfiguracji, aplikacje i usługi można hostować w usłudze [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines). Oprócz wyboru rozmiaru i warstw wydajności maszyny wirtualnej decyzje dotyczące magazynu dysków wirtualnych będą mieć wpływ na wydajność i umowy SLA związane z obciążeniami opartymi na rozwiązaniu infrastruktury jako usługi (IaaS). Aby uzyskać więcej informacji, zobacz dokumentację dotyczącą funkcji [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a393791aac072cb9a135c6fc11e08fc653817742
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: de64b03c6c6113261426beed5de729eb6927a440
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222590"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566380"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Procesy zgodności zasad przyspieszenia wdrożenia
 
@@ -48,7 +48,7 @@ Upewnij się, że zespoły operacyjne IT zaimplementowali zautomatyzowane system
 
 ## <a name="violation-triggers-and-enforcement-actions"></a>Wyzwalacze naruszenia i akcje wymuszania
 
-Ze względu na to, że niezgodność z zasadami konfiguracji może prowadzić do krytycznych zagrożeń w usłudze, zespół nadzorujący chmury powinien mieć wgląd w poważne naruszenia zasad. Upewnij się, że personel działu IT ma jasne ścieżki eskalacji do raportowania problemów ze zgodnością konfiguracji z członkami zespołu ładu najlepiej dopasowane do identyfikowania i weryfikowania problemów z zasadami, które zostały wykryte po wykryciu.
+Ze względu na to, że niezgodność z zasadami konfiguracji może prowadzić do krytycznych zagrożeń w usłudze, zespół nadzorujący chmury powinien mieć wgląd w poważne naruszenia zasad. Upewnij się, że personel działu IT ma jasne ścieżki eskalacji do raportowania problemów ze zgodnością konfiguracji z członkami zespołu nadzoru najlepiej dopasowane do identyfikacji i sprawdzenia, czy problemy z zasadami zostały skorygowane po wykryciu.
 
 W przypadku wykrycia naruszeń należy podjąć akcje, aby szybko dostosować je za pomocą zasad najszybciej, jak to możliwe. Zespół IT może zautomatyzować większość wyzwalaczy naruszenia przy użyciu narzędzi opisanych w temacie [Acceleration Deployment łańcucha narzędzi for Azure](./toolchain.md).
 
@@ -56,7 +56,7 @@ Następujące wyzwalacze i akcje wymuszania zawierają przykłady, których moż
 
 - **Wykryto nieoczekiwane zmiany w konfiguracji.** W przypadku nieoczekiwanej zmiany konfiguracji zasobu należy skontaktować się z pracownikami działu IT i właścicielami obciążeń w celu zidentyfikowania głównej przyczyny i opracowania planu korygowania.
 - **Konfiguracja nowych zasobów nie jest zgodna z zasadami.** Współpraca z zespołami DevOps i właścicielami obciążeń w celu sprawdzenia zasad przyspieszenia wdrożenia podczas uruchamiania projektu, dzięki czemu wszyscy użytkownicy będą zrozumieć odpowiednie wymagania dotyczące zasad.
-- **Błędy wdrożenia lub problemy z konfiguracją powodują opóźnienia w harmonogramach projektu.** Pracuj z zespołami programistycznymi i właścicielami obciążeń, aby upewnić się, że zespół zrozumie, jak zautomatyzować wdrażanie zasobów opartych na chmurze pod kątem spójności i powtarzalności. W cyklu opracowywania, w pełni zautomatyzowane wdrożenia, powinny&mdash;być wymagane na wczesnych cyklach programistycznych, a w cyklu projektowania zwykle prowadzi do nieoczekiwanych problemów i opóźnień.
+- **Błędy wdrożenia lub problemy z konfiguracją powodują opóźnienia w harmonogramach projektu.** Pracuj z zespołami programistycznymi i właścicielami obciążeń, aby upewnić się, że zespół zrozumie, jak zautomatyzować wdrażanie zasobów opartych na chmurze pod kątem spójności i powtarzalności. W cyklu programowania należy wczesnie zautomatyzowanych wdrożeń&mdash;próby osiągnięcia tego opóźnienia w cyklu projektowania zwykle prowadzą do nieoczekiwanych problemów i opóźnień.
 
 ## <a name="next-steps"></a>Następne kroki
 

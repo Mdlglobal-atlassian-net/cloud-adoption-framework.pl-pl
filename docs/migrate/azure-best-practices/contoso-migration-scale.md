@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 16289952e74f81c885f15d69436c17e9d012d80a
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: ab5e8cdb7058a773b4085f01a6be64b4521e6b69
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238922"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566449"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skalowanie migracji na platformę Azure
 
@@ -174,7 +174,7 @@ Firma Contoso użyje usługi Azure Migrate w następujący sposób:
 
 #### <a name="database-tools"></a>Narzędzia bazy danych
 
-Jako uzupełnienie usługi Azure Migrate firma Contoso koncentruje się na korzystaniu z narzędzi przeznaczonych do oceny bazy danych. Narzędzia, takie jak [Data Migration Assistant](/sql/dma/dma-overview?view=sql-server-2017) ułatwią ocenę baz danych SQL Server do migracji.
+Jako uzupełnienie usługi Azure Migrate firma Contoso koncentruje się na korzystaniu z narzędzi przeznaczonych do oceny bazy danych. Narzędzia, takie jak [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=sql-server-2017) ułatwią ocenę baz danych SQL Server do migracji.
 
 Narzędzie Data Migration Assistant (DMA) może pomóc firmie Contoso ustalić, czy lokalne bazy danych są zgodne z zakresem rozwiązań bazodanowych platformy Azure, takich jak Azure SQL Database, program SQL Server działający na maszynie wirtualnej platformy Azure IaaS i wystąpienie zarządzane usługi Azure SQL.
 
@@ -221,7 +221,7 @@ Azure Site Recovery to podstawowa usługa platformy Azure do organizowania odzys
 
 Firma Contoso już [ukończyła weryfikację koncepcji](./contoso-migration-rehost-vm.md), aby zobaczyć, jak usługa Site Recovery może pomóc w migracji do chmury.
 
-##### <a name="using-site-recovery-at-scale"></a>Korzystanie z usługi Site Recovery na dużą skalę
+##### <a name="use-site-recovery-at-scale"></a>Użyj Site Recovery na dużą skalę
 
 Firma Contoso planuje przeprowadzić migrację do wielu przesunięć i przesunięcia. W celu zapewnienia takiego działania usługa Site Recovery będzie przeprowadzać replikację partiami po około 100 maszyn wirtualnych jednocześnie. Aby ustalić, jak to będzie działać, firma Contoso potrzebuje przeprowadzić planowanie wydajności dla proponowanej migracji Site Recovery.
 
@@ -262,10 +262,10 @@ Firma Contoso potrzebuje dowiedzieć się, jak wdrażać te składniki, na podst
 --- | ---
 **Maksymalny dzienny współczynnik zmian** | Pojedynczy serwer przetwarzania może obsłużyć dziennie do 2 TB zmian. Ponieważ maszyna wirtualna może korzystać tylko z jednego serwera przetwarzania, maksymalna szybkość dziennej zmiany danych obsługiwana dla zreplikowanej maszyny wirtualnej wynosi 2 TB.
 **Maksymalna przepływność** | Standardowe konto usługi magazynu Azure może obsłużyć maksymalnie 20 000 żądań na sekundę, a liczba operacji wejścia/wyjścia na sekundę (IOPS) w ramach replikacji maszyny wirtualnej powinna mieścić się w tym limicie. Na przykład, jeśli maszyna wirtualna ma 5 dysków, a każdy dysk generuje 120 operacji we/wy na sekundę (rozmiar 8K) na maszynie wirtualnej, będzie się mieścić w limicie 500 operacji we/wy na sekundę na każdym dysku.<br/><br/> Należy pamiętać, że liczba potrzebnych kont magazynu jest równa łącznej liczbie operacji we/wy na sekundę na maszynie źródłowej, podzielonej przez 20 000. Replikowana maszyna może należeć tylko do jednego konta magazynu na platformie Azure.
-**Serwer konfiguracji** | W oparciu o szacunkową łączną replikację 100 = 200 maszyn wirtualnych w firmie Contoso i [wymagania dotyczące ustalania wielkości serwera konfiguracji](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) firma Contoso oszacowała, że potrzebuje następującej maszyny serwera konfiguracji:<br/><br/> Procesor: 16 procesorów wirtualnych vCPU (2 gniazda * 8 rdzeni o 2,5 GHz)<br/><br/> Pamięć: 32 GB<br/><br/> Dysk pamięci podręcznej: 1 TB<br/><br/> Szybkość zmian danych: 1 TB do 2 TB.<br/><br/> Oprócz określania wymagań dotyczących rozmiarów firma Contoso potrzebuje upewnić się, że serwer konfiguracji jest optymalnie zlokalizowany, w tej samej sieci i segmencie LAN co maszyny wirtualne, które będą migrowane.
-**Serwer przetwarzania** | Firma Contoso będzie wdrażać autonomiczny dedykowany serwer przetwarzania z możliwością replikowania 100–200 maszyn wirtualnych:<br/><br/> Procesor: 16 procesorów wirtualnych vCPU (2 gniazda * 8 rdzeni o 2,5 GHz)<br/><br/> Pamięć: 32 GB<br/><br/> Dysk pamięci podręcznej: 1 TB<br/><br/> Szybkość zmian danych: 1 TB do 2 TB.<br/><br/> Serwer przetwarzania będzie działać intensywnie i dlatego powinien znajdować się na hoście ESXi, który może obsłużyć dyskowe operacje we/wy, ruch sieciowy i procesor wymagany do replikacji. Firma Contoso rozważy zastosowanie w tym celu dedykowanego hosta.
+**Serwer konfiguracji** | W oparciu o szacunkową łączną replikację 100 = 200 maszyn wirtualnych w firmie Contoso i [wymagania dotyczące ustalania wielkości serwera konfiguracji](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) firma Contoso oszacowała, że potrzebuje następującej maszyny serwera konfiguracji:<br/><br/> Procesor: 16 procesorów wirtualnych vCPU (2 gniazda &#215; 8 rdzeni o 2,5 GHz)<br/><br/> Pamięć: 32 GB<br/><br/> Dysk pamięci podręcznej: 1 TB<br/><br/> Szybkość zmian danych: 1 TB do 2 TB.<br/><br/> Oprócz określania wymagań dotyczących rozmiarów firma Contoso potrzebuje upewnić się, że serwer konfiguracji jest optymalnie zlokalizowany, w tej samej sieci i segmencie LAN co maszyny wirtualne, które będą migrowane.
+**Serwer przetwarzania** | Firma Contoso będzie wdrażać autonomiczny dedykowany serwer przetwarzania z możliwością replikowania 100–200 maszyn wirtualnych:<br/><br/> Procesor: 16 procesorów wirtualnych vCPU (2 gniazda &#215; 8 rdzeni o 2,5 GHz)<br/><br/> Pamięć: 32 GB<br/><br/> Dysk pamięci podręcznej: 1 TB<br/><br/> Szybkość zmian danych: 1 TB do 2 TB.<br/><br/> Serwer przetwarzania będzie działać intensywnie i dlatego powinien znajdować się na hoście ESXi, który może obsłużyć dyskowe operacje we/wy, ruch sieciowy i procesor wymagany do replikacji. Firma Contoso rozważy zastosowanie w tym celu dedykowanego hosta.
 **Sieć** | Firma Contoso przejrzała bieżącą infrastrukturę międzylokacyjnej sieci VPN i zdecydowała się na wdrożenie usługi Azure ExpressRoute. Implementacja ma kluczowe znaczenie, ponieważ zmniejszy opóźnienie i zwiększy przepustowość do głównego regionu Azure firmy Contoso, czyli Wschodnie stany USA 2.<br/><br/> **Monitorowanie:** Firma Contoso będzie musiała starannie monitorować przepływ danych z serwera przetwarzania. Jeśli dane przeciążą przepustowość sieci, firma Contoso [rozważyć ograniczanie przepustowości serwera przetwarzania](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
-**Magazyn platformy Azure** | Firma Contoso musi określić odpowiedni typ i liczbę docelowych kont magazynu platformy Azure na potrzeby migracji. Usługa Site Recovery replikuje dane maszyn wirtualnych do magazynu Azure.<br/><br/> Usługa Site Recovery może przeprowadzać replikację do kont magazynu w warstwie Standardowa lub Premium (SSD).<br/><br/> W celu podjęcia decyzji na temat magazynu firma Contoso musi przejrzeć [limity przestrzeni dyskowej](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) i wziąć pod uwagę oczekiwany wzrost oraz zwiększone użycie w miarę upływu czasu. Mając na względzie szybkość i priorytet migracji, firma Contoso zdecydowała się korzystać z dysków SSD warstwy Premium<br/><br/>
+**Magazyn platformy Azure** | Firma Contoso musi określić odpowiedni typ i liczbę docelowych kont magazynu platformy Azure na potrzeby migracji. Usługa Site Recovery replikuje dane maszyn wirtualnych do magazynu Azure.<br/><br/> Usługa Site Recovery może przeprowadzać replikację do kont magazynu w warstwie Standardowa lub Premium (SSD).<br/><br/> W celu podjęcia decyzji na temat magazynu firma Contoso musi przejrzeć [limity przestrzeni dyskowej](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) i wziąć pod uwagę oczekiwany wzrost oraz zwiększone użycie w miarę upływu czasu. Mając na względzie szybkość i priorytet migracji, firma Contoso zdecydowała się korzystać z dysków SSD Premium.<br/><br/>
 Firma Contoso podjęła decyzję o użyciu dysków zarządzanych dla wszystkich maszyn wirtualnych wdrożonych na platformie Azure. Wymagana liczba operacji we/wy decyduje o wyborze dysków HDD w warstwie Standardowa, SSD w warstwie Standardowa lub Premium (SSD).<br/><br/>
 
 <!--markdownlint-enable MD033 -->
@@ -281,7 +281,7 @@ Usługa Azure Database Migration Service jest w pełni zarządzaną usługą, kt
 
 Usługa DMS nie jest jedynym narzędziem do migracji bazy danych firmy Microsoft. Zapoznaj się z [porównaniem narzędzi i usług](https://blogs.msdn.microsoft.com/datamigration/2017/10/13/differentiating-microsofts-database-migration-tools-and-services).
 
-##### <a name="using-dms-at-scale"></a>Korzystanie z usługi DMS na dużą skalę
+##### <a name="use-dms-at-scale"></a>Korzystanie z funkcji DMS na dużą skalę
 
 Firma Contoso będzie używać usługi DMS podczas migrowania z programu SQL Server.
 
@@ -291,7 +291,7 @@ Firma Contoso będzie używać usługi DMS podczas migrowania z programu SQL Ser
 
 - Inna taktyką skalowania dla firmy Contoso jest tymczasowo skalowanie w górę wystąpienia docelowego bazy danych Azure SQL lub MySQL do jednostki SKU warstwy Premium podczas migracji danych. Pozwala to zminimalizować ograniczanie przepustowości bazy danych, które mogłoby mieć wpływ na działania transferu danych w przypadku korzystania z jednostek SKU niższego poziomu.
 
-##### <a name="using-other-tools"></a>Korzystanie z innych narzędzi
+##### <a name="use-other-tools"></a>Korzystanie z innych narzędzi
 
 Oprócz DMS firma Contoso może używać innych narzędzi i usług do identyfikowania informacji o maszynach wirtualnych.
 

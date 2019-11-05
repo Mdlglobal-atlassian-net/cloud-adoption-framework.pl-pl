@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 170054f07cb7e8282b3abd582e484a730aca1280
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: beac1a3d459bd0f8654a9c746bc25981ad366fb0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027602"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566757"
 ---
-# <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antywzorce organizacyjne: Silosy i fiefdoms
+# <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antywzorce organizacyjne: silosy i fiefdoms
 
 Sukces w przypadku każdej istotnej zmiany w praktyce biznesowej, kulturze lub operacji technologicznych wymaga wzrostu sposób myślenia. Na serca sposób myślenia wzrostu jest akceptowanie zmiany i możliwość potencjalnego działania, a nie niejednoznaczność.
 
@@ -48,13 +48,13 @@ Odporność można łatwo mylić z tarciem. Istniejące zespoły IT mogą być m
 
 Udostępnienie tych zespołów przy użyciu mechanizmu komunikowania się w przyszłej, wyglądającej terminologii spowoduje dodanie punktów danych, zidentyfikowanie luk i w dobrej kondycji wokół proponowanych rozwiązań. To dodatkowe tarcie spowoduje odnoszenie się od nieprzewidzianych krawędzi rozwiązań i przeprowadzenia dłuższych wartości. Po prostu zmiana konwersacji może stworzyć czytelność wokół złożonych tematów i generować energię, aby zapewnić bardziej pomyślne rozwiązania.
 
-Wskazówki dotyczące [definiowania zasad firmowych](../govern/corporate-policy.md) mają na celu ułatwienie konwersacji opartych na ryzyku ze strony zainteresowanych uczestników firmy. Jednak ten sam model może służyć do ułatwienia konwersacji z zespołami, które są postrzegane jako odporne na chmurę. Gdy postrzeganie odporności jest szerokie, może być konieczne uwzględnienie praktyk rozpoznawania odporności w karcie dla [zespołu](./cloud-governance.md)zarządzającego chmurą.
+Wskazówki dotyczące [definiowania zasad firmowych](../govern/corporate-policy.md) mają na celu ułatwienie konwersacji opartych na ryzyku ze strony zainteresowanych uczestników firmy. Jednak ten sam model może służyć do ułatwienia konwersacji z zespołami, które są postrzegane jako odporne na chmurę. Gdy postrzeganie odporności jest szerokie, może być konieczne uwzględnienie praktyk rozpoznawania odporności w karcie dla [zespołu zarządzającego chmurą](./cloud-governance.md).
 
 ## <a name="antipatterns"></a>Antywzorce
 
 Wzrost organiczny i reagowanie w ten sposób tworzący prawidłowe zespoły IT mogą również powodować antywzorce, które blokują transformację i wdrażanie w chmurze. Silosy IT i fiefdoms różnią się od naturalnych mikrokultur w dobrej kondycji zespołów IT. W każdym z wzorców fokus zespołu jest ukierunkowany na ochronę ich "Turf". Gdy członkowie zespołu są z możliwością przeprowadzenia zmiany i ulepszania operacji, zainwestowają więcej czasu i energii w celu zablokowania zmiany niż znalezienie pozytywnego rozwiązania.
 
-Jak wspomniano wcześniej, w dobrej kondycji zespoły IT mogą stworzyć naturalną odporność i pozytywne tarcie. Silosy i fiefdoms są różnymi wyzwaniami. Brak udokumentowanego wiodącego wskaźnika dla obu wzorców. Te antywzorce mają być identyfikowane po upływie miesięcznych wysiłków w [chmurze doskonałości](./cloud-center-of-excellence.md) i [zespołu](./cloud-governance.md) nadzoru chmurowego. Są one odnajdywane w wyniku ciągłej odporności.
+Jak wspomniano wcześniej, w dobrej kondycji zespoły IT mogą stworzyć naturalną odporność i pozytywne tarcie. Silosy i fiefdoms są różnymi wyzwaniami. Brak udokumentowanego wiodącego wskaźnika dla obu wzorców. Te antywzorce mają być identyfikowane po upływie miesięcznych wysiłków w [chmurze doskonałości](./cloud-center-of-excellence.md) i [zespołu nadzoru chmurowego](./cloud-governance.md) . Są one odnajdywane w wyniku ciągłej odporności.
 
 Nawet w toksycznych kulturach wysiłki CCoE i zespół nadzoru chmurowego powinny pomóc w zwiększeniu wzrostu kulturowego i postępu technicznego. Po upływie kilku zespołów mogą nadal nie być widoczne żadne objawy zachowań włącznie i siedziby w celu zmiany. Zespoły te mogą działać w jednym z następujących modeli antywzorców: silosy i fiefdoms. Chociaż te modele mają podobne objawy, główna przyczyna i podejścia do odporności są radykalnie różne między nimi.
 
@@ -64,7 +64,7 @@ Członkowie zespołu w silosie IT mogą definiować siebie przez ich wyrównanie
 
 Ten Antywzorzec często wynika ze wspólnego pasją dla określonego rozwiązania. Silosy IT są następnie wzmacniane przez Zaawansowane umiejętności zespołu w wyniku inwestycji w to konkretne rozwiązanie. Ta wyższa umiejętność może być akceleratorem do wdrażania rozwiązań w chmurze, jeśli odporność na zmianę można przezwyciężyć. Może być również głównym blokiem, jeśli silosy są zerwane lub jeśli członkowie zespołu nie mogą precyzyjnie oszacować opcji. Na szczęście silosy IT można często przezwyciężyć bez jakichkolwiek znaczących zmian w schemacie organizacyjnym.
 
-### <a name="addressing-resistance-from-it-silos"></a>Rozwiązywanie odporności od silosów IT
+### <a name="address-resistance-from-it-silos"></a>Odporność adresów z silosów IT
 
 Silosy IT mogą być rozwiązywane przy użyciu poniższych metod. Najlepsze podejście będzie zależeć od głównej przyczyny odporności.
 
@@ -112,16 +112,18 @@ Fiefdoms są szczególnie powszechne w organizacjach, które napotykają, że do
 
 Ogólnie rzecz biorąc, fiefdoms są wynikiem Menedżera linii, który obawia się o utratę zespołu i skojarzonej z nią podstawy. Ci liderzy często mają sens z cłem dla zespołu i potrzebują ochrony swoich podwładnych przed skutkami negatywnymi. Wyrażenia, takie jak "Ochrona zespołu przed zmianami" i "chronienie zespołu przed zakłóceniami procesów" mogą być wskaźnikami niechronionego Menedżera, który może wymagać dodatkowego wsparcia od lidera.
 
-### <a name="addressing-resistance-from-it-fiefdoms"></a>Odporność od fiefdoms IT
+### <a name="address-resistance-from-it-fiefdoms"></a>Odporność na adresy od fiefdoms IT
 
-Fiefdoms IT może przedstawiać nieco wzrostu, postępując zgodnie z podejściem do odporności [silosów IT](#addressing-resistance-from-it-silos). Przed podjęciem próby rozwiązania odporności od fiefdom IT zalecamy, aby najpierw traktować zespół, taki jak silos IT. Jeśli te typy podejścia nie wydają żadnej znaczącej zmiany, odporny zespół może mieć wpływ na Antywzorzec IT fiefdom. Głównym powodem jego fiefdoms jest nieco bardziej skomplikowane rozwiązanie, ponieważ odporność wynika z bezpośredniego Menedżera linii (lub lidera wyższego poziomu wykresu organizacyjnego). Wyzwania, które są oparte na silosie, są zwykle prostsze do przezwyciężenia.
+Fiefdoms IT może przedstawiać nieco wzrostu, postępując zgodnie z podejściem do [odporności silosów IT](#address-resistance-from-it-silos). Przed podjęciem próby rozwiązania odporności od fiefdom IT zalecamy, aby najpierw traktować zespół, taki jak silos IT. Jeśli te typy podejścia nie wydają żadnej znaczącej zmiany, odporny zespół może mieć wpływ na Antywzorzec IT fiefdom. Głównym powodem jego fiefdoms jest nieco bardziej skomplikowane rozwiązanie, ponieważ odporność wynika z bezpośredniego Menedżera linii (lub lidera wyższego poziomu wykresu organizacyjnego). Wyzwania, które są oparte na silosie, są zwykle prostsze do przezwyciężenia.
 
-W przypadku ciągłej odporności z usługi IT fiefdoms zapewnią działania związane z wdrażaniem w chmurze, może być to połączonego wysiłku, aby oszacować sytuację z istniejącymi liderami IT. Liderzy IT powinni uważnie rozważyć szczegółowe informacje od [zespołu strategii chmurowej](./cloud-strategy.md), [centrum usługi Cloud](./cloud-center-of-excellence.md)Insights i [zespół](./cloud-governance.md) nadzoru chmurowego przed podjęciem decyzji.
+W przypadku ciągłej odporności z usługi IT fiefdoms zapewnią działania związane z wdrażaniem w chmurze, może być to połączonego wysiłku, aby oszacować sytuację z istniejącymi liderami IT. Liderzy IT powinni uważnie rozważyć szczegółowe informacje od [zespołu strategii chmurowej](./cloud-strategy.md), [centrum usługi Cloud](./cloud-center-of-excellence.md)Insights i [zespół nadzoru chmurowego](./cloud-governance.md) przed podjęciem decyzji.
 
 > [!NOTE]
-> Liderzy IT nigdy nie mogą zmieniać wykresów organizacyjnych w sposób jasny. Powinny również sprawdzać poprawność i analizować opinie od poszczególnych zespołów pomocniczych. Jednak działania analizie przekształceń, takie jak wdrażanie w chmurze, mają na celu powiększanie podstawowych problemów, które były niezauważalne lub nie zostały rozwiązane długo przed tym nakładem pracy. Gdy fiefdoms uniemożliwia sukces firmy, zmiany lidera są możliwie największej konieczności.
+> Liderzy IT nigdy nie mogą zmieniać wykresów organizacyjnych w sposób jasny. Powinny również sprawdzać poprawność i analizować opinie od poszczególnych zespołów pomocniczych. Jednak wysiłki transformacji, takie jak wdrażanie w chmurze, mają na celu powiększanie podstawowych problemów, które były niezauważalne lub nie zostały rozwiązane długo przed tym nakładem pracy. Gdy fiefdoms uniemożliwia sukces firmy, zmiany lidera są możliwie największej konieczności.
 >
 > Na szczęście usuwanie lidera fiefdom nie jest często kończyć. Te silne interesuję liderzy mogą często przechodzić do roli zarządzania po krótkim czasie odbicia. Dzięki właściwej obsłudze ta zmiana może być w dobrej kondycji dla lidera fiefdom i bieżącego zespołu.
+
+<!-- -->
 
 > [!CAUTION]
 > W przypadku menedżerów IT fiefdoms ochrona zespołu przed ryzykiem jest jasno wartością lidera. Jednak istnieje drobna linia między ochroną i izolacją. Gdy zespół zablokował uczestnictwo w zmianach, może mieć konsekwencje psychologiczne i profesjonalne w zespole. Zaistnienie odporności na zmianę może być silne, szczególnie w czasie widocznej zmiany.
@@ -130,7 +132,7 @@ W przypadku ciągłej odporności z usługi IT fiefdoms zapewnią działania zwi
 
 Fiefdoms IT może być oznaką problemów z rozliderem systemu. Aby przezwyciężyć fiefdom IT, Liderzy IT muszą mieć możliwość wprowadzania zmian w operacjach, obowiązkach i czasami nawet osób, które zapewniają zarządzanie wierszami dla konkretnych zespołów. Gdy te zmiany są wymagane, należy się doejść do tych zmian za pomocą jasno i defensible punktów danych.
 
-Dostosowanie się do osób biorących udział w biznesie, motywacje biznesowe i wyniki biznesowe może być wymagane w celu przeprowadzenia niezbędnej zmiany. Partnerstwo z [zespołem strategii chmurowej](./cloud-strategy.md), [centrum w chmurze doskonałości](./cloud-center-of-excellence.md)i zespołem nadzoru [chmurowego](./cloud-governance.md) mogą zapewnić punkty danych, które są zbędne dla pozycji defensible. W razie potrzeby te zespoły powinny być uwzględniane w eskalacji grup, aby sprostać wyzwaniom, które nie mogą być adresowane do samego lidera.
+Dostosowanie się do osób biorących udział w biznesie, motywacje biznesowe i wyniki biznesowe może być wymagane w celu przeprowadzenia niezbędnej zmiany. Partnerstwo z [zespołem strategii chmurowej](./cloud-strategy.md), [centrum w chmurze doskonałości](./cloud-center-of-excellence.md)i [zespołem nadzoru chmurowego](./cloud-governance.md) mogą zapewnić punkty danych, które są zbędne dla pozycji defensible. W razie potrzeby te zespoły powinny być uwzględniane w eskalacji grup, aby sprostać wyzwaniom, które nie mogą być adresowane do samego lidera.
 
 ## <a name="next-steps"></a>Następne kroki
 

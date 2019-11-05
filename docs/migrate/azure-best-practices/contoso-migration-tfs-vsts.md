@@ -9,24 +9,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 43e577eb429928efd0857549319e46a36c49a9e1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 887d2e2ec410b761fdc81b87d83f3a471c3bf99e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025092"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566551"
 ---
-# <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Refaktoryzowanie wdrożenia serwera Team Foundation Server do usług Azure DevOps Services
+# <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Refaktoryzowanie wdrożenia serwera Team Foundation Server do usługi Azure DevOps Services
 
 W tym artykule pokazano, jak fikcyjna firma Contoso refaktoryzuje swoje lokalne wdrożenie serwera Team Foundation Server (TFS) przez migrację do usług Azure DevOps Services na platformie Azure. Zespół deweloperów firmy Contoso używał serwera TFS do współpracy w zespole i kontroli kodu źródłowego przez ostatnie pięć lat. Teraz firma chce przeprowadzić migrację do rozwiązania chmurowego do programowania, testowania i kontroli źródła. Usługi Azure DevOps Services pomogą im w przejściu do modelu Azure DevOps i tworzeniu nowych aplikacji natywnych dla chmury.
 
-## <a name="business-drivers"></a>Cele biznesowe
+## <a name="business-drivers"></a>Czynniki biznesowe
 
 Zespół liderów IT we współpracy z partnerami biznesowymi firmy ustalił cele do osiągnięcia w przyszłości. Partnerzy nie są zbytnio zainteresowani narzędziami i technologiami deweloperskimi, ale uzgodniono następujące punkty:
 
-- **Oprogramowanie:** Niezależnie od głównego obszaru działalności wszystkie firmy, w tym firma Contoso, są obecnie także firmami programistycznymi. Kierownictwo jest zainteresowane włączeniem działu IT w proces kierowania firmą poprzez wprowadzanie nowych rozwiązań dla użytkowników i nowych środowisk dla klientów.
-- **Wydajność:** Firma Contoso chce usprawnić procesy i wyeliminować niepotrzebne czynności wykonywane przez deweloperów i użytkowników. Dzięki temu będzie mogła sprawniej spełniać oczekiwania klientów. Firma potrzebuje rozwiązań informatycznych, które pozwolą jej działać szybko, oszczędzając czas i pieniądze.
-- **Elastyczność:** Zespół IT firmy Contoso musi reagować na potrzeby biznesowe szybciej niż rynek, aby zapewnić firmie sukces w globalnej gospodarce. Rozwiązania IT nie mogą ograniczać firmy w działaniu.
+- **Oprogramowanie:** Niezależnie od podstawowej firmy wszystkie firmy są teraz firmowymi oprogramowaniem, w tym contoso. Kierownictwo jest zainteresowane włączeniem działu IT w proces kierowania firmą poprzez wprowadzanie nowych rozwiązań dla użytkowników i nowych środowisk dla klientów.
+- **Wydajność:** Firma Contoso musi usprawnić proces i usunąć niepotrzebne procedury dla deweloperów i użytkowników. Dzięki temu będzie mogła sprawniej spełniać oczekiwania klientów. Firma potrzebuje rozwiązań informatycznych, które pozwolą jej działać szybko, oszczędzając czas i pieniądze.
+- **Elastyczność:** Firma Contoso musi reagować na potrzeby biznesowe i szybciej reagować niż w portalu Marketplace, aby zapewnić sukces w globalnej gospodarce. Rozwiązania IT nie mogą ograniczać firmy w działaniu.
 
 ## <a name="migration-goals"></a>Cele migracji
 
@@ -72,7 +72,7 @@ Oto elementy, których firma Contoso potrzebuje do realizacji tego scenariusza.
 **Wymagania** | **Szczegóły**
 --- | ---
 **Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje we wcześniejszym artykule z tej serii. Jeśli nie masz subskrypcji platformy Azure, utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.<br/><br/> Jeśli potrzebujesz bardziej szczegółowych uprawnień, zapoznaj się z [tym artykułem](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Infrastruktura platformy Azure wymagana do migracji](./contoso-migration-infrastructure.md).
+**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Azure infrastructure for Migration (Infrastruktura platformy Azure wymagana do migracji)](./contoso-migration-infrastructure.md).
 **Lokalny serwer TFS** | W środowisku lokalnym musi działać wersja serwera TFS 2018 Update 2 lub musi zostać przeprowadzone uaktualnienie do tej wersji w ramach procesu migracji.
 
 ## <a name="scenario-steps"></a>Etapy scenariusza
@@ -81,12 +81,12 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 
 > [!div class="checklist"]
 >
-> - **Krok 1. Utworzenie konta usługi Azure Storage.** To konto magazynu będzie używane podczas procesu migracji.
-> - **Krok 2. Uaktualnienie serwera TFS.** Firma Contoso uaktualni wdrożenie do wersji TFS 2018 Update 2.
-> - **Krok 3. Walidacja kolekcji.** Firma Contoso przeprowadzi walidację kolekcji serwera TFS w ramach przygotowania do migracji.
-> - **Krok 4. Utworzenie pliku przygotowania.** Firma Contoso utworzy pliki migracji za pomocą narzędzia do migracji serwera TFS.
+> - **Krok 1. Tworzenie konta usługi Azure Storage.** To konto magazynu będzie używane podczas procesu migracji.
+> - **Krok 2. Uaktualnianie programu TFS.** Firma Contoso uaktualni wdrożenie do wersji TFS 2018 Update 2.
+> - **Krok 3. Weryfikowanie kolekcji.** Firma Contoso przeprowadzi walidację kolekcji serwera TFS w ramach przygotowania do migracji.
+> - **Krok 4. Kompilowanie pliku przygotowania.** Firma Contoso utworzy pliki migracji za pomocą narzędzia do migracji serwera TFS.
 
-## <a name="step-1-create-a-storage-account"></a>Krok 1: Tworzenie konta magazynu
+## <a name="step-1-create-a-storage-account"></a>Krok 1. Tworzenie konta magazynu
 
 1. Administratorzy firmy Contoso tworzą konto magazynu (**contosodevmigration**) w witrynie Azure Portal.
 2. Umieszczają je w regionie pomocniczym używanym na potrzeby trybu failover — Środkowe stany USA. Używają standardowego konta ogólnego przeznaczenia z magazynem lokalnie nadmiarowym.
@@ -98,7 +98,7 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 - [Introduction to Azure Storage (Wprowadzenie do usługi Azure Storage)](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 - [Create a storage account (Tworzenie konta magazynu)](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account).
 
-## <a name="step-2-upgrade-tfs"></a>Krok 2: Uaktualnienie serwera TFS
+## <a name="step-2-upgrade-tfs"></a>Krok 2. Uaktualnianie TFS
 
 Administratorzy firmy Contoso uaktualniają serwer TFS do wersji TFS 2018 Update 2. Przed rozpoczęciem:
 
@@ -132,9 +132,9 @@ Administratorzy przeprowadzają uaktualnienie w następujący sposób:
 
 **Potrzebujesz dodatkowej pomocy?**
 
-Dowiedz się więcej na temat [uaktualniania serwera TFS](/tfs/server/upgrade/get-started).
+Dowiedz się więcej na temat [uaktualniania serwera TFS](https://docs.microsoft.com/tfs/server/upgrade/get-started).
 
-## <a name="step-3-validate-the-tfs-collection"></a>Krok 3: Walidacja kolekcji serwera TFS
+## <a name="step-3-validate-the-tfs-collection"></a>Krok 3. Sprawdzanie poprawności kolekcji TFS
 
 Administratorzy firmy Contoso uruchamiają narzędzie do migracji serwera TFS dla bazy danych kolekcji ContosoDev, aby przeprowadzić jej walidację przed migracją.
 
@@ -174,7 +174,7 @@ Administratorzy firmy Contoso uruchamiają narzędzie do migracji serwera TFS dl
 
     ![TFS](./media/contoso-migration-tfs-vsts/collection9.png)
 
-## <a name="step-4-create-the-migration-files"></a>Krok 4: Utworzenie plików migracji
+## <a name="step-4-create-the-migration-files"></a>Krok 4. Tworzenie plików migracji
 
 Po zakończeniu walidacji administratorzy firmy Contoso mogą użyć narzędzia do migracji serwera TFS do utworzenia plików migracji.
 
@@ -216,7 +216,7 @@ Po zakończeniu walidacji administratorzy firmy Contoso mogą użyć narzędzia 
 
     ![Przygotowanie](./media/contoso-migration-tfs-vsts/prep6.png)
 
-## <a name="step-5-migrate-to-azure-devops-services"></a>Krok 5. Migracja do usług Azure DevOps Services
+## <a name="step-5-migrate-to-azure-devops-services"></a>Krok 5. Migracja do Azure DevOps Services
 
 Po wykonaniu czynności przygotowawczych administratorzy firmy Contoso mogą przystąpić do migracji. Po migracji sposób kontroli wersji zostanie zmieniony z kontroli wersji serwera Team Foundation na usługę Git.
 
@@ -235,38 +235,38 @@ Przed odłączeniem kolekcji administratorzy firmy Contoso wykonują lokalną ko
 
 1. W konsoli administracyjnej serwera TFS wybierają kolekcję, która ma zostać odłączona (**ContosoDev**).
 
-    ![Migrate (Migracja)](./media/contoso-migration-tfs-vsts/migrate1.png)
+    ![Migrowanie](./media/contoso-migration-tfs-vsts/migrate1.png)
 
 2. Na karcie **General** (Ogólne) wybierają pozycję **Detach Collection** (Odłącz kolekcję).
 
-    ![Migrate (Migracja)](./media/contoso-migration-tfs-vsts/migrate2.png)
+    ![Migrowanie](./media/contoso-migration-tfs-vsts/migrate2.png)
 
 3. W kreatorze Detach Team Project Collection (Odłączanie kolekcji projektów zespołowych) w sekcji **Service Message** (Komunikat usługi) wpisują komunikat dla użytkowników, którzy będą próbowali połączyć się z projektami w kolekcji.
 
-    ![Migrate (Migracja)](./media/contoso-migration-tfs-vsts/migrate3.png)
+    ![Migrowanie](./media/contoso-migration-tfs-vsts/migrate3.png)
 
 4. W sekcji **Detach progress** (Postęp odłączania) monitorują postęp, a po zakończeniu procesu wybierają pozycję **Next** (Dalej).
 
-    ![Migrate (Migracja)](./media/contoso-migration-tfs-vsts/migrate4.png)
+    ![Migrowanie](./media/contoso-migration-tfs-vsts/migrate4.png)
 
 5. W sekcji **Readiness Checks** (Kontrola gotowości) po zakończeniu kontroli wybierają pozycję **Detach** (Odłącz).
 
-    ![Migrate (Migracja)](./media/contoso-migration-tfs-vsts/migrate5.png)
+    ![Migrowanie](./media/contoso-migration-tfs-vsts/migrate5.png)
 
 6. Wybierają pozycję **Close** (Zamknij), aby zakończyć.
 
-    ![Migrate (Migracja)](./media/contoso-migration-tfs-vsts/migrate6.png)
+    ![Migrowanie](./media/contoso-migration-tfs-vsts/migrate6.png)
 
 7. Kolekcja nie jest już wymieniona w konsoli administracyjnej serwera TFS.
 
-    ![Migrate (Migracja)](./media/contoso-migration-tfs-vsts/migrate7.png)
+    ![Migrowanie](./media/contoso-migration-tfs-vsts/migrate7.png)
 
 ### <a name="generate-a-dacpac"></a>Generowanie pakietu DACPAC
 
 Firma Contoso tworzy kopię zapasową (pakiet DACPAC) do zaimportowania w usługach Azure DevOps Services.
 
 - Do utworzenia pakietu DACPAC jest używane narzędzie SqlPackage.exe z zestawu SQL Server Data Tools. W ramach zestawu SQL Server Data Tools instalowanych jest kilka wersji narzędzia SqlPackage.exe, które znajdują się w folderach o nazwach takich jak 120, 130 i 140. Ważne jest, aby użyć odpowiedniej wersji do przygotowania pakietu DACPAC.
-- W przypadku wersji serwera TFS 2018 należy użyć narzędzia SqlPackage.exe z folderu o numerze 140 lub wyższym. W przypadku serwera CONTOSOTFS ten plik znajduje się w folderze: **C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140**.
+- W przypadku wersji serwera TFS 2018 należy użyć narzędzia SqlPackage.exe z folderu o numerze 140 lub wyższym. W przypadku CONTOSOTFS ten plik znajduje się w folderze: **C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140**.
 
 Administratorzy firmy Contoso generują pakiet DACPAC w następujący sposób:
 
@@ -276,15 +276,15 @@ Administratorzy firmy Contoso generują pakiet DACPAC w następujący sposób:
     SqlPackage.exe /sourceconnectionstring:"Data Source=SQLSERVERNAME\INSTANCENAME;Initial Catalog=Tfs_ContosoDev;Integrated Security=True" /targetFile:C:\TFSMigrator\Tfs_ContosoDev.dacpac /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory
     ```
 
-    ![Tworzenie kopii zapasowej](./media/contoso-migration-tfs-vsts/backup1.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup1.png)
 
 2. Po uruchomieniu polecenia zostanie wyświetlony następujący komunikat.
 
-    ![Tworzenie kopii zapasowej](./media/contoso-migration-tfs-vsts/backup2.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup2.png)
 
 3. Administratorzy weryfikują właściwości pliku DACPAC.
 
-    ![Tworzenie kopii zapasowej](./media/contoso-migration-tfs-vsts/backup3.png)
+    ![Backup](./media/contoso-migration-tfs-vsts/backup3.png)
 
 ### <a name="update-the-file-to-storage"></a>Przekazywanie pliku do magazynu
 
@@ -292,27 +292,27 @@ Po utworzeniu pliku DACPAC firma Contoso przekazuje go do usługi Azure Storage.
 
 1. Administratorzy pobierają i instalują [Eksplorator usługi Azure Storage](https://azure.microsoft.com/features/storage-explorer).
 
-    ![Upload](./media/contoso-migration-tfs-vsts/backup5.png)
+    ![Przekazywanie](./media/contoso-migration-tfs-vsts/backup5.png)
 
 2. Łączą się z subskrypcją i znajdują konto magazynu utworzone na potrzeby migracji (**contosodevmigration**). Tworzą nowy kontener obiektów blob o nazwie **azuredevopsmigration**.
 
-    ![Upload](./media/contoso-migration-tfs-vsts/backup6.png)
+    ![Przekazywanie](./media/contoso-migration-tfs-vsts/backup6.png)
 
 3. Wskazują plik DACPAC do przekazania jako blokowy obiekt blob.
 
-    ![Upload](./media/contoso-migration-tfs-vsts/backup7.png)
+    ![Przekazywanie](./media/contoso-migration-tfs-vsts/backup7.png)
 
 4. Po przekazaniu pliku wybierają nazwę pliku i polecenie **Generuj sygnaturę dostępu współdzielonego**. Rozwijają kontenery obiektów blob na koncie magazynu, wybierają kontener zawierający pliki importu i wybierają polecenie **Pobierz sygnaturę dostępu współdzielonego**.
 
-    ![Upload](./media/contoso-migration-tfs-vsts/backup8.png)
+    ![Przekazywanie](./media/contoso-migration-tfs-vsts/backup8.png)
 
 5. Akceptują ustawienia domyślne i wybierają pozycję **Utwórz**. Umożliwia to dostęp przez 24 godziny.
 
-    ![Upload](./media/contoso-migration-tfs-vsts/backup9.png)
+    ![Przekazywanie](./media/contoso-migration-tfs-vsts/backup9.png)
 
 6. Kopiują adres URL sygnatury dostępu współdzielonego, aby móc użyć go w narzędziu do migracji serwera TFS.
 
-    ![Upload](./media/contoso-migration-tfs-vsts/backup10.png)
+    ![Przekazywanie](./media/contoso-migration-tfs-vsts/backup10.png)
 
 > [!NOTE]
 > Migracja musi nastąpić w dozwolonym przedziale czasu — w przeciwnym razie uprawnienia wygasną.
@@ -324,9 +324,9 @@ Wcześniej administratorzy firmy Contoso częściowo wypełnili plik specyfikacj
 
 Otwierają plik import.json i wypełniają następujące pola:
 
-- **Lokalizacja:** Lokalizacja klucza sygnatury dostępu współdzielonego wygenerowanej wcześniej.
-- **Dacpac:** Należy wskazać nazwę pliku DACPAC przekazanego na konto magazynu. Rozszerzenie „dacpac” musi zostać uwzględnione.
-- **ImportType:** Na tym etapie należy ustawić wartość DryRun.
+- **Lokalizacja:** Lokalizacja klucza sygnatury dostępu współdzielonego wygenerowanego powyżej.
+- **Dacpac:** Ustaw nazwę pliku DACPAC, który został przekazany do konta magazynu. Rozszerzenie „dacpac” musi zostać uwzględnione.
+- **Nieporttype:** Ustaw na DryRun teraz.
 
 ![Ustawienia importu](./media/contoso-migration-tfs-vsts/import1.png)
 

@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224343"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564312"
 ---
 # <a name="cloud-center-of-excellence"></a>Centrum doskonałości chmury
 
@@ -92,7 +92,7 @@ W programie Exchange dla tych korzyści istniejąca funkcja IT może być transa
 
 W dobrej kondycji firmy, ten proces negocjacji jest dynamiczną konwersacją między elementami równorzędnymi i partnerskimi zespołami IT. Szczegóły techniczne mogą być złożone, ale można nimi zarządzać, gdy rozumieją one cel i wspierają wysiłki CCoE. Gdy ta wartość jest mniejsza niż pomoc techniczna, Poniższa sekcja dotycząca włączania sukcesu CCoE może pomóc w przezwyciężeniu kultur kultury.
 
-## <a name="enabling-ccoe-success"></a>Włączanie CCoE
+## <a name="enable-ccoe-success"></a>Włącz pomyślne CCoE
 
 Przed przystąpieniem do tego modelu należy sprawdzić poprawność odporności firmy na sposób myślenia wzrostu i wygodę o wydaniu centralnych obowiązków. Jak wspomniano powyżej, celem CCoE jest wymiana kontroli nad elastyczność i szybkość.
 

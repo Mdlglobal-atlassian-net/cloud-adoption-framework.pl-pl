@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0118fcf3ca5b724a90d5e68482bfe6fe1a7e6abb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: d0d0fa87d424cbdf33e2b8516dd43b5156b55756
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548203"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566577"
 ---
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Refaktoryzowanie aplikacji lokalnej do aplikacji internetowej Azure App Service i bazy danych Azure SQL Database
 
@@ -97,7 +97,7 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
-[Data Migration Assistant (DMA)](/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia DMA do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie DMA ocenia równoważność funkcji między obiektami źródłowymi i docelowymi SQL oraz rekomenduje ulepszenia dotyczące wydajności i niezawodności. | Narzędzie to można pobrać bezpłatnie.
+[Data Migration Assistant (DMA)](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia DMA do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie DMA ocenia równoważność funkcji między obiektami źródłowymi i docelowymi SQL oraz rekomenduje ulepszenia dotyczące wydajności i niezawodności. | Narzędzie to można pobrać bezpłatnie.
 [Azure SQL Database](https://azure.microsoft.com/services/sql-database) | Usługa inteligentnej, w pełni zarządzanej relacyjnej bazy danych w chmurze. | Koszt oparty na funkcjach, przepływności i rozmiarze. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/sql-database/managed).
 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Tworzenie zaawansowanych aplikacji w chmurze za pomocą w pełni zarządzanej platformy | Koszt oparty na rozmiarze, lokalizacji i czasie użytkowania. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Zapewnia potok ciągłej integracji i ciągłego wdrażania (CI/CD) na potrzeby tworzenia aplikacji. Potok rozpoczyna się od repozytorium Git na potrzeby zarządzania kodem aplikacji, systemu kompilacji na potrzeby produkcji pakietów i innych artefaktów kompilacji oraz systemu zarządzania wydaniami na potrzeby wdrażania zmian w środowiskach deweloperskich, testowych i produkcyjnych.
@@ -396,7 +396,7 @@ Po migracji zasobów na platformę Azure firma Contoso musi w pełni zoperacjona
 
 - Po wdrożeniu wszystkich zasobów firma Contoso powinna przypisać tagi platformy Azure zgodnie z [planem infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging).
 - Wszystkie koszty licencjonowania są wliczone w koszt usług PaaS używanych przez firmę Contoso. Ten koszt zostanie odjęty od umowy EA.
-- Firma włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
+- Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
 
 ## <a name="conclusion"></a>Podsumowanie
 

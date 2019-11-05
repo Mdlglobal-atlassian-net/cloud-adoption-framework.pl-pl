@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3f80454b864ae89f15a3be6d736192545683a0ed
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: fdde1d3619b8340fad31f4241bffeff9c51f0b38
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239270"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566518"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure i zawsze włączone grupy dostępności SQL Server
 
@@ -96,7 +96,7 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
-[Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Narzędzie DMA działa lokalnie z lokalnej maszyny programu SQL Server i migruje bazę danych z sieci VPN typu lokacja-lokacja do platformy Azure. | DMA to bezpłatne narzędzie z możliwością pobrania.
+[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Narzędzie DMA działa lokalnie z lokalnej maszyny programu SQL Server i migruje bazę danych z sieci VPN typu lokacja-lokacja do platformy Azure. | DMA to bezpłatne narzędzie z możliwością pobrania.
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Usługa Site Recovery orkiestruje odzyskiwanie po awarii i zarządza nim w przypadku maszyn wirtualnych platformy Azure, lokalnych maszyn wirtualnych i serwerów fizycznych. | Podczas replikacji na platformę Azure naliczane są opłaty za usługę Azure Storage. Maszyny wirtualne platformy Azure zostaną utworzone w momencie przejścia w tryb failover i wówczas będą naliczane opłaty. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/site-recovery) o opłatach i cenach.
 
 ## <a name="migration-process"></a>Proces migracji
@@ -657,7 +657,7 @@ Zespół ds. zabezpieczeń firmy Contoso sprawdza maszyny wirtualne platformy Az
 
 - Zespół przegląda sieciowe grupy zabezpieczeń używane do kontroli dostępu do maszyny wirtualnej. Sieciowe grupy zabezpieczeń zapewniają, że do aplikacji będzie przekazywany tylko dozwolony ruch.
 - Zespół rozważa zabezpieczenie danych na dysku przy użyciu usług Azure Disk Encryption i Key Vault.
-- Zespół powinien oszacować szyfrowanie Transparent Data Encryption (TDE), a następnie włączyć je w bazie danych SmartHotel360 działającej na nowym odbiorniku AOG SQL. [Dowiedz się więcej](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017).
+- Zespół powinien oszacować szyfrowanie Transparent Data Encryption (TDE), a następnie włączyć je w bazie danych SmartHotel360 działającej na nowym odbiorniku AOG SQL. [Dowiedz się więcej](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017).
 
 Aby uzyskać więcej informacji, zobacz [najlepsze rozwiązania w zakresie zabezpieczeń dotyczące obciążeń IaaS na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 

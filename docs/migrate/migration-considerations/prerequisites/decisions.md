@@ -1,21 +1,21 @@
 ---
-title: Decyzje, które mają wpływ na migracje
+title: Decyzje, które mają wpływ na migrację
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Ważne decyzje dotyczące procesu migracji
+description: Ważne decyzje dotyczące procesu migracji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14946c48e69471f72d4979d18f39e43e6ce374e1
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239937"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564579"
 ---
-# <a name="decisions-that-affect-migrations"></a>Decyzje, które mają wpływ na migracje
+# <a name="decisions-that-affect-migration"></a>Decyzje, które mają wpływ na migrację
 
 Podczas migracji występuje kilka czynników wpływających na decyzje i działania związane z realizacją. W tym artykule wyjaśniono główną motywację tych decyzji i przedstawiono kilka pytań dotyczących zasad migracji w tej sekcji wskazówek dotyczących struktury wdrażania chmury.
 
@@ -24,26 +24,26 @@ Podczas migracji występuje kilka czynników wpływających na decyzje i działa
 Cel każdego procesu wdrożenia może mieć znaczny wpływ na sugerowane podejście do jego wykonania.
 
 - **Migracja** Pilne czynniki biznesowe, szybkość wdrażania lub oszczędności kosztów to przykłady wyników operacyjnych. Te wyniki mają kluczowe znaczenie dla wysiłków, które przekształcają przejściowe zmiany w infrastrukturze IT lub modelach operacyjnych w wartość biznesową. Sekcja Migracja struktury wdrażania chmury skupia się w dużym stopniu na wynikach biznesowych związanych z migracją.
-- **Innowacje w zakresie aplikacji** Poprawa jakości obsługi klienta oraz rosnący udział w rynku to przykłady wyników przyrostowych. Te wyniki są skutkiem kolekcji zmian przyrostowych ukierunkowanych na potrzeby i wymagania bieżących klientów.
-- **Innowacje oparte na danych** Nowe produkty lub usługi, a w szczególności te, które są oparte na danych, są przykładami wyników zakłócających. Te wyniki są skutkiem eksperymentów i prognoz z wykorzystaniem danych w celu zakłócenia status quo na rynku.
+- **Innowacje w zakresie aplikacji.** Poprawa jakości obsługi klienta oraz rosnący udział w rynku to przykłady wyników przyrostowych. Te wyniki są skutkiem kolekcji zmian przyrostowych ukierunkowanych na potrzeby i wymagania bieżących klientów.
+- **Innowacje bazujące na danych.** Nowe produkty lub usługi, a w szczególności te, które są oparte na danych, są przykładami wyników zakłócających. Te wyniki są skutkiem eksperymentów i prognoz z wykorzystaniem danych w celu zakłócenia status quo na rynku.
 
 Każda firma chce uzyskiwać wiele takich wyników. Bez działań nie ma klientów i odwrotnie. Wdrażanie chmury nie różni się pod tym względem. Firmy często pracują nad osiągnięciem każdego z tych wyników, ale próbują skupić się na wszystkich jednocześnie, co powoduje zbytnie rozproszenie wysiłków i spowalnia postęp prac, które mogą być najbardziej korzystne dla firmy.
 
 To wymaganie wstępne nie jest zaleceniem, aby wybrać jeden z tych trzech celów, a jedynie ma na celu ułatwienie zespołowi strategicznemu ds. chmury i zespołowi wdrożeniowemu ds. chmury określenie zestawu priorytetów operacyjnych, którymi należy kierować się podczas wykonywania migracji w ciągu następnych trzech do sześciu miesięcy. Te priorytety należy określić przez uporządkowanie tych opcji w kolejności od *najważniejszej* do *najmniej ważnej* w odniesieniu do nakładu pracy, który ten zespół może wykonać w ciągu następnego kwartału lub dwóch.
 
-### <a name="acting-on-migration-outcomes"></a>Działania w kierunku osiągnięcia wyników migracji
+### <a name="act-on-migration-outcomes"></a>Działania dotyczące wyników migracji
 
 Jeśli wyniki operacyjne mają najwyższy priorytet na liście, ta sekcja struktury wdrażania chmury będzie odpowiednia dla Twojego zespołu. W tej sekcji założono, że konieczna jest priorytetyzacja szybkości i oszczędności kosztów jako kluczowych wskaźników wydajności (KPI), co sprawia, że model migracji do wdrożenia jest zgodny z wynikami. Model skoncentrowany na migracji jest silnie predykatowo związany z przenoszeniem i przenoszeniem zasobów infrastruktury jako usługi (IaaS) w celu wyczerpywania centrum danych i tworzenia oszczędności kosztów. W takim modelu może mieć miejsce modernizacja, ale jest ona drugorzędnym celem, dopóki nie zostanie zrealizowana główna misja migracji.
 
-### <a name="acting-on-application-innovations"></a>Działania w kierunku innowacji dotyczących aplikacji
+### <a name="act-on-application-innovations"></a>Działaj na innowacje aplikacji
 
 Jeśli udział w rynku i jakość obsługi klienta są głównymi celami, ta sekcja struktury wdrażania chmury może nie być najlepszym przewodnikiem dla wysiłków Twoich zespołów. Innowacje dotyczące aplikacji wymagają planu skoncentrowanego na modernizacji i przeniesieniu obciążeń, niezależnie od podstawowej infrastruktury. W takim przypadku wskazówki zawarte w tej sekcji mogą zawierać istotne informacje, ale mogą nie być najlepszym podejściem do podejmowania kluczowych decyzji.
 
-### <a name="acting-on-data-innovations"></a>Działania w kierunku innowacji dotyczących danych
+### <a name="act-on-data-innovations"></a>Działaj na innowacje dotyczące danych
 
 Jeśli dane, eksperymentowanie, badania i rozwój lub nowe produkty są priorytetem w ciągu następnych sześciu miesięcy, to nie jest to sekcja opisująca najodpowiedniejszą strukturę wdrażania chmury, którą należy się kierować podczas podejmowania wysiłków przez zespoły. W przypadku wszelkich wysiłków związanych z innowacjami dotyczącymi danych warto skorzystać ze wskazówek dotyczących migracji istniejących danych źródłowych. Jednak wysiłki powinny być skupione w szerszym zakresie na ruchu przychodzącym i integracji dodatkowych źródeł danych. Rozszerzenie tych wskazówek o prognozy i nowe środowiska jest znacznie ważniejsze niż migracja zasobów IaaS.
 
-## <a name="balancing-the-portfolio"></a>Równoważenie portfela
+## <a name="balance-the-portfolio"></a>Równoważenie portfela
 
 W tej sekcji opisującej strukturę wdrażania chmury przedstawiono teoretyczne rozwiązania, aby pomóc czytelnikom zrozumieć różne podejścia do zmian w ramach zrównoważonego portfolio. Artykuł dotyczący [równoważenia portfolio](../../expanded-scope/balance-the-portfolio.md) jest jednym z przykładów rozszerzonego zakresu w celu ułatwienia realizacji tej teorii.
 

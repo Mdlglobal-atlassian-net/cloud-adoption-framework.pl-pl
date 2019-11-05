@@ -1,27 +1,27 @@
 ---
-title: Przyspieszanie migracji przy użyciu hostów VMWare
+title: Przyspieszanie migracji przy użyciu hostów VMware
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Przyspieszanie migracji przy użyciu hostów VMWare
+description: Przyspieszanie migracji przy użyciu hostów VMware
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66a39d53adeaf73e96cf04bdc5f80fc9574b675a
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 724a227407f431e08b5344dfd1280397bfca9b65
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980207"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566883"
 ---
-# <a name="accelerate-migration-with-vmware-hosts"></a>Przyspieszanie migracji przy użyciu hostów VMWare
+# <a name="accelerate-migration-with-vmware-hosts"></a>Przyspieszanie migracji przy użyciu hostów VMware
 
-Migrowanie całego hosta VMWare może przenosić wiele obciążeń i wielu zasobów w ramach jednego wysiłku migracji. Poniższe wskazówki rozszerzają zakres [przewodnika migracji platformy Azure](../azure-migration-guide/index.md) za pomocą migracji hosta VMware. Większość wysiłku wymaganego do rozwinięcia tego zakresu występuje w ramach wymagań wstępnych i procesów migracji związanych z pracą związanymi z migracją.
+Migrowanie całego hosta VMware może przenosić wiele obciążeń i wielu zasobów w ramach jednego wysiłku migracji. Poniższe wskazówki rozszerzają zakres [przewodnika migracji platformy Azure](../azure-migration-guide/index.md) za pomocą migracji hosta VMware. Większość wysiłku wymaganego do rozwinięcia tego zakresu występuje w ramach wymagań wstępnych i procesów migracji związanych z pracą związanymi z migracją.
 
 ## <a name="suggested-prerequisites"></a>Sugerowane wymagania wstępne
 
-Podczas migrowania pierwszego hosta VMWare na platformę Azure należy spełnić pewne wymagania wstępne, aby przygotować wymagania dotyczące tożsamości, sieci i zarządzania. Po spełnieniu tych wymagań wstępnych każdy dodatkowy host powinien wymagać znacznie mniejszego wysiłku do migracji. Poniższe sekcje zawierają więcej szczegółowych informacji o wymaganiach wstępnych.
+Podczas migrowania pierwszego hosta VMware na platformę Azure należy spełnić pewne wymagania wstępne, aby przygotować wymagania dotyczące tożsamości, sieci i zarządzania. Po spełnieniu tych wymagań wstępnych każdy dodatkowy host powinien wymagać znacznie mniejszego wysiłku do migracji. Poniższe sekcje zawierają więcej szczegółowych informacji o wymaganiach wstępnych.
 
 ### <a name="secure-your-azure-environment"></a>Zabezpiecz swoje środowisko platformy Azure
 
@@ -44,15 +44,15 @@ Po ustaleniu wymagań związanych z zarządzaniem można ustanowić sieć prywat
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integracja z planem wdrażania chmury
 
-Po spełnieniu innych wymagań wstępnych należy uwzględnić każdy host VMWare w [planie wdrożenia chmury](../../plan/template.md). W ramach planu wdrażania chmury należy dodać każdy host do migracji jako [odrębne obciążenie](../../plan/workloads.md). W każdym obciążeniu Dodaj maszyny wirtualne, które mają zostać zmigrowane jako [zasoby](../../plan/workloads.md). Aby dodać obciążenia i zasoby do planu wdrożenia zbiorczo, zobacz [Dodawanie/Edytowanie elementów roboczych w programie Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Po spełnieniu innych wymagań wstępnych należy uwzględnić każdy host VMware w [planie wdrożenia chmury](../../plan/template.md). W ramach planu wdrażania chmury należy dodać każdy host do migracji jako [odrębne obciążenie](../../plan/workloads.md). W każdym obciążeniu Dodaj maszyny wirtualne, które mają zostać zmigrowane jako [zasoby](../../plan/workloads.md). Aby dodać obciążenia i zasoby do planu wdrożenia zbiorczo, zobacz [Dodawanie/Edytowanie elementów roboczych w programie Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 ## <a name="migrate-process-changes"></a>Zmiany procesu migracji
 
-Podczas każdej iteracji zespół ds. wdrażania działa w zaległościach w celu migrowania obciążeń o najwyższym priorytecie. Proces nie zmienia się w rzeczywistości z hostami VMWare. Gdy następne obciążenie w zaległości jest hostem VMWare, jedyną zmianą będzie użycie narzędzia.
+Podczas każdej iteracji zespół ds. wdrażania działa w zaległościach w celu migrowania obciążeń o najwyższym priorytecie. Proces nie zmienia się w rzeczywistości z hostami VMware. Gdy następne obciążenie w zaległości jest hostem VMware, jedyną zmianą będzie użycie narzędzia.
 
 W celu przepracowania migracji można użyć następujących narzędzi:
 
-- [Natywne narzędzia VMWare](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+- [Natywne narzędzia VMware](https://docs.microsoft.com/azure/vmware-cloudsimple/migrate-workloads?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 - [Azure Data Box](https://docs.microsoft.com/azure/vmware-cloudsimple/migration-using-azure-data-box?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 Alternatywnie można migrować obciążenia za pośrednictwem trybu failover odzyskiwania po awarii przy użyciu następujących narzędzi:

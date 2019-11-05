@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221447"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566485"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Ocena obciążeń lokalnych pod kątem migracji do platformy Azure
 
@@ -45,11 +45,11 @@ Na tym diagramie przedstawiono bieżącą infrastrukturę lokalną firmy Contoso
 - Firma Contoso ma trzy dodatkowe oddziały lokalne na terenie Stanów Zjednoczonych.
 - Główne centrum danych jest połączone z Internetem łączem światłowodowym Metro Ethernet (500 MB/s).
 - Każdy oddział jest połączony lokalnie z Internetem przy użyciu połączeń klasy biznesowej z tunelami IPsec sieci VPN z głównym centrum danych. Taka konfiguracja zapewnia trwałe połączenie całej sieci firmy Contoso i optymalizację łączności z Internetem.
-- Główne centrum danych jest w pełni zwirtualizowane przy użyciu programu VMware. Firma Contoso ma dwa hosty wirtualizacji ESXi 6.5, które są zarządzane za pomocą programu vCenter Server 6.5.
+- Główne centrum danych jest w pełni zwirtualizowane przy użyciu oprogramowania VMware. Firma Contoso ma dwa hosty wirtualizacji ESXi 6.5, które są zarządzane za pomocą programu vCenter Server 6.5.
 - Do zarządzania tożsamościami firma Contoso używa usługi Active Directory. Serwery DNS firmy Contoso działają w sieci wewnętrznej.
-- Kontrolery domeny w centrum danych działają na maszynach wirtualnych VMware. Kontrolery domeny w lokalnych oddziałach działają na serwerach fizycznych.
+- Kontrolery domeny w centrum danych działają na maszynach wirtualnych VMware. Kontrolery domeny w oddziałach lokalnych działają na serwerach fizycznych.
 
-## <a name="business-drivers"></a>Biznesowa siła napędowa
+## <a name="business-drivers"></a>Czynniki biznesowe
 
 Zespół liderów IT firmy Contoso w ścisłej współpracy z partnerami biznesowymi firmy ustalił, co firma będzie chciała osiągnąć dzięki migracji:
 
@@ -73,7 +73,7 @@ Do oceny migracji firma Contoso używa narzędzi firmy Microsoft. Narzędzia te 
 
 Technologia | Opis | Koszt
 --- | --- | ---
-[Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia Data Migration Assistant do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie Data Migration Assistant ocenia równoważność funkcji między źródłowymi i docelowymi elementami SQL. Wynikiem działania tego narzędzia są zalecenia dotyczące poprawy wydajności i niezawodności. | Narzędzie Data Migration Assistant można bezpłatnie pobrać.
+[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia Data Migration Assistant do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie Data Migration Assistant ocenia równoważność funkcji między źródłowymi i docelowymi elementami SQL. Wynikiem działania tego narzędzia są zalecenia dotyczące poprawy wydajności i niezawodności. | Narzędzie Data Migration Assistant można bezpłatnie pobrać.
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną.
 [Mapa usługi](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Usługa Azure Migrate za pomocą rozwiązania Service Map przedstawia zależności między maszynami, które firma chce zmigrować. | Rozwiązanie Service Map jest częścią dzienników usługi Azure Monitor. Obecnie firma Contoso może używać rozwiązania Service Map przez 180 dni bez naliczania opłat.
 
@@ -121,17 +121,17 @@ Firma Contoso przeprowadza ocenę w następujący sposób:
 
 > [!div class="checklist"]
 >
-> - **Krok 1. Pobranie i zainstalowanie narzędzia Data Migration Assistant.** Przedstawiciel firmy Contoso przygotowuje narzędzie Data Migration Assistant do oceny lokalnej bazy danych SQL Server.
-> - **Krok 2. Ocena bazy danych za pomocą narzędzia Data Migration Assistant.** Przedstawiciel firmy Contoso uruchamia ocenę bazy danych i analizuje ją.
-> - **Krok 3. Przygotowanie oceny maszyny wirtualnej za pomocą usługi Azure Migrate.** Przedstawiciel firmy Contoso konfiguruje konta lokalne i dostosowuje ustawienia programu VMware.
-> - **Krok 4. Odnajdywanie lokalnych maszyn wirtualnych przy użyciu usługi Azure Migrate.** Przedstawiciel firmy Contoso tworzy maszynę wirtualną modułu zbierającego usługi Azure Migrate. Następnie przedstawiciel firmy Contoso uruchamia moduł zbierający w celu odnalezienia maszyn wirtualnych do oceny.
-> - **Krok 5. Przygotowanie do analizy zależności przy użyciu usługi Azure Migrate.** Przedstawiciel firmy Contoso instaluje agentów usługi Azure Migrate na maszynach wirtualnych, dzięki czemu można zobaczyć mapowanie zależności między maszynami wirtualnymi.
-> - **Krok 6. Ocena maszyn wirtualnych za pomocą usługi Azure Migrate.** Przedstawiciel firmy Contoso sprawdza zależności, grupuje maszyny wirtualne i uruchamia ocenę. Gdy ocena jest gotowa, przedstawiciel firmy Contoso analizuje ją pod kątem przygotowania do migracji.
+> - **Krok 1. Pobieranie i Instalowanie Data Migration Assistant.** Przedstawiciel firmy Contoso przygotowuje narzędzie Data Migration Assistant do oceny lokalnej bazy danych SQL Server.
+> - **Krok 2. Ocena bazy danych przy użyciu Data Migration Assistant.** Przedstawiciel firmy Contoso uruchamia ocenę bazy danych i analizuje ją.
+> - **Krok 3: przygotowanie do oceny maszyny wirtualnej przy użyciu Azure Migrate.** Przedstawiciel firmy Contoso konfiguruje konta lokalne i dostosowuje ustawienia programu VMware.
+> - **Krok 4. odnajdywanie lokalnych maszyn wirtualnych przy użyciu Azure Migrate.** Przedstawiciel firmy Contoso tworzy maszynę wirtualną modułu zbierającego usługi Azure Migrate. Następnie przedstawiciel firmy Contoso uruchamia moduł zbierający w celu odnalezienia maszyn wirtualnych do oceny.
+> - **Krok 5. Przygotowanie do analizy zależności przy użyciu Azure Migrate.** Przedstawiciel firmy Contoso instaluje agentów usługi Azure Migrate na maszynach wirtualnych, dzięki czemu można zobaczyć mapowanie zależności między maszynami wirtualnymi.
+> - **Krok 6. Ocena maszyn wirtualnych przy użyciu Azure Migrate.** Przedstawiciel firmy Contoso sprawdza zależności, grupuje maszyny wirtualne i uruchamia ocenę. Gdy ocena jest gotowa, przedstawiciel firmy Contoso analizuje ją pod kątem przygotowania do migracji.
 
     > [!NOTE]
     > Assessments shouldn't just be limited to using tooling to discover information about your environment, you should schedule in time to speak to business owners, end users, other members within the IT department, etc in order to get a full picture of what is happening within the environment and understand things tooling cannot tell you. 
 
-## <a name="step-1-download-and-install-data-migration-assistant"></a>Krok 1: Pobranie i zainstalowanie narzędzia Data Migration Assistant
+## <a name="step-1-download-and-install-data-migration-assistant"></a>Krok 1. Pobieranie i Instalowanie Data Migration Assistant
 
 1. Przedstawiciel firmy Contoso pobiera narzędzie Data Migration Assistant z [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53595).
     - Narzędzie Data Migration Assistant można zainstalować na dowolnym komputerze, który może połączyć się z wystąpieniem programu SQL Server. Nie trzeba go uruchamiać na maszynie programu SQL Server.
@@ -139,7 +139,7 @@ Firma Contoso przeprowadza ocenę w następujący sposób:
 2. Przedstawiciel firmy Contoso uruchamia pobrany plik instalatora (DownloadMigrationAssistant.msi), aby rozpocząć instalację.
 3. Na stronie **Finish** (Zakończenie) przedstawiciel firmy Contoso wybiera pozycję **Launch Microsoft Data Migration Assistant** (Uruchom narzędzie Microsoft Data Migration Assistant) przed zakończeniem pracy kreatora.
 
-## <a name="step-2-run-and-analyze-the-database-assessment-for-smarthotel360"></a>Krok 2: Uruchamianie i analizowanie oceny bazy danych dla aplikacji SmartHotel360
+## <a name="step-2-run-and-analyze-the-database-assessment-for-smarthotel360"></a>Krok 2. Uruchamianie i analizowanie oceny bazy danych dla SmartHotel360
 
 Teraz firma Contoso może przeprowadzić ocenę lokalnej bazy danych SQL Server pod kątem aplikacji SmartHotel360.
 
@@ -188,7 +188,7 @@ Wyniki są wyświetlane zaraz po ich udostępnieniu. Po rozwiązaniu problemów 
     ![Data Migration Assistant — raport z zaleceniami dotyczącymi funkcji](./media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Przedstawiciel firmy Contoso powinien [włączyć funkcję Transparent Data Encryption](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) dla wszystkich baz danych SQL Server. Jest to szczególnie istotne, gdy baza danych znajduje się w chmurze, zamiast być hostowana w środowisku lokalnym. Funkcję Transparent Data Encryption należy włączyć dopiero po migracji. Jeśli ta funkcja jest już włączona, przedstawiciel firmy Contoso musi przenieść certyfikat lub klucz asymetryczny do głównej bazy danych na serwerze docelowym. Dowiedz się, jak [przenieść bazę danych chronioną przez funkcję Transparent Data Encryption do innego wystąpienia programu SQL Server](/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017).
+    > Przedstawiciel firmy Contoso powinien [włączyć funkcję Transparent Data Encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) dla wszystkich baz danych SQL Server. Jest to szczególnie istotne, gdy baza danych znajduje się w chmurze, zamiast być hostowana w środowisku lokalnym. Funkcję Transparent Data Encryption należy włączyć dopiero po migracji. Jeśli ta funkcja jest już włączona, przedstawiciel firmy Contoso musi przenieść certyfikat lub klucz asymetryczny do głównej bazy danych na serwerze docelowym. Dowiedz się, jak [przenieść bazę danych chronioną przez funkcję Transparent Data Encryption do innego wystąpienia programu SQL Server](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017).
 
 3. Przedstawiciel firmy Contoso może wyeksportować ocenę w formacie JSON lub CSV.
 
@@ -196,10 +196,10 @@ Wyniki są wyświetlane zaraz po ich udostępnieniu. Po rozwiązaniu problemów 
 > W przypadku ocen na dużą skalę:
 >
 > - Uruchom wiele ocen jednocześnie i wyświetl ich stany na stronie **All assessments** (Wszystkie oceny).
-> - Skonsoliduj oceny w [bazie danych programu SQL Server](/sql/dma/dma-consolidatereports?view=ssdt-18vs2017).
-> - Skonsoliduj oceny w [raporcie usługi Power BI](/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017).
+> - Skonsoliduj oceny w [bazie danych programu SQL Server](https://docs.microsoft.com/sql/dma/dma-consolidatereports?view=ssdt-18vs2017).
+> - Skonsoliduj oceny w [raporcie usługi Power BI](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017).
 
-## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>Krok 3: Przygotowanie oceny maszyny wirtualnej za pomocą usługi Azure Migrate
+## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>Krok 3. Przygotowanie do oceny maszyn wirtualnych za pomocą Azure Migrate
 
 Przedstawiciel firmy Contoso musi utworzyć konto VMware, którego usługa Azure Migrate będzie mogła użyć do automatycznego odnajdywania maszyn wirtualnych na potrzeby oceny. Należy sprawdzić uprawnienia do tworzenia maszyny wirtualnej, ustawić poziom statystyk i zwrócić uwagę na porty, które muszą być otwarte.
 
@@ -208,7 +208,7 @@ Przedstawiciel firmy Contoso musi utworzyć konto VMware, którego usługa Azure
 Funkcja odnajdywania maszyn wirtualnych wymaga konta tylko do odczytu w programie vCenter Server z następującymi właściwościami:
 
 - **Typ użytkownika:** Co najmniej użytkownik tylko do odczytu.
-- **Uprawnienia:** W przypadku obiektu centrum danych zaznacz pole wyboru **Propagate to Child Objects** (Propaguj do obiektów podrzędnych). W obszarze **Role** (Rola) wybierz pozycję **Read-only** (Tylko do odczytu).
+- **Uprawnienia:** W przypadku obiektu centrum danych zaznacz pole wyboru **Propaguj do obiektów podrzędnych** . W obszarze **Role** (Rola) wybierz pozycję **Read-only** (Tylko do odczytu).
 - **Szczegóły:** Użytkownik jest przypisany na poziomie centrum danych z dostępem do wszystkich obiektów w centrum danych.
 - Aby ograniczyć dostęp, przypisz do obiektów podrzędnych (hostów vSphere, magazynów danych, maszyn wirtualnych i sieci) rolę **No access** (Bez dostępu) z włączoną opcją **Propagate to child** (Propaguj do obiektów podrzędnych).
 
@@ -220,7 +220,7 @@ Przedstawiciel firmy Contoso weryfikuje, czy ma uprawnienia do tworzenia maszyny
 
 Ocena firmy Contoso korzysta z mapowania zależności. Mapowanie zależności wymaga zainstalowania agenta na maszynach wirtualnych, które będą oceniane. Agent musi mieć możliwość połączenia się z platformą Azure przez port TCP 443 na każdej maszynie wirtualnej. Dowiedz się więcej o [wymaganiach dotyczących połączenia](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid).
 
-## <a name="step-4-discover-vms"></a>Krok 4: Odnajdywanie maszyn wirtualnych
+## <a name="step-4-discover-vms"></a>Krok 4. odnajdywanie maszyn wirtualnych
 
 Na potrzeby odnajdywania maszyn wirtualnych przedstawiciel firmy Contoso tworzy projekt usługi Azure Migrate. Przedstawiciel firmy Contoso pobiera i konfiguruje maszynę wirtualną modułu zbierającego. Następnie przedstawiciel firmy Contoso uruchamia moduł zbierający w celu odnalezienia lokalnych maszyn wirtualnych.
 
@@ -247,7 +247,7 @@ Skonfiguruj nowy projekt usługi Azure Migrate w następujący sposób.
 
 7. Kliknij przycisk **Dalej**.
 
-8. W obszarze **Wybierz narzędzie oceny** wybierz pozycję **Azure Migrate: Ocena serwera** > **Dalej**.
+8. W **narzędziu Wybierz ocenę**wybierz pozycję **Azure Migrate: Ocena serwera** > **dalej**.
 
     ![Azure Migrate — narzędzie do oceny](./media/contoso-migration-assessment/assessment-tool.png)
 
@@ -259,9 +259,9 @@ Skonfiguruj nowy projekt usługi Azure Migrate w następujący sposób.
 
 ### <a name="download-the-collector-appliance"></a>Pobieranie urządzenia modułu zbierającego
 
-1. W obszarze **Cele migracji** > **Serwery** > **Azure Migrate: ocena serwera** kliknij pozycję **Odnajdź**.
+1. W obszarze **cele migracji** > **serwery** > **Azure Migrate: Ocena serwera**, **kliknij przycisk odkryj**.
 
-2. W obszarze **Odnajdź maszyny** > **Czy maszyny są zwirtualizowane?** kliknij pozycję **Tak, z funkcją VMware vSphere Hypervisor**.
+2. W obszarze **odnajdywanie maszyn** > **są zwirtualizowane maszyny?** kliknij przycisk **tak, za pomocą funkcji hypervisor VMware vSphere**.
 
 3. Kliknij pozycję **Pobierz**, aby pobrać plik szablonu OVA.
 
@@ -279,7 +279,7 @@ Przed wdrożeniem maszyny wirtualnej przedstawiciel firmy Contoso sprawdza zabez
     **Przykład:**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
-3. Wygenerowana wartość skrótu powinna być zgodna z wartościami skrótu opisanymi w sekcji [Weryfikowanie zabezpieczeń](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) w samouczku [Ocena maszyn wirtualnych VMware do migracji](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware).
+3. Wygenerowany skrót powinien być zgodny z wartościami skrótu opisanymi w sekcji [Weryfikowanie zabezpieczeń](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) w artykule [Ocena maszyn wirtualnych VMware na potrzeby migracji](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) .
 
 ### <a name="create-the-collector-appliance"></a>Tworzenie urządzenia modułu zbierającego
 
@@ -305,7 +305,7 @@ Teraz przedstawiciel firmy Contoso uruchamia moduł zbierający w celu odnalezie
     ![Konsola klienta vSphere — skrót do modułu zbierającego](./media/contoso-migration-assessment/collector-shortcut-v2.png)
 
 3. W usłudze Azure Migrate Collector przedstawiciel firmy Contoso wybiera pozycję **Skonfiguruj wymagania wstępne**. Przedstawiciel firmy Contoso akceptuje postanowienia licencyjne i zapoznaje się z informacjami innych firm.
-4. Moduł zbierający sprawdza, czy maszyna wirtualna ma dostęp do Internetu, czy jest zsynchronizowany czas oraz czy jest uruchomiona usługa modułu zbierającego. Jest ona instalowana domyślnie na maszynie wirtualnej. Firma Contoso instaluje również zestaw deweloperski na potrzeby tworzenia dysków wirtualnych platformy VMware vSphere.
+4. Moduł zbierający sprawdza, czy maszyna wirtualna ma dostęp do Internetu, czy jest zsynchronizowany czas oraz czy jest uruchomiona usługa modułu zbierającego. (Usługa modułu zbierającego jest instalowana domyślnie na maszynie wirtualnej). Firma Contoso instaluje również zestaw SDK tworzenia dysków wirtualnych VMware vSphere.
 
     > [!NOTE]
     > Przyjęto tu założenie, że maszyna wirtualna ma bezpośredni dostęp do Internetu, bez serwera proxy.
@@ -334,11 +334,11 @@ Po zakończeniu zbierania przedstawiciel firmy Contoso sprawdza, czy maszyny wir
 
     ![Azure Migrate — wymagana jest Instalacja agenta](./media/contoso-migration-assessment/machines-no-agent.png)
 
-## <a name="step-5-prepare-for-dependency-analysis"></a>Krok 5. Przygotowywanie analizy zależności
+## <a name="step-5-prepare-for-dependency-analysis"></a>Krok 5. Przygotowanie do analizy zależności
 
 Aby wyświetlić zależności między maszynami wirtualnymi, które mają zostać ocenione, przedstawiciel firmy Contoso pobiera i instaluje agentów na maszynach wirtualnych aplikacji. Przedstawiciel firmy Contoso instaluje agentów na wszystkich maszynach wirtualnych swoich aplikacji, zarówno dla systemu Windows, jak i Linux.
 
-### <a name="take-a-snapshot"></a>Utwórz migawkę
+### <a name="take-a-snapshot"></a>Tworzenie migawki
 
 Aby zachować kopię maszyn wirtualnych przed ich zmodyfikowaniem, przedstawiciel firmy Contoso tworzy migawkę przed zainstalowaniem agentów.
 
@@ -394,6 +394,7 @@ Przedstawiciel firmy Contoso uruchamia instalację na każdej maszynie wirtualne
     `sudo -i`
 
 3. Przedstawiciel firmy Contoso instaluje agenta MMA w następujący sposób:
+
     - Przedstawiciel firmy Contoso wprowadza identyfikator i klucz obszaru roboczego w poleceniu.
     - Polecenia są przeznaczone dla środowiska 64-bitowego.
     - Identyfikator obszaru roboczego i klucz podstawowy znajdują się w obszarze roboczym usługi Log Analytics w witrynie Azure Portal. Wybierz pozycję **Ustawienia**, a następnie kartę **Połączone źródła**.
@@ -415,7 +416,7 @@ Po zainstalowaniu MMA firmy Contoso instaluje agenta zależności na maszynach w
     wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s
     ```
 
-## <a name="step-6-run-and-analyze-the-vm-assessment"></a>Krok 6: Uruchamianie i analizowanie oceny maszyny wirtualnej
+## <a name="step-6-run-and-analyze-the-vm-assessment"></a>Krok 6. Uruchamianie i analizowanie oceny maszyny wirtualnej
 
 Przedstawiciel firmy Contoso może teraz sprawdzić zależności maszyny i utworzyć grupę. Następnie uruchamia ocenę dla grupy.
 
@@ -469,13 +470,13 @@ Ocena zaufania jest reprezentowana przez gwiazdki (od 1 do 5). 1 gwiazdka to oce
 - Ocena zaufania jest przydatna podczas ustalania *rozmiaru na podstawie wydajności*. Usługa Azure Migrate może nie dysponować wystarczającą liczbą punktów danych, aby móc ustalić rozmiar na podstawie użycia. W przypadku ustalania rozmiaru *jako lokalnego* ocena zaufania to zawsze 5 gwiazdek, ponieważ usługa Azure Migrate ma wszystkie punkty danych, których potrzebuje do ustalenia rozmiaru maszyny wirtualnej.
 - W zależności od wartości procentowej dostępnych punktów danych ocenę zaufania dla oceny określa:
 
-   Dostępność punktów danych | Ocena ufności
+   Dostępność punktów danych | Ocena zaufania
    --- | ---
    0%–20% | 1 gwiazdka
-   21%-40% | 2 gwiazdki
+   21%–40% | 2 gwiazdki
    41%–60% | 3 gwiazdki
    61%–80% | 4 gwiazdki
-   81%-100% | 5 gwiazdek
+   81%–100% | 5 gwiazdek
 
 #### <a name="verify-azure-readiness"></a>Sprawdzanie gotowości na platformę Azure
 

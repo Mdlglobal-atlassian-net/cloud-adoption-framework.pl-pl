@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2b26f8c763d477d95b21e302158c318e3ab4b101
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a320562f97b6e3a37e0f1b4912f1401189855530
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548587"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566923"
 ---
 # <a name="balance-the-portfolio"></a>Równoważenie portfela
 
@@ -23,7 +23,7 @@ Wdrażanie chmury to nakład pracy związany z zarządzaniem portfelem, zręczni
 
 Ten temat ma charakter strategiczny. W związku z tym zaprezentowane w nim podejście jest równie strategiczne. W celu umocowania strategii podejmowania decyzji opartych na danych w tym artykule przyjęto, że Czytelnik ocenił istniejący [majątek cyfrowy](../../digital-estate/index.md) (lub jest w trakcie tego procesu). Celem tego podejścia jest pomoc w ocenie obciążeń, aby zapewnić odpowiednią równowagę portfela przez pytania jakościowe i udoskonalanie portfela.
 
-### <a name="documenting-business-outcomes"></a>Dokumentowanie wyników biznesowych
+### <a name="document-business-outcomes"></a>Udokumentowanie wyników firmy
 
 Przed przeprowadzeniem równoważenia portfela ważne jest, aby udokumentować i udostępnić wyniki biznesowe związane z nakładem pracy w zakresie migracji do chmury. Kilka przykładów ogólnych wyników biznesowych związanych z migracjami do chmury znajduje się w artykule [Cloud migration executive summary](../../getting-started/migrate.md) (Podsumowanie ogólne migracji do chmury).
 
@@ -47,7 +47,7 @@ Wskazówki dotyczące [przyrostowej racjonalizacji majątku cyfrowego](../../dig
 
 ### <a name="importance-of-sunset-and-retire-decisions"></a>Znaczenie decyzji o wycofaniu
 
-W tabeli z powyższej sekcji [Dokumentowanie wyników biznesowych](#documenting-business-outcomes) pominięto kluczowy wynik, który mógłby ułatwić osiągnięcie pierwszorzędnego celu redukcji kosztów IT. W przypadku klasyfikacji obniżenia kosztów w dowolnym miejscu listy wyników biznesowych ważne jest, aby wziąć pod uwagę potencjalną liczbę wycofywanych obciążeń. W niektórych scenariuszach oszczędności kosztów mogą pochodzić z BRAKU migracji obciążeń, które nie uzasadniają krótkoterminowych inwestycji. Niektórzy klienci zgłosili oszczędności kosztów przekraczające 20% łącznego obniżenia kosztów przez wycofanie niewykorzystywanych obciążeń.
+W tabeli z powyższej sekcji [Dokumentowanie wyników biznesowych](#document-business-outcomes) pominięto kluczowy wynik, który mógłby ułatwić osiągnięcie pierwszorzędnego celu redukcji kosztów IT. W przypadku klasyfikacji obniżenia kosztów w dowolnym miejscu listy wyników biznesowych ważne jest, aby wziąć pod uwagę potencjalną liczbę wycofywanych obciążeń. W niektórych scenariuszach oszczędności kosztów mogą pochodzić z BRAKU migracji obciążeń, które nie uzasadniają krótkoterminowych inwestycji. Niektórzy klienci zgłosili oszczędności kosztów przekraczające 20% łącznego obniżenia kosztów przez wycofanie niewykorzystywanych obciążeń.
 
 Aby zrównoważyć portfel, lepiej odzwierciedlając decyzje o wycofaniu, zespół strategiczny ds. chmury i zespół wdrożeniowy ds. chmury są zachęcane do zadawania następujących pytań dotyczących każdego obciążenia w ramach procesów oceny i migracji:
 
@@ -74,7 +74,7 @@ Równoważenie portfela wymaga dodatkowej analizy jakościowej w trakcie procesu
 
 ### <a name="suggested-action-during-the-assess-process"></a>Sugerowana akcja w trakcie procesu oceny
 
-Na podstawie danych z tabeli w powyższej sekcji [Dokumentowanie wyników biznesowych](#documenting-business-outcomes) prawdopodobne jest ryzyko, że portfel dąży zbyt daleko do modelu wykonywania skoncentrowanego na migracji. Jeśli obsługa klienta miałaby najwyższy priorytet, bardziej prawdopodobny byłby portfel bardziej nastawiony na innowacje. Żadne z tych podejść nie jest prawidłowe lub złe, ale zbytnie dążenie w jednym kierunku zwykle skutkuje mniejszymi zyskami, niepotrzebnie zwiększa złożoność i wydłuża czas wykonywania nakładów pracy zakresie wdrażania w chmurze.
+Na podstawie danych z tabeli w powyższej sekcji [Dokumentowanie wyników biznesowych](#document-business-outcomes) prawdopodobne jest ryzyko, że portfel dąży zbyt daleko do modelu wykonywania skoncentrowanego na migracji. Jeśli obsługa klienta miałaby najwyższy priorytet, bardziej prawdopodobny byłby portfel bardziej nastawiony na innowacje. Żadne z tych podejść nie jest prawidłowe lub złe, ale zbytnie dążenie w jednym kierunku zwykle skutkuje mniejszymi zyskami, niepotrzebnie zwiększa złożoność i wydłuża czas wykonywania nakładów pracy zakresie wdrażania w chmurze.
 
 Aby zmniejszyć złożoność, zaleca się, aby Czytelnik przestrzegał tradycyjnego podejścia do racjonalizacji portfela, ale w modelu iteracyjnym. Poniższe kroki przedstawiają model jakościowy takiego podejścia:
 
@@ -113,13 +113,13 @@ Zaleca się, aby te różnorodne wysiłki były podzielone co najmniej dwa zespo
 
 **Niewielka Refaktoryzacja:** Niektóre aplikacje można nowoczesny z niewielkim refaktoryzacją na poziomie danych lub aplikacji. Ta praca wymaga, aby członkowie zespołu wdrażali dane na platformach danych opartych na chmurze lub wprowadzali niewielkie zmiany konfiguracji w aplikacjach. Może to wymagać ograniczonego wsparcia ekspertów zajmujących się danymi lub rozwojem aplikacji. Jednak ta praca jest podobna do pracy wykonywanej przez realizatorów IT podczas wdrażania aplikacji innych firm. Pracę tę można łatwo dopasować do zespołu ds. migracji do chmury lub zespołu strategicznego ds. chmury. Chociaż ten nakład pracy nie zbliża się do szybkości migracji polegającej na ponownym hostowaniu, jego wykonanie zajmuje mniej czasu niż nakład pracy na refaktoryzację.
 
-Podczas migracji zaleca się, aby nakłady pracy zostały podzielone na trzy sposoby wymienione powyżej, a ponadto, aby te nakłady pracy były wykonywane przez odpowiedni zespół w odpowiedniej iteracji. Chociaż zaleca się, aby portfel był zróżnicowany, zaleca się również, aby nakłady pracy były bardzo skoncentrowane i posegregowane.
+Podczas migracji należy podzielić wysiłki na trzy sposoby wymienione powyżej i wykonane przez odpowiedni zespół w odpowiedniej iteracji. Chociaż należy zróżnicować portfolio, należy również upewnić się, że wysiłki są bardzo skoncentrowane i segregowane.
 
 ## <a name="optimize-and-promote-process-changes"></a>Optymalizacja i podwyższenie poziomu zmian procesu
 
 Nie są wymagane żadne dodatkowe zmiany w trakcie procesów optymalizacji i podwyższania poziomu w ramach nakładu pracy migracji.
 
-## <a name="secure-and-manage-process-changes"></a>Zmiany procesu zabezpieczania i zarządzania
+## <a name="secure-and-manage-process-changes"></a>Zabezpieczanie zmian procesu oraz zarządzanie nimi
 
 Nie są wymagane żadne dodatkowe zmiany w trakcie procesów zabezpieczania i zarządzania w ramach nakładu pracy migracji.
 

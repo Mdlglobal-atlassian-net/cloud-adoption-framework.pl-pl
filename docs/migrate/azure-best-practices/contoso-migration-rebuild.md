@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: bd9042fcd0b7ae6d18a5cc522a4006b7f8bfdbc6
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 6a7c27e1c2e4bf0bdf4a4ef9104bf13bf221f4e0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058568"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566613"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Ponowne kompilowanie aplikacji lokalnej na platformie Azure
 
@@ -95,7 +95,7 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
-[AKS](/sql/dma/dma-overview?view=ssdt-18vs2017) | Upraszcza wdrażanie i obsługę platformy Kubernetes oraz zarządzanie nią. Zapewnia w pełni zarządzaną usługę organizowania kontenerów Kubernetes. | AKS to bezpłatna usługa. Płaci się wyłącznie za maszyny wirtualne, skojarzony magazyn i wykorzystane zasoby sieciowe. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/kubernetes-service).
+[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Upraszcza wdrażanie i obsługę platformy Kubernetes oraz zarządzanie nią. Zapewnia w pełni zarządzaną usługę organizowania kontenerów Kubernetes. | AKS to bezpłatna usługa. Płaci się wyłącznie za maszyny wirtualne, skojarzony magazyn i wykorzystane zasoby sieciowe. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/kubernetes-service).
 [Azure Functions](https://azure.microsoft.com/services/functions) | Przyspiesza opracowywanie zawartości dzięki opartemu na zdarzeniach bezserwerowemu środowisku obliczeniowemu. Umożliwia skalowanie na żądanie. | Płaci się tylko za wykorzystane zasoby. Plan jest rozliczany na podstawie liczby wykonań i użycia zasobów na sekundę. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/functions).
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Przechowuje obrazy dla dowolnego typu wdrożeń kontenerów. | Koszt zależy od funkcji, magazynu i czasu użytkowania. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/container-registry).
 [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | Szybko kompiluj, wdrażaj i skaluj aplikacje internetowe, aplikacje mobilne i aplikacje interfejsów API klasy korporacyjnej działające na dowolnej platformie. | Opłaty za plany usługi App Service są naliczane co sekundę. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/app-service/windows).
@@ -110,7 +110,7 @@ W tym scenariuszu firma Contoso potrzebuje następujących elementów:
 --- | ---
 **Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje w jednym z poprzednich artykułów. Jeśli nie masz subskrypcji platformy Azure, utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.
 **Infrastruktura platformy Azure** | [Dowiedz się](./contoso-migration-infrastructure.md), jak firma Contoso skonfigurowała infrastrukturę platformy Azure.
-**Wymagania wstępne dla deweloperów** | Firma Contoso potrzebuje następujących narzędzi na stacji roboczej dewelopera:<br/><br/> - [Visual Studio 2017 Community Edition: wersja 15,5](https://www.visualstudio.com)<br/><br/> Włączony pakiet roboczy platformy .NET.<br/><br/> [Usługa Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Interfejs wiersza polecenia platformy Azure](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> Program [Docker CE (dla systemu Windows 10) lub Docker EE (dla systemu Windows Server)](https://docs.docker.com/docker-for-windows/install) skonfigurowany pod kątem korzystania z kontenerów systemu Windows.
+**Wymagania wstępne dla deweloperów** | Firma Contoso potrzebuje następujących narzędzi na stacji roboczej dewelopera:<br/><br/> - [Visual Studio 2017 Community Edition: wersja 15,5](https://www.visualstudio.com)<br/><br/> Włączony pakiet roboczy platformy .NET.<br/><br/> [Usługa Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Interfejs wiersza polecenia platformy Azure](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> Program [Docker CE (dla systemu Windows 10) lub Docker EE (dla systemu Windows Server)](https://docs.docker.com/docker-for-windows/install) skonfigurowany pod kątem korzystania z kontenerów systemu Windows.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -152,7 +152,7 @@ Administratorzy firmy Contoso przeprowadzają aprowizację w następujący spos�
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
 5. W zintegrowanym terminalu programu PowerShell logują się na platformie Azure przy użyciu polecenia Connect-AzureRmAccount. [Dowiedz się więcej](https://docs.microsoft.com/powershell/azure/get-started-azureps) o rozpoczynaniu pracy z programem PowerShell.
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. Umożliwiają one uwierzytelnianie interfejsu wiersza polecenia platformy Azure, uruchamiając polecenie `az login` i postępując zgodnie z instrukcjami dotyczącymi uwierzytelniania przy użyciu przeglądarki sieci Web. [Dowiedz się więcej](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) na temat logowania za pomocą interfejsu wiersza polecenia platformy Azure.
+6. Umożliwiają one uwierzytelnianie interfejsu wiersza polecenia platformy Azure, uruchamiając polecenie `az login` i postępując zgodnie z instrukcjami dotyczącymi uwierzytelniania przy użyciu przeglądarki sieci Web. [Dowiedz się więcej](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest) na temat logowania za pomocą interfejsu wiersza polecenia platformy Azure.
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
 7. Uruchamiają następujące polecenie, przekazując nazwę grupy zasobów ContosoRG, nazwę klastra usługi AKS smarthotel-aks-eus2 i nazwę nowego rejestru.
 

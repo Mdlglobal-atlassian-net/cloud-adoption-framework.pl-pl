@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: d545b977a4c98692ba8503d5512b8cb0d0b7dd0d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 629b882c993e85dbb85b04cc9568491bd6e2036d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224193"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566616"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Przygotowanie uzasadnienia biznesowego migracji do chmury
 
@@ -22,19 +22,19 @@ Migracje w chmurze mogą generować wczesne zwroty z inwestycji w działania zwi
 
 ## <a name="dispelling-cloud-migration-myths"></a>Mitów migracji do chmury
 
-**Omówienia Chmura jest zawsze tańsza.** Często uważa się, że działanie centrum danych w chmurze jest zawsze tańsze niż lokalne działanie. To założenie może być zwykle prawdziwe, ale nie zawsze jest to konieczne. Czasami koszty operacyjne chmury są wyższe. Te wyższe koszty często wynikają z słabego ładu kosztów, niewyrównanych architektur systemu, duplikowania procesów, nietypowych konfiguracji systemu lub większego kosztu kadr. Na szczęście można złagodzić wiele z tych problemów, aby utworzyć Wczesne zwrotne. Postępując zgodnie ze wskazówkami dotyczącymi [tworzenia uzasadnienia biznesowego](#building-the-business-justification) , można wykryć i uniknąć tych nieodpowiednich wyrównania. Odpisownia innych mitów opisanych tutaj może pomóc.
+**Omówienia: chmura jest zawsze tańsza.** Często uważa się, że działanie centrum danych w chmurze jest zawsze tańsze niż lokalne działanie. To założenie może być zwykle prawdziwe, ale nie zawsze jest to konieczne. Czasami koszty operacyjne chmury są wyższe. Te wyższe koszty często wynikają z słabego ładu kosztów, niewyrównanych architektur systemu, duplikowania procesów, nietypowych konfiguracji systemu lub większego kosztu kadr. Na szczęście można złagodzić wiele z tych problemów, aby utworzyć Wczesne zwrotne. Postępując zgodnie ze wskazówkami w temacie [Tworzenie uzasadnienia biznesowego](#build-the-business-justification) , można ułatwić wykrywanie i uniknięcie nieodpowiednich wyrównania. Odpisownia innych mitów opisanych tutaj może pomóc.
 
-**Omówienia Wszystkie elementy powinny przejść do chmury.** W rzeczywistości niektóre sterowniki biznesowe mogą prowadzić do wyboru rozwiązania hybrydowego. Przed zakończeniem pracy z modelem biznesowym, należy przeprowadzić analizę w pierwszej kolejności, zgodnie z opisem w artykułach o znakach [cyfrowych](../digital-estate/5-rs-of-rationalization.md). Aby uzyskać więcej informacji na temat indywidualnych sterowników ilościowych związanych z racjonalizacją, zobacz [5 RS](../digital-estate/5-rs-of-rationalization.md). Jedno z tych metod będzie używać łatwo uzyskane dane spisu i krótkiej analizy ilościowej w celu zidentyfikowania obciążeń lub aplikacji, które mogą spowodować zwiększenie kosztów w chmurze. Metody te mogą również identyfikować zależności lub wzorce ruchu, które wymagają rozwiązania hybrydowego.
+**Omówienia: wszystkiego należy przejść do chmury.** W rzeczywistości niektóre sterowniki biznesowe mogą prowadzić do wyboru rozwiązania hybrydowego. Przed zakończeniem pracy z modelem biznesowym, należy przeprowadzić analizę w pierwszej kolejności, zgodnie z opisem w [artykułach](../digital-estate/5-rs-of-rationalization.md)o znakach cyfrowych. Aby uzyskać więcej informacji na temat indywidualnych sterowników ilościowych związanych z racjonalizacją, zobacz [5 RS](../digital-estate/5-rs-of-rationalization.md). Jedno z tych metod będzie używać łatwo uzyskane dane spisu i krótkiej analizy ilościowej w celu zidentyfikowania obciążeń lub aplikacji, które mogą spowodować zwiększenie kosztów w chmurze. Metody te mogą również identyfikować zależności lub wzorce ruchu, które wymagają rozwiązania hybrydowego.
 
-**Omówienia Dublowanie środowiska lokalnego pomoże mi zaoszczędzić pieniądze w chmurze.** W przypadku planowania poza cyframi nie są one wykrywane przez firmy w celu wykrycia niewykorzystanej pojemności ponad 50% środowiska aprowizacji. Jeśli zasoby są obsługiwane w chmurze w celu dopasowania do bieżącej aprowizacji, oszczędności kosztów są trudne do realizacji. Rozważ zmniejszenie rozmiaru wdrożonych zasobów, aby wyrównać wzorce użycia zamiast wzorców udostępniania.
+**Omówienia: dublowanie środowiska lokalnego pomoże mi zaoszczędzić pieniądze w chmurze.** W przypadku planowania poza cyframi nie są one wykrywane przez firmy w celu wykrycia niewykorzystanej pojemności ponad 50% środowiska aprowizacji. Jeśli zasoby są obsługiwane w chmurze w celu dopasowania do bieżącej aprowizacji, oszczędności kosztów są trudne do realizacji. Rozważ zmniejszenie rozmiaru wdrożonych zasobów, aby wyrównać wzorce użycia zamiast wzorców udostępniania.
 
-**Omówienia Koszty serwera na potrzeby migracji do chmury.** Czasami to założenie ma wartość true. W przypadku niektórych firm ważna jest redukcja bieżących wydatków inwestycyjnych związanych z serwerami. Jest to jednak zależne od kilku czynników. Firmy z pięcioma lata do ośmiu lat cykl odświeżania sprzętu prawdopodobnie nie będą widzieć szybkiego powracania do migracji w chmurze. Firmy z znormalizowanymi lub wymuszonymi cyklami odświeżania mogą szybko trafiać do punktu przerwania. W obu przypadkach inne wydatki mogą być wyzwalaczami finansowymi, które uzasadniają migrację. Poniżej przedstawiono kilka przykładów kosztów, które są często używane w przypadku, gdy firmy podejmują wyłącznie serwerową lub tylko maszynę wirtualną widok kosztów:
+**Omówienia: serwer kosztuje przypadki biznesowe w przypadku migracji do chmury.** Czasami to założenie ma wartość true. W przypadku niektórych firm ważna jest redukcja bieżących wydatków inwestycyjnych związanych z serwerami. Jest to jednak zależne od kilku czynników. Firmy z pięcioma lata do ośmiu lat cykl odświeżania sprzętu prawdopodobnie nie będą widzieć szybkiego powracania do migracji w chmurze. Firmy z znormalizowanymi lub wymuszonymi cyklami odświeżania mogą szybko trafiać do punktu przerwania. W obu przypadkach inne wydatki mogą być wyzwalaczami finansowymi, które uzasadniają migrację. Poniżej przedstawiono kilka przykładów kosztów, które są często używane w przypadku, gdy firmy podejmują wyłącznie serwerową lub tylko maszynę wirtualną widok kosztów:
 
 - Koszty oprogramowania dla wirtualizacji, serwerów i programów pośredniczących mogą być wszechstronne. Dostawcy chmury eliminują niektóre z tych kosztów. Dwa przykłady dostawcy chmury obniżają koszty wirtualizacji to [korzyść użycia hybrydowego platformy Azure](https://azure.microsoft.com/pricing/hybrid-benefit/#services) i programy [rezerwacji platformy Azure](https://azure.microsoft.com/reservations) .
 - Straty biznesowe wynikające z przerwy mogą szybko przekroczyć koszty sprzętu lub oprogramowania. Jeśli bieżące centrum danych jest niestabilne, Pracuj z firmą, aby określić wpływ przestoju na koszty sprzedaży lub rzeczywiste koszty biznesowe.
 - Koszty środowiska mogą być również istotne. W przypadku średniej rodziny American, dom to największe inwestycje i najwyższy koszt w budżecie. Takie samo jest często prawdziwe w przypadku centrów danych. Koszty związane z nieruchomościami, obiektami i narzędziami stanowią godziwą część kosztów lokalnych. W przypadku wycofania centrów danych te pomieszczenia mogą być przenoszone lub firma może potencjalnie zostać wykorzystana z tych kosztów całkowicie.
 
-**Omówienia Model wydatków operacyjnych jest lepszy niż model wydatków inwestycyjnych.** Zgodnie z opisem w artykule dotyczącej [wyników podatkowych](./business-outcomes/fiscal-outcomes.md) , model wydatków operacyjnych może być dobry. Jednak niektóre branże powodują ujemne wyświetlanie wydatków operacyjnych. Poniżej przedstawiono kilka przykładów, które spowodują wyzwolenie ściślejszej integracji z jednostkami księgowości i biznesowymi w odniesieniu do konwersacji wydatków operacyjnych:
+**Omówienia: model wydatków operacyjnych jest lepszy niż model wydatków inwestycyjnych.** Zgodnie z opisem w artykule dotyczącej [wyników podatkowych](./business-outcomes/fiscal-outcomes.md) , model wydatków operacyjnych może być dobry. Jednak niektóre branże powodują ujemne wyświetlanie wydatków operacyjnych. Poniżej przedstawiono kilka przykładów, które spowodują wyzwolenie ściślejszej integracji z jednostkami księgowości i biznesowymi w odniesieniu do konwersacji wydatków operacyjnych:
 
 - Gdy firma widzi zasoby kapitałowe jako czynnik do oceny działalności biznesowej, obniżki wydatków kapitałowych mogą być wynikiem ujemnym. Chociaż nie jest to standardowy Standard, ten tonacji jest najczęściej widziany w branży handlowej, produkcyjnej i budowlanej.
 - Prywatna firma lub firma, która dąży do napływu kapitału, może rozważyć zwiększenie kosztów operacyjnych.
@@ -44,7 +44,7 @@ Firmy mogą lepiej zobaczyć koszty operacyjne, które są bardziej korzystne ni
 
 Przed wprowadzeniem uzasadnienia biznesowego, które koncentruje się na konwersji z wydatków inwestycyjnych na koszty operacyjne, rozumiesz, że jest to lepsze dla Twojej firmy. Rozliczanie i zaopatrzenie mogą często pomóc w dopasowaniu komunikatów do celów finansowych.
 
-**Omówienia Przejście do chmury przypomina Przerzucanie przełącznika.** Migracje są ręcznie intensywną transformację techniczną. Podczas opracowywania uzasadnienia biznesowego, szczególnie uzasadnienia, które są zależne od czasu, należy wziąć pod uwagę następujące aspekty, które mogą zwiększyć czas migracji zasobów:
+**Omówienia: przejście do chmury przypomina Przerzucanie przełącznika.** Migracje są ręcznie intensywną transformację techniczną. Podczas opracowywania uzasadnienia biznesowego, szczególnie uzasadnienia, które są zależne od czasu, należy wziąć pod uwagę następujące aspekty, które mogą zwiększyć czas migracji zasobów:
 
 - **Ograniczenia przepustowości:** Przepustowość między bieżącym centrum danych a dostawcą chmury będzie mieć dyski osi czasu podczas migracji.
 - **Testowanie osi czasu:** Testowanie aplikacji w firmie w celu zapewnienia gotowości i wydajności może być czasochłonne. Wyrównywanie użytkowników zaawansowanych i procesów testowania ma kluczowe znaczenie.
@@ -57,7 +57,7 @@ Przeszkody techniczne i kulturowe mogą spowalniać wdrażanie w chmurze. Gdy cz
 
 Aby zmaksymalizować gotowość i uniknąć ryzyka związanego z osią czasu, przygotuj zainteresowanych członków kierownictwa poprzez zdecydowane dostosowanie wartości biznesowej i wyników działalności biznesowej. Pomóż tym udziałowcom zrozumieć zmiany, które będą miały wynik transformacji. Wyczyść i ustaw realistyczne oczekiwania od początku. Gdy ludzie lub technologie przestaną działać, łatwiej jest zarejestrować wsparcie dla kierownictwa.
 
-## <a name="building-the-business-justification"></a>Tworzenie uzasadnienia biznesowego
+## <a name="build-the-business-justification"></a>Tworzenie uzasadnienia biznesowego
 
 Poniższy proces definiuje podejście do opracowania uzasadnienia biznesowego migracji do chmury. Aby uzyskać więcej informacji na temat obliczeń i warunków finansowych, zapoznaj się z artykułem dotyczącym [modeli finansowych](./financial-models.md).
 
@@ -73,7 +73,7 @@ Możemy rozpakować to równanie, aby uzyskać widok specyficzny dla migracji fo
 - Niektórzy dostawcy chmury udostępniają również Kalkulatory różnic kosztów. [Kalkulator całkowitego kosztu posiadania (TCO) na platformie Azure](https://azure.com/tco) to jeden przykład.
 - W przypadku bardziej dopracowanych struktur kosztów należy wziąć pod uwagę ćwiczenie [planowania cyfr cyfrowych](../digital-estate/index.md) .
 - Oszacuj koszt migracji.
-- Oszacuj koszt wszelkich oczekiwanych możliwości szkoleniowych. [Microsoft Learn](/learn) może pomóc w ograniczeniu kosztów.
+- Oszacuj koszt wszelkich oczekiwanych możliwości szkoleniowych. [Microsoft Learn](https://docs.microsoft.com/learn) może pomóc w ograniczeniu kosztów.
 - W niektórych firmach czas zainwestowany przez istniejących członków personelu może być uwzględniony w początkowych kosztach. Aby uzyskać wskazówki, skontaktuj się z biurem finansowym.
 - Przedyskutuj wszelkie dodatkowe koszty lub koszty obciążeń z biurem finansowym na potrzeby weryfikacji.
 

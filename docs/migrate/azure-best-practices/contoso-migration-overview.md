@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f993676a002eeac128c9a221059815802bf36bdf
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 18b2bc641ba45c83a8ce6c5069857c398801adfd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239346"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566430"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Wzorce i przykłady dotyczące migracji aplikacji
 
@@ -88,7 +88,7 @@ Podsumowanie artykułów w tej serii znajduje się poniżej.
 [Rehost an app on an Azure VM and SQL Database Managed Instance (Ponowne hostowanie aplikacji na maszynie wirtualnej platformy Azure i w wystąpieniu zarządzanym usługi SQL Database)](./contoso-migration-rehost-vm-sql-managed-instance.md) | W tym artykule przedstawiono przykład przenośnika i przesunięcia migracji na platformę Azure dla aplikacji lokalnej. Proces ten obejmuje migrację maszyny wirtualnej frontonu aplikacji przy użyciu usługi [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) oraz migrację bazy danych aplikacji do wystąpienia zarządzanego usługi Azure SQL Database przy użyciu usługi [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 [Rehost an app on Azure VMs and in a SQL Server Always On availability group (Ponowne hostowanie aplikacji na maszynach wirtualnych platformy Azure i w zawsze włączonych grupach dostępności programu SQL Server)](./contoso-migration-rehost-vm-sql-ag.md) | W tym przykładzie pokazano, jak migrować aplikacje i dane przy użyciu maszyn wirtualnych z programem SQL Server hostowanych na platformie Azure. W tej metodzie użyto usługi Site Recovery do migrowania maszyn wirtualnych aplikacji oraz usługi Azure Database Migration Service do migrowania bazy danych aplikacji do klastra programu SQL Server chronionego przez zawsze włączoną grupę dostępności.
 
-### <a name="aspnet--php--java-apps"></a>Aplikacje ASP.NET/PHP/Java
+### <a name="aspnet-php-and-java-apps"></a>Aplikacje ASP.NET, PHP i Java
 
 **Artykuł** | **Szczegóły**
 --- | ---

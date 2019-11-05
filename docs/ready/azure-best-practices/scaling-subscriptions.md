@@ -8,14 +8,14 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbfe025b5e324ec685fcec3001cc8705ac001beb
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4910309817d348874ec7eed75640bd0407f1ffcf
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243268"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564005"
 ---
-# <a name="scaling-with-multiple-azure-subscriptions"></a>Skalowanie za pomocą wielu subskrypcji platformy Azure
+# <a name="scale-with-multiple-azure-subscriptions"></a>Skalowanie przy użyciu wielu subskrypcji platformy Azure
 
 Organizacje często potrzebują więcej niż jednej subskrypcji platformy Azure w wyniku limitów zasobów i innych zagadnień związanych z zarządzaniem. Ważne jest opracowanie strategii skalowania subskrypcji.
 
@@ -61,7 +61,7 @@ Można również utworzyć dodatkowe subskrypcje z innych powodów biznesowych l
 
 Wiele typów zasobów można przenosić między subskrypcjami lub używać zautomatyzowanych wdrożeń w celu migracji zasobów do innej subskrypcji. Aby uzyskać więcej informacji, zobacz [Przenoszenie zasobów platformy Azure do innej grupy zasobów lub subskrypcji](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
-## <a name="managing-multiple-subscriptions"></a>Zarządzanie wieloma subskrypcjami
+## <a name="manage-multiple-subscriptions"></a>Zarządzanie wieloma subskrypcjami
 
 Jeśli masz tylko kilka subskrypcji, niezależne zarządzanie nimi jest stosunkowo proste. Jeśli jednak masz wiele subskrypcji, rozważ utworzenie hierarchii grup zarządzania, aby uprościć zarządzanie subskrypcjami i zasobami.
 

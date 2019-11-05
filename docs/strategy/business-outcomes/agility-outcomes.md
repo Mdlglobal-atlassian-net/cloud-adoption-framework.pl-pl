@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6e1743fbac07c27bfafdf679ff7aae056545b6eb
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048067"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566644"
 ---
-# <a name="examples-of-agility-outcomes"></a>Przykłady wyników dotyczącej elastyczności 
+# <a name="examples-of-agility-outcomes"></a>Przykłady wyników dotyczącej elastyczności
 
 Zgodnie z opisem w temacie [wyniki biznesowe](./index.md), niektóre potencjalne wyniki biznesowe mogą stanowić podstawę dla każdej rozmowy transformującej transformację z firmą. Ten artykuł koncentruje się na timeliest Business Measure: elastyczność biznesowa. Informacje na temat pozycji rynkowej i konkurencyjnej poziomej firmy mogą pomóc w ideach wyników działalności biznesowej, które są celem podróży transformację firmy.
 
@@ -37,7 +37,9 @@ W trakcie wysiłków innowacyjnych w chmurze czas wprowadzenia na rynek to klucz
 
 - **Przykład 2:** Firma logistyki wykryła niewykorzystany segment rynku, ale potrzebuje nowej wersji aplikacji sztandarowe do przechwycenia tego udziału w rynku. Ich większy konkurent ma takie samo odnajdywanie. Dzięki wykonaniu wysiłków programistycznych aplikacji obsługujących chmurę firma obejmuje Obsession klienta i podejście deweloperskie oparte na DevOpsach, aby zmniejszyć liczbę starszych konkurentów o _x_ miesiącach. Dzięki temu w systemie wejścia na rynek zabezpieczony jest podstawowy klient.
 
-**Opieka zdrowotna Aurora**: system opieki zdrowotnej przekształca usługi online w przyjazną cyfrową obsługę. Aby przekształcić swoje usługi cyfrowe, Aurora opiekę zdrowotną swoich witryn internetowych na platformę Microsoft Azure i przyjęto strategię ciągłego innowacji.
+### <a name="aurora-health-care"></a>Opieka zdrowotna Aurora
+
+System opieki zdrowotnej przekształca Usługi online w przyjazne środowisko cyfrowe. Aby przekształcić swoje usługi cyfrowe, Aurora opiekę zdrowotną swoich witryn internetowych na platformę Microsoft Azure i przyjęto strategię ciągłego innowacji.
 
 > "Jako zespół koncentrujemy się na rozwiązaniach o wysokiej jakości i szybkości. Wybranie platformy Azure było bardzo analizie przekształceńą decyzją dla nas ".  
 > Jamey Shiels  

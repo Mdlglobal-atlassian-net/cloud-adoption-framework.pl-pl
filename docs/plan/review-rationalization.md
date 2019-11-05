@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d374fdc5df4589e58b890ae5c169d26d0b1f206
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a5ccbe2f3dd754914997ccba7b49ba47505dffa3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833754"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564143"
 ---
 # <a name="review-rationalization-decisions"></a>Przegląd decyzji dotyczących racjonalizacji
 
@@ -26,7 +26,7 @@ Aby zweryfikować decyzje z racjonalizacją, Skorzystaj z poniższych pytań, ab
 
 ## <a name="innovation-indicators"></a>Wskaźniki innowacji
 
-Jeśli wspólny przegląd następujących pytań spowoduje odpowiedź "tak", obciążenie może być lepszym kandydatem do innowacji. Takie obciążenie nie zostanie zmigrowane za pośrednictwem modelu Shift/Wind lub modernizowania. Zamiast tego, logika biznesowa lub struktury danych zostaną odtworzone jako nowa lub zaprojektowana aplikacja. Takie podejście może być bardziej pracochłonne i czasochłonne. Jednak w przypadku obciążenia, które reprezentuje znaczące zwroty biznesowe, inwestycja jest uzasadniona.
+Jeśli wspólny przegląd następujących pytań spowoduje odpowiedź "tak", obciążenie może być lepszym kandydatem do innowacji. Takie obciążenie nie zostanie zmigrowane za pośrednictwem dźwigu i Shift ani modernizacji modelu. Zamiast tego, logika biznesowa lub struktury danych zostaną utworzone w postaci nowej lub rozbudowanej aplikacji. Takie podejście może być bardziej pracochłonne i czasochłonne. Jednak w przypadku obciążenia, które reprezentuje znaczące zwroty biznesowe, inwestycja jest uzasadniona.
 
 - Czy aplikacje w tym obciążeniu tworzą zróżnicowanie rynkowe?
 - Czy istnieją proponowane lub zatwierdzone inwestycje mające na celu ulepszenie środowisk związanych z aplikacjami w tym obciążeniu?

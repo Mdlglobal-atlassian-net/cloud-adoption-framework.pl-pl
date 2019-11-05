@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549122"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564272"
 ---
 # <a name="central-it-capabilities"></a>Centralne możliwości IT
 
@@ -93,7 +93,7 @@ Centralnie jako funkcja jest również pozycjonowane, aby uzyskać cenne informa
 
 Wiele branż wymaga ścisłego przestrzegania zgodności z innymi firmami. Niektóre wymagania dotyczące zgodności nadal wymagają scentralizowanej kontroli IT. Dostarczanie na te środki zgodności może zwiększyć czas wdrożenia procesów wdrażania, szczególnie w przypadku nowych technologii, które nie były szeroko używane. W tych scenariuszach oczekiwane są opóźnienia wdrożenia na wczesnych etapach wdrażania. Podobne sytuacje występują dla firm, które zajmują się poufnymi danymi klienta, ale mogą nie podlegać wymogom zgodności innych firm.
 
-### <a name="operating-within-the-exceptions"></a>Działa w ramach wyjątków
+### <a name="operate-within-the-exceptions"></a>Działa w ramach wyjątków
 
 Gdy centralne procesy IT są wymagane, a procesy te tworzą odpowiednie punkty kontrolne w przyjęciu nowych technologii, te punkty kontrolne innowacji mogą być nadal szybko rozwiązywane. Wymagania dotyczące zarządzania i zgodności są przeznaczone do ochrony tych, które są poufne, a nie do ochrony wszystkiego. Chmura zapewnia proste mechanizmy pobierania i wdrażania izolowanych zasobów przy zachowaniu właściwych guardrails.
 

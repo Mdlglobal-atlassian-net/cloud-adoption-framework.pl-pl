@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 75f19fcdc9f23066d5a6471cd79c0a6a00869554
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: cb5653de592fb92fa9ad9f5866997703a928ee4e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029969"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566589"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>Tworzenie modelu finansowego transformacji do chmury
 
@@ -28,13 +28,13 @@ Zwrot z inwestycji jest często ważnym kryterium dla zestawu C-lub tablicy. Zwr
 
 W następnych sekcjach przeprowadzimy Cię przez dane, które będą potrzebne do obliczenia początkowej inwestycji i uzyskania zysku z inwestycji (zarobki).
 
-## <a name="calculating-initial-investment"></a>Obliczanie inwestycji początkowej
+## <a name="calculate-initial-investment"></a>Obliczanie inwestycji początkowej
 
 Inwestycja początkowa to koszty kapitałowe i koszty operacyjne wymagane do ukończenia transformacji. Klasyfikacja kosztów może się różnić w zależności od modeli ewidencjonowania aktywności i preferencji DYREKTORów. Jednak ta kategoria obejmuje elementy, takie jak profesjonalne usługi, do przekształcania, licencje na oprogramowanie używane tylko w trakcie transformacji, koszt usług Cloud Services w trakcie przekształceń i potencjalnie koszt pracowników płatnych podczas transformacji .
 
 Dodaj te koszty, aby utworzyć oszacowanie początkowej inwestycji.
 
-## <a name="calculating-the-gain-from-investment"></a>Obliczanie korzyści z inwestycji
+## <a name="calculate-the-gain-from-investment"></a>Oblicz zysk z inwestycji
 
 Obliczenie korzyści z inwestycji często wymaga drugiej formuły, która jest specyficzna dla wyników działalności biznesowej i skojarzonych zmian technicznych. Obliczanie zarobków jest trudniejsze niż Obliczanie obniżki kosztów.
 

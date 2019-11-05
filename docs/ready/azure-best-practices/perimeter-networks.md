@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 92aa03c07a6652f15a0400a025b8911a4d0d07dd
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240174"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564018"
 ---
 # <a name="perimeter-networks"></a>Sieci obwodowe
 
@@ -27,9 +27,9 @@ Aby sieci obwodowe działały prawidłowo, pakiety przychodzące, zanim nawiąż
 Sieci obwodowe korzystają z następujących funkcji i usług platformy Azure:
 
 - [Sieci wirtualne][virtual-networks], [trasy definiowane przez użytkownika][user-defined-routes] oraz [sieciowe grupy zabezpieczeń][network-security-groups]
-- [Sieciowe urządzenia wirtualne][NVA] (NVA)
+- [Wirtualne urządzenia sieciowe (urządzeń WUS)][NVA]
 - [Azure Load Balancer][ALB]
-- [Usługa Azure Application Gateway][AppGW] i [zapora aplikacji internetowej][AppGWWAF] (WAF)
+- [Azure Application Gateway][AppGW] i [Zapora aplikacji sieci Web (WAF)][AppGWWAF]
 - [Publiczne adresy IP][PIP]
 - [Usługa Azure Front Door][AFD] z [zaporą aplikacji internetowej][AFDWAF]
 - [Azure Firewall][AzFW]

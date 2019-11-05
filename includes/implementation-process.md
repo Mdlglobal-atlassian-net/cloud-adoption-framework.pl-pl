@@ -47,7 +47,7 @@ Pierwszą decyzją dotyczącą przyspieszenia wdrożenia jest wzorzec do wymusza
 - Mimo że są używane grupy zarządzania platformy Azure, oczekiwana jest stosunkowo prosta hierarchia.
 - Plany platformy Azure będą używane do wdrażania i aktualizowania subskrypcji przez zastosowanie wymagań RBAC, Menedżer zasobów szablonów i Azure Policy między grupami zarządzania.
 
-## <a name="applying-the-dependent-patterns"></a>Stosowanie wzorców zależnych
+## <a name="apply-the-dependent-patterns"></a>Zastosuj wzorce zależne
 
 Następujące decyzje reprezentują wzorce, które mają zostać wymuszone przez strategię wymuszania zasad powyżej:
 
