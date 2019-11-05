@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 10af3ade249bcc115d5b273b2610c093e48bf9a2
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: bc9cc463c50aac532e855ebd93ef1721d9fc38a4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238870"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564837"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Przewodnik podejmowania decyzji dotyczących wymuszania zasad
 
@@ -57,7 +57,7 @@ Na platformie Azure można stosować ustawienia konfiguracji i reguły tworzenia
 
 Gdy infrastruktura w chmurze powiększy się na wiele subskrypcji wymagających wymuszania, może być konieczne skoncentrowanie się na strategii wymuszania w całej infrastrukturze chmury, aby można było zapewnić spójność zasad.
 
-[Projekt subskrypcji](../subscriptions/index.md) będzie musiał uwzględnić zasady, ponieważ są one związane ze strukturą organizacyjną. Oprócz zapewniania obsługi złożonej organizacji w projekcie subskrypcji, [grupy zarządzania platformy Azure](../../ready/azure-best-practices/scaling-subscriptions.md#managing-multiple-subscriptions) umożliwiają także przypisywanie reguł usługi Azure Policy w wielu subskrypcjach.
+[Projekt subskrypcji](../subscriptions/index.md) będzie musiał uwzględnić zasady, ponieważ są one związane ze strukturą organizacyjną. Oprócz zapewniania obsługi złożonej organizacji w projekcie subskrypcji, [grupy zarządzania platformy Azure](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) umożliwiają także przypisywanie reguł usługi Azure Policy w wielu subskrypcjach.
 
 ## <a name="automated-enforcement"></a>Wymuszanie automatyczne
 
