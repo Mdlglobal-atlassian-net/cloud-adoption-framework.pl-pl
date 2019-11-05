@@ -1,54 +1,52 @@
 ---
-title: Zautomatyzowana konfiguracja dołączania i alertu
+title: Automatyzowanie dołączania
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Zautomatyzowana konfiguracja dołączania i alertu
+description: Automatyzowanie dołączania
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f5dd418a03dd35ebced1a9c73eb8fe6567339859
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221375"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565403"
 ---
 # <a name="automate-onboarding"></a>Automatyzowanie dołączania
 
-Aby zwiększyć wydajność wdrażania usług zarządzania systemu Azure, należy rozważyć automatyzację wdrażania usług zarządzania przy użyciu rekomendacji omówionych w poprzednich sekcjach niniejszych wskazówek. Skrypt i przykładowe szablony, które znajdują się w poniższych sekcjach, są punktami początkowymi do tworzenia własnych automatyzacji procesów dołączania.
+Aby zwiększyć wydajność wdrażania usług zarządzania systemu Azure, należy rozważyć automatyzację wdrożenia zgodnie z opisem w poprzednich sekcjach niniejszych wskazówek. Skrypt i przykładowe szablony podane w poniższych sekcjach są punktami początkowymi do tworzenia własnych automatyzacji procesów dołączania.
 
-## <a name="onboarding-by-using-automation"></a>Dołączanie przy użyciu automatyzacji
+Te wskazówki zawierają obsługę repozytorium GitHub przykładowego kodu, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples). Repozytorium zawiera przykładowe skrypty i szablony Azure Resource Manager, które ułatwiają automatyzację wdrażania usług zarządzania serwerem Azure.
 
-Te wskazówki zawierają obsługę repozytorium GitHub przykładowego kodu, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), który zawiera przykładowe skrypty i szablony Azure Resource Manager ułatwiające automatyzację wdrażania usług zarządzania serwerem Azure.
+Przykładowe pliki ilustrują sposób korzystania z Azure PowerShell poleceń cmdlet do automatyzacji następujących zadań:
 
-Te przykładowe pliki ilustrują sposób korzystania z Azure PowerShell poleceń cmdlet do automatyzacji następujących zadań:
+- Utwórz [obszar roboczy log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access). (Lub Użyj istniejącego obszaru roboczego, jeśli spełnia wymagania. Aby uzyskać szczegółowe informacje, zobacz [Planowanie obszaru roboczego](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).
 
-1. Utwórz [obszar roboczy log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access) (lub Użyj istniejącego obszaru roboczego, jeśli spełnia wymagania&mdash;, zobacz [Planowanie obszaru roboczego](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)).
+- Utwórz konto usługi Automation. (Lub Użyj istniejącego konta, jeśli spełnia wymagania. Aby uzyskać szczegółowe informacje, zobacz temat [Planowanie obszaru roboczego](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)).
 
-2. Utwórz konto usługi Automation (lub Użyj istniejącego konta, jeśli spełnia wymagania&mdash;, zobacz [Planowanie obszaru roboczego](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)).
+- Połącz konto usługi Automation i obszar roboczy Log Analytics. Ten krok nie jest wymagany, jeśli użytkownik jest dołączany przy użyciu Azure Portal.
 
-3. Połącz konto usługi Automation z obszarem roboczym Log Analytics (niewymagane w przypadku przechodzenia przez portal).
+- Włącz Update Management i Change Tracking i spis dla obszaru roboczego.
 
-4. Włącz Update Management i Change Tracking i spis dla obszaru roboczego.
+- Dołączanie maszyn wirtualnych platformy Azure przy użyciu Azure Policy. Zasady instalują agenta Log Analytics i Agent zależności Microsoft na maszynach wirtualnych platformy Azure.
 
-5. Dołączanie maszyn wirtualnych platformy Azure przy użyciu Azure Policy (zasady instalują agenta Log Analytics i agenta zależności na maszynach wirtualnych platformy Azure).
+- Dołączanie serwerów lokalnych przez zainstalowanie na nich agenta Log Analytics.
 
-6. Dołączanie serwerów lokalnych przez zainstalowanie na nich agenta Log Analytics.
-
-Pliki opisane w poniższej tabeli są używane w tym przykładzie i można je dostosować do obsługi własnych scenariuszy wdrażania.
+Pliki opisane w poniższej tabeli są używane w tym przykładzie. Można je dostosować do obsługi własnych scenariuszy wdrażania.
 
 | Nazwa pliku | Opis |
 |-----------|-------------|
-| New-AMSDeployment.ps1 | Główny, aranżacja skrypt, który automatyzuje dołączanie. Ten skrypt programu PowerShell wymaga istniejącej subskrypcji, ale spowoduje utworzenie grup zasobów, lokalizacji, obszaru roboczego i kont usługi Automation, jeśli nie istnieją. |
-| Workspace-AutomationAccount.json | Szablon Menedżer zasobów, który służy do wdrażania zasobów obszaru roboczego i konta usługi Automation. |
-| WorkspaceSolutions.json | Szablon Menedżer zasobów, który umożliwia korzystanie z żądanych rozwiązań w obszarze roboczym Log Analytics. |
-| ScopeConfig.json | Szablon Menedżer zasobów, który używa modelu zgody dla serwerów lokalnych z rozwiązaniem do śledzenia zmian. Korzystanie z modelu zgody jest opcjonalne. |
-| Enable-VMInsightsPerfCounters.ps1 | Skrypt programu PowerShell, który umożliwia VMInsight dla serwerów i konfiguruje liczniki wydajności. |
-| ChangeTracking-Filelist.json | Szablon Menedżer zasobów, który definiuje listę plików, które będą monitorowane przez Change Tracking. |
+| New-AMSDeployment. ps1 | Główny, aranżacja skrypt, który automatyzuje dołączanie. Tworzy grupy zasobów, lokalizacje, obszary robocze i konta usługi Automation, jeśli jeszcze nie istnieją. Ten skrypt programu PowerShell wymaga istniejącej subskrypcji. |
+| Workspace — AutomationAccount. JSON | Szablon Menedżer zasobów, który służy do wdrażania zasobów obszaru roboczego i konta usługi Automation. |
+| WorkspaceSolutions. JSON | Szablon Menedżer zasobów, który umożliwia korzystanie z żądanych rozwiązań w obszarze roboczym Log Analytics. |
+| ScopeConfig. JSON | Menedżer zasobów szablon, który używa modelu zgody dla serwerów lokalnych z rozwiązaniem Change Tracking. Korzystanie z modelu zgody jest opcjonalne. |
+| Enable-VMInsightsPerfCounters. ps1 | Skrypt programu PowerShell, który umożliwia usłudze VM Insights dla serwerów i konfiguruje liczniki wydajności. |
+| Śledzenia zmian-Filelist. JSON | Szablon Menedżer zasobów, który definiuje listę plików, które będą monitorowane przez Change Tracking. |
 
-Można uruchomić New-AMSDeployment. ps1 przy użyciu następującego polecenia:
+Użyj następującego polecenia, aby uruchomić New-AMSDeployment. ps1:
 
 ```powershell
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}

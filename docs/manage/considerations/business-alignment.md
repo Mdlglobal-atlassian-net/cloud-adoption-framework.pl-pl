@@ -1,5 +1,5 @@
 ---
-title: Wyrównanie biznesowe — zarządzanie chmurą i operacje
+title: 'Wyrównanie biznesowe: zarządzanie i operacje w chmurze'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wyrównanie biznesowe — zarządzanie chmurą i operacje
 author: BrianBlanchard
@@ -8,33 +8,33 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9c6884d57b9238f58921b14ec3ddbbe3623506af
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: deeb663a344bb3eb4e8ecc9af307da5ec1348b7a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558144"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565216"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Tworzenie wyrównania biznesowego w zarządzaniu chmurą
 
-W środowiskach lokalnych zasoby IT (aplikacje, maszyny wirtualne, hosty maszyn wirtualnych, dysk, serwery, urządzenia i źródła danych) są zarządzane przez dział IT do obsługi operacji związanych z obciążeniami. W warunkach INFORMATYCZNych obciążenie jest kolekcją zasobów IT, które obsługują konkretną operację biznesową. W środowiskach lokalnych zarządzanie działem IT realizuje Projektowanie procesów, aby zminimalizować zakłócenia dla tych zasobów IT, próbując zminimalizować zakłócenia w operacjach związanych z obsługą techniczną. Podczas przechodzenia do chmury zarządzanie i operacje są zmieniane na bit, dzięki czemu można rozwijać ściślejsze dostosowanie firmy.
+W środowiskach lokalnych zasoby IT (aplikacje, maszyny wirtualne, hosty maszyn wirtualnych, dysk, serwery, urządzenia i źródła danych) są zarządzane przez dział IT do obsługi operacji związanych z obciążeniami. W warunkach INFORMATYCZNych obciążenie jest kolekcją zasobów IT, które obsługują konkretną operację biznesową. Aby ułatwić obsługę operacji w biznesie, zarządzanie IT zapewnia procesy, które zostały zaprojektowane w celu zminimalizowania zakłóceń do tych zasobów. Gdy organizacja przenosi się do chmury, zarządzanie i operacje przewyższają bit, dzięki czemu można opracowywać ściślejsze dostosowanie firmy.
 
 ## <a name="business-vernacular"></a>Vernacular biznesowa
 
-Pierwszym krokiem w tworzeniu wyrównania biznesowego jest wyrównanie warunku. Zarządzanie IT, takie jak większość zawodów inżynieryjnych, obejmuje rzetelny żargon lub wysoce techniczne warunki. Te warunki mogą prowadzić do nieporozumień w przypadku uczestników współpracy i utrudniać mapowanie usług zarządzania na wartość biznesową.
+Pierwszym krokiem podczas tworzenia wyrównania firmy jest zapewnienie wyrównania terminu. Zarządzanie IT, takie jak większość zawodów inżynieryjnych, miało amassed zbiór żargonów lub wysoce technicznych warunków. Warunki te mogą prowadzić do nieporozumień w przypadku uczestników współpracy i utrudniać mapowanie usług zarządzania na wartość biznesową.
 
-Na szczęście procesy opracowywania strategii wdrażania chmurowego i planu wdrażania chmury tworzą pomysł dla ponownego mapowania warunków. Tworzy również doskonałą okazję do rozmyślenia zobowiązań związanych z zarządzaniem operacyjnymi w ramach współpracy z firmą. Poniższa seria artykułu przeprowadzi Cię przez nowe podejście w ramach trzech określonych terminów, które mogą poprawić konwersacje ze stronami biznesowymi:
+Na szczęście proces opracowywania strategii wdrażania w chmurze i planu wdrażania chmury umożliwia idealne rozwiązanie do ponownego mapowania tych warunków. Proces ten umożliwia również tworzenie szans związanych z zarządzaniem działaniami w ramach współpracy z firmą. Poniższa seria artykułu przeprowadzi Cię przez nowe podejście w ramach trzech określonych terminów, które mogą pomóc w ulepszaniu konwersacji między udziałowcami biznesowymi: 
 
-- **[Krytyczność](./criticality.md)** : mapowanie obciążeń na procesy biznesowe. Krytyczne znaczenie klasyfikacji do koncentracji inwestycji.
-- **[Wpływ](./impact.md)** : Poznaj wpływ potencjalnej awarii, aby pomóc w ocenie powrotu do inwestycji związanych z zarządzaniem chmurą.
-- **[Zobowiązanie](./commitment.md)** : opracowywanie prawdziwych partnerstwa przez tworzenie i dokumentowanie umów **z firmą**.
+- Poziom  **[krytyczności](./criticality.md):** Mapowanie obciążeń na procesy biznesowe. Krytyczne znaczenie klasyfikacji do koncentracji inwestycji.
+- **[Wpływ](./impact.md):** Zrozumienie wpływu potencjalnej awarii, aby pomóc w ocenie powrotu do inwestycji związanych z zarządzaniem chmurą.
+- **[Zobowiązanie](./commitment.md):** opracowywanie prawdziwych partnerstwa przez tworzenie i dokumentowanie umów *z firmą*.
 
 > [!NOTE]
-> Poniżej każdego z tych warunków są klasyczne warunki IT, takie jak SLA, RTO i RPO. Mapowanie firm i warunki IT są omówione bardziej szczegółowo w artykule dotyczącym zobowiązania.
+> Podstawowe warunki te są klasycznymi postanowieniami IT, takimi jak SLA, RTO i RPO. Mapowanie konkretnych firm i warunki IT są szczegółowo omówione w artykule dotyczącym [zobowiązania](./commitment.md) .
 
 ## <a name="ops-management-planning-workbook"></a>Skoroszyt planowania zarządzania w Ops
 
-Aby ułatwić przechwycenie decyzji w wyniku tej rozmowy, [skoroszyt zarządzania Ops](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) jest dostępny w naszym repozytorium GitHub. Ten skoroszyt nie wykonuje umowy SLA ani obliczeń kosztów. Służy tylko jako przewodnik do przechwytywania tych miar i prognozy zwracanych działań związanych z uniknięciem utraty strat.
+Aby ułatwić przechwycenie decyzji wynikających z tej konwersacji dotyczącej wyrównania terminu, [skoroszyt zarządzania Ops](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) jest dostępny w witrynie GitHub. Ten skoroszyt nie wykonuje umowy SLA ani obliczeń kosztów. Służy tylko do przechwycenia takich środków i prognozowania powrotu do unikania utraty strat.
 
 Alternatywnie te same obciążenia i powiązane zasoby mogą być otagowane bezpośrednio na platformie Azure, jeśli rozwiązania zostały już wdrożone w chmurze.
 

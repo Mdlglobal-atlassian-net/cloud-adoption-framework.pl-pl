@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0e4377f8d26cd28df1f9e6d9a82314fbe73fd0a4
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: fe10230be2c71942fa411389b99e00811e008fbc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058092"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565720"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Typowe bloki i wyzwania dla innowacji
 
@@ -55,7 +55,7 @@ Metodologia innowacje używa następujących dyscyplin innowacji, aby pomóc w d
 - **Kod źródłowy i wdrożenie:** Współpraca między deweloperami wszystkich przeejść usprawnia zarówno jakość, jak i szybkość pracy. Integracja informacji zwrotnych i szybka reakcja na uczenie liderów rynku. Zobowiązania do kompilowania, mierzenia i uczenia procesów przyspieszają decyzje dotyczące wdrażania narzędzi.
 - **Rozwiązania predykcyjne:** W przypadku oszczędności cyfrowego rzadko wystarcza do spełnienia bieżących potrzeb klientów. Klienci oczekują firm, aby przewidzieć kolejne kroki i przewidywania ich przyszłych potrzeb. Ciągła nauka często zmienia się w narzędzia przewidywania. Złożoność potrzeb klientów i dostępność danych ułatwiają Definiowanie najlepszych narzędzi i podejścia do przewidywania i wpływania.
 
-W przypadku sieci cyfrowej największe rozwiązanie wyzwania architekta jest jasno zrozumiałe dla klientów i ich potrzeby w zakresie wdrażania, a następnie określić najlepszy łańcuch narzędzi oparty na chmurze, aby zapewnić te potrzeby.
+W przypadku sieci cyfrowej większość rozwiązań wyzwania architektów ma jasno zrozumieć, jakie są potrzeby związane z rozłożeniami klientów i ich wdrożeniem, a następnie ustalić najlepsze łańcucha narzędzi oparte na chmurze, aby zapewnić te potrzeby.
 
 ## <a name="next-steps"></a>Następne kroki
 

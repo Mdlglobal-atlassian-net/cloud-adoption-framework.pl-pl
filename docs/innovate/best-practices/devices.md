@@ -8,40 +8,40 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a8dcdf770e31a1b0fb380ac0fe85bb2fe9c8ed0b
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: c649ef695e74dce0ae2ec21e1e0d666abc2a65e9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683395"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565824"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>Narzędzia do współpracy z urządzeniami na platformie Azure
 
-Zgodnie z opisem w artykule teoretycznym dotyczącym [współpracy z urządzeniami](../considerations/devices.md)urządzenia używane do współpracy z klientem są zależne od poziomu otoczenia, który jest potrzebny do zapewnienia potrzeb klientów i podejmowania odpowiednich czynności. Szybkość z wyzwalaczem decydującym o potrzebach, a zdolność rozwiązania do zaspokajania potrzeb klientów to określenie współczynnika powtarzania użycia. Środowiska otoczenia ułatwiają skrócenie czasu odpowiedzi i stworzenie lepszego środowiska dla klientów przez osadzenie rozwiązania w bezpośrednim otoczeniu klientów.
+Zgodnie z opisem w artykule koncepcyjnym dotyczącym [współdziałania z urządzeniami](../considerations/devices.md)urządzenia służące do współdziałania z klientem zależą od ilości otoczenia wymaganego do zapewnienia potrzeb klienta i podejmowania przez niego akceptacji. Szybkość wyzwalacza, która monituje potrzebę klienta, oraz możliwość rozwiązania tego problemu pozwala określić czynniki w przypadku powtarzania użycia. Środowiska otoczenia pomagają skrócić czas odpowiedzi i utworzyć lepsze środowisko dla klientów, osadzając rozwiązanie w bezpośrednim otoczeniu klientów.
 
 ![Podejście platformy wdrażania w chmurze do współpracy z urządzeniami](../../_images/innovate/ambient-experiences.png)
 
-## <a name="alignment-to-the-methodology"></a>Wyrównanie do metodologii
+## <a name="alignment-to-the-methodology"></a>Dostosowywanie do metodologii
 
-Ten typ wynalazku cyfrowego może być dostarczany za pomocą jednego z następujących poziomów środowiska otoczenia, zgodnie z metodologią, jak powyżej. Wskazówki techniczne umożliwiające przyspieszenie rozdzielania cyfr cyfrowych są wymienione w spisie treści po lewej stronie. Te artykuły zostały pogrupowane na te same poziomy środowiska otoczenia, aby dostosować je do metodologii:
+Ten typ możliwości cyfrowych można dostarczyć przy użyciu dowolnego z następujących poziomów środowiska otoczenia. Te poziomy są wyrównane z metodologią, jak pokazano na powyższym obrazie. Spis treści po lewej stronie tej strony zawiera wskazówki techniczne umożliwiające przyspieszenie rozdzielania cyfr cyfrowych. Te artykuły są pogrupowane według poziomu środowiska otoczenia, aby dostosować je do metodologii.
 
-- **Środowisko mobilne:** Aplikacje mobilne są zwykle częścią otoczenia klientów. W niektórych scenariuszach urządzenie przenośne może zapewnić wystarczający poziom interaktywności, aby zapewnić otoczenie rozwiązania.
-- **Rzeczywistość mieszana:** Czasami naturalna otoczenie klienta musi być zmieniana w rzeczywistości mieszanej. Klienci korzystający z tej rzeczywistości mieszanej mogą zapewnić formę środowiska otoczenia.
-- **Rzeczywistość zintegrowana:** Przechodzenie bliżej Ambience, zintegrowane rozwiązania rzeczywistość koncentrują się na korzystaniu z urządzenia, które istnieje w rzeczywistości fizycznej klienta, aby zintegrować rozwiązanie z naturalnymi zachowaniami.
-- **Zastosowana rzeczywistość:** Gdy dowolne z rozwiązań otaczających powyżej wykorzystuje analizę predykcyjną w celu zapewnienia interakcji z klientem w naturalnym otoczeniu, rozwiązanie tworzy najwyższą formę środowiska otoczenia.
+- **Środowisko mobilne:** Aplikacje mobilne są zwykle częścią otoczenia klienta. W niektórych scenariuszach urządzenie przenośne może zapewnić wystarczającą interakcję, aby zapewnić otoczenie rozwiązania.
+- **Rzeczywistość mieszana:** Czasami naturalna otoczenie klienta musi być zmieniana w rzeczywistości mieszanej. Zaangażowanie klienta w ten rzeczywistości mieszanej może zapewnić formę środowiska otoczenia.
+- **Rzeczywistość zintegrowana:** Przechodzenie bliżej Ambience, zintegrowane rozwiązania o rzeczywistości koncentrują się na użyciu fizycznego urządzenia klienta, aby zintegrować rozwiązanie z naturalnymi zachowaniami.
+- **Zastosowana rzeczywistość:** Gdy dowolne z powyższych rozwiązań korzysta z analizy predykcyjnej w celu zapewnienia interakcji z klientem w naturalnym otoczeniu tego klienta, rozwiązanie to tworzy najwyższą formę środowiska otoczenia.
 
 ## <a name="toolchain"></a>Łańcuch narzędzi
 
-Na platformie Azure następujące narzędzia są często wykorzystywane do przyspieszenia cyfrowego rozróżnienia na każdym z poziomów otoczenia. Te narzędzia zostały pogrupowane na podstawie poziomu doświadczenia wymaganego do zmniejszenia złożoności narzędzi do wyrównywania w narzędziach z wymaganymi środowiskami.
+Na platformie Azure często używasz następujących narzędzi do przyspieszenia cyfrowego napełniania na każdym z wcześniejszych poziomów rozwiązań otoczenia. Te narzędzia są pogrupowane w oparciu o ilość doświadczenia wymaganego do zmniejszenia złożoności narzędzi do wyrównywania z tymi środowiskami.
 
-- Środowisko mobilne: App Service, PowerApps, Microsoft Flow, Intune
+- Środowisko mobilne: Azure App Service, PowerApps, Microsoft Flow, Intune
 - Rzeczywistość mieszana: Unity, kotwice przestrzenne platformy Azure, HoloLens
-- Rzeczywistość: Azure IoT Hub, Azure Sphere, urządzenia Kinect DK
-- Dostosowana rzeczywistość: IoT Cloud to Device, Digital bliźniaczych reprezentacji + HoloLens
+- Stan zintegrowany: Azure IoT Hub, Azure Sphere, Azure urządzenia Kinect DK
+- Dostosowana rzeczywistość: IoT Cloud to Device, Azure Digital bliźniaczych reprezentacji + HoloLens
 
 ## <a name="get-started"></a>Rozpocznij
 
-Spis treści po lewej stronie zawiera wiele artykułów, które ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
+Spis treści po lewej stronie tej strony zawiera wiele artykułów. Te artykuły ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
 
 > [!NOTE]
 > Niektóre linki mogą opuścić strukturę wdrażania chmury, aby ułatwić przechodzenie poza zakres tej struktury.

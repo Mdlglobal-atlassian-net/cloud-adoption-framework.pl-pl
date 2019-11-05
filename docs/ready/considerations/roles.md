@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 6aa17f3ffb16afae0b27bcccbee84ddf9ad2c5f0
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 47933f12bea00ff1ea9052125147287ffc9381d6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243138"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561776"
 ---
 # <a name="role-based-access-control"></a>Kontrola dostępu oparta na rolach
 
@@ -41,7 +41,7 @@ Podczas planowania strategii kontroli dostępu opartej na rolach należy zastoso
 > [!NOTE]
 > Im bardziej szczegółowo definiowane są uprawnienia, tym bardziej prawdopodobne, że kontrola dostępu stanie się złożona i trudna do zarządzania. Jest to szczególnie istotne wraz ze wzrostem rozmiaru majątku w chmurze. Unikaj uprawnień specyficznych dla zasobów. Zamiast tego [używaj grup zarządzania](https://docs.microsoft.com/azure/governance/management-groups) do kontroli dostępu w całym przedsiębiorstwie i [grup zasobów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) do kontroli dostępu w ramach subskrypcji. Unikaj również uprawnień specyficznych dla użytkowników. Zamiast tego przypisz dostęp do [grup w usłudze Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
 
-## <a name="using-built-in-rbac-roles"></a>Korzystanie z wbudowanych ról kontroli dostępu opartej na rolach
+## <a name="use-built-in-rbac-roles"></a>Korzystanie z wbudowanych ról RBAC
 
 Platforma Azure udostępnia wiele wbudowanych definicji ról, w tym trzy podstawowe role do nadawania dostępu:
 
@@ -59,7 +59,7 @@ Inny przykład użycia wbudowanych ról w celu zarządzania dostępem do określ
 
 Aby uzyskać pełną listę dostępnych wbudowanych ról, zobacz [Wbudowane role dla zasobów platformy Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles).
 
-## <a name="using-custom-roles"></a>Korzystanie z ról niestandardowych
+## <a name="use-custom-roles"></a>Korzystanie z ról niestandardowych
 
 Mimo że role wbudowane na platformie Azure obsługują szeroką gamę scenariuszy kontroli dostępu, mogą nie spełniać wszystkich potrzeb organizacji lub zespołu. Jeśli na przykład istnieje jedna grupa użytkowników odpowiedzialnych za zarządzanie maszynami wirtualnymi i zasobami usługi Azure SQL Database, możesz utworzyć rolę niestandardową w celu zoptymalizowania zarządzania wymaganą kontrolą dostępu.
 

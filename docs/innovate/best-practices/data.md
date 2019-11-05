@@ -8,39 +8,64 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b9c868efb6f35472552778b583b638da59069edd
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: d86bebc3a993443c4dded4b1a0f23ff518147bd4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683405"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565840"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Narzędzia do zdemokratyzuj proces danych na platformie Azure
 
-Zgodnie z opisem w artykule teoretycznym dotyczącym [danych democratizing](../considerations/data.md), wiele innowacji może być dostarczanych z minimalnymi inwestycjami technicznymi. Niezliczone przykłady najważniejszych innowacji, które wymagały nieco więcej niż surowe dane. Democratizing dane są związane z inwestycją w niewielkim stopniu, gdy jest to konieczne, aby skontaktować się z klientami przy użyciu danych, aby korzystać z informacji na temat Począwszy od danych, można szybko przetestować hipotezę przed rozwinięciem do szerszej, bardziej kosztownej liczby cyfr. Gdy coraz więcej hipotez jest rafinowanych, a wynalazki zaczynają zostać przyjęte na dużą skalę, poniższe procesy będą poszczególni pomocą w przygotowaniu do obsługi operacyjnej innowacji.
+Zgodnie z opisem w artykule pojęciowym dotyczącym [danych democratizing](../considerations/data.md), możesz dostarczać wiele innowacji z niewielkimi inwestycjami technicznymi. Wiele ważnych innowacji wymaga nieco więcej niż nieprzetworzone dane. Democratizing dane są inwestowane jako niewielki zasób, gdy jest to konieczne, aby zaangażować klientów korzystających z danych w celu skorzystania z istniejących informacji.
+
+Począwszy od danych, można szybko przetestować hipotezę przed rozwinięciem do szerszej, bardziej kosztownej liczby cyfr. Po dodaniu większej liczby hipotez i przystąpieniu do przyjęcia wynalazków na dużą skalę następujące procesy ułatwią przygotowanie się do obsługi operacyjnej innowacji.
 
 ![Podejście do struktury wdrażania chmury do danych democratizing](../../_images/innovate/democratize-data.png)
 
-## <a name="alignment-to-the-methodology"></a>Wyrównanie do metodologii
+## <a name="alignment-to-the-methodology"></a>Dostosowywanie do metodologii
 
-Ten typ możliwości cyfrowych można przyspieszyć w każdej fazie poniższego procesu, również powyższym. Wskazówki techniczne umożliwiające przyspieszenie rozdzielania cyfr cyfrowych są wymienione w spisie treści po lewej stronie. Te artykuły zostały pogrupowane w te same fazy, aby dostosować wskazówki do ogólnej metodologii:
+Ten typ możliwości cyfrowych można przyspieszyć w każdej fazie następujących procesów, jak pokazano na powyższym obrazie. Wskazówki techniczne umożliwiające przyspieszenie oddzielania cyfr cyfrowych są wymienione w spisie treści po lewej stronie tej strony. Te artykuły są pogrupowane według fazy, aby dostosować wskazówki do ogólnej metodologii.
 
-- **Udostępnianie danych:** Pierwszym krokiem w democratizing danych jest udostępnienie go w sposób otwarty.
+- **Udostępnianie danych:** Pierwszy krok polega na tym, że dane democratizing są udostępniane w sposób otwarty.
 - **Dane dotyczące zarządzania:** Upewnij się, że wszelkie poufne dane są zabezpieczone, śledzone i zarządzane przed udostępnieniem.
-- **Scentralizowane dane:** Czasami konieczne jest zapewnienie scentralizowanej platformy do udostępniania i zarządzania danymi.
+- **Scentralizowane dane:** Czasami trzeba zapewnić scentralizowaną platformę do udostępniania i zarządzania danymi.
 - **Zbierz dane:** Migracja, integracja, pozyskiwanie i Wirtualizacja mogą zbierać istniejące dane, które mają być scentralizowane, regulowane i udostępniane.
 
-Zaleca się, aby zespoły rozwiązań do wdrażania w chmurze przechodzą do stosu, tak jak jest to konieczne, aby określić priorytet fokusu na potrzeby klientów nad architekturą w każdej iteracji. Opóźnienie wzrostu technicznego na korzyść klienta przyspiesza weryfikację hipotez. W związku z tym wszystkie wskazówki są mapowane na cztery procesy powyżej najwyższego wpływu na klientów na najwyższy wpływ techniczny. W każdym z nich znajdziesz wskazówki dotyczące różnych potencjalnych metod, które platforma Azure może przyspieszyć [Kompilowanie danych za pomocą empatię klientów](../considerations/build.md).
+W każdej iteracji zespoły rozwiązań w chmurze powinny przechodzić wyłącznie do stosu, ponieważ wymagają one skoncentrowania się na potrzebach klientów nad architekturą. Opóźnienie wzmocneń technicznych na korzyść klientów przyspiesza weryfikację hipotez.
+
+Wszystkie wskazówki są mapowane na cztery poprzednie procesy. Wskazówki dotyczące zakresu od najwyższego do najwyższego skutku technicznego. W każdym procesie zobaczysz wskazówki dotyczące różnych potencjalnych metod, które platforma Azure może skrócić do [kompilowania z empatię klientów](../considerations/build.md).
 
 ## <a name="toolchain"></a>Łańcuch narzędzi
 
-Na platformie Azure następujące narzędzia są najczęściej wykorzystywane do przyspieszenia cyfrowego rozróżnienia na każdą z powyższych faz: Power BI, Azure Data Catalog, Azure SQL Data Warehouse, Cosmos DB, bazy danych platformy Azure dla PostgreSQL, MySQL, MariaDB, PostgreSQL, platforma Azure Data Lake, usługa migracji danych platformy Azure, Azure SQL Database (z wystąpieniami lub bez nich), Azure Data Factory, Azure Stream Analytics, SQL Server Integration Services, Azure Stack, StorSimple bazy danych Azure SQL, Azure Files, File Sync i PolyBase.
+Na platformie Azure następujące narzędzia są często używane do przyspieszenia cyfrowego rozróżnienia w poprzednich fazach:
 
-Zgodnie z podejściem do rozliczeń na dużą skalę, aspekty poszczególnych rozwiązań będą wymagały uściślenia i działania technicznego. W takim przypadku jest możliwe, że będą wymagane więcej z tych usług. Na razie użyj spisu treści po lewej stronie, aby znaleźć wskazówki dotyczące narzędzi systemu Azure związanych z procesem wymaganym do testowania hipotezy.
+- Power BI
+- Azure Data Catalog
+- Azure SQL Data Warehouse
+- Azure Cosmos DB
+- Azure Database for PostgreSQL
+- Azure Database for MySQL
+- Azure Database for MariaDB
+- Skalowanie Azure Database for PostgreSQL
+- Azure Data Lake
+- Azure Database Migration Service
+- Azure SQL Database z wystąpieniami zarządzanymi lub bez nich
+- Azure Data Factory
+- Azure Stream Analytics
+- Usługi integracji programu SQL Server
+- Azure Stack
+- SQL Server Stretch Database
+- Microsoft Azure StorSimple
+- Azure Files
+- Azure File Sync
+- PolyBase
+
+Zgodnie z podejściem do rozliczeń na dużą skalę, aspekty poszczególnych rozwiązań wymagają uściślania i działania techniczne. W takim przypadku może być wymagana większa liczba tych usług. Skorzystaj ze spisu treści po lewej stronie tej strony, aby uzyskać wskazówki dotyczące narzędzi platformy Azure, które są istotne dla procesu testowania hipotez.
 
 ## <a name="get-started"></a>Rozpocznij
 
-Spis treści po lewej stronie zawiera wiele artykułów, które ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
+Spis treści po lewej stronie tej strony zawiera wiele artykułów. Te artykuły ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
 
 > [!NOTE]
 > Niektóre linki mogą opuścić strukturę wdrażania chmury, aby ułatwić przechodzenie poza zakres tej struktury.

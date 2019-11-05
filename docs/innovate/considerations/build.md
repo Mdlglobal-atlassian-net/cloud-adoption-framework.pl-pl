@@ -8,18 +8,18 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 25cc7cac212bffda6d7fa3514de7bb274fc1c17e
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: d1f9b53a152ee85d8817fcfdc9cfc613a89a585b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058597"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565734"
 ---
-# <a name="build-with-customer-empathy"></a>Kompiluj z empatię klienta
+# <a name="build-with-customer-empathy"></a>Tworzenie z empatią wobec klientów
 
 "Konieczność jest posługuje na wynalazku". Ta proverb przechwytuje indelibilitye ludzkie i nasz dysk naturalny do magazynu. Zgodnie z opisem w słowniku Oxford w języku angielskim, "gdy konieczna jest jego niezależność, należy wymusić, aby znaleźć sposoby ich uzyskania lub osiągnięcia". Kilka z nich będzie odrzucać te uniwersalne prawdy dotyczące wynalazków. Jednak zgodnie z opisem w [innowacyjności w sieci cyfrowej](./index.md)innowacje wymagają zrównoważenia *i* *przyjęcia*.
 
-Kontynuując pracę, innowacje pochodzą z bardziej rozszerzonej rodziny. *Klient empatię jest dumnym elementem nadrzędnym innowacji.* Tworzenie rozwiązania, które steruje innowacyjnością, wymaga ważnego klienta,&mdash;ten, który utrzymuje klient z powrotem w celu rozwiązania problemów krytycznych. Rozwiązania te są oparte na tym, czego potrzebują klienci, a nie na ich chęci lub whims. Aby znaleźć prawdziwe potrzeby klientów, Zacznijmy od empatię &mdash;a dogłębne zrozumienie środowiska klienta. Empatię to niezawodna umiejętność dla wielu inżynierów, menedżerów produktów i nawet liderów firmy. Na szczęście różnorodne interakcje i szybki tempo roli architekta w chmurze już zaczęły wspierać tę umiejętność.
+Kontynuując pracę, innowacje pochodzą z bardziej rozszerzonej rodziny. *Klient empatię jest dumnym elementem nadrzędnym innowacji.* Tworzenie rozwiązania, które steruje innowacyjnością, wymaga ważnego klienta,&mdash;ten, który utrzymuje klient z powrotem w celu rozwiązania problemów krytycznych. Rozwiązania te są oparte na tym, czego potrzebują klienci, a nie na ich chęci lub whims. Aby znaleźć prawdziwe potrzeby klientów, Zacznijmy od empatię&mdash;dogłębne zrozumienie środowiska klienta. Empatię to niezawodna umiejętność dla wielu inżynierów, menedżerów produktów i nawet liderów firmy. Na szczęście różnorodne interakcje i szybki tempo roli architekta w chmurze już zaczęły wspierać tę umiejętność.
 
 Dlaczego empatię tak ważne? Od pierwszego wydania minimalnego produktu (MVP) do ogólnej dostępności rozwiązania do oceny rynkowej klient empatię pomaga nam zrozumieć i udostępnić środowisko klienta. Empatię pomaga nam w tworzeniu lepszego rozwiązania. Co ważniejsze, lepiej rozmieszczenie rozwiązań do rozliczeń, które będą zachęcać do wdrożenia. W przypadku sieci cyfrowej te, które najbardziej empathizeą potrzebom klientów, mogą tworzyć jaśniejsze przyszłość, które ponownie definiują i prowadzą do rynku.
 
@@ -56,7 +56,7 @@ Z tego miejsca należy oszacować wartość procentową tego łącznego rynku, k
 
 Podczas każdej iteracji pętli Build-Measure-uczenie się, Próba skompilowania z empatię jest definiowana przez SPECJALISTę.
 
-MVP to najmniejsza jednostka nakładu pracy (wynalazk, inżynieria, programowanie aplikacji lub architektura danych) wymagana do utworzenia wystarczającej ilości rozwiązania do uczenia się _z klientem_. Celem każdego MVP jest przetestowanie niektórych lub wszystkich poprzednich postanowień oraz uzyskanie opinii bezpośrednio od klienta. Dane wyjściowe nie są atrakcyjną aplikacją ze wszystkimi funkcjami wymaganymi do zmiany branży. Żądane dane wyjściowe każdej iteracji to okazja do uczenia się, &mdash;a szansę na bardziej głębokie badanie hipotez.
+MVP to najmniejsza jednostka nakładu pracy (wynalazk, inżynieria, programowanie aplikacji lub architektura danych) wymagana do utworzenia wystarczającej ilości rozwiązania do uczenia się _z klientem_. Celem każdego MVP jest przetestowanie niektórych lub wszystkich poprzednich postanowień oraz uzyskanie opinii bezpośrednio od klienta. Dane wyjściowe nie są atrakcyjną aplikacją ze wszystkimi funkcjami wymaganymi do zmiany branży. Żądane dane wyjściowe każdej iteracji to okazja do uczenia się,&mdash;szansa na bardziej głębokie badanie hipotez.
 
 _Timeboxing_ to standardowy sposób, aby upewnić się, że produkt pozostaje w postaci oszczędnej. Na przykład upewnij się, że zespół programistyczny traktuje rozwiązanie w jednej iteracji, aby umożliwić szybkie testowanie. Aby lepiej zrozumieć użycie szybkości, iteracji i wydań w celu zdefiniowania minimalnych środków, zobacz [szybkość planowania, iteracje, wersja i ścieżki iteracji](../../plan/iteration-paths.md).
 
@@ -81,7 +81,7 @@ Zazwyczaj rozwiązanie MVP obejmuje prostą aplikację sieci Web lub rozwiązani
 - Algorytm predykcyjny, który jest niewłaściwy 99% czasu, ale pokazujący konkretne odpowiednie wyniki.
 - Urządzenie IoT, które nie komunikuje się bezpiecznie na skalę produkcyjną, ale pokazuje wartość niemal danych w czasie rzeczywistym w ramach procesu.
 - Aplikacja skompilowana przez dewelopera, aby przetestować hipotezę lub spełnić potrzeby mniejszej skali.
-- Proces ręczny, który odtworzy korzyści aplikacji do wykonania.
+- Proces ręczny, który ponownie tworzy korzyści aplikacji do wykonania.
 - Odpowiednio szczegółowy szkielet lub film wideo, aby umożliwić klientowi współdziałanie.
 
 Programowanie MVP nie powinno wymagać ogromnej ilości inwestycji programistycznych. Najlepiej, aby inwestycja była możliwie jak najmniejsza, aby zminimalizować liczbę przetestowanych w tym samym czasie. Następnie w każdej iteracji i każdej wersji rozwiązanie jest celowo ulepszane w rozwiązaniu gotowym do skalowania, które reprezentuje wiele dyscyplin wynalazków.
@@ -102,7 +102,7 @@ Gdy klient empatię jest silnie, wyraźnie istniejący problem powinien być ła
 
 Istnieje wiele wymagań prawnych, zgodności i branżowych, które mogą wymagać alternatywnego podejścia. Jeśli publiczne wydania opracowywania rozwiązania stwarzają ryzyko dla charakteru patentu, ochrony własności intelektualnej, przecieków danych klienta lub naruszenia wymagań zgodności, takie podejście może nie być odpowiednie. Gdy takie zagrożenia istnieją, zapoznaj się z przepisami prawnymi przed przyjęciem podejścia z przewodnikiem dotyczącego zarządzania zleceniami.
 
-## <a name="references"></a>Informacje
+## <a name="references"></a>Dokumentacja
 
 Niektóre koncepcje w tym artykule zostały omówione w temacie dotyczącym [*uruchamiania produkcji oszczędnej*](http://theleanstartup.com/book) (Eric Ries, działalność korony, 2011).
 

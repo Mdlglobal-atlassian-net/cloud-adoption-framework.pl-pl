@@ -8,36 +8,43 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 28b13b472729a8500719afbe34013daaddc9a3fc
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 9bb5f837ce3a7bb07fb108f48229f488df1b9dc7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683361"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565782"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>Narzędzia do przewidywania i wpływu na dane na platformie Azure
 
-Zgodnie z opisem w artykule teoretycznym dotyczącym [przewidywania i wpływu](../considerations/predict.md)komputery i sztuczna inteligencja są znacznie lepszym rozwiązaniem niż firma Microsoft. Przy użyciu narzędzi analitycznych opartych na chmurze wzorce mogą być łatwo wykrywane i stosowane do potrzeb klientów, co spowodowało przewidywanie najlepszego wyniku. Kiedy te przewidywania są zintegrowane z powrotem do środowiska klienta, przewidywanie może mieć wpływ na wzorce zachowań klientów poprzez interakcje.
+Zgodnie z opisem w artykule koncepcyjnym dotyczącym [przewidywania i wpływu](../considerations/predict.md)komputery i AI są znacznie lepsze niż w przypadku oglądania wzorców. Korzystając z narzędzi analitycznych opartych na chmurze, można łatwo wykryć wzorce i zastosować je do potrzeb klientów. Korzystanie z tych narzędzi skutkuje przewidywaniami najlepszych wyników. Kiedy te prognozy są zintegrowane z powrotem do środowiska klienta, mogą mieć wpływ na wzorce zachowań klientów poprzez interakcje.
 
 ![Podejście do struktury wdrożenia chmury do przewidywania i wpływu](../../_images/innovate/predict-and-influence.png)
 
-## <a name="alignment-to-the-methodology"></a>Wyrównanie do metodologii
+## <a name="alignment-to-the-methodology"></a>Dostosowywanie do metodologii
 
-Ten typ napisania cyfrowego można przyspieszyć w każdej fazie poniższego procesu, z wyrównaniem do metody opisanej powyżej. Wskazówki techniczne umożliwiające przyspieszenie rozdzielania cyfr cyfrowych są wymienione w spisie treści po lewej stronie. Te artykuły zostały pogrupowane w te same fazy, aby dostosować je do metodologii:
+Można przyspieszyć ten typ cyfrowego napisania przez każdą fazę poniższego procesu. Fazy są wyrównane do metodologii pokazanej w powyższym obrazie. Wskazówki techniczne umożliwiające przyspieszenie oddzielania cyfr cyfrowych są wymienione w spisie treści po lewej stronie tej strony. Te artykuły są pogrupowane według fazy, aby dostosować ją do metodologii.
 
-Na powyższym obrazie dane i szczegółowe informacje są wyrównane z najlepszymi rozwiązaniami opisanymi w artykule [democratizing Data](./data.md) . Jako że eksperci z dziedziny mogą wykrywać szczegółowe informacje, które można powtarzać, można wykorzystać następujące trzy kroki, aby dowiedzieć się więcej:
+Na powyższym obrazie dane i szczegółowe informacje są wyrównane z najlepszymi rozwiązaniami opisanymi w artykule [democratizing Data](./data.md) . W miarę jak eksperci z dziedziny mogą wykrywać szczegółowe informacje, które można powtarzać, mogą wykonać następujące trzy kroki, aby uzyskać wgląd w dane:
 
 - **Wzorce:** Znajdowanie i Definiowanie wzorców w celu utworzenia modeli predykcyjnych.
-- **Przewidywania:** Zastosuj wzorzec do danych klienta, aby przewidzieć wyniki na podstawie modelu i wzorca bazowego.
+- **Przewidywania:** Stosuj wzorce do danych klientów, aby przewidzieć wyniki na podstawie modelu i wzorca bazowego.
 - **Interakcje:** Wykorzystaj przewidywania z poziomu aplikacji lub źródła danych, aby zwiększyć interakcję z klientem.
 
 ## <a name="toolchain"></a>Łańcuch narzędzi
 
-Na platformie Azure następujące narzędzia są często wykorzystywane do przyspieszenia cyfrowego rozróżnienia w każdej z powyższych faz: Azure ML, HDInsight, Hadoop R i Azure SQL Data Warehouse. Jak poszczególne narzędzia pomagają w każdej fazie przewidywania i wpływu są odzwierciedlone w wytycznych w spisie treści po lewej stronie.
+Na platformie Azure następujące narzędzia są często używane do przyspieszenia cyfrowego rozróżnienia w każdej z poprzednich faz:
+
+- Azure Machine Learning
+- Azure HDInsight
+- Skalowanie w usłudze Hadoop R
+- Azure SQL Data Warehouse
+
+Jak poszczególne narzędzia pomagają w każdej fazie przewidywania i wpływu są odzwierciedlone w wytycznych w spisie treści po lewej stronie tej strony.
 
 ## <a name="get-started"></a>Rozpocznij
 
-Spis treści po lewej stronie zawiera wiele artykułów, które ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
+Spis treści po lewej stronie tej strony zawiera wiele artykułów. Te artykuły ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
 
 > [!NOTE]
 > Niektóre linki mogą opuścić strukturę wdrażania chmury, aby ułatwić przechodzenie poza zakres tej struktury.

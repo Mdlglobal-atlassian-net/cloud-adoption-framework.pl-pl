@@ -8,24 +8,24 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 99d5e42f8c7e506ba28617022f2a8076c9501979
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239759"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561689"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Tworzenie stref wyładunkowych przy użyciu Terraform
 
-Platforma Azure zapewnia natywne usługi do wdrażania stref wyładunkowej. Inne narzędzia innych firm mogą również pomóc w tym wysiłku. Jednym z tych narzędzi, które klienci i partnerzy często używają Hashicorp, jest Terraform. W tej sekcji przedstawiono sposób użycia prototypowej strefy docelowej do wdrożenia podstawowych możliwości rejestrowania, ewidencjonowania aktywności i zabezpieczeń dla subskrypcji platformy Azure.
+Platforma Azure zapewnia natywne usługi do wdrażania stref wyładunkowej. Inne narzędzia innych firm mogą również pomóc w tym wysiłku. Jednym z tych narzędzi, których klienci i partnerzy często używają do wdrażania stref wyładunkowej, jest Hashicorp Terraform. W tej sekcji przedstawiono sposób użycia prototypowej strefy docelowej do wdrożenia podstawowych możliwości rejestrowania, ewidencjonowania aktywności i zabezpieczeń dla subskrypcji platformy Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Przeznaczenie strefy docelowej
 
-Podstawowa strefa wyrzucania w chmurze wdrażania dla usługi Terraform ma ograniczony zestaw obowiązków i funkcji w celu wymuszenia rejestrowania, ewidencjonowania aktywności i zabezpieczeń. Ta strefa docelowa została zaprojektowana, aby wymusić spójność zasobów wdrożonych w środowisku za pomocą standardowych składników znanych jako moduły Terraform.
+Podstawowa strefa wymuszania w chmurze wdrażania dla usługi Terraform ma ograniczony zestaw obowiązków i funkcji, które mogą wymusić rejestrowanie, ewidencjonowanie aktywności i zabezpieczenia. Ta strefa docelowa korzysta ze standardowych składników znanych jako moduły Terraform, aby wymusić spójność zasobów wdrożonych w środowisku.
 
-## <a name="using-standard-modules"></a>Używanie modułów standardowych
+## <a name="use-standard-modules"></a>Używanie modułów standardowych
 
-Ponowne użycie składników jest podstawową zasadą infrastruktury jako kodu. Moduły są w definiowaniu standardów i spójności między wdrożeniem zasobów w środowiskach i między środowiskami. Zestaw modułów użytych do wdrożenia tej pierwszej strefy docelowej jest dostępny w oficjalnym [rejestrze Terraform](https://registry.terraform.io/search?q=aztfmod).
+Wielokrotne użycie składników jest podstawową zasadą infrastruktury jako kod. Moduły są w definiowaniu standardów i spójności między wdrożeniem zasobów w środowiskach i między środowiskami. Moduły używane do wdrożenia tej pierwszej strefy docelowej są dostępne w oficjalnym [rejestrze Terraform](https://registry.terraform.io/search?q=aztfmod).
 
 ## <a name="architecture-diagram"></a>Diagram architektury
 
@@ -40,10 +40,10 @@ Wdrożone składniki i ich przeznaczenie obejmują następujące elementy:
 | Składnik | odpowiedzialność za |
 |---------|---------|
 | Grupy zasobów | Podstawowe grupy zasobów, które są zbędne dla podstawy |
-| Rejestrowanie aktywności | Inspekcja wszystkich działań subskrypcji i archiwizowania: </br> — Konto magazynu </br> -Event Hubs |  
+| Rejestrowanie aktywności | Inspekcja wszystkich działań subskrypcji i archiwizowania: </br> — Konto magazynu </br> — Event Hubs platformy Azure |  
 | Rejestrowanie diagnostyczne | Wszystkie dzienniki operacji są przechowywane przez określoną liczbę dni: </br> — Konto magazynu </br> -Event Hubs |
 | Log Analytics | Przechowuje wszystkie dzienniki operacji </br> Wdrażaj popularne rozwiązania w zakresie przeglądu najlepszych rozwiązań dotyczących aplikacji: </br> - NetworkMonitoring </br> - ADAssessment </br> -ADReplication </br> - AgentHealthAssessment </br> - DnsAnalytics </br> - KeyVaultAnalytics
-| Security Center | Metryki i alerty dotyczące higieny zabezpieczeń wysyłane do poczty e-mail i numeru telefonu |
+| Azure Security Center | Metryki i alerty dotyczące higieny zabezpieczeń wysyłane do poczty e-mail i numeru telefonu |
 
 ## <a name="use-this-blueprint"></a>Korzystanie z tej strategii
 
@@ -66,8 +66,8 @@ Następujące decyzje są reprezentowane w Terraformej strefie docelowej:
 
 | Składnik | Decyzje | Alternatywne podejścia |
 | --- | --- | --- |
-|Rejestrowanie i monitorowanie | Zostanie użyty obszar roboczy Azure Monitor Log Analytics. Zostanie zainicjowana obsługa konta magazynu diagnostyki oraz centrum zdarzeń. |         |
-|Sieć | N/A — sieć zostanie wdrożona w innej strefie docelowej. |[Decyzje dotyczące sieci](../considerations/networking-options.md) |
+|Rejestrowanie i monitorowanie | Azure Monitor Log Analytics obszar roboczy jest używany. Obsługiwane jest konto magazynu diagnostyki oraz centrum zdarzeń. |         |
+|Sieć | Nie dotyczy sieci w innej strefie wyładunkowej. |[Decyzje dotyczące sieci](../considerations/networking-options.md) |
 |Tożsamość | Przyjęto założenie, że subskrypcja jest już skojarzona z wystąpieniem usługi Azure Active Directory. | [Najlepsze rozwiązania dotyczące zarządzania tożsamościami](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Zasady | W tej strefie wyładunkowej założono, że nie mają być stosowane żadne zasady platformy Azure. | |
 |Projekt subskrypcji | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej | [Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md) |
@@ -75,9 +75,9 @@ Następujące decyzje są reprezentowane w Terraformej strefie docelowej:
 | Grupy zasobów | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej | [Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md) |
 | Dane | ND | [Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Usługa Storage|ND|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md) |
-| Standardy nazewnictwa | Po utworzeniu środowiska zostanie również utworzony unikatowy prefiks. Zasoby, które wymagają unikatowej nazwy globalnej (na przykład kont magazynu), używają tego prefiksu. Nazwa niestandardowa zostanie dołączona z losowym sufiksem. Użycie tagów jest wymagane zgodnie z opisem w poniższej tabeli. | [Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md) |
+| Standardy nazewnictwa | Po utworzeniu środowiska tworzony jest również unikatowy prefiks. Zasoby, które wymagają unikatowej nazwy globalnej (na przykład kont magazynu), używają tego prefiksu. Nazwa niestandardowa jest dołączana do losowego sufiksu. Użycie tagów jest wymagane zgodnie z opisem w poniższej tabeli. | [Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md) |
 | Zarządzanie kosztami | ND | [Śledzenie kosztów](../azure-best-practices/track-costs.md) |
-| Wystąpienia obliczeniowe | ND | [Opcje środowiska obliczeniowego](../considerations/compute-options.md) |
+| Compute | ND | [Opcje środowiska obliczeniowego](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>Standardy tagowania
 
@@ -89,18 +89,18 @@ Następujący zestaw minimalnych tagów musi być obecny dla wszystkich zasobów
 | Cost Center | Księgowe centrum kosztu skojarzone z tym zasobem.| CostCenter | Liczba |
 | Odzyskiwanie po awarii | Ważność aplikacji, obciążenia lub usługi dla działania firmy. | ROUTINGU | FUNKCJA ODZYSKIWANIA PO AWARII, KTÓRA NIE JEST DOSTĘPNA W PROGRAMIE DR |
 | Środowisko | Środowisko wdrażania aplikacji, obciążenia lub usługi. |  Kopert | Produkcja, dev, pytań i odpowiedzi, etap, test, szkolenia |
-| Nazwa właściciela | Właściciel aplikacji, obciążenia lub usługi.| Właściciel | e-mail |
+| Nazwa właściciela | Właściciel aplikacji, obciążenia lub usługi.| Właściciel | email |
 | Typ wdrożenia | Definiuje sposób utrzymywania zasobów. | Typ wdrożenia | Ręczne, Terraform |
-| Wersja | Wersja wdrożonego planu | version | v 0,1 |
+| Wersja | Wdrożona wersja planu. | version | v 0,1 |
 | Nazwa aplikacji | Nazwa skojarzonej aplikacji, usługi lub obciążenia związanego z zasobem. | ApplicationName | "Nazwa aplikacji" |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Dostosowywanie i wdrażanie pierwszej strefy docelowej
 
-Można [sklonować strefę docelową programu Terraform Foundation](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready). Rozpoczęcie pracy z strefą docelową jest łatwe, modyfikując zmienne Terraform. W naszym przykładzie używamy **blueprint_foundations. sandbox. tfvars**, więc Terraform automatycznie ustawi wartości w tym pliku.
+Można [sklonować strefę docelową programu Terraform Foundation](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready). Rozpoczęcie pracy z strefą docelową jest łatwe, modyfikując zmienne Terraform. W naszym przykładzie używamy **blueprint_foundations. sandbox. tfvars**, więc Terraform automatycznie ustawia wartości w tym pliku.
 
 Przyjrzyjmy się różnym sekcjom zmiennych.
 
-W tym pierwszym obiekcie tworzymy dwie grupy zasobów w `southeastasia` regionie o nazwie "-Hub-Core-sek" i "-Hub-Core-s" wraz z prefiksem dodanym w czasie wykonywania.
+W tym pierwszym obiekcie tworzymy dwie grupy zasobów w regionie `southeastasia` o nazwie `-hub-core-sec` i `-hub-operations` wraz z prefiksem dodanym w czasie wykonywania.
 
 ```hcl
 resource_groups_hub = {
@@ -115,7 +115,7 @@ resource_groups_hub = {
 }
 ```
 
-Następnie określimy regiony, w których możemy ustawić fundacje. W tym miejscu `southeastasia` zostanie użyty do wdrożenia wszystkich zasobów.
+Następnie określimy regiony, w których możemy ustawić fundacje. W tym miejscu `southeastasia` jest używany do wdrażania wszystkich zasobów.
 
 ```hcl
 location_map = {
@@ -124,14 +124,14 @@ location_map = {
 }
 ```
 
-Następnie określamy okres przechowywania dzienników operacji i dzienników subskrypcji platformy Azure. Te dane będą przechowywane na oddzielnych kontach magazynu i w centrum zdarzeń, których nazwy są generowane losowo, ponieważ muszą być unikatowe.
+Następnie określamy okres przechowywania dzienników operacji i dzienników subskrypcji platformy Azure. Te dane są przechowywane na oddzielnych kontach magazynu i w centrum zdarzeń, których nazwy są generowane losowo, ponieważ muszą być unikatowe.
 
 ```hcl
 azure_activity_logs_retention = 365
 azure_diagnostics_logs_retention = 60
 ```
 
-W tags_hub określamy minimalny zestaw znaczników, które zostaną zastosowane do wszystkich utworzonych zasobów.
+W tags_hub określamy minimalny zestaw znaczników, które są stosowane do wszystkich utworzonych zasobów.
 
 ```hcl
 tags_hub = {
@@ -144,7 +144,7 @@ tags_hub = {
 }
 ```
 
-Następnie podaj nazwę usługi log Analytics i zestaw rozwiązań, które będą analizować wdrożenie. W tym miejscu zachowamy monitorowanie sieci, AD Assessment i replikację, DNS Analytics i Key Vault Analytics.
+Następnie podaj nazwę usługi log Analytics i zestaw rozwiązań, które analizują wdrożenie. W tym miejscu zachowamy monitorowanie sieci, Active Directory (AD) oceny i replikacji, DNS Analytics i Key Vault Analytics.
 
 ```hcl
 
@@ -189,20 +189,20 @@ security_center = {
 }
 ```
 
-## <a name="getting-started"></a>Wprowadzenie
+## <a name="get-started"></a>Rozpocznij
 
-Po przejrzeniu konfiguracji można wdrożyć konfigurację w sposób wdrożony środowisko Terraform. Zaleca się jednak korzystanie z Rover, który jest kontenerem platformy Docker, który umożliwia wdrażanie z systemu Windows, Linux lub MacOS. Możesz rozpocząć pracę z [repozytorium GitHub Rover](https://github.com/aztfmod/rover).
+Po przejrzeniu konfiguracji można wdrożyć konfigurację w sposób wdrożony środowisko Terraform. Zalecamy korzystanie z Rover, który jest kontenerem platformy Docker, który umożliwia wdrażanie z systemu Windows, Linux lub MacOS. Możesz rozpocząć pracę z [repozytorium GitHub Rover](https://github.com/aztfmod/rover).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Strefa docelowa programu Foundation określa podstawę dla złożonego środowiska w sposób rozłożony. Ta wersja zawiera zestaw bardzo prostych możliwości, które można rozszerzyć, wykonując następujące czynności:
+Strefa docelowa programu Foundation określa podstawę dla złożonego środowiska w sposób rozłożony. Ta wersja zawiera zestaw prostych możliwości, które można rozszerzyć, wykonując następujące czynności:
 
 - Dodawanie innych modułów do planu.
 - Nakładanie warstwowych dodatkowych stref wyładunkowych na siebie.
 
-Warstwowe strefy ładunkowe są dobrym sposobem na oddzielenie systemów, przechowywanie wersji każdego używanego składnika i umożliwienie szybkiego innowacji i stabilności w ramach wdrożenia infrastruktury jako kodu.
+Warstwowe strefy ładunkowe są dobrym sposobem na oddzielenie systemów, przechowywanie wersji każdego używanego składnika i umożliwienie szybkiego innowacji i stabilności w przypadku wdrożenia infrastruktury jako kodu.
 
-Przyszłe architektury referencyjne będą demonstrować koncepcję topologii gwiazdy.
+W przyszłych architekturach referencyjnych będzie zademonstrowane takie koncepcje dla topologii gwiazdy.
 
 > [!div class="nextstepaction"]
-> [Zapoznaj się z przykładem strefy wyładunkowej Foundation przy użyciu Terraform](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)
+> [Zapoznaj się z przykładem strefy wyładunkowej programu Foundation Terraform](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)

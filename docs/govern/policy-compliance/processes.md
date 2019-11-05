@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222045"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566115"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Po wdrożeniu dodatkowych zasobów i obciążeń zespół ds. zarządzania chmur
 
 Zaplanuj ocenę nowych potencjalnych zagrożeń i aktualizowanie instrukcji zasad i zaprojektowanie przewodników zgodnie z wymaganiami. Współpracuj z pracownikami działu IT i zespołami obciążeń, aby regularnie szacować nowe funkcje i usługi platformy Azure. Zaplanuj także regularne przeglądy dla każdej z pięciu dyscyplin ładu, aby zapewnić aktualność i spełnienie zasad.
 
-### <a name="education"></a>Education
+### <a name="education"></a>Edukacja
 
 Zgodność z zasadami wymaga, aby pracownicy IT i deweloperzy mogli zrozumieć wymagania dotyczące zasad, które mają wpływ na ich obszary odpowiedzialności. Zaplanuj, aby przeznaczyć zasoby na decyzje i wymagania oraz poinformować wszystkie odpowiednie zespoły dotyczące przewodników projektowych, które obsługują wymagania dotyczące zasad.
 
@@ -83,7 +83,7 @@ Przykładowe wyzwalacze naruszenia i akcje:
 | Punkt odniesienia zabezpieczeń | Wykrywaj podejrzane działania związane z logowaniem użytkownika. | Powiadom zespół ds. zabezpieczeń IT i Wyłącz podejrzane konto użytkownika. |
 | Spójność zasobów | Użycie procesora CPU w obciążeniu jest większe niż 90%. | Powiadom zespół ds. operacji IT i Skaluj dodatkowe zasoby, aby obsłużyć obciążenie. |
 
-## <a name="monitoring-and-compliance-automation"></a>Monitorowanie i Automatyzacja zgodności
+## <a name="automation-of-monitoring-and-compliance"></a>Automatyzacja monitorowania i zgodności
 
 Po zdefiniowaniu wyzwalaczy i akcji naruszenia zgodności można rozpocząć planowanie, jak najlepiej korzystać z narzędzi do rejestrowania i raportowania oraz innych funkcji platformy w chmurze, aby pomóc zautomatyzować strategię monitorowania i zgodności z zasadami.
 

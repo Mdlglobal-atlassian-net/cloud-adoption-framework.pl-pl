@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2050c210bad9434e688ec4ef7c2e700cccf39f2c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025477"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564593"
 ---
 # <a name="business-change-plan"></a>Plan zmian biznesowych
 
@@ -31,7 +31,7 @@ Chociaż podejścia mogą się różnić, ogólne motywy są wspólne dla więks
 
 Te motywy często opierają się na założeniu, że wprowadzanie nowych rozwiązań dla użytkowników powinno koncentrować się głównie na kontroli ryzyka i upraszczaniu zmian. Ponadto dział IT skupia się głównie na ryzyku związanym ze zmianą technologiczną i upraszczaniu wprowadzania tej zmiany.
 
-## <a name="creating-business-change-plans"></a>Tworzenie planów zmian biznesowych
+## <a name="create-business-change-plans"></a>Tworzenie planów zmian firmy
 
 Plan zmian biznesowych wykracza poza zmianę techniczną i zakłada, że każde wydanie w ramach działań związanych z migracją wymaga pewnego poziomu zmian w procesie biznesowym. Plan ten obejmuje strumienie wychodzące i przychodzące związane ze zmianami technicznymi. Poniższe pytania ułatwiają uczestnikom spojrzenie na proces wdrażania użytkowników z perspektywy zmian biznesowych w celu zmaksymalizowania ich wpływu na firmę:
 
@@ -65,6 +65,6 @@ Po udokumentowaniu i zaplanowaniu zmiany biznesowej można rozpocząć [testowan
 > [!div class="nextstepaction"]
 > [Wskazówki dotyczące testowania biznesowego (testowania akceptacyjnego przez użytkowników) podczas migracji](./business-test.md)
 
-## <a name="references"></a>Odwołania
+## <a name="references"></a>Dokumentacja
 
-- Eason, K. (1988) _Information technology and organizational change_ (Technologie informatyczne i zmiany organizacyjne), Nowy Jork: Taylor i Francis.
+- Eason, K. (1988) _technologia informacyjna i zmiana organizacyjna_, Nowy Jork: Taylor i Francis.

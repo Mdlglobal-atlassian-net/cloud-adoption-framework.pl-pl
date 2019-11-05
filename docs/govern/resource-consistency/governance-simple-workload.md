@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a64a069dcebb12cf550f697561b76903e6d01bf
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 116119530ba5cedcdad836b219b43f23f74d9afc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967342"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566018"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Projekt nadzoru dla jednego obciążenia
 
@@ -25,16 +25,17 @@ Naszym celem jest wdrożenie prostych obciążeń na platformie Azure. W wyniku 
 - Zarządzanie tożsamościami dla pojedynczego **właściciela obciążenia** , który jest odpowiedzialny za wdrażanie i utrzymywanie prostego obciążenia. Właściciel obciążenia wymaga uprawnień do tworzenia, odczytywania, aktualizowania i usuwania zasobów oraz uprawnienia do delegowania tych praw innym użytkownikom w systemie zarządzania tożsamościami.
 - Zarządzaj wszystkimi zasobami dla prostego obciążenia jako pojedynczą jednostką zarządzania.
 
-## <a name="licensing-azure"></a>Licencjonowanie platformy Azure
+## <a name="azure-licensing"></a>Licencjonowanie platformy Azure
 
 Przed rozpoczęciem projektowania naszego modelu zarządzania należy zrozumieć, w jaki sposób platforma Azure jest licencjonowana. Wynika to z faktu, że konta administracyjne skojarzone z licencją platformy Azure mają najwyższy poziom dostępu do zasobów platformy Azure. Te konta administracyjne stanowią podstawę modelu zarządzania.
 
 > [!NOTE]
-> Jeśli Twoja organizacja ma istniejące [Umowa Enterprise firmy Microsoft](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) , które nie obejmuje platformy Azure, można dodać platformę Azure, wykonując zobowiązania pieniężne z góry. Aby uzyskać więcej informacji [, zobacz Licencjonowanie platformy Azure dla przedsiębiorstwa](https://azure.microsoft.com/pricing/enterprise-agreement) .
+> Jeśli Twoja organizacja ma istniejące [Umowa Enterprise firmy Microsoft](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) , które nie obejmuje platformy Azure, można dodać platformę Azure, wykonując zobowiązania pieniężne z góry. Aby uzyskać więcej informacji, zobacz [Licencjonowanie platformy Azure dla przedsiębiorstwa](https://azure.microsoft.com/pricing/enterprise-agreement).
 
 Po dodaniu platformy Azure do Umowa Enterprise organizacji zostanie wyświetlony monit o utworzenie **konta platformy Azure**. Podczas procesu tworzenia konta utworzono **właściciela konta platformy Azure** , a także dzierżawę usługi Azure Active Directory (Azure AD) z kontem **administratora globalnego** . Dzierżawa usługi Azure AD to logiczna konstrukcja, która reprezentuje bezpieczne, dedykowane wystąpienie usługi Azure AD.
 
-konto @no__t 0Azure z menedżerem kont platformy Azure i administratorem globalnym usługi Azure AD @ no__t-1*rysunek 1 — konto platformy Azure z menedżerem kont i administratorem globalnym usługi Azure AD.*
+![konto platformy Azure z menedżerem kont platformy Azure i administratorem globalnym usługi Azure AD](../../_images/govern/design/governance-3-0.png)
+*rysunek 1 — konto platformy Azure z menedżerem kont i administratorem globalnym usługi Azure AD.*
 
 ## <a name="identity-management"></a>Zarządzanie tożsamościami
 
@@ -44,7 +45,8 @@ Naszym wymaganiem jest zarządzanie tożsamościami dla jednego **właściciela 
 
 Nasz Administrator globalny usługi Azure AD utworzy konto **właściciela obciążenia** dla właściciela obciążenia:
 
-@no__t 0The — Administrator globalny usługi Azure AD tworzy konto właściciela obciążenia @ no__t-1*rysunek 2 — Administrator globalny usługi Azure AD tworzy konto użytkownika właściciela obciążenia.*
+![Administrator globalny usługi Azure AD tworzy konto właściciela obciążenia](../../_images/govern/design/governance-1-2.png)
+*rysunku 2 — Administrator globalny usługi Azure AD tworzy konto użytkownika właściciela obciążenia.*
 
 Nie można przypisać uprawnienia dostępu do zasobów, dopóki ten użytkownik nie zostanie dodany do **subskrypcji**, więc należy to zrobić w następnych dwóch sekcjach.
 
@@ -54,23 +56,27 @@ Wraz ze wzrostem liczby zasobów wdrożonych przez organizację zwiększa się r
 
 Najwyższy poziom zakresu zarządzania zasobami to poziom **subskrypcji** . Subskrypcja jest tworzona przez **właściciela konta**platformy Azure, który ustanawia zobowiązania finansowe i jest odpowiedzialny za zapłacenie za wszystkie zasoby platformy Azure skojarzone z subskrypcją:
 
-@no__t 0The — właściciel konta platformy Azure tworzy subskrypcję @ no__t-1*rysunek 3 — właściciel konta platformy Azure tworzy subskrypcję.*
+![właściciel konta Azure tworzy subskrypcję](../../_images/govern/design/governance-1-3.png)
+*rysunku 3 — właściciel konta platformy Azure tworzy subskrypcję.*
 
 Po utworzeniu subskrypcji **właściciel konta** platformy Azure kojarzy dzierżawę usługi Azure AD z subskrypcją, a ta dzierżawa usługi Azure AD jest używana do uwierzytelniania i autoryzowania użytkowników:
 
-@no__t 0The — właściciel konta platformy Azure kojarzy dzierżawę usługi Azure AD z subskrypcją @ no__t-1*rysunek 4 — właściciel konta platformy Azure kojarzy dzierżawę usługi Azure AD z subskrypcją.*
+![właściciel konta platformy Azure kojarzy dzierżawę usługi Azure AD z subskrypcją](../../_images/govern/design/governance-1-4.png)
+*rysunek 4 — właściciel konta platformy Azure kojarzy dzierżawę usługi Azure AD z subskrypcją.*
 
 Być może zauważono, że nie istnieje żaden użytkownik skojarzony z subskrypcją, co oznacza, że nikt nie ma uprawnień do zarządzania zasobami. W rzeczywistości **właściciel konta** jest właścicielem subskrypcji i ma uprawnienia do wykonania dowolnej akcji dotyczącej zasobu w subskrypcji. Jednakże w praktyce **właściciel konta** jest bardziej niż prawdopodobnie osobą finansową w organizacji i nie jest odpowiedzialny za tworzenie, odczytywanie, aktualizowanie i usuwanie zasobów — te zadania będą wykonywane przez **właściciela obciążenia**. W związku z tym należy dodać **właściciela obciążenia** do subskrypcji i przypisać uprawnienia.
 
 Ponieważ **właściciel konta** jest obecnie jedynym użytkownikiem z uprawnieniami do dodawania **właściciela obciążenia** do subskrypcji, Dodaj **właściciela obciążenia** do subskrypcji:
 
-@no__t 0The — właściciel konta platformy Azure dodaje do subskrypcji @ * właściciela obciążenia * * subskrypcję @ no__t-1*rysunek 5 — właściciel konta platformy Azure dodaje właściciela obciążenia do subskrypcji.*
+![właściciel konta platformy Azure dodaje do subskrypcji * * właściciela obciążenia * *,](../../_images/govern/design/governance-1-5.png)
+*rysunek 5 — właściciel konta platformy Azure dodaje właściciela obciążenia do subskrypcji.*
 
 **Właściciel konta** platformy Azure przyznaje uprawnienia **właścicielowi obciążenia** , przypisując rolę [kontroli dostępu opartej na rolach (RBAC)](https://docs.microsoft.com/azure/role-based-access-control) . Rola RBAC określa zestaw uprawnień, które **właściciel obciążenia** ma dla danego typu zasobu lub zestawu typów zasobów.
 
 Zwróć uwagę, że w tym przykładzie **właściciel konta** ma przypisaną [wbudowaną rolę **właściciela** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner):
 
-![The * * do właściciela obciążenia * * przypisano wbudowaną rolę właściciela @ no__t-1*rysunek 6 — właściciel obciążenia ma przypisaną wbudowaną rolę właściciela.*
+![* * z właścicielem obciążenia * * została przypisana wbudowana rola właściciela](../../_images/govern/design/governance-1-6.png)
+*rysunek 6 — właściciel obciążenia ma przypisaną wbudowaną rolę właściciela.*
 
 Wbudowana rola **właściciela** przyznaje wszystkim uprawnienia **właścicielowi obciążenia** w zakresie subskrypcji.
 
@@ -81,21 +87,23 @@ Następnym poziomem zakresu zarządzania jest poziom **grupy zasobów** . Grupa 
 
 Aby to zilustrować, przyjrzyjmy się tym, co się stanie, gdy **właściciel obciążenia** tworzy grupę zasobów:
 
-@no__t – 0The * * właściciel obciążenia * * tworzy grupę zasobów @ no__t-1*rysunek 7 — właściciel obciążenia tworzy grupę zasobów i dziedziczy wbudowaną rolę właściciela w zakresie grupy zasobów.*
+![* * właściciel obciążenia * * tworzy grupę zasobów](../../_images/govern/design/governance-1-7.png)
+*rysunek 7. właściciel obciążenia tworzy grupę zasobów i dziedziczy rolę właściciela wbudowanego w zakresie grupy zasobów.*
 
 Ponownie wbudowana rola **właściciela** przyznaje wszystkim uprawnienia **właścicielowi obciążenia** w zakresie grupy zasobów. Jak wspomniano wcześniej, ta rola jest dziedziczona z poziomu subskrypcji. Jeśli w tym zakresie jest przypisana inna rola, ma ona zastosowanie tylko do tego zakresu.
 
-Najniższy poziom zakresu zarządzania znajduje się na poziomie **zasobu** . Operacje zastosowane na poziomie zasobu dotyczą tylko samego zasobu. Po ponownym uruchomieniu uprawnienia na poziomie zasobu są dziedziczone z zakresu grupy zasobów. Na przykład przyjrzyjmy się, co się stanie, jeśli **właściciel obciążenia** wdroży [sieć wirtualną](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) w grupie zasobów:
+Najniższy poziom zakresu zarządzania znajduje się na poziomie **zasobu** . Operacje zastosowane na poziomie zasobu dotyczą tylko samego zasobu. Ponownie uprawnienia na poziomie zasobu są dziedziczone z zakresu grupy zasobów. Na przykład przyjrzyjmy się, co się stanie, jeśli **właściciel obciążenia** wdroży [sieć wirtualną](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) w grupie zasobów:
 
-![The * * no__t, właściciel obciążenia * * tworzy zasób @-1*rysunek 8 — właściciel obciążenia tworzy zasób i dziedziczy wbudowaną rolę właściciela w zakresie zasobów.*
+![* * właściciel obciążenia * * tworzy zasób](../../_images/govern/design/governance-1-8.png)
+*rysunek 8 — właściciel obciążenia tworzy zasób i dziedziczy wbudowaną rolę właściciela w zakresie zasobów.*
 
 **Właściciel obciążenia** dziedziczy rolę właściciela w zakresie zasobów, co oznacza, że właściciel obciążenia ma wszystkie uprawnienia do sieci wirtualnej.
 
-## <a name="implementing-the-basic-resource-access-management-model"></a>Implementowanie podstawowego modelu zarządzania dostępem do zasobów
+## <a name="implement-the-basic-resource-access-management-model"></a>Implementowanie podstawowego modelu zarządzania dostępem do zasobów
 
 Przejdźmy, aby dowiedzieć się, jak zaimplementować model ładu zaprojektowany wcześniej.
 
-Aby rozpocząć, organizacja wymaga konta platformy Azure. Jeśli Twoja organizacja ma istniejące [Umowa Enterprise firmy Microsoft](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) , które nie obejmuje platformy Azure, można dodać platformę Azure, wykonując zobowiązania pieniężne z góry. Aby uzyskać więcej informacji [, zobacz Licencjonowanie platformy Azure dla przedsiębiorstwa](https://azure.microsoft.com/pricing/enterprise-agreement) .
+Aby rozpocząć, organizacja wymaga konta platformy Azure. Jeśli Twoja organizacja ma istniejące [Umowa Enterprise firmy Microsoft](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) , które nie obejmuje platformy Azure, można dodać platformę Azure, wykonując zobowiązania pieniężne z góry. Aby uzyskać więcej informacji, zobacz [Licencjonowanie platformy Azure dla przedsiębiorstwa](https://azure.microsoft.com/pricing/enterprise-agreement).
 
 Po utworzeniu konta platformy Azure należy określić osobę w organizacji jako **właściciela konta**platformy Azure. Domyślnie zostanie utworzona dzierżawa usługi Azure Active Directory (Azure AD). **Właściciel konta** platformy Azure musi [utworzyć konto użytkownika](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory) dla osoby w organizacji, która jest **właścicielem obciążenia**.
 

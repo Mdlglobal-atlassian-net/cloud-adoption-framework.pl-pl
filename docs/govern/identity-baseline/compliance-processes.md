@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 22fa26bdf4665584224551015cd4b3277d4755a3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223763"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566214"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Procesy zgodności zasad linii bazowej tożsamości
 
@@ -40,7 +40,7 @@ Ten proces planowania jest również dobrym terminem do oszacowania bieżącego 
 
 **Comiesięczne przeglądy audytu i raportowania:** Co miesiąc należy przeprowadzić inspekcję we wszystkich wdrożeniach w chmurze w celu zapewnienia ciągłego wyrównania przy użyciu zasad tożsamości. Ten przegląd umożliwia sprawdzenie dostępu użytkowników przed zmianami biznesowymi w celu zapewnienia, że użytkownicy mają prawidłowy dostęp do zasobów w chmurze i zapewniają spójność strategii dostępu, takich jak RBAC. Zidentyfikuj wszystkie konta uprzywilejowane i udokumentowanie ich przeznaczenia. Ten proces przeglądu powoduje utworzenie raportu dla zespołu strategii chmurowej i każdego zespołu wdrażania w chmurze, który szczegółowo określa ogólne przestrzeganie zasad. Raport jest również przechowywany na potrzeby inspekcji i przepisów prawnych.
 
-## <a name="ongoing-monitoring-processes"></a>Procesy trwającego monitorowania
+## <a name="processes-for-ongoing-monitoring"></a>Procesy do ciągłego monitorowania
 
 Ustalanie, czy strategia zarządzania tożsamościami jest pomyślna, zależy od widoczności bieżącego i wcześniejszego stanu systemów tożsamości. Bez możliwości analizowania odpowiednich metryk i danych związanych z wdrożeniem w chmurze nie można identyfikować zmian ryzyka ani wykrywać naruszeń tolerancji ryzyka. Bieżące procesy ładu omówione powyżej wymagają danych dotyczących jakości, aby zapewnić możliwość modyfikacji zasad w celu obsługi zmieniających się potrzeb firmy.
 

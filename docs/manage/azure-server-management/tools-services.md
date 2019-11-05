@@ -8,27 +8,27 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e365cca30b5fe98e0737beb3005a13544844dc41
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: 51564add9bfe50ab494b39344eb24d3079fce000
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888882"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565279"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Narzędzia i usługi zarządzania serwerem platformy Azure
 
-Zgodnie z [omówieniem](./index.md) tej sekcji pakiet usług Azure Server Management Services obejmuje następujące obszary:
+Zgodnie z [omówieniem](./index.md) tych wskazówek, pakiet usług zarządzania serwerem platformy Azure obejmuje następujące zagadnienia:
 
-- [Migrate (Migracja)](#migrate)
-- [Bezpieczeństwo](#secure)
-- [Ochrona](#protect)
-- [Monitorowanie](#monitor)
-- [Konfigurowanie](#configure)
-- [Decydując](#govern)
+- Migrate (Migracja)
+- Bezpieczeństwo
+- Ochrona
+- Monitorowanie
+- Konfiguracja
+- Ład
 
 W poniższych sekcjach krótko opisano te obszary zarządzania i przedstawiono linki do szczegółowej zawartości dotyczącej głównych usług platformy Azure, które je obsługują.
 
-## <a name="migrate"></a>Migrowanie
+## <a name="migrate"></a>Migrate (Migracja)
 
 Usługi migracji mogą ułatwić Migrowanie obciążeń do platformy Azure. Aby zapewnić najlepsze wskazówki, usługa Azure Migrate rozpoczyna się od mierzenia wydajności serwera lokalnego i oceny przydatności do migracji. Po Azure Migrate zakończeniu oceny można przeprowadzić migrację maszyn lokalnych do platformy Azure za pomocą [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) i [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) .
 
@@ -40,17 +40,23 @@ Usługi migracji mogą ułatwić Migrowanie obciążeń do platformy Azure. Aby 
 
 Aby chronić dane, należy zaplanować tworzenie kopii zapasowej, wysoką dostępność, szyfrowanie, autoryzację i pokrewne problemy operacyjne. Te tematy są szeroko omówione w trybie online, dlatego należy skoncentrować się na tworzeniu planu odzyskiwania po awarii firmy (BCDR). Zawieramy odwołania do dokumentacji opisującej szczegółowo, jak zaimplementować i wdrożyć ten typ planu.
 
-Podczas budowania strategii ochrony danych należy najpierw rozważyć rozbicie aplikacji obciążeń na ich różne warstwy, ponieważ każda warstwa zwykle wymaga własnego unikatowego planu ochrony. Aby dowiedzieć się więcej o projektowaniu aplikacji do odporności, zobacz [projektowanie odpornych aplikacji na platformie Azure](https://docs.microsoft.com/azure/architecture/resiliency).
+Podczas budowania strategii ochrony danych należy najpierw rozważyć rozdzielenie aplikacji obciążeń na ich różne warstwy. Takie podejście jest pomocne, ponieważ każda warstwa zazwyczaj wymaga własnego unikatowego planu ochrony. Aby dowiedzieć się więcej o projektowaniu aplikacji do odporności, zobacz [projektowanie odpornych aplikacji na platformie Azure](https://docs.microsoft.com/azure/architecture/resiliency).
 
-Najbardziej podstawowa ochrona danych to kopia zapasowa. Aby przyspieszyć proces odzyskiwania w przypadku utraty serwera, należy utworzyć kopię zapasową nie tylko danych, ale także konfiguracje serwera. Tworzenie kopii zapasowych jest skutecznym mechanizmem do obsługi przypadkowego usuwania danych i ataku z wykorzystaniem oprogramowania wymuszającego okup. [Azure Backup](https://docs.microsoft.com/azure/backup) może pomóc w ochronie danych na platformie Azure i serwerach lokalnych z systemem Windows lub Linux. Aby uzyskać szczegółowe informacje o możliwościach i przewodnikach związanych z tą usługą, zobacz [dokumentację Azure Backup](https://docs.microsoft.com/azure/backup/backup-overview).
+Najbardziej podstawowa ochrona danych to kopia zapasowa. Aby przyspieszyć proces odzyskiwania w przypadku utraty serwerów, Utwórz kopię zapasową nie tylko danych, ale także konfiguracje serwera. Tworzenie kopii zapasowych jest skutecznym mechanizmem do obsługi przypadkowego usuwania danych i ataku z wykorzystaniem oprogramowania wymuszającego okup. [Azure Backup](https://docs.microsoft.com/azure/backup) może pomóc w ochronie danych na platformie Azure i serwerach lokalnych z systemem Windows lub Linux. Aby uzyskać szczegółowe informacje o tym, co można zrobić, zobacz [dokumentację Azure Backup](https://docs.microsoft.com/azure/backup/backup-overview).
 
-Odzyskiwanie za pomocą kopii zapasowej może zająć dużo czasu. Standard branżowy jest zwykle jeden dzień. Jeśli obciążenie wymaga ciągłości biznesowej w przypadku awarii sprzętu lub awarii centrum danych, należy rozważyć użycie funkcji replikacji. [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) zapewnia ciągłą replikację maszyn wirtualnych, rozwiązanie, które zapewnia utratę danych na poziomie systemu operacyjnego. Site Recovery obsługuje również kilka scenariuszy replikacji, takich jak replikacja maszyn wirtualnych platformy Azure między dwoma regionami świadczenia usługi Azure, między serwerami lokalnymi i między środowiskiem lokalnym i platformą Azure. Aby uzyskać więcej informacji, zobacz [kompletna macierz replikacji Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview#what-can-i-replicate).
+Odzyskiwanie za pomocą kopii zapasowej może zająć dużo czasu. Standard branżowy jest zwykle jeden dzień. Jeśli obciążenie wymaga ciągłości biznesowej w przypadku awarii sprzętu lub awarii centrum danych, należy rozważyć użycie funkcji replikacji. [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) zapewnia ciągłą replikację maszyn wirtualnych, rozwiązanie, które zapewnia utratę danych na poziomie systemu operacyjnego. Site Recovery obsługuje również kilka scenariuszy replikacji, takich jak replikacja:
 
-W przypadku danych serwera plików inna usługa do rozważenia jest [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning). Ta usługa umożliwia scentralizowanie udziałów plików w organizacji w Azure Files przy zachowaniu elastyczności, wydajności i zgodności lokalnego serwera plików. Aby korzystać z tej usługi, postępuj zgodnie z instrukcjami dotyczącymi wdrażania Azure File Sync.
+- Maszyn wirtualnych platformy Azure między dwoma regionami świadczenia usługi Azure.
+- Między serwerami lokalnymi.
+- Między serwerami lokalnymi i platformą Azure.
+
+Aby uzyskać więcej informacji, zobacz [kompletna macierz replikacji Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview#what-can-i-replicate).
+
+W przypadku danych na serwerze plików można [Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning)inne usługi. Ta usługa ułatwia scentralizowanie udziałów plików w organizacji w Azure Files przy zachowaniu elastyczności, wydajności i zgodności lokalnego serwera plików. Aby korzystać z tej usługi, postępuj zgodnie z instrukcjami dotyczącymi wdrażania Azure File Sync.
 
 ## <a name="monitor"></a>Monitorowanie
 
-[Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) udostępnia widok różnych zasobów, takich jak aplikacje, kontenery i maszyny wirtualne. Gromadzi również dane z kilku źródeł.
+[Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) udostępnia widok różnych zasobów, takich jak aplikacje, kontenery i maszyny wirtualne. Gromadzi również dane z kilku źródeł:
 
 - Azure Monitor dla maszyn wirtualnych ([Insights](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview)) oferuje szczegółowy widok kondycji maszyny wirtualnej, trendów wydajności i zależności. Usługa monitoruje kondycję systemów operacyjnych maszyn wirtualnych platformy Azure, zestawów skalowania maszyn wirtualnych i maszyn w środowisku lokalnym.
 - Log Analytics ([dzienniki](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection#logs)) to funkcja Azure monitor. Jego rolą jest centralny ogólny scenariusz zarządzania platformy Azure. Służy jako magazyn danych do analizy dzienników i dla wielu innych usług platformy Azure. Oferuje on bogaty język zapytań i aparat analityczny, który zapewnia wgląd w działanie aplikacji i zasobów.
@@ -58,18 +64,26 @@ W przypadku danych serwera plików inna usługa do rozważenia jest [Azure File 
 
 ## <a name="configure"></a>Konfiguracja
 
-Kilka usług mieści się w tej kategorii. Mogą one pomóc zautomatyzować zadania operacyjne, zarządzać konfiguracjami serwera, mierzyć zgodność aktualizacji, planować aktualizacje i wykrywać zmiany na serwerach. Te usługi są podstawowe do obsługi bieżących operacji.
+Kilka usług mieści się w tej kategorii. Mogą one ułatwić:
 
-- [Update Management](https://docs.microsoft.com/azure/automation/automation-update-management#view-update-assessments) automatyzuje wdrażanie poprawek w środowisku, w tym wdrażanie do wystąpień systemu operacyjnego działającego poza platformą Azure. Obsługuje zarówno systemy operacyjne Windows, jak i Linux i śledzi najważniejsze luki w zabezpieczeniach systemu operacyjnego i niezgodności spowodowane przez brakujące poprawki.
-- [Change Tracking i spis](https://docs.microsoft.com/azure/automation/change-tracking) zapewniają wgląd w oprogramowanie, które jest uruchomione w danym środowisku, i wyświetla wszystkie zmiany, które wystąpiły.
-- [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) umożliwia uruchamianie skryptów Python i PowerShell oraz elementów Runbook w celu zautomatyzowania zadań w środowisku. Korzystając z tego [hybrydowego procesu roboczego elementu Runbook](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker), można również rozłożyć elementy Runbook do zasobów lokalnych.
-- [Azure Automation konfiguracja stanu](https://docs.microsoft.com/azure/automation/automation-dsc-overview) umożliwia wypychanie konfiguracji stanu żądanego (DSC) programu PowerShell bezpośrednio z platformy Azure. Z kolei Konfiguracja DSC umożliwia monitorowanie i zachowanie konfiguracji systemów operacyjnych gościa i obciążeń.
+- Automatyzowanie zadań operacyjnych.
+- Zarządzanie konfiguracjami serwera.
+- Mierzenie zgodności aktualizacji.
+- Zaplanuj aktualizacje.
+- Wykrywaj zmiany na serwerach.
+
+Te usługi są niezbędne do obsługi bieżących operacji:
+
+- [Update Management](https://docs.microsoft.com/azure/automation/automation-update-management#view-update-assessments) automatyzuje wdrażanie poprawek w środowisku, w tym wdrażanie w wystąpieniach systemu operacyjnego działającego poza platformą Azure. Obsługuje systemy operacyjne Windows i Linux oraz śledzi najważniejsze luki w zabezpieczeniach systemu operacyjnego i niezgodności spowodowane przez brakujące poprawki.
+- [Change Tracking i spis](https://docs.microsoft.com/azure/automation/change-tracking) zapewniają wgląd w oprogramowanie, które jest uruchomione w danym środowisku, i wyróżnia wszystkie zmiany, które wystąpiły.
+- [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) umożliwia uruchamianie skryptów Python i PowerShell oraz elementów Runbook w celu zautomatyzowania zadań w środowisku. W przypadku korzystania z usługi Automation z [hybrydowym procesem roboczym elementu Runbook](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)można także rozciągnąć elementy Runbook do zasobów lokalnych.
+- [Azure Automation konfiguracja stanu](https://docs.microsoft.com/azure/automation/automation-dsc-overview) umożliwia wypychanie konfiguracji stanu żądanego (DSC) programu PowerShell bezpośrednio z platformy Azure. Konfiguracja DSC umożliwia również monitorowanie i zachowywanie konfiguracji dla systemów operacyjnych gościa i obciążeń.
 
 ## <a name="govern"></a>Ład
 
-Przyjęcie i przechodzenie do chmury tworzy nowe wyzwania związane z zarządzaniem i wymaga innego sposób myśleniau podczas zmiany obciążenia zarządzania operacyjnego na monitorowanie i zarządzanie. Struktura wdrażania w chmurze dla platformy Azure zaczyna się od [ładu](../../govern/index.md). Wyjaśniono, jak przeprowadzić migrację do chmury, jak będzie wyglądała podróż i która powinna być uwzględniona.
+Przyjęcie i przejście do chmury powoduje utworzenie nowych wyzwań związanych z zarządzaniem. Wymaga innego sposób myśleniau podczas zmiany obciążenia związanego z zarządzaniem operacyjną na monitorowanie i zarządzanie. Struktura wdrażania w chmurze dla platformy Azure zaczyna się od [ładu](../../govern/index.md). W ramach struktury wyjaśniono, jak przeprowadzić migrację do chmury, jak będzie wyglądała podróż i kto ma być uwzględniony.
 
-Projekt dotyczący zarządzania organizacjami standardowymi często różni się od projektowania ładu dla złożonych przedsiębiorstw. Aby dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących ładu dla standardowej organizacji, zobacz [Przewodnik dotyczący zarządzania w warstwie Standardowa](../../govern/guides/standard/index.md). Aby dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących ładu dla złożonego przedsiębiorstwa, zobacz Przewodnik dotyczący [zarządzania złożonymi przedsiębiorstwami](../../govern/guides/complex/index.md).
+Projekt dotyczący zarządzania organizacjami standardowymi często różni się od projektowania ładu dla złożonych przedsiębiorstw. Aby dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących ładu dla standardowej organizacji, zobacz [Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem](../../govern/guides/standard/index.md). Aby dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących ładu dla złożonego przedsiębiorstwa, zobacz Przewodnik dotyczący [ładu dla złożonych przedsiębiorstw](../../govern/guides/complex/index.md).
 
 ## <a name="billing-information"></a>Informacje o rozliczeniach
 
@@ -83,17 +97,14 @@ Aby dowiedzieć się więcej o cenach dla usług zarządzania platformy Azure, p
 
 - [Azure Security Center](https://azure.microsoft.com/pricing/details/security-center)
 
-- [Usługa Update Management platformy Azure](https://azure.microsoft.com/pricing/details/automation)
-
-- [Usługa Azure Change Tracking i usługi spisu](https://azure.microsoft.com/pricing/details/automation)
-
-- [Konfiguracja żądanego stanu](https://azure.microsoft.com/pricing/details/automation)
-
-- [Usługa Azure Automation](https://azure.microsoft.com/pricing/details/automation)
+- [Azure Automation](https://azure.microsoft.com/pricing/details/automation), w tym:
+  - Konfiguracja żądanego stanu
+  - Usługa Update Management platformy Azure
+  - Usługa Azure Change Tracking i usługi spisu
 
 - [Azure Policy](https://azure.microsoft.com/pricing/details/azure-policy)
 
 - [Usługa Azure File Sync](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> Rozwiązanie Update Management platformy Azure jest bezpłatne, ale istnieje niewielkie koszty związane z wprowadzaniem danych. Zgodnie z zasadą, pierwsze 5 GB na miesiąc pozyskiwania danych jest bezpłatne. Zwykle obserwujemy, że każda maszyna korzysta z około 25 MB miesięcznie. Dzięki temu około 200 maszyn miesięcznie jest bezpłatnie oferowana. Dla każdego dodatkowego serwera pomnóż liczbę dodatkowych serwerów o 25 MB miesięcznie. Pomnóż, że koszt magazynu dla łącznej ilości magazynu jest wymagany. [Koszty magazynu są dostępne tutaj](https://azure.microsoft.com/pricing/details/storage). Każdy dodatkowy serwer powinien mieć nominalnyy wpływ na koszt.
+> Rozwiązanie Update Management platformy Azure jest bezpłatne, ale istnieje niewielkie koszty związane z wprowadzaniem danych. Zgodnie z zasadą, pierwsze 5 gigabajtów (GB) na miesiąc pozyskiwania danych są bezpłatne. Zwykle obserwujemy, że każda maszyna korzysta z około 25 MB miesięcznie. Tak więc około 200 maszyn miesięcznie jest bezpłatnych. Aby uzyskać więcej serwerów, pomnóż liczbę dodatkowych serwerów o 25 MB miesięcznie. Następnie pomnóż wynik przez cenę magazynu dla dodatkowego magazynu, którego potrzebujesz. Aby uzyskać informacje o kosztach, zobacz [Cennik usługi Azure Storage — Omówienie](https://azure.microsoft.com/pricing/details/storage). Każdy dodatkowy serwer ma zwykle nominalnyy wpływ na koszt.

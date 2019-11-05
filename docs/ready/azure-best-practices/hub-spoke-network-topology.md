@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 4bd368bacd68a44d0b825eb0e2ad0b91b07b3b48
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 166c45feddd1b6e1ccc17b5301b99e91a3d18e0e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239926"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566773"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Topologia sieci gwiazdy i szprych
 
@@ -61,7 +61,7 @@ Szprychy mogą również dzielić różne grupy w obrębie organizacji i umożli
 
 Na platformie Azure każdy składnik, niezależnie od typu, jest wdrażany w ramach subskrypcji platformy Azure. Izolacja składników platformy Azure w różnych subskrypcjach platformy Azure może spełniać różne wymagania biznesowe, takie jak konfigurowanie różnych poziomów dostępu i autoryzacji.
 
-Pojedyncze implementacje Hub i szprychy mogą być skalowane do dużej liczby szprych. Jednak podobnie jak w przypadku każdego systemu informatycznego, istnieją ograniczenia platformy. Wdrożenie piasty jest powiązane z określoną subskrypcją platformy Azure, która ma ograniczenia i limity. (Przykładem może być maksymalna liczba komunikacji równorzędnych sieci wirtualnych. Aby uzyskać szczegółowe informacje, zobacz [limity subskrypcji i usług platformy Azure, przydziały i ograniczenia] [limity].
+Pojedyncze implementacje Hub i szprychy mogą być skalowane do dużej liczby szprych. Jednak podobnie jak w przypadku każdego systemu informatycznego, istnieją ograniczenia platformy. Wdrożenie piasty jest powiązane z określoną subskrypcją platformy Azure, która ma ograniczenia i limity. Przykładem jest maksymalna liczba komunikacji równorzędnych sieci wirtualnych. Aby uzyskać więcej informacji, zobacz [Limity, przydziały i ograniczenia usług i subskrypcji platformy Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 
 W przypadkach, gdy ograniczenia mogą stanowić problem, można skalować w górę architekturę, rozszerzając model z jednej piasty i szprych do klastra piast i szprych. Możesz połączyć wiele piast w jednym lub większej liczbie regionów świadczenia usługi Azure za pomocą komunikacji równorzędnej sieci wirtualnych, usługi Azure ExpressRoute, wirtualnej sieci WAN lub sieci VPN typu lokacja-lokacja.
 

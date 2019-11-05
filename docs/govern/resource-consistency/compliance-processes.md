@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ebff4e0bbeb7f74a61b81527e0dbc62874ffbe6c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223708"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566040"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Procesy zgodności z zasadami spójności zasobów
 
@@ -50,7 +50,7 @@ Upewnij się, że zespoły IT zaimplementowali zautomatyzowane systemy monitorow
 
 ## <a name="violation-triggers-and-enforcement-actions"></a>Wyzwalacze naruszenia i akcje wymuszania
 
-Ze względu na to, że zgodność zasad spójności zasobów może prowadzić do krytycznych przerw w działaniu usługi lub znaczących przekroczeń kosztów, zespół nadzorujący chmury powinien mieć wgląd w zdarzenia niezgodności. Upewnij się, że personel działu IT ma jasne ścieżki eskalacji do raportowania tych problemów do członków zespołu nadzoru najlepiej dopasowane do identyfikowania i weryfikowania problemów z zasadami, które zostały wyeliminowane po wykryciu.
+Ze względu na to, że zgodność zasad spójności zasobów może prowadzić do krytycznych przerw w działaniu usługi lub znaczących przekroczeń kosztów, zespół nadzorujący chmury powinien mieć wgląd w zdarzenia niezgodności. Upewnij się, że personel działu IT ma jasne ścieżki eskalacji do raportowania tych problemów do członków zespołu nadzoru najlepiej dopasowane do identyfikowania i weryfikowania problemów z zasadami, które zostały wyeliminowane po wykryciu problemu.
 
 W przypadku wykrycia naruszeń należy podjąć akcje, aby szybko dostosować je za pomocą zasad najszybciej, jak to możliwe. Zespół IT może zautomatyzować większość wyzwalaczy naruszenia przy użyciu narzędzi opisanych w [łańcucha narzędzi spójności zasobów dla platformy Azure](./toolchain.md).
 

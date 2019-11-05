@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: a07b9609c67d08c445e1f373d1db05c87b791748
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239753"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566671"
 ---
 # <a name="azure-virtual-datacenter"></a>Wirtualne centrum danych Azure
 
@@ -43,7 +43,7 @@ ms.locfileid: "73239753"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
     <td>
-        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Wirtualne centrum danych Azure: przewodnik dotyczący podejścia „Lift and Shift”</a></h3>
+        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Wirtualne centrum danych Azure: podnieś i przesunięcia przewodnika</a></h3>
         <p>Ten oficjalny dokument omawia proces polegający na tym, że pracownicy działu IT przedsiębiorstwa i osoby podejmujące decyzje mogą używać do identyfikowania i planowania migracji aplikacji i serwerów na platformę Azure przy użyciu podejścia do podnoszenia i przesunięcia, co minimalizuje dodatkowe koszty deweloperskie podczas optymalizacji chmury opcje hostingu.</p>
     </td>
 </tr>

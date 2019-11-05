@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42c0d24d36785615013076b54c0ec51cc2ec4cb4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5c06523d2b22293463d55f05c397dd55247f4369
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047925"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566166"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Narzędzia linii bazowej tożsamości na platformie Azure
 
@@ -77,6 +77,6 @@ Poniższa tabela zawiera listę natywnych narzędzi, które mogą pomóc w przed
 
 ## <a name="next-steps"></a>Następne kroki
 
-[Oficjalny dokument struktury cyfrowej transformacji tożsamości](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html?LCID=EN-US) zawiera opis kombinacji i rozwiązań do wyboru i integracji każdego z tych składników.
+[Oficjalny dokument struktury cyfrowej transformacji tożsamości](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html) zawiera opis kombinacji i rozwiązań do wyboru i integracji każdego z tych składników.
 
 [Narzędzie Azure AD Connect](https://aka.ms/aadconnectwiz) ułatwia integrację katalogów lokalnych z usługą Azure AD.

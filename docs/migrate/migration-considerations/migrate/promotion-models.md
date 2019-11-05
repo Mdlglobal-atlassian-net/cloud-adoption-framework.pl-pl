@@ -1,5 +1,5 @@
 ---
-title: Modele podwyższania poziomu — podwyższanie poziomu, przygotowywanie lub udostępnianie pakietów testowych
+title: 'Modele promocji: jeden etap, etapowy lub samolot'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wpływ podwyższania poziomu na działania związane z migracją
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b251e5159f6e6728e0b5a7ce807eaba0ea85696a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 690c871ab18bef96a5a1738de90a216ca5b8df90
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548437"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564617"
 ---
-# <a name="promotion-models---single-step-staged-or-flight"></a>Modele podwyższania poziomu — pojedynczego kroku, przejściowe, pakiet testowy
+# <a name="promotion-models-single-step-staged-or-flight"></a>Modele promocji: jeden etap, etapowy lub samolot
 
 Migracja obciążenia jest często postrzegana jako pojedyncze działanie. W rzeczywistości jest to zbiór drobniejszych działań, które ułatwiają przenoszenie zasobów cyfrowych do chmury. Jednym z ostatnich działań w ramach migracji jest podwyższenie poziomu zasobu do użycia produkcyjnego. Podwyższenie poziomu to moment, w którym system produkcyjny zmienia się dla użytkowników końcowych. Często jest to proste zadanie porównywalne ze zmianą routingu sieci polegające na przekierowaniu użytkowników końcowych do nowego zasobu produkcyjnego. Podwyższenie poziomu to również moment, w którym operacje IT lub operacje w chmurze zmieniają fokus procesów zarządzania operacyjnego z poprzedniego systemu produkcyjnego do nowych systemów produkcyjnych.
 

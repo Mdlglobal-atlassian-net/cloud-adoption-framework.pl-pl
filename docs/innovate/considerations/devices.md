@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c226c765390805bf4b9ae52ebaf74d337286b90e
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047668"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565645"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Środowiska otoczenia: korzystanie z urządzeń
 
@@ -46,7 +46,7 @@ W pierwszym etapie środowiska otoczenia użytkownik przechodzi poza komputer. O
 
 Gdy klienci są często urządzeniami mobilnymi i zmianami, które mogą reprezentować najbardziej odpowiednią formę środowiska otoczenia dla danego rozwiązania. W ciągu ostatniej dekady innowacje były często wyzwalane przez integrację istniejących rozwiązań z doświadczeniem mobilnym.
 
-Platforma Azure App Services to doskonałe podejście. Podczas wczesnych iteracji [Funkcja aplikacji sieci Web platformy Azure App Services](/azure/app-service/overview) może służyć do testowania hipotez. Ponieważ te rzeczy stają się bardziej złożone, [Funkcja aplikacji mobilnej platformy Azure App Services](/azure/app-service-mobile/) może rozłożyć aplikację sieci Web na wiele platform mobilnych.
+Platforma Azure App Services to doskonałe podejście. Podczas wczesnych iteracji [Funkcja aplikacji sieci Web platformy Azure App Services](https://docs.microsoft.com/azure/app-service/overview) może służyć do testowania hipotez. Ponieważ te rzeczy stają się bardziej złożone, [Funkcja aplikacji mobilnej platformy Azure App Services](https://docs.microsoft.com/azure/app-service-mobile) może rozłożyć aplikację sieci Web na wiele platform mobilnych.
 
 ## <a name="mixed-reality"></a>Rzeczywistość mieszana
 
@@ -68,12 +68,12 @@ To środowisko jest idealne, gdy pewna postać urządzenia jest spójna w obręb
 Przykładem zintegrowanej rzeczywistości na platformie Azure mogą być:
 
 - [Rozwiązania azure Internet rzeczy (IoT)](https://docs.microsoft.com/azure/iot-fundamentals)to zbiór usług na platformie Azure, które mogą pomóc w zarządzaniu urządzeniami i przepływie danych z tych urządzeń do chmury oraz z powrotem do użytkowników końcowych.
-- [Azure Sphere](/azure-sphere), połączenie sprzętu i oprogramowania. Azure Sphere to bezpieczny sposób na umożliwienie istniejącemu urządzeniu bezpiecznego przesyłania danych między urządzeniem a rozwiązaniami Azure IoT.
+- [Azure Sphere](https://docs.microsoft.com/azure-sphere), połączenie sprzętu i oprogramowania. Azure Sphere to bezpieczny sposób na umożliwienie istniejącemu urządzeniu bezpiecznego przesyłania danych między urządzeniem a rozwiązaniami Azure IoT.
 - [Usługa Azure urządzenia Kinect Developers Kit](https://docs.microsoft.com/azure/Kinect-dk), czujniki AI z zaawansowaną obsługą komputerów i modelami mowy. Czujniki te umożliwiają zbieranie danych wizualnych i dźwiękowych z bezpośredniego otoczenia i podawanie tych wejść do rozwiązania.
 
 Możesz użyć wszystkich trzech z tych narzędzi do zbierania danych z otoczenia naturalnego i w punktach potrzeb klienta. W takim przypadku rozwiązanie może odpowiedzieć na te dane wejściowe, aby rozwiązać ten problem, czasami zanim klient nie wie, że wystąpiło wyzwalacz dla tego programu.
 
-## <a name="adjusted-reality"></a>Rzeczywistość skorygowana
+## <a name="adjusted-reality"></a>Rzeczywistość dostosowana
 
 Najwyższą postać środowiska otoczenia jest korekta rzeczywistości, często nazywana *analizą otoczenia*. Dostosowana rzeczywistość to podejście do użycia informacji z rozwiązania, aby zmienić rzeczywistość klienta bez konieczności bezpośredniej współpracy z aplikacją. W tym podejściu aplikacja, która początkowo została skompilowana w celu udowodnienia hipotezy, może już nie mieć znaczenia. Zamiast tego urządzenia w środowisku pomagają w modulacji danych wejściowych i wyjściowych, aby zaspokoić potrzeby klientów.
 
@@ -81,7 +81,7 @@ Wirtualne Asystenci i inteligentne głośniki oferują doskonałe przykłady o r
 
 Piętra fabryki na całym świecie zapewniają dodatkowe przykłady o regulowanej rzeczywistości. W przypadku wczesnych etapów zintegrowanej rzeczywistości czujniki na urządzeniach wykryły warunki, takie jak nadgrzanie, a następnie powiadamiają ludzi za pomocą aplikacji. W przypadku skorygowanej rzeczywistości klient może nadal uczestniczyć, ale pętla opinii jest ściśle. W pozostałej fabryce fabryki, jedno urządzenie może wykrywać nadgrzanie na żywotnym komputerze w miejscu i w linii montażowej. Drugie urządzenie znacznie spowalnia produkcję w innym miejscu, aby umożliwić jej chłodnie, a następnie wznowienie pełnego tempa po rozwiązaniu problemu. W takiej sytuacji klient jest uczestnikiem drugiej strony. Klient korzysta z aplikacji, aby ustawić reguły i zrozumieć, jak te reguły mają wpływ na produkcję, ale nie są one konieczne w przypadku pętli opinii.
 
-W przypadku usług platformy Azure opisanych w ramach [rozwiązań usługi azure Internet rzeczy (IoT)](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](/azure-sphere)i [zestawu deweloperów urządzenia Kinect platformy Azure](https://docs.microsoft.com/azure/Kinect-dk) mogą być składniki rozwiązania o regulowanej rzeczywistości. Oryginalna aplikacja i logika biznesowa będą następnie stanowić pośrednika między danymi wejściowymi środowiska a zmianą, która powinna zostać wprowadzona w środowisku fizycznym.
+W przypadku usług platformy Azure opisanych w ramach [rozwiązań usługi azure Internet rzeczy (IoT)](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](https://docs.microsoft.com/azure-sphere)i [zestawu deweloperów urządzenia Kinect platformy Azure](https://docs.microsoft.com/azure/Kinect-dk) mogą być składniki rozwiązania o regulowanej rzeczywistości. Oryginalna aplikacja i logika biznesowa będą następnie stanowić pośrednika między danymi wejściowymi środowiska a zmianą, która powinna zostać wprowadzona w środowisku fizycznym.
 
 Cyfrowy dwuosiowy to kolejny przykład o regulowanej rzeczywistości. Termin ten odnosi się do cyfrowej reprezentacji urządzenia fizycznego, prezentowanego za pomocą formatów komputera, mobilnego lub mieszanego. W przeciwieństwie do mniej rozbudowanych modeli 3W, dwucyfrowe sznurki odzwierciedlają dane zbierane z rzeczywistego urządzenia w środowisku fizycznym. To rozwiązanie umożliwia użytkownikowi posługiwanie się reprezentacją cyfrową w sposób, który nie może być nigdy wykonywany w świecie rzeczywistym. W tym podejściu urządzenia fizyczne dostosowują środowisko rzeczywistości mieszanej. Jednak rozwiązanie nadal zbiera dane z rozwiązania zintegrowanej rzeczywistości i używa tych danych do kształtowania rzeczywistości bieżącego otoczenia klienta.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7decae6a0b9e0c8b41d30f5f3ccac2fdeab41feb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8c64507c03a99ef771f7885dc8fbde960c570e4d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547729"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566313"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej tożsamości
 
@@ -31,7 +31,7 @@ Uzasadnienie biznesowe migracji dwóch centrów danych zostało zatwierdzone prz
 
 Pierwsze dwa przeszkody są zarządzane równolegle. W tym artykule opisano rozdzielczość trzeciej i czwartej przeszkody.
 
-### <a name="expanding-the-cloud-governance-team"></a>Rozwijanie zespołu ładu w chmurze
+### <a name="expand-the-cloud-governance-team"></a>Rozwiń zespół ds. zarządzania chmurą
 
 Zespół ds. zarządzania chmurą. Mając na uwadze potrzebę dodatkowej pomocy w zakresie zarządzania tożsamościami, administrator systemów z zespołu linii bazowej tożsamości uczestniczy w tygodniowym spotkaniu, aby zapewnić, że istniejący członkowie zespołu wiedzą o zmianach.
 

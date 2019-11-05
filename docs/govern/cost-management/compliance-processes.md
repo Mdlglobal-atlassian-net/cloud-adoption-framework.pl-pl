@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6345a8cae51a6b26b7fad174113a40e9dc0dae3e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: eb3bfc584e3c3f86e39918495fe7e0d313f13e55
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220981"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564721"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>Cost Management procesów zgodności z zasadami
 
@@ -42,7 +42,7 @@ Ten kwartalny proces planowania to również dobry moment na ocenę bieżącego 
 
 Te podstawowe procesy ułatwią dostosowanie wydatków i ustanowienie podstawy Cost Management dyscypliny.
 
-## <a name="ongoing-monitoring-processes"></a>Procesy trwającego monitorowania
+## <a name="processes-for-ongoing-monitoring"></a>Procesy do ciągłego monitorowania
 
 Pomyślna strategia ładu Cost Management jest zależna od widoczności przeszłych, bieżących i planowanych przyszłych wydatków związanych z chmurą. Bez możliwości analizowania odpowiednich metryk i danych istniejących kosztów nie można identyfikować zmian ryzyka ani wykrywać naruszeń tolerancji ryzyka. Bieżące procesy ładu omówione powyżej wymagają danych dotyczących jakości, aby zapewnić możliwość modyfikacji zasad w celu lepszego zabezpieczenia infrastruktury przed zmianami wymagań firmy i użycia chmury.
 
@@ -54,8 +54,8 @@ W przypadku wykrycia naruszeń należy wykonać akcje wymuszania, aby dostosowa�
 
 Poniżej przedstawiono przykłady wyzwalaczy:
 
-- **Miesięczne odchylenia budżetu.** Omawiaj odchylenia w miesięcznych wydatkach, które przekraczają 20% współczynnik prognozowania w stosunku do wartości rzeczywistej przy użyciu lidera jednostki rozliczeniowej. Rejestrowanie rozwiązań i zmian w prognozie.
-- **Tempo wdrażania.** Każde odchylenia na poziomie subskrypcji przekraczającym 20% spowoduje wyzwolenie przeglądu z liderem jednostki rozliczeniowej. Rejestrowanie rozwiązań i zmian w prognozie.
+- **Miesięczne odchylenia budżetu:** Omawiaj odchylenia w miesięcznych wydatkach, które przekraczają 20% współczynnik prognozowania w stosunku do wartości rzeczywistej przy użyciu lidera jednostki rozliczeniowej. Rejestrowanie rozwiązań i zmian w prognozie.
+- **Tempo wdrażania:** Każde odchylenia na poziomie subskrypcji przekraczającym 20% spowoduje wyzwolenie przeglądu z liderem jednostki rozliczeniowej. Rejestrowanie rozwiązań i zmian w prognozie.
 
 ## <a name="next-steps"></a>Następne kroki
 

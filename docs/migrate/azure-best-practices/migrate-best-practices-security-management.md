@@ -1,5 +1,5 @@
 ---
-title: Najlepsze rozwiązania dotyczące zabezpieczania obciążeń migrowanych na platformę Azure i zarządzania nimi
+title: Najlepsze rozwiązania dotyczące zabezpieczania obciążeń zmigrowanych na platformę Azure i zarządzania nimi
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Po przeprowadzeniu migracji na platformę Azure należy zapoznać się z najlepszymi rozwiązaniami dotyczącymi obsługi i zabezpieczania zmigrowanych obciążeń oraz zarządzania nimi.
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f7782aeedf794441a7ba4e1f6a97f162fa33abfb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ca56669818add8e54d7c4805a19879412da54567
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548557"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564774"
 ---
-# <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące zabezpieczania obciążeń migrowanych na platformę Azure i zarządzania nimi
+# <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące zabezpieczania obciążeń zmigrowanych na platformę Azure i zarządzania nimi
 
 Podczas planowania i projektowania migracji oprócz kwestii związanych z samą migracją należy wziąć pod uwagę model zabezpieczeń i zarządzania na platformie Azure, który będzie używany po przeprowadzaniu migracji. W tym artykule opisano planowanie i najlepsze rozwiązania dotyczące zabezpieczania wdrożenia na platformie Azure po migracji oraz najlepsze rozwiązania dotyczące bieżących zadań, dzięki czemu wdrożenie będzie działać na optymalnym poziomie.
 
@@ -349,13 +349,13 @@ W przypadku obciążeń uruchomionych w ramach maszyn wirtualnych IaaS platformy
 - **Azure Backup:** Zapewnia kopie zapasowe spójne na poziomie aplikacji dla maszyn wirtualnych z systemami Windows i Linux.
 - **Migawki magazynu:** Tworzy migawki magazynu obiektów BLOB.
 
-#### <a name="azure-backup"></a>Usługa Azure Backup
+#### <a name="azure-backup"></a>Azure Backup
 
 Usługa Azure Backup tworzy punkty odzyskiwania danych przechowywane w magazynie platformy Azure. Usługa Azure Backup może tworzyć kopie zapasowe dysków maszyn wirtualnych platformy Azure i dane usługi Azure Files (wersja zapoznawcza). Usługa Azure Files zapewnia udziały plików w chmurze dostępne za pośrednictwem protokołu SMB.
 
 Za pomocą usługi Azure Backup można tworzyć kopie zapasowe maszyn wirtualnych na kilka sposobów.
 
-- **Bezpośrednie tworzenie kopii zapasowych na podstawie ustawień maszyny wirtualnej.** Możesz utworzyć kopię zapasową maszyn wirtualnych za pomocą usługi Azure Backup bezpośrednio z poziomu opcji maszyny wirtualnej w witrynie Azure Portal. Możliwe jest tworzenie kopii zapasowej maszyny wirtualnej raz dziennie i przywracanie dysku maszyny wirtualnej w razie potrzeby. Usługa Azure Backup wykonuje migawki danych z uwzględnieniem aplikacji (usługa VSS), a na maszynie wirtualnej nie jest zainstalowany żaden agent.
+- **Bezpośrednie tworzenie kopii zapasowych na podstawie ustawień maszyny wirtualnej.** Możesz utworzyć kopię zapasową maszyn wirtualnych za pomocą usługi Azure Backup bezpośrednio z poziomu opcji maszyny wirtualnej w witrynie Azure Portal. Można utworzyć kopię zapasową maszyny wirtualnej raz dziennie, a dysk maszyny wirtualnej można przywrócić w razie konieczności. Usługa Azure Backup wykonuje migawki danych z uwzględnieniem aplikacji (usługa VSS), a na maszynie wirtualnej nie jest zainstalowany żaden agent.
 - **Bezpośrednie tworzenie kopii zapasowych w magazynie usług Recovery Services.** Możesz utworzyć kopię zapasową maszyn wirtualnych IaaS, wdrażając magazyn Recovery Services w usłudze Azure Backup. Zapewnia to pojedynczą lokalizację do śledzenia kopii zapasowych i zarządzania nimi, a także szczegółowe opcje tworzenia kopii zapasowych i przywracania. Kopia zapasowa jest tworzona maksymalnie trzy razy dziennie na poziomie plików/folderów. Nie uwzględnia ona aplikacji, a system Linux nie jest obsługiwany. Zainstaluj agenta usług Microsoft Azure Recovery Services (MARS) na każdej maszynie wirtualnej, dla której chcesz utworzyć kopię zapasową za pomocą tej metody.
 - **Ochrona maszyny wirtualnej na serwerze Azure Backup Server.** Serwer Azure Backup Server jest udostępniany bezpłatnie wraz z usługą Azure Backup. Kopia zapasowa maszyny wirtualnej jest tworzona w lokalnym magazynie serwera Azure Backup Server. Następnie wykonywana jest kopia zapasowa serwera Azure Backup Server na platformie Azure w magazynie. Kopia zapasowa uwzględnia aplikację i posiada pełny stopień szczegółowości dotyczący częstotliwości wykonywania kopii zapasowych i przechowywania. Możesz tworzyć kopię zapasową na poziomie aplikacji, na przykład tworząc kopie zapasową programu SQL Server lub SharePoint.
 

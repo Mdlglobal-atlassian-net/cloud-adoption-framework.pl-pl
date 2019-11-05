@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3bf3eea5486fbd349094663dc5f37527f5042bb5
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7f4062c08ef1c9fec72e515453e8acc8cedfc513
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221687"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565916"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Narzędzia bazowe zabezpieczeń na platformie Azure
 
@@ -22,18 +22,18 @@ ms.locfileid: "71221687"
 
 Poniższa lista narzędzi systemu Azure może pomóc w podniesienia zasad i procesów obsługujących linię bazową zabezpieczeń.
 
-| Tool | [Azure Portal](https://azure.microsoft.com/features/azure-portal)Menedżerzasobów / [](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Usługa Azure Key Vault](https://docs.microsoft.com/azure/key-vault)  | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) | [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) |
+| Narzędzie | [Azure Portal](https://azure.microsoft.com/features/azure-portal) i [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Usługa Azure Key Vault](https://docs.microsoft.com/azure/key-vault)  | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) | [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) |
 |------------------------------------------------------------|---------------------------------|-----------------|----------|--------------|-----------------------|---------------|
-| Stosowanie kontroli dostępu do zasobów i tworzenie zasobów   | Tak                             | Nie              | Yes      | Nie           | Nie                    | Nie            |
-| Bezpieczne sieci wirtualne                                    | Tak                             | Nie              | Nie       | Yes          | Nie                    | Nie            |
-| Szyfruj dyski wirtualne                                     | Nie                              | Yes             | Nie       | Nie           | Nie                    | Nie            |
-| Szyfruj magazyn PaaS i bazy danych                         | Nie                              | Yes             | Nie       | Nie           | Nie                    | Nie            |
-| Zarządzanie hybrydowymi usługami tożsamości                            | Nie                              | Nie              | Yes      | Nie           | Nie                    | Nie            |
-| Ogranicz dozwolone typy zasobów                         | Nie                              | Nie              | Nie       | Yes          | Nie                    | Nie            |
-| Wymuszaj ograniczenia geograficzne-regionalne                          | Nie                              | Nie              | Nie       | Yes          | Nie                    | Nie            |
-| Monitorowanie kondycji zabezpieczeń sieci i zasobów          | Nie                              | Nie              | Nie       | Nie           | Yes                   | Tak           |
-| Wykrywanie złośliwego działania                                  | Nie                              | Nie              | Nie       | Nie           | Yes                   | Tak           |
-| Zapobiegawczo wykrywaj luki w zabezpieczeniach                        | Nie                              | Nie              | Nie       | Nie           | Yes                   | Nie            |
+| Stosowanie kontroli dostępu do zasobów i tworzenie zasobów   | Tak                             | Nie              | Tak      | Nie           | Nie                    | Nie            |
+| Bezpieczne sieci wirtualne                                    | Tak                             | Nie              | Nie       | Tak          | Nie                    | Nie            |
+| Szyfruj dyski wirtualne                                     | Nie                              | Tak             | Nie       | Nie           | Nie                    | Nie            |
+| Szyfruj magazyn PaaS i bazy danych                         | Nie                              | Tak             | Nie       | Nie           | Nie                    | Nie            |
+| Zarządzanie hybrydowymi usługami tożsamości                            | Nie                              | Nie              | Tak      | Nie           | Nie                    | Nie            |
+| Ogranicz dozwolone typy zasobów                         | Nie                              | Nie              | Nie       | Tak          | Nie                    | Nie            |
+| Wymuszaj ograniczenia geograficzne-regionalne                          | Nie                              | Nie              | Nie       | Tak          | Nie                    | Nie            |
+| Monitorowanie kondycji zabezpieczeń sieci i zasobów          | Nie                              | Nie              | Nie       | Nie           | Tak                   | Tak           |
+| Wykrywanie złośliwego działania                                  | Nie                              | Nie              | Nie       | Nie           | Tak                   | Tak           |
+| Zapobiegawczo wykrywaj luki w zabezpieczeniach                        | Nie                              | Nie              | Nie       | Nie           | Tak                   | Nie            |
 | Konfigurowanie kopii zapasowej i odzyskiwania po awarii                     | Tak                             | Nie              | Nie       | Nie           | Nie                    | Nie            |
 
 Aby uzyskać pełną listę narzędzi i usług zabezpieczeń platformy Azure, zobacz [usługi i technologie zabezpieczeń dostępne na platformie Azure](https://docs.microsoft.com/azure/security/azure-security-services-technologies).

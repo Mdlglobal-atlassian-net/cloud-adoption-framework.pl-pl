@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048320"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564683"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Rozpocznij podróż do migracji w chmurze na platformie Azure
 
@@ -50,7 +50,7 @@ Przygotowanie wszystkich uczestników w ramach wysiłków związanych z migracj�
 
 ## <a name="migration-approach"></a>Podejście do migracji
 
-Struktura wdrażania w chmurze stanowi ogólny zbiór planów, gotowy, zastosowany w celu pogrupowania typów nakładu pracy w ramach dowolnego wdrożenia chmury. To podsumowanie programu Executive kompiluje się na tym przepływie wysokiego poziomu w celu ustalenia iteracji procesów, które mogą ułatwić podniesienie/przewinięcie/optymalizację wysiłków **i** modernizację w jednym podejściu w ramach wszystkich działań związanych z migracją w chmurze.
+Struktura wdrażania w chmurze stanowi ogólny zbiór planów, gotowy, zastosowany w celu pogrupowania typów nakładu pracy w ramach dowolnego wdrożenia chmury. To podsumowanie dotyczące programu Executive kompiluje się na tym przepływie wysokiego poziomu w celu ustalenia iteracyjnych procesów, które mogą ułatwić podwyższenie i optymalizację wysiłków oraz modernizację w jednym podejściu w ramach wszystkich działań związanych z migracją w chmurze.
 
 Takie podejście obejmuje dwie metodologie i obszary ostrości: strategia chmury & planowanie i implementację w chmurze. [Motywacja](#motivations) lub pożądany wynik biznesowy dla migracji w chmurze często określa, jak dużo zespół powinien inwestować w [strategię i planowanie](#cloud-strategy-and-planning) i [implementację](#cloud-implementation). Te motywacje mogą również wpływać na decyzje wykonywane sekwencyjnie lub równolegle.
 
@@ -126,7 +126,7 @@ Technologie migrowane do chmury ciągle rozszerzają się w miarę jak dostawcy 
 - Windows i SQL Server
 - Bazy danych systemu Linux i typu Open Source (OSS)
 - Destructure/NoSQL bazy danych
-- SAP w systemie Azure
+- Rozwiązania SAP na platformie Azure
 - Analiza (magazyn danych, Data Lake)
 
 ## <a name="next-steps-lifecycle-solution"></a>Następne kroki: rozwiązanie cyklu życia

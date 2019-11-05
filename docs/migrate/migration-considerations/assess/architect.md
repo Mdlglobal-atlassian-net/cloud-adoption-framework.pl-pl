@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 151698c836add7c46c389cc94c76b942e52b0341
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 77931f6315c43d963947cbdaf628b8bfa514749c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240248"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566824"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Definiowanie architektury obciążeń przed migracją
 
@@ -37,7 +37,7 @@ Wymienione powyżej założenia mogą stwarzać przeszkody spowalniające postę
 - **Płacenie za dług techniczny.** Niektóre starsze obciążenia niosą ze sobą duży dług techniczny. Może to prowadzić do długoterminowych wyzwań, zwiększając koszty hostingu dla każdego dostawcy usług w chmurze. Gdy dług techniczny nienaturalnie zwiększa koszty hostingu, należy ocenić alternatywne architektury.
 - **Wzorce ruchu użytkownika.** Istniejące rozwiązania mogą zależeć od istniejących wzorców routingu sieciowego. Te wzorce mogą powodować znaczne obniżenie wydajności. Ponadto wprowadzenie nowych hybrydowych rozwiązań sieci rozległej (WAN) może zająć kilka tygodni, a nawet miesięcy. Na wczesnym etapie procesu definiowania architektury należy przygotować się na te przeszkody przez rozważenie wzorców ruchu i zmian usług infrastruktury podstawowej.
 
-## <a name="accelerating-business-value"></a>Przyspieszanie uzyskania wartości biznesowej
+## <a name="accelerate-business-value"></a>Przyspieszenie wartości biznesowej
 
 Niektóre scenariusze mogą wymagać innej architektury niż przyjęta strategia ponownego hostingu przy użyciu usługi IaaS. Poniżej przedstawiono kilka przykładów:
 

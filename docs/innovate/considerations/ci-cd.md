@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8828b79aa27083b3b3e0a0188ac9e538089c52cf
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058583"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565694"
 ---
-# <a name="empower-adoption"></a>Przyjęcie akceptacji
+# <a name="empower-adoption"></a>Zwiększanie akceptacji
 
 Ostatecznym testem innowacji jest reagowanie klientów na Twoje wynalazki. Czy hipoteza zakończyła się prawdziwie? Czy klienci korzystają z rozwiązania? Czy skalowanie jest zgodne z potrzebami żądanej wartości procentowej użytkowników? Co najważniejsze, kontynuują wycofywanie? Żadne z tych pytań nie może zostać poproszonych, dopóki nie zostanie wdrożony minimalny, żywotny rozwiązanie produktu (MVP). W tym artykule skupmy się na dyscyplinie podejmowania akceptacji.
 
-## <a name="reducing-friction-to-adoption"></a>Zmniejszanie tarcia do przyjęcia
+## <a name="reduce-friction-that-affects-adoption"></a>Zmniejsz liczbę problemów, które mają wpływ na wdrażanie
 
 Istnieje kilka najważniejszych punktów tarcia do wdrożenia, które można zminimalizować za pomocą kombinacji technologii i procesów. W przypadku czytelników mających wiedzę o ciągłej integracji (CI) i procesach ciągłego wdrażania (CD) lub DevOps są one bardzo znane. W tym artykule zawarto informacje o ustanowieniu punktu wyjścia dla zespołów wdrażania w chmurze, które będą omawiać innowacje i subskrypcje. Dłużej, ten punkt początkowy może wzmocnić bardziej niezawodną ciągłość/CD lub DevOps podejścia jako produkty i zespoły.
 
@@ -40,7 +40,7 @@ Głównym celem [metodologii innowacji](./index.md) jest skompilowanie partnerst
 
 Aby zminimalizować liczbę techniczną, założono, że data_spłaty będą początkowo niskie dla każdej z tych zasad. Ale bez ograniczeń planuje się, dopasowując do narzędzi i procesów, które mogą być skalowane w miarę jak długo są bardziej szczegółowe. Na platformie Azure usługa [GitHub](https://guides.github.com) i [usługa Azure DevOps](https://docs.microsoft.com/azure/devops) umożliwiają małym zespołom rozpoczęcie pracy z niewielkim tarciem. Zespoły te mogą wzrosnąć, aby obejmowały tysiące deweloperów, którzy współpracują nad rozwiązaniami skalowania i testują setki postanowień klientów. W pozostałej części tego artykułu przedstawiono krótkie i rozłożone małe podejście do podejmowania wdrożenia w ramach każdej z tych zasad.
 
-## <a name="shared-solution"></a>Udostępnione rozwiązanie
+## <a name="shared-solution"></a>Rozwiązanie udostępnione
 
 Zgodnie z opisem w temacie [mierzenie wpływu klientów](./measure.md), pozytywna weryfikacja każdej hipotezy wymaga iteracji i określenia. Wystąpił znacznie więcej błędów niż w przypadku usługi WINS w dowolnym cyklu innowacji. Jest to oczekiwane. Jeśli jednak klient potrzebuje, hipotezy i rozwiązania wyrównania w odpowiedniej skali, świat zmieni się szybko.
 
@@ -48,7 +48,7 @@ W przypadku skalowania innowacji nie ma więcej cennych narzędzi niż udostępn
 
 Najczęściej przyjętym narzędziem do zarządzania repozytoriami kodu jest [GitHub](https://guides.github.com), który umożliwia tworzenie repozytorium kodu udostępnionego za pomocą zaledwie kilku kliknięć. Ponadto funkcja [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) platformy Azure DevOps może służyć do tworzenia repozytorium [git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) lub [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) .
 
-## <a name="feedback-loops"></a>Pętle opinii
+## <a name="feedback-loops"></a>Cykle wymiany opinii
 
 Udostępnienie klientowi części rozwiązania jest kluczem do tworzenia partnerstwa dla klientów w fazie innowacji. Jest to realizowane w części przez [zmierzenie wpływu klientów na klienta](./measure.md). Wymaga rozmowy i bezpośredniego testowania z klientem. Obie funkcje generują opinię, która musi być efektywnie zarządzana.
 
@@ -56,7 +56,7 @@ Każdy punkt opinii to potencjalne rozwiązanie wymagane przez klienta. Co więc
 
 [Usługa Azure DevOps](https://docs.microsoft.com/azure/devops) obejmuje sposoby [żądania, dostarczania i zarządzania opiniami](https://docs.microsoft.com/azure/devops/project/feedback). Każdy z tych narzędzi służy do scentralizowania informacji zwrotnych, dzięki czemu zespół może podjąć odpowiednie działania i zapewnić dalsze działanie w ramach usługi w postaci przezroczystej pętli opinii.
 
-## <a name="continuous-integration"></a>Integracja ciągła
+## <a name="continuous-integration"></a>Ciągła integracja
 
 W miarę jak wydłużać skala i hipotezy są coraz bliżej prawdziwe innowacje na dużą skalę, liczba mniejszych hipotez, które mają zostać przetestowane, będzie szybko rosnąć. Aby uzyskać dokładne pętle opinii i płynne procesy przyjmowania, ważne jest, aby każda z tych hipotez była zintegrowana i obsługiwała hipotezę podstawową, która zauważa za innowacje. Oznacza to, że konieczne jest również szybkie przechodzenie do innowacji i rozwoju, co wymaga wielu deweloperów do testowania różnic hipotezy podstawowej. W celu późniejszego przygotowania do rozwoju można nawet potrzebować wielu zespołów deweloperów, z których każdy kompiluje się w ramach udostępnionego rozwiązania. Ciągła integracja to pierwszy krok w kierunku zarządzania wszystkimi ruchomymi częściami.
 
@@ -80,7 +80,7 @@ Być może najbardziej znaczący aspekt podejmowania akceptacji dotyczy zdolnoś
 Jest to kilka metod wdrażania rozwiązania. Poniżej przedstawiono trzy najczęstsze:
 
 - **Ciągłe wdrażanie** to najbardziej zaawansowaną metodę, ponieważ automatycznie wdraża zmiany kodu w środowisku produkcyjnym. W przypadku dojrzałych zespołów, które testują hipotezy dojrzałe, ciągłe wdrażanie może być niezwykle cenne.
-- W wczesnych etapach tworzenia **ciągłe dostarczanie** może być bardziej odpowiednie. W przypadku ciągłego dostarczania wszystkie zmiany kodu są automatycznie wdrażane w środowisku podobnym do produkcji. Deweloperzy, osoby podejmujące decyzje biznesowe i inni członkowie zespołu mogą korzystać z tego środowiska, aby sprawdzić, czy ich praca jest gotowa do produkcji. Można również użyć tej metody do testowania hipotezy dla klientów bez wpływu na działania prowadzone w biznesie.
+- W wczesnych etapach tworzenia **ciągłe dostarczanie** może być bardziej odpowiednie. W przypadku ciągłego dostarczania wszystkie zmiany kodu są automatycznie wdrażane w środowisku podobnym do produkcji. Deweloperzy, osoby podejmujące decyzje biznesowe i inni członkowie zespołu mogą korzystać z tego środowiska, aby sprawdzić, czy ich praca jest gotowa do produkcji. Za pomocą tej metody można także testować hipotezę z klientami bez wpływu na trwającą działalność biznesową.
 - **Wdrożenie ręczne** to najmniej zaawansowane podejście do zarządzania wydaniami. Jak sugeruje nazwa, ktoś w zespole ręcznie wdraża najnowsze zmiany kodu. Takie podejście jest podatne na błędy, niezawodne i uznawane za antywzorców przez najbardziej sezonowe inżynierów.
 
 Podczas pierwszej iteracji rozwiązania MVP wdrożenie ręczne jest wspólne, pomimo wcześniejszej oceny. Gdy rozwiązanie jest niezwykle płynne i opinia klientów jest nieznana, istnieje duże ryzyko związane z resetowaniem całego rozwiązania (lub nawet hipotezą podstawową). Oto ogólna zasada wdrażania ręcznego: brak potwierdzenia klienta, Automatyzacja wdrażania.

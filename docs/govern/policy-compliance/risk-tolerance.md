@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7a6f77bdf2cbd0d34815fc1ef659385444c95fe7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547175"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566063"
 ---
 # <a name="evaluate-risk-tolerance"></a>Ocena tolerancja ryzyka
 
@@ -38,7 +38,7 @@ Prawdziwe zagrożenia biznesowe opierają się na szczegółach określonych tra
 
 Powyżej przedstawiono kilka typowych zagrożeń wymienionych przez klientów. Zespół nadzorujący chmury i zespoły rozwiązań w chmurze mogą rozpocząć tworzenie profilu ryzyka, ponieważ są migrowane i readied w wersji produkcyjnej. Przygotuj się na konwersacje, aby określić, uściślić i zarządzać ryzykiem na podstawie żądanych wyników i nakładów pracy.
 
-## <a name="understanding-risk-tolerance"></a>Poznanie tolerancji ryzyka
+## <a name="understand-risk-tolerance"></a>Opis tolerancji ryzyka
 
 Identyfikowanie ryzyka to dość bezpośredni proces. Zagrożenia związane z IT są ogólnie standardowe w branży. Jednak tolerancja dla tego ryzyka jest specyficzna dla każdej organizacji. Jest to punkt, w którym konwersacje biznesowe i IT są w trakcie rozwieszania. Każda Strona rozmowy jest zasadniczo mówiąca o innym języku. Poniższe porównania i pytania są przeznaczone do uruchamiania rozmów, które pomagają każdej stronie lepiej zrozumieć i obliczą tolerancję ryzyka.
 

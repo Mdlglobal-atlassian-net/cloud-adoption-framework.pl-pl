@@ -8,22 +8,22 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7b77181dd8ef6efe655b56489e5d4e6b210382b6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0bf778b89ed91069b9387f7bbdc5f27f05480e0c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030402"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565330"
 ---
-# <a name="phase-3-ongoing-management-and-security"></a>Etap 3: Ciągłe zarządzanie i bezpieczeństwo
+# <a name="phase-3-ongoing-management-and-security"></a>Faza 3: bieżące zarządzanie i zabezpieczenia
 
-Po dodaniu usług zarządzania platformy Azure należy skoncentrować się na konfiguracjach operacji i zabezpieczeń, które będą obsługiwać bieżące operacje. Zaczniemy zabezpieczać środowisko, przeglądając Azure Security Center. Następnie skonfigurujemy zasady w celu zapewnienia zgodności serwerów i automatyzowania typowych zadań. W tej sekcji omówiono następujące tematy:
+Po dodaniu usług zarządzania serwera Azure należy skoncentrować się na konfiguracjach operacji i zabezpieczeń, które będą obsługiwać bieżące operacje. Zaczniemy zabezpieczać środowisko, przeglądając Azure Security Center. Następnie skonfigurujemy zasady w celu zapewnienia zgodności serwerów i automatyzowania typowych zadań. W tej sekcji omówiono następujące tematy:
 
-- **[Zaleceń dotyczących zabezpieczeń.](#address-security-recommendations)** Azure Security Center oferuje sugestie zwiększające bezpieczeństwo środowiska. Po zaimplementowaniu tych zaleceń można zobaczyć wpływ odzwierciedlony w wyniku zabezpieczeń.
-- **[Włącz zasady konfiguracji gościa.](./guest-configuration-policy.md)** Włącz funkcję konfiguracji gościa Azure Policy, aby przeprowadzić inspekcję ustawień w maszynie wirtualnej. Można na przykład sprawdzić, czy wszystkie certyfikaty wkrótce wygasną.
-- **[Śledź i Ostrzegaj o zmianach krytycznych.](./enable-tracking-alerting.md)** Podczas rozwiązywania problemów, pierwsze pytanie, które należy wziąć pod uwagę, to "co zostało zmienione?" W tym artykule dowiesz się, jak śledzić zmiany i tworzyć alerty, aby aktywnie monitorować składniki krytyczne.
+- **[Zaleceń dotyczących zabezpieczeń.](#address-security-recommendations)** Azure Security Center oferuje sugestie zwiększające bezpieczeństwo środowiska. Po zaimplementowaniu tych zaleceń zobaczysz wpływ odzwierciedlony w ocenę zabezpieczeń.
+- **[Włącz zasady konfiguracji gościa.](./guest-configuration-policy.md)** Użyj funkcji konfiguracji gościa Azure Policy, aby przeprowadzić inspekcję ustawień w maszynie wirtualnej. Można na przykład sprawdzić, czy wszystkie certyfikaty wkrótce wygasną.
+- **[Śledź i Ostrzegaj o zmianach krytycznych.](./enable-tracking-alerting.md)** W przypadku rozwiązywania problemów z pierwszym pytaniem, które należy wziąć pod uwagę, jest "Co zmieniono?". W tym artykule dowiesz się, jak śledzić zmiany i tworzyć alerty, aby aktywnie monitorować składniki krytyczne.
 - **[Utwórz harmonogramy aktualizacji.](./update-schedules.md)** Zaplanuj instalację aktualizacji, aby upewnić się, że wszystkie serwery mają najnowsze.
-- **[Typowe przykłady Azure Policy.](./common-policies.md)** Zawiera przykłady typowych zasad zarządzania.
+- **[Typowe przykłady Azure Policy.](./common-policies.md)** W tym artykule przedstawiono przykłady typowych zasad zarządzania.
 
 ## <a name="address-security-recommendations"></a>Zalecenia dotyczące zabezpieczeń adresów
 

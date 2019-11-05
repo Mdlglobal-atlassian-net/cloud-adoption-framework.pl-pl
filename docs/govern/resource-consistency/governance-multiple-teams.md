@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5459d775051b831112029fe1502a62a13c21e1c2
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 04e78b51bcea5aea8d8db719b7d88865696d781b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058774"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566030"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Projekt nadzoru dla wielu zespołów
 
@@ -225,7 +225,7 @@ Ten model zarządzania ma zalety w drugim przykładzie powyżej. Jednak kluczow�
 
 W związku z tym można wybrać jeden z tych dwóch przykładów modeli zarządzania zasobami w zależności od priorytetu wymagań. Jeśli przewidujesz, że Twoja organizacja nie osiągnie limitów usługi dla jednej subskrypcji, możesz użyć pojedynczej subskrypcji z wieloma grupami zasobów. Z drugiej strony, jeśli organizacja przewiduje wiele obciążeń, może być lepszym rozwiązaniem wielu subskrypcji dla każdego środowiska.
 
-## <a name="implementing-the-resource-management-model"></a>Implementowanie modelu zarządzania zasobami
+## <a name="implement-the-resource-management-model"></a>Implementowanie modelu zarządzania zasobami
 
 Zapoznaj się z kilkoma różnymi modelami, które ułatwiają dostęp do zasobów platformy Azure. Teraz wykonaj kroki niezbędne do zaimplementowania modelu zarządzania zasobami z jedną subskrypcją dla każdej z **udostępnionych środowisk infrastruktury**, **produkcji**i **programowania** , korzystając z przewodnika projektowania. Dla wszystkich trzech środowisk będziesz mieć jednego **właściciela subskrypcji** . Każde obciążenie zostanie odizolowane w **grupie zasobów** z dodaniem **właściciela obciążenia** z rolą **współautor** .
 
@@ -264,7 +264,7 @@ Wykonaj następujące kroki:
 
 Po wdrożeniu modelu ładu można wdrożyć udostępnione usługi infrastruktury.
 
-## <a name="related-resources"></a>Zasoby powiązane
+## <a name="related-resources"></a>Powiązane zasoby
 
 [Wbudowane role dla zasobów platformy Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 

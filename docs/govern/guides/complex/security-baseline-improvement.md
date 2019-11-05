@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 075d587b60b7da1748cd6d06ce01a1a5866f8304
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058118"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566262"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej zabezpieczeń
 
@@ -122,7 +122,7 @@ Nowe najlepsze rozwiązania są podzielone na dwie kategorie: korporacyjne IT (c
     4. Zastosuj plan `corporate-it-subscription-blueprint` do każdego wystąpienia regionalnego.
     5. Spowoduje to utworzenie centrum dla każdej jednostki biznesowej w każdym regionie. Uwaga: dalsze oszczędności kosztów można osiągnąć, ale udostępnianie centrów w różnych jednostkach roboczych w poszczególnych regionach.
 6. Integrowanie obiektów zasad grupy (GPO) przy użyciu konfiguracji żądanego stanu (DSC):
-    1. Konwertowanie obiektu zasad grupy na DSC — [projekt zarządzania Microsoft Baseline](https://github.com/Microsoft/BaselineManagement) w serwisie GitHub może przyspieszyć ten nakład pracy. * Upewnij się, że w repozytorium jest przechowywane rozwiązanie DSC równolegle z szablonami Menedżer zasobów.
+    1. Konwertowanie obiektu zasad grupy na DSC — [projekt zarządzania Microsoft Baseline](https://github.com/Microsoft/BaselineManagement) w serwisie GitHub może przyspieszyć ten nakład pracy. Pamiętaj, aby przechowywać w repozytorium DSC równolegle z szablonami Menedżer zasobów.
     2. Wdróż konfigurację stanu Azure Automation do wszystkich wystąpień firmowej subskrypcji IT. Azure Automation może służyć do zastosowania DSC do maszyn wirtualnych wdrożonych w ramach obsługiwanych subskrypcji w grupie zarządzania.
     3. Bieżące plany planu, które umożliwiają włączenie niestandardowych zasad konfiguracji gościa. Po wydaniu tej funkcji użycie Azure Automation w ramach tego najlepszego rozwiązania nie będzie już wymagane.
 

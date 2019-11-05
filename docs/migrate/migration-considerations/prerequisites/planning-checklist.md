@@ -1,5 +1,5 @@
 ---
-title: Środowisko migracji — lista kontrolna dotycząca planowania
+title: Lista kontrolna planowania środowiska migracji
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Weryfikacja gotowości środowiska przed migracją
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 7a71b5694849533b6a01b98d9e14d5022e7287f8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378380"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564566"
 ---
-# <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Lista kontrolna dotycząca planowania środowiska migracji — weryfikacja gotowości środowiska przed migracją
+# <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Lista kontrolna planowania środowiska migracji: sprawdzanie gotowości środowiska przed migracją
 
 W pierwszym etapie procesu migracji należy utworzyć odpowiednie środowisko w chmurze do odbierania, hostowania i obsługi migrowanych zasobów. Ten artykuł zawiera listę elementów do zweryfikowania w bieżącym środowisku przed migracją.
 

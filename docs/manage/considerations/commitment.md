@@ -1,33 +1,35 @@
 ---
-title: Krytyczne znaczenie biznesowe — zarządzanie chmurą i operacje
+title: 'Zobowiązania biznesowe: zarządzanie i operacje w chmurze'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Krytyczne znaczenie biznesowe — zarządzanie chmurą i operacje
+description: 'Zobowiązania biznesowe: zarządzanie i operacje w chmurze'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7e7618163b15d17eab51571779e573dd9acb726e
-ms.sourcegitcommit: 73dbedf580951f25bf4b5544b83451cb075b1fa1
+ms.openlocfilehash: f5461ea659ae2363e98ddf45d8623e21f1ce0d90
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72805818"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565189"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Zobowiązania biznesowe w zarządzaniu chmurą
 
-Zdefiniowanie zobowiązania biznesowego to ćwiczenie priorytetów. Celem jest dostosowanie odpowiedniego poziomu zarządzania operacyjnego przy akceptowalnym koszcie eksploatacyjnym. Znalezienie salda wymaga kilku punktów danych i obliczeń przedstawionych w poniższych sekcjach.
+Zdefiniowanie _zobowiązania biznesowego_ to ćwiczenie priorytetów. Celem jest dostosowanie odpowiedniego poziomu zarządzania operacyjnego przy akceptowalnym koszcie eksploatacyjnym. Znalezienie tego salda wymaga kilku punktów danych i obliczeń, które zostały opisane w tym artykule.
 
 ![Balans kosztów i odporności](../../_images/manage/business-commitment-scale.png)
 
-Zobowiązania do stabilności firmy (za pośrednictwem odporności technicznej lub innych wpływów umów SLA) stanowią decyzję o uzasadnieniu biznesowym. W przypadku większości obciążeń w środowisku wystarcza poziom odniesienia zarządzania chmurą. W przypadku innych użytkowników wzrost kosztów w wysokości 2 &ndash;4x jest łatwo uzasadniony ze względu na potencjalny wpływ wszelkich przerw w działaniu firmy. W poprzednich artykułach w tej serii pomoc w zrozumieniu klasyfikacji i wpływu zakłóceń na różne obciążenia. Ten artykuł pomoże w obliczaniu zwracanych wartości. Jak wskazano na poniższej ilustracji, na każdym poziomie zarządzania chmurą istnieją punkty przegięcia, w których koszt może wzrosnąć szybciej niż zwiększa odporność. Te punkty przegięcia będą monitował szczegółowe decyzje biznesowe i zobowiązania biznesowe.
+Zobowiązania do stabilności biznesowej, za pomocą odporności technicznej lub innej umowy dotyczącej poziomu usług (SLA), są podejmowane decyzje biznesowe. W przypadku większości obciążeń w środowisku wystarcza poziom odniesienia zarządzania chmurą. W przypadku innych, wzrost kosztu od 2 do 4x jest łatwo uzasadniony ze względu na potencjalny wpływ wszelkich przerw w działaniu firmy.
 
-## <a name="determining-a-proper-commitment-with-the-business"></a>Określenie właściwego zaangażowania z firmą
+Poprzednie artykuły w tej serii mogą pomóc w zrozumieniu klasyfikacji i wpływu zakłóceń na różne obciążenia. Ten artykuł ułatwia obliczenie zwracanych wartości. Jak pokazano na powyższym obrazie, każdy poziom zarządzania chmurą ma punkty przegięcia, w których koszt może wzrosnąć szybciej niż zwiększa odporność. Te punkty przegięcia będą monitował szczegółowe decyzje biznesowe i zobowiązania biznesowe.
 
-Dla każdego obciążenia w teczce zespół operacyjny chmury i zespół strategii chmury powinien dostosować poziom zarządzania udostępniony bezpośrednio przez zespół operacyjny chmury.
+## <a name="determine-a-proper-commitment-with-the-business"></a>Ustalenie właściwego zobowiązania z firmą
 
-Poniżej znajdują się kluczowe aspekty, które należy dostosować podczas ustanawiania zobowiązania z firmą:
+Dla każdego obciążenia w portfelu zespół operacyjny chmury i zespół strategii chmury powinien dostosować poziom zarządzania, który jest dostarczany bezpośrednio przez zespół operacyjny chmury.
+
+Po ustanowieniu zobowiązania z firmą istnieje kilka kluczowych aspektów do dopasowania:
 
 - Wymagania wstępne dotyczące operacji IT
 - Odpowiedzialność za zarządzanie
@@ -36,59 +38,63 @@ Poniżej znajdują się kluczowe aspekty, które należy dostosować podczas ust
 - Zwrot z inwestycji
 - Sprawdzanie poprawności poziomu zarządzania
 
-Pozostała część tego artykułu zawiera konspekt każdego z tych kryteriów, aby pomóc w podejmowaniu decyzji.
+Aby pomóc w podejmowaniu decyzji, w dalszej części tego artykułu opisano wszystkie te aspekty bardziej szczegółowo.
 
 ## <a name="it-operations-prerequisites"></a>Wymagania wstępne dotyczące operacji IT
 
-[Przewodnik zarządzania platformy Azure](../azure-management-guide/index.md) zawiera opis narzędzi do zarządzania dostępnych na platformie Azure. Przed osiągnięciem zobowiązania z działalnością należy określić akceptowalną podstawową linię bazową zarządzania, która ma być stosowana do wszystkich zarządzanych obciążeń. Następnie obliczy standardowy koszt zarządzania dla każdego z zarządzanych obciążeń w portfolio IT, na podstawie liczby rdzeni procesora CPU, miejsca na dysku i innych zmiennych związanych z zasobami. Ponadto Szacowana zostanie złożona umowa SLA dla każdego obciążenia w oparciu o architekturę.
+[Przewodnik zarządzania Azure](../azure-management-guide/index.md) zawiera opis narzędzi do zarządzania, które są dostępne na platformie Azure. Przed osiągnięciem zobowiązania z firmą należy określić akceptowalną podstawową linię bazową zarządzania, która ma być stosowana do wszystkich zarządzanych obciążeń. Następnie obliczy standardowy koszt zarządzania dla każdego z zarządzanych obciążeń w portfolio IT, na podstawie liczby rdzeni procesora CPU, miejsca na dysku i innych zmiennych związanych z zasobami. Ponadto Szacowana zostanie złożona umowa SLA dla każdego obciążenia w oparciu o architekturę.
 
 > [!TIP]
-> Zespoły operacji IT często używają domyślnego minimum 99,9% czasu dla początkowej złożonej umowy SLA. Mogą również zdecydować się na normalizację kosztów zarządzania na podstawie średniego obciążenia, szczególnie w przypadku rozwiązań o minimalnych wymaganiach dotyczących rejestrowania i magazynowania. Uśrednianie kosztów kilku obciążeń o krytycznym znaczeniu może zapewnić punkt początkowy dla początkowych konwersacji.
+> Zespoły ds. operacji IT często używają domyślnego minimum 99,9 procent czasu dla początkowej złożonej umowy SLA. Mogą również zdecydować się na normalizację kosztów zarządzania na podstawie średniego obciążenia, szczególnie w przypadku rozwiązań o minimalnych wymaganiach dotyczących rejestrowania i magazynowania. Uśrednianie kosztów kilku obciążeń o krytycznym znaczeniu może zapewnić punkt początkowy dla początkowych konwersacji.
+
+<!-- -->
 
 > [!TIP]
-> Dla czytelników, którzy korzystają z [skoroszytu usługi Ops Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) do planowania zarządzania chmurą, należy zaktualizować pola zarządzania Ops, aby odzwierciedlały te wymagania wstępne. Te pola obejmują poziom zobowiązania, umowę SLA i koszt miesięczny. Koszt miesięczny powinien przedstawiać miesięczne koszty dodatkowych narzędzi do zarządzania operacyjnego.
+> Jeśli planujesz zarządzanie chmurą za pomocą [skoroszytu usługi Ops](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) , należy zaktualizować pola zarządzania Ops, aby odzwierciedlały te wymagania wstępne. Te pola obejmują _poziom zobowiązania_, umowę _SLA_i _koszt miesięczny_. Koszt miesięczny powinien przedstawiać miesięczne koszty dodatkowych narzędzi do zarządzania operacyjnego.
 
-Linia bazowa zarządzania operacjami będzie służyć jako początkowy punkt początkowy do zweryfikowania w każdej z poniższych sekcji.
+Linia bazowa zarządzania operacjami służy jako początkowy punkt początkowy do sprawdzenia poprawności w każdej z poniższych sekcji.
 
 ## <a name="management-responsibility"></a>Odpowiedzialność za zarządzanie
 
-W tradycyjnych środowiskach lokalnych koszt zarządzania środowiskiem jest zwykle uznawany za Sunk kosztem firmy. W chmurze zarządzanie jest decyzją nigdy wykonywane celowo z bezpośrednim wpływem na budżet. Koszty każdej funkcji zarządzania mogą być bezpośrednio przypisane do poszczególnych obciążeń wdrożonych w chmurze. Takie podejście pozwala na większą kontrolę, ale tworzy wymaganie zespołów operacyjnych w chmurze i zespołów strategii chmurowej, aby najpierw zatwierdzić umowę dotyczącą odpowiedzialności.
+W tradycyjnych środowiskach lokalnych koszt zarządzania środowiskiem jest zwykle traktowany jako Sunk koszt, który jest własnością operacji IT. W chmurze zarządzanie jest decyzją nigdy wykonywane celowo z bezpośrednim wpływem na budżet. Koszty każdej funkcji zarządzania mogą być bardziej bezpośrednio przypisane do każdego obciążenia, które jest wdrażane w chmurze. Takie podejście pozwala na większą kontrolę, ale tworzy wymaganie zespołów operacyjnych w chmurze i zespołów strategii chmurowej, aby najpierw zatwierdzić umowę dotyczącą odpowiedzialności.
 
-Organizacje mogą również zdecydować się na [przetworzyć niektóre z ich bieżących funkcji zarządzania dla dostawcy usług](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Dostawcy usług mogą korzystać z [usługi Azure Lighthouse](https://azure.com/lighthouse) , aby zapewnić organizacjom większą precyzję i kontrolę nad udzieleniem dostępu do zasobów, a także większą przejrzystością działań wykonywanych przez dostawców usług.
+Organizacje mogą również zdecydować się na [przetworzyć niektóre z ich bieżących funkcji zarządzania dla dostawcy usług](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Dostawcy usług mogą korzystać z [usługi Azure Lighthouse](https://azure.com/lighthouse) , aby zapewnić organizacjom dokładniejszą kontrolę nad udzieleniem dostępu do zasobów, a także większy wgląd w działania wykonywane przez dostawców usług.
 
-**Delegowana odpowiedzialność:** Ze względu na to, że nie ma potrzeby scentralizowania i przyjmowania kosztów zarządzania operacyjnego, operacje działu IT w wielu organizacjach rozważają nowe podejścia. Jedną z typowych metod nazywa się delegowanie odpowiedzialności. W centrum usług w chmurze, operacje na platformie i Automatyzacja platformy zapewniają samoobsługowe narzędzia do zarządzania, które mogą być używane przez zespoły operacyjne prowadzone przez firmę, niezależnie od centralnych zespołów operacyjnych IT. Takie podejście zapewnia uczestnikom współpracy pełną kontrolę nad budżetami związanymi z zarządzaniem. Umożliwia także CCoE, aby upewnić się, że minimalny zestaw guardrails jest prawidłowo zaimplementowany. W tym modelu działa jako Broker i przewodnik ułatwiający podejmowanie decyzji w firmie. Operacje biznesowe nadzorują codzienne operacje zależnych obciążeń.
+- **Delegowana odpowiedzialność:** Ze względu na to, że nie ma potrzeby scentralizowania i przyjmowania kosztów zarządzania operacyjnego, operacje działu IT w wielu organizacjach rozważają nowe podejścia. Jedną z typowych metod nazywa się _delegowanie odpowiedzialności_. W centrum usług w chmurze z modelem doskonałości operacje platformy i Automatyzacja platformy zapewniają samoobsługowe narzędzia do zarządzania, które mogą być używane przez zespoły operacyjne prowadzone przez firmę, niezależnie od centralnych zespołów operacyjnych IT. Takie podejście daje zainteresowanym podmiotom gospodarczym pełną kontrolę nad budżetami związanymi z zarządzaniem. Umożliwia także zespołowi usługi Cloud Center doskonałości (CCOE), aby upewnić się, że minimalny zestaw guardrails został poprawnie zaimplementowany. W tym modelu działa jako Broker i przewodnik ułatwiający podejmowanie decyzji w firmie. Operacje biznesowe nadzorują codzienne operacje zależnych obciążeń.
 
-**Centralna odpowiedzialność:** Wymagania dotyczące zgodności, złożoność techniczna i niektóre modele usług udostępnionych mogą wymagać centralnego modelu IT. W tym modelu kontynuuje konserwację obowiązków zarządzania operacjami. W związku z tym, projektowanie środowiska, kontrole zarządzania i narzędzia ładu mogą być centralnie zarządzane i kontrolowane, co ogranicza rolę zainteresowanych uczestników firmy podczas wykonywania zobowiązań w zakresie zarządzania. Jednak widoczność kosztów i architektury rozwiązań w chmurze znacznie ułatwia scentralizowanemu działowi IT przekazanie kosztów i poziomu zarządzania dla każdego obciążenia.
+- **Centralna odpowiedzialność:** Wymagania dotyczące zgodności, złożoność techniczna i niektóre modele usług udostępnionych mogą wymagać _centralnego modelu IT_ . W tym modelu kontynuuje wykonywanie obowiązków związanych z zarządzaniem operacjami. Narzędzia projektowe, kontrolne zarządzania i zarządzanie środowiskami mogą być centralnie zarządzane i kontrolowane, co ogranicza rolę zainteresowanych uczestników firmy w celu podejmowania zobowiązań w zakresie zarządzania. Jednak widoczność kosztów i architektury podejścia do chmury znacznie ułatwia scentralizowanemu działowi IT przekazywanie kosztów i poziomu zarządzania dla każdego obciążenia.
 
-**Model mieszany:** Klasyfikacja jest niezwykle ważnym modelem mieszanym do obowiązków związanych z zarządzaniem. Firmy, które znajdują się w pośrodku transformacji z lokalizacji lokalnej do chmury, mogą wymagać od siebie pierwszego modelu operacyjnego. Inne firmy, które mają ścisłe wymagania w zakresie zgodności lub zależą od długoterminowych umów z dostawcą usług IT, mogą wymagać scentralizowanego modelu operacyjnego. Pomimo tego typu ograniczeń firmy mają potrzebę innowacji. Gdy błyskawiczne innowacje muszą przyozdobć, w pośrodku scentralizowanego modelu odpowiedzialności centralnej IT, klasyfikacja i model mieszany mogą zapewnić balans. W tym podejściu centralnie udostępnia scentralizowany model operacyjny dla wszystkich obciążeń, które są krytyczne lub zawierają informacje poufne. Wszystkie inne klasyfikacje obciążeń mogą jednak zostać umieszczone w środowisku chmury przeznaczonym do delegowanych obowiązków. Podejście do scentralizowanej odpowiedzialności służy jako ogólny model operacyjny. Dzięki tej firmie można elastycznie korzystać z wyspecjalizowanego modelu operacyjnego na podstawie wymaganego poziomu pomocy technicznej i czułości.
+- **Model mieszany:** Klasyfikacja jest najprawdopodobniej z _mieszanym modelem_ obowiązków związanych z zarządzaniem. Firmy, które znajdują się w pośrodku transformacji z lokalizacji lokalnej do chmury, mogą wymagać od siebie pierwszego modelu operacyjnego. Firmy mające ścisłe wymagania w zakresie zgodności lub które zależą od długoterminowych kontraktów z dostawcami z dostawcą usług IT, mogą wymagać scentralizowanego modelu operacyjnego.
 
-Pierwszym krokiem jest zatwierdzenie do podejścia do odpowiedzialności, które będzie kształtować następujące zobowiązania.
+  Niezależnie od ich ograniczeń, dzisiejsze firmy muszą wprowadzać innowacje. W przypadku szybkiej innowacji, w pośrodku modelu z centralnym i scentralizowanym zakresem odpowiedzialności, podejście mieszane może zapewnić równowagę. W tym podejściu centralnie udostępnia scentralizowany model operacyjny dla wszystkich obciążeń, które są krytyczne lub zawierają informacje poufne. W tym samym czasie wszystkie inne klasyfikacje obciążeń mogą zostać umieszczone w środowisku chmury, które jest przeznaczone do delegowanych obowiązków. Podejście do scentralizowanej odpowiedzialności służy jako ogólny model operacyjny. Dzięki tej firmie można elastycznie zastosować wyspecjalizowany model operacyjny na podstawie wymaganego poziomu pomocy technicznej i czułości.
 
-**Która organizacja będzie odpowiedzialna za codzienne zarządzanie operacjami w tym obciążeniu?**
+Pierwszym krokiem jest zatwierdzenie do podejścia do odpowiedzialności, które następnie kształtuje następujące zobowiązania.
+
+**Która organizacja będzie odpowiedzialna za codzienne zarządzanie operacjami dla tego obciążenia?**
 
 ## <a name="cloud-tenancy"></a>Dzierżawa w chmurze
 
-W przypadku większości firm zarządzanie jest łatwiejsze, gdy wszystkie zasoby znajdują się w jednej dzierżawie. Niektóre organizacje mogą jednak wymagać obsługi wielu dzierżawców. Artykuł na temat [scentralizowania operacji zarządzania za pomocą usługi Azure Lighthouse](../centralize-operations.md) zawiera kilka przykładów, w których firmy mogą wymagać wielodostępnych środowisk platformy Azure.
+W przypadku większości firm zarządzanie jest łatwiejsze, gdy wszystkie zasoby znajdują się w jednej dzierżawie. Niektóre organizacje mogą jednak wymagać obsługi wielu dzierżawców. Aby dowiedzieć się, dlaczego firma może wymagać wielodostępnego środowiska platformy Azure, zobacz [scentralizowanie operacji zarządzania przy użyciu usługi Azure Lighthouse](../centralize-operations.md).
 
 **Czy to obciążenie będzie się znajdować w jednej dzierżawie platformy Azure wraz ze wszystkimi innymi obciążeniami?**
 
 ## <a name="soft-cost-factors"></a>Nietrwałe czynniki kosztowe
 
-W następnej sekcji tego artykułu przedstawiono podejście do zwrotów porównawczych związanych z poziomami procesów zarządzania i narzędziami. Na końcu tej sekcji każde analizowane obciążenie będzie mierzyć koszt zarządzania względem przewidywanego wpływu zakłóceń działania firmy. Takie podejście zapewni stosunkowo łatwy sposób zrozumienia, czy inwestycja w bardziej zaawansowane podejścia do zarządzania jest uzasadniona.
+W następnej sekcji przedstawiono podejście do zwrotów porównawczych, które są skojarzone z poziomami procesów zarządzania i narzędziami. Na końcu tej sekcji każde analizowane obciążenie mierzy koszt zarządzania względem przewidywanego wpływu zakłóceń działania firmy. To podejście zapewnia stosunkowo łatwy sposób zrozumienia, czy inwestycja w bogatsze podejścia do zarządzania jest uzasadniona.
 
-Przed uruchomieniem liczb należy zwrócić uwagę na nietrwałe czynniki. Nieprzerwane czynniki kosztowe generują zwrot, ale to nie jest trudne do mierzenia dzięki bezpośredniemu oszczędności kosztów, które byłyby widoczne w rachunku zysków i strat. Nietrwałe czynniki kosztowe są ważne, ponieważ mogą wskazywać potrzebę zainwestowania na wyższy poziom zarządzania niż w rozsądny sposób.
+Zanim zaczniesz korzystać z liczb, ważne jest, aby przyjrzeć się niezmiennym kosztom. Nieprzerwane czynniki kosztowe generują zwrot, ale takie zwrócenie jest trudne do mierzenia dzięki bezpośredniemu oszczędności kosztów, które byłyby widoczne w zestawieniu zysków i strat. Nietrwałe czynniki kosztowe są ważne, ponieważ mogą wskazywać potrzebę zainwestowania na wyższy poziom zarządzania niż w rozsądny sposób.
 
-Poniżej przedstawiono kilka przykładów tych czynników:
+Poniżej przedstawiono kilka przykładów nieprawidłowych czynników kosztów:
 
-- Codziennie używaj obciążenia przez tablicę lub dyrektora naczelnego.
-- Użycie obciążenia przez pierwszych _x%_ klientów, którzy prowadzą do wyższego wpływu na dochody w innym miejscu.
+- Dzienne użycie obciążeń przez tablicę lub dyrektor naczelny.
+- Użycie obciążenia przez pierwszych _x procent_ klientów, którzy powodują większy wpływ na dochody w innym miejscu.
 - Wpływ na zadowolenie pracowników.
 
-Następny punkt danych wymagany do podjęcia zobowiązania to lista nieelastycznych czynników kosztów. Te nie muszą być udokumentowane na tym etapie, ale uczestnik projektu biznesowego powinien mieć świadomość znaczenia tych czynników i ich wykluczenia z następujących obliczeń.
+Następny punkt danych, który jest wymagany do wykonania zobowiązania, to lista nieelastycznych czynników kosztów. Te czynniki nie muszą być udokumentowane na tym etapie, ale zainteresowane strony biznesowe powinny mieć świadomość znaczenia tych czynników i ich wykluczenia z następujących obliczeń.
 
 ## <a name="calculate-loss-avoidance-roi"></a>Oblicz zwrot z inwestycji
 
-Podczas obliczania względnych zwrotów kosztów zarządzania operacjami zespół IT odpowiedzialny za operacje w chmurze powinien spełnić powyższe wymagania wstępne i założyć minimalny poziom zarządzania dla wszystkich obciążeń.
+Gdy obliczamy względne zwroty kosztów zarządzania operacjami, zespół IT odpowiedzialny za operacje w chmurze powinien spełnić wspomniane wyżej wymagania wstępne i założyć minimalny poziom zarządzania dla wszystkich obciążeń.
 
 Następne zobowiązanie, które należy wykonać, jest akceptacją przez firmę kosztów związanych z ofertą zarządzaną przez linię bazową.
 
@@ -96,61 +102,60 @@ Następne zobowiązanie, które należy wykonać, jest akceptacją przez firmę 
 
 Jeśli firma nie wyraża zgody na ten poziom zarządzania, należy opracować rozwiązanie, które umożliwi firmie dalsze działanie, bez istotnego wpływu na operacje w chmurze innych obciążeń.
 
-Jeśli firma chce mieć więcej niż poziom standardowy, w pozostałej części tej sekcji można sprawdzić poprawność inwestycji i skojarzonych zwrotów (w postaci unikania utraty informacji).
+Jeśli firma chce mieć więcej niż standardowy poziom zarządzania, pozostała część tej sekcji pomaga sprawdzić, czy inwestycje i skojarzone zwroty (w formie unikania utraty).
 
 ### <a name="increased-levels-of-management-design-principles-and-service-catalog"></a>Zwiększone poziomy zarządzania: zasady projektowania i katalog usług
 
-W przypadku rozwiązań zarządzanych istnieje kilka zasad projektowania i rozwiązań szablonów, które można zastosować oprócz linii bazowej zarządzania. Każda z zasad projektowania pod kątem niezawodności i odporności dodaje koszt operacyjny do obciążenia. W odniesieniu do tych dodatkowych zobowiązań i działalności biznesowej ważne jest zapoznanie się z potencjalnymi stratami, które można uniknąć przez zwiększenie inwestycji.
+W przypadku rozwiązań zarządzanych można stosować kilka zasad projektowania i rozwiązań szablonów oprócz linii bazowej zarządzania. Każda z zasad projektowania pod kątem niezawodności i odporności dodaje koszt operacyjny do obciążenia. W odniesieniu do tych dodatkowych zobowiązań i działalności biznesowej ważne jest zapoznanie się z potencjalnymi stratami, które można uniknąć przez zwiększenie inwestycji.
 
-Poniższe obliczenia przeprowadzą przez formuły, aby lepiej zrozumieć porównanie strat i zwiększone inwestycje w zarządzanie. Aby uzyskać wskazówki dotyczące obliczania kosztów zwiększonego zarządzania, zapoznaj się z artykułami dotyczącymi [automatyzacji obciążeń](./workload.md) i [automatyzacji platform](./platform.md).
+Poniższe obliczenia przeprowadzą przez formuły, aby lepiej zrozumieć różnice między stratami i wzrostem inwestycji związanych z zarządzaniem. Aby uzyskać wskazówki dotyczące obliczania kosztów zwiększonego zarządzania, zobacz [Automatyzacja obciążeń](./workload.md) i [Automatyzacja platform](./platform.md).
 
 > [!TIP]
-> Dla czytelników, którzy korzystają z [skoroszytu usługi Ops Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) do planowania zarządzania chmurą, należy zaktualizować pola zarządzania Ops, aby odzwierciedlić każdą konwersację. Te pola obejmują poziom zobowiązania, umowę SLA i koszt miesięczny. Koszt miesięczny powinien przedstawiać miesięczne koszty dodatkowych narzędzi do zarządzania operacyjnego. Po zaktualizowaniu te pola będą aktualizować formuły zwrotu z inwestycji i każde z poniższych pól.
+> Jeśli planujesz zarządzanie chmurą za pomocą [skoroszytu usługi Ops](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) , zaktualizuj pola zarządzania Ops, aby odzwierciedlały odzwierciedlenie poszczególnych konwersacji. Te pola obejmują _poziom zobowiązania_, umowę _SLA_i _koszt miesięczny_. Koszt miesięczny powinien reprezentować miesięczny koszt dodanych narzędzi do zarządzania operacyjnego. Po ich zaktualizowaniu pola będą aktualizować formuły zwrotu z inwestycji i każde z poniższych pól.
 
 ### <a name="estimate-outage-hours-per-year"></a>Oszacowanie przestoju (godz. rocznie)
 
-"Złożona umowa SLA" jest umową dotyczącą poziomu usług opartą na wdrażaniu poszczególnych zasobów w obciążeniu. To pole będzie miało na celu "szacowane przestoje" (oznaczone etykietą EST). Przestój * * * w skoroszycie). Aby obliczyć szacowane przestoje w godzinach na rok bez użycia skoroszytu, zastosuj następującą formułę:
+Złożona umowa SLA jest umową dotyczącą poziomu usług opartą na wdrażaniu poszczególnych zasobów w obciążeniu. To pole określa _szacowane przestoje_ (oznaczone etykietą _Est. przestój_ w skoroszycie). Aby obliczyć szacowane przestoje w godzinach na rok bez użycia skoroszytu, zastosuj następującą formułę:
 
-**Szacowany czas przestoju = (1-złożona wartość procentowa SLA)/* liczba godzin w roku* *
+> _Szacowany czas przestoju = (1-złożona wartość &#215; procentowa SLA) liczba godzin w roku_
 
-W skoroszycie jest używana domyślna wartość 8 760 godzin na rok.
+Skoroszyt używa domyślnej wartości _8 760 godzin rocznie_.
 
 ### <a name="standard-loss-impact"></a>Standardowy wpływ na utratę
 
-Standardowy wpływ na utratę (zatytułowany "wpływ standardowy" w skoroszycie) prognozuje wpływ ewentualnych przestojów, przy założeniu, że przewidywanie "szacowane przestoje" potwierdza dokładne. Aby obliczyć tę prognozę bez użycia skoroszytu, zastosuj następującą formułę:
+_Standardowy wpływ na utratę_ (oznaczony jako _Standardowy wpływ_ w skoroszycie) prognozuje wpływ na sytuację finansową, przy założeniu, że szacowane prognozowanie _przestojów_ jest dokładne. Aby obliczyć tę prognozę bez użycia skoroszytu, zastosuj następującą formułę:
 
-**Wpływ standardowy = Szacowana awaria @ trzy 9-* procentowy wpływ na czas* pracy/wartość *
+> _Wpływ standardowy = Szacowana awaria @ trzy 9 czasu &#215; przestoju — wpływ na wartość_
 
 Stanowi to podstawę dla kosztu, gdyby zainteresowane strony biznesowe wypełniły inwestycję w wyższy poziom zarządzania.
 
 ### <a name="composite-sla-impact"></a>Złożony wpływ umowy SLA
 
-Złożony wpływ umowy SLA (zatytułowany "wpływ na poziom zobowiązania" w skoroszycie) zapewnia zaktualizowany wpływ na kwestie finansowe na podstawie zmian w umowie SLA dotyczącej czasu pracy. Pozwala to porównać przewidywany wpływ na finanse obu opcji. Aby obliczyć przewidywany wpływ bez użycia arkusza kalkulacyjnego, zastosuj następującą formułę.
+_Złożony wpływ umowy SLA_ ( _wpływ na poziom zobowiązania_ w skoroszycie) zapewnia zaktualizowany wpływ na kwestie finansowe na podstawie zmian w umowie SLA dotyczącej czasu pracy. To obliczenie pozwala porównać przewidywany wpływ na finanse obu opcji. Aby obliczyć ten wpływ na prognozę bez arkusza kalkulacyjnego, zastosuj następującą formułę:
 
-**Złożony wpływ umowy SLA = szacowany wpływ przestoju/* czasu na wartość* *
+> _Złożony wpływ umowy SLA = szacowany &#215; czas przestoju — wpływ na wartość_
 
 Wartość reprezentuje potencjalne straty, które mają być nieuniknione przez zmieniony poziom zobowiązania i nową umowną umowę SLA.
 
 ### <a name="comparison-basis"></a>Porównanie — podstawa
 
-Porównanie oblicza wpływ na standardowy i złożony wpływ umowy SLA, aby określić, która jest najbardziej odpowiednia w kolumnie zwracanej.
+_Porównanie_ oblicza wpływ na standardowy i złożony wpływ umowy SLA, aby określić, która jest najbardziej odpowiednia w kolumnie zwracanej.
 
 ### <a name="return-on-loss-avoidance"></a>Zwróć przy unikaniu utraty strat
 
-Jeśli koszt zarządzania obciążeniem przekracza potencjalne straty, proponowane inwestycje w zarządzanie chmurą mogą nie być rozwijającemu. Aby porównać "zwracanie po utracie strat", zobacz kolumnę zatytułowaną "roczna subskrypcja * * * *". Aby samodzielnie obliczyć tę kolumnę, Użyj tej formuły:
+Jeśli koszt zarządzania obciążeniem przekracza potencjalne straty, proponowane inwestycje w zarządzanie chmurą mogą nie być rozwijającemu. Aby porównać _zwrot dotyczący unikania utraty strat_, zobacz kolumnę z etykietą roczne zwrotne _*_ * * *. Aby samodzielnie obliczyć tę kolumnę, użyj następującej formuły:
 
-**Zwróć po uniknięciu utraty = (podstawa porównania — koszt miesięczny/* 12))//(koszt miesięczny/* 12)) **
+> _Zwróć na uniknięcie utraty = (podstawa porównania — koszt &#215; miesięczny 12) &#247; ) (koszt &#215; miesięczny 12))_
 
-Jeśli nie istnieją inne nietrwałe czynniki, które należy wziąć pod uwagę, to porównanie może szybko zasugerować, że powinna być bardziej zaproponowana w przypadku operacji w chmurze, odporności, niezawodności lub innych obszarów.
+O ile nie istnieją inne nietrwałe czynniki, które należy wziąć pod uwagę, to porównanie może szybko zasugerować, że powinna być zagłębić się w operacji w chmurze, odporności, niezawodności lub w innych obszarach.
 
 ## <a name="validate-the-commitment"></a>Weryfikowanie zobowiązania
 
-W tym momencie w procesie zobowiązania zostały wykonane: scentralizowane lub delegowane odpowiedzialności, dzierżawa platformy Azure i poziom zobowiązania.
-Każde zobowiązanie powinno być zweryfikowane i udokumentowane w celu zapewnienia, że zespół operacyjny w chmurze, zespół strategii chmurowej i zainteresowane strony biznesowe są wyrównane do tego zobowiązania, aby zarządzać obciążeniem.
+W tym momencie w procesie zobowiązania zostały wykonane: scentralizowane lub delegowane odpowiedzialności, dzierżawa platformy Azure i poziom zobowiązania. Każde zobowiązanie powinno być zweryfikowane i udokumentowane w celu zapewnienia, że zespół operacyjny w chmurze, zespół strategii chmurowej i zainteresowane strony biznesowe są wyrównane do tego zobowiązania, aby zarządzać obciążeniem.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po dokonaniu zobowiązania odpowiedzialne zespoły operacji mogą rozpocząć konfigurację dla danego obciążenia. Aby rozpocząć, Oceń różne podejścia do [spisu i widoczności](./inventory.md).
+Po dokonaniu zobowiązania odpowiedzialne zespoły operacji mogą rozpocząć konfigurowanie danego obciążenia. Aby rozpocząć, Oceń różne podejścia do [spisu i widoczności](./inventory.md).
 
 > [!div class="nextstepaction"]
 > [Opcje spisu i widoczności](./inventory.md)

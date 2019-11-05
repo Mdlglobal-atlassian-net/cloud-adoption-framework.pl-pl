@@ -8,32 +8,32 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 78f2e1df65a5cc30225c43888c13ca300daf3be8
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 6eaad06105ed6078f462082855378f72bc25d6a7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682725"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565666"
 ---
-# <a name="developing-digital-inventions"></a>Opracowywanie cyfr cyfrowych
+# <a name="develop-digital-inventions"></a>Tworzenie wynalazków cyfrowych
 
-Zgodnie z opisem w [metodologii](./index.md)innowacji, innowacje wymagają **równowagi i** **przyjęcia**. Informacje o kliencie i partnerstwie są wymagane do wdrożenia. Dyscypliny poniżej definiują szereg metod projektowania cyfr cyfrowych z zastosowaniem wdrożenia i empatię klientów. Poszczególne dyscypliny zostały krótko opisane poniżej, z dokładniejszymi łączami do poszczególnych procesów.
+Zgodnie z opisem w [innowacji w gospodarce cyfrowej](./index.md), innowacje wymagają zrównoważenia *i* *przyjęcia*. Informacje o kliencie i partnerstwie są wymagane do wdrożenia. Dyscypliny opisane w następnej sekcji definiują szereg metod tworzenia wynalazków cyfrowych przy jednoczesnym zapewnieniu przyjęcia i empatię klientów. Wszystkie dyscypliny zostały krótko opisane, a wraz z dokładniejszymi łączami do poszczególnych procesów.
 
 ![Metodologia wdrażania w chmurze — innowacje](../../_images/innovate/innovate-methodology.png)
 
 ## <a name="summary-of-each-discipline-of-digital-invention"></a>Podsumowanie każdej dyscypliny wynalazków cyfrowych
 
-Poniższe dyscypliny nie są wszystkie wymagane do nakierowania innowacji. Postępując zgodnie ze wskazówkami w temacie [Build with empatię](./build.md), celem jest przetestowanie hipotezy w każdej iteracji. Zdefiniowanie danych wyjściowych każdej iteracji jako [produktu o minimalnym żywotnym produkcie](./build.md#build-a-minimum-viable-product-mvp) spowoduje użycie możliwie najmniejszej liczby dyscyplin.
+Poniższe dyscypliny nie są *wszystkie* wymagane do napełniania innowacji w danym przypadku. Postępując zgodnie ze wskazówkami w temacie [Build with Customer empatię](./build.md), celem jest przetestowanie hipotezy w każdej iteracji. Definiując dane wyjściowe każdej iteracji jako [minimalny produkt żywotny (MVP)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance#minimum-viable-product-mvp-for-policy), powinno to umożliwić włączenie najmniejszej możliwej liczby dyscyplin.
 
-- **[Zdemokratyzuj proces dane](./data.md):** Dane w ręce klientów, partnerów i pracowników sterują innowacyjną obserwacją. Pozyskiwanie, scentralizowanie, zarządzanie i udostępnianie danych.
-- **[Zaangażuj przez aplikacje](./apps.md):** Ludzie łączą się ze wiedzą za pomocą aplikacji i środowisk. Umożliwienie deweloperom i programistom deweloperów szybkie tworzenie aplikacji.
+- **[Zdemokratyzuj proces dane](./data.md):** Pobierając dane do rąk klientów, partnerów i pracowników, zachęcasz do innowacyjnych obserwacji. Pozyskiwanie, scentralizowanie, zarządzanie i udostępnianie danych.
+- Zaangażuj się  **[w aplikacje](./apps.md):** Ludzie łączą się ze wiedzą za pomocą aplikacji i środowisk. Umożliwienie deweloperom i programistom deweloperów szybkie tworzenie aplikacji.
 - **[Przyjęcie przyjęcia](./ci-cd.md):** Zachęcaj do innowacji poprzez zmniejszenie liczby działań związanych z wdrażaniem i partnerstwem. Architekt w zakresie widoczności, współpracy, szybkości i przesyłania opinii.
 - **[Współpracuj z urządzeniami](./devices.md):** Linie cyfrowe i fizyczne rozmycie przez wiele kanałów. Dostarczaj doświadczenia między urządzeniami, IoT i rzeczywistości mieszanej.
-- **[Przewidywanie i wpływ](./predict.md):** Spójrz na przyszłość, aby prowadzić innowacje. Przejrzyj bieżące dane, aby informować środowiska i interakcje za poorednictwem narzędzi predykcyjnych.
+- **[Przewidywanie i wpływ](./predict.md):** Spójrz na przyszłość, aby prowadzić innowacje. Obejrzyj bieżące dane, aby informować środowiska i interakcje za poorednictwem narzędzi predykcyjnych.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Pierwszym dyscypliną innowacji do oszacowania jest [Democratization danych](./data.md).
+[Democratization danych](./data.md) to pierwszy dyscyplina innowacyjności, którą należy wziąć pod uwagę i oszacować.
 
 > [!div class="nextstepaction"]
 > [Zdemokratyzuj proces dane](./data.md)

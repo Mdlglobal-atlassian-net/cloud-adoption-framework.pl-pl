@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c9676684ebec0a34fcc2dc845935c598814ea52
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 19559e34f396561a25761e2b452133f84580fe85
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047857"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565954"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Zasady linii bazowej zabezpieczeń w chmurze
 
-[Linia bazowa zabezpieczeń](./index.md) jest jednym z [pięciu dyscyplin zarządzania chmurą](../governance-disciplines.md). Ta dyscyplina koncentruje się na ogólnych tematach zabezpieczeń, w tym o ochronie sieci, zasobów cyfrowych, danych itp. Zgodnie z opisem w [przewodniku przegląd zasad](../policy-compliance/cloud-policy-review.md), struktura wdrażania chmury obejmuje trzy poziomy **przykładowych zasad**: natywne, korporacyjne i chmurowe, które są zgodne z zasadami dla każdej dyscypliny. W tym artykule omówiono przykładowe natywne zasady w chmurze dotyczące dyscypliny linii bazowej zabezpieczeń.
+[Linia bazowa zabezpieczeń](./index.md) jest jednym z [pięciu dyscyplin zarządzania chmurą](../governance-disciplines.md). Ta dyscyplina koncentruje się na ogólnych tematach zabezpieczeń, w tym o ochronie sieci, zasobów cyfrowych, danych itp. Zgodnie z opisem w [przewodniku przegląd zasad](../policy-compliance/cloud-policy-review.md), struktura wdrażania chmury obejmuje trzy poziomy przykładowych zasad: natywne, korporacyjne i chmurowe, które są zgodne z zasadami dla każdej dyscypliny. W tym artykule omówiono przykładowe natywne zasady w chmurze dotyczące dyscypliny linii bazowej zabezpieczeń.
 
 > [!NOTE]
 > Firma Microsoft nie jest w stanie podyktować zasad firmowych ani INFORMATYCZNych. Ten artykuł pomoże Ci przygotować się do przeglądu zasad wewnętrznych. Przyjęto założenie, że te przykładowe zasady zostaną rozszerzone, zweryfikowane i przetestowane względem zasad korporacyjnych przed podjęciem próby jej użycia. Użycie tych przykładowych zasad jest niezalecane.
@@ -82,7 +82,8 @@ Monitorowanie zabezpieczeń jest aktywną strategią, która przeprowadza inspek
 
 ### <a name="extending-cloud-native-policies"></a>Rozszerzanie zasad natywnych w chmurze
 
-Korzystanie z chmury może obniżyć część obciążeń związanych z zabezpieczeniami. Firma Microsoft zapewnia fizyczne zabezpieczenia centrów danych platformy Azure i pomaga chronić platformę w chmurze przed zagrożeniami związanymi z infrastrukturą, takimi jak atak DDoS. Z uwagi na to, że firma Microsoft ma tysiące specjalistów cyberbezpieczeństwa pracujących nad bezpieczeństwem codziennie, zasoby wykrywające, zapobiegające lub zmniejszają cyberattacks są istotne. W rzeczywistości organizacje były martwisz się na temat tego, czy chmura była zabezpieczona, a teraz rozumiesz, że poziom inwestycji w osoby i wyspecjalizowane infrastruktury realizowane przez dostawców, takich jak firma Microsoft, ułatwiają bezpieczniejsze wykorzystanie chmury niż większość lokalnie. centrów danych.
+Korzystanie z chmury może obniżyć część obciążeń związanych z zabezpieczeniami. Firma Microsoft zapewnia fizyczne zabezpieczenia centrów danych platformy Azure i pomaga chronić platformę w chmurze przed zagrożeniami związanymi z infrastrukturą, takimi jak atak DDoS. Z uwagi na to, że firma Microsoft ma tysiące specjalistów cyberbezpieczeństwa pracujących nad bezpieczeństwem codziennie, zasoby wykrywające, zapobiegające lub zmniejszają cyberattacks są istotne. W rzeczywistości organizacje używane do obaw o to, czy chmura była zabezpieczona, a teraz wiedzą, że poziom inwestycji w osoby i wyspecjalizowane infrastruktury podejmowane przez dostawców, takich jak firma Microsoft, ułatwiają bezpieczniejsze korzystanie z chmury niż większość lokalnych centrów danych.
+Korzystanie z chmury może obniżyć część obciążeń związanych z zabezpieczeniami. Firma Microsoft zapewnia fizyczne zabezpieczenia centrów danych platformy Azure i pomaga chronić platformę w chmurze przed zagrożeniami związanymi z infrastrukturą, takimi jak atak DDoS. Z uwagi na to, że firma Microsoft ma tysiące specjalistów cyberbezpieczeństwa pracujących nad bezpieczeństwem codziennie, zasoby wykrywające, zapobiegające lub zmniejszają cyberattacks są istotne. W rzeczywistości organizacje używane do obaw o to, czy chmura była zabezpieczona, a teraz wiedzą, że poziom inwestycji w osoby i wyspecjalizowane infrastruktury podejmowane przez dostawców, takich jak firma Microsoft, ułatwiają bezpieczniejsze korzystanie z chmury niż większość lokalnych centrów danych.
 
 Nawet w przypadku inwestycji w natywną w chmurze linię bazową zabezpieczeń zaleca się, aby wszystkie zasady linii bazowej zabezpieczeń rozszery domyślne zasady w chmurze. Poniżej przedstawiono przykłady zasad rozszerzonych, które należy wziąć pod uwagę, nawet w środowisku macierzystym w chmurze:
 

@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4496d272ec4c23feb84157e2eba40935b1d16370
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240035"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565221"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące konfigurowania sieci pod kątem obciążeń migrowanych do platformy Azure
 
@@ -278,7 +278,7 @@ Aby zoptymalizować routing dla użytkowników obu biur, trzeba wiedzieć, któr
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing) na temat optymalizowania routingu.
 
-## <a name="securing-vnets"></a>Zabezpieczanie sieci wirtualnych
+## <a name="secure-vnets"></a>Zabezpiecz sieci wirtualnych
 
 Odpowiedzialność za zabezpieczanie sieci wirtualnych jest podzielona między firmę Microsoft i użytkownika. Firma Microsoft oferuje wiele funkcji sieciowych, a także usług, które ułatwiają zabezpieczanie zasobów. W przypadku projektowania zabezpieczeń sieci wirtualnych najlepsze rozwiązania, które warto zastosować, obejmują implementację sieci obwodowej, użycie filtrowania i grup zabezpieczeń, zabezpieczanie dostępu do zasobów i adresów IP oraz implementowanie ochrony przed atakami.
 

@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cbd72c04c7d938aae41e20fae82a29b731f4b256
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240083"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566685"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Wirtualne centra danych: perspektywa sieci
 
@@ -33,9 +33,9 @@ Klienci mogą wybrać dostęp do tych usług w chmurze za pośrednictwem Interne
 
 W tej chwili chmura była zasadniczo platformą do hostowania aplikacji publicznych. Przedsiębiorstwa rozpoczęły zrozumienie wartości chmury i rozpoczęły przenoszenie wewnętrznych aplikacji biznesowych do chmury. Te typy aplikacji spowodowały dodatkowe kwestie dotyczące zabezpieczeń, niezawodności, wydajności i kosztów, które wymagały dodatkowej elastyczności w sposobie dostarczania usług w chmurze. Ukryte to sposób tworzenia nowych infrastruktury i usług sieciowych zaprojektowanych w celu zapewnienia tej elastyczności, ale także nowych funkcji skalowania, odzyskiwania po awarii i innych zagadnień.
 
-Rozwiązania w chmurze zostały wcześniej zaprojektowane do obsługi jednego, relatywnie izolowanych aplikacji w spektrum publicznym. To podejście działało prawidłowo przez kilka lat. Następnie korzyści płynące z rozwiązań w chmurze i wiele obciążeń o dużej skali są hostowane w chmurze. Rozwiązywanie problemów dotyczących zabezpieczeń, niezawodności, wydajności i kosztów wdrożeń w jednym lub kilku regionach stało się istotne w cyklu życia usługi w chmurze.
+Rozwiązania w chmurze zostały wcześniej zaprojektowane do obsługi jednego, relatywnie izolowanych aplikacji w spektrum publicznym. To podejście działało prawidłowo przez kilka lat. Następnie korzyści płynące z rozwiązań w chmurze i wiele obciążeń o dużej skali są hostowane w chmurze. Rozwiązywanie problemów dotyczących zabezpieczeń, niezawodności, wydajności i kosztów wdrożeń w jednym lub kilku regionach stało się istotne w całym cyklu życia usługi w chmurze.
 
-Poniższy diagram wdrażania w chmurze pokazuje przykład luki w zabezpieczeniach w **kolorze czerwonym**. **Żółte pole** zawiera pomieszczenie do optymalizowania sieciowych urządzeń wirtualnych w ramach obciążeń.
+Na poniższym diagramie wdrożenia w chmurze przedstawiono przykład luki w zabezpieczeniach wyróżnioną w kolorze czerwonym. Żółte pole zawiera pomieszczenie do optymalizowania sieciowych urządzeń wirtualnych w ramach obciążeń.
 
 ![0][0]
 
@@ -263,7 +263,7 @@ Zalecamy użycie jednego zestawu wystąpień zapory platformy Azure lub urządze
 
 Azure Load Balancer może również sondować kondycję różnych wystąpień serwera, a gdy wystąpienie nie odpowiada na sondę, moduł równoważenia obciążenia zatrzymuje wysyłanie ruchu do wystąpienia złej kondycji. W wirtualnym centrum danych zewnętrzny moduł równoważenia obciążenia jest wdrażany w centrum i szprych. W centrum moduł równoważenia obciążenia służy do wydajnego kierowania ruchem do usług w szprychach, a moduły równoważenia obciążenia są używane do zarządzania ruchem aplikacji.
 
-[**Azure Front drzwiczks**][AFD] (AFD) to wysoce dostępna i skalowalna platforma Microsoft Web Application Acceleration platform, globalne Load Balancer http, ochrona aplikacji i Content Delivery Network. W przypadku ponad 100 lokalizacji na granicy sieci globalnej firmy Microsoft AFD umożliwia tworzenie, obsługiwanie i skalowanie dynamicznej aplikacji sieci Web oraz zawartości statycznej. Usługa AFD udostępnia swoją aplikację dzięki światowej klasy wydajności użytkowników końcowych, ujednoliconej automatyzacji konserwacji/sygnatury konserwacyjnej, automatyzacji BCDR, ujednoliconej informacji o kliencie/użytkowniku, buforowaniu i usłudze Service Insights. Platforma oferuje wydajność, niezawodność i pomoc techniczną umowy SLA, certyfikaty zgodności i podlegające inspekcji praktyki bezpieczeństwa opracowane, eksploatowane i obsługiwane natywnie przez platformę Azure.
+[Azure Front drzwiczks (AFD)][AFD] to wysoce dostępna i skalowalna platforma Microsoft Web Application Acceleration platform, globalne Load Balancer http, ochrona aplikacji i Content Delivery Network. W przypadku ponad 100 lokalizacji na granicy sieci globalnej firmy Microsoft AFD umożliwia tworzenie, obsługiwanie i skalowanie dynamicznej aplikacji sieci Web oraz zawartości statycznej. Usługa AFD udostępnia swoją aplikację dzięki światowej klasy wydajności użytkowników końcowych, ujednoliconej automatyzacji konserwacji/sygnatury konserwacyjnej, automatyzacji BCDR, ujednoliconej informacji o kliencie/użytkowniku, buforowaniu i usłudze Service Insights. Platforma oferuje wydajność, niezawodność i pomoc techniczną umowy SLA, certyfikaty zgodności i podlegające inspekcji praktyki bezpieczeństwa opracowane, eksploatowane i obsługiwane natywnie przez platformę Azure.
 
 [**Application Gateway**][AppGW] Microsoft Azure Application Gateway to dedykowane urządzenie wirtualne udostępniające kontroler dostarczania aplikacji (ADC) jako usługa, oferując różne możliwości równoważenia obciążenia warstwy 7 dla aplikacji. Pozwala to zoptymalizować produktywność farmy sieci Web dzięki przeciążeniu przerwania protokołu SSL intensywnie korzystających z procesora CPU do bramy aplikacji. Zapewnia także inne możliwości routingu warstwy 7, takie jak okrężna dystrybucja ruchu przychodzącego, koligacja sesji na podstawie plików cookie, routing oparty na ścieżkach URL i możliwość hostowania wielu witryn sieci Web za pojedynczą bramą Application Gateway. Zapora aplikacji internetowych jest również udostępniana w ramach jednostki SKU zapory aplikacji internetowych w usłudze Application Gateway. Zapewnia ona ochronę aplikacji internetowych przed typowymi internetowymi lukami w zabezpieczeniach. Usługę Application Gateway można skonfigurować jako bramę umożliwiającą dostęp do Internetu, bramę tylko wewnętrzną lub jako kombinację obu tych opcji.
 
@@ -327,7 +327,7 @@ Możliwości obciążeń są nieograniczone. Poniżej przedstawiono zaledwie kil
 - **Oparte na danych:** Obciążenia intensywnie korzystające z danych z częstego dostępu do baz danych lub innych magazynów.
 - **Zintegrowane:** Obciążenia zapewniające integrację z innymi systemami w organizacji lub poza nią.
 
-**Witryny sieci Web przeznaczone dla klientów (Internet lub wewnętrzny)** : większość aplikacji, które współdziałają z Internetem, to witryny sieci Web. Platforma Azure oferuje możliwość uruchamiania witryny sieci Web na maszynie wirtualnej IaaS lub witrynie [Azure Web Apps][WebApps] site (PaaS). Usługa Azure Web Apps obsługuje integrację z usługą sieci wirtualnych, która pozwala na wdrożenie Web Apps w strefie sieci szprych. Wewnętrzne witryny sieci Web nie muszą ujawniać publicznego punktu końcowego, ponieważ zasoby są dostępne za pośrednictwem prywatnych adresów IP bez obsługi routingu z prywatnej sieci wirtualnej.
+**Witryny sieci Web, które są dostępne dla klientów (Internet lub wewnętrzny):** Większość aplikacji, które współdziałają z Internetem, to witryny sieci Web. Platforma Azure oferuje możliwość uruchamiania witryny sieci Web na maszynie wirtualnej IaaS lub witrynie [Azure Web Apps][WebApps] site (PaaS). Usługa Azure Web Apps obsługuje integrację z usługą sieci wirtualnych, która pozwala na wdrożenie Web Apps w strefie sieci szprych. Wewnętrzne witryny sieci Web nie muszą ujawniać publicznego punktu końcowego, ponieważ zasoby są dostępne za pośrednictwem prywatnych adresów IP bez obsługi routingu z prywatnej sieci wirtualnej.
 
 **Dane Big Data i analiza:** Gdy dane wymagają skalowania w górę do dużego woluminu, bazy danych mogą nie skalować się prawidłowo. Technologia Hadoop oferuje system do równoległego uruchamiania zapytań rozproszonych na dużej liczbie węzłów. Klienci mają możliwość uruchamiania obciążeń danych w maszynach wirtualnych IaaS lub PaaS ([HDInsight][HDI]). Usługa HDInsight obsługuje wdrażanie w sieci wirtualnej opartej na lokalizacji, ale można ją wdrożyć w klastrze w szprychie wirtualnego centrum danych.
 
@@ -337,7 +337,7 @@ Możesz zaimplementować wysoce niezawodną usługę do obsługi komunikatów w 
 
 ![10][10]
 
-### <a name="making-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Udostępnianie wirtualnego centrum danych o wysokiej dostępności: wiele wirtualnych centrów danych
+### <a name="make-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Zapewnienie wysokiej dostępności wirtualnego centrum danych: wiele wirtualnych centrów danych
 
 Do tej pory ten artykuł koncentruje się na projektowaniu jednego wirtualnego centrum danych, opisującym podstawowe składniki i architekturę, która przyczynia się do odporności. Funkcje platformy Azure, takie jak Azure load module, urządzeń WUS, zestawy dostępności, zestawy skalowania, oraz inne mechanizmy przyczyniają się do systemu, który umożliwia tworzenie stałych poziomów umów SLA w usługach produkcyjnych.
 
@@ -380,7 +380,7 @@ Ponieważ używa usługi DNS, Traffic Manager jest tylko do użytku z publicznym
 
 Wirtualne centrum danych to podejście do migracji centrów danych w celu utworzenia skalowalnej architektury platformy Azure, która maksymalizuje użycie zasobów w chmurze, zmniejsza koszty i upraszcza zarządzanie systemem. Wirtualne centrum danych jest oparte na topologii sieci gwiazdy, zapewniającej wspólne usługi udostępnione w centrum i zezwalającej na określone aplikacje i obciążenia w szprychach. Wirtualne centrum danych jest również zgodne ze strukturą ról firmy, w której różne działy, takie jak centralne IT, DevOps i Operations and Maintenance, działają razem podczas wykonywania ich określonych ról. Wirtualne centrum danych spełnia wymagania związane z przełączaniem i przenoszeniem zmian, ale również ma wiele zalet do natywnych wdrożeń w chmurze.
 
-## <a name="references"></a>Informacje
+## <a name="references"></a>Dokumentacja
 
 W tym dokumencie omówiono następujące funkcje. Postępuj zgodnie z linkami, aby dowiedzieć się więcej.
 

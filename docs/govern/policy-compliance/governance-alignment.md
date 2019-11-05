@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b3fd0ca16bf54e5eaf026037ba1f59c2043f4e7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223747"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566145"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Dopasuj Przewodnik dotyczący projektowania ładu w chmurze przy użyciu zasad firmowych
 
@@ -27,7 +27,7 @@ Podczas gdy Przewodnik projektowania w chmurze powinien wziąć pod uwagę niekt
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="using-the-actionable-governance-guides"></a>Korzystanie z przewodników ładu z możliwością działania
+## <a name="use-the-actionable-governance-guides"></a>Korzystanie z przewodników ładu z możliwością działania
 
 Jeśli planujesz korzystanie z platformy Azure na potrzeby wdrożenia w chmurze, struktura wdrażania w chmurze zawiera [przewodniki ładu](../guides/index.md) z możliwością działania ilustrujące przyrostowe podejście modelu ładu Framework wdrażania w chmurze. Te przewodniki dotyczące narracji obejmują szereg typowych scenariuszy wdrażania, w tym ryzyka biznesowego, wymagania dotyczące tolerancji i instrukcje zasad, które przystąpiły do tworzenia minimalnego produktu, który jest w dobrej kondycji. Te przewodniki przedstawiają syntezę rzeczywistego środowiska klienta w ramach procesu wdrażania chmury na platformie Azure.
 

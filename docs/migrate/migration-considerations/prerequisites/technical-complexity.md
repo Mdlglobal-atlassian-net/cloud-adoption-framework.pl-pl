@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d669d720d1bf56a5adc0df42a505608ab76b02ec
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 842143afbb042ceddee5029a3fa86d0aa8cdd997
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548265"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564547"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Przygotowanie do złożoności technicznej: zarządzanie zmianami zwinnymi (Agile)
 
@@ -21,7 +21,7 @@ Gdy całe centrum danych można anulować i utworzyć ponownie za pomocą jedneg
 
 Podczas przechodzenia do modelu zwinnego, w którym kładzie się nacisk na elastyczność i iterację, złożoność techniczna i zarządzanie zmianami są obsługiwane inaczej niż w przypadku tradycyjnego modelu kaskadowego skoncentrowanego na serii liniowej kroków migracji. W tym artykule przedstawiono rozwiązanie wysokiego poziomu mające na celu zmianę zarządzania w ramach nakładu pracy związanego z migracją opartego na metodzie zwinnej. Po przeczytaniu tego artykułu będziesz mieć ogólną wiedzę na temat poziomów zarządzania zmianami oraz dokumentacji używanej podczas migracji przyrostowej. W oparciu o tę wiedzę na potrzeby wyboru i wdrożenia praktyk zwinnych wymagane są dodatkowe szkolenia i decyzje. Artykuł ten ma na celu przygotowanie architektów chmury do rozmowy z menedżerami projektów i wyjaśnienie ogólnej koncepcji zarządzania zmianami w ramach tego rozwiązania.
 
-## <a name="addressing-technical-complexity"></a>Postępowanie w ramach złożoności technicznej
+## <a name="address-technical-complexity"></a>Rozdziel złożoność techniczną
 
 W przypadku zmiany dowolnego systemu technicznego, złożoność i współzależność stwarzają dla planów projektu ryzyko. Migracje do chmury nie są wyjątkiem. Podczas przenoszenia tysięcy lub &mdash;dziesiątków tysięcy&mdash; elementów zawartości do chmury takie ryzyko jeszcze rośnie. Wykrywanie i mapowanie wszystkich zależności w dużym majątku cyfrowym może potrwać lata. Jest niewiele firm, które mogłyby tolerować tak długi cykl analizy. Aby zrównoważyć zapotrzebowanie na analizę architektury i szybki rozwój firmy, struktura Cloud Adoption Framework koncentruje się na modelu INVEST do zarządzania listą prac produktu. W poniższych sekcjach podsumowano ten typ modelu.
 
@@ -103,7 +103,7 @@ W ramach jednego przebiegu lub jednej iteracji zespół wdrożeniowy ds. chmury 
 W przypadku małej migracji z udziałem samodzielnego zespołu ds. migracji jeden przebieg może obejmować wszystkie cztery fazy migracji dla jednego obciążenia (*oceny*, *migracji*, *optymalizacji* oraz *zabezpieczania i zarządzania*). Zazwyczaj każdy z tych procesów jest współużytkowany przez wiele zespołów w różnych elementach roboczych w wielu przebiegach. W zależności od typu nakładu pracy, jego skali i ról przebiegi te mogą mieć różną formę.
 
 - **Fabryka migracji.** Migracje na dużą skalę czasami wymagają rozwiązania, które przypomina fabrykę w modelu wykonania. W tym modelu różne zespoły zostają przydzielone do wykonania określonego procesu migracji (lub podzestawu procesu). Po ukończeniu dane wyjściowe przebiegu jednego zespołu wypełniają listę prac dla następnego zespołu. Jest to wydajne rozwiązanie do migracji ponownego hostowania na dużą skalę wielu potencjalnych obciążeń obejmujących tysiące maszyn wirtualnych przechodzących przez fazy oceny, architektury, korygowania i migracji. Jednak, aby to rozwiązanie było skuteczne, niezbędne jest nowe jednorodne środowisko obejmujące usprawnione zarządzanie zmianami i procesy zatwierdzenia.
-- **Fale migracji.** Inne rozwiązanie, które dobrze sprawdza się w przypadku dużych migracji, to model fal. W tym modelu podział pracy nie jest już tak oczywisty. Zespoły angażują się w wykonanie procesu migracji poszczególnych obciążeń. Jednak charakter każdego przebiegu jest inny. W jednym przebiegu zespół może ukończyć ocenę i pracę z architekturą. W innym przebiegu może zakończyć pracę z migracją. Jeszcze inny przebieg może koncentrować się na optymalizacji i wydaniu produkcji. Takie rozwiązanie pozwala, aby zespół podstawowy zachował zgodność z obciążeniami, które są dla niego widoczne w całym procesie. Podczas korzystania z tego rozwiązania różnorodność umiejętności i przełączanie kontekstu mogą zmniejszyć potencjalną szybkość pracy zespołu, spowalniając nakład pracy związany z migracją. Ponadto przeszkody w cyklach zatwierdzania mogą powodować znaczne opóźnienia. W przypadku tego modelu ważne jest, aby zachować opcje na liście prac wydania w celu utrzymania ciągłości działań zespołu w okresach zablokowanych. Ważne jest również, aby przeszkolić więcej członków zespołu i upewnić się, że umiejętności pasują do motywów poszczególnych przebiegów.
+- **Fale migracji.** Inne rozwiązanie, które dobrze sprawdza się w przypadku dużych migracji, to model fal. W tym modelu podział pracy nie jest już tak oczywisty. Zespoły angażują się w wykonanie procesu migracji poszczególnych obciążeń. Jednak charakter każdego przebiegu jest inny. W jednym przebiegu zespół może ukończyć ocenę i pracę z architekturą. W innym przebiegu może zakończyć pracę z migracją. Jeszcze inny przebieg może koncentrować się na optymalizacji i wydaniu produkcji. Takie rozwiązanie pozwala, aby zespół podstawowy zachował zgodność z obciążeniami, które są dla niego widoczne w całym procesie. Podczas korzystania z tego rozwiązania różnorodność umiejętności i przełączanie kontekstu mogą zmniejszyć potencjalną szybkość pracy zespołu, spowalniając nakład pracy związany z migracją. Ponadto przeszkody w cyklach zatwierdzania mogą powodować znaczne opóźnienia. W przypadku tego modelu ważne jest, aby zachować opcje na liście prac wydania w celu utrzymania ciągłości działań zespołu w okresach zablokowanych. Ważne jest również, aby przeszkolić więcej członków zespołu i upewnić się, że zestawy umiejętności są wyrównane z motywem każdego przebiegu.
 
 ### <a name="sprint-backlog-data-points"></a>Punkty danych listy prac przebiegu
 

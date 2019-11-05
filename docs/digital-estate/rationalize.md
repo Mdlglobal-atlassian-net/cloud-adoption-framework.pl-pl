@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915018"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564707"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racjonalizacja majątku cyfrowego
 
@@ -28,7 +28,7 @@ Można łatwo zrozumieć racjonalizację podczas wizualizowania tradycyjnego pro
 
 **Analiza ilościowa:** W drzewie decyzyjnym pytania ilościowe decydują o pierwszej warstwie decyzji. Często zadawane pytania są następujące: czy zasób jest używany dzisiaj? Jeśli tak, czy jest to zoptymalizowane i poprawnie dopasowane? Jakie zależności istnieją między elementami zawartości? Te pytania mają kluczowe znaczenie dla klasyfikacji spisu.
 
-**Analiza jakościowa:** Kolejny zestaw decyzji wymaga analizy ludzkiej w formie analizy jakościowej. Często pytania, które znajdują się w tym miejscu, są unikatowe dla rozwiązania i można do nich odpowiedzieć tylko osoby zainteresowane i Użytkownicy zaawansowani. Te decyzje zwykle opóźnią proces, co zmniejsza się znacznie. Ta analiza zwykle wykorzystuje od 40 do 80 godzin w danym miesiącu.
+**Analiza jakościowa:** Kolejny zestaw decyzji wymaga analizy ludzkiej w formie analizy jakościowej. Często pytania, które znajdują się w tym miejscu, są unikatowe dla rozwiązania i mogą być odpowiedzi tylko przez zainteresowane strony i użytkowników zaawansowanych. Te decyzje zwykle opóźnią proces, co zmniejsza się znacznie. Ta analiza zwykle wykorzystuje od 40 do 80 godzin w danym miesiącu.
 
 Aby uzyskać wskazówki dotyczące tworzenia listy pytań dotyczących analizy jakościowej, zobacz [podejścia do planowania elementów cyfrowych](./approach.md).
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f26cf77f918c12c46c653c6fc91ebc972d0db64
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: b62dde42255d1a0e9f484e5bcfcd83bbff1ebf7e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047552"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565771"
 ---
 # <a name="engage-through-applications"></a>Zaangażuj aplikacje
 
@@ -21,22 +21,22 @@ Zgodnie z opisem w [zdemokratyzuj proces danych](./data.md), dane są nową olej
 
 W niektórych przypadkach same dane są wystarczające do zmiany dysku i zaspokajania potrzeb klientów. Ogólnie, jednak rozwiązania dla klientów wymagają, aby aplikacje miały kształtować dane, i utworzyć środowisko. Aplikacje są sposobem, w jaki udostępniamy użytkownika. Są one domem dla procesów wymaganych do reagowania na wyzwalacze klientów. Są one odbiorcami, aby zapewnić dane i uzyskać wskazówki. Ten artykuł zawiera podsumowanie kilku zasad, które mogą pomóc w rozwiązaniu użytkownika z odpowiednim rozwiązaniem aplikacji w oparciu o te, które mają być zweryfikowane.
 
-![Zaangażuj za pośrednictwem aplikacji](../../_images/innovate/engage-via-apps.png)
+![Angażowanie przez aplikacje](../../_images/innovate/engage-via-apps.png)
 
 ## <a name="shared-code"></a>Udostępniony kod
 
 Zespoły, które szybciej i dokładnie reagują na Opinie klientów, zmiany rynkowe i okazje do innowacji zazwyczaj prowadzą do innowacji na rynku. Pierwsza zasada innowacyjnych aplikacji jest sumowana w [omówieniu wzrostu sposób myślenia](./learn.md#growth-mindset): "Udostępnij kod". W miarę upływu czasu innowacje są skoncentrowane na skoncentrowaniu się na kulturze. Aby utrzymać innowacje, wymagane są różne perspektywy i wkłady.
 
-Aby zapewnić gotowość do innowacji, cały rozwój aplikacji powinien rozpoczynać się od udostępnionego repozytorium kodu. Najczęściej przyjętym narzędziem do zarządzania repozytoriami kodu jest [GitHub](https://guides.github.com/), co pozwala szybko utworzyć udostępnione repozytorium kodu. Alternatywnie, [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) to zestaw narzędzi do kontroli wersji w programie Azure DevOps Services, których można użyć do zarządzania kodem. Azure Repos zapewnia dwa typy kontroli wersji:
+Aby zapewnić gotowość do innowacji, cały rozwój aplikacji powinien rozpoczynać się od udostępnionego repozytorium kodu. Najczęściej przyjętym narzędziem do zarządzania repozytoriami kodu jest [GitHub](https://guides.github.com), co pozwala szybko utworzyć udostępnione repozytorium kodu. Alternatywnie, [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) to zestaw narzędzi do kontroli wersji w programie Azure DevOps Services, których można użyć do zarządzania kodem. Azure Repos zapewnia dwa typy kontroli wersji:
 
-- [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): rozproszony system kontroli wersji
-- [Kontrola wersji serwera Team Foundation (TFVC)](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): scentralizowany system kontroli wersji
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): rozproszony system kontroli wersji
+- [Kontrola wersji serwera Team Foundation (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): scentralizowany system kontroli wersji
 
-## <a name="citizen-developers"></a>Deweloperzy deweloperów
+## <a name="citizen-developers"></a>Amatorscy deweloperzy
 
 Profesjonalni deweloperzy są istotnym składnikiem innowacji. Gdy hipoteza zawiedzie dokładnie na dużą skalę, Profesjonalni deweloperzy są zobowiązani do stabilizacji i przygotowania rozwiązania do skalowania. Większość zasad, do których odwołuje się ten artykuł, wymaga wsparcia dla profesjonalnych deweloperów. Niestety bieżące trendy sugerują, że w przypadku deweloperów korzystających z oprogramowania dla profesjonalistów nie są deweloperzy. Ponadto koszt i tempo innowacji mogą być mniej korzystne, gdy profesjonalne programowanie jest uznawane za niezbędne. W odpowiedzi na te wyzwania deweloperzy deweloperów umożliwiają skalowanie wysiłków programistycznych i przyspieszenie testowania hipotezy wczesnej.
 
-Wykorzystanie deweloperów może być opłacalne i skuteczne, gdy wczesne poprawność może być zweryfikowana za pomocą narzędzi, takich jak [powerapps](https://docs.microsoft.com/powerapps/powerapps-overview) dla interfejsów aplikacji, [Konstruktor AI](https://docs.microsoft.com//powerapps/use-ai-builder) dla procesów i prognoz, [Microsoft Flow](https://docs.microsoft.com/flow) dla przepływów pracy i [Power Usługa BI](https://docs.microsoft.com/power-bi) do użycia danych.
+Wykorzystanie deweloperów może być opłacalne i skuteczne, gdy wczesne poprawność może być zweryfikowana za pomocą narzędzi, takich jak [powerapps](https://docs.microsoft.com/powerapps/powerapps-overview) dla interfejsów aplikacji, [Konstruktor AI](https://docs.microsoft.com/powerapps/use-ai-builder) dla procesów i prognoz, [Microsoft Flow](https://docs.microsoft.com/flow) dla przepływów pracy i [Power Usługa BI](https://docs.microsoft.com/power-bi) do użycia danych.
 
 > [!NOTE]
 > Gdy polegasz na programistach deweloperów do testowania form, zaleca się, aby niektórzy Profesjonalni deweloperzy mogli zapewnić pomoc techniczną, przegląd i wskazówki. Po sprawdzeniu hipotezy na dużą skalę proces przenoszenia aplikacji do bardziej niezawodnego modelu programowania przyspieszy powracanie do innowacji. W przypadku wczesnych deweloperów w definicjach procesów możesz w późniejszym czasie korzystać z przejść.
@@ -45,11 +45,11 @@ Wykorzystanie deweloperów może być opłacalne i skuteczne, gdy wczesne popraw
 
 Inteligentne środowiska łączą szybkość i skalę nowoczesnych aplikacji sieci Web dzięki analizie usług poznawczych i botów. Sama każda z tych technologii może być wystarczająca do zaspokajania potrzeb klientów. W przypadku, gdy są one inteligentne, rozszerzają spektrum potrzeb, które mogą być zaspokajane przez środowisko cyfrowe, jednocześnie pomagając w rozwiązaniu kosztów deweloperskich.
 
-### <a name="modern-web-apps"></a>Nowoczesne aplikacje sieci Web
+### <a name="modern-web-apps"></a>Nowoczesne aplikacje internetowe
 
 Gdy aplikacja lub środowisko jest wymagane do spełnienia potrzeby klienta, nowoczesne aplikacje sieci Web mogą być najszybszym sposobem na przechodzenie. Nowoczesne środowiska sieci Web mogą szybko współpracować z klientami wewnętrznymi lub zewnętrznymi i umożliwiać szybką iterację rozwiązania.
 
-### <a name="infusing-intelligence"></a>Odmowa analizy
+### <a name="infusing-intelligence"></a>Dodawanie inteligencji
 
 Dostęp do uczenia maszynowego i sztucznej analizy jest coraz większy dla deweloperów. Szerokie udostępnienie wspólnych interfejsów API za pomocą funkcji predykcyjnych pozwala deweloperom lepiej spełnić wymagania klienta dzięki rozszerzonemu dostępowi do danych i prognoz.
 
@@ -83,11 +83,11 @@ Rozszerzanie rozwiązania to jedna powszechna forma modernizacji. Takie podejśc
 
 - Istniejąca logika biznesowa powinna być zgodna z istniejącym klientem i musi być bliska.
 - Ulepszone środowisko będzie lepiej spełniało potrzeby określonego klienta kohorta.
-- Logika biznesowa wymagana przez rozwiązanie o minimalnym żywotnym wykorzystaniu produktu (MVP) jest scentralizowana, zazwyczaj za pośrednictwem platformy [N-warstwowej](/azure/architecture/guide/architecture-styles/n-tier), usług sieci Web, interfejsów API i [mikrousług](/azure/architecture/guide/architecture-styles/microservices) . Takie podejście polega na zapakowaniu istniejące rozwiązanie w ramach nowego środowiska hostowanego w chmurze. Na platformie Azure to rozwiązanie prawdopodobnie będzie aktywne na platformie Azure App Services.
+- Logika biznesowa wymagana przez rozwiązanie o minimalnym żywotnym wykorzystaniu produktu (MVP) jest scentralizowana, zazwyczaj za pośrednictwem platformy [N-warstwowej](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), usług sieci Web, interfejsów API i [mikrousług](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices) . Takie podejście polega na zapakowaniu istniejące rozwiązanie w ramach nowego środowiska hostowanego w chmurze. Na platformie Azure to rozwiązanie prawdopodobnie będzie aktywne na platformie Azure App Services.
 
 ### <a name="rebuild-an-existing-solution"></a>Kompiluj ponownie istniejące rozwiązanie
 
-Jeśli aplikacja nie może być łatwo rozszerzona, może być konieczne Refaktoryzacja rozwiązania. W tym podejściu obciążenie zostanie zmigrowane do chmury. Po migracji aplikacji części tego elementu są modyfikowane lub duplikowane jako usługi sieci Web lub [mikrousługi](/azure/architecture/guide/architecture-styles/microservices), które są wdrażane równolegle z istniejącym rozwiązaniem. Rozwiązanie oparte na usługach równoległych może być traktowane jak rozszerzone rozwiązanie. To rozwiązanie po prostu otacza istniejące rozwiązanie nowym środowiskom hostowanym w chmurze. Na platformie Azure to rozwiązanie prawdopodobnie będzie aktywne na platformie Azure App Services.
+Jeśli aplikacja nie może być łatwo rozszerzona, może być konieczne Refaktoryzacja rozwiązania. W tym podejściu obciążenie zostanie zmigrowane do chmury. Po migracji aplikacji części tego elementu są modyfikowane lub duplikowane jako usługi sieci Web lub [mikrousługi](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices), które są wdrażane równolegle z istniejącym rozwiązaniem. Rozwiązanie oparte na usługach równoległych może być traktowane jak rozszerzone rozwiązanie. To rozwiązanie po prostu otacza istniejące rozwiązanie nowym środowiskom hostowanym w chmurze. Na platformie Azure to rozwiązanie prawdopodobnie będzie aktywne na platformie Azure App Services.
 
 > [!CAUTION]
 > Refaktoryzacja lub rearchitektura rozwiązań lub scentralizowana logika biznesowa może szybko wyzwolić czasochłonne przeznaczenie [techniczne](./build.md#reduce-complexity-and-delay-technical-spikes)zamiast źródła wartości klienta. Jest to ryzykowne dla innowacji, szczególnie wczesne w przypadku weryfikacji hipotez. Mając nieco dużo kreatywności w projektowaniu rozwiązania, powinna istnieć ścieżka do programu MVP, która nie wymaga refaktoryzacji istniejących rozwiązań. Można opóźnić refaktoryzację do momentu, gdy hipoteza wstępna zostanie zweryfikowana na dużą skalę.
@@ -98,7 +98,7 @@ Oprócz nowoczesnych innowacyjnych metod tworzenia aplikacji w *operacjach*aplik
 
 Typ samoobsługowego modelu zarządzania operacyjnego, który znajduje się w centrum rozwiązań w chmurze, umożliwia ściślejsze kontrolki i szybsze iteracje w środowisku rozwiązania. Cele te są realizowane przez przeniesienie kontroli operacyjnej i odpowiedzialności do zespołu biznesowego.
 
-Jeśli chcesz skalować lub sprostać globalnym zapotrzebowaniu na istniejące rozwiązanie, możesz dobrze znaleźć takie podejście, aby sprawdzić hipotezę klienta. Po przeprowadzeniu migracji i niewielkiej modernizacji rozwiązania zespół biznesowy może go skalować w celu przetestowania różnorodnych zabiegów. Zazwyczaj obejmują one kohorty klientów, którzy są zainteresowani wydajnością, dystrybucją globalną i innymi potrzebami klientów.
+Jeśli próbujesz skalować lub spełnić globalne zapotrzebowanie na istniejące rozwiązanie, takie podejście może być wystarczające do zweryfikowania hipotezy klienta. Po przeprowadzeniu migracji i niewielkiej modernizacji rozwiązania zespół biznesowy może go skalować w celu przetestowania różnorodnych zabiegów. Zazwyczaj obejmują one kohorty klientów, którzy są zainteresowani wydajnością, dystrybucją globalną i innymi potrzebami klientów.
 
 ## <a name="reduce-overhead-and-management"></a>Zmniejszenie kosztów i zarządzania
 
