@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik po innowacjach na platformie Azure: Demokratyzowanie danych'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Dowiedz się, jak zdemokratyzować dane przy użyciu platformy Azure.
+description: Dowiedz się, jak zdemokratyzować dane przy użyciu platformy Azure
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 65c1ecd1d722286fb495af3069862131629c35d1
-ms.sourcegitcommit: 0d14d89b9004a65a322724342cb5086ad2c77467
+ms.openlocfilehash: fe7614d29ba6a6baba99cd447d65bc30e3396bec
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777085"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058530"
 ---
 ::: zone target="docs"
 
@@ -29,7 +29,7 @@ ms.locfileid: "72777085"
 
 ::: zone-end
 
-Jednym z pierwszych kroków demokratyzowania danych jest zwiększenie możliwości odnajdywania danych. Katalogowanie udostępniania danych i zarządzanie nim może pomóc przedsiębiorstwom w maksymalnym wykorzystaniu istniejących zasobów informacyjnych. Katalog danych ułatwia odnajdywanie źródeł danych i ich zrozumienie przez użytkowników, którzy zarządzają danymi. Usługa Azure Data Catalog umożliwia zarządzanie danymi w przedsiębiorstwie, natomiast usługa Azure Data Share umożliwia zarządzanie danymi i ich udostępnianie poza przedsiębiorstwem.
+Jednym z pierwszych kroków demokratyzowania danych jest zwiększenie możliwości ich odnajdywania. Katalogowanie udostępniania danych i zarządzanie nim może pomóc przedsiębiorstwom w maksymalnym wykorzystaniu istniejących zasobów informacyjnych. Katalog danych ułatwia odnajdywanie źródeł danych i ich zrozumienie przez użytkowników, którzy zarządzają danymi. Usługa Azure Data Catalog umożliwia zarządzanie danymi w przedsiębiorstwie, natomiast usługa Azure Data Share umożliwia zarządzanie danymi i ich udostępnianie poza przedsiębiorstwem.
 
 Usługi platformy Azure, które umożliwiają przetwarzanie danych, takie jak Azure Time Series Insights i Stream Analytics, to kolejne rozwiązania wykorzystywane przez klientów i partnerów w celu zaspokojenia innowacyjnych potrzeb.
 
@@ -37,7 +37,7 @@ Usługi platformy Azure, które umożliwiają przetwarzanie danych, takie jak Az
 
 ## <a name="azure-data-catalog"></a>Azure Data Catalog
 
-Usługa Azure Data Catalog eliminuje wyzwania związane z odnajdywaniem danych przez konsumentów, a także umożliwia producentom danych utrzymywanie zasobów informacyjnych. Zapewnij lepszą komunikację między działem informatycznym i resztą firmy, umożliwiając wszystkim dzielenie się informacjami. Przechowuj dane w wybranym przez siebie miejscu i łącz się przy użyciu wybranych narzędzi. Zachowaj kontrolę nad tym, kto może odnajdować zarejestrowane zasoby danych. Zapewnij integrację z istniejącymi narzędziami i procesami za pomocą otwartych interfejsów API REST.
+Usługa Azure Data Catalog eliminuje wyzwania związane z odnajdywaniem danych przez konsumentów oraz umożliwia producentom danych utrzymywanie zasobów informacyjnych. Usługa zapewnia lepszą komunikację między działem informatycznym i resztą firmy, umożliwiając wszystkim dzielenie się informacjami. Dane można przechowywać w dowolnym miejscu i łączyć je z narzędziami, których chcesz używać. Za pomocą usługi Azure Data Catalog można kontrolować, kto może odnajdywać zarejestrowane zasoby danych. Możesz zapewnić integrację z istniejącymi narzędziami i procesami za pomocą otwartych interfejsów API REST.
 
 > [!div class="checklist"]
 >
@@ -47,7 +47,7 @@ Usługa Azure Data Catalog eliminuje wyzwania związane z odnajdywaniem danych p
 
 ::: zone target="docs"
 
-**Przejdź do usługi [Azure Data Catalog](https://docs.microsoft.com/azure/data-catalog).**
+**Przejdź do [dokumentacji dotyczącej usługi Azure Data Catalog](https://docs.microsoft.com/azure/data-catalog)**
 
 ::: zone-end
 
@@ -55,12 +55,12 @@ Usługa Azure Data Catalog eliminuje wyzwania związane z odnajdywaniem danych p
 
 ### <a name="action"></a>Akcja
 
-W jednej organizacji jest obsługiwana tylko jedna usługa Azure Data Catalog. Jeśli katalog został już utworzony dla Twojej organizacji, nie można dodawać kolejnych katalogów.
+W jednej organizacji można używać tylko jednej usługi Azure Data Catalog. Jeśli katalog danych został już utworzony dla Twojej organizacji, nie można dodawać kolejnych katalogów.
 
 Aby utworzyć usługę Azure Data Catalog dla organizacji:
 
 1. Przejdź do usługi **Azure Data Catalog**.
-2. Kliknij przycisk **Utwórz**.
+2. Wybierz pozycję **Utwórz**.
 
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -74,7 +74,7 @@ Aby utworzyć usługę Azure Data Catalog dla organizacji:
 
 ## <a name="azure-data-share"></a>Azure Data Share
 
-Kluczowym czynnikiem wprowadzania innowacji jest osiągnięcie równowagi między otwartym udostępnianiem danych i kontrolą nad tym, jakie dane są udostępniane i komu są one udostępniane. Podczas demokratyzowania danych organizacje mogą łatwo ulec przeciążeniu z powodu ogromnych ilości danych, tempa ich przetwarzania i złożoności ich cyklu życia. Dzięki usłudze Azure Data Share dostawca może kontrolować sposób przetwarzania swoich danych przez określenie warunków użytkowania udostępnionych danych. Uzyskanie danych jest uzależnione od tego, czy konsument danych zaakceptował te warunki. Dostawcy danych mogą określać częstotliwość, z jaką konsumenci danych będą otrzymywać aktualizacje. Dostawca danych może w dowolnym momencie odwołać dostęp do nowych aktualizacji.
+Kluczowym czynnikiem wprowadzania innowacji jest osiągnięcie równowagi między otwartym udostępnianiem danych i kontrolą nad tym, jakie dane są udostępniane i komu. Podczas próby demokratyzowania danych organizacje mogą łatwo ulec przeciążeniu z powodu ogromnych ilości danych, tempa ich przetwarzania i złożoności ich cyklu życia. Usługa Azure Data Share sprawia, że dostawca może kontrolować sposób przetwarzania swoich danych przez określenie warunków użytkowania udostępnionych danych. Uzyskanie danych jest uzależnione od tego, czy konsument danych zaakceptował te warunki. Dostawcy danych mogą określać częstotliwość, z jaką konsumenci danych będą otrzymywać aktualizacje. Dostawca danych może w dowolnym momencie odwołać dostęp do nowych aktualizacji.
 
 > [!div class="checklist"]
 >
@@ -84,7 +84,7 @@ Kluczowym czynnikiem wprowadzania innowacji jest osiągnięcie równowagi międz
 > - Dodaj odbiorców do usługi Data Share.
 
 ::: zone target="docs"
-**Przejdź do usługi [Azure Data Share](https://docs.microsoft.com/azure/data-share).**
+**Przejdź do [dokumentacji dotyczącej usługi Azure Data Share](https://docs.microsoft.com/azure/data-share)**
 
 ::: zone-end
 
@@ -94,14 +94,14 @@ Kluczowym czynnikiem wprowadzania innowacji jest osiągnięcie równowagi międz
 
 ### <a name="action"></a>Akcja
 
-Aby utworzyć usługę Azure Data Share, wykonaj następujące czynności:
+Aby utworzyć udział danych:
 
-1. Przejdź do usługi **Azure Data Share**.
-2. Kliknij pozycję **Utwórz usługę Data Share**.
+1. Przejdź do **udziałów usługi Azure Data Share**.
+2. Kliknij pozycję **Utwórz udział danych**.
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.DataShare%2Faccounts]" submitText="Go to Azure Data Share" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.DataShare%2Faccounts]" submitText="Go to Azure Data Shares" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -109,13 +109,13 @@ Aby utworzyć usługę Azure Data Share, wykonaj następujące czynności:
 
 Użyj platformy [Azure Open Datasets](https://docs.microsoft.com/azure/open-datasets/overview-what-are-open-datasets), aby zwiększyć swoje możliwości analityczne przez włączenie do modeli danych dotyczących [świąt](https://azure.microsoft.com/services/open-datasets/catalog/public-holidays) i [pogody](https://azure.microsoft.com/services/open-datasets/catalog/noaa-global-forecast-system) oraz [zdjęć przestrzennych](https://azure.microsoft.com/services/open-datasets/catalog/hls).
 
-Znajdujące się tutaj informacje o [demokratyzacji procesów biznesowych](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/democratize-business-processes) i [zwiększaniu możliwości amatorskich deweloperów](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/empower-citizen-developers) będą pomocne przy wykonywaniu następnych kroków.
+Następne kroki obejmują [demokratyzację procesów biznesowych](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/democratize-business-processes) i [zwiększenie możliwości amatorskich deweloperów](https://docs.microsoft.com/business-applications-release-notes/october18/microsoft-flow/empower-citizen-developers).
 
 # <a name="insightstabinsights"></a>[Insights](#tab/Insights)
 
 ## <a name="azure-time-series-insights"></a>Azure Time Series Insights
 
-Dzięki możliwości eksplorowania niemal w czasie rzeczywistym strumieni danych i wielowarstwowych magazynów dla danych szeregów czasowych i modeli w skali IoT na potrzeby określania kontekstu nieprzetworzonych danych telemetrycznych oraz uzyskiwania szczegółowych danych opartych na zasobach, możliwości wprowadzania innowacji danych są nieograniczone. Na platformie Time Series Insights można zapewnić bezproblemową i ciągłą integrację z innymi rozwiązaniami do obsługi danych, udostępnić możliwość analizy głównych przyczyn i wykrywania anomalii, w tym niestandardowe opcje aplikacji.
+Możliwości wprowadzania innowacji w zakresie danych przy użyciu usługi Azure Time Series Insights są nieograniczone. Usługa udostępnia eksplorację danych strumieni danych w czasie zbliżonym do rzeczywistego i wielowarstwowy magazyn dla danych szeregów czasowych w skali IoT. Ponadto zapewnia modele na potrzeby określania kontekstu nieprzetworzonych danych telemetrycznych i uzyskiwania szczegółowych danych opartych na zasobach. Na platformie Time Series Insights można zapewnić bezproblemową i ciągłą integrację z innymi rozwiązaniami do obsługi danych, udostępnić możliwość analizy głównych przyczyn i wykrywania anomalii, w tym niestandardowe opcje aplikacji.
 
 > [!div class="checklist"]
 >
@@ -126,21 +126,21 @@ Dzięki możliwości eksplorowania niemal w czasie rzeczywistym strumieni danych
 
 ::: zone target="docs"
 
-**Przejdź do platformy [Azure Time Series Insights](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-update-overview).**
+**Przejdź do [omówienia usługi Azure Time Series Insights](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-update-overview)**
 
 ::: zone-end
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Akcja
 
 Aby utworzyć środowisko usługi Azure Time Series Insights, wykonaj następujące czynności:
 
-1. Przejdź do platformy **Azure Time Series Insights**.
-2. Kliknij pozycję **Utwórz środowisko usługi Time Series Insights**.
-3. Wskaż dla tego środowiska źródło zdarzeń — usługę IoT Hub lub centrum zdarzeń.
+1. Przejdź do **środowisk usługi Azure Time Series Insights**.
+2. Wybierz pozycję **Utwórz środowisko usługi Time Series Insights**.
+3. Wskaż dla tego środowiska źródło zdarzeń — usługę Azure IoT Hub lub Event Hubs.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.TimeSeriesInsights%2Fenvironments]" submitText="Go to Azure Time Series Insights" :::
 

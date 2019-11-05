@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ec17c66fa92abc292a19a8e74c215111d8638a05
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 2b2c4768cbe74363cd50b7730c3ba6b4078db14c
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769366"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058105"
 ---
 ::: zone target="docs"
 
@@ -29,11 +29,14 @@ ms.locfileid: "72769366"
 
 ::: zone-end
 
-Wdrażanie i utrzymywanie zaangażowanych użytkowników jest kluczem do powodzenia innowacji. Dlaczego?
+Wdrażanie i utrzymywanie zaangażowanych użytkowników to klucz do powodzenia innowacji. Dlaczego?
 
-Tworzenie nowego, innowacyjnego rozwiązania nie polega na spełnianiu zachcianek użytkowników. Chodzi o sformułowanie hipotezy, którą można przetestować i ulepszyć. Wyróżniamy dwa typy takich testów: Ilościowe (informacje zwrotne z testów), odpowiadające oczekiwanym akcjom. Jakościowe (opinie klientów), informujące o tym, co oznaczają te metryki dla klientów. Połączenie tych testów pozwala sformułować następną hipotezę i określić kolejne usprawnienie rozwiązania. Te informacje zwrotne są podstawą [procesu tworzenie-pomiar-nauka](../considerations/adoption.md), który stanowi rdzeń tej metodologii.
+Tworzenie nowego, innowacyjnego rozwiązania nie polega na spełnianiu zachcianek użytkowników. Chodzi o sformułowanie hipotezy, którą można przetestować i ulepszyć. Wyróżniamy dwa typy takich testów:
 
-Przed zintegrowaniem pętli informacji zwrotnych należy mieć udostępnione repozytorium rozwiązania. Scentralizowane repozytorium umożliwia rejestrowanie wszystkich informacji zwrotnych dotyczących projektu i reagowanie na nie.  Serwis [GitHub](https://github.com/) to podstawowe miejsce przechowywania oprogramowania typu open source. Jest to również jedna z najczęściej używanych platform do hostowania repozytoriów kodu źródłowego aplikacji komercyjnych. Artykuł dotyczący [tworzenia repozytoriów GitHub](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) ułatwi Ci rozpoczęcie korzystania z repozytorium.
+- **Ilościowe (informacje zwrotne z testów):** Te informacje zwrotne mierzą akcje, których się spodziewamy.
+- **Jakościowe (informacje zwrotne od klientów):** Te informacje mówią nam o tym, co oznaczają te metryki w głosowaniu klienta.
+
+Należy zapewnić udostępnione repozytorium dla swojego rozwiązania przed zintegrowaniem pętli informacji zwrotnych. Scentralizowane repozytorium umożliwia rejestrowanie wszystkich informacji zwrotnych dotyczących projektu i reagowanie na nie. Serwis [GitHub](https://github.com/) to podstawowe miejsce przechowywania oprogramowania typu open source. Jest to również jedna z najczęściej używanych platform do hostowania repozytoriów kodu źródłowego aplikacji komercyjnych. Artykuł dotyczący [tworzenia repozytoriów GitHub](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) ułatwi Ci rozpoczęcie korzystania z repozytorium.
 
 Każde z poniższych narzędzi platformy Azure umożliwia integrację z projektami hostowanymi w witrynie GitHub (lub jest z nimi zgodne):
 
@@ -45,16 +48,16 @@ Application Insights to narzędzie monitorujące, które pozwala korzystać — 
 
 Aby wyświetlić dane ilościowe z aplikacji:
 
-1. Wybierz pozycję **App Insights**.
-2. Jeśli aplikacji nie ma na liście, kliknij link **Dodaj +** i postępuj zgodnie z instrukcjami umożliwiającymi skonfigurowanie usługi App Insights.
-3. Jeśli aplikacja znajduje się na liście, wybierz tę aplikację.
-4. Okienko **Przegląd** zawiera statystyki dotyczące aplikacji. Link **Pulpit nawigacyjny aplikacji** umożliwia utworzenie niestandardowego pulpitu nawigacyjnego w celu wyświetlenia danych, które są bardziej istotne dla hipotezy.
+1. Przejdź do **usługi Application Insights**.
+   - Jeśli Twojej aplikacji nie ma na liście, wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami umożliwiającymi skonfigurowanie usługi Application Insights.
+   - Jeśli żądana aplikacja znajduje się na liście, wybierz ją.
+1. Okienko **Przegląd** zawiera statystyki dotyczące aplikacji. Wybierz pozycję **Pulpit nawigacyjny aplikacji**, aby utworzyć niestandardowy pulpit nawigacyjny w celu wyświetlenia danych, które są bardziej istotne dla hipotezy.
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/microsoft.insights%2Fcomponents]" submitText="Go to App Insights" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/microsoft.insights%2Fcomponents]" submitText="Go to Application Insights" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -69,12 +72,12 @@ Aby wyświetlić dane dotyczące aplikacji, przejdź do witryny [Azure Portal](h
 ### <a name="learn-more"></a>Dowiedz się więcej
 
 - [Konfigurowanie usługi Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/learn/quick-monitor-portal)
-- [Wprowadzenie do usługi Azure Monitor App Insights](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
+- [Wprowadzenie do usługi Azure Monitor Application Insights](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
 - [Tworzenie pulpitu nawigacyjnego danych telemetrycznych](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards)
 
 ## <a name="quantitative-feedback-for-apistabquantitative-apis"></a>[Ilościowe informacje zwrotne dotyczące interfejsów API](#tab/Quantitative-APIs)
 
-Połączona gospodarka zmienia sposób wprowadzania innowacji w firmach.  Rośnie dynamika zakłóceń działalności w poszczególnych rynkach i sektorach. Zakłócenia te mają różną postać, a firmy muszą zmagać się z **„dylematem innowatora”** : jak skoordynować tempo zmian bez kolidowania z bieżącą działalnością biznesową.
+Połączona gospodarka zmienia sposób wprowadzania innowacji w firmach. Rośnie dynamika zakłóceń działalności w poszczególnych rynkach i sektorach. Zakłócenia te mają różną postać, a firmy muszą zmagać się z _dylematem innowatora_: jak skoordynować tempo zmian bez kolidowania z bieżącą działalnością biznesową.
 
 Zewnętrzne użycie interfejsów API w przedsiębiorstwach dotyczy zmiany sposobu współpracy z klientami i partnerami. Z kolei wewnętrzne użycie interfejsów API jest związane z płynnym łączeniem odrębnych części firmy. Gospodarka oparta na interfejsach API wykorzystuje cztery bloki konstrukcyjne: sieci społecznościowe, urządzenia mobilne, analitykę i chmurę. Aplikacje i usługi można łączyć szybko i ekonomicznie, tworząc ofertę o zwiększonej wartości.
 
@@ -84,13 +87,13 @@ Zewnętrzne użycie interfejsów API w przedsiębiorstwach dotyczy zmiany sposob
 
 Aby rejestrować dane ilościowe z interfejsów API:
 
-1. Wybierz usługę **API Management**.
+1. Wybierz pozycję **Usługi API Management**.
 2. Wybierz z listy odpowiedni interfejs API.
 3. Wybierz pozycję **Ustawienia diagnostyczne** w sekcji **Monitorowanie**.
 
 Aby wyświetlić dane ilościowe z interfejsów API:
 
-1. Wybierz usługę **API Management**.
+1. Wybierz pozycję **Usługi API Management**.
 2. Wybierz z listy odpowiedni interfejs API.
 3. Wybierz pozycję **Aplikacja** w sekcji **Monitorowanie**.
 
@@ -98,7 +101,7 @@ Aby wyświetlić dane ilościowe z interfejsów API:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice]" submitText="Go to API Management Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice]" submitText="Go to API Management services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -106,13 +109,13 @@ Aby wyświetlić dane ilościowe z interfejsów API:
 
 ::: zone target="docs"
 
-Aby otworzyć usługę API Management, przejdź do witryny [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice).
+Aby otworzyć usługi API Management, przejdź do witryny [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice).
 
 ::: zone-end
 
 ### <a name="learn-more"></a>Dowiedz się więcej
 
-Ten artykuł ułatwi Ci użycie [usługi Azure Monitor w celu uzyskania informacji zwrotnych z interfejsów API](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor)
+- [Używanie usługi Azure Monitor w celu uzyskania informacji zwrotnych z interfejsów API](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor)
 
 ## <a name="qualitative-feedbacktabqualitative"></a>[Jakościowe informacje zwrotne](#tab/Qualitative)
 
@@ -123,7 +126,7 @@ Lista prac (tablica) umożliwia rejestrowanie informacji zwrotnych jako scenariu
 ### <a name="action"></a>Akcja
 
 Usługi Azure Boards i Azure Pipelines wymagają oddzielnego portalu w witrynie GitHub i na platformie Azure.
-Aby rozpocząć pracę z tymi narzędziami, wybierz usługę [Azure DevOps](https://dev.azure.com/)
+Aby rozpocząć pracę z tymi narzędziami, wybierz usługę [Azure DevOps](https://dev.azure.com/).
 
 ::: zone-end
 
@@ -136,7 +139,7 @@ Aby rozpocząć pracę z tymi narzędziami, wybierz usługę [Azure DevOps](http
 Aby utworzyć projekt DevOps:
 
 1. Wybierz pozycję **Projekt usługi Azure DevOps**.
-2. Kliknij pozycję **Utwórz projekt DevOps**.
+2. Wybierz pozycję **Utwórz projekt DevOps**.
 3. Wybierz pozycję **Środowisko wykonawcze, struktura i usługa**.
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Project" :::
@@ -147,16 +150,14 @@ Aby utworzyć projekt DevOps:
 
 ### <a name="learn-more"></a>Dowiedz się więcej
 
-Poniższe linki ułatwią scentralizowane zarządzanie informacjami zwrotnymi przy użyciu usługi Azure Boards i witryny GitHub:
+Te artykuły ułatwią scentralizowanie informacji zwrotnych i zarządzanie nimi przy użyciu usługi Azure Boards wraz z platformą GitHub:
 
 - [Wprowadzenie do usługi Azure Boards](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
 - [Usługa Azure Boards i witryna GitHub](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Zamykanie pętli z potokami](#tab/pipelines)
 
-Reagowanie na informacje zwrotne nie zawsze skutkuje wprowadzeniem funkcji, o którą prosi klient. Jednak każdy punkt danych powinien powodować jakąś zmianę. Zmiana ta może dotyczyć sposobu myślenia. Może to być również zmiana techniczna, zupełnie inna niż oczekiwana przez klienta. Potoki wdrażania i narzędzia, np. usługa Azure Pipelines, umożliwiają szybkie publikowanie takich zmian, co pozwala często je udostępniać klientom.
-
-Aby wyświetlić aktywne wdrożenia powiązane z aplikacjami hostowanymi na platformie Azure:
+Reagowanie na informacje zwrotne nie zawsze skutkuje wprowadzeniem funkcji, o którą prosi klient. Jednak każdy punkt danych powinien powodować jakąś zmianę. Zmiana ta może dotyczyć sposobu myślenia. Może to być również zmiana techniczna, zupełnie inna niż zmiana oczekiwana przez klienta. Potoki wdrażania i narzędzia, np. usługa Azure Pipelines, umożliwiają szybkie publikowanie takich zmian, co pozwala często je udostępniać klientom.
 
 ### <a name="action"></a>Akcja
 
@@ -184,7 +185,7 @@ Aby wyświetlić aplikacje w usłudze App Service, przejdź do witryny [Azure Po
 
 ### <a name="learn-more"></a>Dowiedz się więcej
 
-Poniższe linki umożliwiają rozpoczęcie tworzenia potoków wdrożenia:
+Zacznij tworzyć potoki wdrażania:
 
 - [Tworzenie pierwszego potoku](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2)
 - [Zwalnianie zadań w witrynie GitHub](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)

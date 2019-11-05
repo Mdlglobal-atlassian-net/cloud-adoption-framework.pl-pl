@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 222768f457f566d1ba19f8c53814110595e03bf3
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379122"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980191"
 ---
 # <a name="organize-your-azure-resources"></a>Organizowanie zasobów platformy Azure
 
@@ -159,7 +159,7 @@ Tagów można używać do wielu innych celów. Najczęstsze zastosowania to:
 - **Automatyzacja:** Można używać regularnie uruchamianych skryptów, które mogą wykonywać akcję w oparciu o wartość tagu, taką jak „ShutdownTime” lub „DeprovisionDate”.
 - **Rozliczenia:** tagi mogą być wyświetlane na fakturze. Można ich używać, aby ułatwić dzielenie rachunku na segmenty za pomocą tagów, takich jak „CostCenter” lub „BillTo”.
 
-Każdy zasób lub grupa zasobów może mieć co najwyżej 15 par nazwy i wartości tagu. To ograniczenie dotyczy tylko tagów stosowanych bezpośrednio do grupy zasobów lub zasobu.
+Każdy zasób lub grupa zasobów może mieć co najwyżej 50 par nazw i wartości tagów. To ograniczenie dotyczy tylko tagów stosowanych bezpośrednio do grupy zasobów lub zasobu.
 
 Aby uzyskać więcej zaleceń i przykładów dotyczących tagowania, zobacz [wskazówki dotyczące tagowania](../considerations/naming-and-tagging.md) w przewodniku Cloud Adoption Framework.
 

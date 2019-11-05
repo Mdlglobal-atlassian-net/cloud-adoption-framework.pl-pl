@@ -1,7 +1,7 @@
 ---
-title: 'Przewodnik po innowacjach na platformie Azure: Angażowanie przez aplikacje'
+title: 'Przewodnik po innowacjach na platformie Azure: Budowa relacji z klientami przy użyciu aplikacji'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Nauka wprowadzania innowacji dzięki angażowaniu przez aplikacje za pomocą platformy Azure.
+description: Nauka wprowadzania innowacji dzięki angażowaniu klientów przez aplikacje za pomocą platformy Azure
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
@@ -10,32 +10,34 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: df91d44d9b1efc2196b8b322c247dd39ef3d0d1e
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 3d8d8007125a0ffa6268132f1d608123c25c9c22
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769355"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058542"
 ---
 ::: zone target="docs"
 
-# <a name="azure-innovation-guide-engage-through-apps"></a>Przewodnik po innowacjach na platformie Azure: Angażowanie przez aplikacje
+# <a name="azure-innovation-guide-engage-customers-through-apps"></a>Przewodnik po innowacjach na platformie Azure: Budowa relacji z klientami przy użyciu aplikacji
 
 ::: zone-end
 
 ::: zone target="chromeless"
 
-# <a name="engage-through-apps"></a>Angażowanie przez aplikacje
+# <a name="engage-customers-through-apps"></a>Budowa relacji z klientami przy użyciu aplikacji
 
 ::: zone-end
 
-Innowacje dotyczące aplikacji obejmują zarówno modernizowanie istniejących aplikacji hostowanych lokalnie, jak i tworzenie aplikacji natywnych dla chmury przy użyciu kontenerów lub technologii bezserwerowych. Platforma Azure udostępnia usługi PaaS, takie jak Azure App Service, umożliwiające łatwe modernizowanie istniejących aplikacji internetowych oraz aplikacji interfejsu API opracowanych w środowisku .NET, .NET Core, Java, Node.js, Ruby, Python lub PHP i przeznaczonych do wdrożenia na platformie Azure. Model kontenerów o otwartym standardzie umożliwia łatwe tworzenie mikrousług lub konteneryzowanie istniejących aplikacji i wdrażanie ich na platformie Azure za pomocą usług zarządzanych, takich jak Azure Kubernetes Service, Azure Container Instances i Web App for Containers. Technologie bezserwerowe, takie jak Azure Functions i Azure Logic Apps, ułatwiają skoncentrowanie się na tworzeniu aplikacji za pomocą modelu użycia (opartego na płatności za zużyte zasoby), a nie na wdrażaniu infrastruktury i zarządzaniu nią.
+Innowacje dotyczące aplikacji obejmują zarówno modernizowanie istniejących aplikacji hostowanych lokalnie, jak i tworzenie aplikacji natywnych dla chmury przy użyciu kontenerów lub technologii bezserwerowych. Platforma Azure udostępnia usługi PaaS, takie jak Azure App Service, umożliwiające łatwe modernizowanie istniejących aplikacji internetowych oraz aplikacji interfejsu API opracowanych w środowisku .NET, .NET Core, Java, Node.js, Ruby, Python lub PHP i przeznaczonych do wdrożenia na platformie Azure.
+
+Model kontenerów o otwartym standardzie umożliwia łatwe tworzenie mikrousług lub konteneryzowanie istniejących aplikacji i wdrażanie ich na platformie Azure za pomocą usług zarządzanych, takich jak Azure Kubernetes Service, Azure Container Instances i Web App for Containers. Technologie bezserwerowe, takie jak Azure Functions i Azure Logic Apps, korzystają z modelu użycia (opartego na płatności za zużyte zasoby), a nie na wdrażaniu infrastruktury i zarządzaniu nią, dzięki czemu ułatwiają skoncentrowanie się na tworzeniu aplikacji.
 
 <!-- markdownlint-disable MD025 -->
 
 # <a name="deliver-value-fastertabdelivervaluefaster"></a>[Szybsze dostarczanie wartości](#tab/DeliverValueFaster)
 
-Jedną z zalet rozwiązań opartych na chmurze jest możliwość szybszego zbierania opinii i dostarczania wartości użytkownikom końcowym. Szybsze uzyskiwanie opinii — zarówno od klientów zewnętrznych, jak i użytkowników w firmie — na temat aplikacji jest korzystne.
+Jedną z zalet rozwiązań opartych na chmurze jest możliwość szybszego zbierania opinii i dostarczania wartości użytkownikom. Szybsze uzyskiwanie opinii na temat aplikacji — zarówno od klientów zewnętrznych, jak i użytkowników w firmie — jest korzystne.
 
 ## <a name="azure-app-service"></a>Azure App Service
 
@@ -48,7 +50,7 @@ Usługa App Service zapewnia najwyższej jakości obsługę języków ASP.NET, A
 Aby skonfigurować lub monitorować wdrożenia usługi Azure App Service:
 
 1. Wybierz pozycję **App Services**.
-2. Konfigurowanie nowej usługi: kliknij link **Dodaj +** i postępuj zgodnie z instrukcjami.
+2. Konfigurowanie nowej usługi: Wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami.
 3. Zarządzanie istniejącymi usługami: wybierz odpowiednią aplikację z listy hostowanych aplikacji.
 
 ::: zone target="chromeless"
@@ -72,7 +74,7 @@ Usługi Azure Cognitive Services umożliwiają dodanie zaawansowanej analizy bez
 Aby skonfigurować lub monitorować wdrożenia usług Azure Cognitive Services:
 
 1. Wybierz pozycję **Cognitive Services**.
-2. Konfigurowanie nowej usługi: kliknij link **Dodaj +** i postępuj zgodnie z instrukcjami.
+2. Konfigurowanie nowej usługi: Wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami.
 3. Zarządzanie istniejącymi usługami: wybierz odpowiednią usługę z listy hostowanych usług.
 
 ::: zone target="chromeless"
@@ -85,7 +87,7 @@ Aby skonfigurować lub monitorować wdrożenia usług Azure Cognitive Services:
 
 ::: zone-end
 
-## <a name="azure-bot-services"></a>Azure Bot Services
+## <a name="azure-bot-service"></a>Usługa Azure Bot
 
 Usługi Azure Bot Services umożliwiają rozbudowanie standardowej aplikacji o interfejs naturalnego bota, który pozwala tworzyć nowe możliwości interakcji z użyciem sztucznej inteligencji i uczenia maszynowego.
 
@@ -94,7 +96,7 @@ Usługi Azure Bot Services umożliwiają rozbudowanie standardowej aplikacji o i
 Aby skonfigurować lub monitorować wdrożenia usług Azure Bot Services:
 
 1. Wybierz pozycję **Usługi botów**.
-2. Konfigurowanie nowej usługi: kliknij link **Dodaj +** i postępuj zgodnie z instrukcjami.
+2. Konfigurowanie nowej usługi: Wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami.
 3. Zarządzanie istniejącymi usługami: wybierz odpowiedniego bota z listy hostowanych usług.
 
 ::: zone target="chromeless"
@@ -109,15 +111,15 @@ Aby skonfigurować lub monitorować wdrożenia usług Azure Bot Services:
 
 ## <a name="azure-devops"></a>Azure DevOps
 
-W świecie innowacji na pewno napotkasz metodykę DevOps. Przez długi czas firma Microsoft sprzedawała produkt lokalny o nazwie Team Foundation Server (TFS). W ramach tworzenia innowacyjnych produktów firma Microsoft opracowała opartą na chmurze usługę Azure DevOps, która udostępnia narzędzia do kompilowania i wydawania obsługujące wiele języków i miejsc docelowych wydań. [Azure DevOps](https://docs.microsoft.com/azure/devops)
+W świecie innowacji na pewno napotkasz metodykę DevOps. Przez długi czas firma Microsoft sprzedawała produkt lokalny o nazwie Team Foundation Server (TFS). W ramach tworzenia innowacyjnych produktów firma Microsoft opracowała opartą na chmurze usługę Azure DevOps, która udostępnia narzędzia do kompilowania i wydawania obsługujące wiele języków i miejsc docelowych wydań. Aby uzyskać więcej informacji, zobacz [usługę Azure DevOps](https://docs.microsoft.com/azure/devops).
 
 ## <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-Wraz ze wzrostem popularności aplikacji mobilnych rośnie zapotrzebowanie na platformę, która umożliwia automatyczne testowanie różnych konfiguracji na rzeczywistych urządzeniach. Rozwiązanie Visual Studio App Center nie tylko zapewnia miejsce umożliwiające testowanie aplikacji w systemach iOS, Android, Windows i macOS, ale udostępnia również platformę do monitorowania z obsługą usługi Azure Application Insights, która pozwala szybko i łatwo przetwarzać dane telemetryczne. Aby uzyskać więcej informacji, zobacz [Omówienie rozwiązania Visual Studio App Center](https://docs.microsoft.com/appcenter).
+Wraz ze wzrostem popularności aplikacji mobilnych rośnie zapotrzebowanie na platformę, która umożliwia automatyczne testowanie różnych konfiguracji na rzeczywistych urządzeniach. Rozwiązanie Visual Studio App Center nie jest tylko miejscem, w którym można testować aplikacje w systemach iOS, Android, Windows i macOS. Jest to również platforma monitorowania, która może wykorzystywać usługę Azure Application Insights do szybkiego i prostego analizowania danych telemetrycznych. Aby uzyskać więcej informacji, zobacz [Omówienie rozwiązania Visual Studio App Center](https://docs.microsoft.com/appcenter).
 
 Rozwiązanie Visual Studio App Center udostępnia również usługę, która pozwala wysyłać powiadomienia do aplikacji na różnych platformach za pomocą pojedynczego wywołania bez konieczności komunikowania się z każdą usługą powiadomień. Aby uzyskać więcej informacji, zobacz [Usługa Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push).
 
-### <a name="read-more"></a>Dowiedz się więcej
+### <a name="learn-more"></a>Dowiedz się więcej
 
 - [Omówienie usługi App Service](https://docs.microsoft.com/azure/app-service/overview)
 - [Web Apps for Containers: uruchamianie niestandardowego kontenera](https://docs.microsoft.com/azure/app-service/containers/quickstart-docker)
@@ -130,7 +132,7 @@ Rozwiązanie Visual Studio App Center udostępnia również usługę, która poz
 - [Dokumentacja zestawu Azure SDK dla języka Go](https://docs.microsoft.com/azure/go)
 - [Rozwiązania DevOps](https://azure.microsoft.com/solutions/devops)
 
-# <a name="cloud-native-appstabcloudnative"></a>[Aplikacje natywne dla chmury](#tab/CloudNative)
+# <a name="create-cloud-native-appstabcloudnative"></a>[Tworzenie aplikacji natywnych dla chmury](#tab/CloudNative)
 
 <!-- markdownlint-disable MD026 -->
 
@@ -140,7 +142,7 @@ Aplikacje natywne dla chmury są tworzone od podstaw z myślą o optymalizacji p
 
 - Mikrousługi
 - Praca bezserwerowa
-- Kontener
+- Containers
 
 ## <a name="microservices"></a>Mikrousługi
 
@@ -158,17 +160,17 @@ Korzystaj z w pełni zarządzanej usługi Kubernetes do obsługi aprowizowania, 
 
 #### <a name="action"></a>Akcja
 
-Aby skonfigurować lub monitorować usługi Azure Kubernetes Services:
+Aby skonfigurować lub monitorować usługę Azure Kubernetes Service:
 
-1. Wybierz pozycję **Usługi Kubernetes**.
-2. Konfigurowanie nowej usługi: kliknij link **Dodaj +** i postępuj zgodnie z instrukcjami.
-3. Zarządzanie istniejącą usługą: Wybierz z listy odpowiednią usługę Kubernetes.
+1. Przejdź do **usług Azure Kubernetes Services**.
+2. Konfigurowanie nowej usługi: Wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami.
+3. Zarządzanie istniejącymi usługami: Wybierz z listy odpowiednią usługę Kubernetes.
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FmanagedClusters]" submitText="Go to Kubernetes Services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FmanagedClusters]" submitText="Go to Azure Kubernetes services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -178,7 +180,7 @@ Aby skonfigurować lub monitorować usługi Azure Kubernetes Services:
 
 ### <a name="azure-functions"></a>Azure Functions
 
-Usługa Azure Functions udostępnia platformę do uruchamiania małych fragmentów kodu (funkcji) w chmurze. Funkcje pozwalają rozpocząć refaktoryzację kodu na architekturę mikrousług.
+Usługa Azure Functions udostępnia platformę do uruchamiania małych fragmentów kodu lub funkcji w chmurze. Funkcje pozwalają rozpocząć refaktoryzację kodu na architekturę mikrousług.
 
 Środowisko uruchomieniowe Azure Functions obsługuje wiele języków, np. C#, Java, JavaScript i Python. Aby zapoznać się z pełną listą, zobacz [Obsługiwane języki w usłudze Azure Functions](https://docs.microsoft.com/azure/azure-functions/supported-languages).
 
@@ -189,8 +191,8 @@ Kolejną zaletą funkcji jest możliwość ich wyzwalania przez różne akcje i 
 Aby skonfigurować lub monitorować wdrożenia usługi Azure Functions:
 
 1. Wybierz pozycję **Aplikacja funkcji**.
-2. Konfigurowanie nowej aplikacji: kliknij link **Dodaj +** i postępuj zgodnie z instrukcjami.
-3. Zarządzanie istniejącymi aplikacjami: wybierz odpowiednią aplikację z listy aplikacji funkcji.
+2. Konfigurowanie nowej aplikacji: Wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami.
+3. Zarządzanie istniejącymi aplikacjami: Wybierz odpowiednią aplikację z listy aplikacji funkcji.
 
 ::: zone target="chromeless"
 
@@ -206,9 +208,9 @@ Aby skonfigurować lub monitorować wdrożenia usługi Azure Functions:
 
 Twórz aplikacje natywne dla chmury bez aprowizowania infrastruktury i zarządzania nią, przy użyciu w pełni zarządzanej platformy, która automatycznie zajmuje się skalowaniem oraz zapewnianiem dostępności i wydajności. Oto zalety rozwiązań bezserwerowych platformy Azure:
 
-- Skrócenie czasu tworzenia oprogramowania
-- Zwiększenie wydajności zespołu
-- Zwiększenie korzyści dla organizacji
+- Skrócenie czasu tworzenia oprogramowania.
+- Zwiększenie wydajności zespołu.
+- Zwiększenie korzyści dla organizacji.
 
 ### <a name="azure-logic-apps"></a>Azure Logic Apps
 
@@ -216,10 +218,10 @@ Zintegruj dane i aplikacje zamiast pisać złożony kod umożliwiający współd
 
 #### <a name="action"></a>Akcja
 
-Aby skonfigurować lub monitorować usługę Azure Logic Apps:
+Aby skonfigurować lub monitorować aplikacje logiki na platformie Azure:
 
 1. Wybierz pozycję **Aplikacje logiki**.
-2. Konfigurowanie nowej aplikacji: kliknij link **Dodaj +** i postępuj zgodnie z instrukcjami.
+2. Konfigurowanie nowej aplikacji: Wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami.
 3. Zarządzanie istniejącymi aplikacjami: Wybierz z listy odpowiednią aplikację logiki.
 
 ::: zone target="chromeless"
@@ -241,14 +243,14 @@ Publikuj, zabezpieczaj, przekształcaj, obsługuj i monitoruj interfejsy API za 
 Aby skonfigurować lub monitorować usługi API Management:
 
 1. Wybierz pozycję **Usługi API Management**.
-2. Konfigurowanie nowej usługi: kliknij link **Dodaj +** i postępuj zgodnie z instrukcjami.
-3. Zarządzanie istniejącą usługą: Wybierz z listy odpowiednią usługę.
+2. Konfigurowanie nowej usługi: Wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami.
+3. Zarządzanie istniejącymi usługami: Wybierz z listy odpowiednią usługę.
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice]" submitText="Go to API Management Services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice]" submitText="Go to API Management services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -256,18 +258,18 @@ Aby skonfigurować lub monitorować usługi API Management:
 
 ## <a name="containers"></a>Containers
 
-Modernizując portfolio aplikacji, można skorzystać z różnych usług kontenerów platformy Azure, które pozwalają migrować istniejące aplikacje do kontenerów metodą „lift and shift” oraz tworzyć natywne dla chmury aplikacje mikrousług, umożliwiające szybsze dostarczanie wartości użytkownikom. Opracowuj i aktualizuj swoje aplikacje konteneryzowane oraz zarządzaj nimi dzięki kompleksowym narzędziom dla deweloperów i narzędziom do ciągłej integracji/ciągłego wdrażania. Zarządzaj kontenerami w dużej skali za pomocą w pełni zarządzanej usługi organizowania kontenerów Kubernetes, którą można zintegrować z usługą Azure Active Directory. Na każdym etapie modernizacji możesz przyspieszyć opracowywanie aplikacji konteneryzowanych, jednocześnie spełniając wymagania dotyczące zabezpieczeń.
+Modernizując portfolio aplikacji, można skorzystać z różnych usług kontenerów platformy Azure, które pozwalają migrować istniejące aplikacje do kontenerów oraz tworzyć natywne dla chmury aplikacje mikrousług, umożliwiające szybsze dostarczanie wartości użytkownikom. Opracowuj i aktualizuj swoje aplikacje konteneryzowane oraz zarządzaj nimi dzięki kompleksowym narzędziom dla deweloperów i narzędziom do ciągłej integracji/ciągłego wdrażania. Zarządzaj kontenerami w dużej skali za pomocą w pełni zarządzanej usługi organizowania kontenerów Kubernetes, którą można zintegrować z usługą Azure Active Directory. Na każdym etapie modernizacji możesz przyspieszyć opracowywanie aplikacji konteneryzowanych, jednocześnie spełniając wymagania dotyczące zabezpieczeń.
 
 ### <a name="azure-container-instances"></a>Azure Container Instances
 
-Uruchamiaj kontenery platformy Docker na żądanie w zarządzanym, bezserwerowym środowisku platformy Azure. Azure Container Instances (ACI) to rozwiązanie uniwersalne, które może działać w odizolowanych kontenerach bez orkiestracji. Uruchamiając swoje obciążenia w usłudze ACI, możesz skoncentrować się na projektowaniu i tworzeniu aplikacji, zamiast zarządzać infrastrukturą, w ramach której one działają.
+Uruchamiaj kontenery platformy Docker na żądanie w zarządzanym, bezserwerowym środowisku platformy Azure. Azure Container Instances to rozwiązanie uniwersalne, które może działać w odizolowanych kontenerach bez orkiestracji. Uruchamiając swoje obciążenia w ramach usługi Container Instances, możesz skoncentrować się na projektowaniu i tworzeniu aplikacji, zamiast zarządzać infrastrukturą, w ramach której one działają.
 
 ### <a name="action"></a>Akcja
 
 Aby skonfigurować lub monitorować usługę Container Instances:
 
 1. Wybierz pozycję **Container Instances**.
-2. Konfigurowanie nowego wystąpienia kontenera: kliknij link **Dodaj +** i postępuj zgodnie z instrukcjami.
+2. Konfiguracja nowego wystąpienia kontenera: Wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami.
 3. Zarządzanie istniejącymi wystąpieniami kontenerów: wybierz z listy odpowiednie wystąpienie kontenera.
 
 ::: zone target="chromeless"
@@ -282,24 +284,24 @@ Aby skonfigurować lub monitorować usługę Container Instances:
 
 ### <a name="azure-red-hat-openshift"></a>Azure Red Hat OpenShift
 
-Platforma Azure Red Hat OpenShift umożliwia elastyczne, samoobsługowe wdrażanie w pełni zarządzanych klastrów OpenShift. Zapewnij zgodność z przepisami i skoncentruj się na opracowywaniu aplikacji, pozwalając, aby firmy Microsoft i Red Hat zajęły się aktualizowaniem i monitorowaniem węzła głównego, infrastruktury i aplikacji oraz stosowaniem do nich poprawek. Wybierz własne rozwiązania rejestru, sieci, magazynu lub ciągłej integracji/ciągłego wdrażania albo zacznij używać wbudowanych rozwiązań umożliwiających zautomatyzowane zarządzanie kodem źródłowym, kompilowanie kontenerów i aplikacji, wdrażanie, skalowanie, zarządzanie kondycją i nie tylko.
+Platforma Azure Red Hat OpenShift umożliwia elastyczne, samoobsługowe wdrażanie w pełni zarządzanych klastrów OpenShift. Zapewnij zgodność z przepisami i skoncentruj się na opracowywaniu aplikacji, pozwalając, aby firmy Microsoft i Red Hat zajęły się aktualizowaniem i monitorowaniem węzła głównego, infrastruktury i aplikacji oraz stosowaniem do nich poprawek. Wybierz własne rozwiązania rejestru, sieci, magazynu lub ciągłej integracji/ciągłego wdrażania. Możesz też szybko rozpocząć pracę dzięki wbudowanym rozwiązaniom umożliwiającym zautomatyzowane zarządzanie kodem źródłowym, kompilowanie kontenerów i aplikacji, wdrażanie, skalowanie, zarządzanie kondycją i nie tylko.
 
 **Zobacz [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)**
 
 # <a name="isolate-points-of-failuretabisolatepointsoffailure"></a>[Izolacja punktów awarii](#tab/IsolatePointsOfFailure)
 
-Pod koniec etapu wstępnego testowania należy ocenić sposoby izolowania i usuwania punktów awarii. Dzięki rozproszeniu chmury Azure można zaprojektować aplikację pod kątem minimalizacji awarii i zwiększenia wydajności.
+Pod koniec etapu wstępnego testowania należy ocenić sposoby izolowania i usuwania punktów awarii. Dzięki rozproszeniu chmury platformy Azure można zaprojektować aplikację pod kątem minimalizacji awarii i zwiększenia wydajności.
 
-## <a name="azure-front-door"></a>Azure Front Door
+## <a name="azure-front-door-service"></a>Azure Front Door Service
 
-Usługa Azure Front Door udostępnia skalowalny, bezpieczny punkt wejścia do dostarczania aplikacji globalnych. Usługa ta umożliwia optymalizację ruchu w celu uzyskania najlepszej wydajności i zapewnia natychmiastowe przechodzenie do trybu failover w skali globalnej. Jeśli chcesz zakończyć korzystanie z protokołu zabezpieczeń TLS (odciążanie protokołu SSL) lub przetwarzanie poszczególnych żądań HTTP/HTTPS na poziomie warstwy aplikacji, usługa Azure Front Door jest lepszym wyborem niż usługa Traffic Manager.
+Usługa Azure Front Door Service udostępnia skalowalny, bezpieczny punkt wejścia, którego można użyć do dostarczania aplikacji globalnych. Usługa ta umożliwia optymalizację ruchu w celu uzyskania najlepszej wydajności i zapewnia natychmiastowe przechodzenie do trybu failover w skali globalnej. Jeśli chcesz zakończyć korzystanie z protokołu zabezpieczeń TLS (odciążanie protokołu SSL) lub przetwarzanie poszczególnych żądań HTTP/HTTPS na poziomie warstwy aplikacji, usługa Azure Front Door Service jest lepszym wyborem niż usługa Azure Traffic Manager.
 
 ### <a name="action"></a>Akcja
 
 Aby skonfigurować lub monitorować usługi Front Door:
 
 1. Wybierz pozycję **Usługi Front Door**.
-2. Konfigurowanie nowej usługi Front Door: kliknij link **Dodaj +** i postępuj zgodnie z instrukcjami.
+2. Konfiguracja nowej usługi Front Door: Wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami.
 3. Zarządzanie istniejącymi usługami Front Door: Wybierz z listy odpowiednią usługę Front Door.
 
 ::: zone target="chromeless"
@@ -314,14 +316,14 @@ Aby skonfigurować lub monitorować usługi Front Door:
 
 ## <a name="traffic-manager"></a>Traffic Manager
 
-Usługa Traffic Manager umożliwia oparte na systemie DNS równoważenie obciążenia, którym można kierować na podstawie reguł. Pomaga to zapewnić odporność w razie awarii wdrożonych usług. Usługę Traffic Manager można również umieścić na stosie, aby korzystać zarówno z routingu opartego na awariach, jak i routingu opartego na wydajności, co pozwala zapewnić najlepszą jakość usług w różnych obszarach geograficznych.
+Usługa Traffic Manager umożliwia oparte na systemie DNS równoważenie obciążenia, którym można kierować na podstawie różnych reguł. Pomaga to zapewnić odporność w razie awarii wdrożonych usług. Usługę Traffic Manager można również umieścić na stosie, aby korzystać zarówno z routingu opartego na awariach, jak i routingu opartego na wydajności, co pozwala zapewnić najlepszą jakość usług w różnych obszarach geograficznych.
 
 ### <a name="action"></a>Akcja
 
 Aby skonfigurować lub monitorować profile usługi Traffic Manager:
 
 1. Wybierz pozycję **Profile usługi Traffic Manager**.
-2. Konfigurowanie nowego profilu: kliknij link **Dodaj +** i postępuj zgodnie z instrukcjami.
+2. Konfiguracja nowego profilu: Wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami.
 3. Zarządzanie istniejącymi profilami: wybierz z listy odpowiedni profil.
 
 ::: zone target="chromeless"
@@ -336,14 +338,14 @@ Aby skonfigurować lub monitorować profile usługi Traffic Manager:
 
 ## <a name="azure-content-delivery-network"></a>Azure Content Delivery Network
 
-Platforma Azure udostępnia rozproszoną usługę Content Delivery Network (CDN), która umożliwia dostarczanie zasobów w odpowiednim czasie dzięki ich buforowaniu w lokalizacji znajdującej się blisko użytkowników końcowych. Buforowanie pozwala zwiększyć komfort pracy klientów i pozbyć się problemów z siecią występujących podczas pobierania zawartości z punktu końcowego usługi CDN do centrum danych, które hostuje aplikację. Usługa CDN może również być używana przez aplikacje, które nie są hostowane na platformie Azure.
+Platforma Azure udostępnia rozproszoną usługę Content Delivery Network (CDN), która umożliwia dostarczanie zasobów w odpowiednim czasie dzięki ich buforowaniu w lokalizacji znajdującej się blisko użytkowników. Buforowanie pomaga w zwiększeniu komfortu pracy klientów. Ponadto podczas pobierania zawartości zapobiega problemom powodowanym przez usterki sieciowe występujące pomiędzy punktem końcowym usługi CDN i centrum danych, które hostuje aplikację. Z usługi Content Delivery Network mogą również korzystać aplikacje, które nie są hostowane na platformie Azure.
 
 ### <a name="action"></a>Akcja
 
-Aby skonfigurować lub monitorować profile usługi CDN:
+Aby skonfigurować lub monitorować profile usługi Content Delivery Network:
 
 1. Wybierz pozycję **Profile CDN**.
-2. Konfigurowanie nowego profilu: kliknij link **Dodaj +** i postępuj zgodnie z instrukcjami.
+2. Konfiguracja nowego profilu: Wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami.
 3. Zarządzanie istniejącymi profilami: wybierz z listy odpowiedni profil.
 
 ::: zone target="chromeless"
@@ -356,7 +358,7 @@ Aby skonfigurować lub monitorować profile usługi CDN:
 
 ::: zone-end
 
-### <a name="read-more"></a>Dowiedz się więcej
+### <a name="learn-more"></a>Dowiedz się więcej
 
 - [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
 - [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager)
