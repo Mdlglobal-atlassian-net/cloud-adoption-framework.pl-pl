@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 38ecfe706840964caa7f6e3cd5b11daa24de2973
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 052c723372830791c9baaf490e43ac373ea05760
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565245"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656564"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Ustanawianie praktyk zarządzania operacyjnego w chmurze
 
@@ -42,6 +42,6 @@ Obydwie te najlepsze rozwiązania zostały skompilowane w ramach metodologii w p
 - **Operacje na platformie:** Wszystkie środowiska IT zawierają zestaw często używanych platform. Te platformy mogą obejmować magazyny danych, takie jak SQL Server lub Azure HDInsight. Inne popularne platformy mogą obejmować rozwiązania kontenerów, takie jak Azure Kubernetes Service (AKS). Niezależnie od platformy, data_spłaty operacji platformy koncentrują się na dostosowywaniu operacji w oparciu o sposób wdrażania, konfigurowania i używania typowych platform przez obciążenia.
 - **Operacje związane z obciążeniem:** W przypadku najwyższego poziomu zapadalności operacyjnego zespoły operacji w chmurze mogą dostroić operacje dotyczące obciążeń, które są kluczowe dla sukcesu firmy. W przypadku tych obciążeń o wysokiej dostępności dostęp do danych może pomóc w automatyzowaniu korygowania, zmienianiu rozmiarów lub ochronie obciążeń na podstawie ich użycia.
 
-Dodatkowe wskazówki, takie jak [Struktura przeglądu projektu (nazwa kodu: zasady projektowania w chmurze)](https://docs.microsoft.com/azure/architecture/reliability), mogą pomóc w podejmowaniu szczegółowych decyzji architektonicznych dotyczących poszczególnych obciążeń w ramach wcześniej opisanych dyscyplin.
+Dodatkowe wskazówki, takie jak [Struktura przeglądu projektu (nazwa kodu: zasady projektowania w chmurze)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview), mogą pomóc w podejmowaniu szczegółowych decyzji architektonicznych dotyczących poszczególnych obciążeń w ramach wcześniej opisanych dyscyplin.
 
 Ta sekcja platformy wdrażania w chmurze zostanie utworzona w ramach każdego z powyższych tematów, aby ułatwić promowanie operacji w chmurze w Twojej organizacji.

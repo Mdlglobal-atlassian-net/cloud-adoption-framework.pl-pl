@@ -8,43 +8,43 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 741a73bacadccc0ee7b06542b86b9958aa236982
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547271"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656314"
 ---
 # <a name="guest-configuration-policy"></a>Zasady konfiguracji gościa
 
-Rozszerzenie [konfiguracji gościa](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) Azure Policy umożliwia inspekcję ustawień konfiguracji na maszynie wirtualnej. Konfiguracja gościa jest obecnie obsługiwana tylko na maszynach wirtualnych platformy Azure.
+Aby przeprowadzić inspekcję ustawień konfiguracji maszyny wirtualnej, można użyć rozszerzenia [konfiguracji gościa](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) Azure Policy. Konfiguracja gościa jest obecnie obsługiwana tylko na maszynach wirtualnych platformy Azure.
 
-Listę zasad konfiguracji gościa można znaleźć, wyszukując kategorię "Konfiguracja gościa" na stronie portalu Azure Policy. Możesz również znaleźć listę, uruchamiając to polecenie cmdlet w oknie programu PowerShell:
+Aby znaleźć listę zasad konfiguracji gościa, wyszukaj "Konfiguracja gościa" na stronie portalu Azure Policy. Lub Uruchom to polecenie cmdlet w oknie programu PowerShell, aby znaleźć listę:
 
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Guest Configuration"}
 ```
 
 > [!NOTE]
-> Funkcja konfiguracji gościa jest regularnie aktualizowana w celu obsługi dodatkowych zestawów zasad. Sprawdzaj, czy nowe obsługiwane zasady są okresowo i oceniaj, czy są one przydatne w Twoich potrzebach.
+> Funkcja konfiguracji gościa jest regularnie aktualizowana w celu obsługi dodatkowych zestawów zasad. Regularnie sprawdzaj dostępność nowych obsługiwanych zasad i Oceń, czy będą one przydatne.
 
 <!-- TODO: Update these links when available. 
 
-By default, we recommend enabling the following policies:
+By default, we recommend that you enable the following policies:
 
-- [Preview]: Audit to verify password security settings are set correctly inside Linux and Windows machines.
+- [Preview]: Audit to verify that password-security settings are correct on Linux and Windows machines.
 - Audit to verify that certificates are not nearing expiration on Windows VMs.
 
 -->
 
 ## <a name="deployment"></a>Wdrażanie
 
-Aby wdrożyć te zasady, można użyć następującego przykładowego skryptu programu PowerShell:
+Użyj następującego przykładowego skryptu programu PowerShell, aby wdrożyć te zasady w następujący sposób:
 
 - Sprawdź, czy ustawienia zabezpieczeń hasła na komputerach z systemem Windows i Linux są ustawione prawidłowo.
 - Sprawdź, czy certyfikaty nie zbliżają się do wygaśnięcia na maszynach wirtualnych z systemem Windows.
 
- Przed uruchomieniem tego skryptu należy zalogować się przy użyciu polecenia cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . Po uruchomieniu skryptu należy podać nazwę subskrypcji, do której chcesz zastosować zasady.
+ Przed uruchomieniem tego skryptu Użyj polecenia cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) , aby się zalogować. Po uruchomieniu skryptu należy podać nazwę subskrypcji, do której chcesz zastosować zasady.
 
 ```powershell
 

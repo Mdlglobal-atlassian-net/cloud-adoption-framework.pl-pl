@@ -1,5 +1,5 @@
 ---
-title: Najlepsze rozwiązania dotyczące zabezpieczania obciążeń zmigrowanych na platformę Azure i zarządzania nimi
+title: Najlepsze rozwiązania dotyczące zabezpieczania obciążeń migrowanych na platformę Azure i zarządzania nimi
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Po przeprowadzeniu migracji na platformę Azure należy zapoznać się z najlepszymi rozwiązaniami dotyczącymi obsługi i zabezpieczania zmigrowanych obciążeń oraz zarządzania nimi.
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ca56669818add8e54d7c4805a19879412da54567
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564774"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656706"
 ---
-# <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące zabezpieczania obciążeń zmigrowanych na platformę Azure i zarządzania nimi
+# <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące zabezpieczania obciążeń migrowanych na platformę Azure i zarządzania nimi
 
 Podczas planowania i projektowania migracji oprócz kwestii związanych z samą migracją należy wziąć pod uwagę model zabezpieczeń i zarządzania na platformie Azure, który będzie używany po przeprowadzaniu migracji. W tym artykule opisano planowanie i najlepsze rozwiązania dotyczące zabezpieczania wdrożenia na platformie Azure po migracji oraz najlepsze rozwiązania dotyczące bieżących zadań, dzięki czemu wdrożenie będzie działać na optymalnym poziomie.
 
@@ -219,7 +219,7 @@ Zapewnienie, że grupy zasobów mają znaczące nazwy, które mogą zostać łat
 
 **Dowiedz się więcej:**
 
-- [Informacje](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) o konwencji nazewnictwa.
+- [Informacje](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) o konwencji nazewnictwa.
 
 ## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Najlepsze rozwiązanie: implementowanie blokad usuwania dla grup zasobów
 
@@ -349,7 +349,7 @@ W przypadku obciążeń uruchomionych w ramach maszyn wirtualnych IaaS platformy
 - **Azure Backup:** Zapewnia kopie zapasowe spójne na poziomie aplikacji dla maszyn wirtualnych z systemami Windows i Linux.
 - **Migawki magazynu:** Tworzy migawki magazynu obiektów BLOB.
 
-#### <a name="azure-backup"></a>Azure Backup
+#### <a name="azure-backup"></a>Usługa Azure Backup
 
 Usługa Azure Backup tworzy punkty odzyskiwania danych przechowywane w magazynie platformy Azure. Usługa Azure Backup może tworzyć kopie zapasowe dysków maszyn wirtualnych platformy Azure i dane usługi Azure Files (wersja zapoznawcza). Usługa Azure Files zapewnia udziały plików w chmurze dostępne za pośrednictwem protokołu SMB.
 

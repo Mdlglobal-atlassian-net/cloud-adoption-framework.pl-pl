@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 04e78b51bcea5aea8d8db719b7d88865696d781b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566030"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656688"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Projekt nadzoru dla wielu zespołów
 
@@ -259,12 +259,12 @@ Wykonaj następujące kroki:
 6. Utwórz proces zatwierdzania dla **właścicieli obciążeń** , aby zażądać tworzenia grup zasobów. Proces zatwierdzania można zaimplementować na wiele sposobów, na przykład za pośrednictwem poczty e-mail, lub za pomocą narzędzia do zarządzania procesem, takiego jak [przepływy pracy programu SharePoint](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3). Proces zatwierdzania może wykonać następujące czynności:
     - **Właściciel obciążenia** przygotowuje zestawienie materiałów dla wymaganych zasobów platformy Azure w środowisku **programistycznym** , środowisku **produkcyjnym** lub w obu systemach i przesyła je do **właściciela subskrypcji**.
     - **Właściciel subskrypcji** przegląda zestawienie materiałów i sprawdza poprawność żądanych zasobów, aby upewnić się, że żądane zasoby są odpowiednie do ich planowanego użycia — na przykład, sprawdzając, czy żądane [rozmiary maszyn wirtualnych](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) są niepoprawne.
-    - Jeśli żądanie nie zostanie zatwierdzone, **właściciel obciążenia** zostanie powiadomiony. Jeśli żądanie zostanie zatwierdzone, **właściciel subskrypcji** [tworzy żądaną grupę zasobów](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) zgodnie z [konwencjami nazewnictwa](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)organizacji, [dodaje **właściciela obciążenia** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) z [rolą **współautor** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) i wysyła powiadomienie do **właściciela obciążenia** , który utworzył grupę zasobów.
+    - Jeśli żądanie nie zostanie zatwierdzone, **właściciel obciążenia** zostanie powiadomiony. Jeśli żądanie zostanie zatwierdzone, **właściciel subskrypcji** [tworzy żądaną grupę zasobów](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) zgodnie z [konwencjami nazewnictwa](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)organizacji, [dodaje **właściciela obciążenia** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) z [rolą **współautor** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) i wysyła powiadomienie do **właściciela obciążenia** , który utworzył grupę zasobów.
 7. Utwórz proces zatwierdzania dla właścicieli obciążeń, aby zażądać połączenia komunikacji równorzędnej sieci wirtualnej od właściciela udostępnionej infrastruktury. Tak jak w poprzednim kroku, ten proces zatwierdzania można zaimplementować za pomocą poczty e-mail lub narzędzia do zarządzania procesami.
 
 Po wdrożeniu modelu ładu można wdrożyć udostępnione usługi infrastruktury.
 
-## <a name="related-resources"></a>Powiązane zasoby
+## <a name="related-resources"></a>Zasoby powiązane
 
 [Wbudowane role dla zasobów platformy Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 

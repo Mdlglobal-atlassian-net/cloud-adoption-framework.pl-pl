@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 1cdf066617ee43de6fedfeb707311e663318f8c4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561807"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656658"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: zalecenia dotyczące zarządzania subskrypcjami
 
@@ -115,7 +115,7 @@ Pierwszy filar szkieletu jest spójnym standardem nazewnictwa. Dobrze zaprojekto
 > [!TIP]
 > W przypadku konwencji nazewnictwa:
 >
-> - Zapoznaj się ze [wskazówkami dotyczącymi wzorców i rozwiązań](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions), a następnie stosuj je w miarę możliwości. Te wskazówki ułatwiają decydowanie o zrozumiałym standardzie nazewnictwa i zawiera obszerne przykłady.
+> - Zapoznaj się ze [wskazówkami dotyczącymi wzorców i rozwiązań](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming), a następnie stosuj je w miarę możliwości. Te wskazówki ułatwiają decydowanie o zrozumiałym standardzie nazewnictwa i zawiera obszerne przykłady.
 > - Korzystanie z zasad Menedżer zasobów w celu wymuszania standardów nazewnictwa.
 >
 > Należy pamiętać, że trudno zmienić nazwy w późniejszym czasie, więc kilka minut będzie teraz zaoszczędzić problemy później.
