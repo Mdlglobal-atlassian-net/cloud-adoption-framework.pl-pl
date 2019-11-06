@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 77e3ded1f76b096655a7831bc1950bf28bd4c86b
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683814"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564538"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Ustanawianie modelu operacyjnego dla chmury
 
@@ -36,7 +36,7 @@ Ta sekcja przewodnika Cloud Adoption Framework przedstawia praktyczny model oper
 - [Zarządzanie](../manage/index.md): Dopasowanie bieżących procesów operacyjnego zarządzania technologią w celu maksymalizacji zyskiwanej wartości i minimalizacji zakłóceń.
 - [Organizowanie](../organize/index.md): Organizacja różnych zespołów i funkcji wspierających model operacyjny będzie rozwijać się wraz z tym modelem.
 
-## <a name="aligning-operating-models"></a>Dopasowanie modeli operacyjnych
+## <a name="align-operating-models"></a>Dopasowanie modeli operacyjnych
 
 Chmura i gospodarka cyfrowa zwróciły uwagę na potrzebę stosowania większej liczby modeli operacyjnych. Czasem ta potrzeba wynika z konieczności obsługi wielu chmur publicznych. Jeszcze częściej wiąże się z przejściem ze środowiska lokalnego do chmury. W obu scenariuszach ważne jest dopasowanie tych modeli operacyjnych w sposób zapewniający maksymalną wydajność przy minimalnej nadmiarowości.
 

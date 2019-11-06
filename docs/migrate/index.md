@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: c112c1d340de944502ac16159977ffa12b5b095d
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: a6e7cb52fdac7607765b32c5355c0f2df066538a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378259"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566859"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migracja do chmury w podręczniku Cloud Adoption Framework
 
@@ -130,7 +130,7 @@ Zasadniczo migracja do chmury składa się z czterech prostych faz: ocena, migra
 
 ![Model migracji opisany w przewodniku Cloud Adoption Framework](../_images/operational-transformation-migrate.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>Tworzenie zrównoważonego portfolio chmury
+## <a name="create-a-balanced-cloud-portfolio"></a>Tworzenie zrównoważonego portfolio chmury
 
 Każde zrównoważone portfolio technologiczne zawiera zróżnicowane zasoby w różnych stanach. Planowane jest wycofanie niektórych aplikacji i są one objęte minimalnym wsparciem. Inne aplikacje lub zasoby są obsługiwane w stanie konserwacji, ale funkcje tych rozwiązań są stabilne. W przypadku nowszych procesów biznesowych zmieniające się warunki rynkowe stymulują ciągłe ulepszenia lub modernizacje funkcji. Gdy powstają możliwości zapewnienia nowych źródeł przychodów, nowe aplikacje lub zasoby są wprowadzane do środowiska. Na każdym etapie cyklu życia zasobów wpływ inwestycji na przychody i zyski będzie ulegać zmianie. Wraz z kolejnymi etapami cyklu życia maleje prawdopodobieństwo, że nowa funkcja lub modernizacja umożliwi uzyskanie znaczne zwrotu z inwestycji.
 

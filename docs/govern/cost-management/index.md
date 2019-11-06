@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b95d3ccf3a7248c38da9936a55fc169adcf2f2a2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221169"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566426"
 ---
 # <a name="cost-management-discipline-overview"></a>Omówienie dziedziny Zarządzanie kosztami
 
@@ -33,7 +33,7 @@ Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wym
 > [!CAUTION]
 > Przykładowe zasady pochodzą z typowych doświadczeń klientów. W celu lepszego dostosowania tych zasad do określonych potrzeb w zakresie utrzymania ładu w chmurze wykonaj poniższe kroki, aby utworzyć instrukcje zasad spełniające unikatowe potrzeby firmy.
 
-## <a name="developing-cost-management-governance-policy-statements"></a>Tworzenie instrukcji zasad utrzymania ładu dla dziedziny Zarządzanie kosztami
+## <a name="develop-governance-policy-statements"></a>Opracowywanie instrukcji zasad utrzymania ładu
 
 Sześć poniższych kroków ułatwi zdefiniowanie zasad utrzymania ładu umożliwiających kontrolowanie kosztów w środowisku.
 

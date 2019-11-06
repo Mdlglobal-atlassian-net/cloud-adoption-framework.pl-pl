@@ -10,14 +10,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: b1fc986983b709491d0b06f4624c60deed7e9219
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d2ed2222aa536ec377987674837b237d1050cdeb
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71026378"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564293"
 ---
-# <a name="managing-organizational-alignment"></a>Zarządzanie dopasowaniem organizacji
+# <a name="manage-organizational-alignment"></a>Zarządzanie dopasowaniem organizacji
 
 Wdrożenie chmury nie jest możliwe bez dobrze zorganizowanych ludzi. Pomyślne wdrożenie chmury jest wynikiem pracy odpowiednio wykwalifikowanych osób wykonujących właściwe typy zadań dopasowanych do przejrzyście zdefiniowanych celów biznesowych w dobrze zarządzanym środowisku. Dostarczenie efektywnego modelu operacyjnego chmury wymaga określenia struktur organizacyjnych obsadzonych odpowiednim personelem. W tym dokumencie omówiono metodę ustanawiania i utrzymywania odpowiednich struktur organizacyjnych w czterech krokach.
 
@@ -130,7 +130,7 @@ Poniżej znajduje się lista funkcji chmury, które są wymagane do pomyślnego 
 - [Platforma w chmurze](./cloud-platform.md): Obsługa i rozwijanie platformy.
 - [Automatyzacja chmury](./cloud-automation.md): Przyspieszanie wdrażania i innowacji.
 
-## <a name="maturing-organizational-structures"></a>Rozwijanie struktur organizacyjnych
+## <a name="mature-organizational-structures"></a>Rozwijanie struktur organizacyjnych
 
 Do pewnego stopnia każda z powyższych możliwości jest dostarczana w każdym wdrożeniu chmury, jawnie lub zgodnie ze zdefiniowaną strukturą zespołu.
 Wraz z rozwojem potrzeb wdrożenia zwiększa się konieczność zachowania równowagi i struktury. Aby spełnić te wymagania, firmy często przechodzą proces rozwijania struktur organizacyjnych.
@@ -139,7 +139,7 @@ Wraz z rozwojem potrzeb wdrożenia zwiększa się konieczność zachowania równ
 
 Artykuł na temat [określania dojrzałości struktur organizacyjnych](./organization-structures.md) zawiera dodatkowe szczegóły dotyczące każdego poziomu dojrzałości.
 
-## <a name="aligning-raci-charts"></a>Dopasowywanie schematów odpowiedzialności
+## <a name="align-raci-charts"></a>Wyrównywanie wykresów odpowiedzialności
 
 Na każdym poziomie dojrzałości odpowiedzialność za różne możliwości chmury przechodzi na nowe zespoły. Ta zmiana odpowiedzialności umożliwia szybsze cykle migracji i innowacji przez usuwanie i automatyzowanie barier na drodze do zmiany. Aby prawidłowo dopasować przypisania, zapoznaj się z artykułem na temat [dopasowywania odpowiedzialności](./raci-alignment.md), który udostępnia schemat odpowiedzialności dla każdej z wymienionych struktur organizacyjnych.
 

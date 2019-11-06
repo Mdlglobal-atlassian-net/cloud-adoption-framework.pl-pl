@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: f96ada5b1c43694d0ea1af10524f3c344db62356
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9de6f01a4252383c1d7619078568964fe8e685c9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222711"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566364"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Omówienie dziedziny Przyspieszanie wdrażania
 
@@ -35,7 +35,7 @@ Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wym
 > [!CAUTION]
 > Przykładowe zasady pochodzą z typowych doświadczeń klientów. W celu lepszego dostosowania tych zasad do określonych potrzeb w zakresie utrzymania ładu w chmurze wykonaj poniższe kroki, aby utworzyć instrukcje zasad spełniające unikatowe potrzeby firmy.
 
-## <a name="developing-deployment-acceleration-governance-policy-statements"></a>Tworzenie instrukcji zasad utrzymania ładu dla dziedziny Przyspieszanie wdrażania
+## <a name="develop-governance-policy-statements"></a>Opracowywanie instrukcji zasad utrzymania ładu
 
 Sześć poniższych kroków pomoże określić zasady utrzymania ładu umożliwiające kontrolę wdrażania i konfigurowania zasobów w środowisku chmury.
 

@@ -221,7 +221,7 @@
               href: migrate/expanded-scope/balance-the-portfolio.md
             - name: Gotowość w zakresie umiejętności
               href: migrate/expanded-scope/suggested-skills.md
-            - name: Migracja hostów VMWare
+            - name: Migracja hostów VMware
               href: migrate/expanded-scope/vmware-host.md
             - name: Migracja programu SQL Server
               href: migrate/expanded-scope/sql-migration.md
@@ -279,7 +279,7 @@
                           href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
                     - name: Skalowanie migracji
                       href: migrate/azure-best-practices/contoso-migration-scale.md
-            - name: Migrowanie hostów VMWare
+            - name: Migrowanie hostów VMware
               items:
                 - name: Omówienie
                   href: migrate/azure-best-practices/vmware-host.md
@@ -475,13 +475,13 @@
               items:
                 - name: Omówienie
                   href: migrate/migration-considerations/prerequisites/index.md
-                - name: 'Decyzje, które mają wpływ na działania migracji'
+                - name: 'Decyzje, które mają wpływ na migrację'
                   href: migrate/migration-considerations/prerequisites/decisions.md
                 - name: Lista kontrolna dotycząca planowania środowiska
                   href: migrate/migration-considerations/prerequisites/planning-checklist.md
                 - name: Dopasowywanie ról i obowiązków
                   href: migrate/migration-considerations/prerequisites/cultural-complexity.md
-                - name: Tworzenie struktury listy prac w celu zarządzania zmianą
+                - name: Zarządzanie zmianami zwinnymi (agile)
                   href: migrate/migration-considerations/prerequisites/technical-complexity.md
                 - name: Przegląd listy prac związanych z migracją
                   href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
@@ -491,31 +491,31 @@
                   href: migrate/migration-considerations/assess/index.md
                 - name: Zachowywanie odpowiedniej proporcji priorytetów
                   href: migrate/migration-considerations/assess/business-priorities.md
-                - name: Ocena gotowości obciążeń i zasobów
+                - name: Ocena gotowości obciążeń
                   href: migrate/migration-considerations/assess/evaluate.md
                 - name: Tworzenie architektury obciążeń
                   href: migrate/migration-considerations/assess/architect.md
                 - name: Szacowanie kosztów chmury
                   href: migrate/migration-considerations/assess/estimate.md
-                - name: Angażowanie partnerów migracji i pomocy technicznej
+                - name: Informacje o opcjach partnerstwa
                   href: migrate/migration-considerations/assess/partnership-options.md
-                - name: Zarządzanie procesami przyrostowymi
+                - name: Zarządzanie zmianą
                   href: migrate/migration-considerations/assess/release-iteration-backlog.md
-                - name: Zmienianie procesów zatwierdzania
+                - name: Zatwierdzanie zmian architektury
                   href: migrate/migration-considerations/assess/approve.md
             - name: Migrowanie pojedynczych zasobów
               items:
                 - name: Omówienie
                   href: migrate/migration-considerations/migrate/index.md
-                - name: 'Modele podwyższania poziomu — pojedynczego kroku, przejściowe, pakiet testowy'
+                - name: Modele podwyższenia poziomu
                   href: migrate/migration-considerations/migrate/promotion-models.md
-                - name: Zadania korygowania
+                - name: Korygowanie zasobów
                   href: migrate/migration-considerations/migrate/remediate.md
-                - name: Replikowanie zasobów do chmury
+                - name: Replikowanie zasobów
                   href: migrate/migration-considerations/migrate/replicate.md
                 - name: Opcje replikacji
                   href: migrate/migration-considerations/migrate/replicate-options.md
-                - name: Przygotowywanie obciążeń na potrzeby testowania i podwyższania poziomu
+                - name: Przygotowywanie obciążeń
                   href: migrate/migration-considerations/migrate/stage.md
             - name: Optymalizowanie i podwyższanie poziomu obciążeń
               items:
@@ -525,15 +525,15 @@
                   href: migrate/migration-considerations/optimize/business-change-plan.md
                 - name: Testowanie biznesowe
                   href: migrate/migration-considerations/optimize/business-test.md
-                - name: Testowanie porównawcze i optymalizacja zasobów
+                - name: Testy porównawcze i zmiana rozmiaru zasobów
                   href: migrate/migration-considerations/optimize/optimize.md
-                - name: Gotowość do użytku produkcyjnego
+                - name: Przygotowanie do podwyższenia poziomu
                   href: migrate/migration-considerations/optimize/ready.md
-                - name: Podwyższanie poziomu obciążenia do środowiska produkcyjnego
+                - name: Podwyższanie poziomu do środowiska promocyjnego
                   href: migrate/migration-considerations/optimize/promote.md
                 - name: Likwidowanie wycofanych zasobów
                   href: migrate/migration-considerations/optimize/decommission.md
-                - name: Retrospektywa
+                - name: Przeprowadzanie retrospektyw
                   href: migrate/migration-considerations/optimize/retrospective.md
             - name: Zabezpieczenia obciążeń w środowisku produkcyjnym i zarządzanie nimi
               items:
