@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 2309b56bec38383f9fe80e78e66e01a090701c3c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6a9d82e0211b36a2d34b54deca50227a62d7298e
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023810"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753126"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Podejścia do planowania majątku cyfrowego
 
@@ -24,7 +24,7 @@ Planowanie elementów cyfrowych może potrwać kilka form, w zależności od pot
 
 Podejście do oceny w górnej części ocenia aspekty zabezpieczeń. Zabezpieczenia obejmują kategoryzację danych (wysoki, średni lub niski wpływ na działalność), wymagania dotyczące zgodności, suwerenności i bezpieczeństwa. Takie podejście ocenia złożoność architektury wysokiego poziomu. Oceniane są takie aspekty, jak uwierzytelnianie, struktura danych, wymagania dotyczące opóźnień, zależności i stron życia aplikacji.
 
-Podejście do góry mierzy także wymagania operacyjne aplikacji, takie jak poziomy usług, integracja, okna obsługi, monitorowanie i wgląd w szczegółowe dane. Gdy wszystkie te aspekty zostały przeanalizowane i wzięte pod uwagę, wynikowy wynik, który odzwierciedla relatywne problemy związane z migracją tej aplikacji do poszczególnych platform w chmurze: IaaS, PaaS i SaaS.
+Podejście do góry mierzy także wymagania operacyjne aplikacji, takie jak poziomy usług, integracja, okna obsługi, monitorowanie i wgląd w szczegółowe dane. Gdy wszystkie te aspekty zostały przeanalizowane i wzięte pod uwagę, wynikowy wynik związany z migracją tej aplikacji do poszczególnych platform w chmurze: IaaS, PaaS i SaaS.
 
 Ponadto Ocena z góry ocenia korzyści finansowe aplikacji, takie jak efektywność operacyjna, całkowity koszt posiadania, zwrot z inwestycji i inne odpowiednie metryki finansowe. Ocena sprawdza także sezonowości aplikacji (na przykład czy istnieją czasy, w których są tworzone żądania?) i ogólne obciążenie obliczeniowe.
 

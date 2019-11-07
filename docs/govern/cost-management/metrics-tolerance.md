@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 575eace59b33163c1f0020b005bda2ceeb14dc9b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: dc026ec6fc1a82db3c5c025becd31cd5cf2e7d8d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220965"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752695"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management metryki, wskaźniki i tolerancję ryzyka
 
@@ -41,12 +41,12 @@ We wczesnych etapach wdrażania chmury będziesz współpracować z firmą, aby 
 
 Po zidentyfikowaniu [ryzyka biznesowego](./business-risks.md), będziesz współpracować z firmą, aby identyfikować testy porównawcze, których można użyć do identyfikacji wyzwalaczy, które mogłyby zwiększyć ryzyko. Poniżej przedstawiono kilka przykładów tego, jak te metryki, takie jak wymienione powyżej, można porównać z tolerancją linii bazowej ryzyka, aby wskazać potrzebę prowadzenia dalszych inwestycji w Cost Management.
 
-- **Oparte na zobowiązaniach (najbardziej typowe):** Firma, która jest zobowiązana do wydatków $X, 000000 ten rok na dostawcę chmury. Potrzebują oni Cost Management dyscypliny, aby zapewnić, że firma nie przekroczy swoich celów wydatków o więcej niż 20% i że będą korzystać z co najmniej 90% tego zobowiązania.
-- **Wyzwalacz wartości procentowej:** Firma z wydatkami na chmurę, która jest stabilna dla systemów produkcyjnych. Jeśli ta zmiana jest większa o ponad _x%_ , to dyscyplina Cost Management będzie uważana za inwestycje.
-- **Wyzwalacz nadmiernej aprowizacji:** Firma, która uważa wdrożone rozwiązania, jest nadmiernie inicjowana. Cost Management jest inwestycją priorytetową, dopóki nie będą mogli udowodnić właściwego wyrównania aprowizacji i wykorzystania zasobów.
-- **Wyzwalacz wydatków miesięcznych:** Firma, która spędza ponad $x 000 miesięcznie, jest uznawana za zmienny koszt. Jeśli wydatki przekroczą tę kwotę w danym miesiącu, będą musieli inwestować w Cost Management.
-- **Wyzwalacz wydatków rocznych:** Firma z budżetem IT R & D, która umożliwia wyliczanie $X, 000 rocznie na eksperymentowanie w chmurze. Mogą oni uruchamiać obciążenia produkcyjne w chmurze, ale nadal będą uznawane za eksperymentalne rozwiązania, Jeśli budżet nie przekroczy tej kwoty. Po przekroczeniu tej opcji będzie konieczne traktowanie budżetu, takiego jak inwestycja w produkcję i ścisłe Zarządzanie wydatkami.
-- **Koszty operacyjne — niekorzystne (nietypowe):** Jako firma averse się z kosztami operacyjnymi i przed wdrożeniem obciążeń deweloperskich/testowych będzie wymagało Cost Managementych kontroli.
+- **Oparte na zobowiązaniach (najbardziej typowe):** Firma, która jest zobowiązana do wydatków _$x, 000000_ ten rok na dostawcę chmury. Potrzebują oni Cost Management dyscypliny, aby zapewnić, że firma nie przekroczy swoich celów wydatków o więcej niż 20% i że będą korzystać z co najmniej 90% zobowiązania.
+- **Wyzwalacz wartości procentowej:** Firma z wydatkami na chmurę, która jest stabilna dla systemów produkcyjnych. Jeśli to zmieni się o ponad _x%_ , to w przypadku Cost Management dyscypliny jest to bardzo wiele inwestycji.
+- **Wyzwalacz** nadmiernej aprowizacji: Firma, która uważa wdrożone rozwiązania, jest nadmiernie inicjowana. Cost Management jest inwestycją priorytetową do momentu zaprezentowania właściwego wyrównania aprowizacji i użycia zasobów.
+- **Wyzwalacz wydatków miesięcznych:** Firma, która spędza ponad _$x 000 miesięcznie,_ jest uznawana za zmienny koszt. Jeśli wydatki przekroczą tę kwotę w danym miesiącu, będą musieli inwestować w Cost Management.
+- **Wyzwalacz wydatków rocznych:** Firma z budżetem IT R & D, która umożliwia wyliczanie _$x, 000_ rocznie na eksperymentowanie w chmurze. Mogą oni uruchamiać obciążenia produkcyjne w chmurze, ale nadal są uznawane za eksperymentalne rozwiązania, Jeśli budżet nie przekroczy tej kwoty. W przypadku przekroczenia budżetu konieczne będzie traktowanie budżetu, takiego jak inwestycja w produkcję, i ścisłe Zarządzanie wydatkami.
+- **Koszty operacyjne — niekorzystne (nietypowe):** Jako firma są averse do kosztów operacyjnych i będą musieli kontrolować koszty zarządzania przed wdrożeniem obciążeń deweloperskich/testowych.
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8daab86846ef0c3dbc93a5382f76080f678c1a08
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565006"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752763"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Zastosuj zasady projektowania i zaawansowane operacje
 
@@ -54,7 +54,7 @@ Decyzje między specjalizacją platformy a specjalizacją obciążeń opierają 
 
 Specjalizacja obciążeń często wyzwala zmianę kulturową. Tradycyjnie i centralne tworzenie procesów kompilacji, które mogą zapewnić pomoc techniczną w skali. Obsługa skalowania jest bardziej osiągalna dla powtarzających się usług, które znajdują się w linii bazowej zarządzania, rozszerzonej linii bazowej lub nawet operacji na platformie. Specjalizacja obciążeń nie jest często skalowana. Brak skalowania utrudnia scentralizowanej organizacji IT zapewnienie niezbędnej pomocy technicznej bez osiągania ograniczeń skali organizacyjnej.
 
-Alternatywnie rozwiązanie Cloud Center of doskonałości jest skalowane przez nigdy wykonywane celowo delegowanie odpowiedzialności i selektywnej centralizacji. Specjalizacja obciążeń jest lepiej wyrównana z delegowanym podejściem do CCoE.
+Alternatywnie Centrum rozwiązań doskonałości przeskaluje się w drodze nigdy wykonywane celowo delegowania odpowiedzialności i selektywnej centralizacji. Specjalizacja obciążeń jest lepiej wyrównana z delegowanym podejściem do CCoE.
 
 Naturalne wyrównanie ról w CCoE jest opisane w następujący sposób:
 

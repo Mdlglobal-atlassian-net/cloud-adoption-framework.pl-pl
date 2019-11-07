@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f5461ea659ae2363e98ddf45d8623e21f1ce0d90
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565189"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752875"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Zobowiązania biznesowe w zarządzaniu chmurą
 
@@ -66,7 +66,7 @@ Organizacje mogą również zdecydować się na [przetworzyć niektóre z ich bi
 
 - **Model mieszany:** Klasyfikacja jest najprawdopodobniej z _mieszanym modelem_ obowiązków związanych z zarządzaniem. Firmy, które znajdują się w pośrodku transformacji z lokalizacji lokalnej do chmury, mogą wymagać od siebie pierwszego modelu operacyjnego. Firmy mające ścisłe wymagania w zakresie zgodności lub które zależą od długoterminowych kontraktów z dostawcami z dostawcą usług IT, mogą wymagać scentralizowanego modelu operacyjnego.
 
-  Niezależnie od ich ograniczeń, dzisiejsze firmy muszą wprowadzać innowacje. W przypadku szybkiej innowacji, w pośrodku modelu z centralnym i scentralizowanym zakresem odpowiedzialności, podejście mieszane może zapewnić równowagę. W tym podejściu centralnie udostępnia scentralizowany model operacyjny dla wszystkich obciążeń, które są krytyczne lub zawierają informacje poufne. W tym samym czasie wszystkie inne klasyfikacje obciążeń mogą zostać umieszczone w środowisku chmury, które jest przeznaczone do delegowanych obowiązków. Podejście do scentralizowanej odpowiedzialności służy jako ogólny model operacyjny. Dzięki tej firmie można elastycznie zastosować wyspecjalizowany model operacyjny na podstawie wymaganego poziomu pomocy technicznej i czułości.
+  Niezależnie od ich ograniczeń, dzisiejsze firmy muszą wprowadzać innowacje. W przypadku szybkiej innowacji, w pośrodku modelu z centralnym i scentralizowanym zakresem odpowiedzialności, podejście mieszane może zapewnić równowagę. W tym podejściu centralnie udostępnia scentralizowany model operacyjny dla wszystkich obciążeń, które są krytyczne dla działalności firmy lub zawierają informacje poufne. W tym samym czasie wszystkie inne klasyfikacje obciążeń mogą zostać umieszczone w środowisku chmury, które jest przeznaczone do delegowanych obowiązków. Podejście do scentralizowanej odpowiedzialności służy jako ogólny model operacyjny. Dzięki tej firmie można elastycznie zastosować wyspecjalizowany model operacyjny na podstawie wymaganego poziomu pomocy technicznej i czułości.
 
 Pierwszym krokiem jest zatwierdzenie do podejścia do odpowiedzialności, które następnie kształtuje następujące zobowiązania.
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c57152b92826539a236227636ee115c19bd70e7a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8085a87f114011ce9a1089c0427ff9c592b33d15
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565748"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752023"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Kompiluj konsensus na wartość biznesową innowacji
 
@@ -66,7 +66,7 @@ Bardzo często odpowiedzi na pytania i dwa są niewyrównane. Podczas wczesnych 
 - **Okazja do hipotezy:** Często różne osoby zainteresowane i zespoły programistyczne mogą korzystać z zbyt wielu oczekiwań dla rozwiązania. Nierealistyczne oczekiwania mogą być znakiem, że hipoteza jest zbyt niejasne. Postępuj zgodnie ze wskazówkami dotyczącymi [kompilowania za pomocą empatię klienta](./considerations/build.md) , aby utworzyć wyraźniejszy hipotezę.
 - **Możliwość kompilacji:** Zespoły mogą być nieprawidłowo wyrównane, ponieważ nie zgadzają się na sposób rozwiązania potrzeb klientów. Takie porozumienie zazwyczaj wskazuje, że zespół jest [opóźniony przez przedwcześnie](./considerations/build.md#reduce-complexity-and-delay-technical-spikes)przekroczenia techniczne. Aby zapewnić, że zespół koncentruje się na kliencie, Zacznij od pierwszej iteracji i Kompiluj mały minimalny produkt żywotny (MVP), aby zająć się częścią hipotezy. Aby uzyskać dodatkowe wskazówki ułatwiające zespołowi przechodzenie do przodu, zobacz [programowanie cyfr cyfrowych](./considerations/invention.md).
 - **Szansa szkoleniowa:** Każdy zespół może być nieprawidłowo wyrównany, ponieważ potrzebują szczegółowych wymagań technicznych i szczegółowych wymagań funkcjonalnych. Ta potrzeba może prowadzić do szkolenia w metodologiach Agile. Gdy Kultura zespołu nie jest gotowa do procesów Agile, można znaleźć innowacje i zachować tempo na rynku jako wyzwania.  Aby poznać zasoby szkoleniowe dotyczące DevOps i metod agile, zobacz:
-  - [Wzbogacaj swoją praktykę w korzystaniu z metodyki DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
+  - [Rozwijanie praktyk DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
   - [Tworzenie aplikacji za pomocą usługi Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
   - [Wdrażanie aplikacji za pomocą usługi Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)
 
@@ -75,5 +75,6 @@ Postępując zgodnie z metodologią i narzędziami do zarządzania zaległościa
 ## <a name="next-steps"></a>Następne kroki
 
 Po dopasowaniu propozycji wartości biznesowej i zapoznaniu się z nią można rozpocząć tworzenie rozwiązania.
+
 > [!div class="nextstepaction"]
 > [Wróć do ćwiczenia innowacje w celu wykonania następnych kroków](./index.md)

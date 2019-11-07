@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0b717222c7e5f1906330eb5b181d675f1247bb37
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 46e21c08bac9501dd9b99fceb4ef3040cc9f0a83
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565861"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752032"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Zbierz dane za pomocą migracji i modernizacji istniejących źródeł danych
 
@@ -33,7 +33,7 @@ Aby zapewnić obsługę migracji Oracle i NoSQL, można również użyć [Databa
 
 ## <a name="considerations-and-guidance"></a>Zagadnienia i wskazówki
 
-W przypadku używania Database Migration Service do migracji i modernizacji danych należy zrozumieć:
+W przypadku używania Azure Database Migration Service do migracji i modernizacji danych należy zrozumieć:
 
 - Bieżąca platforma do hostowania źródła danych.
 - Bieżąca wersja.
@@ -47,12 +47,12 @@ W przypadku migracji offline przestój aplikacji rozpoczyna po rozpoczęciu migr
 
 Zalecamy, aby określić akceptowalny przestój biznesowy i przetestować migrację w trybie offline. Należy to sprawdzić, czy czas przywracania spełnia akceptowalne przestoje. Jeśli czas przywracania jest nieakceptowalny, wykonaj migrację online.
 
-|Element źródłowy  |Cel  |Narzędzie  |Typ migracji  |Wskazówka  |
+|Źródło  |Cel  |Narzędzie  |Typ migracji  |Wskazówka  |
 |---------|---------|---------|---------|---------|
-|SQL Server|Azure SQL Database|Usługa migracji bazy danych|Stanie|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|SQL Server|Azure SQL Database|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Usługa migracji bazy danych|Stanie|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
+|Oprogramowanie SQL Server|Azure SQL Database|Usługa migracji bazy danych|Stanie|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|Oprogramowanie SQL Server|Azure SQL Database|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
+|Oprogramowanie SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Usługa migracji bazy danych|Stanie|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|Oprogramowanie SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
 |SQL Server RDS|Azure SQL Database lub Azure SQL Database wystąpienia zarządzanego|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
 |MySQL|Azure Database for MySQL|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)|
 |PostgreSQL|Azure Database for PostgreSQL|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|

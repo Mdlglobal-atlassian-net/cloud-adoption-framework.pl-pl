@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0920e834bcec0fc5885650ba5cab7ec28eac669f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564919"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752783"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Przewodnik monitorowania chmury: Wprowadzenie
 
-Chmura wprowadza zasadniczą zmianę sposobu, w jaki przedsiębiorstwa pozyskują i wykorzystują zasoby technologii. W przeszłości przedsiębiorstwa były właścicielami wszystkich poziomów technologii — od infrastruktury po oprogramowanie — i brały za nie odpowiedzialność. Obecnie chmura oferuje przedsiębiorstwom możliwość aprowizowania i używania zasobów w zależności od potrzeb.
+Chmura całkowicie zmienia sposoby, w jakie firmy pozyskują zasoby technologiczne i korzystają z nich. W przeszłości przedsiębiorstwa były właścicielami wszystkich poziomów technologii — od infrastruktury po oprogramowanie — i brały za nie odpowiedzialność. Obecnie chmura oferuje przedsiębiorstwom możliwość aprowizowania i używania zasobów w zależności od potrzeb.
 
 Mimo że chmura zapewnia niemal nieograniczoną elastyczność w zakresie stosowanych rozwiązań, przedsiębiorstwa szukają sprawdzonej i spójnej metodologii wdrażania technologii chmurowych. Każde przedsiębiorstwo ma inne cele i harmonogramy wdrożeń chmury, co powoduje, że opracowanie podejścia do wdrażania, które będzie odpowiednie dla wszystkich, jest prawie niemożliwe.
 

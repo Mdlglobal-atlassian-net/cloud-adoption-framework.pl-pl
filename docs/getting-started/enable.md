@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f2892dbfab86da07db2441aea7757846903ff7e9
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656587"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753290"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Włącz powodzenie w trakcie podróży w chmurze
 
@@ -32,7 +32,7 @@ W tej architekturze włączenie jest podstawową kompozycją. Poniższa lista ko
 
 ## <a name="additional-tools"></a>Dodatkowe narzędzia
 
-Oprócz struktury wdrażania w chmurze firma Microsoft omawia dodatkowe tematy, które mogą zapewnić sukces. W tym artykule przedstawiono kilka typowych narzędzi, które mogą znacząco poprawić sukcesy poza zakresem platformy wdrażania chmury. Ustanowienie zarządzania chmurą, odpornych architektur, umiejętności technicznych i podejścia DevOps są istotne dla sukcesu ewentualnych wysiłków związanych z wdrażaniem w chmurze. Czytelnik jest Doradzaną zakładką tej strony jako zasób do ponownego odwiedzania w ramach każdej podróży wdrożenia w chmurze.
+Oprócz struktury wdrażania w chmurze firma Microsoft omawia dodatkowe tematy, które mogą zapewnić sukces. W tym artykule przedstawiono kilka typowych narzędzi, które mogą znacząco poprawić sukcesy poza zakresem platformy wdrażania chmury. Ustanowienie zarządzania chmurą, odpornych architektur, umiejętności technicznych i podejścia DevOps są istotne dla sukcesu ewentualnych wysiłków związanych z wdrażaniem w chmurze. Oznacz Tę stronę jako zasób do ponownego odwiedzania w ramach każdej podróży wdrożenia w chmurze.
 
 <!-- markdownlint-disable MD033 -->
 

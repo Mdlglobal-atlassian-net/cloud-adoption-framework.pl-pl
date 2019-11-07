@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a307c29a640332fdf82a69ec06eab27589f77304
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9a879f2957f1fd7c1d92a9a01381c64cff320d27
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566349"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752675"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Przykładowe instrukcje dotyczące zasad przyspieszania wdrażania
 
@@ -32,7 +32,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Wszystkie zasoby wdrożone w chmurze powinny być wdrażane za pomocą szablonów lub skryptów automatyzacji wszędzie tam, gdzie to możliwe.
 
-**Potencjalne opcje projektowania:** [Szablony Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) udostępniają podejście do tworzenia infrastruktury jako kodu do wdrażania zasobów na platformie Azure. Można również użyć [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) jako spójnego lokalnego i opartego na chmurze narzędzia do wdrażania.
+**Potencjalne opcje projektowania:** [Szablony Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) udostępniają infrastrukturę jako podejście kodu do wdrażania zasobów na platformie Azure. Można również użyć [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) jako spójnego lokalnego i opartego na chmurze narzędzia do wdrażania.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Brak wglądu w problemy systemowe
 
@@ -43,7 +43,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 - Kluczowe metryki i środki diagnostyki zostaną zidentyfikowane dla wszystkich systemów i składników produkcyjnych, a narzędzia do monitorowania i diagnostyki zostaną zastosowane do tych systemów i monitorowane regularnie przez pracowników operacyjnych.
 - Operacje będą brane pod uwagę przy użyciu narzędzi do monitorowania i diagnostyki w środowiskach nieprodukcyjnych, takich jak przygotowanie i kontrola jakości, aby identyfikować problemy systemowe przed ich wystąpieniem w środowisku produkcyjnym.
 
-**Potencjalne opcje projektowania:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor), które również obejmują log Analytics i Application Insights, udostępnia narzędzia do zbierania i analizowania danych telemetrycznych, które pomagają zrozumieć, jak aplikacje są wykonywane i aktywnie Zidentyfikuj problemy wpływające na te i zasoby, od których są one zależne. Ponadto [Dziennik aktywności platformy Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) raportuje wszystkie zmiany wprowadzane na poziomie platformy i powinny być monitorowane/poddane inspekcji pod kątem niezgodnych zmian.
+**Potencjalne opcje projektowania:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor), w tym log Analytics i Application Insights, udostępnia narzędzia do zbierania i analizowania danych telemetrycznych, które pomagają zrozumieć, jak aplikacje są wykonywane i aktywnie identyfikują problemy wpływające na te i zasoby, od których są one zależne. Ponadto [Dziennik aktywności platformy Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) raportuje wszystkie zmiany wprowadzane na poziomie platformy i powinny być monitorowane i poddane inspekcji pod kątem niezgodnych zmian.
 
 ## <a name="configuration-security-reviews"></a>Przeglądy zabezpieczeń konfiguracji
 

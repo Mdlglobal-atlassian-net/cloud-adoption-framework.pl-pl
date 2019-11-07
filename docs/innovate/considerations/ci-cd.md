@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4c09cb67872cec6fca8ab395f7ab88e2e0f2064
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565694"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752109"
 ---
 # <a name="empower-adoption"></a>Zwiększanie akceptacji
 
@@ -21,7 +21,7 @@ Ostatecznym testem innowacji jest reagowanie klientów na Twoje wynalazki. Czy h
 
 ## <a name="reduce-friction-that-affects-adoption"></a>Zmniejsz liczbę problemów, które mają wpływ na wdrażanie
 
-Istnieje kilka najważniejszych punktów tarcia do wdrożenia, które można zminimalizować za pomocą kombinacji technologii i procesów. W przypadku czytelników mających wiedzę o ciągłej integracji (CI) i procesach ciągłego wdrażania (CD) lub DevOps są one bardzo znane. W tym artykule zawarto informacje o ustanowieniu punktu wyjścia dla zespołów wdrażania w chmurze, które będą omawiać innowacje i subskrypcje. Dłużej, ten punkt początkowy może wzmocnić bardziej niezawodną ciągłość/CD lub DevOps podejścia jako produkty i zespoły.
+Istnieje kilka najważniejszych punktów tarcia do wdrożenia, które można zminimalizować za pomocą kombinacji technologii i procesów. W przypadku czytelników mających wiedzę o ciągłej integracji (CI) i procesach ciągłego wdrażania (CD) lub DevOps są znane następujące informacje: Ten artykuł ustanawia punkt wyjścia dla zespołów do wdrażania w chmurze, które reagują na innowacyjność i pętle. W przyszłości ten punkt początkowy może wzmocnić bardziej niezawodną ciągłość/CD lub DevOps podejścia jako produkty i zespoły.
 
 Zgodnie z opisem w temacie [mierzenie wpływu klientów](./measure.md), pozytywna weryfikacja każdej hipotezy wymaga iteracji i określenia. Wystąpił znacznie więcej błędów niż w przypadku usługi WINS w dowolnym cyklu innowacji. Jest to oczekiwane. Jeśli jednak klient potrzebuje, hipotezy i rozwiązania wyrównania w odpowiedniej skali, świat zmieni się szybko. Ten artykuł ma na celu minimalizowanie wzejść [technicznych](./build.md#reduce-complexity-and-delay-technical-spikes) , które spowalniają innowacje, ale nadal dbają o zachowanie kilku stałych najlepszych rozwiązań. Dzięki temu projekt zespołowy będzie pomocny w przyszłości, a na potrzeby dostarczania bieżących klientów.
 
@@ -56,7 +56,7 @@ Każdy punkt opinii to potencjalne rozwiązanie wymagane przez klienta. Co więc
 
 [Usługa Azure DevOps](https://docs.microsoft.com/azure/devops) obejmuje sposoby [żądania, dostarczania i zarządzania opiniami](https://docs.microsoft.com/azure/devops/project/feedback). Każdy z tych narzędzi służy do scentralizowania informacji zwrotnych, dzięki czemu zespół może podjąć odpowiednie działania i zapewnić dalsze działanie w ramach usługi w postaci przezroczystej pętli opinii.
 
-## <a name="continuous-integration"></a>Ciągła integracja
+## <a name="continuous-integration"></a>Integracja ciągła
 
 W miarę jak wydłużać skala i hipotezy są coraz bliżej prawdziwe innowacje na dużą skalę, liczba mniejszych hipotez, które mają zostać przetestowane, będzie szybko rosnąć. Aby uzyskać dokładne pętle opinii i płynne procesy przyjmowania, ważne jest, aby każda z tych hipotez była zintegrowana i obsługiwała hipotezę podstawową, która zauważa za innowacje. Oznacza to, że konieczne jest również szybkie przechodzenie do innowacji i rozwoju, co wymaga wielu deweloperów do testowania różnic hipotezy podstawowej. W celu późniejszego przygotowania do rozwoju można nawet potrzebować wielu zespołów deweloperów, z których każdy kompiluje się w ramach udostępnionego rozwiązania. Ciągła integracja to pierwszy krok w kierunku zarządzania wszystkimi ruchomymi częściami.
 
@@ -69,7 +69,7 @@ Dowiedz się więcej o [ciągłej integracji](https://docs.microsoft.com/azure/d
 
 Wady w dowolnym rozwiązaniu mogą tworzyć fałszywie dodatnie lub fałszywe wartości ujemne. Nieoczekiwane błędy mogą łatwo prowadzić do błędnej interpretacji metryk wdrażania użytkownika. Mogą również generować negatywną opinię od klientów, którzy nie reprezentują dokładnie testu hipotezy.
 
-Podczas wczesnych iteracji rozwiązania MVP oczekiwane są wady; Wczesne osoby zatwierdzające mogą nawet je znaleźć endearing. W wczesnych wersjach testowanie akceptacji jest zwykle nieistniejące. Jednak jeden aspekt kompilowania z empatię dotyczy weryfikacji potrzeb i hipotez. Oba te elementy można wykonać za pomocą testów jednostkowych na poziomie kodu i testów akceptacji ręcznej przed wdrożeniem. Wspólnie zapewniają one pewne metody niezawodności w testowaniu. Dłuższy okres, należy dążyć do automatyzacji dobrze zdefiniowanej serii testów kompilacji, jednostkowych i akceptacji. Zapewni to niezawodne metryki związane z bardziej szczegółowymi ulepszeniami hipotez i rozwiązaniami uzyskanymi.
+Podczas wczesnych iteracji rozwiązania MVP oczekiwane są wady; Wczesne osoby zatwierdzające mogą nawet je znaleźć endearing. W wczesnych wersjach testowanie akceptacji jest zwykle nieistniejące. Jednak jeden aspekt kompilowania z empatię dotyczy weryfikacji potrzeb i hipotez. Oba te elementy można wykonać za pomocą testów jednostkowych na poziomie kodu i testów akceptacji ręcznej przed wdrożeniem. Wspólnie zapewniają one pewne metody niezawodności w testowaniu. Należy dążyć do automatyzacji dobrze zdefiniowanej serii testów kompilacji, jednostkowych i akceptacji. Zapewni to niezawodne metryki związane z bardziej szczegółowymi ulepszeniami hipotez i rozwiązaniami uzyskanymi.
 
 Funkcja [Azure test Plans](https://docs.microsoft.com/azure/devops/test/track-test-status?view=azure-devops) udostępnia narzędzia do tworzenia i obsługi planów testów podczas ręcznego lub automatycznego wykonywania testów.
 

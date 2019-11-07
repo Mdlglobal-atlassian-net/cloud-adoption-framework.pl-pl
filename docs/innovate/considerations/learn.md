@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 82f6ea5b422bc4d33fe898f86d003ffb2ab92422
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565637"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753002"
 ---
 # <a name="learn-with-customers"></a>Uczenie się wraz z klientami
 
@@ -56,4 +56,4 @@ Następnym krokiem do poznania tej metodologii, [typowe bloki i wyzwania dla inn
 > [!div class="nextstepaction"]
 > [Zrozumienie typowych zablokowaniów i wyzwań](./challenges.md)
 
-Niektóre koncepcje przedstawione w tym artykule zawierają informacje dotyczące tematów w pierwszej kolejności opisanej w temacie [Uruchamianie produkcji oszczędnej](http://theleanstartup.com/book), zapisaną przez Eric.
+Niektóre koncepcje przedstawione w tym artykule zawierają informacje dotyczące tematów w pierwszej kolejności opisanej w temacie [Uruchamianie produkcji oszczędnej](https://theleanstartup.com/book), zapisaną przez Eric.

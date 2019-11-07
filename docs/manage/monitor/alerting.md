@@ -1,5 +1,5 @@
 ---
-title: Przewodnik monitorowania w chmurze — alerty
+title: 'Przewodnik po monitorowaniu w chmurze: alerty'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Określ, kiedy używać Azure Monitor lub System Center Operations Manager w Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: efbb3b677f2349f0d2e8c240c42c75d75cf849f1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e602ce0c27da5204a51d0a4a790ce65dc7e6871
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564992"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752743"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Przewodnik po monitorowaniu w chmurze: alerty
 

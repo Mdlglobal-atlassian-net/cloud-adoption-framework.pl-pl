@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4a1b96a5f29ebac9fd228ab1603d12e08b38ba63
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565645"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752085"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Środowiska otoczenia: korzystanie z urządzeń
 
@@ -55,7 +55,7 @@ Rozwiązania rzeczywistości mieszanej reprezentują następny poziom dojrzało�
 > [!IMPORTANT]
 > Jeśli urządzenie rzeczywistości wirtualnej (VR) jest wymagane i *nie jest jeszcze częścią bezpośrednio otaczających lub naturalnych zachowań klienta*, zwiększone lub wirtualne rzeczywistość jest bardziej alternatywnym doświadczeniem i mniejszą funkcjonalnością otoczenia.
 
-Środowiska o rzeczywistości mieszanej są coraz częściej spotykane wśród zdalnych pracowników. Ich użycie rośnie jeszcze szybciej w branżach, które wymagają współpracy lub specjalistycznych umiejętności, które nie są łatwo dostępne na rynku lokalnym. Sytuacje wymagające scentralizowanej obsługi dla złożonego produktu dla zdalnej siły robocizny są szczególnie niedrogie dla rzeczywistości rozszerzonej. W tych scenariuszach centralny zespół pomocy technicznej i pracownicy zdalni mogą korzystać z zwiększonej rzeczywistości do pracy, rozwiązywania problemów i instalowania produktu.
+Środowiska o rzeczywistości mieszanej są coraz częściej spotykane wśród zdalnych pracowników. Ich użycie rośnie jeszcze szybciej w branżach, które wymagają współpracy lub specjalistycznych umiejętności, które nie są łatwo dostępne na rynku lokalnym. Sytuacje wymagające scentralizowanej obsługi dla złożonego produktu dla zdalnej siły robocizny są szczególnie niedrogie dla rzeczywistości rozszerzonej. W tych scenariuszach centralny zespół pomocy technicznej i pracownicy zdalni mogą korzystać z zwiększonej rzeczywistości, aby korzystać z produktu, rozwiązywać problemy i instalować go.
 
 Rozważmy na przykład przypadek zakotwiczenia przestrzennego. Kotwice przestrzenne umożliwiają tworzenie środowisk o rzeczywistości mieszanej z obiektami, które utrzymują swoje lokalizacje na różnych urządzeniach w miarę upływu czasu. Dzięki zakotwiczeniem przestrzennym można przechwytywać, rejestrować i utrwalać konkretne zachowanie, a tym samym zapewnić środowisko otoczenia podczas następnego działania użytkownika w tym środowisku. [Kotwice przestrzenne platformy Azure](https://docs.microsoft.com/azure/spatial-anchors/overview) to usługa, która przenosi tę logikę do chmury, umożliwiając udostępnianie środowisk między urządzeniami, a nawet w różnych rozwiązaniach.
 

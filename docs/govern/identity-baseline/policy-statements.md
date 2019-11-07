@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 118a111ae787e58d1f50704216e921a4df43501e
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222133"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753014"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Przykładowe instrukcje zasad linii bazowej tożsamości
 
@@ -32,7 +32,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Wszystkie zasoby wdrożone w chmurze powinny być kontrolowane przy użyciu tożsamości i ról zatwierdzonych przez bieżące zasady zarządzania.
 
-**Potencjalne opcje projektu:** [Azure Active Directory dostęp warunkowy](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) jest domyślnym mechanizmem kontroli dostępu na platformie Azure.
+**Potencjalne opcje projektowania:** [Azure Active Directory dostęp warunkowy](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) jest domyślnym mechanizmem kontroli dostępu na platformie Azure.
 
 ## <a name="overprovisioned-access"></a>Dostęp z nadmierną obsługą administracyjną
 
@@ -67,7 +67,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Wdrożenie wszelkich aplikacji, które wymagają uwierzytelnienia klienta, musi używać zatwierdzonego dostawcy tożsamości, który jest zgodny z podstawowym dostawcą tożsamości dla użytkowników wewnętrznych.
 
-**Potencjalne opcje projektu:** Implementowanie [Federacji z Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) między wewnętrznymi dostawcami tożsamości klienta lub wykorzystaniem [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
+**Potencjalne opcje projektu:** Zaimplementuj [Federacji z Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) między wewnętrznymi i dostawcami tożsamości klienta lub Użyj [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
 
 ## <a name="identity-reviews"></a>Przeglądy tożsamości
 

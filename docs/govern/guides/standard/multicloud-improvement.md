@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 10097c550ba160c41add31e27d0813c175f5e26a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29f45afcb10b7d12df8392a8dd9d0d577414e59b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566233"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753072"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: udoskonalenie wielochmurowe
 
@@ -85,4 +85,4 @@ Wdrożenie wielochmurowe powinno być zawarte w miejscu, w którym jest wymagane
 
 ## <a name="conclusion"></a>Podsumowanie
 
-W tej serii artykułów opisano przyrostowe opracowywanie najlepszych praktyk nadzoru, które są dostosowane do środowiska tej fikcyjnej firmy. Rozpoczynając od małych, ale z właściwą podstawą, firma może szybko przełączać się i nadal stosować odpowiednią ilość ładu w odpowiednim czasie. Sam SPECJALISTa nie chroni klienta. Zamiast tego tworzy podstawę do zarządzania ryzykiem i dodawania ochrony. Z tego miejsca zostały zastosowane warstwy ładu, które korygują zagrożenia materialne. Dokładna podróż przedstawiona w tym miejscu nie wyrównuje 100% z doświadczeniami każdego czytnika. Zamiast tego służy jako wzorzec dla ładu przyrostowego. Czytelnik jest Doradzany do Mold tych najlepszych rozwiązań, aby dopasować własne ograniczenia i wymagania dotyczące zarządzania.
+W tej serii artykułów opisano przyrostowe opracowywanie najlepszych praktyk nadzoru, które są dostosowane do środowiska tej fikcyjnej firmy. Rozpoczynając od małych, ale z właściwą podstawą, firma może szybko przełączać się i nadal stosować odpowiednią ilość ładu w odpowiednim czasie. Sam SPECJALISTa nie chroni klienta. Zamiast tego tworzy podstawę do zarządzania ryzykiem i dodawania ochrony. Z tego miejsca zostały zastosowane warstwy ładu, które korygują zagrożenia materialne. Dokładna podróż przedstawiona w tym miejscu nie wyrównuje 100% z doświadczeniami każdego czytnika. Zamiast tego służy jako wzorzec dla ładu przyrostowego. Należy Mold te najlepsze rozwiązania, aby dopasować własne ograniczenia i wymagania dotyczące zarządzania.
