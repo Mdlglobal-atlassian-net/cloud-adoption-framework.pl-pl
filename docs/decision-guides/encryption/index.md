@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 82ad7e2c4e7e7eac375e99daa0815c8482492e15
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223903"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564892"
 ---
 # <a name="encryption-decision-guide"></a>Przewodnik po decyzjach związanych z szyfrowaniem
 
@@ -103,7 +103,9 @@ Szyfrowanie danych magazynowanych obejmuje również bardziej zaawansowane metod
 
 To, które zasoby wymagają szyfrowania, powinny określać ogólne wymagania dotyczące zasad i zgodności, wrażliwość przechowywanych danych i wymagania dotyczące wydajności obciążeń.
 
-**Założenia dotyczące szyfrowania danych magazynowanych.** Szyfrowanie danych magazynowanych obejmuje następujące założenia:
+### <a name="assumptions-about-encrypting-data-at-rest"></a>Założenia dotyczące szyfrowania danych magazynowanych
+
+Szyfrowanie danych magazynowanych obejmuje następujące założenia:
 
 - Przechowywane są dane, które nie są przeznaczone do użytku publicznego.
 - Dla obciążeń akceptowany jest dodatkowy koszt w postaci opóźnienia wynikającego z szyfrowania dysku.

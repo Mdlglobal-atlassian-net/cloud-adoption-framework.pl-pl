@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5e7da35bb2b88c8f24abf09f8d3d2a708f732c1c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d4fc79c7829a0cc9058b07dd386e626a19cabb1b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222090"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565993"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Omówienie dziedziny Spójność zasobów
 
@@ -35,7 +35,7 @@ Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wym
 > [!CAUTION]
 > Przykładowe zasady pochodzą z typowych doświadczeń klientów. W celu lepszego dostosowania tych zasad do określonych potrzeb w zakresie utrzymania ładu w chmurze wykonaj poniższe kroki, aby utworzyć instrukcje zasad spełniające unikatowe potrzeby firmy.
 
-## <a name="developing-resource-consistency-governance-policy-statements"></a>Opracowywanie instrukcji zasad utrzymania ładu dziedziny Spójność zasobów
+## <a name="develop-governance-policy-statements"></a>Opracowywanie instrukcji zasad utrzymania ładu
 
 W poniższych sześciu krokach zamieszczono przykłady i potencjalne opcje, które należy wziąć pod uwagę podczas opracowywania zasad utrzymania ładu dziedziny Spójność zasobów. Każdy z tych kroków może stanowić punkt wyjścia do dyskusji w ramach zespołu ds. utrzymania ładu w chmurze oraz z zespołami informatycznymi w Twojej organizacji w celu opracowania zasad i procesów wymaganych do zarządzania czynnikami ryzyka powiązanymi ze spójnością zasobów.
 

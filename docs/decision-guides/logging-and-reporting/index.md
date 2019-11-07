@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238764"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564872"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Przewodnik po decyzjach dotyczących rejestrowania i raportowania
 
@@ -22,13 +22,13 @@ Wszystkie organizacje potrzebują mechanizmów umożliwiających powiadamianie z
 
 ![Wykres opcji rejestrowania, raportowania i monitorowania od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/decision-guides/decision-guide-logging-and-reporting.png)
 
-Idź do: [Planowanie infrastruktury monitorowania](#planning-your-monitoring-infrastructure) | [Natywne dla chmury](#cloud-native) | [Rozszerzenie lokalne](#on-premises-extension) | [Agregacja za pomocą bramy](#gateway-aggregation) | [Monitorowanie hybrydowe (lokalne)](#hybrid-monitoring-on-premises) | [Monitorowanie hybrydowe (w chmurze)](#hybrid-monitoring-cloud-based) | [Wielochmurowe](#multicloud) | [Więcej informacji](#learn-more)
+Idź do: [Planowanie infrastruktury monitorowania](#plan-your-monitoring-infrastructure) | [Natywne dla chmury](#cloud-native) | [Rozszerzenie lokalne](#on-premises-extension) | [Agregacja za pomocą bramy](#gateway-aggregation) | [Monitorowanie hybrydowe (lokalne)](#hybrid-monitoring-on-premises) | [Monitorowanie hybrydowe (w chmurze)](#hybrid-monitoring-cloud-based) | [Wielochmurowe](#multicloud) | [Więcej informacji](#learn-more)
 
 Punkt przegięcia podczas określania strategii rejestrowania i raportowania w chmurze zależy głównie od istniejących inwestycji dokonanych w organizacji w procesy operacyjne, a w pewnym stopniu od wymagań dotyczących obsługi strategii wielochmurowej.
 
 Istnieje kilka sposobów rejestrowania i raportowania działań w chmurze. Rejestrowanie natywne dla chmury i scentralizowane to dwie typowe opcje usług zarządzanych opartych na modelu subskrypcyjnym i liczbie subskrypcji.
 
-## <a name="planning-your-monitoring-infrastructure"></a>Planowanie infrastruktury monitorowania
+## <a name="plan-your-monitoring-infrastructure"></a>Planowanie infrastruktury monitorowania
 
 Podczas planowania wdrożenia należy rozważyć, gdzie będą przechowywane dane rejestrowania oraz w jaki sposób usługi raportowania i monitorowania w chmurze zostaną zintegrowane z istniejącymi procesami i narzędziami.
 
@@ -47,7 +47,7 @@ W tym scenariuszu wszystkie dane dzienników są rejestrowane i przechowywane w 
 
 Niestandardowe rozwiązania do rejestrowania oparte na usłudze Azure Monitor mogą być wdrażane ad hoc dla każdej subskrypcji lub obciążenia w mniejszych lub eksperymentalnych wdrożeniach i są zorganizowane w scentralizowany sposób, umożliwiając monitorowanie danych dzienników w całej infrastrukturze chmury.
 
-**Założenia dotyczące rozwiązań natywnych dla chmury.** W przypadku użycia systemu rejestrowania i raportowania natywnego dla chmury przyjmowane są następujące założenia:
+**Założenia dotyczące rozwiązań natywnych dla chmury:** W przypadku użycia systemu rejestrowania i raportowania natywnego dla chmury przyjmowane są następujące założenia:
 
 - Nie jest konieczna integracja danych dzienników z obciążeń w chmurze z istniejącymi systemami lokalnymi.
 - Nie będziesz używać systemów raportowania w chmurze do monitorowania systemów lokalnych.
@@ -87,7 +87,7 @@ Hybrydowe rozwiązanie do monitorowania łączy dane dzienników z zasobów loka
 
 Jeśli masz istniejące inwestycje w lokalne systemy monitorowania, których zastąpienie byłoby trudne lub kosztowne, może być konieczne zintegrowanie danych telemetrycznych z obciążeń w chmurze z lokalnymi rozwiązaniami do monitorowania. W hybrydowym, lokalnym systemie monitorowania lokalne dane telemetryczne nadal korzystają z istniejącego lokalnego systemu monitorowania. Dane telemetryczne z chmury są wysyłane bezpośrednio do lokalnego systemu monitorowania lub wysyłane do usługi Azure Monitor, a następnie kompilowane i pozyskiwane przez lokalny system w regularnych odstępach czasu.
 
-**Założenia dotyczące lokalnego, hybrydowego rozwiązania do monitorowania** W przypadku użycia lokalnego systemu rejestrowania i raportowania do monitorowania hybrydowego przyjmowane są następujące założenia:
+**Założenia dotyczące lokalnego, hybrydowego rozwiązania do monitorowania:** W przypadku użycia lokalnego systemu rejestrowania i raportowania do monitorowania hybrydowego przyjmowane są następujące założenia:
 
 - Istniejące lokalne systemy raportowania muszą być używane do monitorowania obciążeń w chmurze.
 - Wymagane jest zachowanie własności lokalnych danych dzienników.

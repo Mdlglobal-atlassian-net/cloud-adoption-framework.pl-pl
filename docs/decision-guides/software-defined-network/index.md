@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023760"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564786"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Przewodnik po decyzjach dotyczących sieci zdefiniowanej programowo
 
@@ -32,7 +32,7 @@ Punkt szczytowy w tym przewodniku zależy od kilku kluczowych decyzji, które ze
 
 Prawdopodobieństwo, że ten punkt szczytowy znacząco wpłynie na małe wdrożenia w pojedynczym regionie z liczbą maszyn wirtualnych mniejszą niż 1000, jest niskie. Z drugiej strony decyzje dotyczące sieci SDN i ten kluczowy punkt szczytowy mogą mieć znaczący wpływ na duże operacje wdrażania z liczbą maszyn wirtualnych większą niż 1000, wieloma jednostkami biznesowymi lub wieloma rynkami geopolitycznymi.
 
-## <a name="choosing-the-right-virtual-networking-architectures"></a>Wybieranie właściwych architektur sieci wirtualnych
+## <a name="choose-the-right-virtual-networking-architectures"></a>Wybieranie właściwych architektur sieci wirtualnych
 
 Ta sekcja rozszerza przewodnik po decyzjach, aby ułatwić wybór właściwych architektur sieci wirtualnych.
 

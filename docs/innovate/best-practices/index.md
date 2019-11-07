@@ -8,26 +8,28 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8cad82e201fe99294ac2e5a5940654da712017b9
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 43e0b74bb7d35585a6ba8ff4ea9b43ef34dbcdbc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683370"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565813"
 ---
-# <a name="developing-digital-inventions-in-azure"></a>Tworzenie wynalazków cyfrowych na platformie Azure
+# <a name="develop-digital-inventions-in-azure"></a>Tworzenie wynalazków cyfrowych na platformie Azure
 
-Platforma Azure może przyspieszyć opracowywanie wynalazków cyfrowych w każdym obszarze. Ta sekcja przewodnika Cloud Adoption Framework wykorzystuje [metodologię innowacji](../considerations/index.md) w celu przedstawienia różnych usług na platformie Azure, z których można skorzystać, aby utworzyć łańcuch narzędzi innowacji cyfrowej.
+Platforma Azure może przyspieszyć opracowywanie wynalazków cyfrowych w każdym obszarze. Ta sekcja przewodnika Cloud Adoption Framework jest oparta na [metodologii innowacji](../considerations/index.md). W tej sekcji pokazano, jak połączyć usługi platformy Azure w celu utworzenia łańcucha narzędzi na potrzeby opracowywania wynalazków cyfrowych.
 
 ## <a name="alignment-to-the-methodology"></a>Dostosowywanie do metodologii
 
-Istnieje wiele kombinacji narzędzi opartych na chmurze do opracowywania cyfrowych wynalazków i innowacji na platformie Azure. W poniższej serii artykułów pokazano kilka opcji, które są ściśle dostosowane do metodologii innowacji. Na poniższym obrazie pokazano przegląd różnych narzędzi i sposób ich dostosowania do każdego typu innowacji.
+Istnieje wiele kombinacji narzędzi opartych na chmurze do opracowywania cyfrowych wynalazków i innowacji na platformie Azure. W poniższej serii artykułów pokazano kilka narzędzi, które są ściśle dostosowane do metodologii innowacji. Na poniższym obrazie pokazano przegląd różnych narzędzi i sposób ich dostosowania do każdego typu innowacji.
 
 ![Łańcuch narzędzi metodologii innowacji w przewodniku Cloud Adoption Framework](../../_images/innovate/innovate-toolchain.png)
 
 ## <a name="toolchain"></a>Łańcuch narzędzi
 
-Aby uzyskać bardziej praktyczne wskazówki, zacznij od zapoznania się ze stroną z omówieniem każdego rodzaju wynalazku cyfrowego wymaganego do przetestowania swojej hipotezy, tak aby [stworzyć empatyczną relację z klientem](../considerations/build.md). Rodzaje wynalazków cyfrowych w tej serii artykułów są następujące:
+Zacznij od strony przeglądu, która odnosi się do typu wynalazku cyfrowego wymaganego do przetestowania hipotezy. Zacznij od tej strony, aby uzyskać praktyczne wskazówki i móc [stworzyć empatyczną relację z klientem](../considerations/build.md).
+
+Oto rodzaje wynalazków cyfrowych w tej serii artykułów:
 
 - [Demokratyzowanie danych](./data.md): Narzędzia do udostępniania danych w celu spełnienia potrzeb klienta związanych z informacjami
 - [Angażowanie przez aplikacje](./apps.md): Narzędzia do tworzenia aplikacji, które angażują klientów w większym zakresie niż dane pierwotne

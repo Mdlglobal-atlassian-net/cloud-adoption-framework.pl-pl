@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cab22f60604b2bf201f333df366c7ceca0398ffc
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: c6ad3e6b14ffde5f3c09feb6047a2d0bbe981314
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683529"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564798"
 ---
 # <a name="resource-consistency-decision-guide"></a>Przewodnik podejmowania decyzji dotyczących spójności zasobów
 
@@ -41,7 +41,7 @@ Grupy zasobów działają jak kontenery dla zasobów o typowym cyklu życia i og
 Jeśli odpowiesz _Nie_ na którekolwiek z powyższych pytań, odpowiedni zasób należy umieścić w innym miejscu, w innej grupie zasobów.
 
 > [!IMPORTANT]
-> Grupy zasobów są również specyficzne dla regionu, ale typowe dla zasobów jest to, że znajdują się w różnych regionach w ramach tej samej grupy zasobów, ponieważ są wspólnie zarządzane w sposób opisany powyżej. Więcej informacji na temat wyboru regionu możesz uzyskać [tutaj](../regions/index.md).
+> Grupy zasobów są również specyficzne dla regionu, ale typowe dla zasobów jest to, że znajdują się w różnych regionach w ramach tej samej grupy zasobów, ponieważ są wspólnie zarządzane w sposób opisany powyżej. Aby uzyskać więcej informacji na temat wyboru regionu, zobacz [Przewodnik po decyzjach związanych z regionami](../regions/index.md).
 
 ## <a name="deployment-consistency"></a>Spójność wdrożenia
 

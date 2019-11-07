@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: f493f53d2cc316a0e4ff7ae75211c5e41bc9d8a8
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b231df4665e0da46229d6bc87f8ac32bc1985067
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238827"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564849"
 ---
 # <a name="migration-tools-decision-guide"></a>Przewodnik po decyzjach dotyczących narzędzi migracji
 
@@ -40,7 +40,7 @@ Mimo że w przewodniku Cloud Adoption Framework podkreślono [migrację przyrost
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-- **[Podstawy chmury: Omówienie opcji obliczeniowych na platformie Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview).** Zawiera informacje dotyczące możliwości opcji obliczeniowych rozwiązań Azure IaaS i PaaS.
-- **[Podstawy chmury: Wybór odpowiedniego magazynu danych](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).** Omówienie opcji magazynowania technologii PaaS dostępnych na platformie Azure.
-- **[Migracja o rozszerzonym zakresie: Wymagania dotyczące danych przekraczają pojemność sieci podczas prac nad migracją](../../migrate/expanded-scope/network-capacity-exceeded.md).** Omówienie alternatywnych mechanizmów migracji danych dla scenariuszy, w których migracja danych jest utrudniona przez dostępną przepustowość sieci.
-- **[SQL Database: Wybieranie odpowiedniej opcji programu SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines).** Omówienie opcji i uzasadnień biznesowych dotyczących hostowania obciążeń programu SQL Server w środowisku hostowanej infrastruktury (IaaS) lub hostowanej usługi (PaaS).
+- **[Podstawy chmury: Omówienie opcji obliczeniowych na platformie Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview):** Zawiera informacje dotyczące możliwości opcji obliczeniowych rozwiązań Azure IaaS i PaaS.
+- **[Podstawy chmury: Wybór odpowiedniego magazynu danych](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview):** Omówienie opcji magazynowania technologii PaaS dostępnych na platformie Azure.
+- **[Migracja o rozszerzonym zakresie: Wymagania dotyczące danych przekraczają pojemność sieci podczas prac nad migracją](../../migrate/expanded-scope/network-capacity-exceeded.md):** Omówienie alternatywnych mechanizmów migracji danych dla scenariuszy, w których migracja danych jest utrudniona przez dostępną przepustowość sieci.
+- **[SQL Database: Wybieranie odpowiedniej opcji programu SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines):** Omówienie opcji i uzasadnień biznesowych dotyczących hostowania obciążeń programu SQL Server w środowisku hostowanej infrastruktury (IaaS) lub hostowanej usługi (PaaS).

@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3504e9107f221e71953a238b5ebd092a7531e5ae
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023464"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564729"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -27,11 +27,11 @@ Znaczenie majątku cyfrowego jest najbardziej widoczne podczas planowania i real
 
 Miara majątku cyfrowego zmienia się w zależności od pożądanych wyników biznesowych.
 
-- **Migracje infrastruktury.** Kiedy organizacja koncentruje się na sprawach wewnętrznych i szuka sposobów na zoptymalizowanie kosztów, procesów operacyjnych, elastyczności lub innych aspektów operacji, majątek cyfrowy skupia się wokół maszyn wirtualnych, serwerów i obciążeń.
+- **Migracje infrastruktury:** Kiedy organizacja koncentruje się na sprawach wewnętrznych i szuka sposobów na zoptymalizowanie kosztów, procesów operacyjnych, elastyczności lub innych aspektów operacji, majątek cyfrowy skupia się wokół maszyn wirtualnych, serwerów i obciążeń.
 
-- **Innowacje w zakresie aplikacji.** W przypadku transformacji ukierunkowanych na klientów fokus jest nieco inny. Należy skoncentrować się na aplikacjach, interfejsach API i danych transakcyjnych, które obsługują klientów. Maszyny wirtualne i urządzenia sieciowe często mają mniejsze znaczenie.
+- **Innowacje w zakresie aplikacji:** W przypadku transformacji ukierunkowanych na klientów fokus jest nieco inny. Należy skoncentrować się na aplikacjach, interfejsach API i danych transakcyjnych, które obsługują klientów. Maszyny wirtualne i urządzenia sieciowe często mają mniejsze znaczenie.
 
-- **Innowacje bazujące na danych.** Na dzisiejszym rynku zdominowanym przez rozwiązania cyfrowe trudno jest uruchomić nowy produkt lub nową usługę bez solidnych podstaw w danych. W trakcie prac nad wprowadzaniem innowacji w danych obsługiwanych przez chmurę fokus jest przesunięty bardziej w kierunku silosu danych w całej organizacji.
+- **Innowacje bazujące na danych:** Na dzisiejszym rynku zdominowanym przez rozwiązania cyfrowe trudno jest uruchomić nowy produkt lub nową usługę bez solidnych podstaw w danych. W trakcie prac nad wprowadzaniem innowacji w danych obsługiwanych przez chmurę fokus jest przesunięty bardziej w kierunku silosu danych w całej organizacji.
 
 Kiedy organizacja określi, jaka forma transformacji jest najważniejsza, zarządzanie planowaniem majątku cyfrowego staje się dużo łatwiejsze.
 

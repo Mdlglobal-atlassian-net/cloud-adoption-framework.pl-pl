@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1bf2331c8ee1275a71be2275cefef49cf0a50dfc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547569"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566249"
 ---
 # <a name="cloud-governance-guides"></a>Przewodniki dotyczące ładu w chmurze
 
@@ -62,7 +62,7 @@ Aby rozpocząć podróż po wdrażaniu chmury, wybierz jeden z następujących p
 
 ## <a name="an-incremental-approach-to-cloud-governance"></a>Przyrostowy model utrzymania ładu w chmurze
 
-## <a name="choosing-a-governance-guide"></a>Wybieranie przewodnika ładu
+## <a name="choose-a-governance-guide"></a>Wybieranie przewodnika po utrzymywaniu ładu
 
 W przewodnikach przedstawiono, w jaki sposób zaimplementować minimalną konieczną funkcjonalność ładu. Od tego miejsca w każdym przewodniku przedstawiane jest, w jaki sposób zespół ds. utrzymania ładu w chmurze może jako partner podejmować działania wyprzedzające zespoły wdrażania chmury w celu przyspieszania wysiłków związanych z wdrażaniem. Model ładu z przewodnika Cloud Adoption Framework umożliwia kierowanie stosowaniem ładu od jego utworzenia przez kolejne ulepszenia i ewolucje.
 

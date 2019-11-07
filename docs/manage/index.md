@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 1e54fdc30e0db1ed1cecf01156bb9c25368a8457
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979891"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565032"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Zarządzanie w chmurze w przewodniku Cloud Adoption Framework
 
@@ -111,7 +111,7 @@ Poprzednie kroki określają praktyczne sposoby realizacji metodologii zarządza
 
 ![Metodologia zarządzania w przewodniku Cloud Adoption Framework](../_images/manage/caf-manage.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>Tworzenie zrównoważonego portfolio chmury
+## <a name="create-a-balanced-cloud-portfolio"></a>Tworzenie zrównoważonego portfolio chmury
 
 Jak opisano w artykule dotyczącym [spójności biznesowej](./considerations/business-alignment.md), nie wszystkie obciążenia są krytyczne dla działania firmy. Każdy portfel obejmuje potrzeby zarządzania operacyjnego na różnym poziomie. Działania związane z zachowaniem spójności biznesowej pomagają określić wpływ na firmę i negocjować koszty zarządzania z firmą, aby zagwarantować najlepsze procesy i narzędzia do zarządzania operacyjnego.
 

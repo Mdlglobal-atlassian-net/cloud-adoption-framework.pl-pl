@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c134cd2a3cf17cd4e650f637fec2c417f3c29ff1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222248"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566189"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Omówienie dziedziny Punkt odniesienia obsługi tożsamości
 
@@ -35,7 +35,7 @@ Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wym
 > [!CAUTION]
 > Przykładowe zasady pochodzą z typowych doświadczeń klientów. W celu lepszego dostosowania tych zasad do określonych potrzeb w zakresie utrzymania ładu w chmurze wykonaj poniższe kroki, aby utworzyć instrukcje zasad spełniające unikatowe potrzeby firmy.
 
-## <a name="developing-identity-baseline-governance-policy-statements"></a>Opracowywanie instrukcji zasad utrzymania ładu dziedziny Punkt odniesienia obsługi tożsamości
+## <a name="develop-governance-policy-statements"></a>Opracowywanie instrukcji zasad utrzymania ładu
 
 W poniższych sześciu krokach zamieszczono przykłady i potencjalne opcje, które należy wziąć pod uwagę podczas opracowywania zasad utrzymania ładu dziedziny Punkt odniesienia obsługi tożsamości. Każdy z tych kroków może stanowić punkt wyjścia do dyskusji w ramach zespołu ds. utrzymania ładu w chmurze oraz z zespołami informatycznymi w Twojej organizacji w celu opracowania zasad i procesów wymaganych do zarządzania czynnikami ryzyka powiązanymi z obsługą tożsamości.
 

@@ -8,18 +8,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4d1ada9d47e54f4b0d3828ce93b2d55f3eda8a34
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c4939464c80668ca175a4d7ac53fe2198610afc1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026372"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565366"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Omówienie usług zarządzania serwerem na platformie Azure
 
-Usługi zarządzania serwerem na platformie Azure zapewniają klientom spójne środowisko zarządzania serwerami na dużą skalę. Usługi te obejmują systemy operacyjne Linux i Windows i mogą być używane w środowisku produkcyjnym, programistycznym i testowym. Ponadto mogą obsługiwać maszyny wirtualne IaaS platformy Azure, serwery fizyczne i maszyny wirtualne hostowane lokalnie lub w innych środowiskach hostingu. 
+Usługi zarządzania serwerem na platformie Azure zapewniają klientom spójne środowisko zarządzania serwerami na dużą skalę. Usługi te obejmują systemy operacyjne Linux i Windows i mogą być używane w środowisku produkcyjnym, programistycznym i testowym. Ponadto mogą obsługiwać maszyny wirtualne IaaS platformy Azure, serwery fizyczne i maszyny wirtualne hostowane lokalnie lub w innych środowiskach hostingu.
 
-Pakiet usług zarządzania serwerem na platformie Azure obejmuje usługi przedstawione na poniższym diagramie. 
+Pakiet usług zarządzania serwerem na platformie Azure obejmuje usługi przedstawione na poniższym diagramie.
 
 ![Diagram modelu operacyjnego platformy Azure](./media/operations-diagram.png)
 
@@ -35,10 +35,10 @@ Dla uproszczenia podzieliliśmy ten przewodnik na trzy etapy:
 
 Usługi zarządzania platformy Azure oferują następujące korzyści:
 
-- **Natywność dla platformy Azure.** Usługi zarządzania są wbudowane i natywnie zintegrowane z usługą Azure Resource Manager. Te usługi są stale ulepszane w celu dostarczania nowych funkcji i możliwości.
-- **Systemy Windows i Linux**. Komputery z systemami Windows i Linux mają takie samo spójne środowisko zarządzania.
-- **Hybryda.** Usługi zarządzania obejmują maszyny wirtualne IaaS platformy Azure, a także serwery fizyczne i wirtualne hostowane lokalnie lub w innych środowiskach hostingu.
-- **Bezpieczeństwo.** Firma Microsoft przeznacza znaczne zasoby na wszystkie formy zabezpieczeń. Te inwestycje nie tylko zapewniają ochronę chmurowej infrastruktury platformy Azure. Wynikająca z nich technologia i wiedza są rozszerzane w celu ochrony zasobów klienta, niezależnie od ich lokalizacji.
+- **Natywność dla platformy Azure:** Usługi zarządzania są wbudowane i natywnie zintegrowane z usługą Azure Resource Manager. Te usługi są stale ulepszane w celu dostarczania nowych funkcji i możliwości.
+- **Systemy Windows i Linux:** Komputery z systemami Windows i Linux mają takie samo spójne środowisko zarządzania.
+- **Hybrydowe:** Usługi zarządzania obejmują maszyny wirtualne IaaS platformy Azure, a także serwery fizyczne i wirtualne hostowane lokalnie lub w innych środowiskach hostingu.
+- **Bezpieczeństwo:** Firma Microsoft przeznacza znaczne zasoby na wszystkie formy zabezpieczeń. Te inwestycje nie tylko zapewniają ochronę chmurowej infrastruktury platformy Azure. Wynikająca z nich technologia i wiedza są rozszerzane w celu ochrony zasobów klienta, niezależnie od ich lokalizacji.
 
 ## <a name="next-steps"></a>Następne kroki
 
