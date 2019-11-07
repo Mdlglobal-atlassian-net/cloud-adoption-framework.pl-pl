@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: be2cb79383748050e2b3b4506da53c42320847f6
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980191"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239820"
 ---
 # <a name="organize-your-azure-resources"></a>Organizowanie zasobów platformy Azure
 
@@ -40,7 +40,7 @@ Ustawienia zarządzania, takie jak zasady i kontrola dostępu na podstawie ról,
 
 Krytyczne ustawienia zwykle warto stosować na wyższych poziomach, a wymagania specyficzne dla projektu na niższych poziomach. Może na przykład zajść potrzeba upewnienia się, że wszystkie zasoby w organizacji zostaną wdrożone w określonych regionach. W tym celu należy do subskrypcji zastosować zasady, które określą dozwolone lokalizacje. Kiedy inni użytkownicy w organizacji będą dodawać nowe grupy zasobów i zasoby, dozwolone lokalizacje będą automatycznie wymuszane. Dowiedz się więcej na temat zasad w sekcji dotyczącej zarządzania, zabezpieczeń i zgodności tego przewodnika.
 
-Jeśli masz tylko kilka subskrypcji, niezależne zarządzanie nimi jest stosunkowo proste. Jeśli liczba używanych przez Ciebie subskrypcji rośnie, rozważ utworzenie hierarchii grup zarządzania, aby uprościć zarządzanie subskrypcjami i zasobami. Aby uzyskać więcej informacji na temat zarządzania wieloma subskrypcjami, zobacz [skalowanie za pomocą wielu subskrypcji platformy Azure](../considerations/scaling-subscriptions.md).
+Jeśli masz tylko kilka subskrypcji, niezależne zarządzanie nimi jest stosunkowo proste. Jeśli liczba używanych przez Ciebie subskrypcji rośnie, rozważ utworzenie hierarchii grup zarządzania, aby uprościć zarządzanie subskrypcjami i zasobami. Aby uzyskać więcej informacji na temat zarządzania wieloma subskrypcjami, zobacz [skalowanie za pomocą wielu subskrypcji platformy Azure](../azure-best-practices/scaling-subscriptions.md).
 
 Podczas planowania strategii zgodności pracuj z osobami, które pełnią w organizacji role związane z następującymi obszarami: bezpieczeństwo i zgodność, administracja IT, architektura przedsiębiorstwa, sieć, finanse i zaopatrzenie.
 
@@ -79,7 +79,7 @@ Utwórz grupę zasobów do przechowywania zasobów, takich jak aplikacje interne
 Aby dowiedzieć się więcej, zobacz:
 
 - [Podstawy platformy Azure](../considerations/fundamental-concepts.md)
-- [Skalowanie za pomocą wielu subskrypcji platformy Azure](../considerations/scaling-subscriptions.md)
+- [Skalowanie za pomocą wielu subskrypcji platformy Azure](../azure-best-practices/scaling-subscriptions.md)
 - [Informacje o zarządzaniu dostępem do zasobów na platformie Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [Limity usług subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits)
@@ -130,7 +130,7 @@ Odpowiedni standard nazewnictwa ułatwia identyfikowanie zasobów w witrynie Azu
 
 - Strona operacyjna powinna zapewniać, że nazwy zawierają informacje, których potrzebują zespoły IT. Użyj szczegółów, które identyfikują obciążenie, aplikację, środowisko, informacje krytyczne i inne informacje przydatne do zarządzania zasobami.
 
-Różne typy zasobów mogą mieć różne limity długości i dozwolone znaki, z których wiele zostało wymienionych w artykule na temat najlepszych rozwiązaniach platformy Azure dotyczących [konwencji nazewnictwa](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Aby uzyskać więcej informacji i zaleceń dotyczących w szczególności obsługi zadań związanych z wdrażaniem chmury w przedsiębiorstwie, zobacz [wskazówki dotyczące nazewnictwa i tagowania](../considerations/naming-and-tagging.md) w przewodniku Cloud Adoption Framework.
+Różne typy zasobów mogą mieć różne limity długości i dozwolone znaki, z których wiele zostało wymienionych w artykule na temat najlepszych rozwiązaniach platformy Azure dotyczących [konwencji nazewnictwa](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Aby uzyskać więcej informacji i zaleceń dotyczących w szczególności obsługi zadań związanych z wdrażaniem chmury w przedsiębiorstwie, zobacz [wskazówki dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md) w przewodniku Cloud Adoption Framework.
 
 Poniższa tabela zawiera wzorce nazewnictwa dla kilku przykładowych typów zasobów platformy Azure.
 
@@ -161,7 +161,7 @@ Tagów można używać do wielu innych celów. Najczęstsze zastosowania to:
 
 Każdy zasób lub grupa zasobów może mieć co najwyżej 50 par nazw i wartości tagów. To ograniczenie dotyczy tylko tagów stosowanych bezpośrednio do grupy zasobów lub zasobu.
 
-Aby uzyskać więcej zaleceń i przykładów dotyczących tagowania, zobacz [wskazówki dotyczące tagowania](../considerations/naming-and-tagging.md) w przewodniku Cloud Adoption Framework.
+Aby uzyskać więcej zaleceń i przykładów dotyczących tagowania, zobacz [wskazówki dotyczące tagowania](../azure-best-practices/naming-and-tagging.md) w przewodniku Cloud Adoption Framework.
 
 ::: zone target="docs"
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 7ce8b1f8509ab0e51c94913ef010eb35b22b8978
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: dc52d39699e20a243a6d1156764e30063aea76a5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379037"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240126"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Zarządzanie dostępem do środowiska platformy Azure przy użyciu kontroli dostępu na podstawie ról
 
@@ -29,7 +29,7 @@ Podczas planowania strategii kontroli dostępu należy przyznać użytkownikom n
 
 Zalecamy, aby podczas planowania metodologii dostępu i kontroli pracować z osobami, które pełnią w organizacji role związane z następującymi obszarami: bezpieczeństwo i zgodność, administracja IT i architektura przedsiębiorstwa.
 
-Struktura wdrażania chmury zawiera dodatkowe wskazówki dotyczące [stosowania kontroli dostępu opartej na rolach](../azure-best-practices/roles.md) w ramach procesów wdrażania chmury.
+Struktura wdrażania chmury zawiera dodatkowe wskazówki dotyczące [stosowania kontroli dostępu opartej na rolach](../considerations/roles.md) w ramach procesów wdrażania chmury.
 
 ::: zone target="chromeless"
 
@@ -88,6 +88,6 @@ Aby udzielić użytkownikowi dostępu do subskrypcji:
 Aby dowiedzieć się więcej, zobacz:
 
 - [Czym jest kontrola dostępu oparta na rolach (RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [Struktura wdrażania chmury: Korzystanie z kontroli dostępu opartej na rolach](../azure-best-practices/roles.md)
+- [Struktura wdrażania chmury: Korzystanie z kontroli dostępu opartej na rolach](../considerations/roles.md)
 
 ::: zone-end
