@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 3d99e999d8d083814812b1605d9f0053f186bfc4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683762"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753431"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Bezpieczne narzędzia do monitorowania i zarządzania
 
-Po zakończeniu migracji zmigrowane zasoby powinny być zarządzane przez kontrolowane operacje działu IT. Ten artykuł nie ma na celu sugerowania odchyleń od najlepszych rozwiązań dotyczących operacji. Zamiast tego poniższe zalecenia należy uznać za produkt o minimalnej wymaganej funkcjonalności umożliwiający zabezpieczenie zmigrowanych zasobów i zarządzanie nimi przez operacje działu IT lub niezależnie, gdy operacje działu IT przechodzą w tryb online.
+Po zakończeniu migracji zmigrowane zasoby powinny być zarządzane przez kontrolowane operacje działu IT. Ten artykuł nie przedstawia odchylenia od najlepszych rozwiązań operacyjnych. Zamiast tego poniższe zalecenia należy uznać za produkt o minimalnej wymaganej funkcjonalności umożliwiający zabezpieczenie zmigrowanych zasobów i zarządzanie nimi przez operacje działu IT lub niezależnie, gdy operacje działu IT przechodzą w tryb online.
 
 ## <a name="monitoring"></a>Monitorowanie
 

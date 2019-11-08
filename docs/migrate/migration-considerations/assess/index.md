@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7aac08981375a3fcbbd658d6e14564a07e06795e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6f35ca4e8420100c7455e8fa909fc8b572ee1074
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816299"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753463"
 ---
 # <a name="assess-assets-prior-to-migration"></a>Ocena zasobów przed migracją
 
@@ -56,7 +56,7 @@ Oprócz odpowiedzialności wysokiego poziomu istnieją również akcje, za któr
   - Aby uniknąć niespodzianek w dalszej części procesu, co najmniej jeden przedstawiciel firmy powinien być zaangażowany w proces zatwierdzania.
 
 > [!CAUTION]
-> Ta pełna lista obowiązków i akcji umożliwia obsługę dużych i złożonych migracji obejmujących wiele ról z różnymi poziomami odpowiedzialności, które wymagają szczegółowego procesu zatwierdzania. Mniejsze i prostsze migracje nie muszą wymagać wszystkich ról i akcji opisanych w tym miejscu. Aby określić, które z tych działań zwiększają wartość, a które stanowią niepotrzebne obciążenie, zalecane jest zastosowanie pełnego procesu w ramach pierwszej migracji obciążenia przez zespół ds. wdrażania w chmurze. Po weryfikacji i przetestowaniu obciążenia zespół może ocenić ten proces i wybrać akcje, które mają być stosowane w przyszłości.
+> Ta pełna lista obowiązków i akcji umożliwia obsługę dużych i złożonych migracji obejmujących wiele ról z różnymi poziomami odpowiedzialności, które wymagają szczegółowego procesu zatwierdzania. Mniejsze i prostsze migracje nie muszą wymagać wszystkich ról i akcji opisanych w tym miejscu. Aby określić, które z tych działań zwiększają wartość, a które są niepotrzebne, zespół ds. wdrażania chmury i zespół ds. strategii w chmurze powinny zastosować ten pełny proces w ramach pierwszej migracji obciążenia. Po weryfikacji i przetestowaniu obciążenia zespół może ocenić ten proces i wybrać akcje, które mają być stosowane w przyszłości.
 
 ## <a name="next-steps"></a>Następne kroki
 

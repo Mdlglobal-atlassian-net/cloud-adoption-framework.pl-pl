@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: cbd9f8dcea85b22f68ddb0401ef5713491200fdc
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564538"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753657"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Ustanawianie modelu operacyjnego dla chmury
 
@@ -40,7 +40,7 @@ Ta sekcja przewodnika Cloud Adoption Framework przedstawia praktyczny model oper
 
 Chmura i gospodarka cyfrowa zwróciły uwagę na potrzebę stosowania większej liczby modeli operacyjnych. Czasem ta potrzeba wynika z konieczności obsługi wielu chmur publicznych. Jeszcze częściej wiąże się z przejściem ze środowiska lokalnego do chmury. W obu scenariuszach ważne jest dopasowanie tych modeli operacyjnych w sposób zapewniający maksymalną wydajność przy minimalnej nadmiarowości.
 
-Analitycy przewidują, że wdrażane będą rozwiązania z wieloma chmurami i dużymi ilościami danych. Działanie wielu klientów wskazuje na słuszność tego przewidywania. Niestety klienci zgłaszają poważne trudności w obsłudze wielu chmur. Duplikowanie zasobów, procesów, umiejętności i technologii prowadzi do zwiększenia kosztów, a nie do oszczędności, na jakie wskazywały prognozy dotyczące chmury. Aby tego uniknąć, zaleca się klientom przyjęcie wyspecjalizowanego modelu operacyjnego. Jeśli dopasowuje się różne modele operacyjne, jednym z nich zawsze powinien być **ogólny model operacyjny**. Dodatkowe **wyspecjalizowane modele operacyjne** powinny z kolei być stosowane w konkretnych sytuacjach, odbiegających od modelu standardowego.
+Analitycy przewidują, że wdrażane będą rozwiązania z wieloma chmurami i dużymi ilościami danych. Działanie wielu klientów wskazuje na słuszność tego przewidywania. Niestety klienci zgłaszają poważne trudności w obsłudze wielu chmur. Duplikowanie zasobów, procesów, umiejętności i technologii prowadzi do zwiększenia kosztów, a nie do oszczędności, na jakie wskazywały prognozy dotyczące chmury. Aby tego uniknąć, klienci powinni przyjąć wyspecjalizowany model operacyjny. Jeśli dopasowuje się różne modele operacyjne, jednym z nich zawsze powinien być **ogólny model operacyjny**. Dodatkowe **wyspecjalizowane modele operacyjne** powinny z kolei być stosowane w konkretnych sytuacjach, odbiegających od modelu standardowego.
 
 - **Ogólny model operacyjny:** Ogólny model operacyjny dotyczy jednej publicznej lub prywatnej platformy chmurowej. Operacje tej platformy definiują standardy, zasady i procesy operacyjne. Ten model operacyjny powinien być podstawą realizacji strategii chmury. W tym modelu celem jest korzystanie z podstawowego dostawcy usług w chmurze na potrzeby większości działań związanych z wdrażaniem chmury.
 

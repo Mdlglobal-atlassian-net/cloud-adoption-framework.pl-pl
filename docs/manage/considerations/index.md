@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e3dad3c514c4d76a857b6b433b7bf7ee7320e626
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 367480222244c1e4287bebec85743408a10efc19
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565132"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752844"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>Zarządzanie i operacje IT w chmurze
 
@@ -21,7 +21,7 @@ Nie da się przecenić znaczenia właściwego zarządzania i operacji podczas pr
 
 ## <a name="brief-history-of-it-management"></a>Krótka historia zarządzania rozwiązaniami IT
 
-Przed chmurą zarządzanie rozwiązaniami IT było po prostu konsekwencją innej funkcji, czyli pozyskiwania. Pozyskiwanie sprzętu technicznego do obsługi procesów biznesowych wymagało znajomości kwestii technicznych i dogłębnego doświadczenia z konkretną grupą sprzedawców sprzętu. Zarządzanie IT obejmowało wybór, pozyskiwanie i konfigurowanie zasobów IT. Zwykle zakupione zasoby obejmowały magazyn, moc obliczeniową, sieć i inne podobne zasoby potrzebne do obsługi wymaganej funkcji biznesowej. Członkowie działu IT byli ekspertami w zakresie sprzętu, ich zadaniem było więc również wdrożenie go tak, aby zapewnić maksymalną wydajność i minimalne przerwy w działalności firmy.
+Przed wprowadzeniem chmury zarządzanie rozwiązaniami IT było prostym pozyskiwaniem. Pozyskiwanie sprzętu technicznego do obsługi procesów biznesowych wymagało znajomości kwestii technicznych i dogłębnego doświadczenia z konkretną grupą sprzedawców sprzętu. Zarządzanie IT obejmowało wybór, pozyskiwanie i konfigurowanie zasobów IT. Zwykle zakupione zasoby obejmowały magazyn, moc obliczeniową, sieć i inne podobne zasoby potrzebne do obsługi wymaganej funkcji biznesowej. Członkowie działu IT byli ekspertami w zakresie sprzętu, ich zadaniem było więc również wdrożenie go tak, aby zapewnić maksymalną wydajność i minimalne przerwy w działalności firmy.
 
 Podczas tworzenia nowych rozwiązań technologicznych firma ma jasno zdefiniowane potrzeby, które mogą uzasadniać znaczące koszty związane z nabywaniem zasobów lub nawet tworzeniem całych centrów danych. Podczas tworzenia rozwiązań firma postrzega koszty ich pozyskiwania jako inwestycję na przyszłość. Gdy potrzeba biznesowa zostaje spełniona, zmienia się sposób postrzegania tych kosztów. Koszty związane z istniejącymi rozwiązaniami uważane są za obciążenie wynikające z realizacji wcześniejszych potrzeb. To dlatego wiele firm postrzega dział IT jako centrum kosztów. Również z tego powodu w wielu organizacjach IT przeprowadzane są regularne cięcia kosztów oraz redukcje zatrudnienia pracowników działu IT.
 

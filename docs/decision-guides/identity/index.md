@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ceb9fb6ff6be481f665a0bb70e3afcc2eddb6e92
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023864"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753194"
 ---
 # <a name="identity-decision-guide"></a>Przewodnik po decyzjach związanych z tożsamością
 
@@ -48,12 +48,12 @@ Usługa Azure AD to natywny system zarządzania dostępem i tożsamościami (IAM
 **Założenia dotyczące punktu odniesienia chmury:** Użycie czysto natywnej dla chmury infrastruktury tożsamości obejmuje następujące założenia:
 
 - Zasoby oparte na chmurze nie będą zależne od lokalnych usług katalogowych ani serwerów usługi Active Directory lub obciążenia można modyfikować w celu usunięcia tych zależności.
-- Migrowane obciążenia aplikacji lub usługi obsługują mechanizmy uwierzytelniania zgodne z usługą Azure AD lub można łatwo je modyfikować w celu ich obsługi. Usługa Azure AD opiera się na mechanizmach uwierzytelniania gotowych do użycia w Internecie, takich jak SAML, OAuth i OpenID Connect. Istniejące obciążenia, które są zależne od metody uwierzytelniania w starszej wersji z wykorzystaniem protokołów takich jak Kerberos lub NTLM, mogą wymagać zrefaktoryzowania przed migracją do chmury przy użyciu wzorca punktu odniesienia chmury.
+- Migrowane obciążenia aplikacji lub usługi obsługują mechanizmy uwierzytelniania zgodne z usługą Azure AD lub można łatwo je modyfikować w celu ich obsługi. Usługa Azure AD opiera się na mechanizmach uwierzytelniania gotowych do użycia w Internecie, takich jak SAML, OAuth i OpenID Connect. Istniejące obciążenia, które są zależne od metody uwierzytelniania w starszej wersji z użyciem protokołów takich jak Kerberos lub NTLM, mogą wymagać zrefaktoryzowania przed migracją do chmury przy użyciu wzorca punktu odniesienia chmury.
 
 > [!TIP]
 > Całkowita migracja usług zarządzania tożsamościami do usługi Azure AD eliminuje potrzebę utrzymywania własnej infrastruktury tożsamości, znaczne upraszczając zarządzanie zasobami IT.
 >
-> Jednak usługa Azure AD nie zastępuje w pełni tradycyjnej infrastruktury usługi Active Directory. Funkcje katalogu, takie jak metody uwierzytelniania ze starszej wersji, zarządzanie komputerem lub zasady grupy, mogą nie być dostępne bez konieczności wdrożenia dodatkowych narzędzi lub usług w chmurze.
+> Jednak usługa Azure AD nie zastępuje w pełni tradycyjnej infrastruktury usługi Active Directory. Funkcje katalogu, takie jak metody uwierzytelniania ze starszej wersji, zarządzanie komputerami lub zasady grupy, mogą nie być dostępne bez konieczności wdrożenia dodatkowych narzędzi lub usług w chmurze.
 >
 > W przypadku scenariuszy, w których konieczna jest integracja lokalnej usługi tożsamości lub usług domenowych z wdrożeniami chmury, zapoznaj się z zagadnieniami synchronizacji katalogów i wzorców usług domenowych hostowanych w chmurze, które omówiono poniżej.
 

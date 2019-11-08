@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bc9cc463c50aac532e855ebd93ef1721d9fc38a4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e3df166c41658b248bc7fb61067b27362a8070c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564837"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753154"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Przewodnik podejmowania decyzji dotyczących wymuszania zasad
 
@@ -51,13 +51,13 @@ Gdy infrastruktura w chmurze rośnie, dodatkowe narzędzia, takie jak usługa [A
 
 Na platformie Azure można stosować ustawienia konfiguracji i reguły tworzenia zasobów na poziomie grupy zarządzania, subskrypcji lub grupy zasobów w celu zapewnienia dostosowania zasad.
 
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) to usługa platformy Azure służąca do tworzenia zasad, przypisywania ich i zarządzania nimi. Te zasady wymuszają różne reguły i efekty dotyczące zasobów, dzięki czemu zasoby te pozostają zgodne ze standardami firmy i umowami dotyczącymi poziomu usług. Usługa Azure Policy ocenia zasoby pod kątem niezgodności z przypisanymi zasadami. Na przykład można ograniczyć rozmiar jednostki SKU maszyn wirtualnych w danym środowisku. Po zaimplementowaniu odpowiednich zasad nowe i istniejące zasoby będą oceniane pod kątem zgodności. Użycie odpowiednich zasad umożliwia zapewnienie zgodności istniejących zasobów.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) to usługa platformy Azure służąca do tworzenia zasad, przypisywania ich i zarządzania nimi. Te zasady wymuszają różne reguły i efekty dotyczące zasobów, dzięki czemu zasoby te pozostają zgodne ze standardami firmy i umowami dotyczącymi poziomu usług. Usługa Azure Policy ocenia zasoby pod kątem niezgodności z przypisanymi zasadami. Na przykład można ograniczyć rozmiar jednostki SKU maszyn wirtualnych w danym środowisku. Po zaimplementowaniu odpowiednich zasad nowe i istniejące zasoby są oceniane pod kątem zgodności. Użycie odpowiednich zasad umożliwia zapewnienie zgodności istniejących zasobów.
 
 ## <a name="cross-organization-policy"></a>Zasady dla wielu organizacji
 
 Gdy infrastruktura w chmurze powiększy się na wiele subskrypcji wymagających wymuszania, może być konieczne skoncentrowanie się na strategii wymuszania w całej infrastrukturze chmury, aby można było zapewnić spójność zasad.
 
-[Projekt subskrypcji](../subscriptions/index.md) będzie musiał uwzględnić zasady, ponieważ są one związane ze strukturą organizacyjną. Oprócz zapewniania obsługi złożonej organizacji w projekcie subskrypcji, [grupy zarządzania platformy Azure](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) umożliwiają także przypisywanie reguł usługi Azure Policy w wielu subskrypcjach.
+[Projekt subskrypcji](../subscriptions/index.md) musi uwzględniać zasady w odniesieniu do struktury organizacji. Oprócz zapewniania obsługi złożonej organizacji w projekcie subskrypcji, [grupy zarządzania platformy Azure](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) umożliwiają także przypisywanie reguł usługi Azure Policy w wielu subskrypcjach.
 
 ## <a name="automated-enforcement"></a>Wymuszanie automatyczne
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: b231df4665e0da46229d6bc87f8ac32bc1985067
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2129e0f27dd44a32ea0966326cd0c172603783cf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564849"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753346"
 ---
 # <a name="migration-tools-decision-guide"></a>Przewodnik po decyzjach dotyczących narzędzi migracji
 
@@ -32,7 +32,7 @@ Udzielenie odpowiedzi na poniższe pytania umożliwia podjęcie decyzji na podst
 - **Czy aplikacja obecnie działa na dedykowanych maszynach wirtualnych, czy współdzieli hosting z innymi aplikacjami?** Aplikację działającą na dedykowanych maszynach wirtualnych można łatwiej zmigrować do opcji hostingu PaaS, niż aplikację działającą na serwerach udostępnionych.
 - **Czy migracja danych przekroczy przepustowość sieci?** Pojemność sieci między lokalnymi źródłami danych i platformą Azure może być wąskim gardłem migracji danych. Jeśli danych, które chcesz przetransferować, dotyczą ograniczenia przepustowości uniemożliwiające wydajną i terminową migrację, warto przyjrzeć się alternatywnym mechanizmom transferu lub opcjom w trybie offline. [Artykuł na temat replikacji migracji](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) w przewodniku Cloud Adoption Framework opisuje, jak ograniczenia replikacji mogą wpłynąć na proces migracji. W ramach oceniania migracji skonsultuj się ze swoimi zespołami IT w celu zweryfikowania, czy przepustowość Waszej sieci lokalnej i sieci WAN jest w stanie obsłużyć wymagania dotyczące migracji. Zapoznaj się też ze [scenariuszem migracji o rozszerzonym zakresie, kiedy wymagania dotyczące magazynu przekraczają pojemność sieci podczas migracji](../../migrate/expanded-scope/network-capacity-exceeded.md#suggested-prerequisites).
 - **Czy aplikacja korzysta z istniejącego potoku DevOps?** W wielu przypadkach można z łatwością zrefaktoryzować usługę Azure Pipelines, aby wdrożyć aplikacje w środowiskach hostingu opartych na chmurze.
-- **Czy dane mają skomplikowane wymagania dotyczące magazynu danych?** Aplikacje produkcyjne zwykle wymagają magazynu danych, który jest wysoce dostępny, oferuje funkcję Zawsze włączone oraz podobne funkcje czasu działania usługi i ciągłości. Opcje zarządzanej bazy danych opartej na technologii PaaS platformy Azure, takie jak usługi Azure SQL Database, Azure Database for MySQL i Azure Cosmos DB, oferują umowy dotyczące poziomu usług zapewniające 99,99% czasu pracy. Z drugiej strony, oparty na technologii IaaS serwer SQL Server na maszynach wirtualnych platformy Azure oferuje umowy dotyczące poziomu usług z jednym wystąpieniem zapewniające 99,95% czasu pracy. Jeśli danych nie można zmodernizować w celu skorzystania z opcji magazynu w technologii PaaS, zagwarantowanie wyższych czasów działania usług IaaS będzie obejmować bardziej skomplikowane scenariusze magazynowania danych, takie jak uruchomienie zawsze włączonych klastrów serwera SQL Server i stałe synchronizowanie danych między wystąpieniami. Może to generować duże koszty związane z hostingiem i konserwacją, dlatego zrównoważenie wymagań dotyczących czasu działania, pracy związanej z modernizacją i ogólnego wpływu na budżet jest tak ważne w procesie rozważania opcji migracji danych.
+- **Czy dane mają skomplikowane wymagania dotyczące magazynu danych?** Aplikacje produkcyjne zwykle wymagają magazynu danych, który jest wysoce dostępny, oferuje funkcję Zawsze włączone oraz podobne funkcje czasu działania usługi i ciągłości. Opcje zarządzanej bazy danych opartej na technologii PaaS platformy Azure, takie jak usługi Azure SQL Database, Azure Database for MySQL i Azure Cosmos DB, oferują umowy dotyczące poziomu usług zapewniające 99,99% czasu pracy. Z drugiej strony, oparty na technologii IaaS serwer SQL Server na maszynach wirtualnych platformy Azure oferuje umowy dotyczące poziomu usług z jednym wystąpieniem, zapewniające 99,95% czasu pracy. Jeśli danych nie można zmodernizować w celu skorzystania z opcji magazynu w technologii PaaS, zagwarantowanie wyższych czasów działania usług IaaS będzie obejmować bardziej skomplikowane scenariusze magazynowania danych, takie jak uruchomienie zawsze włączonych klastrów serwera SQL Server i stałe synchronizowanie danych między wystąpieniami. Może to generować duże koszty związane z hostingiem i konserwacją, dlatego zrównoważenie wymagań dotyczących czasu działania, pracy związanej z modernizacją i ogólnego wpływu na budżet jest tak ważne w procesie rozważania opcji migracji danych.
 
 ## <a name="innovation-and-migration"></a>Innowacje i migracja
 

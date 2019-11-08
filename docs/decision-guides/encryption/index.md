@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564892"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753352"
 ---
 # <a name="encryption-decision-guide"></a>Przewodnik po decyzjach związanych z szyfrowaniem
 
@@ -63,7 +63,7 @@ W przypadku podejścia polegającego na używaniu własnego klucza klucze są ge
 
 ### <a name="on-premises-hold-your-own-key"></a>Środowisko lokalne (zatrzymywanie własnego klucza)
 
-W niektórych scenariuszach mogą istnieć przyczyny związane z przepisami, zasadami lub kwestiami technicznymi, dla których nie można magazynować kluczy w systemie zarządzania kluczami w chmurze. W takich przypadkach należy generować klucze przy użyciu lokalnego sprzętu, przechowywać je i zarządzać nimi za pomocą lokalnego systemu zarządzania kluczami i ustanowić mechanizm umożliwiający zasobom opartym na chmurze dostęp do tych kluczy dla celów szyfrowania. Należy pamiętać, że „zatrzymywanie własnego klucza” może nie być zgodne ze wszystkimi usługami Azure.
+Niektóre scenariusze mogą obejmować zasady związane z przepisami lub powody techniczne, które uniemożliwiają przechowywanie kluczy w systemie zarządzania kluczami opartym na chmurze. W takich przypadkach należy generować klucze przy użyciu sprzętu lokalnego, przechowywać je i zarządzać nimi za pomocą lokalnego systemu zarządzania kluczami oraz udostępnić metodę umożliwiającą zasobom opartym na chmurze dostęp do tych kluczy dla celów szyfrowania. Należy pamiętać, że „zatrzymywanie własnego klucza” może nie być zgodne ze wszystkimi usługami Azure.
 
 **Założenia dotyczące lokalnego zarządzania kluczami:** Używanie lokalnego systemu zarządzania kluczami obejmuje następujące założenia:
 
@@ -84,7 +84,7 @@ Istnieje kilka różnych stanów danych z różnymi potrzebami w zakresie szyfro
 
 Dane przesyłane to dane przemieszczane między zasobami wewnętrznymi, centrami danych, sieciami zewnętrznymi lub za pośrednictwem Internetu.
 
-Szyfrowanie danych przesyłanych zazwyczaj wykonuje się przez wymaganie protokołów SSL/TLS dla ruchu. Należy zawsze szyfrować ruch między zasobami hostowanymi w chmurze a sieciami zewnętrznymi lub publicznym Internetem. Zasoby PaaS zazwyczaj również domyślnie wymuszają na ruchu szyfrowanie SSL/TLS. Decyzja o wymuszaniu szyfrowania ruchu między zasobami IaaS hostowanymi w sieciach wirtualnych należy do zespołów zajmujących się wdrażaniem chmury oraz właścicieli obciążeń, a podjęcie jej jest ogólnie zalecane.
+Dane przesyłanych są zazwyczaj szyfrowane przez wymaganie protokołów SSL/TLS dla ruchu sieciowego. Zawsze szyfruj ruch między zasobami hostowanymi w chmurze a sieciami zewnętrznymi lub publicznym Internetem. Zasoby PaaS zazwyczaj domyślnie wymuszają szyfrowanie SSL/TLS. Zespoły ds. wdrażania chmury i właściciele obciążeń powinni rozważyć wymuszanie szyfrowania ruchu między zasobami IaaS hostowanymi wewnątrz sieci wirtualnych.
 
 **Założenia dotyczące szyfrowania danych przesyłanych:** Wdrożenie właściwych zasad szyfrowania danych przesyłanych obejmuje następujące założenia:
 

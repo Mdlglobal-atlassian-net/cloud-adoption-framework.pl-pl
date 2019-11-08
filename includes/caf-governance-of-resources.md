@@ -5,7 +5,7 @@
 
 ### <a name="governance-of-resources"></a>Zarządzanie zasobami
 
-Zestaw zasad globalnych i ról RBAC zapewni poziom odniesienia dotyczący wymuszania ładu. W celu spełnienia wymagań dotyczących zasad zespołu ds. zarządzania chmurą wdrożenie produktu o minimalnej wymaganej funkcjonalności utrzymania ładu wymaga wykonania następujących zadań:
+Zestaw zasad globalnych i ról RBAC zapewni poziom odniesienia dotyczący wymuszania ładu. Aby spełnić wymagania dotyczące zasad zespołu ds. zapewnienia ładu w chmurze, wdrożenie produktu o minimalnej wymaganej funkcjonalności utrzymania ładu wymaga wykonania następujących zadań:
 
 1. Zidentyfikowanie definicji usługi Azure Policy niezbędnych do wymuszenia wymagań biznesowych Może to obejmować używanie definicji wbudowanych i tworzenie nowych definicji niestandardowych
 2. Utworzenie definicji strategii przy użyciu tych zasad wbudowanych i niestandardowych oraz przypisań ról wymaganych przez produkt o minimalnej wymaganej funkcjonalności utrzymania ładu
@@ -19,8 +19,8 @@ Definicje zasad niestandardowych są zapisywane w grupie zarządzania lub subskr
 
 Ponieważ zasady wymagane do obsługi produktu o minimalnej wymaganej funkcjonalności utrzymania ładu mają zastosowanie do wszystkich bieżących subskrypcji, następujące wymagania biznesowe zostaną zaimplementowane przy użyciu połączenia definicji wbudowanych i definicji niestandardowych utworzonych w głównej grupie zarządzania:
 
-1. Ogranicz listę dostępnych przypisań ról do zestawu wbudowanych ról platformy Azure autoryzowanego przez zespół ds. zarządzania chmurą. Będzie to wymagało [definicji zasad niestandardowych](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
-2. Wymagaj użycia jednego z następujących tagów dla wszystkich zasobów: *Dział/jednostka rozliczeniowa*, *Lokalizacja geograficzna*, *Klasyfikacja danych*, *Krytyczność*, *SLA*, *Środowisko*, *Archetyp aplikacji*, *Aplikacja* i *Właściciel aplikacji*. Można to zrealizować za pomocą definicji wbudowanej `Require specified tag`.
+1. Ogranicz listę dostępnych przypisań ról do zestawu wbudowanych ról platformy Azure autoryzowanego przez zespół ds. zapewnienia ładu w chmurze. Wymaga to [definicji zasad niestandardowych](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
+2. Wymagaj następujących tagów dla wszystkich zasobów: *Dział/jednostka rozliczeniowa*, *Lokalizacja geograficzna*, *Klasyfikacja danych*, *Krytyczność*, *SLA*, *Środowisko*, *Archetyp aplikacji*, *Aplikacja* i *Właściciel aplikacji*. Można to zrealizować za pomocą definicji wbudowanej `Require specified tag`.
 3. Wymagaj, aby tag `Application` zasobów był zgodny z nazwą odpowiedniej grupy zasobów. Można to zrealizować za pomocą definicji wbudowanej „Wymagaj tagu i jego wartości”.
 
 Informacje na temat definiowania zasad niestandardowych zawiera [dokumentacja usługi Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Aby uzyskać wskazówki i przykłady zasad niestandardowych, skorzystaj z [witryny przykładów usługi Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples) i powiązanego [repozytorium GitHub](https://github.com/Azure/azure-policy).
@@ -31,7 +31,7 @@ Zasady platformy Azure można przypisywać na poziomie grupy zasobów, subskrypc
 
 Usługa Azure Blueprints umożliwia spójne przypisywanie zasad i ról, stosowanie szablonów usługi Resource Manager oraz wdrażanie grup zasobów w wielu subskrypcjach. Tak jak w przypadku definicji zasad, definicje strategii są zapisywane w grupach zarządzania lub subskrypcji i są dostępne za pośrednictwem dziedziczenia dla wszystkich elementów podrzędnych w hierarchii grupy zarządzania.
 
-Zespół ds. zarządzania chmurą zdecydował, że wymuszanie wymaganych zasad usługi Azure Policy i przypisań RBAC w subskrypcjach zostanie wdrożone przy użyciu usługi Azure Blueprints i powiązanych artefaktów:
+Zespół ds. zapewnienia ładu w chmurze zdecydował, że wymuszanie wymaganych zasad usługi Azure Policy i przypisań RBAC w subskrypcjach zostanie wdrożone przy użyciu usługi Azure Blueprints i powiązanych artefaktów:
 
 1. W głównej grupie zarządzania utwórz definicję strategii o nazwie `governance-baseline`.
 2. Dodaj następujące artefakty strategii do definicji strategii:

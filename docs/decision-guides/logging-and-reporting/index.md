@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564872"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753167"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Przewodnik po decyzjach dotyczących rejestrowania i raportowania
 
@@ -26,7 +26,7 @@ Idź do: [Planowanie infrastruktury monitorowania](#plan-your-monitoring-infrast
 
 Punkt przegięcia podczas określania strategii rejestrowania i raportowania w chmurze zależy głównie od istniejących inwestycji dokonanych w organizacji w procesy operacyjne, a w pewnym stopniu od wymagań dotyczących obsługi strategii wielochmurowej.
 
-Istnieje kilka sposobów rejestrowania i raportowania działań w chmurze. Rejestrowanie natywne dla chmury i scentralizowane to dwie typowe opcje usług zarządzanych opartych na modelu subskrypcyjnym i liczbie subskrypcji.
+Działania w chmurze można rejestrować i raportować na wiele sposobów. Rejestrowanie natywne dla chmury i scentralizowane to dwie typowe opcje usług zarządzanych opartych na modelu subskrypcyjnym i liczbie subskrypcji.
 
 ## <a name="plan-your-monitoring-infrastructure"></a>Planowanie infrastruktury monitorowania
 
@@ -54,7 +54,7 @@ Niestandardowe rozwiązania do rejestrowania oparte na usłudze Azure Monitor mo
 
 ### <a name="on-premises-extension"></a>Rozszerzenie lokalne
 
-Użycie rozwiązań w chmurze do rejestrowania i monitorowania, takich jak usługa Azure Monitor, może wymagać dużego nakładu pracy związanego z przebudową aplikacji i usług migrowanych do chmury. W takich przypadkach rozsądne może okazać się umożliwienie tym obciążeniom dalszego wysyłania danych telemetrycznych do istniejących systemów lokalnych.
+Użycie rozwiązań w chmurze do rejestrowania i monitorowania, takich jak usługa Azure Monitor, może wymagać dużego nakładu pracy związanego z przebudową aplikacji i usług migrowanych do chmury. W takich przypadkach należy rozważyć dalsze wysyłanie danych telemetrycznych z tych obciążeń do istniejących systemów lokalnych.
 
 W celu zapewnienia obsługi tego podejścia zasoby w chmurze będą musiały komunikować się bezpośrednio z systemami lokalnymi przy użyciu kombinacji [sieci hybrydowej](../software-defined-network/hybrid.md) i [usług domenowych hostowanych w chmurze](../identity/index.md#cloud-hosted-domain-services). Dzięki temu sieć wirtualna w chmurze działa jako rozszerzenie sieci środowiska lokalnego. W związku z tym obciążenia hostowane w chmurze mogą komunikować się bezpośrednio z lokalnym systemem rejestrowania i raportowania.
 
@@ -69,7 +69,7 @@ Założenia dotyczące wyłącznie rozwiązań lokalnych:
 
 ### <a name="gateway-aggregation"></a>Agregacja za pomocą bramy
 
-W przypadku scenariuszy, w których ilość danych telemetrycznych z chmury jest duża lub istniejące lokalne systemy monitorowania muszą rejestrować zmodyfikowane dane zanim mogą one być przetwarzane, może być wymagana usługa [agregacji za pomocą bramy](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation).
+W przypadku scenariuszy, w których ilość danych telemetrycznych z chmury jest duża lub istniejące lokalne systemy monitorowania muszą rejestrować zmodyfikowane dane, zanim mogą one być przetwarzane, może być wymagana usługa [agregacji za pomocą bramy](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation).
 
 Usługa bramy jest wdrażana u dostawcy usług w chmurze. Następnie odpowiednie aplikacje i usługi są konfigurowane w celu przesyłania danych telemetrycznych do bramy zamiast do domyślnego systemu rejestrowania. Brama może następnie przetwarzać dane: agregując, łącząc lub formatując je w inny sposób przed przesłaniem ich do usługi monitorowania w celu ich pozyskania i analizy.
 
