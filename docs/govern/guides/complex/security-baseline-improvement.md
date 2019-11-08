@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a8cf7c6bb09d2f4c505e3edcb97a0354a870a730
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566262"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753206"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej zabezpieczeń
 
@@ -98,7 +98,7 @@ Poniższe zmiany zasad pomogą skorygować nowe zagrożenia i implementację prz
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Przyrostowe ulepszanie najlepszych rozwiązań
 
-W tej części artykułu zostanie zmieniony projekt ładu MVP, który obejmuje nowe zasady platformy Azure i implementację Azure Cost Management. Te dwie zmiany w projekcie zostaną spełnione w ramach nowych instrukcji dotyczących zasad firmowych.
+Ta sekcja modyfikuje projekt ładu MVP w celu uwzględnienia nowych zasad platformy Azure i implementacji Azure Cost Management. Te dwie zmiany w projekcie zostaną spełnione w ramach nowych instrukcji dotyczących zasad firmowych.
 
 Nowe najlepsze rozwiązania są podzielone na dwie kategorie: korporacyjne IT (centrum) i wdrażanie w chmurze (szprych).
 
@@ -108,7 +108,7 @@ Nowe najlepsze rozwiązania są podzielone na dwie kategorie: korporacyjne IT (c
 2. Szablon gwiazdy:
     1. Wskazówki w [topologii Hub i szprych z](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) architekturą referencyjną usług udostępnionych mogą służyć do generowania Menedżer zasobów szablonów dla zasobów wymaganych w firmowym centrum IT.
     2. Korzystając z tych szablonów, tę strukturę można powtarzać w ramach strategii ładu centralnej.
-    3. Oprócz obecnej architektury referencyjnej zaleca się utworzenie szablonu sieciowej grupy zabezpieczeń, który przechwytuje wszelkie wymagania dotyczące blokowania portów lub listy dozwolonych dla sieci wirtualnej, aby hostować zaporę. Ta sieciowa Grupa zabezpieczeń różni się od wcześniejszych grup, ponieważ będzie to pierwsza sieciowa Grupa zabezpieczeń zezwalająca na ruch publiczny do sieci wirtualnej.
+    3. Oprócz bieżącej architektury referencyjnej należy utworzyć szablon sieciowej grupy zabezpieczeń, aby przechwytywać wymagania dotyczące blokowania portów lub listy dozwolonych dla sieci wirtualnej, aby hostować zaporę. Ta sieciowa Grupa zabezpieczeń różni się od wcześniejszych grup, ponieważ będzie to pierwsza sieciowa Grupa zabezpieczeń zezwalająca na ruch publiczny do sieci wirtualnej.
 3. Utwórz zasady platformy Azure. Utwórz zasady o nazwie `Hub NSG Enforcement`, aby wymusić konfigurację sieciowej grupy zabezpieczeń przypisanej do dowolnej sieci wirtualnej utworzonej w ramach tej subskrypcji. Zastosuj wbudowane zasady konfiguracji gościa w następujący sposób:
     1. Inspekcja serwerów sieci Web systemu Windows korzystających z bezpiecznych protokołów komunikacyjnych.
     2. Inspekcja ustawień zabezpieczeń hasła w maszynach z systemem Linux i Windows.
@@ -134,7 +134,7 @@ We wcześniejszych zmianach iteracyjnych najlepszym rozwiązaniem jest zdefiniow
     1. Architektura referencyjna z poprzedniej sekcji, [gwiazdy i topologii z usługami udostępnionymi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), wygenerowała Menedżer zasobów szablon służący do włączania komunikacji równorzędnej w sieci wirtualnej.
     2. Ten szablon może służyć jako przewodnik modyfikowania szablonu DMZ z wcześniejszej iteracji ładu.
     3. Teraz dodawana jest Komunikacja równorzędna sieci wirtualnych do sieci wirtualnej DMZ, która była wcześniej połączona z lokalnym urządzeniem brzegowym przez sieć VPN.
-    4. Zaleca się również usunięcie sieci VPN z tego szablonu, aby upewnić się, że żaden ruch nie jest kierowany bezpośrednio do lokalnego centrum danych, bez przechodzenia przez firmową subskrypcję IT i zaporę. Możesz również ustawić tę sieć VPN jako obwód trybu failover w przypadku outge obwodu ExpressRoute.
+    4. Sieć VPN należy również usunąć z tego szablonu, aby upewnić się, że żaden ruch nie jest kierowany bezpośrednio do lokalnego centrum danych, bez przechodzenia przez firmową subskrypcję IT i zaporę. Możesz również ustawić tę sieć VPN jako obwód trybu failover w przypadku outge obwodu ExpressRoute.
     5. Dodatkowa [Konfiguracja sieci](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) będzie wymagana przez Azure Automation, aby zastosować DSC do hostowanych maszyn wirtualnych.
 2. Zmodyfikuj grupę zabezpieczeń sieci. Zablokuj cały publiczny **i** bezpośredni ruch lokalny w sieciowej grupie zabezpieczeń. Jedyny ruch przychodzący powinien należeć przez równorzędną sieć wirtualną w firmowej subskrypcji IT.
     1. W poprzedniej iteracji utworzono grupę zabezpieczeń sieci, która blokuje cały ruch publiczny i listy dozwolonych cały ruch wewnętrzny. Teraz chcemy przetworzyć tę siećową grupę zabezpieczeń jako bitową.

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 027b685b2c75edc59e03cca9f9d2614422684bf0
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: ddee24fda25b329eccbee5eebf41fd5929346877
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048284"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753398"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planowanie wdrażania chmury
 
@@ -21,7 +21,7 @@ Plan jest istotnym wymaganiem do pomyślnego wdrożenia chmury. Plan wdrażania 
 
 ## <a name="align-strategy-and-planning"></a>Wyrównaj strategię i planowanie
 
-Plany wdrażania chmury zaczynają się od dobrze zdefiniowanej strategii. Co więcej, strategia powinna wyznaczać motywacje, wyniki biznesowe i uzasadnienia biznesowe do wdrożenia w chmurze. Te dodatnie zwroty są następnie równoważone przez nakład pracy wymagany do ich realizacji.
+Plany wdrażania chmury zaczynają się od dobrze zdefiniowanej strategii. Strategia powinna obejmować co najmniej te motywacje, wyniki biznesowe i uzasadnienia biznesowe do wdrożenia w chmurze. Te dodatnie zwroty są następnie równoważone przez nakład pracy wymagany do ich realizacji.
 
 Nakład pracy zaczyna się od znaku cyfrowego (proponowany lub istniejący), który tłumaczy strategię na bardziej materialne obciążenia i zasoby. Następnie można zamapować te elementy materialne na prace techniczne. Z tego miejsca wykwalifikowanymi osobami w odpowiedniej strukturze organizacyjnej może wykonywać prace techniczne. Plan wdrożenia chmury łączy wszystkie te tematy w jeden plan, który może być prognozowany, budżetowany, implementowany i zarządzany przy użyciu metod zarządzania projektami Agile. Ta seria artykułów ułatwia utworzenie planu i zawiera kilka szablonów, które ułatwiają wykonywanie zadań.
 

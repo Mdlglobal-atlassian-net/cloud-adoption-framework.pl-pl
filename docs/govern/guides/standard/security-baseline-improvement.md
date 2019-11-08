@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3ffc0c0707dd8a8631bc7724fd432a2183fea797
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 0875442331a5da3c53c5d6c713c3bdbfcfab6cbf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058662"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753048"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: ulepszanie dyscypliny linii bazowej zabezpieczeń
 
@@ -71,7 +71,7 @@ Poniższe zmiany zasad pomogą skorygować nowe zagrożenia i implementację prz
 
 1. Wszystkie wdrożone zasoby muszą być pogrupowane według stopnia ważności i klasyfikacji danych. Klasyfikacje muszą być przeglądane przez zespół ładu chmury i właściciela aplikacji przed wdrożeniem w chmurze.
 2. Aplikacje, które przechowują lub uzyskują dostęp do chronionych danych, są zarządzane inaczej niż te, które nie są. Należy je podzielić na mniejsze, aby uniknąć niezamierzonego dostępu do chronionych danych.
-3. Wszystkie chronione dane muszą być szyfrowane, gdy są przechowywane. Chociaż jest to wartość domyślna dla wszystkich kont usługi Azure Storage, może być konieczna dodatkowa strategia szyfrowania, w tym szyfrowanie danych w ramach konta magazynu, szyfrowanie maszyn wirtualnych i szyfrowanie na poziomie bazy danych, jeśli jest to możliwe przy użyciu języka SQL na maszynie wirtualnej (TDE i kolumna). szyfrowanie).
+3. Wszystkie chronione dane muszą być szyfrowane, gdy są przechowywane. Chociaż jest to wartość domyślna dla wszystkich kont usługi Azure Storage, może być konieczna dodatkowa strategia szyfrowania, w tym szyfrowanie danych na koncie magazynu, szyfrowanie maszyn wirtualnych i szyfrowanie na poziomie bazy danych podczas korzystania z języka SQL na maszynie wirtualnej (TDE i szyfrowanie kolumn ).
 4. Uprawnienia podwyższonego poziomu w dowolnym segmencie zawierającym chronione dane powinny być wyjątkiem. Wszelkie takie wyjątki będą rejestrowane w zespole ładu chmur i regularnie poddawane inspekcji.
 5. Podsieci sieciowe zawierające chronione dane muszą być odizolowane od innych podsieci. Ruch sieciowy między podsieciami chronionych danych zostanie regularnie poddany inspekcji.
 6. Nie można bezpośrednio uzyskać dostępu do podsieci zawierającej chronione dane za pośrednictwem publicznego Internetu lub między centrami danych. Dostęp do tych podsieci musi być kierowany za pośrednictwem podsieci pośrednich. Każdy dostęp do tych podsieci musi następować przez rozwiązanie zapory, które może wykonywać funkcje skanowania pakietów i blokowania.

@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656658"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753771"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: zalecenia dotyczące zarządzania subskrypcjami
 
@@ -195,13 +195,13 @@ Jeden z największych blokad do wdrożenia w chmurze tradycyjnie ma wpływ na be
 > [!TIP]
 >Azure Security Center to zaawansowane narzędzie, które jest regularnie ulepszane dzięki nowym funkcjom, których można użyć do wykrywania zagrożeń i ochrony przedsiębiorstwa. Zdecydowanie zaleca się, aby zawsze włączać Azure Security Center.
 
-### <a name="azure-resource-locks"></a>Blokady zasobów platformy Azure
+### <a name="locks-for-azure-resources"></a>Blokady zasobów platformy Azure
 
-Ponieważ organizacja dodaje podstawowe usługi do subskrypcji, coraz bardziej ważne jest uniknięcie zakłócenia działania firmy. Jednym z typów zakłóceń, które często widzisz, jest niezamierzone konsekwencje skryptów i narzędzi pracujących nad subskrypcją platformy Azure. [Blokady zasobów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) umożliwiają ograniczanie operacji na zasobach o wysokiej wartości, gdy ich modyfikowanie lub usuwanie miałoby znaczący wpływ. Blokady są stosowane do subskrypcji, grupy zasobów, a nawet poszczególnych zasobów. Typowym przypadkiem użycia jest stosowanie blokad do zasobów podstawowych, takich jak sieci wirtualne, bramy, sieciowe grupy zabezpieczeń i konta magazynu kluczy.
+Ponieważ organizacja dodaje podstawowe usługi do subskrypcji, coraz bardziej ważne jest uniknięcie zakłócenia działania firmy. Jeden z typowych zakłóceń występuje, gdy skrypt lub narzędzie wykonywane w ramach subskrypcji platformy Azure przypadkowo usuwa zasób. [Blokady](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) ograniczają operacje dotyczące zasobów o wysokiej wartości, a ich modyfikowanie lub usuwanie miałoby znaczący wpływ. Można stosować blokady do subskrypcji, grup zasobów lub poszczególnych zasobów. Stosuj blokady do zasobów podstawowych, takich jak sieci wirtualne, bramy, sieciowe grupy zabezpieczeń i konta magazynu kluczy.
 
-### <a name="secure-devops-toolkit"></a>Secure DevOps Toolkit
+### <a name="secure-devops-kit-for-azure"></a>Secure DevOps Kit dla platformy Azure
 
-Pakiet Secure DevOps Kit dla platformy Azure (AzSK) to zbiór skryptów, narzędzi, rozszerzeń i możliwości automatyzacji utworzonych pierwotnie przez zespół IT firmy Microsoft, które zostały [udostępnione jako "open source" za pośrednictwem usługi GitHub](https://github.com/azsk/DevOpsKit-docs). AzSK ma na celu kompleksową subskrypcję platformy Azure i wymagania dotyczące zabezpieczeń zasobów dla zespołów korzystających z rozbudowanej automatyzacji i bezproblemowego integrowania zabezpieczeń z natywnymi przepływami pracy DevOps w celu zapewnienia bezpiecznego DevOps z tymi sześcioma obszarami koncentracji:
+Pakiet Secure DevOps Kit dla platformy Azure (AzSK) to zbiór skryptów, narzędzi, rozszerzeń i możliwości automatyzacji utworzonych pierwotnie przez zespół IT firmy Microsoft, które zostały [udostępnione jako "open source" za pośrednictwem usługi GitHub](https://github.com/azsk/devopskit-docs). AzSK ma na celu kompleksową subskrypcję platformy Azure i wymagania dotyczące zabezpieczeń zasobów dla zespołów korzystających z rozbudowanej automatyzacji i bezproblemowego integrowania zabezpieczeń z natywnymi przepływami pracy DevOps w celu zapewnienia bezpiecznego DevOps z tymi sześcioma obszarami koncentracji:
 
 - Zabezpiecz subskrypcję
 - Włącz bezpieczne programowanie
@@ -210,9 +210,9 @@ Pakiet Secure DevOps Kit dla platformy Azure (AzSK) to zbiór skryptów, narzęd
 - Alerty i monitorowanie
 - Zarządzanie ryzykiem w chmurze
 
-![Zestaw narzędzi platformy Azure DevOps](../_images/reference/secure-devops-kit.png)
+![Diagram omówienia zestawu Secure DevOps Kit dla platformy Azure](../_images/reference/secure-devops-kit.png)
 
-AzSK to bogaty zestaw narzędzi, skryptów i informacji, które są ważną częścią pełnego planu ładu platformy Azure, a wraz z tym, że jest to niezbędne do tworzenia szkieletu, mają kluczowe znaczenie dla organizacji celów zarządzania ryzykiem.
+AzSK to bogaty zestaw narzędzi, skryptów i informacji, które są ważną częścią pełnego planu nadzoru platformy Azure i uwzględniają je w szkieletach, co jest kluczowe do wspierania celów zarządzania ryzykiem organizacji.
 
 ### <a name="azure-update-management"></a>Update Management platformy Azure
 

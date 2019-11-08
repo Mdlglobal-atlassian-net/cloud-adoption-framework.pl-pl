@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 62c12796abf8921c13cebe471fe555d012bab15c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: cd76991fc7d8b13302e4614cf9e57da740f650d8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549130"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753691"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -38,7 +38,7 @@ Podczas planowania i wykonywania replikacji dowolnego źródła danych binarnych
 - **Szybkość światła.** Podczas przenoszenia dużych ilości danych światłowód jest nadal najszybszą opcją. Niestety, za pomocą tych kabli można przenosić dane z szybkością tylko dwóch trzecich szybkości światła. Oznacza to, że nie ma metody zapewniającej natychmiastową lub nieograniczoną replikację danych.
 - **Szybkość potoku WAN.** Większa niż szybkość przenoszenia danych to przepustowość pasma, która definiuje ilość danych na sekundę, które mogą być przenoszone przez istniejącą sieć WAN do docelowego centrum danych.
 - **Szybkość rozbudowy sieci WAN.** Jeśli pozwala na to budżet, do rozwiązania WAN firmy można dodać dodatkową przepustowość. Może jednak upłynąć kilka tygodni lub nawet miesięcy, zanim dodatkowe połączenia światłowodowe zostaną zainstalowane, zainicjowane i zintegrowane.
-- **Szybkość dysków.** Jeśli dane mogłyby być szybciej przenoszone i nie byłoby limitu przepustowości między źródłowymi plikami binarnymi i ich miejscem docelowym, ograniczeniem byłyby prawa fizyki. Dane można replikować maksymalnie z taką szybkością, z jaką można je odczytać z dysków źródłowych. Odczytanie poszczególnych jedynek i zer z każdego obracającego się dysku w centrum danych zabiera nieco czasu.
+- **Szybkość dysków.** Jeśli dane mogłyby być szybciej przenoszone i nie byłoby limitu przepustowości między źródłowymi plikami binarnymi i ich miejscem docelowym, ograniczeniem byłyby prawa fizyki. Dane mogą być replikowane tylko tak szybko, jak to możliwe, ponieważ mogą być odczytywane z dysków źródłowych. Odczytanie poszczególnych jedynek i zer z każdego obracającego się dysku w centrum danych zabiera nieco czasu.
 - **Szybkość obliczeń ludzkich.** Dyski i światło zapewniają większą szybkość niż szybkość podejmowania decyzji przez ludzi. Czas ten wydłuża się jeszcze, gdy osoby muszą współpracować ze sobą w grupie i podejmować wspólne decyzje. Replikacja nigdy nie przezwycięży opóźnień związanych z ludzkimi procesami analitycznymi.
 
 Wszystkie te prawa fizyki wprowadzają następujące zagrożenia, które zwykle mają wpływ na plany migracji:

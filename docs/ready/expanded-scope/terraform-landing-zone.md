@@ -8,12 +8,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561689"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753756"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Tworzenie stref wyładunkowych przy użyciu Terraform
 
@@ -77,7 +77,7 @@ Następujące decyzje są reprezentowane w Terraformej strefie docelowej:
 |Usługa Storage|ND|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md) |
 | Standardy nazewnictwa | Po utworzeniu środowiska tworzony jest również unikatowy prefiks. Zasoby, które wymagają unikatowej nazwy globalnej (na przykład kont magazynu), używają tego prefiksu. Nazwa niestandardowa jest dołączana do losowego sufiksu. Użycie tagów jest wymagane zgodnie z opisem w poniższej tabeli. | [Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md) |
 | Zarządzanie kosztami | ND | [Śledzenie kosztów](../azure-best-practices/track-costs.md) |
-| Compute | ND | [Opcje środowiska obliczeniowego](../considerations/compute-options.md) |
+| Wystąpienia obliczeniowe | ND | [Opcje środowiska obliczeniowego](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>Standardy tagowania
 
@@ -89,7 +89,7 @@ Następujący zestaw minimalnych tagów musi być obecny dla wszystkich zasobów
 | Cost Center | Księgowe centrum kosztu skojarzone z tym zasobem.| CostCenter | Liczba |
 | Odzyskiwanie po awarii | Ważność aplikacji, obciążenia lub usługi dla działania firmy. | ROUTINGU | FUNKCJA ODZYSKIWANIA PO AWARII, KTÓRA NIE JEST DOSTĘPNA W PROGRAMIE DR |
 | Środowisko | Środowisko wdrażania aplikacji, obciążenia lub usługi. |  Kopert | Produkcja, dev, pytań i odpowiedzi, etap, test, szkolenia |
-| Nazwa właściciela | Właściciel aplikacji, obciążenia lub usługi.| Właściciel | email |
+| Nazwa właściciela | Właściciel aplikacji, obciążenia lub usługi.| Właściciel | e-mail |
 | Typ wdrożenia | Definiuje sposób utrzymywania zasobów. | Typ wdrożenia | Ręczne, Terraform |
 | Wersja | Wdrożona wersja planu. | version | v 0,1 |
 | Nazwa aplikacji | Nazwa skojarzonej aplikacji, usługi lub obciążenia związanego z zasobem. | ApplicationName | "Nazwa aplikacji" |
@@ -200,9 +200,9 @@ Strefa docelowa programu Foundation określa podstawę dla złożonego środowis
 - Dodawanie innych modułów do planu.
 - Nakładanie warstwowych dodatkowych stref wyładunkowych na siebie.
 
-Warstwowe strefy ładunkowe są dobrym sposobem na oddzielenie systemów, przechowywanie wersji każdego używanego składnika i umożliwienie szybkiego innowacji i stabilności w przypadku wdrożenia infrastruktury jako kodu.
+Warstwowe strefy ładunkowe są dobrym sposobem na oddzielenie systemów, przechowywanie wersji każdego składnika, którego używasz, a także pozwala na szybkie innowacje i stabilność infrastruktury jako wdrożenie kodu.
 
-W przyszłych architekturach referencyjnych będzie zademonstrowane takie koncepcje dla topologii gwiazdy.
+Przyszłe architektury referencyjne będą demonstrować koncepcję topologii gwiazdy.
 
 > [!div class="nextstepaction"]
 > [Zapoznaj się z przykładem strefy wyładunkowej programu Foundation Terraform](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)

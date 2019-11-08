@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566907"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753538"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategia utrzymania ładu lub zgodności
 
@@ -47,7 +47,7 @@ W trakcie oceny wymagane są dodatkowe decyzje, które należy dostosować do wy
 
 ### <a name="suggested-action-during-the-assess-process"></a>Sugerowana akcja w trakcie procesu oceny
 
-Wymagania dotyczące oceny ładu i zgodności są zbyt specyficzne dla klienta, aby można było podać ogólne wskazówki dotyczące faktycznych czynności podejmowanych podczas oceny. Zaleca się jednak, aby proces obejmował zadania i przydziały czasu dotyczące „dostosowania do wymagań zgodności/ładu”. Aby uzyskać dodatkowe informacje na temat tych wymagań, zobacz następujące linki:
+Wymagania dotyczące oceny ładu i zgodności są zbyt specyficzne dla klienta, aby można było podać ogólne wskazówki dotyczące faktycznych czynności podejmowanych podczas oceny. Jednak proces powinien obejmować zadania i alokacje czasu dla "dostosowanie do wymagań dotyczących zgodności/zarządzania". Aby uzyskać dodatkowe informacje na temat tych wymagań, zobacz następujące linki:
 
 Aby lepiej zrozumieć ład, zapoznaj się z [omówieniem pięciu dyscyplin ładu chmury](../../govern/governance-disciplines.md). Ta część przewodnika Cloud Adoption Framework zawiera również szablony służące do dokumentowania zasad, wskazówek i wymagań dotyczących każdej z pięciu dyscyplin:
 
@@ -61,15 +61,15 @@ Aby uzyskać wskazówki dotyczące opracowywania wytycznych dotyczących ładu o
 
 ## <a name="optimize-and-promote-process-changes"></a>Optymalizacja i podwyższenie poziomu zmian procesu
 
-W trakcie procesów optymalizacji i podwyższania poziomu zaleca się, aby zespół ds. ładu chmury zainwestował czas na przetestowanie i zweryfikowanie zgodności ze standardami ładu i zgodności. Ponadto ten krok to dobry moment, aby wprowadzić procesy do zespołu ds. ładu chmury w celu zadbanie o szablony, które mogą zapewnić dodatkowe [przyspieszenie wdrażania](../../govern/deployment-acceleration/index.md) przyszłych projektów.
+W trakcie procesów optymalizacji i podwyższania zespół nadzoru chmury shluld czas inwestycji na testowanie i weryfikację zgodności z przepisami dotyczącymi nadzoru i przestrzegania standardów. Ponadto ten krok to dobry moment, aby wprowadzić procesy do zespołu ds. ładu chmury w celu zadbanie o szablony, które mogą zapewnić dodatkowe [przyspieszenie wdrażania](../../govern/deployment-acceleration/index.md) przyszłych projektów.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Sugerowana akcja w trakcie procesu optymalizacji i podwyższania poziomu
 
-W trakcie tego procesu zaleca się, aby plan projektu obejmował przydziały czasu do zespołu ds. ładu chmury w celu przeprowadzania przeglądu zgodności każdego obciążenia, dla którego jest planowane podwyższenie poziomu w środowisku produkcyjnym.
+W trakcie tego procesu plan projektu powinien obejmować alokacje czasu dla zespołu nadzoru w chmurze w celu przeprowadzania przeglądu zgodności dla każdego obciążenia planowanego do promocji w środowisku produkcyjnym.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Na końcu [listy kontrolnej dotyczącej zakresu rozszerzonego](./index.md) Czytelnik jest zachęcany do powrotu do listy kontrolnej i ponownej oceny wszelkich dodatkowych wymagań dotyczących zakresu nakładu pracy migracji.
+Jako ostatni element [listy rozwijanej rozszerzony zakres](./index.md), Wróć do listy kontrolnej i ponownie Oceń wszelkie dodatkowe wymagania dotyczące zakresu dla wysiłku migracji.
 
 > [!div class="nextstepaction"]
 > [Lista kontrolna dotycząca zakresu rozszerzonego](./index.md)

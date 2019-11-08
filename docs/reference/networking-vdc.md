@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 526c7846de947b9098f7d9d0b7458a314177a9c8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566685"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753732"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Wirtualne centra danych: perspektywa sieci
 
@@ -194,7 +194,7 @@ Na powyższym diagramie przedstawiono relację między projektami, użytkownikam
 
 Zwykle w tym środowisku (lub warstwie) jest system, w którym wiele aplikacji jest wdrażanych i wykonywanych. Duże przedsiębiorstwa wykorzystują środowisko programistyczne (gdzie zmiany są wprowadzane i testowane) oraz środowisko produkcyjne (które są używane przez użytkowników końcowych). Te środowiska są oddzielane, często z kilkoma środowiskami przejściowymi między nimi, aby umożliwić wdrażanie stopniowe (wdrażanie), testowanie i wycofywanie w przypadku wystąpienia problemów. Architektury wdrażania różnią się znacznie, ale zazwyczaj jest to podstawowy proces rozpoczynający się od projektowania (DEV) i kończący się w środowisku produkcyjnym.
 
-Wspólna architektura dla tych typów środowisk wielowarstwowych składa się z usługi Azure DevOps na potrzeby programowania i testowania, przeprowadzających dla środowisk przejściowych i produkcyjnych. Organizacje mogą korzystać z jednej lub wielu dzierżawców usługi Azure AD w celu definiowania dostępu i praw do tych środowisk. Poprzedni diagram przedstawia przypadek, w którym są używane dwa różne dzierżawy usługi Azure AD: jeden dla usług Azure DevOps i przeprowadzających, a drugi wyłącznie dla środowiska produkcyjnego.
+Wspólna architektura dla tych typów środowisk wielowarstwowych składa się z usługi Azure DevOps na potrzeby programowania i testowania, przeprowadzających dla środowisk przejściowych i produkcyjnych. Organizacje mogą używać jednego lub wielu dzierżawców usługi Azure AD do definiowania dostępu i praw do tych środowisk. Poprzedni diagram przedstawia przypadek, w którym są używane dwa różne dzierżawy usługi Azure AD: jeden dla usług Azure DevOps i przeprowadzających, a drugi wyłącznie dla środowiska produkcyjnego.
 
 Obecność różnych dzierżawców usługi Azure AD wymusza rozdzielenie między środowiskami. Ta sama Grupa użytkowników, taka jak Centralna, musi uwierzytelniać się przy użyciu innego identyfikatora URI w celu uzyskania dostępu do innej dzierżawy usługi Azure AD w celu zmodyfikowania ról lub uprawnień w środowisku produkcyjnym platformy Azure DevOps lub w projekcie. Obecność różnych uwierzytelnień użytkowników w celu uzyskania dostępu do różnych środowisk zmniejsza potencjalne przerwy i inne problemy spowodowane błędami ludzkimi.
 
@@ -380,7 +380,7 @@ Ponieważ używa usługi DNS, Traffic Manager jest tylko do użytku z publicznym
 
 Wirtualne centrum danych to podejście do migracji centrów danych w celu utworzenia skalowalnej architektury platformy Azure, która maksymalizuje użycie zasobów w chmurze, zmniejsza koszty i upraszcza zarządzanie systemem. Wirtualne centrum danych jest oparte na topologii sieci gwiazdy, zapewniającej wspólne usługi udostępnione w centrum i zezwalającej na określone aplikacje i obciążenia w szprychach. Wirtualne centrum danych jest również zgodne ze strukturą ról firmy, w której różne działy, takie jak centralne IT, DevOps i Operations and Maintenance, działają razem podczas wykonywania ich określonych ról. Wirtualne centrum danych spełnia wymagania związane z przełączaniem i przenoszeniem zmian, ale również ma wiele zalet do natywnych wdrożeń w chmurze.
 
-## <a name="references"></a>Dokumentacja
+## <a name="references"></a>Informacje
 
 W tym dokumencie omówiono następujące funkcje. Postępuj zgodnie z linkami, aby dowiedzieć się więcej.
 

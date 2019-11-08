@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 49fcfb3558da82e34f33f54c4e36780606b1e47d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223603"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753256"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Cost Management motywacje i ryzyko biznesowe
 
@@ -39,13 +39,13 @@ Zagrożenia będą się różnić między organizacjami, ale poniżej przedstawi
 - **Kontrola budżetu:** Niesterowanie budżetem może prowadzić do nadmiernych wydatków u dostawcy chmury.
 - **Utrata użycia:** Przed zakupami lub zobowiązaniami, które nie są używane, mogą spowodować utratę inwestycji.
 - **Anomalie wydatków:** Nieoczekiwane skoki w dowolnym kierunku mogą być wskaźnikami nieprawidłowego użycia.
-- **Zasoby o nadmiernej aprowizacji:** Po wdrożeniu zasobów w konfiguracji, która przekracza wymagania aplikacji lub maszyny wirtualnej, mogą one tworzyć odpady.
+- **Zasoby** o nadmiernej aprowizacji: Po wdrożeniu zasobów w konfiguracji, która przekracza wymagania aplikacji lub maszyny wirtualnej, mogą one tworzyć odpady.
 
 ## <a name="next-steps"></a>Następne kroki
 
 Korzystając z [szablonu zarządzania chmurą](./template.md), dokumentuj ryzyka biznesowego, które mogą być wprowadzane przez bieżący plan wdrożenia chmury.
 
-Po ustaleniu realistycznych zagrożeń handlowych, następnym krokiem jest udokumentowanie tolerancji firmy dla ryzyka oraz wskaźników i kluczowych metryk, aby monitorować tę tolerancję.
+Po uzyskaniu wiedzy o realistycznych zagrożeniach firmy następnym krokiem jest udokumentowanie tolerancji firmy dla ryzyka oraz wskaźników i kluczowych metryk, aby monitorować tę tolerancję.
 
 > [!div class="nextstepaction"]
 > [Omówienie wskaźników, metryk i tolerancji ryzyka](./metrics-tolerance.md)

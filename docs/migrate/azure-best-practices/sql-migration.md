@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 80e1de695d28f7eca7032559854f9a54dd4d3d99
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 09fb5a11a7d97d4cb94a11fbbb22aef84a29b87e
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558235"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753599"
 ---
 # <a name="sql-server-migration-best-practices-for-azure"></a>SQL Server najlepszych rozwiązań dotyczących migracji dla platformy Azure
 
@@ -27,4 +27,4 @@ W [artykule rozszerzony zakres SQL Server migracji](../expanded-scope/sql-migrat
 
 ## <a name="migration-best-practices"></a>Najlepsze rozwiązania w zakresie migracji
 
-Spis treści po lewej stronie zawiera szereg najlepszych rozwiązań dla firmy Microsoft, które mogą posłużyć do wykonania migracji SQL Server przy użyciu przewodnika migracji bazy danych Azure, usługi Azure Data Migration Service (DMS) lub innych narzędzi. Utwórz zakładkę na tej stronie, aby zapoznać się z pełną listą najlepszych rozwiązań.
+Spis treści po lewej stronie zawiera szereg najlepszych rozwiązań dla firmy Microsoft, które mogą posłużyć do wykonania migracji SQL Server przy użyciu przewodnika migracji usługi Azure Database, Azure Database Migration Service (DMS) lub innych narzędzi. Utwórz zakładkę na tej stronie, aby zapoznać się z pełną listą najlepszych rozwiązań.

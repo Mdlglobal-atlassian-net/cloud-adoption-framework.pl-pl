@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34d9cd3252849353b0fe765db4d84f7e9f2e5ea7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549151"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753511"
 ---
 # <a name="evaluate-workload-readiness"></a>Ocena gotowości obciążeń
 
@@ -21,7 +21,7 @@ To działanie koncentruje się na ocenie gotowości obciążenia do migracji do 
 
 ## <a name="evaluation-assumptions"></a>Założenia oceny
 
-Większość zasad omawiania zawartości w strukturze Cloud Adoption Framework jest niezależna od chmury. Jednak proces oceny gotowości musi być w dużej mierze specyficzny dla każdej konkretnej platformy w chmurze. W poniższych wskazówkach przyjęto założenie zamiaru migracji na platformę Azure. Przyjęto również, że dla [działań związanych z replikacją](../migrate/replicate.md) używana jest usługa Azure Migrate (znana również jako usługa Azure Site Recovery). Aby zapoznać się z alternatywnymi narzędziami, zobacz [opcje replikacji](../migrate/replicate-options.md).
+Większość zasad dotyczących omawiania zawartości w strukturze wdrażania w chmurze to niezależny od w chmurze. Jednak proces oceny gotowości musi być w dużej mierze specyficzny dla każdej konkretnej platformy w chmurze. W poniższych wskazówkach przyjęto założenie zamiaru migracji na platformę Azure. Przyjęto również, że dla [działań związanych z replikacją](../migrate/replicate.md) używana jest usługa Azure Migrate (znana również jako usługa Azure Site Recovery). Aby zapoznać się z alternatywnymi narzędziami, zobacz [opcje replikacji](../migrate/replicate-options.md).
 
 Ten artykuł nie uwzględnia wszystkich możliwych działań ewaluacyjnych. Zakłada się, że każde środowisko i wynik biznesowy będą określać specyficzne wymagania. Aby przyspieszyć tworzenie tych wymagań, w pozostałej części tego artykułu opisano kilka typowych działań oceny związanych z oceną [infrastruktury](#common-infrastructure-evaluation-activities), [bazy danych](#common-database-evaluation-activities) i [sieci](#common-network-evaluation-activities).
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a320562f97b6e3a37e0f1b4912f1401189855530
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566923"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753473"
 ---
 # <a name="balance-the-portfolio"></a>Równoważenie portfela
 
@@ -76,7 +76,7 @@ Równoważenie portfela wymaga dodatkowej analizy jakościowej w trakcie procesu
 
 Na podstawie danych z tabeli w powyższej sekcji [Dokumentowanie wyników biznesowych](#document-business-outcomes) prawdopodobne jest ryzyko, że portfel dąży zbyt daleko do modelu wykonywania skoncentrowanego na migracji. Jeśli obsługa klienta miałaby najwyższy priorytet, bardziej prawdopodobny byłby portfel bardziej nastawiony na innowacje. Żadne z tych podejść nie jest prawidłowe lub złe, ale zbytnie dążenie w jednym kierunku zwykle skutkuje mniejszymi zyskami, niepotrzebnie zwiększa złożoność i wydłuża czas wykonywania nakładów pracy zakresie wdrażania w chmurze.
 
-Aby zmniejszyć złożoność, zaleca się, aby Czytelnik przestrzegał tradycyjnego podejścia do racjonalizacji portfela, ale w modelu iteracyjnym. Poniższe kroki przedstawiają model jakościowy takiego podejścia:
+Aby zmniejszyć złożoność, należy postępować zgodnie z tradycyjnym podejściem do racjonalizacji portfolio, ale w modelu iteracyjnym. Poniższe kroki przedstawiają model jakościowy takiego podejścia:
 
 - Zespół strategiczny ds. chmury utrzymuje priorytetową listę prac dotyczącą obciążeń, które mają zostać poddane migracji.
 - Zespół strategiczny ds. chmury i zespół wdrożeniowy ds. chmury prowadzą spotkanie dotyczące planowania wydania przed ukończeniem każdego wydania.
@@ -89,8 +89,8 @@ Aby zmniejszyć złożoność, zaleca się, aby Czytelnik przestrzegał tradycyj
   - Czy dane w ramach tego obciążenia przyczyniają się do dalszych innowacji związanych z technologiami analizy biznesowej, uczenia maszynowego, Internetu rzeczy lub pokrewnymi?
   - Czy obciążenie jest zgodne z nowoczesnymi platformami aplikacji, takimi jak Azure App Service?
 - Odpowiedzi na powyższe pytania i wszelka inna wymagana analiza jakościowa wpływają następnie na korekty priorytetyzowanej listy prac. Te korekty mogą obejmować:
-  - Jeśli obciążenie nadawałoby się do zastąpienia przy użyciu rozwiązania PaaS, mogłoby zostać całkowicie usunięte z listy prac migracji. Staranna analiza w celu podjęcia decyzji między ponownym hostowaniem a zastąpieniem zostałaby przynajmniej dodana jako zadanie, tymczasowo zmniejszając priorytet obciążenia na liście prac migracji.
-  - Jeśli obciążenie jest w trakcie prac deweloperskich (lub powinno być), wówczas może najlepiej pasować do modelu refaktoryzacji/rekonstrukcji/przebudowy. Ponieważ innowacje i migracja wymagają różnych umiejętności technicznych, często zaleca się, aby aplikacje, które są zgodne z podejściem refaktoryzacji/rekonstrukcji/przebudowy, były zarządzane za pomocą listy prac innowacyjnych, zamiast listy prac migracji.
+  - Jeśli obciążenie nadawałoby się do zastąpienia przy użyciu rozwiązania PaaS, mogłoby zostać całkowicie usunięte z listy prac migracji. Co więcej, dodatkowe poszczególna staranność do podjęcia decyzji między rehostem a zastępowaniem zostanie dodane jako zadanie, tymczasowo zmniejszając priorytet tego obciążenia z zaległości migracji.
+  - Jeśli obciążenie jest (lub powinno być) przechodzące na rozwój, najlepiej pasuje do modelu refaktoryzacji — Rebuild-rekonstrukcja. Ponieważ innowacje i migracja wymagają różnych umiejętności technicznych, aplikacje, które są dostosowane do refaktoryzacji-rekonstrukcja-Rebuild, powinny być zarządzane przez zaległości innowacyjne zamiast zaległości migracji.
   - Jeśli obciążenie jest częścią dalszej innowacji, wtedy może mieć sens refaktoryzacja platformy danych, ale z pozostawieniem warstw aplikacji jako kandydata do ponownego hostowania. Niewielka refaktoryzacja platformy danych obciążenia może często być wprowadzona do listy prac migracji lub innowacji. Ten wynik racjonalizacji może skutkować bardziej szczegółowymi elementami roboczymi na liście prac, ale w przeciwnym razie priorytety nie zostałyby zmienione.
   - Jeśli obciążenie nie jest strategiczne, ale jest zgodne z nowoczesnymi, opartymi na chmurze platformami hostingu aplikacji, rozsądne może być przeprowadzenie niewielkiej refaktoryzacji aplikacji w celu wdrożenia jej jako nowoczesnej aplikacji. Może to przyczynić się do ogólnego oszczędności przez zredukowanie ogólnych wymagań licencyjnych IaaS i systemów operacyjnych migracji do chmury.
   - Jeśli obciążenie jest aplikacją innej firmy, a dane obciążenia nie są planowane do użycia w dalszych innowacjach, najlepszym rozwiązaniem może być pozostawienie opcji ponownego hostowania na liście prac.
@@ -105,7 +105,7 @@ Podczas migracji działania podejmowane w celu równoważenia portfela mogą mie
 
 Racjonalizacja portfela wymaga różnorodności technicznych nakładów pracy. Zespoły wdrożeniowe ds. chmury mają pokusę dopasowania tej różnorodności portfela w ramach wysiłków związanych z migracją. Biznesowi uczestnicy projektu chcą współpracować z pojedynczym zespołem wdrożeniowym ds. chmury w celu prowadzenia całej listy prac migracji. Rzadko jest to zalecanym podejściem, a w wielu przypadkach może zmniejszać produktywność.
 
-Zaleca się, aby te różnorodne wysiłki były podzielone co najmniej dwa zespoły wdrożeniowe ds. chmury. W przykładowym trybie wykonywania z zastosowaniem modelu dwóch zespołów zespół 1 jest zespołem ds. migracji, a zespół 2 jest zespołem ds. innowacji. W przypadku większych nakładów pracy te zespoły mogą być dodatkowo podzielone na inne podejścia, takie jak wysiłki zastępowania/PaaS lub niewielka refaktoryzacja. Poniżej przedstawiono umiejętności i role wymagane do ponownego hostowania, refaktoryzacji lub niewielkiej refaktoryzacji:
+Te różnorodne wysiłki należy podzielić na segmenty w dwóch lub większej liczbie zespołów wdrażania w chmurze. W przykładowym trybie wykonywania z zastosowaniem modelu dwóch zespołów zespół 1 jest zespołem ds. migracji, a zespół 2 jest zespołem ds. innowacji. W przypadku większych nakładów pracy te zespoły mogą być dodatkowo podzielone na inne podejścia, takie jak wysiłki zastępowania/PaaS lub niewielka refaktoryzacja. Poniżej przedstawiono umiejętności i role wymagane do ponownego hostowania, refaktoryzacji lub niewielkiej refaktoryzacji:
 
 **Rehostowanie:** Rehostowanie wymaga, aby członkowie zespołu implementują zmiany ukierunkowane na infrastrukturę. Zasadniczo odbywa się to przy użyciu narzędzia, takiego jak Azure Site Recovery, do migrowania maszyn wirtualnych lub innych zasobów na platformę Azure. Ta praca dobrze pasuje do administratorów centrum danych lub realizatorów IT. Zespół ds. migracji do chmury ma odpowiednią strukturę, aby wykonać tę pracę na dużą skalę. Jest to najszybszy sposób migrowania istniejących zasobów w większości scenariuszy.
 

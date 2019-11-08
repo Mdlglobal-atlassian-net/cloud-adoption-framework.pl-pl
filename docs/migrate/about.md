@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ab28d38aafdddc0206b9fc7abc98cb489bba5d1b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547234"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751288"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Migracja do chmury w przewodniku Microsoft Cloud Adoption Framework dla platformy Azure
 
@@ -44,7 +44,7 @@ Architekt chmury pełni rolę lidera myśli i osoby ułatwiającej kontakt międ
 
 Czytelnikom, którzy chcą postępować zgodnie z tym przewodnikiem od początku do końca, ta zawartość pomoże w opracowaniu solidnej strategii migracji do chmury. Wskazówki przeprowadzają czytelnika przez teorię i implementację takiej strategii.
 
-Na początek zaleca się, aby czytelnicy zapoznali się z [Przewodnikiem po migracji na platformę Azure](./azure-migration-guide/index.md) w celu poznania podstawowego zestawu narzędzi i podejść niezbędnych do migracji w typowym przypadku użycia. Potem podstawowe wskazówki można rozszerzyć zgodnie z potrzebami czytelników o [złożone scenariusze migracji](./expanded-scope/index.md), [najlepsze rozwiązania w zakresie migracji](./azure-best-practices/index.md) i [zagadnienia dotyczące migracji](./migration-considerations/index.md).
+Najpierw należy wykonać czynności opisane w [przewodniku migracji platformy Azure](./azure-migration-guide/index.md) w celu zrozumienia standardowego zestawu narzędzi i metod niezbędnych do migracji w typowym przypadku użycia. Potem podstawowe wskazówki można rozszerzyć zgodnie z potrzebami czytelników o [złożone scenariusze migracji](./expanded-scope/index.md), [najlepsze rozwiązania w zakresie migracji](./azure-best-practices/index.md) i [zagadnienia dotyczące migracji](./migration-considerations/index.md).
 
 > [!div class="nextstepaction"]
 > [Przewodnik po migracji na platformę Azure](./azure-migration-guide/index.md)

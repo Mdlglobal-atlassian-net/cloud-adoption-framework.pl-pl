@@ -1,5 +1,5 @@
 ---
-title: Przewodnik monitorowania chmury — gromadzenie odpowiednich danych
+title: 'Przewodnik po monitorowaniu chmur: Zbierz odpowiednie dane'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Określ, kiedy używać Azure Monitor lub System Center Operations Manager w Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 05596379872fbfa9099297a55d4b75dedc0b672a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 950b767101fea9b33875f1ad0938599a4f371ba9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564945"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751530"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Przewodnik po monitorowaniu chmur: Zbierz odpowiednie dane
 
@@ -45,7 +45,7 @@ Aby zwiększyć szybsze rozwiązywanie incydentu, weź pod uwagę następujące 
 - Korzystaj z możliwości przechodzenia do szczegółów pulpitu nawigacyjnego lub wspieraj Dostosowywanie widoku, aby udoskonalić go.
 - Jeśli potrzebujesz pełnych dzienników, metryki powinny mieć pomoc w odkierowaniu do kryteriów wyszukiwania. Jeśli metryki nie pomogły, popraw je dla następnego zdarzenia.
 
-Ten identyfikator GUID zestawu zasad może pomóc w przekroczeniu szczegółowych informacji, a także lepszym zarządzaniu usługą.
+Ten identyfikator GUID zestawu zasad może pomóc w przeniesieniu wglądu w dane w czasie niemal w czasie rzeczywistym, a także w lepszym zarządzaniu usługą.
 
 ## <a name="next-steps"></a>Następne kroki
 

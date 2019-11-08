@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 842143afbb042ceddee5029a3fa86d0aa8cdd997
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 415e7b456cc342f7a749cd98a55e573a46563bf4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564547"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753687"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Przygotowanie do złożoności technicznej: zarządzanie zmianami zwinnymi (Agile)
 
@@ -50,7 +50,7 @@ Początkowo obciążenia listy prac związanych z migracją prawdopodobnie nie s
 
 *Migracja, wersja i lista prac iteracji śledzą różne poziomy aktywności podczas procesów migracji.*
 
-W ramach każdej listy prac migracji zespół zarządzający zmianami powinien dążyć do uzyskania następujących informacji dotyczących obciążeń w planie. Dane te powinny być dostępne co najmniej dla wszystkich obciążeń priorytetyzowanych do migracji w kolejnych dwóch lub trzech wersjach.
+W ramach każdej listy prac migracji zespół zarządzający zmianami powinien dążyć do uzyskania następujących informacji dotyczących obciążeń w planie. Co najmniej te dane powinny być dostępne dla wszystkich obciążeń, które mają priorytet dla migracji w następnych dwóch lub trzech wersjach.
 
 ### <a name="migration-backlog-data-points"></a>Punkty danych listy prac migracji
 
@@ -107,7 +107,7 @@ W przypadku małej migracji z udziałem samodzielnego zespołu ds. migracji jede
 
 ### <a name="sprint-backlog-data-points"></a>Punkty danych listy prac przebiegu
 
-Wynik przebiegu przechwytuje i dokumentuje zmiany wprowadzone w obciążeniu, a tym samym zamyka pętlę zarządzania zmianami. Po zakończeniu należy udokumentować przynajmniej następujące kwestie. W trakcie wykonywania przebiegu dokumentację tę należy sporządzić razem z technicznymi elementami roboczymi.
+Wynik przebiegu przechwytuje i dokumentuje zmiany wprowadzone w obciążeniu, a tym samym zamyka pętlę zarządzania zmianami. Po zakończeniu należy udokumentować co najmniej następujące kwestie. W trakcie wykonywania przebiegu dokumentację tę należy sporządzić razem z technicznymi elementami roboczymi.
 
 - **Wdrożone zasoby.** Wszystkie zasoby wdrożone w chmurze na potrzeby obsługi obciążenia.
 - **Korygowanie.** Wszelkie zmiany zasobów w celu przygotowania do migracji do chmury.

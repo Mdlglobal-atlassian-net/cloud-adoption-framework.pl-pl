@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565221"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753615"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące konfigurowania sieci pod kątem obciążeń migrowanych do platformy Azure
 
@@ -85,7 +85,7 @@ Aby zapewnić izolację w sieci wirtualnej, należy posegmentować ją na jedną
 - Decyzje dotyczące podsieci opierają się na wymaganiach technicznych i organizacyjnych.
 - Podsieci są tworzone przy użyciu notacji CIDR.
 - Podczas decydowania o zakresie sieci dla podsieci należy pamiętać, że platforma Azure zachowuje pięć adresów IP z każdej podsieci, których nie można używać. Jeśli na przykład utworzysz najmniejszą dostępną podsieć /29 (z ośmioma adresami IP), platforma Azure zachowa pięć adresów, więc będziesz mieć tylko trzy możliwe do użycia adresy, które można przypisać do hostów w podsieci.
-- W większości przypadków zaleca się użycie podsieci /28 jako najmniejszej.
+- W większości przypadków należy użyć/28 jako najmniejszej podsieci.
 
 **Przykład:**
 
@@ -160,8 +160,8 @@ W przypadku pomyślnej migracji najważniejsze jest połączenie lokalnych sieci
 
 Aby zaimplementować sieć VPN typu lokacja-lokacja, należy skonfigurować bramę sieci VPN na platformie Azure.
 
-- Brama sieci VPN to specyficzny typ bramy sieci wirtualnej, który służy do wysyłania zaszyfrowanego ruchu sieciowego między siecią wirtualną platformy Azure a lokalizacją lokalną za pośrednictwem publicznego Internetu.
-- Za pomocą bramy sieci VPN można także wysyłać zaszyfrowany ruch sieciowy między sieciami wirtualnymi platformy Azure za pośrednictwem sieci firmy Microsoft.
+- Brama sieci VPN jest określonym typem bramy wirtualnej, który wysyła zaszyfrowany ruch sieciowy między siecią wirtualną platformy Azure a lokalizacją lokalną za pośrednictwem publicznego Internetu.
+- Brama sieci VPN może również wysyłać szyfrowany ruch sieciowy między usługą Azure sieci wirtualnych za pośrednictwem sieci firmy Microsoft.
 - Każda sieć wirtualna może mieć tylko jedną bramę sieci VPN.
 - Możesz utworzyć wiele połączeń do tej samej bramy sieci VPN. W przypadku utworzenia wielu połączeń wszystkie tunele VPN współdzielą dostępną przepustowość bramy.
 - Każda brama Azure VPN Gateway składa się z dwóch wystąpień działających w konfiguracji aktywne-w gotowości.
@@ -175,7 +175,7 @@ Podczas konfigurowania sieci VPN typu lokacja-lokacja należy wykonać następuj
 
 - Potrzebna jest sieć wirtualna, której zakres adresów nie nakłada się na sieć lokalną, z której zostanie połączona sieć VPN.
 - W sieci należy utworzyć podsieć bramy.
-- Należy utworzyć bramę sieci VPN, określić typ bramy (sieć VPN) i ustalić, czy brama jest oparta na zasadach, czy oparta na trasach. Sieć VPN oparta na trasach jest zalecana jako większa i gotowa do przyszłych zmian.
+- Należy utworzyć bramę sieci VPN, określić typ bramy (sieć VPN) i ustalić, czy brama jest oparta na zasadach, czy oparta na trasach. Sieci VPN opartej na trasach są uważane za dodatkowe możliwości i przyszłe potwierdzenie.
 - Lokalną bramę sieciową można utworzyć lokalnie i skonfigurować lokalne urządzenie sieci VPN.
 - Należy utworzyć połączenie sieci VPN typu lokacja-lokacja między bramą sieci wirtualnej i urządzeniem lokalnym. Korzystanie z sieci VPN opartej na trasach zezwala na połączenia aktywne-pasywne lub aktywne-aktywne z platformą Azure. Wersja oparta na trasach obsługuje również jednocześnie połączenia typu lokacja-lokacja (z dowolnego komputera) i punkt-lokacja (z jednego komputera).
 - Należy wybrać jednostkę SKU bramy, która ma być używana. Będzie to zależeć od wymagań dotyczących obciążenia, przepływności, funkcji i umów SLA.

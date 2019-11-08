@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f761f85fa4b21b35e8428985707176624b92a5ec
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b19357bd98858cc227426d2adb03a6e84210b9b3
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026633"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753779"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ Metryki związane z zachowaniem klienta polega na tym, że można z łatwością
 
 ## <a name="data-innovation"></a>Innowacje dotyczące danych
 
-Zmiana branży, zakłócenie rynków lub przekształcanie produktów/usług może potrwać lata. Eksperymentowanie danych z obsługą chmury jest kluczem do mierzenia sukcesu. Być przezroczyste przez udostępnienie metryk prognoz, takich jak prawdopodobieństwo procentu, liczba eksperymentów zakończonych niepowodzeniem i ilość przeszkolonych modeli. Błędy będą gromadzone szybciej niż sukcesy. Te metryki mogą być discouraging i ważne jest, aby zespół wykonawczy rozumieł czas i inwestycje potrzebne do poprawnego wykorzystania danych.
+Zmiana branży, zakłócenie rynków lub przekształcanie produktów i usług może potrwać lata. Eksperymentowanie danych z obsługą chmury jest kluczem do mierzenia sukcesu. Być przezroczyste przez udostępnienie metryk prognoz, takich jak prawdopodobieństwo procentu, liczba eksperymentów zakończonych niepowodzeniem i liczba przeszkolonych modeli. Błędy będą gromadzone szybciej niż sukcesy. Te metryki mogą być discouraging, a zespół wykonawczy musi zrozumieć czas i inwestycje wymagane do poprawnego używania tych metryk.
 
 Z drugiej strony, niektóre wskaźniki pozytywne są często powiązane z uczeniem opartym na danych: scentralizowanie zestawów danych heterogenicznych, danych wejściowych i Democratization danych. Gdy zespół uczy się od klienta jutro, rzeczywiste wyniki mogą być tworzone dzisiaj. Dodatkowe metryki dotyczące uczenia mogą obejmować:
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9d68aca88d9f2ae992616df4b493bcf3c35fc122
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566497"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751844"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Wdrażanie infrastruktury migracji
 
@@ -654,7 +654,7 @@ Zasady określają definicję zasad, a przypisanie zasad określa zakres, w któ
 
 Firma Contoso chce zacząć korzystać z kilku zasad:
 
-- Chce mieć pewność, że zasoby mogą być wdrażane tylko w regionach EUS2 i CUS.
+- Chce mieć pewność, że zasoby można wdrożyć tylko w regionach EUS2 i CUS.
 - Chce ograniczyć jednostki SKU maszyn wirtualnych tylko do zatwierdzonych jednostek SKU. Celem jest upewnienie się, że kosztowne jednostki SKU maszyn wirtualnych nie są używane.
 
 #### <a name="limit-resources-to-regions"></a>Ograniczanie zasobów do regionów
@@ -780,7 +780,7 @@ Sieciowe grupy zabezpieczeń skojarzone z grupami zabezpieczeń aplikacji zostan
 
 **Akcja** | **Nazwa** | **Element źródłowy** | **Obiekt docelowy** | **Port**
 --- | --- | --- | --- | ---
-Zezwól | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+Zezwól | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 Zezwól | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
 Zezwól | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Odmów | DenyAllInbound | Dowolne | Dowolne | Dowolne

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2afa6e7961a8cc53abb6c3dbe0d78c2251b134d
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239975"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753492"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Wymagania dotyczące danych przekraczają pojemność sieci podczas pracy związanej z migracją
 
@@ -39,7 +39,7 @@ Istnieją również [rozwiązania partnerskie innych firm](https://azuremarketpl
 
 Jeśli wymagania dotyczące magazynu (lub obciążeń) przekraczają pojemność sieci, urządzenie Azure Data Box może być nadal używane do transferu danych w trybie offline.
 
-Ogólne stanowisko firmy Microsoft polega na tym, że transmisja przez sieć jest podejściem zalecanym, chyba że sieć jest niedostępna. Ta sugestia wynika z szybkości transferu. Transferowanie danych przez sieć (nawet w przypadku ograniczonej przepustowości) jest przeważnie szybsze niż fizyczne dostarczenie tej samej ilości danych przy użyciu mechanizmu transferu w trybie offline, takiego jak urządzenie Data Box.
+Jest to zalecane podejście, chyba że sieć jest niedostępna. Szybkość transferu danych za pośrednictwem sieci, nawet jeśli przepustowość jest ograniczona, jest zazwyczaj szybsza niż fizyczna wysyłka tej samej ilości danych przy użyciu mechanizmu transferu w trybie offline, takiego jak urządzenie Data Box.
 
 Jeśli jest dostępna łączność z platformą Azure, należy przeprowadzić analizę przed użyciem urządzenia Data Box, szczególnie jeśli migracja obciążenia jest zależna od czasu. Urządzenie Data Box jest zalecane tylko wtedy, gdy czas przesyłania niezbędnych danych przekracza czas na wypełnienie, dostarczenie i przywrócenie danych przy użyciu urządzenia Data Box.
 
