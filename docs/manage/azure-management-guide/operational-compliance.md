@@ -10,28 +10,28 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7073df6b697da49429d4086d9f8f3f113583e52d
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557095"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565481"
 ---
 # <a name="operational-compliance-in-azure"></a>Zgodność operacyjna na platformie Azure
 
-Zgodność operacyjna to druga dyscyplina w planie bazowym zarządzania chmurą.
+_Zgodność operacyjna_ to druga dyscyplina w planie bazowym zarządzania chmurą.
 
 ![Plan bazowy zarządzania chmurą](../../_images/manage/management-baseline.png)
 
-Poprawa zgodności operacyjnej zmniejsza prawdopodobieństwo wystąpienia awarii związanej z odchyleniem konfiguracji lub pojawienia się luk w zabezpieczeniach spowodowanych niestosowaniem prawidłowych poprawek systemów.
+Poprawa zgodności operacyjnej zmniejsza prawdopodobieństwo wystąpienia awarii związanej z odchyleniem konfiguracji lub pojawienia się luk w zabezpieczeniach spowodowanych zastosowaniem nieprawidłowych poprawek systemów.
 
-Poniższa tabela zawiera sugerowane wartości minimalne planu bazowego zarządzania dla dowolnego środowiska klasy korporacyjnej.
+Ta tabela zawiera sugerowane wartości minimalne planu bazowego zarządzania dla dowolnego środowiska klasy korporacyjnej.
 
 |Proces  |Narzędzie  |Przeznaczenie  |
 |---------|---------|---------|
 |Zarządzanie poprawkami|Zarządzanie aktualizacjami|Planowanie aktualizacji i zarządzanie nimi|
 |Wymuszanie zasad|Azure Policy|Wymuszanie zasad w celu zapewnienia zgodności środowiska i gościa|
-|Środowisko — Konfigurowanie|Azure Blueprint|Zautomatyzowana zgodność dla podstawowych usług|
+|Konfiguracja środowiska|Azure Blueprints|Zautomatyzowana zgodność dla podstawowych usług|
 
 ::: zone target="docs"
 
@@ -48,26 +48,29 @@ W celu przeprowadzania ocen i wdrożeń aktualizacji na komputerach zarządzanyc
 
 - Program Microsoft Monitoring Agent (MMA) dla systemu Windows lub Linux
 - Platforma PowerShell Desired State Configuration (DSC) dla systemu Linux
-- Hybrydowy proces roboczy elementu runbook usługi Automation
+- Azure Automation — hybrydowy proces roboczy elementu Runbook
 - Usługa Microsoft Update lub Windows Server Update Services (WSUS) dla komputerów z systemem Windows
 
-Aby uzyskać więcej informacji, zobacz [Rozwiązanie Update Management](https://docs.microsoft.com/azure/automation/automation-update-management)
+Aby uzyskać więcej informacji, zobacz [Rozwiązanie Update Management](https://docs.microsoft.com/azure/automation/automation-update-management).
 
 > [!WARNING]
 > Przed rozpoczęciem korzystania z rozwiązania Update Management należy dołączyć maszyny wirtualne lub całą subskrypcję do usług Log Analytics i Azure Automation.
-> Dostępne są dwie metody dołączania — przed rozpoczęciem korzystania z rozwiązania Update Management należy wybrać jedną z nich.
+>
+> Wyróżniamy dwie metody dołączania:
 >
 > - [Pojedyncza maszyna wirtualna](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
 > - [Cała subskrypcja](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+>
+> Przed kontynuowaniem korzystania z rozwiązania Update Management należy wybrać jedną z nich.
 
 ### <a name="manage-updates"></a>Zarządzanie aktualizacjami
 
 Aby zastosować zasady do grupy zasobów:
 
 1. Wybierz pozycję [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
-2. Wybierz z listy **konto usługi Automation**.
-3. Znajdź sekcję **Zarządzanie konfiguracją** w obszarze nawigacji w portalu.
-4. Tworzenie spisu, zarządzanie zmianami i konfiguracja stanu — dowolnej z tych usług można używać do kontrolowania stanu i zgodności operacyjnej zarządzanych maszyn wirtualnych.
+1. Wybierz pozycję **Konta usługi Automation** i zaznacz jedno z wyświetlonych kont.
+1. Przejdź do obszaru **Zarządzanie konfiguracją**.
+1. Do kontrolowania stanu i zgodności operacyjnej zarządzanych maszyn wirtualnych można używać usług **Tworzenie spisu**, **Zarządzanie zmianami** i **Konfiguracja stanu**.
 
 ::: zone target="chromeless"
 
@@ -90,7 +93,7 @@ Aby zastosować zasady do grupy zasobów:
 
 ::: zone-end
 
-Usługa Azure Policy jest używana w procesach nadzoru nad ładem. Jednak jest ona również pomocna w procesach zarządzania chmurą. Oprócz przeprowadzania inspekcji i korygowania zasobów platformy Azure za pomocą usługi Azure Policy można przeprowadzać inspekcję ustawień wewnątrz maszyny. Taka weryfikacja jest wykonywana przez klienta i rozszerzenie konfiguracji gościa. Rozszerzenie to, obsługiwane za pośrednictwem klienta, umożliwia weryfikację następujących ustawień:
+Usługa Azure Policy jest używana w procesach nadzoru nad ładem. Jest ona również pomocna w procesach zarządzania chmurą. Za pomocą usługi Azure Policy można przeprowadzać inspekcję i korygowanie zasobów platformy Azure, a także inspekcję ustawień wewnątrz maszyny. Taka weryfikacja jest wykonywana przez klienta i rozszerzenie konfiguracji gościa. Rozszerzenie to, obsługiwane za pośrednictwem klienta, umożliwia weryfikację następujących ustawień:
 
 - Konfiguracja systemu operacyjnego
 - Konfiguracja lub obecność aplikacji
@@ -134,7 +137,9 @@ Aby dowiedzieć się więcej, zobacz:
 
 ::: zone-end
 
-Usługa Azure Blueprints umożliwia architektom chmury i centralnym grupom technologii informatycznych zdefiniowanie powtarzalnego zestawu zasobów platformy Azure, który implementuje standardy, wzorce i wymagania organizacji oraz jest z nimi zgodny. Usługa Azure Blueprints umożliwia zespołom programistów szybkie tworzenie i wdrażanie nowych środowisk z przekonaniem, że zostały one utworzone zgodnie z zasadami organizacji za pomocą zestawu wbudowanych składników — takich jak sieć — przyspieszających opracowywanie i dostarczanie.
+Dzięki usłudze Azure Blueprints architekci chmury i główne grupy IT mogą definiować powtarzalny zestaw zasobów platformy Azure. Te zasoby implementują standardy, wzorce i wymagania organizacji oraz zapewniają zgodność z nimi.
+
+Usługa Azure Blueprints umożliwia zespołom programistycznym szybkie tworzenie i wdrażania nowych środowisk. Zespoły mogą również mieć pewność, że tworzone środowiska są zgodne ze standardami organizacji. Wszystko to dzięki zestawowi wbudowanych składników, na przykład do obsługi sieci, które przyspieszają proces programowania i dostarczania.
 
 Usługa Blueprints umożliwia deklaratywne organizowanie i wdrażanie różnych szablonów zasobów i innych artefaktów, takich jak:
 
@@ -152,11 +157,12 @@ Aby utworzyć strategię:
 ::: zone target="chromeless"
 
 1. Przejdź do pozycji **Blueprints — Wprowadzenie**.
-1. W sekcji **Tworzenie strategii** wybierz pozycję **Utwórz**.
+1. W okienku **Tworzenie strategii** wybierz pozycję **Utwórz**.
 1. Przefiltruj listę strategii, aby wybrać odpowiednią strategię.
-1. Wprowadź **nazwę strategii** i wybierz odpowiednią **lokalizację definicji**.
-1. Kliknij przycisk **Dalej: Artefakty >>** i przejrzyj artefakty uwzględnione w strategii.
-1. Kliknij pozycję **Zapisz wersję roboczą**.
+1. W polu **Nazwa strategii** wprowadź nazwę strategii.
+1. Wybierz pozycję **Lokalizacja definicji**, a następnie wybierz odpowiednią lokalizację.
+1. Wybierz opcję **Dalej: Artefakty >>** i przejrzyj artefakty uwzględnione w strategii.
+1. Wybierz pozycję **Zapisz wersję roboczą**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -165,11 +171,12 @@ Aby utworzyć strategię:
 ::: zone target="docs"
 
 1. Przejdź do pozycji [Blueprints — Wprowadzenie](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
-1. W sekcji **Tworzenie strategii** wybierz pozycję **Utwórz**.
+1. W okienku **Tworzenie strategii** wybierz pozycję **Utwórz**.
 1. Przefiltruj listę strategii, aby wybrać odpowiednią strategię.
-1. Wprowadź **nazwę strategii** i wybierz odpowiednią **lokalizację definicji**.
-1. Kliknij przycisk **Dalej: Artefakty >>** i przejrzyj artefakty uwzględnione w strategii.
-1. Kliknij pozycję **Zapisz wersję roboczą**.
+1. W polu **Nazwa strategii** wprowadź nazwę strategii.
+1. Wybierz pozycję **Lokalizacja definicji**, a następnie wybierz odpowiednią lokalizację.
+1. Wybierz opcję **Dalej: Artefakty >>** i przejrzyj artefakty uwzględnione w strategii.
+1. Wybierz pozycję **Zapisz wersję roboczą**.
 
 ::: zone-end
 
@@ -182,7 +189,9 @@ Aby opublikować artefakty strategii w subskrypcji:
 1. Przejdź obszaru **Strategie — Definicje strategii**.
 1. Wybierz strategię utworzoną w poprzednim kroku.
 1. Przejrzyj definicję strategii i wybierz pozycję **Opublikuj strategię**.
-1. Podaj **wersję** (np. „1.0”) i wszelkie **uwagi dotyczące zmian**, a następnie wybierz pozycję **Publikuj**.
+1. W polu **Wersja** wprowadź numer wersji, na przykład „1.0”.
+1. W polu **Uwagi dotyczące zmian** wprowadź uwagi.
+1. Wybierz pozycję **Publikuj**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -193,7 +202,11 @@ Aby opublikować artefakty strategii w subskrypcji:
 1. Przejdź obszaru [Strategie — Definicje strategii](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Wybierz strategię utworzoną w poprzednim kroku.
 1. Przejrzyj definicję strategii i wybierz pozycję **Opublikuj strategię**.
-1. Podaj **wersję** (np. „1.0”) i wszelkie **uwagi dotyczące zmian**, a następnie wybierz pozycję **Publikuj**.
+1. W polu **Wersja** wprowadź numer wersji, na przykład „1.0”.
+1. W polu **Uwagi dotyczące zmian** wprowadź uwagi.
+1. Wybierz pozycję **Publikuj**.
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="learn-more"></a>Dowiedz się więcej
 

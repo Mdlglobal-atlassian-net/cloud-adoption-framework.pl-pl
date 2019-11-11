@@ -10,27 +10,27 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a79164435772f571849d0a836f43b53ce3bca087
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 83ac1abd6ce35b62f64722d101f599726c7b26b3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557010"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565414"
 ---
 # <a name="protect-and-recover-in-azure"></a>Ochrona i odzyskiwanie na platformie Azure
 
-Ochrona i odzyskiwanie to trzecia i ostatnia dyscyplina każdego planu bazowego zarządzania chmurą.
+_Ochrona i odzyskiwanie_ to trzecia i ostatnia dyscyplina każdego planu bazowego zarządzania chmurą.
 
 ![Plan bazowy zarządzania chmurą](../../_images/manage/management-baseline.png)
 
-W ostatnim artykule „Zgodność operacyjna” opisano, w jaki sposób można zmniejszyć prawdopodobieństwa przerwania działalności biznesowej. W tym artykule „Ochrona i odzyskiwanie” opisano, jak skrócić czas trwania przestojów, którym nie można zapobiec, i jak zmniejszyć ich wpływ na działalność.
+W artykule [Zgodność operacyjna na platformie Azure](./operational-compliance.md) opisano, w jaki sposób można zmniejszyć prawdopodobieństwa przerwania działalności biznesowej. W bieżącym artykule opisano, jak skrócić czas trwania przestojów, którym nie można zapobiec, i jak zmniejszyć ich wpływ na działalność.
 
-Poniższa tabela zawiera sugerowane wartości minimalne planu bazowego zarządzania dla dowolnego środowiska klasy korporacyjnej.
+Ta tabela zawiera sugerowane wartości minimalne planu bazowego zarządzania dla dowolnego środowiska klasy korporacyjnej:
 
 |Proces  |Narzędzie  |Przeznaczenie  |
 |---------|---------|---------|
-|Ochrona danych|Azure Backup|Tworzenie kopii zapasowych danych i maszyn wirtualnych w chmurze|
-|Ochrona środowiska|Azure Security Center|
+|Ochrona danych|Azure Backup|Tworzenie kopii zapasowych danych i maszyn wirtualnych w chmurze.|
+|Ochrona środowiska|Azure Security Center|Wzmocnienie bezpieczeństwa i zapewnienie zaawansowanej ochrony przed zagrożeniami w ramach obciążeń hybrydowych.|
 
 ::: zone target="docs"
 
@@ -43,13 +43,13 @@ Poniższa tabela zawiera sugerowane wartości minimalne planu bazowego zarządza
 
 ::: zone-end
 
-Azure Backup to oparta na platformie Azure usługa, która umożliwia tworzenie kopii zapasowej (lub ochronę) i odzyskiwanie danych w chmurze Microsoft Cloud. Usługa Azure Backup pozwala zastąpić dotychczasowe rozwiązania tworzenia kopii zapasowych, istniejące lokalnie lub poza siedzibą firmy, rozwiązaniem opartym na chmurze, które jest niezawodne, bezpieczne i konkurencyjne cenowo. Można jej również używać jako jedno, spójne rozwiązanie do ochrony i odzyskiwania zasobów lokalnych.
+Usługa Azure Backup umożliwia tworzenie kopii zapasowej, ochronę i odzyskiwanie danych w chmurze firmy Microsoft. Usługa Azure Backup pozwala zastąpić dotychczasowe rozwiązania tworzenia kopii zapasowych, istniejące lokalnie lub poza siedzibą firmy, rozwiązaniem opartym na chmurze. To nowe rozwiązanie jest niezawodne, bezpieczne i konkurencyjne. Usługa Azure Backup może również być używana jako jedno, spójne rozwiązanie pomagające chronić i odzyskiwać zasoby lokalne.
 
 ### <a name="enable-backup-for-an-azure-vm"></a>Włączanie tworzenia kopii zapasowej maszyny wirtualnej platformy Azure
 
 1. W witrynie Azure Portal wybierz pozycję **Maszyny wirtualne** i wybierz maszynę wirtualną, którą chcesz zreplikować.
-1. W obszarze **Operacje** wybierz pozycję **Kopia zapasowa**.
-1. Utwórz lub wybierz istniejący magazyn usług Recovery Services.
+1. W okienku **Operacje** wybierz pozycję **Kopia zapasowa**.
+1. Utwórz lub wybierz istniejący magazyn usługi Azure Recovery Services.
 1. Wybierz pozycję **Utwórz (lub edytuj) nowe zasady**.
 1. Skonfiguruj harmonogram i okres przechowywania.
 1. Kliknij przycisk **OK**.
@@ -76,23 +76,22 @@ Azure Backup to oparta na platformie Azure usługa, która umożliwia tworzenie 
 
 Azure Site Recovery to krytyczny składnik strategii odzyskiwania po awarii.
 
-Usługa Azure Site Recovery umożliwia replikowanie maszyn wirtualnych i obciążeń hostowanych w podstawowym regionie platformy Azure do kopii hostowanej w regionie pomocniczym. Gdy w regionie podstawowym wystąpi awaria, obciążenie można uruchomić w trybie pracy awaryjnej w regionie pomocniczym i nadal uzyskiwać dostęp do aplikacji i usług. To proaktywne podejście do odzyskiwania może znacznie skrócić czas odzyskiwania. Gdy środowisko odzyskiwania nie jest już potrzebne, ruch produkcyjny może zostać przywrócony do oryginalnego środowiska.
+Usługa Site Recovery replikuje maszyny wirtualne i obciążenia hostowane w podstawowym regionie świadczenia usługi Azure. Następnie jest wykonywana replikacja do kopii hostowanej w regionie pomocniczym. Gdy w regionie podstawowym wystąpi awaria, nastąpi przełączenie w tryb failover do kopii działającej w regionie pomocniczym. Twoje aplikacje i usługi będą nadal dostępne, ale z regionu pomocniczego. To proaktywne podejście do odzyskiwania może znacznie skrócić czas odzyskiwania. Gdy środowisko odzyskiwania nie będzie już potrzebne, ruch produkcyjny może zostać przywrócony do oryginalnego środowiska.
 
-### <a name="replicate-an-azure-vm-to-another-region-with-site-recovery-service"></a>Replikowanie maszyny wirtualnej platformy Azure do innego regionu przy użyciu usługi Site Recovery
+### <a name="replicate-an-azure-vm-to-another-region-with-site-recovery"></a>Replikowanie maszyny wirtualnej platformy Azure do innego regionu przy użyciu usługi Site Recovery
 
-Poniższe kroki przedstawiają proces replikacji maszyny wirtualnej platformy Azure do innego regionu (z platformy Azure do platformy Azure) przy użyciu usługi Site Recovery:
-
+Poniższe kroki przedstawiają proces replikacji maszyny wirtualnej platformy Azure do innego regionu (replikacja z platformy Azure do platformy Azure) przy użyciu usługi Site Recovery.
 >
 > [!TIP]
-> Zależności od scenariusza dokładne kroki mogą się nieco różnić.
+> W zależności od scenariusza dokładne kroki mogą się nieco różnić.
 >
 
 ### <a name="enable-replication-for-the-azure-vm"></a>Włączanie replikacji maszyny wirtualnej platformy Azure
 
 1. W witrynie Azure Portal wybierz pozycję **Maszyny wirtualne** i wybierz maszynę wirtualną, którą chcesz zreplikować.
-1. W obszarze **Operacja** wybierz pozycję **Odzyskiwanie po awarii**.
-1. W obszarze **Konfigurowanie odzyskiwania po awarii** > **Region docelowy** wybierz region docelowy, w którym maszyna będzie replikowana.
-1. W przypadku tego przewodnika Szybki Start należy zaakceptować ustawienia domyślne.
+1. W okienku **Operacje** wybierz pozycję **Odzyskiwanie po awarii**.
+1. Wybierz pozycję **Konfigurowanie odzyskiwania po awarii** > **Region docelowy**, a następnie wybierz region docelowy, do którego ma nastąpić replikacja.
+1. Na potrzeby tego przewodnika Szybki start zaakceptuj wartości domyślne dla wszystkich pozostałych opcji.
 1. Wybierz pozycję **Włącz replikację**. Spowoduje to uruchomienie zadania włączającego replikację dla maszyny wirtualnej.
 
 ::: zone target="chromeless"
@@ -106,7 +105,7 @@ Poniższe kroki przedstawiają proces replikacji maszyny wirtualnej platformy Az
 Po zakończeniu zadania replikacji można sprawdzić stan replikacji, zweryfikować kondycję replikacji i przetestować wdrożenie.
 
 1. W menu maszyny wirtualnej wybierz pozycję **Odzyskiwanie po awarii**.
-2. Sprawdź kondycję replikacji, utworzone punkty odzyskiwania oraz regiony źródłowy i docelowy na mapie.
+1. Sprawdź kondycję replikacji, utworzone punkty odzyskiwania oraz regiony źródłowy i docelowy na mapie.
 
 ::: zone target="chromeless"
 

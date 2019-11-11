@@ -10,18 +10,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 20dd988f3e79c513647f74ade9edad307e01d839
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: c9a02a6d98929455d8d8f6c163825f69de7996be
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379156"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73562571"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Zarządzanie kosztami i rozliczeniami dla zasobów platformy Azure
 
 Zarządzanie kosztami to proces efektywnego planowania i kontrolowania kosztów związanych z działalnością. Zadania zarządzania kosztami są zazwyczaj wykonywane przez zespoły ds. finansów, zarządzania i aplikacji. Usługa Azure Cost Management może ułatwić planowanie z uwzględnieniem kosztów. Ułatwia ona również efektywne analizowanie kosztów i podejmowanie działań mających na celu optymalizację wydatków dotyczących chmury.
 
-Aby uzyskać więcej informacji na temat integrowania procesów zarządzania kosztami chmury w całej organizacji, zapoznaj się z artykułem przewodnika Cloud Adoption Framework dla platformy Azure dotyczącym [śledzenia kosztów w jednostkach biznesowych, środowiskach i projektach](../azure-best-practices/track-costs.md).
+Aby uzyskać więcej informacji na temat integrowania procesów zarządzania kosztami chmury w całej organizacji, zapoznaj się z artykułem przewodnika Cloud Adoption Framework dotyczącym [śledzenia kosztów w jednostkach biznesowych, środowiskach i projektach](../azure-best-practices/track-costs.md).
 
 ## <a name="manage-your-costs-with-azure-cost-management"></a>Zarządzanie kosztami przy użyciu usługi Azure Cost Management
 

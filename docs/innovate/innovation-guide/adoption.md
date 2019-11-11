@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2b2c4768cbe74363cd50b7730c3ba6b4078db14c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 98db83bf842fe4c293eba482572bffbdb50caed6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058105"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565562"
 ---
 ::: zone target="docs"
 
@@ -36,7 +36,7 @@ Tworzenie nowego, innowacyjnego rozwiązania nie polega na spełnianiu zachciane
 - **Ilościowe (informacje zwrotne z testów):** Te informacje zwrotne mierzą akcje, których się spodziewamy.
 - **Jakościowe (informacje zwrotne od klientów):** Te informacje mówią nam o tym, co oznaczają te metryki w głosowaniu klienta.
 
-Należy zapewnić udostępnione repozytorium dla swojego rozwiązania przed zintegrowaniem pętli informacji zwrotnych. Scentralizowane repozytorium umożliwia rejestrowanie wszystkich informacji zwrotnych dotyczących projektu i reagowanie na nie. Serwis [GitHub](https://github.com/) to podstawowe miejsce przechowywania oprogramowania typu open source. Jest to również jedna z najczęściej używanych platform do hostowania repozytoriów kodu źródłowego aplikacji komercyjnych. Artykuł dotyczący [tworzenia repozytoriów GitHub](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) ułatwi Ci rozpoczęcie korzystania z repozytorium.
+Należy zapewnić udostępnione repozytorium dla swojego rozwiązania przed zintegrowaniem pętli informacji zwrotnych. Scentralizowane repozytorium umożliwia rejestrowanie wszystkich informacji zwrotnych dotyczących projektu i reagowanie na nie. Serwis [GitHub](https://github.com) to podstawowe miejsce przechowywania oprogramowania typu open source. Jest to również jedna z najczęściej używanych platform do hostowania repozytoriów kodu źródłowego aplikacji komercyjnych. Artykuł dotyczący [tworzenia repozytoriów GitHub](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) ułatwi Ci rozpoczęcie korzystania z repozytorium.
 
 Każde z poniższych narzędzi platformy Azure umożliwia integrację z projektami hostowanymi w witrynie GitHub (lub jest z nimi zgodne):
 
@@ -126,7 +126,7 @@ Lista prac (tablica) umożliwia rejestrowanie informacji zwrotnych jako scenariu
 ### <a name="action"></a>Akcja
 
 Usługi Azure Boards i Azure Pipelines wymagają oddzielnego portalu w witrynie GitHub i na platformie Azure.
-Aby rozpocząć pracę z tymi narzędziami, wybierz usługę [Azure DevOps](https://dev.azure.com/).
+Aby rozpocząć pracę z tymi narzędziami, wybierz usługę [Azure DevOps](https://dev.azure.com).
 
 ::: zone-end
 
@@ -138,11 +138,11 @@ Aby rozpocząć pracę z tymi narzędziami, wybierz usługę [Azure DevOps](http
 
 Aby utworzyć projekt DevOps:
 
-1. Wybierz pozycję **Projekt usługi Azure DevOps**.
+1. Wybierz pozycję **Projekty usługi Azure DevOps**.
 2. Wybierz pozycję **Utwórz projekt DevOps**.
 3. Wybierz pozycję **Środowisko wykonawcze, struktura i usługa**.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -152,8 +152,8 @@ Aby utworzyć projekt DevOps:
 
 Te artykuły ułatwią scentralizowanie informacji zwrotnych i zarządzanie nimi przy użyciu usługi Azure Boards wraz z platformą GitHub:
 
-- [Wprowadzenie do usługi Azure Boards](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
-- [Usługa Azure Boards i witryna GitHub](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
+- [Wprowadzenie do usługi Azure Boards](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
+- [Usługa Azure Boards i witryna GitHub](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Zamykanie pętli z potokami](#tab/pipelines)
 
@@ -163,15 +163,15 @@ Reagowanie na informacje zwrotne nie zawsze skutkuje wprowadzeniem funkcji, o kt
 
 Aby wyświetlić bieżące wdrożenia w potoku:
 
-1. Wybierz usługę **App Service**.
+1. Wybierz pozycję **App Services**.
 2. Wybierz z listy odpowiednią aplikację.
-3. Wybierz pozycję **Centrum wdrażania** w sekcji **Wdrożenie** w okienku usług aplikacji.
+3. Wybierz pozycję **Centrum wdrażania** w sekcji **Wdrożenie** w okienku usług App Services.
 
 ::: zone target="chromeless"
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 39c756c1d90cc9baf7927b2a0ba02814a82f6031
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: a2acba3f9aa06298922d2cc95d298d3792a9ada9
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058800"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240011"
 ---
 # <a name="assess-the-digital-estate"></a>Szacowanie majątku cyfrowego
 
@@ -31,7 +31,7 @@ Poniższe narzędzia ułatwiają ocenę środowiska, określenie jego przydatno�
 
 ## <a name="azure-migrate"></a>Azure Migrate
 
-Usługa Azure Migrate ocenia lokalną infrastrukturę, aplikacje i dane pod kątem migracji na platformę Azure. Obejmuje to ocenę gotowości zasobów lokalnych do migracji, określenie rozmiaru odpowiedniego do wydajności oraz oszacowanie kosztów uruchamiania zasobów lokalnych na platformie Azure. Usługa ta jest przeznaczona dla osób, które zamierzają przeprowadzić migrację metodą „lift-and-shift” lub dopiero zaczęły oceniać możliwość migracji. Po zakończeniu oceny usługę Azure Migrate można wykorzystać do wykonania migracji.
+Usługa Azure Migrate ocenia lokalną infrastrukturę, aplikacje i dane pod kątem migracji na platformę Azure. Obejmuje to ocenę gotowości zasobów lokalnych do migracji, określenie rozmiaru odpowiedniego do wydajności oraz oszacowanie kosztów uruchamiania zasobów lokalnych na platformie Azure. Ta usługa jest przeznaczona dla osób, które zamierzają przeprowadzić migrację metodą „lift-and-shift” lub dopiero zaczęły oceniać możliwość migracji. Po zakończeniu oceny usługę Azure Migrate można wykorzystać do wykonania migracji.
 
 ![Azure Migrate — przegląd](./media/assess/azuremigrate-overview-1.png)
 
