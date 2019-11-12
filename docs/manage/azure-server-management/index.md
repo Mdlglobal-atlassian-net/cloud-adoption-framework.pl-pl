@@ -1,21 +1,21 @@
 ---
-title: Omówienie usług zarządzania serwerami na platformie Azure
+title: Omówienie usług zarządzania serwerem na platformie Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Wprowadzenie do usług zarządzania serwerami na platformie Azure
+description: Wprowadzenie do usług zarządzania serwerem na platformie Azure
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 53feb14cab8f2109b86aa5850d856261d132ba19
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 8d512141fa20e408e9955b14c560f1037adcd08f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656604"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752903"
 ---
-# <a name="overview-of-azure-server-management-services"></a>Omówienie usług zarządzania serwerami na platformie Azure
+# <a name="overview-of-azure-server-management-services"></a>Omówienie usług zarządzania serwerem na platformie Azure
 
 Usługi zarządzania serwerami na platformie Azure zapewniają spójne środowisko zarządzania serwerami na dużą skalę. Te usługi obejmują systemy operacyjne Linux i Windows. Można ich używać w środowiskach produkcyjnych, deweloperskich i testowych. Usługi zarządzania serwerami mogą obsługiwać maszyny wirtualne IaaS platformy Azure, serwery fizyczne i maszyny wirtualne hostowane lokalnie lub w innych środowiskach hostingu.
 
@@ -25,7 +25,7 @@ Ta sekcja przewodnika Microsoft Cloud Adoption Framework zawiera normatywny i um
 
 Dla uproszczenia podzieliliśmy ten przewodnik na trzy etapy:
 
-![Trzy etapy dołączania pakietu zarządzania serwerami platformy Azure](./media/operations-stages.png)
+![Trzy etapy dołączania pakietu zarządzania serwerem platformy Azure](./media/operations-stages.png)
 
 <!-- markdownlint-disable MD026 -->
 
@@ -40,7 +40,7 @@ Usługi zarządzania serwerami na platformie Azure oferują następujące korzy�
 
 ## <a name="next-steps"></a>Następne kroki
 
-Zapoznaj się z [narzędziami, usługami i planami](./prerequisites.md) związanymi z wdrożeniem pakietu zarządzania serwerami na platformie Azure.
+Zapoznaj się z [narzędziami, usługami i planami](./prerequisites.md) związanymi z wdrożeniem pakietu zarządzania serwerem na platformie Azure.
 
 > [!div class="nextstepaction"]
 > [Wstępnie wymagane narzędzia i planowanie](./prerequisites.md)
