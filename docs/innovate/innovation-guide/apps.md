@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3d8d8007125a0ffa6268132f1d608123c25c9c22
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: bafeecd715ac2c18c9ae744165be249c2b3639e5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058542"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751555"
 ---
 ::: zone target="docs"
 
@@ -43,7 +43,7 @@ Jedną z zalet rozwiązań opartych na chmurze jest możliwość szybszego zbier
 
 Usługa Azure App Service zapewnia środowisko hostingu dla aplikacji, które eliminuje niedogodności związane z zarządzaniem infrastrukturą i stosowaniem poprawek systemu operacyjnego. Usługa ta pozwala spełnić potrzeby użytkowników dzięki automatyzacji skalowania przy zachowaniu zdefiniowanych limitów, umożliwiających kontrolę nad kosztami.
 
-Usługa App Service zapewnia najwyższej jakości obsługę języków ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP i Python. Jeśli musisz hostować inny stos środowiska uruchomieniowego, możesz skorzystać z funkcji Web App for Containers, która umożliwia szybkie i łatwe rozpoczęcie hostowania kontenera Docker w środowisku Azure App Service. Pozwala to hostować niestandardowy stos kodu w środowisku, w którym nie są używane serwery.
+Usługa App Service zapewnia najwyższej jakości obsługę języków ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP i Python. Jeśli musisz hostować inny stos środowiska uruchomieniowego, możesz skorzystać z funkcji Web App for Containers, która umożliwia szybkie i łatwe rozpoczęcie hostowania kontenera Docker w usłudze App Service. Pozwala to hostować niestandardowy stos kodu w środowisku, w którym nie są używane serwery.
 
 ### <a name="action"></a>Akcja
 

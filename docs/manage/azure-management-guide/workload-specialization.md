@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 92b9988d47dcc8ba4b7a7e3dd02a4ec9ff3ed2e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2381a7579fad573abeca6afafd6f6fbaa6310ee4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565378"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752919"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Specjalizacja obciążeń dotycząca zarządzania chmurą
 
@@ -46,7 +46,7 @@ W tym modelu zadania operacyjne, takie jak monitorowanie, wdrażanie, DevOps ora
 
 Te scentralizowane zespoły kierują również pracą wyspecjalizowanych zespołów ds. obciążeń, udzielając porad w zakresie operacji związanych z obciążeniami. Jednak codzienne czynności związane z zarządzaniem operacyjnym są wykonywane przez zespół ds. zarządzania chmurą, który nie należy do działu IT. Taka rozproszona kontrola jest jednym z głównych wskaźników dojrzałości zespołu centrum doskonałości chmury.
 
-## <a name="beyond-platform-specialization---application-insights"></a>Nie tylko specjalizacja platformy — usługa Application Insights
+## <a name="beyond-platform-specialization-application-insights"></a>Poza specjalizacją platformy: Application Insights
 
 Zapewnienie przejrzystych operacji obciążeń wymaga większej liczby szczegółowych informacji dotyczących konkretnego obciążenia. W fazie ciągłego ulepszania usługa Application Insights staje się niezbędnym dodatkiem do łańcucha narzędzi zarządzania chmurą.
 

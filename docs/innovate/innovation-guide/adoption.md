@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 98db83bf842fe4c293eba482572bffbdb50caed6
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a6eb791e22d834f51face8819133c0ada6774952
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565562"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752945"
 ---
 ::: zone target="docs"
 
@@ -152,8 +152,8 @@ Aby utworzyć projekt DevOps:
 
 Te artykuły ułatwią scentralizowanie informacji zwrotnych i zarządzanie nimi przy użyciu usługi Azure Boards wraz z platformą GitHub:
 
-- [Wprowadzenie do usługi Azure Boards](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
-- [Usługa Azure Boards i witryna GitHub](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
+- [Wprowadzenie do usługi Azure Boards](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
+- [Usługa Azure Boards i witryna GitHub](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Zamykanie pętli z potokami](#tab/pipelines)
 
