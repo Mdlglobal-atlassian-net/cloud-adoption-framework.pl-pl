@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: cd8dc50480480766ec4b4413d0dddfaeafc69f7f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222179"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160120"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Motywacje linii bazowej tożsamości i ryzyko biznesowe
 
@@ -24,7 +24,7 @@ W tym artykule omówiono przyczyny, w których klienci zazwyczaj przyjmują dysc
 
 ## <a name="identity-baseline-relevancy"></a>Dokładność linii bazowej tożsamości
 
-Tradycyjne katalogi lokalne zostały zaprojektowane tak, aby umożliwić firmom ścisłą kontrolę uprawnień i zasad dla użytkowników, grup i ról w swoich sieciach wewnętrznych i centrach danych. Jest to zwykle przeznaczone do obsługi implementacji pojedynczej dzierżawy z usługami mającymi zastosowanie tylko w środowisku lokalnym.
+Tradycyjne katalogi lokalne zostały zaprojektowane tak, aby umożliwić firmom ścisłą kontrolę uprawnień i zasad dla użytkowników, grup i ról w swoich sieciach wewnętrznych i centrach danych. Te katalogi zazwyczaj obsługują implementacje z jedną dzierżawą, z usługami mającymi zastosowanie tylko w środowisku lokalnym.
 
 Usługi tożsamości w chmurze rozszerzają możliwości uwierzytelniania i kontroli dostępu w organizacji do Internetu. Obsługują one Wielodostępność i mogą służyć do zarządzania użytkownikami i zasadami dostępu w aplikacjach i wdrożeniach w chmurze. Platformy chmury publicznej mają natywne usługi tożsamości obsługujące zadania związane z zarządzaniem i wdrażaniem oraz mogą mieć [różne poziomy integracji](../../decision-guides/identity/index.md) z istniejącymi lokalnymi rozwiązaniami do obsługi tożsamości. Wszystkie te funkcje mogą spowodować, że zasady tożsamości w chmurze są bardziej skomplikowane niż wymagania dotyczące tradycyjnych rozwiązań lokalnych.
 

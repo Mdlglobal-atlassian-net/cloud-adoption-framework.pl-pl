@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: fc06264bad61571aaa4735350a16e294492dd9c0
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 315797d7ef4ab93d5d386ee32a499f4172752687
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547719"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159934"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Popraw początkową podstawę ładu w chmurze
 
@@ -31,7 +31,7 @@ W dowolnym momencie następujące najlepsze rozwiązania można zastosować do p
 |Ryzyko/zapotrzebowanie | Przedsiębiorstwo standardowe | Przedsiębiorstwo złożone |
 |---|---|---|
 |Poufne dane w chmurze|[Ulepszanie dyscypliny](./guides/standard/security-baseline-improvement.md)|[Ulepszanie dyscypliny](./guides/complex/security-baseline-improvement.md)|
-|Aplikacje o znaczeniu strategicznym w chmurze|[Ulepszanie dyscypliny](./guides/standard/resource-consistency-improvement.md)|[Ulepszanie dyscypliny](./guides/complex/resource-consistency-improvement.md)|
+|Aplikacje o kluczowym znaczeniu w chmurze|[Ulepszanie dyscypliny](./guides/standard/resource-consistency-improvement.md)|[Ulepszanie dyscypliny](./guides/complex/resource-consistency-improvement.md)|
 |Zarządzanie kosztami chmury|[Ulepszanie dyscypliny](./guides/standard/cost-management-improvement.md)|[Ulepszanie dyscypliny](./guides/complex/cost-management-improvement.md)|
 |Rozwiązanie wielochmurowe|[Ulepszanie dyscypliny](./guides/standard/multicloud-improvement.md)|[Ulepszanie dyscypliny](./guides/complex/multicloud-improvement.md)|
 |Złożone/starsze Zarządzanie tożsamościami|ND|[Ulepszanie dyscypliny](./guides/complex/identity-baseline-improvement.md)|

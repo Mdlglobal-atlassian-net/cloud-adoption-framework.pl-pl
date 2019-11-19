@@ -1,5 +1,5 @@
 ---
-title: 'Sieć zdefiniowana przez oprogramowanie: Natywne dla chmury'
+title: 'Sieć zdefiniowana przez oprogramowanie: chmura natywna'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Omówienie natywnych usług sieci wirtualnych w chmurze.
 author: rotycenh
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d9dda8b5cb91b97da2da50bc747cb3bd6b31947e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf585f923a4c8abddeeb56bab4a3a4b8eb370f8d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023577"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160207"
 ---
-# <a name="software-defined-networking-cloud-native"></a>Sieć zdefiniowana przez oprogramowanie: Natywne dla chmury
+# <a name="software-defined-networking-cloud-native"></a>Sieć zdefiniowana przez oprogramowanie: chmura natywna
 
 Natywna Sieć wirtualna w chmurze jest wymagana w przypadku wdrażania zasobów IaaS, takich jak maszyny wirtualne, na platformę chmury. Dostęp do sieci wirtualnych ze źródeł zewnętrznych, podobnie jak w przypadku sieci Web, musi być jawnie zainicjowany. Te typy sieci wirtualnych obsługują Tworzenie podsieci, reguł routingu oraz urządzeń wirtualnych i zarządzania ruchem.
 
@@ -41,5 +41,5 @@ Dodatkowe problemy, które zespół rozwiązań w chmurze powinien wziąć pod u
 
 Aby uzyskać więcej informacji na temat natywnych sieci wirtualnych w chmurze na platformie Azure, zobacz:
 
-- [Azure Virtual Network: Prowadnice](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Nowo utworzone sieci wirtualne platformy Azure są domyślnie natywne w chmurze. Te przewodniki ułatwiają planowanie projektowania i wdrażania sieci wirtualnych.
-- [Limity subskrypcji: Sieć](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits). Każda pojedyncza Sieć wirtualna i połączone zasoby mogą istnieć tylko w ramach jednej subskrypcji i są ograniczone przez limity subskrypcji.
+- [Virtual Network platformy Azure: prowadnice](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Nowo utworzone sieci wirtualne platformy Azure są domyślnie natywne w chmurze. Te przewodniki ułatwiają planowanie projektowania i wdrażania sieci wirtualnych.
+- [Limity subskrypcji: sieć](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Każda pojedyncza Sieć wirtualna i połączone zasoby mogą istnieć tylko w ramach jednej subskrypcji i są ograniczone przez limity subskrypcji.

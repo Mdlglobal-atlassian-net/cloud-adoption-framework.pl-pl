@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f809003c1181c925a5b86abfb162a6032614f53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564579"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159853"
 ---
 # <a name="decisions-that-affect-migration"></a>Decyzje, które mają wpływ na migrację
 
@@ -80,8 +80,8 @@ Często migracje są spowodowane ważnym zdarzeniem biznesowym, które jest zale
 Przed kontynuowaniem należy udokumentować następujące założenia i udostępnić je zespołowi strategicznemu ds. chmury i zespołom wdrożeniowym ds. chmury:
 
 - wyniki biznesowe,
-- role. Zostaną one udokumentowane i ulepszone w ramach procesów *oceny*, *migracji*, *optymalizacji* oraz *zabezpieczenia i zarządzania*.
-- Definicja gotowości Zostanie ona udokumentowana i ulepszona oddzielnie dla procesów *oceny*, *migracji*, *optymalizacji* oraz *zabezpieczenia i zarządzania* w ramach migracji.
+- Role, udokumentowane i ulepszone do *oceny*, *migracji*, *optymalizacji*i *zabezpieczania procesów migracji oraz zarządzania nimi* .
+- Definicje gotowych, udokumentowanych i rafinowanych w celu *oceny*, *migracji*, *optymalizacji*i *zabezpieczania procesów migracji oraz zarządzania nimi* .
 - Typ nakładu pracy
 - Skala nakładu pracy
 - Harmonogram prac

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 60f622411a71284fa8e97f457da2461ec6e02ac3
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 70ae0b048b0cf5e3bd364f8c0cc1051c515c39ea
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564645"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159898"
 ---
 # <a name="understand-partnership-options"></a>Informacje o opcjach partnerstwa
 
@@ -84,7 +84,7 @@ Główne fazy typowej asysty w ramach programu FastTrack for Azure to:
 
 **Migracja/Optymalizacja:** [Rozwiązanie do modernizacji w chmurze](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) usług firmy Microsoft oferuje kompleksowe podejście do przenoszenia aplikacji i infrastruktury na platformę Azure, a także optymalizację i modernizację po wdrożeniu w chmurze.
 
-**Innowacje:** [Rozwiązanie Cloud Center (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) usług firmy Microsoft oferuje DevOps szkoleń Engagement i używa zasad DevOps w połączeniu z wbudowaną w chmurze funkcją zarządzania usługami i kontrolami zabezpieczeń, aby pomóc w ulepszaniu innowacji biznesowych. Zwiększ elastyczność i Ogranicz czas do korzyści w ramach bezpiecznej, przewidywalnej i elastycznej funkcji dostarczania usług i zarządzania operacjami.
+**Innowacje:** [Rozwiązanie Cloud Center (CCoE) dla](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) usług firmy Microsoft oferuje DevOpse szkoleńe i korzysta z zasad DevOps związanych z wbudowanymi w chmurze funkcjami zarządzania usługami i zabezpieczeniami, które ułatwiają tworzenie innowacji biznesowych, zwiększanie elastyczności i skrócenie czasu wprowadzania wartości w ramach bezpiecznych, przewidywalnych i elastycznych usług dostarczania i zarządzania operacjami.
 
 ## <a name="azure-support"></a>Pomoc techniczna systemu Azure
 

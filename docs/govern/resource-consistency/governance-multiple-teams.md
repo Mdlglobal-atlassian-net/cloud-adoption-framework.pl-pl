@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656688"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160481"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Projekt nadzoru dla wielu zespołów
 
@@ -82,6 +82,7 @@ W związku z tym, aby utworzyć model dostępu o najniższych uprawnieniach, nal
 Przyjrzyjmy się dwóm przykładowym modelom uprawnień do lepszego zrozumienia tego pojęcia. W pierwszym przykładzie model ufa tylko administratorowi usługi do tworzenia grup zasobów. W drugim przykładzie model przypisuje wbudowaną rolę właściciela do każdego właściciela obciążenia w zakresie subskrypcji.
 
 W obu przykładach istnieje administrator usługi subskrypcji, który ma przypisaną rolę właściciela wbudowanego w zakresie subskrypcji. Odwołaj, że wbudowana rola właściciela przyznaje wszystkie uprawnienia, w tym zarządzanie dostępem do zasobów.
+
 ![administratora usługi subskrypcji z rolą właściciela](../../_images/govern/design/governance-2-1.png)
 *rysunku 3 — subskrypcję z administratorem usługi przypisaną rolę właściciela wbudowanego.*
 

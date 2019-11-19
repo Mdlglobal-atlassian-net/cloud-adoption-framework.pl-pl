@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df4792fda1436d822108dc20d422e6912a0709f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753511"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159873"
 ---
 # <a name="evaluate-workload-readiness"></a>Ocena gotowości obciążeń
 
@@ -23,7 +23,7 @@ To działanie koncentruje się na ocenie gotowości obciążenia do migracji do 
 
 Większość zasad dotyczących omawiania zawartości w strukturze wdrażania w chmurze to niezależny od w chmurze. Jednak proces oceny gotowości musi być w dużej mierze specyficzny dla każdej konkretnej platformy w chmurze. W poniższych wskazówkach przyjęto założenie zamiaru migracji na platformę Azure. Przyjęto również, że dla [działań związanych z replikacją](../migrate/replicate.md) używana jest usługa Azure Migrate (znana również jako usługa Azure Site Recovery). Aby zapoznać się z alternatywnymi narzędziami, zobacz [opcje replikacji](../migrate/replicate-options.md).
 
-Ten artykuł nie uwzględnia wszystkich możliwych działań ewaluacyjnych. Zakłada się, że każde środowisko i wynik biznesowy będą określać specyficzne wymagania. Aby przyspieszyć tworzenie tych wymagań, w pozostałej części tego artykułu opisano kilka typowych działań oceny związanych z oceną [infrastruktury](#common-infrastructure-evaluation-activities), [bazy danych](#common-database-evaluation-activities) i [sieci](#common-network-evaluation-activities).
+W tym artykule nie są przechwytywane wszystkie możliwe działania ewaluacyjne. Zakłada się, że każde środowisko i wynik biznesowy będą określać specyficzne wymagania. Aby przyspieszyć tworzenie tych wymagań, w pozostałej części tego artykułu opisano kilka typowych działań oceny związanych z oceną [infrastruktury](#common-infrastructure-evaluation-activities), [bazy danych](#common-database-evaluation-activities) i [sieci](#common-network-evaluation-activities).
 
 ## <a name="common-infrastructure-evaluation-activities"></a>Typowe działania oceny infrastruktury
 

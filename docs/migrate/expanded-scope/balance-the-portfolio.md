@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753473"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159915"
 ---
 # <a name="balance-the-portfolio"></a>Równoważenie portfela
 
@@ -95,7 +95,7 @@ Aby zmniejszyć złożoność, należy postępować zgodnie z tradycyjnym podej�
   - Jeśli obciążenie nie jest strategiczne, ale jest zgodne z nowoczesnymi, opartymi na chmurze platformami hostingu aplikacji, rozsądne może być przeprowadzenie niewielkiej refaktoryzacji aplikacji w celu wdrożenia jej jako nowoczesnej aplikacji. Może to przyczynić się do ogólnego oszczędności przez zredukowanie ogólnych wymagań licencyjnych IaaS i systemów operacyjnych migracji do chmury.
   - Jeśli obciążenie jest aplikacją innej firmy, a dane obciążenia nie są planowane do użycia w dalszych innowacjach, najlepszym rozwiązaniem może być pozostawienie opcji ponownego hostowania na liście prac.
 
-Te pytania nie powinny ograniczać analizy jakościowej wykonywanej dla każdego obciążenia, ale mogą ułatwić prowadzenie rozmów, które pomogą uporać się ze złożonością niezrównoważonego portfela.
+Pytania te nie powinny stanowić zakresu analizy jakościowej wykonanej dla każdego obciążenia, ale mogą one pomóc w rozmowie dotyczącym złożoności niezrównoważonego portfolio.
 
 ## <a name="migrate-process-changes"></a>Zmiany procesu migracji
 

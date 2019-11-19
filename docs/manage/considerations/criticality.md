@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1742f794f12501a1506cc6228241435adc5fba52
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 219c5b402c9cdc4b6214e8a5ed38b85ba7a2e203
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565165"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160357"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Krytyczne znaczenie biznesowe w zarządzaniu chmurą
 
-Dla każdej firmy istnieje niewielka liczba obciążeń, które są zbyt ważne, aby zakończyć się niepowodzeniem. Są one uznawane za krytyczne. Gdy te obciążenia są w stanie awarii lub obniżeniu wydajności, niekorzystny wpływ na dochody i zyskowność można uzyskać w całej firmie.
+Dla każdej firmy istnieje niewielka liczba obciążeń, które są zbyt ważne, aby zakończyć się niepowodzeniem. Te obciążenia są uznawane za krytyczne. Gdy te obciążenia są w stanie awarii lub obniżeniu wydajności, niekorzystny wpływ na dochody i zyskowność można uzyskać w całej firmie.
 
 Z drugiej strony, niektóre obciążenia mogą zaczynać miesiące w danym momencie bez użycia. Niska wydajność lub przerwy w obciążeniu nie są pożądane, ale wpływ jest odizolowany i ograniczony.
 
@@ -35,8 +35,8 @@ Pierwszym krokiem w celu wyrównania znaczenia dla działania firmy jest utworze
 | Operacje krytyczne dla działalności firmy |  Wpływa na misja firmy i może w zauważalny sposób mieć wpływ na firmowe zestawienie zysków i strat. |
 | Jednostka — krytyczne | Ma wpływ na misja określonej jednostki biznesowej i jej zestawień zysków i strat. |
 | Wysoka | Może nie utrudniać misja, ale ma wpływ na procesy o wysokiej ważności. Wymierne straty mogą być wymierne w przypadku awarii. |
-| Medium | Prawdopodobnie ma to wpływ na procesy. Straty są niskie lub wymierne, ale przyczyną mogą być uszkodzenia marki lub straty w strumieniu. |
-| Małe | Wpływ na procesy biznesowe nie jest wymierny. Nie ma to żadnego uszkodzenia marki ani utraty strumienia. Prawdopodobnie zlokalizowany wpływ na pojedynczy zespół. |
+| Średnie | Prawdopodobnie ma to wpływ na procesy. Straty są niskie lub wymierne, ale przyczyną mogą być uszkodzenia marki lub straty w strumieniu. |
+| Niska | Wpływ na procesy biznesowe nie jest wymierny. Nie ma to żadnego uszkodzenia marki ani utraty strumienia. Prawdopodobnie zlokalizowany wpływ na pojedynczy zespół. |
 | Nieobsługiwane | Żaden właściciel firmy, zespół lub proces, który jest skojarzony z tym obciążeniem, może uzasadniać wszelką inwestycję w ciągłe zarządzanie obciążeniem. |
 
 Jest to typowy w przypadku firm, które uwzględniają dodatkowe klasyfikacje krytyczne, które są specyficzne dla branżowych, pionowych lub określonych procesów biznesowych. Przykłady dodatkowych klasyfikacji obejmują:

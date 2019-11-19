@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 312a3f4e6577b0a0db525e6428bf7e1b2616b625
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221658"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160530"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Instrukcje dotyczące przykładowych zasad linii bazowej zabezpieczeń
 
@@ -56,7 +56,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Nie można bezpośrednio uzyskać dostępu do podsieci zawierającej chronione dane za pośrednictwem publicznej sieci Internet lub między centrami danych. Dostęp do tych podsieci musi być kierowany za pośrednictwem podsieci pośrednich. Cały dostęp do tych podsieci musi następować przez rozwiązanie zapory, które może wykonywać funkcje skanowania pakietów i blokowania.
 
-**Potencjalna opcja projektowania:** Na platformie Azure Zabezpiecz publiczne punkty końcowe, wdrażając [strefę DMZ między publicznym Internetem a siecią opartą na chmurze](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). Rozważ wdrożenie, konfigurację i automatyzację [zapory platformy Azure](https://docs.microsoft.com/azure/firewall).
+**Potencjalna opcja projektowania:** Na platformie Azure Zabezpiecz publiczne punkty końcowe, wdrażając [strefę DMZ między publicznym Internetem a siecią opartą na chmurze](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Rozważ wdrożenie, konfigurację i automatyzację [zapory platformy Azure](https://docs.microsoft.com/azure/firewall).
 
 ## <a name="ddos-protection"></a>Ochrona przed atakami DDoS
 

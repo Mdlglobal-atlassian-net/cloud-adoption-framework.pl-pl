@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3ad84a52b35a98744f59b0d719e61f2c83a61af0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753771"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160463"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: zalecenia dotyczące zarządzania subskrypcjami
 
@@ -40,7 +40,7 @@ Podczas tworzenia budynku tworzenie szkieletu jest używane do tworzenia podstaw
 
 Szkielet jest oparty na praktykach, które zostały zebrane z wielu zakontraktowań z klientami o różnej wielkości. Ci klienci mają od małych organizacji tworzenie rozwiązań w chmurze w dużych przedsiębiorstwach wielonarodowych i niezależnych dostawców oprogramowania, którzy przeprowadzają migrację obciążeń i opracowują rozwiązania natywne w chmurze. Tworzenie szkieletu przedsiębiorstwa jest elastyczne w celu zapewnienia obsługi tradycyjnych obciążeń IT i obciążeń Agile, takich jak deweloperzy tworzący aplikacje oprogramowania jako usługi (SaaS) na podstawie możliwości platformy Azure.
 
-Szkielet przedsiębiorstwa jest przeznaczony do podstaw każdej nowej subskrypcji na platformie Azure. Dzięki temu administratorzy mogą zapewnić, że obciążenia spełniają minimalne wymagania dotyczące ładu organizacji, bez uniemożliwiania użytkownikom i deweloperom szybkiego zaspokajania ich celów. Nasze doświadczenie pokazuje, że te duże szybkości, a nie utrudniają rozwój chmury publicznej.
+Szkielet przedsiębiorstwa może stanowić podstawę każdej nowej subskrypcji na platformie Azure. Dzięki temu administratorzy mogą zapewnić, że obciążenia spełniają minimalne wymagania dotyczące ładu organizacji, bez uniemożliwiania użytkownikom i deweloperom szybkiego zaspokajania ich celów. Nasze środowisko pokazuje, że znacznie przyspiesza, a nie utrudnia, wzrost chmury publicznej.
 
 > [!NOTE]
 > Firma Microsoft udostępniła w wersji zapoznawczej nową funkcję o nazwie [plany platformy Azure](https://docs.microsoft.com/azure/governance/blueprints/overview) , która umożliwi spakowanie i wdrażanie popularnych obrazów, szablonów, zasad i skryptów w ramach subskrypcji i grup zarządzania oraz zarządzanie nimi. Ta funkcja jest mostkiem między celem szkieletu a modelem referencyjnym i wdrażaniem tego modelu w organizacji.
@@ -53,7 +53,7 @@ Na poniższej ilustracji przedstawiono składniki szkieletu. Podstawą jest plan
 
 Podstawą szkieletu jest hierarchia i relacja rejestracji w przedsiębiorstwie platformy Azure w ramach subskrypcji i grup zasobów. Rejestracja w przedsiębiorstwie definiuje kształt i użycie usług platformy Azure w ramach Twojej firmy z punktu widzenia umowy. W ramach Umowa Enterprise można dodatkowo podzielić środowisko na działy, konta, subskrypcje i grupy zasobów, aby pasowały do struktury organizacji.
 
-![hierarchia](../_images/reference/agreement.png)
+![Hierarchiczn](../_images/reference/agreement.png)
 
 Subskrypcja platformy Azure to podstawowa jednostka, w której znajdują się wszystkie zasoby. Definiuje również kilka limitów w ramach platformy Azure, takich jak liczba rdzeni, sieci wirtualne i inne zasoby. Grupy zasobów służą do dokładniejszego uściślenia modelu subskrypcji i zapewnienia bardziej naturalnej grupy zasobów.
 
@@ -228,7 +228,7 @@ Zbieranie i analizowanie danych telemetrycznych, które zawierają szczegółowe
 
 Te informacje mogą być wyświetlane i przetwarzane na wielu poziomach i stale ulepszane. Platforma Azure oferuje funkcje **udostępnione**, **podstawowe**i **głębokiego** monitorowania zasobów platformy Azure za pomocą usług przedstawionych na poniższym diagramie.
 
-![kontrolą](../_images/reference/monitoring.png)
+![Monitorowanie](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Współdzielone możliwości
 
@@ -344,4 +344,4 @@ Platforma Azure udostępnia zarówno wewnętrzne możliwości, jak i funkcje inn
 
 Zarządzanie ma kluczowe znaczenie dla sukcesu platformy Azure. Ten artykuł dotyczy implementacji technicznej szkieletu przedsiębiorstwa, ale tylko dotyka szerszego procesu i relacji między składnikami. Zarządzanie zasadami przepływów od góry i zależy od tego, co firma chce osiągnąć. W naturalny sposób Tworzenie modelu zarządzania dla platformy Azure obejmuje przedstawicieli z działu IT, ale co ważniejsze, powinno mieć silną reprezentację od liderów grupy biznesowej oraz zarządzania zabezpieczeniami i ryzykiem. Na koniec szkielet przedsiębiorstwa ma na celu wyeliminowanie ryzyka biznesowego, aby ułatwić jego misja i cele.
 
-Teraz, gdy znasz już zasady zarządzania subskrypcjami, zapoznaj się z tymi zaleceniami. Zobacz [Przykłady implementacji ładu subskrypcji platformy Azure](./azure-scaffold-examples.md).
+Teraz, gdy znasz już zasady zarządzania subskrypcjami, zapoznaj się z tymi zaleceniami. Aby uzyskać więcej informacji, zobacz [najlepsze rozwiązania dotyczące gotowości platformy Azure](../ready/azure-best-practices/index.md).

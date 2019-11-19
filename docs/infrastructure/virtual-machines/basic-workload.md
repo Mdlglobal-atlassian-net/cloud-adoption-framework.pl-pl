@@ -8,12 +8,12 @@ ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5c3fcb72fc58f4b33735a95a7fcf1623fe081795
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 4f00fbb1c494d3eecd32597cf94fe17192ad66ed
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548107"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160442"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Wdrażanie podstawowego obciążenia na platformie Azure
 
@@ -36,20 +36,20 @@ Niezależnie od tego, czy obciążenie jest aplikacją sieci Web, czy maszyną w
 
 ## <a name="basic-web-application-paas"></a>Podstawowa aplikacja internetowa (PaaS)
 
-W przypadku podstawowej aplikacji sieci Web Wybierz jeden z 5-minutowego przewodnika Szybki Start z [dokumentacji usługi Web Apps](https://docs.microsoft.com/azure/app-service?toc=/azure/architecture/cloud-adoption-guide/toc.json) i postępuj zgodnie z instrukcjami.
+W przypadku podstawowej aplikacji sieci Web Wybierz jeden z 5-minutowego przewodnika Szybki Start z [dokumentacji usługi Web Apps](https://docs.microsoft.com/azure/app-service) i postępuj zgodnie z instrukcjami.
 
 > [!NOTE]
 > Niektóre Przewodniki Szybki Start będą wdrażać grupę zasobów domyślnie. W takim przypadku nie jest konieczne jawne utworzenie grupy zasobów. W przeciwnym razie Wdróż aplikację sieci Web w utworzonej powyżej grupie zasobów.
 
-Po wdrożeniu prostego obciążenia można dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących wdrażania [podstawowej aplikacji sieci Web](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app?toc=/azure/architecture/cloud-adoption-guide/toc.json) na platformie Azure.
+Po wdrożeniu prostego obciążenia można dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących wdrażania [podstawowej aplikacji sieci Web](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app) na platformie Azure.
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>Pojedyncza maszyna wirtualna z systemem Windows lub Linux (IaaS)
 
-W przypadku prostego obciążenia, które jest uruchamiane na maszynie wirtualnej, pierwszym krokiem jest wdrożenie sieci wirtualnej. Wszystkie zasoby infrastruktury jako usługi (IaaS) na platformie Azure, takie jak maszyny wirtualne, moduły równoważenia obciążenia i bramy, wymagają sieci wirtualnej. Dowiedz się więcej o [usłudze Azure Virtual Networks](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview?toc=/azure/architecture/cloud-adoption-guide/toc.json), a następnie postępuj zgodnie z instrukcjami dotyczącymi [wdrażania Virtual Network na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-network/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Po określeniu ustawień sieci wirtualnej w Azure Portal należy określić nazwę utworzonej powyżej grupy zasobów.
+W przypadku prostego obciążenia, które jest uruchamiane na maszynie wirtualnej, pierwszym krokiem jest wdrożenie sieci wirtualnej. Wszystkie zasoby infrastruktury jako usługi (IaaS) na platformie Azure, takie jak maszyny wirtualne, moduły równoważenia obciążenia i bramy, wymagają sieci wirtualnej. Dowiedz się więcej o [usłudze Azure Virtual Networks](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview), a następnie postępuj zgodnie z instrukcjami dotyczącymi [wdrażania Virtual Network na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-network/quick-create-portal). Po określeniu ustawień sieci wirtualnej w Azure Portal należy określić nazwę utworzonej powyżej grupy zasobów.
 
-Następnym krokiem jest podjęcie decyzji o tym, czy wdrożyć pojedynczą maszynę wirtualną z systemem Windows lub Linux. W przypadku maszyny wirtualnej z systemem Windows wykonaj kroki, aby [wdrożyć maszynę wirtualną z systemem Windows na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Po określeniu ustawień dla maszyny wirtualnej w Azure Portal należy określić nazwę utworzonej powyżej grupy zasobów.
+Następnym krokiem jest podjęcie decyzji o tym, czy wdrożyć pojedynczą maszynę wirtualną z systemem Windows lub Linux. W przypadku maszyny wirtualnej z systemem Windows wykonaj kroki, aby [wdrożyć maszynę wirtualną z systemem Windows na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal). Po określeniu ustawień dla maszyny wirtualnej w Azure Portal należy określić nazwę utworzonej powyżej grupy zasobów.
 
-Po wykonaniu kroków i wdrożeniu maszyny wirtualnej można zapoznać się z [najlepszymi rozwiązaniami dotyczącymi uruchamiania maszyn wirtualnych z systemem Windows na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json). W przypadku maszyny wirtualnej z systemem Linux postępuj zgodnie z instrukcjami, aby [wdrożyć maszynę wirtualną z systemem Linux na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal?toc=/azure/architecture/cloud-adoption-guide/toc.json). Możesz również dowiedzieć się więcej o [najlepszych rozwiązaniach dotyczących uruchamiania maszyny wirtualnej z systemem Linux na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm?toc=/azure/architecture/cloud-adoption-guide/toc.json).
+Po wykonaniu kroków i wdrożeniu maszyny wirtualnej można zapoznać się z [najlepszymi rozwiązaniami dotyczącymi uruchamiania maszyn wirtualnych z systemem Windows na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/single-vm). W przypadku maszyny wirtualnej z systemem Linux postępuj zgodnie z instrukcjami, aby [wdrożyć maszynę wirtualną z systemem Linux na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal). Możesz również dowiedzieć się więcej o [najlepszych rozwiązaniach dotyczących uruchamiania maszyny wirtualnej z systemem Linux na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-linux/single-vm).
 
 ## <a name="next-steps"></a>Następne kroki
 

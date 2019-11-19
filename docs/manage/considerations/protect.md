@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 356d6c463e97553cb56d132c4f94e812a5b1c656
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: acfae57b1073d0205619f81b9caea72b5dc6d57d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752801"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160270"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Ochrona i odzyskiwanie w programie Cloud Management
 
@@ -31,7 +31,7 @@ Co najmniej każdy element zawartości, który obsługuje dowolne obciążenie, 
 
 ### <a name="recovery-time-objectives-rto"></a>Cele czasu odzyskiwania (RTO)
 
-W przypadku awarii, cel czasu odzyskiwania to ilość czasu, jaką należy podjąć, aby odzyskać system do stanu sprzed awarii. Dla każdego obciążenia, które będzie obejmowały czas wymagany do przywrócenia minimalnej niezbędnej funkcjonalności dla maszyn wirtualnych i aplikacji. Obejmuje to również ilość czasu wymaganą do przywrócenia danych wymaganych przez aplikacje.
+W przypadku awarii, cel czasu odzyskiwania to ilość czasu, jaką należy podjąć w celu odzyskania systemu przed awarią. Dla każdego obciążenia, które będzie obejmowały czas wymagany do przywrócenia minimalnej niezbędnej funkcjonalności dla maszyn wirtualnych i aplikacji. Obejmuje to również ilość czasu wymaganą do przywrócenia danych wymaganych przez aplikacje.
 
 W obszarze warunki biznesowe RTO reprezentuje czas, przez jaki proces biznesowy nie będzie działać. W przypadku obciążeń o kluczowym znaczeniu ta zmienna powinna być stosunkowo niska, co pozwala procesom biznesowym szybko wznowić działanie. W przypadku obciążeń o niższym priorytecie standardowy poziom RTO może nie mieć zauważalnego wpływu na wydajność firmy.
 

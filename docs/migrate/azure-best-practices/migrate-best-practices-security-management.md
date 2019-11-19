@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656706"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160058"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące zabezpieczania obciążeń migrowanych na platformę Azure i zarządzania nimi
 
@@ -38,10 +38,10 @@ Po przeprowadzeniu migracji najistotniejszym zadaniem jest zabezpieczenie zmigro
 
 Firma Microsoft dokłada wszelkich starań w celu zapewnienia, że administratorzy dzierżawy platformy Azure mają informacje konieczne do włączenia funkcji zabezpieczeń chroniących obciążenia przed atakami. Usługa Azure Security Center zapewnia ujednolicone zarządzanie zabezpieczeniami. Z poziomu usługi Security Center możesz stosować zasady zabezpieczeń względem różnych obciążeń, ograniczać podatność na zagrożenia i wykrywać ataki oraz reagować na nie. Usługa Security Center analizuje zasoby i konfiguracje w ramach dzierżaw platformy Azure i udostępnia zalecenia dotyczące zabezpieczeń, w tym:
 
-- **Scentralizowane zarządzanie zasadami** — zapewnianie zgodności z firmowymi lub prawnymi wymaganiami dotyczącymi zabezpieczeń przez centralne zarządzanie zasadami zabezpieczeń we wszystkich obciążeniach chmury hybrydowej.
-- **Ciągła ocena zabezpieczeń** — monitorowanie poziomu bezpieczeństwa maszyn, sieci, magazynu i usług danych oraz aplikacji pod kątem potencjalnych problemów z zabezpieczeniami.
-- **Praktyczne zalecenia** — korygowanie luk w zabezpieczeniach, zanim zostaną wykorzystane przez osoby atakujące, dzięki zaleceniom dotyczącym zabezpieczeń z określonymi priorytetami i możliwością wykonywania akcji.
-- **Alerty i zdarzenia uszeregowane według priorytetów** — zdarzenia i alerty zabezpieczeń uszeregowane według priorytetów pozwalają koncentrować się najpierw na krytycznych zagrożeniach.
+- **Scentralizowane zarządzanie zasadami:** Zapewnienie zgodności z wymaganiami firmy lub przepisami bezpieczeństwa przez centralne zarządzanie zasadami zabezpieczeń we wszystkich obciążeniach chmury hybrydowej.
+- **Ciągła ocena zabezpieczeń:** Monitoruj stan zabezpieczeń maszyn, sieci, magazynu i usług danych oraz aplikacji, aby wykrywać potencjalne problemy z zabezpieczeniami.
+- **Rekomendacje** z możliwością wykonania: Koryguj luki w zabezpieczeniach, zanim będą mogły zostać wykorzystane przez osoby atakujące z zaleceniami dotyczącymi zabezpieczeń i z możliwością podejmowania działań.
+- **Alerty i zdarzenia z priorytetami:** Najpierw należy skoncentrować się na najważniejszych zagrożeniach przy użyciu priorytetów alertów zabezpieczeń i zdarzeń.
 
 Oprócz ocen i zaleceń usługa Azure Security Center udostępnia inne funkcje zabezpieczeń, które mogą zostać włączone dla określonych zasobów.
 
@@ -135,9 +135,8 @@ Platforma Azure zapewnia kilka rozwiązań:
   - Zapewnia jednoczesną ochronę wielu aplikacji internetowych za bramą aplikacji.
   - Zapora aplikacji internetowej może być monitorowana przy użyciu usługi Azure Monitor i jest zintegrowana z usługą Azure Security Center.
 
-![Zabezpieczanie aplikacji internetowych](./media/migrate-best-practices-security-management/web-apps.png)
-
-*Usługa Azure Key Vault*
+![bezpieczne aplikacje sieci Web](./media/migrate-best-practices-security-management/web-apps.png)
+*Azure Key Vault*
 
 **Dowiedz się więcej:**
 
@@ -174,9 +173,8 @@ Usługa Azure Active Directory (Azure AD) udostępnia dzienniki aktywności, kt�
 - Dzienniki aktywności możesz kierować do różnych punktów końcowych w celu długoterminowego przechowywania i wglądu w dane.
 - Staraj się regularnie przeglądać dzienniki lub zintegruj narzędzia do zarządzania informacjami i zdarzeniami zabezpieczeń (SIEM, security information and event management) w celu automatycznego przeglądania nieprawidłowości. Jeśli nie korzystasz z wersji Premium 1 ani 2, konieczne będzie samodzielnie wykonanie wielu analiz lub użycie w tym celu systemu SIEM. Analiza obejmuje wyszukiwanie ryzykownych logowań i zdarzeń oraz innych wzorców ataków użytkowników.
 
-![Użytkownicy i grupy](./media/migrate-best-practices-security-management/azure-ad.png)
-
-*Użytkownicy i grupy usługi AAD*
+![użytkowników i grup](./media/migrate-best-practices-security-management/azure-ad.png)
+*użytkowników i grup usługi Azure AD*
 
 **Dowiedz się więcej:**
 
@@ -213,9 +211,8 @@ Zapewnienie, że grupy zasobów mają znaczące nazwy, które mogą zostać łat
 - Zalecamy stosowanie konwencji nazewnictwa platformy Azure.
 - W przypadku synchronizowania lokalnej usługi Active Directory z usługą Azure AD przy użyciu programu Azure AD Connect należy rozważyć dopasowanie nazw lokalnych grup zabezpieczeń do nazw grup zasobów na platformie Azure.
 
-![Nazewnictwo](./media/migrate-best-practices-security-management/naming.png)
-
-*Nazewnictwo grup zasobów*
+Nazwy ![nazw](./media/migrate-best-practices-security-management/naming.png)
+*grup zasobów*
 
 **Dowiedz się więcej:**
 
@@ -225,9 +222,8 @@ Zapewnienie, że grupy zasobów mają znaczące nazwy, które mogą zostać łat
 
 Zniknięcie grupy zasobów z powodu przypadkowego usunięcia jest bardzo niekorzystne. Zalecamy zaimplementowanie blokad usuwania, aby nie miało to miejsca.
 
-![Usuwanie blokad](./media/migrate-best-practices-security-management/locks.png)
-
-*Usuwanie blokad*
+![usuwania blokad](./media/migrate-best-practices-security-management/locks.png)
+*usuwanie blokad*
 
 **Dowiedz się więcej:**
 
@@ -359,7 +355,7 @@ Za pomocą usługi Azure Backup można tworzyć kopie zapasowe maszyn wirtualnyc
 - **Bezpośrednie tworzenie kopii zapasowych w magazynie usług Recovery Services.** Możesz utworzyć kopię zapasową maszyn wirtualnych IaaS, wdrażając magazyn Recovery Services w usłudze Azure Backup. Zapewnia to pojedynczą lokalizację do śledzenia kopii zapasowych i zarządzania nimi, a także szczegółowe opcje tworzenia kopii zapasowych i przywracania. Kopia zapasowa jest tworzona maksymalnie trzy razy dziennie na poziomie plików/folderów. Nie uwzględnia ona aplikacji, a system Linux nie jest obsługiwany. Zainstaluj agenta usług Microsoft Azure Recovery Services (MARS) na każdej maszynie wirtualnej, dla której chcesz utworzyć kopię zapasową za pomocą tej metody.
 - **Ochrona maszyny wirtualnej na serwerze Azure Backup Server.** Serwer Azure Backup Server jest udostępniany bezpłatnie wraz z usługą Azure Backup. Kopia zapasowa maszyny wirtualnej jest tworzona w lokalnym magazynie serwera Azure Backup Server. Następnie wykonywana jest kopia zapasowa serwera Azure Backup Server na platformie Azure w magazynie. Kopia zapasowa uwzględnia aplikację i posiada pełny stopień szczegółowości dotyczący częstotliwości wykonywania kopii zapasowych i przechowywania. Możesz tworzyć kopię zapasową na poziomie aplikacji, na przykład tworząc kopie zapasową programu SQL Server lub SharePoint.
 
-W celu zapewnienia bezpieczeństwa usługa Azure Backup szyfruje dane w locie przy użyciu algorytmu AES 256 i wysyła je za pośrednictwem protokołu HTTPS do platformy Azure. Kopia zapasowa danych magazynowanych na platformie Azure jest szyfrowana przy użyciu [usługi Storage (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) oraz danych do przesyłania i magazynowania.
+W celu zapewnienia bezpieczeństwa usługa Azure Backup szyfruje dane w locie przy użyciu algorytmu AES 256 i wysyła je za pośrednictwem protokołu HTTPS do platformy Azure. Kopia zapasowa danych magazynowanych na platformie Azure jest szyfrowana przy użyciu [usługi Storage (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json) oraz danych do przesyłania i magazynowania.
 
 ![Azure Backup](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Azure Backup*
@@ -401,7 +397,6 @@ Azure Site Recovery to podstawowa usługa platformy Azure, która zapewnia, że 
 Usługa Site Recovery replikuje maszyny wirtualne z podstawowego do pomocniczego regionu platformy Azure. Gdy będzie miała miejsce awaria, maszyny wirtualne przechodzą w tryb failover z regionu podstawowego i są nadal normalnie dostępne w regionie pomocniczym. Gdy awaria zostanie usunięta, maszyny wirtualne mogą powrócić do regionu podstawowego.
 
 ![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
-
 *Site Recovery*
 
 **Dowiedz się więcej:**
@@ -419,9 +414,8 @@ Funkcja Dyski zarządzane na platformie Azure upraszcza zarządzanie dyskami mas
 - Istniejące dyski możesz przekonwertować na dyski zarządzane.
 - Aby zapewnić wysoką odporność i dostępność, należy utworzyć maszyny wirtualne w zestawach dostępności. W przypadku wystąpienia planowanych lub nieplanowanych awarii zestawy dostępności zapewniają, że co najmniej jedna z maszyn wirtualnych w zestawie będzie nadal dostępna.
 
-![Dyski zarządzane](./media/migrate-best-practices-security-management/managed-disks.png)
-
-*Dyski zarządzane*
+![Managed disks](./media/migrate-best-practices-security-management/managed-disks.png)
+*Managed disks*
 
 **Dowiedz się więcej:**
 

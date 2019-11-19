@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fdde1d3619b8340fad31f4241bffeff9c51f0b38
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4d8ab371e01d98e22382a70cc9c1ea42173cf53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566518"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160347"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure i zawsze włączone grupy dostępności SQL Server
 
@@ -214,7 +214,7 @@ Administratorzy firmy Contoso tworzą konto usługi magazynu w następujący spo
 
 Przed skonfigurowaniem klastra administratorzy firmy Contoso tworzą migawkę dysku systemu operacyjnego na każdej maszynie.
 
-![migawka](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
+![Tworzenie migawki](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
 
 1. Następnie uruchamiają przygotowany skrypt, aby utworzyć klaster trybu failover systemu Windows.
 
@@ -439,7 +439,7 @@ Administratorzy firmy Contoso wykonują te czynności w następujący sposób:
 8. Administratorzy ponownie logują się na maszynie, po czym jest automatycznie uruchamiany kreator zarządzania serwerem konfiguracji.
 9. W kreatorze wybierają kartę sieciową, która będzie odbierała ruch związany z replikacją. Po skonfigurowaniu tego ustawienia nie można go zmienić.
 10. Wybierają subskrypcję, grupę zasobów i magazyn do zarejestrowania serwera konfiguracji.
-        ![magazyn](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
+        ![wybierz magazyn Recovery Services](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
 
 11. Następnie pobierają i instalują serwer MySQL oraz oprogramowanie VMware PowerCLI.
 12. Po przeprowadzeniu walidacji określają nazwę FQDN lub adres IP serwera vCenter lub hosta vSphere. Pozostawiają port domyślny i określają przyjazną nazwę serwera vCenter.

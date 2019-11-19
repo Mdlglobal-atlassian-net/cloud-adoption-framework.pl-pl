@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 08e2998e6e9f561189562f65b463aa1e0ffbe5b4
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564018"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160502"
 ---
 # <a name="perimeter-networks"></a>Sieci obwodowe
 
@@ -38,7 +38,7 @@ Sieci obwodowe korzystają z następujących funkcji i usług platformy Azure:
 > Architektury referencyjne platformy Azure udostępniają przykładowe szablony, których można używać do wdrażania własnych sieci obwodowych:
 >
 > - [Wdróż strefę DMZ między platformą Azure i lokalnym centrum danych](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
-> - [Wdróż strefę DMZ między platformą Azure i Internetem](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
+> - [Wdróż strefę DMZ między platformą Azure i Internetem](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 Zazwyczaj centralne zespoły IT oraz zespoły ds. bezpieczeństwa są odpowiedzialne za określenie wymagań dotyczących obsługi sieci obwodowych.
 

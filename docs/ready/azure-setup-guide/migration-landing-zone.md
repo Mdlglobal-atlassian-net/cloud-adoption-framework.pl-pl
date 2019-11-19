@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 1e9fe49f03eb9cc0b2f53e334f649e8dea9cf2fe
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 528864cab448ef2e6ead89b16ee174cc2c405401
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240100"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159576"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Wdrażanie strefy docelowej migracji
 
@@ -65,7 +65,7 @@ Strategia strefy docelowej odzwierciedla następujące decyzje.
 |Projekt subskrypcji|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)|
 |Grupy zarządzania|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)         |
 |Grupy zasobów|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)         |
-|Dane|ND|[Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Dane|ND|[Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Usługa Storage|ND|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)         |
 |Standardy nazewnictwa i tagowania|ND|[Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)         |
 |Zarządzanie kosztami|ND|[Śledzenie kosztów](../azure-best-practices/track-costs.md)|

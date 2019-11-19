@@ -9,21 +9,21 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752720"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160251"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Przewodnik po monitorowaniu w chmurze: strategia monitorowania dla modeli wdrożenia w chmurze
 
 Ten artykuł zawiera naszą zalecaną strategię monitorowania dla każdego z modeli wdrożenia w chmurze, w oparciu o następujące kryteria:
 
-- Musisz zachować zaangażowanie w Operations Manager lub inną platformę monitorowania przedsiębiorstwa, ponieważ jest ona zintegrowana z procesami, wiedzą i wiedzą o działaniach IT, a niektóre funkcje nie są jeszcze dostępne w Azure Monitor.
-- Należy monitorować obciążenia zarówno lokalnie, jak i w chmurze publicznej, jak i w chmurze.
+- Musisz zachować zobowiązania do Operations Manager lub innej platformy monitorowania przedsiębiorstwa, ponieważ jest ona zintegrowana z procesami, wiedzą i wiedzą o działaniach IT, a niektóre funkcje nie są jeszcze dostępne w Azure Monitor.
+- Należy monitorować obciążenia zarówno lokalnie, jak i w chmurze publicznej lub tylko w chmurze.
 - Twoja strategia migracji do chmury obejmuje modernizację operacji IT i przejście do naszych rozwiązań i usług monitorowania w chmurze.
-- Mogą istnieć krytyczne systemy, które są gapped powietrze lub fizycznie izolowane, hostowane w chmurze prywatnej lub na sprzęcie fizycznym. I systemy muszą być monitorowane.
+- Mogą istnieć krytyczne systemy, które są gapped lub fizycznie izolowane lub są hostowane w chmurze prywatnej lub na sprzęcie fizycznym. te systemy muszą być monitorowane.
 
 Nasza strategia obejmuje obsługę infrastruktury monitorowania (obciążeń obliczeniowych, magazynowania i serwera), aplikacji (użytkowników końcowych, wyjątków i klienta) oraz zasobów sieciowych. Zapewnia kompletną, zorientowaną na usługę perspektywę monitorowania.
 
@@ -104,7 +104,7 @@ Aby zbierać metryki i dzienniki z zasobów platformy i infrastruktury platformy
 
 ### <a name="monitor-with-system-center-operations-manager"></a>Monitoruj przy użyciu System Center Operations Manager
 
-Mimo że System Center Operations Manager pierwotnie zaprojektowano jako rozwiązanie lokalne do monitorowania między aplikacjami, obciążeniami i infrastrukturą, które działają w środowisku INFORMATYCZNym, został rozbudowany w taki sposób, aby obejmował możliwości monitorowania w chmurze. Integruje się z platformą Azure, pakietem Office 365 i Amazon Web Services (AWS). Może ona być monitorowana w różnych środowiskach z pakietami administracyjnymi, które zostały zaprojektowane i zaktualizowane w celu ich obsługi.  
+Mimo że System Center Operations Manager pierwotnie zaprojektowano jako rozwiązanie lokalne do monitorowania między aplikacjami, obciążeniami i składnikami infrastruktury, które działają w środowisku IT, został rozbudowany w taki sposób, aby obejmował monitorowanie chmury możliwość. Integruje się z platformą Azure, pakietem Office 365 i Amazon Web Services (AWS). Może ona być monitorowana w różnych środowiskach z pakietami administracyjnymi, które zostały zaprojektowane i zaktualizowane w celu ich obsługi.  
 
 W przypadku klientów, którzy zastosowali znaczące inwestycje w Operations Manager, aby osiągnąć kompleksowe monitorowanie ściśle zintegrowane ze swoimi zarządzanie usługami ITmi procesami i narzędziami, lub dla klientów nowych na platformie Azure, zrozumiałe jest zadawanie następujących informacji masz
 
@@ -132,7 +132,7 @@ Mimo że Operations Manager jest w stanie monitorować zasoby hostowane na platf
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>Wady używania Operations Manager przez siebie
 
-- Analizowanie danych monitorowania w Operations Manager jest zwykle wykonywane przy użyciu wstępnie zdefiniowanych widoków, które są udostępniane przez pakiety administracyjne dostępne z konsoli programu, z raportów SQL Server Reporting Services (SSRS) lub z widoków niestandardowych utworzonych przez użytkowników końcowych. Analiza danych ad hoc nie jest możliwa z pola. Raportowanie Operations Manager jest nieelastyczne. Magazyn danych, który zapewnia długoterminowe przechowywanie danych monitorowania, nie jest skalowany ani nie działa prawidłowo. I wiedzą na temat pisania instrukcji języka T-SQL, opracowywania rozwiązania Power BI lub korzystania z rozwiązań innych firm do obsługi wymagań dla różnych osób w organizacji IT.
+- Analizowanie danych monitorowania w Operations Manager jest zwykle wykonywane przy użyciu wstępnie zdefiniowanych widoków, które są udostępniane przez pakiety administracyjne dostępne z konsoli programu, z raportów SQL Server Reporting Services (SSRS) lub z widoków niestandardowych utworzonych przez użytkowników końcowych. Analiza danych ad hoc nie jest możliwa. Raportowanie Operations Manager jest nieelastyczne. Magazyn danych, który zapewnia długoterminowe przechowywanie danych monitorowania, nie jest skalowany ani nie działa prawidłowo. I wiedzą na temat pisania instrukcji języka T-SQL, opracowywania rozwiązania Power BI lub korzystania z rozwiązań innych firm do obsługi wymagań dla różnych osób w organizacji IT.
 
 - Generowanie alertów w Operations Manager nie obsługuje złożonych wyrażeń ani nie obejmuje logiki korelacji. Aby pomóc w zmniejszeniu szumu, alerty są pogrupowane w celu wyświetlenia relacji między nimi i zidentyfikowania ich przyczyn.
 
@@ -181,7 +181,7 @@ Można osiągnąć całościowe monitorowanie Azure Stack z System Center Operat
 
 Można również uzyskać całościowe monitorowanie z kombinacją [możliwości monitorowania infrastruktury](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) , które znajdują się w Azure Stack. Te funkcje ułatwiają wyświetlanie kondycji i alertów dla regionu Azure Stack i [usługi Azure monitor](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) w Azure Stack, która zapewnia metryki infrastruktury i dzienniki na poziomie podstawowym dla większości usług.
 
-Jeśli zainwestowano już w Operations Manager, Użyj pakietu administracyjnego Azure Stack do monitorowania stanu dostępności i kondycji Azure Stack wdrożeń. Obejmuje to regiony, dostawcy zasobów, aktualizacje, przebiegi aktualizacji, jednostki skalowania, węzły jednostek, role infrastruktury i ich wystąpienia (jednostki logiczne składają się z zasobów sprzętowych). Używa ona interfejsów API REST i aktualizacji dostawcy zasobów, aby komunikować się z Azure Stack. Aby monitorować serwery fizyczne i urządzenia magazynujące, należy użyć pakietu administracyjnego dostawcy OEM (na przykład dostarczonego przez firmę Lenovo, Hewlett Packard lub Dell). Operations Manager może natywnie monitorować przełączniki sieciowe w celu zbierania podstawowych statystyk przy użyciu protokołu SNMP. Monitorowanie obciążeń dzierżawców jest możliwe z pakietem administracyjnym platformy Azure, wykonując dwa podstawowe kroki. Skonfiguruj subskrypcję, którą chcesz monitorować, a następnie Dodaj monitory dla tej subskrypcji.
+Jeśli zainwestowano już w Operations Manager, Użyj pakietu administracyjnego Azure Stack do monitorowania stanu dostępności i kondycji Azure Stack wdrożeń, w tym regionów, dostawców zasobów, aktualizacji, przebiegów aktualizacji, jednostek skalowania, węzłów jednostek, infrastruktury role i ich wystąpienia (jednostki logiczne składają się z zasobów sprzętowych). Ten pakiet administracyjny używa interfejsów API REST i aktualizacji dostawcy zasobów do komunikowania się z Azure Stack. Aby monitorować serwery fizyczne i urządzenia magazynujące, należy użyć pakietu administracyjnego dostawcy OEM (na przykład dostarczonego przez firmę Lenovo, Hewlett Packard lub Dell). Operations Manager może natywnie monitorować przełączniki sieciowe w celu zbierania podstawowych statystyk przy użyciu protokołu SNMP. Monitorowanie obciążeń dzierżawców jest możliwe z pakietem administracyjnym platformy Azure, wykonując dwa podstawowe kroki. Skonfiguruj subskrypcję, którą chcesz monitorować, a następnie Dodaj monitory dla tej subskrypcji.
 
 ## <a name="next-steps"></a>Następne kroki
 

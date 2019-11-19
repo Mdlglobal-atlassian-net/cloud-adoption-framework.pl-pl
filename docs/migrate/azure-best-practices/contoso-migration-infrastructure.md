@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751844"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160367"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Wdrażanie infrastruktury migracji
 
@@ -299,7 +299,7 @@ Usługa Azure Backup umożliwia tworzenie kopii zapasowych i przywracanie dyskó
 - Kopie zapasowe są spójne na poziomie aplikacji, co gwarantuje, że kopia zapasowa danych jest spójna transakcyjnie i że aplikacje będą uruchamiały się po przywróceniu.
 - Usługa Azure Backup obsługuje magazyn lokalnie nadmiarowy (LRS) w celu replikowania wielu kopii danych kopii zapasowych w centrum danych w razie awarii sprzętu lokalnego.
 - W przypadku awarii regionalnej usługa Azure Backup obsługuje również magazyn geograficznie nadmiarowy (GRS), który replikuje dane kopii zapasowej do sparowanego regionu pomocniczego.
-- Usługa Azure Backup szyfruje przesyłane dane przy użyciu algorytmu AES 256. Dane kopii zapasowych podczas magazynowania są szyfrowane przy użyciu [szyfrowania usługi Storage (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json).
+- Usługa Azure Backup szyfruje przesyłane dane przy użyciu algorytmu AES 256. Dane kopii zapasowych podczas magazynowania są szyfrowane przy użyciu [szyfrowania usługi Storage (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
 
 Firma Contoso będzie używać usługi Azure Backup z magazynem geograficznie nadmiarowym (GRS) na wszystkich produkcyjnych maszynach wirtualnych, aby zapewnić wykonywanie kopii zapasowych danych obciążeń i możliwość ich szybkiego przywrócenia w razie awarii lub innych zakłóceń. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup).
 

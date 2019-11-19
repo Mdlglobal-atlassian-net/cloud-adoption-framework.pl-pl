@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6671efc087d718a44de97062dcf8c32498cfdb81
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566115"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159842"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -38,15 +38,15 @@ Przed zdefiniowaniem wyzwalaczy do korygowania zgodności zasad należy określi
 
 ### <a name="assign-cloud-governance-team-members"></a>Przypisz członków zespołu nadzoru w chmurze
 
-Zespół ds. zarządzania chmurą zapewni ciągłe wskazówki dotyczące zgodności zasad i obsługuje problemy związane z zasadami, które napływają podczas wdrażania i obsługi zasobów w chmurze. Podczas kompilowania tego zespołu należy zapraszać pracowników z organizacji, którzy mają doświadczenie w dziedzinach objętych zdefiniowanymi instrukcjami zasad i określonymi zagrożeniami.
+Zespół ds. zarządzania chmurą zapewni ciągłe wskazówki dotyczące zgodności zasad i obsługuje problemy związane z zasadami, które napływają podczas wdrażania i obsługi zasobów w chmurze. Podczas kompilowania tego zespołu należy zaprosić członków personelu, którzy mają wiedzę fachową w dziedzinach objętych zdefiniowanymi instrukcjami zasad i określonymi zagrożeniami.
 
-W przypadku początkowych wdrożeń testowych może to być ograniczone do kilku administratorów systemu odpowiedzialnych za ustalenie podstaw zarządzania. Jako że Twoje procesy nadzoru zakończyły się, przejrzyj regularnie członkostwo zespołu wskazówek dotyczących chmury, aby upewnić się, że możesz poprawnie rozwiązać nowe potencjalne ryzyko i wymagania dotyczące zasad. Zidentyfikuj członków działu IT i służbowych z odpowiednimi doświadczeniami lub zainteresowaniami w określonych obszarach nadzoru i Dołącz je do swoich zespołów na stałe lub ad hoc zgodnie z potrzebami.
+W przypadku początkowych wdrożeń testowych może to być ograniczone do kilku administratorów systemu odpowiedzialnych za ustalenie podstaw zarządzania. Jako że Twoje procesy nadzoru zakończyły się, przejrzyj regularnie członkostwo zespołu wskazówek dotyczących chmury, aby upewnić się, że możesz poprawnie rozwiązać nowe potencjalne ryzyko i wymagania dotyczące zasad. Zidentyfikuj członków działu IT i służbowych z odpowiednimi doświadczeniami lub zainteresowaniami w określonych obszarach nadzoru i Dołącz je do swoich zespołów na stałe lub tymczasowe, zgodnie z potrzebami.
 
 ### <a name="reviews-and-policy-iteration"></a>Przeglądy i iteracje zasad
 
 Po wdrożeniu dodatkowych zasobów i obciążeń zespół ds. zarządzania chmurą musi upewnić się, że nowe obciążenia lub zasoby będą zgodne z wymaganiami dotyczącymi zasad. Oceń nowe wymagania z zespołów programistycznych obciążeń, aby upewnić się, że ich planowane wdrożenia zostaną wyrównane do przewodników projektowych, i zaktualizuj zasady tak, aby obsługiwały te wymagania w razie potrzeby.
 
-Zaplanuj ocenę nowych potencjalnych zagrożeń i aktualizowanie instrukcji zasad i zaprojektowanie przewodników zgodnie z wymaganiami. Współpracuj z pracownikami działu IT i zespołami obciążeń, aby regularnie szacować nowe funkcje i usługi platformy Azure. Zaplanuj także regularne przeglądy dla każdej z pięciu dyscyplin ładu, aby zapewnić aktualność i spełnienie zasad.
+Zaplanuj ocenę nowych potencjalnych zagrożeń i aktualizowanie instrukcji zasad i zaprojektowanie przewodników zgodnie z wymaganiami. Współpracuj z pracownikami działu IT i zespołami obciążeń, aby regularnie szacować nowe funkcje i usługi platformy Azure. Zaplanuj także regularne przeglądy w każdym z pięciu dyscyplin ładu, aby zapewnić, że zasady są aktualne i zgodne.
 
 ### <a name="education"></a>Edukacja
 
@@ -79,15 +79,15 @@ Przykładowe wyzwalacze naruszenia i akcje:
 
 | Dyscyplina ładu chmury | Przykładowy wyzwalacz | Przykładowa akcja |
 |-----------------------------|----------------|---------------|
-| Cost Management | Miesięczne wydatki na chmurę są większe niż 20% wyższe niż oczekiwano. | Powiadom lidera jednostki rozliczeniowej, który rozpocznie przegląd użycia zasobów. |
-| Punkt odniesienia zabezpieczeń | Wykrywaj podejrzane działania związane z logowaniem użytkownika. | Powiadom zespół ds. zabezpieczeń IT i Wyłącz podejrzane konto użytkownika. |
-| Spójność zasobów | Użycie procesora CPU w obciążeniu jest większe niż 90%. | Powiadom zespół ds. operacji IT i Skaluj dodatkowe zasoby, aby obsłużyć obciążenie. |
+| Zarządzanie kosztami | Miesięczne wydatki na chmurę są większe niż 20% wyższe niż oczekiwano. | Powiadom lidera jednostki rozliczeniowej, który rozpocznie przegląd użycia zasobów. |
+| Punkt odniesienia zabezpieczeń | Wykrywaj podejrzane działania użytkownika. | Powiadom zespół ds. zabezpieczeń IT i Wyłącz podejrzane konto użytkownika. |
+| Spójność zasobów | Użycie procesora CPU dla obciążenia jest większe niż 90%. | Powiadom zespół ds. operacji IT i Skaluj dodatkowe zasoby, aby obsłużyć obciążenie. |
 
 ## <a name="automation-of-monitoring-and-compliance"></a>Automatyzacja monitorowania i zgodności
 
 Po zdefiniowaniu wyzwalaczy i akcji naruszenia zgodności można rozpocząć planowanie, jak najlepiej korzystać z narzędzi do rejestrowania i raportowania oraz innych funkcji platformy w chmurze, aby pomóc zautomatyzować strategię monitorowania i zgodności z zasadami.
 
-Zapoznaj się z tematem [Przewodnik po rejestrowaniu i raportowaniu](../../decision-guides/logging-and-reporting/index.md) struktury wdrażania w chmurze, aby uzyskać wskazówki dotyczące wybierania najlepszego wzorca monitorowania dla danego wdrożenia.
+Aby uzyskać pomoc przy wyborze najlepszego wzorca monitorowania dla danego wdrożenia, zobacz [Przewodnik rejestrowania i zgłaszania decyzji](../../decision-guides/logging-and-reporting/index.md).
 
 ## <a name="next-steps"></a>Następne kroki
 

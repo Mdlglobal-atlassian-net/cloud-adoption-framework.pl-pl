@@ -9,20 +9,20 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564312"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160493"
 ---
 # <a name="cloud-center-of-excellence"></a>Centrum doskonałości chmury
 
-Elastyczność biznesowa i techniczna to podstawowe cele większości organizacji IT. Cloud Center of doskonałości (CCoE) to funkcja, która tworzy równowagę między szybkością i stabilnością.
+Elastyczność biznesowa i techniczna to podstawowe cele większości organizacji IT. Centrum w chmurze doskonałości (CCoE) to funkcja, która tworzy równowagę między szybkością i stabilnością.
 
 ## <a name="function-structure"></a>Struktura funkcji
 
-CCoE wymaga współpracy między każdą z następujących możliwości:
+Model CCoE wymaga współpracy między każdą z następujących możliwości:
 
 - Wdrażanie w chmurze (w szczególnych architektach rozwiązań)
 - Strategia chmury (w przypadku menedżerów programu i projektu)
@@ -132,7 +132,7 @@ Ponadto zalecamy, aby zainteresowane strony biznesowe były poinformowane o post
 
 ## <a name="next-steps"></a>Następne kroki
 
-W przypadku usługi Cloud Center doskonałości wymagane są zarówno [możliwości platformy w chmurze](./cloud-platform.md) , jak i [Automatyzacja chmury](./cloud-automation.md). Następnym krokiem jest dostosowanie [możliwości platformy w chmurze](./cloud-platform.md).
+Model CCoE wymaga zarówno [możliwości platformy chmury](./cloud-platform.md) , jak i [automatyzacji chmury](./cloud-automation.md). Następnym krokiem jest dostosowanie [możliwości platformy w chmurze](./cloud-platform.md).
 
 > [!div class="nextstepaction"]
 > [Wyrównywanie możliwości platformy w chmurze](./cloud-platform.md)

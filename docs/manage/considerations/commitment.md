@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 02a4b4debf11507f557951652f362c02e4ae0ecc
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752875"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160391"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Zobowiązania biznesowe w zarządzaniu chmurą
 
@@ -60,7 +60,7 @@ W tradycyjnych środowiskach lokalnych koszt zarządzania środowiskiem jest zwy
 
 Organizacje mogą również zdecydować się na [przetworzyć niektóre z ich bieżących funkcji zarządzania dla dostawcy usług](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Dostawcy usług mogą korzystać z [usługi Azure Lighthouse](https://azure.com/lighthouse) , aby zapewnić organizacjom dokładniejszą kontrolę nad udzieleniem dostępu do zasobów, a także większy wgląd w działania wykonywane przez dostawców usług.
 
-- **Delegowana odpowiedzialność:** Ze względu na to, że nie ma potrzeby scentralizowania i przyjmowania kosztów zarządzania operacyjnego, operacje działu IT w wielu organizacjach rozważają nowe podejścia. Jedną z typowych metod nazywa się _delegowanie odpowiedzialności_. W centrum usług w chmurze z modelem doskonałości operacje platformy i Automatyzacja platformy zapewniają samoobsługowe narzędzia do zarządzania, które mogą być używane przez zespoły operacyjne prowadzone przez firmę, niezależnie od centralnych zespołów operacyjnych IT. Takie podejście daje zainteresowanym podmiotom gospodarczym pełną kontrolę nad budżetami związanymi z zarządzaniem. Umożliwia także zespołowi usługi Cloud Center doskonałości (CCOE), aby upewnić się, że minimalny zestaw guardrails został poprawnie zaimplementowany. W tym modelu działa jako Broker i przewodnik ułatwiający podejmowanie decyzji w firmie. Operacje biznesowe nadzorują codzienne operacje zależnych obciążeń.
+- **Delegowana odpowiedzialność:** Ze względu na to, że nie ma potrzeby scentralizowania i przyjmowania kosztów zarządzania operacyjnego, operacje działu IT w wielu organizacjach rozważają nowe podejścia. Jedną z typowych metod nazywa się _delegowanie odpowiedzialności_. W centrum usług w chmurze z modelem doskonałości operacje platformy i Automatyzacja platformy zapewniają samoobsługowe narzędzia do zarządzania, które mogą być używane przez zespoły operacyjne prowadzone przez firmę, niezależnie od centralnych zespołów operacyjnych IT. Takie podejście daje zainteresowanym podmiotom gospodarczym pełną kontrolę nad budżetami związanymi z zarządzaniem. Umożliwia także zespołowi usługi Cloud Center doskonałości (CCoE), aby upewnić się, że minimalny zestaw guardrails został poprawnie zaimplementowany. W tym modelu działa jako Broker i przewodnik ułatwiający podejmowanie decyzji w firmie. Operacje biznesowe nadzorują codzienne operacje zależnych obciążeń.
 
 - **Centralna odpowiedzialność:** Wymagania dotyczące zgodności, złożoność techniczna i niektóre modele usług udostępnionych mogą wymagać _centralnego modelu IT_ . W tym modelu kontynuuje wykonywanie obowiązków związanych z zarządzaniem operacjami. Narzędzia projektowe, kontrolne zarządzania i zarządzanie środowiskami mogą być centralnie zarządzane i kontrolowane, co ogranicza rolę zainteresowanych uczestników firmy w celu podejmowania zobowiązań w zakresie zarządzania. Jednak widoczność kosztów i architektury podejścia do chmury znacznie ułatwia scentralizowanemu działowi IT przekazywanie kosztów i poziomu zarządzania dla każdego obciążenia.
 
