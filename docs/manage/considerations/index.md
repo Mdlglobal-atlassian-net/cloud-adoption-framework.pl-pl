@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 367480222244c1e4287bebec85743408a10efc19
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 90fd78e45f71c6ca52ea76f5efe6a3aaae49af74
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752844"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160313"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>Zarządzanie i operacje IT w chmurze
 
-Nie da się przecenić znaczenia właściwego zarządzania i operacji podczas przechodzenia do modelu opartego na chmurze. Niestety niewiele organizacji jest gotowych na wprowadzenie zmian w zarządzaniu IT wymaganych do pomyślnego utworzenia modelu operacyjnego opartego na chmurze. W tej części przewodnika Cloud Adoption Framework opisano model operacyjny, procesy i narzędzia mające udowodnioną skuteczność w rozwiązaniach chmurowych. W każdym z tych obszarów przedstawiono niewielkie, ale fundamentalne zmiany w tym, jak firmy powinny postrzegać operacje IT i zarządzanie, gdy zaczną wdrażać chmurę.
+Nie da się przecenić znaczenia właściwego zarządzania i operacji podczas przechodzenia do modelu opartego na chmurze. Niestety niewiele organizacji jest gotowych na wprowadzenie zmian w zarządzaniu IT wymaganych do pomyślnego utworzenia modelu operacyjnego opartego na chmurze. W tej części przewodnika Cloud Adoption Framework opisano model operacyjny, procesy i narzędzia mające udowodnioną skuteczność w rozwiązaniach chmurowych. Każdy z tych obszarów reprezentuje niewielką, ale fundamentalną zmianę w tym, jak firmy powinny postrzegać operacje IT i zarządzanie, gdy zaczną wdrażać chmurę.
 
 ## <a name="brief-history-of-it-management"></a>Krótka historia zarządzania rozwiązaniami IT
 
