@@ -1239,8 +1239,6 @@
       href: reference/cloud-operating-model.md
     - name: Szkielet platformy Azure dla przedsiębiorstw
       href: reference/azure-scaffold.md
-    - name: Implementowanie szkieletu platformy Azure dla przedsiębiorstw
-      href: reference/azure-scaffold-examples.md
     - name: Wirtualne centrum danych (VDC)
       href: reference/vdc.md
     - name: Jak działa platforma Azure?
