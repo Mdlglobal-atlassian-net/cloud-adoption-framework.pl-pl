@@ -5,17 +5,17 @@ description: Migrowanie elementów zawartości
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 22a9f9f3a6c39932b50f58512e015eed41d30068
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7e464b93dd9cc46526ab5f72bd8cf4fbf15f31f3
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753565"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251822"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrowanie elementów zawartości (infrastruktury, aplikacji i danych)
 
@@ -228,7 +228,7 @@ Zerto zapewnia replikację wirtualną obsługującą zarówno środowisko Micros
 
 Usługa Carbonite zapewnia rozwiązania do migracji serwerów i danych umożliwiające migrowanie obciążeń do środowiska fizycznego, wirtualnego lub chmurowego, z takich środowisk lub pomiędzy nimi.
 
-[Więcej informacji](https://www.carbonite.com/data-protection/data-migration-software)
+[Dowiedz się więcej](https://www.carbonite.com/data-protection/data-migration-software)
 
 ## <a name="movere"></a>Movere
 
@@ -265,7 +265,7 @@ Nie są to jedyne dostępne narzędzia. Wiele innych narzędzi innych firm jest 
 
 Migracja do technologii chmurowych stanowi świetną okazję do przygotowania organizacji do wprowadzenia metodyki DevOps i ciągłej integracji/ciągłego wdrażania. Nawet jeśli Twoja organizacja zarządza tylko infrastrukturą, gdy zaczniesz zarządzać infrastrukturą jak kodem i korzystać z wzorców i praktyk branżowych metodyki DevOps, możesz rozpocząć zwiększanie elastyczności za pomocą potoków ciągłej integracji/ciągłego wdrażania, co pozwoli na szybsze dostosowanie do scenariuszy zmiany, rozwoju, wydania, a nawet odzyskiwania.
 
-Usługa [Azure DevOps](https://dev.azure.com) zapewnia wszystkie wymagane funkcje i integrację z platformą Azure, lokalnie, a nawet z innymi chmurami. Dowiedz się więcej [tutaj](https://azure.microsoft.com/services/devops). Aby uzyskać dostęp do szkolenia z przewodnikiem, zobacz temat [CI and CD with Azure DevOps - Quickstart](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html) (Ciągła integracja i ciągłe wdrażanie w usłudze Azure DevOps — Szybki start).
+Usługa Azure DevOps zapewnia wszystkie wymagane funkcje i integrację z platformą Azure, środowiskami lokalnymi, a nawet z innymi chmurami. Aby uzyskać więcej informacji, zobacz [usługę Azure DevOps](https://azure.microsoft.com/services/devops). Aby uzyskać dostęp do szkolenia z przewodnikiem, zobacz [CI and CD with Azure DevOps - Quickstart (Ciągła integracja i ciągłe wdrażanie w usłudze Azure DevOps — Szybki start)](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
 
 # <a name="cost-managementtabmanagecost"></a>[Zarządzanie kosztami](#tab/ManageCost)
 

@@ -5,17 +5,17 @@ description: Dowiedz się, jak skonfigurować monitorowanie, raportowanie i aler
 author: timleyden
 ms.author: tileyden
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 1be663168815af9067268cd18d9db51cfe10291c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0ed9f9c1739fc73f4d28bf532bd52bd0a182b2fc
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548879"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251346"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Monitorowanie i raportowanie na platformie Azure
 
@@ -98,12 +98,13 @@ Aby dowiedzieć się więcej, zapoznaj się z [dokumentacją usługi Azure Servi
 
 # <a name="azure-advisortabazureadvisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
-Azure Advisor to bezpłatny, spersonalizowany konsultant, który ułatwia stosowanie i implementowanie najlepszych rozwiązań dotyczących wdrożeń platformy Azure. Analizuje on konfigurację zasobów i dane telemetryczne użycia, a następnie generuje rekomendacje dotyczące rozwiązań w zakresie optymalizacji środowiska. Rekomendacje są podzielone na cztery kategorie:
+Azure Advisor to bezpłatny, spersonalizowany konsultant, który ułatwia stosowanie i implementowanie najlepszych rozwiązań dotyczących wdrożeń platformy Azure. Analizuje on konfigurację zasobów i dane telemetryczne użycia, a następnie generuje rekomendacje dotyczące rozwiązań w zakresie optymalizacji środowiska. Rekomendacje są podzielone na następujące kategorie:
 
 - **Wysoka dostępność:** w celu poprawienia ciągłości działania aplikacji krytycznych dla działania firmy. Rekomendacje mogą obejmować dodawanie maszyn wirtualnych do zestawu lub dodawanie punktów końcowych geograficznie nadmiarowych.
 - **Bezpieczeństwo:** w celu wykrywania zagrożeń i luk w zabezpieczeniach, które mogą prowadzić do naruszeń zabezpieczeń. Rekomendacje mogą obejmować stosowanie szyfrowania dysku i włączanie sieciowych grup zabezpieczeń.
 - **Wydajność:** w celu zwiększenia szybkości aplikacji. Rekomendacje mogą obejmować zwiększanie wydajności zapytań języka SQL przez tworzenie indeksów lub ponowne konfigurowanie ustawień usługi Traffic Manager.
 - **Koszty:** w celu zoptymalizowania i zredukowania ogólnych wydatków związanych z platformą Azure. Rekomendacje mogą obejmować zmianę rozmiaru lub zamykanie rzadko używanych maszyn wirtualnych lub przełączanie do rezerwacji platformy Azure w celu obniżenia całkowitego kosztu posiadania.
+- **Doskonałość operacyjna:** Poprawa wydajności procesów i przepływów pracy oraz możliwości zarządzania nimi. Zalecenia mogą obejmować konfigurowanie i wymuszanie reguł usługi Azure Policy, naprawianie nieprawidłowych reguł alertów dzienników oraz konfigurowanie alertów usługi Azure Service Health.
 
 Rekomendacje w usłudze Advisor są tworzone w oparciu o wdrażane zasoby i akcje wykonywane na platformie Azure. Można regularnie zapoznawać się z najnowszymi rekomendacjami usługi Advisor.
 
