@@ -51,15 +51,15 @@ W poniższej tabeli przedstawiono kilka typowych scenariuszy użycia oraz usług
 
 | **Scenariusz** | **Usługa obliczeniowa** |
 | --- | --- |
-| Chcę aprowizować maszyny wirtualne z systemami Linux i Windows w kilka sekund zgodnie z wybranymi konfiguracjami. | [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) |
+| Chcę aprowizować maszyny wirtualne z systemami Linux i Windows w kilka sekund zgodnie z wybranymi konfiguracjami. | [Usługa Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) |
 | Chcę uzyskać wysoką dostępność dzięki skalowaniu automatycznemu w celu tworzenia tysięcy maszyn wirtualnych w kilka minut. | [Zestawy skalowania maszyn wirtualnych](https://azure.microsoft.com/services/virtual-machine-scale-sets) |
-| Chcę uprościć wdrażanie i obsługę platformy Kubernetes oraz zarządzanie nią. | [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service) |
+| Chcę uprościć wdrażanie i obsługę platformy Kubernetes oraz zarządzanie nią. | [Usługa Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service) |
 | Chcę przyspieszyć opracowywanie aplikacji za pomocą architektury bezserwerowej opartej na zdarzeniach. | [Azure Functions](https://azure.microsoft.com/services/functions) |
 | Chcę tworzyć mikrousługi i aranżować kontenery w systemach Windows i Linux. | [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) |
-| Chcę szybko tworzyć aplikacje internetowe i mobilne w chmurze za pomocą w pełni zarządzanej platformy. | [Azure App Service](https://azure.microsoft.com/services/app-service) |
+| Chcę szybko tworzyć aplikacje internetowe i mobilne w chmurze za pomocą w pełni zarządzanej platformy. | [Usługa Azure App Service](https://azure.microsoft.com/services/app-service) |
 | Chcę konteneryzować aplikacje i łatwo uruchamiać kontenery za pomocą jednego polecenia. | [Azure Container Instances](https://azure.microsoft.com/services/container-instances) |
 | Chcę móc planować zadania i zarządzanie przetwarzaniem w skali chmury z możliwością skalowania do dziesiątek, setek lub tysięcy maszyn wirtualnych. | [Azure Batch](https://azure.microsoft.com/services/batch) |
-| Chcę tworzyć aplikacje w chmurze i interfejsy API o wysokiej dostępności ułatwiające skoncentrowanie się na aplikacjach, a nie na sprzęcie. | [usług Azure Cloud Services](https://azure.microsoft.com/services/cloud-services) |
+| Chcę tworzyć aplikacje w chmurze i interfejsy API o wysokiej dostępności ułatwiające skoncentrowanie się na aplikacjach, a nie na sprzęcie. | [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services) |
 
 ## <a name="regional-availability"></a>Dostępność regionalna
 
@@ -67,13 +67,13 @@ Platforma Azure umożliwia dostarczanie usług w potrzebnej skali, aby dotrzeć 
 
 Niektóre opcje środowiska obliczeniowego, takie jak Azure App Service, są ogólnie dostępne w większości regionów, w których dostępna jest platforma Azure. Jednak niektóre usługi obliczeniowe są obsługiwane tylko w wybranych regionach. Niektóre typy maszyn wirtualnych i skojarzone z nimi typy magazynów mają ograniczoną dostępność regionalną. Przed podjęciem decyzji o regionach, w których zostaną wdrożone zasoby obliczeniowe, zalecamy zapoznanie się [ze stroną regionów](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines) w celu sprawdzenia najnowszego stanu dostępności regionalnej.
 
-Aby dowiedzieć się więcej o globalnej infrastrukturze platformy Azure, zobacz  [stronę regionów platformy Azure](https://azure.microsoft.com/global-infrastructure/regions). Aby uzyskać szczegółowe informacje o ogólnych usługach dostępnych w poszczególnych regionach platformy Azure, można także wyświetlić  [dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all).
+Aby dowiedzieć się więcej o globalnej infrastrukturze platformy Azure, zobacz  [stronę regionów platformy Azure](https://azure.microsoft.com/global-infrastructure/regions). Aby uzyskać szczegółowe informacje o tym, co jest dostępne w poszczególnych regionach platformy Azure, można także wyświetlić  [dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all).
 
-## <a name="data-residency-and-compliance-requirements"></a>Wymagania dotyczące miejsca przechowywania danych oraz ich zgodności
+## <a name="data-residency-and-compliance-requirements"></a>Wymagania dotyczące miejsca przechowywania danych oraz zgodności
 
 Wymagania prawne i umowne związane z magazynem danych będą często dotyczyć Twoich obciążeń. Te wymagania mogą się różnić w zależności od lokalizacji organizacji, jurysdykcji, w której pliki i dane są przechowywane i przetwarzane, oraz danego sektora działalności. Ze względu na obowiązki związane z danymi, należy wziąć pod uwagę następujące elementy: klasyfikacja danych, lokalizacja danych oraz odpowiednie obowiązki w zakresie ochrony danych w ramach modelu dzielenia się odpowiedzialnością. Wiele rozwiązań obliczeniowych zależy od zasobów podłączonego magazynu. To wymaganie może mieć wpływ również na decyzje dotyczące środowiska obliczeniowego. Aby łatwiej zrozumieć te wymagania, zobacz oficjalny dokument  [Rezydencja i bezpieczeństwo zgodnych danych na platformie Azure](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure).
 
-Niektóre działania związane ze zgodnością mogą obejmować kontrolowanie, gdzie zasoby obliczeniowe będą się fizycznie znajdować. Regiony świadczenia usługi Azure są zorganizowane w grupy nazywane lokalizacjami geograficznymi.  [Lokalizacja geograficzna platformy Azure](https://azure.microsoft.com/global-infrastructure/geographies)  zapewnia, że wymagania z zakresu odporności, zgodności, niezależności i rezydencji danych są honorowane w granicach geograficznych i politycznych. Jeśli obciążenia podlegają suwerenności danych lub innym wymaganiom dotyczącym zgodności, należy wdrożyć zasoby magazynu w regionach, które znajdują się w zgodnej lokalizacji geograficznej platformy Azure.
+Niektóre działania związane ze zgodnością mogą obejmować kontrolowanie, gdzie zasoby obliczeniowe będą się fizycznie znajdować. Regiony świadczenia usługi Azure są zorganizowane w grupy nazywane lokalizacjami geograficznymi.  [Lokalizacja geograficzna platformy Azure](https://azure.microsoft.com/global-infrastructure/geographies) zapewnia, że wymagania z zakresu odporności, zgodności, suwerenności i rezydencji danych są honorowane w granicach geograficznych i politycznych. Jeśli obciążenia podlegają suwerenności danych lub innym wymaganiom dotyczącym zgodności, należy wdrożyć zasoby magazynu w regionach, które znajdują się w zgodnej lokalizacji geograficznej platformy Azure.
 
 ## <a name="establish-controls-for-compute-services"></a>Ustanawianie kontrolek dla usług obliczeniowych
 
