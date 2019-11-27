@@ -55,7 +55,7 @@ Jeśli te założenia są dostosowane do bieżącego środowiska, ta strategia m
 
 Strategia strefy docelowej odzwierciedla następujące decyzje.
 
-| Składnik | Decyzje | Alternatywne podejścia |
+| Składnik | Decyzje | Alternatywnych metod |
 |---------|---------|---------|
 |Narzędzia migracji|Usługa Azure Site Recovery zostanie wdrożona i utworzony zostanie projekt usługi Azure Migrate.|[Przewodnik po decyzjach dotyczących narzędzi migracji](../../decision-guides/migrate-decision-guide/index.md)|
 |Rejestrowanie i monitorowanie|Zostanie zainicjowany obszar roboczy usługi Operational Insights i konto magazynu diagnostycznego.|         |
@@ -65,11 +65,11 @@ Strategia strefy docelowej odzwierciedla następujące decyzje.
 |Projekt subskrypcji|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)|
 |Grupy zarządzania|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)         |
 |Grupy zasobów|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)         |
-|Dane|Nie dotyczy|[Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Magazyn|Nie dotyczy|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)         |
-|Standardy nazewnictwa i tagowania|Nie dotyczy|[Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)         |
-|Zarządzanie kosztami|Nie dotyczy|[Śledzenie kosztów](../azure-best-practices/track-costs.md)|
-|Compute|Nie dotyczy|[Opcje środowiska obliczeniowego](../considerations/compute-options.md)|
+|Dane|Brak|[Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Magazyn|Brak|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)         |
+|Standardy nazewnictwa i tagowania|Brak|[Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)         |
+|Zarządzanie kosztami|Brak|[Śledzenie kosztów](../azure-best-practices/track-costs.md)|
+|Wystąpienia obliczeniowe|Brak|[Opcje środowiska obliczeniowego](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Dostosowywanie lub wdrażanie strefy docelowej przy użyciu tej strategii
 
@@ -79,7 +79,7 @@ Przykłady strategii są również dostępne w portalu. Aby uzyskać szczegóło
 
 Aby uzyskać wskazówki dotyczące dostosowywania tej strategii lub utworzonej strefy docelowej, zobacz artykuły na temat [zagadnień dotyczących strefy docelowej](../considerations/index.md).
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Po wdrożeniu strefy docelowej migracji można przystąpić do migracji obciążeń na platformę Azure.
 Aby uzyskać wskazówki dotyczące narzędzi i procesów, które są wymagane do przeprowadzenia migracji pierwszego obciążenia, zobacz [Przewodnik po migracji na platformę Azure](../../migrate/azure-migration-guide/index.md).

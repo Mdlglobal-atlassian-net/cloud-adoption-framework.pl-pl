@@ -18,7 +18,7 @@ ms.locfileid: "74251445"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Wdrażanie strefy docelowej migracji
 
-Termin *strefa docelowa migracji* jest używany do opisania środowiska, które zostało ustanowione i przygotowane do hostowania obciążeń migrowanych ze środowiska lokalnego na platformę Azure. A migration landing zone is the final deliverable of the Azure setup guide. Ten artykuł łączy ze sobą wszystkie tematy dotyczące gotowości omówione w tym przewodniku i stosuje podjęte decyzje do wdrożenia pierwszej strefy docelowej migracji.
+Termin *strefa docelowa migracji* jest używany do opisania środowiska, które zostało ustanowione i przygotowane do hostowania obciążeń migrowanych ze środowiska lokalnego na platformę Azure. Strefa docelowa migracji to ostateczny element dostarczany przewodnika Instalatora platformy Azure. Ten artykuł łączy ze sobą wszystkie tematy dotyczące gotowości omówione w tym przewodniku i stosuje podjęte decyzje do wdrożenia pierwszej strefy docelowej migracji.
 
 W poniższych sekcjach opisano strefę docelową używaną często do ustanowienia środowiska odpowiedniego do użycia podczas migracji. Środowisko lub strefa docelowa opisana w tym artykule jest uwzględniona również w strategii platformy Azure. Strategia strefy docelowej migracji w strukturze wdrażania chmury umożliwia wdrożenie zdefiniowanego środowiska za pomocą jednego kliknięcia.
 
@@ -44,10 +44,10 @@ Przed rozpoczęciem korzystania ze strategii strefy docelowej migracji w struktu
 
 Podczas definiowania tej początkowej strefy docelowej przyjęto następujące założenia i ograniczenia. Jeśli te założenia są zgodne z ograniczeniami, można użyć strategii w celu utworzenia pierwszej strefy docelowej. Strategię można również rozszerzyć, aby utworzyć strategię strefy docelowej, która jest zgodna z unikatowymi ograniczeniami.
 
-- **Subscription limits:** This adoption effort isn't expected to exceed [subscription limits](https://docs.microsoft.com/azure/azure-subscription-service-limits). Dwa typowe wskaźniki to przekroczenie 25 000 maszyn wirtualnych lub 10 000 procesorów wirtualnych.
-- **Compliance:** No third-party compliance requirements are needed in this landing zone.
-- **Architectural complexity:** Architectural complexity doesn't require additional production subscriptions.
-- **Shared services:** There are no existing shared services in Azure that require this subscription to be treated like a spoke in a hub and spoke architecture.
+- **Limity subskrypcji:** Nie oczekuje się, że ten nakład pracy nie przekracza [limitów subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits). Dwa typowe wskaźniki to przekroczenie 25 000 maszyn wirtualnych lub 10 000 procesorów wirtualnych.
+- **Zgodność:** W tej strefie wyładunkowej nie są wymagane żadne wymagania dotyczące zgodności innych firm.
+- **Złożoność architektury:** Złożoność architektury nie wymaga dodatkowych subskrypcji produkcyjnych.
+- **Usługi udostępnione:** Na platformie Azure nie ma istniejących usług udostępnionych, które wymagają, aby ta subskrypcja była traktowana jak szprycha w architekturze gwiazdy.
 
 Jeśli te założenia są dostosowane do bieżącego środowiska, ta strategia może być dobrym punktem wyjściowym do tworzenia strefy docelowej.
 
@@ -55,9 +55,9 @@ Jeśli te założenia są dostosowane do bieżącego środowiska, ta strategia m
 
 Strategia strefy docelowej odzwierciedla następujące decyzje.
 
-| Składnik | Decyzje | Alternatywne podejścia |
+| Składnik | Decyzje | Alternatywnych metod |
 |---------|---------|---------|
-|Narzędzia migracji|Usługa Azure Site Recovery zostanie wdrożona i utworzony zostanie projekt usługi Azure Migrate.|[Przewodnik po decyzjach dotyczących narzędzi do migracji](../../decision-guides/migrate-decision-guide/index.md)|
+|Narzędzia migracji|Usługa Azure Site Recovery zostanie wdrożona i utworzony zostanie projekt usługi Azure Migrate.|[Przewodnik po decyzjach dotyczących narzędzi migracji](../../decision-guides/migrate-decision-guide/index.md)|
 |Rejestrowanie i monitorowanie|Zostanie zainicjowany obszar roboczy usługi Operational Insights i konto magazynu diagnostycznego.|         |
 |Sieć|Zostanie utworzona sieć wirtualna z podsieciami dla bramy, zapory, serwera przesiadkowego i strefy docelowej.|[Decyzje dotyczące sieci](../considerations/networking-options.md)|
 |Tożsamość|Przyjęto założenie, że subskrypcja jest już skojarzona z wystąpieniem usługi Azure Active Directory.|[Najlepsze rozwiązania dotyczące zarządzania tożsamościami](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)         |
@@ -65,21 +65,21 @@ Strategia strefy docelowej odzwierciedla następujące decyzje.
 |Projekt subskrypcji|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)|
 |Grupy zarządzania|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)         |
 |Grupy zasobów|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)         |
-|Dane|ND|[Choose the correct SQL Server option in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) and [Azure Data Store guidance](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Usługa Storage|ND|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)         |
-|Standardy nazewnictwa i tagowania|ND|[Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)         |
-|Zarządzanie kosztami|ND|[Śledzenie kosztów](../azure-best-practices/track-costs.md)|
-|Wystąpienia obliczeniowe|ND|[Opcje środowiska obliczeniowego](../considerations/compute-options.md)|
+|Dane|Brak|[Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Magazyn|Brak|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)         |
+|Standardy nazewnictwa i tagowania|Brak|[Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)         |
+|Zarządzanie kosztami|Brak|[Śledzenie kosztów](../azure-best-practices/track-costs.md)|
+|Wystąpienia obliczeniowe|Brak|[Opcje środowiska obliczeniowego](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Dostosowywanie lub wdrażanie strefy docelowej przy użyciu tej strategii
 
-Learn more and download a reference sample of the Cloud Adoption Framework migrate landing zone blueprint for deployment or customization from [Azure Blueprints samples](https://docs.microsoft.com/azure/governance/blueprints/samples).
+Dowiedz się więcej i Pobierz przykład referencyjny struktury wdrażania w chmurze Migrowanie planu strefy ładunkowej w celu wdrożenia lub dostosowania z [przykładów planów platformy Azure](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
-Przykłady strategii są również dostępne w portalu. For details of how to create a blueprint, see [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
+Przykłady strategii są również dostępne w portalu. Aby uzyskać szczegółowe informacje na temat sposobu tworzenia planu, zobacz [Azure Plans](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 
 Aby uzyskać wskazówki dotyczące dostosowywania tej strategii lub utworzonej strefy docelowej, zobacz artykuły na temat [zagadnień dotyczących strefy docelowej](../considerations/index.md).
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Po wdrożeniu strefy docelowej migracji można przystąpić do migracji obciążeń na platformę Azure.
 Aby uzyskać wskazówki dotyczące narzędzi i procesów, które są wymagane do przeprowadzenia migracji pierwszego obciążenia, zobacz [Przewodnik po migracji na platformę Azure](../../migrate/azure-migration-guide/index.md).
