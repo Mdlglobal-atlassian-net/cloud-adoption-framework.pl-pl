@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 96ca8aab7a1fb1e04180f12ac1753bd1b6857e92
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 758cd3285ed7f9f1b3542b54af7d275dccf1662d
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752140"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681780"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innowacje w chmurze w przewodniku Cloud Adoption Framework
 
@@ -117,8 +117,21 @@ Podczas każdej iteracji zespoły mogą uczyć się wraz z klientami na podstawi
 
 To podejście wykorzystuje istniejące metodologie Lean. Zostało zaprojektowane w celu omówienia wdrażania rozwiązań chmurowych u klientów oraz opracowania naukowego modelu tworzenia wartości biznesowej. Mapuje również istniejące usługi platformy Azure na procesy decyzyjne, którymi można zarządzać. To dopasowanie może ułatwić odnalezienie właściwych opcji technicznych w celu realizacji konkretnej potrzeby klienta lub hipotez.
 
+## <a name="suggested-skills"></a>Sugerowane umiejętności
+
+Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury, nie przychodzi łatwo. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty i poziomy i osiągaj więcej.
+
+Poniżej przedstawiono kilka przykładów ścieżek szkoleniowych dotyczących ról w środowisku Microsoft Learn, które odpowiadają części struktury Cloud Adoption Framework dotyczącej innowacji.
+
+[Administrowanie kontenerami na platformie Azure](https://docs.microsoft.com/learn/paths/administer-containers-in-azure/): Usługa Azure Container Instances (ACI) to najszybszy i najłatwiejszy sposób uruchamiania kontenerów na platformie Azure. Ta ścieżka szkoleniowa zawiera informacje na temat tworzenia kontenerów i zarządzania nimi oraz sposobu używania usługi ACI w celu zapewnienia elastycznej skali dla platformy Kubernetes.
+
+[Tworzenie aplikacji bezserwerowych](https://docs.microsoft.com/learn/paths/create-serverless-applications/): Usługa Azure Functions umożliwia tworzenie sterowanych zdarzeniami systemów obliczeń na żądanie, które mogą być wyzwalane przez różne zdarzenia zewnętrzne. Dowiedz się, jak korzystać z funkcji do wykonywania logiki po stronie serwera i tworzenia architektur bezserwerowych.
+
+Aby poznać dodatkowe ścieżki szkoleniowe, przejrzyj [Katalog środowiska Learn](/learn/browse). Użyj filtru **Role**, aby dopasować ścieżki szkoleniowe do swojej roli.
+
 ## <a name="next-steps"></a>Następne kroki
 
 Pierwsze ćwiczenie dotyczące innowacji w chmurze:
 > [!div class="nextstepaction"]
 > [Znalezienie konsensusu dotyczącego wartości biznesowej innowacji](./business-value.md)
+
