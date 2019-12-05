@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: abfbdb31ccb9e0270f8ef93b1173726a372df53f
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 5c241ab6b5f7c9fafa13492151b0ab49a7f619e8
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251454"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681715"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Bądź na bieżąco z platformą Microsoft Azure
 
@@ -52,6 +52,8 @@ Następujące zasoby mogą pomóc pozostać na bieżąco z platformą Azure:
 
 W przypadku bardziej zaawansowanej zawartości, która pomaga być na bieżąco z platformą Azure, przejrzyj wymienione tutaj zasoby:
 
+- [Azure Charts](https://azurecharts.com/)
+  - Ten nieoficjalny zasób wizualizuje wszystkie aktualizacje platformy Azure, które wprowadzono w ciągu ostatnich 6 miesięcy, oraz zawiera inne przydatne wykresy i narzędzia mogące pomóc w śledzeniu zmian na platformie Azure.
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Cotygodniowe wideo z inżynierami, którzy tworzą platformę Azure. Przedstawiają oni pokazy, odpowiadają na pytania i dzielą się szczegółowymi informacjami.
   - Subskrybuj przy użyciu kanału informacyjnego [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).

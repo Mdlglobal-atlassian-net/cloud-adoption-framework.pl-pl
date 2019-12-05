@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7e464b93dd9cc46526ab5f72bd8cf4fbf15f31f3
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251822"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681762"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrowanie elementów zawartości (infrastruktury, aplikacji i danych)
 
@@ -266,6 +266,14 @@ Nie są to jedyne dostępne narzędzia. Wiele innych narzędzi innych firm jest 
 Migracja do technologii chmurowych stanowi świetną okazję do przygotowania organizacji do wprowadzenia metodyki DevOps i ciągłej integracji/ciągłego wdrażania. Nawet jeśli Twoja organizacja zarządza tylko infrastrukturą, gdy zaczniesz zarządzać infrastrukturą jak kodem i korzystać z wzorców i praktyk branżowych metodyki DevOps, możesz rozpocząć zwiększanie elastyczności za pomocą potoków ciągłej integracji/ciągłego wdrażania, co pozwoli na szybsze dostosowanie do scenariuszy zmiany, rozwoju, wydania, a nawet odzyskiwania.
 
 Usługa Azure DevOps zapewnia wszystkie wymagane funkcje i integrację z platformą Azure, środowiskami lokalnymi, a nawet z innymi chmurami. Aby uzyskać więcej informacji, zobacz [usługę Azure DevOps](https://azure.microsoft.com/services/devops). Aby uzyskać dostęp do szkolenia z przewodnikiem, zobacz [CI and CD with Azure DevOps - Quickstart (Ciągła integracja i ciągłe wdrażanie w usłudze Azure DevOps — Szybki start)](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
+
+## <a name="suggested-skills"></a>Sugerowane umiejętności
+
+Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych obowiązków związanych z umiejętnościami, które dotyczą wdrażania chmury, nie przychodzi łatwo. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty i poziomy i osiągaj więcej.
+
+Poniżej znajduje się przykład dostosowanej ścieżki szkoleniowej w środowisku Microsoft Learn, która uzupełnia wytyczne konfigurowania pod kątem metodyki DevOps w strukturze Cloud Adoption Framework. 
+
+[Tworzenie aplikacji za pomocą usługi Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Współpracuj z innymi osobami w celu tworzenia aplikacji przy użyciu usług Azure Pipelines i GitHub. Uruchamiaj testy automatyczne w potoku, aby weryfikować jakość kodu. Skanuj kod źródłowy i składniki innych firm pod kątem potencjalnych luk w zabezpieczeniach. Definiuj wiele potoków, które współpracują ze sobą w celu skompilowania aplikacji. Kompiluj aplikacje przy użyciu zarówno agentów hostowanych przez firmę Microsoft, jak i własnych agentów kompilacji. 
 
 # <a name="cost-managementtabmanagecost"></a>[Zarządzanie kosztami](#tab/ManageCost)
 
