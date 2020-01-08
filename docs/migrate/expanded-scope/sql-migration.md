@@ -8,14 +8,14 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
+ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753528"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "75328926"
 ---
-# <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Przyspiesz migrację, migrując wystąpienie SQL Server
+# <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>Przyspieszanie migracji przez Migrowanie wielu baz danych lub całych serwerów SQL
 
 Migrowanie całych wystąpień SQL Server może przyspieszyć migrację obciążeń. Poniższe wskazówki rozszerzają zakres [przewodnika migracji platformy Azure](../azure-migration-guide/index.md) przez Migrowanie wystąpienia SQL Server poza nakładem pracy związanym z migracją obciążenia. Takie podejście umożliwia przepełnienie migracji wielu obciążeń przy użyciu jednej migracji platformy danych. Większość wysiłku wymaganego do rozwinięcia tego zakresu występuje w procesach wymagań wstępnych, oceny, migracji i optymalizacji.
 
@@ -27,7 +27,7 @@ Rozwiązanie zalecane w [przewodniku migracji platformy Azure](../azure-migratio
 
 Niektóre struktury danych mogą jednak być migrowane bardziej wydajnie za pomocą oddzielnej migracji na platformę danych. Poniżej przedstawiono kilka przykładów:
 
-- **Koniec usługi:** Szybkie przenoszenie wystąpienia SQL Server, aby uniknąć wyzwań związanych z zakończeniem usługi, może usprawiedliwić korzystanie z tego przewodnika poza standardowymi wysiłkami migracji.
+- **Koniec usługi:** Szybkie przenoszenie wystąpienia SQL Server jako izolowanej iteracji w ramach większego nakładu pracy migracji może zapobiec wyzwaniom w zakresie końca usługi. Ten przewodnik pomoże zintegrować migrację SQL Server w szerszym procesie migracji. Jeśli jednak migrujesz/uaktualniasz SQL Server niezależnie od innych nakładów związanych z wdrażaniem w chmurze, [informacje na temat SQL Server końca okresu użytkowania](/sql/sql-server/end-of-support/sql-server-end-of-life-overview) lub dokumentacji dotyczącej [migracji SQL Server](/sql/sql-server/migrate/index) mogą zapewnić wyraźniejsze wskazówki.
 - **SQL Server Services:** Struktura danych jest częścią szerszego rozwiązania, które wymaga SQL Server uruchomionego na maszynie wirtualnej. Jest to typowe rozwiązanie, które korzysta z usług SQL Server, takich jak SQL Server Reporting Services, SQL Server Integration Services lub SQL Server Analysis Services.
 - **Bazy danych o wysokiej gęstości i niskim użyciu:** Wystąpienie SQL Server ma wysoką gęstość baz danych. Każda z tych baz danych ma niskie ilości transakcji i wymaga niewiele w przypadku zasobów obliczeniowych. Należy rozważyć inne, bardziej nowoczesne rozwiązania, ale podejście infrastruktury jako usługi (IaaS) może skutkować znacznie mniejszym kosztem działania.
 - **Łączny koszt posiadania:** Jeśli ma to zastosowanie, możesz zastosować [korzyści użycia hybrydowego platformy Azure](https://azure.microsoft.com/pricing/hybrid-benefit) na liście cenowej tworzącej najniższy koszt posiadania dla wystąpień SQL Server. Jest to szczególnie powszechne w przypadku klientów, którzy obsługują SQL Server w scenariuszach wielochmurowych.
@@ -46,26 +46,26 @@ Przed przeprowadzeniem migracji SQL Server Rozpocznij od rozwinięcia cyfrowej s
 
 Poniżej znajduje się przykład spisu serwerów:
 
-|Oprogramowanie SQL Server|Przeznaczenie|Wersja|[Zagrożenia](../../manage/considerations/criticality.md)|[Czułości](../../govern/policy-compliance/data-classification.md)|Liczba baz danych|SSIS|USŁUG|SSAS|Klaster|Liczba węzłów|
+|SQL Server|Przeznaczenie|Wersja|[Zagrożenia](../../manage/considerations/criticality.md)|[Czułości](../../govern/policy-compliance/data-classification.md)|Liczba baz danych|SSIS|SSRS|SSAS|Klaster|Liczba węzłów|
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |SQL — 01|Aplikacje podstawowe|2016|Operacje krytyczne dla działalności firmy|Wysoce poufne|40|ND|ND|ND|Tak|3|
 |SQL — 02|Aplikacje podstawowe|2016|Operacje krytyczne dla działalności firmy|Wysoce poufne|40|ND|ND|ND|Tak|3|
 |SQL — 03|Aplikacje podstawowe|2016|Operacje krytyczne dla działalności firmy|Wysoce poufne|40|ND|ND|ND|Tak|3|
-|SQL — 04|BI|2012|Wysoka|XX|6|ND|Mając|Tak — moduł wielowymiarowy|Nie|1|
+|SQL — 04|BI|2012|Wysoka|XX|6|ND|Poufne|Tak — moduł wielowymiarowy|Nie|1|
 |SQL – 05|Integracja|2008 R2|Niska|Ogólne|20|Tak|ND|ND|Nie|1|
 
 ### <a name="database-inventory"></a>Spis bazy danych
 
 Poniżej znajduje się przykład spisu bazy danych dla jednego z powyższych serwerów:
 
-|Serwer|Database (Baza danych)|[Zagrożenia](../../manage/considerations/criticality.md)|[Czułości](../../govern/policy-compliance/data-classification.md)|Wyniki Data Migration Assistant (DMA)|Korygowanie DMA|Platforma docelowa|
+|Serwer|baza danych|[Zagrożenia](../../manage/considerations/criticality.md)|[Czułości](../../govern/policy-compliance/data-classification.md)|Wyniki Data Migration Assistant (DMA)|Korygowanie DMA|Platforma docelowa|
 |---------|---------|---------|---------|---------|---------|---------|
-|SQL — 01|BAZA DANYCH — 1|Operacje krytyczne dla działalności firmy|Wysoce poufne|Zgodność|ND|Azure SQL Database|
-|SQL — 01|BAZA DANYCH — 2|Wysoka|Mając|Wymagana zmiana schematu|Zaimplementowane zmiany|Azure SQL Database|
-|SQL — 01|BAZA DANYCH — 1|Wysoka|Ogólne|Zgodność|ND|Wystąpienie zarządzane Azure SQL|
-|SQL — 01|BAZA DANYCH — 1|Niska|Wysoce poufne|Wymagana zmiana schematu|Zmiany zaplanowane|Wystąpienie zarządzane Azure SQL|
-|SQL — 01|BAZA DANYCH — 1|Operacje krytyczne dla działalności firmy|Ogólne|Zgodność|ND|Wystąpienie zarządzane Azure SQL|
-|SQL — 01|BAZA DANYCH — 2|Wysoka|Mając|Zgodność|ND|Azure SQL Database|
+|SQL — 01|BAZA DANYCH — 1|Operacje krytyczne dla działalności firmy|Wysoce poufne|Zgodność|ND|Baza danych SQL Azure|
+|SQL — 01|BAZA DANYCH — 2|Wysoka|Poufne|Wymagana zmiana schematu|Zaimplementowane zmiany|Baza danych SQL Azure|
+|SQL — 01|BAZA DANYCH — 3|Wysoka|Ogólne|Zgodność|ND|Wystąpienie zarządzane Azure SQL|
+|SQL — 01|BAZA DANYCH 4|Niska|Wysoce poufne|Wymagana zmiana schematu|Zmiany zaplanowane|Wystąpienie zarządzane Azure SQL|
+|SQL — 01|BAZA DANYCH 5|Operacje krytyczne dla działalności firmy|Ogólne|Zgodność|ND|Wystąpienie zarządzane Azure SQL|
+|SQL — 01|DB-6|Wysoka|Poufne|Zgodność|ND|Baza danych SQL Azure|
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integracja z planem wdrażania chmury
 
@@ -106,10 +106,10 @@ Wybór najlepszej wskazówki dotyczącej migracji przy użyciu Azure Database Mi
 
 |Źródło  |Cel  |Narzędzie  |Typ migracji  |Wskazówka  |
 |---------|---------|---------|---------|---------|
-|Oprogramowanie SQL Server|Azure SQL Database|Usługa migracji bazy danych|Stanie|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|Oprogramowanie SQL Server|Azure SQL Database|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|Oprogramowanie SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Usługa migracji bazy danych|Stanie|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|Oprogramowanie SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
+|SQL Server|Baza danych SQL Azure|Usługa migracji bazy danych|W trybie offline|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|Baza danych SQL Azure|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
+|SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Usługa migracji bazy danych|W trybie offline|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
 |SQL Server RDS|Azure SQL Database (lub wystąpienie zarządzane)|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
 
 ### <a name="guidance-and-tutorials-for-various-services-to-equivalent-paas-solutions"></a>Wskazówki i samouczki dotyczące różnych usług do równoważnych rozwiązań PaaS
@@ -118,9 +118,9 @@ Po przeniesieniu baz danych z wystąpienia SQL Server do Azure Database Migratio
 
 |Źródło  |Cel  |Narzędzie  |Typ migracji  |Wskazówka  |
 |---------|---------|---------|---------|---------|
-|Usługi integracji programu SQL Server|Azure Data Factory Integration Runtime|Azure Data Factory|Stanie|[Samouczek](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
-|SQL Server Analysis Services — Model tabelaryczny|Azure Analysis Services|SQL Server Data Tools|Stanie|[Samouczek](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
-|SQL Server Reporting Services|Serwer raportów usługi Power BI|Power BI|Stanie|[Samouczek](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
+|Usługi integracji programu SQL Server|Azure Data Factory Integration Runtime|Azure Data Factory|W trybie offline|[Samouczek](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
+|SQL Server Analysis Services — Model tabelaryczny|Azure Analysis Services|SQL Server Data Tools|W trybie offline|[Samouczek](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
+|SQL Server Reporting Services|Serwer raportów usługi Power BI|Power BI|W trybie offline|[Samouczek](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
 
 ### <a name="guidance-and-tutorials-for-migration-from-sql-server-to-an-iaas-instance-of-sql-server"></a>Wskazówki i samouczki dotyczące migracji z SQL Server do wystąpienia IaaS SQL Server
 
@@ -130,7 +130,7 @@ To podejście służy do migrowania baz danych lub innych usług w wystąpieniu 
 
 |Źródło  |Cel  |Narzędzie  |Typ migracji  |Wskazówka  |
 |---------|---------|---------|---------|---------|
-|SQL Server pojedynczego wystąpienia|SQL Server w IaaS|Różnych|Stanie|[Samouczek](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
+|SQL Server pojedynczego wystąpienia|SQL Server w IaaS|Różnych|W trybie offline|[Samouczek](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
 
 ## <a name="optimization-process-changes"></a>Zmiany procesu optymalizacji
 
