@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 1f25b3debed6110f7a45933fa3d4f724ff8390a5
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160493"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781831"
 ---
 # <a name="cloud-center-of-excellence"></a>Centrum doskonałości chmury
 
@@ -135,4 +135,4 @@ Ponadto zalecamy, aby zainteresowane strony biznesowe były poinformowane o post
 Model CCoE wymaga zarówno [możliwości platformy chmury](./cloud-platform.md) , jak i [automatyzacji chmury](./cloud-automation.md). Następnym krokiem jest dostosowanie [możliwości platformy w chmurze](./cloud-platform.md).
 
 > [!div class="nextstepaction"]
-> [Wyrównywanie możliwości platformy w chmurze](./cloud-platform.md)
+> [Wyrównaj możliwości platformy w chmurze](./cloud-platform.md)

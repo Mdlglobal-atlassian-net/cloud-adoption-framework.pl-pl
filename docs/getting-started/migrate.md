@@ -8,18 +8,18 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c902c2a3f564bd2fcc575c8eb885b52da068826e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564683"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781685"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Rozpocznij podróż do migracji w chmurze na platformie Azure
 
 Użyj platformy wdrażania Microsoft Cloud dla platformy Azure, aby rozpocząć podróż do migracji do chmury. Ta struktura zawiera kompleksowe wskazówki dotyczące przenoszenia starszych obciążeń aplikacji do chmury przy użyciu innowacyjnych technologii opartych na chmurze.
 
-## <a name="executive-summary"></a>Podsumowanie dla kierownictwa
+## <a name="executive-summary"></a>Streszczenie
 
 Platforma wdrażania w chmurze pomaga klientom podejmować uproszczone podróże w chmurze. Ta struktura zawiera szczegółowe informacje dotyczące kompleksowej podróży w chmurze, rozpoczynając od docelowych rezultatów firmy, a następnie dopasowując gotowość do chmury i oceny z jasno określonymi celami biznesowymi. Te wyniki są osiągane przez zdefiniowaną ścieżkę do wdrożenia chmury. Po wdrożeniu opartym na migracji zdefiniowana ścieżka koncentruje się głównie na migrowaniu obciążeń lokalnych do chmury. Czasami ta podróż obejmuje modernizację obciążeń, aby zwiększyć zwrot z inwestycji w miarę wysiłków związanych z migracją.
 
@@ -36,7 +36,7 @@ Migracje w chmurze mogą pomóc firmom w osiągnięciu żądanych wyników firmy
 
 |Krytyczne zdarzenia biznesowe | Motywacje migracji | Motywacje innowacji |
 |---------|---------|---------|
-| Wyjście centrum danych<br/><br/>Fuzje, pozyskiwanie lub zbycie<br/><br/>Obniżki wydatków inwestycyjnych<br/><br/>Koniec wsparcia dla technologii o kluczowym znaczeniu<br/><br/>Odpowiedź na zmiany zgodności z przepisami<br/><br/>Spełniaj nowe wymagania dotyczące suwerenności danych<br/><br/>Zmniejsz zakłócenia i zwiększ stabilność IT|Redukcja kosztów<br/><br/>Zmniejszenie liczby dostawców lub technicznych<br/><br/>Optymalizacja operacji wewnętrznych<br/><br/>Zwiększenie sprawności biznesowej<br/><br/>Przygotuj się na nowe możliwości techniczne<br/><br/>Skalowanie w celu spełnienia wymagań dotyczących rynku<br/><br/>Skalowanie w celu spełnienia wymagań geograficznych|Przygotuj się na nowe możliwości techniczne<br/><br/>Twórz nowe możliwości techniczne<br/><br/>Skalowanie w celu spełnienia wymagań dotyczących rynku<br/><br/>Skalowanie w celu spełnienia wymagań geograficznych<br/><br/>Ulepszanie środowisk i zaangażowania klientów<br/><br/>Przekształć produkty lub usługi<br/><br/>Zakłócenie rynku dzięki nowym produktom lub usługom|
+| Wyjście centrum danych<br/><br/>Fuzje, pozyskiwanie lub zbycie<br/><br/>Obniżki wydatków inwestycyjnych<br/><br/>Koniec wsparcia dla technologii o kluczowym znaczeniu<br/><br/>Odpowiedź na zmiany zgodności z przepisami<br/><br/>Spełniaj nowe wymagania dotyczące suwerenności danych<br/><br/>Zmniejsz zakłócenia i zwiększ stabilność IT|Redukcja kosztów<br/><br/>Zmniejszenie liczby dostawców lub technicznych<br/><br/>Optymalizacja operacji wewnętrznych<br/><br/>Zwiększenie sprawności biznesowej<br/><br/>Przygotuj się na nowe możliwości techniczne<br/><br/>Skalowanie w celu spełnienia wymagań dotyczących rynku<br/><br/>Skalowanie w celu spełnienia wymagań geograficznych lub rynkowych|Przygotuj się na nowe możliwości techniczne<br/><br/>Twórz nowe możliwości techniczne<br/><br/>Modernizacja stan i kontroli zabezpieczeń<br/><br/>Skalowanie w celu spełnienia wymagań geograficznych lub rynkowych<br/><br/>Ulepszanie środowisk i zaangażowania klientów<br/><br/>Przekształć produkty lub usługi<br/><br/>Zakłócenie rynku dzięki nowym produktom lub usługom|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -64,7 +64,7 @@ Celem tego nakładu jest migracja lub modernizacja obciążeń. Obciążenie to 
 
 Migracje w chmurze są często traktowane jako pojedynczy projekt w ramach szerszego programu w celu usprawnienia operacji, kosztów lub złożoności IT. Metodologia implementacji chmury pomaga w wyrównaniu wysiłków technicznych w ramach serii migracji obciążeń do wartości biznesowych wyższego poziomu, które opisano w strategii i planowaniu chmury.
 
-**Pierwsze kroki:** Aby rozpocząć pracę z implementacją w chmurze, [Przewodnik migracji platformy Azure](../migrate/azure-migration-guide/index.md) i [Przewodnik po Instalatorze platformy Azure](../ready/azure-setup-guide/index.md) przedstawiają narzędzia i procesy wysokiego poziomu, które są konieczne do pomyślnego wykonania implementacji w chmurze. Migrowanie pierwszego obciążenia przy użyciu tych przewodników ułatwi zespołowi pokonanie wstępnych krzywych szkoleniowych w procesie planowania. Po wykonaniu tych czynności należy uzyskać dodatkowe zagadnienia dotyczące [rozwiniętej listy kontrolnej zakresu](../migrate/expanded-scope/index.md), najlepszych rozwiązań dotyczących [migracji](../migrate/azure-best-practices/index.md) i kwestii związanych z [migracją](../migrate/migration-considerations/index.md), aby wyrównać wskazówki dotyczące podstawowych ograniczeń, procesów, zespołu struktury i cele.
+**Pierwsze kroki:** Aby rozpocząć pracę z implementacją w chmurze, [Przewodnik migracji platformy Azure](../migrate/azure-migration-guide/index.md) i [Przewodnik po Instalatorze platformy Azure](../ready/azure-setup-guide/index.md) przedstawiają narzędzia i procesy wysokiego poziomu, które są konieczne do pomyślnego wykonania implementacji w chmurze. Migrowanie pierwszego obciążenia przy użyciu tych przewodników ułatwi zespołowi pokonanie wstępnych krzywych szkoleniowych w procesie planowania. Następnie należy zwrócić uwagę na dodatkowe zagadnienia dotyczące [rozwiniętej listy kontrolnej zakresu](../migrate/expanded-scope/index.md), najlepszych rozwiązań dotyczących [migracji](../migrate/azure-best-practices/index.md) i [migracji](../migrate/migration-considerations/index.md), aby wyrównać wskazówki dotyczące linii bazowej z unikatowymi ograniczeniami, procesami, strukturami zespołu i celami.
 
 ## <a name="cloud-strategy-and-planning"></a>Strategia i planowanie chmury
 
@@ -93,13 +93,13 @@ W ramach tego środowiska migracji Ta platforma zostanie użyta w celu rozróżn
 
 ### <a name="common-cultural-changes-resulting-from-adherence-to-this-methodology"></a>Typowe zmiany kulturowe, które wynikają z przestrzegania tej metodologii
 
-Nakład pracy związany z pożądanymi wynikami biznesowymi może spowodować nieznaczne zmiany w kulturze IT, a w pewnym stopniu kulturę biznesową. Poniżej przedstawiono kilka typowych zmian kulturowych, które są widoczne w tym procesie:
+Nakład pracy związany z pożądanymi wynikami biznesowymi może spowodować nieznaczne zmiany w kulturze IT, bezpieczeństwo i w pewnym stopniu kulturę biznesową. Poniżej przedstawiono kilka typowych zmian kulturowych, które są widoczne w tym procesie:
 
-- Zespół IT może przyjąć nowe umiejętności do obsługi obciążeń w chmurze.
+- Zespoły IT i bezpieczeństwa mogą przyjąć nowe umiejętności do obsługi obciążeń w chmurze.
 - Wykonanie migracji do chmury zachęca podejścia iteracyjne lub Agile.
 - Włączenie zarządzania chmurą pozwala również na pobudzanie podejścia DevOps.
 - Utworzenie zespołu strategii chmurowej może prowadzić do ściślejszej integracji między firmą i liderami IT.
-- Zbiorczo te zmiany mają na celu prowadzić do rozwoju działalności biznesowej i INFORMATYCZNej.
+- Zbiorczo te zmiany mają na celu prowadzić do większej działalności biznesowej i elastyczność INFORMATYCZNą.
 
 Zmiana kulturowa nie jest celem migracji w chmurze lub struktury wdrażania chmury, ale jest to powszechnie spotykane wyniki.
 Zmiany kulturowe nie są bezpośrednio podkierowane, a zamiast tego subtelne zmiany w kulturze są osadzane w sugerowanych ulepszeniach procesu i podejścia w całej wskazówki.
@@ -112,9 +112,9 @@ Podczas wdrażania strategii chmury i planowania zespołu IT będzie skoncentrow
 
 Strategia i planowanie chmury często kierują się szeroką kolekcją obciążeń i aplikacji. W portfolio są zwykle migrowane popularne aplikacje lub typy obciążeń. Poniżej przedstawiono kilka przykładów:
 
-- Aplikacje biznesowe
+- Line-of-business aplikacji
 - Aplikacje dla klientów
-- Aplikacje innych firm
+- Aplikacje innych producentów
 - Platformy do analizy danych
 - Rozwiązania rozproszone globalnie
 - Wysoce skalowalne rozwiązania
@@ -126,7 +126,7 @@ Technologie migrowane do chmury ciągle rozszerzają się w miarę jak dostawcy 
 - Windows i SQL Server
 - Bazy danych systemu Linux i typu Open Source (OSS)
 - Destructure/NoSQL bazy danych
-- Rozwiązania SAP na platformie Azure
+- SAP w systemie Azure
 - Analiza (magazyn danych, Data Lake)
 
 ## <a name="next-steps-lifecycle-solution"></a>Następne kroki: rozwiązanie cyklu życia
@@ -144,7 +144,7 @@ Platforma wdrażania w chmurze to rozwiązanie cyklu życia. Jest ona przeznaczo
 >
 > [Wprowadzaj innowacje](../innovate/index.md)
 >
-> [Decydując](../govern/index.md)
+> [Nadzór](../govern/index.md)
 >
 > [Zarządzanie](../manage/index.md)
 >

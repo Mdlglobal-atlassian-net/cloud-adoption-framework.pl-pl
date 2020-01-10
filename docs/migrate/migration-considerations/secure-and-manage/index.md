@@ -1,5 +1,5 @@
 ---
-title: Zabezpieczenia i zarządzanie
+title: Zabezpieczanie i monitorowanie zasobów oraz zarządzanie nimi
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Bezpieczne narzędzia do monitorowania i zarządzania
 author: BrianBlanchard
@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c03e6d25734a487c317fa9c6904a799dfd53f631
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: c311e4e789c7e5cc6c3b409fb2a4dbdcbfafe8ea
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681786"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781848"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Bezpieczne narzędzia do monitorowania i zarządzania
 

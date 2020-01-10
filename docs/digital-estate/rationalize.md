@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7c733c715f636416f1a6f3f4a4cfe1d984eae73b
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564707"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781746"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racjonalizacja majątku cyfrowego
 
-Racjonalizacja chmury to proces oceniania zasobów w celu ustalenia najlepszego podejścia do obsługi ich w chmurze. Po ustaleniu [podejścia](./approach.md) i zagregowaniu [spisu](./inventory.md)można rozpocząć racjonalizację chmury. [Racjonalizacja chmury](./rationalize.md) omawia najbardziej typowe opcje racjonalizacji.
+Racjonalizacja chmury to proces oceniania zasobów w celu ustalenia najlepszego podejścia do obsługi ich w chmurze. Po ustaleniu [podejścia](./approach.md) i zagregowaniu [spisu](./inventory.md)można rozpocząć racjonalizację chmury. Racjonalizacja chmury omawia najbardziej typowe opcje racjonalizacji.
 
 ## <a name="traditional-view-of-rationalization"></a>Tradycyjny widok racjonalizacji
 

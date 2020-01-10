@@ -9,30 +9,30 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 977a1f58d59a182df6451b27f15747477a1a1de9
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 40bce7ec1a68463c9ece51188170d94a274507c3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683748"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781525"
 ---
-# <a name="microsoft-cloud-adoption-framework-for-azure"></a>Struktura wdrażania chmury firmy Microsoft dla platformy Azure
+# <a name="cloud-adoption-framework-roadmap"></a>Harmonogram działania dotyczący struktury wdrażania chmury
 
 Chmura całkowicie zmienia sposoby, w jakie firmy pozyskują zasoby technologiczne i korzystają z nich. Tradycyjnie przedsiębiorstwa były właścicielami wszystkich aspektów technologii, od infrastruktury po oprogramowanie, i brały za nie odpowiedzialność. Chmura umożliwia przedsiębiorstwom aprowizowanie i używanie zasobów tylko wtedy, kiedy są potrzebne. Jednak wdrożenie chmury to środek do celu. Przedsiębiorstwa wdrażają chmurę, gdy zauważają, że może ona mieć zastosowanie w dowolnych z następujących możliwości biznesowych:
 
 - Firmy są motywowane do **migracji** do chmury przez następujące czynniki:
-  - Optymalizacja działania.
-  - Uproszczenie technologii.
-  - Zwiększenie sprawności biznesowej.
-  - Redukcja kosztów.
-  - Gotowość na nowe możliwości techniczne.
-  - Skalowanie do wymagań rynkowych lub obszarów geograficznych.
+  - Optymalizacja działania
+  - Upraszczanie technologii
+  - Zwiększenie sprawności biznesowej
+  - Redukcja kosztów
+  - Gotowość na nowe możliwości techniczne
+  - Skalowanie zgodnie z potrzebami rynków lub nowych regionów geograficznych
 - Firmy są motywowane do wprowadzania **innowacji** przy użyciu chmury przez następujące czynniki:
-  - Ulepszenie środowiska klienta.
-  - Zwiększenie zaangażowania klientów.
-  - Przekształcanie produktów.
-  - Gotowość na nowe możliwości techniczne i ich tworzenie.
-  - Skalowanie do wymagań rynkowych lub obszarów geograficznych.
+  - Ulepszanie środowiska klienta
+  - Zwiększanie zaangażowania klientów
+  - Przekształcanie produktów
+  - Gotowość na nowe możliwości techniczne i ich tworzenie
+  - Skalowanie zgodnie z potrzebami rynków lub nowych regionów geograficznych
 
 ## <a name="vision-and-objectives"></a>Wizja i cele
 
@@ -46,7 +46,7 @@ Usunięcie kluczowych przeszkód i wprowadzanie zmian wymaga więcej niż tylko 
 
 Przewodnik Cloud Adoption Framework to nadrzędna struktura obejmująca fazy Planowanie, Gotowość i Wdrażanie w motywacjach Migracja i Innowacja do wdrażania chmury i wspomagana przez wskazówki dotyczące ładu i działania.
 
-Firma Microsoft aktywnie opracowuje tę aspiracyjną strukturę we współpracy z klientami, partnerami i zespołami wewnętrznymi. Aby zachęcić do partnerstwa, zawartość będzie udostępniana w publicznej wersji zapoznawczej, gdy tylko stanie się dostępna. Te publiczne wersje zapoznawcze umożliwiają testowanie, weryfikowanie i stopniowe udoskonalanie wskazówek. Przewodnik zostanie udostępniony ogólnie, gdy zostaną osiągnięte cele aspiracyjne.
+Struktura stała się ogólnie dostępna. Jednak nadal aktywnie tworzymy tę strukturę we współpracy z klientami, partnerami i zespołami wewnętrznymi. Aby zachęcić do partnerstwa, zawartość jest udostępniana, gdy tylko stanie się dostępna. Te publiczne wydania umożliwiają testowanie, weryfikowanie i stopniowe udoskonalanie wskazówek. 
 
 Aby pomyślnie wdrożyć chmurę, klient musi przygotować swoich pracowników, technologie i procesy związane z tą transformacją cyfrową. Przewodnik Cloud Adoption Framework obejmuje sekcję przedstawiającą w sposób ogólny procesy wdrażania (Migracja i Innowacja) jako omówienie dla klientów. Ta sekcja składa się z następujących faz procesu wdrażania:
 

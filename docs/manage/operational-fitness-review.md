@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 122f1e451c8b83de3d020c58426d8b897013aa8d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c8ed34cccdcd108d17554f103bcfb0ce864ccf55
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564906"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781695"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Ustanowienie przeglądu sprawności operacyjnej
 
@@ -37,7 +37,7 @@ Od samego początku wiele zespołów w firmie Microsoft zabrało rozwój platfor
 
 Procesy, które firma Microsoft stosuje jako podstawy dla procesów przedstawionych w tym artykule.
 
-## <a name="understand-the-problem"></a>Opis problemu
+## <a name="understand-the-problem"></a>Omówienie problemu
 
 Po [rozpoczęciu pracy](../getting-started/migrate.md), pierwszym krokiem w ramach transformacji cyfrowej przedsiębiorstwa jest zidentyfikowanie problemów firmy, które należy rozwiązać, przyjmując platformę Azure. Następnym krokiem jest określenie rozwiązania wysokiego poziomu problemu, takiego jak Migrowanie obciążenia do chmury lub dostosowanie istniejącej usługi lokalnej do uwzględnienia funkcjonalności chmury. Na koniec warto zaprojektować i zaimplementować rozwiązanie.
 
@@ -130,3 +130,5 @@ Dostosuj szczegóły procesu i spotkania zgodnie z konkretnymi potrzebami. Zalec
     Ten przewodnik rozpoczyna się od definicji _odporności_ i powiązanych koncepcji. Następnie opisuje proces osiągania odporności przy użyciu podejścia strukturalnego w czasie trwania aplikacji, od projektowania i implementacji do wdrożenia i operacji.
 - [Wzorce projektowe w chmurze](https://docs.microsoft.com/azure/architecture/patterns).
     Te wzorce projektowe są przydatne dla zespołów inżynieryjnych podczas kompilowania aplikacji na filarach jakości oprogramowania.
+- [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/).
+    Program Advisor oferuje rekomendacje, które są personalizowane w oparciu o Twoje użycie i konfiguracje, aby ułatwić optymalizację zasobów pod kątem wysokiej dostępności, bezpieczeństwa, wydajności i kosztów. 

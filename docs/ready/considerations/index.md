@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 25ccd940207e6b8d081b68b154e921c2da599147
-ms.sourcegitcommit: 57208103dd80b6b169e7144a8e55994a56184740
+ms.openlocfilehash: 86082985a252e4724f237806669814d41ac29173
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74856801"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781440"
 ---
 # <a name="landing-zone-considerations"></a>Zagadnienia dotyczące strefy docelowej
 
@@ -37,7 +37,7 @@ Wszystkie strefy docelowe zapewniają strukturę dla opcji hostingu. Struktura j
 Każda strefa docelowa jest częścią szerszego rozwiązania do organizowania zasobów w środowisku chmury. Podstawy platformy Azure to podstawowe bloki konstrukcyjne dla organizacji.
 
 - **[Podstawowe pojęcia dotyczące platformy Azure](./fundamental-concepts.md)** . Poznaj podstawowe pojęcia i terminy używane podczas organizowania zasobów na platformie Azure i dowiedz się, jak te pojęcia odnoszą się do siebie nawzajem.
-- **Przewodnik po decyzjach dotyczących organizacji zasobów**. Gdy zrozumiesz już wszystkie podstawy, przewodnik po decyzjach dotyczących organizacji zasobów pomoże Ci w podjęciu decyzji, które ukształtują strefę docelową.
+- **[Przewodnik podejmowania decyzji dotyczących spójności zasobów](../../decision-guides/resource-consistency/)** . Gdy zrozumiesz już wszystkie podstawy, przewodnik po decyzjach dotyczących organizacji zasobów pomoże Ci w podjęciu decyzji, które ukształtują strefę docelową.
 
 ## <a name="governance-considerations"></a>Zagadnienia związane z nadzorem
 

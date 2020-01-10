@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 086740f6677896220824096a5afe66618779a2d0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3ee38869badce877fc89784c1e90a60ed7ee04eb
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566401"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781542"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Cost Management przykładowe instrukcje zasad
 
@@ -24,7 +24,7 @@ Poszczególne instrukcje dotyczące zasad chmury to wskazówki dotyczące rozwi�
 - **Instrukcja zasad:** Jasne wyjaśnienie wymagań zasad.
 - **Opcje projektowania:** Zalecenia z możliwością wykonania akcji, specyfikacje lub inne wskazówki, które mogą być używane przez zespoły IT i deweloperów podczas implementowania zasad.
 
-Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń związanych z kosztami firmy. Te instrukcje są przykładami, które można przywołać podczas sporządzania projektów instrukcji zasad w celu rozwiązania potrzeb organizacji. Te przykłady nie są przeznaczone do obsługi skryptów i mogą być dostępne różne opcje dotyczące ponoszenia określonych zagrożeń. Ścisła współpraca z firmowymi i zespołami IT w celu zidentyfikowania najlepszych zasad dla unikatowego zestawu zagrożeń.
+Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń związanych z kosztami firmy. Te instrukcje są przykładami, które można przywołać podczas sporządzania projektów instrukcji zasad w celu rozwiązania potrzeb organizacji. Te przykłady nie są zalecane, a istnieje kilka opcji zasad związanych z poszczególnymi zagrożeniami. Ścisła współpraca z firmowymi i zespołami IT w celu zidentyfikowania najlepszych zasad dla unikatowego zestawu zagrożeń.
 
 ## <a name="future-proofing"></a>Weryfikacja w przyszłości
 

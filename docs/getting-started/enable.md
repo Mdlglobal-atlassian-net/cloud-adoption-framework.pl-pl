@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: f24227cbbb06630810f7f6b48e7acdf842c171b3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753290"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781593"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Włącz powodzenie w trakcie podróży w chmurze
 
@@ -29,6 +29,8 @@ W tej architekturze włączenie jest podstawową kompozycją. Poniższa lista ko
   - **Zarządzanie:** Wyrównaj odpowiednie [dyscypliny ładu](../govern/index.md) , aby stale stosować zarządzanie kosztami, ograniczanie ryzyka, zgodność i linie bazowe zabezpieczeń we wszystkich wdrożeniach chmurowych.
   - **Zarządzanie:** Ciągłe [Zarządzanie działaniem](../manage/index.md) portfolio IT w celu zminimalizowania przerw w procesach biznesowych i zapewnienia stabilności portfolio IT.
   - **Obsługa:** Wyrównaj prawidłowe [Opcje partnerstwa i pomocy technicznej](../migrate/migration-considerations/assess/partnership-options.md).
+
+Innym podstawowym motywem jest zabezpieczenia, które jest krytycznym atrybutem jakości dla pomyślnego wdrożenia chmury. Zabezpieczenia są zintegrowane w ramach tej struktury, aby zapewnić zintegrowane Wskazówki dotyczące utrzymania poufności, integralności i zapewnienia dostępności obciążeń w chmurze. 
 
 ## <a name="additional-tools"></a>Dodatkowe narzędzia
 
@@ -68,7 +70,7 @@ Oprócz struktury wdrażania w chmurze firma Microsoft omawia dodatkowe tematy, 
                     </div>
                     <div class="cardText">
                         <h3>Niezawodna architektura (odporność)</h3>
-                        <p>Proces tworzenia niezawodnej aplikacji w chmurze różni się od procesu opracowywania tradycyjnej aplikacji. Chociaż w przeszłości mógł zostać zakupiony sprzęt wysokiej klasy do skalowania w górę, w środowisku chmury przeprowadza się skalowanie w poziomie zamiast skalowania w górę. Zamiast próbować całkowicie zapobiegać awariom, celem jest minimalizacja wpływu awarii pojedynczego składnika.</p>
+                        <p>Proces tworzenia niezawodnej aplikacji w chmurze różni się od procesu opracowywania tradycyjnej aplikacji. W przeszłości przeprowadzano skalowanie w górę, kupując sprzęt wysokiej klasy, natomiast w środowisku chmury jest stosowane skalowanie w poziomie. Zamiast zapobiegać wszystkim awariom, dąży się do minimalizacji wpływu awarii pojedynczego składnika.</p>
                     </div>
                 </div>
             </div>

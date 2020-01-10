@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: bf68bc17d5e94ae4c35e0a88d3ca73bd42935a5b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 38fa6133c9a4f823d4347b3c1b4db5dd81f24ceb
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566785"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781458"
 ---
 # <a name="cloud-governance-capabilities"></a>Możliwości ładu chmury
 
@@ -26,13 +26,15 @@ W zależności od żądanych wyników działalności biznesowej umiejętności p
 
 - Zarządzanie IT
 - Architektura przedsiębiorstwa
+- Zabezpieczenia
 - Operacje IT
 - Infrastruktura IT
 - Networking
 - Tożsamość
 - Wirtualizacja
-- Ciągłość działania i odzyskiwanie po awarii
+- Ciągłość biznesowa i odzyskiwanie po awarii
 - Właściciele aplikacji w ramach tej
+- Właściciele finansów
 
 Możliwości ładu chmury identyfikują ryzyko związane z bieżącymi i przyszłymi wersjami. Ta funkcja jest widoczna w obszarze wysiłki, aby oszacować ryzyko, zrozumieć potencjalne oddziaływania i podejmować decyzje dotyczące odporności na ryzyko. W takim przypadku plany można szybko zaktualizować, aby odzwierciedlały zmiany w [możliwościach wdrożenia chmury](./cloud-adoption.md).
 
@@ -69,7 +71,7 @@ Poniżej przedstawiono uczestników, którzy często biorą udział w działania
 
 ## <a name="maturation-of-cloud-governance-capability"></a>Dojrzewanie możliwości ładu w chmurze
 
-Niektóre duże organizacje mają istniejące, dedykowane zespoły, które koncentrują się na ładu IT. Te zespoły specjalizują się w zarządzaniu ryzykiem w portfelu IT za pomocą metodologii, takich jak ITIL lub narzędzia ITSM. Gdy te zespoły istnieją, można szybko przyspieszyć następujące modele zapadalności. Jednak zespół nadzoru IT zachęca do przeglądania modelu ładu chmurowego, aby zrozumieć, w jaki sposób ładu przesunie się nieco w chmurze. Najważniejsze artykuły obejmują [rozszerzanie zasad firmowych do chmury](../govern/corporate-policy.md) i [pięć dyscyplin zarządzania chmurą](../govern/governance-disciplines.md).
+Niektóre duże organizacje mają istniejące, dedykowane zespoły, które koncentrują się na ładu IT. Zespoły te są wyspecjalizowane w zarządzaniu ryzykiem w portfelu IT. Gdy te zespoły istnieją, można szybko przyspieszyć następujące modele zapadalności. Jednak zespół nadzoru IT zachęca do przeglądania modelu ładu chmurowego, aby zrozumieć, w jaki sposób ładu przesunie się nieco w chmurze. Najważniejsze artykuły obejmują [rozszerzanie zasad firmowych do chmury](../govern/corporate-policy.md) i [pięć dyscyplin zarządzania chmurą](../govern/governance-disciplines.md).
 
 **Brak ładu:** Organizacja jest często przenoszona do chmury bez jasnego planu na potrzeby zarządzania. Przed długim zagadnieniami dotyczącymi zabezpieczeń, kosztów, skali i operacji zaczynają wyzwalać konwersacje na temat potrzeb modelu ładu i osób, które mogą personelować procesy skojarzone z tym modelem. Rozpoczęcie tych konwersacji jest zawsze dobrym pierwszym krokiem w celu pokonania antywzorców "No ładu". Sekcja dotycząca [definiowania zasad firmowych](../govern/corporate-policy.md) może ułatwić wykonywanie tych konwersacji.
 

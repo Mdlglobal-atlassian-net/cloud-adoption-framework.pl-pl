@@ -1,5 +1,5 @@
 ---
-title: 'Gotowe: zalecane konwencje nazewnictwa i tagowania'
+title: Zalecane konwencje nazewnictwa i tagowania
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ten artykuł zawiera szczegółowe zalecenia dotyczące nazewnictwa zasobów i tagowania mające na celu wsparcie działań związanych z wdrażaniem chmury przedsiębiorstwa.
 author: BrianBlanchard
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 9caeca52ba0ab3a909b0f42ac6f016d44033a4ee
-ms.sourcegitcommit: 617c3f12a3657a8a1393fd08d261dd98eb81b65c
+ms.openlocfilehash: 6268fc8a272cd173b95707d19eee5e784a2a0c25
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74086799"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781559"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Gotowe: zalecane konwencje nazewnictwa i tagowania
 
@@ -78,7 +78,7 @@ Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do uż
 | ----------------------------------- | -------------------- |
 | Grupa zasobów                      | rg-                  |
 | Usługa Azure Virtual Network               | vnet-                |
-| Brama sieci wirtualnej             | vnet-gw-             |
+| Brama sieci wirtualnej             | vnetgw-              |
 | Połączenie bramy                  | cn-                  |
 | Podsieć                              | snet-                |
 | Sieciowa grupa zabezpieczeń              | nsg-                 |
@@ -92,33 +92,37 @@ Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do uż
 | Azure Kubernetes Service            | AKS                 |
 | Azure Service Bus                   | sb-                  |
 | Kolejki usługi Azure Service Bus            | sbq-                 |
-| Aplikacje usługi Azure App Service              | azapp-               |
-| Aplikacje Azure Functions                | azfun-               |
-| Azure Cloud Services                | azcs-                |
-| Azure SQL Database                  | sqldb-               |
-| Azure Cosmos DB (dawniej Azure DocumentDB) | cosdb-               |
+| Tematy Azure Service Bus            | sbt-                 |
+| Plany Azure App Service             | zamierza                |
+| Azure Web Apps                      | aplikacje                 |
+| Stan usługi Funkcje Azure                     | Func                |
+| Azure Cloud Services                | umożliwiają                 |
+| Serwer Azure SQL Database           | Server                 |
+| Baza danych SQL Azure                  | sqldb-               |
+| Azure Cosmos DB                     | Cosmos              |
 | Azure Cache for Redis               | redis-               |
 | Azure Database for MySQL            | mysql-               |
+| Azure Database for PostgreSQL       | PSQL                |
 | Azure SQL Data Warehouse            | sqldw-               |
 | SQL Server Stretch Database         | sqlstrdb-            |
-| Azure Storage                       | stor                 |
+| Azure Storage                       | St                   |
 | Azure StorSimple                    | ssimp                |
 | Usługa Azure Search                        | srch-                |
-| Azure Cognitive Services            | cs-                  |
-| Obszar roboczy usługi Azure Machine Learning    | aml-                 |
+| Azure Cognitive Services            | koło zębate                 |
+| Obszar roboczy usługi Azure Machine Learning    | mlw-                 |
 | Azure Data Lake Storage             | dls                  |
 | Azure Data Lake Analytics           | dla                  |
 | Azure HDInsight — Spark             | hdis-                |
 | Azure HDInsight — Hadoop            | hdihd-               |
 | Azure HDInsight — R Server          | hdir-                |
 | Azure HDInsight — HBase             | hdihb-               |
-| Usługa Power BI Embedded                   | pbiemb               |
-| Usługa Azure Stream Analytics              | asa-                 |
-| Azure Data Factory                  | df-                  |
+| Usługa Power BI Embedded                   | PBI                 |
+| Azure Stream Analytics              | asa-                 |
+| Azure Data Factory                  | ADF                 |
 | Azure Event Hubs                    | evh-                 |
-| Azure IoT Hub                       | aih-                 |
-| Azure Notification Hubs             | anh-                 |
-| Przestrzeń nazw usługi Azure Notification Hubs   | anhns-               |
+| Azure IoT Hub                       | rzeczy                 |
+| Azure Notification Hubs             | ntf-                 |
+| Przestrzeń nazw usługi Azure Notification Hubs   | ntfns-               |
 
 ### <a name="metadata-tags"></a>Tagi metadanych
 
@@ -164,8 +168,8 @@ W poniższej sekcji przedstawiono przykłady schematów nazewnictwa dla często 
 | Typ elementu zawartości               | Zakres           | Format                                                                | Przykłady                                                                                              |
 |--------------------------|-----------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Usługa Azure Virtual Network          | Grupa zasobów  | vnet-\<Typ subskrypcji\>-\<Region\>-\<\#\#\#\>                      | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                                  |
-| Brama wirtualna sieci wirtualnej     | Sieć wirtualna | vnet-gw-v-\<Typ subskrypcji\>-\<Region\>-\<\#\#\#\>                 | <ul><li>vnet-gw-v-shared-eastus2-001 </li><li>vnet-gw-v-prod-westus-001 </li><li>vnet-gw-v-client-eastus2-001</li></ul>                   |
-| Brama lokalna sieci wirtualnej       | Brama wirtualna | vnet-gw-l-\<Typ subskrypcji\>-\<Region\>-\<\#\#\#\>                 | <ul><li>vnet-gw-l-shared-eastus2-001 </li><li>vnet-gw-l-prod-westus-001 </li><li>vnet-gw-l-client-eastus2-001</li></ul>                   |
+| Brama wirtualna sieci wirtualnej     | Sieć wirtualna | vnetgw-v-\<typ subskrypcji\>-\<regionu\>-\<\#\#\#\>                 | <ul><li>vnet-gw-v-shared-eastus2-001 </li><li>vnet-gw-v-prod-westus-001 </li><li>vnet-gw-v-client-eastus2-001</li></ul>                   |
+| Brama lokalna sieci wirtualnej       | Brama wirtualna | vnetgw-l-\<typ subskrypcji\>-\<regionu\>-\<\#\#\#\>                 | <ul><li>vnet-gw-l-shared-eastus2-001 </li><li>vnet-gw-l-prod-westus-001 </li><li>vnet-gw-l-client-eastus2-001</li></ul>                   |
 | Połączenia typu lokacja-lokacja | Grupa zasobów  | cn-\<nazwa bramy lokalnej\>-to-\<nazwa bramy wirtualnej\>                 | <ul><li>cn-l-gw-shared-eastus2-001-to-v-gw-shared-eastus2-001 </li><li>cn-l-gw-shared-eastus2-001-to-shared-westus-001</li></ul> |
 | Połączenia sieci wirtualnych         | Grupa zasobów  | cn-\<subskrypcja1\>\<region1\>-to-\<subskrypcja2\>\<region2\>-      | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-prod-eastus2-to-prod-westus</li></ul>                                     |
 | Podsieć                   | Sieć wirtualna | snet-\<subskrypcja\>-\<podregion\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                                  |
@@ -184,11 +188,11 @@ W poniższej sekcji przedstawiono przykłady schematów nazewnictwa dla często 
 
 ### <a name="paas-services"></a>Usługi PaaS
 
-| Typ elementu zawartości     | Zakres  | Format                                                              | Przykłady                                                                                 |
-|----------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Azure App Service    | Cały świat | azapp-\<Nazwa aplikacji\>-\<Środowisko\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>azapp-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Aplikacja usługi Azure Functions   | Cały świat | azfun-\<Nazwa aplikacji\>-\<Środowisko\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azfun-navigator-prod-001.azurewebsites.net </li><li>azfun-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Cloud Services | Cały świat | azcs-\<Nazwa aplikacji\>-\<Środowisko\>-\<\#\#\#\>.[{cloudapp.net}]       | <ul><li>azcs-navigator-prod-001.azurewebsites.net </li><li>azcs-accountlookup-dev-001.azurewebsites.net</li></ul>   |
+| Typ elementu zawartości           | Zakres  | Format                                                              | Przykłady                                                                                 |
+|----------------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| Azure Web Apps       | Cały świat | Nazwa aplikacji\<aplikacji\>-\<środowisku\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Stan usługi Funkcje Azure      | Cały świat | Func-\<nazwę aplikacji\>-\<środowisku\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>azfun-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Cloud Services | Cały świat | można\<nazwę aplikacji\>-\<środowisku\>-\<\#\#\#\>. [{cloudapp.net}]       | <ul><li>azcs-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
 
 ### <a name="azure-service-bus"></a>Azure Service Bus
 
@@ -196,17 +200,20 @@ W poniższej sekcji przedstawiono przykłady schematów nazewnictwa dla często 
 |--------------------|-------------|------------------------------------------------------------|------------------------------------|
 | Azure Service Bus        | Cały świat      | sb-\<Nazwa aplikacji\>-\<Środowisko\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
 | Kolejki usługi Azure Service Bus | Service Bus | sbq-\<deskryptor kolejki\>                                   | <ul><li>sbq-messagequery</li></ul>                   |
+| Tematy Azure Service Bus | Service Bus | SBT\<deskryptora zapytania\>                                   | <ul><li>sbt-messagequery</li></ul>                   |
 
 ### <a name="databases"></a>Bazy danych
 
 | Typ elementu zawartości                          | Zakres              | Format                                | Przykłady                                       |
 |-------------------------------------|--------------------|---------------------------------------|------------------------------------------------|
-| Azure SQL Database                  | Cały świat             | sqldb-\<Nazwa aplikacji\>-\<Środowisko\>    | <ul><li>sqldb-navigator-prod </li><li>sqldb-emissions-dev</li></ul>       |
-| Azure Cosmos DB (dawniej DocumentDB) | Cały świat             | cosdb-\<Nazwa aplikacji\>-\<Środowisko\>    | <ul><li>cosdb-navigator-prod </li><li>cosdb-emissions-dev</li></ul>       |
+| Serwer Azure SQL Database           | Cały świat             | Nazwa aplikacji SQL\<\>-\<środowisko\>      | <ul><li>SQL — Nawigator — prod </li><li>SQL-emisje — dev</li></ul>           |
+| Baza danych SQL Azure                  | Baza danych SQL Azure | SQLDB\<\<środowisku\>| <ul><li>SQLDB — użytkownicy — produkcja </li><li>SQLDB — użytkownicy — dev</li></ul>               |
+| Azure Cosmos DB                     | Cały świat             | Cosmos\<\>-\<środowisko\>   | <ul><li>cosdb-navigator-prod </li><li>cosdb-emissions-dev</li></ul>       |
 | Azure Cache for Redis               | Cały świat             | redis-\<Nazwa aplikacji\>-\<Środowisko\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
 | Azure Database for MySQL            | Cały świat             | mysql-\<Nazwa aplikacji\>-\<Środowisko\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
-| Azure SQL Data Warehouse                  | Cały świat             | sqldw-\<Nazwa aplikacji\>-\<Środowisko\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
-| SQL Server Stretch Database         | Azure SQL Database | sqlstrdb-\<Nazwa aplikacji\>-\<Środowisko\> | <ul><li>sqlstrdb-navigator-prod </li><li>sqlstrdb-emissions-dev</li></ul> |
+| Azure Database for PostgreSQL       | Cały świat             | PSQL\<\>-\<środowisko\>     | <ul><li>PSQL-Navigator-prod </li><li>PSQL-emisje — dev</li></ul>         |
+| Azure SQL Data Warehouse            | Cały świat             | sqldw-\<Nazwa aplikacji\>-\<Środowisko\>    | <ul><li>sqldw-navigator-prod </li><li>sqldw-emissions-dev</li></ul>       |
+| SQL Server Stretch Database         | Baza danych SQL Azure | sqlstrdb-\<Nazwa aplikacji\>-\<Środowisko\> | <ul><li>sqlstrdb-navigator-prod </li><li>sqlstrdb-emissions-dev</li></ul> |
 
 ### <a name="storage"></a>Usługa Storage
 
@@ -214,35 +221,35 @@ W poniższej sekcji przedstawiono przykłady schematów nazewnictwa dla często 
 |-----------------------------------------|--------|-------------------------------------------------------------------------------|--------------------------------------------|
 | Konto usługi Azure Storage — zastosowanie ogólne     | Cały świat | st\<nazwa magazynu\>\<\#\#\#\>                                                  | <ul><li>stnavigatordata001 </li><li>stemissionsoutput001</li></ul>    |
 | Konto usługi Azure Storage — dzienniki diagnostyczne | Cały świat | stdiag\<pierwsze 2 litery nazwy subskrypcji i numer\>\<region\>\<\#\#\#\> | <ul><li>stdiagsh001eastus2001 </li><li>stdiagsh001westus001</li></ul> |
-| Azure StorSimple                              | Cały świat | ssimp\<Nazwa aplikacji\>\<Środowisko\>                                              | <ul><li>ssimpnavigatorprod </li><li>ssimpemissionsdev</li></ul>       |
+| Azure StorSimple                        | Cały świat | ssimp\<Nazwa aplikacji\>\<Środowisko\>                                              | <ul><li>ssimpnavigatorprod </li><li>ssimpemissionsdev</li></ul>       |
 
 ### <a name="ai--machine-learning"></a>SI i uczenie maszynowe
 
 | Typ elementu zawartości                       | Zakres          | Format                            | Przykłady                               |
 |----------------------------------|----------------|-----------------------------------|----------------------------------------|
 | Usługa Azure Search                     | Cały świat         | srch-\<Nazwa aplikacji\>-\<Środowisko\> | <ul><li>srch-navigator-prod </li><li>srch-emissions-dev</li></ul> |
-| Azure Cognitive Services               | Grupa zasobów | cs-\<Nazwa aplikacji\>-\<Środowisko\>   | <ul><li>cs-navigator-prod </li><li>cs-emissions-dev</li></ul>     |
-| Obszar roboczy usługi Azure Machine Learning | Grupa zasobów | aml-\<Nazwa aplikacji\>-\<Środowisko\>  | <ul><li>aml-navigator-prod </li><li>aml-emissions-dev</li></ul>   |
+| Azure Cognitive Services         | Grupa zasobów | koło zębate\<\>-\<środowisko\>   | <ul><li>koło zębate-Navigator-prod </li><li>koło zębate-emisje — dev</li></ul>     |
+| Obszar roboczy usługi Azure Machine Learning | Grupa zasobów | MLW\<\>-\<środowisko\>   | <ul><li>MLW-Navigator-prod </li><li>MLW-emisje — dev</li></ul>     |
 
 ### <a name="analytics"></a>Analiza
 
 | Typ elementu zawartości                | Zakres  | Format                             | Przykłady                                 |
 |---------------------------|--------|------------------------------------|------------------------------------------|
-| Azure Data Factory        | Cały świat | df-\<Nazwa aplikacji\>\<Środowisko\>     | <ul><li>df-navigator-prod </li><li>df-emissions-dev</li></ul>       |
+| Azure Data Factory        | Cały świat | ADF —\<nazwę aplikacji\>\<środowisku\>    | <ul><li>ADF — Nawigator — produkcja </li><li>ADF — emisje — dev</li></ul>     |
 | Azure Data Lake Storage   | Cały świat | dls\<Nazwa aplikacji\>\<Środowisko\>     | <ul><li>dlsnavigatorprod </li><li>dlsemissionsdev</li></ul>         |
 | Azure Data Lake Analytics | Cały świat | dla\<Nazwa aplikacji\>\<Środowisko\>     | <ul><li>dlanavigatorprod </li><li>dlaemissionsdev</li></ul>         |
-| Azure HDInsight — Spark         | Cały świat | hdis-\<Nazwa aplikacji\>-\<Środowisko\>  | <ul><li>hdis-navigator-prod </li><li>hdis-emissions-dev </li></ul>  |
-| Azure HDInsight — Hadoop        | Cały świat | hdihd-\<Nazwa aplikacji\>-\<Środowisko\> | <ul><li>hdihd-hadoop-prod </li><li>hdihd-emissions-dev</li></ul>    |
-| Azure HDInsight — R Server      | Cały świat | hdir-\<Nazwa aplikacji\>-\<Środowisko\>  | <ul><li>hdir-navigator-prod </li><li>hdir-emissions-dev</li></ul>   |
-| Azure HDInsight — HBase         | Cały świat | hdihb-\<Nazwa aplikacji\>-\<Środowisko\> | <ul><li>hdihb-navigator-prod </li><li>hdihb-emissions-dev</li></ul> |
-| Usługa Power BI Embedded         | Cały świat | pbiemb\<Nazwa aplikacji\>\<Środowisko\>  | <ul><li>pbiem-navigator-prod </li><li>pbiem-emissions-dev</li></ul> |
+| Azure HDInsight — Spark   | Cały świat | hdis-\<Nazwa aplikacji\>-\<Środowisko\>  | <ul><li>hdis-navigator-prod </li><li>hdis-emissions-dev </li></ul>  |
+| Azure HDInsight — Hadoop  | Cały świat | hdihd-\<Nazwa aplikacji\>-\<Środowisko\> | <ul><li>hdihd-hadoop-prod </li><li>hdihd-emissions-dev</li></ul>    |
+| Azure HDInsight — R Server| Cały świat | hdir-\<Nazwa aplikacji\>-\<Środowisko\>  | <ul><li>hdir-navigator-prod </li><li>hdir-emissions-dev</li></ul>   |
+| Azure HDInsight — HBase   | Cały świat | hdihb-\<Nazwa aplikacji\>-\<Środowisko\> | <ul><li>hdihb-navigator-prod </li><li>hdihb-emissions-dev</li></ul> |
+| Usługa Power BI Embedded         | Cały świat | PBI\<\>\<środowisku\>    | <ul><li>PBI-Navigator-prod </li><li>PBI-emisje — dev</li></ul> |
 
-### <a name="internet-of-things-iot"></a>Internet rzeczy (IoT)
+### <a name="data-streams--internet-of-things-iot"></a>Strumienie danych/Internet rzeczy (IoT)
 
 | Typ elementu zawartości                         | Zakres          | Format                             | Przykłady                                 |
 |------------------------------------|----------------|------------------------------------|------------------------------------------|
-| Azure Stream Analytics na urządzeniach brzegowych IoT Edge | Grupa zasobów | asa-\<Nazwa aplikacji\>-\<Środowisko\>   | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>     |
-| Azure IoT Hub                      | Cały świat         | aih-\<Nazwa aplikacji\>-\<Środowisko\>   | <ul><li>aih-navigator-prod </li><li>aih-emissions-dev</li></ul>     |
-| Azure Event Hubs                          | Cały świat         | evh-\<Nazwa aplikacji\>-\<Środowisko\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
-| Azure Notification Hubs                   | Grupa zasobów | anh-\<Nazwa aplikacji\>-\<Środowisko\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
-| Przestrzeń nazw usługi Azure Notification Hubs         | Cały świat         | anhns-\<Nazwa aplikacji\>-\<Środowisko\> | <ul><li>anhns-navigator-prod </li><li>anhns-emissions-dev</li></ul> |
+| Azure Stream Analytics             | Grupa zasobów | asa-\<Nazwa aplikacji\>-\<Środowisko\>   | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>     |
+| Azure IoT Hub                      | Cały świat         | Nazwa aplikacji IoT-\<\>-\<środowisko\>   | <ul><li>IoT-Navigator — prod </li><li>IoT-emisje — dev</li></ul>     |
+| Azure Event Hubs                   | Cały świat         | evh-\<Nazwa aplikacji\>-\<Środowisko\>   | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>     |
+| Azure Notification Hubs            | Grupa zasobów | NTF\<\>-\<środowisko\>   | <ul><li>NTF-Navigator-prod </li><li>NTF-emisje — dev</li></ul>     |
+| Przestrzeń nazw usługi Azure Notification Hubs  | Cały świat         | ntfns\<\>-\<środowisko\> | <ul><li>ntfns-Navigator-prod </li><li>ntfns-emisje — dev</li></ul> |

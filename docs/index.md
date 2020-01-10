@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 10/14/2019
-ms.openlocfilehash: 743bbb31b6bee799e18161a55b0f70c1783eaf6f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c945539be722db41f9e4f04813c8bf9ac93af34f
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565922"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781712"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Struktura wdrażania chmury firmy Microsoft dla platformy Azure
 
@@ -165,11 +165,11 @@ Każda z wymienionych powyżej faz jest częścią ogólnego cyklu wdrażania ch
 
 ## <a name="intent"></a>Intencja
 
-Chmura całkowicie zmienia sposoby, w jakie firmy pozyskują zasoby technologiczne i korzystają z nich. Tradycyjnie przedsiębiorstwa były właścicielami wszystkich aspektów technologii, od infrastruktury po oprogramowanie, i brały za nie odpowiedzialność. Przejście do chmury umożliwia przedsiębiorstwom aprowizowanie i używanie zasobów tylko wtedy, kiedy są potrzebne. Podczas gdy chmura zapewnia niesamowitą elastyczność w zakresie stosowanych rozwiązań, przedsiębiorstwa potrzebują sprawdzonej i spójnej metodologii wdrażania technologii chmurowych. Przewodnik Microsoft Cloud Adoption Framework dla platformy Azure zaspokaja te potrzeby, ułatwiając podejmowanie decyzji w trakcie całego procesu wdrażania chmury.
+Chmura całkowicie zmienia sposoby, w jakie firmy pozyskują i zabezpieczają zasoby technologiczne oraz korzystają z nich. Tradycyjnie przedsiębiorstwa były właścicielami wszystkich aspektów technologii, od infrastruktury po oprogramowanie, i brały za nie odpowiedzialność. Przejście do chmury umożliwia przedsiębiorstwom aprowizowanie i używanie zasobów tylko wtedy, kiedy są potrzebne. Podczas gdy chmura zapewnia niesamowitą elastyczność w zakresie stosowanych rozwiązań, przedsiębiorstwa potrzebują sprawdzonej i spójnej metodologii wdrażania technologii chmurowych. Przewodnik Microsoft Cloud Adoption Framework dla platformy Azure zaspokaja te potrzeby, ułatwiając podejmowanie decyzji w trakcie całego procesu wdrażania chmury.
 
 Jednak wdrożenie chmury to tylko środek do celu. Pomyślne wdrożenie chmury zaczyna się dużo wcześniej przed wyborem dostawcy chmury. Zaczyna się ono wtedy, gdy osoby podejmujące decyzje biznesowe i w zakresie IT zdają sobie sprawę, że chmura może przyspieszyć osiągnięcie określonego celu transformacji firmy. Przewodnik Cloud Adoption Framework pomaga dostosować strategie dotyczące działalności biznesowej, kultury i zmian technicznych tak, aby osiągnąć pożądane wyniki biznesowe.
 
-Przewodnik Cloud Adoption Framework oferuje wskazówki techniczne dotyczące platformy Microsoft Azure. Klienci korporacyjni nadal mogą być w trakcie wybierania dostawcy chmury, dlatego ten przewodnik udostępnia niezależne od chmury wskazówki dotyczące strategicznych decyzji tam, gdzie jest to możliwe.
+Przewodnik Cloud Adoption Framework oferuje wskazówki techniczne dotyczące platformy Microsoft Azure. Klienci korporacyjni mogą nadal być w trakcie wybierania dostawcy chmury lub mogą celowo stosować strategię obejmującą wiele chmur, dlatego ten przewodnik udostępnia niezależne od chmury wskazówki dotyczące strategicznych decyzji tam, gdzie jest to możliwe.
 
 ## <a name="intended-audience"></a>Docelowi odbiorcy
 
