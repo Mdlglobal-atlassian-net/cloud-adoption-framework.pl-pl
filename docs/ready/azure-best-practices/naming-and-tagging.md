@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 6268fc8a272cd173b95707d19eee5e784a2a0c25
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 657f0fd43b65b0d1122ae275e41370c9ddc5bbd0
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781559"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868095"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Gotowe: zalecane konwencje nazewnictwa i tagowania
 
@@ -52,7 +52,7 @@ Na przykład sieć wirtualna ma zakres grupy zasobów, co oznacza, że w danej g
 
 Niektóre nazwy zasobów, takich jak usługi PaaS z publicznymi punktami końcowymi lub etykietami nazw DNS maszyn wirtualnych, mają zakresy globalne, co oznacza, że muszą być unikatowe na całej platformie Azure.
 
-Nazwy zasobów mają limity długości. Jest ważne, aby podczas opracowywania konwencji nazewnictwa zrównoważyć kontekst osadzony w nazwie z jej zakresem i długością. Aby uzyskać więcej informacji o regułach nazewnictwa w zakresie dozwolonych znaków, zakresów i długości nazw dla typów zasobów, zobacz temat [Naming conventions for Azure resources](/azure/architecture/best-practices/resource-naming) (Konwencje nazewnictwa dla zasobów platformy Azure).
+Nazwy zasobów mają limity długości. Jest ważne, aby podczas opracowywania konwencji nazewnictwa zrównoważyć kontekst osadzony w nazwie z jej zakresem i długością. Aby uzyskać więcej informacji o regułach nazewnictwa w zakresie dozwolonych znaków, zakresów i długości nazw dla typów zasobów, zobacz temat [Naming conventions for Azure resources](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) (Konwencje nazewnictwa dla zasobów platformy Azure).
 
 #### <a name="recommended-naming-components"></a>Zalecane składniki nazwy
 

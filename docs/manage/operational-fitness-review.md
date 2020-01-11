@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c8ed34cccdcd108d17554f103bcfb0ce864ccf55
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 9607bf217d8638f2337fa337a4cb57c7ba919608
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781695"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868049"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Ustanowienie przeglądu sprawności operacyjnej
 
@@ -130,5 +130,5 @@ Dostosuj szczegóły procesu i spotkania zgodnie z konkretnymi potrzebami. Zalec
     Ten przewodnik rozpoczyna się od definicji _odporności_ i powiązanych koncepcji. Następnie opisuje proces osiągania odporności przy użyciu podejścia strukturalnego w czasie trwania aplikacji, od projektowania i implementacji do wdrożenia i operacji.
 - [Wzorce projektowe w chmurze](https://docs.microsoft.com/azure/architecture/patterns).
     Te wzorce projektowe są przydatne dla zespołów inżynieryjnych podczas kompilowania aplikacji na filarach jakości oprogramowania.
-- [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/).
-    Program Advisor oferuje rekomendacje, które są personalizowane w oparciu o Twoje użycie i konfiguracje, aby ułatwić optymalizację zasobów pod kątem wysokiej dostępności, bezpieczeństwa, wydajności i kosztów. 
+- [Azure Advisor](https://docs.microsoft.com/azure/advisor).
+    Program Advisor oferuje rekomendacje, które są personalizowane w oparciu o Twoje użycie i konfiguracje, aby ułatwić optymalizację zasobów pod kątem wysokiej dostępności, bezpieczeństwa, wydajności i kosztów.
