@@ -1,19 +1,19 @@
 ---
-title: Ścieżka gotowości w zakresie umiejętności
+title: Ścieżka gotowości do kwalifikacji podczas planowania
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Przegląd ścieżki gotowości w zakresie umiejętności
+description: Przegląd ścieżki gotowości do kwalifikacji w fazie planu migracji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ce3949a6d778ed61eea74fbd8a1aa955a477d3d8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 62152049578d1bd1f433cc4d2070504363cffef1
+ms.sourcegitcommit: 2efd4715294189bcea7aada8a1cbbc85c72f6264
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561640"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75943462"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Ścieżka gotowości do kwalifikacji w fazie planu podróży migracji
 
@@ -56,7 +56,7 @@ Konwertuj przypadek biznesowy i uzgodnioną cyfrę na plan migracji z możliwoś
 W fazie przygotowywania pracownicy techniczni tworzą strefę wyładunkowej migracji, która umożliwia hosting i obsługę obciążeń, które zostały zmigrowane do chmury. Te ścieżki szkoleniowe mogą pomóc w opracowaniu niezbędnych umiejętności:
 
 - [Utwórz konto platformy Azure](https://docs.microsoft.com/learn/modules/create-an-azure-account). Pierwszym krokiem podczas korzystania z platformy Azure jest utworzenie konta. Twoje konto zawiera usługi platformy Azure, które udostępniamy, i obsługuje Twoje ustawienia osobiste, takie jak tożsamość, rozliczenia i preferencje.
-- [Azure Portal](https://docs.microsoft.com/learn/modules/tour-azure-portal). Przedstawienie funkcji i usług witryny Azure Portal oraz możliwości dostosowywania portalu.
+- Użycie witryny [Azure Portal](https://docs.microsoft.com/learn/modules/tour-azure-portal). Przedstawienie funkcji i usług witryny Azure Portal oraz możliwości dostosowywania portalu.
 - [Wprowadzenie do platformy Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure). Rozpocznij pracę z platformą Azure od utworzenia i konfiguracji swojej pierwszej maszyny wirtualnej w chmurze.
 - [Wprowadzenie do zabezpieczeń na platformie Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Poznaj podstawowe pojęcia związane z ochroną infrastruktury i danych podczas pracy w chmurze. Dowiedz się, jakie są Twoje obowiązki, a za co odpowiada platforma Azure.
 - [Zarządzanie zasobami na platformie Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure). Dowiedz się, jak pracować z wierszem polecenia i portalem internetowym platformy Azure na potrzeby tworzenia zasobów opartych na chmurze, zarządzania nimi i kontrolowania ich.
@@ -87,11 +87,11 @@ Zalecamy włączenie znajomości platformy Azure do oficjalnego uznania przy uż
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn to nowe podejście do uczenia się. Nie jest łatwo dostępna gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty, poziomy i Osiągaj więcej!
+Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury, nie przychodzi łatwo. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty, poziomy i Osiągaj więcej!
 
 Poniżej znajduje się przykład dopasowane ścieżki szkoleniowe, które są wyrównane do Potion strategii wdrożenia chmury.
 
-[Poznaj wartość biznesową Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): to środowisko szkoleniowe zajmie się podróżą, która rozpocznie się, pokazując, w jaki sposób cyfrowe przekształcanie i możliwości chmury mogą przekształcić swoją firmę. Dowiesz się, jak usługi w chmurze Microsoft Azure mogą obsługiwać organizację na zaufanej platformie w chmurze. Na koniec zajmiemy się tym, jak to zrobić w rzeczywistości dla Twojej organizacji.
+[Poznaj wartość biznesową Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): to środowisko szkoleniowe zajmie się podróżą, która rozpocznie się, pokazując, w jaki sposób cyfrowe przekształcanie i możliwości chmury mogą przekształcić swoją firmę. Pokażemy, jak usługi w chmurze platformy Microsoft Azure mogą wspierać Twoją organizację na zaufanej platformie w chmurze. Na koniec zilustrujemy, co zrobić, aby ta podróż stała się rzeczywistością dla Twojej organizacji.
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
