@@ -9,25 +9,25 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 657f0fd43b65b0d1122ae275e41370c9ddc5bbd0
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: 3a99398d5ae180efe9dca4cadf0554d92c6380b2
+ms.sourcegitcommit: 91ece6ba373a4d0d573cca7e616f0b67337b0d1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868095"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76023363"
 ---
-# <a name="ready-recommended-naming-and-tagging-conventions"></a>Gotowe: zalecane konwencje nazewnictwa i tagowania
+# <a name="recommended-naming-and-tagging-conventions"></a>Zalecane konwencje nazewnictwa i tagowania
 
-Organizowanie elementów zawartości opartych na chmurze w taki sposób, aby ułatwić zarządzanie operacyjne i spełniać wymogi dotyczące księgowania, jest typowym problemem podczas działań związanych z zastosowaniem chmury na dużą skalę. Dzięki zastosowaniu dobrze zdefiniowanych konwencji nazewnictwa i tagowania metadanych do zasobów hostowanych w chmurze pracownicy IT mogą szybko znajdować zasoby i nimi zarządzać. Dobrze zdefiniowane nazwy i tagi pomagają również w dopasowaniu kosztów użycia chmury do zespołów biznesowych przy użyciu mechanizmów obciążenia zwrotnego i księgowania w zakresie przewidywania kosztów.
+Organizowanie zasobów opartych na chmurze w taki sposób, aby pomoc w zakresie zarządzania operacyjnego i pomocy technicznej była powszechnym wyzwaniem w przypadku dużych wysiłków z tytułu wdrożenia w chmurze. Dzięki zastosowaniu dobrze zdefiniowanych konwencji nazewnictwa i tagowania metadanych do zasobów hostowanych w chmurze pracownicy IT mogą szybko znajdować zasoby i nimi zarządzać. Dobrze zdefiniowane nazwy i tagi pomagają również w dopasowaniu kosztów użycia chmury do zespołów biznesowych przy użyciu mechanizmów obciążenia zwrotnego i księgowania w zakresie przewidywania kosztów.
 
-[Zasady nazewnictwa centrum architektury platformy Azure i ograniczenia dotyczące usługi Azure Resources](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) zawierają ogólne zalecenia i ograniczenia dotyczące platformy. W omówieniu poniżej rozwinięto te ogólne wytyczne, dodając bardziej szczegółowe zalecenia w celu wspierania działań związanych z wdrażaniem chmury w przedsiębiorstwie.
+W Centrum architektury platformy Azure wskazówki dotyczące [reguł nazewnictwa i ograniczeń dotyczących zasobów platformy Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) są dostępne ogólne zalecenia i ograniczenia dotyczące platformy. W poniższej dyskusji przedstawiono wskazówki z bardziej szczegółowymi zaleceniami, które zaprojektowano w celu wspierania wysiłków związanych z wdrażaniem w chmurze przedsiębiorstwa.
 
-Zmiana nazw zasobów może być trudna. Przed rozpoczęciem każdego dużego wdrożenia chmury upewnij się, że Twoje zespoły wdrażające chmurę najpierw ustaliły pełną konwencję nazewnictwa.
+Zmiana nazw zasobów może być trudna. Przed rozpoczęciem każdego dużego wdrożenia w chmurze należy określić priorytety ustanawiania kompleksowej konwencji nazewnictwa.
 
 > [!NOTE]
-> Każda firma ma inne wymagania w zakresie organizacji i zarządzania. Zalecenia przedstawione w tym artykule stanowią punkt wyjścia do dyskusji w zespołach wdrażających chmurę.
+> Każda firma ma inne wymagania w zakresie organizacji i zarządzania. Te zalecenia stanowią punkt wyjścia dla dyskusji w zespołach wdrożenia chmury.
 >
-> W trakcie tych dyskusji korzystaj z poniższego szablonu, aby zarejestrować decyzje dotyczące nazewnictwa i tagowania podejmowane podczas dostosowywania tych zaleceń do konkretnych potrzeb firmy.
+> Ponieważ te dyskusje są realizowane, użyj następującego szablonu, aby przechwycić decyzje dotyczące nadawania nazw i tagowania wprowadzane podczas wyrównywania tych zaleceń do określonych potrzeb firmy.
 >
 > Pobierz [szablon śledzenia konwencji nazewnictwa i tagowania](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx).
 
@@ -35,7 +35,7 @@ Zmiana nazw zasobów może być trudna. Przed rozpoczęciem każdego dużego wdr
 
 Strategia nazewnictwa i tagowania obejmuje szczegóły biznesowe i operacyjne jako składniki nazw zasobów i tagów metadanych:
 
-- Biznesowy aspekt tej strategii pozwala zapewnić, że nazwy zasobów oraz tagi obejmują informacje organizacyjne konieczne do zidentyfikowania zespołów. Umożliwia korzystanie z zasobów w powiązaniu z właścicielami biznesowymi, którzy odpowiadają za koszty zasobów.
+- Po stronie biznesowej tej strategii należy zapewnić, że nazwy zasobów i Tagi zawierają informacje o organizacji, które są konieczne do zidentyfikowania zespołów. Umożliwia korzystanie z zasobów w powiązaniu z właścicielami biznesowymi, którzy odpowiadają za koszty zasobów.
 - Aspekt operacyjny zapewnia, że nazwy i tagi zawierają informacje używane przez zespoły informatyczne do identyfikowania obciążenia, aplikacji, środowiska, ważności oraz inne informacje przydatne do zarządzania zasobami.
 
 ### <a name="resource-naming"></a>Nazewnictwo zasobów
