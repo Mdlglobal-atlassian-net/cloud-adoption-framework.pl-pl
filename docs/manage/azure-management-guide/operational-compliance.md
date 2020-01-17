@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9109a51a85627f3c8d0cee8b72baa0936d56c98e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565481"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781814"
 ---
 # <a name="operational-compliance-in-azure"></a>Zgodność operacyjna na platformie Azure
 
@@ -32,6 +32,7 @@ Ta tabela zawiera sugerowane wartości minimalne planu bazowego zarządzania dla
 |Zarządzanie poprawkami|Zarządzanie aktualizacjami|Planowanie aktualizacji i zarządzanie nimi|
 |Wymuszanie zasad|Azure Policy|Wymuszanie zasad w celu zapewnienia zgodności środowiska i gościa|
 |Konfiguracja środowiska|Azure Blueprints|Zautomatyzowana zgodność dla podstawowych usług|
+|Konfiguracja zasobu|Desired State Configuration|Zautomatyzowana konfiguracja w systemie operacyjnym gościa i niektóre aspekty środowiska|
 
 ::: zone target="docs"
 

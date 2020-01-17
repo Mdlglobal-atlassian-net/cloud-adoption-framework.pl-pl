@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4969681cbc6fbb71da70f3ced09b5e4616c773b5
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565461"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781780"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Spis i widoczność na platformie Azure
 
@@ -33,7 +33,7 @@ Poniższa tabela zawiera sugerowane wartości minimalne planu bazowego zarządza
 |Scentralizowane dzienniki|Log Analytics|Centralne rejestrowanie dla wszystkich celów związanych z widocznością|
 |Scentralizowane monitorowanie|Azure Monitor|Centralne monitorowanie danych operacyjnych i trendów|
 |Śledzenie zmian i spisu maszyn wirtualnych|Azure Change Tracking and Inventory|Tworzenie spisu maszyn wirtualnych i monitorowanie zmian na poziomie systemu operacyjnego gościa|
-|Kondycja usługi|Dziennik aktywności platformy Azure|Monitorowanie zmian na poziomie subskrypcji|
+|Monitorowanie subskrypcji|Dziennik aktywności platformy Azure|Monitorowanie zmian na poziomie subskrypcji|
 |Monitorowanie systemu operacyjnego gościa|Usługa Azure Monitor dla maszyn wirtualnych|Monitorowanie zmian i wydajności maszyn wirtualnych|
 |Monitorowanie sieci|Azure Network Watcher|Monitorowanie zmian i wydajności sieci|
 |Monitorowanie systemu DNS|Analiza DNS|Zabezpieczenia, wydajność i operacje systemu DNS|
