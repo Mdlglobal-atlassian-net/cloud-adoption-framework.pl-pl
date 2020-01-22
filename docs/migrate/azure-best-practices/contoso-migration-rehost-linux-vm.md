@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: c1d7549a820b8f830fc577ce82ebc4d2f1dbfcb2
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 078749474b13074d9196a80c10768da468e423bc
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566529"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520212"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Ponowne hostowanie aplikacji lokalnej dla systemu Linux na maszynach wirtualnych platformy Azure
 
@@ -22,7 +22,7 @@ W tym artykule pokazano, jak fikcyjna firma Contoso przeprowadza ponowne hostowa
 
 Używana w tym przykładzie aplikacja do obsługi pomocy technicznej, osTicket, jest dostępna jako aplikacja open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/osTicket/osTicket).
 
-## <a name="business-drivers"></a>Czynniki biznesowe
+## <a name="business-drivers"></a>Biznesowa siła napędowa
 
 Zespół liderów IT w ścisłej współpracy z partnerami biznesowymi firmy ustalił, co firma będzie chciała osiągnąć dzięki migracji:
 
@@ -70,7 +70,7 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 **Zagadnienie** | **Szczegóły**
 --- | ---
 **Zalety** | Obie maszyny wirtualne aplikacji zostaną przeniesione na platformę Azure bez zmian, co oznacza prostą migrację.<br/><br/> Ponieważ firma Contoso używa metody podnoszenia i przesunięcia dla maszyn wirtualnych aplikacji, nie jest wymagana specjalna konfiguracja ani narzędzia migracji dla bazy danych aplikacji.<br/><br/> Firma Contoso zachowa pełną kontrolę nad maszynami wirtualnymi aplikacji na platformie Azure. <br/><br/> Maszyny wirtualne aplikacji mają system Ubuntu 16.04-TLS, który jest zalecaną dystrybucją systemu Linux. [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
-**Wady** | Warstwa internetowa i warstwa danych aplikacji wciąż będą stanowiły pojedynczy punkt awarii. <br/><br/> Firma Contoso nadal będzie musiała obsługiwać aplikację na maszynach wirtualnych na platformie Azure, zamiast przenieść ją do usługi zarządzanej, takiej jak Azure App Service czy Azure Database for MySQL.<br/><br/> Firma Contoso wie, że przez utrzymywanie prostoty i przełączenie migracji maszyn wirtualnych nie w pełni wykorzystują funkcje zapewniane przez [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) (wbudowana wysoka dostępność, przewidywalna wydajność, proste skalowanie, automatyczne kopie zapasowe i wbudowane zabezpieczenia).
+**Wady** | Warstwa internetowa i warstwa danych aplikacji wciąż będą stanowiły pojedynczy punkt awarii. <br/><br/> Firma Contoso nadal będzie musiała obsługiwać aplikację na maszynach wirtualnych na platformie Azure, zamiast przenieść ją do usługi zarządzanej, takiej jak Azure App Service czy Azure Database for MySQL.<br/><br/> Firma Contoso wie, że przez utrzymywanie prostoty i przełączenie migracji maszyn wirtualnych nie w pełni wykorzystują funkcje zapewniane przez [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) (wbudowana wysoka dostępność, przewidywalna wydajność, proste skalowanie, automatyczne wykonywanie kopii zapasowych i wbudowane zabezpieczenia).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -137,7 +137,7 @@ Składniki te są konfigurowane w następujący sposób:
 
     ![Narzędzie migracji serwera usługi Azure Migrate](./media/contoso-migration-rehost-linux-vm/server-migration-tool.png)
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate) o konfigurowaniu narzędzia migracji serwera usługi Azure Migrate.
 
@@ -149,7 +149,7 @@ Po przełączeniu do trybu failover na platformie Azure firma Contoso chce mieć
 - Po rozpoczęciu migracji (przełączeniu do trybu failover) mogą sprawdzić **diagnostykę rozruchu**, aby wyświetlić zrzut ekranu maszyny wirtualnej.
 - Jeśli to nie zadziała, muszą upewnić się, że maszyna wirtualna jest uruchomiona, i zapoznać się z tymi [poradami dotyczącymi rozwiązywania problemów](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx).
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration) na temat przygotowywania maszyn wirtualnych do migracji
 
@@ -185,7 +185,7 @@ Po ukończeniu odnajdywania można rozpocząć replikację maszyn wirtualnych VM
     - Wybierz pozycję **Nie**, jeśli nie chcesz stosować korzyści użycia hybrydowego platformy Azure. Następnie kliknij przycisk **Next** (Dalej).
     - Wybierz opcję **Tak**, jeśli masz maszyny z systemem Windows Server, które są objęte aktywnym programem Software Assurance lub subskrypcjami systemu Windows Server, i chcesz zastosować korzyść do migrowanych maszyn. Następnie kliknij przycisk **Next** (Dalej).
 
-8. W obszarze **Obliczenia** sprawdź nazwę, rozmiar, typ dysku systemu operacyjnego i zestaw dostępności maszyny wirtualnej. Maszyny wirtualne muszą być zgodne z [wymaganiami platformy Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements).
+8. W obszarze **Obliczenia** sprawdź nazwę, rozmiar, typ dysku systemu operacyjnego i zestaw dostępności maszyny wirtualnej. Maszyny wirtualne muszą być zgodne z [wymaganiami platformy Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements).
 
     - **Rozmiar maszyny wirtualnej:** Jeśli używasz zaleceń dotyczących oceny, lista rozwijana rozmiaru maszyny wirtualnej będzie zawierać zalecany rozmiar. W przeciwnym razie usługa Azure Migrate wybierze rozmiar na podstawie najbliższego dopasowania w subskrypcji platformy Azure. Alternatywnie możesz wybrać rozmiar ręczny w obszarze **rozmiaru maszyny wirtualnej platformy Azure**.
     - **Dysk systemu operacyjnego:** Określ dysk systemu operacyjnego (Boot) dla maszyny wirtualnej. Dysk systemu operacyjnego to dysk, na którym jest zainstalowany program ładujący i instalator systemu operacyjnego.
@@ -206,7 +206,7 @@ Administratorzy firmy Contoso uruchamiają szybki test przejścia do trybu failo
 
 ### <a name="run-a-test-failover"></a>Wykonywanie próby przejścia w tryb failover
 
-1. W obszarze **cele migracji**  > **serwery**  > **Azure Migrate: Migracja serwera**, kliknij przycisk **Testuj zmigrowane serwery**.
+1. W obszarze **cele migracji** > **serwery** > **Azure Migrate: Migracja serwera**, kliknij przycisk **Testuj zmigrowane serwery**.
 
      ![Serwery z przeprowadzoną migracją testową](./media/contoso-migration-rehost-linux-vm/test-migrated-servers.png)
 
@@ -221,11 +221,11 @@ Administratorzy firmy Contoso uruchamiają szybki test przejścia do trybu failo
 
     ![Czyszczenie migracji](./media/contoso-migration-rehost-linux-vm/clean-up.png)
 
-### <a name="migrate-the-vms"></a>migrowanie maszyn wirtualnych
+### <a name="migrate-the-vms"></a>Migrowanie maszyn wirtualnych
 
 Teraz administratorzy firmy Contoso uruchamiają pełne przejście do trybu failover w celu ukończenia migracji.
 
-1. Na **serwerach** Azure Migrate > project  > **Azure Migrate: Migracja serwera**, kliknij przycisk **replikowanie serwerów**.
+1. Na **serwerach** Azure Migrate > project > **Azure Migrate: Migracja serwera**, kliknij przycisk **replikowanie serwerów**.
 
     ![Replikowanie serwerów](./media/contoso-migration-rehost-linux-vm/replicating-servers.png)
 
@@ -266,7 +266,7 @@ W ostatnim kroku procesu migracji administratorzy firmy Contoso zaktualizują pa
 
     ![Aktualizowanie rekordów DNS](./media/contoso-migration-rehost-linux-vm-mysql/update-dns.png)
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) o próbnym uruchamianiu trybu failover.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) o migracji maszyn wirtualnych do platformy Azure.

@@ -9,20 +9,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3de31e419ea701f8e7e7091d14db1884a4b641d2
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f38503b0cc998721726845fc1669f40ea8c845e4
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566475"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520195"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms"></a>Ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure
 
 W tym artykule pokazano, w jaki sposób fikcyjna firma Contoso ponownie hostuje dwuwarstwową aplikację frontonu .NET systemu Windows działającą na maszynach wirtualnych VMware, migrując maszyny wirtualne aplikacji na platformę Azure.
 
-Aplikacja SmartHotel360 używana w tym przykładzie jest oferowana jako aplikacja typu open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
+Używana w tym przykładzie aplikacja SmartHotel360 jest dostępna jako aplikacja open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
 
-## <a name="business-drivers"></a>Czynniki biznesowe
+## <a name="business-drivers"></a>Biznesowa siła napędowa
 
 Zespół liderów IT w ścisłej współpracy z partnerami biznesowymi firmy ustalił, co firma będzie chciała osiągnąć dzięki migracji:
 
@@ -142,7 +142,7 @@ Składniki te są konfigurowane w następujący sposób:
 
     ![Narzędzie migracji serwera usługi Azure Migrate](./media/contoso-migration-rehost-vm/server-migration-tool.png)
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate) o konfigurowaniu narzędzia migracji serwera usługi Azure Migrate.
 
@@ -167,7 +167,7 @@ Ponadto po uruchomieniu trybu failover muszą sprawdzić następujące kwestie:
 - Podczas wyzwalania trybu failover na maszynie wirtualnej nie powinno być żadnych oczekujących aktualizacji systemu Windows. W przeciwnym razie nie będzie można zalogować się na maszynie wirtualnej do momentu ukończenia aktualizacji.
 - Po przejściu do trybu failover administratorzy mogą sprawdzić **diagnostykę rozruchu**, aby wyświetlić zrzut ekranu maszyny wirtualnej. Jeśli to nie zadziała, powinni sprawdzić, czy maszyna wirtualna jest uruchomiona, i zapoznać się z tymi [poradami dotyczącymi rozwiązywania problemów](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx).
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration) na temat przygotowywania maszyn wirtualnych do migracji
 
@@ -203,7 +203,7 @@ Po ukończeniu odnajdywania można rozpocząć replikację maszyn wirtualnych VM
     - Wybierz pozycję **Nie**, jeśli nie chcesz stosować korzyści użycia hybrydowego platformy Azure. Następnie kliknij przycisk **Next** (Dalej).
     - Wybierz opcję **Tak**, jeśli masz maszyny z systemem Windows Server, które są objęte aktywnym programem Software Assurance lub subskrypcjami systemu Windows Server, i chcesz zastosować korzyść do migrowanych maszyn. Następnie kliknij przycisk **Next** (Dalej).
 
-8. W obszarze **Obliczenia** sprawdź nazwę, rozmiar, typ dysku systemu operacyjnego i zestaw dostępności maszyny wirtualnej. Maszyny wirtualne muszą być zgodne z [wymaganiami platformy Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements).
+8. W obszarze **Obliczenia** sprawdź nazwę, rozmiar, typ dysku systemu operacyjnego i zestaw dostępności maszyny wirtualnej. Maszyny wirtualne muszą być zgodne z [wymaganiami platformy Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements).
 
     - **Rozmiar maszyny wirtualnej:** Jeśli używasz zaleceń dotyczących oceny, lista rozwijana rozmiaru maszyny wirtualnej będzie zawierać zalecany rozmiar. W przeciwnym razie usługa Azure Migrate wybierze rozmiar na podstawie najbliższego dopasowania w subskrypcji platformy Azure. Alternatywnie możesz wybrać rozmiar ręczny w obszarze **rozmiaru maszyny wirtualnej platformy Azure**.
     - **Dysk systemu operacyjnego:** Określ dysk systemu operacyjnego (Boot) dla maszyny wirtualnej. Dysk systemu operacyjnego to dysk, na którym jest zainstalowany program ładujący i instalator systemu operacyjnego.
@@ -224,7 +224,7 @@ Administratorzy firmy Contoso uruchamiają szybki test przejścia do trybu failo
 
 ### <a name="run-a-test-failover"></a>Wykonywanie próby przejścia w tryb failover
 
-1. W obszarze **cele migracji**  > **serwery**  > **Azure Migrate: Migracja serwera**, kliknij przycisk **Testuj zmigrowane serwery**.
+1. W obszarze **cele migracji** > **serwery** > **Azure Migrate: Migracja serwera**, kliknij przycisk **Testuj zmigrowane serwery**.
 
      ![Serwery z przeprowadzoną migracją testową](./media/contoso-migration-rehost-vm/test-migrated-servers.png)
 
@@ -239,11 +239,11 @@ Administratorzy firmy Contoso uruchamiają szybki test przejścia do trybu failo
 
     ![Czyszczenie migracji](./media/contoso-migration-rehost-vm/clean-up.png)
 
-### <a name="migrate-the-vms"></a>migrowanie maszyn wirtualnych
+### <a name="migrate-the-vms"></a>Migrowanie maszyn wirtualnych
 
 Teraz administratorzy firmy Contoso uruchamiają pełne przejście do trybu failover w celu ukończenia migracji.
 
-1. Na **serwerach** Azure Migrate > project  > **Azure Migrate: Migracja serwera**, kliknij przycisk **replikowanie serwerów**.
+1. Na **serwerach** Azure Migrate > project > **Azure Migrate: Migracja serwera**, kliknij przycisk **replikowanie serwerów**.
 
     ![Replikowanie serwerów](./media/contoso-migration-rehost-vm/replicating-servers.png)
 
@@ -254,7 +254,7 @@ Teraz administratorzy firmy Contoso uruchamiają pełne przejście do trybu fail
 4. Zostanie uruchomione zadanie migracji maszyny wirtualnej. Śledź zadanie w powiadomieniach platformy Azure.
 5. Po zakończeniu zadania możesz wyświetlić maszynę wirtualną i zarządzać nią na stronie **Maszyny wirtualne**.
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) o próbnym uruchamianiu trybu failover.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) o migracji maszyn wirtualnych do platformy Azure.
