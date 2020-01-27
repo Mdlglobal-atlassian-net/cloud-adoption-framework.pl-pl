@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b00b007f9fb223312aa7baf99f54d32a8a08ce70
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 160d39a26e579816b2e961df30715e6aae1d16bb
+ms.sourcegitcommit: f53e8620adfca7bb5660ef23cac1dab069998e0e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681830"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726339"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Ponowne kompilowanie aplikacji lokalnej na platformie Azure
 
 W tym artykule pokazano, jak fikcyjna firma Contoso ponownie kompiluje dwuwarstwową aplikację .NET systemu Windows uruchomioną na maszynach wirtualnych VMware w ramach migracji do platformy Azure. Firma Contoso migruje maszynę wirtualną frontonu aplikacji do aplikacji internetowej usługi Azure App Service. Zaplecze aplikacji jest tworzone przy użyciu mikrousług wdrożonych w kontenerach zarządzanych przez usługę Azure Kubernetes Service (AKS). Witryna współdziała z usługą Azure Functions w celu udostępnienia funkcji obsługi zdjęć zwierząt domowych.
 
-Aplikacja SmartHotel360 używana w tym przykładzie jest oferowana jako aplikacja typu open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
+Używana w tym przykładzie aplikacja SmartHotel360 jest dostępna jako aplikacja open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
 
 ## <a name="business-drivers"></a>Czynniki biznesowe
 
@@ -28,7 +28,7 @@ Zespół liderów IT w ścisłej współpracy z partnerami biznesowymi firmy ust
 
 - **Reagowanie na rosnące potrzeby biznesowe.** Firma Contoso się rozwija i chce zapewnić klientom zróżnicowane środowiska w witrynach internetowych firmy Contoso.
 - **Zwinność.** Firma Contoso chce być w stanie szybciej reagować na zmiany na rynku, aby odnosić sukcesy w gospodarce światowej.
-- **Skalowalność.** W miarę pomyślnego rozwoju firmy Contoso jej dział IT musi zapewnić systemy, które będą mogły rosnąć w tym samym tempie.
+- **Skalowalność.** W miarę rozwoju firmy Contoso jej dział IT musi zapewnić systemy, które będą mogły rosnąć w tym samym tempie.
 - **Redukcja kosztów.** Firma Contoso chce zminimalizować koszty licencjonowania.
 
 ## <a name="migration-goals"></a>Cele migracji
@@ -41,7 +41,7 @@ Zespół ds. chmury firmy Contoso określił wymagania związane z aplikacją w 
 - Usługa interfejsu API używana do obsługi zdjęć zwierząt powinna być dokładna i niezawodna w rzeczywistych warunkach, ponieważ decyzje podjęte przez aplikację muszą być uznawane w należących do firmy hotelach. W hotelach będzie mogło przebywać każde zwierzę, które otrzyma zezwolenie na dostęp w aplikacji.
 - Aby spełnić wymagania stawiane przez potok DevOps, firma Contoso użyje usługi Azure DevOps i repozytoriów Git do zarządzania kodem źródłowym. Do kompilowania kodu i wdrażania go w usługach Azure App Service, Azure Functions i AKS będą używane zautomatyzowane kompilacje i wydania.
 - Mikrousługi na zapleczu oraz witryna internetowa na frontonie wymagają użycia różnych potoków ciągłej integracji/ciągłego wdrażania.
-- Usługi zaplecza i aplikacja internetowa frontonu mają inny cykl wydawania. Aby spełnić to wymaganie, zostaną wdrożone dwa różne potoki DevOps.
+- Usługi zaplecza i aplikacja internetowa frontonu mają inny cykl wydawania. Aby spełnić to wymaganie, wdrażane są dwa różne potoki.
 - Firma Contoso potrzebuje funkcji zatwierdzania wszystkich wdrożeń witryny internetowej frontonu przez kierownictwo, a potok ciągłej integracji/ciągłego wdrażania musi ją zapewnić.
 
 ## <a name="solution-design"></a>Projekt rozwiązania
@@ -58,7 +58,7 @@ Po określeniu celów i wymagań firma Contoso planuje i ocenia rozwiązanie do 
 
 ### <a name="proposed-architecture"></a>Proponowana architektura
 
-- Fronton aplikacji jest wdrożony jako aplikacja internetowa usługi Azure App Service w podstawowym regionie platformy Azure.
+- Fronton aplikacji jest wdrażany jako aplikacja sieci Web Azure App Service w podstawowym regionie platformy Azure.
 - Funkcja platformy Azure umożliwia przekazywanie zdjęć zwierząt, a witryna współdziała z tą funkcją.
 - Funkcja obsługi zdjęć zwierząt korzysta z interfejsu API przetwarzania obrazów usługi Azure Cognitive Services oraz z usługi Cosmos DB.
 - Zaplecze witryny jest utworzone przy użyciu mikrousług. Zostaną one wdrożone w kontenerach zarządzanych przez usługę Azure Kubernetes Service (AKS).
@@ -110,7 +110,7 @@ W tym scenariuszu firma Contoso potrzebuje następujących elementów:
 --- | ---
 **Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje w jednym z poprzednich artykułów. Jeśli nie masz subskrypcji platformy Azure, utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.
 **Infrastruktura platformy Azure** | [Dowiedz się](./contoso-migration-infrastructure.md), jak firma Contoso skonfigurowała infrastrukturę platformy Azure.
-**Wymagania wstępne dla deweloperów** | Firma Contoso potrzebuje następujących narzędzi na stacji roboczej dewelopera:<br/><br/> - [Visual Studio 2017 Community Edition: wersja 15,5](https://www.visualstudio.com)<br/><br/> Włączony pakiet roboczy platformy .NET.<br/><br/> [Usługa Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Interfejs wiersza polecenia platformy Azure](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> Program [Docker CE (dla systemu Windows 10) lub Docker EE (dla systemu Windows Server)](https://docs.docker.com/docker-for-windows/install) skonfigurowany pod kątem korzystania z kontenerów systemu Windows.
+**Wymagania wstępne dla deweloperów** | Firma Contoso potrzebuje następujących narzędzi na stacji roboczej dewelopera:<br/><br/> - [Visual Studio 2017 Community Edition: wersja 15,5](https://www.visualstudio.com)<br/><br/> Włączony pakiet roboczy platformy .NET.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Interfejs wiersza polecenia platformy Azure](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> Program [Docker CE (dla systemu Windows 10) lub Docker EE (dla systemu Windows Server)](https://docs.docker.com/docker-for-windows/install) skonfigurowany pod kątem korzystania z kontenerów systemu Windows.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -134,7 +134,7 @@ Administratorzy firmy Contoso uruchamiają skrypt wdrożenia w celu utworzenia z
 - Instrukcje w tej sekcji korzystają z repozytorium **SmartHotel360-Azure-backend**.
 - Repozytorium GitHub **SmartHotel360-Azure-backend** zawiera całe oprogramowanie potrzebne do tej części wdrożenia.  
 
-### <a name="prerequisites"></a>Wymagania wstępne
+### <a name="ensure-prerequisites"></a>Zapewnianie wymagań wstępnych
 
 1. Przed rozpoczęciem Administratorzy firmy Contoso muszą upewnić się, że wszystkie wstępnie wymagane oprogramowanie zainstalowane na komputerze deweloperskim, którego używa do wdrożenia.
 2. Klonują repozytorium lokalnie na maszynę deweloperską przy użyciu usługi Git: `git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git`
@@ -445,7 +445,7 @@ Administratorzy firmy Contoso tworzą dwa różne projekty dla witryny frontonu.
 
 2. Importują repozytorium Git [SmartHotel360 front end](https://github.com/Microsoft/SmartHotel360-public-web.git) do nowego projektu.
 
-3. Dla aplikacji funkcji tworzą kolejny projekt usługi Azure DevOps (SmartHotelPetChecker) i importują repozytorium Git [PetChecker](https://github.com/Microsoft/SmartHotel360-PetCheckerFunction ) do tego projektu.
+3. Dla aplikacji funkcji tworzą kolejny projekt usługi Azure DevOps (SmartHotelPetChecker) i importują repozytorium Git [PetChecker](https://github.com/sonahander/SmartHotel360-PetCheckerFunction) do tego projektu.
 
 ### <a name="configure-the-web-app"></a>Konfigurowanie aplikacji internetowej
 
@@ -584,21 +584,20 @@ Administratorzy firmy Contoso wdrażają aplikację w następujący sposób.
 14. Wdrożona funkcja pojawi się w witrynie Azure Portal ze stanem **Uruchomiona**.
 
     ![Wdrażanie funkcji](./media/contoso-migration-rebuild/function6.png)
-    
+
 15. Przechodzą do aplikacji, aby sprawdzić, czy aplikacja Pet Checker działa zgodnie z oczekiwaniami pod adresem [http://smarthotel360public.azurewebsites.net/Pets](http://smarthotel360public.azurewebsites.net/Pets).
 
 16. Wybierają awatar, aby przekazać zdjęcie.
 
     ![Wdrażanie funkcji](./media/contoso-migration-rebuild/function7.png)
-    
+
 17. Pierwsze zdjęcie, które chcą sprawdzić, przedstawia małego psa.
 
     ![Wdrażanie funkcji](./media/contoso-migration-rebuild/function8.png)
-    
+
 18. Aplikacja zwraca komunikat o akceptacji.
 
     ![Wdrażanie funkcji](./media/contoso-migration-rebuild/function9.png)
-    
 
 ## <a name="review-the-deployment"></a>Przegląd wdrożenia
 
@@ -621,7 +620,7 @@ Po migracji zasobów na platformę Azure firma Contoso musi teraz w pełni zoper
 
 - Po wdrożeniu wszystkich zasobów firma Contoso powinna przypisać tagi platformy Azure zgodnie z [planem infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging).
 - Wszystkie koszty licencjonowania są wliczone w koszt usług PaaS używanych przez firmę Contoso. Ten koszt zostanie odjęty od umowy EA.
-- Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
+- Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) na temat usługi Azure Cost Management.
 
 ## <a name="conclusion"></a>Podsumowanie
 
@@ -629,11 +628,10 @@ W tym artykule firma Contoso ponownie skompilowała aplikację SmartHotel360 na 
 
 ## <a name="suggested-skills"></a>Sugerowane umiejętności
 
-Microsoft Learn to nowe podejście do uczenia się. Nie jest łatwo dostępna gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Uzyskaj punkty i poziomy i uzyskaj więcej informacji!
+Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury, nie przychodzi łatwo. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty i poziomy i osiągaj więcej.
 
 Poniżej przedstawiono kilka przykładów dostosowanych ścieżek szkoleniowych na Microsoft Learn, które są wyrównane do aplikacji Contoso SmartHotel360 na platformie Azure.
 
 [Wdrażanie witryny sieci Web na platformie Azure za pomocą Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/): aplikacje sieci Web na platformie Azure umożliwiają łatwe publikowanie i zarządzanie witryną sieci Web bez konieczności pracy z podstawowymi serwerami, magazynem lub zasobami sieciowymi. Zamiast tego możesz skoncentrować się na funkcjach witryny internetowej i polegać na niezawodnej platformie Azure w zakresie zabezpieczania dostępu do witryny.
 
 [Przetwarzaj i Klasyfikuj obrazy za pomocą usług Azure poznawczej](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/): usługa Azure Cognitive Services oferuje wbudowaną funkcję, która umożliwia korzystanie z funkcji przetwarzania obrazów w aplikacjach. Dowiedz się, jak korzystać z usług poznawczych, aby wykrywać twarze, Tagi i klasyfikować obrazy oraz identyfikować obiekty.
-

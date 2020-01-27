@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 3a99398d5ae180efe9dca4cadf0554d92c6380b2
-ms.sourcegitcommit: 91ece6ba373a4d0d573cca7e616f0b67337b0d1b
+ms.openlocfilehash: e1958d48eec112d11838835b853430c04601ab8b
+ms.sourcegitcommit: f53e8620adfca7bb5660ef23cac1dab069998e0e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76023363"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726315"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Zalecane konwencje nazewnictwa i tagowania
 
@@ -40,13 +40,13 @@ Strategia nazewnictwa i tagowania obejmuje szczegóły biznesowe i operacyjne ja
 
 ### <a name="resource-naming"></a>Nazewnictwo zasobów
 
-Skuteczna konwencja nazewnictwa polega na tworzeniu nazw zasobów przez uwzględnienie w nazwie ważnych informacji dotyczących danego zasobu. Na przykład w przypadku użycia zalecanych konwencji nazewnictwa, omówionych [w dalszej części tego artykułu](#sample-naming-convention) zasób publicznego adresu IP dla obciążenia produkcyjnego programu SharePoint otrzymuje następującą nazwę: `pip-sharepoint-prod-westus-001`.
+Skuteczna konwencja nazewnictwa polega na tworzeniu nazw zasobów przez uwzględnienie w nazwie ważnych informacji dotyczących danego zasobu. Na przykład przy użyciu tych [zalecanych konwencji nazewnictwa](#sample-naming-convention)zasób publicznego adresu IP dla produkcyjnego obciążenia programu SharePoint jest nazwany w następujący sposób: `pip-sharepoint-prod-westus-001`.
 
 Na podstawie tej nazwy można szybko zidentyfikować typ zasobu, skojarzone z nim obciążenie, jego środowisko wdrożeniowe oraz region świadczenia usługi Azure, w którym jest on hostowany.
 
 #### <a name="naming-scope"></a>Zakres nazewnictwa
 
-Wszystkie typy zasobów platformy Azure mają zakres, który definiuje poziom, którego nazwy zasobów muszą być unikatowe. W swoim zakresie zasób musi mieć unikatową nazwę.
+Wszystkie typy zasobów platformy Azure mają zakres definiujący poziom, którego nazwy zasobów muszą być unikatowe. W swoim zakresie zasób musi mieć unikatową nazwę.
 
 Na przykład sieć wirtualna ma zakres grupy zasobów, co oznacza, że w danej grupie zasobów może istnieć tylko jedna sieć o nazwie `vnet-prod-westus-001`. Inne grupy zasobów mogą mieć własną sieć wirtualną o nazwie `vnet-prod-westus-001`. Innym przykładem są podsieci, które wchodzą w zakres sieci wirtualnych, co oznacza, że każda podsieć w sieci wirtualnej musi mieć unikatową nazwę.
 
@@ -62,11 +62,11 @@ Składniki nazwy powinny być krótkie, aby zapobiegać przekraczaniu limitów d
 
 | Składnik nazwy | Opis | Przykłady |
 | --- | --- | --- |
-| Jednostka biznesowa | Wydział firmy najwyższego poziomu będący właścicielem subskrypcji lub obciążenia, do których należy zasób. W mniejszych organizacjach składnik ten może reprezentować pojedynczy korporacyjny element organizacyjny najwyższego poziomu. | *fin*, *mktg*, *product*, *it*, *corp* |
-| Typ subskrypcji | Opis podsumowujący przeznaczenie subskrypcji zawierającej zasób. Często składa się z typu środowiska wdrożeniowego lub określonych obciążeń. | *prod,* *shared, client* |
-| Nazwa aplikacji lub usługi | Nazwa aplikacji, obciążenia lub usługi, do której należy zasób. | *navigator*, *emissions*, *sharepoint*, *hadoop* |
-| Środowisko wdrażania | Etap cyklu życia programowania dla obciążenia obsługiwanego przez zasób. | *prod, dev, qa, stage, test* |
-| Region | Region świadczenia usługi Azure, w którym wdrożono zasób. | *westus, eastus2, westeurope, usgovia* |
+| Jednostka biznesowa | Wydział firmy najwyższego poziomu będący właścicielem subskrypcji lub obciążenia, do których należy zasób. W mniejszych organizacjach składnik ten może reprezentować pojedynczy korporacyjny element organizacyjny najwyższego poziomu. | _fin_, _mktg_, _product_, _it_, _corp_ |
+| Typ subskrypcji | Opis podsumowujący przeznaczenie subskrypcji zawierającej zasób. Często składa się z typu środowiska wdrożeniowego lub określonych obciążeń. | _produkcyjny_, _współużytkowany_, _Klient_ |
+| Nazwa aplikacji lub usługi | Nazwa aplikacji, obciążenia lub usługi, do której należy zasób. | _navigator_, _emissions_, _sharepoint_, _hadoop_ |
+| Środowisko wdrażania | Etap cyklu życia programowania dla obciążenia obsługiwanego przez zasób. | produkcja, _dev_, _pytań i odpowiedzi_, _etap_, _test_ |
+| Region | Region świadczenia usługi Azure, w którym wdrożono zasób. | _zachodnie_, _eastus2_, _westeurope_, _usgovia_ |
 
 #### <a name="recommended-resource-type-prefixes"></a>Zalecane prefiksy typów zasobów
 
@@ -77,35 +77,38 @@ Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do uż
 | Typ zasobu                       | Prefiks nazwy zasobu |
 | ----------------------------------- | -------------------- |
 | Grupa zasobów                      | rg-                  |
-| Usługa Azure Virtual Network               | vnet-                |
+| Zestaw dostępności                    | skorzystać               |
+| Usługa API Management              | interfejsu API                 |
+| Sieć wirtualna                     | vnet-                |
 | Brama sieci wirtualnej             | vnetgw-              |
 | Połączenie bramy                  | cn-                  |
 | Podsieć                              | snet-                |
 | Sieciowa grupa zabezpieczeń              | nsg-                 |
 | Tabela tras                         | Szlak               |
-| Azure Virtual Machines              | vm-                  |
+| Maszyna wirtualna                     | maszyna wirtualna                   |
 | Konto magazynu maszyn wirtualnych                  | stvm                 |
 | Publiczny adres IP                           | pip-                 |
-| Azure Load Balancer                 | lb-                  |
+| Moduł równoważenia obciążenia                       | lb-                  |
 | Karta sieciowa                                 | nic-                 |
-| Azure Key Vault                     | KV                  |
-| Azure Kubernetes Service            | AKS                 |
-| Azure Service Bus                   | sb-                  |
-| Kolejki usługi Azure Service Bus            | sbq-                 |
-| Tematy Azure Service Bus            | sbt-                 |
-| Plany Azure App Service             | zamierza                |
-| Azure Web Apps                      | aplikacje                 |
-| Stan usługi Funkcje Azure                     | Func                |
-| Azure Cloud Services                | umożliwiają                 |
+| Key Vault                           | KV                  |
+| Klaster AKS                         | AKS                 |
+| Kontener AKS                       | Con                 |
+| Service Bus                         | sb-                  |
+| Kolejka Service Bus                   | sbq-                 |
+| Temat Service Bus                   | sbt-                 |
+| Plan usługi App Service                    | zamierza                |
+| Aplikacja internetowa                             | aplikacje                 |
+| Aplikacja funkcji                        | Func                |
+| Usługa w chmurze                       | umożliwiają                 |
 | Serwer Azure SQL Database           | Server                 |
-| Baza danych SQL Azure                  | sqldb-               |
-| Azure Cosmos DB                     | Cosmos              |
-| Azure Cache for Redis               | redis-               |
-| Azure Database for MySQL            | mysql-               |
-| Azure Database for PostgreSQL       | PSQL                |
+| Baza danych Azure SQL Database                  | sqldb-               |
+| Baza danych Cosmos DB                  | Cosmos              |
+| Pamięć podręczna platformy Azure dla pamięci podręcznej Redis         | redis-               |
+| Baza danych MySQL                      | mysql-               |
+| Baza danych PostgreSQL                 | PSQL                |
 | Azure SQL Data Warehouse            | sqldw-               |
 | SQL Server Stretch Database         | sqlstrdb-            |
-| Azure Storage                       | St                   |
+| Konto magazynu                     | St                   |
 | Azure StorSimple                    | ssimp                |
 | Usługa Azure Search                        | srch-                |
 | Azure Cognitive Services            | koło zębate                 |
@@ -119,10 +122,10 @@ Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do uż
 | Usługa Power BI Embedded                   | PBI                 |
 | Azure Stream Analytics              | asa-                 |
 | Azure Data Factory                  | ADF                 |
-| Azure Event Hubs                    | evh-                 |
-| Azure IoT Hub                       | rzeczy                 |
-| Azure Notification Hubs             | ntf-                 |
-| Przestrzeń nazw usługi Azure Notification Hubs   | ntfns-               |
+| Centrum zdarzeń                           | evh-                 |
+| Centrum IoT                             | rzeczy                 |
+| Centra powiadomień                   | ntf-                 |
+| Notification Hubs przestrzeń nazw         | ntfns-               |
 
 ### <a name="metadata-tags"></a>Tagi metadanych
 
@@ -132,18 +135,18 @@ Tagi stosowane do zasobów i tagi wymagane lub opcjonalne są różne w różnyc
 
 | Nazwa tagu                  | Opis                                                                                                                                                                                                    | Klucz               | Przykładowa wartość                                   |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------|
-| Nazwa aplikacji          | Nazwa aplikacji, usługi lub obciążenia, z którymi jest skojarzony zasób.                                                                                                                                 | *ApplicationName* | *{nazwa aplikacji}*                                    |
-| Nazwa osoby zatwierdzającej             | Osoba odpowiedzialna za zatwierdzenie kosztów związanych z tym zasobem.                                                                                                                                               | *Approver*        | *{e-mail}*                                       |
-| Wymagany/zatwierdzony budżet  | Pieniądze przydzielone do tej aplikacji, usługi lub obciążenia.                                                                                                                                                    | *BudgetAmount*    | *{\$}*                                          |
-| Jednostka biznesowa             | Wydział firmy najwyższego poziomu będący właścicielem subskrypcji lub obciążenia, do których należy zasób. W mniejszych organizacjach ten tag może reprezentować pojedynczy korporacyjny lub współużytkowany element organizacyjny najwyższego poziomu. | *BusinessUnit*    | *FINANSE, MARKETING, {nazwa produktu}, CORP, SHARED* |
-| Centrum kosztu               | Księgowe centrum kosztu skojarzone z tym zasobem.                                                                                                                                                          | *CostCenter*      | *{numer}*                                      |
-| Odzyskiwanie po awarii         | Ważność aplikacji, obciążenia lub usługi dla działania firmy.                                                                                                                                                | *DR*              | *Mission-critical, Critical, Essential*         |
-| Data zakończenia projektu   | Data, na którą zaplanowano wycofanie aplikacji, obciążenia lub usługi.                                                                                                                                  | *EndDate*         | *{data}*                                        |
-| Środowisko               | Środowisko wdrażania aplikacji, obciążenia lub usługi.                                                                                                                                              | *Env*             | *Prod, Dev, QA, Stage, Test*                    |
-| Nazwa właściciela                | Właściciel aplikacji, obciążenia lub usługi.                                                                                                                                                                | *Właściciel*           | *{e-mail}*                                       |
-| Nazwa żądającego            | Użytkownik, który zażądał utworzenia tej aplikacji.                                                                                                                                                          | *Requestor*       | *{e-mail}*                                       |
-| Klasa usługi             | Poziom umowy dotyczącej poziomu usług aplikacji, obciążenia lub usługi.                                                                                                                                       | *ServiceClass*    | *Dev, Bronze, Silver, Gold*                     |
-| Data rozpoczęcia projektu | Dzień, w którym nastąpiło pierwsze wdrożenie aplikacji, obciążenia lub usługi.                                                                                                                                           | *StartDate*       | *{data}*                                        |
+| Nazwa aplikacji          | Nazwa aplikacji, usługi lub obciążenia, z którymi jest skojarzony zasób.                                                                                                                                 | _ApplicationName_ | _{nazwa aplikacji}_                                    |
+| Nazwa osoby zatwierdzającej             | Osoba odpowiedzialna za zatwierdzenie kosztów związanych z tym zasobem.                                                                                                                                               | _Approver_        | _{e-mail}_                                       |
+| Wymagany/zatwierdzony budżet  | Pieniądze przydzielone do tej aplikacji, usługi lub obciążenia.                                                                                                                                                    | _BudgetAmount_    | _{\$}_                                          |
+| Jednostka biznesowa             | Wydział firmy najwyższego poziomu będący właścicielem subskrypcji lub obciążenia, do których należy zasób. W mniejszych organizacjach ten tag może reprezentować pojedynczy korporacyjny lub współużytkowany element organizacyjny najwyższego poziomu. | _BusinessUnit_    | _Finanse_, _Marketing_, _{Product Name}_ , _Corp_, _Shared_ |
+| Centrum kosztu               | Księgowe centrum kosztu skojarzone z tym zasobem.                                                                                                                                                          | _CostCenter_      | _{numer}_                                      |
+| Odzyskiwanie po awarii         | Ważność aplikacji, obciążenia lub usługi dla działania firmy.                                                                                                                                                | _DR_              | _Krytyczne_, _krytyczne_, _podstawowe_         |
+| Data zakończenia projektu   | Data, na którą zaplanowano wycofanie aplikacji, obciążenia lub usługi.                                                                                                                                  | _EndDate_         | _{data}_                                        |
+| Środowisko               | Środowisko wdrażania aplikacji, obciążenia lub usługi.                                                                                                                                              | _Env_             | Produkcja, _dev_, _pytań i odpowiedzi_, _etap_, _test_                    |
+| Nazwa właściciela                | Właściciel aplikacji, obciążenia lub usługi.                                                                                                                                                                | _Właściciel_           | _{e-mail}_                                       |
+| Nazwa żądającego            | Użytkownik, który zażądał utworzenia tej aplikacji.                                                                                                                                                          | _Requestor_       | _{e-mail}_                                       |
+| Klasa usługi             | Poziom umowy dotyczącej poziomu usług aplikacji, obciążenia lub usługi.                                                                                                                                       | _ServiceClass_    | _Dev_, _Bronze_, _Silver_, _Gold_                     |
+| Data rozpoczęcia projektu | Dzień, w którym nastąpiło pierwsze wdrożenie aplikacji, obciążenia lub usługi.                                                                                                                                           | _StartDate_       | _{data}_                                        |
 
 ## <a name="sample-naming-convention"></a>Przykładowa konwencja nazewnictwa
 
@@ -168,8 +171,8 @@ W poniższej sekcji przedstawiono przykłady schematów nazewnictwa dla często 
 | Typ elementu zawartości               | Zakres           | Format                                                                | Przykłady                                                                                              |
 |--------------------------|-----------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Usługa Azure Virtual Network          | Grupa zasobów  | vnet-\<Typ subskrypcji\>-\<Region\>-\<\#\#\#\>                      | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                                  |
-| Brama wirtualna sieci wirtualnej     | Sieć wirtualna | vnetgw-v-\<typ subskrypcji\>-\<regionu\>-\<\#\#\#\>                 | <ul><li>vnet-gw-v-shared-eastus2-001 </li><li>vnet-gw-v-prod-westus-001 </li><li>vnet-gw-v-client-eastus2-001</li></ul>                   |
-| Brama lokalna sieci wirtualnej       | Brama wirtualna | vnetgw-l-\<typ subskrypcji\>-\<regionu\>-\<\#\#\#\>                 | <ul><li>vnet-gw-l-shared-eastus2-001 </li><li>vnet-gw-l-prod-westus-001 </li><li>vnet-gw-l-client-eastus2-001</li></ul>                   |
+| Brama wirtualna sieci wirtualnej     | Sieć wirtualna | vnetgw-v-\<typ subskrypcji\>-\<regionu\>-\<\#\#\#\>                 | <ul><li>vnetgw-v-Shared-eastus2-001 </li><li>vnetgw-v-prod-zachodni-001 </li><li>vnetgw-v-Client-eastus2-001</li></ul>                   |
+| Brama lokalna sieci wirtualnej       | Brama wirtualna | vnetgw-l-\<typ subskrypcji\>-\<regionu\>-\<\#\#\#\>                 | <ul><li>vnetgw-l-Shared-eastus2-001 </li><li>vnetgw-l-prod-zachodni-001 </li><li>vnetgw-l-Client-eastus2-001</li></ul>                   |
 | Połączenia typu lokacja-lokacja | Grupa zasobów  | cn-\<nazwa bramy lokalnej\>-to-\<nazwa bramy wirtualnej\>                 | <ul><li>cn-l-gw-shared-eastus2-001-to-v-gw-shared-eastus2-001 </li><li>cn-l-gw-shared-eastus2-001-to-shared-westus-001</li></ul> |
 | Połączenia sieci wirtualnych         | Grupa zasobów  | cn-\<subskrypcja1\>\<region1\>-to-\<subskrypcja2\>\<region2\>-      | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-prod-eastus2-to-prod-westus</li></ul>                                     |
 | Podsieć                   | Sieć wirtualna | snet-\<subskrypcja\>-\<podregion\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                                  |
@@ -190,9 +193,9 @@ W poniższej sekcji przedstawiono przykłady schematów nazewnictwa dla często 
 
 | Typ elementu zawartości           | Zakres  | Format                                                              | Przykłady                                                                                 |
 |----------------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Azure Web Apps       | Cały świat | Nazwa aplikacji\<aplikacji\>-\<środowisku\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Stan usługi Funkcje Azure      | Cały świat | Func-\<nazwę aplikacji\>-\<środowisku\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>azfun-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Cloud Services | Cały świat | można\<nazwę aplikacji\>-\<środowisku\>-\<\#\#\#\>. [{cloudapp.net}]       | <ul><li>azcs-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
+| Azure Web Apps       | Cały świat | Nazwa aplikacji\<aplikacji\>-\<środowisku\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Stan usługi Funkcje Azure      | Cały świat | Func-\<nazwę aplikacji\>-\<środowisku\>-\<\#\#\#\>. [{azurewebsites.net}] | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Cloud Services | Cały świat | można\<nazwę aplikacji\>-\<środowisku\>-\<\#\#\#\>. [{cloudapp.net}]       | <ul><li>could-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>   |
 
 ### <a name="azure-service-bus"></a>Azure Service Bus
 
@@ -208,7 +211,7 @@ W poniższej sekcji przedstawiono przykłady schematów nazewnictwa dla często 
 |-------------------------------------|--------------------|---------------------------------------|------------------------------------------------|
 | Serwer Azure SQL Database           | Cały świat             | Nazwa aplikacji SQL\<\>-\<środowisko\>      | <ul><li>SQL — Nawigator — prod </li><li>SQL-emisje — dev</li></ul>           |
 | Baza danych SQL Azure                  | Baza danych SQL Azure | SQLDB\<\<środowisku\>| <ul><li>SQLDB — użytkownicy — produkcja </li><li>SQLDB — użytkownicy — dev</li></ul>               |
-| Azure Cosmos DB                     | Cały świat             | Cosmos\<\>-\<środowisko\>   | <ul><li>cosdb-navigator-prod </li><li>cosdb-emissions-dev</li></ul>       |
+| Azure Cosmos DB                     | Cały świat             | Cosmos\<\>-\<środowisko\>   | <ul><li>Cosmos-Navigator-prod </li><li>Cosmos-emisje — dev</li></ul>       |
 | Azure Cache for Redis               | Cały świat             | redis-\<Nazwa aplikacji\>-\<Środowisko\>    | <ul><li>redis-navigator-prod </li><li>redis-emissions-dev</li></ul>       |
 | Azure Database for MySQL            | Cały świat             | mysql-\<Nazwa aplikacji\>-\<Środowisko\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissions-dev</li></ul>       |
 | Azure Database for PostgreSQL       | Cały świat             | PSQL\<\>-\<środowisko\>     | <ul><li>PSQL-Navigator-prod </li><li>PSQL-emisje — dev</li></ul>         |
