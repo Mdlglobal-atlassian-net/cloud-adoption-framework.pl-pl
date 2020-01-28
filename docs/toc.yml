@@ -133,7 +133,7 @@
           href: ready/expanded-scope/terraform-landing-zone.md
         - name: Zabezpieczenia granicy sieci
           href: reference/networking-vdc.md
-    - name: Najlepsze praktyki
+    - name: Najlepsze rozwiązania
       items:
         - name: Omówienie
           href: ready/azure-best-practices/index.md
@@ -231,7 +231,7 @@
               href: migrate/expanded-scope/network-capacity-exceeded.md
             - name: Zarządzanie i zgodność
               href: migrate/expanded-scope/governance-or-compliance.md
-        - name: Najlepsze praktyki
+        - name: Najlepsze rozwiązania
           items:
             - name: Omówienie
               href: migrate/azure-best-practices/index.md
@@ -817,8 +817,8 @@
                       href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-architecture?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Wprowadzenie do usługi Azure Sphere
                       href: 'https://azure.microsoft.com/services/azure-sphere/get-started/'
-                    - name: Bezprzewodowe wdrażanie aplikacji za pomocą usługi Azure Sphere
-                      href: 'https://docs.microsoft.com/azure-sphere/deployment/application-deployment-steps?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Tworzenie wdrożenia za pomocą usługi Azure Sphere
+                      href: 'https://docs.microsoft.com/azure-sphere/deployment/create-a-deployment?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Wprowadzenie do rozwiązania Azure Kinect DK
                       href: 'https://docs.microsoft.com/azure/Kinect-dk/about-azure-kinect-dk?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Tworzenie pierwszej aplikacji z użyciem rozwiązania Azure Kinect DK
@@ -857,8 +857,6 @@
                   items:
                     - name: Usługa Azure Machine Learning od eksperymentów po działające usługi
                       href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Funkcja publikowania w usługach internetowych na potrzeby używania aplikacji w usłudze Azure Machine Learning
-                      href: 'https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Operacjonalizowanie usług uczenia maszynowego w usłudze Azure HDInsight
                       href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
 - name: Ład
@@ -1067,7 +1065,7 @@
           href: manage/azure-management-guide/platform-specialization.md
         - name: Specjalizacja obciążeń
           href: manage/azure-management-guide/workload-specialization.md
-    - name: Najlepsze praktyki
+    - name: Najlepsze rozwiązania
       items:
         - name: Zarządzanie serwerem na platformie Azure
           items:
