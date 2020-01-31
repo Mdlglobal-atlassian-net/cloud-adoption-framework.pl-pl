@@ -1,6 +1,5 @@
 ---
 title: Przejrzyj opcje obliczeń
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Przejrzyj opcje obliczeń dla obciążeń platformy Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dbdabb6edc425ea3c70706313d2357323d2a523c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d4b1d5728a8cba06900bfe67e288f15b042b8106
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561878"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799187"
 ---
 # <a name="review-your-compute-options"></a>Przejrzyj opcje obliczeń
 
@@ -51,15 +50,15 @@ W poniższej tabeli przedstawiono kilka typowych scenariuszy użycia oraz usług
 
 | **Scenariusz** | **Usługa obliczeniowa** |
 | --- | --- |
-| Chcę aprowizować maszyny wirtualne z systemami Linux i Windows w kilka sekund zgodnie z wybranymi konfiguracjami. | [Usługa Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) |
+| Chcę aprowizować maszyny wirtualne z systemami Linux i Windows w kilka sekund zgodnie z wybranymi konfiguracjami. | [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) |
 | Chcę uzyskać wysoką dostępność dzięki skalowaniu automatycznemu w celu tworzenia tysięcy maszyn wirtualnych w kilka minut. | [Zestawy skalowania maszyn wirtualnych](https://azure.microsoft.com/services/virtual-machine-scale-sets) |
-| Chcę uprościć wdrażanie i obsługę platformy Kubernetes oraz zarządzanie nią. | [Usługa Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service) |
+| Chcę uprościć wdrażanie i obsługę platformy Kubernetes oraz zarządzanie nią. | [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service) |
 | Chcę przyspieszyć opracowywanie aplikacji za pomocą architektury bezserwerowej opartej na zdarzeniach. | [Azure Functions](https://azure.microsoft.com/services/functions) |
 | Chcę tworzyć mikrousługi i aranżować kontenery w systemach Windows i Linux. | [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) |
-| Chcę szybko tworzyć aplikacje internetowe i mobilne w chmurze za pomocą w pełni zarządzanej platformy. | [Usługa Azure App Service](https://azure.microsoft.com/services/app-service) |
+| Chcę szybko tworzyć aplikacje internetowe i mobilne w chmurze za pomocą w pełni zarządzanej platformy. | [Azure App Service](https://azure.microsoft.com/services/app-service) |
 | Chcę konteneryzować aplikacje i łatwo uruchamiać kontenery za pomocą jednego polecenia. | [Azure Container Instances](https://azure.microsoft.com/services/container-instances) |
 | Chcę móc planować zadania i zarządzanie przetwarzaniem w skali chmury z możliwością skalowania do dziesiątek, setek lub tysięcy maszyn wirtualnych. | [Azure Batch](https://azure.microsoft.com/services/batch) |
-| Chcę tworzyć aplikacje w chmurze i interfejsy API o wysokiej dostępności ułatwiające skoncentrowanie się na aplikacjach, a nie na sprzęcie. | [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services) |
+| Chcę tworzyć aplikacje w chmurze i interfejsy API o wysokiej dostępności ułatwiające skoncentrowanie się na aplikacjach, a nie na sprzęcie. | [usług Azure Cloud Services](https://azure.microsoft.com/services/cloud-services) |
 
 ## <a name="regional-availability"></a>Dostępność regionalna
 
@@ -67,7 +66,7 @@ Platforma Azure umożliwia dostarczanie usług w potrzebnej skali, aby dotrzeć 
 
 Niektóre opcje środowiska obliczeniowego, takie jak Azure App Service, są ogólnie dostępne w większości regionów, w których dostępna jest platforma Azure. Jednak niektóre usługi obliczeniowe są obsługiwane tylko w wybranych regionach. Niektóre typy maszyn wirtualnych i skojarzone z nimi typy magazynów mają ograniczoną dostępność regionalną. Przed podjęciem decyzji o regionach, w których zostaną wdrożone zasoby obliczeniowe, zalecamy zapoznanie się [ze stroną regionów](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines) w celu sprawdzenia najnowszego stanu dostępności regionalnej.
 
-Aby dowiedzieć się więcej o globalnej infrastrukturze platformy Azure, zobacz  [stronę regionów platformy Azure](https://azure.microsoft.com/global-infrastructure/regions). Aby uzyskać szczegółowe informacje o tym, co jest dostępne w poszczególnych regionach platformy Azure, można także wyświetlić  [dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all).
+Aby dowiedzieć się więcej o globalnej infrastrukturze platformy Azure, zobacz  [stronę regionów platformy Azure](https://azure.microsoft.com/global-infrastructure/regions). Aby uzyskać szczegółowe informacje o ogólnych usługach dostępnych w poszczególnych regionach platformy Azure, można także wyświetlić  [dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all).
 
 ## <a name="data-residency-and-compliance-requirements"></a>Wymagania dotyczące miejsca przechowywania danych oraz zgodności
 

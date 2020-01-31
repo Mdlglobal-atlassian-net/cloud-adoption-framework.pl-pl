@@ -1,6 +1,5 @@
 ---
 title: Co to jest majątek cyfrowy?
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Co to jest majątek cyfrowy?
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3504e9107f221e71953a238b5ebd092a7531e5ae
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a9e691016cba5fa33a16d92278c34c9bf02cdf96
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564729"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804626"
 ---
 <!-- markdownlint-disable MD026 -->
 

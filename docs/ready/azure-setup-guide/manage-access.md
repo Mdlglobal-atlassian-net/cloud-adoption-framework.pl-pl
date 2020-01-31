@@ -1,6 +1,5 @@
 ---
 title: Zarządzanie dostępem do środowiska platformy Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, jak skonfigurować kontrolę dostępu w środowisku platformy Azure przy użyciu funkcji kontroli dostępu na podstawie ról (RBAC).
 author: LijuKodicheraJayadevan
 ms.author: kfollis
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 033d9b254523562c30022a75a97dc10e649a45df
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 83f9461302af6710464b8c7e81a866cfc25d5852
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251372"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799594"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Zarządzanie dostępem do środowiska platformy Azure przy użyciu kontroli dostępu na podstawie ról
 
@@ -42,7 +41,7 @@ Aby udzielić użytkownikowi dostępu do grupy zasobów:
 1. Przejdź do pozycji **Grupy zasobów**.
 1. Wybierz grupę zasobów.
 1. Wybierz pozycję **Kontrola dostępu (IAM)** .
-1. Wybierz pozycję **+ Dodaj**  >  **Dodaj przypisanie roli**.
+1. Wybierz pozycję **+ Dodaj** > **Dodaj przypisanie roli**.
 1. Wybierz rolę, a następnie przypisz dostęp do użytkownika, grupy lub jednostki usługi.
 
 ::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups]" submitText="Go to resource groups" ::: form-end
@@ -54,7 +53,7 @@ Aby udzielić użytkownikowi dostępu do subskrypcji:
 1. Przejdź do pozycji **Subskrypcje**.
 1. Wybierz subskrypcję.
 1. Wybierz pozycję **Kontrola dostępu (IAM)** .
-1. Wybierz pozycję **+ Dodaj**  >  **Dodaj przypisanie roli**.
+1. Wybierz pozycję **+ Dodaj** > **Dodaj przypisanie roli**.
 1. Wybierz rolę, a następnie przypisz dostęp do użytkownika, grupy lub jednostki usługi.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Billing/SubscriptionsBlade]" submitText="Go to subscriptions" ::: form-end
@@ -70,7 +69,7 @@ Aby udzielić użytkownikowi dostępu do grupy zasobów:
 1. Przejdź do pozycji [Grupy zasobów](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups).
 1. Wybierz grupę zasobów.
 1. Wybierz pozycję **Kontrola dostępu (IAM)** .
-1. Wybierz pozycję **+ Dodaj**  >  **Dodaj przypisanie roli**.
+1. Wybierz pozycję **+ Dodaj** > **Dodaj przypisanie roli**.
 1. Wybierz rolę, a następnie przypisz dostęp do użytkownika, grupy lub jednostki usługi.
 
 ## <a name="grant-subscription-access"></a>Udzielanie dostępu do subskrypcji
@@ -80,7 +79,7 @@ Aby udzielić użytkownikowi dostępu do subskrypcji:
 1. Przejdź do pozycji [Subskrypcje](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade).
 1. Wybierz subskrypcję.
 1. Wybierz pozycję **Kontrola dostępu (IAM)** .
-1. Wybierz pozycję **+ Dodaj**  >  **Dodaj przypisanie roli**.
+1. Wybierz pozycję **+ Dodaj** > **Dodaj przypisanie roli**.
 1. Wybierz rolę, a następnie przypisz dostęp do użytkownika, grupy lub jednostki usługi.
 
 ## <a name="learn-more"></a>Dowiedz się więcej

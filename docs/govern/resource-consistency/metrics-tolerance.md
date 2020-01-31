@@ -1,6 +1,5 @@
 ---
 title: Metryki spójności zasobów, wskaźniki i tolerancja ryzyka
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metryki spójności zasobów, wskaźniki i tolerancja ryzyka
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a6f59c09533fc400871d549e32c9b7d56024551
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e6947ce39cc713f969ee658f7c0d0c269fb358d7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548070"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805153"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metryki spójności zasobów, wskaźniki i tolerancja ryzyka
 
@@ -55,10 +54,10 @@ We wczesnych etapach wdrażania chmury Pracuj z zespołem ds. operacji IT oraz z
 
 Po utworzeniu planu bazowego należy ustanowić minimalne wzorce reprezentujące nieakceptowalny wzrost w zidentyfikowanych zagrożeniach. Te progi działają jako Wyzwalacze w przypadku, gdy konieczne jest podjęcie działań w celu skorygowania tych zagrożeń. Poniżej przedstawiono kilka przykładów sposobu, w jaki metryki operacyjne, takie jak te omówione powyżej, mogą uzasadniać zwiększenie inwestycji w dyscyplinę spójności zasobów.
 
-- **Tagowanie i wyzwalacz nazewnictwa.** Firma z więcej niż _x_ zasobami nie wymaga informacji o znakowaniu lub nie przestrzega zgodności ze standardami nazewnictwa, należy rozważyć inwestowanie w dyscyplinę spójności zasobów, aby pomóc w zapewnieniu zgodności ze standardami i zapewnić spójność ich stosowania zasoby wdrożone w chmurze.
+- **Tagowanie i wyzwalacz nazewnictwa.** Firma z więcej niż _x_ zasobami, które nie wymaga informacji o znakowaniu lub nie przestrzega zgodności ze standardami nazewnictwa, powinna rozważyć inwestowanie w dyscyplinę spójności zasobów, aby ułatwić udoskonalanie tych standardów i zapewnić spójną aplikację dla zasobów wdrożonych w chmurze.
 - **Wyzwalacz zasobów o nadmiernej aprowizacji.** Jeśli firma ma więcej niż _x%_ zasobów regularnie przy użyciu niewielkich ilości dostępnych pamięci, procesora lub sieci, inwestycje w dyscyplinę spójności zasobów są sugerowane w celu zoptymalizowania użycia zasobów dla tych elementów.
-- **Wyzwalacz nadmiernie zainicjowanych zasobów.** Jeśli firma ma więcej niż _x%_ zasobów, regularne wyczerpanie większości dostępnych możliwości pamięci, procesora lub sieci, inwestycje w dyscyplinę spójności zasobów są sugerowane w celu zapewnienia, że zasoby te są niezbędne do zapobiegania przerwy w świadczeniu usług.
-- **Wyzwalacz wieku zasobu.** Firma z więcej niż _x_ zasobami, które nie zostały zaktualizowane _w ciągu kilku_ miesięcy, może skorzystać z inwestycji w dyscyplinę spójności zasobów, której celem jest zapewnienie, że aktywne zasoby są w dobrej kondycji, a jednocześnie wycofane z przestarzałych lub Inne nieużywane zasoby.
+- **Wyzwalacz nadmiernie zainicjowanych zasobów.** Jeśli firma ma więcej niż _x%_ zasobów, regularne wyczerpanie większości dostępnych możliwości pamięci, procesora lub sieci, inwestycje w dyscyplinę spójności zasobów są sugerowane w celu zapewnienia, że zasoby te są niezbędne, aby zapobiec przerwom w świadczeniu usług.
+- **Wyzwalacz wieku zasobu.** Firma z więcej niż _x_ zasobami, które nie zostały zaktualizowane _w ciągu kilku_ miesięcy, może skorzystać z inwestycji w dyscyplinę spójności zasobów, której celem jest zapewnienie, że aktywne zasoby są poprawione i w dobrej kondycji, przy jednoczesnym wycofaniu przestarzałych lub nieużywanych zasobów.
 - **Wyzwalacz umowy dotyczącej poziomu usług.** Firma, która nie może spełnić swoich umów dotyczących poziomu usług klientom zewnętrznym ani partnerom wewnętrznym, powinna inwestować w dyscyplinę wdrożenia w celu zmniejszenia przestojów systemu.
 - **Wyzwalacze czasu odzyskiwania.** W przypadku przekroczenia przez firmę wymaganych progów czasu odzyskiwania po awarii systemu należy zainwestować w udoskonalenie projektu dyscypliny i systemów przyspieszenia wdrożenia w celu ograniczenia lub wyeliminowania błędów lub skutku przestoju poszczególnych składników.
 - **Wyzwalacz kondycji maszyny wirtualnej.** Firma, która ma więcej niż _x%_ maszyn wirtualnych, na których występuje krytyczny problem z kondycją, powinna inwestować w dyscyplinę spójności zasobów, aby zidentyfikować problemy i zwiększyć stabilność maszyny wirtualnej.

@@ -1,6 +1,5 @@
 ---
 title: Metryki linii bazowej tożsamości, wskaźniki i tolerancja ryzyka
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metryki linii bazowej tożsamości, wskaźniki i tolerancja ryzyka
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f5002d278e833873a2077538c848bc5e7f47131d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220434"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806037"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metryki linii bazowej tożsamości, wskaźniki i tolerancja ryzyka
 
@@ -49,12 +48,12 @@ Po utworzeniu planu bazowego należy ustanowić minimalne wzorce reprezentujące
 
 - **Wyzwalacz numeru konta użytkownika.** Firma z więcej niż _x_ użytkownikami, grupami lub innymi obiektami zarządzanymi w systemach tożsamości może skorzystać z inwestycji w dyscypliny linii bazowej tożsamości, aby zapewnić wydajne zarządzanie na wielu kontach.
 - **Lokalny wyzwalacz zależności tożsamości.** Firma planuje migrację obciążeń do chmury wymagającej starszych możliwości uwierzytelniania lub uwierzytelniania wieloskładnikowego innej firmy, aby zmniejszyć ryzyko związane z refaktoryzacją lub dodatkową chmurą wdrożenie infrastruktury.
-- **Wyzwalacz złożoności usług katalogowych.** Firma utrzymująca więcej niż _x_ Number of_ poszczególne lasy, domeny lub dzierżawy katalogu powinno inwestować w dyscyplinę bazową tożsamości, aby ograniczyć ryzyko związane z zarządzaniem kontami i problemy z wydajnością związane z wieloma użytkownikami poświadczenia są rozmieszczane w wielu systemach.
-- **Wyzwalacz usług katalogowych hostowanych w chmurze.** Firma zarządza maszynami wirtualnymi z systemem _x_ Active Directory Server (VM) hostowanymi w chmurze lub mającymi _x_ jednostki organizacyjne (OU) zarządzane na tych serwerach w chmurze, może korzystać z inwestycji w dyscypliny podstawowej tożsamości w celu optymalizacji Integracja z dowolnymi lokalnymi lub innymi zewnętrznymi usługami tożsamości.
+- **Wyzwalacz złożoności usług katalogowych.** Firma utrzymująca więcej niż _x_ numerów of_ poszczególne lasy, domeny i dzierżawy katalogu powinny inwestować w dyscyplinę bazową tożsamości, aby zmniejszyć ryzyko związane z zarządzaniem kontami oraz problemy z wydajnością związane z wieloma poświadczeniami użytkowników rozmieszczonych w wielu systemach.
+- **Wyzwalacz usług katalogowych hostowanych w chmurze.** Firma zarządza maszynami wirtualnymi _x_ Active Directory Server (VM) hostowanymi w chmurze lub mającymi _x_ jednostki organizacyjne (OU) zarządzane na tych serwerach w chmurze, może korzystać z inwestycji w dyscypliny podstawowej tożsamości w celu optymalizacji integracji z dowolnymi lokalnymi lub innymi zewnętrznymi usługami tożsamości.
 - **Wyzwalacz Federacji.** Firma implementująca federacji tożsamości z zewnętrznymi systemami linii bazowej tożsamości _x_ może korzystać z inwestycji w dyscypliny linii bazowej tożsamości, aby zapewnić spójne zasady organizacyjne w obrębie federacyjnych elementów członkowskich.
 - **Wyzwalacz dostępu z podwyższonym poziomem uprawnień.** Firma mająca więcej niż _x%_ użytkowników z podwyższonym poziomem uprawnień do narzędzi do zarządzania i zasobów powinna rozważyć zainwestowanie w dyscypliny linii bazowej tożsamości, aby zminimalizować ryzyko przypadkowego nadmiernego zainicjowania dostępu do użytkowników.
 - **Wyzwalacz RBAC.** Firma o wartości poniżej _x%_ zasobów przy użyciu metod kontroli dostępu opartej na rolach powinna rozważyć inwestowanie w dyscypliny linii bazowej tożsamości, aby zidentyfikować zoptymalizowane sposoby przypisywania dostępu użytkowników do zasobów.
-- **Wyzwalacz błędu uwierzytelniania.** Firma, w której błędy uwierzytelniania reprezentują ponad _x%_ prób, powinna inwestować w dyscyplinę bazową tożsamości, aby upewnić się, że metody uwierzytelniania nie są objęte atakiem zewnętrznym i że użytkownicy będą mogli korzystać z metod uwierzytelniania prawidłowego.
+- **Wyzwalacz błędu uwierzytelniania.** Firma, w której błędy uwierzytelniania reprezentują ponad _x%_ prób, powinna inwestować w dyscyplinę bazową tożsamości, aby upewnić się, że metody uwierzytelniania nie są objęte atakiem zewnętrznym i że użytkownicy będą mogli prawidłowo korzystać z metod uwierzytelniania.
 - **Wyzwalacz błędu autoryzacji.** Firma, w której próby dostępu są odrzucane ponad _x%_ czasu, powinien inwestować w dyscyplinę bazową tożsamości w celu ulepszania aplikacji i aktualizowania kontroli dostępu, a następnie identyfikować potencjalnie złośliwe próby dostępu.
 - **Naruszony wyzwalacz konta.** Firma z ponad 1 złamanym kontem powinna zainwestować w dyscyplinę bazową tożsamości, aby zwiększyć siłę i bezpieczeństwo mechanizmów uwierzytelniania oraz poprawić mechanizmy korygowania zagrożeń związanych z naruszonymi kontami.
 

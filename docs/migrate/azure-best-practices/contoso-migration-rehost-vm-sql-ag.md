@@ -1,6 +1,5 @@
 ---
 title: Hostowanie aplikacji przez Migrowanie jej do maszyn wirtualnych platformy Azure i zawsze dostępnych grup dostępności SQL Server
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, jak firma Contoso przeprowadza ponowne hostowanie lokalnej aplikacji przez migrowanie jej na maszyny wirtualne platformy Azure i do zawsze włączonych grup dostępności programu SQL Server.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e4d8ab371e01d98e22382a70cc9c1ea42173cf53
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: b5b8710c8545fa2e7c56131ed74a0ea1a3a02f8e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160347"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807431"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure i zawsze włączone grupy dostępności SQL Server
 
 W tym artykule pokazano, jak fikcyjna firma Contoso ponownie hostuje dwuwarstwową aplikację .NET systemu Windows uruchomioną na maszynach wirtualnych VMware w ramach migracji do platformy Azure. Firma Contoso migruje maszynę wirtualną frontonu aplikacji do maszyny wirtualnej platformy Azure oraz bazę danych aplikacji do maszyny wirtualnej usługi Azure SQL Server działającej w klastrze trybu failover systemu Windows Server z zawsze włączonymi grupami dostępności programu SQL Server.
 
-Aplikacja SmartHotel360 używana w tym przykładzie jest oferowana jako aplikacja typu open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
+Używana w tym przykładzie aplikacja SmartHotel360 jest dostępna jako aplikacja open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
 
 ## <a name="business-drivers"></a>Czynniki biznesowe
 
@@ -28,7 +27,7 @@ Zespół liderów IT w ścisłej współpracy z partnerami biznesowymi firmy ust
 
 - **Reagowanie na rosnące potrzeby biznesowe.** Firma Contoso rozwija się, przez co lokalne systemy i infrastruktura stają się przeciążone.
 - **Zwiększenie wydajności.** Firma Contoso chce usunąć niepotrzebne procedury oraz usprawnić procesy deweloperów i użytkowników. Firma chce, aby dział IT był szybki i nie tracił czasu ani pieniędzy, co pozwoli szybciej realizować wymagania klientów.
-- **Zwiększenie elastyczności.** Firma Contoso chce lepiej odpowiadać na zapotrzebowania w branży. Musi być w stanie reagować szybciej na zmiany na rynku, aby odnosić sukcesy w gospodarce światowej. Nie może utrudniać pracy ani stać się przeszkodą biznesową.
+- **Zwiększenie elastyczności.** Dział IT firmy Contoso chce lepiej odpowiadać na zapotrzebowania biznesowe. Musi być w stanie reagować szybciej na zmiany na rynku, aby odnosić sukcesy w gospodarce światowej. Nie może utrudniać pracy ani stać się przeszkodą biznesową.
 - **Skalowalność.** W miarę pomyślnego rozwoju firmy dział IT firmy Contoso musi zapewnić systemy, które będą mogły rosnąć w tym samym tempie.
 
 ## <a name="migration-goals"></a>Cele migracji
@@ -96,7 +95,7 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
-[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Narzędzie DMA działa lokalnie z lokalnej maszyny programu SQL Server i migruje bazę danych z sieci VPN typu lokacja-lokacja do platformy Azure. | DMA to bezpłatne narzędzie z możliwością pobrania.
+[Asystent migracji danych](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Narzędzie DMA działa lokalnie z lokalnej maszyny programu SQL Server i migruje bazę danych z sieci VPN typu lokacja-lokacja do platformy Azure. | DMA to bezpłatne narzędzie z możliwością pobrania.
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Usługa Site Recovery orkiestruje odzyskiwanie po awarii i zarządza nim w przypadku maszyn wirtualnych platformy Azure, lokalnych maszyn wirtualnych i serwerów fizycznych. | Podczas replikacji na platformę Azure naliczane są opłaty za usługę Azure Storage. Maszyny wirtualne platformy Azure zostaną utworzone w momencie przejścia w tryb failover i wówczas będą naliczane opłaty. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/site-recovery) o opłatach i cenach.
 
 ## <a name="migration-process"></a>Proces migracji
@@ -173,7 +172,7 @@ Administratorzy firmy Contoso konfigurują klaster w następujący sposób:
 
     ![Maszyna wirtualna SQL](media/contoso-migration-rehost-vm-sql-ag/sql-vm-db.png)
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 - [Uzyskaj pomoc](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings) przy aprowizacji maszyny wirtualnej programu SQL Server.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms) o konfigurowaniu maszyn wirtualnych dla różnych jednostek SKU programu SQL Server.
@@ -244,7 +243,7 @@ Administratorzy firmy Contoso mogą teraz włączyć rozwiązanie Zawsze włącz
 
 Po włączeniu rozwiązania Zawsze włączone firma Contoso może skonfigurować zawsze włączoną grupę dostępności, która będzie chronić bazę danych SmartHotel360.
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 - [Przeczytaj informacje](https://docs.microsoft.com/windows-server/failover-clustering/deploy-cloud-witness) na temat monitora w chmurze i konfigurowania odpowiadającego mu konta magazynu.
 - [Uzyskaj instrukcje](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial) dotyczące konfigurowania klastra i tworzenia grupy dostępności.
@@ -257,7 +256,7 @@ Administratorzy firmy Contoso chcą teraz wdrożyć wewnętrzny moduł równowa�
 
 Tworzą moduł równoważenia obciążenia w następujący sposób:
 
-1. W Azure Portal > **sieci**  > **Load Balancer**konfiguruje nowy wewnętrzny moduł równoważenia obciążenia: **ILB-prod-DB-EUS2-SQLAOG**.
+1. W Azure Portal > **sieci** > **Load Balancer**konfiguruje nowy wewnętrzny moduł równoważenia obciążenia: **ILB-prod-DB-EUS2-SQLAOG**.
 2. Umieszczają moduł równoważenia obciążenia w sieci produkcyjnej **VNET-PROD-EUS2** w podsieci **PROD-DB-EUS2**.
 3. Przypisują mu statyczny adres IP: 10.245.40.100.
 4. Jako element sieci wdrażają moduł równoważenia obciążenia w grupie zasobów sieciowych **ContosoNetworkingRG**.
@@ -303,7 +302,7 @@ Tworzą regułę w następujący sposób:
 
     ![Sonda](media/contoso-migration-rehost-vm-sql-ag/nlb-probe.png)
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 - [Zapoznaj się z omówieniem](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview) usługi Azure Load Balancer.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal) na temat tworzenia modułu równoważenia obciążenia.
@@ -334,7 +333,7 @@ Administratorzy firmy Contoso konfigurują te składniki w następujący sposób
 
     ![Magazyn usługi Recovery Services](media/contoso-migration-rehost-vm-sql-ag/asr-vault.png)
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) na temat konfigurowania platformy Azure pod kątem usługi Site Recovery.
 
@@ -388,7 +387,7 @@ Ponadto po uruchomieniu trybu failover muszą sprawdzić następujące kwestie:
 - Podczas wyzwalania trybu failover na maszynie wirtualnej nie powinno być żadnych oczekujących aktualizacji systemu Windows. W przeciwnym razie użytkownicy nie będą mogli zalogować się na maszynie wirtualnej do momentu ukończenia aktualizacji.
 - Po przejściu do trybu failover administratorzy mogą sprawdzić **diagnostykę rozruchu**, aby wyświetlić zrzut ekranu maszyny wirtualnej. Jeśli to nie zadziała, powinni sprawdzić, czy maszyna wirtualna jest uruchomiona, i zapoznać się z tymi [poradami dotyczącymi rozwiązywania problemów](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx).
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) na temat tworzenia i przypisywania roli na potrzeby automatycznego odnajdowania.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) na temat tworzenia konta na potrzeby instalacji wypychanej usługi mobilności.
@@ -410,7 +409,7 @@ Aby kontynuować, muszą potwierdzić, że zakończono planowanie wdrożenia, wy
 
 ### <a name="set-up-the-source-environment"></a>Konfigurowanie środowiska źródłowego
 
-Administratorzy firmy Contoso muszą skonfigurować środowisko źródłowe. W tym celu pobiorą szablon OVF i za jego pomocą wdrożą serwer konfiguracji usługi Site Recovery jako wysoce dostępną lokalną maszynę wirtualną VMware. Po uruchomieniu serwera konfiguracji rejestrują go w magazynie.
+Administratorzy firmy Contoso muszą skonfigurować środowisko źródłowe. W tym celu pobiorą szablon OVF i za jego pomocą wdrożą serwer konfiguracji usługi Site Recovery jako wysoce dostępną lokalną maszynę wirtualną VMware. Po uruchomieniu serwera konfiguracji zarejestrują go w magazynie.
 
 Na serwerze konfiguracji jest uruchomionych kilka składników:
 
@@ -431,7 +430,7 @@ Administratorzy firmy Contoso wykonują te czynności w następujący sposób:
 3. Po pierwszym uruchomieniu maszyna wirtualna uruchamia środowisko instalacji systemu Windows Server 2016. Administratorzy akceptują umowę licencyjną i wprowadzają hasło administratora.
 4. Po zakończeniu instalacji logują się na maszynie wirtualnej jako administrator. Po pierwszym zalogowaniu zostanie domyślnie uruchomione narzędzie do konfiguracji usługi Azure Site Recovery.
 5. W tym narzędziu należy określić nazwę używaną do zarejestrowania serwera konfiguracji w magazynie.
-6. Narzędzie sprawdza, czy maszyna wirtualna może połączyć się z platformą Azure. Po nawiązaniu połączenia administratorzy logują się w subskrypcji platformy Azure. Użyte poświadczenia muszą zapewniać dostęp do magazynu, w którym chcesz zarejestrować serwer konfiguracji.
+6. Narzędzie sprawdza, czy maszyna wirtualna może połączyć się z platformą Azure. Po nawiązaniu połączenia administratorzy logują się do subskrypcji platformy Azure. Użyte poświadczenia muszą zapewniać dostęp do magazynu, w którym chcesz zarejestrować serwer konfiguracji.
 
     ![Rejestrowanie serwera konfiguracji](./media/contoso-migration-rehost-vm-sql-ag/config-server-register2.png)
 
@@ -495,7 +494,7 @@ Teraz administratorzy firmy Contoso mogą rozpocząć replikację maszyny wirtua
 
     ![Widok infrastruktury](./media/contoso-migration-rehost-vm-sql-ag/essentials.png)
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 - Pełne instrukcje do wszystkich kroków można znaleźć w artykule [Konfigurowanie odzyskiwania po awarii dla lokalnych maszyn wirtualnych VMware](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
 - Szczegółowe instrukcje pomogą Ci w [skonfigurowaniu środowiska źródłowego](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [wdrożeniu serwera konfiguracji](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server) i [skonfigurowaniu ustawień replikacji](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
@@ -507,30 +506,30 @@ Administratorzy firmy Contoso będą migrować bazę danych SmartHotel360 do mas
 
 1. Pobierają oni narzędzie z [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53595) na lokalną maszynę wirtualną programu SQL Server (**SQLVM**).
 2. Uruchamiają instalatora (DownloadMigrationAssistant.msi) na maszynie wirtualnej.
-3. Na stronie **Finish** (Zakończenie) wybierają pozycję **Launch Microsoft Data Migration Assistant** (Uruchom narzędzie Microsoft Data Migration Assistant) przed zakończeniem pracy kreatora.
+3. Na stronie **Finish (Zakończenie)** wybierają pozycję **Launch Microsoft Data Migration Assistant (Uruchom narzędzie Microsoft Data Migration Assistant)** przed zakończeniem pracy kreatora.
 
 ## <a name="step-8-migrate-the-database-with-dma"></a>Krok 8. Migrowanie bazy danych przy użyciu DMA
 
 1. W narzędziu DMA administratorzy uruchamiają nową migrację, **SmartHotel**.
 2. W obszarze **Target server type** (Typ serwera docelowego) wybierają pozycję **SQL Server on Azure Virtual Machines** (Program SQL Server na maszynach wirtualnych platformy Azure).
 
-    ![Narzędzie DMA](media/contoso-migration-rehost-vm-sql-ag/dma-1.png)
+    ![DMA](media/contoso-migration-rehost-vm-sql-ag/dma-1.png)
 
 3. W obszarze szczegółów migracji dodają maszynę wirtualną **SQLVM** jako serwer źródłowy i maszynę wirtualną **SQLAOG1** jako obiekt docelowy. Określają poświadczenia dla każdej maszyny.
 
-     ![Narzędzie DMA](media/contoso-migration-rehost-vm-sql-ag/dma-2.png)
+     ![DMA](media/contoso-migration-rehost-vm-sql-ag/dma-2.png)
 
 4. Tworzą udział lokalny dla informacji dotyczących bazy danych i konfiguracji. Musi być on dostępny z dostępem do zapisu przez konto programu SQL Server na maszynach wirtualnych SQLVM i SQLAOG1.
 
-    ![Narzędzie DMA](media/contoso-migration-rehost-vm-sql-ag/dma-3.png)
+    ![DMA](media/contoso-migration-rehost-vm-sql-ag/dma-3.png)
 
 5. Firma Contoso wybiera nazwy logowania, które powinny być migrowane, a następnie uruchamia migrację. Po zakończeniu narzędzie DMA pokazuje migrację jako zakończoną pomyślnie.
 
-    ![Narzędzie DMA](media/contoso-migration-rehost-vm-sql-ag/dma-4.png)
+    ![DMA](media/contoso-migration-rehost-vm-sql-ag/dma-4.png)
 
 6. Sprawdzają, czy baza danych działa na maszynie wirtualnej **SQLAOG1**.
 
-    ![Narzędzie DMA](media/contoso-migration-rehost-vm-sql-ag/dma-5.png)
+    ![DMA](media/contoso-migration-rehost-vm-sql-ag/dma-5.png)
 
 Narzędzie DMA nawiązuje połączenie z lokalną maszyną wirtualną z programem SQL Server przy użyciu połączenia sieci VPN typu lokacja-lokacja między centrum danych firmy Contoso i platformą Azure, a następnie migruje bazę danych.
 
@@ -575,7 +574,7 @@ Po skonfigurowaniu wszystkich elementów firma Contoso ma teraz działającą gr
 
 ![Połączenie z wewnętrznym modułem równoważenia obciążenia](media/contoso-migration-rehost-vm-sql-ag/ilb-connect.png)
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 - Dowiedz się więcej na temat [grupy dostępności](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group) i [odbiornika](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener).
 - Ręcznie [skonfiguruj klaster tak, aby używał adresu IP modułu równoważenia obciążenia](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address).
@@ -589,7 +588,7 @@ Administratorzy firmy Contoso uruchamiają szybki test przejścia do trybu failo
 
 Próba przejścia do trybu failover pozwala sprawdzić, czy wszystko działa zgodnie z oczekiwaniami, przed przeprowadzeniem faktycznej migracji.
 
-1. Uruchamiają testowe przełączenie w tryb failover przy użyciu najnowszego dostępnego punktu w czasie (**Najnowszy przetworzony**).
+1. Administratorzy uruchamiają próbę przejścia do trybu failover przy użyciu najnowszego dostępnego punktu w czasie (**Najnowszy przetworzony**).
 2. Wybierają opcję **Zamknij maszynę przed rozpoczęciem pracy w trybie failover**, aby usługa Site Recovery podjęła próbę zamknięcia źródłowej maszyny wirtualnej przed jej przełączeniem w tryb failover. Przełączanie do trybu failover będzie kontynuowane, nawet jeśli zamknięcie nie powiedzie się.
 3. Próbne przełączenia do trybu failover:
 
@@ -629,11 +628,11 @@ W ostatnim kroku procesu migracji administratorzy firmy Contoso aktualizują par
 2. Po zaktualizowaniu pliku i zapisaniu go ponownie uruchamiają usługi IIS na maszynie wirtualnej WEBVM. W tym celu używają polecenia IISRESET/RESTART z poziomu wiersza polecenia.
 3. Po ponownym uruchomieniu usług IIS aplikacja korzysta teraz z bazy danych działającej w programie SQL MI.
 
-**Potrzebujesz dodatkowej pomocy?**
+**Potrzebujesz dalszej pomocy?**
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure) o próbnym uruchamianiu trybu failover.
 - [Dowiedz się](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans), jak utworzyć plan odzyskiwania.
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) na temat przechodzenia do trybu failover na platformie Azure.
+- [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) na temat przechodzenia w tryb failover na platformie Azure.
 
 ### <a name="clean-up-after-migration"></a>Czyszczenie zasobów po migracji
 
@@ -644,7 +643,7 @@ Teraz firma Contoso musi wykonać następujące kroki dotyczące czyszczenia:
 - Usunięcie lokalnych maszyn wirtualnych ze spisu serwera vCenter.
 - Usunięcie maszyn wirtualnych z lokalnych zadań kopii zapasowej.
 - Zaktualizowanie dokumentacji wewnętrznej tak, aby wyświetlić nowe lokalizacje i adresy IP maszyn wirtualnych.
-- Przegląd wszystkich zasobów korzystających z zlikwidowanych maszyn wirtualnych i zaktualizowanie wszystkich ustawień lub dokumentów w celu uwzględnienia nowej konfiguracji.
+- Przegląd wszystkich zasobów korzystających ze zlikwidowanych maszyn wirtualnych i zaktualizowanie wszystkich ustawień lub dokumentów w celu uwzględnienia nowej konfiguracji.
 - Dodanie dwóch nowych maszyn wirtualnych (SQLAOG1 i SQLAOG2) do systemów monitorowania produkcji.
 
 ### <a name="review-the-deployment"></a>Przegląd wdrożenia
@@ -672,7 +671,7 @@ W celu zapewnienia ciągłości działania i odzyskiwania po awarii (BCDR, Busin
 ### <a name="licensing-and-cost-optimization"></a>Licencjonowanie i optymalizacja kosztów
 
 1. Firma Contoso ma istniejące licencje dla maszyny wirtualnej WEBVM i zastosuje korzyść użycia hybrydowego platformy Azure. Firma Contoso przekonwertuje istniejące maszyny wirtualne platformy Azure, aby skorzystać z tych cen.
-2. Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
+2. Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) na temat usługi Azure Cost Management.
 
 ## <a name="conclusion"></a>Podsumowanie
 

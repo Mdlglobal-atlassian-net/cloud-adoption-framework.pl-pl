@@ -1,6 +1,5 @@
 ---
 title: Czym jest księgowość w chmurze?
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wyjaśnienie koncepcji ewidencjonowania aktywności w chmurze
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 834beb021b394e2d6ffe58723caced7519923b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 008958e0542a52f022bbf2ba3183fbfb8c78b9ee
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030136"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806819"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +34,7 @@ Niezależnie od modelu przychodu centralne modele ewidencjonowania aktywności I
 
 W centralnym modelu księgowości IT zespół IT oznacza usługi świadczone na potrzeby obciążania, zarządzania i innych szacowanych kosztów. Następnie należy rozrachunkować konkurencyjne jednostki biznesowe dla oznaczonych usług. W tym modelu CIO oczekuje się zarządzania P & L związanego z sprzedażą tych usług. Pozwala to na tworzenie niepełnych kosztów IT i rywalizacji między centralnym działem IT i jednostkami biznesowymi, szczególnie w przypadku konieczności ponoszenia kosztów lub braku zgody na umowy SLA. W miarę możliwości technologii lub zmiany rynkowej każda nowa technologia spowodowałaby zakłócenie w centralnej & L, co utrudnia transformację.
 
-## <a name="chargeback"></a>Obciążenie zwrotne
+## <a name="chargeback"></a>Obciążenia zwrotnego
 
 Jednym z typowych pierwszych kroków w przypadku zmiany jego reputacji jako centrum kosztów jest implementacja obciążenia zwrotnego modelu ewidencjonowania aktywności. Ten model jest szczególnie powszechny w mniejszych przedsiębiorstwach lub wysoce wydajnych organizacjach IT. W modelu obciążenia zwrotnego wszystkie koszty działu IT powiązane z konkretną jednostką biznesową są traktowane jak koszty operacyjne w budżecie jednostki biznesowej. Ta metoda ogranicza skumulowany wpływ na IT, co pozwala na bardziej jasne zwiększenie wartości biznesowej.
 
@@ -44,22 +43,22 @@ W starszym modelu lokalnym obciążenia zwrotnego jest trudne do zrealizowania, 
 Ale nie należy implementować tego modelu bez uwzględnienia konsekwencji. Poniżej przedstawiono kilka konsekwencji, które są unikatowe dla modelu obciążenia zwrotnego:
 
 - Obciążenia zwrotnego skutkuje ogromną redukcją ogólnego budżetu IT. W przypadku organizacji IT, które są niewydajne lub wymagają szerokiej złożoności w zakresie operacji lub konserwacji, ten model może ujawnić te wydatki w złej kondycji.
-- Utrata kontroli jest powszechną konsekwencją. W wysoce politycznych środowiskach obciążenia zwrotnego może skutkować utratą kontroli i personelem przydzielonym do firmy. Może to spowodować znaczne zwiększenie wydajności i ograniczyć możliwość spójnego spełnienia wymagań umowy SLA lub projektu.
-- Jest to kolejna wspólna konsekwencja dla usług udostępnionych. Jeśli organizacja zwiększyła się w drodze pozyskiwania i pełni rolę techniczną w związku z tym, prawdopodobnie należy zachować wysoką część usług udostępnionych, aby wszystkie systemy działały efektywnie.
+- Utrata kontroli jest powszechną konsekwencją. In highly political environments, chargeback can result in loss of control and staff being reallocated to the business. This could create significant inefficiencies and reduce IT's ability to consistently meet SLAs or project requirements.
+- Difficulty accounting for shared services is another common consequence. If the organization has grown through acquisition and is carrying technical debt as a result, it's likely that a high percentage of shared services must be maintained to keep all systems working together effectively.
 
-Przekształcenia w chmurze obejmują rozwiązania do tych i inne konsekwencje związane z modelem obciążenia zwrotnego. Każdy z tych rozwiązań obejmuje implementację i koszty operacyjne. CIO i dyrektor finansowy powinni starannie zważyć specjalistów i wady modelu obciążenia zwrotnego przed uwzględnieniem ich.
+Cloud transformations include solutions to these and other consequences associated with a chargeback model. But each of those solutions includes implementation and operating expenses. The CIO and CFO should carefully weigh the pros and cons of a chargeback model before considering one.
 
-## <a name="showback-or-awareness-back"></a>Przewidywanych kosztów lub świadomość
+## <a name="showback-or-awareness-back"></a>Showback or awareness-back
 
-W przypadku większych przedsiębiorstw model przewidywanych kosztów lub z obsługą świadomości jest bezpieczniejszym pierwszym krokiem przejścia z centrum kosztów do centrum wartości. Ten model nie ma wpływu na księgowość finansową. W rzeczywistości P & LS każdej organizacji nie zmieni się. Największe przesunięcia jest w sposób myślenia i świadomości. W modelu "przewidywanych kosztów" lub "rozpoznawanie świadomości" zarządza scentralizowaną, skonsolidowaną mocą zakupu jako agentem dla firmy. W raportach z powrotem do firmy dział IT ponosi wszelkie bezpośrednie koszty do odpowiedniej jednostki biznesowej, co zmniejsza postrzegany budżet bezpośrednio przez dział IT. Planuje również budżety na podstawie potrzeb skojarzonych jednostek biznesowych, co pozwala na dokładniejsze uwzględnienie kosztów związanych z czystą inicjatywy IT.
+For larger enterprises, a showback or awareness-back model is a safer first step in the transition from cost center to value center. This model doesn't affect financial accounting. In fact, the P&Ls of each organization don't change. The biggest shift is in mindset and awareness. In a showback or awareness-back model, IT manages the centralized, consolidated buying power as an agent for the business. In reports back to the business, IT attributes any direct costs to the relevant business unit, which reduces the perceived budget directly consumed by IT. IT also plans budgets based on the needs of the associated business units, which allows IT to more accurately account for costs associated to purely IT initiatives.
 
-Ten model zapewnia równowagę między rzeczywistym modelem obciążenia zwrotnego i bardziej tradycyjnymi modelami ewidencjonowania aktywności IT.
+This model provides a balance between a true chargeback model and more traditional models of IT accounting.
 
-## <a name="impact-of-cloud-accounting-models"></a>Wpływ modeli ewidencjonowania aktywności w chmurze
+## <a name="impact-of-cloud-accounting-models"></a>Impact of cloud accounting models
 
-Wybór modeli ewidencjonowania aktywności jest decydujący w projekcie systemu. Wybór modelu ewidencjonowania aktywności może mieć wpływ na strategie subskrypcji, standardy nazewnictwa, standardy tagowania oraz projekty zasad i planów.
+The choice of accounting models is crucial in system design. The choice of accounting model can affect subscription strategies, naming standards, tagging standards, and policy and blueprint designs.
 
-Po przeprowadzeniu pracy z firmą w celu podejmowania decyzji dotyczących modelu ewidencjonowania aktywności w chmurze i [rynków globalnych](./global-markets.md)masz wystarczającą ilość informacji, aby [opracować platformę Azure](../ready/index.md).
+After you've worked with the business to make decisions about a cloud accounting model and [global markets](./global-markets.md), you have enough information to [develop an Azure foundation](../ready/index.md).
 
 > [!div class="nextstepaction"]
-> [Opracowywanie platformy Azure Foundation](../ready/index.md)
+> [Develop an Azure foundation](../ready/index.md)

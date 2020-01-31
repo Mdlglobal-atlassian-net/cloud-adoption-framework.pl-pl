@@ -1,6 +1,5 @@
 ---
 title: Ustanów początkową podstawę ładu w chmurze
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Zacznij korzystać z ładu w chmurze, ustanawiając wstępną Fundację ładu Cloud.
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: aae20779a4009692ebf52602341d81939dee01ea
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 290bffadc608d8ff9d593e5231242e3555732bf3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239530"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803793"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Ustanów początkową podstawę ładu w chmurze
 

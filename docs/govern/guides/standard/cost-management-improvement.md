@@ -1,7 +1,6 @@
 ---
-title: 'Standardowa Przewodnik po przedsiębiorstwie: Ulepszanie dyscypliny Cost Management'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standardowa Przewodnik po przedsiębiorstwie: Ulepszanie dyscypliny Cost Management'
+title: 'Standardowa Przewodnik po przedsiębiorstwie: ulepszanie dyscypliny Cost Management'
+description: 'Standardowa Przewodnik po przedsiębiorstwie: ulepszanie dyscypliny Cost Management'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b4ff2db2b8d7009eb9d5a50dee630c1a8a60723c
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 83fe35135b37fe96a95f7335639aec65538ee829
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967587"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806207"
 ---
-# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>Standardowa Przewodnik po przedsiębiorstwie: Ulepszanie dyscypliny Cost Management
+# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>Standardowa Przewodnik po przedsiębiorstwie: ulepszanie dyscypliny Cost Management
 
 Ten artykuł postępuje zgodnie z opisami, dodając kontrolę kosztów do programu ładu MVP.
 

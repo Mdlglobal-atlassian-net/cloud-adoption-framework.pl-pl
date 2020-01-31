@@ -1,6 +1,5 @@
 ---
 title: Ponowne hostowanie aplikacji lokalnej dla systemu Linux na maszynach wirtualnych platformy Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, jak firma Contoso przeprowadza ponowne hostowanie lokalnej aplikacji dla systemu Linux przez migrację na maszyny wirtualne platformy Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 078749474b13074d9196a80c10768da468e423bc
-ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
+ms.openlocfilehash: b629cc932b54b7ef7c633cefc847ac3263477674
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520212"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807346"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Ponowne hostowanie aplikacji lokalnej dla systemu Linux na maszynach wirtualnych platformy Azure
 
@@ -22,7 +21,7 @@ W tym artykule pokazano, jak fikcyjna firma Contoso przeprowadza ponowne hostowa
 
 Używana w tym przykładzie aplikacja do obsługi pomocy technicznej, osTicket, jest dostępna jako aplikacja open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/osTicket/osTicket).
 
-## <a name="business-drivers"></a>Biznesowa siła napędowa
+## <a name="business-drivers"></a>Czynniki biznesowe
 
 Zespół liderów IT w ścisłej współpracy z partnerami biznesowymi firmy ustalił, co firma będzie chciała osiągnąć dzięki migracji:
 
@@ -307,4 +306,4 @@ W celu zapewnienia ciągłości działania i odzyskiwania po awarii firma Contos
 
 - Po wdrożeniu zasobów firma Contoso przypisuje tagi platformy Azure zdefiniowane na etapie [wrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md#set-up-tagging).
 - Firma Contoso nie ma żadnych problemów z licencjonowaniem serwerów z systemem Ubuntu.
-- Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
+- Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) na temat usługi Azure Cost Management.

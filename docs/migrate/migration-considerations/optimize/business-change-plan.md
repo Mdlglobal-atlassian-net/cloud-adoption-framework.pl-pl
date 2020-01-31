@@ -1,19 +1,18 @@
 ---
 title: Wskazówki dotyczące opracowywania planu zmian biznesowych
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Proces migracji w chmurze, który koncentruje się na zadaniach migrowania obciążeń do chmury.
+description: Proces migracji do chmury, który koncentruje się na zadaniach migrowania obciążeń do chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2050c210bad9434e688ec4ef7c2e700cccf39f2c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 48e670028e26be5a28abf55c7a0565769e17dacf
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564593"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801974"
 ---
 # <a name="business-change-plan"></a>Plan zmian biznesowych
 
@@ -65,6 +64,6 @@ Po udokumentowaniu i zaplanowaniu zmiany biznesowej można rozpocząć [testowan
 > [!div class="nextstepaction"]
 > [Wskazówki dotyczące testowania biznesowego (testowania akceptacyjnego przez użytkowników) podczas migracji](./business-test.md)
 
-## <a name="references"></a>Dokumentacja
+## <a name="references"></a>Informacje
 
 - Eason, K. (1988) _technologia informacyjna i zmiana organizacyjna_, Nowy Jork: Taylor i Francis.

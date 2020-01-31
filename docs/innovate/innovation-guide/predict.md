@@ -1,6 +1,5 @@
 ---
 title: 'Przewodnik po innowacjach na platformie Azure: Przewidywanie i wpływ'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Naucz się przewidywać i wywierać wpływ przy użyciu platformy Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 506387c87a714964692dde7c082fa31c981b0c6f
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 00bd41050d469c8bab6ee0c6a8c4e68facd92ca9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251835"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808264"
 ---
 ::: zone target="docs"
 

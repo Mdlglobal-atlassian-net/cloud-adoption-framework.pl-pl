@@ -1,6 +1,5 @@
 ---
 title: Ścieżka gotowości w zakresie umiejętności
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Przegląd ścieżki gotowości w zakresie umiejętności
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1a2da8e65e6b1fda5995fa5fb207239e36b7d8a7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8116c653656d2b5f20150aaf447225616e2657a6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566707"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798778"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Ścieżka gotowości w zakresie umiejętności w fazie gotowości do migracji
 
@@ -61,7 +60,7 @@ Zdobądź oficjalne potwierdzenie swojej wiedzy na temat platformy Azure, korzys
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn to nowe podejście do uczenia się. Nie jest łatwo dostępna gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty i poziomy i osiągaj więcej.
+Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury, nie przychodzi łatwo. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty i poziomy i osiągaj więcej.
 
 Poniższe przykłady to kilka dostosowanych ścieżek szkoleniowych na Microsoft Learn, które są wyrównane do gotowej części platformy wdrażania w chmurze:
 

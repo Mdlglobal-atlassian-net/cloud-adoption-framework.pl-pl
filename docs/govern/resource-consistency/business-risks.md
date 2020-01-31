@@ -1,6 +1,5 @@
 ---
 title: Motywacje spójności zasobów i ryzyko biznesowe
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motywacje spójności zasobów i ryzyko biznesowe
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e1c4723aa52c20c16dbfa883d7e8566292ca54b3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222021"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807227"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Motywacje spójności zasobów i ryzyko biznesowe
 

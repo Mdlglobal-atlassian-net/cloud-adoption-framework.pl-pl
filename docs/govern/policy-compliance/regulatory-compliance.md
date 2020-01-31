@@ -1,6 +1,5 @@
 ---
 title: Wprowadzenie do zgodności z przepisami
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wprowadzenie do zgodności z przepisami
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: bd48f3080c1cf516121f9afe2e8c31bbc799e3a5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222034"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806122"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Wprowadzenie do zgodności z przepisami
 
@@ -40,13 +39,13 @@ Karta płatnicza Industry Data Security Standard (PCI DSS) jest zastrzeżonym st
 
 Dane osobowe są informacjami, których można użyć do zidentyfikowania konsumenta, pracownika, partnera lub innej jednostki życiowej lub prawnej. Wiele powstających przepisów, szczególnie tych związanych z ochroną prywatności i danymi osobowymi, wymaga, aby same firmy spełniały wymagania i zgłaszać zgodność oraz wszelkie naruszenia, które mogą wystąpić.
 
-## <a name="gdpr"></a>GDPR
+## <a name="gdpr"></a>RODO
 
 Jednym z najważniejszych osiągnięć w tym obszarze jest Ogólne rozporządzenie o ochronie danych (Rodo), zaprojektowany w celu wzmocnienia ochrony danych dla osób w Unii Europejskiej. Rodo wymaga, aby dane dotyczące osób indywidualnych (takich jak "nazwa, adres domowy, Zdjęcie, adres e-mail, szczegóły banku, wpisy w witrynach sieci społecznościowych, informacje medyczne lub adresy IP komputera") były utrzymywane na serwerach w Unii Europejskiej i nie zostały przeniesione z niego. Wymaga również, aby firmy powiadomiły osoby o naruszeniu danych i mieli upoważnienia, że firmy mają oficera ochrony danych (DPO). Inne kraje mają lub rozwijają podobne rodzaje rozporządzeń.
 
 ## <a name="compliant-foundation-in-azure"></a>Zgodna podstawa na platformie Azure
 
-Aby pomóc klientom w spełnieniu własnych obowiązków w zakresie zgodności w branżach objętych regulacją i rynkach na całym świecie, platforma Azure&mdash;utrzymuje największy portfel zgodności w branży (łącznie z liczbą ofert), a także Głębokość (liczba usługi dostępne dla klientów w zakresie oceny). Oferty zgodności z platformą Azure są pogrupowane w cztery segmenty: mające zastosowanie globalnie, dla instytucji rządowych Stanów Zjednoczonych, właściwych dla branż i regionu/kraju.
+Aby pomóc klientom w spełnieniu własnych obowiązków związanych ze zgodnością w ramach regulowanych branż i rynków na całym świecie, platforma Azure utrzymuje największe portfolio zgodności w branży&mdash;(łączna liczba ofert), a także Głębokość (liczba usług dostępnych dla klientów w zakresie oceny). Oferty zgodności z platformą Azure są pogrupowane w cztery segmenty: mające zastosowanie globalnie, dla instytucji rządowych Stanów Zjednoczonych, właściwych dla branż i regionu/kraju.
 
 Oferty zgodności z platformą Azure opierają się na różnych typach gwarancji, w tym formalnych certyfikatach, zaświadczeniu, ważności, autoryzacji i ocenach wyprodukowanych przez niezależne przedsiębiorstwa przeprowadzające inspekcje stron trzecich, a także zmiany umowne, samooceny i dokumenty ze wskazówkami dla klientów wytwarzane przez firmę Microsoft. Każdy opis oferty w tym dokumencie zawiera aktualne instrukcje dotyczące zakresu, wskazujące, które usługi platformy Azure są w zasięgu dla oceny, a także linki do zasobów do pobrania, aby pomóc klientom w ich zgodności wymagania.
 

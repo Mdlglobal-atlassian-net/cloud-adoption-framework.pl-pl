@@ -1,6 +1,5 @@
 ---
 title: Metryki linii bazowej zabezpieczeń, wskaźniki i tolerancja ryzyka
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metryki linii bazowej zabezpieczeń, wskaźniki i tolerancja ryzyka
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b8171839b79ffbe9e3849cf303180d1f1ee049f2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1075563dd4596ad6bd1b4ac202a69a1ab1251cba
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222841"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808859"
 ---
 # <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>Metryki linii bazowej zabezpieczeń, wskaźniki i tolerancja ryzyka
 
@@ -29,7 +28,7 @@ Każda organizacja ma inne środowiska i wymagania dotyczące zabezpieczeń oraz
 - **Klasyfikacja danych:** Liczba przechowywanych w chmurze danych i usług, które są niesklasyfikowane zgodnie z zasadami zachowania poufności, zgodności lub wpływów obowiązujących w organizacji.
 - **Liczba poufnych magazynów danych:** Liczba punktów końcowych magazynu lub baz danych zawierających dane poufne i powinna być chroniona.
 - **Liczba niezaszyfrowanych magazynów danych:** Liczba poufnych magazynów danych, które nie są zaszyfrowane.
-- **Obszar narażony na ataki:** Ile łącznych źródeł danych, usług i aplikacji będzie hostowanych w chmurze. Jaki procent tych źródeł danych jest klasyfikowany jako poufne? Jaki procent tych aplikacji i usług jest krytyczny dla działalności?
+- Obszar narażony na **ataki:** Ile łącznych źródeł danych, usług i aplikacji będzie hostowanych w chmurze. Jaki procent tych źródeł danych jest klasyfikowany jako poufne? Jaki procent tych aplikacji i usług jest krytyczny dla działalności?
 - **Normy omówione:** Liczba standardów zabezpieczeń zdefiniowanych przez zespół ds. zabezpieczeń.
 - **Zasoby objęte usługą:** Wdrożone zasoby, które są objęte standardami zabezpieczeń.
 - **Zgodność ze standardami ogólnymi:** Stosunek zgodności przestrzegania standardów zabezpieczeń.

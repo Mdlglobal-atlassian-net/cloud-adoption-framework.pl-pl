@@ -1,6 +1,5 @@
 ---
 title: Wprowadzenie do ścieżki gotowości do kwalifikacji
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wprowadzenie do ścieżki gotowości do kwalifikacji
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 88de7ae19e3853bf132b58d0c3cbeb16d278a28f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564212"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800155"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Wprowadzenie do ścieżki gotowości do kwalifikacji
 
@@ -40,7 +39,7 @@ Każda z poprzednich ścieżek szkoleniowych udostępnia szanse sprzedaży na wi
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn to nowe podejście do uczenia się. Nie jest łatwo dostępna gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Uzyskaj punkty i poziomy i uzyskaj więcej informacji!
+Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury, nie przychodzi łatwo. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty i poziomy i osiągaj więcej.
 Poniżej przedstawiono kilka przykładów dostosowanych ścieżek szkoleniowych na Microsoft Learn, które są wyrównane do sekcji plan struktury wdrażanie w chmurze:
 
 [Rozwijanie praktyk DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices):D evops to związek ludzi, procesów i produktów w celu zapewnienia ciągłego dostarczania wartości użytkownikom końcowym. Azure DevOps to zestaw usług, które udostępniają narzędzia, które należy wykonać. Za pomocą usługi Azure DevOps można kompilować, testować i wdrażać aplikacje w chmurze lub lokalnie.

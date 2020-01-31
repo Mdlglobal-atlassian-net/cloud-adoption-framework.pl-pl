@@ -1,6 +1,5 @@
 ---
 title: Określanie priorytetów i Definiowanie obciążeń dla planu wdrażania chmury
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Określanie priorytetów i Definiowanie obciążeń dla planu wdrażania chmury
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240194"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799985"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Określanie priorytetów i Definiowanie obciążeń dla planu wdrażania chmury
 

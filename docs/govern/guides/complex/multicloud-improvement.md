@@ -1,6 +1,5 @@
 ---
 title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: poprawa chmury'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: poprawa chmury'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4279f088dd985b26c87d28a580b8351d45d9384e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3da91b65c282e9eba8248645b18cec65763b429b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547656"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805595"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: poprawa chmury
 

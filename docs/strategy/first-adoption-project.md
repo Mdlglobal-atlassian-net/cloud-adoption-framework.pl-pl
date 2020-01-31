@@ -1,6 +1,5 @@
 ---
-title: Pierwszy projekt wdrożenia chmury
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: Pierwszy projekt wdrażania chmury
 description: Dowiedz się więcej na temat implementowania pierwszego projektu wdrażania w chmurze.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,16 +7,16 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e0ddf68f959130df11305a9791c553aa48009c01
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c374ef690a28e1b7e0e8fd6f7fff3106c35e543f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753803"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798183"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="first-cloud-adoption-project"></a>Pierwszy projekt wdrożenia chmury
+# <a name="first-cloud-adoption-project"></a>Pierwszy projekt wdrażania chmury
 
 Jest to krzywa szkoleniowa i zobowiązanie czasowe związane z planowaniem wdrażania w chmurze. Nawet w przypadku doświadczonych zespołów, odpowiednie planowanie jest czasochłonne: czas na dostosowanie uczestników projektu, czas zbierania i analizowania danych, czas na weryfikację długoterminowych decyzji oraz czas na dostosowanie osób, procesów i technologii. W najbardziej wydajnych wysiłkach planowanie zwiększa się równolegle z wdrażaniem, ulepszanie przy użyciu poszczególnych wersji i każdej migracji obciążenia do chmury. Ważne jest, aby zrozumieć różnicę między planem wdrażania chmury a strategią wdrażania chmury. Potrzebujesz dobrze zdefiniowanej strategii, aby ułatwić i poprowadzić implementację planu wdrażania w chmurze.
 

@@ -1,6 +1,5 @@
 ---
 title: Mechanizmy kontroli kosztów skoncentrowane na migracji
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, jak konfigurować budżety i płatności oraz jak interpretować faktury dotyczące zasobów platformy Azure.
 author: bandersmsft
 ms.author: banders
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 57725e56c973a8fb094c50987d84c26a70c0ead6
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 8486d4de8b6055d6d0741d008c10a405c27b8f92
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251660"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803521"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanizmy kontroli kosztów skoncentrowane na migracji
 
@@ -68,7 +67,7 @@ Przedstawiony poniżej otrzymany wynik szacunkowy obejmuje miesięczne koszty ob
 ![Widok Szczegóły kosztów](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
 *Rysunek 1. Obraz przedstawiający widok Szczegóły kosztów oceny w usłudze Azure Migrate.*
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+## <a name="additional-resources"></a>Zasoby dodatkowe
 
 - [Konfiguracja i przegląd oceny w usłudze Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
 - Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [ulepszania usługi Cost Management w przewodniku dotyczącym ładu dla złożonych przedsiębiorstw](../../govern/guides/complex/cost-management-improvement.md).
@@ -102,7 +101,7 @@ W poniższych krokach opisano ładowanie danych analizy kosztów w usłudze Azur
 
 Ta analiza umożliwi przegląd łącznego kosztu, budżetu (jeśli jest dostępny) i kosztów skumulowanych. Każde obliczenie może być wyświetlane według usługi, zasobu oraz w czasie. Co ważne, koszty mogą być analizowane według tagów. Prawidłowe nazewnictwo i tagowanie zasobów (infrastruktury, aplikacji i danych) stanowi punkt wyjścia dla wszystkich procesów zarządzania dźwiękiem i kosztami. Odpowiednie tagi umożliwiają lepsze zarządzanie kosztami i wyraźniejszy wpływ optymalizacji wydajności i kosztów.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+## <a name="additional-resources"></a>Zasoby dodatkowe
 
 - Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [przyrostowego ulepszania usługi Cost Management w przewodniku dotyczącym ładu dla złożonych przedsiębiorstw](../../govern/guides/complex/cost-management-improvement.md).
 - Aby uzyskać więcej informacji na temat usługi Azure Advisor, zobacz temat [Reducing service costs using Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) (Obniżanie kosztów usług przy użyciu Azure Advisor).
@@ -140,6 +139,6 @@ Jeśli masz już licencje na system Windows Server lub program SQL Server w rama
 
 W przypadku procesów w tle o niższym priorytecie usługa Batch oferuje możliwość zarządzania maszynami wirtualnymi usługi w tle oraz obniżenia kosztów. Jednak przed wybraniem tej opcji z rabatem ważne jest, by poznać wpływ na wydajność [maszyn wirtualnych o niskim priorytecie z usługą Batch](https://docs.microsoft.com/azure/batch/batch-low-pri-vms).
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+## <a name="additional-resources"></a>Zasoby dodatkowe
 
 Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [przyrostowych ulepszeń usługi Cost Management w przewodniku dotyczącym ładu dla złożonych przedsiębiorstw](../../govern/guides/complex/cost-management-improvement.md).

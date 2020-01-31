@@ -1,6 +1,5 @@
 ---
 title: Ustanowienie przeglądu sprawności operacyjnej
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wskazówki dotyczące podstaw operacyjnych
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9607bf217d8638f2337fa337a4cb57c7ba919608
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: df13e7bf3622c7062c3da1fc30a6a3fee9d28c90
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868049"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807567"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Ustanowienie przeglądu sprawności operacyjnej
 
@@ -37,7 +36,7 @@ Od samego początku wiele zespołów w firmie Microsoft zabrało rozwój platfor
 
 Procesy, które firma Microsoft stosuje jako podstawy dla procesów przedstawionych w tym artykule.
 
-## <a name="understand-the-problem"></a>Omówienie problemu
+## <a name="understand-the-problem"></a>Opis problemu
 
 Po [rozpoczęciu pracy](../getting-started/migrate.md), pierwszym krokiem w ramach transformacji cyfrowej przedsiębiorstwa jest zidentyfikowanie problemów firmy, które należy rozwiązać, przyjmując platformę Azure. Następnym krokiem jest określenie rozwiązania wysokiego poziomu problemu, takiego jak Migrowanie obciążenia do chmury lub dostosowanie istniejącej usługi lokalnej do uwzględnienia funkcjonalności chmury. Na koniec warto zaprojektować i zaimplementować rozwiązanie.
 

@@ -1,6 +1,5 @@
 ---
 title: Tworzenie świadomych kosztów organizacji
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Zapoznaj się z najlepszymi rozwiązaniami dotyczącymi tworzenia organizacji świadomej kosztów.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 6c01ec344d6c02fa9c576e5e674b8fddf59849fe
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 42025e9e7459aae8731b6269d6bc5512acde64e4
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566810"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800903"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Tworzenie świadomej organizacji kosztów
 

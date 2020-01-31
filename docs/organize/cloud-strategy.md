@@ -1,6 +1,5 @@
 ---
 title: Możliwości strategii chmury
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Opisuje sposób tworzenia możliwości strategii chmury
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 022afb976a807d1e178bcc5788885bcabc3f1b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 17ef8a6b84e16b2baf7a69918051c7f6a8257396
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030149"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800852"
 ---
 # <a name="cloud-strategy-capabilities"></a>Możliwości strategii chmury
 
@@ -29,7 +28,7 @@ Ta funkcja jest zwykle udostępniana przez następujące typy ról. Gdy zespół
 - Finanse
 - Branża
 - Kadry
-- Operacje
+- Operations
 - Architektura przedsiębiorstwa
 - Infrastruktura IT
 - Grupy aplikacji
@@ -49,7 +48,7 @@ Głównym celem strategii chmury jest zweryfikowanie i zachowanie dopasowania mi
 - Przejrzyj i Prześlij opinię na temat [wyników działalności biznesowej](../strategy/business-outcomes/index.md) i [modeli finansowych](../strategy/financial-models.md).
 - Pomoc w ustaleniu jasnych [motywacji do](../strategy/motivations.md) wdrożenia w chmurze, które są zgodne z celami firmy.
 - Zdefiniuj odpowiednie [metryki uczenia](../strategy/learning-metrics.md) , które wyraźnie komunikują się z postępem w kierunku wyników działalności biznesowej.
-- Informacje [](../govern/policy-compliance/risk-tolerance.md) o ryzyku biznesowym wprowadzonym przez plan stanowią [tolerancję firmy dla ryzyka](../govern/policy-compliance/risk-tolerance.md).
+- Informacje o [ryzyku biznesowym](../govern/policy-compliance/risk-tolerance.md) wprowadzonym przez plan stanowią [tolerancję firmy dla ryzyka](../govern/policy-compliance/risk-tolerance.md).
 - Zapoznaj się z [racjonalizacją](../digital-estate/rationalize.md)i zatwierdź ją.
 
 ### <a name="ongoing-monthly-tasks"></a>Trwające miesięczne zadania
@@ -65,7 +64,7 @@ Zadania wymienione w poprzedniej sekcji mogą być czasochłonne w fazach wczesn
 
 - Podczas wczesnych nakładów pracy należy przydzielić godzinę w każdym tygodniu, aby zaspokoić ją z zespołem. Po solidified planu wdrożenia (zwykle w ciągu 4&ndash;6 tygodni) wymagania dotyczące czasu mogą być ograniczone.
 - W ramach wysiłków związanych z przyjmowaniem należy przydzielić 1&ndash;2 godziny co miesiąc, aby sprawdzić postęp i zweryfikować dalsze priorytety.
-- Dodatkowy czas jest prawdopodobnie wymagany od delegowanych członków zespołu wykonawczego w zależności od potrzeb. Każdy członek zespołu strategii chmury powinien mianować delegata, który może przydzielić 5&ndash;-godzinny tydzień, aby obsługiwał bieżące pytania i raporty o wszelkich pilnych potrzebach.
+- Dodatkowy czas jest prawdopodobnie wymagany od delegowanych członków zespołu wykonawczego w zależności od potrzeb. Każdy członek zespołu ds. strategii chmury powinien mianować delegata, który może przydzielić 5&ndash;10 godzin na tydzień, aby obsługiwać bieżące pytania i raporty o wszelkich pilnych potrzebach.
 
 ## <a name="next-steps"></a>Następne kroki
 

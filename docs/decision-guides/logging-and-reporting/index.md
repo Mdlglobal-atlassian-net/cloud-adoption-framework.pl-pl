@@ -1,6 +1,5 @@
 ---
 title: Przewodnik po decyzjach dotyczących rejestrowania i raportowania
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się więcej o rejestrowaniu, raportowaniu i monitorowaniu jako usługach podstawowych w ramach migracji na platformę Azure.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 038137088abe02160fd199cef468ecc5d5756281
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753167"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806768"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Przewodnik po decyzjach dotyczących rejestrowania i raportowania
 

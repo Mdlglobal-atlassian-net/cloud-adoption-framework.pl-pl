@@ -1,6 +1,5 @@
 ---
 title: Szablon przyspieszenia wdrożenia
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Szablon przyspieszenia wdrożenia
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 96b10c0c5494325c2cd7b46c1415dfd544932962
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 210abd5fe90810dea0d4da65422b2db8d66b4c26
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223602"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806360"
 ---
 # <a name="deployment-acceleration-template"></a>Szablon przyspieszenia wdrożenia
 

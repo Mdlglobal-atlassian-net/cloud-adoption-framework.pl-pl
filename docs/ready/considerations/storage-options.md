@@ -1,6 +1,5 @@
 ---
 title: Przejrzyj opcje magazynu
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Przejrzyj opcje magazynu dla obciążeń platformy Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 37b99c367df1e77bcd32223d5d8a8ac8e1ee20d1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d6e15d465982c02e34ce1bbc89bd2289297d402a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561723"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799033"
 ---
 # <a name="review-your-storage-options"></a>Przejrzyj opcje magazynu
 
@@ -143,10 +142,10 @@ Dyski zarządzane są dostępne we wszystkich regionach świadczenia usługi Azu
 
 Gorąca i chłodna warstwa magazynowania obiektów blob, usługa Data Lake Storage Gen2 oraz magazyn usługi Azure Files są dostępne we wszystkich regionach świadczenia usługi Azure. Dostępność archiwalnej warstwy magazynowania obiektów blob, udziałów plików Premium oraz magazynu Premium blokowych obiektów blob jest ograniczona do niektórych regionów. Zaleca się sprawdzenie najnowszego stanu dostępności regionalnej na stronie z regionami.
 
-Aby dowiedzieć się więcej o globalnej infrastrukturze platformy Azure, zobacz temat [Regiony systemu Azure](https://azure.microsoft.com/global-infrastructure/regions). Aby uzyskać szczegółowe informacje o tym, co jest dostępne w poszczególnych regionach świadczenia usługi Azure, można także przejść na stronę [Dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services/?products=storage).
+Aby dowiedzieć się więcej o globalnej infrastrukturze platformy Azure, zobacz stronę [Regiony systemu Azure](https://azure.microsoft.com/global-infrastructure/regions). Aby uzyskać szczegółowe informacje o tym, co jest dostępne w poszczególnych regionach świadczenia usługi Azure, można także przejść na stronę [Dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services/?products=storage).
 
-## <a name="data-residency-and-compliance-requirements"></a>Wymagania dotyczące miejsca przechowywania danych oraz ich zgodności
+## <a name="data-residency-and-compliance-requirements"></a>Wymagania dotyczące miejsca przechowywania danych oraz zgodności
 
 Twoich obciążeń często dotyczą wymagania prawne i umowne związane z magazynem danych. Te wymagania mogą się różnić w zależności od lokalizacji organizacji, jurysdykcji, której podlegają zasoby fizyczne obsługujące magazyny danych, oraz od sektora działalności. Ze względu na obowiązki związane z danymi, należy wziąć pod uwagę następujące elementy: klasyfikacja danych, lokalizacja danych oraz odpowiednie obowiązki w zakresie ochrony danych w ramach modelu dzielenia się odpowiedzialnością. Aby łatwiej zrozumieć te wymagania, zobacz oficjalny dokument [Osiąganie rezydencji i bezpieczeństwa zgodnych danych na platformie Azure](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure).
 
-Niektóre działania związane ze zgodnością mogą obejmować kontrolowanie tego, gdzie będą fizycznie umieszczone zasoby bazy danych. Regiony świadczenia usługi Azure są zorganizowane w grupy nazywane regionami geograficznymi. [Lokalizacja geograficzna platformy Azure](https://azure.microsoft.com/global-infrastructure/geographies) zapewnia, że wymagania z zakresu odporności, zgodności, suwerenności i rezydencji danych są honorowane w granicach geograficznych i politycznych. Jeśli obciążenia podlegają wymogom dotyczącym suwerenności danych lub innym wymaganiom w zakresie zgodności, należy wdrożyć zasoby magazynu w regionach, które znajdują się w zgodnej lokalizacji geograficznej platformy Azure.
+Niektóre działania związane ze zgodnością mogą obejmować kontrolowanie tego, gdzie będą fizycznie umieszczone zasoby bazy danych. Regiony świadczenia usługi Azure są zorganizowane w grupy nazywane lokalizacjami geograficznymi. [Lokalizacja geograficzna platformy Azure](https://azure.microsoft.com/global-infrastructure/geographies) zapewnia, że wymagania z zakresu odporności, zgodności, suwerenności i rezydencji danych są honorowane w granicach geograficznych i politycznych. Jeśli obciążenia podlegają wymogom dotyczącym suwerenności danych lub innym wymaganiom w zakresie zgodności, należy wdrożyć zasoby magazynu w regionach, które znajdują się w zgodnej lokalizacji geograficznej platformy Azure.

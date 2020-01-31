@@ -1,19 +1,18 @@
 ---
 title: Wykonywanie migracji
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Wykonywanie migracji
+description: Zapoznaj się z omówieniem artykułów objaśniających różne działania, które mogą być konieczne w celu migrowania obciążenia na platformę Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 21520edecc7ba874713561672cd0bd38aa96c0a2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 62100df7a32ca904454e0df2d7be8c1a860fd611
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818237"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802280"
 ---
 # <a name="execute-a-migration"></a>Wykonywanie migracji
 

@@ -1,6 +1,5 @@
 ---
 title: Przygotowywanie do wdrożenia chmury
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Przygotowywanie środowiska do wdrażania chmury
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: d5fada848418093b4d1ac7ae3ccc08b492544567
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: dfac24cfc71d1cccdfdf3bc64eb6390aece79466
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378331"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798931"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -97,7 +96,7 @@ Za pomocą zagadnień dotyczących strefy docelowej zidentyfikuj i wprowadź nie
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Najlepsze praktyki</h3>
+                            <h3>Najlepsze rozwiązania</h3>
 Zweryfikuj zmiany w strefie docelowej, korzystając z sekcji najlepszych rozwiązań, aby zapewnić odpowiednią konfigurację bieżącej i przyszłych stref docelowych.
                         </div>
                     </div>

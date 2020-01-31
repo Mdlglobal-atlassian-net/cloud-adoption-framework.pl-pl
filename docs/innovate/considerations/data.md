@@ -1,6 +1,5 @@
 ---
 title: 'Innowacje w chmurze: dane Zdemokratyzuj proces'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wprowadzenie do innowacji w chmurze — dane Zdemokratyzuj proces
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 242985f57cc377b78328e2277ba76f15abaec8b8
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 158c3e25bac2124312a8ceaf3ac5500a58246f48
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753039"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808502"
 ---
 # <a name="democratize-data"></a>Demokratyzowanie danych
 
@@ -44,7 +43,7 @@ Podstawowe narzędzia do udostępniania danych bezpośrednio z użytkownikami da
 
 Udostępnianie danych może szybko utworzyć MVP, którego możesz używać w konwersacjach klientów. Jednak aby przekształcić udostępnione dane w użyteczne i funkcjonalne informacje, jest to zwykle wymagane. Po sprawdzeniu hipotezy przy użyciu udostępniania danych kolejnym etapem programowania jest zwykle zarządzanie danymi.
 
-Zarządzanie danymi jest szerokim tematem, który może wymagać jego własnej dedykowanej struktury. Ten stopień szczegółowości jest poza zakresem [struktury wdrożenia chmury](../../index.md). Istnieje jednak kilka aspektów nadzoru nad danymi, które należy wziąć pod uwagę zaraz po sprawdzeniu poprawności hipotezy klienta. Na przykład:
+Zarządzanie danymi jest szerokim tematem, który może wymagać jego własnej dedykowanej struktury. Ten stopień szczegółowości jest poza zakresem [struktury wdrożenia chmury](../../index.md). Istnieje jednak kilka aspektów nadzoru nad danymi, które należy wziąć pod uwagę zaraz po sprawdzeniu poprawności hipotezy klienta. Przykład:
 
 - **Czy dane są udostępnione poufne?** [Dane powinny zostać sklasyfikowane](../../govern/policy-compliance/data-classification.md) przed udostępnieniem publicznie, aby chronić interesy klientów i firmę.
 - **Czy dane są poufne, czy zostały zabezpieczone?** Ochrona danych poufnych powinna być wymagana w przypadku dowolnych danych z demokratyzacją. Przykładowe obciążenie dotyczące [zabezpieczania rozwiązań danych](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) zawiera kilka odwołań do zabezpieczania danych.

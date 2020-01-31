@@ -1,19 +1,18 @@
 ---
 title: Przygotowanie zmigrowanej aplikacji do podwyższenia poziomu środowiska produkcyjnego
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Proces migracji w chmurze, który koncentruje się na zadaniach migrowania obciążeń do chmury.
+description: Proces migracji do chmury, który koncentruje się na zadaniach migrowania obciążeń do chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b7f526cbf2b7efba981058d5614b4378adc8c6f6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f3aad7a2b7c592478f9d48a50dc96d5fee607dc8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022627"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801617"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Przygotowanie zmigrowanej aplikacji do podwyższenia poziomu środowiska produkcyjnego
 

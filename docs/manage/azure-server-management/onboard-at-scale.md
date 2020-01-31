@@ -1,6 +1,5 @@
 ---
 title: Konfigurowanie usług zarządzania serwerem Azure dla subskrypcji
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Konfigurowanie usług zarządzania serwerem Azure dla subskrypcji
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c4a0964ed8ec28ead844e1fd15275422adf8f081
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656647"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808094"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>Konfigurowanie usług zarządzania serwerem Azure na dużą skalę
 
@@ -48,7 +47,7 @@ Azure Policy ma wbudowaną [inicjatywę Policy](https://docs.microsoft.com/azure
 
 Aby przypisać zasady, które opisano w poprzedniej sekcji:
 
-1. W Azure Portal przejdź do pozycji **Azure Policy**  > **przypisania**  > **Przypisz inicjatywę**.
+1. W Azure Portal przejdź do pozycji **Azure Policy** > **przypisania** > **Przypisz inicjatywę**.
 
     ![Zrzut ekranu przedstawiający interfejs zasad portalu](./media/onboarding-at-scale1.png)
 
@@ -160,7 +159,7 @@ Aby zaimplementować to rozwiązanie:
 
 Należy określić **nazwę obszaru** roboczego, który został utworzony w poprzedniej sekcji, w której jest włączone rozwiązanie.
 
-Po zakończeniu tworzenia wystąpienie zasobu obszaru roboczego wyświetla **AgentHealthAssessment** w przypadku wybrania opcji **Wyświetl**  > **rozwiązania**.
+Po zakończeniu tworzenia wystąpienie zasobu obszaru roboczego wyświetla **AgentHealthAssessment** w przypadku wybrania opcji **Wyświetl** > **rozwiązania**.
 
 ### <a name="antimalware-assessment"></a>Ocena oprogramowania chroniącego przed złośliwym kodem
 
@@ -175,7 +174,7 @@ Aby zaimplementować to rozwiązanie:
 
 Należy określić **nazwę obszaru** roboczego, który został utworzony w poprzedniej sekcji, w której jest włączone rozwiązanie.
 
-Po zakończeniu tworzenia wystąpienie zasobu obszaru roboczego wyświetli **oprogramowanie chroniące przed złośliwym kodem** w przypadku wybrania opcji **Wyświetl**  > **rozwiązania**.
+Po zakończeniu tworzenia wystąpienie zasobu obszaru roboczego wyświetli **oprogramowanie chroniące przed złośliwym kodem** w przypadku wybrania opcji **Wyświetl** > **rozwiązania**.
 
 ### <a name="azure-monitor-for-vms"></a>Usługa Azure Monitor dla maszyn wirtualnych
 

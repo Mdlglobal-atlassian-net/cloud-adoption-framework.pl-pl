@@ -1,6 +1,5 @@
 ---
 title: Procesy zgodności zasad linii bazowej tożsamości
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Procesy zgodności zasad linii bazowej tożsamości
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 937bf6c4dae8d134b4f140e0a0023d82e5f9e3f9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566214"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807159"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Procesy zgodności zasad linii bazowej tożsamości
 
@@ -32,7 +31,7 @@ Narzędzia do zarządzania tożsamościami oferują możliwości i funkcje, któ
 
 **Planowanie roczne:** W skali rocznej należy przeprowadzić przegląd strategii zarządzania tożsamościami na wysokim poziomie. Przejrzyj planowane zmiany w środowisku usług tożsamości i Zaktualizowano strategie wdrażania chmury, aby zidentyfikować potencjalne zwiększenie ryzyka lub konieczność modyfikacji bieżących wzorców infrastruktury tożsamości. Użyj tego czasu, aby zapoznać się z najnowszymi najlepszymi rozwiązaniami w zakresie zarządzania tożsamościami i zintegrować je z zasadami i przeglądać procesy.
 
-**Planowanie kwartalne:** Co kwartał przeprowadza się ogólny przegląd danych inspekcji tożsamości i kontroli dostępu, a także spotyka się z zespołami wdrażania chmury w celu zidentyfikowania potencjalnych nowych zagrożeń lub wymagań operacyjnych, które wymagają aktualizacji zasad tożsamości lub zmian w kontroli dostępu strategii.
+**Planowanie kwartalne:** Co kwartał przeprowadza się ogólny przegląd danych inspekcji tożsamości i kontroli dostępu, a także spotyka się z zespołami wdrażania chmury w celu zidentyfikowania potencjalnych nowych zagrożeń lub wymagań operacyjnych, które wymagają aktualizacji zasad dotyczących tożsamości lub zmian w strategii kontroli dostępu.
 
 Ten proces planowania jest również dobrym terminem do oszacowania bieżącego członkostwa zespołu nadzoru w chmurze w celu uzyskania luk w wiedzy dotyczącej nowych lub zmienionych zasad i zagrożeń związanych z tożsamościami. Zaproś odpowiednich pracowników działu IT o uczestnictwo w recenzjach i planowaniu jako tymczasowych doradców technicznych lub stałych członków zespołu.
 

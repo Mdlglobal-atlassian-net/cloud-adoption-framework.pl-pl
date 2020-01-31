@@ -1,6 +1,5 @@
 ---
-title: 'Migracja komputera mainframe: Przełączenie z komputerów mainframe na platformę Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'Migracja mainframe: przełączenie z komputerów mainframe na platformę Azure'
 description: Migruj aplikacje ze środowisk mainframe na platformę Azure dla systemów, które są aktualnie uruchomione na komputerach mainframe.
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8416abd3429a0dafd50eda91323eb74bfb1bf9cd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221527"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808774"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Przełączenie z komputerów mainframe na platformę Azure
 
@@ -62,7 +61,7 @@ Komputery mainframe zwykle utrzymują Lokacje odzyskiwania po awarii lub wykorzy
 
 Zautomatyzowana nadmiarowość geograficzna jest również dostępna za pomocą funkcji sprzęgu komputera mainframe, chociaż z dużym obciążeniem i jest zazwyczaj zarezerwowana dla systemów o znaczeniu krytycznym. W przeciwieństwie do systemu Azure dostępne są łatwe w implementacji i ekonomiczne opcje [tworzenia kopii zapasowych](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [odzyskiwania](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)i [nadmiarowości](https://docs.microsoft.com/azure/storage/common/storage-redundancy) na poziomach lokalnym lub regionalnym lub za pośrednictwem nadmiarowości geograficznej.
 
-## <a name="storage"></a>Magazyn
+## <a name="storage"></a>Usługa Storage
 
 Część opisująca, jak działa mainframe, polega na dekodowania różnych nakładających się warunków. Na przykład Magazyn centralny, pamięć rzeczywista, rzeczywiste magazyn i główny magazyn ogólnie odnoszą się do magazynu dołączonego bezpośrednio do procesora mainframe.
 

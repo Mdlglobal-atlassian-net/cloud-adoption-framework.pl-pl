@@ -1,6 +1,5 @@
 ---
 title: Możliwości platformy w chmurze
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Opisuje sposób tworzenia możliwości platformy w chmurze
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: faeea7a0e42c45894d82b31becca06562fef94b9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be5e914bd154ec2db0578714d08383c3c8770a5a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030880"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800971"
 ---
 # <a name="cloud-platform-capabilities"></a>Możliwości platformy w chmurze
 
@@ -33,7 +32,7 @@ Umiejętności wymagane do zapewnienia pełnej funkcjonalności platformy mogą 
 - Networking
 - Tożsamość
 - Wirtualizacja
-- Ciągłość działania i odzyskiwanie po awarii
+- Ciągłość biznesowa i odzyskiwanie po awarii
 - Właściciele aplikacji w ramach tej
 
 ## <a name="key-responsibilities"></a>Kluczowe obowiązki
@@ -50,7 +49,7 @@ Następujące zadania są zwykle wykonywane regularnie:
   - [motywacje do wdrożenia w chmurze](../strategy/motivations.md)
   - [ryzyka biznesowe](../govern/policy-compliance/risk-tolerance.md)
   - [Racjonalizacja podpisu cyfrowego](../digital-estate/index.md)
-- Monitoruj plany wdrażania i postęp w odniesieniu do [zaległości migracji](../migrate/migration-considerations/assess/release-iteration-backlog.md)z priorytetami.
+- Monitoruj plany wdrażania i postęp w odniesieniu do [zaległości migracji z priorytetami](../migrate/migration-considerations/assess/release-iteration-backlog.md).
 - Zidentyfikuj i ustal priorytety zmian platformy, które są wymagane do obsługi zaległości migracji.
 
 ### <a name="technical-tasks"></a>Zadania techniczne

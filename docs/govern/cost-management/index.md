@@ -1,6 +1,5 @@
 ---
 title: Omówienie dziedziny Zarządzanie kosztami
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Objaśnienia dotyczące dziedziny Zarządzanie kosztami w odniesieniu do utrzymania ładu w chmurze
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: abba9da343342c99fcfa657aa0abd1c55daaef55
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566426"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806496"
 ---
 # <a name="cost-management-discipline-overview"></a>Omówienie dziedziny Zarządzanie kosztami
 

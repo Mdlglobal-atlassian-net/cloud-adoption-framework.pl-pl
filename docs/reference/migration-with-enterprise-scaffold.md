@@ -1,6 +1,5 @@
 ---
 title: Szkielet platformy Azure dla przedsiębiorstw
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Opisuje szkielet przedsiębiorstwa, który może pomóc w zapewnieniu bezpiecznego i możliwego do zarządzania środowiskiem.
 author: rdendtler
 ms.author: rodend
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 442282951d0b76b1d3041ee43d0e7e464d07fccf
-ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
+ms.openlocfilehash: 3cbce52809c191ec6bacf30454bd2e9a48d57c1b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76521137"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798795"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: zalecenia dotyczące zarządzania subskrypcjami
 
@@ -54,7 +53,7 @@ Na poniższej ilustracji przedstawiono składniki szkieletu. Podstawą jest plan
 
 Podstawą szkieletu jest hierarchia i relacja rejestracji w przedsiębiorstwie platformy Azure w ramach subskrypcji i grup zasobów. Rejestracja w przedsiębiorstwie definiuje kształt i użycie usług platformy Azure w ramach Twojej firmy z punktu widzenia umowy. W ramach Umowa Enterprise można dodatkowo podzielić środowisko na działy, konta, subskrypcje i grupy zasobów, aby pasowały do struktury organizacji.
 
-![Hierarchia](../_images/reference/agreement.png)
+![Hierarchiczn](../_images/reference/agreement.png)
 
 Subskrypcja platformy Azure to podstawowa jednostka, w której znajdują się wszystkie zasoby. Definiuje również kilka limitów w ramach platformy Azure, takich jak liczba rdzeni, sieci wirtualne i inne zasoby. Grupy zasobów służą do dokładniejszego uściślenia modelu subskrypcji i zapewnienia bardziej naturalnej grupy zasobów.
 

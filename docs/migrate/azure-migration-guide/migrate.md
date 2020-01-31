@@ -1,6 +1,5 @@
 ---
 title: Migrowanie elementów zawartości
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrowanie elementów zawartości
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 81c55ee4ac3605c04d583df21182c4d5c44f8380
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681762"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807023"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrowanie elementów zawartości (infrastruktury, aplikacji i danych)
 
@@ -222,7 +221,7 @@ Cloudamize to usługa niezależnego dostawcy oprogramowania, która obejmuje wsz
 
 Zerto zapewnia replikację wirtualną obsługującą zarówno środowisko Microsoft Hyper-V, jak i VMware vSphere.
 
-[Dowiedz się więcej](https://www.zerto.com/solutions/use-cases/data-center-migration-software)
+[Dowiedz się więcej](https://www.zerto.com/modernize)
 
 ## <a name="carbonite"></a>Carbonite
 
@@ -271,9 +270,9 @@ Usługa Azure DevOps zapewnia wszystkie wymagane funkcje i integrację z platfor
 
 Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych obowiązków związanych z umiejętnościami, które dotyczą wdrażania chmury, nie przychodzi łatwo. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty i poziomy i osiągaj więcej.
 
-Poniżej znajduje się przykład dostosowanej ścieżki szkoleniowej w środowisku Microsoft Learn, która uzupełnia wytyczne konfigurowania pod kątem metodyki DevOps w strukturze Cloud Adoption Framework. 
+Poniżej znajduje się przykład dostosowanej ścieżki szkoleniowej w środowisku Microsoft Learn, która uzupełnia wytyczne konfigurowania pod kątem metodyki DevOps w strukturze Cloud Adoption Framework.
 
-[Tworzenie aplikacji za pomocą usługi Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Współpracuj z innymi osobami w celu tworzenia aplikacji przy użyciu usług Azure Pipelines i GitHub. Uruchamiaj testy automatyczne w potoku, aby weryfikować jakość kodu. Skanuj kod źródłowy i składniki innych firm pod kątem potencjalnych luk w zabezpieczeniach. Definiuj wiele potoków, które współpracują ze sobą w celu skompilowania aplikacji. Kompiluj aplikacje przy użyciu zarówno agentów hostowanych przez firmę Microsoft, jak i własnych agentów kompilacji. 
+[Tworzenie aplikacji za pomocą usługi Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Współpracuj z innymi osobami w celu tworzenia aplikacji przy użyciu usług Azure Pipelines i GitHub. Uruchamiaj testy automatyczne w potoku, aby weryfikować jakość kodu. Skanuj kod źródłowy i składniki innych firm pod kątem potencjalnych luk w zabezpieczeniach. Definiuj wiele potoków, które współpracują ze sobą w celu skompilowania aplikacji. Kompiluj aplikacje przy użyciu zarówno agentów hostowanych przez firmę Microsoft, jak i własnych agentów kompilacji.
 
 # <a name="cost-managementtabmanagecost"></a>[Zarządzanie kosztami](#tab/ManageCost)
 

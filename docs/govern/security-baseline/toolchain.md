@@ -1,6 +1,5 @@
 ---
 title: Narzędzia bazowe zabezpieczeń na platformie Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wyjaśnienie narzędzi, które mogą ułatwić ulepszoną linię bazową zabezpieczeń na platformie Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7f4062c08ef1c9fec72e515453e8acc8cedfc513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 122e0774912fdc65cd9c8daff0bd48b679634868
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565916"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808808"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Narzędzia bazowe zabezpieczeń na platformie Azure
 
-[Linia bazowa zabezpieczeń](./index.md) jest jednym z [pięciu dyscyplin zarządzania chmurą](../governance-disciplines.md). Ta dyscyplina koncentruje się na sposobach ustanawiania zasad chroniących sieć, zasoby i najważniejsze dane, które będą znajdować się w rozwiązaniu dostawcy chmury. W ramach pięciu dyscyplin nadzoru chmurowego dyscyplina odniesienia zabezpieczeń obejmuje klasyfikację cyfrowej i danych. Obejmuje to również dokumentację zagrożeń, tolerancję biznesową i strategie zaradcze związane z bezpieczeństwem danych, zasobów i sieci. Z perspektywy technicznej ta dyscyplina obejmuje również zaangażowanie w decyzje dotyczące [szyfrowania](../../decision-guides/encryption/index.md), [wymagań sieci](../../decision-guides/software-defined-network/index.md), [hybrydowych strategii tożsamości](../../decision-guides/identity/index.md)i narzędzi do [automatyzowania wymuszania](../../decision-guides/policy-enforcement/index.md) zasad zabezpieczeń między [grupami zasobów](../../decision-guides/resource-consistency/index.md).
+[Linia bazowa zabezpieczeń](./index.md) jest jednym z [pięciu dyscyplin zarządzania chmurą](../governance-disciplines.md). Ta dyscyplina koncentruje się na sposobach ustanawiania zasad chroniących sieć, zasoby i najważniejsze dane, które będą znajdować się w rozwiązaniu dostawcy chmury. W ramach pięciu dyscyplin nadzoru chmurowego dyscyplina odniesienia zabezpieczeń obejmuje klasyfikację cyfrowej i danych. Obejmuje to również dokumentację zagrożeń, tolerancję biznesową i strategie zaradcze związane z bezpieczeństwem danych, zasobów i sieci. Z perspektywy technicznej ta dyscyplina obejmuje również zaangażowanie w decyzje dotyczące [szyfrowania](../../decision-guides/encryption/index.md), [wymagań sieci](../../decision-guides/software-defined-network/index.md), [hybrydowych strategii tożsamości](../../decision-guides/identity/index.md)i narzędzi do [automatyzowania wymuszania](../../decision-guides/policy-enforcement/index.md) zasad zabezpieczeń w [grupach zasobów](../../decision-guides/resource-consistency/index.md).
 
 Poniższa lista narzędzi systemu Azure może pomóc w podniesienia zasad i procesów obsługujących linię bazową zabezpieczeń.
 

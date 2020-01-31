@@ -1,6 +1,5 @@
 ---
 title: Wskazówki dotyczące bezpieczeństwa systemu Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Jakie wskazówki dotyczące zabezpieczeń zapewnia firma Microsoft?
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 18fce98055f72e43ea7ecc2565ab859845cea356
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058827"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804915"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="microsoft-security-guidance"></a>Wskazówki dotyczące zabezpieczeń firmy Microsoft
 
-## <a name="tools"></a>Narzędzia
+## <a name="tools"></a>narzędzia
 
 Firma Microsoft wprowadziła [platformę zaufania usługi](https://servicetrust.microsoft.com) i Menedżera zgodności, aby pomóc w następujących kwestiach:
 
@@ -47,7 +46,7 @@ Te narzędzia zostały zaprojektowane w celu ułatwienia organizacjom zaspokajan
   - **Żądania podmiotu danych:** Rodo przyznaje osobom (lub podmiotom danych) pewne prawa związane z przetwarzaniem danych osobowych. Obejmuje to prawo do poprawiania nieprawidłowych danych, wymazywania danych lub ograniczania ich przetwarzania, a także odbierania ich danych i realizacji żądania przesyłania danych do innego kontrolera.
   - **Naruszenie danych:** Rodo zezwala na wymagania dotyczące powiadomień dla kontrolerów danych i procesorów w przypadku naruszenia danych osobowych. STP zawiera informacje o tym, w jaki sposób firma Microsoft próbuje uniknąć naruszeń w pierwszym miejscu, w jaki sposób firma Microsoft wykrywa naruszenie i jak firma Microsoft reaguje na wypadek naruszenia i powiadomi Cię jako kontroler danych.
   - **Ocena wpływu ochrony danych:** Firma Microsoft pomaga kontrolerom w pełni Rodo oceny wpływu na ochronę danych. Rodo zawiera wyczerpującą listę przypadków, w których należy przeprowadzić DPIAs, na przykład automatyczne przetwarzanie na potrzeby profilowania i podobnych działań; przetwarzanie na dużą skalę specjalnych kategorii danych osobowych i systematyczne monitorowanie dostępnego publicznie obszaru na dużą skalę.
-  - **Inne zasoby:** Oprócz wskazówek dotyczących narzędzi omówionych w powyższych sekcjach, STP również udostępnia inne zasoby, w tym zgodność regionalną, dodatkowe zasoby dla Centrum zabezpieczeń i zgodności, a także często zadawane pytania dotyczące platformy zaufania usługi, Menedżer zgodności i prywatność/Rodo.
+  - **Inne zasoby:** Oprócz wskazówek dotyczących narzędzi omówionych w powyższych sekcjach, STP również udostępnia inne zasoby, w tym zgodność regionalną, dodatkowe zasoby dla Centrum zabezpieczeń i zgodności, a także często zadawane pytania dotyczące platformy zaufania usługi, Menedżera zgodności i ochrony prywatności/Rodo.
 - **Zgodność regionalna:** W przypadku usługi STP dostępne są liczne dokumenty dotyczące zgodności i wskazówki dla Usługi online firmy Microsoft spełniające wymagania dotyczące zgodności dla różnych regionów, w tym Republiki Czeskiej, polskiej i Rumunii.
 
 ## <a name="unique-intelligent-insights"></a>Unikatowy inteligentny wgląd w szczegółowe dane

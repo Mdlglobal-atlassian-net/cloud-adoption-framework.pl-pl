@@ -1,6 +1,5 @@
 ---
 title: Narzędzia i usługi zarządzania serwerem platformy Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Narzędzia i usługi zarządzania serwerem platformy Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 51564add9bfe50ab494b39344eb24d3079fce000
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565279"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807941"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Narzędzia i usługi zarządzania serwerem platformy Azure
 
 Zgodnie z [omówieniem](./index.md) tych wskazówek, pakiet usług zarządzania serwerem platformy Azure obejmuje następujące zagadnienia:
 
-- Migrate (Migracja)
+- Migrowanie
 - Bezpieczeństwo
 - Ochrona
 - Monitorowanie
@@ -28,7 +27,7 @@ Zgodnie z [omówieniem](./index.md) tych wskazówek, pakiet usług zarządzania 
 
 W poniższych sekcjach krótko opisano te obszary zarządzania i przedstawiono linki do szczegółowej zawartości dotyczącej głównych usług platformy Azure, które je obsługują.
 
-## <a name="migrate"></a>Migrate (Migracja)
+## <a name="migrate"></a>Migrowanie
 
 Usługi migracji mogą ułatwić Migrowanie obciążeń do platformy Azure. Aby zapewnić najlepsze wskazówki, usługa Azure Migrate rozpoczyna się od mierzenia wydajności serwera lokalnego i oceny przydatności do migracji. Po Azure Migrate zakończeniu oceny można przeprowadzić migrację maszyn lokalnych do platformy Azure za pomocą [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) i [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) .
 
@@ -85,7 +84,7 @@ Przyjęcie i przejście do chmury powoduje utworzenie nowych wyzwań związanych
 
 Projekt dotyczący zarządzania organizacjami standardowymi często różni się od projektowania ładu dla złożonych przedsiębiorstw. Aby dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących ładu dla standardowej organizacji, zobacz [Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem](../../govern/guides/standard/index.md). Aby dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących ładu dla złożonego przedsiębiorstwa, zobacz Przewodnik dotyczący [ładu dla złożonych przedsiębiorstw](../../govern/guides/complex/index.md).
 
-## <a name="billing-information"></a>Informacje o rozliczeniach
+## <a name="billing-information"></a>Informacja o rozliczeniach
 
 Aby dowiedzieć się więcej o cenach dla usług zarządzania platformy Azure, przejdź do następujących stron:
 
@@ -98,7 +97,7 @@ Aby dowiedzieć się więcej o cenach dla usług zarządzania platformy Azure, p
 - [Azure Security Center](https://azure.microsoft.com/pricing/details/security-center)
 
 - [Azure Automation](https://azure.microsoft.com/pricing/details/automation), w tym:
-  - Konfiguracja żądanego stanu
+  - Desired State Configuration
   - Usługa Update Management platformy Azure
   - Usługa Azure Change Tracking i usługi spisu
 

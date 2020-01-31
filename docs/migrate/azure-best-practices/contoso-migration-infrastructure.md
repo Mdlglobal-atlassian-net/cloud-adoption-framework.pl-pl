@@ -1,6 +1,5 @@
 ---
 title: Wdrażanie infrastruktury migracji
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, jak firma Contoso konfiguruje infrastrukturę platformy Azure na potrzeby migracji na platformę Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 4d8a7b53722de4b356753626d0cc695fa1a77596
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160367"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807516"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Wdrażanie infrastruktury migracji
 
@@ -55,7 +54,7 @@ Oto diagram przedstawiający bieżącą infrastrukturę lokalną firmy Contoso.
 - Firma ma trzy dodatkowe oddziały lokalne na terenie Stanów Zjednoczonych.
 - Główne centrum danych jest połączone z Internetem łączem światłowodowym Metro Ethernet (500 MB/s).
 - Każdy oddział jest połączony lokalnie z Internetem przy użyciu połączeń klasy biznesowej z tunelami IPSec VPN prowadzącymi z powrotem do głównego centrum danych. Pozwala to na trwałe połączenie całej sieci i optymalizację łączności z Internetem.
-- Główne centrum danych jest w pełni zwirtualizowane przy użyciu oprogramowania VMware. Firma Contoso ma dwa hosty wirtualizacji ESXi 6.5, zarządzane za pomocą programu vCenter Server 6.5.
+- Główne centrum danych jest w pełni zwirtualizowane przy użyciu programu VMware. Firma Contoso ma dwa hosty wirtualizacji ESXi 6.5, zarządzane za pomocą programu vCenter Server 6.5.
 - Firma Contoso korzysta z usługi Active Directory na potrzeby zarządzania tożsamościami oraz serwerów DNS w sieci wewnętrznej.
 - Kontrolery domeny w centrum danych działają na maszynach wirtualnych VMware. Kontrolery domeny w oddziałach lokalnych działają na serwerach fizycznych.
 
@@ -291,7 +290,7 @@ Firma Contoso będzie wdrażać strefy dostępności w celu spełnienia wymagań
 
 ### <a name="set-up-backup"></a>Konfigurowanie kopii zapasowej
 
-**Azure Backup:**
+**Usługa Azure Backup:**
 
 Usługa Azure Backup umożliwia tworzenie kopii zapasowych i przywracanie dysków maszyn wirtualnych platformy Azure.
 
@@ -716,7 +715,7 @@ ServiceManager | Alias adresu e-mail menedżera usługi ITIL dla zasobu.
 COBPriority | Priorytet ustawiony przez firmę dla ciągłości działania i odzyskiwania po awarii. Wartości 1–5.
 ENV | Możliwe wartości to DEV, STG, PROD. Reprezentują one, odpowiednio, środowisko deweloperskie, przejściowe i produkcyjne.
 
-Na przykład:
+Przykład:
 
  ![Tagi platformy Azure](./media/contoso-migration-infrastructure/azure-tag.png)
 

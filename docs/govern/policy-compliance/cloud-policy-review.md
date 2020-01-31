@@ -1,6 +1,5 @@
 ---
 title: Przeprowadź przegląd zasad w chmurze
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, jak przeprowadzić przegląd zasad w chmurze.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7ce392797cf21d9f69ae791eb2db6a6d38c38dfc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 48e4e759435178e346e08233afeca95ab065711e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223852"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805068"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -28,7 +27,7 @@ Większość firm zarządza nimi przez wykonywanie procesów, które są wyrówn
 
 W przypadku firmowych zasad IT, zależności od przeszłych decyzji technicznych mają tendencje do seep do zarządzania zasadami. Na przykład wspólne dla wszystkich procesów odzyskiwania po awarii obejmuje zasady, które mają możliwość wykonywania kopii zapasowych na taśmach poza siedzibą firmy. To dołączenie zakłada zależność od jednego typu technologii (kopie zapasowe na taśmach), która może nie być już najbardziej odpowiednim rozwiązaniem.
 
-Przekształcenia w chmurze tworzą naturalny punkt przegięcia, aby ponownie uwzględnić starsze decyzje dotyczące zasad. Możliwości techniczne i procesy domyślne zmieniają się w sposób istotny w chmurze, tak jak w przypadku dziedziczenia zagrożeń. Korzystając z poprzedniego przykładu, zasady tworzenia kopii zapasowej na taśmie wynikające z ryzyka single point of failure przez utrzymywanie danych w jednej lokalizacji, a firma musi zminimalizować profil ryzyka przez ograniczenie tego ryzyka. W przypadku wdrożenia w chmurze istnieje kilka opcji, które zapewniają takie samo Łagodzenie ryzyka, o znacznie niższych celach dotyczących czasu odzyskiwania (RTO). Na przykład:
+Przekształcenia w chmurze tworzą naturalny punkt przegięcia, aby ponownie uwzględnić starsze decyzje dotyczące zasad. Możliwości techniczne i procesy domyślne zmieniają się w sposób istotny w chmurze, tak jak w przypadku dziedziczenia zagrożeń. Korzystając z poprzedniego przykładu, zasady tworzenia kopii zapasowej na taśmie wynikające z ryzyka single point of failure przez utrzymywanie danych w jednej lokalizacji, a firma musi zminimalizować profil ryzyka przez ograniczenie tego ryzyka. W przypadku wdrożenia w chmurze istnieje kilka opcji, które zapewniają takie samo Łagodzenie ryzyka, o znacznie niższych celach dotyczących czasu odzyskiwania (RTO). Przykład:
 
 - Rozwiązanie natywne w chmurze może umożliwić replikację geograficzną Azure SQL Database.
 - Rozwiązanie hybrydowe może używać Azure Site Recovery do replikowania obciążenia IaaS na platformę Azure.
@@ -37,12 +36,12 @@ Podczas wykonywania transformacji w chmurze zasady często określają wiele nar
 
 ## <a name="the-cloud-policy-review-process"></a>Proces przeglądu zasad w chmurze
 
-Przeglądy zasad w chmurze przedstawiają istniejące zagadnienia dotyczące zarządzania i ochrony IT przy użyciu [pięciu dyscyplin zarządzania chmurą](../index.md): [Cost Management](../cost-management/index.md), [linia bazowa zabezpieczeń](../security-baseline/index.md), [linia bazowa](../identity-baseline/index.md), [spójność zasobów](../resource-consistency/index.md)i [przyspieszenie wdrożenia](../deployment-acceleration/index.md).
+Przeglądy zasad w chmurze przedstawiają istniejące zagadnienia dotyczące zarządzania i zabezpieczeń IT przy użyciu [pięciu dyscyplin](../index.md)nadzoru w chmurze: [Cost Management](../cost-management/index.md), [linia bazowa zabezpieczeń](../security-baseline/index.md), [linia bazowa tożsamości](../identity-baseline/index.md), [spójność zasobów](../resource-consistency/index.md)i [przyspieszenie wdrożenia](../deployment-acceleration/index.md).
 
 W przypadku każdej z tych dyscyplin proces przeglądu następuje w następujących krokach:
 
 1. Zapoznaj się z istniejącymi zasadami lokalnymi związanymi z konkretną dyscypliną, szukając dwóch kluczowych punktów danych: starszych zależności i zidentyfikowanych zagrożeń firmy.
-2. Oceń każde ryzyko biznesowe, pytając o proste pytanie: "Czy ryzyko biznesowe nadal istnieje w modelu chmury?"
+2. Oceń każde ryzyko biznesowe, pytając o pytanie proste: "czy ryzyko biznesowe nadal istnieje w modelu chmury?".
 3. Jeśli nadal istnieje ryzyko, napisz ponownie zasady, wprowadzając odpowiednie środki zaradcze, a nie rozwiązanie techniczne.
 4. Zapoznaj się z zaktualizowanymi zasadami przy użyciu zespołów wdrażania chmury, aby zrozumieć potencjalne rozwiązania techniczne dotyczące wymaganego ograniczenia.
 

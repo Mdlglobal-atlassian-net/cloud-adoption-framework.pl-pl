@@ -1,6 +1,5 @@
 ---
 title: 'Migracja komputera mainframe: migracja aplikacji mainframe'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migruj aplikacje ze środowisk mainframe na platformę Azure, czyli sprawdzoną, wysoce dostępną i skalowalną infrastrukturę dla systemów, które obecnie działają na komputerach mainframe.
 author: njray
 ms.author: v-nanra
@@ -8,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9eb8c85c2355ae06e63d58e3078f1101bf7e3412
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: a662edd4ae7c6a854014b37cac2ccb0fab4c474e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239449"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808825"
 ---
-# <a name="mainframe-application-migration"></a>Migracja aplikacji mainframe
+# <a name="mainframe-application-migration"></a>Migracja aplikacji komputerów mainframe
 
 W przypadku migrowania aplikacji ze środowisk mainframe na platformę Azure większość zespołów korzysta z podejścia typu Pragmatic: należy ponownie użyć wszędzie tam, gdzie to możliwe, a następnie rozpocząć wdrożenie etapowe, w przypadku których aplikacje są podpisywane lub zastępowane.
 
@@ -65,7 +64,7 @@ Monitory TP są dostępne od różnych dostawców i uruchamiane na maszynach wir
 
 Na platformie Azure środowiska emulacji są używane do uruchamiania Menedżera TP i zadań wsadowych korzystających z JCL. W warstwie danych DB2 jest zastępowany przez [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), chociaż Microsoft SQL Server, DB2 LUW lub Oracle Database może być również używany. Emulator obsługuje funkcję IMS, VSAM i SEQ. Narzędzia do zarządzania systemem komputera mainframe są zastępowane przez usługi platformy Azure i oprogramowanie od innych dostawców, które są uruchamiane na maszynach wirtualnych.
 
-Funkcje obsługi ekranu i wpisów formularzy są powszechnie implementowane przy użyciu serwerów sieci Web, które można łączyć z interfejsami API bazy danych, takimi jak ADO, ODBC i JDBC na potrzeby dostępu do danych i transakcji. Dokładny wiersz składników usługi Azure IaaS do użycia zależy od preferowanego systemu operacyjnego. Na przykład:
+Funkcje obsługi ekranu i wpisów formularzy są powszechnie implementowane przy użyciu serwerów sieci Web, które można łączyć z interfejsami API bazy danych, takimi jak ADO, ODBC i JDBC na potrzeby dostępu do danych i transakcji. Dokładny wiersz składników usługi Azure IaaS do użycia zależy od preferowanego systemu operacyjnego. Przykład:
 
 - Maszyny wirtualne oparte na systemie Windows: Internet Information Server (IIS) wraz z ASP.NET na potrzeby obsługi ekranu i logiki biznesowej. Użyj ADO.NET do uzyskiwania dostępu do danych i transakcji.
 
@@ -113,7 +112,7 @@ Rozproszone architektury chmury polegają na różnych zestawach narzędzi progr
 
 | Składnik        | Opcje platformy Azure                                                                                                                                  |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| System z/OS             | Windows, Linux lub UNIX                                                                                                                      |
+| z/OS             | Windows, Linux lub UNIX                                                                                                                      |
 | CICS             | Usługi platformy Azure oferowane przez firmę Micro Focus, Oracle, GT Software (Fujitsu), TmaxSoft, Raincode i NTT, lub Przepisz przy użyciu Kubernetes |
 | ISP              | Usługi platformy Azure oferowane przez firmę Micro Focus i Oracle                                                                                  |
 | Asemblera        | Usługi platformy Azure z Raincode i TmaxSoft; lub COBOL, C lub Java lub mapowanie na funkcje systemu operacyjnego               |
@@ -125,7 +124,7 @@ Rozproszone architektury chmury polegają na różnych zestawach narzędzi progr
 
 ## <a name="migrate-databases-and-data"></a>Migrowanie baz danych i danych
 
-Migracja aplikacji zwykle obejmuje rehostowanie warstwy danych. Można migrować SQL Server, Open-Source i innych relacyjnych baz danych do w pełni zarządzanych rozwiązań na platformie Azure, takich jak [Azure SQL Database wystąpienie zarządzane](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [usługa Azure Database Service for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview), i [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) z [ Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
+Migracja aplikacji zwykle obejmuje rehostowanie warstwy danych. Możesz migrować SQL Server, Open Source i innych relacyjnych baz danych do w pełni zarządzanych rozwiązań na platformie Azure, takich jak [Azure SQL Database wystąpienie zarządzane](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [usługa Azure Database Service for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview), a także [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) z [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 
 Na przykład można przeprowadzić migrację, jeśli używasz warstwy danych komputera mainframe:
 

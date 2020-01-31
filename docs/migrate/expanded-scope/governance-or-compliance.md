@@ -1,6 +1,5 @@
 ---
 title: Strategia utrzymania ładu lub zgodności
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Strategia utrzymania ładu lub zgodności
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 17952dc4c3ff28f2fcfe1a378a9efb969d65925b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753538"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803130"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategia utrzymania ładu lub zgodności
 
@@ -27,7 +26,7 @@ Gdy wymagany jest ład lub zgodność, największe znaczenie mają działania do
 
 Konfiguracja podstawowego środowiska platformy Azure może zmienić się znacząco podczas integrowania wymagań dotyczących ładu lub zgodności. Aby zrozumieć, jak zmieniają się wymagania wstępne, ważne jest zrozumienie charakteru wymagań. Przed rozpoczęciem migracji wymagającej utrzymania ładu lub zachowania zgodności należy wybrać odpowiednie podejście i zaimplementować je w środowisku chmury. Poniżej przedstawiono kilka podejść wysokiego poziomu, które są często spotykane podczas migracji:
 
-**Wspólne podejście ładu:** W przypadku większości organizacji [model ładu platformy wdrażania w chmurze](../../govern/guides/index.md) jest wystarczającym podejściem, które składa się z minimalnej implementacji produktu (MVP), a następnie do celów związanych z nimi iteracji na rzecz ładu określone w planie wdrażania. Takie podejście zapewnia minimalny zestaw narzędzi niezbędnych do ustanowienia spójnego ładu, co pozwala zespołowi zaznajomić się z narzędziami. Następnie zespół rozszerza te narzędzia, aby rozwiązywać typowe problemy dotyczące ładu.
+**Wspólne podejście ładu:** W przypadku większości organizacji [model ładu platformy wdrażania w chmurze](../../govern/guides/index.md) jest wystarczającym podejściem, które składa się z minimalnej, opłacalnej implementacji produktu (MVP), a następnie dokierowanych iteracji w zakresie zarządzania w celu poprawienia materialnych zagrożeń zidentyfikowanych w planie przyjęcia. Takie podejście zapewnia minimalny zestaw narzędzi niezbędnych do ustanowienia spójnego ładu, co pozwala zespołowi zaznajomić się z narzędziami. Następnie zespół rozszerza te narzędzia, aby rozwiązywać typowe problemy dotyczące ładu.
 
 **Plany zgodności ISO 27001:** W przypadku klientów, którzy są zobowiązani do przestrzegania standardów zgodności ISO, [przykłady planów usług udostępnionych iso 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index) mogą działać jako bardziej wydajny MVP, aby generować bardziej zaawansowane ograniczenia ładu w procesie iteracyjnym. [Przykład App Service Environment/SQL Database ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) rozszerza strategię, aby mapować sterowanie i wdrażać typową architekturę w środowisku aplikacji. W miarę wydawania dodatkowych strategii zgodności będą one przywoływane również tutaj.
 

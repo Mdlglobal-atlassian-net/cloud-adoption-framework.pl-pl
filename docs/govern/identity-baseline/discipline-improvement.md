@@ -1,6 +1,5 @@
 ---
 title: Poprawa dyscypliny linii bazowej tożsamości
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Poprawa dyscypliny linii bazowej tożsamości
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a1f7d21d1291b567d1ec1b1a2d4305bcb202b99
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: 6adb2e0d6edaacd45e41b8ac3eadb57969cad160
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915048"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807193"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Poprawa dyscypliny linii bazowej tożsamości
 
-Dyscyplina bazowa tożsamości koncentruje się na sposobach ustanawiania zasad zapewniających spójność i ciągłość tożsamości użytkowników niezależnie od dostawcy chmury, który obsługuje aplikację lub obciążenie. W pięciu dyscyplinach zarządzania chmurą, linia bazowa tożsamości obejmuje decyzje dotyczące [strategii tożsamości hybrydowej](../../decision-guides/identity/index.md), oceny i rozszerzenia repozytoriów tożsamości, implementacji logowania jednokrotnego (tego samego logowania), inspekcji i monitorowanie w celu nieautoryzowanego użycia lub złośliwych podmiotów. W niektórych przypadkach może być również zaangażowana decyzja o modernizację, konsolidację lub integrację wielu dostawców tożsamości.
+Dyscyplina bazowa tożsamości koncentruje się na sposobach ustanawiania zasad zapewniających spójność i ciągłość tożsamości użytkowników niezależnie od dostawcy chmury, który obsługuje aplikację lub obciążenie. W pięciu dyscyplinach zarządzania chmurą, linia bazowa tożsamości obejmuje decyzje dotyczące [strategii tożsamości hybrydowej](../../decision-guides/identity/index.md), oceny i rozszerzenia repozytoriów tożsamości, implementacji logowania jednokrotnego (tego samego logowania), inspekcji i monitorowania w celu nieautoryzowanego użycia lub złośliwych podmiotów. W niektórych przypadkach może być również zaangażowana decyzja o modernizację, konsolidację lub integrację wielu dostawców tożsamości.
 
 W tym artykule przedstawiono niektóre potencjalne zadania, w których firma może uczestniczyć w ulepszaniu dyscypliny linii bazowej tożsamości. Te zadania mogą być podzielone na planowanie, kompilowanie, przyjmowanie i eksploatację etapów wdrażania rozwiązania w chmurze, które są następnie powtarzane na umożliwieniu rozwoju [przyrostowego podejścia do zarządzania chmurą](../guides/index.md#an-incremental-approach-to-cloud-governance).
 

@@ -1,6 +1,5 @@
 ---
 title: Automatyzowanie dołączania
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Automatyzowanie dołączania
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 83e1cd80bcb821ba1b815291f7f25f875ba66284
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 0c1c06c8e30a61993c9127838de59d070f714c3a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751583"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808026"
 ---
 # <a name="automate-onboarding"></a>Automatyzowanie dołączania
 
@@ -39,12 +38,12 @@ Pliki opisane w poniższej tabeli są używane w tym przykładzie. Można je dos
 
 | Nazwa pliku | Opis |
 |-----------|-------------|
-| New-AMSDeployment. ps1 | Główny, aranżacja skrypt, który automatyzuje dołączanie. Tworzy grupy zasobów, lokalizacje, obszary robocze i konta usługi Automation, jeśli jeszcze nie istnieją. Ten skrypt programu PowerShell wymaga istniejącej subskrypcji. |
-| Workspace — AutomationAccount. JSON | Szablon Menedżer zasobów, który służy do wdrażania zasobów obszaru roboczego i konta usługi Automation. |
-| WorkspaceSolutions. JSON | Szablon Menedżer zasobów, który umożliwia korzystanie z żądanych rozwiązań w obszarze roboczym Log Analytics. |
-| ScopeConfig. JSON | Menedżer zasobów szablon, który używa modelu zgody dla serwerów lokalnych z rozwiązaniem Change Tracking. Korzystanie z modelu zgody jest opcjonalne. |
-| Enable-VMInsightsPerfCounters. ps1 | Skrypt programu PowerShell, który umożliwia usłudze VM Insights dla serwerów i konfiguruje liczniki wydajności. |
-| Śledzenia zmian-Filelist. JSON | Szablon Menedżer zasobów, który definiuje listę plików, które będą monitorowane przez Change Tracking. |
+| New-AMSDeployment.ps1 | Główny, aranżacja skrypt, który automatyzuje dołączanie. Tworzy grupy zasobów, lokalizacje, obszary robocze i konta usługi Automation, jeśli jeszcze nie istnieją. Ten skrypt programu PowerShell wymaga istniejącej subskrypcji. |
+| Workspace-AutomationAccount.json | Szablon Menedżer zasobów, który służy do wdrażania zasobów obszaru roboczego i konta usługi Automation. |
+| WorkspaceSolutions.json | Szablon Menedżer zasobów, który umożliwia korzystanie z żądanych rozwiązań w obszarze roboczym Log Analytics. |
+| ScopeConfig.json | Menedżer zasobów szablon, który używa modelu zgody dla serwerów lokalnych z rozwiązaniem Change Tracking. Korzystanie z modelu zgody jest opcjonalne. |
+| Enable-VMInsightsPerfCounters.ps1 | Skrypt programu PowerShell, który umożliwia usłudze VM Insights dla serwerów i konfiguruje liczniki wydajności. |
+| ChangeTracking-Filelist.json | Szablon Menedżer zasobów, który definiuje listę plików, które będą monitorowane przez Change Tracking. |
 
 Użyj następującego polecenia, aby uruchomić New-AMSDeployment. ps1:
 

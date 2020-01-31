@@ -1,6 +1,5 @@
 ---
 title: Przewodnik po decyzjach związanych z subskrypcjami
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informacje na temat subskrypcji platformy w chmurze jako podstawowej usługi w przypadku migracji na platformę Azure.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4e97c7c1d363b81badc440eb46495b134c680162
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 327077f912e916975eef08ad6613f3806a759bca
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753139"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806581"
 ---
 # <a name="subscription-decision-guide"></a>Przewodnik po decyzjach związanych z subskrypcjami
 

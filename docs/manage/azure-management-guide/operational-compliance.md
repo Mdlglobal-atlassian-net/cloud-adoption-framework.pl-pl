@@ -1,6 +1,5 @@
 ---
 title: Zgodność operacyjna na platformie Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Zapewnianie stabilności biznesowej dzięki zwiększeniu zgodności operacyjnej
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9109a51a85627f3c8d0cee8b72baa0936d56c98e
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 9df0d1e36cbd926725ec5622087b57a2b8eae9ce
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781814"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808196"
 ---
 # <a name="operational-compliance-in-azure"></a>Zgodność operacyjna na platformie Azure
 

@@ -1,6 +1,5 @@
 ---
 title: Przykłady wyników dotyczącej elastyczności
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Przykłady wyników dotyczącej elastyczności
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566644"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798506"
 ---
 # <a name="examples-of-agility-outcomes"></a>Przykłady wyników dotyczącej elastyczności
 
@@ -25,7 +24,7 @@ Tradycyjni funkcjonariusze inwestycji (dyrektorzy działu informatyki) i zespoł
 
 ## <a name="why-is-agility-so-important"></a>Dlaczego taka elastyczność jest ważna?
 
-Rynki zmieniają się w szybszym tempie niż kiedykolwiek wcześniej. Począwszy od 2015, w ciągu lat listy Fortune 500 61, tylko firmy 57 w latach, w 88,6 &mdash;an. Oznacza to zmianę na rynku w poprzednio nieprawidłowym tempie. Nie ma to wpływu na działalność informatyczną i nawet agilities biznesową w organizacji na listy Fortune 500, ale te wyniki pomagają nam zrozumieć tempo, w jaki sposób nadal zmieniają się rynki.
+Rynki zmieniają się w szybszym tempie niż kiedykolwiek wcześniej. Począwszy od 2015, w ciągu lat listy Fortune 500 61 tylko firmy 57, które zostały później&mdash;stawka obrotu w wersji 88,6%. Oznacza to zmianę na rynku w poprzednio nieprawidłowym tempie. Nie ma to wpływu na działalność informatyczną i nawet agilities biznesową w organizacji na listy Fortune 500, ale te wyniki pomagają nam zrozumieć tempo, w jaki sposób nadal zmieniają się rynki.
 
 W przypadku operatorów dominujących i współdziałania, elastyczność biznesowa może być różnicą między sukcesem lub niepowodzeniem inicjatywy biznesowej. Szybka adaptacja do zmian wprowadzonych na rynku może pomóc istniejącym klientom lub zastrzec udział w rynku od konkurentów. Wyniki związane z elastycznością w następnych sekcjach mogą pomóc w przekazywaniu informacji o chmurze podczas transformacji.
 

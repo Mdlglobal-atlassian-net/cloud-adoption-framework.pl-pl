@@ -1,6 +1,5 @@
 ---
 title: Tworzenie stref wyładunkowych przy użyciu Terraform
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, jak tworzyć strefy wyładunkowe przy użyciu Terraform.
 author: arnaudlh
 ms.author: arnaul
@@ -8,12 +7,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 54fa496c7b97231a8ad8cc7150717bb942bf07a2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753756"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798982"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Tworzenie stref wyładunkowych przy użyciu Terraform
 
@@ -37,7 +36,7 @@ Pierwsza strefa początkowa wdraża następujące składniki w ramach subskrypcj
 
 Wdrożone składniki i ich przeznaczenie obejmują następujące elementy:
 
-| Składnik | odpowiedzialność za |
+| Składnik | Odpowiedzialność za |
 |---------|---------|
 | Grupy zasobów | Podstawowe grupy zasobów, które są zbędne dla podstawy |
 | Rejestrowanie aktywności | Inspekcja wszystkich działań subskrypcji i archiwizowania: </br> — Konto magazynu </br> — Event Hubs platformy Azure |  
@@ -67,7 +66,7 @@ Następujące decyzje są reprezentowane w Terraformej strefie docelowej:
 | Składnik | Decyzje | Alternatywne podejścia |
 | --- | --- | --- |
 |Rejestrowanie i monitorowanie | Azure Monitor Log Analytics obszar roboczy jest używany. Obsługiwane jest konto magazynu diagnostyki oraz centrum zdarzeń. |         |
-|Sieć | Nie dotyczy sieci w innej strefie wyładunkowej. |[Decyzje dotyczące sieci](../considerations/networking-options.md) |
+|Network (Sieć) | Nie dotyczy sieci w innej strefie wyładunkowej. |[Decyzje dotyczące sieci](../considerations/networking-options.md) |
 |Tożsamość | Przyjęto założenie, że subskrypcja jest już skojarzona z wystąpieniem usługi Azure Active Directory. | [Najlepsze rozwiązania dotyczące zarządzania tożsamościami](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Zasady | W tej strefie wyładunkowej założono, że nie mają być stosowane żadne zasady platformy Azure. | |
 |Projekt subskrypcji | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej | [Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md) |
@@ -83,13 +82,13 @@ Następujące decyzje są reprezentowane w Terraformej strefie docelowej:
 
 Następujący zestaw minimalnych tagów musi być obecny dla wszystkich zasobów i grup zasobów:
 
-| Nazwa tagu | Opis | Klucz | Przykładowa wartość |
+| nazwa tagu | Opis | Klucz | Przykładowa wartość |
 |--|--|--|--|
 | Jednostka biznesowa | Wydział firmy najwyższego poziomu będący właścicielem subskrypcji lub obciążenia, do których należy zasób. | BusinessUnit | FINANSe, MARKETING, {Product Name}, CORP, SHARED |
 | Cost Center | Księgowe centrum kosztu skojarzone z tym zasobem.| CostCenter | Liczba |
 | Odzyskiwanie po awarii | Ważność aplikacji, obciążenia lub usługi dla działania firmy. | ROUTINGU | FUNKCJA ODZYSKIWANIA PO AWARII, KTÓRA NIE JEST DOSTĘPNA W PROGRAMIE DR |
 | Środowisko | Środowisko wdrażania aplikacji, obciążenia lub usługi. |  Kopert | Produkcja, dev, pytań i odpowiedzi, etap, test, szkolenia |
-| Nazwa właściciela | Właściciel aplikacji, obciążenia lub usługi.| Właściciel | e-mail |
+| Nazwa właściciela | Właściciel aplikacji, obciążenia lub usługi.| Właściciel | email |
 | Typ wdrożenia | Definiuje sposób utrzymywania zasobów. | Typ wdrożenia | Ręczne, Terraform |
 | Wersja | Wdrożona wersja planu. | version | v 0,1 |
 | Nazwa aplikacji | Nazwa skojarzonej aplikacji, usługi lub obciążenia związanego z zasobem. | ApplicationName | "Nazwa aplikacji" |
