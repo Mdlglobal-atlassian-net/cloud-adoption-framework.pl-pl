@@ -1,6 +1,5 @@
 ---
 title: Podstawy zabezpieczeń i zagrożenia biznesowe
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Podstawy zabezpieczeń i zagrożenia biznesowe
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9d1bf5ef10ec3acd936ba4e66cca374e8365018a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222284"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808961"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Podstawy zabezpieczeń i zagrożenia biznesowe
 
@@ -33,7 +32,7 @@ Kwota zainwestowana w zasady zabezpieczeń i procesy będzie zależeć od rodzaj
 Dyscyplina linii bazowej zabezpieczeń obejmuje zasady firmowe i procesy ręczne, które można wprowadzić w celu ochrony wdrożenia w chmurze przed zagrożeniami bezpieczeństwa.
 
 > [!NOTE]
->Chociaż ważne jest, aby zrozumieć [linię bazową tożsamości](../identity-baseline/index.md) w kontekście linii bazowej zabezpieczeń i jak to odnosi się do Access Control, [pięć dyscyplin zarządzania chmurą](../index.md) wywołuje [linię bazową tożsamości](../identity-baseline/index.md) jako własną dyscyplinę, oddzielną z linii bazowej zabezpieczeń.
+>Chociaż ważne jest, aby zrozumieć [linię bazową tożsamości](../identity-baseline/index.md) w kontekście linii bazowej zabezpieczeń i jak to odnosi się do Access Control, [pięć dyscyplin zarządzania chmurą](../index.md) wywołuje [linię bazową tożsamości](../identity-baseline/index.md) jako własną dyscyplinę, niezależnie od linii bazowej zabezpieczeń.
 
 ## <a name="business-risk"></a>Ryzyko biznesowe
 

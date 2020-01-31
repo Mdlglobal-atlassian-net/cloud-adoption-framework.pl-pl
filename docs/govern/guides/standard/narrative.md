@@ -1,6 +1,5 @@
 ---
 title: 'Przewodnik dotyczący zarządzania przedsiębiorstwem w warstwie Standardowa: Opis strategii zarządzania'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ten opis określa przypadek użycia dla ładu podczas podróży w ramach wdrożenia chmury w standardowej firmie.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8bf9b65c71defd57c319f46a83b5d4540967b012
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1e6edb6db4663c9a3b78394dc715376f697e6f5e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547443"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805527"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Przewodnik dotyczący zarządzania przedsiębiorstwem w warstwie Standardowa: Opis strategii zarządzania
 
@@ -52,7 +51,7 @@ Następujące zmiany są przewidywane w ciągu następnych kilku lat:
 - CIO przegląda zasady dotyczące danych osobowych i danych finansowych, aby umożliwić przyszłe cele stanu.
 - Zespoły projektowe i analizy biznesowej chcą wystawić rozwiązania w chmurze w środowisku produkcyjnym w ciągu najbliższych 24 miesięcy w oparciu o wizję i nowe produkty.
 - W tym roku zespół IT ukończy wycofywanie obciążeń związanych z odzyskiwaniem po awarii w centrum danych DR przez Migrowanie maszyn wirtualnych 2 000 do chmury. Oczekuje się, że w ciągu najbliższych pięciu lat zostanie wygenerowane szacowane oszczędności kosztów $25M USD.
-    koszty związane z ![Onami i kosztami platformy Azure, które pokazują zwrot z $25M USD w ciągu najbliższych pięciu lat ](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+    ![koszty lokalne w porównaniu z kosztami platformy Azure, które pokazują powrót z $25M USD w ciągu najbliższych pięciu lat](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 - Firma planuje zmienić sposób jej inwestycji, zmieniając rozmieszczenie zaliczonych wydatków kapitałowych jako kosztów operacyjnych w ramach tego rozwiązania. Ta zmiana zapewni większą kontrolę kosztów i umożliwi jej przyspieszenie innych planowanych wysiłków.
 
 ## <a name="next-steps"></a>Następne kroki

@@ -1,6 +1,5 @@
 ---
 title: 'Innowacje w chmurze: pomiar'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wprowadzenie do innowacji w chmurze — Zmierz zawartość
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 99e2f126c518da72e95a166d203a3c4fdbb546aa
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: d6e29f159059da9c219006a69a63484b546a4488
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752112"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808417"
 ---
 # <a name="measure-for-customer-impact"></a>Mierzenie wpływu na klientów
 
@@ -23,7 +22,7 @@ Istnieje kilka sposobów pomiaru wpływu na klientów. Ten artykuł pomoże Ci z
 
 W [fazie strategii](../../strategy/index.md) cyklu życia wdrożenia chmury sprawdzimy [motywacje](../../strategy/motivations.md) i [wyniki biznesowe](../../strategy/business-outcomes/index.md). Te praktyki zawierają zestaw metryk, za pomocą których można testować wpływ klientów. Po pomyślnym nadaniu innowacji można zobaczyć wyniki, które są wyrównane z celami strategicznymi.
 
-Przed ustanowieniem metryk uczenia należy zdefiniować niewielką liczbę metryk strategicznych, na które mają wpływ te innowacje. Ogólnie rzecz biorąc, te strategiczne metryki są wyrównane z co najmniej jednym z następujących obszarów wyników: [elastyczność biznesowa](../../strategy/business-outcomes/agility-outcomes.md), [zaangażowanie klientów](../../strategy/business-outcomes/engagement-outcomes.md), [zasięg klienta](../../strategy/business-outcomes/reach-outcomes.md), [wpływ finansowy](../../strategy/business-outcomes/fiscal-outcomes.md)lub w przypadku innowacji operacyjnych: [rozwiązanie wydajność](../../strategy/business-outcomes/fiscal-outcomes.md).
+Przed ustanowieniem metryk uczenia należy zdefiniować niewielką liczbę metryk strategicznych, na które mają wpływ te innowacje. Ogólnie rzecz biorąc, te strategiczne metryki są wyrównane z co najmniej jednym z następujących obszarów wyników: [elastyczność biznesowa](../../strategy/business-outcomes/agility-outcomes.md), [zaangażowanie klientów](../../strategy/business-outcomes/engagement-outcomes.md), [zasięg klienta](../../strategy/business-outcomes/reach-outcomes.md), [wpływ finansowy](../../strategy/business-outcomes/fiscal-outcomes.md)lub w przypadku innowacji operacyjnych: [wydajność rozwiązania](../../strategy/business-outcomes/fiscal-outcomes.md).
 
 Udokumentowanie uzgodnionych metryk i śledzenie ich wpływu na często. Ale nie oczekuje się, że żadne z tych metryk nie pojawią się dla kilku iteracji. Aby uzyskać więcej informacji na temat ustawiania i wyrównywania oczekiwań we wszystkich zaangażowanych stronach, zobacz [zobowiązanie do iteracji](./index.md#commitment-to-iteration).
 

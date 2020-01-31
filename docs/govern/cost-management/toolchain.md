@@ -1,6 +1,5 @@
 ---
 title: Narzędzia Cost Management na platformie Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Narzędzia Cost Management na platformie Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3b301f8dfcc50539f4325901cd32553368a0da55
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e35530fbf3a858c000cb78c0c076d7d56d5fbd86
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222636"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806411"
 ---
 # <a name="cost-management-tools-in-azure"></a>Narzędzia Cost Management na platformie Azure
 
@@ -22,15 +21,15 @@ ms.locfileid: "71222636"
 
 Poniżej znajduje się lista narzędzi macierzystych platformy Azure, które mogą pomóc w zawczesnym wykorzystaniu zasad i procesów, które obsługują tę dyscyplinę ładu.
 
-| Tool | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview-cost-mgt)  | [Pakiet zawartości platformy Azure EA](https://docs.microsoft.com/power-bi/service-connect-to-azure-enterprise)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) |
+| Narzędzie | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview-cost-mgt)  | [Pakiet zawartości platformy Azure EA](https://docs.microsoft.com/power-bi/service-connect-to-azure-enterprise)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) |
 |---------|---------|---------|---------|---------|
-|Umowa Enterprise jest wymagane?     | Nie         | Nie         | Yes         | Nie         |
-|Kontrola budżetu     | Nie         | Yes         | Nie         | Tak         |
-|Monitoruj wydatki dotyczące pojedynczego zasobu    | Tak         | Yes         | Yes         | Nie         |
-|Monitorowanie wydatków w wielu zasobach    | Nie         | Yes        | Yes         | Nie         |
+|Umowa Enterprise jest wymagane?     | Nie         | Nie         | Tak         | Nie         |
+|Kontrola budżetu     | Nie         | Tak         | Nie         | Tak         |
+|Monitoruj wydatki dotyczące pojedynczego zasobu    | Tak         | Tak         | Tak         | Nie         |
+|Monitorowanie wydatków w wielu zasobach    | Nie         | Tak        | Tak         | Nie         |
 |Kontrola wydatków w ramach pojedynczego zasobu     | Tak — rozmiar ręczny         | Tak         | Nie         | Tak         |
-|Wymuś wydatki dla wielu zasobów    | Nie         | Yes         | Nie         | Tak         |
+|Wymuś wydatki dla wielu zasobów    | Nie         | Tak         | Nie         | Tak         |
 |Wymuszaj metadane ewidencjonowania aktywności zasobów    | Nie         | Nie         | Nie         | Tak         |
-|Monitorowanie i wykrywanie trendów     | Tak          | Yes        | Yes         | Nie         |
-|Wykrywanie anomalii wydatków     | Nie         | Yes        | Yes         | Nie        |
-|Odchylenia Socialize     | Nie        | Yes        | Yes        | Nie        |
+|Monitorowanie i wykrywanie trendów     | Tak          | Tak        | Tak         | Nie         |
+|Wykrywanie anomalii wydatków     | Nie         | Tak        | Tak         | Nie        |
+|Odchylenia Socialize     | Nie        | Tak        | Tak        | Nie        |

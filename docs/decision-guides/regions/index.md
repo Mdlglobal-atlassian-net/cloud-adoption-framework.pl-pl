@@ -1,6 +1,5 @@
 ---
 title: Przewodnik po decyzjach związanych z regionami
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się więcej o wyborze regionów platformy w chmurze.
 author: doodlemania2
 ms.author: dermar
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 981752b1e1963dd4f8a646ccc087d445669e6cd3
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: aff6a3129bd93df434737a861f0b5f0daad24bcc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753316"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806717"
 ---
 # <a name="azure-regions"></a>Regiony świadczenia usługi Azure
 

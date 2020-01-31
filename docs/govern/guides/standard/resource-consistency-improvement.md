@@ -1,7 +1,6 @@
 ---
-title: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Poprawianie spójności zasobów'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Poprawianie spójności zasobów'
+title: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: zwiększanie spójności zasobów'
+description: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: zwiększanie spójności zasobów'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: aa752e83dd5e83da101600c756fe7b878015c1db
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967448"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806003"
 ---
-# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: Poprawianie spójności zasobów
+# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: zwiększanie spójności zasobów
 
 W tym artykule opisano sposób dodawania kontroli spójności zasobów do obsługi aplikacji o znaczeniu strategicznym.
 

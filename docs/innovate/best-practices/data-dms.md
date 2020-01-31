@@ -1,6 +1,5 @@
 ---
 title: 'Innowacje w chmurze: Azure Database Migration Service'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Innowacje w chmurze — Azure Database Migration Service
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 46e21c08bac9501dd9b99fceb4ef3040cc9f0a83
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44ebe7e28eea56d1b7e61b5926a9588f4c985ae1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752032"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808672"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Zbierz dane za pomocą migracji i modernizacji istniejących źródeł danych
 
@@ -49,14 +48,14 @@ Zalecamy, aby określić akceptowalny przestój biznesowy i przetestować migrac
 
 |Źródło  |Cel  |Narzędzie  |Typ migracji  |Wskazówka  |
 |---------|---------|---------|---------|---------|
-|Oprogramowanie SQL Server|Azure SQL Database|Usługa migracji bazy danych|Stanie|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|Oprogramowanie SQL Server|Azure SQL Database|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|Oprogramowanie SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Usługa migracji bazy danych|Stanie|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|Oprogramowanie SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
+|SQL Server|Baza danych SQL Azure|Usługa migracji bazy danych|W trybie offline|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|Baza danych SQL Azure|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
+|SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Usługa migracji bazy danych|W trybie offline|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
 |SQL Server RDS|Azure SQL Database lub Azure SQL Database wystąpienia zarządzanego|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
 |MySQL|Azure Database for MySQL|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)|
 |PostgreSQL|Azure Database for PostgreSQL|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
-|MongoDB|Azure Cosmos DB interfejs API Mongo|Usługa migracji bazy danych|Stanie|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
+|MongoDB|Azure Cosmos DB interfejs API Mongo|Usługa migracji bazy danych|W trybie offline|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
 |MongoDB|Azure Cosmos DB interfejs API Mongo|Usługa migracji bazy danych|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
 |Oracle|Różne opcje platformy jako usługi (PaaS) i IaaS|Narzędzie lub Azure Migrate partnera|W trybie offline lub online|[Drzewo decyzyjne](../../migrate/expanded-scope/data-oracle-migration.md)|
 |Różne opcje NoSQL DB|Cosmo DB lub IaaS opcje|Migracje proceduralne lub Azure Migrate|W trybie offline lub online|[Drzewo decyzyjne](../../migrate/expanded-scope/data-no-sql-migration.md)|

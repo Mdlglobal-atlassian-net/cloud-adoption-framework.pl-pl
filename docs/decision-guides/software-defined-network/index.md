@@ -1,6 +1,5 @@
 ---
 title: Przewodnik po decyzjach dotyczących sieci zdefiniowanej programowo
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informacje na temat sieci zdefiniowanych programowo jako podstawowej usługi podczas operacji migracji na platformę Azure.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7eb03b01dfab3627117b4d07727f09669e6b0924
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564786"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806598"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Przewodnik po decyzjach dotyczących sieci zdefiniowanej programowo
 
@@ -24,7 +23,7 @@ Sieć zdefiniowana programowo (SDN, Software Defined Networking) to architektura
 
 ![Wykres opcji sieci od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-Idź do: [Tylko usługa PaaS](./paas-only.md) | [Natywne dla chmury](./cloud-native.md) | [Strefa DMZ w chmurze](./cloud-dmz.md) [Hybrydowe](./hybrid.md) | [Model gwiazdy](./hub-spoke.md) | [Dowiedz się więcej](#learn-more)
+Idź do: [Tylko usługa PaaS](./paas-only.md) | [Natywne dla chmury](./cloud-native.md) | [Strefa DMZ w chmurze](./cloud-dmz.md) [Hybrydowe](./hybrid.md) | [Model piasty i szprych](./hub-spoke.md) | [Dowiedz się więcej](#learn-more)
 
 Sieć SDN oferuje kilka opcji z różnymi poziomami cen i złożoności. Powyższy przewodnik odnajdywania zawiera informacje referencyjne na temat szybkiego personalizowania tych opcji w celu najlepszego dopasowania ich do określonych strategii biznesowych i technologicznych.
 

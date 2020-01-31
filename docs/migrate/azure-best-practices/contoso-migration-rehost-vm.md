@@ -1,6 +1,5 @@
 ---
 title: Hostowanie aplikacji na maszynach wirtualnych platformy Azure za pomocą Azure Site Recovery
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, w jaki sposób firma Contoso rehostuje aplikację lokalną za pomocą dźwigu i przeniesie migrację maszyn lokalnych na platformę Azure przy użyciu usługi Azure Site Recovery.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: f38503b0cc998721726845fc1669f40ea8c845e4
-ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
+ms.openlocfilehash: cb6bb11ee8d87f5ca6069979894de6549bb4a33b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520195"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807329"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms"></a>Ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure
 
@@ -22,7 +21,7 @@ W tym artykule pokazano, w jaki sposób fikcyjna firma Contoso ponownie hostuje 
 
 Używana w tym przykładzie aplikacja SmartHotel360 jest dostępna jako aplikacja open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
 
-## <a name="business-drivers"></a>Biznesowa siła napędowa
+## <a name="business-drivers"></a>Czynniki biznesowe
 
 Zespół liderów IT w ścisłej współpracy z partnerami biznesowymi firmy ustalił, co firma będzie chciała osiągnąć dzięki migracji:
 
@@ -295,7 +294,7 @@ W celu zapewnienia ciągłości działania i odzyskiwania po awarii (BCDR, Busin
 ### <a name="licensing-and-cost-optimization"></a>Licencjonowanie i optymalizacja kosztów
 
 1. Firma Contoso ma istniejące licencje dla swoich maszyn wirtualnych i zastosuje korzyść użycia hybrydowego platformy Azure. Firma Contoso przekonwertuje istniejące maszyny wirtualne platformy Azure, aby skorzystać z tych cen.
-2. Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
+2. Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) na temat usługi Azure Cost Management.
 
 ## <a name="conclusion"></a>Podsumowanie
 

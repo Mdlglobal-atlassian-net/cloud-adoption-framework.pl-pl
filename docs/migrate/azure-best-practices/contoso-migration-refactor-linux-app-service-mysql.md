@@ -1,6 +1,5 @@
 ---
 title: Refaktoryzowanie aplikacji do obsługi pomocy technicznej systemu Linux pod kątem usług Azure App Service i Azure Database for MySQL
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, w jaki sposób firma Contoso refaktoryzuje lokalną aplikację systemu Linux przez migrowanie jej do usługi Azure App Service przy użyciu usługi GitHub dla warstwy internetowej i usługi Azure SQL Database.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e504d4032fc019af43ec7cb1e8513504196559a2
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2e47647b06da12b9b595f4330767f629121e00a0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024211"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807465"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Refaktoryzowanie aplikacji systemu Linux do wielu regionów za pomocą usług Azure App Service, Traffic Manager i Azure Database for MySQL
 
@@ -21,7 +20,7 @@ W tym artykule pokazano, w jaki sposób fikcyjna firma Contoso refaktoryzuje dwu
 
 Używana w tym przykładzie aplikacja do obsługi pomocy technicznej, osTicket, jest dostępna jako aplikacja open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/osTicket/osTicket).
 
-## <a name="business-drivers"></a>Cele biznesowe
+## <a name="business-drivers"></a>Czynniki biznesowe
 
 Zespół liderów IT w ścisłej współpracy z partnerami biznesowymi firmy ustalił, co firma będzie chciała osiągnąć:
 
@@ -81,11 +80,11 @@ Firma Contoso przeprowadzi proces migracji w następujący sposób:
 
 ![Proces migracji](./media/contoso-migration-refactor-linux-app-service-mysql/migration-process.png)
 
-### <a name="azure-services"></a>Usługi Azure
+### <a name="azure-services"></a>Usługi platformy Azure
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
-[Usługa Azure App Service](https://azure.microsoft.com/services/app-service) | Usługa uruchamia i skaluje aplikacje za pomocą usługi Azure PaaS dla witryn internetowych. | Ceny są ustalane na podstawie rozmiaru wystąpień oraz wymaganych funkcji. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/app-service/windows).
+[Azure App Service](https://azure.microsoft.com/services/app-service) | Usługa uruchamia i skaluje aplikacje za pomocą usługi Azure PaaS dla witryn internetowych. | Ceny są ustalane na podstawie rozmiaru wystąpień oraz wymaganych funkcji. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | Moduł równoważenia obciążenia używający systemu DNS do kierowania użytkowników do platformy Azure lub zewnętrznych usług i witryn internetowych. | Cennik jest ustalany na podstawie liczby odebranych zapytań DNS oraz liczby monitorowanych punktów końcowych. | [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/traffic-manager).
 [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Baza danych opiera się na aparacie serwera MySQL typu open-source. Udostępnia ona w pełni zarządzaną, gotową do używania w przedsiębiorstwie bazę danych MySQL w wersji Community jako usługę do opracowywania i wdrażania aplikacji. | Cennik oparty na wymaganiach dotyczących obliczeń, magazynu i kopii zapasowych. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/mysql).
 
@@ -98,7 +97,7 @@ Oto elementy, których firma Contoso potrzebuje do realizacji tego scenariusza.
 **Wymagania** | **Szczegóły**
 --- | ---
 **Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje wcześniej w tej serii artykułów. Jeśli nie masz subskrypcji platformy Azure, utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.
-**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Infrastruktura platformy Azure wymagana do migracji](./contoso-migration-infrastructure.md).
+**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Azure infrastructure for Migration (Infrastruktura platformy Azure wymagana do migracji)](./contoso-migration-infrastructure.md).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -108,14 +107,14 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 
 > [!div class="checklist"]
 >
-> - **Krok 1. Aprowizowanie usługi Azure App Service.** Administratorzy firmy Contoso będą aprowizować aplikacje internetowe w regionach podstawowym i pomocniczym.
-> - **Krok 2. Konfigurowanie usługi Traffic Manager.** Konfigurują oni usługę Traffic Manager przed aplikacjami internetowymi na potrzeby ruchu routingu i równoważenia obciążenia.
-> - **Krok 3. Aprowizowanie systemu MySQL.** Na platformie Azure aprowizują oni wystąpienie usługi Azure Database for MySQL.
-> - **Krok 4. Migrowanie bazy danych.** Migrują oni bazę danych za pomocą rozwiązania MySQL Workbench.
+> - **Krok 1. Udostępnianie Azure App Service.** Administratorzy firmy Contoso będą aprowizować aplikacje internetowe w regionach podstawowym i pomocniczym.
+> - **Krok 2. Konfigurowanie Traffic Manager.** Konfigurują oni usługę Traffic Manager przed aplikacjami internetowymi na potrzeby ruchu routingu i równoważenia obciążenia.
+> - **Krok 3. Inicjowanie obsługi bazy danych MySQL.** Na platformie Azure aprowizują wystąpienie usługi Azure Database for MySQL.
+> - **Krok 4. Migrowanie bazy danych programu.** Migrują oni bazę danych za pomocą rozwiązania MySQL Workbench.
 > - **Krok 5. Konfigurowanie usługi GitHub.** Konfigurują oni lokalne repozytorium GitHub dla witryn internetowych/kodu aplikacji.
-> - **Krok 6. Wdrażanie aplikacji internetowych.** Wdrażają oni aplikacje internetowe z usługi GitHub.
+> - **Krok 6. wdrażanie aplikacji sieci Web.** Wdrażają oni aplikacje internetowe z usługi GitHub.
 
-## <a name="step-1-provision-azure-app-service"></a>Krok 1: Aprowizowanie usługi Azure App Service
+## <a name="step-1-provision-azure-app-service"></a>Krok 1. Udostępnianie Azure App Service
 
 Administratorzy firmy Contoso aprowizują obsługę dwóch aplikacji internetowych (po jednej w każdym regionie) przy użyciu usługi Azure App Service.
 
@@ -141,7 +140,7 @@ Administratorzy firmy Contoso aprowizują obsługę dwóch aplikacji internetowy
 - Dowiedz się więcej o [aplikacjach internetowych usługi Azure App Service](https://docs.microsoft.com/azure/app-service/overview).
 - Dowiedz się więcej o [usłudze Azure App Service dla systemu Linux](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro).
 
-## <a name="step-2-set-up-traffic-manager"></a>Krok 2: Konfigurowanie usługi Traffic Manager
+## <a name="step-2-set-up-traffic-manager"></a>Krok 2. Konfigurowanie Traffic Manager
 
 Administratorzy firmy Contoso konfigurują usługę Traffic Manager tak, aby kierowała przychodzące żądania internetowe do aplikacji internetowych działających w warstwie internetowej aplikacji osTicket.
 
@@ -162,7 +161,7 @@ Administratorzy firmy Contoso konfigurują usługę Traffic Manager tak, aby kie
 - Dowiedz się więcej o usłudze [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
 - Dowiedz się więcej o [kierowaniu ruchu do priorytetowego punktu końcowego](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-configure-priority-routing-method).
 
-## <a name="step-3-provision-azure-database-for-mysql"></a>Krok 3: Aprowizowanie usługi Azure Database for MySQL
+## <a name="step-3-provision-azure-database-for-mysql"></a>Krok 3. Udostępnianie Azure Database for MySQL
 
 Administratorzy firmy Contoso aprowizują wystąpienie bazy danych MySQL w regionie podstawowym Wschodnie stany USA 2.
 
@@ -185,11 +184,11 @@ Administratorzy firmy Contoso aprowizują wystąpienie bazy danych MySQL w regio
 
     ![MySQL](./media/contoso-migration-refactor-linux-app-service-mysql/mysql-3.png)
 
-## <a name="step-4-migrate-the-database"></a>Krok 4: Migrowanie bazy danych
+## <a name="step-4-migrate-the-database"></a>Krok 4. Migrowanie bazy danych
 
 Administratorzy firmy Contoso migrują bazę danych przy użyciu funkcji tworzenia kopii zapasowych i przywracania za pomocą narzędzi MySQL. Instalują aplikację MySQL Workbench, tworzą kopię zapasową bazy danych z maszyny wirtualnej OSTICKETMYSQL, a następnie przywracają ją na serwer usługi Azure Database for MySQL.
 
-### <a name="install-mysql-workbench"></a>Zainstaluj program MySQL Workbench
+### <a name="install-mysql-workbench"></a>Instalacja aplikacji MySQL Workbench
 
 1. Sprawdzają [wymagania wstępne i pliki do pobrania aplikacji MySQL Workbench](https://dev.mysql.com/downloads/workbench/?utm_source=tuicool).
 2. Instalują program MySQL Workbench dla systemu Windows zgodnie [z instrukcjami instalacji](https://dev.mysql.com/doc/workbench/en/wb-installing.html). Maszyna, na której jest on instalowany, musi być dostępna dla maszyny wirtualnej OSTICKETMYSQL i platformy Azure za pośrednictwem Internetu.
@@ -237,33 +236,33 @@ Administratorzy firmy Contoso tworzą nowe prywatne repozytorium GitHub i konfig
 
 1. Przechodzą do publicznego repozytorium usługi GitHub oprogramowania OsTicket oraz tworzą jego rozwidlenie na koncie usługi GitHub firmy Contoso.
 
-    ![GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github1.png)
+    ![Witryna GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github1.png)
 
 2. Po utworzeniu rozwidlenia przechodzą do folderu **include** i wyszukują plik **ost-config.php**.
 
-    ![GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github2.png)
+    ![Witryna GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github2.png)
 
 3. Plik jest otwarty w przeglądarce, a administratorzy go edytują.
 
-    ![GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github3.png)
+    ![Witryna GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github3.png)
 
 4. W edytorze aktualizują szczegóły bazy danych, w szczególności elementy **DBHOST** i **DBUSER**.
 
-    ![GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github4.png)
+    ![Witryna GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github4.png)
 
 5. Następnie zatwierdzają zmiany.
 
-    ![GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github5.png)
+    ![Witryna GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github5.png)
 
 6. Dla każdej aplikacji internetowej (**osticket-eus2** i **osticket-cus**) modyfikują **ustawienia aplikacji** w witrynie Azure Portal.
 
-    ![GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github6.png)
+    ![Witryna GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github6.png)
 
 7. Wprowadzają parametry połączenia o nazwie **osticket** i kopiują je z Notatnika do **obszaru wartości**. Wybierają opcję **MySQL** na liście rozwijanej obok parametrów i zapisują ustawienia.
 
-    ![GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github7.png)
+    ![Witryna GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github7.png)
 
-## <a name="step-6-configure-the-web-apps"></a>Krok 6: Konfigurowanie aplikacji internetowych
+## <a name="step-6-configure-the-web-apps"></a>Krok 6. Konfigurowanie aplikacji sieci Web
 
 W ostatnim kroku procesu migracji administratorzy firmy Contoso konfigurują aplikacje internetowe za pomocą witryn internetowych osTicket.
 
@@ -325,7 +324,7 @@ W celu oczyszczenia zasobów firma Contoso musi wykonać następujące czynnośc
 
 Po uruchomieniu aplikacji firma Contoso musi w pełni zoperacjonalizować i zabezpieczyć nową infrastrukturę.
 
-### <a name="security"></a>Bezpieczeństwo
+### <a name="security"></a>Zabezpieczenia
 
 Zespół ds. zabezpieczeń firmy Contoso sprawdził aplikację, aby określić problemy z zabezpieczeniami. Stwierdzono, że komunikacja między aplikacją osTicket i wystąpieniem bazy danych MySQL nie została skonfigurowana pod kątem protokołu SSL. Trzeba to zrobić, aby upewnić się, że hakerzy nie mogą zaatakować bazy danych. [Dowiedz się więcej](https://docs.microsoft.com/azure/mysql/howto-configure-ssl).
 

@@ -1,6 +1,5 @@
 ---
 title: Ustanów struktury zespołu
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ustanów struktury zespołu
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8000847a46082be6116abb22e52def03243c69b0
-ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
+ms.openlocfilehash: 1d4cb3873767988fc7f5538e2023a6b2ca0a6586
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71811087"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800920"
 ---
 # <a name="establish-team-structures"></a>Ustanów struktury zespołu
 
@@ -44,7 +43,7 @@ Jądrem wszystkich działań związanych z wdrażaniem w chmurze jest zespół d
 W przypadku wysiłków dotyczących małych i wczesnych etapów ten zespół może być tak mały jako jedna osoba. W przypadku większych lub późnych wysiłków często istnieje kilka zespołów wdrażania w chmurze, z których każdy ma około sześciu inżynierów. Niezależnie od rozmiaru lub zadań, spójny aspekt dowolnego zespołu wdrażania w chmurze polega na tym, że umożliwia dołączanie rozwiązań do chmury. W przypadku niektórych organizacji może to być wystarczająca struktura organizacyjna. Artykuł z [zespołu wdrażania w chmurze](./cloud-adoption.md) zawiera dokładniejszy wgląd w strukturę, kompozycję i funkcję zespołu wdrożenia chmury.
 
 > [!WARNING]
-> Działające *tylko* z zespołem wdrażania w chmurze (lub wieloma zespołami wdrażania w chmurze ) jest uznawany za Antywzorzec i należy je unikać. Należy wziąć pod uwagę co najmniej [najlepsze rozwiązanie MVP](#best-practice-minimum-viable-product-mvp).
+> Działające *tylko* z zespołem wdrażania w chmurze (lub wieloma zespołami wdrażania w chmurze) jest uznawany za *Antywzorzec* i należy je unikać. Należy wziąć pod uwagę co najmniej [najlepsze rozwiązanie MVP](#best-practice-minimum-viable-product-mvp).
 
 ## <a name="best-practice-minimum-viable-product-mvp"></a>Najlepsze rozwiązanie: minimalny produkt żywotny (MVP)
 
@@ -55,7 +54,7 @@ Zalecamy, aby dwa zespoły mogły utworzyć saldo w ramach wysiłków związanyc
 
 ![Wdrażanie w chmurze za pomocą Counterbalance ładu chmury](../_images/ready/org-ready-best-practice.png)
 
-To sprawdzona metoda jest uważana za SPECJALISTę, ponieważ może ona nie być trwała. Każdy zespół ma wiele systemyów, jak przedstawiono na wykresach odpowiedzialnych, do których [ *można* ](./raci-alignment.md)się skontaktować.
+To sprawdzona metoda jest uważana za SPECJALISTę, ponieważ może ona nie być trwała. Każdy zespół ma wiele systemyów, jak przedstawiono na [wykresach *odpowiedzialnych* ](./raci-alignment.md), do których można się skontaktować.
 
 W poniższych sekcjach opisano w pełni zatrudnioną strukturę organizacyjną oraz podejścia do dostosowania odpowiedniej struktury do organizacji.
 

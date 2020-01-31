@@ -1,6 +1,5 @@
 ---
 title: Skalowanie migracji na platformę Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, w jaki sposób firma Contoso obsługuje skalowaną migrację na platformę Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ab5e8cdb7058a773b4085f01a6be64b4521e6b69
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566449"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807312"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skalowanie migracji na platformę Azure
 
@@ -26,8 +25,8 @@ Zespół liderów IT w ścisłej współpracy z partnerami biznesowymi firmy ust
 
 - **Reagowanie na rosnące potrzeby biznesowe.** Firma Contoso rozwija się, co powoduje przeciążenie lokalnych systemów i infrastruktury.
 - **Zwiększenie wydajności.** Firma Contoso chce usunąć niepotrzebne procedury oraz usprawnić procesy deweloperów i użytkowników. Firma chce, aby dział IT był szybki i nie tracił czasu ani pieniędzy, co pozwoli szybciej realizować wymagania klientów.
-- **Zwiększenie elastyczności.** Firma Contoso chce lepiej odpowiadać na zapotrzebowania w branży. Musi być w stanie reagować szybciej na zmiany na rynku, aby odnosić sukcesy w gospodarce światowej. Nie może utrudniać pracy ani stać się przeszkodą biznesową.
-- **Skalowalność.** W miarę pomyślnego rozwoju firmy Contoso jej dział IT musi zapewnić systemy, które będą mogły rosnąć w tym samym tempie.
+- **Zwiększenie elastyczności.** Dział IT firmy Contoso chce lepiej odpowiadać na zapotrzebowania biznesowe. Musi być w stanie reagować szybciej na zmiany na rynku, aby odnosić sukcesy w gospodarce światowej. Nie może utrudniać pracy ani stać się przeszkodą biznesową.
+- **Skalowalność.** W miarę rozwoju firmy Contoso jej dział IT musi zapewnić systemy, które będą mogły rosnąć w tym samym tempie.
 - **Udoskonalenie modeli kosztów.** Firma Contoso chce zmniejszyć wymagania inwestycyjne w budżecie IT. Firma Contoso chce wykorzystać zdolność chmury do skalowania i zmniejszenia zapotrzebowania na drogi sprzęt.
 - **Obniżenie kosztów licencjonowania.** Firma Contoso chce zminimalizować koszty chmury.
 
@@ -309,7 +308,7 @@ Aby jak najlepiej wykorzystać inwestycję w chmurę, firma Contoso będzie korz
 - To licencjonowane rozwiązanie stworzone przez Cloudyn, jednostkę zależną firmy Microsoft, umożliwia firmie Contoso przejrzyste i dokładne zarządzanie wydatkami na chmurę. Zapewnia narzędzia do monitorowania, przydzielania i przycinania kosztów chmury.
 - Usługa Azure Cost Management oferuje proste raporty pulpitu nawigacyjnego, które ułatwiają przydzielanie kosztów, przewidywanie kosztów i obciążenia zwrotne.
 - Usługa Cost Management pozwala optymalizować wydatki na chmurę przez identyfikowanie niedostatecznie wykorzystywanych zasobów, którymi firma Contoso może później zarządzać oraz je dostosowywać.
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) o usłudze Azure Cost Management.
+- [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) na temat usługi Azure Cost Management.
 
 ![Zarządzanie kosztami](./media/contoso-migration-scale/cost-management.png)
 

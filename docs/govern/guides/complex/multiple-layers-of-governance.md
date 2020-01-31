@@ -1,7 +1,6 @@
 ---
-title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Wiele warstw nadzoru'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Wiele warstw nadzoru'
+title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wiele warstw ładu'
+description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wiele warstw ładu'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4efd5b3de5551297a6ef5813a5108f3ad039472c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5aa48d6561f6d6122c74dcb60e82425b64071304
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222305"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806258"
 ---
-# <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Wiele warstw nadzoru
+# <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wiele warstw ładu
 
 Gdy duże przedsiębiorstwa wymagają wielu warstw nadzoru, istnieją wyższe poziomy złożoności, które muszą zostać wdrożone w ramach ładu i nowszych ulepszeń.
 

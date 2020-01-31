@@ -1,6 +1,5 @@
 ---
 title: Udoskonalenie dyscypliny spójności zasobów
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Udoskonalenie dyscypliny spójności zasobów
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d465716784d125edebaf44d8a1bae2f369b9d5a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0113c37aaca23374021d6790bcbb1db751ffcf4a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548086"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807244"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Udoskonalenie dyscypliny spójności zasobów
 
@@ -127,9 +126,9 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy rozumiesz koncepcję zarządzania zasobami w chmurze, przejdź do, aby dowiedzieć się więcej na temat [sposobu zarządzania dostępem do zasobów](./resource-access-management.md) na platformie Azure w celu uczenia się, jak projektować model ładu dla [prostego obciążenia](./governance-simple-workload.md) lub dla [wielu zespołów](./governance-multiple-teams.md) .
+Teraz, gdy rozumiesz koncepcję zarządzania zasobami w chmurze, przejdź do, aby dowiedzieć się więcej na temat [sposobu zarządzania dostępem do zasobów](./resource-access-management.md) na platformie Azure w celu uczenia się, jak projektować model ładu dla [prostego obciążenia](./governance-simple-workload.md) lub dla [wielu zespołów](./governance-multiple-teams.md).
 
 > [!div class="nextstepaction"]
-> Informacje [na temat zarządzania dostępem do zasobów na platformie azure](./resource-access-management.md) 
->  informacje[o umowach dotyczących poziomu usług dla platformy Azure](https://azure.microsoft.com/support/legal/sla) 
->  informacje[o rejestrowaniu, raportowaniu i monitorowaniu](../../decision-guides/logging-and-reporting/index.md)
+> Informacje [na temat zarządzania dostępem do zasobów na platformie azure](./resource-access-management.md)
+> informacje [o umowach dotyczących poziomu usług dla platformy Azure](https://azure.microsoft.com/support/legal/sla)
+> informacje [o rejestrowaniu, raportowaniu i monitorowaniu](../../decision-guides/logging-and-reporting/index.md)

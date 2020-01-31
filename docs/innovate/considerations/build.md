@@ -1,6 +1,5 @@
 ---
 title: 'Innowacje w chmurze: Kompiluj z empatię klienta'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Naucz się tworzyć za pomocą empatię klienta.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d1f9b53a152ee85d8817fcfdc9cfc613a89a585b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 406d53bfb322c424737a9b8cec7c028a9833143d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565734"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808553"
 ---
 # <a name="build-with-customer-empathy"></a>Tworzenie z empatią wobec klientów
 
@@ -102,7 +101,7 @@ Gdy klient empatię jest silnie, wyraźnie istniejący problem powinien być ła
 
 Istnieje wiele wymagań prawnych, zgodności i branżowych, które mogą wymagać alternatywnego podejścia. Jeśli publiczne wydania opracowywania rozwiązania stwarzają ryzyko dla charakteru patentu, ochrony własności intelektualnej, przecieków danych klienta lub naruszenia wymagań zgodności, takie podejście może nie być odpowiednie. Gdy takie zagrożenia istnieją, zapoznaj się z przepisami prawnymi przed przyjęciem podejścia z przewodnikiem dotyczącego zarządzania zleceniami.
 
-## <a name="references"></a>Dokumentacja
+## <a name="references"></a>Informacje
 
 Niektóre koncepcje w tym artykule zostały omówione w temacie dotyczącym [*uruchamiania produkcji oszczędnej*](http://theleanstartup.com/book) (Eric Ries, działalność korony, 2011).
 

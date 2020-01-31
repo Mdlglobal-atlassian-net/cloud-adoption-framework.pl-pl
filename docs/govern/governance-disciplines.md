@@ -1,6 +1,5 @@
 ---
 title: Pięć dziedzin nadzoru chmury
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się więcej o pięciu dyscyplinach zarządzania chmurą w strukturze wdrożenia chmury.
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: f072870caf18eb460ccc3a34e02d7d1f44872406
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 022fafd48ae9c03ef8c2b19f7b966a73cab70081
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223147"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806343"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>Pięć dziedzin nadzoru chmury
 
@@ -70,7 +69,7 @@ W przypadku każdej platformy w chmurze istnieją typowe dyscypliny ładu, któr
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cost Management</h3>
+                        <h3>Zarządzanie kosztami</h3>
                         <p>Koszt jest podstawowym problemem dla użytkowników w chmurze. Opracowywanie zasad kontroli kosztów dla wszystkich platform w chmurze.</p>
                     </div>
                 </div>

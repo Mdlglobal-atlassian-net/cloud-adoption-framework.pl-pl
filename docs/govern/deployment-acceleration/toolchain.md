@@ -1,6 +1,5 @@
 ---
 title: Narzędzia do przyspieszania wdrażania na platformie Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Narzędzia do przyspieszania wdrażania na platformie Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d47162b3e1a6a303e8b346146948667bc42c2326
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6617fe95f885836241e4b0f16bc17652f36c5a7d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222677"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806326"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Narzędzia do przyspieszania wdrażania na platformie Azure
 
@@ -28,22 +27,22 @@ Poniżej znajduje się lista narzędzi platformy Azure, które mogą pomóc w za
 |---------|---------|---------|---------|---------|---------|---------|
 |Implementowanie zasad firmowych     |Tak |Nie  |Nie  |Nie | Nie |Nie |
 |Stosowanie zasad w ramach subskrypcji     |Wymagane |Tak  |Nie  |Nie | Nie |Nie |
-|Wdróż zdefiniowane zasoby     |Nie |Nie  |Yes  |Nie | Nie |Nie |
+|Wdróż zdefiniowane zasoby     |Nie |Nie  |Tak  |Nie | Nie |Nie |
 |Tworzenie w pełni zgodnych środowisk      |Wymagane |Wymagane  |Wymagane  |Tak | Nie |Nie |
 |Zasady inspekcji      |Tak |Nie  |Nie  |Nie | Nie |Nie |
-|Tworzenie zapytań dotyczących zasobów platformy Azure      |Nie |Nie  |Nie  |Nie |Yes |Nie |
+|Tworzenie zapytań dotyczących zasobów platformy Azure      |Nie |Nie  |Nie  |Nie |Tak |Nie |
 |Raport dotyczący kosztów zasobów      |Nie |Nie  |Nie  |Nie |Nie |Tak |
 
 Poniżej znajdują się dodatkowe narzędzia, które mogą być wymagane do osiągnięcia określonych celów przyspieszenia wdrożenia. Często te narzędzia są używane poza zespołem nadzoru, ale nadal są uważane za aspekty przyspieszenia wdrożenia jako dyscypliny.
 
-|  | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Usługa Azure DevOps](https://docs.microsoft.com/azure/devops/index) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+|  | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure DevOps](https://docs.microsoft.com/azure/devops/index) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|
-|Wdrażanie ręczne (pojedynczy element zawartości)     | Tak | Yes  | Nie  | Nie efektywnie | Nie | Tak |
+|Wdrażanie ręczne (pojedynczy element zawartości)     | Tak | Tak  | Nie  | Nie efektywnie | Nie | Tak |
 |Wdrażanie ręczne (pełne środowisko)     | Nie efektywnie | Tak | Nie  | Nie efektywnie | Nie | Tak |
-|Zautomatyzowane wdrażanie (pełne środowisko)     | Nie  | Yes  | Nie  | Yes  | Nie | Tak |
+|Zautomatyzowane wdrażanie (pełne środowisko)     | Nie  | Tak  | Nie  | Tak  | Nie | Tak |
 |Aktualizacja konfiguracji pojedynczego zasobu     | Tak | Tak | Nie efektywnie | Nie efektywnie | Nie | Tak — podczas replikacji |
-|Aktualizacja konfiguracji pełnego środowiska     | Nie efektywnie | Tak | Yes | Yes  | Nie | Tak — podczas replikacji |
-|Zarządzanie dryfem konfiguracji     | Nie efektywnie | Nie efektywnie | Tak  | Yes  | Nie | Tak — podczas replikacji |
-|Utwórz zautomatyzowany potok, aby wdrożyć kod i skonfigurować zasoby (DevOps)     | Nie | Nie | Nie | Yes | Nie | Nie |
+|Aktualizacja konfiguracji pełnego środowiska     | Nie efektywnie | Tak | Tak | Tak  | Nie | Tak — podczas replikacji |
+|Zarządzanie dryfem konfiguracji     | Nie efektywnie | Nie efektywnie | Tak  | Tak  | Nie | Tak — podczas replikacji |
+|Utwórz zautomatyzowany potok, aby wdrożyć kod i skonfigurować zasoby (DevOps)     | Nie | Nie | Nie | Tak | Nie | Nie |
 
 Oprócz narzędzi macierzystych platformy Azure wymienionych powyżej często klienci mogą korzystać z narzędzi innych firm, aby ułatwić przyspieszenie wdrożenia i wdrożenia DevOps.

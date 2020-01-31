@@ -1,6 +1,5 @@
 ---
 title: Projekt ładu na platformie Azure dla wielu zespołów
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wskazówki dotyczące konfigurowania kontrolek ładu platformy Azure dla wielu zespołów, wielu obciążeń i wielu środowisk.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 7bfceb1a7fe68869dabec7eda813cd3fdc121b49
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160481"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804303"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Projekt nadzoru dla wielu zespołów
 
@@ -140,7 +139,7 @@ Teraz, Po zaprojektowaniu modelu uprawnień o najniższych uprawnieniach, przyjr
 2. **Środowisko produkcyjne:** Wiele grup zasobów reprezentujących wiele obciążeń produkcyjnych. Te zasoby są używane do obsługi prywatnych i publicznych artefaktów aplikacji. Te zasoby zwykle mają ścisłe modele zarządzania i zabezpieczeń, aby chronić zasoby, kod aplikacji i dane przed nieautoryzowanym dostępem.
 3. **Środowisko przedprodukcyjne:** Wiele grup zasobów reprezentujących wiele gotowych obciążeń nieprodukcyjnych. Te zasoby są używane na potrzeby tworzenia i testowania tych zasobów może mieć bardziej swobodny model ładu, aby zapewnić lepszą elastyczność deweloperów. Zabezpieczenia w tych grupach powinny zwiększyć się bliżej od "produkcji" procesu tworzenia aplikacji.
 
-Dla każdego z tych trzech środowisk istnieje wymóg śledzenia danych kosztów według **właściciela obciążenia**, **środowiska**lub obu. Oznacza to, że chcesz poznać bieżący koszt **infrastruktury udostępnionej**, koszty związane z poszczególnymi osobami zarówno w środowiskach przedprodukcyjnych **, jak** i **produkcyjnymi** , a wreszcie łączny koszt **przedprodukcyjnego** i  **środowiska produkcyjne** .
+Dla każdego z tych trzech środowisk istnieje wymóg śledzenia danych kosztów według **właściciela obciążenia**, **środowiska**lub obu. Oznacza to, że chcesz poznać bieżący koszt **infrastruktury udostępnionej**, koszty związane z poszczególnymi osobami zarówno w środowisku **produkcyjnym** **, jak i** produkcyjnych, a na koniec łączny koszt produkcji **przedprodukcyjnej i środowisk** **produkcyjnych** .
 
 Wiesz już, że zasoby są objęte zakresem dwóch poziomów: **subskrypcji** i **grupy zasobów**. W związku z tym pierwsza decyzja polega na tym, jak organizować środowiska przez **subskrypcję**. Dostępne są tylko dwie możliwości: pojedyncza subskrypcja lub wiele subskrypcji.
 
@@ -216,7 +215,7 @@ Otrzymany model zarządzania jest podobny do pierwszego przykładu z kilkoma klu
 
 Teraz przyjrzyjmy się modelowi zarządzania zasobami przy użyciu wielu subskrypcji. W tym modelu porównujesz każde z trzech środowisk z oddzielną subskrypcją: subskrypcję **usług udostępnionych** , subskrypcję **produkcyjną** i na koniec subskrypcji **deweloperskiej** . Zagadnienia dotyczące tego modelu są podobne do modelu przy użyciu jednej subskrypcji w programie, aby określić sposób wyrównania grup zasobów do obciążeń. Określono już, że tworzenie grupy zasobów dla każdego obciążenia spełnia wymagania dotyczące izolacji obciążenia, więc w tym przykładzie nastąpi przeniesieniu do tego modelu.
 
-1. W tym modelu istnieją trzy *subskrypcje*: *udostępniona infrastruktura*, *produkcja*i *programowanie*. Każda z tych trzech subskrypcji wymaga *właściciela subskrypcji*, a w prostym przykładzie użyjesz tego samego konta użytkownika dla wszystkich trzech. Zasoby *infrastruktury udostępnionej* są zarządzane podobnie jak dwa pierwsze przykłady, a pierwsze obciążenie jest skojarzone z *APP1 RG* w środowisku *produkcyjnym* i grupą zasobów o tej samej nazwie podczas *opracowywania* środowisko. *Właściciel obciążenia APP1* jest dodawany do każdej grupy zasobów z rolą *współautor* .
+1. W tym modelu istnieją trzy *subskrypcje*: *udostępniona infrastruktura*, *produkcja*i *programowanie*. Każda z tych trzech subskrypcji wymaga *właściciela subskrypcji*, a w prostym przykładzie użyjesz tego samego konta użytkownika dla wszystkich trzech. Zasoby *infrastruktury udostępnionej* są zarządzane podobnie jak dwa pierwsze przykłady, a pierwsze obciążenie jest skojarzone z *APP1 RG* w środowisku *produkcyjnym* i grupą zasobów o tej samej nazwie w środowisku *deweloperskim* . *Właściciel obciążenia APP1* jest dodawany do każdej grupy zasobów z rolą *współautor* .
     ![dodawania współautorów](../../_images/govern/design/governance-3-17.png)
 2. Podobnie jak w przypadku wcześniejszych przykładów, *właściciel obciążenia APP1* tworzy zasoby i żąda połączenia komunikacji równorzędnej z siecią wirtualną *infrastruktury udostępnionej* . *Właściciel obciążenia APP1* dodaje tylko tag *zarządzane* , ponieważ nie jest już potrzebny tag *Environment* . Oznacza to, że zasoby dla każdego środowiska są teraz pogrupowane w tej samej *subskrypcji* , a znacznik *środowiska* jest nadmiarowy. Licznik limit jest zmniejszany do 999 sieci wirtualnych.
     ![tworzenia połączenia komunikacji równorzędnej](../../_images/govern/design/governance-3-18.png)
@@ -259,7 +258,7 @@ Wykonaj następujące kroki:
 5. Administrator konta platformy Azure [dodaje właściciela usługi subskrypcji do każdej subskrypcji](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator).
 6. Utwórz proces zatwierdzania dla **właścicieli obciążeń** , aby zażądać tworzenia grup zasobów. Proces zatwierdzania można zaimplementować na wiele sposobów, na przykład za pośrednictwem poczty e-mail, lub za pomocą narzędzia do zarządzania procesem, takiego jak [przepływy pracy programu SharePoint](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3). Proces zatwierdzania może wykonać następujące czynności:
     - **Właściciel obciążenia** przygotowuje zestawienie materiałów dla wymaganych zasobów platformy Azure w środowisku **programistycznym** , środowisku **produkcyjnym** lub w obu systemach i przesyła je do **właściciela subskrypcji**.
-    - **Właściciel subskrypcji** przegląda zestawienie materiałów i sprawdza poprawność żądanych zasobów, aby upewnić się, że żądane zasoby są odpowiednie do ich planowanego użycia — na przykład, sprawdzając, czy żądane [rozmiary maszyn wirtualnych](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) są niepoprawne.
+    - **Właściciel subskrypcji** przegląda zestawienie materiałów i weryfikuje żądane zasoby, aby upewnić się, że żądane zasoby są odpowiednie do ich planowanego użycia — na przykład, sprawdzając, czy żądane [rozmiary maszyn wirtualnych](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) są poprawne.
     - Jeśli żądanie nie zostanie zatwierdzone, **właściciel obciążenia** zostanie powiadomiony. Jeśli żądanie zostanie zatwierdzone, **właściciel subskrypcji** [tworzy żądaną grupę zasobów](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) zgodnie z [konwencjami nazewnictwa](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)organizacji, [dodaje **właściciela obciążenia** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) z [rolą **współautor** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) i wysyła powiadomienie do **właściciela obciążenia** , który utworzył grupę zasobów.
 7. Utwórz proces zatwierdzania dla właścicieli obciążeń, aby zażądać połączenia komunikacji równorzędnej sieci wirtualnej od właściciela udostępnionej infrastruktury. Tak jak w poprzednim kroku, ten proces zatwierdzania można zaimplementować za pomocą poczty e-mail lub narzędzia do zarządzania procesami.
 

@@ -1,6 +1,5 @@
 ---
 title: Opcje replikacji
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Proces migracji do chmury, który koncentruje się na zadaniach migrowania obciążeń do chmury.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7433ddd9a1c3bb6bd62f9d065c79bbb0b1f52f1b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf798a816d799ba856d8ea20b999de1240ac5284
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022693"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802144"
 ---
 # <a name="replication-options"></a>Opcje replikacji
 
@@ -42,7 +41,7 @@ Po przeprowadzeniu oceny infrastruktury lokalnej i infrastruktury chmury na potr
 - Testowanie trybu failover w celu upewnienia się, że wszystkie funkcje działają
 - Uruchamianie jednokrotnego przejścia w tryb failover na platformie Azure
 
-## <a name="azure-database-migration-service"></a>Usługa Azure Database Migration
+## <a name="azure-database-migration-service"></a>Usługa migracji bazy danych platformy Azure
 
 Ta usługa pomaga zmniejszyć złożoność migracji do chmury przez użycie jednej, kompleksowej usługi zamiast wielu narzędzi. Usługa [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) została zaprojektowana jako bezproblemowe i kompleksowe rozwiązanie do przenoszenia lokalnych baz danych SQL Server do chmury. Jest ona w pełni zarządzaną usługą umożliwiającą bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. Usługa ta integruje niektóre funkcje istniejących narzędzi i usług, zapewniając klientom kompleksowe rozwiązanie o wysokiej dostępności.
 

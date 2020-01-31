@@ -1,6 +1,5 @@
 ---
 title: Motywacje i zagrożenia biznesowe, które przyspieszają wdrażanie
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się więcej na temat dyscypliny wdrożenia w ramach strategii zarządzania chmurą.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c9bdb912311aac6c926402753a678b9f191594c9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220721"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806394"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Motywacje do przyspieszenia wdrożenia i ryzyko biznesowe
 

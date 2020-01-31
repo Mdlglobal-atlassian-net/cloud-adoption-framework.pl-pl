@@ -1,6 +1,5 @@
 ---
 title: Ponowne hostowanie aplikacji lokalnej przez migrację do maszyn wirtualnych platformy Azure i wystąpienia zarządzanego usługi Azure SQL Database
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, w jaki sposób firma Contoso przeprowadza ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure za pomocą wystąpienia zarządzanego usługi Azure SQL Database.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b594283b4787cb9b369f018264098fd052ec638e
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 5850b9d3da33babd4c44145fbca8f81da7dd8ff5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781865"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807363"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ponowne hostowanie aplikacji lokalnej na maszynie wirtualnej platformy Azure i wystąpieniu zarządzanym usługi SQL Database
 

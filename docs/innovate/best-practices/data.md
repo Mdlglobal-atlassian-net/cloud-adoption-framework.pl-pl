@@ -1,6 +1,5 @@
 ---
 title: 'Innowacje w chmurze: narzędzia do zdemokratyzuj proces danych na platformie Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Narzędzia do zdemokratyzuj proces danych na platformie Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d86bebc3a993443c4dded4b1a0f23ff518147bd4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3fed47eb3a5bb7a3b51f19f2d103395ede848e9d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565840"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808689"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Narzędzia do zdemokratyzuj proces danych na platformie Azure
 
@@ -49,7 +48,7 @@ Na platformie Azure następujące narzędzia są często używane do przyspiesze
 - Azure Database for MariaDB
 - Skalowanie Azure Database for PostgreSQL
 - Azure Data Lake
-- Azure Database Migration Service
+- Usługa migracji bazy danych platformy Azure
 - Azure SQL Database z wystąpieniami zarządzanymi lub bez nich
 - Azure Data Factory
 - Azure Stream Analytics
@@ -57,8 +56,8 @@ Na platformie Azure następujące narzędzia są często używane do przyspiesze
 - Azure Stack
 - SQL Server Stretch Database
 - Microsoft Azure StorSimple
-- Azure Files
-- Azure File Sync
+- Usługa Pliki systemu Azure
+- Usługa Azure File Sync
 - PolyBase
 
 Zgodnie z podejściem do rozliczeń na dużą skalę, aspekty poszczególnych rozwiązań wymagają uściślania i działania techniczne. W takim przypadku może być wymagana większa liczba tych usług. Skorzystaj ze spisu treści po lewej stronie tej strony, aby uzyskać wskazówki dotyczące narzędzi platformy Azure, które są istotne dla procesu testowania hipotez.

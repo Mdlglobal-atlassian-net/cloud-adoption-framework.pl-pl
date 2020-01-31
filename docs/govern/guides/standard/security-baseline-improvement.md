@@ -1,6 +1,5 @@
 ---
 title: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: ulepszanie dyscypliny linii bazowej zabezpieczeń'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: ulepszanie dyscypliny linii bazowej zabezpieczeń'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0875442331a5da3c53c5d6c713c3bdbfcfab6cbf
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ef4d58cb871ea290f8489e806a4b78f32a9d8b3d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753048"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807125"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: ulepszanie dyscypliny linii bazowej zabezpieczeń
 

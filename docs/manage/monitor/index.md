@@ -1,6 +1,5 @@
 ---
 title: Przewodnik monitorowania chmury
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Omówienie usług Azure Monitor i System Center Operations Manager
 author: MGoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0920e834bcec0fc5885650ba5cab7ec28eac669f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 6c2b4521443e76a9d85b35b78af4d5811091fccc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752783"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807584"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Przewodnik monitorowania chmury: Wprowadzenie
 

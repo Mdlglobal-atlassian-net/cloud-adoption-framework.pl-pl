@@ -1,6 +1,5 @@
 ---
 title: Informacje o linii bazowej zabezpieczeń chmury
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się więcej o linii bazowej zabezpieczeń w chmurze.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a6de2681f83eba32400ed0dd214267f0960f5a8a
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: abd222cd3fd29f2150a18fafaae82393aa54e98b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752169"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808893"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Informacje o linii bazowej zabezpieczeń chmury
 
@@ -36,7 +35,7 @@ Co więcej, Każda strategia zabezpieczeń w chmurze powinna uwzględniać nast�
 
 ## <a name="protecting-data-and-privacy"></a>Ochrona danych i prywatności
 
-W przypadku organizacji na całym świecie &mdash;whether rządy, organizacje niedochodowe lub firmy &mdash;cloud Computing stają się kluczową częścią ich ciągłej strategii INFORMATYCZNej. Usługi Cloud Services zapewniają organizacjom o wszystkich rozmiarach dostęp do praktycznie nieograniczonego magazynu danych przy zwalnianiu ich z konieczności zakupu, obsługi i aktualizowania własnych sieci i systemów komputerowych. Dostawcy usług w chmurze firmy Microsoft i innych dostawców oferują infrastrukturę IT, platformę i oprogramowanie jako usługę (SaaS), dzięki czemu klienci mogą szybko skalować w górę lub w dół w miarę potrzeb i płacić tylko za moc obliczeniową i używane przez nich magazyn.
+W przypadku organizacji na całym świecie&mdash;, czy rządy, organizacje niedochodowe lub firmy&mdash;chmury obliczeniowej staną się kluczową częścią trwającej strategii IT. Usługi Cloud Services zapewniają organizacjom o wszystkich rozmiarach dostęp do praktycznie nieograniczonego magazynu danych przy zwalnianiu ich z konieczności zakupu, obsługi i aktualizowania własnych sieci i systemów komputerowych. Dostawcy usług w chmurze firmy Microsoft i innych dostawców oferują infrastrukturę IT, platformę i oprogramowanie jako usługę (SaaS), dzięki czemu klienci mogą szybko skalować w górę lub w dół w miarę potrzeb i płacić tylko za moc obliczeniową i używane przez nich magazyn.
 
 Jednak w miarę jak organizacje nadal korzystają z zalet usług w chmurze, takich jak zwiększone wybór, elastyczność i elastyczność przy jednoczesnym zwiększeniu wydajności i obniżeniu kosztów IT, muszą rozważyć, jak wprowadzenie usług w chmurze wpływa na ich prywatność, bezpieczeństwo i zgodność stan. Firma Microsoft pracowała nad nieskalowalnością, niezawodnością i zarządzaniem ofertami w chmurze, ale również w celu zapewnienia, że dane klientów są chronione i używane w przejrzysty sposób.
 

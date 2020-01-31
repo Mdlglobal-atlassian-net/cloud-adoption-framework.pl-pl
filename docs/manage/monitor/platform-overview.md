@@ -1,6 +1,5 @@
 ---
 title: 'Przewodnik monitorowania w chmurze: monitorowanie Platform przegląd'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Określ, kiedy używać Azure Monitor lub System Center Operations Manager w Microsoft Azure.
 author: mgoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ea8317bb7490ef7e8aa69950232191f123da4dd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751670"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807601"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Przewodnik monitorowania w chmurze: monitorowanie Platform przegląd
 
@@ -134,7 +133,7 @@ Azure Monitor nie zapewnia zdefiniowanej przez użytkownika metody implementowan
 
 - **Azure monitor dla maszyn wirtualnych:** Program udostępnia środowisko monitorowania kondycji dla maszyn wirtualnych platformy Azure gościa, podobnie jak w przypadku Operations Manager, gdy monitoruje maszyny wirtualne z systemami Windows i Linux. Szacuje kondycję kluczowych składników systemu operacyjnego z perspektywy dostępności i wydajności w celu ustalenia bieżącego stanu kondycji. Po ustaleniu, że maszyna wirtualna gościa ma zrównoważone wykorzystanie zasobów, pojemność miejsca na dysku lub problem związany z podstawową funkcjonalnością systemu operacyjnego, generuje alert, aby przenieść ten stan do uwagi.
 
-- **Azure monitor kontenerów:** Monitoruje wydajność i kondycję usługi Azure Kubernetes Service lub Azure Container Instances. Zbiera metryki pamięci i procesora z kontrolerów, węzłów i kontenerów, które są dostępne w Kubernetes za pośrednictwem interfejsu API metryk. Gromadzi również dzienniki kontenerów i dane spisu dotyczące kontenerów i ich obrazów. Wstępnie zdefiniowane kryteria kondycji, które są oparte na zebranych danych wydajności, ułatwiają określenie, czy istnieje wąskie gardło zasobów czy problem z pojemnością. Można także zrozumieć ogólną wydajność lub wydajność z określonego typu obiektu Kubernetes (pod, węzła, kontrolera lub kontenera).
+- **Azure monitor kontenerów:** Monitoruje wydajność i kondycję usługi Azure Kubernetes Service lub Azure Container Instances. Zbiera metryki pamięci i procesora z kontrolerów, węzły i kontenerów, które są dostępne w usłudze Kubernetes za pomocą interfejsu API metryki. Gromadzi również dzienniki kontenerów i dane spisu dotyczące kontenerów i ich obrazów. Wstępnie zdefiniowane kryteria kondycji, które są oparte na zebranych danych wydajności, ułatwiają określenie, czy istnieje wąskie gardło zasobów czy problem z pojemnością. Można także zrozumieć ogólną wydajność lub wydajność z określonego typu obiektu Kubernetes (pod, węzła, kontrolera lub kontenera).
 
 ## <a name="analyze-data"></a>Analizuj dane
 

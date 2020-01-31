@@ -1,6 +1,5 @@
 ---
 title: 'Innowacje w chmurze: Zaangażuj aplikacje'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wprowadzenie do innowacji w chmurze — umożliwia korzystanie z aplikacji.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 337eac12b3c01136f611d6a53693de4d29663f46
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 77921ce7c683ff5bfc32c711719ae58ae049f039
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752069"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808570"
 ---
 # <a name="engage-through-applications"></a>Zaangażuj aplikacje
 
@@ -36,7 +35,7 @@ Aby zapewnić gotowość do innowacji, cały rozwój aplikacji powinien rozpoczy
 
 Profesjonalni deweloperzy są istotnym składnikiem innowacji. Gdy hipoteza zawiedzie dokładnie na dużą skalę, Profesjonalni deweloperzy są zobowiązani do stabilizacji i przygotowania rozwiązania do skalowania. Większość zasad, do których odwołuje się ten artykuł, wymaga wsparcia dla profesjonalnych deweloperów. Niestety bieżące trendy sugerują, że w przypadku deweloperów korzystających z oprogramowania dla profesjonalistów nie są deweloperzy. Ponadto koszt i tempo innowacji mogą być mniej korzystne, gdy profesjonalne programowanie jest uznawane za niezbędne. W odpowiedzi na te wyzwania deweloperzy deweloperów umożliwiają skalowanie wysiłków programistycznych i przyspieszenie testowania hipotezy wczesnej.
 
-Wykorzystanie deweloperów może być opłacalne i skuteczne, gdy wczesne poprawność może być zweryfikowana za pomocą narzędzi, takich jak [powerapps](https://docs.microsoft.com/powerapps/powerapps-overview) dla interfejsów aplikacji, [Konstruktor AI](https://docs.microsoft.com/powerapps/use-ai-builder) dla procesów i prognoz, [Microsoft Flow](https://docs.microsoft.com/flow) dla przepływów pracy i [Power Usługa BI](https://docs.microsoft.com/power-bi) do użycia danych.
+Wykorzystanie deweloperów może być opłacalne i skuteczne, gdy wczesne poprawność może być zweryfikowana za pomocą narzędzi takich jak [powerapps](https://docs.microsoft.com/powerapps/powerapps-overview) dla interfejsów aplikacji, [Konstruktor AI](https://docs.microsoft.com/powerapps/use-ai-builder) dla procesów i prognoz, [Microsoft Flow](https://docs.microsoft.com/flow) dla przepływów pracy i [Power BI](https://docs.microsoft.com/power-bi) do zużycia danych.
 
 > [!NOTE]
 > Gdy polegasz na programistach deweloperów do testowania form, zaleca się, aby niektórzy Profesjonalni deweloperzy mogli zapewnić pomoc techniczną, przegląd i wskazówki. Po sprawdzeniu hipotezy na dużą skalę proces przenoszenia aplikacji do bardziej niezawodnego modelu programowania przyspieszy powracanie do innowacji. W przypadku wczesnych deweloperów w definicjach procesów możesz w późniejszym czasie korzystać z przejść.

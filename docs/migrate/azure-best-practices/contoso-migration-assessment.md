@@ -1,6 +1,5 @@
 ---
 title: Ocena obciążeń lokalnych pod kątem migracji do platformy Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, w jaki sposób firma Contoso ocenia swoje lokalne maszyny pod kątem migracji na platformę Azure przy użyciu usługi Azure Migrate i narzędzia Data Migration Assistant.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 051e52bee9b83160860234f953b19439b64eed97
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566485"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807482"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Ocena obciążeń lokalnych pod kątem migracji do platformy Azure
 
@@ -45,7 +44,7 @@ Na tym diagramie przedstawiono bieżącą infrastrukturę lokalną firmy Contoso
 - Firma Contoso ma trzy dodatkowe oddziały lokalne na terenie Stanów Zjednoczonych.
 - Główne centrum danych jest połączone z Internetem łączem światłowodowym Metro Ethernet (500 MB/s).
 - Każdy oddział jest połączony lokalnie z Internetem przy użyciu połączeń klasy biznesowej z tunelami IPsec sieci VPN z głównym centrum danych. Taka konfiguracja zapewnia trwałe połączenie całej sieci firmy Contoso i optymalizację łączności z Internetem.
-- Główne centrum danych jest w pełni zwirtualizowane przy użyciu oprogramowania VMware. Firma Contoso ma dwa hosty wirtualizacji ESXi 6.5, które są zarządzane za pomocą programu vCenter Server 6.5.
+- Główne centrum danych jest w pełni zwirtualizowane przy użyciu programu VMware. Firma Contoso ma dwa hosty wirtualizacji ESXi 6.5, które są zarządzane za pomocą programu vCenter Server 6.5.
 - Do zarządzania tożsamościami firma Contoso używa usługi Active Directory. Serwery DNS firmy Contoso działają w sieci wewnętrznej.
 - Kontrolery domeny w centrum danych działają na maszynach wirtualnych VMware. Kontrolery domeny w oddziałach lokalnych działają na serwerach fizycznych.
 
@@ -55,7 +54,7 @@ Zespół liderów IT firmy Contoso w ścisłej współpracy z partnerami bizneso
 
 - **Reagowanie na rosnące potrzeby biznesowe.** Firma Contoso rozwija się. W związku z tym zwiększyło się obciążenie lokalnych systemów i infrastruktury firmy.
 - **Zwiększenie wydajności.** Firma Contoso chce usunąć niepotrzebne procedury oraz usprawnić procesy dla swoich deweloperów i użytkowników. Firma chce, aby dział IT był szybki i nie tracił czasu ani pieniędzy, a firma mogła dzięki temu szybciej obsługiwać swoich klientów.
-- **Zwiększenie elastyczności.** Firma Contoso chce lepiej odpowiadać na zapotrzebowania w branży. Chce być w stanie szybciej reagować na zamiany zachodzące na rynku, aby odnosić sukcesy w gospodarce światowej. Firma Contoso nie chce utrudniać pracy ani stać się przeszkodą biznesową.
+- **Zwiększenie elastyczności.** Dział IT firmy Contoso chce lepiej odpowiadać na zapotrzebowania biznesowe. Chce być w stanie szybciej reagować na zamiany zachodzące na rynku, aby odnosić sukcesy w gospodarce światowej. Firma Contoso nie chce utrudniać pracy ani stać się przeszkodą biznesową.
 - **Skalowalność.** W miarę rozwoju firmy Contoso jej dział IT musi zapewnić systemy, które będą mogły rosnąć w tym samym tempie.
 
 ## <a name="assessment-goals"></a>Cele oceny
@@ -73,7 +72,7 @@ Do oceny migracji firma Contoso używa narzędzi firmy Microsoft. Narzędzia te 
 
 Technologia | Opis | Koszt
 --- | --- | ---
-[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia Data Migration Assistant do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie Data Migration Assistant ocenia równoważność funkcji między źródłowymi i docelowymi elementami SQL. Wynikiem działania tego narzędzia są zalecenia dotyczące poprawy wydajności i niezawodności. | Narzędzie Data Migration Assistant można bezpłatnie pobrać.
+[Asystent migracji danych](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia Data Migration Assistant do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie Data Migration Assistant ocenia równoważność funkcji między źródłowymi i docelowymi elementami SQL. Wynikiem działania tego narzędzia są zalecenia dotyczące poprawy wydajności i niezawodności. | Narzędzie Data Migration Assistant można bezpłatnie pobrać.
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną.
 [Mapa usługi](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Usługa Azure Migrate za pomocą rozwiązania Service Map przedstawia zależności między maszynami, które firma chce zmigrować. | Rozwiązanie Service Map jest częścią dzienników usługi Azure Monitor. Obecnie firma Contoso może używać rozwiązania Service Map przez 180 dni bez naliczania opłat.
 

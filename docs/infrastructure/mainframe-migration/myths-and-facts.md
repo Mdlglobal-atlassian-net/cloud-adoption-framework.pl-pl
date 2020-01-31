@@ -1,6 +1,5 @@
 ---
 title: 'Migracja komputera mainframe: mitów i fakty'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migruj aplikacje ze środowisk mainframe na platformę Azure, czyli sprawdzoną, wysoce dostępną i skalowalną infrastrukturę dla systemów, które obecnie działają na komputerach mainframe.
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4adf229b1ffca1d1360d197ab09a04f0d9584ef8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e3e14bca45f8e5531e663c76b346f295ccb64319
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547921"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808757"
 ---
 # <a name="mainframe-myths-and-facts"></a>Mitów i fakty komputera mainframe
 

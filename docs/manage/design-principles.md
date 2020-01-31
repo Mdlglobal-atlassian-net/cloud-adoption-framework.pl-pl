@@ -1,6 +1,5 @@
 ---
 title: Zastosuj zasady projektowania i zaawansowane operacje
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Zastosuj zasady projektowania i zaawansowane operacje
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 16762a0eae366c3bf1cd578faaf52df60e6c97b1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752763"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807686"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Zastosuj zasady projektowania i zaawansowane operacje
 
@@ -90,13 +89,13 @@ Większość przerw w działalności biznesowej oznacza jakąś formę długu te
 
 Aby ulepszyć projekt systemu, Dowiedz się więcej o [architekturze architektury platformy Azure](https://docs.microsoft.com/azure/architecture/guide/pillars). W miarę ulepszania projektu systemu Wróć do tego artykułu, aby znaleźć nowe możliwości ulepszania i skalowania ulepszeń w środowisku.
 
-### <a name="automated-remediation"></a>Automatyczne korygowanie
+### <a name="automated-remediation"></a>Zautomatyzowane korygowanie
 
 Nie można rozwiązać niektórych długów technicznych ani nie należy do nich. Rozwiązanie może być zbyt drogie w naprawie. Może być planowana, ale może być długi czas trwania projektu. Przerwa działające w firmie może nie mieć znaczącego wpływu na działalność biznesową, a priorytet firmy ma na celu szybkie odzyskanie, zamiast inwestowania w odporności.
 
 Jeśli pozbycie się długu technicznego nie jest najbardziej pożądane, następnym krokiem jest zazwyczaj zautomatyzowane korygowanie. Najpopularniejszą metodą zautomatyzowanego korygowania jest wykrywanie trendów i zapewnienie zautomatyzowanego korygowania przy użyciu usług Azure Automation i Azure Monitor.
 
-Aby uzyskać wskazówki dotyczące automatycznego korygowania, zobacz [Azure Automation i alerty](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook).
+Aby uzyskać wskazówki dotyczące zautomatyzowanego korygowania, zobacz [Azure Automation i alerty](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook).
 
 ### <a name="scale-the-solution-with-a-service-catalog"></a>Skalowanie rozwiązania przy użyciu katalogu usług
 
@@ -110,6 +109,6 @@ Informacje o publikowaniu w katalogu usług znajdują się w sekcji w temacie [P
 
 Specjalizacja i operacje platformy zależą od silnych cykli wymiany opinii między zespołami wdrażania, platformy, automatyzacji i zarządzania. Osadzenie tych cykli wymiany opinii w danych pozwala każdemu zespołowi podejmować mądre decyzje. W przypadku operacji na platformie w celu osiągnięcia długoterminowych zobowiązań gospodarczych należy skorzystać z szczegółowych informacji, które są specyficzne dla scentralizowanej platformy. Ponieważ kontenery i SQL Server są dwa najpopularniejsze platformy zarządzane centralnie, należy rozważyć wprowadzenie do zbierania danych ciągłego ulepszania, przeglądając następujące artykuły:
 
-- [Wydajność kontenera](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
+- [Wydajność kontenerów](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
 - [Wydajność bazy danych PaaS](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
 - [Wydajność bazy danych IaaS](https://docs.microsoft.com/azure/azure-monitor/insights/sql-assessment)

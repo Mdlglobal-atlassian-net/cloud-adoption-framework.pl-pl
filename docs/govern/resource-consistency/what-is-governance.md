@@ -1,6 +1,5 @@
 ---
 title: Co to jest nadzór nad zasobami w chmurze?
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wyjaśnienie zarządzania zasobami w chmurze na platformie Azure
 author: alexbuckgit
 ms.author: abuck
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 7f22a4f28d0d84a8847d06d37ad88002a03ecc16
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9277bf82d9034108b478536a699f96918c38ae0d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221867"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807278"
 ---
 <!-- markdownlint-disable MD026 -->
 

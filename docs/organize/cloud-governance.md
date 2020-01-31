@@ -1,6 +1,5 @@
 ---
 title: Możliwości ładu chmury
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Opisuje sposób tworzenia możliwości zarządzania chmurą
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 38fa6133c9a4f823d4347b3c1b4db5dd81f24ceb
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 824ce55dd6dc78e0d4200efa9c2d1418b343ccb7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781458"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806904"
 ---
 # <a name="cloud-governance-capabilities"></a>Możliwości ładu chmury
 
@@ -24,21 +23,21 @@ Każdy rodzaj zmiany generuje nowe ryzyko. Możliwości ładu chmury zapewniają
 
 W zależności od żądanych wyników działalności biznesowej umiejętności potrzebne do zapewnienia pełnej możliwości zarządzania chmurą mogą być udostępniane przez:
 
-- Zarządzanie IT
+- IT governance
 - Architektura przedsiębiorstwa
 - Zabezpieczenia
-- Operacje IT
-- Infrastruktura IT
+- IT operations
+- IT infrastructure
 - Networking
 - Tożsamość
 - Wirtualizacja
 - Ciągłość biznesowa i odzyskiwanie po awarii
-- Właściciele aplikacji w ramach tej
+- Application owners within IT
 - Właściciele finansów
 
 Możliwości ładu chmury identyfikują ryzyko związane z bieżącymi i przyszłymi wersjami. Ta funkcja jest widoczna w obszarze wysiłki, aby oszacować ryzyko, zrozumieć potencjalne oddziaływania i podejmować decyzje dotyczące odporności na ryzyko. W takim przypadku plany można szybko zaktualizować, aby odzwierciedlały zmiany w [możliwościach wdrożenia chmury](./cloud-adoption.md).
 
-## <a name="key-responsibilities"></a>Kluczowe obowiązki
+## <a name="key-responsibilities"></a>Key responsibilities
 
 Podstawową opłatą za wszelką możliwość zarządzania chmurą jest równowaga konkurencyjnych sił transformacji i ryzyka. Ponadto zarządzanie chmurą gwarantuje, że wdrożenie [chmury](./cloud-adoption.md) ma świadomość danych i klasyfikacji zasobów oraz wskazówki dotyczące architektury, które regulują wszystkie podejścia do wdrażania. Zespół będzie również współpracował z [centrum usługi Cloud doskonałości](./cloud-center-of-excellence.md) , aby zastosować zautomatyzowane podejścia do zarządzania środowiskami chmury.
 
@@ -56,7 +55,7 @@ Te zadania są zwykle wykonywane przez funkcję ładu w chmurze co miesiąc.
 - Reprezentuje [tolerancję biznesową dla ryzyka](../govern/policy-compliance/risk-tolerance.md)
 - Pomoc w przyrostowym ulepszaniu [zasad i wymagań dotyczących zgodności](../govern/policy-compliance/index.md)
 
-## <a name="meeting-cadence"></a>Erze spotkania
+## <a name="meeting-cadence"></a>Meeting cadence
 
 Możliwość zarządzania chmurą jest zwykle dostarczana przez zespół pracujący. Zobowiązanie czasu od każdego członka zespołu będzie reprezentować znaczną część dziennych harmonogramów. Udziały nie będą ograniczone do spotkań i cykli przesyłania opinii.
 

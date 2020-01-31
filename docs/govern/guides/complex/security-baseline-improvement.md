@@ -1,6 +1,5 @@
 ---
 title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej zabezpieczeń'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej zabezpieczeń'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a8cf7c6bb09d2f4c505e3edcb97a0354a870a730
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 41fba8029eabb570a40d5692374f1cb7e7d7c9b5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753206"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806241"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej zabezpieczeń
 

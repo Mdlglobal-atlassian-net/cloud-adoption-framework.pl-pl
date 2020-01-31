@@ -1,6 +1,5 @@
 ---
 title: Przejrzyj opcje danych
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Przejrzyj opcje danych dla obciążeń platformy Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 950465788053fa0977a158a5363cb6271e65b3e6
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 434fb0982b0749a6fcb117b86d8cf3bb6335f13a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243151"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806887"
 ---
 # <a name="review-your-data-options"></a>Przejrzyj opcje danych
 
@@ -50,7 +49,7 @@ W poniższej tabeli przedstawiono kilka wymagań w zakresie typowych scenariuszy
 
 | **Scenariusz** | **Usługa danych** |
 |-----|-----|
-| Potrzebuję wielomodelowej bazy danych o globalnej dystrybucji z obsługą rozwiązań NoSQL. | [Usługi Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) |
+| Potrzebuję wielomodelowej bazy danych o globalnej dystrybucji z obsługą rozwiązań NoSQL. | [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) |
 | Potrzebuję w pełni zarządzanej relacyjnej bazy danych z szybkim inicjowaniem obsługi, skalowaniem na bieżąco oraz wbudowaną inteligencją i zabezpieczeniami. | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) |
 | Potrzebuję w pełni zarządzanej i skalowalnej relacyjnej bazy danych MySQL o wysokiej dostępności i z wbudowanymi zabezpieczeniami bez dodatkowych kosztów. | [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview) |
 | Potrzebuję w pełni zarządzanej i skalowalnej relacyjnej bazy danych PostgreSQL o wysokiej dostępności i z wbudowanymi zabezpieczeniami bez dodatkowych kosztów. | [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) |
@@ -66,7 +65,7 @@ Platforma Azure pozwala na dostarczanie usług w potrzebnej skali, aby dotrzeć 
 
 Większość usług bazy danych jest ogólnie dostępna w większości regionów Azure. Istnieje jednak kilka regionów, głównie przeznaczonych dla instytucji rządowych, które obsługują tylko podzbiór tych produktów. Przed podjęciem decyzji o regionach, w których zostaną wdrożone zasoby baz danych, zalecamy zapoznanie się ze [stroną z regionami](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database) w celu sprawdzenia najnowszego stanu dostępności regionalnej.
 
-Aby dowiedzieć się więcej o globalnej infrastrukturze platformy Azure, zobacz stronę [Regiony systemu Azure](https://azure.microsoft.com/global-infrastructure/regions). Aby uzyskać szczegółowe informacje o tym, co jest dostępne w poszczególnych regionach platformy Azure, można także wyświetlić  [dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all).
+Aby dowiedzieć się więcej o globalnej infrastrukturze platformy Azure, zobacz stronę [Regiony systemu Azure](https://azure.microsoft.com/global-infrastructure/regions). Aby uzyskać szczegółowe informacje o ogólnych usługach dostępnych w poszczególnych regionach platformy Azure, można także wyświetlić  [dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all).
 
 ## <a name="data-residency-and-compliance-requirements"></a>Wymagania dotyczące miejsca przechowywania danych oraz zgodności
 
