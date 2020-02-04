@@ -1,6 +1,6 @@
 ---
 title: Sieci obwodowe
-description: Sieci obwodowe
+description: Dowiedz się więcej o tym, jak sieci obwodowe, nazywane również strefami zdemilitaryzowana (stref DMZ), korzystają z funkcji i usług platformy Azure.
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -10,12 +10,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 6125a428d67130d891623a30ca75a11527fbbe23
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2aa561a7ffdcf43ffc56ad89849e933ea8abf186
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799781"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994222"
 ---
 # <a name="perimeter-networks"></a>Sieci obwodowe
 

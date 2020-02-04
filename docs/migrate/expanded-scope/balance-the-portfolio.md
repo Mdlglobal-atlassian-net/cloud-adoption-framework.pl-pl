@@ -1,18 +1,18 @@
 ---
 title: Równoważenie portfela
-description: Oszczędne, aby zrównoważyć portfolio w chmurze.
+description: Odkryj strategie umożliwiające zrównoważenie migracji, innowacji i eksperymentów, aby maksymalnie wykorzystać możliwości migracji do chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e93d5144a361aa3d6fb328c1d6f47eb3c069e11c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d317ea1af4dae3d09d62eb39ebd057ab953341bd
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803300"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994196"
 ---
 # <a name="balance-the-portfolio"></a>Równoważenie portfela
 
@@ -118,7 +118,7 @@ Podczas migracji należy podzielić wysiłki na trzy sposoby wymienione powyżej
 
 Nie są wymagane żadne dodatkowe zmiany w trakcie procesów optymalizacji i podwyższania poziomu w ramach nakładu pracy migracji.
 
-## <a name="secure-and-manage-process-changes"></a>Zabezpieczanie zmian procesu oraz zarządzanie nimi
+## <a name="secure-and-manage-process-changes"></a>Zmiany procesu zabezpieczania i zarządzania
 
 Nie są wymagane żadne dodatkowe zmiany w trakcie procesów zabezpieczania i zarządzania w ramach nakładu pracy migracji.
 
