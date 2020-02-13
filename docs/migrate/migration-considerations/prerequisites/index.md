@@ -1,18 +1,18 @@
 ---
 title: Wymagania wstępne migracji
-description: Wymagania wstępne migracji
+description: Zapoznaj się z wymaganiami wstępnymi, które ułatwiają przygotowanie się do migracji do chmury i pomagają uniknąć typowych przyczyn niepowodzenia migracji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2f8fe1be35e1f629da3f57e1344b573e97ff571b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eb7d0c8b0ee6ebd328ffd4807199e0b0e2620d35
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801464"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173319"
 ---
 # <a name="prerequisites-for-migration"></a>Wymagania wstępne dotyczące migracji
 
