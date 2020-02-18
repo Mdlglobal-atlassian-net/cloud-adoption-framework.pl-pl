@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 603e26d5fc8405e29d163bc0585bc0ce3cd5093f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 34b67422ad8f32cf8d6bae141db05956a1b41e22
+ms.sourcegitcommit: 6a22ac00549eb9964f25d3dfd63730e17f7eefe1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804490"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413201"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Włącz powodzenie w trakcie podróży w chmurze
 
@@ -69,7 +69,7 @@ Oprócz struktury wdrażania w chmurze firma Microsoft omawia dodatkowe tematy, 
                     </div>
                     <div class="cardText">
                         <h3>Niezawodna architektura (odporność)</h3>
-                        <p>Proces tworzenia niezawodnej aplikacji w chmurze różni się od procesu opracowywania tradycyjnej aplikacji. W przeszłości przeprowadzano skalowanie w górę, kupując sprzęt wysokiej klasy, natomiast w środowisku chmury jest stosowane skalowanie w poziomie. Zamiast zapobiegać wszystkim awariom, dąży się do minimalizacji wpływu awarii pojedynczego składnika.</p>
+                        <p>Proces tworzenia niezawodnej aplikacji w chmurze różni się od procesu opracowywania tradycyjnej aplikacji. W przeszłości można zakupić poziomy nadmiarowego sprzętu wyższego poziomu, aby zminimalizować prawdopodobieństwo awarii całej platformy aplikacji. W chmurze potwierdzamy, że wystąpią błędy. Zamiast próbować całkowicie zapobiegać awariom, celem jest minimalizacja wpływu awarii pojedynczego składnika.</p>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@ Oprócz struktury wdrażania w chmurze firma Microsoft omawia dodatkowe tematy, 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Centrum architektury Azure</h3>
+                        <h3>Centrum architektury platformy Azure</h3>
                         <p>Rozwiązania architektury, architektury referencyjne, przykładowe scenariusze, najlepsze rozwiązania i wzorce projektowania w chmurze pomagające w architekturze rozwiązań działających na platformie Azure.</p>
                     </div>
                 </div>
