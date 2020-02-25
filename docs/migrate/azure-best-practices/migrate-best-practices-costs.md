@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 03fb8ab37657ea500c342884e2ae2ca1c1290fca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 30783e760f85324116e0a9a968a1c5aa486eb6f7
+ms.sourcegitcommit: 41cb36f58cc48950da1a2aa2032cc34ba5b16a0b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803725"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77599969"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące określania kosztów i rozmiarów obciążeń migrowanych na platformę Azure
 
@@ -38,7 +38,7 @@ Aby przewidzieć miesięczny rachunek za zmigrowane obciążenia, możesz użyć
 
 - **Kalkulator cen platformy Azure:** Wybierasz produkty, które chcesz oszacować, na przykład maszyny wirtualne i magazyn. Wprowadzasz koszty do kalkulatora cen, aby utworzyć oszacowanie.
 
- ![Kalkulator cen platformy Azure](./media/migrate-best-practices-costs/pricing.png) *kalkulatora cen platformy Azure*
+ Kalkulator cen ![platformy Azure](./media/migrate-best-practices-costs/pricing.png) *Kalkulator cen platformy Azure*
 
 - **Azure Migrate:** Aby oszacować koszty, należy przejrzeć i uwzględnić wszystkie zasoby wymagane do uruchamiania obciążeń na platformie Azure. Aby uzyskać te dane, należy utworzyć spis zasobów, w tym serwerów, maszyn wirtualnych, baz danych i magazynów. Aby zebrać te informacje, można użyć usługi Azure Migrate.
 
@@ -67,7 +67,7 @@ Podczas wdrażania maszyn wirtualnych platformy Azure do obsługi obciążeń mo
 **Zastosowania ogólne** | Zrównoważona moc procesora CPU w stosunku do pamięci. | Dobra opcja na potrzeby testowania i programowania, małych i średnich baz danych oraz serwerów internetowych o niewielkim i średnim ruchu.
 **Optymalizacja pod kątem obliczeń** | Duża moc procesora CPU w stosunku do pamięci. | Dobra opcja w przypadku serwerów internetowych o średnim ruchu, urządzeń sieciowych, procesów wsadowych i serwerów aplikacji.
 **Optymalizacja pod kątem pamięci** | Duża ilość pamięci w stosunku do procesora CPU. | Dobra opcja w przypadku relacyjnych baz danych, średnich i dużych pamięci podręcznych oraz analizowania w pamięci.
-**Optymalizacja pod kątem magazynu** | Wysoka przepływność dysku i operacje we/wy. | Dobra opcja w przypadku danych big data oraz baz danych SQL i NoSQL.
+**Optymalizacja pod kątem magazynu** | Wysoka przepływność dysku i duża liczba operacji we/wy. | Dobra opcja w przypadku danych big data oraz baz danych SQL i NoSQL.
 **Optymalizacja pod kątem procesora GPU** | Wyspecjalizowane maszyny wirtualne. Jeden lub wiele procesorów GPU. | Duże obciążenie grafiką i edytowaniem wideo.
 **Wysoka wydajność** | Najszybszy i najbardziej wydajny procesor CPU. Maszyny wirtualne z opcjonalnymi interfejsami sieciowymi zapewniającymi wysoką przepływność (RDMA) | Krytyczne aplikacje o wysokiej wydajności.
 
@@ -152,7 +152,7 @@ Konta magazynu mogą wykorzystywać różne typy nadmiarowości na potrzeby zape
 - [Porównaj](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) typy danych magazynu, takie jak obiekty blob, pliki i dyski.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) o warstwach dostępu.
 - [Przejrzyj](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) różne typy kont magazynu.
-- Dowiedz się więcej o [nadmiarowości magazynu](https://docs.microsoft.com/azure/storage/common/storage-redundancy), magazynach [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) i [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) oraz o [dostępie do odczytu z magazynu GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-geo-redundant-storage).
+- Dowiedz się więcej o [nadmiarowości magazynu](https://docs.microsoft.com/azure/storage/common/storage-redundancy), magazynach [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) i [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) oraz o [dostępie do odczytu z magazynu GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-to-data-in-the-secondary-region).
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) o usłudze Azure Files.
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>Najlepsze rozwiązanie: korzystanie z korzyści użycia hybrydowego platformy Azure
