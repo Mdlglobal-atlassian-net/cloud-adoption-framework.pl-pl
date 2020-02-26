@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bc20624beb0d3a088d119bf0f75c1e1881d37fce
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566671"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629219"
 ---
 # <a name="azure-virtual-datacenter"></a>Wirtualne centrum danych Azure
 
@@ -36,8 +36,8 @@ ms.locfileid: "73566671"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">Wirtualne centrum danych Azure: perspektywa sieci</a></h3>
-        <p>W tym artykule online zamieszczono omówienie wzorców sieciowych i projektów, których można użyć do rozwiązywania problemów ze skalą architektury, wydajności i zabezpieczeniami. Problemy te stanowią wyzwanie dla wielu klientów, którzy rozważają przechodzenie do chmury na dużą skalę.</p>
+        <h3><a href="./networking-vdc.md">Wirtualne centrum danych: perspektywa sieci</a></h3>
+        <p>Ten przegląd wzorców i wzorów sieciowych dotyczy problemów ze skalą architektury, wydajnością i bezpieczeństwem, które są używane przez klientów podczas planowania migracji w chmurze na dużą skalę.</p>
     </td>
 </tr>
 <tr>

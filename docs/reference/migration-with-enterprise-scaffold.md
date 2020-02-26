@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 3cbce52809c191ec6bacf30454bd2e9a48d57c1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798795"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629253"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: zalecenia dotyczące zarządzania subskrypcjami
 
@@ -53,7 +53,7 @@ Na poniższej ilustracji przedstawiono składniki szkieletu. Podstawą jest plan
 
 Podstawą szkieletu jest hierarchia i relacja rejestracji w przedsiębiorstwie platformy Azure w ramach subskrypcji i grup zasobów. Rejestracja w przedsiębiorstwie definiuje kształt i użycie usług platformy Azure w ramach Twojej firmy z punktu widzenia umowy. W ramach Umowa Enterprise można dodatkowo podzielić środowisko na działy, konta, subskrypcje i grupy zasobów, aby pasowały do struktury organizacji.
 
-![Hierarchiczn](../_images/reference/agreement.png)
+![Hierarchia](../_images/reference/agreement.png)
 
 Subskrypcja platformy Azure to podstawowa jednostka, w której znajdują się wszystkie zasoby. Definiuje również kilka limitów w ramach platformy Azure, takich jak liczba rdzeni, sieci wirtualne i inne zasoby. Grupy zasobów służą do dokładniejszego uściślenia modelu subskrypcji i zapewnienia bardziej naturalnej grupy zasobów.
 
@@ -184,7 +184,7 @@ W przypadku implementowania dostępu opartego na rolach należy wykonać następ
 
 Planowanie i przygotowywanie do kontroli tożsamości i dostępu oraz stosowanie najlepszych rozwiązań w zakresie zarządzania tożsamościami ([link](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)) jest jednym z najlepszych strategii zaradczych, które można zastosować i powinny być uznawane za obowiązkowe dla każdego wdrożenia.
 
-## <a name="security"></a>Zabezpieczenia
+## <a name="security"></a>Bezpieczeństwo
 
 Jeden z największych blokad do wdrożenia w chmurze tradycyjnie ma wpływ na bezpieczeństwo. Menedżerowie ryzyka IT i działy zabezpieczeń muszą zapewnić, że zasoby na platformie Azure są chronione i zabezpieczone domyślnie. Platforma Azure udostępnia funkcje, których można używać do ochrony zasobów podczas wykrywania i eliminowania zagrożeń związanych z tymi zasobami.
 
@@ -338,7 +338,7 @@ Ostatnim składnikiem modelu referencyjnego szkieletu platformy Azure jest rdze�
 
 ### <a name="azure-virtual-datacenter"></a>Wirtualne centrum danych Azure
 
-Platforma Azure udostępnia zarówno wewnętrzne możliwości, jak i funkcje innych firm, które umożliwiają efektywne zasobów zakresie zabezpieczeń. Co ważniejsze, firma Microsoft oferuje najlepsze rozwiązania i wskazówki w formie [wirtualnego centrum danych platformy Azure (VDC)](./networking-vdc.md). Podczas przechodzenia z pojedynczego obciążenia do wielu obciążeń, które wykorzystują możliwości hybrydowe, wskazówki VDC zapewniają "przepisy", aby umożliwić elastyczne, sieci, które będą rosnąć w miarę wzrostu obciążeń na platformie Azure.
+Platforma Azure udostępnia funkcje wewnętrzne i zewnętrzne z naszej rozległej sieci partnerskiej, która zapewnia efektywną zasobów zakresie bezpieczeństwa. Co ważniejsze, firma Microsoft oferuje najlepsze rozwiązania i wskazówki w formie [wirtualnego centrum danych platformy Azure (VDC)](./networking-vdc.md). Podczas przechodzenia z pojedynczego obciążenia do wielu obciążeń, które wykorzystują możliwości hybrydowe, wskazówki VDC zapewniają "przepisy", aby umożliwić elastyczne, sieci, które będą rosnąć w miarę wzrostu obciążeń na platformie Azure.
 
 ## <a name="next-steps"></a>Następne kroki
 

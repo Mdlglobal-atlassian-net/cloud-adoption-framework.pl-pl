@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 825c220bda1c560c5d7bf07bcae649017525ff53
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e32151fc39f22e4dcb2a9ab40b24f351b11775e7
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805629"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629304"
 ---
 # <a name="resource-access-management-in-azure"></a>Zarządzanie dostępem do zasobów na platformie Azure
 
@@ -58,7 +58,7 @@ Na poniższej ilustracji przedstawiono trzech klientów: [PowerShell](https://do
 ![diagram klientów platformy Azure łączących się z interfejsem API Azure Resource Manager](../../_images/govern/design/governance-1-13.png)
 *rysunek 5 — klienci platformy Azure łączą się z interfejsem API programu Azure Resource Manager RESTful.*
 
-Gdy ci klienci łączą się z Azure Resource Manager przy użyciu interfejsu API RESTful, Azure Resource Manager nie obejmuje funkcji bezpośredniego zarządzania zasobami. Zamiast tego większość typów zasobów na platformie Azure ma własnego [**dostawcę zasobów**](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
+Gdy ci klienci łączą się z Azure Resource Manager przy użyciu interfejsu API RESTful, Azure Resource Manager nie obejmuje funkcji bezpośredniego zarządzania zasobami. Zamiast tego większość typów zasobów na platformie Azure ma własnego [dostawcę zasobów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
 
 ![dostawcami zasobów platformy Azure](../../_images/govern/design/governance-1-14.png)
 *rysunek 6 — dostawcy zasobów platformy Azure.*
