@@ -1,6 +1,6 @@
 ---
 title: Ustalanie procesów zapewniania zgodności zasad
-description: Ustanów procesy w celu zapewnienia zgodności z zasadami firmowymi.
+description: Utwórz strategię i procesy, aby upewnić się, że wdrożenie w chmurze pozostaje zgodne z wymaganiami dotyczącymi zasad. 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bf69c13d80063e44a49d945908e2cc319b90ce3e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 760015fc72cd893cb14dd39d9a9b3078d304da97
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807176"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709468"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -78,7 +78,7 @@ Przykładowe wyzwalacze naruszenia i akcje:
 
 | Dyscyplina ładu chmury | Przykładowy wyzwalacz | Przykładowa akcja |
 |-----------------------------|----------------|---------------|
-| Zarządzanie kosztami | Miesięczne wydatki na chmurę są większe niż 20% wyższe niż oczekiwano. | Powiadom lidera jednostki rozliczeniowej, który rozpocznie przegląd użycia zasobów. |
+| Cost Management | Miesięczne wydatki na chmurę są większe niż 20% wyższe niż oczekiwano. | Powiadom lidera jednostki rozliczeniowej, który rozpocznie przegląd użycia zasobów. |
 | Punkt odniesienia zabezpieczeń | Wykrywaj podejrzane działania użytkownika. | Powiadom zespół ds. zabezpieczeń IT i Wyłącz podejrzane konto użytkownika. |
 | Spójność zasobów | Użycie procesora CPU dla obciążenia jest większe niż 90%. | Powiadom zespół ds. operacji IT i Skaluj dodatkowe zasoby, aby obsłużyć obciążenie. |
 

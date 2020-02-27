@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wstępne zasady firmowe związane z strategią ładu'
-description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wstępne zasady firmowe związane z strategią ładu'
+title: 'Kompleksowe zarządzanie przedsiębiorstwami: wstępne zasady firmowe'
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby zdefiniować początkową sytuację ładu, ryzyko wczesnego etapu, wstępne instrukcje zasad i procesy wczesnego wymuszania.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2949c89b5cafd472af98245a37cae43e69c634a4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: af39421f89b8aacb3bae1f759631ee72adda40cd
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806309"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709162"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wstępne zasady firmowe związane z strategią ładu
 

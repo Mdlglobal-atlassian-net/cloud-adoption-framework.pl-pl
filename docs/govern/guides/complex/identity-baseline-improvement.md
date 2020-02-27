@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej tożsamości'
-description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej tożsamości'
+title: 'Złożone przedsięwzięcia korporacyjne: ulepszanie dyscypliny linii bazowej tożsamości'
+description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak dodać kontrolki bazowe tożsamości do minimalnego produktu, który jest w dobrej kondycji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/06/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7f975f948bc078a80ead4207d755ff67cd5e4f2f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 05a3ce3eb018a9b15f66b90749782def260c66d7
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806292"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707615"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej tożsamości
 

@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie dostępem do zasobów na platformie Azure
-description: 'Objaśnienie konstrukcji zarządzania dostępem do zasobów na platformie Azure: Azure Resource Manager, subskrypcje, grupy zasobów i zasoby'
+description: Poznaj pojęcia związane z zarządzaniem dostępem do zasobów platformy Azure, takie jak Azure Resource Manager, subskrypcje, grupy zasobów i zasoby.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e32151fc39f22e4dcb2a9ab40b24f351b11775e7
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: 009630e45eec28a12828f7651b353c1a5015ab2b
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629304"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709451"
 ---
 # <a name="resource-access-management-in-azure"></a>Zarządzanie dostępem do zasobów na platformie Azure
 

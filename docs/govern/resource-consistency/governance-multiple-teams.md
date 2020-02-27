@@ -1,6 +1,6 @@
 ---
-title: Projekt ładu na platformie Azure dla wielu zespołów
-description: Wskazówki dotyczące konfigurowania kontrolek ładu platformy Azure dla wielu zespołów, wielu obciążeń i wielu środowisk.
+title: Projektowanie wielu zespołów na platformie Azure
+description: Znajdź wskazówki dotyczące konfigurowania kontrolek ładu platformy Azure dla wielu zespołów, wielu obciążeń i wielu środowisk.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7bfceb1a7fe68869dabec7eda813cd3fdc121b49
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ba1776affc2bd4f0ca090603ca969c21090d9252
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804303"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709587"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Projekt nadzoru dla wielu zespołów
 
@@ -264,7 +264,7 @@ Wykonaj następujące kroki:
 
 Po wdrożeniu modelu ładu można wdrożyć udostępnione usługi infrastruktury.
 
-## <a name="related-resources"></a>Zasoby powiązane
+## <a name="related-resources"></a>Powiązane zasoby
 
 [Wbudowane role dla zasobów platformy Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 

@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik dotyczący zarządzania przedsiębiorstwem w warstwie Standardowa: Opis strategii zarządzania'
-description: Ten opis określa przypadek użycia dla ładu podczas podróży w ramach wdrożenia chmury w standardowej firmie.
+title: 'Standardowe zarządzanie przedsiębiorstwem: narracje za strategią ładu'
+description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak ustanawiać przypadek użycia dla ładu w ramach standardowej podróży w chmurze dla przedsiębiorstw.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1e6edb6db4663c9a3b78394dc715376f697e6f5e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d963053806a6a43476c7597be5dd628b6e187e06
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805527"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709281"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Przewodnik dotyczący zarządzania przedsiębiorstwem w warstwie Standardowa: Opis strategii zarządzania
 

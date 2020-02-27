@@ -1,18 +1,18 @@
 ---
 title: Co to jest nadzór nad zasobami w chmurze?
-description: Wyjaśnienie zarządzania zasobami w chmurze na platformie Azure
+description: Poznaj proces zarządzania, monitorowania i inspekcji zasobów platformy Azure w celu spełnienia celów i wymagań organizacji.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 9277bf82d9034108b478536a699f96918c38ae0d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: fdf63fd86b69a1c42276e5847d53deb71fcd2530
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807278"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706578"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "76807278"
 
 W [jaki sposób platforma Azure działa?](../../getting-started/what-is-azure.md), wiesz, że platforma Azure to zbiór serwerów i sprzętu sieciowego, na których działa zwirtualizowany sprzęt i oprogramowanie w imieniu użytkowników. System Azure umożliwia tworzenie, odczytywanie, aktualizowanie i usuwanie zasobów w organizacji, dzięki czemu można łatwo tworzyć, odczytywać, aktualizować i usuwać zasoby zgodnie z potrzebami.
 
-Mimo że nieograniczone do zasobów może sprawiać, że deweloperzy są bardziej elastyczni, mogą również prowadzić do nieoczekiwanych kosztów. Na przykład zespół programistyczny może zostać zatwierdzony do wdrożenia zestawu zasobów do testowania, ale zapomina o ich usunięciu po zakończeniu testowania. Te zasoby będą nadal naliczane koszty nawet wtedy, gdy nie są już zatwierdzone lub wymagane.
+Jednak nieograniczone zasoby mogą sprawiać, że deweloperzy są bardziej elastyczni, ale mogą również prowadzić do nieoczekiwanych kosztów. Na przykład zespół programistyczny może zostać zatwierdzony do wdrożenia zestawu zasobów do testowania, ale zapomina o ich usunięciu po zakończeniu testowania. Te zasoby będą nadal naliczane koszty nawet wtedy, gdy nie są już zatwierdzone lub wymagane.
 
 Rozwiązaniem jest zarządzanie dostępem do zasobów. **Zarządzanie to** ciągły proces zarządzania, monitorowania i inspekcji użycia zasobów platformy Azure w celu spełnienia celów i wymagań organizacji.
 

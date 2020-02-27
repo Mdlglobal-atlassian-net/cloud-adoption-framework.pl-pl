@@ -1,6 +1,6 @@
 ---
 title: 'Sieć zdefiniowana przez oprogramowanie: chmura natywna'
-description: Omówienie natywnych usług sieci wirtualnych w chmurze.
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się więcej na temat natywnych sieci wirtualnych, które są wymagane do wdrażania maszyn wirtualnych w chmurze.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8b5983ace8d56fa219d88e921fa6da7263d486fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9d8bf9a5188eae55c14a22a8007aa6e9cc01b02c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806649"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708601"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Sieć zdefiniowana przez oprogramowanie: chmura natywna
 
-Natywna Sieć wirtualna w chmurze jest wymagana w przypadku wdrażania zasobów IaaS, takich jak maszyny wirtualne, na platformę chmury. Dostęp do sieci wirtualnych ze źródeł zewnętrznych, podobnie jak w przypadku sieci Web, musi być jawnie zainicjowany. Te typy sieci wirtualnych obsługują Tworzenie podsieci, reguł routingu oraz urządzeń wirtualnych i zarządzania ruchem.
+Natywna Sieć wirtualna w chmurze jest wymagana podczas wdrażania zasobów IaaS, takich jak maszyny wirtualne, na platformę chmury. Dostęp do sieci wirtualnych ze źródeł zewnętrznych, podobnie jak w przypadku sieci Web, musi być jawnie zainicjowany. Te typy sieci wirtualnych obsługują Tworzenie podsieci, reguł routingu oraz urządzeń wirtualnych i zarządzania ruchem.
 
 Natywna w chmurze Sieć wirtualna nie ma żadnych zależności w lokalnych lub innych zasobach w chmurze do obsługi obciążeń hostowanych w chmurze. Wszystkie wymagane zasoby są obsługiwane zarówno w sieci wirtualnej, jak i przy użyciu zarządzanych ofert PaaS.
 

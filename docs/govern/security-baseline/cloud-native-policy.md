@@ -1,6 +1,6 @@
 ---
 title: Zasady linii bazowej zabezpieczeń w chmurze
-description: Zasady linii bazowej zabezpieczeń w chmurze
+description: Zobacz przykładowe zasady w chmurze dotyczące dyscypliny linii bazowej zabezpieczeń, w których narzędzia i platformy platformy Azure są wystarczające do zarządzania ryzykiem biznesowym.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9921e04f0b066023842c2ff9009d9e159b759315
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: adf14719f4d4d4c50194eb7b85ccfed7cd0df855
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808944"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707496"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Zasady linii bazowej zabezpieczeń w chmurze
 
@@ -26,7 +26,7 @@ ms.locfileid: "76808944"
 
 Te przykładowe zasady umożliwiają syntezę scenariusza natywnego w chmurze, co oznacza, że narzędzia i platformy udostępniane przez platformę Azure są wystarczające do zarządzania ryzykiem biznesowym związanym z wdrożeniem. W tym scenariuszu przyjęto założenie, że prosta konfiguracja domyślnych usług platformy Azure zapewnia wystarczającą ochronę zasobów.
 
-## <a name="cloud-security-and-compliance"></a>Bezpieczeństwo chmury i jej zgodność z przepisami
+## <a name="cloud-security-and-compliance"></a>Bezpieczeństwo i zgodność w chmurze
 
 Zabezpieczenia są zintegrowane z każdym aspektem platformy Azure, oferując unikatowe zalety zabezpieczeń wynikające z globalnej analizy zabezpieczeń, zaawansowanych kontrolek ukierunkowanych przez klienta oraz bezpiecznej, zaostrzonej infrastruktury. Ta zaawansowana kombinacja pomaga chronić aplikacje i dane, wspierać działania związane z zapewnianiem zgodności oraz udostępniać ekonomiczne zabezpieczenia organizacjom dowolnej wielkości. Takie podejście tworzy silną pozycję początkową dla wszelkich zasad zabezpieczeń, ale nie Negate koniecznie silnych rozwiązań z zakresu bezpieczeństwa związanych z używanymi usługami zabezpieczeń.
 

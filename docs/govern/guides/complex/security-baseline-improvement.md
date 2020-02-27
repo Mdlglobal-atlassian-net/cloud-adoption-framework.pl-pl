@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej zabezpieczeń'
-description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej zabezpieczeń'
+title: 'Złożone funkcje nadzoru korporacyjnego: ulepszanie dyscypliny linii bazowej zabezpieczeń'
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak dodać kontrolki zabezpieczeń obsługujące przeniesienie chronionych danych do chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 41fba8029eabb570a40d5692374f1cb7e7d7c9b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 6501871e909beba8d32cee0c5dd8c3dbe091f252
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806241"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706816"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej zabezpieczeń
 

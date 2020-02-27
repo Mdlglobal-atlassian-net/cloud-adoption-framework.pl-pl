@@ -1,6 +1,6 @@
 ---
 title: Szablon Cost Management
-description: Użyj tego szablonu jako modelu do przechwytywania ryzyka biznesowego, odporności na zagrożenia, procesów zgodności i narzędzi niezbędnych do zdefiniowania instrukcji zasad Cost Management organizacji.
+description: Ten szablon służy do definiowania instrukcji Cost Management zasad, które przechwytują zagrożenia biznesowe, odporność na ryzyko, procesy zgodności i narzędzia.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a44912caaf2a79c505f0f6825471baaa7888e957
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 4b4f3f9e8be48f96abf9471738a50491ac80d317
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173276"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708805"
 ---
 # <a name="cost-management-template"></a>Szablon Cost Management
 

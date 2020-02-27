@@ -1,6 +1,6 @@
 ---
-title: Podstawy zabezpieczeń i zagrożenia biznesowe
-description: Podstawy zabezpieczeń i zagrożenia biznesowe
+title: Podstawowe zabezpieczenia — ryzyko biznesowe
+description: Poznaj przykłady typowych rozwiązań związanych z bezpieczeństwem w ramach strategii nadzoru chmurowego i zobacz, jak to zrobić.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d1bf5ef10ec3acd936ba4e66cca374e8365018a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3bef524646e6be5ca6cd0b638b9614af389972f9
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808961"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709026"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Podstawy zabezpieczeń i zagrożenia biznesowe
 

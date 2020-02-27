@@ -1,6 +1,6 @@
 ---
 title: Projekt nadzoru dla jednego obciążenia
-description: Wskazówki dotyczące konfigurowania kontrolek ładu platformy Azure w celu umożliwienia użytkownikowi wdrożenia prostego obciążenia.
+description: Poznaj proces projektowania modelu zarządzania zasobami na platformie Azure w celu obsługi jednego zespołu i prostego obciążenia. 
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a1edb7395751f8a91899fc8ef88f53bc056914ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 868f62856c68c516c384d44cd7fa0e1857ade0e8
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803861"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709570"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Projekt nadzoru dla jednego obciążenia
 

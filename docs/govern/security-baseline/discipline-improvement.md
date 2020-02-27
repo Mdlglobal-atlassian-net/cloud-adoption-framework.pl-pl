@@ -1,6 +1,6 @@
 ---
 title: Poprawa dyscypliny linii bazowej zabezpieczeń
-description: Poprawa dyscypliny linii bazowej zabezpieczeń
+description: Poznaj potencjalne zadania wykonywane przez firmę w celu opracowania i poznawania dyscypliny linii bazowej zabezpieczeń w każdej fazie wdrażania chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 316a848e0f9f3f90a2f7badde3166733dce4a4c0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0d5f2e2c1032c77ceb56b187aa9f2bcee02262eb
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808910"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707394"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Poprawa dyscypliny linii bazowej zabezpieczeń
 
@@ -118,6 +118,6 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 Teraz, gdy rozumiesz koncepcję zarządzania zabezpieczeniami w chmurze, przejdź do, aby dowiedzieć się więcej o [zabezpieczeniach i najlepszych rozwiązaniach, które firma Microsoft udostępnia](./azure-security-guidance.md) dla systemu Azure.
 
 > [!div class="nextstepaction"]
-> [Poznaj wskazówki dotyczące zabezpieczeń systemu Azure](./azure-security-guidance.md)
+> [Poznaj wskazówki dotyczące zabezpieczeń systemu azure](./azure-security-guidance.md)
 > [wprowadzenie do zabezpieczeń platformy Azure](https://docs.microsoft.com/azure/security/azure-security)
-> [o rejestrowaniu, raportowaniu i monitorowaniu](../../decision-guides/logging-and-reporting/index.md)
+> [Informacje o rejestrowaniu, raportowaniu i monitorowaniu](../../decision-guides/logging-and-reporting/index.md)

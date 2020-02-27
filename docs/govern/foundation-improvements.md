@@ -1,6 +1,6 @@
 ---
 title: Popraw początkową podstawę ładu w chmurze
-description: Dowiedz się, jak stopniowo ulepszać początkową podstawę zarządzania chmurą.
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak stopniowo ulepszać początkową podstawę zarządzania chmurą.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/13/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1b46157e134967095cff9ff84bcfb5b826a22bae
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 050d9cdfd2069a4d7da2e411233f6a60f270eb10
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805816"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706612"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Popraw początkową podstawę ładu w chmurze
 
@@ -33,8 +33,8 @@ W dowolnym momencie następujące najlepsze rozwiązania można zastosować do p
 |Aplikacje o kluczowym znaczeniu w chmurze|[Ulepszanie dyscypliny](./guides/standard/resource-consistency-improvement.md)|[Ulepszanie dyscypliny](./guides/complex/resource-consistency-improvement.md)|
 |Zarządzanie kosztami chmury|[Ulepszanie dyscypliny](./guides/standard/cost-management-improvement.md)|[Ulepszanie dyscypliny](./guides/complex/cost-management-improvement.md)|
 |Rozwiązanie wielochmurowe|[Ulepszanie dyscypliny](./guides/standard/multicloud-improvement.md)|[Ulepszanie dyscypliny](./guides/complex/multicloud-improvement.md)|
-|Złożone/starsze Zarządzanie tożsamościami|ND|[Ulepszanie dyscypliny](./guides/complex/identity-baseline-improvement.md)|
-|Wiele warstw nadzoru|ND|[Ulepszanie dyscypliny](./guides/complex/multiple-layers-of-governance.md)|
+|Złożone/starsze Zarządzanie tożsamościami|Nie dotyczy|[Ulepszanie dyscypliny](./guides/complex/identity-baseline-improvement.md)|
+|Wiele warstw nadzoru|Nie dotyczy|[Ulepszanie dyscypliny](./guides/complex/multiple-layers-of-governance.md)|
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -1,6 +1,6 @@
 ---
 title: 'Sieć zdefiniowana przez oprogramowanie: Strefa DMZ w chmurze'
-description: Ta architektura sieci umożliwia ograniczony dostęp między sieciami lokalnymi i opartymi na chmurze.
+description: Dowiedz się więcej o architekturze sieci DMZ w chmurze, która umożliwia ograniczony dostęp do sieci lokalnych i opartych na chmurze przy użyciu sieci VPN.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: eee22d6a0322a94ef0968c901642700fdc6247ee
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ca545c662f7249b8afeb1c750f6b07bd274c1c02
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806666"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708618"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Sieć zdefiniowana przez oprogramowanie: Strefa DMZ w chmurze
 

@@ -1,6 +1,6 @@
 ---
 title: Poprawa dyscypliny linii bazowej tożsamości
-description: Poprawa dyscypliny linii bazowej tożsamości
+description: Poznaj potencjalne zadania wykonywane przez firmę w celu opracowania i poznawania dyscypliny linii bazowej tożsamości w każdej fazie wdrażania chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6adb2e0d6edaacd45e41b8ac3eadb57969cad160
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f1ee4e64e86ccb3648badad38d2118be11b76cc7
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807193"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709366"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Poprawa dyscypliny linii bazowej tożsamości
 

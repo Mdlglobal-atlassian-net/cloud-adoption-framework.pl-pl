@@ -1,6 +1,6 @@
 ---
-title: Cost Management metryki, wskaźniki i tolerancję ryzyka
-description: Objaśnienia dotyczące dziedziny Zarządzanie kosztami w odniesieniu do utrzymania ładu w chmurze
+title: Cost Management metryki i wskaźniki tolerancji ryzyka
+description: Użyj struktury wdrażania w chmurze dla platformy Azure, aby określić Cost Management metryki i wskaźniki tolerancji ryzyka w odniesieniu do ładu w chmurze.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aee529f6065e35645805a7f3d6577447eb48cf3f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c44fc6974be69ff684089c65aa23da5eefbfd814
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806462"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708822"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management metryki, wskaźniki i tolerancję ryzyka
 

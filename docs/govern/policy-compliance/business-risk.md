@@ -1,18 +1,18 @@
 ---
 title: Zrozumienie ryzyka biznesowego podczas migracji do chmury
-description: Zrozumienie ryzyka biznesowego podczas migracji do chmury
+description: Korzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jakie są procesy zarządzania ryzykiem, które pomagają ocenić, zrozumieć, zrównoważyć i skorygować ryzyko związane z migracją.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 801420d31c5f1bbfef20ac610e06f7501bce5e6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 729a359f5ea44d77c691acb0a22477eed7cecb44
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806139"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709434"
 ---
 <!-- markdownlint-disable MD026 -->
 

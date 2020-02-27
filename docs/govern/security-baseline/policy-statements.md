@@ -1,6 +1,6 @@
 ---
 title: Instrukcje dotyczące przykładowych zasad linii bazowej zabezpieczeń
-description: Instrukcje dotyczące przykładowych zasad linii bazowej zabezpieczeń
+description: Zapoznaj się z tymi przykładowymi instrukcjami zasad odniesienia zabezpieczeń, aby pomóc w sporządzaniu zasad w celu rozwiązania potrzeb organizacji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ba0887b93664ac77fc2933c24631110dfab14be0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 02a1c18a73b784cb9245ed7c83d86c21c0690148
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808876"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707212"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Instrukcje dotyczące przykładowych zasad linii bazowej zabezpieczeń
 
@@ -57,7 +57,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Potencjalna opcja projektowania:** Na platformie Azure Zabezpiecz publiczne punkty końcowe, wdrażając [strefę DMZ między publicznym Internetem a siecią opartą na chmurze](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Rozważ wdrożenie, konfigurację i automatyzację [zapory platformy Azure](https://docs.microsoft.com/azure/firewall).
 
-## <a name="ddos-protection"></a>Ochrona przed atakami DDoS
+## <a name="ddos-protection"></a>Ochrona przed atakami DDOS
 
 **Ryzyko techniczne:** Ataki rozproszonego typu "odmowa usługi" (DDoS) mogą spowodować przerwanie działania biznesowego.
 

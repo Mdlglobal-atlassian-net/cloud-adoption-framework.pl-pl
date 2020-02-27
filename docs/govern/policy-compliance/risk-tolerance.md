@@ -1,18 +1,18 @@
 ---
 title: Ocena tolerancja ryzyka
-description: Wyjaśnienie ryzyka biznesowego związanego z przekształcaniem w chmurze
+description: Zapoznaj się z zagrożeniami biznesowymi związanymi z różnymi formami transformacji w chmurze i sposobami oceniania tolerancji ryzyka dla firmy.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 06f8229ab38134ac4d51a4f0cef212ebc864bbdb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cbde932d0e4a91a80c4bde6a5b9604b43ee30441
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806020"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709502"
 ---
 # <a name="evaluate-risk-tolerance"></a>Ocena tolerancja ryzyka
 

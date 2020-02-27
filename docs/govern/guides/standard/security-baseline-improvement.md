@@ -1,6 +1,6 @@
 ---
-title: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: ulepszanie dyscypliny linii bazowej zabezpieczeń'
-description: 'Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: ulepszanie dyscypliny linii bazowej zabezpieczeń'
+title: 'Standardowe zarządzanie przedsiębiorstwami: ulepszanie dyscypliny linii bazowej zabezpieczeń'
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak dodać kontrolki zabezpieczeń obsługujące przeniesienie chronionych danych do chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ef4d58cb871ea290f8489e806a4b78f32a9d8b3d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2e9dbaf3bb92893e4eb737964da3f1b0c3a056ad
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807125"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707717"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: ulepszanie dyscypliny linii bazowej zabezpieczeń
 

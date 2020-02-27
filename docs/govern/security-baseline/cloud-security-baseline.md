@@ -1,6 +1,6 @@
 ---
 title: Informacje o linii bazowej zabezpieczeń chmury
-description: Dowiedz się więcej o linii bazowej zabezpieczeń w chmurze.
+description: Dowiedz się więcej na temat linii bazowej zabezpieczeń w chmurze, która kompiluje pięć dyscyplin nadzoru chmurowego w celu ustanowienia struktury zarządzania.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: abd222cd3fd29f2150a18fafaae82393aa54e98b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 36aa64e35c5858e41d7cb4d29885289ca0c5435a
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808893"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707581"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Informacje o linii bazowej zabezpieczeń chmury
 
@@ -22,7 +22,7 @@ Ten artykuł wprowadzający znajduje się w ogólnym temacie planu bazowego zabe
 > [!NOTE]
 > Ten artykuł nie powinien zapewniać wystarczającego kontekstu, aby umożliwić czytelnikowi wdrożenie strategii zabezpieczeń. Jest to tylko ogólna świadomość.
 
-## <a name="cloud-security"></a>Bezpieczeństwo chmury
+## <a name="cloud-security"></a>Zabezpieczenia chmury
 
 Zabezpieczenia w chmurze to rozszerzenie tradycyjnych praktyk bezpieczeństwa informacji. Tradycyjne zabezpieczenia INFORMATYCZNe obejmują zasady i kontrole dotyczące zabezpieczeń komputera, zabezpieczeń sieci, ochrony danych, użycia informacji i tak dalej. Te same zasady i kontrolki są zbędne w chmurze. Podczas przekształceń w chmurze jest konieczne, aby CISO aktywnie angażować się i zrozumieć poziom chmury w celu zapewnienia, że starsze zasady IT są mapowane na odpowiednie poziomy kontroli w chmurze.
 
@@ -41,7 +41,7 @@ Jednak w miarę jak organizacje nadal korzystają z zalet usług w chmurze, taki
 
 Zabezpieczenia to zasadniczy składnik silnych zabezpieczeń danych we wszystkich środowiskach przetwarzania online. Jednak zabezpieczenia same nie są wystarczające. Odbiorcy i gotowość do korzystania z określonego produktu do przetwarzania w chmurze również są zależne od ich możliwości zaufania do ochrony prywatności informacji oraz że ich dane będą używane tylko w sposób zgodny z oczekiwaniami klienta . Dowiedz się więcej o podejściu firmy Microsoft do [ochrony danych i prywatności w chmurze](https://go.microsoft.com/fwlink/?LinkId=808242&clcid=0x409)
 
-## <a name="risk-mitigation"></a>Ograniczanie ryzyka
+## <a name="risk-mitigation"></a>Łagodzenie ryzyka
 
 Dwa największe ryzyka w dowolnym centrum danych można zgrupować do dwóch źródeł: systemów przedawnienia i błędu ludzkiego. Ochrona przed tymi dwoma zagrożeniami jest minimalnym warunkiem definiującym strategię zabezpieczeń IT. Ta sama wartość dotyczy chmury. Poniżej przedstawiono kilka przykładów kontroli, które mogą być wprowadzane w celu korygowania ryzyka i wzmocnienia strategii zabezpieczeń w chmurze.
 

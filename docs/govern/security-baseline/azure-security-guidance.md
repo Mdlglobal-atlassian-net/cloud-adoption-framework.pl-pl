@@ -1,6 +1,6 @@
 ---
-title: Wskazówki dotyczące bezpieczeństwa systemu Azure
-description: Jakie wskazówki dotyczące zabezpieczeń zapewnia firma Microsoft?
+title: Wskazówki dotyczące zabezpieczeń platformy Azure
+description: Użyj platformy zaufania usługi firmy Microsoft i Menedżera zgodności, aby pomóc spełnić złożone zobowiązania dotyczące zgodności i zwiększyć ochronę danych.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ab126c3638edd18d76c579bbf4d1958621546a76
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804915"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709536"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="microsoft-security-guidance"></a>Wskazówki dotyczące zabezpieczeń firmy Microsoft
 
-## <a name="tools"></a>narzędzia
+## <a name="tools"></a>Narzędzia
 
 Firma Microsoft wprowadziła [platformę zaufania usługi](https://servicetrust.microsoft.com) i Menedżera zgodności, aby pomóc w następujących kwestiach:
 

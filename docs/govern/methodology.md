@@ -1,6 +1,6 @@
 ---
 title: Metodologia ładu chmury
-description: Zbierz podstawową wiedzę na temat metodologii zapewniania ładu w chmurze w ramach przewodnika Cloud Adoption Framework.
+description: Użyj podejścia do ładu przyrostowego opartego na minimalnym żywotnym produkcie (MVP), aby zapewnić obsługę zasad firmowych i szybko przejść do wdrożenia chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 402ebf52583ae5e94de52057133990656d8009b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 828f9c85366f3e73ddb804a2622784ba0a0ccb65
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807091"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709094"
 ---
 # <a name="cloud-governance-methodology"></a>Metodologia ładu chmury
 
@@ -25,9 +25,9 @@ Struktura wdrażania w chmurze zawiera przewodniki ładu, które opisują środo
 
 Podróż bez celu to tylko tułaczka. Ważne jest, aby przed wykonaniem pierwszego kroku ustalić nieaktualną wizję stanu końcowego. Na następującej grafice informacyjnej przedstawiono układ odniesienia dla stanu końcowego. To nie jest punkt początkowy, ale pokazuje potencjalne miejsce docelowe.
 
-![Grafika informacyjna dotycząca modelu nadzoru z przewodnika Cloud Adoption Framework](../_images/operational-transformation-govern-highres.png)
+![Grafika informacyjna dotycząca modelu nadzoru Cloud Adoption Framework](../_images/operational-transformation-govern-highres.png)
 
-Model nadzoru z przewodnika Cloud Adoption Framework identyfikuje obszary o kluczowym znaczeniu podczas podróży. Każdego z tych obszarów dotyczą różne rodzaje czynników ryzyka, które przedsiębiorstwa muszą uwzględnić podczas wdrażania kolejnych usług w chmurze. W ramach tej struktury przewodnik dotyczący zapewnienia ładu identyfikuje wymagane akcje dla zespołu ds. utrzymania ładu w chmurze. Podczas kolejnych etapów podróży poszczególne reguły modelu nadzoru z przewodnika Cloud Adoption Framework zostały bardziej szczegółowo opisane. Ogólnie należą do nich:
+Model nadzoru Cloud Adoption Framework identyfikuje obszary o kluczowym znaczeniu podczas podróży. Każdego z tych obszarów dotyczą różne rodzaje czynników ryzyka, które przedsiębiorstwa muszą uwzględnić podczas wdrażania kolejnych usług w chmurze. W ramach tej struktury przewodnik dotyczący zapewnienia ładu identyfikuje wymagane akcje dla zespołu ds. utrzymania ładu w chmurze. Podczas kolejnych etapów podróży poszczególne reguły modelu nadzoru Cloud Adoption Framework zostały bardziej szczegółowo opisane. Ogólnie należą do nich:
 
 **Zasady firmowe:** Zasady firmowe — zarządzanie chmurą. Przewodnik po zapewnianiu ładu koncentruje się na konkretnych aspektach zasad firmowych:
 
@@ -37,7 +37,7 @@ Model nadzoru z przewodnika Cloud Adoption Framework identyfikuje obszary o kluc
 
 **Pięć dyscyplin zarządzania chmurą:** Te dyscypliny obsługują zasady firmowe. Każda dyscyplina chroni firmę przed potencjalnymi problemami:
 
-- Zarządzanie kosztami
+- Cost Management
 - Punkt odniesienia zabezpieczeń
 - Spójność zasobów
 - Punkt odniesienia obsługi tożsamości

@@ -1,6 +1,6 @@
 ---
 title: Pięć dziedzin nadzoru chmury
-description: Dowiedz się więcej o pięciu dyscyplinach zarządzania chmurą w strukturze wdrożenia chmury.
+description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się więcej o Cost Management, przyspieszeniu wdrażania, linii bazowej tożsamości, spójności zasobów i linii bazowej zabezpieczeń.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 022fafd48ae9c03ef8c2b19f7b966a73cab70081
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d50364a621e57b95e26f5686f4d470984530e161
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806343"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707683"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>Pięć dziedzin nadzoru chmury
 
@@ -69,7 +69,7 @@ W przypadku każdej platformy w chmurze istnieją typowe dyscypliny ładu, któr
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Zarządzanie kosztami</h3>
+                        <h3>Cost Management</h3>
                         <p>Koszt jest podstawowym problemem dla użytkowników w chmurze. Opracowywanie zasad kontroli kosztów dla wszystkich platform w chmurze.</p>
                     </div>
                 </div>

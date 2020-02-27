@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wiele warstw ładu'
-description: 'Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wiele warstw ładu'
+title: 'Złożone zarządzanie przedsiębiorstwem: wiele warstw ładu'
+description: Korzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się więcej na temat większego stopnia złożoności z wieloma warstwami zarządzania w dużych przedsiębiorstwach.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5aa48d6561f6d6122c74dcb60e82425b64071304
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5d7dc2163777cb931d6c4c57eb7b1fb276e6a0fd
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806258"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709196"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wiele warstw ładu
 
