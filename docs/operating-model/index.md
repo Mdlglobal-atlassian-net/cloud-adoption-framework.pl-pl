@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: a04be99cfa3a37c9627b4384f240dac865d63da3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 093f404ce4e8a5a9c5f60b5ee3bb81064ba5b3f8
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806955"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629287"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Ustanawianie modelu operacyjnego dla chmury
 
@@ -23,7 +23,7 @@ Te działania związane z wdrażaniem można relatywnie łatwo monitorować i mi
 
 **O ile wdrażanie opisuje działania, model operacyjny definiuje elementy „kto” i „jak”, niezbędne dla procesu wdrażania.**
 
-Jak mówi Satya Nadella, **„kultura firmy może całkowicie zrujnować strategię”** . Model operacyjny odzwierciedla kulturę IT, ujmując ją w szereg mierzalnych procesów. Gdy chmura bazuje na solidnym modelu operacyjnym, kultura będzie napędzać realizację strategii, procesu wdrażania i wartości biznesowych. Natomiast bez modelu operacyjnego nawet pomyślne wdrożenie przyniesie co najwyżej krótkotrwałe rezultaty. Długotrwałe powodzenie wymaga równoległego rozwijania modelu wdrażania i modelu operacyjnego.
+Kultura firmy może całkowicie zrujnować strategię. Model operacyjny odzwierciedla kulturę IT, ujmując ją w szereg mierzalnych procesów. Gdy chmura bazuje na solidnym modelu operacyjnym, kultura będzie napędzać realizację strategii, procesu wdrażania i wartości biznesowych. Natomiast bez modelu operacyjnego nawet pomyślne wdrożenie przyniesie co najwyżej krótkotrwałe rezultaty. Długotrwałe powodzenie wymaga równoległego rozwijania modelu wdrażania i modelu operacyjnego.
 
 ## <a name="establish-your-operating-model"></a>Ustanawianie modelu operacyjnego
 

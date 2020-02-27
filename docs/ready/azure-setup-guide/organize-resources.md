@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 790bb68a862343452aa5481e20596a839bb7b93c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799339"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567762"
 ---
 # <a name="organize-your-azure-resources"></a>Organizowanie zasobów platformy Azure
 
@@ -22,7 +22,7 @@ Organizowanie zasobów opartych na chmurze ma kluczowe znaczenie dla zabezpiecza
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="azure-management-groups-and-hierarchytabazuremanagmentgroupsandhierarchy"></a>[Grupy zarządzania i hierarchia platformy Azure](#tab/AzureManagmentGroupsAndHierarchy)
+# <a name="azure-management-groups-and-hierarchy"></a>[Grupy zarządzania i hierarchia platformy Azure](#tab/AzureManagmentGroupsAndHierarchy)
 
 Platforma Azure oferuje cztery poziomy zakresu zarządzania: grupy zarządzania, subskrypcje, grupy zasobów i zasoby. Na poniższej ilustracji przedstawiono relacje tych poziomów.
 
@@ -121,7 +121,7 @@ Utwórz grupę zasobów do przechowywania zasobów, takich jak aplikacje interne
 
 ::: zone-end
 
-# <a name="naming-standardstabnamingstandards"></a>[Standardy nazewnictwa](#tab/NamingStandards)
+# <a name="naming-standards"></a>[Standardy nazewnictwa](#tab/NamingStandards)
 
 Odpowiedni standard nazewnictwa ułatwia identyfikowanie zasobów w witrynie Azure Portal, na rachunku i w ramach skryptów. Strategia nazewnictwa powinna zawierać szczegóły biznesowe i operacyjne jako składniki nazw zasobów:
 
@@ -146,7 +146,7 @@ Poniższa tabela zawiera wzorce nazewnictwa dla kilku przykładowych typów zaso
 |Zestaw dostępności |Grupa zasobów |1-80 |Bez uwzględniania wielkości liter |Alfanumeryczne, podkreślenie i łącznik |`<service-short-name>-<context>-as` |`profx-sql-as` |
 |Tag |Skojarzona jednostka |512 (nazwa), 256 (wartość) |Bez uwzględniania wielkości liter |Alfanumeryczne |`"key" : "value"` |`"department" : "Central IT"` |
 
-# <a name="resource-tagstabresourcetags"></a>[Tagi zasobów](#tab/ResourceTags)
+# <a name="resource-tags"></a>[Tagi zasobów](#tab/ResourceTags)
 
 Tagi ułatwiają szybkie identyfikowanie zasobów i grup zasobów. Stosowanie tagów do zasobów platformy Azure umożliwia ich logiczne zorganizowanie według kategorii. Każdy tag składa się z nazwy i wartości. Na przykład można zastosować nazwę „Środowisko” i wartość „Produkcyjne” do wszystkich zasobów w środowisku produkcyjnym. Tagi powinny zawierać kontekst dotyczący obciążenia lub aplikacji skojarzonych z zasobem, wymagania operacyjne oraz informacje o własności.
 
@@ -156,7 +156,7 @@ Tagów można używać do wielu innych celów. Najczęstsze zastosowania to:
 
 - **Metadane i dokumentacja:** Administratorzy mogą łatwo wyświetlać szczegółowe informacje o zasobach, z którymi pracują, stosując tag, na przykład „ProjectOwner”.
 - **Automatyzacja:** Można używać regularnie uruchamianych skryptów, które mogą wykonywać akcję w oparciu o wartość tagu, taką jak „ShutdownTime” lub „DeprovisionDate”.
-- **Rozliczenia:** tagi mogą być wyświetlane na fakturze. Można ich używać, aby ułatwić dzielenie rachunku na segmenty za pomocą tagów, takich jak „CostCenter” lub „BillTo”.
+- **Optymalizacja kosztów:** Możesz przydzielić zasoby do zespołów i zasobów odpowiedzialnych za koszt. W usłudze Azure Cost Management można zastosować tag centrum kosztów jako filtr, aby uzyskać raport opłat na podstawie użycia zespołu lub działu.
 
 Każdy zasób lub grupa zasobów może mieć co najwyżej 50 par nazw i wartości tagów. To ograniczenie dotyczy tylko tagów stosowanych bezpośrednio do grupy zasobów lub zasobu.
 
