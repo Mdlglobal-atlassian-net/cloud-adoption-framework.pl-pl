@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4d5bac8046cc27399b2be7bc0b8ce82ea65769
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 20f71083a7a200fd4b45fbdda24ad6bbd24a397a
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173388"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567745"
 ---
 # <a name="assess-the-digital-estate"></a>Szacowanie majątku cyfrowego
 
@@ -24,7 +24,7 @@ Zasoby w tej sekcji ułatwią ocenę środowiska i określenie jego przydatnośc
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="toolstabtools"></a>[Narzędzia](#tab/Tools)
+# <a name="tools"></a>[Narzędzia](#tab/Tools)
 
 Poniższe narzędzia ułatwiają ocenę środowiska, określenie jego przydatności do migracji i najlepszego podejścia do wykorzystania. Aby uzyskać przydatne informacje na temat doboru odpowiednich narzędzi do obsługi zadań związanych z migracją, zobacz [Przewodnik doboru narzędzi migracji platformy wdrażania w chmurze](../../decision-guides/migrate-decision-guide/index.md).
 
@@ -51,7 +51,7 @@ Aby rozpocząć ocenę migracji serwera przy użyciu usługi Azure Migrate, wyko
 
 ::: zone target="chromeless"
 
-::: form action="Blade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
+::: form action="OpenBlade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ Aby można było używać wizualizacji zależności, należy pobrać i zainstalo
 - [Korzystanie z rozwiązania Service Map na platformie Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate i Service Map: wizualizacja zależności](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
-# <a name="scenarios-and-stakeholderstabscenarios"></a>[Scenariusze i osoby biorące udział w projekcie](#tab/Scenarios)
+# <a name="scenarios-and-stakeholders"></a>[Scenariusze i osoby biorące udział w projekcie](#tab/Scenarios)
 
 ## <a name="scenarios"></a>Scenariusze
 
@@ -105,7 +105,7 @@ Utworzenie podstawowego zespołu ds. strategii w chmurze, opartego na najważnie
 
 Aby uzyskać więcej informacji na temat przygotowywania organizacji do działań związanych z migracją do chmury, zobacz artykuł dotyczący struktury wdrażania w chmurze na temat [wstępnej zgodności organizacyjnej](../../plan/initial-org-alignment.md).
 
-# <a name="timelinestabtimelines"></a>[Harmonogram](#tab/Timelines)
+# <a name="timelines"></a>[Harmonogram](#tab/Timelines)
 
 Zgodnie z ogólną zasadą, klienci mogą założyć, że scenariusz migracji opisany w tym przewodniku można zrealizować w ciągu od jednego do sześciu miesięcy.
 
@@ -117,7 +117,7 @@ Oto kilka czynników, które należy wziąć pod uwagę podczas szacowania harmo
 - **Zarządzanie zmianami:** Czy firma ma określone wymagania dotyczące implementacji zmian i zatwierdzania?
 - **Regulacje branżowe:** Czy konieczne jest przestrzeganie przepisów branżowych?
 
-# <a name="cost-managementtabmanagecost"></a>[Zarządzanie kosztami](#tab/ManageCost)
+# <a name="cost-management"></a>[Zarządzanie kosztami](#tab/ManageCost)
 
 Podczas oceniania środowiska jest to idealne rozwiązanie umożliwiające uwzględnienie kroku analizy kosztów. Dzięki danym zbieranym w trakcie przeprowadzania oceny uzyskujesz możliwość analizowania i przewidywania kosztów. Ta funkcja przewidywania kosztów powinna polegać na tym, że koszty korzystania z usługi są rozliczane w ramach kosztów jednorazowych (takich jak zwiększony ruch przychodzący).
 
