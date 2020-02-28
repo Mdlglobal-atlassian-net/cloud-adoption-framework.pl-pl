@@ -1,18 +1,18 @@
 ---
-title: 'Innowacje w chmurze: przewidywanie i wpływ'
-description: Wprowadzenie do innowacji w chmurze — przewidywanie i wpływ
+title: Przewidywanie i wpływ na zachowanie klienta
+description: Korzystanie z modelowania predykcyjnego w celu opracowywania funkcji predykcyjnych za pomocą danych, szczegółowych informacji, wzorców, prognoz i interakcji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f55325b46ee9b2e45dd539c08f426d49357f5ba3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e299025afcbf1066411f8d4792fe739663d46c74
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808400"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171110"
 ---
 # <a name="predict-and-influence"></a>Przewidywanie i wpływ
 
@@ -45,7 +45,7 @@ Dane to większość cech wymienionych wcześniej. Każda z dyscyplin związanyc
 
 Różne źródła danych mogą służyć do dostarczania funkcji predykcyjnych:
 
-## <a name="insights"></a>Analizy
+## <a name="insights"></a>Insights
 
 Eksperci z branży wykorzystują dane dotyczące potrzeb klientów i zachowań, aby opracowywać podstawowe informacje biznesowe z badania danych pierwotnych. Te szczegółowe informacje mogą wskazywać wystąpienia żądanych zachowań klientów (lub, w tym niepożądane wyniki). Podczas iteracji w prognozach te szczegółowe informacje mogą pomóc w zidentyfikowaniu potencjalnych korelacji, które ostatecznie generują pozytywne wyniki. Aby uzyskać wskazówki dotyczące włączania ekspertów z dziedziny, zobacz [dane Democratizing](./data.md).
 

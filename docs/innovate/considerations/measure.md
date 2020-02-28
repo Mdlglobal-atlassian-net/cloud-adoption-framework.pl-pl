@@ -1,18 +1,18 @@
 ---
-title: 'Innowacje w chmurze: pomiar'
-description: Wprowadzenie do innowacji w chmurze — Zmierz zawartość
+title: Zmierz wpływ klienta
+description: Zdefiniuj odpowiedni przepływ klienta i ustal metryki uczenia, aby mierzyć zachowanie i wdrażanie klientów.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d6e29f159059da9c219006a69a63484b546a4488
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1b60f1b9cadb20ae516946fe09299fb3af2f895c
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808417"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171144"
 ---
 # <a name="measure-for-customer-impact"></a>Mierzenie wpływu na klientów
 

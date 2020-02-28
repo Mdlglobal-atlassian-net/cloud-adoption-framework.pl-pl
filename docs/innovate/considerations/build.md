@@ -1,18 +1,18 @@
 ---
-title: 'Innowacje w chmurze: Kompiluj z empatię klienta'
-description: Naucz się tworzyć za pomocą empatię klienta.
+title: Wdrożenie kompilacji za pomocą empatię klienta
+description: Dowiedz się, jak tworzyć rozwiązania, które pozwalają na wdrażanie innowacji na podstawie empatię klientów, a dogłębne zrozumienie środowiska klienta.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 406d53bfb322c424737a9b8cec7c028a9833143d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d6cf92c2cb08e59196bc9c24aadf1fa2c812db0d
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808553"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170634"
 ---
 # <a name="build-with-customer-empathy"></a>Tworzenie z empatią wobec klientów
 
@@ -101,7 +101,7 @@ Gdy klient empatię jest silnie, wyraźnie istniejący problem powinien być ła
 
 Istnieje wiele wymagań prawnych, zgodności i branżowych, które mogą wymagać alternatywnego podejścia. Jeśli publiczne wydania opracowywania rozwiązania stwarzają ryzyko dla charakteru patentu, ochrony własności intelektualnej, przecieków danych klienta lub naruszenia wymagań zgodności, takie podejście może nie być odpowiednie. Gdy takie zagrożenia istnieją, zapoznaj się z przepisami prawnymi przed przyjęciem podejścia z przewodnikiem dotyczącego zarządzania zleceniami.
 
-## <a name="references"></a>Informacje
+## <a name="references"></a>Dokumentacja
 
 Niektóre koncepcje w tym artykule zostały omówione w temacie dotyczącym [*uruchamiania produkcji oszczędnej*](http://theleanstartup.com/book) (Eric Ries, działalność korony, 2011).
 

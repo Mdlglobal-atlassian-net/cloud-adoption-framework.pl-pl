@@ -1,18 +1,18 @@
 ---
-title: 'Innowacje w chmurze: przyjęcie akceptacji'
-description: Wprowadzenie do innowacji w chmurze — wdrażanie
+title: Przyjmowanie rozwiązań dzięki rozdaniom cyfrowym
+description: Użyj modelu dojrzałości metodologii innowacje, aby zmniejszyć liczbę problemów, które spowalniają wdrażanie, zachowując przy tym najlepsze rozwiązania.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a3c726443e62140dba997ae4a1ff89593f72e6e6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: bfaacd1f07b24a3d88b03aa577e1f1ca38493423
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808519"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170566"
 ---
 # <a name="empower-adoption"></a>Zwiększanie akceptacji
 
@@ -55,7 +55,7 @@ Każdy punkt opinii to potencjalne rozwiązanie wymagane przez klienta. Co więc
 
 [Usługa Azure DevOps](https://docs.microsoft.com/azure/devops) obejmuje sposoby [żądania, dostarczania i zarządzania opiniami](https://docs.microsoft.com/azure/devops/project/feedback). Każdy z tych narzędzi służy do scentralizowania informacji zwrotnych, dzięki czemu zespół może podjąć odpowiednie działania i zapewnić dalsze działanie w ramach usługi w postaci przezroczystej pętli opinii.
 
-## <a name="continuous-integration"></a>Integracja ciągła
+## <a name="continuous-integration"></a>Ciągła integracja
 
 W miarę jak wydłużać skala i hipotezy są coraz bliżej prawdziwe innowacje na dużą skalę, liczba mniejszych hipotez, które mają zostać przetestowane, będzie szybko rosnąć. Aby uzyskać dokładne pętle opinii i płynne procesy przyjmowania, ważne jest, aby każda z tych hipotez była zintegrowana i obsługiwała hipotezę podstawową, która zauważa za innowacje. Oznacza to, że konieczne jest również szybkie przechodzenie do innowacji i rozwoju, co wymaga wielu deweloperów do testowania różnic hipotezy podstawowej. W celu późniejszego przygotowania do rozwoju można nawet potrzebować wielu zespołów deweloperów, z których każdy kompiluje się w ramach udostępnionego rozwiązania. Ciągła integracja to pierwszy krok w kierunku zarządzania wszystkimi ruchomymi częściami.
 

@@ -1,18 +1,18 @@
 ---
-title: 'Innowacje w chmurze: narzędzia do współpracy z urządzeniami na platformie Azure'
-description: Narzędzia do współpracy z urządzeniami na platformie Azure
+title: Narzędzia innowacyjne do interakcji urządzeń
+description: Dowiedz się więcej na temat narzędzi platformy Azure, które umożliwiają współpracę z urządzeniami i środowiskami otoczenia, które rozszerzają naturalne otoczenie i zachowania klientów.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 83aa06b897c510b90993d77a119063c3fe5f1af1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c8fa6bb33a6f65052b5cbc4ad159490ff9a5ad23
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808655"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171246"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>Narzędzia do współpracy z urządzeniami na platformie Azure
 
@@ -38,7 +38,7 @@ Na platformie Azure często używasz następujących narzędzi do przyspieszenia
 - Stan zintegrowany: Azure IoT Hub, Azure Sphere, Azure urządzenia Kinect DK
 - Dostosowana rzeczywistość: IoT Cloud to Device, Azure Digital bliźniaczych reprezentacji + HoloLens
 
-## <a name="get-started"></a>Rozpocznij
+## <a name="get-started"></a>Rozpoczęcie pracy
 
 Spis treści po lewej stronie tej strony zawiera wiele artykułów. Te artykuły ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
 

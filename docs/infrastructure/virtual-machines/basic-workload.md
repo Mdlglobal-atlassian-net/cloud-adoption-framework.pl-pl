@@ -1,18 +1,18 @@
 ---
-title: Wdrażanie podstawowego obciążenia
-description: Opis sposobu wdrażania podstawowego obciążenia na platformie Azure
+title: Wdrażanie podstawowego obciążenia na platformie Azure
+description: Zapoznaj się z podstawowymi składnikami infrastruktury chmurowej i podstawowymi obciążeniami, takimi jak podstawowe aplikacje sieci Web, pojedyncze maszyny wirtualne i sieci wirtualne.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b4d5821e7ed29efeea5dd7e6a59b7e4afd86f0e0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e720fb698e0eecb53942bb5d7be99df5e923451e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808740"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170702"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Wdrażanie podstawowego obciążenia na platformie Azure
 

@@ -1,6 +1,6 @@
 ---
 title: Racjonalizacja chmury
-description: Zapoznaj się z opcjami, które są dostępne w celu racjonalizacji cyfrowego podpisywania.
+description: Dowiedz się więcej na temat racjonalizacji chmury, procesu oceny zasobów, aby określić najlepszy sposób migracji lub modernizacji poszczególnych elementów zawartości w chmurze.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/16/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 1a74487a77388e6260c177096d9563dbe6646cf2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 74a384cd3bf5688979a848423e0740ff15f08a34
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806564"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170158"
 ---
 # <a name="cloud-rationalization"></a>Racjonalizacja chmury
 
@@ -35,7 +35,7 @@ Zapoznaj się z poniższą piątą z pięciu usprawnień, aby zaznajomić się z
 
 Pięć z pięciu usprawnień, które są wymienione w tym miejscu, opisują najbardziej typowe opcje racjonalizacji.
 
-## <a name="rehost"></a>Ponowne hostowanie
+## <a name="rehost"></a>Rehost
 
 Zgodnie z potrzebami migracji przenoszonych _i przenoszonych_ na przechodzenie przenoszone jest bieżący zasób stanu do wybranego dostawcy chmury z minimalnymi zmianami ogólnej architektury.
 
@@ -84,7 +84,7 @@ Czynniki analizy jakościowej:
 - Opcje i osie czasu
 - Zależności procesów firmy
 
-## <a name="rearchitect"></a>Ponowne ustalenie architektury
+## <a name="rearchitect"></a>Przekształcanie
 
 Niektóre aplikacje przedawniania nie są zgodne z dostawcami chmury ze względu na decyzje dotyczące architektury, które zostały wykonane podczas kompilowania aplikacji. W takich przypadkach może być konieczne ponowne zaprojektowanie aplikacji przed przekształceniem.
 
@@ -110,13 +110,13 @@ Czynniki analizy jakościowej:
 - Koszty operacyjne
 - Potencjalni pętle opinii i DevOps inwestycje.
 
-## <a name="rebuild"></a>Ponowne kompilowanie
+## <a name="rebuild"></a>Odtworzyć
 
 W niektórych scenariuszach różnica, którą należy przezwyciężyć w celu przeniesienia aplikacji, może być zbyt duża, aby uzasadnić dalsze inwestycje. Jest to szczególnie ważne w przypadku aplikacji, które wcześniej spełniały potrzeby biznesowe, ale są teraz nieobsługiwane lub nieprawidłowo wyrównane z bieżącymi procesami biznesowymi. W takim przypadku tworzony jest nowy podstawowy kod, który będzie wyrównany z podejściem [natywnym w chmurze](https://azure.microsoft.com/overview/cloudnative) .
 
 Typowe sterowniki mogą obejmować:
 
-- Przyspieszaj wprowadzanie innowacji
+- Przyspiesz innowacje
 - Szybsze tworzenie aplikacji
 - Zmniejsz koszty operacyjne
 

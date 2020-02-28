@@ -1,18 +1,18 @@
 ---
-title: 'Innowacje w chmurze: Zaangażuj aplikacje'
-description: Wprowadzenie do innowacji w chmurze — umożliwia korzystanie z aplikacji.
+title: Powiąż za pośrednictwem aplikacji do roznalazeków cyfrowych
+description: Zapoznaj się z tematem tworzenie rozwiązań aplikacji do tworzenia kształtów i tworzenie środowisk, które angażują klientów i wspierają innowacje.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 77921ce7c683ff5bfc32c711719ae58ae049f039
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c326461435123b8093c86590baa4461f5048f4df
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808570"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170668"
 ---
 # <a name="engage-through-applications"></a>Zaangażuj aplikacje
 
@@ -54,7 +54,7 @@ Dostęp do uczenia maszynowego i sztucznej analizy jest coraz większy dla dewel
 
 Dodanie analizy do rozwiązania może umożliwić zamianę mowy na tekst, tłumaczenie tekstu, obsługę komputera, a nawet Wyszukiwanie wizualne. Dzięki tym rozszerzonym funkcjom deweloperzy mogą tworzyć rozwiązania, które wykorzystują inteligencję do tworzenia interaktywnego i nowoczesnego środowiska.
 
-### <a name="bots"></a>Boty
+### <a name="bots"></a>Botów
 
 Botów zapewniają środowisko, które może być mniej podobne do korzystania z komputera i bardziej przypominające pracę z osobą — co najmniej z inteligentnym robotem. Mogą one służyć do przesuwania prostych, powtarzalnych zadań (takich jak rezerwacja na obiad lub gromadzenie informacji o profilu) do zautomatyzowanych systemów, które mogą nie wymagać bezpośredniej interwencji ludzkiej. Użytkownicy z bot za pomocą tekstu, kart interaktywnych i mowy. Interakcja bot może przedziałować od szybkiego pytania i odpowiedzi na zaawansowaną konwersację, która inteligentnie zapewnia dostęp do usług.
 

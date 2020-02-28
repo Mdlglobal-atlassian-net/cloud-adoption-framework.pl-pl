@@ -1,24 +1,24 @@
 ---
 title: Rozpocznij podróż do migracji w chmurze na platformie Azure
-description: Rozpocznij podróż do migracji w chmurze na platformie Azure.
+description: Uzyskaj kompleksowe wskazówki dotyczące przenoszenia starszych obciążeń aplikacji do chmury przy użyciu innowacyjnych technologii opartych na chmurze.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e5ef9aecfe30cc9b401e9b4ffabe56e50f3afad2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eeb7cc566a373296fdf290dced4c82e038c11d17
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804456"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170192"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Rozpocznij podróż do migracji w chmurze na platformie Azure
 
 Użyj platformy wdrażania Microsoft Cloud dla platformy Azure, aby rozpocząć podróż do migracji do chmury. Ta struktura zawiera kompleksowe wskazówki dotyczące przenoszenia starszych obciążeń aplikacji do chmury przy użyciu innowacyjnych technologii opartych na chmurze.
 
-## <a name="executive-summary"></a>Podsumowanie dla kierownictwa
+## <a name="executive-summary"></a>Streszczenie
 
 Platforma wdrażania w chmurze pomaga klientom podejmować uproszczone podróże w chmurze. Ta struktura zawiera szczegółowe informacje dotyczące kompleksowej podróży w chmurze, rozpoczynając od docelowych rezultatów firmy, a następnie dopasowując gotowość do chmury i oceny z jasno określonymi celami biznesowymi. Te wyniki są osiągane przez zdefiniowaną ścieżkę do wdrożenia chmury. Po wdrożeniu opartym na migracji zdefiniowana ścieżka koncentruje się głównie na migrowaniu obciążeń lokalnych do chmury. Czasami ta podróż obejmuje modernizację obciążeń, aby zwiększyć zwrot z inwestycji w miarę wysiłków związanych z migracją.
 
@@ -125,7 +125,7 @@ Technologie migrowane do chmury ciągle rozszerzają się w miarę jak dostawcy 
 - Windows i SQL Server
 - Bazy danych systemu Linux i typu Open Source (OSS)
 - Destructure/NoSQL bazy danych
-- SAP w systemie Azure
+- Rozwiązania SAP na platformie Azure
 - Analiza (magazyn danych, Data Lake)
 
 ## <a name="next-steps-lifecycle-solution"></a>Następne kroki: rozwiązanie cyklu życia

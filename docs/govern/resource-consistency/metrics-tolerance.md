@@ -1,6 +1,6 @@
 ---
 title: Metryki i wskaźniki tolerancji ryzyka dotyczącego spójności zasobów
-description: Określenie tolerancji ryzyka biznesowego związanego ze spójnością zasobów w strukturze Microsoft Cloud wdrażania dla platformy Azure.
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby określić tolerancję ryzyka biznesowego związanego ze spójnością zasobów.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 71b29f1c2d87b916701767e5c74c2699cf8aa4fa
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 98413117b3eb6abf1e826fcf14f765c6cd461d65
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567728"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171365"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metryki spójności zasobów, wskaźniki i tolerancja ryzyka
 

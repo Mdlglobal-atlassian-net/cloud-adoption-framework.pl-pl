@@ -1,6 +1,6 @@
 ---
 title: Wyrównaj modele kosztów z użyciem cyfr cyfrowych
-description: Wyrównaj modele kosztów za pomocą cyfrowej infrastruktury do prognozowania kosztów chmury.
+description: Dowiedz się więcej o narzędziach cenowych platformy Azure, które ułatwiają prognozowanie i zarządzanie postanowień w chmurze z zachowaniem przejrzystości i dokładnością.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 30eee82d3afab32890ab00ad82b38106576f33ee
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 06e1bafa4a4a4c1ed88bb29d6787fec95fbd956b
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804711"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170124"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Wyrównaj modele kosztów za pomocą cyfrowej infrastruktury do prognozowania kosztów chmury
 
@@ -27,4 +27,4 @@ Narzędzia cen platformy Azure ułatwiają zarządzanie wydatkami w chmurze dzi�
 
 - [Kalkulator cen platformy Azure](https://azure.microsoft.com/pricing): oszacowanie przewidywanego rachunku miesięcznego przy użyciu naszego kalkulatora cen. Śledź rzeczywiste użycie konta i rachunku w dowolnym momencie przy użyciu portalu rozliczeń. Skonfiguruj automatyczne alerty e-mail dotyczące rozliczeń, aby powiadomić Cię, jeśli Twoje wydatki przekraczają skonfigurowaną kwotę.
 
-- [Azure Cost Management](https://azure.microsoft.com/services/cost-management): Azure Cost Management, licencjonowane przez Cloudyn oddziału firmy Microsoft, to rozwiązanie do zarządzania kosztami w chmurze, które ułatwia efektywne korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. Zbieraj dane dotyczące użycia i rozliczeń w chmurze za pomocą interfejsów programu aplikacji (API) z platformy Azure, Amazon Web Services i Google Cloud Platform. Dostęp do tych danych zapewnia pełny wgląd w wykorzystanie i koszty zasobów na wszystkich platformach chmurowych w formie jednego połączonego widoku. Stale monitoruj wykorzystanie zasobów chmurowych i trendy związane z kosztami. Śledź rzeczywiste wydatki w chmurze względem budżetu, aby uniknąć przekroczenia wydatków. Wykrywaj anomalie kosztowe i niedobory użycia. Użyj danych historycznych, aby zwiększyć dokładność prognozowania użycia i wydatków w chmurze.
+- [Azure Cost Management](https://azure.microsoft.com/services/cost-management): Azure Cost Management, licencjonowane przez Cloudyn oddziału firmy Microsoft, to rozwiązanie do zarządzania kosztami w chmurze, które ułatwia efektywne korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. Zbieraj dane dotyczące użycia i rozliczeń w chmurze za pomocą interfejsów programu aplikacji (API) z platformy Azure, Amazon Web Services i Google Cloud Platform. Dzięki tym danym można uzyskać pełen wgląd w zużycie zasobów i koszty na platformach chmurowych w jednym, ujednoliconym widoku. Ciągle Monitoruj użycie chmury i trendy kosztów. Śledź rzeczywiste wydatki w chmurze względem budżetu, aby uniknąć przekroczenia wydatków. Wykrywaj anomalie wydatków i nieefektywność użycia. Użyj danych historycznych, aby zwiększyć dokładność prognozowania użycia i wydatków w chmurze.

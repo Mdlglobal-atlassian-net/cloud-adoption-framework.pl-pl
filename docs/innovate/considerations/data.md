@@ -1,18 +1,18 @@
 ---
-title: 'Innowacje w chmurze: dane Zdemokratyzuj proces'
-description: Wprowadzenie do innowacji w chmurze — dane Zdemokratyzuj proces
+title: Zdemokratyzuj proces dane za pomocą roznalazeków cyfrowych
+description: Dowiedz się więcej na temat Democratization, proces uzyskiwania danych do właściwych wskazówek w celu przetestowania rzeczy i innowacji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 158c3e25bac2124312a8ceaf3ac5500a58246f48
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1ee86c13d94f62770e21e3a8208e9c0695725ba5
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808502"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170226"
 ---
 # <a name="democratize-data"></a>Demokratyzowanie danych
 
@@ -43,7 +43,7 @@ Podstawowe narzędzia do udostępniania danych bezpośrednio z użytkownikami da
 
 Udostępnianie danych może szybko utworzyć MVP, którego możesz używać w konwersacjach klientów. Jednak aby przekształcić udostępnione dane w użyteczne i funkcjonalne informacje, jest to zwykle wymagane. Po sprawdzeniu hipotezy przy użyciu udostępniania danych kolejnym etapem programowania jest zwykle zarządzanie danymi.
 
-Zarządzanie danymi jest szerokim tematem, który może wymagać jego własnej dedykowanej struktury. Ten stopień szczegółowości jest poza zakresem [struktury wdrożenia chmury](../../index.md). Istnieje jednak kilka aspektów nadzoru nad danymi, które należy wziąć pod uwagę zaraz po sprawdzeniu poprawności hipotezy klienta. Przykład:
+Zarządzanie danymi jest szerokim tematem, który może wymagać jego własnej dedykowanej struktury. Ten stopień szczegółowości jest poza zakresem [struktury wdrożenia chmury](../../index.md). Istnieje jednak kilka aspektów nadzoru nad danymi, które należy wziąć pod uwagę zaraz po sprawdzeniu poprawności hipotezy klienta. Na przykład:
 
 - **Czy dane są udostępnione poufne?** [Dane powinny zostać sklasyfikowane](../../govern/policy-compliance/data-classification.md) przed udostępnieniem publicznie, aby chronić interesy klientów i firmę.
 - **Czy dane są poufne, czy zostały zabezpieczone?** Ochrona danych poufnych powinna być wymagana w przypadku dowolnych danych z demokratyzacją. Przykładowe obciążenie dotyczące [zabezpieczania rozwiązań danych](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) zawiera kilka odwołań do zabezpieczania danych.

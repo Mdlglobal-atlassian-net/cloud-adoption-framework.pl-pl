@@ -1,18 +1,18 @@
 ---
-title: 'Innowacje w chmurze: Współpracuj z urządzeniami'
-description: Wprowadzenie do innowacji w chmurze — Współpracuj z urządzeniami
+title: Korzystanie z urządzeń za pomocą funkcji odpisywania cyfrowo
+description: Dowiedz się więcej na temat zaawansowanych metod zmniejszania wysiłku innowacji dzięki interakcji z klientami i środowiskiem otoczenia, a nie aplikacjami.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8b39362f2e0e21431e5d04ef05e2676094bca9bc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 05fc3e3b4ddb0ae630feaee57a345aec8870ea08
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808485"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171229"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Środowiska otoczenia: korzystanie z urządzeń
 

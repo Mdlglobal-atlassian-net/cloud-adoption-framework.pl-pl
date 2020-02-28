@@ -1,18 +1,18 @@
 ---
-title: 'Innowacje w chmurze: narzędzia do zdemokratyzuj proces danych na platformie Azure'
-description: Narzędzia do zdemokratyzuj proces danych na platformie Azure
+title: Narzędzia innowacyjne do zdemokratyzuj proces danych
+description: Dowiedz się więcej na temat Azure Data Catalog i innych usług, które ułatwiają szybkie testowanie hipotez przed rozwinięciem do szerszej, bardziej kosztownej liczby cyfr.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fed47eb3a5bb7a3b51f19f2d103395ede848e9d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e505b7794c9eeff94d746286e0d8cbb9f0cea86e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808689"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171263"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Narzędzia do zdemokratyzuj proces danych na platformie Azure
 
@@ -48,21 +48,21 @@ Na platformie Azure następujące narzędzia są często używane do przyspiesze
 - Azure Database for MariaDB
 - Skalowanie Azure Database for PostgreSQL
 - Azure Data Lake
-- Usługa migracji bazy danych platformy Azure
+- Azure Database Migration Service
 - Azure SQL Database z wystąpieniami zarządzanymi lub bez nich
 - Azure Data Factory
-- Azure Stream Analytics
-- Usługi integracji programu SQL Server
+- Usługa Azure Stream Analytics
+- SQL Server Integration Services
 - Azure Stack
 - SQL Server Stretch Database
 - Microsoft Azure StorSimple
-- Usługa Pliki systemu Azure
-- Usługa Azure File Sync
+- Azure Files
+- Azure File Sync
 - PolyBase
 
 Zgodnie z podejściem do rozliczeń na dużą skalę, aspekty poszczególnych rozwiązań wymagają uściślania i działania techniczne. W takim przypadku może być wymagana większa liczba tych usług. Skorzystaj ze spisu treści po lewej stronie tej strony, aby uzyskać wskazówki dotyczące narzędzi platformy Azure, które są istotne dla procesu testowania hipotez.
 
-## <a name="get-started"></a>Rozpocznij
+## <a name="get-started"></a>Rozpoczęcie pracy
 
 Spis treści po lewej stronie tej strony zawiera wiele artykułów. Te artykuły ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
 

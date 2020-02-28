@@ -1,24 +1,24 @@
 ---
-title: 'Innowacje w chmurze: uczenie się'
-description: Wprowadzenie do innowacji w chmurze — informacje o zawartości
+title: Poznaj klientów, aby zwiększyć innowacje
+description: Zapoznaj się z partnerami klientów i z nich, aby utworzyć minimalną, opłacalne rozwiązanie produktu (MVP) za pomocą usługi empatię, a następnie wygenerować metryki dotyczące wpływu klientów.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4166f55c3878266a06f1da4b907eaab5baa6e473
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808434"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171161"
 ---
 # <a name="learn-with-customers"></a>Uczenie się wraz z klientami
 
 Nasz bieżący klienci reprezentują nasze najlepsze zasoby na potrzeby uczenia się. Dzięki współdziałaniu z nami mogą oni pomóc nam w [tworzeniu empatię klienta](./build.md) , aby znaleźć najlepsze rozwiązanie do ich potrzeb. Ułatwiają one również tworzenie minimalnego, opłacalnego rozwiązania produktu (MVP) przez generowanie metryk, na podstawie których [mierzy wpływ na klientów](./measure.md). W tym artykule opisano sposób uczenia się klientów i naszych partnerów.
 
-## <a name="continuous-learning"></a>Ciągłe zdobywanie wiedzy
+## <a name="continuous-learning"></a>Ciągła nauka
 
 Na koniec każdej iteracji mamy okazję do poznania się z cyklami kompilacji i miar. Ten proces ciągłego uczenia się jest bardzo prosty. Poniższy obraz zawiera omówienie przepływu procesu.
 

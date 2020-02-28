@@ -1,18 +1,18 @@
 ---
-title: 'Migracja mainframe: przełączenie z komputerów mainframe na platformę Azure'
-description: Migruj aplikacje ze środowisk mainframe na platformę Azure dla systemów, które są aktualnie uruchomione na komputerach mainframe.
+title: Migrowanie aplikacji z komputerów mainframe na platformę Azure
+description: Uzyskaj wskazówki techniczne dotyczące przełączenia z platformy mainframe do usług obliczeniowych i magazynowych platformy Azure w środowisku o wysokiej dostępności.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: fb3465345b45f2a7c71dac3c519e4daa7702dd47
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808774"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171348"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Przełączenie z komputerów mainframe na platformę Azure
 
@@ -61,7 +61,7 @@ Komputery mainframe zwykle utrzymują Lokacje odzyskiwania po awarii lub wykorzy
 
 Zautomatyzowana nadmiarowość geograficzna jest również dostępna za pomocą funkcji sprzęgu komputera mainframe, chociaż z dużym obciążeniem i jest zazwyczaj zarezerwowana dla systemów o znaczeniu krytycznym. W przeciwieństwie do systemu Azure dostępne są łatwe w implementacji i ekonomiczne opcje [tworzenia kopii zapasowych](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [odzyskiwania](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)i [nadmiarowości](https://docs.microsoft.com/azure/storage/common/storage-redundancy) na poziomach lokalnym lub regionalnym lub za pośrednictwem nadmiarowości geograficznej.
 
-## <a name="storage"></a>Usługa Storage
+## <a name="storage"></a>Magazyn
 
 Część opisująca, jak działa mainframe, polega na dekodowania różnych nakładających się warunków. Na przykład Magazyn centralny, pamięć rzeczywista, rzeczywiste magazyn i główny magazyn ogólnie odnoszą się do magazynu dołączonego bezpośrednio do procesora mainframe.
 

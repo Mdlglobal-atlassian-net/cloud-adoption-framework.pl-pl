@@ -1,18 +1,18 @@
 ---
-title: 'Migracja komputera mainframe: migracja aplikacji mainframe'
-description: Migruj aplikacje ze środowisk mainframe na platformę Azure, czyli sprawdzoną, wysoce dostępną i skalowalną infrastrukturę dla systemów, które obecnie działają na komputerach mainframe.
+title: Strategie migracji aplikacji mainframe
+description: Poznaj strategie, takie jak rehostowanie, wycofywanie, ponowne kompilowanie lub zastępowanie aplikacji do migracji ze środowisk mainframe na platformę Azure.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a662edd4ae7c6a854014b37cac2ccb0fab4c474e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808825"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171416"
 ---
 # <a name="mainframe-application-migration"></a>Migracja aplikacji komputerów mainframe
 
@@ -64,7 +64,7 @@ Monitory TP są dostępne od różnych dostawców i uruchamiane na maszynach wir
 
 Na platformie Azure środowiska emulacji są używane do uruchamiania Menedżera TP i zadań wsadowych korzystających z JCL. W warstwie danych DB2 jest zastępowany przez [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), chociaż Microsoft SQL Server, DB2 LUW lub Oracle Database może być również używany. Emulator obsługuje funkcję IMS, VSAM i SEQ. Narzędzia do zarządzania systemem komputera mainframe są zastępowane przez usługi platformy Azure i oprogramowanie od innych dostawców, które są uruchamiane na maszynach wirtualnych.
 
-Funkcje obsługi ekranu i wpisów formularzy są powszechnie implementowane przy użyciu serwerów sieci Web, które można łączyć z interfejsami API bazy danych, takimi jak ADO, ODBC i JDBC na potrzeby dostępu do danych i transakcji. Dokładny wiersz składników usługi Azure IaaS do użycia zależy od preferowanego systemu operacyjnego. Przykład:
+Funkcje obsługi ekranu i wpisów formularzy są powszechnie implementowane przy użyciu serwerów sieci Web, które można łączyć z interfejsami API bazy danych, takimi jak ADO, ODBC i JDBC na potrzeby dostępu do danych i transakcji. Dokładny wiersz składników usługi Azure IaaS do użycia zależy od preferowanego systemu operacyjnego. Na przykład:
 
 - Maszyny wirtualne oparte na systemie Windows: Internet Information Server (IIS) wraz z ASP.NET na potrzeby obsługi ekranu i logiki biznesowej. Użyj ADO.NET do uzyskiwania dostępu do danych i transakcji.
 
@@ -88,7 +88,7 @@ Używanych
 
 - Przetwarzanie równoległe, jak platforma Azure umożliwia łatwe skalowanie do przetwarzania równoległego, zapewniając większą moc obliczeniową dla uruchomienia partii.
 
-### <a name="storage"></a>Usługa Storage
+### <a name="storage"></a>Magazyn
 
 Używanych
 
@@ -176,7 +176,7 @@ System Azure zapewnia sprawdzoną, wysoką dostępność i skalowalną infrastru
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-Więcej informacji zawierają następujące zasoby:
+Aby uzyskać więcej informacji, zobacz następujące zasoby:
 
 - [Rozpoczynanie pracy z platformą Azure](https://docs.microsoft.com/azure)
 

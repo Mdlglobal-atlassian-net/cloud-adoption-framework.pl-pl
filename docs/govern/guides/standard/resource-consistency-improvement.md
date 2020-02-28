@@ -1,6 +1,6 @@
 ---
 title: 'Standardowe zarządzanie przedsiębiorstwem: zwiększanie spójności zasobów'
-description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się więcej o ulepszaniu planu bazowego zarządzania i korygowaniem zagrożeń przez dodanie kontroli odzyskiwania, rozmiarów i monitorowania.
+description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się więcej o ulepszaniu planu bazowego zarządzania i dodawaniu kontroli odzyskiwania, określania rozmiarów i monitorowania w celu korygowania zagrożeń.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e50d3e258a4b040d1f9cfaa1b274ed977c49b14d
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 57358a9933c6f18d72678c3c4ba82bef90e713a0
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709111"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170821"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: zwiększanie spójności zasobów
 

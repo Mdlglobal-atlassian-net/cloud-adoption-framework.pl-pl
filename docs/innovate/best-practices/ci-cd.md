@@ -1,18 +1,18 @@
 ---
-title: 'Innowacje w chmurze: narzędzia do podejmowania akceptacji na platformie Azure'
-description: Narzędzia umożliwiające przyjęcie rozwiązań na platformie Azure
+title: Narzędzia innowacyjne umożliwiające przyjęcie
+description: Dowiedz się więcej o narzędziach platformy Azure, które wykorzystują metodologię innowacji, aby usunąć tarcie i wprowadzić przyrostowo, jak w przypadku dojrzałych.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 01961b514f5640d73150504ea65ee9af2fec17b2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 20dc6aa263e8f7a381809335b4af9b4f4de84dc6
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808706"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171297"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>Narzędzia umożliwiające przyjęcie rozwiązań na platformie Azure
 
@@ -44,7 +44,7 @@ W miarę zwiększania się potrzeb można rozszerzyć tę podstawę, aby korzyst
 
 Spis treści po lewej stronie tej strony zawiera wskazówki dotyczące każdego narzędzia i jest wyrównany do opisanego wcześniej modelu zapadalności.
 
-## <a name="get-started"></a>Rozpocznij
+## <a name="get-started"></a>Rozpoczęcie pracy
 
 Spis treści po lewej stronie tej strony zawiera wiele artykułów. Te artykuły ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
 
