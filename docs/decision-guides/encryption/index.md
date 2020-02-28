@@ -1,6 +1,6 @@
 ---
 title: Przewodnik po decyzjach związanych z szyfrowaniem
-description: Informacje na temat szyfrowania jako usługi podstawowej w przypadku migracji na platformę Azure.
+description: Zaimplementuj zasady szyfrowania, podstawową usługę migracji na platformę Azure, która zapewnia dodatkowe warstwy zabezpieczeń dla obciążeń i danych w chmurze.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7df170713e10460d9e928837a99287be0afd5805
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c81096576934aa55bd0381e7ac26dd8666b827ea
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807057"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707989"
 ---
 # <a name="encryption-decision-guide"></a>Przewodnik po decyzjach związanych z szyfrowaniem
 
