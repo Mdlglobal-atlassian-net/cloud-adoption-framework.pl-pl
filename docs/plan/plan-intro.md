@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a900ca61f957f941728829208cf72bc8f2aba601
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 36d87caae344414e7bb311fb032d28f58bc5ea6c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800325"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222162"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planowanie wdrażania chmury
 
@@ -22,7 +22,7 @@ Plan jest istotnym wymaganiem do pomyślnego wdrożenia chmury. Plan wdrażania 
 
 Plany wdrażania chmury zaczynają się od dobrze zdefiniowanej strategii. Strategia powinna obejmować co najmniej te motywacje, wyniki biznesowe i uzasadnienia biznesowe do wdrożenia w chmurze. Te dodatnie zwroty są następnie równoważone przez nakład pracy wymagany do ich realizacji.
 
-Nakład pracy zaczyna się od znaku cyfrowego (proponowany lub istniejący), który tłumaczy strategię na bardziej materialne obciążenia i zasoby. Następnie można zamapować te elementy materialne na prace techniczne. Z tego miejsca wykwalifikowanymi osobami w odpowiedniej strukturze organizacyjnej może wykonywać prace techniczne. Plan wdrożenia chmury łączy wszystkie te tematy w jeden plan, który może być prognozowany, budżetowany, implementowany i zarządzany przy użyciu metod zarządzania projektami Agile. Ta seria artykułów ułatwia utworzenie planu i zawiera kilka szablonów, które ułatwiają wykonywanie zadań.
+Nakład pracy zaczyna się od znaku cyfrowego (proponowany lub istniejący), który tłumaczy strategię na bardziej materialne obciążenia i zasoby. Następnie można zamapować te elementy materialne na prace techniczne. Z tego miejsca wykwalifikowanymi osobami w odpowiedniej strukturze organizacyjnej może wykonywać prace techniczne. Plan wdrożenia chmury łączy te tematy w jeden plan, który może być prognozowany, budżetowany, implementowany i zarządzany przy użyciu metod opartych na zarządzaniu projektami Agile. Ta seria artykułów ułatwia utworzenie planu i zawiera kilka szablonów, które ułatwiają wykonywanie zadań.
 
 ## <a name="transition-from-sequential-to-iterative-planning"></a>Przejście z sekwencyjnego do planowania iteracyjnego
 

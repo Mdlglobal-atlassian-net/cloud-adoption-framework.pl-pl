@@ -1,6 +1,6 @@
 ---
 title: Co to jest klasyfikacja danych?
-description: Klasyfikację danych należy stosować jako punkt wyjścia dla ładu w chmurze przez określenie i przypisanie wartości do danych organizacji.
+description: Klasyfikacja danych umożliwia określenie i przypisanie wartości do danych organizacji, a także udostępnia wspólny punkt początkowy dla ładu.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e956f2c4690d2020770d4da3e50bb163994c4c66
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1680a78af449731ea7e15525d3e276998a73c0d4
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706697"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223789"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-data-classification"></a>Co to jest klasyfikacja danych?
 
-Klasyfikacja danych umożliwia określenie i przypisanie wartości do danych organizacji, a to wspólny punkt wyjścia dla zarządzania. Proces klasyfikacji danych umożliwia kategoryzowanie danych według czułości i wpływu na działalność biznesową w celu identyfikowania zagrożeń. Gdy dane są klasyfikowane, można nimi zarządzać w sposób chroniący poufne lub ważne dane przed kradzieżą lub utratą.
+Klasyfikacja danych umożliwia określenie i przypisanie wartości do danych organizacji, a także udostępnia wspólny punkt początkowy dla ładu. Proces klasyfikacji danych umożliwia kategoryzowanie danych według czułości i wpływu na działalność biznesową w celu identyfikowania zagrożeń. Gdy dane są klasyfikowane, można nimi zarządzać w sposób chroniący poufne lub ważne dane przed kradzieżą lub utratą.
 
 ## <a name="understand-data-risks-then-manage-them"></a>Zrozumienie zagrożeń związanych z danymi, a następnie zarządzanie nimi
 

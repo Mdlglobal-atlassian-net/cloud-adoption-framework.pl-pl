@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd3cbd9deda4d0325f014be4bc793b59aa973788
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808094"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223390"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>Konfigurowanie usług zarządzania serwerem Azure na dużą skalę
 
@@ -74,7 +74,7 @@ Po zakończeniu pracy Kreatora przypisanie zasad zostanie wdrożone w środowisk
 > [!NOTE]
 > Przed dołączeniem usług zarządzania serwerem Azure do serwerów należy utworzyć wymagany [obszar roboczy log Analytics i konto Azure Automation](./prerequisites.md#create-a-workspace-and-automation-account) .
 
-W przypadku serwerów lokalnych należy ręcznie pobrać i zainstalować [agenta log Analytics oraz agenta zależności firmy Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) i skonfigurować go tak, aby łączył się z prawidłowym obszarem roboczym. Należy określić identyfikator obszaru roboczego i informacje o kluczu. Aby uzyskać te informacje, przejdź do obszaru roboczego Log Analytics w Azure Portal i wybierz pozycję **ustawienia** > **Ustawienia zaawansowane**.
+W przypadku serwerów lokalnych należy ręcznie pobrać i zainstalować [agenta log Analytics oraz agenta zależności firmy Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) i skonfigurować go tak, aby łączył się z prawidłowym obszarem roboczym. Należy określić identyfikator obszaru roboczego i informacje o kluczu. Aby uzyskać te informacje, przejdź do obszaru roboczego Log Analytics w Azure Portal, a następnie wybierz pozycję **ustawienia** > **Ustawienia zaawansowane**.
 
 ![Zrzut ekranu przedstawiający zaawansowane ustawienia obszaru roboczego Log Analytics w Azure Portal](./media/onboarding-on-premises.png)
 
@@ -139,7 +139,7 @@ Aby utworzyć lub zmodyfikować zapisane wyszukiwanie, wykonaj następujące kro
 
 Aby zaimplementować to rozwiązanie:
 
-1. W Azure Portal Otwórz **wszystkie usługi** i wybierz pozycję **Management + zarządzanie** **rozwiązaniami** > .
+1. W Azure Portal Otwórz **wszystkie usługi**, a następnie wybierz pozycję **Management + zarządzanie** **rozwiązaniami** > .
 2. W widoku **rozwiązania** wybierz pozycję **Dodaj**.
 3. Wyszukaj **Activity Log Analytics** i wybierz ją.
 4. Wybierz pozycję **Utwórz**.
@@ -152,7 +152,7 @@ Rozwiązanie Agent Health Log Analytics platformy Azure przedstawia raporty doty
 
 Aby zaimplementować to rozwiązanie:
 
-1. W Azure Portal Otwórz **wszystkie usługi** i wybierz pozycję **Management + zarządzanie** **rozwiązaniami** > .
+1. W Azure Portal Otwórz **wszystkie usługi**, a następnie wybierz pozycję **Management + zarządzanie** **rozwiązaniami** > .
 2. W widoku **rozwiązania** wybierz pozycję **Dodaj**.
 3. Wyszukaj **usługę Azure log Analytics Agent Health** i wybierz ją.
 4. Wybierz pozycję **Utwórz**.
@@ -167,9 +167,9 @@ Antimalware Assessment rozwiązanie pomaga identyfikować serwery, które są za
 
 Aby zaimplementować to rozwiązanie:
 
-1. W Azure Portal Otwórz **wszystkie usługi** i wybierz pozycję **Management + zarządzanie** **rozwiązaniami** > .
+1. W Azure Portal Otwórz **wszystkie usługi**, wybierz pozycję Wybierz **zarządzanie i nadzór** > **rozwiązania**.
 2. W widoku **rozwiązania** wybierz pozycję **Dodaj**.
-3. Wyszukaj i wybierz **Antimalware Assessment**.
+3. Wyszukaj, a następnie wybierz pozycję **Antimalware Assessment**.
 4. Wybierz pozycję **Utwórz**.
 
 Należy określić **nazwę obszaru** roboczego, który został utworzony w poprzedniej sekcji, w której jest włączone rozwiązanie.
@@ -187,7 +187,7 @@ Zalecamy, aby dołączyć wszystkie serwery co najmniej do Azure Security Center
 Aby włączyć Azure Security Center warstwy Bezpłatna, wykonaj następujące kroki:
 
 1. Przejdź do strony portalu **Security Center** .
-2. W obszarze **zasady & zgodność**wybierz pozycję **zasady zabezpieczeń**.
+2. W obszarze **zasady &AMP; zgodność**wybierz pozycję **zasady zabezpieczeń**.
 3. Znajdź zasób obszaru roboczego Log Analytics, który został utworzony w okienku po prawej stronie.
 4. Wybierz pozycję **Edytuj ustawienia** dla tego obszaru roboczego.
 5. Wybierz **warstwę cenową**.

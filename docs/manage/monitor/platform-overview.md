@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: ea8317bb7490ef7e8aa69950232191f123da4dd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 99faaa30d67b404e9a9aa1a45d434fd7ec3f2c31
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807601"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223020"
 ---
+<!-- cspell:ignore opsman ITSM -->
+
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Przewodnik monitorowania w chmurze: monitorowanie Platform przegląd
 
 Firma Microsoft oferuje różne możliwości monitorowania z dwóch produktów: System Center Operations Manager, które zostały zaprojektowane dla lokalnego, a następnie rozszerzone do chmury i Azure Monitor, które zostały zaprojektowane dla chmury, ale mogą być również monitorowane lokalnie systemach. Te dwie oferty zapewniają podstawowe usługi monitorowania, takie jak alerty, śledzenie czasu przestoju usługi, monitorowanie kondycji aplikacji i infrastruktury, Diagnostyka i analiza.
@@ -51,15 +53,15 @@ Od 2015 do 2018 kwietnia, pakiet Operations Management Suite (OMS) to zbiór nas
 
 - Application Insights
 - Azure Automation
-- Usługa Azure Backup
+- Kopia zapasowa Azure
 - Operational Insights (później Log Analytics z oznaczeniem)
-- Odzyskiwanie witryn
+- Site Recovery
 
 Funkcje usług, które były częścią pakietu OMS, nie uległy zmianie, gdy pakiet OMS został wycofany. Zostały one przewyrównane do Azure Monitor.
 
 ## <a name="infrastructure-requirements"></a>Wymagania dotyczące infrastruktury
 
-### <a name="operations-manager"></a>Operations Manager
+### <a name="operations-manager"></a>Magazyn danych
 
 Operations Manager wymaga znaczącej infrastruktury i konserwacji do obsługi grupy zarządzania, która jest podstawową jednostką funkcjonalności. Co najmniej jeden z grup zarządzania składa się z jednego lub większej liczby serwerów zarządzania, wystąpienia SQL Server, hostowania bazy danych operacyjnych i magazyn danych raportowania oraz agentów. Złożoność projektu grupy zarządzania zależy od wielu czynników, takich jak zakres obciążeń do monitorowania oraz liczba urządzeń lub komputerów obsługujących obciążenia. Jeśli potrzebujesz wysokiej dostępności i odporności lokacji, tak jak w przypadku platform monitorowania przedsiębiorstwa, wymagania dotyczące infrastruktury i powiązanej konserwacji mogą się znacznie zwiększyć.
 
@@ -67,7 +69,7 @@ Operations Manager wymaga znaczącej infrastruktury i konserwacji do obsługi gr
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
-Azure Monitor to usługa SaaS (Software as a Service), w której cała infrastruktura obsługująca ją jest uruchomiona na platformie Azure i zarządzana przez firmę Microsoft. Jest on przeznaczony do przeprowadzania monitorowania, analizy i diagnostyki na dużą skalę i jest dostępny we wszystkich chmurach narodowych. Podstawowe części infrastruktury (moduły zbierające, metryki i dzienniki), które są niezbędne do obsługi Azure Monitor są obsługiwane przez firmę Microsoft.  
+Azure Monitor to oferta typu oprogramowanie jako usługa (SaaS), dzięki czemu infrastruktura pomocnicza działa na platformie Azure i jest zarządzana przez firmę Microsoft. Przeprowadza monitorowanie, analizę i diagnostykę na dużą skalę. Jest ona dostępna we wszystkich chmurach narodowych. Podstawowe części infrastruktury (moduły zbierające, magazyn metryk i dzienniki), które obsługują Azure Monitor są obsługiwane przez firmę Microsoft.  
 
 ![Diagram Azure Monitor](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 
@@ -75,7 +77,7 @@ Azure Monitor to usługa SaaS (Software as a Service), w której cała infrastru
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="operations-manager"></a>Operations Manager
+### <a name="operations-manager"></a>Magazyn danych
 
 #### <a name="agents"></a>Agenci
 
@@ -115,13 +117,13 @@ Szczegółowe informacje, takie jak Azure Monitor kontenerów i Azure Monitor dl
 
 Azure Monitor oddziela zbieranie danych od akcji wykonanych względem tych danych, które obsługują rozproszone mikrousługi w środowisku chmury. Konsoliduje dane z wielu źródeł na wspólną platformę danych, a także udostępnia funkcje analizy, wizualizacji i alertów na podstawie zebranych danych.
 
-Wszystkie dane zbierane przez Azure Monitor są przechowywane jako dzienniki lub metryki, a różne funkcje monitora polegają na obu. Metryki zawierają wartości liczbowe w szeregach czasowych, które są odpowiednie dla alertów niemal w czasie rzeczywistym i szybkiego wykrywania problemów. Dzienniki zawierają dane tekstowe lub liczbowe i są obsługiwane przez zaawansowany język zapytań, który sprawia, że są one szczególnie przydatne do wykonywania złożonej analizy.
+Dane zbierane przez Azure Monitor są przechowywane jako dzienniki lub metryki i różne funkcje Azure Monitor korzystają z jednego z nich. Metryki zawierają wartości liczbowe w szeregach czasowych, które są odpowiednie dla alertów niemal w czasie rzeczywistym i szybkiego wykrywania problemów. Dzienniki zawierają dane tekstowe lub liczbowe i mogą być zapytania przy użyciu zaawansowanego języka, szczególnie przydatne do wykonywania złożonej analizy.
 
-Ponieważ monitor oddziela zbieranie danych od akcji związanych z tymi danymi, może nie być w stanie zapewnić w wielu przypadkach alertów niemal w czasie rzeczywistym. Aby otrzymywać alerty dotyczące danych dziennika, zapytania są uruchamiane według cyklicznego harmonogramu zdefiniowanego w alercie. Takie zachowanie pozwala Azure Monitor łatwo skorelować dane ze wszystkich monitorowanych źródeł i interaktywnie analizować dane na różne sposoby. Jest to szczególnie przydatne w przypadku analizy głównej przyczyny i zidentyfikowania, gdzie w przeciwnym razie może wystąpić problem.
+Ponieważ Azure Monitor oddziela zbieranie danych od akcji związanych z tymi danymi, w wielu przypadkach może nie być możliwe dostarczenie alertów niemal w czasie rzeczywistym. Aby otrzymywać alerty dotyczące danych dziennika, zapytania są uruchamiane według cyklicznego harmonogramu zdefiniowanego w alercie. Takie zachowanie pozwala Azure Monitor łatwo skorelować dane ze wszystkich monitorowanych źródeł i interaktywnie analizować dane na różne sposoby. Jest to szczególnie przydatne w przypadku analizy głównej przyczyny i zidentyfikowania, gdzie w przeciwnym razie może wystąpić problem.
 
 ## <a name="health-monitoring"></a>Monitorowanie kondycji
 
-### <a name="operations-manager"></a>Operations Manager
+### <a name="operations-manager"></a>Magazyn danych
 
 Pakiety administracyjne w Operations Manager obejmują model usługi, który opisuje składniki monitorowanej aplikacji oraz ich relacje. Monitory identyfikują bieżący stan kondycji każdego składnika na podstawie danych i skryptów w agencie. Stan kondycji umożliwia szybkie wyświetlenie podsumowania kondycji monitorowanych komputerów i aplikacji.
 
@@ -135,9 +137,9 @@ Azure Monitor nie zapewnia zdefiniowanej przez użytkownika metody implementowan
 
 - **Azure monitor kontenerów:** Monitoruje wydajność i kondycję usługi Azure Kubernetes Service lub Azure Container Instances. Zbiera metryki pamięci i procesora z kontrolerów, węzły i kontenerów, które są dostępne w usłudze Kubernetes za pomocą interfejsu API metryki. Gromadzi również dzienniki kontenerów i dane spisu dotyczące kontenerów i ich obrazów. Wstępnie zdefiniowane kryteria kondycji, które są oparte na zebranych danych wydajności, ułatwiają określenie, czy istnieje wąskie gardło zasobów czy problem z pojemnością. Można także zrozumieć ogólną wydajność lub wydajność z określonego typu obiektu Kubernetes (pod, węzła, kontrolera lub kontenera).
 
-## <a name="analyze-data"></a>Analizuj dane
+## <a name="analyze-data"></a>Analizowanie danych
 
-### <a name="operations-manager"></a>Operations Manager
+### <a name="operations-manager"></a>Magazyn danych
 
 Operations Manager oferuje cztery podstawowe sposoby analizowania danych po ich zebraniu:
 
@@ -153,9 +155,9 @@ Operations Manager oferuje cztery podstawowe sposoby analizowania danych po ich 
 
 Dzięki zaawansowanemu aparatowi analizy Azure Monitor można interaktywnie współpracować z danymi dzienników i łączyć je z innymi danymi monitorowania w celu uzyskania trendu i analizy danych. Widoki i pulpity nawigacyjne pozwalają wizualizować dane zapytań na wiele sposobów z Azure Portal i importować je do Power BI. Rozwiązania do monitorowania obejmują zapytania i widoki umożliwiające prezentowanie zbieranych danych. Szczegółowe informacje, takie jak Application Insights, Azure Monitor dla maszyn wirtualnych i Azure Monitor dla kontenerów obejmują dostosowane wizualizacje obsługujące interaktywne scenariusze monitorowania.
 
-## <a name="alerting"></a>Alerty
+## <a name="alerting"></a>Generowanie alertów
 
-### <a name="operations-manager"></a>Operations Manager
+### <a name="operations-manager"></a>Magazyn danych
 
 Operations Manager tworzy alerty w odpowiedzi na wstępnie zdefiniowane zdarzenia, po spełnieniu progu wydajności oraz o zmianie stanu kondycji monitorowanego składnika. Obejmuje ono pełne zarządzanie alertami, co pozwala na ustawienie ich rozdzielczości i przypisanie ich do różnych operatorów lub inżynierów systemów. Można ustawić reguły powiadomień, które określają, które alerty będą wysyłać aktywne powiadomienia.
 
@@ -169,7 +171,7 @@ Chociaż rozwiązania do monitorowania mogą obejmować reguły alertów, zwykle
 
 ## <a name="workflows"></a>Przepływy
 
-### <a name="operations-manager"></a>Operations Manager
+### <a name="operations-manager"></a>Magazyn danych
 
 Pakiety administracyjne w Operations Manager zawierają setki poszczególnych przepływów pracy i określają, jakie dane mają być zbierane i jakie działania należy wykonać w przypadku tych danych. Na przykład reguła może próbkować licznik wydajności co kilka minut, przechowując jego wyniki na potrzeby analizy. Monitor może próbkować ten sam licznik wydajności i porównać jego wartość z progiem w celu określenia stanu kondycji monitorowanego obiektu. Inna reguła może uruchomić skrypt, aby zbierać i analizować niektóre dane na komputerze agenta, a następnie uruchamiać alert, jeśli zwróci konkretną wartość.
 
@@ -181,7 +183,7 @@ Azure Monitor oddziela zbieranie danych od akcji i analizy wykonanych z tych dan
 
 ## <a name="extend-the-base-platform"></a>Rozwiń platformę podstawową
 
-### <a name="operations-manager"></a>Operations Manager
+### <a name="operations-manager"></a>Magazyn danych
 
 Operations Manager implementuje wszystkie logiki monitorowania w pakiecie administracyjnym, który można utworzyć samodzielnie lub uzyskać od nas lub do partnera. Podczas instalowania pakietu administracyjnego program automatycznie odnajduje składniki aplikacji lub usługi w różnych agentach i wdraża odpowiednie zasady i monitory. Pakiet administracyjny zawiera definicje kondycji, reguły alertów, reguły zbierania danych o wydajności i zdarzeń oraz widoki, które zapewniają pełne monitorowanie obsługujące usługę lub aplikację infrastruktury.
 

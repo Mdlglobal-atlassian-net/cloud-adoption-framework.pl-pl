@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 42e7064a6d3b125a01f6fca9ce041b473fb1b7f6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cac594b7acd3764e6e5663ad28a77f292f7d440b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799492"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225342"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Wdrażanie strefy docelowej migracji
 
 Termin *strefa docelowa migracji* jest używany do opisania środowiska, które zostało ustanowione i przygotowane do hostowania obciążeń migrowanych ze środowiska lokalnego na platformę Azure. Strefa docelowa migracji to ostateczny element dostarczany przewodnika Instalatora platformy Azure. Ten artykuł łączy ze sobą wszystkie tematy dotyczące gotowości omówione w tym przewodniku i stosuje podjęte decyzje do wdrożenia pierwszej strefy docelowej migracji.
 
-W poniższych sekcjach opisano strefę docelową używaną często do ustanowienia środowiska odpowiedniego do użycia podczas migracji. Środowisko lub strefa docelowa opisana w tym artykule jest uwzględniona również w strategii platformy Azure. Strategia strefy docelowej migracji w strukturze wdrażania chmury umożliwia wdrożenie zdefiniowanego środowiska za pomocą jednego kliknięcia.
+W poniższych sekcjach opisano strefę docelową używaną często do ustanowienia środowiska odpowiedniego do użycia podczas migracji. Środowisko lub strefa docelowa opisana w tym artykule jest uwzględniona również w strategii platformy Azure. Możesz użyć struktury wdrażania w chmurze Migrowanie planu strefy ładunkowej, aby wdrożyć zdefiniowane środowisko w ramach jednego kroku.
 
 ## <a name="purpose-of-the-blueprint"></a>Przeznaczenie strategii
 
@@ -56,19 +56,19 @@ Strategia strefy docelowej odzwierciedla następujące decyzje.
 
 | Składnik | Decyzje | Alternatywne podejścia |
 |---------|---------|---------|
-|Narzędzia migracji|Usługa Azure Site Recovery zostanie wdrożona i utworzony zostanie projekt usługi Azure Migrate.|[Przewodnik po decyzjach dotyczących narzędzi migracji](../../decision-guides/migrate-decision-guide/index.md)|
+|Narzędzia migracji|Usługa Azure Site Recovery zostanie wdrożona i utworzony zostanie projekt usługi Azure Migrate.|[Przewodnik po decyzjach dotyczących narzędzi do migracji](../../decision-guides/migrate-decision-guide/index.md)|
 |Rejestrowanie i monitorowanie|Zostanie zainicjowany obszar roboczy usługi Operational Insights i konto magazynu diagnostycznego.|         |
-|Network (Sieć)|Zostanie utworzona sieć wirtualna z podsieciami dla bramy, zapory, serwera przesiadkowego i strefy docelowej.|[Decyzje dotyczące sieci](../considerations/networking-options.md)|
+|Network|Zostanie utworzona sieć wirtualna z podsieciami dla bramy, zapory, serwera przesiadkowego i strefy docelowej.|[Decyzje dotyczące sieci](../considerations/networking-options.md)|
 |Tożsamość|Przyjęto założenie, że subskrypcja jest już skojarzona z wystąpieniem usługi Azure Active Directory.|[Najlepsze rozwiązania dotyczące zarządzania tożsamościami](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
 |Zasady|W tej strategii założono, że nie mają być stosowane żadne zasady platformy Azure.|         |
 |Projekt subskrypcji|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)|
 |Grupy zarządzania|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)         |
 |Grupy zasobów|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)         |
-|Dane|ND|[Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Usługa Storage|ND|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)         |
-|Standardy nazewnictwa i tagowania|ND|[Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)         |
-|Zarządzanie kosztami|ND|[Śledzenie kosztów](../azure-best-practices/track-costs.md)|
-|Wystąpienia obliczeniowe|ND|[Opcje środowiska obliczeniowego](../considerations/compute-options.md)|
+|Dane|N/D|[Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Storage|N/D|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)         |
+|Standardy nazewnictwa i tagowania|N/D|[Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)         |
+|Zarządzanie kosztami|N/D|[Śledzenie kosztów](../azure-best-practices/track-costs.md)|
+|Compute|N/D|[Opcje środowiska obliczeniowego](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Dostosowywanie lub wdrażanie strefy docelowej przy użyciu tej strategii
 

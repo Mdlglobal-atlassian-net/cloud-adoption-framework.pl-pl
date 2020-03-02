@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: f2a589844b4564bb787db0efe4d796b7e5576309
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 13fef27afdc4ca7622924f3890b72d1847e833c0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170041"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222639"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Podejścia do planowania majątku cyfrowego
 
@@ -23,7 +23,7 @@ Planowanie elementów cyfrowych może potrwać kilka form, w zależności od pot
 
 Podejście do oceny w górnej części ocenia aspekty zabezpieczeń. Zabezpieczenia obejmują kategoryzację danych (wysoki, średni lub niski wpływ na działalność), wymagania dotyczące zgodności, suwerenności i bezpieczeństwa. Takie podejście ocenia złożoność architektury wysokiego poziomu. Oceniane są takie aspekty, jak uwierzytelnianie, struktura danych, wymagania dotyczące opóźnień, zależności i stron życia aplikacji.
 
-Podejście do góry mierzy także wymagania operacyjne aplikacji, takie jak poziomy usług, integracja, okna obsługi, monitorowanie i wgląd w szczegółowe dane. Gdy wszystkie te aspekty zostały przeanalizowane i wzięte pod uwagę, wynikowy wynik związany z migracją tej aplikacji do poszczególnych platform w chmurze: IaaS, PaaS i SaaS.
+Podejście do góry mierzy także wymagania operacyjne aplikacji, takie jak poziomy usług, integracja, okna obsługi, monitorowanie i wgląd w szczegółowe dane. Kiedy te aspekty zostały przeanalizowane i rozpatrzone, wynikowy wynik polega na tym, że migracja tej aplikacji do poszczególnych platform w chmurze: IaaS, PaaS i SaaS.
 
 Ponadto Ocena z góry ocenia korzyści finansowe aplikacji, takie jak efektywność operacyjna, całkowity koszt posiadania, zwrot z inwestycji i inne odpowiednie metryki finansowe. Ocena sprawdza także sezonowości aplikacji (na przykład czy istnieją czasy, w których są tworzone żądania?) i ogólne obciążenie obliczeniowe.
 

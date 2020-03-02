@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: adf14719f4d4d4c50194eb7b85ccfed7cd0df855
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ce5b1a77396479b2621afab5cac025b983f14469
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707496"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223746"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Zasady linii bazowej zabezpieczeń w chmurze
 
@@ -90,7 +90,7 @@ Nawet w przypadku inwestycji w natywną w chmurze linię bazową zabezpieczeń z
 - **Ochrona zawartości maszyny wirtualnej.** Konfigurowanie zwykłych zautomatyzowanych kopii zapasowych jest niezbędne do ochrony przed błędami użytkowników. Jest to niewystarczające, chociaż należy również upewnić się, że kopie zapasowe są bezpieczne z cyberattacks i są dostępne, gdy będą potrzebne.
 - **Monitorowanie aplikacji.** Ten wzorzec obejmuje kilka zadań, w tym uzyskiwanie wglądu w kondycję maszyn wirtualnych, zrozumienie interakcji między nimi oraz ustanawianie sposobów monitorowania aplikacji uruchamianych przez te maszyny wirtualne. Wszystkie te zadania są niezbędne do utrzymywania działania aplikacji na zegarie.
 - **Zabezpiecz i Przeprowadź inspekcję dostępu do danych.** Organizacje powinny przeprowadzać inspekcję całego dostępu do danych i korzystać z zaawansowanych funkcji uczenia maszynowego, aby wywoływać odchylenia od zwykłych wzorców dostępu.
-- **Tryb failover.** Operacje w chmurze, które mają niską tolerancję dla niepowodzenia, muszą mieć możliwość przełączenia w tryb failover lub odzyskania z cyberbezpieczeństwa lub zdarzenia platformy. Te procedury nie mogą być po prostu udokumentowane, ale powinny być rozłożone kwartalnie.
+- **Tryb failover.** Operacje w chmurze, które mają małą tolerancję dla niepowodzenia, muszą być w stanie przełączać się do trybu failover lub odzyskiwania z cyberbezpieczeństwa lub zdarzenia platformy. Te procedury nie mogą być po prostu udokumentowane, ale powinny być rozłożone kwartalnie.
 
 ## <a name="next-steps"></a>Następne kroki
 

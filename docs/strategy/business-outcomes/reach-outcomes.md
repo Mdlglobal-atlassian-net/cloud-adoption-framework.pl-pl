@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6e9a791507a67ddbd53988f1adadd46c4689cd00
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 94129d863d524b6ff618835c271c14756487e587
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798353"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225240"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Przykłady wyników uzyskiwania dostępu globalnego
 
@@ -32,7 +32,7 @@ Rozszerzanie na nowy rynek może być jednym z najbardziej cennych wyników firm
 
 Na nowych rynkach wprowadzono dodatkowe ograniczenia ładu. Rodo to jeden przykład kryteriów ładu, które mogą spowodować znaczny wpływ na finanse. Platforma Azure oferuje oferty zgodności, które pomagają klientom spełnić zobowiązania w zakresie zgodności między branżami objętymi regulacją i rynkami globalnymi. Aby uzyskać więcej informacji, zobacz [Omówienie zgodności Microsoft Azure](https://aka.ms/AzureCompliance).
 
-- **Przykład:** Dostawca narzędzi opartych na Stanach Zjednoczonych otrzymał umowę umożliwiającą dostarczenie narzędzi w Kanadzie. Kanadyjskie prawo dotyczące suwerenności danych wymaga, aby kanadyjskie dane były przechowywane w Kanadzie. Ta firma pracowała w sposób dzięki wykorzystaniu innowacji przez aplikacje obsługujące chmurę przez lata. W związku z tym ich oprogramowanie było możliwe do wdrożenia za pomocą w pełni inicjowanych procesów DevOps. Z kilkoma drobnymi zmianami w bazie kodu, mogli wdrożyć działającą kopię kodu w centrum danych platformy Azure w Kanadzie, przyczynić się do zachowania zgodności i obsłużyć klienta.
+- **Przykład:** Dostawca narzędzi opartych na Stanach Zjednoczonych otrzymał umowę umożliwiającą dostarczenie narzędzi w Kanadzie. Kanadyjskie prawo dotyczące suwerenności danych wymaga, aby kanadyjskie dane były przechowywane w Kanadzie. Ta firma pracowała w sposób dzięki wykorzystaniu innowacji przez aplikacje obsługujące chmurę przez lata. W związku z tym ich oprogramowanie można wdrożyć za pomocą w pełni inicjowanych procesów DevOps. Z kilkoma drobnymi zmianami w bazie kodu, mogli wdrożyć działającą kopię kodu w centrum danych platformy Azure w Kanadzie, przyczynić się do zachowania zgodności i obsłużyć klienta.
 
 ## <a name="next-steps"></a>Następne kroki
 

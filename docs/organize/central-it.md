@@ -8,91 +8,91 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 17f2395a435d8a29202595caec17932b406a1303
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c5dc7212fc20914fddaa7bd8777a5fec5f49e811
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806938"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225400"
 ---
 # <a name="central-it-capabilities"></a>Centralne możliwości IT
 
 W miarę skalowania rozwiązań związanych z zarządzaniem chmurą same możliwości zarządzania chmurą mogą nie być wystarczające do zarządzania wysiłkami. Gdy przyjęcie jest stopniowe, zespoły będą w sposób ekologiczny rozwijać umiejętności i procesy wymagane do przygotowania do chmury w czasie.
 
-Jeśli jednak jeden zespół wdrażania w chmurze używa chmury w celu osiągnięcia wyników działalności dla dużej firmy, to najprawdopodobniej będzie to w przypadku stopniowego wdrażania. Powodzenie następuje po sukcesie. Ma to również zastosowanie w przypadku wdrażania w chmurze, ale ma to miejsce w skali chmury. Gdy wdrożenie chmurowe rozszerza się z jednego zespołu do wielu zespołów, konieczne jest dodatkowe wsparcie z istniejących pracowników działu IT. However, those staff members may lack the training and experience required to support the cloud using cloud-native IT tools. This often drives the formation of a central IT team governing the cloud.
+Jeśli jednak jeden zespół wdrażania w chmurze używa chmury w celu osiągnięcia wyników działalności dla dużej firmy, to najprawdopodobniej będzie to w przypadku stopniowego wdrażania. Powodzenie następuje po sukcesie. Ma to również zastosowanie w przypadku wdrażania w chmurze, ale ma to miejsce w skali chmury. Gdy wdrożenie chmurowe rozszerza się z jednego zespołu do wielu zespołów, konieczne jest dodatkowe wsparcie z istniejących pracowników działu IT. Jednak Ci członkowie personelu mogą nie mieć szkoleń i doświadczeń wymaganych do obsługi chmury przy użyciu natywnych narzędzi IT w chmurze. Często dotyczy to tworzenia centralnych zespołów IT zarządzających chmurą.
 
 > [!CAUTION]
-> While this is a common maturity step, it can present a high risk to adoption, potentially blocking innovation and migration efforts if not managed effectively. See the risk section below to learn how to mitigate the risk of centralization becoming a cultural antipattern.
+> Chociaż jest to typowy etap zapadalności, może to stanowić wysokie ryzyko dla przyjęcia, potencjalnie blokując innowacje i wysiłki w zakresie migracji, jeśli nie jest to efektywnie zarządzane. Zapoznaj się z sekcją ryzyko poniżej, aby dowiedzieć się, jak ograniczyć ryzyko scentralizowanego działania centralizacji.
 
-## <a name="possible-sources-for-central-it-expertise"></a>Possible sources for central IT expertise
+## <a name="possible-sources-for-central-it-expertise"></a>Możliwe źródła dla centralnej wiedzy IT
 
-The skills needed to provide centralized IT capabilities could be provided by:
+Umiejętności niezbędne do zapewnienia scentralizowanych możliwości IT mogą być udostępniane przez:
 
-- An existing Central IT team
-- Enterprise architects
-- IT operations
-- IT governance
-- IT infrastructure
-- Networking
+- Istniejący centralny zespół IT
+- Enterprise Architects
+- Operacje IT
+- Zarządzanie IT
+- Infrastruktura IT
+- Sieć
 - Tożsamość
 - Wirtualizacja
-- Ciągłość biznesowa i odzyskiwanie po awarii
-- Application owners within IT
+- Ciągłość działania i odzyskiwanie po awarii
+- Właściciele aplikacji w ramach tej
 
 > [!WARNING]
-> Central IT should only be applied in the cloud when existing delivery on-premises is based on a Central IT model. If the current on-premises model is based on delegated control, consider a cloud center of excellence (CCoE) approach for a more compatible alternative.
+> Centralna usługa powinna być stosowana tylko w chmurze, gdy istniejąca usługa dostarczania jest oparta na centralnym modelu IT. Jeśli bieżący model lokalny jest oparty na delegowanej kontroli, weź pod uwagę podejście do rozwiązania Cloud Center of doskonałości (CCoE) w celu uzyskania bardziej zgodnej alternatywy.
 
-## <a name="key-responsibilities"></a>Key responsibilities
+## <a name="key-responsibilities"></a>Kluczowe obowiązki
 
-Adapt existing IT practices to ensure adoption efforts result in well-governed, well-managed environments in the cloud.
+Dostosuj istniejące praktyki IT, aby zapewnić, że wysiłki w zakresie wdrażania są dobrym sposobem, dobrze zarządzane środowiska w chmurze.
 
-The following tasks are typically executed regularly:
+Następujące zadania są zwykle wykonywane regularnie:
 
-### <a name="strategic-tasks"></a>Strategic tasks
+### <a name="strategic-tasks"></a>Zadania strategiczne
 
-- Review:
-  - [business outcomes](../strategy/business-outcomes/index.md)
-  - [financial models](../strategy/financial-models.md)
-  - [motivations for cloud adoption](../strategy/motivations.md)
-  - [business risks](../govern/policy-compliance/risk-tolerance.md)
-  - [rationalization of the digital estate](../digital-estate/index.md)
-- Monitor adoption plans and progress against the [prioritized migration backlog](../migrate/migration-considerations/assess/release-iteration-backlog.md).
-- Identify and prioritize platform changes that are required to support the migration backlog.
-- Act as an intermediary or translation layer between cloud adoption needs and existing IT teams.
-- Leverage existing IT teams to accelerate platform capabilities and enable adoption.
+- Ponownego
+  - [wyniki biznesowe](../strategy/business-outcomes/index.md)
+  - [Modele finansowe](../strategy/financial-models.md)
+  - [motywacje do wdrożenia w chmurze](../strategy/motivations.md)
+  - [ryzyka biznesowe](../govern/policy-compliance/risk-tolerance.md)
+  - [Racjonalizacja podpisu cyfrowego](../digital-estate/index.md)
+- Monitoruj plany wdrażania i postęp w odniesieniu do [zaległości migracji z priorytetami](../migrate/migration-considerations/assess/release-iteration-backlog.md).
+- Zidentyfikuj i ustal priorytety zmian platformy, które są wymagane do obsługi zaległości migracji.
+- Wykonaj działania jako pośrednią lub warstwę translacji między potrzebami wdrażania chmury a istniejącymi zespołami IT.
+- Skorzystaj z istniejących zespołów IT, aby przyspieszyć możliwości platformy i włączyć wdrażanie.
 
-### <a name="technical-tasks"></a>Technical tasks
+### <a name="technical-tasks"></a>Zadania techniczne
 
-- Build and maintain the cloud platform to support solutions.
-- Define and implement the platform architecture.
-- Operate and manage the cloud platform.
-- Continuously improve the platform.
-- Keep up with new innovations in the cloud platform.
-- Deliver new cloud capabilities to support business value creation.
-- Suggest self-service solutions.
-- Ensure that solutions meet existing governance and compliance requirements.
-- Create and validate deployment of platform architecture.
-- Review release plans for sources of new platform requirements.
+- Kompiluj i obsługuj platformę w chmurze w celu obsługi rozwiązań.
+- Zdefiniuj i Implementuj architekturę platformy.
+- Pracuj i Zarządzaj platformą w chmurze.
+- Ciągle ulepszaj platformę.
+- Zadbaj o nowe innowacje na platformie chmury.
+- Dostarczaj nowe możliwości chmury umożliwiające obsługę tworzenia wartości biznesowej.
+- Sugeruj rozwiązania samoobsługowe.
+- Upewnij się, że rozwiązania zaspokajają istniejące wymagania dotyczące zarządzania i zgodności.
+- Utwórz i sprawdź poprawność wdrożenia architektury platformy.
+- Zapoznaj się z planami wydania dla źródeł nowych wymagań platformy.
 
-## <a name="meeting-cadence"></a>Meeting cadence
+## <a name="meeting-cadence"></a>Erze spotkania
 
-Central IT expertise usually comes from a working team. Expect participants to commit much of their daily schedules to alignment efforts. Contributions aren't limited to meetings and feedback cycles.
+Centralna wiedza IT zazwyczaj pochodzi od zespołu roboczego. Oczekuje się, że uczestnicy zatwierdzają wiele codziennych harmonogramów do wyrównania. Udziały nie są ograniczone do spotkań i cykli przesyłania opinii.
 
-## <a name="central-it-risks"></a>Central IT risks
+## <a name="central-it-risks"></a>Centralne zagrożenia IT
 
-Each of the cloud capabilities and phases of organizational maturity are prefixed with the word "cloud". Central IT is the only exception. Central IT became prevalent when all IT assets could be housed in few locations, managed by a small number of teams, and controlled through a single operations management platform. Global business practices and the digital economy have largely reduced the instances of those centrally managed environments.
+Każda usługa w chmurze i fazy zapadalności w organizacji są poprzedzone wyrazem "Cloud". Jest to jedyny wyjątek. Centralna stała się ogólnie, gdy wszystkie zasoby IT mogły być przechowywane w kilku lokalizacjach, zarządzane przez małą liczbę zespołów i kontrolowane przez pojedynczą platformę zarządzania operacjami. Globalne praktyki biznesowe i oszczędności cyfrowe znacznie zmniejszają wystąpienia tych środowisk zarządzanych centralnie.
 
-In the modern view of IT, assets are globally distributed. Responsibilities are delegated. Operations management is delivered by a mixture of internal staff, managed service providers, and cloud providers. In the digital economy, IT management practices are transitioning to a model of self-service and delegated control with clear guardrails to enforce governance. Central IT can be a valuable contributor to cloud adoption by becoming a cloud broker and a partner for innovation and business agility.
+W nowoczesnych widokach zasoby są dystrybuowane globalnie. Obowiązki są delegowane. Zarządzanie operacjami jest realizowane przez kombinację pracowników wewnętrznych, dostawców usług zarządzanych i dostawców chmury. W przypadku korzystania z sieci cyfrowych praktyki zarządzania IT są przenoszone do modelu samoobsługowego i delegowanej kontroli z jasno guardrails, aby wymusić zarządzanie. Centralny dział IT może być cennym współautorem rozwiązań chmurowych przez przeprowadzeniem brokera w chmurze i partnera na potrzeby innowacji i elastyczność biznesową.
 
-Central IT as a function is well positioned to take valuable knowledge and practices from existing on-premises models and apply those practices to cloud delivery. However, this process will require change. New processes, new skills, and new tools are required to support cloud adoption at scale. When Central IT adapts, it becomes an important partner in cloud adoption efforts. However, if Central IT doesn't adapt to the cloud, or attempts to use the cloud as a catalyst for tight-grain controls, Central IT quickly becomes a blocker to adoption, innovation, and migration.
+Centralnie jako funkcja jest również pozycjonowane, aby uzyskać cenne informacje i praktyki z istniejących modeli lokalnych i zastosować te praktyki do dostarczania w chmurze. Jednak ten proces będzie wymagał zmian. Nowe procesy, nowe umiejętności i nowe narzędzia są wymagane do obsługi wdrażania w chmurze na dużą skalę. Po dobieraniu centralnych rozwiązań IT jest to ważny partner w zakresie działań związanych z wdrażaniem w chmurze. Jeśli jednak centralna usługa nie dostosowuje się do chmury lub próbuje użyć chmury jako katalizatora dla kontrolek ścisłych, centralnie przestanie ona być blokowana do przyjęcia, innowacji i migracji.
 
-The measures of this risk are speed and flexibility. The cloud simplifies adopting new technologies quickly. When new cloud capabilities can be deployed within minutes, but Central IT reviews add weeks or months to the deployment process, then these centralized processes become a major impediment to business success. When this indicator is encountered, consider alternative strategies to IT delivery.
+Środki tego ryzyka to szybkość i elastyczność. Chmura upraszcza szybkie wdrażanie nowych technologii. Jeśli nowe możliwości chmury można wdrożyć w ciągu kilku minut, ale centralne przeglądy IT dodają tygodnie lub miesiące do procesu wdrażania, a następnie te scentralizowane procesy stają się główną przeszkód dla sukcesu firmy. Po napotkaniu tego wskaźnika należy rozważyć alternatywne strategie dotyczące dostarczania IT.
 
 ### <a name="exceptions"></a>Wyjątki
 
-Many industries require rigid adherence to third-party compliance. Some compliance requirements still demand centralized IT control. Delivering on these compliance measures can add time to deployment processes, especially for new technologies that haven't been used broadly. In these scenarios, expect delays in deployment during the early stages of adoption. Similar situations my exist for companies that deal with sensitive customer data, but may not be governed by a third-party compliance requirement.
+Wiele branż wymaga ścisłego przestrzegania zgodności z innymi firmami. Niektóre wymagania dotyczące zgodności nadal wymagają scentralizowanej kontroli IT. Dostarczanie na te środki zgodności może zwiększyć czas wdrożenia procesów wdrażania, szczególnie w przypadku nowych technologii, które nie były szeroko używane. W tych scenariuszach oczekiwane są opóźnienia wdrożenia na wczesnych etapach wdrażania. Podobne sytuacje występują dla firm, które zajmują się poufnymi danymi klienta, ale mogą nie podlegać wymogom zgodności innych firm.
 
-### <a name="operate-within-the-exceptions"></a>Operate within the exceptions
+### <a name="operate-within-the-exceptions"></a>Działa w ramach wyjątków
 
 Gdy centralne procesy IT są wymagane, a procesy te tworzą odpowiednie punkty kontrolne w przyjęciu nowych technologii, te punkty kontrolne innowacji mogą być nadal szybko rozwiązywane. Wymagania dotyczące zarządzania i zgodności są przeznaczone do ochrony tych, które są poufne, a nie do ochrony wszystkiego. Chmura zapewnia proste mechanizmy pobierania i wdrażania izolowanych zasobów przy zachowaniu właściwych guardrails.
 
@@ -108,7 +108,7 @@ Jednak jeden z zespołów wdrażania chmury wymaga teraz środowiska z dedykowan
 
 **Klasyfikacja:** Ponieważ zespół ds. wdrażania chmury był na wczesnym etapie tworzenia nowego rozwiązania i nie miał żadnych poufnych danych ani wymagań związanych z obsługą techniczną, zasoby w środowisku zostały sklasyfikowane jako niskie ryzyko i niekrytyczne. Obowiązująca Klasyfikacja to znak zapadalności w centrali. Klasyfikowanie wszystkich zasobów i środowisk umożliwia wyczyszczenie zasad.
 
-**Negocjowanie:** Sama klasyfikacja nie jest wystarczająca. Usługi udostępnione zostały wdrożone w celu spójnego działania zasobów poufnych i o kluczowym znaczeniu. Zmiana reguł spowoduje naruszenie zasad zarządzania i zgodności dla zasobów, które wymagają większej ochrony. Nie można nawiązać przyjęcia na koszt stabilności, bezpieczeństwa lub zarządzania. Prowadzi to do negocjacji z zespołem ds. wdrażania, aby odpowiedzieć na określone pytania. Czy zespół DevOps, który prowadzi działalność biznesową, będzie w stanie zapewnić zarządzanie operacjami w tym środowisku? Czy to rozwiązanie wymaga bezpośredniego dostępu do innych zasobów wewnętrznych? Jeśli zespół adopcji w chmurze jest wygodny dla tych kompromisów, może być możliwy ruch przychodzący.
+**Negocjowanie:** Sama klasyfikacja nie jest wystarczająca. Usługi udostępnione zostały wdrożone w celu spójnego działania zasobów poufnych i o kluczowym znaczeniu. Zmiana reguł spowoduje naruszenie zasad zarządzania i zgodności dla zasobów, które wymagają większej ochrony. Nie można nawiązać przyjęcia na koszt stabilności, bezpieczeństwa lub zarządzania. Prowadzi to do negocjacji z zespołem ds. wdrażania, aby odpowiedzieć na określone pytania. Czy zespół ds. współpracy w firmie DevOps zapewnia zarządzanie operacjami w tym środowisku? Czy to rozwiązanie wymaga bezpośredniego dostępu do innych zasobów wewnętrznych? Jeśli zespół adopcji w chmurze jest wygodny dla tych kompromisów, może być możliwy ruch przychodzący.
 
 **Izolacja:** Ponieważ firma może zapewnić własne bieżące zarządzanie operacjami, a ponieważ rozwiązanie nie polega na kierowaniu ruchu do innych zasobów wewnętrznych, można je odizolowywane w nowej subskrypcji. Ta subskrypcja jest również dodawana do oddzielnego węzła nowej hierarchii grupy zarządzania.
 

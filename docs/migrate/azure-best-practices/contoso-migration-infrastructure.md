@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 4d8a7b53722de4b356753626d0cc695fa1a77596
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 314cd954332907f9bf1bf63eb52ed5d88cfab121
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807516"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223131"
 ---
+<!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
+
 # <a name="deploy-a-migration-infrastructure"></a>Wdrażanie infrastruktury migracji
 
 W tym artykule przedstawiono sposób, w jaki fikcyjna firma Contoso przygotowuje infrastrukturę lokalną do migracji, konfiguruje infrastrukturę platformy Azure w ramach przygotowania do migracji i uruchamia działalność biznesową w środowisku hybrydowym. Jeśli korzystasz z tego przykładu w celu zaplanowania własnych działań związanych z migracją infrastruktury, musisz pamiętać o następujących kwestiach:
@@ -22,7 +24,7 @@ W tym artykule przedstawiono sposób, w jaki fikcyjna firma Contoso przygotowuje
 - Udostępniona przykładowa architektura jest specyficzna dla firmy Contoso. Podczas podejmowania ważnych decyzji dotyczących infrastruktury, w tym projektu subskrypcji lub architektury sieci, uwzględnij potrzeby biznesowe, strukturę i wymagania techniczne swojej organizacji.
 - To, czy potrzebujesz wszystkich elementów opisanych w tym artykule, zależy od Twojej strategii migracji. Na przykład jeśli tworzysz tylko aplikacje natywne w chmurze na platformie Azure, możesz potrzebować mniej złożonej struktury sieci.
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 
 Aby firma Contoso mogła przeprowadzić migrację na platformę Azure, kluczowe jest przygotowanie infrastruktury platformy Azure. Ogólnie rzecz biorąc, należy wziąć pod uwagę sześć szerokich obszarów firmy Contoso:
 
@@ -52,11 +54,11 @@ Oto diagram przedstawiający bieżącą infrastrukturę lokalną firmy Contoso.
 
 - Firma Contoso ma jedno główne centrum danych znajdujące się w Nowym Jorku na wschodzie Stanów Zjednoczonych.
 - Firma ma trzy dodatkowe oddziały lokalne na terenie Stanów Zjednoczonych.
-- Główne centrum danych jest połączone z Internetem łączem światłowodowym Metro Ethernet (500 MB/s).
+- Główne centrum danych jest połączone z Internetem przy użyciu połączenia Fiber Metro Ethernet (500 MB/s).
 - Każdy oddział jest połączony lokalnie z Internetem przy użyciu połączeń klasy biznesowej z tunelami IPSec VPN prowadzącymi z powrotem do głównego centrum danych. Pozwala to na trwałe połączenie całej sieci i optymalizację łączności z Internetem.
-- Główne centrum danych jest w pełni zwirtualizowane przy użyciu programu VMware. Firma Contoso ma dwa hosty wirtualizacji ESXi 6.5, zarządzane za pomocą programu vCenter Server 6.5.
+- Główne centrum danych jest w pełni zwirtualizowane przy użyciu oprogramowania VMware. Firma Contoso ma dwa hosty wirtualizacji ESXi 6.5, zarządzane za pomocą programu vCenter Server 6.5.
 - Firma Contoso korzysta z usługi Active Directory na potrzeby zarządzania tożsamościami oraz serwerów DNS w sieci wewnętrznej.
-- Kontrolery domeny w centrum danych działają na maszynach wirtualnych VMware. Kontrolery domeny w oddziałach lokalnych działają na serwerach fizycznych.
+- Kontrolery domeny w centrum danych działają na maszynach wirtualnych VMware. Kontrolery domeny w lokalnych oddziałach działają na serwerach fizycznych.
 
 ## <a name="step-1-buy-and-subscribe-to-azure"></a>Krok 1. Kupowanie i subskrybowanie na platformie Azure
 
@@ -76,7 +78,7 @@ Firma Contoso zdecydowała się na [umowę Enterprise Agreement (EA)](https://az
 Po zapłaceniu za platformę Azure firma Contoso musi ustalić, jak zarządzać subskrypcjami platformy Azure. Firma Contoso ma umowę EA i w rezultacie nie ma limitu liczby subskrypcji platformy Azure, które może skonfigurować.
 
 - Rejestracja w usłudze Azure Enterprise określa sposób, w jaki firma kształtuje usługi platformy Azure i korzysta z nich, a także definiuje podstawową strukturę ładu.
-- W pierwszym kroku firma Contoso zdefiniowała strukturę nazywaną „szkieletem przedsiębiorstwa” na potrzeby rejestracji Enterprise. Firma Contoso skorzystała z [tego artykułu](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance) w celu lepszego zrozumienia i zaprojektowania szkieletu.
+- W pierwszym kroku firma Contoso zdefiniowała strukturę nazywaną „szkieletem przedsiębiorstwa” na potrzeby rejestracji Enterprise. Firma Contoso użyła [wskazówek dotyczących szkieletu przedsiębiorstwa platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance) , aby ułatwić zrozumienie i projektowanie szkieletu.
 - Na razie firma Contoso postanowiła wykorzystać podejście funkcjonalne do zarządzania subskrypcjami.
   - Wewnątrz przedsiębiorstwa będzie używany jeden dział IT, kontrolujący budżet platformy Azure. Będzie to jedyna grupa z subskrypcjami.
   - Firma Contoso rozszerzy ten model w przyszłości, tak aby inne grupy firmowe mogły dołączyć jako działy w ramach rejestracji Enterprise.
@@ -87,7 +89,7 @@ Po zapłaceniu za platformę Azure firma Contoso musi ustalić, jak zarządzać 
 
 ### <a name="examine-licensing"></a>Sprawdzanie licencjonowania
 
-Po skonfigurowaniu subskrypcji firma Contoso może przyjrzeć się licencjonowaniu firmy Microsoft. Strategia licencjonowania będzie zależeć od zasobów, które firma Contoso chce migrować na platformę Azure, oraz sposobu wybierania i wdrażania maszyn wirtualnych oraz usług platformy Azure.
+Po skonfigurowaniu subskrypcji firma Contoso może przyjrzeć się licencjonowaniu firmy Microsoft. Strategia licencjonowania będzie zależeć od zasobów, które firma Contoso chce migrować do platformy Azure oraz jak są wybierane i wdrażane maszyny wirtualne platformy Azure oraz usługi.
 
 #### <a name="azure-hybrid-benefit"></a>Korzyść użycia hybrydowego platformy Azure
 
@@ -95,7 +97,7 @@ W przypadku wdrażania maszyn wirtualnych na platformie Azure obrazy standardowe
 
 Korzyść użycia hybrydowego platformy Azure oferuje ekonomiczną metodę migracji dla firmy Contoso, umożliwiając jej zaoszczędzenie na obciążeniach maszyn wirtualnych platformy Azure i programu SQL Server przez przekonwertowanie lub ponowne użycie licencji systemu Windows Server w wersji Standard i Datacenter objętych pakietem Software Assurance. Dzięki temu firma Contoso będzie płacić niższą stawkę za zasoby obliczeniowe w przypadku maszyn wirtualnych i programu SQL Server. [Dowiedz się więcej](https://azure.microsoft.com/pricing/hybrid-benefit).
 
-#### <a name="license-mobility"></a>Przenoszenie licencji
+#### <a name="license-mobility"></a>Przenośność licencji
 
 Przenośność licencji w ramach pakietu Software Assurance zapewnia klientom licencjonowania zbiorowego firmy Microsoft, takim jak firma Contoso, elastyczność wdrażania kwalifikujących się aplikacji serwerowych przy użyciu aktywnego pakietu Software Assurance na platformie Azure. Eliminuje to konieczność kupowania nowych licencji. Brak powiązanych opłat za przenośność umożliwia łatwe wdrożenie istniejących licencji na platformie Azure. [Dowiedz się więcej](https://azure.microsoft.com/pricing/license-mobility).
 
@@ -290,7 +292,7 @@ Firma Contoso będzie wdrażać strefy dostępności w celu spełnienia wymagań
 
 ### <a name="set-up-backup"></a>Konfigurowanie kopii zapasowej
 
-**Usługa Azure Backup:**
+**Azure Backup:**
 
 Usługa Azure Backup umożliwia tworzenie kopii zapasowych i przywracanie dysków maszyn wirtualnych platformy Azure.
 
@@ -348,16 +350,16 @@ Oto, jak firma Contoso zdecydowała się wdrożyć łączność hybrydową:
 
 ### <a name="design-the-azure-network-infrastructure"></a>Projektowanie infrastruktury sieci platformy Azure
 
-Dla firmy Contoso krytyczne znaczenie ma zaimplementowanie sieci w sposób zapewniający bezpieczeństwo i skalowalność wdrożenia hybrydowego. Aby to osiągnąć, firma Contoso przyjmuje podejście długoterminowe i projektuje sieci wirtualne pod kątem odporności i gotowości do użycia w przedsiębiorstwie. [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm) o planowaniu sieci wirtualnych.
+Konfiguracja sieci firmy Contoso musi zapewnić bezpieczeństwo i skalowalność wdrożenia hybrydowego. Firma Contoso podejmuje długoterminowe podejście do tego, projektowanie sieci wirtualnych (sieci wirtualnych) do odporności i gotowości przedsiębiorstwa. [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm) o planowaniu sieci wirtualnych.
 
-W celu połączenia dwóch regionów firma Contoso zdecydowała się zaimplementować model „piasta-piasta”:
+Aby połączyć dwa regiony, firma Contoso Zaimplementuj model sieci typu centrum-Hub:
 
 - W każdym regionie będzie używany model gwiazdy.
 - Do połączenia sieci i piast Contoso będzie używać komunikacji równorzędnej sieci platformy Azure.
 
 #### <a name="network-peering"></a>Komunikacja równorzędna sieci
 
-Platforma Azure oferuje komunikację równorzędną sieci na potrzeby łączenia sieci wirtualnych i piast. Globalna komunikacja równorzędna umożliwia połączenia między sieciami wirtualnymi/piastami w różnych regionach. Lokalna komunikacja równorzędna łączy sieci wirtualne w tym samym regionie. Komunikacja równorzędna sieci wirtualnych zapewnia kilka korzyści:
+Komunikacja równorzędna sieci platformy Azure łączy sieci wirtualne i centra. Globalna komunikacja równorzędna umożliwia połączenia między siecią wirtualną lub koncentratorami w różnych regionach. Lokalna Komunikacja równorzędna łączy sieci wirtualne w tym samym regionie. Komunikacja równorzędna sieci wirtualnej zapewnia kilka zalet:
 
 - Ruch sieciowy między sieciami wirtualnymi w komunikacji równorzędnej jest prywatny.
 - Ruch między sieciami wirtualnymi jest utrzymywany w sieci szkieletowej firmy Microsoft. Do komunikacji między sieciami wirtualnymi nie jest wymagany publiczny Internet, bramy ani szyfrowanie.
@@ -557,14 +559,14 @@ Podczas wdrażania zasobów w sieciach wirtualnych istnieje kilka możliwości r
 
 Administratorzy firmy Contoso zdecydowali, że usługa Azure DNS nie jest dobrym wyborem w środowisku hybrydowym. Zamiast tego firma będzie korzystać z lokalnych serwerów DNS.
 
-- Ponieważ jest to sieć hybrydowa, wszystkie maszyny wirtualne w środowisku lokalnym i na platformie Azure muszą być w stanie rozpoznawać nazwy, aby działać prawidłowo. Oznacza to, że do wszystkich sieci wirtualnych należy zastosować niestandardowe ustawienia DNS.
+- Ponieważ jest to sieć hybrydowa, wszystkie maszyny wirtualne lokalnie i na platformie Azure muszą być w stanie rozpoznawać nazwy, aby działać prawidłowo. Oznacza to, że do wszystkich sieci wirtualnych należy zastosować niestandardowe ustawienia DNS.
 - Firma Contoso wdrożyła kontrolery domen w centrum danych Contoso i w oddziałach. Podstawowe serwery DNS to CONTOSODC1 (172.16.0.10) i CONTOSODC2 (172.16.0.1)
 - Po wdrożeniu sieci wirtualnych lokalne kontrolery domen będą ustawione do używania jako serwery DNS w sieciach.
 - Aby skonfigurować tę opcję, w przypadku używania niestandardowego systemu DNS w sieci wirtualnej, należy dodać adres IP cyklicznych programów rozpoznawania nazw na platformie Azure (na przykład 168.63.129.16) do listy serwerów DNS. W tym celu firma Contoso konfiguruje ustawienia serwera DNS w każdej sieci wirtualnej. Na przykład niestandardowe ustawienia DNS dla sieci VNET-HUB-EUS2 są następujące:
 
     ![Niestandardowe DNS](./media/contoso-migration-infrastructure/custom-dns.png)
 
-Oprócz lokalnych kontrolerów domeny firma Contoso chce zaimplementować jeszcze cztery dodatkowe na potrzeby obsługi sieci platformy Azure, po dwa dla każdego regionu. Oto, co firma Contoso wdroży na platformie Azure.
+Poza lokalnymi kontrolerami domeny firma Contoso wdraża cztery więcej kontrolerów domeny do obsługi sieci platformy Azure, dwa dla każdego regionu. Oto, co firma Contoso wdroży na platformie Azure.
 
 **Region** | **Kontroler domeny** | **Sieć wirtualna** | **Podsieć** | **Adres IP**
 --- | --- | --- | --- | ---
@@ -715,7 +717,7 @@ ServiceManager | Alias adresu e-mail menedżera usługi ITIL dla zasobu.
 COBPriority | Priorytet ustawiony przez firmę dla ciągłości działania i odzyskiwania po awarii. Wartości 1–5.
 ENV | Możliwe wartości to DEV, STG, PROD. Reprezentują one, odpowiednio, środowisko deweloperskie, przejściowe i produkcyjne.
 
-Przykład:
+Na przykład:
 
  ![Tagi platformy Azure](./media/contoso-migration-infrastructure/azure-tag.png)
 
@@ -765,7 +767,7 @@ Firma Contoso może ograniczyć ruch sieciowy do zasobów w sieci wirtualnej prz
   - Grupy zabezpieczeń aplikacji oznaczają dla firmy Contoso możliwość ponownego używania zasad zabezpieczeń na dużą skalę bez ręcznej obsługi jawnych adresów IP. Platforma obsługuje złożoność jawnych adresów IP i wiele zestawów reguł, co pozwala skupić się na logice biznesowej.
   - Firma Contoso może określić grupę zabezpieczeń aplikacji jako źródło i obiekt docelowy reguły zabezpieczeń. Po zdefiniowaniu zasad zabezpieczeń firma Contoso może utworzyć maszyny wirtualne i przypisać karty sieciowe maszyn wirtualnych do grupy.
 
-Firma Contoso zaimplementuje kombinację sieciowych grup zabezpieczeń i grup zabezpieczeń aplikacji. Niepokoi się o zarządzanie sieciowymi grupami zabezpieczeń. Obawia się nadużywania sieciowych grup zabezpieczeń i dodatkowej złożoności dla pracowników zespołu ds. operacji. Oto, co zrobi firma Contoso:
+Firma Contoso zaimplementuje kombinację sieciowych grup zabezpieczeń i grup zabezpieczeń aplikacji. Niepokoi się o zarządzanie sieciowymi grupami zabezpieczeń. Obawia się nadużywania sieciowych grup zabezpieczeń i dodatkowej złożoności dla pracowników zespołu ds. operacji. Oto, co firma Contoso wykona:
 
 - Cały ruch do i z wszystkich podsieci (w pionie) będzie podlegać regule sieciowej grupy zabezpieczeń, z wyjątkiem podsieci GatewaySubnets w sieciach piasty.
 - Wszystkie zapory i kontrolery domeny będą chronione za pomocą sieciowych grup zabezpieczeń podsieci i sieciowych grup zabezpieczeń kart sieciowych.
@@ -779,9 +781,9 @@ Sieciowe grupy zabezpieczeń skojarzone z grupami zabezpieczeń aplikacji zostan
 
 **Akcja** | **Nazwa** | **Element źródłowy** | **Obiekt docelowy** | **Port**
 --- | --- | --- | --- | ---
-Zezwól | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
-Zezwól | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
-Zezwól | AllowAppToDB | APP1-APP | APP1-DB | 1433
+Zezwalaj | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+Zezwalaj | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
+Zezwalaj | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Odmów | DenyAllInbound | Dowolne | Dowolne | Dowolne
 
 ### <a name="encrypt-data"></a>Szyfrowanie danych
@@ -795,9 +797,9 @@ Usługa Azure Disk Encryption integruje się z usługą Azure Key Vault, aby pom
 
 W tym artykule firma Contoso konfiguruje infrastrukturę i zasady platformy Azure dla subskrypcji platformy Azure oraz funkcji identyfikacji hybrydowej, odzyskiwania po awarii, sieci, ładu i zabezpieczeń.
 
-Nie wszystkie kroki wykonane tutaj przez firmę Contoso są wymagane do przeprowadzenia migracji do chmury. W takim przypadku warto zaplanować infrastrukturę sieci, która może być używana dla wszystkich typów migracji, jest bezpieczna, odporna na błędy i skalowalna.
+Nie każda czynność wykonywana w tym miejscu jest wymagana w przypadku migracji do chmury. W takim przypadku firma Contoso zaplanował infrastrukturę sieci, która może obsłużyć wszystkie typy migracji, gdy są bezpieczne, odporne i skalowalne.
 
-Po wdrożeniu tej infrastruktury firma Contoso jest gotowa do przejścia do następnego etapu i wypróbowania migracji.
+Dzięki tej infrastrukturze firma Contoso jest gotowa do przejścia i wypróbowania migracji.
 
 ## <a name="next-steps"></a>Następne kroki
 

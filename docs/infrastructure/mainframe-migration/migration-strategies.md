@@ -7,13 +7,15 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fb3465345b45f2a7c71dac3c519e4daa7702dd47
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f869716c907aa6c03adfb81a4f698dab42b9e387
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171348"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223630"
 ---
+<!-- cspell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Przełączenie z komputerów mainframe na platformę Azure
 
 Jako alternatywną platformę do uruchamiania tradycyjnych aplikacji typu mainframe platforma Azure oferuje duże możliwości skalowania i magazynowania w środowisku o wysokiej dostępności. Uzyskasz wartość i elastyczność nowoczesnej platformy opartej na chmurze bez kosztów związanych ze środowiskiem mainframe.
@@ -59,9 +61,9 @@ CF również oferuje ściśle sprzężone obliczenia, podczas gdy funkcje skalow
 
 Komputery mainframe zwykle utrzymują Lokacje odzyskiwania po awarii lub wykorzystują lub niezależnym dostawcą systemu mainframe w przypadku awarii awaryjnych. Synchronizacja z lokacją odzyskiwania po awarii zazwyczaj odbywa się za pomocą kopii danych w trybie offline. Obie opcje ponoszą wysokie koszty.
 
-Zautomatyzowana nadmiarowość geograficzna jest również dostępna za pomocą funkcji sprzęgu komputera mainframe, chociaż z dużym obciążeniem i jest zazwyczaj zarezerwowana dla systemów o znaczeniu krytycznym. W przeciwieństwie do systemu Azure dostępne są łatwe w implementacji i ekonomiczne opcje [tworzenia kopii zapasowych](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [odzyskiwania](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)i [nadmiarowości](https://docs.microsoft.com/azure/storage/common/storage-redundancy) na poziomach lokalnym lub regionalnym lub za pośrednictwem nadmiarowości geograficznej.
+Zautomatyzowana nadmiarowość geograficzna jest również dostępna za pomocą funkcji sprzęgu komputera mainframe. Takie podejście jest kosztowne i jest zwykle zarezerwowane dla systemów o znaczeniu krytycznym. W przeciwieństwie do systemu Azure dostępne są łatwe w implementacji i ekonomiczne opcje [tworzenia kopii zapasowych](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [odzyskiwania](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)i [nadmiarowości](https://docs.microsoft.com/azure/storage/common/storage-redundancy) na poziomach lokalnym lub regionalnym lub za pośrednictwem nadmiarowości geograficznej.
 
-## <a name="storage"></a>Magazyn
+## <a name="storage"></a>Storage
 
 Część opisująca, jak działa mainframe, polega na dekodowania różnych nakładających się warunków. Na przykład Magazyn centralny, pamięć rzeczywista, rzeczywiste magazyn i główny magazyn ogólnie odnoszą się do magazynu dołączonego bezpośrednio do procesora mainframe.
 

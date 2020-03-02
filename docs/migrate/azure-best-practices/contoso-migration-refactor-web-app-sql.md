@@ -8,27 +8,29 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 35a64b9f42df3737e186d25a43ecad457010607d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3667207de8cc31a85e12666c425ffdf0469c1be5
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807448"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223058"
 ---
+<!-- cSpell:ignore WEBVM SQLVM contosohost contosodc vcenter smarthotel SHWEB SHWCF -->
+
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Refaktoryzowanie aplikacji lokalnej do aplikacji internetowej Azure App Service i bazy danych Azure SQL Database
 
 W tym artykule pokazano, w jaki sposób fikcyjna firma Contoso refaktoryzuje dwuwarstwową aplikację platformy .NET w systemie Windows działającą na maszynach wirtualnych VMware w ramach migracji na platformę Azure. Firma przeprowadza migrację maszyny wirtualnej frontonu aplikacji do aplikacji internetowej Azure App Service i migrację bazy danych aplikacji do bazy danych Azure SQL Database.
 
-Używana w tym przykładzie aplikacja SmartHotel360 jest dostępna jako aplikacja open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
+Aplikacja SmartHotel360 używana w tym przykładzie jest oferowana jako aplikacja typu open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
 
-## <a name="business-drivers"></a>Czynniki biznesowe
+## <a name="business-drivers"></a>Cele biznesowe
 
 Zespół liderów IT w ścisłej współpracy z partnerami biznesowymi firmy ustalił, co firma będzie chciała osiągnąć dzięki migracji:
 
 - **Reagowanie na rosnące potrzeby biznesowe.** Firma Contoso rozwija się i następuje przeciążenie lokalnych systemów i infrastruktury.
 - **Zwiększenie wydajności.** Firma Contoso chce usunąć niepotrzebne procedury oraz usprawnić procesy deweloperów i użytkowników. Firma chce, aby dział IT był szybki i nie tracił czasu ani pieniędzy, co pozwoli szybciej realizować wymagania klientów.
-- **Zwiększenie elastyczności.**  Dział IT firmy Contoso chce lepiej odpowiadać na zapotrzebowania biznesowe. Musi być w stanie reagować szybciej na zmiany na rynku, aby odnosić sukcesy w gospodarce światowej. Nie może utrudniać pracy ani stać się przeszkodą biznesową.
-- **Skalowalność.** W miarę pomyślnego rozwoju firmy dział IT firmy Contoso musi zapewnić systemy, które będą mogły rosnąć w tym samym tempie.
+- **Zwiększenie elastyczności.**  Firma Contoso chce lepiej odpowiadać na zapotrzebowania w branży. Musi być w stanie reagować szybciej na zmiany na rynku, aby odnosić sukcesy w gospodarce światowej. Nie może utrudniać pracy ani stać się przeszkodą biznesową.
+- **Skalowalność.** W miarę rozwoju działalności biznesowej firma Contoso musi zapewnić systemy, które mogą rosnąć w tym samym tempie.
 - **Redukcja kosztów.** Firma Contoso chce zminimalizować koszty licencjonowania.
 
 ## <a name="migration-goals"></a>Cele migracji
@@ -53,7 +55,7 @@ Po określeniu celów i wymagań firma Contoso planuje i ocenia rozwiązanie do 
 ### <a name="current-app"></a>Bieżąca aplikacja
 
 - Aplikacja lokalna SmartHotel360 jest podzielona na warstwy, które znajdują się na dwóch maszynach wirtualnych (WEBVM i SQLVM).
-- Obie maszyny wirtualne znajdują się na hoście VMware ESXi **contosohost1.contoso.com** (wersja 6.5)
+- Maszyny wirtualne znajdują się na hoście VMware ESXi **contosohost1.contoso.com** (wersja 6.5).
 - Środowisko VMware jest zarządzane przez program vCenter Server 6.5 (**vcenter.contoso.com**) uruchomiony na maszynie wirtualnej.
 - Firma Contoso ma lokalne centrum danych (contoso-datacenter) i lokalny kontroler domeny (**contosodc1**).
 - Lokalne maszyny wirtualne w centrum danych firmy Contoso zostaną zlikwidowane po zakończeniu migracji.
@@ -125,7 +127,7 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 > - **Krok 3. udostępnianie aplikacji sieci Web.** Firma Contoso aprowizuje dwie aplikacje internetowe.
 > - **Krok 4. Konfigurowanie usługi Azure DevOps.** Firma Contoso tworzy nowy projekt usługi Azure DevOps i importuje repozytorium usługi Git.
 > - **Krok 5. Konfigurowanie parametrów połączenia.** Firma Contoso konfiguruje parametry połączenia tak, aby aplikacja internetowa warstwy internetowej, aplikacja internetowa usługi WCF i wystąpienie programu SQL mogły się komunikować.
-> - **Krok 6. Konfigurowanie potoków kompilacji i wydania.** W ostatnim kroku firma Contoso konfiguruje potoki kompilowania i wydawania, aby utworzyć aplikację, a następnie wdraża je w dwóch oddzielnych aplikacjach internetowych.
+> - **Krok 6. Konfigurowanie potoków kompilacji i wydania.** W ostatnim kroku firma Contoso konfiguruje potoki kompilowania i wydawania, aby utworzyć aplikację, i wdraża je w dwóch oddzielnych aplikacjach sieci Web.
 
 ## <a name="step-1-provision-an-azure-sql-database"></a>Krok 1. Inicjowanie obsługi Azure SQL Database
 
@@ -154,7 +156,7 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 
     ![Aprowizowanie kodu SQL](media/contoso-migration-refactor-web-app-sql/provision-sql6.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - [Uzyskaj pomoc](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) przy aprowizacji bazy danych SQL Database.
 - [Dowiedz](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) się więcej na temat limitów zasobów rdzeni wirtualnych.
@@ -171,7 +173,7 @@ Administratorzy firmy Contoso będą migrować bazę danych SmartHotel360 przy u
 
 ### <a name="migrate-the-database-with-dma"></a>Migrowanie bazy danych przy użyciu narzędzia DMA
 
-1. W narzędziu DMA tworzą nowy projekt **(SmartHotelDB**) i wybierają pozycję **Migration** (Migracja).
+1. W obszarze DMA tworzy nowy projekt (**SmartHotelDB**), a następnie wybierz pozycję **migracja**.
 2. Wybierają typ serwera źródłowego jako **SQL Server** i obiekt docelowy jako **Azure SQL Database**.
 
     ![DMA](media/contoso-migration-refactor-web-app-sql/dma-1.png)
@@ -180,7 +182,7 @@ Administratorzy firmy Contoso będą migrować bazę danych SmartHotel360 przy u
 
      ![DMA](media/contoso-migration-refactor-web-app-sql/dma-2.png)
 
-4. Występuje błąd prawdopodobnie skojarzony z uwierzytelnianiem. Jednak po zbadaniu okazuje się, że problemem jest kropka (.) w nazwie bazy danych. Jako obejście podejmują decyzję o aprowizowaniu nowej bazy danych SQL przy użyciu nazwy **SmartHotel-Registration**, aby rozwiązać ten problem. Po ponownym uruchomieniu narzędzia DMA można wybrać opcję **SmartHotel-Registration** i kontynuować pracę z kreatorem.
+4. Występuje błąd prawdopodobnie skojarzony z uwierzytelnianiem. Jednak po zbadaniu okazuje się, że problemem jest kropka (.) w nazwie bazy danych. Jako obejście podejmują decyzję o aprowizowaniu nowej bazy danych SQL przy użyciu nazwy **SmartHotel-Registration**, aby rozwiązać ten problem. Po ponownym uruchomieniu programu DMA można wybrać pozycję **SmartHotel-Registration**i kontynuować pracę z kreatorem.
 
     ![DMA](media/contoso-migration-refactor-web-app-sql/dma-3.png)
 
@@ -230,7 +232,7 @@ Po przeprowadzeniu migracji bazy danych administratorzy firmy Contoso mogą tera
 
 Firma Contoso musi utworzyć infrastrukturę metodyki DevOps i potoki dla aplikacji. W tym celu administratorzy firmy Contoso tworzą nowy projekt DevOps, importują kod, a następnie konfigurują potoki kompilacji i wydania.
 
-1. Na koncie usług Azure DevOps firmy Contoso tworzą nowy projekt (**ContosoSmartHotelRefactor**), a następnie wybierają pozycję **Git** na potrzeby kontroli wersji.
+1. Na koncie contoso Azure DevOps Utwórz nowy projekt (**ContosoSmartHotelRefactor**), a następnie wybierz pozycję **git** na potrzeby kontroli wersji.
 
     ![Nowy projekt](./media/contoso-migration-refactor-web-app-sql/vsts1.png)
 
@@ -285,9 +287,9 @@ Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wy
 
      ![Zapisywanie i dodawanie do kolejki](./media/contoso-migration-refactor-web-app-sql/pipeline4.png)
 
-5. Spowoduje to rozpoczęcie pierwszej kompilacji. Wybierają numer kompilacji, aby obserwować proces. Po zakończeniu mogą zobaczyć opinię o procesie, a następnie wybrać pozycję **Artefakty**, aby przejrzeć wyniki kompilacji.
+5. Spowoduje to rozpoczęcie pierwszej kompilacji. Wybierają numer kompilacji, aby obserwować proces. Po zakończeniu zobaczysz opinię o procesie, a następnie wybierzesz **artefakty** , aby przejrzeć wyniki kompilacji.
 
-    ![Przegląd](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
+    ![Recenzja](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
 
 6. Folder **Drop** zawiera wyniki kompilacji.
 
@@ -316,9 +318,9 @@ Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wy
 
      ![Wybieranie nazwy usługi App Service](./media/contoso-migration-refactor-web-app-sql/pipeline11.png)
 
-12. W potoku > **Artefakty** wybierają pozycję **+Dodaj artefakt**, a następnie wybierają opcję kompilowania przy użyciu potoku **ContosoSmarthotel360Refactor**.
+12. Na > **artefakty**potoku wybierają **i dodają artefakt**, a następnie wybierają kompilację przy użyciu potoku **ContosoSmarthotel360Refactor** .
 
-     ![Kompilacja](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![{1&gt;Kompilacja&lt;1}](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. Wybierają ikonę błyskawicy na artefakcie, aby włączyć wyzwalacz ciągłego wdrażania.
 
@@ -328,11 +330,11 @@ Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wy
 
     ![Ciągłe wdrażanie włączone](./media/contoso-migration-refactor-web-app-sql/pipeline14.png)
 
-15. Teraz przechodzą z powrotem do etapu obejmującego 1 zadanie i 1 zadanie podrzędne, a następnie wybierają pozycję **Wdróż usługę Azure App Service**.
+15. Teraz przechodzą z powrotem do zadania etap 1, I zadań, a następnie wybierz pozycję **wdróż Azure App Service**.
 
     ![Wdrażanie usługi Azure App Service](./media/contoso-migration-refactor-web-app-sql/pipeline15.png)
 
-16. W obszarze **Wybierz plik lub folder** znajdują plik **SmartHotel.Registration.Wcf.zip**, który został utworzony podczas kompilacji, a następnie wybierają pozycję **Zapisz**.
+16. W obszarze **Wybierz plik lub folder**zlokalizuj plik **SmartHotel. Registration. WCF. zip** , który został utworzony podczas kompilacji, a następnie wybierz pozycję **Zapisz**.
 
     ![Zapisywanie usługi WCF](./media/contoso-migration-refactor-web-app-sql/pipeline16.png)
 
@@ -348,7 +350,7 @@ Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wy
 
      ![Podsumowanie potoku wydania](./media/contoso-migration-refactor-web-app-sql/pipeline19.png)
 
-20. Przechodzą z powrotem do **kompilacji**, a następnie wybierają pozycję **Wyzwalacze** > **Włącz ciągłą integrację**. Powoduje to włączenie potoku, gdy zmiany w kodzie zostaną zatwierdzone oraz gdy nastąpi pełna kompilacja i wydanie.
+20. Są one przenoszone do **kompilacji**, a następnie wybierz kolejno pozycje **wyzwalacze** > **Włącz integrację ciągłą**. Powoduje to włączenie potoku, gdy zmiany w kodzie zostaną zatwierdzone oraz gdy nastąpi pełna kompilacja i wydanie.
 
     ![Włączanie ciągłej integracji](./media/contoso-migration-refactor-web-app-sql/pipeline20.png)
 
@@ -373,7 +375,7 @@ Po migracji firma Contoso musi wykonać następujące kroki czyszczenia:
 - Usunięcie lokalnych maszyn wirtualnych ze spisu serwera vCenter.
 - Usunięcie maszyn wirtualnych z lokalnych zadań kopii zapasowej.
 - Zaktualizowanie dokumentacji wewnętrznej tak, aby wyświetlić nowe lokalizacje aplikacji SmartHotel360. Przedstawienie bazy danych jako działającej w usłudze Azure SQL Database, a frontonu jako uruchomionego w dwóch aplikacjach internetowych.
-- Przegląd wszystkich zasobów korzystających ze zlikwidowanych maszyn wirtualnych i zaktualizowanie wszystkich ustawień lub dokumentów w celu uwzględnienia nowej konfiguracji.
+- Przegląd wszystkich zasobów korzystających z zlikwidowanych maszyn wirtualnych i zaktualizowanie wszystkich ustawień lub dokumentów w celu uwzględnienia nowej konfiguracji.
 
 ## <a name="review-the-deployment"></a>Przegląd wdrożenia
 
@@ -395,7 +397,7 @@ Po migracji zasobów na platformę Azure firma Contoso musi w pełni zoperacjona
 
 - Po wdrożeniu wszystkich zasobów firma Contoso powinna przypisać tagi platformy Azure zgodnie z [planem infrastruktury](./contoso-migration-infrastructure.md#set-up-tagging).
 - Wszystkie koszty licencjonowania są wliczone w koszt usług PaaS używanych przez firmę Contoso. Ten koszt zostanie odjęty od umowy EA.
-- Firma Contoso włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) na temat usługi Azure Cost Management.
+- Firma włączy usługę Azure Cost Management licencjonowaną przez firmę Cloudyn, podmiot zależny firmy Microsoft. Jest to rozwiązanie do zarządzania kosztami wielu chmur, które ułatwia korzystanie z platformy Azure i innych zasobów w chmurze oraz zarządzanie nimi. [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) na temat usługi Azure Cost Management.
 
 ## <a name="conclusion"></a>Podsumowanie
 

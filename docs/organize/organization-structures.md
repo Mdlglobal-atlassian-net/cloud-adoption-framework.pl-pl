@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 326ffa486c07da907ad9e532d5794545ef2dbd9f
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 0aeaa665370c612e89a0d4ce72a2b38b2bb05e2b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173409"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222230"
 ---
+<!-- cSpell:ignore ccoe -->
+
 # <a name="establish-team-structures"></a>Ustanów struktury zespołu
 
 Każda możliwość chmury jest udostępniana przez kogoś podczas każdego okresu zajmowanego przez chmurę. Te przydziały i struktury zespołu mogą tworzyć organiczne lub mogą być zamierzone celowo w celu dopasowania do zdefiniowanej struktury zespołu.
@@ -60,7 +62,7 @@ W poniższych sekcjach opisano w pełni zatrudnioną strukturę organizacyjną o
 
 ## <a name="central-it"></a>Centralne zasoby IT
 
-W miarę skalowania, zespół nadzorujący chmurę może się zadbać o to, aby zachować możliwości innowacji z wielu zespołów wdrażania chmury. Jest to szczególnie prawdziwe w środowiskach, które mają silną zgodność, operacje lub wymagania dotyczące zabezpieczeń. Na tym etapie często firma może przenieść obowiązki chmury do istniejącego centralnego zespołu IT. Jeśli ten zespół jest w stanie ponownie ocenić narzędzia, procesy i osoby, aby lepiej obsługiwać wdrażanie w chmurze na dużą skalę, w tym centralny zespół IT może zwiększyć znaczącą wartość. Dostosowanie się do specjalistów z dziedziny działania, Automatyzacja, bezpieczeństwa i administrowania w celu modernizacji centralnych może zapewnić efektywne innowacje operacyjne.
+W miarę skalowania, zespół nadzorujący chmurę może się zadbać o to, aby zachować możliwości innowacji z wielu zespołów wdrażania chmury. Jest to szczególnie prawdziwe w środowiskach, które mają silną zgodność, operacje lub wymagania dotyczące zabezpieczeń. Na tym etapie często firma może przenieść obowiązki chmury do istniejącego centralnego zespołu IT. Jeśli ten zespół może ponownie ocenić narzędzia, procesy i osoby, aby lepiej obsługiwać wdrażanie w chmurze na dużą skalę, w tym centralny zespół IT może zwiększyć znaczącą wartość. Dostosowanie się do specjalistów z dziedziny działania, Automatyzacja, bezpieczeństwa i administrowania w celu modernizacji centralnych może zapewnić efektywne innowacje operacyjne.
 
 ![Wdrażanie chmury z centralnym modelem IT](../_images/ready/org-ready-central-it.png)
 

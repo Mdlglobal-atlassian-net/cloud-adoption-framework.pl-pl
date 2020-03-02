@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30783e760f85324116e0a9a968a1c5aa486eb6f7
-ms.sourcegitcommit: 41cb36f58cc48950da1a2aa2032cc34ba5b16a0b
+ms.openlocfilehash: 0616b2721a903be369192a47fcd888247fd6cad6
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77599969"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222620"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące określania kosztów i rozmiarów obciążeń migrowanych na platformę Azure
 
@@ -85,7 +85,7 @@ Podczas wdrażania maszyn wirtualnych platformy Azure do obsługi obciążeń mo
 
 Dostrajanie i konserwacja magazynów lokalnych (SAN lub NAS) oraz sieci do ich obsługi może być kosztowne i czasochłonne. Dane plików (magazynu) są często migrowane do chmury, co pomaga zminimalizować nakład pracy związany z zadaniami operacyjnymi i zarządzaniem. Firma Microsoft oferuje kilka opcji przenoszenia danych na platformę Azure. Musisz podjąć decyzje związane z tymi opcjami. Wybranie odpowiedniego typu magazynu dla danych może zaoszczędzić organizacji kilka tysięcy dolarów miesięcznie. Oto kilka kwestii do rozważenia:
 
-- Dane, które nie są często używane i nie mają krytycznego znaczenia dla firmy, nie muszą być umieszczane w najdroższym magazynie.
+- Dane, które nie są dostępne w większości i nie są krytyczne dla firmy, nie muszą być umieszczane w najbardziej kosztownej pamięci masowej.
 - Z kolei dla ważnych danych, o krytycznym znaczeniu dla firmy, należy wybrać opcje magazynu w wyższej warstwie.
 - Podczas planowania migracji wykonaj spis danych i sklasyfikuj je według ważności, aby zamapować je na najbardziej odpowiedni magazyn. Weź pod uwagę budżet i koszt, a także wydajność. Koszt nie powinien być głównym czynnikiem wpływającym na podejmowanie decyzji. Wybranie najtańszej opcji może wystawić obciążenie na ryzyko związane z wydajnością i dostępnością.
 

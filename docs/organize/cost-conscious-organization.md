@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 42025e9e7459aae8731b6269d6bc5512acde64e4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9c4b6e89d3593bebad491cb967d39be529de8989
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800903"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225392"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Tworzenie świadomej organizacji kosztów
 
@@ -45,7 +45,7 @@ Tworzenie przytomności kosztów do działań związanych z wdrażaniem w chmurz
 
 - **Odpowiedzialność:** Należy ustalić budżety między strategią chmury, [zarządzaniem chmurą](./cloud-governance.md)i zespołami [wdrażania chmury](./cloud-adoption.md) w oparciu o oczekiwane działania związane z przyjmowaniem. Gdy wystąpią odchylenia od budżetu, zespół strategii chmur i zespół nadzoru chmury muszą szybko określić najlepszy sposób działania, aby skorygować odchylenia.
 
-- **Optymalizacja:** W trakcie optymalizacji, zespół strategii chmury może reprezentować inwestycję i wartość zwrotną określonych obciążeń. Jeśli obciążenie ma wartość strategiczną lub wpływ na działalność finansową, należy uważnie monitorować zadania optymalizacji kosztów. W przypadku braku strategicznego wpływu na organizację i braku kosztu związanego z niską wydajnością obciążenia zespół strategii chmury może zatwierdzać przepełnienie. Aby zapewnić te decyzje, zespół musi mieć możliwość wyświetlania kosztów dla zakresu poszczególnych projektów.
+- **Optymalizacja:** W trakcie optymalizacji, zespół strategii chmury może reprezentować inwestycję i wartość zwrotną określonych obciążeń. Jeśli obciążenie ma wartość strategiczną lub wpływ na działalność finansową, należy uważnie monitorować zadania optymalizacji kosztów. W przypadku braku strategicznego wpływu na organizację i braku kosztów związanych z niską wydajnością obciążenia zespół strategii chmury może zatwierdzać przekroczenie optymalizacji. Aby zapewnić te decyzje, zespół musi mieć możliwość wyświetlania kosztów dla zakresu poszczególnych projektów.
 
 ## <a name="cloud-adoption-team"></a>Zespół ds. wdrażania chmury
 

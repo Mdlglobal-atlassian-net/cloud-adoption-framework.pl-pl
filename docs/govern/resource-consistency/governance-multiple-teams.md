@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ba1776affc2bd4f0ca090603ca969c21090d9252
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 62c47f8d4b3c386129c6a6a9eeb966393573ea16
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709587"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223887"
 ---
+<!-- cSpell:ignore netops -->
+
 # <a name="governance-design-for-multiple-teams"></a>Projekt nadzoru dla wielu zespołów
 
 Celem tych wskazówek jest ułatwienie poznania procesu projektowania modelu zarządzania zasobami na platformie Azure w celu obsługi wielu zespołów, wielu obciążeń i wielu środowisk. Najpierw zapoznaj się z zestawem hipotetycznych wymagań ładu, a następnie przejdź do kilku przykładowych implementacji, które spełniają te wymagania.
@@ -127,7 +129,7 @@ Należy pamiętać, że w tym modelu **administrator usługi** wykonał mniejsz�
 ![subskrypcję z grupami zasobów a i B](../../_images/govern/design/governance-2-16.png)
 *rysunek 5 — subskrypcję z uprawnieniami administratora usługi i dwoma właścicielami obciążeń — wszystkie przypisane role właściciela wbudowanego.*
 
-Jednak ze względu na to, że zarówno **właściciel obciążenia a** , jak i **właściciel obciążenia B** przypisuje rolę właściciela wbudowanego w zakresie subskrypcji, każdy z nich dziedziczy rolę właściciela wbudowane dla każdej grupy zasobów. Oznacza to, że użytkownicy mają pełny dostęp do zasobów jednego innego, ale mogą również delegować dostęp do zarządzania do grup zasobów każdej z nich. Na przykład **właściciel obciążenia B** ma uprawnienia do dodawania dowolnego innego użytkownika do **grupy zasobów a** i może przypisywać do nich dowolną rolę, w tym wbudowaną rolę właściciela.
+Jednak ze względu na to, że zarówno **właściciel obciążenia a** , jak i **właściciel obciążenia B** przypisuje rolę właściciela wbudowanego w zakresie subskrypcji, każdy z nich dziedziczy rolę właściciela wbudowane dla każdej grupy zasobów. Oznacza to, że użytkownicy mają pełny dostęp do wszystkich zasobów, ale mogą również delegować dostęp do zarządzania do grup zasobów każdej z nich. Na przykład **właściciel obciążenia B** ma uprawnienia do dodawania dowolnego innego użytkownika do **grupy zasobów a** i może przypisywać do nich dowolną rolę, w tym wbudowaną rolę właściciela.
 
 W przypadku porównania każdego przykładu z wymaganiami zobaczysz, że oba przykłady obsługują jednego zaufanego użytkownika w zakresie subskrypcji z uprawnieniem do przyznawania praw dostępu do zasobów dla dwóch właścicieli obciążeń. Każdy z dwóch właścicieli obciążeń nie miał domyślnie dostępu do zarządzania zasobami i wymaga, aby **administrator usługi** jawnie przypisał do nich uprawnienia. Jednak tylko pierwszy przykład obsługuje wymaganie, aby zasoby skojarzone z poszczególnymi obciążeniami były od siebie odizolowane, dzięki czemu właściciel obciążenia nie ma dostępu do zasobów innych obciążeń.
 
@@ -185,7 +187,7 @@ Zacznijmy od oceny pierwszej opcji. Będziesz używać modelu uprawnień, który
 10. Drugi **właściciel obciążenia** tworzy podsieć w sieci wirtualnej **produkcyjnej** , a następnie dodaje dwie maszyny wirtualne. Drugi **właściciel obciążenia** stosuje Tagi *Environment* i *zarządzane* do każdego zasobu.
     ![tworzenia podsieci](../../_images/govern/design/governance-3-8.png)
 
-Ten przykładowy model zarządzania zasobami umożliwia nam zarządzanie zasobami w trzech wymaganych środowiskach. Zasoby infrastruktury udostępnionej są chronione, ponieważ w subskrypcji istnieje tylko jeden użytkownik z uprawnieniami do uzyskiwania dostępu do tych zasobów. Każdy właściciel obciążenia może korzystać z udostępnionych zasobów infrastruktury bez posiadania żadnych uprawnień do rzeczywistych zasobów udostępnionych. Jednak ten model zarządzania kończy się niepowodzeniem w przypadku izolacji obciążeń — każdy z dwóch **właścicieli obciążeń** może uzyskać dostęp do zasobów innego obciążenia.
+Ten przykładowy model zarządzania zasobami umożliwia nam zarządzanie zasobami w trzech wymaganych środowiskach. Zasoby infrastruktury udostępnionej są chronione, ponieważ tylko jeden użytkownik w ramach subskrypcji ma uprawnienia dostępu do tych zasobów. Każdy właściciel obciążenia może korzystać z udostępnionych zasobów infrastruktury bez posiadania żadnych uprawnień do zasobów udostępnionych. Jednak ten model zarządzania przestanie być przyczyną izolacji obciążeń, ponieważ obaj **właściciele obciążeń** mogą uzyskać dostęp do zasobów każdego innego obciążenia.
 
 Istnieje inny istotny problem z tym modelem, który może nie być od razu oczywisty. W tym przykładzie został **app1y właściciel obciążenia** , który zażądał połączenia komunikacji równorzędnej sieci z **koncentratorem-Sieć wirtualna** , aby zapewnić łączność z lokalnymi. Użytkownik **operacji sieciowych** ocenił to żądanie na podstawie zasobów wdrożonych w ramach tego obciążenia. Gdy **właściciel subskrypcji** dodał **właściciela obciążenia APP2** z rolą **współautor** , ten użytkownik miał prawa dostępu do zarządzania wszystkimi zasobami w grupie zasobów **prod-RG** .
 

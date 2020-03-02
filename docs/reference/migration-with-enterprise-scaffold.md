@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629253"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225290"
 ---
+<!-- cSpell:ignore rodend subscope ITSM -->
+
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: zalecenia dotyczące zarządzania subskrypcjami
 
 > [!NOTE]
@@ -47,7 +49,7 @@ Szkielet przedsiębiorstwa może stanowić podstawę każdej nowej subskrypcji n
 >
 Na poniższej ilustracji przedstawiono składniki szkieletu. Podstawą jest plan jednolity dla hierarchii zarządzania i subskrypcji. Filary składają się z zasad Menedżer zasobów i silnych standardów nazewnictwa. Pozostała część szkieletu to podstawowe funkcje i funkcje platformy Azure, które umożliwiają i łączą bezpieczne i możliwe do zarządzania środowisko.
 
-![Szkielet przedsiębiorstwa](../_images/reference/scaffoldv2.png)
+![Szkielet przedsiębiorstwa](../_images/reference/scaffold-v2.png)
 
 ## <a name="define-your-hierarchy"></a>Definiowanie hierarchii
 
@@ -184,7 +186,7 @@ W przypadku implementowania dostępu opartego na rolach należy wykonać następ
 
 Planowanie i przygotowywanie do kontroli tożsamości i dostępu oraz stosowanie najlepszych rozwiązań w zakresie zarządzania tożsamościami ([link](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)) jest jednym z najlepszych strategii zaradczych, które można zastosować i powinny być uznawane za obowiązkowe dla każdego wdrożenia.
 
-## <a name="security"></a>Bezpieczeństwo
+## <a name="security"></a>Zabezpieczenia
 
 Jeden z największych blokad do wdrożenia w chmurze tradycyjnie ma wpływ na bezpieczeństwo. Menedżerowie ryzyka IT i działy zabezpieczeń muszą zapewnić, że zasoby na platformie Azure są chronione i zabezpieczone domyślnie. Platforma Azure udostępnia funkcje, których można używać do ochrony zasobów podczas wykrywania i eliminowania zagrożeń związanych z tymi zasobami.
 
@@ -269,7 +271,7 @@ Te informacje mogą być wyświetlane i przetwarzane na wielu poziomach i stale 
 
 Jednym z najważniejszych zmian, które należy wykonać podczas przechodzenia z chmury lokalnej do chmury publicznej, jest przełączenie z wydatków inwestycyjnych (Kupowanie sprzętu) do wydatków operacyjnych (płacisz za usługę w miarę ich używania). Ten przełącznik wymaga również bardziej dokładnego zarządzania kosztami. Zaletą chmury jest to, że można się w sposób zasadniczy i pozytywnie wpływać na koszt usługi używanej przez zaledwie wyłączenie lub zmianę ich rozmiarów, gdy nie jest to konieczne. Świadome zarządzanie kosztami w chmurze jest najlepszym rozwiązaniem i jednym, który jest codziennie codziennym klientom.
 
-Firma Microsoft udostępnia kilka narzędzi, które umożliwiają wizualizowanie, śledzenie i zarządzanie kosztami. Udostępniamy również pełny zestaw interfejsów API umożliwiających Dostosowywanie i integrację zarządzania kosztami w własnych narzędziach i pulpitach nawigacyjnych. Te narzędzia są luźno pogrupowane w Azure Portal możliwości i funkcje zewnętrzne.
+Firma Microsoft udostępnia kilka narzędzi, które ułatwiają wizualizowanie, śledzenie i zarządzanie kosztami. Udostępniamy również pełny zestaw interfejsów API umożliwiających Dostosowywanie i integrację zarządzania kosztami w własnych narzędziach i pulpitach nawigacyjnych. Te narzędzia są luźno pogrupowane w Azure Portal możliwości i funkcje zewnętrzne.
 
 ### <a name="azure-portal-capabilities"></a>Możliwości Azure Portal
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9fbdeccc3ed1c1acb516f9aceadc3d8dc8732030
-ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
+ms.openlocfilehash: b426acdc4ae88a88acd295758be4e2d4a6b85dc0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77213613"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223264"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Ustanawianie praktyk zarządzania operacyjnego w chmurze
 
@@ -39,7 +39,7 @@ Obydwie te najlepsze rozwiązania zostały skompilowane w ramach metodologii w p
 - **Zgodność operacyjna:** Regularne zarządzanie konfiguracją, rozmiarem, kosztem i wydajnością zasobów jest kluczem do obsługi oczekiwań wydajności.
 - **Ochrona i odzyskiwanie:** Minimalizacja przerw w działaniu i przyspieszanie odzyskiwania pomaga uniknąć ubytków wydajności i niekorzystnych wpływów na dochody. Kluczowymi aspektami tej dyscypliny są wykrywanie i odzyskiwanie.
 - **Operacje na platformie:** Wszystkie środowiska IT zawierają zestaw często używanych platform. Te platformy mogą obejmować magazyny danych, takie jak SQL Server lub Azure HDInsight. Inne popularne platformy mogą obejmować rozwiązania kontenerów, takie jak Azure Kubernetes Service (AKS). Niezależnie od platformy, data_spłaty operacji platformy koncentrują się na dostosowywaniu operacji w oparciu o sposób wdrażania, konfigurowania i używania typowych platform przez obciążenia.
-- **Operacje związane z obciążeniem:** W przypadku najwyższego poziomu zapadalności operacyjnego zespoły operacji w chmurze mogą dostroić operacje dotyczące obciążeń, które są kluczowe dla sukcesu firmy. W przypadku tych obciążeń o wysokiej dostępności dostęp do danych może pomóc w automatyzowaniu korygowania, zmienianiu rozmiarów lub ochronie obciążeń na podstawie ich użycia.
+- **Operacje związane z obciążeniem:** W przypadku najwyższego poziomu zapadalności operacyjnego zespoły operacji w chmurze mogą dostosowywać operacje dla obciążeń krytycznych. W przypadku tych obciążeń dostępne dane mogą pomóc w automatyzowaniu korygowania, ustalaniu wielkości lub ochronie obciążeń w zależności od ich użycia.
 
 Dodatkowe wskazówki, takie jak [Struktura przeglądu projektu (nazwa kodu: zasady projektowania w chmurze)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview), mogą pomóc w podejmowaniu szczegółowych decyzji architektonicznych dotyczących poszczególnych obciążeń w ramach wcześniej opisanych dyscyplin.
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c148e62aee2ce7bcd78aa19248b3df8f5cf56129
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 9d50e40ba5877eab0f2aa904f2bcc1e984c309ca
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709349"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223875"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metryki linii bazowej tożsamości, wskaźniki i tolerancja ryzyka
 
@@ -53,7 +53,7 @@ Po utworzeniu planu bazowego należy ustanowić minimalne wzorce reprezentujące
 - **Wyzwalacz Federacji.** Firma implementująca federacji tożsamości z zewnętrznymi systemami linii bazowej tożsamości _x_ może korzystać z inwestycji w dyscypliny linii bazowej tożsamości, aby zapewnić spójne zasady organizacyjne w obrębie federacyjnych elementów członkowskich.
 - **Wyzwalacz dostępu z podwyższonym poziomem uprawnień.** Firma mająca więcej niż _x%_ użytkowników z podwyższonym poziomem uprawnień do narzędzi do zarządzania i zasobów powinna rozważyć zainwestowanie w dyscypliny linii bazowej tożsamości, aby zminimalizować ryzyko przypadkowego nadmiernego zainicjowania dostępu do użytkowników.
 - **Wyzwalacz RBAC.** Firma o wartości poniżej _x%_ zasobów przy użyciu metod kontroli dostępu opartej na rolach powinna rozważyć inwestowanie w dyscypliny linii bazowej tożsamości, aby zidentyfikować zoptymalizowane sposoby przypisywania dostępu użytkowników do zasobów.
-- **Wyzwalacz błędu uwierzytelniania.** Firma, w której błędy uwierzytelniania reprezentują ponad _x%_ prób, powinna inwestować w dyscyplinę bazową tożsamości, aby upewnić się, że metody uwierzytelniania nie są objęte atakiem zewnętrznym i że użytkownicy będą mogli prawidłowo korzystać z metod uwierzytelniania.
+- **Wyzwalacz błędu uwierzytelniania.** Firma, w której błędy uwierzytelniania reprezentują ponad _x%_ prób, powinna inwestować w dyscyplinę bazową tożsamości, aby upewnić się, że metody uwierzytelniania nie są objęte atakiem zewnętrznym i że użytkownicy mogą prawidłowo się uwierzytelniać.
 - **Wyzwalacz błędu autoryzacji.** Firma, w której próby dostępu są odrzucane ponad _x%_ czasu, powinien inwestować w dyscyplinę bazową tożsamości w celu ulepszania aplikacji i aktualizowania kontroli dostępu, a następnie identyfikować potencjalnie złośliwe próby dostępu.
 - **Naruszony wyzwalacz konta.** Firma z ponad 1 złamanym kontem powinna zainwestować w dyscyplinę bazową tożsamości, aby zwiększyć siłę i bezpieczeństwo mechanizmów uwierzytelniania oraz poprawić mechanizmy korygowania zagrożeń związanych z naruszonymi kontami.
 

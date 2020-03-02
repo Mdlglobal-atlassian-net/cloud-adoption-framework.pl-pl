@@ -7,13 +7,15 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b4450f3f1e151e8234c7b2b5f91c2709270cbcdc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 199eedb6c9365f273588fae79b134298e8b60c6e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799135"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225366"
 ---
+<!-- cSpell:ignore paas NVAs VPNs -->
+
 # <a name="review-your-network-options"></a>Przejrzyj opcje sieci
 
 Projektowanie i implementowanie możliwości sieciowych platformy Azure to krytyczna część działań związanych z wdrażaniem w chmurze. Należy podjąć decyzje projektowe dotyczące sieci w celu prawidłowej obsługi obciążeń i usług, które będą hostowane w chmurze. Produkty i usługi sieciowe platformy Azure obsługują szeroką gamę funkcji sieciowych. Wybór struktury tych usług, narzędzi i architektur sieciowych zależy od wymagań dotyczących obciążeń, ładu i łączności w danej organizacji.
@@ -72,14 +74,14 @@ Po zidentyfikowaniu usług sieciowych platformy Azure potrzebnych do obsługi ob
 
 W poniższej tabeli przedstawiono podstawowe scenariusze obsługiwane przez te wzorce:
 
-| **Scenariusz** | **Sugerowana architektura sieci**
-| --- | --- |
-| Wszystkie obciążenia hostowane na platformie Azure wdrożone w strefie docelowej będą całkowicie oparte na rozwiązaniu PaaS, nie będą wymagać sieci wirtualnej ani nie są częścią szerszego procesu związanego z wdrażaniem w chmurze, który będzie obejmować zasoby IaaS. | [Tylko usługa PaaS](../../decision-guides/software-defined-network/paas-only.md) |
-| Obciążenia hostowane na platformie Azure wymagają wdrożenia zasobów opartych na usłudze IaaS, takich jak maszyny wirtualne, lub sieci wirtualnej, ale nie wymagają łączności ze środowiskiem lokalnym. | [Natywne dla chmury](../../decision-guides/software-defined-network/cloud-native.md) |
-| Obciążenia hostowane na platformie Azure wymagają ograniczonego dostępu do zasobów lokalnych, ale wymagane jest traktowanie połączeń w chmurze jako niezaufanych. | [Strefa DMZ w chmurze](../../decision-guides/software-defined-network/cloud-dmz.md) |
-| Obciążenia hostowane na platformie Azure wymagają ograniczonego dostępu do zasobów lokalnych i planujesz wdrożyć sprawdzone zasady zabezpieczeń oraz bezpieczną łączność między chmurą i środowiskiem lokalnym. | [Hybrydowe](../../decision-guides/software-defined-network/hybrid.md) |
-| Musisz wdrożyć dużą liczbę maszyn wirtualnych i obciążeń, które mogą przekraczać [limity subskrypcji platformy Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits), i zarządzać nimi, musisz udostępnić usługi w różnych subskrypcjach lub potrzebujesz bardziej rozbudowanej struktury dla roli, aplikacji lub podziału uprawnień. | [Gwiazda](../../decision-guides/software-defined-network/hub-spoke.md) |
-| Istnieje wiele oddziałów, które muszą łączyć się ze sobą i z platformą Azure. | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+| **Scenariusz**                                                                                                                                                                                                                                                                                                                        | **Sugerowana architektura sieci**                                                  |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Wszystkie obciążenia hostowane na platformie Azure wdrożone w strefie docelowej będą całkowicie PaaS, nie wymagają sieci wirtualnej ani nie są częścią szerszego wysiłku związanego z wdrażaniem w chmurze, który obejmuje zasoby IaaS.                                                                                                                        | [Tylko usługa PaaS](../../decision-guides/software-defined-network/paas-only.md)            |
+| Obciążenia hostowane na platformie Azure wymagają wdrożenia zasobów opartych na usłudze IaaS, takich jak maszyny wirtualne, lub sieci wirtualnej, ale nie wymagają łączności ze środowiskiem lokalnym.                                                                                                                                          | [Natywne dla chmury](../../decision-guides/software-defined-network/cloud-native.md)      |
+| Obciążenia hostowane na platformie Azure wymagają ograniczonego dostępu do zasobów lokalnych, ale wymagane jest traktowanie połączeń w chmurze jako niezaufanych.                                                                                                                                                                                           | [Strefa DMZ w chmurze](../../decision-guides/software-defined-network/cloud-dmz.md)            |
+| Obciążenia hostowane na platformie Azure wymagają ograniczonego dostępu do zasobów lokalnych i planujesz wdrożyć sprawdzone zasady zabezpieczeń oraz bezpieczną łączność między chmurą i środowiskiem lokalnym.                                                                                                                         | [Hybrydowe](../../decision-guides/software-defined-network/hybrid.md)                  |
+| Musisz wdrożyć dużą liczbę maszyn wirtualnych i obciążeń, które mogą przekraczać [limity subskrypcji platformy Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits), i zarządzać nimi, musisz udostępnić usługi w różnych subskrypcjach lub potrzebujesz bardziej rozbudowanej struktury dla roli, aplikacji lub podziału uprawnień. | [Gwiazda](../../decision-guides/software-defined-network/hub-spoke.md)        |
+| Istnieje wiele oddziałów, które muszą łączyć się ze sobą i z platformą Azure.                                                                                                                                                                                                                                                       | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
 
 ### <a name="azure-virtual-datacenter"></a>Wirtualne centrum danych Azure
 

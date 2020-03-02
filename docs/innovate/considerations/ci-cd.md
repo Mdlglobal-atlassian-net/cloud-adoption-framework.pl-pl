@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bfaacd1f07b24a3d88b03aa577e1f1ca38493423
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170566"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223490"
 ---
 # <a name="empower-adoption"></a>Zwiększanie akceptacji
 
@@ -45,7 +45,7 @@ Zgodnie z opisem w temacie [mierzenie wpływu klientów](./measure.md), pozytywn
 
 W przypadku skalowania innowacji nie ma więcej cennych narzędzi niż udostępniona baza kodu dla rozwiązania. Niestety, nie istnieje niezawodny sposób przewidywania iteracji lub tego, który SPECJALISTy będzie miał wygraną kombinację. Dlatego nigdy nie jest zbyt wczesny do ustanowienia udostępnionej bazy kodu lub repozytorium. Jest to jedno podejście [techniczne](./build.md#reduce-complexity-and-delay-technical-spikes) , które nigdy nie powinno być opóźnione. Gdy zespół iteruje przez różne rozwiązania MVP, udostępnione repozytorium umożliwia łatwą współpracę i przyspieszenie opracowywania. Gdy zmiany w rozwiązaniu przeciągnieją metryki szkoleniowe w dół, Kontrola wersji umożliwia wycofanie do wcześniejszej, bardziej efektywnej wersji rozwiązania.
 
-Najczęściej przyjętym narzędziem do zarządzania repozytoriami kodu jest [GitHub](https://guides.github.com), który umożliwia tworzenie repozytorium kodu udostępnionego za pomocą zaledwie kilku kliknięć. Ponadto funkcja [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) platformy Azure DevOps może służyć do tworzenia repozytorium [git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) lub [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) .
+Szeroko przyjętym narzędziem do zarządzania repozytoriami kodu jest [GitHub](https://guides.github.com), który umożliwia tworzenie repozytorium kodu udostępnionego w zaledwie kilku krokach. Ponadto funkcja [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) platformy Azure DevOps może służyć do tworzenia repozytorium [git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) lub [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) .
 
 ## <a name="feedback-loops"></a>Cykle wymiany opinii
 
@@ -61,7 +61,7 @@ W miarę jak wydłużać skala i hipotezy są coraz bliżej prawdziwe innowacje 
 
 W przypadku ciągłej integracji zmiany kodu są często scalane z gałęzią główną. Zautomatyzowane procesy kompilowania i testowania sprawdzają, czy kod w głównej gałęzi jest zawsze jakości produkcji. Gwarantuje to, że deweloperzy pracują ze sobą, aby opracowywać udostępnione rozwiązania zapewniające dokładne i niezawodne pętle opinii.
 
-Usługa Azure DevOps i [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) zapewniają możliwości ciągłej integracji za pomocą zaledwie kilku kliknięć w serwisie GitHub lub w różnych repozytoriach.
+Usługa Azure DevOps i [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) zapewniają możliwości ciągłej integracji dzięki zaledwie kilku krokom w serwisie GitHub lub wielu innych repozytoriach.
 Dowiedz się więcej o [ciągłej integracji](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)lub aby uzyskać więcej informacji, zobacz [laboratorium praktyczne](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration). Istnieją również architektury rozwiązań umożliwiających przyspieszenie tworzenia potoków ciągłej integracji/ciągłego wdrażania [za pomocą usługi Azure DevOps](https://azure.microsoft.com/solutions/devops).
 
 ## <a name="reliable-testing"></a>Niezawodne testowanie

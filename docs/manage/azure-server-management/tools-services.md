@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: df6851ff628c0abcb38ee9139fcf24f31e2117cf
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807941"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223285"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Narzędzia i usługi zarządzania serwerem platformy Azure
 
 Zgodnie z [omówieniem](./index.md) tych wskazówek, pakiet usług zarządzania serwerem platformy Azure obejmuje następujące zagadnienia:
 
-- Migrowanie
+- Migracja
 - Bezpieczeństwo
 - Ochrona
 - Monitorowanie
@@ -27,7 +27,7 @@ Zgodnie z [omówieniem](./index.md) tych wskazówek, pakiet usług zarządzania 
 
 W poniższych sekcjach krótko opisano te obszary zarządzania i przedstawiono linki do szczegółowej zawartości dotyczącej głównych usług platformy Azure, które je obsługują.
 
-## <a name="migrate"></a>Migrowanie
+## <a name="migrate"></a>Migracja
 
 Usługi migracji mogą ułatwić Migrowanie obciążeń do platformy Azure. Aby zapewnić najlepsze wskazówki, usługa Azure Migrate rozpoczyna się od mierzenia wydajności serwera lokalnego i oceny przydatności do migracji. Po Azure Migrate zakończeniu oceny można przeprowadzić migrację maszyn lokalnych do platformy Azure za pomocą [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) i [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) .
 
@@ -37,7 +37,7 @@ Usługi migracji mogą ułatwić Migrowanie obciążeń do platformy Azure. Aby 
 
 ## <a name="protect"></a>Ochrona
 
-Aby chronić dane, należy zaplanować tworzenie kopii zapasowej, wysoką dostępność, szyfrowanie, autoryzację i pokrewne problemy operacyjne. Te tematy są szeroko omówione w trybie online, dlatego należy skoncentrować się na tworzeniu planu odzyskiwania po awarii firmy (BCDR). Zawieramy odwołania do dokumentacji opisującej szczegółowo, jak zaimplementować i wdrożyć ten typ planu.
+Aby chronić dane, należy zaplanować tworzenie kopii zapasowej, wysoką dostępność, szyfrowanie, autoryzację i pokrewne problemy operacyjne. Te tematy są szeroko omówione w trybie online, dlatego należy skoncentrować się na tworzeniu planu ciągłości biznesowej i odzyskiwania po awarii (BCDR). Zawieramy odwołania do dokumentacji opisującej szczegółowo, jak zaimplementować i wdrożyć ten typ planu.
 
 Podczas budowania strategii ochrony danych należy najpierw rozważyć rozdzielenie aplikacji obciążeń na ich różne warstwy. Takie podejście jest pomocne, ponieważ każda warstwa zazwyczaj wymaga własnego unikatowego planu ochrony. Aby dowiedzieć się więcej o projektowaniu aplikacji do odporności, zobacz [projektowanie odpornych aplikacji na platformie Azure](https://docs.microsoft.com/azure/architecture/resiliency).
 
@@ -97,7 +97,7 @@ Aby dowiedzieć się więcej o cenach dla usług zarządzania platformy Azure, p
 - [Azure Security Center](https://azure.microsoft.com/pricing/details/security-center)
 
 - [Azure Automation](https://azure.microsoft.com/pricing/details/automation), w tym:
-  - Desired State Configuration
+  - Konfiguracja żądanego stanu
   - Usługa Update Management platformy Azure
   - Usługa Azure Change Tracking i usługi spisu
 

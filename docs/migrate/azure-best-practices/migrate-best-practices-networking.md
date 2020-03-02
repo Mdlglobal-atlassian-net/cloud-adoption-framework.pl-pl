@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a8a4bc504c085f461cb70f561670fe55a20a544b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803878"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225573"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące konfigurowania sieci pod kątem obciążeń migrowanych do platformy Azure
 
@@ -114,7 +114,7 @@ Platforma Azure domyślnie dodaje serwer DNS podczas wdrażania sieci wirtualnej
 - Serwery DNS określone dla interfejsu sieciowego lub usługi w chmurze mają pierwszeństwo przed serwerami DNS określonymi dla sieci wirtualnej.
 - W modelu wdrażania usługi Azure Resource Manager można określić serwery DNS dla sieci wirtualnej i interfejsu sieciowego, ale najlepszym rozwiązaniem jest użycie ustawienia tylko w sieciach wirtualnych.
 
-    ![Serwery DNS](./media/migrate-best-practices-networking/dns2.png) *serwery DNS dla sieci wirtualnej*
+    ![serwery DNS](./media/migrate-best-practices-networking/dns2.png) *serwery DNS dla sieci wirtualnej*
 
 **Dowiedz się więcej:**
 
@@ -131,14 +131,14 @@ Strefy dostępności zwiększają wysoką dostępność, aby chronić aplikacje 
 - Fizyczna separacja stref dostępności w ramach regionu chroni aplikacje i dane przed awariami centrum danych.
 - Usługi strefowo nadmiarowe replikują aplikacje i dane w strefach dostępności, aby chronić je przed pojedynczymi punktami awarii. - - Dzięki strefom dostępności platforma Azure oferuje umowę SLA gwarantującą czas działania maszyny wirtualnej na poziomie 99,99%.
 
-    ![Strefa dostępności](./media/migrate-best-practices-networking/availability-zone.png) *strefy dostępności*
+    Strefa dostępności ![](./media/migrate-best-practices-networking/availability-zone.png) *strefy dostępności*
 
 - Wysoką dostępność można zaplanować i utworzyć w architekturze migracji przez umieszczanie zasobów obliczeniowych, magazynu, sieci i danych w ramach tej samej strefy, a następnie replikowanie ich w innych strefach. Usługi platformy Azure, które obsługują strefy dostępności, dzielą się na dwie kategorie:
   - Strefowy usług: zasób jest skojarzona z określonej strefy. Na przykład maszyny wirtualne, dyski zarządzane, adresy IP.
   - Strefowo nadmiarowe usług: zasób jest automatycznie replikowana w strefach. Na przykład magazyn strefowo nadmiarowy, usługa Azure SQL Database.
 - Aby zapewnić strefową odporność na uszkodzenia, można wdrożyć standardowy moduł równoważenia obciążenia platformy Azure z obciążeniami internetowymi lub warstwami aplikacji.
 
-    ![Moduł równoważenia obciążenia](./media/migrate-best-practices-networking/load-balancer.png) *modułu równoważenia obciążenia*
+    ![modułu równoważenia obciążenia](./media/migrate-best-practices-networking/load-balancer.png) usługi *równoważenia obciążenia*
 
 **Dowiedz się więcej:**
 
@@ -148,8 +148,8 @@ Strefy dostępności zwiększają wysoką dostępność, aby chronić aplikacje 
 
 W przypadku pomyślnej migracji najważniejsze jest połączenie lokalnych sieci firmowych z platformą Azure. Dzięki temu można utworzyć zawsze włączone połączenie znane jako sieć hybrydowa w chmurze, w którym usługi są dostarczane z chmury platformy Azure do użytkowników w firmie. Istnieją dwie opcje tworzenia sieci tego typu:
 
-- **Sieć VPN lokacja lokacja:** nawiązaniem połączenia lokacja lokacja między urządzeniem sieci VPN zgodne w środowisku lokalnym i bramą Azure VPN gateway, które zostało wdrożone w sieci wirtualnej. Każdy autoryzowany zasób lokalny może uzyskać dostęp do sieci wirtualnych. Komunikacja między lokacjami jest wysyłana przez szyfrowany tunel za pośrednictwem Internetu.
-- **Usługa ExpressRoute systemu Azure:** nawiązania połączenia usługi Azure ExpressRoute między siecią lokalną i platformę Azure za pośrednictwem partnera usługi ExpressRoute. To połączenie jest prywatne i ruch nie przechodzi przez Internet.
+- **Sieć VPN typu lokacja-lokacja:** Połączenie typu lokacja-lokacja między zgodnym lokalnym urządzeniem sieci VPN i bramą sieci VPN platformy Azure, która jest wdrożona w sieci wirtualnej. Każdy autoryzowany zasób lokalny może uzyskać dostęp do sieci wirtualnych. Komunikacja między lokacjami jest wysyłana przez szyfrowany tunel za pośrednictwem Internetu.
+- **ExpressRoute Azure:** Połączenie usługi Azure ExpressRoute jest nawiązywane między siecią lokalną a platformą Azure za pomocą partnera ExpressRoute. To połączenie jest prywatne i ruch nie przechodzi przez Internet.
 
 **Dowiedz się więcej:**
 
@@ -377,7 +377,7 @@ NIC4 | AsgDb
 --- | --- | ---
 Allow-HTTP-Inbound-Internet | Zezwalanie na ruch z Internetu do serwerów internetowych. Ruch przychodzący z Internetu jest blokowany przez domyślną regułę zabezpieczeń DenyAllInbound, dlatego dodatkowa reguła nie jest potrzebna w przypadku grup zabezpieczeń aplikacji AsgLogic i AsgDb. | Priorytet: 100<br/><br/> Źródło: Internet<br/><br/> Port źródłowy: *<br/><br/> Miejsce docelowe: AsgWeb<br/><br/> Port docelowy: 80<br/><br/> Protokół: TCP<br/><br/> Dostęp: Zezwalaj na.
 Deny-Database-All | Domyślna reguła zabezpieczeń AllowVNetInBound zezwala na całą komunikację między zasobami w tej samej sieci wirtualnej, ta zasada jest potrzebna w celu blokowania ruchu ze wszystkich zasobów. | Priorytet: 120<br/><br/> Źródło: *<br/><br/> Port źródłowy: *<br/><br/> Miejsce docelowe: AsgDb<br/><br/> Port docelowy: 1433<br/><br/> Protokół: wszystkie<br/><br/> Dostęp: odmowa.
-Allow-Database-BusinessLogic | Zezwolenie na ruch z grupy zabezpieczeń aplikacji AsgLogic do grupy zabezpieczeń aplikacji AsgDb. Priorytet tej reguły jest wyższy niż priorytet reguły Deny-Database-All i jest ona przetwarzana przed tą regułą, dlatego ruch z grupy zabezpieczeń aplikacji AsgLogic jest dozwolony, a cały pozostały ruch jest blokowany. | Priorytet: 110<br/><br/> Źródło: AsgLogic<br/><br/> Port źródłowy: *<br/><br/> Miejsce docelowe: AsgDb<br/><br/> Port docelowy: 1433<br/><br/> Protokół: TCP<br/><br/> Dostęp: Zezwalaj na.
+Allow-Database-BusinessLogic | Zezwolenie na ruch z grupy zabezpieczeń aplikacji AsgLogic do grupy zabezpieczeń aplikacji AsgDb. Priorytet tej reguły jest wyższy niż reguła Odmów-Database-All, więc ta reguła jest przetwarzana jako pierwsza. W związku z tym, ruch z grupy zabezpieczeń aplikacji AsgLogic jest dozwolony i cały inny ruch jest blokowany. | Priorytet: 110<br/><br/> Źródło: AsgLogic<br/><br/> Port źródłowy: *<br/><br/> Miejsce docelowe: AsgDb<br/><br/> Port docelowy: 1433<br/><br/> Protokół: TCP<br/><br/> Dostęp: Zezwalaj na.
 
 <!--markdownlint-enable MD033 -->
 

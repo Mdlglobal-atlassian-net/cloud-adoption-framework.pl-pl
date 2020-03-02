@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 07126e67dbe76562e664e35a4817d0e51733236f
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 9f4b11023e8b345283054c0ddede132f10664632
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709179"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223926"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: poprawa chmury
 
@@ -31,7 +31,7 @@ Od tej pory zmieniono pewne zmiany, które wpłyną na nadzór:
 
 - Tożsamość jest kontrolowana przez lokalne wystąpienie Active Directory. Tożsamość hybrydowa jest ułatwiona poprzez replikację do Azure Active Directory.
 - Operacje IT lub operacje w chmurze są w dużej mierze zarządzane przez Azure Monitor i powiązane możliwości automatyzacji.
-- Odzyskiwanie po awarii i ciągłość biznesowa (DRBC) jest kontrolowane przez wystąpienia magazynu Azure.
+- Ciągłość działania i odzyskiwanie po awarii (BCDR) są kontrolowane przez wystąpienia magazynu Azure.
 - Azure Security Center służy do monitorowania naruszeń zabezpieczeń i ataków.
 - Azure Security Center i Azure Monitor są używane do monitorowania zarządzania chmurą.
 - Plany platformy Azure, Azure Policy i grupy zarządzania są używane do automatyzowania zgodności z zasadami.

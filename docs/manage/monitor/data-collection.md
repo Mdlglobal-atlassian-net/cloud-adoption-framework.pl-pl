@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7ecf2ed4b9d66f6f1ccc7d65c1c0e9146a4046da
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a406d0c05594cff736265b0b69e24dcc8bc0f695
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807618"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223245"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Przewodnik po monitorowaniu chmur: Zbierz odpowiednie dane
 
@@ -23,7 +23,7 @@ Aby obserwować kondycję i dostępność rozwiązania w chmurze, należy skonfi
 
 Uważnie planowanie monitorowania i migracji. Zacznij od uwzględnienia właściciela usługi monitorowania, kierownika operacji i innego powiązanego personelu w fazie planowania i Kontynuuj angażowanie się w cały cykl tworzenia i wydawania. Ich fokus będzie opracowywać konfigurację monitorowania opartą na następujących kryteriach:
 
-- Co to jest kompozycja usługi i czy te zależności są monitorowane dzisiaj? Jeśli tak, czy istnieją wiele narzędzi? Czy istnieje możliwość konsolidacji, bez wprowadzania zagrożeń?
+- Co to jest kompozycja usługi? Czy te zależności są monitorowane dzisiaj? Jeśli tak, czy istnieją wiele narzędzi? Czy istnieje możliwość konsolidacji, bez wprowadzania zagrożeń?
 - Co to jest umowa SLA usługi i jak można ją wycenić i zgłosić?
 - Jak powinien wyglądać pulpit nawigacyjny usługi w przypadku zgłoszenia zdarzenia? Jak powinien wyglądać pulpit nawigacyjny dla właściciela usługi i dla zespołu, który obsługuje usługę?
 - Jakie metryki ma zasób do monitorowania?  

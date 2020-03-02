@@ -3,16 +3,16 @@ title: Omówienie przykładów migracji aplikacji na platformę Azure
 description: Omówienie przykładów migracji aplikacji opisanych w sekcji dotyczącej migracji podręcznika Cloud Adoption Framework.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/11/2018
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c2e0a27e432141feee526d4cb5fe54380fcde583
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 639d90285c1500a661e872931456f63c188daafc
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807380"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222981"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Wzorce i przykłady dotyczące migracji aplikacji
 
@@ -28,7 +28,7 @@ W ramach strategii chmury hybrydowej platforma Azure udostępnia rozwijające si
 
 ## <a name="migration-patterns"></a>Wzorce migracji
 
-Strategie migracji do chmury można podzielić na cztery ogólne wzorce: ponowne hostowanie, refaktoryzacja, zmiana architektury i ponowne kompilowanie. To, którą strategię chcesz przyjąć, zależy od Twoich celów biznesowych i celów migracji. Można też zastosować kilka wzorców jednocześnie. Możesz na przykład zdecydować się na ponowne hostowanie prostych aplikacji lub takich, które nie są krytyczne dla działania firmy, a w przypadku aplikacji, które są bardziej złożone i krytyczne dla działania firmy — na zmianę architektury. Przyjrzyjmy się tym wzorcom.
+Strategie migracji do chmury można podzielić na cztery ogólne wzorce: ponowne hostowanie, refaktoryzacja, zmiana architektury i ponowne kompilowanie. To, którą strategię chcesz przyjąć, zależy od Twoich celów biznesowych i celów migracji. Można też zastosować kilka wzorców jednocześnie. Można na przykład wybrać opcję rehostować proste aplikacje lub aplikacje, które nie mają krytycznego znaczenia dla Twojej firmy, ale rozbudowanych aplikacji, które są bardziej skomplikowane i mają krytyczne znaczenie dla firmy. Przyjrzyjmy się tym wzorcom.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -36,14 +36,14 @@ Strategie migracji do chmury można podzielić na cztery ogólne wzorce: ponowne
 --- | --- | ---
 **Ponowne hostowanie** | Często określana jako _przenoszony i przesunięty_ proces migracji. Ta opcja nie wymaga wprowadzania zmian w kodzie i umożliwia szybką migrację istniejących aplikacji na platformę Azure. Każda aplikacja jest migrowana bez zmian, co umożliwia wykorzystanie zalet chmury bez ryzyka i kosztów związanych z wprowadzaniem zmian w kodzie. | Gdy musisz szybko przenieść aplikacje do chmury.<br/><br/> Gdy chcesz przenieść aplikację bez zmian.<br/><br/> Gdy aplikacje są zaprojektowane w sposób umożliwiający wykorzystanie skalowalności usług [IaaS platformy Azure](https://azure.microsoft.com/overview/what-is-iaas) po migracji.<br/><br/> Gdy aplikacje są ważne dla Twojej firmy, ale nie musisz wprowadzać natychmiastowych zmian w ich możliwościach.
 **Refaktoryzacja** | Refaktoryzacja (często określana jako „ponowne tworzenie pakietów”) wymaga wprowadzenia minimalnych zmian w aplikacjach, tak aby umożliwić połączenie ich z usługami [PaaS platformy Azure](https://azure.microsoft.com/overview/what-is-paas) i wykorzystanie możliwości, jakie daje chmura.<br/><br/> Możesz na przykład migrować istniejące aplikacje do usługi Azure App Service lub Azure Kubernetes Service.<br/><br/> Możesz również refaktoryzować relacyjne i nierelacyjne bazy danych, korzystając z opcji takich jak wystąpienie zarządzane usługi Azure SQL Database czy usługi Azure Database for MySQL, Azure Database for PostgreSQL i Azure Cosmos DB. | Kiedy możliwe jest przeprowadzenie ponownego umieszczania Twojej aplikacji w pakietach pod kątem pracy na platformie Azure.<br/><br/> Jeśli chcesz zastosować innowacyjne rozwiązania metodyki DevOps dostępne na platformie Azure lub rozważasz użycie metodyki DevOps ze strategią kontenerów dla obciążeń.<br/><br/> W przypadku refaktoryzacji musisz wziąć pod uwagę przenośność istniejącego kodu podstawowego i dostępne umiejętności deweloperskie.
-**Zmiana architektury** | Zmiana architektury na potrzeby migracji ma na celu modyfikację i rozszerzenie funkcjonalności aplikacji i kodu podstawowego w celu zoptymalizowania architektury aplikacji pod kątem skalowalności w chmurze.<br/><br/> Możesz na przykład podzielić aplikację monolityczną na grupę współdziałających mikrousług, które można łatwo skalować.<br/><br/> Możesz też zmienić architekturę swoich relacyjnych i nierelacyjnych baz danych na w pełni zarządzane rozwiązanie bazy danych, takie jak wystąpienie zarządzane usługi Azure SQL Database lub usługi Azure Database for MySQL, Azure Database for PostgreSQL i Azure Cosmos DB. | Gdy aplikacje wymagają wprowadzenia dużych zmian w celu udostępnienia nowych funkcji lub zapewnienia skutecznego działania na platformie w chmurze.<br/><br/> Gdy chcesz skorzystać z dotychczasowych inwestycji w aplikacje, spełnić wymagania dotyczące skalowalności, zastosować innowacyjne rozwiązania metodyki DevOps i zminimalizować użycie maszyn wirtualnych.
-**Ponowne kompilowanie** | Ponowne kompilowanie to wyższy poziom — polega na ponownym skompilowaniu aplikacji od podstaw przy użyciu technologii w chmurze platformy Azure.<br/><br/> Możesz na przykład tworzyć aplikacje od podstaw za pomocą technologii [natywnych dla chmury](https://azure.com/cloudnative), takich jak usługi Azure Functions, Azure AI, Azure Cosmos DB czy wystąpienie zarządzane usługi Azure SQL Database. | Jeśli konieczne jest szybkie tworzenie zawartości, a istniejące aplikacje mają ograniczoną funkcjonalność lub okres eksploatacji.<br/><br/> Gdy firma jest gotowa do wprowadzenia innowacji (w tym rozwiązań metodyki DevOps oferowanych przez platformę Azure), tworzenia nowych aplikacji przy użyciu technologii natywnych dla chmury i korzystania z najnowszych rozwiązań w dziedzinie sztucznej inteligencji, łańcucha bloków i Internetu rzeczy.
+**Zmiana architektury** | Zmiana architektury na potrzeby migracji ma na celu modyfikację i rozszerzenie funkcjonalności aplikacji i kodu podstawowego w celu zoptymalizowania architektury aplikacji pod kątem skalowalności w chmurze.<br/><br/> Możesz na przykład podzielić aplikację monolityczną na grupę współdziałających mikrousług, które można łatwo skalować.<br/><br/> Możesz też zmienić architekturę swoich relacyjnych i nierelacyjnych baz danych na w pełni zarządzane rozwiązanie bazy danych, takie jak wystąpienie zarządzane usługi Azure SQL Database lub usługi Azure Database for MySQL, Azure Database for PostgreSQL i Azure Cosmos DB. | Gdy aplikacje wymagają wprowadzenia dużych zmian w celu udostępnienia nowych funkcji lub zapewnienia skutecznego działania na platformie w chmurze.<br/><br/> Jeśli chcesz korzystać z istniejących inwestycji w aplikacje, Spełniaj wymagania dotyczące skalowalności, stosuj innowacyjne praktyki DevOps i Minimalizuj użycie maszyn wirtualnych.
+**Ponowna kompilacja** | Ponowne kompilowanie to wyższy poziom — polega na ponownym skompilowaniu aplikacji od podstaw przy użyciu technologii w chmurze platformy Azure.<br/><br/> Można na przykład tworzyć aplikacje zielonego pola z technologiami [natywnymi w chmurze](https://azure.com/cloudnative) , takimi jak Azure Functions, Azure AI, Azure SQL Database Managed Instance i Azure Cosmos DB. | Jeśli konieczne jest szybkie tworzenie zawartości, a istniejące aplikacje mają ograniczoną funkcjonalność lub okres eksploatacji.<br/><br/> Gdy firma jest gotowa do wprowadzenia innowacji (w tym rozwiązań metodyki DevOps oferowanych przez platformę Azure), tworzenia nowych aplikacji przy użyciu technologii natywnych dla chmury i korzystania z najnowszych rozwiązań w dziedzinie sztucznej inteligencji, łańcucha bloków i Internetu rzeczy.
 
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="migration-example-articles"></a>Artykuły zawierające przykłady migracji
 
-Artykuły w tej sekcji zawierają przykłady kilku typowych scenariuszy migracji. Każdy z tych przykładów zawiera podstawowe informacje i szczegółowe scenariusze wdrożenia, które opisują, jak skonfigurować infrastrukturę migracji i ocenić, czy lokalne zasoby są gotowe do migracji. Więcej artykułów zostanie dodanych do tej sekcji w przyszłości.
+W tej sekcji przedstawiono przykłady kilku typowych scenariuszy migracji. Każdy przykład zawiera informacje w tle i szczegółowe scenariusze wdrażania, które ilustrują sposób konfigurowania infrastruktury migracji i oceny przydatności zasobów lokalnych na potrzeby migracji. Więcej artykułów zostanie dodanych do tej sekcji w przyszłości.
 
 ![Typowe projekty migracji/modernizacji](./media/migration-patterns.png)
 
@@ -58,7 +58,7 @@ Podsumowanie artykułów w tej serii znajduje się poniżej.
 
 **Artykuł** | **Szczegóły**
 --- | ---
-[Assess on-premises resources for migration to Azure (Ocena zasobów lokalnych pod kątem migracji do platformy Azure)](./contoso-migration-assessment.md) | W tym artykule pokazano, jak przeprowadzić ocenę lokalnej aplikacji uruchomionej na maszynach wirtualnych VMware. W tym przykładzie organizacja ocenia maszyny wirtualne aplikacji przy użyciu usługi Azure Migrate, a bazę danych programu SQL Server aplikacji przy użyciu narzędzia Data Migration Assistant.
+[Assess on-premises resources for migration to Azure (Ocena zasobów lokalnych pod kątem migracji do platformy Azure)](../../plan/contoso-migration-assessment.md) | W tym artykule o najlepszych rozwiązaniach opisano sposób uruchamiania oceny aplikacji lokalnej działającej w oprogramowaniu VMware. W tym artykule Przykładowa organizacja ocenia maszyny wirtualne aplikacji przy użyciu usługi Azure Migrate, a aplikacja SQL Server bazę danych przy użyciu Data Migration Assistant.
 
 ### <a name="infrastructure"></a>Infrastruktura
 
@@ -84,7 +84,7 @@ Podsumowanie artykułów w tej serii znajduje się poniżej.
 
 **Artykuł** | **Szczegóły**
 --- | ---
-[Rehost an app on an Azure VM and SQL Database Managed Instance (Ponowne hostowanie aplikacji na maszynie wirtualnej platformy Azure i w wystąpieniu zarządzanym usługi SQL Database)](./contoso-migration-rehost-vm-sql-managed-instance.md) | W tym artykule przedstawiono przykład przenośnika i przesunięcia migracji na platformę Azure dla aplikacji lokalnej. Proces ten obejmuje migrację maszyny wirtualnej frontonu aplikacji przy użyciu usługi [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) oraz migrację bazy danych aplikacji do wystąpienia zarządzanego usługi Azure SQL Database przy użyciu usługi [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
+[Rehost an app on an Azure VM and SQL Database Managed Instance (Ponowne hostowanie aplikacji na maszynie wirtualnej platformy Azure i w wystąpieniu zarządzanym usługi SQL Database)](./contoso-migration-rehost-vm-sql-managed-instance.md) | W tym artykule przedstawiono przykład przenośnika i przesunięcia migracji na platformę Azure dla aplikacji lokalnej. Ten proces polega na migrowaniu maszyny wirtualnej frontonu aplikacji przy użyciu [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)i bazy danych aplikacji do Azure SQL Database wystąpienia zarządzanego przy użyciu [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 [Rehost an app on Azure VMs and in a SQL Server Always On availability group (Ponowne hostowanie aplikacji na maszynach wirtualnych platformy Azure i w zawsze włączonych grupach dostępności programu SQL Server)](./contoso-migration-rehost-vm-sql-ag.md) | W tym przykładzie pokazano, jak migrować aplikacje i dane przy użyciu maszyn wirtualnych z programem SQL Server hostowanych na platformie Azure. W tej metodzie użyto usługi Site Recovery do migrowania maszyn wirtualnych aplikacji oraz usługi Azure Database Migration Service do migrowania bazy danych aplikacji do klastra programu SQL Server chronionego przez zawsze włączoną grupę dostępności.
 
 ### <a name="aspnet-php-and-java-apps"></a>Aplikacje ASP.NET, PHP i Java

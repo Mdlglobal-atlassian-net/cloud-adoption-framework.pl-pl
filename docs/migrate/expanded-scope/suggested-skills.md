@@ -3,16 +3,16 @@ title: Gotowość w zakresie umiejętności do migracji do chmury
 description: Gotowość w zakresie umiejętności do migracji do chmury
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/19/2019
+ms.date: 02/25/2020
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d6768f3944699fdde483fb25f47bcb22be2484f1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f24d619106674cedf12bc650cd0807e0f766e3c6
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802943"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222315"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>Gotowość w zakresie umiejętności do migracji do chmury
 
@@ -28,7 +28,7 @@ Podczas wdrażania procesów migracji będą wykorzystywane umiejętności nabyt
 
 Następujące narzędzia mogą pomóc zespołowi w wykonywaniu działań związanych z ocenianiem:
 
-- [Balansowanie portfolio](./balance-the-portfolio.md): Zapewnij zrównoważenie i odpowiednie alokacje inwestycji w portfolio aplikacji.
+- [Balansowanie portfolio](../../strategy/balance-the-portfolio.md): Zapewnij zrównoważenie i odpowiednie alokacje inwestycji w portfolio aplikacji.
 - Twórz [uzasadnienie biznesowe](../../strategy/cloud-migration-business-case.md): Utwórz i zapoznaj się z uzasadnieniem biznesowym związanym z pracą w chmurze.
 - [Racjonalizacja cyfrowego podpisywania](../../digital-estate/rationalize.md): racjonalizacja elementów zawartości w obszarze cyfrowym.
 - [Ocena portfolio aplikacji](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): kryteria podejmowania decyzji dotyczących migracji lub opcji innowacji w ramach portfolio aplikacji.
@@ -49,14 +49,14 @@ Poniższy samouczek przygotowuje zespół do działań związanych z migracją:
 - [Migrowanie serwerów fizycznych i wirtualnych na platformę Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): Pluralsight kurs migracji serwerów na platformę Azure
 - [Importowanie i eksportowanie danych na platformę Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): Pluralsight kurs dotyczący przenoszenia danych do i z platformy Azure
 
-## <a name="optimize-and-promote-process-changes"></a>Optymalizacja i podwyższenie poziomu zmian procesu
+## <a name="optimize-and-promote-process-changes"></a>Zmiany procesu optymalizacji i podwyższania poziomu
 
 Następujące narzędzia mogą pomóc zespołowi zoptymalizować zasoby i podwyższyć poziom do produkcji:
 
 - [Koszt i rozmiar](../azure-best-practices/migrate-best-practices-costs.md): Dostosuj rozmiar w celu wyrównania kosztów i budżetów.
 - [Podnieś poziom obciążenia](../azure-best-practices/migrate-best-practices-networking.md): Zmień konfigurację sieci, aby przekierować użytkowników produkcyjnych do zmigrowanych obciążeń.
 
-## <a name="secure-and-manage-process-changes"></a>Zabezpieczanie zmian procesu oraz zarządzanie nimi
+## <a name="secure-and-manage-process-changes"></a>Zmiany procesu zabezpieczania i zarządzania
 
 Poniższe narzędzia ułatwiają zespołowi znalezienie sposobów zabezpieczania zmigrowanych zasobów i zarządzania nimi:
 

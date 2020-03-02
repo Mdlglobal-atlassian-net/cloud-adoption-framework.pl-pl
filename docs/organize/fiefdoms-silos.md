@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 41f23244119358a3356f65f6050572e4a8c787c1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a430f988282a89bb4aea7e07689310309d5b971c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800818"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222298"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antywzorce organizacyjne: silosy i fiefdoms
 
@@ -59,7 +59,7 @@ Nawet w toksycznych kulturach wysiłki CCoE i zespół nadzoru chmurowego powinn
 
 ## <a name="it-silos"></a>Silosy IT
 
-Członkowie zespołu w silosie IT mogą definiować siebie przez ich wyrównanie do niewielkiej liczby dostawców IT lub obszaru specjalizacji technicznej. Nie należy jednak mylić silosów IT z fiefdoms IT. Silosy IT są zależne od wygody i pasją i są zwykle łatwiejsze do przezwyciężenia niż w przypadku fiefdoms.
+Członkowie zespołu w silosie IT mogą definiować siebie przez ich wyrównanie do niewielkiej liczby dostawców IT lub obszaru specjalizacji technicznej. Jednak nie należy mylić silosów z fiefdoms IT. Silosy są zależne od wygody i pasją, a silosy są często łatwiejsze do przezwyciężenia, niż w przypadku fiefdoms.
 
 Ten Antywzorzec często wynika ze wspólnego pasją dla określonego rozwiązania. Silosy IT są następnie wzmacniane przez Zaawansowane umiejętności zespołu w wyniku inwestycji w to konkretne rozwiązanie. Ta wyższa umiejętność może być akceleratorem do wdrażania rozwiązań w chmurze, jeśli odporność na zmianę można przezwyciężyć. Może być również głównym blokiem, jeśli silosy są zerwane lub jeśli członkowie zespołu nie mogą precyzyjnie oszacować opcji. Na szczęście silosy IT można często przezwyciężyć bez jakichkolwiek znaczących zmian w schemacie organizacyjnym.
 
@@ -77,9 +77,9 @@ Eksperymenty i ekspozycja to zaawansowane narzędzia do rozdzielania barier w si
 
 Podczas przeglądania rozwiązania konkurencyjnego należy zastosować praktyki opisane w temacie [Definiowanie zasad firmowych](../govern/corporate-policy.md) , aby udokumentować materialne ryzyka eksperymentu i ustanowić zasady, które ułatwiają zespołowi silosom coraz większy stan. Dzięki temu zespół będzie mógł wystawiać nowe rozwiązania i zaostrzyć przyszłe rozwiązanie.
 
-**Być "granicą":** Zespoły, które przeprowadzą wdrożenie chmury, ułatwiają wypychanie granic przez Eksplorowanie atrakcyjnych, nowych rozwiązań w chmurze. Jest to jedna połowa podejścia do usuwania granic. Jednak w ten sposób można bardziej wzmocnić silosy IT. Wypychanie do zbyt dużej zmiany i bez względu na istniejące kultury może spowodować powstanie nieprawidłowości i prowadzić do naturalnej odporności.
+**Mieć wartość "graniczny-less":** Zespoły, które przeprowadzą wdrożenie chmury, ułatwiają wypychanie granic przez Eksplorowanie atrakcyjnych, nowych rozwiązań w chmurze. Jest to jedna połowa podejścia do usuwania granic. Jednak w ten sposób można bardziej wzmocnić silosy IT. Wypychanie do zbyt dużej zmiany i bez względu na istniejące kultury może spowodować powstanie nieprawidłowości i prowadzić do naturalnej odporności.
 
-Gdy silosy IT zaczynają się Odpornie, ważne jest, aby nie było możliwe ograniczenie do własnych rozwiązań. Pamiętaj o jednej prostej rzeczywistości: natywne w chmurze nie jest zawsze najlepszym rozwiązaniem. Weź pod uwagę rozwiązania hybrydowe, które mogą zapewnić możliwość rozbudowania istniejących inwestycji silosu IT w przyszłości.
+Gdy silosy zaczynają odporności, ważne jest, aby nie było "granicą" w swoich rozwiązaniach. Pamiętaj o jednej prostej rzeczywistości: natywne w chmurze nie jest zawsze najlepszym rozwiązaniem. Weź pod uwagę rozwiązania hybrydowe, które mogą zapewnić możliwość rozbudowania istniejących inwestycji silosu IT w przyszłości.
 
 Należy również rozważyć wersje rozwiązań opartych na chmurze, których zespół silosów IT używa teraz. Eksperymentuj z tymi rozwiązaniami i udostępniaj je w tym samym czasie. Co najmniej zostanie uzyskana Nowa perspektywa. W wielu sytuacjach można zdobyć wystarczającą ilość silosów IT w odniesieniu do odporności.
 

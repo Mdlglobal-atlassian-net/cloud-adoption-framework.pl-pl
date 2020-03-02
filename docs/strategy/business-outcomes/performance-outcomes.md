@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8a8c3b471787e1bc189a0d1f0abe2e2d84447e7c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8810b4ab2ce78dd2add8a424518717392305346a
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806836"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222088"
 ---
 # <a name="examples-of-performance-outcomes"></a>Przykłady wyników wydajności
 
@@ -22,13 +22,13 @@ W dzisiejszym świecie technicznym klienci zakładają, że aplikacje będą dzi
 
 ## <a name="performance"></a>Wydajność
 
-Największe usługi chmury obliczeniowej działają w światowej sieci bezpiecznych centrów danych, w których jest regularnie instalowany szybki i wydajny sprzęt najnowszej generacji. Zapewnia to kilka korzyści w ramach jednego korporacyjnego centrum danych, na przykład krótsze opóźnienia sieci dla aplikacji i większe oszczędności skali.
+Największe usługi chmury obliczeniowej działają w ogólnoświatowej sieci zabezpieczonych centrów danych, które są regularnie uaktualniane do najnowszej generacji szybkiego i wydajnego sprzętu komputerowego. Zapewnia to kilka korzyści w ramach jednego korporacyjnego centrum danych, na przykład krótsze opóźnienia sieci dla aplikacji i większe oszczędności skali.
 
 Przekształć swoją firmę i Obniż koszty dzięki infrastrukturze energooszczędnej, która obejmuje ponad 100 wysoce bezpiecznych udogodnień na całym świecie, połączone z jedną z największych sieci na ziemi. Platforma Azure ma więcej regionów globalnych niż inni dostawcy chmury. Umożliwia to przetłumaczenie na skalę, która jest wymagana w celu wprowadzenia aplikacji bliżej użytkowników na całym świecie, zachowania miejsca zamieszkania danych oraz zapewnienia kompleksowej zgodności i opcji odporności dla klientów.
 
 - **Przykład 1:** Firma usług pracowała z dostawcą hostingu obsługującym wiele zasobów infrastruktury operacyjnej. Te systemy były przyczyną częstej awarii i niskiej wydajności. Firma przebiegła swoje zasoby na platformę Azure, aby korzystać z kontroli umów SLA i wydajności w chmurze. Czas przestoju, który poniósł koszt IT około 15 000 USD na minutę. W przypadku czterech do ośmiu godzin przestojów miesięcznie można było łatwo uzasadnić tę transformację organizacyjną.
 
-- **Przykład 2:** Firma inwestycyjna dla odbiorców była na wczesnych etapach pracy innowacyjnej aplikacji z obsługą chmury. Procesy Agile i DevOps były również wymagalne, ale wydajność aplikacji została przerwana. Jako bardziej dojrzała transformacja firma rozpoczęła program do monitorowania i automatyzowania ustalania rozmiarów na podstawie wymagań dotyczących użycia. Firma była w stanie wyeliminować problemy związane z ustalaniem rozmiaru przy użyciu narzędzi do zarządzania wydajnością platformy Azure, co spowodowało wzrost zaskakujące w przypadku transakcji.
+- **Przykład 2:** Firma inwestycyjna dla odbiorców była na wczesnych etapach pracy innowacyjnej aplikacji z obsługą chmury. Procesy Agile i DevOps były również wymagalne, ale wydajność aplikacji została przerwana. Jako bardziej dojrzała transformacja firma rozpoczęła program do monitorowania i automatyzowania ustalania rozmiarów na podstawie wymagań dotyczących użycia. Firma eliminuje problemy związane z ustalaniem rozmiaru przy użyciu narzędzi do zarządzania wydajnością platformy Azure, co powoduje wzrost zaskakujące transakcji.
 
 ## <a name="reliability"></a>Niezawodność
 
@@ -40,7 +40,7 @@ Azure Backup to proste rozwiązanie, które zmniejsza koszty związane z infrast
 
 Azure Site Recovery ułatwia testowanie odzyskiwania po awarii przez replikowanie aplikacji między regionami platformy Azure. Możesz również replikować lokalne maszyny wirtualne VMware i Hyper-V oraz serwery fizyczne do platformy Azure, aby pozostać dostępne, Jeśli lokacja główna ulegnie awarii. Można także odzyskać obciążenia do lokacji głównej, gdy zostanie ona uruchomiona ponownie.
 
-- **Przykład:** Firma naftowa i gaz używa technologii platformy Azure do implementowania pełnego odzyskiwania lokacji. Firma zdecydowała się nie w pełni wdrożyć chmurę na potrzeby codziennych operacji, ale funkcje odzyskiwania po awarii chmury i ciągłości działania firmy (DRBC) nadal chronią centrum danych. Ponieważ huragan miało setki kilometrów, ich partner implementacji uruchomił odzyskiwanie lokacji do platformy Azure. Przed dotknięciem burzy, wszystkie zasoby o kluczowym znaczeniu działały na platformie Azure, co uniemożliwia przestoje.
+- **Przykład:** Firma naftowa i gaz używa technologii platformy Azure do implementowania pełnego odzyskiwania lokacji. Firma zdecydowała się nie w pełni wdrożyć chmurę na potrzeby codziennych operacji, ale funkcje ciągłości działalności biznesowej i odzyskiwania po awarii (BCDR) chmury nadal chronią centrum danych. Ponieważ huragan miało setki kilometrów, ich partner implementacji uruchomił odzyskiwanie lokacji do platformy Azure. Przed dotknięciem burzy, wszystkie zasoby o kluczowym znaczeniu działały na platformie Azure, co uniemożliwia przestoje.
 
 ## <a name="next-steps"></a>Następne kroki
 

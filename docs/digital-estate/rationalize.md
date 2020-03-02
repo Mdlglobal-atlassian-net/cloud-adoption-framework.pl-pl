@@ -3,17 +3,17 @@ title: Racjonalizacja majątku cyfrowego
 description: Skorzystaj z zalet chmury w celu oszacowania swoich zasobów cyfrowych i określenia najlepszego podejścia do hostingu w chmurze.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 38d574735dbc7854a03b98aee9d3e7012b939ff8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170141"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225301"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racjonalizacja majątku cyfrowego
 
@@ -83,7 +83,7 @@ W tradycyjnych środowiskach lokalnych hosting małych niewykorzystanych zasobó
 
 Jednak po przejściu do modelu ewidencjonowania aktywności w chmurze wycofane zasoby mogą generować znaczne oszczędności w rocznych kosztach operacyjnych i w ramach wysiłków związanych z migracją.
 
-Nierzadko zdarza się, aby organizacje wycofali 20% lub więcej ich cyfr cyfrowych po zakończeniu analizy ilościowej. Przed podjęciem decyzji o takiej akcji zalecamy przeprowadzenie dalszej analizy jakościowej. Po potwierdzeniu tego stanu wycofanie tych zasobów może wyprodukować pierwszy Victory z inwestycji w migrację w chmurze. W wielu przypadkach jest to jeden z największych czynników oszczędności kosztów. W związku z tym firma Microsoft zaleca, aby zespół strategii chmury nadzorował weryfikację i emeryturę zasobów, równolegle z fazą kompilacji procesu migracji, aby umożliwić wczesne wygranie finansowe.
+Nierzadko zdarza się, aby organizacje wycofali 20% lub więcej ich cyfr cyfrowych po zakończeniu analizy ilościowej. Zalecamy przeprowadzenie dalszej analizy jakościowej przed podjęciem działania. Po potwierdzeniu wycofania tych zasobów może wyprodukować pierwszy Victory z inwestycji w migrację w chmurze. Jest to często jeden z największych czynników oszczędności kosztów. W związku z tym zespół strategii chmury powinien nadzorować weryfikację i emeryturę zasobów, równolegle z wykonywaniem [metodologii migracji](../migrate/index.md), aby uzyskać wczesne dane finansowe.
 
 ### <a name="program-adjustments"></a>Korekty programu
 

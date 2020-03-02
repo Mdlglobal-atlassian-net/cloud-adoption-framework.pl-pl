@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c374ef690a28e1b7e0e8fd6f7fff3106c35e543f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90e21047f8d64f15ef3c94ebe82e31ba615c4d38
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798183"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225255"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ Aby można było obsłużyć powyższe kryteria, ta lista zawiera przykład pier
 
 Dodatkowe przykłady projektów z pierwszego wdrożenia obejmują:
 
-- **Odzyskiwanie po awarii i ciągłość biznesowa (DRBC):** Poza Azure Site Recovery można zaimplementować wiele strategii DRBC jako pierwszy projekt.
+- **Ciągłość działania i odzyskiwanie po awarii (BCDR):** Poza Azure Site Recovery można zaimplementować wiele strategii BCDR jako pierwszy projekt.
 - **Nieprodukcja:** Wdróż wystąpienie nieprodukcyjne w obciążeniu.
 - **Archiwizuj:** Chłodny magazyn może nakładać na zasoby centrum danych. Przeniesienie tych danych do chmury jest trwałą szybką licytacją.
 - **Koniec wsparcia (EOS):** Migrowanie zasobów, które osiągnęły koniec wsparcia, to kolejna szybka wersja, która kompiluje umiejętności techniczne. Może to również stanowić niedrogią możliwość uniknięcia kosztownych umów pomocy technicznej lub kosztów licencjonowania.

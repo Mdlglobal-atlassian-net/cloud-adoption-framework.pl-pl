@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2660c6f09924c907591c8c8635b943125d0ac9a1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: acf6c3b8dacd94c51a6fa9a857efad48eda727a0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801413"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222248"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Lista kontrolna planowania środowiska migracji: sprawdzanie gotowości środowiska przed migracją
 
@@ -26,7 +26,11 @@ W tym artykule założono podejście do migracji do chmury oparte na _ponownym h
 
 ## <a name="governance-alignment"></a>Dostosowanie ładu
 
-Pierwszą i najważniejszą decyzją dotyczącą środowiska gotowego do migracji jest wybór dostosowania ładu. czy osiągnięto porozumienie dotyczące dostosowania ładu do podstaw migracji? Zespół ds. wdrażania chmury powinien zrozumieć, czy migracja jest wypełniać w jednym środowisku z ograniczonym zarządzaniem, w pełni zarządzaną fabryką środowiskową, czy też pewną odmianą. Więcej opcji i wskazówek dotyczących dostosowania ładu zawiera artykuł dotyczący [dostosowania ładu i zgodności](../../expanded-scope/governance-or-compliance.md).
+Pierwszą i najważniejszą decyzją dotyczącą środowiska gotowego do migracji jest wybór dostosowania ładu. Czy osiągnięto porozumienie dotyczące dostosowania ładu do podstaw migracji? Zespół ds. wdrażania chmury powinien zrozumieć, czy migracja jest wypełniać w jednym środowisku z ograniczonym zarządzaniem, w pełni zarządzaną fabryką środowiskową, czy też pewną odmianą. Aby uzyskać dodatkowe wskazówki dotyczące wyrównania przez kierownictwo, zobacz [metodologia](../../../govern/index.md)zarządzania.
+
+## <a name="operations-management-alignment"></a>Wyrównanie zarządzania operacjami
+
+Przed migracją zasobów do chmury ważne jest zapoznanie się z wymaganiami i ograniczeniami dotyczącymi zarządzania operacjami. Środowisko migracji powinno zawierać co najmniej wszelkie implementacje wymagane do spełnienia planu bazowego operacji. Aby uzyskać dodatkowe wskazówki dotyczące wyrównania operacji, zobacz [Zarządzanie metodologią](../../../manage/index.md).
 
 ## <a name="cloud-readiness-implementation"></a>Wdrożenie gotowości chmury
 
@@ -53,7 +57,7 @@ Przed migracją należy ustalić spójne podejście do nazewnictwa zasobów oraz
 
 Przed migracją należy podjąć decyzję dotyczącą narzędzi do zarządzania zasobami. Narzędzia nie muszą być w pełni wdrożone, ale należy wybrać kierunek i przetestować go. Zespół ds. nadzoru chmurowego powinien określić i wymagać wdrożenia minimalnego produktu żywotnego (MVP) na potrzeby narzędzi do zarządzania przed migracją.
 
-## <a name="network"></a>Network (Sieć)
+## <a name="network"></a>Network
 
 Obciążenia oparte na chmurze będą wymagać ustanowienia sieci wirtualnych do obsługi dostępu użytkowników końcowych i administratorów. W oparciu o organizację zasobów i decyzje dotyczące ładu zasobów należy wybrać podejście sieciowe i dostosować je do wymagań bezpieczeństwa IT. Ponadto decyzje dotyczące sieci powinny być dostosowane do wszelkich ograniczeń sieci hybrydowej wymaganych do obsługi obciążeń na liście prac związanych z migracją oraz obsługi dostępu do zasobów hostowanych lokalnie.
 

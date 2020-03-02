@@ -1,18 +1,18 @@
 ---
 title: Jaką rolę odgrywa replikacja i synchronizacja w procesie migracji?
-description: Proces migracji do chmury, który koncentruje się na zadaniach migrowania obciążeń do chmury.
+description: Proces migracji w chmurze, który koncentruje się na zadaniach migrowania obciążeń do chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6b37cea7b912cb4d65f9b1b119787e96b2f698d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5eaea53e65951cb5fee3d36b2eba472e1048feb2
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802025"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222264"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +24,7 @@ Replikacja jest głównym mechanizmem migracji. Jest to proces kopiowania wersji
 
 ## <a name="required-prerequisites-to-replication"></a>Wymagania wstępne dotyczące replikacji
 
-Przed replikacją należy przygotować *nową platformę* i sprzęt do odbierania kopii binarnych. W artykule dotyczącym [wymagań wstępnych](../prerequisites/index.md) przedstawiono minimalne wymagania środowiska, które ułatwiają tworzenie bezpiecznej, niezawodnej i wydajnej platformy do odbierania replik binarnych.
+Przed replikacją należy przygotować *nową platformę* i sprzęt do odbierania kopii binarnych. W artykule dotyczącym [wymagań wstępnych](../prerequisites/index.md) przedstawiono minimalne wymagania dotyczące środowiska, które ułatwiają tworzenie bezpiecznej, niezawodnej i wysoce wydajnej platformy do odbierania replik binarnych.
 
 *Źródłowe pliki binarne* muszą być również przygotowane do replikacji i synchronizacji. W artykułach dotyczących oceny, architektury i korygowania opisano działania niezbędne do zapewnienia gotowości źródłowych danych binarnych do replikacji i synchronizacji.
 

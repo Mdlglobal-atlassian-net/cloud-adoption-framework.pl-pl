@@ -3,16 +3,16 @@ title: Rozpocznij podróż do migracji w chmurze na platformie Azure
 description: Uzyskaj kompleksowe wskazówki dotyczące przenoszenia starszych obciążeń aplikacji do chmury przy użyciu innowacyjnych technologii opartych na chmurze.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: eeb7cc566a373296fdf290dced4c82e038c11d17
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170192"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223982"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Rozpocznij podróż do migracji w chmurze na platformie Azure
 
@@ -22,7 +22,7 @@ Użyj platformy wdrażania Microsoft Cloud dla platformy Azure, aby rozpocząć 
 
 Platforma wdrażania w chmurze pomaga klientom podejmować uproszczone podróże w chmurze. Ta struktura zawiera szczegółowe informacje dotyczące kompleksowej podróży w chmurze, rozpoczynając od docelowych rezultatów firmy, a następnie dopasowując gotowość do chmury i oceny z jasno określonymi celami biznesowymi. Te wyniki są osiągane przez zdefiniowaną ścieżkę do wdrożenia chmury. Po wdrożeniu opartym na migracji zdefiniowana ścieżka koncentruje się głównie na migrowaniu obciążeń lokalnych do chmury. Czasami ta podróż obejmuje modernizację obciążeń, aby zwiększyć zwrot z inwestycji w miarę wysiłków związanych z migracją.
 
-Ta platforma została zaprojektowana głównie dla architektów chmury i zespołów strategii chmurowej, które prowadzą do rozwoju chmury. Jednak wiele tematów w tej strukturze dotyczy innych ról w firmie i. Architektzy chmury często sprawują rolę ułatwiającą zaangażowanie każdej z odpowiednich ról. To podsumowanie dotyczące programu Executive zostało zaprojektowane z założeniami, aby przygotować różne role przed ułatwieniem konwersacji.
+Ta platforma została zaprojektowana głównie dla architektów chmury i zespołów strategii chmurowej, które prowadzą do rozwoju chmury. Jednak wiele tematów w tej strukturze ma zastosowanie do innych ról w firmie i. Architektzy chmury często sprawują rolę ułatwiającą zaangażowanie każdej z odpowiednich ról. To podsumowanie dotyczące programu Executive zostało zaprojektowane z założeniami, aby przygotować różne role przed ułatwieniem konwersacji.
 
 > [!NOTE]
 > Te wskazówki są obecnie publiczną wersją zapoznawczą. W ramach tej wersji zapoznawczej są dokładnie przetestowane informacje o terminologii, podejściach i wskazówkach. W związku z tym spis treści i wskazówki mogą ulec zmianie nieco w czasie.
@@ -55,7 +55,7 @@ Takie podejście obejmuje dwie metodologie i obszary ostrości: strategia chmury
 
 ## <a name="cloud-implementation"></a>Implementacja w chmurze
 
-Implementacja w chmurze to proces iteracyjny służący do migrowania i modernizacji cyfrowego podpisywania w celu wyrównania z dokierowanymi wynikami biznesowymi i formantami zarządzania zmianami. W trakcie każdej iteracji obciążenia są migrowane lub zmodernizowane w sposób zgodny z strategią i planem. Decyzje dotyczące IaaS, PaaS lub hybrydowych są tworzone w fazie oceny w celu zoptymalizowania kontroli i wykonania. Te decyzje będą korzystać z narzędzi używanych podczas fazy migracji. Ten model może być używany z minimalnym strategią i planowaniem. Jednak, aby zapewnić największą wartość zwracaną przez firmę, zdecydowanie zaleca się, aby zarówno, jak i w firmie były wyrównane do jasnej strategii i zaplanować działania implementacji.
+Implementacja w chmurze to proces iteracyjny służący do migrowania i modernizacji cyfrowej, wyrównany z dokierowanymi wynikami biznesowymi i kontrolami zarządzania zmianami. W trakcie każdej iteracji obciążenia są migrowane lub zmodernizowane w sposób zgodny z strategią i planem. Decyzje dotyczące IaaS, PaaS lub hybrydowych są tworzone w fazie oceny [metodologii migracji](../migrate/index.md) w celu zoptymalizowania kontroli i wykonywania. Te decyzje będą korzystać z narzędzi używanych podczas każdej iteracji fazy migracji w ramach tej samej metodologii. Ten model może być używany z minimalnym strategią i planowaniem. Jednak w celu zapewnienia, że największe działania biznesowe, zarówno, jak i w firmie, powinny wyrównać wyraźną strategię i zaplanować czynności wdrożeniowe.
 
 ![Metodologia implementacji chmury platformy wdrażania w chmurze](../_images/operational-transformation-migrate.png)
 
@@ -124,7 +124,7 @@ Technologie migrowane do chmury ciągle rozszerzają się w miarę jak dostawcy 
 
 - Windows i SQL Server
 - Bazy danych systemu Linux i typu Open Source (OSS)
-- Destructure/NoSQL bazy danych
+- Bazy danych bez struktury i NoSQL
 - Rozwiązania SAP na platformie Azure
 - Analiza (magazyn danych, Data Lake)
 
