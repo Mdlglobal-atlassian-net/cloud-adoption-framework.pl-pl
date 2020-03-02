@@ -1,18 +1,18 @@
 ---
-title: 'Innowacje w chmurze: Tworzenie wynalazków cyfrowych na platformie Azure'
-description: Tworzenie wynalazków cyfrowych na platformie Azure
+title: Tworzenie wynalazków cyfrowych na potrzeby innowacji
+description: Skorzystaj z przewodnika Cloud Adoption Framework dla platformy Azure, aby rozwijać metodologię innowacji i tworzyć łańcuch narzędzi na potrzeby wynalazków cyfrowych.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 19a58470b3c918532921b68be5904ff8b1f1f825
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d3beb01940da6b391bca2751866e5f484ce2f713
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808638"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170736"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>Tworzenie wynalazków cyfrowych na platformie Azure
 

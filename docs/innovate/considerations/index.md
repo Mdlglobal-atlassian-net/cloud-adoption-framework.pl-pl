@@ -1,18 +1,18 @@
 ---
 title: Innowacje w gospodarce cyfrowej
-description: Zapoznaj się z teorią przewodnią innowacji w chmurze w przewodniku Cloud Adoption Framework.
+description: Skoncentruj się na zrozumieniu potrzeb klientów i szybkim tworzeniu innowacji w chmurze, które kształtują sposób, w jaki klienci wchodzą w interakcje z Twoimi produktami.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 87d47fa7e6f28f41c7edc98525cadabe65b99d48
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b0d08b4f5ac822acd1d2a2574a9bd3d240175ca1
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808468"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171178"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Innowacje w gospodarce cyfrowej
 

@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik po innowacjach na platformie Azure: Przed rozpoczęciem'
-description: Dowiedz się, jak tworzyć nowe, innowacyjne rozwiązania dla klientów na platformie Azure.
+title: 'Innowacje na platformie Azure: Przed rozpoczęciem'
+description: Przygotuj swoje środowisko na innowacje w chmurze przy użyciu funkcji platformy Azure, które ułatwiają angażowanie klientów, tworzenie rozwiązań i przyspieszanie wdrażania.
 author: matticusau
 ms.author: mlavery
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7929224bb8b0a3c0a9bec83ef5a08b492cb2d5f4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 262fe97adea985beb2f5f8331ba5a68572900d58
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808281"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171008"
 ---
 ::: zone target="docs"
 

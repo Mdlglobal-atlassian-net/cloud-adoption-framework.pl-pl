@@ -1,6 +1,6 @@
 ---
-title: Innowacje w chmurze w przewodniku Cloud Adoption Framework
-description: Dowiedz się więcej na temat innowacji w chmurze w przewodniku Cloud Adoption Framework.
+title: Innowacje związane z wdrażaniem chmury
+description: Dowiedz się, w jaki sposób innowacje związane z wdrażaniem chmury mogą zapewnić wartość biznesową, otwierając dostęp do nowych umiejętności technicznych i rozbudowanych możliwości biznesowych.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/14/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: c4acca0cc71a149f6cb7ab5ecd058a833967c7e1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4b596fc83cf3d0b9a951287e052215622f6ee6b2
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808383"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171127"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innowacje w chmurze w przewodniku Cloud Adoption Framework
 
