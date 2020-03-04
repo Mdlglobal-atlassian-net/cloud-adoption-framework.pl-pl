@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 67e1b0fefeeab9e95fb001b162efaa5c0f247c59
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 5eb0ab5c264e8abf842f37e03b5c61b43ade9936
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708006"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222790"
 ---
 # <a name="identity-decision-guide"></a>Przewodnik po decyzjach związanych z tożsamością
 
@@ -106,7 +106,7 @@ Aby uzyskać więcej informacji na temat usługi zarządzania tożsamościami na
 
 ## <a name="next-steps"></a>Następne kroki
 
-Tożsamość to tylko jeden z podstawowych składników infrastruktury wymagających podejmowania decyzji o architekturze w procesie wdrażania chmury. Przejdź do [omówienia przewodników dotyczących podejmowania decyzji](../index.md), aby poznać alternatywne wzorce lub modele używane podczas podejmowania decyzji projektowych dotyczących innych typów infrastruktury.
+Tożsamość to tylko jeden z podstawowych składników infrastruktury wymagających podejmowania decyzji o architekturze w procesie wdrażania chmury. Aby poznać alternatywne wzorce lub modele używane podczas podejmowania decyzji projektowych dotyczących innych typów infrastruktury, zobacz [Omówienie przewodników dotyczących podejmowania decyzji](../index.md).
 
 > [!div class="nextstepaction"]
 > [Przewodniki podejmowania decyzji dotyczących architektury](../index.md)

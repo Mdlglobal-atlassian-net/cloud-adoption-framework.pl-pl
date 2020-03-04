@@ -42,9 +42,11 @@ items:
             href: strategy/financial-models.md
           - name: Objaśnienie księgowości w chmurze
             href: strategy/cloud-accounting.md
+          - name: Równoważenie portfela
+            href: strategy/balance-the-portfolio.md
       - name: Pierwszy projekt wdrażania chmury
         href: strategy/first-adoption-project.md
-      - name: Sugerowane umiejętności
+      - name: Umiejętności związane ze strategią
         href: strategy/suggested-skills.md
   - name: Planowanie
     items:
@@ -84,10 +86,16 @@ items:
             href: plan/iteration-paths.md
           - name: Szacowanie osi czasu
             href: plan/timelines.md
-      - name: Sugerowane umiejętności
-        href: plan/suggested-skills.md
-      - name: Dostosowywanie pod kątem chmury
-        href: plan/adapt-roles-skills-processes.md
+      - name: Plan gotowości w zakresie umiejętności
+        items:
+          - name: Tworzenie planu gotowości
+            href: plan/adapt-roles-skills-processes.md
+          - name: Mapowanie ról i umiejętności
+            href: plan/suggested-skills.md
+      - name: Najlepsze rozwiązania
+        items:
+          - name: Ocena majątku cyfrowego na platformie Azure
+            href: plan/contoso-migration-assessment.md
   - name: Gotowy
     items:
       - name: Omówienie
@@ -108,32 +116,46 @@ items:
             href: ready/azure-setup-guide/monitoring-reporting.md
           - name: Bądź na bieżąco z platformą Azure
             href: ready/azure-setup-guide/staying-current.md
-          - name: Wdrażanie strefy docelowej migracji
-            href: ready/azure-setup-guide/migration-landing-zone.md
-      - name: Zagadnienia dotyczące strefy docelowej
+      - name: Pierwsza strefa docelowa
+        items:
+          - name: Co to jest strefa docelowa
+            href: ready/landing-zone/index.md
+          - name: Wybieranie pierwszej strefy docelowej
+            href: ready/landing-zone/first-landing-zone.md
+          - name: Strategia strefy docelowej migracji
+            href: ready/landing-zone/migrate-landing-zone.md
+          - name: Strefy docelowe narzędzia Terraform
+            href: ready/landing-zone/terraform-landing-zone.md
+      - name: Rozszerzanie strefy docelowej
         items:
           - name: Omówienie
             href: ready/considerations/index.md
-          - name: Podstawowe pojęcia dotyczące platformy Azure
-            href: ready/considerations/fundamental-concepts.md
-          - name: Przegląd opcji obliczeniowych
-            href: ready/considerations/compute-options.md
-          - name: Przegląd opcji sieciowych
-            href: ready/considerations/networking-options.md
-          - name: Przegląd opcji magazynu
-            href: ready/considerations/storage-options.md
-          - name: Przegląd opcji danych
-            href: ready/considerations/data-options.md
-          - name: Kontrola dostępu oparta na rolach
-            href: ready/considerations/roles.md
-          - name: Uzyskiwanie zgodności w chmurze hybrydowej
-            href: ready/considerations/hybrid-consistency.md
-      - name: Zakres rozszerzony
-        items:
-          - name: Strefy docelowe narzędzia Terraform
-            href: ready/expanded-scope/terraform-landing-zone.md
-          - name: Zabezpieczenia granicy sieci
-            href: reference/networking-vdc.md
+          - name: Podstawowe zagadnienia dotyczące strefy docelowej
+            items:
+              - name: Podstawowe pojęcia dotyczące platformy Azure
+                href: ready/considerations/fundamental-concepts.md
+              - name: Przegląd opcji obliczeniowych
+                href: ready/considerations/compute-options.md
+              - name: Przegląd opcji sieciowych
+                href: ready/considerations/networking-options.md
+              - name: Przegląd opcji magazynu
+                href: ready/considerations/storage-options.md
+              - name: Przegląd opcji danych
+                href: ready/considerations/data-options.md
+              - name: Kontrola dostępu oparta na rolach
+                href: ready/considerations/roles.md
+              - name: Uzyskiwanie zgodności w chmurze hybrydowej
+                href: ready/considerations/hybrid-consistency.md
+          - name: Poprawianie zabezpieczeń strefy docelowej (dane poufne)
+            items:
+              - name: Implementowanie bezpiecznej hybrydowej architektury sieci na platformie Azure
+                href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Najlepsze rozwiązania dotyczące zabezpieczeń kontroli dostępu i zarządzania tożsamościami na platformie Azure
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Najlepsze rozwiązania z zakresu zabezpieczeń sieci platformy Azure
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Najlepsze rozwiązania dotyczące bezpieczeństwa działania na platformie Azure
+                href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
       - name: Najlepsze rozwiązania
         items:
           - name: Omówienie
@@ -146,6 +168,8 @@ items:
                 href: ready/azure-best-practices/naming-and-tagging.md
           - name: Networking
             items:
+              - name: Zabezpieczenia granicy sieci
+                href: reference/networking-vdc.md
               - name: Planowanie sieci wirtualnych
                 href: 'https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Najlepsze rozwiązania z zakresu zabezpieczeń sieci
@@ -188,7 +212,7 @@ items:
                 href: 'https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Monitorowanie użycia i wydatków
                 href: 'https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-      - name: Sugerowane umiejętności
+      - name: Umiejętności odpowiednie dla gotowości i stref docelowych
         href: ready/suggested-skills.md
   - name: Wdrażanie
     items:
@@ -200,90 +224,40 @@ items:
             items:
               - name: Przed rozpoczęciem
                 href: migrate/azure-migration-guide/index.md
-              - name: Wymagania wstępne dotyczące migracji na platformę Azure
-                href: migrate/azure-migration-guide/prerequisites.md
-              - name: Szacowanie majątku cyfrowego
+              - name: Ocena każdego obciążenia i uściślanie planów
                 href: migrate/azure-migration-guide/assess.md
               - name: Migrowanie zasobów obciążeń
                 href: migrate/azure-migration-guide/migrate.md
+              - name: 'Testowanie, optymalizowanie i podwyższanie poziomu'
+                href: migrate/azure-migration-guide/optimize-and-transform.md
               - name: Mechanizmy kontroli kosztów skoncentrowane na migracji
                 href: migrate/azure-migration-guide/manage-costs.md
-              - name: Optymalizowanie i przekształcanie
-                href: migrate/azure-migration-guide/optimize-and-transform.md
-              - name: Zabezpieczanie i zarządzanie
-                href: migrate/azure-migration-guide/secure-and-manage.md
               - name: Uzyskiwanie pomocy
                 href: migrate/azure-migration-guide/assistance.md
-          - name: Zakres rozszerzony
-            items:
-              - name: Lista kontrolna dotycząca zakresu rozszerzonego
-                href: migrate/expanded-scope/index.md
-              - name: Równoważenie portfela
-                href: migrate/expanded-scope/balance-the-portfolio.md
-              - name: Gotowość w zakresie umiejętności
-                href: migrate/expanded-scope/suggested-skills.md
-              - name: Migracja hostów VMware
-                href: migrate/expanded-scope/vmware-host.md
-              - name: Migracja programu SQL Server
-                href: migrate/expanded-scope/sql-migration.md
-              - name: Wiele centrów danych
-                href: migrate/expanded-scope/multiple-datacenters.md
-              - name: Wymagania dotyczące danych przekraczają pojemność sieci
-                href: migrate/expanded-scope/network-capacity-exceeded.md
-              - name: Zarządzanie i zgodność
-                href: migrate/expanded-scope/governance-or-compliance.md
-          - name: Najlepsze rozwiązania
+          - name: Scenariusze migracji
             items:
               - name: Omówienie
-                href: migrate/azure-best-practices/index.md
-              - name: Ocenianie obciążeń
+                href: migrate/azure-best-practices/contoso-migration-overview.md
+              - name: Obciążenia systemu Windows Server
                 items:
-                  - name: Ocena obciążeń lokalnych
-                    href: migrate/azure-best-practices/contoso-migration-assessment.md
-              - name: Migrowanie obciążeń
+                  - name: Ponowne hostowanie aplikacji systemu Windows na maszynach wirtualnych platformy Azure
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
+                  - name: Zmienianie architektury aplikacji systemu Windows przy użyciu kontenerów i usługi Azure SQL
+                    href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
+              - name: Obciążenia systemu Linux
                 items:
-                  - name: Konfigurowanie sieci na potrzeby migrowanych obciążeń
-                    href: migrate/azure-best-practices/migrate-best-practices-networking.md
-                  - name: Migracja aplikacji
-                    items:
-                      - name: Omówienie
-                        href: migrate/azure-best-practices/contoso-migration-overview.md
-                      - name: Wdrażanie infrastruktury migracji
-                        href: migrate/azure-best-practices/contoso-migration-infrastructure.md
-                      - name: Obciążenia systemu Windows Server
-                        items:
-                          - name: Ponowne hostowanie aplikacji systemu Windows na maszynach wirtualnych platformy Azure
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
-                          - name: Zmienianie architektury aplikacji systemu Windows przy użyciu kontenerów i usługi Azure SQL
-                            href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
-                      - name: Obciążenia systemu Linux
-                        items:
-                          - name: Ponowne hostowanie aplikacji systemu Linux na maszynach wirtualnych platformy Azure
-                            href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
-                          - name: Ponowne hostowanie aplikacji systemu Linux na maszynach wirtualnych platformy Azure i w usłudze Azure Database for MySQL
-                            href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
-                      - name: Obciążenia programu SQL Server
-                        items:
-                          - name: Ponowne hostowanie aplikacji na maszynach wirtualnych platformy Azure i w wystąpieniu zarządzanym usługi Azure SQL Database
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
-                          - name: Ponowne hostowanie aplikacji na maszynach wirtualnych platformy Azure i w zawsze włączonych grupach dostępności programu SQL Server
-                            href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
-                      - name: Aplikacje ASP.NET/PHP/Java
-                        items:
-                          - name: Refaktoryzowanie aplikacji w usługach Azure App Service i Azure SQL Database
-                            href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                          - name: Refaktoryzowanie aplikacji systemu Linux w usługach App Service i Azure Database for MySQL
-                            href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
-                          - name: Ponowne kompilowanie aplikacji na platformie Azure
-                            href: migrate/azure-best-practices/contoso-migration-rebuild.md
-                          - name: Migrowanie serwera TFS do usługi Azure DevOps Services
-                            href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
-                      - name: Skalowanie migracji
-                        href: migrate/azure-best-practices/contoso-migration-scale.md
-              - name: Migrowanie hostów VMware
+                  - name: Ponowne hostowanie aplikacji systemu Linux na maszynach wirtualnych platformy Azure
+                    href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
+                  - name: Ponowne hostowanie aplikacji systemu Linux na maszynach wirtualnych platformy Azure i w usłudze Azure Database for MySQL
+                    href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
+                  - name: Refaktoryzowanie aplikacji systemu Linux w usługach App Service i Azure Database for MySQL
+                    href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
+              - name: Hosty VMware
                 items:
                   - name: Omówienie
                     href: migrate/azure-best-practices/vmware-host.md
+                  - name: Zagadnienia dotyczące migrowania hostów VMWare
+                    href: migrate/expanded-scope/vmware-host.md
                   - name: Wymagania wstępne
                     items:
                       - name: Zabezpieczanie swojego środowiska
@@ -336,7 +310,35 @@ items:
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Konfigurowanie chmury prywatnej jako lokalizacji odzyskiwania po awarii za pomocą rozwiązania VMware SRM
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Migrowanie platform danych
+              - name: Aplikacje ASP.NET
+                items:
+                  - name: Refaktoryzowanie aplikacji w usługach Azure App Service i Azure SQL Database
+                    href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
+                  - name: Ponowne kompilowanie aplikacji na platformie Azure
+                    href: migrate/azure-best-practices/contoso-migration-rebuild.md
+                  - name: Migrowanie serwera TFS do usługi Azure DevOps Services
+                    href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
+              - name: Aplikacje Java
+                items:
+                  - name: Opcje migracji
+                    href: 'https://docs.microsoft.com/azure/java/migration-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Przechodzenie z platformy Spring do usługi Azure App Service
+                    href: 'https://docs.microsoft.com/azure/java/migrate-java-se-to-java-se-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Przechodzenie z oprogramowania Tomcat do usługi Azure App Service
+                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-tomcat-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Przechodzenie z oprogramowania Tomcat do kontenerów w usłudze AKS
+                    href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-containers-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Przechodzenie z oprogramowania WebLogic do usługi Azure Virtual Machines
+                    href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-virtual-machines?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: SQL Server
+                items:
+                  - name: Zagadnienia dotyczące migrowania programu SQL Server
+                    href: migrate/expanded-scope/sql-migration.md
+                  - name: Ponowne hostowanie aplikacji na maszynach wirtualnych platformy Azure i w wystąpieniu zarządzanym usługi Azure SQL Database
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
+                  - name: Ponowne hostowanie aplikacji na maszynach wirtualnych platformy Azure i w zawsze włączonych grupach dostępności programu SQL Server
+                    href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
+              - name: Platformy danych
                 items:
                   - name: Omówienie
                     href: migrate/azure-best-practices/sql-migration.md
@@ -420,7 +422,7 @@ items:
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Migrowanie bazy danych Oracle do usługi Azure DB dla PostgreSQL w trybie online
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Migrowanie komputerów mainframe
+              - name: Komputery mainframe
                 items:
                   - name: Omówienie
                     href: infrastructure/mainframe-migration/index.md
@@ -430,45 +432,49 @@ items:
                     href: infrastructure/mainframe-migration/migration-strategies.md
                   - name: Migracja aplikacji komputerów mainframe
                     href: infrastructure/mainframe-migration/application-strategies.md
-              - name: Optymalizowanie obciążeń
-                items:
-                  - name: Określanie kosztów i rozmiarów obciążeń
-                    href: migrate/azure-best-practices/migrate-best-practices-costs.md
-              - name: Zabezpieczanie obciążeń oraz zarządzanie nimi
+              - name: Migrowanie zabezpieczonych obciążeń
                 items:
                   - name: Zabezpieczanie obciążeń po migracji i zarządzanie nimi
                     href: migrate/azure-best-practices/migrate-best-practices-security-management.md
-                  - name: Dodatkowe najlepsze rozwiązania
-                    items:
-                      - name: Najlepsze rozwiązania dotyczące zabezpieczeń bazy danych na platformie Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Najlepsze rozwiązania z zakresu zabezpieczeń i szyfrowania danych platformy Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Najlepsze rozwiązania dotyczące zabezpieczeń kontroli dostępu i zarządzania tożsamościami na platformie Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Najlepsze rozwiązania z zakresu zabezpieczeń sieci platformy Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Najlepsze rozwiązania dotyczące bezpieczeństwa działania na platformie Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Najlepsze rozwiązania dotyczące usługi Azure PaaS
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Najlepsze rozwiązania dotyczące zabezpieczeń usługi Azure Service Fabric
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/service-fabric-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Najlepsze rozwiązania dotyczące zabezpieczeń maszyny wirtualnej platformy Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Implementowanie bezpiecznej hybrydowej architektury sieci na platformie Azure
-                        href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Najlepsze rozwiązania z zakresu zabezpieczeń IoT
-                        href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Zabezpieczanie baz danych PaaS na platformie Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Zabezpieczanie internetowych i mobilnych aplikacji PaaS przy użyciu usługi Azure App Service
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Zabezpieczanie internetowych i mobilnych aplikacji PaaS przy użyciu usługi Azure Storage
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Najlepsze rozwiązania dotyczące zabezpieczeń dla obciążeń IaaS na platformie Azure
-                        href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-          - name: Zagadnienia dotyczące migracji
+                  - name: Najlepsze rozwiązania dotyczące zabezpieczeń bazy danych na platformie Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Najlepsze rozwiązania z zakresu zabezpieczeń i szyfrowania danych platformy Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Najlepsze rozwiązania dotyczące usługi Azure PaaS
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-deployments?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Najlepsze rozwiązania dotyczące zabezpieczeń usługi Azure Service Fabric
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/service-fabric-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Najlepsze rozwiązania dotyczące zabezpieczeń maszyny wirtualnej platformy Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Najlepsze rozwiązania z zakresu zabezpieczeń IoT
+                    href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Zabezpieczanie baz danych PaaS na platformie Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Zabezpieczanie internetowych i mobilnych aplikacji PaaS przy użyciu usługi Azure App Service
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-app-services?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Zabezpieczanie internetowych i mobilnych aplikacji PaaS przy użyciu usługi Azure Storage
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-storage?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Najlepsze rozwiązania dotyczące zabezpieczeń dla obciążeń IaaS na platformie Azure
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: Najlepsze rozwiązania
+            items:
+              - name: Omówienie
+                href: migrate/azure-best-practices/index.md
+              - name: Wiele centrów danych
+                href: migrate/expanded-scope/multiple-datacenters.md
+              - name: Wymagania dotyczące danych przekraczają pojemność sieci
+                href: migrate/expanded-scope/network-capacity-exceeded.md
+              - name: Konfigurowanie sieci na potrzeby migrowanych obciążeń
+                href: migrate/azure-best-practices/migrate-best-practices-networking.md
+              - name: Wdrażanie infrastruktury migracji
+                href: migrate/azure-best-practices/contoso-migration-infrastructure.md
+              - name: Optymalizacja kosztów migrowanych obciążeń
+                href: migrate/azure-best-practices/migrate-best-practices-costs.md
+              - name: Skalowanie migracji
+                href: migrate/azure-best-practices/contoso-migration-scale.md
+              - name: Zarządzanie i zgodność
+                href: migrate/expanded-scope/governance-or-compliance.md
+          - name: Ulepszenia procesu
             items:
               - name: Omówienie
                 href: migrate/migration-considerations/index.md
@@ -486,9 +492,9 @@ items:
                     href: migrate/migration-considerations/prerequisites/technical-complexity.md
                   - name: Przegląd listy prac związanych z migracją
                     href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
-              - name: Ocena zasobów i obciążeń
+              - name: Procesy oceny
                 items:
-                  - name: Ocena zasobów przed migracją
+                  - name: Walidacja założeń oceny przed migracją — dodawanie uściślania języka R
                     href: migrate/migration-considerations/assess/index.md
                   - name: Zachowywanie odpowiedniej proporcji priorytetów
                     href: migrate/migration-considerations/assess/business-priorities.md
@@ -496,7 +502,7 @@ items:
                     href: migrate/migration-considerations/assess/evaluate.md
                   - name: Tworzenie architektury obciążeń
                     href: migrate/migration-considerations/assess/architect.md
-                  - name: Szacowanie kosztów chmury
+                  - name: Aktualizowanie i uściślanie początkowych szacunków w chmurze
                     href: migrate/migration-considerations/assess/estimate.md
                   - name: Informacje o opcjach partnerstwa
                     href: migrate/migration-considerations/assess/partnership-options.md
@@ -504,7 +510,7 @@ items:
                     href: migrate/migration-considerations/assess/release-iteration-backlog.md
                   - name: Zatwierdzanie zmian architektury
                     href: migrate/migration-considerations/assess/approve.md
-              - name: Migrowanie pojedynczych zasobów
+              - name: Procesy migracji
                 items:
                   - name: Omówienie
                     href: migrate/migration-considerations/migrate/index.md
@@ -518,7 +524,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: Przygotowywanie obciążeń
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: Optymalizowanie i podwyższanie poziomu obciążeń
+              - name: 'Testowanie, optymalizacja i podwyższanie poziomu procesów'
                 items:
                   - name: Omówienie
                     href: migrate/migration-considerations/optimize/index.md
@@ -536,10 +542,8 @@ items:
                     href: migrate/migration-considerations/optimize/decommission.md
                   - name: Przeprowadzanie retrospektyw
                     href: migrate/migration-considerations/optimize/retrospective.md
-              - name: Zabezpieczenia obciążeń w środowisku produkcyjnym i zarządzanie nimi
-                items:
-                  - name: Omówienie
-                    href: migrate/migration-considerations/secure-and-manage/index.md
+          - name: Umiejętności związane z migracją
+            href: migrate/expanded-scope/suggested-skills.md
       - name: Innowacje
         items:
           - name: Omówienie
@@ -560,39 +564,7 @@ items:
                 href: innovate/innovation-guide/devices.md
               - name: Przewidywanie i wpływ
                 href: innovate/innovation-guide/predict.md
-          - name: Zagadnienia do rozważenia
-            items:
-              - name: Omówienie
-                href: innovate/considerations/index.md
-              - name: Wartość biznesowa — konsensus
-                href: innovate/business-value.md
-              - name: Wdrażanie u klientów
-                items:
-                  - name: Cykle wymiany opinii
-                    href: innovate/considerations/adoption.md
-                  - name: Tworzenie z empatią wobec klientów
-                    href: innovate/considerations/build.md
-                  - name: Mierzenie wpływu na klientów
-                    href: innovate/considerations/measure.md
-                  - name: Uczenie się wraz z klientami
-                    href: innovate/considerations/learn.md
-                  - name: Wyzwania i blokady klientów
-                    href: innovate/considerations/challenges.md
-              - name: Wynalazki cyfrowe
-                items:
-                  - name: Tworzenie wynalazków cyfrowych
-                    href: innovate/considerations/invention.md
-                  - name: Demokratyzowanie danych
-                    href: innovate/considerations/data.md
-                  - name: Angażowanie przez aplikacje
-                    href: innovate/considerations/apps.md
-                  - name: Zwiększanie akceptacji
-                    href: innovate/considerations/ci-cd.md
-                  - name: Interakcja z urządzeniami
-                    href: innovate/considerations/devices.md
-                  - name: Przewidywanie i wpływ
-                    href: innovate/considerations/predict.md
-          - name: Najlepsze rozwiązania w zakresie innowacji
+          - name: Najlepsze rozwiązania
             items:
               - name: Omówienie i łańcuch narzędzi platformy Azure
                 href: innovate/best-practices/index.md
@@ -860,6 +832,38 @@ items:
                         href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Operacjonalizowanie usług uczenia maszynowego w usłudze Azure HDInsight
                         href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: Ulepszenia procesu
+            items:
+              - name: Omówienie
+                href: innovate/considerations/index.md
+              - name: Wartość biznesowa — konsensus
+                href: innovate/business-value.md
+              - name: Wdrażanie u klientów
+                items:
+                  - name: Cykle wymiany opinii
+                    href: innovate/considerations/adoption.md
+                  - name: Tworzenie z empatią wobec klientów
+                    href: innovate/considerations/build.md
+                  - name: Mierzenie wpływu na klientów
+                    href: innovate/considerations/measure.md
+                  - name: Uczenie się wraz z klientami
+                    href: innovate/considerations/learn.md
+                  - name: Wyzwania i blokady klientów
+                    href: innovate/considerations/challenges.md
+              - name: Wynalazki cyfrowe
+                items:
+                  - name: Tworzenie wynalazków cyfrowych
+                    href: innovate/considerations/invention.md
+                  - name: Demokratyzowanie danych
+                    href: innovate/considerations/data.md
+                  - name: Angażowanie przez aplikacje
+                    href: innovate/considerations/apps.md
+                  - name: Zwiększanie akceptacji
+                    href: innovate/considerations/ci-cd.md
+                  - name: Interakcja z urządzeniami
+                    href: innovate/considerations/devices.md
+                  - name: Przewidywanie i wpływ
+                    href: innovate/considerations/predict.md
   - name: Ład
     items:
       - name: Omówienie
@@ -1186,7 +1190,7 @@ items:
         href: organize/cost-conscious-organization.md
       - name: Antywzorce — lenna i silosy IT
         href: organize/fiefdoms-silos.md
-  - name: Dokumentacja
+  - name: Zasoby
     items:
       - name: Harmonogram działania dotyczący struktury wdrażania chmury
         href: reference/index.md
@@ -1244,5 +1248,5 @@ items:
         href: reference/vdc.md
       - name: Jak działa platforma Azure?
         href: getting-started/what-is-azure.md
-  - name: Centrum architektury platformy Azure
-    href: 'https://docs.microsoft.com/azure/architecture'
+      - name: Centrum architektury platformy Azure
+        href: 'https://docs.microsoft.com/azure/architecture'

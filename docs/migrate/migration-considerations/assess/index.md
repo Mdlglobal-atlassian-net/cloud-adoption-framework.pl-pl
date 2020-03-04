@@ -1,20 +1,20 @@
 ---
-title: Ocena zasobów przed migracją
-description: Ocena zasobów przed migracją
+title: Walidacja założeń oceny przed migracją
+description: Walidacja założeń oceny przed migracją
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 76862bfbc4a88d34edb3dddb6281b5c435e6be73
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802501"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222281"
 ---
-# <a name="assess-assets-prior-to-migration"></a>Ocena zasobów przed migracją
+# <a name="validate-assessment-assumptions-before-migration"></a>Walidacja założeń oceny przed migracją
 
 Wiele z istniejących obciążeń idealnie nadaje się do migracji do chmury, ale nie każdy zasób jest zgodny z platformami chmury i nie dla wszystkich obciążeń jest korzystny hosting w chmurze. [Planowanie infrastruktury cyfrowej](../../../digital-estate/index.md) umożliwia utworzenie ogólnej [listy prac związanych z migracją](../prerequisites/technical-complexity.md#migration-backlog-aligning-business-priorities-and-timing) dla potencjalnych obciążeń do migracji. Jednak jest to planowanie wysokiego poziomu. Opiera się ono na założeniach przyjmowanych przez zespół ds. strategii w chmurze bez dogłębnej analizy zagadnień technicznych.
 
@@ -44,11 +44,14 @@ Oprócz odpowiedzialności wysokiego poziomu istnieją również akcje, za któr
 - **Priorytet biznesowy** Zespół rozumie cel migracji tego obciążenia, w tym zamierzony wpływ na działalność.
   - Członek zespołu ds. wdrażania w chmurze powinien ponosić ostateczną odpowiedzialność za to działanie pod kierunkiem zespołu ds. wdrażania w chmurze.
 - **Uzgodnienie stanowiska osób biorących udział w projekcie** Zespół uzgadnia oczekiwania i priorytety z wewnętrznymi uczestnikami projektu, identyfikując kryteria sukcesu migracji. Jakie są kryteria sukcesu po migracji?
+- **Uściślona racjonalizacja.** Oceń początkowe założenia dotyczące racjonalizacji. Czy w celu przeprowadzenia migracji danego obciążenia ma zostać zastosowane inne [podejście do racjonalizacji](../../../digital-estate/rationalize.md)?
+- **Decyzje dotyczące modernizacji.** Bez względu na decyzję o racjonalizacji, czy różne zasoby w obciążeniu mają być modernizowane, aby korzystać z rozwiązań PaaS?
 - **Koszt** Koszt docelowej architektury został oszacowany i skorygowano całkowity budżet.
 - **Obsługa techniczna migracji** Zespół zdecydował, w jaki sposób zostaną wykonane prace techniczne związane z migracją, w tym podjął decyzje dotyczące pomocy technicznej partnera lub firmy Microsoft.
 - **Ocena** Obciążenie jest oceniane pod kątem zgodności i zależności.
   - To działanie powinno zostać przypisane specjaliście w tej dziedzinie, który zna architekturę i operacje dotyczące kandydującego obciążenia.
 - **Tworzenie architektury** Zespół uzgodnił ostateczny stan architektury migrowanego obciążenia.
+- **Narzędzia migracji.** W zależności od podejścia do modernizacji i architektury w celu automatyzowania migracji można użyć różnych narzędzi do migracji. Czy, na podstawie proponowanej architektury, ta migracja będzie korzystać z najlepszych [narzędzi do migracji](../../../decision-guides/migrate-decision-guide/index.md)?
 - **Uzgodnienie listy prac** Zespół ds. wdrażania w chmurze sprawdza wymagania i zatwierdza migrację kandydującego obciążenia. Po zatwierdzenia lista prac wydania i lista prac iteracji są odpowiednio aktualizowane.
 - **Struktura podziału pracy lub harmonogram prac** Zespół ustala harmonogram kamieni milowych, identyfikując cele podczas planowania, wdrażania i przeglądu procesów.
 - **Ostateczne zatwierdzenie** Wszystkie wymagane osoby zatwierdzające sprawdziły plan i zatwierdziły podejście dotyczące migracji zasobu.

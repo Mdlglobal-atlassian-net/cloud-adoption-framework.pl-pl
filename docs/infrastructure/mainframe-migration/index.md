@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 04058077ed9fc739a063e75d0da4effb4c784436
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: b38408033231a4ac1d8debe889117c2f5220c676
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171382"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223667"
 ---
+<!-- cspell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
+
 # <a name="mainframe-migration-overview"></a>Omówienie migracji komputera mainframe
 
 Wiele firm i organizacji czerpie korzyści wynikające z przeniesienia niektórych lub wszystkich swoich obciążeń, aplikacji i baz danych do chmury. Platforma Azure udostępnia funkcje typu mainframe w skali chmury bez wielu wad związanych z komputerami mainframe.
@@ -40,7 +42,7 @@ Komputery mainframe są znane ze swojej wysokiej niezawodności i dostępności 
 
 Typowa architektura komputera mainframe firmy IBM obejmuje następujące składniki:
 
-- **Systemy frontonu:** Użytkownicy mogą inicjować transakcje z poziomu terminali, stron internetowych lub zdalnych stacji roboczych. Aplikacje mainframe często mają niestandardowe interfejsy użytkownika, które można zachować po migracji na platformę Azure. Emulatory terminali są nadal używane do uzyskiwania dostępu do aplikacji mainframe. Nazywa się je również terminalami z zielonym ekranem.
+- **Systemy frontonu:** Użytkownicy mogą inicjować transakcje z poziomu terminali, stron internetowych lub zdalnych stacji roboczych. Aplikacje mainframe często mają niestandardowe interfejsy użytkownika, które można zachować po migracji na platformę Azure. Emulatory terminali (nazywane również terminalami z zielonym ekranem) są nadal używane do uzyskiwania dostępu do aplikacji mainframe.
 
 - **Warstwa aplikacji:** Komputery mainframe zazwyczaj zawierają system kontroli informacji o klientach (CICS, customer information control system), wiodący pakiet zarządzania transakcjami dla systemu mainframe IBM z/OS, który jest często używany wraz z systemem IBM Information Management System (IMS), czyli menedżerem transakcji opartym na komunikatach. Systemy wsadowe obsługują aktualizacje danych o wysokiej przepływności dla dużej liczby rekordów kont.
 

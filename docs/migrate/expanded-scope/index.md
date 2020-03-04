@@ -3,16 +3,16 @@ title: Lista kontrolna dotycząca zakresu rozszerzonego migracji do chmury
 description: Lista kontrolna dotycząca zakresu rozszerzonego migracji do chmury
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6a7a59ba62204d43b7085ab3dbd6b934d6aaccc1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ba6c768f98e3b74b0478fef0a86e6d8ac5537f1c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803113"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222332"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Zakres rozszerzony dla migracji do chmury
 
@@ -26,7 +26,6 @@ Poniższa lista kontrolna zawiera typowe obszary złożoności, które mogą wym
 
 ### <a name="business-driven-scope-expansion"></a>Aspekty biznesowe rozszerzenia zakresu
 
-- **[Równoważenie portfela](./balance-the-portfolio.md):** Zespół ds. strategii chmury chce więcej zainwestować w migrację (ponowny hosting istniejących obciążeń i aplikacji przy minimalnych modyfikacjach) lub innowacje (refaktoryzacja lub ponowne tworzenie tych obciążeń i aplikacji przy użyciu nowoczesnej technologii chmurowej). Często równowaga między tymi dwoma priorytetami jest kluczem do sukcesu. W tym przewodniku temat równoważenia portfela wdrożenia chmury jest popularny i został omówiony na każdym etapie procesu migracji.
 - **[Obsługa rynków globalnych](../../decision-guides/regions/index.md):** Firma działa w wielu regionach geograficznych z różnymi wymaganiami dotyczącymi niezależności danych. Aby spełnić te wymagania, należy uwzględnić dodatkowe kwestie podczas przeglądu wymagań wstępnych i dystrybucji zasobów w trakcie migracji.
 
 ### <a name="technology-driven-scope-expansion"></a>Aspekty technologiczne rozszerzenia zakresu
@@ -43,7 +42,7 @@ Każdy z tych scenariuszy został opisany w różnych artykułach w tej sekcji p
 
 ## <a name="next-steps"></a>Następne kroki
 
-Przejrzyj spis treści po lewej stronie, aby znaleźć tematy dotyczące określonych potrzeb lub zmian zakresu. Przeglądanie tych scenariuszy można też zacząć od pierwszego rozszerzenia zakresu na liście, dotyczącego [równoważenia portfela](./balance-the-portfolio.md).
+Przejrzyj spis treści po lewej stronie, aby znaleźć tematy dotyczące określonych potrzeb lub zmian zakresu. Przeglądanie tych scenariuszy można też zacząć od pierwszego rozszerzenia zakresu na liście, dotyczącego [obsługi rynków globalnych](../../decision-guides/regions/index.md).
 
 > [!div class="nextstepaction"]
-> [Równoważenie portfela](./balance-the-portfolio.md)
+> [Obsługa rynków globalnych](../../decision-guides/regions/index.md)

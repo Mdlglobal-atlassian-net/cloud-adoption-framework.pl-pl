@@ -7,13 +7,13 @@ ms.custom: homepage
 layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
-ms.date: 10/14/2019
-ms.openlocfilehash: 280445bda3f95694fec5f1b5cc2659021a8ffc20
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.date: 02/28/2020
+ms.openlocfilehash: 7bbdcdbdad1e00947d20f701ff6a81a465a09248
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170923"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223756"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Struktura wdrażania chmury firmy Microsoft dla platformy Azure
 
@@ -159,7 +159,7 @@ Zarządzanie operacjami w rozwiązaniach hybrydowych i chmurowych.
 
 ## <a name="understand-the-lifecycle"></a>Omówienie cyklu życia
 
-Każda z wymienionych powyżej faz jest częścią ogólnego cyklu wdrażania chmury. Poniższa ilustracja przedstawia powiązania między poszczególnymi fazami całego cyklu. Przewodnik Cloud Adoption Framework obejmuje cały ten cykl, wspierając klientów w każdej z jego faz.
+Każda z wymienionych powyżej metodologii jest częścią ogólnego cyklu wdrażania chmury. Poniższa ilustracja przedstawia powiązania między poszczególnymi metodologiami całego cyklu. Przewodnik Cloud Adoption Framework obejmuje cały cykl życia, wspierając klientów w każdej z faz wdrożenia przez zapewnienie metodologii jako konkretnych podejść do rozwiązywania typowych problemów blokujących wdrożenie.
 
 ![Omówienie przewodnika Cloud Adoption Framework](./_images/caf-overview.png)
 

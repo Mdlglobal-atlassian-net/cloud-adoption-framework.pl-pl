@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c81096576934aa55bd0381e7ac26dd8666b827ea
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bc80c33569cdb0980885ebba9c87d52e0aa87b7d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707989"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222591"
 ---
 # <a name="encryption-decision-guide"></a>Przewodnik po decyzjach związanych z szyfrowaniem
 
@@ -57,7 +57,7 @@ W przypadku podejścia polegającego na używaniu własnego klucza klucze są ge
 **Założenia dotyczące używania własnego klucza:** Generowanie kluczy w środowisku lokalnym i ich używanie za pomocą systemu zarządzania kluczami w chmurze obejmuje następujące założenia:
 
 - Masz zaufanie do podstawowych zabezpieczeń i infrastruktury kontroli dostępu platformy w chmurze pod względem hostingu i używania kluczy oraz wpisów tajnych.
-- Aplikacje lub usługi hostowane w chmurze mogą uzyskiwać dostęp do kluczy i wpisów tajnych w niezawodny i bezpieczny sposób oraz używać ich.
+- Aplikacje lub usługi hostowane w chmurze mogą uzyskiwać dostęp do kluczy i wpisów tajnych oraz używać ich w niezawodny i bezpieczny sposób.
 - Przepisy prawa lub zasady organizacji wymagają tworzenia wpisów tajnych i kluczy organizacji oraz zarządzania nimi w środowisku lokalnym.
 
 ### <a name="on-premises-hold-your-own-key"></a>Środowisko lokalne (zatrzymywanie własnego klucza)
@@ -128,7 +128,7 @@ Aby uzyskać więcej informacji o szyfrowaniu i zarządzaniu kluczami na platfor
 
 ## <a name="next-steps"></a>Następne kroki
 
-Szyfrowanie to tylko jeden z podstawowych składników infrastruktury wymagających podejmowania decyzji o architekturze w procesie wdrażania chmury. Przejdź do [omówienia przewodników dotyczących podejmowania decyzji](../index.md), aby poznać alternatywne wzorce lub modele używane podczas podejmowania decyzji projektowych dotyczących innych typów infrastruktury.
+Szyfrowanie to tylko jeden z podstawowych składników infrastruktury wymagających podejmowania decyzji o architekturze w procesie wdrażania chmury. Aby poznać alternatywne wzorce lub modele używane podczas podejmowania decyzji projektowych dotyczących innych typów infrastruktury, zobacz [Omówienie przewodników dotyczących podejmowania decyzji](../index.md).
 
 > [!div class="nextstepaction"]
 > [Przewodniki podejmowania decyzji dotyczących architektury](../index.md)

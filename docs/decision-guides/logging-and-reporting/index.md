@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e87c64be282f91716bdb8d803681c1f0f8a1f722
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a6229013dcbc56ff39fd4d41a5b81f13b446e625
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707666"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222775"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Przewodnik po decyzjach dotyczących rejestrowania i raportowania
 
@@ -44,7 +44,7 @@ Jeśli w Twojej organizacji nie ma obecnie wdrożonych systemów rejestrowania i
 
 W tym scenariuszu wszystkie dane dzienników są rejestrowane i przechowywane w chmurze, a narzędzia do rejestrowania i raportowania umożliwiające przetwarzanie i wyświetlanie informacji przez pracowników działu IT są zapewnione na platformie Azure oraz w usłudze Azure Monitor.
 
-Niestandardowe rozwiązania do rejestrowania oparte na usłudze Azure Monitor mogą być wdrażane ad hoc dla każdej subskrypcji lub obciążenia w mniejszych lub eksperymentalnych wdrożeniach i są zorganizowane w scentralizowany sposób, umożliwiając monitorowanie danych dzienników w całej infrastrukturze chmury.
+Niestandardowe rozwiązania rejestrowania oparte na usłudze Azure Monitor mogą być implementowane w miarę potrzeby dla każdej subskrypcji lub każdego obciążenia w mniejszych lub eksperymentalnych wdrożeniach. Te rozwiązania są organizowane centralnie, aby monitorować dane dzienników całego majątku w chmurze.
 
 **Założenia dotyczące rozwiązań natywnych dla chmury:** W przypadku użycia systemu rejestrowania i raportowania natywnego dla chmury przyjmowane są następujące założenia:
 
