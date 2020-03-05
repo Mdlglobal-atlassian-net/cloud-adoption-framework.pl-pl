@@ -1,6 +1,6 @@
 ---
-title: Przygotowanie uzasadnienia biznesowego migracji do chmury
-description: Zagadnienia dotyczące tworzenia uzasadnienia biznesowego migracji do chmury.
+title: Uzasadnienie biznesowe migracji do chmury
+description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak zacząć opracowywanie uzasadnienia biznesowego migracji do chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 36306ab50f4158741f1ff4334c43900c2f657920
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 28762d3540124b40bd3db4d7bd431033a1c25b5f
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798591"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337972"
 ---
-# <a name="build-a-business-justification-for-cloud-migration"></a>Przygotowanie uzasadnienia biznesowego migracji do chmury
+# <a name="build-a-business-justification-for-cloud-migration"></a>Tworzenie uzasadnienia biznesowego migracji do chmury
 
 Migracje w chmurze mogą generować wczesne zwroty z inwestycji w działania związane z przekształcaniem w chmurze. Jednak opracowywanie jasnego uzasadnienia biznesowego z istotnymi kosztami i zwrotami może być złożonym procesem. Ten artykuł pomoże Ci w zawieszeniu, jakie dane są potrzebne, aby utworzyć model finansowy, który jest zgodny z wynikami migracji do chmury. Najpierw Dispel kilka mitów o migracji do chmury, dzięki czemu Twoja organizacja może uniknąć niektórych typowych błędów.
 

@@ -1,18 +1,18 @@
 ---
 title: Jak używać szablonu wyniku biznesowego
-description: Wyjaśnienie szablonu wyniku biznesowego
+description: Dowiedz się, jak korzystać z szablonu wyniku biznesowego, aby przechwycić wyniki biznesowe, które będą używane podczas opracowywania strategii podróży na potrzeby przekształcania klientów.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 53e925a7ccf036e03b73bb888fa112549a65433e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 283bde5115583aa50acc69aff57ef025503ccdb8
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798557"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337999"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Jak używać szablonu wyniku biznesowego
 

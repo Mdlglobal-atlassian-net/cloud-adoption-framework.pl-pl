@@ -7,13 +7,13 @@ ms.date: 04/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: readiness
-ms.openlocfilehash: c85f4423ea61346e8692fd19ced0d53242733284
-ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
+ms.custom: readiness, fasttrack-edit
+ms.openlocfilehash: 5e168659c5120ded6b5cfde116699ced61390bdd
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77213596"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337863"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Zalecane konwencje nazewnictwa i tagowania
 
@@ -85,9 +85,11 @@ Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do uż
 | Sieciowa grupa zabezpieczeń              | nsg-                 |
 | Tabela tras                         | Szlak               |
 | Maszyna wirtualna                     | vm                   |
+| Maszyny połączone z usługą Azure Arc        | arcm-                |
 | Konto magazynu maszyn wirtualnych                  | stvm                 |
 | Publiczny adres IP                           | pip-                 |
-| Moduł równoważenia obciążenia                       | lb-                  |
+| Moduł równoważenia obciążenia (wewnętrzny)            | ILB                 |
+| Moduł równoważenia obciążenia (zewnętrzny)            | Elb                 |
 | Karta sieciowa                                 | nic-                 |
 | Magazyn kluczy                           | KV                  |
 | Klaster AKS                         | AKS                 |
@@ -98,6 +100,7 @@ Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do uż
 | Plan usługi App Service                    | zamierza                |
 | Aplikacja internetowa                             | aplikacje                 |
 | Aplikacja funkcji                        | Func                |
+| Aplikacja logiki                           | logiki               |
 | Usługa w chmurze                       | umożliwiają                 |
 | Serwer Azure SQL Database           | Server                 |
 | Baza danych Azure SQL Database                  | sqldb-               |
@@ -125,6 +128,9 @@ Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do uż
 | Centrum IoT                             | rzeczy                 |
 | Centra powiadomień                   | ntf-                 |
 | Notification Hubs przestrzeń nazw         | ntfns-               |
+| Obszar roboczy usługi Log Analytics             | rejestrowane                 |
+| Application Insights                | appi-                |
+| Magazyn Recovery Services             | rsv-                 |
 
 ### <a name="metadata-tags"></a>Tagi metadanych
 
