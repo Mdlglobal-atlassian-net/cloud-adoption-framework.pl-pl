@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik po innowacjach na platformie Azure: Budowa relacji z klientami przy użyciu aplikacji'
-description: Nauka wprowadzania innowacji dzięki angażowaniu klientów przez aplikacje za pomocą platformy Azure
+title: 'Innowacje na platformie Azure: Angażowanie przez aplikacje'
+description: Dowiedz się więcej o usługach platformy Azure, które ułatwiają modernizację istniejących aplikacji internetowych i interfejsów API oraz tworzenie aplikacji natywnych dla chmury.
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7b6a94830f35f7dde577ba4b7122cdec7e4a711d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ad638c667a75561dfbdb9827413249ebc93fd9dc
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808349"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171076"
 ---
 ::: zone target="docs"
 
@@ -34,7 +34,7 @@ Model kontenerów o otwartym standardzie umożliwia łatwe tworzenie mikrousług
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="deliver-value-fastertabdelivervaluefaster"></a>[Szybsze dostarczanie wartości](#tab/DeliverValueFaster)
+# <a name="deliver-value-faster"></a>[Szybsze dostarczanie wartości](#tab/DeliverValueFaster)
 
 Jedną z zalet rozwiązań opartych na chmurze jest możliwość szybszego zbierania opinii i dostarczania wartości użytkownikom. Szybsze uzyskiwanie opinii na temat aplikacji — zarówno od klientów zewnętrznych, jak i użytkowników w firmie — jest korzystne.
 
@@ -131,7 +131,7 @@ Rozwiązanie Visual Studio App Center udostępnia również usługę, która poz
 - [Dokumentacja zestawu Azure SDK dla języka Go](https://docs.microsoft.com/azure/go)
 - [Rozwiązania DevOps](https://azure.microsoft.com/solutions/devops)
 
-# <a name="create-cloud-native-appstabcloudnative"></a>[Tworzenie aplikacji natywnych dla chmury](#tab/CloudNative)
+# <a name="create-cloud-native-apps"></a>[Tworzenie aplikacji natywnych dla chmury](#tab/CloudNative)
 
 <!-- markdownlint-disable MD026 -->
 
@@ -287,7 +287,7 @@ Platforma Azure Red Hat OpenShift umożliwia elastyczne, samoobsługowe wdrażan
 
 **Zobacz [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)**
 
-# <a name="isolate-points-of-failuretabisolatepointsoffailure"></a>[Izolacja punktów awarii](#tab/IsolatePointsOfFailure)
+# <a name="isolate-points-of-failure"></a>[Izolacja punktów awarii](#tab/IsolatePointsOfFailure)
 
 Pod koniec etapu wstępnego testowania należy ocenić sposoby izolowania i usuwania punktów awarii. Dzięki rozproszeniu chmury platformy Azure można zaprojektować aplikację pod kątem minimalizacji awarii i zwiększenia wydajności.
 

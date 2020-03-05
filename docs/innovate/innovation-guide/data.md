@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik po innowacjach na platformie Azure: Demokratyzowanie danych'
-description: Dowiedz się, jak zdemokratyzować dane przy użyciu platformy Azure
+title: 'Innowacje na platformie Azure: Demokratyzowanie danych'
+description: Dowiedz się więcej o usługach Azure Data Catalog, Azure Data Share i innych narzędziach rozszerzających możliwości odnajdywania i analizy danych.
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 481430ca45d2d4a63f4d1777bd2c34409a2e7851
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f7f3ca7d99d4a1d553c888a8d3fd58a2616b64e8
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808298"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223444"
 ---
+<!-- cspell:ignore Fcatalogs Faccounts FEnvironments -->
+
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-democratize-data"></a>Przewodnik po innowacjach na platformie Azure: Demokratyzowanie danych
@@ -32,7 +34,7 @@ Jednym z pierwszych kroków demokratyzowania danych jest zwiększenie możliwoś
 
 Usługi platformy Azure, które umożliwiają przetwarzanie danych, takie jak Azure Time Series Insights i Stream Analytics, to kolejne rozwiązania wykorzystywane przez klientów i partnerów w celu zaspokojenia innowacyjnych potrzeb.
 
-# <a name="catalogtabcatalog"></a>[Wykaz](#tab/Catalog)
+# <a name="catalog"></a>[Wykaz](#tab/Catalog)
 
 ## <a name="azure-data-catalog"></a>Azure Data Catalog
 
@@ -69,11 +71,11 @@ Aby utworzyć usługę Azure Data Catalog dla organizacji:
 
 ::: zone-end
 
-# <a name="sharetabshare"></a>[Share](#tab/Share)
+# <a name="share"></a>[Share](#tab/Share)
 
 ## <a name="azure-data-share"></a>Azure Data Share
 
-Kluczowym czynnikiem wprowadzania innowacji jest osiągnięcie równowagi między otwartym udostępnianiem danych i kontrolą nad tym, jakie dane są udostępniane i komu. Podczas próby demokratyzowania danych organizacje mogą łatwo ulec przeciążeniu z powodu ogromnych ilości danych, tempa ich przetwarzania i złożoności ich cyklu życia. Usługa Azure Data Share sprawia, że dostawca może kontrolować sposób przetwarzania swoich danych przez określenie warunków użytkowania udostępnionych danych. Uzyskanie danych jest uzależnione od tego, czy konsument danych zaakceptował te warunki. Dostawcy danych mogą określać częstotliwość, z jaką konsumenci danych będą otrzymywać aktualizacje. Dostawca danych może w dowolnym momencie odwołać dostęp do nowych aktualizacji.
+Kluczowym czynnikiem wprowadzania innowacji jest osiągnięcie równowagi między otwartym udostępnianiem danych i kontrolą nad tym, jakie dane są udostępniane i komu. Podczas próby demokratyzowania danych organizacje mogą łatwo ulec przeciążeniu z powodu ogromnych ilości danych, tempa ich przetwarzania i złożoności ich cyklu życia. Usługa Azure Data Share sprawia, że dostawca może kontrolować sposób przetwarzania swoich danych przez określenie warunków użytkowania udostępnionych danych. Przed otrzymaniem danych odbiorca danych musi zaakceptować te warunki. Dostawcy danych mogą określać częstotliwość, z jaką konsumenci danych będą otrzymywać aktualizacje. Dostawca danych może w dowolnym momencie odwołać dostęp do nowych aktualizacji.
 
 > [!div class="checklist"]
 >
@@ -106,7 +108,7 @@ Aby utworzyć udział danych:
 
 ::: zone-end
 
-# <a name="insightstabinsights"></a>[Insights](#tab/Insights)
+# <a name="insights"></a>[Insights](#tab/Insights)
 
 ## <a name="azure-time-series-insights"></a>Azure Time Series Insights
 

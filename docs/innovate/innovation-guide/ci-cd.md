@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik po innowacjach na platformie Azure: Zwiększanie akceptacji'
-description: Dowiedz się, jak można zwiększyć akceptację za pomocą platformy Azure
+title: 'Innowacje na platformie Azure: Zwiększanie akceptacji'
+description: Pomóż zespołom deweloperów wydajnie tworzyć rozwiązania, wspieraj bezpieczną współpracę globalną oraz usuń bariery podczas skalowania innowacji na platformie Azure.
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 907d4745e86f63eef2a59bea8120395ea33bd1d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 748825e01646b687f49e66ccb975f866312c9310
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808332"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171059"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ Dla organizacji, które pomyślnie wprowadzają innowacje, podstawowymi elementa
 
 Innowacje są realizowane wtedy, gdy organizacje wspierają swoich pracowników, aby mogli tworzyć wartość, której poszukują. Jedna z tych grup, deweloperzy, jest katalizatorem innowacji. Odgrywają oni coraz istotniejszą rolę w tworzeniu i zwiększaniu wartości w każdej branży. Deweloperzy to budowniczy naszej ery. Piszą kod otaczającego nas świata i znajdują się w centrum innowacji. Innowacyjne organizacje tworzą kulturę, która umożliwia deweloperom osiąganie lepszych wyników.
 
-# <a name="developer-productivitytabdeveloperproductivity"></a>[Wydajność pracy deweloperskiej](#tab/DeveloperProductivity)
+# <a name="developer-productivity"></a>[Wydajność pracy deweloperskiej](#tab/DeveloperProductivity)
 
 ## <a name="developer-velocity"></a>Szybkość pracy deweloperów
 
@@ -93,7 +93,7 @@ Aby utworzyć projekt DevOps:
 
 ::: zone-end
 
-# <a name="innovate-collaborativelytabcollaboration"></a>[Wspólne wprowadzanie innowacji](#tab/Collaboration)
+# <a name="innovate-collaboratively"></a>[Wspólne wprowadzanie innowacji](#tab/Collaboration)
 
 ## <a name="innovate-through-collaboration"></a>Wprowadzanie innowacji przez współpracę
 
@@ -111,7 +111,7 @@ W celu wprowadzania innowacji wielu deweloperów korzysta z kodu open source. W 
 
 **Przejdź do [dokumentacji aplikacji Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams)**
 
-# <a name="innovation-characteristicstabcharacteristics"></a>[Charakterystyka innowacji](#tab/Characteristics)
+# <a name="innovation-characteristics"></a>[Charakterystyka innowacji](#tab/Characteristics)
 
 ## <a name="innovate-by-using-azure-devops"></a>Tworzenie innowacji z użyciem usługi Azure DevOps
 
@@ -127,7 +127,7 @@ Dla każdego lidera biznesowego wysoki priorytet ma wprowadzanie innowacji w śr
 
 Platforma Azure ma unikatową ofertę, która ułatwia skalowanie i wprowadzanie innowacji w organizacji. Aby wprowadzać więcej innowacji, profesjonalni deweloperzy mogą tworzyć aplikacje i bloki konstrukcyjne, które umożliwiają innym ekspertom w organizacji tworzenie aplikacji na solidnej podstawie. Na platformie Azure mogą oni zapewnić bezpieczeństwo od podstaw dzięki wsparciu zespołu ekspertów i proaktywnym funkcjom zgodności, którym ufają przedsiębiorstwa, rządy i startupy.
 
-# <a name="liveops-innovationtabliveops"></a>[Innowacje LiveOps](#tab/LiveOps)
+# <a name="liveops-innovation"></a>[Innowacje LiveOps](#tab/LiveOps)
 
 ## <a name="future-ready-liveops"></a>Przygotowanie na przyszłość: LiveOps
 

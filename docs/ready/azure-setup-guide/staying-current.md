@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 8dd545e4d34dfafd6a777828b9c590030797fdae
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3852317648526cceadfd772b72adbd1af2bb7d08
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799220"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222054"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Bądź na bieżąco z platformą Microsoft Azure
 
@@ -22,7 +22,7 @@ Tempo zmian platform w chmurze, takich jak Microsoft Azure, jest większe niż t
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="top-resourcestabtopresources"></a>[Najważniejsze zasoby](#tab/TopResources)
+# <a name="top-resources"></a>[Najważniejsze zasoby](#tab/TopResources)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -45,14 +45,14 @@ Następujące zasoby mogą pomóc pozostać na bieżąco z platformą Azure:
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="additional-resourcestabadditionalresources"></a>[Dodatkowe zasoby](#tab/AdditionalResources)
+# <a name="additional-resources"></a>[Dodatkowe zasoby](#tab/AdditionalResources)
 
 <!-- markdownlint-enable MD025 -->
 
 W przypadku bardziej zaawansowanej zawartości, która pomaga być na bieżąco z platformą Azure, przejrzyj wymienione tutaj zasoby:
 
 - [Azure Charts](https://azurecharts.com/)
-  - Ten nieoficjalny zasób wizualizuje wszystkie aktualizacje platformy Azure, które wprowadzono w ciągu ostatnich 6 miesięcy, oraz zawiera inne przydatne wykresy i narzędzia mogące pomóc w śledzeniu zmian na platformie Azure.
+  - Ta nieoficjalna wizualizacja przedstawia wszystkie aktualizacje platformy Azure w ciągu ostatnich sześciu miesięcy. Zawiera ona inne przydatne wykresy i narzędzia ułatwiające śledzenie zmian platformy Azure.
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Cotygodniowe wideo z inżynierami, którzy tworzą platformę Azure. Przedstawiają oni pokazy, odpowiadają na pytania i dzielą się szczegółowymi informacjami.
   - Subskrybuj przy użyciu kanału informacyjnego [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).

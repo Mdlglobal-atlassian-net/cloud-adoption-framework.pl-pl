@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9df0d1e36cbd926725ec5622087b57a2b8eae9ce
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 991c0f8423053b1a79f437b452b64c789c867c3e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808196"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223561"
 ---
+<!-- cSpell:ignore WSUS -->
+
 # <a name="operational-compliance-in-azure"></a>Zgodność operacyjna na platformie Azure
 
 _Zgodność operacyjna_ to druga dyscyplina w planie bazowym zarządzania chmurą.
@@ -40,7 +42,7 @@ Ta tabela zawiera sugerowane wartości minimalne planu bazowego zarządzania dla
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="update-managementtabupdatemanagement"></a>[Zarządzanie aktualizacjami](#tab/UpdateManagement)
+## <a name="update-management"></a>[Zarządzanie aktualizacjami](#tab/UpdateManagement)
 
 ::: zone-end
 
@@ -89,7 +91,7 @@ Aby zastosować zasady do grupy zasobów:
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-policytabazurepolicy"></a>[Azure Policy](#tab/AzurePolicy)
+## <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 ::: zone-end
 
@@ -133,7 +135,7 @@ Aby dowiedzieć się więcej, zobacz:
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
+## <a name="azure-blueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
 ::: zone-end
 

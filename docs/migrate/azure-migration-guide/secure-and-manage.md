@@ -9,18 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1af3ed5ea3b9291263a5ad8da43c65d51570651e
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: ec67108e90fb367535298ba7fab3b8ac32705255
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994097"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222479"
 ---
+<!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
+
 # <a name="secure-and-manage"></a>Zabezpieczanie i zarządzanie
 
 Po przeprowadzeniu migracji środowiska na platformę Azure należy wziąć pod uwagę zabezpieczenia i metody używane do zarządzania środowiskiem. Platforma Azure udostępnia wiele funkcji i możliwości w celu spełnienia tych wymagań w rozwiązaniu.
 
-# <a name="azure-monitortabmonitor"></a>[Azure Monitor](#tab/monitor)
+# <a name="azure-monitor"></a>[Azure Monitor](#tab/monitor)
 
 Usługa Azure Monitor maksymalizuje dostępność i wydajność aplikacji zapewniając kompleksowe rozwiązanie do zbierania i analizowania danych telemetrycznych ze środowisk chmurowych i lokalnych oraz podejmowania działań w oparciu o nie. Pomaga interpretować działanie aplikacji i proaktywnie identyfikuje problemy dotyczące aplikacji i zasobów, od których zależą.
 
@@ -44,7 +46,7 @@ Usługa Azure Monitor maksymalizuje dostępność i wydajność aplikacji zapewn
 
 ::: zone-end
 
-# <a name="azure-service-healthtabservicehealth"></a>[Azure Service Health](#tab/servicehealth)
+# <a name="azure-service-health"></a>[Azure Service Health](#tab/servicehealth)
 
 Usługa Azure Service Health udostępnia spersonalizowane wskazówki i pomoc techniczną, gdy napotkasz problemy z usługami platformy Azure. Może ona generować powiadomienia, pomagać zrozumieć znaczenie problemów i informować na bieżąco o rozwiązywaniu problemów. Może też ułatwić przygotowanie się do zaplanowanej konserwacji i zmian, które mogą wpłynąć na dostępność zasobów.
 
@@ -75,7 +77,7 @@ Aby dowiedzieć się więcej, zapoznaj się z [dokumentacją usługi Azure Servi
 
 ::: zone-end
 
-# <a name="azure-advisortabadvisor"></a>[Azure Advisor](#tab/advisor)
+# <a name="azure-advisor"></a>[Azure Advisor](#tab/advisor)
 
 Azure Advisor to spersonalizowany konsultant w zakresie chmury ułatwiający stosowanie najlepszych rozwiązań w celu zoptymalizowania wdrożeń platformy Azure. Analizuje on konfigurację zasobów i dane telemetryczne użycia. Następnie zaleca rozwiązania ułatwiające zwiększenie wydajności, poprawę bezpieczeństwa oraz zwiększenie wysokiej dostępności zasobów, a także szuka możliwości zmniejszenia ogólnych wydatków związanych z platformą Azure.
 
@@ -98,7 +100,7 @@ Azure Advisor to spersonalizowany konsultant w zakresie chmury ułatwiający sto
 
 ::: zone-end
 
-# <a name="azure-security-centertabsecurity"></a>[Azure Security Center](#tab/security)
+# <a name="azure-security-center"></a>[Azure Security Center](#tab/security)
 
 Usługa Azure Security Center to ujednolicony system zarządzania bezpieczeństwem infrastruktury. Jego zadaniem jest zwiększenie poziomu bezpieczeństwa centrów danych i zapewnienie zaawansowanej ochrony przed zagrożeniami w przypadku obciążeń hybrydowych w chmurze (&mdash;zarówno na platformie Azure, jak i poza nią&mdash;) oraz w środowisku lokalnym.
 
@@ -121,7 +123,7 @@ Usługa Azure Security Center to ujednolicony system zarządzania bezpieczeństw
 
 ::: zone-end
 
-# <a name="azure-backuptabbackup"></a>[Azure Backup](#tab/backup)
+# <a name="azure-backup"></a>[Azure Backup](#tab/backup)
 
 Azure Backup to oparta na platformie Azure usługa, która umożliwia tworzenie kopii zapasowej (lub ochronę) i przywracanie danych w chmurze firmy Microsoft. Usługa Azure Backup pozwala zastąpić dotychczasowe rozwiązania tworzenia kopii zapasowych, istniejące lokalnie lub poza siedzibą firmy, rozwiązaniem opartym na chmurze, które jest niezawodne, bezpieczne i konkurencyjne cenowo.
 
@@ -147,7 +149,7 @@ Azure Backup to oparta na platformie Azure usługa, która umożliwia tworzenie 
 
 ::: zone-end
 
-# <a name="azure-site-recoverytabsiterecovery"></a>[Azure Site Recovery](#tab/siterecovery)
+# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
 
 Wcześniej w tym przewodniku opisano, jak można korzystać z usługi Azure Site Recovery podczas przeprowadzania migracji. Jednak stanowi ona również krytyczny składnik strategii odzyskiwania po awarii po zakończeniu migracji.
 

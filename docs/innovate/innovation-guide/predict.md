@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik po innowacjach na platformie Azure: Przewidywanie i wpływ'
-description: Naucz się przewidywać i wywierać wpływ przy użyciu platformy Azure.
+title: 'Innowacje na platformie Azure: Przewidywanie i wpływ'
+description: Dowiedz się więcej o rozwiązaniach platformy Azure do przewidywania potrzeb klientów i ponownego integrowania prognoz z rozwiązaniem w celu wpływania na zachowanie klientów.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 00bd41050d469c8bab6ee0c6a8c4e68facd92ca9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 42cf4ffb65456bf1519a0f2bb0f017bb078687d9
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808264"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170974"
 ---
 ::: zone target="docs"
 
@@ -38,7 +38,7 @@ Poniższa tabela ułatwia znalezienie najlepszego rozwiązania w zależności od
 |Azure Machine Learning Studio|Yes|Yes|Nie|Ogólna znajomość algorytmów predykcyjnych|
 |Usługa Azure Machine Learning|Yes|Yes|Yes|Analityk danych|
 
-## <a name="azure-cognitive-servicestabcognitiveservices"></a>[Azure Cognitive Services](#tab/CognitiveServices)
+## <a name="azure-cognitive-services"></a>[Azure Cognitive Services](#tab/CognitiveServices)
 
 Najszybszą i najłatwiejszą metodą przewidywania potrzeb klientów jest użycie usług Azure Cognitive Services. Usługi Cognitive Services umożliwiają prognozowanie na podstawie istniejących modeli, bez dodatkowego trenowania. Użycie tych usług jest optymalnym rozwiązaniem sprawdzającym się nawet wtedy, gdy wśród personelu nie masz analityka danych, który może wytrenować model predykcyjny. W przypadku niektórych usług trenowanie nie jest wymagane. Inne usługi wymagają tylko minimalnego trenowania.
 
@@ -70,7 +70,7 @@ Możesz przejść bezpośrednio do usług Cognitive Services w witrynie [Azure P
 
 ::: zone-end
 
-## <a name="azure-machine-learning-studiotabmachinelearningstudio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
+## <a name="azure-machine-learning-studio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
 
 Jeśli istniejące modele w usługach Cognitive Services nie umożliwiają uzyskania odpowiedniej prognozy, z pomocą przychodzi usługa Azure Machine Learning Studio. Pozwala ona utworzyć wymagane prognozy, a przy tym nie wymaga zaawansowanych umiejętności analityka danych.
 
@@ -101,7 +101,7 @@ Możesz przejść bezpośrednio do usługi Azure Machine Learning Studio w witry
 
 ::: zone-end
 
-## <a name="azure-machine-learning-servicetabmachinelearningservice"></a>[Usługa Azure Machine Learning](#tab/MachineLearningService)
+## <a name="azure-machine-learning-service"></a>[Usługa Azure Machine Learning](#tab/MachineLearningService)
 
 Usługa Azure Machine Learning umożliwia korzystanie z bardziej zaawansowanych, opartych na kodzie metod, które są wymagane do trenowania głębokiego z użyciem zestawów danych klientów. Przy użyciu języków takich jak Python analitycy danych mogą trenować, a następnie tworzyć algorytmy umożliwiające przewidywanie potrzeb klientów.
 

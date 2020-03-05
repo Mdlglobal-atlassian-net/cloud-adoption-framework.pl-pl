@@ -9,18 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: c38edb9a5723d99974f5f472453bf4b88ee07bb3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 923818c5b4260788ae86f6a9d92b11aa90141834
+ms.sourcegitcommit: 81579e9dc28af64fad41027e8c32da06a52d62f6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799611"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256650"
 ---
+<!-- cSpell:ignore tvuylsteke kfollis >
+
+<!-- markdownlint-disable MD024 MD025 -->
+
 # <a name="governance-security-and-compliance-in-azure"></a>Ład, zabezpieczenia i zgodność na platformie Azure
 
 Podczas ustanawiania zasad firmowych i planowania strategii utrzymywania ładu możesz skorzystać z narzędzi i usług, takich jak Azure Policy, Azure Blueprints i Azure Security Center, aby wymusić i zautomatyzować decyzje dotyczące ładu w organizacji. Przed rozpoczęciem planowania ładu, użyj [narzędzia do porównywania stanu nadzoru nad ładem](https://cafbaseline.com), aby zidentyfikować potencjalne luki w podejściu do ładu w organizacji. Aby uzyskać więcej informacji na temat sposobu opracowywania procesów ładu, zapoznaj się ze [wskazówkami dotyczącymi ładu na platformie Azure w przewodniku Cloud Adoption Framework](../../govern/index.md).
 
-# <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
+# <a name="azure-blueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
 Usługa Azure Blueprints umożliwia architektom chmury i centralnym grupom technologii informatycznych zdefiniowanie powtarzalnego zestawu zasobów platformy Azure, który implementuje standardy, wzorce i wymagania organizacji oraz jest z nimi zgodny. Usługa Azure Blueprints umożliwia zespołom programistów szybkie tworzenie i wdrażanie nowych środowisk z przekonaniem, że zostały one utworzone zgodnie z zasadami organizacji za pomocą zestawu wbudowanych składników — takich jak sieć — przyspieszających opracowywanie i dostarczanie.
 
@@ -41,8 +45,8 @@ Aby utworzyć strategię:
 1. W sekcji **Tworzenie strategii** wybierz pozycję **Utwórz**.
 1. Przefiltruj listę strategii, aby wybrać odpowiednią strategię.
 1. Wprowadź **nazwę strategii** i wybierz odpowiednią **lokalizację definicji**.
-1. Kliknij przycisk **Dalej: Artefakty >>** i przejrzyj artefakty uwzględnione w strategii.
-1. Kliknij pozycję **Zapisz wersję roboczą**.
+1. Wybierz opcję **Dalej: Artefakty >>** i przejrzyj artefakty uwzględnione w strategii.
+1. Wybierz pozycję **Zapisz wersję roboczą**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -54,8 +58,8 @@ Aby utworzyć strategię:
 1. W sekcji **Tworzenie strategii** wybierz pozycję **Utwórz**.
 1. Przefiltruj listę strategii, aby wybrać odpowiednią strategię.
 1. Wprowadź **nazwę strategii** i wybierz odpowiednią **lokalizację definicji**.
-1. Kliknij przycisk **Dalej: Artefakty >>** i przejrzyj artefakty uwzględnione w strategii.
-1. Kliknij pozycję **Zapisz wersję roboczą**.
+1. Wybierz opcję **Dalej: Artefakty >>** i przejrzyj artefakty uwzględnione w strategii.
+1. Wybierz pozycję **Zapisz wersję roboczą**.
 
 ::: zone-end
 
@@ -89,13 +93,13 @@ Aby opublikować artefakty strategii w subskrypcji:
 
 Aby dowiedzieć się więcej, zobacz:
 
-- [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints)
+- [Azure Blueprints](/azure/governance/blueprints)
 - [Cloud Adoption Framework: Przewodnik podejmowania decyzji dotyczących spójności zasobów](../../decision-guides/resource-consistency/index.md)
-- [Przykłady strategii opartych na standardach](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Przykłady strategii opartych na standardach](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 
-# <a name="azure-policytabazurepolicy"></a>[Azure Policy](#tab/AzurePolicy)
+# <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 Usługa Azure Policy umożliwia tworzenie i przypisywanie zasad oraz zarządzanie nimi. Te zasady wymuszają reguły zasobów, dzięki czemu zasoby te pozostają zgodne ze standardami firmy i umowami dotyczącymi poziomu usług. Usługa Azure Policy skanuje zasoby w celu zidentyfikowania zasobów, które nie są zgodne z implementowanymi zasadami. Możesz na przykład stosować zasady dopuszczające uruchamianie w środowisku tylko określonego rozmiaru maszyny wirtualnej. W przypadku implementowania tych zasad następuje oszacowanie istniejących maszyn wirtualnych w danym środowisku i wszystkich nowo wdrożonych maszyn wirtualnych. Podczas oceny zasad są generowane zdarzenia związane ze zgodnością, których można używać do monitorowania i raportowania.
 
@@ -129,12 +133,12 @@ Aby zastosować zasady do grupy zasobów:
 
 Aby dowiedzieć się więcej, zobacz:
 
-- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
+- [Azure Policy](/azure/governance/policy)
 - [Cloud Adoption Framework: Przewodnik podejmowania decyzji dotyczących wymuszania zasad](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
 
-# <a name="azure-security-centertabazuresecuritycenter"></a>[Azure Security Center](#tab/AzureSecurityCenter)
+# <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
 
 Usługa Azure Security Center odgrywa ważną rolę w strategii zarządzania. Te funkcje pomagają być na bieżąco w zakresie zabezpieczeń, ponieważ wykonują następujące zadania:
 
@@ -156,8 +160,8 @@ Aby zapoznać się z usługą Azure Security Center, przejdź do witryny [Azure 
 
 Aby dowiedzieć się więcej, zobacz:
 
-- [Azure Security Center](https://docs.microsoft.com/azure/security-center)
-- [Dostęp just in time do maszyny wirtualnej](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Azure Security Center](/azure/security-center)
+- [Dostęp just in time do maszyny wirtualnej](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [Porównanie warstw Standardowa i Bezpłatna](https://azure.microsoft.com/pricing/details/security-center)
 - [Cloud Adoption Framework: Dyscyplina ładu w zakresie punktu odniesienia zabezpieczeń](../../govern/security-baseline/index.md)
 

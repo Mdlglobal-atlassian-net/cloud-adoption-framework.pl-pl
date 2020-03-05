@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8486d4de8b6055d6d0741d008c10a405c27b8f92
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803521"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222655"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanizmy kontroli kosztów skoncentrowane na migracji
 
@@ -34,7 +34,7 @@ Procesy opisane w tym artykule mogą wymagać współpracy z kierownikami dział
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="estimate-vm-costs-prior-to-migrationtabestimatevmcosts"></a>[Szacowanie kosztów maszyn wirtualnych przed migracją](#tab/EstimateVMCosts)
+# <a name="estimate-vm-costs-prior-to-migration"></a>[Szacowanie kosztów maszyn wirtualnych przed migracją](#tab/EstimateVMCosts)
 
 Przed migracją dowolnego zasobu (infrastruktury, aplikacji lub danych) istnieje możliwość oszacowania kosztów i dostosowania rozmiaru w oparciu o zaobserwowane kryteria wydajności dla tych zasobów. Szacowanie kosztów służy do dwóch celów: umożliwia kontrolę kosztów i zapewnia punkt kontrolny, aby zagwarantować, że bieżące budżety spełniają niezbędne wymagania w zakresie wydajności.
 
@@ -54,13 +54,13 @@ Te ręczne kalkulatory kosztów mogą być używane niezależnie do prognozowani
 Usługa Azure Migrate oblicza **szacunkowe koszty miesięczne** na podstawie danych przechwytywanych przez moduł zbierający i mapę usług. W poniższych krokach opisano ładowanie szacunkowych kosztów:
 
 1. Przejdź do obszaru Ocena usługi Azure Migrate w portalu.
-2. Na stronie **Omówienie** projektu wybierz pozycję **+Utwórz ocenę**.
-3. Kliknij pozycję **Wyświetl wszystko**, aby sprawdzić właściwości oceny.
-4. Utwórz grupę i określ jej nazwę.
-5. Wybierz maszyny wirtualne, które chcesz dodać do grupy.
-6. Kliknij pozycję **Utwórz ocenę**, aby utworzyć grupę i ocenę.
-7. Po utworzeniu oceny możesz ją wyświetlić w obszarze Omówienie > Pulpit nawigacyjny.
-8. W sekcji „Szczegóły oceny” w okienku nawigacji portalu wybierz pozycję **Szczegóły kosztów**.
+1. Na stronie **Omówienie** projektu wybierz pozycję **+Utwórz ocenę**.
+1. Wybierz pozycję **Wyświetl wszystko**, aby sprawdzić właściwości oceny.
+1. Utwórz grupę i określ jej nazwę.
+1. Wybierz maszyny wirtualne, które chcesz dodać do grupy.
+1. Wybierz pozycję **Utwórz ocenę**, aby utworzyć grupę i ocenę.
+1. Po utworzeniu oceny możesz ją wyświetlić w obszarze Omówienie > Pulpit nawigacyjny.
+1. W sekcji „Szczegóły oceny” w okienku nawigacji portalu wybierz pozycję **Szczegóły kosztów**.
 
 Przedstawiony poniżej otrzymany wynik szacunkowy obejmuje miesięczne koszty obliczania i magazynu, które często stanowią największą część kosztów związanych z chmurą.
 
@@ -72,7 +72,7 @@ Przedstawiony poniżej otrzymany wynik szacunkowy obejmuje miesięczne koszty ob
 - [Konfiguracja i przegląd oceny w usłudze Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
 - Aby zapoznać się z bardziej szczegółowym planem zarządzania kosztami dla większej liczby zasobów (infrastruktury, aplikacji i danych), zobacz temat dotyczący [modelu zarządzania w strukturze Cloud Adoption Framework](../../govern/guides/index.md). Przeczytaj zwłaszcza wskazówki dotyczące [dyscypliny w usłudze Cost Management](../../govern/cost-management/index.md) oraz [ulepszania usługi Cost Management w przewodniku dotyczącym ładu dla złożonych przedsiębiorstw](../../govern/guides/complex/cost-management-improvement.md).
 
-# <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Szacowanie i optymalizowanie kosztów maszyn wirtualnych podczas migracji i po niej](#tab/EstimateOptimize)
+# <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[Szacowanie i optymalizowanie kosztów maszyn wirtualnych podczas migracji i po niej](#tab/EstimateOptimize)
 
 Oszacowanie kosztów przed migracją ułatwia osiągnięcie celu związanego z oczekiwaniami w zakresie kosztów. Zapewnia również możliwość przeanalizowania wydajności i potrzeb związanych z kosztami poszczególnych zasobów do zmigrowania (infrastruktury, aplikacji i danych). Jest to jednak nadal tylko oszacowanie. Gdy zasób zostanie zmigrowany i obciążony, można przeprowadzić dokładniejsze obliczenia kosztów na podstawie rzeczywistego lub zsyntetyzowanego obciążenia.
 
@@ -94,7 +94,7 @@ Wymagania wstępne: W pozostałej części karty założono, że czytelnik zako�
 
 W poniższych krokach opisano ładowanie danych analizy kosztów w usłudze Azure Cost Management dla subskrypcji:
 
-1. Przejdź do obszaru **Zarządzanie kosztami i rozliczenia** w portalu. Jeśli w lewym okienku pozycja Zarządzanie kosztami i rozliczenia nie jest widoczna, kliknij pozycję **Wszystkie usługi**. W okienku menu usługi w obszarze **Monitorowanie i zarządzanie** kliknij pozycję **Zarządzanie kosztami i rozliczenia**.
+1. Przejdź do obszaru **Zarządzanie kosztami i rozliczenia** w portalu. Jeśli w lewym okienku pozycja Zarządzanie kosztami i rozliczenia nie jest widoczna, wybierz pozycję **Wszystkie usługi**. W okienku menu usługi w obszarze **Monitorowanie i zarządzanie** wybierz pozycję **Zarządzanie kosztami i rozliczenia**.
 2. W obszarze Zarządzanie kosztami i rozliczenia wybierz pozycję **Zarządzanie kosztami** w lewym okienku nawigacji, aby rozpocząć analizowanie i optymalizowanie kosztów chmury.
 3. W obszarze Zarządzanie kosztami wybierz pozycję **Analiza kosztów**.
     a. Użyj kapsułki **Zakres**, aby przełączyć na inny zakres w analizie kosztów.
@@ -107,7 +107,7 @@ Ta analiza umożliwi przegląd łącznego kosztu, budżetu (jeśli jest dostępn
 - Aby uzyskać więcej informacji na temat usługi Azure Advisor, zobacz temat [Reducing service costs using Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) (Obniżanie kosztów usług przy użyciu Azure Advisor).
 - Aby uzyskać więcej informacji na temat usługi Azure Cost Management, zobacz tematy [Understand and work with scopes](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) (Zapoznanie się z zakresami i praca z nimi) oraz [Explore and analyze costs with Cost Analysis](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis) (Poznawanie i analizowanie kosztów za pomocą funkcji analizy kosztów — Szybki start).
 
-# <a name="tips-and-tricks-to-optimize-coststabtipstricks"></a>[Porady i wskazówki dotyczące optymalizacji kosztów](#tab/TipsTricks)
+# <a name="tips-and-tricks-to-optimize-costs"></a>[Porady i wskazówki dotyczące optymalizacji kosztów](#tab/TipsTricks)
 
 Poza narzędziami wymienionymi w tym artykule istnieją pewne porady i wskazówki, które mogą pomóc szybko obniżyć koszty ogólne chmury. Poniżej przedstawiono kilka porad wysokiego poziomu, z którymi warto się zapoznać:
 

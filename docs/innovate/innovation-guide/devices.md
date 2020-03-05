@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik po innowacjach na platformie Azure: Interakcja za pośrednictwem urządzeń'
-description: Przewodnik po innowacjach na platformie Azure — interakcja za pośrednictwem urządzeń
+title: 'Innowacje na platformie Azure: Interakcja za pomocą urządzeń'
+description: Dowiedz się, jak platforma Azure zapewnia strukturę do tworzenia atrakcyjnych i efektywnych rozwiązań biznesowych za pośrednictwem połączonych i perceptywnych urządzeń brzegowych.
 author: umarmohamedusman
 ms.author: umarm
 ms.date: 10/10/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4744a1a019a8454f9a454c5eb75192a6d97b6998
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5063d22cee1a2711bc3dd4c2d052df2870b61c5a
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808315"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171025"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ Klienci platformy Azure korzystają z ciągle rozszerzającego się zbioru poł�
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="global-scale-iot-servicetabiothub"></a>[Globalna usługa IoT](#tab/IoTHub)
+## <a name="global-scale-iot-service"></a>[Globalna usługa IoT](#tab/IoTHub)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -101,7 +101,7 @@ Aby utworzyć wystąpienie usług IoT Hub Device Provisioning Services:
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="azure-digital-twinstabdigitaltwins"></a>[Azure Digital Twins](#tab/DigitalTwins)
+## <a name="azure-digital-twins"></a>[Azure Digital Twins](#tab/DigitalTwins)
 
 Twórz przestrzenne środowiska wielokrotnego użytku o wysokim stopniu skalowalności, które umożliwiają łączenie danych przesyłanych strumieniowo między światem fizycznym i światem cyfrowym. Zwiększ zaangażowanie klientów przy użyciu kompleksowych modeli środowisk fizycznych. Generuj wykresy analizy przestrzennej do modelowania relacji i interakcji między osobami, obszarami oraz urządzeniami. Wykonuj zapytania o dane z przestrzeni fizycznej, a nie z poziomu różnych czujników.
 
@@ -136,7 +136,7 @@ Aby utworzyć wystąpienie usługi Azure Digital Twins:
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="location-intelligencetabazuremaps"></a>[Analiza lokalizacji](#tab/AzureMaps)
+## <a name="location-intelligence"></a>[Analiza lokalizacji](#tab/AzureMaps)
 
 Oprócz tradycyjnych możliwości używania lokalizacji, takich jak pobliskie miejsca, ruch i routing, usługa Azure Maps umożliwia przedsiębiorstwom tworzenie rozwiązań korzystających z analizy lokalizacji w czasie rzeczywistym i opartych na światowej klasy produktach w dziedzinie technologii mobilnych, opracowanych przez takich partnerów jak **TomTom** i **Moovit**. Łatwo integruj zaawansowane możliwości obsługi lokalizacji i mobilności z własnymi aplikacjami dzięki usługom geoprzestrzennym.
 
@@ -169,7 +169,7 @@ Aby użyć analizy lokalizacji:
 
 ::: zone-end
 
-## <a name="spatial-experiencestabspatial"></a>[Środowiska przestrzenne](#tab/spatial)
+## <a name="spatial-experiences"></a>[Środowiska przestrzenne](#tab/spatial)
 
 Usługa Azure Spatial Anchors umożliwia deweloperom pracę z platformami rzeczywistości mieszanej w celu obserwowania przestrzeni, wyznaczania dokładnych punktów orientacyjnych i przywoływania tych punktów orientacyjnych z obsługiwanych urządzeń.
 
@@ -204,7 +204,7 @@ Aby używać środowisk przestrzennych:
 
 ::: zone-end
 
-## <a name="azure-remote-renderingtabremoterender"></a>[Azure Remote Rendering](#tab/RemoteRender)
+## <a name="azure-remote-rendering"></a>[Azure Remote Rendering](#tab/RemoteRender)
 
 Renderuj w chmurze interaktywną zawartość 3D w wysokiej jakości i przesyłaj ją strumieniowo do urządzeń w czasie rzeczywistym. Obciążenia renderowania są powszechnie używane do tworzenia efektów specjalnych (VFX) w branży multimedialnej i rozrywkowej. Renderowanie jest również używane w wielu innych sektorach, takich jak reklama, produkcja, handel detaliczny oraz przemysł naftowy.
 

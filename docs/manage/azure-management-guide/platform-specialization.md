@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4f18c4c81dce2caa41b1dab5dddc394042f390
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 91d800c3f3575cc16d239106805fdfaef8a29e14
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808179"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223521"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Specjalizacja platformy dotycząca zarządzania chmurą
 
@@ -55,7 +55,7 @@ Specjalizacja platformy obejmuje zdyscyplinowane wykonywanie czterech poniższyc
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="improve-system-designtabsystemsdesign"></a>[Ulepszanie projektu systemu](#tab/SystemsDesign)
+## <a name="improve-system-design"></a>[Ulepszanie projektu systemu](#tab/SystemsDesign)
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ W miarę ulepszania projektu systemu wracaj do tego artykułu, aby znaleźć now
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="automated-remediationtabautomatedremediation"></a>[Zautomatyzowane korygowanie](#tab/AutomatedRemediation)
+## <a name="automated-remediation"></a>[Zautomatyzowane korygowanie](#tab/AutomatedRemediation)
 
 ::: zone-end
 
@@ -103,7 +103,7 @@ Aby uzyskać wskazówki dotyczące zautomatyzowanego korygowania, zobacz [Azure 
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="scale-the-solution-with-a-service-catalogtabservicecatalog"></a>[Skalowanie rozwiązania przy użyciu katalogu usług](#tab/ServiceCatalog)
+## <a name="scale-the-solution-with-a-service-catalog"></a>[Skalowanie rozwiązania przy użyciu katalogu usług](#tab/ServiceCatalog)
 
 ::: zone-end
 
@@ -119,7 +119,7 @@ Aby uzyskać instrukcje dotyczące publikowania w katalogu usług, zapoznaj się
 
 1. W witrynie Azure Portal przejdź do pozycji **Centrum aplikacji zarządzanych (wersja zapoznawcza)** .
 2. W okienku **Przeglądaj** wybierz pozycję **Aplikacje w katalogu usług**.
-3. Kliknij pozycję **+ Dodaj**, aby wybrać definicję aplikacji z katalogu usług firmy.
+3. Wybierz pozycję **+ Dodaj**, aby wybrać definicję aplikacji z katalogu usług firmy.
 
 Zostaną wyświetlone wszystkie obsługiwane aplikacje zarządzane.
 
@@ -153,7 +153,7 @@ Zostaną wyświetlone wszystkie obsługiwane aplikacje zarządzane.
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="continuous-improvementtabcontinuousimprovement"></a>[Ciągłe ulepszanie](#tab/ContinuousImprovement)
+## <a name="continuous-improvement"></a>[Ciągłe ulepszanie](#tab/ContinuousImprovement)
 
 ::: zone-end
 

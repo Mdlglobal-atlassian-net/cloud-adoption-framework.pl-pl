@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik po innowacjach na platformie Azure: Przygotowanie do zbierania opinii klientów'
-description: Przygotowanie do zbierania opinii klientów
+title: 'Innowacje na platformie Azure: Przygotowanie do zbierania opinii'
+description: Dowiedz się, jak używać narzędzi platformy Azure do zbierania ilościowych i jakościowych opinii na temat aplikacji internetowych i interfejsów API hostowanych w usłudze GitHub.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c78eae75bca30cac541a997fa9d4901b03b277c0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808366"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171093"
 ---
 ::: zone target="docs"
 
@@ -39,7 +39,7 @@ Należy zapewnić udostępnione repozytorium dla swojego rozwiązania przed zint
 
 Każde z poniższych narzędzi platformy Azure umożliwia integrację z projektami hostowanymi w witrynie GitHub (lub jest z nimi zgodne):
 
-## <a name="quantitative-feedback-for-web-appstabquantitative-apps"></a>[Ilościowe informacje zwrotne dotyczące aplikacji internetowych](#tab/Quantitative-Apps)
+## <a name="quantitative-feedback-for-web-apps"></a>[Ilościowe informacje zwrotne dotyczące aplikacji internetowych](#tab/Quantitative-Apps)
 
 Application Insights to narzędzie monitorujące, które pozwala korzystać — niemal w czasie rzeczywistym — z ilościowych informacji zwrotnych na temat użycia aplikacji. Informacje te pomagają przetestować i zweryfikować bieżącą hipotezę, co ułatwia kształtowanie następnej funkcji lub scenariusza użytkownika na liście prac.
 
@@ -74,7 +74,7 @@ Aby wyświetlić dane dotyczące aplikacji, przejdź do witryny [Azure Portal](h
 - [Wprowadzenie do usługi Azure Monitor Application Insights](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
 - [Tworzenie pulpitu nawigacyjnego danych telemetrycznych](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards)
 
-## <a name="quantitative-feedback-for-apistabquantitative-apis"></a>[Ilościowe informacje zwrotne dotyczące interfejsów API](#tab/Quantitative-APIs)
+## <a name="quantitative-feedback-for-apis"></a>[Ilościowe informacje zwrotne dotyczące interfejsów API](#tab/Quantitative-APIs)
 
 Połączona gospodarka zmienia sposób wprowadzania innowacji w firmach. Rośnie dynamika zakłóceń działalności w poszczególnych rynkach i sektorach. Zakłócenia te mają różną postać, a firmy muszą zmagać się z _dylematem innowatora_: jak skoordynować tempo zmian bez kolidowania z bieżącą działalnością biznesową.
 
@@ -116,7 +116,7 @@ Aby otworzyć usługi API Management, przejdź do witryny [Azure Portal](https:/
 
 - [Używanie usługi Azure Monitor w celu uzyskania informacji zwrotnych z interfejsów API](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor)
 
-## <a name="qualitative-feedbacktabqualitative"></a>[Jakościowe informacje zwrotne](#tab/Qualitative)
+## <a name="qualitative-feedback"></a>[Jakościowe informacje zwrotne](#tab/Qualitative)
 
 Lista prac (tablica) umożliwia rejestrowanie informacji zwrotnych jako scenariuszy użytkownika. Pozwala ona również śledzić powiązaną pracę jako zadania umożliwiające podejmowanie odpowiednich działań. Usługę Azure Boards można zintegrować bezpośrednio z witryną GitHub, co pozwala bezproblemowo zarządzać zadaniami dotyczącymi informacji zwrotnych oraz kodem źródłowym.
 
@@ -154,7 +154,7 @@ Te artykuły ułatwią scentralizowanie informacji zwrotnych i zarządzanie nimi
 - [Wprowadzenie do usługi Azure Boards](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 - [Usługa Azure Boards i witryna GitHub](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
 
-## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Zamykanie pętli z potokami](#tab/pipelines)
+## <a name="close-the-loop-with-pipelines"></a>[Zamykanie pętli z potokami](#tab/pipelines)
 
 Reagowanie na informacje zwrotne nie zawsze skutkuje wprowadzeniem funkcji, o którą prosi klient. Jednak każdy punkt danych powinien powodować jakąś zmianę. Zmiana ta może dotyczyć sposobu myślenia. Może to być również zmiana techniczna, zupełnie inna niż zmiana oczekiwana przez klienta. Potoki wdrażania i narzędzia, np. usługa Azure Pipelines, umożliwiają szybkie publikowanie takich zmian, co pozwala często je udostępniać klientom.
 

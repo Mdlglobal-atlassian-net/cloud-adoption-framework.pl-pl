@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3e9eadbd246ba38f496d8c74b7bcd3e6ade03685
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 908b2c8b07f66d53264e78432e07736a426d1be9
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808162"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223536"
 ---
 # <a name="protect-and-recover-in-azure"></a>Ochrona i odzyskiwanie na platformie Azure
 
@@ -38,7 +38,7 @@ Ta tabela zawiera sugerowane wartości minimalne planu bazowego zarządzania dla
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-backuptabupdbackupatemanagement"></a>[Azure Backup](#tab/UpdbackupateManagement)
+## <a name="azure-backup"></a>[Azure Backup](#tab/UpdbackupateManagement)
 
 ::: zone-end
 
@@ -69,7 +69,7 @@ Usługa Azure Backup umożliwia tworzenie kopii zapasowej, ochronę i odzyskiwan
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-site-recoverytabsiterecovery"></a>[Azure Site Recovery](#tab/siterecovery)
+## <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
 
 ::: zone-end
 

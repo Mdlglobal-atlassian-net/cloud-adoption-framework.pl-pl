@@ -1,30 +1,36 @@
 ---
-title: Optymalizowanie i przekształcanie
+title: Optymalizowanie i podwyższanie poziomu
 description: Ta część przewodnika po migracji na platformę Azure zawiera opis obszarów optymalizacji, w tym sprawdzanie projektu rozwiązania, prawidłowe dobieranie rozmiarów usług i analizowanie kosztów.
 author: matticusau
 ms.author: mlavery
-ms.date: 04/04/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5173dc348ee0c9251b4c5e41aaa2b193da6ea890
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: bcd49a2168db862c3e1a0d948e4948abccbfe7c7
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994163"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222500"
 ---
-# <a name="optimize-and-transform"></a>Optymalizowanie i przekształcanie
+<!-- cSpell:ignore Fservers Fdatabases -->
 
-Po przeprowadzeniu migracji usług na platformę Azure następnym etapem jest przejrzenie rozwiązania pod kątem możliwych obszarów optymalizacji. Może to obejmować przegląd projektu rozwiązania, dobór wielkości usług oraz analizowanie kosztów.
+<!-- markdownlint-disable MD025 DOCSMD001 -->
+
+# <a name="test-optimize-and-promote"></a>Testowanie, optymalizowanie i podwyższanie poziomu
+
+Po przeprowadzeniu migracji usług na platformę Azure następnym etapem jest przejrzenie rozwiązania pod kątem możliwych obszarów optymalizacji. Może to obejmować przegląd projektu rozwiązania, dobór rozmiaru usług oraz analizowanie kosztów.
 
 Ta faza może być również okazją do optymalizacji środowiska i jego ewentualnej transformacji. Na przykład można wykonać migrację metodą „ponownego hostowania”, a po uruchomieniu usług na platformie Azure można ponownie przejrzeć konfigurację rozwiązań lub używane usługi, a także wykonać kilka operacji „refaktoryzacji” w celu modernizacji i zwiększenia funkcjonalności rozwiązania.
 
-# <a name="right-size-assetstaboptimize"></a>[Zasoby o odpowiedniej wielkości](#tab/optimize)
+Pozostała część tego artykułu dotyczy narzędzi do optymalizowania migrowanego obciążenia. Po osiągnięciu równowagi wydajności i kosztów obciążenie jest gotowe do podwyższenia poziomu do środowiska produkcyjnego. Aby uzyskać wskazówki dotyczące opcji podwyższania poziomu, zobacz artykuły na temat ulepszania procesów w sekcji [Optymalizowanie i podwyższanie poziomu](../migration-considerations/optimize/index.md).
 
-Za pomocą portalu usługi Azure, interfejsu wiersza polecenia lub programu PowerShell można zmienić zakres wszystkich usług platformy Azure, które korzystają z modelu kosztów opartych na użyciu. Pierwszym krokiem podczas prawidłowej zmiany wielkości usługi jest sprawdzenie metryk użycia. Usługa Azure Monitor zapewnia dostęp do tych metryk. Może być konieczne skonfigurowanie kolekcji metryk dla analizowanej usługi i zapewnienie odpowiedniego czasu na zebranie znaczących danych na podstawie wzorców obciążenia.
+# <a name="right-size-assets"></a>[Dobieranie rozmiaru zasobów](#tab/optimize)
+
+Za pomocą portalu usługi Azure, interfejsu wiersza polecenia lub programu PowerShell można zmienić zakres wszystkich usług platformy Azure, które korzystają z modelu kosztów opartych na użyciu. Pierwszym krokiem podczas właściwego dobierania rozmiaru usług jest sprawdzenie ich metryk użycia. Usługa Azure Monitor zapewnia dostęp do tych metryk. Może być konieczne skonfigurowanie kolekcji metryk dla analizowanej usługi i zapewnienie odpowiedniego czasu na zebranie znaczących danych na podstawie wzorców obciążenia.
 
 1. Przejdź do obszaru **Monitor**.
 1. Wybierz opcję **Metryki** i skonfiguruj wykres, aby wyświetlić metryki dla usługi przeznaczonej do analizy.
@@ -39,7 +45,7 @@ Poniżej wymieniono niektóre typowe usługi, których wielkość można zmieni�
 
 ## <a name="resize-a-virtual-machine"></a>Zmienianie rozmiaru maszyny wirtualnej
 
-Usługa Azure Migrate wykonuje analizę doboru wielkości jako część fazy oceny wstępnej migracji, a rozmiar maszyn wirtualnych migrowanych przy użyciu tego narzędzia zostanie dobrany w zależności od wymagań wstępnej migracji.
+Usługa Azure Migrate wykonuje analizę doboru rozmiaru jako część fazy oceny wstępnej migracji, a rozmiar maszyn wirtualnych migrowanych przy użyciu tego narzędzia zostanie dobrany w zależności od wymagań wstępnej migracji.
 
 Jednak w przypadku maszyn wirtualnych utworzonych lub migrowanych przy użyciu innych metod lub w przypadkach, gdy wymagania dotyczące maszyny wirtualnej po migracji wymagają dopasowania, warto dokładniej dostosować rozmiar maszyny wirtualnej.
 
@@ -48,8 +54,7 @@ Jednak w przypadku maszyn wirtualnych utworzonych lub migrowanych przy użyciu i
 1. Wybierz opcję **Rozmiar** oraz wymagany nowy rozmiar z listy. W celu znalezienia wymaganego rozmiaru może być konieczne dostosowanie filtrów.
 1. Wybierz opcję **Zmień rozmiar**.
 
-Należy pamiętać, że zmiana rozmiarów produkcyjnych maszyn wirtualnych może spowodować zakłócenia w działaniu usługi. Spróbuj zastosować prawidłowe rozmiary maszyn wirtualnych przed podwyższeniem ich poziomu do środowiska produkcyjnego.
-
+Zmiana rozmiaru produkcyjnych maszyn wirtualnych może spowodować zakłócenia w działaniu usług. Spróbuj zastosować prawidłowe rozmiary maszyn wirtualnych przed podwyższeniem ich poziomu do środowiska produkcyjnego.
 
 ::: zone target="chromeless"
 
@@ -95,7 +100,7 @@ W celu sprawdzenia użycia partnerzy mogą skorzystać z Centrum partnerskiego.
 
 ::: zone-end
 
-# <a name="cost-managementtabmanagecost"></a>[Zarządzanie kosztami](#tab/ManageCost)
+# <a name="cost-management"></a>[Zarządzanie kosztami](#tab/ManageCost)
 
 Ważne jest, aby przeprowadzić analizę i przegląd kosztów. Zapewnia to możliwość zmiany rozmiaru zasobów w zależności od potrzeb w celu zrównoważenia kosztów i obciążeń.
 
