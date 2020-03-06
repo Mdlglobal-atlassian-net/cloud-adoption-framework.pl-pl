@@ -1,18 +1,18 @@
 ---
-title: Planowanie wymagań wstępnych dotyczących usług zarządzania serwerem Azure
-description: Narzędzia wymagające wymagań wstępnych i planowanie dla usług zarządzania serwerem Azure
+title: Planowanie usług zarządzania serwerem Azure
+description: Informacje na temat narzędzi i przygotowanie do zasobów wymaganych do zarządzania usługami zarządzania serwerem Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 934263f5c143d021ce97125f025f96d8ae6f338f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7e64edb1f009d2fe7a522a9716c3b8ba2d52ef12
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807975"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341601"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Faza 1: planowanie wymagań wstępnych dla usług zarządzania serwerem Azure
 
