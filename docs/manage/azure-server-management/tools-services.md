@@ -1,18 +1,18 @@
 ---
-title: Narzędzia i usługi zarządzania serwerem platformy Azure
-description: Narzędzia i usługi zarządzania serwerem platformy Azure
+title: Usługi zarządzania serwerem Azure
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się więcej o obszarach w ramach pakietu usług zarządzania serwerem platformy Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: df6851ff628c0abcb38ee9139fcf24f31e2117cf
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 38f7c2f6fc5be0cdad9a963fcf7f0fbb65937d3d
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223285"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341599"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Narzędzia i usługi zarządzania serwerem platformy Azure
 
@@ -22,7 +22,7 @@ Zgodnie z [omówieniem](./index.md) tych wskazówek, pakiet usług zarządzania 
 - Bezpieczeństwo
 - Ochrona
 - Monitorowanie
-- Konfiguracja
+- Konfigurowanie
 - Ład
 
 W poniższych sekcjach krótko opisano te obszary zarządzania i przedstawiono linki do szczegółowej zawartości dotyczącej głównych usług platformy Azure, które je obsługują.
@@ -61,7 +61,7 @@ W przypadku danych na serwerze plików można [Azure File Sync](https://docs.mic
 - Log Analytics ([dzienniki](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection#logs)) to funkcja Azure monitor. Jego rolą jest centralny ogólny scenariusz zarządzania platformy Azure. Służy jako magazyn danych do analizy dzienników i dla wielu innych usług platformy Azure. Oferuje on bogaty język zapytań i aparat analityczny, który zapewnia wgląd w działanie aplikacji i zasobów.
 - [Dziennik aktywności platformy Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) jest również funkcją Azure monitor. Zapewnia wgląd w zdarzenia na poziomie subskrypcji występujące na platformie Azure.
 
-## <a name="configure"></a>Konfiguracja
+## <a name="configure"></a>Konfigurowanie
 
 Kilka usług mieści się w tej kategorii. Mogą one ułatwić:
 
@@ -73,7 +73,7 @@ Kilka usług mieści się w tej kategorii. Mogą one ułatwić:
 
 Te usługi są niezbędne do obsługi bieżących operacji:
 
-- [Update Management](https://docs.microsoft.com/azure/automation/automation-update-management#view-update-assessments) automatyzuje wdrażanie poprawek w środowisku, w tym wdrażanie w wystąpieniach systemu operacyjnego działającego poza platformą Azure. Obsługuje systemy operacyjne Windows i Linux oraz śledzi najważniejsze luki w zabezpieczeniach systemu operacyjnego i niezgodności spowodowane przez brakujące poprawki.
+- [Update Management](/azure/automation/automation-update-management) automatyzuje wdrażanie poprawek w środowisku, w tym wdrażanie w wystąpieniach systemu operacyjnego działającego poza platformą Azure. Obsługuje systemy operacyjne Windows i Linux oraz śledzi najważniejsze luki w zabezpieczeniach systemu operacyjnego i niezgodności spowodowane przez brakujące poprawki.
 - [Change Tracking i spis](https://docs.microsoft.com/azure/automation/change-tracking) zapewniają wgląd w oprogramowanie, które jest uruchomione w danym środowisku, i wyróżnia wszystkie zmiany, które wystąpiły.
 - [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) umożliwia uruchamianie skryptów Python i PowerShell oraz elementów Runbook w celu zautomatyzowania zadań w środowisku. W przypadku korzystania z usługi Automation z [hybrydowym procesem roboczym elementu Runbook](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)można także rozciągnąć elementy Runbook do zasobów lokalnych.
 - [Azure Automation konfiguracja stanu](https://docs.microsoft.com/azure/automation/automation-dsc-overview) umożliwia wypychanie konfiguracji stanu żądanego (DSC) programu PowerShell bezpośrednio z platformy Azure. Konfiguracja DSC umożliwia również monitorowanie i zachowywanie konfiguracji dla systemów operacyjnych gościa i obciążeń.

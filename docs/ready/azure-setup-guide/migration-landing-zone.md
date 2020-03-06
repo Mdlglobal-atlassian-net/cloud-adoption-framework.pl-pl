@@ -1,6 +1,6 @@
 ---
-title: Wdrażanie strefy docelowej migracji na platformie Azure
-description: Dowiedz się, jak wdrożyć strefę docelową migracji na platformie Azure.
+title: Wdrażanie strefy docelowej migracji platformy Azure
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak wdrożyć zdefiniowane środowisko przy użyciu planu strefy docelowej.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: cac594b7acd3764e6e5663ad28a77f292f7d440b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ba20999ecaf3b0abbde371fb965618fc24ee2479
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225342"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341894"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Wdrażanie strefy docelowej migracji
 
@@ -64,11 +64,11 @@ Strategia strefy docelowej odzwierciedla następujące decyzje.
 |Projekt subskrypcji|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)|
 |Grupy zarządzania|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)         |
 |Grupy zasobów|nd. — zaprojektowana dla jednej subskrypcji produkcyjnej|[Skalowanie subskrypcji](../azure-best-practices/scaling-subscriptions.md)         |
-|Dane|N/D|[Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Storage|N/D|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)         |
-|Standardy nazewnictwa i tagowania|N/D|[Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)         |
-|Zarządzanie kosztami|N/D|[Śledzenie kosztów](../azure-best-practices/track-costs.md)|
-|Compute|N/D|[Opcje środowiska obliczeniowego](../considerations/compute-options.md)|
+|Dane|Nie dotyczy|[Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Storage|Nie dotyczy|[Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)         |
+|Standardy nazewnictwa i tagowania|Nie dotyczy|[Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)         |
+|Zarządzanie kosztami|Nie dotyczy|[Śledzenie kosztów](../azure-best-practices/track-costs.md)|
+|Compute|Nie dotyczy|[Opcje środowiska obliczeniowego](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Dostosowywanie lub wdrażanie strefy docelowej przy użyciu tej strategii
 

@@ -1,18 +1,18 @@
 ---
-title: 'Wyrównanie biznesowe: zarządzanie i operacje w chmurze'
-description: Wyrównanie biznesowe — zarządzanie chmurą i operacje
+title: Wyrównanie biznesowe w zarządzaniu chmurą
+description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak lepiej zarządzać operacjami w chmurze i rozwijać ściślejsze wyrównania biznesowe.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 114589d11b5e915400832d3d61a3ba91ca9d89fc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e06aca53ac70e602d13d2cc23d59d4b56c2cd152
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807873"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341440"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Tworzenie wyrównania biznesowego w zarządzaniu chmurą
 

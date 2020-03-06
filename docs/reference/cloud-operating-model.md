@@ -1,6 +1,6 @@
 ---
-title: Model operacyjny chmury to teraz Microsoft Cloud Framework wdrażania dla platformy Azure
-description: Dowiedz się więcej o korzystaniu z rozwiązań w zakresie modeli operacyjnych w chmurze w ramach struktury wdrażania w chmurze.
+title: Model operacyjny chmury to teraz platforma wdrażania w chmurze dla platformy Azure
+description: Korzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, co, dlaczego i jak przyspieszać Wdrażanie chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8408b657a3896cbb9376d0364dbd752ed90b9306
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: dc6a9244b16c0de69a870323d0099e37f85c075a
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048136"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342001"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Model operacyjny chmury jest teraz częścią platformy wdrażania Microsoft Cloud dla systemu Azure
 
 Na początku 2018 roku firma Microsoft udostępniła przewodnik Cloud Operating Model (COM). Model COM był przewodnikiem, który pomaga klientom zrozumieć **znaczenie** i **przyczynę** transformacji cyfrowej. Dzięki temu klienci mogą poznać wszystkie obszary, które są potrzebne do rozprowadzenia: strategii biznesowej, strategii kulturowej i strategii technologicznej. Co nie zostało uwzględnione w modelu COM, a to _, co_pozostało, co pozostało w tym miejscu?
 
-W październiku 2018 rozpocząłmy przegląd wszystkich modeli, które zostały rozdzielone przez społeczność firmy Microsoft. znaleźliśmymy w 60 przybliżeniu różne modele wdrażania w chmurze. Zespół międzyfirmowy został opracowany w celu przełączenia wszystkiego ze sobą jako dedykowanego "produktu" ze zdefiniowanymi implementacjami w ramach usług, sprzedaży i marketingu. Ten nakład pracy culminated w tworzeniu jednego modelu, Microsoft Cloud Framework wdrażania dla platformy Azure, który ułatwia klientom zrozumienie tego, **co** i **dlaczego** i zapewnianie ujednoliconych wskazówek dotyczących sposobu, w **jaki** ułatwia im przyspieszenie Wdrażanie w chmurze. Celem tego projektu jest utworzenie jednego podejścia firmy Microsoft do wdrażania w chmurze.
+W październiku 2018 rozpocząłmy przegląd wszystkich modeli, które zostały rozdzielone przez społeczność firmy Microsoft. znaleźliśmymy w 60 przybliżeniu różne modele wdrażania w chmurze. Zespół międzyfirmowy został opracowany w celu przełączenia wszystkiego ze sobą jako dedykowanego "produktu" ze zdefiniowanymi implementacjami w ramach usług, sprzedaży i marketingu. Ten nakład pracy culminated przy tworzeniu jednego modelu, Microsoft Cloud Framework wdrażania dla platformy Azure, zaprojektowany w celu ułatwienia klientom zrozumienia tego, **co** i **dlaczego** i zapewnić ujednolicone wskazówki dotyczące tego, **jak** ułatwić im przyspieszenie wdrożenia chmury. Celem tego projektu jest utworzenie jednego podejścia firmy Microsoft do wdrażania w chmurze.
 
 ## <a name="using-cloud-operating-model-practices-within-the-cloud-adoption-framework"></a>Korzystanie z rozwiązań modelu operacyjnego w chmurze w ramach struktury wdrażania chmury
 
@@ -47,7 +47,7 @@ Zakresy wysokiego poziomu modelu operacyjnego chmury i struktury wdrażania chmu
 > [!NOTE]
 > Zakres struktury wdrażania chmury ma dwa znaczące punkty przejrzystości. W strukturze wdrażania w chmurze, Strategia biznesowa wykracza poza dokumentację kosztów chmury&mdash;informacje o zrozumieniu, żądanych rezultatach, zwracaniu i kosztach związanych z chmurą w celu utworzenia planów akcji i jasnego uzasadnienia biznesowego. W strukturze wdrażania w chmurze, strategia osób wykracza poza szkolenie, aby uwzględnić podejścia, które tworzą oczywisty termin zapadalności w kulturze. Kilka obszarów planu zawiera pokazy wpływu zarządzania Agile, integrację z DevOps, empatię klienta i Obsession, a także podejścia do tworzenia produktów w ramach produkcji.
 
-## <a name="structure"></a>XML
+## <a name="structure"></a>Struktura
 
 COM zawiera Grafika informacyjna, w którym przedstawiono różne decyzje i akcje, które należy wykonać w trakcie działania w chmurze. Ta ilustracja zapewniała wyraźny sposób komunikowania się z następnymi krokami i decyzjami zależnymi.
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c326461435123b8093c86590baa4461f5048f4df
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: cede336255183abec06311137abfe4e023116c03
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170668"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341780"
 ---
 # <a name="engage-through-applications"></a>Zaangażuj aplikacje
 
@@ -105,7 +105,7 @@ Im większa jest obsługa w rozwiązaniu, tym wolniejsze rozwiązanie będzie si
 
 Aby przygotować się do wielu iteracji wymaganych do dostarczenia innowacyjnego rozwiązania, ważne jest, aby myśleć. Na przykład zminimalizować obciążenia operacyjne wczesne w procesie przez preferowanie opcji bezserwerowych. Na platformie Azure Opcje aplikacji bezserwerowych mogą zawierać [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) lub [kontenery](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql).
 
-Równolegle, platforma Azure zapewnia opcje danych transakcji bezserwerowych, które również zmniejszają koszty. [Lista produkty bazy danych](https://docs.microsoft.com/azure/#pivot=products&panel=databases) zawiera opcje hostingu danych bez konieczności stosowania pełnej platformy danych.
+Równolegle, platforma Azure zapewnia opcje danych transakcji bezserwerowych, które również zmniejszają koszty. [Lista produkty bazy danych](/azure/) zawiera opcje hostingu danych bez konieczności stosowania pełnej platformy danych.
 
 ## <a name="next-steps"></a>Następne kroki
 
