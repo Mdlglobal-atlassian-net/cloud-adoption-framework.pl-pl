@@ -1,6 +1,6 @@
 ---
-title: 'Przewodnik po zarządzaniu platformą Azure: Przed rozpoczęciem'
-description: Dowiedz się, jak zarządzać operacjami na platformie Azure, korzystając z tych wskazówek krok po kroku.
+title: Omówienie zarządzania platformą Azure
+description: Poznaj przewodnik Cloud Adoption Framework dla platformy Azure dzięki tym informacjom o podstawowych narzędziach potrzebnych do zarządzania środowiskami produkcyjnymi platformy Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,16 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a6f136f3a9aeae8b9ffe6f7e51dbb65da04e81ea
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 37d49948772ca0912dc574ccb299c050eae4aeb4
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223462"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341763"
 ---
+# <a name="azure-management-guide-before-you-start"></a>Przewodnik po zarządzaniu platformą Azure: Przed rozpoczęciem
+
+
 ::: zone target="docs"
 
-# <a name="azure-management-guide-before-you-start"></a>Przewodnik po zarządzaniu platformą Azure: Przed rozpoczęciem
 
 > [!NOTE]
 > Ten przewodnik jest punktem wyjścia do wskazówek dotyczących innowacji w przewodniku Cloud Adoption Framework. Jest dostępny także w centrum Szybki start platformy Azure. Porada w dalszej części tego artykułu zawiera link do centrum Szybki start platformy Azure.
