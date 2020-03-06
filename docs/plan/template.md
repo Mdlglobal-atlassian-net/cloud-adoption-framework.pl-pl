@@ -1,18 +1,18 @@
 ---
-title: Wdróż plan wdrażania chmury w usłudze Azure DevOps
-description: Wdróż szablon planu wdrażania w chmurze
+title: Wdrożenie planu wdrożenia chmury w usłudze Azure DevOps
+description: Dowiedz się, jak szybko wdrożyć zaległość do usługi Azure DevOps za pomocą szablonu planu wdrażania w chmurze, który umożliwia dostosowanie działań związanych z wdrażaniem w chmurze do procesu standardowego.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a7e4dfda94b15a1e589ffadc9b13db57f4a70ef7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a7f03ce1f83d59fdcfe2b2ce696b6b591b8d0655
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800121"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341933"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan wdrażania chmury i usługa Azure DevOps
 

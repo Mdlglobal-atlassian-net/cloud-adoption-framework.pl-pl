@@ -1,18 +1,18 @@
 ---
 title: Ustanowienie przeglądu sprawności operacyjnej
-description: Wskazówki dotyczące podstaw operacyjnych
+description: Ustanów proces przeglądu sprawności operacyjnej w celu pełnego zrozumienia problemów wynikających z uruchamiania obciążeń w środowisku produkcyjnym.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: df13e7bf3622c7062c3da1fc30a6a3fee9d28c90
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9bc4e2bb9b39a83ab8829ea4a12cd1bb019bf0c3
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807567"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341814"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Ustanowienie przeglądu sprawności operacyjnej
 
@@ -24,7 +24,7 @@ Istnieje pięć podstawowych kategorii niefunkcjonalnych wymagań, które są na
 - Dostępność
 - Odporność, w tym ciągłość biznesowa i odzyskiwanie po awarii
 - Zarządzanie
-- Zabezpieczenia
+- Bezpieczeństwo
 
 Proces kontroli sprawności operacyjnej zapewnia, że obciążenia o kluczowym znaczeniu są zgodne z oczekiwaniami firmy w odniesieniu do filarów jakości.
 
@@ -119,7 +119,7 @@ Dostosuj szczegóły procesu i spotkania zgodnie z konkretnymi potrzebami. Zalec
 
 6. Na koniec zespół przeprowadza przegląd trwającej operacji korygowania. Każda Metryka karty wyników dla pracy w toku jest sprawdzana pod kątem oczekiwanych kryteriów. W przypadku składników składników, które spełniają kryteria metryk, właściciel usługi prezentuje dane rejestrowania i monitorowania w celu potwierdzenia spełnienia kryteriów. Dla tych składników składowych, które nie spełniają kryteriów metryk, każdy właściciel inżynierów objaśnia problemy, które uniemożliwiają spełnienie kryteriów i przedstawia wszelkie nowe projekty do skorygowania.
 
-## <a name="recommended-resources"></a>Polecane zasoby
+## <a name="recommended-resources"></a>Zalecane zasoby
 
 - [Filary jakości oprogramowania](https://docs.microsoft.com/azure/architecture/guide/pillars).
     W tej części przewodnika po architekturze aplikacji platformy Azure opisano pięć filarów jakości oprogramowania: skalowalność, dostępność, odporność, zarządzanie i zabezpieczenia.
