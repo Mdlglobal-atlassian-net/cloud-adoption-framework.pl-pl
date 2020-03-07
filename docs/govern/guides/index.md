@@ -10,11 +10,11 @@ ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: 51f24653998ab3cd4cf7fd043b487e4d7c1ccc5b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
-ms.translationtype: HT
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709230"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337726"
 ---
 # <a name="cloud-governance-guides"></a>Przewodniki dotyczące ładu w chmurze
 
@@ -89,7 +89,7 @@ Aby rozpocząć podróż nadzoru, wybierz jedną z dwóch poniższych opcji. Opc
 | Stan | Przedsiębiorstwo standardowe | Przedsiębiorstwo złożone |
 |---|---|---|
 | Centrum danych lub inni dostawcy hostingu | Mniej niż pięć centrów danych | Więcej niż pięć centrów danych |
-| Networking | Brak sieci WAN lub jeden bądź dwóch dostawców sieci WAN | Złożona sieć lub globalna sieć WAN |
+| Sieć | Brak sieci WAN lub jeden bądź dwóch dostawców sieci WAN | Złożona sieć lub globalna sieć WAN |
 | Tożsamość | Pojedynczy las, pojedyncza domena. | Złożone, wiele lasów, wiele domen. |
 
 ### <a name="desired-future-state-after-incremental-improvement-of-cloud-governance"></a>Żądany przyszły stan po przyrostowym ulepszaniu ładu chmury
