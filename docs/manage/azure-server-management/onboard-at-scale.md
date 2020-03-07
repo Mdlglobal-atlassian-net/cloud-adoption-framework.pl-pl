@@ -1,18 +1,18 @@
 ---
-title: Konfigurowanie usług zarządzania serwerem Azure dla subskrypcji
-description: Konfigurowanie usług zarządzania serwerem Azure dla subskrypcji
+title: Konfigurowanie usługi dla subskrypcji
+description: Dowiedz się, jak skonfigurować usługi zarządzania serwerem Azure dla subskrypcji przez wdrożenie agentów usług na serwerach i włączenie rozwiązań do zarządzania.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dd3cbd9deda4d0325f014be4bc793b59aa973788
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: cb34f026b5161b20fc6e3a20bf4993b6b44ede4f
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223390"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341600"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>Konfigurowanie usług zarządzania serwerem Azure na dużą skalę
 
