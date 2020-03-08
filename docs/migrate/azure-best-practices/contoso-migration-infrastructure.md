@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 314cd954332907f9bf1bf63eb52ed5d88cfab121
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ee12255b7cadf0c8cfc70948f22c47d6c58fbb9c
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223131"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892313"
 ---
 <!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -653,7 +653,7 @@ Usługa Azure Policy ocenia zasoby, skanując je pod kątem elementów niezgodny
 
 Zasady określają definicję zasad, a przypisanie zasad określa zakres, w którym należy zastosować zasady. Zakresem może być zarówno grupa zarządzania, jak i grupa zasobów. [Dowiedz się więcej](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) na temat tworzenia zasad i zarządzania nimi.
 
-Firma Contoso chce zacząć korzystać z kilku zasad:
+Firma Contoso chce rozpocząć kilka zasad:
 
 - Chce mieć pewność, że zasoby można wdrożyć tylko w regionach EUS2 i CUS.
 - Chce ograniczyć jednostki SKU maszyn wirtualnych tylko do zatwierdzonych jednostek SKU. Celem jest upewnienie się, że kosztowne jednostki SKU maszyn wirtualnych nie są używane.
@@ -775,7 +775,7 @@ Firma Contoso zaimplementuje kombinację sieciowych grup zabezpieczeń i grup za
 
 Firma Contoso utworzyła model pokazujący, jak to będzie wyglądać w przypadku jej aplikacji.
 
-![Zabezpieczenia](./media/contoso-migration-infrastructure/asg.png)
+![Bezpieczeństwo](./media/contoso-migration-infrastructure/asg.png)
 
 Sieciowe grupy zabezpieczeń skojarzone z grupami zabezpieczeń aplikacji zostaną skonfigurowane z najniższymi uprawnieniami w celu zapewnienia, że tylko dozwolone pakiety mogą przepływać z jednej części sieci do jej lokalizacji docelowej.
 
@@ -784,7 +784,7 @@ Sieciowe grupy zabezpieczeń skojarzone z grupami zabezpieczeń aplikacji zostan
 Zezwalaj | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 Zezwalaj | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
 Zezwalaj | AllowAppToDB | APP1-APP | APP1-DB | 1433
-Odmów | DenyAllInbound | Dowolne | Dowolne | Dowolne
+Zablokuj | DenyAllInbound | Dowolne | Dowolne | Dowolne
 
 ### <a name="encrypt-data"></a>Szyfrowanie danych
 

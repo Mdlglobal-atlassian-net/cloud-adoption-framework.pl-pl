@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6fcd5892eb9d13b61cbaa697731718e1ca8ce3eb
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708159"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892450"
 ---
 # <a name="architectural-decision-guides"></a>Przewodniki podejmowania decyzji dotyczących architektury
 
@@ -42,8 +42,6 @@ Każda z poniższych kategorii reprezentuje fundamentalną technologię wszystki
 [Szyfrowanie](./encryption/index.md): Zabezpiecz poufne dane przy użyciu szyfrowania, aby dostosować je do wymagań dotyczących zasad zabezpieczeń i zgodności w Twojej organizacji.
 
 [Rejestrowanie i raportowanie](./logging-and-reporting/index.md): Monitoruj dane dzienników generowane przez zasoby oparte na chmurze. Analizowanie danych zapewnia wgląd w związane z kondycją informacje dotyczące operacji, konserwacji i stanu zgodności Twoich obciążeń.
-
-[Wskazówki dotyczące regionów](./regions/index.md): Dyskusja dotycząca odpowiednich kryteriów decyzyjnych dotyczących umieszczania zasobów w odpowiednich regionach w ramach platformy Azure.
 
 ## <a name="next-steps"></a>Następne kroki
 

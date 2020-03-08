@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a6fb28316b55d92d0dc7c130d3e3c86bab942149
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 054537d4d1b9a83700ed0c6a1a8840682f04faa1
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341967"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892501"
 ---
 # <a name="review-your-storage-options"></a>Przejrzyj opcje magazynu
 
@@ -128,7 +128,7 @@ Aby ułatwić ochronę danych w chmurze, usługa Azure Storage oferuje kilka naj
 - Udzielić delegowanego dostępu do obiektów danych w usłudze Azure Storage przy użyciu sygnatur dostępu współdzielonego.
 - Użyć analizy, aby śledzić metodę uwierzytelniania używaną przez użytkownika podczas uzyskiwania dostępu do magazynu na platformie Azure.
 
-Te funkcje zabezpieczeń mają zastosowanie do usługi Azure Blob Storage (dla blokowych i stronicowych obiektów blob) oraz do usługi Azure Files. Szczegółowe wskazówki dotyczące zabezpieczeń magazynu można znaleźć w temacie [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide) (Przewodnik po zabezpieczeniach usługi Azure Storage).
+Te funkcje zabezpieczeń mają zastosowanie do usługi Azure Blob Storage (dla blokowych i stronicowych obiektów blob) oraz do usługi Azure Files. Szczegółowe wskazówki dotyczące zabezpieczeń magazynu można znaleźć w temacie [Azure Storage security guide](https://docs.microsoft.com/azure/storage/blobs/security-recommendations) (Przewodnik po zabezpieczeniach usługi Azure Storage).
 
 Funkcja [Szyfrowanie usługi Storage](https://docs.microsoft.com/azure/storage/storage-service-encryption) udostępnia szyfrowanie nieużywanych danych i zabezpiecza dane zgodnie z zasadami bezpieczeństwa i zgodności obowiązującymi w organizacji. Szyfrowanie usługi Storage jest domyślnie włączone dla wszystkich dysków zarządzanych, migawek i obrazów we wszystkich regionach świadczenia usługi Azure. Począwszy od 10 czerwca 2017 r. wszystkie nowe dyski zarządzane, migawki, obrazy i nowe dane zapisane na istniejących dyskach zarządzanych są automatycznie szyfrowane w trakcie magazynowania przy użyciu kluczy zarządzanych przez firmę Microsoft. Aby uzyskać więcej szczegółowych informacji, odwiedź stronę zawierającą [często zadawane pytania dotyczące dysków zarządzanych](https://docs.microsoft.com/azure/virtual-machines/windows/faq-for-disks#managed-disks-and-storage-service-encryption).
 

@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7bdfe3108c2ccdfd2661d45cc234978c784232f9
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225573"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892705"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące konfigurowania sieci pod kątem obciążeń migrowanych do platformy Azure
 
@@ -40,7 +40,7 @@ Podczas planowania topologii sieci wirtualnej należy wziąć pod uwagę sposób
 
 Gdy tworzysz sieci wirtualne w ramach migracji, ważne jest zaplanowanie przestrzeni adresowej IP sieci wirtualnej.
 
-- Należy przypisać przestrzeń adresową, która nie jest większa od zakresu CIDR /16 dla każdej sieci wirtualnej. Sieci wirtualne zezwalają na korzystanie z 65 536 adresów IP, a przypisanie prefiksu mniejszego niż /16 powoduje utratę adresów IP. Ważne jest, aby nie tracić adresów IP, nawet jeśli znajdują się w zakresach prywatnych zdefiniowanych w dokumencie RFC 1918.
+- Należy przypisać przestrzeń adresową, która nie jest większa od zakresu CIDR /16 dla każdej sieci wirtualnej. Sieci wirtualnych zezwalają na użycie 65 536 adresów IP i przypisanie mniejszego prefiksu niż/16, takiego jak/15, który ma 131 072 adresów, spowoduje to, że nadmiarowe adresy IP staną się unusuable w innym miejscu. Ważne jest, aby nie tracić adresów IP, nawet jeśli znajdują się w zakresach prywatnych zdefiniowanych w dokumencie RFC 1918.
 - Przestrzeń adresowa sieci wirtualnej nie powinna nakładać się z zakresami sieci lokalnych.
 - Nie należy używać translatora adresów sieciowych (NAT).
 - Nakładające się adresy mogą spowodować, że nie będzie można połączyć sieci, a routing nie będzie działać prawidłowo. Jeśli sieci się nakładają, należy ponownie zaprojektować sieć lub użyć translatora adresów sieciowych (NAT).

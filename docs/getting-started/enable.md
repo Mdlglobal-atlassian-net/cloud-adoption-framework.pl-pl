@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 4abfaa8622db86fefb2c7c99589d3ef81a5ed489
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: c9e33b32590cd3b73e5bc42a662abf5ef6de36da
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170175"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892246"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Włącz powodzenie w trakcie podróży w chmurze
 
@@ -22,7 +22,7 @@ Platforma wdrażania w chmurze to bezpłatne narzędzie samoobsługowe, które p
 W tej architekturze włączenie jest podstawową kompozycją. Poniższa lista kontrolna wyszczególniono podstawowe zasady wdrażania rozwiązań w chmurze, które zapewniają, że przeprowadzenie podróży jest uznawane za pomyślne i w firmie:
 
 - **Plan:** Ustanowienie jasnego [rezultatu biznesowego](../strategy/business-outcomes/index.md), jasno zdefiniowanego [planu podpisywania cyfrowego](../digital-estate/index.md)i dobrze zrozumiałego [wdrażania](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
-- **Gotowe:** Zadbaj o gotowość personelu poprzez [plany umiejętności i nauki](../ready/technical-skills.md).
+- **Gotowe:** Zadbaj o gotowość personelu poprzez [plany umiejętności i nauki](../ready/suggested-skills.md).
 - **Działa:** Zdefiniuj model systemu operacyjnego, który można zarządzać, aby poprowadzić działania w trakcie i po jego przyjęciu.
   - **[Organizuj](../organize/index.md):** Wyrównaj osoby i zespoły, aby zapewnić prawidłowe operacje i wdrożenia w chmurze.
   - **Zarządzanie:** Wyrównaj odpowiednie [dyscypliny ładu](../govern/index.md) , aby stale stosować zarządzanie kosztami, ograniczanie ryzyka, zgodność i linie bazowe zabezpieczeń we wszystkich wdrożeniach chmurowych.
@@ -77,7 +77,7 @@ Oprócz struktury wdrażania w chmurze firma Microsoft omawia dodatkowe tematy, 
     </a>
 </li>
 <li style="display: flex; flex-direction: column;">
-    <a href="../ready/technical-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../ready/suggested-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">

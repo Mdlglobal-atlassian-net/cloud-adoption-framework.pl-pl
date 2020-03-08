@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e0c1486dbb498686fe532ecf02b6dcb5e56c7336
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225290"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892518"
 ---
 <!-- cSpell:ignore rodend subscope ITSM -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: zalecenia dotyczące zarządzania subskrypcjami
 
 > [!NOTE]
-> Tworzenie szkieletu przedsiębiorstwa platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud. Zawartość tego artykułu jest teraz reprezentowana w sekcji [gotowych](../ready/index.md) nowej struktury. Ten artykuł zostanie uznany za przestarzały na początku 2020. Aby rozpocząć korzystanie z nowego procesu, zapoznaj się z tematem [gotowy przegląd](../ready/index.md), [Tworzenie pierwszej strefy docelowej](../ready/azure-setup-guide/migration-landing-zone.md)i [zagadnieniami](../ready/considerations/index.md)dotyczącymi strefy.
+> Tworzenie szkieletu przedsiębiorstwa platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud. Zawartość tego artykułu jest teraz reprezentowana w sekcji [gotowych](../ready/index.md) nowej struktury. Ten artykuł zostanie uznany za przestarzały na początku 2020. Aby rozpocząć korzystanie z nowego procesu, zapoznaj się z tematem [gotowy przegląd](../ready/index.md), [Tworzenie pierwszej strefy docelowej](../ready/landing-zone/migrate-landing-zone.md)i [zagadnieniami](../ready/considerations/index.md)dotyczącymi strefy.
 
 Przedsiębiorstwa coraz częściej wdrażają chmurę publiczną pod kątem elastyczności i elastyczność. Są one zależne od siły chmury w celu generowania przychodów i optymalizowania użycia zasobów dla firmy. Microsoft Azure zapewnia wiele usług i możliwości, które przedsiębiorstwa tworzą, takie jak bloki konstrukcyjne, aby zająć szeroką gamę obciążeń i aplikacji.
 
@@ -77,7 +77,7 @@ Trzy typowe wzorce rejestracji platformy Azure to:
 
   ![Wzorzec geograficzny](../_images/reference/geographic.png)
 
-Chociaż każdy z tych wzorców ma swoje miejsce, wzorzec **jednostki biznesowej** jest coraz większy, aby można było modelować model kosztów organizacji, a także odzwierciedlać zakres kontroli. Firma Microsoft Core i Grupa operacji stworzyły efektywny podzestaw wzorca **jednostki biznesowej** modeluje się w **federalnym**, **stanowym**i **lokalnym**. Aby uzyskać więcej informacji, zobacz [organizowanie subskrypcji i grup zasobów w przedsiębiorstwie](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
+Chociaż każdy z tych wzorców ma swoje miejsce, wzorzec **jednostki biznesowej** jest coraz większy, aby można było modelować model kosztów organizacji, a także odzwierciedlać zakres kontroli. Firma Microsoft Core i Grupa operacji stworzyły efektywny podzestaw wzorca **jednostki biznesowej** modeluje się w **federalnym**, **stanowym**i **lokalnym**. Aby uzyskać więcej informacji, zobacz [organizowanie subskrypcji i grup zasobów w przedsiębiorstwie](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions).
 
 ### <a name="azure-management-groups"></a>Grupy zarządzania platformy Azure
 
@@ -186,7 +186,7 @@ W przypadku implementowania dostępu opartego na rolach należy wykonać następ
 
 Planowanie i przygotowywanie do kontroli tożsamości i dostępu oraz stosowanie najlepszych rozwiązań w zakresie zarządzania tożsamościami ([link](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)) jest jednym z najlepszych strategii zaradczych, które można zastosować i powinny być uznawane za obowiązkowe dla każdego wdrożenia.
 
-## <a name="security"></a>Zabezpieczenia
+## <a name="security"></a>Bezpieczeństwo
 
 Jeden z największych blokad do wdrożenia w chmurze tradycyjnie ma wpływ na bezpieczeństwo. Menedżerowie ryzyka IT i działy zabezpieczeń muszą zapewnić, że zasoby na platformie Azure są chronione i zabezpieczone domyślnie. Platforma Azure udostępnia funkcje, których można używać do ochrony zasobów podczas wykrywania i eliminowania zagrożeń związanych z tymi zasobami.
 

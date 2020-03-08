@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: dcc5706e365e3761f236bb5a1c896eb213a1bf5f
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223982"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892161"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Rozpocznij podróż do migracji w chmurze na platformie Azure
 
@@ -63,7 +63,7 @@ Celem tego nakładu jest migracja lub modernizacja obciążeń. Obciążenie to 
 
 Migracje w chmurze są często traktowane jako pojedynczy projekt w ramach szerszego programu w celu usprawnienia operacji, kosztów lub złożoności IT. Metodologia implementacji chmury pomaga w wyrównaniu wysiłków technicznych w ramach serii migracji obciążeń do wartości biznesowych wyższego poziomu, które opisano w strategii i planowaniu chmury.
 
-**Pierwsze kroki:** Aby rozpocząć pracę z implementacją w chmurze, [Przewodnik migracji platformy Azure](../migrate/azure-migration-guide/index.md) i [Przewodnik po Instalatorze platformy Azure](../ready/azure-setup-guide/index.md) przedstawiają narzędzia i procesy wysokiego poziomu, które są konieczne do pomyślnego wykonania implementacji w chmurze. Migrowanie pierwszego obciążenia przy użyciu tych przewodników ułatwi zespołowi pokonanie wstępnych krzywych szkoleniowych w procesie planowania. Następnie należy zwrócić uwagę na dodatkowe zagadnienia dotyczące [rozwiniętej listy kontrolnej zakresu](../migrate/expanded-scope/index.md), najlepszych rozwiązań dotyczących [migracji](../migrate/azure-best-practices/index.md) i [migracji](../migrate/migration-considerations/index.md), aby wyrównać wskazówki dotyczące linii bazowej z unikatowymi ograniczeniami, procesami, strukturami zespołu i celami.
+**Pierwsze kroki:** Rozpocznij implementację w chmurze, korzystając z [przewodnika migracji platformy Azure](../migrate/azure-migration-guide/index.md) i [przewodnika Instalatora platformy Azure](../ready/azure-setup-guide/index.md), który umożliwia tworzenie konspektu narzędzi i procesów wysokiego poziomu wymaganych do pomyślnego wykonania implementacji w chmurze. Migrowanie pierwszego obciążenia przy użyciu tych przewodników ułatwi zespołowi pokonanie wstępnych krzywych szkoleniowych w procesie planowania. Po wykonaniu tych czynności należy uzyskać dodatkowe zagadnienia dotyczące najlepszych rozwiązań dotyczących [migracji](../migrate/azure-best-practices/index.md) i [migracji](../migrate/migration-considerations/index.md) , aby wyrównać wskazówki dotyczące podstawowych ograniczeń, procesów, struktur zespołów i celów związanych z pracą.
 
 ## <a name="cloud-strategy-and-planning"></a>Strategia i planowanie chmury
 

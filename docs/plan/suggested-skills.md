@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a14d6338489fa873b1f78951ca34400819d71c0b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 3fdfbcbaabb79876d32fa8ea172b2c426ada9464
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342035"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892688"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Wprowadzenie do ścieżki gotowości do kwalifikacji
 
@@ -28,7 +28,7 @@ Pracownicy działu IT mogą obawiać się o swoje role i stanowiska, ponieważ r
 - **[Gotowe](../ready/suggested-skills.md):** Opracowuj umiejętności wymagane do przygotowania firmy, kultury, osób i środowiska w celu wprowadzenia zmian.
 
 - **Zastosuj:** Kwalifikacje związane z wdrażaniem są wyrównane do różnych wysiłków technicznych:
-  - **[Migracja](../migrate/expanded-scope/suggested-skills.md):** Uzyskaj umiejętności wymagane do wdrożenia planu migracji do chmury.
+  - **[Migracja](../migrate/suggested-skills.md):** Uzyskaj umiejętności wymagane do wdrożenia planu migracji do chmury.
   - **Innowacje:** Uzyskaj umiejętności wymagane do udostępniania innowacyjnych nowych rozwiązań.
 
 - **Działa:** Umiejętności związane z modelem operacyjnym wdrażania w chmurze są wyrównane do różnych możliwości, aby uzyskać umiejętności:

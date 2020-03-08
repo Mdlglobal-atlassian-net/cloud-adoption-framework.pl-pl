@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4729e8e82cfa6674586cbeb8577fe8c3316423f0
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 04f8c5e53eea03c0a25c84c03a09c4fa0ec60bff
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223960"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892099"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Przewodnik dotyczący ładu dla przedsiębiorstw złożonych
 
@@ -46,7 +46,7 @@ Każda aplikacja powinna zostać wdrożona w odpowiednim obszarze grupy zarządz
 
 1. Grupy zasobów powinny być wdrażane z uwzględnieniem ich cyklu życia zawartości. Zasoby, które są wspólnie tworzone, zarządzane i wycofywane, powinny należeć do tej samej grupy zasobów. Aby uzyskać więcej informacji o najlepszych rozwiązaniach dotyczących używania grup zasobów, [zobacz tutaj](../../../decision-guides/resource-consistency/index.md).
 
-1. [Wybór regionu](../../../decision-guides/regions/index.md) jest niezwykle istotny i należy o nim pamiętać, aby praca w sieci, monitorowanie i inspekcja odbywały się w odpowiedni sposób względem operacji przełączenia w tryb failover i powrotu po awarii, oraz wysyłane było potwierdzenie, że [wymagane jednostki SKU są dostępne w preferowanych regionach](https://azure.microsoft.com/global-infrastructure/services).
+1. [Wybór regionu](../../../migrate/azure-best-practices/multiple-regions.md) jest niezwykle istotny i należy o nim pamiętać, aby praca w sieci, monitorowanie i inspekcja odbywały się w odpowiedni sposób względem operacji przełączenia w tryb failover i powrotu po awarii, oraz wysyłane było potwierdzenie, że [wymagane jednostki SKU są dostępne w preferowanych regionach](https://azure.microsoft.com/global-infrastructure/services).
 
 ![Diagram organizacji zasobów w dużym przedsiębiorstwie](../../../_images/govern/large-enterprise-resource-organization.png)
 

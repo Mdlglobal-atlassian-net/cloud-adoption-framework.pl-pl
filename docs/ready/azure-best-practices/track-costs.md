@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bfd8fd5d227ea0329137015a41cd9f3cb8d8c19b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
-ms.translationtype: HT
+ms.openlocfilehash: 946183aca25ec2a150d6b1f2896e87ea58ad5ef6
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78384098"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78893111"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach
 
@@ -114,14 +114,14 @@ Usługa Azure Cost Management to dobrze udokumentowane narzędzie do ustalania b
 
 ### <a name="get-started-with-azure-cost-management"></a>Wprowadzenie do usługi Azure Cost Management
 
-Aby uzyskać więcej informacji na temat rozpoczynania pracy z usługą Azure Cost Management, zobacz temat [How to optimize your cloud investment with Azure Cost Management](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) (Jak zoptymalizować inwestycję w chmurę przy użyciu usługi Azure Cost Management).
+Aby uzyskać więcej informacji na temat rozpoczynania pracy z usługą Azure Cost Management, zobacz temat [How to optimize your cloud investment with Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) (Jak zoptymalizować inwestycję w chmurę przy użyciu usługi Azure Cost Management).
 
 ### <a name="use-azure-cost-management"></a>Korzystanie z usługi Azure Cost Management
 
-- [Tworzenie budżetów i zarządzanie nimi](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets)
-- [Eksportowanie danych kosztów](https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data)
-- [Optymalizowanie kosztów na podstawie rekomendacji](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
-- [Monitorowanie użycia i wydatków za pomocą alertów o kosztach](https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
+- [Tworzenie budżetów i zarządzanie nimi](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
+- [Eksportowanie danych kosztów](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data)
+- [Optymalizowanie kosztów na podstawie rekomendacji](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
+- [Monitorowanie użycia i wydatków za pomocą alertów o kosztach](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Użycie usługi Azure Cost Management do zarządzania kosztami AWS
 

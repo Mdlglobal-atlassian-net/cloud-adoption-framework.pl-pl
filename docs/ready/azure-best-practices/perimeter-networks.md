@@ -1,6 +1,6 @@
 ---
 title: Sieci obwodowe
-description: Dowiedz się więcej o tym, jak sieci obwodowe, nazywane również strefami zdemilitaryzowana (stref DMZ), korzystają z funkcji i usług platformy Azure.
+description: Dowiedz się, jak sieci obwodowe (zwane również stref DMZ) korzystają z funkcji i usług platformy Azure.
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -10,13 +10,15 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 2aa561a7ffdcf43ffc56ad89849e933ea8abf186
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: c2af34fce6f86ed4aafe432d37e8def9a82d4705
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994222"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892671"
 ---
+<!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
+
 # <a name="perimeter-networks"></a>Sieci obwodowe
 
 [Sieci obwodowe][perimeter-network] umożliwiają bezpieczną łączność między sieciami w chmurze i sieciami w środowisku lokalnym lub w fizycznym centrum danych, wraz z wychodzącymi i przychodzącymi połączeniami internetowymi. Są one również nazywane strefami zdemilitaryzowanymi (DMZ).
@@ -41,7 +43,7 @@ Sieci obwodowe korzystają z następujących funkcji i usług platformy Azure:
 
 Zazwyczaj centralne zespoły IT oraz zespoły ds. bezpieczeństwa są odpowiedzialne za określenie wymagań dotyczących obsługi sieci obwodowych.
 
-![Przykład topologii sieci gwiazdy i gwiazdy][7]
+![Przykład topologii sieci gwiazdy i gwiazdy](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 
 Na powyższym diagramie przedstawiono przykładową [topologię sieci Hub i szprych](./hub-spoke-network-topology.md) , która implementuje wymuszanie dwóch obwodów z dostępem do Internetu i sieci lokalnej. Oba obwody znajdują się w koncentratorze DMZ. W koncentratorze DMZ sieć obwodowa połączona z Internetem może skalować w górę w celu zapewnienia obsługi wielu aplikacji biznesowych (LOB), korzystając z wielu farm zapór aplikacji internetowych oraz wystąpień usługi Azure Firewall, które pomagają chronić sieci wirtualne szprych. Koncentrator umożliwia również w zależności od potrzeb łączność za pośrednictwem sieci VPN lub usługi Azure ExpressRoute.
 
@@ -107,40 +109,13 @@ Zasady ochrony można dostosowywać przy użyciu dedykowanego monitorowania ruch
 
 Dane telemetryczne w czasie rzeczywistym są dostępne w widokach usługi Azure Monitor zarówno podczas ataku, jak i w celach historycznych. Ochronę warstwy aplikacji można dodać za pomocą zapory aplikacji internetowej w usłudze Azure Application Gateway. Zapewniono ochronę publicznych adresów IP platformy Azure z protokołem IPv4.
 
-<!-- images -->
-
-[0]: ../../_images/azure-best-practices/network-redundant-equipment.png "Przykłady nakładania się składników"
-[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "Ogólny przykład piasty i szprych"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Klaster piast i szprych"
-[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Szprycha do szprychy"
-[4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "Diagram poziomu bloku sieci piasty i szprych"
-[5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "Użytkownicy, grupy, subskrypcje i projekty"
-[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Diagram infrastruktury wysokiego poziomu"
-[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "Diagram infrastruktury wysokiego poziomu"
-[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "Wirtualne sieci równorzędne i sieci obwodowe"
-[9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "Diagram wysokiego poziomu na potrzeby monitorowania"
-[10]: ../../_images/azure-best-practices/network-high-level-workloads.png "Diagram wysokiego poziomu na potrzeby obciążenia"
-
 <!-- links -->
 
-[Limits]: https://docs.microsoft.com/azure/azure-subscription-service-limits
-[Roles]: https://docs.microsoft.com/azure/role-based-access-control/built-in-roles
 [virtual-networks]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview
 [network-security-groups]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg
-[DNS]: https://docs.microsoft.com/azure/dns/dns-overview
-[PrivateDNS]: https://docs.microsoft.com/azure/dns/private-dns-overview
-[VNetPeering]: https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview
 [user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
-[RBAC]: https://docs.microsoft.com/azure/role-based-access-control/overview
-[azure-ad]: https://docs.microsoft.com/azure/active-directory/active-directory-whatis
-[VPN]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways
-[ExR]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction
-[ExRD]: https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about
-[vWAN]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about
 [NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
 [AzFW]: https://docs.microsoft.com/azure/firewall/overview
-[SubMgmt]: https://docs.microsoft.com/azure/architecture/cloud-adoption/reference/azure-scaffold
-[RGMgmt]: https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview
 [perimeter-network]: https://docs.microsoft.com/azure/best-practices-network-security
 [ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
 [DDoS]: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview
@@ -149,15 +124,3 @@ Dane telemetryczne w czasie rzeczywistym są dostępne w widokach usługi Azure 
 [AFDWAF]: https://docs.microsoft.com/azure/frontdoor/waf-overview
 [AppGW]: https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction
 [AppGWWAF]: https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-overview
-[Monitor]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/
-[ActLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
-[DiagLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
-[nsg-log]: https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-manage-log
-[OMS]: https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview
-[NPM]: https://docs.microsoft.com/azure/log-analytics/log-analytics-network-performance-monitor
-[NetWatch]: https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview
-[WebApps]: https://docs.microsoft.com/azure/app-service/
-[HDI]: https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-introduction
-[EventHubs]: https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs
-[ServiceBus]: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
-[traffic-manager]: https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview

@@ -1,18 +1,18 @@
 ---
 title: Jak retrospektywy ułatwiają wywołanie nastawienia na rozwój?
-description: Proces migracji do chmury, który koncentruje się na zadaniach migrowania obciążeń do chmury.
+description: Proces migracji w chmurze, który koncentruje się na zadaniach migrowania obciążeń do chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 759bd75a134b1f5a5992f038a33693f632b86b03
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1bf3c79b95c748880e5d560003aa65acb1949c48
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801515"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891907"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,10 +47,3 @@ Bardzo skuteczne zespoły nie odbywają po prostu spotkań retrospektywnych. One
 Ten nowy etap rozwoju staje się najbardziej widoczny w zmianach na liście prac wydania lub iteracji.
 
 Retrospektywa oznacza podsumowanie wydania lub iteracji, ponieważ zespoły zyskują doświadczenie i uczą się nowych rzeczy oraz [dostosowują listę prac wydania i iteracji](../assess/release-iteration-backlog.md) w taki sposób, aby odzwierciedlały one nowe procesy do przetestowania i przyszłe eksperymenty. Powoduje to rozpoczęcie następnej iteracji w ramach procesów migracji.
-
-## <a name="next-steps"></a>Następne kroki
-
-Sekcja dotycząca [bezpieczeństwa i zarządzania](../secure-and-manage/index.md) może pomóc w przygotowaniu czytelnika do przejścia z migracji do operacji.
-
-> [!div class="nextstepaction"]
-> [Bezpieczne narzędzia do monitorowania i zarządzania](../secure-and-manage/index.md)

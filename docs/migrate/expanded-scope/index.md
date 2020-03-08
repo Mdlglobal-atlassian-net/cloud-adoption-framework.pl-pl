@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba6c768f98e3b74b0478fef0a86e6d8ac5537f1c
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 730da49f910c34bf2bd94b8766cb292520201e50
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222332"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892637"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Zakres rozszerzony dla migracji do chmury
 
@@ -26,15 +26,15 @@ Poniższa lista kontrolna zawiera typowe obszary złożoności, które mogą wym
 
 ### <a name="business-driven-scope-expansion"></a>Aspekty biznesowe rozszerzenia zakresu
 
-- **[Obsługa rynków globalnych](../../decision-guides/regions/index.md):** Firma działa w wielu regionach geograficznych z różnymi wymaganiami dotyczącymi niezależności danych. Aby spełnić te wymagania, należy uwzględnić dodatkowe kwestie podczas przeglądu wymagań wstępnych i dystrybucji zasobów w trakcie migracji.
+- **[Obsługa rynków globalnych](../azure-best-practices/multiple-regions.md):** Firma działa w wielu regionach geograficznych z różnymi wymaganiami dotyczącymi niezależności danych. Aby spełnić te wymagania, należy uwzględnić dodatkowe kwestie podczas przeglądu wymagań wstępnych i dystrybucji zasobów w trakcie migracji.
 
 ### <a name="technology-driven-scope-expansion"></a>Aspekty technologiczne rozszerzenia zakresu
 
-- **[Migracja hostów VMware](./vmware-host.md):** Migracja hostów VMware może przyspieszyć ogólny proces migracji. Wraz z każdym migrowanym hostem VMware można przenieść wiele obciążeń do chmury metodą „lift and shift”. Po migracji te maszyny wirtualne i obciążenia mogą pozostać w programie VMware lub zostać przeniesione do nowoczesnych rozwiązań chmurowych.
-- **[Migracja serwerów SQL](./sql-migration.md):** Migracja serwerów SQL może przyspieszyć ogólny proces migracji. Wraz z każdym migrowanym serwerem SQL można przenieść wiele baz danych i usług, potencjalnie przyspieszając wiele obciążeń.
-- **[Wiele centrów danych](./multiple-datacenters.md):** Migracja wielu centrów danych zdecydowanie zwiększa złożoność. Podczas procesów oceny, migracji, optymalizacji i zarządzania omówiono dodatkowe zagadnienia związane z przygotowaniem bardziej złożonych środowisk.
-- **[Wymagania dotyczące danych przekraczają pojemność sieci](./network-capacity-exceeded.md):** Firmy często decydują się na migrację do chmury, ponieważ pojemność, szybkość lub stabilność istniejącego centrum danych nie jest już zadowalająca. Niestety te same ograniczenia zwiększają złożoność procesu migracji, co wymaga dodatkowego planowania w procesach oceny i migracji.
-- **[Strategia utrzymania ładu lub zgodności](./governance-or-compliance.md):** Jeśli ład i zgodność są ważne z punktu widzenia powodzenia migracji, wymagana jest dodatkowa współpraca między zespołem ds. ładu w zasobach IT i zespołem ds. wdrożenia chmury.
+- **[Migracja hostów VMware](../azure-best-practices/vmware-host.md):** Migracja hostów VMware może przyspieszyć ogólny proces migracji. Wraz z każdym migrowanym hostem VMware można przenieść wiele obciążeń do chmury metodą „lift and shift”. Po migracji te maszyny wirtualne i obciążenia mogą pozostać w programie VMware lub zostać przeniesione do nowoczesnych rozwiązań chmurowych.
+- **[Migracja serwerów SQL](../azure-best-practices/sql-migration.md):** Migracja serwerów SQL może przyspieszyć ogólny proces migracji. Wraz z każdym migrowanym serwerem SQL można przenieść wiele baz danych i usług, potencjalnie przyspieszając wiele obciążeń.
+- **[Wiele centrów danych](../azure-best-practices/multiple-datacenters.md):** Migracja wielu centrów danych zdecydowanie zwiększa złożoność. Podczas procesów oceny, migracji, optymalizacji i zarządzania omówiono dodatkowe zagadnienia związane z przygotowaniem bardziej złożonych środowisk.
+- **[Wymagania dotyczące danych przekraczają pojemność sieci](../azure-best-practices/network-capacity-exceeded.md):** Firmy często decydują się na migrację do chmury, ponieważ pojemność, szybkość lub stabilność istniejącego centrum danych nie jest już zadowalająca. Niestety te same ograniczenia zwiększają złożoność procesu migracji, co wymaga dodatkowego planowania w procesach oceny i migracji.
+- **[Strategia utrzymania ładu lub zgodności](../azure-best-practices/governance-or-compliance.md):** Jeśli ład i zgodność są ważne z punktu widzenia powodzenia migracji, wymagana jest dodatkowa współpraca między zespołem ds. ładu w zasobach IT i zespołem ds. wdrożenia chmury.
 
 Jeśli którykolwiek z tych obszarów złożoności występuje w Twoim scenariuszu, ta sekcja przewodnika Cloud Adoption Framework prawdopodobnie będzie zawierać wskazówki, które pomogą Ci prawidłowo dostosować zakres w procesie migracji.
 
@@ -42,7 +42,7 @@ Każdy z tych scenariuszy został opisany w różnych artykułach w tej sekcji p
 
 ## <a name="next-steps"></a>Następne kroki
 
-Przejrzyj spis treści po lewej stronie, aby znaleźć tematy dotyczące określonych potrzeb lub zmian zakresu. Przeglądanie tych scenariuszy można też zacząć od pierwszego rozszerzenia zakresu na liście, dotyczącego [obsługi rynków globalnych](../../decision-guides/regions/index.md).
+Przejrzyj spis treści po lewej stronie, aby znaleźć tematy dotyczące określonych potrzeb lub zmian zakresu. Przeglądanie tych scenariuszy można też zacząć od pierwszego rozszerzenia zakresu na liście, dotyczącego [obsługi rynków globalnych](../azure-best-practices/multiple-regions.md).
 
 > [!div class="nextstepaction"]
-> [Obsługa rynków globalnych](../../decision-guides/regions/index.md)
+> [Obsługa rynków globalnych](../azure-best-practices/multiple-regions.md)
