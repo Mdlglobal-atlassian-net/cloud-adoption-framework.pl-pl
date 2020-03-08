@@ -1,18 +1,18 @@
 ---
-title: Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach
-description: Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach
+title: Śledzenie kosztów w różnych jednostkach i środowiskach biznesowych
+description: Użyj struktury wdrażania w chmurze dla platformy Azure, aby zrozumieć decyzje i metody implementacji dotyczące tworzenia mechanizmów śledzenia.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a416f5eef95717792036c1a40b99614cefde2cec
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: bfd8fd5d227ea0329137015a41cd9f3cb8d8c19b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337385"
+ms.locfileid: "78384098"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach
 
