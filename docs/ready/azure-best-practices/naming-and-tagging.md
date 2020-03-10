@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 84102816304188bf1b22534938fb6aea267f0d8c
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 119a0b64fe81e593404735e5ce6bc0c656ab23e2
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892654"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023719"
 ---
 <!-- cSpell:ignore eastus westus westeurope usgovia accountlookup messagequery -->
 
@@ -75,6 +75,8 @@ Każde obciążenie może składać się z wielu pojedynczych zasobów i usług.
 
 Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do użycia podczas definiowania konwencji nazewnictwa.
 
+<!-- cSpell:disable -->
+
 ### <a name="general"></a>Ogólne
 
 | Typ elementu zawartości                      | Prefiks nazwy |
@@ -100,6 +102,7 @@ Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do uż
 | Połączenie VPN                   | cn-         |
 | Brama aplikacji              | agw-        |
 | Tabela tras                      | Szlak      |
+| Profil usługi Traffic Manager          | traf-       |
 
 ### <a name="compute-and-web"></a>Obliczenia i sieć Web
 
@@ -149,7 +152,7 @@ Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do uż
 | Azure Cognitive Services         | koło zębate        |
 | Obszar roboczy usługi Azure Machine Learning | mlw-        |
 
-## <a name="analytics-and-iot"></a>Analiza i IoT
+### <a name="analytics-and-iot"></a>Analiza i IoT
 
 | Typ elementu zawartości                      | Prefiks nazwy |
 |---------------------------------|-------------|
@@ -196,6 +199,8 @@ Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do uż
 | Wystąpienie Database Migration Service | DMS        |
 | Magazyn usługi Recovery Services             | rsv-        |
 
+<!-- cSpell:enable -->
+
 ## <a name="metadata-tags"></a>Tagi metadanych
 
 Po zastosowaniu tagów metadanych do zasobów w chmurze można dołączyć informacje o tych elementach zawartości, których nie można było uwzględnić w nazwie zasobu. Te informacje służą do wykonywania bardziej zaawansowanego filtrowania i raportowania zasobów. Tagi te powinny zawierać kontekst dotyczący obciążenia lub aplikacji skojarzonych z zasobem, wymagania operacyjne oraz informacje o własności. Te informacje mogą być używane przez zespoły informatyczne lub biznesowe do odnajdywania zasobów lub generowania raportów dotyczących użycia zasobów i rozliczeń.
@@ -220,6 +225,8 @@ Tagi stosowane do zasobów i tagi wymagane lub opcjonalne są różne w różnyc
 ## <a name="example-names"></a>Przykładowe nazwy
 
 W poniższej sekcji przedstawiono przykłady nazw wspólnych typów zasobów platformy Azure w ramach wdrożenia w chmurze przedsiębiorstwa.
+
+<!-- cSpell:disable -->
 
 <!-- markdownlint-disable MD024 MD033 -->
 

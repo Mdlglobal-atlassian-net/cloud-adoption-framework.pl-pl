@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 524fce58c6592ece46eedec0aea3cc6bbacb6f61
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798506"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023924"
 ---
 # <a name="examples-of-agility-outcomes"></a>Przykłady wyników dotyczącej elastyczności
 
 Zgodnie z opisem w temacie [wyniki biznesowe](./index.md), niektóre potencjalne wyniki biznesowe mogą stanowić podstawę dla każdej rozmowy transformującej transformację z firmą. Ten artykuł koncentruje się na timeliest Business Measure: elastyczność biznesowa. Informacje na temat pozycji rynkowej i konkurencyjnej poziomej firmy mogą pomóc w ideach wyników działalności biznesowej, które są celem podróży transformację firmy.
 
-Tradycyjni funkcjonariusze inwestycji (dyrektorzy działu informatyki) i zespoły IT były uważane za źródło stabilności w podstawowych procesach o krytycznym znaczeniu. Jest to nadal prawdziwe. Niektóre firmy mogą działać prawidłowo, gdy ich platforma IT jest niestabilna. Jednak w dzisiejszym świecie biznesowym jest dużo więcej. Może ona zostać rozszerzona o więcej niż proste centrum kosztów dzięki współpracy z firmą w celu zapewnienia korzyści na rynku. Wiele dyrektorzy działu informatyki i kierownictwo zakłada, że stabilność jest po prostu podstawą dla tego elementu. W przypadku tych liderów elastyczność biznesowa jest miarą udziału w firmie.
+Tradycyjni funkcjonariusze inwestycji i zespoły IT były uważane za źródło stabilności w podstawowych procesach o krytycznym znaczeniu. Jest to nadal prawdziwe. Niektóre firmy mogą działać prawidłowo, gdy ich platforma IT jest niestabilna. Jednak w dzisiejszym świecie biznesowym jest dużo więcej. Może ona zostać rozszerzona o więcej niż proste centrum kosztów dzięki współpracy z firmą w celu zapewnienia korzyści na rynku. Wielu dyrektorów ds. inwestycji i kierownictwa zakłada, że stabilność jest po prostu podstawą dla tego elementu. W przypadku tych liderów elastyczność biznesowa jest miarą udziału w firmie.
 
 <!-- markdownlint-disable MD026 -->
 
@@ -39,6 +39,8 @@ W trakcie wysiłków innowacyjnych w chmurze czas wprowadzenia na rynek to klucz
 ### <a name="aurora-health-care"></a>Opieka zdrowotna Aurora
 
 System opieki zdrowotnej przekształca Usługi online w przyjazne środowisko cyfrowe. Aby przekształcić swoje usługi cyfrowe, Aurora opiekę zdrowotną swoich witryn internetowych na platformę Microsoft Azure i przyjęto strategię ciągłego innowacji.
+
+<!-- cSpell:ignore Jamey Shiels -->
 
 > "Jako zespół koncentrujemy się na rozwiązaniach o wysokiej jakości i szybkości. Wybranie platformy Azure było bardzo analizie przekształceńą decyzją dla nas ".  
 > Jamey Shiels  

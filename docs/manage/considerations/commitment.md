@@ -1,18 +1,18 @@
 ---
-title: 'Zobowiązania biznesowe: zarządzanie i operacje w chmurze'
-description: 'Zobowiązania biznesowe: zarządzanie i operacje w chmurze'
+title: Zobowiązania biznesowe w zarządzaniu chmurą
+description: Oblicz przyszłe powracania z klasyfikacji i wpływu przerw na różne obciążenia, aby podejmować lepsze decyzje biznesowe i zobowiązania.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4827ca2aac045b105beed9c15de366311092a7f2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9a16131436da5543eefd34afd8eafe6bb8a473d5
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807856"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341230"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Zobowiązania biznesowe w zarządzaniu chmurą
 

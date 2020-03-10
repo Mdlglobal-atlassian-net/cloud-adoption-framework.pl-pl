@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 17952dc4c3ff28f2fcfe1a378a9efb969d65925b
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: b0aea9b1b69a659511e9a788e22a0e88e23e9047
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78897981"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023738"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategia utrzymania ładu lub zgodności
 
@@ -52,8 +52,8 @@ Aby lepiej zrozumieć ład, zapoznaj się z [omówieniem pięciu dyscyplin ładu
 
 - [Zarządzanie kosztami](../../govern/cost-management/template.md)
 - [Punkt odniesienia zabezpieczeń](../../govern/security-baseline/template.md)
-- [Spójność zasobów].. /.. /govern/resource-consistency/template.md)
-- [Linia bazowa tożsamości].. /.. /govern/identity-baseline/template.md)
+- [Spójność zasobów](../../govern/resource-consistency/template.md)
+- [Punkt odniesienia obsługi tożsamości](../../govern/identity-baseline/template.md)
 - [Przyspieszanie wdrażania](../../govern/deployment-acceleration/template.md)
 
 Aby uzyskać wskazówki dotyczące opracowywania wytycznych dotyczących ładu opartych na modelu ładu Cloud Adoption Framework, zobacz artykuł [Implementing a cloud governance strategy](../../govern/corporate-policy.md) (Implementacja strategii ładu chmury).

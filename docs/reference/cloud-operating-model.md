@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: dc6a9244b16c0de69a870323d0099e37f85c075a
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: d1ba5e26214a0b60a4fe9fefb23d1dffaf8fa4ed
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342001"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023866"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Model operacyjny chmury jest teraz częścią platformy wdrażania Microsoft Cloud dla systemu Azure
 
-Na początku 2018 roku firma Microsoft udostępniła przewodnik Cloud Operating Model (COM). Model COM był przewodnikiem, który pomaga klientom zrozumieć **znaczenie** i **przyczynę** transformacji cyfrowej. Dzięki temu klienci mogą poznać wszystkie obszary, które są potrzebne do rozprowadzenia: strategii biznesowej, strategii kulturowej i strategii technologicznej. Co nie zostało uwzględnione w modelu COM, a to _, co_pozostało, co pozostało w tym miejscu?
+Na początku 2018 roku firma Microsoft udostępniła przewodnik Cloud Operating Model (COM). Model COM był przewodnikiem, który pomaga klientom zrozumieć **znaczenie** i **przyczynę** transformacji cyfrowej. Dzięki temu klienci mogą poznać wszystkie obszary, które są potrzebne do rozprowadzenia: strategii biznesowej, strategii kulturowej i strategii technologicznej. Co nie zostało uwzględnione w modelu COM, były konkretnymi krokami, _do_ których pozostali klienci zastanawiali się w tym miejscu? ".
 
 W październiku 2018 rozpocząłmy przegląd wszystkich modeli, które zostały rozdzielone przez społeczność firmy Microsoft. znaleźliśmymy w 60 przybliżeniu różne modele wdrażania w chmurze. Zespół międzyfirmowy został opracowany w celu przełączenia wszystkiego ze sobą jako dedykowanego "produktu" ze zdefiniowanymi implementacjami w ramach usług, sprzedaży i marketingu. Ten nakład pracy culminated przy tworzeniu jednego modelu, Microsoft Cloud Framework wdrażania dla platformy Azure, zaprojektowany w celu ułatwienia klientom zrozumienia tego, **co** i **dlaczego** i zapewnić ujednolicone wskazówki dotyczące tego, **jak** ułatwić im przyspieszenie wdrożenia chmury. Celem tego projektu jest utworzenie jednego podejścia firmy Microsoft do wdrażania w chmurze.
 

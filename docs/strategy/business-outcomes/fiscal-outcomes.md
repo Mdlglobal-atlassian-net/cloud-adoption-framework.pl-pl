@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 43cd9dd0d155849c8ed5dda277252e445507f6d8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7ee0451bd356cfc3fb4c7648f0bbf6b10ab0145f
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806853"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023839"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Przykłady wyników fiskalnych
 
@@ -55,6 +55,8 @@ W chmurze obliczeniowej można zredukować wydatki inwestycyjne dotyczące sprz�
 - **Przykład #1:** Centrum danych firmy zużywa znaczną część rocznego budżetu IT. Umożliwia ona przeprowadzenie migracji w chmurze i przejście zasobów w tym centrum danych do rozwiązań infrastruktury jako usługi (IaaS).
 - **Przykład #2:** Firma holdingowa niedawno uzyskała nową firmę. W ramach przejęcia warunki określają, że nowa jednostka powinna zostać usunięta z bieżących centrów danych w ciągu sześciu miesięcy. Niewykonanie tej czynności spowoduje powstanie 1 000 000 USD miesięcznie od firmy holdingowej. Przenoszenie zasobów cyfrowych do chmury w ramach migracji do chmury może pozwolić na szybką likwidację starych zasobów.
 - **Przykład #3:** Firma podatkowa korzystająca z podatku dochodowego, która pozyskuje odbiorców w przypadku 70 procent rocznego przychodu w ciągu pierwszych trzech miesięcy roku. Pozostała część roku, jej duża inwestycja w IT jest stosunkowo nieaktywny. Migracja w chmurze może umożliwić jej wdrożenie pojemności obliczeniowej/hostingu wymaganej przez te trzy miesiące. W pozostałych dziewięciu miesiącach koszty IaaS mogą być znacząco ograniczone przez zmniejszenie wpływu obliczeń.
+
+<!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
 
 ### <a name="example-coverdell"></a>Przykład: Coverdell
 

@@ -8,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: e0c1486dbb498686fe532ecf02b6dcb5e56c7336
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892518"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023947"
 ---
-<!-- cSpell:ignore rodend subscope ITSM -->
+<!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: zalecenia dotyczące zarządzania subskrypcjami
 
@@ -314,7 +314,7 @@ Automatyzacja to zadanie w pełnym czasie i szybko staje się jednym z najważni
 
 ## <a name="templates-and-devops"></a>Szablony i DevOps
 
-Jak wyróżniono w sekcji Automatyzowanie, celem jako organizacja powinna być Inicjowanie obsługi zasobów przy użyciu szablonów i skryptów sterowanych przez źródło oraz zminimalizowanie interaktywnej konfiguracji środowisk. Takie podejście do "infrastruktury jako kodu" oraz DevOps proces tworzenia ciągłego wdrażania może zapewnić spójność i zmniejszenie dryfu w swoich środowiskach. Niemal każdy zasób platformy Azure jest wdrażany za pośrednictwem [szablonów JSON Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) w połączeniu z programem PowerShell lub interfejsem wiersza polecenia platformy Azure międzyplatformowym i narzędziami, takimi jak Terraform, z Hashicorp (które są w pierwszej klasie obsługiwane i zintegrowane do Azure Cloud Shell).
+Jak wyróżniono w sekcji Automatyzowanie, celem jako organizacja powinna być Inicjowanie obsługi zasobów przy użyciu szablonów i skryptów sterowanych przez źródło oraz zminimalizowanie interaktywnej konfiguracji środowisk. Takie podejście do "infrastruktury jako kodu" oraz DevOps proces tworzenia ciągłego wdrażania może zapewnić spójność i zmniejszenie dryfu w swoich środowiskach. Niemal każdy zasób platformy Azure jest wdrażany za pośrednictwem [szablonów JSON Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) w połączeniu z programem PowerShell lub interfejsem wiersza polecenia platformy Azure międzyplatformowym i narzędziami, takimi jak Terraform, z HashiCorp (które są w pierwszej klasie obsługiwane i zintegrowane do Azure Cloud Shell).
 
 Artykuł, taki jak [najlepsze rozwiązania dotyczące korzystania z szablonów Azure Resource Manager](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager) , oferuje doskonałą dyskusję na temat najlepszych rozwiązań i lekcji na potrzeby zastosowania podejścia DevOps do Azure Resource Manager szablonów przy użyciu [usługi Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts) łańcucha narzędzi. Zapoznaj się z czasem i wysiłkią w celu opracowania podstawowego zestawu szablonów specyficznych dla wymagań organizacji i opracowania ciągłego potoków dostarczania przy użyciu DevOps łańcuchy narzędzi (takich jak Azure DevOps, Jenkins, Bamboo, TeamCity i Concourse), szczególnie w przypadku Twojego środowiska produkcyjne i pytania i odpowiedzi. Istnieje duża Biblioteka [szablonów szybkiego startu platformy Azure](https://github.com/Azure/azure-quickstart-templates) w serwisie GitHub, których można użyć jako punktu wyjścia dla szablonów. możesz szybko tworzyć potoki dostarczania oparte na chmurze za pomocą usługi Azure DevOps.
 
