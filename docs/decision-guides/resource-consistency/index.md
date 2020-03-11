@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: df1299c091c994e143fdc8102590c823f2974ac2
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bb84d0f7ce6c29d52b1aebb54a456634cb942182
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708720"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892399"
 ---
 # <a name="resource-consistency-decision-guide"></a>Przewodnik podejmowania decyzji dotyczących spójności zasobów
 
@@ -40,7 +40,7 @@ Grupy zasobów działają jak kontenery dla zasobów o typowym cyklu życia i og
 Jeśli odpowiesz _Nie_ na którekolwiek z powyższych pytań, odpowiedni zasób należy umieścić w innym miejscu, w innej grupie zasobów.
 
 > [!IMPORTANT]
-> Grupy zasobów są również specyficzne dla regionu, ale typowe dla zasobów jest to, że znajdują się w różnych regionach w ramach tej samej grupy zasobów, ponieważ są wspólnie zarządzane w sposób opisany powyżej. Aby uzyskać więcej informacji na temat wyboru regionu, zobacz [Przewodnik po decyzjach związanych z regionami](../regions/index.md).
+> Grupy zasobów są również specyficzne dla regionu, ale typowe dla zasobów jest to, że znajdują się w różnych regionach w ramach tej samej grupy zasobów, ponieważ są wspólnie zarządzane w sposób opisany powyżej. Aby uzyskać więcej informacji na temat wyboru regionu, zobacz [Wiele regionów](../../migrate/azure-best-practices/multiple-regions.md).
 
 ## <a name="deployment-consistency"></a>Spójność wdrożenia
 
