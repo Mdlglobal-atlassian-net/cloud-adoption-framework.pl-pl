@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bcd49a2168db862c3e1a0d948e4948abccbfe7c7
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 3b7d6437e9e066497f55f8ce0bd601e7c53854f0
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222500"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892467"
 ---
 <!-- cSpell:ignore Fservers Fdatabases -->
 
@@ -28,9 +28,9 @@ Ta faza może być również okazją do optymalizacji środowiska i jego ewentua
 
 Pozostała część tego artykułu dotyczy narzędzi do optymalizowania migrowanego obciążenia. Po osiągnięciu równowagi wydajności i kosztów obciążenie jest gotowe do podwyższenia poziomu do środowiska produkcyjnego. Aby uzyskać wskazówki dotyczące opcji podwyższania poziomu, zobacz artykuły na temat ulepszania procesów w sekcji [Optymalizowanie i podwyższanie poziomu](../migration-considerations/optimize/index.md).
 
-# <a name="right-size-assets"></a>[Dobieranie rozmiaru zasobów](#tab/optimize)
+# <a name="right-size-assets"></a>[Zasoby o odpowiedniej wielkości](#tab/optimize)
 
-Za pomocą portalu usługi Azure, interfejsu wiersza polecenia lub programu PowerShell można zmienić zakres wszystkich usług platformy Azure, które korzystają z modelu kosztów opartych na użyciu. Pierwszym krokiem podczas właściwego dobierania rozmiaru usług jest sprawdzenie ich metryk użycia. Usługa Azure Monitor zapewnia dostęp do tych metryk. Może być konieczne skonfigurowanie kolekcji metryk dla analizowanej usługi i zapewnienie odpowiedniego czasu na zebranie znaczących danych na podstawie wzorców obciążenia.
+Za pomocą portalu usługi Azure, interfejsu wiersza polecenia lub programu PowerShell można zmienić zakres wszystkich usług platformy Azure, które korzystają z modelu kosztów opartych na użyciu. Pierwszym krokiem podczas prawidłowej zmiany wielkości usługi jest sprawdzenie metryk użycia. Usługa Azure Monitor zapewnia dostęp do tych metryk. Może być konieczne skonfigurowanie kolekcji metryk dla analizowanej usługi i zapewnienie odpowiedniego czasu na zebranie znaczących danych na podstawie wzorców obciążenia.
 
 1. Przejdź do obszaru **Monitor**.
 1. Wybierz opcję **Metryki** i skonfiguruj wykres, aby wyświetlić metryki dla usługi przeznaczonej do analizy.
@@ -45,7 +45,7 @@ Poniżej wymieniono niektóre typowe usługi, których wielkość można zmieni�
 
 ## <a name="resize-a-virtual-machine"></a>Zmienianie rozmiaru maszyny wirtualnej
 
-Usługa Azure Migrate wykonuje analizę doboru rozmiaru jako część fazy oceny wstępnej migracji, a rozmiar maszyn wirtualnych migrowanych przy użyciu tego narzędzia zostanie dobrany w zależności od wymagań wstępnej migracji.
+Usługa Azure Migrate wykonuje analizę doboru wielkości jako część fazy oceny wstępnej migracji, a rozmiar maszyn wirtualnych migrowanych przy użyciu tego narzędzia zostanie dobrany w zależności od wymagań wstępnej migracji.
 
 Jednak w przypadku maszyn wirtualnych utworzonych lub migrowanych przy użyciu innych metod lub w przypadkach, gdy wymagania dotyczące maszyny wirtualnej po migracji wymagają dopasowania, warto dokładniej dostosować rozmiar maszyny wirtualnej.
 
@@ -130,7 +130,7 @@ Możesz również użyć narzędzia **Advisor** i wybrać kartę **Koszty**, aby
 
 ::: zone target="docs"
 
-- [Samouczek: Optymalizowanie kosztów na podstawie zaleceń](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [Samouczek: Optymalizowanie kosztów na podstawie zaleceń](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [Zapobieganie nieoczekiwanym opłatom za pomocą funkcji rozliczeń i zarządzania kosztami platformy Azure](https://docs.microsoft.com/azure/billing/billing-getting-started)
 - [Eksplorowanie kosztów za pomocą funkcji analizy kosztów](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
 

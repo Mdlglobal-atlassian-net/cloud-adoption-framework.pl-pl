@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 46689512ec799ff8b5aa47ea095d34d8c25dd83a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: baeac7d27ff7aa71c011a2578968811820ebe22e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802433"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094745"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Model migracji opisany w przewodniku Cloud Adoption Framework
 
@@ -50,7 +50,7 @@ Narzędzia do migracji do chmury, takie jak usługa [Azure Site Recovery](https:
 
 Zasady dotyczące tego modelu przyrostowego są oparte na wykonaniu procesów i spełnieniu wymagań wstępnych, do których odwołuje się następująca grafika informacyjna.
 
-![Model migracji opisany w przewodniku Cloud Adoption Framework](../../_images/operational-transformation-migrate.png)
+![Model migracji opisany w przewodniku Cloud Adoption Framework](../../_images/migrate/methodology.png)
 
 Spójne stosowanie tych zasad reprezentuje końcowy cel procesów migracji do chmury i nie powinno być traktowane jako punkt początkowy. W miarę doskonalenia wysiłków związanych z migracją należy korzystać ze wskazówek w tej sekcji, które ułatwiają definiowanie najlepszego procesu zgodnego z potrzebami organizacji.
 
