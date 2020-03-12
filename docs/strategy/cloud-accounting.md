@@ -1,18 +1,18 @@
 ---
 title: Czym jest księgowość w chmurze?
-description: Wyjaśnienie koncepcji ewidencjonowania aktywności w chmurze
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby zrozumieć typowe modele ewidencjonowania aktywności w chmurze dla tego rozwiązania podczas rozpoczęcia podróży migracji do chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 016f0502108fa771490293bd6588f3fe7193fb07
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 0ccff095f78442f583bcd526ee624161276c0db3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023834"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092865"
 ---
 <!-- markdownlint-disable MD026 -->
 

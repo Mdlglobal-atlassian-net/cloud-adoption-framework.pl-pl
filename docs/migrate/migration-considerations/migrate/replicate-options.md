@@ -1,18 +1,18 @@
 ---
 title: Opcje replikacji
-description: Proces migracji do chmury, który koncentruje się na zadaniach migrowania obciążeń do chmury.
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby zrozumieć proces replikacji i przyczynę replikacji migracji do chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: bf798a816d799ba856d8ea20b999de1240ac5284
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 790ef71ed6a3880b23a851adc0054666e16c0dde
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802144"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092850"
 ---
 # <a name="replication-options"></a>Opcje replikacji
 
@@ -41,7 +41,7 @@ Po przeprowadzeniu oceny infrastruktury lokalnej i infrastruktury chmury na potr
 - Testowanie trybu failover w celu upewnienia się, że wszystkie funkcje działają
 - Uruchamianie jednokrotnego przejścia w tryb failover na platformie Azure
 
-## <a name="azure-database-migration-service"></a>Usługa migracji bazy danych platformy Azure
+## <a name="azure-database-migration-service"></a>Azure Database Migration Service
 
 Ta usługa pomaga zmniejszyć złożoność migracji do chmury przez użycie jednej, kompleksowej usługi zamiast wielu narzędzi. Usługa [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) została zaprojektowana jako bezproblemowe i kompleksowe rozwiązanie do przenoszenia lokalnych baz danych SQL Server do chmury. Jest ona w pełni zarządzaną usługą umożliwiającą bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. Usługa ta integruje niektóre funkcje istniejących narzędzi i usług, zapewniając klientom kompleksowe rozwiązanie o wysokiej dostępności.
 

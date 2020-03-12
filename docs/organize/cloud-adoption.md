@@ -1,6 +1,6 @@
 ---
 title: Możliwości wdrażania chmury
-description: Opisuje sposób tworzenia możliwości wdrażania chmury
+description: Użyj struktury wdrażania w chmurze dla platformy Azure, aby zrozumieć sposób tworzenia możliwości wdrażania chmury i personelować zespoły odpowiednio do potrzeb.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: fdd8c6234cfc66f4216ce2e6c4bcc8725ad2f079
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9d0f4faf86322729f468ddd7cfc6bd60e48240ef
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801176"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092694"
 ---
 # <a name="cloud-adoption-capabilities"></a>Możliwości wdrażania chmury
 
@@ -30,7 +30,7 @@ W zależności od żądanych wyników działalności biznesowej wymagane jest, a
 - Realizatory infrastruktury
 - Inżynierowie DevOps
 - Deweloperzy aplikacji
-- Badacze danych
+- Analityki danych
 - Specjaliści platformy danych lub aplikacji
 
 W celu zapewnienia optymalnej współpracy i wydajności zalecamy, aby zespoły rozwiązań w chmurze miały średni rozmiar zespołu sześciu osób. Zespoły te powinny być samodzielne z perspektywą wykonywania technicznego. Zdecydowanie zalecamy, aby te zespoły obejmowały również wiedzę na temat zarządzania projektami, z głębokiego środowiska Agile, Scrum lub innymi iteracyjnymi modelami. Ten zespół jest najbardziej efektywny, gdy jest zarządzany przy użyciu płaskiej struktury.

@@ -1,18 +1,18 @@
 ---
 title: Ścieżka gotowości do kwalifikacji podczas planowania
-description: Przegląd ścieżki gotowości do kwalifikacji w fazie planu migracji.
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się więcej o ścieżce gotowości do umiejętności w fazie planowania migracji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 36e7957f8bcdcc7edc12f3a2e5309eac3d551fb5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c138a81de0fd92c1a079c7a2f52255d5c7959526
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798115"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092835"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Ścieżka gotowości do kwalifikacji w fazie planu podróży migracji
 
@@ -57,7 +57,7 @@ W fazie przygotowywania pracownicy techniczni tworzą strefę wyładunkowej migr
 - [Utwórz konto platformy Azure](https://docs.microsoft.com/learn/modules/create-an-azure-account). Pierwszym krokiem podczas korzystania z platformy Azure jest utworzenie konta. Twoje konto zawiera usługi platformy Azure, które udostępniamy, i obsługuje Twoje ustawienia osobiste, takie jak tożsamość, rozliczenia i preferencje.
 - [Azure Portal](https://docs.microsoft.com/learn/modules/tour-azure-portal). Przedstawienie funkcji i usług witryny Azure Portal oraz możliwości dostosowywania portalu.
 - [Wprowadzenie do platformy Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure). Rozpocznij pracę z platformą Azure od utworzenia i konfiguracji swojej pierwszej maszyny wirtualnej w chmurze.
-- [Wprowadzenie do zabezpieczeń na platformie Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Poznaj podstawowe pojęcia związane z ochroną infrastruktury i danych podczas pracy w chmurze. Dowiedz się, jakie są Twoje obowiązki, a za co odpowiada platforma Azure.
+- [Wprowadzenie do zabezpieczeń na platformie Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Zapoznaj się z podstawowymi pojęciami dotyczącymi ochrony infrastruktury i danych podczas pracy w chmurze. Dowiedz się, jakie są Twoje obowiązki, a za co odpowiada platforma Azure.
 - [Zarządzanie zasobami na platformie Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure). Dowiedz się, jak pracować z wierszem polecenia i portalem internetowym platformy Azure na potrzeby tworzenia zasobów opartych na chmurze, zarządzania nimi i kontrolowania ich.
 - [Utwórz maszynę wirtualną](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure). Utwórz maszynę wirtualną pomocą witryny Azure Portal.
 - [Sieć platformy Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking). Poznaj podstawy sieci platformy Azure i sposób, w jaki usługa Azure Networks ułatwia zwiększenie odporności i skrócenie opóźnienia.

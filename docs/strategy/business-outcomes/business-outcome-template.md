@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 283bde5115583aa50acc69aff57ef025503ccdb8
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 243a75f8aa5352299e0730a91f462fbf935a2f2f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337999"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092939"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Jak używać szablonu wyniku biznesowego
 
@@ -24,7 +24,7 @@ Pobierz [Arkusz kalkulacyjny szablonu wyniku biznesowego](https://archcenter.blo
 
 ## <a name="use-the-business-outcome-template"></a>Korzystanie z szablonu wyniku biznesowego
 
-Wprowadzone przez Kate Johnsonem w usłudze Microsoft Digital Transformation Academy, wyniki biznesowe koncentrują się na trzech tematach:
+W tym szablonie wyniki biznesowe koncentrują się na trzech tematach:
 
 - Wyrównywanie do udziałowców lub osób podejmujących decyzje biznesowe
 - Informacje o sterownikach i celach firmy

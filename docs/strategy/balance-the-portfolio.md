@@ -3,22 +3,22 @@ title: Równoważenie portfela
 description: Odkryj strategie umożliwiające zrównoważenie migracji, innowacji i eksperymentów, aby maksymalnie wykorzystać możliwości migracji do chmury.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/25/2020
+ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
-ms.subservice: migrate
-ms.openlocfilehash: b41a550583628c1246a0663c99509498f0786d70
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.subservice: strategy
+ms.openlocfilehash: 938250f20725540049bca831ff4c12b975b134a5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228472"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092408"
 ---
 <!-- cSpell:ignore CSAT -->
 
 # <a name="balance-the-portfolio"></a>Równoważenie portfela
 
-Wdrażanie chmury to nakład pracy związany z zarządzaniem portfelem, zręcznie ukryty pod maską implementacji technicznej. Podobnie jak w przypadku wszystkich ćwiczeń związanych z zarządzaniem portfolio, bilansowanie portfolio ma kluczowe znaczenie. Na poziomie strategicznym oznacza to zrównoważenie migracji, innowacji i eksperymentów w celu maksymalnego wykorzystania chmury. Gdy nakłady pracy związane z wdrażaniem chmury posuwają się zbyt daleko w jedną lub drugą stronę, wysiłek związany z migracją staje się nazbyt złożony. W tym artykule przedstawimy Czytelnikowi podejścia do osiągnięcia równowagi portfela.
+Wdrażanie w chmurze jest nakładem pracy związanym z zarządzaniem portfelem, Cleverly jako implementacją techniczną. Podobnie jak w przypadku wszystkich ćwiczeń związanych z zarządzaniem portfolio, bilansowanie portfolio ma kluczowe znaczenie. Na poziomie strategicznym oznacza to zrównoważenie migracji, innowacji i eksperymentów w celu maksymalnego wykorzystania chmury. Gdy wysiłki związane z wdrażaniem chmury są zbyt daleko w jednym kierunku, złożoność znajdzie swój sposób na wysiłki. W tym artykule przedstawimy Czytelnikowi podejścia do osiągnięcia równowagi portfela.
 
 ## <a name="general-scope-expansion"></a>Rozszerzenie zakresu ogólnego
 
@@ -26,9 +26,7 @@ Bilansowanie portfolio ma charakter strategiczny. W związku z tym zaprezentowan
 
 ### <a name="document-business-outcomes"></a>Udokumentowanie wyników firmy
 
-Przed przeprowadzeniem równoważenia portfela ważne jest, aby udokumentować i udostępnić wyniki biznesowe związane z nakładem pracy w zakresie migracji do chmury. Kilka przykładów ogólnych wyników biznesowych związanych z migracjami do chmury znajduje się w artykule [Cloud migration executive summary](../getting-started/migrate.md) (Podsumowanie ogólne migracji do chmury).
-
-Poniższa tabela ułatwia dokumentowanie i udostępnianie żądanych wyników biznesowych. Należy pamiętać, że większość firm dąży do osiągnięcia wielu wyników jednocześnie. Celem tego ćwiczenia jest wyjaśnienie rezultatów, które są najbardziej bezpośrednio związane z nakładem pracy w zakresie migracji do chmury:
+Przed przeprowadzeniem zrównoważenia portfolio ważne jest, aby udokumentować i udostępniać wyniki biznesowe związane z pracą w chmurze. Poniższa tabela ułatwia dokumentowanie i udostępnianie żądanych wyników biznesowych. Należy pamiętać, że większość firm dąży do osiągnięcia wielu wyników jednocześnie. Celem tego ćwiczenia jest wyjaśnienie rezultatów, które są najbardziej bezpośrednio związane z nakładem pracy w zakresie migracji do chmury:
 
 |Wynik  |Mierzony przez  |Cel  |Horyzont czasowy  |Priorytet tego nakładu pracy  |
 |---------|---------|---------|---------|---------|
@@ -38,9 +36,9 @@ Poniższa tabela ułatwia dokumentowanie i udostępnianie żądanych wyników bi
 |Ulepszenie środowiska klienta     |Zadowolenie klienta (CSAT)         |Poprawa o 10%         |12 miesięcy         |4\.         |
 
 > [!IMPORTANT]
-> Powyższa tabela jest przykładem fikcyjnym i nie powinna być używana do określania priorytetów. W wielu przypadkach ta tabela może być traktowana jako antywzorzec, ponieważ oszczędnościom kosztów nadano wyższy priorytet niż zadowoleniu klienta.
+> Powyższa tabela jest przykładem fikcyjnym i nie powinna być używana do określania priorytetów. W wielu przypadkach ta tabela może być traktowana jako Antywzorzec przez umieszczenie oszczędności kosztów powyżej środowiska klienta.
 
-Powyższa tabela może precyzyjnie reprezentować priorytety zespołu strategicznego ds. chmury i zespołu wdrożeniowego ds. chmury nadzorującego migrację do chmury. Ze względu na znaczne ograniczenia czasowe ten zespół kładzie większy nacisk na redukcję kosztów IT i traktuje priorytetowo wyjście z centrum danych jako środek do osiągnięcia żądanego obniżenia kosztów IT. Jednak dzięki udokumentowaniu konkurencyjnych priorytetów w tej tabeli zespół wdrożeniowy ds. chmury może ułatwiać zespołowi strategicznemu ds. chmury identyfikowanie możliwości lepszego dopasowania implementacji nadrzędnej strategii portfela.
+Powyższa tabela może dokładnie przedstawiać priorytety zespołu strategii chmury i zespołu wdrażania chmury. Ze względu na znaczne ograniczenia czasowe ten zespół kładzie większy nacisk na redukcję kosztów IT i traktuje priorytetowo wyjście z centrum danych jako środek do osiągnięcia żądanego obniżenia kosztów IT. Jednak dzięki udokumentowaniu konkurencyjnych priorytetów w tej tabeli zespół wdrożeniowy ds. chmury może ułatwiać zespołowi strategicznemu ds. chmury identyfikowanie możliwości lepszego dopasowania implementacji nadrzędnej strategii portfela.
 
 ### <a name="move-fast-while-maintaining-balance"></a>Szybkość zmian przy zachowaniu równowagi
 
@@ -65,15 +63,9 @@ Jeśli odpowiedzi na oba te pytania brzmią „tak”, warto rozważyć _brak_ m
 
 Jeśli odpowiedź na dowolne z tych pytań brzmi „nie”, może być konieczne ustanowienie planu hostowania obciążenia do czasu możliwości jego wycofania. Ten plan może obejmować przeniesienie zasobów do tańszego lub alternatywnego centrum danych, co również umożliwia osiągnięcie celów zmniejszenia kosztów i wyjścia z jednego centrum danych.
 
-## <a name="suggested-prerequisites"></a>Sugerowane wymagania wstępne
+## <a name="adopt-process-changes"></a>Przyjmowanie zmian procesów
 
-Wymagania wstępne określone w podstawowym przewodniku powinny być wystarczające dla tego złożonego tematu. Jednak spisu zasobów i znak cyfrowy powinny być wyróżnione i pogrubione wśród tych wymagań wstępnych, ponieważ te dane spowodują na przykład następujące działania.
-
-## <a name="assess-process-changes"></a>Zmiany procesu oceniania
-
-Równoważenie portfela wymaga dodatkowej analizy jakościowej w trakcie procesu oceny, co pomoże kierować prostą racjonalizacją portfela.
-
-### <a name="suggested-action-during-the-assess-process"></a>Sugerowana akcja w trakcie procesu oceny
+Równoważenie w portfelu wymaga dodatkowej analizy jakościowej podczas wdrażania
 
 Na podstawie danych z tabeli w powyższej sekcji [Dokumentowanie wyników biznesowych](#document-business-outcomes) prawdopodobne jest ryzyko, że portfel dąży zbyt daleko do modelu wykonywania skoncentrowanego na migracji. Jeśli obsługa klienta miałaby najwyższy priorytet, bardziej prawdopodobny byłby portfel bardziej nastawiony na innowacje. Żadne z tych podejść nie jest prawidłowe lub złe, ale zbytnie dążenie w jednym kierunku zwykle skutkuje mniejszymi zyskami, niepotrzebnie zwiększa złożoność i wydłuża czas wykonywania nakładów pracy zakresie wdrażania w chmurze.
 
@@ -102,8 +94,6 @@ Pytania te nie powinny stanowić zakresu analizy jakościowej wykonanej dla każ
 
 Podczas migracji działania podejmowane w celu równoważenia portfela mogą mieć negatywny wpływ na szybkość migracji (prędkość, z jaką są migrowane zasoby). Poniższe wskazówki posłużą do rozwinięcia kwestii, dlaczego i jak należy dostosować pracę, aby uniknąć przerw w wysiłkach związanych z migracją.
 
-### <a name="suggested-action-during-the-migrate-process"></a>Sugerowana akcja w trakcie procesu migracji
-
 Racjonalizacja portfela wymaga różnorodności technicznych nakładów pracy. Zespoły wdrożeniowe ds. chmury mają pokusę dopasowania tej różnorodności portfela w ramach wysiłków związanych z migracją. Biznesowi uczestnicy projektu chcą współpracować z pojedynczym zespołem wdrożeniowym ds. chmury w celu prowadzenia całej listy prac migracji. Rzadko jest to zalecanym podejściem, a w wielu przypadkach może zmniejszać produktywność.
 
 Te różnorodne wysiłki należy podzielić na segmenty w dwóch lub większej liczbie zespołów wdrażania w chmurze. W przykładowym trybie wykonywania z zastosowaniem modelu dwóch zespołów zespół 1 jest zespołem ds. migracji, a zespół 2 jest zespołem ds. innowacji. W przypadku większych nakładów pracy te zespoły mogą być dodatkowo podzielone na inne podejścia, takie jak wysiłki zastępowania/PaaS lub niewielka refaktoryzacja. Poniżej przedstawiono umiejętności i role wymagane do ponownego hostowania, refaktoryzacji lub niewielkiej refaktoryzacji:
@@ -115,18 +105,3 @@ Te różnorodne wysiłki należy podzielić na segmenty w dwóch lub większej l
 **Niewielka Refaktoryzacja:** Niektóre aplikacje można nowoczesny z niewielkim refaktoryzacją na poziomie danych lub aplikacji. Ta praca wymaga, aby członkowie zespołu wdrażali dane na platformach danych opartych na chmurze lub wprowadzali niewielkie zmiany konfiguracji w aplikacjach. Może to wymagać ograniczonego wsparcia ekspertów zajmujących się danymi lub rozwojem aplikacji. Jednak ta praca jest podobna do pracy wykonywanej przez realizatorów IT podczas wdrażania aplikacji innych firm. Pracę tę można łatwo dopasować do zespołu ds. migracji do chmury lub zespołu strategicznego ds. chmury. Chociaż ten nakład pracy nie zbliża się do szybkości migracji polegającej na ponownym hostowaniu, jego wykonanie zajmuje mniej czasu niż nakład pracy na refaktoryzację.
 
 Podczas migracji należy podzielić wysiłki na trzy sposoby wymienione powyżej i wykonane przez odpowiedni zespół w odpowiedniej iteracji. Chociaż należy zróżnicować portfolio, należy również upewnić się, że wysiłki są bardzo skoncentrowane i segregowane.
-
-## <a name="optimize-and-promote-process-changes"></a>Zmiany procesu optymalizacji i podwyższania poziomu
-
-Nie są wymagane żadne dodatkowe zmiany w trakcie procesów optymalizacji i podwyższania poziomu w ramach nakładu pracy migracji.
-
-## <a name="secure-and-manage-process-changes"></a>Zmiany procesu zabezpieczania i zarządzania
-
-Nie są wymagane żadne dodatkowe zmiany w trakcie procesów zabezpieczania i zarządzania w ramach nakładu pracy migracji.
-
-## <a name="next-steps"></a>Następne kroki
-
-Wróć do [listy kontrolnej dotyczącej zakresu rozszerzonego](./index.md), aby upewnić się, że metoda migracji jest w pełni dopasowana.
-
-> [!div class="nextstepaction"]
-> [Lista kontrolna dotycząca zakresu rozszerzonego](./index.md)

@@ -1,18 +1,18 @@
 ---
 title: Pierwszy projekt wdrażania chmury
-description: Dowiedz się więcej na temat implementowania pierwszego projektu wdrażania w chmurze.
+description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby poznać procesy wdrażania chmury i działania obciążeń hostowanych w chmurze.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 90e21047f8d64f15ef3c94ebe82e31ba615c4d38
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 18b247665b8a371a9949ebaf838d3833a56067a3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225255"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092495"
 ---
 <!-- markdownlint-disable MD026 -->
 

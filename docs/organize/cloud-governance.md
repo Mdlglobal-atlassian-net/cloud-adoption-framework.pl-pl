@@ -1,6 +1,6 @@
 ---
 title: Możliwości ładu chmury
-description: Opisuje sposób tworzenia możliwości zarządzania chmurą
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, w jaki sposób funkcje ładu chmury zapewniają, że ryzyko i odporność na ryzyko są prawidłowo oceniane i zarządzane.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 824ce55dd6dc78e0d4200efa9c2d1418b343ccb7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7569d0718f7b25625cc40887af81edda53ff0b1e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806904"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093895"
 ---
 # <a name="cloud-governance-capabilities"></a>Możliwości ładu chmury
 
@@ -23,21 +23,21 @@ Każdy rodzaj zmiany generuje nowe ryzyko. Możliwości ładu chmury zapewniają
 
 W zależności od żądanych wyników działalności biznesowej umiejętności potrzebne do zapewnienia pełnej możliwości zarządzania chmurą mogą być udostępniane przez:
 
-- IT governance
+- Zarządzanie IT
 - Architektura przedsiębiorstwa
-- Zabezpieczenia
-- IT operations
-- IT infrastructure
-- Networking
+- Bezpieczeństwo
+- Operacje IT
+- Infrastruktura IT
+- Sieć
 - Tożsamość
 - Wirtualizacja
-- Ciągłość biznesowa i odzyskiwanie po awarii
-- Application owners within IT
+- Ciągłość działania i odzyskiwanie po awarii
+- Właściciele aplikacji w ramach tej
 - Właściciele finansów
 
 Możliwości ładu chmury identyfikują ryzyko związane z bieżącymi i przyszłymi wersjami. Ta funkcja jest widoczna w obszarze wysiłki, aby oszacować ryzyko, zrozumieć potencjalne oddziaływania i podejmować decyzje dotyczące odporności na ryzyko. W takim przypadku plany można szybko zaktualizować, aby odzwierciedlały zmiany w [możliwościach wdrożenia chmury](./cloud-adoption.md).
 
-## <a name="key-responsibilities"></a>Key responsibilities
+## <a name="key-responsibilities"></a>Kluczowe obowiązki
 
 Podstawową opłatą za wszelką możliwość zarządzania chmurą jest równowaga konkurencyjnych sił transformacji i ryzyka. Ponadto zarządzanie chmurą gwarantuje, że wdrożenie [chmury](./cloud-adoption.md) ma świadomość danych i klasyfikacji zasobów oraz wskazówki dotyczące architektury, które regulują wszystkie podejścia do wdrażania. Zespół będzie również współpracował z [centrum usługi Cloud doskonałości](./cloud-center-of-excellence.md) , aby zastosować zautomatyzowane podejścia do zarządzania środowiskami chmury.
 
@@ -55,7 +55,7 @@ Te zadania są zwykle wykonywane przez funkcję ładu w chmurze co miesiąc.
 - Reprezentuje [tolerancję biznesową dla ryzyka](../govern/policy-compliance/risk-tolerance.md)
 - Pomoc w przyrostowym ulepszaniu [zasad i wymagań dotyczących zgodności](../govern/policy-compliance/index.md)
 
-## <a name="meeting-cadence"></a>Meeting cadence
+## <a name="meeting-cadence"></a>Erze spotkania
 
 Możliwość zarządzania chmurą jest zwykle dostarczana przez zespół pracujący. Zobowiązanie czasu od każdego członka zespołu będzie reprezentować znaczną część dziennych harmonogramów. Udziały nie będą ograniczone do spotkań i cykli przesyłania opinii.
 

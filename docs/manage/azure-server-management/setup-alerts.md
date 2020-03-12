@@ -1,18 +1,18 @@
 ---
 title: Konfigurowanie podstawowych alertów
-description: Dowiedz się, jak używać usług zarządzania serwerem Azure, aby skonfigurować alerty i powiadomienia, które pomagają zespołom IT poznać wszelkie problemy.
+description: Dowiedz się, w jaki sposób używać usług zarządzania serwerem Azure do konfigurowania alertów i powiadomień, które pomagają zespołom IT poznać wszelkie problemy.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e24932b074f69f83aff583d560399d884c6c5b0e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3525b8d84ee6dd54072a4fed401114578de7fcb3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807958"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094475"
 ---
 # <a name="set-up-basic-alerts"></a>Konfigurowanie podstawowych alertów
 

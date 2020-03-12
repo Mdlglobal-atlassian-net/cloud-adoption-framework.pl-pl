@@ -1,18 +1,18 @@
 ---
 title: Przykłady wyników dotyczącej elastyczności
-description: Przykłady wyników dotyczącej elastyczności
+description: Korzystaj z platformy wdrażania w chmurze dla platformy Azure, aby zrozumieć swoją sytuację na rynku firmy i konkurencyjną poziomą.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 524fce58c6592ece46eedec0aea3cc6bbacb6f61
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 05ff2e7f3e611d789ed289474ff13e0ed58bf0fb
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023924"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092946"
 ---
 # <a name="examples-of-agility-outcomes"></a>Przykłady wyników dotyczącej elastyczności
 

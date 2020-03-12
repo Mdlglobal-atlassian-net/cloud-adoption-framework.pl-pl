@@ -1,18 +1,18 @@
 ---
 title: Przykłady wyników wydajności
-description: Przykłady wyników wydajności
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby zrozumieć wyniki wydajności w kontekście transformacji w chmurze.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8810b4ab2ce78dd2add8a424518717392305346a
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 9a97a4d1c633a7da2153da946655dd41a8376648
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222088"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092902"
 ---
 # <a name="examples-of-performance-outcomes"></a>Przykłady wyników wydajności
 

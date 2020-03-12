@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: dcc5706e365e3761f236bb5a1c896eb213a1bf5f
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 85f5cf55bb089bd347383bedf58b054cf2a7351c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892161"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094448"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Rozpocznij podróż do migracji w chmurze na platformie Azure
 
@@ -57,7 +57,7 @@ Takie podejście obejmuje dwie metodologie i obszary ostrości: strategia chmury
 
 Implementacja w chmurze to proces iteracyjny służący do migrowania i modernizacji cyfrowej, wyrównany z dokierowanymi wynikami biznesowymi i kontrolami zarządzania zmianami. W trakcie każdej iteracji obciążenia są migrowane lub zmodernizowane w sposób zgodny z strategią i planem. Decyzje dotyczące IaaS, PaaS lub hybrydowych są tworzone w fazie oceny [metodologii migracji](../migrate/index.md) w celu zoptymalizowania kontroli i wykonywania. Te decyzje będą korzystać z narzędzi używanych podczas każdej iteracji fazy migracji w ramach tej samej metodologii. Ten model może być używany z minimalnym strategią i planowaniem. Jednak w celu zapewnienia, że największe działania biznesowe, zarówno, jak i w firmie, powinny wyrównać wyraźną strategię i zaplanować czynności wdrożeniowe.
 
-![Metodologia implementacji chmury platformy wdrażania w chmurze](../_images/operational-transformation-migrate.png)
+![Metodologia implementacji chmury struktury wdrażania w chmurze](../_images/migrate/methodology.png)
 
 Celem tego nakładu jest migracja lub modernizacja obciążeń. Obciążenie to zbiór infrastruktury, aplikacji i danych, które wspólnie obsługują typowe cele biznesowe lub wykonywanie wspólnego procesu biznesowego. Przykłady obciążeń mogą obejmować takie elementy, jak aplikacja biznesowa, rozwiązanie do obsługi płac HR, rozwiązanie CRM, przepływ pracy zatwierdzania dokumentów finansowych lub rozwiązanie analizy biznesowej. Obciążenia mogą również obejmować udostępnione zasoby techniczne, takie jak magazyn danych, który obsługuje kilka innych rozwiązań. W niektórych przypadkach obciążenie może być reprezentowane przez pojedynczy zasób, taki jak samodzielny serwer, aplikacja lub platforma danych.
 

@@ -1,18 +1,18 @@
 ---
 title: Planowanie wdrażania chmury
-description: Planowanie wdrażania chmury
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak plan wdrażania w chmurze pomaga firmom w zrównoważeniu ich portfolio IT i zarządzaniu przejściami w czasie.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 36d87caae344414e7bb311fb032d28f58bc5ea6c
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: d02dfda3b44155b7208e9caf00e979553fe97ff3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222162"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093552"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planowanie wdrażania chmury
 

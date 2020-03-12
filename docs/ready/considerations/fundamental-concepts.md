@@ -1,18 +1,18 @@
 ---
 title: Podstawowe pojęcia dotyczące platformy Azure
-description: Poznaj podstawowe pojęcia i terminy używane na platformie Azure i dowiedz się, jak te pojęcia odnoszą się do siebie nawzajem.
+description: Korzystaj z platformy wdrażania w chmurze dla platformy Azure, aby poznać podstawowe koncepcje i terminy używane na platformie Azure oraz jak koncepcje odnoszą się do siebie.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d11e69014a9e46f916afb5bc8caf083c930ce725
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90eed8109627298c8e6a044eff3333154bb17f1d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799152"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092580"
 ---
 # <a name="azure-fundamental-concepts"></a>Podstawowe pojęcia dotyczące platformy Azure
 
@@ -79,7 +79,7 @@ Subskrypcja nie jest powiązana z określonym regionem platformy Azure. Jednak k
 > [!NOTE]
 > Większość zasobów platformy Azure jest wdrażanych w określonym regionie. Jednak niektóre typy zasobów są uznawane za zasoby globalne, na przykład zasady określane za pomocą usług Azure Policy.
 
-## <a name="related-resources"></a>Zasoby powiązane
+## <a name="related-resources"></a>Powiązane zasoby
 
 Poniższe zasoby zawierają szczegółowe informacje na temat pojęć omówionych w tym artykule:
 

@@ -1,6 +1,6 @@
 ---
 title: Skalowanie migracji na platformę Azure
-description: Dowiedz się, w jaki sposób firma Contoso obsługuje skalowaną migrację na platformę Azure.
+description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak zaplanować i przeprowadzić migrację do platformy Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/08/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c4d5e151d5ea4badd3c6c5fab25f4a6be9ee60c5
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 8c3ee0a75efa74aa1599399358bac267c5ffe1de
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222825"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79091923"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skalowanie migracji na platformę Azure
 
@@ -319,7 +319,7 @@ Firma Contoso będzie również używać skryptów do lokalizowania nieużywanyc
 - W przypadku dużych migracji często występują fragmenty danych, takie jak wirtualne dyski twarde (VHD), które wiążą się z opłatą, ale nie zapewniają żadnej wartości dla firmy. Skrypty są dostępne w repozytorium GitHub.
 - Firma Contoso będzie korzystać z pracy wykonanej przez dział IT firmy Microsoft i rozważyć wdrożenie zestawu narzędzi optymalizacji zasobów platformy Azure.
 - Firma Contoso może wdrożyć konto Azure Automation przy użyciu wstępnie skonfigurowanych elementów Runbook i harmonogramów do swojej subskrypcji, a następnie zacząć oszczędzać pieniądze. Optymalizacja zasobów platformy Azure odbywa się automatycznie w ramach subskrypcji po włączeniu lub utworzeniu harmonogramu, obejmując optymalizację nowych zasobów.
-- Zapewnia to zdecentralizowane możliwości automatyzacji w celu obniżenia kosztów. Funkcje programu:
+- Zapewnia to zdecentralizowane możliwości automatyzacji w celu obniżenia kosztów. Funkcje obejmują:
   - Automatyczne odkładanie maszyn wirtualnych platformy Azure na postawie niskiego zużycia procesora.
   - Planowanie harmonogramu odkładania i wybudzania maszyn wirtualnych platformy Azure.
   - Planowanie harmonogramu odkładania i wybudzania maszyn wirtualnych platformy Azure w kolejności rosnącej i malejącej przy użyciu tagów platformy Azure.
@@ -334,7 +334,7 @@ Można używać narzędzi partnerskich, takich jak [Hanu](https://hanu.com/insig
 
 Na tym etapie Contoso używa zasobów platformy Azure do zabezpieczania i zarządzania w celu utrzymania ładu, zabezpieczenia i monitorowania aplikacji chmury na platformie Azure. Te zasoby ułatwiają działanie zabezpieczonego i dobrze zarządzanego środowiska podczas używania produktów dostępnych w witrynie Azure Portal. Firma Contoso zaczyna korzystać z tych usług podczas migracji, a dzięki obsłudze hybrydowego wdrożenia platformy Azure kontynuuje używanie wielu z tych rozwiązań w celu uzyskania spójnego środowiska w całej chmurze hybrydowej.
 
-### <a name="security"></a>Zabezpieczenia
+### <a name="security"></a>Bezpieczeństwo
 
 Firma Contoso polega na usłudze Azure Security Center, która zapewnia ujednolicone zarządzanie zabezpieczeniami i zaawansowaną ochronę przed zagrożeniami na potrzeby różnych obciążeń chmury hybrydowej.
 
