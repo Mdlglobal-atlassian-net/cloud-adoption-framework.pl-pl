@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a7f03ce1f83d59fdcfe2b2ce696b6b591b8d0655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 243094da7b92a374124474eaaf0c955b5fdb85ed
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341933"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140607"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan wdrażania chmury i usługa Azure DevOps
 
-Azure DevOps to zestaw narzędzi opartych na chmurze dla klientów platformy Azure, którzy zarządzają projektami iteracyjnymi. Zawiera także narzędzia do zarządzania potokumi wdrażania i innymi ważnymi aspektami DevOps. 
+Azure DevOps to zestaw narzędzi opartych na chmurze dla klientów platformy Azure, którzy zarządzają projektami iteracyjnymi. Zawiera także narzędzia do zarządzania potokumi wdrażania i innymi ważnymi aspektami DevOps.
 
 W tym artykule dowiesz się, jak szybko wdrożyć zaległość do usługi Azure DevOps przy użyciu szablonu planu wdrażania w chmurze. Ten szablon służy do wyrównania działań związanych z wdrażaniem w chmurze do procesu standardowego w oparciu o wskazówki w strukturze wdrożenia chmury.
 

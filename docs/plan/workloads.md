@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341916"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140624"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Określanie priorytetów i Definiowanie obciążeń dla planu wdrażania chmury
 
@@ -21,6 +21,8 @@ Ustanowienie jasnych, priorytetowych priorytetów jest jednym z kluczy tajnych, 
 Zamiast tego zalecamy, aby zespół koncentruje się na dokładnej priorytetyzacji i udokumentowaniu pierwszych 10 obciążeń. Po rozpoczęciu wdrażania planu wdrażania zespół może zachować listę kolejnych 10 obciążeń o najwyższym priorytecie. To podejście zapewnia wystarczającą ilość informacji do zaplanowania dla następnych kilku iteracji.
 
 Ograniczenie planu do 10 obciążeń zaleca elastyczność i wyrównanie priorytetów jako zmiany kryteriów firmy. Takie podejście sprawia również, że zespół rozwiązań w chmurze może uczyć się i udoskonalać oszacowania. Najważniejsze jest usunięcie obszernego planu jako bariery do efektywnej zmiany biznesowej.
+
+<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-is-a-workload"></a>Co to jest obciążenie?
 

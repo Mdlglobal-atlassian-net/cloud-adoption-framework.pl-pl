@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e06aca53ac70e602d13d2cc23d59d4b56c2cd152
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: ee88c1fc88e5c678f7356aa15b473d0fe61eaa2d
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341440"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140658"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Tworzenie wyrównania biznesowego w zarządzaniu chmurą
 
@@ -22,7 +22,7 @@ W środowiskach lokalnych zasoby IT (aplikacje, maszyny wirtualne, hosty maszyn 
 
 Pierwszym krokiem podczas tworzenia wyrównania firmy jest zapewnienie wyrównania terminu. Zarządzanie IT, takie jak większość zawodów inżynieryjnych, miało amassed zbiór żargonów lub wysoce technicznych warunków. Warunki te mogą prowadzić do nieporozumień w przypadku uczestników współpracy i utrudniać mapowanie usług zarządzania na wartość biznesową.
 
-Na szczęście proces opracowywania strategii wdrażania w chmurze i planu wdrażania chmury umożliwia idealne rozwiązanie do ponownego mapowania tych warunków. Proces ten umożliwia również tworzenie szans związanych z zarządzaniem działaniami w ramach współpracy z firmą. Poniższa seria artykułu przeprowadzi Cię przez nowe podejście w ramach trzech określonych terminów, które mogą pomóc w ulepszaniu konwersacji między udziałowcami biznesowymi: 
+Na szczęście proces opracowywania strategii wdrażania w chmurze i planu wdrażania chmury umożliwia idealne rozwiązanie do ponownego mapowania tych warunków. Proces ten umożliwia również tworzenie szans związanych z zarządzaniem działaniami w ramach współpracy z firmą. Poniższa seria artykułu przeprowadzi Cię przez nowe podejście w ramach trzech określonych terminów, które mogą pomóc w ulepszaniu konwersacji między udziałowcami biznesowymi:
 
 - Poziom  **[krytyczności](./criticality.md):** Mapowanie obciążeń na procesy biznesowe. Krytyczne znaczenie klasyfikacji do koncentracji inwestycji.
 - **[Wpływ](./impact.md):** Zrozumienie wpływu potencjalnej awarii, aby pomóc w ocenie powrotu do inwestycji związanych z zarządzaniem chmurą.

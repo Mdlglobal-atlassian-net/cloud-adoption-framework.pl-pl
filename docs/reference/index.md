@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: d43097c940bcb6afb6b816dc4f8a533021d304fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7c808e02b0f1d759fcb37acd0a6b6a24d2087950
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798659"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140573"
 ---
 # <a name="cloud-adoption-framework-roadmap"></a>Harmonogram działania dotyczący struktury wdrażania chmury
 
@@ -45,7 +45,7 @@ Usunięcie kluczowych przeszkód i wprowadzanie zmian wymaga więcej niż tylko 
 
 Przewodnik Cloud Adoption Framework to nadrzędna struktura obejmująca fazy Planowanie, Gotowość i Wdrażanie w motywacjach Migracja i Innowacja do wdrażania chmury i wspomagana przez wskazówki dotyczące ładu i działania.
 
-Struktura stała się ogólnie dostępna. Jednak nadal aktywnie tworzymy tę strukturę we współpracy z klientami, partnerami i zespołami wewnętrznymi. Aby zachęcić do partnerstwa, zawartość jest udostępniana, gdy tylko stanie się dostępna. Te publiczne wydania umożliwiają testowanie, weryfikowanie i stopniowe udoskonalanie wskazówek. 
+Struktura stała się ogólnie dostępna. Jednak nadal aktywnie tworzymy tę strukturę we współpracy z klientami, partnerami i zespołami wewnętrznymi. Aby zachęcić do partnerstwa, zawartość jest udostępniana, gdy tylko stanie się dostępna. Te publiczne wydania umożliwiają testowanie, weryfikowanie i stopniowe udoskonalanie wskazówek.
 
 Aby pomyślnie wdrożyć chmurę, klient musi przygotować swoich pracowników, technologie i procesy związane z tą transformacją cyfrową. Przewodnik Cloud Adoption Framework obejmuje sekcję przedstawiającą w sposób ogólny procesy wdrażania (Migracja i Innowacja) jako omówienie dla klientów. Ta sekcja składa się z następujących faz procesu wdrażania:
 

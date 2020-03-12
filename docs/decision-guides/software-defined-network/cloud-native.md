@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 250f78bb0287e30615aee4b2cfb1234823197f56
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e0903b816dbbdf6d227870d8bae99fd585d1734e
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222678"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140324"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Sieć zdefiniowana przez oprogramowanie: chmura natywna
 
 Natywna Sieć wirtualna w chmurze jest wymagana podczas wdrażania zasobów IaaS, takich jak maszyny wirtualne, na platformę chmury. Dostęp do sieci wirtualnych ze źródeł zewnętrznych, podobnie jak w przypadku sieci Web, musi być jawnie zainicjowany. Te typy sieci wirtualnych obsługują Tworzenie podsieci, reguł routingu oraz urządzeń wirtualnych i zarządzania ruchem.
 
-Natywna w chmurze Sieć wirtualna nie ma żadnych zależności w lokalnych lub innych zasobach w chmurze do obsługi obciążeń hostowanych w chmurze. Wszystkie wymagane zasoby są obsługiwane zarówno w sieci wirtualnej, jak i przy użyciu zarządzanych ofert PaaS.
+Natywna w chmurze Sieć wirtualna nie ma żadnych zależności od zasobów lokalnych lub innych niż zasoby w chmurze w celu obsługi obciążeń hostowanych w chmurze. Wszystkie wymagane zasoby są obsługiwane zarówno w sieci wirtualnej, jak i przy użyciu zarządzanych ofert PaaS.
 
 ## <a name="cloud-native-assumptions"></a>Założenia natywne w chmurze
 

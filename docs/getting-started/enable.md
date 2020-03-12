@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: c9e33b32590cd3b73e5bc42a662abf5ef6de36da
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 5f611494bb395a06a763a500d7b94377177d3c71
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892246"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140273"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Włącz powodzenie w trakcie podróży w chmurze
 
@@ -29,7 +29,7 @@ W tej architekturze włączenie jest podstawową kompozycją. Poniższa lista ko
   - **Zarządzanie:** Ciągłe [Zarządzanie działaniem](../manage/index.md) portfolio IT w celu zminimalizowania przerw w procesach biznesowych i zapewnienia stabilności portfolio IT.
   - **Obsługa:** Wyrównaj prawidłowe [Opcje partnerstwa i pomocy technicznej](../migrate/migration-considerations/assess/partnership-options.md).
 
-Innym podstawowym motywem jest zabezpieczenia, które jest krytycznym atrybutem jakości dla pomyślnego wdrożenia chmury. Zabezpieczenia są zintegrowane w ramach tej struktury, aby zapewnić zintegrowane Wskazówki dotyczące utrzymania poufności, integralności i zapewnienia dostępności obciążeń w chmurze. 
+Innym podstawowym motywem jest zabezpieczenia, które jest krytycznym atrybutem jakości dla pomyślnego wdrożenia chmury. Zabezpieczenia są zintegrowane w ramach tej struktury, aby zapewnić zintegrowane Wskazówki dotyczące utrzymania poufności, integralności i zapewnienia dostępności obciążeń w chmurze.
 
 ## <a name="additional-tools"></a>Dodatkowe narzędzia
 

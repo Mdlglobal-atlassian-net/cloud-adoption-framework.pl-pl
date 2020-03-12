@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 73cbd084e79589de68e359ad4dc88b639d92f9df
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4ecd18a226a36497cf3b23669bf17f323c196382
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801345"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140641"
 ---
+<!-- cSpell:ignore ITSM TOGAF -->
+
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Przygotowanie do złożoności technicznej: zarządzanie zmianami zwinnymi (Agile)
 
 Gdy całe centrum danych można anulować i utworzyć ponownie za pomocą jednego wiersza kodu, procesy tradycyjne pozostają w tyle. Wskazówki w całej strukturze Cloud Adoption Framework opierają się na praktykach, takich jak zarządzanie usługami informatycznymi (narzędzia ITSM), Open Group Architecture Framework (TOGAF) itp. Jednak w celu zapewnienia elastyczności i czasu reakcji na zmianę w ramach działalności struktura kształtuje te metody, aby dostosować je do metodologii zwinnych oraz rozwiązań DevOps.
@@ -76,7 +78,7 @@ Zespół strategiczny ds. chmury i zespół wdrożeniowy ds. chmury współpracu
 
 - **Szczegółowy spis.** Walidacja wymaganych zasobów do migracji. Często walidacja jest przeprowadzana za pomocą danych z dzienników lub monitorowania na poziomie hosta, sieci lub systemu operacyjnego w celu zapewnienia dokładnych informacji na temat zależności sieciowych i sprzętowych poszczególnych zasobów w ramach obciążenia standardowego.
 - **Wzorce użycia.** Informacje dotyczące wzorców użycia od użytkowników końcowych. Wzorce te często obejmują analizę rozkładu geograficznego użytkowników końcowych, trasy sieciowe, sezonowe wzrosty użycia, dzienne/godzinowe wzrosty użycia oraz kompozycję użytkownika końcowego (wewnętrzną i zewnętrzną).
-- **Oczekiwania dotyczące wydajności.** Analiza przepływności przechwytującej dostępne dane dziennika, tras sieciowych oraz innych danych dotyczących wydajności wymaganych do replikowania środowiska użytkownika końcowego.
+- **Oczekiwania dotyczące wydajności.** Analiza dostępnych danych dziennika przechwytywania przepływności, wyświetleń stron, tras sieciowych i innych danych wydajności wymaganych do replikowania środowiska użytkownika końcowego.
 - **Zależności.** Analiza wzorców ruchu sieciowego i użycia aplikacji w celu zidentyfikowania wszelkich dodatkowych zależności obciążeń, które powinny być zorientowane na sekwencjonowanie i gotowość na środowisko. Nie dołączaj obciążenia do wydania, dopóki nie zostanie spełnione jedno z następujących kryteriów:
   - Wszystkie obciążenia zależne zostały zmigrowane.
   - Wdrożono konfiguracje sieci i zabezpieczeń, aby umożliwić obciążeniu dostęp do wszystkich zależności zgodnie z istniejącymi oczekiwaniami dotyczącymi wydajności.

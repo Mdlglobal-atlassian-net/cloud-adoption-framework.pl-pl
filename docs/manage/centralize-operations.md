@@ -7,16 +7,18 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 03920802d2ee483154f789a6f353fd1642ccaf98
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 312be5ae3b716ad8d6aa609749bcbb615f6ef1c5
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094458"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140426"
 ---
+<!-- cSpell:ignore jenhayes -->
+
 # <a name="centralize-management-operations"></a>Centralizowanie operacji zarządzania
 
-W przypadku większości organizacji przy użyciu jednej dzierżawy usługi Azure Active Directory (Azure AD) dla wszystkich użytkowników upraszczają operacje zarządzania i obniżają koszty konserwacji. Wynika to z faktu, że wszystkie zadania zarządzania mogą być wyznaczonymi użytkownikami, grupami użytkowników lub jednostkami usługi w ramach danej dzierżawy. 
+W przypadku większości organizacji przy użyciu jednej dzierżawy usługi Azure Active Directory (Azure AD) dla wszystkich użytkowników upraszczają operacje zarządzania i obniżają koszty konserwacji. Wynika to z faktu, że wszystkie zadania zarządzania mogą być wyznaczonymi użytkownikami, grupami użytkowników lub jednostkami usługi w ramach danej dzierżawy.
 
 Zalecamy używanie tylko jednej dzierżawy usługi Azure AD w organizacji, jeśli jest to możliwe. Jednak niektóre sytuacje mogą wymagać od organizacji utrzymania wielu dzierżawców usługi Azure AD z następujących powodów:
 

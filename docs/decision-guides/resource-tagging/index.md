@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 90b69a21f1643d4545b2ea5bce46d0c3c499d9a3
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 475b9e944188384a72cb3b8670a1ff607e7895f6
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708686"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140409"
 ---
+<!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
+
 # <a name="resource-naming-and-tagging-decision-guide"></a>Przewodnik po decyzjach dotyczących nazewnictwa i tagowania zasobów
 
 Organizowanie zasobów opartych na chmurze jest jednym z najważniejszych zadań działu IT, chyba że obsługujesz tylko proste wdrożenia. Organizowanie zasobów służy trzem podstawowym celom:
