@@ -1,6 +1,6 @@
 ---
 title: Przygotowywanie do wdrożenia chmury
-description: Przygotowywanie środowiska do wdrażania chmury
+description: Dowiedz się, jak utworzyć strefę docelową, w której będą hostowane obciążenia tworzone w chmurze lub do niej migrowane.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: cd4b29823636cfaa758d0568d3298bc146a00eb8
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 11ab187c24bcd288834cf3c4823e508096e69492
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892484"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092531"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Przejrzyj przewodnik konfiguracji platformy Azure, aby zapoznać się z narzędz
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./landing-zone/migrate-landing-zone.md">
+        <a href="./landing-zone/first-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -59,7 +59,7 @@ Przejrzyj przewodnik konfiguracji platformy Azure, aby zapoznać się z narzędz
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Pierwsza strefa docelowa</h3>
-Zapoznaj się ze strategią strefy docelowej migracji w podręczniku Cloud Adoption Framework. Za pomocą tej strategii utwórz pierwszą strefę docelową gotową na migrację na potrzeby nauki i przeprowadzania szybkich eksperymentów.
+Wybierz najbardziej odpowiednią opcję strefy docelowej, aby określić punkt wyjścia oparty na kodzie dla środowiska.
                         </div>
                     </div>
                 </div>
@@ -77,8 +77,8 @@ Zapoznaj się ze strategią strefy docelowej migracji w podręczniku Cloud Adopt
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Rozwinięcie planu</h3>
-Za pomocą zagadnień dotyczących strefy docelowej zidentyfikuj i wprowadź niezbędne zmiany w szablonie strategii.
+                            <h3>Rozszerzanie strefy docelowej</h3>
+Spełnij wymagania dotyczące platformy w ramach planu wdrażania chmury, rozszerzając pierwszą strefę docelową.
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ Za pomocą zagadnień dotyczących strefy docelowej zidentyfikuj i wprowadź nie
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Najlepsze rozwiązania</h3>
-Zweryfikuj zmiany w strefie docelowej, korzystając z sekcji najlepszych rozwiązań, aby zapewnić odpowiednią konfigurację bieżącej i przyszłych stref docelowych.
+Zweryfikuj zmiany w strefie docelowej, korzystając z najlepszych rozwiązań, aby zapewnić odpowiednią konfigurację bieżącej i przyszłych stref docelowych.
                         </div>
                     </div>
                 </div>

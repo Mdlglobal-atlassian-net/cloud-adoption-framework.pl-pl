@@ -1,18 +1,18 @@
 ---
 title: Walidacja założeń oceny przed migracją
-description: Walidacja założeń oceny przed migracją
+description: Użyj struktury wdrażania chmury dla platformy Azure, aby dowiedzieć się, jak zweryfikować założenia oceny przed rozpoczęciem migracji do chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 30cc06e28477c70987c7e8dc23300e3e0a184dd2
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222281"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094111"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>Walidacja założeń oceny przed migracją
 
@@ -62,7 +62,7 @@ Oprócz odpowiedzialności wysokiego poziomu istnieją również akcje, za któr
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po uzyskaniu ogólnej wiedzy dotyczącej procesu oceny można rozpocząć proces [uzgadniania priorytetów biznesowych](./business-priorities.md).
+Po uzyskaniu ogólnej wiedzy dotyczącej procesu oceny można rozpocząć proces [klasyfikowania obciążeń](./classify.md).
 
 > [!div class="nextstepaction"]
-> [Uzgadnianie priorytetów biznesowych](./business-priorities.md)
+> [Klasyfikowanie obciążeń](./classify.md)

@@ -42,12 +42,14 @@ items:
             href: strategy/financial-models.md
           - name: Objaśnienie księgowości w chmurze
             href: strategy/cloud-accounting.md
-          - name: Równoważenie portfela
-            href: strategy/balance-the-portfolio.md
       - name: Pierwszy projekt wdrażania chmury
         href: strategy/first-adoption-project.md
       - name: Dodatkowe zagadnienia
         items:
+          - name: Równoważenie konkurencyjnych priorytetów
+            href: strategy/balance-competing-priorities.md
+          - name: Równoważenie portfela
+            href: strategy/balance-the-portfolio.md
           - name: Rynki globalne
             href: strategy/global-markets.md
       - name: Umiejętności związane ze strategią
@@ -256,7 +258,7 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
               - name: Hosty VMware
                 items:
-                  - name: Omówienie
+                  - name: Zagadnienia dotyczące ponownego hostowania oprogramowania VMWare
                     href: migrate/azure-best-practices/vmware-host.md
                   - name: Wymagania wstępne
                     items:
@@ -496,6 +498,8 @@ items:
                 items:
                   - name: Walidacja założeń oceny przed migracją — dodawanie uściślania języka R
                     href: migrate/migration-considerations/assess/index.md
+                  - name: Klasyfikowanie obciążeń
+                    href: migrate/migration-considerations/assess/classify.md
                   - name: Zachowywanie odpowiedniej proporcji priorytetów
                     href: migrate/migration-considerations/assess/business-priorities.md
                   - name: Ocena gotowości obciążeń
@@ -524,7 +528,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: Przygotowywanie obciążeń
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: 'Testowanie, optymalizacja i podwyższanie poziomu procesów'
+              - name: Procesy podwyższania poziomu
                 items:
                   - name: Omówienie
                     href: migrate/migration-considerations/optimize/index.md
@@ -1194,6 +1198,8 @@ items:
     items:
       - name: Harmonogram działania dotyczący struktury wdrażania chmury
         href: reference/index.md
+      - name: Co nowego
+        href: reference/whats-new.md
       - name: Model operacyjny
         items:
           - name: Omówienie

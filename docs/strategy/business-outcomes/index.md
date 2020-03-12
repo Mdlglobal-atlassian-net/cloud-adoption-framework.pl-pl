@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 1b0104767c58e31f6ae31cae511d2aa1dc60dd73
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337933"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092387"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Jakie wyniki biznesowe są powiązane z procesami transformacji?
 
-Najbardziej pomyślne procesy transformacji rozpoczynają się od określenia wyników biznesowych. Wdrażanie chmury może być kosztowe i czasochłonne. Zapewnienie odpowiedniego poziomu wsparcia technicznego przez dział IT i inne obszary działalności ma kluczowe znaczenie dla powodzenia. [Struktura wyników biznesowych](../index.md) firmy Microsoft ma na celu pomoc klientom w identyfikowaniu wyników biznesowych, które są zwięzłe, zdefiniowane i umożliwiają osiąganie obserwowalnych wyników lub zmian wydajności biznesowej z zastosowaniem określonej miary.
+Najbardziej pomyślne procesy transformacji rozpoczynają się od określenia wyników biznesowych. Wdrażanie chmury może być kosztowe i czasochłonne. Zapewnienie odpowiedniego poziomu wsparcia technicznego przez dział IT i inne obszary działalności ma kluczowe znaczenie dla powodzenia. Ta seria artykułów ma na celu pomoc klientom w identyfikowaniu wyników biznesowych, które są zwięzłe, zdefiniowane i umożliwiają osiąganie obserwowalnych wyników lub zmian wydajności biznesowej z zastosowaniem określonej miary.
 
 Podczas każdej transformacji do chmury możliwość komunikacji wyników biznesowych pomaga w zachowaniu jawności i relacji partnerstwa o wielu różnych funkcjach. Struktura wyników biznesowych rozpoczyna się od prostego szablonu, który pomaga osobom ukierunkowanym technicznie w tworzeniu dokumentacji i uzyskaniu konsensusu. Przy użyciu tego szablonu można wraz z osobami biorącymi udział w projekcie zebrać informacje o wynikach biznesowych, na które może mieć wpływ proces transformacji firmy. Możesz używać tego szablonu w wersji elektronicznej lub, jeszcze lepiej, narysować go na tablicy, aby zaangażować liderów biznesowych i osoby biorące udział w projekcie w dyskusje na temat wyników.
 
