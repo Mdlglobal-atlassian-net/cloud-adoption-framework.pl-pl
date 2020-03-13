@@ -1,6 +1,6 @@
 ---
 title: Spis i widoczność na platformie Azure
-description: Dowiedz się, jak skonfigurować spis, monitorowanie, raportowanie i alerty dla środowiska zarządzania platformy Azure.
+description: Poznaj narzędzia, które zapewniają wgląd w stan uruchomienia zasobów oraz umożliwiają tworzenie spisu tych zasobów w celu zebrania danych.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 42c7ea0b9647015f8ac049710905c8349d073093
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: da3675484c04c9c02384fcbbc0337accff2aaffe
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808213"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092135"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Spis i widoczność na platformie Azure
 
@@ -44,7 +44,7 @@ Poniższa tabela zawiera sugerowane wartości minimalne planu bazowego zarządza
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-service-healthtabazureservicehealth"></a>[Azure Service Health](#tab/AzureServiceHealth)
+## <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
 ::: zone-end
 
@@ -91,7 +91,7 @@ Aby dowiedzieć się więcej, zapoznaj się z [dokumentacją usługi Azure Servi
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="log-analyticstablog-analytics"></a>[Log Analytics](#tab/Log-Analytics)
+## <a name="log-analytics"></a>[Log Analytics](#tab/Log-Analytics)
 
 ::: zone-end
 
@@ -120,7 +120,7 @@ Aby dowiedzieć się więcej, zapoznaj się z dokumentacją dotyczącą [tworzen
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-monitortabazure-monitor"></a>[Azure Monitor](#tab/Azure-Monitor)
+## <a name="azure-monitor"></a>[Azure Monitor](#tab/Azure-Monitor)
 
 ::: zone-end
 
@@ -166,7 +166,7 @@ Aby dowiedzieć się więcej, zapoznaj się z [dokumentacją usługi Azure Monit
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="onboard-solutionstabconfigure-solutions"></a>[Dołączanie rozwiązań](#tab/Configure-solutions)
+## <a name="onboard-solutions"></a>[Dołączanie rozwiązań](#tab/Configure-solutions)
 
 ::: zone-end
 

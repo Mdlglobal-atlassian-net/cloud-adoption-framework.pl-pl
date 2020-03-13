@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 9552ba8b168e79f247916ae86f8e7721282baddb
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892450"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140239"
 ---
 # <a name="architectural-decision-guides"></a>Przewodniki podejmowania decyzji dotyczących architektury
 
@@ -37,7 +37,7 @@ Każda z poniższych kategorii reprezentuje fundamentalną technologię wszystki
 
 [Tagowanie zasobów](./resource-tagging/index.md): Zorganizuj swoje zasoby oparte na chmurze tak, aby obsługiwały modele rozliczeń, podejścia do księgowości w chmurze i funkcje zarządzania oraz aby zoptymalizować wykorzystanie zasobów i koszty. Tagowanie zasobów wymaga spójnego i dobrze zorganizowanego schematu nazewnictwa i metadanych.
 
-[Sieci zdefiniowane programowo](./software-defined-network/index.md): Wdrażaj bezpieczne obciążenia w chmurze za pomocą szybkiego wdrażania i modyfikacji wirtualnych funkcji sieciowych. Sieci zdefiniowane programowo (SDN, software-defined network) mogą obsługiwać zwinne przepływy pracy, izolować zasoby i integrować systemy oparte na chmurze z istniejącą infrastrukturą IT.
+[Sieci zdefiniowane programowo](./software-defined-network/index.md): Wdrażaj bezpieczne obciążenia w chmurze za pomocą szybkiego wdrażania i modyfikacji wirtualnych funkcji sieciowych. Sieci zdefiniowane programowo mogą obsługiwać zwinne przepływy pracy, izolować zasoby i integrować systemy oparte na chmurze z istniejącą infrastrukturą IT.
 
 [Szyfrowanie](./encryption/index.md): Zabezpiecz poufne dane przy użyciu szyfrowania, aby dostosować je do wymagań dotyczących zasad zabezpieczeń i zgodności w Twojej organizacji.
 

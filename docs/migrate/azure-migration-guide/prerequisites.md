@@ -1,6 +1,6 @@
 ---
 title: Wymagania wstępne dotyczące migracji na platformę Azure
-description: Wymagania wstępne dotyczące migracji na platformę Azure
+description: Skorzystaj z podręcznika Cloud Adoption Framework dla platformy Azure, aby uzyskać informacje na temat przygotowania się do migracji na platformę Azure i wymagań wstępnych potrzebnych dla pomyślnego projektu migracji.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9baf2c9fdd307125e80fa77d8b2be54bec15b931
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 777b68bcd7faa613681f2d9ebbdf6cffe4accc3f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806989"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094792"
 ---
 ::: zone target="chromeless"
 
@@ -30,7 +30,7 @@ ms.locfileid: "76806989"
 
 Zasoby w tej sekcji ułatwią przygotowanie bieżącego środowiska do migracji na platformę Azure.
 
-# <a name="overviewtaboverview"></a>[Omówienie](#tab/Overview)
+# <a name="overview"></a>[Omówienie](#tab/Overview)
 
 Powody migracji na platformę Azure obejmują usuwanie zagrożeń związanych ze starszymi wersjami sprzętu, zmniejszanie wydatków inwestycyjnych, zwalnianie miejsca w centrum danych i szybkie uzyskiwanie zwrotów z inwestycji (ROI).
 
@@ -58,7 +58,7 @@ Ta podróż związana z migracją koncentruje się na osiągnięciu następując
 > - [Systemy Windows Server 2008 i Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/windows-server-2008).
 > - [Programy SQL Server 2008 i SQL Server 2008 R2](https://www.microsoft.com/sql-server/sql-server-2008).
 
-# <a name="understand-migration-approachestabapproach"></a>[Omówienie podejść do migracji](#tab/Approach)
+# <a name="understand-migration-approaches"></a>[Omówienie podejść do migracji](#tab/Approach)
 
 Wybór strategii i narzędzi używanych do migrowania aplikacji na platformę Azure w dużej mierze zależy od względów biznesowych, wymagań technologicznych i harmonogramów w Twojej firmie, a także od pełnego obrazu rzeczywistego obciążenia i zasobów (infrastruktury, aplikacji i danych), które są migrowane.
 
@@ -73,7 +73,7 @@ Podczas oceniania obciążeń związanych z migracją zidentyfikuj aplikacje, kt
 - [Przewodnik po decyzjach dotyczących narzędzi migracji w obrębie struktury wdrażania chmury](../../decision-guides/migrate-decision-guide/index.md)
 - [5 zasad racjonalizacji](../../digital-estate/5-rs-of-rationalization.md)
 
-# <a name="planning-checklisttabchecklist"></a>[Lista kontrolna dotycząca planowania](#tab/Checklist)
+# <a name="planning-checklist"></a>[Lista kontrolna dotycząca planowania](#tab/Checklist)
 
 Przed rozpoczęciem migracji należy spełnić pewne wymagania wstępne. Szczegóły tych działań różnią się w zależności od migrowanego środowiska. Można zastosować następującą ogólną listę kontrolną:
 

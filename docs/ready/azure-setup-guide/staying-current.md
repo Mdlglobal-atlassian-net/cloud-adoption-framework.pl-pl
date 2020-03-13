@@ -1,6 +1,6 @@
 ---
-title: Bądź na bieżąco z platformą Azure przy obecnym tempie rozwoju chmury
-description: Dowiedz się, jak być na bieżąco ze zmianami platformy Azure i zarządzać nimi przy obecnym tempie rozwoju chmury.
+title: Bądź na bieżąco z platformą Azure
+description: Dowiedz się jak być na bieżąco i zarządzać zmianą przy obecnym rozwoju chmury dzięki przewodnikowi Cloud Adoption Framework dla platformy Azure.
 author: jelledruyts
 ms.author: andym
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 3852317648526cceadfd772b72adbd1af2bb7d08
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ad8b6259aaa0808e2628fed9b88f0f806c46e655
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222054"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341984"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Bądź na bieżąco z platformą Microsoft Azure
 

@@ -1,6 +1,6 @@
 ---
 title: Skuteczne organizowanie zasobów platformy Azure
-description: Najlepsze rozwiązania umożliwiające efektywne organizowanie zasobów platformy Azure w celu ułatwienia zarządzania.
+description: Opis najlepszych potrzebnych rozwiązań umożliwiających efektywne organizowanie zasobów platformy Azure w celu ułatwienia zarządzania.
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567762"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024010"
 ---
+<!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
+
 # <a name="organize-your-azure-resources"></a>Organizowanie zasobów platformy Azure
 
 Organizowanie zasobów opartych na chmurze ma kluczowe znaczenie dla zabezpieczania i śledzenia kosztów związanych z obciążeniami oraz zarządzania nimi. Aby zorganizować zasoby, użyj hierarchii zarządzania w ramach platformy Azure, zaimplementuj dobrze przemyślane konwencje nazewnictwa i zastosuj tagowanie zasobów.
@@ -156,7 +158,7 @@ Tagów można używać do wielu innych celów. Najczęstsze zastosowania to:
 
 - **Metadane i dokumentacja:** Administratorzy mogą łatwo wyświetlać szczegółowe informacje o zasobach, z którymi pracują, stosując tag, na przykład „ProjectOwner”.
 - **Automatyzacja:** Można używać regularnie uruchamianych skryptów, które mogą wykonywać akcję w oparciu o wartość tagu, taką jak „ShutdownTime” lub „DeprovisionDate”.
-- **Optymalizacja kosztów:** Możesz przydzielić zasoby do zespołów i zasobów odpowiedzialnych za koszt. W usłudze Azure Cost Management można zastosować tag centrum kosztów jako filtr, aby uzyskać raport opłat na podstawie użycia zespołu lub działu.
+- **Optymalizacja kosztów:** W usłudze Azure Cost Management można zastosować tag centrum kosztów jako filtr, aby uzyskać raport opłat na podstawie użycia zespołu lub działu.
 
 Każdy zasób lub grupa zasobów może mieć co najwyżej 50 par nazw i wartości tagów. To ograniczenie dotyczy tylko tagów stosowanych bezpośrednio do grupy zasobów lub zasobu.
 

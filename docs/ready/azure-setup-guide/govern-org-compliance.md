@@ -1,6 +1,6 @@
 ---
-title: Ład, zabezpieczenia i zgodność na platformie Azure
-description: Dowiedz się, jak skonfigurować ład, zabezpieczenia i zgodność w środowisku platformy Azure.
+title: Ład Azure, zabezpieczenia i zgodność
+description: Dowiedz się, jak skonfigurować ład, zabezpieczenia i zgodność w środowisku platformy Azure przy użyciu podręcznika Cloud Adoption Framework dla platformy Azure.
 author: tvuylsteke
 ms.author: kfollis
 ms.date: 09/27/2019
@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 923818c5b4260788ae86f6a9d92b11aa90141834
-ms.sourcegitcommit: 81579e9dc28af64fad41027e8c32da06a52d62f6
+ms.openlocfilehash: 89de72cb85cc4c763d443ae9cc1114b648ab72c4
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78256650"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024088"
 ---
-<!-- cSpell:ignore tvuylsteke kfollis >
+<!-- cSpell:ignore tvuylsteke >
 
 <!-- markdownlint-disable MD024 MD025 -->
 
@@ -93,9 +93,9 @@ Aby opublikować artefakty strategii w subskrypcji:
 
 Aby dowiedzieć się więcej, zobacz:
 
-- [Azure Blueprints](/azure/governance/blueprints)
+- [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints)
 - [Cloud Adoption Framework: Przewodnik podejmowania decyzji dotyczących spójności zasobów](../../decision-guides/resource-consistency/index.md)
-- [Przykłady strategii opartych na standardach](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Przykłady strategii opartych na standardach](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -133,7 +133,7 @@ Aby zastosować zasady do grupy zasobów:
 
 Aby dowiedzieć się więcej, zobacz:
 
-- [Azure Policy](/azure/governance/policy)
+- [Azure Policy](https://docs.microsoft.com/azure/governance/policy)
 - [Cloud Adoption Framework: Przewodnik podejmowania decyzji dotyczących wymuszania zasad](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -160,8 +160,8 @@ Aby zapoznać się z usługą Azure Security Center, przejdź do witryny [Azure 
 
 Aby dowiedzieć się więcej, zobacz:
 
-- [Azure Security Center](/azure/security-center)
-- [Dostęp just in time do maszyny wirtualnej](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Azure Security Center](https://docs.microsoft.com/azure/security-center)
+- [Dostęp just in time do maszyny wirtualnej](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [Porównanie warstw Standardowa i Bezpłatna](https://azure.microsoft.com/pricing/details/security-center)
 - [Cloud Adoption Framework: Dyscyplina ładu w zakresie punktu odniesienia zabezpieczeń](../../govern/security-baseline/index.md)
 

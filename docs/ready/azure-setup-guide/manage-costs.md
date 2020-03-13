@@ -1,6 +1,6 @@
 ---
 title: Zarządzanie kosztami i rozliczeniami dla zasobów platformy Azure
-description: Dowiedz się, jak interpretować faktury oraz konfigurować budżety i płatności dotyczące zasobów platformy Azure.
+description: Dowiedz się, jak interpretować faktury oraz konfigurować budżety i płatności dotyczące zasobów platformy Azure przy użyciu podręcznika Cloud Adoption Framework dla platformy Azure.
 author: dchimes
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 4f0f0d900f75338a33b1873b8d0eac6d91835256
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0f91ed2c09b2511304a59bc8768507f737ec6c76
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799526"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024030"
 ---
+<!-- cSpell:ignore dchimes -->
+
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Zarządzanie kosztami i rozliczeniami dla zasobów platformy Azure
 
 Zarządzanie kosztami to proces efektywnego planowania i kontrolowania kosztów związanych z działalnością. Zadania zarządzania kosztami są zazwyczaj wykonywane przez zespoły ds. finansów, zarządzania i aplikacji. Usługa Azure Cost Management może ułatwić planowanie z uwzględnieniem kosztów. Ułatwia ona również efektywne analizowanie kosztów i podejmowanie działań mających na celu optymalizację wydatków dotyczących chmury.
