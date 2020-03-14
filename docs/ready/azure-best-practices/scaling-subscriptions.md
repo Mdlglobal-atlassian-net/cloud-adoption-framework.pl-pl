@@ -1,22 +1,22 @@
 ---
-title: Skalowanie za pomocą wielu subskrypcji platformy Azure
-description: Dowiedz się, jak skalować za pomocą wielu subskrypcji platformy Azure.
+title: Skalowanie za pomocą subskrypcji platformy Azure
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak opracować strategię skalowania z wieloma subskrypcjami platformy Azure.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6a893ce6f8620b31fcf23d8c3e8581e95035bdcf
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 96564a10bc8dda4ed1966cf5dd41c5ea233f2327
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799798"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312660"
 ---
 # <a name="scale-with-multiple-azure-subscriptions"></a>Skalowanie przy użyciu wielu subskrypcji platformy Azure
 
-Organizacje często potrzebują więcej niż jednej subskrypcji platformy Azure w wyniku limitów zasobów i innych zagadnień związanych z zarządzaniem. Ważne jest opracowanie strategii skalowania subskrypcji.
+Organizacje zwykle potrzebują wielu subskrypcji platformy Azure w wyniku limitów zasobów i innych zagadnień związanych z zarządzaniem. Definiowanie strategii skalowania subskrypcji jest ważne.
 
 ## <a name="production-and-nonproduction-workloads"></a>Obciążenia produkcyjne i nieprodukcyjne
 
@@ -62,7 +62,7 @@ Wiele typów zasobów można przenosić między subskrypcjami lub używać zauto
 
 ## <a name="manage-multiple-subscriptions"></a>Zarządzanie wieloma subskrypcjami
 
-Jeśli masz tylko kilka subskrypcji, niezależne zarządzanie nimi jest stosunkowo proste. Jeśli jednak masz wiele subskrypcji, rozważ utworzenie hierarchii grup zarządzania, aby uprościć zarządzanie subskrypcjami i zasobami.
+Jeśli masz tylko kilka subskrypcji, niezależne zarządzanie nimi jest stosunkowo proste. Jeśli jednak masz wiele subskrypcji, Utwórz hierarchię grup zarządzania, aby uprościć zarządzanie subskrypcjami i zasobami.
 
 Grupy zarządzania umożliwiają wydajne zarządzanie dostępem, zasadami i zgodnością z subskrypcjami organizacji. Każda grupa zarządzania jest kontenerem dla co najmniej jednej subskrypcji.
 
@@ -71,7 +71,7 @@ Grupy zarządzania są uporządkowane w jednej hierarchii. Ta hierarchia jest de
 Platforma Azure oferuje cztery poziomy zakresu zarządzania: grupy zarządzania, subskrypcje, grupy zasobów i zasoby. Każdy dostęp lub zasady zastosowane na jednym poziomie w hierarchii są dziedziczone przez niższe poziomy. Właściciel zasobu lub właściciel subskrypcji nie może zmienić odziedziczonych zasad. To ograniczenie pomaga ulepszyć zarządzanie.
 
 > [!NOTE]
-> Pamiętaj, że dziedziczenie tagów nie jest obecnie dostępne, ale zostanie wkrótce udostępnione.
+> Należy zauważyć, że dziedziczenie tagów nie jest obecnie obsługiwane, ale będzie dostępne wkrótce.
 
 Przy użyciu tego modelu dziedziczenia można rozmieścić subskrypcje w hierarchii, tak aby w każdej subskrypcji były stosowane odpowiednie zasady i kontrole zabezpieczeń.
 
@@ -79,11 +79,11 @@ Przy użyciu tego modelu dziedziczenia można rozmieścić subskrypcje w hierarc
 
 Każdy dostęp lub zasady w głównej grupie zarządzania dotyczy wszystkich zasobów w katalogu. Należy starannie rozważyć, które elementy są definiowane w tym zakresie. Należy uwzględnić tylko te przypisania, które muszą być dostępne.
 
-Podczas początkowego definiowania hierarchii grup zarządzania należy najpierw utworzyć główną grupę zarządzania. Następnie można przenieść wszystkie istniejące subskrypcje z katalogu do głównej grupy zarządzania. Nowe subskrypcje są zawsze tworzone w głównej grupie zarządzania. Później można przenieść je do innej grupy zarządzania.
+Podczas definiowania hierarchii grup zarządzania należy najpierw utworzyć główną grupę zarządzania. Następnie można przenieść wszystkie istniejące subskrypcje z katalogu do głównej grupy zarządzania. Nowe subskrypcje są zawsze tworzone w głównej grupie zarządzania. Później można przenieść je do innej grupy zarządzania.
 
-Gdy subskrypcja jest przenoszona do istniejącej grupy zarządzania, dziedziczy zasady i przypisania ról z hierarchii grupy zarządzania powyżej. Po utworzeniu wielu subskrypcji dla obciążeń platformy Azure należy utworzyć dodatkowe subskrypcje, które będą zawierać usługi platformy Azure udostępniane przez inne subskrypcje.
+Przeniesienie subskrypcji do istniejącej grupy zarządzania powoduje, że dziedziczy zasad i przypisań ról z hierarchii grupy zarządzania powyżej. Po utworzeniu wielu subskrypcji dla obciążeń platformy Azure należy utworzyć dodatkowe subskrypcje, które będą zawierać usługi platformy Azure udostępniane przez inne subskrypcje.
 
-![Przykład hierarchii grupy zarządzania](../../_images/ready/management-group-hierarchy.png)
+![Przykład hierarchii grup zarządzania](../../_images/ready/management-group-hierarchy-v2.png)
 
 Aby uzyskać więcej informacji, zobacz [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](https://docs.microsoft.com/azure/governance/management-groups).
 
@@ -95,7 +95,7 @@ Aby uzyskać więcej informacji, zobacz [Organizowanie zasobów przy użyciu gru
 - Jeśli to możliwe, podczas tworzenia nowych subskrypcji [używaj nazwy głównej usługi](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription). Zdefiniuj grupę zabezpieczeń, która może żądać nowych subskrypcji za pośrednictwem zautomatyzowanego przepływu pracy.
 - Jeśli jesteś klientem mającym umowę Enterprise (EA), poproś pomoc techniczną platformy Azure o zablokowanie możliwości tworzenia subskrypcji niezwiązanych z umową EA dla organizacji.
 
-## <a name="related-resources"></a>Zasoby powiązane
+## <a name="related-resources"></a>Powiązane zasoby
 
 - [Podstawowe pojęcia dotyczące platformy Azure](../considerations/fundamental-concepts.md).
 - [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](https://docs.microsoft.com/azure/governance/management-groups).

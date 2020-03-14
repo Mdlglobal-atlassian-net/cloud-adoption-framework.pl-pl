@@ -1,18 +1,18 @@
 ---
 title: Informacje o opcjach partnerstwa i pomocy technicznej
-description: Opisuje opcje i metody wykonywania operacji związanych z migracją
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby poznać opcje partnerstwa i podejścia do obsługi kosztów migracji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9a525ab1c87f1cbb4c662c6f902e73de93c0204c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802467"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311867"
 ---
 # <a name="understand-partnership-options"></a>Informacje o opcjach partnerstwa
 
@@ -45,7 +45,7 @@ Usługa [FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-
 - Migracja centrum danych
 - System Windows Server na platformie Azure
 - System Linux na platformie Azure
-- SAP w systemie Azure
+- Rozwiązania SAP na platformie Azure
 - Ciągłość biznesowa i odzyskiwanie po awarii (BCDR)
 - Obliczenia o wysokiej wydajności*
 - Aplikacje natywne dla chmury
@@ -59,7 +59,7 @@ Usługa [FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-
 - Dane rozproszone globalnie
 - IoT***
 
-*Ograniczona wersja zapoznawcza w Stanach Zjednoczonych, Zjednoczonym Królestwie i Europie Zachodniej
+*Ograniczona wersja zapoznawcza w Stanach Zjednoczonych, Kanadzie, Zjednoczonym Królestwie i Europie Zachodniej
 
 **Ograniczona wersja zapoznawcza w Zjednoczonym Królestwie i Europie Zachodniej
 
@@ -67,7 +67,7 @@ Usługa [FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-
 
 W typowym zastosowaniu usługi FastTrack for Azure firma Microsoft pomaga zdefiniować wizję biznesową w celu pomyślnego zaplanowania i opracowania rozwiązań platformy Azure. Zespół ocenia potrzeby architektury i udostępnia wskazówki, zasady projektowania, narzędzia oraz zasoby ułatwiające tworzenie i wdrażanie rozwiązań platformy Azure oraz zarządzanie nimi. Zespół organizuje wykwalifikowanych partnerów do obsługi usług wdrażania na żądanie i okresowo sprawdza, czy wdrożenie przebiega zgodnie z planem, oraz pomaga w usunięciu czynników blokujących.
 
-Główne fazy typowej asysty w ramach programu FastTrack for Azure to:
+Główne fazy typowej asysty w ramach usługi FastTrack for Azure to:
 
 - **Odnajdywanie.** Identyfikuj kluczowe osoby biorące udział w projekcie, poznawaj cele lub wizje dotyczące rozwiązywanych problemów, a następnie oceniaj potrzeby dotyczące architektury.
 - **Włączenie rozwiązania.** Poznaj zasady projektowania podczas tworzenia aplikacji, przeglądaj architekturę aplikacji i rozwiązań, a także wskazówki i narzędzia dotyczące wdrażania od weryfikacji koncepcji (PoC) po środowisko produkcyjne.
@@ -85,7 +85,7 @@ Główne fazy typowej asysty w ramach programu FastTrack for Azure to:
 
 **Innowacje:** [Rozwiązanie Cloud Center (CCoE) dla](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) usług firmy Microsoft oferuje DevOpse szkoleńe i korzysta z zasad DevOps związanych z wbudowanymi w chmurze funkcjami zarządzania usługami i zabezpieczeniami, które ułatwiają tworzenie innowacji biznesowych, zwiększanie elastyczności i skrócenie czasu wprowadzania wartości w ramach bezpiecznych, przewidywalnych i elastycznych usług dostarczania i zarządzania operacjami.
 
-## <a name="azure-support"></a>Pomoc techniczna systemu Azure
+## <a name="azure-support"></a>Pomoc techniczna platformy Azure
 
 Jeśli masz pytania lub potrzebujesz pomocy, [utwórz wniosek o pomoc techniczną](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest). Jeśli wniosek o pomoc techniczną wymaga szczegółowych wskazówek, zapoznaj się z [planami pomocy technicznej platformy Azure](https://azure.microsoft.com/support/plans), aby dostosować najlepszy plan do swoich potrzeb.
 

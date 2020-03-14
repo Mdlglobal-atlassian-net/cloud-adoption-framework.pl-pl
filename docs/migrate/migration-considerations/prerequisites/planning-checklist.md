@@ -1,18 +1,18 @@
 ---
 title: Lista kontrolna planowania środowiska migracji
-description: Weryfikacja gotowości środowiska przed migracją
+description: Aby sprawdzić gotowość środowiska przed migracją, należy użyć listy kontrolnej planowania środowiska migracji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: acf6c3b8dacd94c51a6fa9a857efad48eda727a0
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: c428edaa37924b7e72bb0b9b86537d6cce5b241b
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222248"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311986"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Lista kontrolna planowania środowiska migracji: sprawdzanie gotowości środowiska przed migracją
 

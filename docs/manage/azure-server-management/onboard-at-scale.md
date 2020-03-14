@@ -7,16 +7,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cb34f026b5161b20fc6e3a20bf4993b6b44ede4f
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: efd387f2f3a1c11d518e8e51d06977efdd07609c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341600"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312478"
 ---
+<!-- cSpell:ignore VMUUID kusto -->
+
 # <a name="configure-azure-server-management-services-at-scale"></a>Konfigurowanie usług zarządzania serwerem Azure na dużą skalę
 
 Należy wykonać te dwa zadania, aby dołączyć usługi zarządzania serwerem Azure do serwerów:
+
 - Wdrażanie agentów usług na serwerach
 - Włącz rozwiązania do zarządzania
 
@@ -178,7 +181,7 @@ Po zakończeniu tworzenia wystąpienie zasobu obszaru roboczego wyświetli **opr
 
 ### <a name="azure-monitor-for-vms"></a>Usługa Azure Monitor dla maszyn wirtualnych
 
-[Azure monitor dla maszyn wirtualnych](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) można włączyć za pomocą strony widok dla wystąpienia maszyny wirtualnej, zgodnie z opisem w temacie [Włączanie usług zarządzania na jednej maszynie wirtualnej do oceny](./onboard-single-vm.md). Rozwiązań nie należy włączać bezpośrednio na stronie **rozwiązań** , podobnie jak w przypadku innych rozwiązań opisanych w tym artykule. W przypadku wdrożeń na dużą skalę może być łatwiejsze używanie [automatyzacji](./onboarding-automation.md) do włączania prawidłowych rozwiązań w obszarze roboczym. 
+[Azure monitor dla maszyn wirtualnych](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) można włączyć za pomocą strony widok dla wystąpienia maszyny wirtualnej, zgodnie z opisem w temacie [Włączanie usług zarządzania na jednej maszynie wirtualnej do oceny](./onboard-single-vm.md). Rozwiązań nie należy włączać bezpośrednio na stronie **rozwiązań** , podobnie jak w przypadku innych rozwiązań opisanych w tym artykule. W przypadku wdrożeń na dużą skalę może być łatwiejsze używanie [automatyzacji](./onboarding-automation.md) do włączania prawidłowych rozwiązań w obszarze roboczym.
 
 ### <a name="azure-security-center"></a>Azure Security Center
 

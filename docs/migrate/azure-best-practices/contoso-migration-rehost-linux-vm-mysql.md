@@ -1,18 +1,18 @@
 ---
-title: Ponowne hostowanie aplikacji dla systemu Linux, używanej do obsługi pomocy technicznej, na platformie Azure i w usłudze Azure Database for MySQL
-description: Dowiedz się, jak firma Contoso przeprowadza ponowne hostowanie lokalnej aplikacji dla systemu Linux przez migrację na maszyny wirtualne platformy Azure i do usługi Azure Database for MySQL.
+title: Przehostaj aplikację usługi Linux Service Desk na platformie Azure i Azure Database for MySQL
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak rehostować lokalną aplikację z systemem Linux przez migrację jej do maszyn wirtualnych platformy Azure i Azure Database for MySQL.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a5043e3d42b843cfb714823fcb476e7bfdc0a2fd
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 89ba67d795f03a424a22fbf834f07f9d45241449
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223013"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311476"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
 
@@ -373,19 +373,19 @@ Aby przeprowadzić migrację maszyny wirtualnej, administratorzy firmy Contoso t
 
 2. Uruchamiają tryb failover z użyciem utworzonego planu. Wybierają najnowszy punkt odzyskiwania i określają, że usługa Site Recovery powinna podjąć próbę zamknięcia lokalnej maszyny wirtualnej przed wyzwoleniem trybu failover. Na stronie **Zadania** mogą śledzić postęp trybu failover.
 
-    ![Praca awaryjna](./media/contoso-migration-rehost-linux-vm-mysql/failover1.png)
+    ![Tryb failover](./media/contoso-migration-rehost-linux-vm-mysql/failover1.png)
 
 3. Podczas przełączania maszyn wirtualnych w tryb failover program vCenter Server wydaje polecenia zatrzymania dwóch maszyn wirtualnych uruchomionych na hoście ESXi.
 
-    ![Praca awaryjna](./media/contoso-migration-rehost-linux-vm-mysql/vcenter-failover.png)
+    ![Tryb failover](./media/contoso-migration-rehost-linux-vm-mysql/vcenter-failover.png)
 
 4. Po przejściu w tryb failover administratorzy sprawdzają, czy maszyna wirtualna platformy Azure jest widoczna zgodnie z oczekiwaniami w witrynie Azure Portal.
 
-    ![Praca awaryjna](./media/contoso-migration-rehost-linux-vm-mysql/failover2.png)
+    ![Tryb failover](./media/contoso-migration-rehost-linux-vm-mysql/failover2.png)
 
 5. Po sprawdzeniu maszyny wirtualnej kończą migrację. Spowoduje to zatrzymanie replikacji maszyny wirtualnej oraz zatrzymanie naliczania opłat za usługę Site Recovery dla maszyny wirtualnej.
 
-    ![Praca awaryjna](./media/contoso-migration-rehost-linux-vm-mysql/failover3.png)
+    ![Tryb failover](./media/contoso-migration-rehost-linux-vm-mysql/failover3.png)
 
 **Potrzebujesz dodatkowej pomocy?**
 
@@ -439,7 +439,7 @@ Teraz firma Contoso musi wykonać następujące czynności:
 
 Po uruchomieniu aplikacji firma Contoso musi w pełni zoperacjonalizować i zabezpieczyć nową infrastrukturę.
 
-### <a name="security"></a>Zabezpieczenia
+### <a name="security"></a>Bezpieczeństwo
 
 Zespół ds. zabezpieczeń firmy Contoso sprawdza maszynę wirtualną i bazę danych, aby określić problemy z zabezpieczeniami.
 

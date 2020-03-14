@@ -1,18 +1,18 @@
 ---
-title: Najlepsze rozwiązania dotyczące zabezpieczania obciążeń migrowanych na platformę Azure i zarządzania nimi
-description: Po przeprowadzeniu migracji na platformę Azure należy zapoznać się z najlepszymi rozwiązaniami dotyczącymi obsługi i zabezpieczania zmigrowanych obciążeń oraz zarządzania nimi.
+title: Zabezpieczanie obciążeń i zarządzanie nimi na platformie Azure
+description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby poznać najlepsze rozwiązania dotyczące obsługi i zabezpieczania zmigrowanych obciążeń oraz zarządzania nimi.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cef5746f8ab3368150ddcc328a8d929853dfb253
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: d61816b0140c36aa405025358a43068201bcad03
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222691"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311935"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące zabezpieczania obciążeń migrowanych na platformę Azure i zarządzania nimi
 
@@ -344,7 +344,7 @@ W przypadku obciążeń uruchomionych w ramach maszyn wirtualnych IaaS platformy
 - **Azure Backup:** Zapewnia kopie zapasowe spójne na poziomie aplikacji dla maszyn wirtualnych z systemami Windows i Linux.
 - **Migawki magazynu:** Tworzy migawki magazynu obiektów BLOB.
 
-#### <a name="azure-backup"></a>Kopia zapasowa Azure
+#### <a name="azure-backup"></a>Azure Backup
 
 Usługa Azure Backup tworzy punkty odzyskiwania danych przechowywane w magazynie platformy Azure. Usługa Azure Backup może tworzyć kopie zapasowe dysków maszyn wirtualnych platformy Azure i dane usługi Azure Files (wersja zapoznawcza). Usługa Azure Files zapewnia udziały plików w chmurze dostępne za pośrednictwem protokołu SMB.
 

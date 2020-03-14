@@ -1,18 +1,18 @@
 ---
-title: 'Przygotowanie na złożoność kulturową: wyrównywanie ról i obowiązków'
-description: Przygotowuje się do złożoności kulturowej przez dostosowanie ról i obowiązków.
+title: Złożoność kulturowa dopasowania ról i obowiązków
+description: Użyj struktury wdrażania w chmurze dla platformy Azure, aby przygotować się do złożoności kulturalnej przez dostosowanie ról i obowiązków do zwiększenia przejrzystości podczas procesu migracji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 186772796694d6ef60a923c5098760a573d8db6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 56956443bc681cc0c7e00ea13babb55a26280192
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801498"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311799"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Przygotowanie na złożoność kulturową: wyrównywanie ról i obowiązków
 
@@ -31,10 +31,10 @@ W każdej migracji istnieje kilka najważniejszych funkcji, które powinny być 
 | Ocena | Uzasadnienie | Zweryfikuj założenia będące podstawą zmieniających się uzasadnień biznesowych. |
 | Ocena | Ryzyko | Pomóż zespołowi wdrożeniowemu ds. chmury zrozumieć wpływ rzeczywistego ryzyka biznesowego. |
 | Ocena | Zatwierdzenie | Sprawdź i zatwierdź wpływ proponowanych zmian architektury na firmę. |
-| Optymalizowanie | Plan zmian | Zdefiniuj plan stosowania zmian w firmie, w tym okresów niskiej aktywności i blokowania zmian. |
-| Optymalizowanie | Testowanie | Zaangażuj zaawansowanych użytkowników, którzy mogą sprawdzić poprawność działania i funkcjonalność. |
-| Zabezpieczenia i zarządzanie | Wpływ przerw | Pomóż zespołowi wdrożeniowemu ds. chmury określić wpływ przerw na działanie procesów biznesowych. |
-| Zabezpieczenia i zarządzanie | Walidacja umowy dotyczącej poziomu usług (SLA) | Pomóż zespołowi wdrożeniowemu ds. chmury w definiowaniu umów dotyczących poziomu usług i akceptowalnych tolerancji dla przerw w działaniu firmy. |
+| Optymalizacja | Plan zmian | Zdefiniuj plan stosowania zmian w firmie, w tym okresów niskiej aktywności i blokowania zmian. |
+| Optymalizacja | Testowanie | Zaangażuj zaawansowanych użytkowników, którzy mogą sprawdzić poprawność działania i funkcjonalność. |
+| Zabezpieczanie i zarządzanie | Wpływ przerw | Pomóż zespołowi wdrożeniowemu ds. chmury określić wpływ przerw na działanie procesów biznesowych. |
+| Zabezpieczanie i zarządzanie | Walidacja umowy dotyczącej poziomu usług (SLA) | Pomóż zespołowi wdrożeniowemu ds. chmury w definiowaniu umów dotyczących poziomu usług i akceptowalnych tolerancji dla przerw w działaniu firmy. |
 
 Ostatecznie zespół wdrożeniowy ds. chmury jest odpowiedzialny za każde z tych działań. Jednak określenie obowiązków i dbanie o stałe tempo pracy w celu ukończenia tych działań zgodnie ustalonym rytmem może poprawić współpracę między osobami biorącymi udział w projekcie i spójność z działaniami biznesowymi.
 
@@ -47,14 +47,14 @@ Każdy proces w ramach dyskusji dotyczącej zasad migracji struktury wdrażania 
 
 | Proces | Działanie | Opis | Strona odpowiedzialna |
 |---------|---------|---------|---------|
-| Warunek wstępny | Majątek cyfrowy | Na podstawie wyników biznesowych dopasuj istniejący spis do podstawowych założeń. | zespół strategiczny ds. chmury |
-| Warunek wstępny | Lista prac związanych z migracją | Określ priorytet sekwencji obciążeń, które mają zostać zmigrowane. | zespół strategiczny ds. chmury |
+| Wymagania wstępne | Majątek cyfrowy | Na podstawie wyników biznesowych dopasuj istniejący spis do podstawowych założeń. | zespół strategiczny ds. chmury |
+| Wymagania wstępne | Lista prac związanych z migracją | Określ priorytet sekwencji obciążeń, które mają zostać zmigrowane. | zespół strategiczny ds. chmury |
 | Ocena | Architektura | Zweryfikuj wstępne założenia w celu zdefiniowania architektury docelowej na podstawie metryk użycia. | zespół wdrożeniowy ds. chmury |
 | Ocena | Zatwierdzenie | Zatwierdź proponowaną architekturę. | zespół strategiczny ds. chmury |
-| Migrowanie | Dostęp w celu replikacji | Uzyskaj dostęp do istniejących hostów i zasobów lokalnych w celu ustanowienia procesów replikacji. | zespół wdrożeniowy ds. chmury |
-| Optymalizowanie | Gotowy | Przed podwyższeniem poziomu sprawdź, czy system spełnia wymagania dotyczące wydajności i kosztów. | zespół wdrożeniowy ds. chmury |
-| Optymalizowanie | Podwyższanie poziomu | Uprawnienia do podwyższenia poziomu obciążenia do środowiska produkcyjnego i przekierowania ruchu produkcyjnego. | zespół wdrożeniowy ds. chmury |
-| Zabezpieczenia i zarządzanie | Przeniesienie operacji | Udokumentuj systemy produkcyjne przed operacjami produkcyjnymi. | zespół wdrożeniowy ds. chmury |
+| Migracja | Dostęp w celu replikacji | Uzyskaj dostęp do istniejących hostów i zasobów lokalnych w celu ustanowienia procesów replikacji. | zespół wdrożeniowy ds. chmury |
+| Optymalizacja | Gotowy | Przed podwyższeniem poziomu sprawdź, czy system spełnia wymagania dotyczące wydajności i kosztów. | zespół wdrożeniowy ds. chmury |
+| Optymalizacja | Podwyższenie poziomu | Uprawnienia do podwyższenia poziomu obciążenia do środowiska produkcyjnego i przekierowania ruchu produkcyjnego. | zespół wdrożeniowy ds. chmury |
+| Zabezpieczanie i zarządzanie | Przeniesienie operacji | Udokumentuj systemy produkcyjne przed operacjami produkcyjnymi. | zespół wdrożeniowy ds. chmury |
 
 > [!CAUTION]
 > W przypadku tych działań uprawnienia i autoryzacja znacznie wpływają na stronę odpowiedzialną, która musi mieć bezpośredni dostęp do systemów produkcyjnych w istniejącym środowisku lub środki zabezpieczające dostęp za pośrednictwem innych odpowiedzialnych podmiotów. Określenie tej strony odpowiedzialnej bezpośrednio wpływa na strategię podwyższania poziomu podczas migracji i optymalizacji procesów.

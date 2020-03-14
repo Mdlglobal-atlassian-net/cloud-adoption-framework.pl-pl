@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7e64edb1f009d2fe7a522a9716c3b8ba2d52ef12
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 97d4b52b50f943dfd0e146e84d4e5fc5a1d97711
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341601"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312621"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Faza 1: planowanie wymagań wstępnych dla usług zarządzania serwerem Azure
 
@@ -97,7 +97,7 @@ Aby utworzyć obszar roboczy Log Analytics przy użyciu Azure Portal, zobacz [Tw
 > [!NOTE]
 > Po utworzeniu konta usługi Automation przy użyciu Azure Portal Portal domyślnie próbuje utworzyć konta Uruchom jako dla zasobów Azure Resource Manager i klasyczny model wdrażania. Jeśli nie masz klasycznych maszyn wirtualnych w środowisku i nie jesteś współadministratorem subskrypcji, Portal tworzy konto Uruchom jako dla Menedżer zasobów, ale podczas wdrażania klasycznego konta Uruchom jako zostanie wygenerowany błąd. Jeśli nie planujesz obsługi zasobów klasycznych, możesz zignorować ten błąd.
 >
-> Możesz również utworzyć konta Uruchom jako przy użyciu [programu PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell).
+> Możesz również utworzyć konta Uruchom jako przy użyciu [programu PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell).
 
 ## <a name="next-steps"></a>Następne kroki
 

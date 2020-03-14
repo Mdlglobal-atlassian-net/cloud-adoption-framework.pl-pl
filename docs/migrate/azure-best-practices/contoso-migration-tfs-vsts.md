@@ -1,6 +1,6 @@
 ---
-title: Refaktoryzowanie wdrożenia serwera Team Foundation Server do usług Azure DevOps Services na platformie Azure
-description: Dowiedz się, w jaki sposób firma Contoso refaktoryzuje swoje lokalne wdrożenie serwera TFS przez migrację do usług Azure DevOps Services na platformie Azure.
+title: Refaktoryzacja Team Foundation Server wdrożenie Azure DevOps Services
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak replikować lokalne wdrożenie TFS przez Migrowanie go do Azure DevOps Services na platformie Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 003a5674116f7964971710c5c8c67fc51fa03493
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 36a12a676a9bb48584c9914f93642b1ccbcad406
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222873"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311629"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -292,27 +292,27 @@ Po utworzeniu pliku DACPAC firma Contoso przekazuje go do usługi Azure Storage.
 
 1. Administratorzy pobierają i instalują [Eksplorator usługi Azure Storage](https://azure.microsoft.com/features/storage-explorer).
 
-    ![Przekaż](./media/contoso-migration-tfs-vsts/backup5.png)
+    ![Upload](./media/contoso-migration-tfs-vsts/backup5.png)
 
 2. Łączą się z subskrypcją i znajdują konto magazynu utworzone na potrzeby migracji (**contosodevmigration**). Tworzą nowy kontener obiektów blob o nazwie **azuredevopsmigration**.
 
-    ![Przekaż](./media/contoso-migration-tfs-vsts/backup6.png)
+    ![Upload](./media/contoso-migration-tfs-vsts/backup6.png)
 
 3. Wskazują plik DACPAC do przekazania jako blokowy obiekt blob.
 
-    ![Przekaż](./media/contoso-migration-tfs-vsts/backup7.png)
+    ![Upload](./media/contoso-migration-tfs-vsts/backup7.png)
 
 4. Po przekazaniu pliku wybierają nazwę pliku i polecenie **Generuj sygnaturę dostępu współdzielonego**. Rozszerzają one kontenery obiektów BLOB w ramach konta magazynu, wybierają kontener z plikami importu, a następnie wybierają **sygnaturę dostępu współdzielonego**.
 
-    ![Przekaż](./media/contoso-migration-tfs-vsts/backup8.png)
+    ![Upload](./media/contoso-migration-tfs-vsts/backup8.png)
 
 5. Zaakceptuj wartości domyślne, a następnie wybierz pozycję **Utwórz**. Umożliwia to dostęp przez 24 godziny.
 
-    ![Przekaż](./media/contoso-migration-tfs-vsts/backup9.png)
+    ![Upload](./media/contoso-migration-tfs-vsts/backup9.png)
 
 6. Kopiują adres URL sygnatury dostępu współdzielonego, aby móc użyć go w narzędziu do migracji serwera TFS.
 
-    ![Przekaż](./media/contoso-migration-tfs-vsts/backup10.png)
+    ![Upload](./media/contoso-migration-tfs-vsts/backup10.png)
 
 > [!NOTE]
 > Migracja musi nastąpić w dozwolonym przedziale czasu — w przeciwnym razie uprawnienia wygasną.

@@ -1,18 +1,18 @@
 ---
-title: Najlepsze rozwiązania dotyczące określania kosztów i rozmiarów obciążeń migrowanych na platformę Azure
-description: Poznaj najlepsze rozwiązania dotyczące określania kosztów i rozmiarów obciążeń migrowanych na platformę Azure.
+title: Nabieranie kosztów i ustalanie wielkości obciążeń migrowanych do platformy Azure
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby poznać najlepsze rozwiązania związane z wyceną i ustalaniem wielkości obciążeń migrowanych do platformy Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 783652f1f469333c97ebd50673a3d42e1a9741d7
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 89ac6886756c304d8acae5a4180a9715d336a92e
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892586"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311918"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące określania kosztów i rozmiarów obciążeń migrowanych na platformę Azure
 

@@ -1,18 +1,18 @@
 ---
-title: Wskazówki dotyczące testowania biznesowego (testowania akceptacyjnego przez użytkowników) podczas migracji
-description: Proces migracji do chmury, który koncentruje się na zadaniach migrowania obciążeń do chmury.
+title: Wskazówki dotyczące testowania biznesowego podczas migracji
+description: Dowiedz się, w jaki sposób testowanie biznesowe jest używane do żądania weryfikacji, że wydajność rozwiązania jest w linii z oczekiwaniami i nie utrudnia procesów biznesowych.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4c24ae176d3b8fc8ec4fa504ed406bc32a1c0ab3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 675eda4aeb2109c21c2e3f47a100a985fd6e2861
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801957"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311762"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>Wskazówki dotyczące testowania biznesowego (testowania akceptacyjnego przez użytkowników) podczas migracji
 

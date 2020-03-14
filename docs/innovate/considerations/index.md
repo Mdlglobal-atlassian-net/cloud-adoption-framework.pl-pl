@@ -1,6 +1,6 @@
 ---
 title: Innowacje w gospodarce cyfrowej
-description: Skup się na zrozumieniu potrzeb klientów i szybko Twórz innowacje w chmurze, dzięki którym klienci pracują z produktami.
+description: Skoncentruj się na zrozumieniu potrzeb klientów i szybkim tworzeniu innowacji w chmurze, które kształtują sposób, w jaki klienci wchodzą w interakcje z Twoimi produktami.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,11 +8,11 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: b0d08b4f5ac822acd1d2a2574a9bd3d240175ca1
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
-ms.translationtype: MT
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337476"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312275"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Innowacje w gospodarce cyfrowej
 
@@ -35,7 +35,7 @@ W poniższej sekcji opisano wzór na innowację oraz zobowiązania, które nale�
 
 ## <a name="formula-for-innovation"></a>Wzór na innowację
 
-Udana innowacja to nie przełomowe wydarzenie na miarę Wielkiego Wybuchu ani nieuchwytny magiczny jednorożec. Sukces w innowacyjności to większa część działania dotyczącego równoważenia, zilustrowana przez proste równanie: **innowacje = wynalazki + przyjęcie**.
+Udana innowacja to nie przełomowe wydarzenie na miarę Wielkiego Wybuchu ani nieuchwytny magiczny jednorożec. Powodzenie innowacji wymaga zrównoważenia kilku elementów, jak pokazano w tym prostym równaniu: **Innowacja = wynalazek + wdrożenie**.
 
 Innowacja wymaga obu elementów: wynalazku i wdrożenia. Prawdziwa innowacja to rezultat powolnego dostosowywania ludzkich doświadczeń poprzez nowe metody, procesy i technologie. Zgodnie z tym wzorem wynalazek to utworzenie nowego rozwiązania, które spełnia potrzeby klientów. Natomiast wdrożenie to zastosowanie nowego rozwiązania, tak aby kształtowało ludzkie zachowania i interakcje. Znalezienie równowagi pomiędzy wynalazkiem a wdrożeniem wymaga iteracji, podejmowania decyzji w oparciu o dane, nieustannego uczenia się oraz nastawienia na rozwój. Wymaga również technologii, które dotrzymują nam kroku i umożliwiają korzystanie z licznych szans na naukę we współczesnym społeczeństwie cyfrowym.
 

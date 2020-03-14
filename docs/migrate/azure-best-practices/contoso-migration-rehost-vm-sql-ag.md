@@ -1,6 +1,6 @@
 ---
-title: Hostowanie aplikacji przez Migrowanie jej do maszyn wirtualnych platformy Azure i zawsze dostępnych grup dostępności SQL Server
-description: Dowiedz się, jak firma Contoso przeprowadza ponowne hostowanie lokalnej aplikacji przez migrowanie jej na maszyny wirtualne platformy Azure i do zawsze włączonych grup dostępności programu SQL Server.
+title: Przehostaj na platformie Azure i zawsze włączone grupy dostępności SQL Server
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak rehostować aplikację lokalną przez Migrowanie jej do maszyn wirtualnych platformy Azure i zawsze dostępnych grup dostępności SQL Server.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b52b1fad33a9868682ddcd7cf905c7f8ab9b3612
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: bc530c3f97b26a519198ef7b9ddc1fce967fbed6
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222951"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311544"
 ---
 # <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>Ponowne hostowanie aplikacji lokalnej przy użyciu usługi Azure Virtual Machines i SQL Server zawsze włączone grupy dostępności
 
@@ -607,7 +607,7 @@ Próba przejścia do trybu failover pozwala sprawdzić, czy wszystko działa zgo
 
 2. Uruchamiają tryb failover z użyciem utworzonego planu. Wybierają najnowszy punkt odzyskiwania i określają, że usługa Site Recovery powinna podjąć próbę zamknięcia lokalnej maszyny wirtualnej przed wyzwoleniem trybu failover.
 
-    ![Praca awaryjna](./media/contoso-migration-rehost-vm-sql-ag/failover1.png)
+    ![Tryb failover](./media/contoso-migration-rehost-vm-sql-ag/failover1.png)
 
 3. Po przejściu w tryb failover administratorzy sprawdzają, czy maszyna wirtualna platformy Azure jest widoczna zgodnie z oczekiwaniami w witrynie Azure Portal.
 
@@ -615,7 +615,7 @@ Próba przejścia do trybu failover pozwala sprawdzić, czy wszystko działa zgo
 
 4. Po sprawdzeniu maszyny wirtualnej na platformie Azure kończą migrację, aby zakończyć proces migracji, zatrzymać replikację maszyny wirtualnej i zatrzymać naliczanie opłat za usługę Site Recovery dla maszyny wirtualnej.
 
-    ![Praca awaryjna](./media/contoso-migration-rehost-vm-sql-ag/failover3.png)
+    ![Tryb failover](./media/contoso-migration-rehost-vm-sql-ag/failover3.png)
 
 ### <a name="update-the-connection-string"></a>Aktualizowanie parametrów połączenia
 
@@ -623,7 +623,7 @@ W ostatnim kroku procesu migracji administratorzy firmy Contoso aktualizują par
 
 1. Znajdź plik w lokalizacji C:\inetpub\SmartHotelWeb\web.config. Zmień nazwę serwera w celu odzwierciedlenia nazwy FQDN AOG: shaog.contoso.com.
 
-    ![Praca awaryjna](./media/contoso-migration-rehost-vm-sql-ag/failover4.png)
+    ![Tryb failover](./media/contoso-migration-rehost-vm-sql-ag/failover4.png)
 
 2. Po zaktualizowaniu pliku i zapisaniu go ponownie uruchamiają usługi IIS na maszynie wirtualnej WEBVM. W tym celu używają polecenia IISRESET/RESTART z poziomu wiersza polecenia.
 3. Po ponownym uruchomieniu usług IIS aplikacja korzysta teraz z bazy danych działającej w programie SQL MI.
@@ -650,7 +650,7 @@ Teraz firma Contoso musi wykonać następujące kroki dotyczące czyszczenia:
 
 Po migracji zasobów na platformę Azure firma Contoso musi w pełni zoperacjonalizować i zabezpieczyć nową infrastrukturę.
 
-### <a name="security"></a>Zabezpieczenia
+### <a name="security"></a>Bezpieczeństwo
 
 Zespół ds. zabezpieczeń firmy Contoso sprawdza maszyny wirtualne platformy Azure WEBVM, SQLAOG1 and SQLAOG2, aby określić problemy z zabezpieczeniami.
 

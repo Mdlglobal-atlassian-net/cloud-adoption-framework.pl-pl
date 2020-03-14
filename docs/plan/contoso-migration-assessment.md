@@ -1,6 +1,6 @@
 ---
-title: Ocena obciążeń lokalnych pod kątem migracji do platformy Azure
-description: Dowiedz się, w jaki sposób firma Contoso ocenia swoje lokalne maszyny pod kątem migracji na platformę Azure przy użyciu usługi Azure Migrate i narzędzia Data Migration Assistant.
+title: Ocenianie obciążeń lokalnych na potrzeby migracji na platformę Azure
+description: Poznaj przykładowy przykład sposobu oceny aplikacji lokalnej do migracji na platformę Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 78d33031879a49bd70a6dcfb01be604ca4371e49
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 6fc2992f98c16171173a3313fe19411c05883fa2
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228420"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312105"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 
@@ -68,7 +68,7 @@ Zespół ds. chmury firmy Contoso zidentyfikował cele oceny migracji:
 - Po przeniesieniu aplikacji do chmury administrowanie bazami danych firmy Contoso powinno zostać zminimalizowane.
 - Specjaliści z firmy Contoso chcą poznać nie tylko opcje migracji, ale również koszty związane z infrastrukturą, które będzie trzeba ponosić po przejściu do chmury.
 
-## <a name="assessment-tools"></a>Narzędzia do oceny
+## <a name="assessment-tools"></a>Narzędzia oceny
 
 Do oceny migracji firma Contoso używa narzędzi firmy Microsoft. Narzędzia te są dopasowane do celów firmy i powinny dostarczyć firmie Contoso wszystkie niezbędne informacje.
 

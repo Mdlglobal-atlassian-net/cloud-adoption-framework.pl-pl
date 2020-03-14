@@ -1,18 +1,18 @@
 ---
-title: SQL Server najlepszych rozwiązań dotyczących migracji dla platformy Azure
-description: Wprowadzenie do SQL Server najlepszych rozwiązań dotyczących migracji dla platformy Azure
+title: Migracja serwera na platformę Azure
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby uzyskać informacje o najlepszych rozwiązaniach dotyczących migracji SQL Server, aby zmniejszyć złożoność i znormalizować proces migracji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 25e89ccbca604ea7637d8c45b9a843491706ff04
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: e23d954835e20735ca5f8ab57e0139504c5f4c75
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094610"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311901"
 ---
 # <a name="sql-server-migration-best-practices-for-azure"></a>SQL Server najlepszych rozwiązań dotyczących migracji dla platformy Azure
 

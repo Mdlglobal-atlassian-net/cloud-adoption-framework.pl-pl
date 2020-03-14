@@ -1,18 +1,18 @@
 ---
-title: Najlepsze rozwiązania dotyczące konfigurowania sieci pod kątem obciążeń migrowanych do platformy Azure
-description: Po przeprowadzeniu migracji na platformę Azure należy zapoznać się z najlepszymi rozwiązaniami dotyczącymi konfigurowania sieci na potrzeby migrowanych obciążeń.
+title: Konfigurowanie sieci pod kątem obciążeń migrowanych do platformy Azure
+description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby poznać najlepsze rozwiązania dotyczące konfigurowania sieci dla zmigrowanych obciążeń.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7bdfe3108c2ccdfd2661d45cc234978c784232f9
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 84ece22173c921f1a4de5701988b9fffcaedaaf7
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892705"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312156"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące konfigurowania sieci pod kątem obciążeń migrowanych do platformy Azure
 

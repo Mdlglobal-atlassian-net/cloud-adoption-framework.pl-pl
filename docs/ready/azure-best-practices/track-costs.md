@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 946183aca25ec2a150d6b1f2896e87ea58ad5ef6
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78893111"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312686"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach
 
@@ -98,6 +98,8 @@ Poniższe ustawienia zakresu i ról zapewnią niezbędną widoczność w zakresi
 - [Zespół ds. zarządzania w chmurze](../../organize/cloud-governance.md). Obowiązki związane z zarządzaniem kosztami, dostosowaniem budżetu i raportowaniem we wszystkich nakładach pracy związanych z wdrażaniem powodują, że współautor zarządzania kosztami powinien mieć dostęp na poziomie głównym do hierarchii grupy zarządzania.
 
   - W dobrze zarządzanym środowisku zespół ds zarządzania w chmurze ma już prawdopodobnie wyższy poziom dostępu, co sprawia, że dodatkowe przypisanie zakresu do [współautora zarządzania kosztami](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) jest zbędne.
+
+<!-- cSpell:ignore automations -->
 
 - [Cloud Center of Excellence](../../organize/cloud-center-of-excellence.md). Odpowiedzialność za zarządzanie kosztami związanymi z udostępnionymi usługami wymaga, aby współautor zarządzania kosztami miał dostęp na poziomie subskrypcji. Ponadto zespół ten może wymagać, by współautor zarządzania kosztami miał dostęp do grup zasobów lub subskrypcji zawierających zasoby wdrożone przy użyciu automatyzacji CCoE, aby zrozumieć, jak ta automatyzacja wpływa na koszty.
 

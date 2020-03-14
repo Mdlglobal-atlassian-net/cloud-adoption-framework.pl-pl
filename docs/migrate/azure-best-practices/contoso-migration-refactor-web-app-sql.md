@@ -1,6 +1,6 @@
 ---
-title: Refaktoryzowanie aplikacji przez migrowanie jej do usług Azure App Service i Azure SQL Database
-description: Dowiedz się, w jaki sposób firma Contoso ponownie hostuje aplikację lokalną przez migrowanie jej do aplikacji internetowej Azure App Service i bazy danych usługi Azure SQL Server.
+title: Migrowanie aplikacji do Azure App Service i SQL Database
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak replikować aplikację, migrując ją do Azure App Service i Azure SQL Database.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3667207de8cc31a85e12666c425ffdf0469c1be5
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 86a7dc6a0754ece24c8d18dca847bde0e93b5345
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223058"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312003"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost contosodc vcenter smarthotel SHWEB SHWCF -->
 
@@ -289,7 +289,7 @@ Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wy
 
 5. Spowoduje to rozpoczęcie pierwszej kompilacji. Wybierają numer kompilacji, aby obserwować proces. Po zakończeniu zobaczysz opinię o procesie, a następnie wybierzesz **artefakty** , aby przejrzeć wyniki kompilacji.
 
-    ![Recenzja](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
+    ![Przegląd](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
 
 6. Folder **Drop** zawiera wyniki kompilacji.
 
@@ -320,7 +320,7 @@ Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wy
 
 12. Na > **artefakty**potoku wybierają **i dodają artefakt**, a następnie wybierają kompilację przy użyciu potoku **ContosoSmarthotel360Refactor** .
 
-     ![{1&gt;Kompilacja&lt;1}](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![Kompilacja](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. Wybierają ikonę błyskawicy na artefakcie, aby włączyć wyzwalacz ciągłego wdrażania.
 
@@ -381,7 +381,7 @@ Po migracji firma Contoso musi wykonać następujące kroki czyszczenia:
 
 Po migracji zasobów na platformę Azure firma Contoso musi w pełni zoperacjonalizować i zabezpieczyć nową infrastrukturę.
 
-### <a name="security"></a>Zabezpieczenia
+### <a name="security"></a>Bezpieczeństwo
 
 - Firma Contoso musi upewnić się, że nowa baza danych **SmartHotel-Registration** jest bezpieczna. [Dowiedz się więcej](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview).
 - W szczególności firma Contoso powinna zaktualizować aplikacje internetowe tak, aby używały protokołu SSL z certyfikatami.

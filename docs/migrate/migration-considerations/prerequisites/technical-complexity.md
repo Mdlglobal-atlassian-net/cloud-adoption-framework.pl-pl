@@ -1,18 +1,18 @@
 ---
-title: 'Przygotowanie do złożoności technicznej: zarządzanie zmianami zwinnymi (Agile)'
-description: Przygotowanie do złożoności technicznej — zarządzanie zmianami zwinnymi (Agile)
+title: Przygotowanie do złożoności zarządzania zmianami Agile
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby przygotować architektów w chmurze do konwersacji z zarządzaniem projektami w celu wyjaśnienia koncepcji zarządzania zmianami.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4ecd18a226a36497cf3b23669bf17f323c196382
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140641"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311833"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 

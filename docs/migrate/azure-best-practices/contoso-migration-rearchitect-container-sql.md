@@ -1,6 +1,6 @@
 ---
 title: Zmienianie architektury aplikacji na korzystającą z kontenera platformy Azure i usługi Azure SQL Database
-description: Dowiedz się, jak firma Contoso zmienia infrastrukturę aplikacji na korzystającą z kontenerów systemu Windows na platformie Azure i usługi Azure SQL Database.
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak reprojektować aplikację lokalną do kontenera platformy Azure i usługi Azure SQL Database.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d41c63d9876a5ead14acee9b39542ab256144920
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 37bf2a4d96cc1f60b351f40f6a2c51c2ea1dcf95
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223118"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311646"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel vcenter WEBVM SQLVM -->
 
@@ -296,7 +296,7 @@ Administratorzy firmy Contoso mogą teraz przeprowadzić migrację bazy danych S
 
 1. Na stronie **Finish (Zakończenie)** wybierają pozycję **Launch Microsoft Data Migration Assistant (Uruchom narzędzie Microsoft Data Migration Assistant)** przed zakończeniem pracy kreatora.
 
-### <a name="configure-the-firewall"></a>Konfiguracja zapory
+### <a name="configure-the-firewall"></a>Konfigurowanie zapory
 
 Aby nawiązać połączenie z bazą danych Azure SQL Database, administratorzy firmy Contoso konfigurują regułę zapory w celu zezwolenia na dostęp.
 
@@ -381,13 +381,13 @@ Administratorzy firmy Contoso przekonwertują aplikację do kontenera przy użyc
 
 1. Korzystając z programu Visual Studio, przeglądają plik otwartego rozwiązania (SmartHotel.Registration.sln) znajdujący się w katalogu **SmartHotel360-internal-booking-apps\src\Registration** lokalnego repozytorium. Wyświetlane są dwie aplikacje. Aplikacja SmartHotel.Registration.Web frontonu internetowego i aplikacja SmartHotel.Registration.WCF usługi WCF.
 
-    ![Container](./media/contoso-migration-rearchitect-container-sql/container2.png)
+    ![Kontener](./media/contoso-migration-rearchitect-container-sql/container2.png)
 
 1. Klikają prawym przyciskiem myszy aplikację internetową, a następnie wybierają pozycję **Dodaj (Dodaj)**  > **Container Orchestrator Support (Obsługa orkiestratora kontenerów)** .
 
 1. W obszarze **Add Container Orchestra Support (Dodawanie obsługi orkiestratora kontenerów)** wybierają pozycję **Service Fabric**.
 
-    ![Container](./media/contoso-migration-rearchitect-container-sql/container3.png)
+    ![Kontener](./media/contoso-migration-rearchitect-container-sql/container3.png)
 
 1. Powtarzają proces dla aplikacji SmartHotel.Registration.WCF.
 
@@ -396,19 +396,19 @@ Administratorzy firmy Contoso przekonwertują aplikację do kontenera przy użyc
     - Nowa aplikacja to **SmartHotel.RegistrationApplication/**
     - Zawiera dwie usługi: **SmartHotel. Registration. WCF** i **SmartHotel. Registration. Web**.
 
-    ![Container](./media/contoso-migration-rearchitect-container-sql/container4.png)
+    ![Kontener](./media/contoso-migration-rearchitect-container-sql/container4.png)
 
 1. Program Visual Studio utworzył plik platformy Docker i pobrał wymagane obrazy lokalnie na maszynę deweloperską.
 
-    ![Container](./media/contoso-migration-rearchitect-container-sql/container5.png)
+    ![Kontener](./media/contoso-migration-rearchitect-container-sql/container5.png)
 
 1. Plik manifestu (**ServiceManifest.xml**) jest tworzony i otwierany przez program Visual Studio. Ten plik zawiera informacje określające sposób, w jaki usługa Service Fabric ma skonfigurować kontener po jego wdrożeniu na platformie Azure.
 
-    ![Container](./media/contoso-migration-rearchitect-container-sql/container6.png)
+    ![Kontener](./media/contoso-migration-rearchitect-container-sql/container6.png)
 
 1. Inny plik manifestu (**ApplicationManifest.xml) zawiera aplikacje konfiguracyjne dla kontenerów.
 
-    ![Container](./media/contoso-migration-rearchitect-container-sql/container7.png)
+    ![Kontener](./media/contoso-migration-rearchitect-container-sql/container7.png)
 
 1. Otwierają plik **ApplicationParameters/Cloud.xml** i aktualizują parametry połączenia w celu połączenia aplikacji z bazą danych Azure SQL Database. Parametry połączenia mogą znajdować się w bazie danych w witrynie Azure Portal.
 
@@ -474,7 +474,7 @@ Administratorzy firmy Contoso konfigurują teraz usługi Azure DevOps Services w
 
 1. Wybierają projekt i potok kompilacji. Używana jest najnowsza wersja.
 
-     ![{1&gt;Kompilacja&lt;1}](./media/contoso-migration-rearchitect-container-sql/pipeline12.png)
+     ![Kompilacja](./media/contoso-migration-rearchitect-container-sql/pipeline12.png)
 
 1. Zwróć uwagę na to, że błyskawica na artefakcie jest zaznaczona.
 
@@ -489,11 +489,11 @@ Administratorzy firmy Contoso konfigurują teraz usługi Azure DevOps Services w
 
 1. Po zakończeniu wdrożenia aplikacja SmartHotel360 będzie teraz działać w ramach usługi Service Fabric.
 
-    ![Publikuj](./media/contoso-migration-rearchitect-container-sql/publish4.png)
+    ![Publikowanie](./media/contoso-migration-rearchitect-container-sql/publish4.png)
 
 1. Aby nawiązać połączenie z aplikacją, kierują ruch do publicznego adresu IP modułu równoważenia obciążenia platformy Azure przed węzłami usługi Service Fabric.
 
-    ![Publikuj](./media/contoso-migration-rearchitect-container-sql/publish5.png)
+    ![Publikowanie](./media/contoso-migration-rearchitect-container-sql/publish5.png)
 
 ## <a name="step-9-extend-the-app-and-republish"></a>Krok 9. zwiększenie i ponowne opublikowanie aplikacji
 
@@ -597,7 +597,7 @@ Po migracji firma Contoso musi wykonać następujące kroki czyszczenia:
 
 Po migracji zasobów na platformę Azure firma Contoso musi w pełni zoperacjonalizować i zabezpieczyć nową infrastrukturę.
 
-### <a name="security"></a>Zabezpieczenia
+### <a name="security"></a>Bezpieczeństwo
 
 - Administratorzy firmy Contoso muszą upewnić się, że nowa baza danych **SmartHotel-Registration** jest bezpieczna. [Dowiedz się więcej](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview).
 - W szczególności firma Contoso powinna zaktualizować kontener tak, aby używał protokołu SSL z certyfikatami.

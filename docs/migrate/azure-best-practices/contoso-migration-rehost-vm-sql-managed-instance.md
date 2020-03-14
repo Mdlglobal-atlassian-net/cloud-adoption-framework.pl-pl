@@ -1,6 +1,6 @@
 ---
-title: Ponowne hostowanie aplikacji lokalnej przez migrację do maszyn wirtualnych platformy Azure i wystąpienia zarządzanego usługi Azure SQL Database
-description: Dowiedz się, w jaki sposób firma Contoso przeprowadza ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure za pomocą wystąpienia zarządzanego usługi Azure SQL Database.
+title: Przehosta na platformie Azure i Azure SQL Database wystąpienia zarządzanego
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak rehostować aplikację lokalną na maszynach wirtualnych platformy Azure za pomocą Azure SQL Database wystąpienia zarządzanego.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 7ec95c75d81b93852a59ef137a02cc35d83a1cd3
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223073"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311969"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ponowne hostowanie aplikacji lokalnej na maszynie wirtualnej platformy Azure i wystąpieniu zarządzanym usługi SQL Database
 
@@ -105,7 +105,7 @@ Firma Contoso przeprowadzi migrację warstw internetowych i danych aplikacji Sma
 
 ### <a name="azure-services"></a>Usługi platformy Azure
 
-NDES | Opis | Koszty
+Usługa | Opis | Koszty
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Usługa Azure Database Migration Service umożliwia bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. | Dowiedz się więcej o [obsługiwanych regionach](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) i [cenniku usługi Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
 [Wystąpienie zarządzane usługi Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Wystąpienie zarządzane to usługa zarządzanej bazy danych, która reprezentuje w pełni zarządzane wystąpienie programu SQL Server w chmurze platformy Azure. Używa tego samego kodu co najnowsza wersja aparatu bazy danych programu SQL Server oraz ma najnowsze funkcje, ulepszenia wydajności i poprawki zabezpieczeń. | Korzystanie z wystąpienia zarządzanego usługi SQL Database uruchomionego na platformie Azure powoduje naliczanie opłat zależnych od pojemności. Dowiedz się więcej o [cenach wystąpienia zarządzanego](https://azure.microsoft.com/pricing/details/sql-database/managed).
@@ -526,7 +526,7 @@ Testowe przełączenie w tryb failover przed przeprowadzeniem migracji maszyny w
 
 2. Uruchamiają tryb failover w ramach planu i wybierają najnowszy punkt odzyskiwania. Określają, że usługa Site Recovery powinna spróbować zamknąć lokalną maszynę wirtualną przed wyzwoleniem trybu failover.
 
-    ![Praca awaryjna](./media/contoso-migration-rehost-vm-sql-managed-instance/failover1.png)
+    ![Tryb failover](./media/contoso-migration-rehost-vm-sql-managed-instance/failover1.png)
 
 3. Po przejściu w tryb failover administratorzy sprawdzają, czy maszyna wirtualna platformy Azure jest widoczna zgodnie z oczekiwaniami w witrynie Azure Portal.
 
@@ -573,7 +573,7 @@ Teraz firma Contoso musi wykonać następujące zadania oczyszczania:
 
 Po migracji zasobów na platformę Azure firma Contoso musi w pełni zoperacjonalizować i zabezpieczyć nową infrastrukturę.
 
-### <a name="security"></a>Zabezpieczenia
+### <a name="security"></a>Bezpieczeństwo
 
 Zespół ds. zabezpieczeń firmy Contoso przegląda maszyny wirtualne platformy Azure i wystąpienie zarządzane usługi SQL Database, aby sprawdzić, czy występują problemy z zabezpieczeniami dotyczące implementacji:
 

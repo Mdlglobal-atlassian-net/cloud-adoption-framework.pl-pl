@@ -1,6 +1,6 @@
 ---
-title: Hostowanie aplikacji na maszynach wirtualnych platformy Azure za pomocą Azure Site Recovery
-description: Dowiedz się, w jaki sposób firma Contoso rehostuje aplikację lokalną za pomocą dźwigu i przeniesie migrację maszyn lokalnych na platformę Azure przy użyciu usługi Azure Site Recovery.
+title: Ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure za pomocą Azure Site Recovery
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak rehostować aplikację lokalną z migracją maszyn lokalnych na platformę Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 8b704c88b2e6a161c49082301df6e6a3d7d77154
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7a8b70d43ef68137418f0c2cfc731871561844f0
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222899"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311374"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms"></a>Ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure
 
@@ -275,7 +275,7 @@ Teraz firma Contoso musi wykonać następujące kroki dotyczące czyszczenia:
 
 Po uruchomieniu aplikacji firma Contoso musi w pełni zoperacjonalizować i zabezpieczyć ją na platformie Azure.
 
-### <a name="security"></a>Zabezpieczenia
+### <a name="security"></a>Bezpieczeństwo
 
 Zespół ds. zabezpieczeń firmy Contoso sprawdza maszyny wirtualne platformy Azure, aby określić problemy z zabezpieczeniami.
 
