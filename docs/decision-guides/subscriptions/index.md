@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 1420906faadb966585346aeafe0a8e7efa9aaf09
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140692"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508036"
 ---
 # <a name="subscription-decision-guide"></a>Przewodnik po decyzjach związanych z subskrypcjami
 
@@ -49,7 +49,7 @@ Subskrypcja pojedyncza na konto może być wystarczająca w przypadku organizacj
 
 Gdy wszystko będzie gotowe do wdrożenia obciążenia w środowisku produkcyjnym, należy dodać kolejną subskrypcję. Dzięki temu można oddzielić produkcyjne dane i inne zasoby od środowisk tworzenia i opracowywania. Do zasobów w dwóch subskrypcjach można również łatwo stosować dwa różne zestawy zasad.
 
-![Wzorzec subskrypcji dla środowiska produkcyjnego i przedprodukcyjnego](../../_images/ready/basic-subscription-model.png)
+![Wzorzec subskrypcji dla środowiska produkcyjnego i przedprodukcyjnego](../../_images/ready/initial-subscription-model.png)
 
 ### <a name="workload-separation-pattern"></a>Wzorzec z rozdzieleniem obciążeń
 
