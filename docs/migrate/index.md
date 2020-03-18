@@ -1,6 +1,6 @@
 ---
 title: Migracja do chmury
-description: Migracja do chmury w podręczniku Cloud Adoption Framework
+description: Dowiedz się, jak ustanowić iteracyjne procesy oceniania, migrowania, optymalizacji i zabezpieczania obciążeń, które chcesz migrować do chmury, oraz zarządzania nimi.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 90a9c69b311f1d4687d2691af13c3b51a7b6f813
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: c4ee7491fb5fbfa549dfe82c82e720f51188a25c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337803"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312309"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migracja do chmury w podręczniku Cloud Adoption Framework
 
@@ -21,12 +21,12 @@ Każdy [plan wdrożenia chmury](../plan/index.md) w skali przedsiębiorstwa będ
 
 ## <a name="getting-started"></a>Wprowadzenie
 
-W celu przygotowania się na tę fazę cyklu życia wdrożenia chmury, sugerujemy pięć następujących ćwiczeń:
+Aby przygotować się na tę fazę cyklu wdrażania chmury, zalecane są następujące ćwiczenia:
 
 <!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-migration-guide/prerequisites.md?tabs=Checklist">
+        <a href="./azure-migration-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -36,27 +36,8 @@ W celu przygotowania się na tę fazę cyklu życia wdrożenia chmury, sugerujem
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Wstępne wymagania dotyczące migracji</h3>
-Sprawdź, czy strefa docelowa została wdrożona i czy jest przygotowana do hostowania kilku pierwszych obciążeń, które zostaną zmigrowane na platformę Azure. Jeśli strategia wdrażania chmury i plan wdrożenia chmury nie zostały utworzone, sprawdź, czy prace nad nimi są w toku.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-migration-guide/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
                             <h3>Migrowanie pierwszego obciążenia</h3>
-Podczas migracji pierwszego obciążenia skorzystaj ze wskazówek zawartych w Przewodniku po migracji na platformę Azure. Dzięki temu poznasz narzędzia i metody potrzebne do skalowania prac związanych z wdrożeniem.
+Korzystając z przewodnika po migracji na platformę Azure, zapoznaj się z narzędziami natywnymi dla platformy Azure i podejściem do migracji.
                         </div>
                     </div>
                 </div>
@@ -70,12 +51,12 @@ Podczas migracji pierwszego obciążenia skorzystaj ze wskazówek zawartych w Pr
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Rozszerzone scenariusze migracji</h3>
-Skorzystaj z listy kontrolnej dotyczącej zakresu rozszerzonego, aby zidentyfikować scenariusze, które wymagałyby modyfikacji przyszłego stanu architektury, procesów migracji, konfiguracji strefy docelowej lub decyzji dotyczących narzędzi migracji.
+                            <h3>Scenariusze migracji</h3>
+Korzystając z dodatkowych podejść i narzędzi do migracji, podejmij działania w różnych scenariuszach migracji.
                         </div>
                     </div>
                 </div>
@@ -89,12 +70,12 @@ Skorzystaj z listy kontrolnej dotyczącej zakresu rozszerzonego, aby zidentyfiko
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Najlepsze rozwiązania</h3>
-Sprawdź wszystkie modyfikacje pod kątem sekcji najlepszych rozwiązań, aby zapewnić właściwą implementację rozszerzonego zakresu lub metod migracji specyficznych dla obciążenia/architektury.
+Reaguj na typowe potrzeby związane z migracją, stosując spójne najlepsze rozwiązania.
                         </div>
                     </div>
                 </div>
@@ -108,12 +89,12 @@ Sprawdź wszystkie modyfikacje pod kątem sekcji najlepszych rozwiązań, aby za
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="../_images/icons/5.png" data-linktype="external">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Ulepszenia procesu</h3>
-Migracja to działanie mocno obciążone procesami. Skalując nakład pracy związany z migracją, skorzystaj z sekcji zagadnień dotyczących migracji, aby ocenić i rozwinąć różne aspekty swoich procesów.
+Migracja to działanie mocno obciążone procesami. W miarę skalowania pracy związanej z migracją za pomocą tych ulepszeń procesów oceniaj i dopracowuj różne aspekty migracji.
                         </div>
                     </div>
                 </div>
@@ -123,11 +104,16 @@ Migracja to działanie mocno obciążone procesami. Skalując nakład pracy zwi�
 </ul>
 <!-- markdownlint-enable MD033 -->
 
+Ta metodologia i powyższe kroki opierają się na poniższych założeniach:
+
+- Przed migrowaniem obciążeń zidentyfikowano, skonfigurowano i wdrożono co najmniej jedną [strefę docelową](../ready/index.md) spełniającą potrzeby krótkoterminowego planu wdrożenia chmury.
+- Migracja jest najczęściej kojarzona z terminami _„lift-and-shift”_ i _ponowne hostowanie_. Ta metodologia i powyższe kroki opierają się na założeniu, że samego podejścia ponownego hostowania nie należy stosować dla żadnego centrum danych, a dla obciążeń należy je stosować tylko w niewielu przypadkach. Choć wiele obciążeń można ponownie hostować, klienci częściej wolą modernizować konkretne zasoby obciążenia. W trakcie tego iteracyjnego procesu jedną z najczęściej omawianych kwestii jest równowaga między szybkością i modernizacją.
+
 ## <a name="iterative-migration-process"></a>Iteracyjny proces migracji
 
 Zasadniczo migracja do chmury składa się z czterech prostych faz: ocena, migracja, optymalizacja, zabezpieczenia i zarządzanie. Ta sekcja podręcznika Cloud Adoption Framework uczy czytelników, jak zmaksymalizować zwrot z każdej fazy tego procesu i jak dostosować te fazy do swojego planu wdrożenia chmury. Poniższa ilustracja przedstawia fazy w podejściu iteracyjnym:
 
-![Model migracji opisany w przewodniku Cloud Adoption Framework](../_images/operational-transformation-migrate.png)
+![Model migracji opisany w przewodniku Cloud Adoption Framework](../_images/migrate/methodology.png)
 
 ## <a name="create-a-balanced-cloud-portfolio"></a>Tworzenie zrównoważonego portfolio chmury
 
@@ -143,7 +129,7 @@ Efektywny proces migracji wymaga określenia miejsca docelowego. Przed zrobienie
 
 W tych artykułach omówiono dwa procesy, z których każdy ma podobny cel &mdash; zmigrowanie znaczącej części istniejących zasobów na platformę Azure. Jednak wyniki biznesowe i bieżący stan będą mieć istotny wpływ na procesy wymagane do osiągnięcia celu. Te subtelne odchylenia mogą być przyczyną dwóch znacząco odmiennych podejść dotyczących osiągnięcia podobnego stanu końcowego.
 
-![Model migracji opisany w przewodniku Cloud Adoption Framework](../_images/operational-transformation-migrate.png)
+![Model migracji opisany w przewodniku Cloud Adoption Framework](../_images/migrate/methodology.png)
 
 Aby zapewnić instrukcje dotyczące przyrostowego wykonania podczas przejścia do stanu końcowego, ten model dzieli migrację, skupiając się na dwóch obszarach.
 
@@ -173,48 +159,9 @@ Nadal wymagane jest przyrostowe podejście do migracji. W większości środowis
 
 Przyrostowe podejście do migracji w ramach przewodnika Cloud Adoption Framework pomaga utworzyć plan przyrostowy, który odzwierciedla i dokumentuje ograniczenia techniczne oraz kulturowe. Ten model ma na celu zwiększenie szybkości migracji przy jednoczesnej minimalizacji nakładu pracy działu IT i przedsiębiorstwa. Poniżej podano dwa przykłady wykonania migracji przyrostowej w oparciu o listę prac związanych z migracją.
 
-<!-- markdownlint-disable MD033 -->
-
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./azure-migration-guide/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Przewodnik po migracji na platformę Azure</h3>
-                        <p><b>Opisowe podsumowanie:</b> Ten klient wykonuje migrację mniej niż 1000 maszyn wirtualnych. Mniej niż dziesięć obsługiwanych aplikacji jest własnością właściciela aplikacji, który nie należy do organizacji IT. Pozostałe aplikacje, maszyny wirtualne i skojarzone dane są własnością członków zespołu ds. wdrażania chmury i są przez nich obsługiwane. Członkowie zespołu ds. wdrażania chmury mają dostęp administracyjny do środowisk produkcyjnych w istniejącym centrum danych.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./expanded-scope/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Przewodnik dotyczący złożonego scenariusza</h3>
-                        <p><b>Opisowe podsumowanie:</b> Migracja tego klienta jest złożona na poziomie działalności, kultury i technologii. Ten przewodnik opisuje wiele problemów o konkretnej złożoności oraz sposoby ich rozwiązania.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
-
-Te dwa procesy reprezentują dwa skrajne doświadczenia klientów, którzy zainwestowali w migrację do chmury. W większości firm stosowana jest kombinacja dwóch powyższych scenariuszy. Po zapoznaniu się z procesami użyj modelu migracji w ramach podręcznika Cloud Adoption Framework, aby rozpocząć rozmowę na temat migracji i zmodyfikować procesy bazowe w celu lepszego spełnienia Twoich potrzeb.
-
 ## <a name="next-steps"></a>Następne kroki
 
-Wybierz jeden z następujących procesów:
+Rozpocznij od zapoznania się z [przewodnikiem po migracji na platformę Azure](./azure-migration-guide/index.md)
 
 > [!div class="nextstepaction"]
 > [Przewodnik po migracji na platformę Azure](./azure-migration-guide/index.md)
->
-> [Przewodnik o rozszerzonym zakresie](./expanded-scope/index.md)
