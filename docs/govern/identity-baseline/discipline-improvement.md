@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1ee4e64e86ccb3648badad38d2118be11b76cc7
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709366"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508121"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Poprawa dyscypliny linii bazowej tożsamości
 
@@ -119,7 +119,7 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 **Potencjalne działania:**
 
 - Przeprowadzaj okresowe inspekcje zasad tożsamości i praktyk przestrzegania.
-- Upewnij się, że poufne konta użytkowników (prezes, dyrektor finansowy, wiceprezes itp.) są zawsze włączone na potrzeby uwierzytelniania wieloskładnikowego i wykrywania nietypowego logowania.
+- Upewnij się, że poufne konta użytkowników (takie jak konta kierownictwa firmy) są zawsze włączone na potrzeby uwierzytelniania wieloskładnikowego i wykrywania nietypowego logowania.
 - Skanuj w poszukiwaniu złośliwych podmiotów i naruszeń danych regularnie, szczególnie tych związanych z oszustwem tożsamości, takimi jak potencjalne przejęcie kont administratorów.
 - Skonfiguruj narzędzie do monitorowania i raportowania.
 - Rozważ ścisłą integrację z systemami zabezpieczeń i zapobiegania oszustwom.

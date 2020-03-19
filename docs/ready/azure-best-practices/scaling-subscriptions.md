@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 96564a10bc8dda4ed1966cf5dd41c5ea233f2327
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: b734446a4bac7d8db12119b2248aece9a3377d37
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312660"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508393"
 ---
 # <a name="scale-with-multiple-azure-subscriptions"></a>Skalowanie przy użyciu wielu subskrypcji platformy Azure
 
@@ -22,7 +22,7 @@ Organizacje zwykle potrzebują wielu subskrypcji platformy Azure w wyniku limit�
 
 Podczas wdrażania pierwszego obciążenia produkcyjnego na platformie Azure należy zacząć od dwóch subskrypcji: jednej dla środowiska produkcyjnego i jednego dla środowiska nieprodukcyjnego (deweloperskiego/testowego).
 
-![Podstawowy model subskrypcji pokazujący klucze obok pola "produkcja" i "nieprodukcja"](../../_images/ready/basic-subscription-model.png)
+![Podstawowy model subskrypcji pokazujący klucze obok pola "produkcja" i "nieprodukcja"](../../_images/ready/initial-subscription-model.png)
 
 Zalecamy zastosowanie tego podejścia z kilku powodów:
 

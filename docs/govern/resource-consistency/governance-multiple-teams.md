@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 62c47f8d4b3c386129c6a6a9eeb966393573ea16
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 614c43a59d7fab493aa97eca47dcd43a73987fa9
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223887"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508138"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -30,7 +30,7 @@ Wymagania są następujące:
 - Obsługa wielu **środowisk**. Środowisko to logiczne grupowanie zasobów, takich jak maszyny wirtualne, sieci wirtualne i usługi routingu ruchu sieciowego. Te grupy zasobów mają podobne wymagania dotyczące zarządzania i zabezpieczeń i są zwykle używane do określonego celu, takiego jak testowanie lub produkcja. W tym przykładzie wymagania dotyczą czterech środowisk:
   - **Udostępnione środowisko infrastruktury** , które obejmuje zasoby współużytkowane przez obciążenia w innych środowiskach. Na przykład Sieć wirtualna z podsiecią bramy, która zapewnia łączność z lokalnymi.
   - **Środowisko produkcyjne** z najbardziej restrykcyjnymi zasadami zabezpieczeń. Może obejmować obciążenia wewnętrzne lub zewnętrzne.
-  - **Środowisko przedprodukcyjne** na potrzeby projektowania i testowania. To środowisko ma zabezpieczenia, zgodność i zasady dotyczące kosztów, które różnią się od tych w środowisku produkcyjnym. Na platformie Azure ma to formę subskrypcji Enterprise — tworzenie i testowanie.
+  - **Środowisko nieprodukcyjne** na potrzeby projektowania i testowania. To środowisko ma zabezpieczenia, zgodność i zasady dotyczące kosztów, które różnią się od tych w środowisku produkcyjnym. Na platformie Azure ma to formę subskrypcji Enterprise — tworzenie i testowanie.
   - **Środowisko piaskownicy** do weryfikacji koncepcji i celów edukacyjnych. To środowisko jest zwykle przypisywany dla pracowników uczestniczących w działaniach programistycznych i ma ścisłe procedury i funkcjonalne mechanizmy kontroli bezpieczeństwa, aby zapobiec wyładunku danych firmowych w tym miejscu. Na platformie Azure mają one formę subskrypcji programu Visual Studio. Te subskrypcje _nie_ powinny również być powiązane z Azure Active Directoryami przedsiębiorstwa.
 - **Model uprawnień o najniższych** uprawnieniach, w którym użytkownicy domyślnie nie mają uprawnień. Model musi obsługiwać następujące elementy:
   - Pojedynczy zaufany użytkownik (traktowany jak konto usługi) w zakresie subskrypcji z uprawnieniami do przypisywania praw dostępu do zasobów.
@@ -141,7 +141,7 @@ Teraz, Po zaprojektowaniu modelu uprawnień o najniższych uprawnieniach, przyjr
 2. **Środowisko produkcyjne:** Wiele grup zasobów reprezentujących wiele obciążeń produkcyjnych. Te zasoby są używane do obsługi prywatnych i publicznych artefaktów aplikacji. Te zasoby zwykle mają ścisłe modele zarządzania i zabezpieczeń, aby chronić zasoby, kod aplikacji i dane przed nieautoryzowanym dostępem.
 3. **Środowisko przedprodukcyjne:** Wiele grup zasobów reprezentujących wiele gotowych obciążeń nieprodukcyjnych. Te zasoby są używane na potrzeby tworzenia i testowania tych zasobów może mieć bardziej swobodny model ładu, aby zapewnić lepszą elastyczność deweloperów. Zabezpieczenia w tych grupach powinny zwiększyć się bliżej od "produkcji" procesu tworzenia aplikacji.
 
-Dla każdego z tych trzech środowisk istnieje wymóg śledzenia danych kosztów według **właściciela obciążenia**, **środowiska**lub obu. Oznacza to, że chcesz poznać bieżący koszt **infrastruktury udostępnionej**, koszty związane z poszczególnymi osobami zarówno w środowisku **produkcyjnym** **, jak i** produkcyjnych, a na koniec łączny koszt produkcji **przedprodukcyjnej i środowisk** **produkcyjnych** .
+Dla każdego z tych trzech środowisk istnieje wymóg śledzenia danych kosztów według **właściciela obciążenia**, **środowiska**lub obu. Oznacza to, że chcesz poznać ciągły koszt **infrastruktury udostępnionej**, koszty związane z osobami zarówno w środowiskach **nieprodukcyjnych, jak i** **produkcyjnymi** , a na koniec łączny koszt **nieproduktywności** i środowiska **produkcyjnego** .
 
 Wiesz już, że zasoby są objęte zakresem dwóch poziomów: **subskrypcji** i **grupy zasobów**. W związku z tym pierwsza decyzja polega na tym, jak organizować środowiska przez **subskrypcję**. Dostępne są tylko dwie możliwości: pojedyncza subskrypcja lub wiele subskrypcji.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6fc2992f98c16171173a3313fe19411c05883fa2
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 5b70980d1c8f27f286aaf1173970e2edd26f60e0
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312105"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508427"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 
@@ -130,7 +130,7 @@ Firma Contoso przeprowadza ocenę w następujący sposób:
 > - **Krok 6. Ocena maszyn wirtualnych przy użyciu Azure Migrate.** Przedstawiciel firmy Contoso sprawdza zależności, grupuje maszyny wirtualne i uruchamia ocenę. Gdy ocena jest gotowa, przedstawiciel firmy Contoso analizuje ją pod kątem przygotowania do migracji.
 
     > [!NOTE]
-    > Assessments shouldn't just be limited to using tooling to discover information about your environment, you should schedule in time to speak to business owners, end users, other members within the IT department, etc in order to get a full picture of what is happening within the environment and understand things tooling cannot tell you. 
+    > Assessments shouldn't just be limited to using tooling to discover information about your environment. You should also schedule time to speak to business owners, end users, and other members of the IT department to fully understand of what is happening in the environment and understand factors that tooling cannot tell you. 
 
 ## <a name="step-1-download-and-install-data-migration-assistant"></a>Krok 1. Pobieranie i Instalowanie Data Migration Assistant
 

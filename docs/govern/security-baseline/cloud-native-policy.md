@@ -8,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ce5b1a77396479b2621afab5cac025b983f14469
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 121e2a04eee6f9f977f4bb826fcb7ff712794cd3
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223746"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508053"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Zasady linii bazowej zabezpieczeń w chmurze
 
-[Linia bazowa zabezpieczeń](./index.md) jest jednym z [pięciu dyscyplin zarządzania chmurą](../governance-disciplines.md). Ta dyscyplina koncentruje się na ogólnych tematach zabezpieczeń, w tym o ochronie sieci, zasobów cyfrowych, danych itp. Zgodnie z opisem w [przewodniku przegląd zasad](../policy-compliance/cloud-policy-review.md), struktura wdrażania chmury obejmuje trzy poziomy przykładowych zasad: natywne, korporacyjne i chmurowe, które są zgodne z zasadami dla każdej dyscypliny. W tym artykule omówiono przykładowe natywne zasady w chmurze dotyczące dyscypliny linii bazowej zabezpieczeń.
+[Linia bazowa zabezpieczeń](./index.md) jest jednym z [pięciu dyscyplin zarządzania chmurą](../governance-disciplines.md). Ta dyscyplina koncentruje się na ogólnych tematach zabezpieczeń, w tym o ochronie sieci, zasobów cyfrowych i danych. Zgodnie z opisem w [przewodniku przegląd zasad](../policy-compliance/cloud-policy-review.md), struktura wdrażania chmury obejmuje trzy poziomy przykładowych zasad: natywne, korporacyjne i chmurowe, które są zgodne z zasadami dla każdej dyscypliny. W tym artykule omówiono przykładowe natywne zasady w chmurze dotyczące dyscypliny linii bazowej zabezpieczeń.
 
 > [!NOTE]
 > Firma Microsoft nie jest w stanie podyktować zasad firmowych ani INFORMATYCZNych. Ten artykuł pomoże Ci przygotować się do przeglądu zasad wewnętrznych. Przyjęto założenie, że te przykładowe zasady zostaną rozszerzone, zweryfikowane i przetestowane względem zasad korporacyjnych przed podjęciem próby jej użycia. Użycie tych przykładowych zasad jest niezalecane.

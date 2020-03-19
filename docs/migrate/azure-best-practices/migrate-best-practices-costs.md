@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 89ac6886756c304d8acae5a4180a9715d336a92e
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: dd8030c884b6c5b66c733080d26f29bb8319740e
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311918"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508410"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące określania kosztów i rozmiarów obciążeń migrowanych na platformę Azure
 
@@ -191,7 +191,7 @@ Korzystając z wystąpień zarezerwowanych maszyn wirtualnych platformy Azure, o
 
 To nieuniknione, że w końcu będziesz mieć więcej niż jedną subskrypcję platformy Azure. Możesz na przykład potrzebować dodatkowej subskrypcji w celu rozdzielenia granic środowiska deweloperskiego i produkcyjnego lub możesz mieć platformę, która wymaga oddzielnej subskrypcji dla każdego klienta. Możliwość agregowania raportowania danych ze wszystkich subskrypcji na jednej platformie jest wartościową funkcją.
 
-W tym celu można użyć interfejsów API usługi Azure Cost Management. Następnie, po zagregowaniu danych do jednego źródła, takiego jak baza danych SQL Azure, można użyć narzędzi, takich jak usługa Power BI, aby uwidocznić zagregowane dane. Można tworzyć zagregowane raporty subskrypcji i raporty szczegółowe. Na przykład w przypadku użytkowników, którzy potrzebują proaktywnie wglądu w koszty zarządzania, można utworzyć określone widoki kosztów na podstawie działu, grupy zasobów itd. Nie musisz podawać ich z pełnymi prawami dostępu do danych rozliczeniowych platformy Azure.
+W tym celu można użyć interfejsów API usługi Azure Cost Management. Następnie, po zagregowaniu danych do jednego źródła, takiego jak baza danych SQL Azure, można użyć narzędzi, takich jak usługa Power BI, aby uwidocznić zagregowane dane. Można tworzyć zagregowane raporty subskrypcji i raporty szczegółowe. Na przykład w przypadku użytkowników, którzy potrzebują proaktywnie wglądu w koszty zarządzania, można utworzyć określone widoki kosztów na podstawie działów, grup zasobów lub innych informacji. Nie musisz zapewniać im pełnego dostępu do danych rozliczeniowych platformy Azure.
 
 **Dowiedz się więcej:**
 

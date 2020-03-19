@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17796b5ebe081f6e7ff14ba951db4db0d187d630
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 6751de6d448be8119dceaed86339e1c27ccc40f3
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709519"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508104"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Procesy zgodności z zasadami spójności zasobów
 
@@ -59,7 +59,7 @@ Następujące wyzwalacze i akcje wymuszania zawierają przykłady, które można
 - **Wykryto nieudostępniany zasób.** Zasoby wykryte przy użyciu ponad 80% pojemności procesora lub pamięci powinny automatycznie skalować w górę lub aprowizacji dodatkowe zasoby w celu zapewnienia dodatkowej pojemności.
 - **Nieoznakowane tworzenie zasobów.** Każde żądanie utworzenia zasobu bez wymaganych tagów Meta zostanie odrzucone automatycznie.
 - **Wykryto krytyczną awarię zasobów.** Pracownicy działu IT są powiadamiani o wszystkich wykrytych przestojach. Jeśli przestój nie zostanie natychmiast rozpoznawalny, personel będzie eskalować problem i powiadomić właścicieli obciążeń i zespół nadzorujący chmurę. Zespół ds. zarządzania chmurą będzie śledził problem do momentu rozwiązania problemu i aktualizacji, jeśli konieczna jest zmiana zasad w celu zapobieżenia przyszłym zdarzeniom.
-- **Dryf konfiguracji.** Wykryte zasoby, które nie są zgodne z ustalonymi liniami bazowymi, powinny wyzwalać alerty i być automatycznie korygowane przy użyciu narzędzi do zarządzania konfiguracją, takich jak Azure Automation, Chef, Puppet, rozwiązania ansible itd.
+- **Dryf konfiguracji.** Wykryte zasoby, które nie są zgodne z ustalonymi liniami bazowymi, powinny wyzwalać alerty i być automatycznie korygowane przy użyciu narzędzi do zarządzania konfiguracją, takich jak Azure Automation, Chef, Puppet lub rozwiązania ansible.
 
 ## <a name="next-steps"></a>Następne kroki
 
