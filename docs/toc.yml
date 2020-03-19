@@ -2,6 +2,8 @@ items:
   - name: Struktura wdrażania chmury
     href: index.md
     pdf_name: Microsoft Cloud Adoption Framework for Azure
+  - name: Co nowego
+    href: getting-started/whats-new.md
   - name: Wprowadzenie
     items:
       - name: Rozpoczynanie podróży migracyjnej
@@ -124,7 +126,7 @@ items:
             href: ready/azure-setup-guide/staying-current.md
       - name: Pierwsza strefa docelowa
         items:
-          - name: Co to jest strefa docelowa
+          - name: Co to jest strefa docelowa?
             href: ready/landing-zone/index.md
           - name: Wybieranie pierwszej strefy docelowej
             href: ready/landing-zone/first-landing-zone.md
@@ -608,7 +610,7 @@ items:
                         href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/data/enterprise-bi-synapse?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Zarządzanie danymi big data w przedsiębiorstwie za pomocą usługi Azure Data Lake Storage
                         href: 'https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Co to jest magazyn typu „data lake”
+                      - name: Co to jest magazyn typu „data lake”?
                         href: 'https://docs.microsoft.com/azure/architecture/data-guide/scenarios/data-lake?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: Zbieranie danych
                     items:
