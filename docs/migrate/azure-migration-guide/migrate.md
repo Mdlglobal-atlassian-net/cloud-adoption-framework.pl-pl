@@ -1,6 +1,6 @@
 ---
 title: Migrowanie elementów zawartości
-description: Ten przewodnik pomaga zainicjować migrację środowiska, identyfikując odpowiednie narzędzia pozwalające przejść w stan „Gotowe”, m.in. narzędzia natywne, narzędzia innych firm oraz narzędzia do zarządzania projektami.
+description: Zainicjuj migrację na platformę Azure, dobierając właściwe narzędzia do użycia, w tym narzędzia natywne, narzędzia innych firm i narzędzia do zarządzania projektami.
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9da81d0f9c51343b7d31fbc5591607fdfd36a1aa
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
-ms.translationtype: MT
+ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78893080"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312343"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -46,8 +46,8 @@ Aby przeprowadzić migrację przy użyciu usługi Azure Migrate, wykonaj następ
 1. Wyszukaj usługę Azure Migrate w obszarze **Wszystkie usługi**. Aby kontynuować, wybierz pozycję **Azure Migrate**.
 1. Wybierz opcję **Dodaj narzędzie**, aby rozpocząć projekt migracji.
 1. Wybierz subskrypcję, grupę zasobów i lokalizację geograficzną, aby przeprowadzić migrację.
-1. Wybierz **Narzędzie do oceny wybierz** > **Azure Migrate: Ocena serwera** >  **dalej**.
-1. Wybierz opcję **Przejrzyj i dodaj narzędzia** i sprawdź konfigurację. Wybierz pozycję **Dodaj narzędzia** , aby zainicjować zadanie tworzenia projektu migracji i zarejestrować wybrane rozwiązania.
+1. Wybierz kolejno opcje **Wybierz narzędzie oceny** > **Azure Migrate: Ocena serwera** >  **Dalej**.
+1. Wybierz opcję **Przejrzyj i dodaj narzędzia** i sprawdź konfigurację. Wybierz pozycję **Dodaj narzędzia**, aby zainicjować zadanie tworzenia projektu migracji i zarejestrować wybrane rozwiązania.
 
 ### <a name="learn-more"></a>Dowiedz się więcej
 
@@ -68,15 +68,15 @@ W poniższych krokach przedstawiono proces korzystania z usługi Site Recovery w
 1. Jeśli magazyn odzyskiwania nie został jeszcze utworzony, ukończ pracę kreatora, aby utworzyć zasób **Magazyn usługi Recovery Services**.
 1. W menu **Zasób** wybierz kolejno pozycje **Site Recovery > Przygotuj infrastrukturę > Cel ochrony**.
 1. W obszarze **Cel ochrony** wybierz elementy do migracji.
-    1. **Oprogramowanie VMware:** Wybierz pozycję **Azure > tak, za pomocą funkcji Hypervisor VMware vSphere**.
-    1. **Maszyna fizyczna:** Wybierz pozycję **na platformie Azure, > nie Zwirtualizowana/inna**.
-    1. **Funkcja Hyper-V:** Wybierz pozycję **Azure > tak, z funkcją Hyper-V**. Jeśli program VMM zarządza maszynami wirtualnymi funkcji Hyper-V, wybierz pozycję **Tak**.
+    1. **VMware:** Wybierz kolejno pozycje **Na platformę Azure > Tak, za pomocą programu VMware vSphere Hypervisor**.
+    1. **Maszyna fizyczna:** Wybierz kolejno pozycje **Na platformę Azure > Bez wirtualizacji/inne**.
+    1. **Hyper-V:** Wybierz kolejno pozycje **Na platformę Azure > Tak, za pomocą funkcji Hyper-V**. Jeśli program VMM zarządza maszynami wirtualnymi funkcji Hyper-V, wybierz pozycję **Tak**.
 
 ### <a name="configure-migration-settings"></a>Konfigurowanie ustawień migracji
 
 1. Skonfiguruj odpowiednio środowisko źródłowe.
 1. Skonfiguruj środowisko docelowe.
-    1. Wybierz pozycję **Przygotuj infrastrukturę > cel**, a następnie wybierz subskrypcję platformy Azure, której chcesz użyć.
+    1. Wybierz kolejno pozycje **Przygotowywanie infrastruktury > Docelowa**, a następnie wybierz subskrypcję platformy Azure do użycia.
     1. Określ model wdrażania usługi Resource Manager.
     1. Usługa Site Recovery sprawdza, czy masz co najmniej jedno zgodne konto magazynu Azure i co najmniej jedną sieć platformy Azure.
 1. Skonfiguruj zasady replikacji.
@@ -128,7 +128,7 @@ Jeśli usługa Azure Database Migration Service jest używana po raz pierwszy, n
 Po zarejestrowaniu dostawcy zasobów można utworzyć wystąpienie usługi Azure Database Migration Service.
 
 1. Wybierz pozycję **+Utwórz zasób** i wyszukaj na platformie handlowej pozycję **Azure Database Migration Service**.
-1. Ukończ pracę kreatora **tworzenia usługi migracji** , a następnie wybierz pozycję **Utwórz**.
+1. Ukończ pracę kreatora **Tworzenie usługi migracji** i wybierz pozycję **Utwórz**.
 
 Usługa jest teraz gotowa do migracji obsługiwanych źródłowych baz danych (na przykład SQL Server, MySQL, PostgreSQL lub MongoDb).
 
@@ -144,8 +144,8 @@ Aby uzyskać więcej informacji, zobacz:
 
 - [Omówienie usługi Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)
 - [Tworzenie wystąpienia usługi Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
-- [Usługa Azure Migrate w portalu usługi Azure](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
-- [Azure Portal: Tworzenie projektu migracji](https://portal.azure.com/#create/Microsoft.AzureMigrate)
+- [Usługa Azure Migrate w witrynie Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
+- [Witryna Azure portal: tworzenie projektu migracji](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
 ::: zone-end
 
@@ -157,14 +157,14 @@ Narzędzie Data Migration Assistant (DMA) ułatwia uaktualnianie do nowoczesnej 
 > W przypadku dużych migracji (pod względem liczby i rozmiaru baz danych) zaleca się użycie usługi Azure Database Migration Service, która może migrować bazy danych na dużą skalę.
 >
 
-Zacznij korzystać z Data Migration Assistant, wykonując następujące czynności:
+Zacznij korzystać z narzędzia Data Migration Assistant, wykonując następujące kroki:
 
-1. Pobierz i zainstaluj Data Migration Assistant z [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53595).
-1. Utwórz ocenę, wybierając ikonę **New (+)** , a następnie wybierz typ projektu **oceny** .
-1. Ustaw typ serwera źródłowego i docelowego, a następnie wybierz pozycję **Utwórz**.
+1. Pobierz i zainstaluj narzędzie Data Migration Assistant z [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53595).
+1. Utwórz ocenę, wybierając ikonę **Nowy (+)** i wybierając typ projektu **Ocena**.
+1. Ustaw typ serwera źródłowego i serwera docelowego, a następnie wybierz pozycję **Utwórz**.
 1. Skonfiguruj opcje oceny zgodnie z wymaganiami (zalecane są wszystkie ustawienia domyślne).
 1. Dodaj bazy danych do oceny.
-1. Wybierz pozycję **dalej** , aby rozpocząć ocenę.
+1. Wybierz pozycję **Dalej**, aby rozpocząć ocenę.
 1. Wyświetl wyniki w zestawie narzędzi Data Migration Assistant.
 
 W przypadku przedsiębiorstwa zalecamy zastosowanie rozwiązania przedstawionego w temacie [Assess an enterprise and consolidate assessment reports with DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports) (Ocena przedsiębiorstwa i konsolidowanie raportów oceny za pomocą narzędzia DMA) do oceny wielu serwerów, połączenia raportów, a następnie użycia dostarczonych raportów usługi Power BI do analizy wyników.
@@ -189,9 +189,9 @@ Asystent eksperymentowania z bazą danych jest nowym rozwiązaniem do testowania
 
 Asystent eksperymentowania z bazą danych obejmuje następujące działania przepływu pracy:
 
-- **Przechwyć:** Pierwszym krokiem SQL Server testowania A/B jest przechwycenie śladu na serwerze źródłowym. Serwer źródłowy jest zazwyczaj serwerem produkcyjnym.
-- **Odtwórz ponownie:** Drugi etap testowania SQL Server A/B polega na powtórzeniu pliku śledzenia, który został przechwycony na serwerach docelowych. Następnie należy zebrać obszerne ślady z ponownych odtworzeń na potrzeby analizy.
-- **Analiza:** Ostatnim krokiem jest wygenerowanie raportu analizy przy użyciu śladów odtwarzania. Raport analizy może pomóc w uzyskaniu szczegółowych informacji na temat wpływu proponowanej zmiany na wydajność.
+- **Przechwytywanie:** Pierwszym krokiem testowania A/B programu SQL Server jest przechwycenie śladu na serwerze źródłowym. Serwer źródłowy jest zazwyczaj serwerem produkcyjnym.
+- **Ponowne odtwarzanie:** Drugim krokiem testowania A/B programu SQL Server jest ponowne odtworzenie przechwyconego pliku śledzenia na serwerach docelowych. Następnie należy zebrać obszerne ślady z ponownych odtworzeń na potrzeby analizy.
+- **Analiza:** Ostatnim krokiem jest wygenerowanie raportu analizy przy użyciu śladów ponownego odtwarzania. Raport analizy może pomóc w uzyskaniu szczegółowych informacji na temat wpływu proponowanej zmiany na wydajność.
 
 Aby uzyskać więcej informacji, zobacz:
 
@@ -213,7 +213,7 @@ Niektóre narzędzia migracji innych firm i usługi niezależnych dostawców opr
 
 ## <a name="unifycloud"></a>UnifyCloud
 
-UnifyCloud to usługa niezależnego dostawcy oprogramowania, która zapewnia narzędzia do oceny, migracji i modernizacji.
+UnifyCloud to usługa niezależnego dostawcy oprogramowania, która zapewnia narzędzia do automatyzowania oceny, migracji i modernizacji.
 
 [Dowiedz się więcej](https://www.unifycloud.com/)
 
@@ -259,10 +259,10 @@ Sugerowanym narzędziem do zarządzania projektami podczas migracji do chmury je
 
 Firma Microsoft oferuje też następujące narzędzia do zarządzania projektami, które mogą ze sobą współdziałać, aby zapewnić szersze możliwości:
 
-- [Microsoft Planner](https://tasks.office.com): prosta, wizualna Metoda organizowania zespołowej.
-- [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Zarządzanie projektami i portfolio, zarządzanie pojemnością zasobów, zarządzanie finansami, grafik i planowanie zarządzania.
-- [Microsoft](https://products.office.com/microsoft-teams)Teams: narzędzia do współpracy i komunikacji zespołowej. Rozwiązanie Teams można również zintegrować z narzędziem Planner oraz innymi narzędziami, aby ułatwić współpracę.
-- [Azure DevOps](https://dev.azure.com): szablon planu struktury wdrażania w chmurze nie jest wymagany do korzystania z usługi Azure DevOps. Usługi można używać bez tego szablonu, aby zarządzać infrastrukturą jak kodem lub używać elementów roboczych i tablic do zarządzania projektami. Z czasem Twoja organizacja może skorzystać z funkcji ciągłej integracji/ciągłego wdrażania.
+- [Microsoft Planner](https://tasks.office.com): prosta, wizualna metoda organizowania pracy zespołowej.
+- [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): zarządzanie projektami i portfolio, zarządzanie zdolnościami produkcyjnymi zasobów, zarządzanie finansami, zarządzanie grafikiem i harmonogramem.
+- [Microsoft Teams](https://products.office.com/microsoft-teams): narzędzie do współpracy i komunikacji zespołowej. Rozwiązanie Teams można również zintegrować z narzędziem Planner oraz innymi narzędziami, aby ułatwić współpracę.
+- [Azure DevOps](https://dev.azure.com): do korzystania z usługi Azure DevOps nie jest wymagany szablon planowania przewodnika Cloud Adoption Framework. Usługi można używać bez tego szablonu, aby zarządzać infrastrukturą jak kodem lub używać elementów roboczych i tablic do zarządzania projektami. Z czasem Twoja organizacja może skorzystać z funkcji ciągłej integracji/ciągłego wdrażania.
 
 Nie są to jedyne dostępne narzędzia. Wiele innych narzędzi innych firm jest szeroko używanych w społeczności zajmującej się zarządzaniem projektami.
 
@@ -270,7 +270,7 @@ Nie są to jedyne dostępne narzędzia. Wiele innych narzędzi innych firm jest 
 
 Migracja do technologii chmurowych stanowi świetną okazję do przygotowania organizacji do wprowadzenia metodyki DevOps i ciągłej integracji/ciągłego wdrażania. Nawet jeśli Twoja organizacja zarządza tylko infrastrukturą, gdy zaczniesz zarządzać infrastrukturą jak kodem i korzystać z wzorców i praktyk branżowych metodyki DevOps, możesz rozpocząć zwiększanie elastyczności za pomocą potoków ciągłej integracji/ciągłego wdrażania, co pozwoli na szybsze dostosowanie do scenariuszy zmiany, rozwoju, wydania, a nawet odzyskiwania.
 
-Usługa Azure DevOps zapewnia wszystkie wymagane funkcje i integrację z platformą Azure, środowiskami lokalnymi, a nawet z innymi chmurami. Aby uzyskać więcej informacji, zobacz [usługę Azure DevOps](https://azure.microsoft.com/services/devops){3}{4}. Aby uzyskać dostęp do szkolenia z przewodnikiem, zobacz [CI and CD with Azure DevOps - Quickstart (Ciągła integracja i ciągłe wdrażanie w usłudze Azure DevOps — Szybki start)](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
+Usługa Azure DevOps zapewnia wszystkie wymagane funkcje i integrację z platformą Azure, środowiskami lokalnymi, a nawet z innymi chmurami. Aby uzyskać więcej informacji, zobacz [usługę Azure DevOps](https://azure.microsoft.com/services/devops). Aby uzyskać dostęp do szkolenia z przewodnikiem, zobacz [CI and CD with Azure DevOps - Quickstart (Ciągła integracja i ciągłe wdrażanie w usłudze Azure DevOps — Szybki start)](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
 
 ## <a name="suggested-skills"></a>Sugerowane umiejętności
 
@@ -278,8 +278,8 @@ Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych obowią
 
 Poniżej znajduje się przykład dostosowanej ścieżki szkoleniowej w środowisku Microsoft Learn, która uzupełnia wytyczne konfigurowania pod kątem metodyki DevOps w strukturze Cloud Adoption Framework.
 
-[Twórz aplikacje za pomocą usługi Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Współpracuj z innymi osobami w celu kompilowania aplikacji przy użyciu Azure Pipelines i usługi GitHub. Uruchamiaj testy automatyczne w potoku, aby weryfikować jakość kodu. Skanuj kod źródłowy i składniki innych firm pod kątem potencjalnych luk w zabezpieczeniach. Definiuj wiele potoków, które współpracują ze sobą w celu skompilowania aplikacji. Kompiluj aplikacje przy użyciu zarówno agentów hostowanych przez firmę Microsoft, jak i własnych agentów kompilacji.
+[Tworzenie aplikacji za pomocą usługi Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Współpracuj z innymi osobami w celu tworzenia aplikacji przy użyciu usług Azure Pipelines i GitHub. Uruchamiaj testy automatyczne w potoku, aby weryfikować jakość kodu. Skanuj kod źródłowy i składniki innych firm pod kątem potencjalnych luk w zabezpieczeniach. Definiuj wiele potoków, które współpracują ze sobą w celu skompilowania aplikacji. Kompiluj aplikacje przy użyciu zarówno agentów hostowanych przez firmę Microsoft, jak i własnych agentów kompilacji.
 
 # <a name="cost-management"></a>[Zarządzanie kosztami](#tab/ManageCost)
 
-Podczas migrowania zasobów do środowiska chmury należy przeprowadzać okresową analizę kosztów. Pomoże to uniknąć nieoczekiwanych opłat za użycie, ponieważ proces migracji może spowodować, że Twoje usługi zostaną objęte dodatkowymi wymaganiami w zakresie użycia. Możesz również zmienić rozmiar zasobów zgodnie z wymaganiami, aby zrównoważyć koszt i obciążenie (omówione bardziej szczegółowo w sekcji **[Optymalizacja i Przekształć](./optimize-and-transform.md)** ).
+Podczas migrowania zasobów do środowiska chmury należy przeprowadzać okresową analizę kosztów. Pomoże to uniknąć nieoczekiwanych opłat za użycie, ponieważ proces migracji może spowodować, że Twoje usługi zostaną objęte dodatkowymi wymaganiami w zakresie użycia. Można również w zależności od potrzeb zmienić rozmiar zasobów, aby zrównoważyć koszt i obciążenie (rozwiązanie to zostało omówione bardziej szczegółowo w sekcji **[Optimize and Transform](./optimize-and-transform.md)** [Optymalizowanie i przekształcanie]).

@@ -1,6 +1,6 @@
 ---
 title: Mechanizmy kontroli kosztów skoncentrowane na migracji
-description: Dowiedz się, jak konfigurować budżety i płatności oraz jak interpretować faktury dotyczące zasobów platformy Azure.
+description: Dowiedz się, jak interpretować faktury oraz konfigurować budżety i płatności dotyczące zasobów platformy Azure przy użyciu podręcznika Cloud Adoption Framework dla platformy Azure.
 author: bandersmsft
 ms.author: banders
 ms.date: 08/08/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: b220929fd6348909b8f06f7a537e1052c459d24d
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222655"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312122"
 ---
+<!-- cSpell:ignore bandersmsft -->
+
 # <a name="migration-focused-cost-control-mechanisms"></a>Mechanizmy kontroli kosztów skoncentrowane na migracji
 
 Chmura wprowadza kilka zmian w sposobie pracy, niezależnie od naszej roli w zespole technicznym. Koszty stanowią doskonały przykład tej zmiany. Dawniej tylko kadra kierownicza działu finansowego i informatycznego zajmowała się kosztami zasobów informatycznych (infrastruktury, aplikacji i danych). Chmura umożliwia każdemu członkowi działu informatycznego podejmowanie decyzji, które lepiej wspierają użytkownika końcowego, oraz działanie w oparciu o nie. Jednak takie możliwości wiążą się z odpowiedzialnością za świadome podejmowanie decyzji w zakresie kosztów.
