@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b7a6081f37899f11716eca07b7e6a371bcefcc94
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: a27ef0d432fc0aad64211e9b2228d4f82387f854
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337890"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069809"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ Jeszcze bardziej cenna Metryka to liczba pulpitów nawigacyjnych utworzonych na 
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gdy metryki szkoleniowe są wyrównane, możesz rozpocząć [ocenianie cyfr cyfrowych](../digital-estate/index.md) przed tymi metrykami. Wynikiem będzie [zaległości transformacji lub zaległości migracji](../migrate/migration-considerations/prerequisites/technical-complexity.md).
+Gdy metryki szkoleniowe są wyrównane, możesz rozpocząć [Tworzenie przypadku biznesowego](cloud-migration-business-case.md) do dostarczenia na te metryki. 
 
 > [!div class="nextstepaction"]
-> [Ocenianie cyfrowego podpisywania](../digital-estate/index.md)
+> [Utwórz przypadek biznesowy w chmurze](cloud-migration-business-case.md)

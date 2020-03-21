@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 119a0b64fe81e593404735e5ce6bc0c656ab23e2
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 9e60e84659828efdc9802c45cf2f91ad945c8cda
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312504"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069788"
 ---
 <!-- cSpell:ignore eastus westus westeurope usgovia accountlookup messagequery -->
 
@@ -66,7 +66,7 @@ Składniki nazwy powinny być krótkie, aby zapobiegać przekraczaniu limitów d
 | Jednostka biznesowa               | Wydział firmy najwyższego poziomu będący właścicielem subskrypcji lub obciążenia, do których należy zasób. W mniejszych organizacjach składnik ten może reprezentować pojedynczy korporacyjny element organizacyjny najwyższego poziomu. | _fin_, _mktg_, _product_, _it_, _corp_           |
 | Typ subskrypcji           | Opis podsumowujący przeznaczenie subskrypcji zawierającej zasób. Często składa się z typu środowiska wdrożeniowego lub określonych obciążeń.                                                       | _produkcyjny_, _współużytkowany_, _Klient_                       |
 | Nazwa aplikacji lub usługi | Nazwa aplikacji, obciążenia lub usługi, do której należy zasób.                                                                                                                                    | _navigator_, _emissions_, _sharepoint_, _hadoop_ |
-| Środowisko wdrażania      | Etap cyklu życia programowania dla obciążenia obsługiwanego przez zasób.                                                                                                                              | produkcja, _dev_, _pytań i odpowiedzi_, _etap_, _test_             |
+| Środowisko wdrażania      | Etap cyklu życia programowania dla obciążenia obsługiwanego przez zasób.                                                                                                                              | _prod_produkcja, _dev_, _pytań i odpowiedzi_, _etap_, _test_             |
 | Region                      | Region świadczenia usługi Azure, w którym wdrożono zasób.                                                                                                                                                                 | _zachodnie_, _eastus2_, _westeurope_, _usgovia_     |
 
 ### <a name="recommended-resource-type-prefixes"></a>Zalecane prefiksy typów zasobów
@@ -135,6 +135,7 @@ Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do uż
 | Baza danych MySQL                 | mysql-      |
 | Baza danych PostgreSQL            | PSQL       |
 | Azure SQL Data Warehouse       | sqldw-      |
+| Azure Synapse Analytics        | Syn        |
 | SQL Server Stretch Database    | sqlstrdb-   |
 
 ### <a name="storage"></a>Storage
@@ -216,7 +217,7 @@ Tagi stosowane do zasobów i tagi wymagane lub opcjonalne są różne w różnyc
 | Centrum kosztu               | Księgowe centrum kosztu skojarzone z tym zasobem.                                                                                                                                                                | _CostCenter_      | _{numer}_                                                 |
 | Odzyskiwanie po awarii         | Ważność aplikacji, obciążenia lub usługi dla działania firmy.                                                                                                                                                       | _DR_              | _Krytyczne_, _krytyczne_, _podstawowe_                |
 | Data zakończenia projektu   | Data, na którą zaplanowano wycofanie aplikacji, obciążenia lub usługi.                                                                                                                                         | _EndDate_         | _{data}_                                                   |
-| Środowisko               | Środowisko wdrażania aplikacji, obciążenia lub usługi.                                                                                                                                                     | _Env_             | Produkcja, _dev_, _pytań i odpowiedzi_, _etap_, _test_                       |
+| Środowisko               | Środowisko wdrażania aplikacji, obciążenia lub usługi.                                                                                                                                                     | _Env_             | _Prod_Produkcja, _dev_, _pytań i odpowiedzi_, _etap_, _test_                       |
 | Nazwa właściciela                | Właściciel aplikacji, obciążenia lub usługi.                                                                                                                                                                      | _Właściciel_           | _{e-mail}_                                                  |
 | Nazwa żądającego            | Użytkownik, który zażądał utworzenia tej aplikacji.                                                                                                                                                                 | _Requestor_       | _{e-mail}_                                                  |
 | Klasa usługi             | Poziom umowy dotyczącej poziomu usług aplikacji, obciążenia lub usługi.                                                                                                                                              | _ServiceClass_    | _Dev_, _Bronze_, _Silver_, _Gold_                          |
