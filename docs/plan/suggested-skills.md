@@ -3,16 +3,16 @@ title: Wprowadzenie do ścieżki gotowości do kwalifikacji
 description: Zadbaj o przyjęcie usług w chmurze, pomagając organizacji zrozumieć i wdrożyć powiązane zmiany, wprowadzając je w ścieżce gotowości do umiejętności.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3fdfbcbaabb79876d32fa8ea172b2c426ada9464
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 29c4f2aac24c80fcec877e5645dbe61363af5983
+ms.sourcegitcommit: a1209c9dab369171e1fe0cdc6a58e3f6ae6a8f22
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892688"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80261474"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Wprowadzenie do ścieżki gotowości do kwalifikacji
 
@@ -34,6 +34,7 @@ Pracownicy działu IT mogą obawiać się o swoje role i stanowiska, ponieważ r
 - **Działa:** Umiejętności związane z modelem operacyjnym wdrażania w chmurze są wyrównane do różnych możliwości, aby uzyskać umiejętności:
   - **Zarządzanie:** Uzyskaj umiejętności wymagane do zarządzania środowiskiem chmury.
   - **Zarządzanie:** Uzyskaj umiejętności wymagane do zarządzania środowiskiem w chmurze.
+  - **[Monitoruj](../manage/monitor/suggested-skills.md):** Uzyskaj umiejętności wymagane do monitorowania środowiska chmury.
 
 Każda z poprzednich ścieżek szkoleniowych udostępnia szanse sprzedaży na wielu typach multimediów, aby zmaksymalizować pozyskiwanie wiedzy.
 
