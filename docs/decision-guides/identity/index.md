@@ -2,18 +2,18 @@
 title: Przewodnik po decyzjach związanych z tożsamością
 description: Dowiedz się, w jaki sposób usługi zarządzania dostępem i tożsamościami (IAM, identity and access management) umożliwiają zarządzanie kontrolą dostępu w chmurze.
 author: rotycenh
-ms.author: v-tyhopk
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 62a101b8c9dd957a8eae2279f77c5cf0c4381796
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 3fb64c89a36db98a4dbf186f2ff3609bae0c4a2b
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312241"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225942"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 

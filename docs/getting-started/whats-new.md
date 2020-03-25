@@ -7,12 +7,12 @@ ms.date: 03/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1ec13eca60f8e3ed4f2d30b9c4c1b6b0138905a3
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: c7b3a4d946eac1b5296f4d37d50872105ce756ea
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79510811"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225959"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Co nowego w strukturze Microsoft Cloud wdrażania dla platformy Azure
 
@@ -20,7 +20,19 @@ Poniżej znajduje się lista najnowszych zmian wprowadzonych w strukturze wdroż
 
 Ta struktura jest wbudowana w współpracę z klientami, partnerami i wewnętrznymi zespołami firmy Microsoft. Nowa i zaktualizowana zawartość jest publikowana, gdy staną się dostępne. Te wersje umożliwiają przetestowanie, zweryfikowanie i dostosowanie wskazówek wraz z nami. Zachęcamy do współpracy z nami w celu utworzenia struktury wdrażania w chmurze dla platformy Azure.
 
-## <a name="march-2020"></a>Marzec 2020
+## <a name="march-20-2020"></a>20 marca 2020
+
+Dodaliśmy wskazówki, które zawierają narzędzia, programy i zawartość skategoryzowane według osoby, aby zapewnić pomyślne wdrożenie aplikacji na Kubernetes, od weryfikacji koncepcji do środowiska produkcyjnego, a następnie skalować i zoptymalizować.
+
+### <a name="kubernetes"></a>Kubernetes
+
+| Artykuł                                                                                     | Opis                                                                                                                                                                           |
+|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Projektowanie i wdrażanie aplikacji](../innovate/kubernetes/application-development.md) | **Nowy artykuł** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące planowania tworzenia aplikacji, konfigurowania potoków DevOps oraz implementowania inżynierów niezawodności witryny dla Kubernetes. |
+| [Projektowanie i operacje klastra](../innovate/kubernetes/cluster-design-operations.md) | **Nowy artykuł** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące konfiguracji klastra, projektowania sieci, skalowalności w przyszłości, ciągłości działania i odzyskiwania po awarii dla Kubernetes. |
+| [Zabezpieczenia klastra i aplikacji](../innovate/kubernetes/cluster-application-security.md) | **Nowy artykuł** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące planowania, produkcji i skalowania zabezpieczeń Kubernetes. |
+
+## <a name="march-2-2020"></a>2 marca 2020
 
 W odpowiedzi na opinie o ciągłości migracji przy użyciu wielu sekcji środowiska wdrażania chmury, w tym strategii, planowania, gotowości i migracji, wprowadziliśmy następujące aktualizacje. Te aktualizacje zostały zaprojektowane w celu ułatwienia zrozumienia procesu planowania i wdrażania w trakcie kontynuowania podróży migracji.
 

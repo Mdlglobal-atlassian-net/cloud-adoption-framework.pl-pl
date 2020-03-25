@@ -2,18 +2,18 @@
 title: Przewodnik podejmowania decyzji dotyczących wymuszania zasad
 description: Skorzystaj z przewodnika Cloud Adoption Framework dla platformy Azure, aby dowiedzieć się więcej o subskrypcjach wymuszania zasad jako podstawowym priorytecie projektu podczas migracji na platformę Azure.
 author: rotycenh
-ms.author: v-tyhopk
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2a5976d1aa1bb4ae0b1e8a0d810ae0acddabd883
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 652c980c1a9c389b7a305ab8f948a0c2073e5d0f
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170991"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225917"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Przewodnik podejmowania decyzji dotyczących wymuszania zasad
 
