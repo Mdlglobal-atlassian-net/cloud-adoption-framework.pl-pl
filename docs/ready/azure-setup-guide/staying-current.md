@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: ad8b6259aaa0808e2628fed9b88f0f806c46e655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: a75c014401a8a45eee0d0e301cf209ad3eda690b
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341984"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225806"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Bądź na bieżąco z platformą Microsoft Azure
 
@@ -51,11 +51,15 @@ Następujące zasoby mogą pomóc pozostać na bieżąco z platformą Azure:
 
 W przypadku bardziej zaawansowanej zawartości, która pomaga być na bieżąco z platformą Azure, przejrzyj wymienione tutaj zasoby:
 
-- [Azure Charts](https://azurecharts.com/)
-  - Ta nieoficjalna wizualizacja przedstawia wszystkie aktualizacje platformy Azure w ciągu ostatnich sześciu miesięcy. Zawiera ona inne przydatne wykresy i narzędzia ułatwiające śledzenie zmian platformy Azure.
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Cotygodniowe wideo z inżynierami, którzy tworzą platformę Azure. Przedstawiają oni pokazy, odpowiadają na pytania i dzielą się szczegółowymi informacjami.
   - Subskrybuj przy użyciu kanału informacyjnego [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).
-- [Azure Weekly](https://azureweekly.info)
-  - Ten biuletyn jest nieoficjalnym zasobem dostarczanym przez [endjin](https://endjin.com). Zawiera tygodniowe podsumowanie najważniejszych wiadomości o platformie Microsoft Azure. Obejmuje również interesującą zawartość historyczną.
+- [Azure Charts](https://azurecharts.com/)*
+  - Ta wizualizacja przedstawia wszystkie aktualizacje platformy Azure w ciągu ostatnich sześciu miesięcy. Zawiera ona inne przydatne wykresy i narzędzia ułatwiające śledzenie zmian platformy Azure.
+- [AzAdvertizer](https://www.azadvertizer.net/)*
+  - Śledzenie wersji i zmian w możliwościach ładu platformy Azure (np. usługa Azure Policy, inicjatywy zasad, aliasy zasad i kontrola dostępu na podstawie ról).
+- [Azure Weekly](https://azureweekly.info)*
+  - Ten biuletyn udostępniany przez witrynę [endjin](https://endjin.com) zawiera tygodniowe podsumowanie najważniejszych wiadomości o platformie Microsoft Azure. Obejmuje również interesującą zawartość historyczną.
   - Subskrybuj przy użyciu [poczty e-mail](https://azureweekly.info).
+
+\* *Te zasoby są udostępniane przez społeczność i nie są oficjalnie wspierane przez firmę Microsoft.*

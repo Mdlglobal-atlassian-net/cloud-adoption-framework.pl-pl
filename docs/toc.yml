@@ -1140,6 +1140,8 @@ items:
                 href: manage/monitor/alerting.md
               - name: Omówienie platform monitorowania
                 href: manage/monitor/platform-overview.md
+              - name: Umiejętności związane z monitorowaniem
+                href: manage/monitor/suggested-skills.md
           - name: Centralizowanie operacji zarządzania
             href: manage/centralize-operations.md
           - name: Ustanowienie przeglądu sprawności operacyjnej
