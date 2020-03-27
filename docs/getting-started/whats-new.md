@@ -3,22 +3,36 @@ title: Co nowego
 description: Zapoznaj się z najnowszymi aktualizacjami platformy wdrażania Microsoft Cloud platformy Azure.
 author: JanetCThomas
 ms.author: janet
-ms.date: 03/09/2020
+ms.date: 03/27/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c7b3a4d946eac1b5296f4d37d50872105ce756ea
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 6bde40ffaa84955811b2687b2b518d93d0c21589
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225959"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357192"
 ---
+<!-- markdownlint-disable MD024 -->
+
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Co nowego w strukturze Microsoft Cloud wdrażania dla platformy Azure
 
 Poniżej znajduje się lista najnowszych zmian wprowadzonych w strukturze wdrożenia chmury.
 
 Ta struktura jest wbudowana w współpracę z klientami, partnerami i wewnętrznymi zespołami firmy Microsoft. Nowa i zaktualizowana zawartość jest publikowana, gdy staną się dostępne. Te wersje umożliwiają przetestowanie, zweryfikowanie i dostosowanie wskazówek wraz z nami. Zachęcamy do współpracy z nami w celu utworzenia struktury wdrażania w chmurze dla platformy Azure.
+
+## <a name="march-27-2020"></a>27 marca 2020
+
+Dodaliśmy wskazówki dotyczące początkowych subskrypcji, które należy utworzyć po przyjęciu platformy Azure.
+
+### <a name="ready-updates"></a>Gotowe aktualizacje
+
+| Artykuł                                                                                                                 | Opis                                                                                                                                                                                |
+|-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Tworzenie początkowych subskrypcji platformy Azure](../ready/azure-best-practices/initial-subscriptions.md)                       | **Nowy artykuł:** Utwórz początkową subskrypcję produkcyjną i nieprodukcyjną i zdecyduj, czy chcesz utworzyć subskrypcje piaskownicy, jak również subskrypcję zawierającą usługi udostępnione. |
+| [Tworzenie dodatkowych subskrypcji w celu skalowania środowiska platformy Azure](../ready/azure-best-practices/scale-subscriptions.md) | Dowiedz się więcej o przyczynach tworzenia dodatkowych subskrypcji, przenoszeniu zasobów między subskrypcjami oraz porady dotyczące tworzenia nowych subskrypcji.                                                   |
+| [Organizowanie wielu subskrypcji platformy Azure i zarządzanie nimi](../ready/azure-best-practices/organize-subscriptions.md)             | Utwórz hierarchię grup zarządzania, która pomoże organizować subskrypcje platformy Azure i zarządzać nimi.                                                                                         |
 
 ## <a name="march-20-2020"></a>20 marca 2020
 
@@ -28,9 +42,9 @@ Dodaliśmy wskazówki, które zawierają narzędzia, programy i zawartość skat
 
 | Artykuł                                                                                     | Opis                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Projektowanie i wdrażanie aplikacji](../innovate/kubernetes/application-development.md) | **Nowy artykuł** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące planowania tworzenia aplikacji, konfigurowania potoków DevOps oraz implementowania inżynierów niezawodności witryny dla Kubernetes. |
-| [Projektowanie i operacje klastra](../innovate/kubernetes/cluster-design-operations.md) | **Nowy artykuł** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące konfiguracji klastra, projektowania sieci, skalowalności w przyszłości, ciągłości działania i odzyskiwania po awarii dla Kubernetes. |
-| [Zabezpieczenia klastra i aplikacji](../innovate/kubernetes/cluster-application-security.md) | **Nowy artykuł** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące planowania, produkcji i skalowania zabezpieczeń Kubernetes. |
+| [Projektowanie i wdrażanie aplikacji](../innovate/kubernetes/application-development.md) | **Nowy artykuł:** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące planowania tworzenia aplikacji, konfigurowania potoków DevOps oraz implementowania inżynierów niezawodności witryny dla Kubernetes. |
+| [Projektowanie i operacje klastra](../innovate/kubernetes/cluster-design-operations.md) | **Nowy artykuł:** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące konfiguracji klastra, projektowania sieci, skalowalności w przyszłości, ciągłości działania i odzyskiwania po awarii dla Kubernetes. |
+| [Zabezpieczenia klastra i aplikacji](../innovate/kubernetes/cluster-application-security.md) | **Nowy artykuł:** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące planowania, produkcji i skalowania zabezpieczeń Kubernetes. |
 
 ## <a name="march-2-2020"></a>2 marca 2020
 
@@ -41,7 +55,7 @@ W odpowiedzi na opinie o ciągłości migracji przy użyciu wielu sekcji środow
 | Artykuł                                                                       | Opis                                                                                                                                    |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Równoważenie portfela](../strategy/balance-the-portfolio.md)                 | Przeniesiono ten artykuł, aby pojawił się wcześniej w metodologii strategii. Dzięki temu można uwidocznić proces myśli wcześniej w cyklu życia. |
-| [Równoważenie&nbsp;konkurencyjnych priorytetów&nbsp;](../strategy/balance-competing-priorities.md) | **Nowy artykuł**: zawiera opis bilansu priorytetów w ramach metodologii w celu poinformowania o strategii.                                         |
+| [Równoważenie&nbsp;konkurencyjnych priorytetów&nbsp;](../strategy/balance-competing-priorities.md) | **Nowy artykuł:** Przedstawia balans priorytetów w ramach metodologii, aby pomóc w poinformowaniu strategii.                                         |
 
 ### <a name="plan-updates"></a>Planowanie aktualizacji
 
@@ -53,8 +67,8 @@ W odpowiedzi na opinie o ciągłości migracji przy użyciu wielu sekcji środow
 
 | Artykuł                                                                   | Opis                                                                                                              |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [Co&nbsp;jest&nbsp;&nbsp;ego&nbsp;strefy docelowej?](../ready/landing-zone/index.md)                 | **Nowy artykuł**: określa termin strefy docelowej.                                                                          |
-| [Pierwsza strefa docelowa](../ready/landing-zone/first-landing-zone.md)         | **Nowy artykuł**: rozwija się, porównując różne strefy wyładunkowe.                                                     |
+| [Co&nbsp;jest&nbsp;&nbsp;ego&nbsp;strefy docelowej?](../ready/landing-zone/index.md)                 | **Nowy artykuł:** Definiuje termin strefy docelowej.                                                                          |
+| [Pierwsza strefa docelowa](../ready/landing-zone/first-landing-zone.md)         | **Nowy artykuł:** Rozwija w porównaniu z różnymi strefami wyładunkowymi.                                                     |
 | [Migrowanie strefy wyładunkowej](../ready/landing-zone/migrate-landing-zone.md)     | Oddzielona definicja planu wdrożenia chmury z wyboru pierwszej strefy docelowej.         |
 | [Strefa docelowa Terraform](../ready/landing-zone/terraform-landing-zone.md) | Przeniesiono do nowej sekcji "strefa docelowa" przygotowanej metodologii, aby podwyższyć poziom Terraform w konwersacji strefy docelowej. |
 
@@ -64,8 +78,10 @@ W odpowiedzi na opinie o ciągłości migracji przy użyciu wielu sekcji środow
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Omówienie](../migrate/azure-migration-guide/index.md)                                            | Zaktualizowano o wyraźniejszy opis przewodnika i mniejszą liczbę kroków.                                                                                                        |
 | [Szacowaniu](../migrate/azure-migration-guide/assess.md)                                             | Dodano sekcję "trudne założenia", aby zademonstrować, jak ten poziom oceny współdziała z podejściem do oceny przyrostowej wymienionym w metodologii planu. |
-| [Klasyfikacja podczas oceniania procesów](../migrate/migration-considerations/assess/classify.md) | **Nowy artykuł**: zawiera opis znaczenia klasyfikowania wszystkich zasobów i obciążeń przed migracją.                                                                    |
+| [Klasyfikacja podczas oceniania procesów](../migrate/migration-considerations/assess/classify.md) | **Nowy artykuł:** Przedstawia znaczenie klasyfikowania wszystkich zasobów i obciążeń przed migracją.                                                                    |
 | [Migrate (Migracja)](../migrate/azure-migration-guide/migrate.md)                                           | Dodano odwołanie do UnifyCloud w opcjach narzędzi innych firm, w odpowiedzi na opinie w ramach konferencji warstwy 1.                                                         |
 | [Testowanie,&nbsp;Optymalizacja,&nbsp;i&nbsp;podwyższanie poziomu](../migrate/azure-migration-guide/optimize-and-transform.md)        | Wyrównuje tytuł tego artykułu z innymi sugestiami dotyczącymi ulepszeń procesów.                                                                                           |
 | [Przegląd oceny](../migrate/migration-considerations/assess/index.md)                           | Zaktualizowano w celu zilustrowania, że ocena w tej fazie koncentruje się na ocenie dopasowania technicznego określonego obciążenia i powiązanych zasobów.                               |
 | [Lista kontrolna dotycząca planowania](../migrate/migration-considerations/prerequisites/planning-checklist.md)    | Zaktualizowano w celu wyjaśnienia znaczenia wyrównania operacji podczas planowania działań związanych z migracją w celu zapewnienia dobrego zarządzania obciążeniem po migracji.                  |
+
+<!-- test:ignoreNextStep -->

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f82dc3d12aa325c3239060a904cc5d3111a056d4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1d0c6d30e7bba864fb52b14fb82e1e88231e9a3c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709315"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357044"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: objaśniono najlepsze rozwiązania
 
@@ -50,7 +50,7 @@ Zespół ds. zarządzania chmurą jest odpowiedzialny za następujące decyzje i
 
 ### <a name="subscription-design"></a>Projekt subskrypcji
 
-Decyzja dotycząca tego, w jaki sposób konstrukcja subskrypcji pozwala określić, jak subskrypcje platformy Azure mają być strukturalne i w jaki sposób grupy zarządzania platformy Azure będą używane do wydajnego zarządzania dostępem, zasadami i zgodnością z tą subskrypcją. W tym opisie zespół nadzoru określił Wzorzec projektowy [produkcji i](../../../decision-guides/subscriptions/index.md#production-and-nonproduction-pattern) nieprodukcyjnej subskrypcji.
+Decyzja dotycząca tego, w jaki sposób konstrukcja subskrypcji pozwala określić, jak subskrypcje platformy Azure mają być strukturalne i w jaki sposób grupy zarządzania platformy Azure będą używane do wydajnego zarządzania dostępem, zasadami i zgodnością z tą subskrypcją. W tych rozdziałach zespół nadzoru ustanowił subskrypcje dla wzorców produkcji i nieprodukcyjnej subskrypcji [produkcji](../../../ready/azure-best-practices/initial-subscriptions.md) i nieprodukcyjnych.
 
 - W przypadku bieżącego fokusu działy nie są wymagane. Wdrożenia powinny być ograniczone w ramach pojedynczej jednostki rozliczeniowej. Na etapie przyjmowania nie można nawet mieć umowy Enterprise Agreement umożliwiającej scentralizowane rozliczanie. Jest to możliwe, że ten poziom wdrożenia jest zarządzany przez pojedynczą subskrypcję platformy Azure z opcją płatność zgodnie z rzeczywistym użyciem.
 - Bez względu na użycie portalu EA lub istnienie umowy Enterprise Agreement, model subskrypcji powinien nadal być zdefiniowany i uzgodniony, aby zminimalizować przekroczenie kosztów administracyjnych.

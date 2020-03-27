@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d02dfda3b44155b7208e9caf00e979553fe97ff3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 3b91a6beaa04a74b03282394da7c8c3ab26587cb
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093552"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354860"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planowanie wdrażania chmury
 
@@ -36,9 +36,9 @@ W tej serii artykułów omówiono każdy krok tłumaczenia strategii i wysiłku 
 
 1. **Wymagania wstępne:** Przed utworzeniem planu upewnij się, że zostały ukończone wszystkie kroki wymagane wstępnie.
 2. **Definiuj i ustalaj priorytety obciążeń:** Ustaw priorytety pierwszych 10 obciążeń, aby ustalić początkową zaległość wdrażania.
-3. **Wyrównaj elementy zawartości:** Określ, które zasoby (proponowane lub istniejące) są wymagane do obsługi obciążeń z priorytetyzacją.
-4. Zapoznaj się z **racjonalizacją:** Przejrzyj decyzje dotyczące racjonalizacji, aby uściślić decyzje dotyczące wdrożenia: Migruj lub innowacje.
-5. **Definiowanie iteracji i wydań:** *iteracje* to bloki czasu przydzielono do pracy. *Wersje* są definicją pracy, która ma zostać wykonana przed zainicjowaniem zmiany w procesach produkcyjnych.
+3. **Wyrównaj zasoby do obciążeń:** Określ, które zasoby (proponowane lub istniejące) są wymagane do obsługi obciążeń z priorytetyzacją.
+4. **Przejrzyj decyzje dotyczące racjonalizacji:** Przejrzyj decyzje dotyczące racjonalizacji, aby uściślić decyzje dotyczące wdrożenia: Migruj lub innowacje.
+5. **Ustanów iteracje i plany wydań:** *iteracje* to bloki czasu przydzielono do pracy. *Wersje* są definicją pracy, która ma zostać wykonana przed zainicjowaniem zmiany w procesach produkcyjnych.
 6. **Szacowanie osi czasu:** Ustanów przybliżone osie czasu na potrzeby planowania wydań na podstawie początkowych oszacowań.
 
 ## <a name="next-steps"></a>Następne kroki

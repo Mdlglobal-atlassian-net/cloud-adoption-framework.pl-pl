@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 36a12a676a9bb48584c9914f93642b1ccbcad406
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 28cc70af615aa8df17ad7b4047f23b0df324b2db
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311629"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356279"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -37,7 +37,7 @@ Zespół ds. chmury firmy Contoso ustalił cele migracji do usług Azure DevOps 
 - Migracja ma obejmować dane elementów roboczych i historię z ostatniego roku.
 - Zespół nie chce konfigurować nowych nazw użytkowników i haseł. Wszystkie bieżące przypisania systemowe muszą być zachowane.
 - Zespół chce zastąpić kontrolę wersji serwera Team Foundation (TFVC) kontrolą źródła w usłudze Git.
-- Przejście do usługi Git będzie "migracją Tip", która importuje tylko najnowszą wersję kodu źródłowego. Zostanie przeprowadzona podczas przestoju, gdy cała praca zostanie wstrzymana na czas przenoszenia bazy kodu. Zespół ma świadomość, że po migracji będzie dostępna tylko aktualna historia gałęzi master.
+- Przejście do usługi Git będzie "migracją Tip", która importuje tylko najnowszą wersję kodu źródłowego. Nastąpi to podczas przestoju, gdy cała służbowa zostanie zatrzymana w miarę przesuwania kodu. Zespół ma świadomość, że po migracji będzie dostępna tylko aktualna historia gałęzi master.
 - Zespół ma pewne obawy odnośnie do tej zmiany i chce przeprowadzić test przed wykonaniem pełnej migracji. Chce zachować dostęp do serwera TFS również po migracji do usług Azure DevOps Services.
 - Zespół ma kilka kolekcji i chce zacząć od jednej, zawierającej tylko kilka projektów, aby lepiej poznać cały proces.
 - Zespół ma świadomość, że kolekcje serwera TFS mają relację jeden-do-jednego z organizacjami usług Azure DevOps Services, a więc będą mieć wiele adresów URL. Jednak jest to zgodne z aktualnym modelem rozdzielenia baz kodu i projektów.

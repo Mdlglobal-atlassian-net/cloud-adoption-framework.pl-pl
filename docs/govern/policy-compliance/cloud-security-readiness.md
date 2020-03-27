@@ -7,13 +7,15 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: ec888ba0c21187e71e825ff24aaadf068dc2a191
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: dc82f4d8ad21bcbb9d36b00fbdad1f91d6d4ec2c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709417"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356946"
 ---
+<!-- cSpell:ignore CISO -->
+
 # <a name="ciso-cloud-readiness-guide"></a>Przewodnik po gotowości w chmurze CISO
 
 Wskazówki firmy Microsoft, takie jak struktura wdrażania chmury, nie są umieszczane w celu ustalenia lub zaplanowania unikatowych ograniczeń zabezpieczeń tysięcy przedsiębiorstw obsługiwanych przez tę dokumentację. Podczas przejścia do chmury rola dyrektora ds. zabezpieczeń informacji lub dyrektora ds. bezpieczeństwa informacji (CISO) nie jest supplanted przez technologie chmurowe. Całkiem inaczej, CISO i Biuro CISO stają się bardziej engrained i zintegrowane. W tym przewodniku przyjęto założenie, że czytelnik jest zaznajomiony z procesami CISO i dąży do modernizacji tych procesów, aby umożliwić transformację chmury.

@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: ce9ce90d429064eeb8e848fd203aec11d042e539
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312686"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354526"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach
 
@@ -24,7 +24,7 @@ ms.locfileid: "79312686"
 
 Kontrola kosztów, podobnie jak ład i inne konstrukcje zarządzania, zależy od dobrze zarządzanego środowiska. Ustanowienie takiego środowiska (szczególnie złożonego) wymaga spójnych procesów w klasyfikacji i organizacji wszystkich zasobów.
 
-Zasoby obejmują wszystkie maszyny wirtualne, źródła danych i aplikacje wdrożone w chmurze. Platforma Azure oferuje kilka mechanizmów klasyfikowania i organizowania zasobów. W temacie [Scaling with multiple Azure subscriptions](../azure-best-practices/scaling-subscriptions.md) (Skalowanie za pomocą wielu subskrypcji platformy Azure) przedstawiono szczegółowe informacje dotyczące opcji organizowania zasobów według wielu kryteriów, aby ustanowić dobrze zarządzane środowisko. Ten artykuł koncentruje się na zastosowaniu podstawowych koncepcji platformy Azure w celu zapewnienia widoczności kosztów chmury.
+Zasoby obejmują wszystkie maszyny wirtualne, źródła danych i aplikacje wdrożone w chmurze. Platforma Azure oferuje kilka mechanizmów klasyfikowania i organizowania zasobów. [Organizuj i Zarządzaj opcjami szczegółów subskrypcji platformy Azure](../azure-best-practices/organize-subscriptions.md) w celu organizowania zasobów na podstawie wielu kryteriów w celu ustanowienia dobrze zarządzanego środowiska. Ten artykuł koncentruje się na zastosowaniu podstawowych koncepcji platformy Azure w celu zapewnienia widoczności kosztów chmury.
 
 ### <a name="classification"></a>Klasyfikacja
 
@@ -58,15 +58,16 @@ Na diagramie przedstawiono najlepsze rozwiązania oprócz następujących opcji:
 
 W pozostałej części tego artykułu przyjęto, że użyto najlepszego rozwiązania na diagramie powyżej. Jednak artykuły poniżej mogą pomóc w zastosowaniu tego rozwiązania do organizacji zasobów, która najlepiej pasuje do Twojej firmy:
 
-- [Scaling with multiple Azure subscriptions](../azure-best-practices/scaling-subscriptions.md) (Skalowanie za pomocą wielu subskrypcji platformy Azure)
-- [Deploying a Governance MVP to govern well-managed environment standards](../../govern/guides/complex/index.md) (Wdrażanie ładu programu MVP w celu nadzorowania standardów dobrze zarządzanego środowiska)
+- [Skalowanie środowiska platformy Azure przy użyciu wielu subskrypcji](../azure-best-practices/scale-subscriptions.md)
+- [Organizowanie subskrypcji platformy Azure i zarządzanie nimi](../azure-best-practices/organize-subscriptions.md))
+- [Wdrażanie programu ładu MVP w celu zarządzania dobrze zarządzanymi standardami środowiskowymi](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Zapewnienie odpowiedniego poziomu dostępu do kosztów
 
 Zarządzanie kosztami to wysiłek zespołowy. W sekcji dotyczącej gotowości organizacji struktury Cloud Adoption Framework określono niewielką liczbę głównych zespołów oraz opisano, jak te zespoły wspierają nakłady pracy związane z wdrażaniem chmury. W tym artykule poszerzono definicje zespołów, aby określić zakres i role, które mają zostać przypisane do członków poszczególnych zespołów w celu uzyskania odpowiedniego poziomu widoczności danych dotyczących zarządzania kosztami.
 
-- *Role* określają, co użytkownik może zrobić z różnymi zasobami.
-- *Zakres* określa, w przypadku których zasobów użytkownik może podjąć te działania (użytkownik, grupa, jednostka usługi lub tożsamość zarządzana).
+- **Role** określają, co użytkownik może zrobić z różnymi zasobami.
+- **Zakres** określa, w przypadku których zasobów użytkownik może podjąć te działania (użytkownik, grupa, jednostka usługi lub tożsamość zarządzana).
 
 Najlepszym rozwiązaniem jest zaproponowanie modelu z najmniejszymi uprawnieniami podczas przypisywania osób do różnych ról i zakresów.
 

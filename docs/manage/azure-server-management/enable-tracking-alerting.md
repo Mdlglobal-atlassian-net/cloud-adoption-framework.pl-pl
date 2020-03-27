@@ -7,13 +7,15 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 124f8943b7014f7f9fffeb39d464f3ad28e85816
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 9fe6cd29e6bff2ea9d969c715aec65d608f0b23e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341712"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356419"
 ---
+<!-- cSpell:ignore HKEY kusto -->
+
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Włącz śledzenie i alerty dla zmian krytycznych
 
 Usługa Azure Change Tracking i spis zapewniają alerty dotyczące stanu konfiguracji środowiska hybrydowego i zmian w tym środowisku. Może zgłosić krytyczne zmiany plików, usług, oprogramowania i rejestru, które mogą mieć wpływ na wdrożone serwery.

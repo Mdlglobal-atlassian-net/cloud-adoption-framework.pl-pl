@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f092bb99cb16a6dd3c79c04d29fa7aac318c913f
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 0805868195912807c50a49d781928865f2f82ca9
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092795"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355218"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Korygowanie zasobów przed migracją
 
@@ -36,7 +36,7 @@ W każdym środowisku firmowym istnieje dług techniczny. Częściowo jest on oc
 
 Gdy centrum danych jest prawidłowo obsługiwane i aktualizowane, a jego poprawki są wprowadzane w odpowiedni sposób, prawdopodobnie potrzeba korygowania będzie mała. Rozbudowane środowiska z możliwością korygowania są często używane w dużych przedsiębiorstwach, organizacjach, w których przeprowadzono operację zmniejszenia dużego działu IT, niektórych starszych środowiskach usług zarządzanych i środowiskach z możliwością nabywania. W każdym z tych typów środowisk korygowanie może zużywać znaczną część pracy związanej z migracją. Kiedy poniższe zadania korygujące są często wykonywane i mają negatywny wpływ na szybkość migracji lub spójność, warto rozważyć przeniesienie korygowania do równoległego nakładu pracy i zespołu (podobnie jak wdrażanie chmury i zarządzanie chmurą działają równolegle).
 
-- **Częste uaktualnienia hosta.** Jeśli do zakończenia migracji obciążenia jest wymagana duża liczba hostów, prawdopodobnie wystąpią obciążenia pracy zespołu ds. migracji. Dobrym rozwiązaniem może być podzielenie aplikacji i rozwiązanie problemów z korygowaniem przed uwzględnieniem odpowiednich w planowanych wydaniach.
+- **Częste uaktualnienia hosta.** Jeśli do zakończenia migracji obciążenia jest wymagana duża liczba hostów, prawdopodobnie wystąpią obciążenia pracy zespołu ds. migracji. Może być konieczne przerwanie działania aplikacji i rozwiązywanie problemów związanych z korygowaniem przed uwzględnieniem odpowiednich aplikacji w jakichkolwiek planowanych wersjach.
 - **Częste uaktualnienia systemu operacyjnego gościa.** Duże przedsiębiorstwa często mają serwery z nieaktualnymi wersjami systemu Linux lub Windows. Oprócz oczywistych zagrożeń bezpieczeństwa związanych z nieaktualnym systemem operacyjnym, występują również problemy z niezgodnością, które uniemożliwiają migrowanie uwzględnionych obciążeń. Jeśli duża liczba maszyn wirtualnych wymaga korygowania systemu operacyjnego, warto podzielić te działania na iterację równoległą.
 - **Znaczące zmiany kodu.** Starsze aplikacje niestandardowe mogą wymagać znacznie większej liczby modyfikacji w celu przygotowania ich do wdrożenia usługi PaaS. W takim przypadku może być konieczne usunięcie ich z listy prac migracji w całości i zarządzanie nimi w całkowicie osobnym programie.
 

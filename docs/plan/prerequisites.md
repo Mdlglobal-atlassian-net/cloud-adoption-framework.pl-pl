@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f229515b39c69fa0e9e6c840810720bca4e12dc6
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: f1c35b41f267887c62b2568583b929657517c87e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342052"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354855"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Wymagania wstępne dotyczące efektywnego planu wdrażania chmury
 
@@ -40,7 +40,7 @@ Pytania te mają kluczowe znaczenie dla dokładności planu wdrożenia chmury. A
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gdy zespół będzie mieć doświadczenie z strategicznymi danymi wejściowymi i wejściami do racjonalizacji dotyczącej elementów cyfrowych, można rozpocząć następny krok [priorytetyzacji obciążeń](./workloads.md) .
+[Wdróż szablon planu wdrażania chmury](./template.md) w usłudze Azure DevOps.
 
 > [!div class="nextstepaction"]
-> [Określanie priorytetów i Definiowanie obciążeń](./workloads.md)
+> [Wdrażanie szablonu w usłudze Azure DevOps](./template.md)

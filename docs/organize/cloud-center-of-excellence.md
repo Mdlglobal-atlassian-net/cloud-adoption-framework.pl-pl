@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ab3ff18d25d8a4e6ee9403236d101f98a9a6dd04
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: cfd554aaa2252e9a7569fd2a56af05c3c40e8163
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092667"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355046"
 ---
+<!-- cSpell:ignore ccoe deprioritize -->
+
 # <a name="cloud-center-of-excellence"></a>Centrum doskonałości chmury
 
 Elastyczność biznesowa i techniczna to podstawowe cele większości organizacji IT. Centrum w chmurze doskonałości (CCoE) to funkcja, która tworzy równowagę między szybkością i stabilnością.
@@ -59,7 +61,7 @@ CCoE jest funkcją podaną przez cztery zespoły o dużej zapotrzebowaniu. Ważn
 
 ## <a name="solutions-and-controls"></a>Rozwiązania i kontrolki
 
-Każdy element członkowski CCoE jest związany z zrozumieniem niezbędnych ograniczeń, ryzyka i ochrony, które doprowadziły do bieżącego zestawu formantów IT. Zbiorowe wysiłki CCoE powinny mieć na celu uwzględnienie rozwiązań w chmurze (lub hybrydowych), które umożliwiają odpowiednie wyniki biznesowe samoobsługi. W miarę tworzenia rozwiązań są one udostępniane różnym zespołom w formie formantów lub automatyzacji, które służą jako guardrails do różnych wysiłków. Te guardrails pomoc w kierowaniu działań związanych z przepływem pracy różnych zespołów i delegowanie obowiązków do uczestników w różnych procesach migracji lub innowacji.
+Każdy element członkowski CCoE jest związany z zrozumieniem niezbędnych ograniczeń, ryzyka i ochrony, które doprowadziły do bieżącego zestawu formantów IT. Zbiorowe wysiłki CCoE powinny mieć na celu uwzględnienie rozwiązań w chmurze (lub hybrydowych), które umożliwiają odpowiednie wyniki biznesowe samoobsługi. W miarę tworzenia rozwiązań są one udostępniane różnym zespołom w formie formantów lub zautomatyzowanych procesów, które służą jako guardrails do różnych wysiłków. Te guardrails pomoc w kierowaniu działań związanych z przepływem pracy różnych zespołów i delegowanie obowiązków do uczestników w różnych procesach migracji lub innowacji.
 
 Przykłady tego przejścia:
 

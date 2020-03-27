@@ -7,13 +7,15 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 9390ca37087f463ae547d97caaedbf8376ee2f7b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171416"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356846"
 ---
+<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
+
 # <a name="mainframe-application-migration"></a>Migracja aplikacji komputerów mainframe
 
 W przypadku migrowania aplikacji ze środowisk mainframe na platformę Azure większość zespołów korzysta z podejścia typu Pragmatic: należy ponownie użyć wszędzie tam, gdzie to możliwe, a następnie rozpocząć wdrożenie etapowe, w przypadku których aplikacje są podpisywane lub zastępowane.
@@ -30,7 +32,7 @@ Migracja aplikacji zwykle obejmuje co najmniej jedną z następujących strategi
 
 - **Zamień:** Takie podejście zastępuje funkcję mainframe z równoważnymi funkcjami w chmurze. Oprogramowanie jako usługa (SaaS) to jedna z opcji, która korzysta z rozwiązania utworzonego w ramach problemu dla przedsiębiorstw, takiego jak finanse, zasoby ludzkie, produkcja i planowanie zasobów przedsiębiorstwa. Ponadto dostępne są wiele aplikacji specyficznych dla branży, które rozwiązują problemy, które są używane do rozwiązywania niestandardowych rozwiązań typu mainframe.
 
-Należy rozważyć rozpoczęcie od planowania obciążeń, które mają być początkowo migrowane, a następnie określić te wymagania dotyczące przenoszenie skojarzonych aplikacji, starszych baz kodu i bazy danych.
+Należy rozważyć rozpoczęcie od planowania obciążeń, które mają być początkowo migrowane, a następnie określić te wymagania dotyczące przenoszenie skojarzonych aplikacji, starszych baz kodu i baz danych.
 
 ## <a name="mainframe-emulation-in-azure"></a>Emulacja mainframe na platformie Azure
 
@@ -76,7 +78,7 @@ Operacje wsadowe na platformie Azure różnią się od typowego środowiska wsad
 
 Aby zoptymalizować wydajność przetwarzania wsadowego przy użyciu platformy Azure, należy rozważyć opcje [obliczeń](https://docs.microsoft.com/azure/virtual-machines/windows/overview), [magazynu](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction), [sieci](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)i [monitorowania](https://docs.microsoft.com/azure/azure-monitor/overview) w następujący sposób.
 
-### <a name="compute"></a>Wystąpienia obliczeniowe
+### <a name="compute"></a>Compute
 
 Używanych
 
@@ -88,7 +90,7 @@ Używanych
 
 - Przetwarzanie równoległe, jak platforma Azure umożliwia łatwe skalowanie do przetwarzania równoległego, zapewniając większą moc obliczeniową dla uruchomienia partii.
 
-### <a name="storage"></a>Magazyn
+### <a name="storage"></a>Storage
 
 Używanych
 
@@ -98,7 +100,7 @@ Używanych
 
 - Partycjonowanie magazynu w celu rozłożenia operacji we/wy na wiele urządzeń magazynujących platformy Azure.
 
-### <a name="networking"></a>Networking
+### <a name="networking"></a>Sieć
 
 - Używaj [przyspieszonej sieci platformy Azure](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell) , aby zminimalizować opóźnienia.
 
@@ -176,7 +178,7 @@ System Azure zapewnia sprawdzoną, wysoką dostępność i skalowalną infrastru
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-Aby uzyskać więcej informacji, zobacz następujące zasoby:
+Więcej informacji zawierają następujące zasoby:
 
 - [Rozpoczynanie pracy z platformą Azure](https://docs.microsoft.com/azure)
 

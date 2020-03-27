@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: c6f48ae433746906d64023bd72f34c21a3163373
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bb74e869b2fab2142a8c0ffd8c7396268e2231ed
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091282"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356308"
 ---
+<!-- cSpell:ignore kusto multiresource multisignal -->
+
 # <a name="cloud-monitoring-guide-alerting"></a>Przewodnik po monitorowaniu w chmurze: alerty
 
 W latach organizacje IT miały problemy z zwalczaniem zmęczenia alertów utworzonego przez narzędzia do monitorowania wdrożone w przedsiębiorstwie. Wiele systemów generuje dużą liczbę alertów często uważanych za bezużyteczne, podczas gdy inne alerty są istotne, ale są lub ignorowane. W związku z tym, działania IT i dla deweloperów zostały niezmienione w celu zaspokojenia jakości poziomu usług wykorzystanej dla klientów wewnętrznych lub zewnętrznych. Aby zapewnić niezawodność, konieczna jest znajomość stanu infrastruktury i aplikacji. Aby zminimalizować spadek wydajności i przerwy w działaniu usługi lub zmniejszyć liczbę incydentów, należy szybko zidentyfikować przyczyny.

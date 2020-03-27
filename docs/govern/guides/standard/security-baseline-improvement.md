@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e9dbaf3bb92893e4eb737964da3f1b0c3a056ad
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: f34938fc6690949d017ee538c444a4ccef389aef
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707717"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357033"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: ulepszanie dyscypliny linii bazowej zabezpieczeń
 
@@ -37,7 +37,7 @@ Od tej pory zmieniono pewne zmiany, które wpłyną na nadzór:
 
 - Zespół programistyczny aplikacji wdrożył potok ciągłej integracji/ciągłego wdrażania, aby wdrożyć aplikację natywną w chmurze przy użyciu ulepszonego środowiska użytkownika. Ta aplikacja nie współdziała jeszcze z chronionymi danymi, więc nie jest gotowa do produkcji.
 - Zespół ds. analizy biznesowej aktywnie nadzoruje dane w chmurze z poziomu logistyki, spisu i źródeł innych firm. Te dane są używane do kierowania nowych prognoz, które mogą kształtować procesy biznesowe. Jednak te przewidywania i szczegółowe informacje nie są funkcjonalne, dopóki dane klienta i finansowe nie będą mogły zostać zintegrowane z platformą danych.
-- Zespół IT postępuje zgodnie z planami CIO i dyrektora finansowego w celu wycofania centrum danych firmy DR. Ponad 1 000 zasobów 2 000 w centrum danych odzyskiwania po awarii zostało wycofane lub zmigrowane.
+- Zespół IT postępuje zgodnie z planami CIO i DYREKTORów, aby wycofać centrum danych DR. Ponad 1 000 zasobów 2 000 w centrum danych odzyskiwania po awarii zostało wycofane lub zmigrowane.
 - Ustalone przez siebie zasady dotyczące danych osobowych i danych finansowych zostały zmodernizowane. Jednak nowe zasady firmowe są zależne od implementacji związanych z nimi zasad zabezpieczeń i zarządzania. Zespoły nadal są wstrzymane.
 
 ### <a name="incrementally-improve-the-future-state"></a>Przyrostowe ulepszanie stanu w przyszłości

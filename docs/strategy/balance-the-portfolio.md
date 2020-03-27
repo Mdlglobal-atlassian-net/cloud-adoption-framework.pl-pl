@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: bb278c284a0f72a530eb4b84ecd3137b997933ac
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: fc0c52932b15a0987f78e853c3b3756d27629ae0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508359"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353472"
 ---
 <!-- cSpell:ignore CSAT -->
 
@@ -105,3 +105,10 @@ Te różnorodne wysiłki należy podzielić na segmenty w dwóch lub większej l
 **Niewielka Refaktoryzacja:** Niektóre aplikacje można nowoczesny z niewielkim refaktoryzacją na poziomie danych lub aplikacji. Ta praca wymaga, aby członkowie zespołu wdrażali dane na platformach danych opartych na chmurze lub wprowadzali niewielkie zmiany konfiguracji w aplikacjach. Może to wymagać ograniczonego wsparcia ekspertów zajmujących się danymi lub rozwojem aplikacji. Jednak ta praca jest podobna do pracy wykonywanej przez realizatorów IT podczas wdrażania aplikacji innych firm. Pracę tę można łatwo dopasować do zespołu ds. migracji do chmury lub zespołu strategicznego ds. chmury. Chociaż ten nakład pracy nie zbliża się do szybkości migracji polegającej na ponownym hostowaniu, jego wykonanie zajmuje mniej czasu niż nakład pracy na refaktoryzację.
 
 Podczas migracji należy podzielić wysiłki na trzy sposoby wymienione powyżej i wykonane przez odpowiedni zespół w odpowiedniej iteracji. Chociaż należy zróżnicować portfolio, należy również upewnić się, że wysiłki są bardzo skoncentrowane i segregowane.
+
+## <a name="next-steps"></a>Następne kroki
+
+Zapoznaj się ze sposobem, w jaki [globalne decyzje rynkowe](./global-markets.md) mogą wpłynąć na podróż transformację.
+
+> [!div class="nextstepaction"]
+> [Opis rynków globalnych](./global-markets.md)

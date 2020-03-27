@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 37bf2a4d96cc1f60b351f40f6a2c51c2ea1dcf95
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 83a5c356f5144700173fa4df593e313e44e3172f
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311646"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356362"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel vcenter WEBVM SQLVM -->
 
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Zmienianie architektury lokalnej aplikacji na korzystającą z kontenera platformy Azure i usługi Azure SQL Database
 
-W tym artykule pokazano, w jaki sposób fikcyjna firma Contoso zmienia architekturę dwuwarstwowej aplikacji platformy .NET w systemie Windows działającą na maszynach wirtualnych VMware w ramach migracji na platformę Azure. Firma Contoso migruje maszynę wirtualną frontonu aplikacji do kontenera systemu Windows na platformie Azure, a bazę danych aplikacji do bazy danych Azure SQL Database.
+W tym artykule przedstawiono sposób, w jaki fikcyjna firma Contoso reprojektuje dwuwarstwową aplikację systemu Windows .NET działającą na maszynach wirtualnych VMware w ramach migracji na platformę Azure. Firma Contoso migruje maszynę wirtualną frontonu aplikacji do kontenera systemu Windows na platformie Azure, a bazę danych aplikacji do bazy danych Azure SQL Database.
 
 Aplikacja SmartHotel360 używana w tym przykładzie jest oferowana jako aplikacja typu open source. Jeśli chcesz użyć jej do własnych celów testowych, możesz pobrać ją z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
 
@@ -290,7 +290,7 @@ Administratorzy firmy Contoso mogą teraz przeprowadzić migrację bazy danych S
 
 ### <a name="install-dma"></a>Instalowanie narzędzia DMA
 
-1. Pobierają oni narzędzie z [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53595) na lokalną maszynę wirtualną programu SQL Server (**SQLVM**).
+1. Pobierają narzędzie z [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53595) na lokalną maszynę wirtualną programu SQL Server (**SQLVM**).
 
 1. Uruchamiają instalatora (DownloadMigrationAssistant.msi) na maszynie wirtualnej.
 

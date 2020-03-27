@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 18b247665b8a371a9949ebaf838d3833a56067a3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 063fc4074a7b5972b6b2938abdcb90937412e832
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092495"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353548"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -66,7 +66,7 @@ Dodatkowe przykłady projektów z pierwszego wdrożenia obejmują:
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po rozpoczęciu pierwszego projektu wdrożenia w chmurze zespół ds. strategii chmury może przekształcić swoją uwagę w [Plan wdrażania w chmurze](../plan/index.md)o dłuższym okresie.
+Dowiedz się więcej na temat strategii [równoważenia konkurencyjnych priorytetów](./balance-competing-priorities.md).
 
 > [!div class="nextstepaction"]
-> [Kompilowanie planu wdrażania chmury](../plan/index.md)
+> [Zrównoważone priorytety konkurencji](./balance-competing-priorities.md)

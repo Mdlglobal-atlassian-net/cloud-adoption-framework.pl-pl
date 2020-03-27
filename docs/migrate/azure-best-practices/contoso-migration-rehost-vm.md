@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 7a8b70d43ef68137418f0c2cfc731871561844f0
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: a3874de7d2dc78edfcf9e483661748749856cc17
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311374"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355752"
 ---
+<!-- cSpell:ignore NSGs WEBVM SQLVM contosohost vcenter contosodc agentless -->
+
 # <a name="rehost-an-on-premises-app-on-azure-vms"></a>Ponowne hostowanie aplikacji lokalnej na maszynach wirtualnych platformy Azure
 
 W tym artykule pokazano, w jaki sposób fikcyjna firma Contoso ponownie hostuje dwuwarstwową aplikację frontonu .NET systemu Windows działającą na maszynach wirtualnych VMware, migrując maszyny wirtualne aplikacji na platformę Azure.
@@ -36,7 +38,7 @@ Zespół ds. chmury firmy Contoso ustalił cele tej migracji. Na podstawie tych 
 - Po migracji aplikacja na platformie Azure powinna mieć taką samą wydajność jak obecnie w środowisku VMware. Aplikacja działająca w chmurze będzie miała tak samo krytyczne znaczenie jak w środowisku lokalnym.
 - Firma Contoso nie chce inwestować w tę aplikację. Jest ona ważna dla działalności firmy, ale firma Contoso chce po prostu bezpiecznie przenieść ją do chmury w obecnej postaci.
 - Firma Contoso nie chce zmieniać modelu operacyjnego dla tej aplikacji. Firma chce korzystać z niej w chmurze w taki sam sposób, jak korzysta z niej teraz.
-- Firma Contoso nie chce zmieniać żadnych funkcji aplikacji. Zmieni się tylko jej lokalizacja.
+- Firma Contoso nie chce zmieniać żadnych funkcji aplikacji. Zmieni się tylko lokalizacja aplikacji.
 
 ## <a name="solution-design"></a>Projekt rozwiązania
 
@@ -45,7 +47,7 @@ Po określeniu celów i wymagań firma Contoso planuje i ocenia rozwiązanie do 
 ### <a name="current-app"></a>Bieżąca aplikacja
 
 - Aplikacja działa warstwowo na dwóch maszynach wirtualnych (**WEBVM** i **SQLVM**).
-- Maszyny wirtualne znajdują się na hoście VMware ESXi **contosohost1.contoso.com** (wersja 6.5).
+- Obie maszyny wirtualne znajdują się na hoście VMware ESXi **contosohost1.contoso.com** (wersja 6.5).
 - Środowisko VMware jest zarządzane przez program vCenter Server 6.5 (**vcenter.contoso.com**) uruchomiony na maszynie wirtualnej.
 - Firma Contoso ma lokalne centrum danych (contoso-datacenter) i lokalny kontroler domeny (**contosodc1**).
 
@@ -74,7 +76,7 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
 **Zagadnienie** | **Szczegóły**
 --- | ---
-**Zalety** | Obie maszyny wirtualne aplikacji zostaną przeniesione na platformę Azure bez zmian, co oznacza prostą migrację.<br/><br/> Ponieważ firma Contoso używa metody podnoszenia i przesunięcia dla maszyn wirtualnych aplikacji, nie jest wymagana specjalna konfiguracja ani narzędzia migracji dla bazy danych aplikacji.<br/><br/> Firma Contoso może skorzystać z inwestycji w program Software Assurance i użyć korzyści użycia hybrydowego platformy Azure.<br/><br/> Firma Contoso zachowa pełną kontrolę nad maszynami wirtualnymi aplikacji na platformie Azure.
+**Zalety** | Obie maszyny wirtualne aplikacji zostaną przeniesione na platformę Azure bez zmian, co oznacza prostą migrację.<br/><br/> Ponieważ firma Contoso używa metody podnoszenia i przesunięcia dla maszyn wirtualnych aplikacji, nie jest wymagana specjalna konfiguracja ani narzędzia migracji dla bazy danych aplikacji.<br/><br/> Firma Contoso może skorzystać z inwestycji w program Software Assurance i zastosować korzyść użycia hybrydowego platformy Azure.<br/><br/> Firma Contoso zachowa pełną kontrolę nad maszynami wirtualnymi aplikacji na platformie Azure.
 **Wady** | Na maszynach wirtualnych WEBVM i SQLVM działa system Windows Server 2008 R2. System operacyjny jest obsługiwany przez platformę Azure dla określonych ról (lipiec 2018). [Dowiedz się więcej](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines).<br/><br/> Warstwa internetowa i warstwa danych aplikacji wciąż będą stanowiły pojedynczy punkt awarii.<br/><br/> Maszyna wirtualna SQLVM działa na serwerze SQL Server 2008 R2, który nie jest objęty wsparciem podstawowym. Jest jednak obsługiwany w przypadku maszyn wirtualnych platformy Azure (lipiec 2018). [Dowiedz się więcej](https://support.microsoft.com/help/956893).<br/><br/> Firma Contoso nadal będzie musiała obsługiwać aplikację na maszynach wirtualnych na platformie Azure, zamiast przenieść ją do usługi zarządzanej, takiej jak Azure App Service czy Azure SQL Database.
 
 <!-- markdownlint-enable MD033 -->
@@ -269,7 +271,7 @@ Teraz firma Contoso musi wykonać następujące kroki dotyczące czyszczenia:
 - Usunąć maszynę SQLVM ze spisu programu vCenter.
 - Usunąć maszyny WEBVM i SQLVM z lokalnych zadań tworzenia kopii zapasowej.
 - Zaktualizować dokumentację wewnętrzną, aby była wyświetlana nowa lokalizacja i adresy IP maszyn wirtualnych.
-- Przejrzeć wszystkie zasoby korzystające z tych maszyn wirtualnych i zaktualizować wszelkie ustawienia lub dokumenty, aby odzwierciedlały nową konfigurację.
+- Przegląd wszystkich zasobów korzystających z tych maszyn wirtualnych i aktualizacja wszelkich ustawień lub dokumentów w celu uwzględnienia nowej konfiguracji.
 
 ## <a name="review-the-deployment"></a>Przegląd wdrożenia
 

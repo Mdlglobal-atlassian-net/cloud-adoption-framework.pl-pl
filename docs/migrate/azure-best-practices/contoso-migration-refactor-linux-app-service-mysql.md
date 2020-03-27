@@ -7,13 +7,15 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3a4ebcb2264ff863200071363b8369d8a76549d3
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 988d7524941b49821cd96546cc3adafe317dff8a
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311493"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356242"
 ---
+<!-- cSpell:ignore contosohost contosodc vcenter DBHOST DBUSER WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager CNAME -->
+
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Refaktoryzowanie aplikacji systemu Linux do wielu regionów za pomocą usług Azure App Service, Traffic Manager i Azure Database for MySQL
 
 W tym artykule pokazano, w jaki sposób fikcyjna firma Contoso refaktoryzuje dwuwarstwową aplikację PHP Apache MySQL opartą na systemie Linux (LAMP), która migruje ją ze środowiska lokalnego na platformę Azure przy użyciu integracji usług Azure App Service oraz GitHub i usługi Azure Database for MySQL.
@@ -44,7 +46,7 @@ Po określeniu swoich celów i wymagań firma Contoso planuje i ocenia rozwiąza
 ## <a name="current-architecture"></a>Bieżąca architektura
 
 - Ta aplikacja działa na dwóch maszynach wirtualnych (OSTICKETWEB i OSTICKETMYSQL).
-- Maszyny wirtualne znajdują się na hoście VMware ESXi **contosohost1.contoso.com** (wersja 6.5).
+- Obie maszyny wirtualne znajdują się na hoście VMware ESXi **contosohost1.contoso.com** (wersja 6.5).
 - Środowisko VMware jest zarządzane przez program vCenter Server 6.5 (**vcenter.contoso.com**) uruchomiony na maszynie wirtualnej.
 - Firma Contoso ma lokalne centrum danych (contoso-datacenter) i lokalny kontroler domeny (**contosodc1**).
 
@@ -72,7 +74,7 @@ Oto proponowana architektura:
 
 Firma Contoso przeprowadzi proces migracji w następujący sposób:
 
-1. W pierwszym kroku administratorzy firmy Contoso konfigurują infrastrukturę platformy Azure, w tym funkcje, takie jak aprowizowanie usługi Azure App Service, konfigurowanie usługi Traffic Manager i aprowizowanie wystąpienia usługi Azure Datbase for MySQL.
+1. Pierwszy krok polega na tym, że administratorzy contoso konfigurują infrastrukturę platformy Azure, w tym Azure App Service aprowizacji, konfigurowania Traffic Manager i aprowizacji wystąpienia Azure Database for MySQL.
 2. Po przygotowaniu platformy Azure migrują oni bazę danych za pomocą rozwiązania MySQL Workbench.
 3. Gdy baza danych będzie działać na platformie Azure, uruchomią oni prywatne repozytorium usługi GitHub na potrzeby usługi Azure App Service z ciągłym dostarczaniem i załadują je za pomocą aplikacji osTicket.
 4. W witrynie Azure Portal administratorzy załadują aplikację z usługi GitHub do kontenera Docker z usługą Azure App Service.
@@ -291,7 +293,7 @@ W ostatnim kroku procesu migracji administratorzy firmy Contoso konfigurują apl
 
     ![Konfigurowanie aplikacji](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app6.png)
 
-8. Konfigurują aplikacje internetowe **osticket-eus2** i **osticket-cus**, aby zezwalać na niestandardowe nazwy hostów.
+8. Konfigurują one zarówno aplikacje sieci Web **osTicket-eus2** , jak i **osTicket-CUS** , aby zezwalały na niestandardowe nazwy hostów.
 
     ![Konfigurowanie aplikacji](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app7.png)
 

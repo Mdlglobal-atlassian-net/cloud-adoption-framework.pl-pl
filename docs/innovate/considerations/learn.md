@@ -7,13 +7,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4166f55c3878266a06f1da4b907eaab5baa6e473
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: a7b717b9a8d4e81ac6dc644e51593d89e6fc3089
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312543"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356703"
 ---
+<!-- cSpell:ignore Satya Nadella Ries -->
+
 # <a name="learn-with-customers"></a>Uczenie się wraz z klientami
 
 Nasz bieżący klienci reprezentują nasze najlepsze zasoby na potrzeby uczenia się. Dzięki współdziałaniu z nami mogą oni pomóc nam w [tworzeniu empatię klienta](./build.md) , aby znaleźć najlepsze rozwiązanie do ich potrzeb. Ułatwiają one również tworzenie minimalnego, opłacalnego rozwiązania produktu (MVP) przez generowanie metryk, na podstawie których [mierzy wpływ na klientów](./measure.md). W tym artykule opisano sposób uczenia się klientów i naszych partnerów.

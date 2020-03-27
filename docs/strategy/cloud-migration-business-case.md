@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 2b255d85b8df33f712238d0457a0e78a5481801d
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: ebcc6d1a2ed45ad199c0b0da880d72d253f21c3e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225721"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354096"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Tworzenie uzasadnienia biznesowego migracji do chmury
 
@@ -68,7 +68,7 @@ Możemy rozpakować to równanie, aby uzyskać widok specyficzny dla migracji fo
 
 ## <a name="migration-specific-initial-investment"></a>Wstępne inwestycje specyficzne dla migracji
 
-- Dostawcy usług w chmurze, np. Kalkulatory oferty platformy Azure, aby oszacować inwestycje w chmurę. [Kalkulator cen platformy Azure](https://azure.com/calculator) to jeden przykład.
+- Dostawcy usług w chmurze, np. Kalkulatory oferty platformy Azure, aby oszacować inwestycje w chmurę. [Kalkulator cen platformy Azure](https://azure.microsoft.com/pricing/calculator) to jeden przykład.
 - Niektórzy dostawcy chmury udostępniają również Kalkulatory różnic kosztów. [Kalkulator całkowitego kosztu posiadania (TCO) na platformie Azure](https://azure.com/tco) to jeden przykład.
 - W przypadku bardziej dopracowanych struktur kosztów należy wziąć pod uwagę ćwiczenie [planowania cyfr cyfrowych](../digital-estate/index.md) .
 - Oszacuj koszt migracji.

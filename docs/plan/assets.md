@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: c7e90c1536b2911f8301b1a97f8731139976b4f1
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 7cefe7d64dbda13321b362f298c1ac45aa99ebcc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342069"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354929"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>Dopasuj zasoby do obciążeń z priorytetyzacją
 
-Obciążenie to koncepcyjny opis kolekcji elementów zawartości: maszyn wirtualnych, aplikacji i źródeł danych. W poprzednim artykule, [określanie priorytetów i Definiowanie obciążeń](./workloads.md), wydała wskazówki dotyczące zbierania danych, które definiują obciążenie. Przed migracją niektóre dane wejściowe techniczne z tej listy wymagają dodatkowej weryfikacji. Ten artykuł pomaga w sprawdzeniu poprawności następujących danych wejściowych:
+Obciążenie to koncepcyjny opis kolekcji elementów zawartości: maszyn wirtualnych, aplikacji i źródeł danych. W poprzednim artykule [Zdefiniuj i nadaj priorytetom](./workloads.md)wskazówki dotyczące zbierania danych, które definiują obciążenie. Przed migracją niektóre dane wejściowe techniczne z tej listy wymagają dodatkowej weryfikacji. Ten artykuł pomaga w sprawdzeniu poprawności następujących danych wejściowych:
 
 - **Aplikacje:** Wyświetl listę wszystkich aplikacji uwzględnionych w tym obciążeniu.
 - **Maszyny wirtualne i serwery:** Wyświetl listę wszystkich maszyn wirtualnych lub serwerów uwzględnionych w obciążeniu.

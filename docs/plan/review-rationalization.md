@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e38616b97f5026bd66de510cac12932290e276ba
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: aa544540c0bebb001f9256527a5f0ba388801c3c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093268"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354807"
 ---
 # <a name="review-rationalization-decisions"></a>Przegląd decyzji dotyczących racjonalizacji
 
@@ -68,7 +68,7 @@ W przypadku dużych, złożonych planów wdrażania z wieloma różnymi projekta
 
 ## <a name="next-steps"></a>Następne kroki
 
-[Zdefiniuj iteracje i wydania,](./iteration-paths.md) aby rozpocząć planowanie pracy.
+[Ustanów iteracje i plany wydań,](./iteration-paths.md) aby rozpocząć planowanie pracy.
 
 > [!div class="nextstepaction"]
-> [Zdefiniuj iteracje i wydania,](./iteration-paths.md) aby rozpocząć planowanie pracy.
+> [Ustanów iteracje i plany wydań,](./iteration-paths.md) aby rozpocząć planowanie pracy.

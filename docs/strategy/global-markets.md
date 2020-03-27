@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 267408d4634bbed9c6bb9c8884e2af395f5df4d9
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: e2e0399f227f69ef1ae27b6b23a847a6508650d4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337835"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353491"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,8 +42,7 @@ Równie ważne jest zrozumienie wzorców użytkowania użytkowników zewnętrzny
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po dokonaniu i przeprowadzeniu decyzji na rynku globalnym zespół jest gotowy do rozpoczęcia [ustanawiania standardów technicznych](../digital-estate/index.md) względem tych metryk.
-Wynikiem będzie [zaległości transformacji lub zaległości migracji](..//migrate/migration-considerations/prerequisites/technical-complexity.md).
+Dowiedz się więcej o [umiejętnościach potrzebnych podczas fazy strategii](./suggested-skills.md) przejazdu w chmurze.
 
 > [!div class="nextstepaction"]
-> [Ocenianie cyfrowego podpisywania](../digital-estate/index.md)
+> [Kwalifikacje związane z strategią](./suggested-skills.md)

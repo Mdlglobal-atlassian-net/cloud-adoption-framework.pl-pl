@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7c2cfcc76153e999b2ca9d50b63cf0a72cfb2c14
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cb514ea2395deef91e6eca802de630ad77926823
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706918"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357103"
 ---
+<!-- cSpell:ignore CDO's CIO's -->
+
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: Opis pomocniczy
 
 Poniższe opisy stanowią przypadek użycia dla ładu, [podczas gdy złożona jest przepodróż w chmurze złożonego przedsiębiorstwa](./index.md). Przed przystąpieniem do zaleceń w przewodniku należy zrozumieć założenia i przyczynę, które są odzwierciedlone w tym opisie. Następnie można lepiej dostosować strategię ładu do swojej organizacji.

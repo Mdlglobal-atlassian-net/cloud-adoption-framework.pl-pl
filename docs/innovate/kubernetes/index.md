@@ -9,13 +9,15 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 64997ab729de5edf165362d205f9ef32bd5b7a44
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: faa2bb6829cb54b430991acb17f79b48f5384af4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226481"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356533"
 ---
+<!-- cSpell:ignore asabbour sabbour -->
+
 # <a name="kubernetes-in-the-cloud-adoption-framework"></a>Platforma Kubernetes w przewodniku Cloud Adoption Framework
 
 Przejrzyj opracowaną strukturę, która obejmuje narzędzia, programy i zawartość (najlepsze rozwiązania, szablony konfiguracji i wskazówki dotyczące architektury) ułatwiające wdrożenie platformy Kubernetes i rozwiązań natywnych dla chmury na dużą skalę.

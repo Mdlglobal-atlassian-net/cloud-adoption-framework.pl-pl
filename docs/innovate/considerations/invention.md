@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4ddc8c0e479aaf0feee928249919edf9899ce40f
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f9303adc183596f93c822224e5098549a533a153
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171195"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356737"
 ---
 # <a name="develop-digital-inventions"></a>Tworzenie wynalazków cyfrowych
 
@@ -22,7 +22,7 @@ Zgodnie z opisem w [innowacji w gospodarce cyfrowej](./index.md), innowacje wyma
 
 ## <a name="summary-of-each-discipline-of-digital-invention"></a>Podsumowanie każdej dyscypliny wynalazków cyfrowych
 
-Poniższe dyscypliny nie są *wszystkie* wymagane do napełniania innowacji w danym przypadku. Postępując zgodnie ze wskazówkami w temacie [Build with Customer empatię](./build.md), celem jest przetestowanie hipotezy w każdej iteracji. Definiując dane wyjściowe każdej iteracji jako [minimalny produkt żywotny (MVP)](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance#minimum-viable-product-mvp-for-policy), powinno to umożliwić włączenie najmniejszej możliwej liczby dyscyplin.
+Poniższe dyscypliny nie są *wszystkie* wymagane do napełniania innowacji w danym przypadku. Postępując zgodnie ze wskazówkami w temacie [Build with Customer empatię](./build.md), celem jest przetestowanie hipotezy w każdej iteracji. Definiując dane wyjściowe każdej iteracji jako [minimalny produkt żywotny (MVP)](../../govern/policy-compliance/index.md), powinno to umożliwić włączenie najmniejszej możliwej liczby dyscyplin.
 
 - **[Zdemokratyzuj proces dane](./data.md):** Pobierając dane do rąk klientów, partnerów i pracowników, zachęcasz do innowacyjnych obserwacji. Pozyskiwanie, scentralizowanie, zarządzanie i udostępnianie danych.
 - Zaangażuj się  **[w aplikacje](./apps.md):** Ludzie łączą się ze wiedzą za pomocą aplikacji i środowisk. Umożliwienie deweloperom i programistom deweloperów szybkie tworzenie aplikacji.

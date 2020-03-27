@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b44a5d9c8e0447488abd500afeaa70fb87a819b1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 3130494f151897d005a5ded28268d056f15bd15c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311952"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355958"
 ---
 <!-- cSpell:ignore SQLVM OSTICKETWEB OSTICKETMYSQL contosohost contosodc vcenter WEBVM systemctl NSGs -->
 
@@ -38,7 +38,7 @@ Zespół ds. chmury w firmie Contoso określił cele migracji, zgodnie z którym
 - Po migracji aplikacja na platformie Azure powinna mieć taką samą wydajność jak obecnie, gdy działa w lokalnym środowisku programu VMware. Aplikacja działająca w chmurze będzie miała tak samo krytyczne znaczenie jak w środowisku lokalnym.
 - Firma Contoso nie chce inwestować w tę aplikację. Jest ona ważna dla działalności firmy, ale firma Contoso chce po prostu bezpiecznie przenieść ją do chmury w obecnej postaci.
 - Firma Contoso nie chce zmieniać modelu operacyjnego dla tej aplikacji. Chce korzystać z aplikacji w chmurze w taki sam sposób, jak korzysta z niej teraz.
-- Firma Contoso nie chce zmieniać funkcjonalności aplikacji. Zmieni się tylko jej lokalizacja.
+- Firma Contoso nie chce zmieniać funkcjonalności aplikacji. Zmieni się tylko lokalizacja aplikacji.
 - Firma Contoso przeprowadziła już kilka procesów migracji aplikacji dla systemu Windows, a teraz chce poznać sposób korzystania z infrastruktury platformy Azure z systemem Linux.
 
 ## <a name="solution-design"></a>Projekt rozwiązania
@@ -48,7 +48,7 @@ Po określeniu celów i wymagań firma Contoso planuje i ocenia rozwiązanie do 
 ### <a name="current-app"></a>Bieżąca aplikacja
 
 - Aplikacja OSTicket działa na dwóch maszynach wirtualnych (**OSTICKETWEB** i **OSTICKETMYSQL**).
-- Maszyny wirtualne znajdują się na hoście VMware ESXi **contosohost1.contoso.com** (wersja 6.5).
+- Obie maszyny wirtualne znajdują się na hoście VMware ESXi **contosohost1.contoso.com** (wersja 6.5).
 - Środowisko VMware jest zarządzane przez program vCenter Server 6.5 (**vcenter.contoso.com**) uruchomiony na maszynie wirtualnej.
 - Firma Contoso ma lokalne centrum danych (**contoso-datacenter**) i lokalny kontroler domeny (**contosodc1**).
 
@@ -281,7 +281,7 @@ Teraz firma Contoso musi wykonać następujące czynności w celu wyczyszczenia 
 - Usunięcie lokalnych maszyn wirtualnych ze spisu serwera vCenter.
 - Usunięcie lokalnych maszyn wirtualnych z lokalnych zadań kopii zapasowej.
 - Aktualizacja dokumentacji wewnętrznej w celu wskazania nowej lokalizacji i adresów IP maszyn wirtualnych OSTICKETWEB i OSTICKETMYSQL.
-- Przejrzeć wszystkie zasoby korzystające z tych maszyn wirtualnych i zaktualizować wszelkie ustawienia lub dokumenty, aby odzwierciedlały nową konfigurację.
+- Przegląd wszystkich zasobów korzystających z tych maszyn wirtualnych i aktualizacja wszelkich ustawień lub dokumentów w celu uwzględnienia nowej konfiguracji.
 - Firma Contoso skorzystała z usługi Azure Migrate z mapowaniem zależności do przeprowadzenia oceny maszyn wirtualnych pod kątem migracji. Administratorzy powinni usunąć Microsoft Monitoring Agent oraz agenta zależności firmy Microsoft zainstalowanych w tym celu z maszyny wirtualnej.
 
 ## <a name="review-the-deployment"></a>Przegląd wdrożenia
@@ -290,7 +290,7 @@ Po uruchomieniu aplikacji firma Contoso musi w pełni zoperacjonalizować i zabe
 
 ### <a name="security"></a>Bezpieczeństwo
 
-Zespół ds. zabezpieczeń w firmie Contoso przeprowadza przegląd maszyn wirtualnych OSTICKETWEB i OSTICKETMYSQL w celu wykrycia ewentualnych problemów z zabezpieczeniami.
+Zespół ds. zabezpieczeń firmy Contoso przegląda maszyny wirtualne OSTICKETWEB i OSTICKETMYSQL, aby określić problemy z zabezpieczeniami.
 
 - Zespół przegląda sieciowe grupy zabezpieczeń używane do kontroli dostępu do maszyn wirtualnych. Sieciowe grupy zabezpieczeń zapewniają, że do aplikacji będzie przekazywany tylko dozwolony ruch.
 - Zespół rozważa również zabezpieczenie danych na dyskach maszyn wirtualnych przy użyciu usług Disk Encryption i Azure Key Vault.
@@ -302,7 +302,7 @@ Aby uzyskać więcej informacji, zobacz [najlepsze rozwiązania w zakresie zabez
 W celu zapewnienia ciągłości działania i odzyskiwania po awarii firma Contoso podejmuje następujące działania:
 
 - **Zapewnienie bezpieczeństwa danych.** Firma Contoso tworzy kopie zapasowe danych na maszynach wirtualnych za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-- **Zapewnienie ciągłości działania aplikacji.** firma Contoso replikuje maszyny wirtualne aplikacji w regionie pomocniczym platformy Azure za pomocą usługi Site Recovery. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
+- **Zapewnienie ciągłości działania aplikacji.** Firma Contoso replikuje maszyny wirtualne aplikacji w regionie pomocniczym platformy Azure za pomocą usługi Site Recovery. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licencjonowanie i optymalizacja kosztów
 

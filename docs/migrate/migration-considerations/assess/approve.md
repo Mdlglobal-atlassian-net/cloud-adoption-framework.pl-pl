@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d674cfe0378613530adb329ae21b9c379742e91
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 2de71f5a28da4b6ec7c876f26f929b3e0e6de425
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312088"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353839"
 ---
+<!-- cSpell:ignore architected ITIL -->
+
 # <a name="approve-architecture-changes-before-migration"></a>Zatwierdzanie zmian architektury przed migracją
 
 Podczas procesu oceny migracji każde obciążenie jest oceniane, projektowane i szacowane w celu opracowania planu przyszłego stanu dla obciążenia. Niektóre obciążenia można zmigrować do chmury bez zmian w architekturze. Zachowanie konfiguracji i architektury lokalnej może ograniczyć ryzyko i usprawnić proces migracji. Niestety, nie każda aplikacja może działać w chmurze bez wprowadzenia zmian w architekturze. Gdy wymagane są zmiany architektury, ten artykuł może pomóc w klasyfikacji zmian i zawiera wskazówki dotyczące właściwych działań związanych z zatwierdzeniem.

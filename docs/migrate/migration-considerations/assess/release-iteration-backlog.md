@@ -1,18 +1,18 @@
 ---
 title: Lista prac iteracji i wydania
-description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak utworzyć zaległość i wydanie, aby zorganizować zadania.
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak utworzyć listę prac iteracji i wydania w celu zorganizowania zadań.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7204511d8b3f83d18f8179e04c4fd400151a7f3a
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4cbf0c7760ed2c471e1b462ae2712c544e9d0e8c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094179"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355495"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>Zarządzanie zmianami w procesie migracji przyrostowej
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 243094da7b92a374124474eaaf0c955b5fdb85ed
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: fb35c059f3c3c6c9485d70a78a2c3fa1b49dc10d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140607"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354771"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan wdrażania chmury i usługa Azure DevOps
 
@@ -30,7 +30,7 @@ Aby wdrożyć plan wdrażania chmury, Otwórz [Generator demonstracji usługi Az
 4. Wybierz pozycję **Utwórz projekt** , aby utworzyć nowy projekt w dzierżawie na podstawie szablonu planu. Pasek postępu przedstawia postępy w kierunku wdrażania projektu.
 5. Po zakończeniu wdrażania wybierz pozycję **Przejdź do projektu** , aby wyświetlić nowy projekt.
 
-Po utworzeniu projektu przejdź do tej serii artykułów, aby zobaczyć, jak można zmodyfikować szablon w celu dostosowania go do planu wdrożenia w chmurze.
+Po utworzeniu projektu przejdź do tej serii artykułów, aby dowiedzieć się, jak zmodyfikować szablon w celu dostosowania go do planu wdrożenia w chmurze.
 
 Aby uzyskać dodatkową pomoc techniczną i wskazówki dotyczące tego narzędzia, zobacz [Azure DevOps Services Generator demonstracji](https://docs.microsoft.com/azure/devops/demo-gen/?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops).
 

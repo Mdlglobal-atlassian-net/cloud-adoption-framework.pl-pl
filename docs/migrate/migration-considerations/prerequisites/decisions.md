@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 07856662f95a588f252c78e8a3dd67eba6e8163c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: d90e1fa73029d87d1f699e1a0651a63368bf3b21
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094071"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355184"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -54,7 +54,7 @@ Przed podjęciem jakichkolwiek decyzji, które mogą mieć długoterminowy wpły
 
 W przypadku każdej migracji znaczącej skali (więcej niż 250 maszyn wirtualnych) zasoby są migrowane przy użyciu różnych opcji przejścia, które zostały omówione w pięciu rozwiązaniach: ponowne *hostowanie*, *Refaktoryzacja* *,* *rekonstrukcja*, ponowna kompilacja i *zastąpienie*.
 
-Niektóre obciążenia są modernizowane w ramach procesu *przebudowy* lub *zmiany architektury*, co umożliwia utworzenie nowocześniejszych aplikacji z nowymi funkcjami i możliwościami technicznymi. Inne zasoby podlegają procesowi *refaktoryzacji*, na przykład są przenoszone do kontenerów lub innych nowocześniejszych rozwiązań hostingu i operacji, które nie muszą mieć wpływu na bazę kodu rozwiązania. Często maszyny wirtualne i inne zasoby, które są bardziej dobrze ustanowione, przechodzą przez proces ponownego *hostowania* , przenosząc te zasoby z centrum danych do chmury. Niektóre obciążenia mogą zostać zmigrowane do chmury, ale zamiast tego należy je *zastąpić* przy użyciu usług w chmurze opartych na usługach (SaaS), które spełniają te same wymagania biznesowe&mdash;na przykład przy użyciu pakietu Office 365 jako alternatywy dla migrowania wystąpień programu Exchange Server.
+Niektóre obciążenia są modernizowane w ramach procesu *przebudowy* lub *zmiany architektury*, co umożliwia utworzenie nowocześniejszych aplikacji z nowymi funkcjami i możliwościami technicznymi. Inne zasoby przechodzą przez proces *refaktoryzacji* , na przykład przechodzenie do kontenerów lub inne bardziej nowoczesne metody hostingu i działania, które nie muszą mieć wpływu na bazę kodu rozwiązań. Często maszyny wirtualne i inne zasoby, które są bardziej dobrze ustanowione, przechodzą przez proces ponownego *hostowania* , przenosząc te zasoby z centrum danych do chmury. Niektóre obciążenia mogą zostać zmigrowane do chmury, ale zamiast tego należy je *zastąpić* przy użyciu usług w chmurze opartych na usługach (SaaS), które spełniają te same wymagania biznesowe&mdash;na przykład przy użyciu pakietu Office 365 jako alternatywy dla migrowania wystąpień programu Exchange Server.
 
 W większości scenariuszy pewne zdarzenie biznesowe wymusza tymczasową migrację zasobów w ramach procesu *ponownego hostowania*, po którym następuje bardziej istotne dodatkowe przejście z zastosowaniem jednej z innych strategii migracji po przeniesieniu do chmury. Ten proces jest często nazywany *przeniesieniem do chmury*.
 

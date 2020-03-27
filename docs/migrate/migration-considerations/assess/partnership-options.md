@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 0d7207ce5073d1e3e67e2164774ee0da0eddc784
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311867"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355315"
 ---
+<!-- cSpell:ignore CSPs MSPs -->
+
 # <a name="understand-partnership-options"></a>Informacje o opcjach partnerstwa
 
 Podczas migracji zespół wdrożeniowy ds. chmury wykonuje rzeczywistą migrację obciążeń do chmury. W przeciwieństwie do zadań związanych ze współdziałaniem i rozwiązywaniem problemów podczas definiowania [majątku cyfrowego](../../../digital-estate/index.md) lub tworzenia bazowej infrastruktury w chmurze na proces migracji będą się składać serie powtarzających się zadań wykonania. Poza wykonywaniem powtarzalnych czynności konieczne będzie prawdopodobnie wykonanie zadań związanych z testowaniem i dostrajaniem, które wymagają dokładnej znajomości wybranego dostawcy usług w chmurze. Powtarzalny charakter tego procesu sprawia, że może on być wykonywany przez partnera, dzięki czemu etatowi pracownicy nie będą nim tak obciążeni. Ponadto partnerzy mogą lepiej dawać sobie radę w sytuacjach wymagających głębokiej wiedzy technicznej, kiedy powtarzalne procesy napotykają anomalie wykonania.
@@ -96,7 +98,7 @@ Dostawcy rozwiązań certyfikowani przez firmę Microsoft specjalizują się w d
 Uzyskaj pomoc od partnerów oferujących gotowe lub niestandardowe rozwiązania dla platformy Azure oraz partnerów, którzy mogą pomóc we wdrażaniu tych rozwiązań i w zarządzaniu nimi:
 
 - **[Znajdź partnera z zakresu rozwiązań w chmurze](https://www.microsoft.com/solution-providers/home).** Certyfikowany partner z zakresu rozwiązań w chmurze może pomóc w pełni wykorzystać chmurę, oceniając cele biznesowe dotyczące wdrożenia w chmurze oraz identyfikując odpowiednie rozwiązanie w chmurze, które spełnia potrzeby biznesowe i pomaga zwiększyć wydajność oraz efektywność biznesową.
-- **[Znajdź partnera usługi zarządzanej](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca).** Partner usługi zarządzanej na platformie Azure (MSP) pomaga w przeniesieniu działalności na platformę Azure przez zarządzanie wszystkimi aspektami przejścia do chmury. Partnerzy usługi zarządzanej zapewniają kompleksowe doradztwo od konsultacji do migracji i zarządzania operacjami, dzięki czemu klienci poznają wszystkie korzyści związane z wdrażaniem w chmurze. Zapewniają oni również typową pomoc techniczną, obsługę aprowizacji i rozliczeń — z elastycznym modelem biznesowym płatności zgodnie z rzeczywistym użyciem (PAYG).
+- **[Znajdź partnera usługi zarządzanej](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca).** Partner usługi zarządzanej na platformie Azure (MSP) pomaga w przeniesieniu działalności na platformę Azure przez zarządzanie wszystkimi aspektami przejścia do chmury. Partnerzy usługi zarządzanej zapewniają kompleksowe doradztwo od konsultacji do migracji i zarządzania operacjami, dzięki czemu klienci poznają wszystkie korzyści związane z wdrażaniem w chmurze. Działają one również jako jednorazowe wsparcie dla typowej pomocy technicznej, aprowizacji i obsługi rozliczeń — z elastycznym modelem biznesowym z płatnością zgodnie z rzeczywistym użyciem.
 
 ## <a name="next-steps"></a>Następne kroki
 

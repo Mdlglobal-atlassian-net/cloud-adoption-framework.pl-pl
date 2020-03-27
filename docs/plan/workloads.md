@@ -1,20 +1,20 @@
 ---
-title: Określanie priorytetów i Definiowanie obciążeń dla wdrażania chmury
-description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak określić priorytety i definiować obciążenia dla planu wdrożenia chmury.
+title: Definiowanie obciążeń i określanie priorytetów dla wdrażania w chmurze
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak definiować i określać priorytety obciążeń dla planu wdrożenia chmury.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 8d9297534f04b6656b584fa82d565e9119599f26
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140624"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354694"
 ---
-# <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Określanie priorytetów i Definiowanie obciążeń dla planu wdrażania chmury
+# <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Definiowanie i ustalanie priorytetów obciążeń dla planu wdrażania chmury
 
 Ustanowienie jasnych, priorytetowych priorytetów jest jednym z kluczy tajnych, aby pomyślnie zaakceptowanić chmurę. Naturalny Temptation polega na zainwestowaniu czasu w celu zdefiniowania wszystkich obciążeń, które mogą być narażone podczas wdrażania w chmurze. Ale to counterproductive, szczególnie wczesne w procesie wdrażania.
 

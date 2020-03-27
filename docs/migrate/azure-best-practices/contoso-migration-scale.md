@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8c3ee0a75efa74aa1599399358bac267c5ffe1de
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: b1fceb8a7b54ce88917f6feaef6ea70f5aa2f023
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091923"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355634"
 ---
+<!-- cSpell:ignore Hanu Scalr VHDs autosnooze unsnooze -->
+
 # <a name="scale-a-migration-to-azure"></a>Skalowanie migracji na platformę Azure
 
 W tym artykule przedstawiono sposób, w jaki fikcyjna firma Contoso przeprowadza migrację na platformę Azure na dużą skalę. Firma rozważa, jak zaplanować i przeprowadzić migrację ponad 3000 obciążeń, 8000 baz danych i ponad 10 000 maszyn wirtualnych.
@@ -306,7 +308,7 @@ Po przeniesieniu zasobów na platformę Azure firma Contoso potrzebuje usprawni�
 Aby jak najlepiej wykorzystać inwestycję w chmurę, firma Contoso będzie korzystać z bezpłatnego narzędzia Azure Cost Management.
 
 - To licencjonowane rozwiązanie stworzone przez Cloudyn, jednostkę zależną firmy Microsoft, umożliwia firmie Contoso przejrzyste i dokładne zarządzanie wydatkami na chmurę. Zapewnia narzędzia do monitorowania, przydzielania i przycinania kosztów chmury.
-- Usługa Azure Cost Management oferuje proste raporty pulpitu nawigacyjnego, które ułatwiają przydzielanie kosztów, przewidywanie kosztów i obciążenia zwrotne.
+- Azure Cost Management oferuje proste raporty pulpitu nawigacyjnego, które ułatwiają przydzielanie kosztów, showbacks i obciążeń zwrotnych.
 - Usługa Cost Management pozwala optymalizować wydatki na chmurę przez identyfikowanie niedostatecznie wykorzystywanych zasobów, którymi firma Contoso może później zarządzać oraz je dostosowywać.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/cost-management/overview) na temat usługi Azure Cost Management.
 

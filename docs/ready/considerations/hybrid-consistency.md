@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7b2433b787683cf8ecaaf4a1f7a858aa18bf682c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 68b360af15f6a2537fb077202373c846365266d2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093040"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353655"
 ---
+<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
+
 # <a name="create-hybrid-cloud-consistency"></a>Uzyskiwanie zgodności w chmurze hybrydowej
 
 W tym artykule opisano metody wysokiego poziomu dotyczące tworzenia spójności chmury hybrydowej.
@@ -51,7 +53,7 @@ Platforma Azure i Azure Stack otwieranie nowych hybrydowych przypadków użycia 
 
 - **Rozwiązania brzegowe i rozłączone.** Aby rozwiązać wymagania dotyczące opóźnień i połączeń, klienci mogą przetwarzać dane lokalnie w Azure Stack a następnie agregować je na platformie Azure w celu dalszej analizy. Mogą używać typowej logiki aplikacji w obu. Wielu klientów interesuje ten scenariusz tej krawędzi w różnych kontekstach, takich jak piętra fabryki, statki wycieczkowe i napędy z kopalni.
 - **Aplikacje w chmurze, które spełniają różne regulacje.** Klienci mogą opracowywać i wdrażać aplikacje na platformie Azure, zapewniając pełną elastyczność wdrażania lokalnego na Azure Stack w celu spełnienia wymagań prawnych lub zasad. Nie są wymagana żadne zmiany w kodzie. Przykłady aplikacji obejmują globalne inspekcje, raportowanie finansowe, handel wymianą walut, gry online i raportowanie wydatków. Klienci czasami zapoznają się z wdrażaniem różnych wystąpień tej samej aplikacji na platformie Azure lub Azure Stack, w oparciu o wymagania biznesowe i techniczne. Mimo że platforma Azure spełnia większość wymagań, Azure Stack uzupełnia podejście wdrożenia w razie potrzeby.
-- **Model aplikacji w chmurze w środowisku lokalnym.** Klienci mogą używać usług sieci Web, kontenerów, bezserwerowych i mikrousług platformy Azure, aby aktualizować i poszerzać istniejące aplikacje lub tworzyć nowe. Można używać spójnych procesów DevOps na platformie Azure w chmurze i Azure Stack lokalnych. Istnieje coraz więcej zainteresowania modernizacji aplikacji, nawet w przypadku podstawowych aplikacji o znaczeniu strategicznym.
+- **Model aplikacji w chmurze w środowisku lokalnym.** Klienci mogą korzystać z usług sieci Web platformy Azure, kontenerów, mikrousług i architektur bezserwerowych, aby aktualizować i poszerzać istniejące aplikacje lub tworzyć nowe. Można używać spójnych procesów DevOps na platformie Azure w chmurze i Azure Stack lokalnych. Istnieje coraz więcej zainteresowania modernizacji aplikacji, nawet w przypadku podstawowych aplikacji o znaczeniu strategicznym.
 
 Azure Stack jest oferowana za pośrednictwem dwóch opcji wdrażania:
 
@@ -61,6 +63,8 @@ Azure Stack jest oferowana za pośrednictwem dwóch opcji wdrażania:
 ## <a name="azure-stack-one-cloud-ecosystem"></a>Azure Stack ekosystem w chmurze
 
 Aby przyspieszyć Azure Stack inicjatywy, możesz skorzystać z pełnego ekosystemu platformy Azure:
+
+<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers -->
 
 - Platforma Azure zapewnia, że większość aplikacji i usług certyfikowanych na platformie Azure będzie działała Azure Stack. Kilka niezależnych dostawców oprogramowania rozszerza swoje rozwiązania na Azure Stack. Ci dostawcy oprogramowania to: Bitnami, Docker, Kemp Technologies, Pivoting Cloud Foundry, Red Hat Enterprise Linux i SUSE Linux.
 - Można wybrać Azure Stack dostarczana i obsługiwana jako w pełni zarządzana usługa. Wielu partnerów będzie mieć już dostępne oferty usług zarządzanych na platformie Azure i Azure Stack. Ci partnerzy obejmują Tieto, Yourhosting, Revera, napęd i NTT. Ci partnerzy dostarczają usługi zarządzane dla systemu Azure za pośrednictwem programu Cloud Solution Provider (CSP). Rozszerzają one oferty w celu uwzględnienia rozwiązań hybrydowych.

@@ -1,22 +1,22 @@
 ---
-title: Zrównoważone priorytety konkurencji
-description: Odkryj strategie do równoważenia konkurencyjnych priorytetów
+title: Równoważenie konkurencyjnych priorytetów
+description: Odkryj strategie dotyczące równoważenia konkurencyjnych priorytetów.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ba70687627e81b58eb76cd69838abf1ebcdb6489
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: a0524d8e7cd48f3b93191d9633bb57b10fb2261b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312413"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353700"
 ---
-# <a name="balance-competing-priorities"></a>Zrównoważone priorytety konkurencji
+# <a name="balance-competing-priorities"></a>Równoważenie konkurencyjnych priorytetów
 
-Zaokrętowanie na drodze cyfrowej transformacji cyfrowych działa jak funkcja wymuszania dla uczestników projektu w zespołach branżowych i technologicznych. Ścieżka do sukcesu jest solidnie kierowana w organizacji w celu zrównoważenia konkurencyjnych priorytetów.
+Zaokrętowanie na drodze cyfrowej transformacji cyfrowych działa jak funkcja wymuszania dla uczestników projektu w zespołach branżowych i technologicznych. Ścieżka do sukcesu jest zdecydowana w organizacji w celu zrównoważenia konkurencyjnych priorytetów.
 
 Podobnie jak w przypadku innych transformacji cyfrowych, wdrażanie w chmurze będzie ujawniać konkurencyjne priorytety w całym cyklu życia. Podobnie jak w przypadku innych form transformacji, zdolność do znajdowania salda tych priorytetów będzie miała znaczny wpływ na realizację wartości biznesowej. Zrównoważenie tych priorytetów konkurujących będzie wymagało otwarcia (i czasami trudnych) konwersacji między uczestnikami projektu (i w czasie z poszczególnymi współautorami).
 
@@ -40,8 +40,8 @@ Podstawowym celem metodologii strategii jest opracowanie wyrównania między ucz
 
 **Priorytety konkurujące:**
 
-- **Głębokość uzasadnienia**: zainteresowane strony często chcą gruntownie analizować Finanse i pełne uzasadnienie biznesowe, aby mieć wgląd w kierunek strategiczny. Niestety, ten poziom analizy może wymagać rozszerzonego okresu, aby umożliwić zbieranie i analizowanie danych.
-- **Czas do wpływu na działalność biznesową**: odwrotnie, uczestnicy projektu często są odpowiedzialni za dostarczanie wyników firmy w określonych przedziale czasowym. Czasochłonne analizy i oceny mogą spowodować, że te wyniki są narażone na ryzyko przed rozpoczęciem pracy technicznej.
+- **Głębokość uzasadnienia:** Zainteresowane strony często chcą uzyskać ścisłą analizę finansową i pełne uzasadnienie biznesowe, aby mieć wygodne dopasowanie do kierunku strategicznego. Niestety, ten poziom analizy może wymagać rozszerzonego okresu, aby umożliwić zbieranie i analizowanie danych.
+- **Czas do wpływu na działalność biznesową:** Z drugiej strony, zainteresowane osoby często są odpowiedzialne za dostarczanie wyników handlowych w określonych przedziale czasowym. Czasochłonne analizy i oceny mogą spowodować, że te wyniki są narażone na ryzyko przed rozpoczęciem pracy technicznej.
 
 **Minimalny zakres:** Znalezienie tego salda wymaga od uczestników dyskusji wczesnych w trakcie procesu. Metodologia strategii sugeruje ograniczenie zakresu wyrównania podczas tego wczesnego nakładu pracy. W sugerowanym podejściu uczestnicy projektu koncentrują się na dostosowywaniu zestawu najważniejszych motywacji, wymiernych rezultatach i ogólnym wyrównaniu biznesowym. Zaleca się, aby uczestnicy projektu szybko zatwierdzać niewielką liczbę początkowych projektów lub pilotażów na potrzeby możliwości uczenia się.
 
@@ -137,3 +137,10 @@ Konkurencyjne priorytety w tym artykule odzwierciedlają dysk IT w celu dostarcz
 **Minimalny zakres:** Większość organizacji przejdzie przez naturalny zestaw ewolucji z upływem czasu. Metoda Organizuj przedstawia najbardziej typowe serie ewolucji. Proponowane wskazówki są przeznaczone dla zespołów, które mogą dążyć do przejścia do centrum rozwiązań w chmurze w celu dostarczenia delegowanych metod kontroli.
 
 **Rozszerzony przykład zakresu:** Istnieje wiele sytuacji, w których należy wyzwolić potrzebę scentralizowanej kontroli. Wymagania dotyczące zgodności innych firm i tymczasowe zagrożenie bezpieczeństwa są dwa przykłady wyzwalaczy dla scentralizowanej kontroli. W takich sytuacjach często istnieje potrzeba ustalenia ograniczenia zasad i sztywnych, stałych kontrolek. Jednak w celu zapewnienia innowacji i adopcji, zaleca się, aby centralni zespoły IT dostarczali te kontrolki w oparciu o krytyczne i czułość poszczególnych obciążeń. Zapewnienie środowisk o mniejszej kontroli, ale ograniczonego zakresu lub profilu ryzyka, umożliwia elastyczność nawet wtedy, gdy wymagana jest kontrola.
+
+## <a name="next-steps"></a>Następne kroki
+
+Dowiedz się, jak [zrównoważyć migrację, innowacje i eksperymenty](./balance-the-portfolio.md) , aby zmaksymalizować wartość działania migracji do chmury.
+
+> [!div class="nextstepaction"]
+> [Równoważenie portfela](./balance-the-portfolio.md)

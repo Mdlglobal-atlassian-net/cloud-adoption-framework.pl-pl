@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: c545f147ba374fe1150573b060c600269eb628b1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 4e6daee6f5f69599fc8346cf6414b2dff14ae7a9
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311612"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353746"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -77,7 +77,7 @@ Trzy typowe wzorce rejestracji platformy Azure to:
 
   ![Wzorzec geograficzny](../_images/reference/geographic.png)
 
-Chociaż każdy z tych wzorców ma swoje miejsce, wzorzec **jednostki biznesowej** jest coraz większy, aby można było modelować model kosztów organizacji, a także odzwierciedlać zakres kontroli. Firma Microsoft Core i Grupa operacji stworzyły efektywny podzestaw wzorca **jednostki biznesowej** modeluje się w **federalnym**, **stanowym**i **lokalnym**. Aby uzyskać więcej informacji, zobacz [organizowanie subskrypcji i grup zasobów w przedsiębiorstwie](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions).
+Chociaż każdy z tych wzorców ma swoje miejsce, wzorzec **jednostki biznesowej** jest coraz większy, aby można było modelować model kosztów organizacji, a także odzwierciedlać zakres kontroli. Firma Microsoft Core i Grupa operacji stworzyły efektywny podzestaw wzorca **jednostki biznesowej** modeluje się w **federalnym**, **stanowym**i **lokalnym**. Aby uzyskać więcej informacji, zobacz [organizowanie subskrypcji i grup zasobów](../ready/azure-best-practices/organize-subscriptions.md).
 
 ### <a name="azure-management-groups"></a>Grupy zarządzania platformy Azure
 
@@ -216,7 +216,7 @@ Pakiet Secure DevOps Kit dla platformy Azure (AzSK) to zbiór skryptów, narzęd
 
 AzSK to bogaty zestaw narzędzi, skryptów i informacji, które są ważną częścią pełnego planu nadzoru platformy Azure i uwzględniają je w szkieletach, co jest kluczowe do wspierania celów zarządzania ryzykiem organizacji.
 
-### <a name="azure-update-management"></a>Update Management platformy Azure
+### <a name="azure-update-management"></a>Zarządzanie aktualizacjami platformy Azure
 
 Jednym z najważniejszych zadań, które można wykonać w celu zapewnienia bezpieczeństwa środowiska, jest upewnienie się, że serwery są poprawione przy użyciu najnowszych aktualizacji. Mimo że jest dostępnych wiele narzędzi, platforma Azure udostępnia rozwiązanie [Update Management platformy Azure](https://docs.microsoft.com/azure/automation/automation-update-management) , które umożliwia identyfikowanie i wprowadzanie krytycznych poprawek systemu operacyjnego. Używa Azure Automation, omówione w sekcji [Automatyzowanie](#automate) w dalszej części tego przewodnika.
 

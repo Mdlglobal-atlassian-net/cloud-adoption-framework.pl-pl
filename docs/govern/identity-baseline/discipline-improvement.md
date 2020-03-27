@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 44b6c2dc910068f70645e54c372e3f4290d02669
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508121"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356999"
 ---
+<!-- cSpell:ignore offboarding preintegration -->
+
 # <a name="identity-baseline-discipline-improvement"></a>Poprawa dyscypliny linii bazowej tożsamości
 
 Dyscyplina bazowa tożsamości koncentruje się na sposobach ustanawiania zasad zapewniających spójność i ciągłość tożsamości użytkowników niezależnie od dostawcy chmury, który obsługuje aplikację lub obciążenie. W pięciu dyscyplinach zarządzania chmurą, linia bazowa tożsamości obejmuje decyzje dotyczące [strategii tożsamości hybrydowej](../../decision-guides/identity/index.md), oceny i rozszerzenia repozytoriów tożsamości, implementacji logowania jednokrotnego (tego samego logowania), inspekcji i monitorowania w celu nieautoryzowanego użycia lub złośliwych podmiotów. W niektórych przypadkach może być również zaangażowana decyzja o modernizację, konsolidację lub integrację wielu dostawców tożsamości.

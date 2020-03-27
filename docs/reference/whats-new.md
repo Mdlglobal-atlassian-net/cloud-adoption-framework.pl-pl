@@ -7,12 +7,12 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 0e93f0279ba210be594b3b5af40cf16657f224e3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: a3e316d49acaaee00d5ecd10efac9aa15c2dbd49
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79095311"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353676"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework"></a>Co nowego w platformie wdrażania Microsoft Cloud
 
@@ -39,7 +39,7 @@ Pierwsza strefa docelowa została wyściągana z przewodnika gotowości, aby mo�
 - [Pierwsza strefa](../ready/landing-zone/first-landing-zone.md)docelowa: rozwija w porównaniu z różnymi strefami wyładunkowymi
 - [Migrowanie strefy docelowej](../ready/landing-zone/migrate-landing-zone.md): przeniesiono wcześniejszy artykuł planu strefy docelowej, aby oddzielić definicję planu CAF od zaznaczenia pierwszej strefy docelowej, aby umożliwić im więcej opcji strefy wyładunkowej.
 - Terraform — artykuł dotyczący [strefy wyładunkowej](../ready/landing-zone/terraform-landing-zone.md) : przeniesiony z sekcji "rozszerzony zakres" gotowej metodologii do nowej sekcji "strefa docelowa" metody gotowej do traktowania Terraforma jako obywatel pierwszej klasy w konwersacji strefy docelowej.
-- Zagrupuj podstawowe zagadnienia dotyczące strefy docelowej w spisie treści w obszarze "podstawowe zagadnienia dotyczące strefy wyładunkowej".
+- Grupuj podstawowe zagadnienia dotyczące strefy docelowej w spisie treści w obszarze "podstawowe zagadnienia dotyczące strefy wyładunkowej".
 - Przeniesiono najlepsze rozwiązania w zakresie zabezpieczeń z metodologii migrowania do nowej sekcji strefy docelowej wywoływanie "Popraw zabezpieczenia strefy wyładunkowej (dane poufne)", aby uwidocznić te wskazówki wcześniej w cyklu życia.
 
 ### <a name="refinements-to-the-azure-migration-guide"></a>Udoskonalenia przewodnika migracji platformy Azure

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 74f81e139e7eacc7445321592eab4027a40a8c56
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: bbd50e5e2ddda9489f0fc7a90a546ef41fd86ade
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312387"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357121"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: objaśniono najlepsze rozwiązania
 
@@ -50,7 +50,7 @@ Zespół ds. zarządzania chmurą będzie odpowiedzialny za następujące decyzj
 
 ### <a name="subscription-design"></a>Projekt subskrypcji
 
-Decyzja dotycząca tego, w jaki sposób konstrukcja subskrypcji pozwala określić, jak subskrypcje platformy Azure mają być strukturalne i w jaki sposób grupy zarządzania platformy Azure będą używane do wydajnego zarządzania dostępem, zasadami i zgodnością z tą subskrypcją. W tym opisie zespół nadzoru określił Wzorzec projektowy subskrypcji **[mieszanej](../../../decision-guides/subscriptions/index.md#mixed-patterns)** .
+Decyzja dotycząca tego, w jaki sposób konstrukcja subskrypcji pozwala określić, jak subskrypcje platformy Azure mają być strukturalne i w jaki sposób grupy zarządzania platformy Azure będą używane do wydajnego zarządzania dostępem, zasadami i zgodnością z tą subskrypcją. W tym opisie zespół nadzoru zdecydował się na **[strategię mieszanych subskrypcji](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** .
 
 - W miarę istnienia nowych żądań dotyczących zasobów platformy Azure należy ustalić "dział" dla każdej głównej jednostki biznesowej w każdej lokalizacji geograficznej. W ramach każdego z działów należy utworzyć "subskrypcje" dla każdej aplikacji Archetype.
 - Aplikacja Archetype to metoda grupowania aplikacji z podobnymi potrzebami. Typowe przykłady obejmują: aplikacje z chronionymi danymi, zarządzanymi aplikacjami (na przykład HIPAA lub FedRAMP), aplikacje o niskim ryzyku, aplikacje z zależnościami lokalnymi, oprogramowaniem SAP lub innymi aplikacjami mainframe na platformie Azure lub aplikacjami rozszerzającymi lokalne aplikacje SAP lub mainframe. Każda organizacja ma unikatowe potrzeby na podstawie klasyfikacji danych i typów aplikacji, które obsługują działalność biznesową. Mapowanie zależności podpisu cyfrowego może pomóc w definiowaniu Archetypes aplikacji w organizacji.

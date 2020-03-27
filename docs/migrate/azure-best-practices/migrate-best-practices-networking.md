@@ -7,13 +7,15 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 84ece22173c921f1a4de5701988b9fffcaedaaf7
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 7cdb1e56b38615e7878352d6e336e0f01261f6ce
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312156"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354125"
 ---
+<!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
+
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Najlepsze rozwiązania dotyczące konfigurowania sieci pod kątem obciążeń migrowanych do platformy Azure
 
 Po zaplanowaniu i zaprojektowaniu migracji jednym z najważniejszych kroków — oprócz samej migracji jest zaprojektowanie i zaimplementowanie sieci platformy Azure. W tym artykule opisano najlepsze rozwiązania dotyczące sieci w przypadku migrowania do implementacji usług IaaS i PaaS na platformie Azure.
@@ -40,7 +42,7 @@ Podczas planowania topologii sieci wirtualnej należy wziąć pod uwagę sposób
 
 Gdy tworzysz sieci wirtualne w ramach migracji, ważne jest zaplanowanie przestrzeni adresowej IP sieci wirtualnej.
 
-- Należy przypisać przestrzeń adresową, która nie jest większa od zakresu CIDR /16 dla każdej sieci wirtualnej. Sieci wirtualnych zezwalają na użycie 65 536 adresów IP i przypisanie mniejszego prefiksu niż/16, takiego jak/15, który ma 131 072 adresów, spowoduje to, że nadmiarowe adresy IP staną się unusuable w innym miejscu. Ważne jest, aby nie tracić adresów IP, nawet jeśli znajdują się w zakresach prywatnych zdefiniowanych w dokumencie RFC 1918.
+- Należy przypisać przestrzeń adresową, która nie jest większa od zakresu CIDR /16 dla każdej sieci wirtualnej. Sieci wirtualnych zezwalają na użycie 65 536 adresów IP i przypisanie mniejszego prefiksu niż/16, takiego jak/15, który ma 131 072 adresów, spowoduje, że nadwyżkowe adresy IP staną się bezużyteczne w innym miejscu. Ważne jest, aby nie tracić adresów IP, nawet jeśli znajdują się w zakresach prywatnych zdefiniowanych w dokumencie RFC 1918.
 - Przestrzeń adresowa sieci wirtualnej nie powinna nakładać się z zakresami sieci lokalnych.
 - Nie należy używać translatora adresów sieciowych (NAT).
 - Nakładające się adresy mogą spowodować, że nie będzie można połączyć sieci, a routing nie będzie działać prawidłowo. Jeśli sieci się nakładają, należy ponownie zaprojektować sieć lub użyć translatora adresów sieciowych (NAT).
@@ -177,7 +179,7 @@ Podczas konfigurowania sieci VPN typu lokacja-lokacja należy wykonać następuj
 - Należy utworzyć bramę sieci VPN, określić typ bramy (sieć VPN) i ustalić, czy brama jest oparta na zasadach, czy oparta na trasach. Sieci VPN opartej na trasach są uważane za dodatkowe możliwości i przyszłe potwierdzenie.
 - Lokalną bramę sieciową można utworzyć lokalnie i skonfigurować lokalne urządzenie sieci VPN.
 - Należy utworzyć połączenie sieci VPN typu lokacja-lokacja między bramą sieci wirtualnej i urządzeniem lokalnym. Korzystanie z sieci VPN opartej na trasach zezwala na połączenia aktywne-pasywne lub aktywne-aktywne z platformą Azure. Wersja oparta na trasach obsługuje również jednocześnie połączenia typu lokacja-lokacja (z dowolnego komputera) i punkt-lokacja (z jednego komputera).
-- Należy wybrać jednostkę SKU bramy, która ma być używana. Będzie to zależeć od wymagań dotyczących obciążenia, przepływności, funkcji i umów SLA.
+- Należy wybrać jednostkę SKU bramy, która ma być używana. Będzie to zależeć od wymagań dotyczących obciążenia, przepływności, funkcji i umowy SLA.
 - Protokół BGP (Border Gateway Protocol) to opcjonalna funkcja, której można używać z usługą Azure ExpressRoute i bramami sieci VPN opartymi na trasach do propagowania lokalnych tras protokołu BGP do sieci wirtualnych.
 
 ![Sieć VPN](./media/migrate-best-practices-networking/vpn.png)

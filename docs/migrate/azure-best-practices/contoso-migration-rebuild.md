@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 1b8afc8da78d171d0d420730f05d5583b231ddd1
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 45d5a27e6d7ba933c82bc41825e76cf8f7830767
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223095"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356342"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
 
@@ -605,7 +605,7 @@ Administratorzy firmy Contoso wdrażają aplikację w następujący sposób.
 
 Po migracji zasobów na platformę Azure firma Contoso musi teraz w pełni zoperacjonalizować i zabezpieczyć nową infrastrukturę.
 
-### <a name="security"></a>Zabezpieczenia
+### <a name="security"></a>Bezpieczeństwo
 
 - Firma Contoso musi upewnić się, że nowe bazy danych są bezpieczne. [Dowiedz się więcej](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview).
 - Aplikacja musi zostać zaktualizowana w celu korzystania z protokołu SSL z certyfikatami. Wystąpienie kontenera należy wdrożyć ponownie, aby odpowiadało na porcie 443.
@@ -634,6 +634,6 @@ Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych umieję
 
 Poniżej przedstawiono kilka przykładów dostosowanych ścieżek szkoleniowych na Microsoft Learn, które są wyrównane do aplikacji Contoso SmartHotel360 na platformie Azure.
 
-[Wdrażanie witryny sieci Web na platformie Azure za pomocą Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/): aplikacje sieci Web na platformie Azure umożliwiają łatwe publikowanie i zarządzanie witryną sieci Web bez konieczności pracy z podstawowymi serwerami, magazynem lub zasobami sieciowymi. Zamiast tego możesz skoncentrować się na funkcjach witryny internetowej i polegać na niezawodnej platformie Azure w zakresie zabezpieczania dostępu do witryny.
+[Wdrażanie witryny sieci Web na platformie Azure za pomocą Azure App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service): aplikacje sieci Web na platformie Azure umożliwiają łatwe publikowanie i zarządzanie witryną sieci Web bez konieczności pracy z podstawowymi serwerami, magazynem lub zasobami sieciowymi. Zamiast tego możesz skoncentrować się na funkcjach witryny internetowej i polegać na niezawodnej platformie Azure w zakresie zabezpieczania dostępu do witryny.
 
-[Przetwarzaj i Klasyfikuj obrazy za pomocą usług Azure poznawczej](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/): usługa Azure Cognitive Services oferuje wbudowaną funkcję do włączania funkcji przetwarzania obrazów w aplikacjach. Dowiedz się, jak korzystać z usług poznawczych, aby wykrywać twarze, Tagi i klasyfikować obrazy oraz identyfikować obiekty.
+[Przetwarzaj i Klasyfikuj obrazy za pomocą usług Azure poznawczej](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services): usługa Azure Cognitive Services oferuje wbudowaną funkcję do włączania funkcji przetwarzania obrazów w aplikacjach. Dowiedz się, jak korzystać z usług poznawczych, aby wykrywać twarze, Tagi i klasyfikować obrazy oraz identyfikować obiekty.

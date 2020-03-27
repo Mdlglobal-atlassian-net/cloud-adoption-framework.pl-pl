@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a27ef0d432fc0aad64211e9b2228d4f82387f854
-ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
+ms.openlocfilehash: 9173909afb7ffe625a28ec72255c15540dcf7c63
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80069809"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353523"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ Jeszcze bardziej cenna Metryka to liczba pulpitów nawigacyjnych utworzonych na 
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gdy metryki szkoleniowe są wyrównane, możesz rozpocząć [Tworzenie przypadku biznesowego](cloud-migration-business-case.md) do dostarczenia na te metryki. 
+Gdy metryki szkoleniowe są wyrównane, możesz rozpocząć [Tworzenie przypadku biznesowego](.\cloud-migration-business-case.md) do dostarczenia na te metryki.
 
 > [!div class="nextstepaction"]
-> [Utwórz przypadek biznesowy w chmurze](cloud-migration-business-case.md)
+> [Utwórz przypadek biznesowy w chmurze](.\cloud-migration-business-case.md)

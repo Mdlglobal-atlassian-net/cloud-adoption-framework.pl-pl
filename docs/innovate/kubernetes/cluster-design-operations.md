@@ -8,13 +8,15 @@ ms.topic: guide
 ms.date: 12/16/2019
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5b5aafd1c9470b566395201a46c75d96581306bd
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 94288e4dd6e9bde1113c6343067dfaec9e7f3c62
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226570"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356556"
 ---
+<!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
+
 # <a name="cluster-design-and-operations"></a>Projektowanie i operacje klastra
 
 Określ konfigurację klastra i projekt sieci. Skalowalność w przyszłości dzięki automatyzowaniu aprowizacji infrastruktury. Zapewnienie wysokiej dostępności dzięki zaplanowaniu ciągłości działania i odzyskiwania po awarii.
@@ -22,6 +24,8 @@ Określ konfigurację klastra i projekt sieci. Skalowalność w przyszłości dz
 ## <a name="plan-train-and-proof"></a>Planowanie, uczenie i weryfikacja
 
 Po rozpoczęciu pracy Poniższa lista kontrolna i zasoby ułatwią planowanie projektu klastra. Należy mieć możliwość udzielenia odpowiedzi na te pytania:
+
+<!-- markdownlint-disable MD033 -->
 
 > [!div class="checklist"]
 >
@@ -34,7 +38,7 @@ Po rozpoczęciu pracy Poniższa lista kontrolna i zasoby ułatwią planowanie pr
 >
 > | Lista kontrolna  | Zasoby |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **Zidentyfikuj zagadnienia dotyczące projektowania sieci.** Omówienie zagadnień dotyczących projektowania sieci klastrów, porównywania modeli sieci i wybierania wtyczki sieci Kubernetes, która odpowiada Twoim potrzebom.    | [Korzystającą wtyczki kubenet i interfejs sieciowy kontenera platformy Azure (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Korzystanie z sieci korzystającą wtyczki kubenet z własnymi zakresami adresów IP w usłudze Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Konfigurowanie sieci Azure CNI w usłudze Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Bezpieczny projekt sieci dla klastra AKS]] (https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
+> | **Zidentyfikuj zagadnienia dotyczące projektowania sieci.** Omówienie zagadnień dotyczących projektowania sieci klastrów, porównywania modeli sieci i wybierania wtyczki sieci Kubernetes, która odpowiada Twoim potrzebom.    | [Korzystającą wtyczki kubenet i interfejs sieciowy kontenera platformy Azure (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Korzystanie z sieci korzystającą wtyczki kubenet z własnymi zakresami adresów IP w usłudze Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Konfigurowanie sieci Azure CNI w usłudze Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Bezpieczny projekt sieci dla klastra AKS](https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
 > | **Utwórz wiele pul węzłów.** Aby obsługiwać aplikacje, które mają różne wymagania dotyczące obliczeń lub magazynu, można opcjonalnie skonfigurować klaster z wieloma pulami węzłów. Na przykład użyj dodatkowych pul węzłów, aby udostępnić procesory GPU dla aplikacji intensywnie korzystających z obliczeń lub uzyskać dostęp do magazynu SSD o wysokiej wydajności.   | [Tworzenie i zarządzanie wieloma pulami węzłów klastra w usłudze Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
 > | **Określ wymagania dotyczące dostępności.** Aby zapewnić wyższy poziom dostępności aplikacji, klastry mogą być dystrybuowane między strefami dostępności. Te strefy są fizycznie oddzielone centrami danych w danym regionie. Gdy składniki klastra są rozproszone w wielu strefach, klaster może tolerować awarię w jednej z tych stref. Aplikacje i operacje zarządzania są nadal dostępne nawet wtedy, gdy w całym centrum danych wystąpił problem.   | [Tworzenie klastra usługi Azure Kubernetes Service (AKS) korzystającego ze stref dostępności](https://docs.microsoft.com/azure/aks/availability-zones) |
 

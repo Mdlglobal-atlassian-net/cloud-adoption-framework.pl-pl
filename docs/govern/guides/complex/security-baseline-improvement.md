@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6501871e909beba8d32cee0c5dd8c3dbe091f252
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: de9fd12afe7445c5cdd3b4ae8c1eba9c7cb07f19
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706816"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357069"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej zabezpieczeń
 
@@ -40,7 +40,7 @@ Od tej pory zmieniono pewne zmiany, które wpłyną na nadzór:
 - Tysiące zasobów IT i firm zostały wdrożone w chmurze.
 - Zespół programistyczny aplikacji wdrożył potok ciągłej integracji i ciągłego wdrażania (CI/CD) w celu wdrożenia aplikacji natywnej w chmurze z ulepszonym środowiskiem użytkownika. Ta aplikacja nie współdziała jeszcze z chronionymi danymi, więc nie jest gotowa do produkcji.
 - Zespół ds. analizy biznesowej aktywnie nadzoruje dane w chmurze na podstawie danych logistycznych, spisu i innych firm. Te dane są używane do kierowania nowych prognoz, które mogą kształtować procesy biznesowe. Jednak te przewidywania i szczegółowe informacje nie są funkcjonalne, dopóki dane klienta i finansowe nie będą mogły zostać zintegrowane z platformą danych.
-- Zespół IT postępuje zgodnie z planami CIO i dyrektora finansowego w celu wycofania dwóch centrów danych. Prawie 3 500 zasobów w dwóch centrach danych zostało wycofane lub zmigrowane.
+- Zespół IT wprowadza postępy w planach CIO i DYREKTORów, aby wycofać dwa centra danych. Prawie 3 500 zasobów w dwóch centrach danych zostało wycofane lub zmigrowane.
 - Zasady dotyczące poufnych danych osobistych i finansowych zostały zmodernizowane. Jednak nowe zasady firmowe są zależne od implementacji związanych z nimi zasad zabezpieczeń i zarządzania. Zespoły nadal są wstrzymane.
 
 ### <a name="incrementally-improve-the-future-state"></a>Przyrostowe ulepszanie stanu w przyszłości
@@ -133,7 +133,7 @@ We wcześniejszych zmianach iteracyjnych najlepszym rozwiązaniem jest zdefiniow
     1. Architektura referencyjna z poprzedniej sekcji, [gwiazdy i topologii z usługami udostępnionymi](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), wygenerowała Menedżer zasobów szablon służący do włączania komunikacji równorzędnej w sieci wirtualnej.
     2. Ten szablon może służyć jako przewodnik modyfikowania szablonu DMZ z wcześniejszej iteracji ładu.
     3. Teraz dodawana jest Komunikacja równorzędna sieci wirtualnych do sieci wirtualnej DMZ, która była wcześniej połączona z lokalnym urządzeniem brzegowym przez sieć VPN.
-    4. Sieć VPN należy również usunąć z tego szablonu, aby upewnić się, że żaden ruch nie jest kierowany bezpośrednio do lokalnego centrum danych, bez przechodzenia przez firmową subskrypcję IT i zaporę. Możesz również ustawić tę sieć VPN jako obwód trybu failover w przypadku outge obwodu ExpressRoute.
+    4. Sieć VPN należy również usunąć z tego szablonu, aby upewnić się, że żaden ruch nie jest kierowany bezpośrednio do lokalnego centrum danych, bez przechodzenia przez firmową subskrypcję IT i zaporę. Możesz również ustawić tę sieć VPN jako obwód trybu failover w przypadku awarii obwodu ExpressRoute.
     5. Dodatkowa [Konfiguracja sieci](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) będzie wymagana przez Azure Automation, aby zastosować DSC do hostowanych maszyn wirtualnych.
 2. Zmodyfikuj grupę zabezpieczeń sieci. Zablokuj cały publiczny **i** bezpośredni ruch lokalny w sieciowej grupie zabezpieczeń. Jedyny ruch przychodzący powinien należeć przez równorzędną sieć wirtualną w firmowej subskrypcji IT.
     1. W poprzedniej iteracji utworzono grupę zabezpieczeń sieci, która blokuje cały ruch publiczny i listy dozwolonych cały ruch wewnętrzny. Teraz chcemy przetworzyć tę siećową grupę zabezpieczeń jako bitową.

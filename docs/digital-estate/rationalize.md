@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 042487ce2c579f581547e4942785cbbba659ad5e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312426"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357273"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racjonalizacja majątku cyfrowego
 
@@ -124,8 +124,8 @@ Równolegle z ciągłą racjonalizacją zespół ds. wdrażania chmury może roz
 - Wzmocnij umiejętności dzięki platformie dostawcy chmury.
 - Zdefiniuj podstawowe usługi (i standardy platformy Azure), które muszą być odpowiednie do długoterminowej wizji.
 - Lepiej zrozumieć, jak operacje mogą wymagać zmiany w dalszej części transformacji.
-- Zapoznaj się ze wszystkimi nieodłącznymi zagrożeniami biznesowymi i tolerancją biznesową dla tych zagrożeń.
-- Ustanów linię bazową lub minimalny produkt żywotny (MVP) na potrzeby zarządzania w oparciu o tolerancję ryzyka dla działalności firmy.
+- Zapoznaj się ze wszystkimi nieodłącznymi zagrożeniami biznesowymi i tolerancją firmy dla tych zagrożeń.
+- Ustanów linię bazową lub minimalny produkt żywotny (MVP) na potrzeby zarządzania w oparciu o tolerancję ryzyka firmy.
 
 ## <a name="release-planning"></a>Planowanie wydania
 

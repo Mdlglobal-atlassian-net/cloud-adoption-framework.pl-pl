@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b0aea9b1b69a659511e9a788e22a0e88e23e9047
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 0526b85e52e203163942050716e5cabd4fc84ff3
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023738"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355567"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategia utrzymania ładu lub zgodności
 
@@ -60,7 +60,7 @@ Aby uzyskać wskazówki dotyczące opracowywania wytycznych dotyczących ładu o
 
 ## <a name="optimize-and-promote-process-changes"></a>Zmiany procesu optymalizacji i podwyższania poziomu
 
-W trakcie procesów optymalizacji i podwyższania zespół nadzoru chmury shluld czas inwestycji na testowanie i weryfikację zgodności z przepisami dotyczącymi nadzoru i przestrzegania standardów. Ponadto ten krok to dobry moment, aby wprowadzić procesy do zespołu ds. ładu chmury w celu zadbanie o szablony, które mogą zapewnić dodatkowe [przyspieszenie wdrażania](../../govern/deployment-acceleration/index.md) przyszłych projektów.
+W trakcie procesów optymalizacji i promowania zespół nadzorujący chmury powinien inwestować czas na przetestowanie i zweryfikowanie zgodności z przepisami dotyczącymi zarządzania i norm. Ponadto ten krok to dobry moment, aby wprowadzić procesy do zespołu ds. ładu chmury w celu zadbanie o szablony, które mogą zapewnić dodatkowe [przyspieszenie wdrażania](../../govern/deployment-acceleration/index.md) przyszłych projektów.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Sugerowana akcja w trakcie procesu optymalizacji i podwyższania poziomu
 

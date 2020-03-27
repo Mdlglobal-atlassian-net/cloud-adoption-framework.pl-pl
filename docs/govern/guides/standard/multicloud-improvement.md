@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a83e2b8a0892e216106890e0bed0066be527e974
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a9c09aaf915a7f008cde80ebdc050ee95bbf7430
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709264"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357005"
 ---
+<!-- cSpell:ignore MPLS -->
+
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: udoskonalenie wielochmurowe
 
 W tym artykule naliczą się opisy, dodając formanty do wdrożenia wielochmurowego.
@@ -32,7 +34,7 @@ W poprzedniej fazie tego przykładu firma rozpoczęła aktywnie wypychanie aplik
 Od tej pory zmieniono pewne zmiany, które wpłyną na nadzór:
 
 - Tożsamość jest kontrolowana przez lokalne wystąpienie Active Directory. Tożsamość hybrydowa jest ułatwiona poprzez replikację do Azure Active Directory.
-- Operacje IT lub operacje w chmurze są w dużej mierze zarządzane przez Azure Monitor i powiązane usługi Automation.
+- Operacje IT lub operacje w chmurze są w dużej mierze zarządzane przez Azure Monitor i powiązane procesy automatyczne.
 - Odzyskiwanie po awarii i ciągłość biznesowa są kontrolowane przez wystąpienia magazynu Azure.
 - Azure Security Center służy do monitorowania naruszeń zabezpieczeń i ataków.
 - Azure Security Center i Azure Monitor są używane do monitorowania zarządzania chmurą.

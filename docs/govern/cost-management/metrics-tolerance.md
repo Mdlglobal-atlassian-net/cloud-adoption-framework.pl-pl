@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c44fc6974be69ff684089c65aa23da5eefbfd814
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 221a29db7eb68acc6ffd5b52a0b01c1769e00222
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708822"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357185"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Cost Management metryki, wskaźniki i tolerancję ryzyka
 
@@ -34,7 +34,7 @@ Poniżej przedstawiono przykłady przydatnych metryk, które należy zebrać, ab
 
 ## <a name="risk-tolerance-indicators"></a>Wskaźniki tolerancji ryzyka
 
-W przypadku wczesnych wdrożeń na dużą skalę, takich jak tworzenie i testowanie lub eksperymentalne pierwsze obciążenia, Cost Management może być relatywnie niskiego ryzyka. Po wdrożeniu większej ilości zasobów wzrasta ryzyko i tolerancja biznesowa dla ryzyka prawdopodobnie odrzuci. Ponadto, ponieważ więcej zespołów wdrażania w chmurze ma możliwość konfigurowania lub wdrażania zasobów w chmurze, zwiększa się ryzyko i zmniejsza tolerancję. Z drugiej strony rozwój dyscypliny Cost Management zajmie się innymi osobami w fazie wdrażania chmury, aby wdrożyć bardziej innowacyjne nowe technologie.
+W przypadku wczesnych wdrożeń na dużą skalę, takich jak tworzenie i testowanie lub eksperymentalne pierwsze obciążenia, Cost Management może być relatywnie niskiego ryzyka. Po wdrożeniu większej ilości zasobów zwiększa się ryzyko i tolerancja firmy dla ryzyka prawdopodobnie odrzuci. Ponadto, ponieważ więcej zespołów wdrażania w chmurze ma możliwość konfigurowania lub wdrażania zasobów w chmurze, zwiększa się ryzyko i zmniejsza tolerancję. Z drugiej strony rozwój dyscypliny Cost Management zajmie się innymi osobami w fazie wdrażania chmury, aby wdrożyć bardziej innowacyjne nowe technologie.
 
 We wczesnych etapach wdrażania chmury będziesz współpracować z firmą, aby określić linię bazową tolerancji ryzyka. Po utworzeniu linii bazowej należy określić kryteria, które spowodują wyzwolenie inwestycji w Cost Management dyscypliny. Te kryteria będą prawdopodobnie inne dla każdej organizacji.
 

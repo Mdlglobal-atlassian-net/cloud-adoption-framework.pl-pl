@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 85f545b8703291819ece3562c0501ba9f0bcdead
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4281638b7badf9b672ba3a38d2daa847b7604e7e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094654"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356377"
 ---
 # <a name="automate-onboarding"></a>Automatyzowanie dołączania
 
@@ -43,7 +43,7 @@ Pliki opisane w poniższej tabeli są używane w tym przykładzie. Można je dos
 | WorkspaceSolutions.json | Szablon Menedżer zasobów, który umożliwia korzystanie z żądanych rozwiązań w obszarze roboczym Log Analytics. |
 | ScopeConfig.json | Menedżer zasobów szablon, który używa modelu zgody dla serwerów lokalnych z rozwiązaniem Change Tracking. Korzystanie z modelu zgody jest opcjonalne. |
 | Enable-VMInsightsPerfCounters.ps1 | Skrypt programu PowerShell, który umożliwia usłudze VM Insights dla serwerów i konfiguruje liczniki wydajności. |
-| ChangeTracking-Filelist.json | Szablon Menedżer zasobów, który definiuje listę plików, które będą monitorowane przez Change Tracking. |
+| Śledzenia zmian-FileList. JSON | Szablon Menedżer zasobów, który definiuje listę plików, które będą monitorowane przez Change Tracking. |
 
 Użyj następującego polecenia, aby uruchomić New-AMSDeployment. ps1:
 

@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0ccff095f78442f583bcd526ee624161276c0db3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 4458cdb4cf5b63a6ed8bb6cb2d17020c948d0702
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092865"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354071"
 ---
+<!-- cSpell:ignore CIOs -->
+
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-cloud-accounting"></a>Czym jest księgowość w chmurze?
@@ -58,7 +60,7 @@ Ten model zapewnia równowagę między rzeczywistym modelem obciążenia zwrotne
 
 Wybór modeli ewidencjonowania aktywności jest decydujący w projekcie systemu. Wybór modelu ewidencjonowania aktywności może mieć wpływ na strategie subskrypcji, standardy nazewnictwa, standardy tagowania oraz projekty zasad i planów.
 
-Po przeprowadzeniu pracy z firmą w celu podejmowania decyzji dotyczących modelu ewidencjonowania aktywności w chmurze i [rynków globalnych](./global-markets.md)masz wystarczającą ilość informacji, aby [opracować platformę Azure](../ready/index.md).
+Po przeprowadzeniu pracy z firmą w celu podejmowania decyzji dotyczących modelu ewidencjonowania aktywności w chmurze i [rynków globalnych](./global-markets.md)masz wystarczającą ilość informacji, aby [wybrać pierwszy projekt](./first-adoption-project.md)wdrożenia w chmurze.
 
 > [!div class="nextstepaction"]
-> [Opracowywanie platformy Azure Foundation](../ready/index.md)
+> [Wybierz swój pierwszy projekt wdrażania w chmurze](./first-adoption-project.md)

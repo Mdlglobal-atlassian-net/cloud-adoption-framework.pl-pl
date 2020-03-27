@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 6b479ac5bd347cda081dc55dbabdc4fbd46d5b11
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311969"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356164"
 ---
+<!-- cSpell:ignore IISRESET WEBVM SQLVM SQLMI contosodc contosohost contosovmsacc cswiz vcenter WEBMV sourcedb -->
+
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Ponowne hostowanie aplikacji lokalnej na maszynie wirtualnej platformy Azure i wystąpieniu zarządzanym usługi SQL Database
 
 W tym artykule przedstawiono sposób, w jaki fikcyjna firma Contoso migruje dwuwarstwową aplikację frontonu .NET systemu Windows działającą na maszynach wirtualnych VMware na maszynę wirtualną platformy Azure przy użyciu usługi Azure Site Recovery. Pokazano również, jak firma Contoso migruje bazę danych aplikacji do wystąpienia zarządzanego usługi Azure SQL Database.
@@ -362,7 +364,7 @@ Aby kontynuować, administratorzy firmy Contoso potwierdzają, że zakończyli p
 Teraz administratorzy firmy Contoso konfigurują środowisko źródłowe. Aby skonfigurować środowisko źródłowe, pobierają szablon OVF i za jego pomocą wdrażają serwer konfiguracji oraz skojarzone z nim składniki jako lokalną maszynę wirtualną VMware o wysokiej dostępności. Składniki na serwerze obejmują:
 
 - Serwer konfiguracji służący do koordynowania komunikacji między środowiskiem lokalnym i platformą Azure. Serwer konfiguracji zarządza replikacją danych.
-- Serwer przetwarzania, który działa jako brama replikacji. Serwer przetwarzania:
+- Serwer przetwarzania działający jako brama replikacji. Serwer przetwarzania:
   - odbiera dane replikacji,
   - optymalizuje dane replikacji przy użyciu pamięci podręcznej, kompresji i szyfrowania,
   - wysyła dane replikacji do usługi Azure Storage.
@@ -387,7 +389,7 @@ Aby skonfigurować środowisko źródłowe, administratorzy firmy Contoso wykonu
     ![Rejestrowanie serwera konfiguracji](./media/contoso-migration-rehost-vm-sql-managed-instance/config-server-register2.png)
 
 7. Narzędzie wykonuje pewne zadania konfiguracyjne, a następnie wywołuje ponowne uruchomienie. Ponownie logują się do maszyny. Zostanie automatycznie uruchomiony kreator zarządzania serwerem konfiguracji.
-8. W kreatorze wybierają kartę sieciową, która będzie odbierała ruch związany z replikacją. Po skonfigurowaniu tego ustawienia nie można go zmienić.
+8. W kreatorze wybierają kartę sieciową do odbierania ruchu związanego z replikacją. Po skonfigurowaniu tego ustawienia nie można go zmienić.
 9. Wybierają subskrypcję, grupę zasobów i magazyn usług Recovery Services do zarejestrowania serwera konfiguracji.
 
     ![Wybieranie magazynu usług Recovery Services](./media/contoso-migration-rehost-vm-sql-managed-instance/cswiz1.png)
@@ -513,7 +515,7 @@ Testowe przełączenie w tryb failover przed przeprowadzeniem migracji maszyny w
 1. Uruchamiają próbę przejścia w tryb failover przy użyciu najnowszego dostępnego punktu w czasie (**Najnowszy przetworzony**).
 2. Wybierają pozycję **Zamknij maszynę przed rozpoczęciem pracy w trybie failover**. Gdy ta opcja zostanie wybrana, usługa Site Recovery spróbuje zamknąć źródłową maszynę wirtualną przed wyzwoleniem trybu failover. Przełączanie do trybu failover będzie kontynuowane, nawet jeśli zamknięcie nie powiedzie się.
 3. Próbne przełączenia do trybu failover: a. Uruchamiane jest sprawdzanie wymagań wstępnych, aby upewnić się, że zostały spełnione wszystkie warunki migracji.
-    b. Tryb failover przetwarza dane, aby umożliwić utworzenie maszyny wirtualnej platformy Azure. Jeśli zostanie wybrany najnowszy punkt odzyskiwania, punkt odzyskiwania zostanie utworzony na podstawie danych.
+    b. Tryb failover przetwarza dane, aby umożliwić utworzenie maszyny wirtualnej platformy Azure. Jeśli wybrano najnowszy punkt odzyskiwania, punkt odzyskiwania zostanie utworzony na podstawie danych.
     c. Przy użyciu danych przetworzonych w poprzednim kroku utworzona zostaje maszyna wirtualna platformy Azure.
 4. Po zakończeniu trybu failover w witrynie Azure Portal będzie widoczna replika maszyny wirtualnej platformy Azure. Sprawdzają, czy wszystko działa prawidłowo: maszyna wirtualna ma odpowiedni rozmiar, jest połączona z odpowiednią siecią i jest uruchomiona.
 5. Po zweryfikowaniu testowego przełączenia w tryb failover przeprowadzają czyszczenie po przejściu do trybu failover oraz rejestrują wszelkie obserwacje.

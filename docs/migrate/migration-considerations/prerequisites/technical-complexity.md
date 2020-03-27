@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 56c7d171d46813d7175e93759be10ce1423115b0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311833"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355165"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 
@@ -43,7 +43,7 @@ Ten akronim nie musi być ściśle przestrzegany, ale powinien pomóc w wyjaśni
 
 ## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Zaległości migracji: wyrównywanie priorytetów i terminów firmy
 
-Lista prac związanych z migracją umożliwia śledzenie portfolio wysokiego poziomu możliwych do zmigrowania obciążeń. Zachęcamy, aby przed migracją zespół strategiczny ds. chmury i zespół wdrożeniowy ds. chmury przeprowadziły przegląd bieżącego [majątku cyfrowego](../../../digital-estate/index.md) oraz uzgodniły uporządkowaną według priorytetów listę obciążeń do migracji. Ta lista stanowi podstawę początkowej listy prac związanych z migracją.
+Zaległości migracji umożliwiają śledzenie teczki najwyższego poziomu obciążeń, które można migrować. Zachęcamy, aby przed migracją zespół strategiczny ds. chmury i zespół wdrożeniowy ds. chmury przeprowadziły przegląd bieżącego [majątku cyfrowego](../../../digital-estate/index.md) oraz uzgodniły uporządkowaną według priorytetów listę obciążeń do migracji. Ta lista stanowi podstawę początkowej listy prac związanych z migracją.
 
 Początkowo obciążenia listy prac związanych z migracją prawdopodobnie nie spełnią kryteriów INVEST przedstawionych w poprzedniej sekcji. Zamiast tego służą jako logiczne grupowanie zasobów z początkowego spisu jako symbol zastępczy na potrzeby pracy w przyszłości. Te symbole zastępcze mogą nie być dokładne z technicznego punktu widzenia, ale stanowią podstawę do koordynacji z działaniami biznesowymi.
 

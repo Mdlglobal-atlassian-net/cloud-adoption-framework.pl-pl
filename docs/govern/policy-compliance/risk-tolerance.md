@@ -7,18 +7,18 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cbde932d0e4a91a80c4bde6a5b9604b43ee30441
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: c96039183f50d0ff189dab04defda4fd1ba2e4fc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709502"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356923"
 ---
 # <a name="evaluate-risk-tolerance"></a>Ocena tolerancja ryzyka
 
 Każda decyzja biznesowa tworzy nowe ryzyko. W ten sposób inwestycja w jakikolwiek sposób wiąże się z ryzykiem strat. Nowe produkty lub usługi tworzą ryzyka związane z awarią rynku. Zmiany w bieżących produktach lub usługach mogą zmniejszyć udział w rynku. Transformacja chmury nie zapewnia rozwiązania Magical do codziennego ryzyka biznesowego. W przeciwieństwie do siebie, połączone rozwiązania (w chmurze lub lokalnie) wprowadzają nowe zagrożenia. Wdrażanie zasobów w dowolnej funkcji połączonej z siecią również rozszerza potencjalne profile zagrożeń przez ujawnienie słabych zabezpieczeń do znacznie szerszej społeczności globalnej. Na szczęście dostawcy chmury wiedzą o zmianach, zwiększaniu i dodawaniu zagrożeń. Zainwestowali się silnie, aby zredukować te zagrożenia i zarządzać nimi w imieniu swoich klientów.
 
-Ten artykuł nie koncentruje się na ryzyku w chmurze. Zamiast tego omawia ryzyko biznesowe związane z różnymi formami transformacji w chmurze. W dalszej części tego artykułu dyskusje przeniesieją fokus, aby omówić sposoby zrozumieć tolerancję biznesową dla ryzyka.
+Ten artykuł nie koncentruje się na ryzyku w chmurze. Zamiast tego omawia ryzyko biznesowe związane z różnymi formami transformacji w chmurze. W dalszej części tego artykułu dyskusje przeniesieją fokus, aby omawiać sposoby zrozumieć tolerancję firmy na ryzyko.
 
 <!-- markdownlint-disable MD026 -->
 

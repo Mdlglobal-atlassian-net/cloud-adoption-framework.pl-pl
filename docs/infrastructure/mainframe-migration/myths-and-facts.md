@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 101ce6ef12ca9f9c686075c6e839a8353bc93da8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 35cd68a317ae3c4d49c961d020d6e803f387741d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171314"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356867"
 ---
+<!-- cSpell:ignore njray nanra chargebacks IPLs -->
+
 # <a name="mainframe-myths-and-facts"></a>Mitów i fakty komputera mainframe
 
 Komputery mainframe są widoczne w sposób wyraźny w historii obliczeń i nie są przeznaczone do obsługi wysoce określonych obciążeń. Większość wyrazów, że Komputery mainframe są sprawdzoną platformą z długotrwałymi procedurami operacyjnymi, które sprawiają, że są niezawodne, niezawodne środowiska. Na potrzeby obciążeń zwrotnych są dostępne oprogramowanie oparte na użyciu, mierzone w milionu instrukcji na sekundę (MIPS).

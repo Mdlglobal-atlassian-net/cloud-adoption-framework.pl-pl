@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7569d0718f7b25625cc40887af81edda53ff0b1e
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: be9d5e49fe4c03335fc28636616f97812d1d2312
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093895"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355002"
 ---
 # <a name="cloud-governance-capabilities"></a>Możliwości ładu chmury
 
@@ -46,13 +46,13 @@ Te zadania są zwykle wykonywane przez funkcję ładu w chmurze co miesiąc.
 **Zadania wczesnego planowania:**
 
 - Zrozumienie [ryzyka biznesowego](../govern/policy-compliance/risk-tolerance.md) wprowadzonego przez plan
-- Reprezentuje [tolerancję biznesową dla ryzyka](../govern/policy-compliance/risk-tolerance.md)
+- Reprezentuje [tolerancję firmy dla ryzyka](../govern/policy-compliance/risk-tolerance.md)
 - Pomoc przy tworzeniu [specjalisty ładu](../govern/guides/index.md)
 
 **Trwające miesięczne zadania:**
 
 - Zrozumienie [ryzyka biznesowego](../govern/policy-compliance/risk-tolerance.md) wprowadzonego podczas każdej wersji
-- Reprezentuje [tolerancję biznesową dla ryzyka](../govern/policy-compliance/risk-tolerance.md)
+- Reprezentuje [tolerancję firmy dla ryzyka](../govern/policy-compliance/risk-tolerance.md)
 - Pomoc w przyrostowym ulepszaniu [zasad i wymagań dotyczących zgodności](../govern/policy-compliance/index.md)
 
 ## <a name="meeting-cadence"></a>Erze spotkania
@@ -90,7 +90,7 @@ Różnica jest delikatna, dlatego jest ważnym rozróżnieniem podczas kompilowa
 
 Opiekunowie w chmurze zaczynają korzystać z bardziej zaawansowanych metod ładu, aby przyspieszyć wdrażanie platformy i zespoły pomocy samoobsługowe ich potrzeby w zakresie środowiska, dzięki czemu mogą być szybciej przenoszone. Przykłady tych bardziej zaawansowanych funkcji są widoczne w ulepszeń przyrostowych dla programu ładu MVP, takich jak [poprawa linii bazowej zabezpieczeń](../govern/guides/complex/security-baseline-improvement.md).
 
-**Akceleratory chmury:** Opiekunowie w chmurze i usługa w chmurze w sposób naturalny zbiera skrypty i automatyzacji, które przyspieszają wdrażanie środowisk, platform, a nawet składników różnych aplikacji. Opieka i udostępnianie tych skryptów oprócz scentralizowanych obowiązków związanych z zarządzaniem pozwala rozwijać w ten sposób wysoki stopień przestrzegania tych architektów.
+**Akceleratory chmury:** Opiekunowie w chmurze i w chmurze automatyzują skrypty i zautomatyzowane procesy, które przyspieszają wdrażanie środowisk, platform, a nawet składników różnych aplikacji. Opieka i udostępnianie tych skryptów oprócz scentralizowanych obowiązków związanych z zarządzaniem pozwala rozwijać w ten sposób wysoki stopień przestrzegania tych architektów.
 
 Te osoby nadzorujące, którzy otwierają swoje skrypty nadzorowane, ułatwiają szybkie dostarczanie projektów technologicznych i osadzanie ładu w architekturze obciążeń. Ten wpływ na obciążenie i obsługę dobrych wzorców projektowych podnosi akceleratory chmury do wyższej rangi specjalisty ds. zarządzania.
 

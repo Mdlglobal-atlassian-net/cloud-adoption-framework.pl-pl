@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 90eed8109627298c8e6a044eff3333154bb17f1d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 8c30f859d90e2fca26fbcd6c70db3c662d56b8a1
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092580"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353639"
 ---
 # <a name="azure-fundamental-concepts"></a>Podstawowe pojęcia dotyczące platformy Azure
 
@@ -29,7 +29,7 @@ Rozpoczynając pracę związaną z wdrażaniem w chmurze platformy Azure warto z
 - **Azure Active Directory (Azure AD):** Usługa zarządzania tożsamościami i dostępem w chmurze firmy Microsoft. Usługa Azure AD umożliwia pracownikom logowanie się i dostęp do zasobów.
 - **Dzierżawa usługi Azure AD:** Dedykowane i zaufane wystąpienie usługi Azure AD. Dzierżawa usługi Azure AD jest tworzona automatycznie, gdy organizacja rejestruje się po raz pierwszy w subskrypcji usługi w chmurze firmy Microsoft, takiej jak Microsoft Azure, Microsoft Intune lub Office 365. Dzierżawa usługi Azure reprezentuje jedną organizację.
 - **Katalog usługi Azure AD:** Każda dzierżawa usługi Azure AD ma jeden, dedykowany i zaufany katalog. Katalog ten zawiera użytkowników, grupy i aplikacje dzierżawy. Katalog służy do obsługi funkcji związanych z zarządzaniem tożsamościami i dostępem do zasobów dzierżawy. Katalog może być skojarzony z wieloma subskrypcjami, ale każda subskrypcja jest skojarzona tylko z jednym katalogiem.
-- **Grupy zasobów:** Kontenery logiczne używane do grupowania powiązanych zasobów w ramach subskrypcji. Każdy zasób może znajdować się tylko w jednej grupie zasobów. Grupy zasobów umożliwiają dokładniejsze grupowanie w ramach subskrypcji. Często używane do reprezentowania kolekcji zasobów wymaganych do obsługi obciążenia, aplikacji lub konkretnej funkcji w ramach subskrypcji.
+- **Grupy zasobów:** Kontenery logiczne używane do grupowania powiązanych zasobów w ramach subskrypcji. Każdy zasób może znajdować się tylko w jednej grupie zasobów. Grupy zasobów umożliwiają dokładniejsze grupowanie w ramach subskrypcji i są często używane do reprezentowania kolekcji zasobów wymaganych do obsługi obciążenia, aplikacji lub konkretnej funkcji w ramach subskrypcji.
 - **Grupy zarządzania:** Kontenery logiczne, które są używane dla co najmniej jednej subskrypcji. Można zdefiniować hierarchię grup zarządzania, subskrypcji, grup zasobów i zasobów, aby efektywnie zarządzać dostępem, zasadami i zgodnością przez dziedziczenie.
 - **Region:** Zestaw centrów danych platformy Azure, które są wdrażane w ramach określonego czasu oczekiwania. Centra danych są połączone za pomocą dedykowanej, regionalnej sieci o małym opóźnieniu. Większość zasobów platformy Azure działa w określonym regionie platformy Azure.
 
@@ -94,7 +94,7 @@ Poniższe zasoby zawierają szczegółowe informacje na temat pojęć omówionyc
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy rozumiesz podstawowe pojęcia związane z platformą Azure, dowiedz się, jak [skalować za pomocą wielu subskrypcji platformy Azure](../azure-best-practices/scaling-subscriptions.md).
+Teraz, gdy rozumiesz podstawowe pojęcia związane z platformą Azure, dowiedz się, jak [skalować za pomocą wielu subskrypcji platformy Azure](../azure-best-practices/scale-subscriptions.md).
 
 > [!div class="nextstepaction"]
-> [Skalowanie za pomocą wielu subskrypcji platformy Azure](../azure-best-practices/scaling-subscriptions.md)
+> [Skalowanie za pomocą wielu subskrypcji platformy Azure](../azure-best-practices/scale-subscriptions.md)

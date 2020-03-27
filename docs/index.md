@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 02/28/2020
-ms.openlocfilehash: 4a6bd2f6a14d4726695f76a776c01a421931005c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 7e98461d0cba205f05400d0ffd8b9ae64c0b69d5
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091984"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356850"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Struktura wdrażania chmury firmy Microsoft dla platformy Azure
 
@@ -182,6 +182,8 @@ Każda sekcja przewodnika Cloud Adoption Framework reprezentuje różną specjal
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>Jak używać przewodnika Microsoft Cloud Adoption Framework dla platformy Azure
 
 Jeśli Twoje przedsiębiorstwo dopiero zaczyna korzystać z platformy Azure, najpierw przeczytaj [Get started with the Cloud Adoption Framework](./getting-started/migrate.md) (Wprowadzenie do przewodnika Cloud Adoption Framework). To omówienie zawiera najlepsze rozwiązania dotyczące transformacji cyfrowej Twojego przedsiębiorstwa na każdym etapie tego procesu.
+
+<!-- test:ignoreNextStep -->
 
 > [!div class="nextstepaction"]
 > [Wprowadzenie](./getting-started/migrate.md)

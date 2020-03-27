@@ -7,13 +7,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 9b355fa346373d1fcca069e2e47e23d1ee3a86b2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223490"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356762"
 ---
+<!-- cSpell:ignore deprioritize -->
+
 # <a name="empower-adoption"></a>Zwiększanie akceptacji
 
 Ostatecznym testem innowacji jest reagowanie klientów na Twoje wynalazki. Czy hipoteza zakończyła się prawdziwie? Czy klienci korzystają z rozwiązania? Czy skalowanie jest zgodne z potrzebami żądanej wartości procentowej użytkowników? Co najważniejsze, kontynuują wycofywanie? Żadne z tych pytań nie może zostać poproszonych, dopóki nie zostanie wdrożony minimalny, żywotny rozwiązanie produktu (MVP). W tym artykule skupmy się na dyscyplinie podejmowania akceptacji.
@@ -43,7 +45,7 @@ Aby zminimalizować liczbę techniczną, założono, że data_spłaty będą poc
 
 Zgodnie z opisem w temacie [mierzenie wpływu klientów](./measure.md), pozytywna weryfikacja każdej hipotezy wymaga iteracji i określenia. Wystąpił znacznie więcej błędów niż w przypadku usługi WINS w dowolnym cyklu innowacji. Jest to oczekiwane. Jeśli jednak klient potrzebuje, hipotezy i rozwiązania wyrównania w odpowiedniej skali, świat zmieni się szybko.
 
-W przypadku skalowania innowacji nie ma więcej cennych narzędzi niż udostępniona baza kodu dla rozwiązania. Niestety, nie istnieje niezawodny sposób przewidywania iteracji lub tego, który SPECJALISTy będzie miał wygraną kombinację. Dlatego nigdy nie jest zbyt wczesny do ustanowienia udostępnionej bazy kodu lub repozytorium. Jest to jedno podejście [techniczne](./build.md#reduce-complexity-and-delay-technical-spikes) , które nigdy nie powinno być opóźnione. Gdy zespół iteruje przez różne rozwiązania MVP, udostępnione repozytorium umożliwia łatwą współpracę i przyspieszenie opracowywania. Gdy zmiany w rozwiązaniu przeciągnieją metryki szkoleniowe w dół, Kontrola wersji umożliwia wycofanie do wcześniejszej, bardziej efektywnej wersji rozwiązania.
+W przypadku skalowania innowacji nie ma więcej cennych narzędzi niż współdzielona baza kodu dla rozwiązania. Niestety, nie istnieje niezawodny sposób przewidywania iteracji lub tego, który SPECJALISTy będzie miał wygraną kombinację. Dlatego nigdy nie jest zbyt wczesny do ustanowienia współużytkowanego kodu bazowego lub repozytorium. Jest to jedno podejście [techniczne](./build.md#reduce-complexity-and-delay-technical-spikes) , które nigdy nie powinno być opóźnione. Gdy zespół iteruje przez różne rozwiązania MVP, udostępnione repozytorium umożliwia łatwą współpracę i przyspieszenie opracowywania. Gdy zmiany w rozwiązaniu przeciągnieją metryki szkoleniowe w dół, Kontrola wersji umożliwia wycofanie do wcześniejszej, bardziej efektywnej wersji rozwiązania.
 
 Szeroko przyjętym narzędziem do zarządzania repozytoriami kodu jest [GitHub](https://guides.github.com), który umożliwia tworzenie repozytorium kodu udostępnionego w zaledwie kilku krokach. Ponadto funkcja [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) platformy Azure DevOps może służyć do tworzenia repozytorium [git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) lub [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) .
 
