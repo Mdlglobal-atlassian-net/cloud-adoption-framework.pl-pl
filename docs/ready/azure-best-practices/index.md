@@ -1,31 +1,32 @@
 ---
 title: Najlepsze rozwiązania dotyczące gotowości na platformę Azure
-description: Dowiedz się, jak zapewnić najlepsze rozwiązania i dodatkowe wskazówki, które pomogą zespołowi w ustanowieniu i przygotowaniu środowiska platformy Azure.
+description: Poznaj najlepsze rozwiązania i dodatkowe wskazówki, które pomogą zespołowi w ustanowieniu i przygotowaniu środowiska platformy Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8d44d3981824c9599151391cd3b7e3550ac31cd6
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: aecef0bbbdc88b2f95d6a93efeb496cf2d787a45
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093559"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354650"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Najlepsze rozwiązania dotyczące gotowości na platformę Azure
 
-Dużą część gotowości na chmurę stanowi wyposażenie personelu w umiejętności techniczne niezbędne do rozpoczęcia pracy nad wdrożeniem chmury oraz przygotowanie docelowego środowiska migracji na zasoby i obciążenia, które zostaną przeniesione do chmury. Przeczytaj te najlepsze rozwiązania i dodatkowe wskazówki, aby pomóc zespołowi w przygotowaniu środowiska platformy Azure.
+Gotowość na chmurę wymaga wyposażenia personelu w umiejętności techniczne niezbędne do rozpoczęcia pracy nad wdrożeniem chmury oraz przygotowania docelowego środowiska migracji na zasoby i obciążenia, które zostaną przeniesione do chmury. Przeczytaj te najlepsze rozwiązania i dodatkowe wskazówki, aby pomóc zespołowi w przygotowaniu środowiska platformy Azure.
 
 ## <a name="azure-fundamentals"></a>Podstawy platformy Azure
 
 Zorganizuj i wdróż zasoby w środowisku platformy Azure.
 
 - [Podstawowe pojęcia dotyczące platformy Azure](../considerations/fundamental-concepts.md). Poznaj kluczowe pojęcia i terminy związane z platformą Azure oraz sposób, w jaki te pojęcia się ze sobą wiążą.
-- [Zalecane konwencje nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md). Zapoznaj się z szczegółowymi zaleceniami dotyczącymi nazewnictwa i tagowania zasobów. Te zalecenia ułatwiają wdrażanie chmury w przedsiębiorstwie.
-- [Skalowanie za pomocą wielu subskrypcji platformy Azure](../azure-best-practices/scaling-subscriptions.md). Poznaj strategie skalowania za pomocą wielu subskrypcji platformy Azure.
-- [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Dowiedz się, jak za pomocą grup zarządzania platformy Azure można zarządzać zasobami, rolami, zasadami i wdrożeniem w wielu subskrypcjach.
+- [Utwórz początkowe subskrypcje](./initial-subscriptions.md). Ustanów początkowy zestaw subskrypcji platformy Azure, aby rozpocząć wdrażanie chmury.
+- [Skaluj środowisko platformy Azure przy użyciu wielu subskrypcji](../azure-best-practices/scale-subscriptions.md). Poznaj przyczyny i strategie tworzenia dodatkowych subskrypcji w celu skalowania środowiska platformy Azure.
+- [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](../azure-best-practices/organize-subscriptions.md). Dowiedz się, jak za pomocą grup zarządzania platformy Azure można zarządzać zasobami, rolami, zasadami i wdrożeniem w wielu subskrypcjach.
+- [Stosuj zalecane konwencje nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md). Zapoznaj się z szczegółowymi zaleceniami dotyczącymi nazewnictwa i tagowania zasobów. Te zalecenia ułatwiają wdrażanie chmury w przedsiębiorstwie.
 - [Uzyskiwanie spójności w chmurze hybrydowej](../considerations/hybrid-consistency.md). Utwórz rozwiązania chmury hybrydowej, które zapewniają korzyści związane z innowacjami w chmurze przy zachowaniu wielu udogodnień zarządzania w środowisku lokalnym.
 
 ## <a name="networking"></a>Networking

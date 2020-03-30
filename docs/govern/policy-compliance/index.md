@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e42cd5f8f551ddb4d68b19eab5e15c28cbe539ad
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 4bb736dc232ae4c1d1989da5c0b31c19e0c07672
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312173"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356959"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -46,7 +46,7 @@ Na powyższej ilustracji strategia utrzymywania ładu (ryzyko, zasady i zgodnoś
 
 ## <a name="an-incremental-approach-to-cloud-governance"></a>Przyrostowy model utrzymania ładu w chmurze
 
-W modelu przyrostowym utrzymania ładu w chmurze przyjmuje się założenie, że nie jest akceptowalne przekroczenie [tolerancji biznesowej na ryzyko](./risk-tolerance.md). Zamiast tego przyjmuje się, że rolą utrzymania ładu jest przyspieszenie wprowadzania zmian w firmie, pomoc inżynierom w zrozumieniu wytycznych dotyczących architektury i upewnienie się, że [czynniki ryzyka biznesowego](./business-risk.md) są regularnie monitorowane i korygowane. Z drugiej strony tradycyjna rola utrzymania ładu może stanowić dla inżynierów lub dla całej firmy barierę przed wdrażaniem.
+W modelu przyrostowym utrzymania ładu w chmurze przyjmuje się założenie, że nie jest akceptowalne przekroczenie [tolerancji na ryzyko danej firmy](./risk-tolerance.md). Zamiast tego przyjmuje się, że rolą utrzymania ładu jest przyspieszenie wprowadzania zmian w firmie, pomoc inżynierom w zrozumieniu wytycznych dotyczących architektury i upewnienie się, że [czynniki ryzyka biznesowego](./business-risk.md) są regularnie monitorowane i korygowane. Z drugiej strony tradycyjna rola utrzymania ładu może stanowić dla inżynierów lub dla całej firmy barierę przed wdrażaniem.
 
 W przyrostowym modelu utrzymania ładu w chmurze występuje czasami naturalna różnica zdań między zespołami tworzącymi nowe rozwiązania biznesowe i zespołami zabezpieczającymi firmę przed czynnikami ryzyka. Jednak w tym modelu te dwa zespoły mogą stać się równorzędnymi partnerami pracującymi w przyrostach lub przebiegach. Jako równorzędni partnerzy, zespół ds. ładu w chmurze i zespoły ds. wdrożeń w chmurze rozpoczynają razem pracę, aby ujawnić i ocenić czynniki ryzyka oraz znaleźć sposób radzenia sobie z nimi. Skoncentrowanie się na wspólnym celu może zmniejszyć różnice zdań między zespołami i doprowadzić do współpracy między nimi.
 

@@ -9,19 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b6d17a410c1903d984b5a1c756f51f7c5145ff9c
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 6e9b83784d2fdaaca7ae4a55ccd977d266b6193d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140290"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356489"
 ---
 ::: zone target="docs"
 
 # <a name="azure-management-guide-before-you-start"></a>Przewodnik po zarządzaniu platformą Azure: Przed rozpoczęciem
-
-> [!NOTE]
-> Ten przewodnik jest punktem wyjścia do wskazówek dotyczących innowacji w przewodniku Cloud Adoption Framework. Jest dostępny także w centrum Szybki start platformy Azure. Porada w dalszej części tego artykułu zawiera link do centrum Szybki start platformy Azure.
 
 ::: zone-end
 
@@ -31,7 +28,7 @@ ms.locfileid: "79140290"
 
 ::: zone-end
 
-Przewodnik po zarządzaniu platformą Azure pomaga klientom platformy Azure w utworzeniu planu bazowego zarządzania w celu zapewnienia spójności zasobów na platformie Azure. Przedstawia podstawowe narzędzia potrzebne w każdym środowisku produkcyjnym platformy Azure, zwłaszcza takim, w którym hostowane są dane poufne. Aby uzyskać więcej informacji, najlepsze rozwiązania i informacje dotyczące przygotowywania środowiska w chmurze, zobacz [sekcję dotyczącą gotowości w przewodniku Cloud Adoption Framework](../index.md).
+Przewodnik po zarządzaniu platformą Azure pomaga klientom platformy Azure w utworzeniu planu bazowego zarządzania w celu zapewnienia spójności zasobów na platformie Azure. Przedstawia podstawowe narzędzia potrzebne w każdym środowisku produkcyjnym platformy Azure, zwłaszcza takim, w którym hostowane są dane poufne. Aby uzyskać więcej informacji, najlepsze rozwiązania i informacje dotyczące przygotowywania środowiska w chmurze, zobacz [sekcję dotyczącą gotowości](../index.md) w przewodniku Cloud Adoption Framework.
 
 ## <a name="scope-of-this-guide"></a>Zakres tego przewodnika
 
@@ -51,9 +48,6 @@ Ten przewodnik zawiera informacje na temat sposobu wyboru narzędzi na potrzeby 
 Plan bazowy zarządzania określa minimalny zestaw narzędzi i procesów, które należy stosować wobec wszystkich zasobów w środowisku. W planie bazowym zarządzania można uwzględnić również kilka opcji dodatkowych. Kilka kolejnych artykułów jest poświęconych przyspieszaniu wdrażania funkcji zarządzania w chmurze poprzez skupienie się na minimalnym wymaganym zestawie opcji zamiast na wszystkich opcjach, które są dostępne.
 
 ::: zone target="docs"
-
-> [!TIP]
-> Aby zapoznać się z tym przewodnikiem w środowisku interaktywnym, skorzystaj z witryny Azure Portal. Przejdź do [centrum Szybki start platformy Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) w witrynie Azure Portal, a następnie wybierz pozycję **Przewodnik po zarządzaniu platformą Azure**. Następnie postępuj zgodnie z instrukcjami krok po kroku.
 
 Następny krok to [Spis i widoczność](./inventory.md).
 

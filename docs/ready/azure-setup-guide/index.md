@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e17ab7acd3813929fc05915908108b1cd634d5f0
-ms.sourcegitcommit: e21e70a5ad7bff2f2009a2da8e91a54fccd6d38f
+ms.openlocfilehash: 8b55a99194ef6032905c7495206adeb8fa72ebfb
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80299056"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354475"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -41,10 +41,10 @@ Omawiane tematy:
 >
 > - **Organizowanie zasobów:** konfigurowanie hierarchii zarządzania w celu spójnego stosowania kontroli dostępu, zasad i zgodności do grup zasobów oraz używanie tagowania do śledzenia powiązanych zasobów.
 > - **Zarządzanie dostępem:** korzystanie z kontroli dostępu opartego na podstawie ról w celu upewnienia się, że użytkownicy mają uprawnienia, których naprawdę potrzebują.
-> - **Zarządzanie kosztami i rozliczeniami:** identyfikowanie typu subskrypcji oraz przedstawienie sposobu działania rozliczeń i kontrolowania kosztów.
+> - **Zarządzanie kosztami i rozliczeniami:** Identyfikowanie typu subskrypcji oraz poznawanie sposobu działania rozliczania i kontrolowania kosztów.
 > - **Planowanie ładu, zabezpieczeń i zgodności:** wymuszanie i automatyzowanie ustawień zasad i zabezpieczeń, które ułatwiają spełnianie odpowiednich wymagań prawnych.
-> - **Korzystanie z monitorowania i raportowania:** uzyskiwanie widoczności zasobów, które ułatwiają identyfikowanie i rozwiązywanie problemów, optymalizowanie wydajności i uzyskiwanie szczegółowych informacji na temat zachowania klientów.
-> - **Śledzenie platformy Azure:** śledzenie aktualizacji produktu, które umożliwia stosowanie aktywnego podejścia do zarządzania zmianami.
+> - **Korzystanie z monitorowania i raportowania:** Uzyskiwanie widoczności zasobów w celu identyfikowania i rozwiązywania problemów, optymalizowania wydajności oraz uzyskiwania analiz zachowania klientów.
+> - **Śledzenie platformy Azure:** Śledzenie aktualizacji produktu, które umożliwia stosowanie aktywnego podejścia do zarządzania zmianami.
 
 ::: zone target="docs"
 

@@ -84,7 +84,7 @@ items:
             href: plan/prerequisites.md
           - name: Wdrażanie szablonu w usłudze Azure DevOps
             href: plan/template.md
-          - name: Ustalanie priorytetów i definiowanie obciążeń
+          - name: Definiowanie i ustalanie priorytetów obciążeń
             href: plan/workloads.md
           - name: Dopasowanie zasobów do obciążeń
             href: plan/assets.md
@@ -170,8 +170,12 @@ items:
             href: ready/azure-best-practices/index.md
           - name: Organizacja zasobów
             items:
-              - name: Skalowanie za pomocą wielu subskrypcji
-                href: ready/azure-best-practices/scaling-subscriptions.md
+              - name: Tworzenie początkowych subskrypcji
+                href: ready/azure-best-practices/initial-subscriptions.md
+              - name: Skalowanie przy użyciu wielu subskrypcji
+                href: ready/azure-best-practices/scale-subscriptions.md
+              - name: Organizowanie subskrypcji
+                href: ready/azure-best-practices/organize-subscriptions.md
               - name: Nazewnictwo i tagowanie
                 href: ready/azure-best-practices/naming-and-tagging.md
           - name: Networking

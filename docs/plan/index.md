@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 layout: LandingPage
-ms.openlocfilehash: e22c8332a02b985d733fd8e2e36f6873bd435c77
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: cc4515b97454094ed84a78d04170a8bd03c0f5b2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092611"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354982"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -110,7 +110,7 @@ Pobierz [szablon planowania i strategii struktury wdrażania chmury](https://arc
 
 ## <a name="next-steps"></a>Następne kroki
 
-Rozpocznij tworzenie planu wdrożenia chmury, skupiając się na [majątku cyfrowym](../digital-estate/index.md).
+Rozpocznij tworzenie planu wdrożenia chmury, poznając [pięć typowych opcji racjonalizacji w chmurze](../digital-estate/5-rs-of-rationalization.md).
 
 > [!div class="nextstepaction"]
-> [Majątek cyfrowy](../digital-estate/index.md)
+> [Pięć typowych opcji racjonalizacji w chmurze](../digital-estate/5-rs-of-rationalization.md)
