@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 42cf4ffb65456bf1519a0f2bb0f017bb078687d9
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: adb39a25cfb232b19bd983e5d4e0ab7d7370add1
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170974"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356608"
 ---
 ::: zone target="docs"
 
@@ -48,7 +48,7 @@ Listę dostępnych usług oraz informacje o wymaganym trenowaniu można znaleź�
 
 Aby użyć interfejsu API usługi Cognitive Service:
 
-1. W witrynie [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts) przejdź do usług **Cognitive Services**.
+1. W witrynie [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2FAccounts) przejdź do usług **Cognitive Services**.
 2. Wybierz pozycję **Dodaj**, aby znaleźć interfejs API usług Cognitive Services w portalu Azure Marketplace.
 3. Wykonaj jedną z następujących czynności:
    - Jeśli znasz nazwę usługi, której chcesz użyć, wpisz ją w polu **Wyszukaj w witrynie Marketplace**.
@@ -58,7 +58,7 @@ Aby użyć interfejsu API usługi Cognitive Service:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts]" submitText="Go to Cognitive Services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts]" submitText="Go to Cognitive Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -66,7 +66,7 @@ Aby użyć interfejsu API usługi Cognitive Service:
 
 ::: zone target="docs"
 
-Możesz przejść bezpośrednio do usług Cognitive Services w witrynie [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2Faccounts).
+Możesz przejść bezpośrednio do usług Cognitive Services w witrynie [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts).
 
 ::: zone-end
 
@@ -80,7 +80,7 @@ Jeśli istniejące modele w usługach Cognitive Services nie umożliwiają uzysk
 
 Za pomocą usługi Azure Machine Learning Studio można utworzyć model i eksperymentować z nim w następujący sposób:
 
-1. W witrynie [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces) przejdź do usługi **Azure Machine Learning Studio**.
+1. W witrynie [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces) przejdź do usługi **Azure Machine Learning Studio**.
 2. Wybierz pozycję **Utwórz obszar roboczy Machine Learning Studio** i postępuj zgodnie z instrukcjami, aby utworzyć obszar roboczy.
 
    Nowy obszar roboczy zawiera interfejs typu „przeciągnij i upuść”, który pozwala utworzyć model i eksperymentować z nim (jest to alternatywa dla trenowania głębokiego).
@@ -89,7 +89,7 @@ Za pomocą usługi Azure Machine Learning Studio można utworzyć model i eksper
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces]" submitText="Go to Azure Machine Learning Studio" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces]" submitText="Go to Azure Machine Learning Studio" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -97,7 +97,7 @@ Za pomocą usługi Azure Machine Learning Studio można utworzyć model i eksper
 
 ::: zone target="docs"
 
-Możesz przejść bezpośrednio do usługi Azure Machine Learning Studio w witrynie [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2Fworkspaces).
+Możesz przejść bezpośrednio do usługi Azure Machine Learning Studio w witrynie [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearning%2FWorkspaces).
 
 ::: zone-end
 
@@ -117,7 +117,7 @@ Przy użyciu usługi Azure Machine Learning analityk danych może wytrenować i 
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces]" submitText="Go to Azure Machine Learning service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces]" submitText="Go to Azure Machine Learning service" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -125,7 +125,7 @@ Przy użyciu usługi Azure Machine Learning analityk danych może wytrenować i 
 
 ::: zone target="docs"
 
-Możesz przejść bezpośrednio do usługi Azure Machine Learning Studio w witrynie [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2Fworkspaces).
+Możesz przejść bezpośrednio do usługi Azure Machine Learning Studio w witrynie [Azure Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.MachineLearningServices%2FWorkspaces).
 
 ::: zone-end
 

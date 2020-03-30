@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: a75c014401a8a45eee0d0e301cf209ad3eda690b
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 94e5dfb8f6a7d38f844c490a649bd35cf0887685
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225806"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353809"
 ---
+<!-- cSpell:ignore jelledruyts andym endjin -->
+
 # <a name="stay-current-with-microsoft-azure"></a>Bądź na bieżąco z platformą Microsoft Azure
 
 Tempo zmian platform w chmurze, takich jak Microsoft Azure, jest większe niż tempo, do którego przyzwyczaiła się większość organizacji. To tempo zmian oznacza, że organizacje muszą dostosować pracowników i procesy do nowego rytmu. Jeśli odpowiadasz w organizacji za nadążanie za zmianami, czasami może Cię to przytłaczać. Zasoby wymienione w tej sekcji mogą pomóc zachować aktualność.
@@ -54,9 +56,9 @@ W przypadku bardziej zaawansowanej zawartości, która pomaga być na bieżąco 
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Cotygodniowe wideo z inżynierami, którzy tworzą platformę Azure. Przedstawiają oni pokazy, odpowiadają na pytania i dzielą się szczegółowymi informacjami.
   - Subskrybuj przy użyciu kanału informacyjnego [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).
-- [Azure Charts](https://azurecharts.com/)*
+- [Azure Charts](https://azurecharts.com)*
   - Ta wizualizacja przedstawia wszystkie aktualizacje platformy Azure w ciągu ostatnich sześciu miesięcy. Zawiera ona inne przydatne wykresy i narzędzia ułatwiające śledzenie zmian platformy Azure.
-- [AzAdvertizer](https://www.azadvertizer.net/)*
+- [AzAdvertizer](https://www.azadvertizer.net)*
   - Śledzenie wersji i zmian w możliwościach ładu platformy Azure (np. usługa Azure Policy, inicjatywy zasad, aliasy zasad i kontrola dostępu na podstawie ról).
 - [Azure Weekly](https://azureweekly.info)*
   - Ten biuletyn udostępniany przez witrynę [endjin](https://endjin.com) zawiera tygodniowe podsumowanie najważniejszych wiadomości o platformie Microsoft Azure. Obejmuje również interesującą zawartość historyczną.

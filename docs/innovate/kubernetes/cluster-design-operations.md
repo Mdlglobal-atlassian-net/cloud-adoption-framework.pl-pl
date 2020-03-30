@@ -1,6 +1,5 @@
 ---
-title: Projektowanie i operacje klastra
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: Projekt i operacje klastra
 description: Dowiedz się więcej na temat Kubernetes w strukturze wdrażania chmury na potrzeby projektowania i operacji klastra.
 author: sabbour
 ms.author: asabbour
@@ -8,18 +7,18 @@ ms.topic: guide
 ms.date: 12/16/2019
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 94288e4dd6e9bde1113c6343067dfaec9e7f3c62
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 1a4bcb42ec8fdcdbdb53d918c8348c22c2606649
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356556"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392733"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
-# <a name="cluster-design-and-operations"></a>Projektowanie i operacje klastra
+# <a name="cluster-design-and-operations"></a>Projekt i operacje klastra
 
-Określ konfigurację klastra i projekt sieci. Skalowalność w przyszłości dzięki automatyzowaniu aprowizacji infrastruktury. Zapewnienie wysokiej dostępności dzięki zaplanowaniu ciągłości działania i odzyskiwania po awarii.
+Identyfikowanie pod kątem konfiguracji klastra i projektu sieci. Skalowalność w przyszłości dzięki automatyzowaniu aprowizacji infrastruktury. Zapewnij wysoką dostępność, planując pod kątem ciągłości działania i odzyskiwania po awarii.
 
 ## <a name="plan-train-and-proof"></a>Planowanie, uczenie i weryfikacja
 

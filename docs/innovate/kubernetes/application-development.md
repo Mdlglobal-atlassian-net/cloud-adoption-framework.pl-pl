@@ -1,6 +1,5 @@
 ---
-title: Projektowanie i wdrażanie aplikacji
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: Tworzenie i wdrażanie aplikacji
 description: Dowiedz się więcej o korzystaniu z Kubernetes w strukturze wdrażania w chmurze na potrzeby tworzenia aplikacji i architektury.
 author: sabbour
 ms.author: asabbour
@@ -8,18 +7,18 @@ ms.topic: guide
 ms.date: 03/20/2020
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 317119a6bdc2e2057c37c78b773cab5f9052fa81
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 6ad36a6dfbce83b23bfcee382ff44daeb9db5f7f
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356586"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392768"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler Istio Linkerd -->
 
-# <a name="application-development-and-deployment"></a>Projektowanie i wdrażanie aplikacji
+# <a name="application-development-and-deployment"></a>Tworzenie i wdrażanie aplikacji
 
-Badaj wzorce i praktyki związane z tworzeniem aplikacji, Konfiguruj potoki DevOps i wdrażaj najlepsze rozwiązania inżynieryjne dla inżynierów niezawodności (SRE).
+Badaj wzorce i praktyki związane z tworzeniem aplikacji, konfiguruj potoki DevOps i implementuj najlepsze rozwiązania inżynierii niezawodności lokacji.
 
 ## <a name="plan-train-and-proof"></a>Planowanie, uczenie i weryfikacja
 

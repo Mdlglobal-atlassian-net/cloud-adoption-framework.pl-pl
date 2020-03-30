@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 95087aeda19eb87759bc09f605c42c706d79aac2
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: e39a13702f0734e592c7dfbefa90ec5f34846359
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78891957"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356665"
 ---
 ::: zone target="docs"
 
@@ -56,7 +56,7 @@ Aby wyświetlić dane ilościowe z aplikacji:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/microsoft.insights%2Fcomponents]" submitText="Go to Application Insights" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents]" submitText="Go to Application Insights" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -64,7 +64,7 @@ Aby wyświetlić dane ilościowe z aplikacji:
 
 ::: zone target="docs"
 
-Aby wyświetlić dane dotyczące aplikacji, przejdź do witryny [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/microsoft.insights%2Fcomponents).
+Aby wyświetlić dane dotyczące aplikacji, przejdź do witryny [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents).
 
 ::: zone-end
 
@@ -100,7 +100,7 @@ Aby wyświetlić dane ilościowe z interfejsów API:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice]" submitText="Go to API Management services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService]" submitText="Go to API Management services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -108,7 +108,7 @@ Aby wyświetlić dane ilościowe z interfejsów API:
 
 ::: zone target="docs"
 
-Aby otworzyć usługi API Management, przejdź do witryny [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2Fservice).
+Aby otworzyć usługi API Management, przejdź do witryny [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService).
 
 ::: zone-end
 
@@ -140,7 +140,7 @@ Aby utworzyć projekt DevOps:
 2. Wybierz pozycję **Utwórz projekt DevOps**.
 3. Wybierz pozycję **Środowisko wykonawcze, struktura i usługa**.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Projects" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -169,7 +169,7 @@ Aby wyświetlić bieżące wdrożenia w potoku:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2FSites]" submitText="Go to App Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -177,7 +177,7 @@ Aby wyświetlić bieżące wdrożenia w potoku:
 
 ::: zone target="docs"
 
-Aby wyświetlić aplikacje w usłudze App Service, przejdź do witryny [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites).
+Aby wyświetlić aplikacje w usłudze App Service, przejdź do witryny [Azure Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2FSites).
 
 ::: zone-end
 

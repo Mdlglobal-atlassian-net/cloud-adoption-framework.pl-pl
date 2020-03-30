@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4b4f3f9e8be48f96abf9471738a50491ac80d317
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ce937c6e3c173d829a311b838e33ede754a0f173
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708805"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392477"
 ---
 # <a name="cost-management-template"></a>Szablon Cost Management
 
@@ -24,11 +24,7 @@ W miarę postępu dyskusji Użyj struktury tego szablonu jako modelu do przechwy
 > [!IMPORTANT]
 > Ten szablon jest ograniczonym przykładem. Przed zaktualizowaniem tego szablonu w celu odzwierciedlenia wymagań należy zapoznać się z kolejnymi krokami dotyczącymi definiowania efektywnej dyscypliny Cost Management w ramach strategii nadzoru chmurowego.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx">Pobierz szablon dyscypliny ładu</a>
-
-<!-- markdownlint-enable MD033 -->
+[Pobierz szablon dyscypliny ładu](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Następne kroki
 

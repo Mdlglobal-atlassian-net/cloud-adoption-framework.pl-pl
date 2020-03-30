@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a76ca679b8c61e96b8bc8552b8ffbcaa0822e46a
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 18c3c81fdd756e90e729387c7030c64e8a87a056
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094721"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356455"
 ---
 <!-- cSpell:ignore WSUS -->
 
@@ -60,8 +60,8 @@ Aby uzyskać więcej informacji, zobacz [Rozwiązanie Update Management](https:/
 >
 > Wyróżniamy dwie metody dołączania:
 >
-> - [Pojedyncza maszyna wirtualna](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
-> - [Cała subskrypcja](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+> - [Pojedyncza maszyna wirtualna](../../manage/azure-server-management/onboard-single-vm.md)
+> - [Cała subskrypcja](../../manage/azure-server-management/onboard-at-scale.md)
 >
 > Przed kontynuowaniem korzystania z rozwiązania Update Management należy wybrać jedną z nich.
 
@@ -69,7 +69,7 @@ Aby uzyskać więcej informacji, zobacz [Rozwiązanie Update Management](https:/
 
 Aby zastosować zasady do grupy zasobów:
 
-1. Wybierz pozycję [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Wybierz pozycję [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Wybierz pozycję **Konta usługi Automation** i zaznacz jedno z wyświetlonych kont.
 1. Przejdź do obszaru **Zarządzanie konfiguracją**.
 1. Do kontrolowania stanu i zgodności operacyjnej zarządzanych maszyn wirtualnych można używać usług **Tworzenie spisu**, **Zarządzanie zmianami** i **Konfiguracja stanu**.
@@ -78,7 +78,7 @@ Aby zastosować zasady do grupy zasobów:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

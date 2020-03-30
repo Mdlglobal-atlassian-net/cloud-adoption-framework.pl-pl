@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 86988a83b0c68bea60d0cceff5a168e2b2b08fd5
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 5fedbb5164da05b166d8a42d8d1ceaf43ee95185
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024056"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354436"
 ---
-<!-- cSpell:ignore LijuKodicheraJayadevan Fsubscriptions Fresource -->
+<!-- cSpell:ignore LijuKodicheraJayadevan -->
 
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Zarządzanie dostępem do środowiska platformy Azure przy użyciu kontroli dostępu na podstawie ról
 
@@ -46,7 +46,7 @@ Aby udzielić użytkownikowi dostępu do grupy zasobów:
 1. Wybierz pozycję **+ Dodaj** > **Dodaj przypisanie roli**.
 1. Wybierz rolę, a następnie przypisz dostęp do użytkownika, grupy lub jednostki usługi.
 
-::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups]" submitText="Go to resource groups" ::: form-end
+::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources/Subscriptions/ResourceGroups]" submitText="Go to resource groups" ::: form-end
 
 **Udzielanie dostępu do subskrypcji:**
 
@@ -68,7 +68,7 @@ Aby udzielić użytkownikowi dostępu do subskrypcji:
 
 Aby udzielić użytkownikowi dostępu do grupy zasobów:
 
-1. Przejdź do pozycji [Grupy zasobów](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups).
+1. Przejdź do pozycji [Grupy zasobów](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
 1. Wybierz grupę zasobów.
 1. Wybierz pozycję **Kontrola dostępu (IAM)** .
 1. Wybierz pozycję **+ Dodaj** > **Dodaj przypisanie roli**.

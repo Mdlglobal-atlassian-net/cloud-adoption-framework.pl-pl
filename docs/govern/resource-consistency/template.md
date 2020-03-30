@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72e4de691e083aad1df53f6a13e46c2c7fb907e4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 378fa753a2b4ca793d8ad13de8d0c7ed4ec44dfa
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709553"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392622"
 ---
 # <a name="resource-consistency-template"></a>Szablon spójności zasobów
 
@@ -24,11 +24,7 @@ W miarę postępu dyskusji Użyj struktury tego szablonu jako modelu do przechwy
 > [!IMPORTANT]
 > Ten szablon jest ograniczonym przykładem. Przed zaktualizowaniem tego szablonu, aby odzwierciedlał wymagania, należy zapoznać się z kolejnymi krokami dotyczącymi definiowania efektywnej dyscypliny spójności zasobów w ramach strategii nadzoru chmurowego.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx">Pobierz szablon dyscypliny ładu</a>
-
-<!-- markdownlint-enable MD033 -->
+[Pobierz szablon dyscypliny ładu](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Następne kroki
 

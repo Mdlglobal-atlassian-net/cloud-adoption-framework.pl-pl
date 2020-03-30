@@ -1,6 +1,5 @@
 ---
 title: Wdrażanie strefy docelowej migracji na platformie Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dowiedz się, jak wdrożyć strefę docelową migracji na platformie Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b38d0f17b0b8e96adec4ac461e0dbf8337dc0089
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: ed7e64e2c18187621f2c7703b5b1d9f2056997ea
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354140"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392625"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 697e42d16918960f97bc534bad93a854af963a49
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312343"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353892"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -215,7 +215,7 @@ Niektóre narzędzia migracji innych firm i usługi niezależnych dostawców opr
 
 UnifyCloud to usługa niezależnego dostawcy oprogramowania, która zapewnia narzędzia do automatyzowania oceny, migracji i modernizacji.
 
-[Dowiedz się więcej](https://www.unifycloud.com/)
+[Dowiedz się więcej](https://www.unifycloud.com)
 
 ## <a name="cloudamize"></a>Cloudamize
 
@@ -278,7 +278,7 @@ Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych obowią
 
 Poniżej znajduje się przykład dostosowanej ścieżki szkoleniowej w środowisku Microsoft Learn, która uzupełnia wytyczne konfigurowania pod kątem metodyki DevOps w strukturze Cloud Adoption Framework.
 
-[Tworzenie aplikacji za pomocą usługi Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Współpracuj z innymi osobami w celu tworzenia aplikacji przy użyciu usług Azure Pipelines i GitHub. Uruchamiaj testy automatyczne w potoku, aby weryfikować jakość kodu. Skanuj kod źródłowy i składniki innych firm pod kątem potencjalnych luk w zabezpieczeniach. Definiuj wiele potoków, które współpracują ze sobą w celu skompilowania aplikacji. Kompiluj aplikacje przy użyciu zarówno agentów hostowanych przez firmę Microsoft, jak i własnych agentów kompilacji.
+[Tworzenie aplikacji za pomocą usługi Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops): Współpracuj z innymi osobami w celu tworzenia aplikacji przy użyciu usług Azure Pipelines i GitHub. Uruchamiaj testy automatyczne w potoku, aby weryfikować jakość kodu. Skanuj kod źródłowy i składniki innych firm pod kątem potencjalnych luk w zabezpieczeniach. Definiuj wiele potoków, które współpracują ze sobą w celu skompilowania aplikacji. Kompiluj aplikacje przy użyciu zarówno agentów hostowanych przez firmę Microsoft, jak i własnych agentów kompilacji.
 
 # <a name="cost-management"></a>[Zarządzanie kosztami](#tab/ManageCost)
 
