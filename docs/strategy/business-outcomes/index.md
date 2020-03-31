@@ -3,16 +3,16 @@ title: Wyniki biznesowe procesów transformacji
 description: Skorzystaj z przewodnika Cloud Adoption Framework dla platformy Azure, aby zrozumieć wyniki biznesowe związane z transformacjami w chmurze.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
-ms.topic: guide
+ms.date: 03/27/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 646ac9da914939a63b9bd4a5cb73ae2899263823
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092387"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392517"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ Poniżej przedstawiono kilka wyników biznesowych, które zwykle są powodem do 
 
 ## <a name="sample-outcomes-by-category"></a>Przykładowe wyniki według kategorii
 
-Komunikacja wyników biznesowych może wydawać się obcym zagadnieniem dla wielu osób ukierunkowanych technicznie. W celu ułatwienia translacji dostępny jest zestaw przykładów wyników biznesowych w [strukturze wyników biznesowych](../index.md) nadzorowany przez firmę Microsoft. Użyj tych przykładów, aby łatwiej inspirować i prezentować wyniki biznesowe w oparciu o rzeczywiste procesy transformacji.
+Komunikacja wyników biznesowych może wydawać się obcym zagadnieniem dla wielu osób ukierunkowanych technicznie. Aby ułatwić tłumaczenie, udostępniamy wyselekcjonowany zestaw wyników biznesowych. Korzystając z poniższych przykładów, możesz inspirować i prezentować wyniki biznesowe w oparciu o rzeczywiste procesy transformacji.
 
 Aby ułatwić znalezienie wyników biznesowych, podzieliliśmy je na poniższe kategorie. Pozwala to prowadzić rozmowy prowadzące do konsensusu między jednostkami biznesowymi.
 
