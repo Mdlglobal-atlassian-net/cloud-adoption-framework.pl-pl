@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 4b596fc83cf3d0b9a951287e052215622f6ee6b2
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 7374a531192ed140c8aa76d0e74e3817e34626db
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171127"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427419"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innowacje w chmurze w przewodniku Cloud Adoption Framework
 
@@ -126,7 +126,7 @@ Poniżej przedstawiono kilka przykładów ścieżek szkoleniowych dotyczących r
 
 [Tworzenie aplikacji bezserwerowych](https://docs.microsoft.com/learn/paths/create-serverless-applications): Usługa Azure Functions umożliwia tworzenie sterowanych zdarzeniami systemów obliczeń na żądanie, które mogą być wyzwalane przez różne zdarzenia zewnętrzne. Dowiedz się, jak korzystać z funkcji do wykonywania logiki po stronie serwera i tworzenia architektur bezserwerowych.
 
-Aby poznać dodatkowe ścieżki szkoleniowe, przejrzyj [Katalog środowiska Learn](/learn/browse). Użyj filtru **Role**, aby dopasować ścieżki szkoleniowe do swojej roli.
+Aby poznać dodatkowe ścieżki szkoleniowe, przejrzyj [Katalog środowiska Learn](https://docs.microsoft.com/learn/browse). Użyj filtru **Role**, aby dopasować ścieżki szkoleniowe do swojej roli.
 
 ## <a name="next-steps"></a>Następne kroki
 

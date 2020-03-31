@@ -4,16 +4,16 @@ description: Zapoznaj się z tymi przykładowymi instrukcjami zasad odniesienia 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 02a1c18a73b784cb9245ed7c83d86c21c0690148
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 34135a7bb0a6fb97895bde3b002426f37c0f53fd
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707212"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425940"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Instrukcje dotyczące przykładowych zasad linii bazowej zabezpieczeń
 
@@ -41,7 +41,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Potencjalna opcja projektowania:** Zapoznaj się z artykułem [Omówienie usługi Azure Encryption](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) , aby poznać sposób wykonywania danych przechowywanych na platformie Azure. Należy również uwzględnić dodatkowe kontrolki, takie jak szyfrowanie danych konta i kontrola nad sposobem, w jaki można zmienić ustawienia konta magazynu.
 
-## <a name="network-isolation"></a>Izolacja sieci
+## <a name="network-isolation"></a>Izolacja sieciowa
 
 **Ryzyko techniczne:** Połączenia między sieciami i podsieciami w ramach sieci wprowadzają potencjalne luki w zabezpieczeniach, które mogą powodować wycieki danych lub zakłócać usługi o krytycznym znaczeniu.
 

@@ -4,16 +4,16 @@ description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby uzysk
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e25c81e2811bcefa238366462db3d2c66184b08
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: c10353d4ed284309f782f9ebbc13085d1f6bd14f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708958"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434557"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Przykładowe instrukcje dotyczące zasad przyspieszania wdrażania
 

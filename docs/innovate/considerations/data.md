@@ -4,15 +4,15 @@ description: Dowiedz się więcej na temat Democratization, proces uzyskiwania d
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1ee86c13d94f62770e21e3a8208e9c0695725ba5
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 2fac366e56e279204a791d5d8813500fe57de8d6
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170226"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433306"
 ---
 # <a name="democratize-data"></a>Demokratyzowanie danych
 
@@ -67,7 +67,7 @@ Architektury referencyjne dla rozwiązań [OLAP](https://docs.microsoft.com/azur
 
 ### <a name="collect-data"></a>Zbieranie danych
 
-Gdy potrzebujesz, aby dane były scentralizowane w celu sprostania potrzebom klientów, bardzo prawdopodobnie trzeba będzie zebrać dane z różnych źródeł i przenieść je do scentralizowanego magazynu danych. Istnieją dwa podstawowe formy zbierania danych: *integracja* i pozyskiwanie.
+Gdy potrzebujesz, aby dane były scentralizowane w celu sprostania potrzebom klientów, bardzo prawdopodobnie trzeba będzie zebrać dane z różnych źródeł i przenieść je do scentralizowanego magazynu danych. Istnieją dwa podstawowe formy zbierania danych: *integracja* i pozyskiwanie *ingestion*.
 
 **Integracja:** Dane, które znajdują się w istniejącym magazynie danych, można zintegrować z scentralizowanym magazynem danych przy użyciu tradycyjnych technik przenoszenia danych. Jest to szczególnie typowe w przypadku scenariuszy obejmujących magazyn danych w chmurze. Te techniki obejmują wyodrębnianie danych z istniejącego magazynu danych, a następnie ładowanie ich do centralnego magazynu danych. W pewnym momencie w tym procesie dane są zwykle przekształcane, aby były bardziej użyteczne i istotne w sklepie centralnym.
 

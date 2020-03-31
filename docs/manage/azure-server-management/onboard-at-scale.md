@@ -4,15 +4,15 @@ description: Dowiedz się, jak skonfigurować usługi zarządzania serwerem Azur
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: efd387f2f3a1c11d518e8e51d06977efdd07609c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: afe1c4b9e3ba79db1aeb23b492e8dd6925f0b6b9
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312478"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430623"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 

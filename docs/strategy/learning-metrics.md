@@ -4,15 +4,15 @@ description: Dowiedz się, w jaki sposób dostosować wysiłki do mierzenia i ko
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9173909afb7ffe625a28ec72255c15540dcf7c63
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: a26ad28c5cd91225f02d5824690bc2d409bbd55f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353523"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433734"
 ---
 <!-- markdownlint-disable MD026 -->
 

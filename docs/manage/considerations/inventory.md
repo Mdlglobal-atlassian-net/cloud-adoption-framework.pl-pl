@@ -4,15 +4,15 @@ description: Informacje o tym, co należy zarządzać (spisem) oraz jak te zarz�
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c9057c84757c49457b46c310d239dc8c49bd50d0
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: a611d6e8437bbb6a62d1050f6f916ee9ac429228
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341231"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80426268"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>Spis i widoczność w zarządzaniu chmurą
 
@@ -88,7 +88,7 @@ Być może ważniejsze niż funkcje platformy zarządzania chmurą, procesy zarz
 
 Istnieje kilka innych procesów związanych ze spisem i widocznością. Poprzednia lista została zaprojektowana z myślą o rozdaniu myśli w zespole operacji. Udzielenie odpowiedzi na te pytania ułatwi opracowywanie niektórych niezbędnych procesów, a także prawdopodobnie wyzwala nowe, bardziej szczegółowe pytania.
 
-## <a name="responsibilities"></a>Zakres odpowiedzialności
+## <a name="responsibilities"></a>Obowiązki
 
 Gdy opracowujesz procesy do monitorowania operacyjnego, równie ważne jest określenie obowiązków związanych z codziennymi operacjami i regularnym wsparciem poszczególnych procesów.
 

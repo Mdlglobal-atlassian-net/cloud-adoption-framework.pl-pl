@@ -4,23 +4,23 @@ description: Dowiedz się więcej na temat regionów platformy w chmurze oraz cz
 author: doodlemania2
 ms.author: dermar
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 65e2331dca7756306c875dae092faaaf41030765
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 7592494f3fd38721cc16015f3f8d5b33ad9132e0
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508342"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433017"
 ---
 # <a name="azure-regions"></a>Regiony świadczenia usługi Azure
 
 Platforma Azure składa się z wielu regionów na całym świecie. Każdy [region świadczenia usługi Azure](https://azure.microsoft.com/global-infrastructure/regions) ma specyficzne cechy, dlatego wybór regionu do użycia jest niezwykle ważny.
 
 1. **Dostępne usługi:** Usługi, które są wdrażane w poszczególnych regionach, różnią się w zależności od różnych czynników. Dla swojego obciążenia wybierz region, który zawiera żądaną usługę. Aby uzyskać więcej informacji o dostępnych usługach w poszczególnych regionach, zobacz [Dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services).
-1. **Pojemność:** Każdy region ma maksymalną pojemność. Chociaż jest to zwykle abstrakcyjne od użytkownika końcowego, może to mieć wpływ na typy subskrypcji, które mogą wdrażać typy usług i w jakich okolicznościach. Różni się to od limitów przydziału subskrypcji. Jeśli planujesz migrację z dużą ilością danych na platformę Azure, możesz zapoznać się z lokalnym zespołem ds. pól platformy Azure lub menedżerem kont, aby upewnić się, że można go wdrożyć w odpowiedniej skali.
+1. **Pojemność:** Każdy region ma maksymalną pojemność. Informacje na ten temat nie są zwykle przedstawiane użytkownikowi końcowemu, ale pojemność może mieć wpływ na to, w których typach subskrypcji można wdrażać określone typy usług i w jakich okolicznościach. Różni się to od limitów przydziału subskrypcji. Jeśli planujesz migrację z dużą ilością danych na platformę Azure, możesz chcieć skonsultować się z lokalnym zespołem platformy Azure lub kierownikiem ds. klientów w celu potwierdzenia, że można przeprowadzić wdrożenie w odpowiedniej skali.
 1. **Ograniczenia:** Niektóre ograniczenia są wprowadzane do wdrożenia usług w określonych regionach. Na przykład niektóre regiony są dostępne tylko jako miejsce docelowe kopii zapasowej lub pracy w trybie failover. Inne istotne ograniczenia to [wymagania dotyczące niezależności danych](https://azure.microsoft.com/global-infrastructure/geographies).
 1. **Suwerenność:** Niektóre regiony są przeznaczone dla konkretnych suwerennych jednostek. Wszystkie regiony są regionami platformy Azure, ale te niezależne regiony są całkowicie odizolowane od reszty platformy Azure, nie muszą być zarządzane przez firmę Microsoft i mogą być ograniczone do określonych typów klientów. Te niezależne regiony są następujące:
     1. [Chińska wersja platformy Azure](https://azure.microsoft.com/global-infrastructure/china)

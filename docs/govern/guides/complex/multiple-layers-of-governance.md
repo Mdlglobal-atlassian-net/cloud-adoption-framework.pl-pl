@@ -4,16 +4,16 @@ description: Korzystaj z platformy wdrażania w chmurze dla platformy Azure, aby
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5d7dc2163777cb931d6c4c57eb7b1fb276e6a0fd
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 36c2653876f0d254a282a7f7ed3abaee2ca82656
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709196"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434398"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wiele warstw ładu
 

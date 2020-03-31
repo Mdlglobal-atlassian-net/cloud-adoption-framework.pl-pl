@@ -4,15 +4,15 @@ description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowie
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 38f7c2f6fc5be0cdad9a963fcf7f0fbb65937d3d
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 57859a8e3af75fa19f929e8fb614197ff69c47df
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341599"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434075"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Narzędzia i usługi zarządzania serwerem platformy Azure
 
@@ -73,7 +73,7 @@ Kilka usług mieści się w tej kategorii. Mogą one ułatwić:
 
 Te usługi są niezbędne do obsługi bieżących operacji:
 
-- [Update Management](/azure/automation/automation-update-management) automatyzuje wdrażanie poprawek w środowisku, w tym wdrażanie w wystąpieniach systemu operacyjnego działającego poza platformą Azure. Obsługuje systemy operacyjne Windows i Linux oraz śledzi najważniejsze luki w zabezpieczeniach systemu operacyjnego i niezgodności spowodowane przez brakujące poprawki.
+- [Update Management](https://docs.microsoft.com/azure/automation/automation-update-management) automatyzuje wdrażanie poprawek w środowisku, w tym wdrażanie w wystąpieniach systemu operacyjnego działającego poza platformą Azure. Obsługuje systemy operacyjne Windows i Linux oraz śledzi najważniejsze luki w zabezpieczeniach systemu operacyjnego i niezgodności spowodowane przez brakujące poprawki.
 - [Change Tracking i spis](https://docs.microsoft.com/azure/automation/change-tracking) zapewniają wgląd w oprogramowanie, które jest uruchomione w danym środowisku, i wyróżnia wszystkie zmiany, które wystąpiły.
 - [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) umożliwia uruchamianie skryptów Python i PowerShell oraz elementów Runbook w celu zautomatyzowania zadań w środowisku. W przypadku korzystania z usługi Automation z [hybrydowym procesem roboczym elementu Runbook](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)można także rozciągnąć elementy Runbook do zasobów lokalnych.
 - [Azure Automation konfiguracja stanu](https://docs.microsoft.com/azure/automation/automation-dsc-overview) umożliwia wypychanie konfiguracji stanu żądanego (DSC) programu PowerShell bezpośrednio z platformy Azure. Konfiguracja DSC umożliwia również monitorowanie i zachowywanie konfiguracji dla systemów operacyjnych gościa i obciążeń.
@@ -97,7 +97,7 @@ Aby dowiedzieć się więcej o cenach dla usług zarządzania platformy Azure, p
 - [Azure Security Center](https://azure.microsoft.com/pricing/details/security-center)
 
 - [Azure Automation](https://azure.microsoft.com/pricing/details/automation), w tym:
-  - Konfiguracja żądanego stanu
+  - Desired State Configuration
   - Usługa Update Management platformy Azure
   - Usługa Azure Change Tracking i usługi spisu
 

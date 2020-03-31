@@ -4,15 +4,15 @@ description: Dowiedz się, jak tworzyć strefy wyładunkowe przy użyciu Terrafo
 author: arnaudlh
 ms.author: arnaul
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 76fdd8232cff0b90f12c18cc32a32538e6570197
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 93f972130a696e7ebe5aeec8a01b7e7dcfe2d60b
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354149"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431946"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
@@ -190,7 +190,7 @@ security_center = {
 }
 ```
 
-## <a name="get-started"></a>Wprowadzenie
+## <a name="get-started"></a>Rozpoczynanie pracy
 
 Po przejrzeniu konfiguracji można wdrożyć konfigurację w sposób wdrożony środowisko Terraform. Zalecamy korzystanie z Rover, który jest kontenerem platformy Docker, który umożliwia wdrażanie z systemu Windows, Linux lub MacOS. Możesz rozpocząć pracę z [repozytorium GitHub Rover](https://github.com/aztfmod/rover).
 

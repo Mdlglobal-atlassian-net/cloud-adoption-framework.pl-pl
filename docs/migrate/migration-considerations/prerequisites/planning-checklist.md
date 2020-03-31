@@ -4,15 +4,15 @@ description: Aby sprawdzić gotowość środowiska przed migracją, należy uży
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c428edaa37924b7e72bb0b9b86537d6cce5b241b
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 9b9889be940485217b15aa0038f68f9df8099892
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311986"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80428996"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Lista kontrolna planowania środowiska migracji: sprawdzanie gotowości środowiska przed migracją
 
@@ -57,7 +57,7 @@ Przed migracją należy ustalić spójne podejście do nazewnictwa zasobów oraz
 
 Przed migracją należy podjąć decyzję dotyczącą narzędzi do zarządzania zasobami. Narzędzia nie muszą być w pełni wdrożone, ale należy wybrać kierunek i przetestować go. Zespół ds. nadzoru chmurowego powinien określić i wymagać wdrożenia minimalnego produktu żywotnego (MVP) na potrzeby narzędzi do zarządzania przed migracją.
 
-## <a name="network"></a>Network
+## <a name="network"></a>Sieć
 
 Obciążenia oparte na chmurze będą wymagać ustanowienia sieci wirtualnych do obsługi dostępu użytkowników końcowych i administratorów. W oparciu o organizację zasobów i decyzje dotyczące ładu zasobów należy wybrać podejście sieciowe i dostosować je do wymagań bezpieczeństwa IT. Ponadto decyzje dotyczące sieci powinny być dostosowane do wszelkich ograniczeń sieci hybrydowej wymaganych do obsługi obciążeń na liście prac związanych z migracją oraz obsługi dostępu do zasobów hostowanych lokalnie.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 45d5a27e6d7ba933c82bc41825e76cf8f7830767
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 2713ce102d115c4f5cd16ef37baaaa22a06acfc8
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356342"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80431084"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
 
@@ -162,7 +162,7 @@ Administratorzy firmy Contoso przeprowadzają aprowizację w następujący spos�
 
    ![AKS](./media/contoso-migration-rebuild/aks4.png)
 
-6. Uwierzytelniają interfejs wiersza polecenia platformy Azure, uruchamiając polecenie **az login** i postępując według instrukcji uwierzytelniania w przeglądarce internetowej. [Dowiedz się więcej](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) na temat logowania za pomocą interfejsu wiersza polecenia platformy Azure.
+6. Uwierzytelniają interfejs wiersza polecenia platformy Azure, uruchamiając polecenie **az login** i postępując według instrukcji uwierzytelniania w przeglądarce internetowej. [Dowiedz się więcej](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest) na temat logowania za pomocą interfejsu wiersza polecenia platformy Azure.
 
    ![AKS](./media/contoso-migration-rebuild/aks5.png)
 
@@ -496,7 +496,7 @@ Administratorzy firmy Contoso mogą teraz opublikować witrynę internetową.
 
     ![Ustawienia potoku](./media/contoso-migration-rebuild/vsts-publishfront2.png)
 
-5. W obszarze **Triggers (Wyzwalacze)** włączają ciągłą integrację i dodają gałąź master. Gwarantuje to, że po każdym wprowadzeniu nowego kodu do gałęzi master będzie uruchamiany potok kompilacji.
+5. W obszarze **Triggers** (Wyzwalacze) włączają ciągłą integrację i dodają gałąź master. Gwarantuje to, że po każdym wprowadzeniu nowego kodu do gałęzi master będzie uruchamiany potok kompilacji.
 
     ![Ciągła integracja](./media/contoso-migration-rebuild/vsts-publishfront3.png)
 
@@ -605,7 +605,7 @@ Administratorzy firmy Contoso wdrażają aplikację w następujący sposób.
 
 Po migracji zasobów na platformę Azure firma Contoso musi teraz w pełni zoperacjonalizować i zabezpieczyć nową infrastrukturę.
 
-### <a name="security"></a>Bezpieczeństwo
+### <a name="security"></a>Zabezpieczenia
 
 - Firma Contoso musi upewnić się, że nowe bazy danych są bezpieczne. [Dowiedz się więcej](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview).
 - Aplikacja musi zostać zaktualizowana w celu korzystania z protokołu SSL z certyfikatami. Wystąpienie kontenera należy wdrożyć ponownie, aby odpowiadało na porcie 443.

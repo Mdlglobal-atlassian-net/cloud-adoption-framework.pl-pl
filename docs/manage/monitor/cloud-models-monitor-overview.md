@@ -4,16 +4,16 @@ description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, ab
 author: MGoedtel
 ms.author: magoedte
 ms.date: 10/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7dc47021b2b4a3d9e697566332bf602d9166e712
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 8c27e37ac357fa4ab86377501da527a43eda017f
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356257"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430031"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -74,28 +74,28 @@ Poniższa tabela zawiera podsumowanie wymagań Azure Monitor i System Center Ope
 
 <!-- markdownlint-disable MD033 -->
 
-|Wymaganie | Azure Monitor | Operations Manager |
+|Wymaganie | Azure Monitor | Magazyn danych |
 |:--|:---|:---|
-|Wymagania dotyczące infrastruktury | Nie | Yes<br> Wymaga co najmniej serwera zarządzania i programu SQL Server do hostowania operacyjnej bazy danych i bazy danych magazyn danych raportowania. Złożoność zwiększa się, gdy wymagane jest zapewnienie wysokiej dostępności i odzyskiwania po awarii oraz maszyn w wielu lokacjach, niezaufanych systemach i innych kwestiach związanych z projektowaniem.|
-|Łączność ograniczona — brak Internetu<br> lub sieć izolowana | Nie | Yes |
-|Ograniczony dostęp do Internetu kontrolowany przez łączność | Yes | Yes |
-|Ograniczone połączenia — często rozłączone | Yes | Yes |
-|Konfigurowalne monitorowanie kondycji | Nie | Yes |
-| Test dostępności aplikacji sieci Web (izolowana sieć) | Tak, ograniczone<br> Azure Monitor ma ograniczoną obsługę w tym obszarze i wymaga niestandardowych wyjątków zapory. | Yes |
-| Test dostępności aplikacji sieci Web (dystrybuowany globalnie) | Nie | Yes |
-|Monitorowanie obciążeń maszyn wirtualnych | Tak, ograniczone<br> Może zbierać usługi IIS oraz SQL Server dzienników błędów, zdarzeń systemu Windows i liczników wydajności. Wymaga utworzenia niestandardowych zapytań, alertów i wizualizacji. | Yes<br> Obsługuje monitorowanie większości obciążeń serwera z dostępnymi pakietami administracyjnymi. Na maszynie wirtualnej jest wymagany agent Log Analytics lub Agent Operations Manager, który umożliwia raportowanie z powrotem do grupy zarządzania w sieci firmowej.|
-|Monitorowanie usługi Azure IaaS | Yes | Yes<br> Obsługuje monitorowanie większości infrastruktury z sieci firmowej. Śledzi stan dostępności, metryki i alerty dla maszyn wirtualnych platformy Azure, bazy danych SQL i magazynu za pośrednictwem pakietu administracyjnego platformy Azure.|
-|Monitorowanie usługi Azure PaaS | Yes | Tak, ograniczone<br> Na podstawie tego, co jest obsługiwane w pakiecie administracyjnym platformy Azure. |
-|Monitorowanie usług platformy Azure | Yes<br> | Yes<br> Chociaż nie ma natywnego monitorowania kondycji usługi platformy Azure w ramach pakietu administracyjnego, można utworzyć niestandardowe przepływy pracy, aby wysyłać zapytania dotyczące usługi Azure Service Health. Użyj interfejsu API REST platformy Azure, aby otrzymywać alerty za pomocą istniejących powiadomień.|
-|Nowoczesne monitorowanie aplikacji sieci Web | Yes | Nie |
+|Wymagania dotyczące infrastruktury | Nie | Tak<br> Wymaga co najmniej serwera zarządzania i programu SQL Server do hostowania operacyjnej bazy danych i bazy danych magazyn danych raportowania. Złożoność zwiększa się, gdy wymagane jest zapewnienie wysokiej dostępności i odzyskiwania po awarii oraz maszyn w wielu lokacjach, niezaufanych systemach i innych kwestiach związanych z projektowaniem.|
+|Łączność ograniczona — brak Internetu<br> lub sieć izolowana | Nie | Tak |
+|Ograniczony dostęp do Internetu kontrolowany przez łączność | Tak | Tak |
+|Ograniczone połączenia — często rozłączone | Tak | Tak |
+|Konfigurowalne monitorowanie kondycji | Nie | Tak |
+| Test dostępności aplikacji sieci Web (izolowana sieć) | Tak, ograniczone<br> Azure Monitor ma ograniczoną obsługę w tym obszarze i wymaga niestandardowych wyjątków zapory. | Tak |
+| Test dostępności aplikacji sieci Web (dystrybuowany globalnie) | Nie | Tak |
+|Monitorowanie obciążeń maszyn wirtualnych | Tak, ograniczone<br> Może zbierać usługi IIS oraz SQL Server dzienników błędów, zdarzeń systemu Windows i liczników wydajności. Wymaga utworzenia niestandardowych zapytań, alertów i wizualizacji. | Tak<br> Obsługuje monitorowanie większości obciążeń serwera z dostępnymi pakietami administracyjnymi. Na maszynie wirtualnej jest wymagany agent Log Analytics lub Agent Operations Manager, który umożliwia raportowanie z powrotem do grupy zarządzania w sieci firmowej.|
+|Monitorowanie usługi Azure IaaS | Tak | Tak<br> Obsługuje monitorowanie większości infrastruktury z sieci firmowej. Śledzi stan dostępności, metryki i alerty dla maszyn wirtualnych platformy Azure, bazy danych SQL i magazynu za pośrednictwem pakietu administracyjnego platformy Azure.|
+|Monitorowanie usługi Azure PaaS | Tak | Tak, ograniczone<br> Na podstawie tego, co jest obsługiwane w pakiecie administracyjnym platformy Azure. |
+|Monitorowanie usług platformy Azure | Tak<br> | Tak<br> Chociaż nie ma natywnego monitorowania kondycji usługi platformy Azure w ramach pakietu administracyjnego, można utworzyć niestandardowe przepływy pracy, aby wysyłać zapytania dotyczące usługi Azure Service Health. Użyj interfejsu API REST platformy Azure, aby otrzymywać alerty za pomocą istniejących powiadomień.|
+|Nowoczesne monitorowanie aplikacji sieci Web | Tak | Nie |
 |Starsze monitorowanie aplikacji sieci Web | Tak, ograniczone, różni się w zależności od zestawu SDK<br> Obsługuje monitorowanie starszych wersji aplikacji sieci Web platformy .NET i języka Java. | Tak, ograniczone |
-|Monitorowanie kontenerów usługi Azure Kubernetes Service | Yes | Nie |
-|Monitorowanie kontenerów platformy Docker lub Windows | Yes | Nie |
-|Monitorowanie wydajności sieci | Yes | Tak, ograniczone<br> Program obsługuje sprawdzanie dostępności i zbiera podstawowe dane statystyczne z urządzeń sieciowych przy użyciu Simple Network Management Protocol (SNMP) z sieci firmowej.|
-|Interaktywna analiza danych | Yes | Nie<br> Opiera się na SQL Server Reporting Services raportach z konserwowanych lub niestandardowych, rozwiązaniach do wizualizacji innych firm lub niestandardowej implementacji Power BI. Istnieją ograniczenia dotyczące skalowania i wydajności w magazynie danych Operations Manager. Integracja z usługą Azure Monitor Logs jako alternatywa dla wymagań agregacji danych. Aby uzyskać integrację, należy skonfigurować łącznik Log Analytics.|
-|Kompleksowa diagnostyka, analiza głównych przyczyn i rozwiązywanie problemów | Yes | Tak, ograniczone<br> Obsługuje kompleksową diagnostykę i rozwiązywanie problemów tylko w przypadku lokalnej infrastruktury i aplikacji. Program używa innych składników programu System Center lub rozwiązań partnerskich.|
-|Interaktywne wizualizacje (pulpity nawigacyjne) | Yes | Tak, ograniczone<br> Program udostępnia podstawowe pulpity nawigacyjne z konsolą sieci Web HTML5 lub zaawansowane środowisko z rozwiązań partnerskich, takie jak kwadratowe i Savision. |
-|Integracja z narzędziami IT lub DevOps | Yes | Tak, ograniczone |
+|Monitorowanie kontenerów usługi Azure Kubernetes Service | Tak | Nie |
+|Monitorowanie kontenerów platformy Docker lub Windows | Tak | Nie |
+|Monitorowanie wydajności sieci | Tak | Tak, ograniczone<br> Program obsługuje sprawdzanie dostępności i zbiera podstawowe dane statystyczne z urządzeń sieciowych przy użyciu Simple Network Management Protocol (SNMP) z sieci firmowej.|
+|Interaktywna analiza danych | Tak | Nie<br> Opiera się na SQL Server Reporting Services raportach z konserwowanych lub niestandardowych, rozwiązaniach do wizualizacji innych firm lub niestandardowej implementacji Power BI. Istnieją ograniczenia dotyczące skalowania i wydajności w magazynie danych Operations Manager. Integracja z usługą Azure Monitor Logs jako alternatywa dla wymagań agregacji danych. Aby uzyskać integrację, należy skonfigurować łącznik Log Analytics.|
+|Kompleksowa diagnostyka, analiza głównych przyczyn i rozwiązywanie problemów | Tak | Tak, ograniczone<br> Obsługuje kompleksową diagnostykę i rozwiązywanie problemów tylko w przypadku lokalnej infrastruktury i aplikacji. Program używa innych składników programu System Center lub rozwiązań partnerskich.|
+|Interaktywne wizualizacje (pulpity nawigacyjne) | Tak | Tak, ograniczone<br> Program udostępnia podstawowe pulpity nawigacyjne z konsolą sieci Web HTML5 lub zaawansowane środowisko z rozwiązań partnerskich, takie jak kwadratowe i Savision. |
+|Integracja z narzędziami IT lub DevOps | Tak | Tak, ograniczone |
 
 <!-- markdownlint-enable MD033 -->
 

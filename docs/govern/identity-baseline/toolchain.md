@@ -4,16 +4,16 @@ description: Zobacz, jak narzędzia natywne platformy Azure mogą pomóc w dojrz
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0aa9525a42e62012e1aa5913d9f806cc2a40e2f0
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 368d2811bb54ef373be8df036d96452023891b83
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709400"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434957"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Narzędzia linii bazowej tożsamości na platformie Azure
 
@@ -46,7 +46,7 @@ Po wybraniu tej metody usługa Azure AD obsługuje proces logowania użytkownik�
 
 Po wybraniu tej metody usługa Azure AD przekaże proces uwierzytelniania do oddzielnego zaufanego systemu uwierzytelniania, takiego jak lokalny Active Directory Federation Services (AD FS) lub zaufanego dostawcę federacyjnego innej firmy, aby sprawdzić poprawność hasła użytkownika.
 
-Artykuł [wybierający właściwą metodę uwierzytelniania dla Azure Active Directory](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) zawiera drzewo decyzyjne ułatwiające wybranie najlepszego rozwiązania dla Twojej organizacji.
+Artykuł [wybierający właściwą metodę uwierzytelniania dla Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) zawiera drzewo decyzyjne ułatwiające wybranie najlepszego rozwiązania dla Twojej organizacji.
 
 Poniższa tabela zawiera listę natywnych narzędzi, które mogą pomóc w przedwczesnej polityce i procesach, które obsługują tę dyscyplinę ładu.
 
@@ -57,9 +57,9 @@ Poniższa tabela zawiera listę natywnych narzędzi, które mogą pomóc w przed
 |Gdzie jest wykonywane uwierzytelnianie?|W chmurze|W chmurze po bezpiecznej weryfikacji hasła przy użyciu lokalnego agenta uwierzytelniania|Lokalnie|
 |Jakie są wymagania dotyczące serwera lokalnego poza systemem aprowizacji: Azure AD Connect?|None|Jeden serwer dla każdego dodatkowego agenta uwierzytelniania|Co najmniej dwa serwery AD FS<br><br>Dwa lub więcej serwerów WAP w sieci obwodowej/strefy DMZ|
 |Jakie są wymagania dotyczące lokalnego Internetu i sieci poza systemem aprowizacji?|None|[Wychodzący dostęp do Internetu](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) z serwerów z uruchomionymi agentami uwierzytelniania|[Przychodzący dostęp do Internetu](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) do serwerów WAP na obrzeżu<br><br>Dostęp do sieci przychodzącej do serwerów AD FS z serwerów WAP na obrzeżu<br><br>Równoważenie obciążenia sieciowego|
-|Czy istnieje wymagania dotyczące certyfikatu SSL?|Nie|Nie|Yes|
+|Czy istnieje wymagania dotyczące certyfikatu SSL?|Nie|Nie|Tak|
 |Czy istnieje rozwiązanie do monitorowania kondycji?|Niewymagane|Stan agenta udostępniany przez [Centrum administracyjne Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication)|[Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs)|
-|Czy użytkownicy uzyskują Logowanie jednokrotne do zasobów w chmurze z urządzeń przyłączonych do domeny w sieci firmowej?|Tak, aby [bezproblemowe logowanie jednokrotne](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)|Tak, aby [bezproblemowe logowanie jednokrotne](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)|Yes|
+|Czy użytkownicy uzyskują Logowanie jednokrotne do zasobów w chmurze z urządzeń przyłączonych do domeny w sieci firmowej?|Tak, aby [bezproblemowe logowanie jednokrotne](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)|Tak, aby [bezproblemowe logowanie jednokrotne](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)|Tak|
 |Jakie typy logowania są obsługiwane?|UserPrincipalName + hasło<br><br>Zintegrowane uwierzytelnianie systemu Windows za pomocą [bezproblemowego logowania jednokrotnego](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)<br><br>[Alternatywny identyfikator logowania](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)|UserPrincipalName + hasło<br><br>Zintegrowane uwierzytelnianie systemu Windows za pomocą [bezproblemowego logowania jednokrotnego](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)<br><br>[Alternatywny identyfikator logowania](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-faq)|UserPrincipalName + hasło<br><br>sAMAccountName + hasło<br><br>Uwierzytelnianie zintegrowane systemu Windows<br><br>[Certyfikat i uwierzytelnianie karty inteligentnej](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-user-certificate-authentication)<br><br>[Alternatywny identyfikator logowania](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configuring-alternate-login-id)|
 |Czy funkcja Windows Hello dla firm jest obsługiwana?|[Model zaufania kluczy](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)<br><br>[Model zaufania certyfikatów z usługą Intune](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune)|[Model zaufania kluczy](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)<br><br>[Model zaufania certyfikatów z usługą Intune](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune)|[Model zaufania kluczy](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)<br><br>[Model zaufania certyfikatów](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-key-trust-adfs)|
 |Jakie są opcje usługi uwierzytelniania wieloskładnikowego?|[Multi-Factor Authentication platformy Azure](https://docs.microsoft.com/azure/multi-factor-authentication)<br><br>[Formanty niestandardowe z dostępem warunkowym *](https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview)|[Multi-Factor Authentication platformy Azure](https://docs.microsoft.com/azure/multi-factor-authentication)<br><br>[Formanty niestandardowe z dostępem warunkowym *](https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview)|[Multi-Factor Authentication platformy Azure](https://docs.microsoft.com/azure/multi-factor-authentication)<br><br>[Serwer usługi Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy)<br><br>[Uwierzytelnianie wieloskładnikowe innej firmy](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs)<br><br>[Formanty niestandardowe z dostępem warunkowym *](https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview)|

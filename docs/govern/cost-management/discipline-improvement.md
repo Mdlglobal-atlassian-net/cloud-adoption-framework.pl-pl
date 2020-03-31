@@ -4,16 +4,16 @@ description: Poznaj potencjalne zadania wykonywane przez firmę w celu opracowan
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1d32b70c2c07ee341e03a020cd0010c8763d4cdc
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 47d6cd60e67b6f17a3a9a3abef6788847854f2f1
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708839"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434721"
 ---
 # <a name="cost-management-discipline-improvement"></a>Ulepszanie dyscypliny Cost Management
 

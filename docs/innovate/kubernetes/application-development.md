@@ -3,16 +3,16 @@ title: Tworzenie i wdrażanie aplikacji
 description: Dowiedz się więcej o korzystaniu z Kubernetes w strukturze wdrażania w chmurze na potrzeby tworzenia aplikacji i architektury.
 author: sabbour
 ms.author: asabbour
-ms.topic: guide
 ms.date: 03/20/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6ad36a6dfbce83b23bfcee382ff44daeb9db5f7f
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 20640c269662b92be8aa0018673964fe5c1407a4
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392768"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80426904"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler Istio Linkerd -->
 

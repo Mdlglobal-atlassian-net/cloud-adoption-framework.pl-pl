@@ -4,15 +4,15 @@ description: Poznaj trzy popularne modele promocji używane podczas migracji do 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6174c142f949052b3396fe4954a5f20f2eba58fd
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 81a11a06236840658e87dbee1d0bed72579e7f6e
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311850"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80432509"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>Modele promocji: jeden etap, etapowy lub samolot
 

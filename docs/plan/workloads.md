@@ -4,15 +4,15 @@ description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowie
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d9297534f04b6656b584fa82d565e9119599f26
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 4ffd05a17466d0ca61605de5080b54316de78e4d
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354694"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433967"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Definiowanie i ustalanie priorytetów obciążeń dla planu wdrażania chmury
 

@@ -4,15 +4,15 @@ description: Użyj struktury wdrażania w chmurze dla platformy Azure, aby zrozu
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2c3d5a71025e821b9554e2a8d99223c7e6b0712b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 0c3042469ff2c562ff84d173837685f73c9df933
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341457"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80426461"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Krytyczne znaczenie biznesowe w zarządzaniu chmurą
 
@@ -33,9 +33,9 @@ Pierwszym krokiem w celu wyrównania znaczenia dla działania firmy jest utworze
 | --------- | --------- |
 | Operacje krytyczne dla działalności firmy |  Wpływa na misja firmy i może w zauważalny sposób mieć wpływ na firmowe zestawienie zysków i strat. |
 | Jednostka — krytyczne | Ma wpływ na misja określonej jednostki biznesowej i jej zestawień zysków i strat. |
-| Wysoka | Może nie utrudniać misja, ale ma wpływ na procesy o wysokiej ważności. Wymierne straty mogą być wymierne w przypadku awarii. |
-| Medium | Prawdopodobnie ma to wpływ na procesy. Straty są niskie lub wymierne, ale przyczyną mogą być uszkodzenia marki lub straty w strumieniu. |
-| Małe | Wpływ na procesy biznesowe nie jest wymierny. Nie ma to żadnego uszkodzenia marki ani utraty strumienia. Prawdopodobnie zlokalizowany wpływ na pojedynczy zespół. |
+| Wysoki | Może nie utrudniać misja, ale ma wpływ na procesy o wysokiej ważności. Wymierne straty mogą być wymierne w przypadku awarii. |
+| Średnia | Prawdopodobnie ma to wpływ na procesy. Straty są niskie lub wymierne, ale przyczyną mogą być uszkodzenia marki lub straty w strumieniu. |
+| Niski | Wpływ na procesy biznesowe nie jest wymierny. Nie ma to żadnego uszkodzenia marki ani utraty strumienia. Prawdopodobnie zlokalizowany wpływ na pojedynczy zespół. |
 | Nieobsługiwane | Żaden właściciel firmy, zespół lub proces, który jest skojarzony z tym obciążeniem, może uzasadniać wszelką inwestycję w ciągłe zarządzanie obciążeniem. |
 
 Jest to typowy w przypadku firm, które uwzględniają dodatkowe klasyfikacje krytyczne, które są specyficzne dla branżowych, pionowych lub określonych procesów biznesowych. Przykłady dodatkowych klasyfikacji obejmują:

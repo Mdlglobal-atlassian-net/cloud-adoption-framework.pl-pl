@@ -4,16 +4,16 @@ description: Dowiedz się więcej o narzędziach cenowych platformy Azure, któr
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: ffe9e81eb0bdd2d3a859885d6b01bd61abd9f719
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: ff0c716c1cdb8b445f7018a34f82c78aa79f635a
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355358"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433107"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Wyrównaj modele kosztów za pomocą cyfrowej infrastruktury do prognozowania kosztów chmury
 

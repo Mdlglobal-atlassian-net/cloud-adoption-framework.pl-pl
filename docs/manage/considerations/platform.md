@@ -4,15 +4,15 @@ description: Utwórz zrozumienie zależności w organizacji dla typowych operacj
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9a08c2f5fcf799bb6e1f37cd52b3d7e18724618e
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: d40789f1ef65711e7e6347b106e2fc9ce8784190
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341032"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80434037"
 ---
 # <a name="platform-operations-in-cloud-management"></a>Operacje na platformie w zarządzaniu chmurą
 

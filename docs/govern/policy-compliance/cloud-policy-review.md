@@ -4,16 +4,16 @@ description: Dowiedz się, jak przeprowadzić modernizację istniejących firmow
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4235830eee8e57581214f3eabb46c32ebcf975b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 3027b2195363499a2f3b383b8bb4f0eaf3b64da8
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709128"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430899"
 ---
 <!-- markdownlint-disable MD026 -->
 

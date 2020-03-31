@@ -4,16 +4,16 @@ description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby uzysk
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4222639ddb82da88cc95600ad2c6731b541f9f35
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 42f8e589d0d9231ff3ea9ab6b514cfc22f8b518c
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708142"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80433459"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Instrukcje dotyczące przykładowych zasad spójności zasobów
 
