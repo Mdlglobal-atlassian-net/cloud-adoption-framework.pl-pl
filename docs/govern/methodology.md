@@ -4,16 +4,16 @@ description: Użyj podejścia do ładu przyrostowego opartego na minimalnym żyw
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 828f9c85366f3e73ddb804a2622784ba0a0ccb65
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: f7ec10f54231e401799abb81d72efb3cc3657959
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709094"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80430958"
 ---
 # <a name="cloud-governance-methodology"></a>Metodologia ładu chmury
 

@@ -4,15 +4,15 @@ description: Poznaj narzędzia platformy Azure umożliwiające przyspieszenie op
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 701c4634aab8e2a9abb06356a929ae90c1b5a864
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 8ff62f3a508fa033f882101b13fd85f90526bab3
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171331"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425568"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Narzędzia do zaangażowania za pośrednictwem aplikacji na platformie Azure
 
@@ -38,7 +38,7 @@ Każda ścieżka skutkuje zaletami i wadami, które są krótkoterminowe i dług
 
 W zależności od ścieżki podejmowanej przez zespół rozwiązań w chmurze platforma Azure oferuje narzędzia umożliwiające przyspieszenie tworzenia zespołu za pomocą empatię klientów. Poniższa lista ofert platformy Azure została pogrupowana na podstawie powyższych ścieżek decyzji. Oferty obejmują:
 
-- Usługa Azure App Service
+- Azure App Service
 - Azure Kubernetes Service (AKS)
 - Azure Migrate
 - Azure Stack
@@ -46,7 +46,7 @@ W zależności od ścieżki podejmowanej przez zespół rozwiązań w chmurze pl
 - Microsoft Flow
 - Power BI
 
-## <a name="get-started"></a>Rozpoczęcie pracy
+## <a name="get-started"></a>Rozpoczynanie pracy
 
 Spis treści po lewej stronie tej strony zawiera wiele artykułów. Te artykuły ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
 

@@ -4,15 +4,15 @@ description: Dowiedz się więcej na temat narzędzi platformy Azure, które umo
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c8fa6bb33a6f65052b5cbc4ad159490ff9a5ad23
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f6dfc621d20f2f2d3135e99be197e3fdfd315bdc
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171246"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80425400"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>Narzędzia do współpracy z urządzeniami na platformie Azure
 
@@ -38,7 +38,7 @@ Na platformie Azure często używasz następujących narzędzi do przyspieszenia
 - Stan zintegrowany: Azure IoT Hub, Azure Sphere, Azure urządzenia Kinect DK
 - Dostosowana rzeczywistość: IoT Cloud to Device, Azure Digital bliźniaczych reprezentacji + HoloLens
 
-## <a name="get-started"></a>Rozpoczęcie pracy
+## <a name="get-started"></a>Rozpoczynanie pracy
 
 Spis treści po lewej stronie tej strony zawiera wiele artykułów. Te artykuły ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
 

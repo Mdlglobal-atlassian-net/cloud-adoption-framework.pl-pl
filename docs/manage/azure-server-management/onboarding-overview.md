@@ -4,15 +4,15 @@ description: Dołączanie usług zarządzania serwerem Azure z informacjami o ma
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dcb6be86ec0bcf231cef8286768d014ae7489fea
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: f83678c1a2b3387155b9fa908c54e81670daf8ae
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341525"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80426507"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>Faza 2: dołączanie usług zarządzania serwerem Azure
 
