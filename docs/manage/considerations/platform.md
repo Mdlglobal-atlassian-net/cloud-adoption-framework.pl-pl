@@ -7,18 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d40789f1ef65711e7e6347b106e2fc9ce8784190
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 3480d0411e1a16eed18d14859cbb997706ccccb4
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434037"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527622"
 ---
 # <a name="platform-operations-in-cloud-management"></a>Operacje na platformie w zarządzaniu chmurą
 
 Linia bazowa zarządzania chmurą obejmująca [spis i widoczność](./inventory.md), [zgodność operacyjną](./operational-compliance.md)oraz [ochronę i odzyskiwanie](./protect.md) mogą zapewnić wystarczający poziom zarządzania chmurą w przypadku większości obciążeń w portfolio IT. Taka linia bazowa jest jednak rzadko wystarczająca do obsługi pełnego portfolio. Ten artykuł jest oparty na najpopularniejszym następnym kroku zarządzania chmurą, operacji portfolio.
 
-Szybkie badanie zasobów w portfolio IT wyróżnia wzorce między obsługiwanymi obciążeniami. W ramach tych obciążeń będzie dostępnych wiele popularnych platform. W zależności od wcześniejszych decyzji technicznych w firmie te platformy mogą się różnić.
+Szybkie badanie zasobów w portfolio IT wyróżnia wzorce między obsługiwanymi obciążeniami. W ramach tych obciążeń będą dostępne popularne platformy. W zależności od wcześniejszych decyzji technicznych w firmie te platformy mogą się różnić.
 
 W przypadku niektórych organizacji nastąpi bardzo duże zależności od SQL Server, Oracle lub innych platform danych typu "open source". W innych organizacjach commonalities może być odblokowany na platformach hostingowych dla maszyn wirtualnych lub kontenerów. Nadal inne osoby mogą mieć wspólną zależność od aplikacji lub systemów Enterprise Resource Planning (ERP), takich jak SAP, Oracle czy inne.
 

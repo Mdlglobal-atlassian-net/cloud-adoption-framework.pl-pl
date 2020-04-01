@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ccb7a6e428075a69532238f25fd89e825f2a4b35
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c57b2326475f9434aee0b98cf69bf85956ce076e
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426338"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527106"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Bilansowanie zarządzania w różnych dziedzinach zarządzania chmurą
 
@@ -34,7 +34,7 @@ Jako punkt początkowy należy rozważyć ustanowienie poziomów zarządzania, k
 
 Organizacje mogą również zdecydować się na [obsługę funkcji związanych z co najmniej jednym z tych poziomów zarządzania dla usługodawcy](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Dostawcy usług mogą korzystać z [usługi Azure Lighthouse](https://azure.com/lighthouse) w celu zapewnienia większej dokładności i przejrzystości.
 
-Pozostałe artykuły w tej serii obejmują wiele procesów, które są często dostępne w ramach każdej z tych dyscyplin.
+Pozostałe artykuły w tej serii dotyczą procesów, które są często dostępne w ramach każdej z tych dyscyplin.
 Równolegle w [przewodniku zarządzania systemu Azure](../azure-management-guide/index.md) zademonstrowano narzędzia, które mogą obsługiwać poszczególne procesy. Aby uzyskać pomoc dotyczącą tworzenia linii bazowej zarządzania, Zacznij od przewodnika zarządzania platformy Azure. Po ustaleniu linii bazowej ta seria artykułu i towarzyszące najlepsze rozwiązania mogą pomóc rozszerzyć tę linię bazową w celu zdefiniowania innych poziomów obsługi zarządzania.
 
 ## <a name="cloud-management-disciplines"></a>Dyscypliny zarządzania chmurą

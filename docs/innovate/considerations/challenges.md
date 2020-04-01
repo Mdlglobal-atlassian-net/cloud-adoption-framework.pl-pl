@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3c41a207ed16364d4fc91625beeb9883bf6a8d0b
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 4b6ed0a62c3efcdf30e854fcbed6ee468a826e9c
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433364"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527660"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Typowe bloki i wyzwania dla innowacji
 
@@ -40,7 +40,7 @@ Na poniższej liście przedstawiono niektóre z najbardziej typowych wyzwań zwi
 
 Przed powszechnym wdrożeniem chmury cykle wynalazków, które zależą od technologii informatycznych, były pracochłonne i czasochłonne. Cykle zakupów i aprowizacji często opóźnią najważniejsze pierwsze kroki w odnoszącym się do nowych rozwiązań. Koszt rozwiązań DevOps i opinii powoduje pętlę "zdolności zespołów" do współpracy nad wczesnym etapem pomysłów i wynalazkiem. Koszty związane ze środowiskami deweloperskimi i platformami danych uniemożliwiły każdy, ale wysoce szkolony deweloperzy mogą uczestniczyć w tworzeniu nowych rozwiązań.
 
-W chmurze zostały wyeliminowane wiele z tych wyzwań związanych z rozwojem, udostępniając samoobsługowe, profesjonalne narzędzia do tworzenia i wdrażania, a możliwości dla profesjonalnych deweloperów i deweloperów, którzy będą współpracować w celu szybkiego rozwoju wiązani. Korzystanie z chmury w celu znacznego zredukowania liczby problemów klientów i zablokowania do strony wynalazków równania innowacji.
+W chmurze zostały wyeliminowane wiele z tych wyzwań związanych z rozwojem, udostępniając samoobsługowe, profesjonalne narzędzia do tworzenia i wdrażania, a możliwości dla profesjonalnych deweloperów i deweloperów, którzy będą współpracować w celu szybkiego rozwoju wiązani. Korzystanie z chmury na potrzeby innowacji znacznie zmniejsza liczbę wyzwań klientów i zablokowanych do strony wynalazków równania innowacji.
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>Wyzwania w zakresie wynalazków w zakresie gospodarki cyfrowej
 

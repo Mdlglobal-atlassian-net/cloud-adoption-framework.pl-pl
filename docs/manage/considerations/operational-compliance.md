@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 45493245571d5df8d0ad349ba11cb1fe109027e5
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: e693ba20984c46a8eae4497220e75c01d64abcbb
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426066"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527645"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>Zgodność operacyjna w zarządzaniu chmurą
 
@@ -54,7 +54,7 @@ Każda linia bazowa zarządzania chmurą powinna zawierać środki planowania, k
 
 Jako rozszerzona linia bazowa dla zarządzania chmurą, niektóre obciążenia mogą korzystać z automatycznego korygowania. Gdy obciążenie często napotyka problemy, których nie można rozwiązać za pomocą zmian kodu lub architektury, Automatyzacja korygowania może pomóc w zmniejszeniu obciążenia zarządzania chmurą i zwiększenia zadowolenia użytkowników.
 
-Wiele z nich podnosi, że wszelkie problemy, które są powszechnie wystarczające do automatyzowania, powinny być rozwiązane przez rozwiązanie długu technicznego. Gdy długoterminowe rozwiązanie jest rozsądne, powinna to być opcja domyślna. Jednak w wielu scenariuszach biznesowych trudno jest uzasadnić duże inwestycje w rozwiązaniu długu technicznego. Gdy takie rozwiązanie nie jest uzasadnione, ale korygowanie jest często spotykane i kosztowne, automatyczne korygowanie jest następnym najlepszym rozwiązaniem.
+Wiele z nich podnosi, że wszelkie problemy, które są powszechnie wystarczające do automatyzowania, powinny być rozwiązane przez rozwiązanie długu technicznego. Gdy długoterminowe rozwiązanie jest rozsądne, powinna to być opcja domyślna. Niektóre scenariusze biznesowe utrudniają jednak duże inwestycje w Rozwiązywanie długów technicznych. Gdy takie rozwiązanie nie jest uzasadnione, ale korygowanie jest często spotykane i kosztowne, automatyczne korygowanie jest następnym najlepszym rozwiązaniem.
 
 ## <a name="next-steps"></a>Następne kroki
 

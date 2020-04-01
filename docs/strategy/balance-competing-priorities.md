@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 95841468b109b4561d0632905c5004d6e4435954
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 01a1253e215b3d5a235c324204e443bb19a8e61b
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433840"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527044"
 ---
 # <a name="balance-competing-priorities"></a>Równoważenie konkurencyjnych priorytetów
 
@@ -36,14 +36,14 @@ Czasami niejednoznaczność może być scarier (lub bardziej niebezpieczna) od f
 
 ## <a name="balance-during-strategy"></a>Równowaga podczas strategii
 
-Podstawowym celem metodologii strategii jest opracowanie wyrównania między uczestnikami projektu. Po zdefiniowaniu, które wyrównane do pozycji strategicznej, będzie obsługiwać zachowania w ramach każdej z tych metod, aby zapewnić, że decyzje techniczne umożliwiają dostosowanie żądanych wyników firmy. Rozwijanie wyrównania między uczestnikami projektu powoduje utworzenie wspólnych priorytetów konkurencyjnych: **głębokości uzasadnienia i** **czasu na wpływ na działalność biznesową**.
+Podstawowym celem metodologii strategii jest opracowanie rozwinięcia między uczestnikami projektu. Po zdefiniowaniu, które wyrównane do pozycji strategicznej, będzie obsługiwać zachowania w ramach każdej z tych metod, aby zapewnić, że decyzje techniczne umożliwiają dostosowanie żądanych wyników firmy. Rozwijanie rozdzielania między uczestnikami projektu tworzy typowe priorytety konkurujące: **głębokość uzasadnienia** **w porównaniu z czasem do wpływu na działalność biznesową**.
 
 **Priorytety konkurujące:**
 
 - **Głębokość uzasadnienia:** Zainteresowane strony często chcą uzyskać ścisłą analizę finansową i pełne uzasadnienie biznesowe, aby mieć wygodne dopasowanie do kierunku strategicznego. Niestety, ten poziom analizy może wymagać rozszerzonego okresu, aby umożliwić zbieranie i analizowanie danych.
 - **Czas do wpływu na działalność biznesową:** Z drugiej strony, zainteresowane osoby często są odpowiedzialne za dostarczanie wyników handlowych w określonych przedziale czasowym. Czasochłonne analizy i oceny mogą spowodować, że te wyniki są narażone na ryzyko przed rozpoczęciem pracy technicznej.
 
-**Minimalny zakres:** Znalezienie tego salda wymaga od uczestników dyskusji wczesnych w trakcie procesu. Metodologia strategii sugeruje ograniczenie zakresu wyrównania podczas tego wczesnego nakładu pracy. W sugerowanym podejściu uczestnicy projektu koncentrują się na dostosowywaniu zestawu najważniejszych motywacji, wymiernych rezultatach i ogólnym wyrównaniu biznesowym. Zaleca się, aby uczestnicy projektu szybko zatwierdzać niewielką liczbę początkowych projektów lub pilotażów na potrzeby możliwości uczenia się.
+**Minimalny zakres:** Znalezienie tego salda wymaga wcześniejszej dyskusji między uczestnikami projektu w procesie. Metodologia strategii sugeruje ograniczenie zakresu wyrównania podczas tego wczesnego nakładu pracy. W sugerowanym podejściu uczestnicy projektu koncentrują się na dostosowywaniu zestawu najważniejszych motywacji, wymiernych rezultatach i ogólnym wyrównaniu biznesowym. Zaleca się, aby uczestnicy projektu szybko zatwierdzać niewielką liczbę początkowych projektów lub pilotażów na potrzeby możliwości uczenia się.
 
 **Rozszerzony przykład zakresu:** Jeśli początkowa analiza biznesowa wskazuje na wysokie ryzyko negatywnego wpływu na działalność firmy, może być konieczne spowolnienie i bardziej ostrożne ocenianie dokładniejszej analizy podczas uzasadnienia biznesowego.
 
@@ -56,13 +56,13 @@ Podobnie jak w przypadku priorytetów strategii, podczas planowania istnieje pot
 - **Głębokość wstępnego planowania** dotycząca implementacji technicznej w chmurze często zawiera dużą liczbę założeń. Szczególnie w przypadku, gdy zespół ma luki w zakresie umiejętności, środowisko to ponosi luki w zakresie odnajdywania lub obciążenia nie mają jasno zdefiniowanych Stanów architektury. Wszystkie te założenia są wspólne dla szczegółowych planów wdrażania w chmurze. Do usunięcia tych założeń są wymagane eksperymenty, pilotaży i analizy jakościowe.
 - **Opóźnione decyzje techniczne** założono, że później można podjąć decyzję techniczną, im dokładniejsze jest podjęcie decyzji. Następujące zasady związane z planowaniem produktów Agile pomogą opóźnić decyzje techniczne, umożliwiając im ich wypróbowanie w odpowiednim czasie z odpowiednimi informacjami. Jednak takie podejście powoduje znacznie wyższy stopień niejednoznaczności w planie początkowym.
 
-**Minimalny zakres:** Podejścia do tworzenia produktów Agile są sugerowane w ramach akcji monitowania w ramach zarządzania planami. Metodologia planu zaleca wykonanie poniższych kroków w celu osiągnięcia tego salda. Sporządź spis pełnej cyfrowej przy użyciu zautomatyzowanych narzędzi do odnajdywania, ale Użyj funkcji przyrostowej racjonalizacji do zaplanowania w ciągu następnych 1-3 miesięcy pracy. Upewnij się, że odpowiednie wyrównanie organizacyjne ma być szybko przenoszone. Utwórz plan gotowości do kwalifikacji dla przypisanego zespołu. Skorzystaj z szablonu planu wdrażania w chmurze, aby szybko wdrożyć początkową zaległość.
+**Minimalny zakres:** Podejścia do tworzenia produktów Agile są sugerowane w ramach akcji monitowania w ramach zarządzania planami. Metodologia planu zaleca wykonanie poniższych kroków w celu osiągnięcia tego salda. Sporządź spis pełnej cyfrowej przy użyciu zautomatyzowanych narzędzi do odnajdywania, ale Użyj funkcji przyrostowej racjonalizacji do zaplanowania w ciągu następnych 1-3 miesięcy pracy. Upewnij się, że odpowiednie wyrównanie organizacyjne ma być szybko przenoszone. Utwórz plan gotowości do kwalifikacji dla przypisanego zespołu. Użyj szablonu planu wdrażania w chmurze, aby szybko wdrożyć początkową zaległość.
 
 **Rozszerzony przykład zakresu:** Czasami dostarczenie planu wdrażania w chmurze może odpowiadać na zdarzenia biznesowe zależne od czasu lub o dużym wpływie. Gdy sukces wymaga przenoszenia dużej liczby zasobów w ustalonym czasie, powyższe kroki są często wykonywane z dokładniejszym nakładem na planowanie. Kluczem do sukcesu w tych scenariuszach jest zaplanowanie wystarczającej ilości miejsca, aby rozpocząć, a następnie zaplanować pełne zaangażowanie. Takie podejście zmniejsza prawdopodobieństwo zaplanowania blokowania wyników firmy.
 
 ## <a name="balance-during-ready"></a>Saldo w trakcie gotowości
 
-Kiedy zespoły przyjęcia są przygotowywane do ich pierwszych kroków w chmurze, często są konkurujące priorytety między czasem na wdrażanie i długoterminowe operacje. Zespół może się wiązać z dobrym sposobem na dostarczenie zadania na stronie, a także zarządzanie nim. Ten problem jest konieczny w tradycyjnych środowiskach IT, w których czynność tworzenia platformy wymaga zasobów fizycznych i cykli pozyskiwania. Jeśli jednak cała platforma IT jest zdefiniowana w kodzie, tradycyjne programowanie taktykę (np. refaktoryzacji) zmniejszy konieczność dobrego zarządzania od początku.
+Kiedy zespoły przyjęcia są przygotowywane do ich pierwszych kroków w chmurze, często są konkurujące priorytety między czasem na wdrażanie i długoterminowe operacje. Zespół może się wiązać z dobrym rozwiązaniem, aby zapewnić odpowiednie zadanie zadania w sposób niedobrze zarządzany. Ten problem jest konieczny w tradycyjnych środowiskach IT, w których czynność tworzenia platformy wymaga zasobów fizycznych i cykli pozyskiwania. Jeśli jednak cała platforma IT jest zdefiniowana w kodzie, tradycyjne programowanie taktykę (np. refaktoryzacji) zmniejszy konieczność dobrego zarządzania od początku.
 
 **Priorytety konkurujące:**
 
@@ -75,7 +75,7 @@ Kiedy zespoły przyjęcia są przygotowywane do ich pierwszych kroków w chmurze
 
 ## <a name="balance-during-migrate"></a>Saldo podczas migracji
 
-Podczas prac migracji często chodzi o rozłożenie, że obciążenia będą przeszukiwać w chmurze w obecnej konfiguracji "zgodnie z oczekiwaniami". To bezpośrednia konkurencja z widokiem szukania do przodu w celu przetworzenia architektury każdego obciążenia, aby lepiej wykorzystać możliwości chmury. Niestety, te dwa nie wykluczają się wzajemnie i mogą być nadmiarowe, gdy są zarządzane przez wspólny proces.
+Podczas prac migracji często chodzi o rozłożenie, że obciążenia będą przeszukiwać w chmurze w obecnej konfiguracji "zgodnie z oczekiwaniami". To bezpośrednie konkurowanie z widokiem wyszukiwania do przodu w celu przetworzenia architektury każdego obciążenia, aby lepiej wykorzystać możliwości chmury. Niestety, te dwa nie wykluczają się wzajemnie i mogą być nadmiarowe, gdy są zarządzane przez wspólny proces.
 
 **Priorytety konkurujące:**
 
@@ -84,7 +84,7 @@ Podczas prac migracji często chodzi o rozłożenie, że obciążenia będą prz
 
 **Minimalny zakres:** W trakcie planowania wczesnego należy użyć opcji Rehost w celu zaplanowania i jasno zrozumieć, że ta opcja jest początkowym założeniami biznesowymi, a nie z decyzją techniczną. W metodologii migrowania zespół adopcji będzie następnie zakwestionować to założenie dla każdego zmigrowanego obciążenia. Ta metodologia jest zgodna z krokami oceny, migracji, podwyższania poziomu dla każdego obciążenia lub grupy lub obciążeń tworzących fabrykę migracji. W fazie oceny zespół ds. przyjęcia ocenia dopasowanie techniczne i architekturę każdego obciążenia. Ten nakład oceny rzadko skutkuje czystym podejściem i przesunięciami, ponieważ wiele składników w architekturze można wybrać do refaktoryzacji i modernizacji.
 
-**Rozszerzony przykład zakresu:** W przypadku obciążeń o krytycznym znaczeniu lub dużej czułości, takich jak aplikacja typu mainframe lub wielowarstwowa mikrousług, w fazie oceny mogą być wymagane dokładniejsze oceny obciążenia. W tych sytuacjach związanych z ponowną architekturą zaleca się, aby klienci korzystali z przeglądu architektury platformy Azure i platformy Azure Architecture w celu ograniczenia obciążenia podczas oceny.
+**Rozszerzony przykład zakresu:** W przypadku obciążeń o krytycznym znaczeniu lub dużej czułości, takich jak aplikacja typu mainframe lub wielowarstwowa mikrousług, w fazie oceny mogą być wymagane dokładniejsze oceny obciążenia. W tych sytuacjach związanych z rozarchitekturą klienci powinni skorzystać z przeglądu architektury platformy Azure i platformy Azure Architecturej, aby ograniczyć wymagania dotyczące obciążeń podczas oceny.
 
 ## <a name="balance-during-innovate"></a>Równowaga podczas innowacji
 
@@ -97,7 +97,7 @@ Prawdziwe innowacje związane z klientem tworzą typowe priorytety powodujące k
 
 **Minimalny zakres:** Metodologia innowacje ilustruje, jak zintegrować strategię i plany poprzez wartość biznesową konsensusu. W tym przewodniku przedstawiono narzędzia natywne w chmurze, które mogą przyspieszyć poszczególne dyscypliny innowacji, a także najlepsze rozwiązania dotyczące implementacji. Na koniec sekcji ulepszenia procesów przedstawiono podejścia do tworzenia empatię klienta przy jednoczesnym przestrzeganiu planów i strategii w trakcie podróży w chmurze. Takie podejście koncentruje się na dostarczaniu innowacji przy użyciu możliwie najmniejszej technologii.
 
-**Rozszerzony przykład zakresu:** Czasami innowacje mogą być zależne od kluczowych dla działalności obciążeń o dużej czułości. Gdy "klient" jest użytkownikiem wewnętrznym, nakład programistyczny może być zarówno krytyczną, jak i wysoką czułością w najkrótszym czasie iteracji. W tych scenariuszach zaleca się, aby zespoły adopcji korzystały z przeglądów architektury platformy Azure i platformy Azure Architecture w celu oceny zaawansowanego projektu architektonicznego na wczesnym etapie procesu.
+**Rozszerzony przykład zakresu:** Czasami innowacje mogą być zależne od kluczowych dla działalności obciążeń o dużej czułości. Gdy "klient" jest użytkownikiem wewnętrznym, nakład programistyczny może być zarówno krytyczną, jak i wysoką czułością w najkrótszym czasie iteracji. W tych scenariuszach, zespół ds. wdrażania powinien korzystać z przeglądu architektury platformy Azure i platformy Azure Architecturej, aby oszacować zaawansowane Projektowanie architektury wczesnie w procesie.
 
 ## <a name="balance-during-govern"></a>Równowaga w trakcie zarządzania
 
@@ -118,8 +118,8 @@ Model biznesowy IT dotyczący zarządzania operacjami został ciągle rozwijają
 
 **Priorytety konkurujące:**
 
-- Szerokie inwestycje: w przypadku nieprzerwanego inwestowania w awarie, szybkie odzyskiwanie i monitorowanie w środowisku jest tradycyjnym widokiem zarządzania operacjami. Takie podejście może być kosztowne i czasami duplikowane produkty pomocnicze udostępnione przez dostawcę chmury.
-- Brak operacji Ops/niskie operacje: Korzystaj z natywnych narzędzi do obsługi chmurowej, aby zminimalizować powtarzające się i cykliczne zadania wcześniej dostarczone przez pracowników w czasie pełnym. Zmniejszenie tych zależności operacyjnych w modelu zarządzania operacjami zwalnia te pracowników, aby zwiększyć ich wartość. Samo takie podejście może prowadzić do subpar obsługi operacji.
+- **Szerokie inwestycje:** Zainwestowanie na awarie, szybkie odzyskiwanie i monitorowanie w środowisku jest tradycyjnym widokiem zarządzania operacjami. Takie podejście może być kosztowne i czasami duplikowane produkty pomocnicze udostępnione przez dostawcę chmury.
+- **Brak operacji Ops i niskich operacji Ops:** Korzystaj z natywnych narzędzi do obsługi operacji w chmurze, aby zminimalizować powtarzające się i cykliczne zadania wcześniej dostarczone przez pracowników. Zmniejszenie tych zależności operacyjnych w modelu zarządzania operacjami zwalnia te pracowników, aby zwiększyć ich wartość. Samo takie podejście może prowadzić do subpar obsługi operacji.
 
 **Minimalny zakres:** Metodologia zarządzania sugeruje utworzenie natywnej, niezwiązanej z chmurą linii bazowej zarządzania. Potwierdzanie, że punkt odniesienia nie będzie spełniał wszystkich potrzeb firmy, współpracuje z firmą w celu zdefiniowania zobowiązań i lepszego wyrównania inwestycji. Rozwiń linię bazową, aby spełnić typowe potrzeby dla wszystkich obciążeń. Następnie Włącz zespoły platformy lub określone zespoły obciążeń, aby zarządzać dobrze zarządzanymi rozwiązaniami w środowisku dobrze zarządzanym.
 

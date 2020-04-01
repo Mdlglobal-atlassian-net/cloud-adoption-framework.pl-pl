@@ -7,12 +7,12 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: a3e316d49acaaee00d5ecd10efac9aa15c2dbd49
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 4ed7d27dc57b957655f4fd2adbfac6f026c57ff5
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353676"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527014"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework"></a>Co nowego w platformie wdrażania Microsoft Cloud
 
@@ -37,7 +37,7 @@ Pierwsza strefa docelowa została wyściągana z przewodnika gotowości, aby mo�
 
 - [Co to jest strefa wyładunkowe?](../ready/landing-zone/index.md): definiuje termin strefy docelowej
 - [Pierwsza strefa](../ready/landing-zone/first-landing-zone.md)docelowa: rozwija w porównaniu z różnymi strefami wyładunkowymi
-- [Migrowanie strefy docelowej](../ready/landing-zone/migrate-landing-zone.md): przeniesiono wcześniejszy artykuł planu strefy docelowej, aby oddzielić definicję planu CAF od zaznaczenia pierwszej strefy docelowej, aby umożliwić im więcej opcji strefy wyładunkowej.
+- [Migrowanie strefy docelowej](../ready/landing-zone/migrate-landing-zone.md): przeniesiono wcześniejszy artykuł planu strefy docelowej, aby oddzielić definicję planu od zaznaczenia pierwszej strefy docelowej, aby umożliwić im więcej opcji strefy wyładunkowej.
 - Terraform — artykuł dotyczący [strefy wyładunkowej](../ready/landing-zone/terraform-landing-zone.md) : przeniesiony z sekcji "rozszerzony zakres" gotowej metodologii do nowej sekcji "strefa docelowa" metody gotowej do traktowania Terraforma jako obywatel pierwszej klasy w konwersacji strefy docelowej.
 - Grupuj podstawowe zagadnienia dotyczące strefy docelowej w spisie treści w obszarze "podstawowe zagadnienia dotyczące strefy wyładunkowej".
 - Przeniesiono najlepsze rozwiązania w zakresie zabezpieczeń z metodologii migrowania do nowej sekcji strefy docelowej wywoływanie "Popraw zabezpieczenia strefy wyładunkowej (dane poufne)", aby uwidocznić te wskazówki wcześniej w cyklu życia.

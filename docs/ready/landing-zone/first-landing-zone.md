@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 594f10968e45477895fcc5dcd1b2a95d16d7c861
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: a7d5dede975dbc4a8571bcc54cbff71fa1588200
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392652"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527303"
 ---
 # <a name="first-landing-zone"></a>Pierwsza strefa docelowa
 
@@ -46,7 +46,7 @@ Wybór pierwszej strefy docelowej zależy od wielu zmiennych. Poniższa siatka p
 
 W poniższej tabeli przedstawiono te same strefy wyładunkowe z nieco różnych perspektyw, co prowadzi do bardziej szczegółowych procesów decyzyjnych.
 
-| Strefa docelowa                                 | Centrum                          | Znajdowało    | Model chmury | Technologia      |
+| Strefa docelowa                                 | Koncentrator                          | Znajdowało    | Model chmury | Technologia      |
 |----------------------------------------------|------------------------------|----------|-------------|-----------------|--|--|--|
 | [CAF migrację](./migrate-landing-zone.md)     | Wymagany jest składnik refaktoryzacji            | Dołączono | Tylko platforma Azure  | Azure Blueprint |
 | [CAF Terraform](./terraform-landing-zone.md) | Uwzględnione w module VDC       | Dołączono | Rozwiązanie wielochmurowe  | Terraform       |

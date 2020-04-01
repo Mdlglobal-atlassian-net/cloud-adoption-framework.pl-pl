@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 18357fc22ee7cd482d5799bffcf7454bfaa77afa
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 59810d9bd3e45086597cb9811ce4bba160640246
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431689"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80526980"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Przykłady wyników uzyskiwania dostępu globalnego
 
@@ -30,7 +30,7 @@ Rozszerzanie na nowy rynek może być jednym z najbardziej cennych wyników firm
 
 ## <a name="data-sovereignty"></a>Niezależność danych
 
-Na nowych rynkach wprowadzono dodatkowe ograniczenia ładu. Rodo to jeden przykład kryteriów ładu, które mogą spowodować znaczny wpływ na finanse. Platforma Azure oferuje oferty zgodności, które pomagają klientom spełnić zobowiązania w zakresie zgodności między branżami objętymi regulacją i rynkami globalnymi. Aby uzyskać więcej informacji, zobacz [Omówienie zgodności Microsoft Azure](https://azure.microsoft.com/overview/trusted-cloud/compliance/).
+Na nowych rynkach wprowadzono dodatkowe ograniczenia ładu. Rodo to jeden przykład kryteriów ładu, które mogą spowodować znaczny wpływ na finanse. Platforma Azure oferuje oferty zgodności, które pomagają klientom spełnić zobowiązania w zakresie zgodności między branżami objętymi regulacją i rynkami globalnymi. Aby uzyskać więcej informacji, zobacz [Omówienie zgodności Microsoft Azure](https://azure.microsoft.com/overview/trusted-cloud/compliance).
 
 - **Przykład:** Dostawca narzędzi opartych na Stanach Zjednoczonych otrzymał umowę umożliwiającą dostarczenie narzędzi w Kanadzie. Kanadyjskie prawo dotyczące suwerenności danych wymaga, aby kanadyjskie dane były przechowywane w Kanadzie. Ta firma pracowała w sposób dzięki wykorzystaniu innowacji przez aplikacje obsługujące chmurę przez lata. W związku z tym ich oprogramowanie można wdrożyć za pomocą w pełni inicjowanych procesów DevOps. Z kilkoma drobnymi zmianami w bazie kodu, mogli wdrożyć działającą kopię kodu w centrum danych platformy Azure w Kanadzie, przyczynić się do zachowania zgodności i obsłużyć klienta.
 

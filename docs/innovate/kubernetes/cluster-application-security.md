@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8d0265ff32f7cad82a98fd1dbc1070db40aa6167
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c7d27fb64e03358876eb8384c09e3add5f5c433e
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426885"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527241"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -60,7 +60,7 @@ Podczas przygotowywania aplikacji do produkcji należy zaimplementować minimaln
 > | **Zabezpiecz ruch sieciowy wewnątrz sieci przy użyciu zasad sieciowych.** Stosuj zasadę najniższych uprawnień do kontroli przepływu ruchu sieciowego między zasobnikami w klastrze. | [Zabezpieczanie ruchu wewnątrzwspólnotowego przy użyciu zasad sieciowych](https://docs.microsoft.com/azure/aks/use-network-policies) |
 > | **Ogranicz dostęp do serwera interfejsu API przy użyciu autoryzowanych adresów IP.** Zwiększ bezpieczeństwo klastra i Zminimalizuj obszar ataków, ograniczając dostęp do serwera interfejsu API do ograniczonego zestawu zakresów adresów IP. | [Bezpieczny dostęp do serwera interfejsu API](https://docs.microsoft.com/azure/aks/api-server-authorized-ip-ranges) |
 > | **Ogranicz ruch wychodzący klastra.** Informacje o portach i adresach, które mają być dozwolone w przypadku ograniczenia ruchu wychodzącego dla klastra. Do zabezpieczenia ruchu wychodzącego i definiowania wymaganych portów i adresów można użyć zapory platformy Azure lub urządzenia zapory innej firmy. | [Sterowanie ruchem wychodzącym węzłów klastra w AKS](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
-> | **Zabezpieczanie ruchu za pomocą zapory aplikacji sieci Web (WAF).** Korzystanie z usługi Azure Application Gateway jako kontrolera usług przychodzących dla klastrów Kubernetes.  | [Konfigurowanie usługi Azure Application Gateway jako kontrolera transferu danych przychodzących](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
+> | **Zabezpieczanie ruchu za pomocą zapory aplikacji sieci Web (WAF).** Użyj usługi Azure Application Gateway jako kontrolera ruchu przychodzącego dla klastrów Kubernetes.  | [Konfigurowanie usługi Azure Application Gateway jako kontrolera transferu danych przychodzących](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **Zastosuj aktualizacje zabezpieczeń i jądra do węzłów procesu roboczego.** Poznaj środowisko aktualizacji węzłów AKS. W celu ochrony klastrów aktualizacje zabezpieczeń są automatycznie stosowane do węzłów systemu Linux w programie AKS. Te aktualizacje obejmują poprawki zabezpieczeń systemu operacyjnego lub aktualizacje jądra. Niektóre z tych aktualizacji wymagają ponownego uruchomienia węzła w celu ukończenia procesu. | [Użyj kured do automatycznego ponownego uruchamiania węzłów w celu zastosowania aktualizacji](https://docs.microsoft.com/azure/aks/node-updates-kured) |
 > | **Skonfiguruj rozwiązanie do skanowania kontenera i klastra.** Kontenery skanowania są przekazywane do Azure Container Registry i uzyskują dokładniejszy wgląd w węzły klastra, ruch w chmurze i mechanizmy zabezpieczeń. | [Azure Container Registry integrację z usługą Security Center](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br/> [Integracja usługi Azure Kubernetes z usługą Security Center](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 

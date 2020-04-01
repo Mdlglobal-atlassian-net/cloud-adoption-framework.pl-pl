@@ -7,18 +7,18 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 128aa99a978f70525e2279868d2317dec8c965cb
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2cfa4ec997dc211ad50eafcb723c58d934c45d10
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433580"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527021"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
 # <a name="skills-readiness-for-cloud-monitoring"></a>Gotowość do umiejętności monitorowania w chmurze
 
-W fazie planu podróży migracji celem jest opracowanie planów niezbędnych do wdrożenia. Plany muszą również obejmować sposób obsługi tych obciążeń, zanim zostaną one przenoszone lub udostępnione w środowisku produkcyjnym, a nie później. Zainteresowane strony biznesowe oczekują cennych usług i oczekują ich bez zakłóceń. Członkowie personelu IT muszą poznać nowe umiejętności i dostosować je, aby efektywnie wykorzystać zintegrowane usługi platformy Azure w celu efektywnego monitorowania zasobów na platformie Azure i w środowiskach hybrydowych.
+W fazie planu podróży migracji celem jest opracowanie planów niezbędnych do wdrożenia. Plany muszą również obejmować sposób obsługi tych obciążeń, zanim zostaną one przenoszone lub udostępnione w środowisku produkcyjnym, a nie później. Zainteresowane strony biznesowe oczekują cennych usług i oczekują ich bez zakłóceń. Członkowie personelu IT muszą poznać nowe umiejętności i dostosować je, aby efektywnie korzystać z zintegrowanych usług platformy Azure w celu efektywnego monitorowania zasobów na platformie Azure i w środowiskach hybrydowych.
 
 Opracowywanie niezbędnych umiejętności może być przyspieszone przy użyciu następujących ścieżek szkoleniowych:
 

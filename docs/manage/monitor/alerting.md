@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: f8399e540b81154ce9de8c5ec1d0512c18d90ed8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 3053d26f5b2cf3c7d1589f165fb32702b007d49f
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430052"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527561"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -93,7 +93,7 @@ Opóźnienie to jedna z najważniejszych decyzji, które obejmują alerty i szyb
 
 Tym samym, istnieje kilka ważnych przypisów dla tej reguły.
 
-**Telemetrię systemu operacyjnego gościa** ma wiele ścieżek do pobrania w systemie.
+**Telemetria systemu operacyjnego gościa** ma wiele ścieżek do pobrania w systemie.
 
 - Najszybszy sposób na wysłanie alertów dotyczących tych danych polega na zaimportowaniu ich jako metryki niestandardowych. W tym celu należy użyć rozszerzenia Diagnostyka Azure, a następnie przy użyciu alertu dotyczącego metryki. Jednak metryki niestandardowe są obecnie dostępne w wersji zapoznawczej i są [droższe niż inne opcje](https://azure.microsoft.com/pricing/details/monitor).
 

@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3680af7b55012d0fbfbe0feac632e92b178aa8d2
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 6ed87d6a46dd1a31611c50ed5ce8d3c30c5849aa
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354224"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527221"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -381,7 +381,7 @@ Maszyny wirtualne platformy Azure są przechowywane jako stronicowe obiekty blob
 - [Informacje o sposobie](https://docs.microsoft.com/azure/storage/blobs/storage-blob-snapshots) tworzenia migawki obiektów blob.
 - [Przegląd przykładowego scenariusza](https://azure.microsoft.com/blog/microsoft-azure-block-blob-storage-backup) dotyczącego tworzenia kopii zapasowych magazynu obiektów blob.
 - [Informacje](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete) o usuwaniu nietrwałym.
-- [Odzyskiwanie po awarii i wymuszone przechodzenie w tryb failover (wersja zapoznawcza) w usłudze Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+- [Odzyskiwanie po awarii i wymuszone przechodzenie w tryb failover (wersja zapoznawcza) w usłudze Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=/azure/storage/blobs/toc.json)
 
 #### <a name="third-party-backup"></a>Tworzenie kopii zapasowych przez inne firmy
 

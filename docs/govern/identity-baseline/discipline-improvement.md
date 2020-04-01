@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9f945ee790bf33d37601ba5a09c49581f95a5d9a
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 48da6b708644030a2efc20dc0764bcb1b40ffe25
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434998"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527591"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -130,7 +130,7 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 - Zapoznaj się z procesem dołączania, odłączania i aktualizacji poświadczeń.
 - Zbadaj rosnące poziomy automatyzacji i komunikacji między modułami zarządzania dostępem do tożsamości (IAM).
 - Rozważ zaimplementowanie podejścia do operacji związanych z zabezpieczeniami programistycznymi (DevSecOps).
-- Wykonaj analizę wpływu, aby ocenić wyniki dotyczące kosztów, zabezpieczeń i adopcji użytkowników.
+- Przeprowadź analizę wpływu, aby ocenić wyniki dotyczące kosztów, zabezpieczeń i adopcji użytkowników.
 - Należy okresowo generować raport dotyczący wpływów, który pokazuje zmiany w metrykach utworzonych przez system i ocenia wpływ [strategii tożsamości hybrydowej](../../decision-guides/identity/index.md)na działalność biznesową.
 - Ustanów zintegrowane monitorowanie zalecane przez [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro).
 

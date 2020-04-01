@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 322f08ba65aa513d5d76c772c45bfb6563662ffd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c393b00de1d235553dcea544493ef019f46b1e0c
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430212"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527584"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Ochrona i odzyskiwanie w programie Cloud Management
 
@@ -62,7 +62,7 @@ Aby dowiedzieć się więcej o tym procesie myśli, zapoznaj się z artykułem [
 
 ### <a name="protect-and-recover-vms"></a>Ochrona i odzyskiwanie maszyn wirtualnych
 
-Większość obciążeń ma pewną zależność od maszyn wirtualnych, które obsługują różne aspekty rozwiązania. Aby obciążenie obsługiwało proces biznesowy po awarii systemu, należy szybko odzyskać wiele maszyn wirtualnych.
+Większość obciążeń ma pewną zależność od maszyn wirtualnych, które obsługują różne aspekty rozwiązania. Aby obciążenie obsługiwało proces biznesowy po awarii systemu, niektóre maszyny wirtualne muszą być odzyskiwane szybko.
 
 Co minutę przestoju tych maszyn wirtualnych może spowodować utratę przychodu lub zmniejszyć zyskowność. Gdy czas przestoju maszyny wirtualnej ma bezpośredni wpływ na wydajność działania firmy, RTO jest bardzo ważne. Maszyny wirtualne można odzyskiwać szybciej przy użyciu replikacji do lokacji dodatkowej i zautomatyzowanego odzyskiwania, modelu, który jest określany jako model odzyskiwania gorąca. W najwyższym stanie odzyskiwania maszyny wirtualne można zreplikować do w pełni funkcjonalnej, dodatkowej lokacji. To bardziej kosztowne podejście jest określane jako model odzyskiwania wysokiej dostępności lub gorąca i gorąca.
 

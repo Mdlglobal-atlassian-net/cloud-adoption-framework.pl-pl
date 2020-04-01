@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 34135a7bb0a6fb97895bde3b002426f37c0f53fd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 47aeccac0f98d21d2740a27ded12696372efaaa0
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80425940"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527527"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Instrukcje dotyczące przykładowych zasad linii bazowej zabezpieczeń
 
@@ -87,7 +87,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Trendy i potencjalne luki w zabezpieczeniach, które mogą mieć wpływ na wdrożenia w chmurze, powinny być regularnie weryfikowane przez zespół ds. zabezpieczeń, aby zapewnić aktualizacje narzędzi linii bazowej zabezpieczeń używanej w chmurze.
 
-**Potencjalna opcja projektowania:** Ustanów regularne spotkania przeglądów zabezpieczeń, które obejmują odpowiednich członków zespołu IT i nadzoru. Zapoznaj się z istniejącymi danymi zabezpieczeń i metrykami, aby określić luki w bieżącym narzędziu zasady i zabezpieczenia i zasady aktualizacji w celu skorygowania wszelkich nowych zagrożeń. Skorzystaj z [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) i [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) , aby uzyskać szczegółowe informacje na temat nowych zagrożeń związanych z wdrożeniami.
+**Potencjalna opcja projektowania:** Ustanów regularne spotkania przeglądów zabezpieczeń, które obejmują odpowiednich członków zespołu IT i nadzoru. Zapoznaj się z istniejącymi danymi zabezpieczeń i metrykami, aby określić luki w bieżącym narzędziu zasady i zabezpieczenia i zasady aktualizacji w celu skorygowania wszelkich nowych zagrożeń. Użyj [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) i [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) , aby uzyskać wgląd w szczegółowe informacje na temat nowych zagrożeń związanych z wdrożeniami.
 
 ## <a name="next-steps"></a>Następne kroki
 

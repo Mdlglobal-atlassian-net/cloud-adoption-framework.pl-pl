@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2378c3ba3e17a9c1408a07c65129dc853a83d8b2
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 0708c394cca50c64813b7eea04a1239586c825af
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432834"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527713"
 ---
 # <a name="workload-classification-before-migration"></a>Klasyfikacja obciążenia przed migracją
 
@@ -35,7 +35,7 @@ Pracuj z zespołami ds. zabezpieczeń i zarządzania tak szybko, jak to możliwe
 
 ## <a name="mission-criticality"></a>Krytyczne znaczenie dla działalności
 
-Zgodnie z opisem w artykule dotyczącym [krytycznego obciążenia](../../../manage/considerations/criticality.md), krytyczne znaczenie dla obciążenia jest miarą znaczącego wpływu na działalność podczas przestoju. Ten punkt danych ułatwia zespołom ds. zarządzania i bezpieczeństwa ocenę ryzyka dotyczącego awarii i naruszeń. Podczas oceny zespół ds. wdrażania chmury powinien ocenić istotność dla każdego obciążenia przeznaczonego do migracji i udostępnić tę klasyfikację zespołom pomocniczym. Obciążenia "niskie" lub "nieobsługiwane" mogą mieć niewielki wpływ na zespoły pomocnicze. Jednak w przypadku obciążeń "klasyfikacje" krytyczne "lub" krytyczne dla jednostek ", ich zależności operacyjne stają się bardziej widoczne.
+Zgodnie z opisem w artykule dotyczącym [krytycznego obciążenia](../../../manage/considerations/criticality.md), krytyczne znaczenie dla obciążenia jest miarą znaczącego wpływania na działalność podczas przestoju. Ten punkt danych ułatwia zespołom ds. zarządzania i bezpieczeństwa ocenę ryzyka dotyczącego awarii i naruszeń. Podczas oceny zespół ds. wdrażania chmury powinien ocenić istotność dla każdego obciążenia przeznaczonego do migracji i udostępnić tę klasyfikację zespołom pomocniczym. Obciążenia "niskie" lub "nieobsługiwane" mogą mieć niewielki wpływ na zespoły pomocnicze. Jednak w przypadku obciążeń "klasyfikacje" krytyczne "lub" krytyczne dla jednostek ", ich zależności operacyjne stają się bardziej widoczne.
 
 Pracuj z zespołami ds. zabezpieczeń i działań tak szybko, jak to możliwe, aby zdefiniować następujące elementy:
 

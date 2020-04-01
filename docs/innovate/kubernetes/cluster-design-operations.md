@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 31ea5b2e5906f08de5197906b57cbe32337e80f9
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 594b8ae3ce7949c3289d9a81ac9870889a5dba98
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426841"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527179"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -62,7 +62,7 @@ Podczas przygotowywania aplikacji do produkcji należy zaimplementować minimaln
 
 ## <a name="optimize-and-scale"></a>Optymalizowanie i skalowanie
 
-Teraz, gdy aplikacja jest w środowisku produkcyjnym, jak można zoptymalizować przepływ pracy i przygotować swoją aplikację i zespół do skalowania? Skorzystaj z listy kontrolnej optymalizacji i skalowania, aby przygotować. Powinno być możliwe udzielenie odpowiedzi na te pytania:
+Teraz, gdy aplikacja jest w środowisku produkcyjnym, jak można zoptymalizować przepływ pracy i przygotować swoją aplikację i zespół do skalowania? Użyj listy kontrolnej Optymalizacja i skalowanie, aby przygotować. Powinno być możliwe udzielenie odpowiedzi na te pytania:
 
 > [!div class="checklist"]
 >
@@ -77,5 +77,5 @@ Teraz, gdy aplikacja jest w środowisku produkcyjnym, jak można zoptymalizować
 > | Lista kontrolna  | Zasoby |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Automatyczne skalowanie klastra w celu spełnienia wymagań aplikacji.** Aby zachować zapotrzebowanie na aplikacje, może być konieczne dostosowanie liczby węzłów, które automatycznie uruchamiają obciążenia przy użyciu automatycznego skalowania klastra. | [Konfigurowanie automatycznego skalowania klastra Kubernetes](https://docs.microsoft.com/azure/aks/cluster-autoscaler)    |
-> | **Zaplanuj ciągłość działania i odzyskiwanie po awarii.** Zaplanuj wdrożenie z wieloregionem, Utwórz plan migracji magazynu i Włącz replikację geograficzną dla obrazów kontenerów. | [Najlepsze rozwiązania dotyczące wdrożeń wieloregionowych](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Azure Container Registry replikację geograficzną](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
+> | **Zaplanuj ciągłość działania i odzyskiwanie po awarii.** Zaplanuj wdrożenie z wieloregionem, Utwórz plan migracji magazynu i Włącz replikację geograficzną dla obrazów kontenerów. | [Najlepsze rozwiązania dotyczące wdrożeń regionów](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Azure Container Registry replikację geograficzną](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
 > | **Skonfiguruj monitorowanie i rozwiązywanie problemów na dużą skalę.** Skonfiguruj alerty i monitorowanie dla aplikacji w Kubernetes. Dowiedz się więcej na temat konfiguracji domyślnej, sposobu integrowania bardziej zaawansowanych metryk i sposobu dodawania własnych niestandardowych monitorów i alertów w celu niezawodnego działania aplikacji. | [Wprowadzenie do monitorowania i wysyłania alertów dla Kubernetes (wideo)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [Konfigurowanie alertów za pomocą Azure Monitor dla kontenerów](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [Przeglądanie dzienników diagnostycznych składników głównych](https://docs.microsoft.com/azure/aks/view-master-logs) <br/> [Diagnostyka usługi Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/concepts-diagnostics)    |
