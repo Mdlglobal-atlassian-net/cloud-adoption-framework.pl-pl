@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c7aa485429a8d6a6cdb4d0d18622d6e7cd570e9c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 3e191c89a33d09315c332680b82a72caf0785e2f
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094236"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353917"
 ---
+<!-- cSpell:ignore MSPs -->
+
 ::: zone target="chromeless"
 
 # <a name="assistance"></a>Pomoc
@@ -110,4 +112,4 @@ Dostawcy rozwiązań certyfikowani przez firmę Microsoft specjalizują się w d
 Uzyskaj pomoc od partnerów oferujących gotowe lub niestandardowe rozwiązania dla platformy Azure oraz partnerów, którzy mogą pomóc we wdrażaniu tych rozwiązań i w zarządzaniu nimi:
 
 - [Znajdź partnera z zakresu rozwiązań w chmurze](https://www.microsoft.com/solution-providers/home). Certyfikowany partner z zakresu rozwiązań w chmurze może pomóc w pełni wykorzystać chmurę, oceniając cele biznesowe dotyczące wdrożenia w chmurze oraz identyfikując odpowiednie rozwiązanie w chmurze, które spełnia potrzeby biznesowe i pomaga zwiększyć wydajność oraz efektywność biznesową.
-- [Znajdź partnera usługi zarządzanej](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca). Partner usługi zarządzanej na platformie Azure (MSP) pomaga w przeniesieniu działalności na platformę Azure przez zarządzanie wszystkimi aspektami przejścia do chmury. Partnerzy usługi zarządzanej zapewniają kompleksowe doradztwo od konsultacji do migracji i zarządzania operacjami, dzięki czemu klienci poznają wszystkie korzyści związane z wdrażaniem w chmurze. Zapewniają oni również typową pomoc techniczną, obsługę aprowizacji i rozliczeń &mdash; z elastycznym modelem biznesowym płatności zgodnie z rzeczywistym użyciem (PAYG).
+- [Znajdź partnera usługi zarządzanej](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca). Partner usługi zarządzanej na platformie Azure (MSP) pomaga w przeniesieniu działalności na platformę Azure przez zarządzanie wszystkimi aspektami przejścia do chmury. Partnerzy usługi zarządzanej zapewniają kompleksowe doradztwo od konsultacji do migracji i zarządzania operacjami, dzięki czemu klienci poznają wszystkie korzyści związane z wdrażaniem w chmurze. Zapewniają oni również typową pomoc techniczną, obsługę aprowizacji i rozliczeń &mdash; z elastycznym modelem biznesowym płatności zgodnie z rzeczywistym użyciem.

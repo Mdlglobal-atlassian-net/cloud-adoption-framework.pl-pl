@@ -9,29 +9,30 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 6ed6e547156a2fa9f07a49460fedd94a8ceb152b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024010"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354341"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
 # <a name="organize-your-azure-resources"></a>Organizowanie zasobów platformy Azure
 
-Organizowanie zasobów opartych na chmurze ma kluczowe znaczenie dla zabezpieczania i śledzenia kosztów związanych z obciążeniami oraz zarządzania nimi. Aby zorganizować zasoby, użyj hierarchii zarządzania w ramach platformy Azure, zaimplementuj dobrze przemyślane konwencje nazewnictwa i zastosuj tagowanie zasobów.
+Organizowanie zasobów opartych na chmurze ma kluczowe znaczenie dla zabezpieczania i śledzenia kosztów związanych z obciążeniami oraz zarządzania nimi. Aby uporządkować zasoby, zdefiniuj hierarchię grup zarządzania, przestrzegaj dobrze przemyślanej konwencji nazewnictwa i zastosuj tagowanie zasobów.
 
 <!-- markdownlint-disable MD024 MD025 -->
 
+<!-- cSpell:disable-next-line -->
 # <a name="azure-management-groups-and-hierarchy"></a>[Grupy zarządzania i hierarchia platformy Azure](#tab/AzureManagmentGroupsAndHierarchy)
 
 Platforma Azure oferuje cztery poziomy zakresu zarządzania: grupy zarządzania, subskrypcje, grupy zasobów i zasoby. Na poniższej ilustracji przedstawiono relacje tych poziomów.
 
-   ![Diagram przedstawiający relację hierarchii zarządzania](./media/organize-resources/scope-levels.png)
+   ![Schemat przedstawiający relacje między poziomami hierarchii zarządzania](./media/organize-resources/scope-levels.png)
 
 - **Grupy zarządzania:** Te grupy to kontenery, które ułatwiają zarządzanie dostępem, zasadami i zgodnością w wielu subskrypcjach. Wszystkie subskrypcje w grupie zarządzania automatycznie dziedziczą warunki zastosowane do tej grupy zarządzania.
-- **Subskrypcje:** Subskrypcja grupuje konta użytkowników i zasobów, które zostały utworzone przez te konta użytkowników. Każda subskrypcja ma ograniczenia lub limity przydziału ilości zasobów, które można tworzyć i stosować. Organizacje mogą używać subskrypcji do zarządzania kosztami i zasobami, które są tworzone przez użytkowników, zespoły lub projekty.
+- **Subskrypcje:** Subskrypcja logicznie kojarzy konta użytkowników i zasoby utworzone przez te konta użytkowników. Każda subskrypcja ma ograniczenia lub limity przydziału ilości zasobów, które można tworzyć i stosować. Organizacje mogą używać subskrypcji do zarządzania kosztami i zasobami, które są tworzone przez użytkowników, zespoły lub projekty.
 - **Grupy zasobów:** Grupa zasobów to logiczny kontener przeznaczony do wdrażania zasobów platformy Azure, takich jak aplikacje internetowe, bazy danych i konta magazynu, oraz zarządzania nimi.
 - **Zasoby:** zasoby to tworzone przez Ciebie wystąpienia usług, takie jak maszyny wirtualne, magazyn lub bazy danych SQL.
 
@@ -41,7 +42,7 @@ Ustawienia zarządzania, takie jak zasady i kontrola dostępu na podstawie ról,
 
 Krytyczne ustawienia zwykle warto stosować na wyższych poziomach, a wymagania specyficzne dla projektu na niższych poziomach. Może na przykład zajść potrzeba upewnienia się, że wszystkie zasoby w organizacji zostaną wdrożone w określonych regionach. W tym celu należy do subskrypcji zastosować zasady, które określą dozwolone lokalizacje. Kiedy inni użytkownicy w organizacji będą dodawać nowe grupy zasobów i zasoby, dozwolone lokalizacje będą automatycznie wymuszane. Dowiedz się więcej na temat zasad w sekcji dotyczącej zarządzania, zabezpieczeń i zgodności tego przewodnika.
 
-Jeśli masz tylko kilka subskrypcji, niezależne zarządzanie nimi jest stosunkowo proste. Jeśli liczba używanych przez Ciebie subskrypcji rośnie, rozważ utworzenie hierarchii grup zarządzania, aby uprościć zarządzanie subskrypcjami i zasobami. Aby uzyskać więcej informacji na temat zarządzania wieloma subskrypcjami, zobacz [skalowanie za pomocą wielu subskrypcji platformy Azure](../azure-best-practices/scaling-subscriptions.md).
+Jeśli masz tylko kilka subskrypcji, niezależne zarządzanie nimi jest stosunkowo proste. Jeśli liczba używanych przez Ciebie subskrypcji rośnie, rozważ utworzenie hierarchii grup zarządzania, aby uprościć zarządzanie subskrypcjami i zasobami. Aby uzyskać więcej informacji, zobacz temat [Organize and manage your Azure subscriptions](../azure-best-practices/organize-subscriptions.md) (Organizowanie subskrypcji platformy Azure i zarządzanie nimi).
 
 Podczas planowania strategii zgodności pracuj z osobami, które pełnią w organizacji role związane z następującymi obszarami: bezpieczeństwo i zgodność, administracja IT, architektura przedsiębiorstwa, sieć, finanse i zaopatrzenie.
 
@@ -80,9 +81,11 @@ Utwórz grupę zasobów do przechowywania zasobów, takich jak aplikacje interne
 Aby dowiedzieć się więcej, zobacz:
 
 - [Podstawy platformy Azure](../considerations/fundamental-concepts.md)
-- [Skalowanie za pomocą wielu subskrypcji platformy Azure](../azure-best-practices/scaling-subscriptions.md)
-- [Informacje o zarządzaniu dostępem do zasobów na platformie Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Utwórz początkowe subskrypcje](../azure-best-practices/initial-subscriptions.md)
+- [Utwórz dodatkowe subskrypcje platformy Azure w celu skalowania środowiska platformy Azure](../azure-best-practices/scale-subscriptions.md)
+- [Organizuj swoje subskrypcje platformy Azure i zarządzaj nimi](../azure-best-practices/organize-subscriptions.md)
 - [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Informacje o zarządzaniu dostępem do zasobów na platformie Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Limity usług subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
@@ -125,13 +128,13 @@ Utwórz grupę zasobów do przechowywania zasobów, takich jak aplikacje interne
 
 # <a name="naming-standards"></a>[Standardy nazewnictwa](#tab/NamingStandards)
 
-Odpowiedni standard nazewnictwa ułatwia identyfikowanie zasobów w witrynie Azure Portal, na rachunku i w ramach skryptów. Strategia nazewnictwa powinna zawierać szczegóły biznesowe i operacyjne jako składniki nazw zasobów:
+Dobry standard nazewnictwa ułatwia identyfikowanie zasobów w witrynie Azure Portal, na rachunku i w skryptach automatyzacji. Strategia nazewnictwa powinna zawierać szczegóły biznesowe i operacyjne jako składniki nazw zasobów:
 
 - Biznesowy aspekt tej strategii powinien zapewniać, że nazwy zasobów obejmują informacje organizacyjne konieczne do zidentyfikowania zespołów. Korzystaj z zasobów wraz z właścicielami biznesowymi, którzy odpowiadają za koszty zasobów.
 
 - Strona operacyjna powinna zapewniać, że nazwy zawierają informacje, których potrzebują zespoły IT. Użyj szczegółów, które identyfikują obciążenie, aplikację, środowisko, informacje krytyczne i inne informacje przydatne do zarządzania zasobami.
 
-Różne typy zasobów mogą mieć różne limity długości i dozwolone znaki, z których wiele zostało wymienionych w artykule na temat najlepszych rozwiązaniach platformy Azure dotyczących [konwencji nazewnictwa](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Aby uzyskać więcej informacji i zaleceń dotyczących w szczególności obsługi zadań związanych z wdrażaniem chmury w przedsiębiorstwie, zobacz [wskazówki dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md) w przewodniku Cloud Adoption Framework.
+Różne typy zasobów mają różne [zasady i ograniczenia nazewnictwa](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules). Aby uzyskać więcej informacji i zaleceń dotyczących w szczególności obsługi zadań związanych z wdrażaniem chmury w przedsiębiorstwie, zobacz [wskazówki dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md) w przewodniku Cloud Adoption Framework.
 
 Poniższa tabela zawiera wzorce nazewnictwa dla kilku przykładowych typów zasobów platformy Azure.
 
@@ -170,7 +173,7 @@ Aby uzyskać więcej zaleceń i przykładów dotyczących tagowania, zobacz [wsk
 
 Aby zastosować tag do grupy zasobów:
 
-1. Przejdź do pozycji [Grupy zasobów](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups).
+1. Przejdź do pozycji [Grupy zasobów](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2fSubscriptions%2fResourceGroups).
 1. Wybierz grupę zasobów.
 1. Wybierz pozycję **Przypisz tagi**.
 1. Wprowadź nową nazwę i wartość lub użyj listy rozwijanej, aby wybrać istniejącą nazwę i wartość.
@@ -194,6 +197,6 @@ Aby zastosować tag do grupy zasobów:
 1. Wybierz pozycję **Tagi**.
 1. Wprowadź nową nazwę i wartość lub wybierz istniejącą nazwę i wartość.
 
-::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups]" submitText="Go to resource groups" :::
+::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups]" submitText="Go to resource groups" :::
 
 ::: zone-end
