@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: c4ee7491fb5fbfa549dfe82c82e720f51188a25c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 10fa2bf0f63351adbf50c04b2725090d0c350d2d
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312309"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527758"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migracja do chmury w podręczniku Cloud Adoption Framework
 
@@ -56,7 +56,7 @@ Korzystając z przewodnika po migracji na platformę Azure, zapoznaj się z narz
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Scenariusze migracji</h3>
-Korzystając z dodatkowych podejść i narzędzi do migracji, podejmij działania w różnych scenariuszach migracji.
+Korzystając z dodatkowych podejść i narzędzi do migracji, podejmij działania w innych scenariuszach migracji.
                         </div>
                     </div>
                 </div>
