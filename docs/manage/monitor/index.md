@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 1cb25ad399c790a3dfbdd6c55119a50165f36196
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 21afe87618a4c00103fa1d2f9c6321c2ca03da2e
+ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426054"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80606570"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Przewodnik monitorowania chmury: Wprowadzenie
 
@@ -31,9 +31,9 @@ Jednak zespoły IT często wolą nadal korzystać z narzędzi, w które dużo za
 
 Celem tego przewodnika jest przedstawienie szczegółowej dokumentacji ułatwiającej kierownikom IT w przedsiębiorstwach, osobom podejmującym decyzje biznesowe, architektom aplikacji i deweloperom aplikacji zrozumienie następujących kwestii:
 
-* Platformy monitorowania Azure z omówieniem i porównaniem możliwości.
-* Najlepsze rozwiązanie do monitorowania obciążeń hybrydowych i prywatnych oraz obciążeń natywnych platformy Azure.
-* Zalecana metoda kompleksowego monitorowania infrastruktury i aplikacji jako całości. Podejście to obejmuje możliwe do wdrożenia rozwiązania na potrzeby migrowania tych typowych obciążeń na platformę Azure.
+- Platformy monitorowania Azure z omówieniem i porównaniem możliwości.
+- Najlepsze rozwiązanie do monitorowania obciążeń hybrydowych i prywatnych oraz obciążeń natywnych platformy Azure.
+- Zalecana metoda kompleksowego monitorowania infrastruktury i aplikacji jako całości. Podejście to obejmuje możliwe do wdrożenia rozwiązania na potrzeby migrowania tych typowych obciążeń na platformę Azure.
 
 Ten przewodnik nie zawiera instrukcji dotyczących używania lub konfigurowania poszczególnych usług i rozwiązań platformy Azure, ale zawiera odwołania do tych źródeł, gdy są potrzebne lub dostępne. Z tego przewodnika dowiesz się, jak pomyślnie obsługiwać obciążenie zgodnie z najlepszymi rozwiązaniami i wzorcami.
 
@@ -47,21 +47,21 @@ Ten przewodnik jest przydatny przede wszystkim dla administratorów przedsiębio
 
 Ten artykuł jest częścią serii. Następujące artykuły należy przeczytać razem we wskazanej kolejności:
 
-* Wprowadzenie (w tym artykule)
-* [Strategia monitorowania modeli wdrażania w chmurze](./cloud-models-monitor-overview.md)
-* [Zbieranie właściwych danych](./data-collection.md)
-* [Alerty](./alerting.md)
+- Wprowadzenie (w tym artykule)
+- [Strategia monitorowania modeli wdrażania w chmurze](./cloud-models-monitor-overview.md)
+- [Zbieranie właściwych danych](./data-collection.md)
+- [Alerty](./alerting.md)
 
 ## <a name="products-and-services"></a>Produkty i usługi
 
 Dostępne są usługi i oprogramowanie ułatwiające monitorowanie różnych zasobów hostowanych na platformie Azure, w sieci firmowej lub u innych dostawców usług w chmurze oraz zarządzania nimi. Oto one:
 
-* System Center Operations Manager
-* Usługa Azure Monitor, która teraz obejmuje usługi Log Analytics i Application Insights
-* Usługi Azure Policy i Azure Blueprints
-* Azure Automation
-* Azure Logic Apps
-* Azure Event Hubs
+- System Center Operations Manager
+- Usługa Azure Monitor, która teraz obejmuje usługi Log Analytics i Application Insights
+- Usługi Azure Policy i Azure Blueprints
+- Azure Automation
+- Azure Logic Apps
+- Azure Event Hubs
 
 Ta pierwsza wersja przewodnika obejmuje nasze bieżące platformy monitorowania: Azure Monitor i System Center Operations Manager. Zawiera również opis zalecanej strategii monitorowania poszczególnych modeli wdrażania w chmurze. Ponadto podano pierwszy zbiór zaleceń dotyczących monitorowania, począwszy od alertów i zbierania danych.
 

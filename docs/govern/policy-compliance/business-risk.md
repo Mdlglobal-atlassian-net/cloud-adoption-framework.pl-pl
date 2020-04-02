@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: b868600361f500f2ae6d6b55a4fad66b4d9945ee
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: e99bb023f73baad9e1940f06128ba09bd79ab0a1
+ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434175"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80606581"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -45,7 +45,7 @@ Podczas transformacji w chmurze firma i zespoły IT mają możliwość resetowan
 
 ## <a name="what-is-a-business-risk-mvp"></a>Co to jest SPECJALISTa z zakresu ryzyka biznesowego?
 
-**Minimalny, żywotny produkt** jest często używany do definiowania, aby zdefiniować najmniejszą jednostkę elementu, który może generować wartość materialną. W przypadku wystąpienia ryzyka biznesowego zespół ds. zarządzania chmurą rozpoczyna się od założenia, że niektóre zasoby zostaną wdrożone w środowisku chmury w pewnym momencie. Są w nim nieznane te zasoby, a zespół może nie mieć pewności, jakie typy danych będą przechowywane w tych zasobach.
+**Minimalny, żywotny produkt** jest często używany do definiowania najmniejszej jednostki elementu, który może generować wartości materialne. W przypadku wystąpienia ryzyka biznesowego zespół ds. zarządzania chmurą rozpoczyna się od założenia, że niektóre zasoby zostaną wdrożone w środowisku chmury w pewnym momencie. Są w nim nieznane te zasoby, a zespół może nie mieć pewności, jakie typy danych będą przechowywane w tych zasobach.
 
 Podczas planowania ryzyka biznesowego zespół ds. zarządzania chmurą może skompilować dla najgorszego scenariusza i zmapować każde możliwe zasady do chmury. Jednak zidentyfikowanie wszystkich potencjalnych zagrożeń w firmie dla wszystkich scenariuszy użycia w chmurze może zająć dużo czasu i wysiłku, a także opóźnić implementację zarządzania dla obciążeń w chmurze. Nie jest to zalecane, ale jest opcją.
 
