@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1a9e9082e4ceca7b83a4491c49e0932a3caaa9d7
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2ee44d3e83dde52e03dbe2dffca7edc51899da0e
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429655"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636435"
 ---
 # <a name="multiple-datacenters"></a>Wiele centrów danych
 
@@ -66,7 +66,7 @@ Procesy zabezpieczania i zarządzania nie powinny zostać zmienione podczas rozs
 
 ## <a name="next-steps"></a>Następne kroki
 
-Wróć do [listy kontrolnej dotyczącej zakresu rozszerzonego](./index.md), aby upewnić się, że metoda migracji jest w pełni dopasowana.
+Wróć do [listy kontrolnej najlepszych](./index.md) rozwiązań dotyczących migracji, aby upewnić się, że metoda migracji jest w pełni wyrównana.
 
 > [!div class="nextstepaction"]
-> [Lista kontrolna dotycząca zakresu rozszerzonego](./index.md)
+> [Lista kontrolna najlepszych rozwiązań dotyczących migracji](./index.md)

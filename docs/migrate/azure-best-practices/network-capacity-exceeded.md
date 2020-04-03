@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5c410527182d7185a052bc99826ea06154fdae5f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2d836e6d5397a5b2ff36ab57ee23712cfe40561a
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429632"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636450"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -79,7 +79,7 @@ Ta zmiana zakresu nie wpłynie na działania zabezpieczania i zarządzania.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Wróć do [listy kontrolnej dotyczącej zakresu rozszerzonego](./index.md), aby upewnić się, że metoda migracji jest w pełni dopasowana.
+Wróć do [listy kontrolnej najlepszych](./index.md) rozwiązań dotyczących migracji, aby upewnić się, że metoda migracji jest w pełni wyrównana.
 
 > [!div class="nextstepaction"]
-> [Lista kontrolna dotycząca zakresu rozszerzonego](./index.md)
+> [Lista kontrolna najlepszych rozwiązań dotyczących migracji](./index.md)

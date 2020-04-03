@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 01a1253e215b3d5a235c324204e443bb19a8e61b
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: adf99d715a5b1a867fd76a40d47fd0d46848f8ad
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527044"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636529"
 ---
 # <a name="balance-competing-priorities"></a>Równoważenie konkurencyjnych priorytetów
 
@@ -97,7 +97,7 @@ Prawdziwe innowacje związane z klientem tworzą typowe priorytety powodujące k
 
 **Minimalny zakres:** Metodologia innowacje ilustruje, jak zintegrować strategię i plany poprzez wartość biznesową konsensusu. W tym przewodniku przedstawiono narzędzia natywne w chmurze, które mogą przyspieszyć poszczególne dyscypliny innowacji, a także najlepsze rozwiązania dotyczące implementacji. Na koniec sekcji ulepszenia procesów przedstawiono podejścia do tworzenia empatię klienta przy jednoczesnym przestrzeganiu planów i strategii w trakcie podróży w chmurze. Takie podejście koncentruje się na dostarczaniu innowacji przy użyciu możliwie najmniejszej technologii.
 
-**Rozszerzony przykład zakresu:** Czasami innowacje mogą być zależne od kluczowych dla działalności obciążeń o dużej czułości. Gdy "klient" jest użytkownikiem wewnętrznym, nakład programistyczny może być zarówno krytyczną, jak i wysoką czułością w najkrótszym czasie iteracji. W tych scenariuszach, zespół ds. wdrażania powinien korzystać z przeglądu architektury platformy Azure i platformy Azure Architecturej, aby oszacować zaawansowane Projektowanie architektury wczesnie w procesie.
+**Rozszerzony przykład zakresu:** Czasami innowacje mogą być zależne od obciążeń o krytycznym znaczeniu lub dużej czułości. Gdy "klient" jest użytkownikiem wewnętrznym, nakład programistyczny może być zarówno krytyczną, jak i wysoką czułością w najkrótszym czasie iteracji. W tych scenariuszach, zespół ds. wdrażania powinien korzystać z przeglądu architektury platformy Azure i platformy Azure Architecturej, aby oszacować zaawansowane Projektowanie architektury wczesnie w procesie.
 
 ## <a name="balance-during-govern"></a>Równowaga w trakcie zarządzania
 

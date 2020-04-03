@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 48d8659e757c5cf078b33097a4be467e3c8ba2b9
-ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
+ms.openlocfilehash: 0af59638c43902e835b3224817d8a24e7358b4b2
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80606633"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636370"
 ---
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
 
@@ -227,7 +227,7 @@ Tagi stosowane do zasobów i tagi wymagane lub opcjonalne są różne w różnyc
 
 W poniższej sekcji przedstawiono przykłady nazw wspólnych typów zasobów platformy Azure w ramach wdrożenia w chmurze przedsiębiorstwa.
 
-<!-- cSpell:disable -->
+<!-- cspell:ignore mktgsharepoint acctlookupsvc vmhadoop vmtest vmsharepoint vmnavigator vmsqlnode stvmstcoreeastus stvmpmcoreeastus stvmstplmeastus stvmsthadoopeastus stnavigatordata stemissionsoutput stdiag stdiagsh ssimpnavigatorprod ssimpemissionsdev dlanavigatorprod dlsnavigatorprod dlaemissionsdev dlsemissionsdev weballow rdpallow sqlallow dnsblocked cloudapp azurewebsites servicebus -->
 
 <!-- markdownlint-disable MD024 MD033 -->
 
@@ -245,10 +245,10 @@ W poniższej sekcji przedstawiono przykłady nazw wspólnych typów zasobów pla
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Sieć wirtualna              | Grupa zasobów  | vnet-\<Typ subskrypcji\>-\<Region\>-\<\#\#\#\>                     | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                      |
 | Podsieć                       | Sieć wirtualna | snet-\<subskrypcja\>-\<podregion\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                      |
-| Interfejs sieciowy (NIC)      | Grupa zasobów  | nic-\<\#\#\>-\<nazwa maszyny wirtualnej\>-\<subskrypcja\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
+| Interfejs sieciowy (NIC)      | Grupa zasobów  | Karta sieciowa\<\#\#\>-\<VM Name\>-\<Subscription\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
 | Publiczny adres IP            | Grupa zasobów  | pip-\<nazwa maszyny wirtualnej lub nazwa aplikacji\>-\<Środowisko\>-\<podregion\>-\<\#\#\#\> | <ul><li>pip-dc1-shared-eastus2-001 </li><li>pip-hadoop-prod-westus-001</li></ul>                                              |
 | Moduł równoważenia obciążenia                | Grupa zasobów  | lb-\<nazwa aplikacji lub rola\>\<Środowisko\>\<\#\#\#\>                     | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
-| Sieciowa grupa zabezpieczeń | Podsieć lub karta sieciowa   | sieciowej grupy zabezpieczeń — Nazwa zasad\<lub nazwa aplikacji\>-\<\#\#\#\>                           | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>nsg-dnsbloked-001</li></ul>             |
+| Sieciowa grupa zabezpieczeń | Podsieć lub karta sieciowa   | sieciowej grupy zabezpieczeń — Nazwa zasad\<lub nazwa aplikacji\>-\<\#\#\#\>                           | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>sieciowej grupy zabezpieczeń-dnsblocked-001</li></ul>             |
 | Brama sieci lokalnej        | Brama wirtualna | LGW\<typ subskrypcji\>-\<regionu\>-\<\#\#\#\>                      | <ul><li>LGW-Shared-eastus2-001 </li><li>LGW-prod-zachodni-001 </li><li>LGW-Client-eastus2-001</li></ul>                         |
 | Brama sieci wirtualnej      | Sieć wirtualna | vgw\<typ subskrypcji\>-\<regionu\>-\<\#\#\#\>                      | <ul><li>vgw-Shared-eastus2-001 </li><li>vgw-prod-zachodni-001 </li><li>vgw-Client-eastus2-001</li></ul>                         |
 | Połączenie lokacja-lokacja      | Grupa zasobów  | cn-\<nazwa bramy lokalnej\>-to-\<nazwa bramy wirtualnej\>                | <ul><li>CN-LGW-Shared-eastus2-001-to-vgw-Shared-eastus2-001 </li><li>CN-LGW-Shared-eastus2-001-to-Shared-zachodnie-001</li></ul> |
@@ -260,8 +260,8 @@ W poniższej sekcji przedstawiono przykłady nazw wspólnych typów zasobów pla
 
 | Typ elementu zawartości                  | Zakres          | Format                                                              | Przykłady                                                                                                                          |
 |-----------------------------|----------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Maszyna wirtualna             | Grupa zasobów | vm\<nazwa zasad lub nazwa aplikacji\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
-| Konto magazynu maszyn wirtualnych          | Globalny         | stvm\<typ wydajności\>\<nazwa aplikacji lub nazwa produktu\>\<region\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
+| Maszyna wirtualna             | Grupa zasobów | Nazwa zasad\<maszyny wirtualnej lub nazwa aplikacji\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
+| Konto magazynu maszyn wirtualnych          | Globalny         | stvm\<typ wydajności\>\<nazwa aplikacji lub produkcyjny\>\<regionu\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
 | Aplikacja internetowa                     | Globalny         | Nazwa aplikacji\<aplikacji\>-\<środowisku\>-\<\#\#\#\>. [{azurewebsites.net}]   | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul>                   |
 | Aplikacja funkcji                | Globalny         | Func-\<nazwę aplikacji\>-\<środowisku\>-\<\#\#\#\>. [{azurewebsites.net}]  | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul>                 |
 | Usługa w chmurze               | Globalny         | można\<nazwę aplikacji\>-\<środowisku\>-\<\#\#\#\>. [{cloudapp.net}]        | <ul><li>could-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>                   |

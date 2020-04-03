@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a491bf0c5530898e229c5f87e3ef09a55b100382
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: e390fe341662fc2aedef82db2db33050e49efa6c
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428948"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636415"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>Gotowość w zakresie umiejętności do migracji do chmury
 
@@ -60,11 +60,11 @@ Następujące narzędzia mogą pomóc zespołowi zoptymalizować zasoby i podwy�
 
 Poniższe narzędzia ułatwiają zespołowi znalezienie sposobów zabezpieczania zmigrowanych zasobów i zarządzania nimi:
 
-- [Zabezpieczanie obciążeń i zarządzanie nimi na platformie Azure](azure-best-practices/migrate-best-practices-security-management.md): najlepsze rozwiązania dotyczące zabezpieczania obciążeń i zarządzania nimi na platformie Azure.
+- [Zabezpieczanie obciążeń i zarządzanie nimi na platformie Azure](./azure-best-practices/migrate-best-practices-security-management.md): najlepsze rozwiązania dotyczące zabezpieczania obciążeń i zarządzania nimi na platformie Azure.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Wróć do [listy kontrolnej dotyczącej zakresu rozszerzonego](./index.md), aby upewnić się, że metoda migracji jest w pełni dopasowana.
+Wróć do [listy kontrolnej najlepszych](./azure-best-practices/index.md) rozwiązań dotyczących migracji, aby upewnić się, że metoda migracji jest w pełni wyrównana.
 
 > [!div class="nextstepaction"]
-> [Lista kontrolna dotycząca zakresu rozszerzonego](./index.md)
+> [Lista kontrolna najlepszych rozwiązań dotyczących migracji](./index.md)
