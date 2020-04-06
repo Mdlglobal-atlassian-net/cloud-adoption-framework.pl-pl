@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e0cb1779836edce3571a081ae44794aeb8bc06b8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 4ef888e26089a2262fadeb93ec33ed063bcbf753
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432984"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636507"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Przewodnik po migracji na platformę Azure: Przed rozpoczęciem
 
@@ -55,7 +55,7 @@ Narzędzia omówione w tym przewodniku obsługują szeroką gamę scenariuszy mi
 - Mapowanie zależności składników do zmigrowania można łatwo zdefiniować.
 - Twoja branża ma minimalne wymagania prawne dotyczące tej migracji.
 
-Jeśli którykolwiek z tych warunków nie ma zastosowania w Twojej sytuacji, zamiast tego należy rozważyć skorzystanie z [przewodnika o rozszerzonym zakresie](../expanded-scope/index.md). Zalecamy również zgłoszenie się po pomoc do jednego z naszych zespołów Microsoft lub partnerów w przypadku wykonywania migracji wymagających przewodnika o rozszerzonym zakresie. Klienci, którzy kontaktują się z firmą Microsoft lub certyfikowanymi partnerami, odnoszą większy sukces w tych scenariuszach. Więcej informacji na temat uzyskiwania pomocy zawiera ten przewodnik.
+Jeśli którykolwiek z tych warunków nie ma zastosowania w Twojej sytuacji, zamiast tego należy rozważyć skorzystanie z [najlepszych rozwiązań w zakresie migracji do chmury](../azure-best-practices/index.md). Zalecamy również zgłoszenie się po pomoc do jednego z naszych zespołów Microsoft lub partnerów w przypadku wykonywania bardziej złożonych migracji. Klienci, którzy kontaktują się z firmą Microsoft lub certyfikowanymi partnerami, odnoszą większy sukces w tych scenariuszach. Więcej informacji na temat uzyskiwania pomocy zawiera ten przewodnik.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -63,6 +63,6 @@ Jeśli którykolwiek z tych warunków nie ma zastosowania w Twojej sytuacji, zam
 
 Aby uzyskać więcej informacji, zobacz:
 
-- [Przewodnik o rozszerzonym zakresie](../expanded-scope/index.md)
+- [Najlepsze rozwiązania w zakresie migracji do chmury](../azure-best-practices/index.md)
 
 ::: zone-end
