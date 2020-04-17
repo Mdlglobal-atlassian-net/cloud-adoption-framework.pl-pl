@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
 ms.openlocfilehash: e0956145f2fe0ccc0a38212194ae14f25a28991d
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80392718"
 ---
 <!-- cSpell:ignore asabbour sabbour -->
@@ -23,7 +23,7 @@ Przejrzyj opracowaną strukturę, która obejmuje narzędzia, programy i zawarto
 
 Lista wymaganych akcji jest kategoryzowana według osoby, aby przyspieszyć pomyślne wdrożenie aplikacji na platformie Kubernetes, od weryfikacji koncepcji do produkcji, a następnie skalowania i optymalizacji.
 
-## <a name="get-started"></a>Rozpoczęcie pracy
+## <a name="get-started"></a>Rozpoczynanie pracy
 
 Aby przygotować się na tę fazę cyklu wdrażania chmury, wykonaj następujące ćwiczenia:
 

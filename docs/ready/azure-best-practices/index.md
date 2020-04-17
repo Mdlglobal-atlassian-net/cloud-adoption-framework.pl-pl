@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9d14209da7c18a2ba8279977e3c860a3dd1d0589
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 107764931a6188f6976c5cfb8af0f74082c21e2b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433952"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997783"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Najlepsze rozwiązania dotyczące gotowości na platformę Azure
 
@@ -29,13 +29,13 @@ Zorganizuj i wdróż zasoby w środowisku platformy Azure.
 - [Stosuj zalecane konwencje nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md). Zapoznaj się z szczegółowymi zaleceniami dotyczącymi nazewnictwa i tagowania zasobów. Te zalecenia ułatwiają wdrażanie chmury w przedsiębiorstwie.
 - [Uzyskiwanie spójności w chmurze hybrydowej](../considerations/hybrid-consistency.md). Utwórz rozwiązania chmury hybrydowej, które zapewniają korzyści związane z innowacjami w chmurze przy zachowaniu wielu udogodnień zarządzania w środowisku lokalnym.
 
-## <a name="networking"></a>Networking
+## <a name="networking"></a>Sieć
 
 Przygotuj infrastrukturę sieci w chmurze do obsługi obciążeń.
 
 - [Decyzje dotyczące sieci](../considerations/networking-options.md). Wybierz usługi, narzędzia i architektury sieciowe, które spełnią wymagania Twojej organizacji w zakresie obciążeń, zapewnienia ładu i łączności.
 - [Planowanie sieci wirtualnej](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Zaplanuj sieci wirtualne na podstawie wymagań dotyczących izolacji, łączności i lokalizacji.
-- [Najlepsze rozwiązania z zakresu zabezpieczeń sieci](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Poznaj najlepsze rozwiązania dotyczące rozwiązywania typowych problemów z zabezpieczeniami sieci za pomocą wbudowanych funkcji platformy Azure.
+- [Najlepsze rozwiązania z zakresu zabezpieczeń sieci](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Poznaj najlepsze rozwiązania dotyczące rozwiązywania typowych problemów z zabezpieczeniami sieci za pomocą wbudowanych funkcji platformy Azure.
 - [Sieci obwodowe](./perimeter-networks.md). Umożliw bezpieczną łączność między sieciami w chmurze i sieciami w środowisku lokalnym lub w fizycznym centrum danych, wraz z wychodzącymi i przychodzącymi połączeniami internetowymi.
 - [Topologia sieci piasty i szprych](./hub-spoke-network-topology.md). Wydajnie zarządzaj typowymi wymaganiami dotyczącymi komunikacji lub zabezpieczeń w przypadku skomplikowanych obciążeń i reaguj na potencjalne ograniczenia subskrypcji platformy Azure.
 
@@ -43,11 +43,11 @@ Przygotuj infrastrukturę sieci w chmurze do obsługi obciążeń.
 
 Zaprojektuj infrastrukturę tożsamości i kontroli dostępu, aby zwiększyć bezpieczeństwo obciążeń i wydajność zarządzania nimi.
 
-- [Najlepsze rozwiązania dotyczące zabezpieczeń kontroli dostępu i zarządzania tożsamościami na platformie Azure](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Poznaj najlepsze rozwiązania dotyczące zarządzania tożsamościami i kontroli dostępu przy użyciu wbudowanych funkcji platformy Azure.
+- [Najlepsze rozwiązania dotyczące zabezpieczeń kontroli dostępu i zarządzania tożsamościami na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Poznaj najlepsze rozwiązania dotyczące zarządzania tożsamościami i kontroli dostępu przy użyciu wbudowanych funkcji platformy Azure.
 - [Najlepsze rozwiązania dotyczące kontroli dostępu na podstawie ról](../considerations/roles.md). Umożliw szczegółowe, oparte na grupach zarządzanie dostępem dla zasobów zorganizowanych wokół ról użytkownika.
 - [Zabezpieczanie uprzywilejowanego dostępu dla wdrożeń hybrydowych i wdrożeń w chmurze w usłudze Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Upewnij się, że konta uprzywilejowane i konta z dostępem administracyjnym w Twojej organizacji są zabezpieczone w środowisku chmurowym i lokalnym.
 
-## <a name="storage"></a>Magazyn
+## <a name="storage"></a>Storage
 
 - [Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md). Wybierz odpowiednie rozwiązanie magazynu na platformie Azure do obsługi swoich scenariuszy użycia.
 - [Przewodnik po zabezpieczeniach usługi Azure Storage](https://docs.microsoft.com/azure/storage/blobs/security-recommendations?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Dowiedz się więcej na temat funkcji zabezpieczeń w usłudze Azure Storage.

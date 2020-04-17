@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 93064d0c3feb8b9ee129c404e58e8d0485dcdfe5
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ab79e6e0d55c8b7928e53415920c7ed285b625d8
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706969"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997381"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Omówienie dziedziny Spójność zasobów
 
@@ -25,7 +25,7 @@ Spójność zasobów jest jedną z [pięciu dziedzin utrzymania ładu w chmurze]
 
 W tej sekcji przewodnika Cloud Adoption Framework opisano sposób opracowywania dziedziny Spójność zasobów w ramach strategii utrzymania ładu w chmurze. Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Jednak decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie i dyskusje odpowiednich członków zespołów informatycznych odpowiedzialnych za implementowanie rozwiązań dotyczących spójności zasobów w organizacji i zarządzanie nimi.
 
-Jeśli Twoja organizacja nie ma własnych specjalistów zajmujących się strategiami spójności zasobów, należy w ramach tej dziedziny rozważyć zatrudnienie zewnętrznych konsultantów. Ponadto należy wziąć pod uwagę skorzystanie z [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services) — usług wdrażania w chmurze będących częścią programu [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) — lub innych zewnętrznych ekspertów ds. wdrażania w chmurze, aby przedyskutować z nimi kwestie związane z jak najlepszym organizowaniem, śledzeniem i optymalizowaniem zasobów opartych na chmurze.
+Jeśli Twoja organizacja nie ma własnych specjalistów zajmujących się strategiami spójności zasobów, należy w ramach tej dziedziny rozważyć zatrudnienie zewnętrznych konsultantów. Ponadto należy wziąć pod uwagę skorzystanie z [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting) — usług wdrażania w chmurze będących częścią programu [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) — lub innych zewnętrznych ekspertów ds. wdrażania w chmurze, aby przedyskutować z nimi kwestie związane z jak najlepszym organizowaniem, śledzeniem i optymalizowaniem zasobów opartych na chmurze.
 
 ## <a name="policy-statements"></a>Instrukcje zasad
 

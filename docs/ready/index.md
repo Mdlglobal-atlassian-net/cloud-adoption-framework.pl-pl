@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
 ms.openlocfilehash: 11ab187c24bcd288834cf3c4823e508096e69492
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "79092531"
 ---
 <!-- markdownlint-disable MD026 -->
@@ -96,7 +96,7 @@ Spełnij wymagania dotyczące platformy w ramach planu wdrażania chmury, rozsze
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Najlepsze rozwiązania</h3>
+                            <h3>Najlepsze praktyki</h3>
 Zweryfikuj zmiany w strefie docelowej, korzystając z najlepszych rozwiązań, aby zapewnić odpowiednią konfigurację bieżącej i przyszłych stref docelowych.
                         </div>
                     </div>

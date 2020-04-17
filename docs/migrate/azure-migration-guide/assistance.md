@@ -4,17 +4,17 @@ description: Dowiedz się, jak uzyskać pomoc podczas procesu migracji na platfo
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3e191c89a33d09315c332680b82a72caf0785e2f
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 16b82b3be2789a764dcccecc6ef91ef91f3098b2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353917"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80429520"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -42,7 +42,7 @@ Jeśli podczas używania platformy Azure chcesz skorzystać z pomocy technicznej
 
 ::: zone target="docs"
 
-1. W witrynie [Azure Portal](https://portal.azure.com) wybierz pozycję **Pomoc i obsługa techniczna**.
+1. W witrynie **Azure Portal** wybierz pozycję [Pomoc i obsługa techniczna](https://portal.azure.com).
 1. Wybierz pozycję **Nowy wniosek o pomoc techniczną**, aby wprowadzić szczegóły dotyczące problemu i skontaktować się z pomocą techniczną.
 
 ::: zone-end
@@ -60,7 +60,7 @@ Jeśli podczas używania platformy Azure chcesz skorzystać z pomocy technicznej
 
 Aby wyświetlić swoje wnioski o pomoc techniczną, wykonaj następujące czynności:
 
-1. W witrynie [Azure Portal](https://portal.azure.com) wybierz pozycję **Pomoc i obsługa techniczna**.
+1. W witrynie **Azure Portal** wybierz pozycję [Pomoc i obsługa techniczna](https://portal.azure.com).
 1. Wybierz pozycję **Wszystkie wnioski o pomoc techniczną**, aby wyświetlić swoje wnioski o pomoc techniczną.
 
 ::: zone-end
@@ -78,7 +78,7 @@ Potrzebujesz szczegółowej wskazówki od inżyniera pomocy technicznej?
 
 ::: zone target="docs"
 
-1. W witrynie [Azure Portal](https://portal.azure.com) wybierz pozycję **Pomoc i obsługa techniczna**.
+1. W witrynie **Azure Portal** wybierz pozycję [Pomoc i obsługa techniczna](https://portal.azure.com).
 1. Wybierz pozycję **Plany pomocy technicznej**, aby przejrzeć dostępne plany.
 
 ::: zone-end

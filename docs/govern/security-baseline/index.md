@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 75a0212628c41f82ceccd198c87e69d430b74258
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 5e2549c252b8fddf6cd549215704300a764f4040
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707428"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997258"
 ---
 # <a name="security-baseline-discipline-overview"></a>Omówienie dziedziny Punkt odniesienia zabezpieczeń
 
@@ -25,7 +25,7 @@ Punkt odniesienia zabezpieczeń jest jedną z [pięciu dziedzin utrzymania ładu
 
 W tym artykule opisano metodę tworzenia dziedziny Punkt odniesienia zabezpieczeń w ramach strategii utrzymania ładu w chmurze. Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Jednak decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie odpowiednich członków zespołów IT i zespołów ds. zabezpieczeń oraz dyskusje z nimi. W szczególności dotyczy to liderów technicznych odpowiedzialnych za implementowanie usług obsługi sieci, szyfrowania i tożsamości.
 
-Podejmowanie właściwych decyzji dotyczących zabezpieczeń ma kluczowe znaczenie, jeśli chcesz osiągnąć sukces podczas wdrożeń w chmurze i szerzej pojmowany sukces biznesowy. Jeśli Twoja organizacja nie ma własnych specjalistów zajmujących się cyberbezpieczeństwem, należy w ramach tej dziedziny rozważyć zatrudnienie zewnętrznych konsultantów ds. bezpieczeństwa. Ponadto należy wziąć pod uwagę skorzystanie z [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services) — usług wdrażania w chmurze będących częścią programu [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) — lub innych zewnętrznych ekspertów ds. wdrażania w chmurze, aby przedyskutować z nimi kwestie związane z tą dziedziną.
+Podejmowanie właściwych decyzji dotyczących zabezpieczeń ma kluczowe znaczenie, jeśli chcesz osiągnąć sukces podczas wdrożeń w chmurze i szerzej pojmowany sukces biznesowy. Jeśli Twoja organizacja nie ma własnych specjalistów zajmujących się cyberbezpieczeństwem, należy w ramach tej dziedziny rozważyć zatrudnienie zewnętrznych konsultantów ds. bezpieczeństwa. Ponadto należy wziąć pod uwagę skorzystanie z [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting) — usług wdrażania w chmurze będących częścią programu [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) — lub innych zewnętrznych ekspertów ds. wdrażania w chmurze, aby przedyskutować z nimi kwestie związane z tą dziedziną.
 
 ## <a name="policy-statements"></a>Instrukcje zasad
 

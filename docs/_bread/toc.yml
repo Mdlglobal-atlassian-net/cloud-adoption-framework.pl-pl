@@ -1,60 +1,61 @@
-- name: Azure
-  tocHref: /azure
-  topicHref: /azure
-  items:
-    - name: Struktura wdrażania chmury
-      tocHref: /azure/cloud-adoption-framework/
-      topicHref: /azure/cloud-adoption-framework
-      items:
-        - name: Strategia
-          tocHref: /azure/cloud-adoption-framework/strategy/
-          topicHref: /azure/cloud-adoption-framework/strategy
-        - name: Planowanie
-          tocHref: /azure/cloud-adoption-framework/plan/
-          topicHref: /azure/cloud-adoption-framework/plan
-          items:
-            - name: Majątek cyfrowy
-              tocHref: /azure/cloud-adoption-framework/digital-estate/
-              topicHref: /azure/cloud-adoption-framework/digital-estate
-        - name: Gotowy
-          tocHref: /azure/cloud-adoption-framework/ready/
-          topicHref: /azure/cloud-adoption-framework/ready
-          items:
-            - name: Najlepsze praktyki
-              tocHref: /azure/cloud-adoption-framework/ready/azure-best-practices/
-              topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
-            - name: Najlepsze praktyki
-              tocHref: /azure/security/fundamentals/
-              topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
-        - name: Wdrażanie
-          items:
-            - name: Migrate (Migracja)
-              tocHref: /azure/cloud-adoption-framework/migrate/
-              topicHref: /azure/cloud-adoption-framework/migrate
-            - name: Innowacje
-              tocHref: /azure/cloud-adoption-framework/innovate/
-              topicHref: /azure/cloud-adoption-framework/innovate
-              items:
-                - name: Przewodnik po innowacjach na platformie Azure
-                  tocHref: /azure/cloud-adoption-framework/innovate/innovation-guide/
-                  topicHref: /azure/cloud-adoption-framework/innovate/innovation-guide
-        - name: Model operacyjny
-          tocHref: /azure/cloud-adoption-framework/operating-model/
-          topicHref: /azure/cloud-adoption-framework/operating-model
-          items:
-            - name: Ład
-              tocHref: /azure/cloud-adoption-framework/govern/
-              topicHref: /azure/cloud-adoption-framework/govern
-            - name: Organizowanie
-              tocHref: /azure/cloud-adoption-framework/organize/
-              topicHref: /azure/cloud-adoption-framework/organize
-            - name: Zarządzanie
-              tocHref: /azure/cloud-adoption-framework/manage/
-              topicHref: /azure/cloud-adoption-framework/manage
-        - name: Dokumentacja
-          tocHref: /azure/cloud-adoption-framework/reference/
-          topicHref: /azure/cloud-adoption-framework/reference
-          items:
-            - name: Przewodniki po decyzjach
-              tocHref: /azure/cloud-adoption-framework/decision-guides/
-              topicHref: /azure/cloud-adoption-framework/decision-guides
+items:
+  - name: Azure
+    tocHref: /azure
+    topicHref: /azure
+    items:
+      - name: Struktura wdrażania chmury
+        tocHref: /azure/cloud-adoption-framework/
+        topicHref: /azure/cloud-adoption-framework
+        items:
+          - name: Strategia
+            tocHref: /azure/cloud-adoption-framework/strategy/
+            topicHref: /azure/cloud-adoption-framework/strategy
+          - name: Planowanie
+            tocHref: /azure/cloud-adoption-framework/plan/
+            topicHref: /azure/cloud-adoption-framework/plan
+            items:
+              - name: Majątek cyfrowy
+                tocHref: /azure/cloud-adoption-framework/digital-estate/
+                topicHref: /azure/cloud-adoption-framework/digital-estate
+          - name: Gotowy
+            tocHref: /azure/cloud-adoption-framework/ready/
+            topicHref: /azure/cloud-adoption-framework/ready
+            items:
+              - name: Najlepsze praktyki
+                tocHref: /azure/cloud-adoption-framework/ready/azure-best-practices/
+                topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
+              - name: Najlepsze praktyki
+                tocHref: /azure/security/fundamentals/
+                topicHref: /azure/cloud-adoption-framework/ready/azure-best-practices
+          - name: Wdrażanie
+            items:
+              - name: Migracja
+                tocHref: /azure/cloud-adoption-framework/migrate/
+                topicHref: /azure/cloud-adoption-framework/migrate
+              - name: Innowacje
+                tocHref: /azure/cloud-adoption-framework/innovate/
+                topicHref: /azure/cloud-adoption-framework/innovate
+                items:
+                  - name: Przewodnik po innowacjach na platformie Azure
+                    tocHref: /azure/cloud-adoption-framework/innovate/innovation-guide/
+                    topicHref: /azure/cloud-adoption-framework/innovate/innovation-guide
+          - name: Model operacyjny
+            tocHref: /azure/cloud-adoption-framework/operating-model/
+            topicHref: /azure/cloud-adoption-framework/operating-model
+            items:
+              - name: Ład
+                tocHref: /azure/cloud-adoption-framework/govern/
+                topicHref: /azure/cloud-adoption-framework/govern
+              - name: Organizowanie
+                tocHref: /azure/cloud-adoption-framework/organize/
+                topicHref: /azure/cloud-adoption-framework/organize
+              - name: Zarządzanie
+                tocHref: /azure/cloud-adoption-framework/manage/
+                topicHref: /azure/cloud-adoption-framework/manage
+          - name: Dokumentacja
+            tocHref: /azure/cloud-adoption-framework/reference/
+            topicHref: /azure/cloud-adoption-framework/reference
+            items:
+              - name: Przewodniki po decyzjach
+                tocHref: /azure/cloud-adoption-framework/decision-guides/
+                topicHref: /azure/cloud-adoption-framework/decision-guides

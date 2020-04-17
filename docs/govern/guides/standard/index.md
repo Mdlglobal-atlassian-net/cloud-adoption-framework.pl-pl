@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 26aaf3285d5e68a5add2e91a213a6dfd29c1ca25
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a82bd7fea1e16819e2c69d6eafba0cbdf77e3559
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434350"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396148"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Przewodnik dotyczący ładu dla przedsiębiorstw standardowych
 
@@ -50,7 +50,7 @@ Oto przykład zastosowania tego wzorca:
 
 Te wzorce pozostawiają przestrzeń na rozwój bez niepotrzebnego komplikowania hierarchii.
 
-[!INCLUDE [governance-of-resources](../../../../includes/caf-governance-of-resources.md)]
+[!INCLUDE [governance-of-resources](../../../../includes/governance-of-resources.md)]
 
 ## <a name="iterative-governance-improvements"></a>Iteracyjne ulepszenia ładu
 
