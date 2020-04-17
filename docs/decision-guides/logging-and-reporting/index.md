@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: deb432528c541fa17b9849d4c2b587740d7e36dd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: fd6f0e42408934bad1b6f45b92bda0f4a9d47e65
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434906"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996329"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Przewodnik po decyzjach dotyczących rejestrowania i raportowania
 
@@ -118,8 +118,8 @@ Obsługa rejestrowania wielochmurowego często wymaga użycia usług bramy w cel
 
 - Ujednolicona platforma do gromadzenia danych telemetrycznych aplikacji, danych telemetrycznych hostów (takich jak maszyny wirtualne), metryk kontenerów, metryk platformy Azure oraz dzienników zdarzeń.
 - Narzędzia do tworzenia wizualizacji, zapytań, alertów i analiz. Zapewnia szczegółowe informacje o maszynach wirtualnych, systemów operacyjnych gościa, sieciach wirtualnych i zdarzeniach aplikacji obciążeń.
-- [Interfejsy API REST](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-rest-api-walkthrough) do integracji z usługami zewnętrznymi oraz automatyzacji usług monitorowania i zgłaszania alertów.
-- [Integracja](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-partners) z wieloma popularnymi innymi dostawcami.
+- [Interfejsy API REST](https://docs.microsoft.com/azure/azure-monitor/platform/rest-api-walkthrough) do integracji z usługami zewnętrznymi oraz automatyzacji usług monitorowania i zgłaszania alertów.
+- [Integracja](https://docs.microsoft.com/azure/azure-monitor/platform/partners) z wieloma popularnymi innymi dostawcami.
 
 ## <a name="next-steps"></a>Następne kroki
 

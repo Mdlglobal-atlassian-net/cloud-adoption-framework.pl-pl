@@ -4,17 +4,17 @@ description: Opis najlepszych potrzebnych rozwiązań umożliwiających efektywn
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 6ed6e547156a2fa9f07a49460fedd94a8ceb152b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: b47f0e3cf6c69bbdf3d5c8260ad4094312e1bea2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354341"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997551"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -24,8 +24,7 @@ Organizowanie zasobów opartych na chmurze ma kluczowe znaczenie dla zabezpiecza
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-<!-- cSpell:disable-next-line -->
-# <a name="azure-management-groups-and-hierarchy"></a>[Grupy zarządzania i hierarchia platformy Azure](#tab/AzureManagmentGroupsAndHierarchy)
+# <a name="azure-management-groups-and-hierarchy"></a>[Grupy zarządzania i hierarchia platformy Azure](#tab/AzureManagementGroupsAndHierarchy)
 
 Platforma Azure oferuje cztery poziomy zakresu zarządzania: grupy zarządzania, subskrypcje, grupy zasobów i zasoby. Na poniższej ilustracji przedstawiono relacje tych poziomów.
 
@@ -86,7 +85,7 @@ Aby dowiedzieć się więcej, zobacz:
 - [Organizuj swoje subskrypcje platformy Azure i zarządzaj nimi](../azure-best-practices/organize-subscriptions.md)
 - [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [Informacje o zarządzaniu dostępem do zasobów na platformie Azure](../../govern/resource-consistency/resource-access-management.md)
-- [Limity usług subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits)
+- [Limity usług subskrypcji](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -161,7 +160,7 @@ Tagów można używać do wielu innych celów. Najczęstsze zastosowania to:
 
 - **Metadane i dokumentacja:** Administratorzy mogą łatwo wyświetlać szczegółowe informacje o zasobach, z którymi pracują, stosując tag, na przykład „ProjectOwner”.
 - **Automatyzacja:** Można używać regularnie uruchamianych skryptów, które mogą wykonywać akcję w oparciu o wartość tagu, taką jak „ShutdownTime” lub „DeprovisionDate”.
-- **Optymalizacja kosztów:** W usłudze Azure Cost Management można zastosować tag centrum kosztów jako filtr, aby uzyskać raport opłat na podstawie użycia zespołu lub działu.
+- **Optymalizacja kosztów:** Możesz przydzielić zasoby do zespołów i zasobów odpowiedzialnych za koszt. W usłudze Azure Cost Management można zastosować tag centrum kosztów jako filtr, aby uzyskać raport opłat na podstawie użycia zespołu lub działu.
 
 Każdy zasób lub grupa zasobów może mieć co najwyżej 50 par nazw i wartości tagów. To ograniczenie dotyczy tylko tagów stosowanych bezpośrednio do grupy zasobów lub zasobu.
 
@@ -173,14 +172,14 @@ Aby uzyskać więcej zaleceń i przykładów dotyczących tagowania, zobacz [wsk
 
 Aby zastosować tag do grupy zasobów:
 
-1. Przejdź do pozycji [Grupy zasobów](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2fSubscriptions%2fResourceGroups).
+1. Przejdź do pozycji [Grupy zasobów](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
 1. Wybierz grupę zasobów.
 1. Wybierz pozycję **Przypisz tagi**.
 1. Wprowadź nową nazwę i wartość lub użyj listy rozwijanej, aby wybrać istniejącą nazwę i wartość.
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-Aby dowiedzieć się więcej, zobacz [Organizowanie zasobów platformy Azure przy użyciu tagów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
+Aby dowiedzieć się więcej, zobacz [Organizowanie zasobów platformy Azure przy użyciu tagów](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
 ::: zone-end
 

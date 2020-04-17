@@ -4,17 +4,17 @@ description: Skorzystaj z podręcznika Cloud Adoption Framework dla platformy Az
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 223d6bf040987b7266d284d9175b588d08806c9f
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 7ffdc348d9f5e1d1e9a76155ce9de2b3e19ccf2a
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356513"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80426874"
 ---
 <!-- cSpell:ignore ITSMC -->
 

@@ -4,17 +4,17 @@ description: Dowiedz się, jak skonfigurować kontrolę dostępu w środowisku p
 author: LijuKodicheraJayadevan
 ms.author: kfollis
 ms.date: 04/09/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 5fedbb5164da05b166d8a42d8d1ceaf43ee95185
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 9cf54c8366f70d4b06debd6c09c54bd757759458
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354436"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433195"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
@@ -46,7 +46,7 @@ Aby udzielić użytkownikowi dostępu do grupy zasobów:
 1. Wybierz pozycję **+ Dodaj** > **Dodaj przypisanie roli**.
 1. Wybierz rolę, a następnie przypisz dostęp do użytkownika, grupy lub jednostki usługi.
 
-::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources/Subscriptions/ResourceGroups]" submitText="Go to resource groups" ::: form-end
+::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups]" submitText="Go to resource groups" ::: form-end
 
 **Udzielanie dostępu do subskrypcji:**
 

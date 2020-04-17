@@ -4,17 +4,17 @@ description: Dowiedz się więcej o metodach zabezpieczania i zarządzania, za p
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ec67108e90fb367535298ba7fab3b8ac32705255
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7e9dd472d2913979211959d1f230bf4fb9c33cba
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222479"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80432933"
 ---
 <!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
 
@@ -46,7 +46,7 @@ Usługa Azure Monitor maksymalizuje dostępność i wydajność aplikacji zapewn
 
 ::: zone-end
 
-# <a name="azure-service-health"></a>[Azure Service Health](#tab/servicehealth)
+# <a name="azure-service-health"></a>[Azure Service Health](#tab/serviceHealth)
 
 Usługa Azure Service Health udostępnia spersonalizowane wskazówki i pomoc techniczną, gdy napotkasz problemy z usługami platformy Azure. Może ona generować powiadomienia, pomagać zrozumieć znaczenie problemów i informować na bieżąco o rozwiązywaniu problemów. Może też ułatwić przygotowanie się do zaplanowanej konserwacji i zmian, które mogą wpłynąć na dostępność zasobów.
 
@@ -149,7 +149,7 @@ Azure Backup to oparta na platformie Azure usługa, która umożliwia tworzenie 
 
 ::: zone-end
 
-# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
+# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siteRecovery)
 
 Wcześniej w tym przewodniku opisano, jak można korzystać z usługi Azure Site Recovery podczas przeprowadzania migracji. Jednak stanowi ona również krytyczny składnik strategii odzyskiwania po awarii po zakończeniu migracji.
 

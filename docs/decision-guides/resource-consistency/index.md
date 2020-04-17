@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 04386ec98ed0ecb6269c53a60f64bc73f148b12f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: ba284cca38d1ce494792cce3d130d65a6240f4e1
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434851"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996346"
 ---
 # <a name="resource-consistency-decision-guide"></a>Przewodnik podejmowania decyzji dotyczących spójności zasobów
 
@@ -29,7 +29,7 @@ Wraz ze wzrostem znaczenia tych czynników coraz ważniejsze stają się korzyś
 
 ## <a name="basic-grouping"></a>Grupowanie podstawowe
 
-Na platformie Azure [grupy zasobów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) stanowią podstawowy mechanizm organizacji zasobów umożliwiający logiczne grupowanie zasobów w ramach subskrypcji.
+Na platformie Azure [grupy zasobów](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) stanowią podstawowy mechanizm organizacji zasobów umożliwiający logiczne grupowanie zasobów w ramach subskrypcji.
 
 Grupy zasobów działają jak kontenery dla zasobów o typowym cyklu życia i ograniczeniach zarządzania współdzielonego, takich jak wymagania dotyczące zasad lub kontroli dostępu opartej na rolach (RBAC). Grup zasobów nie można zagnieżdżać, a zasoby mogą należeć tylko do jednej grupy zasobów. Wszystkie akcje płaszczyzny sterowania działają na wszystkie zasoby w grupie zasobów. Na przykład usunięcie grupy zasobów powoduje również usunięcie wszystkich zasobów w obrębie tej grupy. Zgodnie z preferowanym wzorcem zarządzania grupami zasobów należy rozważyć następujące kwestie:
 
@@ -46,7 +46,7 @@ Jeśli odpowiesz _Nie_ na którekolwiek z powyższych pytań, odpowiedni zasób 
 
 Opierając się na mechanizmie podstawowego grupowania zasobów, platforma Azure udostępnia system wdrażania zasobów w środowisku chmury przy użyciu szablonów. Przy użyciu szablonów można tworzyć spójne konwencje organizacji i nazewnictwa podczas wdrażania obciążeń, wymuszając te aspekty projektu wdrażania zasobów i zarządzania.
 
-[Szablony usługi Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) umożliwiają wielokrotne wdrażanie zasobów w spójnym stanie przy użyciu wstępnie określonej konfiguracji i struktury grupy zasobów. Szablony usługi Resource Manager pomagają w zdefiniowaniu zestawu standardów jako podstawy dla wdrożeń.
+[Szablony usługi Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) umożliwiają wielokrotne wdrażanie zasobów w spójnym stanie przy użyciu wstępnie określonej konfiguracji i struktury grupy zasobów. Szablony usługi Resource Manager pomagają w zdefiniowaniu zestawu standardów jako podstawy dla wdrożeń.
 
 Na przykład można mieć standardowy szablon do wdrażania obciążenia serwera internetowego, który zawiera dwie maszyny wirtualne jako serwery internetowe w połączeniu z modułem równoważenia obciążenia rozdzielającym ruch między serwerami. Za pomocą tego szablonu można ponownie utworzyć identyczny strukturalnie zestaw składający się z maszyn wirtualnych i modułu równoważenia obciążenia za każdym razem, gdy jest potrzebne tego typu obciążenie, zmieniając tylko nazwę wdrożenia i używane adresy IP.
 

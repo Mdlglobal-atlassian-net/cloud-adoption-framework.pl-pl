@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3dc3071fbba6d8b33ccf7fd75a0f451160481fc5
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 18151d68f425f5fa6d966e847b1f6131cb8f838b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433116"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996006"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Przewodnik po decyzjach dotyczących sieci zdefiniowanej programowo
 
@@ -63,7 +63,7 @@ Dowiedz się więcej na temat podstawowych architektur sieci zdefiniowanych prog
 Aby uzyskać więcej informacji na temat sieci zdefiniowanej programowo na platformie Azure, zobacz:
 
 - [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview). Na platformie Azure podstawowe możliwości sieci SDN są oferowane przez usługę Azure Virtual Network, która działa jako analogia chmury do fizycznych sieci lokalnych. Sieci wirtualne działają jako domyślna granicy izolacji między zasobami na platformie.
-- [Najlepsze rozwiązania z zakresu zabezpieczeń sieci na platformie Azure](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices) Zalecenia zespołu ds. zabezpieczeń platformy Azure dotyczące sposobu konfigurowania sieci wirtualnych w celu zminimalizowania luk w zabezpieczeniach.
+- [Najlepsze rozwiązania z zakresu zabezpieczeń sieci na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices) Zalecenia zespołu ds. zabezpieczeń platformy Azure dotyczące sposobu konfigurowania sieci wirtualnych w celu zminimalizowania luk w zabezpieczeniach.
 
 ## <a name="next-steps"></a>Następne kroki
 
