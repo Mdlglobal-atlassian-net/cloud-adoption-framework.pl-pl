@@ -4,21 +4,21 @@ description: Zainicjuj migrację na platformę Azure, dobierając właściwe nar
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 697e42d16918960f97bc534bad93a854af963a49
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: eca885e84e0f3a29a0d3417c550de78d7bdf74fc
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353892"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396029"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
-# <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrowanie elementów zawartości (infrastruktury, aplikacji i danych)
+# <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>Wdrażanie obciążeń i zasobów (infrastruktury, aplikacji i danych)
 
 W tej fazie podróży należy użyć danych wyjściowych fazy oceny do zainicjowania migracji środowiska. Ten przewodnik pomaga zidentyfikować odpowiednie narzędzia pozwalające przejść w stan „Gotowe”, m.in. narzędzia natywne, narzędzia innych firm oraz narzędzia do zarządzania projektami.
 
@@ -130,7 +130,7 @@ Po zarejestrowaniu dostawcy zasobów można utworzyć wystąpienie usługi Azure
 1. Wybierz pozycję **+Utwórz zasób** i wyszukaj na platformie handlowej pozycję **Azure Database Migration Service**.
 1. Ukończ pracę kreatora **Tworzenie usługi migracji** i wybierz pozycję **Utwórz**.
 
-Usługa jest teraz gotowa do migracji obsługiwanych źródłowych baz danych (na przykład SQL Server, MySQL, PostgreSQL lub MongoDb).
+Usługa jest teraz gotowa do migracji obsługiwanych źródłowych baz danych (na przykład SQL Server, MySQL, PostgreSQL lub MongoDB).
 
 ::: zone target="chromeless"
 
@@ -262,7 +262,7 @@ Firma Microsoft oferuje też następujące narzędzia do zarządzania projektami
 - [Microsoft Planner](https://tasks.office.com): prosta, wizualna metoda organizowania pracy zespołowej.
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): zarządzanie projektami i portfolio, zarządzanie zdolnościami produkcyjnymi zasobów, zarządzanie finansami, zarządzanie grafikiem i harmonogramem.
 - [Microsoft Teams](https://products.office.com/microsoft-teams): narzędzie do współpracy i komunikacji zespołowej. Rozwiązanie Teams można również zintegrować z narzędziem Planner oraz innymi narzędziami, aby ułatwić współpracę.
-- [Azure DevOps](https://dev.azure.com): do korzystania z usługi Azure DevOps nie jest wymagany szablon planowania przewodnika Cloud Adoption Framework. Usługi można używać bez tego szablonu, aby zarządzać infrastrukturą jak kodem lub używać elementów roboczych i tablic do zarządzania projektami. Z czasem Twoja organizacja może skorzystać z funkcji ciągłej integracji/ciągłego wdrażania.
+- [Azure DevOps Services](https://azure.microsoft.com/services/devops): do korzystania z usługi Azure DevOps nie jest wymagany szablon planowania przewodnika Cloud Adoption Framework. Usługi można używać bez tego szablonu, aby zarządzać infrastrukturą jak kodem lub używać elementów roboczych i tablic do zarządzania projektami. Z czasem Twoja organizacja może skorzystać z funkcji ciągłej integracji/ciągłego wdrażania.
 
 Nie są to jedyne dostępne narzędzia. Wiele innych narzędzi innych firm jest szeroko używanych w społeczności zajmującej się zarządzaniem projektami.
 

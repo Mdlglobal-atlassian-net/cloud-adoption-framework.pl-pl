@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9f078f3fb989c6db9ca14371c2fadd17805d4d3a
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 0d83ccc83397153619bc7ca99881c6a2775ab1a3
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432271"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120689"
 ---
-# <a name="optimize-migrated-workloads"></a>Optymalizacja migrowanych obciążeń
+# <a name="release-workloads"></a>Wydanie obciążeń
 
-Po przeprowadzeniu migracji obciążenia i jego pomocniczych zasobów do chmury należy te elementy przygotować do podwyższenia do poziomu produkcyjnego. W ramach tego procesu odpowiednie działania przygotowują obciążenie, dopasowują rozmiar zależnych zasobów i przygotowują firmę na przejście zmigrowanych obciążeń w chmurze do poziomu produkcyjnego.
+Po wdrożeniu w chmurze kolekcji obciążeń i ich zasobów pomocniczych należy ją przygotować przed wydaniem. W tej fazie procesu migracji kolekcja obciążeń jest testowana pod kątem obciążenia i testowana w firmie. Następnie obciążenia są optymalizowane i dokumentowane. Po przejrzeniu i zatwierdzeniu wdrożeń obciążeń przez firmę i zespoły IT te obciążenia mogą zostać wydane lub przekazane do zespołów ds. ładu, zabezpieczeń i operacyjnych na potrzeby bieżących operacji.
 
-Celem optymalizacji jest przygotowanie zmigrowanych obciążeń do podwyższenia ich poziomu do użycia produkcyjnego.
+Celem „wydania obciążeń” jest przygotowanie migrowanych obciążeń do podniesienia poziomu w celu użycia w środowisku produkcyjnym.
 
 ## <a name="definition-of-done"></a>Definicja *gotowości*
 

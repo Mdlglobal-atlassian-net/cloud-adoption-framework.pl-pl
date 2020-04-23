@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 907cb23b61ffada1a97abe87545ed7d4cdd7d56a
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 4ad4f5d1b5e3352d308ae31db1cc86bb87eb5b76
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392586"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120065"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,9 @@ Infrastruktura jako kod to naturalny etap większości wdrożeń chmury. Wdroże
 
 ## <a name="landing-zone-definition"></a>Definicja strefy docelowej
 
-Strefa docelowa to podstawowy blok konstrukcyjny każdego środowiska wdrażania chmury. Termin _strefa docelowa_ odnosi się do konstrukcji logicznej obejmującej wszystkie warunki, które muszą być spełnione, aby umożliwić odpowiednie wdrożenie chmury.
+Strefa docelowa to środowisko do obsługi obciążeń, wstępnie aprowizowane za pomocą kodu. Obejmuje ona podstawowe możliwości wykorzystujące zdefiniowany zestaw usług w chmurze i najlepsze praktyki, aby zapewnić sukces wdrożenia.
+
+Mówiąc ściślej, strefa docelowa to podstawowy blok konstrukcyjny każdego środowiska wdrażania chmury. Termin _strefa docelowa_ odnosi się do konstrukcji logicznej obejmującej wszystkie warunki, które muszą być spełnione, aby umożliwić odpowiednie wdrożenie chmury.
 
 **Zakres:** W pełni funkcjonalna strefa docelowa bierze pod uwagę wszystkie zasoby platformy, które są wymagane do spełnienia potrzeb klienta dotyczących wdrożenia.
 
@@ -36,11 +38,11 @@ Strefa docelowa to podstawowy blok konstrukcyjny każdego środowiska wdrażania
 
 Strefy docelowe nie muszą odróżniać wdrożenia IaaS od wdrożenia PaaS. Jednak strefy docelowe są specjalnie tworzone w celu wspierania planu wdrożenia przez realizowanie strategii subskrypcji. Wsparcie planu wdrożenia może wymagać wielu stref docelowych z różnymi wymaganymi składnikami.
 
-Przeznaczenie i zakres ogólnego planu wdrożenia chmury określi wymagane elementy niezbędne do działania. Dodatkowe wymagania dotyczące ładu, zgodności, zabezpieczeń i zarządzania operacyjnego prawdopodobnie poszerzą początkowy zakres strefy docelowej. Na wczesnych etapach wdrażania strefy docelowe mogą obejmować mniej elementów niezbędnych do działania w wyniku zdefiniowanych wymagań i akceptowalnych zagrożeń.  Gdy istnieje wiele stref docelowych, często każda strefa docelowa jest zależna od centrów udostępniających wymagane mechanizmy kontroli w ramach modelu usług udostępnionych.
+Przeznaczenie i zakres ogólnego planu wdrożenia chmury określi wymagane elementy niezbędne do działania. Dodatkowe wymagania dotyczące ładu, zgodności, zabezpieczeń i zarządzania operacyjnego prawdopodobnie poszerzą początkowy zakres strefy docelowej. Na wczesnych etapach wdrażania strefy docelowe mogą obejmować mniej elementów niezbędnych do działania w wyniku zdefiniowanych wymagań i akceptowalnych zagrożeń. Gdy istnieje wiele stref docelowych, często każda strefa docelowa jest zależna od centrów udostępniających wymagane mechanizmy kontroli w ramach modelu usług udostępnionych.
 
 ## <a name="related-terms"></a>Powiązane terminy
 
-- **Usługi udostępnione:** Obciążenia często mają udostępnione zależności, które są używane przez wiele różnych obciążeń. Podejście obejmujące usługi udostępnione przenosi wiele z tych typowych zależności do jednej konstrukcji logicznej.
+- **Usługi udostępnione:** Obciążenia często mają wspólne zależności, które są używane przez wiele różnych obciążeń. Podejście obejmujące usługi udostępnione przenosi wiele z tych typowych zależności do jednej konstrukcji logicznej.
 
 - **Model piasty i szprych:** Jedną z implementacji podejścia obejmującego usługi udostępnione jest model piasty i szprych. W tym modelu piasta to jedna konstrukcja logiczna służąca do hostowania wszystkich usług udostępnionych. Strefy docelowe działają jak szprychy rozchodzące się od piasty, w oparciu o typowe zależności.
 
@@ -48,7 +50,7 @@ Przeznaczenie i zakres ogólnego planu wdrożenia chmury określi wymagane eleme
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby rozpocząć korzystanie ze stref docelowych, [wybierz pierwszą strefę docelową](./first-landing-zone.md).
+Przed rozpoczęciem pracy z pierwszą strefą docelową ważne jest zapoznanie się z [zasadami refaktoryzacji](./refactor.md), które rządzą tym podejściem.
 
 > [!div class="nextstepaction"]
-> [Wybieranie pierwszej strefy docelowej](./first-landing-zone.md)
+> [Refaktoryzacja stref docelowych](./refactor.md)

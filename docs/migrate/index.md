@@ -3,17 +3,17 @@ title: Migracja do chmury
 description: Dowiedz się, jak ustanowić iteracyjne procesy oceniania, migrowania, optymalizacji i zabezpieczania obciążeń, które chcesz migrować do chmury, oraz zarządzania nimi.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 04/04/2020
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 8d110115bf56dfa0fd40e4e26f9c1dde065d0209
-ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
+ms.openlocfilehash: b341996c45c4a0c5b7d8467419c3117f939afa20
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80636478"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120756"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migracja do chmury w podręczniku Cloud Adoption Framework
 
@@ -106,62 +106,38 @@ Migracja to działanie mocno obciążone procesami. W miarę skalowania pracy zw
 
 Ta metodologia i powyższe kroki opierają się na poniższych założeniach:
 
+- Metodologia rządząca przebiegami migracji pasuje do fal migracji lub wydań, które są zdefiniowane przy użyciu metodologii Planowania, Gotowości i Wdrażania. W każdym przebiegu migracji partia obciążeń jest migrowana do chmury.
 - Przed migrowaniem obciążeń zidentyfikowano, skonfigurowano i wdrożono co najmniej jedną [strefę docelową](../ready/index.md) spełniającą potrzeby krótkoterminowego planu wdrożenia chmury.
 - Migracja jest najczęściej kojarzona z terminami _„lift-and-shift”_ i _ponowne hostowanie_. Ta metodologia i powyższe kroki opierają się na założeniu, że samego podejścia ponownego hostowania nie należy stosować dla żadnego centrum danych, a dla obciążeń należy je stosować tylko w niewielu przypadkach. Choć wiele obciążeń można ponownie hostować, klienci częściej wolą modernizować konkretne zasoby obciążenia. W trakcie tego iteracyjnego procesu jedną z najczęściej omawianych kwestii jest równowaga między szybkością i modernizacją.
 
-## <a name="iterative-migration-process"></a>Iteracyjny proces migracji
+## <a name="migration-effort"></a>Nakład pracy związany z migracją
 
-Zasadniczo migracja do chmury składa się z czterech prostych faz: ocena, migracja, optymalizacja, zabezpieczenia i zarządzanie. Ta sekcja podręcznika Cloud Adoption Framework uczy czytelników, jak zmaksymalizować zwrot z każdej fazy tego procesu i jak dostosować te fazy do swojego planu wdrożenia chmury. Poniższa ilustracja przedstawia fazy w podejściu iteracyjnym:
+Nakład pracy wymagany do migracji obciążeń zwykle mieści się w trzech typach prac (lub faz) dla każdego obciążenia: Ocena obciążeń, wdrażanie obciążeń i wydawanie obciążeń. Ta sekcja przewodnika Cloud Adoption Framework uczy czytelników, jak zmaksymalizować zwrot z każdej fazy wymaganej do migracji obciążenia do środowiska produkcyjnego.
 
-![Model migracji opisany w przewodniku Cloud Adoption Framework](../_images/migrate/methodology.png)
+W standardowej dwutygodniowej iteracji doświadczony zespół ds. migracji może ukończyć ten proces dla 2–5 obciążeń o niskiej i średniej złożoności. Bardziej złożone obciążenia, takie jak SAP, mogą wymagać kilku dwutygodniowych iteracji, aby ukończyć wszystkie trzy fazy pracy związanej z migracją dla pojedynczego obciążenia. Środowisko i stopień złożoności mają znaczny wpływ na osie czasu i szybkość migracji.
 
-## <a name="create-a-balanced-cloud-portfolio"></a>Tworzenie zrównoważonego portfolio chmury
+![Proces migracji opisany w przewodniku Cloud Adoption Framework](../_images/migrate/methodology.png)
 
-Każde zrównoważone portfolio technologiczne zawiera zróżnicowane zasoby w różnych stanach. Planowane jest wycofanie niektórych aplikacji i są one objęte minimalnym wsparciem. Inne aplikacje lub zasoby są obsługiwane w stanie konserwacji, ale funkcje tych rozwiązań są stabilne. W przypadku nowszych procesów biznesowych zmieniające się warunki rynkowe stymulują ciągłe ulepszenia lub modernizacje funkcji. Gdy powstają możliwości zapewnienia nowych źródeł przychodów, nowe aplikacje lub zasoby są wprowadzane do środowiska. Na każdym etapie cyklu życia zasobów wpływ inwestycji na przychody i zyski będzie ulegać zmianie. Wraz z kolejnymi etapami cyklu życia maleje prawdopodobieństwo, że nowa funkcja lub modernizacja umożliwi uzyskanie znaczne zwrotu z inwestycji.
+Następujące punkty zawierają przegląd etapów tego procesu (przedstawionych powyżej):
 
-Chmura zapewnia różne mechanizmy wdrażania, z których każdy cechuje się podobnym zakresem inwestycji i stopniem zwrotu. Tworzenie aplikacji natywnych dla chmury może znacznie zmniejszyć koszty operacyjne. Po wydaniu aplikacji natywnej dla chmury możliwe są szybsze iteracje programowania nowych funkcji. Modernizacja aplikacji może przynieść podobne korzyści przez wyeliminowanie starszych ograniczeń związanych z lokalnymi modelami programowania. Niestety, te dwa podejścia są pracochłonne i zależą od rozmiaru, umiejętności oraz doświadczenia zespołów programistycznych. Często praca nie jest zgodna z celami &mdash; osoby mające umiejętności i talent do modernizowania aplikacji wolą tworzyć nowe aplikacje. Na rynku, na którym brakuje pracowników, podczas projektów modernizacyjnych na dużą skalę mogą występować problemy związane z zadowoleniem pracowników i brakiem kwalifikacji. W zrównoważonym portfolio to podejście powinno być zarezerwowane dla aplikacji, które będą otrzymywać istotne ulepszenia funkcji, jeśli pozostaną w środowisku lokalnym.
+- **Ocena obciążeń:** Ocena obciążeń w celu oceny kosztów, modernizacji i narzędzi wdrażania. Proces ten koncentruje się na weryfikacji lub podważaniu założeń poczynionych podczas wcześniejszych odkryć i ocen poprzez dokładniejsze przyjrzenie się opcjom racjonalizacji. Również na tym etapie wzorce i zależności użytkowników są badane bardziej szczegółowo, aby zapewnić, że obciążenia osiągną sukces techniczny po migracji.
+- **Wdrażanie obciążeń:** Po ocenie obciążeń istniejące funkcje tych obciążeń są replikowane (lub ulepszane) w chmurze. Może to dotyczyć metody _lift and shift_ lub _ponownego hostowania_ w chmurze. Jednak częściej na tym etapie wiele zasobów obsługujących te obciążenia zostanie zmodernizowane, aby można było skorzystać z zalet chmury.
+- **Wydawanie obciążeń:** Po replikacji funkcji do chmury obciążenia mogą być testowane, optymalizowane, dokumentowane i wydawane na potrzeby bieżących operacji. Podczas tego procesu krytyczne znaczenie ma przegląd migrowanych obciążeń i przekazywanie ich zespołom ds. ładu, zarządzania operacjami i bezpieczeństwa w celu zapewnienia ciągłej obsługi tych obciążeń.
 
-## <a name="envision-an-end-state"></a>Przewidywanie stanu końcowego
+> [!NOTE]
+> W niektórych wczesnych iteracjach procesu migracji częstą praktyką jest ograniczenie do jednego obciążenia. Takie podejście maksymalizuje zachowanie umiejętności i zespołowi więcej czasu na eksperymentowanie i naukę.
+> [!NOTE]
+> Podczas budowania fabryki migracji niektóre zespoły mogą zdecydować o rozproszeniu każdej z powyższych faz na wiele zespołów i/lub wiele przebiegów. Takie podejście może poprawić powtarzalność i przyspieszyć migrację.
 
-Efektywny proces migracji wymaga określenia miejsca docelowego. Przed zrobieniem pierwszego kroku ustal przybliżoną wizję stanu końcowego. Ta grafika informacyjna przedstawia punkt początkowy składający się z istniejących aplikacji, danych i infrastruktury, które definiują majątek cyfrowy. Podczas procesu migracji każdy zasób jest przenoszony z zastosowaniem jednej z opcji po prawej stronie.
+## <a name="migration-waves"></a>Fale migracji
 
-## <a name="migration-implementation"></a>Implementacja migracji
+Iteracje migracji zapewnią wartość techniczną poprzez migrację zasobów i obciążeń. Fala migracji to najmniejsza kolekcja obciążeń, która zapewnia namacalną i wymierną wartość biznesową. Każda iteracja powinna kończyć się raportem przedstawiającym wykonane działania techniczne. Jednak zmiany biznesowe i planowanie strategiczne na ogół odbywają się na nieco wyższym poziomie. Podczas gdy zespół wdrożeniowy ds. chmury dokłada starań w zakresie procesu migracji, zespół strategiczny ds. chmury koncentruje się na planowaniu kolejnych 1-2 fal migracji. Zespół strategiczny ds. chmury śledzi również postęp techniczny w postaci metryki uczenia się, aby lepiej zrozumieć terminy (osie czasu) realizacji wartości biznesowej. W związku z tym fale migracji są iteracyjnym podejściem do zarządzania zmianami, które pozwala śledzić wyniki biznesowe, osoby i osie czasu.
 
-W tych artykułach omówiono dwa procesy, z których każdy ma podobny cel &mdash; zmigrowanie znaczącej części istniejących zasobów na platformę Azure. Jednak wyniki biznesowe i bieżący stan będą mieć istotny wpływ na procesy wymagane do osiągnięcia celu. Te subtelne odchylenia mogą być przyczyną dwóch znacząco odmiennych podejść dotyczących osiągnięcia podobnego stanu końcowego.
-
-![Model migracji opisany w przewodniku Cloud Adoption Framework](../_images/migrate/methodology.png)
-
-Aby zapewnić instrukcje dotyczące przyrostowego wykonania podczas przejścia do stanu końcowego, ten model dzieli migrację, skupiając się na dwóch obszarach.
-
-**Przygotowanie do migracji:** Określ przybliżoną listę prac opartą głównie na bieżącym stanie i żądanych wynikach.
-
-- **Wyniki biznesowe:** Kluczowe cele biznesowe tej migracji.
-- **Szacowanie majątku cyfrowego:** Przybliżona szacunkowa liczba i stan obciążeń do migracji.
-- **Role i obowiązki:** Jasna definicja struktury zespołu, podziału obowiązków i wymagań dotyczących dostępu.
-- **Wymagania dotyczące zarządzania zmianami:** Tempo, procesy i dokumentacja wymagana do przeglądu i zatwierdzania zmian.
-
-Te początkowe dane wejściowe kształtują listę prac związanych z migracją. Danymi wyjściowymi listy prac związanych z migracją jest lista aplikacji do zmigrowania do chmury. Ta kształtuje sposób realizacji procesu migracji do chmury. Wraz z upływem czasu będzie również powiększana o tworzenie dokumentacji niezbędnej do zarządzania zmianami.
-
-**Proces migracji:** Każde działanie związane z migracją do chmury jest częścią jednego z następujących procesów w odniesieniu do listy prac związanych z migracją.
-
-- **Ocena:** Oceń istniejący zasób i określ plan migracji tego zasobu.
-- **Migracja:** Zreplikuj funkcję zasobu w chmurze.
-- **Optymalizacja:** Zrównoważ wydajność, koszt, dostęp i możliwości operacyjne zasobu w chmurze.
-- **Zabezpieczanie i zarządzanie:** Upewnij się, że zasób w chmurze jest gotowy do ciągłego działania.
-
-Informacje zebrane podczas tworzenia listy prac związanych z migracją określają złożoność procesu migracji i wymagany nakład pracy z nim związany w ramach każdej iteracji i poszczególnych wydań funkcji.
-
-## <a name="transition-to-the-end-state"></a>Przejście do stanu końcowego
-
-Celem jest płynna i częściowo zautomatyzowana migracja do chmury. W procesie migracji są używane narzędzia zapewnione przez dostawcę chmury w celu szybkiej replikacji i przygotowania zasobów w chmurze. Po weryfikacji prosta zmiana sieci przekierowuje użytkowników do rozwiązania w chmurze. Dla wielu przypadków użycia technologia potrzebna do osiągnięcia tego celu jest w dużej mierze dostępna. Istnieją przykładowe przypadki, które pokazują tempo, w jakim można zreplikować 10 000 maszyn wirtualnych na platformie Azure.
-
-Nadal wymagane jest przyrostowe podejście do migracji. W większości środowisk długą listę maszyn wirtualnych do migracji należy podzielić na mniejsze jednostki pracy, aby migracja zakończyła się powodzeniem. Istnieje wiele czynników, które ograniczają liczbę maszyn wirtualnych możliwych do zmigrowania w danym okresie. Szybkość sieciowego ruchu wychodzącego jest jednym z ograniczeń technicznych. Większość ograniczeń wynika z możliwości przedsiębiorstwa związanych z weryfikacją i dostosowaniem się do zmian.
-
-Przyrostowe podejście do migracji w ramach przewodnika Cloud Adoption Framework pomaga utworzyć plan przyrostowy, który odzwierciedla i dokumentuje ograniczenia techniczne oraz kulturowe. Ten model ma na celu zwiększenie szybkości migracji przy jednoczesnej minimalizacji nakładu pracy działu IT i przedsiębiorstwa. Poniżej podano dwa przykłady wykonania migracji przyrostowej w oparciu o listę prac związanych z migracją.
+Jak przedstawiono na ilustracji w poprzedniej sekcji, procesy w metodologii [Planowanie](../plan/index.md), metodologii [Gotowość](../ready/index.md) i w pewnym stopniu metodologii [Strategia](../strategy/index.md) przewodnika Cloud Adoption Framework zapewniają konspekt planowania fal migracji i zarządzania nimi. Zarządzanie tymi falami ustali priorytety i określi nakłady pracy związane z migracją, które mają być dostarczone przez zespoły techniczne.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Rozpocznij od zapoznania się z [przewodnikiem po migracji na platformę Azure](./azure-migration-guide/index.md)
+Powyższe kroki obejmujące „Wprowadzenie” oraz kolejne wskazówki zawarte w metodologii migracji ułatwią rozwinięcie umiejętności usprawniających wykonywanie procesów w ramach każdego przebiegu migracji. [Przewodnik po migracji na platformę Azure](./azure-migration-guide/index.md) to krótka seria artykułów, w których przedstawiono najbardziej typowe narzędzia i podejścia niezbędne podczas pierwszej fali migracji.
 
 > [!div class="nextstepaction"]
 > [Przewodnik po migracji na platformę Azure](./azure-migration-guide/index.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 33c26a266cb1bbb428fb54f8e5ccbd242f75e1f6
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 7fa525ae5a2f0a7fe6d2075cd13d2bc9a1b08713
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434924"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996472"
 ---
 # <a name="encryption-decision-guide"></a>Przewodnik po decyzjach związanych z szyfrowaniem
 
@@ -121,9 +121,9 @@ Szyfrowanie danych w użyciu obejmuje zabezpieczanie danych w magazynie nietrwa�
 
 Aby uzyskać więcej informacji o szyfrowaniu i zarządzaniu kluczami na platformie Azure, zobacz:
 
-- [Omówienie szyfrowania na platformie Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). Szczegółowy opis sposobu, w jaki platforma Azure wykorzystuje szyfrowanie do zabezpieczenia zarówno danych magazynowanych, jak i przesyłanych.
+- [Omówienie szyfrowania na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview). Szczegółowy opis sposobu, w jaki platforma Azure wykorzystuje szyfrowanie do zabezpieczenia zarówno danych magazynowanych, jak i przesyłanych.
 - [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview). Usługa Key Vault to podstawowy system zarządzania kluczami na platformie Azure, służący do przechowywania kluczy kryptograficznych, wpisów tajnych i certyfikatów oraz zarządzania nimi.
-- [Najlepsze rozwiązania z zakresu zabezpieczeń i szyfrowania danych platformy Azure](https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices). Omówienie najlepszych rozwiązań z zakresu zabezpieczeń i szyfrowania danych na platformie Azure.
+- [Najlepsze rozwiązania z zakresu zabezpieczeń i szyfrowania danych platformy Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices). Omówienie najlepszych rozwiązań z zakresu zabezpieczeń i szyfrowania danych na platformie Azure.
 - [Poufne przetwarzanie na platformie Azure](https://azure.microsoft.com/solutions/confidential-compute). Inicjatywa platformy Azure dotycząca poufnego przetwarzania zapewnia narzędzia i technologie do tworzenia zaufanych środowisk wykonywania lub innych mechanizmów szyfrowania do zabezpieczania używanych danych.
 
 ## <a name="next-steps"></a>Następne kroki

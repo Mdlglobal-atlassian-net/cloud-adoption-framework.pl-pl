@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 51f24653998ab3cd4cf7fd043b487e4d7c1ccc5b
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: ff7b8669d71f72b87bbfcc3377dc5bf439311987
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312207"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995283"
 ---
 # <a name="cloud-governance-guides"></a>Przewodniki dotyczące ładu w chmurze
 
@@ -68,7 +68,7 @@ W przewodnikach przedstawiono, w jaki sposób zaimplementować minimalną koniec
 Aby rozpocząć podróż nadzoru, wybierz jedną z dwóch poniższych opcji. Opcje są oparte na zsyntetyzowanych doświadczeniach użytkowników. Tytuły są utworzone na podstawie skomplikowania organizacji w celu ułatwienia nawigacji. Jednak decyzja użytkownika może być bardziej skomplikowana. Poniższe tabele przedstawiają różnice między tymi dwiema opcjami.
 
 > [!WARNING]
-> Wymagany może być bardziej niezawodny punkt początkowy nadzoru. W takich przypadkach należy wziąć pod uwagę podejście [wirtualnego centrum danych Azure](#azure-virtual-datacenter), które zostało krótko opisane [poniżej](#azure-virtual-datacenter). To podejście zazwyczaj jest zalecane podczas wdrażania w skali przedsiębiorstwa, a szczególnie w przypadku działań, które przekraczają 10 000 zasobów. Jest to de facto wybór dla złożonych scenariuszy nadzoru, gdy konieczne jest spełnienie dowolnej z następujących kwestii: rozbudowane wymagania dotyczące zgodności z innymi firmami, głęboka znajomość danej dziedziny lub zgodność z dojrzałymi zasadami nadzoru IT i wymaganiami dotyczącymi zgodności.
+> Wymagany może być bardziej niezawodny punkt początkowy nadzoru. W takich przypadkach należy wziąć pod uwagę podejście [wirtualnego centrum danych Azure](#azure-virtual-datacenter), które zostało krótko opisane [poniżej](#azure-virtual-datacenter). To podejście zazwyczaj jest zalecane podczas wysiłku wdrażania w skali przedsiębiorstwa, a szczególnie w przypadku nakładów pracy, które przekraczają 10 000 zasobów. Jest to de facto wybór dla złożonych scenariuszy nadzoru, gdy konieczne jest spełnienie dowolnej z następujących kwestii: rozbudowane wymagania dotyczące zgodności z innymi firmami, głęboka znajomość danej dziedziny lub zgodność z dojrzałymi zasadami nadzoru IT i wymaganiami dotyczącymi zgodności.
 
 <!-- markdownlint-disable MD028 -->
 

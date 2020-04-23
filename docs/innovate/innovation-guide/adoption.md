@@ -4,17 +4,17 @@ description: Dowiedz się, jak używać narzędzi platformy Azure do zbierania i
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e39a13702f0734e592c7dfbefa90ec5f34846359
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e8ccc7dcefb1fe2fe194e743fe139819ab29b01f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356665"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120491"
 ---
 ::: zone target="docs"
 
@@ -124,7 +124,7 @@ Lista prac (tablica) umożliwia rejestrowanie informacji zwrotnych jako scenariu
 
 ### <a name="action"></a>Akcja
 
-Usługi Azure Boards i Azure Pipelines wymagają oddzielnego portalu w witrynie GitHub i na platformie Azure. Rozpoczynanie korzystania z usługi [Azure DevOps](https://dev.azure.com).
+Usługi Azure Boards i Azure Pipelines wymagają oddzielnego portalu w witrynie GitHub i na platformie Azure. Rozpoczynanie korzystania z usług [Azure DevOps Services](https://azure.microsoft.com/services/devops).
 
 ::: zone-end
 

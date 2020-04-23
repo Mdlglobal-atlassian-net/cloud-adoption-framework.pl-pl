@@ -4,17 +4,17 @@ description: Dowiedz się jak być na bieżąco i zarządzać zmianą przy obecn
 author: jelledruyts
 ms.author: andym
 ms.date: 04/09/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94e5dfb8f6a7d38f844c490a649bd35cf0887685
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: d0c3379da2962236dfb64ff45a5a9495b8a3fc36
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353809"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80808785"
 ---
 <!-- cSpell:ignore jelledruyts andym endjin -->
 
@@ -64,4 +64,4 @@ W przypadku bardziej zaawansowanej zawartości, która pomaga być na bieżąco 
   - Ten biuletyn udostępniany przez witrynę [endjin](https://endjin.com) zawiera tygodniowe podsumowanie najważniejszych wiadomości o platformie Microsoft Azure. Obejmuje również interesującą zawartość historyczną.
   - Subskrybuj przy użyciu [poczty e-mail](https://azureweekly.info).
 
-\* *Te zasoby są udostępniane przez społeczność i nie są oficjalnie wspierane przez firmę Microsoft.*
+\* _Te zasoby są udostępniane przez społeczność i nie są oficjalnie wspierane przez firmę Microsoft._

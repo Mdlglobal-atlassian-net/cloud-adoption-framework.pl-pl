@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a04208a147d2cf9f50b30f8053b49367fa08aabe
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: cc095a1751e945ca18763757582a6cd27b65d72a
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527680"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119767"
 ---
-# <a name="validate-assessment-assumptions-before-migration"></a>Walidacja założeń oceny przed migracją
+# <a name="assess-workloads-and-validate-assumptions-before-migration"></a>Ocena obciążeń i weryfikacja założeń przed migracją
 
 Wiele z istniejących obciążeń idealnie nadaje się do migracji do chmury, ale nie każdy zasób jest zgodny z platformami chmury i nie dla wszystkich obciążeń jest korzystny hosting w chmurze. [Planowanie infrastruktury cyfrowej](../../../digital-estate/index.md) umożliwia utworzenie ogólnej [listy prac związanych z migracją](../prerequisites/technical-complexity.md#migration-backlog-aligning-business-priorities-and-timing) dla potencjalnych obciążeń do migracji. Jednak jest to planowanie wysokiego poziomu. Opiera się ono na założeniach przyjmowanych przez zespół ds. strategii w chmurze bez dogłębnej analizy zagadnień technicznych.
 

@@ -4,21 +4,21 @@ description: Dowiedz się, jak przeglądać rozwiązania pod kątem możliwych o
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: eff32a369c55011cea8fb8ace2e7bfae28680eda
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 8ac8887f849704610822429a2b5e49833a78487c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353863"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119725"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
-# <a name="test-optimize-and-promote"></a>Testowanie, optymalizowanie i podwyższanie poziomu
+# <a name="release-workloads-test-optimize-and-handoff"></a>Wydawanie obciążeń (testowanie, optymalizacja i przekazanie)
 
 Po przeprowadzeniu migracji usług na platformę Azure następnym etapem jest przejrzenie rozwiązania pod kątem możliwych obszarów optymalizacji. Może to obejmować przegląd projektu rozwiązania, dobór rozmiaru usług oraz analizowanie kosztów.
 
