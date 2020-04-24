@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 010702ef16c3350049e8cc3cd84a26266fe77661
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80427502"
 ---
 # <a name="develop-digital-inventions"></a>Tworzenie wynalazków cyfrowych
@@ -24,11 +24,11 @@ Zgodnie z opisem w [innowacji w gospodarce cyfrowej](./index.md), innowacje wyma
 
 Poniższe dyscypliny nie są *wszystkie* wymagane do napełniania innowacji w danym przypadku. Postępując zgodnie ze wskazówkami w temacie [Build with Customer empatię](./build.md), celem jest przetestowanie hipotezy w każdej iteracji. Definiując dane wyjściowe każdej iteracji jako [minimalny produkt żywotny (MVP)](../../govern/policy-compliance/index.md), powinno to umożliwić włączenie najmniejszej możliwej liczby dyscyplin.
 
-- **[Zdemokratyzuj proces dane](./data.md):** Pobierając dane do rąk klientów, partnerów i pracowników, zachęcasz do innowacyjnych obserwacji. Pozyskiwanie, scentralizowanie, zarządzanie i udostępnianie danych.
-- Zaangażuj się  **[w aplikacje](./apps.md):** Ludzie łączą się ze wiedzą za pomocą aplikacji i środowisk. Umożliwienie deweloperom i programistom deweloperów szybkie tworzenie aplikacji.
-- **[Przyjęcie przyjęcia](./ci-cd.md):** Zachęcaj do innowacji poprzez zmniejszenie liczby działań związanych z wdrażaniem i partnerstwem. Architekt w zakresie widoczności, współpracy, szybkości i przesyłania opinii.
-- **[Współpracuj z urządzeniami](./devices.md):** Linie cyfrowe i fizyczne rozmycie przez wiele kanałów. Dostarczaj doświadczenia między urządzeniami, IoT i rzeczywistości mieszanej.
-- **[Przewidywanie i wpływ](./predict.md):** Spójrz na przyszłość, aby prowadzić innowacje. Obejrzyj bieżące dane, aby informować środowiska i interakcje za poorednictwem narzędzi predykcyjnych.
+- ** [Zdemokratyzuj proces dane](./data.md):** Pobierając dane do rąk klientów, partnerów i pracowników, zachęcasz do innowacyjnych obserwacji. Pozyskiwanie, scentralizowanie, zarządzanie i udostępnianie danych.
+- Zaangażuj się ** [w aplikacje](./apps.md):** Ludzie łączą się ze wiedzą za pomocą aplikacji i środowisk. Umożliwienie deweloperom i programistom deweloperów szybkie tworzenie aplikacji.
+- ** [Przyjęcie przyjęcia](./ci-cd.md):** Zachęcaj do innowacji poprzez zmniejszenie liczby działań związanych z wdrażaniem i partnerstwem. Architekt w zakresie widoczności, współpracy, szybkości i przesyłania opinii.
+- ** [Współpracuj z urządzeniami](./devices.md):** Linie cyfrowe i fizyczne rozmycie przez wiele kanałów. Dostarczaj doświadczenia między urządzeniami, IoT i rzeczywistości mieszanej.
+- ** [Przewidywanie i wpływ](./predict.md):** Spójrz na przyszłość, aby prowadzić innowacje. Obejrzyj bieżące dane, aby informować środowiska i interakcje za poorednictwem narzędzi predykcyjnych.
 
 ## <a name="next-steps"></a>Następne kroki
 

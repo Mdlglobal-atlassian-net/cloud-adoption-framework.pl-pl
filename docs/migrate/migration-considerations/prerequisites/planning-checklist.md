@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 9b9889be940485217b15aa0038f68f9df8099892
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428996"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Lista kontrolna planowania środowiska migracji: sprawdzanie gotowości środowiska przed migracją
@@ -26,7 +26,7 @@ W tym artykule założono podejście do migracji do chmury oparte na _ponownym h
 
 ## <a name="governance-alignment"></a>Dostosowanie ładu
 
-Pierwszą i najważniejszą decyzją dotyczącą środowiska gotowego do migracji jest wybór dostosowania ładu. Czy osiągnięto porozumienie dotyczące dostosowania ładu do podstaw migracji? Zespół ds. wdrażania chmury powinien zrozumieć, czy migracja jest wypełniać w jednym środowisku z ograniczonym zarządzaniem, w pełni zarządzaną fabryką środowiskową, czy też pewną odmianą. Aby uzyskać dodatkowe wskazówki dotyczące wyrównania przez kierownictwo, zobacz [metodologia](../../../govern/index.md)zarządzania.
+Pierwszą i najważniejszą decyzją dotyczącą środowiska gotowego do migracji jest wybór dostosowania ładu. czy osiągnięto porozumienie dotyczące dostosowania ładu do podstaw migracji? Zespół ds. wdrażania chmury powinien zrozumieć, czy migracja jest wypełniać w jednym środowisku z ograniczonym zarządzaniem, w pełni zarządzaną fabryką środowiskową, czy też pewną odmianą. Aby uzyskać dodatkowe wskazówki dotyczące wyrównania przez kierownictwo, zobacz [metodologia](../../../govern/index.md)zarządzania.
 
 ## <a name="operations-management-alignment"></a>Wyrównanie zarządzania operacjami
 

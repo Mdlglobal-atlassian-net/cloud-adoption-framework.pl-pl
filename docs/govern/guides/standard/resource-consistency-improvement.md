@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 6228bc4a2f4a2217ab7cd226ace5075c91a52dfc
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434206"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: zwiększanie spójności zasobów
@@ -103,7 +103,7 @@ W tej części artykułu zostanie zmieniony projekt ładu MVP, który obejmuje n
     1. Zidentyfikuj konfigurację zapory platformy Azure spełniającą wymagania dotyczące zabezpieczeń. Alternatywnie Zidentyfikuj urządzenie innej firmy zgodne z platformą Azure.
     1. Utwórz szablon Menedżer zasobów, aby wdrożyć zaporę z wymaganymi konfiguracjami.
 8. Plan platformy Azure:
-    1. Utwórz nowy plan platformy Azure o nazwie `protected-data`.
+    1. Utwórz nowy plan platformy Azure o `protected-data`nazwie.
     2. Dodaj zaporę i szablony magazynu platformy Azure do planu.
     3. Dodaj nowe zasady dla chronionych subskrypcji danych.
     4. Opublikuj plan w dowolnej grupie zarządzania, która będzie hostować aplikacje o kluczowym znaczeniu.

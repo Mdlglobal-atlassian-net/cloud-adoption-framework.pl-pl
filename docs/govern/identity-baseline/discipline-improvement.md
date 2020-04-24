@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 48da6b708644030a2efc20dc0764bcb1b40ffe25
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: 254abb817b89e34e9e92fb2b9eb949784e269601
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527591"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995216"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -72,7 +72,7 @@ Do pomyślnego przeprowadzenia migracji środowiska wymagane są pewne wymagania
 - Rozważ użycie następujących modeli dostępu:
   - Model [dostępu o najniższych uprawnieniach](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) .
   - Model dostępu do [linii bazowej tożsamości uprzywilejowanej](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) .
-- Zakończ wszystkie szczegóły dotyczące preintegracji i zapoznaj się z [najlepszymi rozwiązaniami dotyczącymi tożsamości](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices).
+- Zakończ wszystkie szczegóły dotyczące preintegracji i zapoznaj się z [najlepszymi rozwiązaniami dotyczącymi tożsamości](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices).
   - Włącz pojedyncze tożsamości, logowanie jednokrotne (SSO) lub bezproblemowe logowanie jednokrotne.
   - Skonfiguruj uwierzytelnianie wieloskładnikowe dla administratorów.
   - W razie potrzeby można skonsolidować lub zintegrować dostawców tożsamości.

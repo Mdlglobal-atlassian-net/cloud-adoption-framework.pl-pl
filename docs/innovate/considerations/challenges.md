@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 4b6ed0a62c3efcdf30e854fcbed6ee468a826e9c
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80527660"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Typowe bloki i wyzwania dla innowacji
@@ -40,7 +40,7 @@ Na poniższej liście przedstawiono niektóre z najbardziej typowych wyzwań zwi
 
 Przed powszechnym wdrożeniem chmury cykle wynalazków, które zależą od technologii informatycznych, były pracochłonne i czasochłonne. Cykle zakupów i aprowizacji często opóźnią najważniejsze pierwsze kroki w odnoszącym się do nowych rozwiązań. Koszt rozwiązań DevOps i opinii powoduje pętlę "zdolności zespołów" do współpracy nad wczesnym etapem pomysłów i wynalazkiem. Koszty związane ze środowiskami deweloperskimi i platformami danych uniemożliwiły każdy, ale wysoce szkolony deweloperzy mogą uczestniczyć w tworzeniu nowych rozwiązań.
 
-W chmurze zostały wyeliminowane wiele z tych wyzwań związanych z rozwojem, udostępniając samoobsługowe, profesjonalne narzędzia do tworzenia i wdrażania, a możliwości dla profesjonalnych deweloperów i deweloperów, którzy będą współpracować w celu szybkiego rozwoju wiązani. Korzystanie z chmury na potrzeby innowacji znacznie zmniejsza liczbę wyzwań klientów i zablokowanych do strony wynalazków równania innowacji.
+Chmura przezwycięży wiele z tych wyzwań związanych z wynalazkiem, udostępniając samoobsługowe, profesjonalne narzędzia programistyczne i wdrożeniowe oraz możliwości dla profesjonalnych deweloperów i deweloperów, którzy współpracują w tworzeniu szybkich rozwiązań. Korzystanie z chmury na potrzeby innowacji znacznie zmniejsza liczbę wyzwań klientów i zablokowanych do strony wynalazków równania innowacji.
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>Wyzwania w zakresie wynalazków w zakresie gospodarki cyfrowej
 
@@ -61,4 +61,4 @@ W przypadku sieci cyfrowej większość rozwiązań wyzwania architektów ma jas
 Na podstawie wiedzy uzyskanej w odniesieniu do modelu i sposób myślenia wzrostu miary kompilacji możesz teraz przystąpić do [opracowania cyfr cyfrowych](./invention.md) w ramach [metodologii innowacji](./index.md).
 
 > [!div class="nextstepaction"]
-> [Opracowywanie cyfr cyfrowych](./invention.md)
+> [Tworzenie wynalazków cyfrowych](./invention.md)

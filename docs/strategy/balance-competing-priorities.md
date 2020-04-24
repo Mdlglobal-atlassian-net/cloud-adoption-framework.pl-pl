@@ -1,5 +1,5 @@
 ---
-title: Równoważenie konkurencyjnych priorytetów
+title: Zrównoważone priorytety konkurencji
 description: Odkryj strategie dotyczące równoważenia konkurencyjnych priorytetów.
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,14 +7,14 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: adf99d715a5b1a867fd76a40d47fd0d46848f8ad
-ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
+ms.openlocfilehash: 768007ea6b745eab76f6ae6e255287490da93ec1
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80636529"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119673"
 ---
-# <a name="balance-competing-priorities"></a>Równoważenie konkurencyjnych priorytetów
+# <a name="balance-competing-priorities"></a>Zrównoważone priorytety konkurencji
 
 Zaokrętowanie na drodze cyfrowej transformacji cyfrowych działa jak funkcja wymuszania dla uczestników projektu w zespołach branżowych i technologicznych. Ścieżka do sukcesu jest zdecydowana w organizacji w celu zrównoważenia konkurencyjnych priorytetów.
 
@@ -43,7 +43,7 @@ Podstawowym celem metodologii strategii jest opracowanie rozwinięcia między uc
 - **Głębokość uzasadnienia:** Zainteresowane strony często chcą uzyskać ścisłą analizę finansową i pełne uzasadnienie biznesowe, aby mieć wygodne dopasowanie do kierunku strategicznego. Niestety, ten poziom analizy może wymagać rozszerzonego okresu, aby umożliwić zbieranie i analizowanie danych.
 - **Czas do wpływu na działalność biznesową:** Z drugiej strony, zainteresowane osoby często są odpowiedzialne za dostarczanie wyników handlowych w określonych przedziale czasowym. Czasochłonne analizy i oceny mogą spowodować, że te wyniki są narażone na ryzyko przed rozpoczęciem pracy technicznej.
 
-**Minimalny zakres:** Znalezienie tego salda wymaga wcześniejszej dyskusji między uczestnikami projektu w procesie. Metodologia strategii sugeruje ograniczenie zakresu wyrównania podczas tego wczesnego nakładu pracy. W sugerowanym podejściu uczestnicy projektu koncentrują się na dostosowywaniu zestawu najważniejszych motywacji, wymiernych rezultatach i ogólnym wyrównaniu biznesowym. Zaleca się, aby uczestnicy projektu szybko zatwierdzać niewielką liczbę początkowych projektów lub pilotażów na potrzeby możliwości uczenia się.
+**Minimalny zakres:** Znalezienie tego salda wymaga wcześniejszego omówienia dyskusji udziałowców w procesie. Metodologia strategii sugeruje ograniczenie zakresu wyrównania podczas tego wczesnego nakładu pracy. W sugerowanym podejściu uczestnicy projektu koncentrują się na dostosowywaniu zestawu najważniejszych motywacji, wymiernych rezultatach i ogólnym wyrównaniu biznesowym. Zainteresowane strony powinny następnie szybko zatwierdzić niewielką liczbę początkowych projektów lub pilotażów w celu uzyskania wymaganych możliwości nauki.
 
 **Rozszerzony przykład zakresu:** Jeśli początkowa analiza biznesowa wskazuje na wysokie ryzyko negatywnego wpływu na działalność firmy, może być konieczne spowolnienie i bardziej ostrożne ocenianie dokładniejszej analizy podczas uzasadnienia biznesowego.
 
@@ -143,4 +143,4 @@ Konkurencyjne priorytety w tym artykule odzwierciedlają dysk IT w celu dostarcz
 Dowiedz się, jak [zrównoważyć migrację, innowacje i eksperymenty](./balance-the-portfolio.md) , aby zmaksymalizować wartość działania migracji do chmury.
 
 > [!div class="nextstepaction"]
-> [Równoważenie portfela](./balance-the-portfolio.md)
+> [Balansowanie portfolio](./balance-the-portfolio.md)

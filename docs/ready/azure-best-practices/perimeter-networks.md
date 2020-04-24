@@ -10,12 +10,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: d5e906caf5f0b9c2c241520a96311c48df565234
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 802660021dd9ae3a861b51ae4dee6e14b9671ef2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433234"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120194"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -28,17 +28,17 @@ Aby sieci obwodowe działały prawidłowo, pakiety przychodzące, zanim nawiąż
 Sieci obwodowe korzystają z następujących funkcji i usług platformy Azure:
 
 - [Sieci wirtualne][virtual-networks], [trasy definiowane przez użytkownika][user-defined-routes] oraz [sieciowe grupy zabezpieczeń][network-security-groups]
-- [Wirtualne urządzenia sieciowe (urządzeń WUS)][NVA]
+- [Wirtualne urządzenia sieciowe (urządzeń WUS)][network-virtual-appliances]
 - [Azure Load Balancer][ALB]
 - [Azure Application Gateway][AppGW] i [Zapora aplikacji sieci Web (WAF)][AppGWWAF]
 - [Publiczne adresy IP][PIP]
 - [Usługa Azure Front Door][AFD] z [zaporą aplikacji internetowej][AFDWAF]
-- [Azure Firewall][AzFW]
+- [Azure Firewall][azure-firewall]
 
 > [!NOTE]
 > Architektury referencyjne platformy Azure udostępniają przykładowe szablony, których można używać do wdrażania własnych sieci obwodowych:
 >
-> - [Wdróż strefę DMZ między platformą Azure i lokalnym centrum danych](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
+> - [Wdróż strefę DMZ między platformą Azure i lokalnym centrum danych](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
 > - [Wdróż strefę DMZ między platformą Azure i Internetem](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 Zazwyczaj centralne zespoły IT oraz zespoły ds. bezpieczeństwa są odpowiedzialne za określenie wymagań dotyczących obsługi sieci obwodowych.
@@ -59,7 +59,7 @@ W przykładzie sieci typu Hub i szprych gwarantujemy, że ruch generowany przez 
 
 ## <a name="azure-firewall"></a>Azure Firewall
 
-[Azure Firewall][AzFW] to zarządzana usługa oparta na chmurze, która chroni zasoby sieci wirtualnej platformy Azure. Jest to w pełni stanowa zapora zarządzana z wbudowaną wysoką dostępnością i możliwością nieograniczonego skalowania w chmurze. Możesz centralnie tworzyć, wymuszać i rejestrować zasady łączności aplikacji i sieci w subskrypcjach i sieciach wirtualnych.
+[Azure Firewall][azure-firewall] to zarządzana usługa oparta na chmurze, która chroni zasoby sieci wirtualnej platformy Azure. Jest to w pełni stanowa zapora zarządzana z wbudowaną wysoką dostępnością i możliwością nieograniczonego skalowania w chmurze. Możesz centralnie tworzyć, wymuszać i rejestrować zasady łączności aplikacji i sieci w subskrypcjach i sieciach wirtualnych.
 
 Usługa Azure Firewall używa statycznego publicznego adresu IP do zasobów sieci wirtualnej. Umożliwia to zewnętrznym zaporom identyfikowanie ruchu pochodzącego z danej sieci wirtualnej. Usługa współpracuje z usługą Azure Monitor na potrzeby rejestrowania i analiz.
 
@@ -69,7 +69,7 @@ Sieci obwodowe z dostępem do Internetu są zazwyczaj zarządzane za pomocą wys
 
 Różne aplikacje biznesowe często używają wielu aplikacji internetowych. Aplikacje internetowe często mają różne luki w zabezpieczeniach i są obiektami ataków wykorzystujących te luki. Zapora aplikacji internetowej wykrywa ataki na aplikacje internetowe (HTTP/HTTPS) bardziej szczegółowo niż zapora ogólna. W porównaniu z tradycyjną technologią stosowaną w przypadku zapór zapory aplikacji internetowych mają zestaw konkretnych funkcji chroniących wewnętrzne serwery internetowe przed zagrożeniami.
 
-Wystąpienie usługi Azure Firewall oraz zapora [wirtualnego urządzenia sieciowego][NVA] korzystają ze wspólnej płaszczyzny administracyjnej oraz zestawu reguł zabezpieczeń, który chroni obciążenia hostowane w szprychach oraz pomaga kontrolować dostęp do sieci lokalnych. Usługa Azure Firewall ma wbudowaną skalowalność, a zapory urządzeń WUS można skalować ręcznie za modułem równoważenia obciążenia.
+Wystąpienie zapory platformy Azure i [sieciowe urządzenie wirtualne] [urządzenie WUS] korzystają ze wspólnej płaszczyzny administracyjnej z zestawem reguł zabezpieczeń, aby pomóc w ochronie obciążeń hostowanych w szprychach i kontrolować dostęp do sieci lokalnych. Usługa Azure Firewall ma wbudowaną skalowalność, a zapory urządzeń WUS można skalować ręcznie za modułem równoważenia obciążenia.
 
 Farma zapór ma zwykle mniej wyspecjalizowane oprogramowanie niż zapora aplikacji internetowej, ale obsługuje szerszy zakres aplikacji, aby filtrować i sprawdzać wszelkiego rodzaju ruch wychodzący i przychodzący. Jeśli używasz rozwiązania z urządzeniem WUS, możesz znaleźć i wdrożyć oprogramowanie z platformy Azure Marketplace.
 
@@ -114,8 +114,8 @@ Dane telemetryczne w czasie rzeczywistym są dostępne w widokach usługi Azure 
 [virtual-networks]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview
 [network-security-groups]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg
 [user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
-[NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
-[AzFW]: https://docs.microsoft.com/azure/firewall/overview
+[network-virtual-appliances]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
+[azure-firewall]: https://docs.microsoft.com/azure/firewall/overview
 [perimeter-network]: https://docs.microsoft.com/azure/best-practices-network-security
 [ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
 [DDoS]: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview

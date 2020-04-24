@@ -1,5 +1,5 @@
 ---
-title: Tymczasowe działania podczas migracji
+title: Działania dotyczące przemieszczania podczas migracji
 description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby zrozumieć działania etapowe i skojarzone elementy dostarczane podczas migracji.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: f6d45943ac8545083ce8d31215488b433a3ad00b
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80432461"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>Informacje dotyczące przemieszczania podczas migracji

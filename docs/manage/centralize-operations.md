@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: 12b1a578c98a2c870306d9bc5b3587477adbb3d3
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80430346"
 ---
 <!-- cSpell:ignore jenhayes -->
@@ -31,7 +31,7 @@ Gdy wymagana jest architektura z wieloma dzierżawcami, [usługa Azure Lighthous
 
 Załóżmy na przykład, że organizacja ma jedną dzierżawę, *dzierżawcę a*. Organizacja uzyskuje dwie dodatkowe dzierżawy, *dzierżawcy B* i *dzierżawcę C*i ma powody biznesowe, które wymagają utrzymania ich jako osobnych dzierżawców.
 
-Organizacja chce używać tych samych definicji zasad, metod tworzenia kopii zapasowych i procesów zabezpieczeń we wszystkich dzierżawach. Ponieważ masz już użytkowników (w tym grupy użytkowników i jednostek usługi) odpowiedzialnych za wykonywanie tych zadań w ramach dzierżawy A, możesz dołączyć wszystkie subskrypcje w ramach dzierżawy B i dzierżawy C, aby Ci użytkownicy w dzierżawie mogli wykonać te czynności widoku. Dzierżawa A następnie będzie dzierżawą zarządzającą dla dzierżawy B i dzierżawy C.
+Organizacja chce używać tych samych definicji zasad, metod tworzenia kopii zapasowych i procesów zabezpieczeń we wszystkich dzierżawach. Ponieważ masz już użytkowników (w tym grupy użytkowników i jednostek usługi) odpowiedzialnych za wykonywanie tych zadań w ramach dzierżawy A, możesz dołączyć wszystkie subskrypcje w ramach dzierżawy B i dzierżawy C, aby Ci użytkownicy w dzierżawie mogli wykonywać te zadania. Dzierżawa A następnie będzie dzierżawą zarządzającą dla dzierżawy B i dzierżawy C.
 
 ![Użytkownicy w dzierżawie to zarządzanie zasobami w dzierżawie B i w ramach dzierżawy C](../_images/manage/enterprise-azure-lighthouse.jpg)
 

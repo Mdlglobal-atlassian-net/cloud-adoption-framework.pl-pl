@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42f8e589d0d9231ff3ea9ab6b514cfc22f8b518c
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 9e0a64a2f0b2c1c9a948c142a28fca0c9d534804
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433459"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997325"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Instrukcje dotyczące przykładowych zasad spójności zasobów
 
@@ -38,7 +38,7 @@ Poniższe przykładowe instrukcje dotyczące zasad umożliwiają rozwiązywanie 
   - Środowisko
 - Narzędzia ładu muszą sprawdzać poprawność tagowania związanego z kosztami, krytycznością, umową SLA, aplikacją i środowiskiem. Wszystkie wartości muszą być wyrównane do wstępnie zdefiniowanych wartości zarządzanych przez zespół nadzoru.
 
-**Potencjalne opcje projektu:** Na platformie Azure [Tagi metadanych standardowej wartości nazwy](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) są obsługiwane w przypadku większości typów zasobów. [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) służy do wymuszania określonych tagów w ramach tworzenia zasobów.
+**Potencjalne opcje projektu:** Na platformie Azure [Tagi metadanych standardowej wartości nazwy](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources) są obsługiwane w przypadku większości typów zasobów. [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) służy do wymuszania określonych tagów w ramach tworzenia zasobów.
 
 ## <a name="ungoverned-subscriptions"></a>Nieregulowane subskrypcje
 

@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: 3169fd430ad24526557bb80163c16eff814c618f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428651"
 ---
 # <a name="cloud-adoption-capabilities"></a>Możliwości wdrażania chmury
@@ -37,7 +37,7 @@ W celu zapewnienia optymalnej współpracy i wydajności zalecamy, aby zespoły 
 
 ## <a name="key-responsibilities"></a>Kluczowe obowiązki
 
-Podstawową potrzebą od dowolnych funkcji wdrażania w chmurze jest czasochłonna, wysoka jakość rozwiązań technicznych, które opisano w planie wdrażania, z uwzględnieniem wymagań w zakresie zarządzania i wyników biznesowych, korzystając z technologii, narzędzi i rozwiązania automatyzacji udostępnione dla zespołu.
+Podstawową potrzebą z każdej funkcji wdrażania w chmurze jest czasochłonna, wysoka jakość rozwiązań technicznych, które opisano w planie wdrażania, z uwzględnieniem wymagań w zakresie zarządzania i wyników biznesowych, korzystając z technologii, narzędzi i rozwiązań automatyzacji dostępnych dla zespołu.
 
 **Zadania wczesnego planowania:**
 
@@ -60,7 +60,7 @@ Najlepiej, jeśli te zespoły spotykają się codziennie w sposób samodzielny. 
 
 Harmonogramy wydań i czasy trwania iteracji są unikatowe dla każdej firmy. Jednak zakres od jednego do czterech tygodni na iterację wygląda na średni czas trwania. Bez względu na iterację lub wydanie erze zaleca się, aby zespół zaspokajał wszystkie zespoły pomocnicze na końcu każdej wersji, aby komunikować się z wynikami wydania i zmieniać priorytet nadchodzących wysiłków. Podobnie jest cenny do zaspokajania jako zespół na końcu każdego przebiegu, z [centrum w chmurze doskonałości](./cloud-center-of-excellence.md) lub [zespołem](./cloud-governance.md) nadzoru w chmurze, aby zachować zgodność z typowymi działaniami i wszelkimi potrzebami pomocy technicznej.
 
-Niektóre z zadań technicznych związanych z wdrażaniem w chmurze mogą stać się powtarzane. Członkowie zespołu powinni obrócić co 3&ndash;6 miesięcy, aby uniknąć problemów z zadowoleniem pracowników i zachować odpowiednie umiejętności. Rotacyjna siedziba w centrum rozwiązań w [chmurze doskonałości](./cloud-center-of-excellence.md) lub [zespołu nadzoru chmurowego](./cloud-governance.md) może zapewnić doskonałą okazję, aby pracownicy mogli korzystać z nowych innowacji.
+Niektóre z zadań technicznych związanych z wdrażaniem w chmurze mogą stać się powtarzane. Członkowie zespołu powinni obrócić co 3&ndash;miesiące, aby uniknąć problemów z zadowoleniem pracowników i zachować odpowiednie umiejętności. Rotacyjna siedziba w centrum rozwiązań w [chmurze doskonałości](./cloud-center-of-excellence.md) lub [zespołu nadzoru chmurowego](./cloud-governance.md) może zapewnić doskonałą okazję, aby pracownicy mogli korzystać z nowych innowacji.
 
 ## <a name="next-steps"></a>Następne kroki
 

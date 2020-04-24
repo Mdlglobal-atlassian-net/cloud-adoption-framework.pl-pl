@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 2ee44d3e83dde52e03dbe2dffca7edc51899da0e
-ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80636435"
 ---
 # <a name="multiple-datacenters"></a>Wiele centrów danych
 
 Często zakres migracji obejmuje przejście w wielu centrach danych. Poniższe wskazówki pomogą rozszerzyć zakres [przewodnika dotyczącego migracji na platformę Azure](../azure-migration-guide/index.md) w celu uwzględnienia wielu centrów danych.
 
-## <a name="general-scope-expansion"></a>Rozszerzenie zakresu ogólnego
+## <a name="general-scope-expansion"></a>Ogólne rozszerzenie zakresu
 
 Większość nakładu pracy wymaganego do rozszerzenia tego zakresu będzie potrzebna w ramach procesów wymagań wstępnych, oceniania i optymalizacji migracji.
 
@@ -52,7 +52,7 @@ Poniżej przedstawiono działania, które znacząco wpływają na sukces migracj
 - **Oceń konflikty sieci:** W przypadku konsolidowania centrów danych do jednego dostawcy chmury istnieje prawdopodobieństwo utworzenia sieci, DNS lub innych konfliktów. Podczas migracji ważne jest przetestowanie pod kątem konfliktów, aby uniknąć zakłóceń w działaniu systemów produkcyjnych hostowanych w chmurze.
 - **Aktualizowanie tabel routingu:** Często modyfikacje tabel routingu są wymagane podczas konsolidowania sieci lub centrów danych.
 
-## <a name="optimize-and-promote-process-changes"></a>Zmiany procesu optymalizacji i podwyższania poziomu
+## <a name="optimize-and-promote-process-changes"></a>Optymalizacja i podwyższenie poziomu zmian procesu
 
 W trakcie optymalizacji mogą być wymagane dodatkowe testy.
 
@@ -60,7 +60,7 @@ W trakcie optymalizacji mogą być wymagane dodatkowe testy.
 
 Przed podwyższeniem poziomu należy uwzględnić dodatkowe poziomy testowania podczas rozszerzania zakresu. Podczas testowania ważne jest przetestowanie pod kątem routingu lub innych konfliktów sieci. Ponadto ważne jest odizolowanie wdrożonej aplikacji i przetestowanie jej w celu sprawdzenia, czy wszystkie zależności zostały poddane migracji do chmury. W takim przypadku izolacja oznacza oddzielenie wdrożonego środowiska od sieci produkcyjnych. Dzięki temu można zidentyfikować pominięte zasoby, które nadal działają lokalnie.
 
-## <a name="secure-and-manage-process-changes"></a>Zmiany procesu zabezpieczania i zarządzania
+## <a name="secure-and-manage-process-changes"></a>Zabezpieczanie zmian procesu oraz zarządzanie nimi
 
 Procesy zabezpieczania i zarządzania nie powinny zostać zmienione podczas rozszerzania zakresu w ten sposób.
 

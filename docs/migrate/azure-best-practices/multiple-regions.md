@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7592494f3fd38721cc16015f3f8d5b33ad9132e0
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: ff04f94c8f6dbf023f706ac3c66778fdc89c3437
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433017"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80998068"
 ---
 # <a name="azure-regions"></a>Regiony świadczenia usługi Azure
 
 Platforma Azure składa się z wielu regionów na całym świecie. Każdy [region świadczenia usługi Azure](https://azure.microsoft.com/global-infrastructure/regions) ma specyficzne cechy, dlatego wybór regionu do użycia jest niezwykle ważny.
 
 1. **Dostępne usługi:** Usługi, które są wdrażane w poszczególnych regionach, różnią się w zależności od różnych czynników. Dla swojego obciążenia wybierz region, który zawiera żądaną usługę. Aby uzyskać więcej informacji o dostępnych usługach w poszczególnych regionach, zobacz [Dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services).
-1. **Pojemność:** Każdy region ma maksymalną pojemność. Informacje na ten temat nie są zwykle przedstawiane użytkownikowi końcowemu, ale pojemność może mieć wpływ na to, w których typach subskrypcji można wdrażać określone typy usług i w jakich okolicznościach. Różni się to od limitów przydziału subskrypcji. Jeśli planujesz migrację z dużą ilością danych na platformę Azure, możesz chcieć skonsultować się z lokalnym zespołem platformy Azure lub kierownikiem ds. klientów w celu potwierdzenia, że można przeprowadzić wdrożenie w odpowiedniej skali.
+1. **Pojemność:** Każdy region ma maksymalną pojemność. Chociaż jest to zwykle abstrakcyjne od użytkownika końcowego, może to mieć wpływ na typy subskrypcji, które mogą wdrażać typy usług i w jakich okolicznościach. Różni się to od limitów przydziału subskrypcji. Jeśli planujesz migrację z dużą ilością danych na platformę Azure, możesz zapoznać się z lokalnym zespołem ds. pól platformy Azure lub menedżerem kont, aby upewnić się, że można go wdrożyć w odpowiedniej skali.
 1. **Ograniczenia:** Niektóre ograniczenia są wprowadzane do wdrożenia usług w określonych regionach. Na przykład niektóre regiony są dostępne tylko jako miejsce docelowe kopii zapasowej lub pracy w trybie failover. Inne istotne ograniczenia to [wymagania dotyczące niezależności danych](https://azure.microsoft.com/global-infrastructure/geographies).
 1. **Suwerenność:** Niektóre regiony są przeznaczone dla konkretnych suwerennych jednostek. Wszystkie regiony są regionami platformy Azure, ale te niezależne regiony są całkowicie odizolowane od reszty platformy Azure, nie muszą być zarządzane przez firmę Microsoft i mogą być ograniczone do określonych typów klientów. Te niezależne regiony są następujące:
-    1. [Chińska wersja platformy Azure](https://azure.microsoft.com/global-infrastructure/china)
+    1. [Chiny platformy Azure](https://azure.microsoft.com/global-infrastructure/china)
     1. [Niemiecka wersja platformy Azure](https://azure.microsoft.com/global-infrastructure/germany) (wycofywana i zastępowana standardowymi suwerennymi regionami platformy Azure w Niemczech)
-    1. [Wersja platformy Azure dla administracji USA](https://azure.microsoft.com/global-infrastructure/government)
+    1. [Platforma Azure dla instytucji rządowych](https://azure.microsoft.com/global-infrastructure/government)
     1. Uwaga: w [Australii](https://azure.microsoft.com/global-infrastructure/australia) firma Microsoft zarządza dwoma regionami, ale są one udostępniane dla instytucji rządowych Australii oraz jej klientów i wykonawców, w związku z czym obowiązują w nich podobne ograniczenia klienta co w przypadku innych chmur suwerennych.
 
 ## <a name="operate-in-multiple-geographic-regions"></a>Działanie w wielu regionach geograficznych
@@ -51,7 +51,7 @@ Każde niezawodne wdrożenie w chmurze wymaga dobrze przemyślanej sieci, która
   > [!WARNING]
   > Nie należy próbować używać magazynu geograficznie nadmiarowego platformy Azure do tworzenia kopii zapasowych maszyn wirtualnych ani ich odzyskiwania. Zamiast tego można zastosować usługi [Azure Backup](https://azure.microsoft.com/services/backup) i [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) wraz z [dyskami zarządzanymi platformy Azure](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) do obsługi odporności obciążeń IaaS.
 
-- Usługi Azure Backup i Azure Site Recovery współpracują ze sobą w ramach zaprojektowanej sieci, aby ułatwić zapewnienie odporności regionalnej na potrzeby usług IaaS i kopii zapasowych danych. Upewnij się, że sieć jest zoptymalizowana, dzięki czemu transfery danych pozostaną w sieci szkieletowej firmy Microsoft i będą korzystać z [wirtualnych sieci równorzędnych](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview), jeśli będzie to możliwe. Niektóre większe organizacje z wdrożeniami globalnymi mogą zamiast tego użyć usługi [ExpressRoute w warstwie Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction), aby kierować ruchem między regionami, co może pozwolić uniknąć regionalnych opłat za ruch wychodzący.
+- Usługi Azure Backup i Azure Site Recovery współpracują ze sobą w ramach zaprojektowanej sieci, aby ułatwić zapewnienie odporności regionalnej na potrzeby usług IaaS i kopii zapasowych danych. Upewnij się, że sieć jest zoptymalizowana, dzięki czemu transfery danych pozostaną w sieci szkieletowej firmy Microsoft i będą korzystać z [wirtualnych sieci równorzędnych](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview), jeśli będzie to możliwe. Niektóre większe organizacje z wdrożeniami globalnymi mogą zamiast tego używać [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) do kierowania ruchu między regionami, które mogą zaoszczędzić regionalne opłaty za ruch wychodzący.
 
 - Grupy zasobów platformy Azure są konstrukcjami specyficznymi dla regionu. Jest to jednak normalne, że zasoby należące do grupy zasobów istnieją w wielu regionach. W tej sytuacji należy koniecznie pamiętać, że w przypadku awarii regionalnej operacje płaszczyzny sterowania względem grupy zasobów zakończą się niepowodzeniem w regionie, w którym miała miejsce awaria, nawet jeśli zasoby w innych regionach (w ramach tej grupy zasobów) będą nadal działać. Może to mieć wpływ zarówno na projekt sieci, jak i projekt grupy zasobów.
 
@@ -84,7 +84,7 @@ Poniższa tabela może pomóc w dokumentowaniu wyników opisanych powyżej czynn
 | Ameryka Północna | Stany Zjednoczone         | Yes             | Partnerzy i klienci | Yes                         | Nie                            |
 | Ameryka Północna | Kanada      | Nie              | Klienci              | Yes                         | Yes                           |
 | Europa        | Niemcy     | Yes             | Partnerzy i klienci | Nie — tylko sieć           | Yes                           |
-| Azja i Pacyfik  | Korea Południowa | Yes             | Partnerzy               | Yes                         | Nie                            |
+| Azja i Pacyfik  | Korea Południowa | Yes             | Partnerzy               | Tak                         | Nie                            |
 
 <!-- markdownlint-disable MD026 -->
 
@@ -166,7 +166,7 @@ Podczas migrowania aplikacji, którą należy wdrożyć w wielu regionach, zesp�
 > [!NOTE]
 > Takie podejście może zwiększyć krótkoterminowy koszt migracji, ponieważ może spowodować naliczenie dodatkowych opłat za przepustowość ruchu wychodzącego.
 
-## <a name="optimize-and-promote-process-changes"></a>Zmiany procesu optymalizacji i podwyższania poziomu
+## <a name="optimize-and-promote-process-changes"></a>Optymalizacja i podwyższenie poziomu zmian procesu
 
 Rozwiązywanie problemów z globalną złożonością podczas optymalizacji i podwyższania poziomu może wymagać zduplikowanej pracy w każdym z dodatkowych regionów. W przypadku przyjęcia jednego wdrożenia można nadal wymagać duplikowania testowania biznesowego i planów zmian biznesowych.
 

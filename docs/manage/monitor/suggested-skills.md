@@ -7,12 +7,12 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2cfa4ec997dc211ad50eafcb723c58d934c45d10
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: 30d3b590c6382b0487cac3cfd6c5c0d343432f67
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527021"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120545"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -24,14 +24,14 @@ Opracowywanie niezbędnych umiejętności może być przyspieszone przy użyciu 
 
 - Wprowadzenie do [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) omawia podstawowe pojęcia związane z zarządzaniem i wdrażaniem zasobów platformy Azure. Personel działu INFORMATYCZNego zarządzający doświadczeniem w przedsiębiorstwie powinien zrozumieć zakresy zarządzania, kontrolę dostępu opartą na rolach (RBAC) przy użyciu programu. Szablony Azure Resource Manager i zarządzanie zasobami przy użyciu interfejsu wiersza polecenia platformy Azure i Azure PowerShell.
 
-- Dowiedz się, jak zabezpieczyć zasoby przy użyciu zasad, kontroli dostępu opartej na rolach i innych usług platformy Azure, wyświetlając opcję [Implementuj zabezpieczenia zarządzania zasobami na platformie Azure](https://docs.microsoft.com//learn/paths/implement-resource-mgmt-security).
+- Dowiedz się, jak zabezpieczyć zasoby przy użyciu zasad, kontroli dostępu opartej na rolach i innych usług platformy Azure, wyświetlając opcję [Implementuj zabezpieczenia zarządzania zasobami na platformie Azure](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security).
 
 - Wprowadzenie do [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) pomaga dowiedzieć się, jak można używać Azure Policy do tworzenia i przypisywania zasad oraz zarządzania nimi. Azure Policy można wdrożyć i skonfigurować agentów Azure Monitor, włączyć monitorowanie za pomocą Azure Monitor dla maszyn wirtualnych i Azure Security Center, wdrożyć ustawienia diagnostyczne, Przeprowadź inspekcję ustawień konfiguracji gościa i nie tylko.
 
 - Wprowadzenie do [interfejsu wiersza polecenia](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) (CLI) platformy Azure, czyli międzyplatformowego środowiska wiersza polecenia do zarządzania zasobami platformy Azure. Należy również zapoznać się z tematem wprowadzenie do [Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.6.1). Oferty serwisu LinkedIn — w ramach kursu na poziomie początku [uczenia się narzędzi do zarządzania platformy Azure](https://www.linkedin.com/learning/learning-azure-management-tools), sesji obejmujących interfejs wiersza polecenia platformy Azure i języki programowania programu PowerShell:
 
   - [Użyj interfejsu wiersza polecenia platformy Azure](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli).
-  - [Wprowadzenie do Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
+  - [Rozpoczynanie pracy z programem Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
 - Dowiedz się, jak pisać [zapytania dzienników w Azure monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries).  Język zapytań Kusto jest podstawowym zasobem służącym do pisania zapytań dzienników Azure Monitor w celu eksplorowania i analizowania danych dzienników między zebranymi danymi z zależności aplikacji zasobów platformy Azure i hybrydowych, w tym aplikacji na żywo.
 
@@ -39,7 +39,7 @@ Opracowywanie niezbędnych umiejętności może być przyspieszone przy użyciu 
 
   - [Microsoft Azure monitorowanie i zarządzanie IaaSą](https://www.pluralsight.com/courses/azure-iaas-monitoring-management-getting-started) pomaga dowiedzieć się, jak używać Azure monitor do podstawowego monitorowania obciążeń działających w systemie IaaS.
 
-  - [Monitorowanie Microsoft Azure zasobów i obciążeń](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring) pomaga dowiedzieć się, jak używać narzędzi monitorowania Microsoft Azure do monitorowania zasobów sieci platformy Azure (a także Premium).
+  - [Monitorowanie zasobów i obciążeń Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring) pomaga dowiedzieć się, jak używać narzędzi monitorowania Microsoft Azure do monitorowania zasobów sieciowych platformy Azure, a także zasobów lokalnych.
 
   - [Microsoft Azure inżynier DevOps: Optymalizacja mechanizmów przesyłania opinii](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) pomaga przygotować się do korzystania z Azure monitor, w tym Application Insights i log Analytics do monitorowania i optymalizowania aplikacji sieci Web.
 
@@ -57,7 +57,7 @@ Firma Microsoft wraz ze swoimi partnerami oferuje różnorodne opcje, dzięki kt
 
 - [Centrum kariery Microsoft IT Pro](https://www.microsoft.com/itpro): służy jako bezpłatny zasób online, który ułatwia zamapowanie ścieżki kariery w chmurze. Dowiedz się, co sugerują eksperci branżowi dla Twoje roli związanej z chmurą i umiejętności, które do tego prowadzą. Zapoznaj się z materiałami szkoleniowymi w swoim własnym tempie, aby nabyć najpotrzebniejsze umiejętności.
 
-Zdobądź oficjalne potwierdzenie swojej wiedzy na temat platformy Azure, korzystając ze [szkoleń i egzaminów certyfikacyjnych dotyczących platformy Microsoft Azure]( https://www.microsoft.com/learning/azure-certification.aspx).
+Zdobądź oficjalne potwierdzenie swojej wiedzy na temat platformy Azure, korzystając ze [szkoleń i egzaminów certyfikacyjnych dotyczących platformy Microsoft Azure]( https://www.microsoft.com/learning/certification-overview.aspx).
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps i zarządzanie projektami
 
@@ -71,16 +71,16 @@ Aby dowiedzieć się więcej, zapoznaj się z następującymi tematami:
 
 - [Dowiedz się więcej na temat DevOps Dojo — biały pas](https://docs.microsoft.com/learn/paths/devops-dojo-white-belt-foundation)
 
-- [Rozwijanie praktyk DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
+- [Rozwijanie praktyk metodyki DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
 
 - [Automatyzacja wdrożeń przy użyciu usługi Azure DevOps](https://docs.microsoft.com/learn/paths/automate-deployments-azure-devops)
 
 ## <a name="other-considerations"></a>Inne zagadnienia
 
-Klienci często nie mają trudności z zarządzaniem, konserwacją i dostarczaniem oczekiwanych firm (oraz do organizacji IT) dla usług, za które jest naliczana opłata. Monitorowanie jest traktowane jako rdzeń do zarządzania infrastrukturą i działalnością firmy, a jednocześnie koncentruje się na pomiarach jakości usług i obsługi klienta.  Aby osiągnąć te cele, należy określić podstawę za pomocą narzędzia ITSM w połączeniu z DevOps, co pomoże zespołowi monitorującemu w zawieszeniu, jak zarządzać, dostarczać i obsługiwać usługę monitorowania. Przyjęcie platformy narzędzia ITSM Framework pozwala zespołowi monitorującemu działać jako dostawca i uzyskać uznanie jako zaufany czynnik biznesowy przez dostosowanie do strategicznych celów i potrzeb organizacji.
+Klienci często nie mają trudności z zarządzaniem, konserwacją i dostarczaniem oczekiwanych firm (oraz do organizacji IT) dla usług, za które jest naliczana opłata. Monitorowanie jest traktowane jako rdzeń do zarządzania infrastrukturą i działalnością firmy, a jednocześnie koncentruje się na pomiarach jakości usług i obsługi klienta. Aby osiągnąć te cele, należy określić podstawę za pomocą narzędzia ITSM w połączeniu z DevOps, co pomoże zespołowi monitorującemu w zawieszeniu, jak zarządzać, dostarczać i obsługiwać usługę monitorowania. Przyjęcie platformy narzędzia ITSM Framework pozwala zespołowi monitorującemu działać jako dostawca i uzyskać uznanie jako zaufany czynnik biznesowy przez dostosowanie do strategicznych celów i potrzeb organizacji.
 
 Zapoznaj się z poniższymi tematami, aby zrozumieć aktualizacje dotyczące najpopularniejszych wytycznych usługi narzędzia ITSM Framework w [wersji 4 i w chmurze obliczeniowej](https://www.axelos.com/case-studies-and-white-papers/itil-4-and-the-cloud), które koncentrują się na dołączeniu do istniejących wskazówek dotyczących biblioteki ITIL z najlepszymi rozwiązaniami od DevOps, Agile i Lean. Należy również wziąć pod uwagę [architekturę referencyjną IT4IT](https://www.opengroup.org/it4it) , która dostarcza alternatywny plan na potrzeby przekształcania go przy użyciu struktury niezależny od procesu.
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-Aby odnaleźć dodatkowe ścieżki szkoleniowe, przejrzyj [katalog Microsoft Learn](https://docs.microsoft.com/learn/browse). Użyj filtru role, aby wyrównać ścieżki szkoleniowe do roli.
+Aby odnaleźć dodatkowe ścieżki szkoleniowe, przejrzyj [katalog Microsoft Learn](https://docs.microsoft.com/learn/browse). Użyj filtru Role, aby dopasować ścieżki szkoleniowe do swojej roli.

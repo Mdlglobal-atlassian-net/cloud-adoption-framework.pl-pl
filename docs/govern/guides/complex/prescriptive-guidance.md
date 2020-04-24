@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 482b517605b13e27fe2fc315d9d8f7495ed8618c
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 50335d2c7e6a628c0fd8886f5d1fac2701d7f286
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434370"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995515"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: objaśniono najlepsze rozwiązania
 
@@ -50,17 +50,17 @@ Zespół ds. zarządzania chmurą będzie odpowiedzialny za następujące decyzj
 
 ### <a name="subscription-design"></a>Projekt subskrypcji
 
-Decyzja dotycząca tego, w jaki sposób konstrukcja subskrypcji pozwala określić, jak subskrypcje platformy Azure mają być strukturalne i w jaki sposób grupy zarządzania platformy Azure będą używane do wydajnego zarządzania dostępem, zasadami i zgodnością z tą subskrypcją. W tym opisie zespół nadzoru zdecydował się na **[strategię mieszanych subskrypcji](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** .
+Decyzja dotycząca tego, w jaki sposób konstrukcja subskrypcji pozwala określić, jak subskrypcje platformy Azure mają być strukturalne i w jaki sposób grupy zarządzania platformy Azure będą używane do wydajnego zarządzania dostępem, zasadami i zgodnością z tą subskrypcją. W tym opisie zespół nadzoru zdecydował się na **[strategię mieszanych subskrypcji](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)**.
 
 - W miarę istnienia nowych żądań dotyczących zasobów platformy Azure należy ustalić "dział" dla każdej głównej jednostki biznesowej w każdej lokalizacji geograficznej. W ramach każdego z działów należy utworzyć "subskrypcje" dla każdej aplikacji Archetype.
-- Aplikacja Archetype to metoda grupowania aplikacji z podobnymi potrzebami. Typowe przykłady obejmują: aplikacje z chronionymi danymi, zarządzanymi aplikacjami (na przykład HIPAA lub FedRAMP), aplikacje o niskim ryzyku, aplikacje z zależnościami lokalnymi, oprogramowaniem SAP lub innymi aplikacjami mainframe na platformie Azure lub aplikacjami rozszerzającymi lokalne aplikacje SAP lub mainframe. Każda organizacja ma unikatowe potrzeby na podstawie klasyfikacji danych i typów aplikacji, które obsługują działalność biznesową. Mapowanie zależności podpisu cyfrowego może pomóc w definiowaniu Archetypes aplikacji w organizacji.
+- Aplikacja Archetype to metoda grupowania aplikacji z podobnymi potrzebami. Typowe przykłady obejmują: aplikacje z chronionymi danymi, aplikacje zarządzane (takie jak HIPAA lub FedRAMP), aplikacje o niskim ryzyku, aplikacje z lokalnymi zależnościami, SAP lub innymi aplikacjami mainframe na platformie Azure lub aplikacje, które umożliwiają rozbudowa lokalnych aplikacji SAP lub mainframe. Każda organizacja ma unikatowe potrzeby na podstawie klasyfikacji danych i typów aplikacji, które obsługują działalność biznesową. Mapowanie zależności podpisu cyfrowego może pomóc w definiowaniu Archetypes aplikacji w organizacji.
 - Wspólna konwencja nazewnictwa powinna zostać uzgodniona w ramach projektu subskrypcji, w oparciu o powyższe dwa Punktory.
 
 ### <a name="resource-consistency"></a>Spójność zasobów
 
 Decyzje dotyczące spójności zasobów określają narzędzia, procesy i nakłady potrzebne do zapewnienia spójnego wdrażania i konfigurowania zasobów platformy Azure w ramach subskrypcji. W tym opisie **[spójność wdrożenia](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** została wybrana jako wzorzec spójności zasobów podstawowych.
 
-- Grupy zasobów są tworzone dla aplikacji przy użyciu podejścia cyklu życia. Wszystkie elementy, które są tworzone, konserwowane i wycofane, powinny znajdować się w jednej grupie zasobów. Aby uzyskać więcej informacji na temat grup zasobów, zobacz [tutaj](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Grupy zasobów są tworzone dla aplikacji przy użyciu podejścia cyklu życia. Wszystkie elementy, które są tworzone, konserwowane i wycofane, powinny znajdować się w jednej grupie zasobów. Aby uzyskać więcej informacji, zobacz [Przewodnik po decyzji o spójności zasobów](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy należy zastosować do wszystkich subskrypcji ze skojarzonej grupy zarządzania.
 - W ramach procesu wdrażania szablony spójności zasobów platformy Azure dla grupy zasobów powinny być przechowywane w kontroli źródła.
 - Każda grupa zasobów jest skojarzona z określonym obciążeniem lub aplikacją na podstawie opisanego powyżej podejścia cyklu życia.
@@ -76,7 +76,7 @@ Decyzje dotyczące tagowania zasobów określają sposób stosowania metadanych 
 
 - Wdrożone zasoby powinny być oznaczone wartościami dla:
   - Dział/jednostka rozliczeniowa
-  - Geograficzne
+  - Lokalizacja geograficzna
   - Klasyfikacja danych
   - Zagrożenia
   - Umowa SLA

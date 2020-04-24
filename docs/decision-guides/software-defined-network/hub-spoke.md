@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9bcdc7168fccc24eba8c3a6a55668c976556590d
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 36c9b9cc749f1feddff64c64717849fe5dfbe3b9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433154"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996104"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>Sieć zdefiniowana przez oprogramowanie: Hub i szprych
 
@@ -26,7 +26,7 @@ Cały ruch przechodzący z lub z sieci szprych obciążenia jest kierowany przez
 Ten model ma na celu rozwiązanie następujących problemów:
 
 - **Oszczędność kosztów i efektywność zarządzania.** Scentralizowanie usług, które mogą być współużytkowane przez wiele obciążeń, takich jak wirtualne urządzenia sieciowe (urządzeń WUS) i serwery DNS, w jednej lokalizacji pozwala na zminimalizowanie nadmiarowych zasobów i nakładu pracy związanego z zarządzaniem w wielu obciążeniach.
-- **Limity dotyczące nadchodzących subskrypcji.** Duże obciążenia oparte na chmurze mogą wymagać użycia większej liczby zasobów niż jest to dozwolone w ramach jednej subskrypcji platformy Azure (zobacz [limity subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits)). Komunikacja równorzędna sieci wirtualnych obciążenia z różnych subskrypcji do centrum może pokonać te ograniczenia.
+- **Limity subskrypcji.** Duże obciążenia oparte na chmurze mogą wymagać użycia większej ilości zasobów niż jest to dozwolone w ramach jednej subskrypcji platformy Azure. Komunikacja równorzędna sieci wirtualnych obciążenia z różnych subskrypcji do centrum może pokonać te ograniczenia. Aby uzyskać więcej informacji, zobacz [limity dotyczące sieci platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits).
 - **Rozdzielenie obaw.** Możliwość wdrażania pojedynczych obciążeń między centralnymi zespołami IT i zespołami obciążeń.
 
 Na poniższym diagramie przedstawiono przykładową architekturę Hub i szprych, w tym centralnie zarządzane połączenie hybrydowe.

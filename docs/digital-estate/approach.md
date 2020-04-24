@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
 ms.openlocfilehash: a384647cd25e871c444a59fc7388f4007df335d9
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80431037"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Podejścia do planowania majątku cyfrowego
@@ -36,7 +36,7 @@ Sprawdza również obsługiwane typy użytkowników (niezależny/ekspert, zawsze
 
 Podejście oparte na zasobach zapewnia plan oparty na zasobach, które obsługują aplikację do migracji. W tym podejściu dane statystyczne użycia są ściągane z bazy danych zarządzania konfiguracją (CMDB) lub innych narzędzi do oceny infrastruktury.
 
-Takie podejście zwykle zakłada model wdrożenia IaaS jako linię bazową. W tym procesie analiza szacuje atrybuty każdego elementu zawartości: pamięć, liczba procesorów (rdzenie procesora CPU), miejsce do magazynowania systemu operacyjnego, dyski danych, karty sieciowe (nic), protokół IPv6, równoważenie obciążenia sieciowego, klastrowanie, wersja systemu operacyjnego. wersja bazy danych (w razie potrzeby), obsługiwane domeny i składniki innych firm lub pakiety oprogramowania, między innymi. Zasoby, które są spisem w tym podejściu, są następnie wyrównane z obciążeniami lub aplikacjami dla celów grupowania i mapowania zależności.
+Takie podejście zwykle zakłada model wdrożenia IaaS jako linię bazową. W tym procesie analiza szacuje atrybuty każdego elementu zawartości: pamięć, liczba procesorów (rdzenie procesora CPU), miejsce do magazynowania systemu operacyjnego, dyski danych, karty sieciowe (nic), protokół IPv6, równoważenie obciążenia sieciowego, klastrowanie, wersja systemu operacyjnego, wersja bazy danych (w razie potrzeby), obsługiwane domeny i składniki innych firm lub pakiety oprogramowania, między innymi. Zasoby, które są spisem w tym podejściu, są następnie wyrównane z obciążeniami lub aplikacjami dla celów grupowania i mapowania zależności.
 
 > [!TIP]
 > To podejście wymaga bogatego źródła danych statystycznych użycia. Czas wymagany do skanowania spisu i zbierania danych to największe ryzyko dla chronometrażu. Źródła danych niskiego poziomu mogą pominąć zależności między zasobami lub aplikacjami. Zaplanuj co najmniej jeden miesiąc, aby skanować spis. Sprawdź poprawność zależności przed wdrożeniem.
@@ -61,4 +61,4 @@ Zdecydowanie sugerujemy podejście przyrostowe, tak jak w przypadku wielu proces
 Po wybraniu podejścia można zebrać spis.
 
 > [!div class="nextstepaction"]
-> [Zbierz dane spisu](./inventory.md)
+> [Zbieranie danych spisu](./inventory.md)

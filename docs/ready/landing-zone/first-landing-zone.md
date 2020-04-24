@@ -7,16 +7,18 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a7d5dede975dbc4a8571bcc54cbff71fa1588200
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: 04816ede2d9c46e60baef88652551e647049bd99
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527303"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120687"
 ---
+<!-- cSpell:ignore CAF -->
+
 # <a name="first-landing-zone"></a>Pierwsza strefa docelowa
 
-Infrastruktura jako kod to naturalny etap większości wdrożeń chmury. Wdrożenie pierwszej strefy wyładunkowej w chmurze jest wspólnym punktem wyjścia w trakcie przechodzenia do środowiska opartego na kodzie. Ten artykuł pomoże Ci zrozumieć termin _strefy docelowej_ i zdecydować, która strefa docelowa jest najbardziej odpowiednia dla bieżących potrzeb.
+Infrastruktura jako kod to naturalne przejście w trakcie większości wysiłków związanych z wdrażaniem w chmurze. Wdrożenie pierwszej strefy wyładunkowej w chmurze jest wspólnym punktem wyjścia w trakcie przechodzenia do środowiska opartego na kodzie. Ten artykuł pomoże Ci zrozumieć termin _strefy docelowej_ i zdecydować, która strefa docelowa jest najbardziej odpowiednia dla bieżących potrzeb.
 
 ## <a name="code-first-approach-to-landing-zones"></a>Podejście pierwszego kodu do stref wyładunkowej
 
@@ -37,11 +39,11 @@ D. Gdy Partner udostępnia bieżące usługi zarządzane lub ma umowę na dostar
 
 ## <a name="choosing-a-first-landing-zone"></a>Wybieranie pierwszej strefy docelowej
 
-Wybór pierwszej strefy docelowej zależy od wielu zmiennych. Poniższa siatka przechwytuje niektóre opcje dla pierwszej strefy wypchnięcia wraz ze zmiennymi, które mogą spowodować podjęcie decyzji.
+Wybór pierwszej strefy docelowej zależy od wielu zmiennych. Poniższa siatka przechwytuje niektóre opcje dla pierwszej strefy wypchnięcia wraz ze zmiennymi, które mogą na nim sterować.
 
 | Strefa docelowa                                 | Środowisko chmury  | Skalowanie             | Czas odnajdowania | Produkcja gotowa | Połączenie hybrydowe             | Dane poufne     | Krytyczne znaczenie dla działalności   | Zgodność         |
 |----------------------------------------------|-------------------|-------------------|----------------|------------------|--------------------|--------------------|--------------------|--------------------|
-| [CAF migrację](./migrate-landing-zone.md)     | Nowość w chmurze      | zasoby < 1 000    | od 1 do 5 dni    | Ograniczony zakres — > | Wymagane rozszerzenie | Wymagane rozszerzenie | Wymagane rozszerzenie | Wymagane rozszerzenie |
+| [CAF migrację](./migrate-landing-zone.md)     | Nowość w chmurze      | Zasoby < 1 000    | od 1 do 5 dni    | Ograniczony zakres — > | Wymagane rozszerzenie | Wymagane rozszerzenie | Wymagane rozszerzenie | Wymagane rozszerzenie |
 | [CAF Terraform](./terraform-landing-zone.md) | Różne szablony | Różne szablony | od 10 do 20 tygodni | Ograniczony zakres — > | Dostępne moduły  | Dostępne moduły  | Dostępne moduły  | Dostępne moduły  |
 
 W poniższej tabeli przedstawiono te same strefy wyładunkowe z nieco różnych perspektyw, co prowadzi do bardziej szczegółowych procesów decyzyjnych.

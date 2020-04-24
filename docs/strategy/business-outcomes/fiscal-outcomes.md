@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
 ms.openlocfilehash: 5950b94a6247864ef101e6e8c2040eee899a5bb4
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433751"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Przykłady wyników fiskalnych
@@ -40,7 +40,7 @@ Chmura może pomóc w tworzeniu możliwości dostarczania nowych produktów klie
 
 Dzięki globalnym skalowaniu i zasięgowi cyfrowemu Chmura może pomóc firmom w zwiększeniu przychodów z istniejących strumieni przychodów. Często ten typ wyników pochodzi z wyrównania ze liderem sprzedaży lub marketingu.
 
-- **Przykład:** Firma, która sprzedaje widżety, może sprzedawać więcej elementów widget, jeśli sprzedawcy mogą bezpiecznie uzyskać dostęp do wykazu cyfrowego i poziomów zapasów firmy. Niestety, te dane są tylko w systemach ERP firmy, do których można uzyskać dostęp tylko za pośrednictwem urządzenia połączonego z siecią. Utworzenie usługi elewacji do interfejsu z systemem ERP i udostępnienie listy katalogów i niewrażliwych poziomów zapasów do aplikacji w chmurze umożliwi sprzedawcom uzyskanie dostępu do danych, których potrzebują, podczas gdy jest to klient z klientem. Rozszerzanie lokalnych Active Directory przy użyciu Azure Active Directory (Azure AD) i integrowanie dostępu opartego na rolach z aplikacją umożliwi firmie zagwarantowanie, że dane pozostaną bezpieczne. Ten prosty projekt może mieć wpływ na przychód z istniejącej linii produktu o _x%_ .
+- **Przykład:** Firma, która sprzedaje widżety, może sprzedawać więcej elementów widget, jeśli sprzedawcy mogą bezpiecznie uzyskać dostęp do wykazu cyfrowego i poziomów zapasów firmy. Niestety, te dane są tylko w systemach ERP firmy, do których można uzyskać dostęp tylko za pośrednictwem urządzenia połączonego z siecią. Utworzenie usługi elewacji do interfejsu z systemem ERP i udostępnienie listy katalogów i niewrażliwych poziomów zapasów do aplikacji w chmurze umożliwi sprzedawcom uzyskanie dostępu do danych, których potrzebują, podczas gdy jest to klient z klientem. Rozszerzanie lokalnych Active Directory przy użyciu Azure Active Directory (Azure AD) i integrowanie dostępu opartego na rolach z aplikacją umożliwi firmie zagwarantowanie, że dane pozostaną bezpieczne. Ten prosty projekt może mieć wpływ na przychód z istniejącej linii produktu o _x%_.
 
 ### <a name="profit-increases"></a>Wzrost zysku
 
@@ -83,7 +83,7 @@ Poniższe terminy pomogą zrozumieć różnice między kosztami kapitałowymi i 
 - **Nakłady inwestycyjne** generują korzyści w długim okresie. Te wydatki są zwykle niecykliczne i powodują pozyskiwanie trwałych zasobów. Tworzenie aplikacji może zakwalifikować się jako nakłady inwestycyjne.
 - **Wydatki operacyjne** są ciągłymi kosztami działania firmy. Korzystanie z usług w chmurze w modelu płatność zgodnie z rzeczywistym użyciem może zakwalifikować się jako wydatki operacyjne.
 - **Zasoby są zasobami** gospodarczymi, które mogą być własnością lub być kontrolowane w celu utworzenia wartości. Wszystkie serwery, jeziora i aplikacje mogą być uznawane za zasoby.
-- **Amortyzacja** to spadek wartości elementu zawartości w miarę upływu czasu. W odniesieniu do wydatków kapitałowych i konwersacji związanych z kosztami, amortyzacja polega na tym, jak koszty zasobu są przyliczane w okresach, w których są używane. Na przykład jeśli tworzysz aplikację w tym roku, ale oczekujesz średniego okresu istnienia na pięć lat (takich jak większość aplikacji komercyjnych), koszt zespołu deweloperów i niezbędnych narzędzi wymaganych do utworzenia i wdrożenia bazy kodu będzie amortyzowany nawet na pięć czterocyfrowy.
+- **Amortyzacja** to spadek wartości elementu zawartości w miarę upływu czasu. W odniesieniu do wydatków kapitałowych i konwersacji związanych z kosztami, amortyzacja polega na tym, jak koszty zasobu są przyliczane w okresach, w których są używane. Na przykład, jeśli tworzysz aplikację w tym roku, ale oczekujesz, że średni cykl życia jest równy pięciu lat (jak w większości aplikacji komercyjnych), koszt zespołu deweloperów i niezbędnych narzędzi wymaganych do utworzenia i wdrożenia bazy kodu będzie amortyzowany nawet przez pięć lat.
 - **Jest to proces szacowania,** ile jest cennych firmy. W większości branż wycenia bazuje na zdolności firmy do generowania przychodów i zysków, przy jednoczesnym poszanowaniu kosztów operacyjnych wymaganych do utworzenia towarów, które zapewniają ten przychód. W niektórych branżach, takich jak sprzedaż detaliczna lub w niektórych typach transakcji, takich jak prywatna kapitału, zasoby i amortyzacja mogą odgrywać znaczną część oceny firmy.
 
 Często jest to bezpieczne trafienie, które w różnych kierownikach, w tym dyrektor ds. inwestycji (CIO), zanotują najlepsze wykorzystanie kapitału do rozwoju firmy w odpowiednim kierunku. CIOnie środków w celu przeprowadzenia konwersji contentiousych wydatków inwestycyjnych na wyznaczną odpowiedzialność za wydatki operacyjne może być atrakcyjny przez siebie. W wielu branżach dyrektorzy ds. finansów (CFOs) aktywnie dążą do lepszego kojarzenia z kosztami związanymi z sprzedażą.
@@ -99,4 +99,4 @@ W przypadku pożądanego modelu wydatków operacyjnych Poniższy przykład może
 Dowiedz się [więcej o](./agility-outcomes.md)sposobach zdobywania elastyczności.
 
 > [!div class="nextstepaction"]
-> [Wyniki elastyczność](./agility-outcomes.md)
+> [Wyniki związane z elastycznością](./agility-outcomes.md)

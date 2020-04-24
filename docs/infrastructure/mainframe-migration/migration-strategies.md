@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 0f57483ed09ec87422773c6a2fb53e2785a0a24e
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80425518"
 ---
 <!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
@@ -63,7 +63,7 @@ Komputery mainframe zwykle utrzymują Lokacje odzyskiwania po awarii lub wykorzy
 
 Zautomatyzowana nadmiarowość geograficzna jest również dostępna za pomocą funkcji sprzęgu komputera mainframe. Takie podejście jest kosztowne i jest zwykle zarezerwowane dla systemów o znaczeniu krytycznym. W przeciwieństwie do systemu Azure dostępne są łatwe w implementacji i ekonomiczne opcje [tworzenia kopii zapasowych](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [odzyskiwania](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)i [nadmiarowości](https://docs.microsoft.com/azure/storage/common/storage-redundancy) na poziomach lokalnym lub regionalnym lub za pośrednictwem nadmiarowości geograficznej.
 
-## <a name="storage"></a>Storage
+## <a name="storage"></a>Magazyn
 
 Część opisująca, jak działa mainframe, polega na dekodowania różnych nakładających się warunków. Na przykład Magazyn centralny, pamięć rzeczywista, rzeczywiste magazyn i główny magazyn ogólnie odnoszą się do magazynu dołączonego bezpośrednio do procesora mainframe.
 
@@ -89,4 +89,4 @@ Gdy rozwiązania są opracowywane i testowane na platformie Azure i są gotowe d
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Migracja aplikacji mainframe](./application-strategies.md)
+> [Migracja aplikacji komputerów mainframe](./application-strategies.md)

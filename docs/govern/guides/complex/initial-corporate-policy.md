@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 327cbac3de0641b0fc4e8baf1c621dce7d5bc356
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 470c84385606f1f7c5c36ec8e72b348aa6d4d8a5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434426"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995411"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wstępne zasady firmowe związane z strategią ładu
 
@@ -43,7 +43,7 @@ Aktualna tolerancja ryzyka jest wysoka i akceptowalnego poziomu do inwestowania 
 
 ## <a name="next-steps"></a>Następne kroki
 
-Te zasady firmowe przygotowuje zespół nadzorujący chmurę do wdrożenia programu MVP (ładu), który będzie podstawą do przyjęcia. Następnym krokiem jest zaimplementowanie tego programu MVP.
+Te zasady firmowe przygotowuje zespół nadzorujący chmurę do wdrożenia programu ładu MVP jako podstawy do przyjęcia. Następnym krokiem jest zaimplementowanie tego programu MVP.
 
 > [!div class="nextstepaction"]
 > [Objaśniono najlepsze rozwiązania](./prescriptive-guidance.md)

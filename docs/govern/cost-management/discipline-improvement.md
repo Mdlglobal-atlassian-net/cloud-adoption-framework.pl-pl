@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 47d6cd60e67b6f17a3a9a3abef6788847854f2f1
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 02d76581a49f58358d624ded4add1af180964f16
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434721"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120394"
 ---
 # <a name="cost-management-discipline-improvement"></a>Ulepszanie dyscypliny Cost Management
 
 Dyscyplina Cost Management próbuje rozwiązać podstawowe ryzyko biznesowe związane z kosztami związanymi z obsługą obciążeń opartych na chmurze. W pięciu dyscyplinach zarządzania chmurą Cost Management są związane z kontrolowaniem kosztów i użycia zasobów w chmurze w celu utworzenia i utrzymania planowanego cyklu kosztu.
 
-W tym artykule przedstawiono potencjalne zadania wykonywane przez firmę w celu opracowania i zamontowania dyscypliny Cost Management. Te zadania mogą być podzielone na planowanie, kompilowanie, przyjmowanie i eksploatację etapów wdrażania rozwiązania w chmurze, które są następnie powtarzane na umożliwieniu rozwoju [przyrostowego podejścia do zarządzania chmurą](../guides/index.md#an-incremental-approach-to-cloud-governance).
+W tym artykule przedstawiono potencjalne zadania wykonywane przez firmę w celu opracowania i zamontowania dyscypliny Cost Management. Te zadania mogą być podzielone na planowanie, kompilowanie, przyjmowanie i eksploatację faz wdrażania rozwiązania w chmurze. Zadania są następnie wykonywane w sposób umożliwiający opracowywanie [stopniowego podejścia do zarządzania chmurą](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Cztery etapy wdrażania](../../_images/govern/adoption-phases.png)
 
@@ -99,7 +99,7 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 
 - Wykonaj kwartalne przeglądy biznesowe w chmurze, aby komunikować wartości dostarczane z firmą i powiązanymi kosztami.
 - Dostosuj plany kwartalnie, aby odzwierciedlić zmiany w rzeczywistych wydatkach.
-- Określ wyrównanie finansowe do & LS dla subskrypcji jednostek biznesowej.
+- Określ wyrównanie finansowe do&LS dla subskrypcji jednostek biznesowej.
 - Co miesiąc Analizuj wartości poszczególnych uczestników i metody raportowania kosztów.
 - Skoryguj nieużywane zasoby i ustal, czy są one kontynuowane.
 - Wykrywaj niewłaściwe wyrównania i anomalie między planem a rzeczywistymi wydatkami.
@@ -107,7 +107,7 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy rozumiesz koncepcję zarządzania tożsamościami w chmurze, przejrzyj [Cost Management łańcucha narzędzi](./toolchain.md) , aby zidentyfikować narzędzia i funkcje platformy Azure, które będą potrzebne podczas opracowywania dyscypliny ładu Cost Management na platformie Azure.
+Teraz, po zrozumieniu koncepcji ładu kosztów w chmurze, zapoznaj się z [najlepszymi rozwiązaniami dotyczącymi zarządzania kosztami](./best-practices.md) , aby znaleźć sposoby zredukowania ogólnych wydatków.
 
 > [!div class="nextstepaction"]
-> [Cost Management łańcucha narzędzi dla platformy Azure](./toolchain.md)
+> [Najlepsze rozwiązania związane z zarządzaniem kosztami](./best-practices.md)

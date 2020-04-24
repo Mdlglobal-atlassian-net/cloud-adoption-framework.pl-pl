@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ef06eca77f253bab2d743c7df44286f51f531606
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 4c86c6c079cb19497b7c0f19e8b8fa9166226780
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430322"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997150"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Zobowiązania biznesowe w zarządzaniu chmurą
 
@@ -57,7 +57,7 @@ Linia bazowa zarządzania operacjami służy jako początkowy punkt początkowy 
 
 W tradycyjnych środowiskach lokalnych koszt zarządzania środowiskiem jest zwykle traktowany jako Sunk koszt, który jest własnością operacji IT. W chmurze zarządzanie jest decyzją nigdy wykonywane celowo z bezpośrednim wpływem na budżet. Koszty każdej funkcji zarządzania mogą być bardziej bezpośrednio przypisane do każdego obciążenia, które jest wdrażane w chmurze. Takie podejście pozwala na większą kontrolę, ale tworzy wymaganie zespołów operacyjnych w chmurze i zespołów strategii chmurowej, aby najpierw zatwierdzić umowę dotyczącą odpowiedzialności.
 
-Organizacje mogą również zdecydować się na [przetworzyć niektóre z ich bieżących funkcji zarządzania dla dostawcy usług](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Dostawcy usług mogą korzystać z [usługi Azure Lighthouse](https://azure.com/lighthouse) , aby zapewnić organizacjom dokładniejszą kontrolę nad udzieleniem dostępu do zasobów, a także większy wgląd w działania wykonywane przez dostawców usług.
+Organizacje mogą również zdecydować się na [przetworzyć niektóre z ich bieżących funkcji zarządzania dla dostawcy usług](https://aka.ms/adopt/partneroffers). Dostawcy usług mogą korzystać z [usługi Azure Lighthouse](https://azure.microsoft.com/services/azure-lighthouse) , aby zapewnić organizacjom dokładniejszą kontrolę nad udzieleniem dostępu do zasobów, a także większy wgląd w działania wykonywane przez dostawców usług.
 
 - **Delegowana odpowiedzialność:** Ze względu na to, że nie ma potrzeby scentralizowania i przyjmowania kosztów zarządzania operacyjnego, operacje działu IT w wielu organizacjach rozważają nowe podejścia. Jedną z typowych metod nazywa się _delegowanie odpowiedzialności_. W centrum usług w chmurze z modelem doskonałości operacje platformy i Automatyzacja platformy zapewniają samoobsługowe narzędzia do zarządzania, które mogą być używane przez zespoły operacyjne prowadzone przez firmę, niezależnie od centralnych zespołów operacyjnych IT. Takie podejście daje zainteresowanym podmiotom gospodarczym pełną kontrolę nad budżetami związanymi z zarządzaniem. Umożliwia także zespołowi usługi Cloud Center doskonałości (CCoE), aby upewnić się, że minimalny zestaw guardrails został poprawnie zaimplementowany. W tym modelu działa jako Broker i przewodnik ułatwiający podejmowanie decyzji w firmie. Operacje biznesowe nadzorują codzienne operacje zależnych obciążeń.
 
@@ -116,7 +116,7 @@ Poniższe obliczenia przeprowadzą przez formuły, aby lepiej zrozumieć różni
 
 Złożona umowa SLA jest umową dotyczącą poziomu usług opartą na wdrażaniu poszczególnych zasobów w obciążeniu. To pole określa _szacowane przestoje_ (oznaczone etykietą _Est. przestój_ w skoroszycie). Aby obliczyć szacowane przestoje w godzinach na rok bez użycia skoroszytu, zastosuj następującą formułę:
 
-> _Szacowany czas przestoju = (1-złożona wartość &#215; procentowa SLA) liczba godzin w roku_
+> _Szacowany czas przestoju = (1-złożona wartość procentowa SLA) &#215; liczbę godzin w roku_
 
 Skoroszyt używa domyślnej wartości _8 760 godzin rocznie_.
 
@@ -124,7 +124,7 @@ Skoroszyt używa domyślnej wartości _8 760 godzin rocznie_.
 
 _Standardowy wpływ na utratę_ (oznaczony jako _Standardowy wpływ_ w skoroszycie) prognozuje wpływ na sytuację finansową, przy założeniu, że szacowane prognozowanie _przestojów_ jest dokładne. Aby obliczyć tę prognozę bez użycia skoroszytu, zastosuj następującą formułę:
 
-> _Wpływ standardowy = Szacowana awaria @ trzy 9 czasu &#215; przestoju — wpływ na wartość_
+> _Wpływ standardowy = Szacowana awaria @ trzy 9 pracy, &#215; wpływ na wartość czasu_
 
 Stanowi to podstawę dla kosztu, gdyby zainteresowane strony biznesowe wypełniły inwestycję w wyższy poziom zarządzania.
 
@@ -132,7 +132,7 @@ Stanowi to podstawę dla kosztu, gdyby zainteresowane strony biznesowe wypełni�
 
 _Złożony wpływ umowy SLA_ ( _wpływ na poziom zobowiązania_ w skoroszycie) zapewnia zaktualizowany wpływ na kwestie finansowe na podstawie zmian w umowie SLA dotyczącej czasu pracy. To obliczenie pozwala porównać przewidywany wpływ na finanse obu opcji. Aby obliczyć ten wpływ na prognozę bez arkusza kalkulacyjnego, zastosuj następującą formułę:
 
-> _Złożony wpływ umowy SLA = szacowany &#215; czas przestoju — wpływ na wartość_
+> _Złożony wpływ umowy SLA = szacowany czas przestoju &#215; wpływ wartości czasu_
 
 Wartość reprezentuje potencjalne straty, które mają być nieuniknione przez zmieniony poziom zobowiązania i nową umowną umowę SLA.
 
@@ -142,9 +142,9 @@ _Porównanie_ oblicza wpływ na standardowy i złożony wpływ umowy SLA, aby ok
 
 ### <a name="return-on-loss-avoidance"></a>Zwróć przy unikaniu utraty strat
 
-Jeśli koszt zarządzania obciążeniem przekracza potencjalne straty, proponowane inwestycje w zarządzanie chmurą mogą nie być rozwijającemu. Aby porównać _zwrot dotyczący unikania utraty strat_, zobacz kolumnę z etykietą roczne zwrotne _*_ * * *. Aby samodzielnie obliczyć tę kolumnę, użyj następującej formuły:
+Jeśli koszt zarządzania obciążeniem przekracza potencjalne straty, proponowane inwestycje w zarządzanie chmurą mogą nie być rozwijającemu. Aby porównać _zwrot dotyczący unikania utraty strat_, zobacz kolumnę z etykietą roczne zwrotne _*_* * *. Aby samodzielnie obliczyć tę kolumnę, użyj następującej formuły:
 
-> _Zwróć na uniknięcie utraty = (podstawa porównania — koszt &#215; miesięczny 12) &#247; ) (koszt &#215; miesięczny 12))_
+> _Zwróć na uniknięcie utraty = (podstawa porównania — miesięczny koszt &#215; 12)) &#247; (koszt miesięczny &#215; 12))_
 
 O ile nie istnieją inne nietrwałe czynniki, które należy wziąć pod uwagę, to porównanie może szybko zasugerować, że powinna być zagłębić się w operacji w chmurze, odporności, niezawodności lub w innych obszarach.
 

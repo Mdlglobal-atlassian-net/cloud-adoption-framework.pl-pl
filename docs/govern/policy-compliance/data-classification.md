@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 380229fd898fa36e425f4c4792de221139b64cec
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: ffa318f44a6fe3a856598581ca7cc2de37fbd6f5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430829"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997364"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ Poniżej znajduje się lista klasyfikacji używanych przez firmę Microsoft. W z
 
 Tagi zasobów są dobrym rozwiązaniem dla magazynu metadanych i można użyć tych tagów do zastosowania informacji o klasyfikacji danych do wdrożonych zasobów. Chociaż tagowanie zasobów w chmurze według klasyfikacji nie zastępuje formalnego procesu klasyfikacji danych, zapewnia cenne narzędzie do zarządzania zasobami i stosowania zasad. [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) to doskonałe rozwiązanie ułatwiające klasyfikowanie _danych_ , bez względu na to, gdzie się znajduje (lokalnie, na platformie Azure lub w innym miejscu). Rozważmy ją jako część ogólnej strategii klasyfikacji.
 
-Aby uzyskać dodatkowe informacje na temat tagowania zasobów na platformie Azure, zobacz [Używanie tagów do organizowania zasobów platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
+Aby uzyskać dodatkowe informacje na temat tagowania zasobów na platformie Azure, zobacz [Używanie tagów do organizowania zasobów platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
 ## <a name="next-steps"></a>Następne kroki
 

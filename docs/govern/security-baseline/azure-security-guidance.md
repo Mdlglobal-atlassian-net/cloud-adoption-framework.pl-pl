@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 6a726cd44238a67f050471735e2b96bbbd62c363
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433446"
 ---
 <!-- cSpell:ignore DPIAs DSRs -->
@@ -36,7 +36,7 @@ Te narzędzia zostały zaprojektowane w celu ułatwienia organizacjom zaspokajan
 - **Menedżer zgodności:** Menedżer zgodności, narzędzie do oceny ryzyka opartego na przepływie pracy na platformie zaufania usługi firmy Microsoft, umożliwia śledzenie, przypisywanie i weryfikowanie działań w zakresie zgodności z przepisami organizacji związanych z usługami Microsoft Cloud, takimi jak Office 365, Dynamics 365 i Azure. Więcej szczegółów można znaleźć w następnej sekcji.
 - **Dokumenty zaufania:** Obecnie istnieją trzy kategorie przewodników, które zapewniają dużo zasobów do oceny Microsoft Cloud; Dowiedz się więcej o działaniach firmy Microsoft w zakresie bezpieczeństwa, zgodności i prywatności; ułatwiają one ulepszanie funkcji ochrony danych. Należą do nich:
 - **Raporty inspekcji:** Raporty inspekcji umożliwiają bieżące korzystanie z najnowszych informacji dotyczących ochrony prywatności, bezpieczeństwa i zgodności dla usług Microsoft Cloud. Obejmuje to ISO, SOC, FedRAMP i inne raporty audytu, litery i materiały związane z niezależnymi inspekcjami innych firm w ramach usług Microsoft Cloud, takich jak Azure, Office 365, Dynamics 365 i innych.
-- **Przewodniki dotyczące ochrony danych:** Przewodniki dotyczące ochrony danych zawierają informacje dotyczące sposobu, w jaki usługi Microsoft Cloud Services chronią dane, oraz sposobu zarządzania zabezpieczeniami i zgodnością danych w chmurze w organizacji. Obejmuje to głębokie, szczegółowe oficjalne dokumenty, które zawierają szczegółowe informacje na temat sposobu, w jaki firma Microsoft projektuje i obsługuje usługi w chmurze, często zadawane pytania, raporty z końca roku oceny zabezpieczeń, możliwości testowania i wskazówki ułatwiające przeprowadzenie oceny ryzyka i poprawę danych możliwości ochrony.
+- **Przewodniki dotyczące ochrony danych:** Przewodniki dotyczące ochrony danych zawierają informacje dotyczące sposobu, w jaki usługi Microsoft Cloud Services chronią dane, oraz sposobu zarządzania zabezpieczeniami i zgodnością danych w chmurze w organizacji. Obejmuje to głębokie, szczegółowe oficjalne dokumenty, które zawierają szczegółowe informacje na temat sposobu, w jaki firma Microsoft projektuje i obsługuje usługi w chmurze, często zadawane pytania, raporty z końca roku oceny zabezpieczeń, możliwości testowania i wskazówki ułatwiające przeprowadzenie oceny ryzyka i poprawę funkcji ochrony danych.
 - **Plan zabezpieczeń i zgodności platformy Azure:** Plany zapewniają zasoby ułatwiające tworzenie i uruchamianie aplikacji opartych na chmurze, które ułatwiają przestrzeganie rygorystycznych przepisów i standardów. Dzięki większej liczbie certyfikatów niż każdy inny dostawca usług w chmurze możesz mieć pewność, że w systemie Azure są dostępne następujące plany:
   - Omówienie i wskazówki dotyczące branżowych.
   - Macierz obowiązków klienta.
@@ -59,7 +59,7 @@ Wraz ze wzrostem ilości i złożoności sygnałów zabezpieczeń, określenie, 
 
 Używając opcji Analiza zagrożeń dostępnej w usłudze Security Center, administratorzy IT mogą identyfikować zagrożenia dla bezpieczeństwa środowiska. Na przykład mogą zidentyfikować, czy określony komputer jest częścią botnetu. Komputery mogą stać się węzłami w botnecie, gdy osoby atakujące bezprawnie zainstalują złośliwe oprogramowanie, które potajemnie łączy komputer z centrum sterowania. Analiza zagrożeń może też identyfikować potencjalne zagrożenia pochodzące z tajnych kanałów komunikacji, takich jak podziemny Internet.
 
-Aby umożliwić używanie analizy zagrożeń, usługa Security Center korzysta z danych, które pochodzą z wielu źródeł firmy Microsoft. Security Center używa tego do identyfikowania potencjalnych zagrożeń związanych ze środowiskiem. Okienko analiza zagrożeń składa się z trzech głównych opcji:
+Aby umożliwić używanie analizy zagrożeń, usługa Security Center korzysta z danych, które pochodzą z wielu źródeł firmy Microsoft. Security Center używa tego do identyfikowania potencjalnych zagrożeń związanych ze środowiskiem. Okienko Analiza zagrożeń zawiera trzy główne opcje:
 
 - Typy wykrytych zagrożeń
 - Pochodzenie zagrożeń

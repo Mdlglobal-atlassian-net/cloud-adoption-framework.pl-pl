@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: 432e974a304741a64e0cd7da9577ecec5e35d57e
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434051"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Tworzenie wyrównania biznesowego w zarządzaniu chmurą
@@ -24,8 +24,8 @@ Pierwszym krokiem podczas tworzenia wyrównania firmy jest zapewnienie wyrównan
 
 Na szczęście proces opracowywania strategii wdrażania w chmurze i planu wdrażania chmury umożliwia idealne rozwiązanie do ponownego mapowania tych warunków. Proces ten umożliwia również tworzenie szans związanych z zarządzaniem działaniami w ramach współpracy z firmą. Poniższa seria artykułu przeprowadzi Cię przez nowe podejście w ramach trzech określonych terminów, które mogą pomóc w ulepszaniu konwersacji między udziałowcami biznesowymi:
 
-- Poziom  **[krytyczności](./criticality.md):** Mapowanie obciążeń na procesy biznesowe. Krytyczne znaczenie klasyfikacji do koncentracji inwestycji.
-- **[Wpływ](./impact.md):** Zrozumienie wpływu potencjalnej awarii, aby pomóc w ocenie powrotu do inwestycji związanych z zarządzaniem chmurą.
+- Poziom ** [krytyczności](./criticality.md):** Mapowanie obciążeń na procesy biznesowe. Krytyczne znaczenie klasyfikacji do koncentracji inwestycji.
+- ** [Wpływ](./impact.md):** Zrozumienie wpływu potencjalnej awarii, aby pomóc w ocenie powrotu do inwestycji związanych z zarządzaniem chmurą.
 - **[Zobowiązanie](./commitment.md):** opracowywanie prawdziwych partnerstwa przez tworzenie i dokumentowanie umów *z firmą*.
 
 > [!NOTE]

@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: 6049c11e1c80ab13ea5429582dae662ef1937983
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80430072"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Zastosuj zasady projektowania i zaawansowane operacje
 
 Pierwsze trzy dyscypliny zarządzania chmurą opisują plan bazowy zarządzania. Plan bazowy zarządzania powinien zawierać co najmniej standardowe zobowiązanie biznesowe, aby zminimalizować zakłócenia biznesowe i przyspieszyć odzyskiwanie w przypadku przerwania działania usługi. Większość linii bazowych zarządzania obejmuje skoncentrowany fokus na utrzymywaniu "spisu i widoczności", "zgodność operacyjna" oraz "Ochrona i odzyskiwanie".
 
-Celem punktu odniesienia zarządzania jest utworzenie spójnej oferty zapewniającej minimalny poziom zobowiązania biznesowego dla wszystkich obsługiwanych obciążeń. Ta linia bazowa wspólnych, powtarzalnych ofert zarządzania umożliwia zespołowi dostarczanie wysoce zoptymalizowanego stopnia zarządzania operacyjnego przy minimalnym odchyleniu. Jednak oferta standardowa może nie zapewnić rozbudowanego, wystarczającego zobowiązania dla firmy.
+Celem planu bazowego zarządzania jest utworzenie spójnej oferty zapewniającej minimalny poziom zobowiązania biznesowego dla wszystkich obsługiwanych obciążeń. Ta linia bazowa wspólnych, powtarzalnych ofert zarządzania umożliwia zespołowi dostarczanie wysoce zoptymalizowanego stopnia zarządzania operacyjnego przy minimalnym odchyleniu. Jednak oferta standardowa może nie zapewnić rozbudowanego, wystarczającego zobowiązania dla firmy.
 
 Diagram w następnej sekcji ilustruje trzy sposoby przechodzenia poza linię bazową zarządzania.
 

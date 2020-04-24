@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 49377f419a8b5315a9f4a544fca37579b6dfbcaa
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80427395"
 ---
 # <a name="measure-for-customer-impact"></a>Mierzenie wpływu na klientów
@@ -69,7 +69,7 @@ Te typy grup ułatwiają Weryfikowanie metryk uczenia w różnych sekcjach klien
 Jak są gromadzone metryki szkoleniowe, zespół może zacząć [uczyć się z klientami](./learn.md).
 
 > [!div class="nextstepaction"]
-> [Dowiedz się więcej o klientach](./learn.md)
+> [Uczenie się wraz z klientami](./learn.md)
 
 <!-- cSpell:ignore Ries -->
 

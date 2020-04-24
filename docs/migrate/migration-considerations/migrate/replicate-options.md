@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 584ac5e962c9432e6a1824b3cbb88ff7cb24a35f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80432522"
 ---
 # <a name="replication-options"></a>Opcje replikacji
@@ -24,7 +24,7 @@ W zawartości przewodnika Cloud Adoption Framework przyjęto założenie, że us
 
 Usługa [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) organizuje odzyskiwanie po awarii i zarządza nim w przypadku maszyn wirtualnych platformy Azure, lokalnych maszyn wirtualnych i serwerów fizycznych. Za pomocą usługi Site Recovery można również zarządzać migracją maszyn lokalnych i innych dostawców usług w chmurze na platformę Azure. Replikować można maszyny lokalne na platformę Azure lub maszyny wirtualne platformy Azure do regionu pomocniczego. Następnie można przełączyć maszynę wirtualną z lokacji głównej do pomocniczej i ukończyć proces migracji. Korzystając z usługi Azure Site Recovery, można zrealizować różne scenariusze migracji:
 
-- **Migracja ze środowiska lokalnego na platformę Azure.** Przeprowadzenie migracji lokalnych maszyn wirtualnych VMware, maszyn wirtualnych funkcji Hyper-V oraz serwerów fizycznych na platformę Azure. W tym celu należy wykonać niemal te same czynności co w przypadku pełnego odzyskiwania po awarii. Wystarczy po prostu nie przełączać maszyn z powrotem z platformy Azure do lokacji lokalnej.
+- **Migracja z lokalizacji lokalnej na platformę Azure.** Przeprowadzenie migracji lokalnych maszyn wirtualnych VMware, maszyn wirtualnych funkcji Hyper-V oraz serwerów fizycznych na platformę Azure. W tym celu należy wykonać niemal te same czynności co w przypadku pełnego odzyskiwania po awarii. Wystarczy po prostu nie przełączać maszyn z powrotem z platformy Azure do lokacji lokalnej.
 - **Migracja między regionami świadczenia usługi Azure.** Przeprowadzanie migracji maszyn wirtualnych platformy Azure między regionami świadczenia usługi Azure. Po zakończeniu migracji należy skonfigurować odzyskiwanie po awarii dla maszyn wirtualnych platformy Azure będących teraz w regionie pomocniczym, do którego przeprowadzono migrację.
 - **Migracja z innej chmury na platformę Azure.** Wystąpienia obliczeniowe aprowizowane przez innych dostawców usług w chmurze można migrować do maszyn wirtualnych platformy Azure. Na potrzeby migracji usługa Site Recovery traktuje te wystąpienia jako serwery fizyczne.
 

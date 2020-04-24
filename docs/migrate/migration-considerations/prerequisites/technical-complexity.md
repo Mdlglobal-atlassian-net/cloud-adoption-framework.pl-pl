@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 6489ab61caa17ecd1f79e7581a17ca92df01db57
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428957"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
@@ -79,7 +79,7 @@ Zespół strategiczny ds. chmury i zespół wdrożeniowy ds. chmury współpracu
 - **Szczegółowy spis.** Walidacja wymaganych zasobów do migracji. Często walidacja jest przeprowadzana za pomocą danych z dzienników lub monitorowania na poziomie hosta, sieci lub systemu operacyjnego w celu zapewnienia dokładnych informacji na temat zależności sieciowych i sprzętowych poszczególnych zasobów w ramach obciążenia standardowego.
 - **Wzorce użycia.** Informacje dotyczące wzorców użycia od użytkowników końcowych. Wzorce te często obejmują analizę rozkładu geograficznego użytkowników końcowych, trasy sieciowe, sezonowe wzrosty użycia, dzienne/godzinowe wzrosty użycia oraz kompozycję użytkownika końcowego (wewnętrzną i zewnętrzną).
 - **Oczekiwania dotyczące wydajności.** Analiza dostępnych danych dziennika przechwytywania przepływności, wyświetleń stron, tras sieciowych i innych danych wydajności wymaganych do replikowania środowiska użytkownika końcowego.
-- **Zależności.** Analiza wzorców ruchu sieciowego i użycia aplikacji w celu zidentyfikowania wszelkich dodatkowych zależności obciążeń, które powinny być zorientowane na sekwencjonowanie i gotowość na środowisko. Nie dołączaj obciążenia do wydania, dopóki nie zostanie spełnione jedno z następujących kryteriów:
+- **Tamten.** Analiza wzorców ruchu sieciowego i użycia aplikacji w celu zidentyfikowania wszelkich dodatkowych zależności obciążeń, które powinny być zorientowane na sekwencjonowanie i gotowość na środowisko. Nie dołączaj obciążenia do wydania, dopóki nie zostanie spełnione jedno z następujących kryteriów:
   - Wszystkie obciążenia zależne zostały zmigrowane.
   - Wdrożono konfiguracje sieci i zabezpieczeń, aby umożliwić obciążeniu dostęp do wszystkich zależności zgodnie z istniejącymi oczekiwaniami dotyczącymi wydajności.
 - **Pożądane rozwiązanie migracji.** Na poziomie listy prac migracji przyjęty nakład pracy związany z migracją stanowi jedyne kryterium używane podczas analizy. Na przykład, jeśli wynikiem biznesowym jest wyjście z istniejącego centrum danych, przyjmuje się, że wszystkie migracje stanowią scenariusz ponownego hostowania na liście prac migracji. Na liście prac wydania zespół strategiczny ds. chmury i zespół wdrożeniowy ds. chmury powinny oszacować długoterminową wartość dodatkowych funkcji, modernizacji i stałych inwestycji rozwojowych w celu ocenienia, czy należy zastosować bardziej nowoczesne rozwiązanie.
@@ -111,10 +111,10 @@ W przypadku małej migracji z udziałem samodzielnego zespołu ds. migracji jede
 Wynik przebiegu przechwytuje i dokumentuje zmiany wprowadzone w obciążeniu, a tym samym zamyka pętlę zarządzania zmianami. Po zakończeniu należy udokumentować co najmniej następujące kwestie. W trakcie wykonywania przebiegu dokumentację tę należy sporządzić razem z technicznymi elementami roboczymi.
 
 - **Wdrożone zasoby.** Wszystkie zasoby wdrożone w chmurze na potrzeby obsługi obciążenia.
-- **Korygowanie.** Wszelkie zmiany zasobów w celu przygotowania do migracji do chmury.
-- **Konfiguracja.** Wybrana konfiguracja wszystkich wdrożonych zasobów, w tym wszelkich odwołań do skryptów konfiguracji.
+- **Korygowania.** Wszelkie zmiany zasobów w celu przygotowania do migracji do chmury.
+- **Skonfigurować.** Wybrana konfiguracja wszystkich wdrożonych zasobów, w tym wszelkich odwołań do skryptów konfiguracji.
 - **Model wdrażania.** Rozwiązanie używane podczas wdrażania zasobu w chmurze, w tym odwołań do skryptów lub narzędzi wdrażania.
-- **Architektura.** Dokumentacja architektury wdrożonej w chmurze.
+- **Będąc.** Dokumentacja architektury wdrożonej w chmurze.
 - **Metryki wydajności.** Dane wyjściowe testowania automatycznego lub testowania biznesowego wykonywanego w celu sprawdzenia wydajności w czasie wdrażania.
 - **Unikatowe wymagania lub konfiguracja.** Wszelkie unikatowe aspekty wymagań w zakresie wdrażania, konfiguracji lub wymagań technicznych niezbędnych do obsługi obciążenia.
 - **Zatwierdzenie operacyjne.** Zakończenie walidacji gotowości operacyjnej przez właściciela aplikacji oraz pracowników działu informatycznego odpowiedzialnych za zarządzanie obciążeniem po jego wdrożeniu.
@@ -125,4 +125,4 @@ Wynik przebiegu przechwytuje i dokumentuje zmiany wprowadzone w obciążeniu, a 
 Po określeniu rozwiązań w zakresie zarządzania zmianami nadszedł czas, by przedstawić ostatnie wymaganie wstępne. Zobacz temat [Migration backlog review](./migration-backlog-review.md) (Przegląd listy prac migracji).
 
 > [!div class="nextstepaction"]
-> [Migration backlog review](./migration-backlog-review.md) (Przegląd listy prac migracji)
+> [Przegląd zaległości migracji](./migration-backlog-review.md)

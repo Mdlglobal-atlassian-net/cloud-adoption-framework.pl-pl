@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 8afb39bdad3b521d3470e2e5eaca3f64a81061c0
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433411"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>Tworzenie partnerstwa dla klientów za pomocą pętli Build-Measure-Dowiedz się
@@ -30,9 +30,9 @@ Zgodnie z opisem w [innowacji w gospodarce cyfrowej](./index.md), innowacje wyma
 
 Ten proces zarządzania partnerstwem klientów i integrowania ich z wysiłkami innowacyjnymi obejmuje trzy fazy rozwoju:
 
-- [Kompiluj z empatię klienta](./build.md)
-- [Miary wpływu klientów](./measure.md)
-- [Dowiedz się więcej o klientach](./learn.md)
+- [Tworzenie z empatią wobec klientów](./build.md)
+- [Mierzenie wpływu na klientów](./measure.md)
+- [Uczenie się wraz z klientami](./learn.md)
 
 Każda faza procesu ułatwia tworzenie lepszych rozwiązań dla klientów.
 
@@ -41,4 +41,4 @@ Każda faza procesu ułatwia tworzenie lepszych rozwiązań dla klientów.
 Dowiedz się, jak [skompilować za pomocą empatię klienta](./build.md) , aby rozpocząć pracę z cyklem tworzenia i uczenia się.
 
 > [!div class="nextstepaction"]
-> [Kompiluj z empatię klienta](./build.md)
+> [Tworzenie z empatią wobec klientów](./build.md)

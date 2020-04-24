@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 47aeccac0f98d21d2740a27ded12696372efaaa0
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: 1fb85abb334f5af52b3b6a2dda375897a9b5b4ee
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527527"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997250"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Instrukcje dotyczące przykładowych zasad linii bazowej zabezpieczeń
 
@@ -31,7 +31,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Wszystkie wdrożone zasoby muszą być pogrupowane według stopnia ważności i klasyfikacji danych. Klasyfikacje muszą zostać sprawdzone przez zespół ds. zarządzania chmurą i właściciela aplikacji przed wdrożeniem w chmurze.
 
-**Potencjalna opcja projektowania:** Ustanów [standardy tagowania zasobów](../../decision-guides/resource-tagging/index.md) i upewnij się, że personel IT stosuje je spójnie ze wszystkimi wdrożonymi zasobami przy użyciu [tagów zasobów platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
+**Potencjalna opcja projektowania:** Ustanów [standardy tagowania zasobów](../../decision-guides/resource-tagging/index.md) i upewnij się, że personel IT stosuje je spójnie ze wszystkimi wdrożonymi zasobami przy użyciu [tagów zasobów platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
 ## <a name="data-encryption"></a>Szyfrowanie danych
 
@@ -39,7 +39,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Wszystkie chronione dane muszą być szyfrowane, gdy są przechowywane.
 
-**Potencjalna opcja projektowania:** Zapoznaj się z artykułem [Omówienie usługi Azure Encryption](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) , aby poznać sposób wykonywania danych przechowywanych na platformie Azure. Należy również uwzględnić dodatkowe kontrolki, takie jak szyfrowanie danych konta i kontrola nad sposobem, w jaki można zmienić ustawienia konta magazynu.
+**Potencjalna opcja projektowania:** Zapoznaj się z artykułem [Omówienie usługi Azure Encryption](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview) , aby poznać sposób wykonywania danych przechowywanych na platformie Azure. Należy również uwzględnić dodatkowe kontrolki, takie jak szyfrowanie danych konta i kontrola nad sposobem, w jaki można zmienić ustawienia konta magazynu.
 
 ## <a name="network-isolation"></a>Izolacja sieciowa
 

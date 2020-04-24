@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
 ms.openlocfilehash: 738524f01e61b4f8c98f6ac73ca439c54d20c3dc
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80431644"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>Tworzenie modelu finansowego transformacji do chmury
@@ -29,7 +29,7 @@ W następnych sekcjach przeprowadzimy Cię przez dane, które będą potrzebne d
 
 ## <a name="calculate-initial-investment"></a>Obliczanie inwestycji początkowej
 
-Inwestycja początkowa to koszty kapitałowe i koszty operacyjne wymagane do ukończenia transformacji. Klasyfikacja kosztów może się różnić w zależności od modeli ewidencjonowania aktywności i preferencji DYREKTORów. Jednak ta kategoria obejmuje elementy, takie jak profesjonalne usługi, do przekształcania, licencje na oprogramowanie używane tylko w trakcie transformacji, koszt usług Cloud Services w trakcie przekształceń i potencjalnie koszt pracowników płatnych podczas transformacji .
+Inwestycja początkowa to koszty kapitałowe i koszty operacyjne wymagane do ukończenia transformacji. Klasyfikacja kosztów może się różnić w zależności od modeli ewidencjonowania aktywności i preferencji DYREKTORów. Jednak ta kategoria obejmuje elementy, takie jak profesjonalne usługi, do przekształcania, licencje na oprogramowanie używane tylko podczas transformacji, koszt usług Cloud Services w trakcie przekształceń i potencjalnie koszt pracowników płatnych w trakcie transformacji.
 
 Dodaj te koszty, aby utworzyć oszacowanie początkowej inwestycji.
 

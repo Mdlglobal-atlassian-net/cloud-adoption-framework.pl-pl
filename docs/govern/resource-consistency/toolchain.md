@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5bfe095bdd7d269be71ee2d112a3d3d1a4bb5dd4
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2f4d06c06ffcb89d30205b90ba37f70f76d50b1f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434943"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997306"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Narzędzia spójności zasobów na platformie Azure
 
@@ -21,37 +21,37 @@ ms.locfileid: "80434943"
 
 Poniżej znajduje się lista narzędzi platformy Azure, które mogą pomóc w zakończeniu zasad i procesów, które obsługują tę dyscyplinę ładu.
 
-| Narzędzie | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+| Narzędzie | [Azure Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
-| Wdrażanie zasobów                             | Tak | Tak | Tak | Tak | Nie  | Nie | Nie |
-| Zarządzanie zasobami                             | Tak | Tak | Tak | Tak | Nie  | Nie | Nie |
-| Wdrażanie zasobów przy użyciu szablonów             | Nie  | Tak | Nie  | Tak | Nie  | Nie | Nie |
-| Wdrożenie środowiska aranżacjowego          | Nie  | Nie  | Tak | Nie  | Nie  | Nie | Nie |
-| Definiowanie grup zasobów                       | Tak | Tak | Tak | Nie  | Nie  | Nie | Nie |
-| Zarządzanie obciążeniami i właścicielami kont           | Tak | Tak | Tak | Nie  | Nie  | Nie | Nie |
-| Zarządzanie dostępem warunkowym do zasobów       | Tak | Tak | Tak | Nie  | Nie  | Nie | Nie |
-| Konfigurowanie użytkowników RBAC                         | Tak | Nie  | Nie  | Nie  | Tak | Nie | Nie |
-| Przypisywanie ról i uprawnień do zasobów | Tak | Tak | Tak | Nie  | Tak | Nie | Nie |
-| Definiowanie zależności między zasobami        | Nie  | Tak | Tak | Nie  | Nie  | Nie | Nie |
-| Zastosuj kontrolę dostępu                         | Tak | Tak | Tak | Nie  | Tak | Nie | Nie |
-| Ocenianie dostępności i skalowalności          | Nie  | Nie  | Nie  | Tak | Nie  | Nie | Nie |
-| Stosowanie tagów do zasobów                      | Tak | Tak | Tak | Nie  | Nie  | Nie | Nie |
-| Przypisywanie reguł Azure Policy                    | Tak | Tak | Tak | Nie  | Nie  | Nie | Nie |
-| Zastosuj automatyczne korygowanie                  | Nie  | Nie  | Nie  | Tak | Nie  | Nie | Nie |
-| Zarządzanie rozliczeniami                               | Tak | Nie  | Nie  | Nie  | Nie  | Nie | Nie |
-| Planowanie zasobów na potrzeby odzyskiwania po awarii         | Tak | Tak | Tak | Nie  | Nie  | Tak | Tak |
-|Odzyskiwanie danych podczas awarii lub naruszenia umowy SLA     | Nie | Nie  | Nie  | Nie  | Nie  | Tak | Tak |
-|Odzyskiwanie aplikacji i danych podczas awarii lub naruszenia umowy SLA     | Nie | Nie  | Nie  | Nie  | Nie  | Tak | Tak |
+| Wdrażanie zasobów                             | Yes | Yes | Yes | Yes | Nie  | Nie | Nie |
+| Zarządzanie zasobami                             | Yes | Yes | Yes | Yes | Nie  | Nie | Nie |
+| Wdrażanie zasobów przy użyciu szablonów             | Nie  | Yes | Nie  | Yes | Nie  | Nie | Nie |
+| Wdrożenie środowiska aranżacjowego          | Nie  | Nie  | Yes | Nie  | Nie  | Nie | Nie |
+| Definiowanie grup zasobów                       | Yes | Yes | Yes | Nie  | Nie  | Nie | Nie |
+| Zarządzanie obciążeniami i właścicielami kont           | Yes | Yes | Yes | Nie  | Nie  | Nie | Nie |
+| Zarządzanie dostępem warunkowym do zasobów       | Yes | Yes | Yes | Nie  | Nie  | Nie | Nie |
+| Konfigurowanie użytkowników RBAC                         | Yes | Nie  | Nie  | Nie  | Yes | Nie | Nie |
+| Przypisywanie ról i uprawnień do zasobów | Yes | Yes | Yes | Nie  | Yes | Nie | Nie |
+| Definiowanie zależności między zasobami        | Nie  | Yes | Yes | Nie  | Nie  | Nie | Nie |
+| Zastosuj kontrolę dostępu                         | Yes | Yes | Yes | Nie  | Yes | Nie | Nie |
+| Ocenianie dostępności i skalowalności          | Nie  | Nie  | Nie  | Yes | Nie  | Nie | Nie |
+| Stosowanie tagów do zasobów                      | Yes | Yes | Yes | Nie  | Nie  | Nie | Nie |
+| Przypisywanie reguł Azure Policy                    | Yes | Yes | Yes | Nie  | Nie  | Nie | Nie |
+| Zastosuj automatyczne korygowanie                  | Nie  | Nie  | Nie  | Yes | Nie  | Nie | Nie |
+| Zarządzanie rozliczeniami                               | Yes | Nie  | Nie  | Nie  | Nie  | Nie | Nie |
+| Planowanie zasobów na potrzeby odzyskiwania po awarii         | Yes | Yes | Yes | Nie  | Nie  | Yes | Yes |
+|Odzyskiwanie danych podczas awarii lub naruszenia umowy SLA     | Nie | Nie  | Nie  | Nie  | Nie  | Yes | Yes |
+|Odzyskiwanie aplikacji i danych podczas awarii lub naruszenia umowy SLA     | Nie | Nie  | Nie  | Nie  | Nie  | Yes | Yes |
 
 Wraz z tymi narzędziami i funkcjami spójności zasobów konieczne będzie monitorowanie wdrożonych zasobów pod kątem problemów z wydajnością i kondycją. [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) to domyślne rozwiązanie do monitorowania i raportowania na platformie Azure. Azure Monitor udostępnia funkcje monitorowania zasobów w chmurze. Ta lista pokazuje, która funkcja rozwiązuje typowe wymagania dotyczące monitorowania.
 
 | Narzędzie | [Azure Portal](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [Interfejs API REST Azure Monitor](https://docs.microsoft.com/rest/api/monitor) |
 |----------------------------------------------------|--------------|----------------------|---------------|------------------------|
-| Rejestruj dane telemetryczne maszyny wirtualnej                 | Nie           | Nie                   | Tak           | Nie                     |
-| Rejestruj dane telemetryczne sieci wirtualnych              | Nie           | Nie                   | Tak           | Nie                     |
-| Dane telemetryczne usług log PaaS Services                   | Nie           | Nie                   | Tak           | Nie                     |
-| Rejestruj dane telemetryczne aplikacji                     | Nie           | Tak                  | Nie            | Nie                     |
-| Konfigurowanie raportów i alertów                       | Tak          | Nie                   | Nie            | Tak                    |
+| Rejestruj dane telemetryczne maszyny wirtualnej                 | Nie           | Nie                   | Yes           | Nie                     |
+| Rejestruj dane telemetryczne sieci wirtualnych              | Nie           | Nie                   | Yes           | Nie                     |
+| Dane telemetryczne usług log PaaS Services                   | Nie           | Nie                   | Yes           | Nie                     |
+| Rejestruj dane telemetryczne aplikacji                     | Nie           | Yes                  | Nie            | Nie                     |
+| Konfigurowanie raportów i alertów                       | Yes          | Nie                   | Nie            | Tak                    |
 | Planowanie regularnych raportów lub analizy niestandardowej        | Nie           | Nie                   | Nie            | Nie                     |
 | Wizualizowanie i analizowanie danych dzienników i wydajności     | Tak          | Nie                   | Nie            | Nie                     |
 | Integracja z rozwiązaniem do monitorowania lokalnego lub innej firmy     | Nie           | Nie                   | Nie            | Tak                    |

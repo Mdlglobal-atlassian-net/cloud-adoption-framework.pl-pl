@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 30864e20f720e034e7f8568e6d18ceef94632a08
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: ed8d8511cbdac9996ff61688b4e6d783877e9d9c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431995"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997518"
 ---
 # <a name="azure-fundamental-concepts"></a>Podstawowe pojęcia dotyczące platformy Azure
 
@@ -60,7 +60,7 @@ Na platformie Azure definiowane są trzy typy ról do administrowania subskrypcj
 - Role kontroli dostępu opartej na rolach (RBAC) platformy Azure
 - Role administratora usługi Azure Active Directory (Azure AD)
 
-Rola administratora konta dla subskrypcji platformy Azure jest przypisywana do konta e-mail użytego do tworzenia subskrypcji platformy Azure. Administrator konta jest właścicielem rozliczenia subskrypcji. Administrator konta może zarządzać szczegółami subskrypcji w [Centrum konta platformy Azure](https://account.azure.com/Subscriptions).
+Rola administratora konta dla subskrypcji platformy Azure jest przypisywana do konta e-mail użytego do tworzenia subskrypcji platformy Azure. Administrator konta jest właścicielem rozliczenia subskrypcji. Administrator konta może zarządzać szczegółami subskrypcji w [Centrum konta platformy Azure](https://account.azure.com/subscriptions).
 
 Domyślnie rola administratora konta dla subskrypcji platformy Azure jest również przypisywana do konta e-mail użytego do tworzenia subskrypcji platformy Azure. Jeśli jest używana kontrola dostępu oparta na rolach, administrator usługi ma uprawnienia do subskrypcji odpowiadające roli właściciela. Administrator usługi ma również pełny dostęp do witryny Azure Portal. Administrator konta może zmienić administratora usługi na inne konto e-mail.
 
@@ -84,8 +84,8 @@ Subskrypcja nie jest powiązana z określonym regionem platformy Azure. Jednak k
 Poniższe zasoby zawierają szczegółowe informacje na temat pojęć omówionych w tym artykule:
 
 - [Jak działa platforma Azure?](../../getting-started/what-is-azure.md)
-- [Resource access management in Azure](../../govern/resource-consistency/resource-access-management.md) (Zarządzanie dostępem do zasobów na platformie Azure)
-- [Omówienie usługi Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Zarządzanie dostępem do zasobów na platformie Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Przegląd Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
 - [Kontrola dostępu oparta na rolach (RBAC) dla zasobów platformy Azure](https://docs.microsoft.com/azure/role-based-access-control/overview)
 - [Co to jest usługa Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 - [Kojarzenie subskrypcji platformy Azure z dzierżawą usługi Azure Active Directory lub dodawanie subskrypcji](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)

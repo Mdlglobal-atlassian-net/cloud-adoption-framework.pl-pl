@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c29eedc234d3795ce0bad76b324e7049dfe15633
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: f0073d600f0f08b2e1f4a4fa881bfe5e6b99954c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433335"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120555"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -39,7 +39,7 @@ Głównym celem [metodologii innowacji](./index.md) jest skompilowanie partnerst
 - [Wdrażanie rozwiązań](#solution-deployment): Wdrażaj rozwiązania, aby zespół mógł szybko udostępniać zmiany klientom.
 - [Zintegrowane pomiary](#integrated-measurements): Dodaj metryki uczenia do pętli opinii, aby wyczyścić analizę przez cały zespół.
 
-Aby zminimalizować liczbę techniczną, założono, że data_spłaty będą początkowo niskie dla każdej z tych zasad. Ale bez ograniczeń planuje się, dopasowując do narzędzi i procesów, które mogą być skalowane w miarę jak długo są bardziej szczegółowe. Na platformie Azure usługa [GitHub](https://guides.github.com) i [usługa Azure DevOps](https://docs.microsoft.com/azure/devops) umożliwiają małym zespołom rozpoczęcie pracy z niewielkim tarciem. Zespoły te mogą wzrosnąć, aby obejmowały tysiące deweloperów, którzy współpracują nad rozwiązaniami skalowania i testują setki postanowień klientów. W pozostałej części tego artykułu przedstawiono krótkie i rozłożone małe podejście do podejmowania wdrożenia w ramach każdej z tych zasad.
+Aby zminimalizować liczbę techniczną, założono, że data_spłaty będą początkowo niskie dla każdej z tych zasad. Ale bez ograniczeń planuje się, dopasowując do narzędzi i procesów, które mogą być skalowane w miarę jak długo są bardziej szczegółowe. Na platformie Azure usługa [GitHub](https://guides.github.com) i [usługa Azure DevOps](https://docs.microsoft.com/azure/devops) umożliwiają małym zespołom rozpoczęcie pracy z niewielkim tarciem. Zespoły te mogą wzrosnąć, aby obejmowały tysiące deweloperów, którzy współpracują nad rozwiązaniami skalowania i testują setki postanowień klientów. W pozostałej części tego artykułu przedstawiono podejście "planowanie dużych, Rozpoczynanie małych" w celu podejmowania przyjęcia dla każdej z tych zasad.
 
 ## <a name="shared-solution"></a>Rozwiązanie udostępnione
 

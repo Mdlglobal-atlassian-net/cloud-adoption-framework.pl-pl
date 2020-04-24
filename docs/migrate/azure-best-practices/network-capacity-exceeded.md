@@ -1,18 +1,18 @@
 ---
 title: Przekroczono pojemność sieci
-description: Wymagania dotyczące danych przekraczają pojemność sieci podczas pracy migracji.
+description: Wymagania dotyczące danych przekraczają pojemność sieci podczas prac nad migracją.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2d836e6d5397a5b2ff36ab57ee23712cfe40561a
-ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
+ms.openlocfilehash: 4d32a1b521240806b78435141b9876967b4093d8
+ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80636450"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81646846"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "80636450"
 
 Podczas migracji do chmury zasoby są replikowane i synchronizowane przez sieć między istniejącym centrum danych a chmurą. Niektóre wymagania dotyczące wielkości danych różnych obciążeń nie są nietypowe w przypadku przekroczenia pojemności sieci. W takim scenariuszu proces migracji może być częściowo spowolniony lub w niektórych przypadkach całkowicie zatrzymany. Poniższe wskazówki rozszerzają zakres [przewodnika migracji platformy Azure](../azure-migration-guide/index.md) i udostępniają rozwiązanie, które będzie skuteczne w odniesieniu do ograniczeń sieci.
 
-## <a name="general-scope-expansion"></a>Rozszerzenie zakresu ogólnego
+## <a name="general-scope-expansion"></a>Ogólne rozszerzenie zakresu
 
 Większość nakładu pracy wymaganego do rozszerzenia tego zakresu będzie potrzebna w ramach procesów wymagań wstępnych, oceniania i realizacji migracji.
 
@@ -32,7 +32,7 @@ Większość nakładu pracy wymaganego do rozszerzenia tego zakresu będzie potr
 
 Takie podejście może służyć do transferowania danych z systemu plików HDFS, kopii zapasowych, archiwów i aplikacji. Istniejące wskazówki techniczne wyjaśniają, jak używać tego podejścia do transferu danych z [magazynu HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) lub z dysków przy użyciu protokołów [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs) i [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) lub [usługi kopiowania danych](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) do urządzenia Data Box.
 
-Istnieją również [rozwiązania partnerskie innych firm](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) wykorzystujące urządzenia Azure Data Box do migracji metodą „Seed and Feed”, w której duża ilość danych jest transferowana w trybie offline; dane te są później synchronizowane w mniejszej skali przez sieć.
+Istnieją również rozwiązania partnerskie innych firm wykorzystujące urządzenia Azure Data Box do migracji metodą „Seed and Feed”, w której duża ilość danych jest transferowana w trybie offline; dane te są później synchronizowane w mniejszej skali przez sieć.
 
 ![Transfer danych w trybie offline i online za pomocą urządzenia Azure Data Box](../../_images/migrate/databox.png)
 
@@ -61,19 +61,19 @@ W przypadku korzystania z mechanizmów transferu w trybie offline [procesy repli
 
 **Kopiuj magazyn:** Takie podejście może służyć do transferowania danych systemu plików HDFS, kopii zapasowych, archiwów, aplikacji lub serwerów. Istniejące wskazówki techniczne wyjaśniają, jak używać tego podejścia do transferu danych z [magazynu HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) lub z dysków przy użyciu protokołów [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs) i [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) lub [usługi kopiowania danych](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) do urządzenia Data Box.
 
-Istnieją również [rozwiązania partnerskie innych firm](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) wykorzystujące urządzenia Azure Data Box do migracji metodą „Seed and Feed”, w której duża ilość danych jest transferowana w trybie offline; dane są później synchronizowane w mniejszej skali przez sieć.
+Istnieją również rozwiązania partnerskie innych firm wykorzystujące urządzenia Azure Data Box do migracji metodą „Seed and Feed”, w której duża ilość danych jest transferowana w trybie offline; dane są później synchronizowane w mniejszej skali przez sieć.
 
 **Wyślij urządzenie:** Po skopiowaniu danych urządzenie może zostać [wysłane do firmy Microsoft](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up). Po otrzymaniu i zaimportowaniu urządzenia dane będą dostępne na koncie magazynu Azure.
 
 **Przywróć element zawartości:** [Sprawdź, czy dane](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure) są dostępne na koncie magazynu. Po zweryfikowaniu dane mogą być używane jako obiekty blob lub w usłudze Azure Files. Jeśli dane są plikami VHD/VHDX, plik można przekonwertować na dyski zarządzane. Te dyski zarządzane można następnie zastosować do utworzenia wystąpienia maszyny wirtualnej, która tworzy replikę oryginalnego lokalnego zasobu.
 
-**Synchronizacja:** Jeśli synchronizacja dryfu jest wymagana dla migrowanego elementu zawartości, do synchronizowania plików można użyć jednego z [rozwiązań partnerskich](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) innych firm do momentu przywrócenia elementu zawartości.
+**Synchronizacja:** Jeśli synchronizacja dryfu jest wymagana dla migrowanego elementu zawartości, do synchronizowania plików można użyć jednego z rozwiązań partnerskich innych firm do momentu przywrócenia elementu zawartości.
 
-## <a name="optimize-and-promote-process-changes"></a>Zmiany procesu optymalizacji i podwyższania poziomu
+## <a name="optimize-and-promote-process-changes"></a>Optymalizacja i podwyższenie poziomu zmian procesu
 
 Ta zmiana zakresu nie wpłynie na działania optymalizacji.
 
-## <a name="secure-and-manage-process-changes"></a>Zmiany procesu zabezpieczania i zarządzania
+## <a name="secure-and-manage-process-changes"></a>Zabezpieczanie zmian procesu oraz zarządzanie nimi
 
 Ta zmiana zakresu nie wpłynie na działania zabezpieczania i zarządzania.
 

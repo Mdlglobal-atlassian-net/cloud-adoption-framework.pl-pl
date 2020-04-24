@@ -7,12 +7,12 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e36599414d45fc6cda0e714694c45a64d9d4857e
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: f1eeae9e59da365b066ba78a8eb024448bf9815b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433567"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120113"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Ustanowienie przeglądu sprawności operacyjnej
 
@@ -24,7 +24,7 @@ Istnieje pięć podstawowych kategorii niefunkcjonalnych wymagań, które są na
 - Dostępność
 - Odporność, w tym ciągłość biznesowa i odzyskiwanie po awarii
 - Zarządzanie
-- Bezpieczeństwo
+- Zabezpieczenia
 
 Proces kontroli sprawności operacyjnej zapewnia, że obciążenia o kluczowym znaczeniu są zgodne z oczekiwaniami firmy w odniesieniu do filarów jakości.
 
@@ -36,7 +36,7 @@ Od samego początku wiele zespołów w firmie Microsoft zabrało rozwój platfor
 
 Procesy, które firma Microsoft stosuje jako podstawy dla procesów przedstawionych w tym artykule.
 
-## <a name="understand-the-problem"></a>Opis problemu
+## <a name="understand-the-problem"></a>Omówienie problemu
 
 Po [rozpoczęciu pracy](../getting-started/migrate.md), pierwszym krokiem w ramach transformacji cyfrowej przedsiębiorstwa jest zidentyfikowanie problemów firmy, które należy rozwiązać, przyjmując platformę Azure. Następnym krokiem jest określenie rozwiązania wysokiego poziomu problemu, takiego jak Migrowanie obciążenia do chmury lub dostosowanie istniejącej usługi lokalnej do uwzględnienia funkcjonalności chmury. Na koniec warto zaprojektować i zaimplementować rozwiązanie.
 
@@ -44,7 +44,7 @@ W trakcie tego procesu fokus jest często dotyczący funkcji usługi: zestawu wy
 
 _Niefunkcjonalne_ wymagania, w przeciwieństwie, odnoszą się do właściwości, takich jak [dostępność](https://docs.microsoft.com/azure/architecture/checklist/availability), [odporność](https://docs.microsoft.com/azure/architecture/resiliency)i [skalowalność](https://docs.microsoft.com/azure/architecture/checklist/scalability)usługi. Te właściwości różnią się w zależności od wymagań funkcjonalnych, ponieważ nie wpływają one bezpośrednio na końcową funkcję żadnej konkretnej funkcji w usłudze. Jednak niefunkcjonalne wymagania odnoszą się do wydajności i ciągłości usługi.
 
-Niektóre niefunkcjonalne wymagania można określić w ramach umowy dotyczącej poziomu usług (SLA). Można na przykład przedstawić ciągłość działania usługi jako procent dostępności: "dostępne przez 99,99% czasu". Inne niefunkcjonalne wymagania mogą być trudniejsze do zdefiniowania i mogą ulec zmianie w miarę zmieniania potrzeb produkcyjnych. Na przykład usługi zorientowane konsumentowo mogą ulec nieprzewidzianej przepływności po przejściu do większej popularności.
+Niektóre niefunkcjonalne wymagania można określić w ramach umowy dotyczącej poziomu usług (SLA). Można na przykład przedstawić ciągłość działania usługi jako procent dostępności: "dostępne przez 99,99 procent czasu". Inne niefunkcjonalne wymagania mogą być trudniejsze do zdefiniowania i mogą ulec zmianie w miarę zmieniania potrzeb produkcyjnych. Na przykład usługi zorientowane konsumentowo mogą ulec nieprzewidzianej przepływności po przejściu do większej popularności.
 
 > [!NOTE]
 > Aby uzyskać więcej informacji o wymaganiach dotyczących odporności, zobacz [projektowanie niezawodnych aplikacji platformy Azure](https://docs.microsoft.com/azure/architecture/reliability#define-requirements). Ten artykuł zawiera wyjaśnienia dotyczące pojęć, takich jak cel punktu odzyskiwania (RPO), cel czasu odzyskiwania (RTO) i Umowa SLA.
@@ -81,7 +81,7 @@ Ważne jest, aby podkreślić, że te metryki powinny bezpośrednio odzwierciedl
 
 Etap przeglądu usługi jest podstawą przeglądu sprawności operacyjnej. Obejmuje to następujące czynności:
 
-1. **Metryki usługi miary**. Użyj metryk karty wyników do monitorowania usług, aby upewnić się, że usługi spełniają oczekiwania biznesowe. Monitorowanie usług jest niezbędne. Jeśli nie można monitorować zestawu usług w odniesieniu do niefunkcjonalnych wymagań, należy rozważyć odpowiednie metryki karty wyników na czerwono. W takim przypadku pierwszym krokiem do skorygowania jest wdrożenie odpowiedniego monitorowania usługi. Na przykład jeśli firma oczekuje usługi, która będzie działać z 99,99% dostępności, ale nie ma żadnych danych telemetrycznych produkcyjnych w celu mierzenia dostępności, założono, że nie spełniasz wymagań.
+1. **Metryki usługi miary**. Użyj metryk karty wyników do monitorowania usług, aby upewnić się, że usługi spełniają oczekiwania biznesowe. Monitorowanie usług jest niezbędne. Jeśli nie można monitorować zestawu usług w odniesieniu do niefunkcjonalnych wymagań, należy rozważyć odpowiednie metryki karty wyników na czerwono. W takim przypadku pierwszym krokiem do skorygowania jest wdrożenie odpowiedniego monitorowania usługi. Na przykład jeśli firma oczekuje usługi, która będzie działać z 99,99 procent dostępności, ale nie ma żadnych danych telemetrycznych produkcyjnych w celu mierzenia dostępności, założono, że nie spełniasz wymagań.
 
 2. **Planowanie korygowania**. Dla każdej operacji usługi, dla której metryki spadły poniżej akceptowalnego progu, ustal koszt korygowaniem usługi w celu przeprowadzenia operacji na akceptowalnym poziomie. Jeśli koszt usługi korygowaniem jest większy niż przewidywane generowanie przychodów usługi, przejdź do, aby uwzględnić niematerialne koszty, takie jak obsługa klienta. Na przykład jeśli klienci mają problemy z pomyślnym przekazaniem zamówienia przy użyciu usługi, zamiast tego można wybrać konkurenta.
 

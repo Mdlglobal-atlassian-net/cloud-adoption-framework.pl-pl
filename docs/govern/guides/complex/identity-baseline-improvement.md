@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 6cce3a3aafc62926c7e53d611cb4c94ae2496ac2
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434447"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
@@ -87,7 +87,7 @@ Oto nowe najlepsze rozwiązania:
     2. Dodaj do planu wszystkie Active Directory szablony i zasady.
     3. Opublikuj plan w odpowiedniej grupie zarządzania.
     4. Zastosuj plan do dowolnej subskrypcji wymagającej starszej wersji usługi uwierzytelniania wieloskładnikowego lub innej firmy.
-    5. Wystąpienie Active Directory uruchomione na platformie Azure może być teraz używane jako rozszerzenie lokalnego Active Directory rozwiązanie, które umożliwia integrację z istniejącym narzędziem uwierzytelniania wieloskładnikowego i zapewnianie uwierzytelniania opartego na oświadczeniach. istniejące Active Directory funkcje.
+    5. Wystąpienie Active Directory uruchomione na platformie Azure może być teraz używane jako rozszerzenie lokalnego Active Directory rozwiązanie, które umożliwia integrację z istniejącym narzędziem uwierzytelniania wieloskładnikowego i zapewnianie uwierzytelniania opartego na oświadczeniach, zarówno przez istniejące funkcje Active Directory.
 
 ## <a name="conclusion"></a>Podsumowanie
 

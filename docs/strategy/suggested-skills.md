@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 81ac405667bb12f61ec324388e81e38543efb690
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 21a9c395f8a60c7c73c7e39f181061de816b9c47
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433700"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997504"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Ścieżka gotowości do kwalifikacji w fazie planu podróży migracji
 
@@ -63,7 +63,7 @@ W fazie przygotowywania pracownicy techniczni tworzą strefę wyładunkowej migr
 - [Sieć platformy Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking). Poznaj podstawy sieci platformy Azure i sposób, w jaki usługa Azure Networks ułatwia zwiększenie odporności i skrócenie opóźnienia.
 - [Opcje obliczeniowe platformy Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute). Dowiedz się więcej o usługach obliczeniowych platformy Azure.
 - [Zabezpieczanie zasobów za pomocą RBAC](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac). Użyj RBAC do zabezpieczania zasobów.
-- [Opcje magazynu danych](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index). Dowiedz się więcej na temat korzyści płynących z używania usługi Azure Data Storage.
+- [Opcje magazynu danych](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure). Dowiedz się więcej na temat korzyści płynących z używania usługi Azure Data Storage.
 
 ## <a name="organizational-skills"></a>Umiejętności organizacyjne
 
@@ -82,15 +82,15 @@ Firma Microsoft i partnerzy oferują różne opcje, aby pomóc wszystkim odbiorc
 
 - [Microsoft IT Pro Center](https://www.microsoft.com/itpro). Służy jako darmowy zasób online w celu ułatwienia odwzorowania ścieżki kariery związanej z chmurą. Dowiedz się, co sugerują eksperci branżowi dla Twoje roli związanej z chmurą i umiejętności, które do tego prowadzą. Zapoznaj się z materiałami szkoleniowymi w swoim własnym tempie, aby nabyć najpotrzebniejsze umiejętności.
 
-Zalecamy włączenie znajomości platformy Azure do oficjalnego uznania przy użyciu [szkoleń i egzaminów certyfikacyjnych Microsoft Azure](https://www.microsoft.com/learning/azure-certification.aspx).
+Zalecamy włączenie znajomości platformy Azure do oficjalnego uznania przy użyciu [szkoleń i egzaminów certyfikacyjnych Microsoft Azure](https://www.microsoft.com/learning/certification-overview.aspx).
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury, nie przychodzi łatwo. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty, poziomy i Osiągaj więcej!
 
-Poniżej znajduje się przykład dopasowane ścieżki szkoleniowe, które są wyrównane do Potion strategii wdrożenia chmury.
+Oto przykład dopasowanej ścieżki szkoleniowej, która jest wyrównana do części strategii wdrożenia chmury.
 
-[Poznaj wartość biznesową Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): to środowisko szkoleniowe zajmie się podróżą, która rozpocznie się, pokazując, w jaki sposób cyfrowe przekształcanie i możliwości chmury mogą przekształcić swoją firmę. Dowiesz się, jak usługi w chmurze Microsoft Azure mogą obsługiwać organizację na zaufanej platformie w chmurze. Na koniec zajmiemy się tym, jak to zrobić w rzeczywistości dla Twojej organizacji.
+[Poznaj wartość biznesową Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): to środowisko szkoleniowe zajmie się podróżą, która rozpocznie się, pokazując, w jaki sposób cyfrowe przekształcanie i możliwości chmury mogą przekształcić swoją firmę. Pokażemy, jak usługi w chmurze platformy Microsoft Azure mogą wspierać Twoją organizację na zaufanej platformie w chmurze. Na koniec zilustrujemy, co zrobić, aby ta podróż stała się rzeczywistością dla Twojej organizacji.
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 

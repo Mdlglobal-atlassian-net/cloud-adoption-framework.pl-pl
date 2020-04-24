@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 81a11a06236840658e87dbee1d0bed72579e7f6e
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80432509"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>Modele promocji: jeden etap, etapowy lub samolot
@@ -24,7 +24,7 @@ Istnieje kilka modeli podwyższania poziomu. W tym artykule opisano trzy modele 
 
 W każdym z następujących modeli podwyższania poziomu wybrane narzędzie migracji replikuje i przygotowuje zasoby, które składają się na obciążenie. Po przygotowaniu każdy model traktuje zasób nieco inaczej.
 
-- **Podwyższanie poziomu w pojedynczym kroku.** W modelu podwyższania poziomu *w pojedynczym kroku* proces przygotowywania jest wykonywany dwa razy. Po przygotowaniu wszystkich zasobów ruch użytkowników końcowych jest przekierowywany, a środowisko przejściowe staje się środowiskiem produkcyjnym. W takim przypadku podwyższanie poziomu jest częścią procesu migracji. Jest to najszybszy model migracji. Jednak takie podejście utrudnia integrację niezawodnych działań związanych z testowaniem i optymalizacją. Ponadto ten typ modelu zakłada, że zespół ds. migracji ma dostęp do środowiska przejściowego i produkcyjnego, co narusza zasadę rozdzielania wymagań dotyczących obowiązków w niektórych środowiskach.
+- **Promocja w jednym kroku.** W modelu podwyższania poziomu *w pojedynczym kroku* proces przygotowywania jest wykonywany dwa razy. Po przygotowaniu wszystkich zasobów ruch użytkowników końcowych jest przekierowywany, a środowisko przejściowe staje się środowiskiem produkcyjnym. W takim przypadku podwyższanie poziomu jest częścią procesu migracji. Jest to najszybszy model migracji. Jednak takie podejście utrudnia integrację niezawodnych działań związanych z testowaniem i optymalizacją. Ponadto ten typ modelu zakłada, że zespół ds. migracji ma dostęp do środowiska przejściowego i produkcyjnego, co narusza zasadę rozdzielania wymagań dotyczących obowiązków w niektórych środowiskach.
   > [!NOTE]
   >W spisie treści tej witryny działanie podwyższania poziomu jest wymienione jako część procesu optymalizacji. W modelu pojedynczego kroku podwyższenie poziomu następuje podczas migracji. W związku z tym, w przypadku korzystania z tego modelu, należy odpowiednio zaktualizować role i obowiązki.
 - **Przejściowy.** W *przejściowym* modelu podwyższania poziomu obciążenie jest uznawane za zmigrowane po jego przygotowaniu, ale kiedy jego poziom nie został jeszcze podwyższony. Przed podwyższeniem poziomu zmigrowane obciążenie przechodzi serię testów wydajności, testów biznesowych i zmian optymalizacji. Jego poziom jest podwyższany dopiero później zgodnie z planem testu biznesowego. Takie podejście zwiększa równowagę między kosztami i wydajnością, a jednocześnie ułatwia weryfikację obciążenia pod kątem biznesowym.
@@ -36,14 +36,14 @@ Wybrany model podwyższania poziomu ma wpływ na kolejność działań, które p
 
 W tym modelu replikowanie, przygotowywanie i podwyższanie poziomu zasobów odbywa się przy użyciu narzędzi do automatyzacji migracji. Zasoby są replikowane do zawartego środowiska przejściowego kontrolowanego przez narzędzie do migracji. Po zreplikowaniu wszystkich zasobów narzędzie może w jednym kroku wykonać zautomatyzowany proces podwyższania poziomu zasobów do wybranej subskrypcji. W środowisku przejściowym narzędzie kontynuuje replikację zasobu, co minimalizuje utratę danych między tymi dwoma środowiskami. Po podwyższeniu poziomu zasobu połączenie między systemem źródłowym i zreplikowanym jest przerywane. W tym podejściu, jeśli w systemie źródłowym wystąpią dodatkowe zmiany, zostaną one utracone.
 
-**Zalety.** Korzyści wynikające z tego podejścia są następujące:
+**Formaty.** Korzyści wynikające z tego podejścia są następujące:
 
 - W tym modelu wprowadzana jest mniejsza liczba zmian w systemach docelowych.
 - Ciągła replikacja minimalizuje utratę danych.
 - Jeśli proces przygotowywania zakończy się niepowodzeniem, można go szybko usunąć i powtórzyć.
 - Dzięki replikacji i powtarzanym testom środowiska przejściowego możliwe jest przyrostowe wykonywanie skryptów i procesu testowania.
 
-**Wady.** Negatywne aspekty tego podejścia są następujące:
+**Wada.** Negatywne aspekty tego podejścia są następujące:
 
 - Zasoby przygotowywane w izolowanej za pomocą narzędzi piaskownicy nie zezwalają na zastosowanie złożonych modelów testowania.
 - Podczas replikacji narzędzie do migracji zużywa przepustowość w lokalnym centrum danych. Przygotowywanie dużej ilości zasobów przez dłuższy czas ma wykładniczy wpływ na dostępną przepustowość, zakłócając proces migracji i potencjalnie wpływając na wydajność obciążeń produkcyjnych w środowisku lokalnym.
@@ -52,13 +52,13 @@ W tym modelu replikowanie, przygotowywanie i podwyższanie poziomu zasobów odby
 
 W tym modelu przejściowa piaskownica zarządzana przez narzędzie do migracji jest używana do przeprowadzania ograniczonego testowania. Zreplikowane zasoby są następnie wdrażane w środowisku chmury, które służy jako rozszerzone środowisko przejściowe. Zmigrowane zasoby działają w chmurze, podczas gdy dodatkowe zasoby są replikowane, przygotowywane i migrowane. Po udostępnieniu pełnych obciążeń inicjowane jest dalsze testowanie. Kiedy zostanie przeprowadzona migracja wszystkich zasobów skojarzonych z subskrypcją, poziom subskrypcji i wszystkich hostowanych obciążeń jest podwyższany do poziomu produkcyjnego. W tym scenariuszu podczas podwyższania poziomu nie są dokonywane żadne zmiany obciążeń. Zamiast tego zmiany są wprowadzane w warstwach sieci i tożsamości, w konsekwencji czego użytkownicy są kierowani do nowego środowiska oraz odwoływany jest dostęp dla zespołu wdrożeniowego ds. chmury.
 
-**Zalety.** Korzyści wynikające z tego podejścia są następujące:
+**Formaty.** Korzyści wynikające z tego podejścia są następujące:
 
 - Ten model zapewnia możliwości dokładniejszego testowania biznesowego.
 - Obciążenie może być dokładniej badane w celu lepszego zoptymalizowania wydajności i kosztów zasobów.
 - W ramach podobnych ograniczeń dotyczących czasu i przepustowości można zreplikować większą liczbę zasobów.
 
-**Wady.** Negatywne aspekty tego podejścia są następujące:
+**Wada.** Negatywne aspekty tego podejścia są następujące:
 
 - Wybrane narzędzie do migracji nie może obsługiwać trwającej replikacji po przeprowadzeniu migracji.
 - Dodatkowe środki replikacji danych są wymagane do zsynchronizowania platform danych w ramach horyzontu czasowego przemieszczania.
@@ -67,13 +67,13 @@ W tym modelu przejściowa piaskownica zarządzana przez narzędzie do migracji j
 
 Ten model jest podobny do przejściowego modelu podwyższania poziomu. Istnieje jednak jedna podstawowa różnica. Gdy subskrypcja jest gotowa do podwyższenia poziomu, routing użytkowników końcowych odbywa się w etapach lub pakietach testowych. W każdym pakiecie testowym dodatkowi użytkownicy są kierowani z powrotem do systemów produkcyjnych.
 
-**Zalety.** Korzyści wynikające z tego podejścia są następujące:
+**Formaty.** Korzyści wynikające z tego podejścia są następujące:
 
 - Ten model zmniejsza ryzyko związane z przeprowadzaniem dużych migracji lub wykonywaniem działań mających na celu podwyższenie poziomu. Identyfikacja błędów w zmigrowanym rozwiązaniu może mieć mniejszy wpływ na procesy biznesowe.
 - W tym modelu długotrwałe monitorowanie wymagań dotyczących wydajności obciążeń w środowisku chmury zwiększa dokładność podejmowania decyzji dotyczących zmiany rozmiaru zasobów.
 - W ramach podobnych ograniczeń dotyczących czasu i przepustowości można zreplikować większą liczbę zasobów.
 
-**Wady.** Negatywne aspekty tego podejścia są następujące:
+**Wada.** Negatywne aspekty tego podejścia są następujące:
 
 - Wybrane narzędzie do migracji nie może obsługiwać trwającej replikacji po przeprowadzeniu migracji.
 - Dodatkowe środki replikacji danych są wymagane do zsynchronizowania platform danych w ramach horyzontu czasowego przemieszczania.

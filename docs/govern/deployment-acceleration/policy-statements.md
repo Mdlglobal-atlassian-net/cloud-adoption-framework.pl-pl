@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c10353d4ed284309f782f9ebbc13085d1f6bd14f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 18eef9f270e4c9ab8b2ee31268e46f0d4d929e34
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434557"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995522"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Przykładowe instrukcje dotyczące zasad przyspieszania wdrażania
 
@@ -31,7 +31,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Wszystkie zasoby wdrożone w chmurze powinny być wdrażane za pomocą szablonów lub skryptów automatyzacji wszędzie tam, gdzie to możliwe.
 
-**Potencjalne opcje projektowania:** [Szablony Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) udostępniają infrastrukturę jako podejście kodu do wdrażania zasobów na platformie Azure. Można również użyć [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) jako spójnego lokalnego i opartego na chmurze narzędzia do wdrażania.
+**Potencjalne opcje projektowania:** [Szablony Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) umożliwiają używanie infrastruktury jako kodu do wdrażania zasobów na platformie Azure. Można również użyć [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) jako spójnego lokalnego i opartego na chmurze narzędzia do wdrażania.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Brak wglądu w problemy systemowe
 

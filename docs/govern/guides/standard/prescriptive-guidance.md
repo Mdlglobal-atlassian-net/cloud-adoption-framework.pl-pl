@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4c39ddfed1a96cc6ee8433ceab1a00622a319986
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 328577aae931194517e015973a935de24b580a96
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434245"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995243"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: objaśniono najlepsze rozwiązania
 
@@ -60,7 +60,7 @@ Decyzja dotycząca tego, w jaki sposób konstrukcja subskrypcji pozwala określi
 
 Decyzje dotyczące spójności zasobów określają narzędzia, procesy i nakłady potrzebne do zapewnienia spójnego wdrażania i konfigurowania zasobów platformy Azure w ramach subskrypcji. W tym opisie **[spójność wdrożenia](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** została wybrana jako wzorzec spójności zasobów podstawowych.
 
-- Grupy zasobów są tworzone dla aplikacji przy użyciu podejścia cyklu życia. Wszystkie elementy, które są tworzone, konserwowane i wycofane, powinny znajdować się w jednej grupie zasobów. Aby uzyskać więcej informacji na temat grup zasobów, zobacz [tutaj](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Grupy zasobów są tworzone dla aplikacji przy użyciu podejścia cyklu życia. Wszystkie elementy, które są tworzone, konserwowane i wycofane, powinny znajdować się w jednej grupie zasobów. Aby uzyskać więcej informacji, zobacz [Przewodnik po decyzji o spójności zasobów](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy należy zastosować do wszystkich subskrypcji ze skojarzonej grupy zarządzania.
 - W ramach procesu wdrażania szablony spójności zasobów platformy Azure dla grupy zasobów powinny być przechowywane w kontroli źródła.
 - Każda grupa zasobów jest skojarzona z określonym obciążeniem lub aplikacją na podstawie opisanego powyżej podejścia cyklu życia.

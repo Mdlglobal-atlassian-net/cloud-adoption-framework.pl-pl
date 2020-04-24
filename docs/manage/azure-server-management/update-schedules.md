@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: c3d40eb748c58643a981110e03417275b465c158
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80430486"
 ---
 # <a name="create-update-schedules"></a>Tworzenie harmonogramów aktualizacji
@@ -28,9 +28,9 @@ Przykładowy skrypt w tej sekcji ilustruje użycie tagowania i wykonywania zapyt
 
 - Tworzy harmonogram aktualizacji Azure Automation, który jest uruchamiany w każdą sobotę o godzinie 8:00.
 - Tworzy zapytanie dla komputerów spełniających następujące kryteria:
-  - Wdrożone w lokalizacji `westus`, `eastus`lub `eastus2` platformy Azure
-  - Do nich zastosowano tag `Owner` z wartością ustawioną na `JaneSmith`
-  - Do nich zastosowano tag `Production` z wartością ustawioną na `true`
+  - Wdrożone w `westus`lokalizacji `eastus`, lub `eastus2` na platformie Azure
+  - Do nich `Owner` zastosowano tag z wartością ustawioną na`JaneSmith`
+  - Do nich `Production` zastosowano tag z wartością ustawioną na`true`
 - Stosuje harmonogram aktualizacji do maszyn z kwerendą i ustawia dwugodzinne okno aktualizacji.
 
 Przed uruchomieniem skryptu przykładowego należy się zalogować przy użyciu polecenia cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . Po uruchomieniu skryptu podaj następujące informacje:
@@ -111,4 +111,4 @@ Przed uruchomieniem skryptu przykładowego należy się zalogować przy użyciu 
 Zapoznaj się z przykładami dotyczącymi implementacji [wspólnych zasad na platformie Azure](./common-policies.md) , które mogą pomóc zarządzać serwerami.
 
 > [!div class="nextstepaction"]
-> [Typowe zasady na platformie Azure](./common-policies.md)
+> [Wspólne zasady na platformie Azure](./common-policies.md)

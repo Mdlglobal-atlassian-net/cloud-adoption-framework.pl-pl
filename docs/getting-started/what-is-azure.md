@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
 ms.openlocfilehash: 91bfb288c841dbfaa367120d7c904642a3d9fb38
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434749"
 ---
 <!-- markdownlint-disable MD026 -->
@@ -37,7 +37,7 @@ Każde wystąpienie kontrolera sieci szkieletowej jest połączone z innym zesta
 
 Na przykład fronton obsługuje usługi obsługujące żądania klientów, aby alokować zasoby platformy Azure, takie jak [maszyny wirtualne](https://docs.microsoft.com/azure/virtual-machines)i usługi, takie jak [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction). Najpierw fronton sprawdza użytkownika i sprawdza, czy użytkownik jest autoryzowany do przydzielenia żądanych zasobów. Jeśli tak, fronton sprawdza bazę danych w celu zlokalizowania stojaka serwera o wystarczającej pojemności, a następnie instruuje Kontroler sieci szkieletowej w tym stojaku, aby przydzielić zasób.
 
-W związku z tym platforma Azure to ogromna kolekcja serwerów i sprzętu sieciowego, na których działa złożony zestaw aplikacji rozproszonych, aby organizować konfigurację i działanie zwirtualizowanego sprzętu i oprogramowania na tych serwerach. Jest to aranżacja, dzięki której platforma Azure zapewnia zaawansowane&mdash;użytkownicy nie będą już zobowiązani do obsługi i uaktualniania sprzętu, ponieważ platforma Azure wykonuje te same sceny w tle.
+W związku z tym platforma Azure to ogromna kolekcja serwerów i sprzętu sieciowego, na których działa złożony zestaw aplikacji rozproszonych, aby organizować konfigurację i działanie zwirtualizowanego sprzętu i oprogramowania na tych serwerach. Jest to aranżacja, która sprawia, że platforma&mdash;Azure zapewnia zaawansowanym użytkownikom, którzy nie są już zobowiązani do obsługi i uaktualniania sprzętu, ponieważ platforma Azure wykonuje te same sceny w tle.
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -9,15 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 97f8a82295a8eff5614c965ba583fcbf8d50f501
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434584"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Udoskonalenie ulepszeń wdrożenia
 
-Dyscyplina wdrożenia koncentruje się na tworzeniu zasad, które gwarantują, że zasoby są wdrażane i konfigurowane spójnie i powtarzane i pozostają zgodne w całym cyklu życia. W ramach pięciu dyscyplin nadzoru w chmurze przyspieszenie wdrożenia obejmuje decyzje dotyczące automatyzowania wdrożeń, kontroli źródłowego artefaktów wdrożenia, monitorowania wdrożonych zasobów w celu utrzymania żądanego stanu i inspekcji zgodności. luk.
+Dyscyplina wdrożenia koncentruje się na tworzeniu zasad, które gwarantują, że zasoby są wdrażane i konfigurowane spójnie i powtarzane i pozostają zgodne w całym cyklu życia. W ramach pięciu dyscyplin nadzoru w chmurze przyspieszenie wdrożenia obejmuje decyzje dotyczące automatyzowania wdrożeń, kontroli źródłowego artefaktów wdrożenia, monitorowania wdrożonych zasobów w celu utrzymania żądanego stanu i inspekcji wszelkich problemów ze zgodnością.
 
 W tym artykule przedstawiono niektóre potencjalne zadania, w których firma może uczestniczyć w ulepszaniu rozwoju dyscypliny wdrożenia. Te zadania mogą być podzielone na planowanie, kompilowanie, przyjmowanie i eksploatację etapów wdrażania rozwiązania w chmurze, które są następnie powtarzane na umożliwieniu rozwoju [przyrostowego podejścia do zarządzania chmurą](../guides/index.md#an-incremental-approach-to-cloud-governance).
 

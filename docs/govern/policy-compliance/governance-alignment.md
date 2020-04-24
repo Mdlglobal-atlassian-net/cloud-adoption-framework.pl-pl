@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.openlocfilehash: 107385f48f43b449fd835b5ac28aa0a9ebb5207f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433078"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Dopasuj Przewodnik dotyczący projektowania ładu w chmurze przy użyciu zasad firmowych
@@ -37,4 +37,4 @@ Chociaż każde wdrożenie chmury ma unikatowe cele, priorytety i wyzwania, te p
 Mając wskazówki dotyczące projektowania, ustal procesy przestrzegania zasad, aby zapewnić zgodność z zasadami.
 
 > [!div class="nextstepaction"]
-> [Ustanów procesy przestrzegania zasad](./processes.md)
+> [Ustalanie procesów zapewniania zgodności zasad](./processes.md)

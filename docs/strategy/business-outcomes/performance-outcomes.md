@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.openlocfilehash: f76cde92d52cd9390974501326a198656cd11d71
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80431718"
 ---
 # <a name="examples-of-performance-outcomes"></a>Przykłady wyników wydajności
@@ -24,7 +24,7 @@ W dzisiejszym świecie technicznym klienci zakładają, że aplikacje będą dzi
 
 Największe usługi chmury obliczeniowej działają w ogólnoświatowej sieci zabezpieczonych centrów danych, które są regularnie uaktualniane do najnowszej generacji szybkiego i wydajnego sprzętu komputerowego. Zapewnia to kilka korzyści w ramach jednego korporacyjnego centrum danych, na przykład krótsze opóźnienia sieci dla aplikacji i większe oszczędności skali.
 
-Przekształć swoją firmę i Obniż koszty dzięki infrastrukturze energooszczędnej, która obejmuje ponad 100 wysoce bezpiecznych udogodnień na całym świecie, połączone z jedną z największych sieci na ziemi. Platforma Azure ma więcej regionów globalnych niż inni dostawcy chmury. Umożliwia to przetłumaczenie na skalę, która jest wymagana w celu wprowadzenia aplikacji bliżej użytkowników na całym świecie, zachowania miejsca zamieszkania danych oraz zapewnienia kompleksowej zgodności i opcji odporności dla klientów.
+Przekształć swoją firmę i Obniż koszty dzięki infrastrukturze energooszczędnej, która obejmuje ponad 100 wysoce bezpiecznych udogodnień na całym świecie, połączone z jedną z największych sieci na ziemi. Platforma Azure oferuje więcej regionów globalnych niż jakikolwiek inny dostawca usług w chmurze. Umożliwia to przetłumaczenie na skalę, która jest wymagana w celu wprowadzenia aplikacji bliżej użytkowników na całym świecie, zachowania miejsca zamieszkania danych oraz zapewnienia kompleksowej zgodności i opcji odporności dla klientów.
 
 - **Przykład 1:** Firma usług pracowała z dostawcą hostingu obsługującym wiele zasobów infrastruktury operacyjnej. Te systemy były przyczyną częstej awarii i niskiej wydajności. Firma przebiegła swoje zasoby na platformę Azure, aby korzystać z kontroli umów SLA i wydajności w chmurze. Czas przestoju, który poniósł koszt IT około 15 000 USD na minutę. W przypadku czterech do ośmiu godzin przestojów miesięcznie można było łatwo uzasadnić tę transformację organizacyjną.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 1191b2f359f2220c8ba73ffd0926859936f78b7d
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: abdd12c9c236b66fced32b1b70886d118a25c7bc
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428210"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995061"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Ścieżka gotowości do kwalifikacji w fazie gotowości migracji
 
@@ -39,13 +39,13 @@ W fazie gotowości personel techniczny musi utworzyć strefę wypełniania migra
 - [Usługi sieciowe platformy Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Poznaj podstawowe informacje dotyczące sieci platformy Azure oraz zwiększaj odporność i zmniejszaj opóźnienia.
 - [Opcje obliczeń platformy Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute): Przejrzyj usługi obliczeniowe platformy Azure.
 - [Zabezpieczanie zasobów za pomocą RBAC](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac): Użyj kontroli dostępu opartej na ROLACH (RBAC) do zabezpieczania zasobów.
-- [Opcje usługi Azure Storage](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index): informacje na temat korzyści płynących z używania usługi Azure Data Storage.
+- [Opcje usługi Azure Storage](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure): informacje na temat korzyści płynących z używania usługi Azure Data Storage.
 
 W fazie gotowości architekty muszą projektować rozwiązania obejmujące wszystkie środowiska platformy Azure. Następujące zasoby mogą przygotować je do następujących zadań:
 
-- [Podstawy architektury chmur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): PluralSighty kurs ułatwiający architektom właściwych rozwiązań.
-- [Architektura Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): PluralSighty w architekturze platformy Azure.
-- [Projektowanie migracji dla Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): PluralSighty kurs ułatwiający architektom projektowanie rozwiązania migracji.
+- [Podstawy architektury chmur](https://www.pluralsight.com/courses/cloud-architecture-foundations): Pluralsighty kurs ułatwiający architektom właściwych rozwiązań.
+- [Architektura Microsoft Azure](https://www.pluralsight.com/courses/cloud-architecture-foundations): Pluralsighty w architekturze platformy Azure.
+- [Projektowanie migracji dla Microsoft Azure](https://www.pluralsight.com/courses/cloud-architecture-foundations): Pluralsighty kurs ułatwiający architektom projektowanie rozwiązania migracji.
 
 ## <a name="deeper-skills-exploration"></a>Nabywanie głębszych umiejętności
 
@@ -55,10 +55,9 @@ Poniższe informacje opisują zasoby umożliwiające dodatkowe uczenie się.
 
 Firma Microsoft i jej partnerzy oferują opcje ułatwiające wszystkim odbiorcom opracowywanie umiejętności związanych z korzystaniem z usług Microsoft Azure Services.
 
-- [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/microsoft-azure): oferuje uczenie użytkowników, którzy pomogą w tworzeniu platformy Azure. Od podstawowego omówienia do głębokiego szkolenia technicznego pracownicy działu IT mogą dowiedzieć się, jak zastosować platformę Azure do swojej firmy.
 - [Centrum kariery Microsoft IT Pro](https://www.microsoft.com/itpro): bezpłatny zasób online, który ułatwia zamapowanie ścieżki kariery w chmurze. Skontaktuj się z ekspertami branżowymi dotyczącymi twojej roli w chmurze i potrzebnych umiejętności. Zapoznaj się z uczyć uczenia w swoim własnym tempie, aby budować umiejętności, które trzeba zachować.
 
-Zalecamy przekształcenie wiedzy platformy Azure w oficjalne uznanie przy użyciu [szkoleń i egzaminów certyfikacyjnych Microsoft Azure](https://www.microsoft.com/learning/azure-certification.aspx).
+Zalecamy przekształcenie wiedzy platformy Azure w oficjalne uznanie przy użyciu [szkoleń i egzaminów certyfikacyjnych Microsoft Azure](https://www.microsoft.com/learning/certification-overview.aspx).
 
 ### <a name="microsoft-learn"></a>Microsoft Learn
 
@@ -76,4 +75,4 @@ Poniżej przedstawiono kilka przykładów ścieżek szkoleniowych specyficznych 
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-Aby uzyskać dodatkowe ścieżki szkoleniowe, przejrzyj [katalog Microsoft Learn](https://docs.microsoft.com/learn/browse). Użyj filtru role, aby wyrównać ścieżki szkoleniowe do roli.
+Aby uzyskać dodatkowe ścieżki szkoleniowe, przejrzyj [katalog Microsoft Learn](https://docs.microsoft.com/learn/browse). Użyj filtru Role, aby dopasować ścieżki szkoleniowe do swojej roli.

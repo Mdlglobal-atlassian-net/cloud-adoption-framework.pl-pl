@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.openlocfilehash: e8846d265fff84a1ccea62193c01ed0b706b3637
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428159"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>Dopasuj zasoby do obciążeń z priorytetyzacją
@@ -50,4 +50,4 @@ Niektóre organizacje mają dobrze obsługiwaną bazę danych zarządzania konfi
 [Sprawdź decyzje dotyczące racjonalizacji](./review-rationalization.md) na podstawie wyrównania zasobów i definicji obciążeń.
 
 > [!div class="nextstepaction"]
-> [Przegląd decyzji o racjonalizacji](./review-rationalization.md)
+> [Przegląd decyzji dotyczących racjonalizacji](./review-rationalization.md)

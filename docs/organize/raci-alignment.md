@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: af2ecfdfb10aa56993d893ef9bcc7152f4f3d702
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428291"
 ---
 <!-- cSpell:ignore ccoe -->
@@ -23,7 +23,7 @@ Dowiedz się, jak wyrównać zakres obowiązków dla zespołów, opracowując ma
 
 - [Tylko zespół wdrażania chmury](#cloud-adoption-team-only)
 - [Najlepsze rozwiązanie MVP](#best-practice-minimum-viable-product-mvp)
-- [Środkowe IT](#central-it)
+- [Centralne zasoby IT](#central-it)
 - [Wyrównanie strategiczne](#strategic-alignment)
 - [Wyrównanie operacyjne](#operational-alignment)
 - [Cloud Center doskonałości (CCoE)](#cloud-center-of-excellence-ccoe)
@@ -52,51 +52,51 @@ Ostatni wiersz każdej tabeli (z wyjątkiem pierwszej) zawiera link do najbardzi
 |Zespół ds. wdrażania chmury|Accountable|Accountable|Accountable|Accountable|Zapoznaj się z tematem|Zapoznaj się z tematem|Zapoznaj się z tematem|Nich|
 |Zespół nadzorujący chmury|Zapoznaj się z tematem|Nich|Nich|Nich|Accountable|Accountable|Accountable|Accountable|
 ||||||||||
-|Wyrównana możliwość chmury|[Wdrażanie chmury](./cloud-adoption.md)|[Strategia chmury](./cloud-strategy.md)|[Strategia chmury](./cloud-strategy.md)|[Operacje w chmurze](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[zarządzanie chmurą](./cloud-governance.md)|Platforma [CCoE](./cloud-center-of-excellence.md)-w [chmurze](./cloud-platform.md)|Platforma [CCoE](./cloud-center-of-excellence.md)-w [chmurze](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[Automatyzacja chmury](./cloud-automation.md)|
+|Wyrównana możliwość chmury|[Wdrażanie chmury](./cloud-adoption.md)|[Strategia chmury](./cloud-strategy.md)|[Strategia chmury](./cloud-strategy.md)|[Operacje w chmurze](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[ładu w chmurze](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[Platforma w chmurze](./cloud-platform.md) CCoE|[CCoE](./cloud-center-of-excellence.md)-[Platforma w chmurze](./cloud-platform.md) CCoE|[CCoE](./cloud-center-of-excellence.md)-[Automatyzacja chmury](./cloud-automation.md) CCoE|
 
 ## <a name="central-it"></a>Centralne zasoby IT
 
 | |Dostarczanie rozwiązania  |Spójność biznesowa  |Zarządzanie zmianami  |Operacje rozwiązania  |Nadzór |Data_spłaty platformy  |Operacje platformy  |Automatyzacja platformy  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
-|Zespół ds. wdrażania chmury  |Accountable|Accountable|Prowadzenie    |Prowadzenie|Nich   |Nich   |Nich   |Nich   |
-|Zespół nadzorujący chmury|Zapoznaj się z tematem  |Nich   |Nich   |Nich   |Accountable|Zapoznaj się z tematem  |Prowadzenie|Nich   |
-|Centralne zasoby IT           |Zapoznaj się z tematem  |Nich   |Accountable   |Accountable   |Prowadzenie  |Accountable|Accountable|Accountable|
+|Zespół ds. wdrażania chmury  |Accountable|Accountable|Odpowiedzialność    |Odpowiedzialność|Nich   |Nich   |Nich   |Nich   |
+|Zespół nadzorujący chmury|Zapoznaj się z tematem  |Nich   |Nich   |Nich   |Accountable|Zapoznaj się z tematem  |Odpowiedzialność|Nich   |
+|Centralne zasoby IT           |Zapoznaj się z tematem  |Nich   |Accountable   |Accountable   |Odpowiedzialność  |Accountable|Accountable|Accountable|
 ||||||||||
-|Wyrównana możliwość chmury|[Wdrażanie chmury](./cloud-adoption.md)|[Strategia chmury](./cloud-strategy.md)|[Strategia chmury](./cloud-strategy.md)|[Operacje w chmurze](./cloud-operations.md)|[Ład w chmurze](./cloud-governance.md)|[Środkowe IT](./central-it.md)|[Środkowe IT](./central-it.md)|[Środkowe IT](./central-it.md)|
+|Wyrównana możliwość chmury|[Wdrażanie chmury](./cloud-adoption.md)|[Strategia chmury](./cloud-strategy.md)|[Strategia chmury](./cloud-strategy.md)|[Operacje w chmurze](./cloud-operations.md)|[Zarządzanie chmurą](./cloud-governance.md)|[Centralne zasoby IT](./central-it.md)|[Centralne zasoby IT](./central-it.md)|[Centralne zasoby IT](./central-it.md)|
 
 ## <a name="strategic-alignment"></a>Wyrównanie strategiczne
 
 |  |Dostarczanie rozwiązania  |Spójność biznesowa  |Zarządzanie zmianami  |Operacje rozwiązania  |Nadzór |Data_spłaty platformy  |Operacje platformy  |Automatyzacja platformy  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |Zespół strategii chmury  |Zapoznaj się z tematem  |Accountable|Accountable|Zapoznaj się z tematem  |Zapoznaj się z tematem  |Nich   |Nich   |Nich   |
-|Zespół ds. wdrażania chmury  |Accountable|Zapoznaj się z tematem  |Prowadzenie|Accountable|Nich   |Nich   |Nich   |Nich   |
+|Zespół ds. wdrażania chmury  |Accountable|Zapoznaj się z tematem  |Odpowiedzialność|Accountable|Nich   |Nich   |Nich   |Nich   |
 |CCoE model RACI      |Zapoznaj się z tematem  |Nich   |Nich   |Nich   |Accountable|Accountable|Accountable|Accountable|
 ||||||||||
-|Wyrównana możliwość chmury|[Wdrażanie chmury](./cloud-adoption.md)|[Strategia chmury](./cloud-strategy.md)|[Strategia chmury](./cloud-strategy.md)|[Operacje w chmurze](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[zarządzanie chmurą](./cloud-governance.md)|Platforma [CCoE](./cloud-center-of-excellence.md)-w [chmurze](./cloud-platform.md)|Platforma [CCoE](./cloud-center-of-excellence.md)-w [chmurze](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[Automatyzacja chmury](./cloud-automation.md)|
+|Wyrównana możliwość chmury|[Wdrażanie chmury](./cloud-adoption.md)|[Strategia chmury](./cloud-strategy.md)|[Strategia chmury](./cloud-strategy.md)|[Operacje w chmurze](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[ładu w chmurze](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[Platforma w chmurze](./cloud-platform.md) CCoE|[CCoE](./cloud-center-of-excellence.md)-[Platforma w chmurze](./cloud-platform.md) CCoE|[CCoE](./cloud-center-of-excellence.md)-[Automatyzacja chmury](./cloud-automation.md) CCoE|
 
 ## <a name="operational-alignment"></a>Wyrównanie operacyjne
 
 |  |Dostarczanie rozwiązania  |Spójność biznesowa  |Zarządzanie zmianami  |Operacje rozwiązania  |Nadzór |Data_spłaty platformy  |Operacje platformy  |Automatyzacja platformy  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |Zespół strategii chmury  |Zapoznaj się z tematem  |Accountable|Accountable|Zapoznaj się z tematem  |Zapoznaj się z tematem  |Nich   |Nich   |Nich   |
-|Zespół ds. wdrażania chmury  |Accountable|Zapoznaj się z tematem  |Prowadzenie|Zapoznaj się z tematem  |Nich   |Nich   |Nich   |Nich   |
-|Zespół ds. operacji w chmurze|Zapoznaj się z tematem  |Zapoznaj się z tematem  |Prowadzenie|Accountable|Zapoznaj się z tematem  |Nich   |Accountable|Zapoznaj się z tematem  |
-|CCoE model RACI      |Zapoznaj się z tematem  |Nich   |Nich   |Nich   |Accountable|Accountable|Prowadzenie|Accountable|
+|Zespół ds. wdrażania chmury  |Accountable|Zapoznaj się z tematem  |Odpowiedzialność|Zapoznaj się z tematem  |Nich   |Nich   |Nich   |Nich   |
+|Zespół ds. operacji w chmurze|Zapoznaj się z tematem  |Zapoznaj się z tematem  |Odpowiedzialność|Accountable|Zapoznaj się z tematem  |Nich   |Accountable|Zapoznaj się z tematem  |
+|CCoE model RACI      |Zapoznaj się z tematem  |Nich   |Nich   |Nich   |Accountable|Accountable|Odpowiedzialność|Accountable|
 ||||||||||
-|Wyrównana możliwość chmury|[Wdrażanie chmury](./cloud-adoption.md)|[Strategia chmury](./cloud-strategy.md)|[Strategia chmury](./cloud-strategy.md)|[Operacje w chmurze](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[zarządzanie chmurą](./cloud-governance.md)|Platforma [CCoE](./cloud-center-of-excellence.md)-w [chmurze](./cloud-platform.md)|Platforma [CCoE](./cloud-center-of-excellence.md)-w [chmurze](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[Automatyzacja chmury](./cloud-automation.md)|
+|Wyrównana możliwość chmury|[Wdrażanie chmury](./cloud-adoption.md)|[Strategia chmury](./cloud-strategy.md)|[Strategia chmury](./cloud-strategy.md)|[Operacje w chmurze](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[ładu w chmurze](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[Platforma w chmurze](./cloud-platform.md) CCoE|[CCoE](./cloud-center-of-excellence.md)-[Platforma w chmurze](./cloud-platform.md) CCoE|[CCoE](./cloud-center-of-excellence.md)-[Automatyzacja chmury](./cloud-automation.md) CCoE|
 
 ## <a name="cloud-center-of-excellence-ccoe"></a>Cloud Center doskonałości (CCoE)
 
 |  |Dostarczanie rozwiązania  |Spójność biznesowa  |Zarządzanie zmianami  |Operacje rozwiązania  |Nadzór |Data_spłaty platformy  |Operacje platformy  |Automatyzacja platformy  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |Zespół strategii chmury  |Zapoznaj się z tematem  |Accountable|Accountable|Zapoznaj się z tematem  |Zapoznaj się z tematem  |Nich   |Nich   |Nich   |
-|Zespół ds. wdrażania chmury  |Accountable|Zapoznaj się z tematem  |Prowadzenie|Zapoznaj się z tematem  |Nich   |Nich   |Nich   |Nich   |
-|Zespół ds. operacji w chmurze|Zapoznaj się z tematem  |Zapoznaj się z tematem  |Prowadzenie|Accountable|Zapoznaj się z tematem  |Nich   |Accountable|Zapoznaj się z tematem  |
-|Zespół nadzorujący chmury|Zapoznaj się z tematem  |Nich   |Nich   |Zapoznaj się z tematem  |Accountable|Zapoznaj się z tematem  |Prowadzenie|Nich   |
-|Zespół platformy w chmurze  |Zapoznaj się z tematem  |Nich   |Nich   |Zapoznaj się z tematem  |Zapoznaj się z tematem  |Accountable|Prowadzenie|Prowadzenie|
-|Zespół usługi Cloud Automation|Zapoznaj się z tematem  |Nich   |Nich   |Nich   |Zapoznaj się z tematem  |Prowadzenie|Prowadzenie|Accountable|
+|Zespół ds. wdrażania chmury  |Accountable|Zapoznaj się z tematem  |Odpowiedzialność|Zapoznaj się z tematem  |Nich   |Nich   |Nich   |Nich   |
+|Zespół ds. operacji w chmurze|Zapoznaj się z tematem  |Zapoznaj się z tematem  |Odpowiedzialność|Accountable|Zapoznaj się z tematem  |Nich   |Accountable|Zapoznaj się z tematem  |
+|Zespół nadzorujący chmury|Zapoznaj się z tematem  |Nich   |Nich   |Zapoznaj się z tematem  |Accountable|Zapoznaj się z tematem  |Odpowiedzialność|Nich   |
+|Zespół platformy w chmurze  |Zapoznaj się z tematem  |Nich   |Nich   |Zapoznaj się z tematem  |Zapoznaj się z tematem  |Accountable|Odpowiedzialność|Odpowiedzialność|
+|Zespół usługi Cloud Automation|Zapoznaj się z tematem  |Nich   |Nich   |Nich   |Zapoznaj się z tematem  |Odpowiedzialność|Odpowiedzialność|Accountable|
 ||||||||||
-|Wyrównana możliwość chmury|[Wdrażanie chmury](./cloud-adoption.md)|[Strategia chmury](./cloud-strategy.md)|[Strategia chmury](./cloud-strategy.md)|[Operacje w chmurze](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[zarządzanie chmurą](./cloud-governance.md)|Platforma [CCoE](./cloud-center-of-excellence.md)-w [chmurze](./cloud-platform.md)|Platforma [CCoE](./cloud-center-of-excellence.md)-w [chmurze](./cloud-platform.md)|[CCoE](./cloud-center-of-excellence.md)-[Automatyzacja chmury](./cloud-automation.md)|
+|Wyrównana możliwość chmury|[Wdrażanie chmury](./cloud-adoption.md)|[Strategia chmury](./cloud-strategy.md)|[Strategia chmury](./cloud-strategy.md)|[Operacje w chmurze](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md)-[ładu w chmurze](./cloud-governance.md)|[CCoE](./cloud-center-of-excellence.md)-[Platforma w chmurze](./cloud-platform.md) CCoE|[CCoE](./cloud-center-of-excellence.md)-[Platforma w chmurze](./cloud-platform.md) CCoE|[CCoE](./cloud-center-of-excellence.md)-[Automatyzacja chmury](./cloud-automation.md) CCoE|
 
 ## <a name="next-steps"></a>Następne kroki
 

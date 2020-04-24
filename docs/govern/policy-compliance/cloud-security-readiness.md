@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: b30cac2fb4ba372c7fd11f8528ecac4c0f3e84c3
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 84bb47e05086ba0921a189d96d20c76a1ab5b057
+ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433054"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81646820"
 ---
 <!-- cSpell:ignore CISO -->
 
@@ -30,7 +30,7 @@ Podobnie jak w przypadku większości zasad, zasady zabezpieczeń i zarządzania
 
 W takim przeglądzie rolą CISO jest utworzenie bezpiecznej równowagi między ograniczeniami istniejącej zasady/zgodności a zwiększonymi zabezpieczeniami stan dostawców chmury. Mierzenie tego postępu może potrwać wiele form, często jest to mierzone w liczbie zasad zabezpieczeń, które mogą być bezpiecznie Odciążone dostawcy chmury.
 
-**Transfer zagrożeń bezpieczeństwa:** Gdy usługi są przenoszone do modeli hostowania infrastruktury jako usługi (IaaS), firma zakłada mniej bezpośrednie ryzyko związane z obsługą sprzętu. Ryzyko nie zostanie usunięte, a nie zostanie przesłane do dostawcy chmury. W przypadku, gdy podejście dostawcy w chmurze do aprowizacji sprzętu zapewnia ten sam poziom ryzyka, w przypadku bezpiecznego powtarzalnego procesu ryzyko wykonania aprowizacji sprzętowej jest usuwane z firmowej obszaru obowiązków i przenoszone do chmury dostawcy. Pozwala to ograniczyć ogólne ryzyko związane z zabezpieczeniami, które jest odpowiedzialne za zarządzanie, chociaż samo ryzyko powinno być nadal śledzone i przeglądane.
+**Transfer zagrożeń bezpieczeństwa:** Gdy usługi są przenoszone do modeli hostowania infrastruktury jako usługi (IaaS), firma zakłada mniej bezpośrednie ryzyko związane z obsługą sprzętu. Ryzyko nie zostanie usunięte, a nie zostanie przesłane do dostawcy chmury. W przypadku, gdy podejście dostawcy chmury do aprowizacji sprzętu zapewnia ten sam poziom łagodzenia ryzyka, w bezpiecznym procesie powtarzania ryzyko wykonania aprowizacji sprzętowej jest usuwane z firmowej obszaru obowiązków i przenoszone do dostawcy chmury. Pozwala to ograniczyć ogólne ryzyko związane z zabezpieczeniami, które jest odpowiedzialne za zarządzanie, chociaż samo ryzyko powinno być nadal śledzone i przeglądane.
 
 Ponieważ rozwiązania przechodzą dalsze "stos" w celu uwzględnienia modeli platformy jako usługi (PaaS) lub oprogramowania jako usługi (SaaS), można uniknąć lub przenieść dodatkowych zagrożeń. Gdy ryzyko jest bezpiecznie przenoszone do dostawcy chmury, koszt wykonywania, monitorowania i wymuszania zasad zabezpieczeń lub innych zasad zgodności może być również bezpiecznie zmniejszony.
 
@@ -40,36 +40,35 @@ Ponieważ rozwiązania przechodzą dalsze "stos" w celu uwzględnienia modeli pl
 
 Wiedza o chmurze jest podstawą podejścia do [przeglądu zasad](./cloud-policy-review.md) z sposób myśleniaem wzrostu. Następujące zasoby mogą pomóc CISO lepiej zrozumieć stan zabezpieczeń platformy Microsoft Azure.
 
-Zasoby platformy zabezpieczeń:
+**Zasoby platformy zabezpieczeń:**
 
 - [Cykl rozwoju zabezpieczeń, audyty wewnętrzne](https://www.microsoft.com/sdl)
 - [Obowiązkowe szkolenia w zakresie zabezpieczeń, kontrole w tle](https://downloads.cloudsecurityalliance.org/star/self-assessment/StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx)
-- [Testowanie penetracji, Wykrywanie intruzów, DDoS, inspekcje i rejestrowanie](https://www.microsoft.com/trustcenter/Security/AuditingAndLogging)
+- [Testowanie penetracji, Wykrywanie intruzów, DDoS, inspekcje i rejestrowanie](https://www.microsoft.com/security/business/operations)
 - [Najnowocześniejsze centrum danych](https://www.microsoft.com/cloud-platform/global-datacenters), zabezpieczenia fizyczne, [bezpieczna sieć](https://docs.microsoft.com/azure/security/security-network-overview)
-- [Microsoft Azure odpowiedź zabezpieczeń w chmurze (PDF)](https://aka.ms/SecurityResponsePaper)
+- [Microsoft Azure odpowiedź zabezpieczeń w chmurze (PDF)](https://aka.ms/securityresponsepaper)
 
-Prywatność i kontrola:
+**Prywatność i kontrola:**
 
-- [Zarządzaj danymi przez cały czas](https://www.microsoft.com/trustcenter/Privacy/You-own-your-data)
-- [Kontrola lokalizacji danych](https://www.microsoft.com/trustcenter/Privacy/Where-your-data-is-located)
-- [Zapewnianie dostępu do danych na Twoich warunkach](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
-- [Reagowanie na egzekwowanie prawa](https://www.microsoft.com/trustcenter/Privacy/Responding-to-govt-agency-requests-for-customer-data)
-- [Rygorystyczne standardy ochrony prywatności](https://www.microsoft.com/TrustCenter/Privacy/We-set-and-adhere-to-stringent-standards)
+- [Zarządzaj danymi przez cały czas](https://www.microsoft.com/trust-center/privacy/data-management)
+- [Kontrola lokalizacji danych](https://www.microsoft.com/trust-center/privacy/data-location)
+- [Zapewnianie dostępu do danych na Twoich warunkach](https://www.microsoft.com/trust-center/privacy/data-access)
+- [Reagowanie na egzekwowanie prawa](https://www.microsoft.com/trust-center/privacy)
+- [Rygorystyczne standardy ochrony prywatności](https://www.microsoft.com/trust-center/privacy)
 
-Przepisów
+**Przepisów**
 
-- [Centrum zaufania firmy Microsoft](https://www.microsoft.com/trustcenter/default.aspx)
-- [Centrum formantów wspólnych](https://www.microsoft.com/trustcenter/Common-Controls-Hub)
-- [Lista kontrolna z zaCloud Servicesmi](https://www.microsoft.com/trustcenter/Compliance/Due-Diligence-Checklist)
-- [Zgodność według usług, lokalizacji i branży](https://www.microsoft.com/trustcenter/Compliance/default.aspx)
+- [Centrum zaufania firmy Microsoft](https://www.microsoft.com/trust-center)
+- [Centrum formantów wspólnych](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Lista kontrolna z zaCloud Servicesmi](https://www.microsoft.com/trust-center/compliance/due-diligence-checklist)
+- [Zgodność regionalna i Krajowa](https://www.microsoft.com/trust-center/compliance/regional-country-compliance)
 
-Przeźroczyst
+**Przeźroczyst**
 
-- [Jak firma Microsoft zabezpiecza dane klientów w usługach platformy Azure](https://www.microsoft.com/trustcenter/Transparency/default.aspx)
+- [Jak firma Microsoft zabezpiecza dane klientów w usługach platformy Azure](https://www.microsoft.com/trust-center)
 - [Jak firma Microsoft zarządza lokalizacją danych w usługach platformy Azure](https://azuredatacentermap.azurewebsites.net)
-- [Kto w firmie Microsoft może uzyskiwać dostęp do Twoich danych, na jakich warunkach](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
-- [Jak firma Microsoft zabezpiecza dane klientów w usługach platformy Azure](https://www.microsoft.com/trustcenter/Transparency/default.aspx)
-- [Przejrzyj certyfikaty dla usług platformy Azure, centrum przezroczystości](https://www.microsoft.com/trustcenter/Compliance/default.aspx)
+- [Kto w firmie Microsoft może uzyskiwać dostęp do Twoich danych, na jakich warunkach](https://www.microsoft.com/trust-center/privacy/data-access)
+- [Przejrzyj certyfikaty dla usług platformy Azure, centrum przezroczystości](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="next-steps"></a>Następne kroki
 

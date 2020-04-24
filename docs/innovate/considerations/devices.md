@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: f7207b71f88bb311d28c8d1794dde7fddc425a30
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433300"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Środowiska otoczenia: korzystanie z urządzeń
@@ -32,10 +32,10 @@ Standardowe środowisko sieci Web to najpopularniejsza technika tworzenia aplika
 
 Środowiska otoczenia zwykle wymagają więcej niż aplikacji sieci Web w ciągu następującej liczby dni. Dzięki [pomiarowi](./measure.md) i rozpoczęciu pracy [z klientem](./learn.md) zachowanie, które wyzwala potrzebę klienta, może być obserwowane, śledzone i używane do tworzenia większej otoczenia. Poniższa lista zawiera podsumowanie kilku metod integracji rozwiązań otoczenia z poszczególnymi informacjami o każdej z poniższych akapitów.
 
-- **[Środowisko mobilne](#mobile-experience):** Podobnie jak w przypadku laptopów aplikacje mobilne są powszechnie używane w środowiskach klientów. W niektórych sytuacjach może to zapewnić odpowiedni poziom interakcji, aby zapewnić otoczenie rozwiązania.
-- **[Rzeczywistość mieszana](#mixed-reality):** Czasami należy zmienić typowy otoczenie klienta, aby zapewnić interakcję. Ten czynnik tworzy coś w przypadku wartości false, w której klient współdziała z rozwiązaniem i ma zapotrzebną wartość. W takim przypadku rozwiązanie jest otaczające wartość false.
-- **[Rzeczywistość zintegrowana](#integrated-reality):** Przechodzenie bliżej Ambience, zintegrowane rozwiązania o rzeczywistości koncentrują się na korzystaniu z urządzenia, które istnieje w rzeczywistości klienta, aby zintegrować rozwiązanie z naturalnymi zachowaniami. Wirtualny asystent to doskonały przykład integracji rzeczywistości z otaczającym środowiskiem. Mniej znana opcja dotyczy technologii Internet rzeczy (IoT), które integrują urządzenia, które już istnieją w otoczeniu klienta.
-- **[Zastosowana rzeczywistość](#adjusted-reality):** Gdy dowolne z tych rozwiązań w otoczeniu korzysta z analizy predykcyjnej w chmurze do definiowania i zapewniania interakcji z klientem w naturalnym otoczeniu, rozwiązanie ma już wartość rzeczywistość.
+- ** [Środowisko mobilne](#mobile-experience):** Podobnie jak w przypadku laptopów aplikacje mobilne są powszechnie używane w środowiskach klientów. W niektórych sytuacjach może to zapewnić odpowiedni poziom interakcji, aby zapewnić otoczenie rozwiązania.
+- ** [Rzeczywistość mieszana](#mixed-reality):** Czasami należy zmienić typowy otoczenie klienta, aby zapewnić interakcję. Ten czynnik tworzy coś w przypadku wartości false, w której klient współdziała z rozwiązaniem i ma zapotrzebną wartość. W takim przypadku rozwiązanie jest otaczające wartość false.
+- ** [Rzeczywistość zintegrowana](#integrated-reality):** Przechodzenie bliżej Ambience, zintegrowane rozwiązania o rzeczywistości koncentrują się na korzystaniu z urządzenia, które istnieje w rzeczywistości klienta, aby zintegrować rozwiązanie z naturalnymi zachowaniami. Wirtualny asystent to doskonały przykład integracji rzeczywistości z otaczającym środowiskiem. Mniej znana opcja dotyczy technologii Internet rzeczy (IoT), które integrują urządzenia, które już istnieją w otoczeniu klienta.
+- ** [Zastosowana rzeczywistość](#adjusted-reality):** Gdy dowolne z tych rozwiązań w otoczeniu korzysta z analizy predykcyjnej w chmurze do definiowania i zapewniania interakcji z klientem w naturalnym otoczeniu, rozwiązanie ma już wartość rzeczywistość.
 
 Zrozumienie potrzeb klientów i mierzenie wpływu klientów obie pomocne w ustaleniu, czy interakcja urządzenia lub środowisko otoczenia są niezbędne do zweryfikowania hipotez. W przypadku każdego z tych punktów danych następujące sekcje ułatwią znalezienie najlepszego rozwiązania.
 

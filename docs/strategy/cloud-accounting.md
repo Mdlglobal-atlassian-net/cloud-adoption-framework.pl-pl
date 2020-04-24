@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.openlocfilehash: 5c01fc4a0a4f1e05b34d8b9c91d71761a6e86f73
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80431675"
 ---
 <!-- cSpell:ignore CIOs -->
@@ -32,11 +32,11 @@ Gdy program służy jako centrum kosztów, postrzegana wartość jest w dużym s
 
 Aby przezwyciężyć widok centrum kosztów, niektóre dyrektorzy działu informatyki wybrały dla centralnego modelu INFORMATYCZNego księgowości. W modelu tego typu jest on traktowany jak konkurencyjna jednostka biznesowa i element równorzędny do tworzenia przychodów jednostek gospodarczych. W niektórych przypadkach ten model może być całkowicie logiczny. Na przykład niektóre organizacje mają profesjonalny dział usług IT generujący strumień przychodów. Często centralne modele IT nie generują znaczących przychodów, co utrudnia wyjustowanie modelu.
 
-Niezależnie od modelu przychodu centralne modele ewidencjonowania aktywności IT są unikatowe ze względu na to, jak dział IT stanowi o kosztach. W tradycyjnym modelu IT zespół IT rejestruje koszty i płaci te koszty z udostępnionych funduszy, takich jak operacje i konserwacja (O & M) lub dedykowane konto zysków i strat (P & L).
+Niezależnie od modelu przychodu centralne modele ewidencjonowania aktywności IT są unikatowe ze względu na to, jak dział IT stanowi o kosztach. W tradycyjnym modelu IT zespół IT rejestruje koszty i płaci te koszty z udostępnionych funduszy, takich jak operacje i konserwacja (O&M) lub dedykowane konto zysków i strat (P&L).
 
-W centralnym modelu księgowości IT zespół IT oznacza usługi świadczone na potrzeby obciążania, zarządzania i innych szacowanych kosztów. Następnie należy rozrachunkować konkurencyjne jednostki biznesowe dla oznaczonych usług. W tym modelu CIO oczekuje się zarządzania P & L związanego z sprzedażą tych usług. Pozwala to na tworzenie niepełnych kosztów IT i rywalizacji między centralnym działem IT i jednostkami biznesowymi, szczególnie w przypadku konieczności ponoszenia kosztów lub braku zgody na umowy SLA. W miarę możliwości technologii lub zmiany rynkowej każda nowa technologia spowodowałaby zakłócenie w centralnej & L, co utrudnia transformację.
+W centralnym modelu księgowości IT zespół IT oznacza usługi świadczone na potrzeby obciążania, zarządzania i innych szacowanych kosztów. Następnie należy rozrachunkować konkurencyjne jednostki biznesowe dla oznaczonych usług. W tym modelu CIO oczekuje się zarządzania P&L związanego z sprzedażą tych usług. Pozwala to na tworzenie niepełnych kosztów IT i rywalizacji między centralnym działem IT i jednostkami biznesowymi, szczególnie w przypadku konieczności ponoszenia kosztów lub braku zgody na umowy SLA. W miarę możliwości technologii lub zmiany rynkowej każda nowa technologia spowodowałaby zakłócenie w centralnej&L, co utrudnia transformację.
 
-## <a name="chargeback"></a>Obciążenie zwrotne
+## <a name="chargeback"></a>Obciążenia zwrotnego
 
 Jednym z typowych pierwszych kroków w przypadku zmiany jego reputacji jako centrum kosztów jest implementacja obciążenia zwrotnego modelu ewidencjonowania aktywności. Ten model jest szczególnie powszechny w mniejszych przedsiębiorstwach lub wysoce wydajnych organizacjach IT. W modelu obciążenia zwrotnego wszystkie koszty działu IT powiązane z konkretną jednostką biznesową są traktowane jak koszty operacyjne w budżecie jednostki biznesowej. Ta metoda ogranicza skumulowany wpływ na IT, co pozwala na bardziej jasne zwiększenie wartości biznesowej.
 
@@ -52,7 +52,7 @@ Przekształcenia w chmurze obejmują rozwiązania do tych i inne konsekwencje zw
 
 ## <a name="showback-or-awareness-back"></a>Przewidywanych kosztów lub świadomość
 
-W przypadku większych przedsiębiorstw model przewidywanych kosztów lub z obsługą świadomości jest bezpieczniejszym pierwszym krokiem przejścia z centrum kosztów do centrum wartości. Ten model nie ma wpływu na księgowość finansową. W rzeczywistości P & LS każdej organizacji nie zmieni się. Największe przesunięcia jest w sposób myślenia i świadomości. W modelu "przewidywanych kosztów" lub "rozpoznawanie świadomości" zarządza scentralizowaną, skonsolidowaną mocą zakupu jako agentem dla firmy. W raportach z powrotem do firmy dział IT ponosi wszelkie bezpośrednie koszty do odpowiedniej jednostki biznesowej, co zmniejsza postrzegany budżet bezpośrednio przez dział IT. Planuje również budżety na podstawie potrzeb skojarzonych jednostek biznesowych, co pozwala na dokładniejsze uwzględnienie kosztów związanych z czystą inicjatywy IT.
+W przypadku większych przedsiębiorstw model przewidywanych kosztów lub z obsługą świadomości jest bezpieczniejszym pierwszym krokiem przejścia z centrum kosztów do centrum wartości. Ten model nie ma wpływu na księgowość finansową. W rzeczywistości P&LS każdej organizacji nie zmieni się. Największe przesunięcia jest w sposób myślenia i świadomości. W modelu "przewidywanych kosztów" lub "rozpoznawanie świadomości" zarządza scentralizowaną, skonsolidowaną mocą zakupu jako agentem dla firmy. W raportach z powrotem do firmy dział IT ponosi wszelkie bezpośrednie koszty do odpowiedniej jednostki biznesowej, co zmniejsza postrzegany budżet bezpośrednio przez dział IT. Planuje również budżety na podstawie potrzeb skojarzonych jednostek biznesowych, co pozwala na dokładniejsze uwzględnienie kosztów związanych z czystą inicjatywy IT.
 
 Ten model zapewnia równowagę między rzeczywistym modelem obciążenia zwrotnego i bardziej tradycyjnymi modelami ewidencjonowania aktywności IT.
 

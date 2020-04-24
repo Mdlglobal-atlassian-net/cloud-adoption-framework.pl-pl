@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 7fa026a06f2f42fda09783a29554e2a6c4797fcd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434420"
 ---
 <!-- cSpell:ignore MPLS -->
@@ -88,4 +88,4 @@ Wdrożenie wielochmurowe powinno być zawarte w miejscu, w którym jest wymagane
 W wielu dużych przedsiębiorstwach może być blokowanych przez pięć dyscyplin zarządzania chmurą. W następnym artykule zawarto kilka dodatkowych pomysłów dotyczących tworzenia zespołu sportowego, aby pomóc w zapewnieniu długoterminowej sukcesów w chmurze.
 
 > [!div class="nextstepaction"]
-> [Wiele warstw ładu](./multiple-layers-of-governance.md)
+> [Wiele warstw nadzoru](./multiple-layers-of-governance.md)

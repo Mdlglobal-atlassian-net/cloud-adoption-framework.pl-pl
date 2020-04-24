@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 5af612501dd2fb8bb73ada0e9dfcd4f3ee784e35
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433524"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metryki linii bazowej tożsamości, wskaźniki i tolerancja ryzyka
@@ -47,7 +47,7 @@ We wczesnych etapach wdrażania chmury Pracuj z zespołem ds. zabezpieczeń IT i
 Po utworzeniu planu bazowego należy ustanowić minimalne wzorce reprezentujące nieakceptowalny wzrost w zidentyfikowanych zagrożeniach. Te progi działają jako wyzwalacze, gdy konieczne jest podjęcie działań w celu rozwiązania tych zagrożeń. Poniżej przedstawiono kilka przykładów metryk związanych z tożsamościami, takich jak te omówione powyżej, mogą uzasadniać zwiększenie inwestycji w dyscypliny linii bazowej tożsamości.
 
 - **Wyzwalacz numeru konta użytkownika.** Firma z więcej niż _x_ użytkownikami, grupami lub innymi obiektami zarządzanymi w systemach tożsamości może skorzystać z inwestycji w dyscypliny linii bazowej tożsamości, aby zapewnić wydajne zarządzanie na wielu kontach.
-- **Lokalny wyzwalacz zależności tożsamości.** Firma planuje migrację obciążeń do chmury wymagającej starszych możliwości uwierzytelniania lub uwierzytelniania wieloskładnikowego innej firmy, aby zmniejszyć ryzyko związane z refaktoryzacją lub dodatkową chmurą wdrożenie infrastruktury.
+- **Lokalny wyzwalacz zależności tożsamości.** Firma planuje migrację obciążeń do chmury wymagającej starszych możliwości uwierzytelniania lub uwierzytelniania wieloskładnikowego innej firmy, aby zmniejszyć ryzyko związane z refaktoryzacją lub dodatkowym wdrożeniem infrastruktury chmurowej.
 - **Wyzwalacz złożoności usług katalogowych.** Firma utrzymująca więcej niż _x_ numerów of_ poszczególne lasy, domeny i dzierżawy katalogu powinny inwestować w dyscyplinę bazową tożsamości, aby zmniejszyć ryzyko związane z zarządzaniem kontami oraz problemy z wydajnością związane z wieloma poświadczeniami użytkowników rozmieszczonych w wielu systemach.
 - **Wyzwalacz usług katalogowych hostowanych w chmurze.** Firma zarządza maszynami wirtualnymi _x_ Active Directory Server (VM) hostowanymi w chmurze lub mającymi _x_ jednostki organizacyjne (OU) zarządzane na tych serwerach w chmurze, może korzystać z inwestycji w dyscypliny podstawowej tożsamości w celu optymalizacji integracji z dowolnymi lokalnymi lub innymi zewnętrznymi usługami tożsamości.
 - **Wyzwalacz Federacji.** Firma implementująca federacji tożsamości z zewnętrznymi systemami linii bazowej tożsamości _x_ może korzystać z inwestycji w dyscypliny linii bazowej tożsamości, aby zapewnić spójne zasady organizacyjne w obrębie federacyjnych elementów członkowskich.

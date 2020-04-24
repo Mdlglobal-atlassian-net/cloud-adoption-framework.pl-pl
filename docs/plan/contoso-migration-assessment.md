@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5b70980d1c8f27f286aaf1173970e2edd26f60e0
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: b91652ac2dd06882551c6e9474d5c0e0574deda2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508427"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80889738"
 ---
-<!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
+<!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL smarthotelapp ctypes ctypeslib prereqs -->
 
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Ocena obciążeń lokalnych pod kątem migracji do platformy Azure
 
@@ -46,18 +46,18 @@ Na tym diagramie przedstawiono bieżącą infrastrukturę lokalną firmy Contoso
 - Firma Contoso ma trzy dodatkowe oddziały lokalne na terenie Stanów Zjednoczonych.
 - Główne centrum danych jest połączone z Internetem łączem światłowodowym Metro Ethernet (500 MB/s).
 - Każdy oddział jest połączony lokalnie z Internetem przy użyciu połączeń klasy biznesowej z tunelami IPsec sieci VPN z głównym centrum danych. Taka konfiguracja zapewnia trwałe połączenie całej sieci firmy Contoso i optymalizację łączności z Internetem.
-- Główne centrum danych jest w pełni zwirtualizowane przy użyciu oprogramowania VMware. Firma Contoso ma dwa hosty wirtualizacji ESXi 6.5, które są zarządzane za pomocą programu vCenter Server 6.5.
+- Główne centrum danych jest w pełni zwirtualizowane przy użyciu programu VMware. Firma Contoso ma dwa hosty wirtualizacji ESXi 6.5, które są zarządzane za pomocą programu vCenter Server 6.5.
 - Do zarządzania tożsamościami firma Contoso używa usługi Active Directory. Serwery DNS firmy Contoso działają w sieci wewnętrznej.
 - Kontrolery domeny w centrum danych działają na maszynach wirtualnych VMware. Kontrolery domeny w lokalnych oddziałach działają na serwerach fizycznych.
 
-## <a name="business-drivers"></a>Cele biznesowe
+## <a name="business-drivers"></a>Biznesowa siła napędowa
 
 Zespół liderów IT firmy Contoso w ścisłej współpracy z partnerami biznesowymi firmy ustalił, co firma będzie chciała osiągnąć dzięki migracji:
 
 - **Reagowanie na rosnące potrzeby biznesowe.** Firma Contoso rozwija się. W związku z tym zwiększyło się obciążenie lokalnych systemów i infrastruktury firmy.
 - **Zwiększenie wydajności.** Firma Contoso chce usunąć niepotrzebne procedury oraz usprawnić procesy dla swoich deweloperów i użytkowników. Firma chce, aby dział IT był szybki i nie tracił czasu ani pieniędzy, a firma mogła dzięki temu szybciej obsługiwać swoich klientów.
-- **Zwiększenie elastyczności.** Firma Contoso chce lepiej odpowiadać na zapotrzebowania w branży. Chce być w stanie szybciej reagować na zamiany zachodzące na rynku, aby odnosić sukcesy w gospodarce światowej. Firma Contoso nie chce utrudniać pracy ani stać się przeszkodą biznesową.
-- **Skalowalność.** W miarę rozwoju firmy Contoso jej dział IT musi zapewnić systemy, które będą mogły rosnąć w tym samym tempie.
+- **Zwiększenie elastyczności.** Dział IT firmy Contoso chce lepiej odpowiadać na zapotrzebowania biznesowe. Chce być w stanie szybciej reagować na zamiany zachodzące na rynku, aby odnosić sukcesy w gospodarce światowej. Firma Contoso nie chce utrudniać pracy ani stać się przeszkodą biznesową.
+- **Zasięgu.** W miarę rozwoju firmy Contoso jej dział IT musi zapewnić systemy, które będą mogły rosnąć w tym samym tempie.
 
 ## <a name="assessment-goals"></a>Cele oceny
 
@@ -74,7 +74,7 @@ Do oceny migracji firma Contoso używa narzędzi firmy Microsoft. Narzędzia te 
 
 Technologia | Opis | Koszty
 --- | --- | ---
-[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia Data Migration Assistant do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie Data Migration Assistant ocenia równoważność funkcji między źródłowymi i docelowymi elementami SQL. Wynikiem działania tego narzędzia są zalecenia dotyczące poprawy wydajności i niezawodności. | Narzędzie Data Migration Assistant można bezpłatnie pobrać.
+[Asystent migracji danych](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia Data Migration Assistant do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie Data Migration Assistant ocenia równoważność funkcji między źródłowymi i docelowymi elementami SQL. Wynikiem działania tego narzędzia są zalecenia dotyczące poprawy wydajności i niezawodności. | Narzędzie Data Migration Assistant można bezpłatnie pobrać.
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną.
 [Mapa usługi](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Usługa Azure Migrate za pomocą rozwiązania Service Map przedstawia zależności między maszynami, które firma chce zmigrować. | Rozwiązanie Service Map jest częścią dzienników usługi Azure Monitor. Obecnie firma Contoso może używać rozwiązania Service Map przez 180 dni bez naliczania opłat.
 
@@ -144,7 +144,8 @@ Firma Contoso przeprowadza ocenę w następujący sposób:
 
 Teraz firma Contoso może przeprowadzić ocenę lokalnej bazy danych SQL Server pod kątem aplikacji SmartHotel360.
 
-1. Z poziomu narzędzia Data Migration Assistant przedstawiciel firmy Contoso wybiera pozycję **New** (Nowy) > **Assessment** (Ocena), a następnie nadaje ocenie nazwę taką samą jak nazwa projektu.
+1. W Data Migration Assistant firma Contoso wybiera **nową** > **ocenę**, a następnie przekazuje ocenę nazwy projektu.
+
 2. W obszarze **Source server type**, (Typ serwera źródłowego) przedstawiciel firmy Contoso wybiera pozycję **SQL Server**, a w obszarze **Target Server type** (Typ serwera docelowego) pozycję **SQL Server on Azure Virtual Machines** (Program SQL Server w usłudze Azure Virtual Machines)
 
     ![Data Migration Assistant — wybór źródła](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-1.png)
@@ -153,7 +154,9 @@ Teraz firma Contoso może przeprowadzić ocenę lokalnej bazy danych SQL Server 
     > Obecnie narzędzie Data Migration Assistant nie obsługuje przeprowadzania oceny migracji do wystąpienia zarządzanego usługi Azure SQL Database. Aby obejść ten problem, firma Contoso używa programu SQL Server na maszynie wirtualnej platformy Azure jako tymczasowego obiektu docelowego dla oceny.
 
 3. W obszarze **Select Target Version**, (Wybierz wersję docelową) przedstawiciel firmy Contoso wybiera program SQL Server 2017 jako wersję docelową. Firma Contoso musi wybrać tę wersję, ponieważ jest to wersja używana przez wystąpienie zarządzane usługi SQL Database.
+
 4. Przedstawiciel firmy Contoso wybiera raporty, które ułatwiają odnajdywanie informacji dotyczących zgodności i nowych funkcji:
+
     - Raport **Compatibility issues** (Problemy ze zgodnością) informuje o zmianach, które mogą uniemożliwić migrację lub które wymagają drobnych korekt przed migracją. Ten raport zawiera przydatne dla firmy Contoso informacje o wszelkich obecnie używanych funkcjach, które są przestarzałe. Problemy są uporządkowane według poziomu zgodności.
     - Raport **New feature recommendation** (Zalecenia dotyczące nowych funkcji) informuje o nowych funkcjach docelowej platformy programu SQL Server, które można wykorzystać w bazie danych po zakończeniu migracji. Zalecenia dotyczące nowych funkcji są zorganizowane pod nagłówkami **Performance** (Wydajność), **Security** (Zabezpieczenia) i **Storage** (Magazyn).
 
@@ -164,6 +167,7 @@ Teraz firma Contoso może przeprowadzić ocenę lokalnej bazy danych SQL Server 
     ![Data Migration Assistant — nawiązywanie połączenia z serwerem](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-3.png)
 
 6. W obszarze **Add source** (Dodaj źródło) przedstawiciel firmy Contoso dodaje bazę danych, która ma zostać oceniona, a następnie wybiera pozycję **Next** (Dalej), aby rozpocząć ocenę.
+
 7. Tworzona jest ocena.
 
     ![Data Migration Assistant — tworzenie oceny](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-4.png)
@@ -248,7 +252,7 @@ Skonfiguruj nowy projekt usługi Azure Migrate w następujący sposób.
 
 1. Wybierz opcję **Dalej**.
 
-1. W **narzędziu Wybierz ocenę**wybierz pozycję **Azure Migrate: Ocena serwera** > **dalej**.
+1. W **narzędziu Wybierz ocenę**wybierz pozycję **Azure Migrate: Ocena** > serwera**dalej**.
 
     ![Azure Migrate — narzędzie do oceny](../migrate/azure-best-practices/media/contoso-migration-assessment/assessment-tool.png)
 
@@ -260,9 +264,9 @@ Skonfiguruj nowy projekt usługi Azure Migrate w następujący sposób.
 
 ### <a name="download-the-collector-appliance"></a>Pobieranie urządzenia modułu zbierającego
 
-1. W obszarze **cele migracji** > **serwery** > **Azure Migrate: Ocena serwera**, wybierz pozycję **odkryj**.
+1. W obszarze**serwery** >  **celów** > migracji**Azure Migrate: Ocena serwera**, wybierz pozycję **odkryj**.
 
-1. W obszarze **odnajdywanie maszyn** > **są zwirtualizowane maszyny?** wybierz opcję **tak, za pomocą funkcji hypervisor VMware vSphere**.
+1. W obszarze **odnajdywanie** > maszyn**są zwirtualizowane maszyny?** wybierz pozycję tak, aby uzyskać **VMware vSphere funkcji hypervisor**.
 
 1. Wybierz pozycję **Pobierz** , aby pobrać. Plik szablonu komórki jajowe.
 
@@ -274,33 +278,33 @@ Przed wdrożeniem maszyny wirtualnej przedstawiciel firmy Contoso sprawdza zabez
 
 1. Na komputerze, na którym plik został pobrany, przedstawiciel firmy Contoso otwiera okno wiersza polecenia administratora.
 
-1. Następnie uruchamia następujące polecenie, aby wygenerować wartość skrótu dla pliku OVA:
+2. Następnie uruchamia następujące polecenie, aby wygenerować wartość skrótu dla pliku OVA:
 
     `C:\>CertUtil -HashFile <file_location> [Hashing Algorithm]`
 
-    **Przykład:**
+    **Przyklad**
 
-    `C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
+    ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
 
-1. Wygenerowany skrót powinien być zgodny z wartościami skrótu opisanymi w sekcji [Weryfikowanie zabezpieczeń](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) w artykule [Ocena maszyn wirtualnych VMware na potrzeby migracji](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) .
+3. Wygenerowany skrót powinien być zgodny z wartościami skrótu opisanymi w sekcji [Weryfikowanie zabezpieczeń](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) w artykule [Ocena maszyn wirtualnych VMware na potrzeby migracji](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) .
 
 ### <a name="create-the-collector-appliance"></a>Tworzenie urządzenia modułu zbierającego
 
 Teraz przedstawiciel firmy Contoso może zaimportować pobrany plik do wystąpienia programu vCenter Server i zaprowizować maszynę wirtualną urządzenia modułu zbierającego:
 
-1. W konsoli klienta vSphere przedstawiciel firmy Contoso wybiera pozycję **File** (Plik) > **Deploy OVF Template** (Wdróż szablon OVF).
+1. W konsoli klienta vSphere firmy **contoso wybiera** > **szablon Deploying OVFs**.
 
     ![Klient internetowy programu vSphere — wdrażanie szablonu OVF](../migrate/azure-best-practices/media/contoso-migration-assessment/vcenter-wizard.png)
 
-1. W kreatorze wdrażania szablonu OVF przedstawiciel firmy Contoso wybiera pozycję **Source** (Źródło), a następnie określa lokalizację pliku OVA.
+2. W kreatorze wdrażania szablonu OVF przedstawiciel firmy Contoso wybiera pozycję **Source** (Źródło), a następnie określa lokalizację pliku OVA.
 
-1. W polu **Name and Location** (Nazwa i lokalizacja) przedstawiciel firmy Contoso określa nazwę wyświetlaną dla maszyny wirtualnej modułu zbierającego. Następnie wybiera lokalizację magazynu, w którym będzie hostowana maszyna wirtualna. Przedstawiciel firmy Contoso określa również host lub klaster, na którym będzie uruchamiane urządzenie modułu zbierającego.
+3. W polu **Name and Location** (Nazwa i lokalizacja) przedstawiciel firmy Contoso określa nazwę wyświetlaną dla maszyny wirtualnej modułu zbierającego. Następnie wybiera lokalizację magazynu, w którym będzie hostowana maszyna wirtualna. Przedstawiciel firmy Contoso określa również host lub klaster, na którym będzie uruchamiane urządzenie modułu zbierającego.
 
-1. W obszarze **Storage** (Magazyn) przedstawiciel firmy Contoso określa lokalizację magazynu. W polu **Disk Format** (Format dysku) przedstawiciel firmy Contoso wybiera sposób aprowizowania magazynu.
+4. W obszarze **Storage** (Magazyn) przedstawiciel firmy Contoso określa lokalizację magazynu. W polu **Disk Format** (Format dysku) przedstawiciel firmy Contoso wybiera sposób aprowizowania magazynu.
 
-1. W obszarze **Network Mapping** (Mapowanie sieci) przedstawiciel firmy Contoso określa sieć, w której ma zostać nawiązane połączenie z maszyną wirtualną modułu zbierającego. Sieć musi mieć połączenie z Internetem w celu wysyłania metadanych do platformy Azure.
+5. W obszarze **Network Mapping** (Mapowanie sieci) przedstawiciel firmy Contoso określa sieć, w której ma zostać nawiązane połączenie z maszyną wirtualną modułu zbierającego. Sieć musi mieć połączenie z Internetem w celu wysyłania metadanych do platformy Azure.
 
-1. Przedstawiciel firmy Contoso przegląda ustawienia, a następnie wybiera pozycję **Power on after deployment** (Włącz po zakończeniu wdrażania) > **Finish** (Zakończ). Po utworzeniu urządzenia zostaje wyświetlony komunikat potwierdzający pomyślne zakończenie operacji.
+6. Firma Contoso przegląda ustawienia, a następnie wybiera pozycję **Włącz po** > **zakończeniu**wdrażania. Po utworzeniu urządzenia zostaje wyświetlony komunikat potwierdzający pomyślne zakończenie operacji.
 
 ### <a name="run-the-collector-to-discover-vms"></a>Uruchamianie modułu zbierającego w celu odnalezienia maszyn wirtualnych
 
@@ -308,26 +312,28 @@ Teraz przedstawiciel firmy Contoso uruchamia moduł zbierający w celu odnalezie
 
 1. W konsoli klienta vSphere przedstawiciel firmy Contoso wybiera pozycję **Open Console** (Otwórz konsolę). Przedstawiciel firmy Contoso określa i akceptuje postanowienia licencyjne oraz preferencje dotyczące haseł dla maszyny wirtualnej modułu zbierającego.
 
-1. Na pulpicie firma Contoso wybiera skrót do **Menedżera konfiguracji urządzenia platformy Microsoft Azure**.
+2. Na pulpicie firma Contoso wybiera skrót do **Menedżera konfiguracji urządzenia platformy Microsoft Azure**.
 
     ![Konsola klienta vSphere — skrót do modułu zbierającego](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-shortcut-v2.png)
 
-1. W usłudze Azure Migrate Collector przedstawiciel firmy Contoso wybiera pozycję **Skonfiguruj wymagania wstępne**. Przedstawiciel firmy Contoso akceptuje postanowienia licencyjne i zapoznaje się z informacjami innych firm.
+3. W usłudze Azure Migrate Collector przedstawiciel firmy Contoso wybiera pozycję **Skonfiguruj wymagania wstępne**. Przedstawiciel firmy Contoso akceptuje postanowienia licencyjne i zapoznaje się z informacjami innych firm.
 
-1. Moduł zbierający sprawdza, czy maszyna wirtualna ma dostęp do Internetu, czy jest zsynchronizowany czas oraz czy jest uruchomiona usługa modułu zbierającego. (Usługa modułu zbierającego jest instalowana domyślnie na maszynie wirtualnej). Firma Contoso instaluje również zestaw SDK tworzenia dysków wirtualnych VMware vSphere.
+4. Moduł zbierający sprawdza, czy maszyna wirtualna ma dostęp do Internetu, czy jest zsynchronizowany czas oraz czy jest uruchomiona usługa modułu zbierającego. (Usługa modułu zbierającego jest instalowana domyślnie na maszynie wirtualnej). Firma Contoso instaluje również zestaw SDK tworzenia dysków wirtualnych VMware vSphere.
 
     > [!NOTE]
     > Przyjęto tu założenie, że maszyna wirtualna ma bezpośredni dostęp do Internetu, bez serwera proxy.
 
     ![Azure Migrate Collector — sprawdzanie wymagań wstępnych](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-1. Zaloguj się do **konta** platformy Azure i wybierz wcześniej utworzoną subskrypcję oraz projekt usługi Migrate. Wprowadź również nazwę **urządzenia** , aby można było je zidentyfikować w Azure Portal.
-1. W oknie **Określanie szczegółów programu vCenter Server** przedstawiciel firmy Contoso wprowadza nazwę (FQDN) lub adres IP wystąpienia programu vCenter Server i poświadczenia tylko do odczytu używane do odnajdywania.
-1. Przedstawiciel firmy Contoso wybiera zakres odnajdowania maszyn wirtualnych. Moduł zbierający może odnajdywać tylko maszyny wirtualne znajdujące się w określonym zakresie. Zakresem może być określony folder, centrum danych albo klaster.
+5. Zaloguj się do **konta** platformy Azure i wybierz wcześniej utworzoną subskrypcję oraz projekt usługi Migrate. Wprowadź również nazwę **urządzenia** , aby można było je zidentyfikować w Azure Portal.
+
+6. W oknie **Określanie szczegółów programu vCenter Server** przedstawiciel firmy Contoso wprowadza nazwę (FQDN) lub adres IP wystąpienia programu vCenter Server i poświadczenia tylko do odczytu używane do odnajdywania.
+
+7. Przedstawiciel firmy Contoso wybiera zakres odnajdowania maszyn wirtualnych. Moduł zbierający może odnajdywać tylko maszyny wirtualne znajdujące się w określonym zakresie. Zakresem może być określony folder, centrum danych albo klaster.
 
     ![Określanie szczegółów programu vCenter Server](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-connect-vcenter.png)
 
-1. Moduł zbierający zacznie teraz odnajdywać i zbierać informacje o środowisku firmy Contoso.
+8. Moduł zbierający zacznie teraz odnajdywać i zbierać informacje o środowisku firmy Contoso.
 
     ![Wyświetlanie postępu zbierania](../migrate/azure-best-practices/media/contoso-migration-assessment/migrate-discovery.png)
 
@@ -335,11 +341,11 @@ Teraz przedstawiciel firmy Contoso uruchamia moduł zbierający w celu odnalezie
 
 Po zakończeniu zbierania przedstawiciel firmy Contoso sprawdza, czy maszyny wirtualne są widoczne w portalu:
 
-1. W projekcie usługi Azure Migrate przedstawiciel firmy Contoso wybiera pozycję **Serwery** > **Odnalezione serwery**. Przedstawiciel firmy Contoso sprawdza, czy są widoczne maszyny wirtualne, które powinny zostać odnalezione.
+1. W projekcie Azure Migrate contoso wybiera **serwery** > **odnalezione**serwerów. Przedstawiciel firmy Contoso sprawdza, czy są widoczne maszyny wirtualne, które powinny zostać odnalezione.
 
     ![Azure Migrate — odnalezione maszyny](../migrate/azure-best-practices/media/contoso-migration-assessment/discovery-complete.png)
 
-1. Obecnie maszyny nie mają zainstalowanych agentów usługi Azure Migrate. Przedstawiciel firmy Contoso musi zainstalować agentów, aby wyświetlić zależności.
+2. Obecnie maszyny nie mają zainstalowanych agentów usługi Azure Migrate. Przedstawiciel firmy Contoso musi zainstalować agentów, aby wyświetlić zależności.
 
     ![Azure Migrate — wymagana jest Instalacja agenta](../migrate/azure-best-practices/media/contoso-migration-assessment/machines-no-agent.png)
 
@@ -357,11 +363,11 @@ Aby zachować kopię maszyn wirtualnych przed ich zmodyfikowaniem, przedstawicie
 
 1. W obszarze **Maszyny** przedstawiciel firmy Contoso wybiera maszynę. W kolumnie **Zależności** przedstawiciel firmy Contoso wybiera pozycję **Wymaga instalacji**.
 
-1. W okienku **Odnajdź maszyny** przedstawiciel firmy Contoso wykonuje następujące czynności:
+2. W okienku **Odnajdź maszyny** przedstawiciel firmy Contoso wykonuje następujące czynności:
     - Pobiera Microsoft Monitoring Agent (MMA) i agenta zależności Microsoft dla każdej maszyny wirtualnej z systemem Windows.
     - Pobiera MMA i agenta zależności dla każdej maszyny wirtualnej z systemem Linux.
 
-1. Przedstawiciel firmy Contoso kopiuje identyfikator i klucz obszaru roboczego. Identyfikator i klucz obszaru roboczego będzie potrzebny podczas instalowania agenta MMA.
+3. Przedstawiciel firmy Contoso kopiuje identyfikator i klucz obszaru roboczego. Identyfikator i klucz obszaru roboczego będzie potrzebny podczas instalowania agenta MMA.
 
     ![Pobieranie agenta](../migrate/azure-best-practices/media/contoso-migration-assessment/download-agents.png)
 
@@ -373,23 +379,23 @@ Przedstawiciel firmy Contoso uruchamia instalację na każdej maszynie wirtualne
 
 1. Przedstawiciel firmy Contoso klika dwukrotnie pobranego agenta.
 
-1. Na stronie **Folder docelowy** przedstawiciel firmy Contoso pozostawia domyślny folder instalacji, a następnie wybiera pozycję **Dalej**.
+2. Na stronie **Folder docelowy** przedstawiciel firmy Contoso pozostawia domyślny folder instalacji, a następnie wybiera pozycję **Dalej**.
 
-1. W obszarze **Opcje instalacji agenta** przedstawiciel firmy Contoso wybiera pozycję **Połącz agenta z usługą Azure Log Analytics** > **Dalej**.
+3. W obszarze **Opcje instalacji agenta** przedstawiciel firmy Contoso wybiera pozycję **Połącz agenta z usługą Azure Log Analytics** > **Dalej**.
 
     ![Konfiguracja agenta Microsoft Monitoring Agent — opcje instalacji agenta](../migrate/azure-best-practices/media/contoso-migration-assessment/mma-install.png)
 
-1. W obszarze **Azure Log Analytics** przedstawiciel firmy Contoso wkleja identyfikator i klucz obszaru roboczego skopiowane z portalu.
+4. W obszarze **Azure Log Analytics** przedstawiciel firmy Contoso wkleja identyfikator i klucz obszaru roboczego skopiowane z portalu.
 
     ![Konfiguracja agenta Microsoft Monitoring Agent — Azure Log Analytics](../migrate/azure-best-practices/media/contoso-migration-assessment/mma-install2.png)
 
-1. W okienku **Gotowe do instalacji** przedstawiciel firmy Contoso instaluje agenta MMA.
+5. W okienku **Gotowe do instalacji** przedstawiciel firmy Contoso instaluje agenta MMA.
 
 #### <a name="install-the-dependency-agent-on-windows-vms"></a>Instalowanie Agenta zależności na maszynach wirtualnych z systemem Windows
 
 1. Contoso klika dwukrotnie pobranego agenta zależności.
 
-1. Następnie akceptuje postanowienia licencyjne i czeka na zakończenie instalacji.
+2. Następnie akceptuje postanowienia licencyjne i czeka na zakończenie instalacji.
 
     ![Konfiguracja Agent zależności — Instalowanie](../migrate/azure-best-practices/media/contoso-migration-assessment/dependency-agent.png)
 
@@ -414,7 +420,7 @@ Przedstawiciel firmy Contoso uruchamia instalację na każdej maszynie wirtualne
     - Identyfikator obszaru roboczego i klucz podstawowy znajdują się w obszarze roboczym usługi Log Analytics w witrynie Azure Portal. Wybierz pozycję **Ustawienia**, a następnie kartę **Połączone źródła**.
     - Uruchom następujące polecenia, aby pobrać agenta usługi Log Analytics, zweryfikować sumę kontrolną i zainstalować oraz dołączyć agenta:
 
-    `wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w 6b7fcaff-7efb-4356-ae06-516cacf5e25d -s k7gAMAw5Bk8pFVUTZKmk2lG4eUciswzWfYLDTxGcD8pcyc4oT8c6ZRgsMy3MmsQSHuSOcmBUsCjoRiG2x9A8Mg==`
+        `wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w 6b7fcaff-7efb-4356-ae06-516cacf5e25d -s k7gAMAw5Bk8pFVUTZKmk2lG4eUciswzWfYLDTxGcD8pcyc4oT8c6ZRgsMy3MmsQSHuSOcmBUsCjoRiG2x9A8Mg==`
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>Instalowanie Agenta zależności na maszynach wirtualnych z systemem Linux
 
@@ -422,7 +428,7 @@ Po zainstalowaniu MMA firmy Contoso instaluje agenta zależności na maszynach w
 
 1. Agent zależności jest instalowany na komputerach z systemem Linux przy użyciu InstallDependencyAgent-Linux64. bin, skryptu powłoki, który ma samowyodrębniający się plik binarny. Przedstawiciel firmy Contoso uruchamia ten plik przy użyciu polecenia sh lub dodaje uprawnienia do wykonywania do samego pliku.
 
-1. Firma Contoso instaluje agenta zależności systemu Linux jako element główny:
+2. Firma Contoso instaluje agenta zależności systemu Linux jako element główny:
 
     `wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s`
 
@@ -436,20 +442,20 @@ Przedstawiciel firmy Contoso może teraz sprawdzić zależności maszyny i utwor
 
     ![Azure Migrate — wyświetlanie zależności maszyn](../migrate/azure-best-practices/media/contoso-migration-assessment/view-machine-dependencies.png)
 
-1. W przypadku maszyny SQLVM mapa zależności zawiera następujące informacje:
+2. W przypadku maszyny SQLVM mapa zależności zawiera następujące informacje:
 
     - Grupy procesów lub procesy z aktywnymi połączeniami sieciowymi uruchomione na maszynie SQLVM w określonym przedziale czasu (domyślnie przez godzinę).
     - Połączenia przychodzące TCP (klienta) do wszystkich zależnych maszyn i połączenia wychodzące TCP (serwera) z wszystkich zależnych maszyn.
     - Maszyny zależne z zainstalowanymi agentami usługi Azure Migrate są wyświetlane jako osobne pola.
     - W przypadku maszyn bez zainstalowanych agentów są wyświetlane informacje o porcie i adresie IP.
 
-1. W przypadku maszyn z zainstalowanym agentem (WEBVM) przedstawiciel firmy Contoso wybiera pole komputera, aby wyświetlić więcej informacji. Informacje obejmują nazwę FQDN, system operacyjny i adres MAC.
+3. W przypadku maszyn z zainstalowanym agentem (WEBVM) przedstawiciel firmy Contoso wybiera pole komputera, aby wyświetlić więcej informacji. Informacje obejmują nazwę FQDN, system operacyjny i adres MAC.
 
     ![Azure Migrate — wyświetlanie zależności grupy](../migrate/azure-best-practices/media/contoso-migration-assessment/sqlvm-dependencies.png)
 
-1. Przedstawiciel firmy Contoso wybiera maszyny wirtualne, które mają zostać dodane do grupy (SQLVM i WEBVM). Firma Contoso utrzymuje klucz `Ctrl` podczas klikania, aby wybrać wiele maszyn wirtualnych.
+4. Przedstawiciel firmy Contoso wybiera maszyny wirtualne, które mają zostać dodane do grupy (SQLVM i WEBVM). Przedstawiciel firmy Contoso przytrzymuje podczas klikania wciśnięty klawisz CTRL, aby wybrać wiele maszyn wirtualnych.
 
-1. Przedstawiciel firmy Contoso wybiera pozycję **Utwórz grupę**, a następnie wprowadza nazwę (**smarthotelapp**).
+5. Przedstawiciel firmy Contoso wybiera pozycję **Utwórz grupę**, a następnie wprowadza nazwę (**smarthotelapp**).
 
     > [!NOTE]
     > Aby wyświetlić bardziej szczegółowe zależności, możesz rozszerzyć zakres czasu. Możesz wybrać przedział lub datę początkową i datę końcową.
@@ -460,7 +466,7 @@ Przedstawiciel firmy Contoso może teraz sprawdzić zależności maszyny i utwor
 
     ![Azure Migrate — tworzenie oceny](../migrate/azure-best-practices/media/contoso-migration-assessment/run-vm-assessment.png)
 
-1. Aby wyświetlić ocenę, przedstawiciel firmy Contoso wybiera pozycję **Zarządzaj** > **Oceny**.
+2. Aby wyświetlić ocenę, firma Contoso wybiera pozycję **Zarządzaj** > **ocenami**.
 
 Przedstawiciel firmy Contoso korzysta z domyślnych ustawień oceny, ale możesz [je dostosować](https://docs.microsoft.com/azure/migrate/how-to-modify-assessment).
 

@@ -1,5 +1,5 @@
 ---
-title: Projekt i operacje klastra
+title: Projektowanie i operacje klastra
 description: Dowiedz się więcej na temat Kubernetes w strukturze wdrażania chmury na potrzeby projektowania i operacji klastra.
 author: sabbour
 ms.author: asabbour
@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 594b8ae3ce7949c3289d9a81ac9870889a5dba98
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80527179"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
-# <a name="cluster-design-and-operations"></a>Projekt i operacje klastra
+# <a name="cluster-design-and-operations"></a>Projektowanie i operacje klastra
 
-Identyfikowanie pod kątem konfiguracji klastra i projektu sieci. Skalowalność w przyszłości dzięki automatyzowaniu aprowizacji infrastruktury. Zapewnij wysoką dostępność, planując pod kątem ciągłości działania i odzyskiwania po awarii.
+Określ konfigurację klastra i projekt sieci. Skalowalność w przyszłości dzięki automatyzowaniu aprowizacji infrastruktury. Zapewnienie wysokiej dostępności dzięki zaplanowaniu ciągłości działania i odzyskiwania po awarii.
 
 ## <a name="plan-train-and-proof"></a>Planowanie, uczenie i weryfikacja
 

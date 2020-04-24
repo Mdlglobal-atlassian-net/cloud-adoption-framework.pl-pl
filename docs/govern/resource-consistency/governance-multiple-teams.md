@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dfbdfaafaf9787af54a9c2622e5ed8ef791a1138
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: bee86f2dc43a8758fe7352824fd7810a4660995e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433257"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997484"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -60,13 +60,13 @@ Tożsamości użytkowników zarówno dla właściciela konta platformy Azure, ja
 
 Właściciel konta platformy Azure ma uprawnienia do tworzenia, aktualizowania i usuwania subskrypcji:
 
-![konto platformy Azure z menedżerem kont platformy Azure i administratorem globalnym usługi Azure AD](../../_images/govern/design/governance-3-0.png)
-*rysunek 1 — konto platformy Azure z menedżerem kont i administratorem globalnym usługi Azure AD.*
+![Konto platformy Azure z menedżerem kont platformy Azure i administratorem](../../_images/govern/design/governance-3-0.png)
+globalnym usługi Azure AD*rysunek 1 — konto platformy Azure z menedżerem kont i administratorem globalnym usługi Azure AD.*
 
 **Administrator globalny** usługi Azure AD ma uprawnienia do tworzenia kont użytkowników:
 
-![konto platformy Azure z menedżerem kont platformy Azure i administratorem globalnym usługi Azure AD](../../_images/govern/design/governance-3-0a.png)
-*rysunek 2 — Administrator globalny usługi Azure AD tworzy wymagane konta użytkowników w dzierżawie.*
+![Konto platformy Azure z menedżerem kont platformy Azure i administratorem](../../_images/govern/design/governance-3-0a.png)
+globalnym usługi Azure AD*rysunek 2 — Administrator globalny usługi Azure AD tworzy wymagane konta użytkowników w dzierżawie.*
 
 Pierwsze dwa konta, **właściciel obciążenia APP1** i **właściciel obciążenia APP2** są skojarzone z osobą w organizacji odpowiedzialną za zarządzanie obciążeniem. Konto **operacji sieci** należy do osoby odpowiedzialnej za udostępnione zasoby infrastruktury. Na koniec konto **właściciela subskrypcji** jest powiązane z osobą odpowiedzialną za własność subskrypcji.
 
@@ -84,50 +84,50 @@ Przyjrzyjmy się dwóm przykładowym modelom uprawnień do lepszego zrozumienia 
 
 W obu przykładach istnieje administrator usługi subskrypcji, który ma przypisaną rolę właściciela wbudowanego w zakresie subskrypcji. Odwołaj, że wbudowana rola właściciela przyznaje wszystkie uprawnienia, w tym zarządzanie dostępem do zasobów.
 
-![administratora usługi subskrypcji z rolą właściciela](../../_images/govern/design/governance-2-1.png)
-*rysunku 3 — subskrypcję z administratorem usługi przypisaną rolę właściciela wbudowanego.*
+![Administrator usługi subskrypcji z rolą](../../_images/govern/design/governance-2-1.png)
+właściciela*rysunek 3 — subskrypcja z administratorem usługi przypisaną rolę właściciela wbudowanego.*
 
 1. W pierwszym przykładzie istnieje **właściciel obciążenia A** bez uprawnień w zakresie subskrypcji — domyślnie nie ma uprawnień do zarządzania dostępem do zasobów. Ten użytkownik chce wdrożyć zasoby i zarządzać nimi w ramach obciążenia. Należy skontaktować się z **administratorem usługi** , aby zażądać utworzenia grupy zasobów.
-    ![żądania właściciela obciążenia Tworzenie grupy zasobów A](../../_images/govern/design/governance-2-2.png)
+    ![Właściciel obciążenia żąda utworzenia grupy zasobów A](../../_images/govern/design/governance-2-2.png)
 2. **Administrator usługi** przegląda swoje żądanie i tworzy **grupę zasobów a**. W tym momencie **właściciel obciążenia** nadal nie ma uprawnień do wykonywania żadnych czynności.
-    ![administrator usługi tworzy grupę zasobów A](../../_images/govern/design/governance-2-3.png)
+    ![Administrator usługi tworzy grupę zasobów A](../../_images/govern/design/governance-2-3.png)
 3. **Administrator usługi** dodaje **właściciela obciążenia a** do **grupy zasobów** a i przypisuje [wbudowaną rolę współautor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor). Rola współautor przyznaje wszystkie uprawnienia do **grupy zasobów A,** z wyjątkiem zarządzania uprawnieniami dostępu.
-    Administrator usługi ![dodaje właściciela obciążenia a do grupy zasobów a](../../_images/govern/design/governance-2-4.png)
+    ![Administrator usługi dodaje właściciela obciążenia a do grupy zasobów a](../../_images/govern/design/governance-2-4.png)
 4. Załóżmy, że **właściciel obciążenia a** ma wymóg dla pary członków zespołu do wyświetlania danych monitorowania procesora i ruchu sieciowego w ramach planowania pojemności dla obciążenia. Ponieważ **właściciel obciążenia A** ma przypisaną rolę współautor, nie ma uprawnień do dodawania użytkownika do **grupy zasobów A**. Muszą wysłać to żądanie do **administratora usługi**.
-    ![żądania właściciela obciążenia są dodawane do grupy zasobów](../../_images/govern/design/governance-2-5.png)
+    ![Właściciele obciążenia żądają współautorów obciążeń do grupy zasobów](../../_images/govern/design/governance-2-5.png)
 5. **Administrator usługi** przegląda żądanie i dodaje dwóch użytkowników **współautorów obciążenia** do **grupy zasobów a**. Żaden z tych dwóch użytkowników nie wymaga uprawnień do zarządzania zasobami, więc ma przypisaną [wbudowaną rolę czytnika](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor).
-    Administrator usługi ![dodaje współautorów obciążeń do grupy zasobów A](../../_images/govern/design/governance-2-6.png)
+    ![Administrator usługi dodaje współautorów obciążeń do grupy zasobów A](../../_images/govern/design/governance-2-6.png)
 6. Następnie **właściciel obciążenia B** wymaga również grupy zasobów, aby zawierała zasoby związane z obciążeniem. Podobnie jak w przypadku **właściciela obciążenia A**, **właściciel obciążenia B** początkowo nie ma uprawnień do wykonania akcji w zakresie subskrypcji, dlatego musi wysłać żądanie do **administratora usługi**.
-    ![właściciel obciążenia B żąda utworzenia grupy zasobów B](../../_images/govern/design/governance-2-7.png)
-7. **Administrator usługi** przegląda żądanie i tworzy **grupę zasobów B**.  Administrator usługi ![tworzy grupę zasobów B](../../_images/govern/design/governance-2-8.png)
+    ![Właściciel obciążenia B żąda utworzenia grupy zasobów B](../../_images/govern/design/governance-2-7.png)
+7. **Administrator usługi** przegląda żądanie i tworzy **grupę zasobów B**.  ![Administrator usługi tworzy grupę zasobów B](../../_images/govern/design/governance-2-8.png)
 8. **Administrator usługi** dodaje następnie **właściciela obciążenia b** do **grupy zasobów b** i przypisuje wbudowaną rolę współautor.
-    Administrator usługi ![dodaje właściciela obciążenia B do grupy zasobów B](../../_images/govern/design/governance-2-9.png)
+    ![Administrator usługi dodaje właściciela obciążenia B do grupy zasobów B](../../_images/govern/design/governance-2-9.png)
 
 W tym momencie każdy właściciel obciążenia jest izolowany w ich własnej grupie zasobów. Żaden z właścicieli obciążeń lub ich członkowie zespołu nie mają dostępu do zasobów w żadnej innej grupie zasobów.
 
-![subskrypcję z grupami zasobów A i B](../../_images/govern/design/governance-2-10.png)
-*rysunku 4 — subskrypcję z dwoma właścicielami obciążeń izolowanymi z ich własną grupą zasobów.*
+![Subskrypcja z grupami zasobów a i](../../_images/govern/design/governance-2-10.png)
+B*rysunek 4 — subskrypcja z dwoma właścicielami obciążeń izolowanych z ich własną grupą zasobów.*
 
-Ten model jest modelem najniższych uprawnień,&mdash;każdy użytkownik ma przypisane odpowiednie uprawnienia w prawidłowym zakresie zarządzania zasobami.
+Ten model jest modelem&mdash;najniższych uprawnień, do którego każdy użytkownik ma przypisane odpowiednie uprawnienia w prawidłowym zakresie zarządzania zasobami.
 
 Należy jednak wziąć pod uwagę, że każde zadanie w tym przykładzie zostało wykonane przez **administratora usługi**. Chociaż jest to prosty przykład i może nie być przyczyną problemu, ponieważ wystąpiły tylko dwa właściciele obciążeń, można łatwo wyobrazić typy problemów, które byłyby wynikiem dużej organizacji. Na przykład **administrator usługi** może stać się wąskim gardłem z dużą zaległością żądań, które powodują opóźnienia.
 
 Przyjrzyjmy się drugiemu przykładowi, który zmniejsza liczbę zadań wykonywanych przez **administratora usługi**.
 
-1. W tym modelu **właściciel obciążenia A** ma przypisaną wbudowaną rolę właściciela w zakresie subskrypcji, umożliwiając im utworzenie własnej grupy zasobów: **Grupa zasobów A**.  Administrator usługi ![dodaje właściciela obciążenia A do subskrypcji](../../_images/govern/design/governance-2-11.png)
+1. W tym modelu **właściciel obciążenia A** ma przypisaną wbudowaną rolę właściciela w zakresie subskrypcji, umożliwiając im utworzenie własnej grupy zasobów: **Grupa zasobów A**.  ![Administrator usługi dodaje właściciela obciążenia A do subskrypcji](../../_images/govern/design/governance-2-11.png)
 2. Gdy **Grupa zasobów A** zostanie utworzona, **właściciel obciążenia a** jest domyślnie dodawany i dziedziczy wbudowaną rolę właściciela z zakresu subskrypcji.
-    ![właściciel obciążenia A tworzy grupę zasobów A](../../_images/govern/design/governance-2-12.png)
+    ![Właściciel obciążenia A tworzy grupę zasobów A](../../_images/govern/design/governance-2-12.png)
 3. Wbudowana rola właściciela umożliwia **właścicielowi obciążenia** uprawnienie do zarządzania dostępem do grupy zasobów. **Właściciel obciążenia a** dodaje dwóch **współautorów obciążenia** i przypisuje wbudowaną rolę czytnika do każdego z nich.
-    ![właściciel obciążenia A dodaje współautorów obciążenia](../../_images/govern/design/governance-2-13.png)
+    ![Właściciel obciążenia A dodaje współautorów obciążenia](../../_images/govern/design/governance-2-13.png)
 4. **Administrator usługi** dodaje teraz **właściciela obciążenia B** do subskrypcji z wbudowaną rolą właściciela.
-    Administrator usługi ![dodaje właścicieli obciążeń B do subskrypcji](../../_images/govern/design/governance-2-14.png)
+    ![Administrator usługi dodaje właścicieli obciążeń B do subskrypcji](../../_images/govern/design/governance-2-14.png)
 5. **Właściciel obciążenia b** tworzy **grupę zasobów b** i jest domyślnie dodawany. Następnie **właściciel obciążenia B** dziedziczy wbudowaną rolę właściciela z zakresu subskrypcji.
-    ![właściciel obciążenia B tworzy grupę zasobów B](../../_images/govern/design/governance-2-15.png)
+    ![Właściciel obciążenia B tworzy grupę zasobów B](../../_images/govern/design/governance-2-15.png)
 
 Należy pamiętać, że w tym modelu **administrator usługi** wykonał mniejszą liczbę akcji niż w pierwszym przykładzie z powodu delegowania dostępu do zarządzania do każdego z poszczególnych właścicieli obciążeń.
 
-![subskrypcję z grupami zasobów a i B](../../_images/govern/design/governance-2-16.png)
-*rysunek 5 — subskrypcję z uprawnieniami administratora usługi i dwoma właścicielami obciążeń — wszystkie przypisane role właściciela wbudowanego.*
+![Subskrypcja z grupami zasobów a i](../../_images/govern/design/governance-2-16.png)
+B*rysunek 5 — subskrypcja z uprawnieniami administratora usługi i dwóch właścicieli obciążenia, która ma przypisaną wbudowaną rolę właściciela.*
 
 Jednak ze względu na to, że zarówno **właściciel obciążenia a** , jak i **właściciel obciążenia B** przypisuje rolę właściciela wbudowanego w zakresie subskrypcji, każdy z nich dziedziczy rolę właściciela wbudowane dla każdej grupy zasobów. Oznacza to, że użytkownicy mają pełny dostęp do wszystkich zasobów, ale mogą również delegować dostęp do zarządzania do grup zasobów każdej z nich. Na przykład **właściciel obciążenia B** ma uprawnienia do dodawania dowolnego innego użytkownika do **grupy zasobów a** i może przypisywać do nich dowolną rolę, w tym wbudowaną rolę właściciela.
 
@@ -149,13 +149,13 @@ Przed zapoznaj się z przykładami każdego z tych modeli, przejdźmy do struktu
 
 Należy odwołać się od wymagań, które użytkownik ma w organizacji odpowiedzialnej za subskrypcje, a ten użytkownik jest właścicielem konta **właściciela subskrypcji** w dzierżawie usługi Azure AD. Jednak to konto nie ma uprawnień do tworzenia subskrypcji. Tylko **właściciel konta platformy Azure** ma uprawnienia do wykonania tej czynności:
 
-![właściciel konta Azure tworzy subskrypcję](../../_images/govern/design/governance-3-0b.png)
-*rysunek 6 — właściciel konta platformy Azure tworzy subskrypcję.*
+![Właściciel konta platformy Azure tworzy](../../_images/govern/design/governance-3-0b.png)
+subskrypcję*6 — właściciel konta platformy Azure tworzy subskrypcję.*
 
 Po utworzeniu subskrypcji **właściciel konta platformy Azure** może dodać konto **właściciela subskrypcji** do subskrypcji z rolą **właściciela** :
 
-![właściciel konta platformy Azure dodaje konto użytkownika właściciela subskrypcji do subskrypcji z rolą właściciela.](../../_images/govern/design/governance-3-0c.png)
-*rysunek 7. właściciel konta platformy Azure dodaje konto użytkownika **właściciela subskrypcji** do subskrypcji z rolą **właściciela** .*
+![Właściciel konta platformy Azure dodaje konto użytkownika właściciela subskrypcji do subskrypcji z rolą właściciela. ](../../_images/govern/design/governance-3-0c.png)
+ *Rysunek 7. właściciel konta platformy Azure dodaje konto użytkownika **właściciela subskrypcji** do subskrypcji z rolą **właściciela** .*
 
 **Właściciel subskrypcji** może teraz tworzyć **grupy zasobów** i delegować zarządzanie dostępem do zasobów.
 
@@ -167,25 +167,25 @@ Najpierw przyjrzyjmy się przykładowym modelowi zarządzania zasobami przy uży
 Zacznijmy od oceny pierwszej opcji. Będziesz używać modelu uprawnień, który został omówiony w poprzedniej sekcji, za pomocą jednego administratora usługi subskrypcji, który tworzy grupy zasobów i dodaje do nich użytkowników przy użyciu wbudowanej roli **współautor** lub **czytnika** .
 
 1. Pierwsza wdrożona Grupa zasobów reprezentuje środowisko **infrastruktury udostępnionej** . **Właściciel subskrypcji** tworzy grupę zasobów dla udostępnionych zasobów infrastruktury o nazwie `netops-shared-rg`.
-    ![tworzenia grupy zasobów](../../_images/govern/design/governance-3-0d.png)
+    ![Tworzenie grupy zasobów](../../_images/govern/design/governance-3-0d.png)
 2. **Właściciel subskrypcji** dodaje do grupy zasobów konto **użytkownika operacji sieci** i przypisuje rolę **współautor** .
-    ![dodawania użytkownika operacji sieciowych](../../_images/govern/design/governance-3-0e.png)
-3. **Użytkownik operacji sieciowych** tworzy [bramę sieci VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) i konfiguruje ją do łączenia się z lokalnym urządzeniem sieci VPN. Użytkownik **operacji sieciowych** stosuje także parę [tagów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) do poszczególnych zasobów: *Environment: Shared* i *zarządzane: netOps*. Gdy **administrator usługi subskrypcji** Eksportuje raport kosztów, koszty będą wyrównane do każdego z tych tagów. Pozwala to **administratorowi usługi subskrypcji** na przestawianie kosztów przy użyciu tagu *Environment* i znacznika *zarządzane* . Zwróć uwagę na licznik **limity zasobów** w prawym górnym rogu rysunku. Każda subskrypcja platformy Azure ma [limity usług](https://docs.microsoft.com/azure/azure-subscription-service-limits)i aby pomóc zrozumieć efekt tych limitów, należy postępować zgodnie z limitem sieci wirtualnej dla każdej subskrypcji. Istnieje limit 1000 sieci wirtualnych na subskrypcję, a po wdrożeniu pierwszej sieci wirtualnej dostępne są teraz 999.
-    ![tworzenia bramy sieci VPN](../../_images/govern/design/governance-3-1.png)
-4. Wdrożono dwie więcej grup zasobów. Pierwszy z nich nosi nazwę `prod-rg`. Ta grupa zasobów jest wyrównana ze środowiskiem produkcyjnym. Drugi ma nazwę `dev-rg` i jest wyrównany do środowiska projektowego. Wszystkie zasoby skojarzone z obciążeniami produkcyjnymi są wdrażane w środowisku produkcyjnym, a wszystkie zasoby związane z obciążeniami programistycznymi są wdrażane w środowisku deweloperskim. W tym przykładzie wdrażane są tylko dwa obciążenia do każdego z tych dwóch środowisk, więc nie będą napotykane żadne limity usługi subskrypcji platformy Azure. Należy jednak wziąć pod uwagę, że każda grupa zasobów ma limit 800 zasobów dla każdej grupy zasobów. W przypadku kontynuowania dodawania obciążeń do poszczególnych grup zasobów ostatecznie ten limit zostanie osiągnięty.
-    ![tworzenia grup zasobów](../../_images/govern/design/governance-3-2.png)
+    ![Dodawanie użytkownika operacji sieciowych](../../_images/govern/design/governance-3-0e.png)
+3. **Użytkownik operacji sieciowych** tworzy [bramę sieci VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) i konfiguruje ją do łączenia się z lokalnym urządzeniem sieci VPN. Użytkownik **operacji sieciowych** stosuje także parę [tagów](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources) do poszczególnych zasobów: *Environment: Shared* i *zarządzane: netOps*. Gdy **administrator usługi subskrypcji** Eksportuje raport kosztów, koszty będą wyrównane do każdego z tych tagów. Pozwala to **administratorowi usługi subskrypcji** na przestawianie kosztów przy użyciu tagu *Environment* i znacznika *zarządzane* . Zwróć uwagę na licznik **limity zasobów** w prawym górnym rogu rysunku. Każda subskrypcja platformy Azure ma [limity usług](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)i aby pomóc zrozumieć efekt tych limitów, należy postępować zgodnie z limitem sieci wirtualnej dla każdej subskrypcji. Istnieje limit 1000 sieci wirtualnych na subskrypcję, a po wdrożeniu pierwszej sieci wirtualnej dostępne są teraz 999.
+    ![Tworzenie bramy sieci VPN](../../_images/govern/design/governance-3-1.png)
+4. Wdrożono dwie więcej grup zasobów. Pierwszy ma nazwę `prod-rg`. Ta grupa zasobów jest wyrównana ze środowiskiem produkcyjnym. Drugi ma nazwę `dev-rg` i jest wyrównany do środowiska deweloperskiego. Wszystkie zasoby skojarzone z obciążeniami produkcyjnymi są wdrażane w środowisku produkcyjnym, a wszystkie zasoby związane z obciążeniami programistycznymi są wdrażane w środowisku deweloperskim. W tym przykładzie wdrażane są tylko dwa obciążenia do każdego z tych dwóch środowisk, więc nie będą napotykane żadne limity usługi subskrypcji platformy Azure. Należy jednak wziąć pod uwagę, że każda grupa zasobów ma limit 800 zasobów dla każdej grupy zasobów. W przypadku kontynuowania dodawania obciążeń do poszczególnych grup zasobów ostatecznie ten limit zostanie osiągnięty.
+    ![Tworzenie grup zasobów](../../_images/govern/design/governance-3-2.png)
 5. Pierwszy **właściciel obciążenia** wysyła żądanie do **administratora usługi subskrypcji** i jest dodawany do każdej grupy zasobów środowiska projektowego i produkcyjnego z rolą **współautor** . Jak pokazano wcześniej, rola **współautor** zezwala użytkownikowi na wykonywanie dowolnej operacji poza przypisaniem roli innemu użytkownikowi. Pierwszy **właściciel obciążenia** może teraz tworzyć zasoby skojarzone z ich obciążeniem.
-    ![dodawania współautorów](../../_images/govern/design/governance-3-3.png)
+    ![Dodawanie współautorów](../../_images/govern/design/governance-3-3.png)
 6. Pierwszy **właściciel obciążenia** tworzy sieć wirtualną w każdej z dwóch grup zasobów z parą maszyn wirtualnych w każdym z nich. Pierwszy **właściciel obciążenia** stosuje Tagi *Environment* i *zarządzane* do wszystkich zasobów. Należy pamiętać, że licznik limit usług platformy Azure jest teraz równy 997 sieci wirtualnych.
-    ![tworzenia sieci wirtualnych](../../_images/govern/design/governance-3-4.png)
+    ![Tworzenie sieci wirtualnych](../../_images/govern/design/governance-3-4.png)
 7. Każda sieć wirtualna nie ma łączności z lokalnymi, gdy są tworzone. W tym typie architektury Każda sieć wirtualna musi być połączona z *węzłem* do sieci wirtualnej w środowisku **infrastruktury udostępnionej** . Komunikacja równorzędna sieci wirtualnych tworzy połączenie między dwiema oddzielnymi sieciami wirtualnymi i zezwala na ruch sieciowy między nimi. Należy pamiętać, że Komunikacja równorzędna sieci wirtualnych nie jest z założenia przechodnie. Komunikacja równorzędna musi być określona w każdej z dwóch połączonych sieci wirtualnych, a w przypadku, gdy tylko jedna z sieci wirtualnych określa komunikację równorzędną, połączenie jest niekompletne. Aby zilustrować efekt tego, pierwszy **właściciel obciążenia** określa komunikację równorzędną między siecią **firmową** i siecią **wirtualną**. Zostanie utworzona pierwsza Komunikacja równorzędna, ale nie ma żadnych przepływów ruchu, ponieważ uzupełniająca Komunikacja równorzędna z **koncentratora-Sieć wirtualna** do **produkcyjnego** nie została jeszcze określona. Pierwszy **właściciel obciążenia** kontaktuje się z użytkownikiem **operacji sieciowych** i żąda tego uzupełniającego połączenia komunikacji równorzędnej.
-    ![tworzenia połączenia komunikacji równorzędnej](../../_images/govern/design/governance-3-5.png)
+    ![Tworzenie połączenia komunikacji równorzędnej](../../_images/govern/design/governance-3-5.png)
 8. Użytkownik **operacji w sieci** przegląda żądanie, zatwierdza je, a następnie określa komunikację równorzędną w ustawieniach dla **koncentratora-Sieć wirtualna**. Połączenie komunikacji równorzędnej jest teraz kompletne i ruch sieciowy między dwiema sieciami wirtualnymi.
-    ![tworzenia połączenia komunikacji równorzędnej](../../_images/govern/design/governance-3-6.png)
+    ![Tworzenie połączenia komunikacji równorzędnej](../../_images/govern/design/governance-3-6.png)
 9. Teraz drugi **właściciel obciążenia** wysyła żądanie do **administratora usługi subskrypcji** i jest dodawany do istniejących grup zasobów środowiska **produkcyjnego** i **programistycznego** z rolą **współautor** . Drugi **właściciel obciążenia** ma takie same uprawnienia dla wszystkich zasobów jak pierwszy **właściciel obciążenia** w każdej grupie zasobów.
-    ![dodawania współautorów](../../_images/govern/design/governance-3-7.png)
+    ![Dodawanie współautorów](../../_images/govern/design/governance-3-7.png)
 10. Drugi **właściciel obciążenia** tworzy podsieć w sieci wirtualnej **produkcyjnej** , a następnie dodaje dwie maszyny wirtualne. Drugi **właściciel obciążenia** stosuje Tagi *Environment* i *zarządzane* do każdego zasobu.
-    ![tworzenia podsieci](../../_images/govern/design/governance-3-8.png)
+    ![Tworzenie podsieci](../../_images/govern/design/governance-3-8.png)
 
 Ten przykładowy model zarządzania zasobami umożliwia nam zarządzanie zasobami w trzech wymaganych środowiskach. Zasoby infrastruktury udostępnionej są chronione, ponieważ tylko jeden użytkownik w ramach subskrypcji ma uprawnienia dostępu do tych zasobów. Każdy właściciel obciążenia może korzystać z udostępnionych zasobów infrastruktury bez posiadania żadnych uprawnień do zasobów udostępnionych. Jednak ten model zarządzania przestanie być przyczyną izolacji obciążeń, ponieważ obaj **właściciele obciążeń** mogą uzyskać dostęp do zasobów każdego innego obciążenia.
 
@@ -198,15 +198,15 @@ Oznacza to, że **właściciel obciążenia APP2** miał uprawnienia do wdrożen
 Następnie Przyjrzyjmy się pojedynczej subskrypcji z wieloma grupami zasobów dla różnych środowisk i obciążeń. Należy zauważyć, że w poprzednim przykładzie zasoby dla każdego środowiska były łatwe do zidentyfikowania, ponieważ znajdowały się w tej samej grupie zasobów. Teraz, gdy takie grupowanie nie jest już konieczne, należy polegać na konwencji nazewnictwa grup zasobów w celu zapewnienia tej funkcjonalności.
 
 1. Zasoby **infrastruktury udostępnionej** nadal będą mieć oddzielną grupę zasobów w tym modelu, dzięki czemu pozostają takie same. Każde obciążenie wymaga dwóch grup zasobów — jeden dla każdego środowiska **projektowego** i **produkcyjnego** . W przypadku pierwszego obciążenia **właściciel subskrypcji** tworzy dwie grupy zasobów. Pierwszy z nich nosi nazwę **APP1-prod-RG** , a druga **— Nazwa APP1-dev-RG**. Jak wspomniano wcześniej, ta konwencja nazewnictwa identyfikuje zasoby jako skojarzone z pierwszym obciążeniem, **APP1**i środowiskiem **deweloperskim** lub **produkcyjnym** . Ponownie właściciel *subskrypcji* dodaje **właściciela obciążenia APP1** do grupy zasobów z rolą **współautor** .
-    ![dodawania współautorów](../../_images/govern/design/governance-3-12.png)
+    ![Dodawanie współautorów](../../_images/govern/design/governance-3-12.png)
 2. Podobnie jak w przypadku pierwszego przykładu **właściciel obciążenia APP1** wdraża sieć wirtualną o nazwie **APP1-prod-VNET** w środowisku **produkcyjnym** oraz inną nazwę **APP1-dev-VNET** w środowisku **deweloperskim** . Następnie **właściciel obciążenia APP1** wysyła żądanie do użytkownika **operacji sieciowych** w celu utworzenia połączenia komunikacji równorzędnej. Należy zauważyć, że **właściciel obciążenia APP1** dodaje te same Tagi co w pierwszym przykładzie, a licznik limit został zmniejszony do 997 sieci wirtualnych pozostałych w ramach subskrypcji.
-    ![tworzenia połączenia komunikacji równorzędnej](../../_images/govern/design/governance-3-13.png)
+    ![Tworzenie połączenia komunikacji równorzędnej](../../_images/govern/design/governance-3-13.png)
 3. **Właściciel subskrypcji** tworzy teraz dwie grupy zasobów dla **właściciela obciążenia APP2**. Zgodnie z tymi samymi konwencjami co w przypadku **właściciela obciążenia APP1**grupy zasobów mają nazwę **APP2-prod-RG** i **APP2-dev-RG**. **Właściciel subskrypcji** dodaje **właściciela obciążenia APP2** do każdej grupy zasobów z rolą **współautor** .
-    ![dodawania współautorów](../../_images/govern/design/governance-3-14.png)
+    ![Dodawanie współautorów](../../_images/govern/design/governance-3-14.png)
 4. *Właściciel obciążenia APP2* wdraża sieci wirtualne i maszyny wirtualne w grupach zasobów z tymi samymi konwencjami nazewnictwa. Dodawane są Tagi, a licznik limit został zmniejszony do 995 sieci wirtualnych pozostałych w ramach *subskrypcji*.
-    ![wdrażania sieci wirtualnych i maszyn wirtualnych](../../_images/govern/design/governance-3-15.png)
+    ![Wdrażanie sieci wirtualnych i maszyn wirtualnych](../../_images/govern/design/governance-3-15.png)
 5. *Właściciel obciążenia APP2* wysyła żądanie do użytkownika *operacji sieci* do elementu równorzędnego *APP2-prod-VNET* z *koncentratorem*. Użytkownik *operacji sieciowych* tworzy połączenie komunikacji równorzędnej.
-    ![tworzenia połączenia komunikacji równorzędnej](../../_images/govern/design/governance-3-16.png)
+    ![Tworzenie połączenia komunikacji równorzędnej](../../_images/govern/design/governance-3-16.png)
 
 Otrzymany model zarządzania jest podobny do pierwszego przykładu z kilkoma kluczowymi różnicami:
 
@@ -218,9 +218,9 @@ Otrzymany model zarządzania jest podobny do pierwszego przykładu z kilkoma klu
 Teraz przyjrzyjmy się modelowi zarządzania zasobami przy użyciu wielu subskrypcji. W tym modelu porównujesz każde z trzech środowisk z oddzielną subskrypcją: subskrypcję **usług udostępnionych** , subskrypcję **produkcyjną** i na koniec subskrypcji **deweloperskiej** . Zagadnienia dotyczące tego modelu są podobne do modelu przy użyciu jednej subskrypcji w programie, aby określić sposób wyrównania grup zasobów do obciążeń. Określono już, że tworzenie grupy zasobów dla każdego obciążenia spełnia wymagania dotyczące izolacji obciążenia, więc w tym przykładzie nastąpi przeniesieniu do tego modelu.
 
 1. W tym modelu istnieją trzy *subskrypcje*: *udostępniona infrastruktura*, *produkcja*i *programowanie*. Każda z tych trzech subskrypcji wymaga *właściciela subskrypcji*, a w prostym przykładzie użyjesz tego samego konta użytkownika dla wszystkich trzech. Zasoby *infrastruktury udostępnionej* są zarządzane podobnie jak dwa pierwsze przykłady, a pierwsze obciążenie jest skojarzone z *APP1 RG* w środowisku *produkcyjnym* i grupą zasobów o tej samej nazwie w środowisku *deweloperskim* . *Właściciel obciążenia APP1* jest dodawany do każdej grupy zasobów z rolą *współautor* .
-    ![dodawania współautorów](../../_images/govern/design/governance-3-17.png)
+    ![Dodawanie współautorów](../../_images/govern/design/governance-3-17.png)
 2. Podobnie jak w przypadku wcześniejszych przykładów, *właściciel obciążenia APP1* tworzy zasoby i żąda połączenia komunikacji równorzędnej z siecią wirtualną *infrastruktury udostępnionej* . *Właściciel obciążenia APP1* dodaje tylko tag *zarządzane* , ponieważ nie jest już potrzebny tag *Environment* . Oznacza to, że zasoby dla każdego środowiska są teraz pogrupowane w tej samej *subskrypcji* , a znacznik *środowiska* jest nadmiarowy. Licznik limit jest zmniejszany do 999 sieci wirtualnych.
-    ![tworzenia połączenia komunikacji równorzędnej](../../_images/govern/design/governance-3-18.png)
+    ![Tworzenie połączenia komunikacji równorzędnej](../../_images/govern/design/governance-3-18.png)
 3. Na koniec *właściciel subskrypcji* powtarza proces dla drugiego obciążenia, dodając grupy zasobów za pomocą *właściciela obciążenia APP2* w roli * współautor. Wartość licznika limit dla każdej subskrypcji środowiska jest zmniejszana do 998 sieci wirtualnych.
 
 Ten model zarządzania ma zalety w drugim przykładzie powyżej. Jednak kluczową różnicą jest to, że limity są mniejsze od problemu ze względu na fakt, że są rozłożone na dwie *subskrypcje*. Wadą jest to, że dane o kosztach śledzone przez Tagi muszą być agregowane we wszystkich trzech *subskrypcjach*.
@@ -239,7 +239,7 @@ Wykonaj następujące kroki:
 1. Utwórz [konto platformy Azure](https://docs.microsoft.com/azure/active-directory/sign-up-organization) , jeśli organizacja jeszcze go nie ma. Osoba, która zarejestruje się na konto platformy Azure, zostaje administratorem konta platformy Azure, a lider organizacji musi wybrać osobę, która ma założyć tę rolę. Osoba ta będzie odpowiedzialna za:
     - Tworzenie subskrypcji.
     - Tworzenie i administrowanie dzierżawami [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) , które przechowują tożsamość użytkownika dla tych subskrypcji.
-2. Zespół liderów w organizacji decyduje, które osoby są odpowiedzialne za:
+2. Zespół liderów w organizacji decyduje, kto jest odpowiedzialny za:
     - Zarządzanie tożsamościami użytkowników; [dzierżawa usługi Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant) jest tworzona domyślnie podczas tworzenia konta platformy Azure w organizacji, a administrator konta jest domyślnie dodawany jako [administrator globalny usługi Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) . Organizacja może wybrać innego użytkownika do zarządzania tożsamościami użytkowników, [przypisując do tego użytkownika rolę administratora globalnego usługi Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
     - Subskrypcje, co oznacza, że Ci użytkownicy:
         - Zarządzaj kosztami związanymi z użyciem zasobów w tej subskrypcji.
@@ -261,7 +261,7 @@ Wykonaj następujące kroki:
 6. Utwórz proces zatwierdzania dla **właścicieli obciążeń** , aby zażądać tworzenia grup zasobów. Proces zatwierdzania można zaimplementować na wiele sposobów, na przykład za pośrednictwem poczty e-mail, lub za pomocą narzędzia do zarządzania procesem, takiego jak [przepływy pracy programu SharePoint](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3). Proces zatwierdzania może wykonać następujące czynności:
     - **Właściciel obciążenia** przygotowuje zestawienie materiałów dla wymaganych zasobów platformy Azure w środowisku **programistycznym** , środowisku **produkcyjnym** lub w obu systemach i przesyła je do **właściciela subskrypcji**.
     - **Właściciel subskrypcji** przegląda zestawienie materiałów i weryfikuje żądane zasoby, aby upewnić się, że żądane zasoby są odpowiednie do ich planowanego użycia — na przykład, sprawdzając, czy żądane [rozmiary maszyn wirtualnych](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) są poprawne.
-    - Jeśli żądanie nie zostanie zatwierdzone, **właściciel obciążenia** zostanie powiadomiony. Jeśli żądanie zostanie zatwierdzone, **właściciel subskrypcji** [tworzy żądaną grupę zasobów](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) zgodnie z [konwencjami nazewnictwa](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)organizacji, [dodaje **właściciela obciążenia** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) z [rolą **współautor** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) i wysyła powiadomienie do **właściciela obciążenia** , który utworzył grupę zasobów.
+    - Jeśli żądanie nie zostanie zatwierdzone, **właściciel obciążenia** zostanie powiadomiony. Jeśli żądanie zostanie zatwierdzone, **właściciel subskrypcji** [tworzy żądaną grupę zasobów](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) zgodnie z [konwencjami nazewnictwa](../../ready/azure-best-practices/naming-and-tagging.md)organizacji, [dodaje **właściciela obciążenia** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) z [rolą **współautor** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) i wysyła powiadomienie do **właściciela obciążenia** , który utworzył grupę zasobów.
 7. Utwórz proces zatwierdzania dla właścicieli obciążeń, aby zażądać połączenia komunikacji równorzędnej sieci wirtualnej od właściciela udostępnionej infrastruktury. Tak jak w poprzednim kroku, ten proces zatwierdzania można zaimplementować za pomocą poczty e-mail lub narzędzia do zarządzania procesami.
 
 Po wdrożeniu modelu ładu można wdrożyć udostępnione usługi infrastruktury.

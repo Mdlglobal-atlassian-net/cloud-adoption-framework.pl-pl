@@ -1,5 +1,5 @@
 ---
-title: Dlaczego przenosimy do chmury?
+title: Dlaczego przechodzimy do chmury?
 description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby zrozumieć motywacje związane z migracją w chmurze, która może pomóc w wykorzystaniu bardziej pomyślnych wyników firmy.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.openlocfilehash: b504d5b7bb5c126a43464d0e776417b1ead0b8ac
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433712"
 ---
 <!-- markdownlint-disable MD026 -->
@@ -28,7 +28,7 @@ Przekształcenia biznesowe obsługiwane przez wdrożenie chmury mogą być zale�
 
 <!-- markdownlint-disable MD033 -->
 
-| Krytyczne zdarzenia biznesowe | Migracja | Innowacj |
+| Krytyczne zdarzenia biznesowe | Migracja | Innowacje |
 |---|---|---|
 | Wyjście centrum danych<br/><br/>Fuzja, pozyskiwanie lub zbycie<br/><br/>Zmniejszenie wydatków inwestycyjnych<br/><br/>Koniec wsparcia dla technologii o kluczowym znaczeniu<br/><br/>Odpowiedź na zmiany zgodności z przepisami<br/><br/>Nowe wymagania dotyczące suwerenności danych<br/><br/>Zmniejszenie przerw w działaniu i poprawa stabilności IT | Redukcja kosztów<br/><br/>Zmniejszenie liczby dostawców lub technicznych<br/><br/>Optymalizacja operacji wewnętrznych<br/><br/>Zwiększ elastyczność biznesową<br/><br/>Przygotowanie do nowych możliwości technicznych<br/><br/>Skalowanie w celu spełnienia wymagań dotyczących rynku<br/><br/>Skalowanie w celu spełnienia wymagań geograficznych | Przygotowanie do nowych możliwości technicznych<br/><br/>Tworzenie nowych możliwości technicznych<br/><br/>Skalowanie w celu spełnienia wymagań dotyczących rynku<br/><br/>Skalowanie w celu spełnienia wymagań geograficznych<br/><br/>Udoskonalone doświadczenia i zaangażowanie klientów<br/><br/>Przekształcanie produktów lub usług<br/><br/>Zakłócenia rynku dzięki nowym produktom lub usługom |
 
@@ -62,7 +62,7 @@ Niektóre motywacje są dobrze wyrównane z strategią migrowania. W górnej cz�
 - Skalowanie w celu spełnienia wymagań dotyczących rynku.
 - Skalowanie w celu spełnienia wymagań geograficznych.
 
-### <a name="innovation"></a>Innowacj
+### <a name="innovation"></a>Innowacje
 
 Dane są nowym asortymentem. Nowoczesne aplikacje są łańcuchem dostaw, który umożliwia korzystanie z tych danych w różnych środowiskach. Na współczesnym rynku biznesowym trudno znaleźć analizie przekształceń produkt lub usługę, które nie są oparte na usłudze Data, szczegółowe informacje i środowiska klienta. Motywacje, które pojawiają się niżej na liście *innowacji* , są dostosowane do strategii technologicznej, która jest określana w tym środowisku jako [innowacje](../getting-started/innovate.md).
 

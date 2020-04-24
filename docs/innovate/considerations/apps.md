@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 85939b1932f7eaf5f40b43bb54e75aa30e53d941
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 1159fd0b1b5195a5775901cc9229f5c4a7b34ba2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433392"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120506"
 ---
 # <a name="engage-through-applications"></a>Zaangażuj aplikacje
 
@@ -35,7 +35,7 @@ Aby zapewnić gotowość do innowacji, cały rozwój aplikacji powinien rozpoczy
 
 Profesjonalni deweloperzy są istotnym składnikiem innowacji. Gdy hipoteza zawiedzie dokładnie na dużą skalę, Profesjonalni deweloperzy są zobowiązani do stabilizacji i przygotowania rozwiązania do skalowania. Większość zasad, do których odwołuje się ten artykuł, wymaga wsparcia dla profesjonalnych deweloperów. Niestety bieżące trendy sugerują, że w przypadku deweloperów korzystających z oprogramowania dla profesjonalistów nie są deweloperzy. Ponadto koszt i tempo innowacji mogą być mniej korzystne, gdy profesjonalne programowanie jest uznawane za niezbędne. W odpowiedzi na te wyzwania deweloperzy deweloperów umożliwiają skalowanie wysiłków programistycznych i przyspieszenie testowania hipotezy wczesnej.
 
-Wykorzystanie deweloperów może być opłacalne i skuteczne, gdy wczesne poprawność może być zweryfikowana za pomocą narzędzi takich jak [powerapps](https://docs.microsoft.com/powerapps/powerapps-overview) dla interfejsów aplikacji, [Konstruktor AI](https://docs.microsoft.com/powerapps/use-ai-builder) dla procesów i prognoz, [Microsoft Flow](https://docs.microsoft.com/flow) dla przepływów pracy i [Power BI](https://docs.microsoft.com/power-bi) do zużycia danych.
+Wykorzystanie deweloperów może być opłacalne i skuteczne, gdy wczesne poprawność może być zweryfikowana przez narzędzia takie jak [powerapps](https://docs.microsoft.com/powerapps/powerapps-overview) dla interfejsów aplikacji, [Konstruktor AI](https://docs.microsoft.com/powerapps/use-ai-builder) dla procesów i prognoz, [Microsoft Power](https://docs.microsoft.com/power-automate) bi dla przepływów pracy i [Power BI](https://docs.microsoft.com/power-bi) do użycia danych.
 
 > [!NOTE]
 > Gdy polegasz na programistach deweloperów do testowania form, zaleca się, aby niektórzy Profesjonalni deweloperzy mogli zapewnić pomoc techniczną, przegląd i wskazówki. Po sprawdzeniu hipotezy na dużą skalę proces przenoszenia aplikacji do bardziej niezawodnego modelu programowania przyspieszy powracanie do innowacji. W przypadku wczesnych deweloperów w definicjach procesów możesz w późniejszym czasie korzystać z przejść.
@@ -103,7 +103,7 @@ Jeśli próbujesz skalować lub spełnić globalne zapotrzebowanie na istniejąc
 
 Im większa jest obsługa w rozwiązaniu, tym wolniejsze rozwiązanie będzie się powtarzać. Oznacza to, że można przyspieszyć innowacje, zmniejszając wpływ operacji na dostępną przepustowość.
 
-Aby przygotować się do wielu iteracji wymaganych do dostarczenia innowacyjnego rozwiązania, ważne jest, aby myśleć. Na przykład zminimalizować obciążenia operacyjne wczesne w procesie przez preferowanie opcji bezserwerowych. Na platformie Azure Opcje aplikacji bezserwerowych mogą zawierać [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) lub [kontenery](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql).
+Aby przygotować się do wielu iteracji wymaganych do dostarczenia innowacyjnego rozwiązania, ważne jest, aby myśleć. Na przykład zminimalizować obciążenia operacyjne wczesne w procesie przez preferowanie opcji bezserwerowych. Na platformie Azure Opcje aplikacji bezserwerowych mogą zawierać [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) lub [kontenery](https://docs.microsoft.com/azure/containers).
 
 Równolegle, platforma Azure zapewnia opcje danych transakcji bezserwerowych, które również zmniejszają koszty. [Katalog produktów platformy Azure](https://docs.microsoft.com/azure) udostępnia opcje bazy danych, które obsługują dane, bez potrzeby stosowania pełnej platformy danych.
 

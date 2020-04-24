@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
 ms.openlocfilehash: 6a6ebbfc94dbe3b3fe031210f55f51635228013f
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80431063"
 ---
 # <a name="cloud-rationalization"></a>Racjonalizacja chmury
@@ -35,7 +35,7 @@ Zapoznaj się z poniższą piątą z pięciu usprawnień, aby zaznajomić się z
 
 Pięć z pięciu usprawnień, które są wymienione w tym miejscu, opisują najbardziej typowe opcje racjonalizacji.
 
-## <a name="rehost"></a>Rehost
+## <a name="rehost"></a>Ponowne hostowanie
 
 Zgodnie z potrzebami migracji przenoszonych _i przenoszonych_ na przechodzenie przenoszone jest bieżący zasób stanu do wybranego dostawcy chmury z minimalnymi zmianami ogólnej architektury.
 
@@ -84,7 +84,7 @@ Czynniki analizy jakościowej:
 - Opcje i osie czasu
 - Zależności procesów firmy
 
-## <a name="rearchitect"></a>Przekształcanie
+## <a name="rearchitect"></a>Zmienianie architektury
 
 Niektóre aplikacje przedawniania nie są zgodne z dostawcami chmury ze względu na decyzje dotyczące architektury, które zostały wykonane podczas kompilowania aplikacji. W takich przypadkach może być konieczne ponowne zaprojektowanie aplikacji przed przekształceniem.
 
@@ -110,7 +110,7 @@ Czynniki analizy jakościowej:
 - Koszty operacyjne
 - Potencjalni pętle opinii i DevOps inwestycje.
 
-## <a name="rebuild"></a>Odtworzyć
+## <a name="rebuild"></a>Ponowne kompilowanie
 
 W niektórych scenariuszach różnica, którą należy przezwyciężyć w celu przeniesienia aplikacji, może być zbyt duża, aby uzasadnić dalsze inwestycje. Jest to szczególnie ważne w przypadku aplikacji, które wcześniej spełniały potrzeby biznesowe, ale są teraz nieobsługiwane lub nieprawidłowo wyrównane z bieżącymi procesami biznesowymi. W takim przypadku tworzony jest nowy podstawowy kod, który będzie wyrównany z podejściem [natywnym w chmurze](https://azure.microsoft.com/overview/cloudnative) .
 
@@ -164,4 +164,4 @@ Czynniki analizy jakościowej:
 Zbiorczo można zastosować te pięć informacji o racjonalizacji do cyfr cyfrowych, aby ułatwić podejmowanie decyzji o racjonalizacji w przyszłości.
 
 > [!div class="nextstepaction"]
-> [Co to jest znak cyfrowy?](./index.md)
+> [Co to jest majątek cyfrowy?](./index.md)

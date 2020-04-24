@@ -1,5 +1,5 @@
 ---
-title: Co nowego
+title: Co nowego?
 description: Zapoznaj się z najnowszymi aktualizacjami platformy wdrażania Microsoft Cloud platformy Azure.
 author: JanetCThomas
 ms.author: janet
@@ -7,12 +7,12 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 4863cb5c4fcffc7e994fb852da82271d9b8d41e8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 9e12f76251b635c76c23a195b6d60cd0ea4d070c
+ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434743"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81646832"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -21,6 +21,39 @@ ms.locfileid: "80434743"
 Poniżej znajduje się lista najnowszych zmian wprowadzonych w strukturze wdrożenia chmury.
 
 Ta struktura jest wbudowana w współpracę z klientami, partnerami i wewnętrznymi zespołami firmy Microsoft. Nowa i zaktualizowana zawartość jest publikowana, gdy staną się dostępne. Te wersje umożliwiają przetestowanie, zweryfikowanie i dostosowanie wskazówek wraz z nami. Zachęcamy do współpracy z nami w celu utworzenia struktury wdrażania w chmurze dla platformy Azure.
+
+## <a name="april-14-2020"></a>14 kwietnia 2020
+
+Wszystkie narzędzia i szablony wdrażania w chmurze zostały zebrane w jednym miejscu, aby ułatwić ich znalezienie. 
+
+| Artykuł | Opis |
+|----------|-------------|
+| [Narzędzia i szablony](../reference/tools-templates.md) | Znajdź narzędzia, szablony i oceny, które mogą pomóc w przyspieszeniu podróży wdrożenia w chmurze. | 
+
+## <a name="april-4-2020"></a>4 kwietnia 2020
+
+Dalsza iteracja udoskonalania do migracji i gotowych wskazówek umożliwia dokładniejsze dostosowanie się do opinii klientów, partnerów firmy Microsoft i wewnętrznych programów firmy Microsoft.
+
+### <a name="migrate-updates"></a>Migrowanie aktualizacji
+
+| Artykuł                                                                                                                 | Opis                                                                                                                                                                                |
+|-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Migrowanie metodologii](../migrate/index.md)                       | Te zmiany ułatwiają etapy migracji (ocenianie obciążeń, wdrażanie obciążeń i obciążenia wydań). Zmiany te również usuwają szczegóły dotyczące zaległości migracji. Usunięcie tych szczegółów i odwołujących się do nich planów, gotowych i przyjętych metod, a zamiast tego tworzy elastyczność dla różnych programów do wdrażania w chmurze, aby lepiej dostosować ją do metodologii.  |
+| Aktualizacja spisu treści                       | Spis treści przewodnika migracji platformy Azure i ulepszenia procesów zostały zaktualizowane w celu odzwierciedlenia zmian w metodologii.  |
+
+### <a name="ready-updates"></a>Gotowe aktualizacje
+
+| Artykuł                                                                                                                 | Opis                                                                                                                                                                                |
+|-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Strefy wyładunkowe refaktoryzacji](../ready/landing-zone/refactor.md)                       | **Nowy artykuł:** Rysowanie od gotowych warsztatów, w tym artykule przedstawiono teoretyczne rozpoczęcie pracy z szablonem wstępnym, korzystanie z drzew decyzyjnych i Refaktoryzacja w celu rozszerzenia strefy docelowej i przechodzenie do przyszłego stanu gotowości przedsiębiorstwa. |
+| [Rozszerzanie strefy docelowej](../ready/considerations/index.md)                       | **Nowy artykuł:** Kompiluje w sekcji równoległe iteracje artykułu refaktoryzacji, aby pokazać, w jaki sposób różne typy rozszerzania strefy wyładunkowej osadzają zasady wspólne na platformie pomocniczej. (Oryginalna zawartość dla tego omówienia została przeniesiona do węzła [podstawowe zagadnienia dotyczące przeładunku](../ready/considerations/basic-considerations.md) w spisie treści). |
+| [Programowanie oparte na testach (TDD) dla stref wyładunkowych](../ready/considerations/test-driven-development.md)                       | **Nowy artykuł:** Podejście refaktoryzacji zostało znacznie ulepszone dzięki przyjęciu cyklu projektowania opartego na testach w celu zaplanowania tworzenia i refaktoryzacji strefy. |
+| [Docelowa strefa TDD na platformie Azure](../ready/considerations/azure-test-driven-development.md)                       | **Nowy artykuł:** Narzędzia ładu platformy Azure oferują rozbudowaną platformę dla cykli TDD lub testy czerwoną/zieloną. |
+| [Popraw zabezpieczenia strefy wyładunkowej](../ready/considerations/landing-zone-security.md)                       | **Nowy artykuł:** Omówienie najlepszych rozwiązań w tej sekcji z powrotem do cyklu TDD. |
+| [Ulepszanie operacji strefy wyładunkowej](../ready/considerations/landing-zone-operations.md)                       | **Nowy artykuł:** Lista najlepszych rozwiązań w zakresie zarządzania, z przejściem do tego podejścia modularnego w celu usprawnienia operacji, niezawodności i wydajności. |
+| [Usprawnij zarządzanie strefami wyładunkowymi](../ready/considerations/landing-zone-governance.md)                       | **Nowy artykuł:** Lista najlepszych rozwiązań związanych z regulowaniem metodologii, z przejściem do tego podejścia modularnego w celu usprawnienia nadzoru, zarządzania kosztami i skalowania. |
+| [Zacznij od skali przedsiębiorstwa](../ready/considerations/enterprise-scale.md)                       | **Nowy artykuł:** Zademonstrowano podejście, które pokazuje różnice w procesie, gdy klient rozpoczyna pracę z szablonami strefy wyładunkowej w skali przedsiębiorstwa. Ten artykuł pomaga klientom zrozumieć kwalifikatory, które będą obsługiwały tę decyzję. |
+| Aktualizacja spisu treści                       | Spis treści został zaktualizowany w celu odzwierciedlenia nowych artykułów.  |
 
 ## <a name="march-27-2020"></a>27 marca 2020
 
@@ -42,7 +75,7 @@ Dodaliśmy wskazówki, które zawierają narzędzia, programy i zawartość skat
 
 | Artykuł                                                                                     | Opis                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Projektowanie i wdrażanie aplikacji](../innovate/kubernetes/application-development.md) | **Nowy artykuł:** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące planowania tworzenia aplikacji, konfigurowania potoków DevOps oraz implementowania inżynierów niezawodności witryny dla Kubernetes. |
+| [Projektowanie i wdrażanie aplikacji](../innovate/kubernetes/application-development.md) | **Nowy artykuł:** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące planowania opracowywania aplikacji, konfigurowania potoków ciągłej integracji/ciągłego wdrażania oraz implementowania inżynierów niezawodności witryny dla usługi Kubernetes. |
 | [Projektowanie i operacje klastra](../innovate/kubernetes/cluster-design-operations.md) | **Nowy artykuł:** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące konfiguracji klastra, projektowania sieci, skalowalności w przyszłości, ciągłości działania i odzyskiwania po awarii dla Kubernetes. |
 | [Zabezpieczenia klastra i aplikacji](../innovate/kubernetes/cluster-application-security.md) | **Nowy artykuł:** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące planowania, produkcji i skalowania zabezpieczeń Kubernetes. |
 
@@ -54,20 +87,20 @@ W odpowiedzi na opinie o ciągłości migracji przy użyciu wielu sekcji środow
 
 | Artykuł                                                                       | Opis                                                                                                                                    |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Równoważenie portfela](../strategy/balance-the-portfolio.md)                 | Przeniesiono ten artykuł, aby pojawił się wcześniej w metodologii strategii. Dzięki temu można uwidocznić proces myśli wcześniej w cyklu życia. |
-| [Równoważenie&nbsp;konkurencyjnych priorytetów&nbsp;](../strategy/balance-competing-priorities.md) | **Nowy artykuł:** Przedstawia balans priorytetów w ramach metodologii, aby pomóc w poinformowaniu strategii.                                         |
+| [Balansowanie portfolio](../strategy/balance-the-portfolio.md)                 | Przeniesiono ten artykuł, aby pojawił się wcześniej w metodologii strategii. Dzięki temu można uwidocznić proces myśli wcześniej w cyklu życia. |
+| [Równoważenie&nbsp;konkurencyjnych&nbsp;priorytetów](../strategy/balance-competing-priorities.md) | **Nowy artykuł:** Przedstawia balans priorytetów w ramach metodologii, aby pomóc w poinformowaniu strategii.                                         |
 
 ### <a name="plan-updates"></a>Planowanie aktualizacji
 
 | Artykuł                                                             | Opis                                                                                                                                                                           |
 |---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Ocena&nbsp;najlepszych&nbsp;](../plan/contoso-migration-assessment.md) | Ten artykuł został przeniesiony do nowej sekcji "najlepsze praktyki" dotyczącej metodologii planu. Dzięki temu można uwidocznić sposób oceny środowisk lokalnych wcześniej w cyklu życia. |
+| [Najlepsze&nbsp;&nbsp;rozwiązanie w zakresie oceny](../plan/contoso-migration-assessment.md) | Ten artykuł został przeniesiony do nowej sekcji "najlepsze praktyki" dotyczącej metodologii planu. Dzięki temu można uwidocznić sposób oceny środowisk lokalnych wcześniej w cyklu życia. |
 
 ### <a name="ready-updates"></a>Gotowe aktualizacje
 
 | Artykuł                                                                   | Opis                                                                                                              |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [Co&nbsp;jest&nbsp;&nbsp;ego&nbsp;strefy docelowej?](../ready/landing-zone/index.md)                 | **Nowy artykuł:** Definiuje termin strefy docelowej.                                                                          |
+| [Co&nbsp;to&nbsp;jest&nbsp;strefa&nbsp;wyładunkowe?](../ready/landing-zone/index.md)                 | **Nowy artykuł:** Definiuje termin strefy docelowej.                                                                          |
 | [Pierwsza strefa docelowa](../ready/landing-zone/first-landing-zone.md)         | **Nowy artykuł:** Rozwija w porównaniu z różnymi strefami wyładunkowymi.                                                     |
 | [Migrowanie strefy wyładunkowej](../ready/landing-zone/migrate-landing-zone.md)     | Oddzielona definicja planu wdrożenia chmury z wyboru pierwszej strefy docelowej.         |
 | [Strefa docelowa Terraform](../ready/landing-zone/terraform-landing-zone.md) | Przeniesiono do nowej sekcji "strefa docelowa" przygotowanej metodologii, aby podwyższyć poziom Terraform w konwersacji strefy docelowej. |
@@ -80,7 +113,7 @@ W odpowiedzi na opinie o ciągłości migracji przy użyciu wielu sekcji środow
 | [Szacowaniu](../migrate/azure-migration-guide/assess.md)                                             | Dodano sekcję "trudne założenia", aby zademonstrować, jak ten poziom oceny współdziała z podejściem do oceny przyrostowej wymienionym w metodologii planu. |
 | [Klasyfikacja podczas oceniania procesów](../migrate/migration-considerations/assess/classify.md) | **Nowy artykuł:** Przedstawia znaczenie klasyfikowania wszystkich zasobów i obciążeń przed migracją.                                                                    |
 | [Migrate (Migracja)](../migrate/azure-migration-guide/migrate.md)                                           | Dodano odwołanie do UnifyCloud w opcjach narzędzi innych firm, w odpowiedzi na opinie w ramach konferencji warstwy 1.                                                         |
-| [Testowanie,&nbsp;Optymalizacja,&nbsp;i&nbsp;podwyższanie poziomu](../migrate/azure-migration-guide/optimize-and-transform.md)        | Wyrównuje tytuł tego artykułu z innymi sugestiami dotyczącymi ulepszeń procesów.                                                                                           |
+| [Testowanie,&nbsp;Optymalizowanie&nbsp;i&nbsp;podwyższanie poziomu](../migrate/azure-migration-guide/optimize-and-transform.md)        | Wyrównuje tytuł tego artykułu z innymi sugestiami dotyczącymi ulepszeń procesów.                                                                                           |
 | [Przegląd oceny](../migrate/migration-considerations/assess/index.md)                           | Zaktualizowano w celu zilustrowania, że ocena w tej fazie koncentruje się na ocenie dopasowania technicznego określonego obciążenia i powiązanych zasobów.                               |
 | [Lista kontrolna dotycząca planowania](../migrate/migration-considerations/prerequisites/planning-checklist.md)    | Zaktualizowano w celu wyjaśnienia znaczenia wyrównania operacji podczas planowania działań związanych z migracją w celu zapewnienia dobrego zarządzania obciążeniem po migracji.                  |
 

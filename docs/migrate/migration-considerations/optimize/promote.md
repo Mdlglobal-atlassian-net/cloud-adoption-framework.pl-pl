@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 0ec1144e93c449f15579d5cf0246bb44785faed0
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80429278"
 ---
 <!-- cSpell:ignore CISO prepromotion -->
@@ -28,13 +28,13 @@ Proces podwyższania poziomu różni się w zależności od architektury obcią�
 
 Każdy z następujących procesów należy wykonać, udokumentować i sprawdzić przed wdrożeniem w środowisku produkcyjnym:
 
-- **[Oceń](../assess/index.md):** Obciążenie zostało ocenione pod kątem zgodności z chmurą.
-- **[Architekt](../assess/architect.md):** Struktura obciążenia została prawidłowo zaprojektowana tak, aby była wyrównana do wybranego dostawcy chmury.
-- **[Replikacja](../migrate/replicate.md):** Zasoby zostały zreplikowane do środowiska chmury.
-- **[Etap](../migrate/stage.md):** Zreplikowane zasoby zostały przywrócone w przygotowanym wystąpieniu środowiska chmury.
-- **[Testowanie biznesowe](./business-test.md):** Obciążenie zostało w pełni przetestowane i sprawdzone przez użytkowników firmy.
-- **[Plan zmiany firmy](./business-change-plan.md):** Firma udostępniła Plan wprowadzania zmian zgodnie z promocją produkcyjną. powinno to obejmować plan wdrażania użytkowników, zmiany w procesach biznesowych, użytkowników, którzy wymagają szkoleń, oraz osi czasu dla różnych działań.
-- **[Gotowe](./ready.md):** Ogólnie rzecz biorąc, przed podwyższeniem poziomu należy wprowadzić serię zmian technicznych.
+- ** [Oceń](../assess/index.md):** Obciążenie zostało ocenione pod kątem zgodności z chmurą.
+- ** [Architekt](../assess/architect.md):** Struktura obciążenia została prawidłowo zaprojektowana tak, aby była wyrównana do wybranego dostawcy chmury.
+- ** [Replikacja](../migrate/replicate.md):** Zasoby zostały zreplikowane do środowiska chmury.
+- ** [Etap](../migrate/stage.md):** Zreplikowane zasoby zostały przywrócone w przygotowanym wystąpieniu środowiska chmury.
+- ** [Testowanie biznesowe](./business-test.md):** Obciążenie zostało w pełni przetestowane i sprawdzone przez użytkowników firmy.
+- ** [Plan zmiany firmy](./business-change-plan.md):** Firma udostępniła Plan wprowadzania zmian zgodnie z promocją produkcyjną. powinno to obejmować plan wdrażania użytkowników, zmiany w procesach biznesowych, użytkowników, którzy wymagają szkoleń, oraz osi czasu dla różnych działań.
+- ** [Gotowe](./ready.md):** Ogólnie rzecz biorąc, przed podwyższeniem poziomu należy wprowadzić serię zmian technicznych.
 
 ## <a name="best-practices-to-execute-prior-to-promotion"></a>Najlepsze rozwiązania, które należy zastosować przed podwyższeniem poziomu
 
@@ -43,9 +43,9 @@ Następujące zmiany techniczne będą prawdopodobnie musiały zostać wprowadzo
 - **Wyrównanie domen** Niektóre zasady firmowe wymagają oddzielnych domen do przygotowania i produkcji. Upewnij się, że wszystkie zasoby są przyłączone do właściwej domeny.
 - **Routing użytkowników** Sprawdź, czy użytkownicy uzyskują dostęp do obciążenia za pomocą odpowiednich tras sieciowych. Sprawdź spójność oczekiwań dotyczących wydajności.
 - **Wyrównanie tożsamości** Sprawdź, czy użytkownicy przekierowani do aplikacji mają odpowiednie uprawnienia w domenie, aby móc hostować aplikację.
-- **Wydajność** Wykonaj ostateczną walidację wydajności obciążeń, aby zminimalizować nieprzewidziane sytuacje.
+- **Skuteczności.** Wykonaj ostateczną walidację wydajności obciążeń, aby zminimalizować nieprzewidziane sytuacje.
 - **Walidacja ciągłości działania i odzyskiwania po awarii** Upewnij się, że odpowiednie procesy tworzenia kopii zapasowych i odzyskiwania działają zgodnie z oczekiwaniami.
-- **Klasyfikacja danych** Sprawdź poprawność klasyfikacji danych, aby się upewnić, że wdrożono odpowiednie zabezpieczenia i zasady.
+- **Klasyfikacja danych.** Sprawdź poprawność klasyfikacji danych, aby się upewnić, że wdrożono odpowiednie zabezpieczenia i zasady.
 - **Weryfikacja przez głównego specjalistę ds. zabezpieczeń informacji (CISO)** Upewnij się, że specjalista ds. zabezpieczeń informacji sprawdził obciążenie, ryzyko biznesowe, tolerancję ryzyka i strategie zaradcze.
 
 ## <a name="final-step-promote"></a>Ostatni krok: Podnieś poziom

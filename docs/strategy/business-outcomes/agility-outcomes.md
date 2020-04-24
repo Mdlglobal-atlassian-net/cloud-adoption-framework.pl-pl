@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.openlocfilehash: 29e30f6980d583850f5af6c82302d91b0078d049
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433787"
 ---
 # <a name="examples-of-agility-outcomes"></a>Przykłady wyników dotyczącej elastyczności
@@ -24,7 +24,7 @@ Tradycyjni funkcjonariusze inwestycji i zespoły IT były uważane za źródło 
 
 ## <a name="why-is-agility-so-important"></a>Dlaczego taka elastyczność jest ważna?
 
-Rynki zmieniają się w szybszym tempie niż kiedykolwiek wcześniej. Począwszy od 2015, w ciągu lat listy Fortune 500 61 tylko firmy 57, które zostały później&mdash;stawka obrotu w wersji 88,6%. Oznacza to zmianę na rynku w poprzednio nieprawidłowym tempie. Nie ma to wpływu na działalność informatyczną i nawet agilities biznesową w organizacji na listy Fortune 500, ale te wyniki pomagają nam zrozumieć tempo, w jaki sposób nadal zmieniają się rynki.
+Rynki zmieniają się w szybszym tempie niż kiedykolwiek wcześniej. Począwszy od 2015, tylko firmy 57 w listy Fortune 500 61 lat w późniejszym 88,6&mdash;czasie. Oznacza to zmianę na rynku w poprzednio nieprawidłowym tempie. Nie ma to wpływu na działalność informatyczną i nawet agilities biznesową w organizacji na listy Fortune 500, ale te wyniki pomagają nam zrozumieć tempo, w jaki sposób nadal zmieniają się rynki.
 
 W przypadku operatorów dominujących i współdziałania, elastyczność biznesowa może być różnicą między sukcesem lub niepowodzeniem inicjatywy biznesowej. Szybka adaptacja do zmian wprowadzonych na rynku może pomóc istniejącym klientom lub zastrzec udział w rynku od konkurentów. Wyniki związane z elastycznością w następnych sekcjach mogą pomóc w przekazywaniu informacji o chmurze podczas transformacji.
 
@@ -58,4 +58,4 @@ Gdy firma wymaga nowych usług IT lub skaluje się do istniejących usług, naby
 Dowiedz się więcej na temat [osiągniętych wyników](./reach-outcomes.md).
 
 > [!div class="nextstepaction"]
-> [Osiągnięcia wyników](./reach-outcomes.md)
+> [Wyniki związane z zasięgiem](./reach-outcomes.md)

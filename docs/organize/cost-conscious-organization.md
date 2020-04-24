@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.openlocfilehash: 714bd0d26a38a1ee3a3cb2bfc2d336d1ffd4f45c
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428518"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Tworzenie świadomej organizacji kosztów
@@ -20,8 +20,8 @@ Jak opisano w obszarze [motywacje: Dlaczego przenosimy się do chmury?](../strat
 
 Zapewnienie obnoszenia kosztów nie jest działaniem jednorazowym. Podobnie jak w przypadku innych tematów wdrażania w chmurze, jest to iteracyjne. Na poniższym diagramie przedstawiono ten proces, aby skoncentrować się na trzech działaniach zależnych: *widoczność*, *odpowiedzialność*i *Optymalizacja*. Procesy te są odtwarzane na makrach i mikropoziomach, które opisano szczegółowo w tym artykule.
 
-![y ekonomiczny proces](../_images/ready/cost-optimization-process.png)
-*rysunek 1 — Zarys organizacji świadomej kosztów.*
+![Pozostały koszt](../_images/ready/cost-optimization-process.png)
+świadomy procesu —*rysunek 1 — konspekt organizacji świadomej kosztów.*
 
 ## <a name="general-cost-conscious-processes"></a>Ogólne procesy świadome kosztów
 

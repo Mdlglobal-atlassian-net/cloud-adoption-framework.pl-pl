@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3d879119e84bb2beebacce7a8086f2e356132bc2
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 465f1771232f8df7226773fb8055052a846cacca
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433222"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997959"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>Tworzenie dodatkowych subskrypcji w celu skalowania środowiska platformy Azure
 
@@ -26,7 +26,7 @@ Inne zagadnienia mogą wymagać dodatkowych subskrypcji. Rozszerzając swój maj
 
 ## <a name="technical-considerations"></a>Zagadnienia techniczne
 
-**Limity subskrypcji:** Subskrypcje mają zdefiniowane limity dla niektórych typów zasobów. Na przykład liczba sieci wirtualnych w subskrypcji jest ograniczona. Gdy subskrypcja zbliża się do tych limitów, należy utworzyć kolejną subskrypcję i umieścić w niej dodatkowe zasoby. Aby uzyskać więcej informacji, zobacz [limity subskrypcji i usług platformy Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits#general-limits).
+**Limity subskrypcji:** Subskrypcje mają zdefiniowane limity dla niektórych typów zasobów. Na przykład liczba sieci wirtualnych w subskrypcji jest ograniczona. Gdy subskrypcja zbliża się do tych limitów, należy utworzyć kolejną subskrypcję i umieścić w niej dodatkowe zasoby. Aby uzyskać więcej informacji, zobacz [limity subskrypcji i usług platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#general-limits).
 
 **Zasoby modelu klasycznego:** Jeśli używasz platformy Azure przez długi czas, możesz mieć zasoby, które zostały utworzone przy użyciu klasycznego modelu wdrażania. Zasady platformy Azure, kontrola dostępu oparta na rolach, grupowanie zasobów i Tagi nie mogą być stosowane do zasobów modelu klasycznego. Te zasoby należy przenieść do subskrypcji, które zawierają tylko klasyczne zasoby modelu.
 
@@ -36,18 +36,18 @@ Inne zagadnienia mogą wymagać dodatkowych subskrypcji. Rozszerzając swój maj
 
 Twoje priorytety biznesowe mogą prowadzić do tworzenia dodatkowych subskrypcji. Te priorytety obejmują:
 
-- Innowacj
+- Innowacje
 - Migracja
 - Koszty
 - Operacje
-- Bezpieczeństwo
+- Zabezpieczenia
 - Nadzór
 
 Aby poznać inne zagadnienia dotyczące skalowania subskrypcji, zapoznaj się z [przewodnikiem](../../decision-guides/subscriptions/index.md) dotyczącym decyzji o subskrypcji w strukturze wdrożenia chmury.
 
 ## <a name="moving-resources-between-subscriptions"></a>Przeniesienie zasobów między subskrypcjami
 
-Gdy model subskrypcji rośnie, możesz zdecydować, że niektóre zasoby należą do innych subskrypcji. Wiele typów zasobów można przenosić między subskrypcjami. Możesz również użyć zautomatyzowanych wdrożeń, aby ponownie utworzyć zasoby w innej subskrypcji. Aby uzyskać więcej informacji, zobacz [Przenoszenie zasobów platformy Azure do innej grupy zasobów lub subskrypcji](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
+Gdy model subskrypcji rośnie, możesz zdecydować, że niektóre zasoby należą do innych subskrypcji. Wiele typów zasobów można przenosić między subskrypcjami. Możesz również użyć zautomatyzowanych wdrożeń, aby ponownie utworzyć zasoby w innej subskrypcji. Aby uzyskać więcej informacji, zobacz [Przenoszenie zasobów platformy Azure do innej grupy zasobów lub subskrypcji](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription).
 
 ## <a name="tips-for-creating-new-subscriptions"></a>Porady dotyczące tworzenia nowych subskrypcji
 

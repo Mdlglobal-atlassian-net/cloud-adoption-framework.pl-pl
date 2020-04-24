@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: ecc0dd8b3a91461d5c5d1dd1ce4c062646d974fb
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80430499"
 ---
 # <a name="set-up-basic-alerts"></a>Konfigurowanie podstawowych alertów
@@ -52,4 +52,4 @@ Pakiet używa sprzętu serwera firmy HP jako przykładu. Zmień ustawienia w sko
 Informacje o mechanizmach operacji i zabezpieczeń, które obsługują bieżące operacje.
 
 > [!div class="nextstepaction"]
-> [Bieżące zarządzanie i zabezpieczenia](./ongoing-management-overview.md)
+> [Ciągłe zarządzanie i bezpieczeństwo](./ongoing-management-overview.md)

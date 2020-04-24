@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: 57859a8e3af75fa19f929e8fb614197ff69c47df
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434075"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Narzędzia i usługi zarządzania serwerem platformy Azure
 
 Zgodnie z [omówieniem](./index.md) tych wskazówek, pakiet usług zarządzania serwerem platformy Azure obejmuje następujące zagadnienia:
 
-- Migracja
+- Migrate (Migracja)
 - Bezpieczeństwo
 - Ochrona
 - Monitorowanie
@@ -27,7 +27,7 @@ Zgodnie z [omówieniem](./index.md) tych wskazówek, pakiet usług zarządzania 
 
 W poniższych sekcjach krótko opisano te obszary zarządzania i przedstawiono linki do szczegółowej zawartości dotyczącej głównych usług platformy Azure, które je obsługują.
 
-## <a name="migrate"></a>Migracja
+## <a name="migrate"></a>Migrate (Migracja)
 
 Usługi migracji mogą ułatwić Migrowanie obciążeń do platformy Azure. Aby zapewnić najlepsze wskazówki, usługa Azure Migrate rozpoczyna się od mierzenia wydajności serwera lokalnego i oceny przydatności do migracji. Po Azure Migrate zakończeniu oceny można przeprowadzić migrację maszyn lokalnych do platformy Azure za pomocą [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) i [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) .
 
@@ -84,7 +84,7 @@ Przyjęcie i przejście do chmury powoduje utworzenie nowych wyzwań związanych
 
 Projekt dotyczący zarządzania organizacjami standardowymi często różni się od projektowania ładu dla złożonych przedsiębiorstw. Aby dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących ładu dla standardowej organizacji, zobacz [Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem](../../govern/guides/standard/index.md). Aby dowiedzieć się więcej o najlepszych rozwiązaniach dotyczących ładu dla złożonego przedsiębiorstwa, zobacz Przewodnik dotyczący [ładu dla złożonych przedsiębiorstw](../../govern/guides/complex/index.md).
 
-## <a name="billing-information"></a>Informacja o rozliczeniach
+## <a name="billing-information"></a>Informacje o rozliczeniach
 
 Aby dowiedzieć się więcej o cenach dla usług zarządzania platformy Azure, przejdź do następujących stron:
 

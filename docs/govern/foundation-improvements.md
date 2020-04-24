@@ -10,10 +10,10 @@ ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: 050d9cdfd2069a4d7da2e411233f6a60f270eb10
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "77706612"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Popraw początkową podstawę ładu w chmurze
@@ -29,16 +29,16 @@ W dowolnym momencie następujące najlepsze rozwiązania można zastosować do p
 
 |Ryzyko/zapotrzebowanie | Przedsiębiorstwo standardowe | Przedsiębiorstwo złożone |
 |---|---|---|
-|Poufne dane w chmurze|[Ulepszanie dyscypliny](./guides/standard/security-baseline-improvement.md)|[Ulepszanie dyscypliny](./guides/complex/security-baseline-improvement.md)|
-|Aplikacje o kluczowym znaczeniu w chmurze|[Ulepszanie dyscypliny](./guides/standard/resource-consistency-improvement.md)|[Ulepszanie dyscypliny](./guides/complex/resource-consistency-improvement.md)|
-|Zarządzanie kosztami chmury|[Ulepszanie dyscypliny](./guides/standard/cost-management-improvement.md)|[Ulepszanie dyscypliny](./guides/complex/cost-management-improvement.md)|
-|Rozwiązanie wielochmurowe|[Ulepszanie dyscypliny](./guides/standard/multicloud-improvement.md)|[Ulepszanie dyscypliny](./guides/complex/multicloud-improvement.md)|
-|Złożone/starsze Zarządzanie tożsamościami|Nie dotyczy|[Ulepszanie dyscypliny](./guides/complex/identity-baseline-improvement.md)|
-|Wiele warstw nadzoru|Nie dotyczy|[Ulepszanie dyscypliny](./guides/complex/multiple-layers-of-governance.md)|
+|Poufne dane w chmurze|[Ulepszenia w ramach dziedziny](./guides/standard/security-baseline-improvement.md)|[Ulepszenia w ramach dziedziny](./guides/complex/security-baseline-improvement.md)|
+|Aplikacje o kluczowym znaczeniu w chmurze|[Ulepszenia w ramach dziedziny](./guides/standard/resource-consistency-improvement.md)|[Ulepszenia w ramach dziedziny](./guides/complex/resource-consistency-improvement.md)|
+|Zarządzanie kosztami chmury|[Ulepszenia w ramach dziedziny](./guides/standard/cost-management-improvement.md)|[Ulepszenia w ramach dziedziny](./guides/complex/cost-management-improvement.md)|
+|Rozwiązanie wielochmurowe|[Ulepszenia w ramach dziedziny](./guides/standard/multicloud-improvement.md)|[Ulepszenia w ramach dziedziny](./guides/complex/multicloud-improvement.md)|
+|Złożone/starsze Zarządzanie tożsamościami|Nie dotyczy|[Ulepszenia w ramach dziedziny](./guides/complex/identity-baseline-improvement.md)|
+|Wiele warstw nadzoru|Nie dotyczy|[Ulepszenia w ramach dziedziny](./guides/complex/multiple-layers-of-governance.md)|
 
 ## <a name="next-steps"></a>Następne kroki
 
 Oprócz zastosowania najlepszych rozwiązań, metodologia ładu w strukturze wdrożenia chmury można dostosować tak, aby pasowała do unikatowych ograniczeń firmy. Po zastosowaniu stosownych zaleceń [Oceń zasady firmowe, aby zrozumieć dodatkowe wymagania dotyczące dostosowywania](./corporate-policy.md).
 
 > [!div class="nextstepaction"]
-> [Oceń zasady firmowe](./corporate-policy.md)
+> [Ocenianie zasad firmowych](./corporate-policy.md)

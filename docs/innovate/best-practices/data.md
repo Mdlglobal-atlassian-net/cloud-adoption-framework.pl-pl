@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 613e1ebaa3341b9aa96af659d0eb03cbc21a1303
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80425604"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Narzędzia do zdemokratyzuj proces danych na platformie Azure
@@ -41,7 +41,7 @@ Na platformie Azure następujące narzędzia są często używane do przyspiesze
 
 - [Power BI](https://docs.microsoft.com/power-bi)
 - [Azure Data Catalog](https://docs.microsoft.com/azure/data-catalog)
-- [Analiza usługi Azure Synapse](https://docs.microsoft.com/azure/synapse-analytics)
+- [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics)
 - [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)
 - [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql)
 - [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql)
@@ -51,7 +51,7 @@ Na platformie Azure następujące narzędzia są często używane do przyspiesze
 - [Azure Database Migration Service](https://docs.microsoft.com/azure/dms)
 - [Azure SQL Database z wystąpieniami zarządzanymi lub bez nich](https://docs.microsoft.com/azure/sql-database)
 - [Azure Data Factory](https://docs.microsoft.com/azure/data-factory)
-- [Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics)
+- [Usługa Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics)
 - [Usługi SQL Server Integration Services](https://docs.microsoft.com/sql/integration-services)
 - [Azure Stack](https://docs.microsoft.com/azure-stack)
 - [SQL Server Stretch Database](https://docs.microsoft.com/sql/sql-server/stretch-database)
@@ -62,7 +62,7 @@ Na platformie Azure następujące narzędzia są często używane do przyspiesze
 
 Zgodnie z podejściem do rozliczeń na dużą skalę, aspekty poszczególnych rozwiązań wymagają uściślania i działania techniczne. W takim przypadku może być wymagana większa liczba tych usług. Skorzystaj ze spisu treści po lewej stronie tej strony, aby uzyskać wskazówki dotyczące narzędzi platformy Azure, które są istotne dla procesu testowania hipotez.
 
-## <a name="get-started"></a>Rozpoczynanie pracy
+## <a name="get-started"></a>Rozpoczęcie pracy
 
 Spis treści po lewej stronie tej strony zawiera wiele artykułów. Te artykuły ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
 

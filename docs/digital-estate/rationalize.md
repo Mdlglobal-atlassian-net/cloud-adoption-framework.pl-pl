@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 7389663a9a530b447d5cea977d28aa8b55621ee4
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 70b4d0ee295f06db68090551fac02fd205111c60
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434804"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995720"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racjonalizacja majątku cyfrowego
 
@@ -93,7 +93,7 @@ W przykładzie migracji IaaS podanym w tym artykule:
 
 - Poproszenie zespołu DevOps o identyfikację zasobów, które są już częścią automatyzacji wdrożenia, i usunięcie tych zasobów z podstawowego planu migracji.
 
-- Zwróć się do zespołów danych i R & D, aby identyfikować zasoby, które obsługują nowe strumienie przychodu i usuwać je z podstawowego planu migracji.
+- Zwróć się do zespołów danych i R&D, aby identyfikować zasoby, które obsługują nowe strumienie przychodu i usuwać je z podstawowego planu migracji.
 
 Ta ukierunkowana na program analiza jakościowa może być wykonywana szybko i tworzy wyrównanie między wieloma zaległościami migracji.
 
@@ -143,7 +143,7 @@ Zespoły wdrożenia chmury i zespół strategii chmury mogą współdziałać z 
 
 Po zaakceptowaniu przez dwa zespoły kryteriów analizy jakościowej można wykonać zadanie oceny w każdej iteracji. Osiągnięcie konsensusu w kryteriach oceny zwykle wymaga od dwóch do trzech wydań.
 
-Po przeniesieniu oceny do procesu wykonywania przyrostowego migracji zespół rozwiązań w chmurze może szybciej wykonywać iteracje w zakresie oceny i architektury. Na tym etapie zespół strategii chmury jest również abstrakcyjny, co skraca czas ich opróżniania. Dzięki temu zespół strategii chmury może skoncentrować się na priorytetyzacji aplikacji, które nie znajdują się jeszcze w określonej wersji, co zapewnia ścisłe wyrównanie z zmianami warunków rynkowych.
+Po przeniesieniu oceny do procesu wykonywania przyrostowego migracji zespół rozwiązań w chmurze może szybciej wykonywać iteracje w zakresie oceny i architektury. Na tym etapie zespół strategii chmury jest również abstrakcyjny, co skraca czas ich opróżniania. Dzięki temu zespół strategii chmury może skupić się na priorytetach aplikacji, które nie znajdują się jeszcze w określonej wersji, zapewniając ścisłe wyrównanie z uwzględnieniem zmieniających się warunków rynkowych.
 
 Nie wszystkie aplikacje z priorytetami są gotowe do migracji. Sekwencjonowanie może ulec zmianie, ponieważ zespół wykonuje dokładniejszą analizę jakości i odnajduje zdarzenia biznesowe i zależności, które mogą monitować o zmianę priorytetyzacji zaległości. Niektóre wydania mogą grupować ze sobą niewielką liczbę obciążeń. Inne osoby mogą tylko zawierać pojedyncze obciążenie.
 

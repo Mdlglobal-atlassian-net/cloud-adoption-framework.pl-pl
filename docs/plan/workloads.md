@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.openlocfilehash: 4ffd05a17466d0ca61605de5080b54316de78e4d
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433967"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Definiowanie i ustalanie priorytetów obciążeń dla planu wdrażania chmury
@@ -80,7 +80,7 @@ Po zdefiniowaniu priorytetów początkowych i dodaniu obciążeń do planu, każ
 | Zgodność | Czy istnieją jakieś wymagania dotyczące zgodności innych firm dla tego obciążenia? |         |
 | Właściciele aplikacji | Kto jest odpowiedzialny za wpływ wszystkich aplikacji skojarzonych z tym obciążeniem? |         |
 | Okresy zawieszania działalności biznesowej | Czy istnieją jakieś przypadki, w których firma nie będzie zezwalać na zmianę? |         |
-| Lokalizacje geograficzne | Czy każdy lokalizacje geograficzne ma wpływ na to obciążenie? |         |
+| Obszary geograficzne | Czy każdy lokalizacje geograficzne ma wpływ na to obciążenie? |         |
 
 ### <a name="technical-inputs"></a>Dane techniczne
 

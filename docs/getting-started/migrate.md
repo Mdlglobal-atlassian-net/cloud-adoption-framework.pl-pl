@@ -7,18 +7,18 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3ec14b513bc8030d2b04144465ecc0cbb48b97fc
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 866c269257581ab99d70fc0eb6296963edd154f2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434789"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995700"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Rozpocznij podróż do migracji w chmurze na platformie Azure
 
 Użyj platformy wdrażania Microsoft Cloud dla platformy Azure, aby rozpocząć podróż do migracji do chmury. Ta struktura zawiera kompleksowe wskazówki dotyczące przenoszenia starszych obciążeń aplikacji do chmury przy użyciu innowacyjnych technologii opartych na chmurze.
 
-## <a name="executive-summary"></a>Streszczenie
+## <a name="executive-summary"></a>Streszczenie działań
 
 Platforma wdrażania w chmurze pomaga klientom podejmować uproszczone podróże w chmurze. Ta struktura zawiera szczegółowe informacje dotyczące kompleksowej podróży w chmurze, rozpoczynając od docelowych rezultatów firmy, a następnie dopasowując gotowość do chmury i oceny z jasno określonymi celami biznesowymi. Te wyniki są osiągane przez zdefiniowaną ścieżkę do wdrożenia chmury. Po wdrożeniu opartym na migracji zdefiniowana ścieżka koncentruje się głównie na migrowaniu obciążeń lokalnych do chmury. Czasami ta podróż obejmuje modernizację obciążeń, aby zwiększyć zwrot z inwestycji w miarę wysiłków związanych z migracją.
 
@@ -75,18 +75,18 @@ Strategia i planowanie chmury to metodologia, która koncentruje się na dostoso
 
 ### <a name="methodology-explained"></a>Wyjaśniono metodologię
 
-Strategia chmurowa i planowanie rozwiązań w chmurze opracowano na podstawie przyrostowego podejścia do implementacji w chmurze, które jest dostosowane do strategii technologii Agile, dojrzałości kulturowej na podstawie podejścia do wzrostu sposób myślenia oraz strategii opartych na wyniki biznesowe. Ta metodologia składa się z następujących składników wysokiego poziomu, które są pomocne w implementacji każdej strategii.
+Strategia chmurowa i planowanie rozwiązań w chmurze opracowano na podstawie przyrostowego podejścia do implementacji w chmurze, który jest zgodny z strategiami technologii Agile, spłatą kulturową opartą na podejściu sposób myślenia wzrostu i strategiami opartymi na rezultatach działalności biznesowej. Ta metodologia składa się z następujących składników wysokiego poziomu, które są pomocne w implementacji każdej strategii.
 
 Jak pokazano na powyższym obrazie, Ta struktura przedstawia decyzje strategiczne w niewielkiej liczbie zawartych procesów, które działają w modelu iteracyjnym. Chociaż opisano w dokumencie liniowym, każdy z następujących procesów jest oczekiwany równolegle z iteracjami implementacji w chmurze. Linki dla każdego procesu będą pomocne w definiowaniu stanu zakończenia i sposobach wykupu w kierunku żądanego stanu końcowego:
 
-- **[Plan](../strategy/index.md):** Gdy wdrożenie techniczne jest wyrównane z jasnymi celami biznesowymi, znacznie ułatwia mierzenie i dostosowanie sukcesu w wielu działaniach związanych z implementacją w chmurze, bez względu na decyzje techniczne.
-- **[Gotowe](../ready/index.md):** Przygotowanie firmy, kultury, osób i środowiska do wprowadzania zmian prowadzi do sukcesu w każdym wysiłku i przyspiesza implementację i zmienia projekty.
+- ** [Plan](../strategy/index.md):** Gdy wdrożenie techniczne jest wyrównane z jasnymi celami biznesowymi, znacznie ułatwia mierzenie i dostosowanie sukcesu w wielu działaniach związanych z implementacją w chmurze, bez względu na decyzje techniczne.
+- ** [Gotowe](../ready/index.md):** Przygotowanie firmy, kultury, osób i środowiska do wprowadzania zmian prowadzi do sukcesu w każdym wysiłku i przyspiesza implementację i zmienia projekty.
 - **Zastosuj:** Zapewnij prawidłowe wdrożenie żądanych zmian, w ramach procesów IT i firmowych, aby osiągnąć wyniki biznesowe.
   - **[Migrowanie](../migrate/index.md):** iteracyjne wykonywanie [metodologii implementacji w chmurze](#cloud-implementation) przestrzegane przez testowany proces oceny, migracji, optymalizacji i bezpiecznego & zarządzania, aby utworzyć powtarzalny proces migracji obciążeń.
-  - **[Innowacje](../innovate/index.md):** Zwiększ wartość biznesową, korzystając z działań innowacyjnych, które odblokują nowe umiejętności techniczne i rozbudowane możliwości biznesowe.
-- **[Zarządzanie](../govern/index.md):** Wyrównaj zasady firmowe jako materialne czynniki ryzyka, które zostały skorygowane za pomocą zasad, procesów i narzędzi do zarządzania opartego na chmurze.
-- **[Zarządzanie](../manage/index.md):** Rozwiń operacje IT, aby zapewnić, że rozwiązania oparte na chmurze mogą być obsługiwane za pośrednictwem bezpiecznych, ekonomicznych procesów przy użyciu nowoczesnych narzędzi do obsługi chmurowej.
-- **[Organizuj](../organize/index.md):** Wyrównaj osoby i zespoły, aby zapewnić prawidłowe operacje i wdrożenia w chmurze.
+  - ** [Innowacje](../innovate/index.md):** Zwiększ wartość biznesową, korzystając z działań innowacyjnych, które odblokują nowe umiejętności techniczne i rozbudowane możliwości biznesowe.
+- ** [Zarządzanie](../govern/index.md):** Wyrównaj zasady firmowe jako materialne czynniki ryzyka, które zostały skorygowane za pomocą zasad, procesów i narzędzi do zarządzania opartego na chmurze.
+- ** [Zarządzanie](../manage/index.md):** Rozwiń operacje IT, aby zapewnić, że rozwiązania oparte na chmurze mogą być obsługiwane za pośrednictwem bezpiecznych, ekonomicznych procesów przy użyciu nowoczesnych narzędzi do obsługi chmurowej.
+- ** [Organizuj](../organize/index.md):** Wyrównaj osoby i zespoły, aby zapewnić prawidłowe operacje i wdrożenia w chmurze.
 
 W ramach tego środowiska migracji Ta platforma zostanie użyta w celu rozróżnienia, zarządzania zmianami i popełniania zespołów funkcjonalnych przez realizację wyników działalności biznesowej.
 
@@ -111,7 +111,7 @@ Podczas wdrażania strategii chmury i planowania zespołu IT będzie skoncentrow
 
 Strategia i planowanie chmury często kierują się szeroką kolekcją obciążeń i aplikacji. W portfolio są zwykle migrowane popularne aplikacje lub typy obciążeń. Poniżej przedstawiono kilka przykładów:
 
-- Line-of-business aplikacji
+- Aplikacje biznesowe
 - Aplikacje dla klientów
 - Aplikacje innych producentów
 - Platformy do analizy danych
@@ -147,6 +147,6 @@ Platforma wdrażania w chmurze to rozwiązanie cyklu życia. Jest ona przeznaczo
 >
 > [Zarządzanie](../manage/index.md)
 >
-> [Organizowanie](../organize/index.md)
+> [Organizuj](../organize/index.md)
 
 <!-- test:ignoreNextStep -->

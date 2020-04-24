@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3a8874c17c2b9e02d5a66cba251df5d491424ee3
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: da021a6e1a4467189d20d3cb05e7ccdbb0b5a3b6
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434374"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995397"
 ---
 <!-- cSpell:ignore CDO's CIO's -->
 
@@ -56,11 +56,11 @@ Oto bieżący stan operacji w firmie i w chmurze:
 Następujące zmiany są przewidywane w ciągu następnych kilku lat:
 
 - CIO to wiodący nakład na unowocześnienie zasad związanych z danymi osobistymi i finansowymi w celu wspierania przyszłych celów. Dwaj członkowie zespołu nadzoru IT mają wgląd w ten nakład pracy.
-- CIO chce korzystać z migracji w chmurze jako funkcji wymuszania w celu poprawy spójności i stabilności między jednostkami biznesowymi i lokalizacje geograficzne. Natomiast w przyszłości należy przestrzegać wszelkich zewnętrznych wymagań dotyczących zgodności, które wymagają odchylenia od standardowych podejścia do określonych zespołów IT.
+- CIO chce korzystać z migracji w chmurze jako funkcji wymuszania w celu poprawy spójności i stabilności między jednostkami biznesowymi i lokalizacje geograficzne. W przyszłości należy jednak przestrzegać wszelkich zewnętrznych wymagań dotyczących zgodności, które wymagają odchylenia od standardowych podejścia do określonych zespołów IT.
 - Jeśli wczesne eksperymenty w aplikacji dev i BI pokażą wiodące wskaźniki sukcesu, chcą, aby wystawić w ciągu najbliższych 24 miesięcy rozwiązania produkcyjne o małych skali.
 - CIO i dyrektor finansowy posiadają architekta i wiceprzewodniczący infrastruktury do tworzenia analiz kosztów i studiów wykonalności. Te wysiłki określają, czy firma może i powinna przenieść zasoby 5 000 do chmury w ciągu następnych 36 miesięcy. Pomyślna migracja zezwoli CIO na wyeliminowanie dwóch centrów danych, co zmniejsza koszty za pośrednictwem $100 mln USD w ramach planu pięciu lat. Jeśli trzy do czterech centrów danych mogą mieć podobne wyniki, budżet zostanie przywrócony do czerni, dzięki czemu budżet CIO będzie obsługiwał bardziej innowacyjne inicjatywy.
-    ![koszty lokalne w porównaniu z kosztami platformy Azure, które pokazują powrót z $100 mln USD w ciągu najbliższych pięciu lat](../../../_images/govern/calculator-enterprise.png)
-- Wraz z tym obniżeniem kosztów firma planuje zmienić zarządzanie niektórymi inwestycjami IT, zmieniając rozmieszczenie zaliczonych wydatków inwestycyjnych jako kosztów operacyjnych w ramach tego kosztu. Ta zmiana zapewni większą kontrolę kosztów, której można użyć do przyspieszenia innych planowanych wysiłków.
+    ![Koszty lokalne w porównaniu z kosztami platformy Azure, które pokazują zwrot z $100 mln USD w ciągu najbliższych pięciu lat](../../../_images/govern/calculator-enterprise.png)
+- Wraz z tym obniżeniem kosztów firma planuje zmienić zarządzanie niektórymi inwestycjami IT, zmieniając rozmieszczenie zaliczonych wydatków inwestycyjnych jako kosztów operacyjnych w ramach tego kosztu. Ta zmiana zapewni większą kontrolę kosztów, która może być używana do przyspieszenia innych planowanych wysiłków.
 
 ## <a name="next-steps"></a>Następne kroki
 

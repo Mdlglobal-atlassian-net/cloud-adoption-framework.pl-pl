@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: def4d8a52dbff95a836549d68595f21d6d1244d8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 9e7cf8bec88178908caeae27742e5fbc92155003
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429804"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997353"
 ---
 <!-- cSpell:ignore MTBF MTTR -->
 
@@ -32,7 +32,7 @@ Każda organizacja ma inne scenariusze operacyjne, ale następujące elementy st
 - **Nieużywane zasoby.** Liczba zasobów, w przypadku których wszystkie możliwości pamięci, procesora lub sieci są stale niedostateczne.
 - **Wyczerpanie zasobów.** Liczba zasobów, w przypadku których obciążenie pamięci, procesora lub sieci są wyczerpane.
 - **Wiek zasobu.** Czas od ostatniego wdrożenia lub modyfikacji zasobu.
-- **Maszyny wirtualne w warunku krytycznym.** Liczba wdrożonych maszyn wirtualnych, w których wykryto co najmniej jeden krytyczny problem, który należy rozwiązać, aby przywrócić normalne funkcje.
+- **Maszyny wirtualne w warunku krytycznym.** Liczba wdrożonych maszyn wirtualnych, w których wykryto co najmniej jeden krytyczny problem, który musi zostać rozwiązany przez przywrócenie normalnej funkcjonalności.
 - **Alerty według ważności.** Łączna liczba alertów dla wdrożonego elementu zawartości podzielona według ważności.
 - **Linki sieci w złej kondycji.** Liczba zasobów z problemami z łącznością sieciową.
 - **Punkty końcowe usługi w złej kondycji.** Liczba problemów z punktami końcowymi sieci zewnętrznych.
@@ -67,7 +67,7 @@ Po utworzeniu planu bazowego należy ustanowić minimalne wzorce reprezentujące
 - **Wyzwalacz pokrycia kopii zapasowej.** Firma z zasobami o znaczeniu strategicznym ( _x%)_ bez aktualnych kopii zapasowych w miejscu może korzystać z zwiększonej nakładu pracy w dyscyplinie spójności zasobów, aby zapewnić spójną strategię tworzenia kopii zapasowych.
 - **Wyzwalacz kondycji kopii zapasowej.** Firma mająca więcej niż _x%_ awarii operacji przywracania powinna inwestować w dyscyplinę spójności zasobów, aby zidentyfikować problemy związane z tworzeniem kopii zapasowych i zapewnić ochronę ważnych zasobów.
 
-Dokładne metryki i wyzwalacze służące do oceny tolerancji ryzyka i poziom inwestycji w dyscyplinie spójności zasobów będą specyficzne dla organizacji, ale powyższe przykłady powinny służyć jako przydatny dla dyskusji w ramach ładu w chmurze. Dział.
+Dokładne metryki i wyzwalacze używane do oceny tolerancji ryzyka i poziom inwestycji w dyscyplinie spójności zasobów będą specyficzne dla organizacji, ale powyższe przykłady powinny służyć jako przydatny dla dyskusji w zespole nadzoru chmurowego.
 
 ## <a name="next-steps"></a>Następne kroki
 

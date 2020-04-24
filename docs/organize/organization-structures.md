@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 09f85e383623f52212eb9621b34342d54ad747b7
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: f01499141c85b1baca2b19f2ce6a8ed15163c4a9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428379"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995177"
 ---
 <!-- cSpell:ignore ccoe -->
 
@@ -29,7 +29,7 @@ Struktury organizacyjne przechodzą przez wspólny model zapadalności, który j
 
 1. [Tylko zespół wdrażania chmury](#cloud-adoption-team-only)
 2. [Najlepsze rozwiązanie MVP](#best-practice-minimum-viable-product-mvp)
-3. [Środkowe IT](#central-it)
+3. [Centralne zasoby IT](#central-it)
 4. [Wyrównanie strategiczne](#strategic-alignment)
 5. [Wyrównanie operacyjne](#operational-alignment)
 6. [Cloud Center doskonałości (CCoE)](#cloud-center-of-excellence)

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 9c261154f502fa96b053caead0ea999697a6f6b4
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433426"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>Narzędzia do przewidywania i wpływu na dane na platformie Azure
@@ -35,13 +35,13 @@ Na powyższym obrazie dane i szczegółowe informacje są wyrównane z najlepszy
 Na platformie Azure następujące narzędzia są często używane do przyspieszenia cyfrowego rozróżnienia w każdej z poprzednich faz:
 
 - [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning)
-- [Usługa Azure HDInsight](https://docs.microsoft.com/azure/hdinsight)
+- [Azure HDInsight](https://docs.microsoft.com/azure/hdinsight)
 - [Skalowanie w usłudze Hadoop R](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr)
-- [Analiza usługi Azure Synapse](https://docs.microsoft.com/azure/synapse-analytics)
+- [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics)
 
 Jak poszczególne narzędzia pomagają w każdej fazie przewidywania i wpływu są odzwierciedlone w wytycznych w spisie treści po lewej stronie tej strony.
 
-## <a name="get-started"></a>Rozpoczynanie pracy
+## <a name="get-started"></a>Rozpoczęcie pracy
 
 Spis treści po lewej stronie tej strony zawiera wiele artykułów. Te artykuły ułatwiają rozpoczęcie pracy z każdym z narzędzi w tej łańcucha narzędzi.
 

@@ -7,24 +7,24 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fa93cf71b98292e23b46f851fe422ba217be495d
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: f961fa2b20fc5fc8fe2670b05b5a66d9e99c0805
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433378"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120610"
 ---
 # <a name="build-with-customer-empathy"></a>Tworzenie z empatią wobec klientów
 
 "Konieczność jest posługuje na wynalazku". Ta proverb przechwytuje indelibilitye ludzkie i nasz dysk naturalny do magazynu. Zgodnie z opisem w słowniku Oxford w języku angielskim, "gdy konieczna jest jego niezależność, należy wymusić, aby znaleźć sposoby ich uzyskania lub osiągnięcia". Kilka z nich będzie odrzucać te uniwersalne prawdy dotyczące wynalazków. Jednak zgodnie z opisem w [innowacyjności w sieci cyfrowej](./index.md)innowacje wymagają zrównoważenia *i* *przyjęcia*.
 
-Kontynuując pracę, innowacje pochodzą z bardziej rozszerzonej rodziny. *Klient empatię jest dumnym elementem nadrzędnym innowacji.* Tworzenie rozwiązania, które steruje innowacyjnością, wymaga ważnego klienta,&mdash;ten, który utrzymuje klient z powrotem w celu rozwiązania problemów krytycznych. Rozwiązania te są oparte na tym, czego potrzebują klienci, a nie na ich chęci lub whims. Aby znaleźć prawdziwe potrzeby klientów, Zacznijmy od empatię&mdash;dogłębne zrozumienie środowiska klienta. Empatię to niezawodna umiejętność dla wielu inżynierów, menedżerów produktów i nawet liderów firmy. Na szczęście różnorodne interakcje i szybki tempo roli architekta w chmurze już zaczęły wspierać tę umiejętność.
+Kontynuując pracę, innowacje pochodzą z bardziej rozszerzonej rodziny. *Klient empatię jest dumnym elementem nadrzędnym innowacji.* Tworzenie rozwiązania umożliwiającego wprowadzanie innowacji wymaga ważnego klienta&mdash;, który zapewnia klientowi powracanie do rozwiązywania krytycznych wyzwań. Rozwiązania te są oparte na tym, czego potrzebują klienci, a nie na ich chęci lub whims. Aby znaleźć prawdziwe potrzeby klientów, Zacznijmy od empatię&mdash;dogłębnej wiedzy na temat środowiska klienta. Empatię to niezawodna umiejętność dla wielu inżynierów, menedżerów produktów i nawet liderów firmy. Na szczęście różnorodne interakcje i szybki tempo roli architekta w chmurze już zaczęły wspierać tę umiejętność.
 
 Dlaczego empatię tak ważne? Od pierwszego wydania minimalnego produktu (MVP) do ogólnej dostępności rozwiązania do oceny rynkowej klient empatię pomaga nam zrozumieć i udostępnić środowisko klienta. Empatię pomaga nam w tworzeniu lepszego rozwiązania. Co ważniejsze, lepiej rozmieszczenie rozwiązań do rozliczeń, które będą zachęcać do wdrożenia. W przypadku sieci cyfrowej te, które najbardziej empathizeą potrzebom klientów, mogą tworzyć jaśniejsze przyszłość, które ponownie definiują i prowadzą do rynku.
 
 ## <a name="how-to-build-with-empathy"></a>Jak skompilować przy użyciu empatię
 
-Planowanie jest w sposób wewnętrzny wykonywany w definiowaniu założeń. Im więcej planujesz, tym więcej widzimy, że założono narzut na grzbiet w fundamentie wspaniałego pomysłu. Założenia mają na celu przeznaczenie, aby produkt empatię&mdash;innymi słowami "co chcę zrobić, jeśli w tym miejscu było to możliwe?". Począwszy od fazy kompilacji minimalizuje okres, w którym założenia mogą Invade rozwiązanie. Takie podejście skraca również pętlę opinii z rzeczywistymi klientami, wyzwalając wcześniejszą okazje do uczenia i wyostrzania empatię.
+Planowanie jest w sposób wewnętrzny wykonywany w definiowaniu założeń. Im więcej planujesz, tym więcej widzimy, że założono narzut na grzbiet w fundamentie wspaniałego pomysłu. Założenia założeń są produktami empatię&mdash;innymi słowy, "co należy zrobić, jeśli znajdowały się na tej pozycji?". Począwszy od fazy kompilacji minimalizuje okres, w którym założenia mogą Invade rozwiązanie. Takie podejście skraca również pętlę opinii z rzeczywistymi klientami, wyzwalając wcześniejszą okazje do uczenia i wyostrzania empatię.
 
 > [!CAUTION]
 > Prawidłowe zdefiniowanie elementów do skompilowania może być kłopotliwe i wymaga pewnych rozwiązań. Jeśli kompilujesz coś zbyt szybko, jeśli nie odzwierciedla potrzeby klientów. Jeśli poświęcasz zbyt dużo czasu na zapoznanie się z początkowymi potrzebami klientów i wymaganiami dotyczącymi rozwiązań, rynek może je spełnić, zanim będzie można w ogóle skompilować wszystko. W każdym scenariuszu okazja do uczenia się może być znacząco opóźniona lub zmniejszana. Czasami dane mogą nawet być uszkodzone.
@@ -47,7 +47,7 @@ Ostatnim krokiem jest culmination hipotezy opartej na empatię. Definiuje odbior
 > [!CAUTION]
 > Celem jest _Kompilowanie_ za pomocą empatię klienta, a nie do _planowania_ . Jest ona zbyt łatwa do zablokowania w nieskończonych cyklach planowania i dostosowywania się do trafień w ramach doskonałej instrukcji Customer empatię. Przed podjęciem próby opracowania takiej instrukcji zapoznaj się z poniższymi sekcjami dotyczącymi definiowania i kompilowania programu MVP.
 
-Po sprawdzoniu podstawowych założeń, późniejsze iteracje koncentrują się na testach wzrostu oprócz testów empatię. Po skompilowaniu, przetestowaniu i zweryfikowaniu empatię można zacząć zrozumieć rynek z możliwością adresowania na dużą skalę. Można to zrobić za pomocą rozszerzenia standardowej formuły hipotezy opisanej wcześniej. Na podstawie dostępnych danych należy oszacować wielkość łącznego rynku&mdash;liczbę potencjalnych klientów.
+Po sprawdzoniu podstawowych założeń, późniejsze iteracje koncentrują się na testach wzrostu oprócz testów empatię. Po skompilowaniu, przetestowaniu i zweryfikowaniu empatię można zacząć zrozumieć rynek z możliwością adresowania na dużą skalę. Można to zrobić za pomocą rozszerzenia standardowej formuły hipotezy opisanej wcześniej. Na podstawie dostępnych danych należy oszacować rozmiar łącznego rynku&mdash;liczby potencjalnych klientów.
 
 Z tego miejsca należy oszacować wartość procentową tego łącznego rynku, która napotyka podobną wyzwania i która może być zainteresować to rozwiązanie. Jest to Twój rynek z adresami. Kolejna hipoteza, która ma zostać przetestowana, to: w jaki sposób będzie ulepszona _x_% klientów, przy użyciu proponowanego rozwiązania, które umożliwi rozwiązanie tego typu wyzwania do zarządzania? Małe próbkowanie klientów spowoduje ujawnienie wiodących wskaźników, które sugerują procentowy wpływ na pulę zaangażowanych klientów.
 
@@ -55,7 +55,7 @@ Z tego miejsca należy oszacować wartość procentową tego łącznego rynku, k
 
 Podczas każdej iteracji pętli Build-Measure-uczenie się, Próba skompilowania z empatię jest definiowana przez SPECJALISTę.
 
-MVP to najmniejsza jednostka nakładu pracy (wynalazk, inżynieria, programowanie aplikacji lub architektura danych) wymagana do utworzenia wystarczającej ilości rozwiązania do uczenia się _z klientem_. Celem każdego MVP jest przetestowanie niektórych lub wszystkich poprzednich postanowień oraz uzyskanie opinii bezpośrednio od klienta. Dane wyjściowe nie są atrakcyjną aplikacją ze wszystkimi funkcjami wymaganymi do zmiany branży. Żądane dane wyjściowe każdej iteracji to okazja do uczenia się,&mdash;szansa na bardziej głębokie badanie hipotez.
+MVP to najmniejsza jednostka nakładu pracy (wynalazk, inżynieria, programowanie aplikacji lub architektura danych) wymagana do utworzenia wystarczającej ilości rozwiązania do uczenia się _z klientem_. Celem każdego MVP jest przetestowanie niektórych lub wszystkich poprzednich postanowień oraz uzyskanie opinii bezpośrednio od klienta. Dane wyjściowe nie są atrakcyjną aplikacją ze wszystkimi funkcjami wymaganymi do zmiany branży. Żądane dane wyjściowe każdej iteracji to okazja&mdash;do dokładniejszego przetestowania hipotez.
 
 _Timeboxing_ to standardowy sposób, aby upewnić się, że produkt pozostaje w postaci oszczędnej. Na przykład upewnij się, że zespół programistyczny traktuje rozwiązanie w jednej iteracji, aby umożliwić szybkie testowanie. Aby lepiej zrozumieć użycie szybkości, iteracji i wydań w celu zdefiniowania minimalnych środków, zobacz [szybkość planowania, iteracje, wersja i ścieżki iteracji](../../plan/iteration-paths.md).
 
@@ -112,4 +112,4 @@ Niektóre koncepcje w tym artykule zostały omówione w temacie dotyczącym [*ur
 Po skompilowaniu rozwiązania MVP można zmierzyć wartość empatię i wartość skali. Dowiedz się, jak [mierzyć wpływ na oddziaływanie klientów](./measure.md).
 
 > [!div class="nextstepaction"]
-> [Miary wpływu klientów](./measure.md)
+> [Mierzenie wpływu na klientów](./measure.md)

@@ -10,10 +10,10 @@ ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: 5cd0a9f4a9ec7d32b2aced903f2689884c32e97c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80356976"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Ustanów początkową podstawę ładu w chmurze
@@ -71,4 +71,4 @@ Poniżej przedstawiono dwa różne przykłady początkowych podstaw ładu (nazyw
 Po utworzeniu podstawy ładu należy zastosować odpowiednie zalecenia, aby poprawić rozwiązanie i chronić je przed niematerialnymi zagrożeniami.
 
 > [!div class="nextstepaction"]
-> [Popraw początkową podstawę ładu](./foundation-improvements.md)
+> [Udoskonalanie początkowych podstaw ładu](./foundation-improvements.md)

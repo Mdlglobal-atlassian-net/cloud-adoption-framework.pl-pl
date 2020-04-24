@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: 8e35ed2cdd90b51e13a29b0709f44ad395e9e0fb
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428611"
 ---
 # <a name="cloud-automation-capabilities"></a>Możliwości automatyzacji w chmurze
@@ -84,4 +84,4 @@ Zespół usługi Cloud Automation powinien wyrównać działania z innymi obszar
 Ze względu na to, że podstawowe możliwości chmury są wyrównane, zespoły zbiorowe mogą pomóc w [opracowaniu potrzebnych umiejętności technicznych](./suggested-skills.md).
 
 > [!div class="nextstepaction"]
-> [Tworzenie umiejętności technicznych](./suggested-skills.md)
+> [Rozwijanie umiejętności technicznych](./suggested-skills.md)

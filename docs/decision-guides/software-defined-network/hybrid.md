@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
 ms.openlocfilehash: 6ccc459f1d708964afdc7c25cefdf314c44a6e02
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433143"
 ---
 # <a name="software-defined-networking-hybrid-network"></a>Sieć zdefiniowana przez oprogramowanie: sieć hybrydowa
@@ -21,7 +21,7 @@ Architektura sieci hybrydowej w chmurze pozwala sieciom wirtualnym uzyskiwać do
 
 ![Sieć hybrydowa](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/images/expressroute.png)
 
-W przypadku kompilowania natywnej architektury sieci wirtualnej w chmurze, hybrydowa Sieć wirtualna jest izolowana po utworzeniu. Dodanie łączności do środowiska lokalnego umożliwia dostęp do i z sieci lokalnej, mimo że cały ruch przychodzący do zasobów w sieci wirtualnej musi być jawnie dozwolony. Połączenie można zabezpieczyć przy użyciu urządzeń zapory wirtualnej i reguł routingu w celu ograniczenia dostępu lub można określić, które usługi są dostępne między dwiema sieciami przy użyciu natywnych funkcji routingu w chmurze lub wdrażać wirtualne urządzenia sieciowe (urządzeń WUS) na zarządzanie ruchem.
+W przypadku kompilowania natywnej architektury sieci wirtualnej w chmurze, hybrydowa Sieć wirtualna jest izolowana po utworzeniu. Dodanie łączności do środowiska lokalnego umożliwia dostęp do i z sieci lokalnej, mimo że cały ruch przychodzący do zasobów w sieci wirtualnej musi być jawnie dozwolony. Połączenie można zabezpieczyć przy użyciu urządzeń zapory wirtualnej i reguł routingu w celu ograniczenia dostępu lub można określić, które usługi są dostępne między dwiema sieciami przy użyciu natywnych funkcji routingu w chmurze lub wdrażać sieciowe urządzenia wirtualne (urządzeń WUS) w celu zarządzania ruchem.
 
 Mimo że architektura sieci hybrydowej obsługuje połączenia sieci VPN, preferowane połączenia WAN, takie jak ExpressRoute, są zalecane z powodu wyższej wydajności i zwiększonego poziomu zabezpieczeń.
 
@@ -33,7 +33,7 @@ Wdrożenie hybrydowej sieci wirtualnej obejmuje następujące założenia:
 - Obciążenia oparte na chmurze wymagają dostępu do magazynu, aplikacji i usług hostowanych w sieciach lokalnych lub innych firm, a użytkownicy lub aplikacje w lokalnym komputerze muszą mieć dostęp do zasobów hostowanych w chmurze.
 - Należy przeprowadzić migrację istniejących aplikacji i usług, które są zależne od zasobów lokalnych, ale nie należy wystawić zasobów na potrzeby ponownego opracowywania, aby usunąć te zależności.
 - Łączenie sieci lokalnych z zasobami w chmurze za pośrednictwem sieci VPN lub dedykowanej sieci WAN nie jest blokowane przez zasady firmowe, wymagania dotyczące suwerenności danych ani inne problemy ze zgodnością z przepisami.
-- Obciążenia nie wymagają wielu subskrypcji w celu obejścia limitów zasobów subskrypcji lub obciążenia obejmują wiele subskrypcji, ale nie wymagają centralnego zarządzania łącznością lub usługami współdzielonymi używanymi przez zasoby rozproszone w wiele subskrypcji.
+- Obciążenia nie wymagają wielu subskrypcji w celu obejścia limitów zasobów subskrypcji lub obciążenia obejmują wiele subskrypcji, ale nie wymagają centralnego zarządzania łącznością lub usługami udostępnionymi używanymi przez zasoby rozproszone w wielu subskrypcjach.
 
 Przed zaimplementowaniem implementacji hybrydowej architektury sieci wirtualnej należy wziąć pod uwagę następujące zagadnienia w chmurze:
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: c973dfbdf7cb4fede3520465b2192b7f821cec1d
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434146"
 ---
 <!-- cSpell:ignore HKEY kusto -->
@@ -20,7 +20,7 @@ ms.locfileid: "80434146"
 
 Usługa Azure Change Tracking i spis zapewniają alerty dotyczące stanu konfiguracji środowiska hybrydowego i zmian w tym środowisku. Może zgłosić krytyczne zmiany plików, usług, oprogramowania i rejestru, które mogą mieć wpływ na wdrożone serwery.
 
-Domyślnie usługa spisu Azure Automation nie monitoruje plików ani ustawień rejestru. Rozwiązanie udostępnia listę kluczy rejestru, które zalecamy do monitorowania. Aby wyświetlić tę listę, przejdź do konta usługi Automation w Azure Portal, a następnie wybierz pozycję **spis** > **Edytuj ustawienia**.
+Domyślnie usługa spisu Azure Automation nie monitoruje plików ani ustawień rejestru. Rozwiązanie udostępnia listę kluczy rejestru, które zalecamy do monitorowania. Aby wyświetlić tę listę, przejdź do konta usługi Automation w Azure Portal, a następnie wybierz pozycję**Edytuj ustawienia** **spisu** > .
 
 ![Zrzut ekranu przedstawiający Widok spisu Azure Automation w Azure Portal](./media/change-tracking1.png)
 
@@ -82,7 +82,7 @@ W przypadku środowisk, które wymagają zablokowania konfiguracji oprogramowani
 
 ### <a name="specific-software-version-is-or-isnt-installed-on-a-machine"></a>Określona wersja oprogramowania jest lub nie jest zainstalowana na komputerze
 
-Użyj następującego zapytania, aby ocenić zabezpieczenia. To zapytanie odwołuje się `ConfigurationData`, które zawiera dzienniki spisu i zawiera ostatni zgłoszony stan konfiguracji, a nie zmiany.
+Użyj następującego zapytania, aby ocenić zabezpieczenia. Ta kwerenda zawiera `ConfigurationData`odwołania do dzienników spisu i zawiera informacje o ostatnio zgłoszonym stanie konfiguracji, a nie zmianach.
 
   ```kusto
   ConfigurationData | where SoftwareName contains "Monitoring Agent" and CurrentVersion != "8.0.11081.0"

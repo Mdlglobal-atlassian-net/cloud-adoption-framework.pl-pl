@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.openlocfilehash: 381359391d7fc39281d49d202f66edf5691be293
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80433796"
 ---
 <!-- cSpell:ignore CSAT -->
@@ -20,20 +20,20 @@ ms.locfileid: "80433796"
 
 Wdrażanie w chmurze jest nakładem pracy związanym z zarządzaniem portfelem, Cleverly jako implementacją techniczną. Podobnie jak w przypadku wszystkich ćwiczeń związanych z zarządzaniem portfolio, bilansowanie portfolio ma kluczowe znaczenie. Na poziomie strategicznym oznacza to zrównoważenie migracji, innowacji i eksperymentów w celu maksymalnego wykorzystania chmury. Gdy wysiłki związane z wdrażaniem chmury są zbyt daleko w jednym kierunku, złożoność znajdzie swój sposób na wysiłki. W tym artykule przedstawimy Czytelnikowi podejścia do osiągnięcia równowagi portfela.
 
-## <a name="general-scope-expansion"></a>Rozszerzenie zakresu ogólnego
+## <a name="general-scope-expansion"></a>Ogólne rozszerzenie zakresu
 
 Bilansowanie portfolio ma charakter strategiczny. W związku z tym zaprezentowane w nim podejście jest równie strategiczne. W celu umocowania strategii podejmowania decyzji opartych na danych w tym artykule przyjęto, że Czytelnik ocenił istniejący [majątek cyfrowy](../digital-estate/index.md) (lub jest w trakcie tego procesu). Celem tego podejścia jest pomoc w ocenie obciążeń, aby zapewnić odpowiednią równowagę portfela przez pytania jakościowe i udoskonalanie portfela.
 
-### <a name="document-business-outcomes"></a>Udokumentowanie wyników firmy
+### <a name="document-business-outcomes"></a>Dokumentacja wyników biznesowych
 
 Przed przeprowadzeniem zrównoważenia portfolio ważne jest, aby udokumentować i udostępniać wyniki biznesowe związane z pracą w chmurze. Poniższa tabela ułatwia dokumentowanie i udostępnianie żądanych wyników biznesowych. Należy pamiętać, że większość firm dąży do osiągnięcia wielu wyników jednocześnie. Celem tego ćwiczenia jest wyjaśnienie rezultatów, które są najbardziej bezpośrednio związane z nakładem pracy w zakresie migracji do chmury:
 
 |Wynik  |Mierzony przez  |Cel  |Horyzont czasowy  |Priorytet tego nakładu pracy  |
 |---------|---------|---------|---------|---------|
-|Zmniejszenie kosztów IT     |Budżet centrum danych         |Zmniejszenie o 2 mln dolarów         |12 miesięcy         |1\.         |
-|Wyjście z centrum danych     |Wyjście z centrów danych         |2 centra danych         |6 miesięcy         |2\.         |
-|Zwiększenie sprawności biznesowej     |Szybsze wejście na rynek  |Skrócenie czasu wdrożenia o sześć miesięcy         |2 lata         |3\.        |
-|Ulepszenie środowiska klienta     |Zadowolenie klienta (CSAT)         |Poprawa o 10%         |12 miesięcy         |4\.         |
+|Zmniejszenie kosztów IT     |Budżet centrum danych         |Zmniejszenie o 2 mln dolarów         |12 miesięcy         |1.         |
+|Wyjście z centrum danych     |Wyjście z centrów danych         |2 centra danych         |6 miesięcy         |2.         |
+|Zwiększenie sprawności biznesowej     |Szybsze wejście na rynek  |Skrócenie czasu wdrożenia o sześć miesięcy         |2 lata         |3.        |
+|Ulepszenie środowiska klienta     |Zadowolenie klienta (CSAT)         |Poprawa o 10%         |12 miesięcy         |4.         |
 
 > [!IMPORTANT]
 > Powyższa tabela jest przykładem fikcyjnym i nie powinna być używana do określania priorytetów. W wielu przypadkach ta tabela może być traktowana jako Antywzorzec przez umieszczenie oszczędności kosztów powyżej środowiska klienta.

@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 31265fa67c3a72cbb743df3e4e1a8f7283fa0fcb
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 79ba055381ccdcb5a70fb24f5da3554a8652fc97
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433270"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80998017"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>Organizowanie wielu subskrypcji platformy Azure i zarządzanie nimi
 
@@ -65,7 +65,7 @@ Zapoznaj się z poniższymi zasobami, aby dowiedzieć się więcej na temat orga
 
 - [Organizowanie zasobów przy użyciu grup zarządzania platformy Azure](https://docs.microsoft.com/azure/governance/management-groups)
 - [Podnoszenie poziomu dostępu w celu zarządzania wszystkimi subskrypcjami platformy Azure i grupami zarządzania](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)
-- [Przenoszenie zasobów platformy Azure do innej grupy zasobów lub subskrypcji](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)
+- [Przenoszenie zasobów platformy Azure do innej grupy zasobów lub subskrypcji](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 
 ## <a name="next-steps"></a>Następne kroki
 

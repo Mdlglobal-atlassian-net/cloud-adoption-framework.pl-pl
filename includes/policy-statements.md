@@ -36,5 +36,5 @@ Przyspieszenie wdrożenia:
 
 Nie przydzielono budżetu do ciągłego monitorowania i wymuszania tych zasad ładu. Z tego względu zespół nadzoru chmurowego posiada pewne metody ad hoc do monitorowania przestrzegania instrukcji zasad.
 
-- **Oświat** Zespół ds. zarządzania chmurą to czas inwestowania w chmurę wdrożenia chmury w przewodnikach ładu, które obsługują te zasady.
+- **Edukacja:** Zespół ds. zarządzania chmurą to czas inwestowania w chmurę wdrożenia chmury w przewodnikach ładu, które obsługują te zasady.
 - **Przeglądy wdrożenia:** Przed wdrożeniem dowolnego elementu zawartości zespół ds. zarządzania chmurą przegląda Przewodnik dotyczący ładu z zespołami wdrażania chmury.

@@ -10,10 +10,10 @@ ms.subservice: reference
 keywords: Azure
 layout: LandingPage
 ms.openlocfilehash: 4eb8e5a0c9fa88bdfbd6e00c55047e75873ff36f
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "79311561"
 ---
 <!-- cSpell:ignore tracsman jonor -->
@@ -46,7 +46,7 @@ ms.locfileid: "79311561"
     <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
     <td>
         <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Wirtualne centrum danych Azure: podnieś i przesunięcia przewodnika</a></h3>
-        <p>Ten oficjalny dokument omawia proces polegający na tym, że pracownicy działu IT przedsiębiorstwa i osoby podejmujące decyzje mogą używać do identyfikowania i planowania migracji aplikacji i serwerów na platformę Azure przy użyciu podejścia do podnoszenia i przesunięcia, co minimalizuje dodatkowe koszty deweloperskie podczas optymalizacji chmury opcje hostingu.</p>
+        <p>Ten oficjalny dokument omawia proces polegający na tym, że pracownicy działu IT przedsiębiorstwa i osoby podejmujące decyzje mogą używać do identyfikowania i planowania migracji aplikacji i serwerów na platformę Azure przy użyciu podejścia do podnoszenia i przesunięcia, co minimalizuje dodatkowe koszty deweloperskie podczas optymalizacji opcji hostingu w chmurze.</p>
     </td>
 </tr>
 </table>

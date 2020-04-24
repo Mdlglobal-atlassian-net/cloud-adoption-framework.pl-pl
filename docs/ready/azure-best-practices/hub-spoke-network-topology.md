@@ -10,12 +10,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 1d3d3de47ac46b775e94c89fc390cce84cb647a2
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 5ab24d655327584bd1f6363ac439c1ffcacaccec
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433984"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995116"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -24,7 +24,7 @@ ms.locfileid: "80433984"
 *Piasta i szprychy* to model sieci umożliwiający bardziej efektywne zarządzanie typowymi wymaganiami dotyczącymi komunikacji i zabezpieczeń. Pomaga również uniknąć ograniczeń subskrypcji platformy Azure. Ten model dotyczy następujących kwestii:
 
 - **Oszczędność kosztów i efektywność zarządzania**. Scentralizowanie w jednej lokalizacji usług, które mogą być współużytkowane przez wiele obciążeń, takich jak wirtualne urządzenia sieciowe (NVA) i serwery DNS, umożliwia działowi IT zminimalizowanie nadmiarowych zasobów i zadań związanych z zarządzaniem.
-- **Pokonywanie ograniczeń subskrypcji**. Duże obciążenia oparte na chmurze mogą wymagać użycia większej ilości zasobów, niż jest to dozwolone w pojedynczej subskrypcji platformy Azure. Komunikacja równorzędna sieci wirtualnych obciążenia z różnych subskrypcji do centrum może pokonać te ograniczenia. Aby uzyskać więcej informacji, zobacz [limity subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits).
+- **Pokonywanie ograniczeń subskrypcji**. Duże obciążenia oparte na chmurze mogą wymagać użycia większej ilości zasobów, niż jest to dozwolone w pojedynczej subskrypcji platformy Azure. Komunikacja równorzędna sieci wirtualnych obciążenia z różnych subskrypcji do centrum może pokonać te ograniczenia. Aby uzyskać więcej informacji, zobacz [limity subskrypcji platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
 - **Separacja problemów**. Poszczególne obciążenia można wdrożyć między centralnymi zespołami IT i zespołami obciążeń.
 
 Dodatkowa struktura i możliwości oferowane przez ten model mogą nie przynieść korzyści mniejszym majątkom w chmurze. Jednak większe działania związane z wdrażaniem w chmurze powinny uwzględniać implementację architektury sieci typu Hub i szprychy, jeśli mają one jakiekolwiek problemy wymienione wcześniej.
@@ -62,7 +62,7 @@ Szprychy mogą również dzielić różne grupy w obrębie organizacji i umożli
 
 Na platformie Azure każdy składnik, niezależnie od typu, jest wdrażany w ramach subskrypcji platformy Azure. Izolacja składników platformy Azure w różnych subskrypcjach platformy Azure może spełniać różne wymagania biznesowe, takie jak konfigurowanie różnych poziomów dostępu i autoryzacji.
 
-Pojedyncze implementacje Hub i szprychy mogą być skalowane do dużej liczby szprych. Jednak podobnie jak w przypadku każdego systemu informatycznego, istnieją ograniczenia platformy. Wdrożenie piasty jest powiązane z określoną subskrypcją platformy Azure, która ma ograniczenia i limity. Przykładem jest maksymalna liczba komunikacji równorzędnych sieci wirtualnych. Aby uzyskać więcej informacji, zobacz [Limity, przydziały i ograniczenia usług i subskrypcji platformy Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits).
+Pojedyncze implementacje Hub i szprychy mogą być skalowane do dużej liczby szprych. Jednak podobnie jak w przypadku każdego systemu informatycznego, istnieją ograniczenia platformy. Wdrożenie piasty jest powiązane z określoną subskrypcją platformy Azure, która ma ograniczenia i limity. Przykładem jest maksymalna liczba komunikacji równorzędnych sieci wirtualnych. Aby uzyskać więcej informacji, zobacz [limity subskrypcji i usług platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
 W przypadkach, gdy ograniczenia mogą stanowić problem, można skalować w górę architekturę, rozszerzając model z jednej piasty i szprych do klastra piast i szprych. Możesz połączyć wiele piast w jednym lub większej liczbie regionów świadczenia usługi Azure za pomocą komunikacji równorzędnej sieci wirtualnych, usługi Azure ExpressRoute, wirtualnej sieci WAN lub sieci VPN typu lokacja-lokacja.
 
@@ -85,5 +85,5 @@ Szprychy mogą być również połączone ze szprychą, która pełni rolę pias
 <!-- images -->
 
 [1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "Ogólny przykład piasty i szprych"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Klaster piast i szprych"
+[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Klaster centrów i szprych"
 [3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Szprycha do szprychy"

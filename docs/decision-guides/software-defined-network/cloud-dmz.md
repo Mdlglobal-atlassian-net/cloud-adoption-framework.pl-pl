@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 63d882aefab6488b05e7f0aec506c2e371d9464e
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 2241e1f4e6f738ce435e6cbedfe686a4ed85e1de
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431298"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996221"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Sieć zdefiniowana przez oprogramowanie: Strefa DMZ w chmurze
 
@@ -21,7 +21,7 @@ Architektura sieci DMZ w chmurze umożliwia ograniczony dostęp między sieciami
 
 ![Bezpieczna hybrydowa architektura sieci](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/images/dmz-private.png)
 
-Ta architektura została zaprojektowana w celu obsługi scenariuszy, w których organizacja chce rozpocząć integrowanie obciążeń opartych na chmurze z obciążeniami lokalnymi, ale mogą nie mieć w pełni pełnych zasad zabezpieczeń w chmurze lub nie uzyskało bezpiecznego dedykowanego połączenia sieci WAN między dwa środowiska. W związku z tym sieci w chmurze powinny być traktowane jak strefy zdemilitaryzowana, aby zapewnić bezpieczeństwo usług lokalnych.
+Ta architektura została zaprojektowana w celu obsługi scenariuszy, w których organizacja chce rozpocząć integrowanie obciążeń opartych na chmurze z obciążeniami lokalnymi, ale mogą nie mieć w pełni pełnych zasad zabezpieczeń w chmurze ani nie uzyskało bezpiecznego dedykowanego połączenia sieci WAN między tymi dwoma środowiskami. W związku z tym sieci w chmurze powinny być traktowane jak strefy zdemilitaryzowana, aby zapewnić bezpieczeństwo usług lokalnych.
 
 Strefa DMZ wdraża wirtualne urządzenia sieciowe (urządzeń WUS) w celu zaimplementowania funkcji zabezpieczeń, takich jak zapory i inspekcje pakietów. Ruch przechodzący między aplikacjami lokalnymi i opartymi na chmurze musi przechodzić przez strefę DMZ, w której może być przeprowadzana inspekcja. Połączenia sieci VPN i zasady określające, jaki ruch jest dozwolony w sieci DMZ, są ściśle kontrolowane przez zespoły ds. zabezpieczeń IT.
 
@@ -32,7 +32,7 @@ Wdrażanie strefy DMZ w chmurze obejmuje następujące założenia:
 - Zespoły zabezpieczeń nie w pełni wyrównania wymagań i zasad dotyczących zabezpieczeń lokalnych i opartych na chmurze.
 - Obciążenia oparte na chmurze wymagają dostępu do ograniczonego podzestawu usług hostowanych w sieciach lokalnych lub innych firm, a użytkownicy lub aplikacje w środowisku lokalnym potrzebują ograniczonego dostępu do zasobów hostowanych w chmurze.
 - Zaimplementowanie połączenia sieci VPN między sieciami lokalnymi i dostawcą chmury nie jest blokowane przez zasady firmowe, wymagania prawne ani problemy ze zgodnością techniczną.
-- Obciążenia nie wymagają wielu subskrypcji w celu obejścia limitów zasobów subskrypcji lub obejmują wiele subskrypcji, ale nie wymagają centralnego zarządzania łącznością lub usługami udostępnionymi używanymi przez zasoby rozproszone w wielu opłaty.
+- Obciążenia nie wymagają wielu subskrypcji w celu obejścia limitów zasobów subskrypcji lub obejmują wiele subskrypcji, ale nie wymagają centralnego zarządzania łącznością lub usługami udostępnionymi używanymi przez zasoby rozproszone w wielu subskrypcjach.
 
 Przed zaimplementowaniem architektury sieci wirtualnych w chmurze DMZ należy wziąć pod uwagę następujące zagadnienia:
 
@@ -43,4 +43,4 @@ Przed zaimplementowaniem architektury sieci wirtualnych w chmurze DMZ należy wz
 
 Aby uzyskać więcej informacji na temat implementowania strefy DMZ w chmurze na platformie Azure, zobacz:
 
-- [Implementowanie strefy DMZ między platformą Azure i lokalnym centrum danych](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid). W tym artykule omówiono sposób implementacji bezpiecznej hybrydowej architektury sieci na platformie Azure.
+- [Implementowanie strefy DMZ między platformą Azure i lokalnym centrum danych](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). W tym artykule omówiono sposób implementacji bezpiecznej hybrydowej architektury sieci na platformie Azure.

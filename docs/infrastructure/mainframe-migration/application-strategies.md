@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: e0823eef01a2966459a10293c25d877b1c732c64
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80425809"
 ---
 <!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
@@ -66,7 +66,7 @@ Monitory TP są dostępne od różnych dostawców i uruchamiane na maszynach wir
 
 Na platformie Azure środowiska emulacji są używane do uruchamiania Menedżera TP i zadań wsadowych korzystających z JCL. W warstwie danych DB2 jest zastępowany przez [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), chociaż Microsoft SQL Server, DB2 LUW lub Oracle Database może być również używany. Emulator obsługuje funkcję IMS, VSAM i SEQ. Narzędzia do zarządzania systemem komputera mainframe są zastępowane przez usługi platformy Azure i oprogramowanie od innych dostawców, które są uruchamiane na maszynach wirtualnych.
 
-Funkcje obsługi ekranu i wpisów formularzy są powszechnie implementowane przy użyciu serwerów sieci Web, które można łączyć z interfejsami API bazy danych, takimi jak ADO, ODBC i JDBC na potrzeby dostępu do danych i transakcji. Dokładny wiersz składników usługi Azure IaaS do użycia zależy od preferowanego systemu operacyjnego. Na przykład:
+Funkcje obsługi ekranu i wpisów formularzy są powszechnie implementowane przy użyciu serwerów sieci Web, które można łączyć z interfejsami API bazy danych, takimi jak ADO, ODBC i JDBC na potrzeby dostępu do danych i transakcji. Dokładny wiersz składników usługi Azure IaaS do użycia zależy od preferowanego systemu operacyjnego. Przykład:
 
 - Maszyny wirtualne oparte na systemie Windows: Internet Information Server (IIS) wraz z ASP.NET na potrzeby obsługi ekranu i logiki biznesowej. Użyj ADO.NET do uzyskiwania dostępu do danych i transakcji.
 
@@ -78,7 +78,7 @@ Operacje wsadowe na platformie Azure różnią się od typowego środowiska wsad
 
 Aby zoptymalizować wydajność przetwarzania wsadowego przy użyciu platformy Azure, należy rozważyć opcje [obliczeń](https://docs.microsoft.com/azure/virtual-machines/windows/overview), [magazynu](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction), [sieci](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)i [monitorowania](https://docs.microsoft.com/azure/azure-monitor/overview) w następujący sposób.
 
-### <a name="compute"></a>Compute
+### <a name="compute"></a>Wystąpienia obliczeniowe
 
 Używanych
 
@@ -90,7 +90,7 @@ Używanych
 
 - Przetwarzanie równoległe, jak platforma Azure umożliwia łatwe skalowanie do przetwarzania równoległego, zapewniając większą moc obliczeniową dla uruchomienia partii.
 
-### <a name="storage"></a>Storage
+### <a name="storage"></a>Magazyn
 
 Używanych
 
@@ -100,7 +100,7 @@ Używanych
 
 - Partycjonowanie magazynu w celu rozłożenia operacji we/wy na wiele urządzeń magazynujących platformy Azure.
 
-### <a name="networking"></a>Sieć
+### <a name="networking"></a>Networking
 
 - Używaj [przyspieszonej sieci platformy Azure](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell) , aby zminimalizować opóźnienia.
 
@@ -114,7 +114,7 @@ Rozproszone architektury chmury polegają na różnych zestawach narzędzi progr
 
 | Składnik        | Opcje platformy Azure                                                                                                                                  |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| z/OS             | Windows, Linux lub UNIX                                                                                                                      |
+| System z/OS             | Windows, Linux lub UNIX                                                                                                                      |
 | CICS             | Usługi platformy Azure oferowane przez firmę Micro Focus, Oracle, GT Software (Fujitsu), TmaxSoft, Raincode i NTT, lub Przepisz przy użyciu Kubernetes |
 | ISP              | Usługi platformy Azure oferowane przez firmę Micro Focus i Oracle                                                                                  |
 | Asemblera        | Usługi platformy Azure z Raincode i TmaxSoft; lub COBOL, C lub Java lub mapowanie na funkcje systemu operacyjnego               |
@@ -178,7 +178,7 @@ System Azure zapewnia sprawdzoną, wysoką dostępność i skalowalną infrastru
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-Więcej informacji można znaleźć w następujących zasobach:
+Więcej informacji zawierają następujące zasoby:
 
 - [Rozpoczynanie pracy z platformą Azure](https://docs.microsoft.com/azure)
 

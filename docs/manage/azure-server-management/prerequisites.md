@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: 1eaa3abcef760d31d2107ddf1922b13d52e8441c
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434097"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Faza 1: planowanie wymagań wstępnych dla usług zarządzania serwerem Azure
@@ -39,10 +39,10 @@ Niektóre usługi zarządzania wymagają konta [Azure Automation](https://docs.m
 
 Następujące usługi zarządzania serwerem Azure wymagają połączonego obszaru roboczego Log Analytics i konta usługi Automation:
 
-- [Update Management platformy Azure](https://docs.microsoft.com/azure/automation/automation-update-management)
-- [Change Tracking i spis](https://docs.microsoft.com/azure/automation/change-tracking)
+- [Zarządzanie aktualizacjami platformy Azure](https://docs.microsoft.com/azure/automation/automation-update-management)
+- [Śledzenie zmian i spis](https://docs.microsoft.com/azure/automation/change-tracking)
 - [Hybrydowy proces roboczy elementu Runbook](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)
-- [Konfiguracja żądanego stanu](https://docs.microsoft.com/azure/virtual-machines/extensions/dsc-overview)
+- [Desired State Configuration](https://docs.microsoft.com/azure/virtual-machines/extensions/dsc-overview)
 
 Druga faza niniejszych wskazówek koncentruje się na wdrażaniu usług i skryptów automatyzacji. Przedstawiono w nim sposób tworzenia obszaru roboczego Log Analytics i konta usługi Automation. Wskazówki te pokazują również, w jaki sposób używać Azure Policy, aby zapewnić, że nowe maszyny wirtualne są połączone z prawidłowym obszarem roboczym.
 

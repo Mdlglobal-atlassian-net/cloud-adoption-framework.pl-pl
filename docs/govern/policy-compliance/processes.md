@@ -9,17 +9,17 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: b7bdcd96786a232ef810794cf93546275a9603b0
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80430813"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="establish-policy-adherence-processes"></a>Ustalanie procesów zapewniania zgodności zasad
 
-Po ustaleniu zasad dotyczących chmury i opracowaniu projektu przewodnika projektowego należy utworzyć strategię w celu zapewnienia zgodności wdrożenia w chmurze z wymaganiami dotyczącymi zasad. Ta strategia będzie musiała obejmować bieżące procesy przeglądu i komunikacji zespołu nadzoru w chmurze, ustanawiać kryteria dotyczące sytuacji, w których naruszenia zasad wymagają akcji i definiowania wymagań dla zautomatyzowanych systemów monitorowania i zgodności, które będą Wykrywaj naruszenia i Wyzwalaj akcje korygowania.
+Po ustaleniu zasad dotyczących chmury i opracowaniu projektu przewodnika projektowego należy utworzyć strategię w celu zapewnienia zgodności wdrożenia w chmurze z wymaganiami dotyczącymi zasad. Ta strategia będzie musiała obejmować bieżące procesy przeglądu i komunikacji zespołu nadzoru w chmurze, ustanawiać kryteria dotyczące sytuacji, w których naruszenia zasad wymagają akcji i definiowania wymagań dla zautomatyzowanych systemów monitorowania i zgodności, które będą wykrywać naruszenia i wyzwalać akcje korygowania.
 
 Zapoznaj się z sekcjami dotyczącymi korporacyjnych [przewodników ładu](../guides/index.md) , aby poznać Przykłady sposobu dopasowania procesu do planu nadzoru w chmurze.
 
@@ -70,7 +70,7 @@ Dla każdej z zestawień zasad należy przejrzeć wymagania, aby określić, co 
 - **Tolerancja ryzyka:** Utwórz wyzwalacze naruszenia na podstawie metryk i wskaźników ryzyka, które zostały określone w ramach [analizy tolerancji ryzyka](./risk-tolerance.md).
 - **Zdefiniowane wymagania dotyczące zasad:** Oświadczenia zasad mogą zapewniać umowę dotyczącą poziomu usług (SLA), ciągłość biznesową i odzyskiwanie po awarii (BCDR) lub wymagania dotyczące wydajności, które powinny być używane jako podstawa dla wyzwalaczy zgodności.
 
-### <a name="define-actions"></a>Zdefiniuj akcje
+### <a name="define-actions"></a>Definiowanie akcji
 
 Każdy wyzwalacz naruszenia powinien mieć odpowiadającą akcję. Akcje wyzwalane zawsze powiadamiają odpowiedniego pracownika działu IT lub członka zespołu nadzoru o chmurze w przypadku wystąpienia naruszenia. To powiadomienie może prowadzić do ręcznego przeglądu problemu ze zgodnością lub podzieloną wstępnie zdefiniowanego procesu korygowania w zależności od typu i ważności wykrytego naruszenia.
 

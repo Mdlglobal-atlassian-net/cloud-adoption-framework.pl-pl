@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 3053d26f5b2cf3c7d1589f165fb32702b007d49f
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: 5a3879e4b1d5a076e1869100471afbf4f7cd046e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527561"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997667"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -120,9 +120,9 @@ Jeśli nie używasz Azure Monitor dla maszyn wirtualnych, Utwórz zadanie tworze
 
 Te funkcje umożliwiają zaoszczędzenie czasu przez zminimalizowanie powiadomień o alertach i zarządzanie alertami.
 
-### <a name="alerts-limitations"></a>Ograniczenia alertów
+### <a name="limits-on-alerts"></a>Limity dotyczące alertów
 
-Pamiętaj, aby zanotować [ograniczenia](https://docs.microsoft.com/azure/azure-subscription-service-limits#azure-monitor-limits) dotyczące liczby alertów, które można utworzyć. Niektóre ograniczenia (ale nie wszystkie z nich) można zwiększyć, wywołując pomoc techniczną.
+Pamiętaj, aby zanotować [limity liczby alertów, które można utworzyć](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-monitor-limits). Niektóre ograniczenia (ale nie wszystkie z nich) można zwiększyć, wywołując pomoc techniczną.
 
 ### <a name="best-query-experience"></a>Najlepsze środowisko zapytań
 

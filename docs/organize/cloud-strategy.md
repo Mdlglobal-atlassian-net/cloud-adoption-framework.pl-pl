@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: 02582dd6da694c64c8344e17fc301a26e5a82bc7
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428495"
 ---
 # <a name="cloud-strategy-capabilities"></a>Możliwości strategii chmury
@@ -64,7 +64,7 @@ Zadania wymienione w poprzedniej sekcji mogą być czasochłonne w fazach wczesn
 
 - Podczas wczesnych nakładów pracy należy przydzielić godzinę w każdym tygodniu, aby zaspokoić ją z zespołem. Po solidified planu wdrożenia (zwykle w ciągu 4&ndash;6 tygodni) wymagania dotyczące czasu mogą być ograniczone.
 - W ramach wysiłków związanych z przyjmowaniem należy przydzielić 1&ndash;2 godziny co miesiąc, aby sprawdzić postęp i zweryfikować dalsze priorytety.
-- Dodatkowy czas jest prawdopodobnie wymagany od delegowanych członków zespołu wykonawczego w zależności od potrzeb. Każdy członek zespołu ds. strategii chmury powinien mianować delegata, który może przydzielić 5&ndash;10 godzin na tydzień, aby obsługiwać bieżące pytania i raporty o wszelkich pilnych potrzebach.
+- Dodatkowy czas jest prawdopodobnie wymagany od delegowanych członków zespołu wykonawczego w zależności od potrzeb. Każdy członek zespołu strategii chmury powinien mianować delegata, który może przydzielić 5&ndash;-godzinny tydzień, aby obsługiwał bieżące pytania i raporty o wszelkich pilnych potrzebach.
 
 ## <a name="next-steps"></a>Następne kroki
 

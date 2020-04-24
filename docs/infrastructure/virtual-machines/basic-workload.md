@@ -7,12 +7,12 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 015999a9852625abe4ad02a60ad37fc162dd4861
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 34673307e33ab8ae9dad979fa3fa958c84be310c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80425429"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997701"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Wdrażanie podstawowego obciążenia na platformie Azure
 
@@ -44,7 +44,7 @@ Po wdrożeniu prostego obciążenia można dowiedzieć się więcej o najlepszyc
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>Pojedyncza maszyna wirtualna z systemem Windows lub Linux (IaaS)
 
-W przypadku prostego obciążenia, które jest uruchamiane na maszynie wirtualnej, pierwszym krokiem jest wdrożenie sieci wirtualnej. Wszystkie zasoby infrastruktury jako usługi (IaaS) na platformie Azure, takie jak maszyny wirtualne, moduły równoważenia obciążenia i bramy, wymagają sieci wirtualnej. Dowiedz się więcej o [usłudze Azure Virtual Networks](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview), a następnie postępuj zgodnie z instrukcjami dotyczącymi [wdrażania Virtual Network na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-network/quick-create-portal). Po określeniu ustawień sieci wirtualnej w Azure Portal należy określić nazwę utworzonej powyżej grupy zasobów.
+W przypadku prostego obciążenia, które jest uruchamiane na maszynie wirtualnej, pierwszym krokiem jest wdrożenie sieci wirtualnej. Wszystkie zasoby infrastruktury jako usługi (IaaS) na platformie Azure, takie jak maszyny wirtualne, moduły równoważenia obciążenia i bramy, wymagają sieci wirtualnej. Dowiedz się więcej o [usłudze Azure Virtual Networks](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview), a następnie postępuj zgodnie z instrukcjami dotyczącymi [wdrażania sieci wirtualnej na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-network/quick-create-portal). Po określeniu ustawień sieci wirtualnej w Azure Portal należy określić nazwę utworzonej powyżej grupy zasobów.
 
 Następnym krokiem jest podjęcie decyzji o tym, czy wdrożyć pojedynczą maszynę wirtualną z systemem Windows lub Linux. W przypadku maszyny wirtualnej z systemem Windows wykonaj kroki, aby [wdrożyć maszynę wirtualną z systemem Windows na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal). Po określeniu ustawień dla maszyny wirtualnej w Azure Portal należy określić nazwę utworzonej powyżej grupy zasobów.
 

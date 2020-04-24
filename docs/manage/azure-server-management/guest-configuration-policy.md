@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2dd8bd0ff7c991fd2141a3bfa44581e5c3e4af42
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: bb95c03b392017fb866fdfe929fffc317e4e67b0
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434104"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809102"
 ---
 # <a name="guest-configuration-policy"></a>Zasady konfiguracji gościa
 
@@ -27,7 +27,7 @@ Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "G
 > [!NOTE]
 > Funkcja konfiguracji gościa jest regularnie aktualizowana w celu obsługi dodatkowych zestawów zasad. Regularnie sprawdzaj dostępność nowych obsługiwanych zasad i Oceń, czy będą one przydatne.
 
-<!-- TODO: Update these links when available. 
+<!-- TODOBACKLOG: Update these links when available. 
 
 By default, we recommend that you enable the following policies:
 

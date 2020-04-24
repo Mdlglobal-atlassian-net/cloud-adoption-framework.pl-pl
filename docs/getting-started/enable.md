@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 2a6eab51a6254a5f7a2a7cf811b0a3857fd4d852
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 361f27d1c4a15c4ac001dfbf8951b57580eda5a7
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357246"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995729"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Włącz powodzenie w trakcie podróży w chmurze
 
@@ -24,12 +24,12 @@ W tej architekturze włączenie jest podstawową kompozycją. Poniższa lista ko
 - **Plan:** Ustanowienie jasnego [rezultatu biznesowego](../strategy/business-outcomes/index.md), jasno zdefiniowanego [planu podpisywania cyfrowego](../digital-estate/index.md)i dobrze zrozumiałego [wdrażania](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
 - **Gotowe:** Zadbaj o gotowość personelu poprzez [plany umiejętności i nauki](../ready/suggested-skills.md).
 - **Działa:** Zdefiniuj model systemu operacyjnego, który można zarządzać, aby poprowadzić działania w trakcie i po jego przyjęciu.
-  - **[Organizuj](../organize/index.md):** Wyrównaj osoby i zespoły, aby zapewnić prawidłowe operacje i wdrożenia w chmurze.
+  - ** [Organizuj](../organize/index.md):** Wyrównaj osoby i zespoły, aby zapewnić prawidłowe operacje i wdrożenia w chmurze.
   - **Zarządzanie:** Wyrównaj odpowiednie [dyscypliny ładu](../govern/index.md) , aby stale stosować zarządzanie kosztami, ograniczanie ryzyka, zgodność i linie bazowe zabezpieczeń we wszystkich wdrożeniach chmurowych.
   - **Zarządzanie:** Ciągłe [Zarządzanie działaniem](../manage/index.md) portfolio IT w celu zminimalizowania przerw w procesach biznesowych i zapewnienia stabilności portfolio IT.
   - **Obsługa:** Wyrównaj prawidłowe [Opcje partnerstwa i pomocy technicznej](../migrate/migration-considerations/assess/partnership-options.md).
 
-Innym podstawowym motywem jest zabezpieczenia, które jest krytycznym atrybutem jakości dla pomyślnego wdrożenia chmury. Zabezpieczenia są zintegrowane w ramach tej struktury, aby zapewnić zintegrowane Wskazówki dotyczące utrzymania poufności, integralności i zapewnienia dostępności obciążeń w chmurze.
+Inną podstawową kompozycją jest Security, krytyczny atrybut jakości dla pomyślnego wdrożenia chmury. Zabezpieczenia są zintegrowane w ramach tej struktury, aby zapewnić zintegrowane Wskazówki dotyczące utrzymania poufności, integralności i zapewnienia dostępności obciążeń w chmurze.
 
 ## <a name="additional-tools"></a>Dodatkowe narzędzia
 
@@ -69,7 +69,7 @@ Oprócz struktury wdrażania w chmurze firma Microsoft omawia dodatkowe tematy, 
                     </div>
                     <div class="cardText">
                         <h3>Niezawodna architektura (odporność)</h3>
-                        <p>Proces tworzenia niezawodnej aplikacji w chmurze różni się od procesu opracowywania tradycyjnej aplikacji. W przeszłości można zakupić poziomy nadmiarowego sprzętu wyższego poziomu, aby zminimalizować prawdopodobieństwo awarii całej platformy aplikacji. W chmurze potwierdzamy, że wystąpią błędy. Zamiast próbować całkowicie zapobiegać awariom, celem jest minimalizacja wpływu awarii pojedynczego składnika.</p>
+                        <p>Proces tworzenia niezawodnej aplikacji w chmurze różni się od procesu opracowywania tradycyjnej aplikacji. W przeszłości można zakupić poziomy nadmiarowego sprzętu wyższego poziomu, aby zminimalizować prawdopodobieństwo awarii całej platformy aplikacji. W chmurze potwierdzamy, że wystąpią błędy. Zamiast zapobiegać wszystkim awariom, dąży się do minimalizacji wpływu awarii pojedynczego składnika.</p>
                     </div>
                 </div>
             </div>

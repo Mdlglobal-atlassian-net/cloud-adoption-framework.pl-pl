@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3ad745b1fcef78ebeaac7d5e3199e92e069113e7
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: b4c39b0a55485335e65bee9a5e6be2fe5fe22279
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431459"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997754"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,7 @@ Chmura otwiera nowe możliwości do wykonania w skali globalnej. Bariery związa
 
 ## <a name="data-sovereignty"></a>Niezależność danych
 
-Wiele regionów geopolitycznych ustanowiło przepisy dotyczące suwerenności danych. Przepisy te ograniczają miejsce przechowywania danych, jakie dane mogą opuścić kraj pochodzenia i jakie dane mogą być zbierane dla obywateli tego regionu. Przed rozpoczęciem korzystania z rozwiązań chmurowych w obcych lokalizacjach, należy zrozumieć, w jaki sposób dostawca chmury obsługuje suwerenność danych. Więcej informacji na temat podejścia platformy Azure dla każdej lokalizacji geograficznej jest dostępne [tutaj](https://azure.microsoft.com/global-infrastructure/geographies). Aby uzyskać więcej informacji na temat zgodności na platformie Azure, zobacz [prywatność w firmie Microsoft](https://www.microsoft.com/trustcenter/privacy) w centrum zaufania firmy Microsoft.
+Wiele regionów geopolitycznych ustanowiło przepisy dotyczące suwerenności danych. Przepisy te ograniczają miejsce przechowywania danych, jakie dane mogą opuścić kraj pochodzenia i jakie dane mogą być zbierane dla obywateli tego regionu. Przed rozpoczęciem korzystania z rozwiązań chmurowych w obcych lokalizacjach, należy zrozumieć, w jaki sposób dostawca chmury obsługuje suwerenność danych. Aby uzyskać więcej informacji na temat podejścia platformy Azure dla każdej lokalizacji geograficznej, zobacz [Azure lokalizacje geograficzne](https://azure.microsoft.com/global-infrastructure/geographies). Aby uzyskać więcej informacji na temat zgodności na platformie Azure, zobacz [prywatność w firmie Microsoft](https://www.microsoft.com/trust-center/privacy) w centrum zaufania firmy Microsoft.
 
 W pozostałej części tego artykułu przyjęto, że legalne osoby przejrzały i zatwierdzili operacje w obcym kraju.
 

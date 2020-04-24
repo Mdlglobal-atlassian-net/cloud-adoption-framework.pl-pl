@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3027b2195363499a2f3b383b8bb4f0eaf3b64da8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 244444057561118c2e3f2b7a574bfdfb529f0978
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80430899"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997393"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -23,11 +23,11 @@ Przegląd zasad w chmurze to pierwszy krok w kierunku [ładu](../index.md) w chm
 
 ## <a name="why-perform-a-cloud-policy-review"></a>Dlaczego należy przeprowadzić przegląd zasad w chmurze?
 
-Większość firm zarządza nimi przez wykonywanie procesów, które są wyrównywane przy użyciu zasad. W małych firmach te zasady mogą anecdotal i przetwarzać wiele procesów. W miarę rozwoju działalności firmy w dużych przedsiębiorstwach zasady i procesy są bardziej jasno udokumentowane i konsekwentnie wykonywane.
+Większość firm zarządza nimi przez wykonywanie procesów, które są zgodne z zasadami. W małych firmach te zasady mogą anecdotal i przetwarzać wiele procesów. W miarę rozwoju działalności firmy w dużych przedsiębiorstwach zasady i procesy są bardziej jasno udokumentowane i konsekwentnie wykonywane.
 
 W przypadku firmowych zasad IT, zależności od przeszłych decyzji technicznych mają tendencje do seep do zarządzania zasadami. Na przykład wspólne dla wszystkich procesów odzyskiwania po awarii obejmuje zasady, które mają możliwość wykonywania kopii zapasowych na taśmach poza siedzibą firmy. To dołączenie zakłada zależność od jednego typu technologii (kopie zapasowe na taśmach), która może nie być już najbardziej odpowiednim rozwiązaniem.
 
-Przekształcenia w chmurze tworzą naturalny punkt przegięcia, aby ponownie uwzględnić starsze decyzje dotyczące zasad. Możliwości techniczne i procesy domyślne zmieniają się w sposób istotny w chmurze, tak jak w przypadku dziedziczenia zagrożeń. Korzystając z poprzedniego przykładu, zasady tworzenia kopii zapasowej na taśmie wynikające z ryzyka single point of failure przez utrzymywanie danych w jednej lokalizacji, a firma musi zminimalizować profil ryzyka przez ograniczenie tego ryzyka. W przypadku wdrożenia w chmurze istnieje kilka opcji, które zapewniają takie samo Łagodzenie ryzyka, o znacznie niższych celach dotyczących czasu odzyskiwania (RTO). Na przykład:
+Przekształcenia w chmurze tworzą naturalny punkt przegięcia, aby ponownie uwzględnić starsze decyzje dotyczące zasad. Możliwości techniczne i procesy domyślne zmieniają się w sposób istotny w chmurze, tak jak w przypadku dziedziczenia zagrożeń. Korzystając z poprzedniego przykładu, zasady tworzenia kopii zapasowej na taśmie wynikające z ryzyka single point of failure przez utrzymywanie danych w jednej lokalizacji, a firma musi zminimalizować profil ryzyka przez ograniczenie tego ryzyka. W przypadku wdrożenia w chmurze istnieje kilka opcji, które zapewniają takie samo Łagodzenie ryzyka, o znacznie niższych celach dotyczących czasu odzyskiwania (RTO). Przykład:
 
 - Rozwiązanie natywne w chmurze może umożliwić replikację geograficzną Azure SQL Database.
 - Rozwiązanie hybrydowe może używać Azure Site Recovery do replikowania obciążenia IaaS na platformę Azure.

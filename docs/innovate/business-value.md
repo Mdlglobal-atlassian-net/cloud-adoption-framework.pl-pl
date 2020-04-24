@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 69f9a05aa5ff049f688d789257d80af294c3f135
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a03abe234773139e291679e986452702e849c33e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80427702"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997217"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Kompiluj konsensus na wartość biznesową innowacji
 
@@ -64,10 +64,10 @@ Bardzo często odpowiedzi na pytania i dwa są niewyrównane. Podczas wczesnych 
 
 - **Okazja do hipotezy:** Często różne osoby zainteresowane i zespoły programistyczne mogą korzystać z zbyt wielu oczekiwań dla rozwiązania. Nierealistyczne oczekiwania mogą być znakiem, że hipoteza jest zbyt niejasne. Postępuj zgodnie ze wskazówkami dotyczącymi [kompilowania za pomocą empatię klienta](./considerations/build.md) , aby utworzyć wyraźniejszy hipotezę.
 - **Możliwość kompilacji:** Zespoły mogą być nieprawidłowo wyrównane, ponieważ nie zgadzają się na sposób rozwiązania potrzeb klientów. Takie porozumienie zazwyczaj wskazuje, że zespół jest [opóźniony przez przedwcześnie](./considerations/build.md#reduce-complexity-and-delay-technical-spikes)przekroczenia techniczne. Aby zapewnić, że zespół koncentruje się na kliencie, Zacznij od pierwszej iteracji i Kompiluj mały minimalny produkt żywotny (MVP), aby zająć się częścią hipotezy. Aby uzyskać dodatkowe wskazówki ułatwiające zespołowi przechodzenie do przodu, zobacz [programowanie cyfr cyfrowych](./considerations/invention.md).
-- **Szansa szkoleniowa:** Każdy zespół może być nieprawidłowo wyrównany, ponieważ potrzebują szczegółowych wymagań technicznych i szczegółowych wymagań funkcjonalnych. Ta potrzeba może prowadzić do szkolenia w metodologiach Agile. Gdy Kultura zespołu nie jest gotowa do procesów Agile, można znaleźć innowacje i zachować tempo na rynku jako wyzwania.  Aby poznać zasoby szkoleniowe dotyczące DevOps i metod agile, zobacz:
-  - [Rozwijanie praktyk DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
+- **Szansa szkoleniowa:** Każdy zespół może być nieprawidłowo wyrównany, ponieważ potrzebują szczegółowych wymagań technicznych i szczegółowych wymagań funkcjonalnych. Ta potrzeba może prowadzić do szkolenia w metodologiach Agile. Gdy Kultura zespołu nie jest gotowa do procesów Agile, można znaleźć innowacje i zachować tempo na rynku jako wyzwania. Aby poznać zasoby szkoleniowe dotyczące DevOps i metod agile, zobacz:
+  - [Rozwijanie praktyk metodyki DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
   - [Tworzenie aplikacji za pomocą usługi Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
-  - [Wdrażanie aplikacji za pomocą usługi Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)
+  - [Wdrażanie aplikacji przy użyciu usługi Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)
 
 Postępując zgodnie z metodologią i narzędziami do zarządzania zaległościami w poszczególnych sekcjach tego artykułu, można ułatwić tworzenie wyrównania rozwiązania.
 

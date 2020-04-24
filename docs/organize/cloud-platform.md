@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 ms.openlocfilehash: 2dc5503c7c24263bf74c4708ffe5e1dca0b8b97b
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80428534"
 ---
 # <a name="cloud-platform-capabilities"></a>Możliwości platformy w chmurze
@@ -29,7 +29,7 @@ Umiejętności wymagane do zapewnienia pełnej funkcjonalności platformy mogą 
 - Operacje IT
 - Zarządzanie IT
 - Infrastruktura IT
-- Sieć
+- Networking
 - Tożsamość
 - Wirtualizacja
 - Ciągłość działania i odzyskiwanie po awarii

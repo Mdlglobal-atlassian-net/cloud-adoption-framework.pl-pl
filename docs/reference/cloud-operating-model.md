@@ -10,10 +10,10 @@ ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
 ms.openlocfilehash: d1ba5e26214a0b60a4fe9fefb23d1dffaf8fa4ed
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "79023866"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Model operacyjny chmury jest teraz częścią platformy wdrażania Microsoft Cloud dla systemu Azure
@@ -28,7 +28,7 @@ W przypadku podobnego podejścia do modelu COM Czytelnicy powinni zacząć z jed
 
 - [Rozpoczęcie podróży migracji do chmury](../getting-started/migrate.md)
 - [Wprowadzanie innowacji poprzez wdrażanie w chmurze](../getting-started/innovate.md)
-- [Włącz pomyślne wdrażanie chmury](../getting-started/enable.md)
+- [Zapewnianie pomyślnego wdrożenia chmury](../getting-started/enable.md)
 
 Wskazówki podane wcześniej w modelu COM nadal dotyczą struktury wdrażania chmury. Środowisko jest inne, ale struktura wdrożenia chmury jest po prostu rozszerzeniem tych wskazówek. Aby przejść z modelu COM do struktury wdrażania w chmurze, rozumiesz zakres i strukturę. W poniższych dwóch sekcjach opisano przechodzenie.
 
@@ -45,7 +45,7 @@ COM ustanowił zakres składający się z następujących składników:
 Zakresy wysokiego poziomu modelu operacyjnego chmury i struktury wdrażania chmury są podobne. Firma, kultura i technologia są odzwierciedlone we wszystkich wskazówkach i każdej metodologii w ramach struktury wdrażania w chmurze.
 
 > [!NOTE]
-> Zakres struktury wdrażania chmury ma dwa znaczące punkty przejrzystości. W strukturze wdrażania w chmurze, Strategia biznesowa wykracza poza dokumentację kosztów chmury&mdash;informacje o zrozumieniu, żądanych rezultatach, zwracaniu i kosztach związanych z chmurą w celu utworzenia planów akcji i jasnego uzasadnienia biznesowego. W strukturze wdrażania w chmurze, strategia osób wykracza poza szkolenie, aby uwzględnić podejścia, które tworzą oczywisty termin zapadalności w kulturze. Kilka obszarów planu zawiera pokazy wpływu zarządzania Agile, integrację z DevOps, empatię klienta i Obsession, a także podejścia do tworzenia produktów w ramach produkcji.
+> Zakres struktury wdrażania chmury ma dwa znaczące punkty przejrzystości. W strukturze wdrażania w chmurze, Strategia biznesowa wykracza poza dokumentację kosztów&mdash;chmury, która ma na celu zrozumienie motywacji, pożądanych wyników, zwrotów i kosztów związanych z chmurą w celu utworzenia planów akcji i jasnego uzasadnienia biznesowego. W strukturze wdrażania w chmurze, strategia osób wykracza poza szkolenie, aby uwzględnić podejścia, które tworzą oczywisty termin zapadalności w kulturze. Kilka obszarów planu zawiera pokazy wpływu zarządzania Agile, integrację z DevOps, empatię klienta i Obsession, a także podejścia do tworzenia produktów w ramach produkcji.
 
 ## <a name="structure"></a>Struktura
 

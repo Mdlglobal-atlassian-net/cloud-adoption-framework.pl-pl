@@ -1,5 +1,5 @@
 ---
-title: Strategia monitorowania dla modeli wdrożenia w chmurze
+title: Strategia monitorowania modeli wdrażania w chmurze
 description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, którą strategię monitorowania zarządzania chmurą zastosować.
 author: MGoedtel
 ms.author: magoedte
@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
 ms.openlocfilehash: 33daaaf5859e0b761a6b53b1afc67df2ddcd1f65
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80527077"
 ---
 <!-- cSpell:ignore savision -->
@@ -52,7 +52,7 @@ Zasoby platformy Azure — platforma jako usługa (PaaS) | Usługi Azure Databas
 Zasoby platformy Azure — infrastruktura jako usługa (IaaS) | 1. usługa Azure Storage<br/> 2. Application Gateway platformy Azure<br/> 3. sieciowe grupy zabezpieczeń<br/> 4. Traffic Manager platformy Azure<br/> 5. Virtual Machines platformy Azure<br/> 6. usługa Azure Kubernetes/Azure Container Instances | 1. pojemność, dostępność i wydajność.<br/> 2. Dzienniki wydajności i diagnostyki (aktywność, dostęp, wydajność i Zapora).<br/> 3. Monitoruj zdarzenia, gdy reguły są stosowane, oraz licznik reguł dla tego, ile razy reguła jest stosowana do odmowy lub zezwolenia.<br/> 4. Monitoruj dostępność stanu punktu końcowego.<br/> 5. monitorowanie pojemności, dostępności i wydajności w systemie operacyjnym gościa maszyny wirtualnej (OS). Mapowanie zależności aplikacji hostowanych na poszczególnych maszynach wirtualnych, w tym widoczność aktywnych połączeń sieciowych między serwerami, opóźnieniem połączenia przychodzącego i wychodzącego oraz portów w dowolnej architekturze połączonej z protokołem TCP.<br/> 6. monitorowanie pojemności, dostępności i wydajności obciążeń działających w kontenerach i wystąpieniach kontenerów. | 1. metryki magazynu dla usługi BLOB Storage.<br/> 2. Włącz rejestrowanie diagnostyki i skonfiguruj przesyłanie strumieniowe do dzienników Azure Monitor.<br/> 3. Włącz rejestrowanie diagnostyki sieciowych grup zabezpieczeń i skonfiguruj przesyłanie strumieniowe do dzienników Azure Monitor.<br/> 4. Włącz rejestrowanie diagnostyki dla punktów końcowych Traffic Manager i skonfiguruj przesyłanie strumieniowe do dzienników Azure Monitor.<br/> 5. Włącz Azure Monitor dla maszyn wirtualnych.<br/> 6. Włącz Azure Monitor dla kontenerów.
 Sieć | Komunikacja między maszyną wirtualną i jednym lub wieloma punktami końcowymi (inna maszyna wirtualna, w pełni kwalifikowana nazwa domeny, jednolity identyfikator zasobu lub adres IPv4). | Monitoruj zmiany, opóźnienia i topologię sieci między maszyną wirtualną a punktem końcowym. | Network Watcher platformy Azure.
 Subskrypcja platformy Azure | Kondycja usługi platformy Azure i podstawowa Kondycja zasobów. | <li> Akcje administracyjne wykonywane w ramach usługi lub zasobu.<br/><li> Kondycja usługi w ramach usługi platformy Azure jest w stanie obniżonej lub niedostępności.<br/><li> Wykryto problemy z kondycją w ramach zasobu platformy Azure z perspektywy usługi platformy Azure.<br/><li> Operacje wykonywane przy użyciu automatycznego skalowania platformy Azure wskazujące awarię lub wyjątek. <br/><li> Operacje wykonywane z Azure Policy wskazujące, że wystąpiła dozwolona lub odmowa akcja.<br/><li> Rekord alertów generowanych przez Azure Security Center. | Dostarczana w dzienniku aktywności do monitorowania i wysyłania alertów za pomocą Azure Resource Manager.
-Dzierżawa platformy Azure | Azure Active Directory || Włącz rejestrowanie diagnostyczne i skonfiguruj przesyłanie strumieniowe do dzienników Azure Monitor.
+Dzierżawa platformy Azure | Usługa Azure Active Directory || Włącz rejestrowanie diagnostyczne i skonfiguruj przesyłanie strumieniowe do dzienników Azure Monitor.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -105,9 +105,9 @@ Aby zbierać metryki i dzienniki z zasobów platformy i infrastruktury platformy
 
 ### <a name="monitor-with-system-center-operations-manager"></a>Monitoruj przy użyciu System Center Operations Manager
 
-Mimo że System Center Operations Manager pierwotnie zaprojektowano jako rozwiązanie lokalne do monitorowania między aplikacjami, obciążeniami i składnikami infrastruktury, które działają w środowisku IT, został rozbudowany w taki sposób, aby obejmował monitorowanie chmury możliwość. Integruje się z platformą Azure, pakietem Office 365 i Amazon Web Services (AWS). Może ona być monitorowana w różnych środowiskach z pakietami administracyjnymi, które zostały zaprojektowane i zaktualizowane w celu ich obsługi.  
+Mimo że System Center Operations Manager pierwotnie zaprojektowano jako rozwiązanie lokalne do monitorowania między aplikacjami, obciążeniami i składnikami infrastruktury, które działają w środowisku IT, został on rozbudowany w taki sposób, aby obejmował możliwości monitorowania w chmurze. Integruje się z platformą Azure, pakietem Office 365 i Amazon Web Services (AWS). Może ona być monitorowana w różnych środowiskach z pakietami administracyjnymi, które zostały zaprojektowane i zaktualizowane w celu ich obsługi.  
 
-W przypadku klientów, którzy zastosowali znaczące inwestycje w Operations Manager, aby osiągnąć kompleksowe monitorowanie ściśle zintegrowane ze swoimi zarządzanie usługami ITmi procesami i narzędziami, lub dla klientów nowych na platformie Azure, zrozumiałe jest zadawanie następujących informacji masz
+W przypadku klientów, którzy zastosowali znaczące inwestycje w Operations Manager w celu osiągnięcia kompleksowego monitorowania zintegrowanego ze swoimi zarządzanie usługami ITmi procesami i narzędziami, lub dla klientów nowych na platformie Azure, zrozumiałe jest zadawanie następujących pytań:
 
 - Czy Operations Manager kontynuować dostarczanie wartości i czy ma ona sens biznesowy?
 - Czy funkcje w Operations Manager być odpowiednie dla naszej organizacji IT?
@@ -125,11 +125,11 @@ Aby monitorować obciążenia działające na platformie Azure, potrzebne są:
 
 W pakiecie administracyjnym jest zdefiniowana wiedza opisująca sposób monitorowania poszczególnych zależności i składników. Oba pakiety administracyjne platformy Azure wymagają wykonania zestawu kroków konfiguracyjnych na platformie Azure i Operations Manager przed rozpoczęciem monitorowania tych zasobów.
 
-W warstwie aplikacji Operations Manager oferuje podstawowe możliwości monitorowania wydajności aplikacji dla niektórych starszych wersji platformy .NET i języka Java. Jeśli niektóre aplikacje w środowisku chmury hybrydowej działają w trybie offline lub izolowanym przez sieć, w taki sposób, że nie mogą komunikować się z usługą w chmurze publicznej, Operations Manager Application Performance Monitoring (APM) może być opcją realną dla Niektóre ograniczone scenariusze. W przypadku aplikacji, które nie są uruchomione na starszych platformach, ale są hostowane lokalnie i w dowolnej chmurze publicznej, która umożliwia komunikację za pośrednictwem zapory (bezpośrednie lub za pośrednictwem serwera proxy) na platformie Azure, użyj Azure Monitor Application Insights. Ta usługa oferuje głębokie monitorowanie na poziomie kodu z obsługą pierwszej klasy dla ASP.NET, ASP.NET Core, Java, JavaScript i Node. js.
+W warstwie aplikacji Operations Manager oferuje podstawowe możliwości monitorowania wydajności aplikacji dla niektórych starszych wersji platformy .NET i języka Java. Jeśli niektóre aplikacje w środowisku chmury hybrydowej działają w trybie offline lub izolowanym przez sieć, w taki sposób, że nie mogą komunikować się z usługą w chmurze publicznej, Operations Manager Program Application Performance Monitoring (APM) może być wydajną opcją dla niektórych ograniczonych scenariuszy. W przypadku aplikacji, które nie są uruchomione na starszych platformach, ale są hostowane lokalnie i w dowolnej chmurze publicznej, która umożliwia komunikację za pośrednictwem zapory (bezpośrednie lub za pośrednictwem serwera proxy) na platformie Azure, użyj Azure Monitor Application Insights. Ta usługa oferuje głębokie monitorowanie na poziomie kodu z obsługą pierwszej klasy dla ASP.NET, ASP.NET Core, Java, JavaScript i Node. js.
 
 W przypadku dowolnej aplikacji sieci Web, którą można uzyskać zewnętrznie, należy włączyć typ transakcji syntetycznej znanej jako [monitorowanie dostępności]( https://docs.microsoft.com/azure/azure-monitor/app/monitor-web-app-availability). Ważne jest, aby dowiedzieć się, czy aplikacja lub krytyczne punkty końcowe protokołu HTTP/HTTPS, na których bazują aplikacja, są dostępne i odpowiada. Dzięki monitorowaniu dostępności Application Insights można uruchamiać testy z wielu centrów danych platformy Azure i zapewniać wgląd w kondycję aplikacji z perspektywy globalnej.
 
-Mimo że Operations Manager jest w stanie monitorować zasoby hostowane na platformie Azure, istnieje kilka zalet, aby dołączać Azure Monitor, ponieważ jego mocne przezwyciężyją ograniczenia w Operations Manager i mogą nawiązywać silne podstawy Obsługa ostatecznej migracji. W tym miejscu analizujemy każdą z tych mocnych i słabych stron, z zaleceniem uwzględnienia Azure Monitor w strategii monitorowania hybrydowego.  
+Mimo że Operations Manager jest w stanie monitorować zasoby hostowane na platformie Azure, istnieje kilka zalet, aby dołączać Azure Monitor, ponieważ jego siły przenoszą ograniczenia w Operations Manager i mogą nawiązywać mocną podstawę do obsługi migracji od niej. W tym miejscu analizujemy każdą z tych mocnych i słabych stron, z zaleceniem uwzględnienia Azure Monitor w strategii monitorowania hybrydowego.  
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>Wady używania Operations Manager przez siebie
 
@@ -160,7 +160,7 @@ Ta strategia zapewnia widoczność warstwy sieciowej bez potrzeby korzystania z 
 
 ### <a name="monitor-with-azure-monitor"></a>Monitorowanie za pomocą usługi Azure Monitor
 
-Mimo że migracja do chmury prezentuje wiele wyzwań, udostępnia również możliwości. Dzięki temu organizacja może przeprowadzić migrację z jednego lub wielu lokalnych narzędzi do monitorowania przedsiębiorstwa, aby nie tylko zredukować nakłady inwestycyjne i koszty operacyjne, ale również korzystać z zalet platformy monitorowania w chmurze, takiej jak Azure Monitor może być oferowany w skali chmury. Sprawdź wymagania dotyczące monitorowania i wysyłania alertów, konfigurację istniejących narzędzi do monitorowania oraz obciążeń przenoszonych do chmury. Po sfinalizowaniu planu Skonfiguruj Azure Monitor.
+Mimo że migracja do chmury prezentuje wiele wyzwań, udostępnia również możliwości. Dzięki temu organizacja może przeprowadzić migrację z jednego lub wielu lokalnych narzędzi do monitorowania przedsiębiorstwa, aby nie tylko zredukować nakłady inwestycyjne i koszty operacyjne, ale również korzystać z zalet platformy monitorowania w chmurze, takiej jak Azure Monitor, w skali chmury. Sprawdź wymagania dotyczące monitorowania i wysyłania alertów, konfigurację istniejących narzędzi do monitorowania oraz obciążeń przenoszonych do chmury. Po sfinalizowaniu planu Skonfiguruj Azure Monitor.
 
 - Monitoruj hybrydową infrastrukturę i aplikacje, korzystając z prostej lub wielowarstwowej architektury, w której składniki są hostowane między platformą Azure, innymi dostawcami chmury i siecią firmową. Składniki mogą zawierać co najmniej jedną maszynę wirtualną, wiele maszyn wirtualnych umieszczonych w zestawie dostępności lub zestaw skalowania maszyn wirtualnych, lub aplikację zwirtualizowaną wdrożoną w usłudze Azure Kubernetes Service (AKS) działającą w kontenerach systemu Windows Server lub Linux.
 
@@ -182,7 +182,7 @@ Można osiągnąć całościowe monitorowanie Azure Stack z System Center Operat
 
 Można również uzyskać całościowe monitorowanie z kombinacją [możliwości monitorowania infrastruktury](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) , które znajdują się w Azure Stack. Te funkcje ułatwiają wyświetlanie kondycji i alertów dla regionu Azure Stack i [usługi Azure monitor](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) w Azure Stack, która zapewnia metryki infrastruktury i dzienniki na poziomie podstawowym dla większości usług.
 
-Jeśli zainwestowano już w Operations Manager, Użyj pakietu administracyjnego Azure Stack do monitorowania stanu dostępności i kondycji Azure Stack wdrożeń, w tym regionów, dostawców zasobów, aktualizacji, przebiegów aktualizacji, jednostek skalowania, węzłów jednostek, infrastruktury role i ich wystąpienia (jednostki logiczne składają się z zasobów sprzętowych). Ten pakiet administracyjny używa interfejsów API REST i aktualizacji dostawcy zasobów do komunikowania się z Azure Stack. Aby monitorować serwery fizyczne i urządzenia magazynujące, należy użyć pakietu administracyjnego dostawcy OEM (na przykład dostarczonego przez firmę Lenovo, Hewlett Packard lub Dell). Operations Manager może natywnie monitorować przełączniki sieciowe w celu zbierania podstawowych statystyk przy użyciu protokołu SNMP. Monitorowanie obciążeń dzierżawców jest możliwe z pakietem administracyjnym platformy Azure, wykonując dwa podstawowe kroki. Skonfiguruj subskrypcję, którą chcesz monitorować, a następnie Dodaj monitory dla tej subskrypcji.
+Jeśli zainwestowano już w Operations Manager, Użyj pakietu administracyjnego Azure Stack do monitorowania stanu dostępności i kondycji Azure Stack wdrożeń, takich jak regiony, dostawcy zasobów, aktualizacje, przebiegi aktualizacji, jednostki skalowania, węzły jednostek, role infrastruktury i ich wystąpienia (jednostki logiczne składają się z zasobów sprzętowych). Ten pakiet administracyjny używa interfejsów API REST i aktualizacji dostawcy zasobów do komunikowania się z Azure Stack. Aby monitorować serwery fizyczne i urządzenia magazynujące, należy użyć pakietu administracyjnego dostawcy OEM (na przykład dostarczonego przez firmę Lenovo, Hewlett Packard lub Dell). Operations Manager może natywnie monitorować przełączniki sieciowe w celu zbierania podstawowych statystyk przy użyciu protokołu SNMP. Monitorowanie obciążeń dzierżawców jest możliwe z pakietem administracyjnym platformy Azure, wykonując dwa podstawowe kroki. Skonfiguruj subskrypcję, którą chcesz monitorować, a następnie Dodaj monitory dla tej subskrypcji.
 
 ## <a name="next-steps"></a>Następne kroki
 

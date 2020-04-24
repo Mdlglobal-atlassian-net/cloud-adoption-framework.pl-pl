@@ -9,10 +9,10 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 3c5d6d187e72217c16ca380f6ef433560b647574
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80434565"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Procesy zgodności zasad przyspieszenia wdrożenia
@@ -21,7 +21,7 @@ W tym artykule omówiono podejście do procesów przestrzegania zasad, które re
 
 ## <a name="planning-review-and-reporting-processes"></a>Planowanie, przeglądanie i raportowanie procesów
 
-Najlepsze narzędzia do przyspieszania wdrażania w chmurze są takie same jak w przypadku procesów i zasad, które są przez nie obsługiwane. Poniżej znajduje się zestaw przykładowych procesów często używanych jako część przyspieszenia wdrożenia. Użyj tych przykładów jako punktu wyjścia podczas planowania procesów, które umożliwią dalszą aktualizację wdrożenia i zasad konfiguracji na podstawie zmian w firmie i informacji zwrotnych z rozwoju i zespołów IT odpowiedzialnych za włączenie wytycznych ładu do transakcji.
+Najlepsze narzędzia do przyspieszania wdrażania w chmurze są takie same jak w przypadku procesów i zasad, które są przez nie obsługiwane. Poniżej znajduje się zestaw przykładowych procesów często używanych jako część przyspieszenia wdrożenia. Użyj tych przykładów jako punktu wyjścia podczas planowania procesów, które umożliwią dalszą aktualizację wdrożenia i zasad konfiguracji na podstawie zmian w firmie i informacji zwrotnych z rozwoju i zespołów IT odpowiedzialnych za włączenie wytycznych ładu do działania.
 
 **Wstępna ocena ryzyka i planowanie:** W ramach początkowego wdrażania dyscypliny wdrożenia należy określić podstawowe zagrożenia biznesowe i tolerancję związaną z wdrażaniem aplikacji firmowych. Te informacje służą do omówienia określonych zagrożeń technicznych związanych z członkami zespołu ds. operacji IT i opracowania bazowego zestawu zasad wdrażania i konfiguracji korygowaniem te zagrożenia w celu ustalenia wstępnej strategii zarządzania.
 
@@ -55,7 +55,7 @@ Następujące wyzwalacze i akcje wymuszania zawierają przykłady, których moż
 
 - **Wykryto nieoczekiwane zmiany w konfiguracji.** W przypadku nieoczekiwanej zmiany konfiguracji zasobu należy skontaktować się z pracownikami działu IT i właścicielami obciążeń w celu zidentyfikowania głównej przyczyny i opracowania planu korygowania.
 - **Konfiguracja nowych zasobów nie jest zgodna z zasadami.** Współpraca z zespołami DevOps i właścicielami obciążeń w celu sprawdzenia zasad przyspieszenia wdrożenia podczas uruchamiania projektu, dzięki czemu wszyscy użytkownicy będą zrozumieć odpowiednie wymagania dotyczące zasad.
-- **Błędy wdrożenia lub problemy z konfiguracją powodują opóźnienia w harmonogramach projektu.** Pracuj z zespołami programistycznymi i właścicielami obciążeń, aby upewnić się, że zespół zrozumie, jak zautomatyzować wdrażanie zasobów opartych na chmurze pod kątem spójności i powtarzalności. W cyklu programowania należy wczesnie zautomatyzowanych wdrożeń&mdash;próby osiągnięcia tego opóźnienia w cyklu projektowania zwykle prowadzą do nieoczekiwanych problemów i opóźnień.
+- **Błędy wdrożenia lub problemy z konfiguracją powodują opóźnienia w harmonogramach projektu.** Pracuj z zespołami programistycznymi i właścicielami obciążeń, aby upewnić się, że zespół zrozumie, jak zautomatyzować wdrażanie zasobów opartych na chmurze pod kątem spójności i powtarzalności. W cyklu opracowywania, w pełni zautomatyzowane wdrożenia, powinny&mdash;być wymagane na wczesnych cyklach programistycznych, a w cyklu projektowania zwykle prowadzi do nieoczekiwanych problemów i opóźnień.
 
 ## <a name="next-steps"></a>Następne kroki
 

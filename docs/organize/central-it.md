@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 5a70b89191f53c3475dd0d14f67d2c4dc4d68115
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: d24c5076bd7843f6f4559e901144be6ba3a33ca4
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80526801"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120292"
 ---
 # <a name="central-it-capabilities"></a>Centralne możliwości IT
 
@@ -33,7 +33,7 @@ Umiejętności niezbędne do zapewnienia scentralizowanych możliwości IT mogą
 - Operacje IT
 - Zarządzanie IT
 - Infrastruktura IT
-- Sieć
+- Networking
 - Tożsamość
 - Wirtualizacja
 - Ciągłość działania i odzyskiwanie po awarii
@@ -102,7 +102,7 @@ Dojrzały centralny zespół IT utrzymuje niezbędne zabezpieczenia, ale negocju
 
 Ta przykładowa ilustracja przedstawia podejście podejmowane przez dojrzały centralny zespół IT w celu przyjęcia wdrożenia.
 
-Firma Contoso przyjęła centralny model IT na potrzeby obsługi zasobów w chmurze firmy. Aby można było dostarczyć ten model, mają one zaimplementowane ścisłe kontrolki dla różnych usług udostępnionych, na przykład połączeń sieciowych przychodzących. Dzięki temu można zmniejszyć narażenie środowiska chmury i zapewnić, że jedno urządzenie "ze szlifem" blokuje cały ruch w przypadku naruszenia. Stan zasad linii bazowej zabezpieczeń, który cały ruch przychodzący musi następować przez udostępnione urządzenie zarządzane przez centralny zespół IT.
+Firma Contoso przyjęła centralny model IT na potrzeby obsługi zasobów w chmurze firmy. Aby można było dostarczyć ten model, mają one zaimplementowane ścisłe kontrolki dla różnych usług udostępnionych, na przykład połączeń sieciowych przychodzących. Dzięki temu można zmniejszyć narażenie środowiska chmury i zapewnić, że jedno urządzenie "ze szlifem" blokuje cały ruch w przypadku wystąpienia naruszenia. Stan zasad linii bazowej zabezpieczeń, który cały ruch przychodzący musi następować przez udostępnione urządzenie zarządzane przez centralny zespół IT.
 
 Jednak jeden z zespołów wdrażania chmury wymaga teraz środowiska z dedykowanym i specjalnie skonfigurowanym połączeniem sieciowym, aby można było korzystać z określonej technologii chmury. Niedojrzały centralny zespół IT po prostu odrzuca żądanie i ustala priorytety swoich istniejących procesów na potrzeby wdrażania. Centralny zespół IT firmy Contoso jest inny. Szybko zidentyfikowały proste, czwarte rozwiązanie do tego dylematem: klasyfikacji, negocjacji, izolacji i automatyzacji.
 

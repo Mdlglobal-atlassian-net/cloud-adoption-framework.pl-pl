@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: 0c3042469ff2c562ff84d173837685f73c9df933
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80426461"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Krytyczne znaczenie biznesowe w zarządzaniu chmurą
@@ -33,9 +33,9 @@ Pierwszym krokiem w celu wyrównania znaczenia dla działania firmy jest utworze
 | --------- | --------- |
 | Operacje krytyczne dla działalności firmy |  Wpływa na misja firmy i może w zauważalny sposób mieć wpływ na firmowe zestawienie zysków i strat. |
 | Jednostka — krytyczne | Ma wpływ na misja określonej jednostki biznesowej i jej zestawień zysków i strat. |
-| Wysoki | Może nie utrudniać misja, ale ma wpływ na procesy o wysokiej ważności. Wymierne straty mogą być wymierne w przypadku awarii. |
-| Średnia | Prawdopodobnie ma to wpływ na procesy. Straty są niskie lub wymierne, ale przyczyną mogą być uszkodzenia marki lub straty w strumieniu. |
-| Niski | Wpływ na procesy biznesowe nie jest wymierny. Nie ma to żadnego uszkodzenia marki ani utraty strumienia. Prawdopodobnie zlokalizowany wpływ na pojedynczy zespół. |
+| Wysoka | Może nie utrudniać misja, ale ma wpływ na procesy o wysokiej ważności. Wymierne straty mogą być wymierne w przypadku awarii. |
+| Medium | Prawdopodobnie ma to wpływ na procesy. Straty są niskie lub wymierne, ale przyczyną mogą być uszkodzenia marki lub straty w strumieniu. |
+| Małe | Wpływ na procesy biznesowe nie jest wymierny. Nie ma to żadnego uszkodzenia marki ani utraty strumienia. Prawdopodobnie zlokalizowany wpływ na pojedynczy zespół. |
 | Nieobsługiwane | Żaden właściciel firmy, zespół lub proces, który jest skojarzony z tym obciążeniem, może uzasadniać wszelką inwestycję w ciągłe zarządzanie obciążeniem. |
 
 Jest to typowy w przypadku firm, które uwzględniają dodatkowe klasyfikacje krytyczne, które są specyficzne dla branżowych, pionowych lub określonych procesów biznesowych. Przykłady dodatkowych klasyfikacji obejmują:

@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7cdb1e56b38615e7878352d6e336e0f01261f6ce
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 067e84e433fa995c79b588698240afea06e54660
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354125"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120018"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -49,9 +49,9 @@ Gdy tworzysz sieci wirtualne w ramach migracji, ważne jest zaplanowanie przestr
 
 **Dowiedz się więcej:**
 
-- [Zapoznaj się z omówieniem](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) sieci wirtualnych platformy Azure.
-- [Przeczytaj](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq) często zadawane pytania dotyczące sieci.
-- [Dowiedz](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits) się więcej na temat ograniczeń sieci.
+- Zapoznaj się [z omówieniem Virtual Network platformy Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
+- Przeczytaj [często zadawane pytania dotyczące platformy Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq).
+- Dowiedz się więcej o [limitach sieci platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits).
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Najlepsze rozwiązanie: implementowanie topologii sieci gwiazdy i gwiazdy
 
@@ -77,7 +77,7 @@ Rozważ następujące źródła:
 - Uzyskaj rekomendacje dotyczące sieci w przypadku uruchamiania maszyn wirtualnych platformy Azure w systemach [Windows](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) i [Linux](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm).
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) o komunikacji równorzędnej sieci wirtualnych.
 
-## <a name="best-practice-design-subnets"></a>Najlepsze rozwiązanie: Zaprojektuj podsieci
+## <a name="best-practice-design-subnets"></a>Najlepsze rozwiązanie: projektowanie podsieci
 
 Aby zapewnić izolację w sieci wirtualnej, należy posegmentować ją na jedną lub więcej podsieci i przypisać części przestrzeni adresowej sieci wirtualnej do każdej podsieci.
 
@@ -88,11 +88,11 @@ Aby zapewnić izolację w sieci wirtualnej, należy posegmentować ją na jedną
 - Podczas decydowania o zakresie sieci dla podsieci należy pamiętać, że platforma Azure zachowuje pięć adresów IP z każdej podsieci, których nie można używać. Jeśli na przykład utworzysz najmniejszą dostępną podsieć /29 (z ośmioma adresami IP), platforma Azure zachowa pięć adresów, więc będziesz mieć tylko trzy możliwe do użycia adresy, które można przypisać do hostów w podsieci.
 - W większości przypadków należy użyć/28 jako najmniejszej podsieci.
 
-**Przykład:**
+**Przyklad**
 
 W tabeli przedstawiono przykład sieci wirtualnej z przestrzenią adresową 10.245.16.0/20 podzieloną na podsieci na potrzeby planowanej migracji.
 
-**Podsieć** | **CIDR** | **Adresy** | **Korzystanie**
+**Podsieci** | **CIDR** | **Adresy** | **Użycie**
 --- | --- | --- | ---
 DEV-FE-EUS2 | 10.245.16.0/22 | 1019 | Maszyny wirtualne frontonu/warstwy internetowej
 DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | Maszyny wirtualne warstwy aplikacji
@@ -116,14 +116,14 @@ Platforma Azure domyślnie dodaje serwer DNS podczas wdrażania sieci wirtualnej
 - Serwery DNS określone dla interfejsu sieciowego lub usługi w chmurze mają pierwszeństwo przed serwerami DNS określonymi dla sieci wirtualnej.
 - W modelu wdrażania usługi Azure Resource Manager można określić serwery DNS dla sieci wirtualnej i interfejsu sieciowego, ale najlepszym rozwiązaniem jest użycie ustawienia tylko w sieciach wirtualnych.
 
-    ![serwery DNS](./media/migrate-best-practices-networking/dns2.png) *serwery DNS dla sieci wirtualnej*
+    ![Serwery DNS](./media/migrate-best-practices-networking/dns2.png) *Serwery DNS dla sieci wirtualnej*
 
 **Dowiedz się więcej:**
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) o rozpoznawaniu nazw podczas korzystania z własnego serwera DNS.
 - [Dowiedz się więcej](../../ready/azure-best-practices/naming-and-tagging.md) o regułach i ograniczeniach nazewnictwa DNS.
 
-## <a name="best-practice-set-up-availability-zones"></a>Najlepsze rozwiązanie: ustawienie strefy dostępności
+## <a name="best-practice-set-up-availability-zones"></a>Najlepsze rozwiązanie: Konfigurowanie stref dostępności
 
 Strefy dostępności zwiększają wysoką dostępność, aby chronić aplikacje i dane przed awariami centrów danych.
 
@@ -131,16 +131,16 @@ Strefy dostępności zwiększają wysoką dostępność, aby chronić aplikacje 
 - Każda strefa składa się z co najmniej jednego centrum danych wyposażonego w niezależne zasilanie, chłodzenie i sieć.
 - W celu zapewnienia odporności istnieją co najmniej trzy osobne strefy we wszystkich włączonych regionach.
 - Fizyczna separacja stref dostępności w ramach regionu chroni aplikacje i dane przed awariami centrum danych.
-- Usługi strefowo nadmiarowe replikują aplikacje i dane w strefach dostępności, aby chronić je przed pojedynczymi punktami awarii. - - Dzięki strefom dostępności platforma Azure oferuje umowę SLA gwarantującą czas działania maszyny wirtualnej na poziomie 99,99%.
+- Usługi strefowo nadmiarowe replikują aplikacje i dane w strefach dostępności, aby chronić je przed pojedynczymi punktami awarii. — W przypadku stref dostępności platforma Azure oferuje umowę SLA na 99,99% czasu pracy maszyny wirtualnej.
 
-    Strefa dostępności ![](./media/migrate-best-practices-networking/availability-zone.png) *strefy dostępności*
+    ![Strefa dostępności](./media/migrate-best-practices-networking/availability-zone.png) *Strefa dostępności*
 
 - Wysoką dostępność można zaplanować i utworzyć w architekturze migracji przez umieszczanie zasobów obliczeniowych, magazynu, sieci i danych w ramach tej samej strefy, a następnie replikowanie ich w innych strefach. Usługi platformy Azure, które obsługują strefy dostępności, dzielą się na dwie kategorie:
-  - Strefowy usług: zasób jest skojarzona z określonej strefy. Na przykład maszyny wirtualne, dyski zarządzane, adresy IP.
-  - Strefowo nadmiarowe usług: zasób jest automatycznie replikowana w strefach. Na przykład magazyn strefowo nadmiarowy, usługa Azure SQL Database.
+  - Usługi strefowe: należy skojarzyć zasób z określoną strefą. Na przykład maszyny wirtualne, dyski zarządzane, adresy IP.
+  - Usługi strefowo nadmiarowe: zasób jest replikowany automatycznie między strefami. Na przykład magazyn strefowo nadmiarowy, usługa Azure SQL Database.
 - Aby zapewnić strefową odporność na uszkodzenia, można wdrożyć standardowy moduł równoważenia obciążenia platformy Azure z obciążeniami internetowymi lub warstwami aplikacji.
 
-    ![modułu równoważenia obciążenia](./media/migrate-best-practices-networking/load-balancer.png) usługi *równoważenia obciążenia*
+    ![Moduł równoważenia obciążenia](./media/migrate-best-practices-networking/load-balancer.png) *Moduł równoważenia obciążenia*
 
 **Dowiedz się więcej:**
 
@@ -157,7 +157,7 @@ W przypadku pomyślnej migracji najważniejsze jest połączenie lokalnych sieci
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) o sieci w chmurze hybrydowej.
 
-## <a name="best-practice-implement-a-highly-available-site-to-site-vpn"></a>Najlepsze rozwiązanie: Implementowanie wysokiej dostępności sieci VPN typu lokacja lokacja
+## <a name="best-practice-implement-a-highly-available-site-to-site-vpn"></a>Najlepsze rozwiązanie: implementowanie sieci VPN typu lokacja-lokacja o wysokiej dostępności
 
 Aby zaimplementować sieć VPN typu lokacja-lokacja, należy skonfigurować bramę sieci VPN na platformie Azure.
 
@@ -195,7 +195,7 @@ Podczas konfigurowania sieci VPN typu lokacja-lokacja należy wykonać następuj
 - [Przejrzyj](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) jednostki SKU bramy.
 - [Poczytaj o](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-bgp-overview) konfigurowaniu protokołu BGP za pomocą bram sieci VPN platformy Azure.
 
-### <a name="best-practice-configure-a-gateway-for-vpn-gateways"></a>Najlepsze rozwiązanie: Konfigurowanie bramy dla bramy sieci VPN
+### <a name="best-practice-configure-a-gateway-for-vpn-gateways"></a>Najlepsze rozwiązanie: Konfigurowanie bramy dla bram sieci VPN
 
 Podczas tworzenia bramy sieci VPN na platformie Azure należy użyć specjalnej podsieci o nazwie GatewaySubnet. Podczas tworzenia tej podsieci należy zwrócić uwagę na następujące najlepsze rozwiązania:
 
@@ -208,7 +208,7 @@ Podczas tworzenia bramy sieci VPN na platformie Azure należy użyć specjalnej 
 
 - [Użyj tego narzędzia](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed), aby określić przestrzeń adresową IP.
 
-## <a name="best-practice-implement-azure-virtual-wan-for-branch-offices"></a>Najlepsze rozwiązanie: Implementowanie Azure wirtualne sieci WAN dla oddziałów
+## <a name="best-practice-implement-azure-virtual-wan-for-branch-offices"></a>Najlepsze rozwiązanie: implementowanie wirtualnej sieci WAN platformy Azure dla biur oddziałów
 
 W przypadku wielu połączeń sieci VPN Azure Virtual WAN to usługa sieciowa zapewniająca zoptymalizowaną i zautomatyzowaną łączność między oddziałami za pośrednictwem platformy Azure.
 
@@ -216,8 +216,8 @@ W przypadku wielu połączeń sieci VPN Azure Virtual WAN to usługa sieciowa za
 - Użycie urządzeń preferowanych dostawców zapewnia prostą obsługę, łączność oraz zarządzanie konfiguracją.
 - Wbudowany pulpit nawigacyjny sieci WAN na platformie Azure udostępnia na bieżąco szczegółowe informacje dotyczące rozwiązywania problemów, dzięki którym oszczędzisz czas, i umożliwia łatwe monitorowanie łączności między lokacjami w dużej skali.
 
-**Dowiedz się więcej:** 
-[Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) o usłudze Azure Virtual WAN.
+**Dowiedz się więcej:**
+informacje[o](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) wirtualnej sieci WAN platformy Azure.
 
 ### <a name="best-practice-implement-expressroute-for-mission-critical-connections"></a>Najlepsze rozwiązanie: implementowanie ExpressRoute dla połączeń o kluczowym znaczeniu
 
@@ -236,11 +236,11 @@ Wdrażanie połączeń usługi ExpressRoute obejmuje zazwyczaj zaangażowanie do
 - [Przeczytaj](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) omówienie usługi ExpressRoute.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about) o usłudze ExpressRoute Direct.
 
-### <a name="best-practice-optimize-expressroute-routing-with-bgp-communities"></a>Najlepsze rozwiązanie: Optymalizacja routingu usługi ExpressRoute za pomocą protokołu BGP społeczności
+### <a name="best-practice-optimize-expressroute-routing-with-bgp-communities"></a>Najlepsze rozwiązanie: Optymalizowanie routingu ExpressRoute przy użyciu społeczności BGP
 
 Jeśli masz wiele obwodów usługi ExpressRoute, masz więcej niż jedną ścieżkę łączenia z firmą Microsoft. W związku z tym może wystąpić routing nieoptymalny, tzn. ruch może użyć dłuższej ścieżki w celu dotarcia do firmy Microsoft lub z firmy Microsoft do sieci użytkownika. Im dłuższa ścieżka sieciowa, tym większe opóźnienie. Opóźnienie ma bezpośredni wpływ na wydajność aplikacji i środowisko użytkownika.
 
-**Przykład:**
+**Przyklad**
 
 Zapoznajmy się z przykładem:
 
@@ -262,7 +262,7 @@ Teraz wyobraź sobie, że dysponujesz wdrożeniem platformy Azure (np. usługą 
 ![Sieć VPN](./media/migrate-best-practices-networking/bgp1.png)
 *Niezoptymalizowane połączenie społeczności protokołu BGP*
 
-**Rozwiązanie:**
+**Narzędzie**
 
 Aby zoptymalizować routing dla użytkowników obu biur, trzeba wiedzieć, który prefiks odpowiada zachodnim, a który wschodnim stanom USA. Te informacje można kodować przy użyciu wartości społeczności BGP.
 
@@ -285,10 +285,10 @@ Odpowiedzialność za zabezpieczanie sieci wirtualnych jest podzielona między f
 
 **Dowiedz się więcej:**
 
-- [Zapoznaj się z omówieniem](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices) najlepszych rozwiązań z zakresu zabezpieczeń sieci.
+- [Zapoznaj się z omówieniem](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices) najlepszych rozwiązań z zakresu zabezpieczeń sieci.
 - [Dowiedz się](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security), jak projektować bezpieczne sieci.
 
-## <a name="best-practice-implement-an-azure-perimeter-network"></a>Najlepsze rozwiązanie: Implementowanie sieci obwodowej platformy Azure
+## <a name="best-practice-implement-an-azure-perimeter-network"></a>Najlepsze rozwiązanie: implementowanie sieci obwodowej platformy Azure
 
 Mimo że firma Microsoft inwestuje bardzo dużo w ochronę infrastruktury chmury, musisz również chronić usługi w chmurze i grupy zasobów. Podejście wielowarstwowe do zabezpieczeń zapewnia najlepszą ochronę. Zastosowanie sieci obwodowej jest ważną częścią tej strategii obrony.
 
@@ -307,9 +307,9 @@ Na poniższej ilustracji przedstawiono przykład pojedynczej podsieci sieci obwo
 
 **Dowiedz się więcej:**
 
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) o wdrażaniu sieci obwodowej między platformą Azure i lokalnym centrum danych.
+- Dowiedz się [, jak wdrożyć sieć obwodową między platformą Azure i lokalnym centrum danych](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
 
-## <a name="best-practice-filter-vnet-traffic-with-nsgs"></a>Najlepsze rozwiązanie: ruch w sieci wirtualnej filtr z sieciowymi grupami zabezpieczeń
+## <a name="best-practice-filter-vnet-traffic-with-nsgs"></a>Najlepsze rozwiązanie: filtrowanie ruchu w sieci wirtualnej za pomocą sieciowych grup zabezpieczeń
 
 Sieciowe grupy zabezpieczeń zawierają wiele reguł zabezpieczeń dla ruchu przychodzącego i wychodzącego, które filtrują ruch przechodzący do i z zasobów. Filtrowanie może odbywać się według źródłowego i docelowego adresu IP, portu i protokołu.
 
@@ -321,7 +321,7 @@ Sieciowe grupy zabezpieczeń zawierają wiele reguł zabezpieczeń dla ruchu prz
 - Istniejące połączenia nie są przerywane po usunięciu reguły zabezpieczeń, która zezwoliła na przepływ. Przepływy ruchu są przerywane po zakończeniu połączenia, gdy przez co najmniej kilka minut nie ma ruchu z żadnej strony.
 - Podczas tworzenia sieciowych grup zabezpieczeń utwórz ich jak najmniej, ale tyle, ile potrzebujesz.
 
-### <a name="best-practice-secure-northsouth-and-eastwest-traffic"></a>Najlepsze rozwiązanie: bezpieczny ruch wschód/zachód i północ/południe
+### <a name="best-practice-secure-northsouth-and-eastwest-traffic"></a>Najlepsze rozwiązanie: bezpieczny ruch w północ/południe i wschód/zachód
 
 W przypadku zabezpieczania sieci wirtualnych ważne jest rozważenie wektorów ataków.
 
@@ -350,7 +350,7 @@ Tagi usługi eliminują czynności wykonywane ręcznie z procesu przypisywania r
 - [Poczytaj na temat](https://docs.microsoft.com/azure/virtual-network/security-overview) sieciowych grup zabezpieczeń.
 - [Przejrzyj](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags) tagi usług dostępne dla sieciowych grup zabezpieczeń.
 
-## <a name="best-practice-use-application-security-groups"></a>Najlepsze rozwiązanie: przy użyciu grup zabezpieczeń aplikacji
+## <a name="best-practice-use-application-security-groups"></a>Najlepsze rozwiązanie: korzystanie z grup zabezpieczeń aplikacji
 
 Grupy zabezpieczeń aplikacji umożliwiają konfigurowanie zabezpieczeń sieci jako naturalnego rozszerzenia struktury aplikacji.
 
@@ -358,7 +358,7 @@ Grupy zabezpieczeń aplikacji umożliwiają konfigurowanie zabezpieczeń sieci j
 - Grupy zabezpieczeń aplikacji umożliwiają ponowne używanie zasady zabezpieczeń na dużą skalę bez ręcznej obsługi jawnych adresów IP.
 - Grupy zabezpieczeń aplikacji obsługują złożoność jawnych adresów IP i wiele zestawów reguł, co pozwala skupić się na logice biznesowej.
 
-**Przykład:**
+**Przyklad**
 
 ![Grupa zabezpieczeń aplikacji](./media/migrate-best-practices-networking/asg.png)
 *Przykład grupy zabezpieczeń aplikacji*
@@ -375,11 +375,11 @@ NIC4 | AsgDb
 
 <!--markdownlint-disable MD033 -->
 
-**Nazwa reguły** | **Przeznaczenie** | **Szczegóły**
+**Nazwa reguły** | **Przeznaczenie** | **Uzyskać**
 --- | --- | ---
-Allow-HTTP-Inbound-Internet | Zezwalanie na ruch z Internetu do serwerów internetowych. Ruch przychodzący z Internetu jest blokowany przez domyślną regułę zabezpieczeń DenyAllInbound, dlatego dodatkowa reguła nie jest potrzebna w przypadku grup zabezpieczeń aplikacji AsgLogic i AsgDb. | Priorytet: 100<br/><br/> Źródło: Internet<br/><br/> Port źródłowy: *<br/><br/> Miejsce docelowe: AsgWeb<br/><br/> Port docelowy: 80<br/><br/> Protokół: TCP<br/><br/> Dostęp: Zezwalaj na.
-Deny-Database-All | Domyślna reguła zabezpieczeń AllowVNetInBound zezwala na całą komunikację między zasobami w tej samej sieci wirtualnej, ta zasada jest potrzebna w celu blokowania ruchu ze wszystkich zasobów. | Priorytet: 120<br/><br/> Źródło: *<br/><br/> Port źródłowy: *<br/><br/> Miejsce docelowe: AsgDb<br/><br/> Port docelowy: 1433<br/><br/> Protokół: wszystkie<br/><br/> Dostęp: odmowa.
-Allow-Database-BusinessLogic | Zezwolenie na ruch z grupy zabezpieczeń aplikacji AsgLogic do grupy zabezpieczeń aplikacji AsgDb. Priorytet tej reguły jest wyższy niż reguła Odmów-Database-All, więc ta reguła jest przetwarzana jako pierwsza. W związku z tym, ruch z grupy zabezpieczeń aplikacji AsgLogic jest dozwolony i cały inny ruch jest blokowany. | Priorytet: 110<br/><br/> Źródło: AsgLogic<br/><br/> Port źródłowy: *<br/><br/> Miejsce docelowe: AsgDb<br/><br/> Port docelowy: 1433<br/><br/> Protokół: TCP<br/><br/> Dostęp: Zezwalaj na.
+Allow-HTTP-Inbound-Internet | Zezwalanie na ruch z Internetu do serwerów internetowych. Ruch przychodzący z Internetu jest blokowany przez domyślną regułę zabezpieczeń DenyAllInbound, dlatego dodatkowa reguła nie jest potrzebna w przypadku grup zabezpieczeń aplikacji AsgLogic i AsgDb. | Priorytet: 100<br/><br/> Źródło: Internet<br/><br/> Port źródłowy: *<br/><br/> Miejsce docelowe: AsgWeb<br/><br/> Port docelowy: 80<br/><br/> Protokół: TCP<br/><br/> Dostęp: Zezwalaj.
+Deny-Database-All | Domyślna reguła zabezpieczeń AllowVNetInBound zezwala na całą komunikację między zasobami w tej samej sieci wirtualnej, ta zasada jest potrzebna w celu blokowania ruchu ze wszystkich zasobów. | Priorytet: 120<br/><br/> Źródło: *<br/><br/> Port źródłowy: *<br/><br/> Miejsce docelowe: AsgDb<br/><br/> Port docelowy: 1433<br/><br/> Protokół: wszystkie<br/><br/> Dostęp: Odmów.
+Allow-Database-BusinessLogic | Zezwolenie na ruch z grupy zabezpieczeń aplikacji AsgLogic do grupy zabezpieczeń aplikacji AsgDb. Priorytet tej reguły jest wyższy niż reguła Odmów-Database-All, więc ta reguła jest przetwarzana jako pierwsza. W związku z tym, ruch z grupy zabezpieczeń aplikacji AsgLogic jest dozwolony i cały inny ruch jest blokowany. | Priorytet: 110<br/><br/> Źródło: AsgLogic<br/><br/> Port źródłowy: *<br/><br/> Miejsce docelowe: AsgDb<br/><br/> Port docelowy: 1433<br/><br/> Protokół: TCP<br/><br/> Dostęp: Zezwalaj.
 
 <!--markdownlint-enable MD033 -->
 
@@ -389,7 +389,7 @@ Allow-Database-BusinessLogic | Zezwolenie na ruch z grupy zabezpieczeń aplikacj
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-network/security-overview#application-security-groups) o grupach zabezpieczeń aplikacji.
 
-### <a name="best-practice-secure-access-to-paas-using-vnet-service-endpoints"></a>Najlepsze rozwiązanie: bezpieczny dostęp do usługi PaaS za pomocą punktów końcowych usługi sieci wirtualnej
+### <a name="best-practice-secure-access-to-paas-using-vnet-service-endpoints"></a>Najlepsze rozwiązanie: bezpieczny dostęp do PaaS za pomocą punktów końcowych usługi sieci wirtualnej
 
 Punkty końcowe usługi sieci wirtualnej rozszerzają prywatną przestrzeń adresową i tożsamość sieci wirtualnej do usług platformy Azure za pośrednictwem połączenia bezpośredniego.
 
@@ -404,7 +404,7 @@ Punkty końcowe usługi sieci wirtualnej rozszerzają prywatną przestrzeń adre
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) o punktach końcowych usługi sieci wirtualnej.
 
-## <a name="best-practice-control-public-ip-addresses"></a>Najlepsze rozwiązanie: kontrolowanie publiczne adresy IP
+## <a name="best-practice-control-public-ip-addresses"></a>Najlepsze rozwiązanie: sterowanie publicznymi adresami IP
 
 Publiczne adresy IP na platformie Azure mogą być kojarzone z maszynami wirtualnymi, modułami równoważenia obciążenia, bramami aplikacji i bramami sieci VPN.
 
@@ -490,13 +490,13 @@ W przypadku bardziej złożonych topologii sieci można używać produktów zabe
 - Wirtualne urządzenia sieciowe wzmacniają zabezpieczenia sieci wirtualnej i funkcje sieciowe. Można je wdrażać w przypadku zapór o wysokiej dostępności, zapobiegania włamaniom, wykrywania intruzów, zapór aplikacji internetowych, optymalizacji sieci WAN, routingu, równoważenia obciążenia, sieci VPN, zarządzania certyfikatami, usługi Active Directory i uwierzytelniania wieloskładnikowego.
 - Wirtualne urządzenia sieciowe są oferowane przez wielu dostawców w witrynie  [Azure Marketplace](https://azuremarketplace.microsoft.com).
 
-## <a name="best-practice-implement-firewalls-and-nvas-in-hub-networks"></a>Najlepsze rozwiązanie: wdrożenie zapory i urządzenia WUS w sieci Centrum
+## <a name="best-practice-implement-firewalls-and-nvas-in-hub-networks"></a>Najlepsze rozwiązanie: implementowanie zapór i urządzeń WUS w sieciach centrów
 
 W centrum sieć obwodowa (z dostępem do Internetu) jest zazwyczaj zarządzana za pomocą zapory platformy Azure, farmy zapór lub zapory aplikacji internetowej. Przeanalizujmy następujące porównania.
 
 <!--markdownlint-disable MD033 -->
 
-**Typ zapory** | **Szczegóły**
+**Typ zapory** | **Uzyskać**
 --- | ---
 Zapory aplikacji internetowych | Aplikacje internetowe są powszechnie używane oraz często mają luki w zabezpieczeniach i są obiektami ataków wykorzystujących te luki.<br/><br/> Zapory aplikacji internetowych są projektowane tak, aby wykrywać ataki na aplikacje internetowe (HTTP/HTTPS) skuteczniej niż zapora ogólna.<br/><br/> W porównaniu z tradycyjną technologią zapory aplikacji internetowych mają zestaw konkretnych funkcji chroniących wewnętrzne serwery internetowe przed zagrożeniami.
 Azure Firewall | Podobnie jak w przypadku farm zapór wirtualnych urządzeń sieciowych usługa Azure Firewall używa wspólnego mechanizmu administrowania oraz zestawu reguł zabezpieczeń, aby chronić obciążenia hostowane w sieciach szprych i kontrolować dostęp do sieci lokalnych.<br/><br/> Usługa Azure Firewall ma wbudowaną skalowalność.
@@ -511,7 +511,7 @@ Zalecamy użycie jednego zestawu zapór Azure Firewall (lub wirtualnych urządze
 
 **Dowiedz się więcej:**
 
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) o korzystaniu z wirtualnych urządzeń sieciowych w sieci wirtualnej platformy Azure.
+- [Dowiedz się więcej](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) o korzystaniu z wirtualnych urządzeń sieciowych w sieci wirtualnej platformy Azure.
 
 ## <a name="next-steps"></a>Następne kroki
 

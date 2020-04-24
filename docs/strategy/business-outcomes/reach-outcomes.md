@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.openlocfilehash: 59810d9bd3e45086597cb9811ce4bba160640246
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80526980"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Przykłady wyników uzyskiwania dostępu globalnego
@@ -39,4 +39,4 @@ Na nowych rynkach wprowadzono dodatkowe ograniczenia ładu. Rodo to jeden przyk�
 Dowiedz się więcej na temat [wyników związanych z zaangażowaniem klientów](./engagement-outcomes.md).
 
 > [!div class="nextstepaction"]
-> [Wyniki zaangażowania klienta](./engagement-outcomes.md)
+> [Wyniki związane z zaangażowaniem klientów](./engagement-outcomes.md)

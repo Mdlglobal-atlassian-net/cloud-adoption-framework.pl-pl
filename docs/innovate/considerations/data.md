@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 2fac366e56e279204a791d5d8813500fe57de8d6
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 878127e904adb28b873f642bb7d8ef152d7e63ff
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433306"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997191"
 ---
 # <a name="democratize-data"></a>Demokratyzowanie danych
 
@@ -43,7 +43,7 @@ Podstawowe narzędzia do udostępniania danych bezpośrednio z użytkownikami da
 
 Udostępnianie danych może szybko utworzyć MVP, którego możesz używać w konwersacjach klientów. Jednak aby przekształcić udostępnione dane w użyteczne i funkcjonalne informacje, jest to zwykle wymagane. Po sprawdzeniu hipotezy przy użyciu udostępniania danych kolejnym etapem programowania jest zwykle zarządzanie danymi.
 
-Zarządzanie danymi jest szerokim tematem, który może wymagać jego własnej dedykowanej struktury. Ten stopień szczegółowości jest poza zakresem [struktury wdrożenia chmury](../../index.md). Istnieje jednak kilka aspektów nadzoru nad danymi, które należy wziąć pod uwagę zaraz po sprawdzeniu poprawności hipotezy klienta. Na przykład:
+Zarządzanie danymi jest szerokim tematem, który może wymagać własnej dedykowanej struktury. Ten stopień szczegółowości jest poza zakresem [struktury wdrożenia chmury](../../index.md). Istnieje jednak kilka aspektów nadzoru nad danymi, które należy wziąć pod uwagę zaraz po sprawdzeniu poprawności hipotezy klienta. Przykład:
 
 - **Czy dane są udostępnione poufne?** [Dane powinny zostać sklasyfikowane](../../govern/policy-compliance/data-classification.md) przed udostępnieniem publicznie, aby chronić interesy klientów i firmę.
 - **Czy dane są poufne, czy zostały zabezpieczone?** Ochrona danych poufnych powinna być wymagana w przypadku dowolnych danych z demokratyzacją. Przykładowe obciążenie dotyczące [zabezpieczania rozwiązań danych](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) zawiera kilka odwołań do zabezpieczania danych.
@@ -79,7 +79,7 @@ Te różne formy danych można zintegrować z centralnym magazynem danych w rama
 
 **Wirtualizacja:** Integracja i pozyskiwanie danych może czasami spowolnić innowacje. Gdy rozwiązanie do wirtualizacji danych jest już dostępne, może ono przedstawiać bardziej racjonalne podejście. Pozyskiwanie i integracja pozwala na duplikowanie wymagań dotyczących magazynu i rozwoju, Dodawanie opóźnień danych, zwiększanie obszaru podatności na ataki i wyzwolenie problemów z jakością oraz zwiększenie wysiłków ładu. Wirtualizacja danych to bardziej współczesna alternatywa, która pozostawia oryginalne dane w jednej lokalizacji i tworzy zapytania przekazywane lub buforowane z danymi źródłowymi.
 
-SQL Server 2017 i Azure SQL Data Warehouse obu typów [obsługi,](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide) który jest podejściem do wirtualizacji danych najczęściej używanym na platformie Azure.
+SQL Server 2017 i Azure SQL Data Warehouse obu typów [obsługi,](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide)który jest podejściem do wirtualizacji danych najczęściej używanym na platformie Azure.
 
 ## <a name="next-steps"></a>Następne kroki
 

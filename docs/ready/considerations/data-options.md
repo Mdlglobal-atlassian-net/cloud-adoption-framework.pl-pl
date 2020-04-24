@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.openlocfilehash: c9fa27ac671b17414a114a43f5224dd0e87de9d2
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80432120"
 ---
 <!-- cSpell:ignore HDFS -->
@@ -63,17 +63,17 @@ W poniższej tabeli przedstawiono kilka wymagań w zakresie typowych scenariuszy
 
 ## <a name="regional-availability"></a>Dostępność regionalna
 
-Platforma Azure pozwala na dostarczanie usług w potrzebnej skali, aby dotrzeć do klientów i partnerów,  _gdziekolwiek są_. Kluczową kwestią podczas planowania wdrożenia w chmurze jest określenie, który region świadczenia usługi Azure będzie obsługiwać zasoby obciążenia.
+Platforma Azure umożliwia dostarczanie usług na dużą skalę, w której należy skontaktować się z klientami i partnerami, niezależnie od tego, _gdzie się znajdują_. Kluczową kwestią podczas planowania wdrożenia w chmurze jest określenie, który region świadczenia usługi Azure będzie obsługiwać zasoby obciążenia.
 
-Większość usług bazy danych jest ogólnie dostępna w większości regionów Azure. Istnieje jednak kilka regionów, głównie przeznaczonych dla instytucji rządowych, które obsługują tylko podzbiór tych produktów. Przed podjęciem decyzji o regionach, w których zostaną wdrożone zasoby baz danych, zalecamy zapoznanie się ze [stroną z regionami](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database) w celu sprawdzenia najnowszego stanu dostępności regionalnej.
+Większość usług bazy danych jest ogólnie dostępna w większości regionów Azure. Istnieje jednak kilka regionów, głównie przeznaczonych dla instytucji rządowych, które obsługują tylko podzbiór tych produktów. Przed podjęciem decyzji o regionach, w których będą wdrażane zasoby bazy danych, zalecamy zapoznanie się ze [stroną](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database) regiony w celu sprawdzenia najnowszego stanu dostępności regionalnej.
 
-Aby dowiedzieć się więcej o globalnej infrastrukturze platformy Azure, zobacz temat [Regiony systemu Azure](https://azure.microsoft.com/global-infrastructure/regions). Aby uzyskać szczegółowe informacje o tym, co jest dostępne w poszczególnych regionach platformy Azure, można także wyświetlić  [dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all).
+Aby dowiedzieć się więcej o globalnej infrastrukturze platformy Azure, zobacz stronę [Regiony systemu Azure](https://azure.microsoft.com/global-infrastructure/regions). Aby uzyskać szczegółowe informacje o ogólnych usługach dostępnych w poszczególnych regionach platformy Azure, można także wyświetlić  [dostępność produktów według regionów](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all).
 
-## <a name="data-residency-and-compliance-requirements"></a>Wymagania dotyczące miejsca przechowywania danych oraz ich zgodności
+## <a name="data-residency-and-compliance-requirements"></a>Wymagania dotyczące miejsca przechowywania danych oraz zgodności
 
-Twoich obciążeń często dotyczą wymagania prawne i umowne związane z magazynem danych. Te wymagania mogą się różnić w zależności od lokalizacji organizacji, jurysdykcji, której podlegają zasoby fizyczne obsługujące magazyny danych, oraz od sektora działalności. Obowiązki związane z danymi, które należy wziąć pod uwagę, to między innymi klasyfikacja danych, lokalizacja danych oraz odpowiednie obowiązki związane z ochroną danych w ramach modelu dzielenia się odpowiedzialnością. Aby łatwiej zrozumieć te wymagania, zobacz oficjalny dokument  [Osiąganie rezydencji i bezpieczeństwa zgodnych danych na platformie Azure](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure).
+Twoich obciążeń często dotyczą wymagania prawne i umowne związane z magazynem danych. Te wymagania mogą się różnić w zależności od lokalizacji organizacji, jurysdykcji, której podlegają zasoby fizyczne obsługujące magazyny danych, oraz od sektora działalności. Ze względu na obowiązki związane z danymi, należy wziąć pod uwagę następujące elementy: klasyfikacja danych, lokalizacja danych oraz odpowiednie obowiązki w zakresie ochrony danych w ramach modelu dzielenia się odpowiedzialnością. Aby łatwiej zrozumieć te wymagania, zobacz oficjalny dokument  [Rezydencja i bezpieczeństwo zgodnych danych na platformie Azure](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure).
 
-Niektóre działania związane ze zgodnością mogą obejmować kontrolowanie tego, gdzie będą fizycznie umieszczone zasoby bazy danych. Regiony świadczenia usługi Azure są zorganizowane w grupy nazywane regionami geograficznymi.  [Lokalizacja geograficzna platformy Azure](https://azure.microsoft.com/global-infrastructure/geographies)  zapewnia, że wymagania z zakresu odporności, zgodności, niezależności i rezydencji danych są honorowane w granicach geograficznych i politycznych. Jeśli obciążenia podlegają suwerenności danych lub innym wymaganiom dotyczącym zgodności, należy wdrożyć zasoby magazynu w regionach, które znajdują się w zgodnej lokalizacji geograficznej platformy Azure.
+Niektóre działania związane ze zgodnością mogą obejmować kontrolowanie tego, gdzie będą fizycznie umieszczone zasoby bazy danych. Regiony świadczenia usługi Azure są zorganizowane w grupy nazywane lokalizacjami geograficznymi.   [Lokalizacja geograficzna platformy Azure](https://azure.microsoft.com/global-infrastructure/geographies)zapewnia, że wymagania dotyczące miejsca zamieszkania, suwerenności, zgodności i odporności są honorowane w granicach geograficznych i politycznych. Jeśli obciążenia podlegają suwerenności danych lub innym wymaganiom dotyczącym zgodności, należy wdrożyć zasoby magazynu w regionach, które znajdują się w zgodnej lokalizacji geograficznej platformy Azure.
 
 ## <a name="establish-controls-for-database-services"></a>Ustanawianie kontrolek dla usług baz danych
 

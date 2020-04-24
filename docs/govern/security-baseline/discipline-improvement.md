@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 489f15b3ceda87c57f244c4ed597c4b5f05d11e9
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 234136b777107c93e7ea26b9a183c1ec34b75e24
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426035"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120101"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Poprawa dyscypliny linii bazowej zabezpieczeń
 
@@ -46,13 +46,13 @@ W tej fazie działania ładu mostkuje podział między wynikami biznesowymi i st
 - Zdefiniuj schemat klasyfikacji danych.
 - Przeprowadzaj proces planowania podpisywania elektronicznego, aby przeprowadzić spis bieżących zasobów IT, które ułatwiają procesy biznesowe i obsługują operacje.
 - Przeprowadź [Przegląd zasad](../../govern/policy-compliance/cloud-policy-review.md) , aby rozpocząć proces modernizacji istniejących firmowych zasad zabezpieczeń IT i zdefiniować zasady MVP dotyczące znanych zagrożeń.
-- Zapoznaj się z wytycznymi dotyczącymi zabezpieczeń platformy w chmurze. W przypadku platformy Azure można je znaleźć na [platformie zaufania usługi firmy Microsoft](https://www.microsoft.com/trustcenter/stp/default.aspx).
-- Ustal, czy zasady linii bazowej zabezpieczeń obejmują [cykl rozwoju zabezpieczeń](https://www.microsoft.com/securityengineering/sdl).
+- Zapoznaj się z wytycznymi dotyczącymi zabezpieczeń platformy w chmurze. W przypadku platformy Azure można je znaleźć na [platformie zaufania usługi firmy Microsoft](https://servicetrust.microsoft.com).
+- Ustal, czy zasady linii bazowej zabezpieczeń obejmują [cykl rozwoju zabezpieczeń](https://www.microsoft.com/en-us/securityengineering/sdl).
 - Oceń dane dotyczące sieci, danych i zasobów związanych z zasobami, które są zależne od od następnej do trzech wydań, i miernika tolerancji organizacji dla tych zagrożeń.
 - Przejrzyj podstawowe trendy firmy Microsoft [w raporcie cyberbezpieczeństwa](https://www.microsoft.com/security/operations/security-intelligence-report) , aby zapoznać się z ogólnymi poziomami zabezpieczeń.
 - Rozważ opracowanie roli [DevOps zabezpieczeń](https://www.microsoft.com/en-us/securityengineering/devsecops) w organizacji.
 
-<!-- "en-us" location is required for the URL above. -->
+<!-- "en-us" location is required for the URLs above. -->
 
 ## <a name="build-and-predeployment"></a>Kompilacja i prewdrażanie
 
@@ -118,6 +118,6 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 Teraz, gdy rozumiesz koncepcję zarządzania zabezpieczeniami w chmurze, przejdź do, aby dowiedzieć się więcej o [zabezpieczeniach i najlepszych rozwiązaniach, które firma Microsoft udostępnia](./azure-security-guidance.md) dla systemu Azure.
 
 > [!div class="nextstepaction"]
-> [Poznaj wskazówki dotyczące zabezpieczeń systemu azure](./azure-security-guidance.md)
-> [wprowadzenie do zabezpieczeń platformy Azure](https://docs.microsoft.com/azure/security/azure-security)
-> [Informacje o rejestrowaniu, raportowaniu i monitorowaniu](../../decision-guides/logging-and-reporting/index.md)
+> [Poznaj wskazówki dotyczące zabezpieczeń systemu Azure](./azure-security-guidance.md)
+> [wprowadzenie do zabezpieczeń](https://docs.microsoft.com/azure/security/fundamentals/overview)
+> platformy Azure informacje[o rejestrowaniu, raportowaniu i monitorowaniu](../../decision-guides/logging-and-reporting/index.md)
