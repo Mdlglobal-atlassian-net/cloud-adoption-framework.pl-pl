@@ -10,18 +10,18 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 03defd0e428bd0caf4e83d4999ba5b42cf63b43a
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: e52840d52e85cfa5876fbeaf227963953560da0d
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433869"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997925"
 ---
 # <a name="role-based-access-control"></a>Kontrola dostępu oparta na rolach
 
 Prawa dostępu opartego na grupach i uprawnieniach są dobrym rozwiązaniem. Zarządzanie grupami zamiast poszczególnymi użytkownikami upraszcza obsługę zasad dostępu, zapewnia spójne zarządzanie dostępem między różnymi zespołami i zmniejsza liczbę błędów konfiguracji. Przypisywanie użytkowników do odpowiednich grup i usuwanie ich z nich pomaga zachować aktualność uprawnień określonego użytkownika. [Kontrola dostępu oparta na rolach (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) na platformie Azure oferuje szczegółowe zarządzanie dostępem dla zasobów zorganizowanych wokół ról użytkownika.
 
-Omówienie zalecanych rozwiązań kontroli dostępu opartej na rolach w ramach strategii tożsamości i zabezpieczeń zawiera sekcja [Najlepsze rozwiązania dotyczące zabezpieczeń kontroli dostępu i zarządzania tożsamościami na platformie Azure](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control).
+Omówienie zalecanych rozwiązań kontroli dostępu opartej na rolach w ramach strategii tożsamości i zabezpieczeń zawiera sekcja [Najlepsze rozwiązania dotyczące zabezpieczeń kontroli dostępu i zarządzania tożsamościami na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices#use-role-based-access-control).
 
 ## <a name="overview-of-role-based-access-control"></a>Omówienie kontroli dostępu opartej na rolach
 
@@ -38,7 +38,7 @@ Podczas planowania strategii kontroli dostępu opartej na rolach należy zastoso
 ![Sugerowany wzorzec stosowania kontroli dostępu opartej na rolach](../../_images/azure-best-practices/rbac-least-privilege.png)
 
 > [!NOTE]
-> Im bardziej szczegółowo definiowane są uprawnienia, tym bardziej prawdopodobne, że kontrola dostępu stanie się złożona i trudna do zarządzania. Jest to szczególnie istotne wraz ze wzrostem rozmiaru majątku w chmurze. Unikaj uprawnień specyficznych dla zasobów. Zamiast tego [używaj grup zarządzania](https://docs.microsoft.com/azure/governance/management-groups) do kontroli dostępu w całym przedsiębiorstwie i [grup zasobów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) do kontroli dostępu w ramach subskrypcji. Unikaj również uprawnień specyficznych dla użytkowników. Zamiast tego przypisz dostęp do [grup w usłudze Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
+> Im bardziej szczegółowo definiowane są uprawnienia, tym bardziej prawdopodobne, że kontrola dostępu stanie się złożona i trudna do zarządzania. Jest to szczególnie istotne wraz ze wzrostem rozmiaru majątku w chmurze. Unikaj uprawnień specyficznych dla zasobów. Zamiast tego [używaj grup zarządzania](https://docs.microsoft.com/azure/governance/management-groups) do kontroli dostępu w całym przedsiębiorstwie i [grup zasobów](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) do kontroli dostępu w ramach subskrypcji. Unikaj również uprawnień specyficznych dla użytkowników. Zamiast tego przypisz dostęp do [grup w usłudze Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
 
 ## <a name="use-built-in-rbac-roles"></a>Korzystanie z wbudowanych ról RBAC
 

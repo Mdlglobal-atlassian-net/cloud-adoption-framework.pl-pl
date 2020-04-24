@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 430ed60231f83ad1ad632782ced1200caa158137
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 86acc05f9eaf38193db6c0f1ad1c708ed810c7be
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431482"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396030"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -46,7 +46,7 @@ Projekt pierwszego wdrożenia zespołu prawdopodobnie spowoduje powstanie w śro
 
 Aby można było obsłużyć powyższe kryteria, ta lista zawiera przykład pierwszego projektu dla każdej kategorii motywacji:
 
-- **Krytyczne zdarzenia biznesowe:** Gdy krytyczne zdarzenie biznesowe jest główną motywacją, implementacja narzędzia, takiego jak [Azure Site Recovery](../migrate/azure-migration-guide/migrate.md?tabs=Tools#azure-site-recovery) , może być dobrym pierwszym projektem. Podczas migracji można użyć tego narzędzia do szybkiej migracji zasobów centrum danych. Jednak podczas pierwszego projektu można używać go w sposób czysty jako narzędzie do odzyskiwania po awarii, co zmniejsza zależności od zasobów odzyskiwania po awarii w centrum danych.
+- **Krytyczne zdarzenia biznesowe:** Gdy krytyczne zdarzenie biznesowe jest główną motywacją, implementacja narzędzia, takiego jak [Azure Site Recovery](../migrate/azure-migration-guide/migrate.md#azure-site-recovery) , może być dobrym pierwszym projektem. Podczas migracji można użyć tego narzędzia do szybkiej migracji zasobów centrum danych. Jednak podczas pierwszego projektu można używać go w sposób czysty jako narzędzie do odzyskiwania po awarii, co zmniejsza zależności od zasobów odzyskiwania po awarii w centrum danych.
 
 - **Motywacje migracji:** Gdy migracja jest główną motywacją, warto zacząć od migracji niekrytycznego obciążenia. [Przewodnik po konfiguracji platformy Azure](../ready/azure-setup-guide/index.md) i [Przewodnik migracji platformy Azure](../migrate/azure-migration-guide/index.md) mogą zapewnić wskazówki dotyczące migracji pierwszego obciążenia.
 

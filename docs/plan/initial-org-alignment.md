@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 6b321c108fda144989fd2101c8fdfcd41eb4aaec
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 014d5da585b48754f9cee59431aea92b5047f551
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80428180"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396205"
 ---
 # <a name="initial-organization-alignment"></a>Początkowe dopasowywanie organizacji
 
@@ -30,7 +30,7 @@ W celu utworzenia równowagi między szybkością i kontrolą zaleca się, aby p
 
 Jest to dość intuicyjne, że zadania wdrażania chmury wymagają od osób wykonywania tych zadań. W związku z tym kilka osób jest zaskoczeniem, że zespół adopcji rozwiązań w chmurze jest wymagany. Jednak te, które są nowością w chmurze, mogą nie być w pełni ważne dla zespołu nadzoru chmurowego. To wyzwanie często odbywa się na wczesnych cyklach wdrażania. Zespół nadzorujący w chmurze zapewnia niezbędne kontrole i salda, aby zapewnić, że wdrożenie chmury nie ujawnia żadnych nowych zagrożeń. Gdy należy podjąć ryzyko, ten zespół zapewnia, że odpowiednie procesy i kontrole są implementowane w celu ograniczenia lub zarządzania tymi zagrożeniami.
 
-Aby dowiedzieć się więcej na temat wdrażania chmury, zarządzania chmurą i innych funkcji, zapoznaj się z sekcją w sekcji [Omówienie wymaganych możliwości chmury](../organize/index.md?#understand-required-cloud-capabilities).
+Aby uzyskać więcej informacji na temat wdrażania chmury, zarządzania chmurą i innych funkcji, zobacz sekcję w skrócie dotyczącej [wymaganych możliwości chmury](../organize/index.md#understand-required-cloud-capabilities).
 
 ## <a name="map-people-to-capabilities"></a>Mapowanie osób do możliwości
 

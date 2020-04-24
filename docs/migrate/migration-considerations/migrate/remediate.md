@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 8cc66b6995cf9221c81254974196c7839313045a
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80429364"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Korygowanie zasobów przed migracją
@@ -53,8 +53,8 @@ Korygowanie mniejszych obciążeń może być proste, co jest jednym z powodów,
 Jeśli odpowiedzi na te pytania nie są satysfakcjonujące, warto rozważyć użycie kilku alternatywnych metod, które przekraczają zadania podstawowej strategii ponownego hostowania usługi IaaS:
 
 - **Konteneryzacja.** Niektóre zasoby mogą być hostowane w środowisku kontenerów bez korygowania. Może to spowodować niekorzystną wydajność i nie rozwiązuje problemów dotyczących zabezpieczeń ani zgodności.
-- **Automatyzacja.** W zależności od wymagań związanych z obciążeniem i korygowaniem bardziej zyskowne może być wykonanie skryptu wdrożenia do nowych zasobów przy użyciu podejścia obejmującego metodykę DevOps.
-- **Przebudowa.** Jeśli koszty korygowania są bardzo wysokie, a wartość biznesowa jest równie wysoka, obciążenie może być dobrym kandydatem do przebudowy lub ponownego utworzenia architektury.
+- **Automatyzacji.** W zależności od wymagań związanych z obciążeniem i korygowaniem bardziej zyskowne może być wykonanie skryptu wdrożenia do nowych zasobów przy użyciu podejścia obejmującego metodykę DevOps.
+- **Odtworzyć.** Jeśli koszty korygowania są bardzo wysokie, a wartość biznesowa jest równie wysoka, obciążenie może być dobrym kandydatem do przebudowy lub ponownego utworzenia architektury.
 
 ## <a name="next-steps"></a>Następne kroki
 

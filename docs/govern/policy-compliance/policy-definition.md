@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 6c3ed91d77320f8c72b0a184dc2aa7054c0089d5
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c1e34c9f13a170abd1f00b603537c73ce51688da
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434980"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396086"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Zdefiniuj zasady firmowe na potrzeby ładu w chmurze
 
@@ -55,7 +55,7 @@ Poszczególne instrukcje dotyczące zasad chmury to wskazówki dotyczące rozwi�
 - **Instrukcja zasad:** Zwięzłe wyjaśnienie wymagań zasad i celów.
 - **Wskazówki dotyczące projektowania lub technicznego:** Zalecenia z możliwością wykonania akcji, specyfikacje lub inne wskazówki dotyczące obsługi i wymuszania tych zasad, których zespoły IT i deweloperzy mogą używać podczas projektowania i kompilowania wdrożeń w chmurze.
 
-Jeśli potrzebujesz pomocy przy definiowaniu zasad, zapoznaj się z [dyscyplinami ładu](../governance-disciplines.md) wprowadzonymi w sekcji ładu przegląd. Artykuły dla każdej z tych dyscyplin zawierają przykłady typowych zagrożeń dla firmy, które napotykają podczas przechodzenia do chmury i przykładowych zasad służących do korygowania ryzyka (na przykład zobacz [definicje zasad przykładowych](../cost-management/policy-statements.md)dyscypliny Cost Managementej
+Jeśli potrzebujesz pomocy przy definiowaniu zasad, zapoznaj się z [dyscyplinami ładu](../governance-disciplines.md) wprowadzonymi w sekcji ładu przegląd. Artykuły dla każdej z tych dyscyplin obejmują przykłady typowych zagrożeń dla firmy, które występują podczas przechodzenia do chmury i przykładowych zasad służących do korygowania tych zagrożeń. Na przykład zobacz [przykładowe definicje zasad](../cost-management/policy-statements.md)w Cost Management dyscypliny.
 
 ## <a name="incremental-governance-and-integrating-with-existing-policy"></a>Stopniowe zarządzanie i integrowanie z istniejącymi zasadami
 

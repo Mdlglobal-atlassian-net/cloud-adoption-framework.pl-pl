@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: fe86c196e03e8908d3c9bb409cc3896286729015
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80429074"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Przygotowanie na złożoność kulturową: wyrównywanie ról i obowiązków
@@ -26,11 +26,11 @@ W każdej migracji istnieje kilka najważniejszych funkcji, które powinny być 
 
 | Proces | Działanie | Opis |
 |---------|---------|---------|
-| Oceń | Cele biznesowe | Zdefiniuj oczekiwane wyniki biznesowe procesu migracji. |
-| Oceń | Priorytety | Upewnij się, że uwzględniono zmieniające się priorytety firmy i warunki rynkowe. |
-| Oceń | Uzasadnienie | Zweryfikuj założenia będące podstawą zmieniających się uzasadnień biznesowych. |
-| Oceń | Ryzyko | Pomóż zespołowi wdrożeniowemu ds. chmury zrozumieć wpływ rzeczywistego ryzyka biznesowego. |
-| Oceń | Zatwierdź | Sprawdź i zatwierdź wpływ proponowanych zmian architektury na firmę. |
+| Ocena | Cele biznesowe | Zdefiniuj oczekiwane wyniki biznesowe procesu migracji. |
+| Ocena | Priorytety | Upewnij się, że uwzględniono zmieniające się priorytety firmy i warunki rynkowe. |
+| Ocena | Uzasadnienie | Zweryfikuj założenia będące podstawą zmieniających się uzasadnień biznesowych. |
+| Ocena | Ryzyko | Pomóż zespołowi wdrożeniowemu ds. chmury zrozumieć wpływ rzeczywistego ryzyka biznesowego. |
+| Ocena | Zatwierdzenie | Sprawdź i zatwierdź wpływ proponowanych zmian architektury na firmę. |
 | Optymalizacja | Plan zmian | Zdefiniuj plan stosowania zmian w firmie, w tym okresów niskiej aktywności i blokowania zmian. |
 | Optymalizacja | Testowanie | Zaangażuj zaawansowanych użytkowników, którzy mogą sprawdzić poprawność działania i funkcjonalność. |
 | Zabezpieczanie i zarządzanie | Wpływ przerw | Pomóż zespołowi wdrożeniowemu ds. chmury określić wpływ przerw na działanie procesów biznesowych. |
@@ -49,11 +49,11 @@ Każdy proces w ramach dyskusji dotyczącej zasad migracji struktury wdrażania 
 |---------|---------|---------|---------|
 | Wymagania wstępne | Majątek cyfrowy | Na podstawie wyników biznesowych dopasuj istniejący spis do podstawowych założeń. | zespół strategiczny ds. chmury |
 | Wymagania wstępne | Lista prac związanych z migracją | Określ priorytet sekwencji obciążeń, które mają zostać zmigrowane. | zespół strategiczny ds. chmury |
-| Oceń | Architektura | Zweryfikuj wstępne założenia w celu zdefiniowania architektury docelowej na podstawie metryk użycia. | zespół wdrożeniowy ds. chmury |
-| Oceń | Zatwierdzenie | Zatwierdź proponowaną architekturę. | zespół strategiczny ds. chmury |
-| Migracja | Dostęp w celu replikacji | Uzyskaj dostęp do istniejących hostów i zasobów lokalnych w celu ustanowienia procesów replikacji. | zespół wdrożeniowy ds. chmury |
-| Optymalizacja | Gotowe | Przed podwyższeniem poziomu sprawdź, czy system spełnia wymagania dotyczące wydajności i kosztów. | zespół wdrożeniowy ds. chmury |
-| Optymalizacja | Podwyższenie poziomu | Uprawnienia do podwyższenia poziomu obciążenia do środowiska produkcyjnego i przekierowania ruchu produkcyjnego. | zespół wdrożeniowy ds. chmury |
+| Ocena | Architektura | Zweryfikuj wstępne założenia w celu zdefiniowania architektury docelowej na podstawie metryk użycia. | zespół wdrożeniowy ds. chmury |
+| Ocena | Zatwierdzenie | Zatwierdź proponowaną architekturę. | zespół strategiczny ds. chmury |
+| Migrate (Migracja) | Dostęp w celu replikacji | Uzyskaj dostęp do istniejących hostów i zasobów lokalnych w celu ustanowienia procesów replikacji. | zespół wdrożeniowy ds. chmury |
+| Optymalizacja | Gotowy | Przed podwyższeniem poziomu sprawdź, czy system spełnia wymagania dotyczące wydajności i kosztów. | zespół wdrożeniowy ds. chmury |
+| Optymalizacja | Podwyższanie poziomu | Uprawnienia do podwyższenia poziomu obciążenia do środowiska produkcyjnego i przekierowania ruchu produkcyjnego. | zespół wdrożeniowy ds. chmury |
 | Zabezpieczanie i zarządzanie | Przeniesienie operacji | Udokumentuj systemy produkcyjne przed operacjami produkcyjnymi. | zespół wdrożeniowy ds. chmury |
 
 > [!CAUTION]

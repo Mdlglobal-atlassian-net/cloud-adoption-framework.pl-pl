@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 8d9207e5494ef6e645780c35477636c5ebcb9df2
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "80429050"
 ---
 <!-- cSpell:ignore migrateable -->
@@ -24,8 +24,8 @@ Podczas migracji występuje kilka czynników wpływających na decyzje i działa
 
 Cel każdego procesu wdrożenia może mieć znaczny wpływ na sugerowane podejście do jego wykonania.
 
-- **Migracja** Pilne czynniki biznesowe, szybkość wdrażania lub oszczędności kosztów to przykłady wyników operacyjnych. Te wyniki mają kluczowe znaczenie dla wysiłków, które przekształcają przejściowe zmiany w infrastrukturze IT lub modelach operacyjnych w wartość biznesową. Sekcja Migracja struktury wdrażania chmury skupia się w dużym stopniu na wynikach biznesowych związanych z migracją.
-- **Innowacje w zakresie aplikacji.** Poprawa jakości obsługi klienta oraz rosnący udział w rynku to przykłady wyników przyrostowych. Te wyniki są skutkiem kolekcji zmian przyrostowych ukierunkowanych na potrzeby i wymagania bieżących klientów.
+- **Migracji.** Pilne czynniki biznesowe, szybkość wdrażania lub oszczędności kosztów to przykłady wyników operacyjnych. Te wyniki mają kluczowe znaczenie dla wysiłków, które przekształcają przejściowe zmiany w infrastrukturze IT lub modelach operacyjnych w wartość biznesową. Sekcja Migracja struktury wdrażania chmury skupia się w dużym stopniu na wynikach biznesowych związanych z migracją.
+- **Innowacje aplikacji.** Poprawa jakości obsługi klienta oraz rosnący udział w rynku to przykłady wyników przyrostowych. Te wyniki są skutkiem kolekcji zmian przyrostowych ukierunkowanych na potrzeby i wymagania bieżących klientów.
 - **Innowacje bazujące na danych.** Nowe produkty i usługi, szczególnie te, które pochodzą z mocy danych, są przykładami nieprzerwanych rezultatów. Te wyniki są skutkiem eksperymentów i prognoz z wykorzystaniem danych w celu zakłócenia status quo na rynku.
 
 Każda firma chce uzyskiwać wiele takich wyników. Bez działań nie ma klientów i odwrotnie. Wdrażanie chmury nie różni się pod tym względem. Firmy często pracują nad osiągnięciem każdego z tych wyników, ale próbują skupić się na wszystkich jednocześnie, co powoduje zbytnie rozproszenie wysiłków i spowalnia postęp prac, które mogą być najbardziej korzystne dla firmy.
@@ -42,7 +42,7 @@ Jeśli Twoje podstawowe sterowniki są udostępniane na udziale w rynku i w śro
 
 ### <a name="act-on-data-innovations"></a>Działaj na innowacje dotyczące danych
 
-Jeśli dane, eksperymentowanie, badania i programowanie (R & D) lub nowe produkty są priorytetem w ciągu następnych sześciu miesięcy lub w ten sposób, ta sekcja nie może być najlepszą częścią struktury wdrażania w chmurze, aby przekierować wysiłki zespołu. W przypadku wszelkich wysiłków związanych z innowacjami dotyczącymi danych warto skorzystać ze wskazówek dotyczących migracji istniejących danych źródłowych. Jednak wysiłki powinny być skupione w szerszym zakresie na ruchu przychodzącym i integracji dodatkowych źródeł danych. Rozszerzenie tych wskazówek o prognozy i nowe środowiska jest znacznie ważniejsze niż migracja zasobów IaaS.
+Jeśli dane, eksperymentowanie, badania i programowanie (R&D) lub nowe produkty są priorytetem w ciągu następnych sześciu miesięcy lub w ten sposób, ta sekcja nie może być najlepszą częścią struktury wdrażania w chmurze, aby przekierować wysiłki zespołu. W przypadku wszelkich wysiłków związanych z innowacjami dotyczącymi danych warto skorzystać ze wskazówek dotyczących migracji istniejących danych źródłowych. Jednak wysiłki powinny być skupione w szerszym zakresie na ruchu przychodzącym i integracji dodatkowych źródeł danych. Rozszerzenie tych wskazówek o prognozy i nowe środowiska jest znacznie ważniejsze niż migracja zasobów IaaS.
 
 ## <a name="effort"></a>Nakład pracy
 
@@ -54,7 +54,7 @@ Przed podjęciem jakichkolwiek decyzji, które mogą mieć długoterminowy wpły
 
 W przypadku każdej migracji znaczącej skali (więcej niż 250 maszyn wirtualnych) zasoby są migrowane przy użyciu różnych opcji przejścia, które zostały omówione w pięciu rozwiązaniach: ponowne *hostowanie*, *Refaktoryzacja* *,* *rekonstrukcja*, ponowna kompilacja i *zastąpienie*.
 
-Niektóre obciążenia są modernizowane w ramach procesu *przebudowy* lub *zmiany architektury*, co umożliwia utworzenie nowocześniejszych aplikacji z nowymi funkcjami i możliwościami technicznymi. Inne zasoby przechodzą przez proces *refaktoryzacji* , na przykład przechodzenie do kontenerów lub inne bardziej nowoczesne metody hostingu i działania, które nie muszą mieć wpływu na bazę kodu rozwiązań. Często maszyny wirtualne i inne zasoby, które są bardziej dobrze ustanowione, przechodzą przez proces ponownego *hostowania* , przenosząc te zasoby z centrum danych do chmury. Niektóre obciążenia mogą zostać zmigrowane do chmury, ale zamiast tego należy je *zastąpić* przy użyciu usług w chmurze opartych na usługach (SaaS), które spełniają te same wymagania biznesowe&mdash;na przykład przy użyciu pakietu Office 365 jako alternatywy dla migrowania wystąpień programu Exchange Server.
+Niektóre obciążenia są modernizowane w ramach procesu *przebudowy* lub *zmiany architektury*, co umożliwia utworzenie nowocześniejszych aplikacji z nowymi funkcjami i możliwościami technicznymi. Inne zasoby przechodzą przez proces *refaktoryzacji* , na przykład przechodzenie do kontenerów lub inne bardziej nowoczesne metody hostingu i działania, które nie muszą mieć wpływu na bazę kodu rozwiązań. Często maszyny wirtualne i inne zasoby, które są bardziej dobrze ustanowione, przechodzą przez proces ponownego *hostowania* , przenosząc te zasoby z centrum danych do chmury. Niektóre obciążenia można migrować do chmury, ale zamiast tego należy je *zastąpić* przy użyciu usług w chmurze opartych na usługach (SaaS), które spełniają te same potrzeby&mdash;biznesowe, na przykład korzystając z pakietu Office 365 jako alternatywy do migrowania wystąpień programu Exchange Server.
 
 W większości scenariuszy pewne zdarzenie biznesowe wymusza tymczasową migrację zasobów w ramach procesu *ponownego hostowania*, po którym następuje bardziej istotne dodatkowe przejście z zastosowaniem jednej z innych strategii migracji po przeniesieniu do chmury. Ten proces jest często nazywany *przeniesieniem do chmury*.
 

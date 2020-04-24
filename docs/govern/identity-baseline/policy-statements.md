@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8594d37e41475ca26f96b89fe50591fbd0ecfc04
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: c3543299d323c8be6bf7ee88d6e9205c307e24f9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434195"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997441"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Przykładowe instrukcje zasad linii bazowej tożsamości
 
@@ -42,7 +42,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 - Model dostępu o najniższych uprawnieniach zostanie zastosowany do wszystkich zasobów związanych z aplikacjami o kluczowym znaczeniu lub chronionych danych.
 - Podwyższone uprawnienia powinny być wyjątkiem, a wszystkie takie wyjątki muszą być rejestrowane przez zespół nadzorujący chmurę. Wyjątki będą regularnie poddawane inspekcji.
 
-**Potencjalne opcje projektu:** Zapoznaj się z [najlepszymi rozwiązaniami w zakresie zarządzania tożsamościami platformy Azure](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) , aby wdrożyć strategię kontroli dostępu opartej na ROLACH (RBAC), która ogranicza dostęp w zależności od [potrzeb znajomości](https://wikipedia.org/wiki/Need_to_know) zasad [zabezpieczeń i najniższych uprawnień](https://wikipedia.org/wiki/Principle_of_least_privilege) .
+**Potencjalne opcje projektu:** Zapoznaj się z [najlepszymi rozwiązaniami w zakresie zarządzania tożsamościami platformy Azure](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) , aby wdrożyć strategię kontroli dostępu opartej na ROLACH (RBAC), która ogranicza dostęp w zależności od [potrzeb znajomości](https://wikipedia.org/wiki/Need_to_know) zasad [zabezpieczeń i najniższych uprawnień](https://wikipedia.org/wiki/Principle_of_least_privilege) .
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>Brak współużytkowanych kont zarządzania między środowiskiem lokalnym i chmurą
 

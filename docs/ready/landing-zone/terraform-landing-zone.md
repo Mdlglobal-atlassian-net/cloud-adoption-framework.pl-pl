@@ -7,26 +7,26 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 93f972130a696e7ebe5aeec8a01b7e7dcfe2d60b
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: fd5f3ca69312156c705857bb91968ea40cd3a867
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80431946"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997807"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>Tworzenie stref wyładunkowych przy użyciu Terraform
 
-Platforma Azure zapewnia natywne usługi do wdrażania stref wyładunkowej. Inne narzędzia innych firm mogą również pomóc w tym wysiłku. Jednym z tych narzędzi, których klienci i partnerzy często używają do wdrażania stref wyładunkowej, jest HashiCorp Terraform. W tej sekcji pokazano, jak za pomocą prototypowej strefy ładunkowej wdrożyć podstawowe funkcje rejestrowania, ewidencjonowania aktywności i zabezpieczeń dla subskrypcji platformy Azure.
+Platforma Azure zapewnia natywne usługi do wdrażania stref wyładunkowej. Inne narzędzia innych firm mogą również pomóc w tym wysiłku. Jednym z tych narzędzi, których klienci i partnerzy często używają do wdrażania stref wyładunkowej, jest HashiCorp Terraform. W tej sekcji pokazano, jak za pomocą przykładowej strefy wyładunkowej wdrożyć funkcje ładu podstawowe, Księgowość i zabezpieczenia dla subskrypcji platformy Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Przeznaczenie strefy docelowej
 
-Podstawowa strefa wymuszania w chmurze wdrażania dla usługi Terraform ma ograniczony zestaw obowiązków i funkcji, które mogą wymusić rejestrowanie, ewidencjonowanie aktywności i zabezpieczenia. Ta strefa docelowa korzysta ze standardowych składników znanych jako moduły Terraform, aby wymusić spójność zasobów wdrożonych w środowisku.
+Platforma wdrażania w chmurze wykryła, że strefa docelowa dla usługi Terraform udostępnia funkcje do wymuszania rejestrowania, ewidencjonowania aktywności i zabezpieczeń. Ta strefa docelowa korzysta ze standardowych składników znanych jako moduły Terraform, aby wymusić spójność zasobów wdrożonych w środowisku.
 
 ## <a name="use-standard-modules"></a>Używanie modułów standardowych
 
-Wielokrotne użycie składników jest podstawową zasadą infrastruktury jako kod. Moduły są w definiowaniu standardów i spójności między wdrożeniem zasobów w środowiskach i między środowiskami. Moduły używane do wdrożenia tej pierwszej strefy docelowej są dostępne w oficjalnym [rejestrze Terraform](https://registry.terraform.io/search?q=aztfmod).
+Wielokrotne użycie składników jest podstawową zasadą infrastruktury jako kod. Moduły są w definiowaniu standardów i spójności między wdrożeniem zasobów w środowiskach i między środowiskami. Moduły używane do wdrożenia tej pierwszej strefy docelowej są dostępne w oficjalnym [rejestrze Terraform](https://registry.terraform.io/modules/aztfmod).
 
 ## <a name="architecture-diagram"></a>Diagram architektury
 
@@ -41,7 +41,7 @@ Wdrożone składniki i ich przeznaczenie obejmują następujące elementy:
 | Składnik             | Odpowiedzialność za                                                                                                                                                                                                                                            |
 |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Grupy zasobów       | Podstawowe grupy zasobów, które są zbędne dla podstawy                                                                                                                                                                                                            |
-| Rejestrowanie aktywności      | Inspekcja wszystkich działań subskrypcji i archiwizowania: </br> — Konto magazynu </br> — Event Hubs platformy Azure                                                                                                                                                      |
+| Dziennik aktywności      | Inspekcja wszystkich działań subskrypcji i archiwizowania: </br> — Konto magazynu </br> — Event Hubs platformy Azure                                                                                                                                                      |
 | Rejestrowanie diagnostyczne   | Wszystkie dzienniki operacji są przechowywane przez określoną liczbę dni: </br> — Konto magazynu </br> -Event Hubs                                                                                                                                                         |
 | Log Analytics         | Przechowuje wszystkie dzienniki operacji </br> Wdrażaj popularne rozwiązania w zakresie przeglądu najlepszych rozwiązań dotyczących aplikacji: </br> - NetworkMonitoring </br> - ADAssessment </br> -ADReplication </br> - AgentHealthAssessment </br> - DnsAnalytics </br> - KeyVaultAnalytics |
 | Azure Security Center | Metryki i alerty dotyczące higieny zabezpieczeń wysyłane do poczty e-mail i numeru telefonu                                                                                                                                                                                        |
@@ -54,7 +54,7 @@ Przed użyciem strefy wyładunkowej programu Cloud proframework Foundation zapoz
 
 Podczas definiowania początkowej strefy wyładunkowej zostały uwzględnione następujące założenia lub ograniczenia. Jeśli te założenia są zgodne z ograniczeniami, można użyć strategii w celu utworzenia pierwszej strefy docelowej. Strategię można również rozszerzyć, aby utworzyć strategię strefy docelowej, która jest zgodna z unikatowymi ograniczeniami.
 
-- **Limity subskrypcji:** W przypadku tego wysiłku nie można przekroczyć [limitów subskrypcji](https://docs.microsoft.com/azure/azure-subscription-service-limits). Dwa typowe wskaźniki to przekroczenie 25 000 maszyn wirtualnych lub 10 000 procesorów wirtualnych.
+- **Limity subskrypcji:** W przypadku tego wysiłku nie można przekroczyć [limitów subskrypcji](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits). Dwa typowe wskaźniki to przekroczenie 25 000 maszyn wirtualnych lub 10 000 procesorów wirtualnych.
 - **Zgodność:** Dla tej strefy wyładunkowej nie są wymagane żadne wymagania dotyczące zgodności innych firm.
 - **Złożoność architektury:** Złożoność architektury nie wymaga dodatkowych subskrypcji produkcyjnych.
 - **Usługi udostępnione:** Na platformie Azure nie ma istniejących usług udostępnionych, które wymagają, aby ta subskrypcja była traktowana jak szprycha w architekturze gwiazdy.
@@ -69,16 +69,16 @@ Następujące decyzje są reprezentowane w Terraformej strefie docelowej:
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Rejestrowanie i monitorowanie | Azure Monitor Log Analytics obszar roboczy jest używany. Obsługiwane jest konto magazynu diagnostyki oraz centrum zdarzeń.                                                                                                                                                        |                                                                                                                                                                                                                                                                 |
 | Sieć                | Nie dotyczy sieci w innej strefie wyładunkowej.                                                                                                                                                                                                                    | [Decyzje dotyczące sieci](../considerations/networking-options.md)                                                                                                                                                                                                 |
-| Tożsamość               | Przyjęto założenie, że subskrypcja jest już skojarzona z wystąpieniem usługi Azure Active Directory.                                                                                                                                                                        | [Najlepsze rozwiązania dotyczące zarządzania tożsamościami](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)                                                                                                                               |
+| Tożsamość               | Przyjęto założenie, że subskrypcja jest już skojarzona z wystąpieniem usługi Azure Active Directory.                                                                                                                                                                        | [Najlepsze rozwiązania dotyczące zarządzania tożsamościami](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)                                                                                                                               |
 | Zasady                 | W tej strefie wyładunkowej założono, że nie mają być stosowane żadne zasady platformy Azure.                                                                                                                                                                                            |                                                                                                                                                                                                                                                                 |
 | Projekt subskrypcji    | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                                                                                                                                                                                                     | [Tworzenie subskrypcji początkowych](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
 | Grupy zasobów        | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                                                                                                                                                                                                     | [Skalowanie subskrypcji](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                           |
 | Grupy zarządzania      | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                                                                                                                                                                                                     | [Organizuj subskrypcje](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                     |
 | Dane                   | Nie dotyczy                                                                                                                                                                                                                                                                      | [Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-| Storage                | Nie dotyczy                                                                                                                                                                                                                                                                      | [Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                  |
+| Magazyn                | Nie dotyczy                                                                                                                                                                                                                                                                      | [Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                  |
 | Standardy nazewnictwa       | Po utworzeniu środowiska tworzony jest również unikatowy prefiks. Zasoby, które wymagają unikatowej nazwy globalnej (na przykład kont magazynu), używają tego prefiksu. Nazwa niestandardowa jest dołączana do losowego sufiksu. Użycie tagów jest wymagane zgodnie z opisem w poniższej tabeli. | [Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                              |
 | Zarządzanie kosztami        | Nie dotyczy                                                                                                                                                                                                                                                                      | [Śledzenie kosztów](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
-| Compute                | Nie dotyczy                                                                                                                                                                                                                                                                      | [Opcje środowiska obliczeniowego](../considerations/compute-options.md)                                                                                                                                                                                                         |
+| Wystąpienia obliczeniowe                | Nie dotyczy                                                                                                                                                                                                                                                                      | [Opcje obliczeń](../considerations/compute-options.md)                                                                                                                                                                                                         |
 
 ### <a name="tagging-standards"></a>Standardy tagowania
 
@@ -88,20 +88,20 @@ Minimalny zestaw tagów przedstawionych poniżej musi być obecny dla wszystkich
 |-------------------|----------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
 | Jednostka biznesowa     | Wydział firmy najwyższego poziomu będący właścicielem subskrypcji lub obciążenia, do których należy zasób. | BusinessUnit    | FINANSe, MARKETING, {Product Name}, CORP, SHARED |
 | Cost Center       | Księgowe centrum kosztu skojarzone z tym zasobem.                                              | CostCenter      | Liczba                                           |
-| Odzyskiwanie po awarii | Ważność aplikacji, obciążenia lub usługi dla działania firmy.                                     | ROUTINGU              | FUNKCJA ODZYSKIWANIA PO AWARII, KTÓRA NIE JEST DOSTĘPNA W PROGRAMIE DR                       |
-| Środowisko       | Środowisko wdrażania aplikacji, obciążenia lub usługi.                                   | Kopert             | Produkcja, dev, pytań i odpowiedzi, etap, test, szkolenia             |
-| Nazwa właściciela        | Właściciel aplikacji, obciążenia lub usługi.                                                    | Właściciel           | e-mail                                            |
+| Odzyskiwanie po awarii | Ważność aplikacji, obciążenia lub usługi dla działania firmy.                                     | DR              | FUNKCJA ODZYSKIWANIA PO AWARII, KTÓRA NIE JEST DOSTĘPNA W PROGRAMIE DR                       |
+| Środowisko       | Środowisko wdrażania aplikacji, obciążenia lub usługi.                                   | Env             | Produkcja, dev, pytań i odpowiedzi, etap, test, szkolenia             |
+| Nazwa właściciela        | Właściciel aplikacji, obciążenia lub usługi.                                                    | Właściciel           | email                                            |
 | Typ wdrożenia   | Definiuje sposób utrzymywania zasobów.                                                    | Typ wdrożenia  | Ręczne, Terraform                                |
 | Wersja           | Wdrożona wersja planu.                                                                 | version         | v 0,1                                             |
 | Nazwa aplikacji  | Nazwa skojarzonej aplikacji, usługi lub obciążenia związanego z zasobem.             | ApplicationName | "Nazwa aplikacji"                                       |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Dostosowywanie i wdrażanie pierwszej strefy docelowej
 
-Można [sklonować strefę docelową programu Terraform Foundation](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready). Możesz łatwo rozpocząć pracę ze strefą docelową, modyfikując zmienne Terraform. W naszym przykładzie używamy **blueprint_foundations. sandbox. tfvars**, więc Terraform automatycznie ustawia wartości w tym pliku.
+Można [sklonować strefę docelową programu Terraform Foundation](https://github.com/azure/caf-terraform-landingzones). Możesz łatwo rozpocząć pracę ze strefą docelową, modyfikując zmienne Terraform. W naszym przykładzie używamy **blueprint_foundations. sandbox. tfvars**, więc Terraform automatycznie ustawia wartości w tym pliku.
 
 Przyjrzyjmy się różnym sekcjom zmiennych.
 
-W tym pierwszym obiekcie tworzymy dwie grupy zasobów w regionie `southeastasia` o nazwie `-hub-core-sec` i `-hub-operations` wraz z prefiksem dodanym w czasie wykonywania.
+W tym pierwszym obiekcie tworzymy dwie grupy zasobów w `southeastasia` regionie o nazwie `-hub-core-sec` i `-hub-operations` wraz z prefiksem dodanym w czasie wykonywania.
 
 ```hcl
 resource_groups_hub = {
@@ -116,7 +116,7 @@ resource_groups_hub = {
 }
 ```
 
-Następnie określimy regiony, w których możemy ustawić fundacje. W tym miejscu `southeastasia` jest używany do wdrażania wszystkich zasobów.
+Następnie określimy regiony, w których możemy ustawić fundacje. `southeastasia` W tym miejscu służy do wdrażania wszystkich zasobów.
 
 ```hcl
 location_map = {
@@ -190,9 +190,9 @@ security_center = {
 }
 ```
 
-## <a name="get-started"></a>Rozpoczynanie pracy
+## <a name="get-started"></a>Rozpoczęcie pracy
 
-Po przejrzeniu konfiguracji można wdrożyć konfigurację w sposób wdrożony środowisko Terraform. Zalecamy korzystanie z Rover, który jest kontenerem platformy Docker, który umożliwia wdrażanie z systemu Windows, Linux lub MacOS. Możesz rozpocząć pracę z [repozytorium GitHub Rover](https://github.com/aztfmod/rover).
+Po przejrzeniu konfiguracji można wdrożyć konfigurację w sposób wdrożony środowisko Terraform. Zalecamy korzystanie z Rover, który jest kontenerem platformy Docker, który umożliwia wdrażanie z systemu Windows, Linux lub macOS. Możesz rozpocząć pracę z [strefami wyładunkowymi](https://github.com/azure/caf-terraform-landingzones).
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -206,4 +206,4 @@ Warstwowe strefy ładunkowe są dobrym sposobem na oddzielenie systemów, przech
 Przyszłe architektury referencyjne będą demonstrować koncepcję topologii gwiazdy.
 
 > [!div class="nextstepaction"]
-> [Zapoznaj się z przykładem strefy wyładunkowej programu Foundation Terraform](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)
+> [Zapoznaj się z przykładem strefy wyładunkowej programu Foundation Terraform](https://github.com/azure/caf-terraform-landingzones)
