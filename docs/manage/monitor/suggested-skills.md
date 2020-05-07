@@ -3,16 +3,16 @@ title: Gotowość do umiejętności monitorowania w chmurze
 description: Gotowość do umiejętności monitorowania w chmurze
 author: BrianBlanchard
 ms.author: magoedte
-ms.date: 03/23/2020
+ms.date: 05/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30d3b590c6382b0487cac3cfd6c5c0d343432f67
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe76729b4a845d71629d7d24d4bdd3110fa6ab9a
+ms.sourcegitcommit: 5058bc57cb53701ac409959b46767ae6fd56ba93
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120545"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82861439"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -37,13 +37,13 @@ Opracowywanie niezbędnych umiejętności może być przyspieszone przy użyciu 
 
 - Dowiedz się, w jaki sposób [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) ułatwia Wyświetlanie dostępności i wydajności aplikacji i usług w jednym miejscu. Pluralsight oferuje następujące kursy, aby pomóc:
 
-  - [Microsoft Azure monitorowanie i zarządzanie IaaSą](https://www.pluralsight.com/courses/azure-iaas-monitoring-management-getting-started) pomaga dowiedzieć się, jak używać Azure monitor do podstawowego monitorowania obciążeń działających w systemie IaaS.
-
-  - [Monitorowanie zasobów i obciążeń Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring) pomaga dowiedzieć się, jak używać narzędzi monitorowania Microsoft Azure do monitorowania zasobów sieciowych platformy Azure, a także zasobów lokalnych.
+  - [Monitorowanie zasobów i obciążeń Microsoft Azure](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents) pomaga dowiedzieć się, jak używać narzędzi monitorowania Microsoft Azure do monitorowania zasobów sieciowych platformy Azure, a także zasobów lokalnych.
 
   - [Microsoft Azure inżynier DevOps: Optymalizacja mechanizmów przesyłania opinii](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) pomaga przygotować się do korzystania z Azure monitor, w tym Application Insights i log Analytics do monitorowania i optymalizowania aplikacji sieci Web.
 
   - [Microsoft Azure monitorowania element PlayBook Database](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) pomaga dowiedzieć się, jak zaimplementować i używać monitorowania Azure SQL Database, Azure SQL Data Warehouse i Azure Cosmos DB.
+
+  - [Instrumentacja aplikacji za pomocą Azure Monitor Application Insights](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument) to szczegółowey kurs dotyczący używania zestawu SDK Application Insights do zbierania danych telemetrycznych i zdarzeń z aplikacji ze składnikami kątowymi i Node. js.
 
 - [Usługa Azure ARC dla serwerów](https://docs.microsoft.com/azure/azure-arc/servers/overview)pozwala dowiedzieć się, jak zarządzać komputerami z systemami Windows i Linux hostowanymi poza platformą Azure, podobnie jak w przypadku zarządzania natywnymi maszynami wirtualnymi platformy Azure.
 
@@ -69,7 +69,7 @@ Aby dowiedzieć się więcej, zapoznaj się z następującymi tematami:
 
 - [Rozpocznij pracę z usługą Azure DevOps](https://docs.microsoft.com/learn/modules/get-started-with-devops).
 
-- [Dowiedz się więcej na temat DevOps Dojo — biały pas](https://docs.microsoft.com/learn/paths/devops-dojo-white-belt-foundation)
+- [Poznaj podstawy dla białego pasa w dojo DevOps](https://docs.microsoft.com/learn/paths/devops-dojo-white-belt-foundation)
 
 - [Rozwijanie praktyk metodyki DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
 
