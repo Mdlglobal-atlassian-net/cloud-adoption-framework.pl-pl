@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 115b79d41c4f7d0c2c9b27db0d42b61e1ee45dee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6325e577453598bee8092ee3ba49c6dc1057c9e3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119686"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214229"
 ---
 # <a name="deploy-workloads"></a>Wdrażanie obciążeń
 
@@ -22,11 +22,11 @@ Po dokonaniu oceny obciążeń można je wdrożyć w chmurze lub przygotować i 
 
 Celem migracji jest zmigrowanie pojedynczego obciążenia do chmury.
 
-## <a name="definition-of-done"></a>Definicja *gotowości*
+## <a name="definition-of-_done_"></a>Definicja _gotowości_
 
 Faza migracji jest uznawana za ukończoną, gdy obciążenie zostanie przemieszczone i przygotowane do testowania w chmurze. Dotyczy to również wszystkich zależnych zasobów, bez których obciążenie nie mogłoby działać. W procesie optymalizacji obciążenie jest przygotowywane do użycia w środowisku produkcyjnym.
 
-Ta definicja *gotowości* może się różnić w zależności od stosowanych procesów testowania i wydawania. W następnym artykule z tej serii opisano [podejmowanie decyzji co do modelu podwyższania poziomu](./promotion-models.md). Może on pomóc w zrozumieniu, kiedy będzie najlepszy moment do podwyższenia poziomu zmigrowanego obciążenia do środowiska produkcyjnego.
+Ta definicja _gotowości_ może się różnić w zależności od stosowanych procesów testowania i wydawania. W następnym artykule z tej serii opisano [podejmowanie decyzji co do modelu podwyższania poziomu](./promotion-models.md). Może on pomóc w zrozumieniu, kiedy będzie najlepszy moment do podwyższenia poziomu zmigrowanego obciążenia do środowiska produkcyjnego.
 
 ## <a name="accountability-during-migration"></a>Odpowiedzialność podczas migracji
 

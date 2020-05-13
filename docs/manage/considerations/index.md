@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d34a97e24e681732de7d171e7add84a0d5e51281
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe1e6edb7f0c5480a4ae20e639471218ae9805e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426316"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223970"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>Zarządzanie i operacje IT w chmurze
 
@@ -27,6 +27,8 @@ Podczas tworzenia nowych rozwiązań technologicznych firma ma jasno zdefiniowan
 ## <a name="cloud-management"></a>Zarządzanie w chmurze
 
 Historyczny model działania działów IT sprawdzał się przez ponad 20 lat. Ale ten model jest obecnie przestarzały i mniej pożądany niż alternatywne rozwiązania z wykorzystaniem chmury. Po przejściu zespołów ds. zarządzania IT do chmury mają one szansę przemyśleć ten model i przynieść więcej zysków firmie. W tej serii artykułów opisano unowocześniony model zarządzania IT.
+
+<!-- cSpell:ignore caf -->
 
 ![Metodologia zarządzania w przewodniku Cloud Adoption Framework](../../_images/manage/caf-manage.png)
 

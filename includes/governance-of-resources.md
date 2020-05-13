@@ -19,11 +19,11 @@ Definicje zasad niestandardowych są zapisywane w grupie zarządzania lub subskr
 
 Ponieważ zasady wymagane do obsługi produktu o minimalnej wymaganej funkcjonalności utrzymania ładu mają zastosowanie do wszystkich bieżących subskrypcji, następujące wymagania biznesowe zostaną zaimplementowane przy użyciu połączenia definicji wbudowanych i definicji niestandardowych utworzonych w głównej grupie zarządzania:
 
-1. Ogranicz listę dostępnych przypisań ról do zestawu wbudowanych ról platformy Azure autoryzowanego przez zespół ds. zapewnienia ładu w chmurze. Wymaga to [definicji zasad niestandardowych](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
-2. Wymagaj następujących tagów dla wszystkich zasobów: *Dział/jednostka rozliczeniowa*, *Lokalizacja geograficzna*, *Klasyfikacja danych*, *Krytyczność*, *SLA*, *Środowisko*, *Archetyp aplikacji*, *Aplikacja* i *Właściciel aplikacji*. Można to zrealizować za pomocą definicji wbudowanej `Require specified tag`.
+1. Ogranicz listę dostępnych przypisań ról do zestawu wbudowanych ról platformy Azure autoryzowanego przez zespół ds. zapewnienia ładu w chmurze. Wymaga to [definicji zasad niestandardowych](https://github.com/azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
+2. Wymagaj następujących tagów dla wszystkich zasobów: *Dział/jednostka rozliczeniowa*, _Lokalizacja geograficzna_, _Klasyfikacja danych_, _Krytyczność_, _SLA_, _Środowisko_, _Archetyp aplikacji_, _Aplikacja_ i _Właściciel aplikacji_. Można to zrealizować za pomocą definicji wbudowanej `Require specified tag`.
 3. Wymagaj, aby tag `Application` zasobów był zgodny z nazwą odpowiedniej grupy zasobów. Można to zrealizować za pomocą definicji wbudowanej „Wymagaj tagu i jego wartości”.
 
-Informacje na temat definiowania zasad niestandardowych zawiera [dokumentacja usługi Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Aby uzyskać wskazówki i przykłady zasad niestandardowych, skorzystaj z [witryny przykładów usługi Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples) i powiązanego [repozytorium GitHub](https://github.com/Azure/azure-policy).
+Informacje na temat definiowania zasad niestandardowych zawiera [dokumentacja usługi Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Aby uzyskać wskazówki i przykłady zasad niestandardowych, skorzystaj z [witryny przykładów usługi Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples) i powiązanego [repozytorium GitHub](https://github.com/azure/azure-policy).
 
 #### <a name="assign-azure-policy-and-rbac-roles-using-azure-blueprints"></a>Przypisywanie zasad usługi Azure Policy i ról RBAC przy użyciu usługi Azure Blueprints
 
