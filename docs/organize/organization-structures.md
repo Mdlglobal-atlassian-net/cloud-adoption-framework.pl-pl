@@ -1,5 +1,5 @@
 ---
-title: Ustanów struktury zespołu
+title: Struktury dla dorosłych zespołów
 description: Użyj tych przykładów wspólnych struktur zespołu, aby znaleźć strukturę organizacyjną, która najlepiej odpowiada Twoim potrzebom operacyjnym.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f01499141c85b1baca2b19f2ce6a8ed15163c4a9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c46f3d6372c532911bc794128a0ea47509ee1860
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995177"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222100"
 ---
 <!-- cSpell:ignore ccoe -->
 
-# <a name="establish-team-structures"></a>Ustanów struktury zespołu
+# <a name="mature-team-structures"></a>Struktury dla dorosłych zespołów
 
-Każda możliwość chmury jest udostępniana przez kogoś podczas każdego okresu zajmowanego przez chmurę. Te przydziały i struktury zespołu mogą tworzyć organiczne lub mogą być zamierzone celowo w celu dopasowania do zdefiniowanej struktury zespołu.
+Każda funkcja w chmurze jest udostępniana przez kogoś podczas każdego wysiłku związanego z wdrażaniem w chmurze. Te przydziały i struktury zespołu mogą tworzyć organiczne lub mogą być zamierzone celowo w celu dopasowania do zdefiniowanej struktury zespołu.
 
 Zgodnie z potrzebami wdrażania, należy więc koniecznie zrównoważenie i struktura. W tym artykule przedstawiono przykłady wspólnych struktur zespołów na różnych etapach wymagalności organizacyjnej. Poniższa ilustracja i lista przedstawia te struktury na podstawie typowych etapów dojrzewania. Użyj tych przykładów, aby znaleźć strukturę organizacyjną, która najlepiej odpowiada Twoim potrzebom operacyjnym.
 
@@ -34,7 +34,7 @@ Struktury organizacyjne przechodzą przez wspólny model zapadalności, który j
 5. [Wyrównanie operacyjne](#operational-alignment)
 6. [Cloud Center doskonałości (CCoE)](#cloud-center-of-excellence)
 
-Większość firm zaczyna się od małego *zespołu wdrażania w chmurze*. Zaleca się jednak ustanowienie struktury organizacyjnej, która jest bardziej podobna do struktury najlepszego rozwiązania [MVP](#best-practice-minimum-viable-product-mvp) .
+Większość firm zaczyna się od małego _zespołu wdrażania w chmurze_. Zaleca się jednak ustanowienie struktury organizacyjnej, która jest bardziej podobna do struktury najlepszego rozwiązania [MVP](#best-practice-minimum-viable-product-mvp) .
 
 ## <a name="cloud-adoption-team-only"></a>Tylko zespół wdrażania chmury
 
@@ -45,11 +45,11 @@ Jądrem wszystkich działań związanych z wdrażaniem w chmurze jest zespół d
 W przypadku wysiłków dotyczących małych i wczesnych etapów ten zespół może być tak mały jako jedna osoba. W przypadku większych lub późnych wysiłków często istnieje kilka zespołów wdrażania w chmurze, z których każdy ma około sześciu inżynierów. Niezależnie od rozmiaru lub zadań, spójny aspekt dowolnego zespołu wdrażania w chmurze polega na tym, że umożliwia dołączanie rozwiązań do chmury. W przypadku niektórych organizacji może to być wystarczająca struktura organizacyjna. Artykuł z [zespołu wdrażania w chmurze](./cloud-adoption.md) zawiera dokładniejszy wgląd w strukturę, kompozycję i funkcję zespołu wdrożenia chmury.
 
 > [!WARNING]
-> Działające *tylko* z zespołem wdrażania w chmurze (lub wieloma zespołami wdrażania w chmurze) jest uznawany za *Antywzorzec* i należy je unikać. Należy wziąć pod uwagę co najmniej [najlepsze rozwiązanie MVP](#best-practice-minimum-viable-product-mvp).
+> Działające _tylko_ z zespołem wdrażania w chmurze (lub wieloma zespołami wdrażania w chmurze) jest uznawany za _Antywzorzec_ i należy je unikać. Należy wziąć pod uwagę co najmniej [najlepsze rozwiązanie MVP](#best-practice-minimum-viable-product-mvp).
 
 ## <a name="best-practice-minimum-viable-product-mvp"></a>Najlepsze rozwiązanie: minimalny produkt żywotny (MVP)
 
-Zalecamy, aby dwa zespoły mogły utworzyć saldo w ramach wysiłków związanych z wdrażaniem w chmurze. Te dwa zespoły są odpowiedzialne za różne możliwości w trakcie nakładu pracy.
+Zalecamy, aby dwa zespoły mogły utworzyć saldo w ramach wysiłków związanych z wdrażaniem w chmurze. Te dwa zespoły są odpowiedzialne za różne funkcje w trakcie nakładu pracy.
 
 - **Zespół ds. wdrażania chmury:** Ten zespół jest odpowiedzialny za rozwiązania techniczne, wyrównanie biznesowe, zarządzanie projektami i operacje dla przyjętych rozwiązań.
 - **Zespół ds. zarządzania chmurą:** Aby zrównoważyć zespół ds. zarządzania chmurą, zespół nadzorujący w chmurze jest przeznaczony do zapewnienia doskonałości rozwiązań, które zostały przyjęte. Zespół ds. zarządzania chmurą jest odpowiedzialny za działanie platformy, operacje na platformie, zarządzanie i automatyzację.
@@ -66,7 +66,7 @@ W miarę skalowania, zespół nadzorujący chmurę może się zadbać o to, aby 
 
 ![Wdrażanie chmury z centralnym modelem IT](../_images/ready/org-ready-central-it.png)
 
-Niestety, Centralna faza IT może być jedną z riskiest faz w organizacji. Centralny zespół IT musi znajdować się w tabeli o silnym wzroście sposób myślenia. Jeśli zespół przegląda chmurę jako okazję do powiększania i adaptacji ich możliwości, może ona zapewnić doskonałą wartość w całym procesie. Jeśli jednak centralny zespół IT przegląda wdrożenie chmury przede wszystkim jako zagrożenie dla istniejącego modelu, centralny zespół IT przejdzie do przeszkody dla zespołów wdrażania chmury i celów, które są przez nie obsługiwane. Niektóre centralne zespoły IT wykorzystały miesiące, a nawet lat próbujących wymusić wymuszenie wyrównania przez chmurę przy użyciu podejścia lokalnego, z tylko negatywnymi wynikami. Chmura nie wymaga zmiany wszystkiego w Centralnym, ale wymaga zmiany. Jeśli odporność na zmiany jest powszechnie rozpowszechniona w centralnym zespole IT, ta faza dojrzałości może szybko stać się antywzorcem kulturowym.
+Niestety, Centralna faza IT może być jedną z riskiest faz w organizacji. Centralny zespół IT musi znajdować się w tabeli o silnym wzroście sposób myślenia. Jeśli zespół przegląda chmurę jako okazję do wzrostu i adaptacji, wówczas może zapewnić doskonałą wartość w całym procesie. Jeśli jednak centralny zespół IT przegląda wdrożenie chmury przede wszystkim jako zagrożenie dla istniejącego modelu, centralny zespół IT przejdzie do przeszkody dla zespołów wdrażania chmury i celów, które są przez nie obsługiwane. Niektóre centralne zespoły IT wykorzystały miesiące, a nawet lat próbujących wymusić wymuszenie wyrównania przez chmurę przy użyciu podejścia lokalnego, z tylko negatywnymi wynikami. Chmura nie wymaga zmiany wszystkiego w Centralnym, ale wymaga znaczącej zmiany. Jeśli odporność na zmiany jest powszechnie rozpowszechniona w centralnym zespole IT, ta faza dojrzałości może szybko stać się antywzorcem kulturowym.
 
 Plany wdrożenia chmury mocno koncentrują się na platformie jako usługa (PaaS), DevOps lub innych rozwiązania, które wymagają mniejszej liczby operacji, są mniej znaczące, aby zobaczyć wartość w tej fazie dojrzałości. W przeciwieństwie do tego typy rozwiązań są najprawdopodobniej utrudnione lub blokowane przez próby scentralizowania IT. Wyższego poziomu dojrzałości, podobnie jak w przypadku usługi [Cloud Center doskonałości (CCoE)](#cloud-center-of-excellence), najprawdopodobniej da pozytywne wyniki dla tych typów wysiłków. Aby zrozumieć różnice między centralnym działem IT w chmurze i CCoE, zobacz [Cloud Center of doskonałości](./cloud-center-of-excellence.md).
 

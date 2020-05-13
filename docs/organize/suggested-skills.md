@@ -8,22 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: abdd12c9c236b66fced32b1b70886d118a25c7bc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 98c41d102ca54ebcb299989b907e2e6c6b237896
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995061"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223477"
 ---
-# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Ścieżka gotowości do kwalifikacji w fazie gotowości migracji
+# <a name="building-technical-skills"></a>Rozwijanie umiejętności technicznych
 
-W fazie *przygotowywania* migracji celem jest przygotowanie do podróży do przodu. Ta faza jest realizowana w dwóch obszarach głównych: gotowość do organizacji i środowiska (techniczne). Oba mogą wymagać nowych umiejętności dla współautorów technicznych i nietechnicznych. Poniższe informacje mogą pomóc organizacji w tworzeniu niezbędnych umiejętności.
+Gotowość do organizacji i środowiska (techniczne) może wymagać nowych umiejętności dla współautorów technicznych i nietechnicznych. Poniższe informacje mogą pomóc organizacji w tworzeniu niezbędnych umiejętności.
 
 ## <a name="organizational-readiness-learning-paths"></a>Ścieżki szkoleniowe gotowości organizacyjnej
 
 W zależności od motywacji i rezultatów działalności, które są związane z pracą w chmurze, liderzy mogą wymagać ustanowienia nowych struktur organizacyjnych lub zespołów wirtualnych (v-Teams) w celu ułatwienia różnych funkcji. Poniższe artykuły mogą pomóc organizacji w opracowaniu niezbędnych umiejętności w celu zaspokojenia potrzeb tych zespołów:
 
-- [Wyrównanie początkowej organizacji](./index.md): Omówienie wyrównania i struktur zespołu, aby pomóc w spełnieniu określonych celów.
+- [Wyrównaj organizację](../get-started/org-alignment.md): odkryj podejścia do ustanowienia właściwych struktur organizacyjnych.
+- [Ćwiczenia dotyczące wyrównania organizacji](./index.md): Zapoznaj się z omówieniem wyrównania i struktur zespołu, aby pomóc w spełnieniu określonych celów.
+- [Nawiązywanie zespołów](../get-started/help.md#establish-teams): informacje dotyczące ustanawiania zespołów w organizacji, które są odpowiedzialne za dostarczanie funkcjonalności chmury.
 - [Podziel się silosami i fiefdoms](./fiefdoms-silos.md): Poznaj dwa popularne *antywzorce* organizacyjne i sposoby, aby kierować zespoły do wydajnej współpracy.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Ścieżki szkoleniowe dotyczące gotowości środowiska (technicznej)
@@ -71,8 +73,8 @@ Poniżej przedstawiono kilka przykładów ścieżek szkoleniowych specyficznych 
 
 - [Administratorzy](https://docs.microsoft.com/learn/browse/?roles=administrator) mają dostęp do modułów, które koncentrują się na Azure Fundamentals, konfigurowaniu kontenerów, a nawet w zaawansowanej administracji w chmurze.
 
-- [Deweloperzy](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure) mogą korzystać z informacji o zasobach, aby pomóc w podejmowaniu działań związanych z architekturą, zarządzaniem, modernizacją.
+- [Deweloperzy](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure) mogą używać zasobów Microsoft Learn, aby pomóc w podejmowaniu działań w zakresie architektury, ładu i modernizacji.
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-Aby uzyskać dodatkowe ścieżki szkoleniowe, przejrzyj [katalog Microsoft Learn](https://docs.microsoft.com/learn/browse). Użyj filtru Role, aby dopasować ścieżki szkoleniowe do swojej roli.
+Aby uzyskać dodatkowe ścieżki szkoleniowe, przejrzyj [katalog Microsoft Learn](https://docs.microsoft.com/learn/browse). Użyj filtru role, aby wyrównać ścieżki szkoleniowe do roli.

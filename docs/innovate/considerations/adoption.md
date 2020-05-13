@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8afb39bdad3b521d3470e2e5eaca3f64a81061c0
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3dc7eeb2a8727fd1787265b408d1f930f3d76c11
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433411"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222489"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>Tworzenie partnerstwa dla klientów za pomocą pętli Build-Measure-Dowiedz się
 
@@ -24,7 +24,7 @@ W dużych lub małych firmach, które są rozbudowane w miarę rozwoju jako inno
 
 ## <a name="the-build-measure-learn-feedback-loop"></a>Pętla Build-Measure-Dowiedz się
 
-Zgodnie z opisem w [innowacji w gospodarce cyfrowej](./index.md), innowacje wymagają zrównoważenia *i* *przyjęcia*. Opinie klientów i wdrażanie dysków partnerskich. Dzięki przeniesieniu klientów do mocnych partnerów lojalnych podczas innowacji, możesz realizować lepsze produkty i szybciej zdobywać trakcję na rynku.
+Zgodnie z opisem w [innowacji w gospodarce cyfrowej](./index.md), innowacje wymagają zrównoważenia _i_ _przyjęcia_. Opinie klientów i wdrażanie dysków partnerskich. Dzięki przeniesieniu klientów do mocnych partnerów lojalnych podczas innowacji, możesz realizować lepsze produkty i szybciej zdobywać trakcję na rynku.
 
 ![Diagram pętli Build-Measure-Dowiedz się więcej](../../_images/innovate/bml-feedback-loop.png)
 

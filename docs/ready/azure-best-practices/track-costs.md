@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b444c94686f6314fb2922e8b2c6ed99fea57e6ec
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: aff6ee1eb16f1e2ab671c20bea61093d68b99fe4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396120"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223307"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach
 
@@ -28,7 +28,7 @@ Zasoby obejmują wszystkie maszyny wirtualne, źródła danych i aplikacje wdro�
 
 ### <a name="classification"></a>Klasyfikacja
 
-*Tagowanie* to prosty sposób na klasyfikowanie zasobów. Tagowanie kojarzy metadane z zasobem. Te metadane mogą służyć do klasyfikowania zasobów na podstawie różnych punktów danych. Gdy tagi zostają użyte do klasyfikowania zasobów w ramach nakładu pracy związanego z zarządzaniem kosztami, firmy często potrzebują następujących tagów: jednostki biznesowej, działu, kodu rozliczeń, geografii, środowiska, projektu oraz obciążenia lub „kategoryzacji aplikacji”. Usługa Azure Cost Management może używać tych tagów do tworzenia różnych widoków danych kosztów.
+_Tagowanie_ to prosty sposób na klasyfikowanie zasobów. Tagowanie kojarzy metadane z zasobem. Te metadane mogą służyć do klasyfikowania zasobów na podstawie różnych punktów danych. Gdy tagi zostają użyte do klasyfikowania zasobów w ramach nakładu pracy związanego z zarządzaniem kosztami, firmy często potrzebują następujących tagów: jednostki biznesowej, działu, kodu rozliczeń, geografii, środowiska, projektu oraz obciążenia lub „kategoryzacji aplikacji”. Usługa Azure Cost Management może używać tych tagów do tworzenia różnych widoków danych kosztów.
 
 Tagowanie jest podstawowym sposobem na zrozumienie danych w dowolnych raportach o kosztach. Stanowi podstawową część dowolnego dobrze zarządzanego środowiska. Jest to również pierwszy krok w celu ustalenia właściwego ładu w dowolnym środowisku.
 
@@ -72,6 +72,8 @@ Zarządzanie kosztami to wysiłek zespołowy. W sekcji dotyczącej gotowości or
 Najlepszym rozwiązaniem jest zaproponowanie modelu z najmniejszymi uprawnieniami podczas przypisywania osób do różnych ról i zakresów.
 
 ### <a name="roles"></a>Role
+
+<!-- docsTest:ignore Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
 
 Usługa Azure Cost Management obsługuje następujące wbudowane role dla poszczególnych zakresów:
 
@@ -117,7 +119,7 @@ Usługa Azure Cost Management to dobrze udokumentowane narzędzie do ustalania b
 
 ### <a name="get-started-with-azure-cost-management"></a>Wprowadzenie do usługi Azure Cost Management
 
-Aby uzyskać więcej informacji na temat rozpoczynania pracy z usługą Azure Cost Management, zobacz temat [How to optimize your cloud investment with Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) (Jak zoptymalizować inwestycję w chmurę przy użyciu usługi Azure Cost Management).
+Aby rozpocząć korzystanie z Azure Cost Management, zobacz [jak zoptymalizować inwestycję w chmurze, korzystając z Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="use-azure-cost-management"></a>Korzystanie z usługi Azure Cost Management
 

@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9b9889be940485217b15aa0038f68f9df8099892
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5e36757cd187b42a9ff8b976db886feb55f1b2e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428996"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223528"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Lista kontrolna planowania środowiska migracji: sprawdzanie gotowości środowiska przed migracją
 
 W pierwszym etapie procesu migracji należy utworzyć odpowiednie środowisko w chmurze do odbierania, hostowania i obsługi migrowanych zasobów. Ten artykuł zawiera listę elementów do zweryfikowania w bieżącym środowisku przed migracją.
 
-Poniższa lista kontrolna jest zgodna ze wskazówkami, które znajdują się w [sekcji Gotowość](../../../ready/index.md) struktury wdrażania chmury. Zapoznaj się z tą sekcją, aby uzyskać wskazówki dotyczące wykonania poniższych czynności.
+Poniższa lista kontrolna zawiera wskazówki dotyczące [gotowej metodologii](../../../ready/index.md) wdrożenia chmury. Zapoznaj się z tą sekcją, aby uzyskać wskazówki dotyczące wykonania poniższych czynności.
 
 ## <a name="effort-type-assumption"></a>Założenie typu nakładu pracy
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 1586b6322b34e10f989934c9580e81583061d83c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f68976fd07ea5a35078b70d3f18b656e6ba3f683
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428324"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223511"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antywzorce organizacyjne: silosy i fiefdoms
 
@@ -109,13 +109,13 @@ Członkowie zespołu w fiefdom IT mogą definiować siebie przez ich wyrównanie
 
 Fiefdoms są szczególnie powszechne w organizacjach, które napotykają, że downsizing, częste turbulencje pracowników działu IT lub słabych liderów IT. Gdy firma widzi ją całkowicie w centrum kosztów, fiefdoms są znacznie większe.
 
-Ogólnie rzecz biorąc, fiefdoms są wynikiem Menedżera linii, który obawia się o utratę zespołu i skojarzonej z nią podstawy. Ci liderzy często mają sens z cłem dla zespołu i potrzebują ochrony swoich podwładnych przed skutkami negatywnymi. Wyrażenia, takie jak "Ochrona zespołu przed zmianami" i "chronienie zespołu przed zakłóceniami procesów" mogą być wskaźnikami niechronionego Menedżera, który może wymagać dodatkowego wsparcia od lidera.
+Ogólnie rzecz biorąc, fiefdoms są wynikiem Menedżera linii, który obawia się o utratę zespołu i skojarzonej z nią podstawy. Ci liderzy często mają sensy związane z obowiązkiem zespołu i potrzebują ochrony swoich podwładnych przed skutkami negatywnymi. Wyrażenia, takie jak "Ochrona zespołu przed zmianami" i "chronienie zespołu przed zakłóceniami procesów" mogą być wskaźnikami niechronionego Menedżera, który może wymagać dodatkowego wsparcia od lidera.
 
 ### <a name="address-resistance-from-it-fiefdoms"></a>Odporność na adresy od fiefdoms IT
 
 Fiefdoms IT może przedstawiać nieco wzrostu, postępując zgodnie z podejściem do [odporności silosów IT](#address-resistance-from-it-silos). Przed podjęciem próby rozwiązania odporności od fiefdom IT zalecamy, aby najpierw traktować zespół, taki jak silos IT. Jeśli te typy podejścia nie wydają żadnej znaczącej zmiany, odporny zespół może mieć wpływ na Antywzorzec IT fiefdom. Głównym powodem jego fiefdoms jest nieco bardziej skomplikowane rozwiązanie, ponieważ odporność wynika z bezpośredniego Menedżera linii (lub lidera wyższego poziomu wykresu organizacyjnego). Wyzwania, które są oparte na silosie, są zwykle prostsze do przezwyciężenia.
 
-W przypadku ciągłej odporności z usługi IT fiefdoms zapewnią działania związane z wdrażaniem w chmurze, może być to połączonego wysiłku, aby oszacować sytuację z istniejącymi liderami IT. Liderzy IT powinni uważnie rozważyć szczegółowe informacje od [zespołu strategii chmurowej](./cloud-strategy.md), [centrum usługi Cloud](./cloud-center-of-excellence.md)Insights i [zespół nadzoru chmurowego](./cloud-governance.md) przed podjęciem decyzji.
+W przypadku ciągłej odporności z usługi IT fiefdoms zapewnią działania związane z wdrażaniem w chmurze, może być to połączonego wysiłku, aby oszacować sytuację z istniejącymi liderami IT. Liderzy IT powinni uważnie rozważyć szczegółowe informacje od [zespołu strategii chmurowej](./cloud-strategy.md) , [centrum usługi Cloud](./cloud-center-of-excellence.md)Insights oraz [zespół nadzoru chmurowego](./cloud-governance.md) przed podjęciem decyzji.
 
 > [!NOTE]
 > Liderzy IT nigdy nie mogą zmieniać wykresów organizacyjnych w sposób jasny. Powinny również sprawdzać poprawność i analizować opinie od poszczególnych zespołów pomocniczych. Jednak wysiłki transformacji, takie jak wdrażanie w chmurze, mają na celu powiększanie podstawowych problemów, które były niezauważalne lub nie zostały rozwiązane długo przed tym nakładem pracy. Gdy fiefdoms uniemożliwia sukces firmy, zmiany lidera są możliwie największej konieczności.
@@ -131,7 +131,7 @@ W przypadku ciągłej odporności z usługi IT fiefdoms zapewnią działania zwi
 
 Fiefdoms IT może być oznaką problemów z rozliderem systemu. Aby przezwyciężyć fiefdom IT, Liderzy IT muszą mieć możliwość wprowadzania zmian w operacjach, obowiązkach i czasami nawet osób, które zapewniają zarządzanie wierszami dla konkretnych zespołów. Gdy te zmiany są wymagane, należy się doejść do tych zmian za pomocą jasno i defensible punktów danych.
 
-Dostosowanie się do osób biorących udział w biznesie, motywacje biznesowe i wyniki biznesowe może być wymagane w celu przeprowadzenia niezbędnej zmiany. Partnerstwo z [zespołem strategii chmurowej](./cloud-strategy.md), [centrum w chmurze doskonałości](./cloud-center-of-excellence.md)i [zespołem nadzoru chmurowego](./cloud-governance.md) mogą zapewnić punkty danych, które są zbędne dla pozycji defensible. W razie potrzeby te zespoły powinny być uwzględniane w eskalacji grup, aby sprostać wyzwaniom, które nie mogą być adresowane do samego lidera.
+Dostosowanie się do osób biorących udział w biznesie, motywacje biznesowe i wyniki biznesowe może być wymagane w celu przeprowadzenia niezbędnej zmiany. Partnerstwo z [zespołem ds. strategii chmurowej](./cloud-strategy.md), [centrum w chmurze doskonałości](./cloud-center-of-excellence.md)oraz [zespołowi ds. zarządzania chmurą](./cloud-governance.md) . W razie potrzeby te zespoły powinny być uwzględniane w eskalacji grup, aby sprostać wyzwaniom, które nie mogą być adresowane do samego lidera.
 
 ## <a name="next-steps"></a>Następne kroki
 

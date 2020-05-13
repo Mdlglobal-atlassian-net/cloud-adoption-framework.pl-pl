@@ -1,18 +1,18 @@
 ---
-title: Programowanie oparte na testach (TDD) dla stref wypełniania na platformie Azure
-description: Programowanie oparte na testach (TDD) dla stref wypełniania na platformie Azure
+title: Programowanie oparte na testach (TDD) dla stref wypełniania na platformie Azure.
+description: Programowanie oparte na testach (TDD) dla stref wypełniania na platformie Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: de56ab7dca0a769272777118836bc9ee93058002
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b4edc0f0e485c040045bc8c1b7bce6c91f3d13f9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81121846"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221913"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Programowanie oparte na testach (TDD) dla stref wypełniania na platformie Azure
 
@@ -37,7 +37,7 @@ Każdy z powyższych przykładów może służyć jako narzędzia przyspieszają
 
 ## <a name="azure-governance-tools-that-can-accelerate-tdd-cycles"></a>Narzędzia ładu platformy Azure, które mogą przyspieszyć cykle usługi TDD
 
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy): gdy wdrożenia lub próby wdrożenia odbiegają od zasad ładu, Azure Policy może zapewnić automatyczne wykrywanie, ochrona & rozpoznawanie/or. Jednak Azure Policy zapewnia również podstawowy mechanizm testowania kryteriów akceptacji w "definicji gotowe". W cyklu TDD można utworzyć definicję zasad w celu przetestowania pojedynczych kryteriów akceptacji. Analogicznie, wszystkie kryteria akceptacji można dodać do inicjatywy Policy przypisanej do całej subskrypcji. Takie podejście zapewnia mechanizm "Red Tests" Przed zmodyfikowaniem strefy docelowej. Gdy strefa docelowa spełnia definicję gotowe, może być użyta do wymuszenia kryteriów testowych, aby uniknąć zmian w kodzie, które spowodują, że test zakończy się niepowodzeniem w przyszłych wydaniach.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy): gdy wdrożenia lub próby wdrożenia odbiegają od zasad ładu, Azure Policy może zapewnić automatyczne wykrywanie, ochronę i rozwiązywanie problemów. Ale Azure Policy również zapewnia podstawowy mechanizm testowania kryteriów akceptacji w "definicji gotowe". W cyklu TDD można utworzyć definicję zasad w celu przetestowania pojedynczych kryteriów akceptacji. Analogicznie, wszystkie kryteria akceptacji można dodać do inicjatywy Policy przypisanej do całej subskrypcji. Takie podejście zapewnia mechanizm "Red Tests" Przed zmodyfikowaniem strefy docelowej. Gdy strefa docelowa spełnia definicję gotowe, może być użyta do wymuszenia kryteriów testowych, aby uniknąć zmian w kodzie, które spowodują, że test zakończy się niepowodzeniem w przyszłych wydaniach.
 
 [Plany platformy Azure](https://docs.microsoft.com/azure/governance/blueprints): Azure Blueprint zasad grupy i innych narzędzi wdrażania do powtarzalnego pakietu, który można przypisać do wielu stref wyładunkowej. Plany są przydatne, gdy wiele wysiłków podejmuje wspólne definicje gotowe, które warto zaktualizować w czasie. Może także ułatwić wdrożenie w trakcie kolejnych działań w celu rozwinięcia i refaktoryzacji stref wyładunkowych.
 

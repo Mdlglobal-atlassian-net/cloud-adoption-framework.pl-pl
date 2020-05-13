@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e723e16c039bace12c0a4e5e97c8e6635875732d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 413953f6da2eece12a54aa708fb4daa466d9959d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427986"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223409"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Wymagania wstępne dotyczące efektywnego planu wdrażania chmury
 
-Plan jest efektywny tylko jako dane, które są w nim umieszczone. Aby plan wdrożenia chmury był skuteczny, istnieją dwie kategorie danych wejściowych: *strategiczne* i *taktyczne*. W poniższych sekcjach znajdują się minimalne punkty danych wymagane w każdej kategorii.
+Plan jest efektywny tylko jako dane, które są w nim umieszczone. Aby plan wdrożenia chmury był skuteczny, istnieją dwie kategorie danych wejściowych: _strategiczne_ i _taktyczne_. W poniższych sekcjach znajdują się minimalne punkty danych wymagane w każdej kategorii.
 
 ## <a name="strategic-inputs"></a>Dane wejściowe strategiczne
 

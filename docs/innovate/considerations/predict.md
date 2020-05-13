@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bbbed6fd267a6cac7b052c28a0b902c233d74374
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5f9217e64919198feb2b55cf068ca3dc5133309e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427372"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222440"
 ---
 # <a name="predict-and-influence"></a>Przewidywanie i wpływ
 
-Istnieją dwie klasy aplikacji w gospodarce cyfrowej: *historyczne* i *predykcyjne*. Wiele potrzeb klientów można spełnić wyłącznie przy użyciu danych historycznych, w tym niemal danych w czasie rzeczywistym. Większość rozwiązań koncentruje się głównie na agregowaniu danych. Następnie przetwarzają i udostępniają te dane z powrotem do klienta w formie środowiska cyfrowego lub otoczenia.
+Istnieją dwie klasy aplikacji w gospodarce cyfrowej: _historyczne_ i _predykcyjne_. Wiele potrzeb klientów można spełnić wyłącznie przy użyciu danych historycznych, w tym niemal danych w czasie rzeczywistym. Większość rozwiązań koncentruje się głównie na agregowaniu danych. Następnie przetwarzają i udostępniają te dane z powrotem do klienta w formie środowiska cyfrowego lub otoczenia.
 
 Ponieważ modelowanie predykcyjne jest bardziej opłacalne i łatwo dostępne, klienci będą mogli korzystać z wydajnych środowisk, które prowadzą do lepszego podejmowania decyzji i działań. Jednak żądanie nie zawsze sugeruje rozwiązanie predykcyjne. W większości przypadków widok historyczny może zapewnić wystarczającą ilość danych, aby umożliwić klientowi samodzielne podejmowanie decyzji.
 
@@ -32,7 +32,7 @@ Różne aplikacje i środowiska otoczenia wykorzystują dane do prognozowania:
 
 ## <a name="develop-predictive-capabilities"></a>Opracowywanie funkcji predykcyjnych
 
-Rozwiązania, które regularnie zapewniają dokładne Funkcje predykcyjne, zazwyczaj obejmują pięć podstawowych cech: *dane*, *szczegółowe informacje*, *wzorce*, *przewidywania*i *interakcje*. Każdy aspekt jest wymagany do opracowania funkcji predykcyjnych. Podobnie jak w przypadku wszystkich wspaniałych innowacji, rozwój możliwości predykcyjnych wymaga [zobowiązania do iteracji](./index.md#commitment-to-iteration). W każdej iteracji jedna lub więcej z następujących cech jest przedwcześnie w celu zweryfikowania coraz większej liczby skomplikowanych klientów.
+Rozwiązania, które regularnie zapewniają dokładne Funkcje predykcyjne, zazwyczaj obejmują pięć podstawowych cech: _dane_, _szczegółowe informacje_, _wzorce_, _przewidywania_i _interakcje_. Każdy aspekt jest wymagany do opracowania funkcji predykcyjnych. Podobnie jak w przypadku wszystkich wspaniałych innowacji, rozwój możliwości predykcyjnych wymaga [zobowiązania do iteracji](./index.md#commitment-to-iteration). W każdej iteracji jedna lub więcej z następujących cech jest przedwcześnie w celu zweryfikowania coraz większej liczby skomplikowanych klientów.
 
 ![Kroki do predykcyjnych funkcji](../../_images/innovate/predict-and-influence.png)
 

@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d9207e5494ef6e645780c35477636c5ebcb9df2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dd818e65e6f9064119b27dfb5ea87b8a04bda671
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429050"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222134"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -30,7 +30,7 @@ Cel każdego procesu wdrożenia może mieć znaczny wpływ na sugerowane podejś
 
 Każda firma chce uzyskiwać wiele takich wyników. Bez działań nie ma klientów i odwrotnie. Wdrażanie chmury nie różni się pod tym względem. Firmy często pracują nad osiągnięciem każdego z tych wyników, ale próbują skupić się na wszystkich jednocześnie, co powoduje zbytnie rozproszenie wysiłków i spowalnia postęp prac, które mogą być najbardziej korzystne dla firmy.
 
-To wymaganie wstępne nie jest zaleceniem, aby wybrać jeden z tych trzech celów, a jedynie ma na celu ułatwienie zespołowi strategicznemu ds. chmury i zespołowi wdrożeniowemu ds. chmury określenie zestawu priorytetów operacyjnych, którymi należy kierować się podczas wykonywania migracji w ciągu następnych trzech do sześciu miesięcy. Te priorytety należy określić przez uporządkowanie tych opcji w kolejności od *najważniejszej* do *najmniej ważnej* w odniesieniu do nakładu pracy, który ten zespół może wykonać w ciągu następnego kwartału lub dwóch.
+To wymaganie wstępne nie jest zaleceniem, aby wybrać jeden z tych trzech celów, a jedynie ma na celu ułatwienie zespołowi strategicznemu ds. chmury i zespołowi wdrożeniowemu ds. chmury określenie zestawu priorytetów operacyjnych, którymi należy kierować się podczas wykonywania migracji w ciągu następnych trzech do sześciu miesięcy. Te priorytety należy określić przez uporządkowanie tych opcji w kolejności od _najważniejszej_ do _najmniej ważnej_ w odniesieniu do nakładu pracy, który ten zespół może wykonać w ciągu następnego kwartału lub dwóch.
 
 ### <a name="act-on-migration-outcomes"></a>Działania dotyczące wyników migracji
 
@@ -46,17 +46,17 @@ Jeśli dane, eksperymentowanie, badania i programowanie (R&D) lub nowe produkty 
 
 ## <a name="effort"></a>Nakład pracy
 
-Nakład pracy związany z migracją może się znacznie różnić w zależności od rozmiaru i złożoności obciążeń. Migracja mniejszych obciążeń obejmująca kilkaset maszyn wirtualnych jest procesem taktycznym, który można zaimplementować przy użyciu zautomatyzowanych narzędzi, takich jak usługa [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview). Z kolei migracja dużego przedsiębiorstwa obejmująca setki tysięcy obciążeń wymaga wysoce strategicznego procesu i może być związana z szeroko zakrojoną refaktoryzacją, przebudową i zastępowaniem istniejących aplikacji integrujących możliwości platformy jako usługi (PaaS) oraz oprogramowania jako usługi (SaaS). [Identyfikacja i zrównoważenie zakresu](../../../strategy/balance-the-portfolio.md) planowanych migracji ma krytyczne znaczenie.
+Nakład pracy związany z migracją może się znacznie różnić w zależności od rozmiaru i złożoności obciążeń. Migracja mniejszych obciążeń obejmująca kilkaset maszyn wirtualnych jest procesem taktycznym, który można zaimplementować przy użyciu zautomatyzowanych narzędzi, takich jak usługa [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview). Z kolei migracja dużego przedsiębiorstwa obejmująca setki tysięcy obciążeń wymaga wysoce strategicznego procesu i może być związana z szeroko zakrojoną refaktoryzacją, przebudową i zastępowaniem istniejących aplikacji integrujących możliwości platformy jako usługi (PaaS) oraz oprogramowania jako usługi (SaaS). [Identyfikacja i zrównoważenie zakresu](../../../strategy/balance-the-portfolio.md) planowanych migracji ma krytyczne znaczenie.
 
 Przed podjęciem jakichkolwiek decyzji, które mogą mieć długoterminowy wpływ na bieżący program migracji, należy koniecznie osiągnąć porozumienie dotyczące następujących decyzji.
 
 ### <a name="effort-type"></a>Typ nakładu pracy
 
-W przypadku każdej migracji znaczącej skali (więcej niż 250 maszyn wirtualnych) zasoby są migrowane przy użyciu różnych opcji przejścia, które zostały omówione w pięciu rozwiązaniach: ponowne *hostowanie*, *Refaktoryzacja* *,* *rekonstrukcja*, ponowna kompilacja i *zastąpienie*.
+W przypadku każdej migracji znaczącej skali (więcej niż 250 maszyn wirtualnych) zasoby są migrowane przy użyciu różnych opcji przejścia, które zostały omówione w pięciu rozwiązaniach: ponowne _hostowanie_, _Refaktoryzacja_ _,_ _rekonstrukcja_, ponowna kompilacja i _zastąpienie_.
 
-Niektóre obciążenia są modernizowane w ramach procesu *przebudowy* lub *zmiany architektury*, co umożliwia utworzenie nowocześniejszych aplikacji z nowymi funkcjami i możliwościami technicznymi. Inne zasoby przechodzą przez proces *refaktoryzacji* , na przykład przechodzenie do kontenerów lub inne bardziej nowoczesne metody hostingu i działania, które nie muszą mieć wpływu na bazę kodu rozwiązań. Często maszyny wirtualne i inne zasoby, które są bardziej dobrze ustanowione, przechodzą przez proces ponownego *hostowania* , przenosząc te zasoby z centrum danych do chmury. Niektóre obciążenia można migrować do chmury, ale zamiast tego należy je *zastąpić* przy użyciu usług w chmurze opartych na usługach (SaaS), które spełniają te same potrzeby&mdash;biznesowe, na przykład korzystając z pakietu Office 365 jako alternatywy do migrowania wystąpień programu Exchange Server.
+Niektóre obciążenia są modernizowane w ramach procesu _przebudowy_ lub _zmiany architektury_, co umożliwia utworzenie nowocześniejszych aplikacji z nowymi funkcjami i możliwościami technicznymi. Inne zasoby przechodzą przez proces _refaktoryzacji_ , na przykład przechodzenie do kontenerów lub inne bardziej nowoczesne metody hostingu i działania, które nie muszą mieć wpływu na bazę kodu rozwiązań. Często maszyny wirtualne i inne zasoby, które są bardziej dobrze ustanowione, przechodzą przez proces ponownego _hostowania_ , przenosząc te zasoby z centrum danych do chmury. Niektóre obciążenia można migrować do chmury, ale zamiast tego należy je _zastąpić_ przy użyciu usług w chmurze opartych na usługach (SaaS), które spełniają te same potrzeby biznesowe &mdash; , na przykład korzystając z pakietu Office 365 jako alternatywy do migrowania wystąpień programu Exchange Server.
 
-W większości scenariuszy pewne zdarzenie biznesowe wymusza tymczasową migrację zasobów w ramach procesu *ponownego hostowania*, po którym następuje bardziej istotne dodatkowe przejście z zastosowaniem jednej z innych strategii migracji po przeniesieniu do chmury. Ten proces jest często nazywany *przeniesieniem do chmury*.
+W większości scenariuszy pewne zdarzenie biznesowe wymusza tymczasową migrację zasobów w ramach procesu _ponownego hostowania_, po którym następuje bardziej istotne dodatkowe przejście z zastosowaniem jednej z innych strategii migracji po przeniesieniu do chmury. Ten proces jest często nazywany _przeniesieniem do chmury_.
 
 Podczas procesu [racjonalizacji majątku cyfrowego](../../../digital-estate/calculate.md) te typy decyzji są stosowane do każdego zasobu przeznaczonego do migracji. Jednak wymaganiem wstępnym na tym etapie jest przyjęcie założenia bazowego. Która z tych pięciu strategii migracji jest najbardziej zgodna z celami biznesowymi lub wynikam biznesowymi tego wysiłku związanego z migracją? Ta decyzja stanowi założenie przewodnie podczas całej migracji.
 
@@ -77,8 +77,8 @@ Często migracje są spowodowane ważnym zdarzeniem biznesowym, które jest zale
 Przed kontynuowaniem należy udokumentować następujące założenia i udostępnić je zespołowi strategicznemu ds. chmury i zespołom wdrożeniowym ds. chmury:
 
 - wyniki biznesowe,
-- Role, udokumentowane i ulepszone do *oceny*, *migracji*, *optymalizacji*i *zabezpieczania procesów migracji oraz zarządzania nimi* .
-- Definicje gotowych, udokumentowanych i rafinowanych w celu *oceny*, *migracji*, *optymalizacji*i *zabezpieczania procesów migracji oraz zarządzania nimi* .
+- Role, udokumentowane i ulepszone do _oceny_, _migracji_, _optymalizacji_i _zabezpieczania procesów migracji oraz zarządzania nimi_ .
+- Definicje gotowych, udokumentowanych i rafinowanych w celu _oceny_, _migracji_, _optymalizacji_i _zabezpieczania procesów migracji oraz zarządzania nimi_ .
 - Typ nakładu pracy
 - Skala nakładu pracy
 - Harmonogram prac
@@ -87,7 +87,7 @@ Przed kontynuowaniem należy udokumentować następujące założenia i udostęp
 
 Po zrozumieniu tego procesu wśród zespołu czasu na zapoznanie się z wymaganiami technicznymi. [Lista kontrolna planowania migracji](./planning-checklist.md) pomaga zapewnić gotowość podstawowych elementów technicznych do migracji.
 
-Po zrozumieniu tego procesu wśród zespołu jego czasu na zapoznanie się z wymaganiami technicznymi [Lista kontrolna planowania migracji] zagwarantuje, że podstawa techniczna będzie gotowa do migracji.
+Po zrozumieniu tego procesu wśród zespołu, jego czasu na zapoznanie się z wymaganiami technicznymi [Lista kontrolna planowania migracji](./planning-checklist.md) pomoże zapewnić, że platforma techniczna jest gotowa do migracji.
 
 > [!div class="nextstepaction"]
 > [Zapoznaj się z listą kontrolną planowania migracji](./planning-checklist.md)

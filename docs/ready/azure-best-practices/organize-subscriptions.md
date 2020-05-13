@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 79ba055381ccdcb5a70fb24f5da3554a8652fc97
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7f232b6af4dc501b775d99a567cdca11dc0500a2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80998017"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223426"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>Organizowanie wielu subskrypcji platformy Azure i zarządzanie nimi
 
@@ -22,7 +22,7 @@ Jeśli masz tylko kilka subskrypcji, niezależne zarządzanie nimi jest stosunko
 
 Grupy zarządzania platformy Azure umożliwiają wydajne zarządzanie dostępem, zasadami i zgodnością z subskrypcjami organizacji. Każda grupa zarządzania jest kontenerem dla co najmniej jednej subskrypcji.
 
-Grupy zarządzania są uporządkowane w jednej hierarchii. Ta hierarchia jest definiowana w dzierżawie usługi Azure Active Directory (Azure AD) w celu dopasowania jej do struktury i potrzeb organizacji. Najwyższy poziom jest nazywany *główną grupą zarządzania*. W hierarchii można zdefiniować maksymalnie sześć poziomów grup zarządzania. Każda subskrypcja jest zawarta tylko w jednej grupie zarządzania.
+Grupy zarządzania są uporządkowane w jednej hierarchii. Ta hierarchia jest definiowana w dzierżawie usługi Azure Active Directory (Azure AD) w celu dopasowania jej do struktury i potrzeb organizacji. Najwyższy poziom jest nazywany _główną grupą zarządzania_. W hierarchii można zdefiniować maksymalnie sześć poziomów grup zarządzania. Każda subskrypcja jest zawarta tylko w jednej grupie zarządzania.
 
 Platforma Azure udostępnia cztery poziomy zakresu zarządzania:
 
@@ -56,8 +56,8 @@ Jeśli spodziewasz się, że środowisko platformy Azure zostanie powiększone, 
 
 Podstawowe przykłady korzystania z grup zarządzania do rozdzielania różnych obciążeń:
 
-- **Obciążenia produkcyjne a nieprodukcyjne:** Grupy zarządzania umożliwiają łatwiejsze zarządzanie różnymi rolami i zasadami między subskrypcjami produkcyjnymi i nieprodukcyjnymi. Na przykład subskrypcje nieprodukcyjne mogą przyznawać deweloperom dostęp współautorów, natomiast w przypadku deweloperów produkcyjnych mają dostęp tylko do czytnika.
-- **Usługi wewnętrzne a usługi zewnętrzne:** Przedsiębiorstwa często mają różne wymagania, zasady i role dla usług wewnętrznych i zewnętrznych usług dostępnych dla klientów.
+- **Obciążenia produkcyjne i nieprodukcyjne:** Grupy zarządzania umożliwiają łatwiejsze zarządzanie różnymi rolami i zasadami między subskrypcjami produkcyjnymi i nieprodukcyjnymi. Na przykład subskrypcje nieprodukcyjne mogą przyznawać deweloperom dostęp współautorów, natomiast w przypadku deweloperów produkcyjnych mają dostęp tylko do czytnika.
+- **Usługi wewnętrzne i usługi zewnętrzne:** Przedsiębiorstwa często mają różne wymagania, zasady i role dla usług wewnętrznych i zewnętrznych usług dostępnych dla klientów.
 
 ## <a name="related-resources"></a>Powiązane zasoby
 

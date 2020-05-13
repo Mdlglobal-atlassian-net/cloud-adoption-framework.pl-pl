@@ -7,22 +7,24 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 396fecb03210980cae4c4f14cc6afcee331c3034
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4e3c9b7e924f1285389430ea9aae93cdecffea89
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997562"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222015"
 ---
+<!-- cSpell:ignore Getting Started -->
+
 # <a name="skills-readiness-for-cloud-migration"></a>Gotowość w zakresie umiejętności do migracji do chmury
 
 Podczas migracji do chmury istnieje duże ryzyko, że pracownicy, jak również niektórzy Partnerzy integracji z systemami lub partnerzy usług zarządzanych, będą musieli opracować nowe umiejętności, które będą obowiązywać podczas migracji.
 
-Istnieją cztery różne procesy wykonywane iteracyjnie w fazie migracji dowolnej podróży migracji. W poniższych sekcjach opisano niezbędne umiejętności dla każdego z tych procesów oraz podano odwołania do dwóch wymagań wstępnych dotyczących zasobów szkoleniowych.
+Istnieją cztery różne procesy, które są wykonywane iteracyjnie w metodologii migracji. W poniższych sekcjach opisano niezbędne umiejętności dla każdego z tych procesów oraz podano odwołania do dwóch wymagań wstępnych dotyczących zasobów szkoleniowych.
 
 ## <a name="prerequisites-skilling-resources"></a>Wymagania wstępne dotyczące zasobów szkoleniowych
 
-Podczas wdrażania procesów migracji będą wykorzystywane umiejętności nabyte w fazach [planowania](../strategy/suggested-skills.md) i [gotowości](../organize/suggested-skills.md) podróży migracji.
+Implementacja migracji procesów będzie kompilować na umiejętności nabyte w ramach [planu](../strategy/suggested-skills.md) i [gotowe](../organize/suggested-skills.md) fazy podróży migracji.
 
 ## <a name="assess-skilling-resources"></a>Ocena zasobów szkoleniowych
 

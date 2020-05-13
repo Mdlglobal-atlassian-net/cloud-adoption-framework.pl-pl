@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 90a6718c028023e1bae101b35fff873dd47e4ab2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 74d072210721212881ed7c9e8b17bcc2ce38573a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427953"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223392"
 ---
 # <a name="review-rationalization-decisions"></a>Przegląd decyzji dotyczących racjonalizacji
 
-W trakcie początkowej fazy strategii i planowania zalecamy zastosowanie podejścia [przyrostowego](../digital-estate/rationalize.md#incremental-rationalization) do cyfrowego podpisywania. Jednak takie podejście osadza niektóre założenia w podejmowanych decyzjach. Firma Microsoft zaleca zespołom ds. strategii chmurowych i zespołom wdrażania chmury przeglądanie tych decyzji w postaci uproszczonej dokumentacji dotyczącej obciążeń. Ten przegląd jest również dobrym terminem obejmującym zainteresowane strony biznesowe i sponsora wykonawczego w przyszłości.
+W trakcie wstępnej strategii i planowania etapów zalecamy zastosowanie podejścia [przyrostowego](../digital-estate/rationalize.md#incremental-rationalization) do cyfrowego podpisywania. Jednak takie podejście osadza niektóre założenia w podejmowanych decyzjach. Firma Microsoft zaleca zespołom ds. strategii chmurowych i zespołom wdrażania chmury przeglądanie tych decyzji w postaci uproszczonej dokumentacji dotyczącej obciążeń. Ten przegląd jest również dobrym terminem obejmującym zainteresowane strony biznesowe i sponsora wykonawczego w przyszłości.
 
 > [!IMPORTANT]
 > Dalsze sprawdzanie poprawności decyzji o racjonalizacji zostanie przeprowadzone w fazie oceny migracji. Ta weryfikacja koncentruje się na przeglądzie biznesowym w celu odpowiedniego dopasowania zasobów.
@@ -25,7 +25,7 @@ Aby zweryfikować decyzje z racjonalizacją, Skorzystaj z poniższych pytań, ab
 
 ## <a name="innovation-indicators"></a>Wskaźniki innowacji
 
-Jeśli wspólny przegląd następujących pytań spowoduje odpowiedź "tak", obciążenie może być lepszym kandydatem do innowacji. Takie obciążenie nie zostanie zmigrowane za pośrednictwem dźwigu i Shift ani modernizacji modelu. Zamiast tego, logika biznesowa lub struktury danych zostaną utworzone w postaci nowej lub rozbudowanej aplikacji. Takie podejście może być bardziej pracochłonne i czasochłonne. Jednak w przypadku obciążenia, które reprezentuje znaczące zwroty biznesowe, inwestycja jest uzasadniona.
+Jeśli wspólny przegląd następujących pytań daje pozytywną odpowiedź, obciążenie może być lepszym kandydatem do innowacji. Takie obciążenie nie zostanie zmigrowane za pośrednictwem dźwigu i Shift ani modernizacji modelu. Zamiast tego, logika biznesowa lub struktury danych zostaną utworzone w postaci nowej lub rozbudowanej aplikacji. Takie podejście może być bardziej pracochłonne i czasochłonne. Jednak w przypadku obciążenia, które reprezentuje znaczące zwroty biznesowe, inwestycja jest uzasadniona.
 
 - Czy aplikacje w tym obciążeniu tworzą zróżnicowanie rynkowe?
 - Czy istnieją proponowane lub zatwierdzone inwestycje mające na celu ulepszenie środowisk związanych z aplikacjami w tym obciążeniu?

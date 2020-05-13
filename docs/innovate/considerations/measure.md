@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 49377f419a8b5315a9f4a544fca37579b6dfbcaa
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bb7399f6c937ed433d4d8610a15153c10f01659c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427395"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222508"
 ---
 # <a name="measure-for-customer-impact"></a>Mierzenie wpływu na klientów
 
@@ -22,7 +22,12 @@ Istnieje kilka sposobów pomiaru wpływu na klientów. Ten artykuł pomoże Ci z
 
 W [fazie strategii](../../strategy/index.md) cyklu życia wdrożenia chmury sprawdzimy [motywacje](../../strategy/motivations.md) i [wyniki biznesowe](../../strategy/business-outcomes/index.md). Te praktyki zawierają zestaw metryk, za pomocą których można testować wpływ klientów. Po pomyślnym nadaniu innowacji można zobaczyć wyniki, które są wyrównane z celami strategicznymi.
 
-Przed ustanowieniem metryk uczenia należy zdefiniować niewielką liczbę metryk strategicznych, na które mają wpływ te innowacje. Ogólnie rzecz biorąc, te strategiczne metryki są wyrównane z co najmniej jednym z następujących obszarów wyników: [elastyczność biznesowa](../../strategy/business-outcomes/agility-outcomes.md), [zaangażowanie klientów](../../strategy/business-outcomes/engagement-outcomes.md), [zasięg klienta](../../strategy/business-outcomes/reach-outcomes.md), [wpływ finansowy](../../strategy/business-outcomes/fiscal-outcomes.md)lub w przypadku innowacji operacyjnych: [wydajność rozwiązania](../../strategy/business-outcomes/fiscal-outcomes.md).
+Przed ustanowieniem metryk uczenia należy zdefiniować niewielką liczbę metryk strategicznych, na które mają wpływ te innowacje. Ogólnie rzecz biorąc, te strategiczne metryki są wyrównane z co najmniej jednym z następujących obszarów wyników:
+    - [Elastyczność biznesowa](../../strategy/business-outcomes/agility-outcomes.md)
+    - [Zaangażowanie klienta](../../strategy/business-outcomes/engagement-outcomes.md)
+    - [Zasięg klienta](../../strategy/business-outcomes/reach-outcomes.md)
+    - [Wpływ finansowy](../../strategy/business-outcomes/fiscal-outcomes.md)
+    - [Wydajność rozwiązania](../../strategy/business-outcomes/fiscal-outcomes.md), w przypadku innowacji operacyjnych.
 
 Udokumentowanie uzgodnionych metryk i śledzenie ich wpływu na często. Ale nie oczekuje się, że żadne z tych metryk nie pojawią się dla kilku iteracji. Aby uzyskać więcej informacji na temat ustawiania i wyrównywania oczekiwań we wszystkich zaangażowanych stronach, zobacz [zobowiązanie do iteracji](./index.md#commitment-to-iteration).
 
@@ -47,19 +52,19 @@ W większości przypadków przepływ klienta będzie miał łatwo zdefiniowany p
 3. **Kroki rozwiązania:** Termin ten odnosi się do czynności, które są wymagane do przeniesienia klienta z początkowego wyzwalacza do pomyślnego wyniku. W każdym kroku powstaje Metryka szkoleniowa oparta na decyzji klienta o przejściu do następnego kroku.
 4. **Uzyskano indywidualne przyjęcie:** Przy następnym napotkaniu wyzwalacza, jeśli klient powróci do rozwiązania w celu uzyskania ich spełnienia, zostanie osiągnięte indywidualne przyjęcie.
 5. **Wskaźnik wyniku prowadzenia działalności:** Gdy klient zachowuje się w sposób, który przyczynia się do zdefiniowanego wyniku działania biznesowego, zostanie zaobserwowany wskaźnik wyniku działania biznesowego.
-6. **Prawdziwe innowacje:** Gdy *wskaźniki wyniku biznesowego* i *indywidualne przyjęcie* są wykonywane w odpowiedniej skali, zostały zrealizowane prawdziwe innowacje.
+6. **Prawdziwe innowacje:** Gdy _wskaźniki wyniku biznesowego_ i _indywidualne przyjęcie_ są wykonywane w odpowiedniej skali, zostały zrealizowane prawdziwe innowacje.
 
 Każdy krok przepływu klienta generuje metryki szkoleniowe. Po każdej iteracji (lub wersji) przetestowana jest nowa wersja hipotezy. W tym samym czasie, dostosowania do rozwiązania są testowane w celu odzwierciedlenia zmian w hipotezie. Gdy klienci postępują zgodnie z określoną ścieżką w danym kroku, zostanie zarejestrowana Metryka pozytywna. Gdy klienci odróżnią od określonej ścieżki, rejestrowana jest ujemna Metryka.
 
 Te liczniki wyrównania i odchyleń tworzą metryki szkoleniowe. Każdy z nich powinien być zarejestrowany i śledzony, gdy zespół wdrażający chmurę postępuje w kierunku wyników działalności biznesowej i prawdziwych innowacji. W temacie [Informacje o klientach](./learn.md)omówiono sposoby zastosowania tych metryk w celu uczenia się i skompilowania lepszych rozwiązań.
 
-### <a name="grouping-and-observing-customer-partners"></a>Grupowanie i obserwowanie partnerów klientów
+### <a name="group-and-observe-customer-partners"></a>Grupuj i obserwuj partnerów klientów
 
 Pierwszym pomiarem definiującym metryki szkoleniowe jest definicja partnera klienta. Każdy klient, który uczestniczy w cyklach innowacji, kwalifikuje się jako partner klienta. Aby precyzyjnie mierzyć zachowanie, należy użyć modelu kohorta w celu zdefiniowania partnerów klientów. W tym modelu klienci są pogrupowani w celu wyostrzenia wiedzy o zmianach w programie MVP. Te grupy są zwykle podobne do następujących:
 
 - **Eksperymentowanie lub Grupa koncentracji uwagi:** Grupowanie klientów na podstawie ich udziału w konkretnym eksperymentie przeznaczonym do testowania zmian w czasie.
 - **Segment:** Grupowanie klientów według rozmiaru firmy.
-- W **pionie:** Grupowanie klientów według *branżowych* , które reprezentują.
+- W **pionie:** Grupowanie klientów według _branżowych_ , które reprezentują.
 - **Indywidualne dane demograficzne:** Grupowanie na podstawie osobistych demograficznych, takich jak wiek i lokalizacja fizyczna.
 
 Te typy grup ułatwiają Weryfikowanie metryk uczenia w różnych sekcjach klientów, którzy wybierają partnerów w ramach wysiłków związanych z innowacją. Wszystkie kolejne metryki powinny pochodzić z definiowanego grupowania klientów.

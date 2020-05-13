@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5693072eee18e0e3ee45bd3d3fd62d3a7de5795e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 055279bccb9c2897b3cc67adf549f5f57c5bf5fc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81121703"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223001"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>Programowanie oparte na testach (TDD) dla stref wyładunkowych
 
@@ -38,7 +38,7 @@ Cykl, który sprawia, że Programowanie oparte na testach jest często nazywany 
 
 ![Proces projektowania oparty na testach dla stref wyładunku w chmurze](../../_images/ready/test-driven-development-process.png)
 
-- **Utwórz test:** Zdefiniuj test w celu sprawdzenia, czy zostały spełnione kryteria akceptacji dla określonej wartości — Dodaj funkcję. Gdy jest to możliwe, Automatyzuj testy.
+- **Utwórz test:** Zdefiniuj test w celu sprawdzenia, czy zostały spełnione kryteria akceptacji dla określonej wartości — Dodaj funkcję. Automatyzuj test wszędzie tam, gdzie to możliwe.
 - **Testowanie strefy docelowej:** Uruchom nowy test i wszystkie istniejące testy. Jeśli wymagana funkcja nie została jeszcze osiągnięta przez poprzednie wysiłki programistyczne i nie obejmuje oferty dostawcy chmury, test powinien zakończyć się niepowodzeniem. Uruchomienie istniejących testów pomaga sprawdzić, czy nowy test nie zmniejsza niezawodności funkcji strefy wyładunkowej dostarczanych przez istniejący kod.
 - **Rozwiń i refaktoryzację strefy docelowej:** Dodaj lub zmodyfikuj kod źródłowy, aby spełnić żądaną wartość — Dodaj funkcję i popraw ogólną jakość bazy kodu. Aby sprostać najpełniejszemu duchowi programowania opartego na testach, zespół platformy w chmurze może dodać kod, aby spełniał żądaną funkcję i nic nie rób. W tym samym czasie, jakość i konserwacja kodu są udostępnionym nakładem pracy. Po spełnieniu nowych żądań funkcji zespół platformy Cloud Platform powinien dążyć do ulepszania kodu przez usunięcie duplikatów i wyjaśnienie kodu. Uruchamianie testów między nowym kodem i refaktoryzacją kodu źródłowego jest wysoce zalecane.
 - **Wdrażanie strefy docelowej:** Gdy kod źródłowy będzie w stanie zrealizować żądanie funkcji, należy wdrożyć zmodyfikowaną strefę docelową dla dostawcy chmury w środowisku testowym lub piaskownicy.
@@ -53,9 +53,9 @@ W przypadku wstępnego wysiłku migracji definicja gotowe może być zbyt prosta
 - Początkowa strefa docelowa zostanie użyta do hostowania 10 obciążeń do celów nauki początkowej. Te obciążenia nie mają znaczenia dla działalności firmy i nie mają dostępu do poufnych danych. W przyszłości najprawdopodobniej te obciążenia zostaną wydane w środowisku produkcyjnym, ale nie będzie można zmienić jej znaczenia. Aby obsłużyć te obciążenia, zespół wdrażania chmury będzie musiał spełnić następujące kryteria:
 
 - Segmentacja sieci do dopasowania z proponowanym projektem sieci.
-- Dostęp do zasobów obliczeniowych, magazynu i sieci w celu hostowania obciążeń wyrównanych do funkcji odnajdywania cyfr cyfrowych
+- Dostęp do zasobów obliczeniowych, magazynu i sieci w celu hostowania obciążeń wyrównanych do odnajdowania urządzeń cyfrowych.
 - Określanie nazw i tagowanie schematu do łatwego użycia.
-- To środowisko powinno być traktowane jako "zdemilitaryzowana Zone (DMZ)" z dostępem do publicznego Internetu
+- To środowisko powinno być traktowane jako _strefa zdemilitaryzowana (DMZ)_ z dostępem do publicznej sieci Internet.
 - W trakcie podejmowania wysiłków zespół ds. wdrażania w chmurze chce, aby w celu zmiany konfiguracji usług był tymczasowy dostęp do środowiska.
 - W przypadku tylko świadomości: przed wydaniem produkcyjnym te obciążenia będą wymagały integracji z firmowym dostawcą tożsamości w celu zarządzania trwającą tożsamością i dostępem do celów związanych z zarządzaniem operacjami. Czas, w którym powinien zostać odwołany dostęp zespołu wdrożenia chmury.
 

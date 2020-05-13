@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 9ef3c108d330cd52b470c590a48f79c65502a7e6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f746b00773dc4a9fd3a6dc0fe38a8a0e56d94fcc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431633"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222916"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Tworzenie uzasadnienia biznesowego migracji do chmury
 
@@ -21,19 +21,29 @@ Migracje w chmurze mogą generować wczesne zwroty z inwestycji w działania zwi
 
 ## <a name="dispelling-cloud-migration-myths"></a>Mitów migracji do chmury
 
-**Omówienia: chmura jest zawsze tańsza.** Często uważa się, że działanie centrum danych w chmurze jest zawsze tańsze niż lokalne działanie. To założenie może być zwykle prawdziwe, ale nie zawsze jest to konieczne. Czasami koszty operacyjne chmury są wyższe. Te wyższe koszty często wynikają z słabego ładu kosztów, niewyrównanych architektur systemu, duplikowania procesów, nietypowych konfiguracji systemu lub większego kosztu kadr. Na szczęście można złagodzić wiele z tych problemów, aby utworzyć Wczesne zwrotne. Postępując zgodnie ze wskazówkami w temacie [Tworzenie uzasadnienia biznesowego](#build-the-business-justification) , można ułatwić wykrywanie i uniknięcie nieodpowiednich wyrównania. Odpisownia innych mitów opisanych tutaj może pomóc.
+### <a name="myth-the-cloud-is-always-cheaper"></a>Omówienia: chmura jest zawsze tańsza
 
-**Omówienia: wszystkiego należy przejść do chmury.** W rzeczywistości niektóre sterowniki biznesowe mogą prowadzić do wyboru rozwiązania hybrydowego. Przed zakończeniem pracy z modelem biznesowym, należy przeprowadzić analizę w pierwszej kolejności, zgodnie z opisem w [artykułach](../digital-estate/5-rs-of-rationalization.md)o znakach cyfrowych. Aby uzyskać więcej informacji na temat indywidualnych sterowników ilościowych związanych z racjonalizacją, zobacz [5 RS](../digital-estate/5-rs-of-rationalization.md). Jedno z tych metod będzie używać łatwo uzyskane dane spisu i krótkiej analizy ilościowej w celu zidentyfikowania obciążeń lub aplikacji, które mogą spowodować zwiększenie kosztów w chmurze. Metody te mogą również identyfikować zależności lub wzorce ruchu, które wymagają rozwiązania hybrydowego.
+Często uważa się, że działanie centrum danych w chmurze jest zawsze tańsze niż lokalne działanie. To założenie może być zwykle prawdziwe, ale nie zawsze jest to konieczne. Czasami koszty operacyjne chmury są wyższe. Te wyższe koszty często wynikają z słabego ładu kosztów, niewyrównanych architektur systemu, duplikowania procesów, nietypowych konfiguracji systemu lub większego kosztu kadr. Na szczęście można złagodzić wiele z tych problemów, aby utworzyć Wczesne zwrotne. Postępując zgodnie ze wskazówkami w temacie [Tworzenie uzasadnienia biznesowego](#build-the-business-justification) , można ułatwić wykrywanie i uniknięcie nieodpowiednich wyrównania. Odpisownia innych mitów opisanych tutaj może pomóc.
 
-**Omówienia: dublowanie środowiska lokalnego pomoże mi zaoszczędzić pieniądze w chmurze.** W przypadku planowania poza cyframi nie są one wykrywane przez firmy w celu wykrycia niewykorzystanej pojemności ponad 50% środowiska aprowizacji. Jeśli zasoby są obsługiwane w chmurze w celu dopasowania do bieżącej aprowizacji, oszczędności kosztów są trudne do realizacji. Rozważ zmniejszenie rozmiaru wdrożonych zasobów, aby wyrównać wzorce użycia zamiast wzorców udostępniania.
+### <a name="myth-everything-should-go-into-the-cloud"></a>Omówienia: wszystkiego należy przejść do chmury
 
-**Omówienia: serwer kosztuje przypadki biznesowe w przypadku migracji do chmury.** Czasami to założenie ma wartość true. W przypadku niektórych firm ważna jest redukcja bieżących wydatków inwestycyjnych związanych z serwerami. Jest to jednak zależne od kilku czynników. Firmy z pięcioma lata do ośmiu lat cykl odświeżania sprzętu prawdopodobnie nie będą widzieć szybkiego powracania do migracji w chmurze. Firmy z znormalizowanymi lub wymuszonymi cyklami odświeżania mogą szybko trafiać do punktu przerwania. W obu przypadkach inne wydatki mogą być wyzwalaczami finansowymi, które uzasadniają migrację. Poniżej przedstawiono kilka przykładów kosztów, które są często używane w przypadku, gdy firmy podejmują wyłącznie serwerową lub tylko maszynę wirtualną widok kosztów:
+W rzeczywistości niektóre sterowniki biznesowe mogą prowadzić do wyboru rozwiązania hybrydowego. Przed zakończeniem pracy z modelem biznesowym, należy przeprowadzić analizę w pierwszej kolejności, zgodnie z opisem w [artykułach](../digital-estate/5-rs-of-rationalization.md)o znakach cyfrowych. Aby uzyskać więcej informacji na temat indywidualnych sterowników ilościowych związanych z racjonalizacją, zobacz [pięć](../digital-estate/5-rs-of-rationalization.md). Jedno z tych metod będzie używać łatwo uzyskane dane spisu i krótkiej analizy ilościowej w celu zidentyfikowania obciążeń lub aplikacji, które mogą spowodować zwiększenie kosztów w chmurze. Metody te mogą również identyfikować zależności lub wzorce ruchu, które wymagają rozwiązania hybrydowego.
 
-- Koszty oprogramowania dla wirtualizacji, serwerów i programów pośredniczących mogą być wszechstronne. Dostawcy chmury eliminują niektóre z tych kosztów. Dwa przykłady dostawcy chmury obniżają koszty wirtualizacji to [korzyść użycia hybrydowego platformy Azure](https://azure.microsoft.com/pricing/hybrid-benefit/#services) i programy [rezerwacji platformy Azure](https://azure.microsoft.com/reservations) .
+### <a name="myth-mirroring-my-on-premises-environment-will-help-me-save-money-in-the-cloud"></a>Omówienia: dublowanie środowiska lokalnego pomoże mi zaoszczędzić pieniądze w chmurze
+
+W przypadku planowania poza cyframi nie są one wykrywane przez firmy w celu wykrycia niewykorzystanej pojemności ponad 50% środowiska aprowizacji. Jeśli zasoby są obsługiwane w chmurze w celu dopasowania do bieżącej aprowizacji, oszczędności kosztów są trudne do realizacji. Rozważ zmniejszenie rozmiaru wdrożonych zasobów, aby wyrównać wzorce użycia zamiast wzorców udostępniania.
+
+### <a name="myth-server-costs-drive-business-cases-for-cloud-migration"></a>Omówienia: koszty serwera na potrzeby migracji w chmurze
+
+Czasami to założenie ma wartość true. W przypadku niektórych firm ważna jest redukcja bieżących wydatków inwestycyjnych związanych z serwerami. Jest to jednak zależne od kilku czynników. Firmy z pięcioma lata do ośmiu lat cykl odświeżania sprzętu prawdopodobnie nie będą widzieć szybkiego powracania do migracji w chmurze. Firmy z znormalizowanymi lub wymuszonymi cyklami odświeżania mogą szybko trafiać do punktu przerwania. W obu przypadkach inne wydatki mogą być wyzwalaczami finansowymi, które uzasadniają migrację. Poniżej przedstawiono kilka przykładów kosztów, które są często używane w przypadku, gdy firmy podejmują wyłącznie serwerową lub tylko maszynę wirtualną widok kosztów:
+
+- Koszty oprogramowania dla wirtualizacji, serwerów i programów pośredniczących mogą być wszechstronne. Dostawcy chmury eliminują niektóre z tych kosztów. Dwa przykłady dostawcy chmury obniżają koszty wirtualizacji to [korzyść użycia hybrydowego platformy Azure](https://azure.microsoft.com/pricing/hybrid-benefit/#services) i [Azure Reservations](https://azure.microsoft.com/reservations) programów.
 - Straty biznesowe wynikające z przerwy mogą szybko przekroczyć koszty sprzętu lub oprogramowania. Jeśli bieżące centrum danych jest niestabilne, Pracuj z firmą, aby określić wpływ przestoju na koszty sprzedaży lub rzeczywiste koszty biznesowe.
 - Koszty środowiska mogą być również istotne. W przypadku średniej rodziny American, dom to największe inwestycje i najwyższy koszt w budżecie. Takie samo jest często prawdziwe w przypadku centrów danych. Koszty związane z nieruchomościami, obiektami i narzędziami stanowią godziwą część kosztów lokalnych. W przypadku wycofania centrów danych te pomieszczenia mogą być przenoszone lub firma może potencjalnie zostać wykorzystana z tych kosztów całkowicie.
 
-**Omówienia: model wydatków operacyjnych jest lepszy niż model wydatków inwestycyjnych.** Zgodnie z opisem w artykule dotyczącej [wyników podatkowych](./business-outcomes/fiscal-outcomes.md) , model wydatków operacyjnych może być dobry. Jednak niektóre branże powodują ujemne wyświetlanie wydatków operacyjnych. Poniżej przedstawiono kilka przykładów, które spowodują wyzwolenie ściślejszej integracji z jednostkami księgowości i biznesowymi w odniesieniu do konwersacji wydatków operacyjnych:
+### <a name="myth-an-operating-expense-model-is-better-than-a-capital-expense-model"></a>Omówienia: model wydatków operacyjnych jest lepszy niż model wydatków inwestycyjnych
+
+Zgodnie z opisem w artykule dotyczącej [wyników podatkowych](./business-outcomes/fiscal-outcomes.md) , model wydatków operacyjnych może być dobry. Jednak niektóre branże powodują ujemne wyświetlanie wydatków operacyjnych. Poniżej przedstawiono kilka przykładów, które spowodują wyzwolenie ściślejszej integracji z jednostkami księgowości i biznesowymi w odniesieniu do konwersacji wydatków operacyjnych:
 
 - Gdy firma widzi zasoby kapitałowe jako czynnik do oceny działalności biznesowej, obniżki wydatków kapitałowych mogą być wynikiem ujemnym. Chociaż nie jest to standardowy Standard, ten tonacji jest najczęściej widziany w branży handlowej, produkcyjnej i budowlanej.
 - Prywatna firma lub firma, która dąży do napływu kapitału, może rozważyć zwiększenie kosztów operacyjnych.
@@ -43,7 +53,9 @@ Firmy mogą lepiej zobaczyć koszty operacyjne, które są bardziej korzystne ni
 
 Przed wprowadzeniem uzasadnienia biznesowego, które koncentruje się na konwersji z wydatków inwestycyjnych na koszty operacyjne, rozumiesz, że jest to lepsze dla Twojej firmy. Rozliczanie i zaopatrzenie mogą często pomóc w dopasowaniu komunikatów do celów finansowych.
 
-**Omówienia: przejście do chmury przypomina Przerzucanie przełącznika.** Migracje są ręcznie intensywną transformację techniczną. Podczas opracowywania uzasadnienia biznesowego, szczególnie uzasadnienia, które są zależne od czasu, należy wziąć pod uwagę następujące aspekty, które mogą zwiększyć czas migracji zasobów:
+### <a name="myth-moving-to-the-cloud-is-like-flipping-a-switch"></a>Omówienia: przejście do chmury przypomina przełączenie
+
+Migracje są ręcznie intensywną transformację techniczną. Podczas opracowywania uzasadnienia biznesowego, szczególnie uzasadnienia, które są zależne od czasu, należy wziąć pod uwagę następujące aspekty, które mogą zwiększyć czas migracji zasobów:
 
 - **Ograniczenia przepustowości:** Przepustowość między bieżącym centrum danych a dostawcą chmury będzie mieć dyski osi czasu podczas migracji.
 - **Testowanie osi czasu:** Testowanie aplikacji w firmie w celu zapewnienia gotowości i wydajności może być czasochłonne. Wyrównywanie użytkowników zaawansowanych i procesów testowania ma kluczowe znaczenie.
@@ -68,8 +80,8 @@ Możemy rozpakować to równanie, aby uzyskać widok specyficzny dla migracji fo
 
 ## <a name="migration-specific-initial-investment"></a>Wstępne inwestycje specyficzne dla migracji
 
-- Dostawcy usług w chmurze, np. Kalkulatory oferty platformy Azure, aby oszacować inwestycje w chmurę. [Kalkulator cen platformy Azure](https://azure.microsoft.com/pricing/calculator) to jeden przykład.
-- Niektórzy dostawcy chmury udostępniają również Kalkulatory różnic kosztów. [Kalkulator całkowitego kosztu posiadania (TCO) na platformie Azure](https://azure.com/tco) to jeden przykład.
+- Dostawcy chmury oferują Kalkulatory umożliwiające oszacowanie inwestycji w chmurę. Firma Microsoft oferuje [Kalkulator cen platformy Azure](https://azure.microsoft.com/pricing/calculator).
+- Niektórzy dostawcy chmury oferują również Kalkulatory różnic kosztów. Firma Microsoft oferuje [Kalkulator całkowitego kosztu posiadania (TCO) na platformie Azure](https://azure.microsoft.com/pricing/tco/calculator).
 - W przypadku bardziej dopracowanych struktur kosztów należy wziąć pod uwagę ćwiczenie [planowania cyfr cyfrowych](../digital-estate/index.md) .
 - Oszacuj koszt migracji.
 - Oszacuj koszt wszelkich oczekiwanych możliwości szkoleniowych. [Microsoft Learn](https://docs.microsoft.com/learn) może pomóc w ograniczeniu kosztów.
@@ -84,7 +96,7 @@ Po rozważeniu możliwości odblokowanych przez chmurę należy współpracować
 
 ## <a name="migration-specific-cost-deltas"></a>Różnice kosztów specyficzne dla migracji
 
-Oblicz zmiany w kosztach, które będą pochodzić z proponowanej migracji. Zobacz artykuł [Modele finansowe](./financial-models.md) , aby uzyskać szczegółowe informacje o typach różnic kosztów. Dostawcy chmury często oferują narzędzia do obliczania różnic kosztów. [Kalkulator całkowitego kosztu posiadania (TCO) na platformie Azure](https://azure.com/tco) to jeden przykład.
+Oblicz zmiany w kosztach, które będą pochodzić z proponowanej migracji. Zobacz artykuł [Modele finansowe](./financial-models.md) , aby uzyskać szczegółowe informacje o typach różnic kosztów. Dostawcy chmury często oferują narzędzia do obliczania różnic kosztów. [Kalkulator całkowitego kosztu posiadania (TCO) na platformie Azure](https://azure.microsoft.com/pricing/tco/calculator) to jeden przykład.
 
 Inne przykłady kosztów, które mogą zostać zredukowane przez migrację w chmurze:
 

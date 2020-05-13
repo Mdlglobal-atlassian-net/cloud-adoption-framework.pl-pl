@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bc14bb03f048ab335cd836c6a4a520b8df0ccad8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c310bb6bf7bf2054f315d80c5bddf75871edef09
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997973"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223069"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -59,10 +59,10 @@ Sieć platformy Azure składa się z wielu produktów i usług, które zapewniaj
 | Chcę zapewnić niezwykle szybkie odpowiedzi DNS i niezwykle wysoką dostępność, aby zaspokoić wszystkie potrzeby związane z domeną. | [System DNS platformy Azure](https://docs.microsoft.com/azure/dns) |
 | Chcę przyspieszyć dostarczanie zawartości o wysokiej przepustowości do klientów na całym świecie — od aplikacji i przechowywanej zawartości, po przesyłanie strumieniowe filmów wideo. | [Azure Content Delivery Network](https://docs.microsoft.com/azure/cdn) |
 | Chcę chronić moje aplikacje platformy Azure przed atakami DDoS. | [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) |
-| Chcę w sposób optymalny dystrybuować ruch do usług w obrębie globalnych regionów platformy Azure, zapewniając wysoką dostępność i krótki czas reakcji. | [Traffic Manager platformy Azure](https://docs.microsoft.com/azure/traffic-manager)<br/>[Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
+| Chcę w sposób optymalny dystrybuować ruch do usług w obrębie globalnych regionów platformy Azure, zapewniając wysoką dostępność i krótki czas reakcji. | [Traffic Manager platformy Azure](https://docs.microsoft.com/azure/traffic-manager) <br><br> [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
 | Chcę dodać łączność z sieciami prywatnymi, aby móc uzyskać dostęp do usług w chmurze firmy Microsoft z sieci firmowych, tak jakby znajdowały się lokalnie w centrum danych. | [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute) |
 | Chcę monitorować i diagnozować warunki na poziomie sieci. | [Azure Network Watcher](https://docs.microsoft.com/azure/network-watcher) |
-| Potrzebuję natywnych możliwości zapory z wbudowaną wysoką dostępnością, skalowalnością w chmurze i konserwacją bez ograniczeń. | [Azure Firewall](https://docs.microsoft.com/azure/firewall) |
+| Potrzebuję natywnych możliwości zapory z wbudowaną wysoką dostępnością, skalowalnością w chmurze i konserwacją bez ograniczeń. | [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) |
 | Chcę bezpiecznie połączyć biura firmy, punkty sprzedaży detalicznej i witryny. | [Wirtualna sieć WAN platformy Azure](https://docs.microsoft.com/azure/virtual-wan) |
 | Potrzebuję skalowalnego punktu dostarczania z rozszerzonymi zabezpieczeniami na potrzeby globalnych aplikacji internetowych opartych na mikrousługach. | [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
 
@@ -74,14 +74,17 @@ Po zidentyfikowaniu usług sieciowych platformy Azure potrzebnych do obsługi ob
 
 W poniższej tabeli przedstawiono podstawowe scenariusze obsługiwane przez te wzorce:
 
-| **Scenariusz**                                                                                                                                                                                                                                                                                                                        | **Sugerowana architektura sieci**                                                  |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Wszystkie obciążenia hostowane na platformie Azure wdrożone w strefie docelowej będą całkowicie PaaS, nie wymagają sieci wirtualnej ani nie są częścią szerszego wysiłku związanego z wdrażaniem w chmurze, który obejmuje zasoby IaaS.                                                                                                                        | [Tylko usługa PaaS](../../decision-guides/software-defined-network/paas-only.md)            |
-| Obciążenia hostowane na platformie Azure wymagają wdrożenia zasobów opartych na usłudze IaaS, takich jak maszyny wirtualne, lub sieci wirtualnej, ale nie wymagają łączności ze środowiskiem lokalnym.                                                                                                                                          | [Natywne dla chmury](../../decision-guides/software-defined-network/cloud-native.md)      |
-| Obciążenia hostowane na platformie Azure wymagają ograniczonego dostępu do zasobów lokalnych, ale wymagane jest traktowanie połączeń w chmurze jako niezaufanych.                                                                                                                                                                                           | [Strefa DMZ w chmurze](../../decision-guides/software-defined-network/cloud-dmz.md)            |
-| Obciążenia hostowane na platformie Azure wymagają ograniczonego dostępu do zasobów lokalnych i planujesz wdrożyć sprawdzone zasady zabezpieczeń oraz bezpieczną łączność między chmurą i środowiskiem lokalnym.                                                                                                                         | [Połączenie hybrydowe](../../decision-guides/software-defined-network/hybrid.md)                  |
+| **Scenariusz**                                                                                                                                                                                                                                                                                                                                                          | **Sugerowana architektura sieci**                                                  |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Wszystkie obciążenia hostowane na platformie Azure wdrożone w strefie docelowej będą całkowicie PaaS, nie wymagają sieci wirtualnej ani nie są częścią szerszego wysiłku związanego z wdrażaniem w chmurze, który obejmuje zasoby IaaS.                                                                                                                                                          | [Tylko usługa PaaS](../../decision-guides/software-defined-network/paas-only.md)            |
+| Obciążenia hostowane na platformie Azure wymagają wdrożenia zasobów opartych na usłudze IaaS, takich jak maszyny wirtualne, lub sieci wirtualnej, ale nie wymagają łączności ze środowiskiem lokalnym.                                                                                                                                                                            | [Natywne dla chmury](../../decision-guides/software-defined-network/cloud-native.md)      |
+| Obciążenia hostowane na platformie Azure wymagają ograniczonego dostępu do zasobów lokalnych, ale wymagane jest traktowanie połączeń w chmurze jako niezaufanych.                                                                                                                                                                                                                             | [Strefa DMZ w chmurze](../../decision-guides/software-defined-network/cloud-dmz.md)            |
+| Obciążenia hostowane na platformie Azure wymagają ograniczonego dostępu do zasobów lokalnych i planujesz wdrożyć sprawdzone zasady zabezpieczeń oraz bezpieczną łączność między chmurą i środowiskiem lokalnym.                                                                                                                                                           | [Hybrydowe](../../decision-guides/software-defined-network/hybrid.md)                  |
 | Musisz wdrożyć dużą liczbę maszyn wirtualnych i obciążeń, które mogą przekraczać [limity subskrypcji platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits), i zarządzać nimi, musisz udostępnić usługi w różnych subskrypcjach lub potrzebujesz bardziej rozbudowanej struktury dla roli, aplikacji lub podziału uprawnień. | [Gwiazda](../../decision-guides/software-defined-network/hub-spoke.md)        |
-| Istnieje wiele oddziałów, które muszą łączyć się ze sobą i z platformą Azure.                                                                                                                                                                                                                                                       | [Wirtualna sieć WAN platformy Azure](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+| Istnieje wiele oddziałów, które muszą łączyć się ze sobą i z platformą Azure.                                                                                                                                                                                                                                                                                         | [Wirtualna sieć WAN platformy Azure](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
 
 ### <a name="azure-virtual-datacenter"></a>Wirtualne centrum danych Azure
 
@@ -97,6 +100,6 @@ Oprócz korzystania z tych wzorców architektury, jeśli grupa IT przedsiębiors
 
 W ramach procesu projektowania sieci zapoznaj się z następującymi artykułami:
 
-- [Planowanie sieci wirtualnej](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Dowiedz się, jak zaplanować sieci wirtualne na podstawie wymagań dotyczących izolacji, łączności i lokalizacji.
-- [Najlepsze rozwiązania z zakresu zabezpieczeń sieci na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) Dowiedz się więcej o najlepszych rozwiązaniach dotyczących platformy Azure, które mogą pomóc w ulepszaniu zabezpieczeń sieci.
-- [Najlepsze rozwiązania dotyczące sieci podczas migrowania obciążeń do platformy Azure](https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) Uzyskaj dodatkowe wskazówki dotyczące implementowania sieci platformy Azure do obsługi obciążeń opartych na rozwiązaniach IaaS i PaaS.
+- [Planowanie sieci wirtualnej](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Dowiedz się, jak zaplanować sieci wirtualne na podstawie wymagań dotyczących izolacji, łączności i lokalizacji.
+- [Najlepsze rozwiązania z zakresu zabezpieczeń sieci na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) Dowiedz się więcej o najlepszych rozwiązaniach dotyczących platformy Azure, które mogą pomóc w ulepszaniu zabezpieczeń sieci.
+- [Najlepsze rozwiązania dotyczące sieci podczas migrowania obciążeń do platformy Azure](https://docs.microsoft.com/azure/migrate/migrate-best-practices-networking?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) Uzyskaj dodatkowe wskazówki dotyczące implementowania sieci platformy Azure do obsługi obciążeń opartych na rozwiązaniach IaaS i PaaS.

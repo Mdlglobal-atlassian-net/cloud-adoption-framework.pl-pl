@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a03abe234773139e291679e986452702e849c33e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5ddbd7a8f3780d4dc65492c9298119d0095f91db
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997217"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222593"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Kompiluj konsensus na wartość biznesową innowacji
 
@@ -47,7 +47,7 @@ Jeśli zespół nie odpowie na wszystkie cztery pytania w ciągu 30 minut, wówc
 
 Struktura wdrażania chmury jest zgodna z określoną ścieżką: strategia, planowanie, gotowe i przyjęte. Innowacje w chmurze mieszczą się w fazie wdrażania tego procesu. Odpowiedzi na [pytania kwalifikujące](#qualifying-questions) trzy i cztery problemy. Gdy te odpowiedzi są nieprawidłowo wyrównane, oznacza to, że Twoja organizacja nie wystąpiła coś w fazie strategii cyklu życia wdrożenia chmury. Kilka z następujących scenariuszy może być w trakcie odtwarzania.
 
-- **Możliwość wyrównania:** Gdy zainteresowane strony biznesowe nie mogą wyrazić zgody na motywacje i wyniki biznesowe związane z wysiłkią innowacyjną w chmurze, jest to objaw większego wyzwania. Ćwiczenia w [fazie strategii chmury](../strategy/index.md) mogą być przydatne podczas opracowywania wyrównania między uczestnikami biznesowymi. Ponadto zdecydowanie zaleca się, aby ten sam uczestnik projektu mógł utworzyć [zespół strategii chmurowej](../organize/cloud-strategy.md) , który jest regularnie zgodny.
+- **Możliwość wyrównania:** Gdy zainteresowane strony biznesowe nie mogą wyrazić zgody na motywacje i wyniki biznesowe związane z wysiłkią innowacyjną w chmurze, jest to objaw większego wyzwania. Ćwiczenia w [metodologii strategii](../strategy/index.md) mogą być przydatne podczas opracowywania wyrównania między udziałowcami biznesowymi. Ponadto zdecydowanie zaleca się, aby ten sam uczestnik projektu mógł utworzyć [zespół strategii chmurowej](../organize/cloud-strategy.md) , który jest regularnie zgodny.
 
 - **Szansa komunikacji:** Gdy zespół programistyczny nie jest w stanie wyrazić zgody na motywacje i wyniki biznesowe, może to być objawem strategicznych luk w komunikacji. Możesz szybko rozwiązać ten problem, przeglądając strategię chmury z zespołem ds. wdrażania w chmurze. Po upływie kilku tygodni od przejrzenia zespół powinien powtórzyć zadanie kwalifikujące się do realizacji.
 
@@ -66,7 +66,7 @@ Bardzo często odpowiedzi na pytania i dwa są niewyrównane. Podczas wczesnych 
 - **Możliwość kompilacji:** Zespoły mogą być nieprawidłowo wyrównane, ponieważ nie zgadzają się na sposób rozwiązania potrzeb klientów. Takie porozumienie zazwyczaj wskazuje, że zespół jest [opóźniony przez przedwcześnie](./considerations/build.md#reduce-complexity-and-delay-technical-spikes)przekroczenia techniczne. Aby zapewnić, że zespół koncentruje się na kliencie, Zacznij od pierwszej iteracji i Kompiluj mały minimalny produkt żywotny (MVP), aby zająć się częścią hipotezy. Aby uzyskać dodatkowe wskazówki ułatwiające zespołowi przechodzenie do przodu, zobacz [programowanie cyfr cyfrowych](./considerations/invention.md).
 - **Szansa szkoleniowa:** Każdy zespół może być nieprawidłowo wyrównany, ponieważ potrzebują szczegółowych wymagań technicznych i szczegółowych wymagań funkcjonalnych. Ta potrzeba może prowadzić do szkolenia w metodologiach Agile. Gdy Kultura zespołu nie jest gotowa do procesów Agile, można znaleźć innowacje i zachować tempo na rynku jako wyzwania. Aby poznać zasoby szkoleniowe dotyczące DevOps i metod agile, zobacz:
   - [Rozwijanie praktyk metodyki DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
-  - [Tworzenie aplikacji za pomocą usługi Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
+  - [Tworzenie aplikacji przy użyciu usługi Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
   - [Wdrażanie aplikacji przy użyciu usługi Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)
 
 Postępując zgodnie z metodologią i narzędziami do zarządzania zaległościami w poszczególnych sekcjach tego artykułu, można ułatwić tworzenie wyrównania rozwiązania.
