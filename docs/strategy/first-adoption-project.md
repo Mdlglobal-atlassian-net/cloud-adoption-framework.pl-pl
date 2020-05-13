@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 86acc05f9eaf38193db6c0f1ad1c708ed810c7be
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 31c0335cd4f1a6d8ef8e4793e3f6fb4fa383d339
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396030"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221488"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -20,15 +20,17 @@ ms.locfileid: "81396030"
 
 Jest to krzywa szkoleniowa i zobowiązanie czasowe związane z planowaniem wdrażania w chmurze. Nawet w przypadku doświadczonych zespołów, odpowiednie planowanie jest czasochłonne: czas na dostosowanie uczestników projektu, czas zbierania i analizowania danych, czas na weryfikację długoterminowych decyzji oraz czas na dostosowanie osób, procesów i technologii. W najbardziej wydajnych wysiłkach planowanie zwiększa się równolegle z wdrażaniem, ulepszanie przy użyciu poszczególnych wersji i każdej migracji obciążenia do chmury. Ważne jest, aby zrozumieć różnicę między planem wdrażania chmury a strategią wdrażania chmury. Potrzebujesz dobrze zdefiniowanej strategii, aby ułatwić i poprowadzić implementację planu wdrażania w chmurze.
 
-Platforma wdrażania w chmurze dla platformy Azure przedstawia procesy wdrażania chmury oraz obsługę obciążeń hostowanych w chmurze. Każdy proces w fazach definiowania strategii, planowania, gotowości, przyjmowania i eksploatacji wymaga niewielkich rozwinięcia umiejętności technicznych, gospodarczych i operacyjnych. Niektóre z tych umiejętności mogą pochodzić z uczenia bezpośredniego. Jednak wiele z nich jest najbardziej efektywnie nabytych przez praktyczne środowisko pracy.
+<!-- docsTest:ignore "Strategy, Plan, Ready, Adopt, and Operate phases" -->
+
+Platforma wdrażania w chmurze dla platformy Azure przedstawia procesy wdrażania chmury oraz obsługę obciążeń hostowanych w chmurze. Każdy proces w fazach strategii, planowania, gotowości, przyjęcia i eksploatacji wymaga niewielkich rozwinięcia umiejętności technicznych, gospodarczych i operacyjnych. Niektóre z tych umiejętności mogą pochodzić z uczenia bezpośredniego. Jednak wiele z nich jest najbardziej efektywnie nabytych przez praktyczne środowisko pracy.
 
 Rozpoczęcie pierwszego procesu wdrażania równolegle z programowaniem planu zapewnia pewne korzyści:
 
-- Ustanów sposób myślenia wzrostu, aby zachęcić do uczenia i eksploracji
-- Zapewnianie zespołowi możliwości rozwoju niezbędnych umiejętności
-- Twórz sytuacje, które zachęcają do współpracy z nowymi podejściami
-- Identyfikowanie luk w zakresie umiejętności i potencjalnych potrzeb związanych z partnerstwem
-- Podaj materialne dane wejściowe do planu
+- Ustanów sposób myślenia wzrostu, aby zachęcić do uczenia się i eksploracji.
+- Zapewnij zespołowi możliwość tworzenia niezbędnych umiejętności.
+- Twórz sytuacje, które zachęcają do współpracy.
+- Zidentyfikuj luki w zakresie umiejętności i potencjalne potrzeby partnerstwa.
+- Podaj materialne dane wejściowe planu.
 
 ## <a name="first-project-criteria"></a>Kryteria pierwszego projektu
 

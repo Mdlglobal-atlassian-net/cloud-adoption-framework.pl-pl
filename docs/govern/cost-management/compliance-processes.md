@@ -1,6 +1,6 @@
 ---
 title: Cost Management procesów zgodności z zasadami
-description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby poznać podejście do tworzenia procesów, które obsługują Cost Management dyscypliny ładu.
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby poznać podejście do tworzenia procesów, które obsługują dyscyplinę Cost Managementową.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1dc9a438a502a63c6c989f822330acd2ee7cef5f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 85df89eb5cf17631e63441a806ab15bcfd94c326
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434680"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220689"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>Cost Management procesów zgodności z zasadami
 
-W tym artykule omówiono sposób tworzenia procesów, które obsługują [Cost Management](./index.md) dyscypliny ładu. Efektywne zarządzanie kosztami chmury rozpoczyna się od cyklicznych procesów ręcznych zaprojektowanych w celu zapewnienia zgodności z zasadami. Wymaga to regularnego zaangażowania zespołu nadzoru chmurowego i zainteresowanych uczestników firmy o przeglądanie i aktualizowanie zasad i zapewnienie zgodności z zasadami. Ponadto wiele procesów monitorowania i wymuszania można zautomatyzować lub uzupełnić narzędziem, aby zmniejszyć koszty zarządzania i umożliwić szybsze reagowanie na odchylenia zasad.
+W tym artykule omówiono sposób tworzenia procesów, które obsługują skuteczną [Cost Management dyscyplinę](./index.md). Efektywne zarządzanie kosztami chmury rozpoczyna się od cyklicznych procesów ręcznych zaprojektowanych w celu zapewnienia zgodności z zasadami. Wymaga to regularnego zaangażowania zespołu nadzoru chmurowego i zainteresowanych uczestników firmy o przeglądanie i aktualizowanie zasad i zapewnienie zgodności z zasadami. Ponadto wiele procesów monitorowania i wymuszania można zautomatyzować lub uzupełnić narzędziem, aby zmniejszyć koszty zarządzania i umożliwić szybsze reagowanie na odchylenia zasad.
 
 ## <a name="planning-review-and-reporting-processes"></a>Planowanie, przeglądanie i raportowanie procesów
 
-Najlepsze Cost Management narzędzia w chmurze są takie same jak w przypadku procesów i zasad, które są przez nie obsługiwane. Poniżej znajduje się zestaw przykładowych procesów, które często są wykorzystywane w dyscyplinach Cost Management. Użyj tych przykładów jako punktu wyjścia podczas planowania procesów, które umożliwią dalszą aktualizację zasad kosztów na podstawie zmian i opinii firmy z zespołów gospodarczych podlegających wskazówkom dotyczącym ładu kosztów.
+Najlepsze Cost Management narzędzia w chmurze są takie same jak w przypadku procesów i zasad, które są przez nie obsługiwane. Poniżej znajduje się zestaw przykładowych procesów, które często są wykorzystywane w dyscyplinach Cost Management. Użyj tych przykładów jako punktu wyjścia podczas planowania procesów, które umożliwią kontynuowanie aktualizowania zasad kosztów na podstawie zmian i opinii firmy od zespołów gospodarczych, z zastrzeżeniem wskazówek dotyczących ładu kosztów.
 
 **Wstępna ocena ryzyka i planowanie:** W ramach początkowego wdrożenia dyscypliny Cost Management należy określić podstawowe zagrożenia biznesowe i tolerancje związane z kosztami chmury. Te informacje służą do omówienia związanych z budżetem i ryzykiem kosztów z członkami zespołów firmy i opracowania bazowego zestawu zasad pozwalających wyeliminować te zagrożenia w celu ustalenia wstępnej strategii zarządzania.
 
@@ -43,7 +43,7 @@ Te podstawowe procesy ułatwią dostosowanie wydatków i ustanowienie podstawy C
 
 ## <a name="processes-for-ongoing-monitoring"></a>Procesy do ciągłego monitorowania
 
-Pomyślna strategia ładu Cost Management jest zależna od widoczności przeszłych, bieżących i planowanych przyszłych wydatków związanych z chmurą. Bez możliwości analizowania odpowiednich metryk i danych istniejących kosztów nie można identyfikować zmian ryzyka ani wykrywać naruszeń tolerancji ryzyka. Bieżące procesy ładu omówione powyżej wymagają danych dotyczących jakości, aby zapewnić możliwość modyfikacji zasad w celu lepszego zabezpieczenia infrastruktury przed zmianami wymagań firmy i użycia chmury.
+Pomyślna strategia Cost Management zależy od widoczności wcześniejszych, bieżących i planowanych przyszłych wydatków związanych z chmurą. Bez możliwości analizowania odpowiednich metryk i danych istniejących kosztów nie można identyfikować zmian ryzyka ani wykrywać naruszeń tolerancji ryzyka. Bieżące procesy ładu omówione powyżej wymagają danych dotyczących jakości, aby zapewnić możliwość modyfikacji zasad w celu lepszego zabezpieczenia infrastruktury przed zmianami wymagań firmy i użycia chmury.
 
 Upewnij się, że zespoły IT zaimplementowali zautomatyzowane systemy do monitorowania wydatków i użycia w chmurze dla nieplanowanych odchyleń od przewidywanych kosztów. Ustanów systemy raportowania i zgłaszania alertów w celu zapewnienia wykrywania monitów i łagodzenia potencjalnych naruszeń zasad.
 
@@ -58,9 +58,9 @@ Poniżej przedstawiono przykłady wyzwalaczy:
 
 ## <a name="next-steps"></a>Następne kroki
 
-Za pomocą [szablonu zarządzania chmurą](./template.md)można udokumentować procesy i wyzwalacze, które są wyrównane do bieżącego planu wdrożenia chmury.
+Użyj [szablonu dyscypliny Cost Management](./template.md) , aby udokumentować procesy i wyzwalacze, które są wyrównane do bieżącego planu wdrażania w chmurze.
 
-Aby uzyskać wskazówki dotyczące wykonywania zasad zarządzania chmurą w wyrównaniu z planami wdrażania, zapoznaj się z artykułem Cost Management dotyczącym ulepszania dyscypliny.
+Aby uzyskać wskazówki dotyczące wykonywania zasad Cost Management w wyrównaniu z planami wdrażania, zapoznaj się z artykułem na temat Cost Management ulepszeń dyscypliny.
 
 > [!div class="nextstepaction"]
 > [Ulepszanie dyscypliny Cost Management](./discipline-improvement.md)

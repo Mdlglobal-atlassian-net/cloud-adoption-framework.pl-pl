@@ -1,6 +1,6 @@
 ---
-title: Cost Management ryzyka biznesowego
-description: Poznaj przykłady typowych rozwiązań klienta Cost Management dyscypliny w ramach strategii nadzoru chmurowego. 
+title: Motywacje i zagrożenia biznesowe w dyscyplinie Cost Management
+description: Poznaj przykłady typowych rozwiązań klienta Cost Management dyscypliny w ramach strategii nadzoru chmurowego.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,26 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0afb5c3a4c8c1f355083ae6d4734ca4fa45b34ca
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 08ae1bab0697fdd7bbffecca18c62e5ae637c2b6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434704"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220723"
 ---
 <!-- cSpell:ignore prepurchases -->
 
-# <a name="cost-management-motivations-and-business-risks"></a>Cost Management motywacje i ryzyko biznesowe
+# <a name="motivations-and-business-risks-in-the-cost-management-discipline"></a>Motywacje i zagrożenia biznesowe w dyscyplinie Cost Management
 
 W tym artykule omówiono przyczyny, w których klienci zazwyczaj przyjmują Cost Management dyscyplinę w ramach strategii nadzoru chmurowego. Zawiera również kilka przykładów ryzyka biznesowego, które dotyczą instrukcji zasad.
 
-<!-- markdownlint-disable MD026 -->
-
-## <a name="is-cost-management-relevant"></a>Czy jest Cost Management istotne?
+## <a name="relevance"></a>Trafność
 
 W odniesieniu do ładu kosztów, wdrażanie w chmurze powoduje utworzenie zmiany modelu. Zarządzanie kosztami w tradycyjnym lokalnym świecie odbywa się na podstawie cykli odświeżania, pozyskiwania centrów danych, odnawiania hostów i cyklicznych problemów z konserwacją. Możesz prognozować, planować i udoskonalać każdy z tych kosztów, aby dostosować je do budżetów rocznych wydatków inwestycyjnych.
 
-W przypadku rozwiązań w chmurze wiele firm będzie miało coraz bardziej aktywne podejście do Cost Management. W wielu przypadkach firmy będą kupować lub zatwierdzić korzystanie z zestawu usług Cloud Services. W tym modelu przyjęto założenie, że maksymalizacja rabatów w zależności od tego, jak dużo planów firmy na wydatki z konkretnym dostawcą chmury, powoduje utworzenie postrzegania aktywnego, planowanego cyklu kosztów. Jednak to postrzeganie stanie się rzeczywistością tylko wtedy, gdy firma także implementuje wczesne Cost Management dyscypliny.
+W przypadku rozwiązań w chmurze wiele firm będzie miało coraz bardziej aktywne podejście do zarządzania kosztami. W wielu przypadkach firmy będą kupować lub zatwierdzić korzystanie z zestawu usług Cloud Services. W tym modelu przyjęto założenie, że maksymalizacja rabatów w zależności od tego, jak dużo planów firmy na wydatki z konkretnym dostawcą chmury, powoduje utworzenie postrzegania aktywnego, planowanego cyklu kosztów. Jednak to postrzeganie stanie się rzeczywistością tylko wtedy, gdy firma również realizuje dyscypliny zarządzania dla dorosłych kosztów.
 
 Chmura oferuje funkcje samoobsługowe, które wcześniej były niesłyszalne w tradycyjnych lokalnych centrach danych. Te nowe możliwości pozwalają firmom na bardziej elastyczne, mniej restrykcyjne i bardziej otwarte wdrożenie nowych technologii. Jednak minusem samoobsługi polega na tym, że użytkownicy końcowi mogą nieświadomie przekroczyć przydzieloną liczbę budżetów. Z drugiej strony mogą wystąpić zmiany w planach i nieoczekiwane użycie usług Cloud Services w prognozie. Potencjalna zmiana w obu kierunkach uzasadnia inwestycję w Cost Management dyscypliny w zespole ładu.
 
@@ -44,7 +42,7 @@ Zagrożenia będą się różnić między organizacjami, ale poniżej przedstawi
 
 ## <a name="next-steps"></a>Następne kroki
 
-Korzystając z [szablonu zarządzania chmurą](./template.md), dokumentuj ryzyka biznesowego, które mogą być wprowadzane przez bieżący plan wdrożenia chmury.
+Użyj [szablonu zasad Cost Management](./template.md) , aby udokumentować ryzyko biznesowe, które mogą zostać wprowadzone przez bieżący plan wdrożenia chmury.
 
 Po uzyskaniu wiedzy o realistycznych zagrożeniach firmy następnym krokiem jest udokumentowanie tolerancji firmy dla ryzyka oraz wskaźników i kluczowych metryk, aby monitorować tę tolerancję.
 

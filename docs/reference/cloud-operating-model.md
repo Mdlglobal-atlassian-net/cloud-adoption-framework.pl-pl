@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d1ba5e26214a0b60a4fe9fefb23d1dffaf8fa4ed
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 212c5634c09900e52c02ec6691862f3c60b7b3dc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79023866"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221692"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Model operacyjny chmury jest teraz częścią platformy wdrażania Microsoft Cloud dla systemu Azure
 
@@ -26,15 +26,17 @@ W październiku 2018 rozpocząłmy przegląd wszystkich modeli, które zostały 
 
 W przypadku podobnego podejścia do modelu COM Czytelnicy powinni zacząć z jedną z następujących czynności:
 
-- [Rozpoczęcie podróży migracji do chmury](../getting-started/migrate.md)
-- [Wprowadzanie innowacji poprzez wdrażanie w chmurze](../getting-started/innovate.md)
-- [Zapewnianie pomyślnego wdrożenia chmury](../getting-started/enable.md)
+- [Rozpoczęcie podróży migracji do chmury](../get-started/migrate.md)
+- [Wprowadzanie innowacji poprzez wdrażanie w chmurze](../get-started/innovate.md)
+- [Zapewnianie pomyślnego wdrożenia chmury](../get-started/enable.md)
 
 Wskazówki podane wcześniej w modelu COM nadal dotyczą struktury wdrażania chmury. Środowisko jest inne, ale struktura wdrożenia chmury jest po prostu rozszerzeniem tych wskazówek. Aby przejść z modelu COM do struktury wdrażania w chmurze, rozumiesz zakres i strukturę. W poniższych dwóch sekcjach opisano przechodzenie.
 
 ## <a name="scope"></a>Zakres
 
 COM ustanowił zakres składający się z następujących składników:
+
+<!-- cSpell:ignore caf -->
 
 ![Zakres struktury wdrażania chmury](../_images/caf-scope.png)
 
@@ -45,7 +47,7 @@ COM ustanowił zakres składający się z następujących składników:
 Zakresy wysokiego poziomu modelu operacyjnego chmury i struktury wdrażania chmury są podobne. Firma, kultura i technologia są odzwierciedlone we wszystkich wskazówkach i każdej metodologii w ramach struktury wdrażania w chmurze.
 
 > [!NOTE]
-> Zakres struktury wdrażania chmury ma dwa znaczące punkty przejrzystości. W strukturze wdrażania w chmurze, Strategia biznesowa wykracza poza dokumentację kosztów&mdash;chmury, która ma na celu zrozumienie motywacji, pożądanych wyników, zwrotów i kosztów związanych z chmurą w celu utworzenia planów akcji i jasnego uzasadnienia biznesowego. W strukturze wdrażania w chmurze, strategia osób wykracza poza szkolenie, aby uwzględnić podejścia, które tworzą oczywisty termin zapadalności w kulturze. Kilka obszarów planu zawiera pokazy wpływu zarządzania Agile, integrację z DevOps, empatię klienta i Obsession, a także podejścia do tworzenia produktów w ramach produkcji.
+> Zakres struktury wdrażania chmury ma dwa znaczące punkty przejrzystości. W strukturze strategii biznesowej wykraczają poza dokumentację kosztów chmury &mdash; , która zawiera informacje o motywacji, potrzebnych rezultatach, zwrotach i kosztach związanych z chmurą w celu utworzenia planów akcji i jasnego uzasadnienia biznesowego. W strukturze wdrażania w chmurze, strategia osób wykracza poza szkolenie, aby uwzględnić podejścia, które tworzą oczywisty termin zapadalności w kulturze. Kilka obszarów planu zawiera pokazy wpływu zarządzania Agile, integrację z DevOps, empatię klienta i Obsession, a także podejścia do tworzenia produktów w ramach produkcji.
 
 ## <a name="structure"></a>Struktura
 
@@ -65,15 +67,15 @@ Trzy etapy wdrażania to:
 
 Trzy etapy wdrażania w chmurze zostały zamapowane na dwie konkretne podróże:
 
-- [Migrowanie](../getting-started/migrate.md): Przenieś istniejące obciążenia do chmury.
-- [Innowacje](../getting-started/innovate.md): modernizowanie istniejących obciążeń i tworzenie nowych produktów i usług.
+- [Migrowanie](../get-started/migrate.md): Przenieś istniejące obciążenia do chmury.
+- [Innowacje](../get-started/innovate.md): modernizowanie istniejących obciążeń i tworzenie nowych produktów i usług.
 
-Dodatkowe zasoby wymagane do pomyślnego wdrożenia chmury można znaleźć w temacie [Włączanie powodzenia wdrażania](../getting-started/enable.md).
+Dodatkowe zasoby wymagane do pomyślnego wdrożenia chmury można znaleźć w temacie [Włączanie powodzenia wdrażania](../get-started/enable.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby wznowić podróż, w której pozostał port COM, wybierz jedną z następujących kursów wdrażania w chmurze:
+Aby wznowić podróż, w której pozostał port COM, wybierz jedną z następujących przewodników wprowadzenie:
 
-- [Wprowadzenie do migracji do chmury](../getting-started/migrate.md)
-- [Wprowadzenie do innowacji z obsługą chmury](../getting-started/innovate.md)
-- [Pomyślne włączenie wdrażania](../getting-started/enable.md)
+- [Wprowadzenie do migracji do chmury](../get-started/migrate.md)
+- [Wprowadzenie do innowacji z obsługą chmury](../get-started/innovate.md)
+- [Pomyślne włączenie wdrażania](../get-started/enable.md)

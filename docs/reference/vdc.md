@@ -7,21 +7,21 @@ ms.date: 06/12/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4eb8e5a0c9fa88bdfbd6e00c55047e75873ff36f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 87966103eaf1d360db77e9bdf34f62afa77fdaa9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79311561"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221658"
 ---
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
 <!-- cSpell:ignore tracsman jonor -->
 
 # <a name="azure-virtual-datacenter"></a>Wirtualne centrum danych Azure
 
 > [!WARNING]
-> Wirtualne centrum danych platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud platformy Azure. Wskazówki te pełnią rolę znaczącej części podstawy dla metod gotowych i ładu w ramach struktury wdrażania chmury. Aby obsługiwać klientów dokonujących tego przejścia, następujące zasoby zostały zarchiwizowane i będą przechowywane w osobnym repozytorium GitHub.
+> Wirtualne centrum danych platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud platformy Azure. Te wskazówki pełnią rolę znaczącej części podstawy dla gotowych i podlegających metodologiom w ramach struktury wdrażania w chmurze. Aby obsługiwać klientów dokonujących tego przejścia, następujące zasoby zostały zarchiwizowane i będą przechowywane w osobnym repozytorium GitHub.
 
 ## <a name="archived-resources"></a>Zarchiwizowane zasoby
 
@@ -29,7 +29,7 @@ ms.locfileid: "79311561"
 
 <table>
 <tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Virtual Datacenter e-book" /></a></td>
+    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Azure Virtual Datacenter e-book" /></a></td>
     <td>
         <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf">Wirtualne centrum danych Azure: pojęcia</a></h3>
         <p>W książce elektronicznej pokazano, jak wdrożyć obciążenia przedsiębiorstwa na platformie chmury Azure z zachowaniem istniejących zabezpieczeń i zasad sieci.</p>

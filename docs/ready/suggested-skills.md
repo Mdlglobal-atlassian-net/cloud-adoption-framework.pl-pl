@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 75b410e293d3e083b45b91b543bce4b70b8078ee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 118b8af3ed191be6b203413fc2a5399f6aa6a04d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997745"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221675"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Ścieżka gotowości w zakresie umiejętności w fazie gotowości do migracji
 
@@ -20,7 +20,7 @@ W fazie gotowości do migracji celem jest przygotowanie z wyprzedzeniem do tej p
 
 ## <a name="organizational-readiness-learning-paths"></a>Ścieżki szkoleniowe gotowości organizacyjnej
 
-W zależności od motywacji i wyników biznesowych związanych z nakładami na wdrożenie chmury, liderzy mogą być zobowiązani do ustanowienia nowych struktur organizacyjnych lub zespołów wirtualnych (V-Teams) w celu ułatwienia różnych funkcji. Poniższe artykuły ułatwiają opracowywanie umiejętności, które są niezbędne do utworzenia struktury tych zespołów zgodnie z wymaganymi rezultatami:
+W zależności od motywacji i rezultatów działalności związanych z pracą w chmurze, liderzy mogą być zobowiązani do ustanowienia nowych struktur organizacyjnych lub zespołów wirtualnych (v-Teams) w celu ułatwienia różnych funkcji. Poniższe artykuły ułatwiają opracowywanie umiejętności, które są niezbędne do utworzenia struktury tych zespołów zgodnie z wymaganymi rezultatami:
 
 - [Początkowe wyrównanie organizacji](./index.md): przegląd wyrównania organizacyjnego i różnych struktur zespołu w celu ułatwienia określonych celów.
 - [Podziel silosy i fiefdoms](../organize/fiefdoms-silos.md): Poznaj dwa popularne antywzorce organizacyjne i sposoby, aby poprowadzić zespół do wydajnej współpracy.
@@ -62,7 +62,7 @@ Zdobądź oficjalne potwierdzenie swojej wiedzy na temat platformy Azure, korzys
 
 Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury, nie przychodzi łatwo. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty i poziomy i osiągaj więcej.
 
-Poniższe przykłady to kilka dostosowanych ścieżek szkoleniowych na Microsoft Learn, które są wyrównane do gotowej części platformy wdrażania w chmurze:
+Poniższe przykłady to kilka dostosowanych ścieżek szkoleniowych na Microsoft Learn, które są wyrównane do gotowej metodologii w strukturze wdrażania chmury:
 
 [Podstawy platformy Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Poznaj koncepcje chmurowe, takie jak wysoka dostępność, skalowalność, elastyczność, elastyczność, odporność na uszkodzenia i odzyskiwanie po awarii. Poznaj zalety chmury obliczeniowej na platformie Azure i jak można zaoszczędzić czas i pieniądze. Porównaj i Odróżnij podstawowe strategie przejścia do chmury platformy Azure. Poznaj zakres usług dostępnych na platformie Azure, w tym obliczenia, Sieć, magazyn i zabezpieczenia.
 
@@ -70,7 +70,7 @@ Poniższe przykłady to kilka dostosowanych ścieżek szkoleniowych na Microsoft
 
 [Administrowanie zasobami infrastruktury na platformie Azure](https://docs.microsoft.com/learn/paths/administer-infrastructure-resources-in-azure): informacje na temat tworzenia, zabezpieczania i skalowania zasobów maszyn wirtualnych oraz zarządzania nimi.
 
-[Przechowywanie danych na platformie Azure](https://docs.microsoft.com/learn/paths/store-data-in-azure): na platformie Azure są dostępne różne sposoby przechowywania danych: niestrukturalna, archiwalna, relacyjna i nie tylko. Poznaj podstawy zarządzania magazynem na platformie Azure i dowiedz się, jak utworzyć konto magazynu oraz jak wybrać odpowiedni model dla danych, które chcesz przechowywać w chmurze.
+[Przechowywanie danych na platformie Azure](https://docs.microsoft.com/learn/paths/store-data-in-azure): na platformie Azure są dostępne różne sposoby przechowywania danych: niestrukturalna, archiwalna, relacyjna i nie tylko. Poznaj podstawy zarządzania magazynem na platformie Azure, sposób tworzenia konta magazynu oraz sposób wybierania odpowiedniego modelu dla danych, które mają być przechowywane w chmurze.
 
 [Architekt doskonałych rozwiązań na platformie Azure](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure): Dowiedz się, jak projektować i tworzyć bezpieczne, skalowalne i wysoko wydajne rozwiązania na platformie Azure, sprawdzając podstawowe zasady dostępne w każdej dobrej architekturze.
 

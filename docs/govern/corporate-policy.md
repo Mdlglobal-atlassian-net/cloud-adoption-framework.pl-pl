@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8e634d4e471995d569f21aacccdb0b535d9c0b5b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9db4b6a6f068e2939248804b693a9600bf7b9625
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708924"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220859"
 ---
 # <a name="evaluate-corporate-policy"></a>Ocenianie zasad firmowych
 
@@ -26,7 +26,12 @@ ms.locfileid: "77708924"
         <div class="cardPadding" style="padding-bottom:10px;">
             <div class="card" style="padding-bottom:10px;">
                 <div class="cardText" style="padding-left:0px;">
-Wszelkie zmiany w procesach działalności biznesowej lub platformach technologicznych wprowadzają ryzyko dla działalności firmy. Zespoły nadzorujące chmur, których członkowie są czasami znane jako osoby niebędące członkami chmury, są zadaniem z ograniczeniem ryzyka związanego z minimalnym zakłóceniem wdrażania lub innowacji.<br/><br/>Jednakże zarządzanie chmurą wymaga więcej niż implementację techniczną. Drobne zmiany w opisach firmowych lub zasadach korporacyjnych mogą znacząco wpływać na wdrażanie. Przed wdrożeniem należy zapoznać się poza nim podczas definiowania zasad firmowych.<br/><br/>
+Wszelkie zmiany w procesach działalności biznesowej lub platformach technologicznych wprowadzają ryzyko dla działalności firmy. Zespoły nadzorujące chmur, których członkowie są czasami znane jako osoby niebędące członkami chmury, są zadaniem z ograniczeniem ryzyka związanego z minimalnym zakłóceniem wdrażania lub innowacji.
+<br>
+<br>
+Jednakże zarządzanie chmurą wymaga więcej niż implementację techniczną. Drobne zmiany w opisach firmowych lub zasadach korporacyjnych mogą znacząco wpływać na wdrażanie. Przed wdrożeniem należy zapoznać się poza nim podczas definiowania zasad firmowych.
+<br>
+<br>
                 </div>
             </div>
         </div>
@@ -39,8 +44,8 @@ Wszelkie zmiany w procesach działalności biznesowej lub platformach technologi
                 <div class="card" style="padding-bottom:10px;">
                     <div class="cardText" style="padding-left:0px;">
 <img src="../_images/operational-transformation-govern-highres.png" alt="Diagram of the Cloud Adoption Framework governance model: Corporate policy and governance disciplines">
-<br/>
-<i>Rysunek 1. wizualne zasady firmowe i pięć dyscyplin zarządzania chmurą.</i>
+<br>
+<i>Rysunek 1. wizualne zasady firmowe i pięć dyscyplin nadzoru chmurowego.</i>
                     </div>
                 </div>
             </div>

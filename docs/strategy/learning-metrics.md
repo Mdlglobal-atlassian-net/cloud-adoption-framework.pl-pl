@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a26ad28c5cd91225f02d5824690bc2d409bbd55f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dc655eb5d7169c84c8cf577326b7396758e49970
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433734"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221420"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -44,17 +44,17 @@ Zmiana branży, zakłócenie rynków lub przekształcanie produktów i usług mo
 
 Z drugiej strony, niektóre wskaźniki pozytywne są często powiązane z uczeniem opartym na danych: scentralizowanie zestawów danych heterogenicznych, danych wejściowych i Democratization danych. Gdy zespół uczy się od klienta jutro, rzeczywiste wyniki mogą być tworzone dzisiaj. Dodatkowe metryki dotyczące uczenia mogą obejmować:
 
-- Liczba dostępnych modeli
-- Liczba użytych źródeł danych partnera
-- Urządzenia wytwarzające dane wejściowe
-- Ilość danych przychodzących
-- Typy danych
+- Liczba dostępnych modeli.
+- Liczba użytych źródeł danych partnera.
+- Urządzenia wytwarzające dane wejściowe.
+- Ilość danych przychodzących.
+- Typy danych.
 
 Jeszcze bardziej cenna Metryka to liczba pulpitów nawigacyjnych utworzonych na podstawie połączonych źródeł danych. Ta liczba odzwierciedla bieżące procesy biznesowe, na które mają wpływ nowe źródła danych. Udostępniając nowe źródła danych otwarte, firma może korzystać z danych za pomocą narzędzi do raportowania, takich jak Power BI, aby tworzyć przyrostowe szczegółowe informacje i prowadzić zmiany w firmie.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gdy metryki szkoleniowe są wyrównane, możesz rozpocząć [Tworzenie przypadku biznesowego](.\cloud-migration-business-case.md) do dostarczenia na te metryki.
+Gdy metryki szkoleniowe są wyrównane, możesz rozpocząć [Tworzenie przypadku biznesowego](./cloud-migration-business-case.md) do dostarczenia na te metryki.
 
 > [!div class="nextstepaction"]
-> [Utwórz przypadek biznesowy w chmurze](.\cloud-migration-business-case.md)
+> [Utwórz przypadek biznesowy w chmurze](./cloud-migration-business-case.md)

@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fd5f3ca69312156c705857bb91968ea40cd3a867
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a7662d8460581d143b75a8f95aa48bf290d39c2d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997807"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221760"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
@@ -38,13 +38,17 @@ Pierwsza strefa początkowa wdraża następujące składniki w ramach subskrypcj
 
 Wdrożone składniki i ich przeznaczenie obejmują następujące elementy:
 
-| Składnik             | Odpowiedzialność za                                                                                                                                                                                                                                            |
-|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Grupy zasobów       | Podstawowe grupy zasobów, które są zbędne dla podstawy                                                                                                                                                                                                            |
-| Dziennik aktywności      | Inspekcja wszystkich działań subskrypcji i archiwizowania: </br> — Konto magazynu </br> — Event Hubs platformy Azure                                                                                                                                                      |
-| Rejestrowanie diagnostyczne   | Wszystkie dzienniki operacji są przechowywane przez określoną liczbę dni: </br> — Konto magazynu </br> -Event Hubs                                                                                                                                                         |
-| Log Analytics         | Przechowuje wszystkie dzienniki operacji </br> Wdrażaj popularne rozwiązania w zakresie przeglądu najlepszych rozwiązań dotyczących aplikacji: </br> - NetworkMonitoring </br> - ADAssessment </br> -ADReplication </br> - AgentHealthAssessment </br> - DnsAnalytics </br> - KeyVaultAnalytics |
+<!-- markdownlint-disable MD033 -->
+
+| Składnik | Odpowiedzialność za |
+|---|---|
+| Grupy zasobów | Podstawowe grupy zasobów, które są zbędne dla podstawy |
+| Dziennik aktywności      | Inspekcja wszystkich działań subskrypcji i archiwizowania: <li> Konto magazynu <li> Azure Event Hubs |
+| Rejestrowanie diagnostyczne | Wszystkie dzienniki operacji są przechowywane przez określoną liczbę dni: <li> Konto magazynu <li> Event Hubs |
+| Log Analytics | Przechowuje wszystkie dzienniki operacji. Wdrażaj popularne rozwiązania w zakresie przeglądu najlepszych rozwiązań dotyczących aplikacji: <li> NetworkMonitoring <li> ADAssessment <li> ADReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
 | Azure Security Center | Metryki i alerty dotyczące higieny zabezpieczeń wysyłane do poczty e-mail i numeru telefonu                                                                                                                                                                                        |
+
+<!-- markdownlint-enable MD033 -->
 
 ## <a name="use-this-blueprint"></a>Korzystanie z tej strategii
 
@@ -74,11 +78,11 @@ Następujące decyzje są reprezentowane w Terraformej strefie docelowej:
 | Projekt subskrypcji    | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                                                                                                                                                                                                     | [Tworzenie subskrypcji początkowych](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
 | Grupy zasobów        | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                                                                                                                                                                                                     | [Skalowanie subskrypcji](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                           |
 | Grupy zarządzania      | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                                                                                                                                                                                                     | [Organizuj subskrypcje](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                     |
-| Dane                   | Nie dotyczy                                                                                                                                                                                                                                                                      | [Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-| Magazyn                | Nie dotyczy                                                                                                                                                                                                                                                                      | [Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                  |
+| Dane                   | Brak                                                                                                                                                                                                                                                                      | [Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+| Magazyn                | Brak                                                                                                                                                                                                                                                                      | [Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                  |
 | Standardy nazewnictwa       | Po utworzeniu środowiska tworzony jest również unikatowy prefiks. Zasoby, które wymagają unikatowej nazwy globalnej (na przykład kont magazynu), używają tego prefiksu. Nazwa niestandardowa jest dołączana do losowego sufiksu. Użycie tagów jest wymagane zgodnie z opisem w poniższej tabeli. | [Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                              |
-| Zarządzanie kosztami        | Nie dotyczy                                                                                                                                                                                                                                                                      | [Śledzenie kosztów](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
-| Wystąpienia obliczeniowe                | Nie dotyczy                                                                                                                                                                                                                                                                      | [Opcje obliczeń](../considerations/compute-options.md)                                                                                                                                                                                                         |
+| Zarządzanie kosztami        | Brak                                                                                                                                                                                                                                                                      | [Śledzenie kosztów](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
+| Wystąpienia obliczeniowe                | Brak                                                                                                                                                                                                                                                                      | [Opcje obliczeń](../considerations/compute-options.md)                                                                                                                                                                                                         |
 
 ### <a name="tagging-standards"></a>Standardy tagowania
 
@@ -94,6 +98,8 @@ Minimalny zestaw tagów przedstawionych poniżej musi być obecny dla wszystkich
 | Typ wdrożenia   | Definiuje sposób utrzymywania zasobów.                                                    | Typ wdrożenia  | Ręczne, Terraform                                |
 | Wersja           | Wdrożona wersja planu.                                                                 | version         | v 0,1                                             |
 | Nazwa aplikacji  | Nazwa skojarzonej aplikacji, usługi lub obciążenia związanego z zasobem.             | ApplicationName | "Nazwa aplikacji"                                       |
+
+<!-- cSpell:ignore caf -->
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Dostosowywanie i wdrażanie pierwszej strefy docelowej
 
@@ -116,7 +122,7 @@ resource_groups_hub = {
 }
 ```
 
-Następnie określimy regiony, w których możemy ustawić fundacje. `southeastasia` W tym miejscu służy do wdrażania wszystkich zasobów.
+Następnie określimy regiony, w których możemy ustawić fundacje. W tym miejscu `southeastasia` służy do wdrażania wszystkich zasobów.
 
 ```hcl
 location_map = {
@@ -145,7 +151,7 @@ tags_hub = {
 }
 ```
 
-Następnie podaj nazwę usługi log Analytics i zestaw rozwiązań, które analizują wdrożenie. W tym miejscu zachowamy monitorowanie sieci, Active Directory (AD) oceny i replikacji, DNS Analytics i Key Vault Analytics.
+Następnie podaj nazwę usługi log Analytics i zestaw rozwiązań, które analizują wdrożenie. W tym miejscu zachowamy monitorowanie sieci, Active Directory Assessment i replikację, DNS Analytics i Key Vault Analytics.
 
 ```hcl
 

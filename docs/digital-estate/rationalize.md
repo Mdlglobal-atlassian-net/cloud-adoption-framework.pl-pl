@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 70b4d0ee295f06db68090551fac02fd205111c60
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 72bc453ba9ce0feb90e6dceaf73cd89ded0c64e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995720"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221335"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racjonalizacja majątku cyfrowego
 
@@ -21,11 +21,15 @@ Racjonalizacja chmury to proces oceniania zasobów w celu ustalenia najlepszego 
 
 ## <a name="traditional-view-of-rationalization"></a>Tradycyjny widok racjonalizacji
 
-Można łatwo zrozumieć racjonalizację podczas wizualizowania tradycyjnego procesu racjonalizacji jako złożonego drzewa decyzyjnego. Każdy element zawartości w obszarze cyfrowym jest podawany przez proces, który skutkuje jedną z pięciu odpowiedzi (5 RS). W przypadku małych Estates ten proces działa prawidłowo. W przypadku większych Estates jest to niewydajne i może prowadzić do znaczących opóźnień. Przeanalizujmy proces, aby zobaczyć dlaczego. Następnie przedstawimy bardziej wydajny model.
+Można łatwo zrozumieć racjonalizację podczas wizualizowania tradycyjnego procesu racjonalizacji jako złożonego drzewa decyzyjnego. Każdy element zawartości w formie cyfrowej jest podawany przez proces, który skutkuje jedną z pięciu odpowiedzi (5. W przypadku małych Estates ten proces działa prawidłowo. W przypadku większych Estates jest to niewydajne i może prowadzić do znaczących opóźnień. Przeanalizujmy proces, aby zobaczyć dlaczego. Następnie przedstawimy bardziej wydajny model.
 
 **Spis:** Dokładne spisy zasobów, w tym aplikacje, oprogramowanie, sprzęt, systemy operacyjne i metryki wydajności systemu, są wymagane do ukończenia pełnej racjonalizacji przy użyciu tradycyjnych modeli.
 
-**Analiza ilościowa:** W drzewie decyzyjnym pytania ilościowe decydują o pierwszej warstwie decyzji. Często zadawane pytania są następujące: czy zasób jest używany dzisiaj? Jeśli tak, czy jest to zoptymalizowane i poprawnie dopasowane? Jakie zależności istnieją między elementami zawartości? Te pytania mają kluczowe znaczenie dla klasyfikacji spisu.
+**Analiza ilościowa:** W drzewie decyzyjnym pytania ilościowe decydują o pierwszej warstwie decyzji. Często zadawane pytania są następujące:
+
+    - Czy zasób jest używany dzisiaj?
+    - Jeśli tak, czy jest to zoptymalizowane i poprawnie dopasowane?
+    - Jakie zależności istnieją między elementami zawartości? Te pytania mają kluczowe znaczenie dla klasyfikacji spisu.
 
 **Analiza jakościowa:** Kolejny zestaw decyzji wymaga analizy ludzkiej w formie analizy jakościowej. Często pytania, które znajdują się w tym miejscu, są unikatowe dla rozwiązania i mogą być odpowiedzi tylko przez zainteresowane strony i użytkowników zaawansowanych. Te decyzje zwykle opóźnią proces, co zmniejsza się znacznie. Ta analiza zwykle wykorzystuje od 40 do 80 godzin w danym miesiącu.
 
@@ -71,7 +75,7 @@ Jeśli na przykład opcje są ograniczone do rehostowania lub wycofywania, firma
 
 "Analiza sugeruje, że żaden użytkownik nie korzysta aktywnie z tego elementu zawartości. Czy ma to dokładne znaczenie? Takie pytanie binarne jest zwykle znacznie łatwiejsze do uruchomienia za pomocą analizy jakościowej.
 
-To usprawnione podejście zapewnia podstawy, plany finansowe, strategię i kierunek. W późniejszych działaniach każdy element zawartości przechodzi przez dalszą racjonalizację i analizę jakościową, aby oszacować inne opcje. Wszystkie założenia, które należy wykonać w tej wstępnej racjonalizacji, są testowane przed
+To usprawnione podejście zapewnia podstawy, plany finansowe, strategię i kierunek. W późniejszych działaniach każdy element zawartości przechodzi przez dalszą racjonalizację i analizę jakościową, aby oszacować inne opcje. Wszystkie założenia, które należy wykonać w tej wstępnej racjonalizacji, są testowane przed migracją pojedynczych obciążeń.
 
 ## <a name="challenge-assumptions"></a>Założenia wyzwania
 
@@ -115,14 +119,14 @@ Pierwsze obciążenie jest często wdrażane w eksperymentalnym środowisku bez 
 
 ### <a name="qualitative-analysis"></a>Analiza jakościowa
 
-Zespoły rozwiązań w chmurze i zespół strategii chmury mogą współdziałać ze sobą, aby analizować to małe obciążenie. Ta współpraca tworzy kontrolowaną możliwość tworzenia i testowania kryteriów analizy jakościowej. Mniejsza populacja pozwala na zbadanie użytkowników, których dotyczy ten komunikat, oraz ukończenie szczegółowej analizy jakościowej w ciągu tygodnia lub mniej. W przypadku typowych czynników analizy jakościowej zapoznaj się z konkretną tarczą racjonalizacji w [5 RS](./5-rs-of-rationalization.md).
+Zespoły rozwiązań w chmurze i zespół strategii chmury mogą współdziałać ze sobą, aby analizować to małe obciążenie. Ta współpraca tworzy kontrolowaną możliwość tworzenia i testowania kryteriów analizy jakościowej. Mniejsza populacja pozwala na zbadanie użytkowników, których dotyczy ten komunikat, oraz ukończenie szczegółowej analizy jakościowej w ciągu tygodnia lub mniej. W przypadku typowych czynników analizy jakościowej zapoznaj się z konkretną tarczą racjonalizacji w [pięciu RS](./5-rs-of-rationalization.md).
 
 ### <a name="migration"></a>Migracja
 
 Równolegle z ciągłą racjonalizacją zespół ds. wdrażania chmury może rozpocząć migrację małego obciążenia, aby rozwijać uczenie w następujących kluczowych obszarach:
 
 - Wzmocnij umiejętności dzięki platformie dostawcy chmury.
-- Zdefiniuj podstawowe usługi (i standardy platformy Azure), które muszą być odpowiednie do długoterminowej wizji.
+- Zdefiniuj podstawowe usługi i standardy platformy Azure, które są konieczne w celu dopasowania do długoterminowej wizji.
 - Lepiej zrozumieć, jak operacje mogą wymagać zmiany w dalszej części transformacji.
 - Zapoznaj się ze wszystkimi nieodłącznymi zagrożeniami biznesowymi i tolerancją firmy dla tych zagrożeń.
 - Ustanów linię bazową lub minimalny produkt żywotny (MVP) na potrzeby zarządzania w oparciu o tolerancję ryzyka firmy.
@@ -133,7 +137,7 @@ Podczas gdy zespół ds. wdrażania w chmurze wykonuje migrację lub implementac
 
 ### <a name="power-of-10"></a>Moc 10
 
-Tradycyjne podejście do racjonalizacji próbuje spełnić wszystkie przewidywalne potrzeby. Na szczęście plan dla każdej aplikacji często nie jest wymagany do rozpoczęcia podróży transformacji. W modelu przyrostowym moc 10 zapewnia dobry punkt wyjścia. W tym modelu zespół strategii chmury wybiera pierwsze 10 aplikacji do migracji. Te dziesięć obciążeń powinny zawierać kombinację prostych i złożonych obciążeń.
+Tradycyjne podejście do racjonalizacji próbuje spełnić wszystkie przewidywalne potrzeby. Na szczęście plan dla każdej aplikacji często nie jest wymagany do rozpoczęcia podróży transformacji. W modelu przyrostowym moc 10 podejścia zapewnia dobry punkt wyjścia. W tym modelu zespół strategii chmury wybiera pierwsze 10 aplikacji do migracji. Te dziesięć obciążeń powinny zawierać kombinację prostych i złożonych obciążeń.
 
 ### <a name="build-the-first-backlogs"></a>Kompiluj pierwsze zaległości
 

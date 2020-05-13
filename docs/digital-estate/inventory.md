@@ -7,16 +7,16 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 186013e2f626be18f0cef8beea66d638be9a793c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8d24987d13467742ab004f386a5acf4e173566ff
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434830"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221352"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Zbierz dane spisu dla elektronicznej sieci
 
-Tworzenie spisu jest pierwszym krokiem w przypadku [planowania w formie cyfrowej](./index.md). W tym procesie Lista zasobów IT, które obsługują określone funkcje biznesowe, jest zbierana na potrzeby późniejszej analizy i racjonalizacji. W tym artykule założono, że podejście dolne do analizy jest najbardziej odpowiednie do planowania. Aby uzyskać więcej informacji, zobacz [podejścia do planowania w formie elektronicznej](./approach.md).
+Tworzenie spisu jest pierwszym krokiem w przypadku [planowania w formie elektronicznej](./index.md). W tym procesie Lista zasobów IT, które obsługują określone funkcje biznesowe, jest zbierana na potrzeby późniejszej analizy i racjonalizacji. W tym artykule założono, że podejście dolne do analizy jest najbardziej odpowiednie do planowania. Aby uzyskać więcej informacji, zobacz [podejścia do planowania w formie elektronicznej](./approach.md).
 
 ## <a name="take-inventory-of-a-digital-estate"></a>Sporządzanie spisu rzeczy cyfrowych
 

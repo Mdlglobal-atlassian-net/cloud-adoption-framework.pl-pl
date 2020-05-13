@@ -8,15 +8,13 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d984808a6389b38a53be4b07b2e6a984e5b30227
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bc5263b1f9dfcbdb0d5c14e79e5de976fdd59818
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81121885"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221811"
 ---
-<!-- cSpell:ignore CAF -->
-
 # <a name="refactor-landing-zones"></a>Strefy wyładunkowe refaktoryzacji
 
 Strefa docelowa to środowisko służące do hostowania obciążeń, a przy tym wstępne **udostępnianie kodu**. Ponieważ infrastruktura strefy wyładunkowej jest zdefiniowana w kodzie, można ją ponownie obsłużyć, podobnie jak w przypadku innych baz kodu. Refaktoryzacja to proces modyfikacji lub restrukturyzacji kodu źródłowego w celu zoptymalizowania danych wyjściowych tego kodu bez zmiany jego celu ani funkcji podstawowych.
@@ -29,11 +27,11 @@ Gotowa metodologia używa koncepcji refaktoryzacji w celu przyspieszenia migracj
 
 Gdy klienci przyjmą chmurę, zagadnienia dotyczące strefy wyładunkowej są pojedynczym najbardziej typowym zamiarem do wdrożenia i wyników firmy związanych z chmurą. Klienci mogą przerastać do jednego z następujących dwóch zablokowanych. Często różne zespoły będą przepływać do jednego z tych dwóch zabloków, co sprawia, że zakleszczenie w kulturze utrudniają wdrażanie.
 
-Oba główne bloki są umieszczone w jednym przekonaniu, środowisko chmury i istniejące centra danych powinny mieć na/niemal funkcję z uwzględnieniem operacji, zarządzania i zabezpieczeń. Jest to bardzo długoterminowy cel. Jednak ból pochodzi z równowagi delikatnej między chronometrażem do osiągnięcia tego celu i szybkością wymaganą do dostarczenia wyników firmy.
+Oba główne bloki są umieszczone w jednym przekonaniu, środowisko chmury i istniejące centra danych powinny mieć wartość z przedziału lub blisko funkcji w zakresie operacji, zarządzania i zabezpieczeń. Jest to bardzo długoterminowy cel. Jednak ból pochodzi z równowagi delikatnej między chronometrażem do osiągnięcia tego celu i szybkością wymaganą do dostarczenia wyników firmy.
 
 ### <a name="blocker-acting-too-soon"></a>Blokowanie: działa zbyt wcześnie
 
-Zajęło to lata i istotny nakład na osiągnięcie bieżącego stanu zabezpieczeń, ładu i operacji w bieżącym centrum danych. Wymagane są również obserwacje, uczenie i dostosowania w celu spełnienia unikatowych ograniczeń tego środowiska. Replikowanie tych samych procedur i konfiguracji zajmie trochę czasu. Dotarcie do 100% parzystości funkcji może również spowodować, że środowisko przeprowadzi w chmurze. Takie podejście do parzystości często prowadzi do znacznego niezaplanowanych wydatków w środowisku chmury. Zdecydowanie zaleca się, aby klienci nie próbowali zastosować bieżących wymagań stanu do przyszłego środowiska stanu jako bramy wczesnego etapu. Taki model rzadko udowadnia zyskowność.
+Zajęło to lata i istotny nakład na osiągnięcie bieżącego stanu zabezpieczeń, ładu i operacji w bieżącym centrum danych. Wymagane są również obserwacje, uczenie i dostosowania w celu spełnienia unikatowych ograniczeń tego środowiska. Replikowanie tych samych procedur i konfiguracji zajmie trochę czasu. Dotarcie do 100% parzystości funkcji może również spowodować, że środowisko przeprowadzi w chmurze. Takie podejście do parzystości często prowadzi do znacznego niezaplanowanych wydatków w środowisku chmury. Nie należy próbować zastosować bieżących wymagań stanu do środowiska w przyszłości jako bramy wczesnego etapu. Takie podejście rzadko daje zyskowność.
 
 ![Typowy blok: działa zbyt wcześnie](../../_images/ready/blocker-act-too-soon.png)
 
@@ -82,9 +80,9 @@ Skonfigurowanie środowiska gotowego dla przedsiębiorstwa zajmie trochę czasu.
 
 Wszystkie początkowe szablony stref lądowania mają ograniczenia. Guardrails lub zasady podczas refaktoryzacji powinny odzwierciedlać te ograniczenia. Przed rozpoczęciem procesu refaktoryzacji strefy docelowej należy zrozumieć długoterminowe wymagania planu wdrożenia chmury oraz klasyfikację obciążeń kandydatów w porównaniu z początkowymi ograniczeniami szablonu.
 
-Jako przykład tworzenia refaktoryzacji guardrails, umożliwia porównanie podejścia programistycznego w poprzednim przykładzie i strategii strefy docelowej migracji CAF.
+Jako przykład tworzenia refaktoryzacji guardrails, umożliwia porównanie podejścia programistycznego w poprzednim przykładzie, a także Migrowanie planu strefy ładunkowej CAF.
 
-- Zgodnie ze [szczegółami założeń planu strefy CAF migracji](./migrate-landing-zone.md#assumptions), ta początkowa strefa docelowa nie jest przeznaczona do obsługi poufnych danych ani obciążeń o kluczowym znaczeniu. Te funkcje będą musiały zostać dodane przez refaktoryzację.
+- Zgodnie z [założeniami szczegóły dotyczące CAF migracji strefy ładunkowej](./migrate-landing-zone.md#assumptions)ta początkowa strefa docelowa nie jest przeznaczona do obsługi poufnych danych ani obciążeń o kluczowym znaczeniu. Te funkcje będą musiały zostać dodane przez refaktoryzację.
 - W tym przykładzie, pozwala założyć, że portfolio 100 obciążeń będzie wymagało zarówno funkcji krytycznych, jak i poufnych danych.
 
 Aby zrównoważyć te dwa konkurencyjne wymagania, zespół ds. wdrażania i zespół platformy będą działać w ramach następujących uzgodnionych warunków:
