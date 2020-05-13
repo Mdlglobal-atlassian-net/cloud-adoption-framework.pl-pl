@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 57859a8e3af75fa19f929e8fb614197ff69c47df
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7050b4b40508f9ac133322600625e016c270bb15
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434075"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219567"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Narzędzia i usługi zarządzania serwerem platformy Azure
 
@@ -57,8 +57,8 @@ W przypadku danych na serwerze plików można [Azure File Sync](https://docs.mic
 
 [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) udostępnia widok różnych zasobów, takich jak aplikacje, kontenery i maszyny wirtualne. Gromadzi również dane z kilku źródeł:
 
-- Azure Monitor dla maszyn wirtualnych ([Insights](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview)) oferuje szczegółowy widok kondycji maszyny wirtualnej, trendów wydajności i zależności. Usługa monitoruje kondycję systemów operacyjnych maszyn wirtualnych platformy Azure, zestawów skalowania maszyn wirtualnych i maszyn w środowisku lokalnym.
-- Log Analytics ([dzienniki](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection#logs)) to funkcja Azure monitor. Jego rolą jest centralny ogólny scenariusz zarządzania platformy Azure. Służy jako magazyn danych do analizy dzienników i dla wielu innych usług platformy Azure. Oferuje on bogaty język zapytań i aparat analityczny, który zapewnia wgląd w działanie aplikacji i zasobów.
+- [Azure monitor dla maszyn wirtualnych](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) zapewnia szczegółowy widok kondycji maszyny wirtualnej, trendów wydajności i zależności. Usługa monitoruje kondycję systemów operacyjnych maszyn wirtualnych platformy Azure, zestawów skalowania maszyn wirtualnych i maszyn w środowisku lokalnym.
+- [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) jest funkcją Azure monitor. Jego rolą jest centralny ogólny scenariusz zarządzania platformy Azure. Służy jako magazyn danych do analizy dzienników i dla wielu innych usług platformy Azure. Oferuje on bogaty język zapytań i aparat analityczny, który zapewnia wgląd w działanie aplikacji i zasobów.
 - [Dziennik aktywności platformy Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) jest również funkcją Azure monitor. Zapewnia wgląd w zdarzenia na poziomie subskrypcji występujące na platformie Azure.
 
 ## <a name="configure"></a>Konfigurowanie

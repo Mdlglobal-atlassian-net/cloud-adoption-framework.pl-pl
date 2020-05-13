@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cb612930318ed2ecd355cb5466f50650086d7f4c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9e0c9904bd05eb2464c2765050fbdbf3948079a1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430568"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219669"
 ---
 # <a name="automate-onboarding"></a>Automatyzowanie dołączania
 
@@ -24,7 +24,7 @@ Przykładowe pliki ilustrują sposób korzystania z Azure PowerShell poleceń cm
 
 - Utwórz [obszar roboczy log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access). (Lub Użyj istniejącego obszaru roboczego, jeśli spełnia wymagania. Aby uzyskać szczegółowe informacje, zobacz [Planowanie obszaru roboczego](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).
 
-- Utwórz konto usługi Automation. (Lub Użyj istniejącego konta, jeśli spełnia wymagania. Aby uzyskać szczegółowe informacje, zobacz temat [Planowanie obszaru roboczego](./prerequisites.md#log-analytics-workspace-and-automation-account-planning)).
+- Utwórz konto usługi Automation lub Użyj istniejącego konta spełniającego wymagania. Aby uzyskać więcej informacji, zobacz temat [Planowanie obszaru roboczego](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).
 
 - Połącz konto usługi Automation i obszar roboczy Log Analytics. Ten krok nie jest wymagany, jeśli użytkownik jest dołączany przy użyciu Azure Portal.
 

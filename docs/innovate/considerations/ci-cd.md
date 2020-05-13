@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f0073d600f0f08b2e1f4a4fa881bfe5e6b99954c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 54a2892ed657c08ee6c984798a61c1ff10716257
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120555"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219754"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -24,9 +24,9 @@ Ostatecznym testem innowacji jest reagowanie klientów na Twoje wynalazki. Czy h
 
 Istnieje kilka najważniejszych punktów tarcia do wdrożenia, które można zminimalizować za pomocą kombinacji technologii i procesów. W przypadku czytelników mających wiedzę o ciągłej integracji (CI) i procesach ciągłego wdrażania (CD) lub DevOps są znane następujące informacje: Ten artykuł ustanawia punkt wyjścia dla zespołów do wdrażania w chmurze, które reagują na innowacyjność i pętle. W przyszłości ten punkt początkowy może wzmocnić bardziej niezawodną ciągłość/CD lub DevOps podejścia jako produkty i zespoły.
 
-Zgodnie z opisem w temacie [mierzenie wpływu klientów](./measure.md), pozytywna weryfikacja każdej hipotezy wymaga iteracji i określenia. Wystąpił znacznie więcej błędów niż w przypadku usługi WINS w dowolnym cyklu innowacji. Jest to oczekiwane. Jeśli jednak klient potrzebuje, hipotezy i rozwiązania wyrównania w odpowiedniej skali, świat zmieni się szybko. Ten artykuł ma na celu minimalizowanie wzejść [technicznych](./build.md#reduce-complexity-and-delay-technical-spikes) , które spowalniają innowacje, ale nadal dbają o zachowanie kilku stałych najlepszych rozwiązań. Dzięki temu projekt zespołowy będzie pomocny w przyszłości, a na potrzeby dostarczania bieżących klientów.
+Zgodnie z opisem w temacie [mierzenie wpływu klientów](./measure.md), pozytywna weryfikacja każdej hipotezy wymaga iteracji i określenia. Wystąpił znacznie więcej błędów niż w przypadku usługi WINS w dowolnym cyklu innowacji. Jest to oczekiwane zachowanie. Jeśli jednak klient potrzebuje, hipotezy i rozwiązania wyrównania w odpowiedniej skali, świat zmieni się szybko. Ten artykuł ma na celu minimalizowanie wzejść [technicznych](./build.md#reduce-complexity-and-delay-technical-spikes) , które spowalniają innowacje, ale nadal dbają o zachowanie kilku stałych najlepszych rozwiązań. Dzięki temu projekt zespołowy będzie pomocny w przyszłości, a na potrzeby dostarczania bieżących klientów.
 
-## <a name="empowering-adoption-the-maturity-model"></a>Zatwierdzanie przyjęcia: model zapadalności
+## <a name="empower-adoption-the-maturity-model"></a>Przyjęcie przyjęcia: model zapadalności
 
 Głównym celem [metodologii innowacji](./index.md) jest skompilowanie partnerstwa klienta i przyspieszenie pętli opinii, co prowadzi do innowacji rynkowych. Poniższy obraz i sekcje zawierają opis wstępnych implementacji, które obsługują tę metodologię.
 
@@ -43,7 +43,7 @@ Aby zminimalizować liczbę techniczną, założono, że data_spłaty będą poc
 
 ## <a name="shared-solution"></a>Rozwiązanie udostępnione
 
-Zgodnie z opisem w temacie [mierzenie wpływu klientów](./measure.md), pozytywna weryfikacja każdej hipotezy wymaga iteracji i określenia. Wystąpił znacznie więcej błędów niż w przypadku usługi WINS w dowolnym cyklu innowacji. Jest to oczekiwane. Jeśli jednak klient potrzebuje, hipotezy i rozwiązania wyrównania w odpowiedniej skali, świat zmieni się szybko.
+Zgodnie z opisem w temacie [mierzenie wpływu klientów](./measure.md), pozytywna weryfikacja każdej hipotezy wymaga iteracji i określenia. Wystąpił znacznie więcej błędów niż w przypadku usługi WINS w dowolnym cyklu innowacji. Jest to oczekiwane zachowanie. Jeśli jednak klient potrzebuje, hipotezy i rozwiązania wyrównania w odpowiedniej skali, świat zmieni się szybko.
 
 W przypadku skalowania innowacji nie ma więcej cennych narzędzi niż współdzielona baza kodu dla rozwiązania. Niestety, nie istnieje niezawodny sposób przewidywania iteracji lub tego, który SPECJALISTy będzie miał wygraną kombinację. Dlatego nigdy nie jest zbyt wczesny do ustanowienia współużytkowanego kodu bazowego lub repozytorium. Jest to jedno podejście [techniczne](./build.md#reduce-complexity-and-delay-technical-spikes) , które nigdy nie powinno być opóźnione. Gdy zespół iteruje przez różne rozwiązania MVP, udostępnione repozytorium umożliwia łatwą współpracę i przyspieszenie opracowywania. Gdy zmiany w rozwiązaniu przeciągnieją metryki szkoleniowe w dół, Kontrola wersji umożliwia wycofanie do wcześniejszej, bardziej efektywnej wersji rozwiązania.
 
@@ -92,7 +92,7 @@ Na dowolnym etapie weryfikacji hipotez, usługa Azure DevOps i [Azure Pipelines]
 
 ## <a name="integrated-measurements"></a>Pomiary zintegrowane
 
-Gdy [mierzy się wpływ na klientów](./measure.md), ważne jest, aby zrozumieć, w jaki sposób klienci reagują na zmiany w rozwiązaniu. Te dane, znane jako *Telemetria*, zapewniają wgląd w akcje podejmowane przez użytkownika (lub kohorta użytkowników) podczas pracy z rozwiązaniem. Na podstawie tych danych można łatwo uzyskać weryfikację ilościową hipotez. Te metryki mogą być następnie używane do dostosowywania rozwiązania i generowania bardziej szczegółowych zapisów. Te delikatne zmiany ułatwiają przedwczesne roztwory w kolejnych iteracjach, co ostatecznie prowadzi do powtórnego wdrażania na dużą skalę.
+Gdy [mierzy się wpływ na klientów](./measure.md), ważne jest, aby zrozumieć, w jaki sposób klienci reagują na zmiany w rozwiązaniu. Te dane, znane jako _Telemetria_, zapewniają wgląd w akcje podejmowane przez użytkownika (lub kohorta użytkowników) podczas pracy z rozwiązaniem. Na podstawie tych danych można łatwo uzyskać weryfikację ilościową hipotez. Te metryki mogą być następnie używane do dostosowywania rozwiązania i generowania bardziej szczegółowych zapisów. Te delikatne zmiany ułatwiają przedwczesne roztwory w kolejnych iteracjach, co ostatecznie prowadzi do powtórnego wdrażania na dużą skalę.
 
 Na platformie Azure [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) udostępnia narzędzia i interfejs do zbierania i przeglądania danych ze środowiska klienta. Możesz zastosować te obserwacje i szczegółowe informacje, aby uściślić zaległości przy użyciu [Azure Boards](https://docs.microsoft.com/azure/devops/boards).
 
@@ -101,4 +101,4 @@ Na platformie Azure [Azure monitor](https://docs.microsoft.com/azure/azure-monit
 Po uzyskaniu informacji o narzędziach i procesach niezbędnych do wprowadzenia akceptacji, należy zapoznać się z bardziej zaawansowaną dyscypliną innowacji: [współdziałanie z urządzeniami](./devices.md). Ta dyscyplina może pomóc w zmniejszeniu barier między fizycznymi i cyfrowymi środowiskami, dzięki czemu rozwiązanie jest jeszcze łatwiejsze.
 
 > [!div class="nextstepaction"]
-> [Korzystanie z urządzeń](./devices.md)
+> [Interakcja z urządzeniami](./devices.md)

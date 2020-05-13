@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9647b2e7a32cd1374390e8849b62b41580284163
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9347c0c9517327dfa01bc49e344dfcc8ed90e60d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809150"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219720"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -20,14 +20,14 @@ ms.locfileid: "80809150"
 
 Należy wykonać te dwa zadania, aby dołączyć usługi zarządzania serwerem Azure do serwerów:
 
-- Wdrażanie agentów usług na serwerach
-- Włącz rozwiązania do zarządzania
+- Wdróż agentów usług na serwerach.
+- Włącz rozwiązania do zarządzania.
 
 W tym artykule opisano trzy procesy, które są niezbędne do wykonania tych zadań:
 
-1. Wdróż wymaganych agentów na maszynach wirtualnych platformy Azure za pomocą Azure Policy
-1. Wdróż wymaganych agentów na serwerach lokalnych
-1. Włączanie i Konfigurowanie rozwiązań
+1. Wdróż wymaganych agentów na maszynach wirtualnych platformy Azure przy użyciu Azure Policy.
+1. Wdróż wymaganych agentów na serwerach lokalnych.
+1. Włącz i skonfiguruj rozwiązania.
 
 > [!NOTE]
 > Przed dołączeniem maszyn wirtualnych do usług zarządzania serwerem Azure Utwórz wymagane [log Analytics obszar roboczy i konto Azure Automation](./prerequisites.md#create-a-workspace-and-automation-account) .
@@ -36,11 +36,11 @@ W tym artykule opisano trzy procesy, które są niezbędne do wykonania tych zad
 
 Wszystkie rozwiązania do zarządzania, które zostały omówione w [narzędziu Azure Management Tools i Services](./tools-services.md) , wymagają zainstalowania agenta log Analytics na maszynach wirtualnych platformy Azure i serwerach lokalnych. Możesz dołączać maszyny wirtualne platformy Azure na dużą skalę przy użyciu Azure Policy. Przypisz zasady, aby upewnić się, że Agent jest zainstalowany na maszynach wirtualnych platformy Azure i połączony z prawidłowym obszarem roboczym Log Analytics.
 
-Azure Policy ma wbudowaną [inicjatywę Policy](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives) , która obejmuje agenta log Analytics i [agenta zależności firmy Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), który jest wymagany przez Azure monitor dla maszyn wirtualnych.
+Azure Policy ma [wbudowaną inicjatywę Policy](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives) , która obejmuje agenta log Analytics i [agenta zależności firmy Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), który jest wymagany przez Azure monitor dla maszyn wirtualnych.
 
 <!-- TODOBACKLOG: Add these when available.
-- [Preview]: Enable Azure Monitor for virtual machine scale sets.
-- [Preview]: Enable Azure Monitor for VMs.
+**Preview:** Enable Azure Monitor for virtual machine scale sets.
+**Preview:** Enable Azure Monitor for VMs.
  -->
 
 > [!NOTE]
@@ -50,7 +50,7 @@ Azure Policy ma wbudowaną [inicjatywę Policy](https://docs.microsoft.com/azure
 
 Aby przypisać zasady, które opisano w poprzedniej sekcji:
 
-1. W Azure Portal przejdź do pozycji **Azure Policy** > **przypisania** > **Przypisz inicjatywę**.
+1. W Azure Portal przejdź do pozycji **Azure Policy**  >  **przypisania**  >  **Przypisz inicjatywę**.
 
     ![Zrzut ekranu przedstawiający interfejs zasad portalu](./media/onboarding-at-scale1.png)
 
@@ -77,7 +77,7 @@ Po zakończeniu pracy Kreatora przypisanie zasad zostanie wdrożone w środowisk
 > [!NOTE]
 > Przed dołączeniem usług zarządzania serwerem Azure do serwerów należy utworzyć wymagany [obszar roboczy log Analytics i konto Azure Automation](./prerequisites.md#create-a-workspace-and-automation-account) .
 
-W przypadku serwerów lokalnych należy ręcznie pobrać i zainstalować [agenta log Analytics oraz agenta zależności firmy Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) i skonfigurować go tak, aby łączył się z prawidłowym obszarem roboczym. Należy określić identyfikator obszaru roboczego i informacje o kluczu. Aby uzyskać te informacje, przejdź do obszaru roboczego log Analytics w Azure Portal, a następnie wybierz pozycję **Ustawienia** > **Zaawansowane ustawienia**.
+W przypadku serwerów lokalnych należy ręcznie pobrać i zainstalować [agenta log Analytics oraz agenta zależności firmy Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) i skonfigurować go tak, aby łączył się z prawidłowym obszarem roboczym. Należy określić identyfikator obszaru roboczego i informacje o kluczu. Aby uzyskać te informacje, przejdź do obszaru roboczego log Analytics w Azure Portal, a następnie wybierz pozycję **Ustawienia**  >  **Zaawansowane ustawienia**.
 
 ![Zrzut ekranu przedstawiający zaawansowane ustawienia obszaru roboczego Log Analytics w Azure Portal](./media/onboarding-on-premises.png)
 
@@ -91,7 +91,7 @@ Rozwiązania Update Management, Change Tracking i spisu wymagają zarówno obsza
 
 Zalecamy włączenie rozwiązania Update Management dla wszystkich serwerów. Update Management jest bezpłatny dla maszyn wirtualnych platformy Azure i serwerów lokalnych. Jeśli włączysz Update Management za pomocą konta usługi Automation, w obszarze roboczym zostanie utworzona [Konfiguracja zakresu](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account#scope-configuration) . Należy ręcznie zaktualizować zakres w celu uwzględnienia maszyn, które są objęte usługą Update Management.
 
-Aby uwzględnić istniejące serwery oraz serwery w przyszłości, należy usunąć konfigurację zakresu. W tym celu Wyświetl konto usługi Automation w Azure Portal. Wybierz pozycję **Update Management** > **Zarządzanie komputerem** > **na wszystkich dostępnych i przyszłych maszynach**. To ustawienie umożliwia wszystkim maszynom wirtualnym platformy Azure, które są połączone z obszarem roboczym używanie Update Management.
+Aby uwzględnić istniejące serwery oraz serwery w przyszłości, należy usunąć konfigurację zakresu. W tym celu Wyświetl konto usługi Automation w Azure Portal. Wybierz pozycję **Update Management**  >  **Zarządzanie komputerem**  >  **na wszystkich dostępnych i przyszłych maszynach**. To ustawienie umożliwia wszystkim maszynom wirtualnym platformy Azure, które są połączone z obszarem roboczym używanie Update Management.
 
 ![Zrzut ekranu przedstawiający Update Management w Azure Portal](./media/onboarding-configuration1.png)
 
@@ -142,10 +142,10 @@ Aby utworzyć lub zmodyfikować zapisane wyszukiwanie, wykonaj następujące kro
 
 Aby zaimplementować to rozwiązanie:
 
-1. W Azure Portal Otwórz **wszystkie usługi**, a następnie wybierz pozycję **Zarządzanie i** > **rozwiązania**ładu.
+1. W Azure Portal Otwórz **wszystkie usługi**, a następnie wybierz pozycję **Zarządzanie i**  >  **rozwiązania**ładu.
 2. W widoku **rozwiązania** wybierz pozycję **Dodaj**.
 3. Wyszukaj **Activity Log Analytics** i wybierz ją.
-4. Wybierz pozycję **Utwórz**.
+4. Wybierz przycisk **Utwórz**.
 
 Należy określić **nazwę obszaru** roboczego, który został utworzony w poprzedniej sekcji, w której jest włączone rozwiązanie.
 
@@ -155,14 +155,14 @@ Rozwiązanie Agent Health Log Analytics platformy Azure przedstawia raporty doty
 
 Aby zaimplementować to rozwiązanie:
 
-1. W Azure Portal Otwórz **wszystkie usługi**, a następnie wybierz pozycję **Zarządzanie i** > **rozwiązania**ładu.
+1. W Azure Portal Otwórz **wszystkie usługi**, a następnie wybierz pozycję **Zarządzanie i**  >  **rozwiązania**ładu.
 2. W widoku **rozwiązania** wybierz pozycję **Dodaj**.
 3. Wyszukaj **usługę Azure log Analytics Agent Health** i wybierz ją.
-4. Wybierz pozycję **Utwórz**.
+4. Wybierz przycisk **Utwórz**.
 
 Należy określić **nazwę obszaru** roboczego, który został utworzony w poprzedniej sekcji, w której jest włączone rozwiązanie.
 
-Po zakończeniu tworzenia wystąpienie zasobu obszaru roboczego wyświetla **AgentHealthAssessment** w przypadku wybrania opcji **Wyświetl** > **rozwiązania**.
+Po zakończeniu tworzenia wystąpienie zasobu obszaru roboczego wyświetla **AgentHealthAssessment** w przypadku wybrania opcji **Wyświetl**  >  **rozwiązania**.
 
 ### <a name="antimalware-assessment"></a>Ocena oprogramowania chroniącego przed złośliwym kodem
 
@@ -170,14 +170,14 @@ Antimalware Assessment rozwiązanie pomaga identyfikować serwery, które są za
 
 Aby zaimplementować to rozwiązanie:
 
-1. W Azure Portal Otwórz **wszystkie usługi**, wybierz pozycję **Zarządzanie i** > **rozwiązania**ładu.
+1. W Azure Portal Otwórz **wszystkie usługi**, wybierz pozycję **Zarządzanie i**  >  **rozwiązania**ładu.
 2. W widoku **rozwiązania** wybierz pozycję **Dodaj**.
 3. Wyszukaj, a następnie wybierz pozycję **Antimalware Assessment**.
-4. Wybierz pozycję **Utwórz**.
+4. Wybierz przycisk **Utwórz**.
 
 Należy określić **nazwę obszaru** roboczego, który został utworzony w poprzedniej sekcji, w której jest włączone rozwiązanie.
 
-Po zakończeniu tworzenia wystąpienie zasobu obszaru roboczego wyświetli **oprogramowanie chroniące przed złośliwym kodem** w przypadku wybrania opcji **Wyświetl** > **rozwiązania**.
+Po zakończeniu tworzenia wystąpienie zasobu obszaru roboczego wyświetli **oprogramowanie chroniące przed złośliwym kodem** w przypadku wybrania opcji **Wyświetl**  >  **rozwiązania**.
 
 ### <a name="azure-monitor-for-vms"></a>Usługa Azure Monitor dla maszyn wirtualnych
 

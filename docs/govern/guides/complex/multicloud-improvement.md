@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7fa026a06f2f42fda09783a29554e2a6c4797fcd
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 52f6c15f2f116c8ef972e38e0123cd8d57985cd5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434420"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220094"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -33,7 +33,7 @@ Od tej pory zmieniono pewne zmiany, które wpłyną na nadzór:
 
 - Tożsamość jest kontrolowana przez lokalne wystąpienie Active Directory. Tożsamość hybrydowa jest ułatwiona poprzez replikację do Azure Active Directory.
 - Operacje IT lub operacje w chmurze są w dużej mierze zarządzane przez Azure Monitor i powiązane możliwości automatyzacji.
-- Ciągłość działania i odzyskiwanie po awarii (BCDR) są kontrolowane przez wystąpienia magazynu Azure.
+- Ciągłość działania i odzyskiwanie po awarii (BCDR) są kontrolowane przez magazyny usługi Azure Recovery Services.
 - Azure Security Center służy do monitorowania naruszeń zabezpieczeń i ataków.
 - Azure Security Center i Azure Monitor są używane do monitorowania zarządzania chmurą.
 - Plany platformy Azure, Azure Policy i grupy zarządzania są używane do automatyzowania zgodności z zasadami.

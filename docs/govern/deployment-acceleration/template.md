@@ -1,6 +1,6 @@
 ---
-title: Szablon przyspieszenia wdrożenia
-description: Ten szablon służy do dokumentowania i przekazywania oświadczeń dotyczących zasad dotyczących konfiguracji i problemów z wdrażaniem w chmurze.
+title: Szablon dyscypliny przyspieszenia wdrożenia
+description: Ten szablon służy jako punkt wyjścia do tworzenia dokumentów i przekazywania oświadczeń dotyczących zasad dotyczących konfiguracji i wdrożenia w chmurze.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1378e2f316d607bc27f57c16fb20af98cc9feaf3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3fa30216fdd46efcdb953f43b3d85edbe61517c7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434512"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220247"
 ---
 # <a name="deployment-acceleration-template"></a>Szablon przyspieszenia wdrożenia
 
@@ -24,7 +24,7 @@ W miarę postępu dyskusji Użyj struktury tego szablonu jako modelu do przechwy
 > [!IMPORTANT]
 > Ten szablon jest ograniczonym przykładem. Przed zaktualizowaniem tego szablonu, aby odzwierciedlał wymagania, należy zapoznać się z kolejnymi krokami dotyczącymi definiowania efektywnego przyspieszenia wdrażania w ramach strategii nadzoru chmurowego.
 
-[Pobierz szablon dyscypliny ładu](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx)
+[Pobieranie szablonu dyscypliny przyspieszenia wdrożenia](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Następne kroki
 

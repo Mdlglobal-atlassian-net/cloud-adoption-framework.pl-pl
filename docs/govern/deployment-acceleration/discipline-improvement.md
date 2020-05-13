@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 97f8a82295a8eff5614c965ba583fcbf8d50f501
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 835614ca30fc4fc5ca3e617e920f46aa4039cd8b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434584"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220366"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Udoskonalenie ulepszeń wdrożenia
 
-Dyscyplina wdrożenia koncentruje się na tworzeniu zasad, które gwarantują, że zasoby są wdrażane i konfigurowane spójnie i powtarzane i pozostają zgodne w całym cyklu życia. W ramach pięciu dyscyplin nadzoru w chmurze przyspieszenie wdrożenia obejmuje decyzje dotyczące automatyzowania wdrożeń, kontroli źródłowego artefaktów wdrożenia, monitorowania wdrożonych zasobów w celu utrzymania żądanego stanu i inspekcji wszelkich problemów ze zgodnością.
+Dyscyplina wdrożenia koncentruje się na tworzeniu zasad, które gwarantują, że zasoby są wdrażane i konfigurowane spójnie i powtarzane i pozostają zgodne w całym cyklu życia. W ramach pięciu dyscyplin nadzoru w chmurze, dyscyplina wdrożenia obejmuje decyzje dotyczące automatyzowania wdrożeń, kontroli źródłowego artefaktów wdrożenia, monitorowania wdrożonych zasobów w celu utrzymania żądanego stanu i inspekcji wszelkich problemów ze zgodnością.
 
 W tym artykule przedstawiono niektóre potencjalne zadania, w których firma może uczestniczyć w ulepszaniu rozwoju dyscypliny wdrożenia. Te zadania mogą być podzielone na planowanie, kompilowanie, przyjmowanie i eksploatację etapów wdrażania rozwiązania w chmurze, które są następnie powtarzane na umożliwieniu rozwoju [przyrostowego podejścia do zarządzania chmurą](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Cztery etapy wdrażania](../../_images/govern/adoption-phases.png)
 
-*Rysunek 1. etapy wdrażania przyrostowego podejścia do ładu w chmurze.*
+_Rysunek 1: etapy wdrażania stopniowego podejścia do ładu w chmurze._
 
-Nie jest możliwe, aby żaden z dokumentów mógł uwzględnić wymagania wszystkich firm. W tym artykule opisano sugerowane minimalne i potencjalne przykładowe działania dla każdej fazy procesu ładu. Początkowym celem tych działań jest ułatwienie tworzenia programu MVP dla [zasad](../guides/index.md#an-incremental-approach-to-cloud-governance) i ustanowienie platformy do ulepszania zasad. Zespół ds. zarządzania chmurą będzie musiał zdecydować, jak dużo inwestować w te działania, aby usprawnić możliwości ładu planu bazowego tożsamości.
+Nie jest możliwe, aby żaden z dokumentów mógł uwzględnić wymagania wszystkich firm. W tym artykule opisano sugerowane minimalne i potencjalne przykładowe działania dla każdej fazy procesu ładu. Początkowym celem tych działań jest ułatwienie tworzenia programu MVP dla [zasad](../guides/index.md#an-incremental-approach-to-cloud-governance) i ustanowienie platformy do ulepszania zasad. Zespół ds. zarządzania chmurą będzie musiał zdecydować, jak dużo inwestować w te działania, aby ulepszyć dyscyplinę bazową tożsamości.
 
 > [!CAUTION]
 > Nie są one wyrównane do określonych zasad firmy lub wymagań dotyczących zgodności innych firm. Te wskazówki mają na celu ułatwienie obsługi konwersacji, które będą prowadzić do wyrównania obu wymagań przy użyciu modelu ładu chmurowego.
@@ -51,7 +51,7 @@ W tej fazie działania ładu mostkuje podział między wynikami biznesowymi i st
 
 - W przypadku nowych aplikacji opartych na chmurze wprowadź w pełni zautomatyzowane wdrożenia na początku procesu tworzenia oprogramowania. Ta inwestycja poprawi niezawodność procesów testowych i zapewnia spójność w środowiskach deweloperskich, pytań i odpowiedzi.
 - Wszystkie artefakty wdrożenia, takie jak szablony wdrażania lub skrypty konfiguracyjne, są przechowywane przy użyciu platformy kontroli źródła, takiej jak GitHub lub Azure DevOps.
-- Przechowuj wszystkie wpisy tajne, hasła, certyfikaty i parametry połączeń w [Azure Key Vault](https://docs.microsoft.com/azure/key-vault)
+- Przechowuj wszystkie wpisy tajne, hasła, certyfikaty i parametry połączeń w [Azure Key Vault](https://docs.microsoft.com/azure/key-vault).
 - Rozważmy test pilotażowy przed wdrożeniem [przyspieszania wdrażania łańcucha narzędzi](./toolchain.md), aby upewnić się, że usprawnia wdrożenia tak jak to możliwe. Zastosuj opinię z testów pilotażowych w fazie prewdrażania, powtarzając się w razie konieczności.
 - Oceń logiczną i fizyczną architekturę aplikacji, a także Zidentyfikuj możliwości automatyzacji wdrażania zasobów aplikacji lub Popraw fragmenty architektury przy użyciu innych zasobów opartych na chmurze.
 - Aktualizacja dokumentu z instrukcjami dotyczącymi architektury w celu uwzględnienia planów wdrażania i wdrożenia użytkowników oraz dystrybucji do kluczowych udziałowców.
@@ -82,7 +82,7 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 
 **Minimalna sugerowane działania:**
 
-- Dostosuj [przyspieszenie wdrażania łańcucha narzędzi](./toolchain.md) na podstawie zmian potrzeb związanych z tożsamościami w organizacji.
+- Dostosuj [łańcucha narzędzi przyspieszenia wdrożenia](./toolchain.md) w zależności od zmieniających się potrzeb organizacji.
 - Automatyzuj powiadomienia i raporty, aby otrzymywać alerty o potencjalnych problemach z konfiguracją lub złośliwych zagrożeniach.
 - Monitorowanie i raportowanie dotyczące użycia aplikacji i zasobów.
 - Zgłoś metryki po wdrożeniu i Dystrybuuj je do zainteresowanych stron.
@@ -97,7 +97,7 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy rozumiesz koncepcję zarządzania tożsamościami w chmurze, Przeanalizuj [linię bazową tożsamości łańcucha narzędzi](./toolchain.md) , aby identyfikować narzędzia i funkcje platformy Azure, które będą potrzebne podczas tworzenia dyscypliny ładu planu bazowego tożsamości na platformie Azure.
+Teraz, gdy rozumiesz koncepcję zarządzania tożsamościami w chmurze, zapoznaj się z [łańcucha narzędziem linii bazowej tożsamości](./toolchain.md) , aby zidentyfikować narzędzia i funkcje platformy Azure, które będą potrzebne podczas tworzenia dyscypliny linii bazowej tożsamości na platformie Azure.
 
 > [!div class="nextstepaction"]
 > [Łańcucha narzędzi linii bazowej tożsamości dla platformy Azure](./toolchain.md)

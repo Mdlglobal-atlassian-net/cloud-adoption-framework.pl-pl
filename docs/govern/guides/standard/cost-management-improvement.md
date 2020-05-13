@@ -8,18 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3d0a4e06a2aaa21f191130b937790408abf16952
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1c25a98eaa63e6cd6f71ac571ec4e006ad7c4946
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434294"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219941"
 ---
-# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>Standardowa Przewodnik po przedsiębiorstwie: ulepszanie dyscypliny Cost Management
+# <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: ulepszanie dyscypliny Cost Management
 
 Ten artykuł postępuje zgodnie z opisami, dodając kontrolę kosztów do programu ładu MVP.
 
 ## <a name="advancing-the-narrative"></a>Przesuwanie narracji
+
+<!-- docsTest:ignore DR -->
 
 Wdrożenie wykracza poza wskaźnik tolerancji kosztów zdefiniowany w programie ładu MVP. Jest to dobry efekt, ponieważ odnosi się do migracji z centrum danych "DR". Zwiększenie wydatków uzasadnia teraz wyjustowanie inwestycji w zespół nadzoru chmurowego.
 
@@ -36,7 +38,7 @@ Od tej pory zmieniono pewne zmiany, które wpłyną na nadzór:
 
 ### <a name="incrementally-improve-the-future-state"></a>Przyrostowe ulepszanie stanu w przyszłości
 
-Monitorowanie kosztów i raportowanie należy dodać do rozwiązania w chmurze. Nadal jest to rozliczanie kosztów. Oznacza to, że płatność za usługi Cloud Services nadal pochodzi z zakupów IT. Jednak raportowanie powinno powiązać bezpośrednie koszty operacyjne z funkcjami, które zużywają koszty chmury. Ten model jest określany jako "Pokaż z tyłu" model ewidencjonowania aktywności w chmurze.
+Monitorowanie kosztów i raportowanie należy dodać do rozwiązania w chmurze. Nadal jest to rozliczanie kosztów. Oznacza to, że płatność za usługi Cloud Services nadal pochodzi z zakupów IT. Jednak raportowanie powinno powiązać bezpośrednie koszty operacyjne z funkcjami, które zużywają koszty chmury. Ten model jest określany jako model ewidencjonowania aktywności w chmurze _przewidywanych kosztów_ .
 
 Zmiany bieżącego i przyszłego stanu ujawniają nowe zagrożenia, które będą wymagały nowych instrukcji zasad.
 

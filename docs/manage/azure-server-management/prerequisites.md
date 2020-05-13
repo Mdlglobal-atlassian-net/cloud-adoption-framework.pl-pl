@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1eaa3abcef760d31d2107ddf1922b13d52e8441c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6671b194d5969be75283378d571b85bd679a7953
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434097"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219652"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Faza 1: planowanie wymagań wstępnych dla usług zarządzania serwerem Azure
 
@@ -40,7 +40,7 @@ Niektóre usługi zarządzania wymagają konta [Azure Automation](https://docs.m
 Następujące usługi zarządzania serwerem Azure wymagają połączonego obszaru roboczego Log Analytics i konta usługi Automation:
 
 - [Zarządzanie aktualizacjami platformy Azure](https://docs.microsoft.com/azure/automation/automation-update-management)
-- [Śledzenie zmian i spis](https://docs.microsoft.com/azure/automation/change-tracking)
+- [Change Tracking i spis](https://docs.microsoft.com/azure/automation/change-tracking)
 - [Hybrydowy proces roboczy elementu Runbook](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)
 - [Desired State Configuration](https://docs.microsoft.com/azure/virtual-machines/extensions/dsc-overview)
 
@@ -52,10 +52,10 @@ W przykładach w tych wskazówkach przyjęto założenie wdrożenia, które nie 
 
 Podczas przygotowywania obszarów roboczych i kont potrzebnych do dołączania usług zarządzania należy wziąć pod uwagę następujące zagadnienia:
 
-- **Lokalizacje geograficzne platformy Azure i zgodność z przepisami:** Regiony platformy Azure są zorganizowane w *lokalizacje geograficzne*. [Lokalizacja geograficzna platformy Azure](https://azure.microsoft.com/global-infrastructure/geographies) zapewnia, że wymagania dotyczące miejsca zamieszkania, suwerenności, zgodności i odporności są honorowane w granicach geograficznych. Jeśli Twoje obciążenia podlegają jurysdykcji danych lub innych wymaganiach dotyczących zgodności, należy wdrożyć obszary robocze i usługi Automation w regionach w tej samej lokalizacji geograficznej platformy Azure co obsługiwane przez nie zasoby obciążenia.
+- **Lokalizacje geograficzne platformy Azure i zgodność z przepisami:** Regiony platformy Azure są zorganizowane w _lokalizacje geograficzne_. [Lokalizacja geograficzna platformy Azure](https://azure.microsoft.com/global-infrastructure/geographies) zapewnia, że wymagania dotyczące miejsca zamieszkania, suwerenności, zgodności i odporności są honorowane w granicach geograficznych. Jeśli Twoje obciążenia podlegają jurysdykcji danych lub innych wymaganiach dotyczących zgodności, należy wdrożyć obszary robocze i usługi Automation w regionach w tej samej lokalizacji geograficznej platformy Azure co obsługiwane przez nie zasoby obciążenia.
 - **Liczba obszarów roboczych:** Jako zasada identyfikatora GUID należy utworzyć minimalną liczbę obszarów roboczych wymaganych dla każdej lokalizacji geograficznej platformy Azure. Zalecamy co najmniej jeden obszar roboczy dla każdej lokalizacji geograficznej platformy Azure, w której znajdują się zasoby obliczeniowe lub magazynowe. To wstępne wyrównanie pomaga uniknąć problemów z przepisami w przyszłości w przypadku migrowania danych do różnych lokalizacje geograficzne.
 - **Przechowywanie i** przenoszące dane: Podczas tworzenia obszarów roboczych lub kont usługi Automation może być również konieczne uwzględnienie zasad przechowywania danych lub wymagań dotyczących pułapek danych. Aby uzyskać więcej informacji na temat tych zasad i dodatkowych zagadnień związanych z planowaniem obszarów roboczych, zobacz [Zarządzanie danymi dzienników i obszarami roboczymi w Azure monitor](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access).
-- **Mapowanie regionu:** Łączenie obszaru roboczego Log Analytics i konta Azure Automation jest obsługiwane tylko w niektórych regionach świadczenia usługi Azure. Na przykład jeśli obszar roboczy Log Analytics jest hostowany w regionie *wschodniego* , należy utworzyć połączone konto usługi Automation w regionie *EastUS2* , które będzie używane z usługami zarządzania. Jeśli masz konto usługi Automation, które zostało utworzone w innym regionie, nie można połączyć się z obszarem roboczym w *Wschodzie*. Wybór regionów wdrożenia może znacząco wpłynąć na wymagania dotyczące lokalizacji geograficznej platformy Azure. Zapoznaj się z [tabelą mapowanie regionów](https://docs.microsoft.com/azure/automation/how-to/region-mappings) , aby określić, który region powinien obsługiwać obszary robocze i konta usługi Automation.
+- **Mapowanie regionu:** Łączenie obszaru roboczego Log Analytics i konta Azure Automation jest obsługiwane tylko w niektórych regionach świadczenia usługi Azure. Na przykład jeśli obszar roboczy Log Analytics jest hostowany w `EastUS` regionie, połączone konto usługi Automation musi być utworzone w `EastUS2` regionie, który ma być używany z usługami zarządzania. Jeśli masz konto usługi Automation, które zostało utworzone w innym regionie, nie można połączyć się z obszarem roboczym w programie `EastUS` . Wybór regionów wdrożenia może znacząco wpłynąć na wymagania dotyczące lokalizacji geograficznej platformy Azure. Zapoznaj się z [tabelą mapowanie regionów](https://docs.microsoft.com/azure/automation/how-to/region-mappings) , aby określić, który region powinien obsługiwać obszary robocze i konta usługi Automation.
 - **Wieloadresowości obszaru roboczego:** Agent Log Analytics platformy Azure obsługuje wieloadresowości w niektórych scenariuszach, ale podczas działania w tej konfiguracji Agent obejmuje kilka ograniczeń i wyzwań. Jeśli firma Microsoft nie zaleca tego konkretnego scenariusza, nie zalecamy konfigurowania wieloadresowości na agencie Log Analytics.
 
 ## <a name="resource-placement-examples"></a>Przykłady umieszczania zasobów

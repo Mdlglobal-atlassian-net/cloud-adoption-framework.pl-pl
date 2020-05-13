@@ -1,6 +1,6 @@
 ---
-title: Metryki i wskaźniki tolerancji ryzyka związane z przyspieszeniem wdrożenia
-description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby określić tolerancję ryzyka biznesowego związanego z przyspieszeniem wdrażania.
+title: Metryki i wskaźniki tolerancji ryzyka w dyscyplinie przyspieszenia wdrożenia
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby określić tolerancję ryzyka biznesowego związany z dyscypliną wdrożenia.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 14ae08de4bb0ce82e4ba0d5ce0225c0597ee67b4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ed92a62d83092a54aa86c58f7b453768fe71ad1f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434527"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220281"
 ---
-# <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Metryki, wskaźniki i odporność na przyspieszenie wdrożenia
+# <a name="risk-tolerance-metrics-and-indicators-in-the-deployment-acceleration-discipline"></a>Metryki i wskaźniki tolerancji ryzyka w dyscyplinie przyspieszenia wdrożenia
 
-Ten artykuł pomoże Ci określić tolerancję ryzyka biznesowego, która odnosi się do przyspieszenia wdrażania. Definiowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy dla inwestycji w okres zapadalności dyscypliny wdrożenia.
+Dowiedz się, jak określić sposób określania tolerancji ryzyka biznesowego związanego z dyscypliną przyspieszenia wdrożenia. Definiowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy do inwestowania w okres zapadalności tej dyscypliny.
 
 ## <a name="metrics"></a>Metryki
 
-Dyscyplina wdrożenia koncentruje się na ryzyku związanym z konfiguracją, wdrażaniem, aktualizowaniem i konserwowaniem zasobów w chmurze. Poniższe informacje są przydatne podczas przyjmowania tej dyscypliny zarządzania chmurą:
+Przyspieszenie wdrażania skupia się na ryzyku związanym z konfiguracją, wdrażaniem, aktualizowaniem i konserwowaniem zasobów w chmurze. Poniższe informacje są przydatne podczas przyjmowania tej dyscypliny zarządzania chmurą:
 
 - **Niepowodzenia wdrożenia:** Procent wdrożeń, które kończą się niepowodzeniem lub powodują błędne skonfigurowanie zasobów.
 - **Czas wdrożenia:** Ilość czasu wymagana do wdrożenia aktualizacji w istniejącym systemie.
@@ -31,9 +31,7 @@ Dyscyplina wdrożenia koncentruje się na ryzyku związanym z konfiguracją, wdr
 
 Ryzyko związane z przyspieszeniem wdrażania jest w dużym stopniu związane z liczbą i złożonością systemów opartych na chmurze wdrożonych dla przedsiębiorstwa. Wraz ze wzrostem ilości danych w chmurze liczba wdrożonych systemów oraz częstotliwość aktualizowania zasobów w chmurze zostanie zwiększona. Zależności między zasobami powiększają istotność zapewnienia właściwej konfiguracji zasobów i projektowania systemów pod kątem odporności, jeśli co najmniej jeden z zasobów napotka nieoczekiwany Przestój.
 
-<!-- "en-us" location is required for the URL below. -->
-
-Tradycyjni korporacyjne organizacje IT często korzystają z silosów, zabezpieczeń i zespołów programistycznych, które często nie współpracują ze sobą lub są nawet adversarial lub nieszkodliwe. Aby zapewnić wczesne Rozwiązywanie problemów i integrowanie najważniejszych osób biorących udział w każdym z zespołów, może pomóc w zapewnieniu elastyczności wdrożenia chmury, gdy pozostała bezpieczna i dobrze zarządzana. W związku z tym, należy rozważyć przyjęcie kultury organizacyjnej DevOps lub [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) na wczesnej platformie w podróży do wdrożenia w chmurze.
+Tradycyjni korporacyjne organizacje IT często korzystają z silosów, zabezpieczeń i zespołów programistycznych, które często nie współpracują ze sobą lub są nawet adversarial lub nieszkodliwe. Aby zapewnić wczesne Rozwiązywanie problemów i integrowanie najważniejszych osób biorących udział w każdym z zespołów, może pomóc w zapewnieniu elastyczności wdrożenia chmury, gdy pozostała bezpieczna i dobrze zarządzana. W związku z tym Rozważ przyjęcie kultury organizacyjnej DevOps lub [DevSecOps](https://www.microsoft.com/devsecops) na wczesnej platformie w podróży wdrożenia w chmurze.
 
 Współpracuj z zespołem DevSecOps oraz zainteresowanymi stronami biznesowymi, aby identyfikować [zagrożenia biznesowe](./business-risks.md) związane z konfiguracją, a następnie określić akceptowalny punkt odniesienia dla tolerancji ryzyka konfiguracji. W tej sekcji wskazówek dotyczących struktury wdrażania chmury przedstawiono przykłady, ale szczegóły dotyczące zagrożeń i linii bazowych dla Twojej firmy lub wdrożeń będą prawdopodobnie inne.
 
@@ -45,9 +43,9 @@ Po utworzeniu planu bazowego należy ustanowić minimalne wzorce reprezentujące
 
 ## <a name="next-steps"></a>Następne kroki
 
-Korzystając z [szablonu zarządzania chmurą](./template.md), metryk dokumentu i wskaźniki tolerancji, które są wyrównane do bieżącego planu wdrożenia chmury.
+[Szablon dyscypliny przyspieszenia wdrożenia](./template.md) służy do dokumentowania metryk i wskaźników tolerancji, które są wyrównane do bieżącego planu wdrażania chmury.
 
-Zapoznaj się z przykładowymi zasadami przyspieszenia wdrożenia w celu opracowania zasad związanych z konkretnymi zagrożeniami biznesowymi, które są dostosowane do planów wdrażania w chmurze.
+Zapoznaj się z przykładowymi zasadami przyspieszenia wdrożenia w celu opracowania własnych zasad w celu rozwiązania określonych zagrożeń dla firmy, które są dostosowane do planów wdrażania w chmurze.
 
 > [!div class="nextstepaction"]
 > [Przeglądanie przykładowych zasad](./policy-statements.md)

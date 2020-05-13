@@ -9,15 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c946b5e7e43004653b31bc67ff1e325363deff9f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c1c54d7587bf73f5c9348c878caea7ae7cde89ae
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396171"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220196"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>Pięć dziedzin nadzoru chmury
 
+<!-- docsTest:disable TODO -->
 <!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsI">
@@ -26,7 +27,10 @@ ms.locfileid: "81396171"
             <div class="cardPadding" style="padding-bottom:10px;">
                 <div class="card" style="padding-bottom:10px;">
                     <div class="cardText" style="padding-left:0px;">
-Wszelkie zmiany procesów firmy lub platform technologicznych wprowadzają ryzyko. Zespoły nadzorujące chmur, których członkowie są czasami znane jako powiernika chmury, są zadaniem z ograniczeniami tego ryzyka i zapewnieniem minimalnego zakłócenia wdrażania lub wysiłków innowacji.<br/><br/>Model nadzoru struktury wdrażania chmury obejmuje te decyzje (bez względu na wybraną platformę chmury), koncentrując się na <a href="./corporate-policy.md">rozwoju zasad korporacyjnych</a> i <a href="#disciplines-of-cloud-governance">pięciu dyscyplinach zarządzania chmurą</a>. <a href="./guides/index.md">Przewodniki projektowe</a> z możliwością podejmowania działań pokazują ten model przy użyciu usług platformy Azure. Zapoznaj się z zasadami dotyczącymi modelu ładu Framework wdrażania w chmurze poniżej.
+Wszelkie zmiany procesów firmy lub platform technologicznych wprowadzają ryzyko. Zespoły nadzorujące chmur, których członkowie są czasami znane jako powiernika chmury, są zadaniem z ograniczeniami tego ryzyka i zapewnieniem minimalnego zakłócenia wdrażania lub wysiłków innowacji.
+    <br>
+    <br>
+Model nadzoru struktury wdrażania chmury obejmuje te decyzje (bez względu na wybraną platformę chmury), koncentrując się na <a href="./corporate-policy.md">rozwoju zasad korporacyjnych</a> i <a href="#disciplines-of-cloud-governance">pięciu dyscyplinach zarządzania chmurą</a>. <a href="./guides/index.md">Przewodniki projektowe</a> z możliwością podejmowania działań pokazują ten model przy użyciu usług platformy Azure. Zapoznaj się z zasadami dotyczącymi modelu ładu Framework wdrażania w chmurze poniżej.
                     </div>
                 </div>
             </div>
@@ -40,7 +44,7 @@ Wszelkie zmiany procesów firmy lub platform technologicznych wprowadzają ryzyk
                         <div class="cardText" style="padding-left:0px;">
     <img src="../_images/operational-transformation-govern-highres.png" alt="Diagram of the Cloud Adoption Framework governance model: Corporate policy and governance disciplines">
     <br>
-    <i>Rysunek 1 — Diagram zasad firmowych i pięć dyscyplin nadzoru chmurowego.</i>
+    <i>Rysunek 1: Diagram zasad firmowych i pięć dyscyplin zarządzania chmurą.</i>
                         </div>
                     </div>
                 </div>

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: afaedb0607ecf4b1195578dc72e756616c6384d4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1f1060ba4df7dfb398a94f8611901612e1ecf60d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425509"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219788"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Zbierz dane za pomocą migracji i modernizacji istniejących źródeł danych
 
@@ -46,14 +46,14 @@ W przypadku migracji offline przestój aplikacji rozpoczyna po rozpoczęciu migr
 
 Zalecamy, aby określić akceptowalny przestój biznesowy i przetestować migrację w trybie offline. Należy to sprawdzić, czy czas przywracania spełnia akceptowalne przestoje. Jeśli czas przywracania jest nieakceptowalny, wykonaj migrację online.
 
-|Element źródłowy  |Środowisko docelowe  |Narzędzie  |Typ migracji  |Wskazówki  |
-|---------|---------|---------|---------|---------|
-|SQL Server|Azure SQL Database|Database Migration Service|W trybie offline|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|SQL Server|Azure SQL Database|Database Migration Service|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Database Migration Service|W trybie offline|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|SQL Server|Wystąpienie zarządzane usługi Azure SQL Database|Database Migration Service|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
-|SQL Server RDS|Azure SQL Database lub Azure SQL Database wystąpienia zarządzanego|Database Migration Service|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
-|MySQL|Azure Database for MySQL|Database Migration Service|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)|
-|PostgreSQL|Azure Database for PostgreSQL|Database Migration Service|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
-|MongoDB|Azure Cosmos DB interfejs API Mongo|Database Migration Service|W trybie offline|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
-|MongoDB|Azure Cosmos DB interfejs API Mongo|Database Migration Service|Online|[Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
+| Element źródłowy  | Środowisko docelowe  | Narzędzie  | Typ migracji | Wskazówki |
+|---|---|---|---|---|
+| SQL Server | Azure SQL Database | Database Migration Service | W trybie offline | [Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql) |
+| SQL Server | Azure SQL Database | Database Migration Service | Online | [Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online) |
+| SQL Server | Wystąpienie zarządzane usługi Azure SQL Database | Database Migration Service | W trybie offline | [Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance) |
+| SQL Server | Wystąpienie zarządzane usługi Azure SQL Database | Database Migration Service | Online | [Samouczek](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online) |
+| SQL Server RDS | Azure SQL Database lub Azure SQL Database wystąpienia zarządzanego | Database Migration Service | Online | [Samouczek](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online) |
+| MySQL | Azure Database for MySQL | Database Migration Service | Online | [Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online) |
+| PostgreSQL | Azure Database for PostgreSQL | Database Migration Service | Online | [Samouczek](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online) |
+| MongoDB | Azure Cosmos DB interfejs API Mongo | Database Migration Service | W trybie offline | [Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db) |
+| MongoDB | Azure Cosmos DB interfejs API Mongo | Database Migration Service | Online | [Samouczek](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online) |

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f83678c1a2b3387155b9fa908c54e81670daf8ae
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0396ccaf952bc9d7812304af5d1d9c9952b751cc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426507"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219635"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>Faza 2: dołączanie usług zarządzania serwerem Azure
 
@@ -38,7 +38,7 @@ Na poniższym diagramie przedstawiono zalecany model wdrażania dla usług zarz�
 
 ![Diagram zalecanego modelu wdrażania](./media/recommended-deployment.png)
 
-Jak pokazano na powyższym diagramie, Agent Log Analytics ma zarówno konfigurację *autorejestrowania* *, jak* i konfiguracji niezależną dla serwerów lokalnych:
+Jak pokazano na powyższym diagramie, Agent Log Analytics ma zarówno konfigurację _autorejestrowania_ _, jak_ i konfiguracji niezależną dla serwerów lokalnych:
 
 - **Rejestruj ponownie:** Gdy Agent Log Analytics jest zainstalowany na serwerze i skonfigurowany do łączenia się z obszarem roboczym, rozwiązania, które są włączone w tym obszarze roboczym, są automatycznie stosowane na serwerze.
 - **Zgoda na uczestnictwo:** Nawet jeśli Agent jest zainstalowany i połączony z obszarem roboczym, rozwiązanie nie zostanie zastosowane, chyba że zostanie dodane do konfiguracji zakresu serwera w obszarze roboczym.

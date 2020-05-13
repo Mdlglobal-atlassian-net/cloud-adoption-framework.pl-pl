@@ -1,6 +1,6 @@
 ---
-title: Podstawowe czynniki ryzyka biznesowego tożsamości
-description: Zapoznaj się z przykładami typowych rozwiązań dla klientów w ramach strategii nadzoru chmurowego. 
+title: Motywacje i ryzyko biznesowe w dyscyplinie linii bazowej tożsamości
+description: Zapoznaj się z przykładami typowych rozwiązań dla klientów w ramach strategii nadzoru chmurowego.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fa8bd53e2d920f8d69fe6484d427d9c9400ad174
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 370dfa7a040a41e22f23741ca30cf3a305de7f29
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429887"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219890"
 ---
-# <a name="identity-baseline-motivations-and-business-risks"></a>Motywacje linii bazowej tożsamości i ryzyko biznesowe
+# <a name="motivations-and-business-risks-in-the-identity-baseline-discipline"></a>Motywacje i ryzyko biznesowe w dyscyplinie linii bazowej tożsamości
 
 W tym artykule omówiono przyczyny, w których klienci zazwyczaj przyjmują dyscyplinę bazową tożsamości w ramach strategii nadzoru chmurowego. Zawiera również kilka przykładów ryzyka biznesowego, które dotyczą instrukcji zasad.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="identity-baseline-relevancy"></a>Dokładność linii bazowej tożsamości
+## <a name="relevance"></a>Trafność
 
 Tradycyjne katalogi lokalne zostały zaprojektowane tak, aby umożliwić firmom ścisłą kontrolę uprawnień i zasad dla użytkowników, grup i ról w swoich sieciach wewnętrznych i centrach danych. Te katalogi zazwyczaj obsługują implementacje z jedną dzierżawą, z usługami mającymi zastosowanie tylko w środowisku lokalnym.
 
@@ -42,7 +42,7 @@ Zagrożenia będą się różnić między organizacjami, ale poniżej przedstawi
 
 ## <a name="next-steps"></a>Następne kroki
 
-Korzystając z [szablonu zarządzania chmurą](./template.md), dokumentuj ryzyka biznesowego, które mogą być wprowadzane przez bieżący plan wdrożenia chmury.
+[Szablon dyscypliny linii bazowej tożsamości](./template.md) służy do dokumentowania ryzyka biznesowego, które mogą być wprowadzane przez bieżący plan wdrożenia chmury.
 
 Po ustaleniu realistycznych zagrożeń handlowych, następnym krokiem jest udokumentowanie tolerancji firmy dla ryzyka oraz wskaźników i kluczowych metryk, aby monitorować tę tolerancję.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1fb85abb334f5af52b3b6a2dda375897a9b5b4ee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e3f2a6156d282e2db6fb8a7206251447f9e48f71
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997250"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219805"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Instrukcje dotyczące przykładowych zasad linii bazowej zabezpieczeń
 
@@ -47,7 +47,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Podsieci sieciowe zawierające chronione dane muszą być odizolowane od innych podsieci. Ruch sieciowy między podsieciami chronionych danych ma być regularnie poddawany inspekcji.
 
-**Potencjalna opcja projektowania:** Na platformie Azure izolacja sieci i podsieci jest zarządzana za pomocą [sieci wirtualnych platformy Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
+**Potencjalna opcja projektowania:** Na platformie Azure izolacja sieci i podsieci jest zarządzana za pomocą [usługi azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
 
 ## <a name="secure-external-access"></a>Bezpieczny dostęp zewnętrzny
 
@@ -55,7 +55,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Nie można bezpośrednio uzyskać dostępu do podsieci zawierającej chronione dane za pośrednictwem publicznej sieci Internet lub między centrami danych. Dostęp do tych podsieci musi być kierowany za pośrednictwem podsieci pośrednich. Cały dostęp do tych podsieci musi następować przez rozwiązanie zapory, które może wykonywać funkcje skanowania pakietów i blokowania.
 
-**Potencjalna opcja projektowania:** Na platformie Azure Zabezpiecz publiczne punkty końcowe, wdrażając [strefę DMZ między publicznym Internetem a siecią opartą na chmurze](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Rozważ wdrożenie, konfigurację i automatyzację [zapory platformy Azure](https://docs.microsoft.com/azure/firewall).
+**Potencjalna opcja projektowania:** Na platformie Azure Zabezpiecz publiczne punkty końcowe, wdrażając [strefę DMZ między publicznym Internetem a siecią opartą na chmurze](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Rozważ wdrożenie, konfigurację i automatyzację [zapory platformy Azure](https://docs.microsoft.com/azure/firewall/overview).
 
 ## <a name="ddos-protection"></a>Ochrona przed atakami DDOS
 
@@ -63,7 +63,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Wdróż zautomatyzowane mechanizmy ograniczania DDoS do wszystkich dostępnych publicznie punktów końcowych sieci. Żadna publiczna witryna sieci Web utworzona przez IaaS nie powinna być udostępniona w Internecie bez DDoS.
 
-**Potencjalna opcja projektowania:** Użyj [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) Standard, aby zminimalizować zakłócenia spowodowane atakami DDoS.
+**Potencjalna opcja projektowania:** Użyj [Azure DDoS Protection Standard](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) , aby zminimalizować zakłócenia spowodowane atakami DDoS.
 
 ## <a name="secure-on-premises-connectivity"></a>Bezpieczna łączność lokalna
 
@@ -85,15 +85,15 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Ryzyko techniczne:** W miarę upływu czasu nowe zagrożenia bezpieczeństwa i ataki typów ataków zwiększają ryzyko wystąpienia zasobów w chmurze lub zakłócają ich działanie.
 
-**Instrukcja zasad:** Trendy i potencjalne luki w zabezpieczeniach, które mogą mieć wpływ na wdrożenia w chmurze, powinny być regularnie weryfikowane przez zespół ds. zabezpieczeń, aby zapewnić aktualizacje narzędzi linii bazowej zabezpieczeń używanej w chmurze.
+**Instrukcja zasad:** Trendy i potencjalne luki w zabezpieczeniach, które mogą mieć wpływ na wdrożenia w chmurze, powinny być regularnie weryfikowane przez zespół ds. zabezpieczeń, aby zapewnić aktualizacje narzędzi linii bazowej zabezpieczeń używanych w chmurze.
 
-**Potencjalna opcja projektowania:** Ustanów regularne spotkania przeglądów zabezpieczeń, które obejmują odpowiednich członków zespołu IT i nadzoru. Zapoznaj się z istniejącymi danymi zabezpieczeń i metrykami, aby określić luki w bieżącym narzędziu zasady i zabezpieczenia i zasady aktualizacji w celu skorygowania wszelkich nowych zagrożeń. Użyj [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) i [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) , aby uzyskać wgląd w szczegółowe informacje na temat nowych zagrożeń związanych z wdrożeniami.
+**Potencjalna opcja projektowania:** Ustanów regularne spotkania przeglądów zabezpieczeń, które obejmują odpowiednich członków zespołu IT i nadzoru. Zapoznaj się z istniejącymi danymi i metrykami zabezpieczeń, aby ustalić luki w bieżącym narzędziu zasady i narzędzia bazowe zabezpieczeń oraz zaktualizować zasady w celu skorygowania wszelkich nowych zagrożeń. Użyj [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) i [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) , aby uzyskać wgląd w szczegółowe informacje na temat nowych zagrożeń związanych z wdrożeniami.
 
 ## <a name="next-steps"></a>Następne kroki
 
 Przykłady wymienione w tym artykule mogą służyć jako punkt wyjścia do opracowania zasad, które dotyczą konkretnych zagrożeń związanych z zabezpieczeniami, które są dostosowane do planów wdrażania w chmurze.
 
-Aby rozpocząć tworzenie własnych niestandardowych instrukcji zasad dotyczących linii bazowej zabezpieczeń, Pobierz [szablon linii bazowej zabezpieczeń](./template.md).
+Aby rozpocząć tworzenie własnych niestandardowych instrukcji zasad linii bazowej zabezpieczeń, Pobierz [szablon dyscypliny linii bazowej zabezpieczeń](./template.md).
 
 Aby przyspieszyć wdrażanie tego dyscypliny, wybierz [Przewodnik dotyczący ładu](../guides/index.md) z możliwością działania, który najlepiej odpowiada Twojemu środowisku. Następnie zmodyfikuj projekt, aby uwzględnić określone decyzje dotyczące zasad firmowych.
 

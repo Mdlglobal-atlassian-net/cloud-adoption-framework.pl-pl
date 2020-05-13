@@ -8,26 +8,26 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 254abb817b89e34e9e92fb2b9eb949784e269601
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 82725e152efc8038d983939b1f690be0574e435b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995216"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219873"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
 # <a name="identity-baseline-discipline-improvement"></a>Poprawa dyscypliny linii bazowej tożsamości
 
-Dyscyplina bazowa tożsamości koncentruje się na sposobach ustanawiania zasad zapewniających spójność i ciągłość tożsamości użytkowników niezależnie od dostawcy chmury, który obsługuje aplikację lub obciążenie. W pięciu dyscyplinach zarządzania chmurą, linia bazowa tożsamości obejmuje decyzje dotyczące [strategii tożsamości hybrydowej](../../decision-guides/identity/index.md), oceny i rozszerzenia repozytoriów tożsamości, implementacji logowania jednokrotnego (tego samego logowania), inspekcji i monitorowania w celu nieautoryzowanego użycia lub złośliwych podmiotów. W niektórych przypadkach może być również zaangażowana decyzja o modernizację, konsolidację lub integrację wielu dostawców tożsamości.
+Dyscyplina bazowa tożsamości koncentruje się na sposobach ustanawiania zasad zapewniających spójność i ciągłość tożsamości użytkowników niezależnie od dostawcy chmury, który obsługuje aplikację lub obciążenie. W ramach pięciu dyscyplin nadzoru chmurowego dyscyplina podstawowa tożsamości obejmuje decyzje dotyczące [strategii tożsamości hybrydowej](../../decision-guides/identity/index.md), oceny i rozszerzenia repozytoriów tożsamości, implementacji logowania jednokrotnego (tego samego logowania), inspekcji i monitorowania w celu nieautoryzowanego użycia lub złośliwych podmiotów. W niektórych przypadkach może być również zaangażowana decyzja o modernizację, konsolidację lub integrację wielu dostawców tożsamości.
 
 W tym artykule przedstawiono niektóre potencjalne zadania, w których firma może uczestniczyć w ulepszaniu dyscypliny linii bazowej tożsamości. Te zadania mogą być podzielone na planowanie, kompilowanie, przyjmowanie i eksploatację etapów wdrażania rozwiązania w chmurze, które są następnie powtarzane na umożliwieniu rozwoju [przyrostowego podejścia do zarządzania chmurą](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Cztery etapy wdrażania](../../_images/govern/adoption-phases.png)
 
-*Rysunek 1. etapy wdrażania przyrostowego podejścia do ładu w chmurze.*
+_Rysunek 1: etapy wdrażania stopniowego podejścia do ładu w chmurze._
 
-Nie jest możliwe, aby żaden z dokumentów mógł uwzględnić wymagania wszystkich firm. W tym artykule opisano sugerowane minimalne i potencjalne przykładowe działania dla każdej fazy procesu ładu. Początkowym celem tych działań jest ułatwienie tworzenia programu MVP dla [zasad](../guides/index.md#an-incremental-approach-to-cloud-governance) i ustanowienie platformy do ulepszania zasad. Zespół ds. zarządzania chmurą będzie musiał zdecydować, jak dużo inwestować w te działania, aby usprawnić możliwości ładu planu bazowego tożsamości.
+Nie jest możliwe, aby żaden z dokumentów mógł uwzględnić wymagania wszystkich firm. W tym artykule opisano sugerowane minimalne i potencjalne przykładowe działania dla każdej fazy procesu ładu. Początkowym celem tych działań jest ułatwienie tworzenia programu MVP dla [zasad](../guides/index.md#an-incremental-approach-to-cloud-governance) i ustanowienie platformy do ulepszania zasad. Zespół ds. zarządzania chmurą będzie musiał zdecydować, jak dużo inwestować w te działania, aby ulepszyć dyscyplinę bazową tożsamości.
 
 > [!CAUTION]
 > Nie są one wyrównane do określonych zasad firmy lub wymagań dotyczących zgodności innych firm. Te wskazówki mają na celu ułatwienie obsługi konwersacji, które będą prowadzić do wyrównania obu wymagań przy użyciu modelu ładu chmurowego.
@@ -38,7 +38,7 @@ W tej fazie działania ładu mostkuje podział między wynikami biznesowymi i st
 
 **Minimalna sugerowane działania:**
 
-- Oceń opcje [łańcucha narzędzi tożsamości](./toolchain.md) i Implementuj strategię hybrydową, która jest odpowiednia dla Twojej organizacji.
+- Oceń opcje [łańcucha narzędzi linii bazowej tożsamości](./toolchain.md) i Implementuj strategię hybrydową, która jest odpowiednia dla Twojej organizacji.
 - Opracowywanie dokumentów z instrukcjami dotyczącymi architektury i dystrybucji do kluczowych uczestników projektu.
 - Zaangażuj i powiąż osoby i zespoły, których dotyczy rozwój wytycznych dotyczących architektury.
 
@@ -57,11 +57,13 @@ Do pomyślnego przeprowadzenia migracji środowiska wymagane są pewne wymagania
 
 **Minimalna sugerowane działania:**
 
-- Przed zaimplementowaniem [tożsamości łańcucha narzędzi](./toolchain.md)należy wziąć pod uwagę test pilotażowy, dzięki czemu można uprościć środowisko użytkownika tak, jak to możliwe.
+- Rozważmy test pilotażowy przed wdrożeniem [linii bazowej tożsamości łańcucha narzędzi](./toolchain.md), aby upewnić się, że środowisko użytkownika jest tak dużo jak to możliwe.
 - Zastosuj opinię z testów pilotażowych do wdrożenia prewdrożeniowego. Powtarzaj, dopóki wyniki nie zostaną akceptowalne.
 - Aktualizacja dokumentu z instrukcjami dotyczącymi architektury w celu uwzględnienia planów wdrażania i wdrożenia użytkowników oraz dystrybucji do kluczowych udziałowców.
 - Rozważ utworzenie programu wczesnego oprogramowania do wdrażania i przeprowadzenie wdrożenia w ograniczonej liczbie użytkowników.
 - Kontynuuj, aby wypróbować ludzi i zespoły, których dotyczą wskazówki dotyczące architektury.
+
+<!-- docsTest:ignore "seamless SSO" -->
 
 **Potencjalne działania:**
 
@@ -70,18 +72,18 @@ Do pomyślnego przeprowadzenia migracji środowiska wymagane są pewne wymagania
   - W przypadku federacyjnego Włącz ograniczenia dzierżawy dla kont administracyjnych.
 - Integruj katalogi lokalne i w chmurze.
 - Rozważ użycie następujących modeli dostępu:
-  - Model [dostępu o najniższych uprawnieniach](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) .
-  - Model dostępu do [linii bazowej tożsamości uprzywilejowanej](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) .
-- Zakończ wszystkie szczegóły dotyczące preintegracji i zapoznaj się z [najlepszymi rozwiązaniami dotyczącymi tożsamości](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices).
-  - Włącz pojedyncze tożsamości, logowanie jednokrotne (SSO) lub bezproblemowe logowanie jednokrotne.
+  - Model dostępu [administracyjnego o najniższych uprawnieniach](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) .
+  - Model dostępu [Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) .
+- Zakończ wszystkie szczegóły dotyczące preintegracji oraz zapoznaj się z [najlepszymi rozwiązaniami dotyczącymi zabezpieczeń zarządzania tożsamościami i kontroli dostępu](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices).
+  - Włącz pojedyncze tożsamości, logowanie jednokrotne (SSO), nazywane również bezproblemową logowaniem jednokrotnym.
   - Skonfiguruj uwierzytelnianie wieloskładnikowe dla administratorów.
   - W razie potrzeby można skonsolidować lub zintegrować dostawców tożsamości.
   - Zaimplementuj narzędzia niezbędne do scentralizowanego zarządzania tożsamościami.
   - Włącz dostęp just-in-Time (JIT) i alerty zmian ról.
-  - Przeprowadź analizę ryzyka kluczowych działań administratorów do przypisywania do wbudowanych ról.
+  - Przeprowadź analizę ryzyka dla kluczowych działań administratorów do przypisywania do wbudowanych ról.
   - Zapoznaj się z zaktualizowanym wdrożeniem silniejszego uwierzytelniania dla wszystkich użytkowników.
-  - Włącz linię bazową uprzywilejowanego identyfikatora (PIM) dla JIT (w przypadku aktywacji ograniczonej czasowo) dla dodatkowych ról administracyjnych.
-  - Oddziel konta użytkowników od kont administratora globalnego (aby upewnić się, że administratorzy nie mogą przypadkowo otwierać wiadomości e-mail ani uruchamiać programów skojarzonych z kontami administratora globalnego).
+  - Włącz usługę Privileged Identity Management (PIM) dla JIT (przy użyciu aktywacji ograniczonej czasowo) dla dodatkowych ról administracyjnych.
+  - Oddziel konta użytkowników od kont administratora globalnego, aby upewnić się, że administratorzy nie mogą przypadkowo otwierać wiadomości e-mail ani uruchamiać programów skojarzonych z kontami administratora globalnego).
 
 ## <a name="adopt-and-migrate"></a>Zastosuj i Migruj
 
@@ -89,9 +91,11 @@ Migracja to proces przyrostowy, który koncentruje się na przeniesieniu, testow
 
 **Minimalna sugerowane działania:**
 
-- Migruj swoją [tożsamość łańcucha narzędzi](./toolchain.md) z programowania do produkcji.
+- Migruj swoją [linię bazową tożsamości łańcucha narzędzi](./toolchain.md) z programowania do produkcji.
 - Aktualizacja dokumentu z instrukcjami dotyczącymi architektury i dystrybucja do kluczowych uczestników projektu.
 - Opracowywanie materiałów edukacyjnych i dokumentacji, świadomości, zachęt i innych programów w celu ułatwienia wdrażania użytkowników.
+
+<!-- docsTest:ignore "Seamless SSO" -->
 
 **Potencjalne działania:**
 
@@ -101,7 +105,7 @@ Migracja to proces przyrostowy, który koncentruje się na przeniesieniu, testow
 - Sprawdź, czy logowanie jednokrotne (SSO) i bezproblemowe logowanie jednokrotne działają zgodnie z oczekiwaniami dla aplikacji.
 - Zmniejsz lub Usuń liczbę alternatywnych magazynów tożsamości.
 - Scrutinize potrzebę dla wszystkich magazynów tożsamości w aplikacji lub w bazie danych. Tożsamości, które znajdują się poza właściwym dostawcą tożsamości (podmiot pierwszej lub innej firmy), mogą reprezentować ryzyko dla aplikacji i użytkowników.
-- Włącz dostęp warunkowy dla [lokalnych aplikacji federacyjnych](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup).
+- Włącz dostęp warunkowy dla [lokalnych aplikacji federacyjnych](https://docs.microsoft.com/azure/active-directory/devices/overview).
 - Dystrybuuj tożsamość między regionami globalnymi w wielu centrach z synchronizacją między regionami.
 - Ustanawianie Federacji kontroli dostępu opartej na rolach (RBAC).
 
@@ -111,7 +115,7 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 
 **Minimalna sugerowane działania:**
 
-- Dostosuj swoją [łańcucha Narzędzię bazową tożsamości](./toolchain.md) na podstawie zmian potrzeb związanych z tożsamościami w organizacji.
+- Dostosuj swoją [linię bazową tożsamości łańcucha narzędzi](./toolchain.md) w zależności od zmieniających się potrzeb organizacji.
 - Automatyzuj powiadomienia i raporty, aby otrzymywać alerty o potencjalnych złośliwych zagrożeniach.
 - Monitoruj i zgłaszaj postępy dotyczące użycia systemu i postępu wdrażania użytkownika.
 - Zgłoś metryki po wdrożeniu i Dystrybuuj je do zainteresowanych stron.
@@ -136,7 +140,7 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy rozumiesz koncepcję zarządzania tożsamościami w chmurze, Przeanalizuj [linię bazową tożsamości łańcucha narzędzi](./toolchain.md) , aby identyfikować narzędzia i funkcje platformy Azure, które będą potrzebne podczas tworzenia dyscypliny ładu planu bazowego tożsamości na platformie Azure.
+Teraz, gdy rozumiesz koncepcję zarządzania tożsamościami w chmurze, zapoznaj się z [łańcucha narzędziem linii bazowej tożsamości](./toolchain.md) , aby zidentyfikować narzędzia i funkcje platformy Azure, które będą potrzebne podczas tworzenia dyscypliny linii bazowej tożsamości na platformie Azure.
 
 > [!div class="nextstepaction"]
 > [Łańcucha narzędzi linii bazowej tożsamości dla platformy Azure](./toolchain.md)

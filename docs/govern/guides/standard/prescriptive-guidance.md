@@ -8,24 +8,26 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328577aae931194517e015973a935de24b580a96
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b7f8b26833a98ac02a867b466e58f5214334a0b5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995243"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220003"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: objaśniono najlepsze rozwiązania
 
 Przewodnik dotyczący ładu rozpoczyna się od zestawu początkowych [zasad firmowych](./initial-corporate-policy.md). Te zasady są używane do ustanowienia ładu SPECJALISTy, który odzwierciedla [najlepsze rozwiązania](./index.md).
 
-W tym artykule omówiono strategie wysokiego poziomu, które są wymagane do utworzenia programu MVP (ładu). Rdzeń programu ładu MVP to dyscyplina [wdrażania](../../deployment-acceleration/index.md) . Narzędzia i wzorce stosowane na tym etapie umożliwiają udoskonalenia przyrostowe, które są konieczne do rozwinięcia ładu w przyszłości.
+W tym artykule omówiono strategie wysokiego poziomu, które są wymagane do utworzenia programu MVP (ładu). Rdzeń programu ładu MVP to [dyscyplina wdrażania](../../deployment-acceleration/index.md). Narzędzia i wzorce stosowane na tym etapie umożliwiają udoskonalenia przyrostowe, które są konieczne do rozwinięcia ładu w przyszłości.
 
 ## <a name="governance-mvp-initial-governance-foundation"></a>SPECJALISTa-ładu (początkowa ładu)
 
 Szybkie wdrażanie ładu i zasad firmowych jest osiągalne dzięki kilku prostym zasadom i narzędziom do zarządzania opartemu na chmurze. Są to trzy pierwsze dyscypliny do podejścia w każdym procesie zarządzania. Każda dyscyplina zostanie szczegółowo opisana w tym artykule.
 
-Aby ustalić punkt początkowy, ten artykuł zawiera omówienie strategii wysokiego poziomu związanych z zasadami odniesienia, linii bazowej zabezpieczeń i przyspieszeniem wdrażania, które są wymagane do utworzenia MVP (ładu), który będzie stanowić podstawę dla całego wdrożenia.
+<!--docsTest:ignore "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
+
+Aby ustalić punkt początkowy, ten artykuł zawiera omówienie strategii wysokiego poziomu związanych z zasadami odniesienia, linii bazowej zabezpieczeń i przyspieszenia wdrożenia, które są wymagane do utworzenia MVP, które będą stanowić podstawę dla wszystkich rozwiązań.
 
 ![Przykład programu MVP ładu przyrostowego](../../../_images/govern/governance-mvp.png)
 
@@ -52,13 +54,13 @@ Zespół ds. zarządzania chmurą jest odpowiedzialny za następujące decyzje i
 
 Decyzja dotycząca tego, w jaki sposób konstrukcja subskrypcji pozwala określić, jak subskrypcje platformy Azure mają być strukturalne i w jaki sposób grupy zarządzania platformy Azure będą używane do wydajnego zarządzania dostępem, zasadami i zgodnością z tą subskrypcją. W tych rozdziałach zespół nadzoru ustanowił subskrypcje dla wzorców produkcji i nieprodukcyjnej subskrypcji [produkcji](../../../ready/azure-best-practices/initial-subscriptions.md) i nieprodukcyjnych.
 
-- W przypadku bieżącego fokusu działy nie są wymagane. Wdrożenia powinny być ograniczone w ramach pojedynczej jednostki rozliczeniowej. Na etapie przyjmowania nie można nawet mieć umowy Enterprise Agreement umożliwiającej scentralizowane rozliczanie. Jest to możliwe, że ten poziom wdrożenia jest zarządzany przez pojedynczą subskrypcję platformy Azure z opcją płatność zgodnie z rzeczywistym użyciem.
-- Bez względu na użycie portalu EA lub istnienie umowy Enterprise Agreement, model subskrypcji powinien nadal być zdefiniowany i uzgodniony, aby zminimalizować przekroczenie kosztów administracyjnych.
+- W przypadku bieżącego fokusu działy nie są wymagane. Wdrożenia powinny być ograniczone w ramach pojedynczej jednostki rozliczeniowej. Na etapie wdrażania może nie być nawet Umowa Enterprise do scentralizowanego rozliczania. Jest to możliwe, że ten poziom wdrożenia jest zarządzany przez pojedynczą subskrypcję platformy Azure z opcją płatność zgodnie z rzeczywistym użyciem.
+- Bez względu na użycie portalu EA lub istnienie Umowa Enterprise model subskrypcji powinien nadal być zdefiniowany i uzgodniony, aby zminimalizować przekroczenie kosztów administracyjnych.
 - Wspólna konwencja nazewnictwa powinna zostać uzgodniona w ramach projektu subskrypcji w oparciu o poprzednie dwa punkty.
 
 ### <a name="resource-consistency"></a>Spójność zasobów
 
-Decyzje dotyczące spójności zasobów określają narzędzia, procesy i nakłady potrzebne do zapewnienia spójnego wdrażania i konfigurowania zasobów platformy Azure w ramach subskrypcji. W tym opisie **[spójność wdrożenia](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** została wybrana jako wzorzec spójności zasobów podstawowych.
+Decyzje dotyczące spójności zasobów określają narzędzia, procesy i nakłady potrzebne do zapewnienia spójnego wdrażania i konfigurowania zasobów platformy Azure w ramach subskrypcji. W tym opisie [spójność wdrożenia](../../../decision-guides/resource-consistency/index.md#deployment-consistency) została wybrana jako wzorzec spójności zasobów podstawowych.
 
 - Grupy zasobów są tworzone dla aplikacji przy użyciu podejścia cyklu życia. Wszystkie elementy, które są tworzone, konserwowane i wycofane, powinny znajdować się w jednej grupie zasobów. Aby uzyskać więcej informacji, zobacz [Przewodnik po decyzji o spójności zasobów](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy należy zastosować do wszystkich subskrypcji ze skojarzonej grupy zarządzania.
@@ -72,7 +74,7 @@ Decyzje dotyczące spójności zasobów określają narzędzia, procesy i nakła
 
 ### <a name="resource-tagging"></a>Tagowanie zasobów
 
-Decyzje dotyczące tagowania zasobów określają sposób stosowania metadanych do zasobów platformy Azure w ramach subskrypcji w celu obsługi operacji, zarządzania i ewidencjonowania aktywności. W tym opisie wzorzec **[klasyfikacji](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)** został wybrany jako domyślny model dla tagowania zasobów.
+Decyzje dotyczące tagowania zasobów określają sposób stosowania metadanych do zasobów platformy Azure w ramach subskrypcji w celu obsługi operacji, zarządzania i ewidencjonowania aktywności. W tym opisie wzorzec [klasyfikacji](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns) został wybrany jako domyślny model dla tagowania zasobów.
 
 - Wdrożone zasoby powinny być otagowane przy użyciu:
   - Klasyfikacja danych

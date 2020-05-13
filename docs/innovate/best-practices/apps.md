@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8ff62f3a508fa033f882101b13fd85f90526bab3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe217a1fb6379522d8afccc9640bdd32409eb1cd
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425568"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219822"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Narzędzia do zaangażowania za pośrednictwem aplikacji na platformie Azure
 
@@ -32,7 +32,7 @@ Na podstawie tych założeń następujące trzy ścieżki są najbardziej popula
 - **Inteligentne środowiska:** Twórz nowoczesne środowiska przy użyciu platform chmurowych, aby zapewnić szybkie wdrażanie i pętle krótkich informacji zwrotnych. Rozwiń aplikacje sieci Web, aby Dodaj inteligencję, lub nawet Zintegruj botów.
 - **Natywne w chmurze:** Utwórz nowe wynalazki, które w naturalny sposób wykorzystują możliwości chmury.
 
-Każda ścieżka skutkuje zaletami i wadami, które są krótkoterminowe i długoterminowe. Gdy zespół nadzoru w chmurze, zespół operacyjny chmury i i centrum usługi Cloud-doskonałości są gotowe do obsługi każdego podejścia, można przyspieszyć wdrażanie z minimalnym wpływem na trwałą działalność biznesową.
+Każda ścieżka skutkuje zaletami i wadami, które są krótkoterminowe i długoterminowe. Gdy zespół ds. zarządzania chmurą, zespół operacyjny chmury i centrum usługi Cloud-doskonałości są gotowe do obsługi każdego podejścia, można przyspieszyć wdrażanie z minimalnym wpływem na trwałe operacje biznesowe.
 
 ## <a name="toolchain"></a>Łańcuch narzędzi
 

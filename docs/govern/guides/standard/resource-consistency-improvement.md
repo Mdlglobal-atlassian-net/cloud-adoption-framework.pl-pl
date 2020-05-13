@@ -1,5 +1,5 @@
 ---
-title: 'Standardowe zarządzanie przedsiębiorstwem: zwiększanie spójności zasobów'
+title: 'Standardowe zarządzanie przedsiębiorstwami: ulepszanie dyscypliny spójności zasobów'
 description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się więcej o ulepszaniu planu bazowego zarządzania i dodawaniu kontroli odzyskiwania, określania rozmiarów i monitorowania w celu korygowania zagrożeń.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6228bc4a2f4a2217ab7cd226ace5075c91a52dfc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7297e568f2fe16a2e499217af47d091c88544559
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434206"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219924"
 ---
-# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: zwiększanie spójności zasobów
+# <a name="standard-enterprise-governance-guide-improve-the-resource-consistency-discipline"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: ulepszanie dyscypliny spójności zasobów
 
 W tym artykule opisano sposób dodawania kontroli spójności zasobów do obsługi aplikacji o znaczeniu strategicznym.
 
@@ -103,8 +103,8 @@ W tej części artykułu zostanie zmieniony projekt ładu MVP, który obejmuje n
     1. Zidentyfikuj konfigurację zapory platformy Azure spełniającą wymagania dotyczące zabezpieczeń. Alternatywnie Zidentyfikuj urządzenie innej firmy zgodne z platformą Azure.
     1. Utwórz szablon Menedżer zasobów, aby wdrożyć zaporę z wymaganymi konfiguracjami.
 8. Plan platformy Azure:
-    1. Utwórz nowy plan platformy Azure o `protected-data`nazwie.
-    2. Dodaj zaporę i szablony magazynu platformy Azure do planu.
+    1. Utwórz nowy plan platformy Azure o nazwie `protected-data` .
+    2. Dodaj do planu szablon magazynu zapory i usługi Azure Recovery Services.
     3. Dodaj nowe zasady dla chronionych subskrypcji danych.
     4. Opublikuj plan w dowolnej grupie zarządzania, która będzie hostować aplikacje o kluczowym znaczeniu.
     5. Zastosuj nowy plan do każdej powiązanej subskrypcji, a także istniejące plany.
@@ -115,7 +115,7 @@ Te dodatkowe procesy i zmiany wprowadzane przez ładu MVP są pomocne w korygowa
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gdy wdrożenie chmury będzie kontynuowane i zapewnia dodatkową wartość biznesową, zagrożenia i potrzeby ładu chmury również zostaną zmienione. W przypadku fikcyjnej firmy w tym przewodniku następnym wyzwalaczem jest, gdy skala wdrożenia przekroczy 100 zasobów do chmury, lub miesięczne wydatki przekraczają $1 000 miesięcznie. W tym momencie zespół nadzorujący chmury dodaje Cost Management kontrolek.
+Gdy wdrożenie chmury będzie kontynuowane i zapewnia dodatkową wartość biznesową, zagrożenia i potrzeby ładu chmury również zostaną zmienione. W przypadku fikcyjnej firmy w tym przewodniku następnym wyzwalaczem jest, gdy skala wdrożenia przekroczy 100 zasobów do chmury, lub miesięczne wydatki przekraczają $1 000 miesięcznie. W tym momencie zespół zarządzający chmurą dodaje kontrolę kosztów zarządzania.
 
 > [!div class="nextstepaction"]
-> [Ulepszanie Cost Management](./cost-management-improvement.md)
+> [Ulepszanie dyscypliny Cost Management](./cost-management-improvement.md)

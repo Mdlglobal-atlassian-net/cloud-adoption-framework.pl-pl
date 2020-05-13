@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 36c2653876f0d254a282a7f7ed3abaee2ca82656
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7c38d394e5681de181186c3c8f04e6704b53e96e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434398"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220077"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wiele warstw ładu
 
@@ -51,8 +51,8 @@ Narzędzia takie jak grupy zarządzania umożliwiają tworzenie struktury hierar
 
 Ważnym aspektem każdego z tych narzędzi jest możliwość zastosowania wielu planów do hierarchii programu. Dzięki temu rząd może być procesem warstwowym. Poniżej znajduje się przykład tego hierarchicznego zastosowania ładu:
 
-- **Firma IT:** Firma tworzy zestaw standardów i zasad, które mają zastosowanie do wszystkich rozwiązań chmurowych. Jest to materiałowy plan "linii bazowej". Następnie należy do niej należeć hierarchia grupy zarządzania, co zapewnia, że wersja planu bazowego jest stosowana do wszystkich subskrypcji w hierarchii.
+- **Firma IT:** Firma tworzy zestaw standardów i zasad, które mają zastosowanie do wszystkich rozwiązań chmurowych. Jest to materiałowy plan _bazowy_ . Następnie należy do niej należeć hierarchia grupy zarządzania, co zapewnia, że wersja planu bazowego jest stosowana do wszystkich subskrypcji w hierarchii.
 - **Jednostki regionalne lub biznesowe:** Różne zespoły IT mogą stosować dodatkową warstwę ładu, tworząc własny plan. Te plany spowodują utworzenie dodatkowych zasad i standardów. Po opracowaniu firma może zastosować te plany do odpowiednich węzłów w hierarchii grupy zarządzania.
-- **Zespoły wdrażania chmury:** Szczegółowe decyzje i implementacje dotyczące aplikacji lub obciążeń mogą być podejmowane przez każdego zespołu adopcji w chmurze w kontekście wymagań ładu. Czasami zespół może również zażądać dodatkowych szablonów spójności zasobów platformy Azure, aby przyspieszyć wdrażanie.
+- **Zespoły wdrażania chmury:** Szczegółowe decyzje i implementacje dotyczące aplikacji lub obciążeń mogą być podejmowane przez każdego zespołu adopcji w chmurze w kontekście wymagań ładu. Zespół może również zażądać dodatkowych szablonów spójności zasobów platformy Azure, aby przyspieszyć wdrażanie.
 
 Szczegóły dotyczące wdrożenia ładu na każdym poziomie będą wymagały koordynacji między poszczególnymi członkami zespołu. Udoskonalenia ładu i ładu, które opisano w tym przewodniku, mogą pomóc w dostosowywaniu tej koordynacji.

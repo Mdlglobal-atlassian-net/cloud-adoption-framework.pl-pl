@@ -8,13 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: e276f6fd504ec0417ec15504cda52682d67bcba6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b757a0066250a37816eed5445d79663b72a7aae3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119783"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219329"
 ---
+<!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Szkielet platformy Azure dla przedsiębiorstw: zalecenia dotyczące zarządzania subskrypcjami
@@ -36,7 +37,7 @@ Ten artykuł zawiera punkt wyjścia dla specjalistów technicznych w celu rozwi�
 
 ## <a name="need-for-governance"></a>Potrzeba dla ładu
 
-Podczas przejścia na platformę Azure należy zająć się zagadnieniem Nadzoru wczesnego, aby zapewnić pomyślne korzystanie z chmury w przedsiębiorstwie. Niestety, czas i Bureaucracy tworzenia kompleksowego systemu zarządzania oznacza, że niektóre grupy biznesowe bezpośrednio przechodzą do dostawców, bez konieczności od przedsiębiorstwa. Takie podejście może spowodować, że otwarty w przedsiębiorstwie nie zostanie naruszony, jeśli zasoby nie są prawidłowo zarządzane. Cechy charakterystyczne dla elastyczności&mdash;, elastycznej i opartej na użyciu chmury&mdash;publicznej są ważne dla grup gospodarczych, które muszą szybko spełnić wymagania klientów (zarówno wewnętrznych, jak i zewnętrznych). Jednak przedsiębiorstwo musi zapewnić skuteczną ochronę danych i systemów.
+Podczas przejścia na platformę Azure należy zająć się zagadnieniem Nadzoru wczesnego, aby zapewnić pomyślne korzystanie z chmury w przedsiębiorstwie. Niestety, czas i Bureaucracy tworzenia kompleksowego systemu zarządzania oznacza, że niektóre grupy biznesowe bezpośrednio przechodzą do dostawców, bez konieczności od przedsiębiorstwa. Takie podejście może spowodować, że otwarty w przedsiębiorstwie nie zostanie naruszony, jeśli zasoby nie są prawidłowo zarządzane. Cechy charakterystyczne dla &mdash; elastyczności, elastycznej i opartej na użyciu chmury publicznej &mdash; są ważne dla grup gospodarczych, które muszą szybko spełnić wymagania klientów (zarówno wewnętrznych, jak i zewnętrznych). Jednak przedsiębiorstwo musi zapewnić skuteczną ochronę danych i systemów.
 
 Podczas tworzenia budynku tworzenie szkieletu jest używane do tworzenia podstawy struktury. Szkielet jest przewodnikiem ogólnym i zawiera punkty zakotwiczenia umożliwiające zamontowanie systemów trwałych. Szkielet przedsiębiorstwa jest taki sam: Zestaw elastycznych kontrolek i możliwości platformy Azure, które zapewniają strukturę środowiska oraz kotwice dla usług skompilowanych w chmurze publicznej. Zapewnia ona konstruktorom (grupom IT i biznesowym) podstawę do tworzenia i dołączania nowych usług w celu zapewnienia szybszego dostarczania.
 
@@ -96,7 +97,7 @@ Podczas decydowania o działach i kontach (lub grupach zarządzania) przede wszy
 - **Cykl życia:** Subskrypcje reprezentują cykl życia usługi, na przykład produkcyjne lub deweloperskie.
 - **Dział:** Subskrypcje reprezentują działy w organizacji.
 
-Dwa pierwsze wzorce są najczęściej używane i obie są zdecydowanie zalecane. Podejście do cyklu życia jest odpowiednie dla większości organizacji. W takim przypadku generalnym zaleceniem jest użycie dwóch subskrypcji podstawowych, `Production` `Nonproduction`a następnie użycie grup zasobów w celu dodatkowego rozdzielenia środowiska.
+Dwa pierwsze wzorce są najczęściej używane i obie są zdecydowanie zalecane. Podejście do cyklu życia jest odpowiednie dla większości organizacji. W takim przypadku generalnym zaleceniem jest użycie dwóch subskrypcji podstawowych, a `Production` `Nonproduction` następnie użycie grup zasobów w celu dodatkowego rozdzielenia środowiska.
 
 ### <a name="resource-groups"></a>Grupy zasobów
 
@@ -141,7 +142,7 @@ Zasady i inicjatywy są jeszcze bardziej zaawansowane, gdy są używane z wymien
 
 ### <a name="common-uses-of-resource-manager-policies"></a>Typowe zastosowania zasad Menedżer zasobów
 
-Zasady i inicjatywy to zaawansowane narzędzie dostępne w zestawie narzędzi platformy Azure. Zasady umożliwiają firmom zapewnienie kontroli dla obciążeń "tradycyjnych IT", które umożliwiają stabilność potrzebną dla aplikacji biznesowych, a także umożliwianie "Agile" obciążeń&mdash;na przykład, opracowywanie aplikacji dla klientów bez narażania przedsiębiorstwa na dodatkowe ryzyko. Najczęstsze wzorce dla zasad są następujące:
+Zasady i inicjatywy to zaawansowane narzędzie dostępne w zestawie narzędzi platformy Azure. Zasady umożliwiają firmom zapewnienie kontroli dla obciążeń "tradycyjnych IT", które umożliwiają stabilność potrzebną dla aplikacji biznesowych, a także umożliwianie "Agile" obciążeń &mdash; na przykład, opracowywanie aplikacji dla klientów bez narażania przedsiębiorstwa na dodatkowe ryzyko. Najczęstsze wzorce dla zasad są następujące:
 
 - **Zgodność geograficzna i niezależność danych.** Platforma Azure oferuje coraz większą listę regionów na całym świecie. Przedsiębiorstwa często muszą zapewnić, że zasoby w określonym zakresie pozostają w regionie geograficznym, aby spełnić wymagania prawne.
 - **Unikaj ujawniania serwerów publicznie.** Azure Policy może zabronić wdrożenia niektórych typów zasobów. Często należy utworzyć zasady, aby odmówić tworzenia publicznego adresu IP w określonym zakresie, co pozwala uniknąć niezamierzonego narażenia serwera z Internetem.
@@ -162,13 +163,13 @@ Inicjatywy zapewniają przedsiębiorstwom możliwość grupowania zasad logiczny
 
 Po utworzeniu zasad i zgrupowaniu ich w inicjatywy logiczne należy przypisać zasady do zakresu, niezależnie od tego, czy jest to grupa zarządzania, subskrypcja, czy grupa zasobów. Przypisania umożliwiają również wykluczanie podzakresu z przypisania zasad. Na przykład jeśli odmówisz tworzenia publicznych adresów IP w ramach subskrypcji, możesz utworzyć przypisanie z wykluczeniem dla grupy zasobów połączonej z chronioną strefą DMZ.
 
-Znajdziesz kilka przykładów dotyczących zasad, które pokazują, w jaki sposób zasady i inicjatywy mogą być stosowane do różnych zasobów platformy Azure w ramach tego repozytorium [GitHub](https://github.com/Azure/azure-policy) .
+Znajdziesz kilka przykładów dotyczących zasad, które pokazują, w jaki sposób zasady i inicjatywy mogą być stosowane do różnych zasobów platformy Azure w ramach tego repozytorium [GitHub](https://github.com/azure/azure-policy) .
 
 ## <a name="identity-and-access-management"></a>Zarządzanie tożsamościami i dostępem
 
 Jednym z pierwszych i najbardziej najważniejszych pytań, które należy zadać, gdy rozpoczynasz pracę z chmurą publiczną, jest "kto powinien mieć dostęp do zasobów?". i "jak kontrolować ten dostęp?" Kontrolowanie dostępu do Azure Portal i zasobów w portalu ma kluczowe znaczenie dla długoterminowego bezpieczeństwa zasobów w chmurze.
 
-Aby zabezpieczyć dostęp do zasobów, należy najpierw skonfigurować dostawcę tożsamości, a następnie skonfigurować role i dostęp. Usługa Azure Active Directory (Azure AD), połączona z lokalnym Active Directory, jest podstawą tożsamości platformy Azure. Wspomniane informacje *nie* są takie same, jak w przypadku Active Directory lokalnych, a ważne jest, aby zrozumieć, co to jest dzierżawa usługi Azure AD i jak odnosi się do rejestracji na platformie Azure. Zapoznaj się z dostępnymi [informacjami](../govern/resource-consistency/resource-access-management.md) , aby uzyskać pełną podstawę w usłudze Azure AD i Active Directory lokalnych. Aby nawiązać połączenie i zsynchronizować Active Directory z usługą Azure AD, zainstaluj i skonfiguruj [narzędzie Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) lokalnie.
+Aby zabezpieczyć dostęp do zasobów, należy najpierw skonfigurować dostawcę tożsamości, a następnie skonfigurować role i dostęp. Usługa Azure Active Directory (Azure AD), połączona z lokalnym Active Directory, jest podstawą tożsamości platformy Azure. Wspomniane informacje _nie_ są takie same, jak w przypadku Active Directory lokalnych, a ważne jest, aby zrozumieć, co to jest dzierżawa usługi Azure AD i jak odnosi się do rejestracji na platformie Azure. Zapoznaj się z dostępnymi [informacjami](../govern/resource-consistency/resource-access-management.md) , aby uzyskać pełną podstawę w usłudze Azure AD i Active Directory lokalnych. Aby nawiązać połączenie i zsynchronizować Active Directory z usługą Azure AD, zainstaluj i skonfiguruj [narzędzie Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) lokalnie.
 
 ![Diagram architektury usługi AD](../_images/reference/ad-architecture.png)
 
@@ -182,7 +183,7 @@ W przypadku implementowania dostępu opartego na rolach należy wykonać następ
 - Postępuj zgodnie z zasadami udzielenia **najmniejszego poziomu uprawnień** wymaganego do wykonania oczekiwanej pracy.
 
 > [!IMPORTANT]
->Rozważ skorzystanie z funkcji [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) i [dostępu warunkowego](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) , aby zapewnić lepsze zabezpieczenia i większą widoczność akcji administracyjnych w ramach subskrypcji platformy Azure. Te funkcje pochodzą z prawidłowej licencji Azure AD — wersja Premium (w zależności od funkcji) w celu dalszego zabezpieczania tożsamości i zarządzania nią. Usługa Azure AD PIM umożliwia dostęp administracyjny "just-in-Time" z przepływem pracy zatwierdzania, a także pełną inspekcję aktywacji i działań administratorów. Usługa Azure Multi-Factor Authentication jest kolejną funkcją krytyczną i umożliwia weryfikację dwuetapową do logowania się do Azure Portal. W połączeniu z kontrolami dostępu warunkowego można efektywnie zarządzać ryzykiem naruszenia.
+>Rozważ skorzystanie z funkcji [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) i [dostępu warunkowego](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) , aby zapewnić lepsze zabezpieczenia i większą widoczność akcji administracyjnych w ramach subskrypcji platformy Azure. Te funkcje pochodzą z prawidłowej licencji Azure AD — wersja Premium (w zależności od funkcji) w celu dalszego zabezpieczania tożsamości i zarządzania nią. Usługa Azure AD PIM umożliwia dostęp administracyjny "just-in-Time" z przepływem pracy zatwierdzania, a także pełną inspekcję aktywacji i działań administratorów. Usługa Azure Multi-Factor Authentication jest kolejną funkcją krytyczną i umożliwia weryfikację dwuetapową do logowania się do Azure Portal. W połączeniu z kontrolami dostępu warunkowego można efektywnie zarządzać ryzykiem naruszenia.
 
 Planowanie i przygotowywanie tożsamości i kontroli dostępu oraz stosowanie najlepszych rozwiązań związanych z [zarządzaniem tożsamościami na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) to jeden z najlepszych rozwiązań z zakresu ryzyka, których można użyć, i należy go traktować jako obowiązkowy dla każdego wdrożenia.
 
@@ -244,11 +245,11 @@ Te informacje mogą być wyświetlane i przetwarzane na wielu poziomach i stale 
 
 - **Azure Monitor:** Azure Monitor to podstawowa usługa platformy, która zapewnia pojedyncze źródło do monitorowania zasobów platformy Azure. Interfejs Azure Portal Azure Monitor zapewnia scentralizowany punkt przerwania dla wszystkich funkcji monitorowania w ramach platformy Azure, w tym głębokiego monitorowania możliwości Application Insights, Log Analytics, monitorowania sieci, rozwiązań do zarządzania i map usług. Za pomocą Azure Monitor można wizualizować, wykonywać zapytania, kierować trasy, archiwizować i podejmować działania dotyczące metryk i dzienników pochodzących z zasobów platformy Azure w całej chmurze. Oprócz portalu można pobrać dane za pomocą poleceń cmdlet monitorowania programu PowerShell, międzyplatformowego interfejsu wiersza polecenia lub Azure Monitor interfejsów API REST.
 
-- **Azure Advisor:** Azure Advisor stale monitoruje dane telemetryczne w ramach subskrypcji i środowisk i zawiera zalecenia dotyczące najlepszych rozwiązań dotyczących optymalizacji zasobów platformy Azure, aby zaoszczędzić pieniądze i zwiększyć wydajność, bezpieczeństwo i dostępność zasobów tworzących aplikacje.
+- **Azure Advisor:** Azure Advisor stale monitoruje dane telemetryczne w Twoich subskrypcjach i środowiskach. Zaleca się również korzystanie z najlepszych rozwiązań dotyczących kosztów optymalizacji zasobów platformy Azure oraz zwiększania wydajności, bezpieczeństwa i dostępności zasobów aplikacji.
 
 - **Service Health:** Azure Service Health identyfikuje wszelkie problemy z usługami platformy Azure, które mogą mieć wpływ na Twoje aplikacje, a także pomaga w planowaniu okien obsługi zaplanowanych.
 
-- **Dziennik aktywności:** Dziennik aktywności zawiera opis wszystkich operacji na zasobach w Twoich subskrypcjach. Zawiera on dziennik inspekcji, aby określić, co "co", "kto" i "When" każdej operacji tworzenia, aktualizowania i usuwania zasobów. Zdarzenia dziennika aktywności są przechowywane na platformie i są dostępne do wykonywania zapytań przez 90 dni. Dzienniki aktywności można pozyskać do Log Analytics w celu uzyskania dłuższych okresów przechowywania oraz dokładniejszego wykonywania zapytań i analiz w wielu zasobach.
+- **Dziennik aktywności:** Dziennik aktywności zawiera opis wszystkich operacji na zasobach w Twoich subskrypcjach. Zawiera on Dziennik audytu, aby określić, _kto_i _kiedy_ wszystkie operacje tworzenia, aktualizowania i usuwania mają być _wykonywane_na zasobach. Zdarzenia dziennika aktywności są przechowywane na platformie i są dostępne do wykonywania zapytań przez 90 dni. Dzienniki aktywności można pozyskać do Log Analytics w celu uzyskania dłuższych okresów przechowywania oraz dokładniejszego wykonywania zapytań i analiz w wielu zasobach.
 
 ### <a name="deep-application-monitoring"></a>Szczegółowe monitorowanie aplikacji
 
@@ -279,14 +280,16 @@ Są to narzędzia zapewniające natychmiastowe informacje o kosztach, a także m
 
 - **Koszt zasobu subskrypcji:** W portalu [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) widok zawiera szybki wgląd w koszty i informacje dotyczące dziennych wydatków według zasobów lub grup zasobów.
 - **Azure Cost Management:** Pozwala to na Zarządzanie wydatkami na platformę Azure oraz ich analizowanie, a także to, co poświęcasz innym dostawcom chmury publicznej. Istnieją zarówno warstwy bezpłatne, jak i płatne.
-- **Budżety platformy Azure i grupy akcji:** Zapoznaj się z tym, co się stało z kosztami i wykonywanych przez niego operacji do momentu, aż ostatnio przeprowadzono bardziej ręczne wykonanie Po wprowadzeniu budżetów platformy Azure i jej interfejsów API można teraz tworzyć akcje, takie jak w [tym przykładzie](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups) , gdy koszty osiągnęły wartość progową. Na przykład można zamknąć grupę zasobów "test", gdy trafi na 100% swojego budżetu.
+- **Budżety platformy Azure i grupy akcji:** Zapoznaj się z tym, co się stało z kosztami i wykonywanych przez niego operacji do momentu, aż ostatnio przeprowadzono bardziej ręczne wykonanie Po wprowadzeniu budżetów platformy Azure i jej interfejsów API można teraz [tworzyć akcje](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups) , które są uruchamiane, gdy koszty osiągną próg. Na przykład można zamknąć grupę zasobów "test", gdy trafi na 100% swojego budżetu.
 - **Azure Advisor:** Zapoznaj się z tym, czego kosztami jest tylko połowa sprawdzonej; druga połowa zawiera informacje o tym, co należy zrobić z tymi informacjami. [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) udostępnia zalecenia dotyczące działań, które należy podjąć w celu oszczędności, zwiększenia niezawodności lub nawet zwiększenia zabezpieczeń.
 
 ### <a name="external-cost-management-tools"></a>Narzędzia do zarządzania kosztami zewnętrznymi
 
+<!-- TODO: Content packs are deprecated. -->
+
 - **Azure Consumption Insights Power BI:** Czy chcesz utworzyć własne wizualizacje dla swojej organizacji? Jeśli tak, wówczas pakiet zawartości Azure Consumption Insights dla Power BI jest wybranym narzędziem. Korzystając z tego pakietu zawartości i Power BI można tworzyć niestandardowe wizualizacje do reprezentowania organizacji, przeprowadzać dokładniejszą analizę kosztów i dodawać do innych źródeł danych w celu dodatkowego wzbogacania.
 
-- **Interfejs API użycia:** [Interfejsy API użycia](https://docs.microsoft.com/rest/api/consumption) zapewniają programistyczny dostęp do danych kosztów i użycia oprócz informacji o budżetach, wystąpieniach zarezerwowanych i opłatach za witrynę Marketplace. Te interfejsy API są dostępne tylko dla rejestracji w przedsiębiorstwie i niektórych subskrypcji sieci Web bezpośrednich, ale zapewniają możliwość integracji danych kosztów z własnymi narzędziami i magazynami danych. [Dostęp do tych interfejsów API można także uzyskać za pomocą interfejsu wiersza polecenia platformy Azure](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest).
+- **Interfejsy API użycia platformy Azure:** [Interfejsy API użycia](https://docs.microsoft.com/rest/api/consumption) zapewniają programistyczny dostęp do danych kosztów i użycia oprócz informacji o budżetach, wystąpieniach zarezerwowanych i opłatach za witrynę Marketplace. Te interfejsy API są dostępne tylko dla rejestracji w przedsiębiorstwie i niektórych subskrypcji sieci Web bezpośrednich, ale zapewniają możliwość integracji danych kosztów z własnymi narzędziami i magazynami danych. [Dostęp do tych interfejsów API można także uzyskać za pomocą interfejsu wiersza polecenia platformy Azure](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest).
 
 Klienci, którzy są użytkownikami długoterminowymi i dojrzałymi w chmurze, przestrzegają pewnych najlepszych rozwiązań:
 
@@ -314,9 +317,9 @@ Automatyzacja to zadanie w pełnym czasie i szybko staje się jednym z najważni
 
 ## <a name="templates-and-devops"></a>Szablony i DevOps
 
-Jak wyróżniono w sekcji Automatyzowanie, celem jako organizacja powinna być Inicjowanie obsługi zasobów przy użyciu szablonów i skryptów sterowanych przez źródło oraz zminimalizowanie interaktywnej konfiguracji środowisk. Takie podejście do "infrastruktury jako kodu" oraz DevOps proces tworzenia ciągłego wdrażania może zapewnić spójność i zmniejszenie dryfu w swoich środowiskach. Niemal każdy zasób platformy Azure jest wdrażany za pośrednictwem [szablonów JSON Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) w połączeniu z programem PowerShell lub interfejsem wiersza polecenia platformy Azure międzyplatformowym i narzędziami, takimi jak Terraform, z HashiCorp (które są w pierwszej klasie obsługiwane i zintegrowane do Azure Cloud Shell).
+Jak wyróżniono w sekcji Automatyzowanie, celem jako organizacja powinna być Inicjowanie obsługi zasobów przy użyciu szablonów i skryptów sterowanych przez źródło oraz zminimalizowanie interaktywnej konfiguracji środowisk. Takie podejście do "infrastruktury jako kodu" oraz DevOps proces tworzenia ciągłego wdrażania może zapewnić spójność i zmniejszenie dryfu w swoich środowiskach. Niemal każdy zasób platformy Azure jest wdrażany za pomocą [szablonów JSON Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) w połączeniu z programem PowerShell lub interfejsem wiersza polecenia platformy Azure międzyplatformowym i narzędziami, takimi jak Terraform przez HashiCorp, które mają pierwszą klasę obsługi i integrację z Azure Cloud shellem).
 
-Artykuł, taki jak [najlepsze rozwiązania dotyczące korzystania z szablonów Azure Resource Manager](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager) , oferuje doskonałą dyskusję na temat najlepszych rozwiązań i lekcji na potrzeby zastosowania podejścia DevOps do Azure Resource Manager szablonów przy użyciu [usługi Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts) łańcucha narzędzi. Zapoznaj się z czasem i wysiłkią w celu opracowania podstawowego zestawu szablonów specyficznych dla wymagań organizacji i opracowania ciągłego potoków dostarczania przy użyciu DevOps łańcuchy narzędzi (takich jak Azure DevOps, Jenkins, Bamboo, TeamCity i Concourse), szczególnie w przypadku środowisk produkcyjnych i związanych z PYTANIAmi. Istnieje duża Biblioteka [szablonów szybkiego startu platformy Azure](https://github.com/Azure/azure-quickstart-templates) w serwisie GitHub, których można użyć jako punktu wyjścia dla szablonów. możesz szybko tworzyć potoki dostarczania oparte na chmurze za pomocą usługi Azure DevOps.
+Artykuł, taki jak [najlepsze rozwiązania dotyczące korzystania z szablonów Azure Resource Manager](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager) , oferuje doskonałą dyskusję na temat najlepszych rozwiązań i lekcji na potrzeby zastosowania podejścia DevOps do Azure Resource Manager szablonów przy użyciu [usługi Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts) łańcucha narzędzi. Zapoznaj się z czasem i wysiłkią w celu opracowania podstawowego zestawu szablonów specyficznych dla wymagań organizacji i opracowania ciągłego potoków dostarczania przy użyciu DevOps łańcuchy narzędzi (takich jak Azure DevOps, Jenkins, Bamboo, TeamCity i Concourse), szczególnie w przypadku środowisk produkcyjnych i związanych z PYTANIAmi. Istnieje duża Biblioteka [szablonów szybkiego startu platformy Azure](https://github.com/azure/azure-quickstart-templates) w serwisie GitHub, których można użyć jako punktu wyjścia dla szablonów. możesz szybko tworzyć potoki dostarczania oparte na chmurze za pomocą usługi Azure DevOps.
 
 Najlepszym rozwiązaniem w przypadku subskrypcji produkcyjnych lub grup zasobów jest użycie funkcji kontroli dostępu RBAC, aby domyślnie nie zezwalać użytkownikom interaktywnym na korzystanie z automatycznych potoków ciągłego dostarczania w oparciu o jednostki usługi w celu aprowizacji wszystkich zasobów i dostarczania wszystkich kodów aplikacji. Żaden administrator ani Deweloper nie powinien dotykać Azure Portal, aby interaktywnie konfigurować zasoby. Ten poziom DevOps ma uzgodniony nakład pracy i korzysta ze wszystkich koncepcji szkieletu platformy Azure, zapewniając spójne i bezpieczniejsze środowisko, które będzie spełniało potrzeby Twojej organizacji.
 
@@ -331,12 +334,18 @@ Ostatnim składnikiem modelu referencyjnego szkieletu platformy Azure jest rdze�
 
 - **Sieci wirtualne** są obiektami kontenerów dla podsieci. Chociaż nie jest to absolutnie konieczne, często są używane podczas łączenia aplikacji z wewnętrznymi zasobami firmy.
 - **Trasy zdefiniowane przez użytkownika** umożliwiają manipulowanie tabelą tras w podsieci, co umożliwia przesyłanie ruchu przez sieciowe urządzenie wirtualne lub do bramy zdalnej w równorzędnej sieci wirtualnej.
-- **Komunikacja równorzędna sieci wirtualnych** umożliwia bezproblemowe łączenie co najmniej dwóch sieci wirtualnych platformy Azure, tworząc bardziej złożone projekty typu Hub i szprych lub sieci usług udostępnionych.
+- **Komunikacja równorzędna sieci wirtualnych** umożliwia bezproblemowe łączenie dwóch lub większej liczby sieci wirtualnych na platformie Azure, tworzenie bardziej złożonych projektów typu Hub i szprych lub sieci usług udostępnionych.
 - **Punkty końcowe usługi.** W przeszłości usługi PaaS opierają się na różnych metodach zabezpieczania dostępu do tych zasobów z sieci wirtualnych. Punkty końcowe usługi umożliwiają zabezpieczenie dostępu do włączonych usług PaaS **wyłącznie** z połączonych punktów końcowych, zwiększając ogólne zabezpieczenia.
 - **Grupy zabezpieczeń** to obszerny zestaw reguł, które zapewniają możliwość zezwalania na ruch przychodzący i wychodzący do/z zasobów platformy Azure. [Grupy zabezpieczeń](https://docs.microsoft.com/azure/virtual-network/security-overview) składają się z reguł zabezpieczeń, które można rozszerzyć za pomocą **tagów usługi** (które definiują typowe usługi platformy Azure, takie jak Azure Key Vault lub Azure SQL Database) i **grup zabezpieczeń aplikacji** (które definiują strukturę aplikacji, takie jak serwery sieci Web lub serwery aplikacji).
 
 > [!TIP]
-> Używaj tagów usługi i grup zabezpieczeń aplikacji w sieciowych grupach zabezpieczeń nie tylko, aby zwiększyć czytelność reguł&mdash;, co jest decydujące dla zrozumienie wpływu&mdash;, ale również w celu zapewnienia efektywnego mikrosegmentu w większej podsieci, zmniejszając rozwojem i zwiększając elastyczność.
+> Użyj tagów usługi i grup zabezpieczeń aplikacji w sieciowych grupach zabezpieczeń, aby:
+>
+> - Zwiększ czytelność reguł, co jest decydujące dla zrozumienie wpływu.
+> - Włącz efektywne mikrosegmenty w większej podsieci, zmniejszając rozwojem i zwiększając elastyczność.
+
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
 
 ### <a name="azure-virtual-datacenter"></a>Wirtualne centrum danych Azure
 

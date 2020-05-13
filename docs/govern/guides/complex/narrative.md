@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: da021a6e1a4467189d20d3cb05e7ccdbb0b5a3b6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1760f21d464627a81a4388a094f1ef39ade3e075
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995397"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220111"
 ---
 <!-- cSpell:ignore CDO's CIO's -->
 
@@ -27,7 +27,7 @@ Klienci potrzebują lepszego środowiska podczas korzystania z tej firmy. Bież�
 
 Organizacja IT również ma swoje wyzwania. Finanse planują dalsze obniżki w budżecie IT w ciągu najbliższych pięciu lat, co prowadzi do niepotrzebnych wydatków. Z drugiej strony, Rodo i inne wymagania dotyczące suwerenności danych wymuszają inwestowanie w zasoby w dodatkowych krajach do lokalizowania danych. Dwa z istniejących centrów danych są zaległe w przypadku odświeżania sprzętu, co powoduje dalsze problemy związane z zadowoleniem pracowników i klientów. Trzy więcej centrów danych wymaga odświeżenia sprzętu podczas wykonywania pięcioletniego planu. Dyrektor finansowy wypycha CIO, aby wziąć pod uwagę chmurę jako alternatywę dla tych centrów danych w celu zwolnienia wydatków inwestycyjnych.
 
-CIO ma innowacyjne pomysły, które mogą pomóc firmie, ale jej zespoły są ograniczone do walki z pożarami i kontrolowaniem kosztów. W luncheon z elementem CDO i jednym z liderów jednostki biznesowej, Konwersacja migracji w chmurze wygenerowała zainteresowanie elementami równorzędnymi CIO. Trzy liderzy dążą do wspierania siebie nawzajem przy użyciu chmury, aby osiągnąć cele biznesowe i rozpoczęły etapy wdrażania w chmurze.
+CIO ma innowacyjne pomysły, które mogą pomóc firmie, ale jej zespoły są ograniczone do walki z pożarami i kontrolowaniem kosztów. W luncheon z elementem CDO i jednym z liderów jednostki biznesowej, Konwersacja migracji w chmurze wygenerowała zainteresowanie elementami równorzędnymi CIO. Trzy liderzy chcą wspierać się nawzajem przy użyciu chmury, aby osiągnąć cele biznesowe i rozpoczęły etapy wdrażania w chmurze.
 
 ## <a name="business-characteristics"></a>Charakterystyka firmy
 
@@ -43,7 +43,7 @@ Oto bieżący stan operacji w firmie i w chmurze:
 
 - Działa ponad 20 prywatnych centrów danych na całym świecie.
 - Ze względu na rozwój organiczny i wiele lokalizacje geograficzne, istnieje kilka zespołów IT, które mają unikatowe wymagania dotyczące suwerenności danych i zgodności, które mają wpływ na jedną jednostkę biznesową działającą w określonej lokalizacji geograficznej.
-- Każde centrum danych jest połączone z serią regionalnych linii dzierżawionych, tworząc luźno przyłączoną globalną sieć WAN.
+- Każde centrum danych jest połączone z serią nadzierżawionych linii regionalnych, tworząc luźno przyłączoną globalną sieć WAN.
 - Wprowadzono chmurę przez Migrowanie wszystkich kont e-mail użytkowników końcowych do pakietu Office 365. Ta migracja została ukończona ponad sześć miesięcy temu. Od tej pory tylko kilka zasobów IT zostało wdrożonych w chmurze.
 - Podstawowy zespół programistyczny składnika CDO działa w ramach tworzenia i testowania możliwości w celu uzyskania informacji o możliwościach natywnych w chmurze.
 - Jedna jednostka biznesowa eksperymentuje z danymi Big Data w chmurze. Zespół usługi BI w tym zakresie bierze udział w tym wysiłku.

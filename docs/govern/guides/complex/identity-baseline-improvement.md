@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6cce3a3aafc62926c7e53d611cb4c94ae2496ac2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ec0f2ff617e0d4e5464dc5c9b1cead87b5a27048
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434447"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220128"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
 
@@ -77,13 +77,13 @@ Projekt ładu MVP zmienia się w celu uwzględnienia nowych zasad platformy Azur
 
 Oto nowe najlepsze rozwiązania:
 
-- **Bezpieczny hybrydowy plan sieci wirtualnej:** Lokalna Strona sieci hybrydowej powinna być skonfigurowana w taki sposób, aby zezwalała na komunikację między następującym rozwiązaniem i lokalnymi serwerami Active Directory. To najlepsze rozwiązanie wymaga obwodu DMZ, aby umożliwić Active Directory Domain Services między granicami sieci.
+- Zaplanuj **bezpieczną hybrydową sieć wirtualną:** Lokalna Strona sieci hybrydowej powinna być skonfigurowana w taki sposób, aby zezwalała na komunikację między następującym rozwiązaniem i lokalnymi serwerami Active Directory. To najlepsze rozwiązanie wymaga obwodu DMZ, aby umożliwić Active Directory Domain Services między granicami sieci.
 - **Szablony Azure Resource Manager:**
     1. Zdefiniuj sieciowej grupy zabezpieczeń do blokowania ruchu zewnętrznego i zezwalania na ruch wewnętrzny.
     2. Wdróż dwie Active Directory maszyny wirtualne w parze z równoważeniem obciążenia na podstawie złota obrazu. Przy pierwszym rozruchu ten obraz uruchamia skrypt programu PowerShell w celu przyłączenia do domeny i zarejestrowania się w usługach domenowych. Aby uzyskać więcej informacji, zobacz [rozszerzając Active Directory Domain Services (AD DS) na platformę Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
 - Azure Policy: Zastosuj sieciowej grupy zabezpieczeń do wszystkich zasobów.
 - Plan platformy Azure:
-    1. Utwórz plan o nazwie `active-directory-virtual-machines`.
+    1. Utwórz plan o nazwie `active-directory-virtual-machines` .
     2. Dodaj do planu wszystkie Active Directory szablony i zasady.
     3. Opublikuj plan w odpowiedniej grupie zarządzania.
     4. Zastosuj plan do dowolnej subskrypcji wymagającej starszej wersji usługi uwierzytelniania wieloskładnikowego lub innej firmy.

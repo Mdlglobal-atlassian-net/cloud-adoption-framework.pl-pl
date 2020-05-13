@@ -1,5 +1,5 @@
 ---
-title: Szablon Cost Management
+title: Cost Management szablon dyscypliny
 description: Ten szablon służy do definiowania instrukcji Cost Management zasad, które przechwytują zagrożenia biznesowe, odporność na ryzyko, procesy zgodności i narzędzia.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,23 +8,23 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 64530122cf1e4ba1de8b1ee34df37d9ed62c12cd
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2a14775618e220211d851bb86da371187da6d75a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434627"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220468"
 ---
-# <a name="cost-management-template"></a>Szablon Cost Management
+# <a name="cost-management-discipline-template"></a>Cost Management szablon dyscypliny
 
-Pierwszym krokiem do wdrożenia zmiany jest komunikowanie się z pożądaną zmianą. To samo jest prawdziwe w przypadku zmiany praktyk ładu. Szablon poniżej służy jako punkt wyjścia do tworzenia dokumentów i przekazywania instrukcji zasad, które regulują Cost Management problemów w chmurze.
+Pierwszym krokiem do wdrożenia zmiany jest komunikowanie się z pożądaną zmianą. To samo jest prawdziwe w przypadku zmiany praktyk ładu. Szablon poniżej służy jako punkt wyjścia do tworzenia dokumentów i przekazywania oświadczeń dotyczących zasad, które regulują problemy z zarządzaniem kosztami w chmurze.
 
 W miarę postępu dyskusji Użyj struktury tego szablonu jako modelu do przechwytywania ryzyka biznesowego, odporności na zagrożenia, procesów zgodności i narzędzi niezbędnych do zdefiniowania instrukcji zasad Cost Management organizacji.
 
 > [!IMPORTANT]
 > Ten szablon jest ograniczonym przykładem. Przed zaktualizowaniem tego szablonu w celu odzwierciedlenia wymagań należy zapoznać się z kolejnymi krokami dotyczącymi definiowania efektywnej dyscypliny Cost Management w ramach strategii nadzoru chmurowego.
 
-[Pobierz szablon dyscypliny ładu](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx)
+[Pobierz szablon dyscypliny Cost Management](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -1,6 +1,6 @@
 ---
 title: Procesy zgodności zasad linii bazowej zabezpieczeń
-description: Zapoznaj się z podejściem do tworzenia procesów, które obsługują dyscyplinę ładu zabezpieczeń w chmurze dla platformy Azure.
+description: Zapoznaj się z podejściem do tworzenia procesów, które obsługują dyscyplinę linii bazowej zabezpieczeń.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fb47ce9aea9baa27404ad927cee344cb0a9fec6c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ab2033046f0f03ca897cf87d71267a069865a8dc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433600"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219839"
 ---
 # <a name="security-baseline-policy-compliance-processes"></a>Procesy zgodności zasad linii bazowej zabezpieczeń
 
-W tym artykule omówiono podejście do przestrzegania zasad, które regulują [podstawy zabezpieczeń](./index.md). Skuteczne zarządzanie zabezpieczeniami w chmurze rozpoczyna się od cyklicznych procesów ręcznych zaprojektowanych w celu wykrywania luk w zabezpieczeniach i nakładania zasad w celu skorygowania zagrożeń bezpieczeństwa. Wymaga to regularnego zaangażowania zespołu nadzoru chmurowego i zainteresowanej firmy oraz udziałowców IT do przeglądania i aktualizowania zasad oraz zapewnienia zgodności z zasadami. Ponadto wiele procesów monitorowania i wymuszania można zautomatyzować lub uzupełnić narzędziem, aby zmniejszyć koszty zarządzania i umożliwić szybsze reagowanie na odchylenia zasad.
+W tym artykule omówiono podejście do przestrzegania zasad, które regulują [dyscyplinę linii bazowej zabezpieczeń](./index.md). Skuteczne zarządzanie zabezpieczeniami w chmurze rozpoczyna się od cyklicznych procesów ręcznych zaprojektowanych w celu wykrywania luk w zabezpieczeniach i nakładania zasad w celu skorygowania zagrożeń bezpieczeństwa. Wymaga to regularnego zaangażowania zespołu nadzoru chmurowego i zainteresowanej firmy oraz udziałowców IT do przeglądania i aktualizowania zasad oraz zapewnienia zgodności z zasadami. Ponadto wiele procesów monitorowania i wymuszania można zautomatyzować lub uzupełnić narzędziem, aby zmniejszyć koszty zarządzania i umożliwić szybsze reagowanie na odchylenia zasad.
 
 ## <a name="planning-review-and-reporting-processes"></a>Planowanie, przeglądanie i raportowanie procesów
 
@@ -39,9 +39,9 @@ Ten proces planowania jest również dobrym terminem do oszacowania bieżącego 
 
 **Comiesięczne przeglądy audytu i raportowania:** Co miesiąc należy przeprowadzić inspekcję we wszystkich wdrożeniach w chmurze w celu zapewnienia ciągłego wyrównania przy użyciu zasad zabezpieczeń. Przejrzyj działania związane z zabezpieczeniami z personelem działu IT i zidentyfikuj wszelkie problemy ze zgodnością, które nie zostały jeszcze obsłużone w ramach trwającego procesu monitorowania i wymuszania. Wynikiem tego przeglądu jest raport dotyczący zespołu strategii chmury i każdego zespołu wdrażania w chmurze w celu komunikowania się ogólnego przestrzegania zasad. Raport jest również przechowywany na potrzeby inspekcji i przepisów prawnych.
 
-## <a name="ongoing-monitoring-processes"></a>Procesy trwającego monitorowania
+## <a name="processes-for-ongoing-monitoring"></a>Procesy do ciągłego monitorowania
 
-Ustalanie, czy strategia ładu zabezpieczeń zakończyła się pomyślnie, zależy od widoczności bieżącego i wcześniejszego stanu infrastruktury chmurowej. Bez możliwości analizowania odpowiednich metryk i danych dotyczących kondycji i aktywności zasobów w chmurze nie można identyfikować zmian zagrożeń ani wykrywać naruszeń tolerancji ryzyka. Bieżące procesy zarządzania omówione powyżej wymagają danych dotyczących jakości, aby zapewnić możliwość modyfikacji zasad w celu lepszego zabezpieczenia infrastruktury przed zmianami zagrożeń i wymagań w zakresie zabezpieczeń.
+Pomyślna strategia zabezpieczeń punktu odniesienia jest zależna od widoczności w bieżącym i poprzednim stanie infrastruktury chmurowej. Bez możliwości analizowania odpowiednich metryk i danych dotyczących kondycji i aktywności zasobów w chmurze nie można identyfikować zmian zagrożeń ani wykrywać naruszeń tolerancji ryzyka. Bieżące procesy zarządzania omówione powyżej wymagają danych dotyczących jakości, aby zapewnić możliwość modyfikacji zasad w celu lepszego zabezpieczenia infrastruktury przed zmianami zagrożeń i wymagań w zakresie zabezpieczeń.
 
 Upewnij się, że Twoje zabezpieczenia i zespoły IT zaimplementowali zautomatyzowane systemy monitorowania dla infrastruktury chmurowej, które przechwytują odpowiednie dane dzienników potrzebne do oszacowania ryzyka. Możliwość aktywnego monitorowania tych systemów w celu zapewnienia wykrywania monitów i łagodzenia potencjalnych naruszeń zasad oraz zapewnienia zgodności strategii monitorowania z wymaganiami dotyczącymi zabezpieczeń.
 
@@ -60,7 +60,7 @@ Następujące wyzwalacze i akcje wymuszania zawierają przykłady, które można
 
 ## <a name="next-steps"></a>Następne kroki
 
-Za pomocą [szablonu zarządzania chmurą](./template.md)można udokumentować procesy i wyzwalacze, które są wyrównane do bieżącego planu wdrożenia chmury.
+Użyj [szablonu dyscypliny podstawy zabezpieczeń](./template.md) , aby udokumentować procesy i wyzwalacze, które są wyrównane do bieżącego planu wdrożenia chmury.
 
 Aby uzyskać wskazówki dotyczące wykonywania zasad zarządzania chmurą w wyrównaniu z planami wdrażania, zapoznaj się z artykułem dotyczącym ulepszania dyscypliny.
 

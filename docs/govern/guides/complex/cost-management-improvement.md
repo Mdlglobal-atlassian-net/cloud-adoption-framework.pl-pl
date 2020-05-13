@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f65118884e4bac8b62d3857008ccd5ad126656b9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6515a690ea0590061cb4b5ea707f7636b380dd10
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80808986"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220162"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny Cost Management
 
@@ -23,7 +23,7 @@ Ten artykuł postępuje zgodnie z opisami, dodając kontrolki kosztów do nadzor
 
 Wdrożenie wykracza poza wskaźnik tolerancji zdefiniowany w programie ładu MVP. Zwiększenie nakładu wydatków uzasadnia teraz odinwestycję czasu od zespołu nadzoru w chmurze w celu monitorowania i kontrolowania wzorców wydatków.
 
-Jako czysty sterownik innowacji nie jest już widoczny głównie jako centrum kosztów. Ponieważ organizacja IT dostarcza więcej wartości, CIO i dyrektor finansowy zgadzają się, że czas jest w stanie przesunąć rolę, jaką odgrywa w firmie. Od innych zmian dyrektor finansowy chce przetestować bezpośrednie podejście do księgowania w chmurze dla kanadyjskiej gałęzi jednej z jednostek biznesowych. Jedno z dwóch wycofanych centrów danych dotyczyło wyłącznie zasobów hostowanych przez kanadyjskie jednostki biznesowe. W tym modelu w kanadyjskiej oddzieleniu jednostka biznesowa zostanie naliczona bezpośrednio za wydatki operacyjne związane z zasobami hostowanymi. Ten model pozwala skupić się na niższym stopniu na zarządzaniu wydatkami innej osoby i nie tylko przy tworzeniu wartości. Jednak przed rozpoczęciem tego przejścia Cost Management wymagane są narzędzia.
+Jako czysty sterownik innowacji nie jest już widoczny głównie jako centrum kosztów. Ponieważ organizacja IT dostarcza więcej wartości, CIO i dyrektor finansowy zgadzają się, że czas jest w stanie przesunąć rolę, jaką odgrywa w firmie. Od innych zmian dyrektor finansowy chce przetestować bezpośrednie podejście do księgowania w chmurze dla kanadyjskiej gałęzi jednej z jednostek biznesowych. Jedno z dwóch wycofanych centrów danych dotyczyło wyłącznie zasobów hostowanych przez kanadyjskie jednostki biznesowe. W tym modelu w kanadyjskiej oddzieleniu jednostka biznesowa zostanie naliczona bezpośrednio za wydatki operacyjne związane z zasobami hostowanymi. Ten model pozwala skupić się na niższym stopniu na zarządzaniu wydatkami innej osoby i nie tylko przy tworzeniu wartości. Jednak zanim to przejście będzie możliwe, rozpocznie się wykonywanie narzędzi do zarządzania kosztami.
 
 ### <a name="changes-in-the-current-state"></a>Zmiany w bieżącym stanie
 
@@ -64,7 +64,7 @@ Poniższe zmiany zasad pomogą skorygować nowe zagrożenia i implementację prz
 
 Ta część artykułu poprawi projekt ładu MVP, aby uwzględnić nowe zasady platformy Azure i implementację Azure Cost Management. Te dwie zmiany w projekcie zostaną spełnione w ramach nowych instrukcji dotyczących zasad firmowych.
 
-1. Wprowadź zmiany w usłudze Azure Enterprise Portal, aby obciążyć administratora działu na potrzeby kanadyjskiego wdrożenia.
+1. Wprowadź zmiany w portalu Azure Enterprise, aby obciążyć administratora działu dla kanadyjskiego wdrożenia.
 2. Zaimplementuj Azure Cost Management.
     1. Ustal zakres dostępu odpowiedni do dopasowania przy użyciu wzorca subskrypcji i wzorca grupowania zasobów. Przy założeniu, że wyrównanie jest stosowane w przypadku zarządzania MVP, zdefiniowanego w poprzednich artykułach, wymaga to dostępu do **zakresu kont rejestracji** dla zespołu nadzoru chmurowego wykonywanego na potrzeby raportowania wysokiego poziomu. Dodatkowe zespoły poza nadzorem, takie jak zespół ds. zakupów, będą wymagały dostępu do **zakresu grupy zasobów** .
     2. Ustanów budżet w Azure Cost Management.

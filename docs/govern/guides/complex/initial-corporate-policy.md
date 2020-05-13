@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 470c84385606f1f7c5c36ec8e72b348aa6d4d8a5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9dbbf67fcd303803a110b49b803698eea2c37687
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995411"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220145"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: wstępne zasady firmowe związane z strategią ładu
 
@@ -34,7 +34,7 @@ Po spotkaniu dwóch członków zespołu nadzoru IT zażądało uprawnień do bad
 
 Aktualna tolerancja ryzyka jest wysoka i akceptowalnego poziomu do inwestowania w zarządzanie chmurą jest niska. W związku z tym wskaźniki tolerancji działają jako system wczesnego ostrzegania, aby wyzwolić inwestycje czasu i energii. W przypadku przestrzegania następujących wskaźników warto postępować zgodnie z strategią ładu.
 
-- **Cost Management:** Skalowanie wdrożenia przekracza 1 000 zasobów do chmury, a miesięczne wydatki przekraczają $10 000 USD miesięcznie.
+- **Zarządzanie kosztami:** Skalowanie wdrożenia przekracza 1 000 zasobów do chmury, a miesięczne wydatki przekraczają $10 000 USD miesięcznie.
 - **Linia bazowa tożsamości:** Dołączanie aplikacji ze starszymi lub wieloskładnikowymi wymaganiami usługi uwierzytelnianie wieloskładnikowe.
 - **Linia bazowa zabezpieczeń:** Uwzględnianie chronionych danych w zdefiniowanych planach wdrożenia chmury.
 - **Spójność zasobów:** Uwzględnianie wszystkich aplikacji o znaczeniu krytycznym w określonych planach wdrożenia chmury.

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7908dfe5a4ab63d37f97296cf8b830f358a2f4ea
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d686d50b98cbdef31c48d27f20d1c66f942e0818
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434653"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220502"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Cost Management przykładowe instrukcje zasad
 
@@ -29,7 +29,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Ryzyko biznesowe:** Bieżące kryteria, które nie uzasadniają inwestycji w Cost Management dyscypliny zespołu zarządzającego. Przewiduje się jednak takie inwestycje w przyszłości.
 
-**Instrukcja zasad:** Należy skojarzyć wszystkie zasoby wdrożone w chmurze z jednostką rozliczeniową i aplikacją/obciążeniem. Te zasady zapewniają, że przyszłe wysiłki Cost Management będą obowiązywać.
+**Instrukcja zasad:** Należy skojarzyć wszystkie zasoby wdrożone w chmurze z jednostką rozliczeniową oraz aplikacją lub obciążeniem. Te zasady zapewniają, że dyscyplina Cost Management będzie obowiązywać.
 
 **Opcje projektowania:** Aby uzyskać informacje na temat tworzenia platformy Future-The-The-test Foundation, zobacz dyskusje związane z tworzeniem programu ładu MVP w [przewodnikach projektowych](../guides/index.md) z możliwością podejmowania działań, które znajdują się w wytycznych dotyczących struktury wdrożenia chmury.
 
@@ -39,7 +39,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Instrukcja zasad:** Wszystkie wdrożenia w chmurze muszą być przydzieleni do jednostki rozliczeniowej z zatwierdzonym budżetem i mechanizmem limitów budżetowych.
 
-**Opcje projektowania:** Na platformie Azure budżet można kontrolować za pomocą [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/manage-budgets)
+**Opcje projektowania:** Na platformie Azure budżet można kontrolować za pomocą [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/manage-budgets).
 
 ## <a name="underutilization"></a>Niepożytkowanie
 
@@ -49,7 +49,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Opcje projektowania:**
 
-- Na platformie Azure planowane i rzeczywiste wydatki mogą być zarządzane za pośrednictwem [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
+- Na platformie Azure planowane i rzeczywiste wydatki mogą być zarządzane za pośrednictwem [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 - Istnieje kilka opcji grupowania zasobów według jednostki rozliczeniowej. Na platformie Azure [model spójności zasobów](../../decision-guides/resource-consistency/index.md) powinien być wybierany razem z zespołem nadzoru i stosowany do wszystkich zasobów.
 
 ## <a name="overprovisioned-assets"></a>Zasoby o nadmiernej aprowizacji
@@ -67,7 +67,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 **Ryzyko biznesowe:** Efektywne zarządzanie kosztami umożliwia tworzenie nowych zagrożeń. Optymalizacja wydatków jest odwrotna do wydajności systemu. W przypadku obniżenia kosztów istnieje ryzyko pogorszenia wydatków i produkowanie nieprawidłowych środowisk użytkowników.
 
-**Instrukcja zasad:** Wszelkie zasoby, które bezpośrednio mają wpływ na środowisko klienta, muszą być identyfikowane za poorednictwem grupowania lub tagowania. Przed optymalizacją dowolnego elementu zawartości, który ma wpływ na środowisko klienta, zespół ds. zarządzania chmurą musi dostosować optymalizację w oparciu o co najmniej 90 dni. Udokumentowanie wszystkich serii sezonowych lub opartych na zdarzeniach branych pod uwagę podczas optymalizowania zasobów.
+**Instrukcja zasad:** Wszelkie zasoby, które bezpośrednio mają wpływ na środowisko klienta, muszą być identyfikowane za poorednictwem grupowania lub tagowania. Przed optymalizacją dowolnego elementu zawartości, który ma wpływ na środowisko klienta, zespół ds. zarządzania chmurą musi dostosować optymalizację w oparciu o co najmniej 90 dni. Udokumentowanie wszelkich serii sezonowych lub opartych na zdarzeniach, które są brane pod uwagę podczas optymalizowania zasobów.
 
 **Opcje projektowania:**
 
@@ -78,7 +78,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 Skorzystaj z przykładów przedstawionych w tym artykule jako punktu wyjścia do opracowania zasad, które wiążą się z konkretnymi zagrożeniami biznesowymi, które są dostosowane do planów wdrażania w chmurze.
 
-Aby rozpocząć tworzenie własnych niestandardowych instrukcji zasad związanych z Cost Management, Pobierz [szablon Cost Management](./template.md).
+Aby rozpocząć tworzenie własnych niestandardowych instrukcji zasad Cost Management, Pobierz [szablon zasad Cost Management](./template.md).
 
 Aby przyspieszyć wdrażanie tego dyscypliny, wybierz [Przewodnik dotyczący ładu](../guides/index.md) z możliwością działania, który najlepiej odpowiada Twojemu środowisku. Następnie zmodyfikuj projekt, aby uwzględnić określone decyzje dotyczące zasad firmowych.
 

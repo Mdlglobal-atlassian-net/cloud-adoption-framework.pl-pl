@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3d40eb748c58643a981110e03417275b465c158
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ba44b786e63a0f7a9c63a527b6abbb1074a410fb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430486"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219550"
 ---
 # <a name="create-update-schedules"></a>Tworzenie harmonogramów aktualizacji
 
@@ -27,10 +27,10 @@ Moduł AZ. Automation obsługuje teraz Konfigurowanie zarządzania aktualizacjam
 Przykładowy skrypt w tej sekcji ilustruje użycie tagowania i wykonywania zapytań w celu utworzenia dynamicznych grup maszyn, do których można zastosować harmonogramy aktualizacji. Wykonuje następujące czynności. Można odwołać się do implementacji określonych akcji podczas tworzenia własnych skryptów.
 
 - Tworzy harmonogram aktualizacji Azure Automation, który jest uruchamiany w każdą sobotę o godzinie 8:00.
-- Tworzy zapytanie dla komputerów spełniających następujące kryteria:
-  - Wdrożone w `westus`lokalizacji `eastus`, lub `eastus2` na platformie Azure
-  - Do nich `Owner` zastosowano tag z wartością ustawioną na`JaneSmith`
-  - Do nich `Production` zastosowano tag z wartością ustawioną na`true`
+- Tworzy zapytanie dla każdej maszyny, która spełnia następujące kryteria:
+  - Wdrożone w `westus` `eastus` lokalizacji, lub na `eastus2` platformie Azure.
+  - Ma `Owner` tag zastosowany z wartością ustawioną na `JaneSmith` .
+  - Ma `Production` tag zastosowany z wartością ustawioną na `true` .
 - Stosuje harmonogram aktualizacji do maszyn z kwerendą i ustawia dwugodzinne okno aktualizacji.
 
 Przed uruchomieniem skryptu przykładowego należy się zalogować przy użyciu polecenia cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . Po uruchomieniu skryptu podaj następujące informacje:
@@ -54,19 +54,19 @@ Przed uruchomieniem skryptu przykładowego należy się zalogować przy użyciu 
 
     param (
         [Parameter(Mandatory=$true)]
-        [string]$SubscriptionId,
+        [string] $SubscriptionId,
 
         [Parameter(Mandatory=$true)]
-        [string]$ResourceGroupName,
+        [string] $ResourceGroupName,
 
         [Parameter(Mandatory=$true)]
-        [string]$WorkspaceName,
+        [string] $WorkspaceName,
 
         [Parameter(Mandatory=$true)]
-        [string]$AutomationAccountName,
+        [string] $AutomationAccountName,
 
         [Parameter(Mandatory=$false)]
-        [string]$scheduleName = "SaturdayCriticalSecurity"
+        [string] $scheduleName = "SaturdayCriticalSecurity"
     )
 
     Import-Module Az.Automation
@@ -87,8 +87,8 @@ Przed uruchomieniem skryptu przykładowego należy się zalogować przy użyciu 
 
     $query1Location =@("westus", "eastus", "eastus2")
     $query1FilterOperator = "Any"
-    $ownerTag = @{"Owner"= @("JaneSmith")}
-    $ownerTag.add("Production", "true")
+    $ownerTag = @{ "Owner"= @("JaneSmith") }
+    $ownerTag.Add("Production", "true")
 
     $DGQuery = New-AzAutomationUpdateManagementAzureQuery -ResourceGroupName $ResourceGroupName `
         -AutomationAccountName $AutomationAccountName `

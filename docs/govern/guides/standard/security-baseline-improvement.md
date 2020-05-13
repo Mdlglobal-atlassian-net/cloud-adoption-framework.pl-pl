@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9078c8e01a7b711a18ecf83a1243da3813fc5afd
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0835bf4fd7aa7f1fb08c8018f8fe2987726eacbf
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431047"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219907"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: ulepszanie dyscypliny linii bazowej zabezpieczeń
 
@@ -107,7 +107,7 @@ Projekt ładu MVP zmieni się w taki sposób, aby obejmował nowe zasady platfor
     1. Inspekcja i wymuszanie używania standardowych ról RBAC platformy Azure.
     2. Inspekcja i wymuszanie szyfrowania dla wszystkich kont magazynu i plików przechowywanych w poszczególnych węzłach.
     3. Inspekcja i wymuszanie aplikacji sieciowej grupy zabezpieczeń na wszystkich kartach sieciowych i podsieciach. Sieci i zespoły ds. zabezpieczeń IT definiują sieciowej grupy zabezpieczeń.
-    4. Inspekcja i wymuszanie użycia zatwierdzonej podsieci sieciowej i sieci wirtualnej dla każdego interfejsu sieciowego.
+    4. Inspekcja i wymuszanie użycia zatwierdzonej podsieci sieci i sieci wirtualnej dla każdego interfejsu sieciowego.
     5. Inspekcja i wymuszanie ograniczenia zdefiniowanych przez użytkownika tabel routingu.
     6. Zastosuj wbudowane zasady konfiguracji gościa w następujący sposób:
         1. Inspekcja serwerów sieci Web systemu Windows korzystających z bezpiecznych protokołów komunikacyjnych.
@@ -116,7 +116,7 @@ Projekt ładu MVP zmieni się w taki sposób, aby obejmował nowe zasady platfor
     1. Zidentyfikuj konfigurację zapory platformy Azure, która spełnia niezbędne wymagania dotyczące zabezpieczeń. Alternatywnie Zidentyfikuj zgodne urządzenie innej firmy, które jest zgodne z platformą Azure.
     2. Utwórz szablon Menedżer zasobów, aby wdrożyć zaporę z wymaganymi konfiguracjami.
 8. Plan platformy Azure:
-    1. Utwórz nowy plan o nazwie `protected-data`.
+    1. Utwórz nowy plan o nazwie `protected-data` .
     2. Dodaj zaporę i Azure Security Center szablonów do planu.
     3. Dodaj nowe zasady dla chronionych subskrypcji danych.
     4. Opublikuj plan w każdej grupie zarządzania, która aktualnie planuje hostowanie chronionych danych.
@@ -131,4 +131,4 @@ Dodanie powyższych procesów i zmian do ładu MVP pomoże rozwiązać wiele zag
 Wdrożenie chmury kontynuuje się i zapewnia dodatkową wartość biznesową, ale również wymaga zmiany ryzyka i zarządzania chmurą. W przypadku fikcyjnej firmy w tym przewodniku następnym krokiem jest obsługa obciążeń o kluczowym znaczeniu. Jest to punkt, gdy są zbędne kontrolki spójności zasobów.
 
 > [!div class="nextstepaction"]
-> [Poprawianie spójności zasobów](./resource-consistency-improvement.md)
+> [Ulepszanie dyscypliny spójności zasobów](./resource-consistency-improvement.md)

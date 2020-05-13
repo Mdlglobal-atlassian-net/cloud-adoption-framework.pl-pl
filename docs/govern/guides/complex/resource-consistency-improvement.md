@@ -1,5 +1,5 @@
 ---
-title: 'Złożone zarządzanie przedsiębiorstwem: Zwiększ dyscyplinę spójności zasobów'
+title: 'Złożone przedsięwzięcie korporacyjne: ulepszanie dyscypliny spójności zasobów'
 description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się więcej o odzyskiwaniu, zmianie rozmiarów i kontroli monitorowania w celu poprawy planu bazowego i korygowania zagrożeń.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 148a89cd63bfa7c29caea9f5b8f74f64132aed08
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b5bb646fd658f3b0c4393b0f68c5d449ee53db08
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434329"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219975"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny spójności zasobów
 
@@ -89,18 +89,18 @@ W przypadku korzystania z tego fikcyjnego przykładu zakłada się, że zmiany c
     1. Zdefiniuj i Wdróż Magazyn Azure Site Recovery na potrzeby procesów tworzenia kopii zapasowych i odzyskiwania.
     2. Utwórz szablon zarządzania zasobami platformy Azure na potrzeby tworzenia magazynu w ramach każdej subskrypcji.
 3. Implementacja Azure Monitor.
-    1. Po zidentyfikowaniu subskrypcji o krytycznym znaczeniu można utworzyć obszar roboczy usługi log Analytics.
+    1. Po zidentyfikowaniu subskrypcji o kluczowym znaczeniu można utworzyć obszar roboczy Log Analytics.
 
 **Subskrypcja wdrożenia poszczególnych chmur:** Poniżej zapewnią możliwość odnajdywania każdej subskrypcji przez rozwiązanie do monitorowania i gotowe do uwzględnienia w praktykach BCDR.
 
 1. Azure Policy dla węzłów o kluczowym znaczeniu:
     1. Inspekcja i wymuszanie korzystania tylko z ról standardowych.
     2. Inspekcja i wymuszanie stosowania szyfrowania dla wszystkich kont magazynu.
-    3. Inspekcja i wymuszanie użycia zatwierdzonej podsieci sieciowej i sieci wirtualnej dla każdego interfejsu sieciowego.
+    3. Inspekcja i wymuszanie użycia zatwierdzonej podsieci sieci i sieci wirtualnej dla każdego interfejsu sieciowego.
     4. Inspekcja i wymuszanie ograniczenia zdefiniowanych przez użytkownika tabel routingu.
     5. Inspekcja i egzekwowanie wdrożenia agentów Log Analytics dla maszyn wirtualnych z systemami Windows i Linux.
 2. Plan platformy Azure:
-    1. Utwórz plan o nazwie `mission-critical-workloads-and-protected-data`. Ten plan zastosuje zasoby oprócz planu chronionego danych.
+    1. Utwórz plan o nazwie `mission-critical-workloads-and-protected-data` . Ten plan zastosuje zasoby oprócz planu chronionego danych.
     2. Dodaj nowe zasady platformy Azure do planu.
     3. Zastosuj plan do każdej subskrypcji, która będzie hostować aplikację o znaczeniu krytycznym.
 
@@ -110,7 +110,7 @@ Dodanie tych procesów i zmian do ładu programu MVP pomaga skorygować wiele za
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gdy wdrożenie chmury zostanie powiększone i oferuje dodatkową wartość biznesową, również zostaną zmienione wymagania dotyczące ryzyka i zarządzania chmurą. W przypadku fikcyjnej firmy w tym przewodniku następnym wyzwalaczem jest, gdy skala wdrożenia przekroczy 1 000 zasobów do chmury, lub miesięczne wydatki przekraczają $10 000 USD miesięcznie. W tym momencie zespół nadzorujący chmury dodaje Cost Management kontrolek.
+Gdy wdrożenie chmury zostanie powiększone i oferuje dodatkową wartość biznesową, również zostaną zmienione wymagania dotyczące ryzyka i zarządzania chmurą. W przypadku fikcyjnej firmy w tym przewodniku następnym wyzwalaczem jest, gdy skala wdrożenia przekroczy 1 000 zasobów do chmury, lub miesięczne wydatki przekraczają $10 000 USD miesięcznie. W tym momencie zespół zarządzający chmurą dodaje kontrolę kosztów zarządzania.
 
 > [!div class="nextstepaction"]
 > [Ulepszanie dyscypliny Cost Management](./cost-management-improvement.md)

@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f7207b71f88bb311d28c8d1794dde7fddc425a30
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2fd3bfb329131e2ec344131ba3e2cbf8bc189a8f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433300"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219737"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Środowiska otoczenia: korzystanie z urządzeń
 
-W [kompilacji z empatię klienta](./build.md)omawiamy trzy testy prawdziwych innowacji: Rozwiąż potrzebę klienta, powracaj do klienta i Skaluj go na podstawie podstawy kohorty klientów. Każdy test hipotezy wymaga wysiłku i iteracji na podejście do wdrożenia. Ten artykuł zawiera szczegółowe informacje na temat niektórych zaawansowanych metod zmniejszania tego nakładu pracy przez *środowisko otoczenia*. W przypadku korzystania z urządzeń, a nie aplikacji, klient może być bardziej prawdopodobnie przełączany do rozwiązania.
+W [kompilacji z empatię klienta](./build.md)omawiamy trzy testy prawdziwych innowacji: Rozwiąż potrzebę klienta, powracaj do klienta i Skaluj go na podstawie podstawy kohorty klientów. Każdy test hipotezy wymaga wysiłku i iteracji na podejście do wdrożenia. Ten artykuł zawiera szczegółowe informacje na temat niektórych zaawansowanych metod zmniejszania tego nakładu pracy przez _środowisko otoczenia_. W przypadku korzystania z urządzeń, a nie aplikacji, klient może być bardziej prawdopodobnie przełączany do rozwiązania.
 
 ## <a name="ambient-experiences"></a>Środowiska otoczenia
 
@@ -24,7 +24,7 @@ W [kompilacji z empatię klienta](./build.md)omawiamy trzy testy prawdziwych inn
 
 Żywotność w gospodarce cyfrowej jest całkowicie odwracania. Wszyscy jesteśmy bombarded z wiadomościami społecznościowymi, wiadomościami e-mail, sieciami Web, wizualizacją i werbalnymi, z których każdy jest ryzykiem odwracania. To ryzyko rośnie w każdej sekundzie, która upływa między punktem wymaganym przez klienta a momentem, gdy napotykają rozwiązanie. Niezliczone klienci są traconi w krótkim czasie. Aby wzrosnąć wdrożenie powtarzania, należy zmniejszyć liczbę rozpraszań, skracając czas na rozwiązanie (TTS).
 
-## <a name="interacting-with-devices"></a>Korzystanie z urządzeń
+## <a name="interact-with-devices"></a>Interakcja z urządzeniami
 
 Standardowe środowisko sieci Web to najpopularniejsza technika tworzenia aplikacji używana do zaspokajania potrzeb klienta. W tym podejściu przyjęto założenie, że klient jest przed komputerem. Jeśli klient spójnie zaspokaja swój punkt potrzebny przed laptopem, Utwórz aplikację internetową. Ta aplikacja sieci Web zapewni środowisko otoczenia dla tego klienta w tym scenariuszu. Jednak wiemy, że ten scenariusz jest mniej i mniej prawdopodobnie w naszym bieżącym ERA.
 
@@ -45,7 +45,7 @@ W pierwszym etapie środowiska otoczenia użytkownik przechodzi poza komputer. O
 
 Gdy klienci są często urządzeniami mobilnymi i zmianami, które mogą reprezentować najbardziej odpowiednią formę środowiska otoczenia dla danego rozwiązania. W ciągu ostatniej dekady innowacje były często wyzwalane przez integrację istniejących rozwiązań z doświadczeniem mobilnym.
 
-Platforma Azure App Services to doskonałe podejście. Podczas wczesnych iteracji [Funkcja aplikacji sieci Web platformy Azure App Services](https://docs.microsoft.com/azure/app-service/overview) może służyć do testowania hipotez. Ponieważ te rzeczy stają się bardziej złożone, [Funkcja aplikacji mobilnej platformy Azure App Services](https://docs.microsoft.com/azure/app-service-mobile) może rozłożyć aplikację sieci Web na wiele platform mobilnych.
+Azure App Service jest doskonałym przykładem tego podejścia. Podczas wczesnych iteracji [Funkcja aplikacji sieci web Azure App Service](https://docs.microsoft.com/azure/app-service/overview) może służyć do testowania hipotezy. Ponieważ te rzeczy stają się bardziej skomplikowane, [Funkcja aplikacji mobilnej Azure App Service](https://docs.microsoft.com/azure/app-service-mobile) może rozciągnąć aplikację sieci Web na wiele platform mobilnych.
 
 ## <a name="mixed-reality"></a>Rzeczywistość mieszana
 
@@ -74,7 +74,7 @@ Możesz użyć wszystkich trzech z tych narzędzi do zbierania danych z otoczeni
 
 ## <a name="adjusted-reality"></a>Rzeczywistość dostosowana
 
-Najwyższą postać środowiska otoczenia jest korekta rzeczywistości, często nazywana *analizą otoczenia*. Dostosowana rzeczywistość to podejście do użycia informacji z rozwiązania, aby zmienić rzeczywistość klienta bez konieczności bezpośredniej współpracy z aplikacją. W tym podejściu aplikacja, która początkowo została skompilowana w celu udowodnienia hipotezy, może już nie mieć znaczenia. Zamiast tego urządzenia w środowisku pomagają w modulacji danych wejściowych i wyjściowych, aby zaspokoić potrzeby klientów.
+Najwyższą postać środowiska otoczenia jest korekta rzeczywistości, często nazywana _analizą otoczenia_. Dostosowana rzeczywistość to podejście do użycia informacji z rozwiązania, aby zmienić rzeczywistość klienta bez konieczności bezpośredniej współpracy z aplikacją. W tym podejściu aplikacja, która początkowo została skompilowana w celu udowodnienia hipotezy, może już nie mieć znaczenia. Zamiast tego urządzenia w środowisku pomagają w modulacji danych wejściowych i wyjściowych, aby zaspokoić potrzeby klientów.
 
 Wirtualne Asystenci i inteligentne głośniki oferują doskonałe przykłady o regulowanej rzeczywistości. Samo, inteligentny głośnik to przykład prostego zintegrowanej rzeczywistości. Należy jednak dodać inteligentnego światła i czujnika ruchu do rozwiązania do obsługi głośników inteligentnych i łatwo utworzyć podstawowe rozwiązanie, które włącza lampy po wprowadzeniu pokoju.
 
