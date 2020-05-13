@@ -7,15 +7,13 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 04816ede2d9c46e60baef88652551e647049bd99
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 67b4968a62e795c6dbd3c09a954dbe0edf12166d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120687"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219261"
 ---
-<!-- cSpell:ignore CAF -->
-
 # <a name="first-landing-zone"></a>Pierwsza strefa docelowa
 
 Infrastruktura jako kod to naturalne przejście w trakcie większości wysiłków związanych z wdrażaniem w chmurze. Wdrożenie pierwszej strefy wyładunkowej w chmurze jest wspólnym punktem wyjścia w trakcie przechodzenia do środowiska opartego na kodzie. Ten artykuł pomoże Ci zrozumieć termin _strefy docelowej_ i zdecydować, która strefa docelowa jest najbardziej odpowiednia dla bieżących potrzeb.
@@ -35,7 +33,7 @@ C. Niektóre plany wdrażania w chmurze podlegają zewnętrznym wymaganiom dotyc
 D. Gdy Partner udostępnia bieżące usługi zarządzane lub ma umowę na dostarczenie planu wdrożenia, zazwyczaj udostępni własną strefę docelową. Użycie strefy docelowej partnera może przyspieszyć wdrażanie i zapewnić spójne wymagania dotyczące zarządzania operacyjnego. Należy jednak wprowadzić dodatkowe zagadnienia dotyczące zarządzania wewnętrznego i wymagań dotyczących zabezpieczeń, aby zapewnić wyrównanie.
 
 > [!NOTE]
-> Przed przystąpieniem do działania z podejściem pierwszym i refaktoryzacją kodu, Czytelnicy powinni znać [konkurencyjne priorytety związane z tą decyzją](../../strategy/balance-competing-priorities.md#balance-during-ready). W przypadku wybrania podejścia do strefy wyładunkowej ważne jest zapoznanie się z niezbędną równowagę między "czasem do przyjęcia" i "długoterminowymi operacjami".
+> Przed przystąpieniem do działania z podejściem pierwszym i refaktoryzacją kodu, Czytelnicy powinni znać [konkurencyjne priorytety związane z tą decyzją](../../strategy/balance-competing-priorities.md#balance-during-the-ready-phase). W przypadku wybrania podejścia do strefy wyładunkowej ważne jest, aby zrozumieć niezbędną równowagę między _czasem do_ wdrożenia i _długoterminowych operacji_.
 
 ## <a name="choosing-a-first-landing-zone"></a>Wybieranie pierwszej strefy docelowej
 
@@ -43,15 +41,15 @@ Wybór pierwszej strefy docelowej zależy od wielu zmiennych. Poniższa siatka p
 
 | Strefa docelowa                                 | Środowisko chmury  | Skalowanie             | Czas odnajdowania | Produkcja gotowa | Połączenie hybrydowe             | Dane poufne     | Krytyczne znaczenie dla działalności   | Zgodność         |
 |----------------------------------------------|-------------------|-------------------|----------------|------------------|--------------------|--------------------|--------------------|--------------------|
-| [CAF migrację](./migrate-landing-zone.md)     | Nowość w chmurze      | Zasoby < 1 000    | od 1 do 5 dni    | Ograniczony zakres — > | Wymagane rozszerzenie | Wymagane rozszerzenie | Wymagane rozszerzenie | Wymagane rozszerzenie |
-| [CAF Terraform](./terraform-landing-zone.md) | Różne szablony | Różne szablony | od 10 do 20 tygodni | Ograniczony zakres — > | Dostępne moduły  | Dostępne moduły  | Dostępne moduły  | Dostępne moduły  |
+| [Strefa docelowa migracji w przewodniku CAF](./migrate-landing-zone.md)     | Nowość w chmurze      | Zasoby < 1 000    | od 1 do 5 dni    | Ograniczony zakres — > | Wymagane rozszerzenie | Wymagane rozszerzenie | Wymagane rozszerzenie | Wymagane rozszerzenie |
+| [Strefa docelowa CAF Terraform](./terraform-landing-zone.md) | Różne szablony | Różne szablony | od 10 do 20 tygodni | Ograniczony zakres — > | Dostępne moduły  | Dostępne moduły  | Dostępne moduły  | Dostępne moduły  |
 
 W poniższej tabeli przedstawiono te same strefy wyładunkowe z nieco różnych perspektyw, co prowadzi do bardziej szczegółowych procesów decyzyjnych.
 
 | Strefa docelowa                                 | Koncentrator                          | Znajdowało    | Model chmury | Technologia      |
 |----------------------------------------------|------------------------------|----------|-------------|-----------------|--|--|--|
-| [CAF migrację](./migrate-landing-zone.md)     | Wymagany jest składnik refaktoryzacji            | Dołączono | Tylko platforma Azure  | Azure Blueprint |
-| [CAF Terraform](./terraform-landing-zone.md) | Uwzględnione w module VDC       | Dołączono | Rozwiązanie wielochmurowe  | Terraform       |
+| [Strefa docelowa migracji w przewodniku CAF](./migrate-landing-zone.md)     | Wymagany jest składnik refaktoryzacji            | Dołączono | Tylko platforma Azure  | Azure Blueprint |
+| [Strefa docelowa CAF Terraform](./terraform-landing-zone.md) | Uwzględnione w module VDC       | Dołączono | Rozwiązanie wielochmurowe  | Terraform       |
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c3543299d323c8be6bf7ee88d6e9205c307e24f9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9f688988e62cf7783f76cf67d90fdc5b024e4fef
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997441"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218581"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Przykładowe instrukcje zasad linii bazowej tożsamości
 
@@ -80,7 +80,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 Skorzystaj z przykładów przedstawionych w tym artykule jako punktu wyjścia do tworzenia zasad w celu rozwiązywania określonych zagrożeń firmy, które są dostosowane do planów wdrażania w chmurze.
 
-Aby rozpocząć tworzenie własnych niestandardowych instrukcji zasad związanych z punktem odniesienia tożsamości, Pobierz [szablon linii bazowej tożsamości](./template.md).
+Aby rozpocząć tworzenie własnych niestandardowych instrukcji zasad linii bazowej tożsamości, Pobierz [szablon dyscypliny linii bazowej tożsamości](./template.md).
 
 Aby przyspieszyć wdrażanie tego dyscypliny, wybierz [Przewodnik dotyczący ładu](../guides/index.md) z możliwością działania, który najlepiej odpowiada Twojemu środowisku. Następnie zmodyfikuj projekt, aby uwzględnić określone decyzje dotyczące zasad firmowych.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3781bb50f8d2ad76efd606f8d6914582cee0754c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 213fc070f648a43d285e59948bb567502f944603
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434220"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218785"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Przewodnik dotyczący zarządzania przedsiębiorstwem w warstwie Standardowa: Opis strategii zarządzania
 
@@ -50,8 +50,8 @@ Następujące zmiany są przewidywane w ciągu następnych kilku lat:
 
 - CIO przegląda zasady dotyczące danych osobowych i danych finansowych, aby umożliwić przyszłe cele stanu.
 - Zespoły projektowe i analizy biznesowej chcą wystawić rozwiązania w chmurze w środowisku produkcyjnym w ciągu najbliższych 24 miesięcy w oparciu o wizję i nowe produkty.
-- W tym roku zespół IT ukończy wycofywanie obciążeń związanych z odzyskiwaniem po awarii w centrum danych DR przez Migrowanie maszyn wirtualnych 2 000 do chmury. Oczekuje się, że w ciągu najbliższych pięciu lat zostanie wygenerowane szacowane oszczędności kosztów $25M USD.
-    ![Koszty lokalne w porównaniu z kosztami platformy Azure, które pokazują zwrot z $25M USD w ciągu najbliższych pięciu lat](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+- W tym roku zespół IT ukończy wycofywanie obciążeń związanych z odzyskiwaniem po awarii w centrum danych DR przez Migrowanie maszyn wirtualnych 2 000 do chmury. Oczekuje się, że w ciągu najbliższych pięciu lat zostanie wygenerowane szacowane oszczędności kosztów $25m USD.
+    ![Koszty lokalne w porównaniu z kosztami platformy Azure, które pokazują zwrot z $25m USD w ciągu najbliższych pięciu lat](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 - Firma planuje zmienić sposób jej inwestycji, zmieniając rozmieszczenie zaliczonych wydatków kapitałowych jako kosztów operacyjnych w ramach tego rozwiązania. Ta zmiana zapewni większą kontrolę kosztów i umożliwi jej przyspieszenie innych planowanych wysiłków.
 
 ## <a name="next-steps"></a>Następne kroki

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 22e74aabc56ae25d0448bf321c645449e4989668
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0860dfc137b8aaa9ad39beeebb3856786eee1318
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809119"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218309"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Wprowadzenie do zgodności z przepisami
 
@@ -27,9 +27,14 @@ Podobnie jak w przypadku kontroli zabezpieczeń, organizacje powinny zrozumieć 
 
 Poniżej znajdują się opisy rozporządzeń dotyczących zgodności w różnych branżach i lokalizacje geograficzne:
 
+<!-- docsTest:ignore PHI "Health Information Portability and Accountability Act" -->
+
 ## <a name="hipaa"></a>HIPAA
 
 Aplikacja do opieki zdrowotnej, która przetwarza chronione informacje o zdrowiu (Fi), podlega zasadom zachowania poufności informacji i regule zabezpieczeń podanym w ramach przenośności i odpowiedzialności za informacje o kondycji (HIPAA). Co więcej, HIPAA może wymagać, aby firma opieki zdrowotnej musiała uzyskać zagwarantowane gwarancje od dostawcy usług w chmurze, które będą chronić wszelkie odebrane lub utworzone przeze mnie Fi.
+
+<!-- cSpell:ignore Visa Mastercard -->
+<!-- docsTest:ignore "American Express" Discover JCB QSA ISA ROC SAQ DPO GRC -->
 
 ## <a name="pci"></a>Port
 
@@ -41,15 +46,20 @@ Dane osobowe są informacjami, których można użyć do zidentyfikowania konsum
 
 ## <a name="gdpr"></a>RODO
 
-Jednym z najważniejszych osiągnięć w tym obszarze jest Ogólne rozporządzenie o ochronie danych (Rodo), zaprojektowany w celu wzmocnienia ochrony danych dla osób w Unii Europejskiej. Rodo wymaga, aby dane dotyczące osób indywidualnych (takich jak "nazwa, adres domowy, Zdjęcie, adres e-mail, szczegóły banku, wpisy w witrynach sieci społecznościowych, informacje medyczne lub adresy IP komputera") były przechowywane na serwerach w Unii Europejskiej i nie zostały z nich przesłane. Wymaga również, aby firmy powiadomiły osoby o naruszeniu danych i mieli upoważnienia, że firmy mają oficera ochrony danych (DPO). Inne kraje mają lub rozwijają podobne rodzaje rozporządzeń.
+Jednym z najważniejszych osiągnięć w tym obszarze jest ogólne rozporządzenie o ochronie danych (Rodo), zaprojektowane w celu wzmocnienia ochrony danych dla osób w Unii Europejskiej. Rodo wymaga, aby dane dotyczące osób indywidualnych (takich jak "nazwa, adres domowy, Zdjęcie, adres e-mail, szczegóły banku, wpisy w witrynach sieci społecznościowych, informacje medyczne lub adresy IP komputera") były przechowywane na serwerach w Unii Europejskiej i nie zostały z nich przesłane. Wymaga również, aby firmy powiadomiły osoby o naruszeniu danych i mieli upoważnienia, że firmy mają oficera ochrony danych (DPO). Inne kraje mają lub rozwijają podobne rodzaje rozporządzeń.
 
 ## <a name="compliant-foundation-in-azure"></a>Zgodna podstawa na platformie Azure
 
-Aby pomóc klientom w spełnieniu własnych obowiązków związanych ze zgodnością w ramach regulowanych branż i rynków na całym świecie, platforma Azure&mdash;utrzymuje największy portfel zgodności w branży (łącznie z liczbą ofert), a także Głębokość (liczba usług związanych z klientem w zakresie oceny). Oferty zgodności z platformą Azure są pogrupowane w cztery segmenty: mające zastosowanie globalnie, dla instytucji rządowych Stanów Zjednoczonych, właściwych dla branż i regionu/kraju.
+Aby pomóc klientom w spełnieniu własnych obowiązków związanych ze zgodnością w ramach regulowanych branż i rynków na całym świecie, platforma Azure utrzymuje największe portfolio zgodności w branży, w wysokości (łącznie z liczbą ofert), a także głębi (liczba usług dostępnych dla klientów w zakresie oceny). Oferty zgodności z platformą Azure są pogrupowane w cztery segmenty:
+
+- Globalny
+- Administracja USA
+- Branża
+- Regionalne
 
 Oferty zgodności z platformą Azure są oparte na różnych typach gwarancji, w tym formalnych certyfikatach, zaświadczeniu, atestacji, autoryzacji i ocenach wyprodukowanych przez niezależne przedsiębiorstwa przeprowadzające inspekcje stron trzecich, a także zmiany umowne, samooceny i dokumenty wskazówki klienta utworzone przez firmę Microsoft. Każdy opis oferty w tym dokumencie zawiera aktualne instrukcje dotyczące zakresu, wskazujące, które usługi platformy Azure są w zasięgu dla oceny, a także linki do zasobów do pobrania, które pomagają klientom z własnymi zobowiązaniami w zakresie zgodności.
 
-Centrum zaufania firmy Microsoft zawiera bardziej szczegółowe informacje na temat [ofert zgodności platformy Azure](https://www.microsoft.com/trust-center/compliance/compliance-overview). Ponadto cała dokumentacja do pobrania jest dostępna dla niektórych klientów platformy Azure z poziomu [portalu zaufania usługi](https://servicetrust.microsoft.com) w następujących sekcjach:
+Centrum zaufania firmy Microsoft zawiera bardziej szczegółowe informacje na temat [ofert zgodności platformy Azure](https://www.microsoft.com/trust-center/compliance/compliance-overview). Ponadto cała dokumentacja do pobrania jest dostępna dla niektórych klientów platformy Azure z [portalu zaufania usługi firmy Microsoft](https://servicetrust.microsoft.com) w następujących sekcjach:
 
 - **Raporty inspekcji:** Zawiera sekcje dla raportów FedRAMP, GRC oceny, ISO, PCI DSS i SOC.
 - **Zasoby ochrony danych:** Obejmuje przewodniki dotyczące zgodności, często zadawane pytania i oficjalne dokumenty oraz sekcje dotyczące testowania i oceny zabezpieczeń pióra.

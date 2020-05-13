@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 5950b94a6247864ef101e6e8c2040eee899a5bb4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9087a61baaeffa2bb769899a04f55c3eb959f4ea
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433751"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218836"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Przykłady wyników fiskalnych
 
@@ -34,7 +34,7 @@ W pozostałej części tego artykułu objaśniono te wyniki fiskalne w kontekśc
 
 Chmura może pomóc w tworzeniu możliwości dostarczania nowych produktów klientom lub dostarczania istniejących produktów w nowy sposób. Nowe strumienie przychodu są innowacyjne, przedsiębiorcze i atrakcyjne dla wielu osób w świecie biznesowym. Nowe strumienie przychodu są również podatne na awarie i są traktowane przez wiele firm jako wysokie ryzyko. Gdy proponowane są wyniki związane z przychodem, prawdopodobnie wystąpi odporność. Aby dodać wiarygodność do tych wyników, partner z liderem firmy, który jest sprawdzoną innowacyjnością. Sprawdzenie, czy strumień przychodu jest wczesny w procesie, pozwala uniknąć przeszkody firmy.
 
-- **Przykład:** Firma sprzedała książki za ponad sto lat. Pracownik firmy zdaje sobie sprawę, że zawartość może być dostarczana elektronicznie. Pracownik tworzy urządzenie, które może zostać sprzedane w księgarni, co pozwala bezpośrednio pobrać te same książki, co wiąże się $X z nową książką sprzedaży.
+- **Przykład:** Firma sprzedała książki za ponad sto lat. Pracownik firmy zdaje sobie sprawę, że zawartość może być dostarczana elektronicznie. Pracownik tworzy urządzenie, które może zostać sprzedane w księgarni, co pozwala bezpośrednio pobrać te same książki, co wiąże się _$x_ z nową książką sprzedaży.
 
 ### <a name="revenue-increases"></a>Wzrost przychodu
 
@@ -53,18 +53,22 @@ Rzadko pojedynczy nakład pracy powoduje zwiększenie przychodu i obniżenie kos
 W chmurze obliczeniowej można zredukować wydatki inwestycyjne dotyczące sprzętu i oprogramowania, konfigurować centra danych, uruchamiać centra danych w lokacji i tak dalej. Koszty stojaków serwerów, rundy energii elektrycznej na potrzeby zasilania i chłodzenia oraz specjaliści IT do zarządzania infrastrukturą. Zamknięcie centrum danych może obniżyć zobowiązania z tytułu wydatków inwestycyjnych. Jest to często określane jako "Uzyskiwanie informacji o firmie centrum danych". Obniżka kosztu jest zwykle mierzona w dolarach w bieżącym budżecie, które mogą obejmować od jednej do pięciu lat w zależności od tego, jak dyrektor zarządza finansami.
 
 - **Przykład #1:** Centrum danych firmy zużywa znaczną część rocznego budżetu IT. Umożliwia ona przeprowadzenie migracji w chmurze i przejście zasobów w tym centrum danych do rozwiązań infrastruktury jako usługi (IaaS).
-- **Przykład #2:** Firma holdingowa niedawno uzyskała nową firmę. W ramach przejęcia warunki określają, że nowa jednostka powinna zostać usunięta z bieżących centrów danych w ciągu sześciu miesięcy. Niewykonanie tej czynności spowoduje powstanie 1 000 000 USD miesięcznie od firmy holdingowej. Przenoszenie zasobów cyfrowych do chmury w ramach migracji do chmury może pozwolić na szybką likwidację starych zasobów.
+- **Przykład #2:** Firma holdingowa niedawno uzyskała nową firmę. W ramach przejęcia warunki określają, że nowa jednostka powinna zostać usunięta z bieżących centrów danych w ciągu sześciu miesięcy. Niewykonanie tej czynności spowoduje powstanie $1 000 000 USD miesięcznie od firmy holdingowej. Przenoszenie zasobów cyfrowych do chmury w ramach migracji do chmury może pozwolić na szybką likwidację starych zasobów.
 - **Przykład #3:** Firma podatkowa korzystająca z podatku dochodowego, która pozyskuje odbiorców w przypadku 70 procent rocznego przychodu w ciągu pierwszych trzech miesięcy roku. Pozostała część roku, jej duża inwestycja w IT jest stosunkowo nieaktywny. Migracja w chmurze może umożliwić jej wdrożenie pojemności obliczeniowej/hostingu wymaganej przez te trzy miesiące. W pozostałych dziewięciu miesiącach koszty IaaS mogą być znacząco ograniczone przez zmniejszenie wpływu obliczeń.
 
+<!-- docsTest:ignore "Ryan Sorensen" "Director of Application Development and Enterprise Architecture" 1M -->
 <!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
 
 ### <a name="example-coverdell"></a>Przykład: Coverdell
 
-Coverdell zmodernizowanie infrastruktury w celu nanoszenia oszczędności kosztów na platformie Azure. Coverdell decyzję o zainwestowaniu na platformę Azure, a następnie przeanalizować sieci witryn sieci Web, aplikacji, danych i infrastruktury w ramach tego środowiska, doprowadziło do większej oszczędności kosztów niż w przypadku Twojej firmy. Migracja do środowiska przeznaczonego tylko na platformę Azure eliminuje 54 000 USD za miesięczne koszty usług wspólnej lokalizacji. Dzięki nowemu infrastrukturze w dziedzinie zjednoczonej firmy Coverdell oczekuje na zaoszczędzenie szacowanego 1 000 000 USD w ciągu najbliższych dwóch lat.
+Coverdell zmodernizowanie infrastruktury w celu nanoszenia oszczędności kosztów na platformie Azure. Coverdell decyzję o zainwestowaniu na platformę Azure, a następnie przeanalizować sieci witryn sieci Web, aplikacji, danych i infrastruktury w ramach tego środowiska, doprowadziło do większej oszczędności kosztów niż w przypadku Twojej firmy. Migracja do środowiska przeznaczonego tylko na platformę Azure eliminuje $54 000 USD za miesięczne koszty usług wspólnej lokalizacji. Dzięki nowej infrastrukturze firmy w firmie Coverdell oczekuje na zaoszczędzenie szacowanej wartości $1M USD w ciągu najbliższych dwóch lat.
 
-> "Uzyskanie dostępu do stosu technologii Azure umożliwia otwarcie drzwi dla niektórych skalowalnych, łatwych w implementacji i wysoko dostępnych rozwiązań, które są oszczędne. Dzięki temu nasze architekty mogą być znacznie bardziej kreatywne dzięki dostarczanym przez nie rozwiązaniom.  
-> Ryan Sorensen  
-> Dyrektor ds. projektowania aplikacji i architektury przedsiębiorstwa  
+> "Uzyskanie dostępu do stosu technologii Azure umożliwia otwarcie drzwi dla niektórych skalowalnych, łatwych w implementacji i wysoko dostępnych rozwiązań, które są oszczędne. Dzięki temu nasze architekty mogą być znacznie bardziej kreatywne dzięki dostarczanym przez nie rozwiązaniom.
+>
+> Ryan Sorensen
+>
+> Dyrektor ds. projektowania aplikacji i architektury przedsiębiorstwa
+>
 > Coverdell
 
 ### <a name="cost-avoidance"></a>Unikanie kosztów
@@ -72,6 +76,8 @@ Coverdell zmodernizowanie infrastruktury w celu nanoszenia oszczędności koszt�
 Zakończenie centrum danych może również zapewnić uniknięcie kosztów, uniemożliwiając w przyszłości cykle odświeżania. Cykl odświeżania to proces kupowania nowego sprzętu i oprogramowania w celu zastąpienia systemów lokalnych. Na platformie Azure sprzęt i system operacyjny są rutynowie utrzymywane, poprawiane i odświeżane bez dodatkowych kosztów dla klientów. Dzięki temu dyrektor finansowy może usunąć planowane przyszłe wydatki na podstawie długoterminowych prognoz finansowych. Unikanie kosztów jest mierzone w dolarach. Różni się to od obniżenia kosztów, zwykle koncentrując się na przyszłym budżecie, który nie został jeszcze w pełni zatwierdzony.
 
 - **Przykład:** Centrum danych firmy jest przeznaczone do odnawiania dzierżawy w ciągu sześciu miesięcy. Centrum danych jest w trakcie obsługi przez osiem lat. Cztery lata temu wszystkie serwery zostały odświeżone i zwirtualizowane, co kosztuje miliony dolarów firmy. W następnym roku firma planuje odświeżanie sprzętu i oprogramowania ponownie. Migrowanie zasobów w tym centrum danych w ramach migracji do chmury umożliwi uniknięcie kosztów przez usunięcie zaplanowanego odświeżania z prognozowanego budżetu w następnym roku. Może ona również generować obniżkę kosztów przez zmniejszenie lub wyeliminowanie kosztów leasingu nieruchomości.
+
+<!-- docsTest:ignore "vs. Operating" -->
 
 ### <a name="capital-expenses-vs-operating-expenses"></a>Koszty kapitałowe a koszty operacyjne
 
@@ -88,7 +94,7 @@ Poniższe terminy pomogą zrozumieć różnice między kosztami kapitałowymi i 
 
 Często jest to bezpieczne trafienie, które w różnych kierownikach, w tym dyrektor ds. inwestycji (CIO), zanotują najlepsze wykorzystanie kapitału do rozwoju firmy w odpowiednim kierunku. CIOnie środków w celu przeprowadzenia konwersji contentiousych wydatków inwestycyjnych na wyznaczną odpowiedzialność za wydatki operacyjne może być atrakcyjny przez siebie. W wielu branżach dyrektorzy ds. finansów (CFOs) aktywnie dążą do lepszego kojarzenia z kosztami związanymi z sprzedażą.
 
-Jednak przed skojarzeniem każdej transformacji z tym typem kapitału a konwersją kosztów operacyjnych, warto zaspokoić członków zespołów DYREKTORów lub CIOów, aby zobaczyć, która struktura kosztów jest preferowana przez firmę. W niektórych organizacjach zmniejszenie wydatków inwestycyjnych na rzecz wydatków operacyjnych jest wysoce *niepożądanym* wynikiem. Jak wspomniano wcześniej, takie podejście jest czasami widoczne w detalicznych, holdingowych i prywatnych kapitale kapitałowym, które zwiększają wartość w tradycyjnych modelach księgowości zasobów, które stanowią małą wartość w adresie IP. Jest on również widoczny w organizacjach, które mają negatywny wpływ na to, kiedy pochodzą one od pracownika działu IT lub innych funkcji w przeszłości.
+Jednak przed skojarzeniem każdej transformacji z tym typem kapitału a konwersją kosztów operacyjnych, warto zaspokoić członków zespołów DYREKTORów lub CIOów, aby zobaczyć, która struktura kosztów jest preferowana przez firmę. W niektórych organizacjach zmniejszenie wydatków inwestycyjnych na rzecz wydatków operacyjnych jest wysoce niepożądanym wynikiem. Jak wspomniano wcześniej, takie podejście jest czasami widoczne w detalicznych, holdingowych i prywatnych kapitale kapitałowym, które zwiększają wartość w tradycyjnych modelach księgowości zasobów, które stanowią małą wartość w adresie IP. Jest on również widoczny w organizacjach, które mają negatywny wpływ na to, kiedy pochodzą one od pracownika działu IT lub innych funkcji w przeszłości.
 
 W przypadku pożądanego modelu wydatków operacyjnych Poniższy przykład może być opłacalnym wynikiem działalności:
 

@@ -1,6 +1,6 @@
 ---
-title: Metryki i wskaźniki tolerancji ryzyka dotyczącego spójności zasobów
-description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby określić tolerancję ryzyka biznesowego związanego ze spójnością zasobów.
+title: Metryki i wskaźniki tolerancji ryzyka w dyscyplinie spójności zasobów
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby określić tolerancję ryzyka biznesowego związanego z dyscypliną spójności zasobów.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,22 +8,22 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e7cf8bec88178908caeae27742e5fbc92155003
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ac55b8e0918000955924aa735fb46cd9518b9b57
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997353"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218003"
 ---
 <!-- cSpell:ignore MTBF MTTR -->
 
-# <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metryki spójności zasobów, wskaźniki i tolerancja ryzyka
+# <a name="risk-tolerance-metrics-and-indicators-in-the-resource-consistency-discipline"></a>Metryki i wskaźniki tolerancji ryzyka w dyscyplinie spójności zasobów
 
-Ten artykuł pomoże Ci określić tolerancję ryzyka biznesowego, która odnosi się do spójności zasobów. Zdefiniowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy do składania inwestycji w celu wykupu dyscypliny spójności zasobów.
+Dowiedz się więcej na temat określania wielkości tolerancji ryzyka biznesowego związanego z dyscypliną spójności zasobów. Definiowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy do inwestowania w okres zapadalności tej dyscypliny.
 
 ## <a name="metrics"></a>Metryki
 
-Dyscyplina spójności zasobów koncentruje się na rozwiązywaniu zagrożeń związanych z zarządzaniem operacyjnymi wdrożeń w chmurze. W ramach analizy ryzyka warto zebrać dane związane z operacjami IT, aby określić, jakie ryzyko ma być narażone, oraz jak ważne inwestycje w zarządzanie spójnością zasobów to planowane wdrożenia w chmurze.
+Spójność zasobów koncentruje się na rozwiązywaniu zagrożeń związanych z zarządzaniem operacyjnymi wdrożeń w chmurze. W ramach analizy ryzyka warto zebrać dane związane z operacjami IT, aby określić, jakie ryzyko ma wpływ, oraz jak ważne inwestycje w dyscyplinie spójności zasobów dotyczą planowanych wdrożeń w chmurze.
 
 Każda organizacja ma inne scenariusze operacyjne, ale następujące elementy stanowią przydatne przykłady metryk, które należy zebrać podczas oceny tolerancji ryzyka w dyscyplinie spójności zasobów:
 
@@ -37,7 +37,7 @@ Każda organizacja ma inne scenariusze operacyjne, ale następujące elementy st
 - **Linki sieci w złej kondycji.** Liczba zasobów z problemami z łącznością sieciową.
 - **Punkty końcowe usługi w złej kondycji.** Liczba problemów z punktami końcowymi sieci zewnętrznych.
 - **Zdarzenia dotyczące kondycji usługi dostawcy chmury.** Liczba zakłóceń lub zdarzeń wydajności spowodowanych przez dostawcę chmury.
-- **Umowy dotyczące poziomu usług.** Może to obejmować zobowiązania firmy Microsoft dotyczące czasu przestoju i łączności usług platformy Azure, a także zobowiązania podejmowane przez firmę klientom zewnętrznym i wewnętrznym.
+- **umowy dotyczące poziomu usług;** Może to obejmować zobowiązania firmy Microsoft dotyczące czasu przestoju i łączności usług platformy Azure, a także zobowiązania podejmowane przez firmę klientom zewnętrznym i wewnętrznym.
 - **Dostępność usługi.** Procent rzeczywistych obciążeń hostowanych w chmurze w porównaniu z oczekiwanym przestojem.
 - **Cel czasu odzyskiwania (RTO).** Maksymalny akceptowalny czas, przez jaki aplikacja może być niedostępna po zdarzeniu.
 - **Cel punktu odzyskiwania (RPO).** Maksymalny czas trwania utraty danych, który jest akceptowalny podczas awarii. Jeśli na przykład przechowujesz dane w pojedynczej bazie danych bez replikacji do innych baz danych i co godzinę wykonujesz kopię zapasową, możesz stracić nawet godzinę danych.
@@ -59,7 +59,7 @@ Po utworzeniu planu bazowego należy ustanowić minimalne wzorce reprezentujące
 - **Tagowanie i wyzwalacz nazewnictwa.** Firma z więcej niż _x_ zasobami, które nie wymaga informacji o znakowaniu lub nie przestrzega zgodności ze standardami nazewnictwa, powinna rozważyć inwestowanie w dyscyplinę spójności zasobów, aby ułatwić udoskonalanie tych standardów i zapewnić spójną aplikację dla zasobów wdrożonych w chmurze.
 - **Wyzwalacz zasobów o nadmiernej aprowizacji.** Jeśli firma ma więcej niż _x%_ zasobów regularnie przy użyciu niewielkich ilości dostępnych pamięci, procesora lub sieci, inwestycje w dyscyplinę spójności zasobów są sugerowane w celu zoptymalizowania użycia zasobów dla tych elementów.
 - **Wyzwalacz nadmiernie zainicjowanych zasobów.** Jeśli firma ma więcej niż _x%_ zasobów, regularne wyczerpanie większości dostępnych możliwości pamięci, procesora lub sieci, inwestycje w dyscyplinę spójności zasobów są sugerowane w celu zapewnienia, że zasoby te są niezbędne, aby zapobiec przerwom w świadczeniu usług.
-- **Wyzwalacz wieku zasobu.** Firma z więcej niż _x_ zasobami, które nie zostały zaktualizowane _w ciągu kilku_ miesięcy, może skorzystać z inwestycji w dyscyplinę spójności zasobów, której celem jest zapewnienie, że aktywne zasoby są poprawione i w dobrej kondycji, przy jednoczesnym wycofaniu przestarzałych lub nieużywanych zasobów.
+- **Wyzwalacz wieku zasobu.** Firma z więcej niż _x_ zasobami, które nie zostały zaktualizowane _w ciągu kilku_ miesięcy, może korzystać z inwestycji w dyscyplinie spójności zasobów w celu zapewnienia, że aktywne zasoby są w dobrej kondycji, a jednocześnie wycofane z nieaktualnych lub w inny sposób niewykorzystane zasoby.
 - **Wyzwalacz umowy dotyczącej poziomu usług.** Firma, która nie może spełnić swoich umów dotyczących poziomu usług klientom zewnętrznym ani partnerom wewnętrznym, powinna inwestować w dyscyplinę wdrożenia w celu zmniejszenia przestojów systemu.
 - **Wyzwalacze czasu odzyskiwania.** W przypadku przekroczenia przez firmę wymaganych progów czasu odzyskiwania po awarii systemu należy zainwestować w udoskonalenie projektu dyscypliny i systemów przyspieszenia wdrożenia w celu ograniczenia lub wyeliminowania błędów lub skutku przestoju poszczególnych składników.
 - **Wyzwalacz kondycji maszyny wirtualnej.** Firma, która ma więcej niż _x%_ maszyn wirtualnych, na których występuje krytyczny problem z kondycją, powinna inwestować w dyscyplinę spójności zasobów, aby zidentyfikować problemy i zwiększyć stabilność maszyny wirtualnej.
@@ -71,9 +71,9 @@ Dokładne metryki i wyzwalacze używane do oceny tolerancji ryzyka i poziom inwe
 
 ## <a name="next-steps"></a>Następne kroki
 
-Korzystając z [szablonu zarządzania chmurą](./template.md), metryk dokumentu i wskaźniki tolerancji, które są wyrównane do bieżącego planu wdrożenia chmury.
+Za pomocą [szablonu dyscypliny spójności zasobów](./template.md) można udokumentować metryki i wskaźniki tolerancji, które są wyrównane do bieżącego planu wdrażania chmury.
 
-Zapoznaj się z przykładowymi zasadami spójności zasobów jako punktem początkowym w celu opracowania zasad, które wiążą się z określonymi zagrożeniami biznesowymi, które są dostosowane do planów wdrażania chmury
+Zapoznaj się z przykładowymi zasadami spójności zasobów jako punktem wyjścia do opracowania własnych zasad w celu rozwiązania określonych zagrożeń dla firmy, które są dostosowane do planów wdrażania w chmurze.
 
 > [!div class="nextstepaction"]
 > [Przeglądanie przykładowych zasad](./policy-statements.md)

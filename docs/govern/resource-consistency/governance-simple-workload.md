@@ -1,6 +1,6 @@
 ---
 title: Projekt nadzoru dla jednego obciążenia
-description: Poznaj proces projektowania modelu zarządzania zasobami na platformie Azure w celu obsługi jednego zespołu i prostego obciążenia. 
+description: Poznaj proces projektowania modelu zarządzania zasobami na platformie Azure w celu obsługi jednego zespołu i prostego obciążenia.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f7a9f455c302c6cbdee843f04a8d1b48f56940a1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 75f07c6f3c37d83321fd6758d3d79c7573792ef0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809037"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218224"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Projekt nadzoru dla jednego obciążenia
 
@@ -33,8 +33,8 @@ Przed rozpoczęciem projektowania naszego modelu zarządzania należy zrozumieć
 
 Po dodaniu platformy Azure do Umowa Enterprise organizacji zostanie wyświetlony monit o utworzenie **konta platformy Azure**. Podczas procesu tworzenia konta utworzono **właściciela konta platformy Azure** , a także dzierżawę usługi Azure Active Directory (Azure AD) z kontem **administratora globalnego** . Dzierżawa usługi Azure AD to logiczna konstrukcja, która reprezentuje bezpieczne, dedykowane wystąpienie usługi Azure AD.
 
-![Konto platformy Azure z menedżerem kont platformy Azure i administratorem](../../_images/govern/design/governance-3-0.png)
-globalnym usługi Azure AD*rysunek 1 — konto platformy Azure z menedżerem kont i administratorem globalnym usługi Azure AD.*
+![Konto platformy Azure z właścicielem konta platformy Azure i administratorem globalnym usługi Azure AD ](../../_images/govern/design/governance-3-0.png)
+ _rysunek 1: konto platformy Azure z właścicielem konta platformy Azure i administratorem globalnym usługi Azure AD._
 
 ## <a name="identity-management"></a>Zarządzanie tożsamościami
 
@@ -44,8 +44,8 @@ Naszym wymaganiem jest zarządzanie tożsamościami dla jednego **właściciela 
 
 Nasz Administrator globalny usługi Azure AD utworzy konto **właściciela obciążenia** dla właściciela obciążenia:
 
-![Administrator globalny usługi Azure AD tworzy konto](../../_images/govern/design/governance-1-2.png)
-właściciela obciążenia*rysunek 2. Administrator globalny usługi Azure AD tworzy konto użytkownika właściciela obciążenia.*
+![Administrator globalny usługi Azure AD tworzy konto właściciela obciążenia ](../../_images/govern/design/governance-1-2.png)
+ _rysunek 2: Administrator globalny usługi Azure AD tworzy konto użytkownika właściciela obciążenia._
 
 Nie można przypisać uprawnienia dostępu do zasobów, dopóki ten użytkownik nie zostanie dodany do **subskrypcji**, więc należy to zrobić w następnych dwóch sekcjach.
 
@@ -55,27 +55,27 @@ Wraz ze wzrostem liczby zasobów wdrożonych przez organizację zwiększa się r
 
 Najwyższy poziom zakresu zarządzania zasobami to poziom **subskrypcji** . Subskrypcja jest tworzona przez **właściciela konta**platformy Azure, który ustanawia zobowiązania finansowe i jest odpowiedzialny za zapłacenie za wszystkie zasoby platformy Azure skojarzone z subskrypcją:
 
-![Właściciel konta platformy Azure tworzy](../../_images/govern/design/governance-1-3.png)
-subskrypcję*3 — właściciel konta platformy Azure tworzy subskrypcję.*
+![Właściciel konta Azure tworzy subskrypcję na ](../../_images/govern/design/governance-1-3.png)
+ _rysunku 3: właściciel konta platformy Azure tworzy subskrypcję._
 
 Po utworzeniu subskrypcji **właściciel konta** platformy Azure kojarzy dzierżawę usługi Azure AD z subskrypcją, a ta dzierżawa usługi Azure AD jest używana do uwierzytelniania i autoryzowania użytkowników:
 
-![Właściciel konta platformy Azure kojarzy dzierżawę usługi Azure AD z](../../_images/govern/design/governance-1-4.png)
-subskrypcją nr*4 — właściciel konta platformy Azure kojarzy dzierżawę usługi Azure AD z subskrypcją.*
+![Właściciel konta platformy Azure kojarzy dzierżawę usługi Azure AD z subskrypcją nr ](../../_images/govern/design/governance-1-4.png)
+ _4: właściciel konta platformy Azure kojarzy dzierżawę usługi Azure AD z subskrypcją._
 
 Być może zauważono, że nie istnieje żaden użytkownik skojarzony z subskrypcją, co oznacza, że nikt nie ma uprawnień do zarządzania zasobami. W rzeczywistości **właściciel konta** jest właścicielem subskrypcji i ma uprawnienia do wykonania dowolnej akcji dotyczącej zasobu w subskrypcji. Jednakże w praktyce **właściciel konta** jest bardziej niż prawdopodobnie osobą finansową w organizacji i nie jest odpowiedzialny za tworzenie, odczytywanie, aktualizowanie i usuwanie zasobów — te zadania będą wykonywane przez **właściciela obciążenia**. W związku z tym należy dodać **właściciela obciążenia** do subskrypcji i przypisać uprawnienia.
 
 Ponieważ **właściciel konta** jest obecnie jedynym użytkownikiem z uprawnieniami do dodawania **właściciela obciążenia** do subskrypcji, Dodaj **właściciela obciążenia** do subskrypcji:
 
-![Właściciel konta platformy Azure dodaje (* *) właściciela obciążenia * * do subskrypcji](../../_images/govern/design/governance-1-5.png)
-na*rysunku 5 — właściciel konta platformy Azure dodaje właściciela obciążenia do subskrypcji.*
+![Właściciel konta platformy Azure dodaje do subskrypcji 5 * właściciela obciążenia * * na ](../../_images/govern/design/governance-1-5.png)
+ _rys. właściciel konta platformy Azure dodaje właściciela obciążenia do subskrypcji._
 
 **Właściciel konta** platformy Azure przyznaje uprawnienia **właścicielowi obciążenia** , przypisując rolę [kontroli dostępu opartej na rolach (RBAC)](https://docs.microsoft.com/azure/role-based-access-control) . Rola RBAC określa zestaw uprawnień, które **właściciel obciążenia** ma dla danego typu zasobu lub zestawu typów zasobów.
 
 Zwróć uwagę, że w tym przykładzie **właściciel konta** ma przypisaną [wbudowaną rolę **właściciela** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner):
 
-![Do * * właściciel obciążenia * * przypisano wbudowaną rolę](../../_images/govern/design/governance-1-6.png)
-właściciela*rysunek 6 — właściciel obciążenia ma przypisaną wbudowaną rolę właściciela.*
+![Do * * właściciel obciążenia * * przypisano wbudowaną rolę właściciela ](../../_images/govern/design/governance-1-6.png)
+ _rysunek 6: właściciel obciążenia ma przypisaną wbudowaną rolę właściciela._
 
 Wbudowana rola **właściciela** przyznaje wszystkim uprawnienia **właścicielowi obciążenia** w zakresie subskrypcji.
 
@@ -86,15 +86,15 @@ Następnym poziomem zakresu zarządzania jest poziom **grupy zasobów** . Grupa 
 
 Aby to zilustrować, przyjrzyjmy się tym, co się stanie, gdy **właściciel obciążenia** tworzy grupę zasobów:
 
-![Właściciel obciążenia * * tworzy grupę](../../_images/govern/design/governance-1-7.png)
-zasobów*rysunek 7. właściciel obciążenia tworzy grupę zasobów i dziedziczy rolę właściciela wbudowanego w zakresie grupy zasobów.*
+![Właściciel obciążenia * * tworzy grupę zasobów ](../../_images/govern/design/governance-1-7.png)
+ _rysunek 7: właściciel obciążenia tworzy grupę zasobów i dziedziczy rolę właściciela wbudowanego w zakresie grupy zasobów._
 
 Ponownie wbudowana rola **właściciela** przyznaje wszystkim uprawnienia **właścicielowi obciążenia** w zakresie grupy zasobów. Jak wspomniano wcześniej, ta rola jest dziedziczona z poziomu subskrypcji. Jeśli w tym zakresie jest przypisana inna rola, ma ona zastosowanie tylko do tego zakresu.
 
 Najniższy poziom zakresu zarządzania znajduje się na poziomie **zasobu** . Operacje zastosowane na poziomie zasobu dotyczą tylko samego zasobu. Ponownie uprawnienia na poziomie zasobu są dziedziczone z zakresu grupy zasobów. Na przykład przyjrzyjmy się, co się stanie, jeśli **właściciel obciążenia** wdroży [sieć wirtualną](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) w grupie zasobów:
 
-![Właściciel obciążenia * * tworzy](../../_images/govern/design/governance-1-8.png)
-zasób*rysunek 8 — właściciel obciążenia tworzy zasób i dziedziczy wbudowaną rolę właściciela w zakresie zasobów.*
+![Właściciel obciążenia * * tworzy zasób ](../../_images/govern/design/governance-1-8.png)
+ _rysunek 8: właściciel obciążenia tworzy zasób i dziedziczy wbudowaną rolę właściciela w zakresie zasobów._
 
 **Właściciel obciążenia** dziedziczy rolę właściciela w zakresie zasobów, co oznacza, że właściciel obciążenia ma wszystkie uprawnienia do sieci wirtualnej.
 

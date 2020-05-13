@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dcfa6596d61233efa83bc6a1c6977a2ebe4ad510
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4dda94a3ec0439fd30097fb5f9962d3cdb6eeeec
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433485"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218207"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Udoskonalenie dyscypliny spójności zasobów
 
-Dyscyplina spójności zasobów koncentruje się na sposobach ustanawiania zasad związanych z zarządzaniem środowiskiem, aplikacją lub obciążeniem. W ramach pięciu dyscyplin nadzoru w chmurze spójność zasobów obejmuje monitorowanie wydajności aplikacji, obciążeń i zasobów. Zawiera również zadania wymagane do spełnienia wymagań dotyczących skalowania, skorygowania naruszeń wydajności Umowa dotycząca poziomu usług (SLA) i aktywnego uniknięcia naruszeń umowy SLA poprzez automatyczne korygowanie.
+Dyscyplina spójności zasobów koncentruje się na sposobach ustanawiania zasad związanych z zarządzaniem środowiskiem, aplikacją lub obciążeniem. W ramach pięciu dyscyplin nadzoru chmurowego dyscyplina spójności zasobów obejmuje monitorowanie aplikacji, obciążeń i wydajności zasobów. Zawiera również zadania wymagane do spełnienia wymagań dotyczących skalowania, korygowania naruszeń umów dotyczących poziomu usług (SLA) i aktywnego uniknięcia naruszeń umowy SLA poprzez automatyczne korygowanie.
 
 W tym artykule przedstawiono niektóre potencjalne zadania, w których firma może uczestniczyć w ulepszaniu dyscypliny spójności zasobów. Te zadania mogą być podzielone na planowanie, kompilowanie, przyjmowanie i eksploatację etapów wdrażania rozwiązania w chmurze, które są następnie powtarzane na umożliwieniu rozwoju [przyrostowego podejścia do zarządzania chmurą](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Cztery etapy wdrażania](../../_images/govern/adoption-phases.png)
 
-*Rysunek 1. etapy wdrażania przyrostowego podejścia do ładu w chmurze.*
+_Rysunek 1: etapy wdrażania stopniowego podejścia do ładu w chmurze._
 
-Nie jest możliwe, aby żaden z dokumentów mógł uwzględnić wymagania wszystkich firm. W tym artykule opisano sugerowane minimalne i potencjalne przykładowe działania dla każdej fazy procesu ładu. Początkowym celem tych działań jest ułatwienie tworzenia programu MVP dla [zasad](../guides/index.md#an-incremental-approach-to-cloud-governance) i ustanowienie platformy do ulepszania zasad. Zespół ds. zarządzania chmurą będzie musiał zdecydować, jak dużo inwestować w te działania, aby zwiększyć możliwości zarządzania spójnością zasobów.
+Nie jest możliwe, aby żaden z dokumentów mógł uwzględnić wymagania wszystkich firm. W tym artykule opisano sugerowane minimalne i potencjalne przykładowe działania dla każdej fazy procesu ładu. Początkowym celem tych działań jest ułatwienie tworzenia programu MVP dla [zasad](../guides/index.md#an-incremental-approach-to-cloud-governance) i ustanowienie platformy do ulepszania zasad. Zespół ds. zarządzania chmurą będzie musiał zdecydować, jak dużo inwestować w te działania, aby zwiększyć dyscyplinę spójności zasobów.
 
 > [!CAUTION]
 > Nie są one wyrównane do określonych zasad firmy lub wymagań dotyczących zgodności innych firm. Te wskazówki mają na celu ułatwienie obsługi konwersacji, które będą prowadzić do wyrównania obu wymagań przy użyciu modelu ładu chmurowego.
@@ -39,7 +39,7 @@ W tej fazie działania ładu mostkuje podział między wynikami biznesowymi i st
 - Oceń opcje [łańcucha narzędzi spójności zasobów](./toolchain.md) .
 - Zapoznaj się z wymaganiami dotyczącymi licencjonowania dla strategii chmury.
 - Opracowywanie dokumentów z instrukcjami dotyczącymi architektury i dystrybucji do kluczowych uczestników projektu.
-- Zapoznaj się z usługą Resource Manager, za pomocą której można wdrażać i monitorować wszystkie zasoby rozwiązania oraz zarządzać nimi jako grupą.
+- Zapoznaj się z Menedżer zasobów używany do wdrażania i monitorowania wszystkich zasobów dla rozwiązania oraz zarządzania nimi w ramach grupy.
 - Zaangażuj i powiąż osoby i zespoły, których dotyczy rozwój wytycznych dotyczących architektury.
 - Dodaj priorytetowe zadania wdrażania zasobów do zaległości migracji.
 
@@ -71,9 +71,9 @@ Do pomyślnej migracji środowiska wymagane są pewne wymagania techniczne i nie
 - Ustanów model uprawnień najniższych przywilejów, w którym użytkownicy domyślnie nie mają uprawnień.
 - Określ, kto w organizacji jest właścicielem poszczególnych obciążeń i kont oraz kto musi mieć dostęp do tych zasobów lub ich modyfikować. Zdefiniuj role w chmurze i obowiązki zgodne z tymi potrzebami i Użyj tych ról jako podstawy kontroli dostępu.
 - Zdefiniuj zależności między zasobami.
-- Zaimplementuj automatyczne skalowanie zasobów, aby dopasować wymagania zdefiniowane w etapie planu.
+- Zaimplementuj automatyczne skalowanie zasobów, aby dopasować wymagania zdefiniowane w fazie planu.
 - Przeprowadzenie wydajności dostępu w celu mierzenia jakości odebranych usług.
-- Rozważ wdrożenie [zasad](https://docs.microsoft.com/azure/governance/policy/overview) w celu zarządzania wymuszeniem umowy SLA przy użyciu ustawień konfiguracji i reguł tworzenia zasobów.
+- Rozważ wdrożenie [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) w celu zarządzania wymuszeniem SLA przy użyciu ustawień konfiguracji i reguł tworzenia zasobów.
 
 ## <a name="adopt-and-migrate"></a>Zastosuj i Migruj
 
@@ -108,7 +108,7 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 
 **Minimalna sugerowane działania:**
 
-- Dostosuj [łańcucha narzędzi spójności zasobów](./toolchain.md) na podstawie aktualizacji potrzebnych Cost Management organizacji.
+- Dostosuj [łańcucha narzędzi spójności zasobów](./toolchain.md) w zależności od zmieniających się potrzeb organizacji.
 - Rozważ automatyzację wszelkich powiadomień i raportów, aby odzwierciedlić rzeczywiste użycie zasobów.
 - Udoskonalenie wytycznych dotyczących architektury w celu zaplanowania przyszłych procesów wdrażania.
 - Okresowe informowanie zespołów, których to dotyczy, w celu zapewnienia stałego przestrzegania wytycznych dotyczących architektury.
@@ -120,7 +120,7 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 - Oceń nieużywane zasoby i ustal, czy są one kontynuowane.
 - Wykrywanie nieprawidłowych wyrównań i anomalii między planowanym i rzeczywistym użyciem zasobów.
 - Pomóż zespołom wdrażania chmury i zespołowi strategii chmury w zrozumieniu i rozwiązywaniu tych anomalii.
-- Ustal, czy należy wprowadzić zmiany spójności zasobów dla rozliczeń i umowy SLA.
+- Ustal, czy należy wprowadzić zmiany w dyscyplinie spójności zasobów dotyczące rozliczeń i umowy SLA.
 - Oceń narzędzia do rejestrowania i monitorowania, aby określić, czy rozwiązanie lokalne, bramy w chmurze lub rozwiązania hybrydowe wymagają dostosowania.
 - W przypadku jednostek biznesowych i grup rozproszonych geograficznie należy określić, czy organizacja powinna rozważyć użycie dodatkowych funkcji zarządzania chmurą, takich jak [grupy zarządzania platformy Azure](https://docs.microsoft.com/azure/governance/management-groups) , w celu lepszego zastosowania scentralizowanych zasad i spełnienia wymagań umowy SLA.
 
@@ -129,6 +129,6 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 Teraz, gdy rozumiesz koncepcję zarządzania zasobami w chmurze, przejdź do, aby dowiedzieć się więcej na temat [sposobu zarządzania dostępem do zasobów](./resource-access-management.md) na platformie Azure w celu uczenia się, jak projektować model ładu dla [prostego obciążenia](./governance-simple-workload.md) lub dla [wielu zespołów](./governance-multiple-teams.md).
 
 > [!div class="nextstepaction"]
-> [Informacje na temat zarządzania dostępem do zasobów na platformie Azure](./resource-access-management.md)
-> [— Informacje o umowach dotyczących poziomu usług dla platformy Azure](https://azure.microsoft.com/support/legal/sla)
-> informacje[o rejestrowaniu, raportowaniu i monitorowaniu](../../decision-guides/logging-and-reporting/index.md)
+> [Informacje na temat zarządzania dostępem do zasobów na platformie Azure](./resource-access-management.md) 
+>  [Dowiedz się więcej o umowach dotyczących poziomu usług dla platformy Azure](https://azure.microsoft.com/support/legal/sla) 
+>  [Informacje o rejestrowaniu, raportowaniu i monitorowaniu](../../decision-guides/logging-and-reporting/index.md)

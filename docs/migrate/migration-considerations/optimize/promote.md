@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0ec1144e93c449f15579d5cf0246bb44785faed0
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dc67072e80cc752a1167ad453a56fd96f6890874
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429278"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219244"
 ---
-<!-- cSpell:ignore CISO prepromotion -->
+<!-- cSpell:ignore CISO -->
 
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "80429278"
 
 Promocja do produkcji oznacza zakończenie migracji obciążenia do chmury. Po podwyższeniu poziomu zasobu i wszystkich jego zależności ruch produkcyjny zostanie przekierowany. Przekierowanie ruchu powoduje, że zasoby lokalne stają się niepotrzebne, co umożliwia ich wycofanie.
 
-Proces podwyższania poziomu różni się w zależności od architektury obciążenia. Istnieje jednak kilka spójnych wymagań wstępnych i kilka typowych zadań. W tym artykule opisano każde z nich i służy on jako rodzaj listy kontrolnej przed podwyższeniem poziomu.
+Proces podwyższania poziomu różni się w zależności od architektury obciążenia. Istnieje jednak kilka spójnych wymagań wstępnych i kilka typowych zadań. W tym artykule opisano każdy z nich i służy jako rodzaj listy kontrolnej przed promocją.
 
 ## <a name="prerequisite-processes"></a>Procesy wymagane wstępnie
 

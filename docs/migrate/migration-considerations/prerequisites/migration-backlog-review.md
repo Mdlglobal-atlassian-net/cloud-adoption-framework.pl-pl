@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 229f640fed7024b35f67ea3b39c2e4bb2a24a3c2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b55281d6fc06528c0c9da5c13190ba6b08d83116
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428985"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219210"
 ---
 # <a name="migration-backlog-review"></a>Przegląd listy prac związanych z migracją
 
-Wynikiem etapu planowania umożliwiającym podejmowanie działań jest lista prac związanych z migracją, która ma wpływ na wszystkie wymagania wstępne omówione do tej pory. Opracowanie listy prac migracji jest wymaganiem wstępnym, które należy spełnić w pierwszej kolejności. Ten artykuł służy jako kamień milowy do wykonywania działań związanych z wymaganiami wstępnymi. Zespół strategiczny ds. chmury jest odpowiedzialny za obsługę majątku cyfrowego. Jednak za realizację wynikowej listy prac jest odpowiedzialna każda osoba biorąca udział w procesie migracji. Końcowym warunkiem wstępnym jest przegląd i zrozumienie listy pracy związanych z migracją przez zespół strategiczny ds. chmury. Podczas tego przeglądu członkowie obu zespołów muszą uzyskać wystarczającą wiedzę, aby móc określić następujące kluczowe punkty na liście prac związanych z migracją.
+Wynikowe dane wyjściowe fazy planu to dziennik zaległości migracji, który ma wpływ na wszystkie omówione powyżej wymagania wstępne. Opracowanie listy prac migracji jest wymaganiem wstępnym, które należy spełnić w pierwszej kolejności. Ten artykuł służy jako kamień milowy do wykonywania działań związanych z wymaganiami wstępnymi. Zespół strategiczny ds. chmury jest odpowiedzialny za obsługę majątku cyfrowego. Jednak za realizację wynikowej listy prac jest odpowiedzialna każda osoba biorąca udział w procesie migracji. Końcowym warunkiem wstępnym jest przegląd i zrozumienie listy pracy związanych z migracją przez zespół strategiczny ds. chmury. Podczas tego przeglądu członkowie obu zespołów muszą uzyskać wystarczającą wiedzę, aby móc określić następujące kluczowe punkty na liście prac związanych z migracją.
 
 ## <a name="business-outcomes-and-metrics"></a>Wyniki biznesowe i metryki
 

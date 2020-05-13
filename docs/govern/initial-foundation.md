@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5cd0a9f4a9ec7d32b2aced903f2689884c32e97c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7ce353a03c57e89800d65edc5cdfbdec8c53d092
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80356976"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218496"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Ustanów początkową podstawę ładu w chmurze
 
@@ -24,9 +24,7 @@ Ten artykuł zawiera dwie opcje tworzenia początkowej podstawy dla zarządzania
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>Już korzystasz z platformy wdrażania chmury
 
-Jeśli zostały przeprowadzone następujące czynności w ramach platformy wdrażania w chmurze, można już wdrożyć program ładu MVP. Zarządzanie to podstawowy aspekt dowolnego modelu operacyjnego. Jest ona obecna w każdej metodologii cyklu życia wdrożenia chmury. W związku z tym [Struktura wdrażania w chmurze](../index.md) zawiera wskazówki, które wprowadzają ładu do działań związanych z implementacją [planu wdrożenia chmury](../plan/index.md).
-
-Przykładem integracji z tym nadzorem jest użycie planów do wdrożenia co najmniej jednej strefy wyładunkowej znajdującej się w [gotowych](../ready/index.md) wskazówkach. Innym przykładem są wskazówki dotyczące [organizowania subskrypcji i zarządzania nimi](../ready/azure-best-practices/organize-subscriptions.md). Jeśli wykonano dowolne z tych zaleceń, następujące sekcje MVP są po prostu przeglądem istniejących decyzji dotyczących wdrożenia. Po szybkim przeglądzie przejdź z wyprzedzeniem do [przedwcześnie rozwiązania do zarządzania początkowego i Zastosuj kontrolki najlepszych rozwiązań](./foundation-improvements.md).
+Jeśli zostały przeprowadzone następujące czynności w ramach platformy wdrażania w chmurze, być może już wdrożono program ładu MVP. Zarządzanie to podstawowy aspekt dowolnego modelu operacyjnego. Jest ona obecna w każdej metodologii cyklu życia wdrożenia chmury. W związku z tym [Struktura wdrażania w chmurze](../index.yml) zawiera wskazówki, które wprowadzają ładu do działań związanych z implementacją [planu wdrożenia chmury](../plan/index.md). Przykładem integracji ładu jest użycie planów do wdrożenia co najmniej jednej strefy wyładunkowej, która znajduje się w gotowych wskazówkach dotyczących [metodologii](../ready/index.md) . Innym przykładem jest wskazówki dotyczące [skalowania subskrypcji](../ready/azure-best-practices/scale-subscriptions.md). Jeśli wykonano dowolne z tych zaleceń, następujące sekcje MVP są po prostu przeglądem istniejących decyzji dotyczących wdrożenia. Po szybkim przeglądzie przejdź z wyprzedzeniem do [przedwcześnie rozwiązania do zarządzania początkowego i Zastosuj kontrolki najlepszych rozwiązań](./foundation-improvements.md).
 
 ## <a name="establish-an-initial-governance-foundation"></a>Ustanów początkową podstawę ładu
 

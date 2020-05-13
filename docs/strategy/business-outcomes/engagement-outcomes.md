@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ca91b52aa11427d81e8f9244e1cc74a88972b842
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 309132227df915f6673d1d5509a64f9d796af40c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433774"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218904"
 ---
-<!-- cSpell:ignore Exak -->
+<!-- cSpell:ignore ExakTime -->
 
 # <a name="examples-of-customer-engagement-outcomes"></a>Przykłady wyników zaangażowania klienta
 
@@ -28,17 +28,22 @@ Poniżej przedstawiono przykłady i wyniki związane z zaangażowaniem klientów
 
 ## <a name="cycle-time"></a>Czas cyklu
 
-Podczas transformacji zorientowaniu przez klienta, takich jak nakłady programistyczne aplikacji z obsługą chmury, klienci reagują na bezpośrednią pracę i mogą zobaczyć, że ich potrzeby zostały szybko spełnione przez zespół deweloperów. Czas cyklu to termin zawierający sześć Sigma, który odwołuje się do czasu trwania od początku do końca funkcji. Dla liderów firmy, którzy są zorientowaniu i inwestowają w dużym stopniu w ulepszaniu zaangażowania klientów, czas cyklu może być silnym wynikiem biznesowym.
+Podczas transformacji zorientowaniu przez klienta, takich jak nakłady na aplikacje z obsługą chmury, klienci reagują na bezpośrednią pracę i mogą zobaczyć, że ich potrzeby zostały szybko spełnione przez zespół deweloperów. Czas cyklu to termin zawierający sześć Sigma, który odwołuje się do czasu trwania od początku do końca funkcji. Dla liderów firmy, którzy są zorientowaniu i inwestowają w dużym stopniu w ulepszaniu zaangażowania klientów, czas cyklu może być silnym wynikiem biznesowym.
 
 - **Przykład:** Firma usług, która zapewnia usługi biznesowe (B2B, Business-to-Business), podejmuje próbę zachowania udziału w rynku na konkurencyjnym rynku. Klienci, którzy pozostawiły konkurencyjny dostawca usług, stwierdziły, że ich zbyt złożone rozwiązanie techniczne zakłóca proces biznesowy i stanowi główną przyczynę opuszczenia. W tym przypadku czas cyklu jest konieczny. Dzisiaj trwa 12 miesięcy, aby funkcja mogła postępać od żądania do wydania. Jeśli jest on objęty priorytetem zespołu wykonawczego, ten cykl można skrócić do szóstego miesiąca. Dzięki wykorzystaniu rozwiązań programistycznych opartych na chmurze, modeli aplikacji natywnych w chmurze i integracji z platformą Azure DevOps zespół skraca czas cyklu w dół do jednego miesiąca, dzięki czemu zespoły deweloperów firmy i aplikacji mogą bezpośrednio współdziałać z klientami.
+
+<!--docsTest:ignore "Wayne Wise" "Vice President of Software Development" -->
 
 > **ExakTime**
 >
 > Zarządzanie robocizną — bez ograniczeń lokalnych z technologią chmury. Dzięki Microsoft Azure ExakTime jest ukierunkowana na usprawnione opracowywanie produktów Agile, podczas gdy klienci firmy wykorzystują bardziej niezawodny i łatwiejszy w użyciu produkt, a w pełni nowe funkcje.
 >
-> "Teraz deweloper może wychodzić na swoją maszynę, mieć pomysł, zacząć korzystać z usługi sieci Web lub wystąpienia platformy Azure, testować swoje pomysły, wskazywać na dane testowe i uzyskać koncepcję. W czasie, gdy nastąpi przekazanie tylko rzeczy do przeprowadzenia testu, można rzeczywiście napisać funkcje ".  
-> Wayne  
-> Wiceprezes ds. opracowywania oprogramowania  
+> "Teraz deweloper może wychodzić na swoją maszynę, mieć pomysł, zacząć korzystać z usługi sieci Web lub wystąpienia platformy Azure, testować swoje pomysły, wskazywać na dane testowe i uzyskać koncepcję. W czasie, gdy nastąpi przekazanie tylko rzeczy do przeprowadzenia testu, można rzeczywiście napisać funkcje ".
+>
+> Wayne
+>
+> Wiceprezes ds. opracowywania oprogramowania
+>
 > ExakTime
 
 ## <a name="next-steps"></a>Następne kroki

@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 6f49ee7c8aa63af1d7826a817cc2fae28357caba
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9855b9d56025af86f62dc4e7f055e1584cbbe993
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430744"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218292"
 ---
 # <a name="evaluate-risk-tolerance"></a>Ocena tolerancja ryzyka
 
@@ -29,11 +29,11 @@ Prawdziwe zagrożenia biznesowe opierają się na szczegółach określonych tra
 > [!IMPORTANT]
 > Przed przeczytaniem poniższych informacji należy pamiętać, że każde z tych zagrożeń może być zarządzane. Celem tego artykułu jest informowanie i przygotowanie czytelników do bardziej wydajnej dyskusji w zakresie zarządzania ryzykiem.
 
-- **Naruszenie danych:** Najważniejszym ryzykiem związanym z jakimkolwiek transformację jest naruszenie danych. Przecieki danych mogą spowodować znaczące szkody dla firmy, co prowadzi do utraty klientów, obniżenia biznesowej lub nawet odpowiedzialności prawnej. Wszelkie zmiany sposobu, w jaki dane są przechowywane, przetwarzane lub wykorzystywane, tworzą ryzyko. Przekształcenia w chmurze tworzą wysoki stopień zmian w zakresie zarządzania danymi, więc ryzyko nie powinno być podejmowane w sposób jasny. [Poziom odniesienia zabezpieczeń](../security-baseline/index.md), [Klasyfikacja danych](./data-classification.md)i [racjonalizacja przyrostowa](../../digital-estate/rationalize.md#incremental-rationalization) mogą pomóc w zarządzaniu tym ryzykiem.
+- **Naruszenie danych:** Najważniejszym ryzykiem związanym z jakimkolwiek transformację jest naruszenie danych. Przecieki danych mogą spowodować znaczące szkody dla firmy, co prowadzi do utraty klientów, obniżenia biznesowej lub nawet odpowiedzialności prawnej. Wszelkie zmiany sposobu, w jaki dane są przechowywane, przetwarzane lub wykorzystywane, tworzą ryzyko. Przekształcenia w chmurze tworzą wysoki stopień zmian w zakresie zarządzania danymi, więc ryzyko nie powinno być podejmowane w sposób jasny. [Dyscyplina linii bazowej zabezpieczeń](../security-baseline/index.md), [Klasyfikacja danych](./data-classification.md)i [racjonalizacja przyrostowa](../../digital-estate/rationalize.md#incremental-rationalization) mogą pomóc w zarządzaniu tym ryzykiem.
 
 - **Przerwanie działania usługi:** Działania biznesowe i środowiska klienta często polegają na operacjach technicznych. Przekształcenia w chmurze spowodują zmianę w operacjach IT. W niektórych organizacjach ta zmiana jest mała i łatwa do dostosowania. W innych organizacjach te zmiany mogą wymagać ponownego narzędzia, przeszkolenia lub nowych metod obsługi operacji w chmurze. Im większa zmiana, tym większy potencjalny wpływ na działalność biznesową i obsługę klienta. Zarządzanie tym ryzykiem wymaga zaangażowania firmy w planowanie transformacji. Planowanie wersji i wybór pierwszego obciążenia w artykule z [racjonalizacją przyrostową](../../digital-estate/rationalize.md#incremental-rationalization) omawia sposoby wybierania obciążeń dla projektów transformacji. Rolą biznesową w tym działaniu jest komunikacja polegające na tym, że ryzyko związane z ryzykiem związanym z zmianami obciążeń priorytetyzacji. Pomoc w wyborze obciążeń, które mają niższy wpływ na operacje, obniży ogólny czynnik ryzyka.
 
-- **Kontrola budżetu:** Modele kosztów zmieniają się w chmurze. Ta zmiana może stworzyć ryzyko związane z przekroczeniem kosztów lub zwiększyć koszt sprzedanych towarów (KWS), szczególnie bezpośrednio związane z nimi koszty operacyjne. Gdy firma współpracuje ściśle z działem IT, możliwe jest utworzenie przejrzystości dotyczącej kosztów i usług używanych przez różne jednostki biznesowe, programy lub projekty. [Cost Management](../cost-management/index.md) zawiera przykłady sposobów prowadzenia działalności biznesowej i jej partnerów w tym temacie.
+- **Kontrola budżetu:** Modele kosztów zmieniają się w chmurze. Ta zmiana może stworzyć ryzyko związane z przekroczeniem kosztów lub zwiększyć koszt sprzedanych towarów (KWS), szczególnie bezpośrednio związane z nimi koszty operacyjne. Gdy firma współpracuje ściśle z działem IT, możliwe jest utworzenie przejrzystości dotyczącej kosztów i usług używanych przez różne jednostki biznesowe, programy lub projekty. [Dyscyplina Cost Managementów](../cost-management/index.md) zawiera przykłady sposobów prowadzenia działalności biznesowej i jej partnerów w tym temacie.
 
 Powyżej przedstawiono kilka typowych zagrożeń wymienionych przez klientów. Zespół nadzorujący chmury i zespoły rozwiązań w chmurze mogą rozpocząć tworzenie profilu ryzyka, ponieważ są migrowane i readied w wersji produkcyjnej. Przygotuj się na konwersacje, aby określić, uściślić i zarządzać ryzykiem na podstawie żądanych wyników i nakładów pracy.
 

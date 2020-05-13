@@ -1,5 +1,5 @@
 ---
-title: Metodologia ładu chmury
+title: Metodologia zarządzania dla chmury
 description: Użyj podejścia do ładu przyrostowego opartego na minimalnym żywotnym produkcie (MVP), aby zapewnić obsługę zasad firmowych i szybko przejść do wdrożenia chmury.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 2738d623e863ae78903d3f20d60561349ef0d21e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0e26e7ee1c4bc534ea461de2293fe69b75de1360
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997413"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218394"
 ---
-# <a name="cloud-governance-methodology"></a>Metodologia ładu chmury
+# <a name="govern-methodology-for-the-cloud"></a>Metodologia zarządzania dla chmury
 
 Wdrażanie chmury to podróż, a nie cel. Po drodze istnieją wyraźne kamienie milowe i wymierne korzyści biznesowe. Jednak gdy firma rozpoczyna podróż, ostateczny stan wdrożenia chmury jest nieznany. Zarządzanie w chmurze pozwala utworzyć zabezpieczenia, dzięki którym firma będzie na odpowiedniej ścieżce podczas całej podróży.
 
@@ -37,17 +37,17 @@ Model nadzoru z przewodnika Cloud Adoption Framework identyfikuje obszary o kluc
 
 **Pięć dyscyplin zarządzania chmurą:** Te dyscypliny obsługują zasady firmowe. Każda dyscyplina chroni firmę przed potencjalnymi problemami:
 
-- Cost Management
-- Punkt odniesienia zabezpieczeń
-- Spójność zasobów
-- Punkt odniesienia obsługi tożsamości
-- Przyspieszanie wdrażania
+- Dyscyplina Cost Management
+- Dyscyplina linii bazowej zabezpieczeń
+- Dyscyplina spójności zasobów
+- Dyscyplina linii bazowej tożsamości
+- Dyscyplina wdrożenia
 
 Zasadniczo zasady firmowe działają jako system wczesnego ostrzegania służący do wykrywania potencjalnych problemów. Dyscypliny ułatwiają zarządzanie ryzykiem i tworzeniem zabezpieczeń w firmie.
 
 ## <a name="grow-to-the-end-state"></a>Rozwój do stanu końcowego
 
-Ponieważ wymagania dotyczące nadzoru będą zmieniać się w trakcie podróży po wdrażaniu chmury, wymagane jest inne podejście do nadzoru. Firmy nie mogą już czekać, aż mały zespół utworzy zabezpieczenia i plany na każdej drodze *przed wykonaniem pierwszego kroku*. Oczekuje się, że wyniki biznesowe będą osiągane szybciej i płynniej. Nadzór IT musi odbywać się szybko i nadążać za wymaganiami biznesowymi, aby być w gotowości podczas wdrażania chmury i uniknąć niezatwierdzonych zasobów IT.
+Ponieważ wymagania dotyczące nadzoru będą zmieniać się w trakcie podróży po wdrażaniu chmury, wymagane jest inne podejście do nadzoru. Firmy nie mogą już czekać, aż mały zespół utworzy zabezpieczenia i plany na każdej drodze _przed wykonaniem pierwszego kroku_. Oczekuje się, że wyniki biznesowe będą osiągane szybciej i płynniej. Nadzór IT musi odbywać się szybko i nadążać za wymaganiami biznesowymi, aby być w gotowości podczas wdrażania chmury i uniknąć niezatwierdzonych zasobów IT.
 
 Podejście polegające na **nadzorze przyrostowym** zapewnia takie cechy. Nadzór przyrostowy opiera się na niewielkim zestawie firmowych zasad, procesów i narzędzi służących do ustanowienia podstawy do wdrażania i zarządzania. Ta podstawa nosi nazwę **minimalnej koniecznej funkcjonalności (MVP, Minimum Viable Product)**. Minimalna konieczna funkcjonalność umożliwia zespołowi ds. utrzymania ładu szybkie włączenie nadzoru do implementacji w całym cyklu życia wdrożenia. Minimalna konieczna funkcjonalność może zostać ustanowiona w dowolnym momencie procesu wdrażania chmury. Jest jednak dobrym sposobem na wczesne przyjęcie MVP.
 

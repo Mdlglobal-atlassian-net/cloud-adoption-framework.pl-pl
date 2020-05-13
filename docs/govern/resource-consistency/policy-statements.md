@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e0a64a2f0b2c1c9a948c142a28fca0c9d534804
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d3418eeb2a2d141ac7c3b190b8706a404b1cfbc7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997325"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217986"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Instrukcje dotyczące przykładowych zasad spójności zasobów
 
@@ -54,7 +54,7 @@ Poniższe przykładowe instrukcje dotyczące zasad umożliwiają rozwiązywanie 
 
 **Instrukcja zasad:** Narzędzia ładu muszą wymusić włączenie aktualizacji automatycznych na wszystkich wdrożonych maszynach wirtualnych. Naruszenia muszą zostać sprawdzone za pomocą zespołów zarządzania operacyjnego i korygowane zgodnie z zasadami operacji. Zasoby, które nie są automatycznie aktualizowane, muszą być uwzględnione w procesach należących do operacji IT.
 
-**Potencjalne opcje projektu:** W przypadku hostowanych maszyn wirtualnych platformy Azure Możesz zapewnić spójne zarządzanie aktualizacjami przy użyciu [rozwiązania Update Management w Azure Automation](https://docs.microsoft.com/azure/automation/automation-update-management).
+**Potencjalne opcje projektu:** W przypadku hostowanych maszyn wirtualnych platformy Azure można zapewnić spójne zarządzanie aktualizacjami przy użyciu [rozwiązania Update Management w Azure Automation](https://docs.microsoft.com/azure/automation/automation-update-management).
 
 ## <a name="deployment-compliance"></a>Zgodność wdrożenia
 
@@ -90,7 +90,7 @@ Poniższe przykładowe instrukcje dotyczące zasad umożliwiają rozwiązywanie 
 
 Skorzystaj z przykładów przedstawionych w tym artykule jako punktu wyjścia do opracowania zasad, które wiążą się z konkretnymi zagrożeniami biznesowymi, które są dostosowane do planów wdrażania w chmurze.
 
-Aby rozpocząć tworzenie własnych niestandardowych instrukcji zasad związanych ze spójnością zasobów, Pobierz [szablon spójności zasobów](./template.md).
+Aby rozpocząć tworzenie własnych niestandardowych instrukcji zasad spójności zasobów, Pobierz [szablon dyscypliny spójności zasobów](./template.md).
 
 Aby przyspieszyć wdrażanie tego dyscypliny, wybierz [Przewodnik dotyczący ładu](../guides/index.md) z możliwością działania, który najlepiej odpowiada Twojemu środowisku. Następnie zmodyfikuj projekt, aby uwzględnić określone decyzje dotyczące zasad firmowych.
 

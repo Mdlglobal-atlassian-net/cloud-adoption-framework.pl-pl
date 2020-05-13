@@ -1,6 +1,6 @@
 ---
 title: Procesy zgodności z zasadami spójności zasobów
-description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby poznać podejście do tworzenia procesów, które obsługują dyscyplinę ładu o spójności zasobów.
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby poznać podejście do tworzenia procesów, które obsługują dyscyplinę spójności zasobów.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dd9f23a35e4e97605c23fbc52d32433eab97539b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9d53f9ad9f69e80f4ff65f31f29e00f8e2bb3f90
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433666"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218241"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Procesy zgodności z zasadami spójności zasobów
 
-W tym artykule omówiono podejście do procesu przestrzegania zasad, które regulują [spójność zasobów](./index.md). Efektywne zarządzanie spójnością zasobów w chmurze rozpoczyna się od cyklicznych procesów ręcznych zaprojektowanych w celu zidentyfikowania niewydajnej sprawności działania, usprawnienia zarządzania wdrożonymi zasobami i zapewnienia, że obciążenia o kluczowym znaczeniu mają minimalne zakłócenia. Te procesy ręczne są uzupełniane przy użyciu monitorowania, automatyzacji i narzędzi, aby zmniejszyć koszty zarządzania i zapewnić szybszą odpowiedź na odchylenia zasad.
+W tym artykule omówiono podejście do procesu przestrzegania zasad, które regulują [spójność zasobów](./index.md). Efektywne zarządzanie spójnością zasobów w chmurze rozpoczyna się od cyklicznych procesów ręcznych zaprojektowanych w celu zidentyfikowania niewydajnej wydajności, usprawnienia zarządzania wdrożonymi zasobami i zapewnienia, że obciążenia o kluczowym znaczeniu mają minimalne zakłócenia. Te procesy ręczne są uzupełniane przy użyciu monitorowania, automatyzacji i narzędzi, aby zmniejszyć koszty zarządzania i zapewnić szybszą odpowiedź na odchylenia zasad.
 
 ## <a name="planning-review-and-reporting-processes"></a>Planowanie, przeglądanie i raportowanie procesów
 
@@ -35,15 +35,15 @@ Poniżej znajduje się zestaw przykładowych procesów często powiązanych z dy
 
 **Kwartalne przeglądy i planowanie:** Co kwartał dokonuje przeglądu danych operacyjnych i raportów zdarzeń, aby zidentyfikować zmiany wymagane w zasadach spójności zasobów. W ramach tego procesu zapoznaj się z tematem zmiany użycia zasobów i wydajności w celu zidentyfikowania zasobów, które wymagają zwiększenia lub zmniejszenia alokacji zasobów i zidentyfikowania wszelkich obciążeń lub zasobów, które są kandydatami do wycofania.
 
-Ten proces planowania jest również dobrym terminem do oszacowania bieżącego członkostwa w zespole nadzoru w chmurze na potrzeby luk w wiedzy dotyczącej nowych lub zmienionych zasad i zagrożeń związanych ze spójnością zasobów jako dyscypliny. Zaproś odpowiednich pracowników działu IT o uczestnictwo w recenzjach i planowaniu jako tymczasowych doradców technicznych lub stałych członków zespołu.
+Ten proces planowania jest również dobrym terminem do oszacowania bieżącego członkostwa zespołu nadzoru w chmurze w celu uzyskania luk w wiedzy dotyczącej nowych lub zmienionych zasad i zagrożeń związanych z dyscypliną spójności zasobów. Zaproś odpowiednich pracowników działu IT o uczestnictwo w recenzjach i planowaniu jako tymczasowych doradców technicznych lub stałych członków zespołu.
 
 **Edukacja i szkolenia:** Co miesiąc, oferuj sesje szkoleniowe, aby upewnić się, że personel IT i deweloperzy są aktualne zgodnie z najnowszymi wymaganiami dotyczącymi zasad spójności zasobów. W ramach tego procesu zapoznaj się z dokumentacją lub innymi aktywami szkoleniowymi, aby upewnić się, że są one zsynchronizowane z najnowszymi instrukcjami zasad obowiązującymi w firmie.
 
 **Comiesięczne przeglądy audytu i raportowania:** Co miesiąc należy przeprowadzić inspekcję we wszystkich wdrożeniach w chmurze w celu zapewnienia ciągłego wyrównania przy użyciu zasad spójności zasobów. Przejrzyj powiązane działania z personelem działu IT i zidentyfikuj wszelkie problemy ze zgodnością, które nie zostały jeszcze obsłużone w ramach trwającego procesu monitorowania i wymuszania. Wynikiem tego przeglądu jest raport dotyczący zespołu strategii chmury i każdego zespołu wdrażania w chmurze w celu przekazywania ogólnej wydajności i przestrzegania zasad. Raport jest również przechowywany na potrzeby inspekcji i przepisów prawnych.
 
-## <a name="ongoing-monitoring-processes"></a>Procesy trwającego monitorowania
+## <a name="processes-for-ongoing-monitoring"></a>Procesy do ciągłego monitorowania
 
-Ustalanie, czy strategia ładu dotycząca spójności zasobów zakończyła się pomyślnie, zależy od widoczności bieżącego i wcześniejszego stanu infrastruktury chmurowej. Bez możliwości analizowania odpowiednich metryk i danych dotyczących kondycji i aktywności środowiska chmury nie można identyfikować zmian zagrożeń ani wykrywać naruszeń tolerancji ryzyka. Bieżące procesy ładu omówione powyżej wymagają danych dotyczących jakości, aby zapewnić możliwość modyfikacji zasad w celu zoptymalizowania użycia zasobów w chmurze i zwiększenia ogólnej wydajności obciążeń hostowanych w chmurze.
+Pomyślna strategia spójności zasobów zależy od widoczności bieżącego i wcześniejszego stanu infrastruktury chmurowej. Bez możliwości analizowania odpowiednich metryk i danych dotyczących kondycji i aktywności środowiska chmury nie można identyfikować zmian zagrożeń ani wykrywać naruszeń tolerancji ryzyka. Bieżące procesy ładu omówione powyżej wymagają danych dotyczących jakości, aby zapewnić możliwość modyfikacji zasad w celu zoptymalizowania użycia zasobów w chmurze i zwiększenia ogólnej wydajności obciążeń hostowanych w chmurze.
 
 Upewnij się, że zespoły IT zaimplementowali zautomatyzowane systemy monitorowania dla infrastruktury chmurowej, które przechwytują odpowiednie dane dzienników potrzebne do oszacowania zagrożeń. Można aktywnie monitorować te systemy w celu zapewnienia wykrywania monitów i łagodzenia potencjalnych naruszeń zasad oraz upewnić się, że strategia monitorowania jest zgodne z potrzebami operacyjnymi.
 
@@ -63,7 +63,7 @@ Następujące wyzwalacze i akcje wymuszania zawierają przykłady, które można
 
 ## <a name="next-steps"></a>Następne kroki
 
-Za pomocą [szablonu zarządzania chmurą](./template.md)można udokumentować procesy i wyzwalacze, które są wyrównane do bieżącego planu wdrożenia chmury.
+Za pomocą [szablonu dyscypliny spójności zasobów](./template.md) można udokumentować procesy i wyzwalacze, które są wyrównane do bieżącego planu wdrożenia chmury.
 
 Aby uzyskać wskazówki dotyczące wykonywania zasad zarządzania chmurą w wyrównaniu z planami wdrażania, zapoznaj się z artykułem dotyczącym ulepszania dyscypliny.
 

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 55dd535e42f6cbd74c8b7071d13a9c94a5228b0c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cc7558e9adf16d962e086307e213af990ff60e92
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433816"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219006"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Jak używać szablonu wyniku biznesowego
 
@@ -26,13 +26,13 @@ Pobierz [Arkusz kalkulacyjny szablonu wyniku biznesowego](https://archcenter.blo
 
 W tym szablonie wyniki biznesowe koncentrują się na trzech tematach:
 
-- Wyrównywanie do udziałowców lub osób podejmujących decyzje biznesowe
-- Informacje o sterownikach i celach firmy
-- Mapowanie wyników do określonych rozwiązań i możliwości technicznych
+- Dostosowanie do udziałowców lub osób podejmujących decyzje biznesowe.
+- Informacje o sterownikach i celach firmy.
+- Mapowanie wyników do określonych rozwiązań i możliwości technicznych.
 
 ![Wyniki biznesowe są wizualizowane jako dom z osobami biorącymi udział w pracy, za pośrednictwem możliwości technicznych](../../_images/strategy/business-outcome-house.png)
 
-*Rysunek 1. wyniki biznesowe są wizualizowane jako dom z osobami biorącymi udział w pracy, za pośrednictwem możliwości technicznych.*
+_Rysunek 1. wyniki biznesowe są wizualizowane jako dom z uczestnikami projektu, w porównaniu z możliwościami technicznymi._
 
 Szablon wyniku biznesowego koncentruje się na uproszczonych konwersacjach, które mogą szybko angażować zainteresowane osoby biorące udział w rozwiązaniu technicznym. Dzięki szybkiemu zrozumieniu i dostosowywaniu kluczowych wskaźników wydajności (KPI) i sterowników firmy, które są ważne dla zainteresowanych stron, zespół może myśleć o ogólnych podejściach i transformacjach przed wprowadzeniem do szczegółów implementacji.
 
@@ -40,7 +40,7 @@ Przykład można znaleźć na karcie "przykładowy wynik" arkusza kalkulacyjnego
 
 ![Przykład szablonu wyniku biznesowego](../../_images/strategy/business-outcome-template.png)
 
-*Rysunek 2 — przykład szablonu wyniku biznesowego.*
+_Rysunek 2: przykładowy szablon wyniku biznesowego._
 
 ## <a name="why-is-this-template-relevant"></a>Dlaczego ten szablon jest istotny?
 
@@ -48,7 +48,7 @@ Odnajdywanie to podstawowe cechą architektury przedsiębiorstwa. Jeśli odnajdo
 
 ![Pięć obszarów fokusu odnajdywania: uczestnicy projektu, wyniki, Sterowniki, wskaźniki KPI i możliwości](../../_images/strategy/business-outcome-focus-areas.png)
 
-*Rysunek 3 — pięć obszarów fokusu odnajdywania: uczestnicy projektu, wyniki, Sterowniki, wskaźniki KPI i możliwości.*
+_Rysunek 3: pięć obszarów fokusu odnajdywania: uczestnicy projektu, wyniki, Sterowniki, wskaźniki KPI i możliwości._
 
 **Uczestnicy projektu:** Kto w organizacji prawdopodobnie zobaczy największą wartość w określonym wyniku firmy? Kto najprawdopodobniej obsługuje tę transformację, szczególnie w przypadku, gdy będą one wytrzymałe lub czasochłonne? Kto ma największy udział w pomyślnym przekształceniu? Ta osoba jest potencjalnym udziałowcem.
 
