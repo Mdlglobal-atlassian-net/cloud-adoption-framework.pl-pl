@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 2751965389406262a5d72c9ea9d1a506218826bb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: be509cff8eb1b7a342310975afe50ef1f66e88bd
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997868"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223732"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -70,11 +70,11 @@ Oto elementy, których firma Contoso potrzebuje do realizacji tego scenariusza.
 
 <!-- markdownlint-disable MD033 -->
 
-**Wymagania** | **Uzyskać**
---- | ---
-**Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje we wcześniejszym artykule z tej serii. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.<br/><br/> Jeśli potrzebujesz bardziej szczegółowych uprawnień, zapoznaj się z [tym artykułem](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Azure infrastructure for Migration (Infrastruktura platformy Azure wymagana do migracji)](./contoso-migration-infrastructure.md).
-**Lokalny serwer TFS** | W środowisku lokalnym musi działać wersja serwera TFS 2018 Update 2 lub musi zostać przeprowadzone uaktualnienie do tej wersji w ramach procesu migracji.
+| **Wymagania** | **Szczegóły** |
+| --- | --- |
+| **Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje we wcześniejszym artykule z tej serii. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial). <br><br> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje. <br><br> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora. <br><br> Jeśli potrzebujesz bardziej szczegółowych uprawnień, zapoznaj się z [tym artykułem](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control). |
+| **Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Azure infrastructure for Migration (Infrastruktura platformy Azure wymagana do migracji)](./contoso-migration-infrastructure.md). |
+| **Lokalny serwer TFS** | W środowisku lokalnym musi działać wersja serwera TFS 2018 Update 2 lub musi zostać przeprowadzone uaktualnienie do tej wersji w ramach procesu migracji. |
 
 ## <a name="scenario-steps"></a>Etapy scenariusza
 
@@ -94,7 +94,7 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 
     ![Konto magazynu](./media/contoso-migration-tfs-vsts/storage1.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - [Wprowadzenie do usługi Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 - [Utwórz konto magazynu](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account).
@@ -131,7 +131,7 @@ Administratorzy przeprowadzają uaktualnienie w następujący sposób:
 > [!NOTE]
 > Niektóre uaktualnienia serwera TFS wymagają uruchomienia Kreatora konfigurowania funkcji po zakończeniu uaktualniania. [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts).
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 Dowiedz się więcej na temat [uaktualniania serwera TFS](https://docs.microsoft.com/azure/devops/server/upgrade/get-started).
 
@@ -282,7 +282,7 @@ Administratorzy firmy Contoso generują pakiet DACPAC w następujący sposób:
 
     ![Backup](./media/contoso-migration-tfs-vsts/backup2.png)
 
-3. Administratorzy weryfikują właściwości pliku DACPAC.
+3. Weryfikują właściwości pliku DACPAC.
 
     ![Backup](./media/contoso-migration-tfs-vsts/backup3.png)
 
@@ -381,7 +381,7 @@ Administratorzy firmy Contoso zaczynają przeprowadzić migrację do poziomu suc
 
     ![Przebieg próbny](./media/contoso-migration-tfs-vsts/test9.png)
 
-13. Lider deweloperów otwiera jeden z projektów i otwiera **elementy** > robocze**przypisane do mnie**. W ten sposób można zobaczyć, że dane elementu roboczego zostały przeniesione wraz z danymi tożsamości.
+13. Lider deweloperów otwiera jeden z projektów i otwiera **elementy robocze**  >  **przypisane do mnie**. W ten sposób można zobaczyć, że dane elementu roboczego zostały przeniesione wraz z danymi tożsamości.
 
     ![Przebieg próbny](./media/contoso-migration-tfs-vsts/test10.png)
 
@@ -419,7 +419,7 @@ Po zakończeniu przebiegu próbnego administratorzy firmy Contoso mogą przystą
 
     ![Produkcja](./media/contoso-migration-tfs-vsts/full6.png)
 
-9. Lider deweloperów otwiera jeden z projektów i otwiera **elementy** > robocze**przypisane do mnie**. W ten sposób można zobaczyć, że dane elementu roboczego zostały przeniesione wraz z danymi tożsamości.
+9. Lider deweloperów otwiera jeden z projektów i otwiera **elementy robocze**  >  **przypisane do mnie**. W ten sposób można zobaczyć, że dane elementu roboczego zostały przeniesione wraz z danymi tożsamości.
 
     ![Produkcja](./media/contoso-migration-tfs-vsts/full7.png)
 
@@ -462,7 +462,7 @@ Po zakończeniu migracji firma Contoso chce zmienić sposób zarządzania kodem 
 
     ![Git](./media/contoso-migration-tfs-vsts/git6.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 [Dowiedz się więcej](https://docs.microsoft.com/azure/devops/repos/git/import-from-TFVC?view=vsts) o importowaniu z kontroli wersji serwera Team Foundation.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2241e1f4e6f738ce435e6cbedfe686a4ed85e1de
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 66419aa1ec4ebf7a1513ae064edd3b24e98758b9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996221"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224293"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Sieć zdefiniowana przez oprogramowanie: Strefa DMZ w chmurze
 
@@ -36,7 +36,7 @@ Wdrażanie strefy DMZ w chmurze obejmuje następujące założenia:
 
 Przed zaimplementowaniem architektury sieci wirtualnych w chmurze DMZ należy wziąć pod uwagę następujące zagadnienia:
 
-- Łączenie sieci lokalnych z sieciami w chmurze zwiększa złożoność wymagań w zakresie zabezpieczeń. Mimo że połączenia między sieciami w chmurze i środowiskiem lokalnym są zabezpieczone, nadal trzeba zapewnić zabezpieczenie zasobów w chmurze. Wszystkie publiczne adresy IP utworzone w celu uzyskania dostępu do obciążeń opartych na chmurze muszą być prawidłowo zabezpieczone przy użyciu publicznej, stałej [strefy DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) lub [zapory platformy Azure](https://docs.microsoft.com/azure/firewall).
+- Łączenie sieci lokalnych z sieciami w chmurze zwiększa złożoność wymagań w zakresie zabezpieczeń. Mimo że połączenia między sieciami w chmurze i środowiskiem lokalnym są zabezpieczone, nadal trzeba zapewnić zabezpieczenie zasobów w chmurze. Wszystkie publiczne adresy IP utworzone w celu uzyskania dostępu do obciążeń opartych na chmurze muszą być prawidłowo zabezpieczone przy użyciu [publicznej strefy DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) lub [zapory platformy Azure](https://docs.microsoft.com/azure/firewall/overview).
 - Architektura strefy DMZ w chmurze jest często używana jako trójwymiarowy, podczas gdy łączność jest dodatkowo zabezpieczona i zasady zabezpieczeń są wyrównane między sieciami lokalnymi i w chmurze, co umożliwia szersze wdrażanie architektury sieci hybrydowej w całej skali. Jednak może to dotyczyć również izolowanych wdrożeń z określonymi zabezpieczeniami, tożsamościami i łącznością, które spełniają podejście do obwodu w chmurze.
 
 ## <a name="learn-more"></a>Dowiedz się więcej

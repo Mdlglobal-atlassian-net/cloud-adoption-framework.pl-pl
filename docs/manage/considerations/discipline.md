@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6033f12b1604818fef4c70f1863b7a99fb4c51e6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9571de511bbe037a35703f4ee64ef00edbe1745f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809066"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224004"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Bilansowanie zarządzania w różnych dziedzinach zarządzania chmurą
 
@@ -32,7 +32,7 @@ Jako punkt początkowy należy rozważyć ustanowienie poziomów zarządzania, k
 - **Specjalizacja obciążenia:** W przypadku obciążeń, które mają prawdziwie krytyczne znaczenie, może być uzasadnione obniżenie kosztów w zakresie zarządzania obciążeniem. Specjalizacja obciążeń stosuje dane telemetryczne obciążenia, aby określić bardziej zaawansowane podejścia do codziennego zarządzania. Te same dane często identyfikują ulepszenia automatyzacji, wdrażania i projektowania, które mogłyby prowadzić do zwiększenia stabilności, niezawodności i odporności poza możliwościami w zakresie zarządzania operacyjnego.
 - **Nieobsługiwane:** Równie ważne jest, aby komunikować się z typowymi procesami zarządzania, które nie są dostarczane przez dyscypliny zarządzania chmurą dla obciążeń, które są klasyfikowane jako nieobsługiwane lub niekrytyczne.
 
-Organizacje mogą również zdecydować się na [obsługę funkcji związanych z co najmniej jednym z tych poziomów zarządzania dla usługodawcy](https://aka.ms/adopt/partneroffers). Dostawcy usług mogą korzystać z [usługi Azure Lighthouse](https://azure.com/lighthouse) w celu zapewnienia większej dokładności i przejrzystości.
+Organizacje mogą również zdecydować się na [obsługę funkcji związanych z co najmniej jednym z tych poziomów zarządzania dla usługodawcy](https://aka.ms/adopt/partneroffers). Dostawcy usług mogą korzystać z [usługi Azure Lighthouse](https://docs.microsoft.com/azure/lighthouse/overview) w celu zapewnienia większej dokładności i przejrzystości.
 
 Pozostałe artykuły w tej serii dotyczą procesów, które są często dostępne w ramach każdej z tych dyscyplin.
 Równolegle w [przewodniku zarządzania systemu Azure](../azure-management-guide/index.md) zademonstrowano narzędzia, które mogą obsługiwać poszczególne procesy. Aby uzyskać pomoc dotyczącą tworzenia linii bazowej zarządzania, Zacznij od przewodnika zarządzania platformy Azure. Po ustaleniu linii bazowej ta seria artykułu i towarzyszące najlepsze rozwiązania mogą pomóc rozszerzyć tę linię bazową w celu zdefiniowania innych poziomów obsługi zarządzania.
@@ -41,7 +41,7 @@ Równolegle w [przewodniku zarządzania systemu Azure](../azure-management-guide
 
 Każdy sugerowany poziom zarządzania może wywoływać różne dyscypliny zarządzania chmurą. Mapowanie zostało jednak zaprojektowane, aby ułatwić znalezienie sugerowanych procesów i narzędzi do dostarczenia na odpowiednim poziomie zarządzania chmurą.
 
-W większości przypadków opisany wcześniej *poziom odniesienia zarządzania* składa się z procesów i narzędzi z następujących dyscyplin. W każdym przypadku kilka procesów i narzędzi są wyróżnione w celu pokazania *rozszerzonych funkcji linii bazowej*.
+W większości przypadków opisany wcześniej _poziom odniesienia zarządzania_ składa się z procesów i narzędzi z następujących dyscyplin. W każdym przypadku kilka procesów i narzędzi są wyróżnione w celu pokazania _rozszerzonych funkcji linii bazowej_.
 
 - **Spis i widoczność:** Podstawowa linia bazowa zarządzania powinna zawierać środki tworzenia spisu zasobów i umożliwia wgląd w stan uruchomienia każdego elementu zawartości.
 - **Zgodność operacyjna:** Regularne zarządzanie konfiguracją, ustalaniem rozmiarów, kosztami i wydajnością zasobów jest kluczem do obsługi oczekiwań wydajności i linii bazowej zarządzania.

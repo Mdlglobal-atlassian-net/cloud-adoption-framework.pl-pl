@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d1251bba8da5ec17270de38ee94ed87483c4ac6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2f09b7894782a038c7e39e85f0a93c2a49b20b07
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429337"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223545"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -20,15 +20,15 @@ ms.locfileid: "80429337"
 
 Lokalne centra danych są wypełnione zasobami fizycznymi, takimi jak serwery, urządzenia i urządzenia sieciowe. Jednak każdy serwer jest tylko powłoką fizyczną. Rzeczywista wartość pochodzi z kodu binarnego działającego na serwerze. Centra danych mają za zadanie obsługiwać aplikacje i dane. Stanowią one podstawowy kod binarny do zmigrowania. Istnieją również inne zasoby cyfrowe oraz źródła binarne służące do obsługi tych aplikacji i magazynów danych, takie jak systemy operacyjne, trasy sieciowe, pliki i protokoły zabezpieczeń.
 
-Replikacja jest głównym mechanizmem migracji. Jest to proces kopiowania wersji z określonego momentu różnych plików binarnych. Migawki binarne są następnie kopiowane na nową platformę i wdrażane na nowym sprzęcie w ramach procesu nazywanego *rozmieszczaniem*. Po poprawnym wykonaniu replikacji rozmieszczona kopia pliku binarnego powinna zachowywać się identycznie jak oryginalny plik binarny na starym sprzęcie. Jednak taka migawka pliku binarnego staje się od razu nieaktualna i niezgodna z oryginalnym źródłem. Aby zachować zgodność między nowym i starym plikiem binarnym, proces *synchronizacji* stale aktualizuje kopię przechowywaną na nowej platformie. Synchronizacja jest wykonywana do momentu, gdy poziom zasobu zostanie podwyższony w celu wyrównania go z wybranym modelem promocji. W tym momencie synchronizacja jest przerywana.
+Replikacja jest głównym mechanizmem migracji. Jest to proces kopiowania wersji z określonego momentu różnych plików binarnych. Migawki binarne są następnie kopiowane na nową platformę i wdrażane na nowym sprzęcie w ramach procesu nazywanego _rozmieszczaniem_. Po poprawnym wykonaniu replikacji rozmieszczona kopia pliku binarnego powinna zachowywać się identycznie jak oryginalny plik binarny na starym sprzęcie. Jednak taka migawka pliku binarnego staje się od razu nieaktualna i niezgodna z oryginalnym źródłem. Aby zachować zgodność między nowym i starym plikiem binarnym, proces _synchronizacji_ stale aktualizuje kopię przechowywaną na nowej platformie. Synchronizacja jest wykonywana do momentu, gdy poziom zasobu zostanie podwyższony w celu wyrównania go z wybranym modelem promocji. W tym momencie synchronizacja jest przerywana.
 
 ## <a name="required-prerequisites-to-replication"></a>Wymagania wstępne dotyczące replikacji
 
-Przed replikacją należy przygotować *nową platformę* i sprzęt do odbierania kopii binarnych. W artykule dotyczącym [wymagań wstępnych](../prerequisites/index.md) przedstawiono minimalne wymagania dotyczące środowiska, które ułatwiają tworzenie bezpiecznej, niezawodnej i wysoce wydajnej platformy do odbierania replik binarnych.
+Przed replikacją należy przygotować _nową platformę_ i sprzęt do odbierania kopii binarnych. W artykule dotyczącym [wymagań wstępnych](../prerequisites/index.md) przedstawiono minimalne wymagania dotyczące środowiska, które ułatwiają tworzenie bezpiecznej, niezawodnej i wysoce wydajnej platformy do odbierania replik binarnych.
 
-*Źródłowe pliki binarne* muszą być również przygotowane do replikacji i synchronizacji. W artykułach dotyczących oceny, architektury i korygowania opisano działania niezbędne do zapewnienia gotowości źródłowych danych binarnych do replikacji i synchronizacji.
+_Źródłowe pliki binarne_ muszą być również przygotowane do replikacji i synchronizacji. W artykułach dotyczących oceny, architektury i korygowania opisano działania niezbędne do zapewnienia gotowości źródłowych danych binarnych do replikacji i synchronizacji.
 
-Aby móc wykonywać procesy replikacji i synchronizacji oraz zarządzać nimi, konieczne jest zaimplementowanie *łańcucha narzędzi* do zapewnienia zgodności z nową platformą i źródłowymi plikami binarnymi. W artykule dotyczącym [opcji replikacji](./replicate-options.md) opisano różne narzędzia, które mogą pomóc podczas migracji na platformę Azure.
+Aby móc wykonywać procesy replikacji i synchronizacji oraz zarządzać nimi, konieczne jest zaimplementowanie _łańcucha narzędzi_ do zapewnienia zgodności z nową platformą i źródłowymi plikami binarnymi. W artykule dotyczącym [opcji replikacji](./replicate-options.md) opisano różne narzędzia, które mogą pomóc podczas migracji na platformę Azure.
 
 ## <a name="replication-risks---physics-of-replication"></a>Zagrożenia replikacji — fizyka replikacji
 
@@ -42,8 +42,8 @@ Podczas planowania i wykonywania replikacji dowolnego źródła danych binarnych
 
 Wszystkie te prawa fizyki wprowadzają następujące zagrożenia, które zwykle mają wpływ na plany migracji:
 
-- **Czas replikacji.** Zaawansowane narzędzia do replikacji nie mogą przezwyciężyć podstawowych praw fizyki &mdash; replikacja wymaga czasu i przepustowości. Plany powinny uwzględniać realistyczne osie czasu odzwierciedlające ilość czasu potrzebną do replikowania plików binarnych. *Całkowita dostępna przepustowość migracji* to wielkość przepustowości z ograniczeniami, mierzona w megabitach na sekundę (Mb/s) lub gigabitach na sekundę (Gb/s), która nie jest używana na inne potrzeby biznesowe o wyższym priorytecie. *Łączny magazyn migracji* to całkowite miejsce na dysku (w gigabajtach lub terabajtach) wymagane do przechowywania migawki wszystkich zasobów do zmigrowania. Początkowy szacunek czasu można obliczyć, dzieląc *łączny magazyn migracji* przez *całkowitą dostępną przepustowość migracji*. Zwróć uwagę na konwersję jednostek z bitów na bajty. W sekcji „Skumulowany efekt dryfowania dysku” opisano dokładniejszą metodę obliczania czasu.
-- **Skumulowany efekt dryfowania dysku.** Źródłowe i docelowe pliki binarne muszą pozostawać zsynchronizowane od momentu replikacji do czasu podwyższenia poziomu zasobu do środowiska produkcyjnego. *Dryf* plików binarnych zużywa dodatkową przepustowość, ponieważ wszystkie zmiany w danych binarnych muszą być cyklicznie replikowane. Podczas synchronizacji cały dryf danych binarnych musi zostać uwzględniony w obliczeniach łącznego magazynu migracji. Wydłużanie czasu podwyższania poziomu zasobu do środowiska produkcyjnego powoduje wystąpienia bardziej skumulowanego efektu dryfu. Zwiększanie liczby synchronizowanych zasobów powoduje zwiększenie zapotrzebowania na przepustowość. Każdy zasób przechowywany w stanie synchronizacji powoduje utratę części całkowitej dostępnej przepustowości migracji.
+- **Czas replikacji.** Zaawansowane narzędzia do replikacji nie mogą przezwyciężyć podstawowych praw fizyki &mdash; replikacja wymaga czasu i przepustowości. Plany powinny uwzględniać realistyczne osie czasu odzwierciedlające ilość czasu potrzebną do replikowania plików binarnych. _Całkowita dostępna przepustowość migracji_ to wielkość przepustowości z ograniczeniami, mierzona w megabitach na sekundę (Mb/s) lub gigabitach na sekundę (Gb/s), która nie jest używana na inne potrzeby biznesowe o wyższym priorytecie. _Łączny magazyn migracji_ to całkowite miejsce na dysku (w gigabajtach lub terabajtach) wymagane do przechowywania migawki wszystkich zasobów do zmigrowania. Początkowy szacunek czasu można obliczyć, dzieląc _łączny magazyn migracji_ przez _całkowitą dostępną przepustowość migracji_. Zwróć uwagę na konwersję jednostek z bitów na bajty. W sekcji „Skumulowany efekt dryfowania dysku” opisano dokładniejszą metodę obliczania czasu.
+- **Skumulowany efekt dryfowania dysku.** Źródłowe i docelowe pliki binarne muszą pozostawać zsynchronizowane od momentu replikacji do czasu podwyższenia poziomu zasobu do środowiska produkcyjnego. _Dryf_ plików binarnych zużywa dodatkową przepustowość, ponieważ wszystkie zmiany w danych binarnych muszą być cyklicznie replikowane. Podczas synchronizacji cały dryf danych binarnych musi zostać uwzględniony w obliczeniach łącznego magazynu migracji. Wydłużanie czasu podwyższania poziomu zasobu do środowiska produkcyjnego powoduje wystąpienia bardziej skumulowanego efektu dryfu. Zwiększanie liczby synchronizowanych zasobów powoduje zwiększenie zapotrzebowania na przepustowość. Każdy zasób przechowywany w stanie synchronizacji powoduje utratę części całkowitej dostępnej przepustowości migracji.
 - **Czas na zmianę biznesową.** Jak wspomniano w poprzedniej sekcji „Skumulowany efekt dryfowania dysku”, czas synchronizacji ma skumulowany negatywny wpływ na szybkość migracji. Ustawienie priorytetów na liście prac migracji i zaawansowane przygotowania do [planu zmian w firmie](../optimize/business-change-plan.md) mają kluczowe znaczenie dla szybkości migracji. Najważniejszym testem zgodności działań biznesowych i technicznych podczas migracji jest tempo podwyższania poziomu. Szybsze podwyższenie poziomu zasobu do środowiska produkcyjnego zmniejszy wpływ dryfowania dysku na przepustowość, a tym samym większy przepustowość, którą będzie można przydzielić do replikacji kolejnego obciążenia.
 
 ## <a name="next-steps"></a>Następne kroki

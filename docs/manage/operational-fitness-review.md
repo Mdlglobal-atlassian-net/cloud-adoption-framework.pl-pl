@@ -7,22 +7,22 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f1eeae9e59da365b066ba78a8eb024448bf9815b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2ee786e1a9c7f6b4cb4699aec01d647cabc37827
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120113"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223664"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Ustanowienie przeglądu sprawności operacyjnej
 
-Gdy przedsiębiorstwo zaczyna obsługiwać obciążenia na platformie Azure, następnym krokiem jest ustanowienie procesu *przeglądu sprawności operacyjnej*. Ten proces wylicza, implementuje i iteracyjnie przegląda *niefunkcjonalne wymagania* dotyczące tych obciążeń. Niefunkcjonalne wymagania są związane z oczekiwanym zachowaniem operacyjnym usługi.
+Gdy przedsiębiorstwo zaczyna obsługiwać obciążenia na platformie Azure, następnym krokiem jest ustanowienie procesu _przeglądu sprawności operacyjnej_. Ten proces wylicza, implementuje i iteracyjnie przegląda _niefunkcjonalne wymagania_ dotyczące tych obciążeń. Niefunkcjonalne wymagania są związane z oczekiwanym zachowaniem operacyjnym usługi.
 
 Istnieje pięć podstawowych kategorii niefunkcjonalnych wymagań, które są nazywane [filarami jakości oprogramowania](https://docs.microsoft.com/azure/architecture/guide/pillars):
 
 - Skalowalność
 - Dostępność
-- Odporność, w tym ciągłość biznesowa i odzyskiwanie po awarii
+- Odporność (w tym ciągłość działania i odzyskiwanie po awarii)
 - Zarządzanie
 - Zabezpieczenia
 
@@ -38,7 +38,7 @@ Procesy, które firma Microsoft stosuje jako podstawy dla procesów przedstawion
 
 ## <a name="understand-the-problem"></a>Omówienie problemu
 
-Po [rozpoczęciu pracy](../getting-started/migrate.md), pierwszym krokiem w ramach transformacji cyfrowej przedsiębiorstwa jest zidentyfikowanie problemów firmy, które należy rozwiązać, przyjmując platformę Azure. Następnym krokiem jest określenie rozwiązania wysokiego poziomu problemu, takiego jak Migrowanie obciążenia do chmury lub dostosowanie istniejącej usługi lokalnej do uwzględnienia funkcjonalności chmury. Na koniec warto zaprojektować i zaimplementować rozwiązanie.
+Zgodnie z opisem w temacie [wprowadzenie: przyspieszanie migracji](../get-started/migrate.md), pierwszy krok transformacji cyfrowej przedsiębiorstwa polega na zidentyfikowaniu problemów firmy, które należy rozwiązać, przyjmując platformę Azure. Następnym krokiem jest określenie rozwiązania wysokiego poziomu problemu, takiego jak Migrowanie obciążenia do chmury lub dostosowanie istniejącej usługi lokalnej do uwzględnienia funkcjonalności chmury. Na koniec warto zaprojektować i zaimplementować rozwiązanie.
 
 W trakcie tego procesu fokus jest często dotyczący funkcji usługi: zestawu wymagań _funkcjonalnych_ , które mają być wykonywane przez usługę. Na przykład usługa dostarczania produktów wymaga funkcji do określenia lokalizacji źródłowej i docelowej produktu, śledzenia produktu podczas dostarczania i wysyłania powiadomień do klienta.
 
@@ -55,7 +55,7 @@ Kluczem do utrzymania wydajności i ciągłości usług przedsiębiorstwa jest w
 
 ![Przegląd procesu przeglądu sprawności operacyjnej](../_images/manage/ofr-flow.png)
 
-Na wysokim poziomie proces ma dwie fazy. W *fazie wymagania wstępne*wymagania są ustanawiane i mapowane na usługi pomocnicze. Ta faza zdarza się nierzadko: być może rocznie lub w przypadku wprowadzenia nowych operacji. Dane wyjściowe fazy wymagań wstępnych są używane w *fazie przepływu*. Faza przepływu występuje częściej, np. miesięcznie.
+Na wysokim poziomie proces ma dwie fazy. W _fazie wymagania wstępne_wymagania są ustanawiane i mapowane na usługi pomocnicze. Ta faza zdarza się nierzadko: być może rocznie lub w przypadku wprowadzenia nowych operacji. Dane wyjściowe fazy wymagań wstępnych są używane w _fazie przepływu_. Faza przepływu występuje częściej, np. miesięcznie.
 
 ### <a name="prerequisites-phase"></a>Faza wymagań wstępnych
 
@@ -63,7 +63,7 @@ Kroki opisane w tej fazie przechwytują wymagania dotyczące przeprowadzania reg
 
 1. **Identyfikuj krytyczne operacje biznesowe**. Zidentyfikuj działania biznesowe o kluczowym znaczeniu dla przedsiębiorstwa. Operacje biznesowe są niezależne od funkcjonalności usługi pomocniczej. Innymi słowy, operacje biznesowe reprezentują rzeczywiste działania, które firma musi wykonać, i które są obsługiwane przez zestaw usług IT.
 
-    Termin *"krytyczny"* (lub " *krytyczny dla działalności firmy*") odzwierciedla poważny wpływ na działalność firmy, jeśli operacja jest utrudniona. Na przykład sprzedaż detaliczna w trybie online może być operacją biznesową, taką jak "Włącz klienta, aby dodać element do koszyka" lub "Przetwarzaj płatność kartą kredytową". Jeśli jedna z tych operacji zakończy się niepowodzeniem, klient nie będzie mógł ukończyć transakcji, a firma nie będzie mogła zrealizować sprzedaży.
+    Termin _"krytyczny"_ (lub " _krytyczny dla działalności firmy_") odzwierciedla poważny wpływ na działalność firmy, jeśli operacja jest utrudniona. Na przykład sprzedaż detaliczna w trybie online może być operacją biznesową, taką jak "Włącz klienta, aby dodać element do koszyka" lub "Przetwarzaj płatność kartą kredytową". Jeśli jedna z tych operacji zakończy się niepowodzeniem, klient nie będzie mógł ukończyć transakcji, a firma nie będzie mogła zrealizować sprzedaży.
 
 1. **Mapuj operacje na usługi**. Mapuj krytyczne operacje biznesowe na usługi, które je obsługują. W przypadku koszyka zakupów może być uwzględnionych kilka usług, w tym usługa zarządzania zapasami magazynu i usługa koszyka zakupów. Aby przetwarzać płatność kartą kredytową, lokalna usługa płatnicza może korzystać z usługi przetwarzania płatności innej firmy.
 
@@ -71,7 +71,7 @@ Kroki opisane w tej fazie przechwytują wymagania dotyczące przeprowadzania reg
 
     Należy również wziąć pod uwagę zależności między usługami lokalnymi i usługami platformy Azure. W przykładzie koszyka usługa spisu zasobów może być hostowana lokalnie i pobierana przez pracowników z magazynu fizycznego. Może jednak przechowywać dane przechowywane w usłudze Azure, na przykład w usłudze [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction)lub w bazie danych, takie jak [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction).
 
-Dane wyjściowe z tych działań to zestaw *metryk karty wyników* dla operacji usługi. Karta wyników mierzy kryteria, takie jak dostępność, skalowalność i odzyskiwanie po awarii. Metryki karty wyników wyrażają kryteria operacyjne, których oczekuje usługa. Te metryki mogą być wyrażone na poziomie szczegółowości, który jest odpowiedni dla operacji usługi.
+Dane wyjściowe z tych działań to zestaw _metryk karty wyników_ dla operacji usługi. Karta wyników mierzy kryteria, takie jak dostępność, skalowalność i odzyskiwanie po awarii. Metryki karty wyników wyrażają kryteria operacyjne, których oczekuje usługa. Te metryki mogą być wyrażone na poziomie szczegółowości, który jest odpowiedni dla operacji usługi.
 
 Karta wyników powinna być wyrażona w prostych terminach w celu ułatwienia zrozumiałej dyskusji między właścicielami i inżynierami biznesowymi. Na przykład Metryka karty wyników dla skalowalności może być w prosty sposób kodowane kolorami. Kolor zielony oznacza spełnienie zdefiniowanych kryteriów, żółty oznacza, że nie spełnia on zdefiniowanych kryteriów, ale aktywnie wdraża planowane korygowanie, a czerwony oznacza, że nie spełni zdefiniowanego kryterium bez planu ani akcji.
 

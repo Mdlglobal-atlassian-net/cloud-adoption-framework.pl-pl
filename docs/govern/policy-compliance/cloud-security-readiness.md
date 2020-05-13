@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 84bb47e05086ba0921a189d96d20c76a1ab5b057
-ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
+ms.openlocfilehash: fcf85d3da5821a87b7dd18cc421ecdbda4c3c39d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81646820"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224259"
 ---
 <!-- cSpell:ignore CISO -->
 
@@ -40,6 +40,8 @@ Ponieważ rozwiązania przechodzą dalsze "stos" w celu uwzględnienia modeli pl
 
 Wiedza o chmurze jest podstawą podejścia do [przeglądu zasad](./cloud-policy-review.md) z sposób myśleniaem wzrostu. Następujące zasoby mogą pomóc CISO lepiej zrozumieć stan zabezpieczeń platformy Microsoft Azure.
 
+<!-- docsTest:ignore "Security Response in the Cloud" -->
+
 **Zasoby platformy zabezpieczeń:**
 
 - [Cykl rozwoju zabezpieczeń, audyty wewnętrzne](https://www.microsoft.com/sdl)
@@ -55,6 +57,8 @@ Wiedza o chmurze jest podstawą podejścia do [przeglądu zasad](./cloud-policy-
 - [Zapewnianie dostępu do danych na Twoich warunkach](https://www.microsoft.com/trust-center/privacy/data-access)
 - [Reagowanie na egzekwowanie prawa](https://www.microsoft.com/trust-center/privacy)
 - [Rygorystyczne standardy ochrony prywatności](https://www.microsoft.com/trust-center/privacy)
+
+<!-- docsTest:ignore "Cloud Services Due Diligence Checklist" -->
 
 **Przepisów**
 

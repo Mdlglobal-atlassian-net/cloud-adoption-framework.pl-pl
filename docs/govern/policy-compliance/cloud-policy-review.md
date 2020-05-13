@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 244444057561118c2e3f2b7a574bfdfb529f0978
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 872a492be4ef27fbbbba758c9780a9af5d070940
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997393"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224276"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,13 @@ Podczas wykonywania transformacji w chmurze zasady często określają wiele nar
 
 ## <a name="the-cloud-policy-review-process"></a>Proces przeglądu zasad w chmurze
 
-Przeglądy zasad w chmurze przedstawiają istniejące zagadnienia dotyczące zarządzania i zabezpieczeń IT przy użyciu [pięciu dyscyplin](../index.md)nadzoru w chmurze: [Cost Management](../cost-management/index.md), [linia bazowa zabezpieczeń](../security-baseline/index.md), [linia bazowa tożsamości](../identity-baseline/index.md), [spójność zasobów](../resource-consistency/index.md)i [przyspieszenie wdrożenia](../deployment-acceleration/index.md).
+Przeglądy zasad w chmurze przedstawiają istniejące zagadnienia dotyczące zarządzania i ochrony IT przy użyciu [pięciu dyscyplin zarządzania chmurą](../index.md):
+
+- [Dyscyplina Cost Management](../cost-management/index.md)
+- [Dyscyplina linii bazowej zabezpieczeń](../security-baseline/index.md)
+- [Dyscyplina linii bazowej tożsamości](../identity-baseline/index.md)
+- [Dyscyplina spójności zasobów](../resource-consistency/index.md)
+- [Przyspieszenie wdrożenia — dyscyplina](../deployment-acceleration/index.md)
 
 W przypadku każdej z tych dyscyplin proces przeglądu następuje w następujących krokach:
 
@@ -50,7 +56,7 @@ W przypadku każdej z tych dyscyplin proces przeglądu następuje w następując
 Aby podać przykład procesu, ponownie Użyj zasad tworzenia kopii zapasowej na taśmie w poprzedniej sekcji:
 
 - Zasady firmowe mają możliwość tworzenia kopii zapasowych na taśmach poza siedzibą firmy dla wszystkich systemów produkcyjnych. W tych zasadach można zobaczyć dwa interesujące punkty danych:
-  - Starsza zależność od rozwiązania do tworzenia kopii zapasowej na taśmie
+  - Starsza zależność od rozwiązania do tworzenia kopii zapasowej na taśmie.
   - Zakładane ryzyko biznesowe związane z przechowywaniem kopii zapasowych w tej samej lokalizacji fizycznej co sprzęt produkcyjny.
 - Czy nadal istnieje ryzyko? Tak. Nawet w chmurze zależność od jednej funkcji tworzy pewne ryzyko. Istnieje mniejsze prawdopodobieństwo tego ryzyka, które ma wpływ na działalność, która nie była obecna w rozwiązaniu lokalnym, ale nadal istnieje ryzyko.
 - Ponowne Zapisywanie zasad. W przypadku awarii obejmującej całe centrum danych musi istnieć możliwość przywrócenia systemów produkcyjnych w ciągu 24 godzin od przestoju w innym centrum i w innej lokalizacji geograficznej.

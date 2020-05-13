@@ -1,6 +1,6 @@
 ---
 title: Ustalanie procesów zapewniania zgodności zasad
-description: Utwórz strategię i procesy, aby upewnić się, że wdrożenie w chmurze pozostaje zgodne z wymaganiami dotyczącymi zasad. 
+description: Utwórz strategię i procesy, aby upewnić się, że wdrożenie w chmurze pozostaje zgodne z wymaganiami dotyczącymi zasad.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b7bdcd96786a232ef810794cf93546275a9603b0
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c2a087fec598e2b9d581370f76e35aefef88048f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430813"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224191"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -75,6 +75,8 @@ Dla każdej z zestawień zasad należy przejrzeć wymagania, aby określić, co 
 Każdy wyzwalacz naruszenia powinien mieć odpowiadającą akcję. Akcje wyzwalane zawsze powiadamiają odpowiedniego pracownika działu IT lub członka zespołu nadzoru o chmurze w przypadku wystąpienia naruszenia. To powiadomienie może prowadzić do ręcznego przeglądu problemu ze zgodnością lub podzieloną wstępnie zdefiniowanego procesu korygowania w zależności od typu i ważności wykrytego naruszenia.
 
 Przykładowe wyzwalacze naruszenia i akcje:
+
+<!-- docsTest:ignore "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
 
 | Dyscyplina ładu chmury | Przykładowy wyzwalacz | Przykładowa akcja |
 |-----------------------------|----------------|---------------|

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c393b00de1d235553dcea544493ef019f46b1e0c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 423c87fd351f3220710ab35ffe0bc4e6beac3a1d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527584"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223902"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Ochrona i odzyskiwanie w programie Cloud Management
 
@@ -72,8 +72,8 @@ Aby uzyskać więcej informacji na temat tego procesu myśli, zobacz [dyscyplina
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po osiągnięciu tego składnika linii bazowej zarządzania zespół może zajrzeć się, aby uniknąć przerwy w działaniu [platformy](./platform.md) i [operacjach obciążeń](./workload.md).
+Gdy ten składnik punktu odniesienia zarządzania zostanie osiągnięty, zespół może się zajrzeć, aby uniknąć przestoju w operacjach [platformy](./platform.md) i [operacjach obciążeń](./workload.md).
 
 > [!div class="nextstepaction"]
-> [Platform operations](./platform.md)
-> [Operacje obciążeń](./workload.md) platform operacji
+> [Operacje](./platform.md) 
+>  na platformie [Operacje obciążeń](./workload.md)

@@ -7,12 +7,12 @@ ms.date: 04/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba3ac825fb43a9c185d86ef9695afc52c9437c56
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a40fb364df481df9c75ade25f18b9a3a1a0468fb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396239"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223715"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -82,14 +82,14 @@ Firma Contoso przeprowadzi proces migracji w następujący sposób:
 
 ![Proces migracji](./media/contoso-migration-refactor-linux-app-service-mysql/migration-process.png)
 
-### <a name="azure-services"></a>Usługi Azure
+### <a name="azure-services"></a>Usługi platformy Azure
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
 [Azure App Service](https://azure.microsoft.com/services/app-service) | Usługa uruchamia i skaluje aplikacje za pomocą usługi Azure PaaS dla witryn internetowych. | Ceny są ustalane na podstawie rozmiaru wystąpień oraz wymaganych funkcji. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | Moduł równoważenia obciążenia używający systemu DNS do kierowania użytkowników do platformy Azure lub zewnętrznych usług i witryn internetowych. | Cennik jest ustalany na podstawie liczby odebranych zapytań DNS oraz liczby monitorowanych punktów końcowych. | [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/traffic-manager).
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Usługa Azure Database Migration Service umożliwia bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. | Dowiedz się więcej o [obsługiwanych regionach](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) i [cenniku usługi Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
-[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Baza danych opiera się na aparacie serwera MySQL typu open-source. Udostępnia ona w pełni zarządzaną, gotową do używania w przedsiębiorstwie bazę danych MySQL w wersji Community jako usługę do opracowywania i wdrażania aplikacji. | Cennik oparty na wymaganiach dotyczących obliczeń, magazynu i kopii zapasowych. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/mysql).
+[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Baza danych opiera się na aparacie serwera MySQL typu open-source. Zapewnia w pełni zarządzaną, gotową do użytku w przedsiębiorstwie bazę danych MySQL, która umożliwia tworzenie i wdrażanie aplikacji. | Cennik oparty na wymaganiach dotyczących obliczeń, magazynu i kopii zapasowych. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/mysql).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -97,9 +97,9 @@ Oto elementy, których firma Contoso potrzebuje do realizacji tego scenariusza.
 
 <!-- markdownlint-disable MD033 -->
 
-**Wymagania** | **Uzyskać**
+**Wymagania** | **Szczegóły**
 --- | ---
-**Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje wcześniej w tej serii artykułów. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.
+**Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje wcześniej w tej serii artykułów. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial). <br><br> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje. <br><br> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.
 **Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Azure infrastructure for Migration (Infrastruktura platformy Azure wymagana do migracji)](./contoso-migration-infrastructure.md).
 
 <!-- markdownlint-enable MD033 -->
@@ -138,7 +138,7 @@ Administratorzy firmy Contoso aprowizują obsługę dwóch aplikacji internetowy
 
     ![Aplikacja platformy Azure](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app4.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - Dowiedz się więcej o [aplikacjach internetowych usługi Azure App Service](https://docs.microsoft.com/azure/app-service/overview).
 - Dowiedz się więcej o [usłudze Azure App Service dla systemu Linux](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro).
@@ -159,7 +159,7 @@ Administratorzy firmy Contoso konfigurują usługę Traffic Manager tak, aby kie
 
     ![Traffic Manager](./media/contoso-migration-refactor-linux-app-service-mysql/traffic-manager3.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - Dowiedz się więcej o usłudze [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
 - Dowiedz się więcej o [kierowaniu ruchu do priorytetowego punktu końcowego](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-configure-priority-routing-method).
@@ -205,7 +205,7 @@ Podsumowując, należy wykonać następujące czynności:
 
 - Upewnij się, że spełniono wszystkie wymagania wstępne dotyczące migracji:
   - Źródło serwera MySQL musi być zgodne z wersją obsługiwaną przez Azure Database for MySQL. Azure Database for MySQL obsługuje-MySQL Community Edition, aparatu InnoDB i migracji między źródłem i celem z tymi samymi wersjami.
-  - Włącz logowanie binarne w pliku my. ini (Windows) lub My. cnf (UNIX). Niewykonanie tej czynności spowoduje wystąpienie `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more details see https://go.microsoft.com/fwlink/?linkid=873009` błędu w Kreatorze migracji.
+  - Włącz logowanie binarne w pliku my. ini (Windows) lub My. cnf (UNIX). Niewykonanie tej czynności spowoduje wystąpienie `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more information, see https://go.microsoft.com/fwlink/?linkid=873009` Kreatora migracji.
   - Użytkownik musi mieć `ReplicationAdmin` rolę.
   - Migruj schematy bazy danych bez kluczy obcych i wyzwalaczy.
 - Utwórz sieć wirtualną, która łączy się za pośrednictwem ExpressRoute lub sieci VPN z siecią lokalną.
@@ -351,7 +351,7 @@ W ostatnim kroku procesu migracji administratorzy firmy Contoso konfigurują apl
 
     ![Konfigurowanie aplikacji](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app5.png)
 
-7. Firma Contoso chce mieć łatwą do zapamiętania nazwę DNS. Tworzą one rekord aliasu (CNAME) **osTicket.contoso.com** wskazujący nazwę Traffic Manager w systemie DNS na swoich kontrolerach domeny.
+7. Firma Contoso chce mieć łatwą do zapamiętania nazwę DNS. Tworzą one rekord aliasu (CNAME) wskazujący `osticket.contoso.com` nazwę Traffic Manager w systemie DNS na ich kontrolerach domeny.
 
     ![Konfigurowanie aplikacji](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app6.png)
 

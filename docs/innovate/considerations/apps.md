@@ -7,18 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1159fd0b1b5195a5775901cc9229f5c4a7b34ba2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0503ba04a97362b63c6e616b79d1153f3ba691c2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120506"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224174"
 ---
 # <a name="engage-through-applications"></a>Zaangażuj aplikacje
 
 Zgodnie z opisem w [zdemokratyzuj proces danych](./data.md), dane są nową olejem. Paliwa IT są najbardziej innowacje w całej sieci cyfrowej. W przypadku tego analogu aplikacje są stacjami paliw i infrastrukturą wymaganą do uzyskania tego paliwa w odpowiednich rąk.
 
-W niektórych przypadkach same dane są wystarczające do zmiany dysku i zaspokajania potrzeb klientów. Ogólnie, jednak rozwiązania dla klientów wymagają, aby aplikacje miały kształtować dane, i utworzyć środowisko. Aplikacje są sposobem, w jaki udostępniamy użytkownika. Są one domem dla procesów wymaganych do reagowania na wyzwalacze klientów. Są one odbiorcami, aby zapewnić dane i uzyskać wskazówki. Ten artykuł zawiera podsumowanie kilku zasad, które mogą pomóc w rozwiązaniu użytkownika z odpowiednim rozwiązaniem aplikacji w oparciu o te, które mają być zweryfikowane.
+W niektórych przypadkach same dane są wystarczające do zmiany dysku i zaspokajania potrzeb klientów. Bardziej często zdarza się, że rozwiązania dla klientów wymagają aplikacji do kształtowania danych i tworzenia środowiska. Aplikacje są sposobem, w jaki udostępniamy użytkownika. Są one domem dla procesów wymaganych do reagowania na wyzwalacze klientów. Są one odbiorcami, aby zapewnić dane i uzyskać wskazówki. Ten artykuł zawiera podsumowanie kilku zasad, które mogą pomóc w rozwiązaniu użytkownika z odpowiednim rozwiązaniem aplikacji w oparciu o te, które mają być zweryfikowane.
 
 ![Angażowanie przez aplikacje](../../_images/innovate/engage-via-apps.png)
 
@@ -28,8 +28,8 @@ Zespoły, które szybciej i dokładnie reagują na Opinie klientów, zmiany rynk
 
 Aby zapewnić gotowość do innowacji, cały rozwój aplikacji powinien rozpoczynać się od udostępnionego repozytorium kodu. Najczęściej przyjętym narzędziem do zarządzania repozytoriami kodu jest [GitHub](https://guides.github.com), co pozwala szybko utworzyć udostępnione repozytorium kodu. Alternatywnie, [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) to zestaw narzędzi do kontroli wersji w programie Azure DevOps Services, których można użyć do zarządzania kodem. Azure Repos zapewnia dwa typy kontroli wersji:
 
-- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): rozproszony system kontroli wersji
-- [Kontrola wersji serwera Team Foundation (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): scentralizowany system kontroli wersji
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): rozproszony system kontroli wersji.
+- [Kontrola wersji serwera Team Foundation (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): scentralizowany system kontroli wersji.
 
 ## <a name="citizen-developers"></a>Amatorscy deweloperzy
 
@@ -50,7 +50,7 @@ Gdy aplikacja lub środowisko jest wymagane do spełnienia potrzeby klienta, now
 
 ### <a name="infusing-intelligence"></a>Dodawanie inteligencji
 
-Dostęp do uczenia maszynowego i sztucznej analizy jest coraz większy dla deweloperów. Szerokie udostępnienie wspólnych interfejsów API za pomocą funkcji predykcyjnych pozwala deweloperom lepiej spełnić wymagania klienta dzięki rozszerzonemu dostępowi do danych i prognoz.
+Uczenie maszynowe i AI są coraz bardziej dostępne dla deweloperów. Szerokie udostępnienie wspólnych interfejsów API za pomocą funkcji predykcyjnych pozwala deweloperom lepiej spełnić wymagania klienta dzięki rozszerzonemu dostępowi do danych i prognoz.
 
 Dodanie analizy do rozwiązania może umożliwić zamianę mowy na tekst, tłumaczenie tekstu, obsługę komputera, a nawet Wyszukiwanie wizualne. Dzięki tym rozszerzonym funkcjom deweloperzy mogą tworzyć rozwiązania, które wykorzystują inteligencję do tworzenia interaktywnego i nowoczesnego środowiska.
 
@@ -82,18 +82,18 @@ Rozszerzanie rozwiązania to jedna powszechna forma modernizacji. Takie podejśc
 
 - Istniejąca logika biznesowa powinna być zgodna z istniejącym klientem i musi być bliska.
 - Ulepszone środowisko będzie lepiej spełniało potrzeby określonego klienta kohorta.
-- Logika biznesowa wymagana przez rozwiązanie o minimalnym żywotnym wykorzystaniu produktu (MVP) jest scentralizowana, zazwyczaj za pośrednictwem platformy [N-warstwowej](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), usług sieci Web, interfejsów API i [mikrousług](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices) . Takie podejście polega na zapakowaniu istniejące rozwiązanie w ramach nowego środowiska hostowanego w chmurze. Na platformie Azure to rozwiązanie prawdopodobnie będzie aktywne na platformie Azure App Services.
+- Logika biznesowa wymagana przez rozwiązanie o minimalnym żywotnym wykorzystaniu produktu (MVP) jest scentralizowana, zazwyczaj za pośrednictwem platformy [N-warstwowej](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), usług sieci Web, interfejsów API i [mikrousług](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices) . Takie podejście polega na zapakowaniu istniejące rozwiązanie w ramach nowego środowiska hostowanego w chmurze. Na platformie Azure to rozwiązanie prawdopodobnie będzie aktywne w Azure App Service.
 
 ### <a name="rebuild-an-existing-solution"></a>Kompiluj ponownie istniejące rozwiązanie
 
-Jeśli aplikacja nie może być łatwo rozszerzona, może być konieczne Refaktoryzacja rozwiązania. W tym podejściu obciążenie zostanie zmigrowane do chmury. Po migracji aplikacji części tego elementu są modyfikowane lub duplikowane jako usługi sieci Web lub [mikrousługi](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices), które są wdrażane równolegle z istniejącym rozwiązaniem. Rozwiązanie oparte na usługach równoległych może być traktowane jak rozszerzone rozwiązanie. To rozwiązanie po prostu otacza istniejące rozwiązanie nowym środowiskom hostowanym w chmurze. Na platformie Azure to rozwiązanie prawdopodobnie będzie aktywne na platformie Azure App Services.
+Jeśli aplikacja nie może być łatwo rozszerzona, może być konieczne Refaktoryzacja rozwiązania. W tym podejściu obciążenie zostanie zmigrowane do chmury. Po migracji aplikacji części tego elementu są modyfikowane lub duplikowane jako usługi sieci Web lub [mikrousługi](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices), które są wdrażane równolegle z istniejącym rozwiązaniem. Rozwiązanie oparte na usługach równoległych może być traktowane jak rozszerzone rozwiązanie. To rozwiązanie po prostu otacza istniejące rozwiązanie nowym środowiskom hostowanym w chmurze. Na platformie Azure to rozwiązanie prawdopodobnie będzie aktywne w Azure App Service.
 
 > [!CAUTION]
-> Refaktoryzacja lub rearchitektura rozwiązań lub scentralizowana logika biznesowa może szybko wyzwolić czasochłonne przeznaczenie [techniczne](./build.md#reduce-complexity-and-delay-technical-spikes)zamiast źródła wartości klienta. Jest to ryzykowne dla innowacji, szczególnie wczesne w przypadku weryfikacji hipotez. Mając nieco dużo kreatywności w projektowaniu rozwiązania, powinna istnieć ścieżka do programu MVP, która nie wymaga refaktoryzacji istniejących rozwiązań. Można opóźnić refaktoryzację do momentu, gdy hipoteza wstępna zostanie zweryfikowana na dużą skalę.
+> Refaktoryzacja lub rearchitektura rozwiązań lub scentralizowana logika biznesowa może szybko wyzwolić czasochłonne przeznaczenie [techniczne](./build.md#reduce-complexity-and-delay-technical-spikes) zamiast źródła wartości klienta. Jest to ryzykowne dla innowacji, szczególnie wczesne w przypadku weryfikacji hipotez. Mając nieco dużo kreatywności w projektowaniu rozwiązania, powinna istnieć ścieżka do programu MVP, która nie wymaga refaktoryzacji istniejących rozwiązań. Można opóźnić refaktoryzację do momentu, gdy hipoteza wstępna zostanie zweryfikowana na dużą skalę.
 
 ## <a name="operating-model-innovations"></a>Innowacje modelu operacyjnego
 
-Oprócz nowoczesnych innowacyjnych metod tworzenia aplikacji w *operacjach*aplikacji wprowadzono znaczące innowacje. Te podejścia zostały zduplikowane w wielu przesunięć organizacyjnych. Jednym z najbardziej widocznych jest usługa [Cloud Center z](../../organize/cloud-center-of-excellence.md) modelem operacyjnym. W pełni zatrudnione i dojrzałe zespoły biznesowe mają możliwość zapewnienia własnej obsługi operacyjnej rozwiązania.
+Oprócz nowoczesnych innowacyjnych metod tworzenia aplikacji w _operacjach_aplikacji wprowadzono znaczące innowacje. Te podejścia zostały zduplikowane w wielu przesunięć organizacyjnych. Jednym z najbardziej widocznych jest usługa [Cloud Center z](../../organize/cloud-center-of-excellence.md) modelem operacyjnym. W pełni zatrudnione i dojrzałe zespoły biznesowe mają możliwość zapewnienia własnej obsługi operacyjnej rozwiązania.
 
 Typ samoobsługowego modelu zarządzania operacyjnego, który znajduje się w centrum rozwiązań w chmurze, umożliwia ściślejsze kontrolki i szybsze iteracje w środowisku rozwiązania. Cele te są realizowane przez przeniesienie kontroli operacyjnej i odpowiedzialności do zespołu biznesowego.
 

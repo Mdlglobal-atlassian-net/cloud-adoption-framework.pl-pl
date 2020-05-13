@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 878127e904adb28b873f642bb7d8ef152d7e63ff
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: eb54bd4c583878fb72b4e7401fd05662ca87bc63
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997191"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224140"
 ---
 # <a name="democratize-data"></a>Demokratyzowanie danych
 
@@ -43,7 +43,7 @@ Podstawowe narzędzia do udostępniania danych bezpośrednio z użytkownikami da
 
 Udostępnianie danych może szybko utworzyć MVP, którego możesz używać w konwersacjach klientów. Jednak aby przekształcić udostępnione dane w użyteczne i funkcjonalne informacje, jest to zwykle wymagane. Po sprawdzeniu hipotezy przy użyciu udostępniania danych kolejnym etapem programowania jest zwykle zarządzanie danymi.
 
-Zarządzanie danymi jest szerokim tematem, który może wymagać własnej dedykowanej struktury. Ten stopień szczegółowości jest poza zakresem [struktury wdrożenia chmury](../../index.md). Istnieje jednak kilka aspektów nadzoru nad danymi, które należy wziąć pod uwagę zaraz po sprawdzeniu poprawności hipotezy klienta. Przykład:
+Zarządzanie danymi jest szerokim tematem, który może wymagać własnej dedykowanej struktury. Ten stopień szczegółowości jest poza zakresem [struktury wdrożenia chmury](../../index.yml). Istnieje jednak kilka aspektów nadzoru nad danymi, które należy wziąć pod uwagę zaraz po sprawdzeniu poprawności hipotezy klienta. Przykład:
 
 - **Czy dane są udostępnione poufne?** [Dane powinny zostać sklasyfikowane](../../govern/policy-compliance/data-classification.md) przed udostępnieniem publicznie, aby chronić interesy klientów i firmę.
 - **Czy dane są poufne, czy zostały zabezpieczone?** Ochrona danych poufnych powinna być wymagana w przypadku dowolnych danych z demokratyzacją. Przykładowe obciążenie dotyczące [zabezpieczania rozwiązań danych](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) zawiera kilka odwołań do zabezpieczania danych.
@@ -56,7 +56,7 @@ Gdy Democratization danych jest istotna dla hipotez ukierunkowanych na klienta, 
 Gdy dane są zakłócone w środowisku IT, szanse na innowacje mogą być wyjątkowo ograniczone, kosztowne i czasochłonne. Chmura udostępnia nowe możliwości w celu scentralizowania danych między silosami danych. Gdy do [kompilowania z empatię klienta](./build.md)jest wymagane scentralizowanie wielu źródeł danych, Chmura może przyspieszyć testowanie hipotez.
 
 > [!CAUTION]
-> Scentralizowanie danych reprezentuje punkt ryzyka w procesie innowacji. Gdy centralizacji danych jest [technicznym](./build.md#reduce-complexity-and-delay-technical-spikes) wzrostem (w przeciwieństwie do źródła wartości klienta), sugerujemy, aby można było opóźnić scentralizowanie do momentu zweryfikowania postanowień klienta.
+> Scentralizowanie danych reprezentuje punkt ryzyka w procesie innowacji. Gdy centralizacji danych jest [technicznym](./build.md#reduce-complexity-and-delay-technical-spikes)wzrostem, a nie źródłem wartości klienta, sugerujemy, aby można było opóźnić scentralizowanie do momentu zweryfikowania postanowień klienta.
 
 Jeśli jest wymagane scentralizowanie danych, należy najpierw zdefiniować odpowiedni magazyn danych dla scentralizowanych danych. Dobrym sposobem jest ustanowienie magazynu danych w chmurze. Ta skalowalna opcja zapewnia centralną lokalizację dla wszystkich danych. Ten typ rozwiązania jest dostępny w opcjach przetwarzania analitycznego online (OLAP) lub danych Big Data.
 
@@ -67,7 +67,7 @@ Architektury referencyjne dla rozwiązań [OLAP](https://docs.microsoft.com/azur
 
 ### <a name="collect-data"></a>Zbieranie danych
 
-Gdy potrzebujesz, aby dane były scentralizowane w celu sprostania potrzebom klientów, bardzo prawdopodobnie trzeba będzie zebrać dane z różnych źródeł i przenieść je do scentralizowanego magazynu danych. Istnieją dwa podstawowe formy zbierania danych: *integracja* i pozyskiwanie *ingestion*.
+Gdy potrzebujesz, aby dane były scentralizowane w celu sprostania potrzebom klientów, bardzo prawdopodobnie trzeba będzie zebrać dane z różnych źródeł i przenieść je do scentralizowanego magazynu danych. Istnieją dwa podstawowe formy zbierania danych: _integracja_ i pozyskiwanie _ingestion_.
 
 **Integracja:** Dane, które znajdują się w istniejącym magazynie danych, można zintegrować z scentralizowanym magazynem danych przy użyciu tradycyjnych technik przenoszenia danych. Jest to szczególnie typowe w przypadku scenariuszy obejmujących magazyn danych w chmurze. Te techniki obejmują wyodrębnianie danych z istniejącego magazynu danych, a następnie ładowanie ich do centralnego magazynu danych. W pewnym momencie w tym procesie dane są zwykle przekształcane, aby były bardziej użyteczne i istotne w sklepie centralnym.
 

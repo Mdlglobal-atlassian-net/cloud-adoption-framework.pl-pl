@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: e99bb023f73baad9e1940f06128ba09bd79ab0a1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e0da2ec011f2fc6a823868d877780906ab472111
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80606581"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224310"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ W trakcie transformacji istnieją takie same względne zagrożenia.
 - W trakcie wczesnego eksperymentu kilka zasobów jest wdrażanych z niewielkimi danymi. Ryzyko jest małe.
 - Po wdrożeniu pierwszego obciążenia ryzyka zajmują trochę czasu. To ryzyko można łatwo skorygować, wybierając nieodłącznie zagrożoną aplikację z niewielką bazą użytkownika.
 - Ponieważ większe obciążenia przechodzą w tryb online, ryzyka zmieniają się w każdej wersji. Nowe aplikacje są na bieżąco i są zmieniane.
-- Gdy firma przywróci pierwsze aplikacje 10-20 do trybu online, profil ryzyka jest znacznie różny, gdy aplikacje 1000th są uwzględniane w środowisku produkcyjnym w chmurze.
+- Gdy firma przenosi pierwsze 10 lub 20 aplikacji w tryb online, profil ryzyka jest znacznie różny niż w przypadku, gdy aplikacja 1000th przechodzi do środowiska produkcyjnego w chmurze.
 
 Zasoby, które są gromadzone w tradycyjnym miejscu, w którym jest to możliwe, w miarę upływu czasu. Termin zapadalności działalności biznesowej i zespołów IT prawdopodobnie rośnie w podobny sposób. Ten równoległy wzrost może być w stanie utworzyć niezbędny bagaż zasad.
 

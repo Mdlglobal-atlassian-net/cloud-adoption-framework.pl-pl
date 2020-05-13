@@ -7,12 +7,12 @@ ms.date: 05/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fe76729b4a845d71629d7d24d4bdd3110fa6ab9a
-ms.sourcegitcommit: 5058bc57cb53701ac409959b46767ae6fd56ba93
+ms.openlocfilehash: c32ecde3bc5929bc8ed360b1d792e5f2345bfd8f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82861439"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223681"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -28,12 +28,12 @@ Opracowywanie niezbędnych umiejętności może być przyspieszone przy użyciu 
 
 - Wprowadzenie do [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) pomaga dowiedzieć się, jak można używać Azure Policy do tworzenia i przypisywania zasad oraz zarządzania nimi. Azure Policy można wdrożyć i skonfigurować agentów Azure Monitor, włączyć monitorowanie za pomocą Azure Monitor dla maszyn wirtualnych i Azure Security Center, wdrożyć ustawienia diagnostyczne, Przeprowadź inspekcję ustawień konfiguracji gościa i nie tylko.
 
-- Wprowadzenie do [interfejsu wiersza polecenia](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) (CLI) platformy Azure, czyli międzyplatformowego środowiska wiersza polecenia do zarządzania zasobami platformy Azure. Należy również zapoznać się z tematem wprowadzenie do [Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.6.1). Oferty serwisu LinkedIn — w ramach kursu na poziomie początku [uczenia się narzędzi do zarządzania platformy Azure](https://www.linkedin.com/learning/learning-azure-management-tools), sesji obejmujących interfejs wiersza polecenia platformy Azure i języki programowania programu PowerShell:
+- Wprowadzenie do [interfejsu wiersza polecenia (CLI) platformy Azure](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), czyli międzyplatformowego środowiska wiersza polecenia do zarządzania zasobami platformy Azure. Należy również zapoznać się z tematem wprowadzenie do [Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.6.1). Oferty serwisu LinkedIn — w ramach kursu na poziomie początku [uczenia się narzędzi do zarządzania platformy Azure](https://www.linkedin.com/learning/learning-azure-management-tools), sesji obejmujących interfejs wiersza polecenia platformy Azure i języki programowania programu PowerShell:
 
   - [Użyj interfejsu wiersza polecenia platformy Azure](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli).
   - [Rozpoczynanie pracy z programem Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- Dowiedz się, jak pisać [zapytania dzienników w Azure monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries).  Język zapytań Kusto jest podstawowym zasobem służącym do pisania zapytań dzienników Azure Monitor w celu eksplorowania i analizowania danych dzienników między zebranymi danymi z zależności aplikacji zasobów platformy Azure i hybrydowych, w tym aplikacji na żywo.
+- Dowiedz się, jak pisać [zapytania dzienników w Azure monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries). Język zapytań Kusto jest podstawowym zasobem służącym do pisania zapytań dzienników Azure Monitor w celu eksplorowania i analizowania danych dzienników między zebranymi danymi z zależności aplikacji zasobów platformy Azure i hybrydowych, w tym aplikacji na żywo.
 
 - Dowiedz się, w jaki sposób [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) ułatwia Wyświetlanie dostępności i wydajności aplikacji i usług w jednym miejscu. Pluralsight oferuje następujące kursy, aby pomóc:
 
@@ -63,7 +63,7 @@ Zdobądź oficjalne potwierdzenie swojej wiedzy na temat platformy Azure, korzys
 
 Hybrydowe środowisko chmury zakłóca jego działanie z niezdefiniowanymi rolami, obowiązkami i działaniami. Organizacje muszą przejść do nowoczesnych rozwiązań związanych z zarządzaniem usługami, w tym metod agile i DevOps, aby lepiej zaspokoić potrzeby przekształceń i optymalizacji współczesnych firm.
 
-W ramach migracji do platformy monitorowania w chmurze zespół IT odpowiedzialny za zarządzanie monitorowaniem w przedsiębiorstwie musi obejmować szkolenia Agile i uczestnictwo w działaniach DevOps. Obejmuje to również zastosowanie do *deweloperów* w DevOps przez podejmowanie wymagań i włączenie zorganizowanych wymagań Agile, aby dostarczać z minimalnymi, żywotnymi rozwiązaniami do monitorowania, które są w sposób iteracyjny i zgodne z potrzebami biznesowymi. Aby kontrola źródła mogła zarządzać pakietami rozwiązań monitorowania iteracyjnego i innymi powiązanymi zabezpieczeniami, Połącz projekt Azure DevOps Server z repozytorium GitHub Enterprise Server. Zapewnia to link między zatwierdzeniami GitHub i żądaniami ściągnięcia do elementów roboczych. Za pomocą usługi GitHub Enterprise na potrzeby programowania można obsłużyć integrację z ciągłym monitorowaniem i wdrożeniem, a przy użyciu Azure Boards do planowania i śledzenia pracy.
+W ramach migracji do platformy monitorowania w chmurze zespół IT odpowiedzialny za zarządzanie monitorowaniem w przedsiębiorstwie musi obejmować szkolenia Agile i uczestnictwo w działaniach DevOps. Obejmuje to również zastosowanie do _deweloperów_ w DevOps przez podejmowanie wymagań i włączenie zorganizowanych wymagań Agile, aby dostarczać z minimalnymi, żywotnymi rozwiązaniami do monitorowania, które są w sposób iteracyjny i zgodne z potrzebami biznesowymi. Aby kontrola źródła mogła zarządzać pakietami rozwiązań monitorowania iteracyjnego i innymi powiązanymi zabezpieczeniami, Połącz projekt Azure DevOps Server z repozytorium GitHub Enterprise Server. Zapewnia to link między zatwierdzeniami GitHub i żądaniami ściągnięcia do elementów roboczych. Za pomocą usługi GitHub Enterprise na potrzeby programowania można obsłużyć integrację z ciągłym monitorowaniem i wdrożeniem, a przy użyciu Azure Boards do planowania i śledzenia pracy.
 
 Aby dowiedzieć się więcej, zapoznaj się z następującymi tematami:
 

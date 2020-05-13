@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 594b8ae3ce7949c3289d9a81ac9870889a5dba98
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d48a451a9cb6bcedb4f680701f9a6752df24e6a3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527179"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223987"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -37,9 +37,9 @@ Po rozpoczęciu pracy Poniższa lista kontrolna i zasoby ułatwią planowanie pr
 >
 > | Lista kontrolna  | Zasoby |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **Zidentyfikuj zagadnienia dotyczące projektowania sieci.** Omówienie zagadnień dotyczących projektowania sieci klastrów, porównywania modeli sieci i wybierania wtyczki sieci Kubernetes, która odpowiada Twoim potrzebom.    | [Korzystającą wtyczki kubenet i interfejs sieciowy kontenera platformy Azure (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Korzystanie z sieci korzystającą wtyczki kubenet z własnymi zakresami adresów IP w usłudze Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Konfigurowanie sieci Azure CNI w usłudze Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Bezpieczny projekt sieci dla klastra AKS](https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
+> | **Zidentyfikuj zagadnienia dotyczące projektowania sieci.** Omówienie zagadnień dotyczących projektowania sieci klastrów, porównywania modeli sieci i wybierania wtyczki sieci Kubernetes, która odpowiada Twoim potrzebom.    | [Korzystającą wtyczki kubenet i interfejs sieciowy kontenera platformy Azure (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Korzystanie z sieci korzystającą wtyczki kubenet z własnymi zakresami adresów IP w usłudze Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Konfigurowanie sieci Azure CNI w usłudze Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Bezpieczny projekt sieci dla klastra AKS](https://github.com/azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md) |
 > | **Utwórz wiele pul węzłów.** Aby obsługiwać aplikacje, które mają różne wymagania dotyczące obliczeń lub magazynu, można opcjonalnie skonfigurować klaster z wieloma pulami węzłów. Na przykład użyj dodatkowych pul węzłów, aby udostępnić procesory GPU dla aplikacji intensywnie korzystających z obliczeń lub uzyskać dostęp do magazynu SSD o wysokiej wydajności.   | [Tworzenie i zarządzanie wieloma pulami węzłów klastra w usłudze Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
-> | **Określ wymagania dotyczące dostępności.** Aby zapewnić wyższy poziom dostępności aplikacji, klastry mogą być dystrybuowane między strefami dostępności. Te strefy są fizycznie oddzielone centrami danych w danym regionie. Gdy składniki klastra są rozproszone w wielu strefach, klaster może tolerować awarię w jednej z tych stref. Aplikacje i operacje zarządzania są nadal dostępne nawet wtedy, gdy w całym centrum danych wystąpił problem.   | [Tworzenie klastra usługi Azure Kubernetes Service (AKS) korzystającego ze stref dostępności](https://docs.microsoft.com/azure/aks/availability-zones) |
+> | **Określ wymagania dotyczące dostępności.** Aby zapewnić wyższy poziom dostępności aplikacji, klastry mogą być dystrybuowane między strefami dostępności. Te strefy są fizycznie oddzielone centrami danych w danym regionie. Gdy składniki klastra są dystrybuowane w wielu strefach, klaster Cano tolerowanie awarii w jednej z tych stref. Aplikacje i operacje zarządzania są nadal dostępne nawet wtedy, gdy w całym centrum danych wystąpił problem.   | [Tworzenie klastra usługi Azure Kubernetes Service (AKS) korzystającego ze stref dostępności](https://docs.microsoft.com/azure/aks/availability-zones) |
 
 ## <a name="go-to-production-and-apply-best-practices"></a>Przejdź do środowiska produkcyjnego i Zastosuj najlepsze rozwiązania
 
@@ -54,11 +54,11 @@ Podczas przygotowywania aplikacji do produkcji należy zaimplementować minimaln
 
 > [!div class="tdCol2BreakAll"]
 >
-> | Lista kontrolna  | Zasoby                                                                                                     |
-> |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **Automatyzowanie aprowizacji klastra.** Za pomocą infrastruktury jako kodu można zautomatyzować Inicjowanie obsługi infrastruktury w celu zapewnienia większej odporności podczas awarii i zwiększyć elastyczność, aby szybko wdrożyć infrastrukturę w razie potrzeby.     | [Tworzenie klastra Kubernetes za pomocą usługi Azure Kubernetes Service przy użyciu Terraform](https://docs.microsoft.com/azure/terraform/terraform-create-k8s-cluster-with-tf-and-aks)|
-> | **Zaplanuj dostępność przy użyciu budżetów przerwań.** Aby zachować dostępność aplikacji, należy zdefiniować budżety zakłócania (plików PDB) w celu zapewnienia, że w klastrze są dostępne co najmniej w trakcie awarii sprzętu lub uaktualnień klastra. | [Planowanie dostępności przy użyciu budżetów przerwań](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets)  |
-> | **Wymuszaj limity przydziału zasobów w przestrzeniach nazw.** Planowanie i stosowanie przydziałów zasobów na poziomie przestrzeni nazw. Limity przydziału można ustawić dla zasobów obliczeniowych, zasobów magazynu i liczby obiektów.| [Wymuszaj przydziały zasobów](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas)  |
+> | Lista kontrolna  | Zasoby |
+> |---|---|
+> | **Automatyzowanie aprowizacji klastra.** Za pomocą infrastruktury jako kodu można zautomatyzować Inicjowanie obsługi infrastruktury w celu zapewnienia większej odporności podczas awarii i zwiększyć elastyczność, aby szybko wdrożyć infrastrukturę w razie potrzeby. | [Tworzenie klastra Kubernetes za pomocą usługi Azure Kubernetes Service przy użyciu Terraform](https://docs.microsoft.com/azure/terraform/terraform-create-k8s-cluster-with-tf-and-aks) |
+> | **Zaplanuj dostępność przy użyciu budżetów przerwań.** Aby zachować dostępność aplikacji, należy zdefiniować budżety zakłócania (plików PDB) w celu zapewnienia, że w klastrze są dostępne co najmniej w trakcie awarii sprzętu lub uaktualnień klastra. | [Planowanie dostępności przy użyciu budżetów przerwań](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets) |
+> | **Wymuszaj limity przydziału zasobów w przestrzeniach nazw.** Planowanie i stosowanie przydziałów zasobów na poziomie przestrzeni nazw. Limity przydziału można ustawić dla zasobów obliczeniowych, zasobów magazynu i liczby obiektów. | [Wymuszaj przydziały zasobów](https://docs.microsoft.com/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas) |
 
 ## <a name="optimize-and-scale"></a>Optymalizowanie i skalowanie
 

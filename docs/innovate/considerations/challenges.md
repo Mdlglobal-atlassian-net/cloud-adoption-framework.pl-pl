@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4b6ed0a62c3efcdf30e854fcbed6ee468a826e9c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ddf148a71baba3a7675a9e5bb77eb44d07fe0354
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527660"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224106"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Typowe bloki i wyzwania dla innowacji
 
@@ -32,9 +32,9 @@ Na poniższej liście przedstawiono niektóre z najbardziej typowych wyzwań zwi
 
 ### <a name="internal-challenges"></a>Problemy wewnętrzne
 
-- **Wybieranie kandydatów innowacji:** Podczas inwestowania w innowacje firmy w dobrej kondycji duplikują dostawę potencjalnych wynalazków. Wiele z tych elementów tworzy atrakcyjne przypadki biznesowe, które sugerują wysokie zwroty i generują atrakcyjny arkusz kalkulacyjny z uzasadnieniem biznesowym. Zgodnie z opisem w artykule kompilacja *Kompilowanie za pomocą empatię klienta* powinno mieć priorytet w odniesieniu do wynalazków, które opierają się tylko na projekcjach. Jeśli empatię klienta nie jest widoczny w propozycji, długoterminowe przyjęcie jest mało prawdopodobne.
+- **Wybieranie kandydatów innowacji:** Podczas inwestowania w innowacje firmy w dobrej kondycji duplikują dostawę potencjalnych wynalazków. Wiele z tych elementów tworzy atrakcyjne przypadki biznesowe, które sugerują wysokie zwroty i generują atrakcyjny arkusz kalkulacyjny z uzasadnieniem biznesowym. Zgodnie z opisem w artykule kompilacja _Kompilowanie za pomocą empatię klienta_ powinno mieć priorytet w odniesieniu do wynalazków, które opierają się tylko na projekcjach. Jeśli empatię klienta nie jest widoczny w propozycji, długoterminowe przyjęcie jest mało prawdopodobne.
 - **Równoważenie portfolio:** Większość implementacji technologicznych nie koncentruje się na zmianie rynku ani ulepszaniu klientów. W przypadku średniego działu IT obsługiwane są ponad 80% obciążeń dla automatyzacji procesów podstawowych. Dzięki łatwości innowacji można zachęcić do wprowadzania innowacji i wdrażania tych rozwiązań. Większość tych obciążeń może być podobna lub lepsza przez Migrowanie lub modernizację rozwiązania bez zmiany w przypadku podstawowych logiki biznesowej lub procesów danych. Zrównoważ swój portfolio, aby preferować strategie innowacji, które mogą być _kompilowane_ za pomocą czystego empatięu dla klienta (wewnętrzny lub zewnętrzny). W przypadku wszystkich innych obciążeń postępuj zgodnie ze ścieżką migracji do zwracanych przez finanse.
-- **Utrzymywanie fokusu i ochrony priorytetów:** Po dokonaniu zobowiązania do innowacji należy zachować fokus zespołu. Podczas pierwszej iteracji fazy *kompilacji* stosunkowo łatwo można utrzymywać przyjemnością zespołu o możliwościach zmiany przyszłości dla klientów. Jednak pierwsze wydanie MVP to dopiero początek. Prawdziwe innowacje są dostarczane z każdym cyklem kompilacji — uczenie się, przez zapoznanie się z pętlami opinii, aby utworzyć lepsze rozwiązanie. Jako lider w dowolnym procesie innowacji należy skoncentrować się na tym, że zespół koncentruje się na utrzymywaniu priorytetów innowacji przez kolejne, mniej glamorouse iteracje kompilacji.
+- **Utrzymywanie fokusu i ochrony priorytetów:** Po dokonaniu zobowiązania do innowacji należy zachować fokus zespołu. Podczas pierwszej iteracji fazy _kompilacji_ stosunkowo łatwo można utrzymywać przyjemnością zespołu o możliwościach zmiany przyszłości dla klientów. Jednak pierwsze wydanie MVP to dopiero początek. Prawdziwe innowacje są dostarczane z każdym cyklem kompilacji — uczenie się, przez zapoznanie się z pętlami opinii, aby utworzyć lepsze rozwiązanie. Jako lider w dowolnym procesie innowacji należy skoncentrować się na tym, że zespół koncentruje się na utrzymywaniu priorytetów innowacji przez kolejne, mniej glamorouse iteracje kompilacji.
 
 ## <a name="invention-challenges"></a>Wyzwania dotyczące wynalazku
 

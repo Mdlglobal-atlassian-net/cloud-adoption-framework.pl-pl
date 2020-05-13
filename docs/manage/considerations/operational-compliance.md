@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e693ba20984c46a8eae4497220e75c01d64abcbb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dc22c00d9470209f4442f1b9c4a194b8b1fdb417
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527645"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223936"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>Zgodność operacyjna w zarządzaniu chmurą
 
@@ -30,7 +30,7 @@ Zachowanie zgodności z zobowiązaniami operacyjnymi wymaga analizy, automatyzac
 
 ### <a name="resource-consistency"></a>Spójność zasobów
 
-Najbardziej skutecznym krokiem, jaki zespół zarządzający chmurą może podjąć w celu zapewnienia zgodności działania, ma na celu ustalenie spójności w organizacji i znakowaniu zasobów. Gdy zasoby są stale zorganizowane i znakowane, wszystkie inne zadania operacyjne stają się łatwiejsze. Aby uzyskać bardziej szczegółowe wskazówki dotyczące spójności zasobów, zapoznaj się z [etapem ładu](../../govern/index.md) cyklu życia wdrożenia chmury. W oddziałach do [początkowych artykułów do ładu Foundation](../../govern/initial-foundation.md) pokazano, jak rozpocząć tworzenie spójności zasobów.
+Najbardziej skutecznym krokiem, jaki zespół zarządzający chmurą może podjąć w celu zapewnienia zgodności działania, ma na celu ustalenie spójności w organizacji i znakowaniu zasobów. Gdy zasoby są stale zorganizowane i znakowane, wszystkie inne zadania operacyjne stają się łatwiejsze. Aby uzyskać bardziej szczegółowe wskazówki dotyczące spójności zasobów, zobacz [metodologia ładu](../../govern/index.md). Zapoznaj się z [artykułem wstępnego ładu](../../govern/initial-foundation.md) , aby dowiedzieć się, jak rozpocząć tworzenie spójności zasobów.
 
 ### <a name="environment-consistency"></a>Spójność środowiska
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ed5c0edf9ad7132c51311641d054bcfa9d9b0315
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 37a8a55762dc1ddb49e41673da1497cef4a1606f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997054"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223647"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -39,9 +39,9 @@ Zespół ds. chmury firmy Contoso ustalił cele tej migracji. Na podstawie tych 
 
 <!-- markdownlint-disable MD033 -->
 
-**Wymagania** | **Uzyskać**
+**Wymagania** | **Szczegóły**
 --- | ---
-**Aplikacja** | Aplikacja na platformie Azure będzie miała nadal krytyczne znaczenie dla działania firmy, tak jak dzisiaj.<br/><br/> Powinna ona mieć takie same możliwości związane z wydajnością, jak w przypadku programu VMware.<br/><br/> Zespół nie chce inwestować w aplikację. Na razie administratorzy będą bezpiecznie przenosić aplikację do chmury.<br/><br/> Zespół chce przestać obsługiwać system Windows Server 2008 R2, w którym aktualnie działa aplikacja.<br/><br/> Zespół chce również przejść z programu SQL Server 2008 R2 do nowoczesnej platformy bazy danych PaaS, która zminimalizuje potrzebę zarządzania.<br/><br/> Firma Contoso chce skorzystać z inwestycji w licencjonowanie programu SQL Server Licencjonowanie i pakiet Software Assurance, o ile jest to możliwe.<br/><br/> Ponadto firma Contoso chce wyeliminować pojedynczy punkt awarii w warstwie internetowej.
+**Aplikacja** | Aplikacja na platformie Azure będzie miała nadal krytyczne znaczenie dla działania firmy, tak jak dzisiaj. <br><br> Powinna ona mieć takie same możliwości związane z wydajnością, jak w przypadku programu VMware. <br><br> Zespół nie chce inwestować w aplikację. Na razie administratorzy będą bezpiecznie przenosić aplikację do chmury. <br><br> Zespół chce przestać obsługiwać system Windows Server 2008 R2, w którym aktualnie działa aplikacja. <br><br> Zespół chce również przejść z programu SQL Server 2008 R2 do nowoczesnej platformy bazy danych PaaS, która zminimalizuje potrzebę zarządzania. <br><br> Firma Contoso chce skorzystać z inwestycji w licencjonowanie programu SQL Server Licencjonowanie i pakiet Software Assurance, o ile jest to możliwe. <br><br> Ponadto firma Contoso chce wyeliminować pojedynczy punkt awarii w warstwie internetowej.
 **Ograniczenia** | Aplikacja składa się z aplikacji ASP.NET i usługi WCF uruchomionej na tej samej maszynie wirtualnej. Chcą rozłożyć te składniki na dwie aplikacje sieci Web przy użyciu Azure App Service.
 **Azure** | Firma Contoso chce przenieść aplikację na platformę Azure, ale nie chce jej uruchamiać na maszynach wirtualnych. Firma Contoso chce korzystać z usług Azure w warstwie internetowej i warstwie danych.
 **DevOps** | Firma Contoso chce przenieść się do modelu metodyki DevOps przy użyciu usługi Azure DevOps na potrzeby obsługi kompilacji i potoków wydań.
@@ -77,10 +77,12 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
 <!-- markdownlint-disable MD033 -->
 
-**Zagadnienie** | **Uzyskać**
+**Zagadnienie** | **Szczegóły**
 --- | ---
-**Zalety** | Kod aplikacji SmartHotel360 nie wymaga zmian dotyczących migracji na platformę Azure.<br/><br/> Firma Contoso może skorzystać z inwestycji w program Software Assurance i użyć korzyści użycia hybrydowego platformy Azure dla programu SQL Server i systemu Windows Server.<br/><br/> Po migracji system Windows Server 2008 R2 nie będzie musiał być obsługiwany. Aby uzyskać więcej informacji, zobacz [Zasady cyklu życia firmy Microsoft](https://aka.ms/lifecycle).<br/><br/> Firma Contoso może skonfigurować warstwę internetową aplikacji z wieloma wystąpieniami, dzięki czemu nie będzie ona już pojedynczym punktem awarii.<br/><br/> Baza danych nie będzie już zależeć od wieku programu SQL Server 2008 R2.<br/><br/> Baza danych SQL Database obsługuje wymagania techniczne. Firma Contoso oceniła lokalną bazę danych przy użyciu narzędzia Data Migration Assistant i stwierdziła, że jest ona zgodna.<br/><br/> Azure SQL Database ma wbudowaną odporność na uszkodzenia, której firma Contoso nie musi skonfigurować. Gwarantuje to, że warstwa danych nie jest już pojedynczym punktem awarii.<br/><br/> Jeśli firma Contoso używa Azure Database Migration Service do migrowania swojej bazy danych, będzie miała gotową infrastrukturę do migrowania baz danych na dużą skalę.
-**Wady** | Usługa Azure App Service obsługuje tylko jedno wdrożenie aplikacji dla każdej aplikacji internetowej. Oznacza to, że należy aprowizować dwie aplikacje internetowe (jedna dla witryny internetowej i druga dla usługi WCF).<br/><br/>
+**Zalety** | Kod aplikacji SmartHotel360 nie wymaga zmian dotyczących migracji na platformę Azure. <br><br> Firma Contoso może skorzystać z inwestycji w program Software Assurance i użyć korzyści użycia hybrydowego platformy Azure dla programu SQL Server i systemu Windows Server. <br><br> Po migracji system Windows Server 2008 R2 nie będzie musiał być obsługiwany. Aby uzyskać więcej informacji, zobacz [Zasady cyklu życia firmy Microsoft](https://aka.ms/lifecycle). <br><br> Firma Contoso może skonfigurować warstwę internetową aplikacji z wieloma wystąpieniami, dzięki czemu nie będzie ona już pojedynczym punktem awarii. <br><br> Baza danych nie będzie już zależeć od wieku programu SQL Server 2008 R2. <br><br> Baza danych SQL Database obsługuje wymagania techniczne. Firma Contoso oceniła lokalną bazę danych przy użyciu narzędzia Data Migration Assistant i stwierdziła, że jest ona zgodna. <br><br> Azure SQL Database ma wbudowaną odporność na uszkodzenia, której firma Contoso nie musi skonfigurować. Gwarantuje to, że warstwa danych nie jest już pojedynczym punktem awarii. <br><br> Jeśli firma Contoso używa Azure Database Migration Service do migrowania swojej bazy danych, będzie miała gotową infrastrukturę do migrowania baz danych na dużą skalę.
+**Wady** | Usługa Azure App Service obsługuje tylko jedno wdrożenie aplikacji dla każdej aplikacji internetowej. Oznacza to, że należy aprowizować dwie aplikacje internetowe (jedna dla witryny internetowej i druga dla usługi WCF).
+
+<br>
 
 <!-- markdownlint-enable MD033 -->
 
@@ -95,7 +97,7 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
     ![Proces migracji](./media/contoso-migration-refactor-web-app-sql/migration-process.png)
 
-### <a name="azure-services"></a>Usługi Azure
+### <a name="azure-services"></a>Usługi platformy Azure
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
@@ -111,9 +113,9 @@ Oto elementy, których firma Contoso potrzebuje do uruchomienia tego scenariusza
 
 <!-- markdownlint-disable MD033 -->
 
-**Wymagania** | **Uzyskać**
+**Wymagania** | **Szczegóły**
 --- | ---
-**Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje w jednym z poprzednich artykułów. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.
+**Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje w jednym z poprzednich artykułów. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial). <br><br> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje. <br><br> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.
 **Infrastruktura platformy Azure** | [Dowiedz się](./contoso-migration-infrastructure.md), jak firma Contoso skonfigurowała infrastrukturę platformy Azure.
 
 <!--markdownlint-enable MD033 -->
@@ -158,7 +160,7 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 
     ![Aprowizowanie kodu SQL](./media/contoso-migration-refactor-web-app-sql/provision-sql6.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - [Uzyskaj pomoc](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) przy aprowizacji bazy danych SQL Database.
 - [Dowiedz się więcej na temat](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) limitów zasobów rdzeń wirtualny.
@@ -243,7 +245,7 @@ Administratorzy firmy Contoso muszą upewnić się, że wszystkie aplikacje inte
 
 Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wykonania procesu kompilowania i wydawania.
 
-1. W usłudze Azure DevOps wybierają pozycję **kompilacja i wydanie** > **nowego potoku**.
+1. W usłudze Azure DevOps wybierają pozycję **kompilacja i wydanie**  >  **nowego potoku**.
 
     ![Nowy potok](./media/contoso-migration-refactor-web-app-sql/pipeline1.png)
 
@@ -270,7 +272,7 @@ Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wy
 
      ![Artefakt](./media/contoso-migration-refactor-web-app-sql/pipeline6.png)
 
-7. Wybierają **wersje** > **+ Nowy potok**.
+7. Wybierają **wersje**  >  **+ Nowy potok**.
 
     ![Nowy potok](./media/contoso-migration-refactor-web-app-sql/pipeline7.png)
 
@@ -310,7 +312,7 @@ Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wy
 
     ![Zapisywanie usługi WCF](./media/contoso-migration-refactor-web-app-sql/pipeline16.png)
 
-17. Wybierają **etapy potoku** > **Stages** **+ Dodaj**, aby dodać środowisko dla **SHWEB-EUS2**. Wybierają inne wdrożenie usługi Azure App Service.
+17. Wybierają **etapy potoku**  >  **Stages**, a następnie **dodają** , aby dodać środowisko dla **SHWEB-EUS2**. Wybierają inne wdrożenie usługi Azure App Service.
 
     ![Dodawanie środowiska](./media/contoso-migration-refactor-web-app-sql/pipeline17.png)
 
@@ -322,7 +324,7 @@ Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wy
 
      ![Podsumowanie potoku wydania](./media/contoso-migration-refactor-web-app-sql/pipeline19.png)
 
-20. Są one przenoszone do **kompilacji**, a następnie wybierz kolejno pozycje **wyzwalacze** > **Włącz ciągłą integrację**. Powoduje to włączenie potoku, gdy zmiany w kodzie zostaną zatwierdzone oraz gdy nastąpi pełna kompilacja i wydanie.
+20. Są one przenoszone do **kompilacji**, a następnie wybierz kolejno pozycje **wyzwalacze**  >  **Włącz ciągłą integrację**. Powoduje to włączenie potoku, gdy zmiany w kodzie zostaną zatwierdzone oraz gdy nastąpi pełna kompilacja i wydanie.
 
     ![Włączanie ciągłej integracji](./media/contoso-migration-refactor-web-app-sql/pipeline20.png)
 

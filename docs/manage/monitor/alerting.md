@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 5a3879e4b1d5a076e1869100471afbf4f7cd046e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 33aaab94c1f6758f6b77be62ab7a70ed2f6bc1ee
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997667"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223834"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -80,12 +80,14 @@ Azure Monitor obejmuje obsługę integracji z innymi platformami monitorowania i
 
 [Rozwiązania do zarządzania](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory) zwykle przechowują swoje dane w magazynie dzienników platformy Azure. Dwa wyjątki są Azure Monitor dla maszyn wirtualnych i Azure Monitor dla kontenerów. W poniższej tabeli opisano środowisko alertów w oparciu o określony typ danych i miejsce, w którym są przechowywane.
 
-Rozwiązanie| Typ danych | Zachowanie alertu
-:---|:---|:---
-Usługa Azure Monitor dla kontenerów | Obliczone średnie dane wydajności z węzłów i zasobników są zapisywane w magazynie metryk. | Tworzenie alertów dotyczących metryk, jeśli chcesz otrzymywać alerty w oparciu o wahania wydajności zmierzonego wykorzystania, zagregowane w czasie.
-|| Obliczone dane wydajności używające percentylów z węzłów, kontrolerów, kontenerów i zasobników są zapisywane w magazynie dzienników. Dzienniki kontenerów i informacje o spisie są również zapisywane w magazynie dzienników. | Utwórz alerty kwerendy dziennika, jeśli chcesz otrzymywać alerty na podstawie zmienności mierzonego użycia z klastrów i kontenerów. Alerty zapytań dzienników można również skonfigurować na podstawie liczby faz i liczby węzłów stanu.
-Usługa Azure Monitor dla maszyn wirtualnych | Kryteria kondycji są metrykami zapisanymi w magazynie metryk. | Alerty są generowane, gdy kondycja ulegnie zmianie z kondycji na złej kondycji. Ten alert obsługuje tylko grupy akcji, które są skonfigurowane do wysyłania wiadomości SMS lub powiadomień e-mail.
-|| Dane dziennika wydajności mapy i systemu operacyjnego gościa są zapisywane w magazynie dzienników. | Utwórz alerty zapytania dziennika.
+| Rozwiązanie | Typ danych | Zachowanie alertu |
+|---| ---| --- |
+| Usługa Azure Monitor dla kontenerów | Obliczone średnie dane wydajności z węzłów i zasobników są zapisywane w magazynie metryk. | Tworzenie alertów dotyczących metryk, jeśli chcesz otrzymywać alerty w oparciu o wahania wydajności zmierzonego wykorzystania, zagregowane w czasie. |
+| | Obliczone dane wydajności używające percentylów z węzłów, kontrolerów, kontenerów i zasobników są zapisywane w magazynie dzienników. Dzienniki kontenerów i informacje o spisie są również zapisywane w magazynie dzienników. | Utwórz alerty kwerendy dziennika, jeśli chcesz otrzymywać alerty na podstawie zmienności mierzonego użycia z klastrów i kontenerów. Alerty zapytań dzienników można również skonfigurować na podstawie liczby faz i liczby węzłów stanu. |
+Usługa Azure Monitor dla maszyn wirtualnych | Kryteria kondycji są metrykami zapisanymi w magazynie metryk. | Alerty są generowane, gdy kondycja ulegnie zmianie z kondycji na złej kondycji. Ten alert obsługuje tylko grupy akcji, które są skonfigurowane do wysyłania wiadomości SMS lub powiadomień e-mail. |
+| | Dane dziennika wydajności mapy i systemu operacyjnego gościa są zapisywane w magazynie dzienników. | Utwórz alerty zapytania dziennika. |
+
+<!-- docsTest:ignore "speed driven" -->
 
 ### <a name="fastest-speed-driven-by-cost"></a>Najszybsza szybkość według kosztu
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 6d59781c94355a6b5ca980950ca4f1e73108e818
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ff7c476737bed0f079cbebac736506cb6801bfd8
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996801"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223613"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -92,19 +92,19 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
 <!-- markdownlint-disable MD033 -->
 
-**Zagadnienie** | **Uzyskać**
+**Zagadnienie** | **Szczegóły**
 --- | ---
-**Zalety** | Maszyna wirtualna WEBVM zostanie przeniesiona na platformę Azure bez zmian, co oznacza prostą migrację.<br/><br/> Warstwa programu SQL Server będzie uruchamiana w programie SQL Server 2017 i systemie Windows Server 2016. Spowoduje to wycofanie aktualnego bieżącego systemu operacyjnego Windows Server 2008 R2, a program SQL Server 2017 będzie obsługiwać cele i wymagania techniczne firmy Contoso. Dział IT zapewnia całkowitą zgodność podczas odchodzenia od programu SQL Server 2008 R2.<br/><br/> Firma Contoso może skorzystać z inwestycji w program Software Assurance i zastosować korzyść użycia hybrydowego platformy Azure.<br/><br/> Wdrożenie programu SQL Server o wysokiej dostępności na platformie Azure zapewnia odporność na uszkodzenia, dzięki czemu warstwa danych aplikacji nie jest już jednym punktem przejścia w tryb failover.
-**Wady** | Na maszynie wirtualnej WEBVM jest uruchomiony system Windows Server 2008 R2. System operacyjny jest obsługiwany przez platformę Azure dla określonych ról (lipiec 2018). [Dowiedz się więcej](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines).<br/><br/> Warstwa internetowa aplikacji wciąż będzie stanowić pojedynczy punkt przejścia w tryb failover.<br/><br/> Firma Contoso nadal będzie musiała obsługiwać warstwę internetową jako maszynę wirtualną platformy Azure, zamiast przenieść ją do usługi zarządzanej, takiej jak Azure App Service.<br/><br/> Przy wybranym rozwiązaniu firma Contoso będzie musiała kontynuować zarządzanie dwoma maszynami wirtualnymi programu SQL Server zamiast przechodzić do platformy zarządzanej, takiej jak wystąpienie zarządzane usługi Azure SQL Database. Ponadto dzięki programowi Software Assurance firma Contoso może wymienić swoje istniejące licencje na obniżone stawki na wystąpienie zarządzane usługi Azure SQL Database.
+**Zalety** | Maszyna wirtualna WEBVM zostanie przeniesiona na platformę Azure bez zmian, co oznacza prostą migrację. <br><br> Warstwa programu SQL Server będzie uruchamiana w programie SQL Server 2017 i systemie Windows Server 2016. Spowoduje to wycofanie aktualnego bieżącego systemu operacyjnego Windows Server 2008 R2, a program SQL Server 2017 będzie obsługiwać cele i wymagania techniczne firmy Contoso. Dział IT zapewnia całkowitą zgodność podczas odchodzenia od programu SQL Server 2008 R2. <br><br> Firma Contoso może skorzystać z inwestycji w program Software Assurance i zastosować korzyść użycia hybrydowego platformy Azure. <br><br> Wdrożenie programu SQL Server o wysokiej dostępności na platformie Azure zapewnia odporność na uszkodzenia, dzięki czemu warstwa danych aplikacji nie jest już jednym punktem przejścia w tryb failover.
+**Wady** | Na maszynie wirtualnej WEBVM jest uruchomiony system Windows Server 2008 R2. System operacyjny jest obsługiwany przez platformę Azure dla określonych ról (lipiec 2018). [Dowiedz się więcej](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines). <br><br> Warstwa internetowa aplikacji wciąż będzie stanowić pojedynczy punkt przejścia w tryb failover. <br><br> Firma Contoso nadal będzie musiała obsługiwać warstwę internetową jako maszynę wirtualną platformy Azure, zamiast przenieść ją do usługi zarządzanej, takiej jak Azure App Service. <br><br> Przy wybranym rozwiązaniu firma Contoso będzie musiała kontynuować zarządzanie dwoma maszynami wirtualnymi programu SQL Server zamiast przechodzić do platformy zarządzanej, takiej jak wystąpienie zarządzane usługi Azure SQL Database. Ponadto dzięki programowi Software Assurance firma Contoso może wymienić swoje istniejące licencje na obniżone stawki na wystąpienie zarządzane usługi Azure SQL Database.
 
 <!-- markdownlint-enable MD033 -->
 
-### <a name="azure-services"></a>Usługi Azure
+### <a name="azure-services"></a>Usługi platformy Azure
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Usługa Azure Database Migration Service umożliwia bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. | Dowiedz się więcej o [obsługiwanych regionach](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) i [cenniku usługi Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
-[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną.
+[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną.
 
 ## <a name="migration-process"></a>Proces migracji
 
@@ -127,12 +127,12 @@ Oto czynności, które firma Contoso musi wykonać w ramach tego scenariusza.
 
 <!-- markdownlint-disable MD033 -->
 
-**Wymagania** | **Uzyskać**
---- | ---
-**Subskrypcja platformy Azure** | Firma Contoso utworzyła już subskrypcję na początku tej serii artykułów. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.<br/><br/>
-**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Infrastruktura platformy Azure wymagana do migracji](./contoso-migration-infrastructure.md).<br/><br/> Dowiedz się więcej na temat określonych [wymagań wstępnych](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) dotyczących migracji serwera usługi Azure Migrate.
-**Serwery lokalne** | Lokalny serwer vCenter powinien mieć uruchomioną wersję 5,5, 6,0, 6,5 lub 6,7<br/><br/> Host ESXi z systemem w wersji 5,5, 6,0, 6,5 lub 6,7<br/><br/> Co najmniej jedna maszyna wirtualna programu VMware uruchomiona na hoście ESXi.
-**Lokalne maszyny wirtualne** | [Przejrzyj maszyny z systemem Linux](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros), które zostały zatwierdzone do działania na platformie Azure.
+| **Wymagania** | **Szczegóły** |
+| --- | --- |
+| **Subskrypcja platformy Azure** | Firma Contoso utworzyła już subskrypcję na początku tej serii artykułów. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial). <br><br> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje. <br><br> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora. |
+| **Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Infrastruktura platformy Azure wymagana do migracji](./contoso-migration-infrastructure.md). <br><br> Dowiedz się więcej na temat wymagań [wstępnych](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) dotyczących Azure Migrate: Migracja serwera. |
+| **Serwery lokalne** | Lokalny serwer vCenter powinien mieć uruchomioną wersję 5,5, 6,0, 6,5 lub 6,7. <br><br> Host ESXi z systemem w wersji 5,5, 6,0, 6,5 lub 6,7. <br><br> Co najmniej jedna maszyna wirtualna programu VMware uruchomiona na hoście ESXi. |
+| **Lokalne maszyny wirtualne** | [Przejrzyj maszyny z systemem Linux](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros), które zostały zatwierdzone do działania na platformie Azure. |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -160,7 +160,7 @@ Administratorzy firmy Contoso konfigurują klaster w następujący sposób:
 
     ![Jednostka SKU maszyny wirtualnej SQL](./media/contoso-migration-rehost-vm-sql-ag/sql-vm-sku.png)
 
-2. W > oknie **Kreator tworzenia maszyny wirtualnej****—** konfiguracja:
+2. W oknie **Kreator tworzenia maszyny wirtualnej**  >  **—** konfiguracja:
 
     - Nazwy maszyn wirtualnych: **SQLAOG1** i **SQLAOG2**.
     - Ponieważ maszyny mają krytyczne znaczenie dla działania firmy, administratorzy włączają dysk SSD dla typu dysku maszyny wirtualnej.
@@ -180,7 +180,7 @@ Administratorzy firmy Contoso konfigurują klaster w następujący sposób:
 
     ![Maszyna wirtualna SQL](./media/contoso-migration-rehost-vm-sql-ag/sql-vm-db.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - [Uzyskaj pomoc](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings) przy aprowizacji maszyny wirtualnej programu SQL Server.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms) o konfigurowaniu maszyn wirtualnych dla różnych jednostek SKU programu SQL Server.
@@ -251,7 +251,7 @@ Administratorzy firmy Contoso mogą teraz włączyć rozwiązanie Zawsze włącz
 
 Po włączeniu rozwiązania Zawsze włączone firma Contoso może skonfigurować zawsze włączoną grupę dostępności, która będzie chronić bazę danych SmartHotel360.
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - [Przeczytaj informacje](https://docs.microsoft.com/windows-server/failover-clustering/deploy-cloud-witness) na temat monitora w chmurze i konfigurowania odpowiadającego mu konta magazynu.
 - [Uzyskaj instrukcje](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial) dotyczące konfigurowania klastra i tworzenia grupy dostępności.
@@ -264,7 +264,7 @@ Administratorzy firmy Contoso chcą teraz wdrożyć wewnętrzny moduł równowa�
 
 Tworzą moduł równoważenia obciążenia w następujący sposób:
 
-1. W**Load Balancer**Azure Portal > **Networking** > skonfiguruje nowy wewnętrzny moduł równoważenia obciążenia: **ILB-prod-DB-EUS2-SQLAOG**.
+1. W Load Balancer Azure Portal > **Networking**  >  **Load Balancer**skonfiguruje nowy wewnętrzny moduł równoważenia obciążenia: **ILB-prod-DB-EUS2-SQLAOG**.
 2. Umieszczają moduł równoważenia obciążenia w sieci produkcyjnej **VNET-PROD-EUS2** w podsieci **PROD-DB-EUS2**.
 3. Przypisują mu statyczny adres IP: 10.245.40.100.
 4. Jako element sieci wdrażają moduł równoważenia obciążenia w grupie zasobów sieciowych **ContosoNetworkingRG**.
@@ -310,7 +310,7 @@ Tworzą regułę w następujący sposób:
 
     ![Sonda](./media/contoso-migration-rehost-vm-sql-ag/nlb-probe.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - [Zapoznaj się z omówieniem](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview) usługi Azure Load Balancer.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal) na temat tworzenia modułu równoważenia obciążenia.
@@ -428,7 +428,7 @@ Po ukończeniu odnajdywania można rozpocząć replikację maszyn wirtualnych VM
 10. W obszarze **Przegląd i rozpoczynanie replikacji** sprawdź ustawienia, a następnie kliknij pozycję **Replikuj**, aby uruchomić replikację początkową dla serwerów.
 
 > [!NOTE]
-> Ustawienia replikacji można aktualizować w dowolnym momencie przed rozpoczęciem replikacji w obszarze **Zarządzanie** > **maszynami replikowanymi**. Ustawień nie można zmienić po rozpoczęciu replikacji.
+> Ustawienia replikacji można aktualizować w dowolnym momencie przed rozpoczęciem replikacji w obszarze **Zarządzanie**  >  **maszynami replikowanymi**. Ustawień nie można zmienić po rozpoczęciu replikacji.
 
 ## <a name="step-7-migrate-the-database-with-azure-database-migration-service-dms"></a>Krok 7. Migrowanie bazy danych za pomocą Azure Database Migration Service (DMS)
 
@@ -489,7 +489,7 @@ Po skonfigurowaniu wszystkich elementów firma Contoso ma teraz działającą gr
 
 ![Połączenie z wewnętrznym modułem równoważenia obciążenia](./media/contoso-migration-rehost-vm-sql-ag/ilb-connect.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - Dowiedz się więcej na temat [grupy dostępności](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group) i [odbiornika](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener).
 - Ręcznie [skonfiguruj klaster tak, aby używał adresu IP modułu równoważenia obciążenia](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address).
@@ -536,14 +536,14 @@ Próba przejścia do trybu failover pozwala sprawdzić, czy wszystko działa zgo
 
 W ostatnim kroku procesu migracji administratorzy firmy Contoso aktualizują parametry połączenia aplikacji tak, aby wskazywały migrowaną bazę danych działającą na odbiorniku SHAOG. Ta konfiguracja zostanie zmieniona na maszynie wirtualnej WEBVM działającej obecnie na platformie Azure. Ta konfiguracja znajduje się w pliku web.config aplikacji ASP.
 
-1. Znajdź plik w lokalizacji `C:\inetpub\SmartHotelWeb\web.config`. Zmień nazwę serwera w celu odzwierciedlenia nazwy FQDN odbiornika AOG: shaog.contoso.com.
+1. Znajdź plik w lokalizacji `C:\inetpub\SmartHotelWeb\web.config` . Zmień nazwę serwera w celu odzwierciedlenia nazwy FQDN odbiornika AOG: shaog.contoso.com.
 
     ![Tryb failover](./media/contoso-migration-rehost-vm-sql-ag/failover4.png)
 
 2. Po zaktualizowaniu pliku i zapisaniu go ponownie uruchamiają usługi IIS na maszynie wirtualnej WEBVM. Są one używane `iisreset /restart` z poziomu wiersza polecenia.
 3. Po ponownym uruchomieniu usług IIS aplikacja korzysta teraz z bazy danych działającej w programie SQL MI.
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure) o próbnym uruchamianiu trybu failover.
 - [Dowiedz się](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans), jak utworzyć plan odzyskiwania.
@@ -579,7 +579,7 @@ Aby uzyskać więcej informacji, zobacz [najlepsze rozwiązania w zakresie zabez
 
 W celu zapewnienia ciągłości działania i odzyskiwania po awarii (BCDR, Business Continuity and Disaster Recovery) firma Contoso podejmuje następujące działania:
 
-- Aby zapewnić bezpieczeństwo danych, firma Contoso tworzy kopie zapasowe danych na maszynach wirtualnych WEBVM, SQLAOG1 i SQLAOG2 za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=/azure/virtual-machines/linux/toc.json).
+- Aby zapewnić bezpieczeństwo danych, firma Contoso tworzy kopie zapasowe danych na maszynach wirtualnych WEBVM, SQLAOG1 i SQLAOG2 za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-overview).
 - Firma Contoso sprawdza również, jak używać usługi Azure Storage do tworzenia kopii zapasowych programu SQL Server bezpośrednio do magazynu obiektów blob. [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore).
 - Aby zachować działanie aplikacji, firma Contoso replikuje maszyny wirtualne aplikacji na platformie Azure do regionu pomocniczego za pomocą Site Recovery. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 

@@ -7,24 +7,26 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f961fa2b20fc5fc8fe2670b05b5a66d9e99c0805
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b6ccab2eb6f7f25ad83fa2d2a0592a557b7b79d0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120610"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224157"
 ---
+<!--docsTest:ignore "Oxford English Dictionary" -->
+
 # <a name="build-with-customer-empathy"></a>Tworzenie z empatią wobec klientów
 
-"Konieczność jest posługuje na wynalazku". Ta proverb przechwytuje indelibilitye ludzkie i nasz dysk naturalny do magazynu. Zgodnie z opisem w słowniku Oxford w języku angielskim, "gdy konieczna jest jego niezależność, należy wymusić, aby znaleźć sposoby ich uzyskania lub osiągnięcia". Kilka z nich będzie odrzucać te uniwersalne prawdy dotyczące wynalazków. Jednak zgodnie z opisem w [innowacyjności w sieci cyfrowej](./index.md)innowacje wymagają zrównoważenia *i* *przyjęcia*.
+"Konieczność jest posługuje na wynalazku". Ta proverb przechwytuje indelibilitye ludzkie i nasz dysk naturalny do magazynu. Zgodnie z opisem w słowniku Oxford w języku angielskim, "gdy konieczna jest jego niezależność, należy wymusić, aby znaleźć sposoby ich uzyskania lub osiągnięcia". Kilka z nich będzie odrzucać te uniwersalne prawdy dotyczące wynalazków. Jednak zgodnie z opisem w [innowacyjności w sieci cyfrowej](./index.md)innowacje wymagają zrównoważenia _i_ _przyjęcia_.
 
-Kontynuując pracę, innowacje pochodzą z bardziej rozszerzonej rodziny. *Klient empatię jest dumnym elementem nadrzędnym innowacji.* Tworzenie rozwiązania umożliwiającego wprowadzanie innowacji wymaga ważnego klienta&mdash;, który zapewnia klientowi powracanie do rozwiązywania krytycznych wyzwań. Rozwiązania te są oparte na tym, czego potrzebują klienci, a nie na ich chęci lub whims. Aby znaleźć prawdziwe potrzeby klientów, Zacznijmy od empatię&mdash;dogłębnej wiedzy na temat środowiska klienta. Empatię to niezawodna umiejętność dla wielu inżynierów, menedżerów produktów i nawet liderów firmy. Na szczęście różnorodne interakcje i szybki tempo roli architekta w chmurze już zaczęły wspierać tę umiejętność.
+Kontynuując pracę, innowacje pochodzą z bardziej rozszerzonej rodziny. *Klient empatię jest dumnym elementem nadrzędnym innowacji.* Tworzenie rozwiązania umożliwiającego wprowadzanie innowacji wymaga &mdash; ważnego klienta, który zapewnia klientowi powracanie do rozwiązywania krytycznych wyzwań. Rozwiązania te są oparte na tym, czego potrzebują klienci, a nie na ich chęci lub whims. Aby znaleźć prawdziwe potrzeby klientów, Zacznijmy od empatię dogłębnej wiedzy na temat &mdash; środowiska klienta. Empatię to niezawodna umiejętność dla wielu inżynierów, menedżerów produktów i nawet liderów firmy. Na szczęście różnorodne interakcje i szybki tempo roli architekta w chmurze już zaczęły wspierać tę umiejętność.
 
 Dlaczego empatię tak ważne? Od pierwszego wydania minimalnego produktu (MVP) do ogólnej dostępności rozwiązania do oceny rynkowej klient empatię pomaga nam zrozumieć i udostępnić środowisko klienta. Empatię pomaga nam w tworzeniu lepszego rozwiązania. Co ważniejsze, lepiej rozmieszczenie rozwiązań do rozliczeń, które będą zachęcać do wdrożenia. W przypadku sieci cyfrowej te, które najbardziej empathizeą potrzebom klientów, mogą tworzyć jaśniejsze przyszłość, które ponownie definiują i prowadzą do rynku.
 
 ## <a name="how-to-build-with-empathy"></a>Jak skompilować przy użyciu empatię
 
-Planowanie jest w sposób wewnętrzny wykonywany w definiowaniu założeń. Im więcej planujesz, tym więcej widzimy, że założono narzut na grzbiet w fundamentie wspaniałego pomysłu. Założenia założeń są produktami empatię&mdash;innymi słowy, "co należy zrobić, jeśli znajdowały się na tej pozycji?". Począwszy od fazy kompilacji minimalizuje okres, w którym założenia mogą Invade rozwiązanie. Takie podejście skraca również pętlę opinii z rzeczywistymi klientami, wyzwalając wcześniejszą okazje do uczenia i wyostrzania empatię.
+Planowanie jest w sposób wewnętrzny wykonywany w definiowaniu założeń. Im więcej planujesz, tym więcej widzimy, że założono narzut na grzbiet w fundamentie wspaniałego pomysłu. Założenia założeń są produktami empatię &mdash; innymi słowy, "co należy zrobić, jeśli znajdowały się na tej pozycji?". Począwszy od fazy kompilacji minimalizuje okres, w którym założenia mogą Invade rozwiązanie. Takie podejście skraca również pętlę opinii z rzeczywistymi klientami, wyzwalając wcześniejszą okazje do uczenia i wyostrzania empatię.
 
 > [!CAUTION]
 > Prawidłowe zdefiniowanie elementów do skompilowania może być kłopotliwe i wymaga pewnych rozwiązań. Jeśli kompilujesz coś zbyt szybko, jeśli nie odzwierciedla potrzeby klientów. Jeśli poświęcasz zbyt dużo czasu na zapoznanie się z początkowymi potrzebami klientów i wymaganiami dotyczącymi rozwiązań, rynek może je spełnić, zanim będzie można w ogóle skompilować wszystko. W każdym scenariuszu okazja do uczenia się może być znacząco opóźniona lub zmniejszana. Czasami dane mogą nawet być uszkodzone.
@@ -47,7 +49,7 @@ Ostatnim krokiem jest culmination hipotezy opartej na empatię. Definiuje odbior
 > [!CAUTION]
 > Celem jest _Kompilowanie_ za pomocą empatię klienta, a nie do _planowania_ . Jest ona zbyt łatwa do zablokowania w nieskończonych cyklach planowania i dostosowywania się do trafień w ramach doskonałej instrukcji Customer empatię. Przed podjęciem próby opracowania takiej instrukcji zapoznaj się z poniższymi sekcjami dotyczącymi definiowania i kompilowania programu MVP.
 
-Po sprawdzoniu podstawowych założeń, późniejsze iteracje koncentrują się na testach wzrostu oprócz testów empatię. Po skompilowaniu, przetestowaniu i zweryfikowaniu empatię można zacząć zrozumieć rynek z możliwością adresowania na dużą skalę. Można to zrobić za pomocą rozszerzenia standardowej formuły hipotezy opisanej wcześniej. Na podstawie dostępnych danych należy oszacować rozmiar łącznego rynku&mdash;liczby potencjalnych klientów.
+Po sprawdzoniu podstawowych założeń, późniejsze iteracje koncentrują się na testach wzrostu oprócz testów empatię. Po skompilowaniu, przetestowaniu i zweryfikowaniu empatię można zacząć zrozumieć rynek z możliwością adresowania na dużą skalę. Można to zrobić za pomocą rozszerzenia standardowej formuły hipotezy opisanej wcześniej. Na podstawie dostępnych danych należy oszacować rozmiar łącznego rynku &mdash; liczby potencjalnych klientów.
 
 Z tego miejsca należy oszacować wartość procentową tego łącznego rynku, która napotyka podobną wyzwania i która może być zainteresować to rozwiązanie. Jest to Twój rynek z adresami. Kolejna hipoteza, która ma zostać przetestowana, to: w jaki sposób będzie ulepszona _x_% klientów, przy użyciu proponowanego rozwiązania, które umożliwi rozwiązanie tego typu wyzwania do zarządzania? Małe próbkowanie klientów spowoduje ujawnienie wiodących wskaźników, które sugerują procentowy wpływ na pulę zaangażowanych klientów.
 
@@ -55,7 +57,7 @@ Z tego miejsca należy oszacować wartość procentową tego łącznego rynku, k
 
 Podczas każdej iteracji pętli Build-Measure-uczenie się, Próba skompilowania z empatię jest definiowana przez SPECJALISTę.
 
-MVP to najmniejsza jednostka nakładu pracy (wynalazk, inżynieria, programowanie aplikacji lub architektura danych) wymagana do utworzenia wystarczającej ilości rozwiązania do uczenia się _z klientem_. Celem każdego MVP jest przetestowanie niektórych lub wszystkich poprzednich postanowień oraz uzyskanie opinii bezpośrednio od klienta. Dane wyjściowe nie są atrakcyjną aplikacją ze wszystkimi funkcjami wymaganymi do zmiany branży. Żądane dane wyjściowe każdej iteracji to okazja&mdash;do dokładniejszego przetestowania hipotez.
+MVP to najmniejsza jednostka nakładu pracy (wynalazk, inżynieria, programowanie aplikacji lub architektura danych) wymagana do utworzenia wystarczającej ilości rozwiązania do uczenia się _z klientem_. Celem każdego MVP jest przetestowanie niektórych lub wszystkich poprzednich postanowień oraz uzyskanie opinii bezpośrednio od klienta. Dane wyjściowe nie są atrakcyjną aplikacją ze wszystkimi funkcjami wymaganymi do zmiany branży. Żądane dane wyjściowe każdej iteracji to okazja &mdash; do dokładniejszego przetestowania hipotez.
 
 _Timeboxing_ to standardowy sposób, aby upewnić się, że produkt pozostaje w postaci oszczędnej. Na przykład upewnij się, że zespół programistyczny traktuje rozwiązanie w jednej iteracji, aby umożliwić szybkie testowanie. Aby lepiej zrozumieć użycie szybkości, iteracji i wydań w celu zdefiniowania minimalnych środków, zobacz [szybkość planowania, iteracje, wersja i ścieżki iteracji](../../plan/iteration-paths.md).
 
@@ -65,7 +67,7 @@ _Timeboxing_ to standardowy sposób, aby upewnić się, że produkt pozostaje w 
 
 W jednej iteracji nie można utworzyć całości funkcji i różnych dyscyplin wynalazku. Rozwiązanie MVP może potrwać kilka wydań, aby uwzględnić złożoność wielu dyscyplin. W zależności od inwestycji w rozwój może istnieć wiele równoległych zespołów pracujących w różnych dziedzinach w celu przetestowania wielu z nich. Chociaż jest to inteligentne zachowanie podczas wyrównywania architektury między tymi zespołami, nie trzeba próbować kompilować złożonych, zintegrowanych rozwiązań do momentu, w którym można sprawdzić poprawność wartości.
 
-Stopień złożoności najlepiej wykrywa się w częstotliwości lub ilości *skoków technicznych*. W celu utworzenia rozwiązań technicznych, których klienci nie mogą łatwo przetestować, są nadawane techniczne działania. Gdy wartość klienta i empatię klienta są nietestowane, przekroczenia techniczne reprezentują ryzyko dla innowacji i powinny być zminimalizowane. W przypadku typów zakończonych przetestowanych rozwiązań znalezionych w ramach wysiłków związanych z migracją mogą być często wdrażane techniczne. Jednak opóźniają one testowanie hipotez w miarę innowacji i powinny być odroczone wszędzie tam, gdzie to możliwe.
+Stopień złożoności najlepiej wykrywa się w częstotliwości lub ilości _skoków technicznych_. W celu utworzenia rozwiązań technicznych, których klienci nie mogą łatwo przetestować, są nadawane techniczne działania. Gdy wartość klienta i empatię klienta są nietestowane, przekroczenia techniczne reprezentują ryzyko dla innowacji i powinny być zminimalizowane. W przypadku typów zakończonych przetestowanych rozwiązań znalezionych w ramach wysiłków związanych z migracją mogą być często wdrażane techniczne. Jednak opóźniają one testowanie hipotez w miarę innowacji i powinny być odroczone wszędzie tam, gdzie to możliwe.
 
 Podejście upraszczające bezlitosne jest sugerowane dla każdej definicji MVP. To podejście oznacza usunięcie wszystkich elementów, które nie dodają się do sprawdzenia hipotezy. Aby zminimalizować złożoność, zmniejsz liczbę integracji i funkcji, które nie są wymagane do przetestowania hipotez.
 
@@ -105,7 +107,7 @@ Istnieje wiele wymagań prawnych, zgodności i branżowych, które mogą wymaga�
 
 <!-- cSpell:ignore Ries -->
 
-Niektóre koncepcje w tym artykule zostały omówione w temacie dotyczącym [*uruchamiania produkcji oszczędnej*](http://theleanstartup.com/book) (Eric Ries, działalność korony, 2011).
+Niektóre koncepcje w tym artykule zostały omówione w tematach dotyczących [_uruchamiania produkcji oszczędnej_](http://theleanstartup.com/book) przez Eric.
 
 ## <a name="next-steps"></a>Następne kroki
 

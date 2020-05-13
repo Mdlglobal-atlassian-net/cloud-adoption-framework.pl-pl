@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6049c11e1c80ab13ea5429582dae662ef1937983
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 41134eacc0fbb5356fdff1a56dc292465e6e8750
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430072"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223885"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Zastosuj zasady projektowania i zaawansowane operacje
 
@@ -99,7 +99,7 @@ Aby uzyskać wskazówki dotyczące zautomatyzowanego korygowania, zobacz [Azure 
 
 ### <a name="scale-the-solution-with-a-service-catalog"></a>Skalowanie rozwiązania przy użyciu katalogu usług
 
-Podstawą specjalizacji platformy i operacji platformy jest dobrze zarządzany katalog usług. Jest to sposób skalowania ulepszeń projektowania i korygowania systemów w środowisku. Zespół platformy w chmurze współpracuje z zespołem automatyzacji chmury, tworząc powtarzalne rozwiązania dla najpopularniejszych platform w dowolnym środowisku. Ale jeśli te rozwiązania nie są stosowane w sposób ciągły, zarządzanie chmurą może zapewnić nieco więcej niż ofertę bazową.
+Podstawą specjalizacji platformy i operacji platformy jest dobrze zarządzany katalog usług. Jest to sposób skalowania ulepszeń projektowania i korygowania systemów w środowisku. Zespół platformy w chmurze współpracuje z zespołem automatyzacji chmury, tworząc powtarzalne rozwiązania dla najpopularniejszych platform w dowolnym środowisku. Jeśli jednak te rozwiązania nie są stosowane w sposób ciągły, zarządzanie chmurą może zapewnić nieco więcej niż ofertę bazową.
 
 Aby zmaksymalizować wdrożenie i zminimalizować obciążenie związane z konserwacją dowolnej zoptymalizowanej platformy, należy dodać platformę do katalogu usług. Każdą aplikację w katalogu można wdrożyć do użytku wewnętrznego za pośrednictwem katalogu usług lub jako ofertę platformy handlowej dla użytkowników zewnętrznych.
 
@@ -107,7 +107,7 @@ Informacje o publikowaniu w katalogu usług znajdują się w sekcji w temacie [P
 
 ### <a name="continuous-improvement"></a>Ciągłe ulepszanie
 
-Specjalizacja i operacje platformy zależą od silnych cykli wymiany opinii między zespołami wdrażania, platformy, automatyzacji i zarządzania. Osadzenie tych cykli wymiany opinii w danych pozwala każdemu zespołowi podejmować mądre decyzje. W przypadku operacji na platformie w celu osiągnięcia długoterminowych zobowiązań gospodarczych należy skorzystać z szczegółowych informacji, które są specyficzne dla scentralizowanej platformy. Ponieważ kontenery i SQL Server są dwa najpopularniejsze platformy zarządzane centralnie, należy rozważyć wprowadzenie do zbierania danych ciągłego ulepszania, przeglądając następujące artykuły:
+Specjalizacja i operacje platformy zależą od silnych cykli wymiany opinii między zespołami wdrażania, platformy, automatyzacji i zarządzania. Osadzenie tych cykli wymiany opinii w danych pozwala każdemu zespołowi podejmować mądre decyzje. W przypadku operacji na platformie w celu osiągnięcia długoterminowych zobowiązań gospodarczych należy skorzystać z szczegółowych informacji, które są specyficzne dla scentralizowanej platformy. Ponieważ kontenery i SQL Server są dwoma najpopularniejszymi platformami zarządzanymi centralnie, warto rozważyć rozpoczęcie zbierania danych ciągłej poprawy, przeglądając następujące artykuły:
 
 - [Wydajność kontenerów](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
 - [Wydajność bazy danych PaaS](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)

@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: c1e34c9f13a170abd1f00b603537c73ce51688da
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4db3e7b94d370ebc50fa96c92e019ca9b2839497
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396086"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224208"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Zdefiniuj zasady firmowe na potrzeby ładu w chmurze
 
@@ -22,13 +22,13 @@ Po przeanalizowaniu znanego ryzyka i powiązanej tolerancji ryzyka dla podróży
 
 ## <a name="how-can-corporate-it-policy-become-cloud-ready"></a>Jak przygotować firmowe zasady IT do użycia w chmurze?
 
-Zarówno w tradycyjnym, jak i w przyrostowym modelu zapewniania ładu zasady firmowe tworzą roboczą definicję ładu. Większość akcji podejmowanych w celu zapewnienia ładu IT koncentruje się na implementowaniu technologii w celu monitorowania, wymuszania, obsługiwania i automatyzowania tych zasad firmowych. Zarządzanie chmurą jest stworzone w oparciu o podobne koncepcje.
+Zarówno w tradycyjnym, jak i w przyrostowym modelu zapewniania ładu zasady firmowe tworzą roboczą definicję ładu. Większość akcji podejmowanych w celu zapewnienia ładu IT koncentruje się na implementowaniu technologii w celu monitorowania, wymuszania, obsługiwania i automatyzowania tych zasad firmowych. Ład w chmurze jest oparty na podobnych pojęciach.
 
-![Dyscypliny nadzoru i ładu korporacyjnego](../../_images/operational-transformation-govern-highres.png)
+![Ład korporacyjny i dyscypliny ładu](../../_images/operational-transformation-govern-highres.png)
 
-*Rysunek 1 — ład korporacyjny i dyscypliny ładu.*
+_Rysunek 1: ładu korporacyjne i dyscypliny ładu._
 
-Na powyższym obrazie przedstawiono relację między ryzykiem biznesowym, zasadami i zgodnością oraz mechanizmami monitorowania i wymuszania, które będą musiały współdziałać w ramach strategii zarządzania. Pięć dyscyplin zarządzania chmurą pozwala zarządzać tymi interakcjami i korzystać z strategii.
+Na powyższym obrazie przedstawiono relację między ryzykiem biznesowym, zasadami i zgodnością oraz mechanizmami monitorowania i wymuszania, które muszą współdziałać w ramach strategii zarządzania. Pięć dyscyplin zarządzania chmurą pozwala zarządzać tymi interakcjami i korzystać z strategii.
 
 Ład w chmurze to wynik trwającego dłuższy czas wdrażania, ponieważ naprawdę trwała transformacja nie dokonuje się w ciągu jednego dnia. Próba zapewnienia kompletnego ładu w chmurze za pomocą szybkiej i agresywnej metody przed przeprowadzeniem kluczowych zmian zasad firmy rzadko daje oczekiwane wyniki. Zamiast tego zaleca się wprowadzanie przyrostowych zmian.
 
@@ -55,7 +55,7 @@ Poszczególne instrukcje dotyczące zasad chmury to wskazówki dotyczące rozwi�
 - **Instrukcja zasad:** Zwięzłe wyjaśnienie wymagań zasad i celów.
 - **Wskazówki dotyczące projektowania lub technicznego:** Zalecenia z możliwością wykonania akcji, specyfikacje lub inne wskazówki dotyczące obsługi i wymuszania tych zasad, których zespoły IT i deweloperzy mogą używać podczas projektowania i kompilowania wdrożeń w chmurze.
 
-Jeśli potrzebujesz pomocy przy definiowaniu zasad, zapoznaj się z [dyscyplinami ładu](../governance-disciplines.md) wprowadzonymi w sekcji ładu przegląd. Artykuły dla każdej z tych dyscyplin obejmują przykłady typowych zagrożeń dla firmy, które występują podczas przechodzenia do chmury i przykładowych zasad służących do korygowania tych zagrożeń. Na przykład zobacz [przykładowe definicje zasad](../cost-management/policy-statements.md)w Cost Management dyscypliny.
+Jeśli potrzebujesz pomocy w rozpoczęciu definiowania zasad, zapoznaj się z tematami [ładu](../governance-disciplines.md) , które zostały wprowadzone w sekcji ładu przegląd. Artykuły dla każdej z tych dyscyplin obejmują przykłady typowych zagrożeń dla firmy, które występują podczas przechodzenia do chmury i przykładowych zasad służących do korygowania tych zagrożeń. Na przykład zobacz [przykładowe definicje zasad](../cost-management/policy-statements.md)w Cost Management dyscypliny.
 
 ## <a name="incremental-governance-and-integrating-with-existing-policy"></a>Stopniowe zarządzanie i integrowanie z istniejącymi zasadami
 

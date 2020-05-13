@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 80eba5ddb0d92bef638cb2925515268818c50735
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bdc4f36460acdb86e1bee55969044ad03b198285
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427407"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224123"
 ---
 <!-- cSpell:ignore Satya Nadella Ries -->
 
@@ -45,7 +45,7 @@ Kilka z nich może odmówić przekształcenia pierwiastka w kulturze firmy Micro
 - **Ciągła nauka:** Fokus klienta i empatię klienta pochodzą od informacji o tym, że sposób myślenia. Metoda innowacje dokłada starań, aby dowiedzieć się, jak to wszystko — wszystko — wszystko.
 - **Sposób myślenia początkujących:** Przedstawiaj empatię, zbliżając się do każdej rozmowy z sposób myśleniaem na początku. Bez względu na to, czy jesteś nowym polem, czy z 30-letnim kombatanta, Zapamiętaj, że wiesz, że masz wątpliwości i uzyskasz wiele informacji.
 - **Posłuchaj więcej:** Klienci chcą być partnerem. Niestety, ego muszą mieć odpowiednie bloki, które współpracują. Aby dowiedzieć się więcej na temat metryk, należy mówić mniej więcej i słuchać więcej.
-- **Zachęcaj inne:** Nie tylko Nasłuchuj; Aby zachęcić inne osoby *, użyj zapowiadanych* rzeczy. W każdym spotkaniu Znajdź sposoby ściągania różnorodnych perspektyw od osób, które mogą nie być szybkie do udostępnienia.
+- **Zachęcaj inne:** Nie tylko Nasłuchuj; Aby zachęcić inne osoby **, użyj zapowiadanych** rzeczy. W każdym spotkaniu Znajdź sposoby ściągania różnorodnych perspektyw od osób, które mogą nie być szybkie do udostępnienia.
 - **Udostępnij kod:** W przypadku, gdy obawiamy się, że jest to własność kodu podstawowego, utracimy wgląd w prawdziwą moc innowacji. Skup się na swoich klientach i kierowaniu do nich. Udostępnij swój kod (publicznie ze świata lub prywatnie w firmie), aby zaprosić różne perspektywy do rozwiązania i podstawy kodu.
 - Zapoznaj się z **działaniem:** Sukces nie musi oznaczać, że widzisz prawdziwą empatię klientów. Unikaj stałego sposób myślenia i odchylenia w kierunku wykonywania zadań przed. Poszukaj najlepszych i negatywnych metryk dzięki zaangażowaniu klientów.
 - **Należy włączać:** Pracuj na trudne do zapraszania różnorodnych perspektyw do mieszania. Istnieje wiele zmiennych, które mogą dzielić ludzi na grupy oddzielone. Normy kulturowe, wcześniejsze zachowania, płeć, religii, preferencje seksualne, nawet fizyczne możliwości. Prawdziwe innowacje są dostępne, gdy firma Microsoft wzywa wypróbujemy, aby poznać nasze różnice i świadomie dążyć do uwzględnienia wszystkich klientów, partnerów i współpracowników.

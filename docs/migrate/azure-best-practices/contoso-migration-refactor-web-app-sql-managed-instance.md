@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 7456d74ac4702ee403583148aa8c3f5491ef5721
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0e288b29077d68ee4b0c0522537abe0baaa276ac
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120720"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223698"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -39,9 +39,9 @@ Zespół ds. chmury firmy Contoso ustalił cele tej migracji. Na podstawie tych 
 
 <!-- markdownlint-disable MD033 -->
 
-**Wymagania** | **Uzyskać**
+**Wymagania** | **Szczegóły**
 --- | ---
-**Aplikacja** | Aplikacja na platformie Azure będzie miała nadal krytyczne znaczenie dla działania firmy, tak jak dzisiaj.<br/><br/> Powinna ona mieć takie same możliwości związane z wydajnością, jak w przypadku programu VMware.<br/><br/> Zespół nie chce inwestować w aplikację. Na razie administratorzy będą po prostu bezpiecznie przenosić aplikację do chmury.<br/><br/> Zespół chce przestać obsługiwać system Windows Server 2008 R2, w którym aktualnie działa aplikacja.<br/><br/> Zespół chce również przejść z programu SQL Server 2008 R2 do nowoczesnej platformy bazy danych PaaS, która zminimalizuje potrzebę zarządzania.<br/><br/> Firma Contoso chce skorzystać z inwestycji w licencjonowanie programu SQL Server Licencjonowanie i pakiet Software Assurance, o ile jest to możliwe.<br/><br/> Ponadto firma Contoso chce wyeliminować pojedynczy punkt awarii w warstwie internetowej.
+**Aplikacja** | Aplikacja na platformie Azure będzie miała nadal krytyczne znaczenie dla działania firmy, tak jak dzisiaj. <br><br> Powinna ona mieć takie same możliwości związane z wydajnością, jak w przypadku programu VMware. <br><br> Zespół nie chce inwestować w aplikację. Na razie administratorzy będą po prostu bezpiecznie przenosić aplikację do chmury. <br><br> Zespół chce przestać obsługiwać system Windows Server 2008 R2, w którym aktualnie działa aplikacja. <br><br> Zespół chce również przejść z programu SQL Server 2008 R2 do nowoczesnej platformy bazy danych PaaS, która zminimalizuje potrzebę zarządzania. <br><br> Firma Contoso chce skorzystać z inwestycji w licencjonowanie programu SQL Server Licencjonowanie i pakiet Software Assurance, o ile jest to możliwe. <br><br> Ponadto firma Contoso chce wyeliminować pojedynczy punkt awarii w warstwie internetowej.
 **Ograniczenia** | Aplikacja składa się z aplikacji ASP.NET i usługi WCF uruchomionej na tej samej maszynie wirtualnej. Ma ona zostać podzielona na dwie aplikacje internetowe przy użyciu usługi Azure App Service.
 **Azure** | Firma Contoso chce przenieść aplikację na platformę Azure, ale nie chce jej uruchamiać na maszynach wirtualnych. Firma Contoso chce korzystać z usług Azure w warstwie internetowej i warstwie danych.
 **DevOps** | Firma Contoso chce przenieść się do modelu metodyki DevOps przy użyciu usługi Azure DevOps na potrzeby obsługi kompilacji i potoków wydań.
@@ -63,7 +63,7 @@ Po określeniu celów i wymagań firma Contoso planuje i ocenia rozwiązanie do 
 ### <a name="proposed-solution"></a>Proponowane rozwiązanie
 
 - W przypadku warstwy internetowej aplikacji firma Contoso zdecydowała się użyć usługi Azure App Service. Ta usługa PaaS umożliwia wdrożenie aplikacji przy użyciu tylko kilku zmian konfiguracji. Firma Contoso będzie używać programu Visual Studio do wprowadzania zmian i wdrażania dwóch aplikacji internetowych. Jedna z nich będzie związana z witryny internetową, a druga z usługą WCF.
-- Aby spełnić wymagania stawiane przez potok DevOps, firma Contoso wybrała opcję użycia usługi Azure DevOps i repozytoriów Git do zarządzania kodem źródłowym. Do kompilowania kodu i wdrażania go w usłudze Azure App Service będą używane zautomatyzowane kompilacje i wydania.
+- Aby spełnić wymagania dotyczące potoku DevOps, firma Contoso zabrała usługę Azure DevOps do zarządzania kodem źródłowym przy użyciu repozytoriów Git. Do kompilowania kodu i wdrażania go w usłudze Azure App Service będą używane zautomatyzowane kompilacje i wydania.
 
 ### <a name="database-considerations"></a>Zagadnienia dotyczące bazy danych
 
@@ -83,10 +83,10 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
 <!-- markdownlint-disable MD033 -->
 
-**Zagadnienie** | **Uzyskać**
+**Zagadnienie** | **Szczegóły**
 --- | ---
-**Zalety** | Nie trzeba zmieniać kodu aplikacji SmartHotel360 w celu przeprowadzenia migracji na platformę Azure.<br/><br/> Firma Contoso może skorzystać z inwestycji w program Software Assurance i użyć korzyści użycia hybrydowego platformy Azure dla programu SQL Server i systemu Windows Server.<br/><br/> Po migracji obsługa systemu Windows Server 2008 R2 nie będzie konieczna. Aby uzyskać więcej informacji, zobacz [Zasady cyklu życia firmy Microsoft](https://aka.ms/lifecycle).<br/><br/> Firma Contoso może skonfigurować warstwę internetową aplikacji z wieloma wystąpieniami, dzięki czemu nie będzie ona już pojedynczym punktem awarii.<br/><br/> Baza danych nie będzie już zależeć od wieku programu SQL Server 2008 R2.<br/><br/> Wystąpienie zarządzane SQL spełnia wymagania techniczne i cele firmy Contoso.<br/><br/> Wystąpienie zarządzane zapewni 100-procentową zgodność z bieżącym wdrożeniem przy jednoczesnym zaprzestaniu korzystania z programu SQL Server 2008 R2.<br/><br/> Firma może skorzystać z inwestycji w program Software Assurance i użyć korzyści użycia hybrydowego platformy Azure dla programu SQL Server i systemu Windows Server.<br/><br/> Może ponownie użyć usługi Azure Database Migration Service na potrzeby dodatkowych przyszłych migracji.<br/><br/> Wystąpienie zarządzane SQL ma wbudowaną odporność na uszkodzenia, której firma Contoso nie musi konfigurować. Gwarantuje to, że warstwa danych nie jest już pojedynczym punktem awarii.
-**Wady** | Usługa Azure App Service obsługuje tylko jedno wdrożenie aplikacji dla każdej aplikacji internetowej. Oznacza to, że należy aprowizować dwie aplikacje internetowe (jedna dla witryny internetowej i druga dla usługi WCF).<br/><br/>W przypadku warstwy danych wystąpienie zarządzane może nie być najlepszym rozwiązaniem, jeśli firma Contoso chce dostosować system operacyjny lub serwer bazy danych lub jeśli chce uruchamiać aplikacje innych firm wraz z programem SQL Server. Uruchomienie programu SQL Server na maszynie wirtualnej IaaS może zapewnić taką elastyczność.
+**Zalety** | Nie trzeba zmieniać kodu aplikacji SmartHotel360 w celu przeprowadzenia migracji na platformę Azure. <br><br> Firma Contoso może skorzystać z inwestycji w program Software Assurance i użyć korzyści użycia hybrydowego platformy Azure dla programu SQL Server i systemu Windows Server. <br><br> Po migracji obsługa systemu Windows Server 2008 R2 nie będzie konieczna. Aby uzyskać więcej informacji, zobacz [Zasady cyklu życia firmy Microsoft](https://aka.ms/lifecycle). <br><br> Firma Contoso może skonfigurować warstwę internetową aplikacji z wieloma wystąpieniami, dzięki czemu nie będzie ona już pojedynczym punktem awarii. <br><br> Baza danych nie będzie już zależeć od wieku programu SQL Server 2008 R2. <br><br> Wystąpienie zarządzane SQL spełnia wymagania techniczne i cele firmy Contoso. <br><br> Wystąpienie zarządzane zapewni 100-procentową zgodność z bieżącym wdrożeniem przy jednoczesnym zaprzestaniu korzystania z programu SQL Server 2008 R2. <br><br> Firma może skorzystać z inwestycji w program Software Assurance i użyć korzyści użycia hybrydowego platformy Azure dla programu SQL Server i systemu Windows Server. <br><br> Może ponownie użyć usługi Azure Database Migration Service na potrzeby dodatkowych przyszłych migracji. <br><br> Wystąpienie zarządzane SQL ma wbudowaną odporność na uszkodzenia, której firma Contoso nie musi konfigurować. Gwarantuje to, że warstwa danych nie jest już pojedynczym punktem awarii.
+**Wady** | Usługa Azure App Service obsługuje tylko jedno wdrożenie aplikacji dla każdej aplikacji internetowej. Oznacza to, że należy aprowizować dwie aplikacje internetowe (jedna dla witryny internetowej i druga dla usługi WCF). <br><br> W przypadku warstwy danych wystąpienie zarządzane może nie być najlepszym rozwiązaniem, jeśli firma Contoso chce dostosować system operacyjny lub serwer bazy danych lub jeśli chce uruchamiać aplikacje innych firm wraz z programem SQL Server. Uruchomienie programu SQL Server na maszynie wirtualnej IaaS może zapewnić taką elastyczność.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -101,12 +101,12 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
     ![Proces migracji](./media/contoso-migration-refactor-web-app-sql-managed-instance/migration-process.png)
 
-### <a name="azure-services"></a>Usługi Azure
+### <a name="azure-services"></a>Usługi platformy Azure
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Usługa Azure Database Migration Service umożliwia bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. | Dowiedz się więcej o [obsługiwanych regionach](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) i [cenniku usługi Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
-[Wystąpienie zarządzane usługi Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Wystąpienie zarządzane to usługa zarządzanej bazy danych, która reprezentuje w pełni zarządzane wystąpienie programu SQL Server w chmurze platformy Azure. Używa tego samego kodu co najnowsza wersja aparatu bazy danych programu SQL Server oraz ma najnowsze funkcje, ulepszenia wydajności i poprawki zabezpieczeń. | Korzystanie z wystąpienia zarządzanego usługi SQL Database uruchomionego na platformie Azure powoduje naliczanie opłat zależnych od pojemności. Dowiedz się więcej o [cenach wystąpienia zarządzanego](https://azure.microsoft.com/pricing/details/sql-database/managed).
+[Azure SQL Database wystąpienie zarządzane](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Wystąpienie zarządzane to usługa zarządzanej bazy danych, która reprezentuje w pełni zarządzane wystąpienie programu SQL Server w chmurze platformy Azure. Używa tego samego kodu co najnowsza wersja aparatu bazy danych programu SQL Server oraz ma najnowsze funkcje, ulepszenia wydajności i poprawki zabezpieczeń. | Korzystanie z wystąpienia zarządzanego usługi SQL Database uruchomionego na platformie Azure powoduje naliczanie opłat zależnych od pojemności. Dowiedz się więcej o [cenach wystąpienia zarządzanego](https://azure.microsoft.com/pricing/details/sql-database/managed).
 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Tworzenie zaawansowanych aplikacji w chmurze za pomocą w pełni zarządzanej platformy | Koszt oparty na rozmiarze, lokalizacji i czasie użytkowania. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines) | Zapewnia potok ciągłej integracji i ciągłego wdrażania (CI/CD) na potrzeby tworzenia aplikacji. Potok rozpoczyna się od repozytorium Git na potrzeby zarządzania kodem aplikacji, systemu kompilacji na potrzeby produkcji pakietów i innych artefaktów kompilacji oraz systemu zarządzania wydaniami na potrzeby wdrażania zmian w środowiskach deweloperskich, testowych i produkcyjnych.
 
@@ -116,9 +116,9 @@ Oto elementy, których firma Contoso potrzebuje do uruchomienia tego scenariusza
 
 <!-- markdownlint-disable MD033 -->
 
-**Wymagania** | **Uzyskać**
+**Wymagania** | **Szczegóły**
 --- | ---
-**Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje w jednym z poprzednich artykułów. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.
+**Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje w jednym z poprzednich artykułów. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial). <br><br> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje. <br><br> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.
 **Infrastruktura platformy Azure** | [Dowiedz się](./contoso-migration-infrastructure.md), jak firma Contoso skonfigurowała infrastrukturę platformy Azure.
 
 <!--markdownlint-enable MD033 -->
@@ -144,7 +144,7 @@ Aby skonfigurować wystąpienie zarządzane usługi Azure SQL Database, firma Co
 - Po utworzeniu wystąpienia zarządzanego firma Contoso nie powinna dodawać zasobów do tej podsieci.
 - Z podsiecią nie może być skojarzona żadna sieciowa grupa zabezpieczeń.
 - Podsieć musi mieć zdefiniowaną przez użytkownika tabelę tras. Jedyną przypisaną trasą powinna być 0.0.0.0/0 z następnym przeskokiem do Internetu.
-- Opcjonalny niestandardowy serwer DNS: Jeśli w sieci wirtualnej platformy Azure jest określony niestandardowy serwer DNS, należy dodać do listy adres IP rekursywnych tłumaczeń platformy Azure (na przykład 168.63.129.16). Dowiedz się, jak [skonfigurować niestandardowy serwer DNS dla wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Jeśli dla sieci wirtualnej określono opcjonalny niestandardowy serwer DNS, wirtualny adres IP `168.63.129.16` dla tłumaczeń cyklicznych na platformie Azure musi być dodany do listy. Dowiedz się, jak [skonfigurować niestandardowy serwer DNS dla Azure SQL Database wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
 - Z podsiecią nie może być skojarzony żaden punkt końcowy usługi (magazyn lub SQL). Punkty końcowe usługi powinny być wyłączone w sieci wirtualnej.
 - Podsieć musi mieć co najmniej 16 adresów IP. Dowiedz się, jak [zmienić rozmiar podsieci wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet).
 - W środowisku hybrydowym firmy Contoso wymagane są niestandardowe ustawienia DNS. Firma Contoso skonfiguruje ustawienia DNS, aby używać co najmniej jednego serwera DNS platformy Azure firmy. Dowiedz się więcej o [dostosowywaniu serwerów DNS](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
@@ -177,7 +177,7 @@ Administratorzy firmy Contoso konfigurują sieć wirtualną w następujący spos
 
       ![Serwery DNS sieci](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-dns.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - Zapoznaj się z omówieniem [wystąpienia zarządzanego usługi SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
 - Dowiedz się, jak [utworzyć sieć wirtualną dla wystąpienia zarządzanego usługi SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet).
@@ -209,7 +209,7 @@ Firma Contoso bierze pod uwagę następujące czynniki:
 
     ![Podsieć tabeli tras](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table-subnet.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 Dowiedz się, jak [skonfigurować trasy dla wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started).
 
@@ -229,7 +229,7 @@ Teraz administratorzy firmy Contoso mogą zaaprowizować wystąpienie zarządzan
 
       ![Wystąpienie zarządzane](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 Dowiedz się, jak [zaaprowizować wystąpienie zarządzane](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started).
 
@@ -298,11 +298,11 @@ Administratorzy firmy Contoso muszą upewnić się, że wszystkie aplikacje inte
 
     ![Parametry połączenia](./media/contoso-migration-refactor-web-app-sql-managed-instance/string1.png)
 
-3. Za pomocą programu Visual Studio otwierają projekt **SmartHotel.Registration.wcf** z pliku rozwiązania. Sekcja **connectionStrings** pliku web.config usługi WCF SmartHotel.Registration.Wcf powinna zostać zaktualizowana przy użyciu parametrów połączenia.
+3. Za pomocą programu Visual Studio otwierają projekt **SmartHotel.Registration.wcf** z pliku rozwiązania. Sekcja **connectionStrings** pliku Web. config usługi WCF **SmartHotel. Registration. WCF** powinna zostać zaktualizowana przy użyciu parametrów połączenia.
 
      ![Parametry połączenia](./media/contoso-migration-refactor-web-app-sql-managed-instance/string2.png)
 
-4. Sekcja **client** pliku web.config dla obiektu SmartHotel.Registration.Web powinna zostać zmieniona tak, aby wskazywała lokalizację usługi WCF. Jest to adres URL aplikacji internetowej WCF, która hostuje punkt końcowy usługi.
+4. Sekcja **klienta** pliku Web. config dla **SmartHotel. Registration. Web** powinna zostać zmieniona, aby wskazywała nową lokalizację usługi WCF. Jest to adres URL aplikacji internetowej WCF, która hostuje punkt końcowy usługi.
 
     ![Parametry połączenia](./media/contoso-migration-refactor-web-app-sql-managed-instance/strings3.png)
 
@@ -312,7 +312,7 @@ Administratorzy firmy Contoso muszą upewnić się, że wszystkie aplikacje inte
 
 Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wykonania procesu kompilowania i wydawania.
 
-1. W usłudze Azure DevOps wybierają pozycję **kompilacja i wydanie** > **nowego potoku**.
+1. W usłudze Azure DevOps wybierają pozycję **kompilacja i wydanie**  >  **nowego potoku**.
 
     ![Nowy potok](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline1.png)
 
@@ -339,7 +339,7 @@ Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wy
 
      ![Artefakt](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline6.png)
 
-7. Wybierają **wersje** > **+ Nowy potok**.
+7. Wybierają **wersje**  >  **+ Nowy potok**.
 
     ![Nowy potok](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline7.png)
 
@@ -379,7 +379,7 @@ Administratorzy firmy Contoso konfigurują teraz usługę Azure DevOps w celu wy
 
     ![Zapisywanie usługi WCF](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline16.png)
 
-17. Wybierają **etapy potoku** > **Stages** **+ Dodaj**, aby dodać środowisko dla **SHWEB-EUS2**. Wybierają inne wdrożenie usługi Azure App Service.
+17. Wybierają **etapy potoku**  >  **Stages**, a następnie **dodają** , aby dodać środowisko dla **SHWEB-EUS2**. Wybierają inne wdrożenie usługi Azure App Service.
 
     ![Dodawanie środowiska](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline17.png)
 

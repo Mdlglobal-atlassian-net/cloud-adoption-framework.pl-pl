@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 39d8f559bfcd8e7df1a957d7af0488c85ea36876
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a8b8a6c043a5a9b5f666d4a9e1d31d4990ff6380
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429974"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223800"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Przewodnik po monitorowaniu chmur: Zbierz odpowiednie dane
 
@@ -21,7 +21,7 @@ W tym artykule opisano niektóre zagadnienia dotyczące zbierania danych monitor
 
 Aby obserwować kondycję i dostępność rozwiązania w chmurze, należy skonfigurować narzędzia do monitorowania w celu zebrania poziomu sygnałów opartych na przewidywalnych Stanach niepowodzeń. Sygnały te są objawy błędu, a nie przyczyny. Narzędzia do monitorowania wykorzystują metryki i, w przypadku zaawansowanej diagnostyki i analizy głównych przyczyn, dzienników.
 
-Uważnie planowanie monitorowania i migracji. Zacznij od uwzględnienia właściciela usługi monitorowania, kierownika operacji i innego powiązanego personelu w fazie planowania i Kontynuuj angażowanie się w cały cykl tworzenia i wydawania. Ich fokus będzie opracowywać konfigurację monitorowania opartą na następujących kryteriach:
+Uważnie planowanie monitorowania i migracji. Zacznij od uwzględnienia właściciela usługi monitorowania, kierownika operacji i innego pokrewnego personelu w fazie planu i Kontynuuj angażowanie się w cały cykl tworzenia i wydawania. Ich fokus będzie opracowywać konfigurację monitorowania opartą na następujących kryteriach:
 
 - Co to jest kompozycja usługi? Czy te zależności są monitorowane dzisiaj? Jeśli tak, czy istnieją wiele narzędzi? Czy istnieje możliwość konsolidacji, bez wprowadzania zagrożeń?
 - Co to jest umowa SLA usługi i jak można ją wycenić i zgłosić?

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 089a772bdc41bc96f327f9d9ce34d2107fd48934
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f130bbfd306b85620064e50df7c74af804725f62
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996793"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223630"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -88,10 +88,10 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 
 <!-- markdownlint-disable MD033 -->
 
-**Zagadnienie** | **Uzyskać**
---- | ---
-**Zalety** | Maszyna wirtualna WEBVM zostanie przeniesiona na platformę Azure bez zmian, co oznacza prostą migrację.<br/><br/> Wystąpienie zarządzane SQL spełnia wymagania techniczne i cele firmy Contoso.<br/><br/> Wystąpienie zarządzane zapewni 100-procentową zgodność z bieżącym wdrożeniem przy jednoczesnym zaprzestaniu korzystania z programu SQL Server 2008 R2.<br/><br/> Firma może skorzystać z inwestycji w program Software Assurance i użyć korzyści użycia hybrydowego platformy Azure dla programu SQL Server i systemu Windows Server.<br/><br/> Może ponownie użyć usługi Azure Database Migration Service na potrzeby dodatkowych przyszłych migracji.<br/><br/> Wystąpienie zarządzane SQL ma wbudowaną odporność na uszkodzenia, której firma Contoso nie musi konfigurować. Gwarantuje to, że warstwa danych nie jest już pojedynczym punktem awarii.
-**Wady** | Na maszynie wirtualnej WEBVM jest uruchomiony system Windows Server 2008 R2. Mimo iż ten system operacyjny jest obsługiwany przez platformę Azure, nie jest już obsługiwaną platformą. [Dowiedz się więcej](https://support.microsoft.com/help/956893).<br/><br/> Warstwa internetowa pozostaje pojedynczym punktem awarii, a usługi świadczy tylko maszyna wirtualna WEBVM.<br/><br/> Firma Contoso nadal będzie musiała obsługiwać warstwę internetową aplikacji jako maszynę wirtualną, zamiast przenieść ją do usługi zarządzanej, takiej jak Azure App Service.<br/><br/> W przypadku warstwy danych wystąpienie zarządzane może nie być najlepszym rozwiązaniem, jeśli firma Contoso chce dostosować system operacyjny lub serwer bazy danych lub jeśli chce uruchamiać aplikacje innych firm wraz z programem SQL Server. Uruchomienie programu SQL Server na maszynie wirtualnej IaaS może zapewnić taką elastyczność.
+| **Zagadnienie** | **Szczegóły** |
+| --- | --- |
+| **Zalety** | Maszyna wirtualna WEBVM zostanie przeniesiona na platformę Azure bez zmian, co oznacza prostą migrację. <br><br> Wystąpienie zarządzane SQL spełnia wymagania techniczne i cele firmy Contoso. <br><br> Wystąpienie zarządzane zapewni 100-procentową zgodność z bieżącym wdrożeniem przy jednoczesnym zaprzestaniu korzystania z programu SQL Server 2008 R2. <br><br> Firma może skorzystać z inwestycji w program Software Assurance i użyć korzyści użycia hybrydowego platformy Azure dla programu SQL Server i systemu Windows Server. <br><br> Może ponownie użyć usługi Azure Database Migration Service na potrzeby dodatkowych przyszłych migracji. <br><br> Wystąpienie zarządzane SQL ma wbudowaną odporność na uszkodzenia, której firma Contoso nie musi konfigurować. Gwarantuje to, że warstwa danych nie jest już pojedynczym punktem awarii. |
+| **Wady** | Na maszynie wirtualnej WEBVM jest uruchomiony system Windows Server 2008 R2. Mimo iż ten system operacyjny jest obsługiwany przez platformę Azure, nie jest już obsługiwaną platformą. [Dowiedz się więcej](https://support.microsoft.com/help/956893). <br><br> Warstwa internetowa pozostaje pojedynczym punktem awarii, a usługi świadczy tylko maszyna wirtualna WEBVM. <br><br> Firma Contoso nadal będzie musiała obsługiwać warstwę internetową aplikacji jako maszynę wirtualną, zamiast przenieść ją do usługi zarządzanej, takiej jak Azure App Service. <br><br> W przypadku warstwy danych wystąpienie zarządzane może nie być najlepszym rozwiązaniem, jeśli firma Contoso chce dostosować system operacyjny lub serwer bazy danych lub jeśli chce uruchamiać aplikacje innych firm wraz z programem SQL Server. Uruchomienie programu SQL Server na maszynie wirtualnej IaaS może zapewnić taką elastyczność. |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -105,13 +105,13 @@ Firma Contoso przeprowadzi migrację warstw internetowych i danych aplikacji Sma
 
      ![Architektura migracji](./media/contoso-migration-rehost-vm-sql-managed-instance/migration-architecture.png)
 
-### <a name="azure-services"></a>Usługi Azure
+### <a name="azure-services"></a>Usługi platformy Azure
 
-Usługa | Opis | Koszty
---- | --- | ---
-[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Usługa Azure Database Migration Service umożliwia bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. | Dowiedz się więcej o [obsługiwanych regionach](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) i [cenniku usługi Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
-[Wystąpienie zarządzane usługi Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Wystąpienie zarządzane to usługa zarządzanej bazy danych, która reprezentuje w pełni zarządzane wystąpienie programu SQL Server w chmurze platformy Azure. Używa tego samego kodu co najnowsza wersja aparatu bazy danych programu SQL Server oraz ma najnowsze funkcje, ulepszenia wydajności i poprawki zabezpieczeń. | Korzystanie z wystąpienia zarządzanego usługi SQL Database uruchomionego na platformie Azure powoduje naliczanie opłat zależnych od pojemności. Dowiedz się więcej o [cenach wystąpienia zarządzanego](https://azure.microsoft.com/pricing/details/sql-database/managed).
-[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną.
+| Usługa | Opis | Koszty |
+| --- | --- | --- |
+| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Usługa Azure Database Migration Service umożliwia bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. | Informacje o [obsługiwanych regionach](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) i | [Cennik Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
+| [Azure SQL Database wystąpienie zarządzane](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Wystąpienie zarządzane to usługa zarządzanej bazy danych, która reprezentuje w pełni zarządzane wystąpienie programu SQL Server w chmurze platformy Azure. Używa tego samego kodu co najnowsza wersja aparatu bazy danych programu SQL Server oraz ma najnowsze funkcje, ulepszenia wydajności i poprawki zabezpieczeń. | Korzystanie z wystąpienia zarządzanego usługi SQL Database uruchomionego na platformie Azure powoduje naliczanie opłat zależnych od pojemności. Dowiedz się więcej o [cenach wystąpienia zarządzanego](https://azure.microsoft.com/pricing/details/sql-database/managed). |
+| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Firma Contoso używa usługi Azure Migrate do | Oceń swoje maszyny wirtualne VMware. Azure Migrate ocenia przydatność migracji | maszyn. Zapewnia to ustalanie rozmiarów i kosztów w przypadku uruchamiania w programie | Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną. |
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -119,13 +119,13 @@ Firma Contoso i inni użytkownicy muszą spełniać następujące wymagania wst�
 
 <!-- markdownlint-disable MD033 -->
 
-Wymagania | Szczegóły
---- | ---
-**Subskrypcja platformy Azure** | Subskrypcję należy utworzyć jeszcze przed przeprowadzeniem oceny w pierwszym artykule w tej serii. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś administratorem subskrypcji, musisz skontaktować się z administratorem, aby przypisać uprawnienia właściciela lub współautora do niezbędnych grup zasobów i zasobów.
-**Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Azure infrastructure for Migration (Infrastruktura platformy Azure wymagana do migracji)](./contoso-migration-infrastructure.md).
-**Serwery lokalne** | Lokalny serwer vCenter w wersji 5.5, 6.0 lub 6.5<br/><br/> Host ESXi w wersji 5.5, 6.0 lub 6.5<br/><br/> Co najmniej jedna maszyna wirtualna programu VMware uruchomiona na hoście ESXi.
-**Lokalne maszyny wirtualne** | [Przejrzyj maszyny z systemem Linux](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros), które zostały zatwierdzone do działania na platformie Azure.
-**Database Migration Service** | W przypadku usługi Azure Database Migration Service potrzebne jest [zgodne lokalne urządzenie sieci VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).<br/><br/> Musisz mieć możliwość skonfigurowania lokalnego urządzenia sieci VPN. Musi ono mieć widoczny zewnętrznie publiczny adres IPv4. Adres nie może znajdować się za urządzeniem NAT.<br/><br/> Upewnij się, że możesz uzyskać dostęp do lokalnej bazy danych SQL Server.<br/><br/> Zapora systemu Windows powinna mieć dostęp do aparatu źródłowej bazy danych. Dowiedz się, jak [skonfigurować zaporę systemu Windows pod kątem dostępu do aparatu bazy danych](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access).<br/><br/> Jeśli przed maszyną bazy danych znajduje się zapora, dodaj reguły zezwalające na dostęp do bazy danych za pośrednictwem portu SMB 445.<br/><br/> Poświadczenia, które służą do nawiązywania połączenia ze źródłowym wystąpieniem programu SQL Server i których elementem docelowym jest wystąpienie zarządzane, muszą być elementami członkowskimi roli serwera sysadmin.<br/><br/> Musisz mieć udział sieciowy w lokalnej bazie danych umożliwiający wykonanie kopii zapasowej źródłowej bazy danych za pomocą usługi Azure Database Migration Service.<br/><br/> Upewnij się, że konto usługi, na którym uruchomiono źródłowe wystąpienie programu SQL Server, ma uprawnienia do zapisu w udziale sieciowym.<br/><br/> Zanotuj nazwę i hasło użytkownika systemu Windows, który ma uprawnienia do pełnej kontroli nad udziałem sieciowym. Usługa Azure Database Migration Service personifikuje te poświadczenia użytkownika w celu przekazania plików kopii zapasowej do kontenera usługi Azure Storage.<br/><br/> Proces instalacji programu SQL Server Express domyślnie zmienia ustawienie protokołu TCP/IP na wartość **Wyłączony**. Upewnij się, że ustawienie to jest włączone.
+| Wymagania | Szczegóły |
+| --- | --- |
+| **Subskrypcja platformy Azure** | Subskrypcję należy utworzyć jeszcze przed przeprowadzeniem oceny w pierwszym artykule w tej serii. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial). <br><br> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje. <br><br> Jeśli używasz istniejącej subskrypcji i nie jesteś administratorem subskrypcji, musisz skontaktować się z administratorem, aby przypisać uprawnienia właściciela lub współautora do niezbędnych grup zasobów i zasobów. |
+| **Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Azure infrastructure for Migration (Infrastruktura platformy Azure wymagana do migracji)](./contoso-migration-infrastructure.md). |
+| **Serwery lokalne** | Lokalny serwer vCenter powinien mieć uruchomioną wersję 5,5, 6,0 lub 6,5. <br><br> Host ESXi z systemem w wersji 5,5, 6,0 lub 6,5. <br><br> Co najmniej jedna maszyna wirtualna programu VMware uruchomiona na hoście ESXi. |
+| **Lokalne maszyny wirtualne** | [Przejrzyj maszyny z systemem Linux](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros), które zostały zatwierdzone do działania na platformie Azure. |
+| **Database Migration Service** | W przypadku usługi Azure Database Migration Service potrzebne jest [zgodne lokalne urządzenie sieci VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices). <br><br> Musisz mieć możliwość skonfigurowania lokalnego urządzenia sieci VPN. Musi ono mieć widoczny zewnętrznie publiczny adres IPv4. Adres nie może znajdować się za urządzeniem NAT. <br><br> Upewnij się, że możesz uzyskać dostęp do lokalnej bazy danych SQL Server. <br><br> Zapora systemu Windows powinna mieć dostęp do aparatu źródłowej bazy danych. Dowiedz się, jak [skonfigurować zaporę systemu Windows pod kątem dostępu do aparatu bazy danych](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access). <br><br> Jeśli przed maszyną bazy danych znajduje się zapora, dodaj reguły zezwalające na dostęp do bazy danych za pośrednictwem portu SMB 445. <br><br> Poświadczenia, które służą do nawiązywania połączenia ze źródłowym wystąpieniem programu SQL Server i których elementem docelowym jest wystąpienie zarządzane, muszą być elementami członkowskimi roli serwera sysadmin. <br><br> Musisz mieć udział sieciowy w lokalnej bazie danych umożliwiający wykonanie kopii zapasowej źródłowej bazy danych za pomocą usługi Azure Database Migration Service. <br><br> Upewnij się, że konto usługi, na którym uruchomiono źródłowe wystąpienie programu SQL Server, ma uprawnienia do zapisu w udziale sieciowym. <br><br> Zanotuj nazwę i hasło użytkownika systemu Windows, który ma uprawnienia do pełnej kontroli nad udziałem sieciowym. Usługa Azure Database Migration Service personifikuje te poświadczenia użytkownika w celu przekazania plików kopii zapasowej do kontenera usługi Azure Storage. <br><br> Proces instalacji programu SQL Server Express domyślnie zmienia ustawienie protokołu TCP/IP na wartość **Wyłączony**. Upewnij się, że ustawienie to jest włączone. |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -137,11 +137,11 @@ Oto jak firma Contoso planuje skonfigurować wdrożenie:
 >
 > - **Krok 1: przygotowanie SQL Database wystąpienia zarządzanego.** Firma Contoso potrzebuje istniejącego wystąpienia zarządzanego, do którego zostanie zmigrowana lokalna baza danych programu SQL Server.
 > - **Krok 2: przygotowanie Azure Database Migration Service.** Firma Contoso musi zarejestrować dostawcę migracji bazy danych, utworzyć wystąpienie, a następnie utworzyć projekt usługi Azure Database Migration Service. Firma Contoso musi również skonfigurować identyfikator URI sygnatury dostępu współdzielonego (SAS) dla usługi Azure Database Migration Service. Identyfikator URI sygnatury dostępu współdzielonego zapewnia delegowany dostęp do zasobów na koncie magazynu firmy Contoso, dzięki czemu firma Contoso może przyznać ograniczone uprawnienia do obiektów magazynu. Firma Contoso konfiguruje identyfikator URI sygnatury dostępu współdzielonego, aby usługa Azure Database Migration Service mogła uzyskać dostęp do kontenera konta magazynu, do którego przekaże pliki kopii zapasowej programu SQL Server.
-> - **Krok 3. Przygotowywanie platformy Azure do Azure Migrate migracji serwera.** Dodają narzędzie migracji serwera do projektu usługi Azure Migrate.
-> - **Krok 4: Przygotowanie lokalnej migracji programu VMware do Azure Migrate serwera.** Przygotowuje konta do odnajdywania maszyn wirtualnych i przygotowuje się do łączenia się z maszynami wirtualnymi platformy Azure po migracji.
+> - **Krok 3. Przygotowywanie platformy Azure dla Azure Migrate: Migracja serwera.** Dodają narzędzie migracji serwera do projektu usługi Azure Migrate.
+> - **Krok 4. Przygotowanie lokalnego programu VMware do Azure Migrate: Migracja serwera.** Przygotowuje konta do odnajdywania maszyn wirtualnych i przygotowuje się do łączenia się z maszynami wirtualnymi platformy Azure po migracji.
 > - **Krok 5. replikowanie maszyn wirtualnych.** Konfigurują replikację i rozpoczynają replikowanie maszyn wirtualnych w magazynie platformy Azure.
 > - **Krok 6. Migrowanie bazy danych przy użyciu Azure Database Migration Service.** Firma Contoso zmigruje bazę danych.
-> - **Krok 7. Migrowanie maszyny wirtualnej przy użyciu migracji Azure Migrate Server.** Przeprowadza migrację testową, aby upewnić się, że wszystko działa, a następnie uruchomić pełną migrację, aby przenieść maszyny wirtualne na platformę Azure.
+> - **Krok 7. Migrowanie maszyny wirtualnej za pomocą Azure Migrate: Migracja serwera.** Przeprowadza migrację testową, aby upewnić się, że wszystko działa, a następnie uruchomić pełną migrację, aby przenieść maszyny wirtualne na platformę Azure.
 
 ## <a name="step-1-prepare-a-sql-database-managed-instance"></a>Krok 1. Przygotowanie SQL Database wystąpienia zarządzanego
 
@@ -151,7 +151,7 @@ Aby skonfigurować wystąpienie zarządzane usługi Azure SQL Database, firma Co
 - Po utworzeniu wystąpienia zarządzanego firma Contoso nie powinna dodawać zasobów do tej podsieci.
 - Z podsiecią nie może być skojarzona żadna sieciowa grupa zabezpieczeń.
 - Podsieć musi mieć zdefiniowaną przez użytkownika tabelę tras. Jedyną przypisaną trasą powinna być 0.0.0.0/0 z następnym przeskokiem do Internetu.
-- Opcjonalny niestandardowy serwer DNS: Jeśli w sieci wirtualnej platformy Azure jest określony niestandardowy serwer DNS, należy dodać do listy adres IP rekursywnych tłumaczeń platformy Azure (na przykład 168.63.129.16). Dowiedz się, jak [skonfigurować niestandardowy serwer DNS dla wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Jeśli dla sieci wirtualnej określono opcjonalny niestandardowy serwer DNS, wirtualny adres IP `168.63.129.16` dla tłumaczeń cyklicznych na platformie Azure musi być dodany do listy. Dowiedz się, jak [skonfigurować niestandardowy serwer DNS dla Azure SQL Database wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
 - Z podsiecią nie może być skojarzony żaden punkt końcowy usługi (magazyn lub SQL). Punkty końcowe usługi powinny być wyłączone w sieci wirtualnej.
 - Podsieć musi mieć co najmniej 16 adresów IP. Dowiedz się, jak [zmienić rozmiar podsieci wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration).
 - W środowisku hybrydowym firmy Contoso wymagane są niestandardowe ustawienia DNS. Firma Contoso skonfiguruje ustawienia DNS, aby używać co najmniej jednego serwera DNS platformy Azure firmy. Dowiedz się więcej o [dostosowywaniu serwerów DNS](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
@@ -184,7 +184,7 @@ Administratorzy firmy Contoso konfigurują sieć wirtualną w następujący spos
 
       ![Serwery DNS sieci](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-dns.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - Zapoznaj się z omówieniem [wystąpienia zarządzanego usługi SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
 - Dowiedz się, jak [utworzyć sieć wirtualną dla wystąpienia zarządzanego usługi SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration).
@@ -216,7 +216,7 @@ Firma Contoso bierze pod uwagę następujące czynniki:
 
     ![Podsieć tabeli tras](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-route-table-subnet.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 Dowiedz się, jak [skonfigurować trasy dla wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started).
 
@@ -236,7 +236,7 @@ Teraz administratorzy firmy Contoso mogą zaaprowizować wystąpienie zarządzan
 
       ![Wystąpienie zarządzane](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 Dowiedz się, jak [zaaprowizować wystąpienie zarządzane](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started).
 
@@ -267,44 +267,44 @@ Następnie wykonują następujące czynności:
 
         ![Database Migration Service — konfigurowanie sieci](./media/contoso-migration-rehost-vm-sql-managed-instance/dms-network.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - Dowiedz się, jak [skonfigurować usługę Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal).
 - Dowiedz się, jak [utworzyć sygnaturę dostępu współdzielonego i jej używać](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2).
 
-## <a name="step-3-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>Krok 3. Przygotowanie platformy Azure do narzędzia migracji Azure Migrate Server
+## <a name="step-3-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>Krok 3. Przygotowanie platformy Azure do Azure Migrate: Narzędzia migracji serwera
 
 Oto składniki platformy Azure, których firma Contoso potrzebuje do zmigrowania maszyn wirtualnych na platformę Azure:
 
 - Sieć wirtualna, w której będą znajdować się maszyny wirtualne platformy Azure, gdy są one tworzone podczas migracji.
-- Aprowizowane narzędzie do migracji serwera usługi Azure Migrate Server.
+- Azure Migrate: zainicjowano narzędzie do migracji serwera.
 
 Składniki te są konfigurowane w następujący sposób:
 
-1. **Skonfiguruj sieć:** Firma Contoso już skonfigurował sieć, która może być dla migracji Azure Migrate serwera podczas [wdrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md)
+1. **Skonfiguruj sieć:** Firma Contoso skonfigurował już sieć, która może być dla Azure Migrate: Migracja serwera podczas [wdrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md)
 
     - Aplikacja SmartHotel360 jest aplikacją produkcyjną, a maszyny wirtualne zostaną zmigrowane do sieci produkcyjnej platformy Azure (VNET-PROD-EUS2) w regionie głównym Wschodnie stany USA 2.
     - Obie maszyny wirtualne zostaną umieszczone w grupie zasobów ContosoRG, która jest używana na potrzeby zasobów produkcyjnych.
     - Maszyna wirtualna frontonu aplikacji (WEBVM) zostanie zmigrowana do podsieci frontonu (PROD-FE-EUS2) w sieci produkcyjnej.
     - Maszyna wirtualna bazy danych aplikacji (SQLVM) zostanie zmigrowana do podsieci bazy danych (PROD-DB-EUS2) w sieci produkcyjnej.
 
-## <a name="step-4-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>Krok 4. Przygotowanie lokalnej migracji programu VMware do Azure Migrate serwera
+## <a name="step-4-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>Krok 4. Przygotowanie lokalnego programu VMware do Azure Migrate: Migracja serwera
 
 Oto składniki platformy Azure, których firma Contoso potrzebuje do zmigrowania maszyn wirtualnych na platformę Azure:
 
 - Sieć wirtualna, w której będą znajdować się maszyny wirtualne platformy Azure, gdy są one tworzone podczas migracji.
-- Zainicjowano i skonfigurowano narzędzie do migracji Azure Migrate Server (komórki jajowe).
+- Azure Migrate: Narzędzie do migracji serwera (komórki jajowe), obsługiwane i skonfigurowane.
 
 Składniki te są konfigurowane w następujący sposób:
 
-1. Konfigurowanie sieci — firma Contoso ma już sieć, której można używać w przypadku migracji serwera usługi Azure Migrate podczas [wdrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md)
+1. Konfigurowanie sieci — firma Contoso ma już skonfigurowaną sieć, która może być dla Azure Migrate: Migracja serwera podczas [wdrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md)
 
     - Aplikacja SmartHotel360 jest aplikacją produkcyjną, a maszyny wirtualne zostaną zmigrowane do sieci produkcyjnej platformy Azure (VNET-PROD-EUS2) w regionie głównym Wschodnie stany USA 2.
     - Obie maszyny wirtualne zostaną umieszczone w grupie zasobów ContosoRG, która jest używana na potrzeby zasobów produkcyjnych.
     - Maszyna wirtualna frontonu aplikacji (WEBVM) zostanie zmigrowana do podsieci frontonu (PROD-FE-EUS2) w sieci produkcyjnej.
     - Maszyna wirtualna bazy danych aplikacji (SQLVM) zostanie zmigrowana do podsieci bazy danych (PROD-DB-EUS2) w sieci produkcyjnej.
 
-2. Inicjowanie obsługi administracyjnej narzędzia do migracji Azure Migrate Server.
+2. Inicjowanie obsługi administracyjnej Azure Migrate: Narzędzia migracji serwera.
 
     - Z Azure Migrate Pobierz obraz komórki jajowe i zaimportuj go do programu VMWare.
 
@@ -330,9 +330,9 @@ Składniki te są konfigurowane w następujący sposób:
 
 3. Po skonfigurowaniu narzędzia mogą wyliczyć wszystkie maszyny wirtualne. Po zakończeniu zobaczysz je w narzędziu Azure Migrate na platformie Azure.
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
-[Dowiedz się więcej](https://docs.microsoft.com/azure/migrate) o konfigurowaniu narzędzia migracji serwera usługi Azure Migrate.
+[Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate) konfigurowaniu Azure Migrate: Narzędzia migracji serwera.
 
 ### <a name="prepare-on-premises-vms"></a>Przygotowywanie lokalnych maszyn wirtualnych
 
@@ -409,7 +409,7 @@ Po ukończeniu odnajdywania można rozpocząć replikację maszyn wirtualnych VM
 10. W obszarze **Przegląd i rozpoczynanie replikacji** sprawdź ustawienia, a następnie kliknij pozycję **Replikuj**, aby uruchomić replikację początkową dla serwerów.
 
 > [!NOTE]
-> Ustawienia replikacji można aktualizować w dowolnym momencie przed rozpoczęciem replikacji w obszarze **Zarządzanie** > **maszynami replikowanymi**. Ustawień nie można zmienić po rozpoczęciu replikacji.
+> Ustawienia replikacji można aktualizować w dowolnym momencie przed rozpoczęciem replikacji w obszarze **Zarządzanie**  >  **maszynami replikowanymi**. Ustawień nie można zmienić po rozpoczęciu replikacji.
 
 ## <a name="step-6-migrate-the-database-using-the-azure-database-migration-service"></a>Krok 6. Migrowanie bazy danych przy użyciu Azure Database Migration Service
 
@@ -437,7 +437,7 @@ Administratorzy firmy Contoso muszą utworzyć projekt usługi Azure Database Mi
 
     ![Database Migration Service — szczegóły środowiska docelowego](./media/contoso-migration-rehost-vm-sql-managed-instance/dms-target-details.png)
 
-4. W obszarze **nowe** > **uruchomienie migracji**należy określić ustawienia do uruchomienia migracji:
+4. W obszarze **nowe**  >  **uruchomienie migracji**należy określić ustawienia do uruchomienia migracji:
     - Poświadczenia środowiska źródłowego i docelowego.
     - Baza danych do zmigrowania.
     - Udział sieciowy utworzony na lokalnej maszynie wirtualnej. Usługa Azure Database Migration Service dodaje kopie zapasowe źródła do tego udziału.
@@ -456,13 +456,13 @@ Administratorzy firmy Contoso muszą utworzyć projekt usługi Azure Database Mi
 
     ![Database Migration Service — weryfikowanie migracji bazy danych](./media/contoso-migration-rehost-vm-sql-managed-instance/dms-monitor2.png)
 
-## <a name="step-7-migrate-the-vms-with-azure-migrate-server-migration"></a>Krok 7. Migrowanie maszyn wirtualnych przy użyciu migracji Azure Migrate serwera
+## <a name="step-7-migrate-the-vms-with-azure-migrate-server-migration"></a>Krok 7. Migrowanie maszyn wirtualnych przy użyciu Azure Migrate: Migracja serwera
 
 Administratorzy firmy Contoso uruchamiają szybką migrację testową i sprawdzają, czy maszyna wirtualna działa prawidłowo, a następnie migruje maszynę wirtualną.
 
 ### <a name="run-a-test-migration"></a>Uruchamianie migracji testowej
 
-1. W obszarze**serwery** >  **celów** > migracji**Azure Migrate: Migracja serwera**, kliknij przycisk **Testuj zmigrowane serwery**.
+1. W obszarze serwery **celów migracji**  >  **Servers**  >  **Azure Migrate: Migracja serwera**, kliknij przycisk **Testuj zmigrowane serwery**.
 
      ![Serwery z przeprowadzoną migracją testową](./media/contoso-migration-rehost-linux-vm/test-migrated-servers.png)
 
@@ -481,12 +481,12 @@ Administratorzy firmy Contoso uruchamiają szybką migrację testową i sprawdza
 
 Teraz Administratorzy firmy Contoso uruchamiają pełną migrację, aby zakończyć przenoszenie.
 
-1. W Azure Migrate **serwery** > > Project**Azure Migrate: Migracja serwera**, kliknij przycisk **replikowanie serwerów**.
+1. W Azure Migrate serwery > Project **Servers**  >  **Azure Migrate: Migracja serwera**, kliknij przycisk **replikowanie serwerów**.
 
     ![Replikowanie serwerów](./media/contoso-migration-rehost-linux-vm/replicating-servers.png)
 
 2. W obszarze **Replikowanie maszyn** kliknij prawym przyciskiem myszy maszynę wirtualną > **Migruj**.
-3. W obszarze **Migrowanie** > **Zamknij maszyny wirtualne i przeprowadź planowaną migrację bez utraty danych**wybierz pozycję **tak** > **OK**.
+3. W obszarze **Migrowanie**  >  **Zamknij maszyny wirtualne i przeprowadź planowaną migrację bez utraty danych**wybierz pozycję **tak**  >  **OK**.
     - Domyślnie usługa Azure Migrate zamyka lokalną maszynę wirtualną i uruchamia replikację na żądanie, aby zsynchronizować wszystkie zmiany maszyny wirtualnej, które wystąpiły od momentu ostatniej replikacji. Gwarantuje to brak utraty danych.
     - Jeśli nie chcesz zamykać maszyny wirtualnej, wybierz pozycję **nie**.
 4. Zostanie uruchomione zadanie migracji maszyny wirtualnej. Śledź zadanie w powiadomieniach platformy Azure.
@@ -497,7 +497,7 @@ Teraz Administratorzy firmy Contoso uruchamiają pełną migrację, aby zakończ
 
 W ostatnim kroku procesu migracji administratorzy firmy Contoso aktualizują parametry połączenia aplikacji tak, aby wskazywały zmigrowaną bazę danych działającą na wystąpieniu zarządzanym firmy Contoso.
 
-1. W Azure Portal znajdują się parametry połączenia, wybierając pozycję **Ustawienia** > **Parametry połączenia**.
+1. W Azure Portal znajdują się parametry połączenia, wybierając pozycję **Ustawienia**  >  **Parametry połączenia**.
 
     ![Parametry połączeń](./media/contoso-migration-rehost-vm-sql-managed-instance/failover4.png)
 
@@ -507,7 +507,7 @@ W ostatnim kroku procesu migracji administratorzy firmy Contoso aktualizują par
 5. Po ponownym uruchomieniu usług IIS aplikacja korzysta z bazy danych uruchomionej w wystąpieniu zarządzanym usługi SQL Database.
 6. W tym momencie można zamknąć lokalną maszynę SQLVM. Migracja została ukończona.
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - Dowiedz się, jak [uruchomić test trybu failover](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure).
 - Dowiedz się, jak [utworzyć plan odzyskiwania](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans).
@@ -546,7 +546,7 @@ Aby dowiedzieć się więcej na temat rozwiązań z zakresu bezpieczeństwa doty
 
 W celu zapewnienia ciągłości działania i odzyskiwania po awarii (BCDR, Business Continuity and Disaster Recovery) firma Contoso podejmuje następujące działania:
 
-- Zachowaj bezpieczeństwo danych: Firma Contoso tworzy kopie zapasowe danych na maszynach wirtualnych za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=/azure/virtual-machines/linux/toc.json).
+- Zachowaj bezpieczeństwo danych: Firma Contoso tworzy kopie zapasowe danych na maszynach wirtualnych za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-overview).
 - Przechowuj aplikacje i uruchamiaj je: contoso replikuje maszyny wirtualne aplikacji na platformie Azure do regionu pomocniczego za pomocą Site Recovery. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 - Firma Contoso zdobywa więcej informacji o zarządzaniu wystąpieniem zarządzanym SQL, w tym o [tworzeniu kopii zapasowych bazy danych](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
 
