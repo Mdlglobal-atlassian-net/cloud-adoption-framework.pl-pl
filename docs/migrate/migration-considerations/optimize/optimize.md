@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c7d375ed8d4d126cfb38b4cd2fde30b1d36526a6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 17edc2b008421648a195ab82878d82dcb791bfaa
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995132"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215950"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Testy porównawcze i zmiana rozmiaru zasobów w chmurze
 
@@ -26,7 +26,7 @@ W chmurze modele ewidencjonowania i aprowizacji eliminują opóźnienia, które 
 
 ## <a name="should-assets-be-optimized-during-or-after-the-migration"></a>Czy zasoby powinny być optymalizowane podczas migracji czy po niej?
 
-Kiedy zasób powinien być optymalizowany &mdash; podczas czy po migracji? Prosta odpowiedź brzmi: *podczas i po*. Nie jest to jednak całkowicie dokładna odpowiedź. Aby to wyjaśnić, zapoznaj się z dwoma podstawowymi scenariuszami optymalizacji rozmiaru zasobów:
+Kiedy zasób powinien być optymalizowany &mdash; podczas czy po migracji? Prosta odpowiedź brzmi: _podczas i po_. Nie jest to jednak całkowicie dokładna odpowiedź. Aby to wyjaśnić, zapoznaj się z dwoma podstawowymi scenariuszami optymalizacji rozmiaru zasobów:
 
 - **Planowana zmiana rozmiaru.** Często zasób jest ewidentnie zbyt duży i nie w pełni wykorzystywany, w związku z czym należy zmienić jego rozmiar podczas wdrażania. W tym przypadku określenie, czy rozmiar zasobu został pomyślnie zmieniony, wymaga testowania akceptacyjnego przez użytkowników po migracji. Jeśli użytkownik zaawansowany nie doświadcza żadnych strat wydajności i funkcjonalności podczas testowania, można wnioskować, że rozmiar tego zasobu został ustalony pomyślnie.
 - **Optymalizacja.** W przypadkach, gdy potrzeba optymalizacji jest niejasna, zespoły IT powinny używać podejścia opartego na danych do zarządzania rozmiarem zasobów. Korzystając z wzorców wydajności zasobów, zespół IT może podejmować decyzje o najbardziej odpowiednim rozmiarze, usługach, skali i architekturze rozwiązania. Następnie może zmienić rozmiar i przetestować teorie wydajności po migracji.

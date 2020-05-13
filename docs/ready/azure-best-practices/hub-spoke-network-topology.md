@@ -8,20 +8,19 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
-tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 5ab24d655327584bd1f6363ac439c1ffcacaccec
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7ae47eb7fbc7008ff4c7cbed20768386149bf7e1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995116"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215572"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
 # <a name="hub-and-spoke-network-topology"></a>Topologia sieci piasty i szprych
 
-*Piasta i szprychy* to model sieci umożliwiający bardziej efektywne zarządzanie typowymi wymaganiami dotyczącymi komunikacji i zabezpieczeń. Pomaga również uniknąć ograniczeń subskrypcji platformy Azure. Ten model dotyczy następujących kwestii:
+_Piasta i szprychy_ to model sieci umożliwiający bardziej efektywne zarządzanie typowymi wymaganiami dotyczącymi komunikacji i zabezpieczeń. Pomaga również uniknąć ograniczeń subskrypcji platformy Azure. Ten model dotyczy następujących kwestii:
 
 - **Oszczędność kosztów i efektywność zarządzania**. Scentralizowanie w jednej lokalizacji usług, które mogą być współużytkowane przez wiele obciążeń, takich jak wirtualne urządzenia sieciowe (NVA) i serwery DNS, umożliwia działowi IT zminimalizowanie nadmiarowych zasobów i zadań związanych z zarządzaniem.
 - **Pokonywanie ograniczeń subskrypcji**. Duże obciążenia oparte na chmurze mogą wymagać użycia większej ilości zasobów, niż jest to dozwolone w pojedynczej subskrypcji platformy Azure. Komunikacja równorzędna sieci wirtualnych obciążenia z różnych subskrypcji do centrum może pokonać te ograniczenia. Aby uzyskać więcej informacji, zobacz [limity subskrypcji platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
@@ -39,7 +38,7 @@ Dodatkowa struktura i możliwości oferowane przez ten model mogą nie przynieś
 
 ![Przykłady topologii sieci gwiazdy i gwiazdy][1]
 
-Jak pokazano na diagramie, platforma Azure obsługuje dwa typy centrów i satelitów. Obsługuje ona komunikację, zasoby udostępnione i scentralizowane zasady zabezpieczeń („centrum sieci wirtualnej” na diagramie) lub typ wirtualnej sieci WAN („wirtualna sieć WAN” na diagramie) na potrzeby wielkoskalowej komunikacji między oddziałami lub między oddziałem i platformą Azure.
+Jak pokazano na diagramie, platforma Azure obsługuje dwa typy centrów i satelitów. Obsługa komunikacji, zasobów udostępnionych i scentralizowanych zasad zabezpieczeń ("koncentratora sieci wirtualnej" na diagramie) lub wirtualnego typu sieci WAN ("wirtualna sieć WAN" na diagramie) w przypadku dużej ilości gałęzi do rozgałęzienia i rozgałęziania do platformy Azure.
 
 Piasta to centralna strefa sieciowa, która kontroluje i sprawdza ruch przychodzący i wychodzący między strefami: Internet, środowisko lokalne i szprychy. Topologia gwiazdy umożliwia działowi IT efektywną metodę wymuszania zasad zabezpieczeń w centralnej lokalizacji. Minimalizuje również ryzyko błędnej konfiguracji i ekspozycji.
 
@@ -48,7 +47,7 @@ Piasta zawiera często wspólne składniki usługi używane przez szprychy. Poni
 - Infrastruktura usługi Active Directory systemu Windows Server, wymagana do uwierzytelniania użytkowników innych firm, którzy uzyskują dostęp z niezaufanych sieci przed uzyskaniem dostępu do obciążeń w szprysze. Obejmuje ona powiązane usługi Active Directory Federation Services (AD FS).
 - Usługa DNS do rozpoznawania nazw obciążeń w szprychach, do uzyskiwania dostępu do zasobów lokalnych i w Internecie, jeśli usługa [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) nie jest używana.
 - Infrastruktura kluczy publicznych (PKI) do implementowania obciążeń logowania jednokrotnego.
-- Kontrola przepływu ruchu TCP i UDP między strefami sieciowymi szprych i Internetem.
+- Sterowanie przepływem ruchu TCP i UDP między strefami sieci szprychy a Internetem.
 - Sterowanie przepływem między szprychami i środowiskiem lokalnym.
 - W razie konieczności sterowanie przepływem między jedną szprychą a inną.
 
@@ -84,6 +83,6 @@ Szprychy mogą być również połączone ze szprychą, która pełni rolę pias
 
 <!-- images -->
 
-[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "Ogólny przykład piasty i szprych"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Klaster centrów i szprych"
-[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Szprycha do szprychy"
+[1]: ../../_Images/azure-best-practices/network-hub-spoke-high-level.png "przykład wysokiego poziomu koncentratora i szprychy"
+[2]: ../../_Images/azure-best-practices/network-hub-spokes-cluster.png "klaster centrów i szprych"
+[3]: ../../_Images/azure-best-practices/network-spoke-to-spoke.png "szprycha do szprychy"

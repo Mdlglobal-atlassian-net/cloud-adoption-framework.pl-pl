@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 59810d9bd3e45086597cb9811ce4bba160640246
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9c4a98c05f1a3cda8265b928c1a71556f1288e30
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80526980"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216252"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Przykłady wyników uzyskiwania dostępu globalnego
 
@@ -26,7 +26,7 @@ Rozwiązania w chmurze umożliwiają przeniesienie kosztów globalizacji do dost
 
 Rozszerzanie na nowy rynek może być jednym z najbardziej cennych wyników firmy podczas transformacji. Możliwość szybkiego wdrażania zasobów na rynku bez długoterminowego zobowiązania umożliwia liderom sprzedaży i operacji badanie opcji, które nie były brane pod uwagę w przeszłości.
 
-- **Przykład:** Producent kosmetyków zidentyfikował trend. Niektóre produkty są dostarczane do regionu Azja i Pacyfik, nawet jeśli żaden zespół sprzedaży nie działa w tym regionie. Minimalna ilość systemów wymaganych przez zdalną siłę sprzedaży jest mała, ale opóźnienie uniemożliwia rozwiązanie dostępu zdalnego. Aby zrobić wielką część tego trendu, wiceprezes działu sprzedaży chce eksperymentować z zespołami ds. sprzedaży w Japonii i Korei. Ze względu na to, że firma przeszła migrację w chmurze, mogła w ciągu dni wdrożyć niezbędne systemy w Japonii i Korei. Dzięki temu wiceprezes sprzedaży może zwiększyć przychód w regionie o _x procent_ w ciągu trzech miesięcy. Te dwa rynki nadal outperformą inne części świata, co prowadzi do operacji sprzedaży w całym regionie.
+- **Przykład:** Producent kosmetyków zidentyfikował trend. Niektóre produkty są dostarczane do regionu Azja i Pacyfik, nawet jeśli żaden zespół sprzedaży nie działa w tym regionie. Minimalna ilość systemów wymaganych przez zdalną siłę sprzedaży jest mała, ale opóźnienie uniemożliwia rozwiązanie dostępu zdalnego. Aby zrobić wielką część tego trendu, wiceprezes ds. sprzedaży chce eksperymentować z zespołami ds. sprzedaży w Japonii i Korei Południowej. Ze względu na to, że firma przeszła migrację w chmurze, mogła w ciągu dni wdrożyć niezbędne systemy w Japonii i w Korei Południowej. To pozwoliło na wiceprezesa sprzedaży do wzrostu przychodów w regionie o _x procent_ w ciągu trzech miesięcy. Te dwa rynki nadal outperformą inne części świata, co prowadzi do operacji sprzedaży w całym regionie.
 
 ## <a name="data-sovereignty"></a>Niezależność danych
 

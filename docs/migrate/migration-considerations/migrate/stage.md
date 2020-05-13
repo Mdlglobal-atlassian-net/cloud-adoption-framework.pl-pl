@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f6d45943ac8545083ce8d31215488b433a3ad00b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 40a0899a10e242e98ed16aa2bcbfdbd55f65afc2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432461"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216082"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>Informacje dotyczące przemieszczania podczas migracji
 
-Zgodnie z opisem w artykule dotyczącym modeli promocji *przemieszczanie* to proces, podczas którego zasoby zostały zmigrowane do chmury. Nie są one jednak jeszcze gotowe do promowania do środowiska produkcyjnego. Jest to często ostatni krok w procesie migracji. Po przemieszczeniu obciążenie jest zarządzane przez zespoły ds. operacji informatycznych lub operacji w chmurze w celu przygotowania ich do użycia w środowisku produkcyjnym.
+Zgodnie z opisem w artykule dotyczącym modeli promocji _przemieszczanie_ to proces, podczas którego zasoby zostały zmigrowane do chmury. Nie są one jednak jeszcze gotowe do promowania do środowiska produkcyjnego. Jest to często ostatni krok w procesie migracji. Po przemieszczeniu obciążenie jest zarządzane przez zespoły ds. operacji informatycznych lub operacji w chmurze w celu przygotowania ich do użycia w środowisku produkcyjnym.
 
 ## <a name="deliverables"></a>Rezultaty
 

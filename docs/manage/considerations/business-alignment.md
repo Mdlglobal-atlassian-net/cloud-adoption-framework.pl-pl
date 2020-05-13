@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 432e974a304741a64e0cd7da9577ecec5e35d57e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7db8091d12a763568a3ba7e549770fa94cf0ea23
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434051"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216592"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Tworzenie wyrównania biznesowego w zarządzaniu chmurą
 
@@ -26,14 +26,14 @@ Na szczęście proces opracowywania strategii wdrażania w chmurze i planu wdra�
 
 - Poziom ** [krytyczności](./criticality.md):** Mapowanie obciążeń na procesy biznesowe. Krytyczne znaczenie klasyfikacji do koncentracji inwestycji.
 - ** [Wpływ](./impact.md):** Zrozumienie wpływu potencjalnej awarii, aby pomóc w ocenie powrotu do inwestycji związanych z zarządzaniem chmurą.
-- **[Zobowiązanie](./commitment.md):** opracowywanie prawdziwych partnerstwa przez tworzenie i dokumentowanie umów *z firmą*.
+- **[Zobowiązanie](./commitment.md):** opracowywanie prawdziwych partnerstwa przez tworzenie i dokumentowanie umów _z firmą_.
 
 > [!NOTE]
 > Podstawowe warunki te są klasycznymi postanowieniami IT, takimi jak SLA, RTO i RPO. Mapowanie konkretnych firm i warunki IT są szczegółowo omówione w artykule dotyczącym [zobowiązania](./commitment.md) .
 
-## <a name="ops-management-planning-workbook"></a>Skoroszyt planowania zarządzania w Ops
+## <a name="operations-management-workbook"></a>Skoroszyt zarządzania operacjami
 
-Aby ułatwić przechwycenie decyzji wynikających z tej konwersacji dotyczącej wyrównania terminu, [skoroszyt zarządzania Ops](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) jest dostępny w witrynie GitHub. Ten skoroszyt nie wykonuje umowy SLA ani obliczeń kosztów. Służy tylko do przechwycenia takich środków i prognozowania powrotu do unikania utraty strat.
+Aby ułatwić przechwycenie decyzji wynikających z tej rozmowy o wyrównaniu, [skoroszyt zarządzania operacjami](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) jest dostępny w witrynie GitHub. Ten skoroszyt nie wykonuje umowy SLA ani obliczeń kosztów. Służy tylko do przechwycenia takich środków i prognozowania powrotu do unikania utraty strat.
 
 Alternatywnie te same obciążenia i powiązane zasoby mogą być otagowane bezpośrednio na platformie Azure, jeśli rozwiązania zostały już wdrożone w chmurze.
 

@@ -1,32 +1,30 @@
 ---
-title: Centralne możliwości IT
-description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak stworzyć scentralizowany zespół IT do działania wdrożenia w chmurze.
+title: Poznaj funkcje środkowe
+description: Poznaj funkcję centralnego zespołu IT, w tym źródło, zakres, element dostarczany i ryzyko.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/10/2019
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d24c5076bd7843f6f4559e901144be6ba3a33ca4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4f12b19227559b299b71ab64a95ef75396951183
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120292"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216558"
 ---
-# <a name="central-it-capabilities"></a>Centralne możliwości IT
+# <a name="central-it-functions"></a>Centralne funkcje IT
 
-W miarę skalowania rozwiązań związanych z zarządzaniem chmurą same możliwości zarządzania chmurą mogą nie być wystarczające do zarządzania wysiłkami. Gdy przyjęcie jest stopniowe, zespoły będą w sposób ekologiczny rozwijać umiejętności i procesy wymagane do przygotowania do chmury w czasie.
+W miarę skalowania rozwiązań związanych z chmurą funkcje ładu w chmurze same w sobie mogą nie być wystarczające do zarządzania wysiłkami. Gdy przyjęcie jest stopniowe, zespoły będą w sposób ekologiczny rozwijać umiejętności i procesy wymagane do przygotowania do chmury w czasie.
 
 Jeśli jednak jeden zespół wdrażania w chmurze używa chmury w celu osiągnięcia wyników działalności dla dużej firmy, to najprawdopodobniej będzie to w przypadku stopniowego wdrażania. Powodzenie następuje po sukcesie. Ma to również zastosowanie w przypadku wdrażania w chmurze, ale ma to miejsce w skali chmury. Gdy wdrożenie chmurowe rozszerza się z jednego zespołu do wielu zespołów, konieczne jest dodatkowe wsparcie z istniejących pracowników działu IT. Jednak Ci członkowie personelu mogą nie mieć szkoleń i doświadczeń wymaganych do obsługi chmury przy użyciu natywnych narzędzi IT w chmurze. Często dotyczy to tworzenia centralnych zespołów IT zarządzających chmurą.
 
 > [!CAUTION]
 > Chociaż jest to typowy etap zapadalności, może to stanowić wysokie ryzyko dla przyjęcia, potencjalnie blokując innowacje i wysiłki w zakresie migracji, jeśli nie jest to efektywnie zarządzane. Zapoznaj się z sekcją ryzyko poniżej, aby dowiedzieć się, jak ograniczyć ryzyko scentralizowanego działania centralizacji.
 
-## <a name="possible-sources-for-central-it-expertise"></a>Możliwe źródła dla centralnej wiedzy IT
-
-Umiejętności niezbędne do zapewnienia scentralizowanych możliwości IT mogą być udostępniane przez:
+Umiejętności niezbędne do zapewnienia scentralizowanych funkcji IT mogą być udostępniane przez:
 
 - Istniejący centralny zespół IT
 - Enterprise Architects
@@ -51,15 +49,15 @@ Następujące zadania są zwykle wykonywane regularnie:
 ### <a name="strategic-tasks"></a>Zadania strategiczne
 
 - Ponownego
-  - [wyniki biznesowe](../strategy/business-outcomes/index.md)
-  - [Modele finansowe](../strategy/financial-models.md)
-  - [motywacje do wdrożenia w chmurze](../strategy/motivations.md)
-  - [ryzyka biznesowe](../govern/policy-compliance/risk-tolerance.md)
-  - [Racjonalizacja podpisu cyfrowego](../digital-estate/index.md)
+  - [Wyniki biznesowe](../strategy/business-outcomes/index.md).
+  - [Modele finansowe](../strategy/financial-models.md).
+  - [Motywacje do wdrożenia w chmurze](../strategy/motivations.md).
+  - [Ryzyko biznesowe](../govern/policy-compliance/risk-tolerance.md).
+  - [Racjonalizacja cyfrowego podpisywania](../digital-estate/index.md).
 - Monitoruj plany wdrażania i postęp w odniesieniu do [zaległości migracji z priorytetami](../migrate/migration-considerations/assess/release-iteration-backlog.md).
 - Zidentyfikuj i ustal priorytety zmian platformy, które są wymagane do obsługi zaległości migracji.
 - Wykonaj działania jako pośrednią lub warstwę translacji między potrzebami wdrażania chmury a istniejącymi zespołami IT.
-- Skorzystaj z istniejących zespołów IT, aby przyspieszyć możliwości platformy i włączyć wdrażanie.
+- Skorzystaj z istniejących zespołów IT, aby przyspieszyć funkcje platformy i włączyć wdrażanie.
 
 ### <a name="technical-tasks"></a>Zadania techniczne
 
@@ -68,7 +66,7 @@ Następujące zadania są zwykle wykonywane regularnie:
 - Pracuj i Zarządzaj platformą w chmurze.
 - Ciągle ulepszaj platformę.
 - Zadbaj o nowe innowacje na platformie chmury.
-- Dostarczaj nowe możliwości chmury umożliwiające obsługę tworzenia wartości biznesowej.
+- Dostarczaj nowe funkcje w chmurze umożliwiające obsługę tworzenia wartości biznesowej.
 - Sugeruj rozwiązania samoobsługowe.
 - Upewnij się, że rozwiązania zaspokajają istniejące wymagania dotyczące zarządzania i zgodności.
 - Utwórz i sprawdź poprawność wdrożenia architektury platformy.
@@ -86,7 +84,7 @@ W nowoczesnych widokach zasoby są dystrybuowane globalnie. Obowiązki są deleg
 
 Centralnie jako funkcja jest również pozycjonowane, aby uzyskać cenne informacje i praktyki z istniejących modeli lokalnych i zastosować te praktyki do dostarczania w chmurze. Jednak ten proces będzie wymagał zmian. Nowe procesy, nowe umiejętności i nowe narzędzia są wymagane do obsługi wdrażania w chmurze na dużą skalę. Po dobieraniu centralnych rozwiązań IT jest to ważny partner w zakresie działań związanych z wdrażaniem w chmurze. Jeśli jednak centralna usługa nie dostosowuje się do chmury lub próbuje użyć chmury jako katalizatora dla kontrolek ścisłych, centralnie przestanie ona być blokowana do przyjęcia, innowacji i migracji.
 
-Środki tego ryzyka to szybkość i elastyczność. Chmura upraszcza szybkie wdrażanie nowych technologii. Jeśli nowe możliwości chmury można wdrożyć w ciągu kilku minut, ale centralne przeglądy IT dodają tygodnie lub miesiące do procesu wdrażania, a następnie te scentralizowane procesy stają się główną przeszkód dla sukcesu firmy. Po napotkaniu tego wskaźnika należy rozważyć alternatywne strategie dotyczące dostarczania IT.
+Środki tego ryzyka to szybkość i elastyczność. Chmura upraszcza szybkie wdrażanie nowych technologii. Jeśli nowe funkcje chmury można wdrożyć w ciągu kilku minut, ale centralne przeglądy IT dodają tygodnie lub miesiące do procesu wdrażania, a następnie te scentralizowane procesy stają się główną przeszkód dla sukcesu firmy. Po napotkaniu tego wskaźnika należy rozważyć alternatywne strategie dotyczące dostarczania IT.
 
 ### <a name="exceptions"></a>Wyjątki
 
@@ -104,21 +102,20 @@ Ta przykładowa ilustracja przedstawia podejście podejmowane przez dojrzały ce
 
 Firma Contoso przyjęła centralny model IT na potrzeby obsługi zasobów w chmurze firmy. Aby można było dostarczyć ten model, mają one zaimplementowane ścisłe kontrolki dla różnych usług udostępnionych, na przykład połączeń sieciowych przychodzących. Dzięki temu można zmniejszyć narażenie środowiska chmury i zapewnić, że jedno urządzenie "ze szlifem" blokuje cały ruch w przypadku wystąpienia naruszenia. Stan zasad linii bazowej zabezpieczeń, który cały ruch przychodzący musi następować przez udostępnione urządzenie zarządzane przez centralny zespół IT.
 
-Jednak jeden z zespołów wdrażania chmury wymaga teraz środowiska z dedykowanym i specjalnie skonfigurowanym połączeniem sieciowym, aby można było korzystać z określonej technologii chmury. Niedojrzały centralny zespół IT po prostu odrzuca żądanie i ustala priorytety swoich istniejących procesów na potrzeby wdrażania. Centralny zespół IT firmy Contoso jest inny. Szybko zidentyfikowały proste, czwarte rozwiązanie do tego dylematem: klasyfikacji, negocjacji, izolacji i automatyzacji.
+Jednak jeden z zespołów wdrażania chmury wymaga teraz środowiska z dedykowanym i specjalnie skonfigurowanym połączeniem sieciowym, aby można było korzystać z określonej technologii chmury. Niedojrzały centralny zespół IT po prostu odrzuca żądanie i ustala priorytety swoich istniejących procesów na potrzeby wdrażania. Centralny zespół IT firmy Contoso jest inny. Szybko zidentyfikowały proste, czwarte rozwiązanie do tego dylematem:
 
-**Klasyfikacja:** Ponieważ zespół ds. wdrażania chmury był na wczesnym etapie tworzenia nowego rozwiązania i nie miał żadnych poufnych danych ani wymagań związanych z obsługą techniczną, zasoby w środowisku zostały sklasyfikowane jako niskie ryzyko i niekrytyczne. Obowiązująca Klasyfikacja to znak zapadalności w centrali. Klasyfikowanie wszystkich zasobów i środowisk umożliwia wyczyszczenie zasad.
+  1. **Klasyfikacja:** Ponieważ zespół ds. wdrażania chmury był na wczesnym etapie tworzenia nowego rozwiązania i nie miał żadnych poufnych danych ani wymagań związanych z obsługą techniczną, zasoby w środowisku zostały sklasyfikowane jako niskie ryzyko i niekrytyczne. Obowiązująca Klasyfikacja to znak zapadalności w centrali. Klasyfikowanie wszystkich zasobów i środowisk umożliwia wyczyszczenie zasad.
+  1. **Negocjowanie:** Sama klasyfikacja nie jest wystarczająca. Usługi udostępnione zostały wdrożone w celu spójnego działania zasobów poufnych i o kluczowym znaczeniu. Zmiana reguł spowoduje naruszenie zasad zarządzania i zgodności dla zasobów, które wymagają większej ochrony. Nie można nawiązać przyjęcia na koszt stabilności, bezpieczeństwa lub zarządzania. Prowadzi to do negocjacji z zespołem ds. wdrażania, aby odpowiedzieć na określone pytania. Czy zespół ds. współpracy w firmie DevOps zapewnia zarządzanie operacjami w tym środowisku? Czy to rozwiązanie wymaga bezpośredniego dostępu do innych zasobów wewnętrznych? Jeśli zespół adopcji w chmurze jest wygodny dla tych kompromisów, może być możliwy ruch przychodzący.
+  1. **Izolacja:** Ponieważ firma może zapewnić własne bieżące zarządzanie operacjami, a ponieważ rozwiązanie nie polega na kierowaniu ruchu do innych zasobów wewnętrznych, można je odizolowywane w nowej subskrypcji. Ta subskrypcja jest również dodawana do oddzielnego węzła nowej hierarchii grupy zarządzania.
+  1. **Automatyzacja:** Kolejną oznaką zapadalności w tym zespole są zasady automatyzacji. Zespół używa Azure Policy do automatyzowania wymuszania zasad. Używają one również planów platformy Azure do automatyzowania wdrażania wspólnych składników platformy i wymuszania zgodności z określoną linią bazową tożsamości. W przypadku tej subskrypcji i innych w nowej grupie zarządzania zasady i szablony są nieco inne. Zasady blokujące przepustowość transferu danych przychodzących zostały zniesione. Zostały one zastąpione przez wymagania związane z kierowaniem ruchu przez subskrypcję usług udostępnionych, podobnie jak w przypadku ruchu przychodzącego, aby wymusić izolację ruchu. Ponieważ lokalne narzędzia do zarządzania operacjami nie mogą uzyskać dostępu do tej subskrypcji, agenci tego narzędzia nie są już wymagani. Wszystkie inne guardrailsy ładu wymagane przez inne subskrypcje w hierarchii grupy zarządzania nadal są wymuszane, co zapewnia wystarczającą guardrails.
 
-**Negocjowanie:** Sama klasyfikacja nie jest wystarczająca. Usługi udostępnione zostały wdrożone w celu spójnego działania zasobów poufnych i o kluczowym znaczeniu. Zmiana reguł spowoduje naruszenie zasad zarządzania i zgodności dla zasobów, które wymagają większej ochrony. Nie można nawiązać przyjęcia na koszt stabilności, bezpieczeństwa lub zarządzania. Prowadzi to do negocjacji z zespołem ds. wdrażania, aby odpowiedzieć na określone pytania. Czy zespół ds. współpracy w firmie DevOps zapewnia zarządzanie operacjami w tym środowisku? Czy to rozwiązanie wymaga bezpośredniego dostępu do innych zasobów wewnętrznych? Jeśli zespół adopcji w chmurze jest wygodny dla tych kompromisów, może być możliwy ruch przychodzący.
-
-**Izolacja:** Ponieważ firma może zapewnić własne bieżące zarządzanie operacjami, a ponieważ rozwiązanie nie polega na kierowaniu ruchu do innych zasobów wewnętrznych, można je odizolowywane w nowej subskrypcji. Ta subskrypcja jest również dodawana do oddzielnego węzła nowej hierarchii grupy zarządzania.
-
-**Automatyzacja:** Kolejną oznaką zapadalności w tym zespole są zasady automatyzacji. Zespół używa Azure Policy do automatyzowania wymuszania zasad. Używają one również planów platformy Azure do automatyzowania wdrażania wspólnych składników platformy i wymuszania zgodności z określoną linią bazową tożsamości. W przypadku tej subskrypcji i innych w nowej grupie zarządzania zasady i szablony są nieco inne. Zasady blokujące przepustowość transferu danych przychodzących zostały zniesione. Zostały one zastąpione przez wymagania związane z kierowaniem ruchu przez subskrypcję usług udostępnionych, podobnie jak w przypadku ruchu przychodzącego, aby wymusić izolację ruchu. Ponieważ lokalne narzędzia do zarządzania operacjami nie mogą uzyskać dostępu do tej subskrypcji, agenci tego narzędzia nie są już wymagani. Wszystkie inne guardrailsy ładu wymagane przez inne subskrypcje w hierarchii grupy zarządzania nadal są wymuszane, co zapewnia wystarczającą guardrails.
-
-Współczesne podejście do scentralizowanego zespołu IT firmy Contoso zapewniało rozwiązanie, które nie spowodowało naruszenia zasad zarządzania lub zgodności, ale nadal było to zalecane. To podejście do brokera, a nie posiadające natywne podejścia chmurowego do scentralizowanego, to pierwszy krok w kierunku tworzenia prawdziwej usługi Cloud Center doskonałości (CCoE). Przyjęcie tej metody w celu szybkiego rozwoju istniejących zasad umożliwi scentralizowanej kontroli, gdy jest to wymagane, i zarządzanie guardrails, gdy będzie możliwe zwiększenie elastyczności. NALEŻY zrównoważyć te dwa kwestie w celu zmniejszenia ryzyka związanego z centralnym użyciem w chmurze.
+Współczesne podejście do scentralizowanego zespołu IT firmy Contoso zapewniało rozwiązanie, które nie spowodowało naruszenia zasad zarządzania lub zgodności, ale nadal zachęcamy do przyjęcia. To podejście do brokera, a nie posiadające natywne podejścia chmurowego do scentralizowanego, to pierwszy krok w kierunku tworzenia Centrum rozwiązań w chmurze (CCoE). Przyjęcie tej metody w celu szybkiego rozwoju istniejących zasad umożliwi scentralizowanej kontroli, gdy jest to wymagane, i zarządzanie guardrails, gdy będzie możliwe zwiększenie elastyczności. NALEŻY zrównoważyć te dwa kwestie w celu zmniejszenia ryzyka związanego z centralnym użyciem w chmurze.
 
 ## <a name="next-steps"></a>Następne kroki
 
-W miarę jak centralnie odnosi się do chmury, kolejny etap zapadalności jest zwykle niezależny od [operacji w chmurze](./cloud-operations.md). Dostępność natywnych narzędzi do zarządzania operacjami w chmurze i niższych kosztów operacyjnych dla rozwiązań PaaS-First często prowadzi do zespołów gospodarczych (lub bardziej szczegółowych zespołów DevOps w firmie) przy założeniu, że odpowiedzialność za operacje w chmurze.
+- W miarę jak centralnie odnosi się do chmury, kolejny etap zapadalności jest zwykle niezależny od operacji w chmurze. Dostępność natywnych narzędzi do zarządzania operacjami w chmurze i niższych kosztów operacyjnych dla rozwiązań PaaS-First często prowadzi do zespołów gospodarczych (lub bardziej szczegółowych zespołów DevOps w firmie) przy założeniu, że odpowiedzialność za operacje w chmurze.
 
-> [!div class="nextstepaction"]
-> [Możliwości operacji w chmurze](./cloud-operations.md)
+Dowiedz się więcej o usługach:
+
+- [Kompilowanie zespołu operacji w chmurze](../get-started/team/cloud-operations.md)
+- [Funkcje operacji w chmurze](./cloud-operations.md)

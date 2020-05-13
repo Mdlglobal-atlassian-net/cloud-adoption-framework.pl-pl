@@ -1,31 +1,24 @@
 ---
-title: Możliwości operacji w chmurze
-description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby poznać możliwości operacji w chmurze i umożliwić wykonywanie operacji IT w celu poprawy i zapewnienia dodatkowej wartości.
-author: BrianBlanchard
-ms.author: brblanch
-ms.date: 09/10/2019
-ms.topic: conceptual
+title: Informacje o funkcjach działania w chmurze
+description: Zapoznaj się z tworzeniem funkcjonalności operacji w chmurze i personelem zespołu odpowiednio do potrzeb.
+author: JanetCThomas
+ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.custom: organize
-ms.openlocfilehash: fc5097eb5a6bb0c0400c0789ea197d0472f858ea
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.topic: conceptual
+ms.date: 04/20/2020
+ms.openlocfilehash: 3fd693d5e3275eea40d1a71149207689b7dca35b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428547"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215623"
 ---
-# <a name="cloud-operation-capabilities"></a>Możliwości operacji w chmurze
+# <a name="cloud-operations-functions"></a>Funkcje operacji w chmurze
 
-Transformację biznesową można włączyć przy użyciu rozwiązania Cloud. Jednak funkcja Returns jest realizowana tylko wtedy, gdy obciążenia wdrożone w chmurze działają w sposób wyrównany z oczekiwaniami. Ponieważ dodatkowe obciążenia stosują technologie chmurowe, wymagane są dodatkowe możliwości operacji.
+Zespół operacyjny koncentruje się na monitorowaniu, naprawianiu i korygowaniu problemów związanych z tradycyjnymi operacjami IT i zasobami. W chmurze wiele kosztów kapitałowych i działań związanych z operacjami jest przesyłanych do dostawcy chmury, dzięki czemu można wykonać operację w celu poprawy i zapewnienia znaczącej dodatkowej wartości.
 
-Tradycyjne operacje IT są wymagane do skoncentrowania się na utrzymaniu bieżących operacji dla szerokiej gamy zasobów technicznych niskiego poziomu. Elementy, takie jak magazyn, procesor CPU, pamięć, sprzęt sieciowy, serwery i hosty maszyn wirtualnych, wymagają ciągłej konserwacji w celu utrzymania operacji wglądu. Budżety inwestycyjne często obejmują duże wydatki związane z rocznymi lub okresowymi aktualizacjami tych zasobów niskiego poziomu.
-
- Kapitał ludzki w ramach operacji będzie również mocno ukierunkowany na monitorowanie, naprawianie i korygowanie problemów związanych z tymi zasobami. W chmurze wiele z tych kosztów kapitałowych i działań związanych z operacjami jest przesyłanych do dostawcy chmury. Zapewnia to możliwość wykonywania operacji IT w celu poprawy i zapewnienia znaczącej dodatkowej wartości.
-
-## <a name="possible-sources-for-this-capability"></a>Możliwe źródła dla tej możliwości
-
-Umiejętności wymagane do zapewnienia możliwości operacji w chmurze mogą być udostępniane przez:
+Umiejętności wymagane do udostępniania funkcji operacji w chmurze mogą być udostępniane przez:
 
 - Operacje IT
 - Dostawcy rozwiązań IT
@@ -35,35 +28,53 @@ Umiejętności wymagane do zapewnienia możliwości operacji w chmurze mogą by�
 - Zespoły operacyjne aplikacji biznesowej
 - Zespoły DevOps
 
-## <a name="key-responsibilities"></a>Kluczowe obowiązki
+## <a name="preparation"></a>Przygotowanie
 
-Obowiązki osób, które zapewniają obsługę operacji w chmurze, zapewniają maksymalną wydajność obciążeń i minimalne zakłócenia biznesowe w ramach uzgodnionych budżetów operacji.
+- [Zarządzanie zasobami na platformie Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure): Dowiedz się, jak korzystać z interfejsu wiersza polecenia platformy Azure i portalu sieci Web w celu tworzenia i kontrolowania zasobów opartych na chmurze oraz zarządzania nimi.
+- [Usługi sieciowe platformy Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Poznaj podstawowe informacje dotyczące sieci platformy Azure oraz zwiększaj odporność i zmniejszaj opóźnienia.
 
-### <a name="strategic-tasks"></a>Zadania strategiczne
+Zapoznaj się z następującymi tematami:
 
-- Przejrzyj [wyniki biznesowe](../strategy/business-outcomes/index.md), [Modele finansowe](../strategy/financial-models.md), [motywacje na potrzeby wdrażania chmury](../strategy/motivations.md), [ryzyka biznesowego](../govern/policy-compliance/risk-tolerance.md)i [racjonalizacji podpisu cyfrowego](../digital-estate/index.md).
+- [Wyniki biznesowe](../strategy/business-outcomes/index.md)
+- [Modele finansowe](../strategy/financial-models.md)
+- [Motywacje do wdrożenia w chmurze](../strategy/motivations.md)
+- [Ryzyka biznesowe](../govern/policy-compliance/risk-tolerance.md)
+- [Racjonalizacja podpisu cyfrowego](../digital-estate/index.md)
+
+## <a name="minimum-scope"></a>Zakres minimalny
+
+Obowiązki osób w zespole operacji w chmurze obejmują maksymalną wydajność obciążeń i minimalne zakłócenia biznesowe w ramach uzgodnionego budżetu operacji.
+
 - Określanie stopnia ważności obciążeń, wpływu zakłóceń lub obniżenia wydajności.
-- Ustanów zobowiązania dotyczące kosztów i wydajności.
+- Ustanów zatwierdzone przez firmę zobowiązania dotyczące kosztów i wydajności.
 - Monitorowanie i obsługiwanie obciążeń w chmurze.
 
-### <a name="technical-tasks"></a>Zadania techniczne
+## <a name="deliverables"></a>Rezultaty
 
-- Obsługa spisu zasobów i obciążeń.
-- Monitorowanie wydajności obciążeń.
-- Zachowanie zgodności operacyjnej.
-- Ochrona obciążeń i skojarzonych zasobów.
-- Odzyskaj zasoby w przypadku obniżenia wydajności lub przerwania działania biznesowego.
-- Wczesne możliwości platform podstawowych.
-- Ciągłe Poprawianie wydajności obciążeń.
-- Popraw wymagania budżetowe i projektowe dotyczące obciążeń, aby dopasować zobowiązania do firmy.
+- Obsługa spisu zasobów i obciążeń
+- Monitorowanie wydajności obciążeń
+- Zachowanie zgodności operacyjnej
+- Ochrona obciążeń i skojarzonych zasobów
+- Odzyskaj zasoby, jeśli występuje spadek wydajności lub przerwanie działania biznesowego
+- Wczesne funkcje platform podstawowych
+- Ciągłe Poprawianie wydajności obciążeń
+- Popraw wymagania budżetowe i projektowe dotyczące obciążeń, aby dopasować zobowiązania do firmy
 
-## <a name="meeting-cadence"></a>Erze spotkania
+### <a name="meeting-cadence"></a>Erze spotkania
 
-Te, które wykonują działania w chmurze, powinny być związane z planowaniem wydań i centrum usługi Cloud Center w celu zapewnienia opinii i przygotowania do wymagań operacyjnych.
+Zespół ds. operacji w chmurze powinien być uwzględniany w planowaniu wydania i centrum usługi Cloud Center w celu zapewnienia opinii i przygotowania do wymagań operacyjnych.
+
+## <a name="out-of-scope"></a>Poza zakresem
+
+Tradycyjne operacje IT, które koncentrują się na utrzymaniu bieżących operacji dla zasobów technicznych niskiego poziomu, są poza zakresem dla zespołu operacji w chmurze. Elementy, takie jak magazyn, procesor CPU, pamięć, sprzęt sieciowy, serwery i hosty maszyn wirtualnych, wymagają ciągłej konserwacji, monitorowania, naprawy i korygowania problemów związanych z utrzymywaniem operacji szczytowych. W chmurze wiele z tych kosztów kapitałowych i działań związanych z operacjami jest przesyłanych do dostawcy chmury.
 
 ## <a name="next-steps"></a>Następne kroki
 
-W miarę przyjmowania i skalowania operacji ważne jest definiowanie i automatyzowanie najlepszych rozwiązań dotyczących zarządzania, które zwiększają istniejące wymagania IT. Tworzenie Centrum rozwiązań w [chmurze](./cloud-center-of-excellence.md) jest ważnym krokiem do skalowania rozwiązań związanych z wdrażaniem w chmurze, operacji w chmurze i zarządzania chmurą.
+W miarę przyjmowania i skalowania operacji ważne jest definiowanie i automatyzowanie najlepszych rozwiązań dotyczących zarządzania, które zwiększają istniejące wymagania IT. Tworzenie Centrum rozwiązań w chmurze jest ważnym krokiem do skalowania rozwiązań związanych z wdrażaniem w chmurze, operacji w chmurze i zarządzania chmurą.
 
-> [!div class="nextstepaction"]
-> [Ustanów centrum w chmurze doskonałości](./cloud-center-of-excellence.md)
+Dowiedz się więcej o usługach:
+
+- Funkcje usługi [Cloud Center doskonałości](../organize/cloud-center-of-excellence.md)
+- [Antywzorce organizacyjne: silosy i fiefdoms](../organize/fiefdoms-silos.md).
+
+Dowiedz się, jak wyrównać zakres obowiązków dla zespołów, opracowując macierz międzyzespołową, która identyfikuje osoby odpowiedzialne, obsługujące, konsultowane i poinformowane (RACI). Pobierz i zmodyfikuj [szablon arkusza kalkulacyjnego Raci](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx).

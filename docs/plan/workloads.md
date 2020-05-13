@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4ffd05a17466d0ca61605de5080b54316de78e4d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: eee8a2845a797cc1d9df3c2484cd3165967ac4d8
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433967"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215521"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Definiowanie i ustalanie priorytetów obciążeń dla planu wdrażania chmury
 
@@ -34,18 +34,18 @@ Strategiczne dane wejściowe z listy wymagań wstępnych znacznie ułatwiają wy
 
 ## <a name="initial-workload-prioritization"></a>Początkowa priorytetyzacja obciążeń
 
-Podczas procesu [racjonalizacji przyrostowej](../digital-estate/rationalize.md)zespół powinien wyrazić zgodę na podejście "moc 10", które składa się z 10 obciążeń priorytetowych. Te obciążenia stanowią początkową granicę planowania wdrożenia.
+Podczas procesu [racjonalizacji przyrostowej](../digital-estate/rationalize.md)zespół powinien wyrazić zgodę na [moc 10](../digital-estate/rationalize.md#release-planning), która składa się z 10 obciążeń priorytetowych. Te obciążenia stanowią początkową granicę planowania wdrożenia.
 
 W przypadku podjęcia decyzji o tym, że nie jest wymagana racjonalizacja dotyczącej typu cyfrowego, firma Microsoft zaleca, aby zespoły wdrożenia chmury i zespół strategii chmurowych zgadzali się na listę 10 aplikacji, które będą stanowić początkowy fokus migracji. Zalecamy dalsze, aby te 10 obciążeń zawierało kombinację prostych obciążeń (mniej niż 10 zasobów w ramach wdrożenia samodzielnego) i bardziej złożonych obciążeń. Te 10 obciążeń rozpocznie proces priorytetyzacji obciążenia.
 
 > [!NOTE]
-> Moc 10 służy jako początkowa granica planowania, aby skoncentrować energię i inwestycje w fazie wczesnego etapu analizy. Jednak czynność analizowania i definiowania obciążeń może spowodować zmiany na liście obciążeń priorytetowych.
+> Moc 10 podejścia służy jako początkowa granica planowania, aby skoncentrować energię i inwestycje w fazie wczesnego etapu analizy. Jednak czynność analizowania i definiowania obciążeń może spowodować zmiany na liście obciążeń priorytetowych.
 
 ## <a name="add-workloads-to-your-cloud-adoption-plan"></a>Dodawanie obciążeń do planu wdrażania chmury
 
 W poprzednim artykule [Plan wdrażania chmury i Azure DevOps](./template.md)został utworzony plan wdrażania chmury w usłudze Azure DevOps.
 
-Teraz można reprezentować obciążenia na mocy 10 list w planie wdrożenia chmury. Najprostszym sposobem na to jest przeprowadzenie edycji zbiorczej w programie Microsoft Excel. Aby przygotować stację roboczą do edycji zbiorczej, zobacz [zbiorcze Dodawanie lub modyfikowanie elementów roboczych za pomocą programu Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Teraz można reprezentować obciążenia na mocy 10 list w planie wdrożenia chmury. Najprostszym sposobem na to jest przeprowadzenie edycji zbiorczej w programie Microsoft Excel. Aby przygotować stację roboczą do edycji zbiorczej, zobacz [zbiorcze Dodawanie lub modyfikowanie elementów roboczych za pomocą programu Microsoft Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 Krok 5 w tym artykule informuje o wybraniu **listy danych wejściowych**. Zamiast tego wybierz pozycję **Lista zapytań**. Następnie na liście rozwijanej **Wybierz zapytanie** wybierz zapytanie **szablon obciążenia** . Ta kwerenda ładuje wszystkie działania związane z migracją pojedynczego obciążenia do arkusza kalkulacyjnego.
 

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 35e7f2a09dd1421f0d57808658a96135dcf8e947
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b07ded7b1d2ede7bc354709a798180daedfdae3b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997601"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216167"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategia utrzymania ładu lub zgodności
 
@@ -30,11 +30,14 @@ Konfiguracja podstawowego środowiska platformy Azure może zmienić się znacz�
 
 **Plany zgodności ISO 27001:** W przypadku klientów, którzy są zobowiązani do przestrzegania standardów zgodności ISO, [przykłady planów usług udostępnionych iso 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared) mogą działać jako bardziej wydajny MVP, aby generować bardziej zaawansowane ograniczenia ładu w procesie iteracyjnym. [Przykład App Service Environment/SQL Database ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) rozszerza strategię, aby mapować sterowanie i wdrażać typową architekturę w środowisku aplikacji. W miarę wydawania dodatkowych strategii zgodności będą one przywoływane również tutaj.
 
-**Wirtualne centrum danych:** Może być wymagany bardziej niezawodny punkt wyjścia ładu. W takich przypadkach należy wziąć pod uwagę [Wirtualne centrum danych Azure (VDC)](../../reference/vdc.md). To podejście zazwyczaj jest zalecane podczas wysiłku wdrażania w skali przedsiębiorstwa, a szczególnie w przypadku nakładów pracy, które przekraczają 10 000 zasobów. Jest to de facto wybór dla złożonych scenariuszy nadzoru, gdy konieczne jest spełnienie dowolnej z następujących kwestii: rozbudowane wymagania dotyczące zgodności z innymi firmami, głęboka znajomość danej dziedziny lub zgodność z dojrzałymi zasadami nadzoru IT i wymaganiami dotyczącymi zgodności.
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+
+**Wirtualne centrum danych platformy Azure:** Może być wymagany bardziej niezawodny punkt wyjścia ładu. W takich przypadkach należy wziąć pod uwagę [Wirtualne centrum danych Azure (VDC)](../../reference/vdc.md). To podejście zazwyczaj jest zalecane podczas wysiłku wdrażania w skali przedsiębiorstwa, a szczególnie w przypadku nakładów pracy, które przekraczają 10 000 zasobów. Jest to również domyślny wybór dla złożonych scenariuszy ładu, gdy wymagane są dowolne z następujących warunków: wymagania dotyczące zgodności z niektórymi innymi firmami, szczegółowa wiedza o domenach lub kontrola z dojrzałymi zasadami nadzoru IT i wymaganiami dotyczącymi zgodności.
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>Opcja partnerstwa w celu spełnienia wymagań wstępnych
 
-**Usługi firmy Microsoft:** Usługi firmy Microsoft udostępniają oferty rozwiązań, które można dostosować do modelu ładu platformy wdrażania w chmurze, planów zgodności lub opcji wirtualnego centrum danych w celu zapewnienia najbardziej odpowiedniego modelu zarządzania lub zgodności. Oferta rozwiązania [Secure Cloud Insights (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) pozwala określić oparty na danych obraz wdrożenia klienckiego na platformie Azure i sprawdzić dojrzałość implementacji Azure klienta podczas identyfikowania optymalizacji istniejących architektur wdrażania, usuwania zagrożeń związanych z ładem, zabezpieczeniami i dostępnością. Szczegółowe informacje o kliencie pozwolą przeprowadzić następujące podejścia:
+**Usługi firmy Microsoft:** Usługi firmy Microsoft udostępniają oferty rozwiązań, które można dostosować do modelu ładu platformy wdrażania w chmurze, planów zgodności lub opcji wirtualnego centrum danych w celu zapewnienia najbardziej odpowiedniego modelu zarządzania lub zgodności. Skorzystaj z oferty [bezpiecznego rozwiązania Cloud Insights (Sci)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) , aby określić oparty na danych obraz wdrożenia klienta na platformie Azure i zweryfikować termin ważności implementacji platformy Azure dla klienta podczas określania optymalizacji istniejących architektur wdrożenia, usunąć zabezpieczenia i informacje o ochronie i dostępności. Szczegółowe informacje o kliencie pozwolą przeprowadzić następujące podejścia:
 
 - **Cloud Foundation:** Ustanów podstawowe projekty, wzorce i zarządzanie architekturą platformy Azure, korzystając z oferty [hybrydowej rozwiązania Cloud Foundation (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) . Zamapuj wymagania klienta do najbardziej odpowiedniej architektury referencyjnej. Zaimplementuj produkt o minimalnej koniecznej funkcjonalności, składający się z usług udostępnionych i obciążeń IaaS.
 - **Modernizacja chmury:** Oferta rozwiązania do [modernizacji w chmurze](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) służy jako kompleksowe podejście do przenoszenia aplikacji, danych i infrastruktury do chmury gotowej do użycia w przedsiębiorstwie, a także do optymalizowania i modernizacji po wdrożeniu w chmurze.
@@ -48,19 +51,19 @@ W trakcie oceny wymagane są dodatkowe decyzje, które należy dostosować do wy
 
 Wymagania dotyczące oceny ładu i zgodności są zbyt specyficzne dla klienta, aby można było podać ogólne wskazówki dotyczące faktycznych czynności podejmowanych podczas oceny. Jednak proces powinien obejmować zadania i alokacje czasu dla "dostosowanie do wymagań dotyczących zgodności/zarządzania". Aby uzyskać dodatkowe informacje na temat tych wymagań, zobacz następujące linki:
 
-Aby lepiej zrozumieć ład, zapoznaj się z [omówieniem pięciu dyscyplin ładu chmury](../../govern/governance-disciplines.md). Ta część przewodnika Cloud Adoption Framework zawiera również szablony służące do dokumentowania zasad, wskazówek i wymagań dotyczących każdej z pięciu dyscyplin:
+Aby lepiej zrozumieć zarządzanie, zapoznaj się z omówieniem [pięciu dyscyplin nadzoru chmurowego](../../govern/governance-disciplines.md). Ta sekcja struktury wdrażania w chmurze zawiera szablony umożliwiające udokumentowanie zasad, wskazówek i wymagań dla każdej z pięciu sekcji:
 
-- [Cost Management](../../govern/cost-management/template.md)
-- [Linia bazowa zabezpieczeń](../../govern/security-baseline/template.md)
-- [Spójność zasobów](../../govern/resource-consistency/template.md)
-- [Linia bazowa tożsamości](../../govern/identity-baseline/template.md)
-- [Przyspieszenie wdrożenia](../../govern/deployment-acceleration/template.md)
+- [Dyscyplina Cost Management](../../govern/cost-management/template.md)
+- [Dyscyplina linii bazowej zabezpieczeń](../../govern/security-baseline/template.md)
+- [Dyscyplina spójności zasobów](../../govern/resource-consistency/template.md)
+- [Dyscyplina linii bazowej tożsamości](../../govern/identity-baseline/template.md)
+- [Dyscyplina wdrożenia](../../govern/deployment-acceleration/template.md)
 
-Aby uzyskać wskazówki dotyczące opracowywania wytycznych dotyczących ładu opartych na modelu ładu Cloud Adoption Framework, zobacz artykuł [Implementing a cloud governance strategy](../../govern/corporate-policy.md) (Implementacja strategii ładu chmury).
+Aby uzyskać informacje na temat opracowywania wytycznych ładu opartych na modelu ładu platformy wdrażania w chmurze, zobacz [implementacja strategii nadzoru chmurowego](../../govern/corporate-policy.md).
 
 ## <a name="optimize-and-promote-process-changes"></a>Optymalizacja i podwyższenie poziomu zmian procesu
 
-W trakcie procesów optymalizacji i promowania zespół nadzorujący chmury powinien inwestować czas na przetestowanie i zweryfikowanie zgodności z przepisami dotyczącymi zarządzania i norm. Ponadto ten krok to dobry moment, aby wprowadzić procesy do zespołu ds. ładu chmury w celu zadbanie o szablony, które mogą zapewnić dodatkowe [przyspieszenie wdrażania](../../govern/deployment-acceleration/index.md) przyszłych projektów.
+W trakcie procesów optymalizacji i promowania zespół nadzorujący chmury powinien inwestować czas na przetestowanie i zweryfikowanie zgodności z przepisami dotyczącymi zarządzania i norm. Ponadto ten krok to dobry moment, aby wstrzyknąć procesy dla zespołu nadzoru chmurowego do nadzoru szablonów, które mogą zapewnić dodatkową [dyscyplinę wdrożenia](../../govern/deployment-acceleration/index.md) dla przyszłych projektów.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Sugerowana akcja w trakcie procesu optymalizacji i podwyższania poziomu
 

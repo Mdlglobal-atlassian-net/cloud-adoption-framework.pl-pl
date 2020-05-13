@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f76cde92d52cd9390974501326a198656cd11d71
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5b96c9216619a881ec9ad5a09e77ef9b3955bdb0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431718"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216286"
 ---
 # <a name="examples-of-performance-outcomes"></a>Przykłady wyników wydajności
 
@@ -26,7 +26,7 @@ Największe usługi chmury obliczeniowej działają w ogólnoświatowej sieci za
 
 Przekształć swoją firmę i Obniż koszty dzięki infrastrukturze energooszczędnej, która obejmuje ponad 100 wysoce bezpiecznych udogodnień na całym świecie, połączone z jedną z największych sieci na ziemi. Platforma Azure oferuje więcej regionów globalnych niż jakikolwiek inny dostawca usług w chmurze. Umożliwia to przetłumaczenie na skalę, która jest wymagana w celu wprowadzenia aplikacji bliżej użytkowników na całym świecie, zachowania miejsca zamieszkania danych oraz zapewnienia kompleksowej zgodności i opcji odporności dla klientów.
 
-- **Przykład 1:** Firma usług pracowała z dostawcą hostingu obsługującym wiele zasobów infrastruktury operacyjnej. Te systemy były przyczyną częstej awarii i niskiej wydajności. Firma przebiegła swoje zasoby na platformę Azure, aby korzystać z kontroli umów SLA i wydajności w chmurze. Czas przestoju, który poniósł koszt IT około 15 000 USD na minutę. W przypadku czterech do ośmiu godzin przestojów miesięcznie można było łatwo uzasadnić tę transformację organizacyjną.
+- **Przykład 1:** Firma usług pracowała z dostawcą hostingu obsługującym wiele zasobów infrastruktury operacyjnej. Te systemy były przyczyną częstej awarii i niskiej wydajności. Firma przebiegła swoje zasoby na platformę Azure, aby korzystać z kontroli umów SLA i wydajności w chmurze. Czas przestoju, który poniósł koszt IT około $15 000 USD na minutę. Po upływie czterech i ośmiu godzin przestojów miesięcznie można było łatwo uzasadnić tę transformację organizacyjną.
 
 - **Przykład 2:** Firma inwestycyjna dla odbiorców była na wczesnych etapach pracy innowacyjnej aplikacji z obsługą chmury. Procesy Agile i DevOps były również wymagalne, ale wydajność aplikacji została przerwana. Jako bardziej dojrzała transformacja firma rozpoczęła program do monitorowania i automatyzowania ustalania rozmiarów na podstawie wymagań dotyczących użycia. Firma eliminuje problemy związane z ustalaniem rozmiaru przy użyciu narzędzi do zarządzania wydajnością platformy Azure, co powoduje wzrost zaskakujące transakcji.
 
@@ -40,7 +40,7 @@ Azure Backup to proste rozwiązanie, które zmniejsza koszty związane z infrast
 
 Azure Site Recovery ułatwia testowanie odzyskiwania po awarii przez replikowanie aplikacji między regionami platformy Azure. Możesz również replikować lokalne maszyny wirtualne VMware i Hyper-V oraz serwery fizyczne do platformy Azure, aby pozostać dostępne, Jeśli lokacja główna ulegnie awarii. Można także odzyskać obciążenia do lokacji głównej, gdy zostanie ona uruchomiona ponownie.
 
-- **Przykład:** Firma naftowa i gaz używa technologii platformy Azure do implementowania pełnego odzyskiwania lokacji. Firma zdecydowała się nie w pełni wdrożyć chmurę na potrzeby codziennych operacji, ale funkcje ciągłości działalności biznesowej i odzyskiwania po awarii (BCDR) chmury nadal chronią centrum danych. Ponieważ huragan miało setki kilometrów, ich partner implementacji uruchomił odzyskiwanie lokacji do platformy Azure. Przed dotknięciem burzy, wszystkie zasoby o kluczowym znaczeniu działały na platformie Azure, co uniemożliwia przestoje.
+- **Przykład:** Firma naftowa i gaz używa technologii platformy Azure do implementowania pełnego odzyskiwania lokacji. Firma zdecydowała się nie w pełni wdrożyć chmurę na potrzeby codziennych operacji, ale funkcje ciągłości działalności biznesowej i odzyskiwania po awarii (BCDR) chmury nadal chronią centrum danych. Ponieważ huragan miało setki kilometrów, ich partner implementacji uruchomił odzyskiwanie lokacji do platformy Azure. Przed wyhuraganem nie działa wszystkie zasoby o kluczowym znaczeniu, które zostały uruchomione na platformie Azure, co uniemożliwia ewentualne przestoje.
 
 ## <a name="next-steps"></a>Następne kroki
 

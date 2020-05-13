@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 98cd4a6a57be37e8ab0cfd23beedc558b26f485b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 61398802202a33f9c514cf5a5b6a2528e7b662e4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996974"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215997"
 ---
 <!-- cSpell:ignore givenscj OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
 
@@ -44,14 +44,14 @@ Zespół ds. chmury w firmie Contoso określił cele migracji, aby wybrać najle
 
 W tym scenariuszu:
 
-- Obecnie aplikacja jest warstwą obejmującą dwie maszyny wirtualne`OSTICKETWEB` ( `OSTICKETMYSQL`i).
+- Obecnie aplikacja jest warstwą obejmującą dwie maszyny wirtualne ( `OSTICKETWEB` i `OSTICKETMYSQL` ).
 - Maszyny wirtualne znajdują się na hoście VMware ESXi `contosohost1.contoso.com` (wersja 6.5).
 - Środowisko VMware jest zarządzane przez program vCenter Server 6.5 (`vcenter.contoso.com`) uruchomiony na maszynie wirtualnej.
 - Firma Contoso ma lokalne centrum danych (`contoso-datacenter`) i lokalny kontroler domeny (`contosodc1`).
 - Aplikacja warstwy internetowej na maszynie `OSTICKETWEB` zostanie przeniesiona na maszynę wirtualną platformy Azure w modelu IaaS.
 - Baza danych aplikacji zostanie przeniesiona do usługi typu PaaS, Azure Database for MySQL.
 - Ponieważ migracja dotyczy obciążenia produkcyjnego, zasoby będą znajdować się w grupie zasobów produkcyjnych `ContosoRG`.
-- `OSTICKETWEB` Zasób zostanie zreplikowany do regionu podstawowego (Wschodnie stany USA 2) i umieszczony w sieci produkcyjnej (`VNET-PROD-EUS2`):
+- `OSTICKETWEB`Zasób zostanie zreplikowany do regionu podstawowego (Wschodnie stany USA 2) i umieszczony w sieci produkcyjnej ( `VNET-PROD-EUS2` ):
   - Internetowa maszyna wirtualna zostanie umieszczona w podsieci frontonu (`PROD-FE-EUS2`).
 - Baza danych aplikacji zostanie zmigrowana do Azure Database for MySQL przy użyciu [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 - Lokalne maszyny wirtualne w centrum danych firmy Contoso zostaną zlikwidowane po zakończeniu migracji.
@@ -65,25 +65,25 @@ Firma Contoso przeprowadzi proces migracji w następujący sposób:
 Migracja maszyny wirtualnej warstwy internetowej:
 
 - W pierwszym kroku firma Contoso konfiguruje infrastrukturę platformy Azure i lokalną, która jest wymagana do wdrożenia Azure Migrate.
-- Mają już [infrastrukturę platformy Azure](./contoso-migration-infrastructure.md) , więc firma Contoso musi dodać i skonfigurować replikację maszyn wirtualnych za pomocą narzędzia migracji Azure Migrate Server.
+- Mają już [infrastrukturę platformy Azure](./contoso-migration-infrastructure.md) , więc firma Contoso musi dodać i skonfigurować replikację maszyn wirtualnych za pomocą narzędzia do migracji Azure Migrate serwera.
 - Po przygotowaniu wszystko firma Contoso może rozpocząć replikację maszyny wirtualnej.
 - Po włączeniu replikacji i zakończeniu pracy firma Contoso ukończy przenoszenie przy użyciu Azure Migrate.
 
 Migracja bazy danych:
 
 1. Firma Contoso przeprowadzi aprowizację wystąpienia usługi MySQL na platformie Azure.
-2. Firma Contoso konfiguruje Azure Database Migration Service (DMS), zapewniając dostęp do lokalnego serwera baz danych
-3. Firma Contoso migruje bazę danych do Azure Database for MySQL
+2. Firma Contoso konfiguruje Azure Database Migration Service (DMS), zapewniając dostęp do lokalnego serwera baz danych.
+3. Firma Contoso migruje bazę danych do Azure Database for MySQL.
 
     ![Proces migracji](./media/contoso-migration-rehost-linux-vm-mysql/migration-process.png)
 
-### <a name="azure-services"></a>Usługi Azure
+### <a name="azure-services"></a>Usługi platformy Azure
 
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
-[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | [Azure Migrate](https://azure.microsoft.com/pricing/details/azure-migrate) jest dostępna bez dodatkowych opłat, jednak opłaty mogą być naliczane w zależności od narzędzi (pierwszej lub niezależnego dostawcy oprogramowania), które będą używane do oceny i migracji.
+[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | [Azure Migrate](https://azure.microsoft.com/pricing/details/azure-migrate) jest dostępna bez dodatkowych opłat, jednak opłaty mogą być naliczane w zależności od narzędzi (pierwszej lub niezależnego dostawcy oprogramowania), które będą używane do oceny i migracji.
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Usługa Azure Database Migration Service umożliwia bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. | Dowiedz się więcej o [obsługiwanych regionach](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) i [cenniku usługi Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
-[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Baza danych opiera się na aparacie serwera MySQL typu open-source. Udostępnia on w pełni zarządzaną, gotową do używania w przedsiębiorstwie bazę danych MySQL w wersji Community jako usługę do opracowywania i wdrażania aplikacji. | Dowiedz się więcej o Azure Database for MySQL [cenach](https://azure.microsoft.com/pricing/details/mysql) i skalowalności.
+[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Baza danych opiera się na aparacie serwera MySQL typu open-source. Zapewnia ona w pełni zarządzaną, gotową do użytku korporacyjną bazę danych MySQL do tworzenia i wdrażania aplikacji. | Dowiedz się więcej o Azure Database for MySQL [cenach](https://azure.microsoft.com/pricing/details/mysql) i skalowalności.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -91,11 +91,11 @@ W tym scenariuszu firma Contoso potrzebuje następujących elementów.
 
 <!-- markdownlint-disable MD033 -->
 
-**Wymagania** | **Uzyskać**
+**Wymagania** | **Szczegóły**
 --- | ---
-**Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje w jednym z poprzednich artykułów. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje.<br/><br/> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora.<br/><br/> Jeśli potrzebujesz bardziej szczegółowych uprawnień, zapoznaj się z [tym artykułem](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Subskrypcja platformy Azure** | Firma Contoso utworzyła subskrypcje w jednym z poprzednich artykułów. Jeśli nie masz subskrypcji platformy Azure, Utwórz [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial). <br><br> Jeśli bezpłatne konto właśnie zostało utworzone, jesteś administratorem subskrypcji i możesz wykonywać wszystkie akcje. <br><br> Jeśli używasz istniejącej subskrypcji i nie jesteś jej administratorem, musisz skontaktować się z administratorem w celu uzyskania uprawnień właściciela lub współautora. <br><br> Jeśli potrzebujesz bardziej szczegółowych uprawnień, zapoznaj się z [tym artykułem](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
 **Infrastruktura platformy Azure** | Firma Contoso skonfigurowała infrastrukturę platformy Azure zgodnie z opisem w artykule [Infrastruktura platformy Azure wymagana do migracji](./contoso-migration-infrastructure.md).
-**Serwery lokalne** | Lokalny serwer vCenter powinien mieć uruchomioną wersję 5,5, 6,0, 6,5 lub 6,7<br/><br/> Host ESXi z systemem w wersji 5,5, 6,0, 6,5 lub 6,7<br/><br/> Co najmniej jedna maszyna wirtualna programu VMware uruchomiona na hoście ESXi.
+**Serwery lokalne** | Lokalny serwer vCenter powinien mieć uruchomioną wersję 5,5, 6,0, 6,5 lub 6,7. <br><br> Host ESXi z systemem w wersji 5,5, 6,0, 6,5 lub 6,7. <br><br> Co najmniej jedna maszyna wirtualna programu VMware uruchomiona na hoście ESXi.
 **Lokalne maszyny wirtualne** | [Przejrzyj maszyny z systemem Linux](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros), które zostały zatwierdzone do działania na platformie Azure.
 
 <!-- markdownlint-enable MD033 -->
@@ -106,24 +106,24 @@ Administratorzy firmy Contoso przeprowadzają migrację w następujący sposób:
 
 > [!div class="checklist"]
 >
-> - **Krok 1. Przygotowywanie platformy Azure do Azure Migrate migracji serwera.** Dodają narzędzie migracji serwera do projektu usługi Azure Migrate.
-> - **Krok 2: Przygotowanie lokalnej migracji programu VMware do Azure Migrate serwera.** Przygotowuje konta do odnajdywania maszyn wirtualnych i przygotowuje się do nawiązania połączenia z maszyną wirtualną platformy Azure po migracji.
+> - **Krok 1. Przygotowywanie platformy Azure dla Azure Migrate: Migracja serwera.** Dodają narzędzie migracji serwera do projektu usługi Azure Migrate.
+> - **Krok 2: Przygotowanie lokalnego programu VMware dla Azure Migrate: Migracja serwera.** Przygotowuje konta do odnajdywania maszyn wirtualnych i przygotowuje się do nawiązania połączenia z maszyną wirtualną platformy Azure po migracji.
 > - **Krok 3. replikowanie maszyn wirtualnych.** Konfigurują replikację i rozpoczynają replikowanie maszyn wirtualnych w magazynie platformy Azure.
-> - **Krok 4. Migrowanie maszyny wirtualnej aplikacji z migracją na serwer Azure Migrate.** Przeprowadza migrację testową, aby upewnić się, że wszystko działa, a następnie przeprowadzić pełną migrację, aby przenieść maszynę wirtualną do platformy Azure.
+> - **Krok 4. Migrowanie maszyny wirtualnej aplikacji przy użyciu Azure Migrate: Migracja serwera.** Przeprowadza migrację testową, aby upewnić się, że wszystko działa, a następnie przeprowadzić pełną migrację, aby przenieść maszynę wirtualną do platformy Azure.
 > - **Krok 5. Migrowanie bazy danych.** Umożliwiają one Konfigurowanie migracji przy użyciu Azure Database Migration Service (DMS).
 
-## <a name="step-1-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>Krok 1. Przygotowanie platformy Azure do narzędzia migracji Azure Migrate Server
+## <a name="step-1-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>Krok 1. Przygotowywanie platformy Azure dla Azure Migrate: Narzędzia migracji serwera
 
 Oto składniki platformy Azure, których firma Contoso potrzebuje do zmigrowania maszyn wirtualnych na platformę Azure:
 
 - Sieć wirtualna, w której będą znajdować się maszyny wirtualne platformy Azure, gdy są one tworzone podczas migracji.
-- Zainicjowano i skonfigurowano narzędzie do migracji Azure Migrate Server (komórki jajowe).
+- Azure Migrate: Narzędzie do migracji serwera (komórki jajowe), obsługiwane i skonfigurowane.
 
 Składniki te są konfigurowane w następujący sposób:
 
-1. Konfigurowanie sieci — firma Contoso ma już sieć, której można używać w przypadku migracji serwera usługi Azure Migrate podczas [wdrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md)
+1. Konfigurowanie sieci — firma Contoso ma już skonfigurowaną sieć, która może być dla Azure Migrate: Migracja serwera podczas [wdrażania infrastruktury platformy Azure](./contoso-migration-infrastructure.md)
 
-2. Inicjowanie obsługi administracyjnej narzędzia do migracji Azure Migrate Server.
+2. Inicjowanie obsługi administracyjnej Azure Migrate: Narzędzia migracji serwera.
 
     - Z Azure Migrate Pobierz obraz komórki jajowe i zaimportuj go do programu VMWare.
 
@@ -149,15 +149,15 @@ Składniki te są konfigurowane w następujący sposób:
 
 3. Po skonfigurowaniu narzędzia mogą wyliczyć wszystkie maszyny wirtualne. Po zakończeniu zobaczysz je w narzędziu Azure Migrate na platformie Azure.
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
-[Dowiedz się więcej](https://docs.microsoft.com/azure/migrate) o konfigurowaniu narzędzia migracji serwera usługi Azure Migrate.
+[Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate) konfigurowaniu Azure Migrate: Narzędzia migracji serwera.
 
-## <a name="step-2-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>Krok 2: Przygotowanie lokalnej migracji programu VMware do Azure Migrate serwera
+## <a name="step-2-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>Krok 2: Przygotowanie lokalnego programu VMware dla Azure Migrate: Migracja serwera
 
 Po przeprowadzeniu migracji na platformę Azure firma Contoso chce mieć możliwość nawiązania połączenia z replikowanymi maszynami wirtualnymi na platformie Azure. W tym celu administratorzy firmy Contoso muszą wykonać kilka czynności:
 
-- Aby można było uzyskać dostęp do maszyny wirtualnej platformy Azure, Włącz protokół SSH na lokalnej maszynie wirtualnej z systemem Linux przed migracją. W przypadku Ubuntu można to zrobić za pomocą następującego polecenia: **sudo apt-get SSH Install-y**.
+- Aby można było uzyskać dostęp do maszyny wirtualnej platformy Azure, Włącz protokół SSH na lokalnej maszynie wirtualnej z systemem Linux przed migracją. W przypadku Ubuntu można to zrobić za pomocą następującego polecenia: `sudo apt-get ssh install -y` .
 
 - Po przeprowadzeniu migracji można sprawdzić **diagnostykę rozruchu** , aby wyświetlić zrzut ekranu maszyny wirtualnej.
 
@@ -165,7 +165,7 @@ Po przeprowadzeniu migracji na platformę Azure firma Contoso chce mieć możliw
 
 - Zainstaluj [agenta platformy Azure dla systemu Linux](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux).
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - [Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration) przygotowywaniu maszyn wirtualnych do migracji.
 
@@ -213,15 +213,15 @@ Po ukończeniu odnajdywania można rozpocząć replikację maszyny wirtualnej ap
 10. W obszarze **Przegląd i rozpoczynanie replikacji** sprawdź ustawienia, a następnie kliknij pozycję **Replikuj**, aby uruchomić replikację początkową dla serwerów.
 
 > [!NOTE]
-> Ustawienia replikacji można aktualizować w dowolnym momencie przed rozpoczęciem replikacji w obszarze **Zarządzanie** > **maszynami replikowanymi**. Ustawień nie można zmienić po rozpoczęciu replikacji.
+> Ustawienia replikacji można aktualizować w dowolnym momencie przed rozpoczęciem replikacji w obszarze **Zarządzanie**  >  **maszynami replikowanymi**. Ustawień nie można zmienić po rozpoczęciu replikacji.
 
-## <a name="step-4-migrate-the-vm-with-azure-migrate-server-migration"></a>Krok 4. Migrowanie maszyny wirtualnej przy użyciu migracji Azure Migrate serwera
+## <a name="step-4-migrate-the-vm-with-azure-migrate-server-migration"></a>Krok 4. Migrowanie maszyny wirtualnej za pomocą Azure Migrate: Migracja serwera
 
 Administratorzy firmy Contoso uruchamiają szybką migrację testową, a następnie pełną migrację do przeniesienia maszyny wirtualnej sieci Web.
 
 ### <a name="run-a-test-migration"></a>Uruchamianie migracji testowej
 
-1. W obszarze**serwery** >  **celów** > migracji**Azure Migrate: Migracja serwera**, kliknij przycisk **Testuj zmigrowane serwery**.
+1. W obszarze serwery **celów migracji**  >  **Servers**  >  **Azure Migrate: Migracja serwera**, kliknij przycisk **Testuj zmigrowane serwery**.
 
      ![Serwery z przeprowadzoną migracją testową](./media/contoso-migration-rehost-linux-vm/test-migrated-servers.png)
 
@@ -240,12 +240,12 @@ Administratorzy firmy Contoso uruchamiają szybką migrację testową, a następ
 
 Teraz Administratorzy firmy Contoso uruchamiają pełną migrację, aby zakończyć przenoszenie.
 
-1. W Azure Migrate **serwery** > > Project**Azure Migrate: Migracja serwera**, kliknij przycisk **replikowanie serwerów**.
+1. W Azure Migrate serwery > Project **Servers**  >  **Azure Migrate: Migracja serwera**, kliknij przycisk **replikowanie serwerów**.
 
     ![Replikowanie serwerów](./media/contoso-migration-rehost-linux-vm/replicating-servers.png)
 
 2. W obszarze **Replikowanie maszyn** kliknij prawym przyciskiem myszy maszynę wirtualną > **Migruj**.
-3. W obszarze **Migrowanie** > **Zamknij maszyny wirtualne i przeprowadź planowaną migrację bez utraty danych**wybierz pozycję **tak** > **OK**.
+3. W obszarze **Migrowanie**  >  **Zamknij maszyny wirtualne i przeprowadź planowaną migrację bez utraty danych**wybierz pozycję **tak**  >  **OK**.
     - Domyślnie usługa Azure Migrate zamyka lokalną maszynę wirtualną i uruchamia replikację na żądanie, aby zsynchronizować wszystkie zmiany maszyny wirtualnej, które wystąpiły od momentu ostatniej replikacji. Gwarantuje to brak utraty danych.
     - Jeśli nie chcesz zamykać maszyny wirtualnej, wybierz pozycję **nie**.
 4. Zostanie uruchomione zadanie migracji maszyny wirtualnej. Śledź zadanie w powiadomieniach platformy Azure.
@@ -272,7 +272,7 @@ Administratorzy firmy Contoso aprowizują wystąpienie bazy danych MySQL w regio
 
     ![MySQL](./media/contoso-migration-rehost-linux-vm-mysql/mysql-3.png)
 
-6. Po dodaniu podsieci tworzy regułę sieci wirtualnej, która umożliwia dostęp z podsieci bazy danych w sieci produkcyjnej.
+6. Po dodaniu podsieci tworzą regułę sieci wirtualnej, która zezwala na dostęp z poziomu podsieci bazy danych w sieci produkcyjnej.
 
     ![MySQL](./media/contoso-migration-rehost-linux-vm-mysql/mysql-4.png)
 
@@ -295,7 +295,7 @@ Podsumowując, należy wykonać następujące czynności:
 - Upewnij się, że spełniono wszystkie wymagania wstępne dotyczące migracji:
 
   - Źródło serwera MySQL musi być zgodne z wersją obsługiwaną przez Azure Database for MySQL. Azure Database for MySQL obsługuje — program MySQL Community Edition, aparat InnoDB i migracja między źródłem i celem z tymi samymi wersjami.
-  - Włącz logowanie binarne w pliku my. ini (Windows) lub My. cnf (UNIX). Niewykonanie tej czynności spowoduje wystąpienie `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full. For more details see https://go.microsoft.com/fwlink/?linkid=873009` błędu w Kreatorze migracji.
+  - Włącz logowanie binarne w pliku my. ini (Windows) lub My. cnf (UNIX). Niewykonanie tej czynności spowoduje wystąpienie `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full. For more information, see https://go.microsoft.com/fwlink/?linkid=873009` błędu w Kreatorze migracji.
   - Użytkownik musi mieć `ReplicationAdmin` rolę.
   - Migruj schematy bazy danych bez kluczy obcych i wyzwalaczy.
 
@@ -393,7 +393,7 @@ W ostatnim kroku procesu migracji Administratorzy firmy Contoso aktualizują par
 
     ![Aktualizowanie adresu IP](./media/contoso-migration-rehost-linux-vm/update-ip2.png)
 
-3. Usługa zostanie ponownie uruchomiona za `systemctl restart apache2`pomocą programu.
+3. Usługa zostanie ponownie uruchomiona za pomocą programu `systemctl restart apache2` .
 
     ![Ponowne uruchamianie](./media/contoso-migration-rehost-linux-vm/restart.png)
 
@@ -403,7 +403,7 @@ W ostatnim kroku procesu migracji Administratorzy firmy Contoso aktualizują par
 
     ![Aktualizowanie rekordów DNS](./media/contoso-migration-rehost-linux-vm-mysql/update-dns.png)
 
-**Potrzebujesz dalszej pomocy?**
+**Potrzebujesz dodatkowej pomocy?**
 
 - [Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) uruchamianiu migracji testowej.
 - [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) o migracji maszyn wirtualnych do platformy Azure.
@@ -438,7 +438,7 @@ Aby uzyskać więcej informacji, zobacz [najlepsze rozwiązania w zakresie zabez
 
 W celu zapewnienia ciągłości działania i odzyskiwania po awarii firma Contoso podejmuje następujące działania:
 
-- **Zachowaj bezpieczeństwo danych.** Firma Contoso tworzy kopie zapasowe danych na maszynie wirtualnej aplikacji za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup). Nie trzeba konfigurować kopii zapasowej bazy danych. Usługa Azure Database for MySQL automatycznie tworzy kopie zapasowe i magazyny serwerów. Wybrano opcję użycia nadmiarowości geograficznej bazy danych, aby była odporna na awarie i gotowa do produkcji.
+- **Zachowaj bezpieczeństwo danych.** Firma Contoso tworzy kopie zapasowe danych na maszynie wirtualnej aplikacji za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-overview). Nie trzeba konfigurować kopii zapasowej bazy danych. Usługa Azure Database for MySQL automatycznie tworzy kopie zapasowe i magazyny serwerów. Wybrano opcję użycia nadmiarowości geograficznej bazy danych, aby była odporna na awarie i gotowa do produkcji.
 
 - **Zapewnienie ciągłości działania aplikacji.** Firma Contoso replikuje maszyny wirtualne aplikacji w regionie pomocniczym platformy Azure za pomocą usługi Site Recovery. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 

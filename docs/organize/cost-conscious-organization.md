@@ -7,21 +7,21 @@ ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 714bd0d26a38a1ee3a3cb2bfc2d336d1ffd4f45c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dbf5f3364277ad3a245796e47523cb803a074d31
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428518"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216422"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Tworzenie świadomej organizacji kosztów
 
 Jak opisano w obszarze [motywacje: Dlaczego przenosimy się do chmury?](../strategy/motivations.md), istnieje wiele powodów, dla których firma może przyjąć chmurę. Gdy obniżka kosztów jest podstawowym sterownikiem, ważne jest, aby utworzyć organizację o niskich kosztach.
 
-Zapewnienie obnoszenia kosztów nie jest działaniem jednorazowym. Podobnie jak w przypadku innych tematów wdrażania w chmurze, jest to iteracyjne. Na poniższym diagramie przedstawiono ten proces, aby skoncentrować się na trzech działaniach zależnych: *widoczność*, *odpowiedzialność*i *Optymalizacja*. Procesy te są odtwarzane na makrach i mikropoziomach, które opisano szczegółowo w tym artykule.
+Zapewnienie obnoszenia kosztów nie jest działaniem jednorazowym. Podobnie jak w przypadku innych tematów wdrażania w chmurze, jest to iteracyjne. Na poniższym diagramie przedstawiono ten proces, aby skoncentrować się na trzech działaniach zależnych: _widoczność_, _odpowiedzialność_i _Optymalizacja_. Procesy te są odtwarzane na makrach i mikropoziomach, które opisano szczegółowo w tym artykule.
 
-![Pozostały koszt](../_images/ready/cost-optimization-process.png)
-świadomy procesu —*rysunek 1 — konspekt organizacji świadomej kosztów.*
+![Nieświadomy proces — ](../_images/ready/cost-optimization-process.png)
+ _rysunek 1: konspekt organizacji świadomej kosztów._
 
 ## <a name="general-cost-conscious-processes"></a>Ogólne procesy świadome kosztów
 
@@ -35,7 +35,7 @@ Zapewnienie obnoszenia kosztów nie jest działaniem jednorazowym. Podobnie jak 
 
 - **Optymalizacja:** Optymalizacja to akcja, która tworzy obniżki kosztów. Podczas optymalizacji alokacje zasobów są modyfikowane w celu zmniejszenia kosztów obsługi różnych obciążeń. Ten proces wymaga iteracji i eksperymentowania. Każde zmniejszenie kosztów zmniejsza wydajność. Znalezienie odpowiedniej równowagi między kontrolą kosztów a oczekiwaniami użytkowników końcowych wymaga wprowadzenia danych przez wiele stron.
 
-W poniższych sekcjach opisano role, które *zespół strategii chmury*, *zespół ds. rozwoju chmury,* *zespół nadzoru chmurowego*i *centrum w chmurze doskonałości* (CCoE) odgrywają w opracowaniu kosztownej organizacji.
+W poniższych sekcjach opisano role, które _zespół strategii chmury_, _zespół ds_. rozwoju chmury, _zespół nadzoru chmurowego_i _centrum w chmurze doskonałości (CCoE)_ odgrywają w opracowaniu kosztownej organizacji.
 
 ## <a name="cloud-strategy-team"></a>Zespół strategii chmury
 
@@ -53,7 +53,7 @@ Tworzenie przytomności kosztów do działań związanych z wdrażaniem w chmurz
 
 - **Propagowan**
 
-  - **Świadomość:** Ważne jest, aby zespół ds. wdrażania w chmurze miał wgląd w cele oszczędności kosztów. Po prostu, że nakłady na wdrażanie w chmurze będą pomocne w obniżeniu kosztów. *Konkretna* widoczność jest ważna. Na przykład jeśli celem jest zmniejszenie kosztu posiadania centrum danych o 3% lub rocznych kosztach operacyjnych o 7%, należy ujawnić te cele wczesne i jasno.
+  - **Świadomość:** Ważne jest, aby zespół ds. wdrażania w chmurze miał wgląd w cele oszczędności kosztów. Po prostu, że nakłady na wdrażanie w chmurze będą pomocne w obniżeniu kosztów. _Konkretna_ widoczność jest ważna. Na przykład jeśli celem jest zmniejszenie kosztu posiadania centrum danych o 3% lub rocznych kosztach operacyjnych o 7%, należy ujawnić te cele wczesne i jasno.
   - Dane **telemetryczne:** Ten zespół wymaga wglądu w wpływ ich decyzji. W trakcie migracji lub innowacji, ich decyzje mają bezpośredni wpływ na koszty i wydajność. Zespół musi zrównoważyć te dwa konkurujące czynniki. Monitorowanie wydajności i monitorowanie kosztów, które są objęte zakresem aktywnych projektów zespołu, są ważne, aby zapewnić konieczność widoczności.
 
 - **Odpowiedzialność:** Zespół ds. wdrażania w chmurze musi mieć świadomość wszelkich wstępnie ustawionych budżetów, które są powiązane z ich przyjęciem. Gdy rzeczywiste koszty nie są wyrównane z budżetem, istnieje możliwość utworzenia odpowiedzialności. Odpowiedzialności nie są równe karaniu zespołu adopcji za przekroczenie budżetu, ponieważ nadwyżka budżetowa może wynikać z niezbędnych decyzji dotyczących wydajności. Zamiast tego, odpowiedzialność oznacza, że zespół poinformuje o celach i o tym, jak ich decyzje wpływają na te cele. Ponadto odpowiedzialność obejmuje podanie okna dialogowego, w którym zespół może komunikować się z decyzjami, które doprowadziły do przetworzenia. Jeśli te decyzje są nieprawidłowo dopasowane do celów projektu, ten nakład pracy zapewnia dobrą szansę partnerowi z zespołem ds. strategii chmury w celu podejmowania lepszych decyzji.
@@ -62,7 +62,7 @@ Tworzenie przytomności kosztów do działań związanych z wdrażaniem w chmurz
 
 ## <a name="cloud-governance-team"></a>Zespół nadzorujący chmury
 
-Ogólnie rzecz biorąc, zespół zarządzający [chmurą](./cloud-governance.md) jest odpowiedzialny za zarządzanie kosztami w całym wysiłku związanym z wdrażaniem w chmurze. Zgodnie z opisem w temacie [Cost Management dyscyplin](../govern/cost-management/index.md) of the Cloud Reline propozycja metodologii, zarządzanie kosztami jest pierwszym z pięciu dyscyplin zarządzania chmurą. Te artykuły przedstawiają szereg bardziej szczegółowych obowiązków dla zespołu nadzoru chmurowego.
+Ogólnie rzecz biorąc, zespół zarządzający [chmurą](./cloud-governance.md) jest odpowiedzialny za zarządzanie kosztami w całym wysiłku związanym z wdrażaniem w chmurze. Zgodnie z opisem w temacie [Cost Management dyscypliną](../govern/cost-management/index.md) metodologii wdrażania w chmurze, zarządzanie kosztami jest pierwszym z pięciu dyscyplin nadzoru chmurowego. W tych artykułach znajduje się seria szeregu bardziej szczegółowych obowiązków dla zespołu nadzoru chmurowego.
 
 Ten nakład pracy koncentruje się na następujących działaniach, które są związane z programowaniem świadomej organizacji:
 

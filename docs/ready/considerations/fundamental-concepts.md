@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ed8d8511cbdac9996ff61688b4e6d783877e9d9c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 869b3b9e0a283ce28c6fba7807d0282dcb53d9cf
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997518"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216337"
 ---
 # <a name="azure-fundamental-concepts"></a>Podstawowe pojęcia dotyczące platformy Azure
 
@@ -37,7 +37,7 @@ Rozpoczynając pracę związaną z wdrażaniem w chmurze platformy Azure warto z
 
 Subskrypcja platformy Azure umożliwia realizację kilku celów. Subskrypcja platformy Azure to:
 
-- **Umowa prawna.** Każda subskrypcja jest powiązana z [ofertą platformy Azure](https://azure.microsoft.com/support/legal/offer-details) (np. z bezpłatną wersją próbną lub z opcją płatności zgodnie z rzeczywistym użyciem). Każda oferta ma określony plan taryfowy, korzyści oraz powiązane warunki i postanowienia. Ofertę platformy Azure można wybrać podczas tworzenia subskrypcji.
+- **Umowa prawna.** Każda subskrypcja jest skojarzona z [ofertą platformy Azure](https://azure.microsoft.com/support/legal/offer-details), taką jak bezpłatna wersja próbna lub płatność zgodnie z rzeczywistym użyciem. Każda oferta ma określony plan taryfowy, korzyści oraz powiązane warunki i postanowienia. Ofertę platformy Azure można wybrać podczas tworzenia subskrypcji.
 - **Umowa dotycząca płatności.** Podczas tworzenia subskrypcji należy podać informacje o płatności dla tej subskrypcji, takie jak numer karty kredytowej. W każdym miesiącu koszty wynikające z zasobów wdrożonych w ramach tej subskrypcji są obliczane i rozliczane za pośrednictwem tej metody płatności.
 - **Granica skali.** Dla subskrypcji definiowane są limity skalowania. Zasoby subskrypcji nie mogą przekraczać ustawionych limitów skali. Na przykład istnieje ograniczenie liczby maszyn wirtualnych, które można utworzyć w ramach jednej subskrypcji.
 - **Granica administracyjna.** Subskrypcja może działać jako granica administrowania, zabezpieczeń i zasad. Platforma Azure udostępnia również inne mechanizmy w celu spełnienia tych wymagań, takie jak grupy zarządzania, grupy zasobów i kontrola dostępu oparta na rolach.
@@ -50,15 +50,15 @@ Podczas tworzenia subskrypcji platformy Azure należy dokonać kilku najważniej
 - **Która oferta platformy Azure Cię interesuje?** Każda subskrypcja jest powiązana z określoną [ofertą platformy Azure](https://azure.microsoft.com/support/legal/offer-details). Możesz wybrać ofertę platformy Azure, która najlepiej odpowiada Twoim potrzebom. Na przykład jeśli zamierzasz używać subskrypcji do uruchamiania obciążeń nieprodukcyjnych, możesz wybrać ofertę oferty Płatność zgodnie z rzeczywistym użyciem — tworzenie i testowanie lub Enterprise — tworzenie i testowanie.
 
 > [!NOTE]
-> Podczas rejestracji na platformie Azure może zostać wyświetlony tekst *Utwórz konto platformy Azure*. Konto platformy Azure jest tworzone podczas tworzenia subskrypcji platformy Azure i kojarzenia subskrypcji z kontem e-mail.
+> Podczas rejestracji na platformie Azure może zostać wyświetlony tekst _Utwórz konto platformy Azure_. Konto platformy Azure jest tworzone podczas tworzenia subskrypcji platformy Azure i kojarzenia subskrypcji z kontem e-mail.
 
 ## <a name="azure-administrative-roles"></a>Role administracyjne platformy Azure
 
 Na platformie Azure definiowane są trzy typy ról do administrowania subskrypcjami, tożsamościami i zasobami:
 
-- Role klasycznego administratora subskrypcji
-- Role kontroli dostępu opartej na rolach (RBAC) platformy Azure
-- Role administratora usługi Azure Active Directory (Azure AD)
+- Role administratora klasycznej subskrypcji.
+- Role kontroli dostępu opartej na rolach (RBAC) na platformie Azure.
+- Role administratora usługi Azure Active Directory (Azure AD).
 
 Rola administratora konta dla subskrypcji platformy Azure jest przypisywana do konta e-mail użytego do tworzenia subskrypcji platformy Azure. Administrator konta jest właścicielem rozliczenia subskrypcji. Administrator konta może zarządzać szczegółami subskrypcji w [Centrum konta platformy Azure](https://account.azure.com/subscriptions).
 
@@ -83,7 +83,7 @@ Subskrypcja nie jest powiązana z określonym regionem platformy Azure. Jednak k
 
 Poniższe zasoby zawierają szczegółowe informacje na temat pojęć omówionych w tym artykule:
 
-- [Jak działa platforma Azure?](../../getting-started/what-is-azure.md)
+- [Jak działa platforma Azure?](../../get-started/what-is-azure.md)
 - [Zarządzanie dostępem do zasobów na platformie Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Przegląd Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
 - [Kontrola dostępu oparta na rolach (RBAC) dla zasobów platformy Azure](https://docs.microsoft.com/azure/role-based-access-control/overview)

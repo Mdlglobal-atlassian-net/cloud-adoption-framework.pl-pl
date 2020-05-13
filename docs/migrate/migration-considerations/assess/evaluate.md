@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4321cf289bcab6fbee061fbff27d45fd8d695eac
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ddeea58c9e50327f318640160317556191c26d7f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432791"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216150"
 ---
 # <a name="evaluate-workload-readiness"></a>Ocena gotowości obciążeń
 
@@ -33,7 +33,7 @@ Pamiętaj o udokumentowaniu wszelkich rozbieżności w konfiguracji hosta, konfi
 
 ## <a name="common-database-evaluation-activities"></a>Typowe działania oceny bazy danych
 
-- Udokumentowanie celów punktu odzyskiwania i celów czasu odzyskiwania bieżącego wdrożenia bazy danych. Są one używane w [działaniach dotyczących architektury](./architect.md) w celu ułatwienia podejmowania decyzji.
+- Udokumentować cele punktu odzyskiwania (RPO) i cele czasu odzyskiwania (RTO) bieżącego wdrożenia bazy danych. Są one używane podczas [działania architektury](./architect.md) , aby pomóc w podejmowaniu decyzji.
 - Udokumentowanie wszelkich wymagań dotyczących konfiguracji o wysokiej dostępności. Aby uzyskać pomoc dotyczącą wymagań programu SQL Server, zobacz [Przewodnik po rozwiązaniach wysokiej dostępności programu SQL Server](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server).
 - Ocena zgodności rozwiązań PaaS. [Przewodnik migracji danych platformy Azure](https://datamigration.microsoft.com) mapuje lokalne bazy danych na zgodne rozwiązania PaaS platformy Azure, takie jak [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) lub [Azure DB](https://docs.microsoft.com/azure/sql-database) dla [MySQL](https://docs.microsoft.com/azure/mysql), [PostgreSQL](https://docs.microsoft.com/azure/postgresql)lub [MariaDB](https://docs.microsoft.com/azure/mariadb).
 - Gdy zgodność rozwiązań PaaS jest opcją bez konieczności korygowania, należy skonsultować się z zespołem odpowiedzialnym za [działania dotyczące architektury](./architect.md). Migracje PaaS mogą zapewnić znaczną oszczędność czasu i obniżyć całkowity koszt posiadania w przypadku większości rozwiązań w chmurze.
@@ -42,7 +42,7 @@ Pamiętaj o udokumentowaniu wszelkich rozbieżności w konfiguracji hosta, konfi
 - Jeśli to możliwe, należy udokumentować wszystkie aplikacje lub inne zasoby, które wykonują wywołania do poszczególnych baz danych.
 
 > [!NOTE]
-> Synchronizacja dowolnego zasobu zużywa przepustowość podczas procesów replikacji. Bardzo powszechnym błędem jest przeoczenie zużycia przepustowości wymaganego do utrzymania synchronizacji zasobów między punktem replikacji a wydaniem. Bazy danych są typowymi konsumentami przepustowości podczas cykli wydania, a szczególnie dotyczy to baz danych z dużymi magazynami lub dużą częstotliwością zmian. Należy rozważyć podejście polegające na replikowaniu struktury danych, z kontrolowanymi aktualizacjami przed testowaniem akceptacyjnym przez użytkowników i wydaniem. W takich scenariuszach alternatywy dla usługi Azure Site Recovery mogą być bardziej odpowiednie. Aby uzyskać więcej informacji, zobacz wskazówki w [przewodniku po migracji danych na platformę Azure](https://datamigration.microsoft.com).
+> Synchronizacja dowolnego zasobu zużywa przepustowość podczas procesów replikacji. Bardzo powszechnym błędem jest przeoczenie zużycia przepustowości wymaganego do utrzymania synchronizacji zasobów między punktem replikacji a wydaniem. Bazy danych są typowymi konsumentami przepustowości podczas cykli wydania, a szczególnie dotyczy to baz danych z dużymi magazynami lub dużą częstotliwością zmian. Należy rozważyć podejście polegające na replikowaniu struktury danych, z kontrolowanymi aktualizacjami przed testowaniem akceptacyjnym przez użytkowników i wydaniem. W takich scenariuszach alternatywy dla usługi Azure Site Recovery mogą być bardziej odpowiednie. Aby uzyskać więcej informacji, zobacz Wskazówki dotyczące [usługi Azure Database Migration Guide](https://datamigration.microsoft.com).
 
 ## <a name="common-network-evaluation-activities"></a>Typowe działania oceny sieci
 

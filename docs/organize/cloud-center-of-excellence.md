@@ -1,29 +1,29 @@
 ---
-title: Centrum doskonałości chmury
-description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak ustanowić Centrum rozwiązań w chmurze (CCoE).
+title: Zrozumienie funkcji usługi Cloud Center of doskonałości (CCoE)
+description: Poznaj funkcje usługi Cloud Center doskonałości (CCoE), w tym źródło, zakres i element dostarczany.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/10/2019
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8145df1035079731016e90b82d3b4b8cd830c171
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0f4ccda8c5f05f24fae2b32715029a42e8c33348
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428675"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215776"
 ---
 <!-- cSpell:ignore ccoe deprioritize -->
 
-# <a name="cloud-center-of-excellence"></a>Centrum doskonałości chmury
+# <a name="cloud-center-of-excellence-ccoe-functions"></a>Funkcje usługi Cloud Center doskonałości (CCoE)
 
 Elastyczność biznesowa i techniczna to podstawowe cele większości organizacji IT. Centrum w chmurze doskonałości (CCoE) to funkcja, która tworzy równowagę między szybkością i stabilnością.
 
 ## <a name="function-structure"></a>Struktura funkcji
 
-Model CCoE wymaga współpracy między każdą z następujących możliwości:
+Model CCoE wymaga współpracy między następującymi elementami:
 
 - Wdrażanie w chmurze (w szczególnych architektach rozwiązań)
 - Strategia chmury (w przypadku menedżerów programu i projektu)
@@ -133,7 +133,9 @@ Ponadto zalecamy, aby zainteresowane strony biznesowe były poinformowane o post
 
 ## <a name="next-steps"></a>Następne kroki
 
-Model CCoE wymaga zarówno [możliwości platformy chmury](./cloud-platform.md) , jak i [automatyzacji chmury](./cloud-automation.md). Następnym krokiem jest dostosowanie [możliwości platformy w chmurze](./cloud-platform.md).
+Model CCoE wymaga funkcji platformy chmurowej i funkcji automatyzacji w chmurze. Następnym krokiem jest wyrównania funkcji platformy w chmurze.
 
-> [!div class="nextstepaction"]
-> [Wyrównaj możliwości platformy w chmurze](./cloud-platform.md)
+Dowiedz się więcej o usługach:
+
+- [Funkcje platformy w chmurze](./cloud-platform.md)
+- [Funkcje automatyzacji w chmurze](./cloud-automation.md)

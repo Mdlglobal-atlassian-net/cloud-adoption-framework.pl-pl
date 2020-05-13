@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8cc66b6995cf9221c81254974196c7839313045a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1d6d9569ab95705cd1058af74cf448283f1a2eef
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429364"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216116"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Korygowanie zasobów przed migracją
 
-Podczas procesu oceny migracji zespół chce zidentyfikować konfiguracje, które mogłyby spowodować niezgodność zasobu z wybranym dostawcą chmury. *Korygowanie* jest punktem kontrolnym w procesie migracji, w którym można upewnić się, że te niezgodności zostały rozwiązane. W tym artykule omówiono kilka przykładowych typowych zadań korygowania. Przedstawiono również ramowy proces ułatwiający zdecydowanie, czy korygowanie jest mądrą inwestycją.
+Podczas procesu oceny migracji zespół chce zidentyfikować konfiguracje, które mogłyby spowodować niezgodność zasobu z wybranym dostawcą chmury. _Korygowanie_ jest punktem kontrolnym w procesie migracji, w którym można upewnić się, że te niezgodności zostały rozwiązane. W tym artykule omówiono kilka przykładowych typowych zadań korygowania. Przedstawiono również ramowy proces ułatwiający zdecydowanie, czy korygowanie jest mądrą inwestycją.
 
 ## <a name="common-remediation-tasks"></a>Typowe zadania korygowania
 

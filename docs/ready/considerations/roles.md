@@ -8,14 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
-tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e52840d52e85cfa5876fbeaf227963953560da0d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6029f3d46f3a59adc465d47d9545a017d04487e6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997925"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216405"
 ---
 # <a name="role-based-access-control"></a>Kontrola dostępu oparta na rolach
 
@@ -54,7 +53,7 @@ Począwszy od tych podstawowych poziomów dostępu, dodatkowe wbudowane role zap
 - Rola [Współautor maszyny wirtualnej](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) umożliwia zarządzanie maszynami wirtualnymi, ale nie umożliwia udzielania dostępu do nich ani do sieci wirtualnej lub konta magazynu, do którego te maszyny wirtualne są podłączone.
 - Rola [Logowanie użytkownika maszyny wirtualnej](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) umożliwia wyświetlanie maszyn wirtualnych w portalu i logowanie się jako zwykły użytkownik.
 
-Inny przykład użycia wbudowanych ról w celu zarządzania dostępem do określonych funkcji zawiera omówienie kontroli dostępu do funkcji śledzenia kosztów w sekcji [Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach](../azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access).
+Inny przykład korzystania z wbudowanych ról w celu zarządzania dostępem do określonych funkcji można znaleźć w omówieniu kontroli dostępu do funkcji śledzenia kosztów w [ramach śledzenia kosztów w różnych jednostkach, środowiskach i projektach](../azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access).
 
 Aby uzyskać pełną listę dostępnych wbudowanych ról, zobacz [Wbudowane role dla zasobów platformy Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles).
 
@@ -76,10 +75,10 @@ W poniższej tabeli przedstawiono typowy wzorzec podziału obowiązków IT na od
 
 | Grupa | Typowa nazwa roli | Zakres odpowiedzialności |
 | --- | --- | --- |
-| Operacje zabezpieczeń | SecOps | Zapewnia ogólny nadzór nad bezpieczeństwem.<br/><br/> Ustanawia i wymusza zasady zabezpieczeń, takie jak szyfrowanie w spoczynku.<br/><br/> Zarządza kluczami szyfrowania.<br/><br/> Zarządza regułami zapory. |
+| Operacje zabezpieczeń | SecOps | Zapewnia ogólny nadzór nad bezpieczeństwem.  <br><br> Ustanawia i wymusza zasady zabezpieczeń, takie jak szyfrowanie w spoczynku. <br><br> Zarządza kluczami szyfrowania. <br><br> Zarządza regułami zapory. |
 | Operacje sieciowe | NetOps | Zarządza konfiguracją sieci i operacjami w sieciach wirtualnych, takimi jak trasy i komunikacja równorzędna. |
 | Operacje systemowe | SysOps | Określa opcje infrastruktury obliczeniowej i magazynu oraz obsługuje wdrożone zasoby. |
-| Programowanie, testowanie i operacje | DevOps | Kompiluje i wdraża funkcje i aplikacje obciążeń.<br/><br/> Obsługuje funkcje i aplikacje w celu spełnienia wymagań umów dotyczących poziomu usług (umowy SLA) i innych standardów jakości. |
+| Programowanie, testowanie i operacje | DevOps | Kompiluje i wdraża funkcje i aplikacje obciążeń. <br><br> Obsługuje funkcje i aplikacje w celu spełnienia wymagań umów dotyczących poziomu usług (umowy SLA) i innych standardów jakości. |
 
 <!-- markdownlint-enable MD033 -->
 

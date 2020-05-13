@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 81a11a06236840658e87dbee1d0bed72579e7f6e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 105c25258fba28fe61cc127e1f1e602c0c822202
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432509"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216133"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>Modele promocji: jeden etap, etapowy lub samolot
 
@@ -24,11 +24,11 @@ Istnieje kilka modeli podwyższania poziomu. W tym artykule opisano trzy modele 
 
 W każdym z następujących modeli podwyższania poziomu wybrane narzędzie migracji replikuje i przygotowuje zasoby, które składają się na obciążenie. Po przygotowaniu każdy model traktuje zasób nieco inaczej.
 
-- **Promocja w jednym kroku.** W modelu podwyższania poziomu *w pojedynczym kroku* proces przygotowywania jest wykonywany dwa razy. Po przygotowaniu wszystkich zasobów ruch użytkowników końcowych jest przekierowywany, a środowisko przejściowe staje się środowiskiem produkcyjnym. W takim przypadku podwyższanie poziomu jest częścią procesu migracji. Jest to najszybszy model migracji. Jednak takie podejście utrudnia integrację niezawodnych działań związanych z testowaniem i optymalizacją. Ponadto ten typ modelu zakłada, że zespół ds. migracji ma dostęp do środowiska przejściowego i produkcyjnego, co narusza zasadę rozdzielania wymagań dotyczących obowiązków w niektórych środowiskach.
+- **Promocja w jednym kroku.** W modelu podwyższania poziomu _w pojedynczym kroku_ proces przygotowywania jest wykonywany dwa razy. Po przygotowaniu wszystkich zasobów ruch użytkowników końcowych jest przekierowywany, a środowisko przejściowe staje się środowiskiem produkcyjnym. W takim przypadku podwyższanie poziomu jest częścią procesu migracji. Jest to najszybszy model migracji. Jednak takie podejście utrudnia integrację niezawodnych działań związanych z testowaniem i optymalizacją. Ponadto ten typ modelu zakłada, że zespół migracji ma dostęp do środowiska przejściowego i produkcyjnego, co narusza Rozdzielenie obowiązków w niektórych środowiskach.
   > [!NOTE]
   >W spisie treści tej witryny działanie podwyższania poziomu jest wymienione jako część procesu optymalizacji. W modelu pojedynczego kroku podwyższenie poziomu następuje podczas migracji. W związku z tym, w przypadku korzystania z tego modelu, należy odpowiednio zaktualizować role i obowiązki.
-- **Przejściowy.** W *przejściowym* modelu podwyższania poziomu obciążenie jest uznawane za zmigrowane po jego przygotowaniu, ale kiedy jego poziom nie został jeszcze podwyższony. Przed podwyższeniem poziomu zmigrowane obciążenie przechodzi serię testów wydajności, testów biznesowych i zmian optymalizacji. Jego poziom jest podwyższany dopiero później zgodnie z planem testu biznesowego. Takie podejście zwiększa równowagę między kosztami i wydajnością, a jednocześnie ułatwia weryfikację obciążenia pod kątem biznesowym.
-- **Pakiet testowy.** Model podwyższania poziomu z *pakietem testowym* łączy cechy modelu pojedynczego kroku i przejściowego. W modelu z pakietem testowym zasoby składające się na obciążenie są traktowane jako zasoby produkcyjne po umieszczeniu ich w środowisku przejściowym. Ruch produkcyjny jest kierowany do tego obciążenia po skróconym okresie intensywnych testów automatycznych. Jest to jednak tylko podzestaw ruchu. Ten ruch można traktować jako pierwszy pakiet testowy środowiska produkcyjnego. Jeśli z perspektywy funkcjonalnej i wydajnościowej obciążenie spełnia wymagania, migrowany jest dodatkowy ruch. Po przeniesieniu całego ruchu produkcyjnego do nowych zasobów podwyższenie poziomu obciążenia jest uznawane za zakończone.
+- **Przejściowy.** W _przejściowym_ modelu podwyższania poziomu obciążenie jest uznawane za zmigrowane po jego przygotowaniu, ale kiedy jego poziom nie został jeszcze podwyższony. Przed podwyższeniem poziomu zmigrowane obciążenie przechodzi serię testów wydajności, testów biznesowych i zmian optymalizacji. Jego poziom jest podwyższany dopiero później zgodnie z planem testu biznesowego. Takie podejście zwiększa równowagę między kosztami i wydajnością, a jednocześnie ułatwia weryfikację obciążenia pod kątem biznesowym.
+- **Pakiet testowy.** Model podwyższania poziomu z _pakietem testowym_ łączy cechy modelu pojedynczego kroku i przejściowego. W modelu z pakietem testowym zasoby składające się na obciążenie są traktowane jako zasoby produkcyjne po umieszczeniu ich w środowisku przejściowym. Ruch produkcyjny jest kierowany do tego obciążenia po skróconym okresie intensywnych testów automatycznych. Jest to jednak tylko podzestaw ruchu. Ten ruch można traktować jako pierwszy pakiet testowy środowiska produkcyjnego. Jeśli z perspektywy funkcjonalnej i wydajnościowej obciążenie spełnia wymagania, migrowany jest dodatkowy ruch. Po przeniesieniu całego ruchu produkcyjnego do nowych zasobów podwyższenie poziomu obciążenia jest uznawane za zakończone.
 
 Wybrany model podwyższania poziomu ma wpływ na kolejność działań, które powinny zostać wykonane. Ma on również wpływ na role i obowiązki członków zespołu wdrożeniowego ds. chmury. Wybrany model może mieć nawet wpływ na kompozycję przebiegu lub wielu przebiegów.
 

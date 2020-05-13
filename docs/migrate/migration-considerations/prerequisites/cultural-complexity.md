@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fe86c196e03e8908d3c9bb409cc3896286729015
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9b73743b9616d01a92b570f0022bdb72fd0372bf
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429074"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215895"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Przygotowanie na złożoność kulturową: wyrównywanie ról i obowiązków
 
@@ -47,14 +47,14 @@ Każdy proces w ramach dyskusji dotyczącej zasad migracji struktury wdrażania 
 
 | Proces | Działanie | Opis | Strona odpowiedzialna |
 |---------|---------|---------|---------|
-| Wymagania wstępne | Majątek cyfrowy | Na podstawie wyników biznesowych dopasuj istniejący spis do podstawowych założeń. | zespół strategiczny ds. chmury |
-| Wymagania wstępne | Lista prac związanych z migracją | Określ priorytet sekwencji obciążeń, które mają zostać zmigrowane. | zespół strategiczny ds. chmury |
-| Ocena | Architektura | Zweryfikuj wstępne założenia w celu zdefiniowania architektury docelowej na podstawie metryk użycia. | zespół wdrożeniowy ds. chmury |
-| Ocena | Zatwierdzenie | Zatwierdź proponowaną architekturę. | zespół strategiczny ds. chmury |
-| Migrate (Migracja) | Dostęp w celu replikacji | Uzyskaj dostęp do istniejących hostów i zasobów lokalnych w celu ustanowienia procesów replikacji. | zespół wdrożeniowy ds. chmury |
-| Optymalizacja | Gotowy | Przed podwyższeniem poziomu sprawdź, czy system spełnia wymagania dotyczące wydajności i kosztów. | zespół wdrożeniowy ds. chmury |
-| Optymalizacja | Podwyższanie poziomu | Uprawnienia do podwyższenia poziomu obciążenia do środowiska produkcyjnego i przekierowania ruchu produkcyjnego. | zespół wdrożeniowy ds. chmury |
-| Zabezpieczanie i zarządzanie | Przeniesienie operacji | Udokumentuj systemy produkcyjne przed operacjami produkcyjnymi. | zespół wdrożeniowy ds. chmury |
+| Wymagania wstępne | Majątek cyfrowy | Na podstawie wyników biznesowych dopasuj istniejący spis do podstawowych założeń. | Zespół strategii chmury |
+| Wymagania wstępne | Lista prac związanych z migracją | Określ priorytet sekwencji obciążeń, które mają zostać zmigrowane. | Zespół strategii chmury |
+| Ocena | Architektura | Zweryfikuj wstępne założenia w celu zdefiniowania architektury docelowej na podstawie metryk użycia. | Zespół ds. wdrażania chmury |
+| Ocena | Zatwierdzenie | Zatwierdź proponowaną architekturę. | Zespół strategii chmury |
+| Migrate (Migracja) | Dostęp w celu replikacji | Uzyskaj dostęp do istniejących hostów i zasobów lokalnych w celu ustanowienia procesów replikacji. | Zespół ds. wdrażania chmury |
+| Optymalizacja | Gotowy | Przed podwyższeniem poziomu sprawdź, czy system spełnia wymagania dotyczące wydajności i kosztów. | Zespół ds. wdrażania chmury |
+| Optymalizacja | Podwyższanie poziomu | Uprawnienia do podwyższenia poziomu obciążenia do środowiska produkcyjnego i przekierowania ruchu produkcyjnego. | Zespół ds. wdrażania chmury |
+| Zabezpieczanie i zarządzanie | Przeniesienie operacji | Udokumentuj systemy produkcyjne przed operacjami produkcyjnymi. | Zespół ds. wdrażania chmury |
 
 > [!CAUTION]
 > W przypadku tych działań uprawnienia i autoryzacja znacznie wpływają na stronę odpowiedzialną, która musi mieć bezpośredni dostęp do systemów produkcyjnych w istniejącym środowisku lub środki zabezpieczające dostęp za pośrednictwem innych odpowiedzialnych podmiotów. Określenie tej strony odpowiedzialnej bezpośrednio wpływa na strategię podwyższania poziomu podczas migracji i optymalizacji procesów.

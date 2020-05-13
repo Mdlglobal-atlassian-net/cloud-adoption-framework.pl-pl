@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a597a76e1d42d08c3800fd2f3831729bf53f10f1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8dea3f98b73c6df7c6b667da56411c78cb02d581
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432878"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215487"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>Priorytety biznesowe: obsługa wyrównania
 
-*Transformacja* jest często definiowana jako dramatyczna lub nagła zmiana. Na poziomie zarządu zmiana rzeczywiście może wydawać się dramatyczna. Jednak dla osób zaangażowanych w proces wprowadzania zmian w organizacji transformacja to pojęcie mylące. W swojej istocie transformacja to tak naprawdę seria prawidłowo wykonanych przejść z jednego stanu do drugiego.
+_Transformacja_ jest często definiowana jako dramatyczna lub nagła zmiana. Na poziomie zarządu zmiana rzeczywiście może wydawać się dramatyczna. Jednak dla osób zaangażowanych w proces wprowadzania zmian w organizacji transformacja to pojęcie mylące. W swojej istocie transformacja to tak naprawdę seria prawidłowo wykonanych przejść z jednego stanu do drugiego.
 
 Ilość czasu wymagana do usprawnienia lub przeniesienia obciążenia może się różnić w zależności od stopnia złożoności technicznej tego procesu. Jednak nawet jeśli ten proces może być sprawnie przeprowadzony w odniesieniu do jednego obciążenia lub grupy aplikacji, minie trochę czasu, zanim u użytkowników zajdą istotne zmiany. Rozpowszechnienie zmian w różnych warstwach istniejących procesów biznesowych może zająć jeszcze więcej czasu. Jeśli transformacja ma ukształtować wzorce zachowań wśród konsumentów, znaczące rezultaty mogą wystąpić po dłuższym czasie.
 

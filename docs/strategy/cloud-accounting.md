@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5c01fc4a0a4f1e05b34d8b9c91d71761a6e86f73
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 69f92ffaeb30b59bfa8ac2aeaea9aaad02e9aaeb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431675"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216235"
 ---
 <!-- cSpell:ignore CIOs -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "80431675"
 
 # <a name="what-is-cloud-accounting"></a>Czym jest księgowość w chmurze?
 
-Chmura zmienia sposób kont IT w sposób opisany w temacie [Tworzenie modelu finansowego na potrzeby transformacji w chmurze](./financial-models.md). Różne modele ewidencjonowania aktywności IT są znacznie łatwiejsze do obsługi ze względu na sposób przydzielania przez chmurę kosztów. Dlatego ważne jest, aby zrozumieć, jak uwzględnić koszty związane z chmurą przed rozpoczęciem podróży w chmurze. W tym artykule opisano najbardziej typowe modele ewidencjonowania aktywności w chmurze.
+Chmura zmienia sposób kont IT, zgodnie z opisem w temacie [Tworzenie modelu finansowego na potrzeby transformacji w chmurze](./financial-models.md). Różne modele ewidencjonowania aktywności IT są znacznie łatwiejsze do obsługi ze względu na sposób przydzielania przez chmurę kosztów. Dlatego ważne jest, aby zrozumieć, jak uwzględnić koszty związane z chmurą przed rozpoczęciem podróży w chmurze. W tym artykule opisano najbardziej typowe modele ewidencjonowania aktywności w chmurze.
 
 ## <a name="traditional-it-accounting-cost-center-model"></a>Tradycyjne ewidencjonowanie aktywności IT (model centrum kosztów)
 
@@ -30,9 +30,9 @@ Gdy program służy jako centrum kosztów, postrzegana wartość jest w dużym s
 
 ## <a name="central-it-accounting-profit-center-model"></a>Centralne ewidencjonowanie aktywności IT (model centrum zysków)
 
-Aby przezwyciężyć widok centrum kosztów, niektóre dyrektorzy działu informatyki wybrały dla centralnego modelu INFORMATYCZNego księgowości. W modelu tego typu jest on traktowany jak konkurencyjna jednostka biznesowa i element równorzędny do tworzenia przychodów jednostek gospodarczych. W niektórych przypadkach ten model może być całkowicie logiczny. Na przykład niektóre organizacje mają profesjonalny dział usług IT generujący strumień przychodów. Często centralne modele IT nie generują znaczących przychodów, co utrudnia wyjustowanie modelu.
+Aby przezwyciężyć widok centrum kosztów, niektóre dyrektorzy działu informatyki wybrały dla scentralizowanego modelu INFORMATYCZNego księgowości. W modelu tego typu jest on traktowany jak konkurencyjna jednostka biznesowa i element równorzędny do tworzenia przychodów jednostek gospodarczych. W niektórych przypadkach ten model może być całkowicie logiczny. Na przykład niektóre organizacje mają profesjonalny dział usług IT generujący strumień przychodów. Często scentralizowane modele IT nie generują znaczących przychodów, co utrudnia wyjustowanie modelu.
 
-Niezależnie od modelu przychodu centralne modele ewidencjonowania aktywności IT są unikatowe ze względu na to, jak dział IT stanowi o kosztach. W tradycyjnym modelu IT zespół IT rejestruje koszty i płaci te koszty z udostępnionych funduszy, takich jak operacje i konserwacja (O&M) lub dedykowane konto zysków i strat (P&L).
+Niezależnie od modelu przychodów scentralizowane modele ewidencjonowania aktywności IT są unikatowe, ponieważ w jaki sposób dział IT jest odpowiedzialny za koszty. W tradycyjnym modelu IT zespół IT rejestruje koszty i płaci te koszty z udostępnionych funduszy, takich jak operacje i konserwacja (O&M) lub dedykowane konto zysków i strat (P&L).
 
 W centralnym modelu księgowości IT zespół IT oznacza usługi świadczone na potrzeby obciążania, zarządzania i innych szacowanych kosztów. Następnie należy rozrachunkować konkurencyjne jednostki biznesowe dla oznaczonych usług. W tym modelu CIO oczekuje się zarządzania P&L związanego z sprzedażą tych usług. Pozwala to na tworzenie niepełnych kosztów IT i rywalizacji między centralnym działem IT i jednostkami biznesowymi, szczególnie w przypadku konieczności ponoszenia kosztów lub braku zgody na umowy SLA. W miarę możliwości technologii lub zmiany rynkowej każda nowa technologia spowodowałaby zakłócenie w centralnej&L, co utrudnia transformację.
 

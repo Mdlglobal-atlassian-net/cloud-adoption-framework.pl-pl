@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2ad912c7bc2e61465a81e278714f5018c2373f7f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8c31b25b7c5ce75ab1b4c1ed3b76e9a1dfcb7422
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429231"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215912"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Przygotowanie zmigrowanej aplikacji do podwyższenia poziomu środowiska produkcyjnego
 
@@ -29,7 +29,7 @@ Przekształcanie ma miejsce, gdy użytkownicy biznesowi lub klienci wykorzystuj�
 
 ## <a name="final-technical-readiness-tests"></a>Końcowe testy gotowości technicznej
 
-*Faza gotowości* jest ostatnim krokiem przed wydaniem produkcyjnym. Oznacza to, że jest to również ostatnia okazja do przetestowania obciążenia. Poniżej przedstawiono kilka testów sugerowanych w tej fazie:
+_Faza gotowości_ jest ostatnim krokiem przed wydaniem produkcyjnym. Oznacza to, że jest to również ostatnia okazja do przetestowania obciążenia. Poniżej przedstawiono kilka testów sugerowanych w tej fazie:
 
 - **Testowanie izolacji sieciowej.** Przetestuj i monitoruj ruch sieciowy, aby zapewnić odpowiednią izolację oraz zagwarantować, że nie będzie nieoczekiwanych luk w zabezpieczeniach sieci. Upewnij się również, że żaden routing sieciowy, który ma zostać odcięty podczas uruchomienia produkcyjnego, nie obejmuje nieoczekiwanego ruchu.
 - **Testowanie zależności.** Upewnij się, że wszystkie zależności aplikacji obciążenia zostały zmigrowane i są dostępne ze zmigrowanych zasobów.
