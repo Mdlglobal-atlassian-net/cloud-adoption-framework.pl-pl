@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: a384647cd25e871c444a59fc7388f4007df335d9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5fe16c365c3b51f275e337e39c39538816765645
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431037"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214756"
 ---
+<!-- docsTest:ignore windows -->
+
 # <a name="approaches-to-digital-estate-planning"></a>Podejścia do planowania majątku cyfrowego
 
 Planowanie elementów cyfrowych może potrwać kilka form, w zależności od potrzebnych wyników i rozmiaru istniejącej nieruchomości. Istnieją różne metody, które można wykonać. Ważne jest, aby ustawić oczekiwania dotyczące podejścia wczesnego do planowania cykli. Niejasne oczekiwania często prowadzą do opóźnień związanych z dodatkowymi ćwiczeniami zbierającymi spis. W tym artykule przedstawiono trzy podejścia do analizy.

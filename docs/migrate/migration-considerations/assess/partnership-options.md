@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5ce9b9144921ec3407fdd0b12b84183fd6e9ee52
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cc30b67d0103b60ff0b53187caef007063ca7efb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119871"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214263"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -33,7 +33,7 @@ W trakcie planowania, kompilowania lub migrowania firma zazwyczaj ma cztery opcj
 
 Jeśli organizacja planuje samodzielnie przeprowadzić migrację na platformę Azure, firma Microsoft może wspierać ją na wszystkich etapach tej operacji. Aby uprościć proces migracji do platformy Azure, firma Microsoft i jej partnerzy opracowali rozbudowany zestaw architektur, przewodników, narzędzi oraz usług zmniejszających ryzyko i przyspieszających migrację maszyn wirtualnych, aplikacji oraz baz danych. Te narzędzia i usługi obsługują szeroki zakres systemów operacyjnych, języków programowania, struktur i baz danych.
 
-- **Narzędzia do oceny i migracji.** Platforma Azure oferuje szeroką gamę narzędzi, które mogą być używane w różnych fazach transformacji w chmurze, w tym do oceny istniejącej infrastruktury. Więcej informacji można znaleźć w sekcji „Ocena” w rozdziale „Migracja” poniżej.
+- **Narzędzia do oceny i migracji.** Platforma Azure oferuje szeroką gamę narzędzi, które mogą być używane w różnych fazach transformacji w chmurze, w tym do oceny istniejącej infrastruktury. Aby uzyskać więcej informacji, zapoznaj się z sekcją "Ocena" w rozdziale "migracja" poniżej.
 - **[Microsoft Cloud Adoption Framework](../../index.md).** Ten przewodnik zapewnia strukturalne podejście do wdrażania i migracji w chmurze. Jest on oparty na najlepszych rozwiązaniach w wielu klientach obsługiwanych przez firmę Microsoft i jest zorganizowany jako seria kroków, od architektury i projektowania do wdrożenia. Dla każdego kroku udostępniono pomocne wskazówki, które ułatwią zaprojektowanie architektury aplikacji.
 - **[Wzorce projektowe w chmurze](https://docs.microsoft.com/azure/architecture/patterns).** Platforma Azure udostępnia przydatne wzorce projektowe oparte na chmurze służące do tworzenia niezawodnych, skalowalnych i bezpiecznych obciążeń w chmurze. Dla każdego wzorca opisano problem rozwiązywany przez ten wzorzec, uwagi dotyczące stosowania wzorca oraz przykład oparty na platformie Azure. Większość wzorców zawiera przykłady lub fragmenty kodu, które pokazują sposób implementacji wzorca na platformie Azure. Są jednak one odpowiednie dla dowolnego systemu rozproszonego, hostowanego na platformie Azure lub na innych platformach w chmurze.
 - **[Podstawy chmury](https://docs.microsoft.com/azure/architecture/guide).** Podstawy ułatwiają naukę podstawowych metod implementacji kluczowych pojęć. Ten przewodnik pomaga inżynierom projektować rozwiązania, które wykraczają poza pojedynczą usługę platformy Azure.
@@ -61,9 +61,9 @@ Usługa [FastTrack for Azure](https://azure.microsoft.com/programs/azure-fasttra
 - Dane rozproszone globalnie
 - IoT***
 
-*Ograniczona wersja zapoznawcza w Stanach Zjednoczonych, Kanadzie, Zjednoczonym Królestwie i Europie Zachodniej
+* Ograniczona wersja zapoznawcza w Stany Zjednoczone, Kanada, Wielka Brytania i Europa Zachodnia.
 
-**Ograniczona wersja zapoznawcza w Zjednoczonym Królestwie i Europie Zachodniej
+* * Ograniczona wersja zapoznawcza w Zjednoczonym Królestwie i Europa Zachodnia.
 
 ***Dostępne w drugiej połowie 2019 r.
 
@@ -93,7 +93,7 @@ Jeśli masz pytania lub potrzebujesz pomocy, [utwórz wniosek o pomoc techniczn�
 
 ## <a name="azure-solutions-partner"></a>Partner rozwiązań platformy Azure
 
-Dostawcy rozwiązań certyfikowani przez firmę Microsoft specjalizują się w dostarczaniu aktualnych rozwiązań klienckich opartych na technologii Microsoft na całym świecie. Zoptymalizuj swoją działalność w chmurze z pomocą doświadczonego partnera.
+Certyfikowane dostawcy rozwiązań firmy Microsoft specjalizują się w dostarczaniu nowoczesnych rozwiązań klientów opartych na technologiach firmy Microsoft na całym świecie. Zoptymalizuj swoją działalność w chmurze z pomocą doświadczonego partnera.
 
 Uzyskaj pomoc od partnerów oferujących gotowe lub niestandardowe rozwiązania dla platformy Azure oraz partnerów, którzy mogą pomóc we wdrażaniu tych rozwiązań i w zarządzaniu nimi:
 

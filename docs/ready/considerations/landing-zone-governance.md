@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3eb3a4feb5871ac2e3ebe72c0bcbc1747e3f3eaa
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9f0005c3d84f1a9f49c3756932838bbe5634269d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81121755"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213957"
 ---
 # <a name="improve-landing-zone-governance"></a>Usprawnij zarządzanie strefami wyładunkowymi
 
@@ -21,10 +21,10 @@ Zarządzanie strefami wyładunkowymi jest najmniejszą jednostką ogólnego zarz
 ## <a name="landing-zone-governance-best-practices"></a>Najlepsze praktyki dotyczące zarządzania strefami wyładunkowymi
 
 - **Wstępne zarządzanie wyładunkiem:** Artykuł dotyczący ustanawiania [początkowego ładu](../../govern/guides/complex/index.md) programu ułatwia dodawanie początkowych narzędzi nadzoru do pierwszych kilku stref. Te praktyki ułatwiają skalowanie wdrażania i zarządzania, a także wdrażanie kosztów związanych z zarządzaniem kosztem. Ta metoda rozpoczyna się od: organizacja zasobów, definicje zasad, role RBAC i definicje planu.
-- **[Wzorce nazewnictwa i znakowania](../azure-best-practices/naming-and-tagging.md)**: zapewniają spójność nazw i tagowania, które stanowią podstawę do ustanowienia praktyk związanych z zarządzaniem dźwiękiem.
-- **[Śledź koszty w ramach obciążeń](../azure-best-practices/track-costs.md)**: Rozpocznij śledzenie kosztów w pierwszej strefie docelowej. Oceń, w jaki sposób będzie stosowana spójność wielu obciążeń i ról.
-- **[Skaluj z wieloma subskrypcjami](../azure-best-practices/scale-subscriptions.md)**: Oceń, w jaki sposób Ta strefa docelowa i inne strefy wyładunkowe ulegną skalowaniu, ponieważ wymaga to wielu subskrypcji.
-- **[Organizuj subskrypcje](../azure-best-practices/organize-subscriptions.md)**: Poznaj sposób organizowania wielu subskrypcji i zarządzania nimi.
+- ** [Wzorce nazewnictwa i znakowania](../azure-best-practices/naming-and-tagging.md):** Zapewnij spójność nazw i tagowania, które stanowią podstawowe dane do ustanawiania praktyk związanych z zarządzaniem dźwiękiem.
+- ** [Śledź koszty w ramach obciążeń](../azure-best-practices/track-costs.md):** Rozpocznij śledzenie kosztów w pierwszej strefie docelowej. Oceń, w jaki sposób będzie stosowana spójność wielu obciążeń i ról.
+- ** [Skaluj z wieloma subskrypcjami](../azure-best-practices/scale-subscriptions.md):** Oceń, w jaki sposób Ta strefa docelowa i inne strefy wyładunkowe będą skalowane, ponieważ wymaga to wielu subskrypcji.
+- ** [Organizuj subskrypcje](../azure-best-practices/organize-subscriptions.md):** Zapoznaj się z tematem organizowania wielu subskrypcji i zarządzania nimi.
 
 ## <a name="four-steps-to-improve-overall-governance"></a>Cztery kroki w celu usprawnienia ogólnego zarządzania
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 6a6ebbfc94dbe3b3fe031210f55f51635228013f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 21504538837030bf9a6ab84e42a09f365386fa78
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431063"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214807"
 ---
 # <a name="cloud-rationalization"></a>Racjonalizacja chmury
 
@@ -23,11 +23,17 @@ Racjonalizacja chmury to proces oceniania zasobów w celu ustalenia najlepszego 
 
 "Pięć RS racjonalizacji" wymienione w tym artykule jest świetnym sposobem na oznaczenie potencjalnego przyszłego stanu wszelkich obciążeń, które są uważane za kandydata w chmurze. Jednak ten proces etykietowania powinien być umieszczony w odpowiednim kontekście przed podjęciem próby racjonalizacji środowiska. Aby zapewnić ten kontekst, przejrzyj następujący mitów:
 
-- **Omówienia: łatwo jest szybko podejmować decyzje o racjonalizacji w procesie.** Dokładne racjonalizacja wymaga głębokiej znajomości obciążeń i skojarzonych zasobów (aplikacji, maszyn wirtualnych i danych). Najważniejsze decyzje podejmowane są z dokładnością. Zalecamy korzystanie z [procesu racjonalizacji przyrostowej](./rationalize.md#incremental-rationalization).
+### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>Omówienia: łatwo jest szybko podejmować decyzje o racjonalizacji w procesie
 
-- **Omówienia: wdrażanie w chmurze musi oczekiwać na uzasadnienie wszystkich obciążeń.** Racjonalizacja całego portfolio IT lub nawet jednego centrum danych może opóźnić realizację wartości biznesowej według miesięcy lub nawet lat. W miarę możliwości należy unikać pełnej racjonalizacji. Zamiast tego należy użyć [mocy 10 podejścia do wydania planowania](./rationalize.md#release-planning) , aby podejmować odpowiednie decyzje dotyczące kolejnych 10 obciążeń, które są styczeń na potrzeby wdrażania w chmurze.
+ Dokładne racjonalizacja wymaga głębokiej znajomości obciążeń i skojarzonych zasobów (aplikacji, maszyn wirtualnych i danych). Najważniejsze decyzje podejmowane są z dokładnością. Zalecamy korzystanie z [procesu racjonalizacji przyrostowej](./rationalize.md#incremental-rationalization).
 
-- **Omówienia: uzasadnienie biznesowe musi oczekiwać na uzasadnienie wszystkich obciążeń.** Aby opracować uzasadnienie biznesowe dla wysiłku związanego z wdrażaniem w chmurze, należy wprowadzić kilka podstawowych założeń na poziomie portfela. Gdy motywacje są wyrównane do innowacyjności, założono, że architektura zostanie wdrożona. Gdy motywacje są wyrównane do migracji, założono, że rehosty. Te założenia mogą przyspieszyć proces uzasadnienia biznesowego. Założenia są następnie zakwestionowane i budżety są udoskonalane w fazie oceny poszczególnych cykli wdrażania obciążeń.
+### <a name="myth-cloud-adoption-has-to-wait-for-all-workloads-to-be-rationalized"></a>Omówienia: wdrażanie w chmurze musi oczekiwać na uzasadnienie wszystkich obciążeń
+
+Racjonalizacja całego portfolio IT lub nawet jednego centrum danych może opóźnić realizację wartości biznesowej według miesięcy lub nawet lat. W miarę możliwości należy unikać pełnej racjonalizacji. Zamiast tego należy użyć [mocy 10 podejścia do wydania planowania](./rationalize.md#release-planning) , aby podejmować odpowiednie decyzje dotyczące kolejnych 10 obciążeń, które są styczeń na potrzeby wdrażania w chmurze.
+
+### <a name="myth-business-justification-has-to-wait-for-all-workloads-to-be-rationalized"></a>Omówienia: uzasadnienie biznesowe musi oczekiwać na uzasadnienie wszystkich obciążeń
+
+Aby opracować uzasadnienie biznesowe dla wysiłku związanego z wdrażaniem w chmurze, należy wprowadzić kilka podstawowych założeń na poziomie portfela. Gdy motywacje są wyrównane do innowacyjności, założono, że architektura zostanie wdrożona. Gdy motywacje są wyrównane do migracji, założono, że rehosty. Te założenia mogą przyspieszyć proces uzasadnienia biznesowego. Założenia są następnie zakwestionowane i budżety są udoskonalane w fazie oceny poszczególnych cykli wdrażania obciążeń.
 
 Zapoznaj się z poniższą piątą z pięciu usprawnień, aby zaznajomić się z długoterminowym procesem. Podczas opracowywania planu wdrażania w chmurze wybierz opcję, która najlepiej odpowiada Twoim potrzebom, rezultatom biznesowym i bieżącemu środowisku stanu. Celem na potrzeby racjonalizacji cyfrowej jest ustawienie linii bazowej, a nie podniesienia poziomu każdego obciążenia.
 
@@ -35,28 +41,28 @@ Zapoznaj się z poniższą piątą z pięciu usprawnień, aby zaznajomić się z
 
 Pięć z pięciu usprawnień, które są wymienione w tym miejscu, opisują najbardziej typowe opcje racjonalizacji.
 
-## <a name="rehost"></a>Ponowne hostowanie
+## <a name="rehost"></a>Zmienianie hosta
 
 Zgodnie z potrzebami migracji przenoszonych _i przenoszonych_ na przechodzenie przenoszone jest bieżący zasób stanu do wybranego dostawcy chmury z minimalnymi zmianami ogólnej architektury.
 
 Typowe sterowniki mogą obejmować:
 
-- Redukowanie wydatków inwestycyjnych
-- Zwalnianie miejsca w centrum danych
-- Osiąganie szybkiego powrotu do inwestycji w chmurze
+- Zmniejszenie wydatków inwestycyjnych.
+- Zwalnianie miejsca w centrum danych.
+- Osiągnięcie szybkiego powrotu do inwestycji w chmurę.
 
 Czynniki analizy ilościowej:
 
-- Rozmiar maszyny wirtualnej (procesor, pamięć, magazyn)
-- Zależności (ruch sieciowy)
-- Zgodność zasobów
+- Rozmiar maszyny wirtualnej (procesor, pamięć, magazyn).
+- Zależności (ruch sieciowy).
+- Zgodność zasobów.
 
 Czynniki analizy jakościowej:
 
-- Tolerancja zmiany
-- Priorytety biznesowe
-- Krytyczne zdarzenia biznesowe
-- Zależności procesów
+- Tolerancja zmiany.
+- Priorytety biznesowe.
+- Krytyczne zdarzenia biznesowe.
+- Zależności procesów.
 
 ## <a name="refactor"></a>Refaktoryzacja
 
@@ -66,23 +72,23 @@ Opcje platforma jako usługa (PaaS) umożliwiają zmniejszenie kosztów operacyj
 
 Typowe sterowniki mogą obejmować:
 
-- Szybsze i krótsze aktualizacje
-- Przenośność kodu
-- Większa wydajność chmury (zasoby, szybkość, koszt, operacje zarządzane)
+- Szybsze i krótsze aktualizacje.
+- Przenośność kodu.
+- Większa wydajność chmury (zasoby, szybkość, koszt, operacje zarządzane).
 
 Czynniki analizy ilościowej:
 
-- Rozmiar zasobu aplikacji (procesor CPU, pamięć, magazyn)
-- Zależności (ruch sieciowy)
-- Ruch użytkownika (wyświetlenia stron, czas na stronie, czas ładowania)
-- Platforma programistyczna (Języki, platforma danych, usługi warstwy środkowej)
-- Baza danych (procesor CPU, pamięć, magazyn, wersja)
+- Rozmiar zasobu aplikacji (procesor CPU, pamięć, magazyn).
+- Zależności (ruch sieciowy).
+- Ruch użytkownika (wyświetlenia stron, czas na stronie, czas ładowania).
+- Platforma programistyczna (Języki, platforma danych, usługi warstwy środkowej).
+- Baza danych (procesor CPU, pamięć, magazyn, wersja).
 
 Czynniki analizy jakościowej:
 
-- Dalsze inwestycje biznesowe
-- Opcje i osie czasu
-- Zależności procesów firmy
+- Dalsze inwestycje biznesowe.
+- Opcje i osie czasu.
+- Zależności procesów firmy.
 
 ## <a name="rearchitect"></a>Zmienianie architektury
 
@@ -92,22 +98,22 @@ W innych przypadkach aplikacje, które są zgodne z chmurą, ale nie są natywne
 
 Typowe sterowniki mogą obejmować:
 
-- Skalowanie i elastyczność aplikacji
-- Łatwiejsze wdrażanie nowych możliwości chmury
-- Mieszanie stosów technologicznych
+- Skalowalność i elastyczność aplikacji.
+- Łatwiejsze wdrażanie nowych możliwości chmury.
+- Mieszanie stosów technologicznych.
 
 Czynniki analizy ilościowej:
 
-- Rozmiar zasobu aplikacji (procesor CPU, pamięć, magazyn)
-- Zależności (ruch sieciowy)
-- Ruch użytkownika (wyświetlenia stron, czas na stronie, czas ładowania)
-- Platforma programistyczna (Języki, platforma danych, usługi warstwy środkowej)
-- Baza danych (procesor CPU, pamięć, magazyn, wersja)
+- Rozmiar zasobu aplikacji (procesor CPU, pamięć, magazyn).
+- Zależności (ruch sieciowy).
+- Ruch użytkownika (wyświetlenia stron, czas na stronie, czas ładowania).
+- Platforma programistyczna (Języki, platforma danych, usługi warstwy środkowej).
+- Baza danych (procesor CPU, pamięć, magazyn, wersja).
 
 Czynniki analizy jakościowej:
 
-- Rosnące inwestycje biznesowe
-- Koszty operacyjne
+- Rosnące inwestycje biznesowe.
+- Koszty operacyjne.
 - Potencjalni pętle opinii i DevOps inwestycje.
 
 ## <a name="rebuild"></a>Ponowne kompilowanie
@@ -116,23 +122,23 @@ W niektórych scenariuszach różnica, którą należy przezwyciężyć w celu p
 
 Typowe sterowniki mogą obejmować:
 
-- Przyspiesz innowacje
-- Szybsze tworzenie aplikacji
-- Zmniejsz koszty operacyjne
+- Przyspieszanie innowacji.
+- Szybsze tworzenie aplikacji.
+- Zmniejszenie kosztów operacyjnych.
 
 Czynniki analizy ilościowej:
 
-- Rozmiar zasobu aplikacji (procesor CPU, pamięć, magazyn)
-- Zależności (ruch sieciowy)
-- Ruch użytkownika (wyświetlenia stron, czas na stronie, czas ładowania)
-- Platforma programistyczna (Języki, platforma danych, usługi warstwy środkowej)
-- Baza danych (procesor CPU, pamięć, magazyn, wersja)
+- Rozmiar zasobu aplikacji (procesor CPU, pamięć, magazyn).
+- Zależności (ruch sieciowy).
+- Ruch użytkownika (wyświetlenia stron, czas na stronie, czas ładowania).
+- Platforma programistyczna (Języki, platforma danych, usługi warstwy środkowej).
+- Baza danych (procesor CPU, pamięć, magazyn, wersja).
 
 Czynniki analizy jakościowej:
 
-- Odrzucanie zadowolenia użytkowników końcowych
-- Procesy biznesowe ograniczone przez funkcje
-- Potencjalny koszt, doświadczenie lub zyski z przychodów
+- Odrzucanie zadowolenia użytkowników końcowych.
+- Procesy biznesowe ograniczone przez funkcje.
+- Potencjalny koszt, doświadczenie lub zyski z przychodów.
 
 ## <a name="replace"></a>Replace
 
@@ -140,24 +146,24 @@ Rozwiązania są zwykle implementowane przy użyciu najlepszej technologii i met
 
 Typowe sterowniki mogą obejmować:
 
-- Standaryzacja z najlepszymi praktykami branżowymi
-- Przyspieszanie wdrażania podejścia sterowanego procesami biznesowymi
-- Zmiana alokacji inwestycji programistycznych na aplikacje, które tworzą zróżnicowane lub zalety konkurencji
+- Ujednolicenie najlepszych praktyk branżowych.
+- Przyspieszanie wdrażania podejścia sterowanego procesami biznesowymi.
+- Ponowna alokacja inwestycji programistycznych do aplikacji, które tworzą zróżnicowane lub zalety konkurencji.
 
 Czynniki analizy ilościowej:
 
-- Ogólne redukcje kosztów operacyjnych
-- Rozmiar maszyny wirtualnej (procesor, pamięć, magazyn)
-- Zależności (ruch sieciowy)
-- Zasoby do wycofania
-- Baza danych (procesor CPU, pamięć, magazyn, wersja)
+- Ogólne redukcje kosztów operacyjnych.
+- Rozmiar maszyny wirtualnej (procesor, pamięć, magazyn).
+- Zależności (ruch sieciowy).
+- Zasoby do wycofania.
+- Baza danych (procesor CPU, pamięć, magazyn, wersja).
 
 Czynniki analizy jakościowej:
 
-- Analiza kosztów związanych z bieżącą architekturą w porównaniu z rozwiązaniem SaaS
-- Mapy procesów firmy
-- Schematy danych
-- Procesy niestandardowe lub zautomatyzowane
+- Analiza kosztów związanych z bieżącą architekturą w porównaniu z rozwiązaniem SaaS.
+- Mapy procesów firmy.
+- Schematy danych.
+- Procesy niestandardowe lub zautomatyzowane.
 
 ## <a name="next-steps"></a>Następne kroki
 

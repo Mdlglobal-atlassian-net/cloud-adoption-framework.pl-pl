@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 36c9b9cc749f1feddff64c64717849fe5dfbe3b9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f3291bb1a5ef114b2ae790bb1a3c82eaf382c37e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996104"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215130"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>Sieć zdefiniowana przez oprogramowanie: Hub i szprych
 
@@ -50,7 +50,7 @@ Architektury Hub i szprych są zwykle implementowane przy użyciu sieci wirtualn
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-Aby zapoznać się z przykładami implementacji sieci Hub i szprych na platformie Azure, zobacz następujące przykłady w witrynie architektury referencyjnej platformy Azure:
+Aby poznać architektury referencyjne pokazujące, jak zaimplementować sieci piasty i szprych na platformie Azure, zobacz:
 
 - [Implementowanie topologii sieci gwiazdy i gwiazdy na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
 - [Implementowanie topologii sieci gwiazdy i gwiazdy przy użyciu usług udostępnionych na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)

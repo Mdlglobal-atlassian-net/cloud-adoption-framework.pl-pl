@@ -1,18 +1,18 @@
 ---
-title: Ścieżka gotowości do kwalifikacji podczas planowania
-description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się więcej o ścieżce gotowości do umiejętności w fazie planowania migracji.
+title: Ścieżka gotowości do kwalifikacji w fazie planu podróży migracji
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się więcej o ścieżce gotowości do umiejętności podczas fazy planu migracji.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 21a9c395f8a60c7c73c7e39f181061de816b9c47
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 38b5ebc82052869294eb7ad49e50a1d54b5a696f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997504"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214960"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Ścieżka gotowości do kwalifikacji w fazie planu podróży migracji
 
@@ -43,8 +43,8 @@ Uzasadnienie inwestycji związanych z wdrożeniem chmury może wymagać dokładn
 
 Możesz udoskonalić swój przypadek biznesowy, dopasowując żądany przypadek biznesowy do bieżącego i przyszłego spisu cyfr. Te artykuły mogą być pomocne podczas opracowywania racjonalizacji cyfrowej:
 
-- [Przyrostowa racjonalizacja](../digital-estate/rationalize.md). Podejście Agile do racjonalizacji, które prawidłowo dopasowuje z opóźnieniem decyzje techniczne.
-- [RS](../digital-estate/5-rs-of-rationalization.md). Poznaj różne opcje racjonalizacji.
+- [Racjonalizacja przyrostowa](../digital-estate/rationalize.md): podejście Agile do racjonalizacji, które prawidłowo dopasowuje z opóźnieniem decyzje techniczne.
+- [Pięć pięciu usprawnień](../digital-estate/5-rs-of-rationalization.md): Poznaj różne opcje racjonalizacji.
 
 ## <a name="create-a-migration-backlog-technical-plan"></a>Tworzenie zaległości migracji (plan techniczny)
 
@@ -86,9 +86,9 @@ Zalecamy włączenie znajomości platformy Azure do oficjalnego uznania przy uż
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury, nie przychodzi łatwo. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty, poziomy i Osiągaj więcej!
+Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych umiejętności i obowiązków, które są związane z wdrażaniem chmury, nie przychodzi łatwo. Microsoft Learn oferuje bardziej satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zdobywaj punkty i poziomy i osiągaj więcej.
 
-Oto przykład dopasowanej ścieżki szkoleniowej, która jest wyrównana do części strategii wdrożenia chmury.
+Poniżej znajduje się przykład dostosowanej ścieżki szkoleniowej, która jest stosowana do metodologii wdrażania w chmurze.
 
 [Poznaj wartość biznesową Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): to środowisko szkoleniowe zajmie się podróżą, która rozpocznie się, pokazując, w jaki sposób cyfrowe przekształcanie i możliwości chmury mogą przekształcić swoją firmę. Pokażemy, jak usługi w chmurze platformy Microsoft Azure mogą wspierać Twoją organizację na zaufanej platformie w chmurze. Na koniec zilustrujemy, co zrobić, aby ta podróż stała się rzeczywistością dla Twojej organizacji.
 

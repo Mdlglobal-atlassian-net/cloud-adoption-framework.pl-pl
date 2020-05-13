@@ -7,16 +7,16 @@ ms.date: 04/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 18b5aefb0498c530313afa63d2f005fd874f8741
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4f8d4dd2b2c2228bfdb4ebe13980e9f408083e2f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81121820"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213991"
 ---
 # <a name="landing-zone-considerations"></a>Zagadnienia dotyczące strefy docelowej
 
-Strefa docelowa to podstawowy blok konstrukcyjny każdego środowiska wdrażania chmury. Termin *strefa docelowa* odnosi się do środowiska, które zostało aprowizowane i przygotowane do hostowania obciążeń w środowisku chmury, takim jak platforma Azure. W pełni funkcjonalna strefa docelowa jest finalnym dostarczanym elementem dowolnej iteracji metodologii gotowości podręcznika Cloud Adoption Framework.
+Strefa docelowa to podstawowy blok konstrukcyjny każdego środowiska wdrażania chmury. Termin _strefa docelowa_ odnosi się do środowiska, które zostało aprowizowane i przygotowane do hostowania obciążeń w środowisku chmury, takim jak platforma Azure. W pełni funkcjonalna strefa docelowa jest finalnym dostarczanym elementem dowolnej iteracji metodologii gotowości podręcznika Cloud Adoption Framework.
 
 ![Zagadnienia dotyczące strefy docelowej](../../_images/ready/landing-zone-considerations.png)
 

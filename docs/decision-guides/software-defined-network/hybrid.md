@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6ccc459f1d708964afdc7c25cefdf314c44a6e02
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4fc258b8213842e0cc3428146f83cb9e31bb39df
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433143"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214986"
 ---
 # <a name="software-defined-networking-hybrid-network"></a>Sieć zdefiniowana przez oprogramowanie: sieć hybrydowa
 

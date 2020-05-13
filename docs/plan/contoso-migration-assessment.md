@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b91652ac2dd06882551c6e9474d5c0e0574deda2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bc1753821e61ee0a7af74bc720a56ec8962ecded
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80889738"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214586"
 ---
+<!-- docsTest:disable TODO -->
+
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL smarthotelapp ctypes ctypeslib prereqs -->
 
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Ocena obciążeń lokalnych pod kątem migracji do platformy Azure
@@ -29,10 +31,10 @@ Aby rozpocząć pracę i lepiej zrozumieć odpowiednie technologie, firma Contos
 
 <!-- markdownlint-disable MD033 -->
 
-Nazwa aplikacji | Platforma | Warstwy aplikacji | Szczegóły
---- | --- | --- | ---
-SmartHotel360<br/><br/> (zarządza wymaganiami firmy Contoso dotyczącymi podróży) | Działa w systemie Windows z bazą danych SQL Server | Aplikacja dwuwarstwowa. Frontonowa witryna internetowa ASP.NET działa na jednej maszynie wirtualnej (**WEBVM**), a program SQL Server działa na innej maszynie wirtualnej (**SQLVM**). | Maszyny wirtualne VMware działają na hoście ESXi zarządzanym przez program vCenter Server.<br/><br/> Przykładową aplikację można pobrać z witryny [GitHub](https://github.com/Microsoft/SmartHotel360).
-osTicket<br/><br/> (aplikacja dla pomocy technicznej firmy Contoso) | Działa w systemie Linux/Apache z zainstalowanym środowiskiem MySQL PHP (LAMP) | Aplikacja dwuwarstwowa. Frontonowa witryna internetowa napisana w języku PHP działa na jednej maszynie wirtualnej (**OSTICKETWEB**), a baza danych MySQL działa na innej maszynie wirtualnej (**OSTICKETMYSQL**). | Aplikacja jest używana przez aplikacje obsługi klientów do śledzenia problemów dotyczących pracowników wewnętrznych i klientów zewnętrznych.<br/><br/> Przykład można pobrać z witryny [GitHub](https://github.com/osTicket/osTicket).
+| Nazwa aplikacji | Platforma | Warstwy aplikacji | Szczegóły |
+| --- | --- | --- | --- |
+| SmartHotel360 <br><br> (zarządza wymaganiami firmy Contoso dotyczącymi podróży) | Działa w systemie Windows z bazą danych SQL Server | Aplikacja dwuwarstwowa. Frontonowa witryna internetowa ASP.NET działa na jednej maszynie wirtualnej (**WEBVM**), a program SQL Server działa na innej maszynie wirtualnej (**SQLVM**). | Maszyny wirtualne VMware działają na hoście ESXi zarządzanym przez program vCenter Server. <br><br> Przykładową aplikację można pobrać z witryny [GitHub](https://github.com/Microsoft/SmartHotel360). |
+| osTicket <br><br> (aplikacja dla pomocy technicznej firmy Contoso) | Działa w systemie Linux/Apache z zainstalowanym środowiskiem MySQL PHP (LAMP) | Aplikacja dwuwarstwowa. Frontonowa witryna internetowa napisana w języku PHP działa na jednej maszynie wirtualnej (**OSTICKETWEB**), a baza danych MySQL działa na innej maszynie wirtualnej (**OSTICKETMYSQL**). | Aplikacja jest używana przez aplikacje obsługi klientów do śledzenia problemów dotyczących pracowników wewnętrznych i klientów zewnętrznych. <br><br> Przykład można pobrać z witryny [GitHub](https://github.com/osTicket/osTicket). |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -72,11 +74,11 @@ Zespół ds. chmury firmy Contoso zidentyfikował cele oceny migracji:
 
 Do oceny migracji firma Contoso używa narzędzi firmy Microsoft. Narzędzia te są dopasowane do celów firmy i powinny dostarczyć firmie Contoso wszystkie niezbędne informacje.
 
-Technologia | Opis | Koszty
---- | --- | ---
-[Asystent migracji danych](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia Data Migration Assistant do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie Data Migration Assistant ocenia równoważność funkcji między źródłowymi i docelowymi elementami SQL. Wynikiem działania tego narzędzia są zalecenia dotyczące poprawy wydajności i niezawodności. | Narzędzie Data Migration Assistant można bezpłatnie pobrać.
-[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną.
-[Mapa usługi](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Usługa Azure Migrate za pomocą rozwiązania Service Map przedstawia zależności między maszynami, które firma chce zmigrować. | Rozwiązanie Service Map jest częścią dzienników usługi Azure Monitor. Obecnie firma Contoso może używać rozwiązania Service Map przez 180 dni bez naliczania opłat.
+| Technologia | Opis | Koszty |
+| --- | --- | --- |
+| [Asystent migracji danych](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia Data Migration Assistant do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie Data Migration Assistant ocenia równoważność funkcji między źródłowymi i docelowymi elementami SQL. Wynikiem działania tego narzędzia są zalecenia dotyczące poprawy wydajności i niezawodności. | Narzędzie Data Migration Assistant można bezpłatnie pobrać. |
+| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną. |
+| [Mapa usługi](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Usługa Azure Migrate za pomocą rozwiązania Service Map przedstawia zależności między maszynami, które firma chce zmigrować. | Rozwiązanie Service Map jest częścią dzienników usługi Azure Monitor. Obecnie firma Contoso może używać rozwiązania Service Map przez 180 dni bez naliczania opłat. |
 
 W tym scenariuszu przedstawiciel firmy Contoso pobiera i uruchamia narzędzie Data Migration Assistant w celu oceny lokalnej bazy danych SQL Server pod kątem przydatności dla swojej aplikacji do obsługi podróży. Za pomocą usługi Azure Migrate z mapowaniem zależności firma Contoso ocenia maszyny wirtualne aplikacji przed ich zmigrowaniem na platformę Azure.
 
@@ -144,7 +146,7 @@ Firma Contoso przeprowadza ocenę w następujący sposób:
 
 Teraz firma Contoso może przeprowadzić ocenę lokalnej bazy danych SQL Server pod kątem aplikacji SmartHotel360.
 
-1. W Data Migration Assistant firma Contoso wybiera **nową** > **ocenę**, a następnie przekazuje ocenę nazwy projektu.
+1. W Data Migration Assistant firma Contoso wybiera **nową**  >  **ocenę**, a następnie przekazuje ocenę nazwy projektu.
 
 2. W obszarze **Source server type**, (Typ serwera źródłowego) przedstawiciel firmy Contoso wybiera pozycję **SQL Server**, a w obszarze **Target Server type** (Typ serwera docelowego) pozycję **SQL Server on Azure Virtual Machines** (Program SQL Server w usłudze Azure Virtual Machines)
 
@@ -250,9 +252,9 @@ Skonfiguruj nowy projekt usługi Azure Migrate w następujący sposób.
     - Lokalizacja geograficzna projektu jest używana wyłącznie do przechowywania metadanych zebranych z lokalnych maszyn wirtualnych.
     - Podczas przeprowadzania migracji można wybrać dowolny region docelowy.
 
-1. Wybierz opcję **Dalej**.
+1. Wybierz pozycję **Dalej**.
 
-1. W **narzędziu Wybierz ocenę**wybierz pozycję **Azure Migrate: Ocena** > serwera**dalej**.
+1. W **narzędziu Wybierz ocenę**wybierz pozycję **Azure Migrate: Ocena serwera**  >  **dalej**.
 
     ![Azure Migrate — narzędzie do oceny](../migrate/azure-best-practices/media/contoso-migration-assessment/assessment-tool.png)
 
@@ -264,9 +266,9 @@ Skonfiguruj nowy projekt usługi Azure Migrate w następujący sposób.
 
 ### <a name="download-the-collector-appliance"></a>Pobieranie urządzenia modułu zbierającego
 
-1. W obszarze**serwery** >  **celów** > migracji**Azure Migrate: Ocena serwera**, wybierz pozycję **odkryj**.
+1. W obszarze serwery **celów migracji**  >  **Servers**  >  **Azure Migrate: Ocena serwera**, wybierz pozycję **odkryj**.
 
-1. W obszarze **odnajdywanie** > maszyn**są zwirtualizowane maszyny?** wybierz pozycję tak, aby uzyskać **VMware vSphere funkcji hypervisor**.
+1. W obszarze **odnajdywanie**maszyn  >  **są zwirtualizowane maszyny?** wybierz pozycję **tak, aby uzyskać VMware vSphere funkcji hypervisor**.
 
 1. Wybierz pozycję **Pobierz** , aby pobrać. Plik szablonu komórki jajowe.
 
@@ -282,7 +284,7 @@ Przed wdrożeniem maszyny wirtualnej przedstawiciel firmy Contoso sprawdza zabez
 
     `C:\>CertUtil -HashFile <file_location> [Hashing Algorithm]`
 
-    **Przyklad**
+    **Przykład:**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
 
@@ -292,7 +294,7 @@ Przed wdrożeniem maszyny wirtualnej przedstawiciel firmy Contoso sprawdza zabez
 
 Teraz przedstawiciel firmy Contoso może zaimportować pobrany plik do wystąpienia programu vCenter Server i zaprowizować maszynę wirtualną urządzenia modułu zbierającego:
 
-1. W konsoli klienta vSphere firmy **contoso wybiera** > **szablon Deploying OVFs**.
+1. W konsoli klienta vSphere firmy **contoso wybiera**  >  **szablon Deploying OVFs**.
 
     ![Klient internetowy programu vSphere — wdrażanie szablonu OVF](../migrate/azure-best-practices/media/contoso-migration-assessment/vcenter-wizard.png)
 
@@ -304,7 +306,7 @@ Teraz przedstawiciel firmy Contoso może zaimportować pobrany plik do wystąpie
 
 5. W obszarze **Network Mapping** (Mapowanie sieci) przedstawiciel firmy Contoso określa sieć, w której ma zostać nawiązane połączenie z maszyną wirtualną modułu zbierającego. Sieć musi mieć połączenie z Internetem w celu wysyłania metadanych do platformy Azure.
 
-6. Firma Contoso przegląda ustawienia, a następnie wybiera pozycję **Włącz po** > **zakończeniu**wdrażania. Po utworzeniu urządzenia zostaje wyświetlony komunikat potwierdzający pomyślne zakończenie operacji.
+6. Firma Contoso przegląda ustawienia, a następnie wybiera pozycję **Włącz po**  >  **zakończeniu**wdrażania. Po utworzeniu urządzenia zostaje wyświetlony komunikat potwierdzający pomyślne zakończenie operacji.
 
 ### <a name="run-the-collector-to-discover-vms"></a>Uruchamianie modułu zbierającego w celu odnalezienia maszyn wirtualnych
 
@@ -316,7 +318,7 @@ Teraz przedstawiciel firmy Contoso uruchamia moduł zbierający w celu odnalezie
 
     ![Konsola klienta vSphere — skrót do modułu zbierającego](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-shortcut-v2.png)
 
-3. W usłudze Azure Migrate Collector przedstawiciel firmy Contoso wybiera pozycję **Skonfiguruj wymagania wstępne**. Przedstawiciel firmy Contoso akceptuje postanowienia licencyjne i zapoznaje się z informacjami innych firm.
+3. W Azure Migrate Collector firma Contoso wybiera **Ustawienia wstępne**. Przedstawiciel firmy Contoso akceptuje postanowienia licencyjne i zapoznaje się z informacjami innych firm.
 
 4. Moduł zbierający sprawdza, czy maszyna wirtualna ma dostęp do Internetu, czy jest zsynchronizowany czas oraz czy jest uruchomiona usługa modułu zbierającego. (Usługa modułu zbierającego jest instalowana domyślnie na maszynie wirtualnej). Firma Contoso instaluje również zestaw SDK tworzenia dysków wirtualnych VMware vSphere.
 
@@ -341,7 +343,7 @@ Teraz przedstawiciel firmy Contoso uruchamia moduł zbierający w celu odnalezie
 
 Po zakończeniu zbierania przedstawiciel firmy Contoso sprawdza, czy maszyny wirtualne są widoczne w portalu:
 
-1. W projekcie Azure Migrate contoso wybiera **serwery** > **odnalezione**serwerów. Przedstawiciel firmy Contoso sprawdza, czy są widoczne maszyny wirtualne, które powinny zostać odnalezione.
+1. W projekcie Azure Migrate contoso wybiera **serwery**  >  **odnalezione**serwerów. Przedstawiciel firmy Contoso sprawdza, czy są widoczne maszyny wirtualne, które powinny zostać odnalezione.
 
     ![Azure Migrate — odnalezione maszyny](../migrate/azure-best-practices/media/contoso-migration-assessment/discovery-complete.png)
 
@@ -466,7 +468,7 @@ Przedstawiciel firmy Contoso może teraz sprawdzić zależności maszyny i utwor
 
     ![Azure Migrate — tworzenie oceny](../migrate/azure-best-practices/media/contoso-migration-assessment/run-vm-assessment.png)
 
-2. Aby wyświetlić ocenę, firma Contoso wybiera pozycję **Zarządzaj** > **ocenami**.
+2. Aby wyświetlić ocenę, firma Contoso wybiera pozycję **Zarządzaj**  >  **ocenami**.
 
 Przedstawiciel firmy Contoso korzysta z domyślnych ustawień oceny, ale możesz [je dostosować](https://docs.microsoft.com/azure/migrate/how-to-modify-assessment).
 
@@ -484,16 +486,16 @@ Ocena zaufania jest reprezentowana przez gwiazdki (od 1 do 5). 1 gwiazdka to oce
 
 - Ocena zaufania jest przypisana do oceny na podstawie dostępności punktów danych potrzebnych do obliczenia oceny.
 - Pomaga to oszacować niezawodność zaleceń dotyczących rozmiarów udostępnianych przez usługę Azure Migrate.
-- Ocena zaufania jest przydatna podczas ustalania *rozmiaru na podstawie wydajności*. Usługa Azure Migrate może nie dysponować wystarczającą liczbą punktów danych, aby móc ustalić rozmiar na podstawie użycia. W przypadku ustalania rozmiaru *jako lokalnego* ocena zaufania to zawsze 5 gwiazdek, ponieważ usługa Azure Migrate ma wszystkie punkty danych, których potrzebuje do ustalenia rozmiaru maszyny wirtualnej.
+- Ocena zaufania jest przydatna podczas ustalania _rozmiaru na podstawie wydajności_. Usługa Azure Migrate może nie dysponować wystarczającą liczbą punktów danych, aby móc ustalić rozmiar na podstawie użycia. W przypadku ustalania rozmiaru _jako lokalnego_ ocena zaufania to zawsze 5 gwiazdek, ponieważ usługa Azure Migrate ma wszystkie punkty danych, których potrzebuje do ustalenia rozmiaru maszyny wirtualnej.
 - W zależności od wartości procentowej dostępnych punktów danych ocenę zaufania dla oceny określa:
 
-   Dostępność punktów danych | Ocena zaufania
-   --- | ---
-   0%–20% | 1 gwiazdka
-   21%–40% | 2 gwiazdki
-   41%–60% | 3 gwiazdki
-   61%–80% | 4 gwiazdki
-   81%–100% | 5 gwiazdek
+   | Dostępność punktów danych | Ocena zaufania |
+   | --- | --- |
+   | 0%–20% | 1 gwiazdka |
+   | 21%–40% | 2 gwiazdki |
+   | 41%–60% | 3 gwiazdki |
+   | 61%–80% | 4 gwiazdki |
+   | 81%–100% | 5 gwiazdek |
 
 #### <a name="verify-azure-readiness"></a>Sprawdzanie gotowości na platformę Azure
 
@@ -507,12 +509,12 @@ Raport z oceny zawiera podsumowane informacje w tabeli. Do wyświetlenia treści
 
 <!-- markdownlint-disable MD033 -->
 
-Ustawienie | Wskazanie | Szczegóły
---- | --- | ---
-**Gotowość maszyny wirtualnej platformy Azure** | Wskazuje, czy maszyna wirtualna jest gotowa do migracji. | Możliwe stany:<br/><br/>– Gotowa na platformę Azure<br/><br/>– Gotowa warunkowo <br/><br/>– Niegotowa na platformę Azure<br/><br/>– Nieznana gotowość<br/><br/> Jeśli maszyna wirtualna nie jest gotowa, w usłudze Azure Migrate są wyświetlane instrukcje rozwiązania tego problemu.
-**Rozmiar maszyny wirtualnej platformy Azure** | W przypadku gotowych maszyn wirtualnych w usłudze Azure Migrate są udostępniane zalecenia dotyczące rozmiaru maszyny wirtualnej platformy Azure. | Zalecenia te zależą od właściwości oceny:<br/><br/>– Jeśli wybrano opcję ustalania rozmiaru na podstawie wydajności, uwzględniana jest historia wydajności maszyn wirtualnych.<br/><br/>– Jeśli wybrano opcję *jak lokalne*, rozmiar jest ustalany na podstawie rozmiaru lokalnej maszyny wirtualnej, a dane dotyczące użycia nie są uwzględniane.
-**Sugerowane narzędzie** | Ponieważ na maszynach platformy Azure działają agenci, usługa Azure Migrate sprawdza procesy uruchomione na konkretnej maszynie. Dzięki temu wiadomo, czy dana maszyna jest maszyną bazy danych.
-**Informacje o maszynie wirtualnej** | Raport zawiera ustawienia lokalnej maszyny wirtualnej, w tym system operacyjny, typ rozruchu oraz informacje o dysku i magazynie.
+| Ustawienie | Wskazanie | Szczegóły |
+| --- | --- | --- |
+| **Gotowość maszyny wirtualnej platformy Azure** | Wskazuje, czy maszyna wirtualna jest gotowa do migracji. | Możliwe stany: <li> Gotowa na platformę Azure <li> Gotowe warunki <li> Niegotowa na platformę Azure <li> Nieznana gotowość <br><br> Jeśli maszyna wirtualna nie jest gotowa, w usłudze Azure Migrate są wyświetlane instrukcje rozwiązania tego problemu. |
+| **Rozmiar maszyny wirtualnej platformy Azure** | W przypadku gotowych maszyn wirtualnych w usłudze Azure Migrate są udostępniane zalecenia dotyczące rozmiaru maszyny wirtualnej platformy Azure. | Zalecenia te zależą od właściwości oceny: <li> W przypadku użycia ustalania wielkości na podstawie wydajności, ustalanie rozmiarów uwzględnia historię wydajności maszyn wirtualnych. <li> Jeśli używasz _jako lokalnego_, rozmiar jest określany na podstawie rozmiaru i użycia lokalnej maszyny wirtualnej. <li> Dane nie są używane. |
+| **Sugerowane narzędzie** | Ponieważ na maszynach platformy Azure działają agenci, usługa Azure Migrate sprawdza procesy uruchomione na konkretnej maszynie. Dzięki temu wiadomo, czy dana maszyna jest maszyną bazy danych. | |
+| **Informacje o maszynie wirtualnej** | Raport zawiera ustawienia lokalnej maszyny wirtualnej, w tym system operacyjny, typ rozruchu oraz informacje o dysku i magazynie. | |
 
 <!-- markdownlint-enable MD033 -->
 

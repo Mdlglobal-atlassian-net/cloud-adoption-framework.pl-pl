@@ -1,6 +1,6 @@
 ---
 title: Procesy zgodności zasad linii bazowej tożsamości
-description: Skorzystaj z platformy wdrażania w chmurze dla platformy Azure, aby poznać podejście do tworzenia procesów, które obsługują dyscyplinę ładu planu bazowego tożsamości.
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby poznać podejście do tworzenia procesów, które obsługują dyscyplinę bazową tożsamości.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 75f85ef971bdf96fe14f1ddc72462edafbfd8473
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0837950a32a57fba595166c1b78c18aea0385417
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433085"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214467"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Procesy zgodności zasad linii bazowej tożsamości
 
-W tym artykule omówiono podejście do przestrzegania zasad, które regulują [podstawową tożsamość](./index.md). Skuteczne zarządzanie tożsamościami rozpoczyna się od powtarzalnych ręcznych procesów, które są pomocne podczas wdrażania zasad dotyczących tożsamości i poprawek. Wymaga to regularnego zaangażowania zespołu nadzoru chmurowego i zainteresowanej firmy oraz udziałowców IT do przeglądania i aktualizowania zasad oraz zapewnienia zgodności z zasadami. Ponadto wiele procesów monitorowania i wymuszania można zautomatyzować lub uzupełnić narzędziem, aby zmniejszyć koszty zarządzania i umożliwić szybsze reagowanie na odchylenia zasad.
+W tym artykule omówiono podejście do przystosowanej do zasad procesów, które regulują [dyscyplinę bazową tożsamości](./index.md). Skuteczne zarządzanie tożsamościami rozpoczyna się od powtarzalnych ręcznych procesów, które są pomocne podczas wdrażania zasad dotyczących tożsamości i poprawek. Wymaga to regularnego zaangażowania zespołu nadzoru chmurowego i zainteresowanej firmy oraz udziałowców IT do przeglądania i aktualizowania zasad oraz zapewnienia zgodności z zasadami. Ponadto wiele procesów monitorowania i wymuszania można zautomatyzować lub uzupełnić narzędziem, aby zmniejszyć koszty zarządzania i umożliwić szybsze reagowanie na odchylenia zasad.
 
 ## <a name="planning-review-and-reporting-processes"></a>Planowanie, przeglądanie i raportowanie procesów
 
@@ -41,7 +41,7 @@ Ten proces planowania jest również dobrym terminem do oszacowania bieżącego 
 
 ## <a name="processes-for-ongoing-monitoring"></a>Procesy do ciągłego monitorowania
 
-Ustalanie, czy strategia zarządzania tożsamościami jest pomyślna, zależy od widoczności bieżącego i wcześniejszego stanu systemów tożsamości. Bez możliwości analizowania odpowiednich metryk i danych związanych z wdrożeniem w chmurze nie można identyfikować zmian ryzyka ani wykrywać naruszeń tolerancji ryzyka. Bieżące procesy ładu omówione powyżej wymagają danych dotyczących jakości, aby zapewnić możliwość modyfikacji zasad w celu obsługi zmieniających się potrzeb firmy.
+Pomyślna strategia odniesienia tożsamości zależy od widoczności bieżącego i wcześniejszego stanu systemów tożsamości. Bez możliwości analizowania odpowiednich metryk i danych związanych z wdrożeniem w chmurze nie można identyfikować zmian ryzyka ani wykrywać naruszeń tolerancji ryzyka. Bieżące procesy ładu omówione powyżej wymagają danych dotyczących jakości, aby zapewnić możliwość modyfikacji zasad w celu obsługi zmieniających się potrzeb firmy.
 
 Upewnij się, że zespoły IT zaimplementowali zautomatyzowane systemy monitorowania dla usług tożsamości, które przechwytują dzienniki i informacje inspekcji potrzebne do oszacowania ryzyka. Można aktywnie monitorować te systemy w celu zapewnienia wykrywania monitów i łagodzenia potencjalnych naruszeń zasad oraz upewnić się, że wszelkie zmiany infrastruktury tożsamości są odzwierciedlone w strategii monitorowania.
 
@@ -57,7 +57,7 @@ Następujące wyzwalacze i akcje wymuszania zawierają przykłady, które można
 
 ## <a name="next-steps"></a>Następne kroki
 
-Za pomocą [szablonu zarządzania chmurą](./template.md)można udokumentować procesy i wyzwalacze, które są wyrównane do bieżącego planu wdrożenia chmury.
+Za pomocą [szablonu dyscypliny linii bazowej tożsamości](./template.md) można udokumentować procesy i wyzwalacze, które są wyrównane do bieżącego planu wdrożenia chmury.
 
 Aby uzyskać wskazówki dotyczące wykonywania zasad zarządzania chmurą w wyrównaniu z planami wdrażania, zapoznaj się z artykułem dotyczącym ulepszania dyscypliny.
 
