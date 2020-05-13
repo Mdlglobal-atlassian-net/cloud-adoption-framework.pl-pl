@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9647ec56145d54537541ee70bbdb2280c9cae2ac
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 126699d4d5e8d69f230047f16654d5ccb635a8e2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426811"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216728"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Spis i widoczność na platformie Azure
 
@@ -26,16 +26,16 @@ To najważniejsza dyscyplina, ponieważ zebranie odpowiednich danych operacyjnyc
 
 Poniższa tabela zawiera sugerowane wartości minimalne planu bazowego zarządzania dla dowolnego środowiska klasy korporacyjnej.
 
-|Proces  |Narzędzie  |Przeznaczenie  |
-|---------|---------|---------|
-|Monitorowanie kondycji usług platformy Azure|Azure Service Health|Monitorowanie kondycji i wydajności oraz diagnostyka usług działających na platformie Azure|
-|Scentralizowane dzienniki|Log Analytics|Centralne rejestrowanie dla wszystkich celów związanych z widocznością|
-|Scentralizowane monitorowanie|Azure Monitor|Centralne monitorowanie danych operacyjnych i trendów|
-|Śledzenie zmian i spisu maszyn wirtualnych|Azure Change Tracking and Inventory|Tworzenie spisu maszyn wirtualnych i monitorowanie zmian na poziomie systemu operacyjnego gościa|
-|Monitorowanie subskrypcji|Dziennik aktywności platformy Azure|Monitorowanie zmian na poziomie subskrypcji|
-|Monitorowanie systemu operacyjnego gościa|Usługa Azure Monitor dla maszyn wirtualnych|Monitorowanie zmian i wydajności maszyn wirtualnych|
-|Monitorowanie sieci|Azure Network Watcher|Monitorowanie zmian i wydajności sieci|
-|Monitorowanie systemu DNS|Analiza DNS|Zabezpieczenia, wydajność i operacje systemu DNS|
+| Proces | Narzędzie | Przeznaczenie |
+|---|---|---|
+| Monitorowanie kondycji usług platformy Azure | Azure Service Health | Monitorowanie kondycji i wydajności oraz diagnostyka usług działających na platformie Azure |
+| Scentralizowane dzienniki | Log Analytics | Centralne rejestrowanie dla wszystkich celów związanych z widocznością |
+| Scentralizowane monitorowanie | Azure Monitor | Centralne monitorowanie danych operacyjnych i trendów |
+| Śledzenie zmian i spisu maszyn wirtualnych | Azure Change Tracking and Inventory | Tworzenie spisu maszyn wirtualnych i monitorowanie zmian na poziomie systemu operacyjnego gościa |
+| Monitorowanie subskrypcji | Dziennik aktywności platformy Azure | Monitorowanie zmian na poziomie subskrypcji |
+| Monitorowanie systemu operacyjnego gościa | Usługa Azure Monitor dla maszyn wirtualnych | Monitorowanie zmian i wydajności maszyn wirtualnych |
+| Monitorowanie sieci | Azure Network Watcher | Monitorowanie zmian i wydajności sieci |
+| Monitorowanie systemu DNS | Analiza DNS | Zabezpieczenia, wydajność i operacje systemu DNS |
 
 ::: zone target="docs"
 

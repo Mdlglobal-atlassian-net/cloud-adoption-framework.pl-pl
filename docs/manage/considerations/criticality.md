@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0c3042469ff2c562ff84d173837685f73c9df933
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2230fe8d8ee2f2c7d5b9a695ec01268e3306bff9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426461"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217408"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Krytyczne znaczenie biznesowe w zarządzaniu chmurą
 
@@ -33,7 +33,7 @@ Pierwszym krokiem w celu wyrównania znaczenia dla działania firmy jest utworze
 | --------- | --------- |
 | Operacje krytyczne dla działalności firmy |  Wpływa na misja firmy i może w zauważalny sposób mieć wpływ na firmowe zestawienie zysków i strat. |
 | Jednostka — krytyczne | Ma wpływ na misja określonej jednostki biznesowej i jej zestawień zysków i strat. |
-| Wysoka | Może nie utrudniać misja, ale ma wpływ na procesy o wysokiej ważności. Wymierne straty mogą być wymierne w przypadku awarii. |
+| Wysoki | Może nie utrudniać misja, ale ma wpływ na procesy o wysokiej ważności. Wymierne straty mogą być wymierne w przypadku awarii. |
 | Medium | Prawdopodobnie ma to wpływ na procesy. Straty są niskie lub wymierne, ale przyczyną mogą być uszkodzenia marki lub straty w strumieniu. |
 | Małe | Wpływ na procesy biznesowe nie jest wymierny. Nie ma to żadnego uszkodzenia marki ani utraty strumienia. Prawdopodobnie zlokalizowany wpływ na pojedynczy zespół. |
 | Nieobsługiwane | Żaden właściciel firmy, zespół lub proces, który jest skojarzony z tym obciążeniem, może uzasadniać wszelką inwestycję w ciągłe zarządzanie obciążeniem. |
@@ -54,14 +54,14 @@ Ze względu na to, że istnieje jasne i bezpośrednie koszty zarządzania operac
 
 Początkowy przegląd wszystkich obciążeń w portfolio może być czasochłonny. Aby zapewnić, że to wysiłki nie zablokuje szerszej strategii chmurowej, zalecamy, aby Twoje zespoły zgadzali się z domyślną wartością krytyczną, która ma zastosowanie do wszystkich obciążeń.
 
-Zgodnie z poprzednią tabelą skalowania w poziomie o krytycznym znaczeniu zaleca się przyjęcie *średniego poziomu* krytycznego jako domyślnego. Dzięki temu zespół strategii chmury będzie mógł szybko identyfikować obciążenia, które wymagają wyższego poziomu zagrożenia.
+Zgodnie z poprzednią tabelą skalowania w poziomie o krytycznym znaczeniu zaleca się przyjęcie _średniego poziomu_ krytycznego jako domyślnego. Dzięki temu zespół strategii chmury będzie mógł szybko identyfikować obciążenia, które wymagają wyższego poziomu zagrożenia.
 
 ## <a name="use-the-template"></a>Korzystanie z szablonu
 
-Poniższe kroki są stosowane, jeśli używasz [skoroszytu zarządzania Ops](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) do planowania zarządzania chmurą.
+Poniższe kroki są stosowane, jeśli używasz [skoroszytu zarządzania operacjami](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) do planowania zarządzania chmurą.
 
 1. Zapisz skalę krytyczną na karcie **Skala** skoroszytu.
-2. Zaktualizuj każde obciążenie w ramach *przykładu* lub *czystego szablonu* , aby odzwierciedlić domyślną wartość krytyczną w kolumnie *krytyczne* .
+2. Zaktualizuj każde obciążenie w ramach _przykładu_ lub _czystego szablonu_ , aby odzwierciedlić domyślną wartość krytyczną w kolumnie _krytyczne_ .
 3. Firma powinna wprowadzić poprawne wartości, aby odzwierciedlić wszelkie odchylenia od domyślnej krytycznej.
 
 ## <a name="next-steps"></a>Następne kroki

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4d9638f123da72ec10f0f68f91a5daf69f727ba7
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 683340ce6247e33e78def4abf662dd63b65bf085
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425996"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217731"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Zasady linii bazowej zabezpieczeń w chmurze
 
-[Linia bazowa zabezpieczeń](./index.md) jest jednym z [pięciu dyscyplin zarządzania chmurą](../governance-disciplines.md). Ta dyscyplina koncentruje się na ogólnych tematach zabezpieczeń, w tym o ochronie sieci, zasobów cyfrowych i danych. Zgodnie z opisem w [przewodniku przegląd zasad](../policy-compliance/cloud-policy-review.md), struktura wdrażania chmury obejmuje trzy poziomy przykładowych zasad: natywne, korporacyjne i chmurowe, które są zgodne z zasadami dla każdej dyscypliny. W tym artykule omówiono przykładowe natywne zasady w chmurze dotyczące dyscypliny linii bazowej zabezpieczeń.
+[Dyscyplina odniesienia zabezpieczeń](./index.md) jest jednym z [pięciu dyscyplin zarządzania chmurą](../governance-disciplines.md). Ta dyscyplina koncentruje się na ogólnych tematach zabezpieczeń, w tym o ochronie sieci, zasobów cyfrowych i danych. Zgodnie z opisem w [przewodniku przegląd zasad](../policy-compliance/cloud-policy-review.md), struktura wdrażania chmury obejmuje trzy poziomy przykładowych zasad: natywne, korporacyjne i chmurowe, które są zgodne z zasadami dla każdej dyscypliny. W tym artykule omówiono przykładowe natywne zasady w chmurze dotyczące dyscypliny linii bazowej zabezpieczeń.
 
 > [!NOTE]
 > Firma Microsoft nie jest w stanie podyktować zasad firmowych ani INFORMATYCZNych. Ten artykuł pomoże Ci przygotować się do przeglądu zasad wewnętrznych. Przyjęto założenie, że te przykładowe zasady zostaną rozszerzone, zweryfikowane i przetestowane względem zasad korporacyjnych przed podjęciem próby jej użycia. Użycie tych przykładowych zasad jest niezalecane.
@@ -36,7 +36,7 @@ Trudno jest zachować silną infrastrukturę zabezpieczeń, gdy kontrola zabezpi
 
 ### <a name="cloud-native-identity-policies"></a>Natywne zasady tożsamości w chmurze
 
-Tożsamość staje się nową płaszczyzną kontroli granic dla bezpieczeństwa, przyjmując tę rolę z tradycyjnego ukierunkowanej na sieć. Obwody sieci stają się coraz bardziej porowate i ochrona obwodowa nie może być skuteczna, ponieważ była przed pojawieniuem urządzeń (BYOD) i aplikacjami w chmurze. Usługa Azure Identity Management i kontrola dostępu umożliwiają bezproblemowe i bezpieczny dostęp do wszystkich aplikacji.
+Tożsamość staje się nową płaszczyzną kontroli granic dla bezpieczeństwa, przyjmując tę rolę z tradycyjnego ukierunkowanej na sieć. Obwody sieci stają się coraz bardziej porowate i ochrona obwodowa nie może być efektywna, ponieważ była przed pojawieniuem w aplikacjach do przynoszenia własnych urządzeń (BYOD) i aplikacji w chmurze. Usługa Azure Identity Management i kontrola dostępu umożliwiają bezproblemowe i bezpieczny dostęp do wszystkich aplikacji.
 
 Przykładowe zasady natywne w chmurze dotyczące tożsamości w katalogach w chmurze i lokalnych mogą obejmować wymagania podobne do następujących:
 
@@ -45,7 +45,7 @@ Przykładowe zasady natywne w chmurze dotyczące tożsamości w katalogach w chm
 - Just-in-Time (JIT), przyznany dostęp do poszczególnych zadań, aby ograniczyć narażenie na uprzywilejowane poświadczenia administratora.
 - Rozszerzona tożsamość użytkownika i dostęp do zasad w wielu środowiskach za pośrednictwem Azure Active Directory.
 
-Chociaż ważne jest zrozumienie [linii bazowej tożsamości](../identity-baseline/index.md) w kontekście linii bazowej zabezpieczeń, [pięć dyscyplin nadzoru chmurowego](../index.md) wywołuje [linię bazową tożsamości](../identity-baseline/index.md) jako własną dyscyplinę, niezależnie od linii bazowej zabezpieczeń.
+Chociaż ważne jest, aby zrozumieć [dyscyplinę bazową tożsamości](../identity-baseline/index.md) w kontekście dyscypliny odniesienia zabezpieczeń, [pięć dyscyplin nadzoru chmurowego](../index.md) traktuje je jako odrębne dyscypliny.
 
 ### <a name="network-access-policies"></a>Zasady dostępu do sieci
 
@@ -55,8 +55,8 @@ Zasady natywne w chmurze dla kontrolek sieci mogą obejmować wymagania podobne 
 
 - Połączenia hybrydowe z zasobami lokalnymi mogą nie być dozwolone w zasadach natywnych w chmurze. W przypadku niepotrzebnego połączenia hybrydowego przykładem bardziej niezawodnej Zasady zabezpieczeń przedsiębiorstwa będzie bardziej odpowiednie odwołanie.
 - Użytkownicy mogą nawiązywać bezpieczne połączenia z platformą Azure i na nim przy użyciu sieci wirtualnych i sieciowych grup zabezpieczeń.
-- Natywna Zapora systemu Windows Azure chroni hosty przed złośliwym ruchem sieciowym przez ograniczony dostęp do portów. Dobrym przykładem tych zasad jest wymóg blokowania ruchu (lub nie włączania) bezpośrednio do maszyny wirtualnej za pośrednictwem protokołu SSH/RDP.
-- Usługi, takie jak usługa Azure Application Gateway Web Application Firewall (WAF) i Azure DDoS Protection zabezpieczenia aplikacji i zapewniają dostępność dla maszyn wirtualnych działających na platformie Azure. Tych funkcji nie należy wyłączać.
+- Natywna Zapora systemu Windows Azure chroni hosty przed złośliwym ruchem sieciowym przez ograniczenie dostępu do portu. Dobrym przykładem tych zasad jest wymóg blokowania lub niewłączania ruchu bezpośrednio do maszyny wirtualnej za pośrednictwem protokołu SSH/RDP.
+- Usługi, takie jak Zapora aplikacji sieci Web platformy Azure (WAF) na platformie Azure Application Gateway i ochrona za pomocą usługi Azure DDoS Protection i zapewniają dostępność dla maszyn wirtualnych działających na platformie Azure. Tych funkcji nie należy wyłączać.
 
 ### <a name="data-protection"></a>Ochrona danych
 
@@ -79,7 +79,7 @@ Monitorowanie zabezpieczeń jest aktywną strategią, która przeprowadza inspek
 - Obszerne rejestrowanie i integracja z istniejącymi informacjami o zabezpieczeniach.
 - Zmniejsza potrzebę korzystania z kosztownych, niezintegrowanych rozwiązań z zakresu zabezpieczeń.
 
-### <a name="extending-cloud-native-policies"></a>Rozszerzanie zasad natywnych w chmurze
+### <a name="extend-cloud-native-policies"></a>Rozwiń zasady natywne w chmurze
 
 Korzystanie z chmury może obniżyć część obciążeń związanych z zabezpieczeniami. Firma Microsoft zapewnia fizyczne zabezpieczenia centrów danych platformy Azure i pomaga chronić platformę w chmurze przed zagrożeniami związanymi z infrastrukturą, takimi jak atak DDoS. Z uwagi na to, że firma Microsoft ma tysiące specjalistów cyberbezpieczeństwa pracujących nad bezpieczeństwem codziennie, zasoby wykrywające, zapobiegające lub zmniejszają cyberattacks są istotne. W rzeczywistości organizacje używane do obaw o to, czy chmura była zabezpieczona, a teraz wiedzą, że poziom inwestycji w osoby i wyspecjalizowane infrastruktury podejmowane przez dostawców, takich jak firma Microsoft, ułatwiają bezpieczniejsze korzystanie z chmury niż większość lokalnych centrów danych.
 Korzystanie z chmury może obniżyć część obciążeń związanych z zabezpieczeniami. Firma Microsoft zapewnia fizyczne zabezpieczenia centrów danych platformy Azure i pomaga chronić platformę w chmurze przed zagrożeniami związanymi z infrastrukturą, takimi jak atak DDoS. Z uwagi na to, że firma Microsoft ma tysiące specjalistów cyberbezpieczeństwa pracujących nad bezpieczeństwem codziennie, zasoby wykrywające, zapobiegające lub zmniejszają cyberattacks są istotne. W rzeczywistości organizacje używane do obaw o to, czy chmura była zabezpieczona, a teraz wiedzą, że poziom inwestycji w osoby i wyspecjalizowane infrastruktury podejmowane przez dostawców, takich jak firma Microsoft, ułatwiają bezpieczniejsze korzystanie z chmury niż większość lokalnych centrów danych.

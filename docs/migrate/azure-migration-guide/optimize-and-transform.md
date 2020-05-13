@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8ac8887f849704610822429a2b5e49833a78487c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 17ba2d635e702faedec3c3441c5171c88d8fc59e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119725"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217136"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
@@ -130,6 +130,6 @@ Możesz również użyć narzędzia **Advisor** i wybrać kartę **Koszty**, aby
 
 - [Samouczek: Optymalizowanie kosztów na podstawie zaleceń](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [Zapobieganie nieoczekiwanym opłatom za pomocą funkcji rozliczeń i zarządzania kosztami platformy Azure](https://docs.microsoft.com/azure/billing/billing-getting-started)
-- [Eksplorowanie kosztów za pomocą funkcji analizy kosztów](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
+- [Poznawanie i analizowanie kosztów za pomocą analizy kosztów](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end

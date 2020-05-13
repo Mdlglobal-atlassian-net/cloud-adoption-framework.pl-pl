@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ff04f94c8f6dbf023f706ac3c66778fdc89c3437
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 71670c0a885d5ec2aef8dcf5a11d944021c3ae5e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80998068"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217187"
 ---
 # <a name="azure-regions"></a>Regiony świadczenia usługi Azure
 
@@ -24,7 +24,7 @@ Platforma Azure składa się z wielu regionów na całym świecie. Każdy [regio
 1. **Ograniczenia:** Niektóre ograniczenia są wprowadzane do wdrożenia usług w określonych regionach. Na przykład niektóre regiony są dostępne tylko jako miejsce docelowe kopii zapasowej lub pracy w trybie failover. Inne istotne ograniczenia to [wymagania dotyczące niezależności danych](https://azure.microsoft.com/global-infrastructure/geographies).
 1. **Suwerenność:** Niektóre regiony są przeznaczone dla konkretnych suwerennych jednostek. Wszystkie regiony są regionami platformy Azure, ale te niezależne regiony są całkowicie odizolowane od reszty platformy Azure, nie muszą być zarządzane przez firmę Microsoft i mogą być ograniczone do określonych typów klientów. Te niezależne regiony są następujące:
     1. [Chiny platformy Azure](https://azure.microsoft.com/global-infrastructure/china)
-    1. [Niemiecka wersja platformy Azure](https://azure.microsoft.com/global-infrastructure/germany) (wycofywana i zastępowana standardowymi suwerennymi regionami platformy Azure w Niemczech)
+    1. [Azure (Niemcy](https://azure.microsoft.com/global-infrastructure/germany)): przestarzałe na rzecz standardowych regionów świadczenia usługi Azure w Niemczech
     1. [Platforma Azure dla instytucji rządowych](https://azure.microsoft.com/global-infrastructure/government)
     1. Uwaga: w [Australii](https://azure.microsoft.com/global-infrastructure/australia) firma Microsoft zarządza dwoma regionami, ale są one udostępniane dla instytucji rządowych Australii oraz jej klientów i wykonawców, w związku z czym obowiązują w nich podobne ograniczenia klienta co w przypadku innych chmur suwerennych.
 
@@ -43,7 +43,7 @@ Wraz z uzyskiwaniem informacji dotyczących złożonych kwestii, zaczniesz rozum
 
 Każde niezawodne wdrożenie w chmurze wymaga dobrze przemyślanej sieci, która uwzględnia regiony platformy Azure. Po uwzględnieniu powyższych cech względem regionów, w których ma zostać przeprowadzone wdrożenie, należy wdrożyć sieć. Wyczerpujące omówienie sieci wykracza poza zakres tego artykułu, jednak należy uwzględnić pewne kwestie:
 
-- Regiony platformy Azure są wdrażane w parach. W przypadku katastrofalnej awarii regionu inny region w ramach tych samych granic geopolitycznych* jest wyznaczany jako jego sparowany region. Wdrażanie w sparowanych regionach powinno być rozumiane jako podstawowa i pomocnicza strategia odporności. *Region Azure (Brazylia) to istotny wyjątek, którego sparowany region to Południowo-środkowe stany USA. Aby dowiedzieć się więcej, zobacz [Sparowane regiony platformy Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+- Regiony platformy Azure są wdrażane w parach. W przypadku katastrofalnej awarii regionu inny region w ramach tej samej granicy geopolitycznej jest wyznaczony jako jego sparowany region. Wdrażanie w sparowanych regionach powinno być rozumiane jako podstawowa i pomocnicza strategia odporności. Brazylia platformy Azure to istotny wyjątek, którego sparowany region ma być Południowo-środkowe stany USA. Aby uzyskać więcej informacji, zobacz [regiony sparowane na platformie Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
 
   - Usługa Azure Storage obsługuje [magazyn geograficznie nadmiarowy (GRS, Geographically Redundant Storage)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs), co oznacza, że trzy kopie danych są przechowywane w regionie podstawowym, a trzy dodatkowe kopie są przechowywane w sparowanym regionie. Nie można zmienić parowania w przypadku magazynu geograficznie nadmiarowego.
   - Usługi oparte na magazynie geograficznie nadmiarowym usługi Azure Storage mogą korzystać z tej możliwości sparowanego regionu. W tym celu aplikacje i sieci muszą być ukierunkowane na obsługę tej możliwości.
@@ -82,13 +82,13 @@ Poniższa tabela może pomóc w dokumentowaniu wyników opisanych powyżej czynn
 | Region        | Kraj     | Pracownicy lokalni | Lokalni użytkownicy zewnętrzni   | Centra danych lub zasoby lokalne | Wymagania dotyczące niezależności danych |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
 | Ameryka Północna | Stany Zjednoczone         | Yes             | Partnerzy i klienci | Yes                         | Nie                            |
-| Ameryka Północna | Kanada      | Nie              | Klienci              | Yes                         | Yes                           |
+| Ameryka Północna | Kanada      | Nie              | Klienci              | Tak                         | Yes                           |
 | Europa        | Niemcy     | Yes             | Partnerzy i klienci | Nie — tylko sieć           | Yes                           |
-| Azja i Pacyfik  | Korea Południowa | Yes             | Partnerzy               | Tak                         | Nie                            |
+| Azja i Pacyfik  | Korea Południowa | Yes             | Partnerzy               | Yes                         | Nie                            |
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="data-sovereignty-relevancy"></a>Znaczenie niezależności danych
+## <a name="relevance-of-data-sovereignty"></a>Znaczenie dla suwerenności danych
 
 Na całym świecie organizacje rządowe rozpoczęły ustanawianie wymagań dotyczących niezależności danych, takich jak Ogólne rozporządzenie o ochronie danych (RODO). Wymagania dotyczące zgodności tego rodzaju często wymagają lokalizacji w określonym regionie, a nawet w określonym kraju, aby chronić swoich obywateli. W niektórych przypadkach dane dotyczące klientów, pracowników lub partnerów muszą być przechowywane na platformie chmury w tym samym regionie, w którym znajduje się użytkownik końcowy.
 

@@ -7,13 +7,15 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f8ced104862d27c01c2d63ecbcb4af15deded343
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 00efe3b582b5850ff7a5c6c1a6ab16977c6ada4d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434003"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216898"
 ---
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
+
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan wdrażania chmury i usługa Azure DevOps
 
 Azure DevOps to zestaw narzędzi opartych na chmurze dla klientów platformy Azure, którzy zarządzają projektami iteracyjnymi. Zawiera także narzędzia do zarządzania potokumi wdrażania i innymi ważnymi aspektami DevOps.
@@ -32,19 +34,19 @@ Aby wdrożyć plan wdrażania chmury, Otwórz [Generator demonstracji usługi Az
 
 Po utworzeniu projektu przejdź do tej serii artykułów, aby dowiedzieć się, jak zmodyfikować szablon w celu dostosowania go do planu wdrożenia w chmurze.
 
-Aby uzyskać dodatkową pomoc techniczną i wskazówki dotyczące tego narzędzia, zobacz [Azure DevOps Services Generator demonstracji](https://docs.microsoft.com/azure/devops/demo-gen/?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops).
+Aby uzyskać dodatkową pomoc techniczną i wskazówki dotyczące tego narzędzia, zobacz [Azure DevOps Services Generator demonstracji](https://docs.microsoft.com/azure/devops/demo-gen).
 
 ## <a name="bulk-edit-the-cloud-adoption-plan"></a>Edytuj zbiorczo plan wdrażania chmury
 
-Po wdrożeniu projektu planu można go zmodyfikować przy użyciu programu Microsoft Excel. Znacznie łatwiej jest tworzyć nowe obciążenia lub zasoby w planie przy użyciu programu Excel, niż przy użyciu środowiska przeglądarki Azure DevOps.
+Po wdrożeniu projektu planu można go zmodyfikować przy użyciu programu Microsoft Excel. Znacznie łatwiej jest tworzyć nowe obciążenia lub zasoby w planie przy użyciu programu Microsoft Excel niż przy użyciu środowiska przeglądarki Azure DevOps.
 
-Aby przygotować stację roboczą do edycji zbiorczej, zobacz [zbiorcze Dodawanie lub modyfikowanie elementów roboczych za pomocą programu Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Aby przygotować stację roboczą do edycji zbiorczej, zobacz [zbiorcze Dodawanie lub modyfikowanie elementów roboczych za pomocą programu Microsoft Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 ## <a name="use-the-cloud-adoption-plan"></a>Korzystanie z planu wdrażania chmury
 
 Plan wdrażania chmury organizuje działania według typu działania:
 
-- **Epiki:** *Epiku* reprezentuje ogólną fazę cyklu wdrożenia chmury.
+- **Epiki:** _Epiku_ reprezentuje ogólną fazę cyklu wdrożenia chmury.
 - **Funkcje:** Funkcje służą do organizowania określonych celów w każdej fazie. Na przykład migracja określonego obciążenia będzie jedną funkcją.
 - **Historie użytkownika:** Grupa historie użytkownika działa w logicznych kolekcjach działań na podstawie określonego celu.
 - **Zadania:** Zadania są rzeczywistą czynnością do wykonania.
@@ -58,11 +60,11 @@ Najwyraźniejszy widok planu wdrażania w chmurze pochodzi z widoku zaległości
 
 ## <a name="align-the-cloud-adoption-plan"></a>Dopasuj plan wdrażania chmury
 
-Na stronach przeglądu faz strategii i planowania cyklu życia wdrożenia chmury każdy odwołuje się do [strategii i szablonu planowania struktury wdrażania w chmurze](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Ten szablon organizuje decyzje i punkty danych, które będą wyrównać szablon planu wdrożenia chmury przy użyciu określonych planów na potrzeby wdrażania. Jeśli jeszcze tego nie zrobiono, warto wykonać ćwiczenia związane z [strategią](../strategy/index.md) i [planowaniem](../plan/index.md) przed wyrównaniem nowego projektu.
+Na stronach przeglądu dotyczącej strategii i planowania cyklu życia wdrożenia chmury każdy odwołuje się do [strategii i szablonu planu wdrożenia w chmurze](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Ten szablon organizuje decyzje i punkty danych, które będą wyrównać szablon planu wdrożenia chmury przy użyciu określonych planów na potrzeby wdrażania. Jeśli jeszcze tego nie zrobiono, warto wykonać ćwiczenia związane z [strategią](../strategy/index.md) i [planowaniem](../plan/index.md) przed wyrównaniem nowego projektu.
 
 Poniższe artykuły obsługują wyrównania planu wdrażania chmury:
 
-- [Obciążenia](./workloads.md): Wyrównaj funkcje w migracja do chmury epiku, aby przechwytywać każde obciążenie, które ma zostać zmigrowane lub zmodernizowane. Dodawanie i modyfikowanie tych funkcji w celu przechwycenia nakładu pracy w celu przeprowadzenia migracji 10 najważniejszych obciążeń.
+- [Obciążenia](./workloads.md): Wyrównaj funkcje epiku migracji do chmury, aby przechwycić każde obciążenie, które ma zostać zmigrowane lub zmodernizowane. Dodawanie i modyfikowanie tych funkcji w celu przechwycenia nakładu pracy w celu przeprowadzenia migracji 10 najważniejszych obciążeń.
 - [Zasoby](./assets.md): każdy zasób (maszyna wirtualna, aplikacja lub dane) jest reprezentowany przez scenariusze użytkownika w poszczególnych obciążeniach. Dodaj i zmodyfikuj te historie użytkownika, aby dostosować je do swoich cyfr.
 - [Racjonalizacja](./review-rationalization.md): w miarę definiowania każdego obciążenia można zakwestionować początkowe założenia dotyczące tego obciążenia. Może to spowodować wprowadzenie zmian w zadaniach w ramach każdego elementu zawartości.
 - [Tworzenie planów wydania](./iteration-paths.md): ścieżki iteracji ustanawiają plany wydania przez dostosowanie wysiłków do różnych wersji i iteracji.

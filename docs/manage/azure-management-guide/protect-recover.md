@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f4b6b2d5d944e3176b2f36ef713955a4c29324f9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 67145b6c5da9c7da740771acfea38ba97e6f8a9c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426572"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217459"
 ---
 <!-- cSpell:ignore siterecovery -->
 
@@ -28,10 +28,10 @@ W artykule [Zgodność operacyjna na platformie Azure](./operational-compliance.
 
 Ta tabela zawiera sugerowane wartości minimalne planu bazowego zarządzania dla dowolnego środowiska klasy korporacyjnej:
 
-|Proces  |Narzędzie  |Przeznaczenie  |
-|---------|---------|---------|
-|Ochrona danych|Azure Backup|Tworzenie kopii zapasowych danych i maszyn wirtualnych w chmurze.|
-|Ochrona środowiska|Azure Security Center|Wzmocnienie bezpieczeństwa i zapewnienie zaawansowanej ochrony przed zagrożeniami w ramach obciążeń hybrydowych.|
+| Proces                 | Narzędzie                  | Przeznaczenie                                                                                  |
+| ----------------------- | --------------------- | ---------------------------------------------------------------------------------------- |
+| Ochrona danych            | Azure Backup          | Tworzenie kopii zapasowych danych i maszyn wirtualnych w chmurze.                                          |
+| Ochrona środowiska | Azure Security Center | Wzmocnienie bezpieczeństwa i zapewnienie zaawansowanej ochrony przed zagrożeniami w ramach obciążeń hybrydowych. |
 
 ::: zone target="docs"
 
@@ -64,7 +64,7 @@ Usługa Azure Backup umożliwia tworzenie kopii zapasowej, ochronę i odzyskiwan
 
 ::: zone target="docs"
 
-[Omówienie](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)
+[Omówienie](https://docs.microsoft.com/azure/backup/backup-overview)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 

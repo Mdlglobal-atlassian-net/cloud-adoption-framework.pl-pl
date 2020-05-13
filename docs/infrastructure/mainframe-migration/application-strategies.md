@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e0823eef01a2966459a10293c25d877b1c732c64
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a4b66a43cdf3524b23c109cdc5fa4e965c6e01f4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425809"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217663"
 ---
-<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
+<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX TIP dbextents Raincode Tmax -->
 
 # <a name="mainframe-application-migration"></a>Migracja aplikacji komputerów mainframe
 
@@ -106,7 +106,7 @@ Używanych
 
 ### <a name="monitoring"></a>Monitorowanie
 
-- Korzystaj z narzędzi do monitorowania, [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview), a nawet Dzienniki systemu Azure umożliwiają administratorom monitorowanie dowolnej wydajności przebiegów wsadowych i eliminowanie wąskich gardeł.
+- Narzędzia do monitorowania, [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview)i dzienniki platformy Azure umożliwiają administratorom monitorowanie dowolnej wydajności przebiegów wsadowych i eliminowanie wąskich gardeł.
 
 ## <a name="migrate-development-environments"></a>Migruj środowiska deweloperskie
 
@@ -164,7 +164,7 @@ Na poniższej ilustracji przedstawiono możliwe wdrożenie platformy Azure przy 
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>Wykonywanie przemieszczanego komputera mainframe na platformie Azure
 
-Przenoszenie rozwiązań z komputera mainframe na platformę Azure może wymagać migracji *etapowej* , w której niektóre aplikacje są przenoszone w pierwszej kolejności, a inne pozostają na komputerze mainframe tymczasowo lub trwale. Takie podejście zwykle wymaga systemów, które umożliwiają aplikacji i baz danych współdziałanie między mainframe i platformą Azure.
+Przenoszenie rozwiązań z komputera mainframe na platformę Azure może wymagać migracji _etapowej_ , w której niektóre aplikacje są przenoszone w pierwszej kolejności, a inne pozostają na komputerze mainframe tymczasowo lub trwale. Takie podejście zwykle wymaga systemów, które umożliwiają aplikacji i baz danych współdziałanie między mainframe i platformą Azure.
 
 Typowym scenariuszem jest przeniesienie aplikacji na platformę Azure, zachowując dane używane przez aplikację na komputerze mainframe. Określone oprogramowanie służy do włączania dostępu do danych z komputera mainframe przez aplikacje na platformie Azure. Na szczęście wiele różnych rozwiązań zapewnia integrację między platformą Azure i istniejącymi środowiskami mainframe, obsługą scenariuszy hybrydowych oraz migracją w czasie. Partnerzy firmy Microsoft, niezależni dostawcy oprogramowania i Integratory systemów mogą pomóc Ci w podróży.
 

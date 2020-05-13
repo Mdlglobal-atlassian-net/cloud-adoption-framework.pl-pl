@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 234136b777107c93e7ea26b9a183c1ec34b75e24
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4f0f680c26fec666c7f60ba9c74b5cdc7eb22348
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120101"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217748"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Poprawa dyscypliny linii bazowej zabezpieczeń
 
-Dyscyplina linii bazowej zabezpieczeń koncentruje się na sposobach ustanawiania zasad chroniących sieć, zasoby i najważniejsze dane, które będą znajdować się w rozwiązaniu dostawcy chmury. W pięciu dyscyplinach zarządzania chmurą linia bazowa zabezpieczeń obejmuje klasyfikację cyfrowej i danych. Zawiera również dokumentację dotyczącą ryzyka, tolerancję biznesową i strategie zaradcze związane z bezpieczeństwem danych, zasobów i sieci. Z perspektywy technicznej obejmuje to również zaangażowanie w decyzje dotyczące [szyfrowania](../../decision-guides/encryption/index.md), [wymagań sieci](../../decision-guides/software-defined-network/index.md), [hybrydowych strategii tożsamości](../../decision-guides/identity/index.md)i [procesów](./compliance-processes.md) używanych do tworzenia zasad linii bazowej zabezpieczeń w chmurze.
+Dyscyplina linii bazowej zabezpieczeń koncentruje się na sposobach ustanawiania zasad chroniących sieć, zasoby i najważniejsze dane, które będą znajdować się w rozwiązaniu dostawcy chmury. W ramach pięciu dyscyplin nadzoru chmurowego dyscyplina odniesienia zabezpieczeń obejmuje klasyfikację cyfrowej i danych. Zawiera również dokumentację dotyczącą ryzyka, tolerancję biznesową i strategie zaradcze związane z bezpieczeństwem danych, zasobów i sieci. Z perspektywy technicznej obejmuje to również zaangażowanie w decyzje dotyczące [szyfrowania](../../decision-guides/encryption/index.md), [wymagań sieci](../../decision-guides/software-defined-network/index.md), [hybrydowych strategii tożsamości](../../decision-guides/identity/index.md)i [procesów](./compliance-processes.md) używanych do tworzenia zasad odniesienia zabezpieczeń dla chmury.
 
 W tym artykule przedstawiono niektóre potencjalne zadania, w których firma może uczestniczyć w programie w celu lepszego opracowania i przedwczesnego dyscypliny linii bazowej zabezpieczeń. Te zadania mogą być podzielone na planowanie, kompilowanie, przyjmowanie i eksploatację etapów wdrażania rozwiązania w chmurze, które są następnie powtarzane na umożliwieniu rozwoju [przyrostowego podejścia do zarządzania chmurą](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Cztery etapy wdrażania](../../_images/govern/adoption-phases.png)
 
-*Rysunek 1. etapy wdrażania przyrostowego podejścia do ładu w chmurze.*
+_Rysunek 1: etapy wdrażania stopniowego podejścia do ładu w chmurze._
 
-Nie jest możliwe, aby żaden z dokumentów mógł uwzględnić wymagania wszystkich firm. W tym artykule opisano sugerowane minimalne i potencjalne przykładowe działania dla każdej fazy procesu ładu. Początkowym celem tych działań jest ułatwienie tworzenia programu MVP dla [zasad](../guides/index.md#an-incremental-approach-to-cloud-governance) i ustanowienie platformy do ulepszania zasad. Zespół ds. zarządzania chmurą będzie musiał zdecydować, jak dużo inwestować w te działania, aby zwiększyć możliwości zarządzania punktami odniesienia zabezpieczeń.
+Nie jest możliwe, aby żaden z dokumentów mógł uwzględnić wymagania wszystkich firm. W tym artykule opisano sugerowane minimalne i potencjalne przykładowe działania dla każdej fazy procesu ładu. Początkowym celem tych działań jest ułatwienie tworzenia programu MVP dla [zasad](../guides/index.md#an-incremental-approach-to-cloud-governance) i ustanowienie platformy do ulepszania zasad. Zespół ds. zarządzania chmurą będzie musiał zdecydować, jak dużo inwestować w te działania, aby usprawnić dyscyplinę linii bazowej zabezpieczeń.
 
 > [!CAUTION]
 > Nie są one wyrównane do określonych zasad firmy lub wymagań dotyczących zgodności innych firm. Te wskazówki mają na celu ułatwienie obsługi konwersacji, które będą prowadzić do wyrównania obu wymagań przy użyciu modelu ładu chmurowego.
@@ -46,13 +46,11 @@ W tej fazie działania ładu mostkuje podział między wynikami biznesowymi i st
 - Zdefiniuj schemat klasyfikacji danych.
 - Przeprowadzaj proces planowania podpisywania elektronicznego, aby przeprowadzić spis bieżących zasobów IT, które ułatwiają procesy biznesowe i obsługują operacje.
 - Przeprowadź [Przegląd zasad](../../govern/policy-compliance/cloud-policy-review.md) , aby rozpocząć proces modernizacji istniejących firmowych zasad zabezpieczeń IT i zdefiniować zasady MVP dotyczące znanych zagrożeń.
-- Zapoznaj się z wytycznymi dotyczącymi zabezpieczeń platformy w chmurze. W przypadku platformy Azure można je znaleźć na [platformie zaufania usługi firmy Microsoft](https://servicetrust.microsoft.com).
-- Ustal, czy zasady linii bazowej zabezpieczeń obejmują [cykl rozwoju zabezpieczeń](https://www.microsoft.com/en-us/securityengineering/sdl).
+- Zapoznaj się z wytycznymi dotyczącymi zabezpieczeń platformy w chmurze. W przypadku platformy Azure można je znaleźć w [portalu zaufania usługi firmy Microsoft](https://servicetrust.microsoft.com).
+- Ustal, czy zasady linii bazowej zabezpieczeń obejmują [cykl rozwoju zabezpieczeń](https://www.microsoft.com/sdl).
 - Oceń dane dotyczące sieci, danych i zasobów związanych z zasobami, które są zależne od od następnej do trzech wydań, i miernika tolerancji organizacji dla tych zagrożeń.
 - Przejrzyj podstawowe trendy firmy Microsoft [w raporcie cyberbezpieczeństwa](https://www.microsoft.com/security/operations/security-intelligence-report) , aby zapoznać się z ogólnymi poziomami zabezpieczeń.
-- Rozważ opracowanie roli [DevOps zabezpieczeń](https://www.microsoft.com/en-us/securityengineering/devsecops) w organizacji.
-
-<!-- "en-us" location is required for the URLs above. -->
+- Rozważ opracowanie roli [DevSecOps](https://www.microsoft.com/devsecops) w organizacji.
 
 ## <a name="build-and-predeployment"></a>Kompilacja i prewdrażanie
 
@@ -73,7 +71,7 @@ Do pomyślnej migracji środowiska wymagane są pewne wymagania techniczne i nie
 - Oceń zasady dostępu o [najniższych uprawnieniach](https://docs.microsoft.com/azure/active-directory/users-groups-roles/roles-delegate-by-task) organizacji i korzystaj z ról opartych na zadaniach, aby zapewnić dostęp do określonych zasobów.
 - Zastosuj mechanizmy zabezpieczeń i monitorowania do wszystkich usług w chmurze i maszyn wirtualnych.
 - Automatyzowanie [zasad zabezpieczeń](../../decision-guides/policy-enforcement/index.md) , jeśli jest to możliwe.
-- Zapoznaj się z zasadami odniesienia zabezpieczeń i ustal, czy musisz zmodyfikować plany zgodnie z najlepszymi rozwiązaniami, takimi jak te opisane w [cyklu projektowania zabezpieczeń](https://www.microsoft.com/securityengineering/sdl).
+- Zapoznaj się z zasadami odniesienia zabezpieczeń i ustal, czy musisz zmodyfikować plany zgodnie z najlepszymi rozwiązaniami, takimi jak te opisane w [cyklu projektowania zabezpieczeń](https://www.microsoft.com/sdl).
 
 ## <a name="adopt-and-migrate"></a>Zastosuj i Migruj
 
@@ -118,6 +116,6 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 Teraz, gdy rozumiesz koncepcję zarządzania zabezpieczeniami w chmurze, przejdź do, aby dowiedzieć się więcej o [zabezpieczeniach i najlepszych rozwiązaniach, które firma Microsoft udostępnia](./azure-security-guidance.md) dla systemu Azure.
 
 > [!div class="nextstepaction"]
-> [Poznaj wskazówki dotyczące zabezpieczeń systemu Azure](./azure-security-guidance.md)
-> [wprowadzenie do zabezpieczeń](https://docs.microsoft.com/azure/security/fundamentals/overview)
-> platformy Azure informacje[o rejestrowaniu, raportowaniu i monitorowaniu](../../decision-guides/logging-and-reporting/index.md)
+> [Informacje o wskazówkach dotyczących zabezpieczeń platformy Azure](./azure-security-guidance.md) 
+>  [Wprowadzenie do zabezpieczeń](https://docs.microsoft.com/azure/security/fundamentals/overview) 
+>  platformy Azure [Informacje o rejestrowaniu, raportowaniu i monitorowaniu](../../decision-guides/logging-and-reporting/index.md)

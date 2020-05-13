@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6e4132bd67623b7eeea856824062c7e973d206c8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e07879cfe8b40f9b0482d804aa6073c7ad79f3e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425641"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217612"
 ---
 <!-- cSpell:ignore njray nanra chargebacks IPLs -->
 
@@ -24,7 +24,7 @@ Niezawodność, dostępność i moc obliczeniowa komputerów mainframe podjęto 
 
 ## <a name="myth-mainframes-never-go-down-and-have-a-minimum-of-five-9s-of-availability"></a>Omówienia: Komputery mainframe nigdy nie przechodzą i mają co najmniej pięć 9 dostępności
 
-Sprzęt komputerowy i systemy operacyjne są wyświetlane jako niezawodne i stabilne. Jednak ma to na celu zaplanowanie przestojów i ponownych uruchomień (nazywanych początkowymi ładowaniami programu lub IPLs). Gdy te zadania są brane pod uwagę, rozwiązanie mainframe często ma więcej niż dwie lub trzy 9e dostępności, co jest równoznaczne z tym, że serwery z technologią wysokiej klasy są oparte na architekturze Intel.
+Sprzęt komputerowy i systemy operacyjne są wyświetlane jako niezawodne i stabilne. Jednak jest to, że przestoje muszą być zaplanowane do konserwacji i ponownego uruchamiania, zwane początkowymi ładowaniami programu (IPLs). Gdy te zadania są brane pod uwagę, rozwiązanie mainframe często ma więcej niż dwie lub trzy 9e dostępności, co jest równoznaczne z tym, że serwery z technologią wysokiej klasy są oparte na architekturze Intel.
 
 Komputery mainframe również pozostają jako podatne na awarie jako inne serwery i wymagają systemów zasilaczy awaryjnych (UPS) do obsługi tego typu awarii.
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3e7c74a1d2afa880a0bdec5215b2237e8261ec79
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 17951fef2a93d4c592cc620e4f8aa14ba0c11c58
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426359"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217357"
 ---
 # <a name="business-impact-in-cloud-management"></a>Wpływ na działalność w zarządzaniu chmurą
 
@@ -20,13 +20,13 @@ Przyjmij optymalną wartość, przygotuj dla najgorszej. W zarządzaniu IT możn
 
 ![Wpływ przerw w działaniach firmy](../../_images/manage/time-value-impact.png)
 
-Aby utworzyć sprawiedliwą podstawę porównania wpływu na różne obciążenia w portfolio, Sugerowana jest Metryka czas/wartość. Metryka czas/wartość przechwytuje niekorzystny wpływ na awarie obciążenia. Ogólnie rzecz biorąc, ten wpływ jest rejestrowany w postaci bezpośredniej utraty przychodu lub przychodu operacyjnego w trakcie typowego okresu przestoju. Dokładniej mówiąc, oblicza ilość utraconego przychodu przez jednostkę czasu. Najbardziej typowa Metryka czas/wartość ma *wpływ na godzinę*, co oznacza spadek przychodów z tytułu działalności operacyjnej na godzinę przestoju.
+Aby utworzyć sprawiedliwą podstawę porównania wpływu na różne obciążenia w portfolio, Sugerowana jest Metryka czas/wartość. Metryka czas/wartość przechwytuje niekorzystny wpływ na awarie obciążenia. Ogólnie rzecz biorąc, ten wpływ jest rejestrowany w postaci bezpośredniej utraty przychodu lub przychodu operacyjnego w trakcie typowego okresu przestoju. Dokładniej mówiąc, oblicza ilość utraconego przychodu przez jednostkę czasu. Najbardziej typowa Metryka czas/wartość ma _wpływ na godzinę_, co oznacza spadek przychodów z tytułu działalności operacyjnej na godzinę przestoju.
 
 Do obliczenia wpływu można użyć kilku metod. Możesz zastosować dowolną z opcji w poniższych sekcjach, aby osiągnąć podobne wyniki. Ważne jest, aby użyć tego samego podejścia dla każdego obciążenia w przypadku obliczenia chronionych strat w portfolio.
 
 ## <a name="start-with-estimates"></a>Rozpocznij od oszacowań
 
-Bieżące modele operacyjne mogą utrudnić ustalenie dokładnego wpływu. Na szczęście niektóre systemy wymagają bardzo dokładnego obliczenia strat. W poprzednim kroku *przeklasyfikowanie ma krytyczne znaczenie*, dlatego zaleca się rozpoczęcie wszystkich obciążeń z domyślną *średnią krytycznością*. Obciążenia średnie o krytycznym znaczeniu zwykle otrzymują standardowy poziom obsługi zarządzania z stosunkowo małym wpływem na koszty operacyjne. Tylko wtedy, gdy obciążenie wymaga dodatkowych zasobów zarządzania operacyjnego, może być konieczne dokładne znaczenie finansowe.
+Bieżące modele operacyjne mogą utrudnić ustalenie dokładnego wpływu. Na szczęście niektóre systemy wymagają bardzo dokładnego obliczenia strat. W poprzednim kroku _przeklasyfikowanie ma krytyczne znaczenie_, dlatego zaleca się rozpoczęcie wszystkich obciążeń z domyślną _średnią krytycznością_. Obciążenia średnie o krytycznym znaczeniu zwykle otrzymują standardowy poziom obsługi zarządzania z stosunkowo małym wpływem na koszty operacyjne. Tylko wtedy, gdy obciążenie wymaga dodatkowych zasobów zarządzania operacyjnego, może być konieczne dokładne znaczenie finansowe.
 
 W przypadku wszystkich obciążeń znormalizowanych, wpływ na działalność biznesową służy jako zmienna priorytetyzacja podczas odzyskiwania systemów podczas awarii. Poza tymi ograniczonymi sytuacjami wpływ na działalność biznesową nie zmienia się w środowisku zarządzania operacjami.
 
@@ -54,7 +54,7 @@ Gdy obliczasz straty przez zastosowanie danych historycznych, możesz mieć wyst
 
 Jeśli używasz [skoroszytu zarządzania operacjami](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) do planowania zarządzania chmurą, rozważ wykonanie następujących czynności:
 
-- Każda firma powinna aktualizować każde obciążenie w *przykładowym* lub *czystym szablonie* z *wpływem na czas/wartość* każdego obciążenia. Domyślnie wpływ na *czas/wartość* reprezentuje przewidywane straty na godzinę związane z awarią obciążenia.
+- Każda firma powinna aktualizować każde obciążenie w _przykładowym_ lub _czystym szablonie_ z *wpływem na czas/wartość* każdego obciążenia. Domyślnie wpływ na *czas/wartość* reprezentuje przewidywane straty na godzinę związane z awarią obciążenia.
 
 ## <a name="next-steps"></a>Następne kroki
 

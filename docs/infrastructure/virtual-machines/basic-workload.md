@@ -7,18 +7,18 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34673307e33ab8ae9dad979fa3fa958c84be310c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8432a00865d29767b48292541255f88f9d451665
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997701"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217476"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Wdrażanie podstawowego obciążenia na platformie Azure
 
-Termin *obciążenie* jest zwykle definiowany jako samodzielna jednostka funkcjonalności, taka jak aplikacja lub usługa. Pomaga to w zapewnieniu obciążenia pod względem artefaktów kodu wdrożonych na serwerze, a także innych usług specyficznych dla aplikacji. Może to być przydatna definicja lokalnej aplikacji lub usługi, ale dla aplikacji w chmurze, które muszą być rozwinięte.
+Termin _obciążenie_ jest zwykle definiowany jako samodzielna jednostka funkcjonalności, taka jak aplikacja lub usługa. Pomaga to w zapewnieniu obciążenia pod względem artefaktów kodu wdrożonych na serwerze, a także innych usług specyficznych dla aplikacji. Może to być przydatna definicja lokalnej aplikacji lub usługi, ale dla aplikacji w chmurze, które muszą być rozwinięte.
 
-W chmurze obciążenie nie obejmuje tylko wszystkich artefaktów, ale również obejmuje także zasoby chmury. Uwzględniono zasoby w chmurze w ramach definicji ze względu na koncepcję znaną jako "infrastruktura jako kod". Jak już wiesz, [jak działa platforma Azure?](../../getting-started/what-is-azure.md), zasoby na platformie Azure są wdrażane przez usługę Orchestrator. Ta usługa Orchestrator udostępnia funkcje za pośrednictwem internetowego interfejsu API i można wywołać interfejs API sieci Web przy użyciu kilku narzędzi, takich jak program PowerShell, interfejs wiersza polecenia platformy Azure i Azure Portal. Oznacza to, że można określić zasoby platformy Azure w pliku możliwym do odczytu maszynowego, który może być przechowywany wraz z artefaktami kodu skojarzonymi z aplikacją.
+W chmurze obciążenie nie obejmuje tylko wszystkich artefaktów, ale również obejmuje także zasoby chmury. Uwzględniono zasoby w chmurze w ramach definicji ze względu na koncepcję znaną jako "infrastruktura jako kod". Jak już wiesz, [jak działa platforma Azure?](../../get-started/what-is-azure.md), zasoby na platformie Azure są wdrażane przez usługę Orchestrator. Ta usługa Orchestrator udostępnia funkcje za pośrednictwem internetowego interfejsu API i można wywołać interfejs API sieci Web przy użyciu kilku narzędzi, takich jak program PowerShell, interfejs wiersza polecenia platformy Azure i Azure Portal. Oznacza to, że można określić zasoby platformy Azure w pliku możliwym do odczytu maszynowego, który może być przechowywany wraz z artefaktami kodu skojarzonymi z aplikacją.
 
 Umożliwia to zdefiniowanie obciążenia w postaci artefaktów kodu i niezbędnych zasobów w chmurze, a tym samym umożliwienie odizolowania obciążeń. Obciążenia można izolować według sposobu organizowania zasobów, topologii sieci lub innych atrybutów. Celem izolacji obciążeń jest skojarzenie określonych zasobów obciążenia z zespołem, dzięki czemu zespół może niezależnie zarządzać wszystkimi aspektami tych zasobów. Umożliwia to wielu zespołom udostępnianie usług zarządzania zasobami na platformie Azure, jednocześnie zapobiegając przypadkowemu usunięciu lub modyfikacji zasobów.
 
@@ -26,12 +26,12 @@ Ta izolacja umożliwia również kolejną koncepcję, znaną jako DevOps. DevOps
 
 ## <a name="basic-workload"></a>Podstawowe obciążenie
 
-*Podstawowe obciążenie* jest zwykle zdefiniowane jako jedna aplikacja sieci Web lub Sieć wirtualna (VNET) z maszyną wirtualną.
+_Podstawowe obciążenie_ jest zwykle zdefiniowane jako jedna aplikacja sieci Web lub Sieć wirtualna (VNET) z maszyną wirtualną.
 
 > [!NOTE]
 > Ten przewodnik nie obejmuje opracowywania aplikacji. Aby uzyskać więcej informacji na temat tworzenia aplikacji na platformie Azure, zobacz [Przewodnik po architekturze aplikacji platformy Azure](https://docs.microsoft.com/azure/architecture/guide).
 
-Niezależnie od tego, czy obciążenie jest aplikacją sieci Web, czy maszyną wirtualną, każde z tych wdrożeń wymaga *grupy zasobów*. Użytkownik z uprawnieniami do tworzenia grupy zasobów musi wykonać tę czynność przed wykonaniem poniższych kroków.
+Niezależnie od tego, czy obciążenie jest aplikacją sieci Web, czy maszyną wirtualną, każde z tych wdrożeń wymaga _grupy zasobów_. Użytkownik z uprawnieniami do tworzenia grupy zasobów musi wykonać tę czynność przed wykonaniem poniższych kroków.
 
 ## <a name="basic-web-application-paas"></a>Podstawowa aplikacja internetowa (PaaS)
 
@@ -44,7 +44,7 @@ Po wdrożeniu prostego obciążenia można dowiedzieć się więcej o najlepszyc
 
 ## <a name="single-windows-or-linux-vm-iaas"></a>Pojedyncza maszyna wirtualna z systemem Windows lub Linux (IaaS)
 
-W przypadku prostego obciążenia, które jest uruchamiane na maszynie wirtualnej, pierwszym krokiem jest wdrożenie sieci wirtualnej. Wszystkie zasoby infrastruktury jako usługi (IaaS) na platformie Azure, takie jak maszyny wirtualne, moduły równoważenia obciążenia i bramy, wymagają sieci wirtualnej. Dowiedz się więcej o [usłudze Azure Virtual Networks](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview), a następnie postępuj zgodnie z instrukcjami dotyczącymi [wdrażania sieci wirtualnej na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-network/quick-create-portal). Po określeniu ustawień sieci wirtualnej w Azure Portal należy określić nazwę utworzonej powyżej grupy zasobów.
+W przypadku prostego obciążenia, które jest uruchamiane na maszynie wirtualnej, pierwszym krokiem jest wdrożenie sieci wirtualnej. Wszystkie zasoby infrastruktury jako usługi (IaaS) na platformie Azure, takie jak maszyny wirtualne, moduły równoważenia obciążenia i bramy, wymagają sieci wirtualnej. Dowiedz się więcej o [usłudze azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview), a następnie postępuj zgodnie z instrukcjami dotyczącymi [wdrażania sieci wirtualnej na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-network/quick-create-portal). Po określeniu ustawień sieci wirtualnej w Azure Portal należy określić nazwę utworzonej powyżej grupy zasobów.
 
 Następnym krokiem jest podjęcie decyzji o tym, czy wdrożyć pojedynczą maszynę wirtualną z systemem Windows lub Linux. W przypadku maszyny wirtualnej z systemem Windows wykonaj kroki, aby [wdrożyć maszynę wirtualną z systemem Windows na platformie Azure przy użyciu portalu](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal). Po określeniu ustawień dla maszyny wirtualnej w Azure Portal należy określić nazwę utworzonej powyżej grupy zasobów.
 

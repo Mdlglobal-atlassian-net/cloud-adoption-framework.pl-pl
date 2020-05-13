@@ -1,6 +1,6 @@
 ---
-title: Metryki i wskaźniki tolerancji ryzyka dla linii bazowej zabezpieczeń
-description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak określić tolerancję ryzyka biznesowego związanego z linią bazową zabezpieczeń.
+title: Metryki i wskaźniki tolerancji ryzyka w dyscypliny linii bazowej zabezpieczeń.
+description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, jak określić tolerancję ryzyka biznesowego związane z dyscypliną linii bazowej zabezpieczeń.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 770b266f243a016d0de65dfc235717a405025aa9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b55a8fbd96f83339cbc696ac9e3c15cbc2916924
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425967"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217697"
 ---
-# <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>Metryki linii bazowej zabezpieczeń, wskaźniki i tolerancja ryzyka
+# <a name="risk-tolerance-metrics-and-indicators-in-the-security-baseline-discipline"></a>Metryki i wskaźniki tolerancji ryzyka w dyscypliny linii bazowej zabezpieczeń
 
-Ten artykuł pomoże Ci określić tolerancję ryzyka biznesowego, która odnosi się do linii bazowej zabezpieczeń. Definiowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy na potrzeby inwestycji w wykupu dyscypliny linii bazowej zabezpieczeń.
+Dowiedz się więcej na temat określania wielkości tolerancji ryzyka biznesowego związanego z dyscypliną linii bazowej zabezpieczeń. Definiowanie metryk i wskaźników pomaga utworzyć przypadek biznesowy do inwestowania w okres zapadalności tej dyscypliny.
 
 ## <a name="metrics"></a>Metryki
 
-Linia bazowa zabezpieczeń zwykle koncentruje się na identyfikowaniu potencjalnych luk w zabezpieczeniach wdrożeń w chmurze. W ramach analizy ryzyka warto zebrać dane związane ze środowiskiem zabezpieczeń, aby określić, jak ryzyko ma stanowić zagrożenie, oraz jak ważne inwestycje w zarządzanie odniesieniami w firmie podlegają planowanym wdrożeniom w chmurze.
+Dyscyplina linii bazowej zabezpieczeń zwykle koncentruje się na identyfikowaniu potencjalnych luk w zabezpieczeniach wdrożeń w chmurze. W ramach analizy ryzyka warto zebrać dane związane ze środowiskiem zabezpieczeń, aby określić, jak ryzyko ma stanowić zagrożenie, oraz jak ważne inwestycje w dyscypliny linii bazowej zabezpieczeń dotyczą planowanych wdrożeń w chmurze.
 
 Każda organizacja ma inne środowiska i wymagania dotyczące zabezpieczeń oraz różne potencjalne źródła danych zabezpieczeń. Poniżej przedstawiono przykłady przydatnych metryk, które należy zebrać, aby pomóc w ocenie tolerancji ryzyka w ramach dyscypliny linii bazowej zabezpieczeń:
 
@@ -58,9 +58,9 @@ Dokładne metryki i wyzwalacze używane do oceny tolerancji ryzyka i poziom inwe
 
 ## <a name="next-steps"></a>Następne kroki
 
-Korzystając z [szablonu zarządzania chmurą](./template.md), metryk dokumentu i wskaźniki tolerancji, które są wyrównane do bieżącego planu wdrożenia chmury.
+Użyj [szablonu dyscypliny podstawy zabezpieczeń](./template.md) , aby udokumentować metryki i wskaźniki tolerancji, które są wyrównane do bieżącego planu wdrażania chmury.
 
-Zapoznaj się z przykładowymi zasadami odniesienia zabezpieczeń jako punkt wyjścia do opracowania zasad, które wiążą się z konkretnymi zagrożeniami biznesowymi, które są dostosowane do planów wdrażania chmury.
+Zapoznaj się z przykładowymi zasadami odniesienia zabezpieczeń jako punkt wyjścia do opracowania własnych zasad w celu rozwiązania określonych zagrożeń dla firmy, które są dostosowane do planów wdrażania w chmurze.
 
 > [!div class="nextstepaction"]
 > [Przeglądanie przykładowych zasad](./policy-statements.md)
