@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 06389b972ee01079a3927515c95d3f3ae3cab3de
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cd6f89162b2975313f0eebcd4e3e1385787f8ee7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426565"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217442"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Specjalizacja obciążeń dotycząca zarządzania chmurą
 
@@ -49,10 +49,10 @@ Te scentralizowane zespoły kierują również pracą wyspecjalizowanych zespoł
 
 Zapewnienie przejrzystych operacji obciążeń wymaga większej liczby szczegółowych informacji dotyczących konkretnego obciążenia. W fazie ciągłego ulepszania usługa Application Insights staje się niezbędnym dodatkiem do łańcucha narzędzi zarządzania chmurą.
 
-|Wymaganie|Narzędzie|Przeznaczenie|
-|---|---|---|
-|Monitorowanie aplikacji|Application Insights|Monitorowanie i diagnostyka aplikacji|
-|Wydajność, dostępność i użycie|Application Insights|Zaawansowane monitorowanie aplikacji za pomocą pulpitu nawigacyjnego aplikacji, złożonych map oraz funkcji użycia i śledzenia|
+| Wymaganie                          | Narzędzie                 | Przeznaczenie                                                                                |
+| ------------------------------------ | -------------------- | -------------------------------------------------------------------------------------- |
+| Monitorowanie aplikacji               | Application Insights | Monitorowanie i diagnostyka aplikacji                                                    |
+| Wydajność, dostępność i użycie | Application Insights | Zaawansowane monitorowanie aplikacji za pomocą pulpitu nawigacyjnego aplikacji, złożonych map oraz funkcji użycia i śledzenia |
 
 ### <a name="deploy-application-insights"></a>Wdrażanie usługi Application Insights
 

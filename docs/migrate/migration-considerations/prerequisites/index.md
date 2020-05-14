@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ddbd2374cea98d08760e53eba885171aa854ed17
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 500df8bb2ff239a34b2eb87dbe9f6eb2f215c005
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429023"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222083"
 ---
 # <a name="prerequisites-for-migration"></a>Wymagania wstępne dotyczące migracji
 
@@ -26,10 +26,10 @@ Zapewnienie gotowości przedsiębiorstwa, kultury i infrastruktury technicznej p
 
 Przed rozpoczęciem jakiejkolwiek migracji do chmury należy zapoznać się ze wskazówkami dotyczącymi [planowania](../../../strategy/index.md) i [gotowości](../../../ready/index.md) w przewodniku Cloud Adoption Framework, aby upewnić się, że organizacja jest przygotowana na wdrożenie chmury i procesy migracji. W szczególności należy sprawdzić wymagania biznesowe i oczekiwane wyniki migracji:
 
-- [Wprowadzenie: Migracja](../../../getting-started/migrate.md)
+- [Wprowadzenie: przyspieszanie migracji](../../../get-started/migrate.md)
 - [Dlaczego przechodzimy do chmury?](../../../strategy/motivations.md)
 
-## <a name="definition-of-done"></a>Definicja *gotowości*
+## <a name="definition-of-_done_"></a>Definicja _gotowości_
 
 Wymagania wstępne są spełnione, gdy spełnione są następujące warunki:
 
@@ -38,7 +38,7 @@ Wymagania wstępne są spełnione, gdy spełnione są następujące warunki:
 - **Gotowość techniczna** Strefa docelowa (lub przydzielone miejsce hostingowe w chmurze), do której zostaną przeniesione zmigrowane zasoby, spełnia minimalne wymagania dotyczące hostowania pierwszego migrowanego obciążenia.
 
 > [!CAUTION]
-> Przygotowanie jest kluczem do powodzenia migracji. Jednak nadmierne przygotowywania mogą prowadzić do *paraliżu analitycznego* polegającego na poświęcaniu zbyt dużej ilości czasu na planowanie, co może poważnie opóźnić migrację. Procesy i wymagania wstępne zdefiniowane w tej sekcji mają na celu ułatwienie podejmowania decyzji, ale nie należy pozwalać, aby uniemożliwiały czynienie rzeczywistych postępów.
+> Przygotowanie jest kluczem do powodzenia migracji. Jednak nadmierne przygotowywania mogą prowadzić do _paraliżu analitycznego_ polegającego na poświęcaniu zbyt dużej ilości czasu na planowanie, co może poważnie opóźnić migrację. Procesy i wymagania wstępne zdefiniowane w tej sekcji mają na celu ułatwienie podejmowania decyzji, ale nie należy pozwalać, aby uniemożliwiały czynienie rzeczywistych postępów.
 >
 > Do pierwszej migracji wybierz względnie proste obciążenie. Użyj procesów omówionych w tej sekcji, planując i wdrażając tę pierwszą migrację. Ta pierwsza migracja szybko zademonstruje zespołowi zasady dotyczące chmury i zmusi go do poznania działania chmury. W miarę zdobywania doświadczenia przez zespół należy wykorzystywać zdobytą wiedzę w ramach większych i bardziej złożonych migracji.
 

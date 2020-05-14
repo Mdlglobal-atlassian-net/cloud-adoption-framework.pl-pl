@@ -3,109 +3,33 @@ title: Ład w przewodniku Microsoft Cloud Adoption Framework dla platformy Azure
 description: Skorzystaj z przewodnika Cloud Adoption Framework dla platformy Azure, aby dowiedzieć się, jak oceniać istniejące zasady, tworzyć początkowe podstawy ładu oraz iteracyjnie dodawać narzędzia ładu.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/11/2019
-ms.topic: landing-page
+ms.date: 05/04/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 75b2269c4db348ab6a110309490187ef44b55f6c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 37c7b219699d2d70c1f0493fbb146933f8eeee21
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77706935"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218666"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Ład w przewodniku Microsoft Cloud Adoption Framework dla platformy Azure
 
 Chmura tworzy nowe paradygmaty dotyczące technologii, które obsługują firmy. Te nowe paradygmaty zmieniają też sposób stosowania tych technologii, zarządzania nimi i nadzorowania ich. Kiedy całe centra danych można praktycznie zniszczyć, a następnie utworzyć ponownie za pomocą jednego wiersza kodu wykonanego z poziomu nienadzorowanego procesu, oznacza to, że należy przemyśleć tradycyjne podejścia. Jest to szczególnie istotne w przypadku ładu.
 
-## <a name="get-started-with-cloud-governance"></a>Wprowadzenie do ładu w chmurze
-
 Nadzór nad ładem w chmurze jest procesem iteracyjnym. W przypadku organizacji z istniejącymi zasadami regulującymi lokalne środowiska IT ład chmury powinien uzupełniać te zasady. Jednak poziom integracji zasad firmowych między środowiskiem lokalnym i chmurą będzie różny w zależności od dojrzałości ładu chmury i majątku cyfrowego w chmurze. Z upływem czasu majątek w chmurze będzie się rozwijać, a wraz z nim zasady i procesy dotyczące ładu chmury. Poniższe ćwiczenia ułatwiają rozpoczęcie tworzenia początkowych podstaw ładu.
 
 <!-- markdownlint-disable MD033 -->
+<!-- docsTest:disable TODO -->
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./methodology.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Metodologia</h3>
-Zbierz podstawową wiedzę na temat metodologii zapewniania ładu w chmurze w ramach przewodnika Cloud Adoption Framework i zacznij myśleć o stanie końcowym.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./benchmark.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Punkt odniesienia</h3>
-Oceń stan bieżący i stan przyszły w celu ustalenia wizji na potrzeby stosowania struktury.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./initial-foundation.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Początkowe podstawy ładu</h3>
-Rozpocznij stosowanie nadzoru nad ładem, używając małego, łatwego w implementacji zestawu narzędzi do nadzoru. Te początkowe podstawy ładu są nazywane minimalną konieczną funkcjonalnością (MVP).
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./foundation-improvements.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Udoskonalanie początkowych podstaw ładu</h3>
-W trakcie realizacji planu wdrażania chmury iteracyjnie dodawaj mechanizmy kontroli ładu w celu obsługi pojawiających się czynników ryzyka, zbliżając się do stanu końcowego.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[Metodologia](./methodology.md): Zbierz podstawową wiedzę na temat metodologii zapewniania ładu w chmurze w ramach przewodnika Cloud Adoption Framework i zacznij myśleć o stanie końcowym.                                |
+| ![2](../_images/icons/2.png)     | <br>[Punkt odniesienia](./benchmark.md): Oceń stan bieżący i stan przyszły w celu ustalenia wizji na potrzeby stosowania struktury.                                |
+| ![3](../_images/icons/3.png)     | <br>[Początkowe podstawy ładu](./initial-foundation.md): Rozpocznij stosowanie nadzoru nad ładem, używając małego, łatwego w implementacji zestawu narzędzi do nadzoru. Te początkowe podstawy ładu są nazywane minimalną konieczną funkcjonalnością (MVP).                                |
+| ![4](../_images/icons/4.png)      | <br>[Udoskonalanie początkowych podstaw ładu](./foundation-improvements.md): W trakcie realizacji planu wdrażania chmury iteracyjnie dodawaj mechanizmy kontroli ładu w celu obsługi pojawiających się czynników ryzyka, zbliżając się do stanu końcowego.  |
 
 ## <a name="objective-of-this-content"></a>Cel tej zawartości
 
@@ -122,17 +46,10 @@ Zawartość przewodnika Cloud Adoption Framework dotyczy działalności biznesow
 
 Architekt chmury pełni rolę lidera myśli i osoby ułatwiającej kontakt między tymi odbiorcami. Zawartość tej kolekcji przewodników ma pomóc architektowi chmury w ułatwieniu odpowiednich konwersacji z odpowiednimi odbiorcami, aby umożliwić podjęcie koniecznych decyzji. Transformacja firmy, która jest napędzana i obsługiwana przez chmurę, zależy od tego, czy architekt chmury pomoże w podejmowaniu decyzji w zakresie działalności biznesowej i IT.
 
-**Specjalizacja architekta chmury w tej sekcji:** Każda sekcja przewodnika Cloud Adoption Framework reprezentuje różną specjalizację lub wariant roli architekta chmury. Ta sekcja przewodnika Cloud Adoption Framework jest przeznaczona dla architektów chmury pasjonujących się unikaniem lub ograniczaniem ryzyka technicznego. Niektórzy dostawcy chmury nazywają tych specjalistów *strażnikami chmury*, my jednak wolimy określenie *opiekunowie chmury* lub zbiorczo *zespół ds. utrzymania ładu w chmurze*. Artykuły dotyczące każdego praktycznego przewodnika dotyczącego ładu pokazują, jak skład i rola zespołu ds. utrzymania ładu w chmurze może zmieniać się wraz z upływem czasu.
+**Specjalizacja architekta chmury w tej sekcji:** Każda sekcja przewodnika Cloud Adoption Framework reprezentuje różną specjalizację lub wariant roli architekta chmury. Ta sekcja przewodnika Cloud Adoption Framework jest przeznaczona dla architektów chmury pasjonujących się unikaniem lub ograniczaniem ryzyka technicznego. Niektórzy dostawcy chmury nazywają tych specjalistów _strażnikami chmury_, my jednak wolimy określenie _opiekunowie chmury_ lub zbiorczo _zespół ds. utrzymania ładu w chmurze_. Artykuły dotyczące każdego praktycznego przewodnika dotyczącego ładu pokazują, jak skład i rola zespołu ds. utrzymania ładu w chmurze może zmieniać się wraz z upływem czasu.
 
 ## <a name="use-this-guide"></a>Korzystanie z tego przewodnika
 
-Jeśli chcesz postępować zgodnie z tym przewodnikiem od początku do końca, ta zawartość pomoże w opracowaniu solidnej strategii utrzymania ładu w chmurze równolegle do implementacji chmury. Wskazówki przeprowadzą Cię przez teorię i implementację takiej strategii.
+Zapoznanie się z całą treścią metodologii Ład pomoże Ci w opracowaniu niezawodnej strategii zapewnienia ładu w chmurze równolegle do wdrożenia chmury. Te wskazówki przeprowadzą Cię przez teorię i implementację takiej strategii.
 
 Aby zapoznać się z przyspieszonym kursem teoretycznym i uzyskać szybki dostęp do implementacji platformy Azure, zacznij od [przeglądu przewodników dotyczących ładu](./guides/index.md). Dzięki tym wskazówkom możesz zacząć od czegoś małego i iteracyjnie rozwijać swoje potrzeby w zakresie utrzymania ładu równolegle do prac nad wdrożeniem chmury.
-
-## <a name="next-steps"></a>Następne kroki
-
-Zbierz podstawową wiedzę na temat metodologii zapewniania ładu w chmurze w ramach przewodnika Cloud Adoption Framework.
-
-> [!div class="nextstepaction"]
-> [Zrozumienie metodologii](./methodology.md)

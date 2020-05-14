@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7d59f446966d853e29fc5c44bbc2da44cba114c2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 824d5fbe48074dd9a220a20bbf05f3d17c3445c1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396103"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222763"
 ---
+<!--docsTest:disable - TODO -->
+
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 # <a name="resource-naming-and-tagging-decision-guide"></a>Przewodnik po decyzjach dotyczących nazewnictwa i tagowania zasobów
@@ -27,8 +29,8 @@ Organizowanie zasobów opartych na chmurze jest najważniejszym zadaniem działu
   - [Modele księgowania kosztów w chmurze](../../strategy/cloud-accounting.md)
   - [Obliczenia zwrotu z inwestycji](../../strategy/financial-models.md#return-on-investment)
   - [Śledzenie kosztów](../../ready/azure-best-practices/track-costs.md)
-  - [Budżety](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-  - [Alerty](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+  - [Budżety](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [Alerty](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
   - [Cykliczne śledzenie i raportowanie wydatków](../../govern/cost-management/compliance-processes.md)
   - [Optymalizacje po implementacji](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
   - [Taktyki optymalizacji kosztów](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
@@ -76,11 +78,11 @@ Typowe wzorce tagowania wymienione poniżej przedstawiają przykłady organizowa
 
 | Typ tagu | Przykłady | Opis |
 |-----|-----|-----|
-| Funkcjonalny            | app = catalogsearch1 <br/>tier = web <br/>webserver = apache<br/>env = prod <br/>env = staging <br/>env = dev                 | Kategoryzuje zasoby na podstawie ich przeznaczenia w ramach obciążenia, środowiska, w którym zostały wdrożone, albo innych szczegółów funkcji lub operacji.                                 |
-| Klasyfikacja        | confidentiality=private<br/>sla = 24hours                                 | Klasyfikuje zasób według sposobu jego użycia i zastosowanych wobec niego zasad                               |
-| Księgowość            | department = finance <br/>program = business-initiative <br/>region = northamerica | Umożliwia skojarzenie zasobu z określonymi grupami w organizacji na potrzeby rozliczeń |
-| Partnerstwo           | owner = jsmith <br/>contactalias = catsearchowners<br/>stakeholders = user1;user2;user3<br/>                       | Udostępnia informacje o osobach (poza działem IT), które są związane z zasobem lub na które zasób wpływa w inny sposób                      |
-| Przeznaczenie               | businessprocess=support<br/>businessimpact=moderate<br/>revenueimpact=high   | Dopasowuje zasoby do funkcji biznesowych w celu podejmowania lepszych decyzji inwestycyjnych dotyczących obsługi  |
+| Funkcjonalny | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | Kategoryzuje zasoby na podstawie ich przeznaczenia w ramach obciążenia, środowiska, w którym zostały wdrożone, albo innych szczegółów funkcji lub operacji. |
+| Klasyfikacja | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | Klasyfikuje zasób według sposobu jego użycia i zastosowanych wobec niego zasad |
+| Księgowość | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | Umożliwia skojarzenie zasobu z określonymi grupami w organizacji na potrzeby rozliczeń |
+| Partnerstwo | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | Udostępnia informacje o osobach (poza działem IT), które są związane z zasobem lub na które zasób wpływa w inny sposób |
+| Przeznaczenie | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | Dopasowuje zasoby do funkcji biznesowych w celu podejmowania lepszych decyzji inwestycyjnych dotyczących obsługi |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -89,7 +91,7 @@ Typowe wzorce tagowania wymienione poniżej przedstawiają przykłady organizowa
 Aby uzyskać więcej informacji na temat nazewnictwa i tagowania na platformie Azure, zobacz:
 
 - [Konwencje nazewnictwa dla zasobów platformy Azure](../../ready/azure-best-practices/naming-and-tagging.md). Te wskazówki dotyczą zalecanych konwencji nazewnictwa zasobów platformy Azure.
-- [Organizowanie zasobów platformy Azure przy użyciu tagów](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags). Tagi można stosować na platformie Azure na poziomie grupy zasobów i indywidualnego zasobu, co zapewnia elastyczność określania stopnia szczegółowości dowolnych raportów księgowych w oparciu o zastosowane tagi.
+- [Organizowanie zasobów platformy Azure i hierarchii zarządzania przy użyciu tagów](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources). Tagi można stosować na platformie Azure na poziomie grupy zasobów i indywidualnego zasobu, co zapewnia elastyczność określania stopnia szczegółowości dowolnych raportów księgowych w oparciu o zastosowane tagi.
 
 ## <a name="next-steps"></a>Następne kroki
 

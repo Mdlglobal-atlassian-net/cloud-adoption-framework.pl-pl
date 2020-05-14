@@ -3,114 +3,35 @@ title: Definiowanie planu wdrożenia chmury
 description: Użyj struktury wdrażania chmury dla platformy Azure, aby dowiedzieć się, jak kierować zadaniami technicznymi, korzystając ze zdefiniowanego planu wdrożenia chmury.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2019
-ms.topic: landing-page
+ms.date: 05/04/2019
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-layout: LandingPage
-ms.openlocfilehash: cc4515b97454094ed84a78d04170a8bd03c0f5b2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 76baa600f1110a85dba8ffae5045c9d96bdce73b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80354982"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215470"
 ---
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
+
 <!-- markdownlint-disable MD026 -->
 
 # <a name="develop-a-cloud-adoption-plan"></a>Opracowywanie planu wdrożenia chmury
 
 Plany wdrożenia chmury przekształcają aspiracyjne cele strategii wdrożenia chmury w plan obejmujący konkretne działania. Zespoły ds.chmury mogą korzystać z planu wdrożenia chmury, aby wykonywać zadania techniczne w zgodzie ze strategią biznesową.
 
-## <a name="cloud-adoption-plan-process"></a>Proces planu wdrożenia chmury
-
 Następujące ćwiczenia pomogą Ci w udokumentowaniu strategii technologicznej. Takie podejście umożliwia wychwycenie priorytetowych zadań, co pozwoli nadać bieg pracom związanym z wdrożeniem. Następnie plan wdrożenia chmury jest mapowany na metryki i motywacje zdefiniowane w strategii wdrożenia chmury.
 
 <!-- markdownlint-disable MD033 -->
+<!-- docsTest:ignore images _images -->
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="../digital-estate/rationalize.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Majątek cyfrowy</h3>
-Spisz i zracjonalizuj majątek cyfrowy w oparciu o założenia dopasowane do motywacji i wyników biznesowych.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./initial-org-alignment.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Początkowe dopasowanie organizacji</h3>
-Ustal plan początkowego dopasowania organizacji, który będzie wspierał plan wdrożenia.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./adapt-roles-skills-processes.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Plan gotowości w zakresie umiejętności</h3>
-Utwórz plan na potrzeby uzupełnienia braków gotowości w zakresie umiejętności.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./plan-intro.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Plan wdrożenia chmury</h3>
-Opracuj plan wdrożenia chmury, aby zarządzać zmianami w obszarze majątku cyfrowego, umiejętności i w całej organizacji.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[Majątek cyfrowy](../digital-estate/rationalize.md): Spisz i zracjonalizuj majątek cyfrowy w oparciu o założenia dopasowane do motywacji i wyników biznesowych.                                |
+| ![2](../_images/icons/2.png)     | <br>[Początkowe dopasowanie organizacji](./initial-org-alignment.md): Ustal plan początkowego dopasowania organizacji, który będzie wspierał plan wdrożenia.                                |
+| ![3](../_images/icons/3.png)     | <br>[Plan gotowości w zakresie umiejętności](./adapt-roles-skills-processes.md): Utwórz plan na potrzeby uzupełnienia braków gotowości w zakresie umiejętności.                                |
+| ![4](../_images/icons/4.png)      | <br>[Plan wdrożenia chmury](./plan-intro.md): Opracuj plan wdrożenia chmury, aby zarządzać zmianami w obszarze majątku cyfrowego, umiejętności i w całej organizacji.                        |
 
-Pobierz [szablon planowania i strategii struktury wdrażania chmury](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), aby śledzić wynik każdego ćwiczenia podczas budowania strategii wdrożenia chmury.
-
-## <a name="next-steps"></a>Następne kroki
-
-Rozpocznij tworzenie planu wdrożenia chmury, poznając [pięć typowych opcji racjonalizacji w chmurze](../digital-estate/5-rs-of-rationalization.md).
-
-> [!div class="nextstepaction"]
-> [Pięć typowych opcji racjonalizacji w chmurze](../digital-estate/5-rs-of-rationalization.md)
+Pobierz [szablon planowania i strategii struktury wdrażania chmury](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), aby śledzić wynik każdego ćwiczenia podczas budowania strategii wdrożenia chmury. Zapoznaj się też z [pięcioma zasadami racjonalizacji w chmurze](../digital-estate/5-rs-of-rationalization.md), które ułatwią Ci tworzenie planu wdrożenia chmury.

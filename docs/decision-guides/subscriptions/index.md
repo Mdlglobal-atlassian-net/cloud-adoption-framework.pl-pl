@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 515ae94c2feedbc7b111ec786551a4680a69f561
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f7675852a6d9b59e0d06873fee028b701dc729e3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996020"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215067"
 ---
 # <a name="subscription-decision-guide"></a>Przewodnik po decyzjach związanych z subskrypcjami
 
@@ -27,7 +27,7 @@ Wdrażanie platformy Azure rozpoczyna się od utworzenia subskrypcji platformy A
 - [Utwórz dodatkowe subskrypcje](../../ready/azure-best-practices/scale-subscriptions.md) w celu skalowania środowiska platformy Azure.
 - [Organizuj subskrypcje i zarządzaj nimi](../../ready/azure-best-practices/organize-subscriptions.md), korzystając z grup zarządzania platformy Azure.
 
-## <a name="modeling-your-organization"></a>Modelowanie organizacji
+## <a name="model-your-organization"></a>Opracowanie modelu organizacji
 
 Każda organizacja jest inna, dlatego grupy zarządzania platformy Azure są elastyczne. Modelowanie infrastruktury chmury tak, aby odzwierciedlała hierarchię organizacji, pomaga w definiowaniu oraz stosowaniu zasad na wyższych poziomach hierarchii i poleganiu na dziedziczeniu jako na mechanizmie zapewniania, że te zasady będą automatycznie stosowane do grup zarządzania niżej w hierarchii. Chociaż subskrypcje można przenosić między różnymi grupami zarządzania, dobrze jest zaprojektować wstępną hierarchię grup zarządzania odzwierciedlającą przewidywane potrzeby organizacji.
 
@@ -50,12 +50,12 @@ W miarę tego, jak organizacja dodaje nowe obciążenia w chmurze, oddzielne wł
 
 Wraz z rozwojem infrastruktury chmurowej organizacji są zazwyczaj tworzone dodatkowe subskrypcje w celu obsługi aplikacji, które znacząco różnią się pod względem stopnia krytyczności dla działania firmy, wymagań dotyczących zgodności, opcji kontroli dostępu lub potrzeb związanych z ochroną danych. Tworzone na podstawie początkowych subskrypcji środowiska produkcyjnego i nieprodukcyjnego subskrypcje obsługujące te kategorie aplikacji są odpowiednio zorganizowane w ramach grup zarządzania środowiska produkcyjnego lub nieprodukcyjnego. Subskrypcje te zazwyczaj należą do personelu centralnego zespołu ds. operacji informatycznych i są przez niego administrowane.
 
-![Strategia kategorii aplikacji](../../_images/infra-subscriptions/application.png)
+![Strategia kategorii aplikacji](../../_images\decision-guides\decision-guide-subscriptions-hierarchy.png)
 
 Każda organizacja wybierze inny sposób kategoryzowania aplikacji, często oddzielając subskrypcje na podstawie określonych aplikacji lub usług albo wzdłuż linii archetypów aplikacji. Ta kategoryzacja jest często projektowana z myślą o obsłudze obciążeń, które będą prawdopodobnie zużywać większość limitów zasobów subskrypcji, albo osobnych obciążeń o kluczowym znaczeniu, aby upewnić się, że nie są one konkurencyjne względem innych obciążeń w ramach tych limitów. Niektóre obciążenia, które mogą uzasadniać oddzielną subskrypcję, to:
 
 - Obciążenia niezbędne dla działalności.
-- Aplikacje, które są częścią kosztu własnego sprzedaży (COGS, Cost of Goods Sold) w firmie. Przykład: każde wystąpienie widżetu firmy X zawiera moduł Azure IoT, który wysyła dane telemetryczne. Może to wymagać dedykowanej subskrypcji dla celów księgowości i zarządzania w ramach kosztu własnego sprzedaży.
+- Aplikacje, które są częścią _kosztu własnego sprzedaży_ (COGS, Cost of Goods Sold) w firmie. Przykład: każde wystąpienie widżetu firmy X zawiera moduł Azure IoT, który wysyła dane telemetryczne. Może to wymagać dedykowanej subskrypcji dla celów księgowości i zarządzania w ramach kosztu własnego sprzedaży.
 - Aplikacje podlegają wymogom prawnym, takim jak ustawy HIPAA lub FedRAMP.
 
 ### <a name="functional-strategy"></a>Strategia funkcjonalna
@@ -70,11 +70,11 @@ Strategia jednostki biznesowej grupuje subskrypcje i konta na podstawie kategori
 
 W przypadku organizacji prowadzących globalną działalność strategia geograficzna grupuje subskrypcje i konta na podstawie regionów geograficznych, używając hierarchii grup zarządzania.
 
-## <a name="mixing-subscription-strategies"></a>Mieszanie strategii subskrypcji
+## <a name="mix-subscription-strategies"></a>Mieszanie strategii subskrypcji
 
 Hierarchie grup zarządzania mogą mieć do sześciu poziomów głębokości. Zapewnia to elastyczność pozwalającą na utworzenie hierarchii, która łączy kilka z tych strategii, w celu spełnienia potrzeb konkretnej organizacji. Na przykład poniższy diagram przedstawia hierarchię organizacji łączącą strategię jednostki biznesowej ze strategią geograficzną.
 
-![Mieszana strategia subskrypcji](../../_images/infra-subscriptions/mixed.png)
+![Mieszana strategia subskrypcji](../../_images\decision-guides\decision-guide-subscriptions-hierarchy-mixed.png)
 
 ## <a name="related-resources"></a>Powiązane zasoby
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ba284cca38d1ce494792cce3d130d65a6240f4e1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d89a0e0facd81ed06c38cae4283f96791eeddd3f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996346"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224327"
 ---
 # <a name="resource-consistency-decision-guide"></a>Przewodnik podejmowania decyzji dotyczących spójności zasobów
 
@@ -37,7 +37,7 @@ Grupy zasobów działają jak kontenery dla zasobów o typowym cyklu życia i og
 1. Czy zawartość grupy zasobów jest wspólnie zarządzana, aktualizowana i monitorowana? Czy wszystkie te operacje są wykonywane przez te same osoby lub zespoły?
 1. Czy zawartość grupy zasobów jest wspólnie wycofywana?
 
-Jeśli odpowiesz _Nie_ na którekolwiek z powyższych pytań, odpowiedni zasób należy umieścić w innym miejscu, w innej grupie zasobów.
+Jeśli odpowiesz _nie_ na którekolwiek z powyższych pytań, odpowiedni zasób należy umieścić w innym miejscu, w innej grupie zasobów.
 
 > [!IMPORTANT]
 > Grupy zasobów są również specyficzne dla regionu, ale typowe dla zasobów jest to, że znajdują się w różnych regionach w ramach tej samej grupy zasobów, ponieważ są wspólnie zarządzane w sposób opisany powyżej. Aby uzyskać więcej informacji na temat wyboru regionu, zobacz [Wiele regionów](../../migrate/azure-best-practices/multiple-regions.md).
@@ -64,7 +64,7 @@ Aby uzyskać bardziej szczegółowe omówienie wymuszania decyzji dotyczących z
 
 ## <a name="hierarchical-consistency"></a>Spójność hierarchiczna
 
-Grupy zasobów umożliwiają obsługę dodatkowych poziomów hierarchii w organizacji w ramach subskrypcji dzięki stosowaniu reguł usługi Azure Policy i kontrolek dostępu na poziomie grupy zasobów. Jednak w miarę zwiększania rozmiaru infrastruktury w chmurze może być konieczna obsługa bardziej skomplikowanych wymagań dotyczących ładu między subskrypcjami, z których można korzystać, używając hierarchii Przedsiębiorstwo/Dział/Konto/Subskrypcja w ramach umowy Azure Enterprise Agreement.
+Grupy zasobów umożliwiają obsługę dodatkowych poziomów hierarchii w organizacji w ramach subskrypcji dzięki stosowaniu reguł usługi Azure Policy i kontrolek dostępu na poziomie grupy zasobów. Jednak w miarę zwiększania rozmiaru infrastruktury w chmurze może być konieczna obsługa bardziej skomplikowanych wymagań dotyczących ładu między subskrypcjami, z których można korzystać, używając hierarchii przedsiębiorstwo/dział/konto/subskrypcja w ramach umowy Azure Enterprise Agreement.
 
 [Grupy zarządzania platformy Azure](https://docs.microsoft.com/azure/governance/management-groups) umożliwiają organizowanie subskrypcji w bardziej zaawansowane struktury organizacyjne dzięki możliwości grupowania ich w hierarchię inną niż hierarchia z umowy Enterprise Agreement. Ta alternatywna hierarchia umożliwia stosowanie kontroli dostępu i mechanizmów wymuszania zasad w wielu subskrypcjach i zawartych w nich zasobach. Hierarchie grup zarządzania umożliwiają dopasowywanie subskrypcji infrastruktury w chmurze do operacji lub wymagań dotyczących ładu biznesowego. Aby uzyskać więcej informacji, zobacz [przewodnik po decyzji dotyczącej subskrypcji](../subscriptions/index.md).
 

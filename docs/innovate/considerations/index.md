@@ -7,18 +7,18 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3e8824e93f5ecc1db8359d8361a4aa6c84dd00f4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d46518dca8738efd1b1e22f8d276102e198fc6be
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427633"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219686"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Innowacje w gospodarce cyfrowej
 
 Gospodarka cyfrowa to siła, z którą należy się liczyć niemal w każdej branży. Kluczowymi zasobami w trakcie rewolucji przemysłowej były benzyna, przenośnik taśmowy i ludzka pomysłowość — i to one napędzały innowacje na rynku. Największy wpływ na rynek miały jakość produktu, cena i logistyka, ponieważ celem firm było szybsze dostarczanie lepszych produktów do swoich klientów. Dzisiejsza gospodarka cyfrowa zmieniła sposób, w jaki klienci nawiązują relacje z korporacjami. W rezultacie zmianie uległy również formy kapitału oraz elementy wyróżniające firmę na rynku. W gospodarce cyfrowej klienci są mniej zainteresowani kwestiami logistycznymi, a bardziej ogólnym doświadczeniem związanym z korzystaniem z produktu. Wynika to z bezpośredniej interakcji z technologią w codziennym życiu i realizacją wartości oferowanej w związku z tą interakcją.
 
-W części przewodnika Cloud Adoption Framework poświęconej innowacji skoncentrujemy się na zrozumieniu potrzeb klientów i szybkim tworzeniu innowacji, które kształtują sposób, w jaki klienci stykają się z produktami. Przedstawimy także metodę dostarczania minimalnej koniecznej funkcjonalności (MVP). Na koniec przedstawimy mapę typowych decyzji podejmowanych w cyklu innowacji, aby ułatwić zrozumienie, w jaki sposób chmura może stymulować innowacje i pomagać w tworzeniu partnerskich relacji z klientami.
+W części przewodnika Cloud Adoption Framework poświęconej metodologii innowacji skoncentrujemy się na zrozumieniu potrzeb klientów i szybkim tworzeniu innowacji, które kształtują sposób, w jaki klienci stykają się z produktami. Przedstawimy także metodę dostarczania minimalnej koniecznej funkcjonalności (MVP). Na koniec przedstawimy mapę typowych decyzji podejmowanych w cyklu innowacji, aby ułatwić zrozumienie, w jaki sposób chmura może stymulować innowacje i pomagać w tworzeniu partnerskich relacji z klientami.
 
 ## <a name="innovate-methodology"></a>Metodologia innowacji
 
@@ -55,7 +55,7 @@ Każdy zespół deweloperów ma zestaw narzędzi lub technologii, które dobrze 
 
 ## <a name="commitment-to-transparency"></a>Zobowiązanie do przejrzystości
 
-Aby zrozumieć, jak dokonuje się pomiaru innowacji, trzeba najpierw zrozumieć, czym jest zobowiązanie do przejrzystości. Wprowadzenie innowacji może się udać tylko w środowisku, w którym powszechne jest *nastawienie na rozwój*. W centrum tego nastawienia jest imperatyw kulturowy dotyczący uczenia się na bazie własnych doświadczeń. Udane innowacje i nieustanne uczenie się rozpoczynają się od zobowiązania do przejrzystości w pomiarach. Jest to odważne zobowiązanie dla zespołu ds. wdrażania chmury. Jednak to zobowiązanie jest bezużyteczne, jeśli nie towarzyszy mu zobowiązanie do przestrzegania przejrzystości w zespołach liderów i zespołach ds. strategii chmury.
+Aby zrozumieć, jak dokonuje się pomiaru innowacji, trzeba najpierw zrozumieć, czym jest zobowiązanie do przejrzystości. Wprowadzenie innowacji może się udać tylko w środowisku, w którym powszechne jest _nastawienie na rozwój_. W centrum tego nastawienia jest imperatyw kulturowy dotyczący uczenia się na bazie własnych doświadczeń. Udane innowacje i nieustanne uczenie się rozpoczynają się od zobowiązania do przejrzystości w pomiarach. Jest to odważne zobowiązanie dla zespołu ds. wdrażania chmury. Jednak to zobowiązanie jest bezużyteczne, jeśli nie towarzyszy mu zobowiązanie do przestrzegania przejrzystości w zespołach liderów i zespołach ds. strategii chmury.
 
 Przejrzystość jest ważna, ponieważ pomiar wpływu na klienta nie daje jednoznacznej odpowiedzi, czy coś jest prawidłowe, czy nie. Miary wpływu nie informują również o jakości pracy ani wydajności zespołu ds. wdrożenia. Zamiast tego wskazują szansę na naukę i lepsze spełnianie oczekiwań klientów. Nieprawidłowe korzystanie z metryk innowacji może mieć negatywny wpływ na tę kulturę. Ostatecznie doprowadzi to do manipulowania metrykami, a przez to w dłuższej perspektywie do niepowodzenia wynalazku, zespołów pomocniczych i w końcu — całej struktury zarządzania, która nieprawidłowo korzystała z danych. Liderzy i współautorzy powinni unikać korzystania z miar w celach innych niż nauka i doskonalenie rozwiązania MVP.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6fd5df7d16a1b1155dbada69f7acea9617afb36a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ed4c1c3cf7958f4e96db7eba71fe1f008bc81eb2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431434"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222848"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -27,7 +27,7 @@ Idź do: [Określanie wymagań dotyczących integracji tożsamości](#determine-
 
 Dostępne są różne rozwiązania do zarządzania tożsamościami w środowisku chmury. Różnią się one kosztami i złożonością. Kluczowym czynnikiem w tworzeniu struktury opartych na chmurze usług zarządzania tożsamościami jest poziom integracji wymagany przez istniejącą infrastrukturę tożsamości w środowisku lokalnym.
 
-Na platformie Azure usługa Azure Active Directory (Azure AD) zapewnia podstawowy poziom kontroli dostępu i zarządzania tożsamościami dla zasobów w chmurze. Jeśli jednak lokalna infrastruktura usługi Active Directory organizacji ma złożoną strukturę lasu lub niestandardowe jednostki organizacyjne, obciążenia oparte na chmurze mogą wymagać synchronizacji katalogu z usługą Azure AD dla zachowania spójności zestawu tożsamości, grup i ról między środowiskiem lokalnym i środowiskiem w chmurze. Ponadto obsługa aplikacji korzystających z mechanizmów uwierzytelniania w starszej wersji może wymagać wdrożenia usługi Active Directory Domain Services (AD DS) w chmurze.
+Usługa Azure Active Directory (Azure AD) zapewnia podstawowy poziom kontroli dostępu i zarządzania tożsamościami dla zasobów na platformie Azure. Jeśli jednak lokalna infrastruktura usługi Active Directory organizacji ma złożoną strukturę lasu lub niestandardowe jednostki organizacyjne, obciążenia oparte na chmurze mogą wymagać synchronizacji katalogu z usługą Azure AD dla zachowania spójności zestawu tożsamości, grup i ról między środowiskiem lokalnym i środowiskiem w chmurze. Ponadto obsługa aplikacji korzystających z mechanizmów uwierzytelniania w starszej wersji może wymagać wdrożenia usługi Active Directory Domain Services (AD DS) w chmurze.
 
 Zarządzanie tożsamościami w chmurze jest procesem iteracyjnym. W przypadku początkowego wdrożenia można rozpocząć od rozwiązania natywnego dla chmury z małym zestawem użytkowników i odpowiednich ról. W miarę dojrzewania migracji konieczne może być zintegrowanie rozwiązania do obsługi tożsamości za pomocą synchronizacji katalogów lub dodanie usług domenowych w ramach wdrożeń w chmurze. Ponownie sprawdzaj swoją strategię dotyczącą obsługi tożsamości przy każdej iteracji procesu migracji.
 
@@ -62,7 +62,8 @@ Usługa Azure AD to natywny system zarządzania dostępem i tożsamościami (IAM
 
 W przypadku organizacji z istniejącą lokalną infrastrukturą usługi Active Directory synchronizacja katalogów jest często najlepszym rozwiązaniem mającym na celu zachowanie istniejących użytkowników i zarządzanie dostępem przy jednoczesnym zapewnieniu wymaganych możliwości zarządzania tożsamościami i dostępem do zarządzania zasobami w chmurze. Ten proces stale replikuje informacje o katalogu między usługami Azure AD i lokalnymi usługami katalogowymi, umożliwiając wspólne poświadczenia dla użytkowników i spójny system tożsamości, roli i uprawnień w całej organizacji.
 
-Uwaga: Organizacje, które zaadaptowały usługi Office 365, mogły już wdrożyć [synchronizację katalogów](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) między ich lokalną infrastrukturą usługi Active Directory i usługą Azure Active Directory.
+> [!NOTE]
+> Organizacje, które zaadaptowały usługi Office 365, mogły już wdrożyć [synchronizację katalogów](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) między ich lokalną infrastrukturą usługi Active Directory i usługą Azure Active Directory.
 
 **Założenia dotyczące synchronizacji katalogów:** Korzystanie z rozwiązania do obsługi zsynchronizowanych tożsamości obejmuje następujące założenia:
 
@@ -92,19 +93,19 @@ Prawdopodobnie istniejące katalogi i usługi domenowe nadal będą używane w �
 
 Federacja tożsamości ustanawia relacje zaufania w wielu systemach zarządzania tożsamościami w celu zapewnienia typowych możliwości uwierzytelniania i autoryzacji. Następnie można obsługiwać możliwości logowania jednokrotnego w wielu domenach w ramach organizacji lub systemów tożsamości zarządzanych przez klientów lub partnerów biznesowych.
 
-Usługa Azure AD obsługuje federację domen usługi Active Directory w środowisku lokalnym za pomocą usług [Active Directory Federation Services](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-whatis) (AD FS). Zobacz architekturę referencyjną [Rozszerzanie usług AD FS na platformie Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs), aby dowiedzieć się, jak można to wdrożyć na platformie Azure.
+Usługa Azure AD obsługuje federację domen usługi Active Directory w środowisku lokalnym za pomocą usług [Active Directory Federation Services (AD FS)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-whatis). Aby uzyskać więcej informacji na temat sposobu wdrażania tego rozwiązania na platformie Azure, zobacz [Rozszerzanie usług AD FS na platformę Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs).
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
 Aby uzyskać więcej informacji na temat usługi zarządzania tożsamościami na platformie Azure, zobacz:
 
-- [Azure AD](https://azure.microsoft.com/services/active-directory). Usługa Azure AD dostarcza usługi zarządzania tożsamościami oparte na chmurze. Umożliwia zarządzanie dostępem do zasobów platformy Azure i kontrolę zarządzania tożsamościami, rejestrację urządzeń, inicjowanie obsługi użytkowników, kontrolę dostępu do aplikacji i ochronę danych.
-- [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity). Narzędzie Azure AD Connect umożliwia łączenie wystąpień usługi Azure AD z istniejącymi rozwiązaniami zarządzania tożsamościami, umożliwiając synchronizację istniejącego katalogu w chmurze.
-- [Kontrola dostępu oparta na rolach ](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC). Usługa Azure AD zapewnia kontrolę RBAC w celu efektywnego i bezpiecznego zarządzania dostępem do zasobów na płaszczyźnie zarządzania. Zadania i obowiązki są zorganizowane w role, do których są przypisani użytkownicy. Funkcja RBAC umożliwia kontrolę nad tym, kto ma dostęp do zasobów oraz jakie działania użytkownik może wykonywać na takich zasobach.
-- [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) (PIM). Usługa PIM obniża czas ekspozycji uprawnień dostępu do zasobów i zwiększa widoczność korzystania z nich dzięki raportom i alarmom. Ogranicza przypadki podejmowania przez użytkowników uprawnień dokładnie na czas (JIT, just in time) lub nadawania uprawnień na krótszy czas, po którym uprawnienia są automatycznie odbierane.
-- [Integrowanie lokalnych domen usługi Active Directory z usługą Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad). Ta architektura referencyjna zawiera przykład synchronizacji katalogów między domenami usługi Active Directory w środowisku lokalnym i usługą Azure AD.
-- [Rozszerzanie usług Active Directory Domain Services (AD DS) na platformę Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain). Ta architektura referencyjna zawiera przykład wdrażania serwerów usługi AD DS w celu rozszerzenia usług domenowych na zasoby oparte na chmurze.
-- [Rozszerzanie usług Active Directory Federation Services (AD FS) na platformę Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs). Ta architektura referencyjna przedstawia konfigurację usługi Active Directory Federation Services (AD FS) w celu przeprowadzenia uwierzytelniania federacyjnego i autoryzacji przy użyciu katalogu usługi Azure AD.
+- **[Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).** Usługa Azure AD dostarcza usługi zarządzania tożsamościami oparte na chmurze. Umożliwia zarządzanie dostępem do zasobów platformy Azure i kontrolę zarządzania tożsamościami, rejestrację urządzeń, inicjowanie obsługi użytkowników, kontrolę dostępu do aplikacji i ochronę danych.
+- **[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).** Narzędzie Azure AD Connect umożliwia łączenie wystąpień usługi Azure AD z istniejącymi rozwiązaniami zarządzania tożsamościami, umożliwiając synchronizację istniejącego katalogu w chmurze.
+- **[Kontrola dostępu na podstawie ról (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview).** Usługa Azure AD zapewnia kontrolę RBAC w celu efektywnego i bezpiecznego zarządzania dostępem do zasobów na płaszczyźnie zarządzania. Zadania i obowiązki są zorganizowane w role, do których są przypisani użytkownicy. Funkcja RBAC umożliwia kontrolę nad tym, kto ma dostęp do zasobów oraz jakie działania użytkownik może wykonywać na takich zasobach.
+- **[Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure).** Usługa PIM obniża czas ekspozycji uprawnień dostępu do zasobów i zwiększa widoczność korzystania z nich dzięki raportom i alarmom. Ogranicza przypadki podejmowania przez użytkowników uprawnień dokładnie na czas (JIT, just in time) lub nadawania uprawnień na krótszy czas, po którym uprawnienia są automatycznie odbierane.
+- **[Integrowanie lokalnych domen usługi Active Directory z usługą Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).** Ta architektura referencyjna zawiera przykład synchronizacji katalogów między domenami usługi Active Directory w środowisku lokalnym i usługą Azure AD.
+- **[Rozszerzanie usług Active Directory Domain Services (AD DS) na platformę Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).** Ta architektura referencyjna zawiera przykład wdrażania serwerów usługi AD DS w celu rozszerzenia usług domenowych na zasoby oparte na chmurze.
+- **[Rozszerzanie usług Active Directory Federation Services (AD FS) na platformę Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs).** Ta architektura referencyjna przedstawia konfigurację usługi Active Directory Federation Services (AD FS) w celu przeprowadzenia uwierzytelniania federacyjnego i autoryzacji przy użyciu katalogu usługi Azure AD.
 
 ## <a name="next-steps"></a>Następne kroki
 

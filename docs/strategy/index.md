@@ -3,17 +3,16 @@ title: Opracowywanie strategii wdrażania chmury
 description: Użyj struktury wdrażania chmury dla platformy Azure, aby zrozumieć, jak chmura może pomóc w rozwoju strategii biznesowej.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2019
-ms.topic: landing-page
+ms.date: 05/04/2019
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-layout: LandingPage
-ms.openlocfilehash: 5494b9485f67f51c79fac84ca2822bf041ea873f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 63ba6adf112d5d74d4e8de003ea3659e3658642a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79092352"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215504"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -21,96 +20,16 @@ ms.locfileid: "79092352"
 
 Chmura zapewnia podstawowe korzyści technologiczne, które mogą pomóc przedsiębiorstwu w realizacji wielu strategii biznesowych. Zastosowanie podejść opartych na chmurze umożliwia poprawę elastyczności biznesowej, zmniejszenie kosztów i skrócenie czasu wprowadzenia na rynek oraz ekspansję na nowe rynki. Aby móc wykorzystać duży potencjał, należy zacząć od dokumentacji strategii biznesowej w taki sposób, aby była ona zrozumiała dla techników i zgodna z oczekiwaniami osób biorących udział w projekcie biznesowym.
 
-## <a name="cloud-adoption-strategy-process"></a>Proces strategii wdrażania chmury
+Następujące czynności pomogą Ci w wydajnym udokumentowaniu strategii biznesowej. To podejście ułatwia ukierunkowanie prac wdrożeniowych w celu ustalenia docelowej wartości biznesowej w modelu współzależności funkcjonalnych. Strategię wdrażania chmury można następnie mapować na konkretne funkcje chmury i strategie biznesowe, aby osiągnąć żądany stan transformacji.
 
-Ćwiczenia w tej sekcji pomogą Ci w wydajnym udokumentowaniu strategii biznesowej. To podejście umożliwia ukierunkowanie prac wdrożeniowych w celu ustalenia docelowej wartości biznesowej w modelu współzależności funkcjonalnych. Strategię wdrażania chmury można następnie mapować na konkretne funkcje chmury i strategie biznesowe, aby osiągnąć żądany stan transformacji.
+<!-- markdownlint-disable MD033 -->
+<!-- docsTest:ignore images _images -->
 
-<!--markdownlint-disable MD033 -->
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[Zdefiniowanie i udokumentowanie motywacji](./motivations.md): Spotkaj się z kluczowymi uczestnikami projektu i przedstawicielami kierownictwa w celu udokumentowania przesłanek stojących za decyzją o wdrożeniu chmury.                                |
+| ![2](../_images/icons/2.png)     | <br>[Dokumentacja wyników biznesowych](./business-outcomes/index.md): Wraz ze zmotywowanymi uczestnikami projektu i przedstawicielami kierownictwa udokumentuj konkretne wyniki biznesowe.                                |
+| ![3](../_images/icons/3.png)     | <br>[Opracowanie uzasadnienia biznesowego](./cloud-migration-business-case.md): Opracuj uzasadnienie biznesowe, aby umocnić model finansowy wspierający motywacje i wyniki.                                |
+| ![4](../_images/icons/4.png)      | <br>[Wybór odpowiedniego pierwszego projektu](./first-adoption-project.md): Pierwszy projekt wdrażania chmury ułatwi uzgodnienie motywacji i działań technicznych. Ten artykuł ułatwia wybranie właściwego pierwszego projektu.                        |
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./motivations.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Przesłanki</h3>
-Spotkaj się z kluczowymi uczestnikami projektu i przedstawicielami kierownictwa w celu udokumentowania przesłanek stojących za decyzją o wdrożeniu chmury.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./business-outcomes/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Wyniki biznesowe</h3>
-Wraz ze zmotywowanymi uczestnikami projektu i przedstawicielami kierownictwa udokumentuj konkretne wyniki biznesowe.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./cloud-migration-business-case.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Uzasadnienie biznesowe</h3>
-Opracuj uzasadnienie biznesowe, aby umocnić model finansowy wspierający motywacje i wyniki.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./first-adoption-project.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Wybór odpowiedniego pierwszego projektu</h3>
-Pierwszy projekt wdrażania chmury ułatwi uzgodnienie motywacji i działań technicznych. Ten artykuł ułatwia wybranie właściwego pierwszego projektu.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
-Aby pomóc w tworzeniu strategii wdrażania chmury, pobierz [szablon planu wdrażania platformy Microsoft Cloud](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), a następnie śledź dane wyjściowe każdego ćwiczenia.
-
-## <a name="next-steps"></a>Następne kroki
-
-Rozpocznij tworzenie strategii wdrażania chmury, [dokumentując przesłanki stanowiące motywację](./motivations.md) do wdrożenia chmury.
-
-> [!div class="nextstepaction"]
-> [Document motivations](./motivations.md) (Dokumentowanie przesłanek)
+Użyj [szablonu planu wdrażana chmury](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), aby opracować strategię wdrażania chmury i śledzić wyniki poszczególnych czynności opisanych powyżej.

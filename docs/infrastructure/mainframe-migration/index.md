@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9d11c3954bb97d14c5ee4c59e27013cff7e8cf7a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 486dabd5b2926b9f8f794767181c75bc1eff34b6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425536"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216813"
 ---
 <!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
 
@@ -24,7 +24,7 @@ Termin mainframe zazwyczaj odnosi się do dużego systemu komputerowego, ale wi�
 
 Migracja do chmury umożliwia firmom modernizację własnej infrastruktury. Dzięki usługom w chmurze możesz tworzyć aplikacje mainframe (wraz z ich wszystkimi zaletami), które będą dostępne jako obciążenie za każdym razem, gdy Twoja organizacja będzie tego potrzebować. Wiele obciążeń można przenieść na platformę Azure z uwzględnieniem tylko drobnych zmian kodu, takich jak aktualizacja nazw baz danych. Możliwe jest migrowanie bardziej złożonych obciążeń przy użyciu podejścia etapowego.
 
-Większość firm z listy Fortune 500 korzysta już z platformy Azure na potrzeby obciążeń o kluczowym znaczeniu. Istotne podstawowe zachęty dostępne na platformie Azure motywują do przeprowadzenia wielu projektów migracji. Firmy zwykle najpierw przenoszą na platformę Azure obciążenia programistyczne i testowe, a następnie zasoby DevOps, pocztę e-mail i funkcje odzyskiwania po awarii jako usługi.
+Większość firm z listy Fortune 500 korzysta już z platformy Azure na potrzeby obciążeń o kluczowym znaczeniu. Istotne podstawowe zachęty dostępne na platformie Azure motywują do przeprowadzenia wielu projektów migracji. Firmy zwykle najpierw przenoszą na platformę Azure obciążenia programistyczne i testowe, a następnie zasoby DevOps, pocztę e-mail i funkcje odzyskiwania po awarii.
 
 ## <a name="intended-audience"></a>Docelowi odbiorcy
 
@@ -48,7 +48,7 @@ Typowa architektura komputera mainframe firmy IBM obejmuje następujące składn
 
 - **Kod:** Języki programowania używane przez komputery mainframe to COBOL, Pascal i PL/I oraz język naturalny. Język kontroli zadań (JCL) jest używany do pracy z systemem z/OS.
 
-- **Warstwa bazy danych:** Wspólny system zarządzania relacyjnymi bazami danych (DBMS) dla systemu z/OS to IBM DD2. Służy on do zarządzania strukturami danych o nazwie *dbspaces*, które zawierają co najmniej jedną tabelę i są przypisane do pul magazynów fizycznych zestawów danych o nazwie *dbextents*. Dwa ważne składniki bazy danych to katalog, który identyfikuje lokalizacje danych w pulach magazynu, oraz dziennik zawierający zapis operacji wykonywanych w bazie danych. Obsługiwane są różne formaty danych plików prostych. System DB2 for z/OS zwykle korzysta z zestawów danych VSAM do przechowywania danych.
+- **Warstwa bazy danych:** Wspólny system zarządzania relacyjnymi bazami danych (DBMS) dla systemu z/OS to IBM DD2. Służy on do zarządzania strukturami danych o nazwie _dbspaces_, które zawierają co najmniej jedną tabelę i są przypisane do pul magazynów fizycznych zestawów danych o nazwie _dbextents_. Dwa ważne składniki bazy danych to katalog, który identyfikuje lokalizacje danych w pulach magazynu, oraz dziennik zawierający zapis operacji wykonywanych w bazie danych. Obsługiwane są różne formaty danych plików prostych. System DB2 for z/OS zwykle korzysta z zestawów danych VSAM do przechowywania danych.
 
 - **Warstwa zarządzania:** Komputery mainframe firmy IBM obejmują oprogramowanie do planowania, takie jak TWS-OPC, narzędzia do drukowania i wyprowadzania danych wyjściowych, takie jak CA-SAR i SPOOL, oraz system kontroli źródła dla kodu. Bezpieczna kontrola dostępu dla systemu z/OS jest obsługiwana za pomocą funkcji kontroli dostępu do zasobów (RACF, resource access control facility). Menedżer bazy danych zapewnia dostęp do danych w bazie danych i działa na własnej partycji w środowisku z/OS.
 

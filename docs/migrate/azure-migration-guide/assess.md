@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bbe61dfa9962d194ddb994b6753c2cbd07a9997f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 23ce74def1dd0d5efc77b448b6fe3303a890b994
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120723"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214569"
 ---
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
+
 # <a name="assess-workloads-and-refine-plans"></a>Ocena obciążeń i uściślanie planów
 
 Zasoby w tym przewodniku pomagają ocenić każde obciążenie, zakwestionować założenia dotyczące możliwości migracji poszczególnych obciążeń oraz podjąć ostateczne decyzje dotyczące architektury w przypadku opcji migracji.
@@ -102,7 +104,7 @@ W powyższych linkach sugeruje się, że założenia są akceptowalne i często 
 
 Pomyślne przeprowadzenie [racjonalizacji przyrostowej](../../digital-estate/rationalize.md#incremental-rationalization) wymaga dwóch równie ważnych kroków. Oba kroki wymagają danych i szczegółowych informacji o środowisku. Jednak każde podejście uwzględnia ilość czasu i szczegółowość wymagane do pomyślnego przeprowadzenia migracji.
 
-- **[Planowanie wydań według zasady potęg dziesięciu](../../digital-estate/rationalize.md#release-planning):** Podczas wstępnej racjonalizacji i planowania wydań należy użyć tylko jednej z [5 zasad racjonalizacji](../../digital-estate/5-rs-of-rationalization.md) w ramach oceny. Przeprowadź oszacowanie i planowanie na podstawie opcji racjonalizacji, która najlepiej pasuje do ogólnych motywacji zdefiniowanych w [dokumencie dotyczącym strategii wdrażania chmury](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- [Planowanie wydań według zasady potęg dziesięciu](../../digital-estate/rationalize.md#release-planning): Podczas wstępnej racjonalizacji i planowania wydań należy użyć tylko jednej z [pięciu zasad racjonalizacji](../../digital-estate/5-rs-of-rationalization.md) w ramach oceny. Przeprowadź oszacowanie i planowanie na podstawie opcji racjonalizacji, która najlepiej pasuje do ogólnych motywacji zdefiniowanych w [dokumencie dotyczącym strategii wdrażania chmury](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
 
 - **Szczegółowa ocena poszczególnych obciążeń:** Założenia związane z planowaniem wydań według zasady potęg dziesięciu są wystarczające do utworzenia planu. Jednak te same założenia mogą powodować istotne problemy, jeśli nie zostaną ocenione przed migracją.
 
@@ -112,7 +114,7 @@ Dokładnie przejrzyj dane oceny w usłudze Azure Migrate lub wybranym narzędziu
 
 Przed migracją użyj tych danych oraz przeprowadź dyskusje w celu uzyskania informacji od właściciela produktu, zespołów programistycznych, administratorów i innych osób, aby ocenić możliwość migracji tego konkretnego obciążenia. Użyj uzyskanych informacji, aby zakwestionować podstawowe założenia dotyczące tego obciążenia. Jeśli ustalenia zmienią plan migracji lub wdrażania, odpowiednio zaktualizuj plan.
 
-Pierwszym krokiem zakwestionowania tych założeń jest [przejrzenie wszystkich 5 zasad racjonalizacji](../../digital-estate/rationalize.md).
+Pierwszym krokiem do zakwestionowania tych założeń jest [przegląd wszystkich pięciu zasad racjonalizacji](../../digital-estate/rationalize.md).
 
     - Czy przyjęta metoda racjonalizacji sprawdza się w przypadku tego obciążenia? Czy jest to najlepsza metoda?
     - Czy [fizyczne warunki replikacji](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) wpłyną na migrację tego obciążenia?

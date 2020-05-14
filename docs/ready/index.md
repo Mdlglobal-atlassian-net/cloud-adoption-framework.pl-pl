@@ -3,17 +3,16 @@ title: Przygotowywanie do wdrożenia chmury
 description: Dowiedz się, jak utworzyć strefę docelową, w której będą hostowane obciążenia tworzone w chmurze lub do niej migrowane.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2019
-ms.topic: landing-page
+ms.date: 05/04/2019
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-layout: LandingPage
-ms.openlocfilehash: 11ab187c24bcd288834cf3c4823e508096e69492
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3cbadad8cef926084b76170fe6f820eb6629a6bf
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79092531"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223035"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -21,96 +20,15 @@ ms.locfileid: "79092531"
 
 Przed rozpoczęciem wdrażania należy utworzyć strefę docelową, w której będą hostowane obciążenia tworzone w chmurze lub do niej migrowane. W tej sekcji przewodnika omówiono tworzenie strefy docelowej.
 
-## <a name="landing-zone-exercises"></a>Ćwiczenia dotyczące strefy docelowej
-
 Poniższe ćwiczenia ułatwiają przejście przez proces tworzenia strefy docelowej do obsługi wdrażania chmury.
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-setup-guide/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Przewodnik konfiguracji platformy Azure</h3>
-Przejrzyj przewodnik konfiguracji platformy Azure, aby zapoznać się z narzędziami i metodami potrzebnymi do utworzenia strefy docelowej.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./landing-zone/first-landing-zone.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Pierwsza strefa docelowa</h3>
-Wybierz najbardziej odpowiednią opcję strefy docelowej, aby określić punkt wyjścia oparty na kodzie dla środowiska.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./considerations/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Rozszerzanie strefy docelowej</h3>
-Spełnij wymagania dotyczące platformy w ramach planu wdrażania chmury, rozszerzając pierwszą strefę docelową.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-best-practices/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Najlepsze praktyki</h3>
-Zweryfikuj zmiany w strefie docelowej, korzystając z najlepszych rozwiązań, aby zapewnić odpowiednią konfigurację bieżącej i przyszłych stref docelowych.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[Przewodnik konfiguracji platformy Azure](./azure-setup-guide/index.md): Przejrzyj przewodnik konfiguracji platformy Azure, aby zapoznać się z narzędziami i metodami potrzebnymi do utworzenia strefy docelowej.                                |
+| ![2](../_images/icons/2.png)     | <br>[Pierwsza strefa docelowa](./landing-zone/first-landing-zone.md): Wybierz najbardziej odpowiednią opcję strefy docelowej, aby określić punkt wyjścia oparty na kodzie dla środowiska.                                |
+| ![3](../_images/icons/3.png)     | <br>[Rozszerzanie strefy docelowej](./considerations/index.md): Spełnij wymagania dotyczące platformy w ramach planu wdrażania chmury, rozszerzając pierwszą strefę docelową.                                |
+| ![4](../_images/icons/4.png)      | <br>[Najlepsze rozwiązania](./azure-best-practices/index.md): Zweryfikuj zmiany w strefie docelowej, korzystając z najlepszych rozwiązań, aby zapewnić odpowiednią konfigurację bieżącej i przyszłych stref docelowych.                        |
 
-<!-- markdownlint-enable MD033 -->
-
-## <a name="next-steps"></a>Następne kroki
-
-Aby przygotować się na wdrożenie chmury, przejrzyj [przewodnik konfiguracji platformy Azure](./azure-setup-guide/index.md).
-
-> [!div class="nextstepaction"]
-> [Przewodnik konfiguracji platformy Azure](./azure-setup-guide/index.md)
+Aby przygotować się na wdrożenie chmury, przejrzyj co najmniej [przewodnik konfiguracji platformy Azure](./azure-setup-guide/index.md).

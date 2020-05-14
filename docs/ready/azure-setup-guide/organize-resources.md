@@ -1,6 +1,6 @@
 ---
 title: Skuteczne organizowanie zasobów platformy Azure
-description: Opis najlepszych potrzebnych rozwiązań umożliwiających efektywne organizowanie zasobów platformy Azure w celu ułatwienia zarządzania.
+description: Zapoznaj się z najlepszymi rozwiązaniami dotyczącymi efektywnego organizowania zasobów platformy Azure, które pozwolą uprościć zarządzanie zasobami.
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: b47f0e3cf6c69bbdf3d5c8260ad4094312e1bea2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d3d0afed921d11b16b1d33de311df1144aea6d4a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997551"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221947"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -146,9 +146,9 @@ Poniższa tabela zawiera wzorce nazewnictwa dla kilku przykładowych typów zaso
 
 | Jednostka | Zakres | Długość | Wielkość liter | Prawidłowe znaki | Sugerowany wzorzec | Przykład |
 | --- | --- | --- | --- | --- | --- | --- |
-|Grupa zasobów |Subskrypcja |1-90 |Bez uwzględniania wielkości liter |Alfanumeryczne, podkreślenie, nawiasy, łącznik, kropka (z wyjątkiem znaków na końcu) i znaki Unicode |`<service short name>-<environment>-rg` |`profx-prod-rg` |
-|Zestaw dostępności |Grupa zasobów |1-80 |Bez uwzględniania wielkości liter |Alfanumeryczne, podkreślenie i łącznik |`<service-short-name>-<context>-as` |`profx-sql-as` |
-|Tag |Skojarzona jednostka |512 (nazwa), 256 (wartość) |Bez uwzględniania wielkości liter |Alfanumeryczne |`"key" : "value"` |`"department" : "Central IT"` |
+| Grupa zasobów | Subskrypcja | 1-90 | Bez uwzględniania wielkości liter | Alfanumeryczne, podkreślenie, nawiasy, łącznik, kropka (z wyjątkiem znaków na końcu) i znaki Unicode | `<service short name>-<environment>-rg` | `profx-prod-rg` |
+| Zestaw dostępności | Grupa zasobów | 1-80 | Bez uwzględniania wielkości liter | Alfanumeryczne, podkreślenie i łącznik | `<service-short-name>-<context>-as` | `profx-sql-as` |
+| Tag | Skojarzona jednostka | 512 (nazwa), 256 (wartość) | Bez uwzględniania wielkości liter | Alfanumeryczne | `"key" : "value"` | `"department" : "Central IT"` |
 
 # <a name="resource-tags"></a>[Tagi zasobów](#tab/ResourceTags)
 
@@ -164,7 +164,7 @@ Tagów można używać do wielu innych celów. Najczęstsze zastosowania to:
 
 Każdy zasób lub grupa zasobów może mieć co najwyżej 50 par nazw i wartości tagów. To ograniczenie dotyczy tylko tagów stosowanych bezpośrednio do grupy zasobów lub zasobu.
 
-Aby uzyskać więcej zaleceń i przykładów dotyczących tagowania, zobacz [wskazówki dotyczące tagowania](../azure-best-practices/naming-and-tagging.md) w przewodniku Cloud Adoption Framework.
+Aby uzyskać więcej zaleceń i przykładów dotyczących tagowania, zobacz [Zalecane konwencje nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md) w przewodniku Cloud Adoption Framework.
 
 ::: zone target="docs"
 
@@ -172,7 +172,7 @@ Aby uzyskać więcej zaleceń i przykładów dotyczących tagowania, zobacz [wsk
 
 Aby zastosować tag do grupy zasobów:
 
-1. Przejdź do pozycji [Grupy zasobów](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
+1. Przejdź do pozycji [Grupy zasobów](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
 1. Wybierz grupę zasobów.
 1. Wybierz pozycję **Przypisz tagi**.
 1. Wprowadź nową nazwę i wartość lub użyj listy rozwijanej, aby wybrać istniejącą nazwę i wartość.

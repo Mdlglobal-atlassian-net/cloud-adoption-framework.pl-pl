@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a82bd7fea1e16819e2c69d6eafba0cbdf77e3559
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 67412e36a4048d1441679458bbff5a90bbceaa84
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396148"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214785"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Przewodnik dotyczący ładu dla przedsiębiorstw standardowych
 
@@ -65,7 +65,7 @@ Po wdrożeniu tego programu MVP można szybko włączyć do środowiska dodatkow
 
 ## <a name="what-does-this-guidance-provide"></a>Co zapewniają te wskazówki?
 
-W programie MVP ustanawiane są praktyki i narzędzia z dyscypliny [Przyspieszanie wdrażania](../../deployment-acceleration/index.md) w celu szybkiego zastosowania zasad firmowych. W szczególności w programie MVP są używane usługi Azure Blueprints i Azure Policy oraz grupy zarządzania platformy Azure w celu zastosowania kilku podstawowych zasad firmowych, jak zdefiniowano w opisie dla tej fikcyjnej firmy. Te zasady firmowe są stosowane przy użyciu szablonów usługi Azure Resource Manager i zasad platformy Azure w celu ustanowienia małego planu bazowego dla tożsamości i zabezpieczeń.
+W programie MVP określono praktyki i narzędzia z dyscypliny [Przyspieszanie wdrażania](../../deployment-acceleration/index.md) umożliwiające szybkie zastosowanie zasad firmowych. W szczególności w programie MVP są używane usługi Azure Blueprints i Azure Policy oraz grupy zarządzania platformy Azure w celu zastosowania kilku podstawowych zasad firmowych, jak zdefiniowano w opisie dla tej fikcyjnej firmy. Te zasady firmowe są stosowane przy użyciu szablonów usługi Azure Resource Manager i zasad platformy Azure w celu ustanowienia małego planu bazowego dla tożsamości i zabezpieczeń.
 
 ![Przykład programu MVP ładu przyrostowego](../../../_images/govern/governance-mvp.png)
 

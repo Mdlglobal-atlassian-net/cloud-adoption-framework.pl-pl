@@ -9,19 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ab79e6e0d55c8b7928e53415920c7ed285b625d8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3bfe85e2305f1c844ddf92a14cf298a0a1c30edb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997381"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218173"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Omówienie dziedziny Spójność zasobów
 
-Spójność zasobów jest jedną z [pięciu dziedzin utrzymania ładu w chmurze](../governance-disciplines.md) w ramach [modelu utrzymania ładu opisanego w przewodniku Cloud Adoption Framework](../index.md). Ta dziedzina koncentruje się na sposobach opracowywania zasad związanych z operacyjnym zarządzaniem środowiskiem, aplikacją lub obciążeniem. Zespoły ds. operacji informatycznych często umożliwiają monitorowanie wydajności aplikacji, obciążeń i zasobów. Często wykonują one również zadania umożliwiające spełnienia wymagań dotyczących skali, korygują naruszenia Umów dotyczących poziomu usług (SLA) i proaktywnie unikają naruszeń umów SLA dotyczących wydajności za pomocą zautomatyzowanych rozwiązań. Z pięciu dziedzin utrzymania ładu w chmurze Spójność zasobów jest dziedziną, która gwarantuje, że zasoby są spójnie konfigurowane w taki sposób, że można je wykryć za pomocą operacji informatycznych, są uwzględnione w rozwiązaniach w zakresie odzyskiwania i mogą być dołączone do procesów powtarzalnych operacji.
+Spójność zasobów jest jedną z [pięciu dziedzin utrzymania ładu w chmurze](../governance-disciplines.md) w ramach [modelu utrzymania ładu opisanego w przewodniku Cloud Adoption Framework](../index.md). Ta dziedzina koncentruje się na sposobach opracowywania zasad związanych z operacyjnym zarządzaniem środowiskiem, aplikacją lub obciążeniem. Zespoły ds. operacji informatycznych często umożliwiają monitorowanie wydajności aplikacji, obciążeń i zasobów. Często wykonują one również zadania umożliwiające spełnienia wymagań dotyczących skali, korygują naruszenia Umów dotyczących poziomu usług (SLA) i proaktywnie unikają naruszeń umów SLA dotyczących wydajności za pomocą zautomatyzowanych rozwiązań. Z pięciu dziedzin utrzymania ładu w chmurze Spójność zasobów jest tą, która gwarantuje, że zasoby są spójnie konfigurowane w taki sposób, że można je wykryć za pomocą operacji informatycznych, są uwzględnione w rozwiązaniach w zakresie odzyskiwania i mogą być dołączone do procesów powtarzalnych operacji.
 
 > [!NOTE]
-> Ład dotyczący spójności zasobów nie zastępuje istniejących zespołów IT, procesów i procedur, które umożliwiają organizacji skuteczne zarządzanie zasobami opartymi na chmurze. Najważniejszym zadaniem tej dziedziny jest identyfikowanie potencjalnych czynników ryzyka biznesowego i przekazywanie pracownikom działu IT odpowiedzialnym za zarządzanie zasobami w chmurze wskazówek mających na celu ograniczenie ryzyka. Podczas tworzenia zasad i procesów utrzymania ładu należy uwzględnić odpowiednie zespoły informatyczne w procesach planowania i przeglądania.
+> Dziedzina Spójność zasobów nie zastępuje istniejących zespołów IT, procesów i procedur, które umożliwiają organizacji skuteczne zarządzanie zasobami opartymi na chmurze. Najważniejszym zadaniem tej dziedziny jest identyfikowanie potencjalnych czynników ryzyka biznesowego i przekazywanie pracownikom działu IT odpowiedzialnym za zarządzanie zasobami w chmurze wskazówek mających na celu ograniczenie ryzyka. Podczas tworzenia zasad i procesów utrzymania ładu należy uwzględnić odpowiednie zespoły informatyczne w procesach planowania i przeglądania.
 
 W tej sekcji przewodnika Cloud Adoption Framework opisano sposób opracowywania dziedziny Spójność zasobów w ramach strategii utrzymania ładu w chmurze. Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Jednak decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie i dyskusje odpowiednich członków zespołów informatycznych odpowiedzialnych za implementowanie rozwiązań dotyczących spójności zasobów w organizacji i zarządzanie nimi.
 
@@ -36,7 +36,7 @@ Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wym
 
 ## <a name="develop-governance-policy-statements"></a>Opracowywanie instrukcji zasad utrzymania ładu
 
-W poniższych sześciu krokach zamieszczono przykłady i potencjalne opcje, które należy wziąć pod uwagę podczas opracowywania zasad utrzymania ładu dziedziny Spójność zasobów. Każdy z tych kroków może stanowić punkt wyjścia do dyskusji w ramach zespołu ds. utrzymania ładu w chmurze oraz z zespołami informatycznymi w Twojej organizacji w celu opracowania zasad i procesów wymaganych do zarządzania czynnikami ryzyka powiązanymi ze spójnością zasobów.
+W poniższych sześciu krokach zamieszczono przykłady i potencjalne opcje, które należy wziąć pod uwagę podczas opracowywania zasad dziedziny Spójność zasobów. Każdy z tych kroków może stanowić punkt wyjścia do dyskusji w ramach zespołu ds. utrzymania ładu w chmurze oraz z zespołami informatycznymi w Twojej organizacji w celu opracowania zasad i procesów wymaganych do zarządzania czynnikami ryzyka powiązanymi z dziedziną Spójność zasobów.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -52,14 +52,15 @@ W poniższych sześciu krokach zamieszczono przykłady i potencjalne opcje, któ
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Szablon dziedziny Spójność zasobów</h3>
+                        <h3>Szablon dotyczący dziedziny Spójność zasobów</h3>
                         <p class="x-hidden-focus">Pobierz szablon umożliwiający dokumentowanie dziedziny Spójność zasobów.</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >

@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3c83e40ab6d08b461095385ac58cf64d74da86a9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 369e12abcf0325ed44719ccb76bf0032b611f8f1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708975"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220434"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Omówienie dziedziny Przyspieszanie wdrażania
 
-Przyspieszenie wdrażania jest jedną z [pięciu dziedzin utrzymania ładu w chmurze](../governance-disciplines.md) w ramach [modelu ładu z przewodnika Cloud Adoption Framework](../index.md). Ta dziedzina koncentruje się na sposobach ustanawiania zasad umożliwiających nadzorowanie konfigurowania lub wdrażania zasobów. Przyspieszanie wdrażania, jedna z pięciu dziedzin utrzymania ładu w chmurze, obejmuje wdrażanie, dostosowywanie konfiguracji oraz możliwość ponownego wykorzystania skryptów. Może to się odbywać za pośrednictwem działań ręcznych lub w pełni zautomatyzowanych działań metodyki DevOps. W obu przypadkach zasady pozostają w dużym stopniu takie same. Gdy ta dziedzina dojrzeje, zespół ds. utrzymania ładu w chmurze może być partnerem w metodyce DevOps i strategiach wdrażania, przyspieszając wdrożenia i usuwając bariery w celu wdrożenia chmury dzięki zastosowaniu zasobów do ponownego wykorzystania.
+Przyspieszenie wdrażania jest jedną z [pięciu dziedzin utrzymania ładu w chmurze](../governance-disciplines.md) w ramach [modelu ładu z przewodnika Cloud Adoption Framework](../index.md). Ta dziedzina koncentruje się na sposobach ustanawiania zasad umożliwiających nadzorowanie konfigurowania lub wdrażania zasobów. Dziedzina Przyspieszanie wdrażania, jedna z pięciu dziedzin utrzymania ładu w chmurze, obejmuje wdrażanie, dostosowywanie konfiguracji oraz możliwość ponownego wykorzystania skryptów. Może to się odbywać za pośrednictwem działań ręcznych lub w pełni zautomatyzowanych działań metodyki DevOps. W obu przypadkach zasady pozostają w dużym stopniu takie same. Gdy ta dziedzina dojrzeje, zespół ds. utrzymania ładu w chmurze może być partnerem w metodyce DevOps i strategiach wdrażania, przyspieszając wdrożenia i usuwając bariery w celu wdrożenia chmury dzięki zastosowaniu zasobów do ponownego wykorzystania.
 
 W tym artykule opisano proces przyspieszania wdrażania występujący w firmie na etapach planowania, kompilowania, wdrażania i obsługi implementowania rozwiązania w chmurze. Żaden pojedynczy dokument nie może opisać wszystkich wymagań wszystkich firm. W związku z tym każda sekcja tego artykułu przedstawia sugerowane minimum i możliwe działania. Celem tych działań jest pomoc w utworzeniu [specjalisty od zasad](../policy-compliance/index.md#minimum-viable-product-mvp-for-policy), ale także ustanowienie struktury na potrzeby ulepszania [zasad przyrostowych](../policy-compliance/index.md#incremental-policy-growth). Zespół ds. utrzymania ładu w chmurze powinien zdecydować, jak dużo zainwestować w te działania, aby poprawić dziedzinę Przyspieszanie wdrażania.
 
@@ -52,14 +52,15 @@ Sześć poniższych kroków pomoże określić zasady utrzymania ładu umożliwi
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Szablon dziedziny Przyspieszanie wdrażania</h3>
+                        <h3>Szablon dotyczący dziedziny Przyspieszanie wdrażania</h3>
                         <p class="x-hidden-focus">Pobierz szablon umożliwiający dokumentowanie dziedziny Przyspieszanie wdrażania.</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >

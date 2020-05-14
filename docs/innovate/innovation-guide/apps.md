@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7f0ebc370b18e5c010322a2dacac8750714810f8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 53bf6e8a6c3e01255e57613b3b1a3cd2fa9cdc07
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427358"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222253"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -161,9 +161,9 @@ Korzystaj z w pełni zarządzanej usługi Kubernetes do obsługi aprowizowania, 
 
 #### <a name="action"></a>Akcja
 
-Aby skonfigurować lub monitorować usługę Azure Kubernetes Service:
+Aby skonfigurować lub monitorować usługę AKS:
 
-1. Przejdź do **usług Azure Kubernetes Services**.
+1. Przejdź do obszaru **Azure Kubernetes Services**.
 2. Konfigurowanie nowej usługi: Wybierz pozycję **Dodaj** i postępuj zgodnie z instrukcjami.
 3. Zarządzanie istniejącymi usługami: Wybierz z listy odpowiednią usługę Kubernetes.
 
@@ -171,7 +171,7 @@ Aby skonfigurować lub monitorować usługę Azure Kubernetes Service:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FManagedClusters]" submitText="Go to Azure Kubernetes services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FManagedClusters]" submitText="Go to Azure Kubernetes Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -185,7 +185,7 @@ Usługa Azure Functions udostępnia platformę do uruchamiania małych fragment�
 
 Środowisko uruchomieniowe Azure Functions obsługuje wiele języków, np. C#, Java, JavaScript i Python. Aby zapoznać się z pełną listą, zobacz [Obsługiwane języki w usłudze Azure Functions](https://docs.microsoft.com/azure/azure-functions/supported-languages).
 
-Kolejną zaletą funkcji jest możliwość ich wyzwalania przez różne akcje i zdarzenia, np. elementy HTTPTrigger, TimerTrigger oraz wyzwalacze z innych usług platformy Azure, takich jak Blob Storage, Event Grid i Service Bus. Aby uzyskać więcej informacji na temat wyzwalaczy i powiązań, zobacz [Pojęcia powiązań i wyzwalaczy usługi Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings).
+Kolejną zaletą funkcji jest możliwość ich wyzwalania przez różne akcje i zdarzenia, np. elementy HTTPTrigger, TimerTrigger oraz wyzwalacze z innych usług platformy Azure, takich jak Blob Storage, Event Grid i Service Bus. Aby uzyskać więcej informacji na temat wyzwalaczy i powiązań, zobacz [Pojęcia dotyczące powiązań i wyzwalaczy usługi Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings).
 
 #### <a name="action"></a>Akcja
 

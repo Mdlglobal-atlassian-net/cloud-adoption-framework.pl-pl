@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cc095a1751e945ca18763757582a6cd27b65d72a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f5bcde9c0eab879eea9c49a7ab46338a141cb1cb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119767"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217017"
 ---
 # <a name="assess-workloads-and-validate-assumptions-before-migration"></a>Ocena obciążeń i weryfikacja założeń przed migracją
 
@@ -20,13 +20,13 @@ Wiele z istniejących obciążeń idealnie nadaje się do migracji do chmury, al
 
 W efekcie przed migracją obciążenia do chmury krytyczne znaczenie ma ocena poszczególnych zasobów powiązanych z tym obciążeniem pod kątem możliwości migracji. Podczas tej oceny zespół ds. wdrażania chmury powinien ocenić zgodność pod względem technicznym, wymaganej architektury, oczekiwań dotyczących wydajności/rozmiaru oraz zależności, aby upewnić się, że zmigrowane obciążenie można efektywnie wdrożyć w chmurze.
 
-Proces *oceny* to pierwsze z czterech działań przyrostowych mających miejsce w ramach iteracji. Jak przedstawiono w artykule wstępnym dotyczącym [złożoności technicznej i zarządzania zmianami](../prerequisites/technical-complexity.md), decyzja powinna zostać podjęta z wyprzedzeniem, aby móc określić sposób wykonania tej fazy. W szczególności należy odpowiedzieć sobie na pytanie, czy ocena zostanie wykonana przez zespół ds. wdrażania w chmurze podczas tego samego przebiegu co rzeczywista migracja. Alternatywnie, czy fala lub model fabryki może zostać użyty do wykonania ocen w oddzielnej iteracji. Jeśli członkowie zespołu nie potrafią odpowiedzieć na to podstawowe pytanie dotyczące procesu, warto ponownie zapoznać się z sekcją [wymagań wstępnych](../prerequisites/index.md).
+Proces _oceny_ to pierwsze z czterech działań przyrostowych mających miejsce w ramach iteracji. Jak przedstawiono w artykule wstępnym dotyczącym [złożoności technicznej i zarządzania zmianami](../prerequisites/technical-complexity.md), decyzja powinna zostać podjęta z wyprzedzeniem, aby móc określić sposób wykonania tej fazy. W szczególności należy odpowiedzieć sobie na pytanie, czy ocena zostanie wykonana przez zespół ds. wdrażania w chmurze podczas tego samego przebiegu co rzeczywista migracja. Alternatywnie, czy fala lub model fabryki może zostać użyty do wykonania ocen w oddzielnej iteracji. Jeśli członkowie zespołu nie potrafią odpowiedzieć na to podstawowe pytanie dotyczące procesu, warto ponownie zapoznać się z sekcją [wymagań wstępnych](../prerequisites/index.md).
 
 ## <a name="objective"></a>Cel
 
 Ocena kandydatów do migracji obejmująca ocenę obciążenia, powiązanych zasobów i zależności przed migracją.
 
-## <a name="definition-of-done"></a>Definicja *gotowości*
+## <a name="definition-of-_done_"></a>Definicja _gotowości_
 
 Ten proces można uznać za ukończony, gdy uzyskano następujące informacje o kandydacie do migracji:
 

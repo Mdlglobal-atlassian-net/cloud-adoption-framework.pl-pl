@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d238918580c2db808a82c52d67d837a055c033e9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: db298f40598bc1060c56901d95f7b325ce548abe
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432578"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214365"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Model migracji opisany w przewodniku Cloud Adoption Framework
 
@@ -29,13 +29,13 @@ Model migracji opisany w przewodniku Cloud Adoption Framework wymaga przeprowadz
 
 ## <a name="envision-an-end-state"></a>Przewidywanie stanu końcowego
 
-Przed rozpoczęciem działań związanych z migracją należy określić w przybliżeniu oczekiwany stan końcowy. Na poniższym diagramie przedstawiono punkt początkowy dla infrastruktury, aplikacji i danych w środowisku lokalnym, który definiuje Twój *majątek cyfrowy*. Podczas procesu migracji te zasoby są przenoszone przy użyciu jednej z pięciu strategii migracji opisanych w temacie [5 zasad racjonalizacji](../../digital-estate/5-rs-of-rationalization.md).
+Przed rozpoczęciem działań związanych z migracją należy określić w przybliżeniu oczekiwany stan końcowy. Na poniższym diagramie przedstawiono punkt początkowy dla infrastruktury, aplikacji i danych w środowisku lokalnym, który definiuje Twój _majątek cyfrowy_. Podczas procesu migracji te zasoby są przenoszone przy użyciu jednej z pięciu strategii migracji opisanych w temacie [Pięć zasad racjonalizacji](../../digital-estate/5-rs-of-rationalization.md).
 
 ![Grafika informacyjna dotycząca opcji migracji](../../_images/migrate/migration-options.png)
 
 Migracja i modernizacja obciążeń może obejmować zakres od prostej migracji opartej na _ponownym hostowaniu_ (nazywanej także migracją _lift and shift_) przy użyciu funkcji infrastruktury jako usługi (IaaS), które nie wymagają wprowadzania zmian w kodzie i aplikacji, przez _refaktoryzację_ z minimalnymi zmianami, po _zmianę architektury_ w celu zmodyfikowania i rozszerzenia kodu i funkcji aplikacji, aby wykorzystać możliwości technologii chmurowych.
 
-Natywne strategie chmurowe i strategie typu „platforma jako usługa” (PaaS) polegają na *przebudowaniu* lokalnych obciążeń przy użyciu ofert platformy Azure i usług zarządzanych. Obciążenia, które mają odpowiednik w postaci ofert w pełni zarządzanego oprogramowania jako usługi (SaaS) w chmurze, można często całkowicie *zastąpić* tymi usługami w ramach procesu migracji.
+Natywne strategie chmurowe i strategie typu „platforma jako usługa” (PaaS) polegają na _przebudowaniu_ lokalnych obciążeń przy użyciu ofert platformy Azure i usług zarządzanych. Obciążenia, które mają odpowiednik w postaci ofert w pełni zarządzanego oprogramowania jako usługi (SaaS) w chmurze, można często całkowicie _zastąpić_ tymi usługami w ramach procesu migracji.
 
 > [!NOTE]
 > W okresie publicznej wersji zapoznawczej modelu Cloud Adoption Framework w tej części opisu tego modelu podkreślana jest strategia migracji oparta na ponownym hostowaniu. Mimo że rozwiązania PaaS i SaaS zostały omówione jako alternatywy, gdy ma to zastosowanie, skupiono się głównie na migracji obciążeń opartych na maszynach wirtualnych przy użyciu możliwości rozwiązań IaaS.

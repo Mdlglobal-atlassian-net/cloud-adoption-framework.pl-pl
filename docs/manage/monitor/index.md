@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 21afe87618a4c00103fa1d2f9c6321c2ca03da2e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b900826ef28aada53a9a73cdae9679d5f35f3007
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80606570"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223766"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Przewodnik monitorowania chmury: Wprowadzenie
 
@@ -57,7 +57,7 @@ Ten artykuł jest częścią serii. Następujące artykuły należy przeczytać 
 Dostępne są usługi i oprogramowanie ułatwiające monitorowanie różnych zasobów hostowanych na platformie Azure, w sieci firmowej lub u innych dostawców usług w chmurze oraz zarządzania nimi. Oto one:
 
 - System Center Operations Manager
-- Usługa Azure Monitor, która teraz obejmuje usługi Log Analytics i Application Insights
+- Usługa Azure Monitor (obejmuje usługi Log Analytics i Application Insights)
 - Usługi Azure Policy i Azure Blueprints
 - Azure Automation
 - Azure Logic Apps

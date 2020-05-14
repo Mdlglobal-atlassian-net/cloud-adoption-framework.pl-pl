@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 4dea8b186d2c37f614be364c605144a744479990
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e7b5811099119e3f3b1c148ae550bd92e8fc8090
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433200"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223256"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -22,7 +22,7 @@ ms.locfileid: "80433200"
 
 # <a name="governance-security-and-compliance-in-azure"></a>Ład, zabezpieczenia i zgodność na platformie Azure
 
-Podczas ustanawiania zasad firmowych i planowania strategii utrzymywania ładu możesz skorzystać z narzędzi i usług, takich jak Azure Policy, Azure Blueprints i Azure Security Center, aby wymusić i zautomatyzować decyzje dotyczące ładu w organizacji. Przed rozpoczęciem planowania ładu, użyj [narzędzia do porównywania stanu nadzoru nad ładem](https://cafbaseline.com), aby zidentyfikować potencjalne luki w podejściu do ładu w organizacji. Aby uzyskać więcej informacji na temat sposobu opracowywania procesów ładu, zapoznaj się ze [wskazówkami dotyczącymi ładu na platformie Azure w przewodniku Cloud Adoption Framework](../../govern/index.md).
+Podczas ustanawiania zasad firmowych i planowania strategii utrzymywania ładu możesz skorzystać z narzędzi i usług, takich jak Azure Policy, Azure Blueprints i Azure Security Center, aby wymusić i zautomatyzować decyzje dotyczące ładu w organizacji. Przed rozpoczęciem planowania ładu, użyj [narzędzia do porównywania stanu nadzoru nad ładem](https://cafbaseline.com), aby zidentyfikować potencjalne luki w podejściu do ładu w organizacji. Aby uzyskać więcej informacji na temat sposobu procesów zapewnienia ładu, zapoznaj się ze [wskazówkami dotyczącymi ładu na platformie Azure w przewodniku Cloud Adoption Framework](../../govern/index.md).
 
 # <a name="azure-blueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
@@ -54,7 +54,7 @@ Aby utworzyć strategię:
 
 ::: zone target="docs"
 
-1. Przejdź do pozycji [Blueprints — Wprowadzenie](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
+1. Przejdź do sekcji [Strategie: wprowadzenie](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
 1. W sekcji **Tworzenie strategii** wybierz pozycję **Utwórz**.
 1. Przefiltruj listę strategii, aby wybrać odpowiednią strategię.
 1. Wprowadź **nazwę strategii** i wybierz odpowiednią **lokalizację definicji**.
@@ -162,8 +162,8 @@ Aby dowiedzieć się więcej, zobacz:
 
 - [Azure Security Center](https://docs.microsoft.com/azure/security-center)
 - [Dostęp just in time do maszyny wirtualnej](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
-- [Porównanie warstw Standardowa i Bezpłatna](https://azure.microsoft.com/pricing/details/security-center)
-- [Cloud Adoption Framework: Dyscyplina ładu w zakresie punktu odniesienia zabezpieczeń](../../govern/security-baseline/index.md)
+- [Warstwy cenowe usługi Security Center](https://azure.microsoft.com/pricing/details/security-center)
+- [Cloud Adoption Framework: dziedzina Punkt odniesienia zabezpieczeń](../../govern/security-baseline/index.md)
 
 ::: zone-end
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7d22bb4b4bae04366c61686862d1ae437185886d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: eec9c7ae36dbe92142226e78afcdd465e4aa66a2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433510"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224225"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,7 +33,7 @@ Zarówno w tradycyjnym, jak i w przyrostowym modelu zapewniania ładu zasady fir
 
 ![Ład korporacyjny i dyscypliny ładu](../../_images/operational-transformation-govern-highres.png)
 
-*Rysunek 1 — ład korporacyjny i dyscypliny ładu.*
+_Rysunek 1. Ład korporacyjny i dyscypliny ładu._
 
 Na powyższej ilustracji pokazano interakcje występujące między ryzykiem biznesowym, zasadami i zgodnością, monitorowaniem oraz wymuszaniem prowadzące do utworzenia strategii ładu. Niżej przedstawiono pięć dyscyplin zapewniających ład w chmurze i zrealizowanie strategii.
 
@@ -53,6 +53,8 @@ W przyrostowym modelu utrzymania ładu w chmurze występuje czasami naturalna r�
 ## <a name="minimum-viable-product-mvp-for-policy"></a>Minimalna konieczna funkcjonalność (MVP) dla zasad
 
 Pierwszym etapem budowania partnerstwa między zespołami ds. ładu w chmurze i wdrażania jest zawarcie umowy dotyczącej minimalnej koniecznej funkcjonalności dla zasad. Minimalna konieczna funkcjonalność ładu w chmurze powinna zakładać, że czynniki ryzyka biznesowego są na początku niewielkie, ale prawdopodobnie będą się zwiększały wraz z wdrażaniem coraz większej liczby usług w chmurze.
+
+<!-- cSpell:ignore HBI -->
 
 Na przykład ryzyko biznesowe jest małe w przypadku firmy wdrażającej pięć maszyn wirtualnych, które nie zawierają żadnych danych o wysokim znaczeniu dla jej działalności. W dalszym etapie procesu wdrażania w chmurze, kiedy liczba maszyn wirtualnych osiągnie 1000 i firma zaczyna przenosić do nich dane o wysokim znaczeniu, rośnie ryzyko biznesowe.
 

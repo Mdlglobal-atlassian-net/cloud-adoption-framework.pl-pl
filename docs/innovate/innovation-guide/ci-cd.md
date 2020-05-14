@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d4c09f7e92f0c023b641148987a1dad0459e91e5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8ba2926d702b12234dd81f93cb6820352c0fbf58
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809024"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222270"
 ---
 ::: zone target="docs"
 
@@ -28,7 +28,7 @@ ms.locfileid: "80809024"
 
 ::: zone-end
 
-Wiesz, że innowacje mają kluczowe znaczenie dla sukcesu firmy. Innowacje nie są osiągane wyłącznie przez wprowadzanie nowych technologii. Należy skupić się na wspieraniu osób, które katalizują wprowadzanie zmian i tworzą nowe poszukiwane wartości. *Deweloperzy* stanową centrum transformacji cyfrowej, a umożliwienie im osiągania lepszych wyników wymaga przyspieszenia ich pracy. Aby uwolnić twórczą energię zespołów deweloperów, musisz je aktywnie wspierać w ich wydajnej pracy, rozwijać ich globalną i bezpieczną współpracę oraz usuwać przeszkody blokujące skalowanie innowacji.
+Wiesz, że innowacje mają kluczowe znaczenie dla sukcesu firmy. Innowacje nie są osiągane wyłącznie przez wprowadzanie nowych technologii. Należy skupić się na wspieraniu osób, które katalizują wprowadzanie zmian i tworzą nowe poszukiwane wartości. _Deweloperzy_ stanową centrum transformacji cyfrowej, a umożliwienie im osiągania lepszych wyników wymaga przyspieszenia ich pracy. Aby uwolnić twórczą energię zespołów deweloperów, musisz je aktywnie wspierać w ich wydajnej pracy, rozwijać ich globalną i bezpieczną współpracę oraz usuwać przeszkody blokujące skalowanie innowacji.
 
 ## <a name="generate-value"></a>Generowanie wartości
 
@@ -77,6 +77,7 @@ Pakiet Azure DevOps udostępnia najlepsze w swojej klasie narzędzia dla każdeg
 
 ::: zone target="chromeless"
 
+<!-- docsTest:ignore "Azure DevOps Projects" -->
 <!-- markdownlint-disable DOCSMD001 -->
 
 ### <a name="action"></a>Akcja
@@ -87,7 +88,7 @@ Aby utworzyć projekt DevOps:
 2. Wybierz pozycję **Utwórz projekt DevOps**.
 3. Wybierz pozycję **Środowisko wykonawcze, struktura i usługa**.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

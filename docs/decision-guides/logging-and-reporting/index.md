@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: fd6f0e42408934bad1b6f45b92bda0f4a9d47e65
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e462f0a20daddaf87eda4c77999cb2680dea643e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996329"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224378"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Przewodnik po decyzjach dotyczących rejestrowania i raportowania
 
@@ -101,7 +101,7 @@ Jeśli nie ma konieczności zachowania lokalnego systemu monitorowania lub chces
 
 Podobnie jak w przypadku podejścia opartego na rozwiązaniu lokalnym, w tym scenariuszu obciążenia w chmurze będą przesyłać dane telemetryczne bezpośrednio do usługi Azure Monitor, a aplikacje lokalne będą przesyłać dane telemetryczne bezpośrednio do usługi Azure Monitor lub agregować te dane lokalnie ma potrzeby pozyskiwania przez usługę Azure Monitor w regularnych odstępach czasu. Usługa Azure Monitor będzie następnie służyć jako główny system monitorowania i raportowania dla całej infrastruktury IT.
 
-Założenia dotyczące monitorowania hybrydowego opartego na chmurze: W przypadku użycia systemów rejestrowania i raportowania opartych na chmurze dla monitorowania hybrydowego przyjmowane są następujące założenia:
+**Założenia dotyczące chmurowego monitorowania hybrydowego:** W przypadku użycia systemów rejestrowania i raportowania opartych na chmurze dla monitorowania hybrydowego przyjmowane są następujące założenia:
 
 - Użytkownik nie polega na istniejących lokalnych systemach monitorowania.
 - Obciążenia nie mają wymagań prawnych lub dotyczących zasad związanych z przechowywaniem danych dzienników lokalnie.

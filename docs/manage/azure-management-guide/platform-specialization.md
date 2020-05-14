@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 421e079d1d219818670328db208a2269bf1dcfdb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 37826614e405ddb5cb15db62ffce7cfe43b2ec20
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426763"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216643"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Specjalizacja platformy dotycząca zarządzania chmurą
 
@@ -30,14 +30,14 @@ Zarówno operacje obciążeń, jak i operacje platformy wymagają zmian w zasada
 
 W tej tabeli przedstawiono kilka typowych procesów i narzędzi oraz potencjalne efekty związane z używaniem rozszerzonych planów bazowych zarządzania:
 
-|Proces  |Narzędzie  |Przeznaczenie  |Sugerowany poziom zarządzania  |
-|---------|---------|---------|---------|
-|Ulepszanie projektu systemu|Azure Architecture Framework|Ulepszanie projektu architektury platformy w celu usprawnienia operacji|Nie dotyczy|
-|Automatyzacja korygowania|Azure Automation|Reagowanie na zaawansowane dane platformy przy użyciu automatyzacji specyficznej dla platformy|Operacje platformy|
-|Wykaz usług|Centrum aplikacji zarządzanych|Udostępnianie samoobsługowego katalogu zatwierdzonych rozwiązań, które spełniają standardy organizacji|Operacje platformy|
-|Wydajność kontenerów|Usługa Azure Monitor dla kontenerów|Monitorowanie i diagnostyka kontenerów|Operacje platformy|
-|Wydajność danych w modelu PaaS — platforma jako usługa|Azure SQL Analytics|Monitorowanie i diagnostyka baz danych PaaS|Operacje platformy|
-|Wydajność danych w modelu IaaS — infrastruktura jako usługa|SQL Server Health Check|Monitorowanie i diagnostyka baz danych IaaS|Operacje platformy|
+| Proces | Narzędzie | Przeznaczenie  | Sugerowany poziom zarządzania |
+|---|---|---|---|
+| Ulepszanie projektu systemu | Azure Architecture Framework | Ulepszanie projektu architektury platformy w celu usprawnienia operacji | Nie dotyczy |
+| Automatyzacja korygowania | Azure Automation | Reagowanie na zaawansowane dane platformy przy użyciu automatyzacji specyficznej dla platformy | Operacje platformy |
+| Wykaz usług | Centrum aplikacji zarządzanych | Udostępnianie samoobsługowego katalogu zatwierdzonych rozwiązań, które spełniają standardy organizacji | Operacje platformy |
+| Wydajność kontenerów | Usługa Azure Monitor dla kontenerów | Monitorowanie i diagnostyka kontenerów | Operacje platformy |
+| Wydajność danych w modelu PaaS — platforma jako usługa | Azure SQL Analytics | Monitorowanie i diagnostyka baz danych PaaS | Operacje platformy |
+| Wydajność danych w modelu IaaS — infrastruktura jako usługa | SQL Server Health Check | Monitorowanie i diagnostyka baz danych IaaS | Operacje platformy |
 
 ## <a name="high-level-process"></a>Przetwarzanie wysokiego poziomu
 
@@ -65,11 +65,11 @@ W ramach uzupełnienia tego rozwiązania usługa Azure Architecture Framework of
 
 Usługa Azure Architecture Framework koncentruje się na poprawie pięciu filarów projektowania systemu:
 
-- **Skalowalność:** Skalowanie typowych zasobów platformy w celu obsługi zwiększonego obciążenia
-- **Dostępność:** Ograniczenie przerw w działaniu przez zwiększenie potencjału czasu pracy
-- **Odporność:** Skrócenie czasu odzyskiwania w celu ograniczenia czasu trwania przerw
-- **Bezpieczeństwo:** Ochrona aplikacji i danych przed zagrożeniami zewnętrznymi
-- **Zarządzanie:** Procesy operacyjne charakterystyczne dla tych typowych zasobów platformy
+- **Skalowalność:** Skalowanie typowych zasobów platformy w celu obsługi zwiększonego obciążenia.
+- **Dostępność:** Ograniczenie przerw w działaniu przez zwiększenie potencjału czasu pracy.
+- **Odporność:** Skrócenie czasu odzyskiwania w celu ograniczenia czasu trwania przerw.
+- **Bezpieczeństwo:** Ochrona aplikacji i danych przed zagrożeniami zewnętrznymi.
+- **Zarządzanie:** Procesy operacyjne charakterystyczne dla tych typowych zasobów platformy.
 
 Dług techniczny i błędy architektury powodują większość przerw w działalności biznesowej. W przypadku istniejących wdrożeń ulepszenia projektowania systemów można widzieć jako płatności związane z istniejącym długiem technicznym. W przypadku nowych wdrożeń te ulepszenia można widzieć jako unikanie długu technicznego.
 

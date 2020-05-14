@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 18151d68f425f5fa6d966e847b1f6131cb8f838b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8f90848374e4d427ac814c6e24547999ba3dde66
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996006"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215164"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Przewodnik po decyzjach dotyczących sieci zdefiniowanej programowo
 
@@ -23,11 +23,11 @@ Sieć zdefiniowana programowo (SDN, Software Defined Networking) to architektura
 
 ![Wykres opcji sieci od najprostszych do najbardziej złożonych, powiązany z hiperlinkami poniżej](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-Idź do: [Tylko usługa PaaS](./paas-only.md) | [Natywne dla chmury](./cloud-native.md) | [Strefa DMZ w chmurze](./cloud-dmz.md) [Hybrydowe](./hybrid.md) | [Model piasty i szprych](./hub-spoke.md) | [Dowiedz się więcej](#learn-more)
+Idź do: [Tylko usługa PaaS](./paas-only.md) | [Natywne dla chmury](./cloud-native.md) | [Strefa DMZ w chmurze](./cloud-dmz.md) | [Hybrydowe](./hybrid.md) | [Model gwiazdy](./hub-spoke.md) | [Dowiedz się więcej](#learn-more)
 
 Sieć SDN oferuje kilka opcji z różnymi poziomami cen i złożoności. Powyższy przewodnik odnajdywania zawiera informacje referencyjne na temat szybkiego personalizowania tych opcji w celu najlepszego dopasowania ich do określonych strategii biznesowych i technologicznych.
 
-Punkt szczytowy w tym przewodniku zależy od kilku kluczowych decyzji, które zespół ds. strategii chmury podjął, zanim zaczął podejmować decyzje dotyczące architektury sieci. Najważniejsze wśród nich to decyzje dotyczące [cyfrowej definicji infrastruktury](../../digital-estate/index.md) i [projektu subskrypcji](../subscriptions/index.md) (które mogą również wymagać danych wejściowych decyzji związanych z księgowością w chmurze i globalnej strategii rynkowej).
+Punkt szczytowy w tym przewodniku zależy od kilku kluczowych decyzji, które zespół ds. strategii chmury podjął, zanim zaczął podejmować decyzje dotyczące architektury sieci. Najważniejsze wśród nich to decyzje dotyczące [cyfrowej definicji infrastruktury](../../digital-estate/index.md) i [projektu subskrypcji](../subscriptions/index.md), które mogą również wymagać danych wejściowych decyzji związanych z księgowością w chmurze i globalnej strategii rynkowej.
 
 Prawdopodobieństwo, że ten punkt szczytowy znacząco wpłynie na małe wdrożenia w pojedynczym regionie z liczbą maszyn wirtualnych mniejszą niż 1000, jest niskie. Z drugiej strony decyzje dotyczące sieci SDN i ten kluczowy punkt szczytowy mogą mieć znaczący wpływ na duże operacje wdrażania z liczbą maszyn wirtualnych większą niż 1000, wieloma jednostkami biznesowymi lub wieloma rynkami geopolitycznymi.
 

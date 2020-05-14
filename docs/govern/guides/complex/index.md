@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4ca434bd7812c3752c7905286d70add6353b9d81
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 257b915e579136e64ae88262a3debdb0b2dbb527
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396222"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220179"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Przewodnik dotyczący ładu dla przedsiębiorstw złożonych
 
@@ -40,11 +40,11 @@ Każda aplikacja powinna zostać wdrożona w odpowiednim obszarze grupy zarządz
 
 1. Najpierw zdefiniuj grupę zarządzania dla każdej jednostki biznesowej ze szczegółową hierarchią, która odzwierciedla lokalizację geograficzną, a następnie typ środowiska (na przykład środowisko produkcyjne lub nieprodukcyjne).
 
-1. Utwórz subskrypcję produkcyjną i subskrypcję nieprodukcyjną dla każdej unikatowej kombinacji odrębnej jednostki biznesowej lub lokalizacji geograficznej. Tworzenie różnych subskrypcji wymaga uważnego podejścia. Aby uzyskać więcej informacji, zobacz [Przewodnik po decyzji dotyczącej subskrypcji](../../../decision-guides/subscriptions/index.md).
+1. Utwórz subskrypcję produkcyjną i subskrypcję nieprodukcyjną dla każdej unikatowej kombinacji odrębnej jednostki biznesowej lub lokalizacji geograficznej. Tworzenie różnych subskrypcji wymaga uważnego podejścia. Aby uzyskać więcej informacji, zobacz [przewodnik po decyzji dotyczącej subskrypcji](../../../decision-guides/subscriptions/index.md).
 
 1. Na każdym poziomie tej hierarchii grupowania zastosuj [spójną nomenklaturę](../../../ready/azure-best-practices/naming-and-tagging.md).
 
-1. Grupy zasobów powinny być wdrażane z uwzględnieniem ich cyklu życia zawartości. Zasoby, które są wspólnie tworzone, zarządzane i wycofywane, powinny należeć do tej samej grupy zasobów. Aby uzyskać więcej informacji o najlepszych rozwiązaniach dotyczących używania grup zasobów, [zobacz tutaj](../../../decision-guides/resource-consistency/index.md).
+1. Grupy zasobów powinny być wdrażane z uwzględnieniem ich cyklu życia zawartości. Zasoby, które są wspólnie tworzone, zarządzane i wycofywane, powinny należeć do tej samej grupy zasobów. Więcej informacji na temat najlepszych rozwiązań dotyczących używania grup zasobów znajdziesz [tutaj](../../../decision-guides/resource-consistency/index.md).
 
 1. [Wybór regionu](../../../migrate/azure-best-practices/multiple-regions.md) jest niezwykle istotny i należy o nim pamiętać, aby praca w sieci, monitorowanie i inspekcja odbywały się w odpowiedni sposób względem operacji przełączenia w tryb failover i powrotu po awarii, oraz wysyłane było potwierdzenie, że [wymagane jednostki SKU są dostępne w preferowanych regionach](https://azure.microsoft.com/global-infrastructure/services).
 
@@ -69,7 +69,7 @@ Po wdrożeniu tego programu MVP można szybko włączyć do środowiska dodatkow
 
 ## <a name="what-does-this-guidance-provide"></a>Co zapewniają te wskazówki?
 
-W programie MVP ustanawiane są praktyki i narzędzia z dyscypliny [Przyspieszanie wdrażania](../../deployment-acceleration/index.md) w celu szybkiego zastosowania zasad firmowych. W szczególności w programie MVP są używane usługi Azure Blueprints i Azure Policy oraz grupy zarządzania platformy Azure w celu zastosowania kilku podstawowych zasad firmowych, jak zdefiniowano w opisie dla tej fikcyjnej firmy. Te zasady firmowe są stosowane przy użyciu szablonów usługi Azure Resource Manager i zasad platformy Azure w celu ustanowienia małego planu bazowego dla tożsamości i zabezpieczeń.
+W programie MVP określono praktyki i narzędzia z dyscypliny [Przyspieszanie wdrażania](../../deployment-acceleration/index.md) umożliwiające szybkie zastosowanie zasad firmowych. W szczególności w programie MVP są używane usługi Azure Blueprints i Azure Policy oraz grupy zarządzania platformy Azure w celu zastosowania kilku podstawowych zasad firmowych, jak zdefiniowano w opisie dla tej fikcyjnej firmy. Te zasady firmowe są stosowane przy użyciu szablonów usługi Azure Resource Manager i zasad platformy Azure w celu ustanowienia małego planu bazowego dla tożsamości i zabezpieczeń.
 
 ![Przykład programu MVP ładu przyrostowego](../../../_images/govern/governance-mvp.png)
 

@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bb09c780a38576b8f4c8154290b4ca4b6cae7309
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b747a6f0d50fbf2510dc3a5220f72d513e8d1cb3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426776"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216711"
 ---
-<!-- cSpell:ignore WSUS -->
+<!-- cSpell:ignore WSUS getting started -->
 
 # <a name="operational-compliance-in-azure"></a>Zgodność operacyjna na platformie Azure
 
@@ -28,12 +28,12 @@ Poprawa zgodności operacyjnej zmniejsza prawdopodobieństwo wystąpienia awarii
 
 Ta tabela zawiera sugerowane wartości minimalne planu bazowego zarządzania dla dowolnego środowiska klasy korporacyjnej.
 
-|Proces  |Narzędzie  |Przeznaczenie  |
-|---------|---------|---------|
-|Zarządzanie poprawkami|Zarządzanie aktualizacjami|Planowanie aktualizacji i zarządzanie nimi|
-|Wymuszanie zasad|Azure Policy|Wymuszanie zasad w celu zapewnienia zgodności środowiska i gościa|
-|Konfiguracja środowiska|Azure Blueprints|Zautomatyzowana zgodność dla podstawowych usług|
-|Konfiguracja zasobu|Desired State Configuration|Zautomatyzowana konfiguracja w systemie operacyjnym gościa i niektóre aspekty środowiska|
+| Proces | Narzędzie | Przeznaczenie |
+|---|---|---|
+| Zarządzanie poprawkami | Zarządzanie aktualizacjami | Planowanie aktualizacji i zarządzanie nimi |
+| Wymuszanie zasad | Azure Policy | Wymuszanie zasad w celu zapewnienia zgodności środowiska i gościa |
+| Konfiguracja środowiska | Azure Blueprints | Zautomatyzowana zgodność dla podstawowych usług |
+| Konfiguracja zasobu | Desired State Configuration | Zautomatyzowana konfiguracja w systemie operacyjnym gościa i niektóre aspekty środowiska |
 
 ::: zone target="docs"
 
@@ -48,10 +48,10 @@ Ta tabela zawiera sugerowane wartości minimalne planu bazowego zarządzania dla
 
 W celu przeprowadzania ocen i wdrożeń aktualizacji na komputerach zarządzanych przez rozwiązanie Update Management są używane następujące konfiguracje:
 
-- Program Microsoft Monitoring Agent (MMA) dla systemu Windows lub Linux
-- Platforma PowerShell Desired State Configuration (DSC) dla systemu Linux
-- Azure Automation — hybrydowy proces roboczy elementu Runbook
-- Usługa Microsoft Update lub Windows Server Update Services (WSUS) dla komputerów z systemem Windows
+- Program Microsoft Monitoring Agent (MMA) dla systemu Windows lub Linux.
+- Platforma PowerShell Desired State Configuration (DSC) dla systemu Linux.
+- Hybrydowy proces roboczy elementu Runbook w usłudze Azure Automation.
+- Usługa Microsoft Update lub Windows Server Update Services (WSUS) dla komputerów z systemem Windows.
 
 Aby uzyskać więcej informacji, zobacz [Rozwiązanie Update Management](https://docs.microsoft.com/azure/automation/automation-update-management).
 

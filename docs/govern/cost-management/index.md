@@ -9,19 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ebb0f0899ad8ea4e5f26c43b0486c56560b4dd14
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4b0d1c727a0b224071d008e82af16a142e98d60a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708873"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220740"
 ---
 # <a name="cost-management-discipline-overview"></a>Omówienie dziedziny Zarządzanie kosztami
 
-Zarządzanie kosztami jest jedną z [pięciu dziedzin utrzymania ładu w chmurze](../governance-disciplines.md) w ramach [modelu utrzymania ładu z przewodnika Cloud Adoption Framework](../index.md). Dla wielu klientów koszt utrzymania ładu stanowi główny problem podczas wdrażania technologii usług w chmurze. Potrzeby w zakresie równoważenia wydajności, tempo wdrażania i koszty usług w chmurze mogą być wyzwaniem. Jest to szczególnie istotne w czasie dużych przekształceń firmy obejmujących technologie usług w chmurze. W tej sekcji opisano metodę tworzenia dziedziny Zarządzanie kosztami w ramach strategii utrzymania ładu w chmurze.
+Zarządzanie kosztami jest jedną z [pięciu dziedzin utrzymania ładu w chmurze](../governance-disciplines.md) w ramach [modelu utrzymania ładu z przewodnika Cloud Adoption Framework](../index.md). Dla wielu klientów utrzymanie ładu w zakresie kosztów stanowi główny problem podczas wdrażania technologii usług w chmurze. Potrzeby w zakresie równoważenia wydajności, tempo wdrażania i koszty usług w chmurze mogą być wyzwaniem. Jest to szczególnie istotne w czasie dużych przekształceń firmy obejmujących technologie usług w chmurze. W tej sekcji opisano metodę tworzenia dziedziny Zarządzanie kosztami w ramach strategii utrzymania ładu w chmurze.
 
 > [!NOTE]
-> Utrzymanie ładu dla dziedziny Zarządzanie kosztami nie zastępuje istniejących zespołów biznesowych, praktyk księgowych i procedur, które są zaangażowane w zarządzanie finansowe kosztami związanymi z infrastrukturą IT w organizacji. Najważniejszym zadaniem tej dziedziny jest identyfikowanie potencjalnych zagrożeń związanych z chmurą w odniesieniu do wydatków na infrastrukturę IT oraz przekazywanie wskazówek mających na celu ograniczenie ryzyka do zespołów biznesowych i informatycznych odpowiedzialnych za wdrażanie zasobów w chmurze i zarządzanie nimi.
+> Dziedzina Zarządzanie kosztami nie zastępuje istniejących zespołów biznesowych, praktyk księgowych i procedur, które są zaangażowane w zarządzanie finansowe kosztami związanymi z infrastrukturą IT w organizacji. Najważniejszym zadaniem tej dziedziny jest identyfikowanie potencjalnych zagrożeń związanych z chmurą w odniesieniu do wydatków na infrastrukturę IT oraz przekazywanie wskazówek mających na celu ograniczenie ryzyka do zespołów biznesowych i informatycznych odpowiedzialnych za wdrażanie zasobów w chmurze i zarządzanie nimi.
 
 Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Jednak decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie odpowiednich członków zespołów biznesowych i informatycznych oraz dyskusje z nimi. W szczególności dotyczy to liderów odpowiedzialnych za posiadanie obciążeń opartych na chmurze, zarządzanie nimi i płacenie za nie.
 
@@ -50,14 +50,15 @@ Sześć poniższych kroków ułatwi zdefiniowanie zasad utrzymania ładu umożli
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Szablon dziedziny Zarządzanie kosztami</h3>
+                        <h3>Szablon dotyczący dziedziny Zarządzanie kosztami</h3>
                         <p class="x-hidden-focus">Pobierz szablon umożliwiający dokumentowanie dziedziny Zarządzanie kosztami.</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a1c100c4c3c9a960867f0666853df742ecf68c3d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: feb59290437318cfe43bed824cfde5233e357e11
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997579"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217034"
 ---
 ::: zone target="docs"
 
@@ -71,7 +71,7 @@ Podczas oceniania obciążeń związanych z migracją zidentyfikuj aplikacje, kt
 ## <a name="learn-more"></a>Dowiedz się więcej
 
 - [Przewodnik po decyzjach dotyczących narzędzi migracji w obrębie struktury wdrażania chmury](../../decision-guides/migrate-decision-guide/index.md)
-- [5 zasad racjonalizacji](../../digital-estate/5-rs-of-rationalization.md)
+- [Pięć zasad racjonalizacji](../../digital-estate/5-rs-of-rationalization.md)
 
 # <a name="planning-checklist"></a>[Lista kontrolna dotycząca planowania](#tab/Checklist)
 
@@ -81,7 +81,7 @@ Przed rozpoczęciem migracji należy spełnić pewne wymagania wstępne. Szczeg�
 >
 > - **Identyfikowanie osób biorących udział w projekcie:** zidentyfikuj kluczowe osoby, które mają rolę do odegrania podczas migracji lub które będą stanowić część jej wyniku.
 > - **Identyfikowanie kluczowych kamieni milowych:** aby efektywnie planować osie czasu migracji, zidentyfikuj kluczowe kamienie milowe do osiągnięcia.
-> - **Identyfikowanie strategii migracji:** ustal, z których z 5 zasad racjonalizacji będziesz korzystać.
+> - **Identyfikowanie strategii migracji:** ustal, z których z pięciu zasad racjonalizacji będziesz korzystać.
 > - **Ocena dopasowania pod względem technicznym:** zweryfikuj gotowość techniczną i przydatność do migracji, a także określ poziom pomocy, której możesz wymagać od partnerów zewnętrznych lub działu pomocy technicznej platformy Azure.
 > - **Planowanie migracji:** przeprowadź szczegółową ocenę i planowanie wymagane do przygotowania zasobów (infrastruktury, aplikacji i danych), a także infrastruktury platformy Azure do migracji.
 > - **Testowanie migracji:** zweryfikuj plan migracji, wykonując migrację testową w ograniczonym zakresie.
@@ -102,8 +102,8 @@ Jeśli wybierzesz podejście do migracji obejmujące ponowne hostowanie, istotne
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-- [5 zasad racjonalizacji](../../digital-estate/5-rs-of-rationalization.md)
-- [Przewodnik po decyzjach dotyczących narzędzi migracji](../../decision-guides/migrate-decision-guide/index.md)
+- [Pięć zasad racjonalizacji](../../digital-estate/5-rs-of-rationalization.md)
+- [Przewodnik po decyzjach dotyczących narzędzi do migracji](../../decision-guides/migrate-decision-guide/index.md)
 - [Lista kontrolna dotycząca planowania w obrębie struktury wdrażania chmury](../migration-considerations/prerequisites/planning-checklist.md)
 
 ::: zone-end

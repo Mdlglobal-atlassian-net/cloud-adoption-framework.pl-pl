@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7ffdc348d9f5e1d1e9a76155ce9de2b3e19ccf2a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a5cafc31b5ede4060aedf78ff40215cb7d132aaa
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426874"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216796"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -22,12 +22,16 @@ ms.locfileid: "80426874"
 
 Pierwsze trzy dyscypliny zarządzania chmurą opisują plan bazowy zarządzania. W poprzednich artykułach tego przewodnika omówiono minimalną konieczną funkcjonalność (MVP) dla usług zarządzania chmurą, określaną jako plan bazowy zarządzania. W tym artykule przedstawiono kilka typowych usprawnień planu bazowego.
 
-Celem planu bazowego zarządzania jest utworzenie spójnej oferty zapewniającej minimalny poziom zobowiązania biznesowego dla *wszystkich* obsługiwanych obciążeń. Taki plan bazowy wspólnych, powtarzalnych ofert zarządzania umożliwia zespołowi skuteczne optymalizowanie zarządzania operacyjnego z minimalnymi odchyleniami.
+Celem planu bazowego zarządzania jest utworzenie spójnej oferty zapewniającej minimalny poziom zobowiązania biznesowego dla _wszystkich_ obsługiwanych obciążeń. Taki plan bazowy wspólnych, powtarzalnych ofert zarządzania umożliwia zespołowi skuteczne optymalizowanie zarządzania operacyjnego z minimalnymi odchyleniami.
 
 Może być jednak konieczne zwiększenie zaangażowania w działalność biznesową, wykraczające poza zakres oferty standardowej. Na poniższej ilustracji i na liście przedstawiono trzy sposoby rozszerzenia planu bazowego zarządzania.
 
 ![Rozszerzenie planu bazowego zarządzania chmurą](../../_images/manage/beyond-the-baseline.png)
 
+- **Rozszerzony plan bazowy zarządzania:**
+  - Dodaj rozszerzenia planu bazowego zarządzania, jeśli większość obciążeń w portfolio ma wspólne wymaganie.
+  - To zapewnia udoskonalone zobowiązania biznesowe dzięki dodatkowym, natywnym dla chmury narzędziom i procesom obsługi operacji.
+  - Rozszerzenia planu bazowego nie powinny mieć wpływu na architekturę poszczególnych obciążeń.
 - **Operacje obciążeń:**
   - Inwestycje w operacje największe na obciążenie.
   - Najwyższy poziom odporności.
@@ -38,9 +42,6 @@ Może być jednak konieczne zwiększenie zaangażowania w działalność bizneso
   - Ulepszenia w zakresie odporności wpływają na wszystkie obciążenia korzystające ze zdefiniowanej platformy.
   - Zalecane dla około 20% platform o krytycznym znaczeniu.
   - Zwykle zarezerwowane dla obciążeń o średniej i dużej ważności.
-- **Rozszerzony plan bazowy zarządzania:**
-  - Relatywnie najniższe inwestycje w operacje.
-  - Nieco udoskonalone zobowiązania biznesowe dzięki dodatkowym, natywnym dla chmury narzędziom i procesom obsługi operacji.
 
 Zarówno operacje obciążeń, jak i operacje platformy wymagają zmian w zasadach projektowania i architektury. Ich wprowadzenie może zająć trochę czasu i spowodować zwiększenie kosztów operacyjnych. Rozszerzony plan bazowy zarządzania pozwala zmniejszyć liczbę obciążeń wymagających takich inwestycji, zapewniając wystarczającą poprawę zobowiązania biznesowego.
 
@@ -48,12 +49,13 @@ W tej tabeli przedstawiono kilka procesów i narzędzi oraz potencjalne efekty z
 
 | Dyscyplina  | Proces  | Narzędzie | Potencjalny wpływ | Dowiedz się więcej |
 |---|---|---|---|---|
-|Spis i widoczność|Śledzenie zmiany usługi|Azure Resource Graph|Lepszy wgląd w zmiany usług platformy Azure może pomóc w szybszym wykrywaniu negatywnych skutków lub korygowaniu.|[Omówienie usługi Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview)|
-|Spis i widoczność|Integracja zarządzania usługami IT (ITSM)|Łącznik zarządzania usługami IT|Automatyczne połączenie z narzędziem ITSM zapewnia lepsze rozeznanie.|[Łącznik zarządzania usługami IT (ITSMC)](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview)|
-|Zgodność operacyjna|Automatyzacja operacji|Azure Automation|Automatyzacja zgodności operacyjnej umożliwia szybsze i bardziej precyzyjne reagowanie na zmianę.|Więcej informacji znajduje się w poniższych sekcjach.|
-|Zgodność operacyjna|Operacje w wielu chmurach|Azure Automation — hybrydowy proces roboczy elementu Runbook|Automatyzacja operacji w wielu chmurach.|[Omówienie hybrydowego procesu roboczego elementu Runbook](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)|
-|Zgodność operacyjna|Automatyzacja gościa| Konfiguracja żądanego stanu (Desired State Configuration, DSC)|Oparta na kodzie konfiguracja systemów operacyjnych gościa zmniejsza liczbę błędów i odchyleń konfiguracji.|[Omówienie konfiguracji DSC](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview)|
-|Ochrona i odzyskiwanie|Powiadomienie o naruszeniu|Azure Security Center|Rozszerzenie ochrony o wyzwalacze odzyskiwania po naruszeniu zabezpieczeń.|Więcej informacji znajduje się w poniższych sekcjach.|
+| Spis i widoczność | Śledzenie zmiany usługi | Azure Resource Graph | Lepszy wgląd w zmiany usług platformy Azure może pomóc w szybszym wykrywaniu negatywnych skutków lub korygowaniu. | [Omówienie usługi Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) |
+| Spis i widoczność | Integracja zarządzania usługami IT (ITSM) | Łącznik zarządzania usługami IT | Automatyczne połączenie z narzędziem ITSM zapewnia lepsze rozeznanie. | [Łącznik zarządzania usługami IT (ITSMC)](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview) |
+| Zgodność operacyjna | Automatyzacja operacji | Azure Automation | Automatyzacja zgodności operacyjnej umożliwia szybsze i bardziej precyzyjne reagowanie na zmianę. | Więcej informacji znajduje się w poniższych sekcjach. |
+| Zgodność operacyjna | Automatyzacja wydajności | Azure Automation | Zautomatyzuj proces zapewnienia zgodności operacyjnej z oczekiwaniami dotyczącymi wydajności, aby rozwiązać typowe problemy ze skalowaniem lub rozmiarem określonych zasobów. | Więcej informacji znajduje się w poniższych sekcjach. |
+| Zgodność operacyjna | Operacje w wielu chmurach | Azure Automation — hybrydowy proces roboczy elementu Runbook | Automatyzacja operacji w wielu chmurach. | [Omówienie hybrydowego procesu roboczego elementu Runbook](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker) |
+| Zgodność operacyjna | Automatyzacja gościa |  Konfiguracja żądanego stanu (Desired State Configuration, DSC) | Oparta na kodzie konfiguracja systemów operacyjnych gościa zmniejsza liczbę błędów i odchyleń konfiguracji. | [Omówienie konfiguracji DSC](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview) |
+| Ochrona i odzyskiwanie | Powiadomienie o naruszeniu | Azure Security Center | Rozszerzenie ochrony o wyzwalacze odzyskiwania po naruszeniu zabezpieczeń. | Więcej informacji znajduje się w poniższych sekcjach. |
 
 ::: zone target="docs"
 
@@ -76,7 +78,7 @@ Element Runbook to podstawowa jednostka kodu umożliwiająca wykonanie automatyc
 
 Aby utworzyć elementy Runbook lub zarządzać nimi:
 
-1. Wybierz pozycję [Azure Automation](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Wybierz pozycję [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Wybierz pozycję **Konta usługi Automation** i zaznacz jedno z wyświetlonych kont.
 1. Przejdź do pozycji **Automatyzacja procesów**.
 1. Przedstawione opcje umożliwiają tworzenie elementów Runbook, harmonogramów i innych funkcji automatycznego korygowania oraz zarządzanie nimi.

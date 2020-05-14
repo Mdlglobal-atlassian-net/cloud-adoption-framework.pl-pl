@@ -9,19 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5e2549c252b8fddf6cd549215704300a764f4040
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9c8bc1a9dd0c475a72db73ad032dabd1ff83f476
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997258"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219856"
 ---
 # <a name="security-baseline-discipline-overview"></a>Omówienie dziedziny Punkt odniesienia zabezpieczeń
 
 Punkt odniesienia zabezpieczeń jest jedną z [pięciu dziedzin utrzymania ładu w chmurze](../governance-disciplines.md) w ramach [modelu utrzymania ładu z przewodnika Cloud Adoption Framework](../index.md). Zabezpieczenia są składnikiem każdego wdrożenia IT, a chmura wprowadza unikatowe zagadnienia związane z bezpieczeństwem. Wiele firm podlega wymaganiom prawnym, dlatego ochrona poufnych danych stała się głównym priorytetem organizacji, która rozważa przekształcenie do chmury. Identyfikowanie potencjalnych zagrożeń w środowisku chmury oraz ustanawianie procesów i procedur umożliwiających eliminowanie tych zagrożeń powinno mieć priorytet dla każdego zespołu IT zajmującego się zabezpieczeniami lub cyberbezpieczeństwem. Dziedzina Punkt odniesienia zabezpieczeń gwarantuje, że wymagania techniczne i ograniczenia zabezpieczeń są spójnie stosowane w środowiskach w chmurze w miarę dojrzewania wymagań.
 
 > [!NOTE]
-> Utrzymanie ładu punktu odniesienia zabezpieczeń nie zastąpi istniejących zespołów, procesów i procedur IT, które umożliwiają w organizacji zabezpieczanie zasobów wdrożonych w organizacji. Najważniejszym zadaniem tej dziedziny jest identyfikowanie związanych z bezpieczeństwem czynników ryzyka biznesowego i przekazywanie pracownikom działu IT odpowiedzialnym za infrastrukturę zabezpieczeń wskazówek mających na celu ograniczenie ryzyka. Podczas tworzenia zasad i procesów utrzymania ładu należy uwzględnić odpowiednie zespoły informatyczne w procesach planowania i przeglądania.
+> Dyscyplina Punkt odniesienia zabezpieczeń nie zastąpi istniejących zespołów, procesów i procedur IT, które umożliwiają w organizacji zabezpieczanie zasobów wdrożonych w organizacji. Najważniejszym zadaniem tej dziedziny jest identyfikowanie związanych z bezpieczeństwem czynników ryzyka biznesowego i przekazywanie pracownikom działu IT odpowiedzialnym za infrastrukturę zabezpieczeń wskazówek mających na celu ograniczenie ryzyka. Podczas tworzenia zasad i procesów utrzymania ładu należy uwzględnić odpowiednie zespoły informatyczne w procesach planowania i przeglądania.
 
 W tym artykule opisano metodę tworzenia dziedziny Punkt odniesienia zabezpieczeń w ramach strategii utrzymania ładu w chmurze. Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Jednak decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie odpowiednich członków zespołów IT i zespołów ds. zabezpieczeń oraz dyskusje z nimi. W szczególności dotyczy to liderów technicznych odpowiedzialnych za implementowanie usług obsługi sieci, szyfrowania i tożsamości.
 
@@ -36,7 +36,7 @@ Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wym
 
 ## <a name="develop-governance-policy-statements"></a>Opracowywanie instrukcji zasad utrzymania ładu
 
-W poniższych sześciu krokach zamieszczono przykłady i potencjalne opcje, które należy wziąć pod uwagę podczas opracowywania zasad utrzymania ładu dziedziny Punkt odniesienia zabezpieczeń. Każdy z tych kroków może stanowić punkt wyjścia do dyskusji w ramach zespołu ds. utrzymania ładu w chmurze oraz z zespołami biznesowymi, informatycznymi i zajmującymi się zabezpieczeniami w organizacji w celu opracowania zasad i procesów wymaganych do zarządzania czynnikami ryzyka powiązanymi z zabezpieczeniami.
+W poniższych sześciu krokach zamieszczono przykłady i potencjalne opcje, które należy wziąć pod uwagę podczas opracowywania dziedziny Punkt odniesienia zabezpieczeń. Każdy z tych kroków może stanowić punkt wyjścia do dyskusji w ramach zespołu ds. utrzymania ładu w chmurze oraz z zespołami biznesowymi, informatycznymi i zajmującymi się zabezpieczeniami w organizacji w celu opracowania zasad i procesów wymaganych do zarządzania czynnikami ryzyka powiązanymi z zabezpieczeniami.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -52,14 +52,15 @@ W poniższych sześciu krokach zamieszczono przykłady i potencjalne opcje, któ
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Szablon dziedziny Punkt odniesienia zabezpieczeń</h3>
+                        <h3>Szablon dotyczący dziedziny Punkt odniesienia zabezpieczeń</h3>
                         <p class="x-hidden-focus">Pobierz szablon umożliwiający dokumentowanie dziedziny Punkt odniesienia zabezpieczeń.</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >

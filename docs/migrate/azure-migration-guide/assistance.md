@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 16b82b3be2789a764dcccecc6ef91ef91f3098b2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ea911e51b909a9787cb0d0d327cebd884c36a275
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429520"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214501"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -42,7 +42,7 @@ Jeśli podczas używania platformy Azure chcesz skorzystać z pomocy technicznej
 
 ::: zone target="docs"
 
-1. W witrynie **Azure Portal** wybierz pozycję [Pomoc i obsługa techniczna](https://portal.azure.com).
+1. W witrynie [Azure Portal](https://portal.azure.com) wybierz pozycję **Pomoc i obsługa techniczna**.
 1. Wybierz pozycję **Nowy wniosek o pomoc techniczną**, aby wprowadzić szczegóły dotyczące problemu i skontaktować się z pomocą techniczną.
 
 ::: zone-end
@@ -60,7 +60,7 @@ Jeśli podczas używania platformy Azure chcesz skorzystać z pomocy technicznej
 
 Aby wyświetlić swoje wnioski o pomoc techniczną, wykonaj następujące czynności:
 
-1. W witrynie **Azure Portal** wybierz pozycję [Pomoc i obsługa techniczna](https://portal.azure.com).
+1. W witrynie [Azure Portal](https://portal.azure.com) wybierz pozycję **Pomoc i obsługa techniczna**.
 1. Wybierz pozycję **Wszystkie wnioski o pomoc techniczną**, aby wyświetlić swoje wnioski o pomoc techniczną.
 
 ::: zone-end
@@ -78,7 +78,7 @@ Potrzebujesz szczegółowej wskazówki od inżyniera pomocy technicznej?
 
 ::: zone target="docs"
 
-1. W witrynie **Azure Portal** wybierz pozycję [Pomoc i obsługa techniczna](https://portal.azure.com).
+1. W witrynie [Azure Portal](https://portal.azure.com) wybierz pozycję **Pomoc i obsługa techniczna**.
 1. Wybierz pozycję **Plany pomocy technicznej**, aby przejrzeć dostępne plany.
 
 ::: zone-end
@@ -107,9 +107,9 @@ Następujące społeczności online zapewniają społecznościową pomoc technic
 
 ## <a name="azure-solutions-partner"></a>Partner rozwiązań platformy Azure
 
-Dostawcy rozwiązań certyfikowani przez firmę Microsoft specjalizują się w dostarczaniu aktualnych rozwiązań klienckich opartych na technologii Microsoft na całym świecie. Zoptymalizuj swoją działalność w chmurze z pomocą doświadczonego partnera.
+Dostawcy rozwiązań certyfikowani przez firmę Microsoft specjalizują się w dostarczaniu klientom nowoczesnych rozwiązań opartych na technologii Microsoft na całym świecie. Zoptymalizuj swoją działalność w chmurze z pomocą doświadczonego partnera.
 
 Uzyskaj pomoc od partnerów oferujących gotowe lub niestandardowe rozwiązania dla platformy Azure oraz partnerów, którzy mogą pomóc we wdrażaniu tych rozwiązań i w zarządzaniu nimi:
 
-- [Znajdź partnera z zakresu rozwiązań w chmurze](https://www.microsoft.com/solution-providers/home). Certyfikowany partner z zakresu rozwiązań w chmurze może pomóc w pełni wykorzystać chmurę, oceniając cele biznesowe dotyczące wdrożenia w chmurze oraz identyfikując odpowiednie rozwiązanie w chmurze, które spełnia potrzeby biznesowe i pomaga zwiększyć wydajność oraz efektywność biznesową.
-- [Znajdź partnera usługi zarządzanej](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca). Partner usługi zarządzanej na platformie Azure (MSP) pomaga w przeniesieniu działalności na platformę Azure przez zarządzanie wszystkimi aspektami przejścia do chmury. Partnerzy usługi zarządzanej zapewniają kompleksowe doradztwo od konsultacji do migracji i zarządzania operacjami, dzięki czemu klienci poznają wszystkie korzyści związane z wdrażaniem w chmurze. Zapewniają oni również typową pomoc techniczną, obsługę aprowizacji i rozliczeń &mdash; z elastycznym modelem biznesowym płatności zgodnie z rzeczywistym użyciem.
+- [Znajdź partnera z zakresu rozwiązań w chmurze](https://www.microsoft.com/solution-providers/home). Certyfikowany partner z zakresu rozwiązań w chmurze (CSP) może pomóc w pełni wykorzystać chmurę, oceniając cele biznesowe dotyczące wdrożenia w chmurze oraz identyfikując odpowiednie rozwiązanie w chmurze, które spełnia potrzeby biznesowe i pomaga zwiększyć wydajność oraz efektywność biznesową.
+- [Znajdź partnera usług zarządzanych](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca). Partner usługi zarządzanej na platformie Azure (MSP) pomaga w przeniesieniu działalności na platformę Azure przez zarządzanie wszystkimi aspektami przejścia do chmury. Partnerzy usługi zarządzanej zapewniają kompleksowe doradztwo od konsultacji do migracji i zarządzania operacjami, dzięki czemu klienci poznają wszystkie korzyści związane z wdrażaniem w chmurze. Zapewniają oni również typową pomoc techniczną, obsługę aprowizacji i rozliczeń &mdash; z elastycznym modelem biznesowym płatności zgodnie z rzeczywistym użyciem.

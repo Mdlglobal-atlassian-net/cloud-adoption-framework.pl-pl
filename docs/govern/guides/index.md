@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ff7b8669d71f72b87bbfcc3377dc5bf439311987
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d3f664aa94228da83ee86fd51392958341269c1e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995283"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214739"
 ---
 # <a name="cloud-governance-guides"></a>Przewodniki dotyczące ładu w chmurze
 
-Przewodniki dotyczące zapewniania ładu z możliwością działania w tej sekcji przedstawiają przyrostowe podejście modelu ładu z przewodnika Cloud Adoption Framework na podstawie wcześniej opisanej [metodologii ładu](../methodology.md). Możesz ustanowić zwinne podejście do ładu w chmurze, które będzie się rozwijać w celu zaspokajania potrzeb wynikających z dowolnego scenariusza ładu w chmurze.
+Praktyczne przewodniki dotyczące zapewniania ładu w tej sekcji przedstawiają przyrostowe podejście modelu ładu z przewodnika Cloud Adoption Framework na podstawie wcześniej opisanej [metodologii Ład](../methodology.md). Możesz ustanowić zwinne podejście do ładu w chmurze, które będzie się rozwijać w celu zaspokajania potrzeb wynikających z dowolnego scenariusza ładu w chmurze.
 
 ## <a name="review-and-adopt-cloud-governance-best-practices"></a>Przejrzyj i wdróż najlepsze rozwiązania dotyczące nadzoru chmury
 
@@ -67,8 +67,11 @@ W przewodnikach przedstawiono, w jaki sposób zaimplementować minimalną koniec
 
 Aby rozpocząć podróż nadzoru, wybierz jedną z dwóch poniższych opcji. Opcje są oparte na zsyntetyzowanych doświadczeniach użytkowników. Tytuły są utworzone na podstawie skomplikowania organizacji w celu ułatwienia nawigacji. Jednak decyzja użytkownika może być bardziej skomplikowana. Poniższe tabele przedstawiają różnice między tymi dwiema opcjami.
 
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+
 > [!WARNING]
-> Wymagany może być bardziej niezawodny punkt początkowy nadzoru. W takich przypadkach należy wziąć pod uwagę podejście [wirtualnego centrum danych Azure](#azure-virtual-datacenter), które zostało krótko opisane [poniżej](#azure-virtual-datacenter). To podejście zazwyczaj jest zalecane podczas wysiłku wdrażania w skali przedsiębiorstwa, a szczególnie w przypadku nakładów pracy, które przekraczają 10 000 zasobów. Jest to de facto wybór dla złożonych scenariuszy nadzoru, gdy konieczne jest spełnienie dowolnej z następujących kwestii: rozbudowane wymagania dotyczące zgodności z innymi firmami, głęboka znajomość danej dziedziny lub zgodność z dojrzałymi zasadami nadzoru IT i wymaganiami dotyczącymi zgodności.
+> Wymagany może być bardziej niezawodny punkt początkowy nadzoru. W takich przypadkach należy wziąć pod uwagę podejście [wirtualnego centrum danych Azure](#azure-virtual-datacenter), które zostało krótko opisane [poniżej](#azure-virtual-datacenter). To podejście zazwyczaj jest zalecane podczas wysiłku wdrażania w skali przedsiębiorstwa, a szczególnie w przypadku nakładów pracy, które przekraczają 10 000 zasobów. Jest to też domyślny wybór dla złożonych scenariuszy nadzoru, gdy konieczne jest spełnienie dowolnej z następujących kwestii: rozbudowane wymagania dotyczące zgodności z innymi firmami, głęboka znajomość danej dziedziny lub zgodność z dojrzałymi zasadami nadzoru IT i wymaganiami dotyczącymi zgodności.
 
 <!-- markdownlint-disable MD028 -->
 
@@ -96,8 +99,8 @@ Aby rozpocząć podróż nadzoru, wybierz jedną z dwóch poniższych opcji. Opc
 
 | Stan | Organizacja standardowa | Przedsiębiorstwo złożone |
 |---|---|---|
-| Zarządzanie kosztami — księgowość w chmurze | Model przewidywania kosztów. Rozliczenia są scentralizowana za pośrednictwem działu IT. | Model obciążeń zwrotnych. Rozliczenia mogą być dystrybuowane za pośrednictwem zaopatrzenia działu IT. |
-| Punkt odniesienia zabezpieczeń — zabezpieczone dane | Dane finansowe i własność intelektualna firmy. Ograniczone dane klienta. Brak wymagań dotyczących zgodności z innymi firmami. | Wiele kolekcji danych finansowych i osobowych klientów. Konieczne może być wzięcie pod uwagę zgodności z innymi firmami. |
+| Zarządzanie kosztami &mdash; księgowość w chmurze | Model przewidywania kosztów. Rozliczenia są scentralizowana za pośrednictwem działu IT. | Model obciążeń zwrotnych. Rozliczenia mogą być dystrybuowane za pośrednictwem zaopatrzenia działu IT. |
+| Punkt odniesienia zabezpieczeń &mdash; chronione dane | Dane finansowe i własność intelektualna firmy. Ograniczone dane klienta. Brak wymagań dotyczących zgodności z innymi firmami. | Wiele kolekcji danych finansowych i osobowych klientów. Konieczne może być wzięcie pod uwagę zgodności z innymi firmami. |
 
 ## <a name="azure-virtual-datacenter"></a>Wirtualne centrum danych Azure
 

@@ -1,0 +1,186 @@
+### YamlMime:Hub
+title: Struktura wdrażania chmury firmy Microsoft dla platformy Azure
+summary: Przewodnik Cloud Adoption Framework to zbiór dokumentacji, wskazówek dotyczących wdrażania, najlepszych rozwiązań oraz narzędzi, oferujący sprawdzone i zalecane przez firmę Microsoft sposoby na przyspieszenie procesu wdrażania chmury.
+brand: azure
+metadata:
+  title: Struktura wdrażania chmury firmy Microsoft dla platformy Azure
+  description: Przewodnik Cloud Adoption Framework to zbiór dokumentacji, wskazówek dotyczących wdrażania, najlepszych rozwiązań oraz narzędzi umożliwiających przyspieszenie procesu wdrażania chmury.
+  ms.service: cloud-adoption-framework
+  ms.topic: landing-page
+  services: cloud-adoption-framework
+  author: JanetCThomas
+  ms.author: janet
+  ms.date: 04/20/2020
+  ms.openlocfilehash: 2214466178729bcf6cb0e6ddd02a22d036039004
+  ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+  ms.translationtype: HT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 05/12/2020
+  ms.locfileid: "83228307"
+highlightedContent:
+  items:
+  - title: Rozpocznij przejście do chmury
+    itemType: get-started
+    url: ./get-started/index.md
+  - title: Znajdź narzędzia i szablony do wdrażania chmury
+    itemType: download
+    url: ./reference/tools-templates.md
+  - title: Co to jest przewodnik Cloud Adoption Framework
+    itemType: overview
+    url: ./overview.md
+  - title: Co nowego w przewodniku Cloud Adoption Framework
+    itemType: whats-new
+    url: ./get-started/whats-new.md
+productDirectory:
+  title: Wytyczne w przewodniku Cloud Adoption Framework
+  summary: Te wytyczne są dostosowane do etapów cyklu wdrażania chmury, co zapewnia łatwy dostęp do właściwych wskazówek we właściwym czasie.
+  items:
+  - title: Rozpoczęcie pracy
+    imageSrc: https://docs.microsoft.com/media/common/i_road-map.svg
+    links:
+    - url: ./get-started/cloud-concepts.md
+      text: Dokumentowanie podstawowych decyzji
+    - url: ./get-started/migrate.md
+      text: Przyspieszanie migracji
+    - url: ./get-started/operational-excellence.md
+      text: Osiąganie doskonałości operacyjnej
+    - url: ./get-started/org-alignment.md
+      text: Dostosowywanie organizacji
+  - title: Strategia
+    imageSrc: ./_images/caf-strategy.png
+    links:
+    - url: ./strategy/motivations.md
+      text: Przesłanki
+    - url: ./strategy/business-outcomes/index.md
+      text: Wyniki biznesowe
+    - url: ./strategy/partner-alignment.md
+      text: Dostosowywanie strategii partnera
+    - url: ./strategy/first-adoption-project.md
+      text: Wybór odpowiedniego pierwszego projektu
+  - title: Planowanie
+    imageSrc: ./_images/caf-plan.png
+    links:
+    - url: ./digital-estate/rationalize.md
+      text: Racjonalizacja majątku cyfrowego
+    - url: ./plan/initial-org-alignment.md
+      text: Dopasowanie organizacji
+    - url: ./plan/suggested-skills.md
+      text: Plan gotowości w zakresie umiejętności
+    - url: ./plan/template.md
+      text: Plan wdrożenia chmury — DevOps
+  - title: Gotowy
+    imageSrc: ./_images/caf-ready.png
+    links:
+    - url: ./ready/azure-setup-guide/index.md
+      text: Przewodnik konfiguracji platformy Azure
+    - url: ./ready/landing-zone/migrate-landing-zone.md
+      text: Pierwsza strefa docelowa
+    - url: ./ready/considerations/index.md
+      text: Rozszerzanie strefy docelowej
+    - url: ./ready/azure-best-practices/index.md
+      text: Najlepsze rozwiązania dotyczące gotowości na platformę Azure
+  - title: Migrate (Migracja)
+    imageSrc: ./_images/caf-migrate.png
+    links:
+    - url: ./migrate/azure-migration-guide/index.md
+      text: Przewodnik po migracji na platformę Azure
+    - url: ./migrate/azure-best-practices/contoso-migration-overview.md
+      text: Scenariusze migracji
+    - url: ./migrate/azure-best-practices/index.md
+      text: Najlepsze rozwiązania dla migracji do chmury
+    - url: ./migrate/migration-considerations/index.md
+      text: Ulepszenia procesu
+  - title: Innowacje
+    imageSrc: ./_images/caf-adopt.png
+    links:
+    - url: ./innovate/business-value.md
+      text: Wartość biznesowa — konsensus
+    - url: ./innovate/innovation-guide/index.md
+      text: Przewodnik po innowacjach na platformie Azure
+    - url: ./innovate/best-practices/index.md
+      text: Najlepsze rozwiązania
+    - url: ./innovate/considerations/adoption.md
+      text: Cykle wymiany opinii
+  - title: Ład
+    imageSrc: ./_images/caf-govern.png
+    links:
+    - url: ./govern/methodology.md
+      text: Metodologia
+    - url: ./govern/benchmark.md
+      text: Ocena porównawcza
+    - url: ./govern/initial-foundation.md
+      text: Podstawy zapewnienia ładu
+    - url: ./govern/foundation-improvements.md
+      text: Ulepszanie podstaw
+  - title: Zarządzanie
+    imageSrc: ./_images/caf-manage.png
+    links:
+    - url: ./manage/azure-management-guide/index.md
+      text: Plan bazowy zarządzania
+    - url: ./manage/considerations/business-alignment.md
+      text: Zobowiązania biznesowe
+    - url: ./manage/best-practices.md
+      text: Rozwijanie planu bazowego
+    - url: ./manage/design-principles.md
+      text: Ocena zasad projektowania
+  - title: Organizowanie
+    imageSrc: https://docs.microsoft.com/media/common/i_configure-teams.svg
+    links:
+    - url: ./organize/index.md
+      text: Dopasowanie organizacji
+    - url: ./organize/organization-structures.md
+      text: Ustanawianie zespołów
+    - url: ./organize/raci-alignment.md
+      text: Dopasowanie zakresów odpowiedzialności
+tools:
+  title: Rozwijanie umiejętności dzięki środowisku Microsoft Learn
+  summary: Dowiedz się więcej na temat platformy Azure i przewodnika Cloud Adoption Framework, korzystając z następujących modułów w witrynie Microsoft Learn.
+  items:
+  - title: Struktura wdrażania chmury firmy Microsoft dla platformy Azure
+    imageSrc: ./_images/learn-caf-logo.png
+    url: https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/index
+  - title: Podstawy platformy Azure
+    imageSrc: ./_images/learn-azure-fundamentals-logo.png
+    url: https://docs.microsoft.com/learn/paths/azure-fundamentals
+  - title: Poznaj wartość biznesową platformy Azure
+    imageSrc: ./_images/learn-business-value-of-azure-logo.png
+    url: https://docs.microsoft.com/learn/paths/learn-business-value-of-azure
+conceptualContent:
+  title: Oceny
+  summary: Oceny ułatwiają planowanie przejścia do chmury. Umożliwiają znalezienie różnic między stanem bieżącym i docelowym. Udostępnimy Ci spersonalizowane, wyselekcjonowane rekomendacje, aby pomóc Ci w osiągnięciu stanu docelowego.
+  items:
+  - title: Monitor przejścia do chmury
+    links:
+    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=cloud-journey-tracker
+      itemType: get-started
+      text: Zidentyfikuj ścieżkę wdrażania chmury dopasowaną do potrzeb Twojej firmy.
+  - title: Narzędzie do analizy gotowości i oceny strategicznej migracji (SMART)
+    links:
+    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=Strategic-Migration-Assessment
+      itemType: get-started
+      text: Usprawnij pracę nad migracją, ulepsz procesy i zapewnij sukces swojej firmie.
+  - title: Punkt odniesienia w zakresie ładu
+    links:
+    - url: https://www.cafbaseline.com
+      itemType: quickstart
+      text: Znajdź różnice między stanem bieżącym a priorytetami biznesowymi i uzyskaj odpowiednie zasoby, aby je zniwelować.
+  - title: Przegląd architektury platformy Azure
+    links:
+    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=azure-architecture-review
+      itemType: architecture
+      text: Sprawdź, jak wyjść poza podstawowe operacje w przypadku priorytetowych obciążeń.
+additionalContent:
+  sections:
+  - title: Uzyskaj pomoc techniczną
+    summary: Jeśli napotkasz przeszkody na drodze do wdrożenia chmury, zasoby przygotowane specjalnie przez firmę Microsoft pomogą Ci ruszyć dalej.
+    items:
+    - title: FastTrack for Azure
+      summary: Uzyskaj pomoc od inżynierów firmy Microsoft
+      url: https://azure.microsoft.com/programs/azure-fasttrack
+    - title: Program migracji na platformę Azure
+      summary: Uzyskaj pomoc w migracji obciążeń do chmury
+      url: https://azure.microsoft.com/migration/migration-program
+    - title: Znajdź partnera
+      summary: Znajdź partnera, który pomoże Ci rozpocząć pracę
+      url: https://aka.ms/adopt/findapartner
+  footer: Przekonaj się, dlaczego przewodnik Cloud Adoption Framework to właściwe rozwiązanie dla Twojej firmy. [https://aka.ms/adopt](https://azure.microsoft.com/cloud-adoption-framework)

@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: eca885e84e0f3a29a0d3417c550de78d7bdf74fc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a4e26787fb2125dd2784698b06171e898dd7ac55
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396029"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214484"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>Wdrażanie obciążeń i zasobów (infrastruktury, aplikacji i danych)
 
-W tej fazie podróży należy użyć danych wyjściowych fazy oceny do zainicjowania migracji środowiska. Ten przewodnik pomaga zidentyfikować odpowiednie narzędzia pozwalające przejść w stan „Gotowe”, m.in. narzędzia natywne, narzędzia innych firm oraz narzędzia do zarządzania projektami.
+W tej fazie podróży należy użyć danych wyjściowych fazy oceny do zainicjowania migracji środowiska. Ten przewodnik pomaga zidentyfikować odpowiednie narzędzia pozwalające ukończyć ten proces, między innymi narzędzia natywne, narzędzia innych firm oraz narzędzia do zarządzania projektami.
 
 <!-- markdownlint-disable MD025 -->
 
@@ -270,7 +270,7 @@ Nie są to jedyne dostępne narzędzia. Wiele innych narzędzi innych firm jest 
 
 Migracja do technologii chmurowych stanowi świetną okazję do przygotowania organizacji do wprowadzenia metodyki DevOps i ciągłej integracji/ciągłego wdrażania. Nawet jeśli Twoja organizacja zarządza tylko infrastrukturą, gdy zaczniesz zarządzać infrastrukturą jak kodem i korzystać z wzorców i praktyk branżowych metodyki DevOps, możesz rozpocząć zwiększanie elastyczności za pomocą potoków ciągłej integracji/ciągłego wdrażania, co pozwoli na szybsze dostosowanie do scenariuszy zmiany, rozwoju, wydania, a nawet odzyskiwania.
 
-Usługa Azure DevOps zapewnia wszystkie wymagane funkcje i integrację z platformą Azure, środowiskami lokalnymi, a nawet z innymi chmurami. Aby uzyskać więcej informacji, zobacz [usługę Azure DevOps](https://azure.microsoft.com/services/devops). Aby uzyskać dostęp do szkolenia z przewodnikiem, zobacz [CI and CD with Azure DevOps - Quickstart (Ciągła integracja i ciągłe wdrażanie w usłudze Azure DevOps — Szybki start)](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
+Usługa Azure DevOps zapewnia wszystkie wymagane funkcje i integrację z platformą Azure, środowiskami lokalnymi, a nawet z innymi chmurami. Aby uzyskać więcej informacji, zobacz [usługę Azure DevOps](https://azure.microsoft.com/services/devops). Aby uzyskać dostęp do szkolenia z przewodnikiem, zobacz [CI/CD with Azure DevOps — Quickstart (Ciągła integracja/ciągłe wdrażanie w usłudze Azure DevOps — Szybki start)](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
 
 ## <a name="suggested-skills"></a>Sugerowane umiejętności
 
@@ -282,4 +282,4 @@ Poniżej znajduje się przykład dostosowanej ścieżki szkoleniowej w środowis
 
 # <a name="cost-management"></a>[Zarządzanie kosztami](#tab/ManageCost)
 
-Podczas migrowania zasobów do środowiska chmury należy przeprowadzać okresową analizę kosztów. Pomoże to uniknąć nieoczekiwanych opłat za użycie, ponieważ proces migracji może spowodować, że Twoje usługi zostaną objęte dodatkowymi wymaganiami w zakresie użycia. Można również w zależności od potrzeb zmienić rozmiar zasobów, aby zrównoważyć koszt i obciążenie (rozwiązanie to zostało omówione bardziej szczegółowo w sekcji **[Optimize and Transform](./optimize-and-transform.md)** [Optymalizowanie i przekształcanie]).
+Podczas migrowania zasobów do środowiska chmury należy przeprowadzać okresową analizę kosztów. Pomoże to uniknąć nieoczekiwanych opłat za użycie, ponieważ proces migracji może spowodować, że Twoje usługi zostaną objęte dodatkowymi wymaganiami w zakresie użycia. Można również zmienić rozmiar zasobów w zależności od potrzeb, aby zrównoważyć koszt i obciążenie, co zostało omówione bardziej szczegółowo w sekcji [Optymalizowanie i przekształcanie](./optimize-and-transform.md).

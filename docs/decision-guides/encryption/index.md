@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7fa525ae5a2f0a7fe6d2075cd13d2bc9a1b08713
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 703a5152ef47d19ec5eb654f9ba4d83786562d12
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996472"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224395"
 ---
 # <a name="encryption-decision-guide"></a>Przewodnik po decyzjach związanych z szyfrowaniem
 
@@ -36,7 +36,7 @@ Nowoczesne systemy zarządzania kluczami, takie jak usługa Azure Key Vault, obs
 Podczas planowania migracji do chmury poniższa tabela może ułatwić podjęcie decyzji o sposobie przechowywania kluczy szyfrowania, certyfikatów i wpisów tajnych, które mają krytyczne znaczenie dla tworzenia bezpiecznych i łatwych w zarządzaniu wdrożeń w chmurze, oraz zarządzania nimi:
 
 | Pytanie | Natywne dla chmury | Używanie własnego klucza | Zatrzymywanie własnego klucza |
-|---------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|-------------|
+|--- |--------------|--------|-------------|
 | Czy w organizacji brakuje scentralizowanego zarządzania kluczami i wpisami tajnymi?                                                                    | Yes          | Nie     | Nie          |
 | Czy będzie potrzebne ograniczenie tworzenia kluczy i wpisów tajnych do urządzeń lokalnych, podczas gdy klucze te będą używane w chmurze? | Nie           | Yes    | Nie          |
 | Czy organizacja ma wdrożone reguły lub zasady, które mogłyby uniemożliwić przechowywanie kluczy poza siedzibą firmy?                | Nie           | Nie     | Yes         |
@@ -45,7 +45,7 @@ Podczas planowania migracji do chmury poniższa tabela może ułatwić podjęcie
 
 W przypadku natywnego dla chmury zarządzania kluczami wszystkie klucze i wpisy tajne są generowane, zarządzane i przechowywane w magazynie opartym na chmurze, takim jak usługa Azure Key Vault. Takie podejście ułatwia wiele zadań IT związanych z zarządzaniem kluczami, takich jak tworzenie kopii zapasowej klucza, magazynowanie i odnawianie.
 
-Używanie natywnego dla chmury systemu zarządzania kluczami obejmuje następujące założenia:
+**Założenia dotyczące rozwiązań natywnych dla chmury:** Używanie natywnego dla chmury systemu zarządzania kluczami obejmuje następujące założenia:
 
 - Masz zaufanie do rozwiązania zarządzania kluczami w chmurze pod względem tworzenia wpisów tajnych i kluczy w organizacji, zarządzania nimi i hostowania ich.
 - Włączone są wszystkie lokalne aplikacje i usługi, które polegają na uzyskiwaniu dostępu do usług szyfrowania lub wpisów tajnych w celu uzyskania dostępu do systemu zarządzania kluczami w chmurze.
@@ -121,10 +121,10 @@ Szyfrowanie danych w użyciu obejmuje zabezpieczanie danych w magazynie nietrwa�
 
 Aby uzyskać więcej informacji o szyfrowaniu i zarządzaniu kluczami na platformie Azure, zobacz:
 
-- [Omówienie szyfrowania na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview). Szczegółowy opis sposobu, w jaki platforma Azure wykorzystuje szyfrowanie do zabezpieczenia zarówno danych magazynowanych, jak i przesyłanych.
-- [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview). Usługa Key Vault to podstawowy system zarządzania kluczami na platformie Azure, służący do przechowywania kluczy kryptograficznych, wpisów tajnych i certyfikatów oraz zarządzania nimi.
-- [Najlepsze rozwiązania z zakresu zabezpieczeń i szyfrowania danych platformy Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices). Omówienie najlepszych rozwiązań z zakresu zabezpieczeń i szyfrowania danych na platformie Azure.
-- [Poufne przetwarzanie na platformie Azure](https://azure.microsoft.com/solutions/confidential-compute). Inicjatywa platformy Azure dotycząca poufnego przetwarzania zapewnia narzędzia i technologie do tworzenia zaufanych środowisk wykonywania lub innych mechanizmów szyfrowania do zabezpieczania używanych danych.
+- **[Omówienie szyfrowania na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview):** Szczegółowy opis sposobu, w jaki platforma Azure wykorzystuje szyfrowanie do zabezpieczenia zarówno danych magazynowanych, jak i przesyłanych.
+- **[Usługa Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/key-vault-overview):** Usługa Key Vault to podstawowy system zarządzania kluczami na platformie Azure, służący do przechowywania kluczy kryptograficznych, wpisów tajnych i certyfikatów oraz zarządzania nimi.
+- **[Najlepsze rozwiązania z zakresu zabezpieczeń i szyfrowania danych platformy Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices).** Omówienie najlepszych rozwiązań z zakresu zabezpieczeń i szyfrowania danych na platformie Azure.
+- **[Poufne przetwarzanie na platformie Azure](https://azure.microsoft.com/solutions/confidential-compute):** Inicjatywa platformy Azure dotycząca poufnego przetwarzania zapewnia narzędzia i technologie do tworzenia zaufanych środowisk wykonywania lub innych mechanizmów szyfrowania do zabezpieczania używanych danych.
 
 ## <a name="next-steps"></a>Następne kroki
 

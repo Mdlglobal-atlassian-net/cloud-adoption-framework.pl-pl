@@ -3,108 +3,35 @@ title: Migracja do chmury
 description: Dowiedz się, jak ustanowić iteracyjne procesy oceniania, migrowania, optymalizacji i zabezpieczania obciążeń, które chcesz migrować do chmury, oraz zarządzania nimi.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
-ms.topic: landing-page
+ms.date: 05/04/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-layout: LandingPage
-ms.openlocfilehash: b341996c45c4a0c5b7d8467419c3117f939afa20
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8a1c601108befd2dbbb32a6b24d72a1b0852d081
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120756"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219533"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migracja do chmury w podręczniku Cloud Adoption Framework
 
 Każdy [plan wdrożenia chmury](../plan/index.md) w skali przedsiębiorstwa będzie zawierać obciążenia, które nie gwarantują znacznych inwestycji w przypadku tworzenia nowej logiki biznesowej. Te obciążenia można przenieść do chmury za pomocą różnorodnych podejść: metodą „lift and shift” czy „lift and optimize” albo przez modernizację. Każda z tych metod jest traktowana jako migracja. Poniższe ćwiczenia pomogą ustanowić iteracyjne procesy oceniania, migrowania, optymalizacji i zabezpieczania tych obciążeń oraz zarządzania nimi.
 
-## <a name="getting-started"></a>Wprowadzenie
-
-Aby przygotować się na tę fazę cyklu wdrażania chmury, zalecane są następujące ćwiczenia:
+Aby przygotować się na tę fazę cyklu wdrażania chmury, zalecamy wykonanie następujących czynności:
 
 <!-- markdownlint-disable MD033 -->
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-migration-guide/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Migrowanie pierwszego obciążenia</h3>
-Korzystając z przewodnika po migracji na platformę Azure, zapoznaj się z narzędziami natywnymi dla platformy Azure i podejściem do migracji.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-best-practices/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Scenariusze migracji</h3>
-Korzystając z dodatkowych podejść i narzędzi do migracji, podejmij działania w innych scenariuszach migracji.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-best-practices/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Najlepsze rozwiązania</h3>
-Reaguj na typowe potrzeby związane z migracją, stosując spójne najlepsze rozwiązania.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./migration-considerations/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Ulepszenia procesu</h3>
-Migracja to działanie mocno obciążone procesami. W miarę skalowania pracy związanej z migracją za pomocą tych ulepszeń procesów oceniaj i dopracowuj różne aspekty migracji.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[Migrowanie pierwszego obciążenia](./azure-migration-guide/index.md): Korzystając z przewodnika po migracji na platformę Azure, zapoznaj się z narzędziami natywnymi dla platformy Azure i podejściem do migracji.                                |
+| ![2](../_images/icons/2.png)     | <br>[Scenariusze migracji](./azure-best-practices/index.md): Korzystając z dodatkowych podejść i narzędzi do migracji, podejmij działania w innych scenariuszach migracji.                                |
+| ![3](../_images/icons/3.png)     | <br>[Najlepsze rozwiązania](./azure-best-practices/index.md): Reaguj na typowe potrzeby związane z migracją, stosując spójne najlepsze rozwiązania.                                |
+| ![4](../_images/icons/4.png)      | <br>[Ulepszenia procesów](./migration-considerations/index.md): Migracja to działanie mocno obciążone procesami. W miarę skalowania pracy związanej z migracją za pomocą tych ulepszeń procesów oceniaj i dopracowuj różne aspekty migracji.                        |
+
 <!-- markdownlint-enable MD033 -->
 
-Ta metodologia i powyższe kroki opierają się na poniższych założeniach:
+Ta metodologia migracji i powyższe kroki opierają się na poniższych założeniach:
 
 - Metodologia rządząca przebiegami migracji pasuje do fal migracji lub wydań, które są zdefiniowane przy użyciu metodologii Planowania, Gotowości i Wdrażania. W każdym przebiegu migracji partia obciążeń jest migrowana do chmury.
 - Przed migrowaniem obciążeń zidentyfikowano, skonfigurowano i wdrożono co najmniej jedną [strefę docelową](../ready/index.md) spełniającą potrzeby krótkoterminowego planu wdrożenia chmury.
@@ -127,7 +54,7 @@ Następujące punkty zawierają przegląd etapów tego procesu (przedstawionych 
 > [!NOTE]
 > W niektórych wczesnych iteracjach procesu migracji częstą praktyką jest ograniczenie do jednego obciążenia. Takie podejście maksymalizuje zachowanie umiejętności i zespołowi więcej czasu na eksperymentowanie i naukę.
 > [!NOTE]
-> Podczas budowania fabryki migracji niektóre zespoły mogą zdecydować o rozproszeniu każdej z powyższych faz na wiele zespołów i/lub wiele przebiegów. Takie podejście może poprawić powtarzalność i przyspieszyć migrację.
+> Podczas budowania fabryki migracji niektóre zespoły mogą zdecydować o rozproszeniu każdej z powyższych faz na wiele zespołów i wiele przebiegów. Takie podejście może poprawić powtarzalność i przyspieszyć migrację.
 
 ## <a name="migration-waves"></a>Fale migracji
 
@@ -137,7 +64,7 @@ Jak przedstawiono na ilustracji w poprzedniej sekcji, procesy w metodologii [Pla
 
 ## <a name="next-steps"></a>Następne kroki
 
-Powyższe kroki obejmujące „Wprowadzenie” oraz kolejne wskazówki zawarte w metodologii migracji ułatwią rozwinięcie umiejętności usprawniających wykonywanie procesów w ramach każdego przebiegu migracji. [Przewodnik po migracji na platformę Azure](./azure-migration-guide/index.md) to krótka seria artykułów, w których przedstawiono najbardziej typowe narzędzia i podejścia niezbędne podczas pierwszej fali migracji.
+Powyższe kroki oraz kolejne wskazówki zawarte w metodologii migracji mogą ułatwić rozwinięcie umiejętności usprawniających wykonywanie procesów w ramach każdego przebiegu migracji. [Przewodnik po migracji na platformę Azure](./azure-migration-guide/index.md) to krótka seria artykułów, w których przedstawiono najbardziej typowe narzędzia i podejścia niezbędne podczas pierwszej fali migracji.
 
 > [!div class="nextstepaction"]
 > [Przewodnik po migracji na platformę Azure](./azure-migration-guide/index.md)
