@@ -1,6 +1,6 @@
 ---
-title: Usprawnij zarządzanie strefami wyładunkowymi
-description: Usprawnij zarządzanie strefami wyładunkowymi
+title: Ulepszanie ładu strefy docelowej
+description: Ulepszanie ładu strefy docelowej
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2020
@@ -14,7 +14,7 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 05/12/2020
 ms.locfileid: "83213957"
 ---
-# <a name="improve-landing-zone-governance"></a>Usprawnij zarządzanie strefami wyładunkowymi
+# <a name="improve-landing-zone-governance"></a>Ulepszanie ładu strefy docelowej
 
 Zarządzanie strefami wyładunkowymi jest najmniejszą jednostką ogólnego zarządzania. Ustanowienie solidnej podstawy zarządzania w ramach pierwszych kilku stref wypełniania spowoduje zredukowanie ilości operacji refaktoryzacji wymaganej później w cyklu życia. Poprawa nadzoru strefy wyładunkowej integruje kontrolę kosztów, ustanowi podstawowe narzędzia umożliwiające skalowanie i ułatwi zespołowi nadzoru chmurowego dostarczenie pięciu dyscyplin nadzoru chmurowego.
 

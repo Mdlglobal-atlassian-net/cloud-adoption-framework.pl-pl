@@ -118,4 +118,4 @@ Te dodatkowe procesy i zmiany wprowadzane przez ładu MVP są pomocne w korygowa
 Gdy wdrożenie chmury będzie kontynuowane i zapewnia dodatkową wartość biznesową, zagrożenia i potrzeby ładu chmury również zostaną zmienione. W przypadku fikcyjnej firmy w tym przewodniku następnym wyzwalaczem jest, gdy skala wdrożenia przekroczy 100 zasobów do chmury, lub miesięczne wydatki przekraczają $1 000 miesięcznie. W tym momencie zespół zarządzający chmurą dodaje kontrolę kosztów zarządzania.
 
 > [!div class="nextstepaction"]
-> [Ulepszanie dyscypliny Cost Management](./cost-management-improvement.md)
+> [Udoskonalanie dziedziny Zarządzanie kosztami](./cost-management-improvement.md)

@@ -1,5 +1,5 @@
 ---
-title: Projektowanie i operacje klastra
+title: Projekt i operacje klastra
 description: Dowiedz się więcej na temat Kubernetes w strukturze wdrażania chmury na potrzeby projektowania i operacji klastra.
 author: sabbour
 ms.author: asabbour
@@ -16,7 +16,7 @@ ms.locfileid: "83223987"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
-# <a name="cluster-design-and-operations"></a>Projektowanie i operacje klastra
+# <a name="cluster-design-and-operations"></a>Projekt i operacje klastra
 
 Określ konfigurację klastra i projekt sieci. Skalowalność w przyszłości dzięki automatyzowaniu aprowizacji infrastruktury. Zapewnienie wysokiej dostępności dzięki zaplanowaniu ciągłości działania i odzyskiwania po awarii.
 

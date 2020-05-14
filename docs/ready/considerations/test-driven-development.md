@@ -14,7 +14,7 @@ ms.contentlocale: pl-PL
 ms.lasthandoff: 05/12/2020
 ms.locfileid: "83223001"
 ---
-# <a name="test-driven-development-tdd-for-landing-zones"></a>Programowanie oparte na testach (TDD) dla stref wyładunkowych
+# <a name="test-driven-development-tdd-for-landing-zones"></a>Programowanie sterowane testami dla stref docelowych
 
 Programowanie oparte na testach to typowy proces opracowywania oprogramowania i DevOps, który poprawia jakość nowych funkcji i ulepszeń w dowolnym rozwiązaniu opartym na kodzie. Infrastruktura oparta na chmurze, a odpowiedni kod źródłowy mogą używać tego procesu, aby zapewnić, że strefy wyładunkowe spełniają wymagania podstawowe i są wysokiej jakości. Ten proces jest szczególnie przydatny, gdy strefy wypełniania są opracowywane i refaktoryzacj w ramach równoległego nakładu pracy programistycznej.
 

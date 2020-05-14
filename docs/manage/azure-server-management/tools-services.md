@@ -1,5 +1,5 @@
 ---
-title: Usługi zarządzania serwerem Azure
+title: Usługi zarządzania serwerami na platformie Azure
 description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się więcej o obszarach w ramach pakietu usług zarządzania serwerem platformy Azure.
 author: BrianBlanchard
 ms.author: brblanch

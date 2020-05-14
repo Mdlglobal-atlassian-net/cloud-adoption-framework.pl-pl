@@ -98,4 +98,4 @@ Dodanie tych zmian do ładu SPECJALISTy pomaga skorygować wiele zagrożeń w ty
 Gdy wdrożenie chmury będzie kontynuowane i zapewnia dodatkową wartość biznesową, zagrożenia i potrzeby ładu chmury również zostaną zmienione. Poniżej przedstawiono kilka zmian, które mogą wystąpić. W przypadku tej fikcyjnej firmy następnym wyzwalaczem jest dołączenie chronionych danych do planu wdrażania chmury. Ta zmiana wymaga dodatkowych kontroli zabezpieczeń.
 
 > [!div class="nextstepaction"]
-> [Ulepszanie dyscypliny linii bazowej zabezpieczeń](./security-baseline-improvement.md)
+> [Udoskonalanie dziedziny Punkt odniesienia zabezpieczeń](./security-baseline-improvement.md)
