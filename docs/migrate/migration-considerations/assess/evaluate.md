@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ddeea58c9e50327f318640160317556191c26d7f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7666a937e59d9e528cb7337e83ab3ec4a20b448b
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216150"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401338"
 ---
 # <a name="evaluate-workload-readiness"></a>Ocena gotowości obciążeń
 
@@ -35,7 +35,7 @@ Pamiętaj o udokumentowaniu wszelkich rozbieżności w konfiguracji hosta, konfi
 
 - Udokumentować cele punktu odzyskiwania (RPO) i cele czasu odzyskiwania (RTO) bieżącego wdrożenia bazy danych. Są one używane podczas [działania architektury](./architect.md) , aby pomóc w podejmowaniu decyzji.
 - Udokumentowanie wszelkich wymagań dotyczących konfiguracji o wysokiej dostępności. Aby uzyskać pomoc dotyczącą wymagań programu SQL Server, zobacz [Przewodnik po rozwiązaniach wysokiej dostępności programu SQL Server](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server).
-- Ocena zgodności rozwiązań PaaS. [Przewodnik migracji danych platformy Azure](https://datamigration.microsoft.com) mapuje lokalne bazy danych na zgodne rozwiązania PaaS platformy Azure, takie jak [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) lub [Azure DB](https://docs.microsoft.com/azure/sql-database) dla [MySQL](https://docs.microsoft.com/azure/mysql), [PostgreSQL](https://docs.microsoft.com/azure/postgresql)lub [MariaDB](https://docs.microsoft.com/azure/mariadb).
+- Ocena zgodności rozwiązań PaaS. [Przewodnik migracji danych platformy Azure](https://datamigration.microsoft.com) mapuje lokalne bazy danych na zgodne rozwiązania PaaS platformy Azure, takie jak [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db), [Azure SQL Database](https://docs.microsoft.com/azure/sql-database) [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql), [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql)lub [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb).
 - Gdy zgodność rozwiązań PaaS jest opcją bez konieczności korygowania, należy skonsultować się z zespołem odpowiedzialnym za [działania dotyczące architektury](./architect.md). Migracje PaaS mogą zapewnić znaczną oszczędność czasu i obniżyć całkowity koszt posiadania w przypadku większości rozwiązań w chmurze.
 - Jeśli zgodność rozwiązań PaaS jest opcją, ale wymagane jest korygowanie, należy skonsultować się z zespołami odpowiedzialnymi za [działania dotyczące architektury](./architect.md) i [działania korygujące](../migrate/remediate.md). W wielu scenariuszach korzyści z migracji PaaS dla rozwiązań baz danych mogą przeważać nad zwiększeniem czasu korygowania.
 - Udokumentowanie rozmiaru i szybkości zmian dla każdej bazy danych, która ma zostać poddana migracji.

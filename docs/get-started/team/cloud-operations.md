@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: c3bb04bd49a055e71a7572cd8c144a45f5da2efd
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: af65cff02d7c3768bf5fca554334923cf2172937
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229017"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400163"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>Wprowadzenie: Tworzenie zespołu operacji w chmurze
 
@@ -55,7 +55,7 @@ Zespół operacyjny dziedziczy obowiązki operacyjne dla wszystkich obciążeń 
 
 - Zapoznaj się z [strategią i planem planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) swojej firmy, korzystając z członków zespołu strategii chmury, aby zrozumieć motywacje, metryki i strategię.
 - Zapoznaj się z [szablonem planu wdrożenia chmury](../../plan/template.md) w firmie z członkami zespołu wdrażania chmury, aby zrozumieć osie czasu i priorytetyzację.
-- Zacznij projektować [skoroszyt zarządzania operacjami](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx) , aby zrozumieć wymagania operacyjne i zobowiązania, które zostały nawiązane z firmą.
+- Zacznij projektować [skoroszyt zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) , aby zrozumieć wymagania operacyjne i zobowiązania, które zostały nawiązane z firmą.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -128,7 +128,7 @@ Zapoznaj się ze zobowiązaniami linii bazowej operacji z firmą. Ta linia bazow
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
 - Utwórz [wyrównanie biznesowe](../../manage/considerations/business-alignment.md) w chmurze.
-- Udokumentowanie oczekiwań portfela i operacji w [skoroszycie zarządzania operacjami](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx).
+- Udokumentowanie oczekiwań portfela i operacji w [skoroszycie zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Zespół odpowiedzialny za:**
 

@@ -1,18 +1,18 @@
 ---
-title: Funkcje architektury zabezpieczeń w chmurze
-description: Omówienie funkcji architektury zabezpieczeń w chmurze
+title: Funkcje architektury zabezpieczeń chmury
+description: Informacje o funkcjach architektury zabezpieczeń w chmurze.
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 6956415f8a98e04ef0887ac153f714cf3d2820c3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: df8df76ac903329b21e4d543793250e70bb0afa8
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228445"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400959"
 ---
 # <a name="cloud-security-architecture-functions"></a>Funkcje architektury zabezpieczeń chmury
 

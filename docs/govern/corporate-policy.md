@@ -4,123 +4,38 @@ description: W ramach strategii nadzoru chmurowego Zidentyfikuj ryzyko biznesowe
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 9db4b6a6f068e2939248804b693a9600bf7b9625
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 36b194f1985a9d277315207ea685d5fff94a87a0
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220859"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400687"
 ---
 # <a name="evaluate-corporate-policy"></a>Ocenianie zasad firmowych
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsI">
-<li style="display: flex; flex-direction: column;">
-    <div class="cardSize">
-        <div class="cardPadding" style="padding-bottom:10px;">
-            <div class="card" style="padding-bottom:10px;">
-                <div class="cardText" style="padding-left:0px;">
-Wszelkie zmiany w procesach działalności biznesowej lub platformach technologicznych wprowadzają ryzyko dla działalności firmy. Zespoły nadzorujące chmur, których członkowie są czasami znane jako osoby niebędące członkami chmury, są zadaniem z ograniczeniem ryzyka związanego z minimalnym zakłóceniem wdrażania lub innowacji.
-<br>
-<br>
-Jednakże zarządzanie chmurą wymaga więcej niż implementację techniczną. Drobne zmiany w opisach firmowych lub zasadach korporacyjnych mogą znacząco wpływać na wdrażanie. Przed wdrożeniem należy zapoznać się poza nim podczas definiowania zasad firmowych.
-<br>
-<br>
-                </div>
-            </div>
-        </div>
-    </div>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="../_images/operational-transformation-govern-highres.png" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize">
-            <div class="cardPadding" style="padding-bottom:10px;">
-                <div class="card" style="padding-bottom:10px;">
-                    <div class="cardText" style="padding-left:0px;">
-<img src="../_images/operational-transformation-govern-highres.png" alt="Diagram of the Cloud Adoption Framework governance model: Corporate policy and governance disciplines">
-<br>
-<i>Rysunek 1. wizualne zasady firmowe i pięć dyscyplin nadzoru chmurowego.</i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
+| | |
+|---|---|
+| Wszelkie zmiany w procesach działalności biznesowej lub platformach technologicznych wprowadzają ryzyko dla działalności firmy. Zespoły nadzorujące chmur, których członkowie są czasami znane jako osoby niebędące członkami chmury, są zadaniem z ograniczeniem ryzyka związanego z minimalnym zakłóceniem wdrażania lub innowacji. <br><br> Jednakże zarządzanie chmurą wymaga więcej niż implementację techniczną. Drobne zmiany w opisach firmowych lub zasadach korporacyjnych mogą znacząco wpływać na wdrażanie. Przed wdrożeniem należy zapoznać się poza nim podczas definiowania zasad firmowych. | [![Diagram modelu ładu struktury wdrażania w chmurze: zasady firmowe i dyscypliny ładu](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> _Rysunek 1. wizualne zasady firmowe i pięć dyscyplin nadzoru chmurowego._ |
 
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="define-corporate-policy"></a>Definiowanie zasad firmowych
 
-Definiowanie zasad firmowych koncentruje się na identyfikowaniu i eliminowaniu ryzyka biznesowego niezależnie od platformy w chmurze. Strategia zarządzania chmurą w dobrej kondycji zaczyna się od dźwiękowych zasad firmowych. Poniższe trzy kroki są przewodnikami iteracyjnymi programowania takich zasad.
+Definiowanie zasad firmowych koncentruje się na identyfikowaniu i eliminowaniu ryzyka biznesowego niezależnie od platformy w chmurze. Strategia zarządzania chmurą w dobrej kondycji zaczyna się od dźwiękowych zasad firmowych. Poniższy trójstanowy proces przeprowadza iteracyjne opracowywanie zasad.
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsF">
-<li style="display: flex; flex-direction: column;">
-    <a href="./policy-compliance/business-risk.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../_images/govern/business-risk.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Ryzyko biznesowe</h3>
-                        <p>Zbadaj bieżące plany wdrażania chmury i klasyfikację danych, aby zidentyfikować zagrożenia dla firmy. Pracuj z firmą, aby zrównoważyć tolerancję ryzyka i koszty zaradcze.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./policy-compliance/policy-definition.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../_images/govern/corporate-policy.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Zasady i zgodność</h3>
-                        <p>Oceń tolerancję ryzyka, aby informować o minimalnych inwazyjnych zasadach, które regulują Wdrażanie chmury i zarządzanie ryzykiem. W niektórych branżach zgodność innych firm ma wpływ na tworzenie zasad początkowych.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./policy-compliance/processes.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../_images/govern/enforcement.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Procesy</h3>
-                        <p>Tempo działań związanych z wdrażaniem i innowacyjnością spowoduje naturalnie tworzenie naruszeń zasad. Wykonanie odpowiednich procesów pomoże w monitorowaniu i wymuszeniu przestrzegania zasad.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
+| | |
+|---|---|
+| <br> ![Ryzyko biznesowe](../_images/govern/business-risk.png) | <br> [Ryzyko biznesowe](./policy-compliance/business-risk.md): Zbadaj bieżące plany wdrażania w chmurze i klasyfikację danych, aby zidentyfikować zagrożenia dla firmy. Pracuj z firmą, aby zrównoważyć tolerancję ryzyka i koszty zaradcze. |
+| <br> ![Zasady i zgodność](../_images/govern/corporate-policy.png) | <br> [Zasady i zgodność](./policy-compliance/policy-definition.md): Oceń tolerancję ryzyka, aby poinformować o minimalnych inwazyjnych zasadach, które regulują wdrażanie i zarządzanie ryzykiem przez chmurę. W niektórych branżach zgodność innych firm ma wpływ na tworzenie zasad początkowych. |
+| <br> ![Procesy](../_images/govern/enforcement.png) | <br> [Procesy](./policy-compliance/processes.md): tempo wdrażania i innowacji spowoduje naturalnie tworzenie naruszeń zasad. Wykonanie odpowiednich procesów pomoże w monitorowaniu i wymuszeniu przestrzegania zasad. |
 
 <!-- markdownlint-enable MD033 -->
 

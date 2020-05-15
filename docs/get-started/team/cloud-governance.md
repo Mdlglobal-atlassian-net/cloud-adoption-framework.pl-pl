@@ -7,15 +7,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: 5b1d1cb9213b40242e95af60bead9ef3a919054a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ac6696cf71d43fb8cae3ec5d7e8fe455cf18d989
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229147"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400178"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-build-a-cloud-governance-team"></a>Wprowadzenie: Tworzenie zespołu ładu w chmurze
 
 Zespół zarządzający chmurą gwarantuje, że ryzyko i odporność na ryzyko są prawidłowo oceniane i zarządzane. Ten zespół zapewnia właściwą identyfikację zagrożeń, które nie mogą być tolerowane przez firmę. Osoby na tym zespole konwertują ryzyko na zarządzanie zasadami firmowymi.
@@ -55,7 +53,7 @@ Zespół nadzoru gwarantuje spójność i zgodność z zestawem wspólnych zasad
 
 - Zapoznaj się z [strategią i planem planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) swojej firmy, korzystając z członków zespołu strategii chmury, aby zrozumieć motywacje, metryki i strategię.
 - Zapoznaj się z [szablonem planu wdrożenia chmury](../../plan/template.md) w firmie z członkami zespołu wdrażania chmury, aby zrozumieć osie czasu i priorytetyzację.
-- Przejrzyj [skoroszyt zarządzania](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx) operacjami zespołu operacji, aby zrozumieć wymagania operacyjne i zobowiązania, które zostały nawiązane z firmą.
+- Przejrzyj [skoroszyt zarządzania](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) operacjami zespołu operacji, aby zrozumieć wymagania operacyjne i zobowiązania, które zostały nawiązane z firmą.
 
 <!-- markdownlint-disable MD033 -->
 <br>

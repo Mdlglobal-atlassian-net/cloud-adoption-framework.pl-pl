@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 4db3e7b94d370ebc50fa96c92e019ca9b2839497
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bb7ff19f7def1d41fa8a205667345ae0673503e4
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224208"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399404"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Zdefiniuj zasady firmowe na potrzeby ładu w chmurze
 
@@ -24,9 +24,9 @@ Po przeanalizowaniu znanego ryzyka i powiązanej tolerancji ryzyka dla podróży
 
 Zarówno w tradycyjnym, jak i w przyrostowym modelu zapewniania ładu zasady firmowe tworzą roboczą definicję ładu. Większość akcji podejmowanych w celu zapewnienia ładu IT koncentruje się na implementowaniu technologii w celu monitorowania, wymuszania, obsługiwania i automatyzowania tych zasad firmowych. Ład w chmurze jest oparty na podobnych pojęciach.
 
-![Ład korporacyjny i dyscypliny ładu](../../_images/operational-transformation-govern-highres.png)
+![Ład korporacyjny i dyscypliny ładu](../../_images/operational-transformation-govern-large.png)
 
-_Rysunek 1: ładu korporacyjne i dyscypliny ładu._
+_Rysunek 1. Ład korporacyjny i dyscypliny ładu._
 
 Na powyższym obrazie przedstawiono relację między ryzykiem biznesowym, zasadami i zgodnością oraz mechanizmami monitorowania i wymuszania, które muszą współdziałać w ramach strategii zarządzania. Pięć dyscyplin zarządzania chmurą pozwala zarządzać tymi interakcjami i korzystać z strategii.
 

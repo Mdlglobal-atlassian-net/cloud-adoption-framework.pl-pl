@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: d45898c16e7894a62d65e991737419964a570e34
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 05d04914511eaf07d82745ba7430c23c035323bf
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229576"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400289"
 ---
 # <a name="get-started-accelerate-migration"></a>Wprowadzenie: przyspieszanie migracji
 
@@ -26,7 +26,7 @@ Jeśli Twój Scenariusz migracji jest nietypowy, możesz uzyskać spersonalizowa
 
 ## <a name="get-started"></a>Rozpoczęcie pracy
 
-Nakłady techniczne i proces wymagany do migracji obciążeń są stosunkowo proste. Efektywne zakończenie procesu migracji jest ważne. Strategiczna gotowość do migracji będzie jednak mieć jeszcze większy wpływ na osie czasu i pomyślne ukończenie ogólnej migracji.
+Proces przeprowadzania migracji obciążeń jest stosunkowo prosty. Efektywne zakończenie procesu migracji jest ważne. Strategiczna gotowość do migracji będzie jednak mieć jeszcze większy wpływ na osie czasu i pomyślne ukończenie ogólnej migracji.
 
 Przyspieszenie wdrożenia oznacza rozjęcie czynności wymaganych do obsługi zespołu wdrażania chmury podczas migracji. W tym przewodniku opisano te iteracyjne zadania w formacie liniowej listy kontrolnej, aby ułatwić klientom rozpoczęcie właściwej ścieżki do migracji w chmurze. Aby zilustrować znaczenie kroków pomocniczych, migracja jest wymieniona w kroku 10 w tym artykule. W rzeczywistości zespół ds. wdrażania chmury prawdopodobnie rozpocznie swoją pierwszą migrację pilotażową równolegle z krokami 4 lub 5.
 
@@ -170,7 +170,7 @@ Wszystkie zmigrowane zasoby są wdrażane w ramach strefy docelowej. Początkowo
 
 ## <a name="step-8-migrate-your-first-10-workloads"></a>Krok 8. Migrowanie pierwszych 10 obciążeń
 
-Nakłady techniczne wymagane do przeprowadzenia migracji pierwszych 10 obciążeń są stosunkowo proste. Jest to również proces iteracyjny, który będzie powtarzany podczas migracji większej liczby zasobów. Proces obejmuje ocenę obciążeń (zobacz **krok 4**), wdrożenie obciążeń, a następnie zwolnienie ich do środowiska produkcyjnego.
+Nakłady techniczne wymagane do migracji pierwszych 10 obciążeń są stosunkowo proste. Jest to również proces iteracyjny, który będzie powtarzany podczas migracji większej liczby zasobów. Proces obejmuje ocenę obciążeń (zobacz **krok 4**), wdrożenie obciążeń, a następnie zwolnienie ich do środowiska produkcyjnego.
 
 ![Fazy iteracji migracji: Ocena, wdrażanie, wydanie](../_images/migrate/methodology-effort-only.png)
 

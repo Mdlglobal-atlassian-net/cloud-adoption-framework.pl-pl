@@ -7,14 +7,13 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ebeb0d36b82a60ce0a0516b98909db5da8626dd2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e7fa0e1046ce6c898a2f5bc804afff8450cda103
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228939"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400140"
 ---
-<!-- cSpell:ignore CAF -->
 <!-- markdownlint-disable MD024 -->
 
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Co nowego w strukturze Microsoft Cloud wdrażania dla platformy Azure
@@ -46,14 +45,14 @@ Dalsza iteracja udoskonalenia metodologii migracji i gotowej metodologii, umożl
 
 | Artykuł                                                                                                                 | Opis                                                                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Strefy wyładunkowe refaktoryzacji](../ready/landing-zone/refactor.md)                       | **Nowy artykuł:** Rysowanie od gotowych do użycia warsztatów, w tym artykule przedstawiono teoretyczną pracę z początkowym szablonem, przy użyciu drzew decyzyjnych i refaktoryzacji w celu rozszerzenia strefy docelowej i przechodzenia do przyszłego stanu gotowości przedsiębiorstwa. |
+| [Refaktoryzacja stref docelowych](../ready/landing-zone/refactor.md)                       | **Nowy artykuł:** Rysowanie od gotowych do użycia warsztatów, w tym artykule przedstawiono teoretyczną pracę z początkowym szablonem, przy użyciu drzew decyzyjnych i refaktoryzacji w celu rozszerzenia strefy docelowej i przechodzenia do przyszłego stanu gotowości przedsiębiorstwa. |
 | [Rozszerzanie strefy docelowej](../ready/considerations/index.md)                       | **Nowy artykuł:** Kompiluje w sekcji równoległe iteracje artykułu refaktoryzacji, aby pokazać, w jaki sposób różne typy rozszerzania strefy wyładunkowej osadzają zasady wspólne na platformie pomocniczej. Oryginalna zawartość tego omówienia została przeniesiona do węzła [podstawowe zagadnienia dotyczące przeładunku](../ready/considerations/basic-considerations.md) w spisie treści. |
-| [Programowanie oparte na testach (TDD) dla stref wyładunkowych](../ready/considerations/test-driven-development.md)                       | **Nowy artykuł:** Podejście refaktoryzacji zostało znacznie ulepszone dzięki przyjęciu cyklu projektowania opartego na testach w celu zaplanowania tworzenia i refaktoryzacji strefy. |
-| [Docelowa strefa TDD na platformie Azure](../ready/considerations/azure-test-driven-development.md)                       | **Nowy artykuł:** Narzędzia ładu platformy Azure oferują rozbudowaną platformę dla cykli TDD lub testy czerwoną/zieloną. |
-| [Popraw zabezpieczenia strefy wyładunkowej](../ready/considerations/landing-zone-security.md)                       | **Nowy artykuł:** Omówienie najlepszych rozwiązań w tej sekcji związanych z powrotem z cyklem TDD. |
-| [Ulepszanie operacji strefy wyładunkowej](../ready/considerations/landing-zone-operations.md)                       | **Nowy artykuł:** Lista najlepszych rozwiązań w zakresie zarządzania, z przejściem do tego podejścia modularnego w celu usprawnienia operacji, niezawodności i wydajności. |
-| [Usprawnij zarządzanie strefami wyładunkowymi](../ready/considerations/landing-zone-governance.md)                       | **Nowy artykuł:** Lista najlepszych rozwiązań związanych z regulowaniem metodologii, z przejściem do tego podejścia modularnego w celu usprawnienia nadzoru, zarządzania kosztami i skalowania. |
-| [Zacznij od skali przedsiębiorstwa](../ready/considerations/enterprise-scale.md)                       | **Nowy artykuł:** Zademonstrowano podejście, które pokazuje różnice w procesie, gdy klient rozpoczyna pracę z szablonami strefy wyładunkowej w skali przedsiębiorstwa. Ten artykuł pomaga klientom zrozumieć kwalifikatory, które będą obsługiwały tę decyzję. |
+| [Programowanie sterowane testami dla stref docelowych](../ready/considerations/test-driven-development.md)                       | **Nowy artykuł:** Podejście refaktoryzacji zostało znacznie ulepszone dzięki przyjęciu cyklu projektowania opartego na testach w celu zaplanowania tworzenia i refaktoryzacji strefy. |
+| [Programowanie sterowane testami dla stref docelowych na platformie Azure](../ready/considerations/azure-test-driven-development.md)                       | **Nowy artykuł:** Narzędzia ładu platformy Azure oferują rozbudowaną platformę dla cykli TDD lub testy czerwoną/zieloną. |
+| [Ulepszanie zabezpieczeń strefy docelowej](../ready/considerations/landing-zone-security.md)                       | **Nowy artykuł:** Omówienie najlepszych rozwiązań w tej sekcji związanych z powrotem z cyklem TDD. |
+| [Ulepszanie operacji strefy docelowej](../ready/considerations/landing-zone-operations.md)                       | **Nowy artykuł:** Lista najlepszych rozwiązań w zakresie zarządzania, z przejściem do tego podejścia modularnego w celu usprawnienia operacji, niezawodności i wydajności. |
+| [Ulepszanie ładu strefy docelowej](../ready/considerations/landing-zone-governance.md)                       | **Nowy artykuł:** Lista najlepszych rozwiązań związanych z regulowaniem metodologii, z przejściem do tego podejścia modularnego w celu usprawnienia nadzoru, zarządzania kosztami i skalowania. |
+| [Rozpocznij od skali przedsiębiorstwa](../ready/considerations/enterprise-scale.md)                       | **Nowy artykuł:** Zademonstrowano podejście, które pokazuje różnice w procesie, gdy klient rozpoczyna pracę z szablonami strefy wyładunkowej w skali przedsiębiorstwa. Ten artykuł pomaga klientom zrozumieć kwalifikatory, które będą obsługiwały tę decyzję. |
 | Aktualizacja spisu treści                       | Spis treści został zaktualizowany w celu odzwierciedlenia nowych artykułów.  |
 
 ## <a name="march-27-2020"></a>27 marca 2020
@@ -76,8 +75,8 @@ Dodaliśmy wskazówki, które zawierają narzędzia, programy i zawartość skat
 
 | Artykuł                                                                                     | Opis                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Projektowanie i wdrażanie aplikacji](../innovate/kubernetes/application-development.md) | **Nowy artykuł:** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące planowania opracowywania aplikacji, konfigurowania potoków ciągłej integracji/ciągłego wdrażania oraz implementowania inżynierów niezawodności witryny dla usługi Kubernetes. |
-| [Projektowanie i operacje klastra](../innovate/kubernetes/cluster-design-operations.md) | **Nowy artykuł:** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące konfiguracji klastra, projektowania sieci, skalowalności w przyszłości, ciągłości działania i odzyskiwania po awarii dla Kubernetes. |
+| [Tworzenie i wdrażanie aplikacji](../innovate/kubernetes/application-development.md) | **Nowy artykuł:** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące planowania opracowywania aplikacji, konfigurowania potoków ciągłej integracji/ciągłego wdrażania oraz implementowania inżynierów niezawodności witryny dla usługi Kubernetes. |
+| [Projekt i operacje klastra](../innovate/kubernetes/cluster-design-operations.md) | **Nowy artykuł:** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące konfiguracji klastra, projektowania sieci, skalowalności w przyszłości, ciągłości działania i odzyskiwania po awarii dla Kubernetes. |
 | [Zabezpieczenia klastra i aplikacji](../innovate/kubernetes/cluster-application-security.md) | **Nowy artykuł:** Zawiera listy kontrolne, zasoby i najlepsze rozwiązania dotyczące planowania, produkcji i skalowania zabezpieczeń Kubernetes. |
 
 ## <a name="march-2-2020"></a>2 marca 2020
@@ -90,7 +89,7 @@ W odpowiedzi na opinie o ciągłości migracji przy użyciu wielu sekcji środow
 
 | Artykuł                                                                       | Opis                                                                                                                                    |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Balansowanie portfolio](../strategy/balance-the-portfolio.md)                 | Przeniesiono ten artykuł, aby pojawił się wcześniej w metodologii strategii. Dzięki temu można uwidocznić proces myśli wcześniej w cyklu życia. |
+| [Równoważenie portfela](../strategy/balance-the-portfolio.md)                 | Przeniesiono ten artykuł, aby pojawił się wcześniej w metodologii strategii. Dzięki temu można uwidocznić proces myśli wcześniej w cyklu życia. |
 | [Równoważenie &nbsp; konkurencyjnych &nbsp; priorytetów](../strategy/balance-competing-priorities.md) | **Nowy artykuł:** Przedstawia balans priorytetów w ramach metodologii, aby pomóc w poinformowaniu strategii.                                         |
 
 ### <a name="plan-updates"></a>Planowanie aktualizacji

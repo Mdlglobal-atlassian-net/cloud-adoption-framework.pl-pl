@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 9087a61baaeffa2bb769899a04f55c3eb959f4ea
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bea618638223cc35a429106aa0d59983a16ec511
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218836"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401182"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Przykłady wyników fiskalnych
 
@@ -77,9 +77,7 @@ Zakończenie centrum danych może również zapewnić uniknięcie kosztów, unie
 
 - **Przykład:** Centrum danych firmy jest przeznaczone do odnawiania dzierżawy w ciągu sześciu miesięcy. Centrum danych jest w trakcie obsługi przez osiem lat. Cztery lata temu wszystkie serwery zostały odświeżone i zwirtualizowane, co kosztuje miliony dolarów firmy. W następnym roku firma planuje odświeżanie sprzętu i oprogramowania ponownie. Migrowanie zasobów w tym centrum danych w ramach migracji do chmury umożliwi uniknięcie kosztów przez usunięcie zaplanowanego odświeżania z prognozowanego budżetu w następnym roku. Może ona również generować obniżkę kosztów przez zmniejszenie lub wyeliminowanie kosztów leasingu nieruchomości.
 
-<!-- docsTest:ignore "vs. Operating" -->
-
-### <a name="capital-expenses-vs-operating-expenses"></a>Koszty kapitałowe a koszty operacyjne
+### <a name="capital-expenses-and-operating-expenses"></a>Wydatki kapitałowe i koszty operacyjne
 
 Przed przeprowadzeniem dyskusji na temat kosztów warto zrozumieć dwie podstawowe opcje kosztów: wydatki inwestycyjne i koszty operacyjne.
 

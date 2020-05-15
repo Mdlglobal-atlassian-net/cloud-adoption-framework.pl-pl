@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: fc7806035d66d44f29f9c4658c24efb950193378
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 096657f869f591a8ef758ce5b5ed2f504b07a894
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229901"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401319"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -26,13 +26,12 @@ Pomyślne programy do wdrażania chmury obejmują zwykle co najmniej jeden pozio
 
 Podczas wczesnych faz strategii wdrażania ważne jest rozpoczęcie wyrównywania strategii partnerstwa. Poniższe kroki mogą pomóc w usunięciu przeszkody w późniejszych fazach cyklu życia.
 
-1) Rozpocznij zrozumienie potrzeb pomocy technicznej
-2) Rozważ opcje partnerstwa zgodne z kulturą i potrzebami
-3) Oceń Shortlist opcji partnera
-4) Rozpocznij przeglądy umów i Paperwork z wybranymi partnerami
+1. Rozpocznij zrozumienie potrzeb związanych z pomocą techniczną.
+1. Należy rozważyć opcje partnerstwa zgodne z kulturą i potrzebami.
+1. Oceń Shortlist opcji partnerskich.
+1. Rozpocznij przeglądy umów i Paperwork od wybranych partnerów.
 
-Wykonanie tych kroków wczesne zapewni sukces zespołu, gdy zaczną się pojawiać wysiłki techniczne.
-Poniższe sekcje tego artykułu zawierają wskazówki dotyczące każdego z tych kroków.
+Wykonanie tych kroków wczesne zapewni sukces zespołu, gdy zaczną się pojawiać wysiłki techniczne. Poniższe sekcje tego artykułu zawierają wskazówki dotyczące każdego z tych kroków.
 
 ## <a name="understanding-support-needs"></a>Zrozumienie potrzeb pomocy technicznej
 
@@ -87,7 +86,7 @@ Jeśli masz pytania lub potrzebujesz pomocy, [utwórz wniosek o pomoc techniczn�
 W trakcie opracowywania strategii, jej trudne jest zdefiniowanie konkretnych potrzeb partnerskich. Podczas opracowywania planu wdrażania w chmurze i planu umiejętności należy skoncentrować się na tych potrzebach.
 Jednak na podstawie kultury i dojrzałości Twojego zespołu może być możliwe podjęcie decyzji dotyczącej opcji partnerstwa, która jest bardziej wyrównana z oczekiwanymi potrzebami.
 
-Wybierz co najmniej jedną z opcji partnerhips powyżej, aby zawęzić opcje do pierwszej analizy.
+Wybierz co najmniej jedną z opcji partnerstwa powyżej, aby zawęzić opcje do wyboru w pierwszej kolejności.
 
 ## <a name="begin-contract-and-paperwork-reviews"></a>Rozpocznij przeglądy kontraktu i Paperwork
 

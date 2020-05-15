@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 46be63c2dfe2e4eb5e617c4d74edfc835bf1ddc0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d93d7cd43304451459c23154e61e88cc5298716f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228718"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400332"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,12 +33,12 @@ Struktura wdrażania w chmurze umożliwia wdrażanie w chmurze najlepszych rozwi
 
 <!-- markdownlint-disable MD033 -->
 
-|                                                    |                                                                                                                          |                                                |                                                                                                              |  |  |  |  |
-|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|--------------------------------------------------------------------------------------------------------------|--|--|--|--|
-| ![Ikona strategii](./_images/icons/strategy.png) | [Strategia](./strategy/index.md): Definiowanie uzasadnienia biznesowego i oczekiwanego zastosowania rezultatów.  | <br>![Ikona planu](./_images/icons/plan.png)  | [Zaplanuj](./plan/index.md): Wyrównaj plany wdrażania z możliwością działania do wyników działalności biznesowej. |  |  |  |  |
-| ![Ikona gotowe](./_images/icons/ready.png)        | <br>[Gotowe](./ready/index.md): Przygotuj środowisko chmury dla planowanych zmian. | ![Ikona migracji](./_images/icons/adopt.png)     | <br>[Migrowanie](./migrate/index.md): Migrowanie i modernizacja istniejących obciążeń.             |  |  |  |  |
-| ![Ikona innowacje](./_images/icons/innovate.png)        | <br>[Innowacje](./innovate/index.md): tworzenie nowych rozwiązań w chmurze lub hybrydowych. | ![Ikona zarządzania](./_images/icons/govern.png)     | <br>[Zarządzanie](./govern/index.md): Zarządzanie środowiskiem i obciążeniami.             |  |  |  |  |
-| ![Ikona zarządzania](./_images/icons/manage.png) | <br>[Zarządzaj](./manage/index.md): Operations Management dla rozwiązań w chmurze i hybrydowych. | ![Ikona porządkowania](./_images/icons/organize.png)     | <br>[Organizuj](./organize/index.md): Zarządzanie środowiskiem i obciążeniami.             |  |  |  |  |
+| | | | | | | | |
+|--|--|--|--|--|--|--|--|
+| <br> ![Ikona strategii](./_images/icons/strategy.png) | [Strategia](./strategy/index.md): Definiowanie uzasadnienia biznesowego i oczekiwanego zastosowania rezultatów. | <br> ![Ikona planu](./_images/icons/plan.png) | [Zaplanuj](./plan/index.md): Wyrównaj plany wdrażania z możliwością działania do wyników działalności biznesowej. |  |  |  |  |
+| <br> ![Ikona gotowe](./_images/icons/ready.png) | [Gotowe](./ready/index.md): Przygotuj środowisko chmury dla planowanych zmian. | <br> ![Ikona migracji](./_images/icons/adopt.png) | [Migrowanie](./migrate/index.md): Migrowanie i modernizacja istniejących obciążeń. |  |  |  |  |
+| <br> ![Ikona innowacje](./_images/icons/innovate.png) | [Innowacje](./innovate/index.md): tworzenie nowych rozwiązań w chmurze lub hybrydowych. | <br> ![Ikona zarządzania](./_images/icons/govern.png) | [Zarządzanie](./govern/index.md): Zarządzanie środowiskiem i obciążeniami. |  |  |  |  |
+| <br> ![Ikona zarządzania](./_images/icons/manage.png) | [Zarządzaj](./manage/index.md): Operations Management dla rozwiązań w chmurze i hybrydowych. | <br> ![Ikona porządkowania](./_images/icons/organize.png) | [Organizuj](./organize/index.md): Zarządzanie środowiskiem i obciążeniami. |  |  |  |  |
 
 ## <a name="understand-the-lifecycle"></a>Omówienie cyklu życia
 

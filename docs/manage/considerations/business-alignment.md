@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7db8091d12a763568a3ba7e549770fa94cf0ea23
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5a7bfbffa84e7a64221d560b88067caebd311e85
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216592"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400780"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Tworzenie wyrównania biznesowego w zarządzaniu chmurą
 
@@ -33,7 +33,7 @@ Na szczęście proces opracowywania strategii wdrażania w chmurze i planu wdra�
 
 ## <a name="operations-management-workbook"></a>Skoroszyt zarządzania operacjami
 
-Aby ułatwić przechwycenie decyzji wynikających z tej rozmowy o wyrównaniu, [skoroszyt zarządzania operacjami](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) jest dostępny w witrynie GitHub. Ten skoroszyt nie wykonuje umowy SLA ani obliczeń kosztów. Służy tylko do przechwycenia takich środków i prognozowania powrotu do unikania utraty strat.
+Aby ułatwić przechwycenie decyzji wynikających z tej rozmowy o wyrównaniu, [skoroszyt zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) jest dostępny w witrynie GitHub. Ten skoroszyt nie wykonuje umowy SLA ani obliczeń kosztów. Służy tylko do przechwycenia takich środków i prognozowania powrotu do unikania utraty strat.
 
 Alternatywnie te same obciążenia i powiązane zasoby mogą być otagowane bezpośrednio na platformie Azure, jeśli rozwiązania zostały już wdrożone w chmurze.
 

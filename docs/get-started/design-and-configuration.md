@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 39e5feba4e0d214a86767bf6a2152ae1887dc383
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 007a2219a65147e1682de5d1e0a4ae29251d2153
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229797"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400009"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-design-and-configuration"></a>Wprowadzenie: projektowanie i konfiguracja
 
 Projektowanie i konfiguracja środowiska są najczęściej spotykanymi blokadami do migracji lub innowacji ukierunkowanych na wdrażanie. Szybkie wdrożenie projektu, który obsługuje plan wdrożenia długoterminowego, może być trudne. W tym artykule przedstawiono podejście i serie kroków, które mogą pomóc w przezwyciężeniu typowych programów i przyspieszyć wdrażanie.
@@ -192,7 +190,7 @@ Zespół ds. wdrażania w chmurze rozpoczyna swoją pierwszą liczbę migracji, 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
 - [Refaktoryzacja stref wyładunkowej](../ready/landing-zone/refactor.md)
-- [Tworzenie na podstawie testów stref wyładunkowych](../ready/considerations/test-driven-development.md)
+- [Rozwój stref docelowych oparty na testach](../ready/considerations/test-driven-development.md)
 - [Rozwiń węzeł Zarządzanie strefami przeładunkowymi](../ready/considerations/landing-zone-governance.md)
 - [Rozwiń operacje strefy wyładunkowej](../ready/considerations/landing-zone-operations.md)
 - [Rozwiń węzeł zabezpieczenia strefy wyładunkowej](../ready/considerations/landing-zone-security.md)

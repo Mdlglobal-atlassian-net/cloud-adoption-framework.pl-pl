@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33aaab94c1f6758f6b77be62ab7a70ed2f6bc1ee
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0f9c71ec1ee9ce258def9abb297e89567399aeb9
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223834"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400806"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -87,7 +87,7 @@ Azure Monitor obejmuje obsługę integracji z innymi platformami monitorowania i
 Usługa Azure Monitor dla maszyn wirtualnych | Kryteria kondycji są metrykami zapisanymi w magazynie metryk. | Alerty są generowane, gdy kondycja ulegnie zmianie z kondycji na złej kondycji. Ten alert obsługuje tylko grupy akcji, które są skonfigurowane do wysyłania wiadomości SMS lub powiadomień e-mail. |
 | | Dane dziennika wydajności mapy i systemu operacyjnego gościa są zapisywane w magazynie dzienników. | Utwórz alerty zapytania dziennika. |
 
-<!-- docsTest:ignore "speed driven" -->
+<!-- docsTest:ignore "speed driven by cost" -->
 
 ### <a name="fastest-speed-driven-by-cost"></a>Najszybsza szybkość według kosztu
 

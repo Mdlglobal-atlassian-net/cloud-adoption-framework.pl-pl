@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 71670c0a885d5ec2aef8dcf5a11d944021c3ae5e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1b4859d3adbfdedc1ff8d5322398e350ba9d72de
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217187"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400832"
 ---
 # <a name="azure-regions"></a>Regiony świadczenia usługi Azure
 
@@ -43,9 +43,9 @@ Wraz z uzyskiwaniem informacji dotyczących złożonych kwestii, zaczniesz rozum
 
 Każde niezawodne wdrożenie w chmurze wymaga dobrze przemyślanej sieci, która uwzględnia regiony platformy Azure. Po uwzględnieniu powyższych cech względem regionów, w których ma zostać przeprowadzone wdrożenie, należy wdrożyć sieć. Wyczerpujące omówienie sieci wykracza poza zakres tego artykułu, jednak należy uwzględnić pewne kwestie:
 
-- Regiony platformy Azure są wdrażane w parach. W przypadku katastrofalnej awarii regionu inny region w ramach tej samej granicy geopolitycznej jest wyznaczony jako jego sparowany region. Wdrażanie w sparowanych regionach powinno być rozumiane jako podstawowa i pomocnicza strategia odporności. Brazylia platformy Azure to istotny wyjątek, którego sparowany region ma być Południowo-środkowe stany USA. Aby uzyskać więcej informacji, zobacz [regiony sparowane na platformie Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+- Regiony platformy Azure są wdrażane w parach. W przypadku awarii regionu, inny region w ramach tej samej granicy geopolitycznej jest wyznaczony jako jego sparowany region. Rozważ wdrożenie w regionach sparowanych jako podstawowa i pomocnicza strategia odporności. Brazylia Południowa to istotny wyjątek, którego sparowany region jest Południowo-środkowe stany USA. Aby uzyskać więcej informacji, zobacz [regiony sparowane na platformie Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
 
-  - Usługa Azure Storage obsługuje [magazyn geograficznie nadmiarowy (GRS, Geographically Redundant Storage)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs), co oznacza, że trzy kopie danych są przechowywane w regionie podstawowym, a trzy dodatkowe kopie są przechowywane w sparowanym regionie. Nie można zmienić parowania w przypadku magazynu geograficznie nadmiarowego.
+  - Usługa Azure Storage obsługuje [Magazyn Geograficznie nadmiarowy (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) , co oznacza, że trzy kopie danych są przechowywane w regionie podstawowym, a trzy dodatkowe kopie są przechowywane w sparowanym regionie. Nie można zmienić parowania w przypadku magazynu geograficznie nadmiarowego.
   - Usługi oparte na magazynie geograficznie nadmiarowym usługi Azure Storage mogą korzystać z tej możliwości sparowanego regionu. W tym celu aplikacje i sieci muszą być ukierunkowane na obsługę tej możliwości.
   - Jeśli nie planujesz korzystać z magazynu geograficznie nadmiarowego w celu spełnienia regionalnych wymagań dotyczących odporności, zaleca się, aby _NIE_ korzystać ze sparowanego regionu jako regionu pomocniczego. W przypadku awarii regionalnej nastąpi intensywne wykorzystanie zasobów w sparowanym regionie w miarę migrowania zasobów. Uniknięcie takiego obciążenia może przyspieszyć proces odzyskiwania przez odzyskiwanie do lokacji alternatywnej.
   > [!WARNING]
@@ -57,7 +57,7 @@ Każde niezawodne wdrożenie w chmurze wymaga dobrze przemyślanej sieci, która
 
 - Wiele usług PaaS na platformie Azure obsługuje [punkty końcowe usługi](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) lub usługę [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview). Oba te rozwiązania w istotny sposób wpływają na kwestie dotyczące sieci w kontekście odporności regionalnej, migracji i zarządzania.
 
-- Wiele usług PaaS korzysta z własnych rozwiązań zapewniających odporność. Na przykład zarówno usługa Azure SQL Database, jak i Cosmos DB umożliwiają łatwą replikację do _x_ dodatkowych regionów. W przypadku niektórych usług, np. Azure DNS, nie obowiązują zależności regionalne. Podejmując decyzję o usługach używanych w procesie wdrażania, pamiętaj, aby w pełni zrozumieć możliwości przełączania w tryb failover i kroki odzyskiwania, które mogą być wymagane dla każdej usługi platformy Azure.
+- Wiele usług PaaS korzysta z własnych rozwiązań zapewniających odporność. Na przykład zarówno Azure SQL Database, jak i Azure Cosmos DB umożliwiają łatwą replikację do dodatkowych regionów _x_ . W przypadku niektórych usług, np. Azure DNS, nie obowiązują zależności regionalne. Podejmując decyzję o usługach używanych w procesie wdrażania, pamiętaj, aby w pełni zrozumieć możliwości przełączania w tryb failover i kroki odzyskiwania, które mogą być wymagane dla każdej usługi platformy Azure.
 
 - Oprócz wdrażania w wielu regionach w celu zapewnienia obsługi odzyskiwania po awarii, wiele organizacji wybiera wdrożenie zgodnie ze wzorcem aktywne/aktywne, dzięki czemu nie jest wymagane przełączenie w tryb failover. Ma to dodatkową zaletę w postaci zapewniania globalnego równoważenia obciążenia oraz dodatkowego zwiększenia odporności na uszkodzenia i wydajności sieci. Aby skorzystać z tego wzorca, aplikacje muszą obsługiwać działanie w trybie aktywne/aktywne w wielu regionach.
 

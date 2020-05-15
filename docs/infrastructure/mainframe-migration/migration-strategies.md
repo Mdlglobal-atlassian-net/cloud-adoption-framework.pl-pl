@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d50dc6ec4a2c20b7d73bd2f0cc0ed3414e24581
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a693decfa8e2178069b005c129fa30188c577f2c
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217646"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398798"
 ---
 <!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
@@ -26,7 +26,7 @@ Ta sekcja zawiera wskazówki techniczne dotyczące tworzenia przełącznika z pl
 
 <!-- docsTest:ignore "vs. vCPUs" -->
 
-## <a name="mips-vs-vcpus"></a>MIPS a procesorów wirtualnych vCPU
+## <a name="mips-and-vcpus"></a>MIPS i procesorów wirtualnych vCPU
 
 Nie istnieje żadna formuła mapowania uniwersalnego, która pozwala określić liczbę wirtualnych jednostek przetwarzania (procesorów wirtualnych vCPU), które są konieczne do uruchamiania obciążeń mainframe. Jednak Metryka miliona instrukcji na sekundę (MIPS) jest często mapowana na procesorów wirtualnych vCPU na platformie Azure. MIPS mierzy ogólną moc obliczeniową komputera mainframe, dostarczając stałą wartość liczby cykli na sekundę dla danej maszyny.
 

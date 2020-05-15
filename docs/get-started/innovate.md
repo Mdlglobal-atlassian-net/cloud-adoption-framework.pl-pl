@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a49e52f94b2c9b84afd4e00402a4307fac21923b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cd222e7a4e7c9c03344542d0dc61a8080f611ff2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229641"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400515"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Wprowadzenie: przyspiesz innowacje nowych produktów i usług w chmurze
 
 Tworzenie nowych produktów i usług w chmurze wymaga innego podejścia niż migracja. Metodologia wdrażania w chmurze stanowi podejście, które prowadzi do rozwoju nowych produktów i usług.
@@ -31,6 +29,8 @@ Aby uniknąć powszechnych bloków, należy utworzyć jasno i zwięzłą strateg
 **Dostarczane**
 
 - Użyj [szablonu strategii i planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) , aby zarejestrować motywacje i żądane wyniki biznesowe.
+
+<!-- docsTest:ignore "Get started: Accelerate migration" -->
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
@@ -149,7 +149,7 @@ Zdefiniuj plan długoterminowych obowiązków operacyjnych dotyczących planowan
 **Dostarczane**
 
 - Ukończ [Przegląd architektury platformy Azure](https://docs.microsoft.com/assessments/?id=azure-architecture-review) , aby ocenić różne decyzje dotyczące architektury i operacji.
-- Dostosuj [skoroszyt zarządzania operacjami](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) , aby odzwierciedlał wszystkie wymagane Operacje zaawansowane.
+- Dostosuj [skoroszyt zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) , aby odzwierciedlał wszystkie wymagane Operacje zaawansowane.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 

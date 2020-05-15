@@ -4,17 +4,16 @@ description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby rozpo
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 7ce353a03c57e89800d65edc5cdfbdec8c53d092
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5c3dbc530ff2e1f28c0927cead3a761463295c4d
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218496"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399623"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Ustanów początkową podstawę ładu w chmurze
 
@@ -30,38 +29,9 @@ Jeśli zostały przeprowadzone następujące czynności w ramach platformy wdra�
 
 Poniżej przedstawiono dwa różne przykłady początkowych podstaw ładu (nazywanych również ładu MVP) w celu zastosowania solidnej podstawy do zarządzania nowymi lub istniejącymi wdrożeniami. Wybierz MVP, który najlepiej odpowiada potrzebom firmy, aby rozpocząć pracę:
 
-<!-- markdownlint-disable MD033 -->
+- [Standardowy Przewodnik dotyczący ładu](./guides/standard/index.md): Przewodnik dotyczący większości organizacji oparty na zalecanym początkowym modelu z dwoma subskrypcjami, przeznaczonym do wdrożeń w wielu regionach, ale nie obejmujących chmur publicznych i suwerennych/rządowych.
+- [Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami](./guides/complex/index.md): Przewodnik dla przedsiębiorstw, które są zarządzane przez wiele niezależnych jednostek roboczych IT lub obejmują chmurę publiczną i suwerenną/rządową.
 
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./guides/standard/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Standardowy przewodnik dotyczący ładu</h3>
-                        <p>Przewodnik dla większości organizacji oparty na zalecanym początkowym modelu z dwiema subskrypcjami, przeznaczonym do wdrożeń w wielu regionach, ale nie w przypadku chmur publicznych i suwerennych/rządowych.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./guides/complex/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Przewodnik dotyczący ładu dla przedsiębiorstw złożonych</h3>
-                        <p>Przewodnik dla przedsiębiorstw, które są zarządzane przez wiele niezależnych jednostek biznesowych IT lub obejmują chmurę publiczną i suwerenną/rządową.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="next-steps"></a>Następne kroki

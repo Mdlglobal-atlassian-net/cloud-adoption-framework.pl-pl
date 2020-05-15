@@ -4,17 +4,16 @@ description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby dowie
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/13/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 41535db6452be0b8efea9a91329169326c444ab0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 456e9105cd4d8425681664bc9cbcb74d54f7f58f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220213"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400577"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Popraw początkową podstawę ładu w chmurze
 
@@ -27,14 +26,14 @@ W dowolnym momencie następujące najlepsze rozwiązania można zastosować do p
 > [!IMPORTANT]
 > Organizacja zasobów może mieć wpływ na sposób stosowania tych najlepszych rozwiązań. Ważne jest, aby zacząć od zaleceń, które najlepiej dopasowują się do początkowej podstawy ładu Cloud, która została zaimplementowana w poprzednim kroku.
 
-| Ryzyko/zapotrzebowanie | Standardowa Enterprise | Przedsiębiorstwo złożone |
+| Ryzyko/zapotrzebowanie | Przedsiębiorstwo standardowe | Przedsiębiorstwo złożone |
 |---|---|---|
 | Poufne dane w chmurze | [Ulepszenia w ramach dziedziny](./guides/standard/security-baseline-improvement.md) | [Ulepszenia w ramach dziedziny](./guides/complex/security-baseline-improvement.md) |
 | Aplikacje o kluczowym znaczeniu w chmurze | [Ulepszenia w ramach dziedziny](./guides/standard/resource-consistency-improvement.md) | [Ulepszenia w ramach dziedziny](./guides/complex/resource-consistency-improvement.md) |
 | Zarządzanie kosztami chmury | [Ulepszenia w ramach dziedziny](./guides/standard/cost-management-improvement.md) | [Ulepszenia w ramach dziedziny](./guides/complex/cost-management-improvement.md) |
 | Rozwiązanie wielochmurowe | [Ulepszenia w ramach dziedziny](./guides/standard/multicloud-improvement.md) | [Ulepszenia w ramach dziedziny](./guides/complex/multicloud-improvement.md) |
-| Złożone/starsze Zarządzanie tożsamościami | Brak | [Ulepszenia w ramach dziedziny](./guides/complex/identity-baseline-improvement.md) |
-| Wiele warstw nadzoru | Brak | [Ulepszenia w ramach dziedziny](./guides/complex/multiple-layers-of-governance.md) |
+| Złożone/starsze Zarządzanie tożsamościami | Nie dotyczy | [Ulepszenia w ramach dziedziny](./guides/complex/identity-baseline-improvement.md) |
+| Wiele warstw nadzoru | Nie dotyczy | [Ulepszenia w ramach dziedziny](./guides/complex/multiple-layers-of-governance.md) |
 
 ## <a name="next-steps"></a>Następne kroki
 

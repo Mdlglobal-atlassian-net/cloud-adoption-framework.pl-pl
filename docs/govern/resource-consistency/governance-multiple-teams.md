@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 30c25159dc677c5220c80697c282304f73a59a9b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: db90e2ca82164d645605e49dc288c21b610e12b9
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218802"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399537"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -87,7 +87,7 @@ W obu przykładach istnieje administrator usługi subskrypcji, który ma przypis
 ![Administrator usługi subskrypcji z rolą właściciela ](../../_images/govern/design/governance-2-1.png)
  _rysunek 3: subskrypcja z administratorem usługi, która ma przypisaną rolę właściciela wbudowanego._
 
-<!-- docsTest:ignore "resource group A" "resource group B" "resource groups A and B" "workload owner A" "workload owner B" -->
+<!-- docsTest:ignore "resource group A" "resource groups A and B" "workload owner A" -->
 
 1. W pierwszym przykładzie istnieje **właściciel obciążenia A** bez uprawnień do zakresu subskrypcji, &mdash; domyślnie nie ma uprawnień do zarządzania dostępem do zasobów. Ten użytkownik chce wdrożyć zasoby i zarządzać nimi w ramach obciążenia. Należy skontaktować się z **administratorem usługi** , aby zażądać utworzenia grupy zasobów.
     ![Właściciel obciążenia żąda utworzenia grupy zasobów A](../../_images/govern/design/governance-2-2.png)
@@ -168,7 +168,8 @@ Najpierw przyjrzyjmy się przykładowym modelowi zarządzania zasobami przy uży
 
 Zacznijmy od oceny pierwszej opcji. Będziesz używać modelu uprawnień, który został omówiony w poprzedniej sekcji, za pomocą jednego administratora usługi subskrypcji, który tworzy grupy zasobów i dodaje do nich użytkowników przy użyciu wbudowanej roli **współautor** lub **czytnika** .
 
-<!-- docsTest:ignore managedBy hub-vnet prod-vnet app1-dev-vnet app2-dev-vnet app1-prod-vnet app2-prod-vnet -->
+<!-- docsTest:ignore managedBy -->
+<!-- hub-vnet prod-vnet app1-dev-vnet app2-dev-vnet app1-prod-vnet app2-prod-vnet -->
 
 1. Pierwsza wdrożona Grupa zasobów reprezentuje środowisko **infrastruktury udostępnionej** . Konto **właściciela subskrypcji** tworzy grupę zasobów dla udostępnionych zasobów infrastruktury o nazwie `netops-shared-rg` .
     ![Tworzenie grupy zasobów](../../_images/govern/design/governance-3-0d.png)

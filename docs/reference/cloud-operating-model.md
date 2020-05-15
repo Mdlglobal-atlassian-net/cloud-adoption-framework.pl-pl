@@ -3,19 +3,20 @@ title: Model operacyjny chmury to teraz platforma wdrażania w chmurze dla platf
 description: Korzystaj z platformy wdrażania w chmurze dla platformy Azure, aby dowiedzieć się, co, dlaczego i jak przyspieszać Wdrażanie chmury.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
-ms.topic: landing-page
+ms.date: 05/12/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 212c5634c09900e52c02ec6691862f3c60b7b3dc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2ef4d4c61ee573aa1233db5dcdbed427a3b5b100
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221692"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401206"
 ---
+<!-- docsTest:ignore "Cloud Operating Model" -->
+
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>Model operacyjny chmury jest teraz częścią platformy wdrażania Microsoft Cloud dla systemu Azure
 
 Na początku 2018 roku firma Microsoft udostępniła przewodnik Cloud Operating Model (COM). Model COM był przewodnikiem, który pomaga klientom zrozumieć **znaczenie** i **przyczynę** transformacji cyfrowej. Dzięki temu klienci mogą poznać wszystkie obszary, które są potrzebne do rozprowadzenia: strategii biznesowej, strategii kulturowej i strategii technologicznej. Co nie zostało uwzględnione w modelu COM, były konkretnymi krokami, _do_ których pozostali klienci zastanawiali się w tym miejscu? ".
@@ -26,9 +27,9 @@ W październiku 2018 rozpocząłmy przegląd wszystkich modeli, które zostały 
 
 W przypadku podobnego podejścia do modelu COM Czytelnicy powinni zacząć z jedną z następujących czynności:
 
-- [Rozpoczęcie podróży migracji do chmury](../get-started/migrate.md)
-- [Wprowadzanie innowacji poprzez wdrażanie w chmurze](../get-started/innovate.md)
-- [Zapewnianie pomyślnego wdrożenia chmury](../get-started/enable.md)
+- [Wprowadzenie: przyspieszanie migracji](../get-started/migrate.md)
+- [Wprowadzenie: kompilowanie i innowacje w chmurze](../get-started/innovate.md)
+- [Włączanie sukcesu z modelem pracy dźwiękowej](../get-started/enable.md)
 
 Wskazówki podane wcześniej w modelu COM nadal dotyczą struktury wdrażania chmury. Środowisko jest inne, ale struktura wdrożenia chmury jest po prostu rozszerzeniem tych wskazówek. Aby przejść z modelu COM do struktury wdrażania w chmurze, rozumiesz zakres i strukturę. W poniższych dwóch sekcjach opisano przechodzenie.
 

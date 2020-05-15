@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05d511419a27d00e87abfae156110749a20029d8
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: adc74b83bf3da456e657d890a06ba6b1bcf516ed
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222372"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401242"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -145,8 +145,8 @@ Konta magazynu mogą wykorzystywać różne typy nadmiarowości na potrzeby zape
 | --- | --- | --- |
 | **Magazyn lokalnie nadmiarowy (LRS)** | Chroni przed awarią lokalną przez replikację w ramach pojedynczej jednostki magazynowej do oddzielnej domeny błędów i domeny aktualizacji. Przechowuje wiele kopii danych w jednym centrum danych. Zapewnia co najmniej 99,999999999% czasu trwałości obiektów w danym roku. | Warte rozważenia, jeśli aplikacja przechowuje dane, które można łatwo odtworzyć. |
 | **Magazyn strefowo nadmiarowy (ZRS)** | Chroni przed awarią centrum danych przez replikowanie w trzech klastrach magazynu w jednym regionie. Każdy klaster magazynu jest fizycznie oddzielony i zlokalizowany we własnej strefie dostępności. Zapewnia co najmniej 99,9999999999 procentową trwałość obiektów w danym roku przez przechowywanie wielu kopii danych w wielu centrach lub regionach. | Warto rozważyć, jeśli potrzebujesz spójności, trwałości i wysokiej dostępności. Może nie chronić przed awarią regionalną, jeśli ma ona trwały wpływ na wiele stref. |
-| **Magazyn geograficznie nadmiarowy (GRS)** | Chroni przed awarią całego regionu przez replikowanie danych do regionu pomocniczego znajdującego się setki kilometrów od regionu podstawowego. Zapewnia co najmniej 99.99999999999999% trwałości obiektów w danym roku. | Dane repliki są niedostępne, dopóki firma Microsoft nie zainicjuje przejścia w tryb failover do regionu pomocniczego. Jeśli nastąpi przełączenie w tryb failover, możliwy jest dostęp do odczytu i zapisu. |
-| **Dostęp do odczytu z magazynu geograficznie nadmiarowego (RA-GRS)** | Podobne do GRS. Zapewnia co najmniej 99.99999999999999% trwałości obiektów w danym roku. | Zapewnia dostępność i 99,99% odczytu, umożliwiając dostęp do odczytu z drugiego regionu używanego przez GRS. |
+| **Magazyn Geograficznie nadmiarowy (GRS)** | Chroni przed awarią całego regionu przez replikowanie danych do regionu pomocniczego znajdującego się setki kilometrów od regionu podstawowego. Zapewnia co najmniej 99.99999999999999% trwałości obiektów w danym roku. | Dane repliki są niedostępne, dopóki firma Microsoft nie zainicjuje przejścia w tryb failover do regionu pomocniczego. Jeśli nastąpi przełączenie w tryb failover, możliwy jest dostęp do odczytu i zapisu. |
+| **Magazyn geograficznie nadmiarowy dostępny do odczytu (RA-GRS)** | Podobne do GRS. Zapewnia co najmniej 99.99999999999999% trwałości obiektów w danym roku. | Zapewnia dostępność i 99,99% odczytu, umożliwiając dostęp do odczytu z drugiego regionu używanego przez GRS. |
 
 **Dowiedz się więcej:**
 

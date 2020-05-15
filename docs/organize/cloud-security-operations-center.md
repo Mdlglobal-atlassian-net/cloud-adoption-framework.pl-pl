@@ -1,22 +1,22 @@
 ---
-title: Funkcje centrum operacji zabezpieczeń w chmurze
-description: Informacje o możliwościach związanych z zabezpieczeniami w chmurze
+title: Funkcje SOC chmury
+description: Informacje o funkcjach usługi Cloud Security Operations Center (SOC).
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 7c3044e4d5e970b9f78bb46bda2aadf11273e556
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c966129e01d9cf97af0ac1db0a8ac7bec8efb751
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228640"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401127"
 ---
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
 
-# <a name="functions-of-a-cloud-security-operations-center-soc"></a>Funkcje centrum operacji zabezpieczeń w chmurze (SOC)
+# <a name="cloud-soc-functions"></a>Funkcje SOC chmury
 
 Głównym celem centrum operacji w chmurze zabezpieczeń (SOC) jest wykrywanie, reagowanie na i odzyskiwanie z aktywnych ataków na zasoby przedsiębiorstwa.
 

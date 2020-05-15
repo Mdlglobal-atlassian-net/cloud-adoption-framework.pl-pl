@@ -1,20 +1,20 @@
 ---
 title: Funkcje zabezpieczeń osób w chmurze
-description: Poznaj funkcję zabezpieczeń w chmurze.
+description: Informacje o funkcjach zabezpieczeń w chmurze.
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/30/2020
-ms.openlocfilehash: 85c878517fbb3ceca84bc2588e90648e9b1cb2f3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3e6895e1f2b13c4f2791b60baf7457223732fecf
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228523"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401094"
 ---
-# <a name="functions-of-a-people-security-in-the-cloud"></a>Funkcje zabezpieczeń osób w chmurze
+# <a name="people-security-functions-in-the-cloud"></a>Funkcje zabezpieczeń osób w chmurze
 
 Bezpieczeństwo osób chroni organizację przed ryzykiem przypadkowych pomyłek i złośliwych działań niejawnych.
 
@@ -26,20 +26,22 @@ Modernizacja tej funkcji obejmuje:
 - **Wysoka jakość zaangażowania ludzkiego:** Komunikacja i szkolenia związane z bezpieczeństwem powinny być produkcjami o wysokiej jakości, które empatięą i emocjonalnej zaangażowanie w połączenia z pracownikami i organizacjami.
 - **Realistyczne oczekiwania:** Zatwierdź, że użytkownicy będą czasami klikać wiadomości e-mail z phishingiem i metryki sukcesu, aby zmniejszyć szybkość działania a oczekiwano zatrzymania 100% kliknięcia.
 - **Zmiana kultury organizacyjnej:** Lider organizacyjny musi mieć zamierzoną kulturową zmianę w celu zapewnienia bezpieczeństwa priorytetu dla każdego członka organizacji.
-- **Zwiększona koncentracja ryzyka niebocznego** , aby pomóc organizacjom w ochronie cennych tajemnic handlowych i innych danych z wysoce opłacalnymi przypadkami użycia (np. lokalizacjami klientów, rekordami komunikacji itp.)
+- **Zwiększona koncentracja ryzyka niebocznego** , aby pomóc organizacjom w ochronie cennych tajemnic handlowych i innych danych z wysoce opłacalnymi przypadkami użycia (takimi jak lokalizacje klientów lub rekordy komunikacji).
 - **Ulepszona funkcja wykrywania zagrożeń** , która wykorzystuje możliwości chmury do rejestrowania aktywności, analizy zachowań i uczenia maszynowego (Machine Learning).
 
 ## <a name="team-composition-and-key-relationships"></a>Kompozycja zespołu i relacje między kluczami
 
-Ludzie często są partnerami z następującymi typami ról.
+Ludzie często są partnerami z następującymi typami ról:
 
 - Inspekcja i zespoły prawne
 - Kadry
 - Zespół ds. prywatności
 - Bezpieczeństwo danych
-- Zespoły komunikacji (na potrzeby rozpoznawania użytkowników)
-- Operacje zabezpieczeń (dla niejawnego ryzyka)
-- Bezpieczeństwo fizyczne (ryzyko związane z niejawnym testerem)
+- Zespoły komunikacyjne, na potrzeby świadomości użytkowników
+- Operacje zabezpieczeń dla niejawnego ryzyka
+- Zabezpieczenia fizyczne dla niejawnego ryzyka
+
+<!-- cSpell:ignore apsec -->
 
 ## <a name="next-steps"></a>Następne kroki
 

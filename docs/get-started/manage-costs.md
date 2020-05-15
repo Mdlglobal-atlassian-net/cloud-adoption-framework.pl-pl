@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 22956507d801163b2ee75f074f48bbd955546c11
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d14e37cad9d6d1e63200a9401cfaac2ca2e07655
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229615"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400706"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-manage-cloud-costs"></a>Wprowadzenie: zarządzanie kosztami chmury
 
 Jednym z podstawowych dyscyplin nadzoru w chmurze jest zarządzanie kosztami. Dyscyplina zarządzania kosztami koncentruje się na tworzeniu budżetów, monitorowaniu wzorców alokacji kosztów i wdrażaniu kontrolek w celu ulepszania zachowań wydatków w chmurze w portfelu IT. Jednak Optymalizacja kosztów przedsiębiorstwa obejmuje wiele innych ról i funkcji pozwalających zminimalizować koszt i zrównoważyć wymagania dotyczące skalowania, wydajności, zabezpieczeń i niezawodności. Ten artykuł mapuje te różne funkcje pomocnicze na Przewodnik wprowadzający, aby pomóc w tworzeniu wyrównania między poszczególnymi zespołami.

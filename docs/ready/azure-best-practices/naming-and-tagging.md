@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 3ac1d332e0671a682eaa9b60a7e8a677fbf2fa37
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 07c41a1de28f739054a35c36bb7e2e9c123f101d
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223375"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400950"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -37,7 +37,7 @@ Zmiana nazw zasobów może być trudna. Przed rozpoczęciem każdego dużego wdr
 
 Strategia nazewnictwa i tagowania obejmuje szczegóły biznesowe i operacyjne jako składniki nazw zasobów i tagów metadanych:
 
-- Po stronie biznesowej tej strategii należy zapewnić, że nazwy zasobów i Tagi zawierają informacje organizacyjne, które są konieczne do zidentyfikowania zespołów. Umożliwia korzystanie z zasobów w powiązaniu z właścicielami biznesowymi, którzy odpowiadają za koszty zasobów.
+- Po stronie biznesowej tej strategii należy zapewnić, że nazwy zasobów i Tagi zawierają informacje organizacyjne, które są konieczne do zidentyfikowania zespołów. Korzystaj z zasobów wraz z właścicielami biznesowymi, którzy odpowiadają za koszty zasobów.
 - Aspekt operacyjny zapewnia, że nazwy i tagi zawierają informacje używane przez zespoły informatyczne do identyfikowania obciążenia, aplikacji, środowiska, ważności oraz inne informacje przydatne do zarządzania zasobami.
 
 ## <a name="resource-naming"></a>Nazewnictwo zasobów
@@ -131,7 +131,7 @@ Poniższa lista zawiera zalecane prefiksy typów zasobów platformy Azure do uż
 |--------------------------------|-------------|
 | Serwer Azure SQL Database      | Server        |
 | Baza danych Azure SQL Database             | sqldb-      |
-| Baza danych Cosmos DB             | Cosmos     |
+| Baza danych Azure Cosmos DB       | Cosmos     |
 | Wystąpienie usługi Azure cache for Redis | redis-      |
 | Baza danych MySQL                 | mysql-      |
 | Baza danych PostgreSQL            | PSQL       |
@@ -275,7 +275,7 @@ W poniższej sekcji przedstawiono przykłady nazw wspólnych typów zasobów pla
 |--------------------------------|--------------------|----------------------------------------|---------------------------------------------------------------------------|
 | Serwer Azure SQL Database      | Globalny             | SQL — \< środowisko nazw \> - \< aplikacji\>       | <li> SQL — Nawigator — prod <li> SQL-emisje — dev |
 | Baza danych Azure SQL Database             | Azure SQL Database | SQLDB — \< Nazwa bazy danych> — \< środowisko\> | <li> SQLDB — użytkownicy — produkcja <li> SQLDB — użytkownicy — dev |
-| Baza danych Cosmos DB             | Globalny             | Cosmos — \< środowisko nazw \> - \< aplikacji\>    | <li> Cosmos-Navigator-prod <li> Cosmos-emisje — dev |
+| Baza danych Azure Cosmos DB       | Globalny             | Cosmos — \< środowisko nazw \> - \< aplikacji\>    | <li> Cosmos-Navigator-prod <li> Cosmos-emisje — dev |
 | Wystąpienie usługi Azure cache for Redis | Globalny             | redis-\<Nazwa aplikacji\>-\<Środowisko\>     | <li> redis-navigator-prod <li> redis-emissions-dev |
 | Baza danych MySQL                 | Globalny             | mysql-\<Nazwa aplikacji\>-\<Środowisko\>     | <li> mysql-navigator-prod <li> mysql-emissions-dev |
 | Baza danych PostgreSQL            | Globalny             | PSQL — \< środowisko nazw \> - \< aplikacji\>      | <li> PSQL-Navigator-prod <li> PSQL-emisje — dev |

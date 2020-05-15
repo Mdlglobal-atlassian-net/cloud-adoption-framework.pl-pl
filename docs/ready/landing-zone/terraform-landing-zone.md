@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a7662d8460581d143b75a8f95aa48bf290d39c2d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 69d1aaf7ff2a5bd3d71cb03fd1149019792c71f1
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221760"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401282"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
@@ -43,10 +43,10 @@ Wdrożone składniki i ich przeznaczenie obejmują następujące elementy:
 | Składnik | Odpowiedzialność za |
 |---|---|
 | Grupy zasobów | Podstawowe grupy zasobów, które są zbędne dla podstawy |
-| Dziennik aktywności      | Inspekcja wszystkich działań subskrypcji i archiwizowania: <li> Konto magazynu <li> Azure Event Hubs |
+| Dziennik aktywności | Inspekcja wszystkich działań subskrypcji i archiwizowania: <li> Konto magazynu <li> Azure Event Hubs |
 | Rejestrowanie diagnostyczne | Wszystkie dzienniki operacji są przechowywane przez określoną liczbę dni: <li> Konto magazynu <li> Event Hubs |
 | Log Analytics | Przechowuje wszystkie dzienniki operacji. Wdrażaj popularne rozwiązania w zakresie przeglądu najlepszych rozwiązań dotyczących aplikacji: <li> NetworkMonitoring <li> ADAssessment <li> ADReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
-| Azure Security Center | Metryki i alerty dotyczące higieny zabezpieczeń wysyłane do poczty e-mail i numeru telefonu                                                                                                                                                                                        |
+| Azure Security Center | Metryki i alerty dotyczące higieny zabezpieczeń wysyłane do poczty e-mail i numeru telefonu |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -78,11 +78,11 @@ Następujące decyzje są reprezentowane w Terraformej strefie docelowej:
 | Projekt subskrypcji    | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                                                                                                                                                                                                     | [Tworzenie subskrypcji początkowych](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
 | Grupy zasobów        | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                                                                                                                                                                                                     | [Skalowanie subskrypcji](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                           |
 | Grupy zarządzania      | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                                                                                                                                                                                                     | [Organizuj subskrypcje](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                     |
-| Dane                   | Brak                                                                                                                                                                                                                                                                      | [Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-| Magazyn                | Brak                                                                                                                                                                                                                                                                      | [Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                  |
+| Dane                   | Nie dotyczy                                                                                                                                                                                                                                                                      | [Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+| Magazyn                | Nie dotyczy                                                                                                                                                                                                                                                                      | [Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                  |
 | Standardy nazewnictwa       | Po utworzeniu środowiska tworzony jest również unikatowy prefiks. Zasoby, które wymagają unikatowej nazwy globalnej (na przykład kont magazynu), używają tego prefiksu. Nazwa niestandardowa jest dołączana do losowego sufiksu. Użycie tagów jest wymagane zgodnie z opisem w poniższej tabeli. | [Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                              |
-| Zarządzanie kosztami        | Brak                                                                                                                                                                                                                                                                      | [Śledzenie kosztów](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
-| Wystąpienia obliczeniowe                | Brak                                                                                                                                                                                                                                                                      | [Opcje obliczeń](../considerations/compute-options.md)                                                                                                                                                                                                         |
+| Zarządzanie kosztami        | Nie dotyczy                                                                                                                                                                                                                                                                      | [Śledzenie kosztów](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
+| Wystąpienia obliczeniowe                | Nie dotyczy                                                                                                                                                                                                                                                                      | [Opcje obliczeń](../considerations/compute-options.md)                                                                                                                                                                                                         |
 
 ### <a name="tagging-standards"></a>Standardy tagowania
 
@@ -94,7 +94,7 @@ Minimalny zestaw tagów przedstawionych poniżej musi być obecny dla wszystkich
 | Cost Center       | Księgowe centrum kosztu skojarzone z tym zasobem.                                              | CostCenter      | Liczba                                           |
 | Odzyskiwanie po awarii | Ważność aplikacji, obciążenia lub usługi dla działania firmy.                                     | DR              | FUNKCJA ODZYSKIWANIA PO AWARII, KTÓRA NIE JEST DOSTĘPNA W PROGRAMIE DR                       |
 | Środowisko       | Środowisko wdrażania aplikacji, obciążenia lub usługi.                                   | Env             | Produkcja, dev, pytań i odpowiedzi, etap, test, szkolenia             |
-| Nazwa właściciela        | Właściciel aplikacji, obciążenia lub usługi.                                                    | Właściciel           | email                                            |
+| Nazwa właściciela        | Właściciel aplikacji, obciążenia lub usługi.                                                    | Właściciel           | poczta e-mail                                            |
 | Typ wdrożenia   | Definiuje sposób utrzymywania zasobów.                                                    | Typ wdrożenia  | Ręczne, Terraform                                |
 | Wersja           | Wdrożona wersja planu.                                                                 | version         | v 0,1                                             |
 | Nazwa aplikacji  | Nazwa skojarzonej aplikacji, usługi lub obciążenia związanego z zasobem.             | ApplicationName | "Nazwa aplikacji"                                       |

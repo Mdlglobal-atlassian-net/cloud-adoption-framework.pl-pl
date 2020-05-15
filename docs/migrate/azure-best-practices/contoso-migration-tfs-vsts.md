@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: be509cff8eb1b7a342310975afe50ef1f66e88bd
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ba845420954225e69fb2c4b8ffcffa8a42fec7f7
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223732"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401145"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -226,7 +226,7 @@ Przed rozpoczęciem administratorzy wspólnie z zespołem deweloperów planują 
 1. **Odłączenie kolekcji.** Gdy kolekcja jest dołączona i w trybie online, dane tożsamości związane z tą kolekcją znajdują się w bazie danych konfiguracji serwera TFS. W momencie odłączenia kolekcji od serwera TFS jest wykonywana kopia tych danych tożsamości, pakowana razem z kolekcją w celu przeniesienia. Bez tych danych nie można wykonać importu tożsamości. Zaleca się, aby kolekcja została odłączona do momentu zakończenia importowania, ponieważ nie ma możliwości importowania zmian, które wystąpiły podczas importowania.
 2. **Wygenerowanie kopii zapasowej.** Następnym krokiem procesu migracji jest wygenerowanie kopii zapasowej, którą można będzie zaimportować do usług Azure DevOps Services. Pakiety aplikacji warstwy danych (DACPAC) to funkcja programu SQL Server umożliwiająca spakowanie zmian bazy danych w jednym pliku i wdrożenie ich w innych wystąpieniach programu SQL. Można go również przywrócić bezpośrednio do Azure DevOps Services i służy jako metoda pakowania do pobierania danych kolekcji do chmury. Firma Contoso użyje narzędzia SqlPackage.exe do wygenerowania pakietu DACPAC. To narzędzie jest częścią zestawu SQL Server Data Tools.
 3. **Przekazywanie do magazynu.** Po utworzeniu pakietu DACPAC należy przekazać go do usługi Azure Storage. Po przekazaniu firma otrzyma sygnaturę dostępu współdzielonego (SAS) umożliwiającą uzyskanie dostępu do magazynu z poziomu narzędzia do migracji serwera TFS.
-4. **Uzupełnienie importu.** Firma Contoso może następnie uzupełnić brakujące pola w pliku importu, w tym ustawienie pakietu DACPAC. Aby rozpocząć pracę z nimi, określ, że chcą przeprowadzić import w trybie **suchym** , aby sprawdzić, czy wszystko działa prawidłowo przed pełną migracją.
+4. **Uzupełnienie importu.** Firma Contoso może następnie uzupełnić brakujące pola w pliku importu, w tym ustawienie pakietu DACPAC. Aby rozpocząć pracę z nimi, określ, że chcą przeprowadzić import w trybie _suchym_ , aby sprawdzić, czy wszystko działa prawidłowo przed pełną migracją.
 5. **Wykonaj import suchego przebiegu.** Importy w postaci suchej-uruchomieniowej pomagają w testowaniu migracji kolekcji. Przebiegi suche mają ograniczoną żywotność, dlatego są usuwane przed uruchomieniem migracji produkcyjnej. Przebiegi próbne są usuwane automatycznie po określonym czasie. Informacja o planowanym czasie usunięcia przebiegu próbnego jest zawarta w otrzymanej po zakończeniu importu wiadomości e-mail z komunikatem o powodzeniu. Należy odnotować tę informację i odpowiednio dostosować plan.
 6. **Wykonanie migracji produkcyjnej.** Po zakończeniu migracji suchej-Run Administratorzy contoso przeprowadzają ostateczną migrację, aktualizując plik **Import. JSON** i ponownie uruchamiając operację importowania.
 

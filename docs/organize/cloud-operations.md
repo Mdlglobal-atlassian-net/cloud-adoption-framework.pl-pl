@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/20/2020
-ms.openlocfilehash: 3fd693d5e3275eea40d1a71149207689b7dca35b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3e11e280e0faa12d7bbb6ee1a951e9eb1546cdab
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215623"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400984"
 ---
 # <a name="cloud-operations-functions"></a>Funkcje operacji w chmurze
 
@@ -38,7 +38,7 @@ Zapoznaj się z następującymi tematami:
 - [Wyniki biznesowe](../strategy/business-outcomes/index.md)
 - [Modele finansowe](../strategy/financial-models.md)
 - [Motywacje do wdrożenia w chmurze](../strategy/motivations.md)
-- [Ryzyka biznesowe](../govern/policy-compliance/risk-tolerance.md)
+- [Rodzaje ryzyka biznesowego](../govern/policy-compliance/risk-tolerance.md)
 - [Racjonalizacja podpisu cyfrowego](../digital-estate/index.md)
 
 ## <a name="minimum-scope"></a>Zakres minimalny
@@ -74,7 +74,7 @@ W miarę przyjmowania i skalowania operacji ważne jest definiowanie i automatyz
 
 Dowiedz się więcej o usługach:
 
-- Funkcje usługi [Cloud Center doskonałości](../organize/cloud-center-of-excellence.md)
+- [Centrum usługi w chmurze funkcji doskonałości](../organize/cloud-center-of-excellence.md) .
 - [Antywzorce organizacyjne: silosy i fiefdoms](../organize/fiefdoms-silos.md).
 
 Dowiedz się, jak wyrównać zakres obowiązków dla zespołów, opracowując macierz międzyzespołową, która identyfikuje osoby odpowiedzialne, obsługujące, konsultowane i poinformowane (RACI). Pobierz i zmodyfikuj [szablon arkusza kalkulacyjnego Raci](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx).

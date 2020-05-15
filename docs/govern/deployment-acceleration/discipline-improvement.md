@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 835614ca30fc4fc5ca3e617e920f46aa4039cd8b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3851fbc2634f98ce7e993be5cca14d89f523abf1
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220366"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400624"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Udoskonalenie ulepszeń wdrożenia
 
@@ -88,6 +88,8 @@ Po zakończeniu transformacji zarządzanie i działania muszą być aktywne w pr
 - Zgłoś metryki po wdrożeniu i Dystrybuuj je do zainteresowanych stron.
 - Popraw wskazówki dotyczące architektury w celu zaplanowania przyszłych procesów wdrażania.
 - Kontynuuj komunikację z i uczenie odpowiednich osób i zespołów w regularnych odstępach czasu, aby zapewnić stałe przestrzeganie wytycznych dotyczących architektury.
+
+<!-- docsTest:ignore "desired state configuration" -->
 
 **Potencjalne działania:**
 

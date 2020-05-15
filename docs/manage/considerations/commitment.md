@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d0f392d58efe65b8199aefeb9dbd554ed0896cae
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0ca1c1804b2c7116ed61e05a10a221b472a2807d
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216184"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398760"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Zobowiązania biznesowe w zarządzaniu chmurą
 
@@ -49,7 +49,7 @@ Aby pomóc w podejmowaniu decyzji, w dalszej części tego artykułu opisano wsz
 <!-- -->
 
 > [!TIP]
-> Jeśli używasz [skoroszytu zarządzania operacjami](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) do planowania zarządzania chmurą, należy zaktualizować pola zarządzania operacjami, aby odzwierciedlały te wymagania wstępne. Te pola obejmują _poziom zobowiązania_, umowę _SLA_i _koszt miesięczny_. Koszt miesięczny powinien przedstawiać miesięczne koszty dodatkowych narzędzi do zarządzania operacyjnego.
+> Jeśli używasz [skoroszytu zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) do planowania zarządzania chmurą, należy zaktualizować pola zarządzania operacjami, aby odzwierciedlały te wymagania wstępne. Te pola obejmują _poziom zobowiązania_, umowę _SLA_i _koszt miesięczny_. Koszt miesięczny powinien przedstawiać miesięczne koszty dodatkowych narzędzi do zarządzania operacyjnego.
 
 Linia bazowa zarządzania operacjami służy jako początkowy punkt początkowy do sprawdzenia poprawności w każdej z poniższych sekcji.
 
@@ -110,7 +110,7 @@ W przypadku rozwiązań zarządzanych można stosować kilka zasad projektowania
 Poniższe obliczenia przeprowadzą przez formuły, aby lepiej zrozumieć różnice między stratami i wzrostem inwestycji związanych z zarządzaniem. Aby uzyskać wskazówki dotyczące obliczania kosztów zwiększonego zarządzania, zobacz [Automatyzacja obciążeń](./workload.md) i [Automatyzacja platform](./platform.md).
 
 > [!TIP]
-> Jeśli używasz [skoroszytu zarządzania operacjami](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) do planowania zarządzania chmurą, zaktualizuj pola zarządzania operacjami w celu odzwierciedlenia poszczególnych konwersacji. Te pola obejmują _poziom zobowiązania_, umowę _SLA_i _koszt miesięczny_. Koszt miesięczny powinien reprezentować miesięczny koszt dodanych narzędzi do zarządzania operacyjnego. Po ich zaktualizowaniu pola będą aktualizować formuły zwrotu z inwestycji i każde z poniższych pól.
+> Jeśli używasz [skoroszytu zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) do planowania zarządzania chmurą, zaktualizuj pola zarządzania operacjami w celu odzwierciedlenia poszczególnych konwersacji. Te pola obejmują _poziom zobowiązania_, umowę _SLA_i _koszt miesięczny_. Koszt miesięczny powinien reprezentować miesięczny koszt dodanych narzędzi do zarządzania operacyjnego. Po ich zaktualizowaniu pola będą aktualizować formuły zwrotu z inwestycji i każde z poniższych pól.
 
 ### <a name="estimate-outage-hours-per-year"></a>Oszacowanie przestoju (godz. rocznie)
 

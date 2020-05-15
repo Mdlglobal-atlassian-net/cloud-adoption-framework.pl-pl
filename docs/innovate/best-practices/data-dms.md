@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1f1060ba4df7dfb398a94f8611901612e1ecf60d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 87376016c2d775d9aa546036504dfdf8c3ec9ba2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219788"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398732"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Zbierz dane za pomocą migracji i modernizacji istniejących źródeł danych
 
@@ -28,7 +28,7 @@ W trakcie procesu oceny w ramach metodologii migracji zespół ds. wdrażania ch
 
 Podczas migrowania i modernizacji danych lokalnych, najbardziej typowym wyborem narzędzia platformy Azure jest [Azure Database Migration Service](https://docs.microsoft.com/azure/dms). Ta usługa jest częścią szerszego [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) łańcucha narzędzi. W przypadku istniejących SQL Server źródeł danych [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview) może pomóc w ocenie i migracji niewielkiej liczby struktur danych.
 
-Aby zapewnić obsługę migracji Oracle i NoSQL, można również użyć [Database Migration Service](https://docs.microsoft.com/azure/dms) dla niektórych typów baz danych Source-to-target. Przykłady obejmują od Oracle do PostgreSQL i MongoDB do Cosmos DB. Często zespoły ds. wdrażania używają narzędzi partnerskich lub skryptów niestandardowych do migracji do Azure Cosmos DB, usługi Azure HDInsight lub opcji maszyny wirtualnej w oparciu o infrastrukturę jako usługę (IaaS).
+Aby zapewnić obsługę migracji Oracle i NoSQL, można również użyć [Database Migration Service](https://docs.microsoft.com/azure/dms) dla niektórych typów baz danych Source-to-target. Przykłady obejmują od Oracle do PostgreSQL i MongoDB do Azure Cosmos DB. Często zespoły ds. wdrażania używają narzędzi partnerskich lub skryptów niestandardowych do migracji do Azure Cosmos DB, usługi Azure HDInsight lub opcji maszyny wirtualnej w oparciu o infrastrukturę jako usługę (IaaS).
 
 ## <a name="considerations-and-guidance"></a>Zagadnienia i wskazówki
 

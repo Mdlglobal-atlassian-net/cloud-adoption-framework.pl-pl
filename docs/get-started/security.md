@@ -7,18 +7,16 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3de015250a7fd14e01eb14094e564f51e0425648
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 100d5c327fb6e87f0a355f5305ff83ebb972b020
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229329"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400758"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 <!-- cSpell:ignore CISO passwordless -->
 
-# <a name="get-started-implementing-security-across-the-enterprise-environment"></a>Wprowadzenie: implementowanie zabezpieczeń w całym środowisku przedsiębiorstwa
+# <a name="get-started-implement-security-across-the-enterprise-environment"></a>Wprowadzenie: implementowanie zabezpieczeń w środowisku przedsiębiorstwa
 
 Zabezpieczenia umożliwiają firmie poprzez tworzenie gwarancji poufności, integralności i dostępności z krytycznym kątem ochrony przed potencjalnym wpływem na operacje spowodowane przez wewnętrzne i zewnętrzne złośliwe i niezamierzone działania. W tym przewodniku przedstawiono podstawowe kroki, które spowodują złagodzenie lub uniknięcie ryzyka biznesowego przed atakami cyberbezpieczeństwa poprzez szybkie ustanowienie podstawowych praktyk bezpieczeństwa w chmurze i integrację zabezpieczeń z procesem wdrażania chmury.
 

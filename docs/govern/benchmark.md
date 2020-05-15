@@ -4,17 +4,16 @@ description: Za pomocą tego narzędzia testowego dla ładu można uzyskać sper
 author: alexbuckgit
 ms.author: abuck
 ms.date: 08/27/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: d6eb865cb0ab44a76278afb7751684b53a40e0e7
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2df19abaa4878194697cd22fbf193c21580b22d2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708907"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400128"
 ---
 # <a name="assess-your-transformation-journey"></a>Ocenianie podróży transformacji
 
@@ -22,29 +21,10 @@ Struktura wdrażania w chmurze udostępnia [Narzędzie do monitorowania wydajno�
 
 ## <a name="governance-benchmark-tool"></a>Narzędzie porównawcze zarządzania
 
-Narzędzie Test porównawczy, który zawiera spersonalizowany raport, przedstawiający różnicę między bieżącym stanem i priorytetami biznesowymi, a także zasoby, które ułatwiają rozpoczęcie pracy.
+Otrzymuj spersonalizowany raport, w którym opisano różnice między bieżącym stanem i priorytetami biznesowymi, a także zasoby, które ułatwiają rozpoczęcie pracy. Oceń stan bieżący i stan przyszły w celu ustalenia wizji na potrzeby stosowania struktury.
 
-<!-- markdownlint-disable MD033 -->
-
-<ul class="panelContent cardsZ">
-    <li style="display: flex; flex-direction: column;">
-        <a href="https://cafbaseline.com" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-            <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-                <div class="cardPadding" style="display: flex;">
-                    <div class="card">
-                        <div class="cardText">
-                            <h3>Narzędzie porównawcze zarządzania</h3>
-                            <p>Oceń stan bieżący i stan przyszły w celu ustalenia wizji na potrzeby stosowania struktury.</p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
+> [!div class="nextstepaction"]
+> [Korzystanie z narzędzia testu porównawczego](https::/cafbaseline.com)
 
 ## <a name="next-steps"></a>Następne kroki
 

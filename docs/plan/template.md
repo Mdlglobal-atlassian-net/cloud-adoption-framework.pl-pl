@@ -7,15 +7,13 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 00efe3b582b5850ff7a5c6c1a6ab16977c6ada4d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cb0b963b68fbad8d883e7cbbfd107cc774136ad0
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216898"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401080"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plan wdrażania chmury i usługa Azure DevOps
 
 Azure DevOps to zestaw narzędzi opartych na chmurze dla klientów platformy Azure, którzy zarządzają projektami iteracyjnymi. Zawiera także narzędzia do zarządzania potokumi wdrażania i innymi ważnymi aspektami DevOps.
@@ -60,7 +58,7 @@ Najwyraźniejszy widok planu wdrażania w chmurze pochodzi z widoku zaległości
 
 ## <a name="align-the-cloud-adoption-plan"></a>Dopasuj plan wdrażania chmury
 
-Na stronach przeglądu dotyczącej strategii i planowania cyklu życia wdrożenia chmury każdy odwołuje się do [strategii i szablonu planu wdrożenia w chmurze](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Ten szablon organizuje decyzje i punkty danych, które będą wyrównać szablon planu wdrożenia chmury przy użyciu określonych planów na potrzeby wdrażania. Jeśli jeszcze tego nie zrobiono, warto wykonać ćwiczenia związane z [strategią](../strategy/index.md) i [planowaniem](../plan/index.md) przed wyrównaniem nowego projektu.
+Na stronach przeglądu faz strategii i planowania cyklu życia wdrożenia chmury każdy odwołuje się do [strategii i szablonu planowania struktury wdrażania w chmurze](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Ten szablon organizuje decyzje i punkty danych, które będą wyrównać szablon planu wdrożenia chmury przy użyciu określonych planów na potrzeby wdrażania. Jeśli jeszcze tego nie zrobiono, warto wykonać ćwiczenia związane z [strategią](../strategy/index.md) i [planowaniem](../plan/index.md) przed wyrównaniem nowego projektu.
 
 Poniższe artykuły obsługują wyrównania planu wdrażania chmury:
 

@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 6052e119cc2bf2ce078bfdc3df6613ff665e503f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 845574b9b7e045869561f43745a23ec104893d1f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229368"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400199"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>Wprowadzenie: zapewnianie spójnej wydajności w portfolio
 
 Jak zapewnić odpowiednią wydajność w portfelu obciążeń? Ten przewodnik może pomóc w ustaleniu procesów związanych z utrzymywaniem wydajności w całym przedsiębiorstwie. Kroki opisane w tym miejscu mogą pomóc zespołowi operacyjnemu zapewnić spójne oczekiwania wydajności dla wszystkich obciążeń. Wydajność zależy również od innych ról i funkcji. Ten artykuł mapuje te funkcje pomocnicze, które ułatwiają tworzenie wyrównania poszczególnych zespołów.
@@ -32,7 +30,7 @@ Linia bazowa zarządzania operacjami, pokreślona w strukturze wdrażania chmury
 
 - Zwiększenie planu bazowego zarządzania w celu uwzględnienia automatycznych zadań korygowania związanych z odchyleniami od oczekiwań wydajności.
 - Gdy wymagane są wzorce danych dotyczące obciążeń lub zmiany architektury w celu spełnienia wymagań dotyczących wydajności, operacje specyficzne dla obciążenia mogą zapewnić większą kontrolę wydajności.
-- Udokumentowanie decyzji operacyjnych w całym portfolio IT w [skoroszycie zarządzania operacjami](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) z uwzględnieniem decyzji dotyczących automatyzacji wydajności w sekcji "zgodność operacyjna" karty "linia bazowa".
+- Udokumentowanie decyzji operacyjnych w całym portfolio IT w [skoroszycie zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) z uwzględnieniem decyzji dotyczących automatyzacji wydajności w sekcji "zgodność operacyjna" karty "linia bazowa".
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
@@ -147,7 +145,7 @@ Decyzje podjęte podczas migracji i wysiłków programistycznych mogą mieć wp�
 
 - Przetestuj gotowość operacyjną wdrożeń produkcyjnych przy użyciu zasad spójności zasobów.
 - Weryfikuj przestrzeganie wymagań dotyczących projektowania spójności zasobów i działań.
-- Udokumentowanie wszelkich zaawansowanych wymagań dotyczących operacji w [skoroszycie zarządzania operacjami](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
+- Udokumentowanie wszelkich zaawansowanych wymagań dotyczących operacji w [skoroszycie zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 

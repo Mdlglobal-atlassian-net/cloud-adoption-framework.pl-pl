@@ -3,52 +3,26 @@ title: Wirtualne centrum danych Azure
 description: Wirtualne centrum danych Azure to teraz Microsoft Cloud Framework wdrażania dla platformy Azure. Dowiedz się więcej na temat zasobów dostępnych do obsługi tego przejścia.
 author: tracsman
 ms.author: jonor
-ms.date: 06/12/2019
-ms.topic: landing-page
+ms.date: 05/12/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-layout: LandingPage
-ms.openlocfilehash: 87966103eaf1d360db77e9bdf34f62afa77fdaa9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2eed596e48ded52214dbb4ba1ce33889063dc184
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221658"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400887"
 ---
-<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" "Ready and Govern methodologies" "Azure Virtual Datacenter: Concepts" "Lift and Shift Guide" -->
 <!-- cSpell:ignore tracsman jonor -->
 
 # <a name="azure-virtual-datacenter"></a>Wirtualne centrum danych Azure
 
-> [!WARNING]
-> Wirtualne centrum danych platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud platformy Azure. Te wskazówki pełnią rolę znaczącej części podstawy dla gotowych i podlegających metodologiom w ramach struktury wdrażania w chmurze. Aby obsługiwać klientów dokonujących tego przejścia, następujące zasoby zostały zarchiwizowane i będą przechowywane w osobnym repozytorium GitHub.
+Wirtualne centrum danych platformy Azure zostało zintegrowane z platformą wdrażania Microsoft Cloud platformy Azure. Te wskazówki pełnią rolę znaczącej części podstawy dla [gotowej metodologii](../ready/index.md) i [metodologii rządzącej](../govern/index.md) w ramach struktury wdrażania w chmurze. Aby obsługiwać klientów dokonujących tego przejścia, następujące zasoby zostały zarchiwizowane i będą przechowywane w osobnym repozytorium GitHub.
 
-## <a name="archived-resources"></a>Zarchiwizowane zasoby
+**Zarchiwizowane zasoby:**
 
-<!-- markdownlint-disable MD033 -->
-
-<table>
-<tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Azure Virtual Datacenter e-book" /></a></td>
-    <td>
-        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf">Wirtualne centrum danych Azure: pojęcia</a></h3>
-        <p>W książce elektronicznej pokazano, jak wdrożyć obciążenia przedsiębiorstwa na platformie chmury Azure z zachowaniem istniejących zabezpieczeń i zasad sieci.</p>
-    </td>
-</tr>
-<tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
-    <td>
-        <h3><a href="./networking-vdc.md">Wirtualne centrum danych: perspektywa sieci</a></h3>
-        <p>Ten przegląd wzorców i wzorów sieciowych dotyczy problemów ze skalą architektury, wydajnością i bezpieczeństwem, które są używane przez klientów podczas planowania migracji w chmurze na dużą skalę.</p>
-    </td>
-</tr>
-<tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
-    <td>
-        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Wirtualne centrum danych Azure: podnieś i przesunięcia przewodnika</a></h3>
-        <p>Ten oficjalny dokument omawia proces polegający na tym, że pracownicy działu IT przedsiębiorstwa i osoby podejmujące decyzje mogą używać do identyfikowania i planowania migracji aplikacji i serwerów na platformę Azure przy użyciu podejścia do podnoszenia i przesunięcia, co minimalizuje dodatkowe koszty deweloperskie podczas optymalizacji opcji hostingu w chmurze.</p>
-    </td>
-</tr>
-</table>
-
-<!-- markdownlint-enable MD033 -->
+- Wirtualna sieć społecznościowa [Azure Virtual Datacenter](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf): Ta książka elektroniczna pokazuje, jak wdrożyć obciążenia przedsiębiorstwa na platformie chmury platformy Azure, a jednocześnie przestrzegać istniejących zasad zabezpieczeń i sieci.
+- [Wirtualne centrum danych: perspektywa sieci](./networking-vdc.md): to omówienie wzorców i projektów sieciowych dotyczy problemów ze skalą architektury, wydajnością i zabezpieczeniami, które są używane przez klientów podczas planowania migracji w chmurze na dużą skalę.
+- [Przewodnik po przesunięciu wirtualnego centrum danych platformy Azure](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf): Ten oficjalny dokument omawia proces, w którym pracownicy działu IT przedsiębiorstwa i osoby podejmujące decyzje mogą używać do identyfikowania i planowania migracji aplikacji i serwerów na platformę Azure przy użyciu metody podnoszenia i przesunięcia, co minimalizuje dodatkowe koszty deweloperskie podczas optymalizacji opcji hostingu w chmurze.

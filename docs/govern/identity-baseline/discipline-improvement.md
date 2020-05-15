@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 82725e152efc8038d983939b1f690be0574e435b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f1e991a83c79be3e829bce618a50243b74c2c90f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219873"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400725"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -94,8 +94,6 @@ Migracja to proces przyrostowy, który koncentruje się na przeniesieniu, testow
 - Migruj swoją [linię bazową tożsamości łańcucha narzędzi](./toolchain.md) z programowania do produkcji.
 - Aktualizacja dokumentu z instrukcjami dotyczącymi architektury i dystrybucja do kluczowych uczestników projektu.
 - Opracowywanie materiałów edukacyjnych i dokumentacji, świadomości, zachęt i innych programów w celu ułatwienia wdrażania użytkowników.
-
-<!-- docsTest:ignore "Seamless SSO" -->
 
 **Potencjalne działania:**
 

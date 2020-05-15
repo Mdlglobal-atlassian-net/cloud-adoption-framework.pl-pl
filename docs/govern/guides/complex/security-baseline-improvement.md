@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ece40e0ce2aeaa32eb51d8511d743f674200ea6e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 07b9eb1ebcb464abda6f2c2cf276cb91596cea1a
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219958"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400495"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej zabezpieczeń
 
@@ -81,7 +81,7 @@ Poniższe zmiany zasad pomogą skorygować nowe zagrożenia i implementację prz
 6. Nie można bezpośrednio uzyskać dostępu do podsieci zawierającej chronione dane za pośrednictwem publicznego Internetu lub między centrami danych. Dostęp do tych podsieci musi być kierowany za pośrednictwem podsieci pośrednich. Cały dostęp do tych podsieci musi następować przez rozwiązanie zapory, które może wykonywać funkcje skanowania pakietów i blokowania.
 7. Narzędzia ładu muszą przeprowadzać inspekcję i wymuszać wymagania dotyczące konfiguracji sieci zdefiniowane przez zespół zarządzania zabezpieczeniami.
 8. Narzędzia ładu muszą ograniczać wdrożenie maszyny wirtualnej tylko do zatwierdzonych obrazów.
-9. Zawsze, gdy jest to możliwe, zarządzanie konfiguracją węzła powinna stosować wymagania dotyczące zasad do konfiguracji dowolnego systemu operacyjnego gościa. Zarządzanie konfiguracją węzła powinno uwzględniać istniejące inwestycje w obiekcie zasad grupy (GPO) dla konfiguracji zasobów.
+9. Zawsze, gdy jest to możliwe, zarządzanie konfiguracją węzła powinna stosować wymagania dotyczące zasad do konfiguracji dowolnego systemu operacyjnego gościa. Zarządzanie konfiguracją węzła powinno uwzględniać istniejące inwestycje w obiekty zasad grupy (GPO) dla konfiguracji zasobów.
 10. Narzędzia ładu będą przeprowadzać inspekcję, czy aktualizacje automatyczne są włączone dla wszystkich wdrożonych zasobów. Gdy jest to możliwe, zostaną wymuszone aktualizacje automatyczne. Gdy nie są wymuszane przez narzędzia, naruszenia poziomu węzła muszą zostać sprawdzone za pomocą zespołów zarządzania operacyjnego i skorygowane zgodnie z zasadami operacji. Zasoby, które nie są automatycznie aktualizowane, muszą być uwzględnione w procesach należących do operacji IT.
 11. Utworzenie nowych subskrypcji lub grup zarządzania dla wszystkich aplikacji o znaczeniu krytycznym lub chronionych danych wymaga przeglądu od zespołu nadzoru w chmurze, aby zapewnić prawidłowe przypisanie strategii.
 12. Model dostępu o najniższych uprawnieniach zostanie zastosowany do wszystkich subskrypcji, które zawierają aplikacje o kluczowym znaczeniu lub chronione dane.
@@ -134,7 +134,7 @@ We wcześniejszych zmianach iteracyjnych najlepszym rozwiązaniem jest zdefiniow
     2. Ten szablon może służyć jako przewodnik modyfikowania szablonu DMZ z wcześniejszej iteracji ładu.
     3. Teraz trwa Dodawanie komunikacji równorzędnej sieci wirtualnej do sieci wirtualnej DMZ, która była wcześniej połączona z lokalnym urządzeniem brzegowym za pośrednictwem sieci VPN.
     4. Sieć VPN należy również usunąć z tego szablonu, aby upewnić się, że żaden ruch nie jest kierowany bezpośrednio do lokalnego centrum danych, bez przechodzenia przez firmową subskrypcję IT i zaporę. Możesz również ustawić tę sieć VPN jako obwód trybu failover w przypadku awarii obwodu ExpressRoute.
-    5. Dodatkowa [Konfiguracja sieci](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) będzie wymagana przez Azure Automation, aby zastosować DSC do hostowanych maszyn wirtualnych.
+    5. Dodatkowa [Konfiguracja sieci](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) jest wymagana przez Azure Automation, aby zastosować DSC do hostowanych maszyn wirtualnych.
 2. Zmodyfikuj grupę zabezpieczeń sieci. Zablokuj cały publiczny **i** bezpośredni ruch lokalny w sieciowej grupie zabezpieczeń. Jedynym ruchem przychodzącym powinien nastąpić przejście przez element równorzędny sieci wirtualnej w firmowej subskrypcji IT.
     1. W poprzedniej iteracji utworzono grupę zabezpieczeń sieci, która blokuje cały ruch publiczny i listy dozwolonych cały ruch wewnętrzny. Teraz chcemy przetworzyć tę siećową grupę zabezpieczeń jako bitową.
     2. Nowa konfiguracja sieciowej grupy zabezpieczeń powinna blokować cały ruch publiczny oraz cały ruch z lokalnego centrum danych.

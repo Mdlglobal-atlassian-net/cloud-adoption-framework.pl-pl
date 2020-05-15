@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: c27ab20e703ae8ef37fcfba1a2d3f4585d2832da
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 137ab71429b6f827ee0f01154ea372784327e964
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219397"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400926"
 ---
-<!-- docsTest:disable -->
+<!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
 
 # <a name="the-virtual-datacenter-a-network-perspective"></a>Wirtualne centrum danych: perspektywa sieci
@@ -232,7 +232,7 @@ Składniki infrastruktury mają następujące funkcje:
 - [Sieciowe grupy zabezpieczeń][NSG]. Grupa zabezpieczeń sieci to lista reguł zabezpieczeń, które działają jako Filtrowanie ruchu dla źródeł IP, miejsc docelowych adresów IP, protokołów, portów źródłowych IP i portów docelowych IP (nazywanych również warstwą 4 5-krotką). Sieciową grupę zabezpieczeń można zastosować do podsieci, wirtualnej karty sieciowej skojarzonej z maszyną wirtualną platformy Azure lub obu tych usług. Sieciowe grupy zabezpieczeń są niezbędne do wdrożenia prawidłowej kontroli przepływu w centrum i szprych. Poziom zabezpieczeń zapewniany przez grupę zabezpieczeń sieci to funkcja, z której otwierane są porty i w jakim celu. Klienci powinni stosować dodatkowe filtry na maszynę wirtualną z użyciem zapór opartych na hoście, takich jak dołączenie iptables lub Zapora systemu Windows.
 - [DNS][DNS]. System DNS zapewnia rozpoznawanie nazw zasobów w wirtualnym centrum danych. Platforma Azure udostępnia usługi DNS do rozpoznawania nazw [publicznych][DNS] i [prywatnych][PrivateDNS] . Strefy prywatne zapewniają rozpoznawanie nazw zarówno w sieci wirtualnej, jak i w sieciach wirtualnych. Strefy prywatne mogą nie tylko obejmować sieci wirtualne w tym samym regionie, ale również między regionami i subskrypcjami. Do publicznej rozdzielczości Azure DNS zapewnia usługi hostingu dla domen DNS, zapewniając rozpoznawanie nazw przy użyciu infrastruktury Microsoft Azure. Dzięki hostowaniu swoich domen na platformie Azure możesz zarządzać rekordami DNS z zastosowaniem tych samych poświadczeń, interfejsów API, narzędzi i rozliczeń co w przypadku innych usług platformy Azure.
 - Zarządzanie [grupami][MgmtGrp], [subskrypcjami](../ready/azure-best-practices/scale-subscriptions.md)i [grupami zasobów][RGMgmt] . Subskrypcja definiuje naturalną granicę, aby utworzyć wiele grup zasobów na platformie Azure. Ta separacja może dotyczyć funkcji, podziału ról lub rozliczeń. Zasoby w ramach subskrypcji są łączone razem z kontenerami logicznymi znanymi jako grupy zasobów. Grupa zasobów reprezentuje grupę logiczną, aby zorganizować zasoby w wirtualnym centrum danych. Jeśli Twoja organizacja ma wiele subskrypcji, możesz potrzebować sposobu na wydajne zarządzanie dostępem, zasadami i zgodnością dla tych subskrypcji. Grupy zarządzania platformy Azure zapewniają poziom zakresu powyżej subskrypcji. Subskrypcje są organizowane w kontenerach znanych jako grupy zarządzania i stosują swoje warunki ładu do grup zarządzania. Wszystkie subskrypcje w grupie zarządzania automatycznie dziedziczą warunki zastosowane do tej grupy zarządzania. Aby wyświetlić te trzy funkcje w widoku hierarchii, zobacz [organizowanie zasobów](../ready/azure-setup-guide/organize-resources.md) w strukturze wdrażania w chmurze.
-- [Kontrola dostępu oparta na rolach (RBAC)][RBAC]. RBAC może mapować role organizacyjne i prawa dostępu do określonych zasobów platformy Azure, co pozwala ograniczyć użytkowników tylko do określonego podzestawu akcji. W przypadku synchronizowania Azure Active Directory z lokalnym Active Directory można używać tych samych grup Active Directory na platformie Azure, które są używane lokalnie. Za pomocą RBAC można udzielić dostępu, przypisując odpowiednią rolę użytkownikom, grupom i aplikacjom w odpowiednim zakresie. Zakres przypisania roli może być subskrypcją platformy Azure, grupą zasobów lub pojedynczym zasobem. RBAC umożliwia dziedziczenie uprawnień. Rola przypisana w zakresie nadrzędnym również przyznaje dostęp do elementów podrzędnych zawartych w nim. Za pomocą RBAC można oddzielić cła i przyznać dostęp tylko do użytkowników, których potrzebują do wykonywania swoich zadań. Na przykład jeden pracownik może zarządzać maszynami wirtualnymi w ramach subskrypcji, podczas gdy inna może zarządzać bazami danych SQL Server w tej samej subskrypcji.
+- [Kontrola dostępu na podstawie ról (RBAC)][RBAC]. RBAC może mapować role organizacyjne i prawa dostępu do określonych zasobów platformy Azure, co pozwala ograniczyć użytkowników tylko do określonego podzestawu akcji. W przypadku synchronizowania Azure Active Directory z lokalnym Active Directory można używać tych samych grup Active Directory na platformie Azure, które są używane lokalnie. Za pomocą RBAC można udzielić dostępu, przypisując odpowiednią rolę użytkownikom, grupom i aplikacjom w odpowiednim zakresie. Zakres przypisania roli może być subskrypcją platformy Azure, grupą zasobów lub pojedynczym zasobem. RBAC umożliwia dziedziczenie uprawnień. Rola przypisana w zakresie nadrzędnym również przyznaje dostęp do elementów podrzędnych zawartych w nim. Za pomocą RBAC można oddzielić cła i przyznać dostęp tylko do użytkowników, których potrzebują do wykonywania swoich zadań. Na przykład jeden pracownik może zarządzać maszynami wirtualnymi w ramach subskrypcji, podczas gdy inna może zarządzać bazami danych SQL Server w tej samej subskrypcji.
 
 #### <a name="component-type-perimeter-networks"></a>Typ składnika: sieci obwodowe
 
@@ -414,7 +414,7 @@ Zarówno usługa [azure Traffic Manager][azure-traffic-manager] , jak i [drzwi p
 
 Wirtualne podejście do migracji do centrum danych tworzy skalowalną architekturę, która optymalizuje użycie zasobów platformy Azure, obniża koszty i upraszcza zarządzanie systemem. Wirtualne centrum danych jest typowe w oparciu o topologie sieci Hub i szprych (za pomocą wirtualnych sieci równorzędnych lub wirtualnych koncentratorów WAN). Wspólne usługi udostępnione udostępniane w centrum, a określone aplikacje i obciążenia są wdrażane w szprychach. Wirtualne centrum danych jest również zgodne ze strukturą ról firmy, w której różne działy, takie jak centralne IT, DevOps i Operations and Maintenance, działają razem podczas wykonywania ich określonych ról. Wirtualne centrum danych obsługuje Migrowanie istniejących obciążeń lokalnych na platformę Azure, ale również zapewnia wiele korzyści dla wdrożeń natywnych w chmurze.
 
-## <a name="references"></a>Dokumentacja
+## <a name="references"></a>Odwołania
 
 Dowiedz się więcej na temat możliwości platformy Azure omówionych w tym dokumencie.
 
@@ -430,7 +430,7 @@ Dowiedz się więcej na temat możliwości platformy Azure omówionych w tym dok
 
 Zabezpieczenia | Inne usługi platformy Azure | |
 |-|-|-|
-| [Azure Firewall][AzFW] <br> [Firewall Manager][AzFWMgr] <br> [Application Gateway WAF][AppGWWAF] <br> [WAF drzwi przednich][AFDWAF] <br> [Azure DDoS][DDoS] <br> | [Usługa Azure Storage][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [Event Hubs][EventHubs] <br> [Service Bus][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
+| [Azure Firewall][AzFW] <br> [Firewall Manager][AzFWMgr] <br> [Application Gateway WAF][AppGWWAF] <br> [WAF drzwi przednich][AFDWAF] <br> [Azure DDoS][DDoS] <br> | [Usługa Azure Storage][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Azure Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [Event Hubs][EventHubs] <br> [Service Bus][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
 
 <!-- markdownlint-enable MD033 -->
 

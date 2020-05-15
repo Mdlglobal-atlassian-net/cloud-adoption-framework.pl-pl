@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7000f40ebfedb6f5285f3e9148c7f07ebbc17ab5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 71aab771fbfe5b0b0f63750dbf2fc97327dd8436
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218530"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399754"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Narzędzia linii bazowej tożsamości na platformie Azure
 
@@ -39,7 +39,7 @@ Po wybraniu tej metody usługa Azure AD obsługuje proces logowania użytkownik�
 
 **Uwierzytelnianie przekazywane przez usługę Azure AD:** Zapewnia trwałe sprawdzanie poprawności hasła dla usług uwierzytelniania usługi Azure AD przy użyciu agenta oprogramowania działającego na co najmniej jednym serwerze lokalnym.
 
-<!-- docsTest:ignore "pass-through authentication method" -->
+<!-- docsTest:ignore "the pass-through authentication method" -->
 
 > [!NOTE]
 > W przypadku firm z wymaganiem bezpieczeństwa aby natychmiast wymusić lokalne Stany konta użytkownika, zasady haseł i godziny logowania, należy rozważyć metodę uwierzytelniania przekazywanego.

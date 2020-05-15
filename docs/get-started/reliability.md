@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8e17c53a2a54a212fa312b62b2ff527497583919
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c75b7a17c8c2676688f5221ec0e4d0f2ed0641a5
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229433"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400216"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>Wprowadzenie: zwiększanie niezawodności przy użyciu odpowiednich kontrolek
 
 Jak stosujemy odpowiednie kontrolki w celu zwiększenia niezawodności? Ten przewodnik pomaga zminimalizować zakłócenia związane z niespójnościami w konfiguracji, organizacji zasobów, liniach bazowych zabezpieczeń lub ochronie zasobów. Kroki przedstawione w tym przewodniku pomogą Ci w rozliczeniu niezawodności i kosztów w portfelu IT oraz pomóc zespołowi nadzoru w upewnieniu się, że saldo jest stosowane konsekwentnie. Niezawodność również zależy od innych ról i funkcji. W tym artykule opisano różne funkcje pomocnicze, które ułatwiają tworzenie wyrównania poszczególnych zespołów.
@@ -34,7 +32,7 @@ Wszystkie obciążenia nie są tworzone jako równe. W każdym środowisku istni
 - Negocjuj zobowiązania biznesowe z zespołem strategii chmury w celu opracowania planu dla zaawansowanych operacji i wymagań dotyczących odporności.
 - Rozwiń swoją linię bazową zarządzania, jeśli do większości obciążeń są wymagane dodatkowe operacje.
 - Stosuj zaawansowane wymagania dotyczące operacji, aby przeciążać strefy i zasoby, które obsługują wyższe obciążenia krytyczne.
-- Udokumentowanie decyzji dotyczących operacji w portfolio IT w [skoroszycie zarządzania operacjami](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
+- Udokumentowanie decyzji dotyczących operacji w portfolio IT w [skoroszycie zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
@@ -158,7 +156,7 @@ Do długotrwałych operacji mogą wpływać decyzje podejmowane podczas migracji
 
 - Przetestuj gotowość operacyjną wdrożeń produkcyjnych przy użyciu zasad spójności zasobów.
 - Weryfikuj przestrzeganie wymagań dotyczących projektowania spójności zasobów i działań.
-- Udokumentowanie wszelkich zaawansowanych wymagań dotyczących operacji w [skoroszycie zarządzania operacjami](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
+- Udokumentowanie wszelkich zaawansowanych wymagań dotyczących operacji w [skoroszycie zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 

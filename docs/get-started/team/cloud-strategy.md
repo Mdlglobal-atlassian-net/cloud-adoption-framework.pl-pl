@@ -7,15 +7,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: 81955582145c9ffa2b63364a1ed2948715cf37d5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a885de58423bea1cef9e2e87ef4d09f4cb6e9363
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228978"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399874"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-build-a-cloud-strategy-team"></a>Wprowadzenie: Tworzenie zespołu strategii chmury
 
 Każda podróż dotycząca wdrażania w chmurze będzie potrzebować pewnego poziomu strategii, aby zakończyć pracę. Ten przewodnik wprowadzający pomoże Ci ustalić dedykowanego zespołu lub zespołu wirtualnego (v-Team), aby zapewnić pełną strategię chmury. Pierwszym krokiem jest podjęcie decyzji, czy potrzebny jest zespół strategii, czy też istniejący członek zespołu może dostarczyć strategię chmury jako obowiązki rozproszone.
