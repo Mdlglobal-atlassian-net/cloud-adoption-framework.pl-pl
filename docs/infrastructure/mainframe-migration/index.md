@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 486dabd5b2926b9f8f794767181c75bc1eff34b6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 954c97c78d3dcd4827505e2d9b6df2d4a5355e04
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216813"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398818"
 ---
 <!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
 
@@ -65,6 +65,9 @@ W celu bardziej precyzyjnego dostrajania system CICS jest często używany wraz 
 Poniżej przedstawiono typowe operacje komputera mainframe:
 
 - **Tryb online:** Obciążenia obejmują przetwarzanie transakcji, zarządzanie bazami danych i połączenia. Są one często implementowane przy użyciu łączników systemu IBM DB2, CICS i z/OS.
+
+<!-- docsTest:ignore "BMC Control-M" -->
+<!-- cSpell:ignore JOB ASSGN DLBL EXTENT LIBDEF EXEC -->
 
 - **Zadania wsadowe:** Zadania są uruchamiane bez interakcji z użytkownikiem, zwykle zgodnie z ustalonym harmonogramem, na przykład rano każdego dnia tygodnia. Zadania wsadowe można uruchamiać w systemach opartych na systemie Windows lub Linux przy użyciu emulatora JCL, takiego jak serwer Micro Focus Enterprise Server lub oprogramowanie BMC Control-M.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4d34515e2e109e77e18a129b490e6c7e1faee593
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2a8bdf2e19d9db6912f66937a0053ee6102cbeac
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222066"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401028"
 ---
 # <a name="manage-organizational-alignment"></a>Zarządzanie dopasowaniem organizacji
 
@@ -25,10 +25,10 @@ Poniższe ćwiczenia ułatwiają przejście procesu tworzenia strefy docelowej d
 
 | | |
 |---|---|
-| ![1](../_Images/icons/1.png)     | <br>[Typ struktury](#structure-type): Zdefiniuj typ struktury organizacyjnej, który najlepiej odpowiada Twojemu modelowi operacyjnemu.                                |
-| ![2](../_Images/icons/2.png)     | <br>[Funkcje w chmurze](#understand-required-cloud-functions): Poznaj funkcje chmury wymagane do wdrożenia i obsługi chmury.                                |
-| ![3](../_Images/icons/3.png)     | <br>[Dojrzałe struktury zespołów](./organization-structures.md): Zdefiniuj zespoły, które mogą realizować różne funkcje w chmurze.                                |
-| ![4](../_Images/icons/4.png)      | [Macierz odpowiedzialności w modelu RACI](./raci-alignment.md): Jasno zdefiniowane role są ważnym aspektem każdego modelu operacyjnego. Skorzystaj z podanej macierzy odpowiedzialności w modelu RACI (Responsible, Accountable, Consulted, Informed), aby przydzielić role osób odpowiedzialnych za wykonanie zadania, nadzorujących wykonanie zadania, konsultujących wykonanie zadania i informowanych o wykonaniu zadania we wszystkich zespołach dla różnych funkcji modelu operacyjnego chmury.                        |
+| <br> ![1](../_Images/icons/1.png)     | [Typ struktury](#structure-type): Zdefiniuj typ struktury organizacyjnej, który najlepiej odpowiada Twojemu modelowi operacyjnemu.                                |
+| <br> ![2](../_Images/icons/2.png)     | [Funkcje w chmurze](#understand-required-cloud-functions): Poznaj funkcje chmury wymagane do wdrożenia i obsługi chmury.                                |
+| <br> ![3](../_Images/icons/3.png)     | [Dojrzałe struktury zespołów](./organization-structures.md): Zdefiniuj zespoły, które mogą realizować różne funkcje w chmurze.                                |
+| <br> ![4](../_Images/icons/4.png)      | [Macierz odpowiedzialności w modelu RACI](./raci-alignment.md): Jasno zdefiniowane role są ważnym aspektem każdego modelu operacyjnego. Skorzystaj z podanej macierzy odpowiedzialności w modelu RACI (Responsible, Accountable, Consulted, Informed), aby przydzielić role osób odpowiedzialnych za wykonanie zadania, nadzorujących wykonanie zadania, konsultujących wykonanie zadania i informowanych o wykonaniu zadania we wszystkich zespołach dla różnych funkcji modelu operacyjnego chmury.                        |
 
 ## <a name="structure-type"></a>Typ struktury
 

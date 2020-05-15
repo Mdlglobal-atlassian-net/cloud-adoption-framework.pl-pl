@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 37c7b219699d2d70c1f0493fbb146933f8eeee21
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: edd91f1786dfc0649e06d643662fb7af12ec4c96
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218666"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399687"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Ład w przewodniku Microsoft Cloud Adoption Framework dla platformy Azure
 
@@ -22,14 +22,13 @@ Chmura tworzy nowe paradygmaty dotyczące technologii, które obsługują firmy.
 Nadzór nad ładem w chmurze jest procesem iteracyjnym. W przypadku organizacji z istniejącymi zasadami regulującymi lokalne środowiska IT ład chmury powinien uzupełniać te zasady. Jednak poziom integracji zasad firmowych między środowiskiem lokalnym i chmurą będzie różny w zależności od dojrzałości ładu chmury i majątku cyfrowego w chmurze. Z upływem czasu majątek w chmurze będzie się rozwijać, a wraz z nim zasady i procesy dotyczące ładu chmury. Poniższe ćwiczenia ułatwiają rozpoczęcie tworzenia początkowych podstaw ładu.
 
 <!-- markdownlint-disable MD033 -->
-<!-- docsTest:disable TODO -->
 
 | | |
 |---|---|
-| ![1](../_images/icons/1.png)     | <br>[Metodologia](./methodology.md): Zbierz podstawową wiedzę na temat metodologii zapewniania ładu w chmurze w ramach przewodnika Cloud Adoption Framework i zacznij myśleć o stanie końcowym.                                |
-| ![2](../_images/icons/2.png)     | <br>[Punkt odniesienia](./benchmark.md): Oceń stan bieżący i stan przyszły w celu ustalenia wizji na potrzeby stosowania struktury.                                |
-| ![3](../_images/icons/3.png)     | <br>[Początkowe podstawy ładu](./initial-foundation.md): Rozpocznij stosowanie nadzoru nad ładem, używając małego, łatwego w implementacji zestawu narzędzi do nadzoru. Te początkowe podstawy ładu są nazywane minimalną konieczną funkcjonalnością (MVP).                                |
-| ![4](../_images/icons/4.png)      | <br>[Udoskonalanie początkowych podstaw ładu](./foundation-improvements.md): W trakcie realizacji planu wdrażania chmury iteracyjnie dodawaj mechanizmy kontroli ładu w celu obsługi pojawiających się czynników ryzyka, zbliżając się do stanu końcowego.  |
+| <br> ![1](../_images/icons/1.png) | [Metodologia](./methodology.md): Zbierz podstawową wiedzę na temat metodologii zapewniania ładu w chmurze w ramach przewodnika Cloud Adoption Framework i zacznij myśleć o stanie końcowym. |
+| <br> ![2](../_images/icons/2.png) | <br> [Punkt odniesienia](./benchmark.md): Oceń stan bieżący i stan przyszły w celu ustalenia wizji na potrzeby stosowania struktury. |
+| <br> ![3](../_images/icons/3.png) | <br> [Początkowe podstawy ładu](./initial-foundation.md): Rozpocznij stosowanie nadzoru nad ładem, używając małego, łatwego w implementacji zestawu narzędzi do nadzoru. Te początkowe podstawy ładu są nazywane minimalną konieczną funkcjonalnością (MVP).                                |
+| <br> ![4](../_images/icons/4.png) | <br> [Udoskonalanie początkowych podstaw ładu](./foundation-improvements.md): W trakcie realizacji planu wdrażania chmury iteracyjnie dodawaj mechanizmy kontroli ładu w celu obsługi pojawiających się czynników ryzyka, zbliżając się do stanu końcowego. |
 
 ## <a name="objective-of-this-content"></a>Cel tej zawartości
 

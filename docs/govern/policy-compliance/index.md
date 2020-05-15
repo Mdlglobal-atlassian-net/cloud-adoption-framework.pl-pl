@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eec9c7ae36dbe92142226e78afcdd465e4aa66a2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 63eeb2cbcaa278934ba107114057f911604883f2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224225"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399525"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ W tym artykule opisano kluczowe działania, które mogą pomóc w kształtowaniu
 
 Zarówno w tradycyjnym, jak i w przyrostowym modelu zapewniania ładu zasady firmowe tworzą roboczą definicję ładu. Większość akcji podejmowanych w celu zapewnienia ładu IT koncentruje się na implementowaniu technologii w celu monitorowania, wymuszania, obsługiwania i automatyzowania tych zasad firmowych. Ład w chmurze jest oparty na podobnych pojęciach.
 
-![Ład korporacyjny i dyscypliny ładu](../../_images/operational-transformation-govern-highres.png)
+![Ład korporacyjny i dyscypliny ładu](../../_images/operational-transformation-govern-large.png)
 
 _Rysunek 1. Ład korporacyjny i dyscypliny ładu._
 

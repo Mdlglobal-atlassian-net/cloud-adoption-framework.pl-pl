@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8a1c601108befd2dbbb32a6b24d72a1b0852d081
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3cdc9b294fddad6e7d77fb8a3229a372f24ca69c
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219533"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400307"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migracja do chmury w podręczniku Cloud Adoption Framework
 
@@ -24,10 +24,10 @@ Aby przygotować się na tę fazę cyklu wdrażania chmury, zalecamy wykonanie n
 
 | | |
 |---|---|
-| ![1](../_images/icons/1.png)     | <br>[Migrowanie pierwszego obciążenia](./azure-migration-guide/index.md): Korzystając z przewodnika po migracji na platformę Azure, zapoznaj się z narzędziami natywnymi dla platformy Azure i podejściem do migracji.                                |
-| ![2](../_images/icons/2.png)     | <br>[Scenariusze migracji](./azure-best-practices/index.md): Korzystając z dodatkowych podejść i narzędzi do migracji, podejmij działania w innych scenariuszach migracji.                                |
-| ![3](../_images/icons/3.png)     | <br>[Najlepsze rozwiązania](./azure-best-practices/index.md): Reaguj na typowe potrzeby związane z migracją, stosując spójne najlepsze rozwiązania.                                |
-| ![4](../_images/icons/4.png)      | <br>[Ulepszenia procesów](./migration-considerations/index.md): Migracja to działanie mocno obciążone procesami. W miarę skalowania pracy związanej z migracją za pomocą tych ulepszeń procesów oceniaj i dopracowuj różne aspekty migracji.                        |
+| <br> ![1](../_images/icons/1.png)     | [Migrowanie pierwszego obciążenia](./azure-migration-guide/index.md): Korzystając z przewodnika po migracji na platformę Azure, zapoznaj się z narzędziami natywnymi dla platformy Azure i podejściem do migracji.                                |
+| <br> ![2](../_images/icons/2.png)     | [Scenariusze migracji](./azure-best-practices/index.md): Korzystając z dodatkowych podejść i narzędzi do migracji, podejmij działania w innych scenariuszach migracji.                                |
+| <br> ![3](../_images/icons/3.png)     | [Najlepsze rozwiązania](./azure-best-practices/index.md): Reaguj na typowe potrzeby związane z migracją, stosując spójne najlepsze rozwiązania.                                |
+| <br> ![4](../_images/icons/4.png)      | [Ulepszenia procesów](./migration-considerations/index.md): Migracja to działanie mocno obciążone procesami. W miarę skalowania pracy związanej z migracją za pomocą tych ulepszeń procesów oceniaj i dopracowuj różne aspekty migracji.                        |
 
 <!-- markdownlint-enable MD033 -->
 

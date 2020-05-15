@@ -4,16 +4,15 @@ description: Użyj struktury wdrażania chmury dla platformy Azure, aby dowiedzi
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-layout: LandingPage
-ms.openlocfilehash: 70813b7967b6e46f2c1355db98a2171f245224a6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ee28a021d3e58aae70efe0092bbef4698c897459
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223868"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400851"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Zarządzanie w chmurze w przewodniku Cloud Adoption Framework
 
@@ -27,10 +26,10 @@ Aby przygotować się na tę fazę cyklu wdrażania chmury, zalecane są następ
 
 | | |
 |---|---|
-| ![1](../_images/icons/1.png)     | <br>[Ustalenie planu bazowego zarządzania](./azure-management-guide/index.md): Zdefiniuj sposób klasyfikowania elementów o krytycznym znaczeniu, narzędzia do zarządzania w chmurze i procesy wymagane do realizacji minimalnego zobowiązania w zarządzaniu operacjami.                                |
-| ![2](../_images/icons/2.png)     | <br>[Zdefiniowanie zobowiązań biznesowych](./considerations/business-alignment.md): Udokumentuj obsługiwane obciążenia, aby ustalić zobowiązania operacyjne zgodne z potrzebami firmy oraz inwestycje w zarządzanie w chmurze dla każdego obciążenia.                                |
-| ![3](../_images/icons/3.png)     | <br>[Rozwinięcie planu bazowego zarządzania](./best-practices.md): Na podstawie zobowiązań biznesowych i decyzji operacyjnych wykorzystaj dołączone najlepsze rozwiązania, aby wdrożyć wymagane narzędzia do zarządzania w chmurze.                                |
-| ![4](../_images/icons/4.png)      | <br>[Zaawansowane operacje i zasady projektowania](./design-principles.md): Platformy lub obciążenia, które wymagają wyższego poziomu zobowiązania biznesowego, mogą wymagać bardziej szczegółowego przeglądu architektury w celu zapewnienia odporności i niezawodności.  |
+| <br> ![1](../_images/icons/1.png)     | [Ustalenie planu bazowego zarządzania](./azure-management-guide/index.md): Zdefiniuj sposób klasyfikowania elementów o krytycznym znaczeniu, narzędzia do zarządzania w chmurze i procesy wymagane do realizacji minimalnego zobowiązania w zarządzaniu operacjami.                                |
+| <br> ![2](../_images/icons/2.png)     | [Zdefiniowanie zobowiązań biznesowych](./considerations/business-alignment.md): Udokumentuj obsługiwane obciążenia, aby ustalić zobowiązania operacyjne zgodne z potrzebami firmy oraz inwestycje w zarządzanie w chmurze dla każdego obciążenia.                                |
+| <br> ![3](../_images/icons/3.png)     | [Rozwinięcie planu bazowego zarządzania](./best-practices.md): Na podstawie zobowiązań biznesowych i decyzji operacyjnych wykorzystaj dołączone najlepsze rozwiązania, aby wdrożyć wymagane narzędzia do zarządzania w chmurze.                                |
+| <br> ![4](../_images/icons/4.png)      | [Zaawansowane operacje i zasady projektowania](./design-principles.md): Platformy lub obciążenia, które wymagają wyższego poziomu zobowiązania biznesowego, mogą wymagać bardziej szczegółowego przeglądu architektury w celu zapewnienia odporności i niezawodności.  |
 
 Poprzednie kroki określają praktyczne sposoby realizacji metodologii zarządzania przedstawionej w przewodniku Cloud Adoption Framework.
 
