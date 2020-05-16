@@ -7,35 +7,42 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 05d04914511eaf07d82745ba7430c23c035323bf
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 3c61f18aaa2814d9ac92e176524ef9fb448f67a4
+ms.sourcegitcommit: 605752e331f6d8d8ab98d79f400f74f96d7c6a48
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400289"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83424119"
 ---
 # <a name="get-started-accelerate-migration"></a>Wprowadzenie: przyspieszanie migracji
 
-Właściwe wyrównania biznesowe i zainteresowanych działów IT mogą pomóc organizacji w pokonaniu przeszkody migracji i przyspieszeniu wysiłków migracji. W tym artykule przedstawiono zalecane kroki, które należy wykonać w celu wyrównania przez uczestnika projektu, planowania migracji, wdrożenia strefy docelowej i migracji pierwszych 10 obciążeń. Może ona również pomóc Ci w długotrwałym pomyślnym przewidzianym przez właściwy nadzór i zarządzanie.
+Właściwe wyrównania biznesowe i zainteresowanych działów IT mogą pomóc organizacji w pokonaniu przeszkody migracji i przyspieszeniu wysiłków migracji. W tym artykule przedstawiono zalecane kroki dla programu:
 
-Skorzystaj z tego przewodnika, aby zmniejszyć ilość materiałów i procesy wymagane do dopasowania ogólnego wysiłku migracji. Ten proces wykorzystuje sekcje struktury wdrażania chmury, które zostały wyróżnione na poniższej ilustracji.
+- Uzgodnienie stanowiska osób biorących udział w projekcie
+- Planowanie migracji.
+- Wdrażanie strefy docelowej.
+- Migrowanie pierwszych 10 obciążeń.
+
+Może ona również pomóc Ci w długotrwałym pomyślnym przewidzianym przez właściwy nadzór i zarządzanie.
+
+Skorzystaj z tego przewodnika, aby zmniejszyć liczbę materiałów i procesy wymagane do dopasowania ogólnego nakładu migracji. Ten proces korzysta z sekcji platformy wdrażania w chmurze dla platformy Azure, które zostały wyróżnione na tej ilustracji.
 
 ![Wprowadzenie do migracji na platformie Azure](../_images/get-started/migration-map.png)
 
-Jeśli Twój Scenariusz migracji jest nietypowy, możesz uzyskać spersonalizowaną ocenę gotowości do migracji w organizacji za pomocą [oceny strategicznej migracji i narzędzia gotowości](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment) , aby zidentyfikować wskazówki, które najlepiej odpowiadają bieżącym potrzebom.
+Jeśli Twój Scenariusz migracji jest nietypowy, możesz uzyskać spersonalizowaną ocenę gotowości do migracji w organizacji za pomocą [oceny strategicznej migracji i narzędzia gotowości](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment). Służy do identyfikowania wskazówek, które najlepiej odpowiadają bieżącym potrzebom.
 
-## <a name="get-started"></a>Rozpoczęcie pracy
+## <a name="get-started"></a>Wprowadzenie
 
-Proces przeprowadzania migracji obciążeń jest stosunkowo prosty. Efektywne zakończenie procesu migracji jest ważne. Strategiczna gotowość do migracji będzie jednak mieć jeszcze większy wpływ na osie czasu i pomyślne ukończenie ogólnej migracji.
+Proces przeprowadzania migracji obciążeń jest stosunkowo prosty. Ważne jest, aby wydajnie zakończyć proces migracji. Ale strategiczna gotowość do migracji ma jeszcze większy wpływ na osie czasu i pomyślne ukończenie ogólnej migracji.
 
-Przyspieszenie wdrożenia oznacza rozjęcie czynności wymaganych do obsługi zespołu wdrażania chmury podczas migracji. W tym przewodniku opisano te iteracyjne zadania w formacie liniowej listy kontrolnej, aby ułatwić klientom rozpoczęcie właściwej ścieżki do migracji w chmurze. Aby zilustrować znaczenie kroków pomocniczych, migracja jest wymieniona w kroku 10 w tym artykule. W rzeczywistości zespół ds. wdrażania chmury prawdopodobnie rozpocznie swoją pierwszą migrację pilotażową równolegle z krokami 4 lub 5.
+Aby przyspieszyć wdrażanie, należy wykonać kroki w celu obsługi zespołu wdrażania chmury podczas migracji. W tym przewodniku opisano te iteracyjne zadania, które pomagają klientom zacząć od właściwej ścieżki do migracji do chmury. Aby pokazać znaczenie kroków pomocniczych, migracja jest wymieniona w kroku 10 w tym artykule. W rzeczywistości zespół wdrażania w chmurze prawdopodobnie rozpocznie swoją pierwszą migrację pilotażową równolegle z krokami 4 i 5.
 
 ## <a name="step-1-align-stakeholders"></a>Krok 1. Wyrównywanie uczestników projektu
 
-Aby uniknąć wspólnych blokad migracji, należy utworzyć jasno i zwięzłą strategię biznesową dla migracji. Wyrównania uczestnika projektu dotyczącego motywacji i oczekiwanych wyników działalności biznesowej będą kształtować decyzje podejmowane przez zespół rozwiązań w chmurze.
+Aby uniknąć wspólnych blokad migracji, należy utworzyć jasno i zwięzłą strategię biznesową dla migracji. Wyrównania uczestnika projektu dotyczącej motywacji i oczekiwanych wyników działalności biznesowej podejmowanych przez zespół rozwiązań w chmurze.
 
-- [Motywacje](../strategy/motivations.md): pierwszy krok do strategicznego dostosowywania ma na celu uzyskanie konsensusu na potrzeby motywacji prowadzących do przeprowadzenia migracji. Zacznij od ustalenia i kategoryzacji motywacji oraz wspólnych motywów z różnych uczestników firmy i.
-- [Wyniki biznesowe](../strategy/business-outcomes/index.md): w przypadku wyrównania motywacji możliwe jest przechwycenie żądanych wyników firmy. Zapewnia to wyraźne metryki, za pomocą których można mierzyć ogólną transformację.
+- [Motywacje](../strategy/motivations.md): pierwszy krok do strategicznego dostosowywania polega na uzyskaniu porozumienia w sprawie motywacji, które zwiększają nakłady migracji. Zacznij od ustalenia i kategoryzacji motywacji oraz wspólnych motywów z różnych uczestników firmy i.
+- [Wyniki biznesowe](../strategy/business-outcomes/index.md): po wyrównaniu motywacji możliwe jest przechwycenie żądanych wyników firmy. Te informacje zapewniają jasne metryki, których można użyć do mierzenia ogólnego przekształcenia.
 
 **Dostarczane**
 
@@ -56,7 +63,7 @@ Partnerzy, usługi firmy Microsoft lub różne programy firmy Microsoft są dost
 
 **Dostarczane**
 
-- Ustalanie warunków i postanowień lub innych umów umownych przed zaangażowaniem partnera pomocniczego.
+- Ustal warunki i postanowienia lub inne umowy umowne przed rozpoczęciem obsługi partnerów.
 - Zidentyfikuj zatwierdzonych partnerów w ramach [strategii i szablonu planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
 
 <!-- markdownlint-disable MD033 -->
@@ -68,10 +75,10 @@ Partnerzy, usługi firmy Microsoft lub różne programy firmy Microsoft są dost
 
 ## <a name="step-3-gather-data-and-analyze-assets-and-workloads"></a>Krok 3. zbieranie danych i analizowanie zasobów i obciążeń
 
-Odnajdywanie i Ocena zapewniają lepszy poziom wyrównania technicznego w celu utworzenia planu umożliwiającego podjęcie odpowiednich działań. W tym kroku sprawa biznesowa jest weryfikowana przy użyciu danych o bieżącym środowisku stanu, analizie ilościowej tych danych i głębokiej ocenie jakościowej obciążeń o najwyższym priorytecie.
+Funkcja odnajdywania i oceny zapewnia lepszy poziom wyrównania technicznego, który pomaga utworzyć plan akcji, którego można użyć do dostarczenia strategii. W tym kroku sprawdzasz poprawność przypadku biznesowego za pomocą danych o bieżącym środowisku stanu. Następnie należy przeprowadzić analizę ilościową tych danych i szczegółową ocenę jakościową obciążeń o najwyższym priorytecie.
 
 - [Istniejące systemy spisu](../digital-estate/inventory.md): zrozumienie bieżącego stanu z programistycznego, opartego na danych podejścia to pierwszy krok. Odkryj i Zbierz dane, aby włączyć wszystkie działania oceny.
-- [Racjonalizacja przyrostowa](../digital-estate/rationalize.md#incremental-rationalization): Usprawnij wysiłki oceniania, aby skupić się na analizie jakościowej wszystkich zasobów (prawdopodobnie nawet w przypadku obsługi przypadku biznesowego). Następnie należy dodać głęboką analizę jakościową dla pierwszych 10 obciążeń, które mają zostać zmigrowane.
+- Ocena [przyrostowa](../digital-estate/rationalize.md#incremental-rationalization): Usprawnij wysiłki oceny, aby skoncentrować się na analizie jakościowej wszystkich zasobów, prawdopodobnie nawet w przypadku obsługi przypadku biznesowego. Następnie należy dodać głęboką analizę jakościową dla pierwszych 10 obciążeń, które mają zostać zmigrowane.
 
 **Dostarczane**
 
@@ -89,9 +96,9 @@ Odnajdywanie i Ocena zapewniają lepszy poziom wyrównania technicznego w celu u
 
 ## <a name="step-4-make-a-business-case"></a>Krok 4. Tworzenie przypadku biznesowego
 
-Jeśli przypadek biznesowy do migracji będzie prawdopodobnie iteracyjną konwersacją między uczestnikami projektu. W pierwszym miejscu podczas tworzenia przypadku biznesowego należy oszacować początkowy zwrot wysokiego poziomu z potencjalnej migracji do chmury. Celem tego kroku jest upewnienie się, że wszystkie zainteresowane strony będą wyrównane do jednego z prostych pytań: "w oparciu o dostępną datę, jest ogólnym przyjęciem w chmurze decyzji biznesowej?".
+Sytuacja biznesowa do migracji może być iteracyjną konwersacją między uczestnikami projektu. W pierwszym miejscu podczas tworzenia przypadku biznesowego należy oszacować początkowy zwrot wysokiego poziomu z potencjalnej migracji do chmury. Celem tego kroku jest upewnienie się, że wszystkie zainteresowane strony będą wyrównane do jednego z prostych pytań: na podstawie dostępnych danych, czy jest to ogólny proces wdrażania w chmurze.
 
-- [Tworzenie aplikacji do migracji w chmurze](../strategy/cloud-migration-business-case.md) to dobry punkt wyjścia do tworzenia przypadku pracy w przypadku migracji, z przejrzystością na temat formuł i narzędzi, które mogą pomóc w uzasadnieniu biznesowym.
+- [Tworzenie aplikacji do migracji w chmurze](../strategy/cloud-migration-business-case.md) to dobry punkt wyjścia do tworzenia przypadku pracy w przypadku migracji. Przejrzystość formuł i narzędzi może pomóc w uzasadnieniu biznesowego.
 
 **Dostarczane**
 
@@ -106,7 +113,7 @@ Jeśli przypadek biznesowy do migracji będzie prawdopodobnie iteracyjną konwer
 
 ## <a name="step-5-create-a-migration-plan"></a>Krok 5. Tworzenie planu migracji
 
-Szablon planu wdrażania w chmurze zapewnia przyspieszone podejście do tworzenia zaległości projektu. Zaległości można następnie zmodyfikować, aby odzwierciedlały wyniki odnajdywania, racjonalizację, umiejętność i swoją umowę.
+Szablon planu wdrażania w chmurze zapewnia przyspieszone podejście do tworzenia zaległości projektu. Zaległości można następnie zmodyfikować, aby odzwierciedlić wyniki odnajdywania, racjonalizację, wymagane umiejętności i umowę partnera.
 
 - [Szablon planu wdrażania w chmurze](../plan/template.md): Wdróż podstawowy szablon.
 - [Wyrównanie obciążenia](../plan/workloads.md): Zdefiniuj obciążenia w zaległości.
@@ -116,7 +123,7 @@ Szablon planu wdrażania w chmurze zapewnia przyspieszone podejście do tworzeni
 **Dostarczane**
 
 - Wdróż szablon zaległości.
-- Zaktualizuj szablon w celu odzwierciedlenia pierwszych 10 obciążeń do migracji.
+- Zaktualizuj szablon w celu odzwierciedlenia pierwszych 10 obciążeń, które mają zostać zmigrowane.
 - Aktualizuj osoby i szybkość, aby oszacować czas wydania.
 - Ryzyka dla osi czasu:
   - Brak wiedzy z usługą Azure DevOps może spowolnić proces wdrażania.
@@ -131,13 +138,13 @@ Szablon planu wdrażania w chmurze zapewnia przyspieszone podejście do tworzeni
 
 ## <a name="step-6-build-a-skills-readiness-plan"></a>Krok 6. Tworzenie planu gotowości do kwalifikacji
 
-Istniejący pracownicy mogą odgrywać rolę praktyczną w ramach wysiłków związanych z migracją. Mogą jednak być wymagane dodatkowe umiejętności. W tym kroku zespół będzie samooceny, aby identyfikować okazje do rozwoju umiejętności lub użyć partnerów w celu rozszerzenia tych umiejętności.
+Istniejący pracownicy mogą odgrywać rolę praktyczną w wysiłku migracji, ale mogą być wymagane dodatkowe umiejętności. W tym kroku zespół zidentyfikuje szanse na rozwój umiejętności lub użycie partnerów w celu dodania do tych umiejętności.
 
-- [Utwórz plan gotowości do kwalifikacji](../plan/adapt-roles-skills-processes.md). Szybko Oceń wymagane i istniejące umiejętności, aby lepiej zrozumieć, jakie wymagania dotyczące kwalifikacji powinny być rozkierowane.
+- [Utwórz plan gotowości do kwalifikacji](../plan/adapt-roles-skills-processes.md). Szybko Oceń wymagane i istniejące umiejętności, aby lepiej zrozumieć, jakie wymagania dotyczące umiejętności powinny być rozkierowane.
 
 **Dostarczane**
 
-- Dodaj plan gotowości do umiejętności [i szablonu planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- Dodaj plan gotowości do [strategii i szablonu planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -148,18 +155,18 @@ Istniejący pracownicy mogą odgrywać rolę praktyczną w ramach wysiłków zwi
 
 ## <a name="step-7-deploy-and-align-a-landing-zone"></a>Krok 7. wdrażanie i wyrównywanie strefy docelowej
 
-Wszystkie zmigrowane zasoby są wdrażane w ramach strefy docelowej. Początkowo strefa docelowa będzie uproszczony do obsługi mniejszych obciążeń. W miarę upływu czasu skalowanie zostanie rozbudowane pod kątem bardziej złożonych obciążeń.
+Wszystkie zmigrowane zasoby są wdrażane w ramach strefy docelowej. Początkowo strefa docelowa jest prosta do obsługi mniejszych obciążeń. W miarę upływu czasu skaluje się w celu rozwiązania bardziej złożonych obciążeń.
 
 - [Wybierz strefę wyładunkowej](../ready/landing-zone/first-landing-zone.md): Użyj tego artykułu, aby znaleźć odpowiednie podejście do wdrożenia strefy docelowej na podstawie wzorca wdrożenia. Następnie Wdróż tę standardową bazę kodu.
-- [Rozszerzanie strefy docelowej](../ready/considerations/index.md): niezależnie od punktu początkowego Zidentyfikuj luki w wdrożonej strefie docelowej, aby dodać wymagane składniki organizacji, zabezpieczeń, nadzoru, zgodności, operacji i tak dalej.
+- [Rozszerzanie strefy docelowej](../ready/considerations/index.md): niezależnie od punktu początkowego Zidentyfikuj luki w wdrożonej strefie wyładunkowej, aby dodać wymagane składniki organizacji, zabezpieczeń, zarządzania, zgodności i operacji.
 
 **Dostarczane**
 
 - Wdróż pierwszą strefę docelową na potrzeby wstępnej migracji o niskim ryzyku.
-- Utwórz plan do refaktoryzacji przy użyciu CCoE lub centralnych.
+- Opracowywanie planu do refaktoryzacji w centrum analiz doskonałości lub centralnie.
 - Ryzyka dla osi czasu:
-  - Wymagania dotyczące ładu, operacji i zabezpieczeń dla pierwszych 10 obciążeń mogą znacząco spowolnić ten proces.
-  - Rzeczywiste Refaktoryzacja pierwszej strefy docelowej i kolejnych stref wypełniania będzie trwać znacznie dłużej, ale powinny być wykonywane równolegle do wysiłków związanych z migracją.
+  - Wymagania dotyczące ładu, operacji i zabezpieczeń dla pierwszych 10 obciążeń mogą spowolnić ten proces.
+  - Rzeczywiste Refaktoryzacja pierwszej strefy docelowej i kolejnych stref wypełniania trwa dłużej, ale powinno się to zdarzyć równolegle z wysiłkami migracji.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -170,18 +177,18 @@ Wszystkie zmigrowane zasoby są wdrażane w ramach strefy docelowej. Początkowo
 
 ## <a name="step-8-migrate-your-first-10-workloads"></a>Krok 8. Migrowanie pierwszych 10 obciążeń
 
-Nakłady techniczne wymagane do migracji pierwszych 10 obciążeń są stosunkowo proste. Jest to również proces iteracyjny, który będzie powtarzany podczas migracji większej liczby zasobów. Proces obejmuje ocenę obciążeń (zobacz **krok 4**), wdrożenie obciążeń, a następnie zwolnienie ich do środowiska produkcyjnego.
+Nakłady techniczne wymagane do migracji pierwszych 10 obciążeń są stosunkowo proste. Jest to również proces iteracyjny powtarzany podczas migracji większej liczby zasobów. W tym procesie można ocenić obciążenia (zobacz krok 4), wdrożyć obciążenia, a następnie zwolnić je do środowiska produkcyjnego.
 
 ![Fazy iteracji migracji: Ocena, wdrażanie, wydanie](../_images/migrate/methodology-effort-only.png)
 
-Narzędzia migracji do chmury umożliwiają Migrowanie wszystkich maszyn wirtualnych w centrum danych w jednym przebiegu lub iteracji. Jednak jest to bardziej powszechne w przypadku migrowania mniejszej liczby obciążeń podczas każdej iteracji. Rozdzielenie migracji na mniejsze fale lub wydania wymaga większego planowania, ale zmniejsza ryzyko techniczne i wpływ zarządzania zmianami organizacji.
+Narzędzia migracji do chmury umożliwiają Migrowanie wszystkich maszyn wirtualnych w centrum danych w jednym przebiegu lub iteracji. Przeprowadzenie migracji mniejszej liczby obciążeń podczas każdej iteracji jest bardziej powszechne. Rozdzielenie migracji na mniejsze fale lub wydania wymaga większego planowania. Jednak mniejsza liczba zmniejsza zagrożenia techniczne i wpływa na zarządzanie zmianami organizacji.
 
-W przypadku każdej iteracji zespół rozwiązań w chmurze będzie lepszy do migracji obciążeń. Następujące kroki spowodują rozpoczęcie pracy zespołu technicznego na tej krzywej zapadalności:
+W przypadku każdej iteracji zespół rozwiązań w chmurze jest lepszy do migracji obciążeń. Te kroki służą do uruchamiania zespołu technicznego na tej krzywej zapadalności:
 
-1. Migruj swoje **pierwsze obciążenia** w czystej IaaS podejście przy użyciu narzędzi opisanych w [przewodniku migracji platformy Azure](../migrate/azure-migration-guide/index.md).
-2. Rozwiń opcje narzędzi, aby użyć **migracji i modernizacji** przy użyciu [scenariuszy migracji](../migrate/azure-best-practices/contoso-migration-overview.md).
-3. Opracowuj **strategię techniczną** , korzystając z szerszych metod opisanych w [temacie najlepsze rozwiązania dotyczące migracji](../migrate/azure-best-practices/index.md).
-4. Zwiększ spójność, niezawodność i wydajność dzięki efektywnemu podejściu **fabryki migracji** , jak opisano w [ulepszeniach procesu migracji](../migrate/migration-considerations/index.md).
+1. Migruj pierwsze obciążenie w postaci czystego informacji jako usługi (IaaS), korzystając z narzędzi opisanych w [przewodniku migracji platformy Azure](../migrate/azure-migration-guide/index.md).
+2. Rozwiń opcje narzędzi, aby użyć migracji i modernizacji przy użyciu [scenariuszy migracji](../migrate/azure-best-practices/contoso-migration-overview.md).
+3. Opracowuj strategię techniczną, korzystając z szerszych metod opisanych w [temacie najlepsze rozwiązania dotyczące migracji](../migrate/azure-best-practices/index.md).
+4. Poprawiaj spójność, niezawodność i wydajność dzięki wydajnemu podejściu do migracji, jak opisano w [ulepszeniach procesu migracji](../migrate/migration-considerations/index.md).
 
 **Dostarczane**
 
@@ -196,16 +203,17 @@ Ciągłe ulepszanie zdolności zespołu adopcji do migracji obciążeń.
 
 ## <a name="step-9-hand-off-production-workloads-to-cloud-governance"></a>Krok 9. przekazywanie obciążeń produkcyjnych do ładu w chmurze
 
-Zarządzanie to kluczowy czynnik do długoterminowego sukcesu dowolnego wysiłku związanego z migracją. Ważna jest szybkość migracji i wpływu na działalność biznesową. Jednak szybkość bez nadzoru może być niebezpieczna. Organizacja będzie musiała podejmować decyzje dotyczące ładu, które są zgodne ze wzorcami wdrażania, oraz potrzebami dotyczącymi zarządzania i zgodności.
+Zarządzanie to kluczowy czynnik do długoterminowego sukcesu dowolnego wysiłku związanego z migracją. Ważna jest szybkość migracji i wpływu na działalność biznesową. Jednak szybkość bez nadzoru może być niebezpieczna. Organizacja musi podejmować decyzje dotyczące ładu, które są zgodne ze wzorcem wdrożenia i wymaganiami dotyczącymi zarządzania i zgodności.
 
-- [Podejście do ładu](../govern/index.md): Ta metodologia przedstawia proces planowania zasad i procesów firmowych. Następnie kompilując dyscypliny wymagane do dostarczenia na zarządzanie w ramach działań w chmurze dla przedsiębiorstw.
-- [Początkowa ładu](../govern/guides/complex/prescriptive-guidance.md): zrozumienie dyscypliny linii bazowej, dyscypliny linii bazowej zabezpieczeń i przyspieszenia wdrożenia, które są wymagane do utworzenia specjalisty dla ładu, który ma stanowić podstawę dla całego wdrożenia.
+- [Podejście do ładu](../govern/index.md): Ta metodologia przedstawia proces planowania zasad i procesów firmowych. Następnie można utworzyć dyscypliny wymagane do dostarczenia na zarządzanie w ramach wysiłków w chmurze.
+- [Początkowa ładu](../govern/guides/complex/prescriptive-guidance.md): zrozumienie dyscypliny linii bazowej, dyscypliny linii bazowej zabezpieczeń i przyspieszenia wdrożenia, które są wymagane do utworzenia minimalnego produktu, który ma być używany jako podstawa dla całego wdrożenia.
 
 **Dostarczane**
 
 - Wdróż początkową podstawę ładu.
 - Ukończ test porównawczy, aby zaplanować przyszłe ulepszenia.
-- Ryzyka dotyczące osi czasu:-ulepszanie zasad i implementacji ładu może dodać 1-4 tygodni na dyscyplinę.
+- Ryzyko dla osi czasu:
+    - Zasady poprawy i wdrożenia ładu mogą dodać jeden do czterech tygodni na dyscyplinę.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -218,7 +226,7 @@ Zarządzanie to kluczowy czynnik do długoterminowego sukcesu dowolnego wysiłku
 
 Zarządzanie operacjami jest kolejną wymaganiem do osiągnięcia sukcesu migracji. Migrowanie pojedynczych obciążeń do chmury bez znajomości trwających operacji korporacyjnych jest ryzykowną decyzją. Równolegle z migracją należy zacząć planowanie operacji na dłuższy okres.
 
-- [Plan bazowy zarządzania](../manage/index.md)
+- [Ustalenie planu bazowego zarządzania](../manage/index.md)
 - [Zdefiniowanie zobowiązań biznesowych](../manage/considerations/business-alignment.md)
 - [Rozwinięcie planu bazowego zarządzania](../manage/best-practices.md)
 - [Uzyskaj specyficzne dla operacji zaawansowanych](../manage/design-principles.md)
@@ -229,8 +237,8 @@ Zarządzanie operacjami jest kolejną wymaganiem do osiągnięcia sukcesu migrac
 - Ukończ skoroszyt zarządzania operacjami.
 - Zidentyfikuj wszystkie obciążenia wymagające oceny przeglądu architektury platformy Azure.
 - Ryzyka dla osi czasu:
-  - Przejrzyj skoroszyt: jedna godzina dla właściciela aplikacji.
-  - Ukończ ocenę przeglądu architektury platformy Azure: godzinę dla aplikacji.
+  - Przejrzyj skoroszyt: Oszacuj godzinę dla właściciela aplikacji.
+  - Ukończ ocenę przeglądu architektury platformy Azure: Oszacuj godzinę dla każdej aplikacji.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -241,11 +249,11 @@ Zarządzanie operacjami jest kolejną wymaganiem do osiągnięcia sukcesu migrac
 
 ## <a name="value-statement"></a>Value — instrukcja
 
-Kroki opisane w tym przewodniku mogą pomóc zespołom przyspieszyć swoje wysiłki w zakresie zarządzania zmianami i wyrównania uczestnika projektu. Wykonanie tych kroków może spowolnić proces, ale te kroki spowodują usunięcie wspólnych blokad i przyspieszenie realizacji wartości biznesowej.
+Kroki opisane w tym przewodniku mogą ułatwić zespołom przyspieszenie wysiłków związanych z migracją przez lepsze zarządzanie zmianami i wyrównanie uczestnika projektu. Wykonanie tych kroków może spowolnić proces. Te kroki usuwają także typowe bloki i przyspieszają realizację wartości biznesowej.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Platforma wdrażania w chmurze to rozwiązanie cyklu życia. Może to pomóc w rozpoczęciu podróży migracji, ale może też pomóc w zawieszeniu dojrzałości zespołów, które obsługują wysiłki związane z migracją. Poniższe zespoły mogą użyć tych następnych kroków, aby kontynuować okres zapadalności swoich wysiłków. Te procesy równoległe nie są liniowe i nie powinny być wyświetlane jako Zablokowani. Zamiast tego każda z nich jest strumieniem wartości równoległych, aby pomóc w pożądanym ogólnym gotowości chmury firmy.
+Platforma wdrażania w chmurze to rozwiązanie cyklu życia. Może to ułatwić rozpoczęcie podróży migracji. Może ona również pomóc w przejściu do okresu zapadalności zespołów, które obsługują wysiłki związane z migracją. Poniższe zespoły mogą użyć tych następnych kroków, aby kontynuować okres zapadalności swoich wysiłków. Te procesy równoległe nie są liniowe i nie powinny być wyświetlane jako Zablokowani. Zamiast tego każda z nich jest strumieniem wartości równoległych, aby pomóc w pożądanym ogólnym gotowości chmury firmy.
 
 | Zespół  | Następna iteracja |
 |---|---|
