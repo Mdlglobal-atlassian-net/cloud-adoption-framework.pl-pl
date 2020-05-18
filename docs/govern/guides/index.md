@@ -4,17 +4,16 @@ description: Zapoznaj się z przewodnikami dotyczącymi ładu w chmurze, które 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: d3f664aa94228da83ee86fd51392958341269c1e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6fceb9665712b4d787689ad2e3e709a5ac14d0d0
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214739"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400742"
 ---
 # <a name="cloud-governance-guides"></a>Przewodniki dotyczące ładu w chmurze
 
@@ -26,36 +25,15 @@ Aby rozpocząć podróż po wdrażaniu chmury, wybierz jeden z następujących p
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./standard/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Standardowy przewodnik dotyczący ładu</h3>
-                        <p>Przewodnik dla większości organizacji oparty na zalecanym modelu z dwoma subskrypcjami, przeznaczony dla wdrożeń w wielu regionach, które nie obejmują chmur publicznych i suwerennych/rządowych.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./complex/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Przewodnik dotyczący ładu dla przedsiębiorstw złożonych</h3>
-                        <p>Przewodnik dla przedsiębiorstw, które są zarządzane przez wiele niezależnych jednostek biznesowych IT lub obejmują chmurę publiczną i suwerenną/rządową.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
+- [Standardowy przewodnik dotyczący ładu](./standard/index.md): Przewodnik dla większości organizacji oparty na zalecanym modelu z dwoma subskrypcjami, przeznaczony dla wdrożeń w wielu regionach, które nie obejmują chmur publicznych i suwerennych/rządowych.
+
+> [!div class="nextstepaction"]
+> [Standardowy przewodnik dotyczący ładu](./standard/index.md)
+
+- [Przewodnik dotyczący ładu dla przedsiębiorstw złożonych](./complex/index.md): Przewodnik dla przedsiębiorstw, które są zarządzane przez wiele niezależnych jednostek biznesowych IT lub obejmują chmurę publiczną i suwerenną/rządową.
+
+> [!div class="nextstepaction"]
+> [Przewodnik dotyczący ładu dla przedsiębiorstw złożonych](./complex/index.md)
 
 <!-- markdownlint-enable MD033 -->
 

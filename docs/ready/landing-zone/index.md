@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: adef9ff5b7b32d91f3a7e32dd489804a90e7e7d7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e5aa8d4d21b4bb1f01b1bad091c13512aa4f8a96
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222950"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400114"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -20,11 +20,11 @@ ms.locfileid: "83222950"
 
 Infrastruktura jako kod to typowe wymaganie w większości wdrożeń chmury. Przejście do tworzenia środowisk typu „code-first” („najpierw kod”) może wymagać od członków zespołu dodatkowego okresu nauki i wprowadzenia zmian w różnych aspektach operacji, zabezpieczeń, zapewnienia ładu i zgodności. Wdrożenie oddzielnych, planowo tworzonych stref docelowych może skrócić ten okres nauki i pomóc zespołowi w terminowym realizowaniu planów wdrożenia. W tym artykule przedstawione zostaną definicje terminu _strefa docelowa_ i innych powiązanych terminów. Inne artykuły w tej serii zawierają instrukcje tworzenia stref docelowych.
 
-## <a name="pre-requisite-to-landing-zone-deployment"></a>Wymagania wstępne związane z wdrażaniem strefy docelowej
+## <a name="prerequisite-to-landing-zone-deployment"></a>Wymagania wstępne związane z wdrażaniem strefy docelowej
 
-Przed zdefiniowaniem stref docelowych należy poznać pokrewny termin: _podstawy platformy_. W każdym środowisku (w chmurze, lokalnym lub hybrydowym) znajdziemy zbór _podstawowych narzędzi_ używanych do obsługi wszystkich, różnorodnych obciążeń. Te obciążenia są potrzebne firmie do działania. Dział IT potrzebuje tych podstawowych narzędzi do zarządzania całym _portfolio_ obciążeń, zapewnienia ładu i zabezpieczenia ich. Aby uzyskać więcej informacji na temat tych pokrewnych terminów i zależności między nimi, zobacz artykuł dotyczący [hierarchii portfolio](../../reference/fundamental-concepts/hosting-hierarchy.md).
+Przed zdefiniowaniem stref docelowych należy poznać pokrewny termin: _podstawy platformy_. W każdym środowisku (w chmurze, lokalnym lub hybrydowym) znajdziemy zbór _podstawowych narzędzi_ używanych do obsługi wszystkich, różnorodnych obciążeń. Te obciążenia są potrzebne firmie do działania. Dział IT potrzebuje tych podstawowych narzędzi do zarządzania całym _portfolio_ obciążeń, zapewnienia ładu i zabezpieczenia ich. Aby uzyskać więcej informacji na temat tych pokrewnych terminów i zależności między nimi, zobacz [Hierarchia portfolio](../../reference/fundamental-concepts/hosting-hierarchy.md).
 
-**Podstawy platformy:** Przed wdrożeniem stref docelowych zakłada się, że dla strefy docelowej są dostępne scentralizowane mechanizmy sterowania na potrzeby tożsamości, zabezpieczeń, operacji, zapewnienia zgodności i ładu, zawarte we wspólnych _podstawach platformy_ używanych do obsługi wszystkich obciążeń na danej platformie w chmurze. Wszystkie obciążenia w każdej strefie docelowej będą sterowane za pomocą tych mechanizmów, co zapewnia wspólny punkt odniesienia dla wszystkich _wspólnych filarów architektury_, do których należą zabezpieczenia, niezawodność, wydajność, koszt i operacje w chmurze. 
+**Podstawy platformy:** Przed wdrożeniem stref docelowych zakłada się, że dla strefy docelowej są dostępne scentralizowane mechanizmy sterowania na potrzeby tożsamości, zabezpieczeń, operacji, zapewnienia zgodności i ładu, zawarte we wspólnych _podstawach platformy_ używanych do obsługi wszystkich obciążeń na danej platformie w chmurze. Wszystkie obciążenia w każdej strefie docelowej będą sterowane za pomocą tych mechanizmów, co zapewnia wspólny punkt odniesienia dla wszystkich _wspólnych filarów architektury_, do których należą zabezpieczenia, niezawodność, wydajność, koszt i operacje w chmurze.
 
 **Podział obowiązków:** Należy wprowadzić wyraźny podział obowiązków na pracę związaną z obciążeniami wykonywaną w strefie docelowej oraz działanie narzędzi zarządzanych poza strefą docelową. Ten podział obowiązków umożliwia właściwe zapewnienie ładu i zgodności. Ponadto gwarantuje, że każdy zespół rozważy i omówi wszelkie wyjątki od zasad firmowych zamiast szybko tworzyć obejścia, które mogłyby naruszyć bezpieczeństwo środowiska.
 
@@ -63,11 +63,11 @@ Przeznaczenie i zakres ogólnego planu wdrożenia chmury określi wymagane eleme
 W niektórych zdecentralizowanych organizacjach projekt wdrożenia zakłada istnienie zespołów ds. obciążeń, ponoszących **wyłączną odpowiedzialność** za wdrożenie i obsługę swoich izolowanych obciążeń, co obejmuje zabezpieczenia, zapewnienie ładu, zarządzanie operacjami i inne funkcje. W przypadku takich zespołów obciążenie może działać we własnym, izolowanym środowisku, bez zależności od podstaw platformy. Takie środowiska specyficzne dla obciążeń obejmowałyby niespójne implementacje zabezpieczeń, niezawodności, wydajności, kosztów i operacji w chmurze. W związku z tym nie powinny być nazywane strefami docelowymi. Tego typu zespoły mogą skorzystać z przewodnika [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework/), który pomoże im w niezależnym zaprojektowaniu, utworzeniu i zoptymalizowaniu każdego obciążenia.
 
 > [!IMPORTANT]
-> Podobna, ale odrębna, jest następująca sytuacja: Na wczesnym etapie cyklu wdrażania chmury mniejsze zespoły mogą z konieczności działać w sposób podobny do organizacji zdecentralizowanych. Jeśli zespoły działają w sposób zdecentralizowany z powodu konkretnych okoliczności (a nie planowo), również należy stosować najlepsze rozwiązanie obejmujące strefy docelowe.
+> Podobna, ale odrębna, jest następująca sytuacja: na wczesnym etapie cyklu wdrażania chmury mniejsze zespoły mogą z konieczności działać w sposób podobny do organizacji zdecentralizowanych. Jeśli zespoły działają w sposób zdecentralizowany z powodu konkretnych okoliczności (a nie planowo), również należy stosować najlepsze rozwiązanie obejmujące strefy docelowe.
 
 ## <a name="portfolio-hierarchy"></a>Hierarchia portfolio
 
-Strefy docelowe to jedna z warstw ogólnej hierarchii portfolio, zgodnie z opisem w sekcji dotyczącej wymagań wstępnych. Istnienie stref docelowych wskazuje, że firma obsługuje szersze portfolio rozwiązań, przy wsparciu różnych zespołów, procesów i scentralizowanych _podstaw platformy_. Aby uzyskać więcej informacji kontekstowych na temat miejsca stref docelowych w ogólnym projekcie portfolio, zobacz artykuł poświęcony [hierarchii portfolio](../../reference/fundamental-concepts/hosting-hierarchy.md). Aby lepiej poznać produkty dostępne na platformie Azure umożliwiające zarządzanie różnymi warstwami hierarchii portfolio, zobacz artykuł dotyczący [obsługi hierarchii na platformie Azure](../../reference/fundamental-concepts/hierarchy-azure-tools.md).
+Strefy docelowe to jedna z warstw ogólnej hierarchii portfolio, zgodnie z opisem w sekcji dotyczącej wymagań wstępnych. Istnienie stref docelowych wskazuje, że firma obsługuje szersze portfolio rozwiązań, przy wsparciu różnych zespołów, procesów i scentralizowanych _podstaw platformy_. Aby uzyskać więcej informacji kontekstowych na temat miejsca stref docelowych w ogólnym projekcie portfolio, zobacz artykuł poświęcony [hierarchii portfolio](../../reference/fundamental-concepts/hosting-hierarchy.md). Aby uzyskać więcej informacji o produktach dostępnych na platformie Azure umożliwiających zarządzanie różnymi warstwami hierarchii portfolio, zobacz [Obsługa hierarchii platformy Azure](../../reference/fundamental-concepts/hierarchy-azure-tools.md).
 
 ## <a name="next-steps"></a>Następne kroki
 

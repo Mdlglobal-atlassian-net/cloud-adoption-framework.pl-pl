@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 824d5fbe48074dd9a220a20bbf05f3d17c3445c1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 638f8dad1d7f284104765b28fe53561d98e02b56
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222763"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399816"
 ---
-<!--docsTest:disable - TODO -->
-
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 # <a name="resource-naming-and-tagging-decision-guide"></a>Przewodnik po decyzjach dotyczących nazewnictwa i tagowania zasobów
@@ -75,15 +73,17 @@ W ramach procesu planowania użyj poniższych pytań, aby ułatwić określenie 
 Typowe wzorce tagowania wymienione poniżej przedstawiają przykłady organizowania zasobów w chmurze przy użyciu tagowania. Te wzorce nie są przeznaczone do stosowania wyłącznego i można ich używać w sposób równoległy, co zapewni wiele sposobów organizowania zasobów zgodnie z potrzebami firmy.
 
 <!-- markdownlint-disable MD033 -->
+<!-- docsTest:disable -->
 
 | Typ tagu | Przykłady | Opis |
 |-----|-----|-----|
 | Funkcjonalny | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | Kategoryzuje zasoby na podstawie ich przeznaczenia w ramach obciążenia, środowiska, w którym zostały wdrożone, albo innych szczegółów funkcji lub operacji. |
-| Klasyfikacja | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | Klasyfikuje zasób według sposobu jego użycia i zastosowanych wobec niego zasad |
-| Księgowość | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | Umożliwia skojarzenie zasobu z określonymi grupami w organizacji na potrzeby rozliczeń |
-| Partnerstwo | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | Udostępnia informacje o osobach (poza działem IT), które są związane z zasobem lub na które zasób wpływa w inny sposób |
-| Przeznaczenie | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | Dopasowuje zasoby do funkcji biznesowych w celu podejmowania lepszych decyzji inwestycyjnych dotyczących obsługi |
+| Klasyfikacja | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | Klasyfikuje zasób według sposobu jego użycia i zastosowanych wobec niego zasad. |
+| Księgowość | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | Umożliwia skojarzenie zasobu z określonymi grupami w organizacji na potrzeby rozliczeń. |
+| Partnerstwo | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | Udostępnia informacje o osobach (poza działem IT), które są związane z zasobem lub na które zasób wpływa w inny sposób. |
+| Przeznaczenie | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | Dopasowuje zasoby do funkcji biznesowych w celu lepszego wsparcia decyzji inwestycyjnych. |
 
+<!-- docsTest:enable -->
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="learn-more"></a>Dowiedz się więcej

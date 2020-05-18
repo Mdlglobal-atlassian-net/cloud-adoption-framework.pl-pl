@@ -41,6 +41,8 @@ items:
         href: get-started/reliability.md
       - name: Zapewnianie stałej wydajności
         href: get-started/performance.md
+      - name: Zapewnianie sukcesu klientów
+        href: get-started/enable.md
       - name: Dostosowywanie organizacji
         href: get-started/org-alignment.md
       - name: Tworzenie zespołu ds. strategii w chmurze
@@ -1265,24 +1267,50 @@ items:
         href: organize/index.md
       - name: Wymagane funkcje chmury
         items:
-          - name: Strategia chmury
+          - name: Funkcje strategii chmury
             href: organize/cloud-strategy.md
-          - name: Wdrażanie chmury
+          - name: Funkcje wdrażania chmury
             href: organize/cloud-adoption.md
-          - name: Ład w chmurze
+          - name: Funkcje ładu chmury
             href: organize/cloud-governance.md
-          - name: Centralne zasoby IT
+          - name: Centralne funkcje IT
             href: organize/central-it.md
-          - name: Operacje w chmurze
+          - name: Funkcje operacji chmury
             href: organize/cloud-operations.md
-          - name: Centrum doskonałości chmury
+          - name: Funkcje centrum doskonałości chmury
             href: organize/cloud-center-of-excellence.md
-          - name: Platforma w chmurze
+          - name: Funkcje platformy w chmurze
             href: organize/cloud-platform.md
-          - name: Automatyzacja chmury
+          - name: Funkcje automatyzacji w chmurze
             href: organize/cloud-automation.md
-          - name: Zabezpieczenia chmury
-            href: organize/cloud-security.md
+          - name: Funkcje zabezpieczeń w chmurze
+            items:
+              - name: Funkcje zespołu ds. zabezpieczeń w chmurze
+                href: organize/cloud-security.md
+              - name: Zasady i standardy
+                href: organize/cloud-security-policy-standards.md
+              - name: Centrum operacji zabezpieczeń
+                href: organize/cloud-security-operations-center.md
+              - name: Architektura zabezpieczeń
+                href: organize/cloud-security-architecture.md
+              - name: Zarządzanie zgodnością zabezpieczeń
+                href: organize/cloud-security-compliance-management.md
+              - name: Bezpieczeństwo osób
+                href: organize/cloud-security-people.md
+              - name: Zabezpieczenia aplikacji i metodyka DevSecOps
+                href: organize/cloud-security-apsec-devsecops.md
+              - name: Bezpieczeństwo danych
+                href: organize/cloud-security-data-security.md
+              - name: Zabezpieczenia infrastruktury i punktu końcowego
+                href: organize/cloud-security-infrastructure-endpoint.md
+              - name: Tożsamość i klucze
+                href: organize/cloud-security-identity-keys.md
+              - name: Analiza zagrożeń
+                href: organize/cloud-security-threat-intelligence.md
+              - name: Zarządzanie stanem bezpieczeństwa
+                href: organize/cloud-security-posture-management.md
+              - name: Przygotowywanie zdarzeń
+                href: organize/cloud-security-incident-preparation.md
       - name: Dojrzała struktura zespołów
         href: organize/organization-structures.md
       - name: Dopasowywanie macierzy operacji obrachunkowej

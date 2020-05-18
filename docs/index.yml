@@ -11,12 +11,12 @@ metadata:
   author: JanetCThomas
   ms.author: janet
   ms.date: 04/20/2020
-  ms.openlocfilehash: 2214466178729bcf6cb0e6ddd02a22d036039004
-  ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+  ms.openlocfilehash: 79cb54103165ff42402513e66053456b124bd77d
+  ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 05/12/2020
-  ms.locfileid: "83228307"
+  ms.lasthandoff: 05/14/2020
+  ms.locfileid: "83398998"
 highlightedContent:
   items:
   - title: Rozpocznij przejście do chmury
@@ -67,7 +67,7 @@ productDirectory:
     - url: ./plan/suggested-skills.md
       text: Plan gotowości w zakresie umiejętności
     - url: ./plan/template.md
-      text: Plan wdrożenia chmury — DevOps
+      text: Plan wdrożenia chmury dla metodyki DevOps
   - title: Gotowy
     imageSrc: ./_images/caf-ready.png
     links:
@@ -120,7 +120,7 @@ productDirectory:
     - url: ./manage/considerations/business-alignment.md
       text: Zobowiązania biznesowe
     - url: ./manage/best-practices.md
-      text: Rozwijanie planu bazowego
+      text: Rozwijanie punktu odniesienia
     - url: ./manage/design-principles.md
       text: Ocena zasad projektowania
   - title: Organizowanie
@@ -147,7 +147,7 @@ tools:
     url: https://docs.microsoft.com/learn/paths/learn-business-value-of-azure
 conceptualContent:
   title: Oceny
-  summary: Oceny ułatwiają planowanie przejścia do chmury. Umożliwiają znalezienie różnic między stanem bieżącym i docelowym. Udostępnimy Ci spersonalizowane, wyselekcjonowane rekomendacje, aby pomóc Ci w osiągnięciu stanu docelowego.
+  summary: Oceny ułatwiają planowanie przejścia do chmury. Umożliwiają znalezienie różnic między stanem bieżącym i żądanym. Udostępnimy Ci spersonalizowane, wyselekcjonowane rekomendacje, aby pomóc Ci w osiągnięciu żądanego stanu.
   items:
   - title: Monitor przejścia do chmury
     links:

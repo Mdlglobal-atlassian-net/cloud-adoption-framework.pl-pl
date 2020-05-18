@@ -4,17 +4,16 @@ description: Zapoznaj się z podejściem do tworzenia dziedziny Punkt odniesieni
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 4728270f71893680886e40b4e647b9fec6624ef7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2e171736ccf993d3e7401350008ab542759b703b
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218819"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400788"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Omówienie dziedziny Punkt odniesienia obsługi tożsamości
 
@@ -40,122 +39,14 @@ W poniższych sześciu krokach zamieszczono przykłady i potencjalne opcje, któ
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsE">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./template.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-template.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Szablon dotyczący dziedziny Punkt odniesienia obsługi tożsamości</h3>
-                            <p class="x-hidden-focus">Pobierz szablon umożliwiający dokumentowanie dziedziny Punkt odniesienia obsługi tożsamości.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./business-risks.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-risks.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Rodzaje ryzyka biznesowego</h3>
-                            <p class="x-hidden-focus">Poznaj przyczyny i czynniki ryzyka kojarzone zazwyczaj z dziedziną Punkt odniesienia obsługi tożsamości.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./metrics-tolerance.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-metrics.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Wskaźniki i metryki</h3>
-                            <p class="x-hidden-focus">Wskaźniki umożliwiające zrozumienie, czy to właściwy moment, aby zainwestować w dziedzinę Punkt odniesienia obsługi tożsamości.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./compliance-processes.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-enforce.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Procesy zapewniania zgodności zasad</h3>
-                            <p class="x-hidden-focus">Sugerowane procesy umożliwiające obsługę zgodności z zasadami w dziedzinie Punkt odniesienia obsługi tożsamości.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./discipline-improvement.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-maturity.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Dojrzałość</h3>
-                            <p class="x-hidden-focus">Dostosowywanie dojrzałości dziedziny Zarządzanie chmurą do etapów wdrażania w chmurze.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./toolchain.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-toolchain.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Łańcuch narzędzi</h3>
-                            <p class="x-hidden-focus">Usługi platformy Azure, które można zaimplementować w celu obsługi dziedziny Punkt odniesienia obsługi tożsamości.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+| | |
+|---|---|
+| <br> ![Ikona szablonu](../../_images/govern/process-template.png) ;; <br> [Szablon dotyczący dziedziny Punkt odniesienia obsługi tożsamości](./template.md): Pobierz szablon umożliwiający dokumentowanie dziedziny Punkt odniesienia obsługi tożsamości. |
+| <br> ![Ikona rodzajów ryzyka](../../_images/govern/process-risks.png) ;; <br> [Rodzaje ryzyka biznesowego](./business-risks.md): Poznaj przyczyny i czynniki ryzyka kojarzone zazwyczaj z dziedziną Punkt odniesienia obsługi tożsamości. |
+| <br> ![Ikona metryk](../../_images/govern/process-metrics.png) ;; <br> [Wskaźniki i metryki](./metrics-tolerance.md): Wskaźniki umożliwiające zrozumienie, czy to właściwy moment, aby zainwestować w dziedzinę Punkt odniesienia obsługi tożsamości. |
+| <br> ![Ikona zapewniania zgodności](../../_images/govern/process-enforce.png) ;; <br> [Procesy zapewniania zgodności zasad](./compliance-processes.md): Sugerowane procesy umożliwiające obsługę zgodności z zasadami w dziedzinie Punkt odniesienia obsługi tożsamości. |
+| <br> ![Ikona dojrzałości](../../_images/govern/process-maturity.png) ;; <br> [Dojrzałość](./discipline-improvement.md): Dostosuj dojrzałość dziedziny Zarządzanie chmurą do etapów wdrażania w chmurze. |
+| <br> ![Ikona łańcucha narzędzi](../../_images/govern/process-toolchain.png) ;; <br> [Łańcuch narzędzi](./toolchain.md): Usługi platformy Azure, które można zaimplementować w celu obsługi dziedziny Punkt odniesienia obsługi tożsamości. |
 
 <!-- markdownlint-enable MD033 -->
 
