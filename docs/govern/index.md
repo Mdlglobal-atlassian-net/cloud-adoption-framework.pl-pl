@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: edd91f1786dfc0649e06d643662fb7af12ec4c96
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 5c5ba323856ef3eb9612c7abdd733bfa32c6725f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399687"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620497"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Ład w przewodniku Microsoft Cloud Adoption Framework dla platformy Azure
 
@@ -25,7 +25,7 @@ Nadzór nad ładem w chmurze jest procesem iteracyjnym. W przypadku organizacji 
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png) | [Metodologia](./methodology.md): Zbierz podstawową wiedzę na temat metodologii zapewniania ładu w chmurze w ramach przewodnika Cloud Adoption Framework i zacznij myśleć o stanie końcowym. |
+| <br> ![1](../_images/icons/1.png) | <br> [Metodologia](./methodology.md): Zbierz podstawową wiedzę na temat metodologii zapewniania ładu w chmurze w ramach przewodnika Cloud Adoption Framework i zacznij myśleć o stanie końcowym. |
 | <br> ![2](../_images/icons/2.png) | <br> [Punkt odniesienia](./benchmark.md): Oceń stan bieżący i stan przyszły w celu ustalenia wizji na potrzeby stosowania struktury. |
 | <br> ![3](../_images/icons/3.png) | <br> [Początkowe podstawy ładu](./initial-foundation.md): Rozpocznij stosowanie nadzoru nad ładem, używając małego, łatwego w implementacji zestawu narzędzi do nadzoru. Te początkowe podstawy ładu są nazywane minimalną konieczną funkcjonalnością (MVP).                                |
 | <br> ![4](../_images/icons/4.png) | <br> [Udoskonalanie początkowych podstaw ładu](./foundation-improvements.md): W trakcie realizacji planu wdrażania chmury iteracyjnie dodawaj mechanizmy kontroli ładu w celu obsługi pojawiających się czynników ryzyka, zbliżając się do stanu końcowego. |

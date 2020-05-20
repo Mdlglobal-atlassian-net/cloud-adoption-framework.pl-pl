@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8fe970e2d266efb3d85c2680fcd8f8524d6ddac1
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 56cfb87e16b54e3b8b7dd72f482a085a2eee34ff
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399015"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621272"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Omówienie dziedziny Spójność zasobów
 
@@ -41,12 +41,12 @@ W poniższych sześciu krokach zamieszczono przykłady i potencjalne opcje, któ
 
 | | |
 |---|---|
-| <br> ![Ikona szablonu](../../_images/govern/process-template.png) | [Szablon dotyczący dziedziny Spójność zasobów](./template.md): Pobierz szablon umożliwiający dokumentowanie dziedziny Spójność zasobów. |
-| <br> ![Ikona rodzajów ryzyka](../../_images/govern/process-risks.png) | [Rodzaje ryzyka biznesowego](./business-risks.md): Poznaj przyczyny i czynniki ryzyka kojarzone zazwyczaj z dziedziną Spójność zasobów. |
-| <br> ![Ikona metryk](../../_images/govern/process-metrics.png) | [Wskaźniki i metryki](./metrics-tolerance.md): Wskaźniki umożliwiające zrozumienie, czy to właściwy moment, aby zainwestować w dziedzinę Spójność zasobów. |
-| <br> ![Ikona zapewniania zgodności](../../_images/govern/process-enforce.png) | [Procesy zapewniania zgodności zasad](./compliance-processes.md): Sugerowane procesy umożliwiające obsługę zgodności z zasadami w dziedzinie Spójność zasobów. |
-| <br> ![Ikona dojrzałości](../../_images/govern/process-maturity.png) | [Dojrzałość](./discipline-improvement.md): Dostosuj dojrzałość dziedziny Zarządzanie chmurą do etapów wdrażania w chmurze.  |
-| <br> ![Ikona łańcucha narzędzi](../../_images/govern/process-toolchain.png) | [Łańcuch narzędzi](./toolchain.md): Usługi platformy Azure, które można zaimplementować w celu obsługi dziedziny Spójność zasobów. |
+| <br> ![Ikona szablonu](../../_images/govern/process-template.png) | <br> [Szablon dotyczący dziedziny Spójność zasobów](./template.md): Pobierz szablon umożliwiający dokumentowanie dziedziny Spójność zasobów. |
+| <br> ![Ikona rodzajów ryzyka](../../_images/govern/process-risks.png) | <br> [Rodzaje ryzyka biznesowego](./business-risks.md): Poznaj przyczyny i czynniki ryzyka kojarzone zazwyczaj z dziedziną Spójność zasobów. |
+| <br> ![Ikona metryk](../../_images/govern/process-metrics.png) | <br> [Wskaźniki i metryki](./metrics-tolerance.md): Wskaźniki umożliwiające zrozumienie, czy to właściwy moment, aby zainwestować w dziedzinę Spójność zasobów. |
+| <br> ![Ikona zapewniania zgodności](../../_images/govern/process-enforce.png) | <br> [Procesy zapewniania zgodności zasad](./compliance-processes.md): Sugerowane procesy umożliwiające obsługę zgodności z zasadami w dziedzinie Spójność zasobów. |
+| <br> ![Ikona dojrzałości](../../_images/govern/process-maturity.png) | <br> [Dojrzałość](./discipline-improvement.md): Dostosuj dojrzałość dziedziny Zarządzanie chmurą do etapów wdrażania w chmurze.  |
+| <br> ![Ikona łańcucha narzędzi](../../_images/govern/process-toolchain.png) | <br> [Łańcuch narzędzi](./toolchain.md): Usługi platformy Azure, które można zaimplementować w celu obsługi dziedziny Spójność zasobów. |
 
 ## <a name="next-steps"></a>Następne kroki
 

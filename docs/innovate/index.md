@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e2bc8643ce1af2493d5a81477a81cf1c0ea9f4f8
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 0a55d829f5881fc8b39f550e2c0fdb5073373780
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398835"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621347"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Innowacje w chmurze w przewodniku Cloud Adoption Framework
 
@@ -26,10 +26,10 @@ Aby przygotować się na tę fazę cyklu wdrażania chmury, zalecane są następ
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png)     | [Wartość biznesowa — konsensus](./business-value.md): Przed podjęciem decyzji dotyczących rozwiązań technicznych należy dowiedzieć się, jak nowe innowacje mogą zwiększyć wartość biznesową. Uwzględnij tę wartość w strategii chmury. W tej metodologii przyrostowej wartość biznesowa jest reprezentowana przez hipotezę dotyczącą potrzeb klientów.                                |
-| <br> ![2](../_images/icons/2.png)     | [Przewodnik po innowacjach na platformie Azure](./innovation-guide/index.md): Platforma Azure oferuje narzędzia w chmurze służące do przyspieszania wdrażania innowacyjnych rozwiązań. W zależności od hipotezy warto rozważyć użycie różnych kombinacji narzędzi. Zalecane jest utworzenie minimalnej koniecznej funkcjonalności (MVP) za pomocą podstawowych narzędzi.                                |
-| <br>![3](../_images/icons/3.png)     | [Najlepsze rozwiązania](./best-practices/index.md): Decyzje dotyczące architektury powinny być zgodne z najlepszymi rozwiązaniami dla każdego narzędzia w łańcuchu narzędzi. Stosując się do tych wskazówek, możesz przyspieszyć opracowywanie rozwiązania i zapewnić punkt odniesienia dla rzetelnych projektów architektury.                                |
-| <br>![4](../_images/icons/4.png)      | [Sprzężenia zwrotne](./considerations/adoption.md): Podczas każdej iteracji zespoły mogą uczyć się wraz z klientami na podstawie opracowywanego rozwiązania. Szybkie i dokładne cykle wymiany opinii z udziałem klientów pomagają testować rozwiązania, dokonywać pomiarów, uczyć się i ostatecznie skracać czas potrzebny do wywołania wpływu na rynek. Dowiedz się, w jaki sposób platformy Azure i GitHub przyspieszają cykle wymiany opinii.                        |
+| <br> ![1](../_images/icons/1.png)     | <br> [Wartość biznesowa — konsensus](./business-value.md): Przed podjęciem decyzji dotyczących rozwiązań technicznych należy dowiedzieć się, jak nowe innowacje mogą zwiększyć wartość biznesową. Uwzględnij tę wartość w strategii chmury. W tej metodologii przyrostowej wartość biznesowa jest reprezentowana przez hipotezę dotyczącą potrzeb klientów.                                |
+| <br> ![2](../_images/icons/2.png)     | <br> [Przewodnik po innowacjach na platformie Azure](./innovation-guide/index.md): Platforma Azure oferuje narzędzia w chmurze służące do przyspieszania wdrażania innowacyjnych rozwiązań. W zależności od hipotezy warto rozważyć użycie różnych kombinacji narzędzi. Zalecane jest utworzenie minimalnej koniecznej funkcjonalności (MVP) za pomocą podstawowych narzędzi.                                |
+| <br> ![3](../_images/icons/3.png)     | <br> [Najlepsze rozwiązania](./best-practices/index.md): Decyzje dotyczące architektury powinny być zgodne z najlepszymi rozwiązaniami dla każdego narzędzia w łańcuchu narzędzi. Stosując się do tych wskazówek, możesz przyspieszyć opracowywanie rozwiązania i zapewnić punkt odniesienia dla rzetelnych projektów architektury.                                |
+| <br> ![4](../_images/icons/4.png)     | <br> [Sprzężenia zwrotne](./considerations/adoption.md): Podczas każdej iteracji zespoły mogą uczyć się wraz z klientami na podstawie opracowywanego rozwiązania. Szybkie i dokładne cykle wymiany opinii z udziałem klientów pomagają testować rozwiązania, dokonywać pomiarów, uczyć się i ostatecznie skracać czas potrzebny do wywołania wpływu na rynek. Dowiedz się, w jaki sposób platformy Azure i GitHub przyspieszają cykle wymiany opinii.                        |
 
 ## <a name="innovation-summary"></a>Podsumowanie dotyczące innowacji
 

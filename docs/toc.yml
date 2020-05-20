@@ -31,6 +31,8 @@ items:
         href: get-started/innovate.md
       - name: Usprawnianie projektowania i konfiguracji środowiska
         href: get-started/design-and-configuration.md
+      - name: Zapewnianie sukcesu klientów
+        href: get-started/enable.md
       - name: Zapewnianie doskonałości operacyjnej
         href: get-started/operational-excellence.md
       - name: Zarządzanie kosztami w chmurze
@@ -41,8 +43,6 @@ items:
         href: get-started/reliability.md
       - name: Zapewnianie stałej wydajności
         href: get-started/performance.md
-      - name: Zapewnianie sukcesu klientów
-        href: get-started/enable.md
       - name: Dostosowywanie organizacji
         href: get-started/org-alignment.md
       - name: Tworzenie zespołu ds. strategii w chmurze

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e171736ccf993d3e7401350008ab542759b703b
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 92e793e2df89bbb70fe51fd7af9ef8fc1456ffa2
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400788"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620654"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Omówienie dziedziny Punkt odniesienia obsługi tożsamości
 
@@ -41,12 +41,12 @@ W poniższych sześciu krokach zamieszczono przykłady i potencjalne opcje, któ
 
 | | |
 |---|---|
-| <br> ![Ikona szablonu](../../_images/govern/process-template.png) ;; <br> [Szablon dotyczący dziedziny Punkt odniesienia obsługi tożsamości](./template.md): Pobierz szablon umożliwiający dokumentowanie dziedziny Punkt odniesienia obsługi tożsamości. |
-| <br> ![Ikona rodzajów ryzyka](../../_images/govern/process-risks.png) ;; <br> [Rodzaje ryzyka biznesowego](./business-risks.md): Poznaj przyczyny i czynniki ryzyka kojarzone zazwyczaj z dziedziną Punkt odniesienia obsługi tożsamości. |
-| <br> ![Ikona metryk](../../_images/govern/process-metrics.png) ;; <br> [Wskaźniki i metryki](./metrics-tolerance.md): Wskaźniki umożliwiające zrozumienie, czy to właściwy moment, aby zainwestować w dziedzinę Punkt odniesienia obsługi tożsamości. |
-| <br> ![Ikona zapewniania zgodności](../../_images/govern/process-enforce.png) ;; <br> [Procesy zapewniania zgodności zasad](./compliance-processes.md): Sugerowane procesy umożliwiające obsługę zgodności z zasadami w dziedzinie Punkt odniesienia obsługi tożsamości. |
-| <br> ![Ikona dojrzałości](../../_images/govern/process-maturity.png) ;; <br> [Dojrzałość](./discipline-improvement.md): Dostosuj dojrzałość dziedziny Zarządzanie chmurą do etapów wdrażania w chmurze. |
-| <br> ![Ikona łańcucha narzędzi](../../_images/govern/process-toolchain.png) ;; <br> [Łańcuch narzędzi](./toolchain.md): Usługi platformy Azure, które można zaimplementować w celu obsługi dziedziny Punkt odniesienia obsługi tożsamości. |
+| <br> ![Ikona szablonu](../../_images/govern/process-template.png)   | <br> [Szablon dotyczący dziedziny Punkt odniesienia obsługi tożsamości](./template.md): Pobierz szablon umożliwiający dokumentowanie dziedziny Punkt odniesienia obsługi tożsamości. |
+| <br> ![Ikona rodzajów ryzyka](../../_images/govern/process-risks.png)         | <br> [Rodzaje ryzyka biznesowego](./business-risks.md): Poznaj przyczyny i czynniki ryzyka kojarzone zazwyczaj z dziedziną Punkt odniesienia obsługi tożsamości. |
+| <br> ![Ikona metryk](../../_images/govern/process-metrics.png)     | <br> [Wskaźniki i metryki](./metrics-tolerance.md): Wskaźniki umożliwiające zrozumienie, czy to właściwy moment, aby zainwestować w dziedzinę Punkt odniesienia obsługi tożsamości. |
+| <br> ![Ikona zapewniania zgodności](../../_images/govern/process-enforce.png)   | <br> [Procesy zapewniania zgodności zasad](./compliance-processes.md): Sugerowane procesy umożliwiające obsługę zgodności z zasadami w dziedzinie Punkt odniesienia obsługi tożsamości. |
+| <br> ![Ikona dojrzałości](../../_images/govern/process-maturity.png)   | <br> [Dojrzałość](./discipline-improvement.md): Dostosuj dojrzałość dziedziny Zarządzanie chmurą do etapów wdrażania w chmurze. |
+| <br> ![Ikona łańcucha narzędzi](../../_images/govern/process-toolchain.png) | <br> [Łańcuch narzędzi](./toolchain.md): Usługi platformy Azure, które można zaimplementować w celu obsługi dziedziny Punkt odniesienia obsługi tożsamości. |
 
 <!-- markdownlint-enable MD033 -->
 

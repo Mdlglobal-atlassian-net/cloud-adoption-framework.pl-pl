@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6db5662a5e470730116310a291ac669192e0f3e4
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: dbd60db37d5eb14b877f45c00956fd1869e9a0ba
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400636"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620540"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Omówienie dziedziny Przyspieszanie wdrażania
 
@@ -41,12 +41,12 @@ Sześć poniższych kroków pomoże określić zasady utrzymania ładu umożliwi
 
 | | |
 |---|---|
-| <br> ![Ikona szablonu](../../_images/govern/process-template.png) | [Szablon dotyczący dziedziny Przyspieszanie wdrażania](./template.md): Pobierz szablon umożliwiający dokumentowanie dziedziny Przyspieszanie wdrażania. |
-| <br> ![Ikona rodzajów ryzyka](../../_images/govern/process-risks.png) | [Rodzaje ryzyka biznesowego](./business-risks.md): Poznaj przyczyny i zagrożenia skojarzone zazwyczaj z dziedziną Przyspieszanie wdrażania.|
-| <br> ![Ikona metryk](../../_images/govern/process-metrics.png) | [Wskaźniki i metryki](./metrics-tolerance.md): Wskaźniki umożliwiające zrozumienie, czy to właściwy moment, aby zainwestować w dziedzinę Przyspieszanie wdrażania. |
-| <br> ![Ikona zapewniania zgodności](../../_images/govern/process-enforce.png) | [Procesy zapewniania zgodności zasad](./compliance-processes.md): Sugerowane procesy umożliwiające obsługę zgodności z zasadami w dziedzinie Przyspieszanie wdrażania. |
-| <br> ![Ikona dojrzałości](../../_images/govern/process-maturity.png) | [Dojrzałość](./discipline-improvement.md): Dostosuj dojrzałość dziedziny Zarządzanie chmurą do etapów wdrażania w chmurze.|
-| <br> ![Ikona łańcucha narzędzi](../../_images/govern/process-toolchain.png) | [Łańcuch narzędzi](./toolchain.md): Usługi platformy Azure, które można zaimplementować w celu obsługi dziedziny Przyspieszanie wdrażania. |
+| <br> ![Ikona szablonu](../../_images/govern/process-template.png) | <br> [Szablon dotyczący dziedziny Przyspieszanie wdrażania](./template.md): Pobierz szablon umożliwiający dokumentowanie dziedziny Przyspieszanie wdrażania. |
+| <br> ![Ikona rodzajów ryzyka](../../_images/govern/process-risks.png) | <br> [Rodzaje ryzyka biznesowego](./business-risks.md): Poznaj przyczyny i zagrożenia skojarzone zazwyczaj z dziedziną Przyspieszanie wdrażania.|
+| <br> ![Ikona metryk](../../_images/govern/process-metrics.png) | <br> [Wskaźniki i metryki](./metrics-tolerance.md): Wskaźniki umożliwiające zrozumienie, czy to właściwy moment, aby zainwestować w dziedzinę Przyspieszanie wdrażania. |
+| <br> ![Ikona zapewniania zgodności](../../_images/govern/process-enforce.png) | <br> [Procesy zapewniania zgodności zasad](./compliance-processes.md): Sugerowane procesy umożliwiające obsługę zgodności z zasadami w dziedzinie Przyspieszanie wdrażania. |
+| <br> ![Ikona dojrzałości](../../_images/govern/process-maturity.png) | <br> [Dojrzałość](./discipline-improvement.md): Dostosuj dojrzałość dziedziny Zarządzanie chmurą do etapów wdrażania w chmurze.|
+| <br> ![Ikona łańcucha narzędzi](../../_images/govern/process-toolchain.png) | <br> [Łańcuch narzędzi](./toolchain.md): Usługi platformy Azure, które można zaimplementować w celu obsługi dziedziny Przyspieszanie wdrażania. |
 
 ## <a name="next-steps"></a>Następne kroki
 

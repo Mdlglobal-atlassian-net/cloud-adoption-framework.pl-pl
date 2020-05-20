@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e65fc091b5578c2a3fdf8ea0483450526b47f1c5
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 2a89fe9d799e866468df02a9a0f6e7d973ed35dd
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400675"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620462"
 ---
 # <a name="cost-management-discipline-overview"></a>Omówienie dziedziny Zarządzanie kosztami
 
@@ -39,12 +39,12 @@ Sześć poniższych kroków ułatwi zdefiniowanie zasad utrzymania ładu umożli
 
 | | |
 |---|---|
-| <br> ![Ikona szablonu](../../_images/govern/process-template.png) | [Szablon dotyczący dziedziny Zarządzanie kosztami](./template.md): Pobierz szablon umożliwiający dokumentowanie dziedziny Zarządzanie kosztami. |
-| <br> ![Ikona rodzajów ryzyka](../../_images/govern/process-risks.png) | [Rodzaje ryzyka biznesowego](./business-risks.md): Poznaj przyczyny i zagrożenia skojarzone zazwyczaj z dziedziną Zarządzanie kosztami. |
-| <br> ![Ikona metryk](../../_images/govern/process-metrics.png) | [Wskaźniki i metryki](./metrics-tolerance.md): Wskaźniki umożliwiające zrozumienie, czy to właściwy moment, aby zainwestować w dziedzinę Zarządzanie kosztami. |
-| <br> ![Ikona zapewniania zgodności](../../_images/govern/process-enforce.png) | [Procesy zapewniania zgodności zasad](./compliance-processes.md): Sugerowane procesy umożliwiające obsługę zgodności z zasadami w dziedzinie Zarządzanie kosztami. |
-| <br> ![Ikona dojrzałości](../../_images/govern/process-maturity.png) | [Dojrzałość](./discipline-improvement.md): Dostosuj dojrzałość dziedziny Zarządzanie chmurą do etapów wdrażania w chmurze. |
-| <br> ![Ikona łańcucha narzędzi](../../_images/govern/process-toolchain.png) | [Łańcuch narzędzi](./toolchain.md): Usługi platformy Azure, które można zaimplementować w celu obsługi dziedziny Zarządzanie kosztami. |
+| <br> ![Ikona szablonu](../../_images/govern/process-template.png) | <br> [Szablon dotyczący dziedziny Zarządzanie kosztami](./template.md): Pobierz szablon umożliwiający dokumentowanie dziedziny Zarządzanie kosztami. |
+| <br> ![Ikona rodzajów ryzyka](../../_images/govern/process-risks.png) | <br> [Rodzaje ryzyka biznesowego](./business-risks.md): Poznaj przyczyny i zagrożenia skojarzone zazwyczaj z dziedziną Zarządzanie kosztami. |
+| <br> ![Ikona metryk](../../_images/govern/process-metrics.png) | <br> [Wskaźniki i metryki](./metrics-tolerance.md): Wskaźniki umożliwiające zrozumienie, czy to właściwy moment, aby zainwestować w dziedzinę Zarządzanie kosztami. |
+| <br> ![Ikona zapewniania zgodności](../../_images/govern/process-enforce.png) | <br> [Procesy zapewniania zgodności zasad](./compliance-processes.md): Sugerowane procesy umożliwiające obsługę zgodności z zasadami w dziedzinie Zarządzanie kosztami. |
+| <br> ![Ikona dojrzałości](../../_images/govern/process-maturity.png) | <br> [Dojrzałość](./discipline-improvement.md): Dostosuj dojrzałość dziedziny Zarządzanie chmurą do etapów wdrażania w chmurze. |
+| <br> ![Ikona łańcucha narzędzi](../../_images/govern/process-toolchain.png) | <br> [Łańcuch narzędzi](./toolchain.md): Usługi platformy Azure, które można zaimplementować w celu obsługi dziedziny Zarządzanie kosztami. |
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 703a5152ef47d19ec5eb654f9ba4d83786562d12
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3eb722a170f508f749795fbfc91dc2ce58a1edb9
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224395"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621207"
 ---
 # <a name="encryption-decision-guide"></a>Przewodnik po decyzjach związanych z szyfrowaniem
 
@@ -122,7 +122,7 @@ Szyfrowanie danych w użyciu obejmuje zabezpieczanie danych w magazynie nietrwa�
 Aby uzyskać więcej informacji o szyfrowaniu i zarządzaniu kluczami na platformie Azure, zobacz:
 
 - **[Omówienie szyfrowania na platformie Azure](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview):** Szczegółowy opis sposobu, w jaki platforma Azure wykorzystuje szyfrowanie do zabezpieczenia zarówno danych magazynowanych, jak i przesyłanych.
-- **[Usługa Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/key-vault-overview):** Usługa Key Vault to podstawowy system zarządzania kluczami na platformie Azure, służący do przechowywania kluczy kryptograficznych, wpisów tajnych i certyfikatów oraz zarządzania nimi.
+- **[Usługa Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview):** Usługa Key Vault to podstawowy system zarządzania kluczami na platformie Azure, służący do przechowywania kluczy kryptograficznych, wpisów tajnych i certyfikatów oraz zarządzania nimi.
 - **[Najlepsze rozwiązania z zakresu zabezpieczeń i szyfrowania danych platformy Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices).** Omówienie najlepszych rozwiązań z zakresu zabezpieczeń i szyfrowania danych na platformie Azure.
 - **[Poufne przetwarzanie na platformie Azure](https://azure.microsoft.com/solutions/confidential-compute):** Inicjatywa platformy Azure dotycząca poufnego przetwarzania zapewnia narzędzia i technologie do tworzenia zaufanych środowisk wykonywania lub innych mechanizmów szyfrowania do zabezpieczania używanych danych.
 

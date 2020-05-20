@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 15e1d020d00bfd2c1b8c8ddb4b0e60e4e98407fd
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 430058a8646f536243f7e6f04ec64deae6d95aff
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398854"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621245"
 ---
 <!-- cSpell:ignore asabbour sabbour -->
 
@@ -30,8 +30,8 @@ Aby przygotować się na tę fazę cyklu wdrażania chmury, wykonaj następując
 
 | | |
 |---|---|
-| <br> ![Ikona elementu 1](../../_images/icons/1.png) | [Tworzenie i wdrażanie aplikacji](./application-development.md): Badaj wzorce i praktyki związane z tworzeniem aplikacji, konfiguruj potoki DevOps i implementuj najlepsze rozwiązania inżynierii niezawodności lokacji. |
-| <br> ![Ikona elementu 2](../../_images/icons/2.png) | [Projekt i operacje klastra](./cluster-design-operations.md): Identyfikowanie pod kątem konfiguracji klastra i projektu sieci. Skalowalność pod kątem przyszłych potrzeb dzięki automatyzowaniu aprowizacji infrastruktury. Zapewnij wysoką dostępność, planując pod kątem ciągłości działania i odzyskiwania po awarii. |
-| <br> ![Ikona elementu 3](../../_images/icons/3.png) | [Zabezpieczenia klastra i aplikacji](./cluster-application-security.md): Zapoznaj się z podstawowymi informacjami na temat zabezpieczeń na platformie Kubernetes. Zapoznaj się z bezpieczną konfiguracją klastrów i wskazówkami dotyczącymi zabezpieczeń aplikacji. |
+| <br> ![Ikona elementu 1](../../_images/icons/1.png) | <br> [Tworzenie i wdrażanie aplikacji](./application-development.md): Badaj wzorce i praktyki związane z tworzeniem aplikacji, konfiguruj potoki DevOps i implementuj najlepsze rozwiązania inżynierii niezawodności lokacji. |
+| <br> ![Ikona elementu 2](../../_images/icons/2.png) | <br> [Projekt i operacje klastra](./cluster-design-operations.md): Identyfikowanie pod kątem konfiguracji klastra i projektu sieci. Skalowalność pod kątem przyszłych potrzeb dzięki automatyzowaniu aprowizacji infrastruktury. Zapewnij wysoką dostępność, planując pod kątem ciągłości działania i odzyskiwania po awarii. |
+| <br> ![Ikona elementu 3](../../_images/icons/3.png) | <br> [Zabezpieczenia klastra i aplikacji](./cluster-application-security.md): Zapoznaj się z podstawowymi informacjami na temat zabezpieczeń na platformie Kubernetes. Zapoznaj się z bezpieczną konfiguracją klastrów i wskazówkami dotyczącymi zabezpieczeń aplikacji. |
 
 <!-- markdownlint-enable MD033 -->
