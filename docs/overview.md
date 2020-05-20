@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: d93d7cd43304451459c23154e61e88cc5298716f
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 06ac22741c7b61b59ae308444833852f2fcbff08
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400332"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621458"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,12 +33,12 @@ Struktura wdrażania w chmurze umożliwia wdrażanie w chmurze najlepszych rozwi
 
 <!-- markdownlint-disable MD033 -->
 
-| | | | | | | | |
-|--|--|--|--|--|--|--|--|
-| <br> ![Ikona strategii](./_images/icons/strategy.png) | [Strategia](./strategy/index.md): Definiowanie uzasadnienia biznesowego i oczekiwanego zastosowania rezultatów. | <br> ![Ikona planu](./_images/icons/plan.png) | [Zaplanuj](./plan/index.md): Wyrównaj plany wdrażania z możliwością działania do wyników działalności biznesowej. |  |  |  |  |
-| <br> ![Ikona gotowe](./_images/icons/ready.png) | [Gotowe](./ready/index.md): Przygotuj środowisko chmury dla planowanych zmian. | <br> ![Ikona migracji](./_images/icons/adopt.png) | [Migrowanie](./migrate/index.md): Migrowanie i modernizacja istniejących obciążeń. |  |  |  |  |
-| <br> ![Ikona innowacje](./_images/icons/innovate.png) | [Innowacje](./innovate/index.md): tworzenie nowych rozwiązań w chmurze lub hybrydowych. | <br> ![Ikona zarządzania](./_images/icons/govern.png) | [Zarządzanie](./govern/index.md): Zarządzanie środowiskiem i obciążeniami. |  |  |  |  |
-| <br> ![Ikona zarządzania](./_images/icons/manage.png) | [Zarządzaj](./manage/index.md): Operations Management dla rozwiązań w chmurze i hybrydowych. | <br> ![Ikona porządkowania](./_images/icons/organize.png) | [Organizuj](./organize/index.md): Zarządzanie środowiskiem i obciążeniami. |  |  |  |  |
+| | | | | |
+|--|--|--|--|--|
+| <br> ![Ikona strategii](./_images/icons/strategy.png) | <br> [Strategia](./strategy/index.md): &nbsp; Definiowanie &nbsp; &nbsp; uzasadnienia biznesowego &nbsp; i oczekiwanych rezultatów przyjęcia. | <br> ![Ikona planu](./_images/icons/plan.png) | <br> [Zaplanuj](./plan/index.md): &nbsp; Wyrównaj &nbsp; &nbsp; plany wdrażania z możliwością działania &nbsp; do wyników działalności biznesowej. |
+| <br> ![Ikona gotowe](./_images/icons/ready.png)       | <br> [Gotowe](./ready/index.md): Przygotuj środowisko chmury dla planowanych zmian. | <br> ![Ikona migracji](./_images/icons/adopt.png) | <br> [Migrowanie](./migrate/index.md): Migrowanie i modernizacja istniejących obciążeń. |
+| <br> ![Ikona innowacje](./_images/icons/innovate.png) | <br> [Innowacje](./innovate/index.md): tworzenie nowych rozwiązań w chmurze lub hybrydowych. | <br> ![Ikona zarządzania](./_images/icons/govern.png) | <br> [Zarządzanie](./govern/index.md): Zarządzanie środowiskiem i obciążeniami. |
+| <br> ![Ikona zarządzania](./_images/icons/manage.png)     | <br> [Zarządzaj](./manage/index.md): Operations Management dla rozwiązań w chmurze i hybrydowych. | <br> ![Ikona porządkowania](./_images/icons/organize.png) | <br> [Organizuj](./organize/index.md): Zarządzanie środowiskiem i obciążeniami. |
 
 ## <a name="understand-the-lifecycle"></a>Omówienie cyklu życia
 
@@ -52,7 +52,7 @@ Każda z metod przechwyconych powyżej jest częścią szerokiego cyklu życia w
 
 Chmura całkowicie zmienia sposoby, w jakie firmy pozyskują i zabezpieczają zasoby technologiczne oraz korzystają z nich. Tradycyjnie przedsiębiorstwa były właścicielami wszystkich aspektów technologii, od infrastruktury po oprogramowanie, i brały za nie odpowiedzialność. Przejście do chmury umożliwia przedsiębiorstwom aprowizowanie i używanie zasobów tylko wtedy, kiedy są potrzebne. Podczas gdy chmura zapewnia niesamowitą elastyczność w zakresie stosowanych rozwiązań, przedsiębiorstwa potrzebują sprawdzonej i spójnej metodologii wdrażania technologii chmurowych. Przewodnik Microsoft Cloud Adoption Framework dla platformy Azure zaspokaja te potrzeby, ułatwiając podejmowanie decyzji w trakcie całego procesu wdrażania chmury.
 
-Jednak wdrożenie chmury to tylko środek do celu. Pomyślne wdrożenie chmury zaczyna się dużo wcześniej przed wyborem dostawcy chmury. Zaczyna się ono wtedy, gdy osoby podejmujące decyzje biznesowe i w zakresie IT zdają sobie sprawę, że chmura może przyspieszyć osiągnięcie określonego celu transformacji firmy. Przewodnik Cloud Adoption Framework pomaga dostosować strategie dotyczące działalności biznesowej, kultury i zmian technicznych tak, aby osiągnąć pożądane wyniki biznesowe.
+Jednak wdrażanie w chmurze jest tylko środkiem do końca. Pomyślne wdrożenie chmury zaczyna się dużo wcześniej przed wyborem dostawcy chmury. Zaczyna się ono wtedy, gdy osoby podejmujące decyzje biznesowe i w zakresie IT zdają sobie sprawę, że chmura może przyspieszyć osiągnięcie określonego celu transformacji firmy. Przewodnik Cloud Adoption Framework pomaga dostosować strategie dotyczące działalności biznesowej, kultury i zmian technicznych tak, aby osiągnąć pożądane wyniki biznesowe.
 
 Platforma wdrażania chmury oferuje wskazówki techniczne dotyczące platformy Microsoft Azure. Ze względu na to, że Klienci korporacyjni nadal mogą być w trakcie wybierania dostawcy w chmurze lub mogą mieć zamierzoną strategię wielochmurową, struktura oferuje niezależny od wskazówki dotyczące podejmowania decyzji strategicznych, jeśli jest to możliwe.
 

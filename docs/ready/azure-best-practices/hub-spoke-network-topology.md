@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 7ae47eb7fbc7008ff4c7cbed20768386149bf7e1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7e5512cba033adca5c3e88be265d45b5f8bc8f3c
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215572"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621422"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -22,9 +22,9 @@ ms.locfileid: "83215572"
 
 _Piasta i szprychy_ to model sieci umożliwiający bardziej efektywne zarządzanie typowymi wymaganiami dotyczącymi komunikacji i zabezpieczeń. Pomaga również uniknąć ograniczeń subskrypcji platformy Azure. Ten model dotyczy następujących kwestii:
 
-- **Oszczędność kosztów i efektywność zarządzania**. Scentralizowanie w jednej lokalizacji usług, które mogą być współużytkowane przez wiele obciążeń, takich jak wirtualne urządzenia sieciowe (NVA) i serwery DNS, umożliwia działowi IT zminimalizowanie nadmiarowych zasobów i zadań związanych z zarządzaniem.
-- **Pokonywanie ograniczeń subskrypcji**. Duże obciążenia oparte na chmurze mogą wymagać użycia większej ilości zasobów, niż jest to dozwolone w pojedynczej subskrypcji platformy Azure. Komunikacja równorzędna sieci wirtualnych obciążenia z różnych subskrypcji do centrum może pokonać te ograniczenia. Aby uzyskać więcej informacji, zobacz [limity subskrypcji platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
-- **Separacja problemów**. Poszczególne obciążenia można wdrożyć między centralnymi zespołami IT i zespołami obciążeń.
+- **Oszczędność kosztów i efektywność zarządzania.** Scentralizowanie w jednej lokalizacji usług, które mogą być współużytkowane przez wiele obciążeń, takich jak wirtualne urządzenia sieciowe (NVA) i serwery DNS, umożliwia działowi IT zminimalizowanie nadmiarowych zasobów i zadań związanych z zarządzaniem.
+- **Limity dotyczące nadchodzących subskrypcji.** Duże obciążenia oparte na chmurze mogą wymagać użycia większej ilości zasobów, niż jest to dozwolone w pojedynczej subskrypcji platformy Azure. Komunikacja równorzędna sieci wirtualnych obciążenia z różnych subskrypcji do centrum może pokonać te ograniczenia. Aby uzyskać więcej informacji, zobacz [limity subskrypcji platformy Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
+- **Rozdzielenie obaw.** Poszczególne obciążenia można wdrożyć między centralnymi zespołami IT i zespołami obciążeń.
 
 Dodatkowa struktura i możliwości oferowane przez ten model mogą nie przynieść korzyści mniejszym majątkom w chmurze. Jednak większe działania związane z wdrażaniem w chmurze powinny uwzględniać implementację architektury sieci typu Hub i szprychy, jeśli mają one jakiekolwiek problemy wymienione wcześniej.
 

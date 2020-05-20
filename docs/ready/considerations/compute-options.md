@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b05218d1dfc353e0d9cbed9006a980b845f67915
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 42ace02c82ffbb034f3405a6c699d7b0d29fbf1e
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221862"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621508"
 ---
 # <a name="review-your-compute-options"></a>Przejrzyj opcje obliczeń
 
@@ -64,7 +64,7 @@ W poniższej tabeli przedstawiono kilka typowych scenariuszy użycia oraz usług
 
 Platforma Azure umożliwia dostarczanie usług na dużą skalę, w której należy skontaktować się z klientami i partnerami _wszędzie tam, gdzie się znajdują_. Kluczowym czynnikiem związanym z planowaniem wdrożenia w chmurze jest określenie, który region platformy Azure będzie obsługiwał zasoby obciążenia.
 
-Niektóre opcje środowiska obliczeniowego, takie jak Azure App Service, są ogólnie dostępne w większości regionów, w których dostępna jest platforma Azure. Jednak niektóre usługi obliczeniowe są obsługiwane tylko w wybranych regionach. Niektóre typy maszyn wirtualnych i skojarzone z nimi typy magazynów mają ograniczoną dostępność regionalną. Przed podjęciem decyzji o regionach, w których zostaną wdrożone zasoby obliczeniowe, zalecamy zapoznanie się ze [stroną Regions](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines) w celu sprawdzenia najnowszego stanu dostępności regionalnej.
+Niektóre opcje środowiska obliczeniowego, takie jak Azure App Service, są ogólnie dostępne w większości regionów, w których dostępna jest platforma Azure. Niektóre usługi obliczeniowe są obsługiwane tylko w określonych regionach. Niektóre typy maszyn wirtualnych i skojarzone z nimi typy magazynów mają ograniczoną dostępność regionalną. Przed podjęciem decyzji o regionach, w których zostaną wdrożone zasoby obliczeniowe, zalecamy zapoznanie się ze [stroną Regions](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines) w celu sprawdzenia najnowszego stanu dostępności regionalnej.
 
 Aby dowiedzieć się więcej o globalnej infrastrukturze platformy Azure, zobacz [stronę regiony platformy Azure](https://azure.microsoft.com/global-infrastructure/regions). Możesz również wyświetlić [dostępne produkty według regionów](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all) , aby uzyskać szczegółowe informacje o ogólnych usługach dostępnych w każdym regionie świadczenia usługi Azure.
 

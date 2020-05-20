@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: d3d0afed921d11b16b1d33de311df1144aea6d4a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 93aec136df947f9df94d188dffce79f037cf8fed
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221947"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621559"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -172,7 +172,7 @@ Aby uzyskać więcej zaleceń i przykładów dotyczących tagowania, zobacz [Zal
 
 Aby zastosować tag do grupy zasobów:
 
-1. Przejdź do pozycji [Grupy zasobów](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
+1. Przejdź do pozycji [Grupy zasobów](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups).
 1. Wybierz grupę zasobów.
 1. Wybierz pozycję **Przypisz tagi**.
 1. Wprowadź nową nazwę i wartość lub użyj listy rozwijanej, aby wybrać istniejącą nazwę i wartość.

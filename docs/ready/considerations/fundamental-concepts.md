@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 869b3b9e0a283ce28c6fba7807d0282dcb53d9cf
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 04cd90b03565eb2aa7895f52b7d2ece296904a1f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216337"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620387"
 ---
 # <a name="azure-fundamental-concepts"></a>Podstawowe pojęcia dotyczące platformy Azure
 
@@ -74,17 +74,17 @@ Aby zapoznać się ze szczegółowym opisem ról zdefiniowanych na platformie Az
 
 Każdy zasób platformy Azure jest skojarzony logicznie tylko z jedną subskrypcją. Podczas tworzenia zasobu należy wybrać subskrypcję platformy Azure, w której ma zostać wdrożony ten zasób. Zasób można później przenieść do innej subskrypcji.
 
-Subskrypcja nie jest powiązana z określonym regionem platformy Azure. Jednak każdy zasób platformy Azure jest wdrażany tylko w jednym regionie. Można mieć w wielu regionach zasoby, które są skojarzone z tą samą subskrypcją.
+Chociaż subskrypcja nie jest powiązana z określonym regionem świadczenia usługi Azure, każdy zasób platformy Azure jest wdrażany tylko w jednym regionie. Można mieć w wielu regionach zasoby, które są skojarzone z tą samą subskrypcją.
 
 > [!NOTE]
-> Większość zasobów platformy Azure jest wdrażanych w określonym regionie. Jednak niektóre typy zasobów są uznawane za zasoby globalne, na przykład zasady określane za pomocą usług Azure Policy.
+> Większość zasobów platformy Azure jest wdrażanych w określonym regionie. Niektóre typy zasobów są uznawane za zasoby globalne, takie jak zasady ustawiane za pomocą usług Azure Policy.
 
 ## <a name="related-resources"></a>Powiązane zasoby
 
 Poniższe zasoby zawierają szczegółowe informacje na temat pojęć omówionych w tym artykule:
 
 - [Jak działa platforma Azure?](../../get-started/what-is-azure.md)
-- [Zarządzanie dostępem do zasobów na platformie Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Resource access management in Azure](../../govern/resource-consistency/resource-access-management.md) (Zarządzanie dostępem do zasobów na platformie Azure)
 - [Przegląd Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
 - [Kontrola dostępu oparta na rolach (RBAC) dla zasobów platformy Azure](https://docs.microsoft.com/azure/role-based-access-control/overview)
 - [Co to jest usługa Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)

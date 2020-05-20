@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b4edc0f0e485c040045bc8c1b7bce6c91f3d13f9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 13dc523902e5db36abf559a25c6edba44f912613
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221913"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621536"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Programowanie oparte na testach (TDD) dla stref wypełniania na platformie Azure
 
@@ -26,7 +26,7 @@ Zgodnie z opisem w poprzednim artykule na [potrzeby projektowania na podstawie t
 
 ## <a name="microsoft-provided-test-and-deployment-templates-to-accelerate-tdd"></a>Szablony testów i wdrożeń udostępniane przez firmę Microsoft w celu przyspieszenia TDD
 
-Poniższe przykłady są udostępniane przez firmę Microsoft do celów zarządzania. Jednak każdy z nich może być używany jako test lub seria testów w cyklu programistycznym opartym na testach dla stref wypełniania. Więcej informacji na temat każdego narzędzia w poniższej sekcji.
+Poniższe przykłady są udostępniane przez firmę Microsoft do celów zarządzania. Ale każdy z nich może być używany jako test lub seria testów w cyklu projektowania opartym na testach dla stref wypełniania. Więcej informacji na temat każdego narzędzia w poniższej sekcji.
 
 - Plany platformy Azure udostępniają różne [przykłady planów](https://docs.microsoft.com/azure/governance/blueprints/samples), w tym zasady testowania i szablonów dla wdrożenia. Te przykłady strategii mogą przyspieszyć rozwój, wdrażanie i testowanie działań w cyklach TDD.
 - Azure Policy obejmuje również [wbudowane inicjatywy zasad](https://docs.microsoft.com/azure/governance/policy/samples/built-in-initiatives), które mogą służyć do testowania i wymuszania pełnej definicji gotowej dla strefy docelowej. Azure Policy obejmuje [wbudowane definicje zasad](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies) , które mogą spełniać poszczególne kryteria akceptacji w ramach definicji gotowe.
@@ -41,7 +41,7 @@ Każdy z powyższych przykładów może służyć jako narzędzia przyspieszają
 
 [Plany platformy Azure](https://docs.microsoft.com/azure/governance/blueprints): Azure Blueprint zasad grupy i innych narzędzi wdrażania do powtarzalnego pakietu, który można przypisać do wielu stref wyładunkowej. Plany są przydatne, gdy wiele wysiłków podejmuje wspólne definicje gotowe, które warto zaktualizować w czasie. Może także ułatwić wdrożenie w trakcie kolejnych działań w celu rozwinięcia i refaktoryzacji stref wyładunkowych.
 
-[Wykres zasobów platformy Azure](https://docs.microsoft.com/azure/governance/resource-graph): Wykres zasobów zawiera język zapytań służący do tworzenia testów opartych na danych, opartych na informacjach dotyczących zasobów wdrożonych w ramach strefy wyładunkowej. W dalszej części planu wdrażania to narzędzie może również definiować złożone testy na podstawie interakcji między zasobami obciążeń a podstawowym środowiskiem chmury.
+[Wykres zasobów platformy Azure](https://docs.microsoft.com/azure/governance/resource-graph): Wykres zasobów zawiera język zapytań służący do tworzenia testów opartych na danych, opartych na informacjach dotyczących zasobów wdrożonych w ramach strefy ładunkowej. W dalszej części planu wdrażania to narzędzie może również definiować złożone testy na podstawie interakcji między zasobami obciążeń a podstawowym środowiskiem chmury.
 
 [Szablony Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview): te szablony stanowią podstawowy kod źródłowy dla każdego środowiska wdrożonego na platformie Azure. W przypadku korzystania z narzędzi innych firm, takich jak Terraform, do opracowania kodu źródłowego, który wdraża strefę wyładunkowe, narzędzia te generują własne szablony. Te szablony są następnie przesyłane do Azure Resource Manager.
 
@@ -52,4 +52,4 @@ Każdy z powyższych przykładów może służyć jako narzędzia przyspieszają
 Aby rozpocząć refaktoryzację pierwszej strefy docelowej, Oceń [podstawowe zagadnienia dotyczące strefy docelowej](./basic-considerations.md).
 
 > [!div class="nextstepaction"]
-> [Zagadnienia dotyczące strefy docelowej w warstwie Podstawowa](./basic-considerations.md)
+> [Podstawowe zagadnienia dotyczące strefy docelowej](./basic-considerations.md)

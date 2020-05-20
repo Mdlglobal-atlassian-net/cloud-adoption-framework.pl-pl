@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 055279bccb9c2897b3cc67adf549f5f57c5bf5fc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0eb8597e32f14685e1f1fc69a51673fb1d1d360f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223001"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621808"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>Programowanie sterowane testami dla stref docelowych
 
@@ -59,11 +59,11 @@ W przypadku wstępnego wysiłku migracji definicja gotowe może być zbyt prosta
 - W trakcie podejmowania wysiłków zespół ds. wdrażania w chmurze chce, aby w celu zmiany konfiguracji usług był tymczasowy dostęp do środowiska.
 - W przypadku tylko świadomości: przed wydaniem produkcyjnym te obciążenia będą wymagały integracji z firmowym dostawcą tożsamości w celu zarządzania trwającą tożsamością i dostępem do celów związanych z zarządzaniem operacjami. Czas, w którym powinien zostać odwołany dostęp zespołu wdrożenia chmury.
 
-Ostatni z powyższych punktów nie jest funkcją ani kryteriami akceptacji. Jednak jest wskaźnikiem, że dodatkowe rozszerzenia będą wymagane i powinny być zbadane z innymi zespołami wczesnie.
+Ostatni z powyższych punktów nie jest kryterium funkcji ani akceptacji. Ale jest wskaźnikiem, że dodatkowe rozszerzenia będą wymagane i powinny być zbadane z innymi zespołami wczesnie.
 
 ## <a name="additional-examples-of-a-definition-of-done"></a>Dodatkowe przykłady definicji gotowe
 
-Metodologia ładu w ramach struktury wdrażania w chmurze zawiera opisową drogę w ramach naturalnego okresu ważności zespołu nadzoru. Osadzony w tej podróży to kilka przykładów "definicji gotowe" i "kryteria akceptacji" w postaci instrukcji zasad.
+Metodologia zarządzania w ramach platformy wdrażania w chmurze zawiera opisową drogę na podstawie naturalnego okresu zapadalności zespołu nadzoru. Osadzony w tej podróży to kilka przykładów "definicji gotowe" i "kryteria akceptacji" w postaci instrukcji zasad.
 
 - [Początkowe instrukcje zasad](../../govern/guides/complex/initial-corporate-policy.md#policy-statements): Przykładowe zasady firmowe określające i wstępne definicje wykonywane na podstawie wymagań dotyczących wdrażania na wczesnym etapie.
 - [Rozszerzanie tożsamości](../../govern/guides/complex/identity-baseline-improvement.md#incremental-improvement-of-the-policy-statements): Przykładowe zasady firmowe, w tym ("Definicja gotowe") spełniające wymagania rozszerzające Zarządzanie tożsamościami dla strefy docelowej.

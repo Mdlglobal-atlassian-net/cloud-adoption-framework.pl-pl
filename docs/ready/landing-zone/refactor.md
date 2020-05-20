@@ -1,5 +1,5 @@
 ---
-title: Strefy wyładunkowe refaktoryzacji
+title: Refaktoryzacja stref docelowych
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Proces refaktoryzacji stref wyładunkowej
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bc5263b1f9dfcbdb0d5c14e79e5de976fdd59818
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8e1576afb56afd79a1028658609dc62c25775f75
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221811"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621587"
 ---
-# <a name="refactor-landing-zones"></a>Strefy wyładunkowe refaktoryzacji
+# <a name="refactor-landing-zones"></a>Refaktoryzacja stref docelowych
 
 Strefa docelowa to środowisko służące do hostowania obciążeń, a przy tym wstępne **udostępnianie kodu**. Ponieważ infrastruktura strefy wyładunkowej jest zdefiniowana w kodzie, można ją ponownie obsłużyć, podobnie jak w przypadku innych baz kodu. Refaktoryzacja to proces modyfikacji lub restrukturyzacji kodu źródłowego w celu zoptymalizowania danych wyjściowych tego kodu bez zmiany jego celu ani funkcji podstawowych.
 
@@ -27,7 +27,7 @@ Gotowa metodologia używa koncepcji refaktoryzacji w celu przyspieszenia migracj
 
 Gdy klienci przyjmą chmurę, zagadnienia dotyczące strefy wyładunkowej są pojedynczym najbardziej typowym zamiarem do wdrożenia i wyników firmy związanych z chmurą. Klienci mogą przerastać do jednego z następujących dwóch zablokowanych. Często różne zespoły będą przepływać do jednego z tych dwóch zabloków, co sprawia, że zakleszczenie w kulturze utrudniają wdrażanie.
 
-Oba główne bloki są umieszczone w jednym przekonaniu, środowisko chmury i istniejące centra danych powinny mieć wartość z przedziału lub blisko funkcji w zakresie operacji, zarządzania i zabezpieczeń. Jest to bardzo długoterminowy cel. Jednak ból pochodzi z równowagi delikatnej między chronometrażem do osiągnięcia tego celu i szybkością wymaganą do dostarczenia wyników firmy.
+Oba główne bloki są umieszczone w jednym przekonaniu, środowisko chmury i istniejące centra danych powinny mieć wartość z przedziału lub blisko funkcji w zakresie operacji, zarządzania i zabezpieczeń. Jest to bardzo długoterminowy cel. Jednak ból postanowił się od kompromisu między chronometrażem a osiągnięciem tego celu i szybkością wymaganą do dostarczenia wyników firmy.
 
 ### <a name="blocker-acting-too-soon"></a>Blokowanie: działa zbyt wcześnie
 

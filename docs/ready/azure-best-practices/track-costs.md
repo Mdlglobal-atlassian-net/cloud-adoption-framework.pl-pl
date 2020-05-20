@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: aff6ee1eb16f1e2ab671c20bea61093d68b99fe4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 83ce5d4a2c4cb44ebd66f1f784002660bad6c86f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223307"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621665"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Śledzenie kosztów w różnych jednostkach biznesowych, środowiskach i projektach
 
@@ -56,10 +56,10 @@ Na diagramie przedstawiono najlepsze rozwiązania oprócz następujących opcji:
 - Gdy firma integruje zespół Cloud Center of Excellence (CCoE), subskrypcje usług udostępnionych na poszczególnych węzłach geografii mogą zmniejszyć liczbę zduplikowanych zasobów.
 - Nakłady pracy związane z wdrażaniem na mniejszą skalę mogą obejmować mniejszą hierarchię zarządzania. Można często zobaczyć jeden węzeł główny dla firmowego działu informatycznego z jednym poziomem węzłów podrzędnych w hierarchii dla różnych środowisk. Nie stanowi to naruszenia najlepszych rozwiązań dla dobrze zarządzanego środowiska. Jednak utrudnia to zapewnienie modelu dostępu z najmniejszymi prawami do kontroli kosztów i innych ważnych funkcji.
 
-W pozostałej części tego artykułu przyjęto, że użyto najlepszego rozwiązania na diagramie powyżej. Jednak artykuły poniżej mogą pomóc w zastosowaniu tego rozwiązania do organizacji zasobów, która najlepiej pasuje do Twojej firmy:
+W pozostałej części tego artykułu przyjęto, że użyto najlepszego rozwiązania na diagramie powyżej. Jednak poniższe artykuły mogą pomóc w zastosowaniu podejścia do organizacji zasobów, która najlepiej pasuje do Twojej firmy:
 
 - [Skalowanie środowiska platformy Azure przy użyciu wielu subskrypcji](../azure-best-practices/scale-subscriptions.md)
-- [Organizowanie subskrypcji platformy Azure i zarządzanie nimi](../azure-best-practices/organize-subscriptions.md)
+- [Organizuj swoje subskrypcje platformy Azure i zarządzaj nimi](../azure-best-practices/organize-subscriptions.md)
 - [Wdrażanie programu ładu MVP w celu zarządzania dobrze zarządzanymi standardami środowiskowymi](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Zapewnienie odpowiedniego poziomu dostępu do kosztów
@@ -77,13 +77,13 @@ Najlepszym rozwiązaniem jest zaproponowanie modelu z najmniejszymi uprawnieniam
 
 Usługa Azure Cost Management obsługuje następujące wbudowane role dla poszczególnych zakresów:
 
-- [Właściciel](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) — umożliwia wyświetlanie kosztów i zarządzanie wszystko, w tym konfigurację kosztu.
-- [Współautor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) — umożliwia wyświetlanie kosztów i zarządzanie wszystkimi, w tym konfiguracjami kosztów, ale z wyłączeniem kontroli dostępu.
-- [Czytelnik](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader) — może wyświetlać wszystko, w tym dane dotyczące kosztów i konfigurację, ale nie może wprowadzać żadnych zmian.
-- [Współautor Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) — umożliwia wyświetlanie kosztów i zarządzanie konfiguracją kosztów.
-- [Cost Management Reader](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader) — można wyświetlić dane i konfigurację kosztów.
+- [Właściciel](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner): umożliwia wyświetlanie kosztów i zarządzanie wszystko, w tym konfigurację kosztu.
+- [Współautor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor): umożliwia wyświetlanie kosztów i zarządzanie wszystkimi, w tym konfiguracjami kosztów, ale z wyłączeniem kontroli dostępu.
+- [Czytelnik](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader): może wyświetlać wszystko, w tym dane dotyczące kosztów i konfigurację, ale nie może wprowadzać zmian.
+- [Współautor Cost Management](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor): umożliwia wyświetlanie kosztów i zarządzanie konfiguracją kosztów.
+- [Cost Management Reader](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader): mogą wyświetlać dane i konfigurację kosztów.
 
-Najlepszym rozwiązaniem jest przypisanie członkom wszystkich zespołów roli współautora zarządzania kosztami. Ta rola zapewnia dostęp niezbędny do tworzenia budżetów i eksportów oraz zarządzania nimi w celu skuteczniejszego monitorowania i tworzenia raportów kosztów. Jednak członkowie [zespołu ds. strategii chmury](../../organize/cloud-strategy.md) powinni mieć tylko rolę czytelnika zarządzania kosztami. Wynika to z faktu, że nie zajmują się oni ustalaniem budżetów w narzędziu usługi Azure Cost Management.
+Najlepszym rozwiązaniem jest przypisanie członkom wszystkich zespołów roli współautora zarządzania kosztami. Ta rola zapewnia dostęp niezbędny do tworzenia budżetów i eksportów oraz zarządzania nimi w celu skuteczniejszego monitorowania i tworzenia raportów kosztów. Jednak członkowie [zespołu strategii chmury](../../organize/cloud-strategy.md) powinni mieć ustawioną wartość Cost Management tylko czytelnik. Wynika to z faktu, że nie zajmują się oni ustalaniem budżetów w narzędziu usługi Azure Cost Management.
 
 ### <a name="scope"></a>Zakres
 
@@ -91,8 +91,8 @@ Poniższe ustawienia zakresu i ról zapewnią niezbędną widoczność w zakresi
 
 - [Zespół ds. wdrażania chmury](../../organize/cloud-adoption.md). Odpowiedzialność za bieżące zmiany w optymalizacji wymaga uprawnień dostępu współautora zarządzania kosztami na poziomie grupy zasobów.
 
-  - **Środowisko pracy**. Zespół ds. wdrażania chmury powinien już mieć przynajmniej dostęp [współautora](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) do wszystkich grup zasobów, których to dotyczy, lub przynajmniej grup związanych z działaniami tworzenia/testowania lub bieżącego wdrażania. Nie jest wymagane żadne dodatkowe ustawienie zakresu.
-  - **Środowiska produkcyjne**. Jeśli podział odpowiedzialności zostanie dobrze zaplanowany, zespół ds. wdrażania chmury prawdopodobnie nie będzie miał już dostępu do grup zasobów związanych ze swoimi projektami. Grupy zasobów, które obsługują wystąpienia produkcyjne swoich obciążeń, będą potrzebować dodatkowego zakresu, aby udzielić temu zespołowi dostępu do wpływu, jaki mają te decyzje na koszty produkcji. Ustawienie zakresu [współautora zarządzania kosztami](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) dla produkcyjnych grup zasobów dla tego zespołu umożliwi zespołowi monitorowanie kosztów i ustalanie budżetów na podstawie użycia i bieżącej inwestycji w obsługiwane obciążenia.
+  - **Środowisko pracy.** Zespół ds. wdrażania chmury powinien już mieć przynajmniej dostęp [współautora](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) do wszystkich grup zasobów, których to dotyczy, lub przynajmniej grup związanych z działaniami tworzenia/testowania lub bieżącego wdrażania. Nie jest wymagane żadne dodatkowe ustawienie zakresu.
+  - **Środowiska produkcyjne.** Jeśli podział odpowiedzialności zostanie dobrze zaplanowany, zespół ds. wdrażania chmury prawdopodobnie nie będzie miał już dostępu do grup zasobów związanych ze swoimi projektami. Grupy zasobów, które obsługują wystąpienia produkcyjne swoich obciążeń, będą potrzebować dodatkowego zakresu, aby udzielić temu zespołowi dostępu do wpływu, jaki mają te decyzje na koszty produkcji. Ustawienie zakresu [współautora zarządzania kosztami](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) dla produkcyjnych grup zasobów dla tego zespołu umożliwi zespołowi monitorowanie kosztów i ustalanie budżetów na podstawie użycia i bieżącej inwestycji w obsługiwane obciążenia.
 
 - [Zespół ds. strategii chmurowej](../../organize/cloud-strategy.md). Obowiązek śledzenia kosztów w wielu projektach i jednostkach biznesowych wymaga, by czytelnik zarządzania kosztami miał na poziomie głównym dostęp do hierarchii grupy zarządzania.
 
@@ -106,10 +106,10 @@ Poniższe ustawienia zakresu i ról zapewnią niezbędną widoczność w zakresi
 
 - [Cloud Center doskonałości](../../organize/cloud-center-of-excellence.md). Odpowiedzialność za zarządzanie kosztami związanymi z udostępnionymi usługami wymaga, aby współautor zarządzania kosztami miał dostęp na poziomie subskrypcji. Ponadto zespół ten może wymagać, by współautor zarządzania kosztami miał dostęp do grup zasobów lub subskrypcji zawierających zasoby wdrożone przy użyciu automatyzacji CCoE, aby zrozumieć, jak ta automatyzacja wpływa na koszty.
 
-  - **Usługi udostępnione**. W przypadku, gdy jest zaangażowany centrum usług w chmurze, najlepszym rozwiązaniem jest zasugerowanie, że zasoby zarządzane przez CCoE są obsługiwane przez scentralizowaną subskrypcję usługi udostępnionej w ramach modelu gwiazdy i satelity. W tym scenariuszu zespół CCoE ma prawdopodobnie dostęp do tej subskrypcji w roli współautora lub właściciela, co sprawia, że dodatkowe przypisanie do zakresu [współautora zarządzania kosztami](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) jest zbędne.
-  - **Automatyzacja i sterowanie przez zespół CCoE**. Zespół CCoE często zapewnia sterowanie i skrypty wdrażania automatycznego zespołom ds. wdrażania chmury. Zespół CCoE ma obowiązek wiedzieć, jaki wpływ mają te akceleratory na koszty. Aby uzyskać taką widoczność, zespół potrzebuje dostępu w roli [współautora zarządzania kosztami](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) do grup zasobów lub subskrypcji, na których działają te akceleratory.
+  - **Usługi udostępnione.** W przypadku, gdy jest zaangażowany centrum usług w chmurze, najlepszym rozwiązaniem jest zasugerowanie, że zasoby zarządzane przez CCoE są obsługiwane przez scentralizowaną subskrypcję usługi udostępnionej w ramach modelu gwiazdy i satelity. W tym scenariuszu zespół CCoE ma prawdopodobnie dostęp do tej subskrypcji w roli współautora lub właściciela, co sprawia, że dodatkowe przypisanie do zakresu [współautora zarządzania kosztami](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) jest zbędne.
+  - **CCoE Automation/Controls.** Zespół CCoE często zapewnia sterowanie i skrypty wdrażania automatycznego zespołom ds. wdrażania chmury. Zespół CCoE ma obowiązek wiedzieć, jaki wpływ mają te akceleratory na koszty. Aby uzyskać taką widoczność, zespół potrzebuje dostępu w roli [współautora zarządzania kosztami](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) do grup zasobów lub subskrypcji, na których działają te akceleratory.
 
-- **Zespół ds. operacji w chmurze**. Odpowiedzialność za zarządzanie bieżącymi kosztami środowisk produkcyjnych wymaga dostępu w roli współautora zarządzania kosztami do wszystkich subskrypcji produkcyjnych.
+- **Zespół ds. operacji w chmurze.** Odpowiedzialność za zarządzanie bieżącymi kosztami środowisk produkcyjnych wymaga dostępu w roli współautora zarządzania kosztami do wszystkich subskrypcji produkcyjnych.
 
   - Ogólne zalecenie umieszcza zasoby produkcyjne i nieprodukcyjne w osobnych subskrypcjach, które podlegają węzłom hierarchii grupy zarządzania skojarzonym ze środowiskami produkcyjnymi. W dobrze zarządzanym środowisku członkowie zespołu operacyjnego prawdopodobnie mają już dostęp do subskrypcji produkcyjnych w roli właściciela lub współautora, co sprawia, że rola [współautora zarządzania kosztami](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) staje się zbędna.
 
@@ -128,9 +128,11 @@ Aby rozpocząć korzystanie z Azure Cost Management, zobacz [jak zoptymalizować
 - [Optymalizowanie kosztów na podstawie zaleceń](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [Używanie alertów kosztów do monitorowania użycia i wydatków](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
+<--docsTest: "AWS Cost and Usage"-->
+
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Użycie usługi Azure Cost Management do zarządzania kosztami AWS
 
-- [Integracja raportów o kosztach i użyciu AWS](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
+- [Konfigurowanie integracji raportów o kosztach i użyciu AWS](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
 - [Zarządzanie kosztami AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>Ustanawianie dostępu, ról i zakresu

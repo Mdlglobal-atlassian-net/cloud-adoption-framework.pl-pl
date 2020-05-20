@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: cd222e7a4e7c9c03344542d0dc61a8080f611ff2
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 97da5f902fb195a4390b33ef5b8eed2f12ac4a94
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400515"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621193"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Wprowadzenie: przyspiesz innowacje nowych produktów i usług w chmurze
 
@@ -155,7 +155,7 @@ Zdefiniuj plan długoterminowych obowiązków operacyjnych dotyczących planowan
 
 - [Rozwiń linię bazową zarządzania](../manage/best-practices.md): Ta sekcja struktury wdrażania w chmurze prowadzi użytkownika przez różne przejścia do zarządzania operacyjnego w chmurze.
 - [Korzystaj z zaawansowanych operacji](../manage/design-principles.md): odkryj sposoby wykraczania poza linię bazową zarządzania.
-- Jeśli wymagane są operacje zaawansowane do obsługi Twoich potrzeb związanych z operacjami, należy oszacować [zobowiązania biznesowe](https://docs.microsoft.com/manage/considerations/business-alignment) , aby określić obowiązki operacyjne dla obu zespołów.
+- Jeśli wymagane są operacje zaawansowane do obsługi Twoich potrzeb związanych z operacjami, należy oszacować [zobowiązania biznesowe](../manage/considerations/business-alignment.md) , aby określić obowiązki operacyjne dla obu zespołów.
 
 <!-- markdownlint-disable MD033 -->
 <br>

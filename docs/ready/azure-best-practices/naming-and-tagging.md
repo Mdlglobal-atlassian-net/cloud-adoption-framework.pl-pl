@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 07c41a1de28f739054a35c36bb7e2e9c123f101d
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: d3a0e4c640588dda3e97d7ecc24039869d87dd94
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400950"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621673"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -236,9 +236,9 @@ W poniższej sekcji przedstawiono przykłady nazw wspólnych typów zasobów pla
 
 | Typ elementu zawartości                      | Zakres                              | Format                                                      | Przykłady                                                                                                                |
 |---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Subskrypcja                    | Koncie <br/>Enterprise Agreement | \<Jednostka biznesowa\>-\<Typ subskrypcji\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> corp-shared-001  <li> fin-client-001 |
+| Subskrypcja                    | Koncie <br> Enterprise Agreement | \<Jednostka biznesowa\>-\<Typ subskrypcji\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> corp-shared-001 <li> fin-client-001 |
 | Grupa zasobów                  | Subskrypcja                       | RG — \< \> - \< Typ subskrypcji nazwy aplikacji lub usługi\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001  <li> rg-acctlookupsvc-share-001  <li> rg-ad-dir-services-shared-001 |
-| Wystąpienie usługi API Management | Globalny                             | APIM — \< Nazwa aplikacji lub usługi\>                                | APIM-Navigator-prod                                                                                                     |
+| Wystąpienie usługi API Management | Globalnie                             | APIM — \< Nazwa aplikacji lub usługi\>                                | APIM-Navigator-prod                                                                                                     |
 
 ### <a name="example-names-networking"></a>Przykładowe nazwy: sieć
 
@@ -255,46 +255,46 @@ W poniższej sekcji przedstawiono przykłady nazw wspólnych typów zasobów pla
 | Połączenie lokacja-lokacja      | Grupa zasobów  | cn-\<nazwa bramy lokalnej\>-to-\<nazwa bramy wirtualnej\>                | <li> CN-LGW-Shared-eastus2-001-to-vgw-Shared-eastus2-001 <li> CN-LGW-Shared-eastus2-001-to-Shared-zachodnie-001 |
 | Połączenie VPN               | Grupa zasobów  | cn-\<subskrypcja1\>\<region1\>-to-\<subskrypcja2\>\<region2\>-     | <li> cn-shared-eastus2-to-shared-westus <li> cn-prod-eastus2-to-prod-westus |
 | Tabela tras                  | Grupa zasobów  | Trasa- \< Nazwa tabeli tras\>                                           | <li> Route — Nawigator <li> Route — SharePoint |
-| Etykieta nazwy DNS                    | Globalny          | \<Rekord maszyny wirtualnej\>.[\<region\>.cloudapp.azure.com]                   | <li> dc1.westus.cloudapp.azure.com <li> web1.eastus2.cloudapp.azure.com |
+| Etykieta nazwy DNS                    | Globalnie          | \<Rekord maszyny wirtualnej\>.[\<region\>.cloudapp.azure.com]                   | <li> dc1.westus.cloudapp.azure.com <li> web1.eastus2.cloudapp.azure.com |
 
 ### <a name="example-names-compute-and-web"></a>Przykładowe nazwy: obliczenia i sieci Web
 
 | Typ elementu zawartości                  | Zakres          | Format                                                              | Przykłady                                                                                                                          |
 |-----------------------------|----------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Maszyna wirtualna             | Grupa zasobów | \<Nazwa zasad maszyny wirtualnej lub nazwa aplikacji\>\<\#\#\#\>                              | <li> vmnavigator001 <li> vmsharepoint001 <li> vmsqlnode001 <li> vmhadoop001 |
-| Konto magazynu maszyn wirtualnych          | Globalny         | \<Nazwa aplikacji typu wydajności stvm \> \< lub region nazwy produktu prod \> \<\>\<\#\#\#\> | <li> stvmstcoreeastus2001 <li> stvmpmcoreeastus2001 <li> stvmstplmeastus2001 <li> stvmsthadoopeastus2001 |
-| Aplikacja internetowa                     | Globalny         | App- \< App Name \> - \< Environment \> - \< \# \# \# \> . [ {azurewebsites.net}]   | <li> app-navigator-prod-001.azurewebsites.net <li> app-accountlookup-dev-001.azurewebsites.net |
-| Aplikacja funkcji                | Globalny         | Func — \< środowisko nazwy aplikacji \> - \< \> - \< \# \# \# \> . [ {azurewebsites.net}]  | <li> func-navigator-prod-001.azurewebsites.net <li> func-accountlookup-dev-001.azurewebsites.net |
-| Usługa w chmurze               | Globalny         | \<środowisko nazw aplikacji \> - \< \> - \< \# \# \# \> . [ {cloudapp.net}]        | <li> could-navigator-prod-001.azurewebsites.net <li> could-accountlookup-dev-001.azurewebsites.net |
+| Konto magazynu maszyn wirtualnych          | Globalnie         | \<Nazwa aplikacji typu wydajności stvm \> \< lub region nazwy produktu prod \> \<\>\<\#\#\#\> | <li> stvmstcoreeastus2001 <li> stvmpmcoreeastus2001 <li> stvmstplmeastus2001 <li> stvmsthadoopeastus2001 |
+| Aplikacja internetowa                     | Globalnie         | App- \< App Name \> - \< Environment \> - \< \# \# \# \> . [ {azurewebsites.net}]   | <li> app-navigator-prod-001.azurewebsites.net <li> app-accountlookup-dev-001.azurewebsites.net |
+| Aplikacja funkcji                | Globalnie         | Func — \< środowisko nazwy aplikacji \> - \< \> - \< \# \# \# \> . [ {azurewebsites.net}]  | <li> func-navigator-prod-001.azurewebsites.net <li> func-accountlookup-dev-001.azurewebsites.net |
+| Usługa w chmurze               | Globalnie         | \<środowisko nazw aplikacji \> - \< \> - \< \# \# \# \> . [ {cloudapp.net}]        | <li> could-navigator-prod-001.azurewebsites.net <li> could-accountlookup-dev-001.azurewebsites.net |
 | Centrum powiadomień            | Grupa zasobów | NTF — \< środowisko nazw \> - \< aplikacji\>                                    | <li> NTF-Navigator-prod <li> NTF-emisje — dev |
-| Notification Hubs przestrzeń nazw | Globalny         | ntfns — \< środowisko nazw \> - \< aplikacji\>                                  | <li> ntfns-Navigator-prod <li> ntfns-emisje — dev |
+| Notification Hubs przestrzeń nazw | Globalnie         | ntfns — \< środowisko nazw \> - \< aplikacji\>                                  | <li> ntfns-Navigator-prod <li> ntfns-emisje — dev |
 
 ### <a name="example-names-databases"></a>Przykładowe nazwy: bazy danych
 
 | Typ elementu zawartości                     | Zakres              | Format                                 | Przykłady                                                                  |
 |--------------------------------|--------------------|----------------------------------------|---------------------------------------------------------------------------|
-| Serwer Azure SQL Database      | Globalny             | SQL — \< środowisko nazw \> - \< aplikacji\>       | <li> SQL — Nawigator — prod <li> SQL-emisje — dev |
+| Serwer Azure SQL Database      | Globalnie             | SQL — \< środowisko nazw \> - \< aplikacji\>       | <li> SQL — Nawigator — prod <li> SQL-emisje — dev |
 | Baza danych Azure SQL Database             | Azure SQL Database | SQLDB — \< Nazwa bazy danych> — \< środowisko\> | <li> SQLDB — użytkownicy — produkcja <li> SQLDB — użytkownicy — dev |
-| Baza danych Azure Cosmos DB       | Globalny             | Cosmos — \< środowisko nazw \> - \< aplikacji\>    | <li> Cosmos-Navigator-prod <li> Cosmos-emisje — dev |
-| Wystąpienie usługi Azure cache for Redis | Globalny             | redis-\<Nazwa aplikacji\>-\<Środowisko\>     | <li> redis-navigator-prod <li> redis-emissions-dev |
-| Baza danych MySQL                 | Globalny             | mysql-\<Nazwa aplikacji\>-\<Środowisko\>     | <li> mysql-navigator-prod <li> mysql-emissions-dev |
-| Baza danych PostgreSQL            | Globalny             | PSQL — \< środowisko nazw \> - \< aplikacji\>      | <li> PSQL-Navigator-prod <li> PSQL-emisje — dev |
-| Azure SQL Data Warehouse       | Globalny             | sqldw-\<Nazwa aplikacji\>-\<Środowisko\>     | <li> sqldw-navigator-prod <li> sqldw-emissions-dev |
+| Baza danych Azure Cosmos DB       | Globalnie             | Cosmos — \< środowisko nazw \> - \< aplikacji\>    | <li> Cosmos-Navigator-prod <li> Cosmos-emisje — dev |
+| Wystąpienie usługi Azure cache for Redis | Globalnie             | redis-\<Nazwa aplikacji\>-\<Środowisko\>     | <li> redis-navigator-prod <li> redis-emissions-dev |
+| Baza danych MySQL                 | Globalnie             | mysql-\<Nazwa aplikacji\>-\<Środowisko\>     | <li> mysql-navigator-prod <li> mysql-emissions-dev |
+| Baza danych PostgreSQL            | Globalnie             | PSQL — \< środowisko nazw \> - \< aplikacji\>      | <li> PSQL-Navigator-prod <li> PSQL-emisje — dev |
+| Azure SQL Data Warehouse       | Globalnie             | sqldw-\<Nazwa aplikacji\>-\<Środowisko\>     | <li> sqldw-navigator-prod <li> sqldw-emissions-dev |
 | SQL Server Stretch Database    | Azure SQL Database | sqlstrdb-\<Nazwa aplikacji\>-\<Środowisko\>  | <li> sqlstrdb-navigator-prod <li> sqlstrdb-emissions-dev |
 
 ### <a name="example-names-storage"></a>Przykładowe nazwy: Storage
 
 | Typ elementu zawartości                        | Zakres  | Format                                                                        | Przykłady                                                              |
 |-----------------------------------|--------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| Konto magazynu (ogólne użycie)     | Globalny | st\<nazwa magazynu\>\<\#\#\#\>                                                  | <li> stnavigatordata001 <li> stemissionsoutput001 |
-| Konto magazynu (dzienniki diagnostyczne) | Globalny | stdiag\<pierwsze 2 litery nazwy subskrypcji i numer\>\<region\>\<\#\#\#\> | <li> stdiagsh001eastus2001 <li> stdiagsh001westus001 |
-| Azure StorSimple                  | Globalny | ssimp\<Nazwa aplikacji\>\<Środowisko\>                                              | <li> ssimpnavigatorprod <li> ssimpemissionsdev |
+| Konto magazynu (ogólne użycie)     | Globalnie | st\<nazwa magazynu\>\<\#\#\#\>                                                  | <li> stnavigatordata001 <li> stemissionsoutput001 |
+| Konto magazynu (dzienniki diagnostyczne) | Globalnie | stdiag\<pierwsze 2 litery nazwy subskrypcji i numer\>\<region\>\<\#\#\#\> | <li> stdiagsh001eastus2001 <li> stdiagsh001westus001 |
+| Azure StorSimple                  | Globalnie | ssimp\<Nazwa aplikacji\>\<Środowisko\>                                              | <li> ssimpnavigatorprod <li> ssimpemissionsdev |
 
 ### <a name="example-names-ai-and-machine-learning"></a>Przykładowe nazwy: AI i Machine Learning
 
 | Typ elementu zawartości                       | Zakres          | Format                            | Przykłady                                                          |
 |----------------------------------|----------------|-----------------------------------|-------------------------------------------------------------------|
-| Azure Cognitive Search           | Globalny         | srch-\<Nazwa aplikacji\>-\<Środowisko\> | <li> srch-navigator-prod <li> srch-emissions-dev |
+| Azure Cognitive Search           | Globalnie         | srch-\<Nazwa aplikacji\>-\<Środowisko\> | <li> srch-navigator-prod <li> srch-emissions-dev |
 | Azure Cognitive Services         | Grupa zasobów | koło zębate — \< środowisko nazw \> - \< aplikacji\>  | <li> koło zębate-Navigator-prod <li> koło zębate-emisje — dev |
 | Obszar roboczy usługi Azure Machine Learning | Grupa zasobów | MLW — \< środowisko nazw \> - \< aplikacji\>  | <li> MLW-Navigator-prod <li> MLW-emisje — dev |
 
@@ -302,21 +302,21 @@ W poniższej sekcji przedstawiono przykłady nazw wspólnych typów zasobów pla
 
 | Typ elementu zawartości                  | Zakres          | Format                              | Przykłady                                                              |
 |-----------------------------|----------------|-------------------------------------|-----------------------------------------------------------------------|
-| Azure Data Factory          | Globalny         | ADF — \< środowisko nazw aplikacji \> \<\>     | <li> ADF — Nawigator — produkcja <li> ADF — emisje — dev |
+| Azure Data Factory          | Globalnie         | ADF — \< środowisko nazw aplikacji \> \<\>     | <li> ADF — Nawigator — produkcja <li> ADF — emisje — dev |
 | Usługa Azure Stream Analytics      | Grupa zasobów | asa-\<Nazwa aplikacji\>-\<Środowisko\>    | <li> asa-navigator-prod <li> asa-emissions-dev |
-| Konto Data Lake Analytics | Globalny         | dla\<Nazwa aplikacji\>\<Środowisko\>      | <li> dlanavigatorprod <li> dlaemissionsdev |
-| Konto Data Lake Storage   | Globalny         | dls\<Nazwa aplikacji\>\<Środowisko\>      | <li> dlsnavigatorprod <li> dlsemissionsdev |
-| Centrum zdarzeń                   | Globalny         | evh-\<Nazwa aplikacji\>-\<Środowisko\>    | <li> evh-navigator-prod <li> evh-emissions-dev |
-| HDInsight — klaster HBase   | Globalny         | HBase — \< środowisko nazw \> - \< aplikacji\>  | <li> HBase-Navigator-prod <li> HBase-emisje — dev |
-| HDInsight — klaster Hadoop  | Globalny         | Hadoop — \< środowisko nazw \> - \< aplikacji\> | <li> Hadoop — Nawigator — produkcja <li> Hadoop — emisje — dev |
-| HDInsight — klaster Spark   | Globalny         | środowisko platformy Spark — \< Nazwa aplikacji \> - \<\>  | <li> Spark-Navigator — prod <li> Spark-emisje — dev  |
-| Centrum IoT                     | Globalny         | IoT — \< środowisko nazw \> - \< aplikacji\>    | <li> IoT-Navigator — prod <li> IoT-emisje — dev |
-| Power BI Embedded           | Globalny         | PBI — \< środowisko nazw aplikacji \> \<\>     | <li> PBI-Navigator-prod <li> PBI-emisje — dev |
+| Konto Data Lake Analytics | Globalnie         | dla\<Nazwa aplikacji\>\<Środowisko\>      | <li> dlanavigatorprod <li> dlaemissionsdev |
+| Konto Data Lake Storage   | Globalnie         | dls\<Nazwa aplikacji\>\<Środowisko\>      | <li> dlsnavigatorprod <li> dlsemissionsdev |
+| Centrum zdarzeń                   | Globalnie         | evh-\<Nazwa aplikacji\>-\<Środowisko\>    | <li> evh-navigator-prod <li> evh-emissions-dev |
+| HDInsight — klaster HBase   | Globalnie         | HBase — \< środowisko nazw \> - \< aplikacji\>  | <li> HBase-Navigator-prod <li> HBase-emisje — dev |
+| HDInsight — klaster Hadoop  | Globalnie         | Hadoop — \< środowisko nazw \> - \< aplikacji\> | <li> Hadoop — Nawigator — produkcja <li> Hadoop — emisje — dev |
+| HDInsight — klaster Spark   | Globalnie         | środowisko platformy Spark — \< Nazwa aplikacji \> - \<\>  | <li> Spark-Navigator — prod <li> Spark-emisje — dev  |
+| Centrum IoT                     | Globalnie         | IoT — \< środowisko nazw \> - \< aplikacji\>    | <li> IoT-Navigator — prod <li> IoT-emisje — dev |
+| Power BI Embedded           | Globalnie         | PBI — \< środowisko nazw aplikacji \> \<\>     | <li> PBI-Navigator-prod <li> PBI-emisje — dev |
 
 ### <a name="example-names-integration"></a>Przykładowe nazwy: integracja
 
 | Typ elementu zawartości        | Zakres       | Format                                                     | Przykłady                                                      |
 |-------------------|-------------|------------------------------------------------------------|---------------------------------------------------------------|
-| Service Bus       | Globalny      | sb-\<Nazwa aplikacji\>-\<Środowisko\>.[{servicebus.windows.net}] | <li> sb-navigator-prod <li> sb-emissions-dev |
+| Service Bus       | Globalnie      | sb-\<Nazwa aplikacji\>-\<Środowisko\>.[{servicebus.windows.net}] | <li> sb-navigator-prod <li> sb-emissions-dev |
 | Kolejka usługi Service Bus | Service Bus | sbq-\<deskryptor kolejki\>                                   | <li> sbq-messagequery |
 | Temat usługi Service Bus | Service Bus | SBT — \< deskryptor zapytania\>                                   | <li> sbt-messagequery |

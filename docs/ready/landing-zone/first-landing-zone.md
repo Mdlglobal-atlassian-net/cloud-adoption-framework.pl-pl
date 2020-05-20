@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67b4968a62e795c6dbd3c09a954dbe0edf12166d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d9643f0bc303c6557d02f107fc91c7654c25ec0d
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219261"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621785"
 ---
 # <a name="first-landing-zone"></a>Pierwsza strefa docelowa
 
@@ -24,13 +24,13 @@ Na poniższej ilustracji przedstawiono różne opcje dla stref wyładunkowej. Po
 
 ![Opcje strefy wyładunkowej](../../_images/ready/landing-zone-options.png)
 
-A. Zacznij od kodu, aby tworzyć spójne, powtarzające się strefy przeładunkowe. Jeśli masz doświadczenie w przypadku refaktoryzacji (lub rafinacji kodu i infrastruktury) w trakcie nauki, Zacznij od lekkiej bazy kodu, takiej jak infrastruktura wdrożenia chmury. Takie podejście przyspiesza powodzenie wdrażania i tworzy praktyczne możliwości uczenia się. Jednak tego typu początkowa strefa docelowa nie jest przeznaczona do obsługi poufnych danych ani obciążeń o kluczowym znaczeniu, bez konieczności dodatkowego refaktoryzacji.
+A. Zacznij od kodu, aby tworzyć spójne, powtarzające się strefy przeładunkowe. Jeśli masz doświadczenie w przypadku refaktoryzacji (rafinacji kodu i infrastruktury) w trakcie nauki, Zacznij od lekkiej bazy kodu, takiej jak infrastruktura wdrożenia chmury. Takie podejście przyspiesza powodzenie wdrażania i tworzy praktyczne możliwości uczenia się. Ale początkowa strefa docelowa nie jest przeznaczona do obsługi poufnych danych ani obciążeń o krytycznym znaczeniu, bez dodatkowych refaktoryzacji.
 
 B. Wraz ze wzrostem ilości i wymagania stają się bardziej jasno zidentyfikowane, zespoły wdrażania i platformy będą refaktoryzacji stref umieszczania na podstawie ich informacji. Proces rozszerzania stref ładunkowych przygotowuje środowiska w celu uzyskania bardziej złożonych wymagań dotyczących zgodności lub architektury. [Rozszerzanie strefy ładunkowej](../considerations/index.md) zawiera przewodniki i linki do najlepszych rozwiązań w celu zaplanowania wysiłków. Rozszerzanie strefy docelowej może pomóc w spełnieniu wymagań związanych z zabezpieczeniami, działaniami i nadzorem.
 
 C. Niektóre plany wdrażania w chmurze podlegają zewnętrznym wymaganiom dotyczącym zgodności. Aby zmniejszyć obciążenie spełniające te wymagania, platforma Azure udostępnia kilka przykładowych planów platformy Azure. Niektóre przykłady można dodać do pierwszego wstępnego planu. Inne przykłady obejmują również określoną implementację, która może być w pierwszej strefie docelowej.
 
-D. Gdy Partner udostępnia bieżące usługi zarządzane lub ma umowę na dostarczenie planu wdrożenia, zazwyczaj udostępni własną strefę docelową. Użycie strefy docelowej partnera może przyspieszyć wdrażanie i zapewnić spójne wymagania dotyczące zarządzania operacyjnego. Należy jednak wprowadzić dodatkowe zagadnienia dotyczące zarządzania wewnętrznego i wymagań dotyczących zabezpieczeń, aby zapewnić wyrównanie.
+D. Gdy Partner udostępnia bieżące usługi zarządzane lub ma umowę na dostarczenie planu wdrożenia, zazwyczaj udostępni własną strefę docelową. Użycie strefy docelowej partnera może przyspieszyć wdrażanie i zapewnić spójne wymagania dotyczące zarządzania operacyjnego. Należy jednak zwrócić uwagę na wewnętrzne zarządzanie i wymagania dotyczące bezpieczeństwa w celu zapewnienia wyrównania.
 
 > [!NOTE]
 > Przed przystąpieniem do działania z podejściem pierwszym i refaktoryzacją kodu, Czytelnicy powinni znać [konkurencyjne priorytety związane z tą decyzją](../../strategy/balance-competing-priorities.md#balance-during-the-ready-phase). W przypadku wybrania podejścia do strefy wyładunkowej ważne jest, aby zrozumieć niezbędną równowagę między _czasem do_ wdrożenia i _długoterminowych operacji_.

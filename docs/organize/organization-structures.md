@@ -1,19 +1,19 @@
 ---
 title: Struktury dla dorosłych zespołów
-description: Użyj tych przykładów wspólnych struktur zespołu, aby znaleźć strukturę organizacyjną, która najlepiej odpowiada Twoim potrzebom operacyjnym.
+description: Użyj tych przykładów wspólnych struktur zespołu, aby znaleźć strukturę organizacyjną, która najlepiej odpowiada Twoim potrzebom operacyjnym podczas wdrażania w chmurze.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/27/2019
+ms.date: 05/18/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c46f3d6372c532911bc794128a0ea47509ee1860
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 777f89ea13c33ad5318c221d07c7c8ea3958c06c
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222100"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621444"
 ---
 <!-- cSpell:ignore ccoe -->
 
@@ -21,7 +21,11 @@ ms.locfileid: "83222100"
 
 Każda funkcja w chmurze jest udostępniana przez kogoś podczas każdego wysiłku związanego z wdrażaniem w chmurze. Te przydziały i struktury zespołu mogą tworzyć organiczne lub mogą być zamierzone celowo w celu dopasowania do zdefiniowanej struktury zespołu.
 
-Zgodnie z potrzebami wdrażania, należy więc koniecznie zrównoważenie i struktura. W tym artykule przedstawiono przykłady wspólnych struktur zespołów na różnych etapach wymagalności organizacyjnej. Poniższa ilustracja i lista przedstawia te struktury na podstawie typowych etapów dojrzewania. Użyj tych przykładów, aby znaleźć strukturę organizacyjną, która najlepiej odpowiada Twoim potrzebom operacyjnym.
+Zgodnie z potrzebami wdrażania, należy więc koniecznie zrównoważenie i struktura. Obejrzyj ten film wideo, aby zapoznać się z omówieniem wspólnych struktur zespołu na różnych etapach okresu ważności organizacji.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4wvTS]
+
+Poniższa ilustracja i lista przedstawia te struktury na podstawie typowych etapów dojrzewania. Użyj tych przykładów, aby znaleźć strukturę organizacyjną, która najlepiej odpowiada Twoim potrzebom operacyjnym.
 
 ![Cykl rozwoju organizacji](../_images/ready/org-ready-maturity.png)
 
@@ -40,8 +44,6 @@ Większość firm zaczyna się od małego _zespołu wdrażania w chmurze_. Zalec
 
 Jądrem wszystkich działań związanych z wdrażaniem w chmurze jest zespół ds. wdrażania w chmurze. Ten zespół udostępnia zmiany techniczne, które umożliwiają wdrażanie. W zależności od celów nakładu pracy ten zespół może obejmować różnorodną gamę członków zespołu, którzy obsługują szeroki zestaw zadań technicznych i służbowych.
 
-![Zespół ds. wdrażania chmury, z zespołami nadzoru i zabezpieczeń](../_images/ready/org-ready-adoption-only.png)
-
 W przypadku wysiłków dotyczących małych i wczesnych etapów ten zespół może być tak mały jako jedna osoba. W przypadku większych lub późnych wysiłków często istnieje kilka zespołów wdrażania w chmurze, z których każdy ma około sześciu inżynierów. Niezależnie od rozmiaru lub zadań, spójny aspekt dowolnego zespołu wdrażania w chmurze polega na tym, że umożliwia dołączanie rozwiązań do chmury. W przypadku niektórych organizacji może to być wystarczająca struktura organizacyjna. Artykuł z [zespołu wdrażania w chmurze](./cloud-adoption.md) zawiera dokładniejszy wgląd w strukturę, kompozycję i funkcję zespołu wdrożenia chmury.
 
 > [!WARNING]
@@ -54,8 +56,6 @@ Zalecamy, aby dwa zespoły mogły utworzyć saldo w ramach wysiłków związanyc
 - **Zespół ds. wdrażania chmury:** Ten zespół jest odpowiedzialny za rozwiązania techniczne, wyrównanie biznesowe, zarządzanie projektami i operacje dla przyjętych rozwiązań.
 - **Zespół ds. zarządzania chmurą:** Aby zrównoważyć zespół ds. zarządzania chmurą, zespół nadzorujący w chmurze jest przeznaczony do zapewnienia doskonałości rozwiązań, które zostały przyjęte. Zespół ds. zarządzania chmurą jest odpowiedzialny za działanie platformy, operacje na platformie, zarządzanie i automatyzację.
 
-![Wdrażanie w chmurze za pomocą Counterbalance ładu chmury](../_images/ready/org-ready-best-practice.png)
-
 To sprawdzona metoda jest uważana za SPECJALISTę, ponieważ może ona nie być trwała. Każdy zespół ma wiele systemyów, jak przedstawiono na [wykresach *odpowiedzialnych* ](./raci-alignment.md), do których można się skontaktować.
 
 W poniższych sekcjach opisano w pełni zatrudnioną strukturę organizacyjną oraz podejścia do dostosowania odpowiedniej struktury do organizacji.
@@ -63,8 +63,6 @@ W poniższych sekcjach opisano w pełni zatrudnioną strukturę organizacyjną o
 ## <a name="central-it"></a>Centralne zasoby IT
 
 W miarę skalowania, zespół nadzorujący chmurę może się zadbać o to, aby zachować możliwości innowacji z wielu zespołów wdrażania chmury. Jest to szczególnie prawdziwe w środowiskach, które mają silną zgodność, operacje lub wymagania dotyczące zabezpieczeń. Na tym etapie często firma może przenieść obowiązki chmury do istniejącego centralnego zespołu IT. Jeśli ten zespół może ponownie ocenić narzędzia, procesy i osoby, aby lepiej obsługiwać wdrażanie w chmurze na dużą skalę, w tym centralny zespół IT może zwiększyć znaczącą wartość. Dostosowanie się do specjalistów z dziedziny działania, Automatyzacja, bezpieczeństwa i administrowania w celu modernizacji centralnych może zapewnić efektywne innowacje operacyjne.
-
-![Wdrażanie chmury z centralnym modelem IT](../_images/ready/org-ready-central-it.png)
 
 Niestety, Centralna faza IT może być jedną z riskiest faz w organizacji. Centralny zespół IT musi znajdować się w tabeli o silnym wzroście sposób myślenia. Jeśli zespół przegląda chmurę jako okazję do wzrostu i adaptacji, wówczas może zapewnić doskonałą wartość w całym procesie. Jeśli jednak centralny zespół IT przegląda wdrożenie chmury przede wszystkim jako zagrożenie dla istniejącego modelu, centralny zespół IT przejdzie do przeszkody dla zespołów wdrażania chmury i celów, które są przez nie obsługiwane. Niektóre centralne zespoły IT wykorzystały miesiące, a nawet lat próbujących wymusić wymuszenie wyrównania przez chmurę przy użyciu podejścia lokalnego, z tylko negatywnymi wynikami. Chmura nie wymaga zmiany wszystkiego w Centralnym, ale wymaga znaczącej zmiany. Jeśli odporność na zmiany jest powszechnie rozpowszechniona w centralnym zespole IT, ta faza dojrzałości może szybko stać się antywzorcem kulturowym.
 
@@ -74,23 +72,17 @@ Plany wdrożenia chmury mocno koncentrują się na platformie jako usługa (PaaS
 
 W miarę wzrostu inwestycji w rozwiązania w chmurze i zrealizowania wartości biznesowej, zainteresowane strony biznesowe często stają się coraz bardziej zaangażowane. Zdefiniowany zespół strategii chmury, jak ilustruje poniższy obraz, wyrównuje te zainteresowane strony biznesowe, aby zmaksymalizować wartość zrealizowaną przez inwestycje z wdrażaniem w chmurze.
 
-![Dodawanie zdefiniowanego zespołu strategii chmury](../_images/ready/org-ready-strategy-aligned.png)
-
 Gdy płatność odbywa się w sposób organiczny, w wyniku wysiłków związanych z wdrażaniem w chmurze, dostosowanie strategiczne jest zwykle poprzedzone przez rząd nadzoru lub centralny zespół IT. Gdy działania związane z wdrażaniem w chmurze są liderem firmy, fokus dotyczący modelu operacyjnego i organizacji jest zamierzony wcześniej. Tam, gdzie to możliwe, wyniki biznesowe i zespół strategii chmury powinny być zdefiniowane wczesnie w procesie.
 
 ## <a name="operational-alignment"></a>Wyrównanie operacyjne
 
 Realizowanie wartości biznesowej z działań związanych z wdrażaniem w chmurze wymaga stabilnych operacji. Operacje w chmurze mogą wymagać nowych narzędzi, procesów lub umiejętności. Gdy stabilne operacje IT są wymagane do osiągnięcia wyników działalności biznesowej, ważne jest dodanie zdefiniowanego zespołu operacji w chmurze, jak pokazano tutaj.
 
-![Dodawanie zdefiniowanego zespołu operacji w chmurze](../_images/ready/org-ready-operations-aligned.png)
-
 Operacje w chmurze mogą być dostarczane przez istniejące role operacji IT. Nie zdarza się jednak, że operacje w chmurze są delegowane do innych stron poza operacjami IT. Dostawcy usług zarządzanych, zespoły DevOps i jednostka biznesowa często zakładają obowiązki związane z operacjami w chmurze, z obsługą i guardrails udostępnianymi przez operacje IT. Jest to coraz częściej popularne w przypadku działań związanych z wdrażaniem w chmurze, które koncentrują się mocno na wdrożeniach DevOps lub PaaS
 
 ## <a name="cloud-center-of-excellence"></a>Centrum doskonałości chmury
 
 W przypadku najwyższego stanu zapadalności Centrum rozwiązań w chmurze pozwala wyrównać zespoły do nowoczesnego modelu operacyjnego w chmurze. Takie podejście zapewnia centralne funkcje IT, takie jak ładu, zabezpieczenia, platforma i Automatyzacja.
-
-![Centrum doskonałości chmury](../_images/ready/org-ready-ccoe.png)
 
 Podstawowa różnica między tą strukturą a centralną strukturą IT jest skoncentrowana na samoobsługi. Zespoły w tej strukturze organizują z zamiarem delegowania kontroli tak dużo, jak to możliwe. Dostosowanie praktyk zarządzania i zgodności do rozwiązań natywnych w chmurze tworzy mechanizmy guardrails i ochrony. W przeciwieństwie do centralnego modelu IT podejście natywne w chmurze maksymalizuje innowacje i minimalizuje obciążenie operacyjne. Aby ten model został przyjęty, firma i jej Liderzy muszą wzajemnie porozumienie o modernizacji procesów IT. Ten model jest mało prawdopodobny i często wymaga wsparcia Executive.
 

@@ -7,12 +7,12 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e7fa0e1046ce6c898a2f5bc804afff8450cda103
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: f4dcf7409e9aa8eceb548f0bd54d0decdab7357e
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400140"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620874"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -21,6 +21,18 @@ ms.locfileid: "83400140"
 Poniżej znajduje się lista najnowszych zmian wprowadzonych w strukturze wdrożenia chmury.
 
 Ta struktura jest wbudowana w współpracę z klientami, partnerami i wewnętrznymi zespołami firmy Microsoft. Nowa i zaktualizowana zawartość jest publikowana, gdy staną się dostępne. Te wersje umożliwiają przetestowanie, zweryfikowanie i dostosowanie wskazówek wraz z nami. Zachęcamy do współpracy z nami w celu utworzenia struktury wdrażania w chmurze dla platformy Azure.
+
+## <a name="may-15-2020"></a>15 maja 2020
+
+Na podstawie opinii została utworzona nowa zawartość, która ułatwia rozpoczęcie pracy przy użyciu platformy wdrażania w chmurze. Nowe przewodniki wprowadzenie ułatwiają nawigowanie po strukturze w zależności od tego, co chcesz osiągnąć.
+
+| Artykuł | Opis |
+|---|---|
+| [Wprowadzenie do podręcznika Cloud Adoption Framework](./index.md) | Zacznij tutaj, aby wybrać Przewodnik wprowadzający, który jest wyrównany do celów wdrożenia chmury. Te typowe scenariusze stanowią plan korzystania z podręcznika Microsoft Cloud Adoption Framework dla platformy Azure.|
+| [Zrozumienie i udokumentowanie decyzji o wyrównaniu](./cloud-concepts.md) | Zapoznaj się z wstępnymi decyzjami, które powinny zrozumieć każdy zespół korzystający z rozwiązań w chmurze. |
+| [Zrozumienie i wyrównanie hierarchii portfolio](../reference/fundamental-concepts/hosting-hierarchy.md) | Dowiedz się, w jaki sposób hierarchia portfolio pokazuje, jak wszystkie obciążenia i usługi obsługują wszystkie jednocześnie. |
+| [Jak produkty platformy Azure obsługują hierarchię portfolio?](../reference/fundamental-concepts/hierarchy-azure-tools.md) | Dowiedz się więcej na temat narzędzi i rozwiązań platformy Azure, które obsługują hierarchię portfela. |
+| [Zarządzanie dopasowaniem organizacji](../organize/index.md) | Ustanów dobrze organizowane struktury organizacyjne, które są efektywnym modelem operacyjnym dla chmury. |
 
 ## <a name="april-14-2020"></a>14 kwietnia 2020
 
@@ -114,7 +126,7 @@ W odpowiedzi na opinie o ciągłości migracji przy użyciu wielu sekcji środow
 | [Omówienie](../migrate/azure-migration-guide/index.md)                                            | Zaktualizowano o wyraźniejszy opis przewodnika i mniejszą liczbę kroków.                                                                                                        |
 | [Szacowaniu](../migrate/azure-migration-guide/assess.md)                                             | Dodano sekcję "trudne założenia", aby zademonstrować, jak ten poziom oceny współdziała z podejściem do oceny przyrostowej wymienionym w metodologii planu. |
 | [Klasyfikacja podczas oceniania procesów](../migrate/migration-considerations/assess/classify.md) | **Nowy artykuł:** Przedstawia znaczenie klasyfikowania wszystkich zasobów i obciążeń przed migracją.                                                                    |
-| [Migrate (Migracja)](../migrate/azure-migration-guide/migrate.md)                                           | Dodano odwołanie do UnifyCloud w opcjach narzędzi innych firm, w odpowiedzi na opinie w ramach konferencji warstwy 1.                                                         |
+| [Migrate](../migrate/azure-migration-guide/migrate.md)                                           | Dodano odwołanie do UnifyCloud w opcjach narzędzi innych firm, w odpowiedzi na opinie w ramach konferencji warstwy 1.                                                         |
 | [Testowanie, &nbsp; Optymalizowanie &nbsp; i &nbsp; podwyższanie poziomu](../migrate/azure-migration-guide/optimize-and-transform.md)        | Wyrównuje tytuł tego artykułu z innymi sugestiami dotyczącymi ulepszeń procesów.                                                                                           |
 | [Przegląd oceny](../migrate/migration-considerations/assess/index.md)                           | Zaktualizowano w celu zilustrowania, że ocena w tej fazie koncentruje się na ocenie dopasowania technicznego określonego obciążenia i powiązanych zasobów.                               |
 | [Lista kontrolna dotycząca planowania](../migrate/migration-considerations/prerequisites/planning-checklist.md)    | Zaktualizowano w celu wyjaśnienia znaczenia wyrównania operacji podczas planowania działań związanych z migracją w celu zapewnienia dobrego zarządzania obciążeniem po migracji.                  |

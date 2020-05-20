@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 205540490fb8e25624d854abd666b736c701f7bb
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: eda7866700edb0a1e86776f1b0f23d95799d5b67
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400915"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621580"
 ---
 <!-- cSpell:ignore Terraform's -->
 
@@ -55,7 +55,7 @@ Struktura wdrażania w chmurze zawiera narzędzia, które ułatwiają szybkie wd
 | [Szablon procesu ładu](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Governance%20Discipline%20Template.docx) | Zdefiniuj podstawowy zestaw procesów ładu wykorzystywanych do wymuszania każdej dyscypliny ładu. |
 | [Szablon procesu zarządzania kosztami](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx) | Zdefiniuj instrukcje zasad i wskazówki dotyczące projektowania, które umożliwiają przedwczesne zarządzanie chmurą w organizacji i skoncentrowanie się na zarządzaniu kosztami. |
 | [Szablon procesu przyspieszania wdrażania](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx) | Zdefiniuj instrukcje zasad i wskazówki dotyczące projektowania, które umożliwiają przedwczesne zarządzanie chmurą w organizacji z fokusem na przyspieszeniu wdrażania. |
-| [Szablon procesu tożsamości](https://archcenter.blob.core.windows.net/cdn/fusion/governance/identity%20baseline%20discipline%20template.docx) | Zdefiniuj instrukcje zasad i wskazówki dotyczące projektowania, które umożliwiają przedwczesne zarządzanie chmurą w organizacji z uwzględnieniem wymagań dotyczących tożsamości. |
+| [Szablon procesu tożsamości](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Identity%20Baseline%20Discipline%20Template.docx) | Zdefiniuj instrukcje zasad i wskazówki dotyczące projektowania, które umożliwiają przedwczesne zarządzanie chmurą w organizacji z uwzględnieniem wymagań dotyczących tożsamości. |
 | [Szablon procesu spójności zasobów](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx) | Zdefiniuj instrukcje zasad i wskazówki dotyczące projektowania, które umożliwiają przedwczesne zarządzanie chmurą w organizacji i skoncentrowanie się na spójności zasobów. |
 | [Szablon procesu odniesienia zabezpieczeń](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx) | Zdefiniuj instrukcje zasad i wskazówki dotyczące projektowania, które umożliwiają przedwczesne zarządzanie chmurą w organizacji z uwzględnieniem podstawy zabezpieczeń. |
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2df19abaa4878194697cd22fbf193c21580b22d2
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: daad757372250014556de53ddd6cfdacf66b0b7f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400128"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620346"
 ---
 # <a name="assess-your-transformation-journey"></a>Ocenianie podróży transformacji
 
@@ -24,7 +24,7 @@ Struktura wdrażania w chmurze udostępnia [Narzędzie do monitorowania wydajno�
 Otrzymuj spersonalizowany raport, w którym opisano różnice między bieżącym stanem i priorytetami biznesowymi, a także zasoby, które ułatwiają rozpoczęcie pracy. Oceń stan bieżący i stan przyszły w celu ustalenia wizji na potrzeby stosowania struktury.
 
 > [!div class="nextstepaction"]
-> [Korzystanie z narzędzia testu porównawczego](https::/cafbaseline.com)
+> [Korzystanie z narzędzia testu porównawczego](https://cafbaseline.com)
 
 ## <a name="next-steps"></a>Następne kroki
 
