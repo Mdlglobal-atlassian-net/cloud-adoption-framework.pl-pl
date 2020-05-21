@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3cc247866d60b428a908180ba3eda74bb61f8cd3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b7967a97a48e987db623de9abff304a4e0b4458c
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224089"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621307"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -61,9 +61,11 @@ Oto kilka z dostępnych funkcji:
 
 ::: zone target="docs"
 
-**Zobacz [IoT Hub](https://docs.microsoft.com/azure/iot-hub)**
+### <a name="learn-more"></a>Dowiedz się więcej
 
-**Zobacz [Device Provisioning Services](https://docs.microsoft.com/azure/iot-dps)**
+- [IoT Hub](https://docs.microsoft.com/azure/iot-hub)
+
+- [Usługa Azure IoT Hub Device Provisioning Service (DPS)](https://docs.microsoft.com/azure/iot-dps)
 
 ::: zone-end
 
@@ -82,16 +84,16 @@ Aby utworzyć centrum IoT:
 
 <!-- markdownlint-enable DOCSMD001 -->
 
-Usługa IoT Hub Device Provisioning to usługa pomocnika usługi IoT Hub zapewniająca bezobsługowe aprowizowanie urządzeń „just in time”.
+Usługa Azure IoT Hub Device Provisioning to usługa pomocnika usługi IoT Hub zapewniająca bezobsługowe aprowizowanie urządzeń „just in time”.
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="action"></a>Akcja
 
-Aby utworzyć wystąpienie usług IoT Hub Device Provisioning Services:
+Aby utworzyć usługę Azure IoT Hub Device Provisioning Service:
 
-1. Wybierz usługi **IoT Hub Device Provisioning Services**.
-2. Wybierz pozycję **Utwórz usługi Device Provisioning Services**.
+1. Przejdź do pozycji **Usługi Device Provisioning**.
+2. Wybierz pozycję **Dodaj**.
 
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -113,7 +115,9 @@ Twórz przestrzenne środowiska wielokrotnego użytku o wysokim stopniu skalowal
 
 ::: zone target="docs"
 
-**Zobacz [Azure Digital Twins](https://docs.microsoft.com/azure/digital-twins/about-digital-twins)**
+### <a name="learn-more"></a>Dowiedz się więcej
+
+- [Azure Digital Twins](https://docs.microsoft.com/azure/digital-twins/about-digital-twins)
 
 ::: zone-end
 
@@ -150,7 +154,9 @@ Oprócz tradycyjnych możliwości używania lokalizacji, takich jak pobliskie mi
 
 ::: zone target="docs"
 
-**Zobacz [Azure Maps](https://docs.microsoft.com/azure/azure-maps)**
+### <a name="learn-more"></a>Dowiedz się więcej
+
+- [Azure Maps](https://docs.microsoft.com/azure/azure-maps)
 
 ::: zone-end
 
@@ -185,7 +191,7 @@ Usługa Azure Spatial Anchors składa się z usługi zarządzanej i zestawów SD
 
 ::: zone target="docs"
 
-**Zobacz [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors)**
+- [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors)
 
 ::: zone-end
 
@@ -214,9 +220,11 @@ Proces renderowania wymaga dużej mocy obliczeniowej. Liczba generowanych ramek 
 
 ::: zone target="docs"
 
-**Zobacz [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering)**
+### <a name="learn-more"></a>Dowiedz się więcej
 
-**Zobacz [Renderowanie przy użyciu platformy Azure](https://docs.microsoft.com/azure/batch/batch-rendering-service)**
+- [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering)
+
+- [Renderowanie przy użyciu platformy Azure](https://docs.microsoft.com/azure/batch/batch-rendering-service)
 
 ::: zone-end
 

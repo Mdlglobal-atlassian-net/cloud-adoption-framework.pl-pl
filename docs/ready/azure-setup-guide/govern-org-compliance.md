@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e7b5811099119e3f3b1c148ae550bd92e8fc8090
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a44dcdf49d2dad17236f4f1dc009758acf4230fc
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223256"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621624"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -22,11 +22,11 @@ ms.locfileid: "83223256"
 
 # <a name="governance-security-and-compliance-in-azure"></a>Ład, zabezpieczenia i zgodność na platformie Azure
 
-Podczas ustanawiania zasad firmowych i planowania strategii utrzymywania ładu możesz skorzystać z narzędzi i usług, takich jak Azure Policy, Azure Blueprints i Azure Security Center, aby wymusić i zautomatyzować decyzje dotyczące ładu w organizacji. Przed rozpoczęciem planowania ładu, użyj [narzędzia do porównywania stanu nadzoru nad ładem](https://cafbaseline.com), aby zidentyfikować potencjalne luki w podejściu do ładu w organizacji. Aby uzyskać więcej informacji na temat sposobu procesów zapewnienia ładu, zapoznaj się ze [wskazówkami dotyczącymi ładu na platformie Azure w przewodniku Cloud Adoption Framework](../../govern/index.md).
+Podczas ustanawiania zasad firmowych i planowania strategii utrzymywania ładu możesz skorzystać z narzędzi i usług, takich jak Azure Policy, Azure Blueprints i Azure Security Center, aby wymusić i zautomatyzować decyzje dotyczące ładu w organizacji. Przed rozpoczęciem planowania ładu, użyj [narzędzia do porównywania stanu nadzoru nad ładem](https://cafbaseline.com), aby zidentyfikować potencjalne luki w podejściu do ładu w organizacji. Aby uzyskać więcej informacji na temat opracowywania procesów ładu, zobacz [metodologię Ład](../../govern/index.md).
 
 # <a name="azure-blueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
-Usługa Azure Blueprints umożliwia architektom chmury i centralnym grupom technologii informatycznych zdefiniowanie powtarzalnego zestawu zasobów platformy Azure, który implementuje standardy, wzorce i wymagania organizacji oraz jest z nimi zgodny. Usługa Azure Blueprints umożliwia zespołom programistów szybkie tworzenie i wdrażanie nowych środowisk z przekonaniem, że zostały one utworzone zgodnie z zasadami organizacji za pomocą zestawu wbudowanych składników — takich jak sieć — przyspieszających opracowywanie i dostarczanie.
+Usługa Azure Blueprints umożliwia architektom chmury i centralnym grupom technologii informatycznych zdefiniowanie powtarzalnego zestawu zasobów platformy Azure, który implementuje standardy, wzorce i wymagania organizacji oraz jest z nimi zgodny. Usługa Azure Blueprints umożliwia zespołom programistów szybkie tworzenie i wdrażanie nowych środowisk z przekonaniem, że zostały one utworzone zgodnie z zasadami organizacji za pomocą zestawu wbudowanych składników, takich jak sieć, przyspieszających opracowywanie i dostarczanie.
 
 Usługa Blueprints umożliwia deklaratywne organizowanie i wdrażanie różnych szablonów zasobów i innych artefaktów, takich jak:
 
@@ -41,7 +41,7 @@ Aby utworzyć strategię:
 
 ::: zone target="chromeless"
 
-1. Przejdź do pozycji **Blueprints — Wprowadzenie**.
+1. Przejdź do sekcji **Strategie: wprowadzenie**.
 1. W sekcji **Tworzenie strategii** wybierz pozycję **Utwórz**.
 1. Przefiltruj listę strategii, aby wybrać odpowiednią strategię.
 1. Wprowadź **nazwę strategii** i wybierz odpowiednią **lokalizację definicji**.
@@ -69,7 +69,7 @@ Aby opublikować artefakty strategii w subskrypcji:
 
 ::: zone target="chromeless"
 
-1. Przejdź do obszaru **Strategie — Definicje strategii**.
+1. Przejdź do sekcji **Strategie: Definicje strategii**.
 1. Wybierz strategię utworzoną w poprzednim kroku.
 1. Przejrzyj definicję strategii i wybierz pozycję **Opublikuj strategię**.
 1. Podaj **wersję** (np. _1.0_) i wszelkie **uwagi dotyczące zmian**, a następnie wybierz pozycję **Publikuj**.
@@ -80,7 +80,7 @@ Aby opublikować artefakty strategii w subskrypcji:
 
 ::: zone target="docs"
 
-1. Przejdź obszaru [Strategie — Definicje strategii](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
+1. Przejdź do sekcji [Strategie: Definicje strategii](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Wybierz definicję strategii utworzoną w poprzednim kroku.
 1. Przejrzyj definicję strategii i wybierz pozycję **Opublikuj strategię**.
 1. Podaj **wersję** (np. _1.0_) i wszelkie **uwagi dotyczące zmian**, a następnie wybierz pozycję **Publikuj**.

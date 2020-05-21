@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b747a6f0d50fbf2510dc3a5220f72d513e8d1cb3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7aeb83064faa4105214d47149fbf9e789add47d3
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216711"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621221"
 ---
 <!-- cSpell:ignore WSUS getting started -->
 
@@ -127,7 +127,7 @@ Aby zastosować zasady do grupy zasobów:
 Aby dowiedzieć się więcej, zobacz:
 
 - [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
-- [Azure Policy — konfiguracja gościa](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)
+- [Azure Policy: Konfiguracja gościa](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)
 - [Cloud Adoption Framework: Przewodnik podejmowania decyzji dotyczących wymuszania zasad](../../decision-guides/policy-enforcement/index.md)
 
 ## <a name="azure-blueprints"></a>Azure Blueprints
@@ -158,7 +158,7 @@ Aby utworzyć strategię:
 
 ::: zone target="chromeless"
 
-1. Przejdź do pozycji **Blueprints — Wprowadzenie**.
+1. Przejdź do sekcji **Strategie: wprowadzenie**.
 1. W okienku **Tworzenie strategii** wybierz pozycję **Utwórz**.
 1. Przefiltruj listę strategii, aby wybrać odpowiednią strategię.
 1. W polu **Nazwa strategii** wprowadź nazwę strategii.
@@ -172,7 +172,7 @@ Aby utworzyć strategię:
 
 ::: zone target="docs"
 
-1. Przejdź do pozycji [Blueprints — Wprowadzenie](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
+1. Przejdź do sekcji [Strategie: wprowadzenie](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
 1. W okienku **Tworzenie strategii** wybierz pozycję **Utwórz**.
 1. Przefiltruj listę strategii, aby wybrać odpowiednią strategię.
 1. W polu **Nazwa strategii** wprowadź nazwę strategii.
@@ -201,7 +201,7 @@ Aby opublikować artefakty strategii w subskrypcji:
 
 ::: zone target="docs"
 
-1. Przejdź obszaru [Strategie — Definicje strategii](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
+1. Przejdź do sekcji [Strategie: Definicje strategii](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Wybierz strategię utworzoną w poprzednim kroku.
 1. Przejrzyj definicję strategii i wybierz pozycję **Opublikuj strategię**.
 1. W polu **Wersja** wprowadź numer wersji, na przykład „1.0”.

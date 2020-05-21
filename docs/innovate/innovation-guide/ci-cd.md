@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8ba2926d702b12234dd81f93cb6820352c0fbf58
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8f69e5c6d988bbfc637c7ba40eb156dc45524bce
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222270"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621328"
 ---
 ::: zone target="docs"
 
@@ -108,9 +108,11 @@ Serwis GitHub, największa społeczność deweloperów, to serce społeczności 
 
 W celu wprowadzania innowacji wielu deweloperów korzysta z kodu open source. W 80 do 90% przypadków rozwój nowych aplikacji rozpoczyna się od kodu typu open source. Termin „open source” nie odnosi się tylko do kodu. Oznacza on również wspólne tworzenie oprogramowania przez połączone społeczności i deweloperów z całego świata. Dzięki otwartemu modelowi programistycznemu korzystającemu z platformy GitHub zespoły wprowadzają innowacje i współpracują, wcześnie identyfikują luki w zabezpieczeniach oraz odkrywają talenty ekspertów. Zespoły deweloperów w przedsiębiorstwach mogą integrować repozytoria GitHub z usługami Microsoft Teams i Azure. Usługa Teams to jedyne rozwiązanie, które łączy czat, rozmowy głosowe i współpracę z możliwościami aplikacji pakietu Microsoft Office, spotkań i przepływów pracy procesów biznesowych, a wszystko to w jednym środowisku użytkownika. Jest to centrum pracy zespołowej i innowacji.
 
-**Przejdź do [rozwiązań typu open source na platformie Azure](https://azure.microsoft.com/overview/choose-azure-opensource)**
+### <a name="learn-more"></a>Dowiedz się więcej
 
-**Przejdź do [dokumentacji aplikacji Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams)**
+- [Rozwiązania typu open source na platformie Azure](https://azure.microsoft.com/overview/choose-azure-opensource)
+
+- [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
 
 # <a name="innovation-characteristics"></a>[Charakterystyka innowacji](#tab/Characteristics)
 

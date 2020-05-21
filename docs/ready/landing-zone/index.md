@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e5aa8d4d21b4bb1f01b1bad091c13512aa4f8a96
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: fbb39153dc729b7822c53520e9424a5280cb013a
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400114"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621745"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ Przed zdefiniowaniem stref docelowych należy poznać pokrewny termin: _podstawy
 > [!CAUTION]
 > Podział obowiązków nie powinien zniechęcać zespołów przed korzystaniem z tych najlepszych rozwiązań ze względu na aktualne zatrudnienie czy struktury zespołów. Na wczesnych etapach wdrażania chmury może się zdarzyć, że jeden zespół ds. wdrożenia będzie tymczasowo wykonywał wszystkie obowiązki związane z wdrożeniem technologii chmury, zapewnieniem ładu, zabezpieczeniami i operacjami w kontekście kilku wybranych obciążeń. Jeśli plan przygotowany na przyszłość obejmuje podział obowiązków, czy nawet izolację zadań, to jest to nadal sugerowane najlepsze rozwiązanie.
 
-**Wspólne obowiązki:** _Podstawy platformy_ zapewniają scentralizowane mechanizmy zarządzania platformą w chmurze. Nadal jednak wspólnym obowiązkiem wszystkich członków zespołu jest uwzględnianie w swojej pracy wymagań związanych z obsługą tożsamości, zabezpieczeniami, operacjami, zgodnością i zapewnieniem ładu. Przed wdrożeniem jakiejkolwiek technologii w strefie docelowej należy rozważyć to, jakie narzędzia zapewniają _podstawy platformy_, a co trzeba będzie wdrożyć w strefie docelowej w celu realizacji wspólnych obowiązków.
+**Wspólne obowiązki:** _Podstawy platformy_ zapewniają scentralizowane mechanizmy zarządzania platformą w chmurze. Nadal wspólnym obowiązkiem wszystkich członków zespołu jest uwzględnianie w swojej pracy wymagań związanych z obsługą tożsamości, zabezpieczeniami, operacjami, zgodnością i zapewnieniem ładu. Przed wdrożeniem jakiejkolwiek technologii w strefie docelowej należy rozważyć to, jakie narzędzia zapewniają _podstawy platformy_, a co trzeba będzie wdrożyć w strefie docelowej w celu realizacji wspólnych obowiązków.
 
 > [!IMPORTANT]
 > Deweloperzy i architekci wdrażający rozwiązania w strefie docelowej mogą skorzystać z przewodnika [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework/), aby uwzględnić i wykorzystać wspólne filary architektury podczas projektowania, tworzenia i obsługi obciążeń działających w strefie docelowej.
