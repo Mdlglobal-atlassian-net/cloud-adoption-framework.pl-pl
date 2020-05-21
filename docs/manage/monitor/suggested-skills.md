@@ -3,16 +3,16 @@ title: Gotowość do umiejętności monitorowania w chmurze
 description: Gotowość do umiejętności monitorowania w chmurze
 author: BrianBlanchard
 ms.author: magoedte
-ms.date: 05/05/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c32ecde3bc5929bc8ed360b1d792e5f2345bfd8f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d7d621f8f25b5369c4b9d39341c3e735b0996493
+ms.sourcegitcommit: 871d0256a2d448e22b4ab8054e906fc2db946518
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223681"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83705945"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -20,11 +20,11 @@ ms.locfileid: "83223681"
 
 W fazie planu podróży migracji celem jest opracowanie planów niezbędnych do wdrożenia. Plany muszą również obejmować sposób obsługi tych obciążeń, zanim zostaną one przenoszone lub udostępnione w środowisku produkcyjnym, a nie później. Zainteresowane strony biznesowe oczekują cennych usług i oczekują ich bez zakłóceń. Członkowie personelu IT muszą poznać nowe umiejętności i dostosować je, aby efektywnie korzystać z zintegrowanych usług platformy Azure w celu efektywnego monitorowania zasobów na platformie Azure i w środowiskach hybrydowych.
 
-Opracowywanie niezbędnych umiejętności może być przyspieszone przy użyciu następujących ścieżek szkoleniowych:
+Opracowywanie niezbędnych umiejętności może być przyspieszone przy użyciu poniższych ścieżek szkoleniowych. Są one zorganizowane od podstaw, a następnie podzielono na trzy podstawowe domeny podmiotu — infrastrukturę, aplikację i analizę danych.  
+
+## <a name="fundamentals"></a>Podstawy
 
 - Wprowadzenie do [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) omawia podstawowe pojęcia związane z zarządzaniem i wdrażaniem zasobów platformy Azure. Personel działu INFORMATYCZNego zarządzający doświadczeniem w przedsiębiorstwie powinien zrozumieć zakresy zarządzania, kontrolę dostępu opartą na rolach (RBAC) przy użyciu programu. Szablony Azure Resource Manager i zarządzanie zasobami przy użyciu interfejsu wiersza polecenia platformy Azure i Azure PowerShell.
-
-- Dowiedz się, jak zabezpieczyć zasoby przy użyciu zasad, kontroli dostępu opartej na rolach i innych usług platformy Azure, wyświetlając opcję [Implementuj zabezpieczenia zarządzania zasobami na platformie Azure](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security).
 
 - Wprowadzenie do [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) pomaga dowiedzieć się, jak można używać Azure Policy do tworzenia i przypisywania zasad oraz zarządzania nimi. Azure Policy można wdrożyć i skonfigurować agentów Azure Monitor, włączyć monitorowanie za pomocą Azure Monitor dla maszyn wirtualnych i Azure Security Center, wdrożyć ustawienia diagnostyczne, Przeprowadź inspekcję ustawień konfiguracji gościa i nie tylko.
 
@@ -33,19 +33,43 @@ Opracowywanie niezbędnych umiejętności może być przyspieszone przy użyciu 
   - [Użyj interfejsu wiersza polecenia platformy Azure](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli).
   - [Rozpoczynanie pracy z programem Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- Dowiedz się, jak pisać [zapytania dzienników w Azure monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries). Język zapytań Kusto jest podstawowym zasobem służącym do pisania zapytań dzienników Azure Monitor w celu eksplorowania i analizowania danych dzienników między zebranymi danymi z zależności aplikacji zasobów platformy Azure i hybrydowych, w tym aplikacji na żywo.
+- Dowiedz się, jak zabezpieczyć zasoby przy użyciu zasad, kontroli dostępu opartej na rolach i innych usług platformy Azure, wyświetlając opcję [Implementuj zabezpieczenia zarządzania zasobami na platformie Azure](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security).
+
+- Wprowadzenie do [monitorowania Microsoft Azure zasobów i obciążeń](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents) pozwala dowiedzieć się, jak używać narzędzi do monitorowania Microsoft Azure do monitorowania zasobów sieciowych platformy Azure, a także zasobów lokalnych.
+
+## <a name="infrastructure-monitoring"></a>Monitorowanie infrastruktury
+
+- [Zaprojektowanie strategii monitorowania infrastruktury w Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-monitoring-strategy-infrastructure-design-update) pomaga uzyskać podstawowe informacje o możliwościach i rozwiązaniach związanych z monitorowaniem na platformie Azure. 
+
+- [Monitorowanie klastrów Kubernetes](https://www.youtube.com/watch?time_continue=3&v=RjsNmapggPU&feature=emb_logo) zapewnia pośredni szczegółowe poziomu, który pomaga poznać monitorowanie klastra Kubernetes za pomocą Azure monitor dla kontenerów.
+
+- Informacje na temat Azure Monitor sposobu monitorowania danych z [usługi Azure Storage i HDInsight](https://www.pluralsight.com/courses/microsoft-azure-data-storage-monitoring).
+
+- [Element PlayBook monitorowania bazy danych Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) eksploruje kluczowe możliwości monitorowania, których można użyć do uzyskania szczegółowych informacji o Azure SQL Database, Azure SQL Data Warehouse i Azure Cosmos DB.
+
+- [Monitorowanie Microsoft Azure sieci hybrydowych w chmurze](https://www.pluralsight.com/courses/microsoft-azure-hybrid-cloud-networks-monitoring) to zaawansowany kurs, który pomaga dowiedzieć się, jak za pomocą narzędzi monitorowania platformy Azure wizualizować, konserwować i optymalizować sieci wirtualne platformy Azure oraz połączenia wirtualnej sieci prywatnej dla implementacji chmury hybrydowej.
+
+- [Usługa Azure ARC dla serwerów](https://docs.microsoft.com/azure/azure-arc/servers/overview)pozwala dowiedzieć się, jak zarządzać komputerami z systemami Windows i Linux hostowanymi poza platformą Azure, podobnie jak w przypadku zarządzania natywnymi maszynami wirtualnymi platformy Azure.
+
+## <a name="application-monitoring"></a>Monitorowanie aplikacji
 
 - Dowiedz się, w jaki sposób [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) ułatwia Wyświetlanie dostępności i wydajności aplikacji i usług w jednym miejscu. Pluralsight oferuje następujące kursy, aby pomóc:
 
-  - [Monitorowanie zasobów i obciążeń Microsoft Azure](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents) pomaga dowiedzieć się, jak używać narzędzi monitorowania Microsoft Azure do monitorowania zasobów sieciowych platformy Azure, a także zasobów lokalnych.
+  - [Microsoft Azure inżynier DevOps: Optymalizacja mechanizmów przesyłania opinii](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) ułatwia przygotowanie do korzystania z Azure monitor, w tym Application Insights, monitorowania i optymalizowania aplikacji sieci Web.
 
-  - [Microsoft Azure inżynier DevOps: Optymalizacja mechanizmów przesyłania opinii](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) pomaga przygotować się do korzystania z Azure monitor, w tym Application Insights i log Analytics do monitorowania i optymalizowania aplikacji sieci Web.
-
+  - [Microsoft Azure Developer: monitorowanie wydajności](https://app.pluralsight.com/library/courses/microsoft-azure-performance-monitoring). Rozpocznij pracę z tym kursem dotyczącym korzystania z Azure Monitor Application Insights w celu kompleksowego monitorowania składników aplikacji działających na platformie Azure.
+  
   - [Microsoft Azure monitorowania element PlayBook Database](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) pomaga dowiedzieć się, jak zaimplementować i używać monitorowania Azure SQL Database, Azure SQL Data Warehouse i Azure Cosmos DB.
 
   - [Instrumentacja aplikacji za pomocą Azure Monitor Application Insights](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument) to szczegółowey kurs dotyczący używania zestawu SDK Application Insights do zbierania danych telemetrycznych i zdarzeń z aplikacji ze składnikami kątowymi i Node. js.
 
-- [Usługa Azure ARC dla serwerów](https://docs.microsoft.com/azure/azure-arc/servers/overview)pozwala dowiedzieć się, jak zarządzać komputerami z systemami Windows i Linux hostowanymi poza platformą Azure, podobnie jak w przypadku zarządzania natywnymi maszynami wirtualnymi platformy Azure.
+  - [Debugowanie i Profilowanie aplikacji](https://www.pluralsight.com/courses/devintersection-azureai-session-31) to nagrywanie z sesji konferencji firmy Microsoft przy użyciu i interpretacji danych udostępnianych przez Azure Monitor Application Insights Snapshot Debugger i profilera.
+
+## <a name="data-analysis"></a>Analiza danych
+
+- Dowiedz się, jak pisać [zapytania dzienników w Azure monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries). Język zapytań Kusto jest podstawowym zasobem służącym do pisania zapytań dzienników Azure Monitor w celu eksplorowania i analizowania danych dzienników między zebranymi danymi z zależności aplikacji zasobów platformy Azure i hybrydowych, w tym aplikacji na żywo. 
+
+- [Kusto Query Language (KQL) od podstaw](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch) to kompleksowy kurs, który obejmuje szczegółowe przykłady dotyczące szerokiego zakresu przypadków użycia i technik analizy dzienników w Azure monitor dziennikach. 
 
 ## <a name="deeper-skills-exploration"></a>Nabywanie głębszych umiejętności
 
