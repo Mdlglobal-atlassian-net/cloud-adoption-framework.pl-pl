@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 7e6b1092f021357e040d811054dc4d40345a0e68
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 00d5709aeb0a922b8f8c5efd26abafe70d70a237
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228952"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755157"
 ---
 <!-- cSpell:ignore PDU -->
 
@@ -33,7 +33,7 @@ Zasadniczo chmurą jest zestaw serwerów fizycznych w jednym lub kilku centrach 
 
 Aby to zrozumieć, przyjrzyjmy się architekturze sprzętu w centrum danych. W każdym centrum danych jest kolekcją serwerów znajdujących się w stojakach serwera. Każdy stojak serwera zawiera wiele **kaset** serwera, a także przełącznik sieci zapewniający łączność sieciową i jednostkę dystrybucji (PDU) dostarczającą moc. Stojaki są czasami pogrupowane razem w większych jednostkach nazywanych _klastrami_.
 
-W każdym stojaku lub klastrze większość serwerów jest wyznaczonych do uruchamiania tych zwirtualizowanych wystąpień sprzętu w imieniu użytkownika. Jednak niektóre serwery uruchamiają oprogramowanie do zarządzania chmurą znane jako kontroler sieci szkieletowej. _Kontroler sieci szkieletowej_ jest aplikacją rozproszoną z wieloma obowiązkami. Przypisuje usługi, monitoruje kondycję serwera i usługi działające na nim, a serwery są uważane za niepowodzenie.
+W każdym stojaku lub klastrze większość serwerów jest wyznaczonych do uruchamiania tych zwirtualizowanych wystąpień sprzętu w imieniu użytkownika. Niektóre serwery działają w ramach oprogramowania do zarządzania chmurą znanego jako kontroler sieci szkieletowej. _Kontroler sieci szkieletowej_ jest aplikacją rozproszoną z wieloma obowiązkami. Przypisuje usługi, monitoruje kondycję serwera i usługi działające na nim, a serwery są uważane za niepowodzenie.
 
 Każde wystąpienie kontrolera sieci szkieletowej jest połączone z innym zestawem serwerów, na których działa oprogramowanie aranżacji w chmurze, zazwyczaj nazywane _frontonem_. Fronton obsługuje usługi sieci Web, interfejsy API RESTful i wewnętrzne bazy danych platformy Azure używane dla wszystkich funkcji wykonywanych przez chmurę.
 

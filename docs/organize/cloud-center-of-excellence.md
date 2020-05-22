@@ -3,17 +3,17 @@ title: Zrozumienie funkcji usługi Cloud Center of doskonałości (CCoE)
 description: Poznaj funkcje usługi Cloud Center doskonałości (CCoE), w tym źródło, zakres i element dostarczany.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/20/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 0f4ccda8c5f05f24fae2b32715029a42e8c33348
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 749a6d4693b07102c0904eca72b87a53998d6b59
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215776"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755769"
 ---
 <!-- cSpell:ignore ccoe deprioritize -->
 
@@ -97,11 +97,11 @@ W dobrej kondycji firmy, ten proces negocjacji jest dynamiczną konwersacją mi�
 
 Przed przystąpieniem do tego modelu należy sprawdzić poprawność odporności firmy na sposób myślenia wzrostu i wygodę o wydaniu centralnych obowiązków. Jak wspomniano powyżej, celem CCoE jest wymiana kontroli nad elastyczność i szybkość.
 
-Ten typ zmiany obejmuje czas, eksperymentowanie i negocjowanie. Podczas tego procesu dojrzewania wystąpią nierówności i ustawienia. Jeśli jednak zespół pozostanie sumienni i nie zostanie zaakceptowany z eksperymentu, istnieje wysokie prawdopodobieństwo pomyślnego poprawienia elastyczności, szybkości i niezawodności. Jednym z największych czynników dotyczących sukcesu lub niepowodzenia CCoE jest obsługa od lidera i kluczowych uczestników projektu.
+Ten typ zmiany obejmuje czas, eksperymentowanie i negocjowanie. Podczas tego procesu dojrzewania wystąpią nierówności i ustawienia. Ale jeśli zespół pozostanie sumienni i nie zostanie odradzany z eksperymentów, istnieje wysokie prawdopodobieństwo pomyślnego poprawienia elastyczności, szybkości i niezawodności. Jednym z największych czynników dotyczących sukcesu lub niepowodzenia CCoE jest obsługa od lidera i kluczowych uczestników projektu.
 
 ### <a name="key-stakeholders"></a>Najważniejsze osoby zainteresowane
 
-Liderem jest pierwszy i najbardziej oczywisty uczestnik projektu. Menedżerowie IT będą odgrywać ważną część. Jednak w trakcie tego procesu jest wymagana obsługa CIO i innych liderów IT na poziomie kierownictwa.
+Liderem jest pierwszy i najbardziej oczywisty uczestnik projektu. Menedżerowie IT będą odgrywać ważną część. Jednak obsługa CIO i innych liderów IT na poziomie kierownictwa jest wymagana w trakcie tego procesu.
 
 Mniej oczywisty jest potrzebą dla uczestników biznesowych. Elastyczność biznesowa i czas wprowadzenia na rynek to kluczowe motywacje do tworzenia CCoE. W związku z tym najważniejsze osoby biorące udział w tych obszarach powinny mieć przyznane zainteresowanie. Przykłady uczestników biznesowych obejmują liderów biznesowych, kadry kierowniczej, dyrektorów operacji i właścicieli produktów biznesowych.
 

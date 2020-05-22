@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Proces refaktoryzacji stref wyładunkowej
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8e1576afb56afd79a1028658609dc62c25775f75
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: b7be19e3d17f55a30d7c544c660b3a417247fd8a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621587"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755682"
 ---
 # <a name="refactor-landing-zones"></a>Refaktoryzacja stref docelowych
 
@@ -35,7 +35,7 @@ Zajęło to lata i istotny nakład na osiągnięcie bieżącego stanu zabezpiecz
 
 ![Typowy blok: działa zbyt wcześnie](../../_images/ready/blocker-act-too-soon.png)
 
-Na powyższym obrazie klient ma cel 100 obciążeń żyjących w chmurze. W tym miejscu klient prawdopodobnie wdroży swoje pierwsze obciążenie. Następnie ich pierwsze 10 lub tak, zanim będą gotowe do wydania jednego z tych obciążeń do środowiska produkcyjnego. Ostatecznie dotrzemy do celu planu wdrożenia i mają niezawodne portfolio w chmurze. Jednak czerwona litera X w obrazie pokazuje, gdzie klienci często są zawieszeń. Oczekiwanie na 100% wyrównanie może opóźnić pierwsze obciążenie przez tygodnie, miesiące lub nawet lata.
+Na powyższym obrazie klient ma cel 100 obciążeń żyjących w chmurze. W tym miejscu klient prawdopodobnie wdroży swoje pierwsze obciążenie. Następnie ich pierwsze 10 lub tak, zanim będą gotowe do wydania jednego z tych obciążeń do środowiska produkcyjnego. Ostatecznie dotrzemy do celu planu wdrożenia i mają niezawodne portfolio w chmurze. Jednak czerwona litera x w obrazie pokazuje, gdzie klienci często są zawieszeń. Oczekiwanie na 100% wyrównanie może opóźnić pierwsze obciążenie przez tygodnie, miesiące lub nawet lata.
 
 ### <a name="blocker-acting-too-late"></a>Blokowanie: działa zbyt późno
 

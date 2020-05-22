@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: e0da2ec011f2fc6a823868d877780906ab472111
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ffa6c7e64f92f920c0caf1a2c6ab81ade4bc7e81
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224310"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754341"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,7 +47,7 @@ Podczas transformacji w chmurze firma i zespoły IT mają możliwość resetowan
 
 **Minimalny, żywotny produkt** jest często używany do definiowania najmniejszej jednostki elementu, który może generować wartości materialne. W przypadku wystąpienia ryzyka biznesowego zespół ds. zarządzania chmurą rozpoczyna się od założenia, że niektóre zasoby zostaną wdrożone w środowisku chmury w pewnym momencie. Są w nim nieznane te zasoby, a zespół może nie mieć pewności, jakie typy danych będą przechowywane w tych zasobach.
 
-Podczas planowania ryzyka biznesowego zespół ds. zarządzania chmurą może skompilować dla najgorszego scenariusza i zmapować każde możliwe zasady do chmury. Jednak zidentyfikowanie wszystkich potencjalnych zagrożeń w firmie dla wszystkich scenariuszy użycia w chmurze może zająć dużo czasu i wysiłku, a także opóźnić implementację zarządzania dla obciążeń w chmurze. Nie jest to zalecane, ale jest opcją.
+Podczas planowania ryzyka biznesowego zespół ds. zarządzania chmurą może skompilować dla najgorszego scenariusza i zmapować każde możliwe zasady do chmury. Zidentyfikowanie wszystkich potencjalnych zagrożeń firmy dla wszystkich scenariuszy użycia w chmurze może zająć dużo czasu i wypróbować, co potencjalnie opóźni wdrożenie zarządzania dla obciążeń w chmurze. Nie jest to zalecane, ale jest opcją.
 
 Z kolei podejście MVP pozwala zespołowi definiować początkowy punkt początkowy i zestaw założeń, które byłyby prawdziwe dla większości/wszystkich zasobów. Ten SPECJALISTa korzystający z tego ryzyka biznesowego będzie obsługiwał początkowe wdrożenia w chmurze o małych możliwościach skalowania lub testowania, a następnie używać ich jako podstawy do stopniowego identyfikowania i korygowaniem nowych zagrożeń związanych z potrzebami biznesowymi lub dodaniu dodatkowych obciążeń do środowiska chmury. Ten proces umożliwia zastosowanie zarządzania w całym procesie wdrażania chmury.
 
