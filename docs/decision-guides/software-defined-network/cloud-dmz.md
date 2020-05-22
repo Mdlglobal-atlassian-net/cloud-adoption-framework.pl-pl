@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 66419aa1ec4ebf7a1513ae064edd3b24e98758b9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 00eefa3b865adf4230a77ed2062bef0a7cf0e854
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224293"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753599"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Sieć zdefiniowana przez oprogramowanie: Strefa DMZ w chmurze
 
@@ -37,9 +37,9 @@ Wdrażanie strefy DMZ w chmurze obejmuje następujące założenia:
 Przed zaimplementowaniem architektury sieci wirtualnych w chmurze DMZ należy wziąć pod uwagę następujące zagadnienia:
 
 - Łączenie sieci lokalnych z sieciami w chmurze zwiększa złożoność wymagań w zakresie zabezpieczeń. Mimo że połączenia między sieciami w chmurze i środowiskiem lokalnym są zabezpieczone, nadal trzeba zapewnić zabezpieczenie zasobów w chmurze. Wszystkie publiczne adresy IP utworzone w celu uzyskania dostępu do obciążeń opartych na chmurze muszą być prawidłowo zabezpieczone przy użyciu [publicznej strefy DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) lub [zapory platformy Azure](https://docs.microsoft.com/azure/firewall/overview).
-- Architektura strefy DMZ w chmurze jest często używana jako trójwymiarowy, podczas gdy łączność jest dodatkowo zabezpieczona i zasady zabezpieczeń są wyrównane między sieciami lokalnymi i w chmurze, co umożliwia szersze wdrażanie architektury sieci hybrydowej w całej skali. Jednak może to dotyczyć również izolowanych wdrożeń z określonymi zabezpieczeniami, tożsamościami i łącznością, które spełniają podejście do obwodu w chmurze.
+- Architektura strefy DMZ w chmurze jest często używana jako trójwymiarowy, podczas gdy łączność jest dodatkowo zabezpieczona i zasady zabezpieczeń są wyrównane między sieciami lokalnymi i w chmurze, co umożliwia szersze wdrażanie architektury sieci hybrydowej w całej skali. Może on również dotyczyć izolowanych wdrożeń z określonymi zabezpieczeniami, tożsamościami i łącznością, które spełniają podejście do obwodu w chmurze.
 
-## <a name="learn-more"></a>Dowiedz się więcej
+## <a name="learn-more"></a>Więcej tutaj
 
 Aby uzyskać więcej informacji na temat implementowania strefy DMZ w chmurze na platformie Azure, zobacz:
 

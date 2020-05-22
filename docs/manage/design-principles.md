@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 41134eacc0fbb5356fdff1a56dc292465e6e8750
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f874edbb899512cce5a3868ffa7426b188cedb7d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223885"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756451"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Zastosuj zasady projektowania i zaawansowane operacje
 
@@ -75,19 +75,19 @@ W ramach każdej specjalizacji następujący dwuetapowy proces jest dostarczany 
 
 ### <a name="improve-system-design"></a>Ulepszanie projektu systemu
 
-Ulepszanie projektu systemu to najbardziej efektywne podejście do usprawnienia operacji na każdej typowej platformie. Ulepszenia projektowania systemu mogą pomóc zwiększyć stabilność i zmniejszyć liczbę przerw w działaniu firmy. Projektowanie poszczególnych systemów jest poza zakresem widoku środowiska na platformie Cloud Adoption Framework. W ramach uzupełnienia tej platformy usługa Azure Architecture Framework oferuje najlepsze rozwiązania w zakresie poprawy odporności i projektowania określonego systemu. Można zastosować te ulepszenia projektowe do projektowania systemów platformy lub określonego obciążenia.
+Ulepszanie projektu systemu to najbardziej efektywne podejście do usprawnienia operacji na każdej typowej platformie. Ulepszenia projektowania systemu mogą pomóc zwiększyć stabilność i zmniejszyć liczbę przerw w działaniu firmy. Projektowanie poszczególnych systemów jest poza zakresem widoku środowiska na platformie Cloud Adoption Framework. Jako uzupełnienie tego środowiska Microsoft Azure dobrze zaprojektowane środowisko zapewnia najlepsze rozwiązania w zakresie poprawy odporności i projektowania określonego systemu. Można zastosować te ulepszenia projektowe do projektowania systemów platformy lub określonego obciążenia.
 
-Usługa Azure Architecture Framework koncentruje się na poprawie pięciu filarów projektowania systemu:
+Dobrze oparta na Microsoft Azure platforma koncentruje się na ulepszaniu na pięć filarów projektowania systemu:
 
-- **Skalowalność:** Skalowanie wspólnych zasobów platformy w celu obsługi zwiększonego obciążenia.
+- **Skalowalność:** Skalowanie typowych zasobów platformy w celu obsługi zwiększonego obciążenia.
 - **Dostępność:** Zmniejszenie prawdopodobieństwa biznesowego przez zwiększenie potencjału czasu przestoju.
 - **Odporność:** Zwiększenie czasów odzyskiwania w celu skrócenia czasu trwania przerw w działaniu.
-- **Zabezpieczenia:** Ochrona aplikacji i danych przed zagrożeniami zewnętrznymi.
+- **Bezpieczeństwo:** Ochrona aplikacji i danych przed zagrożeniami zewnętrznymi.
 - **Zarządzanie:** Procesy operacji specyficzne dla tych typowych zasobów platformy.
 
 Większość przerw w działalności biznesowej oznacza jakąś formę długu technicznego lub brak w architekturze. W przypadku istniejących wdrożeń ulepszenia projektowania systemów można widzieć jako płatności związane z istniejącym długiem technicznym. W przypadku nowych wdrożeń ulepszenia projektowania systemów można widzieć jako unikanie długu technicznego. W następnej sekcji "Automatyczne korygowanie" są sprawdzane sposoby rozwiązywania długów technicznych, których nie można rozwiązać ani nie należy ich dotyczyć.
 
-Aby ulepszyć projekt systemu, Dowiedz się więcej o [architekturze architektury platformy Azure](https://docs.microsoft.com/azure/architecture/guide/pillars). W miarę ulepszania projektu systemu Wróć do tego artykułu, aby znaleźć nowe możliwości ulepszania i skalowania ulepszeń w środowisku.
+Aby pomóc ulepszyć projekt systemu, Dowiedz się więcej o [dobrze zaprojektowanej strukturze Microsoft Azure](https://docs.microsoft.com/azure/architecture/guide/pillars). W miarę ulepszania projektu systemu Wróć do tego artykułu, aby znaleźć nowe możliwości ulepszania i skalowania ulepszeń w środowisku.
 
 ### <a name="automated-remediation"></a>Zautomatyzowane korygowanie
 

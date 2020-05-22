@@ -6,15 +6,15 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/20/2020
-ms.openlocfilehash: 3e11e280e0faa12d7bbb6ee1a951e9eb1546cdab
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: a8ff734e8f29d3cfcc848fc99270aae16b73c8c5
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400984"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755556"
 ---
-# <a name="cloud-operations-functions"></a>Funkcje operacji w chmurze
+# <a name="cloud-operations-functions"></a>Funkcje operacji chmury
 
 Zespół operacyjny koncentruje się na monitorowaniu, naprawianiu i korygowaniu problemów związanych z tradycyjnymi operacjami IT i zasobami. W chmurze wiele kosztów kapitałowych i działań związanych z operacjami jest przesyłanych do dostawcy chmury, dzięki czemu można wykonać operację w celu poprawy i zapewnienia znaczącej dodatkowej wartości.
 

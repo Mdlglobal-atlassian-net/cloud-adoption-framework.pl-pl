@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b55a8fbd96f83339cbc696ac9e3c15cbc2916924
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 974a500a846cfe1a907d91b1b055d6b75b94a3d9
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217697"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755214"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-security-baseline-discipline"></a>Metryki i wskaźniki tolerancji ryzyka w dyscypliny linii bazowej zabezpieczeń
 
@@ -39,7 +39,7 @@ Każda organizacja ma inne środowiska i wymagania dotyczące zabezpieczeń oraz
 
 ## <a name="risk-tolerance-indicators"></a>Wskaźniki tolerancji ryzyka
 
-Platformy w chmurze oferują podstawowy zestaw funkcji umożliwiających małym zespołom wdrażania Konfigurowanie podstawowych ustawień zabezpieczeń bez konieczności dodatkowego planowania. W związku z tym małe zadania deweloperskie/testowe lub eksperymentalne, które nie obejmują danych poufnych, reprezentują stosunkowo niski poziom ryzyka i prawdopodobnie nie będą potrzebne wiele w sposób formalnych zasad dotyczących zabezpieczeń. Jednak, gdy tylko ważne dane lub funkcje o kluczowym znaczeniu są przenoszone do chmury, zwiększa się ryzyko bezpieczeństwa, natomiast tolerancja dla tego ryzyka zmniejsza się szybko. Coraz więcej danych i funkcji jest wdrażanych w chmurze, tym bardziej prawdopodobnie potrzebna jest zwiększona inwestycja w dyscyplinę bazową zabezpieczeń.
+Platformy w chmurze oferują podstawowy zestaw funkcji umożliwiających małym zespołom wdrażania Konfigurowanie podstawowych ustawień zabezpieczeń bez konieczności dodatkowego planowania. W związku z tym małe zadania deweloperskie/testowe lub eksperymentalne, które nie obejmują danych poufnych, reprezentują stosunkowo niski poziom ryzyka i prawdopodobnie nie będą potrzebne wiele w sposób formalnych zasad dotyczących zabezpieczeń. Natychmiast po przeniesieniu ważnych danych lub funkcji o kluczowym znaczeniu do chmury zwiększy się ryzyko bezpieczeństwa, a tolerancja tego ryzyka zmniejsza się szybko. Coraz więcej danych i funkcji jest wdrażanych w chmurze, tym bardziej prawdopodobnie potrzebna jest zwiększona inwestycja w dyscyplinę bazową zabezpieczeń.
 
 We wczesnych etapach wdrażania chmury Pracuj z zespołem ds. zabezpieczeń IT i zainteresowanymi stronami biznesowymi, aby identyfikować [zagrożenia biznesowe](./business-risks.md) związane z bezpieczeństwem, a następnie określić akceptowalną podstawę do odporności na zagrożenia bezpieczeństwa. W tej części struktury wdrażania w chmurze przedstawiono przykłady, ale szczegóły dotyczące zagrożeń i linii bazowych dla firmy lub wdrożeń mogą się różnić.
 

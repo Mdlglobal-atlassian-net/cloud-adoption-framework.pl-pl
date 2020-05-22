@@ -3,16 +3,16 @@ title: Regulowanie i ustalanie wielkości zasobów platformy Azure
 description: Użyj platformy wdrażania w chmurze dla platformy Azure, aby poznać najlepsze rozwiązania związane z wyceną i ustalaniem wielkości zasobów na platformie Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df2231a5e60bebf25124cfdc42110c13f80833e3
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: ad35877a912fd9d52a74c7f44c91bd9fedb559a5
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400661"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755128"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -25,7 +25,7 @@ Podczas dostarczania dyscyplin ładu zarządzanie kosztami jest cyklicznym motyw
 
 ## <a name="best-practices-by-team-and-accountability"></a>Najlepsze rozwiązania według zespołu i odpowiedzialności
 
-Zarządzanie kosztami w całym przedsiębiorstwie to funkcja zarządzania chmurą i działania w chmurze. Jednakże wszystkie decyzje związane z zarządzaniem kosztami powodują zmianę zasobów, które obsługują obciążenie. Gdy te zmiany wpłyną na architekturę obciążenia, wymagane są dodatkowe zagadnienia w celu zminimalizowania wpływu na użytkowników końcowych i funkcje biznesowe. Zespół przyznający chmurę, który skonfigurował lub opracował to obciążenie, może obtrzymać odpowiedzialność za ukończenie tych rodzajów zmian.
+Zarządzanie kosztami w całym przedsiębiorstwie to funkcja zarządzania chmurą i działania w chmurze. Wszystkie decyzje dotyczące zarządzania kosztami powodują zmianę zasobów, które obsługują obciążenie. Gdy te zmiany wpłyną na architekturę obciążenia, wymagane są dodatkowe zagadnienia w celu zminimalizowania wpływu na użytkowników końcowych i funkcje biznesowe. Zespół przyznający chmurę, który skonfigurował lub opracował to obciążenie, może obtrzymać odpowiedzialność za ukończenie tych rodzajów zmian.
 
 - **Tagowanie ma kluczowe znaczenie dla wszystkich rządów.** Upewnij się, że wszystkie obciążenia i zasoby są zgodne z [właściwymi konwencjami nazewnictwa i znakowania](../../ready/azure-best-practices/naming-and-tagging.md) i [Wymuś konwencje tagowania przy użyciu Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags)
 - **Zidentyfikuj możliwości o odpowiednim rozmiarze.** Przejrzyj bieżące wymagania dotyczące wykorzystania zasobów i wydajności w całym środowisku.
@@ -34,7 +34,7 @@ Zarządzanie kosztami w całym przedsiębiorstwie to funkcja zarządzania chmur�
 
 ## <a name="operational-cost-management-best-practices"></a>Najlepsze rozwiązania związane z zarządzaniem kosztami operacyjnymi
 
-Następujące najlepsze rozwiązania są zwykle wykonywane przez członka zarządu chmury lub zespołu operacji w chmurze, zgodnie z poprawkami i innymi procesami konserwacji zaplanowanej. Każdy z tych najlepszych rozwiązań odwzorowuje wskazówki umożliwiające podjęcie odpowiednich działań w dalszej części artykułu.
+Następujące najlepsze rozwiązania są zwykle wykonywane przez członka zarządu chmury lub zespołu operacji w chmurze, zgodnie z poprawkami i innymi procesami konserwacji zaplanowanej. Każdy z tych najlepszych rozwiązań odwzorowuje wskazówki dotyczące podejmowania działań w dalszej części tego artykułu.
 
 - **Tagowanie ma kluczowe znaczenie dla wszystkich rządów:** Upewnij się, że wszystkie obciążenia i zasoby są zgodne z [właściwymi konwencjami nazewnictwa i znakowania](../../ready/azure-best-practices/naming-and-tagging.md) i [Wymuś konwencje tagowania przy użyciu Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags)
 - **Zidentyfikuj możliwości o odpowiednim rozmiarze:** Przejrzyj bieżące wymagania dotyczące wykorzystania zasobów i wydajności w środowisku, aby zidentyfikować zasoby, które pozostawały niedostatecznie wykorzystane przez pewien czas (zwykle więcej niż 90 dni).
@@ -48,10 +48,10 @@ Następujące najlepsze rozwiązania są zwykle wykonywane przez członka zarzą
 
 ## <a name="workload-cost-management-best-practices"></a>Najlepsze rozwiązania związane z zarządzaniem kosztami obciążeń
 
-Przed wprowadzeniem zmian w architekturze zapoznaj się z potencjalnym klientem technicznym dla obciążenia. Ułatwiają przegląd obciążeń przy użyciu funkcji [Przegląd architektury platformy Azure](https://docs.microsoft.com/assessments/?id=azure-architecture-review) i [struktury architektury platformy Azure](https://docs.microsoft.com/azure/architecture/framework) , aby podkierować decyzje dotyczące następujących typów zmian architektury.
+Przed wprowadzeniem zmian w architekturze zapoznaj się z potencjalnym klientem technicznym dla obciążenia. Ułatwiają przegląd obciążenia, korzystając z [dobrze zaprojektowanej Microsoft Azure przeglądowej](https://docs.microsoft.com/assessments/?id=azure-architecture-review) i [Microsoft Azure dobrze zaprojektowanej struktury](https://docs.microsoft.com/azure/architecture/framework) do podejmowania decyzji dotyczących następujących typów zmian architektury.
 
 - **Azure App Service.** Sprawdź wymagania produkcyjne dla wszystkich planów App Service warstwy Premium. Bez znajomości wymagań firmy związanych z obciążeniem i podstawową konfiguracją zasobów, trudno ustalić, czy wymagany jest plan warstwy Premium.
-- **Pozioma nad skalą pionową.** Użycie wielu małych wystąpień może pozwolić na łatwiejsze skalowanie ścieżki, która jest pojedynczym większym wystąpieniem. Pozwala to na automatyzację skalowania, co powoduje utworzenie optymalizacji kosztów. Jednak aby obciążenie było skalowane w poziomie, zespół techniczny musi sprawdzić, czy aplikacja jest idempotentne. Osiągnięcie skali poziomej może najpierw wymagać zmian w kodzie i konfiguracji różnych warstw aplikacji.
+- **Pozioma nad skalą pionową.** Użycie wielu małych wystąpień może pozwolić na łatwiejsze skalowanie ścieżki, która jest pojedynczym większym wystąpieniem. Pozwala to na automatyzację skalowania, co powoduje utworzenie optymalizacji kosztów. Aby obciążenie było skalowane w poziomie, zespół techniczny musi sprawdzić, czy aplikacja jest idempotentne. Osiągnięcie skali poziomej może najpierw wymagać zmian w kodzie i konfiguracji różnych warstw aplikacji.
 - **Automatycznego skalowania.** Włącz funkcję automatycznego skalowania dla wszystkich usług aplikacji, aby umożliwić nadużycie liczbę mniejszych maszyn wirtualnych. Włączenie automatycznego skalowania ma takie samo wymagania idempotentne, które wymaga poznania architektury obciążenia. Obciążenie i zasoby pomocnicze muszą być zatwierdzone do skalowania w poziomie i automatycznego skalowania przez zespół przyjęcia przed wprowadzeniem jakichkolwiek zmian operacyjnych.
 - **Implementuj technologie bezserwerowe:** Obciążenia maszyn wirtualnych są często migrowane "zgodnie z oczekiwaniami", aby uniknąć przestoju. Często maszyny wirtualne mogą hostować zadania, które są sporadyczne i trwają krótko lub, alternatywnie, wiele godzin. Są to na przykład maszyny wirtualne, na których są uruchamiane zadania zaplanowane, takie jak Harmonogram zadań systemu Windows lub skrypty programu PowerShell. Kiedy te zadania nie są uruchomione, koszty związane z maszyną wirtualną i magazynem dysków i tak są naliczane. Po migracji należy rozważyć przeprowadzenie ponownej architektury warstw obciążenia do technologii bezserwerowych, takich jak Azure Functions lub Azure Batch zadań.
 
@@ -126,7 +126,7 @@ Platforma Azure udostępnia różne typy danych magazynu.
 
 <!-- markdownlint-disable MD033 -->
 
-| **Typ danych** | **Szczegóły** | **Wykorzystywani** |
+| **Typ danych** | **Szczegóły** | **Użycie** |
 | ---|---|---|
 | **Obiekty blob** | Zoptymalizowany pod kątem przechowywania dużych ilości obiektów bez struktury, takich jak dane tekstowe lub binarne. | Uzyskiwanie dostępu do danych z dowolnego miejsca za pośrednictwem protokołu HTTP/HTTPS. | Używane na potrzeby scenariuszy przesyłania strumieniowego i dostępu losowego. Na przykład w celu udostępniania obrazów i dokumentów bezpośrednio w przeglądarce, strumieniowego przesyłania wideo i audio oraz przechowywania danych kopii zapasowych i odzyskiwania po awarii. |
 | **Pliki** | Zarządzane udziały plików dostępne za pośrednictwem protokołu SMB 3,0. | Używane podczas migrowania lokalnych udziałów plików i zapewniania wielu dostępu i połączeń do danych plików. |
@@ -142,7 +142,7 @@ Usługa Azure Storage oferuje różne opcje uzyskiwania dostępu do danych bloko
 
 <!-- markdownlint-disable MD033 -->
 
-| **Warstwa dostępu** | **Szczegóły** | **Wykorzystywani** |
+| **Warstwa dostępu** | **Szczegóły** | **Użycie** |
 | --- | --- | --- |
 | **Gorąca** | Wyższe koszty magazynowania, niższy dostęp i koszty transakcji <br><br> Jest to domyślna Warstwa dostępu. | Służy do przechowywania danych w przypadku aktywnego użycia, gdy dostęp do danych jest uzyskiwany często. |
 | **Chłodna** | Niższe koszty magazynowania, wyższe koszty dostępu i transakcji. <br><br> Przechowywanie przez co najmniej 30 dni. | Przechowywanie krótkoterminowe, dane są dostępne, ale dostęp do nich jest uzyskiwany rzadko. |
@@ -156,12 +156,12 @@ Platforma Azure oferuje różne typy kont magazynu i warstw wydajności.
 
 <!-- markdownlint-disable MD033 -->
 
-| **Typ konta** | **Szczegóły** | **Wykorzystywani** |
+| **Typ konta** | **Szczegóły** | **Użycie** |
 | --- | --- | --- |
 | **Warstwa standardowa w wersji 2 do osiągnięcia** | Obsługuje obiekty blob (blokowe, stronicowe, dołączania), pliki, dyski, kolejki i tabele. <br><br> Obsługuje warstwy dostępu gorąca, chłodna i archiwalna. Magazyn strefowo nadmiarowy (ZRS) jest obsługiwany. | Używane w przypadku większości scenariuszy i większości typów danych. Standardowe konta magazynu mogą być oparte na DYSKach twardych lub SSD. |
 | **Warstwa Premium ogólnego przeznaczenia w wersji 2** | Obsługuje dane magazynu obiektów blob (stronicowe obiekty blob). Obsługuje warstwy dostępu gorąca, chłodna i archiwalna. Magazyn strefowo nadmiarowy jest obsługiwany. <br><br> Dane są przechowywane na dysku SSD. | Firma Microsoft zaleca używanie tego typu konta dla wszystkich maszyn wirtualnych. |
 | **Ogólnego przeznaczenia, wersja 1** | Obsługa warstw dostępu nie jest obsługiwana. Nie obsługuje magazynu strefowo nadmiarowego | Używane, jeśli aplikacje potrzebują klasycznego modelu wdrażania platformy Azure. |
-| **Obiekt blob** | Specjalne konto magazynu do przechowywania obiektów bez struktury. Zapewnia blokowe obiekty blob i tylko dołączanie obiektów BLOB (bez plików, kolejek, tabel lub usług magazynu). Zapewnia taką samą trwałość, dostępność, skalowalność i wydajność jak ogólnego przeznaczenia w wersji 2. | Nie można przechowywać stronicowych obiektów BLOB na tych kontach, dlatego nie można przechowywać plików VHD. Warstwę dostępu można ustawić na gorącą lub chłodną. |
+| **Tworzenia** | Specjalne konto magazynu do przechowywania obiektów bez struktury. Zapewnia blokowe obiekty blob i tylko dołączanie obiektów BLOB (bez plików, kolejek, tabel lub usług magazynu). Zapewnia taką samą trwałość, dostępność, skalowalność i wydajność jak ogólnego przeznaczenia w wersji 2. | Nie można przechowywać stronicowych obiektów BLOB na tych kontach, dlatego nie można przechowywać plików VHD. Warstwę dostępu można ustawić na gorącą lub chłodną. |
 
 <!--markdownlint-enable MD033 -->
 
@@ -169,7 +169,7 @@ Platforma Azure oferuje różne typy kont magazynu i warstw wydajności.
 
 Konta magazynu mogą wykorzystywać różne typy nadmiarowości na potrzeby zapewnienia odporności i wysokiej dostępności.
 
-| **Typ** | **Szczegóły** | **Wykorzystywani** |
+| **Typ** | **Szczegóły** | **Użycie** |
 | --- | --- | --- |
 | **Magazyn lokalnie nadmiarowy (LRS)** | Chroni przed awarią lokalną przez replikację w ramach pojedynczej jednostki magazynowej do oddzielnej domeny błędów i domeny aktualizacji. Przechowuje wiele kopii danych w jednym centrum danych. Zapewnia co najmniej 99,999999999% czasu trwałości obiektów w danym roku. | Warte rozważenia, jeśli aplikacja przechowuje dane, które można łatwo odtworzyć. |
 | **Magazyn strefowo nadmiarowy (ZRS)** | Chroni przed awarią centrum danych przez replikowanie w trzech klastrach magazynu w jednym regionie. Każdy klaster magazynu jest fizycznie oddzielony i zlokalizowany we własnej strefie dostępności. Zapewnia co najmniej 99,9999999999 procentową trwałość obiektów w danym roku przez przechowywanie wielu kopii danych w wielu centrach lub regionach. | Warto rozważyć, jeśli potrzebujesz spójności, trwałości i wysokiej dostępności. Może nie chronić przed awarią regionalną, jeśli ma ona trwały wpływ na wiele stref. |
@@ -270,7 +270,7 @@ Dodatkowo należy wziąć pod uwagę ogólne obniżki kosztów dla środowisk ni
 **Dowiedz się więcej:**
 
 - [Użyj tagów](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources) , aby identyfikować cele deweloperskie, testowe lub pytania dotyczące zmiany rozmiarów lub zakończenia.
-- [Maszyny wirtualne Autozamykania](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started#consider-cost-cutting-features-like-auto-shutdown-for-vms) ustawiają nocny czas zakończenia dla maszyn wirtualnych. Użycie tej funkcji spowoduje zatrzymanie maszyn wirtualnych nieprodukcyjnych w każdej porze nocnej, co wymaga od deweloperów ponownego uruchomienia tych maszyn wirtualnych, gdy będą one gotowe do wznowienia rozwoju.
+- [Maszyny wirtualne Autozamykania](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started#consider-cost-cutting-features-like-auto-shutdown-for-vms) ustawiają nocny czas zakończenia dla maszyn wirtualnych. Użycie tej funkcji spowoduje zatrzymanie maszyn wirtualnych nieprodukcyjnych w każdej porze nocnej, co wymaga od deweloperów ponownego uruchomienia tych maszyn wirtualnych, gdy są one gotowe do wznowienia rozwoju.
 - Zachęcaj zespoły programistyczne do używania [Azure DevTest Labs](https://docs.microsoft.com/azure/lab-services/devtest-lab-overview) , aby określić własne podejścia do kontroli kosztów i uniknąć wpływu standardowego chronometrażu automatycznego zamykania w poprzednim kroku.
 
 ## <a name="best-practice-use-azure-cost-management"></a>Najlepsze rozwiązanie: Użyj Azure Cost Management
@@ -348,7 +348,7 @@ Po przeniesieniu zasobów na platformę Azure i włączeniu dla nich rejestrowan
 
 ## <a name="best-practice-optimize-storage"></a>Najlepsze rozwiązanie: Optymalizowanie magazynu
 
-W przypadku zastosowania najlepszych rozwiązań w zakresie wybierania magazynu przed wdrożeniem prawdopodobnie wykorzystaniu pewne korzyści. Istnieją jednak prawdopodobnie dodatkowe koszty magazynowania, które nadal można zoptymalizować. W miarę upływu czasu obiekty blob i pliki stają się nieaktualne. Dane mogą nie być już używane, ale ze względu na wymagania prawne trzeba je przechowywać przez określony okres. W związku z tym może nie być konieczne przechowywanie go w magazynie o wysokiej wydajności, który został użyty do oryginalnego wdrożenia.
+W przypadku zastosowania najlepszych rozwiązań w zakresie wybierania magazynu przed wdrożeniem prawdopodobnie wykorzystaniu pewne korzyści. Prawdopodobnie możesz zoptymalizować dodatkowe koszty magazynowania. W miarę upływu czasu obiekty blob i pliki stają się nieaktualne. Dane mogą nie być już używane, ale ze względu na wymagania prawne trzeba je przechowywać przez określony okres. W związku z tym może nie być konieczne przechowywanie go w magazynie o wysokiej wydajności, który został użyty do oryginalnego wdrożenia.
 
 Identyfikowanie i przenoszenie nieaktualnych danych do tańszych obszarów magazynowania może mieć ogromny wpływ na miesięczny budżet magazynu i oszczędność kosztów. Platforma Azure oferuje wiele sposobów, które ułatwiają identyfikację i przechowywanie tych nieaktualnych danych.
 

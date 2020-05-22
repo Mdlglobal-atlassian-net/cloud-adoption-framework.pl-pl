@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 609c4f9f369e27c699f72cf85ebe311dbf918019
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e70a448cb96f7e6a790731cd558627e03a543b49
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219278"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756587"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -66,7 +66,7 @@ Aby przyspieszyć Azure Stack inicjatywy, możesz skorzystać z pełnego ekosyst
 
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers -->
 
-- Platforma Azure zapewnia, że większość aplikacji i usług certyfikowanych na platformie Azure będzie działała Azure Stack. Kilka niezależnych dostawców oprogramowania rozszerza swoje rozwiązania na Azure Stack. Ci dostawcy oprogramowania to: Bitnami, Docker, Kemp Technologies, Pivoting Cloud Foundry, Red Hat Enterprise Linux i SUSE Linux.
+- Platforma Azure zapewnia, że większość aplikacji i usług certyfikowanych na platformie Azure będzie działała Azure Stack. Kilka niezależnych dostawców oprogramowania rozszerza swoje rozwiązania na Azure Stack. Ci dostawcy oprogramowania to: Bitnami, Docker, Kemp Technologies, pivoting Cloud odlewia, Red Hat Enterprise Linux i SUSE Linux.
 - Można wybrać Azure Stack dostarczana i obsługiwana jako w pełni zarządzana usługa. Wielu partnerów będzie mieć już dostępne oferty usług zarządzanych na platformie Azure i Azure Stack. Ci partnerzy obejmują Tieto, Yourhosting, Revera, napęd i NTT. Ci partnerzy dostarczają usługi zarządzane dla systemu Azure za pośrednictwem programu Cloud Solution Provider (CSP). Rozszerzają one oferty w celu uwzględnienia rozwiązań hybrydowych.
 - Na przykład kompletne, w pełni zarządzane rozwiązanie w chmurze hybrydowej, firma Avanade oferuje ofertę wszystko-część. Obejmuje to usługi transformacji w chmurze, oprogramowanie, infrastrukturę, instalację i konfigurację oraz bieżące usługi zarządzane. Dzięki temu klienci mogą korzystać z Azure Stack tak samo jak na platformie Azure.
-- Dostawcy mogą pomóc przyspieszyć modernizację aplikacji, tworząc kompleksowe rozwiązania platformy Azure dla klientów. Wprowadzają one głębokie zestawy umiejętności platformy Azure, informacje o domenie i branży oraz specjalistyczne informacje, takie jak DevOps. Każda Azure Stack w chmurze to szansa dla dostawcy, aby zaprojektować rozwiązanie i prowadzić do wdrożenia systemu. Mogą również dostosowywać dołączone funkcje i dostarczać działania operacyjne. Przykłady dostawców obejmują firma Avanade, DXC, usługi firmy Dell EMC, nieczołową grupę konsultingową, HPE Pointnext i PwC (dawniej PricewaterhouseCoopers).
+- Dostawcy mogą pomóc przyspieszyć modernizację aplikacji, tworząc kompleksowe rozwiązania platformy Azure dla klientów. Wprowadzają one głębokie zestawy umiejętności platformy Azure, informacje o domenie i branży oraz specjalistyczne informacje, takie jak DevOps. Każda Azure Stack w chmurze to szansa dla dostawcy, aby zaprojektować rozwiązanie i prowadzić do wdrożenia systemu. Mogą również dostosowywać dołączone funkcje i dostarczać działania operacyjne. Przykłady dostawców obejmują firma Avanade, DXC, usługi firmy Dell EMC, nieczołową grupę konsultingową, HPE Pointnext i PWC (dawniej PricewaterhouseCoopers).

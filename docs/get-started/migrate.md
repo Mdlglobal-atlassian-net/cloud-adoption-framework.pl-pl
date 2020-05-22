@@ -3,16 +3,16 @@ title: 'Wprowadzenie: przyspieszanie migracji'
 description: Zalecane kroki dotyczące wyrównania uczestnika projektu, planowania migracji, wdrażania strefy docelowej i migrowania pierwszych 10 obciążeń.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3c61f18aaa2814d9ac92e176524ef9fb448f67a4
-ms.sourcegitcommit: 605752e331f6d8d8ab98d79f400f74f96d7c6a48
+ms.openlocfilehash: b943259df90851704c8a4035da10d313589eb5b2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83424119"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752847"
 ---
 # <a name="get-started-accelerate-migration"></a>Wprowadzenie: przyspieszanie migracji
 
@@ -33,7 +33,7 @@ Jeśli Twój Scenariusz migracji jest nietypowy, możesz uzyskać spersonalizowa
 
 ## <a name="get-started"></a>Wprowadzenie
 
-Proces przeprowadzania migracji obciążeń jest stosunkowo prosty. Ważne jest, aby wydajnie zakończyć proces migracji. Ale strategiczna gotowość do migracji ma jeszcze większy wpływ na osie czasu i pomyślne ukończenie ogólnej migracji.
+Proces przeprowadzania migracji obciążeń jest stosunkowo prosty. Ważne jest, aby wydajnie zakończyć proces migracji. Strategiczna gotowość do migracji ma jeszcze większy wpływ na osie czasu i pomyślne ukończenie ogólnej migracji.
 
 Aby przyspieszyć wdrażanie, należy wykonać kroki w celu obsługi zespołu wdrażania chmury podczas migracji. W tym przewodniku opisano te iteracyjne zadania, które pomagają klientom zacząć od właściwej ścieżki do migracji do chmury. Aby pokazać znaczenie kroków pomocniczych, migracja jest wymieniona w kroku 10 w tym artykule. W rzeczywistości zespół wdrażania w chmurze prawdopodobnie rozpocznie swoją pierwszą migrację pilotażową równolegle z krokami 4 i 5.
 
@@ -181,7 +181,7 @@ Nakłady techniczne wymagane do migracji pierwszych 10 obciążeń są stosunkow
 
 ![Fazy iteracji migracji: Ocena, wdrażanie, wydanie](../_images/migrate/methodology-effort-only.png)
 
-Narzędzia migracji do chmury umożliwiają Migrowanie wszystkich maszyn wirtualnych w centrum danych w jednym przebiegu lub iteracji. Przeprowadzenie migracji mniejszej liczby obciążeń podczas każdej iteracji jest bardziej powszechne. Rozdzielenie migracji na mniejsze fale lub wydania wymaga większego planowania. Jednak mniejsza liczba zmniejsza zagrożenia techniczne i wpływa na zarządzanie zmianami organizacji.
+Narzędzia migracji do chmury umożliwiają Migrowanie wszystkich maszyn wirtualnych w centrum danych w jednym przebiegu lub iteracji. Przeprowadzenie migracji mniejszej liczby obciążeń podczas każdej iteracji jest bardziej powszechne. Rozdzielenie migracji na mniejsze fale lub wydania wymaga większego planowania, ale mniejsza liczba zmniejsza ryzyko techniczne i wpływ zarządzania zmianami organizacji.
 
 W przypadku każdej iteracji zespół rozwiązań w chmurze jest lepszy do migracji obciążeń. Te kroki służą do uruchamiania zespołu technicznego na tej krzywej zapadalności:
 
@@ -212,8 +212,7 @@ Zarządzanie to kluczowy czynnik do długoterminowego sukcesu dowolnego wysiłku
 
 - Wdróż początkową podstawę ładu.
 - Ukończ test porównawczy, aby zaplanować przyszłe ulepszenia.
-- Ryzyko dla osi czasu:
-    - Zasady poprawy i wdrożenia ładu mogą dodać jeden do czterech tygodni na dyscyplinę.
+- Ryzyko dla osi czasu: zasady poprawy i implementacja ładu mogą dodać jeden do czterech tygodni na dyscyplinę.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -235,10 +234,10 @@ Zarządzanie operacjami jest kolejną wymaganiem do osiągnięcia sukcesu migrac
 
 - Wdróż linię bazową zarządzania.
 - Ukończ skoroszyt zarządzania operacjami.
-- Zidentyfikuj wszystkie obciążenia wymagające oceny przeglądu architektury platformy Azure.
+- Zidentyfikuj wszystkie obciążenia, które wymagają Microsoft Azureej oceny z obsługą architektury.
 - Ryzyka dla osi czasu:
   - Przejrzyj skoroszyt: Oszacuj godzinę dla właściciela aplikacji.
-  - Ukończ ocenę przeglądu architektury platformy Azure: Oszacuj godzinę dla każdej aplikacji.
+  - Ukończ Microsoft Azure dobrze zaprojektowanej ocenie przeglądu: Oszacuj godzinę dla każdej aplikacji.
 
 <!-- markdownlint-disable MD033 -->
 <br>

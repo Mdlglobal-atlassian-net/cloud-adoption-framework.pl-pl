@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ac55b8e0918000955924aa735fb46cd9518b9b57
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d87969a9c7b06512a74fac42dc1f57492d1ee3cb
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218003"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756043"
 ---
 <!-- cSpell:ignore MTBF MTTR -->
 
@@ -50,7 +50,7 @@ Każda organizacja ma inne scenariusze operacyjne, ale następujące elementy st
 
 Platformy w chmurze oferują podstawowy zestaw funkcji, które umożliwiają zespołom wdrożenia efektywne zarządzanie małymi wdrożeniami bez konieczności dodatkowego planowania i procesów. W efekcie małe tworzenie/testowanie lub eksperymentalne pierwsze obciążenia, które obejmują stosunkowo małą ilość zasobów opartych na chmurze, reprezentują niski poziom ryzyka i prawdopodobnie nie będą potrzebne w drodze formalnych zasad spójności zasobów.
 
-Jednak w miarę wzrostu rozmiaru chmury w celu zarządzania zasobami staje się znacznie trudniejsze. Dzięki większej liczbie zasobów w chmurze zdolność do określania własności zasobów i zasobów kontroli jest istotna dla minimalizowania zagrożeń. Ponieważ coraz więcej obciążeń o znaczeniu krytycznym są wdrażane w chmurze, czas działania usługi stanie się bardziej krytyczny, a odporność na przerwy w obciążeniu usługi nie zmniejsza się szybko.
+Ponieważ rozmiar w chmurze zwiększa się, złożoność zarządzania zasobami staje się znacznie trudniejsza. Dzięki większej liczbie zasobów w chmurze zdolność do określania własności zasobów i zasobów kontroli jest istotna dla minimalizowania zagrożeń. Ponieważ coraz więcej obciążeń o znaczeniu krytycznym są wdrażane w chmurze, czas działania usługi stanie się bardziej krytyczny, a odporność na przerwy w obciążeniu usługi nie zmniejsza się szybko.
 
 We wczesnych etapach wdrażania chmury Pracuj z zespołem ds. operacji IT oraz zainteresowanymi stronami biznesowymi, aby identyfikować [zagrożenia biznesowe](./business-risks.md) związane ze spójnością zasobów, a następnie określić akceptowalną podstawę do odporności na ryzyko. W tej części struktury wdrażania w chmurze przedstawiono przykłady, ale szczegóły dotyczące zagrożeń i linii bazowych dla firmy lub wdrożeń mogą się różnić.
 

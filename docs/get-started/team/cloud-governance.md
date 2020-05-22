@@ -1,38 +1,38 @@
 ---
 title: 'Wprowadzenie: Tworzenie zespołu ładu w chmurze'
-description: Ustanów zakres, elementy dostarczane przez zespół nadzoru i możliwości przygotowania do pomyślnego zarządzania chmurą.
+description: Ustanów zakres, elementy dostarczane i możliwości zespołu nadzoru, aby przygotować się do pomyślnego zarządzania chmurą.
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: ac6696cf71d43fb8cae3ec5d7e8fe455cf18d989
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: 3b50d45457eb65b0a97a435dcd2d8e70fadc246d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400178"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752051"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>Wprowadzenie: Tworzenie zespołu ładu w chmurze
 
-Zespół zarządzający chmurą gwarantuje, że ryzyko i odporność na ryzyko są prawidłowo oceniane i zarządzane. Ten zespół zapewnia właściwą identyfikację zagrożeń, które nie mogą być tolerowane przez firmę. Osoby na tym zespole konwertują ryzyko na zarządzanie zasadami firmowymi.
+Zespół zarządzający chmurą gwarantuje, że ryzyko związane z wdrażaniem w chmurze i odporność na ryzyko są prawidłowo oceniane i zarządzane. Zespół identyfikuje zagrożenia, które nie mogą być tolerowane przez firmę, i konwertuje ryzyko na zasady firmowe.
 
 ![Wprowadzenie do tworzenia zespołu zarządzania chmurą](../../_images/get-started/governance-team-map.png)
 
-## <a name="step-1-determine-if-a-cloud-governance-team-is-needed"></a>Krok 1. ustalenie, czy zespół ładu chmury jest wymagany
+## <a name="step-1-determine-whether-a-cloud-governance-team-is-needed"></a>Krok 1. ustalenie, czy zespół nadzoru w chmurze jest wymagany
 
-Oficjalne wskazówki w zakresie wdrażania chmury to zawsze Tworzenie zespołu nadzoru w chmurze. Na początku ten zespół może być wyjątkowo mały. Jednak niezależnie od jego rozmiaru ta rola będzie ważna. Jeśli zespół nie jest wymagany, Grupa lub osoba będąca członkiem zespołu powinna wyrazić zgodę na spełnienie obowiązków związanych z [funkcjami ładu w chmurze](../../organize/cloud-governance.md).
+Oficjalne wskazówki dotyczące struktury wdrażania w chmurze dla platformy Azure to zawsze Tworzenie zespołu nadzoru chmurowego. Na początku zespół może być wyjątkowo mały. Bez względu na jego rozmiar rola będzie ważna. Jeśli zespół nie jest wymagany, Grupa lub osoba, która znajduje się w istniejącym zespole przyjęcia, powinna wyrazić zgodę na spełnienie obowiązków związanych z [funkcjami ładu w chmurze](../../organize/cloud-governance.md).
 
 **Dostarczane**
 
 - Ustal, czy potrzebujesz zespołu nadzoru w chmurze.
-- Udokumentowanie decyzji i osób odpowiedzialnych w [szablonie Raci](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) na karcie wyrównanie organizacji.
+- Udokumentowanie decyzji i osób odpowiedzialnych w [Raci (odpowiedzialnych, do których można się skontaktować i poinformowanie o nich)](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) , wybierając kartę **wyrównanie organizacji** .
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- [Funkcje ładu chmury](../../organize/cloud-governance.md) mogą być rozłożone na wiele osób lub zespołów. Posiadanie zespołu, który przechodzi przez tytuł "zespół ds. zarządzania chmurą", ma niewielki znaczenie. Jednak wymagane możliwości powinny nastąpić z podmiotem lub zespołem.
-- W przypadku długoterminowej strategii wdrażania chmurowego firmy można dostarczyć z jednej strefy wyładunkowej w jednym środowisku chmury, a następnie wpływ na działalność nadzoru i operacji może być wystarczająco mały do dostarczenia przez jedną osobę lub jednego zespołu. Jest mało prawdopodobne, że zespół nadzoruje chmurę, ponieważ obsługuje wiele funkcji poza zarządzaniem chmurą. Nawet w przypadku tego zespołu Poniższy przewodnik z wprowadzeniem pomoże Ci upewnić się, że zespół jest przygotowany do dostarczenia do tej ważnej funkcji zarządzania.
+- [Funkcje ładu chmury](../../organize/cloud-governance.md) mogą już być rozłożone na wielu użytkowników lub zespoły. Posiadanie zespołu, który przechodzi przez tytuł "zespół ds. zarządzania chmurą" nie jest ważne, ale wymagane możliwości powinny znajdować się na stronie lub w zespole.
+- Jeśli długoterminowa strategia wdrażania chmury w firmie może zostać dostarczona z jednej strefy wyładunkowej w jednym środowisku chmury, ilość działań związanych z zarządzaniem i operacjami może być wystarczająco mała do dostarczenia przez jedną osobę lub jednego zespołu. Jest mało prawdopodobne, że zespół nadzoruje chmurę, ponieważ obsługuje wiele funkcji poza nadzorem w chmurze. Nawet dla tego zespołu Przewodnik ten może pomóc w zapewnieniu, że może on dostarczyć na ważną funkcję ładu.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -43,11 +43,13 @@ Oficjalne wskazówki w zakresie wdrażania chmury to zawsze Tworzenie zespołu n
 
 ## <a name="step-2-align-with-other-teams"></a>Krok 2. Wyrównywanie z innymi zespołami
 
-Zespół nadzoru gwarantuje spójność i zgodność z zestawem wspólnych zasad. Te zasady pochodzą z ciągłego wyrównania z innymi zespołami. Przed ustanowieniem zasad lub zautomatyzowanym nadzorem w chmurze zespół nadzorujący chmury powinien spełnić inne zespoły identyfikowane w szablonie RACI, aby zapewnić wyrównanie najważniejszych tematów, takich jak zabezpieczenia, koszt, wydajność, operacje i wdrażanie. Kroki 4 i 5 mogą ułatwić wyrównania.
+Zespół nadzoru gwarantuje spójność i zgodność z zestawem wspólnych zasad. Te zasady pochodzą z ciągłego wyrównania z innymi zespołami.
+
+Przed ustaleniem zasad lub zautomatyzowanym nadzorem w chmurze zespół nadzorujący chmury powinien spełnić inne zespoły, które są określone w szablonie RACI. Pomoże to zapewnić wyrównanie najważniejszych tematów, takich jak zabezpieczenia, koszt, wydajność, operacje i wdrażanie. Kroki 4 i 5 mogą ułatwić wyrównania.
 
 **Dostarczane**
 
-- Omawiaj bieżące implementacje stanu i ciągłych planów wdrażania dla każdego zespołu.
+- Omawiaj implementację bieżącego stanu i bieżące plany przyjęcia dla każdego zespołu.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
@@ -64,16 +66,16 @@ Zespół nadzoru gwarantuje spójność i zgodność z zestawem wspólnych zasad
 
 ## <a name="step-3-establish-a-cadence-with-other-teams"></a>Krok 3. nawiązanie erze z innymi zespołami
 
-Wdrażanie w chmurze ogólne jest dostępne w przypadku wersji. Regularne erze wyrównane do tych wersji umożliwi zespołowi nadzoru w chmurze zapoznanie się z wyprzedzeniem i zrozumienie zagrożeń, które zostaną wprowadzone w następnej fazie. Zaangażowanie się z strategiami, wdrażaniem i zespołami operacyjnymi podczas planowania i przeglądów pomoże zespołowi nadzoru nadal korzystać z zagrożeń.
+Wdrażanie w chmurze zwykle znajduje się w fale lub wersjach. Regularna erze, która jest wyrównana z tymi wersjami, umożliwia zespołowi nadzoru chmurowego wyszukiwanie i zrozumienie zagrożeń, które zostaną wprowadzone w następnej fazie Wave. Zaangażowanie się z strategiami, wdrażaniem i zespołami operacyjnymi podczas planowania i przeglądów pomaga również zespołowi nadzoru nadal korzystać z zagrożeń.
 
 **Dostarczane**
 
-- Ustanów erze z każdym z zespołów pomocniczych. Jeśli to możliwe, Wyrównaj ten erze do wersji i planowania cykle.
-- Ustanów osobne erze bezpośrednio z zespołem ds. strategii chmury (lub różnych członków zespołu), aby zapoznać się z ryzykiem związanym z następną analizą przyjęcia oraz ocenić swój poziom tolerancji dla tych zagrożeń.
+- Ustanów erze z każdym z zespołów pomocniczych. Jeśli to możliwe, Wyrównaj ten erze z cyklami wydań i planowania.
+- Ustanów osobne erze bezpośrednio z zespołem ds. strategii chmury (lub różnych członków zespołu), aby zapoznać się z ryzykiem, które są związane z następną analizą przyjęcia i ocenić poziom tolerancji dla tego ryzyka.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- Zapoznaj się z funkcjami nadzoru w [chmurze](../../organize/cloud-governance.md#deliverable) , aby uzyskać dodatkowe wskazówki na temat spotkania cadences.
+- Aby uzyskać dodatkowe wskazówki dotyczące cadences na potrzeby spotkań, zapoznaj się z sekcją "informacje o dostarczeniu" [funkcji zarządzania chmurą](../../organize/cloud-governance.md#deliverable).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -84,7 +86,7 @@ Wdrażanie w chmurze ogólne jest dostępne w przypadku wersji. Regularne erze w
 
 ## <a name="step-4-review-the-methodology"></a>Krok 4: przegląd metodologii
 
-Zapoznaj się z metodologią działania platformy wdrażania w chmurze, aby uzyskać pomoc w ustaleniu przyszłej wizji dotyczącej zarządzania i działającego podejścia do tej wizji.
+Aby pomóc w ustaleniu przyszłej wizji dotyczącej zarządzania i współpracy z tym wzrokiem, zapoznaj się z metodologią rozwiązania w zakresie wdrażania w chmurze.
 
 **Dostarczane**
 
@@ -100,39 +102,39 @@ Zapoznaj się z metodologią działania platformy wdrażania w chmurze, aby uzys
 
 ## <a name="step-5-complete-the-governance-benchmark"></a>Krok 5. Kończenie testu porównawczego ładu
 
-Zarządzanie to szeroki temat. Ta krótka ocena może pomóc zrozumieć, gdzie rozpocząć pracę.
+Zarządzanie to szeroki temat. Krótka ocena może pomóc zespołowi zrozumieć, gdzie rozpocząć pracę.
 
 **Dostarczane**
 
-- Ukończ ocenę testu porównawczego w oparciu o konwersacje z różnymi uczestnikami projektu (lub poproszenie innych zespołów o samodzielne przeprowadzenie oceny).
+- Ukończ ocenę testu porównawczego, który jest oparty na konwersacjach z różnymi uczestnikami projektu. Lub poproszenie innych zespołów o samodzielne przeprowadzenie oceny.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- Oceń potrzeby i priorytety związane z zarządzaniem za pomocą [testu porównawczego](../../govern/benchmark.md)
+- Oceń potrzeby i priorytety związane z zarządzaniem za pomocą [testu porównawczego](../../govern/benchmark.md).
 
 **Zespół odpowiedzialny za:**
 
-- Zespół ds. zarządzania chmurą powinien zrozumieć luki zidentyfikowane w teście porównawczym ładu i zapewnić kierownictwo, który pomaga rozwiązywać luki.
+- Zespół nadzorujący chmur powinien zrozumieć luki, które są identyfikowane w teście porównawczym, a następnie zapewnić kierownictwo, który pomaga rozwiązywać przerwy.
 
 ## <a name="step-6-implement-the-initial-governance-best-practice-and-configuration"></a>Krok 6. Implementowanie początkowego najlepszego rozwiązania i konfiguracji zarządzania
 
-Metodologia rządząca obejmuje dwa podejścia do początkowego ładu. Przejrzyj wszystkie i Implementuj te, które najlepiej pasują do Twoich potrzeb.
+Metodologia rządząca obejmuje dwa podejścia do początkowego ładu. Przejrzyj każde podejście i zaimplementuj te, które najlepiej pasują do Twoich potrzeb.
 
 **Dostarczane**
 
-- Wdróż podstawowe narzędzia do zarządzania i konfiguracje organizacji wymagane do zarządzania środowiskiem w ciągu najbliższych kilku wysiłków.
+- Wdróż podstawowe narzędzia do zarządzania i konfiguracje organizacji, które są wymagane do zarządzania środowiskiem w ciągu najbliższych kilku wysiłków.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- Zapoznaj się z [początkową](../../govern/initial-foundation.md) konfiguracją najlepszych rozwiązań i wskazówki dotyczące implementacji.
+- Aby uzyskać wskazówki dotyczące konfiguracji i implementacji, zapoznaj [się z tematem wstępne zarządzanie chmurą](../../govern/initial-foundation.md).
 
 **Zespół odpowiedzialny za:**
 
-- Zespół nadzorujący w chmurze jest odpowiedzialny za przegląd i wdrażanie najlepszych rozwiązań z zakresu nadzoru i początkowej usługi ładu.
+- Zespół ds. nadzoru chmurowego jest odpowiedzialny za przegląd i wdrażanie najlepszych rozwiązań z zakresu nadzoru i początkowej usługi ładu.
 
-## <a name="step-7-continuously-improve-the-governance-maturity"></a>Krok 7. nieustanne ulepszanie okresu zarządzania
+## <a name="step-7-continuously-improve-governance-maturity"></a>Krok 7. ciągłe ulepszanie okresu ważności ładu
 
-Wymagania dotyczące ładu zwiększają się wraz z ukończeniem dodatkowego wdrożenia chmury. Zachowaj zgodność z ciągłym planem wdrożenia, aby zapewnić, że podejście ładu może utrzymywać odpowiednie poziomy nadzoru i kontroli.
+Wymagania dotyczące ładu zwiększają się wraz z ukończeniem dodatkowych działań związanych z wdrażaniem w chmurze. Zachowaj zgodność z ciągłym planem wdrożenia, aby mieć pewność, że podejście do nadzoru może utrzymywać odpowiednie poziomy zarządzania i kontroli.
 
 **Dostarczane**
 
@@ -140,19 +142,19 @@ Wymagania dotyczące ładu zwiększają się wraz z ukończeniem dodatkowego wdr
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- Zaimplementuj [rozwinięte scenariusze ładu](../../govern/foundation-improvements.md) , aby poprawić początkową podstawę zarządzania.
+- Aby pomóc w ulepszaniu początkowej podstawy ładu, zaimplementuj [rozwinięte scenariusze ładu](../../govern/foundation-improvements.md).
 
 **Zespół odpowiedzialny za:**
 
-- Zespół ds. ładu w chmurze umożliwia dostosowanie z ciągłymi planami wdrażania.
+- Zespół ds. zarządzania chmurą jest odpowiedzialny za dostosowanie z ciągłymi planami wdrażania.
 
 ## <a name="step-8-evaluate-landing-zone-changes"></a>Krok 8. oszacowanie zmian strefy wyładunkowej
 
-Gdy strefy wyładunkowe są wdrażane i rozszerzane, mogą pojawić się nowe zagrożenia lub naruszenia zasad zarządzania. Okresowe przeglądanie konfiguracji strefy wyładunkowej w celu zidentyfikowania odchyleń od zasad, które nie są przechwytywane do natywnych narzędzi do zarządzania w chmurze. Upewnij się, że każde wdrożenie strefy docelowej jest zgodne z wytycznymi dotyczącymi nadzoru strefy docelowej.
+Gdy strefy wyładunkowe są wdrażane i rozszerzane, mogą pojawić się nowe zagrożenia lub naruszenia zasad zarządzania. Okresowo Przeglądaj konfiguracje stref wyładunkowych, aby zidentyfikować wszelkie odchylenia od zasad, które nie są przechwytywane przez natywne narzędzia do zarządzania w chmurze. Upewnij się, że każde wdrożenie strefy docelowej jest zgodne z wytycznymi dotyczącymi nadzoru strefy docelowej.
 
 **Dostarczane**
 
-- Pomóż zespołowi Cloud Platform w opracowaniu ulepszeń strefy docelowej, które są zgodne z zasadami ładu.
+- Pomóż zespołowi Cloud Platform w opracowaniu ulepszeń strefy docelowej, która musi być zgodna z zasadami ładu.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
@@ -164,11 +166,11 @@ Gdy strefy wyładunkowe są wdrażane i rozszerzane, mogą pojawić się nowe za
 
 ## <a name="step-9-adoption-handoffs"></a>Krok 9. wdrażanie etapach
 
-Po zakończeniu nowych działań związanych z wdrażaniem zespół ds. wdrażania chmury będzie przełączać obowiązki operacyjne do zespołu ds. operacji w chmurze i zespołów nadzoru chmurowego. Zachowaj zgodność z wersjami przyjmowania, aby zapewnić odpowiednią dokumentację i wyrównanie zasad w celu zagwarantowania odpowiedzialności za obciążenia.
+Po zakończeniu nowych działań związanych z wdrażaniem w chmurze zespół ds. wdrożenia chmury wychodzi z obowiązków operacyjnych do zespołu operacji w chmurze i zespołów nadzoru chmurowego. Zachowaj zgodność z pakietem Release cadences, aby zapewnić odpowiednią dokumentację i wyrównanie zasad, i aby pomóc zespołowi przyjąć odpowiedzialność za obciążenia.
 
 **Dostarczane**
 
-- Regularnie Przeglądaj i Akceptuj etapach z zespołów wdrażania w chmurze.
+- Regularnie Przeglądaj i Akceptuj etapach z innych zespołów wdrażania w chmurze.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
@@ -183,6 +185,6 @@ Po zakończeniu nowych działań związanych z wdrażaniem zespół ds. wdrażan
 
 ## <a name="whats-next"></a>Co dalej
 
-Każda firma jest unikatowa i w związku z tym ma swoje potrzeby w zakresie zarządzania. Wybierz poziom dojrzałości, który pasuje do Twojej organizacji, i użyj struktury wdrażania w chmurze, aby zapoznać się z praktykami, procesami i narzędziami, które pomogą Ci w tym miejscu.
+Wszystkie firmy są unikatowe i w związku z tym mają swoje potrzeby w zakresie zarządzania. Wybierz poziom dojrzałości, który pasuje do Twojej organizacji, i użyj struktury wdrażania w chmurze, aby zapoznać się z praktykami, procesami i narzędziami, które mogą pomóc w tym miejscu.
 
-W miarę rozwoju chmurowego, zespoły są upoważnione do wdrażania chmury w szybszym tępy. Dalsze wysiłki związane z wdrażaniem w chmurze powodują wyzwolenie dojrzałości w operacjach IT. Opracowywanie [zespołu operacji w chmurze](./cloud-operations.md)lub synchronizacja z zespołem operacji w chmurze w celu zapewnienia, że zarządzanie jest częścią rozwoju operacji.
+W miarę rozwoju chmurowego, zespoły mają prawo do szybszego wdrożenia chmury. Ciągłe działania związane z wdrażaniem w chmurze mają na celu wyzwolenie dojrzałości w operacjach IT. Aby zapewnić, że zarządzanie jest częścią rozwoju operacji, należy opracować [zespół operacyjny w chmurze](./cloud-operations.md) lub zsynchronizować z istniejącym zespołem operacji w chmurze.

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ed92a62d83092a54aa86c58f7b453768fe71ad1f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1ab0d2c8657889a8f4ee16bd4dd9ca4f631b32c2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220281"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754968"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-deployment-acceleration-discipline"></a>Metryki i wskaźniki tolerancji ryzyka w dyscyplinie przyspieszenia wdrożenia
 
@@ -21,7 +21,7 @@ Dowiedz się, jak określić sposób określania tolerancji ryzyka biznesowego z
 
 ## <a name="metrics"></a>Metryki
 
-Przyspieszenie wdrażania skupia się na ryzyku związanym z konfiguracją, wdrażaniem, aktualizowaniem i konserwowaniem zasobów w chmurze. Poniższe informacje są przydatne podczas przyjmowania tej dyscypliny zarządzania chmurą:
+Przyspieszenie wdrażania skupia się na ryzyku związanym z konfiguracją, wdrażaniem, aktualizowaniem i konserwowaniem zasobów w chmurze. Poniższe informacje są przydatne podczas wdrażania dyscypliny przyspieszenia wdrożenia:
 
 - **Niepowodzenia wdrożenia:** Procent wdrożeń, które kończą się niepowodzeniem lub powodują błędne skonfigurowanie zasobów.
 - **Czas wdrożenia:** Ilość czasu wymagana do wdrożenia aktualizacji w istniejącym systemie.

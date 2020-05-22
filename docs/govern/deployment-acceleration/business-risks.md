@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6cd6d309b5c44c55d0409b759950662eccb9f50a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1a2c1f53e5559c9ca161cad5b68266f0cd1ff83d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220451"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755019"
 ---
 # <a name="motivations-and-business-risks-in-the-deployment-acceleration-discipline"></a>Motywacje i ryzyko biznesowe w dyscyplinie przyspieszenia wdrożenia
 
@@ -25,7 +25,7 @@ W tym artykule omówiono przyczyny, w których klienci zazwyczaj przyjmują dysc
 
 Systemy lokalne są często wdrażane przy użyciu obrazów linii bazowej lub skryptów instalacji. Dodatkowa konfiguracja jest zwykle konieczna, co może wiązać się z wieloma krokami lub interwencją człowieka. Te procesy ręczne są podatne na błędy i często skutkują "dryfem konfiguracji", wymagając czasochłonnych zadań związanych z rozwiązywaniem problemów i korygowaniem.
 
-Większość zasobów platformy Azure można wdrożyć i skonfigurować ręcznie za pośrednictwem Azure Portal. Takie podejście może być wystarczające dla Twoich potrzeb, gdy istnieje tylko kilka zasobów do zarządzania. Jednak po rozmieszczeniu Twojej chmury organizacja powinna zacząć integrować automatyzację z procesami wdrażania, aby upewnić się, że zasoby w chmurze zapobiegają dryfowi lub innym problemom wprowadzonym przez procesy ręczne. Przyjęcie podejścia DevOps lub [DevSecOps](https://www.microsoft.com/devsecops) jest często najlepszym sposobem na Zarządzanie wdrożeniami w miarę wczesnych wysiłków związanych z wdrażaniem w chmurze.
+Większość zasobów platformy Azure można wdrożyć i skonfigurować ręcznie za pośrednictwem Azure Portal. Takie podejście może być wystarczające dla Twoich potrzeb, gdy istnieje tylko kilka zasobów do zarządzania. Po rozpoczęciu pracy w chmurze organizacja powinna zacząć integrować automatyzację z procesami wdrażania, aby upewnić się, że zasoby w chmurze zapobiegają dryfowi lub innym problemom wprowadzonym przez procesy ręczne. Przyjęcie podejścia DevOps lub [DevSecOps](https://www.microsoft.com/devsecops) jest często najlepszym sposobem na Zarządzanie wdrożeniami w miarę wczesnych wysiłków związanych z wdrażaniem w chmurze.
 
 Wydajny plan przyspieszania wdrażania zapewnia, że zasoby w chmurze są wdrażane, aktualizowane i poprawnie skonfigurowane, a tym samym w ten sposób. Termin zapadalności strategii przyspieszenia wdrożenia może być również znaczącym czynnikiem w [strategii Cost Management](../cost-management/index.md). Automatyczne Inicjowanie obsługi i konfiguracja zasobów w chmurze pozwala na skalowanie zasobów w dół lub w dół, gdy zapotrzebowanie jest niskie lub ograniczone od czasu, dzięki czemu płacisz tylko za zasoby, które są potrzebne.
 

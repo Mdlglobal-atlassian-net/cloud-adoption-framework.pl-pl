@@ -3,23 +3,23 @@ title: Poznaj funkcje środkowe
 description: Poznaj funkcję centralnego zespołu IT, w tym źródło, zakres, element dostarczany i ryzyko.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/20/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4f12b19227559b299b71ab64a95ef75396951183
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dafa11ea95fdbcf62b389ae4e589fde75320af92
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216558"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755839"
 ---
 # <a name="central-it-functions"></a>Centralne funkcje IT
 
 W miarę skalowania rozwiązań związanych z chmurą funkcje ładu w chmurze same w sobie mogą nie być wystarczające do zarządzania wysiłkami. Gdy przyjęcie jest stopniowe, zespoły będą w sposób ekologiczny rozwijać umiejętności i procesy wymagane do przygotowania do chmury w czasie.
 
-Jeśli jednak jeden zespół wdrażania w chmurze używa chmury w celu osiągnięcia wyników działalności dla dużej firmy, to najprawdopodobniej będzie to w przypadku stopniowego wdrażania. Powodzenie następuje po sukcesie. Ma to również zastosowanie w przypadku wdrażania w chmurze, ale ma to miejsce w skali chmury. Gdy wdrożenie chmurowe rozszerza się z jednego zespołu do wielu zespołów, konieczne jest dodatkowe wsparcie z istniejących pracowników działu IT. Jednak Ci członkowie personelu mogą nie mieć szkoleń i doświadczeń wymaganych do obsługi chmury przy użyciu natywnych narzędzi IT w chmurze. Często dotyczy to tworzenia centralnych zespołów IT zarządzających chmurą.
+Jednak gdy jeden zespół rozwiązań w chmurze używa chmury do osiągnięcia wyniku biznesowego wysokiego profilu, stopniowe wdrażanie to rzadko. Powodzenie następuje po sukcesie. Ma to również zastosowanie w przypadku wdrażania w chmurze, ale ma to miejsce w skali chmury. Gdy wdrożenie chmurowe rozszerza się z jednego zespołu do wielu zespołów, konieczne jest dodatkowe wsparcie z istniejących pracowników działu IT. Jednak Ci członkowie personelu mogą nie mieć szkoleń i doświadczeń wymaganych do obsługi chmury przy użyciu natywnych narzędzi IT w chmurze. Często dotyczy to tworzenia centralnych zespołów IT zarządzających chmurą.
 
 > [!CAUTION]
 > Chociaż jest to typowy etap zapadalności, może to stanowić wysokie ryzyko dla przyjęcia, potencjalnie blokując innowacje i wysiłki w zakresie migracji, jeśli nie jest to efektywnie zarządzane. Zapoznaj się z sekcją ryzyko poniżej, aby dowiedzieć się, jak ograniczyć ryzyko scentralizowanego działania centralizacji.
@@ -82,7 +82,7 @@ Każda usługa w chmurze i fazy zapadalności w organizacji są poprzedzone wyra
 
 W nowoczesnych widokach zasoby są dystrybuowane globalnie. Obowiązki są delegowane. Zarządzanie operacjami jest realizowane przez kombinację pracowników wewnętrznych, dostawców usług zarządzanych i dostawców chmury. W przypadku korzystania z sieci cyfrowych praktyki zarządzania IT są przenoszone do modelu samoobsługowego i delegowanej kontroli z jasno guardrails, aby wymusić zarządzanie. Centralny dział IT może być cennym współautorem rozwiązań chmurowych przez przeprowadzeniem brokera w chmurze i partnera na potrzeby innowacji i elastyczność biznesową.
 
-Centralnie jako funkcja jest również pozycjonowane, aby uzyskać cenne informacje i praktyki z istniejących modeli lokalnych i zastosować te praktyki do dostarczania w chmurze. Jednak ten proces będzie wymagał zmian. Nowe procesy, nowe umiejętności i nowe narzędzia są wymagane do obsługi wdrażania w chmurze na dużą skalę. Po dobieraniu centralnych rozwiązań IT jest to ważny partner w zakresie działań związanych z wdrażaniem w chmurze. Jeśli jednak centralna usługa nie dostosowuje się do chmury lub próbuje użyć chmury jako katalizatora dla kontrolek ścisłych, centralnie przestanie ona być blokowana do przyjęcia, innowacji i migracji.
+Centralnie jako funkcja jest również pozycjonowane, aby uzyskać cenne informacje i praktyki z istniejących modeli lokalnych i zastosować te praktyki do dostarczania w chmurze. Ten proces będzie wymagał zmian. Nowe procesy, nowe umiejętności i nowe narzędzia są wymagane do obsługi wdrażania w chmurze na dużą skalę. Po dobieraniu centralnych rozwiązań IT jest to ważny partner w zakresie działań związanych z wdrażaniem w chmurze. Ale jeśli centralna usługa nie dostosowuje się do chmury lub próbuje użyć chmury jako katalizatora dla kontrolek ścisłych, centralnie przestanie ona być blokowana do wdrażania, innowacji i migracji.
 
 Środki tego ryzyka to szybkość i elastyczność. Chmura upraszcza szybkie wdrażanie nowych technologii. Jeśli nowe funkcje chmury można wdrożyć w ciągu kilku minut, ale centralne przeglądy IT dodają tygodnie lub miesiące do procesu wdrażania, a następnie te scentralizowane procesy stają się główną przeszkód dla sukcesu firmy. Po napotkaniu tego wskaźnika należy rozważyć alternatywne strategie dotyczące dostarczania IT.
 
@@ -118,4 +118,4 @@ Współczesne podejście do scentralizowanego zespołu IT firmy Contoso zapewnia
 Dowiedz się więcej o usługach:
 
 - [Kompilowanie zespołu operacji w chmurze](../get-started/team/cloud-operations.md)
-- [Funkcje operacji w chmurze](./cloud-operations.md)
+- [Funkcje operacji chmury](./cloud-operations.md)

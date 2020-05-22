@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 601481112f2d8144596951e1a68bd7d0bda0b95a
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d9aaa631aab30c2a35719425c6249d80a8aff53b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621765"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755670"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -46,22 +46,22 @@ Strategia strefy docelowej odzwierciedla następujące decyzje.
 | Składnik                    | Decyzje                                                                                         | Alternatywne podejścia                                                                                                                                                                                                                                                                |
 |------------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Narzędzia migracji              | Usługa Azure Site Recovery zostanie wdrożona i utworzony zostanie projekt usługi Azure Migrate.                | [Przewodnik po decyzjach dotyczących narzędzi do migracji](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
-| Rejestrowanie i monitorowanie       | Zostanie zainicjowany obszar roboczy usługi Operational Insights i konto magazynu diagnostycznego.                |                                                                                                                                                                                                                                                                                       |
+| Rejestrowanie i monitorowanie       | Zostanie zainicjowana obsługa obszaru roboczego usługi Operational Insights i konta magazynu diagnostycznego.                |                                                                                                                                                                                                                                                                                       |
 | Sieć                      | Zostanie utworzona sieć wirtualna z podsieciami dla bramy, zapory, serwera przesiadkowego i strefy docelowej.  | [Decyzje dotyczące sieci](../considerations/networking-options.md)                                                                                                                                                                                                                       |
 | Tożsamość                     | Przyjęto założenie, że subskrypcja jest już skojarzona z wystąpieniem usługi Azure Active Directory. | [Najlepsze rozwiązania dotyczące zarządzania tożsamościami](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
 | Zasady                       | W tej strategii założono, że nie mają być stosowane żadne zasady platformy Azure.                        |                                                                                                                                                                                                                                                                                       |
-| Projekt subskrypcji          | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                              | [Tworzenie subskrypcji początkowych](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
-| Grupy zasobów              | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                              | [Skalowanie subskrypcji](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
-| Grupy zarządzania            | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                              | [Organizowanie subskrypcji i zarządzanie nimi](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                                |
+| Projekt subskrypcji          | N/A — zaprojektowana dla jednej subskrypcji produkcyjnej.                                              | [Tworzenie subskrypcji początkowych](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
+| Grupy zasobów              | N/A — zaprojektowana dla jednej subskrypcji produkcyjnej.                                              | [Skalowanie subskrypcji](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
+| Grupy zarządzania            | N/A — zaprojektowana dla jednej subskrypcji produkcyjnej.                                              | [Organizowanie subskrypcji i zarządzanie nimi](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                                |
 | Dane                         | Nie dotyczy                                                                                               | [Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)                       |
 | Magazyn                      | Nie dotyczy                                                                                               | [Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                                        |
 | Standardy nazewnictwa i tagowania | Nie dotyczy                                                                                               | [Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                    |
 | Zarządzanie kosztami              | Nie dotyczy                                                                                               | [Śledzenie kosztów](../azure-best-practices/track-costs.md)                                                                                                                                                                                                                              |
-| Wystąpienia obliczeniowe                      | Nie dotyczy                                                                                               | [Opcje obliczeń](../considerations/compute-options.md)                                                                                                                                                                                                                               |
+| Compute                      | Nie dotyczy                                                                                               | [Opcje obliczeń](../considerations/compute-options.md)                                                                                                                                                                                                                               |
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>Dostosowywanie lub wdrażanie strefy docelowej
 
-Dowiedz się więcej i Pobierz przykład referencyjny dotyczący CAF migracji strefy docelowej w celu wdrożenia lub dostosowania z [przykładów Azure Blueprint][deploy-sample].
+Dowiedz się więcej i Pobierz przykład referencyjny dotyczący CAF migracji strefy ładunkowej w celu wdrożenia lub dostosowania z [przykładów planu platformy Azure][deploy-sample].
 
 > [!div class="nextstepaction"]
 > [Wdróż przykład strategii][deploy-sample]
@@ -77,4 +77,4 @@ Po wdrożeniu pierwszej strefy docelowej można przystąpić do [rozszerzania st
 
 <!-- links -->
 
-[deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy
+[Deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy

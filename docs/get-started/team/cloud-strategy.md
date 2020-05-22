@@ -1,66 +1,67 @@
 ---
 title: 'Wprowadzenie: Tworzenie zespołu strategii chmury'
-description: Ustanów zespół strategii chmury w celu zapewnienia, że proces wdrażania w chmurze będzie postępować zgodnie z rezultatami biznesowymi i przygotowano do pomyślnego wdrożenia chmury.
+description: Ustanów zespół ds. strategii w chmurze, aby upewnić się, że proces wdrażania chmury będzie postępować zgodnie z rezultatami biznesowymi i przygotowano do pomyślnego przeprowadzenia migracji do chmury.
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: a885de58423bea1cef9e2e87ef4d09f4cb6e9363
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: c39b7d42562b54b1bcd58aa192f9563f798ca88f
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399874"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755189"
 ---
 # <a name="get-started-build-a-cloud-strategy-team"></a>Wprowadzenie: Tworzenie zespołu strategii chmury
 
-Każda podróż dotycząca wdrażania w chmurze będzie potrzebować pewnego poziomu strategii, aby zakończyć pracę. Ten przewodnik wprowadzający pomoże Ci ustalić dedykowanego zespołu lub zespołu wirtualnego (v-Team), aby zapewnić pełną strategię chmury. Pierwszym krokiem jest podjęcie decyzji, czy potrzebny jest zespół strategii, czy też istniejący członek zespołu może dostarczyć strategię chmury jako obowiązki rozproszone.
+W celu pomyślnego zakończenia każdej podróży wdrożenia w chmurze konieczne jest zajęcie pewnego poziomu planowania strategicznego. Ten przewodnik Get-Started został zaprojektowany z założenia, aby pomóc w ustaleniu dedykowanego zespołu lub zespołu wirtualnego (v-Team), który może kompilować i dostarczać w ramach kompleksowej strategii chmurowej.
 
-Utwórz zespół strategii chmury, aby uzyskać określone motywacje i wyniki biznesowe oraz sprawdzić i zachować wyrównanie między priorytetami biznesowymi i zastosowaniami chmury. Gdy wyniki biznesowe mają wpływ na funkcje biznesowe, zespół strategii powinien uwzględnić liderów firmy w całej organizacji. Celem zespołu strategii chmurowej jest tworzenie materialnych wyników firmy, które są obsługiwane przez technologie chmurowe. Ogólnie rzecz że ten zespół gwarantuje postęp wdrażania chmury w zakresie wyrównania z rezultatami biznesowymi. Tam, gdzie to możliwe, wyniki biznesowe i zespół strategii chmury powinny być zdefiniowane wczesnie w procesie.
+Pierwszym krokiem w podróży jest podjęcie decyzji o tym, czy potrzebny jest zespół strategiczny, czy istniejący członkowie zespołu mogą dostarczać strategię chmury jako rozproszoną odpowiedzialność.
+
+Niezależnie od wybranej metody, należy utworzyć zespół strategii chmurowej, który definiuje motywacje i wyniki biznesowe oraz sprawdza i utrzymuje wyrównanie między priorytetami biznesowymi i zastosowaniami chmury. Gdy wyniki biznesowe mają wpływ na funkcje biznesowe, zespół strategii powinien uwzględnić liderów firmy w całej organizacji. Celem zespołu strategii chmurowej jest tworzenie materialnych wyników firmy, które są obsługiwane przez technologie chmurowe. Ogólnie rzecz że ten zespół gwarantuje postęp wdrażania chmury w zakresie wyrównania z rezultatami biznesowymi. O ile to możliwe, wyniki biznesowe i wysiłki zespołu strategii chmurowej powinny być zdefiniowane na początku procesu.
 
 ![Wprowadzenie do tworzenia zespołu strategii chmury](../../_images/get-started/strategy-team-map.png)
 
 > [!NOTE]
-> Ten artykuł zawiera informacje ułatwiające strategię. Gdy zespół strategii chmurowej zacznie działać, ułatwi to, aby ułatwić zespołowi pozostawanie i tymczasowe utrzymanie odpowiedzialności za tworzenie wyrównania. Ułatwienia dla strategii są często osobami, które są najbardziej odpowiedzialne za powodzenie podróży w chmurze. Ta rola jest również zwykle utrzymywana przez Menedżera programu, architekta lub konsultanta.
+> W tym artykule omówiono *ułatwienia dla strategii*, kluczowy gracz w procesie wdrażania w chmurze. Rola jest zwykle utrzymywana przez Menedżera programu, architekta lub konsultanta. W miarę jak zespół strategii chmurowych i rozpoczyna pracę, ułatwiający strategię jest tymczasowym kontem do tworzenia wyrównania i utrzymywania zespołu z celami biznesowymi. Uproszczenie strategii jest często osobą najbardziej odpowiedzialną za pomyślne przejście w chmurze.
 
-## <a name="step-1-determine-if-a-cloud-strategy-team-is-needed"></a>Krok 1. ustalenie, czy zespół strategii chmury jest wymagany
+## <a name="step-1-determine-whether-a-cloud-strategy-team-is-needed"></a>Krok 1. ustalenie, czy zespół strategii chmury jest wymagany
 
-Zespół ds. strategii w chmurze jest gotowy do korzystania z możliwości w chmurze, zwanej możliwością strategii chmury. Tworzenie zespołu strategii chmury wymagało zdefiniowanej grupy dedykowanych liderów firmy, zainteresowanych stron i menedżerów programu, aby zaspokoić regularne, cykliczne erze, aby postępować zgodnie z strategią wdrożenia chmury.
+Zespół ds. strategii w chmurze jest gotowy do korzystania z możliwości w chmurze, zwanej możliwością strategii chmury. Tworzenie zespołu strategii chmurowej wymaga zdefiniowanej grupy dedykowanych liderów firmy, zainteresowanych udziałowców i menedżerów programu, aby postępować regularnie i powtarzać strategię, która umożliwia tworzenie rozwiązań w chmurze.
 
 **Dostarczane**
 
-- Ustal, czy potrzebujesz zespołu strategii chmurowej.
+- Ustal, czy Twoja firma wymaga zespołu strategii chmurowej.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-Ten zespół jest często wymagany, jeśli wdrażanie w chmurze zostało zaimportowane do firmy, wymaga ciągłej pomocy technicznej dla kierownictwa lub stanowi zagrożenie dla firmy.
+Tworzenie zespołu strategii chmurowej jest często konieczne z następujących powodów:
 
 <!-- markdownlint-disable MD033 -->
-<br>
 
-|                                                     |                                                                                                                            |
-|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| **Ważne dla firmy:** | <li> Nakłady związane z wdrażaniem chmury mają widoczność na poziomie tablicy. <li> Pomyślna praca z wdrażaniem w chmurze poprawi rozmieszczenie rynku, przechowywanie klientów lub przychody. <li> Programy w portfolio wdrażania są mapowane bezpośrednio na strategiczne wyniki biznesowe. <li> Portfel obciążeń w ramach tego nakładu pracy jest strategiczny, krytyczny dla działalności i może mieć wpływ na wiele jednostek. |
-| **Wymaga ciągłego wsparcia dla kierownictwa:** | <li> W ramach wysiłków związanych z wdrażaniem w chmurze będzie miał wpływ na sposób zarządzania zmianą organizacyjną. <li> Wysiłki związane z wdrażaniem w chmurze wymagają dodatkowego szkolenia od wielu użytkowników biznesowych i mogą zakłócać funkcje biznesowe. <li> Istniejący zespół operacji IT lub dostawca jest uzasadniony do pozostania w istniejących centrach danych. <li> Istniejący zespół IT nie jest w pełni kupowany. |
-| **Przedstawia ryzyko dla działalności:** | <li> Niepowodzenie przeprowadzenia migracji w określonym przedziale czasu spowoduje negatywny wpływ na rynek lub zwiększenie kosztów hostingu. <li> Obciążenia styczeń do wdrożenia muszą być chronione przed wyciekami danych, które mogą wpływać na sukces firmy lub bezpieczeństwo klientów. <li> Metryki używane do mierzenia nakładu pracy w chmurze są wyrównane do firmy, tworzą zależność i ryzyko związane z sukcesem technicznym. |
+| Przyczyna | Zagadnienia do rozważenia |
+|---|---|
+| **Wdrażanie w chmurze jest ważne dla firmy** | <li> Wysiłki związane z wdrażaniem chmury mają widoczność na poziomie tablicy. <li> Pomyślna praca z wdrażaniem w chmurze poprawi rozmieszczenie rynku, przechowywanie klientów lub przychody. <li> Programy w portfolio wdrażania są mapowane bezpośrednio na strategiczne wyniki biznesowe. <li> Portfel obciążeń w ramach tego nakładu pracy jest strategiczny i krytyczny i może mieć wpływ na wiele jednostek biznesowych. |
+| **Wdrożenie chmury wymaga ciągłej pomocy technicznej** | <li> Proces wdrażania w chmurze będzie miał wpływ na sposób zarządzania zmianą organizacyjną. <li> Nakład pracy będzie wymagał dodatkowego szkolenia od wielu użytkowników biznesowych i może przerwać niektóre funkcje biznesowe. <li> Istniejący zespół operacji IT lub dostawca jest umotywowany do pozostawania w istniejącym centrum danych. <li> Istniejący zespół IT nie mógł w pełni zakupionego nakładu pracy. |
+| **Wdrażanie w chmurze przedstawia ryzyko dla firmy** | <li> Niepowodzenie przeprowadzenia migracji w określonym przedziale czasu spowoduje negatywny wpływ na rynek lub zwiększenie kosztów hostingu. <li> Obciążenia styczeń do wdrożenia muszą być chronione przed wyciekami danych, które mogą wpływać na sukces firmy lub bezpieczeństwo klientów. <li> Metryki używane do mierzenia nakładu pracy w chmurze są wyrównane do firmy, tworzą zależność i ryzyko związane z sukcesem technicznym. |
 
-Jeśli poniżej przedstawiono istniejące wymagania, następujące kroki pomogą Ci w ustaleniu zespołu strategii chmurowej.
+Jeśli którykolwiek z powyższych powodów lub wszystkie z powyższych przyczyn reprezentują istniejące zagadnienia biznesowe, informacje zawarte w dalszej części tego artykułu pomogą Ci w ustaleniu zespołu strategii chmurowej.
 
 <!-- markdownlint-disable MD026 -->
 
-**Zespół odpowiedzialny za:**
+**Osoba odpowiedzialna lub zespół:**
 
-- Ułatwienia dla strategii są odpowiedzialne za określenie, czy jest wymagany zespół strategii chmury.
+- Ułatwienia dla strategii są odpowiedzialne za określenie, czy zespół strategii chmurowych jest wymagany.
 
 ## <a name="what-if-i-dont-need-a-cloud-strategy-team"></a>Co zrobić, jeśli nie potrzebuję zespołu strategii chmurowych?
 
-Zapoznaj się z [funkcjami strategii chmury](../../organize/cloud-strategy.md) , które są wymagane do dostarczenia na potrzeby strategii chmury. Nie każda organizacja będzie potrzebować dedykowanego zespołu lub zespołu w celu spełnienia wymagań strategicznych. W [szablonie Raci](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)zapoznaj się z podstawowymi accountabilitiesami strategii i zidentyfikuj osobę w swoim zespole, który będzie odpowiedzialny za każde z nich. Jeśli jedna osoba zajmie się wszystkimi tymi accountabilitiesami, prosta Zastąp "strategię chmury" tą nazwą osoby w szablonie RACI.
+Zapoznaj się z [funkcjami strategii chmury](../../organize/cloud-strategy.md) , które są wymagane do dostarczenia na potrzeby strategii chmury. Nie każda organizacja wymaga dedykowanego zespołu lub zespołu wirtualnego (v-Team), aby pomóc sprostać potrzebom strategicznym. W ramach [szablonu Raci (odpowiedzialny, umożliwiający skontaktowanie się z nim i poinformowany)](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)Utwórz listę podstawowych accountabilities strategii i zidentyfikuj osobę w zespole, którzy będą mogli korzystać z każdego z nich. Jeśli jedna osoba zajmie się wszystkimi tymi accountabilitiesami, prosta Zastąp "strategię chmury" tą nazwą osoby w szablonie RACI.
 
 ## <a name="step-2-establish-the-cloud-strategy-team"></a>Krok 2. nawiązanie zespołu strategii chmury
 
-Zespół strategii chmury będzie obsługiwał jako cykliczny punkt wyrównania między liderami biznesowymi i liderami. W zależności od poziomów ważności, ryzyka i wsparcia wykonawczego, który spełnia potrzeby zespołu strategii, uczestnictwo i składanie zespołu może się różnić.
+Zespół strategii chmury służy jako cykliczny punkt wyrównania między liderami biznesowymi i liderami IT. W zależności od poziomów ważności, ryzyka i wsparcia wykonawczego, które odpowiadają potrzebom zespołu strategii, uczestnictwo w i kompozycja zespołu mogą się różnić.
 
 **Dostarczane**
 
@@ -68,97 +69,51 @@ Zespół strategii chmury będzie obsługiwał jako cykliczny punkt wyrównania 
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- Udokumentowanie i udostępnianie przyczyny od kroku 1 powyżej, aby zidentyfikować uczestników, którzy będą korzystać z regularnego zaangażowania i mogli pomóc w zwiększeniu strategii.
-- Zapoznaj się z [funkcjami strategii chmury](../../organize/cloud-strategy.md) , aby poznać pomysły dotyczące osób, które mogą być dobrze dopasowane.
-- Przejrzyj [minimalny zakres](../../organize/cloud-strategy.md#minimum-scope) i [element dostarczany](../../organize/cloud-strategy.md#deliverable) dla tej funkcji, aby sprawdzić poprawność wyrównania i przepustowości z każdego potencjalnego uczestnika.
-- Zapoznaj się z różnymi [przykładami konfiguracji Raci](../../organize/raci-alignment.md#strategic-alignment) , aby określić odpowiedni wykres Raci w oparciu o bieżące struktury zespołu. Lub użyj jednego z przykładowych kart zawartych w szablonie RACI.
-- Udokumentowanie wyników w [szablonie Raci](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) na karcie wyrównanie organizacji.
+- Udokumentowanie i udostępnianie przyczyny od kroku 1 w celu zidentyfikowania zainteresowanych osób, które będą korzystały z regularnego zaangażowania i będą mogły pomóc w zwiększeniu strategii.
+- Aby poznać pomysły dotyczące osób, które mogą być dobrze dopasowane, zobacz [funkcje strategii chmury](../../organize/cloud-strategy.md).
+- Aby sprawdzić poprawność wyrównania i przepustowości z każdego potencjalnego uczestnika, przejrzyj [minimalny zakres](../../organize/cloud-strategy.md#minimum-scope) i [element dostarczany](../../organize/cloud-strategy.md#deliverable) dla tej funkcji.
+- Aby ustalić właściwy wykres RACI na podstawie aktualnych struktur zespołu, Przejrzyj różne [przykłady konfiguracji Raci](../../organize/raci-alignment.md#strategic-alignment)lub wybierz jedną z przykładowych kart w dolnej części szablonu Raci.
+- Udokumentować wyniki w [szablonie Raci](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) , wybierając kartę **wyrównanie organizacji** .
 
-**Zespół odpowiedzialny za:**
+**Osoba odpowiedzialna lub zespół:**
 
 - Ułatwienia dla strategii są odpowiedzialne za ustanowienie zespołu strategii chmurowej.
 
 ## <a name="step-3-establish-a-cadence"></a>Krok 3. ustanawianie elementu erze
 
-Na wczesnym etapie wdrażania chmury ten zespół będzie wymagał częstych interakcji i iteracyjnych przeglądów strategii. Po rozpoczęciu przyjęcia ta częstotliwość zostanie zredukowana, przejdziesz do fokusu na status i sprawdzanie poprawności/korektę priorytetów zaległości.
+Na wczesnym etapie wdrażania chmury zespół będzie wymagał częstych interakcji i iteracyjnych przeglądów strategii. Jak zostanie rozpoczęte przyjęcie, ta częstotliwość będzie się zmniejszać, przechodzą do fokusu na status i weryfikację lub korektę priorytetów zaległości.
 
-Kroki 4, 5 i 6 poniżej powinny zostać wykonane w ciągu 4 do 6 tygodni. Pozostałe kroki zostaną wykonane podczas kolejnych spotkań. Więcej spotkań o wyższej częstotliwości należy utrzymywać do momentu, gdy krok 7 poniżej zostanie rozpoczęty przez zespół.
+Kroki 4, 5 i 6 należy wykonać w ciągu czterech do sześciu tygodni. Pozostałe kroki zostaną wykonane podczas kolejnych spotkań. Spotkania o większej częstotliwości powinny być utrzymywane do momentu rozpoczęcia kroku 7 przez zespół.
 
 **Dostarczane**
 
-Przejrzyj sugerowane erze spotkania i Zaplanuj spotkania ze wszystkimi uczestnikami zespołu strategii.
+Przejrzyj sugerowane cadences spotkań i Zaplanuj spotkania ze wszystkimi uczestnikami zespołu strategii.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- Przejrzyj sugerowane krótkoterminowe i długoterminowe [erze spotkań](../../organize/cloud-strategy.md#deliverable) , aby wyrównać każdy z udokumentowanych uczestników.
+- Przejrzyj sugerowane krótkoterminowe i długoterminowe [cadences spotkań](../../organize/cloud-strategy.md#deliverable) , aby wyrównać każdy z udokumentowanych uczestników.
 
-**Zespół odpowiedzialny za:**
+**Osoba odpowiedzialna lub zespół:**
 
-- Ułatwienia dla strategii są odpowiedzialne za ustanowienie erze dla zespołu strategii chmurowej.
+- Ułatwienia dla strategii są odpowiedzialne za ustanowienie odpowiednich erze dla zespołu strategii chmurowej.
 
 ## <a name="step-4-establish-a-motivation-driven-strategy"></a>Krok 4. nawiązanie strategii opartej na motywacji
 
-Podróże w chmurze obejmują podejście do migracji i innowacji. Gdy zespoły techniczne definiują strategię, powszechne jest, aby strategia była zależna od bieżących umiejętności i siły zespołów. Taka strategia jest prawdopodobnie sukcesem technicznym, ale jest narażona na wygenerowanie ograniczenia wpływu na działalność biznesową.
+Podróże w chmurze obejmują podejścia do migracji i innowacji. Gdy zespoły techniczne definiują strategię, powszechne jest, aby strategia była zależna od aktualnych umiejętności i siły członków zespołu. Taka strategia jest prawdopodobnie sukcesem technicznym, ale stwarza ryzyko związane z wytwarzaniem ograniczonego wpływu na działalność biznesową.
 
-Pierwszym celem zespołu strategii chmury jest zdefiniowanie strategii wysokiego poziomu na podstawie motywacji biznesowej. Może to być zwykle wykonywane w jednogodzinowej warsztatie ze wszystkimi członkami zespołu strategii chmurowych. Będzie także wymagało co najmniej jednej kolejnej godziny, aby przejrzeć motywację z różnymi zespołami technicznymi i zainteresowanymi stronami.
+Pierwszym celem zespołu strategii chmury jest zdefiniowanie strategii wysokiego poziomu, która opiera się na motywacji biznesowej. Może to być zwykle wykonywane w jednogodzinowej warsztatie ze wszystkimi członkami zespołu strategii chmurowych. Wymaga również co najmniej jednej dodatkowej godziny, aby przejrzeć motywacje biznesowe z różnymi zespołami technicznymi i zainteresowanymi stronami.
 
-W trakcie pierwszej warsztatu każdy członek zespołu powinien ustalić priorytet motywacji w artykule [Omówienie motywacji](../../strategy/motivations.md) i udostępnić swoje priorytety górne. Ułatwienia dla strategii ułatwiają przeprowadzenie jednego lub większej liczby rund konwersacji do momentu, w którym kompozycja okaże się w kierunku migracji lub innowacji. Niektóre z tych kategorii prawdopodobnie zapoznają się z najważniejszymi listami, co może wymagać, aby zespół przeszedł na swoją listę przed pochyleniem jasnego wzorca w jeden kierunek lub w innym.
+W trakcie pierwszej warsztatu każdy członek zespołu powinien określić priorytet swoich motywacji w artykule [Omówienie motywacji](../../strategy/motivations.md) i udostępnić jego najważniejsze priorytety. Ułatwiający strategię pomaga w obsłużyniu co najmniej jednego zaokrąglenia do konwersacji do momentu, w którym kompozycja nie będzie w kierunku migracji ani innowacji. Niektóre z tych kategorii prawdopodobnie zapoznają się z najważniejszymi listami, co może wymagać, aby zespół osiągnął szczegółowe dane na jego liście przed niezwykłym wzorcem.
+
+W tym ćwiczeniu będą nawiązywać konwersacje, które mogą pomóc w tworzeniu dopasowania między członkami zespołu. Element dostarczany będzie pomocny w pozostałej części strategii i planowanego planu.
 
 **Dostarczane**
-
-W tym ćwiczeniu będą nawiązywać konwersacje, które mogą pomóc w tworzeniu dopasowania między członkami zespołu. Element dostarczany będzie pomocny w pozostałej części strategii i zgodnie z planem.
 
 - Rejestruj motywacje w [strategii i szablonu planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- [Poznaj motywacje](../../strategy/motivations.md): krytyczne zdarzenia biznesowe i niektóre motywacje do migracji mogą być wrażliwe na koszty, zwiększając znaczenie kontroli kosztów dla wszystkich kolejnych wysiłków. Inne przeszukiwane motywacje dotyczące innowacji lub wzrostu dzięki migracji mogą być bardziej ukierunkowane na dochody w oparciu o linię górną. Zrozumienie motywacji pomoże zrozumieć, jak wysoki jest priorytet zarządzania kosztami.
-
-<!-- markdownlint-disable MD033 -->
-<br>
-
-| Zespół odpowiedzialny za | Osoby odpowiedzialne i wspierające |
-| --- | --- |
-| <li> Zespół strategii chmury | Przejrzyj motywacje i ogólny kierunek strategiczny dzięki: <li> Zespół nadzorujący chmury <li> Zespół ds. wdrażania chmury <li> Centrum w chmurze doskonałości lub środkowe |
-
-## <a name="step-5-establish-business-outcomes"></a>Krok 5. nawiązanie wyników firmy
-
-Każdy członek zespołu ds. strategii chmury jest proszony o zdefiniowanie co najmniej jednego rezultatu biznesowego, z określonymi metrykami do mierzenia sukcesu firmy. Jeśli ta Metryka może zostać ulepszona jako bezpośredni wynik pracy związanej z wdrażaniem w chmurze, członek zespołu jest proszony o udostępnienie oczekiwanego wpływu. Jeśli nakłady związane z wdrażaniem chmury nie wpływają na metryki, ale umożliwią firmie lepsze korzystanie z tej metryki, należy ją udokumentować.
-
-Wiele liderów w zespole strategii chmury może być konieczne rozłożyć ich podstawowe metryki w celu zidentyfikowania wyników, których może dotyczyć zajmowanie lub wpływ na rozwój chmury. W przypadku, gdy nie ma to wpływu na członków zespołu lub nie ma wpływu na tę podróż, będzie trudno zachować swój poziom zainteresowania w programie. Ułatwienia powinny współpracować z każdym liderem w celu opracowania wyrównanej metryki i przeprowadzenia jej ocen, niezależnie od tego, czy członek zespołu jest odpowiednią osobą do wzięcia udziału w zespole strategicznym.
-
-Wpływ na wyniki biznesowe może zająć trochę czasu. Te typy zmian zwykle przechodzą wolniej niż zmiany techniczne. Aby zachować przejrzystość, zespół strategii powinien wyrazić zgodę na krótsze metryki szkoleniowe. Te metryki mogą obejmować techniczne i inne zmiany, które można sprawdzić na każdym spotkaniu zespołu, aby przedstawić postęp do celów technicznych i wyników działalności biznesowej.
-
-**Dostarczane**
-
-- Określ co najmniej jeden oczekiwany wynik na członka zespołu ds. strategii chmurowej.
-- Popraw listę elementów członkowskich, aby wyrównać przewidywane zobowiązania czasu z oczekiwanymi wynikami.
-- Wyrównuje zestaw metryk krótkoterminowych i średniookresowych, aby zapewnić obsługę raportów o ciągłych postępach.
-
-**Wskazówki dotyczące uzupełniania elementów dostarczanych:**
-
-- Rejestruj wyniki biznesowe w [szablonie strategii i planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
-- [Wyniki biznesowe](../../strategy/business-outcomes/index.md): niektóre wyniki fiskalne mają być wyjątkowo czułe. Gdy żądane wyniki są mapowane na metryki fiskalne, może być konieczne zainwestowanie w Cost Management dyscypliny zarządzania bardzo wczesne.
-- [Metryki szkoleniowe](../../strategy/learning-metrics.md): metryki szkoleniowe pomagają w mostkowania przerwy między wynikami biznesowymi i zastosowaniami technicznymi.
-
-**Zespoły odpowiedzialne za:**
-
-Zespół strategii chmury jest odpowiedzialny za Definiowanie wyników działalności biznesowej z określonymi metrykami, których można użyć do mierzenia sukcesu wyniku działania biznesowego.
-
-## <a name="step-6-make-a-decision-to-proceed-or-cancel-based-on-the-business-justification"></a>Krok 6. podjęcie decyzji o przeniesieniu lub anulowaniu jej w oparciu o uzasadnienie biznesowe
-
-Uzasadnienie biznesowe może pomóc w planowaniu, długoterminowych oczekiwaniach powrotu oraz przewidywaniu całkowitego kosztu posiadania (TCO). W tym kroku zespół strategii chmury powinien wyrazić zgodę na minimalną ilość analizy wymaganą do dopasowania zespołu strategii do decyzji o przejściu do przodu. Dostosowanie strategiczne może wymagać głębokiego planowania i analizy TCO. Większość zespołów strategii chmury będzie znajdować prostą analizę kosztów jako wystarczającą do przeanalizowania.
-
-Każdy członek zespołu strategii powinien zapoznać się ze wspólnym mitów i podejściami do uzasadnienia biznesowego, aby pomóc w poinformowaniu o analizie określonej przez zespoły pomocnicze. Po przeprowadzeniu tych oczekiwań zespół strategiczny może skrócić czas inwestycji i erze. Jednak zespół będzie odpowiedzialny za wykonywanie strategii do momentu, w którym uzgodniono uzasadnienie biznesowe i analizę ich cyfr.
-
-**Dostarczane**
-
-- Rozpocznij pracę z uzasadnieniem biznesowym z zespołami pomocniczymi.
-- Zapoznaj się z zespołami pomocniczymi miesięcznie (lub w razie potrzeby) do momentu, gdy zespół strategii nie będzie mógł wyrównać decyzji o przejściu/przejściu, aby kontynuować wdrażanie w chmurze.
-
-**Wskazówki dotyczące uzupełniania elementów dostarczanych:**
-
-- [Uzasadnienie biznesowe](../../strategy/cloud-migration-business-case.md): uzasadnienie biznesowe służy jako ogólny widok ogólnego planu finansowego na potrzeby wdrażania w chmurze. Może to być dobre źródło dla początkowych nakładów budżetowych.
+- [Poznaj motywacje](../../strategy/motivations.md): krytyczne zdarzenia biznesowe i niektóre motywacje do migracji mogą być zależne od kosztów, co zwiększa znaczenie kontroli kosztów dla wszystkich kolejnych wysiłków. Inne motywacje do przodu, które są związane ze innowacyjnością lub wzrostem przez migrację, mogą być bardziej ukierunkowane na dochody z góry. Zrozumienie motywacji ułatwia członkom zespołu zrozumienie, jak wysoki jest priorytet zarządzania kosztami.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -167,23 +122,67 @@ Każdy członek zespołu strategii powinien zapoznać się ze wspólnym mitów i
 | --- | --- |
 | <li> Zespół strategii chmury | <li> Zespół nadzorujący chmury <li> Zespół ds. wdrażania chmury <li> Centrum w chmurze doskonałości lub środkowe |
 
-## <a name="step-7-support-adoption-through-a-regular-rhythm"></a>Krok 7. Obsługa wdrażania przez zwykły rytm
+## <a name="step-5-establish-business-outcomes"></a>Krok 5. nawiązanie wyników firmy
 
-Po uzgodnieniu strategii do przodu w przypadku zespołu strategii chmurowej zespół może przejść do mniej intensywnych i rzadziej rytm. Oczekiwania zespołu również przesuwają się w tym momencie. Gdy podróż przejdzie od definicji strategicznej do podjęcia wysiłków (planowanie, gotowość, przyjęcie), zespół strategii powinien skupić się na priorytetyzacji i pomocy technicznej strategicznej.
+Każdy członek zespołu ds. strategii chmury jest proszony o zdefiniowanie jednego lub większej liczby wyników firmy przez zastosowanie określonych metryk do mierzenia sukcesu firmy. Jeśli określona Metryka może zostać ulepszona jako bezpośredni wynik działania związanego z wdrażaniem w chmurze, członek zespołu jest proszony o udostępnienie oczekiwanego wpływu. Jeśli nakłady związane z wdrażaniem chmury nie wpłyną na metrykę, ale umożliwią firmie lepsze korzystanie z tej metryki, należy ją udokumentować.
+
+Wielu liderów w zespole strategii chmury może być konieczne rozłożyć ich podstawowe metryki w celu zidentyfikowania wyników, których może dotyczyć zajmowanie lub wpływ na rozwój chmury. Jeśli ta podróż nie ma wpływu na wyniki członków zespołu, może być trudno, aby zachować ich poziom zainteresowania w programie. Ułatwienia powinny współpracować z każdym liderem w celu opracowania wyrównanej metryki i przeprowadzenia jej ocen, niezależnie od tego, czy członek zespołu jest odpowiednią osobą do wzięcia udziału w zespole strategii.
+
+Wpływ na wyniki biznesowe może zająć trochę czasu. Te typy zmian zwykle przechodzą wolniej niż zmiany techniczne. Aby zachować przejrzystość, zespół strategii powinien wyrazić zgodę na krótkoterminowe metryki szkoleniowe. Te metryki mogą obejmować techniczne i inne zmiany, które można sprawdzić na każdym spotkaniu zespołu, aby zademonstrować postępy w celach technicznych i rezultatach działalności biznesowej.
 
 **Dostarczane**
 
-- **Priorytetyzacja:** Gdy istniejący obszar cyfrowy jest racjonalny, zespół strategii pomoże Ci ustalić fale w zakresie migracji lub innowacji, aby pomóc zespołom implementacji technicznej skupić się na działaniach, które zapewniają największą wartość biznesową.
-- **Oceń ryzyko:** Po rozwojem wdrożenia chmury nowe formy wdrożenia będą ujawniać nowe zagrożenia. Zespół strategiczny jest odpowiedzialny za pomoc w ocenie nowych zagrożeń. Oczekiwania zespołu strategii polegają na ocenie nowych zagrożeń i ustaleniu, czy firma może tolerować ryzyko, czy też wymagają zasad, które uniemożliwiają ryzyko.
-- **Przeglądanie budżetu i wydatków:** W miarę wzrostu wdrożenia chmury będą budżetować różne obciążenia w portfolio. Co miesiąc zespół strategii chmury powinien sprawdzić rzeczywiste wydatki na budżet, aby zidentyfikować problemy, które muszą zostać rozwiązane. Wczesne wykrywanie i rozwiązywanie zmian budżetowych pozwoli uniknąć nalepki w dalszej części cyklu życia.
-- **Planowanie biznesowe:** Gdy zespoły wdrażania ukończyją migrację lub wysiłki innowacyjne, w celu zmaksymalizowania powrotu z nowych rozwiązań technologicznych konieczne będzie wprowadzenie dodatkowych czynności związanych z planowaniem biznesowym. Mogą one obejmować szkolenia użytkowników końcowych, modyfikacje procesów firmy lub inne działania po przyjęciu.
-- **Wsparcie wykonawcze:** Zastosowanie rozwiązania Cloud spowoduje zmianę organizacji. Jest to najbardziej widoczne w organizacji IT. Czasami różne zespoły lub członkowie zespołu mogą potrzebować dodatkowego wsparcia od zespołu strategii, aby zrozumieć zmiany, opracować nowe umiejętności i zrozumieć, jak najlepiej korzystać z nowych modeli.
+- Określ co najmniej jeden oczekiwany wynik biznesowy na członka zespołu ds. strategii chmurowej.
+- Popraw listę elementów członkowskich, aby wyrównać przewidywane zobowiązania czasu z oczekiwanymi wynikami.
+- Wyrównuje zestaw metryk krótkoterminowych i średniookresowych, aby zapewnić obsługę raportów o ciągłych postępach.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- [Racjonalizacja przyrostowa](../../digital-estate/rationalize.md): podejście Agile do racjonalizacji, które prawidłowo dopasowuje z opóźnieniem decyzje techniczne.
-- [Pięć pięciu usprawnień](../../digital-estate/5-rs-of-rationalization.md): Poznaj różne opcje racjonalizacji.
+- Rejestruj wyniki biznesowe w [szablonie strategii i planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- [Wyniki biznesowe](../../strategy/business-outcomes/index.md): niektóre wyniki fiskalne mają być wyjątkowo czułe. Gdy żądane wyniki są mapowane na metryki fiskalne, może być konieczne zainwestowanie bardzo wcześnie w dyscyplinie ładu Cost Management.
+- [Metryki szkoleniowe](../../strategy/learning-metrics.md) ułatwiają łączenie przerwy między wynikami biznesowymi i działaniami w zakresie rozwiązań technicznych.
 
+**Zespół odpowiedzialny za:**
+
+Zespół strategii chmury jest odpowiedzialny za Definiowanie wyników działalności biznesowej. Zespół może używać konkretnych metryk do mierzenia sukcesu wyników działalności biznesowej.
+
+## <a name="step-6-decide-whether-to-proceed-or-cancel-based-on-the-business-justification"></a>Krok 6. podjęcie decyzji o tym, czy należy przejść czy anulować na podstawie uzasadnienia biznesowego
+
+Twoje uzasadnienie biznesowe może pomóc w planowaniu, długoterminowych oczekiwaniach powrotu i oczekiwaniach na łączny koszt posiadania (TCO). W tym kroku zespół strategii chmury powinien wyrazić zgodę na minimalną ilość analizy wymaganą do dopasowania zespołu strategii do decyzji o przejściu do przodu. Dostosowanie strategiczne może wymagać głębokiego planowania i analizy TCO. Większość zespołów strategicznych w chmurze będzie dowiedzieć się, że prosta analiza kosztów wystarcza do dopasowania do kierunku.
+
+Każdy członek zespołu strategii powinien przejrzeć typowe mitów i podejścia do uzasadnienia biznesowego. Może to ułatwić zespołowi komunikowanie się z konkretną analizą oczekiwaną przez zespoły pomocnicze. Gdy zespół komunikuje się z oczekiwaniami, może skrócić czas inwestycji i częstotliwość spotkań. Zespół będzie odpowiedzialny za wykonywanie strategii do momentu, w którym uzgodniono uzasadnienie biznesowe i analizę ich cyfr.
+
+**Dostarczane**
+
+- Rozpocznij pracę z uzasadnieniem biznesowym w zespołach pomocniczych.
+- Zapoznaj się z zespołami pomocniczymi miesięcznie (lub w razie potrzeby) do momentu, gdy zespół strategii nie będzie mógł wyrównać decyzji o przejściu/przejściu, aby kontynuować wdrażanie w chmurze.
+
+**Wskazówki dotyczące uzupełniania elementów dostarczanych:**
+
+- [Uzasadnienie biznesowe](../../strategy/cloud-migration-business-case.md) służy jako ogólny widok ogólnego planu finansowego na potrzeby wdrażania w chmurze. Może to być dobre źródło dla początkowych nakładów budżetowych.
+
+<!-- markdownlint-disable MD033 -->
+
+| Zespół odpowiedzialny za | Osoby odpowiedzialne i wspierające |
+| --- | --- |
+| <li> Zespół strategii chmury | <li> Zespół nadzorujący chmury <li> Zespół ds. wdrażania chmury <li> Centrum w chmurze doskonałości lub środkowe |
+
+## <a name="step-7-support-adoption-through-a-regular-cadence"></a>Krok 7. Obsługa wdrażania przez zwykły erze
+
+Po uzgodnieniu decyzji o przejściu w przód z zespołem ds. strategii chmurowej zespół może przejść do mniej intensywnych i rzadziej spotykanych erze. Oczekiwania zespołu również przesuwają się w tym momencie. Po przejściu z definicji strategicznych do działań związanych z wdrażaniem (planowanie, gotowe, przyjęcie) zespół strategii powinien skupić się na priorytetyzacji i pomocy technicznej strategicznej.
+
+**Dostarczane**
+
+- **Priorytetyzacja:** Gdy istniejąca cyfra jest racjonalna, zespół strategii pomaga ustalić fale w zakresie migracji lub innowacji. Dzięki temu zespoły implementacji technicznej koncentrują się na działaniach, które mają największą wartość biznesową.
+- **Oceń ryzyko:** Po rozwojem wdrożenia chmury nowe formy wdrożenia ujawniają nowe zagrożenia. Zespół strategiczny jest odpowiedzialny za pomoc w ocenie nowych zagrożeń. Oczekuje się, że zespół strategiczny oceni nowe ryzyko i decyduje o tym, czy firma może tolerować ryzyko, czy też potrzebuje zasad, które eliminują lub decydują.
+- **Przeglądanie budżetu i wydatków:** W miarę wzrostu wdrożenia chmury będą budżetować różne obciążenia w portfolio. Co miesiąc zespół strategii chmury powinien sprawdzić rzeczywiste wydatki na budżet, aby zidentyfikować problemy, które muszą zostać rozwiązane. Wczesne wykrywanie i rozwiązywanie zmian budżetowych pozwoli uniknąć wstrząsania nalepki później w cyklu życia.
+- **Planowanie biznesowe:** Gdy zespoły przyjęcia ukończyją swoje wysiłki w zakresie migracji lub innowacji, konieczne będzie wprowadzenie dodatkowych czynności związanych z planowaniem biznesowym w celu zmaksymalizowania powrotu z nowych rozwiązań technologicznych. Takie planowanie może obejmować szkolenia użytkowników, modyfikacje procesów roboczych lub inne działania po przyjęciu.
+- **Wsparcie wykonawcze:** Zastosowanie rozwiązania Cloud spowoduje zmianę organizacyjną. Jest to najbardziej widoczne w organizacji IT. Czasami różne zespoły lub członkowie zespołu mogą potrzebować dodatkowego wsparcia od zespołu strategii, aby zrozumieć zmiany, opracować nowe umiejętności i zrozumieć, jak najlepiej działać w ramach nowych modeli.
+
+**Wskazówki dotyczące uzupełniania elementów dostarczanych:**
+
+- [Racjonalizacja przyrostowa](../../digital-estate/rationalize.md): należy wziąć pod uwagę podejście Agile, które prawidłowo wyrównuje późne decyzje techniczne.
+- [Pięć pięciu usprawnień](../../digital-estate/5-rs-of-rationalization.md): Poznaj różne opcje racjonalizacji.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -194,8 +193,8 @@ Po uzgodnieniu strategii do przodu w przypadku zespołu strategii chmurowej zesp
 
 ## <a name="whats-next"></a>Co dalej
 
-Strategia i planowanie są ważne. Nic nie ma jednak możliwości działania bez funkcji wdrażania w chmurze. Zapoznaj się z rolą tej ważnej funkcji przed rozpoczęciem działań związanych z wdrażaniem.
+Strategia i planowanie są ważne. Nic nie jest możliwe do wykonania do momentu zidentyfikowania funkcji wdrażania chmury, które są potrzebne w zespole. Ważne jest zapoznanie się z kluczowymi funkcjami przed rozpoczęciem pracy z wdrażaniem.
 
-Wyrównaj strategię za pomocą [funkcji wdrażania w chmurze](../../organize/cloud-adoption.md) , pracując z zespołem lub osobami odpowiedzialnymi za tę funkcję.
+Wyrównaj strategię za pomocą [funkcji wdrażania w chmurze](../../organize/cloud-adoption.md) , pracując z zespołem ds. wdrażania lub poszczególnym osobom odpowiedzialnym za te funkcje.
 
-Dowiedz się, jak wyrównać zakres obowiązków dla zespołów, opracowując macierz międzyzespołową, która identyfikuje osoby odpowiedzialne, obsługujące, konsultowane i poinformowane (RACI). Pobierz i zmodyfikuj [szablon arkusza kalkulacyjnego Raci](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx).
+Dowiedz się, jak wyrównać zakres obowiązków dla zespołów, opracowując macierz międzyzespołową, która identyfikuje strony RACI. Pobierz i zmodyfikuj [szablon arkusza kalkulacyjnego Raci](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx).

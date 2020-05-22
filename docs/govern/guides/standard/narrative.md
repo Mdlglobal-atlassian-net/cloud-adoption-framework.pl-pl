@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 213fc070f648a43d285e59948bb567502f944603
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dfbde6cb7008ce33a77afde238b2b550ec397d23
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218785"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754708"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Przewodnik dotyczący zarządzania przedsiębiorstwem w warstwie Standardowa: Opis strategii zarządzania
 
@@ -21,9 +21,9 @@ Poniższe kroki opisują przypadek użycia dla ładu podczas podróży w ramach 
 
 ## <a name="back-story"></a>Historia z tyłu
 
-Tablica dyrektorów rozpoczęła rok z planami, aby Energize działalność na kilka sposobów. Są one wypychane, aby zwiększyć komfort pracy klientów w celu uzyskania udziału w rynku. Są one również wypychane w przypadku nowych produktów i usług, które poprowadzą firmę jako lidera w branży. Zainicjowano również równoległe wysiłki w celu zmniejszenia ilości odpadów i wycinania niepotrzebnych kosztów. Chociaż zastraszanie, działania tablicy i lidera pokazują, że ten nakład pracy jest skoncentrowany jako możliwy do przyszłego wzrostu.
+Tablica dyrektorów rozpoczęła rok z planami, aby Energize działalność na kilka sposobów. Są one wypychane, aby zwiększyć możliwości klientów w celu uzyskania udziału w rynku. Są one również wypychane w przypadku nowych produktów i usług, które poprowadzą firmę jako lidera w branży. Zainicjowano również równoległe wysiłki w celu zmniejszenia ilości odpadów i wycinania niepotrzebnych kosztów. Chociaż zastraszanie, działania tablicy i lidera pokazują, że ten nakład pracy jest skoncentrowany jako możliwy do przyszłego wzrostu.
 
-W przeszłości CIO firmy została wykluczona z tych strategicznych konwersacji. Jednakże, ponieważ przyszła wizja jest wewnętrznie połączona z rozwojem technicznym, ma miejsce w tabeli, aby pomóc w tym obszernym planie. Teraz oczekiwane jest dostarczenie na nowe sposoby. Zespół nie przygotowuje się do wprowadzania tych zmian i prawdopodobnie nie będzie się uczyć z krzywą szkoleniową.
+W przeszłości CIO firmy została wykluczona z tych strategicznych konwersacji. Ze względu na to, że przyszła wizja jest w sposób wewnętrzny powiązany ze wzrostem technicznym, ma miejsce w tabeli, aby pomóc w tym dużym planie. Teraz oczekiwane jest dostarczenie na nowe sposoby. Zespół nie przygotowuje się do wprowadzania tych zmian i prawdopodobnie nie będzie się uczyć z krzywą szkoleniową.
 
 ## <a name="business-characteristics"></a>Charakterystyka firmy
 

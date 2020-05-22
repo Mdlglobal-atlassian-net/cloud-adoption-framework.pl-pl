@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: df8df76ac903329b21e4d543793250e70bb0afa8
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: b5b8d72c3f4b42d58a903b2fe9c2a8b33ebc1d67
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400959"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755520"
 ---
 # <a name="cloud-security-architecture-functions"></a>Funkcje architektury zabezpieczeń chmury
 
@@ -24,7 +24,7 @@ Różne czynniki mają wpływ na architekturę zabezpieczeń:
 
 - **Model ciągłego zaangażowania:** Ciągła wersja aktualizacji oprogramowania i funkcji w chmurze sprawia, że stałe modele zaangażowania są przestarzałe. Architekty muszą być zaangażowane we wszystkich zespołach pracujących w dziedzinach zagadnień technicznych, aby zastrzec podejmowanie decyzji o tym, jak te zespoły mogą wypełniać te możliwości.
 - **Zabezpieczenia z chmury:** Włącz funkcje zabezpieczeń z chmury, aby skrócić czas trwania i bieżące koszty konserwacji (sprzęt, oprogramowanie, czas i nakład pracy).
-- **Bezpieczeństwo chmury:** Upewnij się, że wszystkie zasoby w chmurze obejmują aplikacje SaaS (Software as a Service), maszyny wirtualne infrastruktury jako usługi (IaaS) oraz aplikacje i usługi platformy jako usługi (PaaS).  Powinno to obejmować odnajdywanie i zabezpieczenia zarówno usług zaakceptowanych, jak i zaakceptowanych oficjalnie.
+- **Bezpieczeństwo chmury:** Upewnij się, że wszystkie zasoby w chmurze obejmują aplikacje SaaS (Software as a Service), maszyny wirtualne infrastruktury jako usługi (IaaS) oraz aplikacje i usługi platformy jako usługi (PaaS). Powinno to obejmować odnajdywanie i zabezpieczenia zarówno usług zaakceptowanych, jak i zaakceptowanych oficjalnie.
 - **Integracja tożsamości:** Architektzy zabezpieczeń powinni zapewnić ścisłe wyrównanie z zespołami tożsamości, aby ułatwić organizacjom spełnienie dwóch celów związanych z produktywnością i zapewnieniem bezpieczeństwa.
 - **Integracja wewnętrznego kontekstu** w projektach związanych z zabezpieczeniami, takich jak kontekst z stan Management i incydenty zbadane przez operacje zabezpieczeń [Center] (SOC). Powinno to obejmować elementy, takie jak względne oceny ryzyka związane z kontami użytkowników i urządzeniami, czułość danych oraz granice izolacji klucza zabezpieczeń w celu aktywnej obrony.
 

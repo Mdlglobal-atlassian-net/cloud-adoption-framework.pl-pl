@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: b757a0066250a37816eed5445d79663b72a7aae3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1e25d89d5c4beccb3b1f32e846028b8d93e41a11
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219329"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756128"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -247,7 +247,7 @@ Te informacje mogą być wyświetlane i przetwarzane na wielu poziomach i stale 
 
 - **Azure Advisor:** Azure Advisor stale monitoruje dane telemetryczne w Twoich subskrypcjach i środowiskach. Zaleca się również korzystanie z najlepszych rozwiązań dotyczących kosztów optymalizacji zasobów platformy Azure oraz zwiększania wydajności, bezpieczeństwa i dostępności zasobów aplikacji.
 
-- **Service Health:** Azure Service Health identyfikuje wszelkie problemy z usługami platformy Azure, które mogą mieć wpływ na Twoje aplikacje, a także pomaga w planowaniu okien obsługi zaplanowanych.
+- **Azure Service Health:** Azure Service Health identyfikuje wszelkie problemy z usługami platformy Azure, które mogą mieć wpływ na Twoje aplikacje, a także pomaga w planowaniu okien obsługi zaplanowanych.
 
 - **Dziennik aktywności:** Dziennik aktywności zawiera opis wszystkich operacji na zasobach w Twoich subskrypcjach. Zawiera on Dziennik audytu, aby określić, _kto_i _kiedy_ wszystkie operacje tworzenia, aktualizowania i usuwania mają być _wykonywane_na zasobach. Zdarzenia dziennika aktywności są przechowywane na platformie i są dostępne do wykonywania zapytań przez 90 dni. Dzienniki aktywności można pozyskać do Log Analytics w celu uzyskania dłuższych okresów przechowywania oraz dokładniejszego wykonywania zapytań i analiz w wielu zasobach.
 

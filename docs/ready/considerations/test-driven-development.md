@@ -3,16 +3,16 @@ title: Programowanie oparte na testach dla stref wyładunkowej
 description: Programowanie oparte na testach dla stref wyładunkowej
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0eb8597e32f14685e1f1fc69a51673fb1d1d360f
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d7aa0f388f68e876569ef2e8c3638b77af8ed033
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621808"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755731"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>Programowanie sterowane testami dla stref docelowych
 
@@ -20,7 +20,7 @@ Programowanie oparte na testach to typowy proces opracowywania oprogramowania i 
 
 ![Proces projektowania oparty na testach dla stref wyładunku w chmurze](../../_images/ready/test-driven-development-process.png)
 
-W chmurze infrastruktura jest wyjściem kodu. Dobrze skonstruowany, testowany i sprawdzony kod tworzy strefę docelową. W przypadku [definicji stref wyładunkowych](../landing-zone/index.md)"strefa docelowa jest środowiskiem do hostowania obciążeń, A wstępne Inicjowanie obsługi administracyjnej za pomocą kodu. Obejmuje ona podstawowe możliwości przy użyciu zdefiniowanego zestawu usług w chmurze i najlepszych rozwiązań w celu **pomyślnego skonfigurowania**". W tym artykule opisano jedno podejście do korzystania z projektowania opartego na testach w celu spełnienia ostatniej części tej definicji, podczas gdy spełnione są wymagania dotyczące jakości, bezpieczeństwa, działania i zarządzania.
+W chmurze infrastruktura jest wyjściem kodu. Dobrze skonstruowany, testowany i sprawdzony kod tworzy strefę docelową. W przypadku [definicji stref wyładunkowych](../landing-zone/index.md)"strefa docelowa jest środowiskiem do hostowania obciążeń, a wstępne Inicjowanie obsługi administracyjnej za pomocą kodu. Obejmuje ona podstawowe możliwości przy użyciu zdefiniowanego zestawu usług w chmurze i najlepszych rozwiązań w celu **pomyślnego skonfigurowania**". W tym artykule opisano jedno podejście do korzystania z projektowania opartego na testach w celu spełnienia ostatniej części tej definicji, podczas gdy spełnione są wymagania dotyczące jakości, bezpieczeństwa, działania i zarządzania.
 
 Takie podejście może służyć do zaspokajania prostych żądań funkcji podczas wczesnego opracowywania. W dalszej części cyklu wdrażania w chmurze proces ten może służyć do spełnienia wymagań dotyczących zabezpieczeń, operacji, zarządzania lub zgodności.
 

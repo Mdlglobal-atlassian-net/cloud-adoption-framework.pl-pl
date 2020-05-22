@@ -3,16 +3,16 @@ title: 'Wprowadzenie: Wyrównaj swoją organizację'
 description: Zalecane kroki umożliwiające dostosowanie organizacji w celu zapewnienia gotowości do pomyślnego wdrożenia chmury.
 author: JanetCThomas
 ms.author: janet
-ms.date: 05/05/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: f40e0ecf16ceb1d3af7c3b99eb111d09a975b6da
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: b4914cfadb3b94d997861c233e524d966aabe107
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621160"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752584"
 ---
 # <a name="get-started-align-your-organization"></a>Wprowadzenie: Wyrównaj swoją organizację
 
@@ -45,7 +45,7 @@ Po udokumentowaniu odpowiedzi na te pytania zapoznaj się z tematem [plany gotow
 
 ## <a name="step-3-determine-how-teams-align-within-your-organization"></a>Krok 3. Określanie, w jaki sposób zespoły są wyrównane w organizacji
 
-Następujące struktury organizacyjne nie muszą być mapowane na schemat organizacyjny (schemat organizacyjny). Schematy organizacyjne zwykle odzwierciedlają struktury zarządzania sterowania i kontroli. Z kolei następujące struktury organizacyjne mają na celu uchwycenie dopasowania ról i obowiązków. 
+Następujące struktury organizacyjne nie muszą być mapowane na schemat organizacyjny (schemat organizacyjny). Schematy organizacyjne zwykle odzwierciedlają struktury zarządzania sterowania i kontroli. Z kolei następujące struktury organizacyjne mają na celu uchwycenie dopasowania ról i obowiązków.
 
 W organizacji z systemem Agile te struktury mogą być najlepiej reprezentowane jako zespoły wirtualne (w przypadku zespołów). Nie ma nic, aby zasugerować, że zespoły v nie mogą być reprezentowane w schemacie organizacyjnym, ale formalny schemat organizacyjny nie jest potrzebny do utworzenia efektywnego modelu operacyjnego.
 

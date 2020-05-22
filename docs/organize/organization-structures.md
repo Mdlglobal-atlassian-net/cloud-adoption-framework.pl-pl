@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 777f89ea13c33ad5318c221d07c7c8ea3958c06c
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 9e4358b631008ef83a7b2635d5c2774a1e059815
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621444"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755253"
 ---
 <!-- cSpell:ignore ccoe -->
 
@@ -38,7 +38,7 @@ Struktury organizacyjne przechodzą przez wspólny model zapadalności, który j
 5. [Wyrównanie operacyjne](#operational-alignment)
 6. [Cloud Center doskonałości (CCoE)](#cloud-center-of-excellence)
 
-Większość firm zaczyna się od małego _zespołu wdrażania w chmurze_. Zaleca się jednak ustanowienie struktury organizacyjnej, która jest bardziej podobna do struktury najlepszego rozwiązania [MVP](#best-practice-minimum-viable-product-mvp) .
+Większość firm zaczyna się od małego _zespołu wdrażania w chmurze_. Jednak zalecamy ustanowienie struktury organizacyjnej, która jest bardziej podobna do struktury najlepszego rozwiązania [MVP](#best-practice-minimum-viable-product-mvp) .
 
 ## <a name="cloud-adoption-team-only"></a>Tylko zespół wdrażania chmury
 
@@ -64,7 +64,7 @@ W poniższych sekcjach opisano w pełni zatrudnioną strukturę organizacyjną o
 
 W miarę skalowania, zespół nadzorujący chmurę może się zadbać o to, aby zachować możliwości innowacji z wielu zespołów wdrażania chmury. Jest to szczególnie prawdziwe w środowiskach, które mają silną zgodność, operacje lub wymagania dotyczące zabezpieczeń. Na tym etapie często firma może przenieść obowiązki chmury do istniejącego centralnego zespołu IT. Jeśli ten zespół może ponownie ocenić narzędzia, procesy i osoby, aby lepiej obsługiwać wdrażanie w chmurze na dużą skalę, w tym centralny zespół IT może zwiększyć znaczącą wartość. Dostosowanie się do specjalistów z dziedziny działania, Automatyzacja, bezpieczeństwa i administrowania w celu modernizacji centralnych może zapewnić efektywne innowacje operacyjne.
 
-Niestety, Centralna faza IT może być jedną z riskiest faz w organizacji. Centralny zespół IT musi znajdować się w tabeli o silnym wzroście sposób myślenia. Jeśli zespół przegląda chmurę jako okazję do wzrostu i adaptacji, wówczas może zapewnić doskonałą wartość w całym procesie. Jeśli jednak centralny zespół IT przegląda wdrożenie chmury przede wszystkim jako zagrożenie dla istniejącego modelu, centralny zespół IT przejdzie do przeszkody dla zespołów wdrażania chmury i celów, które są przez nie obsługiwane. Niektóre centralne zespoły IT wykorzystały miesiące, a nawet lat próbujących wymusić wymuszenie wyrównania przez chmurę przy użyciu podejścia lokalnego, z tylko negatywnymi wynikami. Chmura nie wymaga zmiany wszystkiego w Centralnym, ale wymaga znaczącej zmiany. Jeśli odporność na zmiany jest powszechnie rozpowszechniona w centralnym zespole IT, ta faza dojrzałości może szybko stać się antywzorcem kulturowym.
+Niestety, Centralna faza IT może być jedną z riskiest faz w organizacji. Centralny zespół IT musi znajdować się w tabeli o silnym wzroście sposób myślenia. Jeśli zespół przegląda chmurę jako okazję do wzrostu i adaptacji, wówczas może zapewnić doskonałą wartość w całym procesie. Jednak jeśli centralny zespół IT przegląda wdrożenie chmury przede wszystkim jako zagrożenie dla istniejącego modelu, centralny zespół IT stanowi przeszkodę dla zespołów wdrażania chmury i celów, które są przez nie obsługiwane. Niektóre centralne zespoły IT wykorzystały miesiące, a nawet lat próbujących wymusić wymuszenie wyrównania przez chmurę przy użyciu podejścia lokalnego, z tylko negatywnymi wynikami. Chmura nie wymaga zmiany wszystkiego w Centralnym, ale wymaga znaczącej zmiany. Jeśli odporność na zmiany jest powszechnie rozpowszechniona w centralnym zespole IT, ta faza dojrzałości może szybko stać się antywzorcem kulturowym.
 
 Plany wdrożenia chmury mocno koncentrują się na platformie jako usługa (PaaS), DevOps lub innych rozwiązania, które wymagają mniejszej liczby operacji, są mniej znaczące, aby zobaczyć wartość w tej fazie dojrzałości. W przeciwieństwie do tego typy rozwiązań są najprawdopodobniej utrudnione lub blokowane przez próby scentralizowania IT. Wyższego poziomu dojrzałości, podobnie jak w przypadku usługi [Cloud Center doskonałości (CCoE)](#cloud-center-of-excellence), najprawdopodobniej da pozytywne wyniki dla tych typów wysiłków. Aby zrozumieć różnice między centralnym działem IT w chmurze i CCoE, zobacz [Cloud Center of doskonałości](./cloud-center-of-excellence.md).
 

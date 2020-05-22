@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b7f8b26833a98ac02a867b466e58f5214334a0b5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7a6a6db8204b4bca9a285773297146e79c201994
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220003"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754780"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: objaśniono najlepsze rozwiązania
 
@@ -67,7 +67,7 @@ Decyzje dotyczące spójności zasobów określają narzędzia, procesy i nakła
 - W ramach procesu wdrażania szablony spójności zasobów platformy Azure dla grupy zasobów powinny być przechowywane w kontroli źródła.
 - Każda grupa zasobów jest skojarzona z określonym obciążeniem lub aplikacją na podstawie opisanego powyżej podejścia cyklu życia.
 - Grupy zarządzania platformy Azure umożliwiają aktualizowanie projektów ładu jako dojrzałych zasad firmowych.
-- Rozbudowana implementacja Azure Policy może przekroczyć zobowiązania dotyczące czasu zespołu i może nie zapewniać w tym momencie ogromnej wartości. Należy jednak utworzyć proste zasady domyślne i zastosować je do każdej grupy zarządzania w celu wymuszenia niewielkiej liczby bieżących instrukcji zasad ładu w chmurze. Te zasady określają implementację określonych wymagań ładu. Te implementacje można następnie zastosować dla wszystkich wdrożonych zasobów.
+- Rozbudowana implementacja Azure Policy może przekroczyć zobowiązania dotyczące czasu zespołu i może nie zapewniać w tym momencie ogromnej wartości. Należy utworzyć proste zasady domyślne i zastosować je do każdej grupy zarządzania, aby wymusić niewielką liczbę bieżących instrukcji zasad ładu chmury. Te zasady określają implementację określonych wymagań ładu. Te implementacje można następnie zastosować dla wszystkich wdrożonych zasobów.
 
 >[!IMPORTANT]
 >Gdy zasób w grupie zasobów nie będzie już współużytkować tego samego cyklu życia, powinien zostać przeniesiony do innej grupy zasobów. Przykłady obejmują typowe bazy danych i składniki sieciowe. Chociaż mogą one obsłużać opracowywaną aplikację, mogą również być w innych grupach zasobów.
@@ -122,4 +122,4 @@ Po zaimplementowaniu tego przewodnika każdy zespół rozwiązań w chmurze moż
 Dwa zespoły będą używać wskaźników tolerancji do identyfikowania następnego zestawu ulepszeń niezbędnych do kontynuowania obsługi wdrożenia chmury. W przypadku fikcyjnej firmy w tym przewodniku następnym krokiem jest ulepszenie podstawy zabezpieczeń w celu zapewnienia obsługi przeniesienia chronionych danych do chmury.
 
 > [!div class="nextstepaction"]
-> [Ulepszanie dyscypliny linii bazowej zabezpieczeń](./security-baseline-improvement.md)
+> [Udoskonalanie dziedziny Punkt odniesienia zabezpieczeń](./security-baseline-improvement.md)

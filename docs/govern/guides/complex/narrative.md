@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1760f21d464627a81a4388a094f1ef39ade3e075
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a17f1c0293b3807afa912cc25b6f9ebbabd1ebe9
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220111"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754926"
 ---
 <!-- cSpell:ignore CDO's CIO's -->
 
@@ -23,7 +23,7 @@ Poniższe opisy stanowią przypadek użycia dla ładu, [podczas gdy złożona je
 
 ## <a name="back-story"></a>Historia z tyłu
 
-Klienci potrzebują lepszego środowiska podczas korzystania z tej firmy. Bieżące środowisko spowodowało spadek rynku i doprowadziło do tego, że pracownicy zatrudniają dyrektora cyfrowego (CDO). Składnik CDO współpracuje z marketingiem i sprzedażą w celu przetworzenia transformacji cyfrowej, która zapewnia lepszą wydajność. Ponadto kilka jednostek roboczych niedawno zatrudnianych analityków danych do danych farmy i usprawnienia wielu czynności ręcznych dzięki uczeniu i prognozie. Obsługuje te działania, w których to możliwe. Istnieją jednak działania "w tle", które wykraczają poza konieczną kontrolę nadzoru i zabezpieczeń.
+Klienci potrzebują lepszego środowiska podczas korzystania z tej firmy. Bieżące środowisko spowodowało spadek rynku i doprowadziło do tego, że pracownicy zatrudniają dyrektora cyfrowego (CDO). Składnik CDO współpracuje z marketingiem i sprzedażą w celu przetworzenia transformacji cyfrowej, która zapewnia lepszą wydajność. Ponadto kilka jednostek roboczych niedawno zatrudnianych analityków danych do danych farmy i usprawnienia wielu czynności ręcznych dzięki uczeniu i prognozie. Obsługuje te działania, w których to możliwe. Występują działania "w tle", które wykraczają poza konieczną kontrolę nadzoru i zabezpieczeń.
 
 Organizacja IT również ma swoje wyzwania. Finanse planują dalsze obniżki w budżecie IT w ciągu najbliższych pięciu lat, co prowadzi do niepotrzebnych wydatków. Z drugiej strony, Rodo i inne wymagania dotyczące suwerenności danych wymuszają inwestowanie w zasoby w dodatkowych krajach do lokalizowania danych. Dwa z istniejących centrów danych są zaległe w przypadku odświeżania sprzętu, co powoduje dalsze problemy związane z zadowoleniem pracowników i klientów. Trzy więcej centrów danych wymaga odświeżenia sprzętu podczas wykonywania pięcioletniego planu. Dyrektor finansowy wypycha CIO, aby wziąć pod uwagę chmurę jako alternatywę dla tych centrów danych w celu zwolnienia wydatków inwestycyjnych.
 
@@ -56,7 +56,7 @@ Oto bieżący stan operacji w firmie i w chmurze:
 Następujące zmiany są przewidywane w ciągu następnych kilku lat:
 
 - CIO to wiodący nakład na unowocześnienie zasad związanych z danymi osobistymi i finansowymi w celu wspierania przyszłych celów. Dwaj członkowie zespołu nadzoru IT mają wgląd w ten nakład pracy.
-- CIO chce korzystać z migracji w chmurze jako funkcji wymuszania w celu poprawy spójności i stabilności między jednostkami biznesowymi i lokalizacje geograficzne. W przyszłości należy jednak przestrzegać wszelkich zewnętrznych wymagań dotyczących zgodności, które wymagają odchylenia od standardowych podejścia do określonych zespołów IT.
+- CIO chce korzystać z migracji w chmurze jako funkcji wymuszania w celu poprawy spójności i stabilności między jednostkami biznesowymi i lokalizacje geograficzne. W przyszłości należy przestrzegać wszelkich zewnętrznych wymagań dotyczących zgodności, które wymagają odchylenia od standardowych podejścia do określonych zespołów IT.
 - Jeśli wczesne eksperymenty w aplikacji dev i BI pokażą wiodące wskaźniki sukcesu, chcą, aby wystawić w ciągu najbliższych 24 miesięcy rozwiązania produkcyjne o małych skali.
 - CIO i dyrektor finansowy posiadają architekta i wiceprzewodniczący infrastruktury do tworzenia analiz kosztów i studiów wykonalności. Te wysiłki określają, czy firma może i powinna przenieść zasoby 5 000 do chmury w ciągu następnych 36 miesięcy. Pomyślna migracja zezwoli CIO na wyeliminowanie dwóch centrów danych, co zmniejsza koszty za pośrednictwem $100 mln USD w ramach planu pięciu lat. Jeśli trzy do czterech centrów danych mogą mieć podobne wyniki, budżet zostanie przywrócony do czerni, dzięki czemu budżet CIO będzie obsługiwał bardziej innowacyjne inicjatywy.
     ![Koszty lokalne w porównaniu z kosztami platformy Azure, które pokazują zwrot z $100 mln USD w ciągu najbliższych pięciu lat](../../../_images/govern/calculator-enterprise.png)

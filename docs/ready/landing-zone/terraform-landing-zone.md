@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 69d1aaf7ff2a5bd3d71cb03fd1149019792c71f1
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 8eee7eeaf2406a94ee703054ed5f1b9e369bf5a2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401282"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755656"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
@@ -45,7 +45,7 @@ Wdrożone składniki i ich przeznaczenie obejmują następujące elementy:
 | Grupy zasobów | Podstawowe grupy zasobów, które są zbędne dla podstawy |
 | Dziennik aktywności | Inspekcja wszystkich działań subskrypcji i archiwizowania: <li> Konto magazynu <li> Azure Event Hubs |
 | Rejestrowanie diagnostyczne | Wszystkie dzienniki operacji są przechowywane przez określoną liczbę dni: <li> Konto magazynu <li> Event Hubs |
-| Log Analytics | Przechowuje wszystkie dzienniki operacji. Wdrażaj popularne rozwiązania w zakresie przeglądu najlepszych rozwiązań dotyczących aplikacji: <li> NetworkMonitoring <li> ADAssessment <li> ADReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
+| Log Analytics | Przechowuje wszystkie dzienniki operacji. Wdrażaj popularne rozwiązania w zakresie przeglądu najlepszych rozwiązań dotyczących aplikacji: <li> Networkmonitoring <li> Adassessment <li> Adreplication <li> Agenthealthassessment <li> Dnsanalytics <li> Keyvaultanalytics |
 | Azure Security Center | Metryki i alerty dotyczące higieny zabezpieczeń wysyłane do poczty e-mail i numeru telefonu |
 
 <!-- markdownlint-enable MD033 -->
@@ -75,14 +75,14 @@ Następujące decyzje są reprezentowane w Terraformej strefie docelowej:
 | Sieć                | Nie dotyczy sieci w innej strefie wyładunkowej.                                                                                                                                                                                                                    | [Decyzje dotyczące sieci](../considerations/networking-options.md)                                                                                                                                                                                                 |
 | Tożsamość               | Przyjęto założenie, że subskrypcja jest już skojarzona z wystąpieniem usługi Azure Active Directory.                                                                                                                                                                        | [Najlepsze rozwiązania dotyczące zarządzania tożsamościami](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)                                                                                                                               |
 | Zasady                 | W tej strefie wyładunkowej założono, że nie mają być stosowane żadne zasady platformy Azure.                                                                                                                                                                                            |                                                                                                                                                                                                                                                                 |
-| Projekt subskrypcji    | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                                                                                                                                                                                                     | [Tworzenie subskrypcji początkowych](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
-| Grupy zasobów        | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                                                                                                                                                                                                     | [Skalowanie subskrypcji](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                           |
-| Grupy zarządzania      | nd. — zaprojektowana dla jednej subskrypcji produkcyjnej                                                                                                                                                                                                                     | [Organizuj subskrypcje](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                     |
+| Projekt subskrypcji    | N/A — zaprojektowana dla jednej subskrypcji produkcyjnej.                                                                                                                                                                                                                     | [Tworzenie subskrypcji początkowych](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
+| Grupy zasobów        | N/A — zaprojektowana dla jednej subskrypcji produkcyjnej.                                                                                                                                                                                                                     | [Skalowanie subskrypcji](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                           |
+| Grupy zarządzania      | N/A — zaprojektowana dla jednej subskrypcji produkcyjnej.                                                                                                                                                                                                                     | [Organizuj subskrypcje](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                     |
 | Dane                   | Nie dotyczy                                                                                                                                                                                                                                                                      | [Wybierz poprawną opcję SQL Server na platformie Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) i [wskazówki dotyczące usługi Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 | Magazyn                | Nie dotyczy                                                                                                                                                                                                                                                                      | [Wskazówki dotyczące usługi Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                  |
 | Standardy nazewnictwa       | Po utworzeniu środowiska tworzony jest również unikatowy prefiks. Zasoby, które wymagają unikatowej nazwy globalnej (na przykład kont magazynu), używają tego prefiksu. Nazwa niestandardowa jest dołączana do losowego sufiksu. Użycie tagów jest wymagane zgodnie z opisem w poniższej tabeli. | [Najlepsze rozwiązania dotyczące nazewnictwa i tagowania](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                              |
 | Zarządzanie kosztami        | Nie dotyczy                                                                                                                                                                                                                                                                      | [Śledzenie kosztów](../azure-best-practices/track-costs.md)                                                                                                                                                                                                        |
-| Wystąpienia obliczeniowe                | Nie dotyczy                                                                                                                                                                                                                                                                      | [Opcje obliczeń](../considerations/compute-options.md)                                                                                                                                                                                                         |
+| Compute                | Nie dotyczy                                                                                                                                                                                                                                                                      | [Opcje obliczeń](../considerations/compute-options.md)                                                                                                                                                                                                         |
 
 ### <a name="tagging-standards"></a>Standardy tagowania
 
@@ -90,13 +90,13 @@ Minimalny zestaw tagów przedstawionych poniżej musi być obecny dla wszystkich
 
 | Nazwa tagu          | Opis                                                                                        | Klucz             | Przykładowa wartość                                    |
 |-------------------|----------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
-| Jednostka biznesowa     | Wydział firmy najwyższego poziomu będący właścicielem subskrypcji lub obciążenia, do których należy zasób. | BusinessUnit    | FINANSe, MARKETING, {Product Name}, CORP, SHARED |
-| Cost Center       | Księgowe centrum kosztu skojarzone z tym zasobem.                                              | CostCenter      | Liczba                                           |
-| Odzyskiwanie po awarii | Ważność aplikacji, obciążenia lub usługi dla działania firmy.                                     | DR              | FUNKCJA ODZYSKIWANIA PO AWARII, KTÓRA NIE JEST DOSTĘPNA W PROGRAMIE DR                       |
+| Jednostka biznesowa     | Wydział firmy najwyższego poziomu będący właścicielem subskrypcji lub obciążenia, do których należy zasób. | Businessunit    | Finanse, Marketing, {Product Name}, Corp, Shared |
+| Centrum kosztu       | Księgowe centrum kosztu skojarzone z tym zasobem.                                              | Costcenter      | Liczba                                           |
+| Odzyskiwanie po awarii | Ważność aplikacji, obciążenia lub usługi dla działania firmy.                                     | Routingu              | Funkcja odzyskiwania po awarii, która nie jest dostępna w programie Dr                       |
 | Środowisko       | Środowisko wdrażania aplikacji, obciążenia lub usługi.                                   | Env             | Produkcja, dev, pytań i odpowiedzi, etap, test, szkolenia             |
-| Nazwa właściciela        | Właściciel aplikacji, obciążenia lub usługi.                                                    | Właściciel           | poczta e-mail                                            |
+| Nazwa właściciela        | Właściciel aplikacji, obciążenia lub usługi.                                                    | Właściciel           | Poczta e-mail                                            |
 | Typ wdrożenia   | Definiuje sposób utrzymywania zasobów.                                                    | Typ wdrożenia  | Ręczne, Terraform                                |
-| Wersja           | Wdrożona wersja planu.                                                                 | version         | v 0,1                                             |
+| Wersja           | Wdrożona wersja planu.                                                                 | Wersja         | V 0,1                                             |
 | Nazwa aplikacji  | Nazwa skojarzonej aplikacji, usługi lub obciążenia związanego z zasobem.             | ApplicationName | "Nazwa aplikacji"                                       |
 
 <!-- cSpell:ignore caf -->
@@ -151,7 +151,7 @@ tags_hub = {
 }
 ```
 
-Następnie podaj nazwę usługi log Analytics i zestaw rozwiązań, które analizują wdrożenie. W tym miejscu zachowamy monitorowanie sieci, Active Directory Assessment i replikację, DNS Analytics i Key Vault Analytics.
+Następnie określimy nazwę Log Analytics i zestaw rozwiązań, które analizują wdrożenie. W tym miejscu zachowamy monitorowanie sieci, Active Directory ocenę i replikację, analizę DNS i Key Vault Analytics.
 
 ```hcl
 
@@ -196,7 +196,7 @@ security_center = {
 }
 ```
 
-## <a name="get-started"></a>Rozpoczęcie pracy
+## <a name="get-started"></a>Wprowadzenie
 
 Po przejrzeniu konfiguracji można wdrożyć konfigurację w sposób wdrożony środowisko Terraform. Zalecamy korzystanie z Rover, który jest kontenerem platformy Docker, który umożliwia wdrażanie z systemu Windows, Linux lub macOS. Możesz rozpocząć pracę z [strefami wyładunkowymi](https://github.com/azure/caf-terraform-landingzones).
 

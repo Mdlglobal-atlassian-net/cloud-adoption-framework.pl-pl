@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 07b9eb1ebcb464abda6f2c2cf276cb91596cea1a
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: af09377a8f3568d2f9604249160f69afb7308d7d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400495"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754890"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny linii bazowej zabezpieczeń
 
@@ -39,9 +39,9 @@ Od tej pory zmieniono pewne zmiany, które wpłyną na nadzór:
 
 - Tysiące zasobów IT i firm zostały wdrożone w chmurze.
 - Zespół programistyczny aplikacji wdrożył potok ciągłej integracji i ciągłego wdrażania (CI/CD) w celu wdrożenia aplikacji natywnej w chmurze z ulepszonym środowiskiem użytkownika. Ta aplikacja nie współdziała jeszcze z chronionymi danymi, więc nie jest gotowa do produkcji.
-- Zespół ds. analizy biznesowej aktywnie nadzoruje dane w chmurze na podstawie danych logistycznych, spisu i innych firm. Te dane są używane do kierowania nowych prognoz, które mogą kształtować procesy biznesowe. Jednak te przewidywania i szczegółowe informacje nie są funkcjonalne, dopóki dane klienta i finansowe nie będą mogły zostać zintegrowane z platformą danych.
+- Zespół ds. analizy biznesowej aktywnie nadzoruje dane w chmurze na podstawie danych logistycznych, spisu i innych firm. Te dane są używane do kierowania nowych prognoz, które mogą kształtować procesy biznesowe. Te przewidywania i szczegółowe informacje nie są funkcjonalne, dopóki dane klienta i finansowe nie będą mogły zostać zintegrowane z platformą danych.
 - Zespół IT wprowadza postępy w planach CIO i DYREKTORów, aby wycofać dwa centra danych. Prawie 3 500 zasobów w dwóch centrach danych zostało wycofane lub zmigrowane.
-- Zasady dotyczące poufnych danych osobistych i finansowych zostały zmodernizowane. Jednak nowe zasady firmowe są zależne od implementacji związanych z nimi zasad zabezpieczeń i zarządzania. Zespoły nadal są wstrzymane.
+- Zasady dotyczące poufnych danych osobistych i finansowych zostały zmodernizowane. Nowe zasady firmowe są zależne od implementacji powiązanych zasad zabezpieczeń i zarządzania. Zespoły nadal są wstrzymane.
 
 ### <a name="incrementally-improve-the-future-state"></a>Przyrostowe ulepszanie stanu w przyszłości
 

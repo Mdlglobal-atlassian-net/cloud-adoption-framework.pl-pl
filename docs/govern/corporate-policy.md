@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 36b194f1985a9d277315207ea685d5fff94a87a0
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 0ef323934ada6ee1342f74828c2833f24a46a22f
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400687"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755170"
 ---
 # <a name="evaluate-corporate-policy"></a>Ocenianie zasad firmowych
 
@@ -21,7 +21,7 @@ ms.locfileid: "83400687"
 
 | | |
 |---|---|
-| Wszelkie zmiany w procesach działalności biznesowej lub platformach technologicznych wprowadzają ryzyko dla działalności firmy. Zespoły nadzorujące chmur, których członkowie są czasami znane jako osoby niebędące członkami chmury, są zadaniem z ograniczeniem ryzyka związanego z minimalnym zakłóceniem wdrażania lub innowacji. <br><br> Jednakże zarządzanie chmurą wymaga więcej niż implementację techniczną. Drobne zmiany w opisach firmowych lub zasadach korporacyjnych mogą znacząco wpływać na wdrażanie. Przed wdrożeniem należy zapoznać się poza nim podczas definiowania zasad firmowych. | [![Diagram modelu ładu struktury wdrażania w chmurze: zasady firmowe i dyscypliny ładu](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> _Rysunek 1. wizualne zasady firmowe i pięć dyscyplin nadzoru chmurowego._ |
+| Wszelkie zmiany w procesach działalności biznesowej lub platformach technologicznych wprowadzają ryzyko dla działalności firmy. Zespoły nadzorujące chmur, których członkowie są czasami znane jako osoby niebędące członkami chmury, są zadaniem z ograniczeniem ryzyka związanego z minimalnym zakłóceniem wdrażania lub innowacji. <br><br> Jednak zarządzanie chmurą wymaga więcej niż wdrożenia techniczne. Drobne zmiany w opisach firmowych lub zasadach korporacyjnych mogą znacząco wpływać na wdrażanie. Przed wdrożeniem należy zapoznać się poza nim podczas definiowania zasad firmowych. | [![Diagram modelu ładu struktury wdrażania w chmurze: zasady firmowe i dyscypliny ładu](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> _Rysunek 1. wizualne zasady firmowe i pięć dyscyplin nadzoru chmurowego._ |
 
 <!-- markdownlint-enable MD033 -->
 

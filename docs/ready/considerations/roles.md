@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 6029f3d46f3a59adc465d47d9545a017d04487e6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 06def57a93d5577d39bb7c638fb8a4d854258723
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216405"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756468"
 ---
 # <a name="role-based-access-control"></a>Kontrola dostępu oparta na rolach
 
@@ -49,9 +49,9 @@ Platforma Azure udostępnia wiele wbudowanych definicji ról, w tym trzy podstaw
 
 Począwszy od tych podstawowych poziomów dostępu, dodatkowe wbudowane role zapewniają bardziej szczegółowe możliwości kontroli dostępu do określonych typów zasobów lub funkcji platformy Azure. Na przykład dostępem do maszyn wirtualnych można zarządzać, korzystając z następujących wbudowanych ról:
 
-- Rola [Logowanie administratora maszyny wirtualnej](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) umożliwia wyświetlanie maszyn wirtualnych w portalu i logowanie się jako _administrator_.
-- Rola [Współautor maszyny wirtualnej](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) umożliwia zarządzanie maszynami wirtualnymi, ale nie umożliwia udzielania dostępu do nich ani do sieci wirtualnej lub konta magazynu, do którego te maszyny wirtualne są podłączone.
-- Rola [Logowanie użytkownika maszyny wirtualnej](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) umożliwia wyświetlanie maszyn wirtualnych w portalu i logowanie się jako zwykły użytkownik.
+- Rola [logowania administratora maszyny wirtualnej](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) może wyświetlać maszyny wirtualne w portalu i zalogować się jako _administrator_.
+- Rola [współautor maszyny wirtualnej](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) może zarządzać maszynami wirtualnymi, ale nie może uzyskać do nich dostępu ani do sieci wirtualnej lub konta magazynu, z którymi są połączone.
+- Rola [logowania użytkownika maszyny wirtualnej](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) może wyświetlać maszyny wirtualne w portalu i zalogować się jako zwykły użytkownik.
 
 Inny przykład korzystania z wbudowanych ról w celu zarządzania dostępem do określonych funkcji można znaleźć w omówieniu kontroli dostępu do funkcji śledzenia kosztów w [ramach śledzenia kosztów w różnych jednostkach, środowiskach i projektach](../azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access).
 
@@ -65,7 +65,7 @@ Dokumentacja kontroli dostępu opartej na rolach na platformie Azure zawiera ins
 
 ## <a name="separation-of-responsibilities-and-roles-for-large-organizations"></a>Separacja obowiązków i ról w dużych organizacjach
 
-Kontrola dostępu oparta na rolach umożliwia organizacjom przypisywanie różnych zespołów do różnych zadań związanych z zarządzaniem w ramach dużych majątków w chmurze. Umożliwia centralnym zespołom IT kontrolowanie podstawowych funkcji dostępu i zabezpieczeń, zapewniając jednocześnie deweloperom oprogramowania i innym zespołom znaczną kontrolę na określonymi obciążeniami lub grupami zasobów.
+Kontrola dostępu oparta na rolach umożliwia organizacjom przypisywanie różnych zespołów do różnych zadań związanych z zarządzaniem w ramach dużych majątków w chmurze. Umożliwia centralne zespoły IT kontrolować podstawowe funkcje dostępu i zabezpieczeń, zapewniając jednocześnie deweloperom oprogramowania i innym zespołom dużą ilość kontroli nad określonymi obciążeniami lub grupami zasobów.
 
 W większości środowisk chmury może być również korzystne zastosowanie strategii kontroli dostępu opartej na wielu rolach z naciskiem na podział obowiązków między tymi rolami. To podejście wymaga zaangażowania wielu ról w wykonanie każdej znaczącej zmiany dotyczącej zasobów lub infrastruktury, co gwarantuje, że co najmniej jedna osoba musi sprawdzić i zatwierdzić zmianę. Ten podział obowiązków ogranicza możliwość dostępu pojedynczej osoby do poufnych danych lub wprowadzenia luk w zabezpieczeniach bez wiedzy pozostałych członków zespołu.
 
@@ -75,13 +75,13 @@ W poniższej tabeli przedstawiono typowy wzorzec podziału obowiązków IT na od
 
 | Grupa | Typowa nazwa roli | Zakres odpowiedzialności |
 | --- | --- | --- |
-| Operacje zabezpieczeń | SecOps | Zapewnia ogólny nadzór nad bezpieczeństwem.  <br><br> Ustanawia i wymusza zasady zabezpieczeń, takie jak szyfrowanie w spoczynku. <br><br> Zarządza kluczami szyfrowania. <br><br> Zarządza regułami zapory. |
-| Operacje sieciowe | NetOps | Zarządza konfiguracją sieci i operacjami w sieciach wirtualnych, takimi jak trasy i komunikacja równorzędna. |
-| Operacje systemowe | SysOps | Określa opcje infrastruktury obliczeniowej i magazynu oraz obsługuje wdrożone zasoby. |
+| Operacje zabezpieczeń | SecOP | Zapewnia ogólny nadzór nad bezpieczeństwem.  <br><br> Ustanawia i wymusza zasady zabezpieczeń, takie jak szyfrowanie w spoczynku. <br><br> Zarządza kluczami szyfrowania. <br><br> Zarządza regułami zapory. |
+| Operacje sieciowe | Netops | Zarządza konfiguracją sieci i operacjami w sieciach wirtualnych, takimi jak trasy i komunikacja równorzędna. |
+| Operacje na systemach | Sysops | Określa opcje infrastruktury obliczeniowej i magazynu oraz obsługuje wdrożone zasoby. |
 | Programowanie, testowanie i operacje | DevOps | Kompiluje i wdraża funkcje i aplikacje obciążeń. <br><br> Obsługuje funkcje i aplikacje w celu spełnienia wymagań umów dotyczących poziomu usług (umowy SLA) i innych standardów jakości. |
 
 <!-- markdownlint-enable MD033 -->
 
 Podział akcji i uprawnień w tych rolach standardowych jest często taki sam w przypadku aplikacji, subskrypcji lub całej chmury, nawet jeśli te role są wykonywane przez różne osoby na różnych poziomach. Dlatego można utworzyć wspólny zestaw definicji ról kontroli dostępu opartej na rolach do zastosowania w różnych zakresach środowiska. Użytkownikom i grupom można przypisać wspólną rolę, ale tylko dla zakresu zasobów, grup zasobów, subskrypcji lub grup zarządzania, za zarządzanie którymi odpowiadają.
 
-Na przykład w [topologii sieci gwiazdy i szprych](../azure-best-practices/hub-spoke-network-topology.md) z wieloma subskrypcjami może istnieć wspólny zestaw definicji ról dla centrum i wszystkich szprych obciążeń. Rolę NetOps subskrypcji piasty można przypisać do centralnych pracowników IT organizacji, którzy są odpowiedzialni za obsługę sieci dla usług udostępnionych używanych przez wszystkie obciążenia. Rolę NetOps subskrypcji szprychy obciążenia można przypisać do członków tego konkretnego zespołu obciążenia, co pozwoli im na skonfigurowanie sieci w ramach tej subskrypcji w celu zapewnienia optymalnej obsługi wymagań dotyczących obciążenia. W obu przypadkach jest używana ta sama definicja roli, ale przypisania oparte na zakresie dają pewność, że użytkownicy mają tylko dostęp, którego potrzebują do wykonywania swojej pracy.
+Na przykład w [topologii sieci gwiazdy i szprych](../azure-best-practices/hub-spoke-network-topology.md) z wieloma subskrypcjami może istnieć wspólny zestaw definicji ról dla centrum i wszystkich szprych obciążeń. Rolę NetOps subskrypcji centrum można przypisać do członków centralnych pracowników organizacji, którzy są odpowiedzialni za obsługę sieci dla usług udostępnionych używanych przez wszystkie obciążenia. Rolę NetOps subskrypcji satelity obciążenia można przypisać do członków tego konkretnego zespołu obciążenia, co pozwoli im na skonfigurowanie sieci w ramach tej subskrypcji w celu zapewnienia optymalnej obsługi wymagań dotyczących obciążenia. W obu przypadkach jest używana ta sama definicja roli, ale przypisania oparte na zakresie dają pewność, że użytkownicy mają tylko dostęp, którego potrzebują do wykonywania swojej pracy.

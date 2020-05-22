@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 31c8f460f60258a8da6444ae017194a6fd684e43
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 6ea51d75a2c75fd8e75ade42eb3c9fe15def67b4
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400549"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754954"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Przewodnik dotyczący zarządzania złożonymi przedsiębiorstwami: ulepszanie dyscypliny Cost Management
 
@@ -23,7 +23,7 @@ Ten artykuł postępuje zgodnie z opisami, dodając kontrolki kosztów do nadzor
 
 Wdrożenie wykracza poza wskaźnik tolerancji zdefiniowany w programie ładu MVP. Zwiększenie nakładu wydatków uzasadnia teraz odinwestycję czasu od zespołu nadzoru w chmurze w celu monitorowania i kontrolowania wzorców wydatków.
 
-Jako czysty sterownik innowacji nie jest już widoczny głównie jako centrum kosztów. Ponieważ organizacja IT dostarcza więcej wartości, CIO i dyrektor finansowy zgadzają się, że czas jest w stanie przesunąć rolę, jaką odgrywa w firmie. Od innych zmian dyrektor finansowy chce przetestować bezpośrednie podejście do księgowania w chmurze dla kanadyjskiej gałęzi jednej z jednostek biznesowych. Jedno z dwóch wycofanych centrów danych dotyczyło wyłącznie zasobów hostowanych przez kanadyjskie jednostki biznesowe. W tym modelu w kanadyjskiej oddzieleniu jednostka biznesowa zostanie naliczona bezpośrednio za wydatki operacyjne związane z zasobami hostowanymi. Ten model pozwala skupić się na niższym stopniu na zarządzaniu wydatkami innej osoby i nie tylko przy tworzeniu wartości. Jednak zanim to przejście będzie możliwe, rozpocznie się wykonywanie narzędzi do zarządzania kosztami.
+Jako czysty sterownik innowacji nie jest już widoczny głównie jako centrum kosztów. Ponieważ organizacja IT dostarcza więcej wartości, CIO i dyrektor finansowy zgadzają się, że czas jest w stanie przesunąć rolę, jaką odgrywa w firmie. Od innych zmian dyrektor finansowy chce przetestować bezpośrednie podejście do księgowania w chmurze dla kanadyjskiej gałęzi jednej z jednostek biznesowych. Jedno z dwóch wycofanych centrów danych dotyczyło wyłącznie zasobów hostowanych przez kanadyjskie jednostki biznesowe. W tym modelu w kanadyjskiej oddzieleniu jednostka biznesowa zostanie naliczona bezpośrednio za wydatki operacyjne związane z zasobami hostowanymi. Ten model pozwala skupić się na niższym stopniu na zarządzaniu wydatkami innej osoby i nie tylko przy tworzeniu wartości. Zanim to przejście będzie możliwe, należy rozpocząć wykonywanie narzędzi do zarządzania kosztami.
 
 ### <a name="changes-in-the-current-state"></a>Zmiany w bieżącym stanie
 

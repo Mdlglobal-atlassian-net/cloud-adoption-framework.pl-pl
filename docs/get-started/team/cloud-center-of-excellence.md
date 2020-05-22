@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: 59e01530d66fe55e76123a6de229944b4259175c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 9c44c03c0a467e897ba648d1f4ae81fc7bae1c71
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229186"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83751824"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -95,11 +95,11 @@ W dobrej kondycji firmy, ten proces negocjacji jest dynamiczną konwersacją mi�
 
 CCoE jest funkcją podaną przez zespoły o dużej zapotrzebowaniu. Ważne jest, aby umożliwić współpracę organiczną i śledzenie wzrostu za pomocą wspólnego repozytorium/wykazu rozwiązań. Maksymalizuj interakcje naturalne, ale Zminimalizuj spotkania. Gdy ta funkcja jest dojrzała, zespoły powinny próbować ograniczyć liczbę przeznaczonych spotkań. Uczestnictwo w spotkaniach cyklicznych, takich jak spotkania wydania obsługiwane przez zespół ds. wdrażania chmury, udostępnia dane wejściowe. Równolegle, spotkanie po każdym planie wydania może zapewnić minimalny punkt dotykowy dla tego zespołu.
 
-**Pomoc techniczna i zaangażowanie w biznesie:** Zespoły CCoE mogą przedstawiać szybkie zwroty w niektórych obszarach. Jednak cele wyższego poziomu, takie jak elastyczność biznesowa i czas wprowadzenia na rynek, mogą zająć dużo czasu. W trakcie dojrzewania istnieje duże ryzyko, że CCoE nie zostanie zaakceptowany lub wycofane, aby skoncentrować się na innych wysiłkach IT.
+**Pomoc techniczna i zaangażowanie w biznesie:** Zespoły CCoE mogą przedstawiać szybkie zwroty w niektórych obszarach. Cele wyższego poziomu, takie jak elastyczność biznesowa i czas wprowadzenia na rynek, mogą zająć dużo czasu. W trakcie dojrzewania istnieje duże ryzyko, że CCoE nie zostanie zaakceptowany lub wycofane, aby skoncentrować się na innych wysiłkach IT.
 
 W okresie pierwszych sześciu do dziewięciu miesięcy CCoE się, że zainteresowane strony biznesowe przydzielą czas na spełnienie miesięcznego lidera IT i CCoE. W przypadku formalnych procedury do tych spotkań istnieje niewielkie zapotrzebowanie. Wystarczy pamiętać, że CCoE członkowie i ich kierownictwo znaczenia tego programu mogą wejść w sposób, aby CCoE sukces.
 
-Ponadto zalecamy, aby zainteresowane strony biznesowe były poinformowane o postępie i zablokowaniu napotykanym przez zespół CCoE. Wiele z ich wysiłków będzie wyglądać jak techniczne minutiae. Jednak ważne jest, aby zainteresowane strony mogły zrozumieć postęp planu, dzięki czemu mogą one mieć wpływ na to, kiedy zespół rozwiąże pary lub rozprasza inne priorytety.
+Ponadto zalecamy, aby zainteresowane strony biznesowe były poinformowane o postępie i zablokowaniu napotykanym przez zespół CCoE. Wiele z ich wysiłków będzie wyglądać jak techniczne minutiae. Ważne jest, aby umożliwić zainteresowanym stronom zrozumienie postępu planu, dzięki czemu mogą one mieć wpływ na to, kiedy zespół rozwiąże pary lub rozprasza inne priorytety.
 
 **Uczestnicy projektu IT wspierają wizję:** Pomyślne CCoE pracy wymaga dużej liczby negocjacji z istniejącymi członkami zespołu IT. Po wykonaniu tych czynności wszystkie te składniki przyczyniają się do rozwiązania i zauważają się za odpowiednie zmiany. Jeśli tak się nie dzieje, niektórzy członkowie istniejącego zespołu IT mogą chcieć zamieścić mechanizmy kontroli z różnych powodów. Wsparcie dla udziałowców IT jest istotne dla sukcesu CCoE, gdy wystąpią takie sytuacje. Zachęcanie i wzmocnienie ogólnych celów CCoE jest ważne, aby rozwiązać blokować odpowiednie negocjacje. W rzadkich przypadkach, zainteresowane strony IT mogą nawet wymagać dalszych kroków i rozdzielić zakleszczenie lub głos związany z CCoEem.
 
@@ -119,7 +119,7 @@ Model CCoE wymaga współpracy między każdą z następujących możliwości:
 
 Ten model wymaga również wsparcia ze strony lidera i najważniejszych udziałowców.
 
-Liderem jest pierwszy i najbardziej oczywisty uczestnik projektu. Menedżerowie IT będą odgrywać ważną część. Jednak w trakcie tego procesu jest wymagana obsługa CIO i innych liderów IT na poziomie kierownictwa.
+Liderem jest pierwszy i najbardziej oczywisty uczestnik projektu. Menedżerowie IT będą odgrywać ważną część. Wsparcie CIO i innych liderów IT na poziomie kierownictwa jest decydujące w trakcie tego procesu.
 
 Mniej oczywisty jest potrzebą dla uczestników biznesowych. Elastyczność biznesowa i czas wprowadzenia na rynek to kluczowe motywacje do tworzenia CCoE. Przykłady uczestników biznesowych obejmują liderów biznesowych, kadry kierowniczej, dyrektorów operacji i właścicieli produktów biznesowych.
 

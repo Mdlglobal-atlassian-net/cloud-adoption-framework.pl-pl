@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f3291bb1a5ef114b2ae790bb1a3c82eaf382c37e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 43fa948aeaa575b440f483fa349d7c965e97a3c3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215130"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753456"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>Sieć zdefiniowana przez oprogramowanie: Hub i szprych
 
@@ -46,9 +46,9 @@ Implementacja architektury sieci wirtualnych Hub i gwiazdy zakłada następując
 
 ## <a name="global-hub-and-spoke"></a>Centrum globalne i szprycha
 
-Architektury Hub i szprych są zwykle implementowane przy użyciu sieci wirtualnych wdrożonych w tym samym regionie świadczenia usługi Azure, aby zminimalizować opóźnienia między sieciami. Jednak duże organizacje z globalnym zasięgiem mogą wymagać wdrożenia obciążeń w wielu regionach w celu zapewnienia dostępności, odzyskiwania po awarii lub wymagań prawnych. Model gwiazdy umożliwia korzystanie z [globalnej sieci wirtualnej](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) platformy Azure w celu rozbudowania scentralizowanych usług zarządzania i współużytkowanych w różnych regionach oraz obsługi obciążeń rozmieszczonych na całym świecie.
+Architektury Hub i szprych są zwykle implementowane przy użyciu sieci wirtualnych wdrożonych w tym samym regionie świadczenia usługi Azure, aby zminimalizować opóźnienia między sieciami. Duże organizacje z globalnym zasięgiem mogą wymagać wdrożenia obciążeń w wielu regionach w celu zapewnienia dostępności, odzyskiwania po awarii lub wymagań prawnych. Model gwiazdy umożliwia korzystanie z [globalnej sieci wirtualnej](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) platformy Azure w celu rozbudowania scentralizowanych usług zarządzania i współużytkowanych w różnych regionach oraz obsługi obciążeń rozmieszczonych na całym świecie.
 
-## <a name="learn-more"></a>Dowiedz się więcej
+## <a name="learn-more"></a>Więcej tutaj
 
 Aby poznać architektury referencyjne pokazujące, jak zaimplementować sieci piasty i szprych na platformie Azure, zobacz:
 

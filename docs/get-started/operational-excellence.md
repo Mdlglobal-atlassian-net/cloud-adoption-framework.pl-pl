@@ -3,20 +3,30 @@ title: 'Wprowadzenie: dostarczanie operacyjnej doskonałości'
 description: Poznaj podstawy doskonałości operacyjnej podczas transformacji cyfrowej.
 author: JanetCThomas
 ms.author: janet
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 406db0eb2743b783c409c5b78ce7c2958a216548
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8859d2fa1228bb97ed9c0f6f0d2f05853c163969
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229498"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752578"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>Wprowadzenie: dostarczanie operacyjnej doskonałości podczas transformacji cyfrowej
 
-Jak zapewnić doskonałe doskonałe działanie podczas transformacji cyfrowej? Doskonałości operacyjną to funkcja biznesowa, która bezpośrednio wpływa na decyzje IT. Doskonałością operacyjną jest koncentracja na rzecz klientów i udziałowców, ze stałym wpływem na dochody, ryzyko i koszty. Takie podejście do zarządzania zmianami organizacyjnymi wymaga zdefiniowanej strategii, jasnego rezultatu biznesowego i planowania zarządzania zmianami. W perspektywie chmury wpływ ryzyka i kosztów jest zarządzany przez zarządzanie zmianami po przyjęciu i ciągłe ulepszanie procesów operacyjnych. Może to obejmować automatyzację systemów, praktyki zarządzania operacjami IT i dyscyplinę spójności zasobów w całym cyklu życia wdrożenia chmury. Kroki przedstawione w tym przewodniku mogą pomóc zespołowi strategii prowadzić do zarządzania zmianami organizacyjnymi, które są wymagane do spójnego zapewnienia doskonałości operacyjnej.
+Jak zapewnić doskonałość operacyjną podczas transformacji cyfrowej? Doskonałości operacyjną to funkcja biznesowa, która bezpośrednio wpływa na decyzje IT. Aby osiągnąć doskonałości operacyjną, należy skoncentrować się na wartościach klientów i udziałowców, zachowując wpływ na przychody, ryzyko i koszty.
+
+To podejście do zarządzania zmianami organizacyjnymi wymaga:
+
+- Zdefiniowana strategia.
+- Wyczyść wyniki biznesowe.
+- Planowanie zarządzania zmianami.
+
+Z perspektywy chmury możesz zarządzać wpływem ryzyka i kosztów, wprowadzając zmiany po przyjęciu i ciągle przetwarzając procesy operacyjne. Obszary do monitorowania obejmują automatyzację systemów, praktyki zarządzania operacjami IT i dyscyplinę spójności zasobów w całym cyklu życia wdrożenia chmury.
+
+Kroki opisane w tym artykule mogą pomóc zespołowi strategii prowadzić do zarządzania zmianami organizacyjnymi, które są wymagane do spójnego zapewnienia doskonałości operacyjnej.
 
 Doskonałe zalety w całym przedsiębiorstwie i portfolio zaczynają się od procesów równorzędnych strategii i planowania w celu wyrównania i raportowania na temat oczekiwań związanych z zarządzaniem zmianami organizacji. Poniższe kroki ułatwiają zespołom technicznym dostarczanie dyscyplin wymaganych do osiągnięcia doskonałości operacyjnej.
 
@@ -24,19 +34,19 @@ Doskonałe zalety w całym przedsiębiorstwie i portfolio zaczynają się od pro
 
 ## <a name="step-1-define-a-strategy-to-guide-digital-transformation-and-operational-excellence-expectations"></a>Krok 1. Zdefiniowanie strategii do obsługi transformacji cyfrowej i oczekiwań w przypadku działania
 
-Przejrzysta Strategia biznesowa jest podstawą dla każdej transformacji cyfrowej i wszelkiego wysiłku związanego z doskonałością operacyjną. Może obniżyć koszty i usprawnić procesy INFORMATYCZNe, ale bez jasnej strategii, której trudno zrozumieć, jak te zmiany mogą wpływać na wyniki biznesowe, których celem jest szersze przekształcenie.
+Przejrzysta Strategia biznesowa jest podstawą do dowolnych transformacji cyfrowych i potrzeb związanych z doskonałością operacyjną. Może obniżyć koszty i usprawnić procesy IT. Bez jasnej strategii trudno zrozumieć, w jaki sposób te zmiany mogą wpływać na wyniki biznesowe określone w szerszym wysiłku transformacji.
 
 **Dostarczane**
 
 - Rejestruj motywacje, wyniki i uzasadnienie biznesowe w [szablonie strategii i planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
-- Upewnij się, że metryki uczenia są dobrze zrozumiałe i zawarte w sekcji wyniki biznesowe, ponieważ te metryki zależą od działań związanych z najważniejszymi zadaniami i raportowaniem.
+- Upewnij się, że metryki uczenia są dobrze zrozumiałe i zawarte w sekcji wyniki biznesowe. Te metryki dotyczą działań doskonałości i raportów w ramach tej funkcji.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- [Poznaj motywacje](../strategy/motivations.md): krytyczne zdarzenia biznesowe i niektóre motywacje do migracji mogą być wrażliwe na koszty, co zwiększa znaczenie kontroli kosztów dla wszystkich kolejnych wysiłków. Inne przeszukiwane motywacje dotyczące innowacji lub wzrostu dzięki migracji mogą być bardziej ukierunkowane na dochody w oparciu o linię górną. Zrozumienie motywacji ułatwia zrozumienie, jak wysoki jest priorytet zarządzania kosztami.
-- [Wyniki biznesowe](../strategy/business-outcomes/index.md): niektóre wyniki fiskalne mają być wyjątkowo czułe. Gdy żądane wyniki są mapowane na metryki fiskalne, należy zainwestować w Cost Management dyscypliny zarządzania wczesnie.
+- [Poznaj motywacje](../strategy/motivations.md): krytyczne zdarzenia biznesowe i niektóre motywacje do migracji są zależne od kosztów. Obszary te mogą zwiększyć znaczenie kontroli kosztu dla wszystkich późniejszych wysiłków. Inne trendy do przodu dotyczące innowacji lub wzrostu przez proces migracji mogą być bardziej ukierunkowane na dochody w oparciu o linię górną. Zrozumienie motywacji pomaga określić priorytety zarządzania kosztami.
+- [Wyniki biznesowe](../strategy/business-outcomes/index.md): niektóre wyniki fiskalne mają być wyjątkowo czułe. Gdy żądane wyniki są mapowane na metryki fiskalne, należy zainwestować na wczesne dyscypliny ładu Cost Management.
 - [Uzasadnienie biznesowe](../strategy/cloud-migration-business-case.md): uzasadnienie biznesowe służy jako ogólny widok ogólnego planu finansowego na potrzeby wdrażania w chmurze. Może to być dobre źródło dla początkowych nakładów budżetowych.
-- [Metryki uczenia](../strategy/learning-metrics.md): aby zachować wyrównanie między strategią biznesową i bardziej taktycznymi planami zarządzania zmianami, ważne jest, aby ustanowić metryki uczenia w celu przedstawienia iteracji i przyrostowego postępu w kierunku planu.
+- [Metryki uczenia](../strategy/learning-metrics.md): aby zachować wyrównanie między strategią biznesową i bardziej taktycznymi planami zarządzania zmianami, ustal metryki szkoleniowe. Te metryki powinny być przeznaczone do wyświetlania iteracji i przyrostowego postępu w kierunku planu.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -47,22 +57,22 @@ Przejrzysta Strategia biznesowa jest podstawą dla każdej transformacji cyfrowe
 
 ## <a name="step-2-develop-an-organizational-change-management-plan-to-span-cloud-adoption"></a>Krok 2. opracowywanie planu zarządzania zmianami organizacyjnymi w celu przeprowadzenia wdrożenia chmury
 
-Zarządzanie zmianami organizacyjnymi to iteracyjne podejście do niewielkiego dopasowania osób, procesów i technologii w celu wspierania całościowej strategii biznesowej. W przypadku usługi Operational doskonałości na potrzeby transformacji cyfrowej często będzie to dotyczyć planu wdrożenia chmury skoncentrowanego na technologii INFORMATYCZNych.
+Zarządzanie zmianami organizacyjnymi to iteracyjne podejście do niewielkiego dopasowania osób, procesów i technologii w celu wspierania całościowej strategii biznesowej. W przypadku doskonałej precyzji dla transformacji cyfrowej to podejście często koncentruje się na planie wdrożenia chmury skoncentrowanym na technologii informatycznych.
 
 **Dostarczane**
 
-- Aktualizacja [strategii i szablonu planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) w celu odzwierciedlenia zmian, które są potrzebne do realizacji odpowiedniej strategii. Zarejestrowane zmiany mogą obejmować następujące elementy:
+- Zaktualizuj [strategię i szablon planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) w celu odzwierciedlenia zmian potrzebnych do osiągnięcia odpowiedniej strategii. Zarejestrowane zmiany mogą obejmować:
 
   - Ocena istniejącego podpisu cyfrowego.
-  - Plan wdrażania w chmurze odzwierciedlający wymagane zmiany i prace.
-  - Zmiany organizacyjne wymagane do dostarczenia planu.
+  - Plan wdrażania chmury, który odzwierciedla wymagane zmiany i prace.
+  - Zmiany organizacyjne, które są wymagane do dostarczenia zgodnie z planem.
   - Plan odnoszący się do umiejętności, które są potrzebne, aby umożliwić istniejącemu zespołowi pomyślne ukończenie wymaganej pracy.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
 - [Zbieranie spisu](../digital-estate/inventory.md): Ustanów źródło danych do analizy podpisywania cyfrowego przed przyjęciem.
 - [Najlepsze rozwiązanie — Azure Migrate](../plan/contoso-migration-assessment.md): Użyj Azure Migrate do zebrania spisu.
-- [Racjonalizacja przyrostowa](../digital-estate/rationalize.md#incremental-rationalization): podczas przyrostowej racjonalizacji analiza ilościowa będzie identyfikować kandydatów w chmurze na potrzeby budżetowania.
+- [Racjonalizacja przyrostowa](../digital-estate/rationalize.md#incremental-rationalization): podczas przyrostowej racjonalizacji analiza ilościowa identyfikuje kandydatów w chmurze na potrzeby budżetowania.
 - [Wyrównaj modele kosztów i modele prognoz](../digital-estate/calculate.md): Użyj Azure Cost Management do rozrównania kosztów i modeli prognoz przez [Tworzenie budżetów](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
 - [Kompiluj plan wdrażania chmury](../plan/plan-intro.md#build-your-cloud-adoption-plan): Utwórz plan z możliwością działania, zasobami i szczegółami osi czasu.
 
@@ -75,7 +85,9 @@ Zarządzanie zmianami organizacyjnymi to iteracyjne podejście do niewielkiego d
 
 ## <a name="step-3-manage-change-across-cloud-adoption-efforts"></a>Krok 3. zarządzanie zmianami w ramach działań związanych z wdrażaniem w chmurze
 
-Realizacja wyników działalności biznesowej polega na ciągłym dostarczaniu metod wdrażania. Te fale mogą obejmować cykle migracji i innowacji. W obu przypadkach dostarczanie na potrzeby operacyjnej doskonałości rozpoczyna się od regularnego cyklu zarządzania zmianami. Każda fala (lub wersja w warunkach Agile) dostarczy zestaw obciążeń do chmury. Gdy każda fala zostanie ukończona, zespół strategii chmury będzie mógł zgłosić postępy w kierunku uczenia się, rezultatów działalności i ogólnej strategii. Podobnie, gdy każda fala zostanie zakończona, zespoły wdrażające będą potrzebować aktualizacji zaległości odzwierciedlających priorytetowe obciążenia w planie, na podstawie wszelkich zmian w planach działalności i klientach.
+Realizacja wyników działalności biznesowej polega na ciągłym dostarczaniu metod wdrażania. Te fale mogą obejmować cykle migracji i innowacji. W obu przypadkach dostarczanie na potrzeby operacyjnej doskonałości rozpoczyna się od regularnego cyklu zarządzania zmianami.
+
+Każda fala (lub wersja, w warunkach Agile) dostarcza zestaw obciążeń do chmury. Gdy każda fala zostanie zakończona, zespół strategii chmury będzie zgłaszał postępy w kierunku uczenia się, wyników działalności biznesowej i ogólnej strategii. Podobnie, gdy każda fala zostanie ukończona, zespoły wdrożenia potrzebują aktualizacji zaległości, które odzwierciedlają priorytetowe obciążenia w planie. Te aktualizacje są oparte na wszelkich zmianach w planach biznesowych i potrzebach klientów.
 
 **Dostarczane**
 
@@ -84,9 +96,9 @@ Realizacja wyników działalności biznesowej polega na ciągłym dostarczaniu m
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
 - [Planowanie wydań](../digital-estate/approach.md): podejścia do zarządzania zmianami przy użyciu planowania wydania.
-- [Racjonalizacja przyrostowa](../digital-estate/rationalize.md#incremental-rationalization): iteracyjne podejście do zmiany zarządzania ukierunkowane na zarządzanie zaległością wydania, aby obsługiwać zarządzanie fale zmian.
-- [Moc 10 podejścia](../digital-estate/rationalize.md#release-planning): ograniczenie planu zarządzania zmianami, aby skoncentrować się na szczegółowej analizie i planowaniu ciągłej podstawy 10 obciążeń w celu zrównoważenia zmian przyrostowych i iteracyjnego wdrażania.
-- [Wyrównaj ścieżki iteracji](../plan/iteration-paths.md): aktualizowanie i Dodawanie szczegółów w każdej wersji, aby upewnić się, że są obecne ścieżki iteracji.
+- [Racjonalizacja przyrostowa](../digital-estate/rationalize.md#incremental-rationalization): iteracyjne podejście do zarządzania zmianami. Koncentruje się na zarządzaniu listą prac wersji, aby obsługiwać zarządzanie fale zmian.
+- [Moc 10 podejścia](../digital-estate/rationalize.md#release-planning): ogranicza plan zarządzania zmianami. Koncentruje się na szczegółowej analizie i planowaniu ciągłej podstawy 10 obciążeń, aby zrównoważyć zmiany przyrostowe i iteracji.
+- [Wyrównaj ścieżki iteracji](../plan/iteration-paths.md): zaktualizuj i Dodaj szczegóły w każdej wersji, aby upewnić się, że są obecne ścieżki iteracji.
 - [Ocena obciążeń](../migrate/azure-migration-guide/assess.md?tabs=challenge-assumptions): wysiłki zespołu wdrożenia w chmurze do oceny i działania na najnowszym zestawie priorytetów migracji.
 - [Wartość biznesowa konsensus](../innovate/business-value.md): wysiłki zespołu adopcji w chmurze, aby zapewnić wyrównanie wartości biznesowej przy każdej wersji nowych innowacji.
 
@@ -99,15 +111,15 @@ Realizacja wyników działalności biznesowej polega na ciągłym dostarczaniu m
 
 ## <a name="value-statement"></a>Value — instrukcja
 
-Powyższe kroki przedstawiają podejście prowadzone przez firmę w celu ustalenia wymagań w zakresie rozwiązań operacyjnych w ramach transformacji cyfrowej. To podejście zapewnia spójną podstawę, która korzyściach odpowiadających potrzebom w różnych funkcjach modelu operacyjnego.
+W poprzednich krokach przedstawiono podejście prowadzone przez firmę, które pozwala ustalić wymagania dotyczące doskonałości działania w ramach transformacji cyfrowej. To podejście zapewnia spójną podstawę, która wykonuje inne funkcje modelu operacyjnego.
 
 ![Zasady architektury udostępnionej](../_images/shared-principles.png)
 
 ## <a name="next-steps-to-delivering-operational-excellence-across-the-portfolio"></a>Następne kroki umożliwiające dostarczenie doskonałości operacyjnej w portfelu
 
-Doskonałościa operacyjna wymaga dyscyplinowego podejścia do niezawodności, wydajności, zabezpieczeń i optymalizacji kosztów. Skorzystaj z pozostałych wskazówek dotyczących wprowadzenia w tej serii artykułów, aby zapewnić, że wszystkie te zasady są implementowane za pomocą spójnych metod automatyzacji.
+Doskonałościa operacyjna wymaga dyscyplinowego podejścia do niezawodności, wydajności, zabezpieczeń i optymalizacji kosztów. Skorzystaj z pozostałych wskazówek w tej serii, aby upewnić się, że każda z tych zasad została wdrożona za pomocą spójnych metod automatyzacji.
 
-- **Optymalizacja kosztów:** Ciągłe Optymalizowanie kosztów operacyjnych przy użyciu przewodnika wprowadzającego na temat [zarządzania kosztami przedsiębiorstwa](./manage-costs.md)
-- **Zabezpieczenia:** Zmniejszenie ryzyka przez integrację zabezpieczeń przedsiębiorstwa w portfelu przy użyciu przewodnika wprowadzającego na temat [implementowania zabezpieczeń w portfolio](./security.md).
-- Upewnij się, że wydajność zasobów IT obsługuje procesy biznesowe, korzystając z przewodnika Wprowadzenie do [zarządzania wydajnością w całym przedsiębiorstwie](./performance.md).
-- Zwiększ niezawodność i zmniejsz liczbę przerw w działalności biznesowej, korzystając z przewodnika wprowadzającego na temat [implementowania formantów w celu utworzenia niezawodności](./reliability.md).
+- **Optymalizacja kosztów:** Ciągłe Optymalizowanie kosztów operacyjnych przy użyciu przewodnika Get-Started na [zarządzaniu kosztami przedsiębiorstwa](./manage-costs.md)
+- **Zabezpieczenia:** Zmniejszenie ryzyka przez integrację zabezpieczeń przedsiębiorstwa w portfolio przy użyciu przewodnika Get-Started na temat [implementowania zabezpieczeń w portfolio](./security.md).
+- **Zarządzanie wydajnością:** Upewnij się, że wydajność zasobów IT obsługuje procesy biznesowe, korzystając z przewodnika Wprowadzenie do [zarządzania wydajnością w całym przedsiębiorstwie](./performance.md).
+- **Niezawodność:** Zwiększ niezawodność i zmniejsz liczbę przerw w działaniu, korzystając z przewodnika Get-Started w [celu zaimplementowania kontroli w celu utworzenia niezawodności](./reliability.md).

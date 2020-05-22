@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 92453f3323a2479160bd7bd45e6ef5101c1d9f1b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f25a475bea681f34fc395fbcbd0684bb07ee6923
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430131"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756213"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Operacje na obciążeniach w zarządzaniu chmurą
 
@@ -92,7 +92,7 @@ W przypadku rozwiązywania długów technicznych i zautomatyzowanego korygowania
 - **Zarządzanie:** Procesy operacji, które przechowują system w środowisku produkcyjnym.
 - **Zabezpieczenia:** Ochrona aplikacji i danych przed zagrożeniami.
 
-Aby pomóc w ulepszaniu ogólnych operacji, Platforma [architektury Azure](https://docs.microsoft.com/azure/architecture/guide/pillars) zapewnia podejście do oceny konkretnych obciążeń do przystąpienia do tych filarów. Można zastosować filary mogą być stosowane do operacji na platformie i operacji obciążeń.
+Aby pomóc w ulepszaniu ogólnych operacji, [Microsoft Azure dobrze zaprojektowane środowisko](https://docs.microsoft.com/azure/architecture/guide/pillars) zapewnia podejście do oceny konkretnych obciążeń związanych z przystąpieniem do tych filarów. Można zastosować filary mogą być stosowane do operacji na platformie i operacji obciążeń.
 
 ## <a name="next-steps"></a>Następne kroki
 

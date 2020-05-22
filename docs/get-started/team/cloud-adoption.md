@@ -6,17 +6,21 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: cb831deaf758d26d15df0d8797f6fda7d0e8dfbf
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 6abe7a2f76b75aea70cff5d9ce0d5e870ec96cf6
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229251"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752073"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>Wprowadzenie: Tworzenie zespołu wdrażania w chmurze
 
-Zespoły wdrożeniowe chmury to nowoczesne zespoły zespołów implementacji technicznej lub zespołów projektowych. Jednak charakter chmury może wymagać większej struktury zespołu płynów. Niektóre zespoły rozwiązań w chmurze skupiają się wyłącznie na migracji w chmurze, a inne koncentrują się na innowacjech korzystających z technologii chmurowych. Niektóre z nich obejmują szeroką wiedzę techniczną, która jest wymagana do ukończenia dużych wysiłków związanych z wdrażaniem, takich jak Pełna migracja centrów danych, a inne mają ściślejszy fokus techniczny i mogą poruszać się między projektami w celu osiągnięcia określonych celów, na przykład zespołu specjalistów ds. technologii, którzy ułatwiają konwertowanie maszyn wirtualnych SQL na wystąpienia usługi SQL PaaS.
+Zespoły wdrożeniowe chmury to nowoczesne zespoły zespołów implementacji technicznej lub zespołów projektowych. Charakter chmury może wymagać większej liczby struktur zespołu płynów.
+
+Niektóre zespoły rozwiązań w chmurze skupiają się wyłącznie na migracji do chmury, a inne koncentrują się na innowacjach korzystających z technologii chmurowych. Niektóre zespoły obejmują szeroką wiedzę techniczną, która jest wymagana do ukończenia dużych wysiłków związanych z wdrażaniem, takich jak Pełna migracja centrów danych, a inne mają ściślejszy fokus techniczny.
+
+Mniejszy zespół może przenosić się między projektami w celu osiągnięcia określonych celów. Na przykład zespół specjalistów ds. platformy danych może skupić się na ułatwianiu konwersji SQL Database maszyn wirtualnych na wystąpienia usługi SQL PaaS.
 
 ![Wprowadzenie do tworzenia zespołu wdrażania w chmurze](../../_images/get-started/adoption-team-map.png)
 
@@ -24,44 +28,43 @@ Zespoły wdrożeniowe chmury to nowoczesne zespoły zespołów implementacji tec
 
 Zespoły wdrożeniowe w chmurze mogą wykonać jeden lub więcej z następujących rodzajów zastosowania:
 
-    - Migracja istniejących obciążeń.
-    - Modernizacja lub istniejące obciążenia i zasoby.
-    - Zmiana architektury istniejących obciążeń i zasobów
-    - Opracowywanie nowych obciążeń.
+- Migracja istniejących obciążeń
+- Modernizacja istniejących obciążeń i zasobów
+- Zmiana architektury istniejących obciążeń i zasobów
+- Opracowywanie nowych obciążeń
 
-Przyjęcie dowolnego portfolio IT prawdopodobnie wymaga zastosowania mieszanki tych umiejętności. Niestety, te różne wysiłki wymagają różnych umiejętności i mindsets. W ramach tych wysiłków bardziej wyspecjalizowany zespół adopcji jest bardziej wydajny i efektywny, że zespół będzie w trakcie dostarczania tego typu pracy. Z drugiej strony wszystkie opcje implementacji w ramach wdrażania w chmurze mogą być przeciążone.
+Przyjęcie dowolnego portfolio IT prawdopodobnie wymaga zastosowania mieszanki tego rodzaju wysiłków. Niestety każdy typ wymaga różnych umiejętności i mindsets. Im bardziej wyspecjalizowany zespół ds. przyjęcia, tym bardziej wydajny i efektywny zespół będzie mógł uzyskać ten typ pracy. Z drugiej strony wszystkie opcje implementacji w chmurze mogą być przeciążone dla bardziej wyspecjalizowanych zespołów.
 
-Podczas pierwszego kompilowania zespołu wdrożenia w chmurze dostosowanie do jednej z metod wdrażania pomoże przyspieszyć rozwój umiejętności zespołu.
+Podczas pierwszego kompilowania zespołu wdrażania w chmurze, dostosowanie z jedną z metod wdrażania ułatwi rozwój umiejętności zespołu.
 
 **Dostarczane**
 
 - Ustal, która metodologia jest Najlepsza dla zespołu: metodologia migracji lub metodologia innowacji.
-- Każda metodologia ma cztery etapowe środowisko dołączania, które ułatwia zrozumienie narzędzi i procesów wymaganych do uzyskania naprawdę dobrego działania. Czas inwestycji jako zespół przechodzący przez kilka pierwszych kroków, aby zrozumieć, jakie narzędzia i scenariusze najprawdopodobniej będą potrzebne we wczesnych iteracjach.
-- Zaktualizuj firmowe [Szablony Raci](../../organize/raci-alignment.md) , aby pomóc innym użytkownikom w zrozumieniu, kto znajduje się w zespole, i którą metodologią zespół będzie skupić się na dostarczaniu.
+- Każda metodologia ma cztery etapy dołączania, które ułatwiają zespołowi zrozumienie narzędzi i procesów, które są wymagane, aby naprawdę to miało dobry dostęp. Czas inwestycji jako zespół przechodzący przez kilka pierwszych kroków, aby zrozumieć, jakie narzędzia i scenariusze najprawdopodobniej są potrzebne we wczesnych iteracjach.
+- Zaktualizuj [Raci firmy (odpowiedzialny](../../organize/raci-alignment.md) , umożliwiający zapoznanie się z informacjami i wiedzą), aby pomóc innym użytkownikom w zrozumieniu zespołu i metodologii, którą zespół będzie skupić na dostarczaniu.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
 - [Przegląd metodologii migracji](../../migrate/index.md) zawiera opis procesu, narzędzi i podejścia do migracji i modernizacji portfolio obciążeń.
 - [Przegląd metodologii innowacje](../../innovate/index.md) zawiera opis procesu, narzędzi i podejścia do dodawania obciążeń natywnych w chmurze do portfolio.
-- [Zrozumienie koncepcji](../../strategy/motivations.md) związanych z tym zagadnieniem, aby sprawdzić, czy są one lepiej dopasowane do migracji lub wysiłków innowacji.
+- Zapoznaj się z [uzasadnieniami](../../strategy/motivations.md) związanymi z tym wysiłkiem, aby sprawdzić, czy są one lepiej dopasowane do migracji lub wysiłków innowacji.
 
-## <a name="step-2-align-your-team-to-other-supporting-teams"></a>Krok 2. wyrównanie zespołu do innych zespołów pomocniczych
+## <a name="step-2-align-your-team-with-other-supporting-teams"></a>Krok 2. Wyrównywanie zespołu z innymi zespołami pomocniczymi
 
 Jeśli nakład pracy związany z wdrażaniem w chmurze firmy jest wystarczająco wcześnie, aby dysponować zespołami pomocniczymi, można znaleźć listę zespołów i ekspertów z dziedziny w Twojej firmie w wersji [Raci szablonu](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx), w tym zarządzania chmurą, operacji w chmurze, centrum rozwiązań w chmurze lub innych podobnych zespołów.
 
 **Dostarczane**
 
-- Zapoznaj się ze wskazówkami dotyczącymi projektu, planami bazowymi, zasadami i procesami z różnych zespołów pomocniczych, aby zrozumieć guardrails, które zostały nawiązane w celu zapoznania się z wdrożeniem chmury.
+- Zapoznaj się ze wskazówkami dotyczącymi projektu, planami bazowymi, zasadami i procesami z różnych zespołów pomocniczych, aby zrozumieć guardrails, które zostały nawiązane dla tworzenia chmurowych operacji.
 - Zapoznaj się ze wskazówkami dotyczącymi innych zespołów wdrażania chmury, aby zrozumieć wszelkie ograniczenia, które mogą wystąpić w wyniku tych guardrails.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- [Oceń zasady firmowe](../../govern/corporate-policy.md) określają procedurę definiowania zasad firmowych, co może ograniczać decyzje, które mogą być bezpiecznie wykonywane w środowisku chmury firmy.
-- [Dyscypliny ładu](../../govern/corporate-policy.md) przedstawiają typy kontrolek lub procesów zorganizowanych, które zespół nadzoru prawdopodobnie wdrożono w celu zapewnienia bezpiecznego, zgodnego wdrożenia chmury.
-- W obszarze [Zarządzanie metodologią](../../manage/index.md) opisano zagadnienia, które prowadzą do linii bazowej operacji w chmurze, aby zapewnić podstawowe zarządzanie operacjami.
+- [Oceń zasady firmowe](../../govern/corporate-policy.md) określają procedurę definiowania zasad firmowych, co może ograniczyć decyzje, które zespół może bezpiecznie wprowadzić w środowisku chmury firmy.
+- [Dyscypliny ładu](../../govern/corporate-policy.md) przedstawiają typy kontrolek lub procesów zorganizowanych, które zespół nadzoru może zaimplementować, aby umożliwić bezpieczne, zgodne Wdrażanie chmury.
+- W obszarze [Zarządzanie metodologią](../../manage/index.md) opisano zagadnienia, które przechodzą do linii bazowej operacji w chmurze w celu zapewnienia podstawowego zarządzania operacjami.
 
 <!-- markdownlint-disable MD033 -->
-<br>
 
 | Zespół odpowiedzialny za | Osoby odpowiedzialne i wspierające |
 | --- | --- |
@@ -69,24 +72,24 @@ Jeśli nakład pracy związany z wdrażaniem w chmurze firmy jest wystarczająco
 
 ## <a name="step-3-begin-your-adoption-journey"></a>Krok 3. rozpoczęcie podróży wdrażania
 
-W zależności od typu zespołu adopcji, którego jesteś członkiem, zaczniesz korzystać z jednej z dwóch podróży:
+W zależności od typu zespołu adopcji, którego jesteś członkiem, rozpocznie się jedno z następujących podróży:
 
-- Wprowadzenie: Migrowanie obciążeń do chmury.
-- Wprowadzenie: tworzenie nowych produktów lub usług.
+- Wprowadzenie: Migrowanie obciążeń do chmury
+- Wprowadzenie: tworzenie nowych produktów lub usług
 
-W każdym z tych przewodników wprowadzenie zobaczysz wskazówki dotyczące różnych zespołów na liście wraz z różnymi stopniami odpowiedzialności i odpowiedzialności. Użyj tych elementów jako informacji referencyjnych, aby zrozumieć, jak zespół mieści się w pozostałej części podróży. Należy również użyć tych odwołań, aby zrozumieć poziomy pomocy technicznej, które będą mogły zostać uzyskane z całego przedsiębiorstwa.
+W każdym z tych przewodników Get-Started znajdziesz wskazówki dotyczące różnych zespołów wymienionych obok ich różnego stopnia odpowiedzialności i odpowiedzialności. Skorzystaj z przewodników, aby zrozumieć, jak zespół mieści się w pozostałej części podróży. Należy również użyć ich do zrozumienia poziomów wsparcia, które można oczekiwać od firmy.
 
-Na koniec zespół ds. wdrażania w chmurze będzie odpowiedzialny za dostarczanie przez przydzielone działania związane z migracją lub opracowywanie nowych produktów. Podczas gdy zespoły pomocnicze są odpowiedzialne za przeprowadzanie kroków w celu pomyślnego wykonania czynności, jest odpowiedzialny za każdy zespół rozwiązań w chmurze, aby upewnić się, że zapewnia pomoc techniczną. Zespół ds. przyjęcia jest zachęcany do współpracy z innymi zespołami w celu wykonania tych czynności, jeśli zespół odpowiedzialny za nie istnieje lub potrzebuje więcej pomocy technicznej w celu dostarczenia na ich potrzeby.
+Na koniec zespół wdrażania w chmurze jest odpowiedzialny za dostarczanie w ramach ich przypisanych działań związanych z migracją lub nowego produktu. Mimo że zespoły pomocnicze są odpowiedzialne za zapewnianie, że każdy krok zostanie ukończony, jest odpowiedzialny za każdy zespół rozwiązań w chmurze, aby upewnić się, że zespół pomocniczy otrzymuje pomoc techniczną. Jeśli zespół obsługujący konto jeszcze nie istnieje lub potrzebuje więcej pomocy technicznej w celu dostarczenia na kolejne kroki, zachęcamy do partnera z innymi zespołami, aby dokończyć swoje dostawy.
 
 **Dostarczane**
 
 - Coraz lepszym rozwiązaniem jest dostarczanie metodologii związanej z podejściem do wdrażania.
-- Obsługa innych zespołów w celu wykonania czynności, gdy te kroki są blokowane dla wdrożenia.
+- Obsługa innych zespołów w celu wykonania czynności związanych z ich kontem, nawet jeśli te kroki są blokadami w celu podjęcia działań.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- W przewodniku wprowadzenie do migracji zespół ds. przyjęcia jest odpowiedzialny za dostarczanie [krok 10: Migrowanie pierwszego obciążenia](../migrate.md#step-8-migrate-your-first-10-workloads).
-- W przewodniku wprowadzającym dla nowych produktów zespół ds. przyjęcia jest odpowiedzialny za dostarczanie [krok 8: innowacje w chmurze](../innovate.md#step-8-innovate-in-the-cloud).
+- W przewodniku Get-Started dla migracji zespół ds. przyjęcia jest odpowiedzialny za dostarczanie [krok 10: Migrowanie pierwszego obciążenia](../migrate.md#step-8-migrate-your-first-10-workloads).
+- W podręczniku Get-Started dla nowych produktów zespół ds. przyjęcia jest odpowiedzialny za dostarczanie [krok 8: innowacje w chmurze](../innovate.md#step-8-innovate-in-the-cloud).
 
 Wszystkie inne kroki dotyczące tych list kontrolnych zostały zaprojektowane w celu łatwiejszego zarządzania pracą.
 
@@ -95,11 +98,11 @@ Wszystkie inne kroki dotyczące tych list kontrolnych zostały zaprojektowane w 
 
 | Zespół odpowiedzialny za | Osoby odpowiedzialne i wspierające |
 | --- | --- |
-| <li> Ostatecznie zespół wdrażania w chmurze jest odpowiedzialny za sukces. | <li> Zespół nadzorujący chmury <li> Zespół ds. operacji w chmurze <li> Centrum w chmurze doskonałości lub środkowe <li> Zespół strategii chmury |
+| <li> Zespół ds. wdrażania chmury | <li> Zespół nadzorujący chmury <li> Zespół ds. operacji w chmurze <li> Centrum w chmurze doskonałości lub środkowe <li> Zespół strategii chmury |
 
 ## <a name="step-4-expand-your-skills-with-scenarios-and-best-practices"></a>Krok 4. rozwijanie umiejętności przy użyciu scenariuszy i najlepszych rozwiązań
 
-Po jednej lub dwóch iteracjach wdrożenia zespół będzie zrozumieć podstawy ich podstawowej metodologii wdrażania. Z tego miejsca zespół będzie prawdopodobnie gotowy do skorzystania z dodatkowych scenariuszy i rozpocząć wdrażanie niektórych dodatkowych najlepszych rozwiązań. Każdy z poniższych linków udostępnia strony docelowe, które ujawniają część spisu treści zawierającej listy obu typów wskazówek dla zespołu, aby przeglądać i rozwijać swoje umiejętności.
+Po jednej lub dwóch iteracjach zespół ds. wdrażania chmury zapoznaje się z podstawą ich podstawowej metodologii. Z tego miejsca zespół będzie prawdopodobnie gotowy do skorzystania z dodatkowych scenariuszy i rozpocząć wdrażanie niektórych dodatkowych najlepszych rozwiązań.
 
 **Dostarczane**
 
@@ -107,16 +110,20 @@ Po jednej lub dwóch iteracjach wdrożenia zespół będzie zrozumieć podstawy 
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
+Zespół może przeglądać i rozwijać swoje umiejętności, przeglądając następujące wskazówki:
+
 - Migruj nowe typy obciążeń lub Rozwiązuj bardziej złożone wyzwania związane z migracją, korzystając z [scenariuszy](../../migrate/azure-best-practices/contoso-migration-overview.md) i [najlepszych](../../migrate/azure-best-practices/index.md)rozwiązań.
-- Wprowadzanie innowacji przy użyciu nowych rozwiązań natywnych w chmurze lub Rozwiązywanie bardziej złożonych wyzwań innowacji dzięki [scenariuszom](../../innovate/kubernetes/index.md) i [najlepszym praktykom](../../innovate/best-practices/index.md).
+- Wprowadzanie innowacji przy użyciu nowych rozwiązań w chmurze lub Rozwiązywanie bardziej złożonych wyzwań dzięki [scenariuszom](../../innovate/kubernetes/index.md) i [najlepszym praktykom](../../innovate/best-practices/index.md).
 
 **Zespół odpowiedzialny za:**
 
-Zespół ds. wdrażania w chmurze jest odpowiedzialny za rozwijanie umiejętności.
+- Zespół ds. wdrażania w chmurze jest odpowiedzialny za rozwijanie umiejętności.
 
 ## <a name="step-5-build-a-cloud-adoption-factory"></a>Krok 5. Kompilowanie fabryki wdrażania w chmurze
 
-Ponieważ zespół stał się bardziej zaznajomiony z różnymi scenariuszami wdrażania, będziesz mógł szybciej pracować. Ta część wytycznych zajmie się przyjęciem do kolejnego poziomu. Podejście do fabryki rozwiązań w chmurze analizuje procesy związane z wdrażaniem. Większość obciążeń związanych z migracją i innowacyjnością pochodzi z dużej ilości spotkań ze względu na brak wiedzy i przejrzystości. Wyraźne Definiowanie procesów i interakcji w różnych fazach podróży w chmurze spowoduje usunięcie blokowania kulturowego i politycznego.
+Ponieważ zespół stał się bardziej zaznajomiony z różnymi scenariuszami wdrażania, będzie mógł robić więcej i szybciej pracować. W tej sekcji wskazówek zostanie przyjęta możliwość wdrożenia zespołu na wyższym poziomie.
+
+Podejście do fabryki rozwiązań w chmurze analizuje procesy związane z wdrażaniem. Ze względu na brak interpretacji i wyraźnej komunikacji większość obciążeń związanych z migracją i innowacyjnością pochodzi z dużej ilości spotkań. Wyraźne Definiowanie procesów i interakcji w różnych fazach podróży w chmurze spowoduje usunięcie blokowania kulturowego i politycznego.
 
 **Dostarczane**
 
@@ -124,17 +131,17 @@ Ponieważ zespół stał się bardziej zaznajomiony z różnymi scenariuszami wd
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- Wskazówki dotyczące procesu do obsługi działań związanych z [migracją](../../migrate/migration-considerations/index.md) można znaleźć w sekcji ulepszenia procesu w metodologii migracji.
-- W metodologii innowacji wskazówki koncentrują się na [procesach innowacji](../../innovate/considerations/index.md) , co skutkuje mniejszą technologią i bardziej wpływającym na rozwój produktu.
+- Wskazówki dotyczące procesu, które obsługują działania związane z [migracją](../../migrate/migration-considerations/index.md) , można znaleźć w sekcji ulepszenia procesu w metodologii migracji.
+- W metodologii innowacji wskazówki koncentrują się na [procesach innowacji](../../innovate/considerations/index.md) , które powodują zmniejszenie technologii i wydajniejsze opracowywanie produktów.
 
 **Zespół odpowiedzialny za:**
 
-Zespół wdrażania w chmurze jest odpowiedzialny za tworzenie procesów, które przyjmują do następnego poziomu.
+- Zespół wdrażania w chmurze jest odpowiedzialny za tworzenie procesów, które przyjmują do następnego poziomu.
 
 ## <a name="whats-next"></a>Co dalej
 
-Przyjęcie jest doskonałe, ale nieregulowane wdrożenie może dawać nieoczekiwane wyniki. Wyrównaj wdrożenie chmury dzięki [funkcjom ładu w chmurze](../../organize/cloud-governance.md) , aby przyspieszyć wdrażanie i najlepsze rozwiązania, jednocześnie zmniejszając ryzyko biznesowe i techniczne.
+Wdrażanie w chmurze to doskonałe rozwiązanie, ale nieregulowane wdrożenie może dawać nieoczekiwane wyniki. Aby przyspieszyć wdrażanie i najlepsze rozwiązania, w miarę zmniejszania ryzyka biznesowego i technicznego należy wyrównać wdrożenie chmury przy użyciu [funkcji zarządzania chmurą](../../organize/cloud-governance.md).
 
-Te dwa zespoły tworzą saldo w ramach wysiłków związanych z wdrażaniem w chmurze, ale są one uznawane za MVP, ponieważ mogą nie być trwałe. Każdy zespół ma wiele systemyów, jak przedstawiono na [wykresach _odpowiedzialnych_ ](../../organize/raci-alignment.md), do których można się skontaktować.
+Dostosowanie do zespołu ds. zarządzania chmurą tworzy saldo w ramach wysiłków związanych z wdrażaniem w chmurze, ale jest to uznawane za minimalny produkt żywotny (MVP), ponieważ może on nie być trwały. Każdy zespół ma wiele systemy, jak opisano na [wykresach Raci](../../organize/raci-alignment.md).
 
-Dowiedz się więcej na temat [antywzorców organizacyjnych: silosów i fiefdoms](../../organize/fiefdoms-silos.md).
+Dowiedz się więcej o nadchodzących [antywzorców organizacyjnych: silosach i fiefdoms](../../organize/fiefdoms-silos.md).

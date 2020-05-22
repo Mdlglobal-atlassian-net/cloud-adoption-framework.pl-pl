@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ada273d5de7f0579848e102781f7a1f40d91bef2
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 9f239c0cb5cadad59ca687f156b04c095ee7b3c1
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400541"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754929"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
 
@@ -38,7 +38,7 @@ Zespół ds. zarządzania chmurą. Mając na uwadze potrzebę dodatkowej pomocy 
 
 ### <a name="changes-in-the-current-state"></a>Zmiany w bieżącym stanie
 
-Zespół IT ma zatwierdzenie do przeniesienia do planu CIO i dyrektora finansowego w celu wycofania dwóch centrów danych. Należy jednak pamiętać, że 750 (15%) zasoby w tych centrach danych będą musiały zostać przeniesione poza chmurą.
+Zespół IT ma zatwierdzenie do przeniesienia do planu CIO i dyrektora finansowego w celu wycofania dwóch centrów danych. Zespół jest zaangażowany, że 750 (15%) zasoby w tych centrach danych będą musiały zostać przeniesione poza chmurą.
 
 ### <a name="incrementally-improve-the-future-state"></a>Przyrostowe ulepszanie stanu w przyszłości
 

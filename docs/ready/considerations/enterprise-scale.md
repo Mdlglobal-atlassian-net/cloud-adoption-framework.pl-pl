@@ -3,16 +3,16 @@ title: Rozpoczynanie pracy ze skalą korporacyjną strefy wyładunkowe
 description: Rozpoczynanie pracy ze skalą korporacyjną strefy wyładunkowe
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1e34cf58fd3f9827a3cf8dd1ffd866fdcfcca1f7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3eb1e11a50236d078c5dd9b1cc6f317bdfc96823
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215232"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755757"
 ---
 # <a name="start-with-enterprise-scale-landing-zones"></a>Rozpoczynanie pracy ze skalą korporacyjną strefy wyładunkowe
 
@@ -59,9 +59,9 @@ Firma Microsoft ma obszerną historię inwestowania w narzędzia i podejścia u�
 
 Każdy z poniższych szablonów zapewnia klientom początkową strefę docelową skalowania w przedsiębiorstwie, w tym wzorce infrastruktury:
 
-- [Usługi udostępnione ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared)
+- [ISO 27001 — udostępnione usługi](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared)
 - [Obciążenie środowiska App Service Environment/bazy danych SQL ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)
-- [Oficjalne Królestwo brytyjskie i Zjednoczone Królestwo NHS](https://docs.microsoft.com/azure/governance/blueprints/samples/ukofficial)
+- [OFICJALNE Królestwo brytyjskie i Zjednoczone Królestwo NHS](https://docs.microsoft.com/azure/governance/blueprints/samples/ukofficial)
 
 Dodatkowe przykłady artykułu dotyczącego [planów platformy Azure](https://docs.microsoft.com/azure/governance/blueprints/samples) można użyć jako "Red/Green" w przypadku stref wyładunkowych skali przedsiębiorstwa. Zastosowanie tych planów zapewni, że środowisko spełnia standardy zgodności przed wdrożeniem. Takie późniejsze podejście jest szczególnie przydatne w przypadku weryfikowania stref wyładunkowych innych firm lub partnerów przed przyjęciem chmury:
 

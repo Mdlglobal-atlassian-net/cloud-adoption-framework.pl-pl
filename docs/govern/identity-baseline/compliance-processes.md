@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0837950a32a57fba595166c1b78c18aea0385417
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0882b34dc9b83d6da5926b350db35ab7ecb28495
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214467"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754573"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Procesy zgodności zasad linii bazowej tożsamości
 
@@ -21,7 +21,7 @@ W tym artykule omówiono podejście do przystosowanej do zasad procesów, które
 
 ## <a name="planning-review-and-reporting-processes"></a>Planowanie, przeglądanie i raportowanie procesów
 
-Narzędzia do zarządzania tożsamościami oferują możliwości i funkcje, które znacznie ułatwiają zarządzanie użytkownikami i kontrolę dostępu w ramach wdrożenia w chmurze. Jednak wymagają one również dobrze przemyślanych procesów i zasad, aby wspierać cele organizacji. Poniżej znajduje się zestaw przykładowych procesów, które często korzystają z dyscypliny linii bazowej tożsamości. Użyj tych przykładów jako punktu wyjścia podczas planowania procesów, które umożliwią dalszą aktualizację zasad tożsamości na podstawie zmian w firmie i informacji zwrotnych z zespołów IT z zamiarem włączenia wytycznych ładu do działania.
+Narzędzia do zarządzania tożsamościami oferują możliwości i funkcje, które znacznie ułatwiają zarządzanie użytkownikami i kontrolę dostępu w ramach wdrożenia w chmurze. Wymagają również dobrze rozważanych procesów i zasad do obsługi celów organizacji. Poniżej znajduje się zestaw przykładowych procesów, które często korzystają z dyscypliny linii bazowej tożsamości. Użyj tych przykładów jako punktu wyjścia podczas planowania procesów, które umożliwią dalszą aktualizację zasad tożsamości na podstawie zmian w firmie i informacji zwrotnych z zespołów IT z zamiarem włączenia wytycznych ładu do działania.
 
 **Wstępna ocena ryzyka i planowanie:** W ramach początkowego wdrożenia dyscypliny linii bazowej tożsamości Zidentyfikuj podstawowe zagrożenia biznesowe i tolerancje związane z zarządzaniem tożsamościami w chmurze. Te informacje służą do omówienia określonych zagrożeń technicznych związanych z członkami zespołów IT odpowiedzialnych za zarządzanie usługami tożsamości i opracowywania bazowego zestawu zasad zabezpieczeń w celu ograniczenia tych zagrożeń w celu ustalenia początkowej strategii zarządzania.
 

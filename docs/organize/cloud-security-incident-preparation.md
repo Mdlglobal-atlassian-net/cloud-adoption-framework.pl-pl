@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: 8c9a30baf5b985e81881f48c313805a68f6325ad
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 312b24a8b20eeda6fb28ca9f126067da1ace4786
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228783"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755444"
 ---
 # <a name="function-of-cloud-security-incident-preparation"></a>Funkcja przygotowania zdarzenia zabezpieczeń w chmurze
 
@@ -29,7 +29,7 @@ Głównym celem dla zespołu przygotowania zdarzeń jest Kompilowanie dojrzało�
 - **Członkowie zespołu technicznego** do zbadania i skorygowania incydentu.
 - **Integracja z ciągłością biznesową** z funkcjami organizacyjnymi, które są używane do zarządzania kryzysami, odzyskiwania po awarii i planów ciągłości biznesowej.
 
-<!-- docsTest:ignore "Incident Response Reference Guide (IRRG)" -->
+<!-- docsTest:ignore "Incident Response Reference Guide (IRRG) " -->
 <!-- cSpell:ignore IRRG -->
 
 Firma Microsoft opublikowała lekcje i zalecenia w [przewodniku odwołującym się do odpowiedzi na zdarzenia (IRRG)](https://aka.ms/IRRG).

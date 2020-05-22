@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b56c599be38c83c325ffbd00fba077452019e0e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4850fe8377c642ae7af2c763ee28c13d90f25b61
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220400"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754982"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Procesy zgodności zasad przyspieszenia wdrożenia
 
-W tym artykule omówiono podejście do procesów związanych z podwyższeniem poziomu zasad, które regulują [dyscyplinę wdrażania](./index.md). Skuteczne zarządzanie konfiguracją chmury rozpoczyna się od cyklicznych procesów ręcznych zaprojektowanych w celu wykrywania problemów i nakładania zasad w celu skorygowania ryzyka. Można jednak zautomatyzować te procesy i uzupełnić narzędziem, aby zmniejszyć koszty zarządzania i zapewnić szybszą odpowiedź na odchylenia.
+W tym artykule omówiono podejście do procesów związanych z podwyższeniem poziomu zasad, które regulują [dyscyplinę wdrażania](./index.md). Skuteczne zarządzanie konfiguracją chmury rozpoczyna się od cyklicznych procesów ręcznych zaprojektowanych w celu wykrywania problemów i nakładania zasad w celu skorygowania ryzyka. Można zautomatyzować te procesy i uzupełnienie, aby zmniejszyć koszty zarządzania i umożliwić szybsze reagowanie na odchylenia.
 
 ## <a name="planning-review-and-reporting-processes"></a>Planowanie, przeglądanie i raportowanie procesów
 
@@ -61,7 +61,7 @@ Następujące wyzwalacze i akcje wymuszania zawierają przykłady, których moż
 
 Użyj [szablonu dyscypliny wdrożenia](./template.md) , aby udokumentować procesy i wyzwalacze, które są wyrównane do bieżącego planu wdrożenia chmury.
 
-Aby uzyskać wskazówki dotyczące wykonywania zasad zarządzania chmurą w wyrównaniu z planami wdrażania, zapoznaj się z artykułem dotyczącym ulepszania dyscypliny.
+Aby uzyskać wskazówki dotyczące wykonywania zasad zarządzania chmurą w wyrównaniu z planami wdrażania, zobacz [udoskonalanie dyscypliny wdrożenia](./discipline-improvement.md).
 
 > [!div class="nextstepaction"]
 > [Udoskonalenie ulepszeń wdrożenia](./discipline-improvement.md)

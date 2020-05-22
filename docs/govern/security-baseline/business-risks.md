@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5e0e9b51ec666d48b886f37913a4a0d5441dd78d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dd4f6b58d3d8f1a1d1b6348ae83979c37c9305bc
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217782"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755872"
 ---
 # <a name="motivations-and-business-risks-in-the-security-baseline-discipline"></a>Motywacje i ryzyko biznesowe w dyscyplinie linii bazowej zabezpieczeń
 
@@ -23,7 +23,7 @@ W tym artykule omówiono przyczyny, w których klienci zazwyczaj przyjmują dysc
 
 ## <a name="relevance"></a>Trafność
 
-Bezpieczeństwo jest kluczowym problemem dla każdej organizacji IT. Wdrożenia w chmurze mają wiele takich samych zagrożeń bezpieczeństwa jak obciążenia hostowane w tradycyjnych lokalnych centrach danych. Jednak charakter platformy chmury publicznej, z braku bezpośredniej własności fizycznego sprzętu do przechowywania i uruchamiania obciążeń, oznacza, że zabezpieczenia chmury wymagają własnych zasad i procesów.
+Bezpieczeństwo jest kluczowym problemem dla każdej organizacji IT. Wdrożenia w chmurze mają wiele takich samych zagrożeń bezpieczeństwa jak obciążenia hostowane w tradycyjnych lokalnych centrach danych. Charakter platformy chmury publicznej, z braku bezpośredniego prawa własności fizycznego sprzętu do przechowywania i uruchamiania obciążeń, co oznacza, że zabezpieczenia chmury wymagają własnych zasad i procesów.
 
 Jednym z podstawowych elementów, które określają Zarządzanie zabezpieczeniami w chmurze poza tradycyjnymi zasadami zabezpieczeń, jest łatwość tworzenia zasobów, potencjalnie dodając luki w zabezpieczeniach przed wdrożeniem. Elastyczność technologii, takich jak [SDN (Software Defined Networking)](../../decision-guides/software-defined-network/index.md) , zapewnia szybką zmianę topologii sieci opartej na chmurze, dzięki czemu można również łatwo zmodyfikować ogólną powierzchnię ataku w sieci w nieprzewidziany sposób. Platformy w chmurze udostępniają także narzędzia i funkcje, które mogą ulepszyć możliwości zabezpieczeń w sposób niemożliwy w środowiskach lokalnych.
 
@@ -38,7 +38,7 @@ Dyscyplina linii bazowej zabezpieczeń obejmuje zasady firmowe i procesy ręczne
 
 Dyscyplina linii bazowej zabezpieczeń próbuje rozwiązać podstawowe ryzyko biznesowe związane z zabezpieczeniami. Pracuj z firmą, aby identyfikować te zagrożenia i monitorować każdy z nich w celu zapewnienia przydatności podczas planowania i implementowania wdrożeń w chmurze.
 
-Zagrożenia będą się różnić między organizacjami, ale poniżej przedstawiono typowe zagrożenia związane z zabezpieczeniami, których można użyć jako punktu wyjścia dla dyskusji w zespole nadzoru chmurowego:
+Ryzyko różni się między organizacjami. Ta lista typowych zagrożeń związanych z zabezpieczeniami jest używana jako punkt wyjścia dla dyskusji w zespole ładu chmurowego:
 
 - **Naruszenie danych:** Nieumyślne narażenie lub utrata poufnych danych hostowanych w chmurze może prowadzić do utraty klientów, zagadnień umownych lub konsekwencji prawnych.
 - **Przerwanie działania usługi:** Awarie i inne problemy z wydajnością wynikające z niezabezpieczonej infrastruktury przerywają normalne operacje i mogą spowodować utratę wydajności lub utratę działalności firmy.

@@ -1,5 +1,5 @@
 ---
-title: Zrównoważone priorytety konkurencji
+title: Równoważenie konkurencyjnych priorytetów
 description: Odkryj strategie dotyczące równoważenia konkurencyjnych priorytetów.
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,14 +7,14 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c5eebc5bbc73aa73858daa4b11a3578af8ccc6d9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2d891def751aca51be7dd9b01aa6606a59387a43
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219091"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756077"
 ---
-# <a name="balance-competing-priorities"></a>Zrównoważone priorytety konkurencji
+# <a name="balance-competing-priorities"></a>Równoważenie konkurencyjnych priorytetów
 
 Zaokrętowanie na drodze cyfrowej transformacji cyfrowych działa jak funkcja wymuszania dla uczestników projektu w zespołach branżowych i technologicznych. Ścieżka do sukcesu jest zdecydowana w organizacji w celu zrównoważenia konkurencyjnych priorytetów.
 
@@ -88,7 +88,7 @@ Podczas prac migracji często chodzi o to, aby zespoły wdrażające założono,
 
 **Minimalny zakres:** W trakcie planowania wczesnego należy użyć opcji Rehost w celu zaplanowania i jasno zrozumieć, że ta opcja jest początkowym założeniami biznesowymi, a nie z decyzją techniczną. W metodologii migrowania zespół rozwiązań w chmurze będzie następnie zakwestionować to założenie dla każdego zmigrowanego obciążenia. Ta metodologia jest zgodna z podejściem do oceny/migracji/podwyższenia poziomu dla każdego obciążenia lub grupy lub obciążeń tworzących fabrykę migracji. W fazie oceny zespół ds. przyjęcia ocenia dopasowanie techniczne i architekturę każdego obciążenia. Ten nakład oceny rzadko skutkuje czystym podejściem i przesunięciami, ponieważ wiele składników w architekturze można wybrać do refaktoryzacji i modernizacji.
 
-**Rozszerzony przykład zakresu:** W przypadku obciążeń o krytycznym znaczeniu lub dużej czułości, takich jak aplikacja typu mainframe lub wielowarstwowa mikrousług, w fazie oceny mogą być wymagane dokładniejsze oceny obciążenia. W tych sytuacjach związanych z rozarchitekturą klienci powinni skorzystać z przeglądu architektury platformy Azure i platformy Azure Architecturej, aby ograniczyć wymagania dotyczące obciążeń podczas oceny.
+**Rozszerzony przykład zakresu:** W przypadku obciążeń o krytycznym znaczeniu lub dużej czułości, takich jak aplikacja typu mainframe lub wielowarstwowa mikrousług, w fazie oceny mogą być wymagane dokładniejsze oceny obciążenia. W tych sytuacjach związanych z ponowną architekturą klienci powinni skorzystać z Microsoft Azure dobrze zaprojektowanego przeglądu i Microsoft Azure dobrze zaprojektowanej struktury, aby uściślić wymagania dotyczące obciążeń podczas oceny.
 
 ## <a name="balance-during-the-innovate-phase"></a>Równowaga w fazie innowacji
 
@@ -101,7 +101,7 @@ Prawdziwe innowacje związane z klientem tworzą typowe priorytety powodujące k
 
 **Minimalny zakres:** Metodologia innowacje ilustruje, jak zintegrować strategię i plany poprzez wartość biznesową konsensusu. W tym przewodniku przedstawiono narzędzia natywne w chmurze, które mogą przyspieszyć poszczególne dyscypliny innowacji, a także najlepsze rozwiązania dotyczące implementacji. Na koniec sekcji ulepszenia procesów przedstawiono podejścia do tworzenia empatię klienta przy jednoczesnym przestrzeganiu planów i strategii w trakcie podróży w chmurze. Takie podejście koncentruje się na dostarczaniu innowacji przy użyciu możliwie najmniejszej technologii.
 
-**Rozszerzony przykład zakresu:** Czasami innowacje mogą być zależne od obciążeń o krytycznym znaczeniu lub dużej czułości. Gdy "klient" jest użytkownikiem wewnętrznym, nakład programistyczny może być zarówno krytyczną, jak i wysoką czułością w najkrótszym czasie iteracji. W tych scenariuszach, zespół ds. wdrażania powinien korzystać z przeglądu architektury platformy Azure i platformy Azure Architecturej, aby oszacować zaawansowane Projektowanie architektury wczesnie w procesie.
+**Rozszerzony przykład zakresu:** Czasami innowacje mogą być zależne od obciążeń o krytycznym znaczeniu lub dużej czułości. Gdy "klient" jest użytkownikiem wewnętrznym, nakład programistyczny może być zarówno krytyczną, jak i wysoką czułością w najkrótszym czasie iteracji. W tych scenariuszach zespół ds. wdrażania powinien korzystać z Microsoft Azure dobrze zaprojektowanej z myślą o architekturze, a Microsoft Azure dobrze zaprojektowanej platformy do oceny zaawansowanego projektu architektury w procesie.
 
 ## <a name="balance-during-the-govern-phase"></a>Saldo w fazie regulowania
 
@@ -127,7 +127,7 @@ Model biznesowy IT dotyczący zarządzania operacjami został ciągle rozwijają
 
 **Minimalny zakres:** Metodologia zarządzania sugeruje utworzenie natywnej, niezwiązanej z chmurą linii bazowej. W celu potwierdzenia, że punkt odniesienia No-Ops nie spełni wszystkich potrzeb firmy, współpracuje z firmą w celu zdefiniowania zobowiązań i lepszego wyrównania inwestycji. Rozwiń linię bazową, aby spełnić typowe potrzeby dla wszystkich obciążeń. Następnie Włącz zespoły platformy lub określone zespoły obciążeń, aby zarządzać dobrze zarządzanymi rozwiązaniami w środowisku dobrze zarządzanym.
 
-**Rozszerzony przykład zakresu:** W większości środowisk mała część obciążeń, których wartość biznesowa uzasadnia głębokie inwestycje w operacje. W tych scenariuszach zespół IT może chcieć wykorzystać Przegląd architektury platformy Azure i platformę Azure Architecture w celu zapoznania się z bardziej szczegółowymi operacjami.
+**Rozszerzony przykład zakresu:** W większości środowisk mała część obciążeń, których wartość biznesowa uzasadnia głębokie inwestycje w operacje. W tych scenariuszach zespół IT może chcieć użyć Microsoft Azure dobrze zaprojektowanego przeglądu i Microsoft Azure dobrze zaprojektowanej struktury w celu zapoznania się z bardziej szczegółowymi operacjami.
 
 ## <a name="balance-during-the-organize-phase"></a>Saldo w fazie organizowania
 
@@ -147,4 +147,4 @@ Konkurencyjne priorytety w tym artykule odzwierciedlają dysk IT w celu dostarcz
 Dowiedz się, jak [zrównoważyć migrację, innowacje i eksperymenty](./balance-the-portfolio.md) , aby zmaksymalizować wartość działania migracji do chmury.
 
 > [!div class="nextstepaction"]
-> [Balansowanie portfolio](./balance-the-portfolio.md)
+> [Równoważenie portfela](./balance-the-portfolio.md)

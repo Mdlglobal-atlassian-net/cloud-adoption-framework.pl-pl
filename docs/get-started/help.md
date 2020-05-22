@@ -6,14 +6,14 @@ ms.service: cloud-adoption-framework
 ms.topic: conceptual
 author: JanetCThomas
 ms.author: janet
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.subservice: overview
-ms.openlocfilehash: 0481175abfc695d9a7eb17f537cdb3ff40fcd7a3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bdcf7b83191c2e4311759c56bd3928207dd00b8a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229706"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752807"
 ---
 # <a name="help-finding-the-appropriate-getting-started-guide"></a>Pomoc dotycząca znajdowania odpowiedniego przewodnika wprowadzającego
 
@@ -39,7 +39,7 @@ Chmura firmy jest oparta na zbiorze decyzji, które mogą mieć wpływ na wszyst
 - [Podstawowe pojęcia](../ready/considerations/fundamental-concepts.md)
 - [Hierarchia portfolio](../reference/fundamental-concepts/hosting-hierarchy.md)
 - [Obsługa hierarchii platformy Azure](../reference/fundamental-concepts/hierarchy-azure-tools.md)
-- [Terminologia modelu operacyjnego](../operating-model/terms.md)
+- [Terminologia dotycząca modeli operacyjnych](../operating-model/terms.md)
 
 ## <a name="accelerate-adoption"></a>Przyspieszanie wdrażania
 
@@ -47,9 +47,9 @@ Wdrożenie chmury wymaga zmiany technicznej, ale w celu cyfrowego przekształcen
 
 |                                                                                     |                                                                                                                                |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [Chcemy migrować istniejące obciążenia do chmury.](./migrate.md)                   | Ten przewodnik jest doskonałym punktem wyjścia, jeśli podstawowy fokus obejmuje migrację lokalnych obciążeń do chmury. |
-| [Chcemy tworzyć nowe produkty i usługi w chmurze.](./innovate.md)             | Ten przewodnik ułatwia przygotowanie się do wdrożenia innowacyjnych rozwiązań w chmurze.                                       |
-| [Są one blokowane przez projektowanie i konfigurację środowiska.](./design-and-configuration.md) | Ten przewodnik zawiera krótkie podejście do projektowania i konfigurowania środowiska.                                           |
+| [Chcemy migrować istniejące obciążenia do chmury.](./migrate.md)                   | Ten podręcznik jest doskonałym punktem startowym, jeśli Twoim podstawowym celem jest migracja lokalnych obciążeń do chmury. |
+| [Chcemy tworzyć nowe produkty i usługi w chmurze.](./innovate.md)             | Ten podręcznik może pomóc Ci przygotować się do wdrażania innowacyjnych rozwiązań w chmurze.                                       |
+| [Są one blokowane przez projektowanie i konfigurację środowiska.](./design-and-configuration.md) | Ten podręcznik zawiera szybką metodę projektowania i konfigurowania środowiska.                                           |
 
 ## <a name="improve-controls"></a>Ulepszanie formantów
 
@@ -58,10 +58,10 @@ Po rozwojem chmury potrzebny jest jednolity model operacyjny, aby zapewnić sobi
 |                                                                                     |                                                                                                                                |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | [Jak możemy dostarczać sprawność operacyjną podczas transformacji w chmurze?](./operational-excellence.md)                   | Kroki przedstawione w tym przewodniku ułatwią zespołowi strategii lidera zarządzania zmianami organizacji wymaganą do zapewnienia spójnego działania. |
-| [Jak zarządzać kosztami przedsiębiorstwa?](./manage-costs.md)                                          | Zacznij zoptymalizować koszty korporacyjne i zarządzać kosztami w całym środowisku.                                                                           |
-| [Jak ciągle zabezpieczy środowisko chmury przedsiębiorstwa?](./security.md)             | Ten przewodnik wprowadzający może pomóc w zapewnieniu, że odpowiednie wymagania dotyczące zabezpieczeń zostały zastosowane w całym przedsiębiorstwie, aby zminimalizować ryzyko naruszenia i przyspieszyć odzyskiwanie w przypadku wystąpienia naruszenia.                                       |
-| [Jak stosujemy odpowiednie kontrolki w celu zwiększenia niezawodności?](./reliability.md)                   | Ten przewodnik wprowadzający pomaga zminimalizować zakłócenia związane z niespójnościami w konfiguracjach, organizacjami zasobów, liniami bazowymi zabezpieczeń lub zasadami ochrony zasobów. |
-| [Jak zapewnić wydajność w całym przedsiębiorstwie?](./performance.md)                               | Ten przewodnik wprowadzający ułatwia ustalenie procesów związanych z utrzymywaniem wydajności w całym przedsiębiorstwie.                               |
+| [Jak zarządzać kosztami przedsiębiorstwa?](./manage-costs.md)                                          | Zacznij optymalizować koszty w przedsiębiorstwie i zarządzać kosztami w całym środowisku.                                                                           |
+| [Jak ciągle zabezpieczy środowisko chmury przedsiębiorstwa?](./security.md)             | Ten podręcznik wprowadzający może pomóc w zapewnieniu, że w całym przedsiębiorstwie zastosowano odpowiednie wymagania dotyczące zabezpieczeń, aby zminimalizować ryzyko naruszenia i przyspieszyć odzyskiwanie w przypadku wystąpienia naruszenia.                                       |
+| [Jak stosujemy odpowiednie kontrolki w celu zwiększenia niezawodności?](./reliability.md)                   | Ten podręcznik wprowadzający pomaga zminimalizować zakłócenia związane z niespójnościami w konfiguracjach, organizacji zasobów, planach bazowych zabezpieczeń lub w zasadach ochrony zasobów. |
+| [Jak zapewnić wydajność w całym przedsiębiorstwie?](./performance.md)                               | Ten podręcznik wprowadzający ułatwia ustalenie procesów zapewniających utrzymanie wydajności w całym przedsiębiorstwie.                               |
 
 ## <a name="establish-teams"></a>Ustanawianie zespołów
 
@@ -69,7 +69,7 @@ W zależności od strategii wdrażania i modelu operacyjnego może być konieczn
 
 |                                                                                     |                                                                                                                                |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [Jak wyrównać naszą organizację?](./org-alignment.md)                               | Ten przewodnik wprowadzający może pomóc w ustaleniu odpowiednio organizowanej struktury organizacyjnej.                               |
+| [Jak wyrównać naszą organizację?](./org-alignment.md)                               | Ten podręcznik wprowadzający może pomóc w ustaleniu struktur organizacyjnych obsadzonych odpowiednim personelem.                               |
 | [Czy potrzebuję zespołu strategii chmurowej?](./team/cloud-strategy.md)     | Ten zespół gwarantuje postęp wdrażania chmury w zakresie dostosowywania z rezultatami biznesowymi.                                |
 | [Co robi zespół ds. wdrażania w chmurze?](./team/cloud-adoption.md)     | Ten zespół implementuje rozwiązania techniczne opisane w planie i zgodnie z wymaganiami ładu.             |
 | [Jak mogę utworzyć zespół nadzoru w chmurze?](./team/cloud-governance.md) | Ten zespół gwarantuje, że ryzyko i odporność na ryzyko są prawidłowo oceniane i zarządzane.                                         |

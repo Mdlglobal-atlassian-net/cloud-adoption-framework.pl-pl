@@ -6,13 +6,13 @@ ms.author: mas
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: 6ab95bab83c7683628c0ba4a0e332d8aba4b4034
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: 68ce6816dbcbbc1770ac8a51a6d77329e65b4eca
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401271"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755312"
 ---
 <!-- cSpell:ignore MarkSimos -->
 
@@ -33,14 +33,14 @@ Poniższy diagram i dokumentacja przedstawiają idealny widok funkcji zespołu z
 Każdy z poniższych artykułów zawiera informacje dotyczące poszczególnych funkcji. Każdy artykuł zawiera podsumowanie zamierzeń, sposób, w jaki funkcja może zostać rozmieszczona ze względu na środowisko zagrożeń lub zmiany technologii w chmurze, a także relacje i zależności, które są krytyczne dla sukcesu.
 
 - [Zasady i standardy](./cloud-security-policy-standards.md)
-- [Zabezpieczenia — centrum operacji (SOC)](./cloud-security-operations-center.md)
+- [Centrum operacji zabezpieczeń](./cloud-security-operations-center.md)
 - [Architektura zabezpieczeń](./cloud-security-architecture.md)
 - [Zarządzanie zgodnością zabezpieczeń](./cloud-security-compliance-management.md)
 - [Bezpieczeństwo osób](./cloud-security-people.md)
-- [Zabezpieczenia aplikacji i DevSecOps](./cloud-security-apsec-devsecops.md)
+- [Zabezpieczenia aplikacji i metodyka DevSecOps](./cloud-security-apsec-devsecops.md)
 - [Bezpieczeństwo danych](./cloud-security-data-security.md)
-- [Infrastruktura i zabezpieczenia punktu końcowego](./cloud-security-infrastructure-endpoint.md)
+- [Zabezpieczenia infrastruktury i punktu końcowego](./cloud-security-infrastructure-endpoint.md)
 - [Tożsamość i klucze](./cloud-security-identity-keys.md)
 - [Analiza zagrożeń](./cloud-security-threat-intelligence.md)
-- [Stan Management](./cloud-security-posture-management.md)
-- [Przygotowanie zdarzenia](./cloud-security-incident-preparation.md)
+- [Zarządzanie stanem bezpieczeństwa](./cloud-security-posture-management.md)
+- [Przygotowywanie zdarzeń](./cloud-security-incident-preparation.md)

@@ -1,22 +1,22 @@
 ---
-title: Popraw zabezpieczenia strefy wyładunkowej
-description: Popraw zabezpieczenia strefy wyładunkowej
+title: Ulepszanie zabezpieczeń strefy docelowej
+description: Ulepszanie zabezpieczeń strefy docelowej
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3debb2057b4f4a6c925b62b3d783c135c5d2b3bb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 116c628d31267fafe50d8a870f9e6c83d3c51f3c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215181"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756502"
 ---
 <!-- cSpell:ignore SIEM -->
 
-# <a name="improve-landing-zone-security"></a>Popraw zabezpieczenia strefy wyładunkowej
+# <a name="improve-landing-zone-security"></a>Ulepszanie zabezpieczeń strefy docelowej
 
 W przypadku obciążeń lub strefy docelowej, w której znajdują się hosty, wymagane jest uzyskanie dostępu do dowolnych poufnych danych lub systemów krytycznych, dlatego należy chronić dane i zasoby. Udoskonalenie zabezpieczeń strefy wyładunkowej w ramach [podejścia do projektowania opartego na testach w celu](./test-driven-development.md) wystawiania stref, rozszerzając lub refaktoryzację strefy docelowej pod kątem podwyższonych wymagań w zakresie zabezpieczeń.
 
@@ -44,4 +44,4 @@ Przed rozpoczęciem wszelkich ulepszeń zabezpieczeń należy zrozumieć "defini
 Dowiedz się, jak [ulepszyć operacje strefy wyładunkowej](./landing-zone-operations.md) w celu obsługi kluczowych aplikacji.
 
 > [!div class="nextstepaction"]
-> [Ulepszanie operacji strefy wyładunkowej](./landing-zone-operations.md)
+> [Ulepszanie operacji strefy docelowej](./landing-zone-operations.md)

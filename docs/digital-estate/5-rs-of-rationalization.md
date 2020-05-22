@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 21504538837030bf9a6ab84e42a09f365386fa78
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5c4098e2d5655d3b0fbb7fcb1c5a0470547421f3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214807"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753558"
 ---
 # <a name="cloud-rationalization"></a>Racjonalizacja chmury
 
@@ -21,7 +21,7 @@ Racjonalizacja chmury to proces oceniania zasobów w celu ustalenia najlepszego 
 
 ## <a name="rationalization-context"></a>Kontekst racjonalizacji
 
-"Pięć RS racjonalizacji" wymienione w tym artykule jest świetnym sposobem na oznaczenie potencjalnego przyszłego stanu wszelkich obciążeń, które są uważane za kandydata w chmurze. Jednak ten proces etykietowania powinien być umieszczony w odpowiednim kontekście przed podjęciem próby racjonalizacji środowiska. Aby zapewnić ten kontekst, przejrzyj następujący mitów:
+_Pięć_ kandydatów wymienionych w tym artykule jest świetnym sposobem na oznaczenie potencjalnego przyszłego stanu wszelkich obciążeń, które są uważane za kandydata w chmurze. Ten proces etykietowania powinien być umieszczony w prawidłowym kontekście przed podjęciem próby racjonalizacji środowiska. Aby zapewnić ten kontekst, przejrzyj następujący mitów:
 
 ### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>Omówienia: łatwo jest szybko podejmować decyzje o racjonalizacji w procesie
 
@@ -37,7 +37,7 @@ Aby opracować uzasadnienie biznesowe dla wysiłku związanego z wdrażaniem w c
 
 Zapoznaj się z poniższą piątą z pięciu usprawnień, aby zaznajomić się z długoterminowym procesem. Podczas opracowywania planu wdrażania w chmurze wybierz opcję, która najlepiej odpowiada Twoim potrzebom, rezultatom biznesowym i bieżącemu środowisku stanu. Celem na potrzeby racjonalizacji cyfrowej jest ustawienie linii bazowej, a nie podniesienia poziomu każdego obciążenia.
 
-## <a name="the-five-rs-of-rationalization"></a>Pięć pięciu usprawnień
+## <a name="the-five-rs-of-rationalization"></a>Pięć zasad racjonalizacji
 
 Pięć z pięciu usprawnień, które są wymienione w tym miejscu, opisują najbardziej typowe opcje racjonalizacji.
 

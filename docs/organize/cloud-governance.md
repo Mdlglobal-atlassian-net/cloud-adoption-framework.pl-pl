@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/20/2020
-ms.openlocfilehash: 1ccda999eb0327f7694374b0589321ca0965f1c2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: dfa8275bb96fc075e099b19c9c4b9b81d1714131
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215759"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755590"
 ---
 <!-- docsTest:ignore IS -->
 
@@ -76,7 +76,7 @@ W miarę skalowania, zespół ds. zarządzania chmurą może zadbać o to, aby z
 
 ## <a name="next-steps"></a>Następne kroki
 
-Niektóre duże organizacje mają dedykowane zespoły, które koncentrują się na ładu IT. Zespoły te są wyspecjalizowane w zarządzaniu ryzykiem w portfelu IT. Gdy te zespoły istnieją, można szybko przyspieszyć następujące modele zapadalności. Jednak zespół nadzoru IT zachęca do przeglądania modelu ładu chmurowego, aby zrozumieć, w jaki sposób ładu przesunie się nieco w chmurze. Najważniejsze artykuły obejmują rozszerzanie zasad firmowych do chmury i pięć dyscyplin zarządzania chmurą.
+Niektóre duże organizacje mają dedykowane zespoły, które koncentrują się na ładu IT. Zespoły te są wyspecjalizowane w zarządzaniu ryzykiem w portfelu IT. Gdy te zespoły istnieją, można szybko przyspieszyć następujące modele zapadalności. Jednak zespół ładu IT zachęca do przeglądania modelu ładu chmurowego, aby zrozumieć, w jaki sposób ładu przesunie się nieco w chmurze. Najważniejsze artykuły obejmują rozszerzanie zasad firmowych do chmury i pięć dyscyplin zarządzania chmurą.
 Bez nadzoru: jest to typowy dla organizacji, które przechodzą do chmury bez jasnego planu na potrzeby zarządzania. Przed długim zagadnieniami dotyczącymi zabezpieczeń, kosztów, skali i operacji zaczynają wyzwalać konwersacje na temat potrzeb modelu ładu i osób, które mogą personelować procesy skojarzone z tym modelem. Rozpoczęcie tych konwersacji jest zawsze dobrym pierwszym krokiem w celu pokonania antywzorców "No ładu". Sekcja dotycząca definiowania zasad firmowych może ułatwić wykonywanie tych konwersacji.
 
 **Zablokowano zarządzanie:** Jeśli problemy związane z bezpieczeństwem, kosztem, skalą i operacjami nie są przekazywane, projekty i cele biznesowe mają być zablokowane. Brak odpowiedniego nadzoru powoduje wygenerowanie obaw, niepewności i wątpliwości między uczestnikami projektu i inżynierów. Zatrzymaj tę funkcję w jej śladach, podejmując wczesną akcję. Dwie prowadnice ładu zdefiniowane w strukturze wdrażania w chmurze mogą pomóc w rozpoczęciu małego zestawu, a wstępnie ograniczyć zasady w celu zminimalizowania niepewności i wczesnego nadzoru w czasie. Wybierz jedną z złożonych przewodników dla przedsiębiorstw lub standardowego przewodnika Enterprise.

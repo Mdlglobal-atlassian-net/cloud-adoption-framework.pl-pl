@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d686d50b98cbdef31c48d27f20d1c66f942e0818
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 72b2651b1b9b9332048f9f2f452feac039346d9c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220502"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755037"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Cost Management przykładowe instrukcje zasad
 
@@ -27,7 +27,7 @@ Poniższe przykładowe instrukcje dotyczące zasad dotyczą typowych zagrożeń 
 
 ## <a name="future-proofing"></a>Weryfikacja w przyszłości
 
-**Ryzyko biznesowe:** Bieżące kryteria, które nie uzasadniają inwestycji w Cost Management dyscypliny zespołu zarządzającego. Przewiduje się jednak takie inwestycje w przyszłości.
+**Ryzyko biznesowe:** Bieżące kryteria, które nie uzasadniają inwestycji w Cost Management dyscypliny zespołu zarządzającego, ale przewidywane jest takie inwestycje w przyszłości.
 
 **Instrukcja zasad:** Należy skojarzyć wszystkie zasoby wdrożone w chmurze z jednostką rozliczeniową oraz aplikacją lub obciążeniem. Te zasady zapewniają, że dyscyplina Cost Management będzie obowiązywać.
 

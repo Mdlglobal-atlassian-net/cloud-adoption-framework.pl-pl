@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: 876705322aad42ac2dac0eb29d7291d6d6df71ec
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: a5b3caa04e3f87c30236425aff770e82e0a37b4c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401002"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755582"
 ---
 # <a name="cloud-migration-functions"></a>Funkcje migracji w chmurze
 
@@ -55,7 +55,7 @@ Firma Microsoft zaleca, aby zespoły zapewniające możliwość wdrażania chmur
 
 Najlepiej, jeśli te zespoły spotykają się codziennie w sposób samodzielny. Celem codziennych spotkań jest szybkie aktualizowanie zaległości i komunikowanie się, co zostało zakończone, co należy zrobić dzisiaj i jakie elementy są blokowane, wymagając dodatkowej obsługi zewnętrznej.
 
-Harmonogramy wydań i czasy trwania iteracji są unikatowe dla każdej firmy. Jednak zakres od jednego do czterech tygodni na iterację wygląda na średni czas trwania. Bez względu na iterację lub wydanie erze zaleca się, aby zespół zaspokajał wszystkie zespoły pomocnicze na końcu każdej wersji, aby komunikować się z wynikami wydania i zmieniać priorytet nadchodzących wysiłków. Jest również cenny do zaspokajania jako zespół na końcu każdego przebiegu, z centrum w [chmurze doskonałości](../organize/cloud-center-of-excellence.md) lub [zespołem](./cloud-governance.md) nadzoru w chmurze, aby zachować zgodność z typowymi wysiłkami i potrzebami pomocy technicznej.
+Harmonogramy wydań i czasy trwania iteracji są unikatowe dla każdej firmy. Jednak zakres od jednego do czterech tygodni na iterację jest równy średniemu czasowi trwania. Bez względu na iterację lub wydanie erze zaleca się, aby zespół zaspokajał wszystkie zespoły pomocnicze na końcu każdej wersji, aby komunikować się z wynikami wydania i zmieniać priorytet nadchodzących wysiłków. Jest również cenny do zaspokajania jako zespół na końcu każdego przebiegu, z centrum w [chmurze doskonałości](../organize/cloud-center-of-excellence.md) lub [zespołem](./cloud-governance.md) nadzoru w chmurze, aby zachować zgodność z typowymi wysiłkami i potrzebami pomocy technicznej.
 
 Niektóre z zadań technicznych związanych z wdrażaniem w chmurze mogą stać się powtarzane. Członkowie zespołu powinni obrócić co 3 &ndash; miesiące, aby uniknąć problemów z zadowoleniem pracowników i zachować odpowiednie umiejętności. Rotacyjna siedziba w centrum rozwiązań w [chmurze doskonałości](../organize/cloud-center-of-excellence.md) lub [zespołu nadzoru chmurowego](./cloud-governance.md) może zapewnić doskonałą okazję, aby pracownicy mogli korzystać z nowych innowacji.
 

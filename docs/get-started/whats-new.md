@@ -3,16 +3,16 @@ title: Co nowego?
 description: Zapoznaj się z najnowszymi aktualizacjami platformy wdrażania Microsoft Cloud platformy Azure.
 author: JanetCThomas
 ms.author: janet
-ms.date: 03/27/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: f4dcf7409e9aa8eceb548f0bd54d0decdab7357e
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 7ead653ddcce27ee0a144845ee3750373e1eb66d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620874"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755134"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -126,7 +126,7 @@ W odpowiedzi na opinie o ciągłości migracji przy użyciu wielu sekcji środow
 | [Omówienie](../migrate/azure-migration-guide/index.md)                                            | Zaktualizowano o wyraźniejszy opis przewodnika i mniejszą liczbę kroków.                                                                                                        |
 | [Szacowaniu](../migrate/azure-migration-guide/assess.md)                                             | Dodano sekcję "trudne założenia", aby zademonstrować, jak ten poziom oceny współdziała z podejściem do oceny przyrostowej wymienionym w metodologii planu. |
 | [Klasyfikacja podczas oceniania procesów](../migrate/migration-considerations/assess/classify.md) | **Nowy artykuł:** Przedstawia znaczenie klasyfikowania wszystkich zasobów i obciążeń przed migracją.                                                                    |
-| [Migrate](../migrate/azure-migration-guide/migrate.md)                                           | Dodano odwołanie do UnifyCloud w opcjach narzędzi innych firm, w odpowiedzi na opinie w ramach konferencji warstwy 1.                                                         |
+| [Migrate (Migracja)](../migrate/azure-migration-guide/migrate.md)                                           | Dodano odwołanie do UnifyCloud w opcjach narzędzi innych firm, w odpowiedzi na opinie w ramach konferencji warstwy 1.                                                         |
 | [Testowanie, &nbsp; Optymalizowanie &nbsp; i &nbsp; podwyższanie poziomu](../migrate/azure-migration-guide/optimize-and-transform.md)        | Wyrównuje tytuł tego artykułu z innymi sugestiami dotyczącymi ulepszeń procesów.                                                                                           |
 | [Przegląd oceny](../migrate/migration-considerations/assess/index.md)                           | Zaktualizowano w celu zilustrowania, że ocena w tej fazie koncentruje się na ocenie dopasowania technicznego określonego obciążenia i powiązanych zasobów.                               |
 | [Lista kontrolna dotycząca planowania](../migrate/migration-considerations/prerequisites/planning-checklist.md)    | Zaktualizowano w celu wyjaśnienia znaczenia wyrównania operacji podczas planowania działań związanych z migracją w celu zapewnienia dobrego zarządzania obciążeniem po migracji.                  |

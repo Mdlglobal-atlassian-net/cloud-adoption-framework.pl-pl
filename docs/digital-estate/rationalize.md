@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 72bc453ba9ce0feb90e6dceaf73cd89ded0c64e0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a167cce023fc4d69a2099af7cfa305a14393e446
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221335"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753279"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racjonalizacja majątku cyfrowego
 
@@ -53,13 +53,13 @@ Pełna racjonalizacja dużej ilości cyfrowej jest podatna na ryzyko i może odn
 
 ### <a name="inventory-reduce-discovery-data-points"></a>Spis: Zmniejsz liczbę punktów danych odnajdywania
 
-Niektóre organizacje zainwestowają czas, energię i koszty w celu zapewnienia dokładnego, w czasie rzeczywistym spisu pełnej cyfrowej. Nieprzerwane, kradzież, cykle odświeżania i dołączanie pracownika często uzasadnia szczegółowe śledzenie zasobów urządzeń użytkowników końcowych. Jednak zwrot z inwestycji związanych z utrzymywaniem dokładnego serwera i spisu aplikacji w tradycyjnym lokalnym centrum danych jest często niski. Większość organizacji IT ma inne problemy, które należy spełnić, aby nie śledzić użycia stałych zasobów w centrum danych.
+Niektóre organizacje zainwestowają czas, energię i koszty w celu zapewnienia dokładnego spisu w czasie rzeczywistym pełnej cyfrowej. Nieprzerwane, kradzież, cykle odświeżania i dołączanie pracownika często uzasadnia szczegółowe śledzenie zasobów urządzeń użytkowników końcowych. Zwrot z inwestycji związanych z utrzymywaniem dokładnego spisu serwerów i aplikacji w tradycyjnym lokalnym centrum danych jest często niski. Większość organizacji IT ma więcej pilnych problemów, które należy spełnić, aby śledzić użycie stałych zasobów w centrum danych.
 
 W przypadku transformacji w chmurze spis bezpośrednio jest skorelowany z kosztami operacyjnymi. Dokładne planowanie jest wymagane w celu zapewnienia odpowiednich danych spisu. Niestety, bieżące opcje skanowania środowiska mogą opóźniać decyzje według tygodni lub miesięcy. Na szczęście kilka lew może przyspieszyć zbieranie danych.
 
 Skanowanie oparte na agencie jest najczęściej cytowanym opóźnieniem. Niezawodne dane, które są wymagane dla tradycyjnej racjonalizacji, często mogą być zbierane tylko przy użyciu agenta uruchomionego na każdym z zasobów. Ta zależność od agentów często spowalnia postęp, ponieważ może wymagać informacji o zabezpieczeniach, działaniach i funkcjach administracyjnych.
 
-W procesie zwiększania racjonalizacji rozwiązanie bez agenta może służyć do początkowego odnajdywania w celu przyspieszenia wczesnych decyzji. W zależności od stopnia złożoności w środowisku rozwiązanie oparte na agentach może być nadal wymagane. Można go jednak usunąć ze ścieżki krytycznej do zmiany firmy.
+W procesie racjonalizacji przyrostowej rozwiązanie to może służyć do wstępnego odnajdywania w celu przyspieszenia wczesnych decyzji. W zależności od stopnia złożoności w środowisku rozwiązanie oparte na agentach może być nadal wymagane, ale można je usunąć ze ścieżki krytycznej do zmiany firmy.
 
 ### <a name="quantitative-analysis-streamline-decisions"></a>Analiza ilościowa: Usprawnij decyzje
 
@@ -77,7 +77,7 @@ Jeśli na przykład opcje są ograniczone do rehostowania lub wycofywania, firma
 
 To usprawnione podejście zapewnia podstawy, plany finansowe, strategię i kierunek. W późniejszych działaniach każdy element zawartości przechodzi przez dalszą racjonalizację i analizę jakościową, aby oszacować inne opcje. Wszystkie założenia, które należy wykonać w tej wstępnej racjonalizacji, są testowane przed migracją pojedynczych obciążeń.
 
-## <a name="challenge-assumptions"></a>Założenia wyzwania
+## <a name="challenge-assumptions"></a>Kwestionowanie założeń
 
 Wynik poprzedniej sekcji stanowi niekompletną racjonalizację, która jest założeń. Następnie należy zastanowić się, że założono niektóre z tych założeń.
 
@@ -85,7 +85,7 @@ Wynik poprzedniej sekcji stanowi niekompletną racjonalizację, która jest zał
 
 W tradycyjnych środowiskach lokalnych hosting małych niewykorzystanych zasobów rzadko powoduje znaczący wpływ na koszty roczne. Z kilkoma wyjątkami, nakładu pracy, które są wymagane do przeanalizowania i wycofania rzeczywistego środka trwałego, jest zmniejszenie kosztów związanych z oczyszczaniem i wycofywanie tych zasobów.
 
-Jednak po przejściu do modelu ewidencjonowania aktywności w chmurze wycofane zasoby mogą generować znaczne oszczędności w rocznych kosztach operacyjnych i w ramach wysiłków związanych z migracją.
+Po przejściu do modelu ewidencjonowania aktywności w chmurze wycofane zasoby mogą generować znaczne oszczędności w rocznych kosztach operacyjnych i w ramach wysiłków związanych z migracją.
 
 Nierzadko zdarza się, aby organizacje wycofali 20% lub więcej ich cyfr cyfrowych po zakończeniu analizy ilościowej. Zalecamy przeprowadzenie dalszej analizy jakościowej przed podjęciem działania. Po potwierdzeniu wycofania tych zasobów może wyprodukować pierwszy Victory z inwestycji w migrację w chmurze. Jest to często jeden z największych czynników oszczędności kosztów. W związku z tym zespół strategii chmury powinien nadzorować weryfikację i emeryturę zasobów, równolegle z wykonywaniem [metodologii migracji](../migrate/index.md), aby uzyskać wczesne dane finansowe.
 
@@ -155,7 +155,7 @@ Zespół wdrażania w chmurze może uruchamiać iteracje, które nie generują k
 
 ## <a name="end-state"></a>Stan końcowy
 
-Wraz z upływem czasu, połączenie zespołu do wdrażania w chmurze i zespołu strategii chmurowej przeprowadzi pełną racjonalizację spisu. Jednak takie przyrostowe podejście umożliwia zespołom szybkie szybsze działanie w procesie racjonalizacji. Pomaga również przekształceniu transformację, aby szybko dać rzeczowe wyniki biznesowe, bez konieczności przeprowadzenia analizy z góry.
+Wraz z upływem czasu zespół ds. rozwiązań w chmurze i zespół strategii chmurowych ukończyli pełną racjonalizację spisu. Takie przyrostowe podejście umożliwia zespołom szybkie szybsze działanie w procesie racjonalizacji. Pomaga również przekształceniu transformację, aby szybko dać rzeczowe wyniki biznesowe, bez konieczności przeprowadzenia analizy z góry.
 
 W niektórych przypadkach model finansowy może być zbyt ścisły, aby podejmować decyzje bez dodatkowej racjonalizacji. W takich przypadkach może być konieczne bardziej tradycyjne podejście do racjonalizacji.
 

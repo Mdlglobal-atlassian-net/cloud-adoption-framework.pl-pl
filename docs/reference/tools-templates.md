@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: eda7866700edb0a1e86776f1b0f23d95799d5b67
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 3968e453eb89a0f00d7fd23eeec90fb6a947cd05
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621580"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756060"
 ---
 <!-- cSpell:ignore Terraform's -->
 
@@ -63,7 +63,7 @@ Struktura wdrażania w chmurze zawiera narzędzia, które ułatwiają szybkie wd
 
 | Zasób | Opis |
 |----------|-------------|
-| [Przegląd architektury platformy Azure](https://docs.microsoft.com/assessments/?id=azure-architecture-review) | Ta ocena online pomoże w definiowaniu architektury i opcji operacji specyficznych dla obciążenia. |
+| [Microsoft Azure przegląd z obsługą architektury](https://docs.microsoft.com/assessments/?id=azure-architecture-review) | Ta ocena online pomoże w definiowaniu architektury i opcji operacji specyficznych dla obciążenia. |
 | [&nbsp; &nbsp; Kod źródłowy najlepszych &nbsp; rozwiązań](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices) | Ten wdrożony kod źródłowy uzupełnia i przyspiesza wdrażanie najlepszych rozwiązań dla usług zarządzania serwerem Azure. Użyj tego kodu źródłowego, aby szybko włączyć zarządzanie operacjami i ustalić linię bazową operacji. |
 | [Skoroszyt zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) | Udokumentowanie decyzji dotyczących zarządzania operacjami w chmurze oraz ułatwianie konwersacji z firmą w celu zapewnienia wyrównania dotyczącego umowy SLA, inwestycji w odporności i alokacji budżetu związanych z operacjami. |
 

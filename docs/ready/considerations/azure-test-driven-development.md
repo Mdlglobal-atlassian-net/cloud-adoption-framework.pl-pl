@@ -3,16 +3,16 @@ title: Programowanie oparte na testach (TDD) dla stref wypełniania na platformi
 description: Programowanie oparte na testach (TDD) dla stref wypełniania na platformie Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 13dc523902e5db36abf559a25c6edba44f912613
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: f2d5e12dbeb9cf86fdc3b09768a513f084889531
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621536"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756298"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Programowanie oparte na testach (TDD) dla stref wypełniania na platformie Azure
 
@@ -39,7 +39,7 @@ Każdy z powyższych przykładów może służyć jako narzędzia przyspieszają
 
 [Azure Policy](https://docs.microsoft.com/azure/governance/policy): gdy wdrożenia lub próby wdrożenia odbiegają od zasad ładu, Azure Policy może zapewnić automatyczne wykrywanie, ochronę i rozwiązywanie problemów. Ale Azure Policy również zapewnia podstawowy mechanizm testowania kryteriów akceptacji w "definicji gotowe". W cyklu TDD można utworzyć definicję zasad w celu przetestowania pojedynczych kryteriów akceptacji. Analogicznie, wszystkie kryteria akceptacji można dodać do inicjatywy Policy przypisanej do całej subskrypcji. Takie podejście zapewnia mechanizm "Red Tests" Przed zmodyfikowaniem strefy docelowej. Gdy strefa docelowa spełnia definicję gotowe, może być użyta do wymuszenia kryteriów testowych, aby uniknąć zmian w kodzie, które spowodują, że test zakończy się niepowodzeniem w przyszłych wydaniach.
 
-[Plany platformy Azure](https://docs.microsoft.com/azure/governance/blueprints): Azure Blueprint zasad grupy i innych narzędzi wdrażania do powtarzalnego pakietu, który można przypisać do wielu stref wyładunkowej. Plany są przydatne, gdy wiele wysiłków podejmuje wspólne definicje gotowe, które warto zaktualizować w czasie. Może także ułatwić wdrożenie w trakcie kolejnych działań w celu rozwinięcia i refaktoryzacji stref wyładunkowych.
+[Plany platformy Azure](https://docs.microsoft.com/azure/governance/blueprints): zasady grupy planu platformy Azure i inne narzędzia wdrażania w powtarzalnym pakiecie, które mogą być przypisane do wielu stref wyładunkowej. Plany są przydatne, gdy wiele wysiłków podejmuje wspólne definicje gotowe, które warto zaktualizować w czasie. Może także ułatwić wdrożenie w trakcie kolejnych działań w celu rozwinięcia i refaktoryzacji stref wyładunkowych.
 
 [Wykres zasobów platformy Azure](https://docs.microsoft.com/azure/governance/resource-graph): Wykres zasobów zawiera język zapytań służący do tworzenia testów opartych na danych, opartych na informacjach dotyczących zasobów wdrożonych w ramach strefy ładunkowej. W dalszej części planu wdrażania to narzędzie może również definiować złożone testy na podstawie interakcji między zasobami obciążeń a podstawowym środowiskiem chmury.
 

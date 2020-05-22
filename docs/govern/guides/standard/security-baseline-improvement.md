@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0835bf4fd7aa7f1fb08c8018f8fe2987726eacbf
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5cfe118ff57f998aa6b641c19ede3e89ee29420a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219907"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754613"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Standardowy Przewodnik dotyczący zarządzania przedsiębiorstwem: ulepszanie dyscypliny linii bazowej zabezpieczeń
 
@@ -36,9 +36,9 @@ Na początku tego rozwinięcia zespoły deweloperów aplikacji nadal pracowały 
 Od tej pory zmieniono pewne zmiany, które wpłyną na nadzór:
 
 - Zespół programistyczny aplikacji wdrożył potok ciągłej integracji/ciągłego wdrażania, aby wdrożyć aplikację natywną w chmurze przy użyciu ulepszonego środowiska użytkownika. Ta aplikacja nie współdziała jeszcze z chronionymi danymi, więc nie jest gotowa do produkcji.
-- Zespół ds. analizy biznesowej aktywnie nadzoruje dane w chmurze z poziomu logistyki, spisu i źródeł innych firm. Te dane są używane do kierowania nowych prognoz, które mogą kształtować procesy biznesowe. Jednak te przewidywania i szczegółowe informacje nie są funkcjonalne, dopóki dane klienta i finansowe nie będą mogły zostać zintegrowane z platformą danych.
+- Zespół ds. analizy biznesowej aktywnie nadzoruje dane w chmurze z poziomu logistyki, spisu i źródeł innych firm. Te dane są używane do kierowania nowych prognoz, które mogą kształtować procesy biznesowe. Te przewidywania i szczegółowe informacje nie są funkcjonalne, dopóki dane klienta i finansowe nie będą mogły zostać zintegrowane z platformą danych.
 - Zespół IT postępuje zgodnie z planami CIO i DYREKTORów, aby wycofać centrum danych DR. Ponad 1 000 zasobów 2 000 w centrum danych odzyskiwania po awarii zostało wycofane lub zmigrowane.
-- Ustalone przez siebie zasady dotyczące danych osobowych i danych finansowych zostały zmodernizowane. Jednak nowe zasady firmowe są zależne od implementacji związanych z nimi zasad zabezpieczeń i zarządzania. Zespoły nadal są wstrzymane.
+- Ze luźno zdefiniowanymi zasadami dotyczącymi danych osobowych i danych finansowych zostały zmodernizowane. Nowe zasady firmowe są zależne od implementacji powiązanych zasad zabezpieczeń i zarządzania. Zespoły nadal są wstrzymane.
 
 ### <a name="incrementally-improve-the-future-state"></a>Przyrostowe ulepszanie stanu w przyszłości
 
@@ -131,4 +131,4 @@ Dodanie powyższych procesów i zmian do ładu MVP pomoże rozwiązać wiele zag
 Wdrożenie chmury kontynuuje się i zapewnia dodatkową wartość biznesową, ale również wymaga zmiany ryzyka i zarządzania chmurą. W przypadku fikcyjnej firmy w tym przewodniku następnym krokiem jest obsługa obciążeń o kluczowym znaczeniu. Jest to punkt, gdy są zbędne kontrolki spójności zasobów.
 
 > [!div class="nextstepaction"]
-> [Ulepszanie dyscypliny spójności zasobów](./resource-consistency-improvement.md)
+> [Udoskonalanie dziedziny Spójność zasobów](./resource-consistency-improvement.md)

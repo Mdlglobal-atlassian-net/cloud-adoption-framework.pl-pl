@@ -3,16 +3,16 @@ title: Zrozumienie i wyrównanie hierarchii portfolio
 description: Zrozumienie i wyrównanie hierarchii portfolio
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 07466c048560c771fefd6d5d4769da2c5d42d548
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 816224c77f5825e7bae1e63e5a77db648b5dcfd8
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400853"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756111"
 ---
 <!-- cSpell:ignore matrixed ISVs -->
 
@@ -63,8 +63,8 @@ Zespół księgowy zarządza każdą warstwą hierarchii portfolio. Na poniższy
 - **Portfolio:** Zespół strategii chmury i centrum w chmurze doskonałości (CCoE) wykorzystują strategię i planować metody, które mają na celu podjęcie decyzji dotyczących ogólnego portfela. Zespół strategii chmury jest odpowiedzialny za poziom przedsiębiorstwa w hierarchii portfolio w chmurze. Zespół strategii chmury powinien również poinformować o decyzjach o środowisku, strefach wyładunkowych i obciążeniach o wysokim priorytecie.
 - **Platformy w chmurze:** Zespół zarządzający chmurą jest odpowiedzialny za dyscypliny, które zapewniają spójność w poszczególnych środowiskach z metodologią ładu. Zespół ds. zarządzania chmurą jest odpowiedzialny za zarządzanie wszystkimi zasobami we wszystkich środowiskach. Zespół zarządzający chmurą powinien konsultować zmiany, które mogą wymagać wyjątku lub zmiany w odniesieniu do zasad. Zespół nadzorujący chmury powinien również uzyskać informacje o postępie i przyjęciu zasobów.
 - **Strefy wyładunkowe i platforma Cloud Foundation:** Zespół platformy w chmurze jest odpowiedzialny za opracowywanie stref wyładunkowych i narzędzi platformy, które obsługują wdrażanie. Zespół usługi Cloud Automation jest odpowiedzialny za Automatyzowanie rozwoju i ciągłej pomocy technicznej dla tych stref i narzędzi platformy. Oba zespoły korzystają z gotowej metodologii do wdrożenia. Obydwie zespoły powinny otrzymywać informacje o postępie wdrażania obciążeń oraz wszelkich zmianach w przedsiębiorstwie lub środowisku.
-- **Obciążenia:** Wdrażanie odbywa się na poziomie obciążenia. Zespoły wdrażające chmur używają metodologii migracji i innowacji do ustanowienia skalowalnych procesów w celu przyspieszenia wdrażania. Po zakończeniu przyjmowania własność obciążeń jest prawdopodobnie przekazywana do zespołu operacji w chmurze, który używa metody zarządzania do obsługi zarządzania operacjami. Oba zespoły powinny być wygodne przy użyciu struktury architektury platformy Azure, aby podejmować szczegółowe decyzje dotyczące architektury, które wpływają na obsługiwane przez nie obciążenia. Obydwie zespoły powinny otrzymywać informacje o zmianach w strefach i środowiskach. Oba zespoły mogą sporadycznie wchodzić w skład funkcji strefy wyładunkowej.
-- **Zasoby:** Zasoby są zwykle odpowiedzialnością dla zespołu operacji w chmurze. Ten zespół korzysta z linii bazowej zarządzania w metodologii zarządzania, aby przeprowadzić decyzje dotyczące zarządzania operacjami. Należy również używać Azure Advisor i struktury architektury platformy Azure, aby wprowadzać szczegółowe zmiany zasobów i architektury, które są wymagane do dostarczenia na wymagania dotyczące operacji.
+- **Obciążenia:** Wdrażanie odbywa się na poziomie obciążenia. Zespoły wdrażające chmur używają metodologii migracji i innowacji do ustanowienia skalowalnych procesów w celu przyspieszenia wdrażania. Po zakończeniu przyjmowania własność obciążeń jest prawdopodobnie przekazywana do zespołu operacji w chmurze, który używa metody zarządzania do obsługi zarządzania operacjami. Oba zespoły powinny być wygodne przy użyciu dobrze zaprojektowanej platformy Microsoft Azure, aby podejmować szczegółowe decyzje dotyczące architektury, które wpływają na obsługiwane przez nie obciążenia. Obydwie zespoły powinny otrzymywać informacje o zmianach w strefach i środowiskach. Oba zespoły mogą sporadycznie wchodzić w skład funkcji strefy wyładunkowej.
+- **Zasoby:** Zasoby są zwykle odpowiedzialnością dla zespołu operacji w chmurze. Ten zespół korzysta z linii bazowej zarządzania w metodologii zarządzania, aby przeprowadzić decyzje dotyczące zarządzania operacjami. Należy również użyć Azure Advisor i Microsoft Azure dobrze zaprojektowanej struktury, aby wprowadzić szczegółowe zmiany zasobów i architektury, które są wymagane do dostarczenia na wymagania dotyczące operacji.
 
 ### <a name="accountability-variants"></a>Warianty odpowiedzialności:
 
@@ -78,11 +78,11 @@ W poniższych przykładach przedstawiono hierarchię portfolio.
 
 ### <a name="cots-workloads"></a>Obciążenia NOSIDEŁEK
 
-Tradycyjnie korporacyjne rozwiązania programistyczne (NOSIDEŁEK) mogą korzystać z rozwiązań do zarządzania procesami biznesowymi. Te rozwiązania są instalowane, konfigurowane, a następnie obsługiwane. Istnieje niewiele zmian w architekturze rozwiązań po zakończeniu konfiguracji. 
+Tradycyjnie korporacyjne rozwiązania programistyczne (NOSIDEŁEK) mogą korzystać z rozwiązań do zarządzania procesami biznesowymi. Te rozwiązania są instalowane, konfigurowane, a następnie obsługiwane. Istnieje niewiele zmian w architekturze rozwiązań po zakończeniu konfiguracji.
 
 W tych scenariuszach wszystkie wdrożenia w chmurze rozwiązań NOSIDEŁEK kończą się przejściem do zespołu operacji w chmurze. Zespół operacyjny w chmurze stał się właścicielem technicznym tego oprogramowania i przyjmuje odpowiedzialność za zarządzanie konfiguracją, kosztami, cyklami poprawek i innymi potrzebami operacyjnymi.
 
-Te obciążenia obejmują pakiety ewidencjonowania aktywności, oprogramowanie logistyczne lub rozwiązania charakterystyczne dla branż. W terminologii firmy Microsoft dostawcy tych pakietów nazywa się niezależnymi dostawcami oprogramowania (ISV). Wielu niezależnych dostawców oprogramowania oferuje usługę do wdrażania i obsługiwania wystąpienia pakietu oprogramowania w Twoich subskrypcjach. Mogą również oferować wersję pakietu oprogramowania, który działa w środowisku hostowanym w chmurze, zapewniając platformę jako usługę (PaaS) alternatywę dla obciążenia. 
+Te obciążenia obejmują pakiety ewidencjonowania aktywności, oprogramowanie logistyczne lub rozwiązania charakterystyczne dla branż. W terminologii firmy Microsoft dostawcy tych pakietów nazywa się niezależnymi dostawcami oprogramowania (ISV). Wielu niezależnych dostawców oprogramowania oferuje usługę do wdrażania i obsługiwania wystąpienia pakietu oprogramowania w Twoich subskrypcjach. Mogą również oferować wersję pakietu oprogramowania, który działa w środowisku hostowanym w chmurze, zapewniając platformę jako usługę (PaaS) alternatywę dla obciążenia.
 
 Z wyjątkiem ofert PaaS, zespoły operacyjne w chmurze są odpowiedzialne za zapewnienie podstawowych wymagań w zakresie zgodności dla tych obciążeń. Zespół operacyjny w chmurze powinien współpracować z zespołem nadzoru w chmurze w celu wyrównania kosztów, wydajności i innych filarów architektury.
 
@@ -104,7 +104,7 @@ W obu scenariuszach zespół operacyjny w chmurze zwykle służy jako długoterm
 
 ### <a name="mission-critical-workloads"></a>Obciążenia o krytycznym znaczeniu dla działalności
 
-W każdej firmie kilka obciążeń jest zbyt ważne dla firmy, w przypadku których ich awaria nie powiedzie się. W przypadku tych obciążeń o kluczowym znaczeniu zazwyczaj istnieją zwykle operacje i właściciele deweloperów z różnymi poziomami odpowiedzialności. Zespoły te powinny wyrównać zmiany operacyjne i zmiany architektury, aby zminimalizować zakłócenia w rozwiązaniu produkcyjnym. 
+W każdej firmie kilka obciążeń jest zbyt ważne dla firmy, w przypadku których ich awaria nie powiedzie się. W przypadku tych obciążeń o kluczowym znaczeniu zazwyczaj istnieją zwykle operacje i właściciele deweloperów z różnymi poziomami odpowiedzialności. Zespoły te powinny wyrównać zmiany operacyjne i zmiany architektury, aby zminimalizować zakłócenia w rozwiązaniu produkcyjnym.
 
 Te scenariusze wymagają ścisłego skoncentrowania się na rozdzieleniu obowiązków. Aby osiągnąć Rozdzielenie obowiązków, zespół operacyjny zazwyczaj będzie utrzymywać odpowiedzialność za codzienne zmiany operacyjne w środowisku produkcyjnym. Gdy te zmiany operacyjne wymagają zmiany architektury, zostaną one ukończone przez zespół deweloperów lub adopcji w środowisku nieprodukcyjnym, zanim zespół operacyjny zastosuje zmiany do środowiska produkcyjnego.
 
@@ -116,11 +116,11 @@ Ważne jest zrozumienie strategicznych celów związanych z wdrażaniem chmury i
 
 ### <a name="innovation-or-development-led-portfolio"></a>Portfolio i programowanie na rozwój
 
-Niektóre firmy, szczególnie szybko rozwijające się z ustalonymi uruchomieniami, mają średnią wartość procentową niestandardowych projektów programistycznych. W przypadku portfolio o dużych możliwościach programistycznych środowisko, strefa docelowa i obciążenia są często kompresowane &mdash; . mogą istnieć określone środowiska (środowiska produkcyjne lub nieprodukcyjne) dla określonych obciążeń. Wynikiem tego jest współczynnik 1:1 między środowiskiem, strefą docelową i obciążeniem. 
+Niektóre firmy, szczególnie szybko rozwijające się z ustalonymi uruchomieniami, mają średnią wartość procentową niestandardowych projektów programistycznych. W przypadku portfolio o dużych możliwościach programistycznych środowisko, strefa docelowa i obciążenia są często kompresowane &mdash; . mogą istnieć określone środowiska (środowiska produkcyjne lub nieprodukcyjne) dla określonych obciążeń. Wynikiem tego jest współczynnik 1:1 między środowiskiem, strefą docelową i obciążeniem.
 
 Ze względu na to, że środowisko obsługuje niestandardowe rozwiązania, potok DevOps i raportowanie na poziomie aplikacji mogą zastąpić potrzeby operacji i funkcji ładu. W przypadku tych klientów istnieje duże skoncentrowanie się na działaniach, ładu i innych rolach pomocniczych. Jest to również silniejszy nacisk na obowiązki wdrażania chmury i zespołów automatyzacji chmury.
 
-**Wyrównanie portfolio:** Portfolio IT prawdopodobnie koncentruje się na obciążeniach i właścicielach obciążeń w celu uzyskania krytycznych decyzji dotyczących architektury. Zespoły te mogą znaleźć więcej korzyści ze wskazówkami dotyczącymi architektury platformy Azure w ramach działań związanych z wdrażaniem i działaniami.
+**Wyrównanie portfolio:** Portfolio IT prawdopodobnie koncentruje się na obciążeniach i właścicielach obciążeń w celu uzyskania krytycznych decyzji dotyczących architektury. Zespoły te mogą znaleźć więcej wartości w Microsoft Azure dobrze wdrożonych wskazówkach platformy w ramach działań związanych z wdrażaniem i działaniami.
 
 **Definicje granic:** Granice logiczne, nawet na poziomie przedsiębiorstwa, prawdopodobnie będą skoncentrowane na segmentacji środowisk produkcyjnych i nieprodukcyjnych. Może być również przejrzyste segmentacja między produktami w portfolio oprogramowania firmy. Czasami może być również segmentacja między programowaniem i hostowanymi wystąpieniami klientów.
 

@@ -3,17 +3,17 @@ title: Informacje o funkcjach wdrażania w chmurze
 description: Zapoznaj się ze sposobem, w jaki funkcje wdrażania chmury umożliwiają rozwiązanie techniczne, dzięki czemu można odpowiednio personelować zespoły.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/20/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ac8307d3af159f3d6d35ccf2ded55f77786a33d7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c2f030d594a3bdb3ef195252187ae3c033c06e27
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215878"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755813"
 ---
 # <a name="cloud-adoption-functions"></a>Funkcje wdrażania chmury
 
@@ -74,7 +74,7 @@ Firma Microsoft zaleca, aby zespoły zapewniające funkcje wdrażania chmury by�
 
 Najlepiej, jeśli te zespoły spotykają się codziennie w sposób samodzielny. Celem codziennych spotkań jest szybkie aktualizowanie zaległości i komunikowanie się, co zostało zakończone, co należy zrobić dzisiaj i jakie elementy są blokowane, wymagając dodatkowej obsługi zewnętrznej.
 
-Harmonogramy wydań i czasy trwania iteracji są unikatowe dla każdej firmy. Jednak zakres od jednego do czterech tygodni na iterację wygląda na średni czas trwania. Bez względu na iterację lub wydanie erze zaleca się, aby zespół zaspokajał wszystkie zespoły pomocnicze na końcu każdej wersji, aby komunikować się z wynikami wydania i zmieniać priorytet nadchodzących wysiłków. Podobnie jest cenny do zaspokajania jako zespół na końcu każdego przebiegu, z centrum w chmurze doskonałości lub zespołem nadzoru w chmurze, aby zachować zgodność z typowymi działaniami i wszelkimi potrzebami pomocy technicznej.
+Harmonogramy wydań i czasy trwania iteracji są unikatowe dla każdej firmy. Jednak zakres od jednego do czterech tygodni na iterację jest równy średniemu czasowi trwania. Bez względu na iterację lub wydanie erze zaleca się, aby zespół zaspokajał wszystkie zespoły pomocnicze na końcu każdej wersji, aby komunikować się z wynikami wydania i zmieniać priorytet nadchodzących wysiłków. Podobnie jest cenny do zaspokajania jako zespół na końcu każdego przebiegu, z centrum w chmurze doskonałości lub zespołem nadzoru w chmurze, aby zachować zgodność z typowymi działaniami i wszelkimi potrzebami pomocy technicznej.
 
 Niektóre z zadań technicznych związanych z wdrażaniem w chmurze mogą stać się powtarzane. Członkowie zespołu powinni obrócić co 3 &ndash; miesiące, aby uniknąć problemów z zadowoleniem pracowników i zachować odpowiednie umiejętności. Obracanie stanowiska w centrum rozwiązań w chmurze doskonałości lub zespołu nadzoru chmurowego może zapewnić doskonałą okazję, aby pracownicy mogli korzystać z nowych innowacji.
 
@@ -82,5 +82,5 @@ Dowiedz się więcej na temat funkcji [centrum w chmurze doskonałości](./cloud
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Tworzenie zespołu wdrażania w chmurze](../get-started/team/cloud-adoption.md)
+- [Tworzenie zespołu ds. wdrażania chmury](../get-started/team/cloud-adoption.md)
 - Wyrównaj działania związane z wdrażaniem w chmurze dzięki [funkcjom ładu w chmurze](./cloud-governance.md) , aby przyspieszyć wdrażanie i zaimplementować najlepsze rozwiązania, jednocześnie zmniejszając ryzyko biznesowe i techniczne.

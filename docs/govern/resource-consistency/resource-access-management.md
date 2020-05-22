@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 51047cd648953b68caa7f09e132b832a287e4a71
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 9bcd4fb4a516062c053322932e1de878f4ec9095
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399058"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756179"
 ---
 # <a name="resource-access-management-in-azure"></a>Zarządzanie dostępem do zasobów na platformie Azure
 
@@ -41,7 +41,7 @@ Grupy zasobów i zawarte w nich zasoby są skojarzone z **subskrypcją**platform
 
 ## <a name="what-is-an-azure-subscription"></a>Co to jest subskrypcja platformy Azure?
 
-Subskrypcja platformy Azure jest podobna do grupy zasobów, ponieważ jest to konstrukcja logiczna, która grupuje grupy zasobów i ich zasoby. Jednak subskrypcja platformy Azure jest również skojarzona z kontrolkami używanymi przez Azure Resource Manager. Zapoznaj się z Azure Resource Manager, aby dowiedzieć się więcej o relacji między działem IT i subskrypcją platformy Azure.
+Subskrypcja platformy Azure jest podobna do grupy zasobów, ponieważ jest to konstrukcja logiczna, która grupuje grupy zasobów i ich zasoby. Subskrypcja platformy Azure jest również skojarzona z kontrolkami używanymi przez Azure Resource Manager. Zapoznaj się z Azure Resource Manager, aby dowiedzieć się więcej o relacji między działem IT i subskrypcją platformy Azure.
 
 ![Diagram subskrypcji platformy Azure ](../../_images/govern/design/governance-1-11.png)
  _— rysunek 3: subskrypcja platformy Azure._

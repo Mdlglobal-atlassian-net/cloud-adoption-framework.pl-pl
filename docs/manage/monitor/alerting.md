@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0f9c71ec1ee9ce258def9abb297e89567399aeb9
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 76da764cb9ab4841f4947b22ae61f1f0048b4dfa
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400806"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756196"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -66,9 +66,9 @@ Azure Monitor ma cztery typy alertów, a każdy z nich jest związany z repozyto
 
 - [Alert dotyczący zapytania dziennika](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query): dostępne dla alertów dotyczących zawartości w magazynach Application Insights lub dzienników platformy Azure. Może również generować alerty oparte na zapytaniach między obszarami roboczymi.
 
-- [Alert dziennika aktywności](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log): alerty dotyczące elementów w magazynie dziennika aktywności, z wyjątkiem danych Service Health.
+- [Alert dziennika aktywności](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log): alerty dotyczące elementów w magazynie dziennika aktywności, z wyjątkiem danych Azure Service Health.
 
-- [Alert Service Health](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications): specjalny typ alertu, który jest używany tylko w przypadku problemów dotyczących Service Health, które pochodzą z magazynu dzienników aktywności, takich jak przestoje i nadchodzące zaplanowane konserwacje. Należy pamiętać, że ten typ alertu jest konfigurowany za pomocą [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), usługi pomocnika do Azure monitor.
+- [Alert Azure Service Health](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications): specjalny typ alertu, który jest używany tylko w przypadku problemów dotyczących Azure Service Health, które pochodzą z magazynu dzienników aktywności, takich jak przestoje i nadchodzące zaplanowane konserwacje. Należy pamiętać, że ten typ alertu jest konfigurowany za pomocą [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), usługi pomocnika do Azure monitor.
 
 ### <a name="enable-alerting-through-partner-tools"></a>Włączanie alertów za poorednictwem narzędzi partnerskich
 
@@ -128,4 +128,4 @@ Pamiętaj, aby zanotować [limity liczby alertów, które można utworzyć](http
 
 ### <a name="best-query-experience"></a>Najlepsze środowisko zapytań
 
-Jeśli szukasz trendów we wszystkich danych, warto zaimportować wszystkie dane do dzienników platformy Azure, chyba że są one już w Application Insights. Można tworzyć zapytania w obu obszarach roboczych, dlatego nie ma potrzeby przenoszenia danych między nimi. Możesz również zaimportować dziennik aktywności i Service Health dane do obszaru roboczego Log Analytics. Płacisz za ten pozyskiwanie i przechowywanie, ale uzyskasz wszystkie dane w jednym miejscu na potrzeby analizy i wykonywania zapytań. Takie podejście daje również możliwość tworzenia złożonych warunków zapytania i alertów.
+Jeśli szukasz trendów we wszystkich danych, warto zaimportować wszystkie dane do dzienników platformy Azure, chyba że są one już w Application Insights. Można tworzyć zapytania w obu obszarach roboczych, dlatego nie ma potrzeby przenoszenia danych między nimi. Możesz również zaimportować dziennik aktywności i Azure Service Health dane do obszaru roboczego Log Analytics. Płacisz za ten pozyskiwanie i przechowywanie, ale uzyskasz wszystkie dane w jednym miejscu na potrzeby analizy i wykonywania zapytań. Takie podejście daje również możliwość tworzenia złożonych warunków zapytania i alertów.

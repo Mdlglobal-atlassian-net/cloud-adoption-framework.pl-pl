@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 9855b9d56025af86f62dc4e7f055e1584cbbe993
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e5dd2effba64b4aee4a60f8264e8ca9499a0f5fd
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218292"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755958"
 ---
 # <a name="evaluate-risk-tolerance"></a>Ocena tolerancja ryzyka
 
@@ -39,15 +39,15 @@ Powyżej przedstawiono kilka typowych zagrożeń wymienionych przez klientów. Z
 
 ## <a name="understand-risk-tolerance"></a>Opis tolerancji ryzyka
 
-Identyfikowanie ryzyka to dość bezpośredni proces. Zagrożenia związane z IT są ogólnie standardowe w branży. Jednak tolerancja dla tego ryzyka jest specyficzna dla każdej organizacji. Jest to punkt, w którym konwersacje biznesowe i IT są w trakcie rozwieszania. Każda Strona rozmowy jest zasadniczo mówiąca o innym języku. Poniższe porównania i pytania są przeznaczone do uruchamiania rozmów, które pomagają każdej stronie lepiej zrozumieć i obliczą tolerancję ryzyka.
+Identyfikowanie ryzyka to dość bezpośredni proces. Zagrożenia związane z IT są ogólnie standardowe w branży. Tolerancja dla tego ryzyka jest specyficzna dla każdej organizacji. Jest to punkt, w którym konwersacje biznesowe i IT są w trakcie rozwieszania. Każda Strona rozmowy jest zasadniczo mówiąca o innym języku. Poniższe porównania i pytania są przeznaczone do uruchamiania rozmów, które pomagają każdej stronie lepiej zrozumieć i obliczą tolerancję ryzyka.
 
 ## <a name="simple-use-case-for-comparison"></a>Prosty przypadek użycia do porównania
 
-Aby pomóc w zrozumieniu tolerancji ryzyka, przejdźmy do danych klienta. Jeśli firma w żadnej branży ogłasza dane klientów na niezabezpieczonym serwerze, ryzyko techniczne tego lub kradzieży tych danych jest w pełni takie samo. Jednak tolerancja firmy dla tego ryzyka będzie się różnić w zależności od rodzaju i potencjalnej wartości danych.
+Aby pomóc w zrozumieniu tolerancji ryzyka, przejdźmy do danych klienta. Jeśli firma w żadnej branży ogłasza dane klientów na niezabezpieczonym serwerze, ryzyko techniczne tego lub kradzieży tych danych jest w pełni takie samo. Tolerancja dla tego ryzyka będzie się różnić w zależności od rodzaju i potencjalnej wartości danych.
 
 - Firmy w dziedzinie opieki zdrowotnej i finansów w Stany Zjednoczone podlegają sztywnym wymaganiom dotyczącym zgodności innych firm. Przyjęto założenie, że dane osobowe lub dane związane z opieką zdrowotną są niezwykle poufne. Istnieją poważne konsekwencje dla tych typów firm, jeśli są one uwzględnione w scenariuszu ryzyka powyżej. Ich tolerancja będzie niezwykle niska. Wszystkie dane klienta opublikowane wewnątrz lub poza siecią będą musiały podlegać zasadom zgodności innych firm.
 - Firma do gier, której dane klienta są ograniczone do nazwy użytkownika, czasy odtwarzania i wysokie wyniki, nie mogą mieć znaczących skutków poza utratą w reputacji, jeśli prowadzą do powyższego zachowania. Mimo że niezabezpieczone dane są zagrożone, wpływ tego ryzyka jest niewielki. W związku z tym tolerancja dla ryzyka w tym przypadku jest wysoka.
-- Średniej wielkości przedsiębiorstwa, która zapewnia usługom czyszczenia dywanów tysiącom klientów, będzie między tymi dwoma skrajnymi tolerancjami. Dane klientów mogą być bardziej niezawodne, zawierające szczegółowe informacje, takie jak adres lub numer telefonu. Oba te elementy mogą być traktowane jako dane osobowe i powinny być chronione. Niemniej jednak mogą nie istnieć żadne szczególne wymagania ładu, które mają na celu zabezpieczenie danych. Z perspektywy INFORMATYCZNej odpowiedź jest prosta i zabezpiecza dane. Z perspektywy biznesowej może nie być to proste. Aby określić poziom tolerancji dla tego ryzyka, firma będzie musiała uzyskać więcej szczegółów.
+- Średniej wielkości przedsiębiorstwa, która zapewnia usługom czyszczenia dywanów tysiącom klientów, będzie różnica między tymi dwoma skrajnymi tolerancjami. Dane klienta mogą być bardziej niezawodne, zawierające szczegóły, takie jak adresy i numery telefonów. Oba są uznawane za dane osobowe i powinny być chronione, ale nie ma potrzeby, aby dane były zabezpieczone. Z perspektywy INFORMATYCZNej odpowiedź jest prosta i zabezpiecza dane. Z perspektywy biznesowej może nie być to proste. Aby określić poziom tolerancji dla tego ryzyka, firma będzie musiała uzyskać więcej szczegółów.
 
 W następnej sekcji udostępniono kilka przykładowych pytań, które mogą pomóc firmie określić poziom odporności na ryzyko dla przypadków użycia powyżej lub innych.
 
@@ -80,7 +80,7 @@ Te pytania podstawowe będą prowadzić do wielu innych. Po zbadaniu dialogu w d
 - Co jest potrzebne od firmy w celu sprawdzenia kosztów?
 - Jakie inne korzyści mogą pochodzić z rozwiązania, które spowodowałoby usunięcie tego ryzyka?
 
-Te pytania umożliwiają uproszczenie rozwiązań technicznych wymaganych do zarządzania lub usuwania zagrożeń. Jednak te pytania komunikują się z tymi rozwiązaniami w sposób, w jaki firma może szybko zintegrować się z procesem decyzyjnym.
+Te pytania umożliwiają uproszczenie rozwiązań technicznych potrzebnych do zarządzania lub usuwania zagrożeń, ale komunikują się one z tymi rozwiązaniami w sposób, w jaki firma może szybko zintegrować się z procesem decyzyjnym.
 
 **Prawdopodobieństwo utraty:** Pytania, aby określić, jak najprawdopodobniej jest to, że ryzyko stanie się rzeczywistością. Jest to najbardziej trudny obszar do określenia ilościowego. Zamiast tego zaleca się, aby zespół ładu w chmurze utworzył kategorie do komunikowania się z prawdopodobieństwem na podstawie danych pomocniczych. Poniższe pytania mogą pomóc w tworzeniu kategorii, które są zrozumiałe dla zespołu.
 
@@ -94,10 +94,10 @@ Po udzieleniu odpowiedzi na te pytania wraz z pytaniami ustalonymi przez zespó�
 
 - **Brak wskazania:** Nie wykonano wystarczającej liczby badań, aby określić prawdopodobieństwo.
 - **Niskie ryzyko:** Bieżące badania wskazują na realizację ryzyka.
-- **Przyszłe ryzyko:** Bieżące prawdopodobieństwo jest niskie. Jednak kontynuowanie wdrażania wymagałoby nowej analizy.
+- **Przyszłe ryzyko:** Bieżące prawdopodobieństwo jest niskie. Kontynuowanie wdrażania wymagałoby nowej analizy.
 - **Średnie ryzyko:** Istnieje prawdopodobieństwo, że ryzyko wpłynie na firmę.
 - **Wysokie ryzyko:** W miarę upływu czasu może to spowodować, że firma będzie korzystać z tego ryzyka.
-- **Zmniejszanie ryzyka:** Ryzyko ma średni poziom. Jednak działania w branży lub w firmie zmniejszają prawdopodobieństwo wpływu.
+- **Zmniejszanie ryzyka:** Ryzyko ma średni poziom. Działania w branży lub w firmie zmniejszają prawdopodobieństwo oddziaływania.
 
 **Określanie tolerancji:**
 

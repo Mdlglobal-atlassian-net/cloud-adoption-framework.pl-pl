@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17b39eba50b11ee1124e174f3bc89f3e6dada3e2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ebad1c02e22f00532ebb1fa0d16fc4b156ea9253
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218258"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755934"
 ---
 # <a name="motivations-and-business-risks-in-the-resource-consistency-discipline"></a>Motywacje i ryzyko biznesowe w dyscyplinie spójności zasobów
 
@@ -23,7 +23,7 @@ W tym artykule omówiono przyczyny, w których klienci zazwyczaj przyjmują dysc
 
 ## <a name="relevance"></a>Trafność
 
-Gdy chodzi o wdrażanie zasobów i obciążeń, Chmura zapewnia zwiększoną elastyczność i elastyczność w porównaniu z najbardziej tradycyjnymi lokalnymi centrami danych. Jednak te zalety oparte na chmurze również są sparowane z potencjalnymi wadą zarządzania, które mogą poważnie zagrozić sukcesem wdrożenia chmury. Jakie zasoby zostały wdrożone? Jakie zespoły są właścicielami zasobów? Czy masz wystarczającą ilość zasobów obsługujących obciążenie? Jak wiadomo, czy obciążenia są w dobrej kondycji?
+Gdy chodzi o wdrażanie zasobów i obciążeń, Chmura zapewnia zwiększoną elastyczność i elastyczność w porównaniu z najbardziej tradycyjnymi lokalnymi centrami danych. Te korzyści związane z chmurą mają również potencjalne wady związane z zarządzaniem, które mogą poważnie zagrozić sukcesem wdrożenia chmury. Jakie zasoby zostały wdrożone? Jakie zespoły są właścicielami zasobów? Czy masz wystarczającą ilość zasobów obsługujących obciążenie? Jak wiadomo, czy obciążenia są w dobrej kondycji?
 
 Spójność zasobów jest niezwykle istotna, aby zapewnić, że zasoby są wdrażane, aktualizowane i konfigurowane spójnie w sposób powtarzalny, a przerwy w działaniu usługi są zminimalizowane i nieznacznie zagwarantowane.
 

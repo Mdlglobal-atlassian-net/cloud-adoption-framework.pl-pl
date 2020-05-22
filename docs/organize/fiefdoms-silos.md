@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f68976fd07ea5a35078b70d3f18b656e6ba3f683
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a513c5727473d1e42b7fbecb6e0015aeb311fd0d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223511"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755281"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antywzorce organizacyjne: silosy i fiefdoms
 
@@ -59,7 +59,7 @@ Nawet w toksycznych kulturach wysiłki CCoE i zespół nadzoru chmurowego powinn
 
 ## <a name="it-silos"></a>Silosy IT
 
-Członkowie zespołu w silosie IT mogą definiować siebie przez ich wyrównanie do niewielkiej liczby dostawców IT lub obszaru specjalizacji technicznej. Jednak nie należy mylić silosów z fiefdoms IT. Silosy są zależne od wygody i pasją, a silosy są często łatwiejsze do przezwyciężenia, niż w przypadku fiefdoms.
+Członkowie zespołu w silosie IT mogą definiować siebie przez ich wyrównanie do niewielkiej liczby dostawców IT lub obszaru specjalizacji technicznej. Ale nie należy mylić silosów z fiefdoms IT. Silosy są zależne od wygody i pasją, a silosy są często łatwiejsze do przezwyciężenia, niż w przypadku fiefdoms.
 
 Ten Antywzorzec często wynika ze wspólnego pasją dla określonego rozwiązania. Silosy IT są następnie wzmacniane przez Zaawansowane umiejętności zespołu w wyniku inwestycji w to konkretne rozwiązanie. Ta wyższa umiejętność może być akceleratorem do wdrażania rozwiązań w chmurze, jeśli odporność na zmianę można przezwyciężyć. Może być również głównym blokiem, jeśli silosy są zerwane lub jeśli członkowie zespołu nie mogą precyzyjnie oszacować opcji. Na szczęście silosy IT można często przezwyciężyć bez jakichkolwiek znaczących zmian w schemacie organizacyjnym.
 
@@ -118,14 +118,14 @@ Fiefdoms IT może przedstawiać nieco wzrostu, postępując zgodnie z podejście
 W przypadku ciągłej odporności z usługi IT fiefdoms zapewnią działania związane z wdrażaniem w chmurze, może być to połączonego wysiłku, aby oszacować sytuację z istniejącymi liderami IT. Liderzy IT powinni uważnie rozważyć szczegółowe informacje od [zespołu strategii chmurowej](./cloud-strategy.md) , [centrum usługi Cloud](./cloud-center-of-excellence.md)Insights oraz [zespół nadzoru chmurowego](./cloud-governance.md) przed podjęciem decyzji.
 
 > [!NOTE]
-> Liderzy IT nigdy nie mogą zmieniać wykresów organizacyjnych w sposób jasny. Powinny również sprawdzać poprawność i analizować opinie od poszczególnych zespołów pomocniczych. Jednak wysiłki transformacji, takie jak wdrażanie w chmurze, mają na celu powiększanie podstawowych problemów, które były niezauważalne lub nie zostały rozwiązane długo przed tym nakładem pracy. Gdy fiefdoms uniemożliwia sukces firmy, zmiany lidera są możliwie największej konieczności.
+> Liderzy IT nigdy nie mogą zmieniać wykresów organizacyjnych w sposób jasny. Powinny również sprawdzać poprawność i analizować opinie od poszczególnych zespołów pomocniczych. Jednak działania przekształcania, takie jak wdrażanie w chmurze, mają na celu powiększanie podstawowych problemów, które były niezauważalne lub nie zostały rozwiązane długo przed tym nakładem pracy. Gdy fiefdoms uniemożliwia sukces firmy, zmiany lidera są możliwie największej konieczności.
 >
 > Na szczęście usuwanie lidera fiefdom nie jest często kończyć. Te silne interesuję liderzy mogą często przechodzić do roli zarządzania po krótkim czasie odbicia. Dzięki właściwej obsłudze ta zmiana może być w dobrej kondycji dla lidera fiefdom i bieżącego zespołu.
 
 <!-- -->
 
 > [!CAUTION]
-> W przypadku menedżerów IT fiefdoms ochrona zespołu przed ryzykiem jest jasno wartością lidera. Jednak istnieje drobna linia między ochroną i izolacją. Gdy zespół zablokował uczestnictwo w zmianach, może mieć konsekwencje psychologiczne i profesjonalne w zespole. Zaistnienie odporności na zmianę może być silne, szczególnie w czasie widocznej zmiany.
+> W przypadku menedżerów IT fiefdoms ochrona zespołu przed ryzykiem jest jasno wartością lidera. Jednak między ochroną i izolacją występuje drobna linia. Gdy zespół zablokował uczestnictwo w zmianach, może mieć konsekwencje psychologiczne i profesjonalne w zespole. Zaistnienie odporności na zmianę może być silne, szczególnie w czasie widocznej zmiany.
 >
 > Kierownik zespołu izolowanego może najlepiej przedstawić sposób myślenia wzrostu, eksperymentując z wskazówkami związanymi z prawidłowymi zespołami IT w poprzednich sekcjach. Aktywny i optymistyczny udział w działaniach ładu i CCoE może prowadzić do osobistego wzrostu. Kierownicy IT fiefdoms są najlepszym rozwiązaniem, aby zmienić Stifling mindsets i ułatwić zespołowi opracowywanie nowych pomysłów.
 

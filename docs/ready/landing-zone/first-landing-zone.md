@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d9643f0bc303c6557d02f107fc91c7654c25ec0d
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: bab10ca8c3055cfa3b2ca94bec0eb8f052a096de
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621785"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755711"
 ---
 # <a name="first-landing-zone"></a>Pierwsza strefa docelowa
 
@@ -48,7 +48,7 @@ W poniższej tabeli przedstawiono te same strefy wyładunkowe z nieco różnych 
 
 | Strefa docelowa                                 | Koncentrator                          | Znajdowało    | Model chmury | Technologia      |
 |----------------------------------------------|------------------------------|----------|-------------|-----------------|--|--|--|
-| [Strefa docelowa migracji w przewodniku CAF](./migrate-landing-zone.md)     | Wymagany jest składnik refaktoryzacji            | Dołączono | Tylko platforma Azure  | Azure Blueprint |
+| [Strefa docelowa migracji w przewodniku CAF](./migrate-landing-zone.md)     | Wymagany jest składnik refaktoryzacji            | Dołączono | Tylko platforma Azure  | Plan platformy Azure |
 | [Strefa docelowa CAF Terraform](./terraform-landing-zone.md) | Uwzględnione w module VDC       | Dołączono | Rozwiązanie wielochmurowe  | Terraform       |
 
 ## <a name="next-steps"></a>Następne kroki

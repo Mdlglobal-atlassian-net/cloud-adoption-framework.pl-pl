@@ -3,48 +3,55 @@ title: 'Wprowadzenie: zwiększanie niezawodności przy użyciu odpowiednich kont
 description: Zapoznaj się z podstawą poprawy niezawodności poprzez kontrolki ładu i linię bazową zarządzania.
 author: JanetCThomas
 ms.author: janet
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c75b7a17c8c2676688f5221ec0e4d0f2ed0641a5
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: cc920077b2fd0a014c24b767bea275f337c47e2f
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400216"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752389"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>Wprowadzenie: zwiększanie niezawodności przy użyciu odpowiednich kontrolek
 
-Jak stosujemy odpowiednie kontrolki w celu zwiększenia niezawodności? Ten przewodnik pomaga zminimalizować zakłócenia związane z niespójnościami w konfiguracji, organizacji zasobów, liniach bazowych zabezpieczeń lub ochronie zasobów. Kroki przedstawione w tym przewodniku pomogą Ci w rozliczeniu niezawodności i kosztów w portfelu IT oraz pomóc zespołowi nadzoru w upewnieniu się, że saldo jest stosowane konsekwentnie. Niezawodność również zależy od innych ról i funkcji. W tym artykule opisano różne funkcje pomocnicze, które ułatwiają tworzenie wyrównania poszczególnych zespołów.
+Jak zastosować odpowiednie kontrolki w celu zwiększenia niezawodności? Ten artykuł pomaga zminimalizować zakłócenia związane z:
 
-Zarządzanie operacjami i nadzorowanie jest równym partnerom w niezawodności przedsiębiorstwa. Decyzje podjęte w odniesieniu do praktyk operacyjnych ustawiają podstawę dla niezawodności. Metody służące do zarządzania ogólnym środowiskiem zapewniają spójność wszystkich zasobów. Pierwsze dwa kroki w tym przewodniku ułatwiają rozpoczęcie pracy obu zespołów. Gdy są one wymienione sekwencyjnie, następujące kroki mogą postępować równolegle. Kolejne kroki ułatwiają rozpoczęcie pracy w całym przedsiębiorstwie w celu uzyskania bardziej niezawodnych rozwiązań w całym przedsiębiorstwie.
+- Niespójności w konfiguracji.
+- Organizacja zasobów.
+- Linie bazowe zabezpieczeń.
+- Ochrona zasobów.
+
+Kroki opisane w tym artykule ułatwiają zespołowi operacyjnemu zrównoważenie niezawodności i kosztów w portfelu IT. Ten artykuł pomaga również zespołowi nadzoru w zapewnianiu spójnego stosowania bilansu. Niezawodność również zależy od innych ról i funkcji. W tym artykule opisano funkcje pomocnicze, które ułatwiają tworzenie wyrównania poszczególnych zespołów.
+
+Zarządzanie operacjami i nadzorowanie jest równym partnerom w niezawodności przedsiębiorstwa. Decyzje podejmowane w sprawie praktyk operacyjnych ustawiają podstawę dla niezawodności. Metody służące do zarządzania ogólnym środowiskiem zapewniają spójność wszystkich zasobów.
+
+Pierwsze dwa kroki w tym artykule ułatwiają rozpoczęcie pracy obu zespołów. Są one wyświetlane sekwencyjnie, ale można je wykonywać równolegle. Kolejne kroki ułatwiają rozpoczęcie pracy w całym przedsiębiorstwie w celu uzyskania bardziej niezawodnych rozwiązań w całym przedsiębiorstwie.
 
 ![Wprowadzenie do niezawodności przedsiębiorstwa](../_images/get-started/reliability-map.png)
 
 ## <a name="step-1-establish-operations-management-requirements"></a>Krok 1. Ustalenie wymagań dotyczących zarządzania operacjami
 
-Wszystkie obciążenia nie są tworzone jako równe. W każdym środowisku istnieją obciążenia, które mają bezpośredni i stały wpływ na działalność firmy. Obsługiwane są również procesy biznesowe i obciążenia, które mają mniejszy wpływ na ogólną firmę. W tym kroku zespół operacyjny w chmurze identyfikuje i implementuje początkowe wymagania w celu obsługi ogólnego portfela IT.
+Nie wszystkie obciążenia są tworzone jako równe. W każdym środowisku istnieją obciążenia, które mają bezpośredni i stały wpływ na działalność firmy. Obsługiwane są również procesy biznesowe i obciążenia, które mają mniejszy wpływ na ogólną firmę. W tym kroku zespół operacyjny w chmurze identyfikuje i implementuje początkowe wymagania w celu obsługi ogólnego portfela IT.
 
 **Dostarczane**
 
-- Zaimplementuj linię bazową zarządzania w celu zdefiniowania standardowych operacji wymaganych dla wszystkich obciążeń produkcyjnych.
+- Zaimplementuj linię bazową zarządzania, aby zdefiniować standardowe operacje, które są wymagane dla wszystkich obciążeń produkcyjnych.
 - Negocjuj zobowiązania biznesowe z zespołem strategii chmury w celu opracowania planu dla zaawansowanych operacji i wymagań dotyczących odporności.
 - Rozwiń swoją linię bazową zarządzania, jeśli do większości obciążeń są wymagane dodatkowe operacje.
-- Stosuj zaawansowane wymagania dotyczące operacji, aby przeciążać strefy i zasoby, które obsługują wyższe obciążenia krytyczne.
+- Stosuj zaawansowane wymagania dotyczące operacji, aby przeciążać strefy i zasoby, które obsługują te, które są najbardziej krytyczne.
 - Udokumentowanie decyzji dotyczących operacji w portfolio IT w [skoroszycie zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- **[Linia bazowa zarządzania](../manage/considerations/discipline.md):**
+- [Linia bazowa zarządzania](../manage/considerations/discipline.md):
 
-  - [Spis i widoczność](../manage/considerations/inventory.md): [Narzędzia natywne w chmurze](../manage/azure-management-guide/inventory.md) mogą [pomóc zbierać dane](../manage/monitor/data-collection.md), [konfigurować alerty](../manage/monitor/index.md)i implementować [platformę monitorowania](../manage/monitor/index.md) , która najlepiej pasuje do modelu operacyjnego.
-  - [Zgodność operacyjna](../manage/considerations/operational-compliance.md): największe wartości procentowe przestoju mogą pochodzić od zmian w konfiguracji zasobów lub słabych praktyk konserwacyjnych. Postępuj zgodnie z [przewodnikiem zarządzania serwerem Azure](../manage/azure-server-management/index.md) , aby zaimplementować narzędzia natywne w chmurze w celu zarządzania poprawkami i zmianami w konfiguracji zasobów.
-  - [Ochrona i odzyskiwanie](../manage/considerations/protect.md): awarie są nieuniknione na każdej platformie. Gdy wystąpi zakłócenie, przygotuj się z [rozwiązaniami do tworzenia kopii zapasowych i odzyskiwania](../manage/azure-management-guide/protect-recover.md) , aby zminimalizować czas trwania ewentualnych przerw w działaniu.
-
-- **[Zaawansowane operacje](../manage/design-principles.md):** Użyj planu bazowego zarządzania jako podstawy dla konwersacji związanych z [wyrównaniami biznesowymi](../manage/considerations/business-alignment.md) w celu stworzenia przejrzystości dotyczącej [krytycznego](../manage/considerations/criticality.md), [wpływu na działalność biznesową](../manage/considerations/impact.md)i [zobowiązań związanych z operacjami](../manage/considerations/commitment.md). Wyrównanie biznesowe pozwala określić liczbę i zweryfikować żądania dla [rozszerzonej linii bazowej](../manage/azure-management-guide/enhanced-baseline.md), zarządzania [różnymi platformami technologii](../manage/azure-management-guide/workload-specialization.md)lub [operacji specyficznych dla obciążenia](../manage/azure-management-guide/platform-specialization.md).
-
-- **Zapoznaj się z przeglądem architektury:** Zmiany architektury na poziomie obciążenia mogą być wymagane w celu spełnienia wymagań dotyczących operacji. [Struktura architektury platformy Azure](https://docs.microsoft.com/azure/architecture/framework/cost/tradeoffs) i [Przegląd architektury platformy Azure](https://docs.microsoft.com/assessments?id=azure-architecture-review) mogą pomóc w obciążeniu tych konwersacji z właścicielem technicznym określonego obciążenia.
+  - [Spis i widoczność](../manage/considerations/inventory.md): [Narzędzia natywne w chmurze](../manage/azure-management-guide/inventory.md) mogą pomóc [zbierać dane](../manage/monitor/data-collection.md) i [konfigurować alerty](../manage/monitor/index.md). Narzędzia te mogą również ułatwić implementację [platformy monitorowania](../manage/monitor/index.md) , która najlepiej pasuje do Twojego modelu operacyjnego.
+  - [Zgodność operacyjna](../manage/considerations/operational-compliance.md): największe wartości procentowe przestoju mogą pochodzić od zmian w konfiguracji zasobów lub słabych praktyk konserwacyjnych. Postępuj zgodnie z [przewodnikiem zarządzania serwerem Azure](../manage/azure-server-management/index.md) , aby zaimplementować narzędzia natywne w chmurze do zarządzania poprawkami i zmianami w konfiguracji zasobów.
+  - [Ochrona i odzyskiwanie](../manage/considerations/protect.md): awarie są nieuniknione na każdej platformie. Gdy wystąpi zakłócenie, przygotuj się z [rozwiązaniami do tworzenia kopii zapasowych i odzyskiwania](../manage/azure-management-guide/protect-recover.md) , aby zminimalizować czas trwania.
+- [Zaawansowane operacje](../manage/design-principles.md): Użyj planu bazowego zarządzania jako podstawy dla konwersacji [wyrównania Twojej firmy](../manage/considerations/business-alignment.md) . Pomaga to jasno omówić [krytyczne](../manage/considerations/criticality.md), [wpływ na działalność biznesową](../manage/considerations/impact.md)i [zobowiązania operacyjne](../manage/considerations/commitment.md). Wyrównanie biznesowe pozwala określić liczbę i zweryfikować żądania dla [rozszerzonej linii bazowej](../manage/azure-management-guide/enhanced-baseline.md), zarządzania [różnymi platformami technologii](../manage/azure-management-guide/workload-specialization.md)lub [operacji specyficznych dla obciążenia](../manage/azure-management-guide/platform-specialization.md).
+- **Zapoznaj się z przeglądem architektury:** Zmiany architektury na poziomie obciążenia mogą być wymagane w celu spełnienia wymagań dotyczących operacji. [Microsoft Azure dobrze zaprojektowanej struktury](https://docs.microsoft.com/azure/architecture/framework/cost/tradeoffs) i [Microsoft Azure udokumentowane przeglądy](https://docs.microsoft.com/assessments?id=azure-architecture-review) mogą pomóc w wykonywaniu tych rozmów przez właściciela technicznego określonego obciążenia.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -55,7 +62,7 @@ Wszystkie obciążenia nie są tworzone jako równe. W każdym środowisku istni
 
 ## <a name="step-2-consistently-apply-the-management-baseline"></a>Krok 2. spójnie Zastosuj linię bazową zarządzania
 
-Niezawodność przedsiębiorstwa wymaga spójnego zastosowania linii bazowej zarządzania. Taka spójność pochodzi z odpowiednich zasad firmowych, procesów IT i zautomatyzowanych narzędzi do zarządzania implementacją planu bazowego dla wszystkich zasobów, których to dotyczy.
+Niezawodność przedsiębiorstwa wymaga spójnego zastosowania linii bazowej zarządzania. Taka spójność pochodzi z odpowiednich zasad firmowych, procesów IT i narzędzi automatycznych. Te zasoby określają implementację linii bazowej zarządzania dla wszystkich zasobów, których to dotyczy.
 
 **Dostarczane**
 
@@ -64,12 +71,12 @@ Niezawodność przedsiębiorstwa wymaga spójnego zastosowania linii bazowej zar
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- Upewnij się, że wszystkie obciążenia i zasoby są zgodne z [właściwymi konwencjami nazewnictwa](../ready/azure-best-practices/naming-and-tagging.md) i oznaczania i [wymuszania Konwencji znakowania przy użyciu Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags), z określonym naciskiem na znaczniki dla "krytyczne".
-- Jeśli dopiero zaczynasz zarządzanie chmurą, ustal [zasady, procesy i dyscypliny ładu](../govern/index.md) przy użyciu metodologii rządzącej.
-- Jeśli jesteś nowym członkiem dyscypliny Cost Management, weź pod uwagę następujące zagadnienia dotyczące ulepszeń w zakresie [zarządzania kosztami](../govern/guides/complex/cost-management-improvement.md). [implementation](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
+- Upewnij się, że wszystkie obciążenia i zasoby są zgodne z [właściwymi konwencjami nazewnictwa i znakowania](../ready/azure-best-practices/naming-and-tagging.md). [Wymuś konwencje tagowania przy użyciu Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags), z określonym akcentem w przypadku tagów o krytycznym znaczeniu.
+- Jeśli dopiero zaczynasz zarządzanie chmurą, ustanawiaj [zasady, procesy i dyscypliny ładu](../govern/index.md) przy użyciu metodologii rządzącej.
+- Jeśli dopiero zaczynasz Cost Management dyscypliny, postępuj zgodnie ze wskazówkami zawartymi w artykule ulepszenia w zakresie [zarządzania kosztami](../govern/guides/complex/cost-management-improvement.md) . Skup się na sekcji [implementacji](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) .
 
 > [!NOTE]
-> **Kroki prowadzące do rozpoczęcia partnerstwa w niezawodności z innymi zespołami:** Różne decyzje podejmowane przez cały cykl życia w chmurze mogą mieć bezpośredni wpływ na niezawodność. Poniższe kroki ułatwiają zaprojektowanie partnerstwa i wspieranie działań koniecznych do zapewnienia spójnej niezawodności w portfelu IT.
+> **Kroki prowadzące do rozpoczęcia partnerstwa w niezawodności z innymi zespołami:** Różne decyzje podejmowane przez cały cykl życia w chmurze mogą mieć bezpośredni wpływ na niezawodność. Poniższe kroki przedstawiają partnerstwo i wspierają wysiłki wymagane do zapewnienia spójnej niezawodności w portfolio IT.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -80,6 +87,8 @@ Niezawodność przedsiębiorstwa wymaga spójnego zastosowania linii bazowej zar
 
 ## <a name="step-3-define-your-strategy"></a>Krok 3. Definiowanie strategii
 
+Decyzje strategiczne mają bezpośredni wpływ na niezawodność. Umożliwiają one przechodzenie przez cykl życia i wykonywanie długoterminowych operacji. Przejrzystość strategiczna usprawnia wysiłki.
+
 **Dostarczane**
 
 - Rejestruj motywacje, wyniki i uzasadnienie biznesowe w [szablonie strategii i planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
@@ -87,11 +96,9 @@ Niezawodność przedsiębiorstwa wymaga spójnego zastosowania linii bazowej zar
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- [Poznaj motywacje](../strategy/motivations.md): krytyczne zdarzenia biznesowe i niektóre motywacje do migracji mogą być zależne od kosztów, co zwiększa znaczenie kontroli kosztów dla wszystkich kolejnych wysiłków. Inne przeszukiwane motywacje dotyczące innowacji lub wzrostu dzięki migracji mogą być bardziej ukierunkowane na dochody w oparciu o linię górną. Zrozumienie motywacji ułatwia zrozumienie, jak wysoki jest priorytet zarządzania kosztami.
-- [Wyniki biznesowe](../strategy/business-outcomes/index.md): niektóre wyniki fiskalne mają być wyjątkowo czułe. Gdy żądane wyniki są mapowane na metryki fiskalne, należy zainwestować w Cost Management dyscypliny zarządzania wczesnie.
+- [Poznaj motywacje](../strategy/motivations.md): krytyczne zdarzenia biznesowe i niektóre motywacje do migracji są zależne od kosztów. Obszary te mogą zwiększyć znaczenie kontroli kosztu dla wszystkich późniejszych wysiłków. Inne trendy do przodu dotyczące innowacji lub wzrostu przez proces migracji mogą być bardziej ukierunkowane na dochody w oparciu o linię górną. Zrozumienie motywacji pomaga określić priorytety zarządzania kosztami.
+- [Wyniki biznesowe](../strategy/business-outcomes/index.md): niektóre wyniki fiskalne mają być wyjątkowo czułe. Gdy żądane wyniki są mapowane na metryki fiskalne, należy zainwestować na wczesne dyscypliny ładu Cost Management.
 - [Uzasadnienie biznesowe](../strategy/cloud-migration-business-case.md): uzasadnienie biznesowe służy jako ogólny widok ogólnego planu finansowego na potrzeby wdrażania w chmurze. Może to być dobre źródło dla początkowych nakładów budżetowych.
-
-Strategiczne decyzje mają bezpośredni wpływ na niezawodność, zgrywanie przez cykl życia i długoterminowe operacje. Przejrzystość strategiczna usprawnia wysiłki.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -102,24 +109,27 @@ Strategiczne decyzje mają bezpośredni wpływ na niezawodność, zgrywanie prze
 
 ## <a name="step-4-develop-a-cloud-adoption-plan"></a>Krok 4. opracowywanie planu wdrażania chmury
 
-Znak cyfrowy (lub analiza istniejącego portfolio IT) może pomóc w zweryfikowaniu uzasadnienia biznesowego i udostępnieniu rafinowanego widoku ogólnego portfolio IT. Plan wdrożenia zapewnia przejrzystość na osi czasu działań podczas jej wdrażania. Dostosowanie tego planu i analizy elementów cyfrowych zapewniają sposób planowania przyszłych zależności zarządzania operacjami. Zrozumienie planu powoduje także zapraszanie zespołu operacji w chmurze do cykli rozwojowe w celu oszacowania i zaplanowania wszelkich zmian w linii bazowej zarządzania, wymaganych do zapewnienia operacji związanych z obciążeniem.
+Digital (lub analiza istniejącego portfolio IT) może pomóc w sprawdzeniu uzasadnienia biznesowego. Może ona zapewnić elegancję widok całości portfolio IT. Plan wdrożenia zapewnia przejrzystość na osi czasu działań podczas jej wdrażania.
+
+W przypadku wyrównania planu wdrożenia z analizą elementów cyfrowych można zaplanować przyszłe zależności zarządzania operacjami. Zrozumienie planu przyjęcia powoduje również zaproszenie zespołu operacji w chmurze do cykli programistycznych. Mogą oni szacować i planować wszelkie zmiany w linii bazowej zarządzania, które są wymagane do zapewnienia operacji obciążeń.
 
 **Dostarczane**
 
-- Aktualizacja [strategii i szablonu planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) w celu odzwierciedlenia zmian, które są potrzebne do realizacji odpowiedniej strategii. Zarejestrowane zmiany mogą obejmować następujące elementy:
+- Aktualizacja [strategii i szablonu planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) w celu odzwierciedlenia zmian, które są potrzebne do osiągnięcia odpowiedniej strategii. Zarejestrowane zmiany mogą obejmować:
+
   - Ocena istniejącego podpisu cyfrowego.
-  - Plan wdrażania w chmurze odzwierciedlający wymagane zmiany i prace.
+  - Plan wdrażania chmury, który odzwierciedla wymagane zmiany i prace.
   - Zmiana organizacyjna wymagana do dostarczenia planu.
   - Plan odnoszący się do umiejętności, które są potrzebne, aby umożliwić istniejącemu zespołowi pomyślne ukończenie wymaganej pracy.
-- Współpraca z zespołem nadzoru w celu wyrównania modeli kosztów i modeli prognoz, w tym wysiłków umożliwiających optymalizację wydatków za pomocą analizy ilościowej.
+- Pracuj z zespołem nadzoru, aby wyrównać modele kosztów i modele prognoz. Ten proces obejmuje wysiłki w celu optymalizacji wydatków dzięki analizie ilościowej.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- [Zbierz spis](../digital-estate/inventory.md). Ustanów źródło danych do analizy podpisywania cyfrowego przed przyjęciem.
-- [Najlepsze rozwiązanie — Azure Migrate](../plan/contoso-migration-assessment.md). Użyj Azure Migrate, aby zebrać spis.
-- [Przyrostowa racjonalizacja](../digital-estate/rationalize.md#incremental-rationalization). Podczas przyrostowej racjonalizacji analiza ilościowa może identyfikować kandydatów w chmurze na potrzeby budżetowania.
-- [Wyrównaj modele kosztów i modele prognoz](../digital-estate/calculate.md). Użyj Azure Cost Management do wyrównania kosztów i modeli prognoz przez [Tworzenie budżetów](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
-- [Utwórz plan wdrożenia chmury](../plan/plan-intro.md#build-your-cloud-adoption-plan). Utwórz plan z możliwością działania, zasobami i szczegółami osi czasu.
+- [Zbieranie spisu](../digital-estate/inventory.md): Ustanów źródło danych do analizy podpisywania cyfrowego przed przyjęciem.
+- [Najlepsze rozwiązania — Azure Migrate](../plan/contoso-migration-assessment.md): Użyj Azure Migrate do zebrania spisu.
+- [Racjonalizacja przyrostowa](../digital-estate/rationalize.md#incremental-rationalization): podczas przyrostowej racjonalizacji analiza ilościowa może identyfikować kandydatów w chmurze na potrzeby budżetowania.
+- [Wyrównaj modele kosztów i modele prognoz](../digital-estate/calculate.md): Użyj Azure Cost Management do rozrównania kosztów i modeli prognoz przez [Tworzenie budżetów](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
+- [Kompiluj plan wdrażania chmury](../plan/plan-intro.md#build-your-cloud-adoption-plan): Utwórz plan z możliwością działania, zasobami i szczegółami osi czasu.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -130,11 +140,11 @@ Znak cyfrowy (lub analiza istniejącego portfolio IT) może pomóc w zweryfikowa
 
 ## <a name="step-5-implement-landing-zone-best-practices"></a>Krok 5. Implementowanie najlepszych rozwiązań dotyczących strefy wyładunkowej
 
-Przygotowana metodologia struktury wdrażania chmury koncentruje się w dużym stopniu na tworzeniu stref wyładunkowych w celu hostowania obciążeń w chmurze. W trakcie implementacji strefy wyładunkowej wiele decyzji może mieć wpływ na operacje. Zapoznaj się z zespołem ds. operacji w chmurze, aby uzyskać informacje na temat zmian w strefie docelowej Zapoznaj się również z zespołem nadzoru chmurowego, aby poznać zasady "spójność zasobów" i wskazówki dotyczące projektowania, które mogą mieć wpływ na projekt strefy docelowej.
+Gotowa metodologia wdrożenia chmury dla platformy Azure jest w dużym stopniu ukierunkowana na rozwój stref wypełniania na potrzeby obsługi obciążeń w chmurze. W trakcie implementacji strefy wyładunkowej wiele decyzji może mieć wpływ na operacje. Zapoznaj się z zespołem ds. operacji w chmurze, aby uzyskać informacje na temat zmian w strefie docelowej Zapoznaj się również z zespołem nadzoru chmurowego, aby poznać zasady spójności zasobów i wskazówki dotyczące projektowania, które mogą mieć wpływ na projekt strefy docelowej.
 
 **Dostarczane**
 
-- Wdróż co najmniej jedną strefę obciążeniową, która umożliwia hostowanie obciążeń w ramach planu adopcji krótkoterminowej.
+- Wdróż co najmniej jedną strefę wypełniania, która umożliwia hostowanie obciążeń w ramach planu adopcji krótkoterminowej.
 - Upewnij się, że wszystkie strefy ładunkowe spełniają decyzje dotyczące operacji i wymagania dotyczące spójności zasobów.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
@@ -150,7 +160,7 @@ Przygotowana metodologia struktury wdrażania chmury koncentruje się w dużym s
 
 ## <a name="step-6-complete-waves-of-adoption-effort-and-change"></a>Krok 6. zakończenie wysiłków wdrażania i zmiana
 
-Do długotrwałych operacji mogą wpływać decyzje podejmowane podczas migracji i wysiłków innowacji. Zachowanie spójnego wyrównania w procesach wdrażania pomaga usunąć bariery w wersjach produkcyjnych i ograniczyć nakład pracy potrzebny do dołączenia nowych rozwiązań do praktyk związanych z zarządzaniem.
+Do długotrwałych operacji mogą wpływać decyzje podejmowane podczas migracji i wysiłków innowacji. Wczesne wyrównanie spójne w procesach wdrażania pomaga usunąć bariery dla wydań produkcyjnych. Zmniejsza to również nakład pracy, który jest wymagany do wprowadzenia nowych rozwiązań do praktyk związanych z zarządzaniem.
 
 **Dostarczane**
 
@@ -173,4 +183,4 @@ Do długotrwałych operacji mogą wpływać decyzje podejmowane podczas migracji
 
 ## <a name="value-statement"></a>Value — instrukcja
 
-Powyższe kroki ułatwią wdrożenie odpowiednich kontroli i procesów wymaganych do zapewnienia niezawodności w całym przedsiębiorstwie i wszystkich hostowanych zasobach.
+Te kroki ułatwiają zaimplementowanie kontrolek i procesów, które są potrzebne w celu zapewnienia niezawodności w całym przedsiębiorstwie i wszystkich hostowanych zasobach.

@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 04cd90b03565eb2aa7895f52b7d2ece296904a1f
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 02bd4f4c36df13b91c0338c32e40538d617ac229
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620387"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756553"
 ---
 # <a name="azure-fundamental-concepts"></a>Podstawowe pojęcia dotyczące platformy Azure
 
@@ -22,7 +22,7 @@ Poznaj podstawowe pojęcia i terminy używane na platformie Azure i dowiedz się
 
 Rozpoczynając pracę związaną z wdrażaniem w chmurze platformy Azure warto znać następujące definicje:
 
-- **Zasób:** Jednostka zarządzana przez platformę Azure. Przykłady: maszyny wirtualne platformy Azure, sieci wirtualne i konta magazynu.
+- **Zasób:** Jednostka zarządzana przez platformę Azure. Przykłady obejmują platformy Azure Virtual Machines, sieci wirtualnych i konta magazynu.
 - **Subskrypcja:** Kontener logiczny dla zasobów. Każdy zasób platformy Azure jest skojarzony tylko z jedną subskrypcją. Tworzenie subskrypcji to pierwszy krok w ramach wdrażania platformy Azure.
 - **Konto platformy Azure:** Adres e-mail, który należy podać podczas tworzenia subskrypcji platformy Azure, to konto platformy Azure dla subskrypcji. Jednostka skojarzona z kontem e-mail jest odpowiedzialna za miesięczne koszty naliczane dla zasobów w ramach subskrypcji. Podczas tworzenia konta platformy Azure należy podać informacje kontaktowe i szczegółowe dane rozliczeniowe, takie jak karta kredytowa. Możesz użyć tego samego konta platformy Azure (adresu e-mail) dla wielu subskrypcji. Każda subskrypcja jest skojarzona tylko z jednym kontem platformy Azure.
 - **Administrator konta:** Strona skojarzona z adresem e-mail używanym do tworzenia subskrypcji platformy Azure. Administrator konta jest odpowiedzialny za zapłacenie za wszystkie koszty wynikające z zasobów subskrypcji.
@@ -60,11 +60,11 @@ Na platformie Azure definiowane są trzy typy ról do administrowania subskrypcj
 - Role kontroli dostępu opartej na rolach (RBAC) na platformie Azure.
 - Role administratora usługi Azure Active Directory (Azure AD).
 
-Rola administratora konta dla subskrypcji platformy Azure jest przypisywana do konta e-mail użytego do tworzenia subskrypcji platformy Azure. Administrator konta jest właścicielem rozliczenia subskrypcji. Administrator konta może zarządzać szczegółami subskrypcji w [Centrum konta platformy Azure](https://account.azure.com/subscriptions).
+Rola administratora konta dla subskrypcji platformy Azure jest przypisywana do konta e-mail użytego do tworzenia subskrypcji platformy Azure. Administrator konta jest właścicielem rozliczenia subskrypcji. Administrator konta może zarządzać szczegółami subskrypcji w [centrum konta platformy Azure](https://account.azure.com/subscriptions).
 
 Domyślnie rola administratora konta dla subskrypcji platformy Azure jest również przypisywana do konta e-mail użytego do tworzenia subskrypcji platformy Azure. Jeśli jest używana kontrola dostępu oparta na rolach, administrator usługi ma uprawnienia do subskrypcji odpowiadające roli właściciela. Administrator usługi ma również pełny dostęp do witryny Azure Portal. Administrator konta może zmienić administratora usługi na inne konto e-mail.
 
-Podczas tworzenia subskrypcji platformy Azure można ją skojarzyć z istniejącą dzierżawą usługi Azure AD. W przeciwnym razie zostanie utworzona nowa dzierżawa usługi Azure AD ze skojarzonym katalogiem. Rola administratora globalnego dla katalogu usługi Azure AD jest przypisywana do konta e-mail użytego do tworzenia subskrypcji usługi Azure AD.
+Podczas tworzenia subskrypcji platformy Azure można ją skojarzyć z istniejącą dzierżawą usługi Azure AD. W przeciwnym razie zostanie utworzona nowa dzierżawa usługi Azure AD ze skojarzonym katalogiem. Rola administratora globalnego w katalogu usługi Azure AD jest przypisana do konta e-mail używanego do tworzenia subskrypcji usługi Azure AD.
 
 Konto e-mail może być skojarzone z wieloma subskrypcjami platformy Azure. Administrator konta może przenieść subskrypcję na inne konto.
 

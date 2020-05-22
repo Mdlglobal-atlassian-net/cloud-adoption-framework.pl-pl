@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/20/2020
-ms.openlocfilehash: 9c2dfc0172df51652bcf56bd7a30a021d4f66900
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: d5aa6f9625f3841890669c3ee4c5d769bd4a9d84
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215589"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755544"
 ---
 # <a name="cloud-platform-functions"></a>Funkcje platformy w chmurze
 
@@ -43,7 +43,7 @@ Umiejętności wymagane do zapewnienia pełnej funkcjonalności platformy mogą 
 - [Wyniki biznesowe](../strategy/business-outcomes/index.md)
 - [Modele finansowe](../strategy/financial-models.md)
 - [Motywacje do wdrożenia w chmurze](../strategy/motivations.md)
-- [Ryzyka biznesowe](../govern/policy-compliance/risk-tolerance.md)
+- [Rodzaje ryzyka biznesowego](../govern/policy-compliance/risk-tolerance.md)
 - [Racjonalizacja podpisu cyfrowego](../digital-estate/index.md)
 
 ## <a name="minimum-scope"></a>Zakres minimalny

@@ -3,17 +3,17 @@ title: Microsoft Cloud Framework wdrażania dla dokumentacji platformy Azure
 description: Uzyskaj narzędzia, wskazówki i opisy, aby ułatwić kształtowanie strategii i uzyskać odpowiednie wyniki biznesowe we wszystkich fazach cyklu życia wdrożenia chmury.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 06ac22741c7b61b59ae308444833852f2fcbff08
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 0e43a719894836ac3b4a97574c98deef90cb9e38
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621458"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755358"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -71,4 +71,4 @@ Jeśli przedsiębiorstwo jest nowe na platformie Azure, Zacznij od [ustalenia i 
 <!-- docsTest:ignoreNextStep -->
 
 > [!div class="nextstepaction"]
-> [Rozpoczęcie pracy](./get-started/index.md)
+> [Wprowadzenie](./get-started/index.md)

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d1cbf6c608bbea2374cb6325e755fc9367aedc03
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 3bfade6fee8d07b068165f4148ed134273d646f9
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399609"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754393"
 ---
 # <a name="govern-methodology-for-the-cloud"></a>Metodologia zarządzania dla chmury
 
-Wdrażanie chmury to podróż, a nie cel. Po drodze istnieją wyraźne kamienie milowe i wymierne korzyści biznesowe. Jednak gdy firma rozpoczyna podróż, ostateczny stan wdrożenia chmury jest nieznany. Zarządzanie w chmurze pozwala utworzyć zabezpieczenia, dzięki którym firma będzie na odpowiedniej ścieżce podczas całej podróży.
+Wdrażanie chmury to podróż, a nie cel. Po drodze istnieją wyraźne kamienie milowe i wymierne korzyści biznesowe. Ostatni stan wdrożenia chmury jest nieznany, gdy firma zacznie podróżować. Zarządzanie w chmurze pozwala utworzyć zabezpieczenia, dzięki którym firma będzie na odpowiedniej ścieżce podczas całej podróży.
 
 Struktura wdrażania w chmurze zawiera przewodniki ładu, które opisują środowiska fikcyjnych firm, które są oparte na doświadczeniach rzeczywistych klientów. Każdy przewodnik polega na podążaniu za klientem podczas związanych z nadzorem aspektów wdrażania chmury.
 
@@ -49,7 +49,7 @@ Zasadniczo zasady firmowe działają jako system wczesnego ostrzegania służąc
 
 Ponieważ wymagania dotyczące nadzoru będą zmieniać się w trakcie podróży po wdrażaniu chmury, wymagane jest inne podejście do nadzoru. Firmy nie mogą już czekać, aż mały zespół utworzy zabezpieczenia i plany na każdej drodze _przed wykonaniem pierwszego kroku_. Oczekuje się, że wyniki biznesowe będą osiągane szybciej i płynniej. Nadzór IT musi odbywać się szybko i nadążać za wymaganiami biznesowymi, aby być w gotowości podczas wdrażania chmury i uniknąć niezatwierdzonych zasobów IT.
 
-Podejście polegające na **nadzorze przyrostowym** zapewnia takie cechy. Nadzór przyrostowy opiera się na niewielkim zestawie firmowych zasad, procesów i narzędzi służących do ustanowienia podstawy do wdrażania i zarządzania. Ta podstawa nosi nazwę **minimalnej koniecznej funkcjonalności (MVP, Minimum Viable Product)**. Minimalna konieczna funkcjonalność umożliwia zespołowi ds. utrzymania ładu szybkie włączenie nadzoru do implementacji w całym cyklu życia wdrożenia. Minimalna konieczna funkcjonalność może zostać ustanowiona w dowolnym momencie procesu wdrażania chmury. Jest jednak dobrym sposobem na wczesne przyjęcie MVP.
+Podejście polegające na **nadzorze przyrostowym** zapewnia takie cechy. Nadzór przyrostowy opiera się na niewielkim zestawie firmowych zasad, procesów i narzędzi służących do ustanowienia podstawy do wdrażania i zarządzania. Ta podstawa nosi nazwę **minimalnej koniecznej funkcjonalności (MVP, Minimum Viable Product)**. Minimalna konieczna funkcjonalność umożliwia zespołowi ds. utrzymania ładu szybkie włączenie nadzoru do implementacji w całym cyklu życia wdrożenia. Minimalna konieczna funkcjonalność może zostać ustanowiona w dowolnym momencie procesu wdrażania chmury. Dobrym sposobem jest jak najwcześniejszym przyjęciem MVP.
 
 Możliwość szybkiego reagowania na zmieniające się czynniki ryzyka umożliwia zespołowi ds. utrzymania ładu w chmurze angażowanie się na nowe sposoby. Zespół ds. utrzymania ładu w chmurze może dołączyć do zespołu strategii chmury jako „zwiadowcy”, którzy będą poruszali się przed zespołami wdrażania w chmurze, kreślili trasy i szybko ustanawiali zabezpieczenia w celu zarządzania ryzykiem związanym z planami wdrażania. Te warstwy nadzoru just-in-time są znane jako **iteracje ładu**. Przy takim podejściu strategia ładu rozwija się jeden krok przed zespołami wdrażania chmury.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 37a8a55762dc1ddb49e41673da1497cef4a1606f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 24259e0d9f011241a503aca143f4d03c2dc1fe6a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223647"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756026"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -126,8 +126,8 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 
 > [!div class="checklist"]
 >
-> - **Krok 1. Inicjowanie obsługi administracyjnej wystąpienia SQL Database na platformie Azure.** Firma Contoso aprowizuje wystąpienie SQL na platformie Azure. Po przeprowadzeniu migracji witryny internetowej na platformę Azure aplikacja internetowa usługi WCF będzie wskazywać to wystąpienie.
-> - **Krok 2. Ocena bazy danych za pomocą usługi Azure Database Asystent migracji (DMA) i migrowanie Database Migration Service (DMS).** Firma Contoso ocenia bazę danych pod kątem migracji, a następnie migruje bazę danych aplikacji za pomocą usługi Azure Data Migration Service.
+> - **Krok 1. Inicjowanie obsługi administracyjnej wystąpienia SQL Database na platformie Azure.** Firma Contoso aprowizuje wystąpienie SQL na platformie Azure. Po przeprowadzeniu migracji witryny sieci Web na platformę Azure aplikacja internetowa usługi WCF wskaże to wystąpienie.
+> - **Krok 2. Ocena bazy danych przy użyciu usługi Azure Database Asystent migracji (DMA) i migrowanie jej przy użyciu Database Migration Service (DMS).** Firma Contoso ocenia bazę danych pod kątem migracji, a następnie migruje bazę danych aplikacji przy użyciu usługi Azure Data Migration Service.
 > - **Krok 3. udostępnianie aplikacji sieci Web.** Firma Contoso aprowizuje dwie aplikacje internetowe.
 > - **Krok 4. Konfigurowanie usługi Azure DevOps.** Firma Contoso tworzy nowy projekt usługi Azure DevOps i importuje repozytorium usługi Git.
 > - **Krok 5. Konfigurowanie parametrów połączenia.** Firma Contoso konfiguruje parametry połączenia tak, aby aplikacja internetowa warstwy internetowej, aplikacja internetowa usługi WCF i wystąpienie programu SQL mogły się komunikować.
@@ -165,7 +165,7 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 - [Uzyskaj pomoc](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) przy aprowizacji bazy danych SQL Database.
 - [Dowiedz się więcej na temat](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) limitów zasobów rdzeń wirtualny.
 
-## <a name="step-2-assess-the-database-with-database-migration-assistant-dma-and-migrate-with-azure-database-migration-service-dms"></a>Krok 2. Ocena bazy danych przy użyciu Asystent migracji bazy danych (DMA) i Migrowanie z Azure Database Migration Service (DMS)
+## <a name="step-2-assess-the-database-using-database-migration-assistant-dma-and-migrate-it-using-azure-database-migration-service-dms"></a>Krok 2. Ocena bazy danych przy użyciu Asystent migracji bazy danych (DMA) i migrowanie jej przy użyciu Azure Database Migration Service (DMS)
 
 Administratorzy firmy Contoso oceniają bazę danych przy użyciu Asystent migracji bazy danych (DMA), a następnie migruje ją przy użyciu usług Azure Database Migration Services (DMS) przy użyciu [samouczka migracji krok po kroku](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online). Mogą wykonywać migracje w trybie online, offline i hybrydowym (wersja zapoznawcza).
 

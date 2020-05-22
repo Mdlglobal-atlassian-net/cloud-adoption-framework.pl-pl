@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c5c295ef24571309e1d97a91ec0c65a0816082e7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6307cb792b6c2cbbda472d1620a91ebdffc18845
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217893"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755901"
 ---
 <!-- cSpell:ignore DPIAs -->
 
@@ -34,7 +34,7 @@ Te narzędzia zostały zaprojektowane w celu ułatwienia organizacjom zaspokajan
 **Portal zaufania usługi firmy Microsoft** zawiera szczegółowe informacje i narzędzia, które ułatwiają zaspokajanie potrzeb korzystania z usług firmy Microsoft w chmurze, w tym Azure, Office 365, Dynamics 365 i Windows. Portal jest jednym z nich, aby zapewnić bezpieczeństwo, regulację, zgodność i prywatność informacji związanych z chmurą firmy Microsoft. Jest to miejsce, w którym publikowane są informacje i zasoby niezbędne do samoobsługowego oceny ryzyka dotyczącego usług i narzędzi w chmurze. Portal został utworzony w celu ułatwienia śledzenia działań związanych ze zgodnością z przepisami w ramach platformy Azure, w tym:
 
 - **Menedżer zgodności:** Menedżer zgodności, narzędzie do oceny ryzyka opartego na przepływie pracy w portalu zaufania usługi firmy Microsoft, umożliwia śledzenie, przypisywanie i weryfikowanie działań w zakresie zgodności z przepisami organizacji związanych z usługami w chmurze firmy Microsoft, takimi jak Office 365, Dynamics 365 i Azure. Więcej szczegółów można znaleźć w następnej sekcji.
-- **Dokumenty zaufania:** Obecnie istnieją trzy kategorie przewodników, które udostępniają zasoby do oceny firmy Microsoft w chmurze. Dowiedz się więcej o działaniach firmy Microsoft w zakresie bezpieczeństwa, zgodności i prywatności; ułatwiają one ulepszanie funkcji ochrony danych. Należą do nich następujące elementy:
+- **Dokumenty zaufania:** Obecnie istnieją trzy kategorie przewodników, które udostępniają zasoby do oceny firmy Microsoft w chmurze. Dowiedz się więcej o działaniach firmy Microsoft w zakresie bezpieczeństwa, zgodności i prywatności; ułatwiają one ulepszanie funkcji ochrony danych. Należą do nich:
 - **Raporty inspekcji:** Raporty inspekcji umożliwiają bieżące korzystanie z najnowszych informacji dotyczących ochrony prywatności, bezpieczeństwa i zgodności dla usług w chmurze firmy Microsoft. Obejmuje to ISO, SOC, FedRAMP i inne raporty inspekcji, litery i materiały związane z niezależnymi inspekcjami innych firm w usługach w chmurze firmy Microsoft, takimi jak Azure, Office 365, Dynamics 365 i innych.
 - **Przewodniki dotyczące ochrony danych:** Przewodniki dotyczące ochrony danych zawierają informacje o sposobie ochrony danych przez usługi firmy Microsoft w chmurze oraz sposobach zarządzania zabezpieczeniami i zgodności danych w chmurze w organizacji. Obejmuje to głębokie, szczegółowe oficjalne dokumenty, które zawierają szczegółowe informacje na temat sposobu tworzenia projektów firmy Microsoft i działania usług w chmurze, często zadawanych pytań, raportów o końcach bezpieczeństwa, przeprowadzenia testów i wskazówek ułatwiających przeprowadzenie oceny ryzyka i poprawę możliwości ochrony danych.
 - **Plan zabezpieczeń i zgodności platformy Azure:** Plany zapewniają zasoby ułatwiające tworzenie i uruchamianie aplikacji opartych na chmurze, które ułatwiają przestrzeganie rygorystycznych przepisów i standardów. Dzięki większej liczbie certyfikatów niż każdy inny dostawca usług w chmurze możesz mieć pewność, że w systemie Azure są dostępne następujące plany:
@@ -81,4 +81,4 @@ Podejmowanie efektywnych decyzji w zakresie bezpieczeństwa nie jest proste. Wym
 
 ## <a name="behavioral-analytics"></a>Analiza behawioralna
 
-Analiza behawioralna to metoda, która polega na analizie danych i porównywaniu ich z kolekcją znanych wzorców. Wzorce te nie są jednak prostymi sygnaturami. Są one określane przez złożone algorytmy uczenia maszynowego, które są stosowane do dużych zestawów danych. Są one również określane przez specjalistów od analizy, którzy dokonują dokładnej analizy złośliwych zachowań. Azure Security Center może korzystać z analizy behawioralnej w celu identyfikowania zasobów narażonych na podstawie analizy dzienników maszyn wirtualnych, dzienników urządzeń sieci wirtualnej, dzienników sieci szkieletowej, zrzutów awaryjnych i innych źródeł.
+Analiza behawioralna to metoda, która polega na analizie danych i porównywaniu ich z kolekcją znanych wzorców. Wzorce te nie są prostymi sygnaturami. Są one określane przez złożone algorytmy uczenia maszynowego, które są stosowane do dużych zestawów danych. Są one również określane przez analityków eksperta przy użyciu starannej analizy złośliwych zachowań. Azure Security Center może korzystać z analizy behawioralnej w celu identyfikowania zasobów narażonych na podstawie analizy dzienników maszyn wirtualnych, dzienników urządzeń sieci wirtualnej, dzienników sieci szkieletowej, zrzutów awaryjnych i innych źródeł.

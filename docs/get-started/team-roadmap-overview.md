@@ -3,16 +3,16 @@ title: Przewodniki wprowadzające dla zespołów wdrażania chmury
 description: Skorzystaj z tych przewodników wprowadzających, aby zrozumieć cele i obowiązki zespołów odpowiedzialnych za wysiłki związane z wdrażaniem chmur. Przewodniki te zapewniają Przewodnik po platformie wdrażania chmury.
 author: JanetCThomas
 ms.author: janet
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 891300cd245b96598e1bce375aef064dc3544d7a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 72d6f233f1dbdda60a0f48dbc89449915c013cf8
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83229303"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83751996"
 ---
 # <a name="getting-started-guides-for-cloud-adoption-teams"></a>Przewodniki wprowadzające dla zespołów wdrażania chmury
 

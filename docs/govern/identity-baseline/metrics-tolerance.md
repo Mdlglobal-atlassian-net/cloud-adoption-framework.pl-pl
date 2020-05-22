@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bbe36f12e6331a85f024af1835b66c30e35bf430
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e11fb95356f4f7364b544e896a4566b1a3188e85
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218649"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754457"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metryki linii bazowej tożsamości, wskaźniki i tolerancja ryzyka
 
@@ -40,7 +40,7 @@ Poniżej przedstawiono przykłady przydatnych metryk, które należy zebrać, ab
 
 ## <a name="risk-tolerance-indicators"></a>Wskaźniki tolerancji ryzyka
 
-Ryzyko związane z linią bazową tożsamości jest w dużym stopniu związane z złożonością infrastruktury tożsamości w organizacji. Jeśli wszyscy użytkownicy i grupy są zarządzani przy użyciu jednego katalogu lub macierzystego dostawcy tożsamości przy użyciu minimalnej integracji z innymi usługami, poziom ryzyka będzie prawdopodobnie niewielki. Jednak w miarę wzrostu potrzeb firmy systemy zarządzania tożsamościami mogą wymagać obsługi bardziej złożonych scenariuszy, takich jak wiele katalogów do obsługi wewnętrznej organizacji lub Federacji z zewnętrznymi dostawcami tożsamości. Ponieważ te systemy stają się bardziej skomplikowane, zwiększa się ryzyko.
+Ryzyko związane z linią bazową tożsamości jest w dużym stopniu związane z złożonością infrastruktury tożsamości w organizacji. Jeśli wszyscy użytkownicy i grupy są zarządzani przy użyciu jednego katalogu lub macierzystego dostawcy tożsamości przy użyciu minimalnej integracji z innymi usługami, poziom ryzyka będzie prawdopodobnie niewielki. W miarę wzrostu potrzeb firmy systemy zarządzania tożsamościami mogą wymagać obsługi bardziej złożonych scenariuszy, takich jak wiele katalogów do obsługi wewnętrznej organizacji lub Federacji z zewnętrznymi dostawcami tożsamości. Ponieważ te systemy stają się bardziej skomplikowane, zwiększa się ryzyko.
 
 We wczesnych etapach wdrażania chmury Pracuj z zespołem ds. zabezpieczeń IT i zainteresowanymi stronami biznesowymi, aby identyfikować [zagrożenia biznesowe](./business-risks.md) związane z tożsamością, a następnie określić akceptowalny poziom odniesienia dla tolerancji ryzyka związanego z tożsamościami. W tej części struktury wdrażania w chmurze przedstawiono przykłady, ale szczegóły dotyczące zagrożeń i linii bazowych dla firmy lub wdrożeń mogą się różnić.
 

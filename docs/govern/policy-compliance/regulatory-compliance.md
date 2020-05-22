@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0860dfc137b8aaa9ad39beeebb3856786eee1318
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 927c42b216ff22aa3b721c5f741e49fe089e2923
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218309"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755975"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Wprowadzenie do zgodności z przepisami
 
@@ -23,7 +23,7 @@ Zgodność z przepisami dotyczy dyscypliny i procesu zapewnienia, że firma prze
 
 Zgodność jest wyzwaniem dla organizacji wielonarodowych, szczególnie w silnie regulowanej branży, takiej jak opieka zdrowotna i usługi finansowe. Standardy i regulacje Abound, a w niektórych przypadkach mogą być często zmieniane, utrudniając tym firmom zmianę międzynarodowych przepisów elektronicznych dotyczących obsługi danych.
 
-Podobnie jak w przypadku kontroli zabezpieczeń, organizacje powinny zrozumieć podział obowiązków dotyczących zgodności z przepisami w chmurze. Dostawcy chmury dążą do zapewnienia zgodności ich platform i usług. Jednak organizacje muszą także potwierdzić, że ich aplikacje, infrastruktura, od których zależą, i usługi dostarczane przez strony trzecie, są również certyfikowane jako zgodne.
+Podobnie jak w przypadku kontroli zabezpieczeń, organizacje powinny zrozumieć podział obowiązków dotyczących zgodności z przepisami w chmurze. Dostawcy chmury dążą do zapewnienia zgodności ich platform i usług. Organizacje muszą również upewnić się, że ich aplikacje, infrastruktura, od których zależą te aplikacje, i usług świadczonych przez strony trzecie są również certyfikowane jako zgodne.
 
 Poniżej znajdują się opisy rozporządzeń dotyczących zgodności w różnych branżach i lokalizacje geograficzne:
 

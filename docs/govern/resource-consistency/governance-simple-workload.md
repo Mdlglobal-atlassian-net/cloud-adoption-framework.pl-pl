@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e68b8bc71e3a7cd306b4cfd8bc39628276d53031
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: cd52ec715e2b51a2507b156be8e7775f9a6b161d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399171"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756009"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Projekt nadzoru dla jednego obciążenia
 
@@ -63,7 +63,7 @@ Po utworzeniu subskrypcji **właściciel konta** platformy Azure kojarzy dzierż
 ![Właściciel konta platformy Azure kojarzy dzierżawę usługi Azure AD z subskrypcją nr ](../../_images/govern/design/governance-1-4.png)
  _4: właściciel konta platformy Azure kojarzy dzierżawę usługi Azure AD z subskrypcją._
 
-Być może zauważono, że nie istnieje żaden użytkownik skojarzony z subskrypcją, co oznacza, że nikt nie ma uprawnień do zarządzania zasobami. W rzeczywistości **właściciel konta** jest właścicielem subskrypcji i ma uprawnienia do wykonania dowolnej akcji dotyczącej zasobu w subskrypcji. Jednakże w praktyce **właściciel konta** jest bardziej niż prawdopodobnie osobą finansową w organizacji i nie jest odpowiedzialny za tworzenie, odczytywanie, aktualizowanie i usuwanie zasobów — te zadania będą wykonywane przez **właściciela obciążenia**. W związku z tym należy dodać **właściciela obciążenia** do subskrypcji i przypisać uprawnienia.
+Być może zauważono, że nie istnieje żaden użytkownik skojarzony z subskrypcją, co oznacza, że nikt nie ma uprawnień do zarządzania zasobami. W rzeczywistości **właściciel konta** jest właścicielem subskrypcji i ma uprawnienia do wykonania dowolnej akcji dotyczącej zasobu w subskrypcji. W praktyce **właściciel konta** jest bardziej niż prawdopodobnie osobą finansową w organizacji i nie jest odpowiedzialny za tworzenie, odczytywanie, aktualizowanie i usuwanie zasobów — te zadania będą wykonywane przez **właściciela obciążenia**. W związku z tym należy dodać **właściciela obciążenia** do subskrypcji i przypisać uprawnienia.
 
 Ponieważ **właściciel konta** jest obecnie jedynym użytkownikiem z uprawnieniami do dodawania **właściciela obciążenia** do subskrypcji, Dodaj **właściciela obciążenia** do subskrypcji:
 
