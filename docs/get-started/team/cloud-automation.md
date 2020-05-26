@@ -7,18 +7,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: eff835c50a121f7338439d3987e0e294af759956
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 4c560271b86b384aa0ba43763344bd0a5335f239
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83751975"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814226"
 ---
 # <a name="get-started-build-a-cloud-automation-team"></a>Wprowadzenie: Budowanie zespołu usługi Cloud Automation
 
 Ten przewodnik pomaga zrozumieć cele i cele zespołu automatyzacji pracującego nad wdrażaniem chmury.
 
-Podczas działań związanych z wdrażaniem w chmurze możliwości automatyzacji w chmurze będą odblokowywać potencjał DevOps i natywne rozwiązanie w chmurze. Doświadczenie w każdym z tych obszarów może przyspieszyć wdrażanie i innowacje.
+Podczas działań związanych z wdrażaniem w chmurze możliwości automatyzacji w chmurze będą odblokowywać potencjał DevOps i natywne rozwiązanie w chmurze. Doświadczenie w tych obszarach może przyspieszyć wdrażanie i innowacje.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 

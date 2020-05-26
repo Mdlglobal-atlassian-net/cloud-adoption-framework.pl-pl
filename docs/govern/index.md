@@ -8,27 +8,27 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5c5ba323856ef3eb9612c7abdd733bfa32c6725f
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: cd9454d33e15a862a68ba299cc10036fdb0c8ac9
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620497"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754437"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Ład w przewodniku Microsoft Cloud Adoption Framework dla platformy Azure
 
 Chmura tworzy nowe paradygmaty dotyczące technologii, które obsługują firmy. Te nowe paradygmaty zmieniają też sposób stosowania tych technologii, zarządzania nimi i nadzorowania ich. Kiedy całe centra danych można praktycznie zniszczyć, a następnie utworzyć ponownie za pomocą jednego wiersza kodu wykonanego z poziomu nienadzorowanego procesu, oznacza to, że należy przemyśleć tradycyjne podejścia. Jest to szczególnie istotne w przypadku ładu.
 
-Nadzór nad ładem w chmurze jest procesem iteracyjnym. W przypadku organizacji z istniejącymi zasadami regulującymi lokalne środowiska IT ład chmury powinien uzupełniać te zasady. Jednak poziom integracji zasad firmowych między środowiskiem lokalnym i chmurą będzie różny w zależności od dojrzałości ładu chmury i majątku cyfrowego w chmurze. Z upływem czasu majątek w chmurze będzie się rozwijać, a wraz z nim zasady i procesy dotyczące ładu chmury. Poniższe ćwiczenia ułatwiają rozpoczęcie tworzenia początkowych podstaw ładu.
+Nadzór nad ładem w chmurze jest procesem iteracyjnym. W przypadku organizacji z istniejącymi zasadami regulującymi lokalne środowiska IT ład chmury powinien uzupełniać te zasady. Poziom integracji zasad firmowych między środowiskiem lokalnym i chmurą będzie różny w zależności od dojrzałości ładu chmury i majątku cyfrowego w chmurze. Z upływem czasu majątek w chmurze będzie się rozwijać, a wraz z nim zasady i procesy dotyczące ładu chmury. Poniższe ćwiczenia ułatwiają rozpoczęcie tworzenia początkowych podstaw ładu.
 
 <!-- markdownlint-disable MD033 -->
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png) | <br> [Metodologia](./methodology.md): Zbierz podstawową wiedzę na temat metodologii zapewniania ładu w chmurze w ramach przewodnika Cloud Adoption Framework i zacznij myśleć o stanie końcowym. |
-| <br> ![2](../_images/icons/2.png) | <br> [Punkt odniesienia](./benchmark.md): Oceń stan bieżący i stan przyszły w celu ustalenia wizji na potrzeby stosowania struktury. |
-| <br> ![3](../_images/icons/3.png) | <br> [Początkowe podstawy ładu](./initial-foundation.md): Rozpocznij stosowanie nadzoru nad ładem, używając małego, łatwego w implementacji zestawu narzędzi do nadzoru. Te początkowe podstawy ładu są nazywane minimalną konieczną funkcjonalnością (MVP).                                |
-| <br> ![4](../_images/icons/4.png) | <br> [Udoskonalanie początkowych podstaw ładu](./foundation-improvements.md): W trakcie realizacji planu wdrażania chmury iteracyjnie dodawaj mechanizmy kontroli ładu w celu obsługi pojawiających się czynników ryzyka, zbliżając się do stanu końcowego. |
+| <br> ![1](../_Images/icons/1.png) | <br> [Metodologia](./methodology.md): Zbierz podstawową wiedzę na temat metodologii zapewniania ładu w chmurze w ramach przewodnika Cloud Adoption Framework i zacznij myśleć o stanie końcowym. |
+| <br> ![2](../_Images/icons/2.png) | <br> [Punkt odniesienia](./benchmark.md): Oceń stan bieżący i stan przyszły w celu ustalenia wizji na potrzeby stosowania struktury. |
+| <br> ![3](../_Images/icons/3.png) | <br> [Początkowe podstawy ładu](./initial-foundation.md): Rozpocznij stosowanie nadzoru nad ładem, używając małego, łatwego w implementacji zestawu narzędzi do nadzoru. Te początkowe podstawy ładu są nazywane minimalną konieczną funkcjonalnością (MVP).                                |
+| <br> ![4](../_Images/icons/4.png) | <br> [Udoskonalanie początkowych podstaw ładu](./foundation-improvements.md): W trakcie realizacji planu wdrażania chmury iteracyjnie dodawaj mechanizmy kontroli ładu w celu obsługi pojawiających się czynników ryzyka, zbliżając się do stanu końcowego. |
 
 ## <a name="objective-of-this-content"></a>Cel tej zawartości
 
@@ -45,7 +45,7 @@ Zawartość przewodnika Cloud Adoption Framework dotyczy działalności biznesow
 
 Architekt chmury pełni rolę lidera myśli i osoby ułatwiającej kontakt między tymi odbiorcami. Zawartość tej kolekcji przewodników ma pomóc architektowi chmury w ułatwieniu odpowiednich konwersacji z odpowiednimi odbiorcami, aby umożliwić podjęcie koniecznych decyzji. Transformacja firmy, która jest napędzana i obsługiwana przez chmurę, zależy od tego, czy architekt chmury pomoże w podejmowaniu decyzji w zakresie działalności biznesowej i IT.
 
-**Specjalizacja architekta chmury w tej sekcji:** Każda sekcja przewodnika Cloud Adoption Framework reprezentuje różną specjalizację lub wariant roli architekta chmury. Ta sekcja przewodnika Cloud Adoption Framework jest przeznaczona dla architektów chmury pasjonujących się unikaniem lub ograniczaniem ryzyka technicznego. Niektórzy dostawcy chmury nazywają tych specjalistów _strażnikami chmury_, my jednak wolimy określenie _opiekunowie chmury_ lub zbiorczo _zespół ds. utrzymania ładu w chmurze_. Artykuły dotyczące każdego praktycznego przewodnika dotyczącego ładu pokazują, jak skład i rola zespołu ds. utrzymania ładu w chmurze może zmieniać się wraz z upływem czasu.
+**Specjalizacja architekta chmury w tej sekcji:** Każda sekcja przewodnika Cloud Adoption Framework reprezentuje różną specjalizację lub wariant roli architekta chmury. Ta sekcja przewodnika Cloud Adoption Framework jest przeznaczona dla architektów chmury pasjonujących się unikaniem lub ograniczaniem ryzyka technicznego. Niektórzy dostawcy chmury nazywają tych specjalistów _strażnikami chmury_, my jednak wolimy określenie _opiekunowie chmury_ lub zbiorczo _zespół ds. utrzymania ładu w chmurze_. Praktyczne przewodniki dotyczące ładu pokazują, jak skład i rola zespołu ds. utrzymania ładu w chmurze może zmieniać się wraz z upływem czasu.
 
 ## <a name="use-this-guide"></a>Korzystanie z tego przewodnika
 

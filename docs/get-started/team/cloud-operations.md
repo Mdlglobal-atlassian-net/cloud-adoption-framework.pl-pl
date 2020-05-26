@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: cc26fd22e386769312288f3e6b8dc5cb11585ab1
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: f7670efdfb22a6542efe93f309e8bbaf83a2027e
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83751857"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815127"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>Wprowadzenie: Tworzenie zespołu operacji w chmurze
 
@@ -29,7 +29,7 @@ W przypadku braku umów dotyczących operacji na DevOps lub dostawcy usług jest
 **Dostarczane**
 
 - Ustal, czy potrzebujesz zespołu operacji w chmurze.
-- Udokumentowanie decyzji i osób odpowiedzialnych w [Raci (odpowiedzialny, konto, konsultowany i poinformowany) szablonu](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) , wybierając kartę **wyrównanie organizacji** .
+- Udokumentowanie decyzji i osób odpowiedzialnych w [Raci (odpowiedzialnych, umożliwiających, z którymi odbywa się konsultacje i informowanie)](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) w `Org Alignment` arkuszu.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
@@ -71,7 +71,7 @@ Wdrażanie w chmurze zwykle znajduje się w fale lub wersjach. Regularna erze, k
 
 **Dostarczane**
 
-- Ustanów erze z każdym z zespołów pomocniczych. Jeśli to możliwe, Wyrównaj ten erze z cyklami wydań i planowania.
+- Ustanów erze z zespołami pomocniczymi. Jeśli to możliwe, Wyrównaj ten erze z cyklami wydań i planowania.
 - Ustanów osobne erze bezpośrednio z zespołem ds. strategii chmurowej lub jego różnych członków zespołu, aby zapoznać się z wymaganiami operacyjnymi związanymi z następną analizą.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**

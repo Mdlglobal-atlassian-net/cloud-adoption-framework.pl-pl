@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a4b66a43cdf3524b23c109cdc5fa4e965c6e01f4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: eb599b892e5cb3e898faf84fb1bd8b65b8d9d03b
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217663"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815076"
 ---
 <!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX TIP dbextents Raincode Tmax -->
 
@@ -176,7 +176,9 @@ Jeśli rozważasz migrację komputerów mainframe, ekosystem partnerów jest dos
 
 System Azure zapewnia sprawdzoną, wysoką dostępność i skalowalną infrastrukturę dla systemów, które są obecnie uruchamiane na komputerach mainframe. Niektóre obciążenia można migrować ze względu na łatwość. Inne obciążenia, które są zależne od starszego oprogramowania systemu, takie jak CICS i ISP, mogą być przenoszone przy użyciu rozwiązań partnerskich i migrowane na platformę Azure w miarę upływu czasu. Bez względu na to, co nastąpi, firma Microsoft i jej partnerzy są dostępni, aby pomóc zoptymalizować rozwiązanie dla platformy Azure przy zachowaniu funkcjonalności oprogramowania systemu mainframe.
 
-## <a name="learn-more"></a>Dowiedz się więcej
+<!-- docsTest:ignore "IBM DB2 pureScale" -->
+
+## <a name="learn-more"></a>Więcej tutaj
 
 Więcej informacji zawierają następujące zasoby:
 

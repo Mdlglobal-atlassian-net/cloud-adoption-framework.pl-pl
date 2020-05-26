@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0ca1c1804b2c7116ed61e05a10a221b472a2807d
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: a03035c749b57d60bf02db6ed0f019a873aecfc5
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398760"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815280"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Zobowiązania biznesowe w zarządzaniu chmurą
 
@@ -114,7 +114,7 @@ Poniższe obliczenia przeprowadzą przez formuły, aby lepiej zrozumieć różni
 
 ### <a name="estimate-outage-hours-per-year"></a>Oszacowanie przestoju (godz. rocznie)
 
-Złożona umowa SLA jest umową dotyczącą poziomu usług opartą na wdrażaniu poszczególnych zasobów w obciążeniu. To pole określa _szacowane przestoje_ (oznaczone etykietą _Est. przestój_ w skoroszycie). Aby obliczyć szacowane przestoje w godzinach na rok bez użycia skoroszytu, zastosuj następującą formułę:
+Złożona umowa SLA jest umową dotyczącą poziomu usług opartą na wdrażaniu poszczególnych zasobów w obciążeniu. To pole określa _szacowane przestoje_ (oznaczone etykietą `Est. Outage` w skoroszycie). Aby obliczyć szacowane przestoje w godzinach na rok bez użycia skoroszytu, zastosuj następującą formułę:
 
 > _Szacowany czas przestoju = (1-złożona wartość procentowa SLA) &#215; liczbę godzin w roku_
 
@@ -122,17 +122,17 @@ Skoroszyt używa domyślnej wartości _8 760 godzin rocznie_.
 
 ### <a name="standard-loss-impact"></a>Standardowy wpływ na utratę
 
-_Standardowy wpływ na utratę_ (oznaczony jako _Standardowy wpływ_ w skoroszycie) prognozuje wpływ na sytuację finansową, przy założeniu, że szacowane prognozowanie _przestojów_ jest dokładne. Aby obliczyć tę prognozę bez użycia skoroszytu, zastosuj następującą formułę:
+_Standardowy wpływ na utratę_ (oznaczony `Standard Impact` w skoroszycie) prognozuje wpływ na sytuację finansową w przypadku wystąpienia awarii, przy założeniu, że szacowane prognozowanie _przestojów_ jest dokładne. Aby obliczyć tę prognozę bez użycia skoroszytu, zastosuj następującą formułę:
 
 > _Wpływ standardowy = Szacowana awaria @ trzy 9 pracy, &#215; wpływ na wartość czasu_
 
 Stanowi to podstawę dla kosztu, gdyby zainteresowane strony biznesowe wypełniły inwestycję w wyższy poziom zarządzania.
 
-### <a name="composite-sla-impact"></a>Złożony wpływ umowy SLA
+### <a name="composite-sla-impact"></a>Złożony wpływ na umowę SLA
 
-_Złożony wpływ umowy SLA_ ( _wpływ na poziom zobowiązania_ w skoroszycie) zapewnia zaktualizowany wpływ na kwestie finansowe na podstawie zmian w umowie SLA dotyczącej czasu pracy. To obliczenie pozwala porównać przewidywany wpływ na finanse obu opcji. Aby obliczyć ten wpływ na prognozę bez arkusza kalkulacyjnego, zastosuj następującą formułę:
+Wpływ na kampanię _złożona — umowa SLA_ (oznaczona `Commitment level impact` w skoroszycie) zapewnia zaktualizowany wpływ na kwestie finansowe na podstawie zmian w umowie SLA dotyczącej czasu pracy. To obliczenie pozwala porównać przewidywany wpływ na finanse obu opcji. Aby obliczyć ten wpływ na prognozę bez arkusza kalkulacyjnego, zastosuj następującą formułę:
 
-> _Złożony wpływ umowy SLA = szacowany czas przestoju &#215; wpływ wartości czasu_
+> _Złożoność — wpływ na umowę SLA = szacowany przestój &#215; wpływ wartości czasu_
 
 Wartość reprezentuje potencjalne straty, które mają być nieuniknione przez zmieniony poziom zobowiązania i nową umowną umowę SLA.
 

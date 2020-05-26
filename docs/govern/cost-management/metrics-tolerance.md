@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ea26a5dcefa2f7bcde2c33ad4482ac8aadf06156
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: abaa95421c8e6acdec724f40e5b0e1cd30b7babf
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755062"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815059"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-cost-management-discipline"></a>Metryki i wskaźniki tolerancji ryzyka w Cost Management dyscypliny
 
@@ -41,7 +41,7 @@ We wczesnych etapach wdrażania chmury będziesz współpracować z firmą, aby 
 Po zidentyfikowaniu [ryzyka biznesowego](./business-risks.md), będziesz współpracować z firmą, aby identyfikować testy porównawcze, których można użyć do identyfikacji wyzwalaczy, które mogłyby zwiększyć ryzyko. Poniżej przedstawiono kilka przykładów tego, jak metryki, takie jak wymienione powyżej, można porównać z tolerancją linii bazowej ryzyka, aby wskazać potrzebę prowadzenia dalszych inwestycji w zarządzanie kosztami.
 
 - **Oparte na zobowiązaniach (najbardziej typowe):** Firma, która jest zobowiązana do wydatków _$x, 000000_ ten rok na dostawcę chmury. Potrzebują oni Cost Management dyscypliny, aby zapewnić, że firma nie przekroczy swoich celów wydatków o więcej niż 20% i że będą korzystać z co najmniej 90% zobowiązania.
-- **Wyzwalacz wartości procentowej:** Firma z wydatkami na chmurę, która jest stabilna dla systemów produkcyjnych. Jeśli to zmieni się o ponad _x%_, to w przypadku Cost Management dyscypliny jest to bardzo wiele inwestycji.
+- **Wyzwalacz wartości procentowej:** Firma z wydatkami na chmurę, która jest stabilna dla systemów produkcyjnych. Jeśli te zmiany są większe niż _x procent_, to w przypadku Cost Management dyscypliny jest to bardzo wiele inwestycji.
 - **Wyzwalacz** nadmiernej aprowizacji: Firma, która uważa wdrożone rozwiązania, jest nadmiernie inicjowana. Zarządzanie kosztami jest inwestycją priorytetową do momentu zaprezentowania właściwego wyrównania aprowizacji i użycia zasobów.
 - **Wyzwalacz wydatków miesięcznych:** Firma, która spędza ponad _$x 000 miesięcznie,_ jest uznawana za zmienny koszt. Jeśli wydatki przekroczą tę kwotę w danym miesiącu, będą musieli inwestować w koszty zarządzania.
 - **Wyzwalacz wydatków rocznych:** Firma z budżetem IT R&D, która umożliwia wyliczanie _$x, 000_ rocznie na eksperymentowanie w chmurze. Mogą oni uruchamiać obciążenia produkcyjne w chmurze, ale nadal są uznawane za eksperymentalne rozwiązania, Jeśli budżet nie przekroczy tej kwoty. W przypadku przekroczenia budżetu konieczne będzie traktowanie budżetu, takiego jak inwestycja w produkcję, i ścisłe Zarządzanie wydatkami.

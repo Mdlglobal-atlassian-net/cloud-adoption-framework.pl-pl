@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 92e793e2df89bbb70fe51fd7af9ef8fc1456ffa2
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d246a5c00aff0bacc7b12f79c9f252f6956b2907
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620654"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754645"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Omówienie dziedziny Punkt odniesienia obsługi tożsamości
 
@@ -22,13 +22,13 @@ Punkt odniesienia obsługi tożsamości jest jedną z [pięciu dziedzin utrzyman
 > [!NOTE]
 > Dziedzina Punkt odniesienia obsługi tożsamości nie zastąpi istniejących zespołów, procesów i procedur IT, które umożliwiają w organizacji zabezpieczanie usług zarządzania tożsamościami i zarządzanie nimi. Głównym celem tej dziedziny jest zidentyfikowanie potencjalnych czynników ryzyka biznesowego powiązanych z obsługą tożsamości i dostarczenie personelowi IT odpowiedzialnemu za implementowanie, obsługę i działanie infrastruktury zarządzania tożsamościami wskazówek umożliwiających ograniczenie tego ryzyka. Podczas tworzenia zasad i procesów utrzymania ładu należy uwzględnić odpowiednie zespoły informatyczne w procesach planowania i przeglądania.
 
-W tej sekcji przewodnika Cloud Adoption Framework opisano model tworzenia dziedziny Punkt odniesienia obsługi tożsamości w ramach strategii utrzymania ładu w chmurze. Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Jednak decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie i dyskusje odpowiednich członków zespołów informatycznych odpowiedzialnych za implementowanie rozwiązań zarządzania tożsamościami w organizacji i zarządzanie nimi.
+W tej sekcji przewodnika Cloud Adoption Framework opisano model tworzenia dziedziny Punkt odniesienia obsługi tożsamości w ramach strategii utrzymania ładu w chmurze. Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie i dyskusje odpowiednich członków zespołów informatycznych odpowiedzialnych za implementowanie rozwiązań zarządzania tożsamościami w organizacji i zarządzanie nimi.
 
 Jeśli Twoja organizacja nie ma własnych specjalistów zajmujących się obsługą tożsamości i zabezpieczeniami, należy w ramach tej dziedziny rozważyć zatrudnienie zewnętrznych konsultantów. Ponadto należy wziąć pod uwagę skorzystanie z [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting) — usług wdrażania w chmurze będących częścią programu [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) — lub innych zewnętrznych partnerów ds. wdrażania w chmurze, aby przedyskutować z nimi kwestie związane z tą dziedziną.
 
 ## <a name="policy-statements"></a>Instrukcje zasad
 
-Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wymagania dotyczące architektury stanowią podstawę dziedziny Punkt odniesienia obsługi tożsamości. Przykładowe instrukcje zasad można zobaczyć w artykule [Instrukcje zasad dziedziny Punkt odniesienia obsługi tożsamości](./policy-statements.md). Te przykłady mogą posłużyć jako punkt wyjścia dla zasad utrzymania ładu w organizacji.
+Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wymagania dotyczące architektury stanowią podstawę dziedziny Punkt odniesienia obsługi tożsamości. Użyj [przykładowych deklaracji zasad](./policy-statements.md) jako punktu wyjścia do zdefiniowania własnych zasad Punktu odniesienia obsługi tożsamości.
 
 > [!CAUTION]
 > Przykładowe zasady pochodzą z typowych doświadczeń klientów. W celu lepszego dostosowania tych zasad do określonych potrzeb w zakresie utrzymania ładu w chmurze wykonaj poniższe kroki, aby utworzyć instrukcje zasad spełniające unikatowe potrzeby firmy.

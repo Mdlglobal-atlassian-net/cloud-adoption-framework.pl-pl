@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbb39153dc729b7822c53520e9424a5280cb013a
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: de1fef059841fe013163f822c9188b7ed5b64a29
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621745"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755700"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -34,7 +34,7 @@ Przed zdefiniowaniem stref docelowych należy poznać pokrewny termin: _podstawy
 **Wspólne obowiązki:** _Podstawy platformy_ zapewniają scentralizowane mechanizmy zarządzania platformą w chmurze. Nadal wspólnym obowiązkiem wszystkich członków zespołu jest uwzględnianie w swojej pracy wymagań związanych z obsługą tożsamości, zabezpieczeniami, operacjami, zgodnością i zapewnieniem ładu. Przed wdrożeniem jakiejkolwiek technologii w strefie docelowej należy rozważyć to, jakie narzędzia zapewniają _podstawy platformy_, a co trzeba będzie wdrożyć w strefie docelowej w celu realizacji wspólnych obowiązków.
 
 > [!IMPORTANT]
-> Deweloperzy i architekci wdrażający rozwiązania w strefie docelowej mogą skorzystać z przewodnika [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework/), aby uwzględnić i wykorzystać wspólne filary architektury podczas projektowania, tworzenia i obsługi obciążeń działających w strefie docelowej.
+> Deweloperzy i architekci wdrażający rozwiązania w strefie docelowej mogą skorzystać z przewodnika [Dobrze zaprojektowana struktura platformy Microsoft Azure](https://docs.microsoft.com/azure/architecture/framework/), aby uwzględnić i wykorzystać wspólne filary architektury podczas projektowania, tworzenia i obsługi obciążeń działających w strefie docelowej.
 
 ## <a name="landing-zone-definition"></a>Definicja strefy docelowej
 
@@ -60,7 +60,7 @@ Przeznaczenie i zakres ogólnego planu wdrożenia chmury określi wymagane eleme
 
 ## <a name="decentralized-operations"></a>Operacje zdecentralizowane
 
-W niektórych zdecentralizowanych organizacjach projekt wdrożenia zakłada istnienie zespołów ds. obciążeń, ponoszących **wyłączną odpowiedzialność** za wdrożenie i obsługę swoich izolowanych obciążeń, co obejmuje zabezpieczenia, zapewnienie ładu, zarządzanie operacjami i inne funkcje. W przypadku takich zespołów obciążenie może działać we własnym, izolowanym środowisku, bez zależności od podstaw platformy. Takie środowiska specyficzne dla obciążeń obejmowałyby niespójne implementacje zabezpieczeń, niezawodności, wydajności, kosztów i operacji w chmurze. W związku z tym nie powinny być nazywane strefami docelowymi. Tego typu zespoły mogą skorzystać z przewodnika [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework/), który pomoże im w niezależnym zaprojektowaniu, utworzeniu i zoptymalizowaniu każdego obciążenia.
+W niektórych zdecentralizowanych organizacjach projekt wdrożenia zakłada istnienie zespołów ds. obciążeń, ponoszących **wyłączną odpowiedzialność** za wdrożenie i obsługę swoich izolowanych obciążeń, co obejmuje zabezpieczenia, zapewnienie ładu, zarządzanie operacjami i inne funkcje. W przypadku takich zespołów obciążenie może działać we własnym, izolowanym środowisku, bez zależności od podstaw platformy. Takie środowiska specyficzne dla obciążeń obejmowałyby niespójne implementacje zabezpieczeń, niezawodności, wydajności, kosztów i operacji w chmurze. W związku z tym nie powinny być nazywane strefami docelowymi. Tego typu zespoły mogą skorzystać z przewodnika [Dobrze zaprojektowana struktura platformy Microsoft Azure](https://docs.microsoft.com/azure/architecture/framework/), który pomoże im w niezależnym zaprojektowaniu, utworzeniu i zoptymalizowaniu każdego obciążenia.
 
 > [!IMPORTANT]
 > Podobna, ale odrębna, jest następująca sytuacja: na wczesnym etapie cyklu wdrażania chmury mniejsze zespoły mogą z konieczności działać w sposób podobny do organizacji zdecentralizowanych. Jeśli zespoły działają w sposób zdecentralizowany z powodu konkretnych okoliczności (a nie planowo), również należy stosować najlepsze rozwiązanie obejmujące strefy docelowe.

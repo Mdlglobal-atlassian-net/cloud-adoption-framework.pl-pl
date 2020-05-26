@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 25092e44b14b2f813b4db2fe44497bf8ce4e1375
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: f08e1c0bdb516edea017da27baa531e0d422bd42
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755926"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815025"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Procesy zgodności z zasadami spójności zasobów
 
@@ -21,7 +21,7 @@ W tym artykule omówiono podejście do procesu przestrzegania zasad, które regu
 
 ## <a name="planning-review-and-reporting-processes"></a>Planowanie, przeglądanie i raportowanie procesów
 
-Platformy w chmurze zapewniają tablicę narzędzi do zarządzania i funkcji, których można użyć do organizowania, aprowizacji, skalowania i minimalizowania przestojów. Korzystanie z tych narzędzi do efektywnej struktury i obsługi wdrożeń w chmurze w sposób, który koryguje potencjalne zagrożenia, wymaga dobrze przemyślanych procesów i zasad, a także ścisłej współpracy z zespołami operacyjnymi IT i uczestnikami biznesowymi.
+Platformy w chmurze zapewniają tablicę narzędzi do zarządzania i funkcji, których można użyć do organizowania, aprowizacji, skalowania i minimalizowania przestojów. Korzystanie z tych narzędzi do efektywnej struktury i obsługi wdrożeń w chmurze w sposób korygujący potencjalne zagrożenia wymaga dobrze rozważanych procesów i zasad, a także do ścisłej współpracy z zespołami operacyjnymi IT i uczestnikami biznesowymi.
 
 Poniżej znajduje się zestaw przykładowych procesów często powiązanych z dyscypliną spójności zasobów. Te przykłady są używane jako punkt wyjścia podczas planowania procesów, które umożliwią kontynuowanie aktualizacji zasad spójności zasobów na podstawie zmian w firmie i informacji zwrotnych z rozwoju i zespołów IT z uwzględnieniem wskazówek do działania.
 

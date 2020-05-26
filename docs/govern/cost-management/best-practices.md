@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ad35877a912fd9d52a74c7f44c91bd9fedb559a5
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 0632b80f168ba51f5709322cc229e4b7a21094c4
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755128"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815110"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -34,7 +34,7 @@ Zarządzanie kosztami w całym przedsiębiorstwie to funkcja zarządzania chmur�
 
 ## <a name="operational-cost-management-best-practices"></a>Najlepsze rozwiązania związane z zarządzaniem kosztami operacyjnymi
 
-Następujące najlepsze rozwiązania są zwykle wykonywane przez członka zarządu chmury lub zespołu operacji w chmurze, zgodnie z poprawkami i innymi procesami konserwacji zaplanowanej. Każdy z tych najlepszych rozwiązań odwzorowuje wskazówki dotyczące podejmowania działań w dalszej części tego artykułu.
+Następujące najlepsze rozwiązania są zwykle wykonywane przez członka zarządu chmury lub zespołu operacji w chmurze, zgodnie z poprawkami i innymi procesami konserwacji zaplanowanej. Te najlepsze rozwiązania zamieszczono w dalszej części tego artykułu.
 
 - **Tagowanie ma kluczowe znaczenie dla wszystkich rządów:** Upewnij się, że wszystkie obciążenia i zasoby są zgodne z [właściwymi konwencjami nazewnictwa i znakowania](../../ready/azure-best-practices/naming-and-tagging.md) i [Wymuś konwencje tagowania przy użyciu Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags)
 - **Zidentyfikuj możliwości o odpowiednim rozmiarze:** Przejrzyj bieżące wymagania dotyczące wykorzystania zasobów i wydajności w środowisku, aby zidentyfikować zasoby, które pozostawały niedostatecznie wykorzystane przez pewien czas (zwykle więcej niż 90 dni).

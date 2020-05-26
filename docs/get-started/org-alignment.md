@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: b4914cfadb3b94d997861c233e524d966aabe107
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 7ab2ea31c90215efd37c2ab0d65f8a8c7baf24b1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752584"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814294"
 ---
 # <a name="get-started-align-your-organization"></a>Wprowadzenie: Wyrównaj swoją organizację
 
@@ -74,7 +74,7 @@ Wraz z rozwojem potrzeb wdrożenia zwiększa się konieczność zachowania równ
 
 ## <a name="step-5-align-raci-charts"></a>Krok 5. wyrównanie wykresów RACI
 
-Na każdym poziomie dojrzałości odpowiedzialność za różne funkcje w chmurze jest zmieniana na nowe zespoły. Ta zmiana odpowiedzialności umożliwia szybsze cykle migracji i innowacji przez usuwanie i automatyzowanie barier na drodze do zmiany. Aby prawidłowo wyrównać przydziały, artykuł [wyrównania Raci](../organize/raci-alignment.md) wyświetla wykres Raci dla każdej z przywoływanych struktur organizacyjnych.
+Na każdym poziomie dojrzałości odpowiedzialność za różne funkcje w chmurze jest zmieniana na nowe zespoły. Ta zmiana odpowiedzialności umożliwia szybsze cykle migracji i innowacji przez usuwanie i automatyzowanie barier na drodze do zmiany. Aby prawidłowo wyrównać przydziały, artykuł [wyrównania Raci](../organize/raci-alignment.md) pokazuje wykres Raci dla każdej struktury organizacyjnej.
 
 ## <a name="additional-information"></a>Dodatkowe informacje
 

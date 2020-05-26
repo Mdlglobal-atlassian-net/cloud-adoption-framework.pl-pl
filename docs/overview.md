@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 0e43a719894836ac3b4a97574c98deef90cb9e38
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: b6c88d978b6b7750bd687e411663d5828f6f4257
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755358"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815484"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,9 +42,7 @@ Struktura wdrażania w chmurze umożliwia wdrażanie w chmurze najlepszych rozwi
 
 ## <a name="understand-the-lifecycle"></a>Omówienie cyklu życia
 
-Każda z metod przechwyconych powyżej jest częścią szerokiego cyklu życia wdrożenia w chmurze. Poniższy obraz wiąże się ze sobą z każdą metodologią, aby zademonstrować ogólny cykl życia. Platforma wdrażania w chmurze jest pełną platformą cyklu życia, obsługującą klientów w każdej fazie wdrażania przez zapewnienie metodologii jako konkretnych podejścia do przezwyciężenia wspólnych blokad.
-
-<!-- cSpell:ignore caf -->
+Każda z powyższych metod jest częścią szerokiego cyklu życia wdrożenia w chmurze. Platforma wdrażania w chmurze jest pełną platformą cyklu życia, obsługującą klientów w każdej fazie wdrażania przez zapewnienie metod jako konkretnych podejścia do przezwyciężenia wspólnych blokad, jak pokazano tutaj.
 
 ::: image type="content" source="./_images/caf-overview-new.svg" alt-text="Overview of the Cloud Adoption Framework" :::
 

@@ -7,16 +7,16 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: dc9680d4224150cb754a55aebeda2c19eb9068d6
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 456d5ecbe31d23731515821943da02861144bffe
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752740"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814547"
 ---
 # <a name="get-started-manage-cloud-costs"></a>Wprowadzenie: zarządzanie kosztami chmury
 
-Cost Management dyscypliny zarządzania chmurą koncentrują się na tworzeniu budżetów, monitorowaniu wzorców alokacji kosztów i wdrażaniu formantów w celu usprawnienia zachowań wydatków w chmurze w portfelu IT. Optymalizacja kosztów przedsiębiorstwa obejmuje wiele innych ról i funkcji pozwalających zminimalizować koszt i zrównoważyć wymagania dotyczące skalowania, wydajności, zabezpieczeń i niezawodności. Ten artykuł mapuje te różne funkcje pomocnicze na Przewodnik wprowadzający, aby pomóc w tworzeniu wyrównania między poszczególnymi zespołami.
+Cost Management dyscypliny zarządzania chmurą koncentrują się na tworzeniu budżetów, monitorowaniu wzorców alokacji kosztów i wdrażaniu formantów w celu usprawnienia zachowań wydatków w chmurze w portfelu IT. Optymalizacja kosztów przedsiębiorstwa obejmuje wiele innych ról i funkcji pozwalających zminimalizować koszt i zrównoważyć wymagania dotyczące skalowania, wydajności, zabezpieczeń i niezawodności. W tym artykule zawarto mapowanie różnych funkcji pomocniczych do przewodnika wprowadzającego, które ułatwiają tworzenie wyrównania wśród poszczególnych zespołów.
 
 Jednak Optymalizacja kosztów przedsiębiorstwa obejmuje wiele innych ról i funkcji pozwalających zminimalizować koszt i zrównoważyć wymagania dotyczące skalowania, wydajności, zabezpieczeń i niezawodności. Ten artykuł mapuje te funkcje pomocnicze, aby pomóc w tworzeniu wyrównania między nimi.
 
@@ -76,7 +76,7 @@ Strategiczne decyzje mają bezpośredni wpływ na kontrolę kosztów, zgrywanie 
 
 **Dostarczane**
 
-- Rejestruj motywacje, wyniki i uzasadnienie biznesowe w [szablonie strategii i planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). 
+- Rejestruj motywacje, wyniki i uzasadnienie biznesowe w [szablonie strategii i planu](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
 - Utwórz swój pierwszy budżet przy użyciu Azure Cost Management.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**

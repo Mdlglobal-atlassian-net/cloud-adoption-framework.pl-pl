@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: cc920077b2fd0a014c24b767bea275f337c47e2f
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 0f7ae79bbcc9fb4c02a0c9e731d2e826f4682138
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752389"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814821"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>Wprowadzenie: zwiększanie niezawodności przy użyciu odpowiednich kontrolek
 
@@ -23,7 +23,7 @@ Jak zastosować odpowiednie kontrolki w celu zwiększenia niezawodności? Ten ar
 - Linie bazowe zabezpieczeń.
 - Ochrona zasobów.
 
-Kroki opisane w tym artykule ułatwiają zespołowi operacyjnemu zrównoważenie niezawodności i kosztów w portfelu IT. Ten artykuł pomaga również zespołowi nadzoru w zapewnianiu spójnego stosowania bilansu. Niezawodność również zależy od innych ról i funkcji. W tym artykule opisano funkcje pomocnicze, które ułatwiają tworzenie wyrównania poszczególnych zespołów.
+Kroki opisane w tym artykule ułatwiają zespołowi operacyjnemu zrównoważenie niezawodności i kosztów w portfelu IT. Ten artykuł pomaga również zespołowi nadzoru w zapewnianiu spójnego stosowania bilansu. Niezawodność również zależy od innych ról i funkcji. W tym artykule opisano funkcje pomocnicze, które ułatwiają tworzenie wyrównania wśród poszczególnych zespołów.
 
 Zarządzanie operacjami i nadzorowanie jest równym partnerom w niezawodności przedsiębiorstwa. Decyzje podejmowane w sprawie praktyk operacyjnych ustawiają podstawę dla niezawodności. Metody służące do zarządzania ogólnym środowiskiem zapewniają spójność wszystkich zasobów.
 

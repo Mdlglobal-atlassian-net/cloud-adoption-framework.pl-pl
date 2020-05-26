@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dc2c490850c47dfa92ec91d5133168b982b5c719
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 42a4dc16a7249ab7211da1e1574511479a566011
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398477"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815246"
 ---
 # <a name="business-impact-in-cloud-management"></a>Wpływ na działalność w zarządzaniu chmurą
 
@@ -54,7 +54,7 @@ Gdy obliczasz straty przez zastosowanie danych historycznych, możesz mieć wyst
 
 Jeśli używasz [skoroszytu zarządzania operacjami](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) do planowania zarządzania chmurą, rozważ wykonanie następujących czynności:
 
-- Każda firma powinna aktualizować każde obciążenie w _przykładowym_ lub _czystym szablonie_ z *wpływem na czas/wartość* każdego obciążenia. Domyślnie wpływ na *czas/wartość* reprezentuje przewidywane straty na godzinę związane z awarią obciążenia.
+- Każda firma powinna aktualizować każde obciążenie w `Example` arkuszu lub `Clean Template` arkuszu wraz z `Time/Value Impact` każdym obciążeniem. Domyślnie program `Time/Value Impact` przedstawia przewidywane straty na godzinę związane z awarią obciążenia.
 
 ## <a name="next-steps"></a>Następne kroki
 

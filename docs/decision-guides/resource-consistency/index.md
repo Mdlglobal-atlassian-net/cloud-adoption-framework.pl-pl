@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d89a0e0facd81ed06c38cae4283f96791eeddd3f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0d38c59c75c2119043f04cdeb9c10402bfce53c2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224327"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753532"
 ---
 # <a name="resource-consistency-decision-guide"></a>Przewodnik podejmowania decyzji dotyczących spójności zasobów
 
@@ -64,7 +64,7 @@ Aby uzyskać bardziej szczegółowe omówienie wymuszania decyzji dotyczących z
 
 ## <a name="hierarchical-consistency"></a>Spójność hierarchiczna
 
-Grupy zasobów umożliwiają obsługę dodatkowych poziomów hierarchii w organizacji w ramach subskrypcji dzięki stosowaniu reguł usługi Azure Policy i kontrolek dostępu na poziomie grupy zasobów. Jednak w miarę zwiększania rozmiaru infrastruktury w chmurze może być konieczna obsługa bardziej skomplikowanych wymagań dotyczących ładu między subskrypcjami, z których można korzystać, używając hierarchii przedsiębiorstwo/dział/konto/subskrypcja w ramach umowy Azure Enterprise Agreement.
+Grupy zasobów umożliwiają obsługę dodatkowych poziomów hierarchii w organizacji w ramach subskrypcji dzięki stosowaniu reguł usługi Azure Policy i kontrolek dostępu na poziomie grupy zasobów. W miarę zwiększania rozmiaru infrastruktury w chmurze może być konieczna obsługa bardziej skomplikowanych wymagań dotyczących ładu między subskrypcjami, z których można korzystać, używając hierarchii przedsiębiorstwo/dział/konto/subskrypcja w ramach umowy Azure Enterprise Agreement.
 
 [Grupy zarządzania platformy Azure](https://docs.microsoft.com/azure/governance/management-groups) umożliwiają organizowanie subskrypcji w bardziej zaawansowane struktury organizacyjne dzięki możliwości grupowania ich w hierarchię inną niż hierarchia z umowy Enterprise Agreement. Ta alternatywna hierarchia umożliwia stosowanie kontroli dostępu i mechanizmów wymuszania zasad w wielu subskrypcjach i zawartych w nich zasobach. Hierarchie grup zarządzania umożliwiają dopasowywanie subskrypcji infrastruktury w chmurze do operacji lub wymagań dotyczących ładu biznesowego. Aby uzyskać więcej informacji, zobacz [przewodnik po decyzji dotyczącej subskrypcji](../subscriptions/index.md).
 

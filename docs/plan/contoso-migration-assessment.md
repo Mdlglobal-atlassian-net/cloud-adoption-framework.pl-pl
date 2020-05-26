@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: bc1753821e61ee0a7af74bc720a56ec8962ecded
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8624b11e0f99404c4f718c8a1c07de803d7fb876
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214586"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815382"
 ---
 <!-- docsTest:disable TODO -->
 
@@ -76,7 +76,7 @@ Do oceny migracji firma Contoso używa narzędzi firmy Microsoft. Narzędzia te 
 
 | Technologia | Opis | Koszty |
 | --- | --- | --- |
-| [Asystent migracji danych](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia Data Migration Assistant do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie Data Migration Assistant ocenia równoważność funkcji między źródłowymi i docelowymi elementami SQL. Wynikiem działania tego narzędzia są zalecenia dotyczące poprawy wydajności i niezawodności. | Narzędzie Data Migration Assistant można bezpłatnie pobrać. |
+| [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Firma Contoso używa narzędzia Data Migration Assistant do oceny i wykrywania problemów ze zgodnością, które mogą mieć wpływ na funkcjonalność bazy danych na platformie Azure. Narzędzie Data Migration Assistant ocenia równoważność funkcji między źródłowymi i docelowymi elementami SQL. Wynikiem działania tego narzędzia są zalecenia dotyczące poprawy wydajności i niezawodności. | Narzędzie Data Migration Assistant można bezpłatnie pobrać. |
 | [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Firma Contoso używa usługi Azure Migrate do oceny swoich maszyn wirtualnych VMware. Usługa Azure Migrate ocenia przydatność maszyn do migracji. Dzięki tej usłudze można oszacować wymagany rozmiar i koszt działania na platformie Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną. |
 | [Mapa usługi](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Usługa Azure Migrate za pomocą rozwiązania Service Map przedstawia zależności między maszynami, które firma chce zmigrować. | Rozwiązanie Service Map jest częścią dzienników usługi Azure Monitor. Obecnie firma Contoso może używać rozwiązania Service Map przez 180 dni bez naliczania opłat. |
 
@@ -131,8 +131,10 @@ Firma Contoso przeprowadza ocenę w następujący sposób:
 > - **Krok 5. Przygotowanie do analizy zależności przy użyciu Azure Migrate.** Przedstawiciel firmy Contoso instaluje agentów usługi Azure Migrate na maszynach wirtualnych, dzięki czemu można zobaczyć mapowanie zależności między maszynami wirtualnymi.
 > - **Krok 6. Ocena maszyn wirtualnych przy użyciu Azure Migrate.** Przedstawiciel firmy Contoso sprawdza zależności, grupuje maszyny wirtualne i uruchamia ocenę. Gdy ocena jest gotowa, przedstawiciel firmy Contoso analizuje ją pod kątem przygotowania do migracji.
 
-    > [!NOTE]
-    > Assessments shouldn't just be limited to using tooling to discover information about your environment. You should also schedule time to speak to business owners, end users, and other members of the IT department to fully understand of what is happening in the environment and understand factors that tooling cannot tell you. 
+<!-- -->
+
+> [!NOTE]
+> Ocena nie powinna być ograniczona wyłącznie do korzystania z narzędzi w celu odnajdywania informacji o środowisku. Należy również zaplanować czas rozmowy do właścicieli, użytkowników końcowych i innych członków działu INFORMATYCZNego, aby w pełni zrozumieć, co dzieje się w środowisku, i zrozumieć, jakie czynniki nie mogą powiedzieć.
 
 ## <a name="step-1-download-and-install-data-migration-assistant"></a>Krok 1. Pobieranie i Instalowanie Data Migration Assistant
 
@@ -260,7 +262,7 @@ Skonfiguruj nowy projekt usługi Azure Migrate w następujący sposób.
 
 1. W obszarze **Wybierz narzędzie migracji** wybierz pozycję **Pomiń na razie dodawanie narzędzia migracji** > **Dalej**.
 
-1. W oknie **Recenzja + Dodawanie narzędzi**przejrzyj ustawienia, a następnie wybierz pozycję **Dodaj narzędzia**.
+1. W obszarze **Przegląd i dodawanie narzędzi** przejrzyj ustawienia, a następnie wybierz pozycję **Dodaj narzędzia**.
 
 1. Zaczekaj kilka minut, aż projekt usługi Azure Migrate zostanie wdrożony. Nastąpi przekierowanie do strony projektu. Jeśli nie widzisz projektu, możesz uzyskać do niego dostęp z obszaru **Serwery** na pulpicie nawigacyjnym usługi Azure Migrate.
 

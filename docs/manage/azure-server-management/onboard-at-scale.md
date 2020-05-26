@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9347c0c9517327dfa01bc49e344dfcc8ed90e60d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 243bafcfc7033ff932fc8112255a8f6a4a1d2904
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219720"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815331"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -185,9 +185,9 @@ Po zakończeniu tworzenia wystąpienie zasobu obszaru roboczego wyświetli **opr
 
 ### <a name="azure-security-center"></a>Azure Security Center
 
-Zalecamy, aby dołączyć wszystkie serwery co najmniej do Azure Security Center warstwy *bezpłatna* . Ta opcja zapewnia podstawowy poziom oceny zabezpieczeń i zalecenia dotyczące działań związanych z zabezpieczeniami dla danego środowiska. W przypadku uaktualnienia do warstwy *standardowa* uzyskasz dodatkowe korzyści, które są szczegółowo omówione na [stronie cennika Security Center](https://docs.microsoft.com/azure/security-center/security-center-pricing).
+Zalecamy, aby dołączyć wszystkie serwery co najmniej do warstwy Bezpłatna Azure Security Center. Ta opcja zapewnia podstawowe oceny zabezpieczeń i zalecenia dotyczące działań związanych z zabezpieczeniami dla danego środowiska. Warstwa standardowa zapewnia dodatkowe korzyści. Aby uzyskać więcej informacji, zobacz [Cennik usługi Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-pricing).
 
-Aby włączyć Azure Security Center warstwy Bezpłatna, wykonaj następujące kroki:
+Aby włączyć warstwę bezpłatna Azure Security Center, wykonaj następujące kroki:
 
 1. Przejdź do strony portalu **Security Center** .
 2. W obszarze **zasady & zgodność**wybierz pozycję **zasady zabezpieczeń**.

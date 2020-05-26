@@ -7,18 +7,18 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 147bce258b57c7f0b7af343cc387bf9da008da4a
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: b200fb8dee07c016338beed9b9356d00e26a8abd
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752416"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814345"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>Wprowadzenie: zapewnianie spójnej wydajności w portfolio
 
 Jak zapewnić odpowiednią wydajność w portfelu obciążeń? Kroki opisane w tym przewodniku mogą pomóc w ustaleniu procesów w celu utrzymania tego poziomu wydajności.
 
-Wydajność zależy również od innych ról i funkcji. Ten artykuł mapuje te funkcje pomocnicze, które ułatwiają tworzenie wyrównania poszczególnych zespołów.
+Wydajność zależy również od innych ról i funkcji. Ten artykuł mapuje te funkcje pomocnicze, które ułatwiają tworzenie wyrównania wśród poszczególnych zespołów.
 
 Scentralizowane zarządzanie operacjami to najczęstsze podejście do spójnej wydajności w portfolio. Decyzje dotyczące praktyk operacyjnych określają linię bazową operacji i wszelkie całościowe ulepszenia.
 

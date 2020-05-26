@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 5fe16c365c3b51f275e337e39c39538816765645
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e60d7810e1ddf8cf63f3ded16ba990f08e4ac63f
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214756"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814702"
 ---
-<!-- docsTest:ignore windows -->
-
 # <a name="approaches-to-digital-estate-planning"></a>Podejścia do planowania majątku cyfrowego
 
 Planowanie elementów cyfrowych może potrwać kilka form, w zależności od potrzebnych wyników i rozmiaru istniejącej nieruchomości. Istnieją różne metody, które można wykonać. Ważne jest, aby ustawić oczekiwania dotyczące podejścia wczesnego do planowania cykli. Niejasne oczekiwania często prowadzą do opóźnień związanych z dodatkowymi ćwiczeniami zbierającymi spis. W tym artykule przedstawiono trzy podejścia do analizy.
@@ -25,7 +23,7 @@ Planowanie elementów cyfrowych może potrwać kilka form, w zależności od pot
 
 Podejście do oceny w górnej części ocenia aspekty zabezpieczeń. Zabezpieczenia obejmują kategoryzację danych (wysoki, średni lub niski wpływ na działalność), wymagania dotyczące zgodności, suwerenności i bezpieczeństwa. Takie podejście ocenia złożoność architektury wysokiego poziomu. Oceniane są takie aspekty, jak uwierzytelnianie, struktura danych, wymagania dotyczące opóźnień, zależności i stron życia aplikacji.
 
-Podejście do góry mierzy także wymagania operacyjne aplikacji, takie jak poziomy usług, integracja, okna obsługi, monitorowanie i wgląd w szczegółowe dane. Kiedy te aspekty zostały przeanalizowane i rozpatrzone, wynikowy wynik polega na tym, że migracja tej aplikacji do poszczególnych platform w chmurze: IaaS, PaaS i SaaS.
+Podejście do góry mierzy także wymagania operacyjne aplikacji, takie jak poziomy usług, integracja, okna obsługi, monitorowanie i wgląd w szczegółowe dane. Kiedy te aspekty zostały przeanalizowane i rozpatrzone, wynikowy wynik polega na tym, że migracja tej aplikacji na każdą platformę chmury: IaaS, PaaS i SaaS.
 
 Ponadto Ocena z góry ocenia korzyści finansowe aplikacji, takie jak efektywność operacyjna, całkowity koszt posiadania, zwrot z inwestycji i inne odpowiednie metryki finansowe. Ocena sprawdza także sezonowości aplikacji (na przykład czy istnieją czasy, w których są tworzone żądania?) i ogólne obciążenie obliczeniowe.
 

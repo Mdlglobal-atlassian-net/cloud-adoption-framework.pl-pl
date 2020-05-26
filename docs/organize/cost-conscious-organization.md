@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: dbf5f3364277ad3a245796e47523cb803a074d31
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0304d2a8f8794f7cc191f494179c3bbb9080d00d
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216422"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815467"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Tworzenie świadomej organizacji kosztów
 
@@ -35,7 +35,7 @@ Zapewnienie obnoszenia kosztów nie jest działaniem jednorazowym. Podobnie jak 
 
 - **Optymalizacja:** Optymalizacja to akcja, która tworzy obniżki kosztów. Podczas optymalizacji alokacje zasobów są modyfikowane w celu zmniejszenia kosztów obsługi różnych obciążeń. Ten proces wymaga iteracji i eksperymentowania. Każde zmniejszenie kosztów zmniejsza wydajność. Znalezienie odpowiedniej równowagi między kontrolą kosztów a oczekiwaniami użytkowników końcowych wymaga wprowadzenia danych przez wiele stron.
 
-W poniższych sekcjach opisano role, które _zespół strategii chmury_, _zespół ds_. rozwoju chmury, _zespół nadzoru chmurowego_i _centrum w chmurze doskonałości (CCoE)_ odgrywają w opracowaniu kosztownej organizacji.
+W poniższych sekcjach opisano role, które różne zespoły odgrywają w opracowaniu świadomego kosztu organizacji.
 
 ## <a name="cloud-strategy-team"></a>Zespół strategii chmury
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 43fa948aeaa575b440f483fa349d7c965e97a3c3
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9f77d4a13b83c6d22592f36c924c2dd11164e27b
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753456"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814362"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>Sieć zdefiniowana przez oprogramowanie: Hub i szprych
 

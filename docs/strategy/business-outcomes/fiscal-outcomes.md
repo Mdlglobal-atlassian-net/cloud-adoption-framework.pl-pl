@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: bea618638223cc35a429106aa0d59983a16ec511
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 374fe7d5aee3a2277f3bd8c6188f132756e538a1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401182"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815365"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Przykłady wyników fiskalnych
 
@@ -96,7 +96,7 @@ Jednak przed skojarzeniem każdej transformacji z tym typem kapitału a konwersj
 
 W przypadku pożądanego modelu wydatków operacyjnych Poniższy przykład może być opłacalnym wynikiem działalności:
 
-- **Przykład:** Centrum danych firmy jest obecnie amortyzowane o _x USD_ rocznie przez następne trzy lata. Oczekuje się, że do odświeżenia sprzętu w następnym roku jest wymagana dodatkowa wartość _y USD_ . Możemy przekonwertować wydatki inwestycyjne na model wydatków operacyjnych z parzystą stawką z _USD_ na miesiąc, co pozwala na lepsze zarządzanie kosztami korzystania z technologii i odpowiedzialność za nie.
+- **Przykład:** Centrum danych firmy jest obecnie amortyzowane o _$X USD_ za rok przez kolejne trzy lata. Oczekuje się, że będzie wymagane dodatkowe _$Y USD_ , aby odświeżyć sprzęt w następnym roku. Możemy przekonwertować wydatki inwestycyjne na model wydatków operacyjnych z parzystą stawką _$Z USD_ miesięcznie, co pozwala na lepsze zarządzanie i odpowiedzialność za koszty operacyjne technologii.
 
 ## <a name="next-steps"></a>Następne kroki
 

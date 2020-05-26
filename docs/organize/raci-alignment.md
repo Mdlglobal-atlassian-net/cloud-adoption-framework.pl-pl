@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: e5e6e495aed54648ec480c8def0ae9c784b6b800
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ed1bce61d2a5ba51459df60e94949e0cdd5e533d
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216915"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815450"
 ---
 <!-- cSpell:ignore ccoe -->
 
 # <a name="align-responsibilities-across-teams"></a>Wyrównaj odpowiedzialności między zespołami
 
-Dowiedz się, jak wyrównać zakres obowiązków dla zespołów, opracowując macierz międzyzespołową, która identyfikuje osoby odpowiedzialne, obsługujące, *konsultowane i poinformowane* (Raci). Ten artykuł zawiera przykładową matrycę RACI dla struktur organizacyjnych opisanych w temacie [ustanawianie struktur zespołu](./organization-structures.md):
+Dowiedz się, jak wyrównać zakres obowiązków dla zespołów, opracowując macierz międzyzespołową, która identyfikuje osoby odpowiedzialne, obsługujące, _konsultowane i poinformowane_ (Raci). Ten artykuł zawiera przykładową matrycę RACI dla struktur organizacyjnych opisanych w temacie [ustanawianie struktur zespołu](./organization-structures.md):
 
 - [Tylko zespół wdrażania chmury](#cloud-adoption-team-only)
 - [Najlepsze rozwiązanie MVP](#best-practice-minimum-viable-product-mvp)
@@ -62,7 +62,7 @@ Ostatni wiersz każdej tabeli (z wyjątkiem pierwszej) zawiera link do najbardzi
 | Zespół nadzorujący chmury    | Zapoznaj się z tematem                             | Nich                              | Nich                              | Nich                                  | Accountable                               | Zapoznaj się z tematem                     | Odpowiedzialność                   | Nich                      |
 | Centralne zasoby IT               | Zapoznaj się z tematem                             | Nich                              | Accountable                           | Accountable                               | Odpowiedzialność                               | Accountable                   | Accountable                   | Accountable                   |
 |                          |                                       |                                       |                                       |                                           |                                           |                               |                               |                               |
-| Wyrównana możliwość chmury | [Wdrażanie chmury](./cloud-adoption.md) | [Strategia chmury](./cloud-strategy.md) | [Strategia chmury](./cloud-strategy.md) | [Operacje w chmurze](./cloud-operations.md) | [Zarządzanie chmurą](./cloud-governance.md) | [Centralne zasoby IT](./central-it.md) | [Centralne zasoby IT](./central-it.md) | [Centralne zasoby IT](./central-it.md) |
+| Wyrównana możliwość chmury | [Wdrażanie chmury](./cloud-adoption.md) | [Strategia chmury](./cloud-strategy.md) | [Strategia chmury](./cloud-strategy.md) | [Operacje w chmurze](./cloud-operations.md) | [Ład w chmurze](./cloud-governance.md) | [Centralne zasoby IT](./central-it.md) | [Centralne zasoby IT](./central-it.md) | [Centralne zasoby IT](./central-it.md) |
 
 ## <a name="strategic-alignment"></a>Wyrównanie strategiczne
 

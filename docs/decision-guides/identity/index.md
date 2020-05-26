@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ed4c1c3cf7958f4e96db7eba71fe1f008bc81eb2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3c89c5347032d0dcec68344066ac00028fedb7bd
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222848"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753788"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -27,7 +27,7 @@ Idź do: [Określanie wymagań dotyczących integracji tożsamości](#determine-
 
 Dostępne są różne rozwiązania do zarządzania tożsamościami w środowisku chmury. Różnią się one kosztami i złożonością. Kluczowym czynnikiem w tworzeniu struktury opartych na chmurze usług zarządzania tożsamościami jest poziom integracji wymagany przez istniejącą infrastrukturę tożsamości w środowisku lokalnym.
 
-Usługa Azure Active Directory (Azure AD) zapewnia podstawowy poziom kontroli dostępu i zarządzania tożsamościami dla zasobów na platformie Azure. Jeśli jednak lokalna infrastruktura usługi Active Directory organizacji ma złożoną strukturę lasu lub niestandardowe jednostki organizacyjne, obciążenia oparte na chmurze mogą wymagać synchronizacji katalogu z usługą Azure AD dla zachowania spójności zestawu tożsamości, grup i ról między środowiskiem lokalnym i środowiskiem w chmurze. Ponadto obsługa aplikacji korzystających z mechanizmów uwierzytelniania w starszej wersji może wymagać wdrożenia usługi Active Directory Domain Services (AD DS) w chmurze.
+Usługa Azure Active Directory (Azure AD) zapewnia podstawowy poziom kontroli dostępu i zarządzania tożsamościami dla zasobów na platformie Azure. Jeśli lokalna infrastruktura usługi Active Directory organizacji ma złożoną strukturę lasu lub niestandardowe jednostki organizacyjne, obciążenia oparte na chmurze mogą wymagać synchronizacji katalogu z usługą Azure AD dla zachowania spójności zestawu tożsamości, grup i ról między środowiskiem lokalnym i środowiskiem w chmurze. Ponadto obsługa aplikacji korzystających z mechanizmów uwierzytelniania w starszej wersji może wymagać wdrożenia usługi Active Directory Domain Services (AD DS) w chmurze.
 
 Zarządzanie tożsamościami w chmurze jest procesem iteracyjnym. W przypadku początkowego wdrożenia można rozpocząć od rozwiązania natywnego dla chmury z małym zestawem użytkowników i odpowiednich ról. W miarę dojrzewania migracji konieczne może być zintegrowanie rozwiązania do obsługi tożsamości za pomocą synchronizacji katalogów lub dodanie usług domenowych w ramach wdrożeń w chmurze. Ponownie sprawdzaj swoją strategię dotyczącą obsługi tożsamości przy każdej iteracji procesu migracji.
 

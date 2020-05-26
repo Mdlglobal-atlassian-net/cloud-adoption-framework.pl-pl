@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 3b50d45457eb65b0a97a435dcd2d8e70fadc246d
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: f27ca49738a987780729b9354e9a4653d5ecafcd
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752051"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814243"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>Wprowadzenie: Tworzenie zespołu ładu w chmurze
 
@@ -27,7 +27,7 @@ Oficjalne wskazówki dotyczące struktury wdrażania w chmurze dla platformy Azu
 **Dostarczane**
 
 - Ustal, czy potrzebujesz zespołu nadzoru w chmurze.
-- Udokumentowanie decyzji i osób odpowiedzialnych w [Raci (odpowiedzialnych, do których można się skontaktować i poinformowanie o nich)](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) , wybierając kartę **wyrównanie organizacji** .
+- Udokumentowanie decyzji i osób odpowiedzialnych w Raci (odpowiedzialnych, związanych z tym, [które są konsultowane i informacje)](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) w `Org Alignment` arkuszu.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
@@ -70,12 +70,12 @@ Wdrażanie w chmurze zwykle znajduje się w fale lub wersjach. Regularna erze, k
 
 **Dostarczane**
 
-- Ustanów erze z każdym z zespołów pomocniczych. Jeśli to możliwe, Wyrównaj ten erze z cyklami wydań i planowania.
+- Ustanów erze z zespołami pomocniczymi. Jeśli to możliwe, Wyrównaj ten erze z cyklami wydań i planowania.
 - Ustanów osobne erze bezpośrednio z zespołem ds. strategii chmury (lub różnych członków zespołu), aby zapoznać się z ryzykiem, które są związane z następną analizą przyjęcia i ocenić poziom tolerancji dla tego ryzyka.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- Aby uzyskać dodatkowe wskazówki dotyczące cadences na potrzeby spotkań, zapoznaj się z sekcją "informacje o dostarczeniu" [funkcji zarządzania chmurą](../../organize/cloud-governance.md#deliverable).
+- Aby uzyskać więcej wskazówek dotyczących cadences na potrzeby spotkań, zobacz [funkcje ładu Cloud](../../organize/cloud-governance.md#deliverable).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -106,11 +106,11 @@ Zarządzanie to szeroki temat. Krótka ocena może pomóc zespołowi zrozumieć,
 
 **Dostarczane**
 
-- Ukończ ocenę testu porównawczego, który jest oparty na konwersacjach z różnymi uczestnikami projektu. Lub poproszenie innych zespołów o samodzielne przeprowadzenie oceny.
+- Ukończ ocenę testu porównawczego na podstawie konwersacji z różnymi uczestnikami projektu. Lub poproszenie innych zespołów o samodzielne przeprowadzenie oceny.
 
 **Wskazówki dotyczące uzupełniania elementów dostarczanych:**
 
-- Oceń potrzeby i priorytety związane z zarządzaniem za pomocą [testu porównawczego](../../govern/benchmark.md).
+- Użyj [testu porównawczego](../../govern/benchmark.md) , aby ocenić potrzeby i priorytety związane z zarządzaniem.
 
 **Zespół odpowiedzialny za:**
 

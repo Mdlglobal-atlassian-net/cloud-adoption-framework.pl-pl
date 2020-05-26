@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: cf65664ba6e80fc2df37ec1b3a923ee3c72ae895
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b634f09d11cccf6b1c75fc53441dde79106dadb5
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223239"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756383"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -51,7 +51,9 @@ Omawiane tematy:
 > [!TIP]
 > Aby zapoznać się z tym przewodnikiem w środowisku interaktywnym, skorzystaj z witryny Azure Portal. Przejdź do [Centrum Szybki start platformy Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) w witrynie Azure Portal, wybierz pozycję **Przewodnik konfiguracji platformy Azure**, a następnie postępuj zgodnie z instrukcjami krok po kroku.
 
-Następne kroki: [Organize your resources to simplify how you apply settings (Organizowanie zasobów w celu uproszczenia sposobu stosowania ustawień)](./organize-resources.md)
+**Następne kroki:**
+
+- [Organize your resources to simplify how you apply settings (Organizowanie zasobów w celu uproszczenia sposobu stosowania ustawień)](./organize-resources.md)
 
 ::: zone-end
 

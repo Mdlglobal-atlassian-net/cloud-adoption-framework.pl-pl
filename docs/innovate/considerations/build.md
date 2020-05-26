@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b6ccab2eb6f7f25ad83fa2d2a0592a557b7b79d0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 15bc194c124a8f278028f9cbcd508a18641d9a43
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224157"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815161"
 ---
 <!--docsTest:ignore "Oxford English Dictionary" -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "83224157"
 
 "Konieczność jest posługuje na wynalazku". Ta proverb przechwytuje indelibilitye ludzkie i nasz dysk naturalny do magazynu. Zgodnie z opisem w słowniku Oxford w języku angielskim, "gdy konieczna jest jego niezależność, należy wymusić, aby znaleźć sposoby ich uzyskania lub osiągnięcia". Kilka z nich będzie odrzucać te uniwersalne prawdy dotyczące wynalazków. Jednak zgodnie z opisem w [innowacyjności w sieci cyfrowej](./index.md)innowacje wymagają zrównoważenia _i_ _przyjęcia_.
 
-Kontynuując pracę, innowacje pochodzą z bardziej rozszerzonej rodziny. *Klient empatię jest dumnym elementem nadrzędnym innowacji.* Tworzenie rozwiązania umożliwiającego wprowadzanie innowacji wymaga &mdash; ważnego klienta, który zapewnia klientowi powracanie do rozwiązywania krytycznych wyzwań. Rozwiązania te są oparte na tym, czego potrzebują klienci, a nie na ich chęci lub whims. Aby znaleźć prawdziwe potrzeby klientów, Zacznijmy od empatię dogłębnej wiedzy na temat &mdash; środowiska klienta. Empatię to niezawodna umiejętność dla wielu inżynierów, menedżerów produktów i nawet liderów firmy. Na szczęście różnorodne interakcje i szybki tempo roli architekta w chmurze już zaczęły wspierać tę umiejętność.
+Kontynuując pracę, innowacje pochodzą z bardziej rozszerzonej rodziny. _Klient empatię jest dumnym elementem nadrzędnym innowacji._ Tworzenie rozwiązania umożliwiającego wprowadzanie innowacji wymaga &mdash; ważnego klienta, który zapewnia klientowi powracanie do rozwiązywania krytycznych wyzwań. Rozwiązania te są oparte na tym, czego potrzebują klienci, a nie na ich chęci lub whims. Aby znaleźć prawdziwe potrzeby klientów, Zacznijmy od empatię dogłębnej wiedzy na temat &mdash; środowiska klienta. Empatię to niezawodna umiejętność dla wielu inżynierów, menedżerów produktów i nawet liderów firmy. Na szczęście różnorodne interakcje i szybki tempo roli architekta w chmurze już zaczęły wspierać tę umiejętność.
 
 Dlaczego empatię tak ważne? Od pierwszego wydania minimalnego produktu (MVP) do ogólnej dostępności rozwiązania do oceny rynkowej klient empatię pomaga nam zrozumieć i udostępnić środowisko klienta. Empatię pomaga nam w tworzeniu lepszego rozwiązania. Co ważniejsze, lepiej rozmieszczenie rozwiązań do rozliczeń, które będą zachęcać do wdrożenia. W przypadku sieci cyfrowej te, które najbardziej empathizeą potrzebom klientów, mogą tworzyć jaśniejsze przyszłość, które ponownie definiują i prowadzą do rynku.
 
@@ -103,7 +103,7 @@ Gdy klient empatię jest silnie, wyraźnie istniejący problem powinien być ła
 
 Istnieje wiele wymagań prawnych, zgodności i branżowych, które mogą wymagać alternatywnego podejścia. Jeśli publiczne wydania opracowywania rozwiązania stwarzają ryzyko dla charakteru patentu, ochrony własności intelektualnej, przecieków danych klienta lub naruszenia wymagań zgodności, takie podejście może nie być odpowiednie. Gdy takie zagrożenia istnieją, zapoznaj się z przepisami prawnymi przed przyjęciem podejścia z przewodnikiem dotyczącego zarządzania zleceniami.
 
-## <a name="references"></a>Dokumentacja
+## <a name="references"></a>Odwołania
 
 <!-- cSpell:ignore Ries -->
 

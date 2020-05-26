@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 49bfe755f27305e644b28ece987e1ad09a52d39e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1da093324253a3a551b1bb8306a0727536ec46b5
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214991"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753776"
 ---
 # <a name="architectural-decision-guides"></a>Przewodniki podejmowania decyzji dotyczących architektury
 
 Przewodniki podejmowania decyzji dotyczących architektury w przewodniku Cloud Adoption Framework opisują wzorce i modele pomocne podczas tworzenia wskazówek dotyczących projektowania ładu w chmurze. Każdy przewodnik po decyzjach koncentruje się na jednym podstawowym składniku infrastruktury wdrożeń w chmurze i zawiera listę wzorców lub modeli przeznaczonych do obsługi określonych scenariuszy wdrażania w chmurze.
 
-Kiedy zaczniesz ustanawiać ład w chmurze dla swojej organizacji, praktyczne podróże po ładzie zapewnią Ci podstawowy harmonogram działania. Jednak te podróże przyjmują pewne założenia dotyczące wymagań i priorytetów, które mogą nie odzwierciedlać sytuacji w Twojej organizacji.
+Kiedy zaczniesz ustanawiać ład w chmurze dla swojej organizacji, praktyczne podróże po ładzie zapewnią Ci podstawowy harmonogram działania. Te podróże przyjmują pewne założenia dotyczące wymagań i priorytetów, które mogą nie odzwierciedlać sytuacji w Twojej organizacji.
 
 Te przewodniki po decyzjach uzupełniają przykładowe podróże po ładzie, dostarczając alternatywne wzorce i modele, które ułatwiają dostosowanie wyborów dotyczących projektu architektury dokonanych w przykładowym przewodniku po decyzjach do swoich własnych wymagań.
 

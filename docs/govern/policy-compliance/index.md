@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 63eeb2cbcaa278934ba107114057f911604883f2
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: d52ac870c7732732ec5ec92e93b5af6caaf8eacf
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399525"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755224"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Na powyższej ilustracji strategia utrzymywania ładu (ryzyko, zasady i zgodnoś
 
 W modelu przyrostowym utrzymania ładu w chmurze przyjmuje się założenie, że nie jest akceptowalne przekroczenie [tolerancji na ryzyko danej firmy](./risk-tolerance.md). Zamiast tego przyjmuje się, że rolą utrzymania ładu jest przyspieszenie wprowadzania zmian w firmie, pomoc inżynierom w zrozumieniu wytycznych dotyczących architektury i upewnienie się, że [czynniki ryzyka biznesowego](./business-risk.md) są regularnie monitorowane i korygowane. Z drugiej strony tradycyjna rola utrzymania ładu może stanowić dla inżynierów lub dla całej firmy barierę przed wdrażaniem.
 
-W przyrostowym modelu utrzymania ładu w chmurze występuje czasami naturalna różnica zdań między zespołami tworzącymi nowe rozwiązania biznesowe i zespołami zabezpieczającymi firmę przed czynnikami ryzyka. Jednak w tym modelu te dwa zespoły mogą stać się równorzędnymi partnerami pracującymi w przyrostach lub przebiegach. Jako równorzędni partnerzy, zespół ds. ładu w chmurze i zespoły ds. wdrożeń w chmurze rozpoczynają razem pracę, aby ujawnić i ocenić czynniki ryzyka oraz znaleźć sposób radzenia sobie z nimi. Skoncentrowanie się na wspólnym celu może zmniejszyć różnice zdań między zespołami i doprowadzić do współpracy między nimi.
+W przyrostowym modelu utrzymania ładu w chmurze występuje czasami naturalna różnica zdań między zespołami tworzącymi nowe rozwiązania biznesowe i zespołami zabezpieczającymi firmę przed czynnikami ryzyka. W tym modelu te dwa zespoły mogą stać się równorzędnymi partnerami pracującymi w przyrostach lub przebiegach. Jako równorzędni partnerzy, zespół ds. ładu w chmurze i zespoły ds. wdrożeń w chmurze rozpoczynają razem pracę, aby ujawnić i ocenić czynniki ryzyka oraz znaleźć sposób radzenia sobie z nimi. Skoncentrowanie się na wspólnym celu może zmniejszyć różnice zdań między zespołami i doprowadzić do współpracy między nimi.
 
 ## <a name="minimum-viable-product-mvp-for-policy"></a>Minimalna konieczna funkcjonalność (MVP) dla zasad
 

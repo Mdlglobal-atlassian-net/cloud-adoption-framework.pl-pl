@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 638f8dad1d7f284104765b28fe53561d98e02b56
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 2865f9a7ceb6d20828e76ad4da3a7ae5ebd81ba3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399816"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753489"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
@@ -48,7 +48,7 @@ Podejście do tagowania może być proste lub złożone, z naciskiem na różne 
 
 Zastosowanie przez dział IT podejścia skoncentrowanego na tagowaniu, takiego jak tagowanie oparte na obciążeniu, aplikacji, funkcji lub środowisku, znacznie zmniejsza złożoność procesu monitorowania zasobów i upraszcza podejmowanie decyzji dotyczących zarządzania na podstawie wymagań operacyjnych.
 
-Schematy tagowania, które są skoncentrowane na działalności biznesowej, takie jak księgowość, własność firmy lub stopień krytyczności dla działania firm, mogą wymagać zainwestowania dłuższego czasu podczas tworzenia standardów tagowania, które odzwierciedlają zainteresowania firmy, oraz obsługi tych standardów wraz z upływem czasu. Jednak wynikiem tego procesu jest system tagowania zapewniający ulepszoną możliwość uwzględniania kosztów i wartości zasobów IT w ramach ogólnej działalności firmy. To skojarzenie wartości biznesowej zasobu z jego kosztami operacyjnymi jest jednym z pierwszych kroków zmieniania sposobu postrzegania centrum kosztu infrastruktury IT w szerszej organizacji.
+Schematy tagowania, które są skoncentrowane na działalności biznesowej, takie jak księgowość, własność firmy lub stopień krytyczności dla działania firm, mogą wymagać zainwestowania dłuższego czasu podczas tworzenia standardów tagowania, które odzwierciedlają zainteresowania firmy, oraz obsługi tych standardów wraz z upływem czasu. Dzięki tej inwestycji powstaje system tagowania, który zapewnia lepszą księgowość kosztów i wartości zasobów IT dla całej firmy. To skojarzenie wartości biznesowej zasobu z jego kosztami operacyjnymi jest jednym z pierwszych kroków zmieniania sposobu postrzegania centrum kosztu infrastruktury IT w szerszej organizacji.
 
 ## <a name="baseline-naming-conventions"></a>Konwencje nazewnictwa punktów odniesienia
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 0e288b29077d68ee4b0c0522537abe0baaa276ac
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fd8c7e81d457ee3a63186217fda72223272ad3b7
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223698"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815263"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -106,7 +106,7 @@ Firma Contoso ocenia proponowany projekt, sporządzając listę zalet i wad.
 **Usługa** | **Opis** | **Koszty**
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Usługa Azure Database Migration Service umożliwia bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. | Dowiedz się więcej o [obsługiwanych regionach](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) i [cenniku usługi Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
-[Azure SQL Database wystąpienie zarządzane](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Wystąpienie zarządzane to usługa zarządzanej bazy danych, która reprezentuje w pełni zarządzane wystąpienie programu SQL Server w chmurze platformy Azure. Używa tego samego kodu co najnowsza wersja aparatu bazy danych programu SQL Server oraz ma najnowsze funkcje, ulepszenia wydajności i poprawki zabezpieczeń. | Korzystanie z wystąpienia zarządzanego usługi SQL Database uruchomionego na platformie Azure powoduje naliczanie opłat zależnych od pojemności. Dowiedz się więcej o [cenach wystąpienia zarządzanego](https://azure.microsoft.com/pricing/details/sql-database/managed).
+[Wystąpienie zarządzane usługi Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Wystąpienie zarządzane to usługa zarządzanej bazy danych, która reprezentuje w pełni zarządzane wystąpienie programu SQL Server w chmurze platformy Azure. Używa tego samego kodu co najnowsza wersja aparatu bazy danych programu SQL Server oraz ma najnowsze funkcje, ulepszenia wydajności i poprawki zabezpieczeń. | Korzystanie z wystąpienia zarządzanego usługi SQL Database uruchomionego na platformie Azure powoduje naliczanie opłat zależnych od pojemności. Dowiedz się więcej o [cenach wystąpienia zarządzanego](https://azure.microsoft.com/pricing/details/sql-database/managed).
 [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Tworzenie zaawansowanych aplikacji w chmurze za pomocą w pełni zarządzanej platformy | Koszt oparty na rozmiarze, lokalizacji i czasie użytkowania. [Dowiedz się więcej](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines) | Zapewnia potok ciągłej integracji i ciągłego wdrażania (CI/CD) na potrzeby tworzenia aplikacji. Potok rozpoczyna się od repozytorium Git na potrzeby zarządzania kodem aplikacji, systemu kompilacji na potrzeby produkcji pakietów i innych artefaktów kompilacji oraz systemu zarządzania wydaniami na potrzeby wdrażania zmian w środowiskach deweloperskich, testowych i produkcyjnych.
 
@@ -159,7 +159,7 @@ Administratorzy firmy Contoso konfigurują sieć wirtualną w następujący spos
     - **SQLMI-ds-EUS2** (10.235.0.0.25).
     - **SQLMI-SAW-EUS2** (10.235.0.128/29). Ta podsieć służy do dołączania katalogu do wystąpienia zarządzanego.
 
-      ![Wystąpienie zarządzane — tworzenie sieci wirtualnej](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
+      ![Wystąpienie zarządzane: tworzenie sieci wirtualnej](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
 
 4. Po wdrożeniu sieci wirtualnej i podsieci sieci są one łączone równorzędnie w następujący sposób:
 
@@ -415,7 +415,7 @@ Po migracji firma Contoso musi wykonać następujące kroki czyszczenia:
 
 - Usunięcie lokalnych maszyn wirtualnych ze spisu serwera vCenter.
 - Usunięcie maszyn wirtualnych z lokalnych zadań kopii zapasowej.
-- Zaktualizowanie dokumentacji wewnętrznej tak, aby wyświetlić nowe lokalizacje aplikacji SmartHotel360. Wyświetlanie bazy danych jako uruchomionej w bazie danych wystąpienia zarządzanego Azure SQL oraz frontonu działającego w dwóch aplikacjach sieci Web.
+- Zaktualizowanie dokumentacji wewnętrznej tak, aby wyświetlić nowe lokalizacje aplikacji SmartHotel360. Pokaż bazę danych jako działającą w wystąpieniu zarządzanym usługi Azure SQL i fronton jako uruchomiony w dwóch aplikacjach sieci Web.
 - Przegląd wszystkich zasobów korzystających ze zlikwidowanych maszyn wirtualnych i zaktualizowanie wszystkich ustawień lub dokumentów w celu uwzględnienia nowej konfiguracji.
 
 ## <a name="review-the-deployment"></a>Przegląd wdrożenia

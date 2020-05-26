@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 98c41d102ca54ebcb299989b907e2e6c6b237896
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 9b33b242611a576558c858080581650e67cd8382
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223477"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815433"
 ---
 # <a name="building-technical-skills"></a>Rozwijanie umiejętności technicznych
 
@@ -26,7 +26,7 @@ W zależności od motywacji i rezultatów działalności, które są związane z
 - [Wyrównaj organizację](../get-started/org-alignment.md): odkryj podejścia do ustanowienia właściwych struktur organizacyjnych.
 - [Ćwiczenia dotyczące wyrównania organizacji](./index.md): Zapoznaj się z omówieniem wyrównania i struktur zespołu, aby pomóc w spełnieniu określonych celów.
 - [Nawiązywanie zespołów](../get-started/help.md#establish-teams): informacje dotyczące ustanawiania zespołów w organizacji, które są odpowiedzialne za dostarczanie funkcjonalności chmury.
-- [Podziel się silosami i fiefdoms](./fiefdoms-silos.md): Poznaj dwa popularne *antywzorce* organizacyjne i sposoby, aby kierować zespoły do wydajnej współpracy.
+- [Podziel się silosami i fiefdoms](./fiefdoms-silos.md): Poznaj dwa popularne _antywzorce_ organizacyjne i sposoby, aby kierować zespoły do wydajnej współpracy.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Ścieżki szkoleniowe dotyczące gotowości środowiska (technicznej)
 
@@ -63,7 +63,7 @@ Zalecamy przekształcenie wiedzy platformy Azure w oficjalne uznanie przy użyci
 
 ### <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych obowiązków, które są związane z wdrażaniem chmury, nie przychodzi łatwo. Microsoft Learn oferuje nagradzaną metodę uczenia się, która ułatwia szybsze osiąganie celów. Zyskaj punkty, docieraj do nowych poziomów i Osiągaj więcej.
+Microsoft Learn to nowe podejście do uczenia się. Gotowość do nowych obowiązków, które są związane z wdrażaniem chmury, nie przychodzi łatwo. Microsoft Learn oferuje satysfakcjonującą metodę praktycznego uczenia się, która ułatwia szybsze osiąganie celów. Zyskaj punkty, docieraj do nowych poziomów i Osiągaj więcej.
 
 Poniżej przedstawiono kilka przykładów ścieżek szkoleniowych specyficznych dla ról na Microsoft Learn:
 
@@ -75,6 +75,6 @@ Poniżej przedstawiono kilka przykładów ścieżek szkoleniowych specyficznych 
 
 - [Deweloperzy](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure) mogą używać zasobów Microsoft Learn, aby pomóc w podejmowaniu działań w zakresie architektury, ładu i modernizacji.
 
-## <a name="learn-more"></a>Dowiedz się więcej
+## <a name="learn-more"></a>Więcej tutaj
 
 Aby uzyskać dodatkowe ścieżki szkoleniowe, przejrzyj [katalog Microsoft Learn](https://docs.microsoft.com/learn/browse). Użyj filtru role, aby wyrównać ścieżki szkoleniowe do roli.

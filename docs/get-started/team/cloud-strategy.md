@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: c39b7d42562b54b1bcd58aa192f9563f798ca88f
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 6d6832f5dee0cd8e450bccfbd5c01d133ff9700c
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755189"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815144"
 ---
 # <a name="get-started-build-a-cloud-strategy-team"></a>Wprowadzenie: Tworzenie zespołu strategii chmury
 
@@ -25,7 +25,7 @@ Niezależnie od wybranej metody, należy utworzyć zespół strategii chmurowej,
 ![Wprowadzenie do tworzenia zespołu strategii chmury](../../_images/get-started/strategy-team-map.png)
 
 > [!NOTE]
-> W tym artykule omówiono *ułatwienia dla strategii*, kluczowy gracz w procesie wdrażania w chmurze. Rola jest zwykle utrzymywana przez Menedżera programu, architekta lub konsultanta. W miarę jak zespół strategii chmurowych i rozpoczyna pracę, ułatwiający strategię jest tymczasowym kontem do tworzenia wyrównania i utrzymywania zespołu z celami biznesowymi. Uproszczenie strategii jest często osobą najbardziej odpowiedzialną za pomyślne przejście w chmurze.
+> W tym artykule omówiono _ułatwienia dla strategii_, kluczowy gracz w procesie wdrażania w chmurze. Rola jest zwykle utrzymywana przez Menedżera programu, architekta lub konsultanta. W miarę jak zespół strategii chmurowych i rozpoczyna pracę, ułatwiający strategię jest tymczasowym kontem do tworzenia wyrównania i utrzymywania zespołu z celami biznesowymi. Uproszczenie strategii jest często osobą najbardziej odpowiedzialną za pomyślne przejście w chmurze.
 
 ## <a name="step-1-determine-whether-a-cloud-strategy-team-is-needed"></a>Krok 1. ustalenie, czy zespół strategii chmury jest wymagany
 
@@ -73,7 +73,7 @@ Zespół strategii chmury służy jako cykliczny punkt wyrównania między lider
 - Aby poznać pomysły dotyczące osób, które mogą być dobrze dopasowane, zobacz [funkcje strategii chmury](../../organize/cloud-strategy.md).
 - Aby sprawdzić poprawność wyrównania i przepustowości z każdego potencjalnego uczestnika, przejrzyj [minimalny zakres](../../organize/cloud-strategy.md#minimum-scope) i [element dostarczany](../../organize/cloud-strategy.md#deliverable) dla tej funkcji.
 - Aby ustalić właściwy wykres RACI na podstawie aktualnych struktur zespołu, Przejrzyj różne [przykłady konfiguracji Raci](../../organize/raci-alignment.md#strategic-alignment)lub wybierz jedną z przykładowych kart w dolnej części szablonu Raci.
-- Udokumentować wyniki w [szablonie Raci](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) , wybierając kartę **wyrównanie organizacji** .
+- Udokumentowanie wyników w [szablonie Raci](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) w `Org Alignment` arkuszu.
 
 **Osoba odpowiedzialna lub zespół:**
 
@@ -83,7 +83,7 @@ Zespół strategii chmury służy jako cykliczny punkt wyrównania między lider
 
 Na wczesnym etapie wdrażania chmury zespół będzie wymagał częstych interakcji i iteracyjnych przeglądów strategii. Jak zostanie rozpoczęte przyjęcie, ta częstotliwość będzie się zmniejszać, przechodzą do fokusu na status i weryfikację lub korektę priorytetów zaległości.
 
-Kroki 4, 5 i 6 należy wykonać w ciągu czterech do sześciu tygodni. Pozostałe kroki zostaną wykonane podczas kolejnych spotkań. Spotkania o większej częstotliwości powinny być utrzymywane do momentu rozpoczęcia kroku 7 przez zespół.
+Kroki 4, 5 i 6 należy wykonać w ciągu czterech do sześciu tygodni. Pozostałe kroki zostaną wykonane podczas kolejnych spotkań. Kilka częstych spotkań należy utrzymywać do momentu rozpoczęcia kroku 7.
 
 **Dostarczane**
 

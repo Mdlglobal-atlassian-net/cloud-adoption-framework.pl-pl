@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8859d2fa1228bb97ed9c0f6f0d2f05853c163969
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9a207590049021a6bb373ab13ff30c5c26431238
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752578"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814413"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>Wprowadzenie: dostarczanie operacyjnej doskonałości podczas transformacji cyfrowej
 
@@ -117,7 +117,7 @@ W poprzednich krokach przedstawiono podejście prowadzone przez firmę, które p
 
 ## <a name="next-steps-to-delivering-operational-excellence-across-the-portfolio"></a>Następne kroki umożliwiające dostarczenie doskonałości operacyjnej w portfelu
 
-Doskonałościa operacyjna wymaga dyscyplinowego podejścia do niezawodności, wydajności, zabezpieczeń i optymalizacji kosztów. Skorzystaj z pozostałych wskazówek w tej serii, aby upewnić się, że każda z tych zasad została wdrożona za pomocą spójnych metod automatyzacji.
+Doskonałościa operacyjna wymaga dyscyplinowego podejścia do niezawodności, wydajności, zabezpieczeń i optymalizacji kosztów. Skorzystaj z pozostałych wskazówek w tej serii, aby zaimplementować te zasady poprzez spójne podejścia do automatyzacji.
 
 - **Optymalizacja kosztów:** Ciągłe Optymalizowanie kosztów operacyjnych przy użyciu przewodnika Get-Started na [zarządzaniu kosztami przedsiębiorstwa](./manage-costs.md)
 - **Zabezpieczenia:** Zmniejszenie ryzyka przez integrację zabezpieczeń przedsiębiorstwa w portfolio przy użyciu przewodnika Get-Started na temat [implementowania zabezpieczeń w portfolio](./security.md).

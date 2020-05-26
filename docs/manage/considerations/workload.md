@@ -7,18 +7,20 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f25a475bea681f34fc395fbcbd0684bb07ee6923
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 1b3f21999cea35de59f30d882f9d8b104169952c
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756213"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815229"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Operacje na obciążeniach w zarządzaniu chmurą
 
 Niektóre obciążenia mają kluczowe znaczenie dla sukcesu firmy. W przypadku tych obciążeń linia bazowa zarządzania jest niewystarczająca, aby zaspokoić wymagane zobowiązania biznesowe do zarządzania chmurą. Operacje na platformie mogą jeszcze nie być wystarczające, aby zaspokoić zobowiązania biznesowe. Ten wysoce istotny podzbiór obciążeń wymaga wyspecjalizowanego skoncentrowania się na sposobie działania obciążeń i sposobu ich obsługi.
 
 W powrocie operacje związane z obciążeniem mogą prowadzić do zwiększenia wydajności, zmniejszenia ryzyka zakłócenia działania firmy oraz szybszego odzyskiwania w przypadku wystąpienia awarii systemu. W tym artykule omówiono podejście do inwestowania w ciągłe operacje tych obciążeń o wysokim priorytecie, aby zwiększyć zobowiązania biznesowe.
+
+<!-- docsTest:disable Pareto -->
 
 ## <a name="when-to-invest-in-workload-operations"></a>Kiedy inwestować w operacje obciążeń
 

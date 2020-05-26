@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 56cfb87e16b54e3b8b7dd72f482a085a2eee34ff
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 70108bcd65a19f60861b89aa364044598ea1aad6
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621272"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756094"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Omówienie dziedziny Spójność zasobów
 
@@ -22,13 +22,13 @@ Spójność zasobów jest jedną z [pięciu dziedzin utrzymania ładu w chmurze]
 > [!NOTE]
 > Dziedzina Spójność zasobów nie zastępuje istniejących zespołów IT, procesów i procedur, które umożliwiają organizacji skuteczne zarządzanie zasobami opartymi na chmurze. Najważniejszym zadaniem tej dziedziny jest identyfikowanie potencjalnych czynników ryzyka biznesowego i przekazywanie pracownikom działu IT odpowiedzialnym za zarządzanie zasobami w chmurze wskazówek mających na celu ograniczenie ryzyka. Podczas tworzenia zasad i procesów utrzymania ładu należy uwzględnić odpowiednie zespoły informatyczne w procesach planowania i przeglądania.
 
-W tej sekcji przewodnika Cloud Adoption Framework opisano sposób opracowywania dziedziny Spójność zasobów w ramach strategii utrzymania ładu w chmurze. Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Jednak decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie i dyskusje odpowiednich członków zespołów informatycznych odpowiedzialnych za implementowanie rozwiązań dotyczących spójności zasobów w organizacji i zarządzanie nimi.
+W tej sekcji przewodnika Cloud Adoption Framework opisano sposób opracowywania dziedziny Spójność zasobów w ramach strategii utrzymania ładu w chmurze. Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie i dyskusje odpowiednich członków zespołów informatycznych odpowiedzialnych za implementowanie rozwiązań dotyczących spójności zasobów w organizacji i zarządzanie nimi.
 
 Jeśli Twoja organizacja nie ma własnych specjalistów zajmujących się strategiami spójności zasobów, należy w ramach tej dziedziny rozważyć zatrudnienie zewnętrznych konsultantów. Ponadto należy wziąć pod uwagę skorzystanie z [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting) — usług wdrażania w chmurze będących częścią programu [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) — lub innych zewnętrznych ekspertów ds. wdrażania w chmurze, aby przedyskutować z nimi kwestie związane z jak najlepszym organizowaniem, śledzeniem i optymalizowaniem zasobów opartych na chmurze.
 
 ## <a name="policy-statements"></a>Instrukcje zasad
 
-Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wymagania dotyczące architektury stanowią podstawę dziedziny Spójność zasobów. Przykładowe instrukcje zasad można zobaczyć w artykule [Instrukcje zasad dziedziny Spójność zasobów](./policy-statements.md). Te przykłady mogą posłużyć jako punkt wyjścia dla zasad utrzymania ładu w organizacji.
+Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wymagania dotyczące architektury stanowią podstawę dziedziny Spójność zasobów. Użyj [przykładowych deklaracji zasad](./policy-statements.md). Te przykłady mogą stanowić punkt wyjścia do zdefiniowania zasad Spójności zasobów.
 
 > [!CAUTION]
 > Przykładowe zasady pochodzą z typowych doświadczeń klientów. W celu lepszego dostosowania tych zasad do określonych potrzeb w zakresie utrzymania ładu w chmurze wykonaj poniższe kroki, aby utworzyć instrukcje zasad spełniające unikatowe potrzeby firmy.

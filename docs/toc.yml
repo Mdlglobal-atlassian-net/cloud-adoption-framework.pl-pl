@@ -1225,9 +1225,9 @@ items:
             href: manage/centralize-operations.md
           - name: Ustanowienie przeglądu sprawności operacyjnej
             href: manage/operational-fitness-review.md
-          - name: Poprawianie odporności platformy lub obciążeń
+          - name: Poprawianie niezawodności platformy lub obciążenia
             items:
-              - name: Lista kontrolna dotycząca odporności usług platformy Azure
+              - name: Lista kontrolna dotycząca niezawodności usług platformy Azure
                 href: 'https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Analiza trybu błędu
                 href: 'https://docs.microsoft.com/azure/architecture/resiliency/failure-mode-analysis?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
@@ -1363,7 +1363,7 @@ items:
         items:
           - name: Centrum architektury platformy Azure — architektura rozwiązań
             href: 'https://docs.microsoft.com/azure/architecture'
-          - name: Przewodnik Azure Architecture Framework — architektura obciążeń
+          - name: Dobrze zaprojektowana struktura platformy Microsoft Azure dla architektury obciążeń
             href: 'https://docs.microsoft.com/azure/architecture/framework'
           - name: Dokumentacja dotycząca implementacji produktów
             href: 'https://docs.microsoft.com'

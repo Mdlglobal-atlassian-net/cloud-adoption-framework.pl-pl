@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dbd60db37d5eb14b877f45c00956fd1869e9a0ba
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d1a268ca7900d26dc6b47e9bb14bdf813e0023ba
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620540"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755009"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Omówienie dziedziny Przyspieszanie wdrażania
 
@@ -24,11 +24,11 @@ W tym artykule opisano proces przyspieszania wdrażania występujący w firmie n
 > [!NOTE]
 > Dziedzina Przyspieszanie wdrażania nie zastępuje istniejących zespołów IT, procesów i procedur, które umożliwiają organizacji skuteczne wdrażanie i konfigurowanie zasobów opartych na chmurze. Najważniejszym zadaniem tej dziedziny jest identyfikowanie potencjalnych czynników ryzyka biznesowego i przekazywanie pracownikom działu IT odpowiedzialnym za zarządzanie zasobami w chmurze wskazówek mających na celu ograniczenie ryzyka. Podczas tworzenia zasad i procesów utrzymania ładu należy uwzględnić odpowiednie zespoły informatyczne w procesach planowania i przeglądania.
 
-Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Jednak decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie odpowiednich członków zespołów biznesowych i informatycznych oraz dyskusje z nimi. W szczególności dotyczy to liderów odpowiedzialnych za wdrażanie i konfigurowanie obciążeń opartych na chmurze.
+Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie odpowiednich członków zespołów biznesowych i informatycznych oraz dyskusje z nimi. W szczególności dotyczy to liderów odpowiedzialnych za wdrażanie i konfigurowanie obciążeń opartych na chmurze.
 
 ## <a name="policy-statements"></a>Instrukcje zasad
 
-Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wymagania dotyczące architektury stanowią podstawę dziedziny Przyspieszanie wdrażania. Aby wyświetlić przykładowe instrukcje zasad, zobacz artykuł [Instrukcje zasad dziedziny Przyspieszanie wdrażania](./policy-statements.md). Te przykłady mogą posłużyć jako punkt wyjścia dla zasad utrzymania ładu w organizacji.
+Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wymagania dotyczące architektury stanowią podstawę dziedziny Przyspieszanie wdrażania. Użyj [przykładowych deklaracji zasad](./policy-statements.md) jako punktu wyjścia do zdefiniowania własnych zasad Przyspieszania wdrażania.
 
 > [!CAUTION]
 > Przykładowe zasady pochodzą z typowych doświadczeń klientów. W celu lepszego dostosowania tych zasad do określonych potrzeb w zakresie utrzymania ładu w chmurze wykonaj poniższe kroki, aby utworzyć instrukcje zasad spełniające unikatowe potrzeby firmy.

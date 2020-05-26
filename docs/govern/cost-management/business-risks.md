@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e52e38803f37d8dec279eb9af5b422500b338b21
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 048c41f56247ff7f8878d3fdd05506ed46224768
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755110"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815093"
 ---
 <!-- cSpell:ignore prepurchases -->
 
@@ -23,7 +23,7 @@ W tym artykule omówiono przyczyny, w których klienci zazwyczaj przyjmują Cost
 
 ## <a name="relevance"></a>Trafność
 
-W odniesieniu do ładu kosztów, wdrażanie w chmurze powoduje utworzenie zmiany modelu. Zarządzanie kosztami w tradycyjnym lokalnym świecie odbywa się na podstawie cykli odświeżania, pozyskiwania centrów danych, odnawiania hostów i cyklicznych problemów z konserwacją. Możesz prognozować, planować i udoskonalać każdy z tych kosztów, aby dostosować je do budżetów rocznych wydatków inwestycyjnych.
+W odniesieniu do ładu kosztów, wdrażanie w chmurze powoduje utworzenie zmiany modelu. Zarządzanie kosztami w tradycyjnym lokalnym świecie odbywa się na podstawie cykli odświeżania, pozyskiwania centrów danych, odnawiania hostów i cyklicznych problemów z konserwacją. Możesz prognozować, planować i udoskonalać te koszty, aby dostosować je do budżetów rocznych wydatków inwestycyjnych.
 
 W przypadku rozwiązań w chmurze wiele firm będzie miało coraz bardziej aktywne podejście do zarządzania kosztami. W wielu przypadkach firmy będą kupować lub zatwierdzić korzystanie z zestawu usług Cloud Services. W tym modelu przyjęto założenie, że maksymalizacja rabatów w zależności od tego, jak dużo planów firmy na wydatki z konkretnym dostawcą chmury, powoduje utworzenie postrzegania aktywnego, planowanego cyklu kosztów. To postrzeganie będzie miało rzeczywistość tylko wtedy, gdy firma również realizuje dyscypliny zarządzania dla dorosłych kosztów.
 

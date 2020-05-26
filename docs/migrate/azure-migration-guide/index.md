@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4ef888e26089a2262fadeb93ec33ed063bcbf753
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 10525a8bf3c49646d99e5e99de6372c0c1d570ee
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80636507"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815297"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Przewodnik po migracji na platformę Azure: Przed rozpoczęciem
 
@@ -25,7 +25,7 @@ W tym przewodniku przedstawiono uproszczoną wersję tego procesu na potrzeby mi
 ::: zone target="docs"
 
 > [!TIP]
-> Aby zapoznać się z tym przewodnikiem w środowisku interaktywnym, skorzystaj z witryny Azure Portal. Przejdź do [centrum przewodników Szybki start platformy Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) w witrynie Azure Portal, wybierz pozycję **Migrowanie swojego środowiska na platformę Azure**, a następnie postępuj zgodnie z instrukcjami krok po kroku.
+> Aby zapoznać się z tym przewodnikiem w środowisku interaktywnym, skorzystaj z witryny Azure Portal. Przejdź do [centrum przewodników Szybki start platformy Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) w witrynie Azure Portal, wybierz pozycję **Przewodnik po migracji na platformie Azure**, a następnie wykonaj instrukcje krok po kroku.
 
 ::: zone-end
 

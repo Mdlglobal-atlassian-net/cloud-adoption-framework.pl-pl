@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1b4859d3adbfdedc1ff8d5322398e350ba9d72de
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 0445ba3048a7b16b792cd144c29d1643aefe0d09
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400832"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815314"
 ---
 # <a name="azure-regions"></a>Regiony świadczenia usługi Azure
 
@@ -25,7 +25,7 @@ Platforma Azure składa się z wielu regionów na całym świecie. Każdy [regio
 1. **Suwerenność:** Niektóre regiony są przeznaczone dla konkretnych suwerennych jednostek. Wszystkie regiony są regionami platformy Azure, ale te niezależne regiony są całkowicie odizolowane od reszty platformy Azure, nie muszą być zarządzane przez firmę Microsoft i mogą być ograniczone do określonych typów klientów. Te niezależne regiony są następujące:
     1. [Chiny platformy Azure](https://azure.microsoft.com/global-infrastructure/china)
     1. [Azure (Niemcy](https://azure.microsoft.com/global-infrastructure/germany)): przestarzałe na rzecz standardowych regionów świadczenia usługi Azure w Niemczech
-    1. [Platforma Azure dla instytucji rządowych](https://azure.microsoft.com/global-infrastructure/government)
+    1. [Wersja platformy Azure dla administracji USA](https://azure.microsoft.com/global-infrastructure/government)
     1. Uwaga: w [Australii](https://azure.microsoft.com/global-infrastructure/australia) firma Microsoft zarządza dwoma regionami, ale są one udostępniane dla instytucji rządowych Australii oraz jej klientów i wykonawców, w związku z czym obowiązują w nich podobne ograniczenia klienta co w przypadku innych chmur suwerennych.
 
 ## <a name="operate-in-multiple-geographic-regions"></a>Działanie w wielu regionach geograficznych
@@ -47,7 +47,7 @@ Każde niezawodne wdrożenie w chmurze wymaga dobrze przemyślanej sieci, która
 
   - Usługa Azure Storage obsługuje [Magazyn Geograficznie nadmiarowy (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs) , co oznacza, że trzy kopie danych są przechowywane w regionie podstawowym, a trzy dodatkowe kopie są przechowywane w sparowanym regionie. Nie można zmienić parowania w przypadku magazynu geograficznie nadmiarowego.
   - Usługi oparte na magazynie geograficznie nadmiarowym usługi Azure Storage mogą korzystać z tej możliwości sparowanego regionu. W tym celu aplikacje i sieci muszą być ukierunkowane na obsługę tej możliwości.
-  - Jeśli nie planujesz korzystać z magazynu geograficznie nadmiarowego w celu spełnienia regionalnych wymagań dotyczących odporności, zaleca się, aby _NIE_ korzystać ze sparowanego regionu jako regionu pomocniczego. W przypadku awarii regionalnej nastąpi intensywne wykorzystanie zasobów w sparowanym regionie w miarę migrowania zasobów. Uniknięcie takiego obciążenia może przyspieszyć proces odzyskiwania przez odzyskiwanie do lokacji alternatywnej.
+  - Jeśli nie planujesz używać GRS do obsługi regionalnej potrzeby odporności, nie należy używać sparowanego regionu jako pomocniczego. W przypadku awarii regionalnej nastąpi intensywne wykorzystanie zasobów w sparowanym regionie w miarę migrowania zasobów. Uniknięcie takiego obciążenia może przyspieszyć proces odzyskiwania przez odzyskiwanie do lokacji alternatywnej.
   > [!WARNING]
   > Nie należy próbować używać magazynu geograficznie nadmiarowego platformy Azure do tworzenia kopii zapasowych maszyn wirtualnych ani ich odzyskiwania. Zamiast tego można zastosować usługi [Azure Backup](https://azure.microsoft.com/services/backup) i [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) wraz z [dyskami zarządzanymi platformy Azure](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) do obsługi odporności obciążeń IaaS.
 
@@ -81,10 +81,10 @@ Poniższa tabela może pomóc w dokumentowaniu wyników opisanych powyżej czynn
 
 | Region        | Kraj     | Pracownicy lokalni | Lokalni użytkownicy zewnętrzni   | Centra danych lub zasoby lokalne | Wymagania dotyczące niezależności danych |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
-| Ameryka Północna | Stany Zjednoczone         | Yes             | Partnerzy i klienci | Yes                         | Nie                            |
-| Ameryka Północna | Kanada      | Nie              | Klienci              | Tak                         | Yes                           |
-| Europa        | Niemcy     | Yes             | Partnerzy i klienci | Nie — tylko sieć           | Yes                           |
-| Azja i Pacyfik  | Korea Południowa | Yes             | Partnerzy               | Yes                         | Nie                            |
+| Ameryka Północna | Stany Zjednoczone         | Tak             | Partnerzy i klienci | Yes                         | Nie                            |
+| Ameryka Północna | Kanada      | Nie              | Klienci              | Tak                         | Tak                           |
+| Europa        | Niemcy     | Tak             | Partnerzy i klienci | Nie — tylko sieć           | Tak                           |
+| Azja i Pacyfik  | Korea Południowa | Tak             | Partnerzy               | Tak                         | Nie                            |
 
 <!-- markdownlint-disable MD026 -->
 

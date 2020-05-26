@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 27714dd779a9d0c3624cdce6355a478dbd9168f4
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 6939a369a93eed253d62b69130a4da2fbf7f8a6d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620562"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756230"
 ---
 # <a name="security-baseline-discipline-overview"></a>Omówienie dziedziny Punkt odniesienia zabezpieczeń
 
@@ -22,13 +22,13 @@ Punkt odniesienia zabezpieczeń jest jedną z [pięciu dziedzin utrzymania ładu
 > [!NOTE]
 > Dyscyplina Punkt odniesienia zabezpieczeń nie zastąpi istniejących zespołów, procesów i procedur IT, które umożliwiają w organizacji zabezpieczanie zasobów wdrożonych w organizacji. Najważniejszym zadaniem tej dziedziny jest identyfikowanie związanych z bezpieczeństwem czynników ryzyka biznesowego i przekazywanie pracownikom działu IT odpowiedzialnym za infrastrukturę zabezpieczeń wskazówek mających na celu ograniczenie ryzyka. Podczas tworzenia zasad i procesów utrzymania ładu należy uwzględnić odpowiednie zespoły informatyczne w procesach planowania i przeglądania.
 
-W tym artykule opisano metodę tworzenia dziedziny Punkt odniesienia zabezpieczeń w ramach strategii utrzymania ładu w chmurze. Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Jednak decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie odpowiednich członków zespołów IT i zespołów ds. zabezpieczeń oraz dyskusje z nimi. W szczególności dotyczy to liderów technicznych odpowiedzialnych za implementowanie usług obsługi sieci, szyfrowania i tożsamości.
+W tym artykule opisano metodę tworzenia dziedziny Punkt odniesienia zabezpieczeń w ramach strategii utrzymania ładu w chmurze. Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie odpowiednich członków zespołów IT i zespołów ds. zabezpieczeń oraz dyskusje z nimi. W szczególności dotyczy to liderów technicznych odpowiedzialnych za implementowanie usług obsługi sieci, szyfrowania i tożsamości.
 
 Podejmowanie właściwych decyzji dotyczących zabezpieczeń ma kluczowe znaczenie, jeśli chcesz osiągnąć sukces podczas wdrożeń w chmurze i szerzej pojmowany sukces biznesowy. Jeśli Twoja organizacja nie ma własnych specjalistów zajmujących się cyberbezpieczeństwem, należy w ramach tej dziedziny rozważyć zatrudnienie zewnętrznych konsultantów ds. bezpieczeństwa. Ponadto należy wziąć pod uwagę skorzystanie z [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting) — usług wdrażania w chmurze będących częścią programu [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) — lub innych zewnętrznych ekspertów ds. wdrażania w chmurze, aby przedyskutować z nimi kwestie związane z tą dziedziną.
 
 ## <a name="policy-statements"></a>Instrukcje zasad
 
-Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wymagania dotyczące architektury stanowią podstawę dziedziny Punkt odniesienia zabezpieczeń. Przykładowe instrukcje zasad można zobaczyć w artykule [Instrukcje zasad dziedziny Punkt odniesienia zabezpieczeń](./policy-statements.md). Te przykłady mogą posłużyć jako punkt wyjścia dla zasad utrzymania ładu w organizacji.
+Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wymagania dotyczące architektury stanowią podstawę dziedziny Punkt odniesienia zabezpieczeń. Użyj [przykładowych deklaracji zasad](./policy-statements.md) jako punktu wyjścia do zdefiniowania własnych zasad Punktu odniesienia zabezpieczeń.
 
 > [!CAUTION]
 > Przykładowe zasady pochodzą z typowych doświadczeń klientów. W celu lepszego dostosowania tych zasad do określonych potrzeb w zakresie utrzymania ładu w chmurze wykonaj poniższe kroki, aby utworzyć instrukcje zasad spełniające unikatowe potrzeby firmy.

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: f130bbfd306b85620064e50df7c74af804725f62
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a77190bd55e9c5dd0656bc62b8ac10c34b1d13ce
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223630"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815195"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -72,7 +72,7 @@ W tym scenariuszu firma Contoso chce zmigrować swoją dwuwarstwową lokalną ap
 
 ### <a name="database-considerations"></a>Zagadnienia dotyczące bazy danych
 
-W ramach procesu projektowania rozwiązania firma Contoso wykonała porównanie funkcji usługi Azure SQL Database i wystąpienia zarządzanego programu SQL Server. Następujące zagadnienia pomogły w podjęciu decyzji o wybraniu wystąpienia zarządzanego.
+W ramach procesu projektowania rozwiązania firma Contoso wykonała porównanie funkcji usługi Azure SQL Database i wystąpienia zarządzanego programu SQL Server. Następujące zagadnienia pomogły w podjęciu decyzji o użyciu wystąpienia zarządzanego.
 
 - Wystąpienie zarządzane ma na celu zapewnienie niemal 100% zgodności z najnowszą wersją lokalnego programu SQL Server. Firma Microsoft zaleca wystąpienia zarządzane dla klientów, którzy działają SQL Server lokalnie lub na maszynach wirtualnych IaaS i chcą migrować swoje aplikacje do w pełni zarządzanej usługi przy minimalnych zmianach projektu.
 - Firma Contoso planuje migrację dużej liczby aplikacji z lokalizacji lokalnej do modelu IaaS. Wiele z nich jest udostępnianych przez niezależnych dostawców oprogramowania. Firma Contoso zdaje sobie sprawę z używania wystąpienia zarządzanego, która zapewni zgodność bazy danych dla tych aplikacji, a nie za pomocą SQL Database, które mogą nie być obsługiwane.
@@ -110,7 +110,7 @@ Firma Contoso przeprowadzi migrację warstw internetowych i danych aplikacji Sma
 | Usługa | Opis | Koszty |
 | --- | --- | --- |
 | [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Usługa Azure Database Migration Service umożliwia bezproblemową migrację z wielu źródeł baz danych do platform danych platformy Azure przy minimalnych przestojach. | Informacje o [obsługiwanych regionach](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) i | [Cennik Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
-| [Azure SQL Database wystąpienie zarządzane](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Wystąpienie zarządzane to usługa zarządzanej bazy danych, która reprezentuje w pełni zarządzane wystąpienie programu SQL Server w chmurze platformy Azure. Używa tego samego kodu co najnowsza wersja aparatu bazy danych programu SQL Server oraz ma najnowsze funkcje, ulepszenia wydajności i poprawki zabezpieczeń. | Korzystanie z wystąpienia zarządzanego usługi SQL Database uruchomionego na platformie Azure powoduje naliczanie opłat zależnych od pojemności. Dowiedz się więcej o [cenach wystąpienia zarządzanego](https://azure.microsoft.com/pricing/details/sql-database/managed). |
+| [Wystąpienie zarządzane usługi Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Wystąpienie zarządzane to usługa zarządzanej bazy danych, która reprezentuje w pełni zarządzane wystąpienie programu SQL Server w chmurze platformy Azure. Używa tego samego kodu co najnowsza wersja aparatu bazy danych programu SQL Server oraz ma najnowsze funkcje, ulepszenia wydajności i poprawki zabezpieczeń. | Korzystanie z wystąpienia zarządzanego usługi SQL Database uruchomionego na platformie Azure powoduje naliczanie opłat zależnych od pojemności. Dowiedz się więcej o [cenach wystąpienia zarządzanego](https://azure.microsoft.com/pricing/details/sql-database/managed). |
 | [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Firma Contoso używa usługi Azure Migrate do | Oceń swoje maszyny wirtualne VMware. Azure Migrate ocenia przydatność migracji | maszyn. Zapewnia to ustalanie rozmiarów i kosztów w przypadku uruchamiania w programie | Azure. | Od maja 2018 r. Azure Migrate jest usługą bezpłatną. |
 
 ## <a name="prerequisites"></a>Wymagania wstępne

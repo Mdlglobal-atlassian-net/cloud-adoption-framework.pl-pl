@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3eb722a170f508f749795fbfc91dc2ce58a1edb9
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 01619281c3531c18afe3fc031b9f1fde1f7d4f0b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621207"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754000"
 ---
 # <a name="encryption-decision-guide"></a>Przewodnik po decyzjach związanych z szyfrowaniem
 
@@ -25,7 +25,7 @@ Strategia szyfrowania w chmurze skupia się na zasadach firmowych i potwierdzeni
 
 W przypadku wymagających obciążeń istotne może być znalezienie właściwej równowagi między szyfrowaniem a wydajnością oraz określenie, jak szyfrowane są dane i ruch. Mechanizmy szyfrowania mogą różnić się pod względem kosztów i złożoności, a na decyzje dotyczące sposobu stosowania szyfrowania oraz sposobu przechowywania i zarządzania wpisami tajnymi i kluczami mogą mieć wpływ zarówno wymagania techniczne, jak i zasady.
 
-Zasady firmowe i zgodność z innymi firmami to najważniejsze czynniki mające wpływ na planowanie strategii szyfrowania. Platforma Azure udostępnia wiele standardowych mechanizmów spełniających typowe wymagania dotyczące szyfrowania danych, zarówno magazynowanych, jak i przesyłanych. Jednak w przypadku zasad i wymagań dotyczących zgodności narzucających ściślejszą kontrolę, takich jak ustandaryzowane zarządzanie wpisami tajnymi i kluczami, używane szyfrowanie lub szyfrowanie specyficzne dla danych, należy opracować bardziej zaawansowaną strategię szyfrowania, aby sprostać tym wymaganiom.
+Zasady firmowe i zgodność z innymi firmami to najważniejsze czynniki mające wpływ na planowanie strategii szyfrowania. Platforma Azure udostępnia wiele standardowych mechanizmów spełniających typowe wymagania dotyczące szyfrowania danych, zarówno magazynowanych, jak i przesyłanych. W przypadku zasad i wymagań dotyczących zgodności narzucających ściślejszą kontrolę, takich jak ustandaryzowane zarządzanie wpisami tajnymi i kluczami, używane szyfrowanie lub szyfrowanie specyficzne dla danych, należy opracować bardziej zaawansowaną strategię szyfrowania, aby sprostać tym wymaganiom.
 
 ## <a name="key-management"></a>Zarządzanie kluczami
 

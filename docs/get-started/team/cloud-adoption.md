@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 6abe7a2f76b75aea70cff5d9ce0d5e870ec96cf6
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 33744f6911ec724c517a7fa93979a8adbdd370c1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752073"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814466"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>Wprowadzenie: Tworzenie zespołu wdrażania w chmurze
 
@@ -77,7 +77,7 @@ W zależności od typu zespołu adopcji, którego jesteś członkiem, rozpocznie
 - Wprowadzenie: Migrowanie obciążeń do chmury
 - Wprowadzenie: tworzenie nowych produktów lub usług
 
-W każdym z tych przewodników Get-Started znajdziesz wskazówki dotyczące różnych zespołów wymienionych obok ich różnego stopnia odpowiedzialności i odpowiedzialności. Skorzystaj z przewodników, aby zrozumieć, jak zespół mieści się w pozostałej części podróży. Należy również użyć ich do zrozumienia poziomów wsparcia, które można oczekiwać od firmy.
+Te przewodniki wprowadzające zawierają wskazówki dotyczące różnych zespołów wymienionych wraz z ich różnymi stopniami odpowiedzialności i odpowiedzialności. Skorzystaj z przewodników, aby zrozumieć, jak zespół mieści się w pozostałej części podróży. Należy również użyć ich do zrozumienia poziomów wsparcia, które można oczekiwać od firmy.
 
 Na koniec zespół wdrażania w chmurze jest odpowiedzialny za dostarczanie w ramach ich przypisanych działań związanych z migracją lub nowego produktu. Mimo że zespoły pomocnicze są odpowiedzialne za zapewnianie, że każdy krok zostanie ukończony, jest odpowiedzialny za każdy zespół rozwiązań w chmurze, aby upewnić się, że zespół pomocniczy otrzymuje pomoc techniczną. Jeśli zespół obsługujący konto jeszcze nie istnieje lub potrzebuje więcej pomocy technicznej w celu dostarczenia na kolejne kroki, zachęcamy do partnera z innymi zespołami, aby dokończyć swoje dostawy.
 

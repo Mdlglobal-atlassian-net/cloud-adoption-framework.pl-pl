@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6fceb9665712b4d787689ad2e3e709a5ac14d0d0
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 69c46eb18c3181ed1f4301847786ebb538ee46fe
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400742"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754862"
 ---
 # <a name="cloud-governance-guides"></a>Przewodniki dotyczące ładu w chmurze
 
@@ -43,7 +43,7 @@ Aby rozpocząć podróż po wdrażaniu chmury, wybierz jeden z następujących p
 
 W przewodnikach przedstawiono, w jaki sposób zaimplementować minimalną konieczną funkcjonalność ładu. Od tego miejsca w każdym przewodniku przedstawiane jest, w jaki sposób zespół ds. utrzymania ładu w chmurze może jako partner podejmować działania wyprzedzające zespoły wdrażania chmury w celu przyspieszania wysiłków związanych z wdrażaniem. Model ładu z przewodnika Cloud Adoption Framework umożliwia kierowanie stosowaniem ładu od jego utworzenia przez kolejne ulepszenia i ewolucje.
 
-Aby rozpocząć podróż nadzoru, wybierz jedną z dwóch poniższych opcji. Opcje są oparte na zsyntetyzowanych doświadczeniach użytkowników. Tytuły są utworzone na podstawie skomplikowania organizacji w celu ułatwienia nawigacji. Jednak decyzja użytkownika może być bardziej skomplikowana. Poniższe tabele przedstawiają różnice między tymi dwiema opcjami.
+Aby rozpocząć podróż nadzoru, wybierz jedną z dwóch poniższych opcji. Opcje są oparte na zsyntetyzowanych doświadczeniach użytkowników. Tytuły są utworzone na podstawie skomplikowania organizacji w celu ułatwienia nawigacji. Twoja decyzja może być bardziej złożona. Poniższe tabele przedstawiają różnice między tymi dwiema opcjami.
 
 <!-- TODO: Refactor VDC content below. -->
 <!-- docsTest:ignore "Azure Virtual Datacenter" -->
@@ -84,7 +84,7 @@ Aby rozpocząć podróż nadzoru, wybierz jedną z dwóch poniższych opcji. Opc
 
 Wirtualne centrum danych Azure to podejście oparte na maksymalnym wykorzystaniu możliwości platformy Azure w chmurze przy jednoczesnym respektowaniu zasad dotyczących zabezpieczeń i nadzoru w przedsiębiorstwie.
 
-W porównaniu do tradycyjnych środowisk lokalnych platforma Azure umożliwia zespołom opracowującym obciążenia i ich sponsorom biznesowym wykorzystywanie zwiększonej elastyczności wdrażania oferowanej na platformach w chmurze. Jednak wraz ze zwiększeniem wysiłków związanych z wdrażaniem chmury związanych z koniecznością uwzględnienia danych i obciążeń o kluczowym znaczeniu ta elastyczność może spowodować konflikt z firmowymi wymaganiami dotyczącymi zabezpieczeń i zgodności z zasadami ustanowionymi przez Twoje zespoły IT. Dzieje się tak szczególnie w przypadku dużych przedsiębiorstw, w których istnieją zaawansowane wymagania dotyczące nadzoru i zgodności z przepisami.
+W porównaniu do tradycyjnych środowisk lokalnych platforma Azure umożliwia zespołom opracowującym obciążenia i ich sponsorom biznesowym wykorzystywanie zwiększonej elastyczności wdrażania oferowanej na platformach w chmurze. Wraz ze zwiększeniem wysiłków związanych z wdrażaniem chmury związanych z koniecznością uwzględnienia danych i obciążeń o kluczowym znaczeniu ta elastyczność może spowodować konflikt z firmowymi wymaganiami dotyczącymi zabezpieczeń i zgodności z zasadami ustanowionymi przez Twoje zespoły IT. Dzieje się tak szczególnie w przypadku dużych przedsiębiorstw, w których istnieją zaawansowane wymagania dotyczące nadzoru i zgodności z przepisami.
 
 Podejście usługi Azure Virtual Datacenter ma na celu rozwiązanie tych problemów wcześniej podczas cyklu życia wdrażania, zapewniając modele, architektury referencyjne, przykładowe artefakty automatyzacji i wskazówki ułatwiające osiągnięcie równowagi między wymaganiami dewelopera i nadzoru IT podczas działań związanych z wdrażaniem chmury przedsiębiorstwa. Podstawą tego podejścia jest sama koncepcja wirtualnego centrum danych: implementacja granic izolacji wokół infrastruktury w chmurze poprzez zastosowanie kontroli dostępu i zabezpieczeń, zasad sieciowych i monitorowania zgodności.
 

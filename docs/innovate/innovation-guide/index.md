@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7af2b3865a78a72231efed3b3faea21f764d45ff
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1718a1f41ceaa167583681146dbd046dccfb7987
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224072"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756247"
 ---
 ::: zone target="docs"
 
@@ -49,7 +49,9 @@ Niniejszy przewodnik zawiera informacje na temat wykonywania następujących czy
 > [!TIP]
 > Aby zapoznać się z tym przewodnikiem w środowisku interaktywnym, skorzystaj z witryny Azure Portal. Przejdź do [centrum przewodników Szybki start platformy Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) w witrynie Azure Portal, wybierz pozycję **Przewodnik po innowacjach na platformie Azure**, a następnie postępuj zgodnie z instrukcjami krok po kroku.
 
-Następne kroki: [Przygotowanie do innowacji za pomocą udostępnionego repozytorium i narzędzi do zarządzania pomysłami](./adoption.md)
+**Następne kroki:**
+
+- [Przygotowanie do innowacji za pomocą udostępnionego repozytorium i narzędzi do zarządzania pomysłami](./adoption.md)
 
 ::: zone-end
 

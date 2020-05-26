@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: ffa6c7e64f92f920c0caf1a2c6ab81ade4bc7e81
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 5aa8386ae6808b87fa8e8febfbc8b51810e551dc
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754341"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815042"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -45,7 +45,7 @@ Podczas transformacji w chmurze firma i zespoły IT mają możliwość resetowan
 
 ## <a name="what-is-a-business-risk-mvp"></a>Co to jest SPECJALISTa z zakresu ryzyka biznesowego?
 
-**Minimalny, żywotny produkt** jest często używany do definiowania najmniejszej jednostki elementu, który może generować wartości materialne. W przypadku wystąpienia ryzyka biznesowego zespół ds. zarządzania chmurą rozpoczyna się od założenia, że niektóre zasoby zostaną wdrożone w środowisku chmury w pewnym momencie. Są w nim nieznane te zasoby, a zespół może nie mieć pewności, jakie typy danych będą przechowywane w tych zasobach.
+**Minimalny żywotny produkt (MVP)** jest często używany do definiowania najmniejszej jednostki elementu, który może generować wartość materialną. W przypadku wystąpienia ryzyka biznesowego zespół ds. zarządzania chmurą rozpoczyna się od założenia, że niektóre zasoby zostaną wdrożone w środowisku chmury w pewnym momencie. Są w nim nieznane te zasoby, a zespół może nie mieć pewności, jakie typy danych będą przechowywane w tych zasobach.
 
 Podczas planowania ryzyka biznesowego zespół ds. zarządzania chmurą może skompilować dla najgorszego scenariusza i zmapować każde możliwe zasady do chmury. Zidentyfikowanie wszystkich potencjalnych zagrożeń firmy dla wszystkich scenariuszy użycia w chmurze może zająć dużo czasu i wypróbować, co potencjalnie opóźni wdrożenie zarządzania dla obciążeń w chmurze. Nie jest to zalecane, ale jest opcją.
 

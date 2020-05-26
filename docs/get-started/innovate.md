@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 052c96277b25a01da22bc9ddb1aae9e7c75dd8db
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 68aff93493200e4878e31b961b3c97608c76c7c3
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752720"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814396"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Wprowadzenie: przyspiesz innowacje nowych produktów i usług w chmurze
 
@@ -36,7 +36,7 @@ Aby uniknąć powszechnych bloków, należy utworzyć jasno i zwięzłą strateg
 
 - [Motywacje](../strategy/motivations.md): pierwszy krok do strategicznego dostosowywania polega na uzyskaniu porozumienia w sprawie motywacji, które zwiększają nakłady na innowacje. Zacznij od ustalenia i kategoryzacji motywacji oraz wspólnych motywów z różnych uczestników firmy i.
 - [Wyniki biznesowe](../strategy/business-outcomes/index.md): po wyrównaniu motywacji możliwe jest przechwycenie żądanych wyników firmy. Te informacje zapewniają jasne metryki, których można użyć do mierzenia ogólnego przekształcenia.
-- [Balansowanie portfolio](../strategy/balance-the-portfolio.md): innowacje nie są właściwą ścieżką dla każdego obciążenia. Takie podejście do wdrożenia jest bardziej istotne w przypadku nowych niestandardowych aplikacji lub obciążeń, które *wymagają* ponownej architektury lub pełnego odbudowy. Gdy motywacje przeważnie preferują innowacje dla wszystkich obciążeń, ważne jest, aby oszacować portfolio w celu zapewnienia, że te inwestycje mogą generować pożądaną zwrot z inwestycji. Modernizacja określonych zasobów i niewielkiej skali, które mogą być innowacyjne, ale mogą być lepiej obsłużone przez następujące kroki [: przyspieszone Migrowanie](./migrate.md).
+- [Balansowanie portfolio](../strategy/balance-the-portfolio.md): innowacje nie są właściwą ścieżką dla każdego obciążenia. Takie podejście do wdrożenia jest bardziej istotne w przypadku nowych niestandardowych aplikacji lub obciążeń, które _wymagają_ ponownej architektury lub pełnego odbudowy. Gdy motywacje przeważnie preferują innowacje dla wszystkich obciążeń, ważne jest, aby oszacować portfolio w celu zapewnienia, że te inwestycje mogą generować pożądaną zwrot z inwestycji. Modernizacja określonych zasobów i niewielkiej skali, które mogą być innowacyjne, ale mogą być lepiej obsłużone przez następujące kroki [: przyspieszone Migrowanie](./migrate.md).
 
 <!-- markdownlint-disable MD033 -->
 <br>

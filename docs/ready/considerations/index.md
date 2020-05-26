@@ -3,16 +3,16 @@ title: Rozszerzanie strefy docelowej
 description: Skorzystaj z przewodnika Cloud Adoption Framework dla platformy Azure, aby dowiedzieć się, jak rozszerzyć strefę docelową.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3adb6067ec003b668316b5296f3105d1a09e01a4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0964da23da680755ea9d6c35fef0996e986780b4
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215215"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756570"
 ---
 # <a name="expand-your-landing-zone"></a>Rozszerzanie strefy docelowej
 
@@ -24,16 +24,16 @@ Rozszerzenie strefy docelowej zapewnia podejście „code first” w celu osadze
 
 ![Zasady architektury udostępnionej](../../_images/ready/shared-principles.png)
 
-Te same zasady architektury są współużytkowane przez usługę [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), usługę [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework) i rozwiązania w [Centrum architektury platformy Azure](https://docs.microsoft.com/azure/architecture).
+Te same zasady architektury są współużytkowane przez usługę [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), rozwiązanie [Dobrze zaprojektowana struktura platformy Microsoft Azure](https://docs.microsoft.com/azure/architecture/framework) i rozwiązania w [Centrum architektury platformy Azure](https://docs.microsoft.com/azure/architecture).
 
 ## <a name="applying-these-principles-to-your-landing-zone-improvements"></a>Stosowanie tych zasad do ulepszeń strefy docelowej
 
 W celu lepszego dopasowania do metodologii opisanych w podręczniku Cloud Adoption Framework, powyższe zasady pogrupowano w ulepszenia strefy docelowej umożliwiające podejmowanie akcji:
 
-- Podstawowe zagadnienia: Refaktoryzacja strefy docelowej w celu udoskonalenia hostingu, podstaw i innych podstawowych elementów.
-- Rozszerzenia operacji: Dodaj konfiguracje zarządzania operacjami, aby **poprawić wydajność, niezawodność i doskonałość operacyjną**.
-- Rozszerzenia ładu: Dodaj konfiguracje ładu, aby poprawić **koszt, niezawodność, bezpieczeństwo** i spójność.
-- Rozszerzenia zabezpieczeń: Dodaj konfiguracje **zabezpieczeń**, aby zwiększyć ochronę poufnych danych i krytycznych systemów.
+- Podstawowe zagadnienia: refaktoryzacja strefy docelowej w celu udoskonalenia hostingu, podstaw i innych podstawowych elementów.
+- Rozszerzenia operacji: dodaj konfiguracje zarządzania operacjami, aby **poprawić wydajność, niezawodność i doskonałość operacyjną**.
+- Rozszerzenia ładu: dodaj konfiguracje ładu, aby poprawić **koszt, niezawodność, bezpieczeństwo** i spójność.
+- Rozszerzenia zabezpieczeń: dodaj konfiguracje **zabezpieczeń**, aby zwiększyć ochronę poufnych danych i krytycznych systemów.
 
 > [!WARNING]
 > Zespoły ds. wdrożenia, które mają cel średniookresowy (w ciągu 24 miesięcy), aby **hostować ponad 1000 zasobów (aplikacji, infrastruktury lub zasobów danych) w chmurze**, powinny rozważyć każde z tych rozszerzeń na początku swojej drogi do wdrożenia w chmurze. W przypadku wszystkich innych wzorców wdrażania rozszerzenia strefy docelowej mogą być równoległą iteracją, co umożliwia wczesny sukces biznesowy.

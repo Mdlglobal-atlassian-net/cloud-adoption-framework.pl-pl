@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 6bac764d067e755039ef2089aa64da05c63a1f86
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 45fe536ab6ae8efd9a11adb6e7f8776a05f76566
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755407"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815518"
 ---
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
 
@@ -31,8 +31,8 @@ Wykrywanie zagrożeń i reagowanie na nie jest obecnie w znaczący sposób moder
 
 - **Podniesienie poziomu zarządzania ryzykiem biznesowym:** SOC zwiększa się w kluczowym składniku zarządzania ryzykiem biznesowym w organizacji
 - **Metryki i cele:** Śledzenie skuteczności SOC jest rozwijane od "czas wykrycia" do tych kluczowych wskaźników:
-  - Czas *odpowiedzi* za pośrednictwem średniego czasu na potwierdzenie (MTTA)
-  - *Szybkość korygowania* poprzez średni czas do skorygowania (MTTR)
+  - Czas _odpowiedzi_ za pośrednictwem średniego czasu na potwierdzenie (MTTA)
+  - _Szybkość korygowania_ poprzez średni czas do skorygowania (MTTR)
 - **Ewolucja technologii:** Technologia SOC jest rozwijana z wyłącznym użyciem statycznej analizy dzienników w SIEM, aby dodać korzystanie z wyspecjalizowanych narzędzi i zaawansowanych technik analizy. Zapewnia to szczegółowe informacje o zasobach, które zapewniają alerty o wysokiej jakości i środowisko dochodzeniowe, które uzupełniają widok szerokości SIEM. Oba typy narzędzi są coraz bardziej pomocne przy użyciu AI/Machine Learning (usługi AI/Machine Learning), analizy zachowań i zintegrowanej analizy zagrożeń (TI) w celu ułatwienia i określania priorytetów nietypowych działań, które mogą być złośliwymi osobami atakującymi.
 - **Łowiectwo zagrożeń:** SOC dodają łowiectwo-polowanie zagrożeń, aby aktywnie identyfikować zaawansowani osoby atakujące i przełączać zakłócenia w przypadku kolejek analityków teraźniejszości.
 - **Zarządzanie zdarzeniami:** Dyscypliny są formalne do koordynowania nietechnicznych elementów incydentów mających charakter prawny, komunikacji i innych zespołów.

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a89fe9d799e866468df02a9a0f6e7d973ed35dd
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 17d1e25c7e87252b51b83d283da5c328a622293f
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620462"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755063"
 ---
 # <a name="cost-management-discipline-overview"></a>Omówienie dziedziny Zarządzanie kosztami
 
@@ -22,11 +22,11 @@ Zarządzanie kosztami jest jedną z [pięciu dziedzin utrzymania ładu w chmurze
 > [!NOTE]
 > Dziedzina Zarządzanie kosztami nie zastępuje istniejących zespołów biznesowych, praktyk księgowych i procedur, które są zaangażowane w zarządzanie finansowe kosztami związanymi z infrastrukturą IT w organizacji. Najważniejszym zadaniem tej dziedziny jest identyfikowanie potencjalnych zagrożeń związanych z chmurą w odniesieniu do wydatków na infrastrukturę IT oraz przekazywanie wskazówek mających na celu ograniczenie ryzyka do zespołów biznesowych i informatycznych odpowiedzialnych za wdrażanie zasobów w chmurze i zarządzanie nimi.
 
-Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Jednak decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie odpowiednich członków zespołów biznesowych i informatycznych oraz dyskusje z nimi. W szczególności dotyczy to liderów odpowiedzialnych za posiadanie obciążeń opartych na chmurze, zarządzanie nimi i płacenie za nie.
+Głównymi odbiorcami tych wskazówek są architekci chmury w organizacji oraz inni członkowie zespołu ds. utrzymania ładu w chmurze. Decyzje, zasady i procesy wynikające z tej dziedziny powinny obejmować zaangażowanie odpowiednich członków zespołów biznesowych i informatycznych oraz dyskusje z nimi. W szczególności dotyczy to liderów odpowiedzialnych za posiadanie obciążeń opartych na chmurze, zarządzanie nimi i płacenie za nie.
 
 ## <a name="policy-statements"></a>Instrukcje zasad
 
-Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wymagania dotyczące architektury stanowią podstawę dziedziny Zarządzanie kosztami. Aby wyświetlić przykładowe instrukcje zasad, zobacz artykuł [Instrukcje zasad dziedziny Zarządzanie kosztami](./policy-statements.md). Te przykłady mogą posłużyć jako punkt wyjścia dla zasad utrzymania ładu w organizacji.
+Instrukcje zasad umożliwiające podejmowanie działań i wynikające z nich wymagania dotyczące architektury stanowią podstawę dziedziny Zarządzanie kosztami. Użyj [przykładowych deklaracji zasad](./policy-statements.md) jako punktu wyjścia do zdefiniowania własnych zasad Zarządzania kosztami.
 
 > [!CAUTION]
 > Przykładowe zasady pochodzą z typowych doświadczeń klientów. W celu lepszego dostosowania tych zasad do określonych potrzeb w zakresie utrzymania ładu w chmurze wykonaj poniższe kroki, aby utworzyć instrukcje zasad spełniające unikatowe potrzeby firmy.

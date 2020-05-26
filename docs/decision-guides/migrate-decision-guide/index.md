@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: bc24e13e9ae4a54e16d65696fbd8205dc643348f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2a081290dc26e9ec57817cd51a2058be4725c7f4
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224361"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753515"
 ---
 # <a name="migration-tools-decision-guide"></a>Przewodnik po decyzjach dotyczących narzędzi migracji
 
@@ -26,7 +26,7 @@ Decyzja o przeprowadzeniu migracji przy użyciu technologii platformy jako usłu
 
 Udzielenie odpowiedzi na poniższe pytania umożliwia podjęcie decyzji na podstawie powyższego drzewa.
 
-- **Czy inwestycja czasu, energii i zasobów budżetowych w modernizację platformy aplikacji podczas migracji byłaby opłacalna?** Technologie PaaS, takie jak usługi Azure App Service i Azure Functions, mogą zwiększyć elastyczność wdrażania i zmniejszyć złożoność zarządzania maszynami wirtualnymi do hostowania aplikacji. Jednak aplikacje mogą wymagać refaktoryzacji, zanim będą mogły skorzystać z tych natywnych dla chmury możliwości, co potencjalnie może znacząco wydłużyć czas migracji i zwiększyć związane z nią koszty. Jeśli można przeprowadzić migrację aplikacji do technologii PaaS przy minimalnych modyfikacjach, jest ona prawdopodobnie dobrym kandydatem do modernizacji. Jeśli wymagana by była rozległa refaktoryzacja, lepszym wyborem może okazać się migracja przy użyciu maszyn wirtualnych opartych na technologii IaaS.
+- **Czy inwestycja czasu, energii i zasobów budżetowych w modernizację platformy aplikacji podczas migracji byłaby opłacalna?** Technologie PaaS, takie jak usługi Azure App Service i Azure Functions, mogą zwiększyć elastyczność wdrażania i zmniejszyć złożoność zarządzania maszynami wirtualnymi do hostowania aplikacji. Aplikacje mogą wymagać refaktoryzacji, zanim będą mogły skorzystać z tych natywnych dla chmury możliwości, co potencjalnie może znacząco wydłużyć czas migracji i zwiększyć związane z nią koszty. Jeśli można przeprowadzić migrację aplikacji do technologii PaaS przy minimalnych modyfikacjach, jest ona prawdopodobnie dobrym kandydatem do modernizacji. Jeśli wymagana by była rozległa refaktoryzacja, lepszym wyborem może okazać się migracja przy użyciu maszyn wirtualnych opartych na technologii IaaS.
 - **Czy inwestycja czasu, energii i zasobów budżetowych w modernizację platformy danych podczas migracji byłaby opłacalna?** Podobnie jak w przypadku migracji aplikacji, opcje magazynu zarządzanego PaaS platformy Azure, takie jak usługi Azure SQL Database, Azure Cosmos DB i Azure Storage, oferują znaczące korzyści w zakresie zarządzania i elastyczności, ale migracja do tych usług może wymagać refaktoryzacji istniejących danych i aplikacji, które z nich korzystają. Platformy danych zwykle wymagają znacznie mniejszej refaktoryzacji niż platforma aplikacji. Z tego względu platforma danych często jest modernizowana, mimo że platforma aplikacji pozostaje taka sama. Jeśli można przeprowadzić migrację danych do usługi danych zarządzanych przy minimalnych zmianach, jest to dobry kandydat do modernizacji. W przypadku danych, których refaktoryzacja w celu skorzystania z tych usług PaaS wymagałaby rozległych inwestycji czasowych i budżetowych, lepiej przeprowadzić migrację przy użyciu maszyn wirtualnych opartych na technologii IaaS, aby uzyskać zgodność z istniejącymi możliwościami hostingu.
 - **Czy aplikacja obecnie działa na dedykowanych maszynach wirtualnych, czy współdzieli hosting z innymi aplikacjami?** Aplikację działającą na dedykowanych maszynach wirtualnych można łatwiej zmigrować do opcji hostingu PaaS, niż aplikację działającą na serwerach udostępnionych.
 - **Czy migracja danych przekroczy przepustowość sieci?** Pojemność sieci między lokalnymi źródłami danych i platformą Azure może być wąskim gardłem migracji danych. Jeśli danych, które chcesz przetransferować, dotyczą ograniczenia przepustowości uniemożliwiające wydajną i terminową migrację, warto przyjrzeć się alternatywnym mechanizmom transferu lub opcjom w trybie offline. [Artykuł na temat replikacji migracji](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) w przewodniku Cloud Adoption Framework opisuje, jak ograniczenia replikacji mogą wpłynąć na proces migracji. W ramach oceniania migracji skonsultuj się ze swoimi zespołami IT w celu zweryfikowania, czy przepustowość Waszej sieci lokalnej i sieci WAN jest w stanie obsłużyć wymagania dotyczące migracji. Zapoznaj się też ze [scenariuszem migracji w sytuacji, gdy wymagania dotyczące magazynu przekraczają pojemność sieci podczas migracji](../../migrate/azure-best-practices/network-capacity-exceeded.md#suggested-prerequisites).
