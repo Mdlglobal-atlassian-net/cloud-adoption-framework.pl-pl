@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c973dfbdf7cb4fede3520465b2192b7f821cec1d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1fa20d37c5cc7813220ff5862743f3179f4aefcd
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434146"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861518"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "80434146"
 
 Usługa Azure Change Tracking i spis zapewniają alerty dotyczące stanu konfiguracji środowiska hybrydowego i zmian w tym środowisku. Może zgłosić krytyczne zmiany plików, usług, oprogramowania i rejestru, które mogą mieć wpływ na wdrożone serwery.
 
-Domyślnie usługa spisu Azure Automation nie monitoruje plików ani ustawień rejestru. Rozwiązanie udostępnia listę kluczy rejestru, które zalecamy do monitorowania. Aby wyświetlić tę listę, przejdź do konta usługi Automation w Azure Portal, a następnie wybierz pozycję**Edytuj ustawienia** **spisu** > .
+Domyślnie usługa spisu Azure Automation nie monitoruje plików ani ustawień rejestru. Rozwiązanie udostępnia listę kluczy rejestru, które zalecamy do monitorowania. Aby wyświetlić tę listę, przejdź do konta usługi Automation w Azure Portal, a następnie wybierz **Inventory**pozycję  >  **Edytuj ustawienia**spisu.
 
 ![Zrzut ekranu przedstawiający Widok spisu Azure Automation w Azure Portal](./media/change-tracking1.png)
 
@@ -32,13 +32,13 @@ Aby włączyć śledzenie zawartości plików dla hostów, wykonaj kroki opisane
 
 Możesz również dodać alert dotyczący zmian w plikach, które są śledzone. Załóżmy na przykład, że chcesz ustawić alert dla zmian w pliku Hosts. Wybierz **log Analytics** na pasku poleceń lub przeszukaj dziennik dla połączonego obszaru roboczego log Analytics. W Log Analytics Użyj następującego zapytania, aby wyszukać zmiany w pliku hosts:
 
-```kusto
-ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
-```
+  ```kusto
+  ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
+  ```
 
 ![Zrzut ekranu edytora zapytań Log Analytics w Azure Portal](./media/change-tracking2.png)
 
-To zapytanie wyszukuje zmiany zawartości plików o ścieżce zawierającej wyraz "hosty". Możesz również wyszukać konkretny plik, zmieniając parametr path. (Na przykład `FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`.)
+To zapytanie wyszukuje zmiany zawartości plików o ścieżce zawierającej wyraz "hosty". Możesz również wyszukać konkretny plik, zmieniając parametr path. (Na przykład `FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"` .)
   
 Gdy zapytanie zwróci wyniki, wybierz pozycję **Nowa reguła alertu** , aby otworzyć Edytor reguł alertów. Możesz również przejść do tego edytora za pośrednictwem Azure Monitor w Azure Portal.
 
@@ -82,7 +82,7 @@ W przypadku środowisk, które wymagają zablokowania konfiguracji oprogramowani
 
 ### <a name="specific-software-version-is-or-isnt-installed-on-a-machine"></a>Określona wersja oprogramowania jest lub nie jest zainstalowana na komputerze
 
-Użyj następującego zapytania, aby ocenić zabezpieczenia. Ta kwerenda zawiera `ConfigurationData`odwołania do dzienników spisu i zawiera informacje o ostatnio zgłoszonym stanie konfiguracji, a nie zmianach.
+Użyj następującego zapytania, aby ocenić zabezpieczenia. Ta kwerenda zawiera odwołania do `ConfigurationData` dzienników spisu i zawiera informacje o ostatnio zgłoszonym stanie konfiguracji, a nie zmianach.
 
   ```kusto
   ConfigurationData | where SoftwareName contains "Monitoring Agent" and CurrentVersion != "8.0.11081.0"
@@ -98,7 +98,7 @@ Użyj następującego zapytania, aby wykryć zmiany w dobrze znanych kluczach re
 
 ## <a name="next-steps"></a>Następne kroki
 
-Dowiedz się, jak używać Azure Automation do [tworzenia harmonogramów aktualizacji](./update-schedules.md) w celu zarządzania aktualizacjami serwerów.
+Dowiedz się, jak Azure Automation mogą [tworzyć harmonogramy aktualizacji](./update-schedules.md) w celu zarządzania aktualizacjami serwerów.
 
 > [!div class="nextstepaction"]
 > [Tworzenie harmonogramów aktualizacji](./update-schedules.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: cb8fba789ef2f8d66d1f1a7a6480d37e662fc525
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c0b0bde877de2ae03decebe1b0237e1ba406e453
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222304"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861076"
 ---
 <!-- docsTest:ignore ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -192,7 +192,7 @@ Istnieją cztery szerokie strategie migracji, które firma Contoso może rozważ
 
 <!-- markdownlint-disable MD033 -->
 
-| **Strategia** | **Szczegóły** | **Wykorzystywani** |
+| **Strategia** | **Szczegóły** | **Użycie** |
 | --- | --- | --- |
 | Zmienianie hosta | <li> Jest to opcja bez kodu, która jest często określana jako przechodzenie _i_ przenoszenie do platformy Azure. <li> Aplikacje są jest migrowane bez zmian, co umożliwia wykorzystanie zalet chmury bez ryzyka i kosztów związanych z wprowadzaniem zmian w kodzie. | <li> Firma Contoso może ponownie hostować mniej strategiczne aplikacje bez konieczności wprowadzania zmian w kodzie. |
 | Refaktoryzacja | <li> Ta strategia, określana również jako „ponowne pakowanie”, wymaga minimalnych zmian kodu lub konfiguracji aplikacji potrzebnych, aby połączyć aplikację z usługą Azure PaaS i zapewnić lepsze wykorzystanie możliwości chmury. | <li> Firma Contoso może poddać refaktoryzacji aplikacje strategiczne, aby zachować tę samą podstawową funkcjonalność, ale przenieść ich działanie na platformę Azure, taką jak Azure App Service. <li> Wymaga to minimalnych zmian w kodzie. <li> Z drugiej strony firma Contoso będzie musiała zachować platformę maszyny wirtualnej, ponieważ nie będzie ona zarządzana przez firmę Microsoft. |
@@ -352,7 +352,7 @@ Firma Contoso potrzebuje wglądu w kondycję i wydajność nowo zmigrowanych apl
 
 - Za pomocą tych narzędzi firma Contoso może łatwo zbierać dane ze źródeł i uzyskiwać bogate szczegółowe informacje. Na przykład firma Contoso może mierzyć użycie procesora, dysku i pamięci swoich maszyn wirtualnych, wyświetlać zależności w ramach aplikacji i sieci dotyczące wielu maszyn wirtualnych oraz śledzić wydajność aplikacji.
 - Firma Contoso będzie używać tych narzędzi do monitorowania chmury w celu podejmowania działań i zapewniania integracji z rozwiązaniami usług.
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/azure-monitor/overview) o monitorowaniu platformy Azure.
+- Dowiedz się więcej o [monitorowaniu platformy Azure](https://docs.microsoft.com/azure/azure-monitor/overview).
 
 ### <a name="business-continuity-and-disaster-recovery"></a>Ciągłość działania i odzyskiwanie po awarii
 

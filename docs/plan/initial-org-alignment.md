@@ -7,18 +7,18 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d1e8542b1fe53c88773bd477fe7872b6fac02288
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2780347386db755cab9cc2c0a69549a75463c820
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223494"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862555"
 ---
 # <a name="initial-organization-alignment"></a>Początkowe dopasowywanie organizacji
 
 Najważniejszym aspektem każdego planu wdrażania w chmurze jest wyrównanie osób, które będą miały rzeczywistość. Żaden plan nie zostanie ukończony, dopóki nie zrozumiesz jego aspektów związanych z osobami.
 
-Prawdziwe wyrównania organizacyjne. Ważne jest, aby określić długoterminowe wyrównania organizacyjne, szczególnie w przypadku, gdy wdrożenie chmury jest skalowane w branży i kulturze IT. Wyrównanie jest tak ważne, że [cała sekcja](../organize/index.md) została przedzielona do niej w metodzie Organizuj strukturę wdrożenia chmury.
+Prawdziwe wyrównania organizacyjne. Ważne jest, aby określić długoterminowe wyrównania organizacyjne, szczególnie w przypadku, gdy wdrożenie chmury jest skalowane w branży i kulturze IT. Wyrównanie jest tak ważne, że cała sekcja została przedzielona do niej w [metodzie Organizuj](../organize/index.md) strukturę wdrożenia chmury.
 
 Wyrównanie całej organizacji nie jest wymaganym składnikiem planu wdrażania chmury. Należy jednak koniecznie wyrównać się pewnej organizacji początkowej. W tym artykule opisano najlepszy punkt wyjścia do wyrównania organizacji. Wskazówki zawarte w tym miejscu mogą pomóc w zaplanowaniu planu i przygotowania zespołów do wdrożenia w chmurze. Gdy wszystko będzie gotowe, możesz użyć sekcji [wyrównania organizacji](../organize/index.md) , aby dostosować te wskazówki do swojej organizacji.
 

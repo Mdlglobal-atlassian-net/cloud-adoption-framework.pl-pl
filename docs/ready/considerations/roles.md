@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 06def57a93d5577d39bb7c638fb8a4d854258723
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 2c7a57f339ad241f3d2f448a61d0553d1487bde7
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756468"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862623"
 ---
 # <a name="role-based-access-control"></a>Kontrola dostępu oparta na rolach
 
@@ -37,7 +37,7 @@ Podczas planowania strategii kontroli dostępu opartej na rolach należy zastoso
 ![Sugerowany wzorzec stosowania kontroli dostępu opartej na rolach](../../_images/azure-best-practices/rbac-least-privilege.png)
 
 > [!NOTE]
-> Im bardziej szczegółowo definiowane są uprawnienia, tym bardziej prawdopodobne, że kontrola dostępu stanie się złożona i trudna do zarządzania. Jest to szczególnie istotne wraz ze wzrostem rozmiaru majątku w chmurze. Unikaj uprawnień specyficznych dla zasobów. Zamiast tego [używaj grup zarządzania](https://docs.microsoft.com/azure/governance/management-groups) do kontroli dostępu w całym przedsiębiorstwie i [grup zasobów](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) do kontroli dostępu w ramach subskrypcji. Unikaj również uprawnień specyficznych dla użytkowników. Zamiast tego przypisz dostęp do [grup w usłudze Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
+> Im bardziej szczegółowo definiowane są uprawnienia, tym bardziej prawdopodobne, że kontrola dostępu stanie się złożona i trudna do zarządzania. Jest to szczególnie istotne wraz ze wzrostem rozmiaru majątku w chmurze. Unikaj uprawnień specyficznych dla zasobów. Zamiast tego należy użyć [grup zarządzania](https://docs.microsoft.com/azure/governance/management-groups) dla kontroli dostępu w całej firmie i [grup zasobów](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) na potrzeby kontroli dostępu w ramach subskrypcji. Unikaj również uprawnień specyficznych dla użytkowników. Zamiast tego przypisz dostęp do [grup w usłudze Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
 
 ## <a name="use-built-in-rbac-roles"></a>Korzystanie z wbudowanych ról RBAC
 
@@ -75,7 +75,7 @@ W poniższej tabeli przedstawiono typowy wzorzec podziału obowiązków IT na od
 
 | Grupa | Typowa nazwa roli | Zakres odpowiedzialności |
 | --- | --- | --- |
-| Operacje zabezpieczeń | SecOP | Zapewnia ogólny nadzór nad bezpieczeństwem.  <br><br> Ustanawia i wymusza zasady zabezpieczeń, takie jak szyfrowanie w spoczynku. <br><br> Zarządza kluczami szyfrowania. <br><br> Zarządza regułami zapory. |
+| Operacje zabezpieczeń | SecOP | Zapewnia ogólny nadzór nad bezpieczeństwem. <br> Ustanawia i wymusza zasady zabezpieczeń, takie jak szyfrowanie w spoczynku. <br><br> Zarządza kluczami szyfrowania. <br><br> Zarządza regułami zapory. |
 | Operacje sieciowe | Netops | Zarządza konfiguracją sieci i operacjami w sieciach wirtualnych, takimi jak trasy i komunikacja równorzędna. |
 | Operacje na systemach | Sysops | Określa opcje infrastruktury obliczeniowej i magazynu oraz obsługuje wdrożone zasoby. |
 | Programowanie, testowanie i operacje | DevOps | Kompiluje i wdraża funkcje i aplikacje obciążeń. <br><br> Obsługuje funkcje i aplikacje w celu spełnienia wymagań umów dotyczących poziomu usług (umowy SLA) i innych standardów jakości. |

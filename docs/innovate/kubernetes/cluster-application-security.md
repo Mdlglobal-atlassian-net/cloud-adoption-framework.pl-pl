@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6a5ae0083e619dc2db975682b5f50c0e8e2f1936
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 919291ade8c760429eb5df4d848f745014912eb6
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224021"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861994"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -37,7 +37,7 @@ Po rozpoczęciu pracy Poniższa lista kontrolna i zasoby ułatwią planowanie op
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Zapoznaj się z oficjalnym dokumentem dotyczącym zabezpieczeń.** Główne cele bezpiecznego środowiska Kubernetes zapewniają, że uruchomione aplikacje są chronione, dzięki czemu problemy z zabezpieczeniami mogą być zidentyfikowane i rozwiązywane szybko, a przyszłe podobne problemy zostaną uniemożliwione. | [Ostateczny Przewodnik dotyczący zabezpieczania Kubernetes (oficjalny dokument)](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
 > | **Zapoznaj się z konfiguracją zabezpieczeń dla węzłów klastra.** System operacyjny hosta z ograniczoną funkcjonalnością zabezpieczeń zmniejsza powierzchnię ataku i umożliwia bezpieczne wdrażanie kontenerów. | [Zabezpieczanie zabezpieczeń na hostach maszyn wirtualnych AKS](https://docs.microsoft.com/azure/aks/security-hardened-vm-host-image)     |
-> | **Konfiguracja kontroli dostępu opartej na rolach (RBAC) klastra.** Ten mechanizm kontroli pozwala przypisywać użytkowników lub grupy użytkowników, uprawnienia do wykonywania takich czynności jak tworzenie lub modyfikowanie zasobów lub wyświetlanie dzienników z uruchamiania obciążeń aplikacji. | [Opis kontroli dostępu opartej na rolach (RBAC) w Kubernetes (wideo)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br/> [Integrowanie usługi Azure AD z usługą Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br/> [Ograniczanie dostępu do pliku konfiguracji klastra](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
+> | **Konfiguracja kontroli dostępu opartej na rolach (RBAC) klastra.** Ten mechanizm kontroli pozwala przypisywać użytkowników lub grupy użytkowników, uprawnienia do wykonywania takich czynności jak tworzenie lub modyfikowanie zasobów lub wyświetlanie dzienników z uruchamiania obciążeń aplikacji. | [Opis kontroli dostępu opartej na rolach (RBAC) w Kubernetes (wideo)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br> [Integrowanie usługi Azure AD z usługą Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br> [Ograniczanie dostępu do pliku konfiguracji klastra](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
 
 ## <a name="deploy-to-production-and-apply-best-practices"></a>Wdrażanie w środowisku produkcyjnym i stosowanie najlepszych rozwiązań
 
@@ -62,7 +62,7 @@ Podczas przygotowywania aplikacji do produkcji należy zaimplementować minimaln
 > | **Ogranicz ruch wychodzący klastra.** Informacje o portach i adresach, które mają być dozwolone w przypadku ograniczenia ruchu wychodzącego dla klastra. Do zabezpieczenia ruchu wychodzącego i definiowania wymaganych portów i adresów można użyć zapory platformy Azure lub urządzenia zapory innej firmy. | [Sterowanie ruchem wychodzącym węzłów klastra w AKS](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
 > | **Zabezpieczanie ruchu za pomocą zapory aplikacji sieci Web (WAF).** Użyj usługi Azure Application Gateway jako kontrolera ruchu przychodzącego dla klastrów Kubernetes.  | [Konfigurowanie usługi Azure Application Gateway jako kontrolera transferu danych przychodzących](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **Zastosuj aktualizacje zabezpieczeń i jądra do węzłów procesu roboczego.** Poznaj środowisko aktualizacji węzłów AKS. W celu ochrony klastrów aktualizacje zabezpieczeń są automatycznie stosowane do węzłów systemu Linux w programie AKS. Te aktualizacje obejmują poprawki zabezpieczeń systemu operacyjnego lub aktualizacje jądra. Niektóre z tych aktualizacji wymagają ponownego uruchomienia węzła w celu ukończenia procesu. | [Użyj kured do automatycznego ponownego uruchamiania węzłów w celu zastosowania aktualizacji](https://docs.microsoft.com/azure/aks/node-updates-kured) |
-> | **Skonfiguruj rozwiązanie do skanowania kontenera i klastra.** Kontenery skanowania są przekazywane do Azure Container Registry i uzyskują dokładniejszy wgląd w węzły klastra, ruch w chmurze i mechanizmy zabezpieczeń. | [Azure Container Registry integrację z usługą Security Center](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br/> [Integracja usługi Azure Kubernetes z usługą Security Center](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
+> | **Skonfiguruj rozwiązanie do skanowania kontenera i klastra.** Kontenery skanowania są przekazywane do Azure Container Registry i uzyskują dokładniejszy wgląd w węzły klastra, ruch w chmurze i mechanizmy zabezpieczeń. | [Azure Container Registry integrację z usługą Security Center](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br> [Integracja usługi Azure Kubernetes z usługą Security Center](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 
 ## <a name="optimize-and-scale"></a>Optymalizowanie i skalowanie
 

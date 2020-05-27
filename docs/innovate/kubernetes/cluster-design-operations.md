@@ -7,18 +7,18 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d48a451a9cb6bcedb4f680701f9a6752df24e6a3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c13936beacf44700078fad59bd93f7754d8ddd99
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223987"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861773"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
 # <a name="cluster-design-and-operations"></a>Projekt i operacje klastra
 
-Określ konfigurację klastra i projekt sieci. Skalowalność w przyszłości dzięki automatyzowaniu aprowizacji infrastruktury. Zapewnienie wysokiej dostępności dzięki zaplanowaniu ciągłości działania i odzyskiwania po awarii.
+Określ konfigurację klastra i projekt sieci. Skalowalność w przyszłości dzięki automatyzowaniu aprowizacji infrastruktury. Zapewnij wysoką dostępność, planując pod kątem ciągłości działania i odzyskiwania po awarii.
 
 ## <a name="plan-train-and-proof"></a>Planowanie, uczenie i weryfikacja
 
@@ -37,7 +37,7 @@ Po rozpoczęciu pracy Poniższa lista kontrolna i zasoby ułatwią planowanie pr
 >
 > | Lista kontrolna  | Zasoby |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **Zidentyfikuj zagadnienia dotyczące projektowania sieci.** Omówienie zagadnień dotyczących projektowania sieci klastrów, porównywania modeli sieci i wybierania wtyczki sieci Kubernetes, która odpowiada Twoim potrzebom.    | [Korzystającą wtyczki kubenet i interfejs sieciowy kontenera platformy Azure (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Korzystanie z sieci korzystającą wtyczki kubenet z własnymi zakresami adresów IP w usłudze Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Konfigurowanie sieci Azure CNI w usłudze Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Bezpieczny projekt sieci dla klastra AKS](https://github.com/azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md) |
+> | **Zidentyfikuj zagadnienia dotyczące projektowania sieci.** Omówienie zagadnień dotyczących projektowania sieci klastrów, porównywania modeli sieci i wybierania wtyczki sieci Kubernetes, która odpowiada Twoim potrzebom.    | [Korzystającą wtyczki kubenet i interfejs sieciowy kontenera platformy Azure (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br> [Korzystanie z sieci korzystającą wtyczki kubenet z własnymi zakresami adresów IP w usłudze Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br> [Konfigurowanie sieci Azure CNI w usłudze Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br> [Bezpieczny projekt sieci dla klastra AKS](https://github.com/azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md) |
 > | **Utwórz wiele pul węzłów.** Aby obsługiwać aplikacje, które mają różne wymagania dotyczące obliczeń lub magazynu, można opcjonalnie skonfigurować klaster z wieloma pulami węzłów. Na przykład użyj dodatkowych pul węzłów, aby udostępnić procesory GPU dla aplikacji intensywnie korzystających z obliczeń lub uzyskać dostęp do magazynu SSD o wysokiej wydajności.   | [Tworzenie i zarządzanie wieloma pulami węzłów klastra w usłudze Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
 > | **Określ wymagania dotyczące dostępności.** Aby zapewnić wyższy poziom dostępności aplikacji, klastry mogą być dystrybuowane między strefami dostępności. Te strefy są fizycznie oddzielone centrami danych w danym regionie. Gdy składniki klastra są dystrybuowane w wielu strefach, klaster Cano tolerowanie awarii w jednej z tych stref. Aplikacje i operacje zarządzania są nadal dostępne nawet wtedy, gdy w całym centrum danych wystąpił problem.   | [Tworzenie klastra usługi Azure Kubernetes Service (AKS) korzystającego ze stref dostępności](https://docs.microsoft.com/azure/aks/availability-zones) |
 
@@ -77,5 +77,5 @@ Teraz, gdy aplikacja jest w środowisku produkcyjnym, jak można zoptymalizować
 > | Lista kontrolna  | Zasoby |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Automatyczne skalowanie klastra w celu spełnienia wymagań aplikacji.** Aby zachować zapotrzebowanie na aplikacje, może być konieczne dostosowanie liczby węzłów, które automatycznie uruchamiają obciążenia przy użyciu automatycznego skalowania klastra. | [Konfigurowanie automatycznego skalowania klastra Kubernetes](https://docs.microsoft.com/azure/aks/cluster-autoscaler)    |
-> | **Zaplanuj ciągłość działania i odzyskiwanie po awarii.** Zaplanuj wdrożenie z wieloregionem, Utwórz plan migracji magazynu i Włącz replikację geograficzną dla obrazów kontenerów. | [Najlepsze rozwiązania dotyczące wdrożeń regionów](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Azure Container Registry replikację geograficzną](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
-> | **Skonfiguruj monitorowanie i rozwiązywanie problemów na dużą skalę.** Skonfiguruj alerty i monitorowanie dla aplikacji w Kubernetes. Dowiedz się więcej na temat konfiguracji domyślnej, sposobu integrowania bardziej zaawansowanych metryk i sposobu dodawania własnych niestandardowych monitorów i alertów w celu niezawodnego działania aplikacji. | [Wprowadzenie do monitorowania i wysyłania alertów dla Kubernetes (wideo)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [Konfigurowanie alertów za pomocą Azure Monitor dla kontenerów](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [Przeglądanie dzienników diagnostycznych składników głównych](https://docs.microsoft.com/azure/aks/view-master-logs) <br/> [Diagnostyka usługi Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/concepts-diagnostics)    |
+> | **Zaplanuj ciągłość działania i odzyskiwanie po awarii.** Zaplanuj wdrożenie z wieloregionem, Utwórz plan migracji magazynu i Włącz replikację geograficzną dla obrazów kontenerów. | [Najlepsze rozwiązania dotyczące wdrożeń regionów](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region) <br> [Azure Container Registry replikację geograficzną](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
+> | **Skonfiguruj monitorowanie i rozwiązywanie problemów na dużą skalę.** Skonfiguruj alerty i monitorowanie dla aplikacji w Kubernetes. Dowiedz się więcej na temat konfiguracji domyślnej, sposobu integrowania bardziej zaawansowanych metryk i sposobu dodawania własnych niestandardowych monitorów i alertów w celu niezawodnego działania aplikacji. | [Wprowadzenie do monitorowania i wysyłania alertów dla Kubernetes (wideo)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br> [Konfigurowanie alertów za pomocą Azure Monitor dla kontenerów](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br> [Przeglądanie dzienników diagnostycznych składników głównych](https://docs.microsoft.com/azure/aks/view-master-logs) <br> [Diagnostyka usługi Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/concepts-diagnostics)    |

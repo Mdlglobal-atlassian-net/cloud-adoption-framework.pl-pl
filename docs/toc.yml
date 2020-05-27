@@ -387,7 +387,7 @@ items:
                 items:
                   - name: Refaktoryzowanie aplikacji w usługach Azure App Service i Azure SQL Database
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                  - name: Refaktoryzowanie aplikacji w usłudze Azure App Service i wystąpieniach zarządzanych usługi Azure SQL Database
+                  - name: Refaktoryzowanie aplikacji w usługach Azure App Service i Azure SQL Managed Instance
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance.md
                   - name: Ponowne kompilowanie aplikacji w usłudze Azure App Service
                     href: migrate/azure-best-practices/contoso-migration-rebuild.md
@@ -415,7 +415,7 @@ items:
                     href: 'https://docs.microsoft.com/azure/java/migrate-jboss-eap-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
               - name: SQL Server
                 items:
-                  - name: Ponowne hostowanie aplikacji na maszynach wirtualnych platformy Azure i w wystąpieniu zarządzanym usługi Azure SQL Database
+                  - name: Ponowne hostowanie aplikacji na maszynach wirtualnych platformy Azure i w wystąpieniu zarządzanym usługi Azure SQL
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
                   - name: Ponowne hostowanie aplikacji na maszynach wirtualnych platformy Azure i w zawsze włączonych grupach dostępności programu SQL Server
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
@@ -427,7 +427,7 @@ items:
                     items:
                       - name: Refaktoryzowanie z programu SQL Server do usługi Azure SQL Database
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldb'
-                      - name: Refaktoryzowanie z programu SQL Server do wystąpienia zarządzanego usługi Azure SQL Database
+                      - name: Refaktoryzowanie z programu SQL Server do wystąpienia zarządzanego usługi Azure SQL
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldbmi'
                       - name: Refaktoryzowanie z programu SQL Server do programu SQL Server na maszynach wirtualnych platformy Azure
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-sqlvm'
@@ -483,11 +483,11 @@ items:
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Migracja z programu SQL Server do usługi Azure SQL Database w trybie online
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Migracja z programu SQL Server do wystąpienia zarządzanego usługi Azure SQL Database w trybie offline
+                      - name: Migracja z programu SQL Server do zarządzanego wystąpienia usługi Azure SQL w trybie offline
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Migracja z programu SQL Server do wystąpienia zarządzanego usługi Azure SQL Database w trybie online
+                      - name: Migracja z programu SQL Server do zarządzanego wystąpienia usługi Azure SQL w trybie online
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Migracja z programu SQL Server usługi Amazon RDS do usługi Azure SQL Database lub wystąpienia zarządzanego usługi Azure SQL Database w trybie online
+                      - name: Migracja z programu Amazon RDS SQL Server do usługi Azure SQL Database lub wystąpienia zarządzanego usługi Azure SQL w trybie online
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Migracja z programu MySQL do usługi Azure Database for MySQL w trybie online
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'

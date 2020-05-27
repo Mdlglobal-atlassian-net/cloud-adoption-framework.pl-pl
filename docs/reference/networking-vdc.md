@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 137ab71429b6f827ee0f01154ea372784327e964
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 7fc85776fee5078b17fc9e7d91b184d2ba550a66
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400926"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862691"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -129,7 +129,7 @@ Topologia _komunikacji równorzędnej i szprych_ jest odpowiednia dla aplikacji 
 
 Topologia _wirtualnej sieci WAN platformy Azure_ może obsługiwać scenariusze dużych biur oddziałów i globalne usługi sieci WAN.
 
-![14][14]
+![14,5][14]
 
 Topologia komunikacji równorzędnej i szprychy oraz topologia wirtualnej sieci WAN platformy Azure używają układu gwiazdy, który jest optymalny w przypadku komunikacji, zasobów udostępnionych i scentralizowanych zasad zabezpieczeń. Koncentratory są tworzone przy użyciu koncentratora komunikacji równorzędnej sieci wirtualnej (oznaczonego jako `Hub Virtual Network` na diagramie) lub wirtualnego koncentratora sieci WAN (oznaczonego jako `Azure Virtual WAN` na diagramie). Wirtualna sieć WAN platformy Azure została zaprojektowana w celu zapewnienia dużej ilości gałęzi do rozgałęzienia i rozgałęziania do platformy Azure, a także do unikania kompleksów kompilowania wszystkich składników osobno w koncentratorze komunikacji równorzędnej sieci wirtualnych. W niektórych przypadkach wymagania mogą wymagać projektu koncentratora komunikacji równorzędnej sieci wirtualnej, na przykład potrzeb sieciowych urządzeń wirtualnych w centrum.
 
@@ -414,7 +414,7 @@ Zarówno usługa [azure Traffic Manager][azure-traffic-manager] , jak i [drzwi p
 
 Wirtualne podejście do migracji do centrum danych tworzy skalowalną architekturę, która optymalizuje użycie zasobów platformy Azure, obniża koszty i upraszcza zarządzanie systemem. Wirtualne centrum danych jest typowe w oparciu o topologie sieci Hub i szprych (za pomocą wirtualnych sieci równorzędnych lub wirtualnych koncentratorów WAN). Wspólne usługi udostępnione udostępniane w centrum, a określone aplikacje i obciążenia są wdrażane w szprychach. Wirtualne centrum danych jest również zgodne ze strukturą ról firmy, w której różne działy, takie jak centralne IT, DevOps i Operations and Maintenance, działają razem podczas wykonywania ich określonych ról. Wirtualne centrum danych obsługuje Migrowanie istniejących obciążeń lokalnych na platformę Azure, ale również zapewnia wiele korzyści dla wdrożeń natywnych w chmurze.
 
-## <a name="references"></a>Odwołania
+## <a name="references"></a>Dokumentacja
 
 Dowiedz się więcej na temat możliwości platformy Azure omówionych w tym dokumencie.
 
@@ -422,13 +422,13 @@ Dowiedz się więcej na temat możliwości platformy Azure omówionych w tym dok
 
 | Funkcje sieciowe | Równoważenie obciążenia | Łączność |
 | --- | --- | --- |
-| [Sieci wirtualne platformy Azure][virtual-network] <br> [Sieciowe grupy zabezpieczeń][NSG] <br> [Punkty końcowe usługi][ServiceEndpoints] <br> [Link prywatny][PrivateLink] <br> [Trasy zdefiniowane przez użytkownika][UDR] <br> [Wirtualne urządzenia sieciowe][NVA] <br> [Publiczne adresy IP][PIP] <br> [System DNS platformy Azure][DNS] | [Azure Front Door][azure-front-door] <br> [Azure Load Balancer (P4)][ALB] <br> [Application Gateway (P7)][AppGW] <br> [Traffic Manager platformy Azure][azure-traffic-manager] <br><br><br><br><br> | [Virtual Network komunikacji równorzędnej][virtual-network-peering] <br> [Wirtualna sieć prywatna][VPN] <br> [Wirtualna sieć WAN][virtual-wan] <br> [ExpressRoute][ExR] <br> [Usługa ExpressRoute Direct][ExRD] <br><br><br><br><br> |
+| [Sieci wirtualne platformy Azure][virtual-network] <br> [Sieciowe grupy zabezpieczeń][NSG] <br> [Punkty końcowe usługi][ServiceEndpoints] <br> [Link prywatny][PrivateLink] <br> [Trasy zdefiniowane przez użytkownika][UDR] <br> [Wirtualne urządzenia sieciowe][NVA] <br> [Publiczne adresy IP][PIP] <br> [System DNS platformy Azure][DNS] | [Azure Front Door][azure-front-door] <br> [Azure Load Balancer (P4)][ALB] <br> [Application Gateway (P7)][AppGW] <br> [Traffic Manager platformy Azure][azure-traffic-manager] <br><br><br><br><br> | [Komunikacja równorzędna sieci wirtualnych][virtual-network-peering] <br> [Wirtualna sieć prywatna][VPN] <br> [Virtual WAN][virtual-wan] <br> [ExpressRoute][ExR] <br> [Usługa ExpressRoute Direct][ExRD] <br><br><br><br><br> |
 
 | Tożsamość | Monitorowanie | Najlepsze rozwiązania |
 | --- | --- | --- |
 | [Azure Active Directory][azure-ad] <br>[Multi-Factor Authentication][multi-factor-authentication] <br> [Access Control oparte na rolach][RBAC] <br> [Domyślne role usługi Azure AD][Roles] <br><br><br> | [Network Watcher][NetWatch] <br> [Azure Monitor][MonitorOverview] <br> [Log Analytics][LogAnalytics] <br> | [Grupa zarządzania][MgmtGrp] <br> [Zarządzanie subskrypcjami](../ready/azure-best-practices/scale-subscriptions.md) <br> [Zarządzanie grupami zasobów][RGMgmt] <br> [Limity subskrypcji platformy Azure][limits] <br><br><br> |
 
-Zabezpieczenia | Inne usługi platformy Azure | |
+| Zabezpieczenia | Inne usługi platformy Azure | |
 |-|-|-|
 | [Azure Firewall][AzFW] <br> [Firewall Manager][AzFWMgr] <br> [Application Gateway WAF][AppGWWAF] <br> [WAF drzwi przednich][AFDWAF] <br> [Azure DDoS][DDoS] <br> | [Usługa Azure Storage][Storage] <br> [Azure SQL][SQL] <br> [Azure Web Apps][WebApps] <br> [Azure Cosmos DB][cosmos-db] <br> [HDInsight][HDInsight] | [Event Hubs][EventHubs] <br> [Service Bus][ServiceBus] <br> [Azure IoT][IoT] <br> [Azure Machine Learning][machine-learning] |
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1da093324253a3a551b1bb8306a0727536ec46b5
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 2f619ae4b8d1b4cc28062537489ddc6d30f4f6e7
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753776"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814719"
 ---
 # <a name="architectural-decision-guides"></a>Przewodniki podejmowania decyzji dotyczących architektury
 
@@ -25,7 +25,7 @@ Te przewodniki po decyzjach uzupełniają przykładowe podróże po ładzie, dos
 
 ## <a name="decision-guidance-categories"></a>Kategorie przewodników po decyzjach
 
-Każda z poniższych kategorii reprezentuje fundamentalną technologię wszystkich wdrożeń w chmurze. W przykładowych podróżach po ładzie decyzje dotyczące projektu związane z tymi technologiami podejmowane są w oparciu o potrzeby przykładowych firm — niektóre z tych decyzji mogą nie być zgodne z potrzebami Twojej organizacji. W poniższych sekcjach omówiono alternatywne opcje dla każdej z tych kategorii, co umożliwia wybranie wzorca lub modelu lepiej dopasowanego do własnych wymagań.
+Poniższe kategorie reprezentują fundamentalne technologie wszystkich wdrożeń w chmurze. W przykładowych podróżach po ładzie decyzje dotyczące projektu związane z tymi technologiami podejmowane są w oparciu o potrzeby przykładowych firm — niektóre z tych decyzji mogą nie być zgodne z potrzebami Twojej organizacji. W poniższych sekcjach omówiono alternatywne opcje dla każdej kategorii, co umożliwia wybranie wzorca lub modelu lepiej dopasowanego do własnych wymagań.
 
 [Subskrypcje](./subscriptions/index.md): Zaplanuj strukturę kont i projekt subskrypcji swojego wdrożenia chmury tak, aby pasowały do modelu własności, rozliczeń i funkcji zarządzania Twojej organizacji.
 

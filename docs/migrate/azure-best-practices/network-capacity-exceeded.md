@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a7caa77a9f11f464160548aded6b280bbc9b0b00
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a075b99945a50850561ceab4a9f1b16bfe180936
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217164"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862487"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -30,7 +30,7 @@ Większość nakładu pracy wymaganego do rozszerzenia tego zakresu będzie potr
 
 **Transfer w trybie offline niezależnych magazynów danych:** Na poniższej ilustracji przedstawiono przykłady transferów danych w trybie online i offline przy użyciu Azure Data Box. Te metody mogą służyć do dostarczania dużych ilości danych do chmury przed migracją obciążenia. Podczas transferu danych w trybie offline dane źródłowe są kopiowane do urządzenia Azure Data Box. Następnie są one fizycznie dostarczane do firmy Microsoft i przenoszone na konto magazynu Azure w postaci pliku lub obiektu blob. Ten proces może służyć do dostarczania danych, które nie są bezpośrednio powiązane z konkretnym obciążeniem, przed rozpoczęciem innych działań związanych z migracją. Umożliwia to zmniejszenie ilości danych, które muszą zostać dostarczone przez sieć w celu ukończenia migracji, i obejście ograniczeń sieci.
 
-Takie podejście może służyć do transferowania danych z systemu plików HDFS, kopii zapasowych, archiwów i aplikacji. Istniejące wskazówki techniczne wyjaśniają, jak używać tego podejścia do transferu danych z [magazynu HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) lub z dysków przy użyciu protokołów [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs) i [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) lub [usługi kopiowania danych](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) do urządzenia Data Box.
+Takie podejście może służyć do transferowania danych z systemu plików HDFS, kopii zapasowych, archiwów i aplikacji. Istniejące wskazówki techniczne wyjaśniają, jak używać tego podejścia do transferowania danych [z magazynu](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) systemu plików HDFS lub z dysków za pomocą usługi [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [rest](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)lub [kopiowania danych](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) do urządzenie Data Box.
 
 Istnieją również rozwiązania partnerskie innych firm wykorzystujące urządzenia Azure Data Box do migracji metodą „Seed and Feed”, w której duża ilość danych jest transferowana w trybie offline; dane te są później synchronizowane w mniejszej skali przez sieć.
 
@@ -59,7 +59,7 @@ W przypadku korzystania z mechanizmów transferu w trybie offline [procesy repli
 
 ### <a name="suggested-action-during-the-migrate-process"></a>Sugerowana akcja w trakcie procesu migracji
 
-**Kopiuj magazyn:** Takie podejście może służyć do transferowania danych systemu plików HDFS, kopii zapasowych, archiwów, aplikacji lub serwerów. Istniejące wskazówki techniczne wyjaśniają, jak używać tego podejścia do transferu danych z [magazynu HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) lub z dysków przy użyciu protokołów [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs) i [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) lub [usługi kopiowania danych](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) do urządzenia Data Box.
+**Kopiuj magazyn:** Takie podejście może służyć do transferowania danych systemu plików HDFS, kopii zapasowych, archiwów, aplikacji lub serwerów. Istniejące wskazówki techniczne wyjaśniają, jak używać tego podejścia do transferowania danych [z magazynu](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) systemu plików HDFS lub z dysków za pomocą usługi [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [rest](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest)lub [kopiowania danych](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) do urządzenie Data Box.
 
 Istnieją również rozwiązania partnerskie innych firm wykorzystujące urządzenia Azure Data Box do migracji metodą „Seed and Feed”, w której duża ilość danych jest transferowana w trybie offline; dane są później synchronizowane w mniejszej skali przez sieć.
 

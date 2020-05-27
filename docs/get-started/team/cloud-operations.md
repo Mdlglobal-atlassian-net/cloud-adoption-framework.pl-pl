@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: f7670efdfb22a6542efe93f309e8bbaf83a2027e
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 02317405adc974e9836bb3e64b881da3296e3d8e
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815127"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862436"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>Wprowadzenie: Tworzenie zespołu operacji w chmurze
 
@@ -202,4 +202,4 @@ Dowiedz się więcej o usługach:
 - [Funkcje centrum doskonałości chmury](../../organize/cloud-center-of-excellence.md)
 - [Antywzorce organizacyjne: silosy i fiefdoms](../../organize/fiefdoms-silos.md)
 
-Dowiedz się, jak wyrównać zakres obowiązków dla zespołów, opracowując macierz międzyzespołową, która identyfikuje strony RACI. Pobierz i zmodyfikuj [szablon arkusza kalkulacyjnego Raci](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx).
+Wyrównaj obowiązki dla zespołów, opracowując macierz międzyzespołową, która identyfikuje strony RACI. Pobierz i zmodyfikuj [szablon arkusza kalkulacyjnego Raci](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx).

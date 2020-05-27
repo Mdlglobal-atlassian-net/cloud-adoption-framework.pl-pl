@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: a77190bd55e9c5dd0656bc62b8ac10c34b1d13ce
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: fd859de8d7388a0cbd7c55255e005d98e6e87418
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815195"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861586"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -186,7 +186,7 @@ Administratorzy firmy Contoso konfigurują sieć wirtualną w następujący spos
 
 **Potrzebujesz dodatkowej pomocy?**
 
-- Zapoznaj się z omówieniem [wystąpienia zarządzanego usługi SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
+- Zapoznaj się z [omówieniem SQL Database wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
 - Dowiedz się, jak [utworzyć sieć wirtualną dla wystąpienia zarządzanego usługi SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration).
 - Dowiedz się, jak [skonfigurować komunikację równorzędną](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering).
 - Dowiedz się, jak [zaktualizować ustawienia DNS usługi Azure Active Directory](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance).
@@ -332,7 +332,7 @@ Składniki te są konfigurowane w następujący sposób:
 
 **Potrzebujesz dodatkowej pomocy?**
 
-[Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate) konfigurowaniu Azure Migrate: Narzędzia migracji serwera.
+Dowiedz się więcej na temat konfigurowania [Azure Migrate: Narzędzia migracji serwera](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool).
 
 ### <a name="prepare-on-premises-vms"></a>Przygotowywanie lokalnych maszyn wirtualnych
 
@@ -362,7 +362,7 @@ Po migracji firma Contoso chce nawiązać połączenie z maszynami wirtualnymi p
 
 5. Potrzebujesz dodatkowej pomocy?
 
-   - [Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration) przygotowywaniu maszyn wirtualnych do migracji.
+   - Dowiedz się więcej o [przygotowywaniu maszyn wirtualnych do migracji](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration).
 
 ## <a name="step-5-replicate-the-on-premises-vms"></a>Krok 5. replikowanie lokalnych maszyn wirtualnych
 

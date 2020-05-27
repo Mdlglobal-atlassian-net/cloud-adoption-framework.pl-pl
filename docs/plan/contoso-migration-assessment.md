@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 8624b11e0f99404c4f718c8a1c07de803d7fb876
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: dba69e75565658b0101a1849ca3d90e21890fa4a
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815382"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862606"
 ---
 <!-- docsTest:disable TODO -->
 
@@ -288,7 +288,7 @@ Przed wdrożeniem maszyny wirtualnej przedstawiciel firmy Contoso sprawdza zabez
 
     **Przykład:**
 
-    ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
+    `C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
 
 3. Wygenerowany skrót powinien być zgodny z wartościami skrótu opisanymi w sekcji [Weryfikowanie zabezpieczeń](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) w artykule [Ocena maszyn wirtualnych VMware na potrzeby migracji](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) .
 
@@ -491,13 +491,13 @@ Ocena zaufania jest reprezentowana przez gwiazdki (od 1 do 5). 1 gwiazdka to oce
 - Ocena zaufania jest przydatna podczas ustalania _rozmiaru na podstawie wydajności_. Usługa Azure Migrate może nie dysponować wystarczającą liczbą punktów danych, aby móc ustalić rozmiar na podstawie użycia. W przypadku ustalania rozmiaru _jako lokalnego_ ocena zaufania to zawsze 5 gwiazdek, ponieważ usługa Azure Migrate ma wszystkie punkty danych, których potrzebuje do ustalenia rozmiaru maszyny wirtualnej.
 - W zależności od wartości procentowej dostępnych punktów danych ocenę zaufania dla oceny określa:
 
-   | Dostępność punktów danych | Ocena zaufania |
-   | --- | --- |
-   | 0%–20% | 1 gwiazdka |
-   | 21%–40% | 2 gwiazdki |
-   | 41%–60% | 3 gwiazdki |
-   | 61%–80% | 4 gwiazdki |
-   | 81%–100% | 5 gwiazdek |
+    | Dostępność punktów danych | Ocena zaufania |
+    | --- | --- |
+    | 0%–20% | 1 gwiazdka |
+    | 21%–40% | 2 gwiazdki |
+    | 41%–60% | 3 gwiazdki |
+    | 61%–80% | 4 gwiazdki |
+    | 81%–100% | 5 gwiazdek |
 
 #### <a name="verify-azure-readiness"></a>Sprawdzanie gotowości na platformę Azure
 

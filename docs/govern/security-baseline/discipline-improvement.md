@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4f0f680c26fec666c7f60ba9c74b5cdc7eb22348
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 9fe2d91971e13ded533747e079fc52063feaf70d
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217748"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862249"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Poprawa dyscypliny linii bazowej zabezpieczeń
 
@@ -49,7 +49,7 @@ W tej fazie działania ładu mostkuje podział między wynikami biznesowymi i st
 - Zapoznaj się z wytycznymi dotyczącymi zabezpieczeń platformy w chmurze. W przypadku platformy Azure można je znaleźć w [portalu zaufania usługi firmy Microsoft](https://servicetrust.microsoft.com).
 - Ustal, czy zasady linii bazowej zabezpieczeń obejmują [cykl rozwoju zabezpieczeń](https://www.microsoft.com/sdl).
 - Oceń dane dotyczące sieci, danych i zasobów związanych z zasobami, które są zależne od od następnej do trzech wydań, i miernika tolerancji organizacji dla tych zagrożeń.
-- Przejrzyj podstawowe trendy firmy Microsoft [w raporcie cyberbezpieczeństwa](https://www.microsoft.com/security/operations/security-intelligence-report) , aby zapoznać się z ogólnymi poziomami zabezpieczeń.
+- Zapoznaj się [z najważniejszymi trendami](https://www.microsoft.com/security/operations/security-intelligence-report) firmy Microsoft w raporcie cyberbezpieczeństwa, aby zapoznać się z ogólnymi poziomami zabezpieczeń.
 - Rozważ opracowanie roli [DevSecOps](https://www.microsoft.com/devsecops) w organizacji.
 
 ## <a name="build-and-predeployment"></a>Kompilacja i prewdrażanie

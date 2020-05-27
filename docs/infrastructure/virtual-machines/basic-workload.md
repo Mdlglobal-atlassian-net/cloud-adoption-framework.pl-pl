@@ -7,12 +7,12 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8432a00865d29767b48292541255f88f9d451665
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0b4f0738e93d08be4f61183272b459eb7856aad1
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217476"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862215"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Wdrażanie podstawowego obciążenia na platformie Azure
 
@@ -26,7 +26,7 @@ Ta izolacja umożliwia również kolejną koncepcję, znaną jako DevOps. DevOps
 
 ## <a name="basic-workload"></a>Podstawowe obciążenie
 
-_Podstawowe obciążenie_ jest zwykle zdefiniowane jako jedna aplikacja sieci Web lub Sieć wirtualna (VNET) z maszyną wirtualną.
+_Podstawowe obciążenie_ jest zwykle zdefiniowane jako jedna aplikacja sieci Web lub Sieć wirtualna z maszyną wirtualną.
 
 > [!NOTE]
 > Ten przewodnik nie obejmuje opracowywania aplikacji. Aby uzyskać więcej informacji na temat tworzenia aplikacji na platformie Azure, zobacz [Przewodnik po architekturze aplikacji platformy Azure](https://docs.microsoft.com/azure/architecture/guide).

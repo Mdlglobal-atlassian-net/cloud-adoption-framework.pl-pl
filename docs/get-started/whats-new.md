@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7ead653ddcce27ee0a144845ee3750373e1eb66d
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 3f57409adfa399e267cf14f1f24a3b380ed1bf85
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755134"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862385"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -24,10 +24,11 @@ Ta struktura jest wbudowana w współpracę z klientami, partnerami i wewnętrzn
 
 ## <a name="may-15-2020"></a>15 maja 2020
 
-Na podstawie opinii została utworzona nowa zawartość, która ułatwia rozpoczęcie pracy przy użyciu platformy wdrażania w chmurze. Nowe przewodniki wprowadzenie ułatwiają nawigowanie po strukturze w zależności od tego, co chcesz osiągnąć.
+Na podstawie opinii została utworzona nowa zawartość, która ułatwia rozpoczęcie pracy przy użyciu platformy wdrażania w chmurze. Nowe przewodniki wprowadzenie ułatwiają nawigowanie po strukturze w zależności od tego, co chcesz osiągnąć. Utworzona została również nowa strona docelowa, która ułatwia znalezienie wskazówek, narzędzi, modułów i programów, które obsługują pomyślne przekazanie do chmury.
 
 | Artykuł | Opis |
 |---|---|
+| [Przewodnik Cloud Adoption Framework dla platformy Azure](../index.yml) | Strona docelowa struktury wdrażania chmury została przeprojektowana w celu ułatwienia znalezienia wskazówek, narzędzi, modułów i programów, które obsługują pomyślne przekazanie do chmury. |
 | [Wprowadzenie do podręcznika Cloud Adoption Framework](./index.md) | Zacznij tutaj, aby wybrać Przewodnik wprowadzający, który jest wyrównany do celów wdrożenia chmury. Te typowe scenariusze stanowią plan korzystania z podręcznika Microsoft Cloud Adoption Framework dla platformy Azure.|
 | [Zrozumienie i udokumentowanie decyzji o wyrównaniu](./cloud-concepts.md) | Zapoznaj się z wstępnymi decyzjami, które powinny zrozumieć każdy zespół korzystający z rozwiązań w chmurze. |
 | [Zrozumienie i wyrównanie hierarchii portfolio](../reference/fundamental-concepts/hosting-hierarchy.md) | Dowiedz się, w jaki sposób hierarchia portfolio pokazuje, jak wszystkie obciążenia i usługi obsługują wszystkie jednocześnie. |

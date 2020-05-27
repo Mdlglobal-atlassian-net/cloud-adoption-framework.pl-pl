@@ -1,6 +1,6 @@
 ---
 title: Omówienie platform monitorowania chmury
-description: Ogólne omówienie dwóch platform monitorujących ułatwiające zrozumienie, jak każda z nich zapewnia podstawowe funkcje monitorowania.
+description: Zapoznaj się z ogólnym omówieniem dwóch platform monitorowania, aby zrozumieć, jak każda z nich oferuje podstawowe funkcje monitorowania.
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 45645ec900c4c85c4dd7698f6d5861027dae8bf6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: abe6fb81a1108e291d0a4f12382172a5f6b39e4d
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223749"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861484"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 

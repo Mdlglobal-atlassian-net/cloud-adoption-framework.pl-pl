@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 68aff93493200e4878e31b961b3c97608c76c7c3
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 79c428da9d0be27c209fcc30686225217832dbe1
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814396"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862504"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Wprowadzenie: przyspiesz innowacje nowych produktów i usług w chmurze
 
@@ -206,7 +206,7 @@ Metodologia innowacje zawiera wskazówki dotyczące narzędzi i metod zarządzan
 
 - [Wartość biznesowa konsensus](../innovate/business-value.md): Jeśli od czasu ostatniego konsensusu wartość biznesowa przekazano więcej niż trzy miesiące, lub jeśli jedna z nich nigdy nie została ukończona, Zacznij tutaj.
 - [Przewodnik dotyczący innowacji platformy Azure](../innovate/innovation-guide/index.md): Skorzystaj z przewodnika innowacji platformy Azure, aby przyspieszyć wdrażanie innowacyjnych rozwiązań poprzez zrozumienie narzędzi i procesów, które mogą pomóc w tworzeniu minimalnego produktu, którego potrzebujesz.
-- [Najlepsze rozwiązania innowacyjne](../innovate/best-practices/index.md): Dowiedz się, jak połączyć usługi platformy Azure, aby utworzyć łańcucha narzędzi do rozdzielania cyfrowo.
+- [Najlepsze rozwiązania innowacyjne](../innovate/best-practices/index.md): łączenie usług platformy Azure w celu utworzenia łańcucha narzędzi na potrzeby rozdzielania cyfrowo.
 - [Pętle opinii](../innovate/considerations/adoption.md): Opracuj ulepszone pętle opinii, aby szybko zapewnić klientom wpływ na innowacje.
 
 <!-- markdownlint-disable MD033 -->

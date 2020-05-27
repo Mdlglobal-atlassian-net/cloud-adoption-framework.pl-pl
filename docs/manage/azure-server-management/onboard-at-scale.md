@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 243bafcfc7033ff932fc8112255a8f6a4a1d2904
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 368c5b44513ee98cb7f361305bfe1de468474a03
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815331"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861535"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -125,14 +125,14 @@ Aby utworzyć lub zmodyfikować zapisane wyszukiwanie, wykonaj następujące kro
 
 1. Wprowadź nazwę komputera lub VMUUID, aby uwzględnić komputery, na których chcesz zrezygnować Change Tracking.
 
-    ```kusto
-    Heartbeat
-    | where AzureEnvironment=~"Azure" or Computer in~ ("list of the on-premises server names", "server1")
-    | distinct Computer
-    ```
+  ```kusto
+  Heartbeat
+  | where AzureEnvironment=~"Azure" or Computer in~ ("list of the on-premises server names", "server1")
+  | distinct Computer
+  ```
 
-    > [!NOTE]
-    > Nazwa serwera musi dokładnie pasować do wartości w wyrażeniu i nie powinna zawierać sufiksu nazwy domeny.
+  > [!NOTE]
+  > Nazwa serwera musi dokładnie pasować do wartości w wyrażeniu i nie powinna zawierać sufiksu nazwy domeny.
 
 1. Wybierz pozycję **Zapisz**. Domyślnie konfiguracja zakresu jest połączona z **MicrosoftDefaultComputerGroup** zapisanym wyszukiwaniem. Zostanie ona automatycznie zaktualizowana.
 

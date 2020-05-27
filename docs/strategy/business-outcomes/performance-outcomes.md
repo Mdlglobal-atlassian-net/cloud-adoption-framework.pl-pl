@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5b96c9216619a881ec9ad5a09e77ef9b3955bdb0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dc0fa352d96f7d1194566006d3d9d1e98eb46b87
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216286"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862640"
 ---
 # <a name="examples-of-performance-outcomes"></a>Przykłady wyników wydajności
 
@@ -26,7 +26,7 @@ Największe usługi chmury obliczeniowej działają w ogólnoświatowej sieci za
 
 Przekształć swoją firmę i Obniż koszty dzięki infrastrukturze energooszczędnej, która obejmuje ponad 100 wysoce bezpiecznych udogodnień na całym świecie, połączone z jedną z największych sieci na ziemi. Platforma Azure oferuje więcej regionów globalnych niż jakikolwiek inny dostawca usług w chmurze. Umożliwia to przetłumaczenie na skalę, która jest wymagana w celu wprowadzenia aplikacji bliżej użytkowników na całym świecie, zachowania miejsca zamieszkania danych oraz zapewnienia kompleksowej zgodności i opcji odporności dla klientów.
 
-- **Przykład 1:** Firma usług pracowała z dostawcą hostingu obsługującym wiele zasobów infrastruktury operacyjnej. Te systemy były przyczyną częstej awarii i niskiej wydajności. Firma przebiegła swoje zasoby na platformę Azure, aby korzystać z kontroli umów SLA i wydajności w chmurze. Czas przestoju, który poniósł koszt IT około $15 000 USD na minutę. Po upływie czterech i ośmiu godzin przestojów miesięcznie można było łatwo uzasadnić tę transformację organizacyjną.
+- **Przykład 1:** Firma usług pracowała z dostawcą hostingu obsługującym wiele zasobów infrastruktury operacyjnej. Te systemy były przyczyną częstej awarii i niskiej wydajności. Firma przebiegła swoje zasoby na platformę Azure, aby korzystać z kontroli umów SLA i wydajności w chmurze. Ewentualne przestoje spowodują obniżenie kosztów firmy o około $15 000 USD za minutę. Po upływie czterech i ośmiu godzin przestojów miesięcznie można było łatwo uzasadnić tę transformację organizacyjną.
 
 - **Przykład 2:** Firma inwestycyjna dla odbiorców była na wczesnych etapach pracy innowacyjnej aplikacji z obsługą chmury. Procesy Agile i DevOps były również wymagalne, ale wydajność aplikacji została przerwana. Jako bardziej dojrzała transformacja firma rozpoczęła program do monitorowania i automatyzowania ustalania rozmiarów na podstawie wymagań dotyczących użycia. Firma eliminuje problemy związane z ustalaniem rozmiaru przy użyciu narzędzi do zarządzania wydajnością platformy Azure, co powoduje wzrost zaskakujące transakcji.
 
@@ -44,7 +44,7 @@ Azure Site Recovery ułatwia testowanie odzyskiwania po awarii przez replikowani
 
 ## <a name="next-steps"></a>Następne kroki
 
-Dowiedz się [, jak używać szablonu wyniku biznesowego](./business-outcome-template.md).
+Dowiedz się, jak używać [szablonu wyniku biznesowego](./business-outcome-template.md).
 
 > [!div class="nextstepaction"]
 > [Korzystanie z szablonu wyniku biznesowego](./business-outcome-template.md)

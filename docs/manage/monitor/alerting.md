@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 76da764cb9ab4841f4947b22ae61f1f0048b4dfa
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: d072ed1ac5abaa4f0c5cf3051d6585b4b5b13b24
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756196"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861399"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -84,7 +84,7 @@ Azure Monitor obejmuje obsługę integracji z innymi platformami monitorowania i
 |---| ---| --- |
 | Usługa Azure Monitor dla kontenerów | Obliczone średnie dane wydajności z węzłów i zasobników są zapisywane w magazynie metryk. | Tworzenie alertów dotyczących metryk, jeśli chcesz otrzymywać alerty w oparciu o wahania wydajności zmierzonego wykorzystania, zagregowane w czasie. |
 | | Obliczone dane wydajności używające percentylów z węzłów, kontrolerów, kontenerów i zasobników są zapisywane w magazynie dzienników. Dzienniki kontenerów i informacje o spisie są również zapisywane w magazynie dzienników. | Utwórz alerty kwerendy dziennika, jeśli chcesz otrzymywać alerty na podstawie zmienności mierzonego użycia z klastrów i kontenerów. Alerty zapytań dzienników można również skonfigurować na podstawie liczby faz i liczby węzłów stanu. |
-Usługa Azure Monitor dla maszyn wirtualnych | Kryteria kondycji są metrykami zapisanymi w magazynie metryk. | Alerty są generowane, gdy kondycja ulegnie zmianie z kondycji na złej kondycji. Ten alert obsługuje tylko grupy akcji, które są skonfigurowane do wysyłania wiadomości SMS lub powiadomień e-mail. |
+| Usługa Azure Monitor dla maszyn wirtualnych | Kryteria kondycji są metrykami zapisanymi w magazynie metryk. | Alerty są generowane, gdy kondycja ulegnie zmianie z kondycji na złej kondycji. Ten alert obsługuje tylko grupy akcji, które są skonfigurowane do wysyłania wiadomości SMS lub powiadomień e-mail. |
 | | Dane dziennika wydajności mapy i systemu operacyjnego gościa są zapisywane w magazynie dzienników. | Utwórz alerty zapytania dziennika. |
 
 <!-- docsTest:ignore "speed driven by cost" -->

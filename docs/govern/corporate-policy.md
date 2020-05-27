@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0ef323934ada6ee1342f74828c2833f24a46a22f
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 159c102931d192e3a4fc77a3f16edc1fbe98f576
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755170"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862402"
 ---
 # <a name="evaluate-corporate-policy"></a>Ocenianie zasad firmowych
 
@@ -41,7 +41,7 @@ Definiowanie zasad firmowych koncentruje się na identyfikowaniu i eliminowaniu 
 
 ## <a name="next-steps"></a>Następne kroki
 
-Dowiedz się, jak tworzyć zasady firmowe jako gotowe do chmury.
+Dowiedz się, jak przygotować zasady korporacyjne dla chmury.
 
 > [!div class="nextstepaction"]
 > [Przygotuj zasady korporacyjne dla chmury](./policy-compliance/index.md)

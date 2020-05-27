@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0632b80f168ba51f5709322cc229e4b7a21094c4
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 237ec750ddc8be3614d686c325458f12e9b0f5d9
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815110"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862368"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -85,7 +85,7 @@ Aby obsłużyć miesięczne rozliczenia zasobów platformy Azure, istnieje kilka
 **Dowiedz się więcej:**
 
 - Skorzystaj z [kalkulatora cen platformy Azure](https://azure.microsoft.com/pricing/calculator).
-- Zapoznaj się [z omówieniem Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview).
+- Zapoznaj się z [omówieniem Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview).
 - Przeczytaj informacje na temat [Azure Migrate ocen](https://docs.microsoft.com/azure/migrate/concepts-assessment-calculation).
 - Dowiedz się więcej na temat [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 
@@ -93,7 +93,7 @@ Aby obsłużyć miesięczne rozliczenia zasobów platformy Azure, istnieje kilka
 
 Podczas wdrażania maszyn wirtualnych platformy Azure do obsługi obciążeń można wybrać różne opcje. Każdy typ maszyny wirtualnej ma określone funkcje i różne kombinacje procesora CPU, pamięci i dysków. Maszyny wirtualne zostały pogrupowane w sposób przedstawiony poniżej:
 
-| **Typ** | **Szczegóły** | **Użycie** |
+| Typ | Szczegóły | Użycie |
 |---|---|---|
 | **Ogólnego przeznaczenia** | Zrównoważona moc procesora CPU w stosunku do pamięci. | Jest to dobre dla testowania i opracowywania, małych i średnich baz danych, z niskim i średnim woluminem. | Serwery sieci Web ruchu. |
 | **Optymalizacja pod kątem obliczeń** | Duża moc procesora CPU w stosunku do pamięci. | Dobra opcja w przypadku serwerów internetowych o średnim ruchu, urządzeń sieciowych, procesów wsadowych i serwerów aplikacji. |
@@ -126,10 +126,10 @@ Platforma Azure udostępnia różne typy danych magazynu.
 
 <!-- markdownlint-disable MD033 -->
 
-| **Typ danych** | **Szczegóły** | **Użycie** |
+| Typ danych | Szczegóły | Użycie |
 | ---|---|---|
-| **Obiekty blob** | Zoptymalizowany pod kątem przechowywania dużych ilości obiektów bez struktury, takich jak dane tekstowe lub binarne. | Uzyskiwanie dostępu do danych z dowolnego miejsca za pośrednictwem protokołu HTTP/HTTPS. | Używane na potrzeby scenariuszy przesyłania strumieniowego i dostępu losowego. Na przykład w celu udostępniania obrazów i dokumentów bezpośrednio w przeglądarce, strumieniowego przesyłania wideo i audio oraz przechowywania danych kopii zapasowych i odzyskiwania po awarii. |
-| **Pliki** | Zarządzane udziały plików dostępne za pośrednictwem protokołu SMB 3,0. | Używane podczas migrowania lokalnych udziałów plików i zapewniania wielu dostępu i połączeń do danych plików. |
+| **Obiekty blob** | Zoptymalizowany pod kątem przechowywania dużych ilości obiektów bez struktury, takich jak dane tekstowe lub binarne. | Uzyskiwanie dostępu do danych z dowolnego miejsca za pośrednictwem protokołu HTTP/HTTPS. <br><br> Używane na potrzeby scenariuszy przesyłania strumieniowego i dostępu losowego. Na przykład w celu udostępniania obrazów i dokumentów bezpośrednio w przeglądarce, strumieniowego przesyłania wideo i audio oraz przechowywania danych kopii zapasowych i odzyskiwania po awarii. |
+| **Files** | Zarządzane udziały plików dostępne za pośrednictwem protokołu SMB 3,0. | Używane podczas migrowania lokalnych udziałów plików i zapewniania wielu dostępu i połączeń do danych plików. |
 | **Dyski** | Oparte na stronicowych obiektach blob. <br><br> Typ dysku (szybkość): standardowy dysk twardy, standardowy dysk SSD, dysk SSD Premium lub Ultra Disks. <br><br> Zarządzanie dyskami: niezarządzane (Zarządzanie ustawieniami dysków i magazynem) lub zarządzanie (można wybrać typ dysku, a platforma Azure zarządza dyskiem). | Używaj dysków w warstwie Premium na potrzeby maszyn wirtualnych. Na potrzeby łatwego zarządzania i skalowania używaj dysków zarządzanych. |
 | **Kolejki** | Przechowywanie i pobieranie dużej liczby komunikatów, do których można uzyskać dostęp za pośrednictwem uwierzytelnionych wywołań (HTTP lub HTTPS). | Łączenie składników aplikacji za pomocą asynchronicznego kolejkowania komunikatów. |
 | **Tabele** | Przechowuje tabele. | Teraz jest to część interfejsu API tabeli usługi Azure Cosmos DB. |
@@ -142,7 +142,7 @@ Usługa Azure Storage oferuje różne opcje uzyskiwania dostępu do danych bloko
 
 <!-- markdownlint-disable MD033 -->
 
-| **Warstwa dostępu** | **Szczegóły** | **Użycie** |
+| Warstwa dostępu | Szczegóły | Użycie |
 | --- | --- | --- |
 | **Gorąca** | Wyższe koszty magazynowania, niższy dostęp i koszty transakcji <br><br> Jest to domyślna Warstwa dostępu. | Służy do przechowywania danych w przypadku aktywnego użycia, gdy dostęp do danych jest uzyskiwany często. |
 | **Chłodna** | Niższe koszty magazynowania, wyższe koszty dostępu i transakcji. <br><br> Przechowywanie przez co najmniej 30 dni. | Przechowywanie krótkoterminowe, dane są dostępne, ale dostęp do nich jest uzyskiwany rzadko. |
@@ -156,7 +156,7 @@ Platforma Azure oferuje różne typy kont magazynu i warstw wydajności.
 
 <!-- markdownlint-disable MD033 -->
 
-| **Typ konta** | **Szczegóły** | **Użycie** |
+| Typ konta | Szczegóły | Użycie |
 | --- | --- | --- |
 | **Warstwa standardowa w wersji 2 do osiągnięcia** | Obsługuje obiekty blob (blokowe, stronicowe, dołączania), pliki, dyski, kolejki i tabele. <br><br> Obsługuje warstwy dostępu gorąca, chłodna i archiwalna. Magazyn strefowo nadmiarowy (ZRS) jest obsługiwany. | Używane w przypadku większości scenariuszy i większości typów danych. Standardowe konta magazynu mogą być oparte na DYSKach twardych lub SSD. |
 | **Warstwa Premium ogólnego przeznaczenia w wersji 2** | Obsługuje dane magazynu obiektów blob (stronicowe obiekty blob). Obsługuje warstwy dostępu gorąca, chłodna i archiwalna. Magazyn strefowo nadmiarowy jest obsługiwany. <br><br> Dane są przechowywane na dysku SSD. | Firma Microsoft zaleca używanie tego typu konta dla wszystkich maszyn wirtualnych. |
@@ -169,7 +169,7 @@ Platforma Azure oferuje różne typy kont magazynu i warstw wydajności.
 
 Konta magazynu mogą wykorzystywać różne typy nadmiarowości na potrzeby zapewnienia odporności i wysokiej dostępności.
 
-| **Typ** | **Szczegóły** | **Użycie** |
+| Typ | Szczegóły | Użycie |
 | --- | --- | --- |
 | **Magazyn lokalnie nadmiarowy (LRS)** | Chroni przed awarią lokalną przez replikację w ramach pojedynczej jednostki magazynowej do oddzielnej domeny błędów i domeny aktualizacji. Przechowuje wiele kopii danych w jednym centrum danych. Zapewnia co najmniej 99,999999999% czasu trwałości obiektów w danym roku. | Warte rozważenia, jeśli aplikacja przechowuje dane, które można łatwo odtworzyć. |
 | **Magazyn strefowo nadmiarowy (ZRS)** | Chroni przed awarią centrum danych przez replikowanie w trzech klastrach magazynu w jednym regionie. Każdy klaster magazynu jest fizycznie oddzielony i zlokalizowany we własnej strefie dostępności. Zapewnia co najmniej 99,9999999999 procentową trwałość obiektów w danym roku przez przechowywanie wielu kopii danych w wielu centrach lub regionach. | Warto rozważyć, jeśli potrzebujesz spójności, trwałości i wysokiej dostępności. Może nie chronić przed awarią regionalną, jeśli ma ona trwały wpływ na wiele stref. |
@@ -178,11 +178,11 @@ Konta magazynu mogą wykorzystywać różne typy nadmiarowości na potrzeby zape
 
 **Dowiedz się więcej:**
 
-- [Przejrzyj](https://azure.microsoft.com/pricing/details/storage) cennik usługi Azure Storage.
-- [Dowiedz się więcej o](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) Usługa Azure Import/Export umożliwia wdrażanie dużych ilości danych w obiektach Blob i plikach platformy Azure.
-- [Porównaj](https://docs.microsoft.com/azure/storage/common/storage-introduction) typy danych magazynu, takie jak obiekty blob, pliki i dyski.
+- Zapoznaj się z [cennikiem usługi Azure Storage](https://azure.microsoft.com/pricing/details/storage).
+- Dowiedz się, jak za pomocą [usługi Azure Import/Export](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) bezpiecznie importować duże ilości danych do usługi Azure Blob storage i Azure Files.
+- Porównywanie [obiektów blob, plików i typów danych magazynu dyskowego](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 - Dowiedz się więcej o [warstwach dostępu](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers).
-- [Przejrzyj](https://docs.microsoft.com/azure/storage/common/storage-account-overview) różne typy kont magazynu.
+- Przejrzyj [różne typy kont magazynu](https://docs.microsoft.com/azure/storage/common/storage-account-overview).
 - Dowiedz się więcej o [nadmiarowości usługi Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-redundancy), w tym LRS, ZRS, GRS i dostęp do odczytu.
 - Dowiedz się więcej o [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction).
 
@@ -207,7 +207,7 @@ Zintegrowane portfolio produktów firmy Microsoft, obejmujące środowisko lokal
 
 - [Zapoznaj](https://azure.microsoft.com/pricing/hybrid-benefit) się z kalkulatorem oszczędności korzyść użycia hybrydowego platformy Azure.
 - Dowiedz się więcej [na temat korzyść użycia hybrydowego platformy Azure dla systemu Windows Server](https://azure.microsoft.com/pricing/hybrid-benefit).
-- [Przejrzyj](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) wskazówki dotyczące cen maszyn wirtualnych platformy Azure z programem SQL Server.
+- Przejrzyj [wskazówki dotyczące cen dla SQL Server maszyn wirtualnych platformy Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance).
 
 ## <a name="best-practice-use-reserved-vm-instances"></a>Najlepsze rozwiązanie: korzystanie z wystąpień zarezerwowanych maszyn wirtualnych
 
@@ -237,9 +237,9 @@ W tym celu można użyć interfejsów API usługi Azure Cost Management. Następ
 
 **Dowiedz się więcej:**
 
-- Zapoznaj się z [omówieniem](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview) interfejsów API użycia platformy Azure.
-- [Dowiedz się więcej](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights) na temat nawiązywania połączenia z usługą Azure Consumption Insights w programie Power BI Desktop.
-- [Dowiedz się](https://docs.microsoft.com/azure/billing/billing-manage-access), jak zarządzać dostępem do informacji rozliczeniowych dla platformy Azure przy użyciu kontroli dostępu opartej na rolach (RBAC).
+- Przeczytaj [Omówienie interfejsów API użycia platformy Azure](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview).
+- Dowiedz się więcej [na temat nawiązywania połączenia z Azure Consumption Insights w Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights).
+- Dowiedz się, jak [zarządzać dostępem do informacji rozliczeniowych na platformie Azure przy użyciu kontroli dostępu opartej na rolach (RBAC)](https://docs.microsoft.com/azure/billing/billing-manage-access).
 
 ## <a name="best-practice-monitor-resource-utilization"></a>Najlepsze rozwiązanie: monitorowanie wykorzystania zasobów
 
@@ -253,8 +253,8 @@ Na platformie Azure płacisz za to, z czego korzystasz, gdy zasoby są używane,
 
 **Dowiedz się więcej:**
 
-- Zapoznaj się z omówieniem usług [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) i [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview).
-- [Uzyskaj](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) rekomendacje dotyczące kosztów w usłudze Advisor.
+- Odczytuj omówienia [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) i [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview).
+- Uzyskaj [Azure Advisor zalecenia dotyczące kosztów](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
 - Dowiedz się, jak [zoptymalizować koszty z zaleceń](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)i [uniknąć nieoczekiwanych opłat](https://docs.microsoft.com/azure/billing/billing-getting-started).
 - Dowiedz się więcej o zestawie [narzędzi optymalizacji zasobów platformy Azure (ARO)](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
@@ -306,11 +306,11 @@ W Azure Cost Management można:
 
 **Dowiedz się więcej:**
 
-- [Zapoznaj się z omówieniem](https://docs.microsoft.com/azure/cost-management/overview) usługi Azure Cost Management.
-- [Dowiedz się, jak](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) zoptymalizować inwestycję w chmurę za pomocą usługi Azure Cost Management.
-- [Dowiedz się, jak](https://docs.microsoft.com/azure/cost-management/use-reports) używać raportów usługi Azure Cost Management.
-- [Zapoznaj się z samouczkiem](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) dotyczącym optymalizowania kosztów za pomocą rekomendacji.
-- [Przejrzyj](https://docs.microsoft.com/rest/api/consumption/budgets) interfejsy API użycia platformy Azure.
+- Zapoznaj się z [omówieniem Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview).
+- Dowiedz się, jak [zoptymalizować inwestycję w chmurę za pomocą Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices).
+- Dowiedz się, jak używać [raportów Azure Cost Management](https://docs.microsoft.com/azure/cost-management/use-reports).
+- Zapoznaj się z samouczkiem dotyczącym [optymalizacji kosztów z zaleceń](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations).
+- Przejrzyj [interfejsy API użycia platformy Azure](https://docs.microsoft.com/rest/api/consumption/budgets).
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>Najlepsze rozwiązanie: implementowanie budżetów grup zasobów
 
@@ -321,8 +321,8 @@ Grupy zasobów są często używane w celu reprezentowania granic kosztów. Bior
 
 **Dowiedz się więcej:**
 
-- [Dowiedz się, jak](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario) zarządzać kosztami przy użyciu budżetów platformy Azure.
-- [Postępuj zgodnie z samouczkiem](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets), aby utworzyć budżet platformy Azure i zarządzać nim.
+- Dowiedz się, jak [zarządzać kosztami przy użyciu budżetów platformy Azure](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario).
+- Zapoznaj się z samouczkiem dotyczącym [tworzenia i zarządzania budżetem platformy Azure](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets).
 
 ## <a name="best-practice-review-azure-advisor-recommendations"></a>Najlepsze rozwiązanie: przegląd Azure Advisor zaleceń
 
@@ -344,7 +344,7 @@ Po przeniesieniu zasobów na platformę Azure i włączeniu dla nich rejestrowan
 
 **Dowiedz się więcej:**
 
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs) na temat monitorowania użycia i szacowanych kosztów.
+- Dowiedz się więcej na temat [monitorowania użycia i szacowanych kosztów](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs).
 
 ## <a name="best-practice-optimize-storage"></a>Najlepsze rozwiązanie: Optymalizowanie magazynu
 
@@ -358,7 +358,8 @@ Identyfikowanie i przenoszenie nieaktualnych danych do tańszych obszarów magaz
 **Dowiedz się więcej:**
 
 - Dowiedz się więcej o [warstwach dostępu](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers).
-- [Zapoznaj się z omówieniem](https://docs.microsoft.com/azure/azure-monitor/overview) rozwiązania StorSimple i z [cennikiem rozwiązania StorSimple](https://azure.microsoft.com/pricing/details/storsimple).
+- Zapoznaj się z [omówieniem StorSimple](https://docs.microsoft.com/azure/azure-monitor/overview).
+- Zapoznaj się z [cennikiem StorSimple](https://azure.microsoft.com/pricing/details/storsimple).
 
 ## <a name="best-practice-automate-vm-optimization"></a>Najlepsze rozwiązanie: Automatyzacja optymalizacji maszyn wirtualnych
 
@@ -368,9 +369,9 @@ Możesz zoptymalizować maszynę wirtualną za pomocą Azure Automation, zestaw�
 
 **Dowiedz się więcej:**
 
-- [Dowiedz się](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision), jak używać pionowego skalowania automatycznego.
-- [Zaplanuj](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start) automatyczne uruchamianie maszyny wirtualnej.
-- [Dowiedz się](https://docs.microsoft.com/azure/automation/automation-solution-vm-management), jak uruchamiać maszyny wirtualne lub zatrzymywać je poza godzinami pracy w usłudze Azure Automation.
+- Dowiedz się więcej na temat [skalowania pionowego](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision).
+- Przejrzyj [Azure DevTest Labs: Zaplanuj Autostart maszyny wirtualnej](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start).
+- Dowiedz się [, jak uruchamiać lub zatrzymywać maszyny wirtualne w godzinach Azure Automation](https://docs.microsoft.com/azure/automation/automation-solution-vm-management).
 - Uzyskaj więcej informacji na temat [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview)i [zestawu narzędzi optymalizacji zasobów platformy Azure (ARO)](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
 ## <a name="best-practice-use-logic-apps-and-runbooks-with-budgets-api"></a>Najlepsze rozwiązanie: używanie Logic Apps i elementów Runbook z interfejsem API budżetów
