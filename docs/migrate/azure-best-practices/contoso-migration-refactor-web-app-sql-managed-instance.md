@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: fd8c7e81d457ee3a63186217fda72223272ad3b7
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 1de34dc3a37414a87bdc89b233af2e2564d44b10
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815263"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023495"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -179,7 +179,7 @@ Administratorzy firmy Contoso konfigurują sieć wirtualną w następujący spos
 
 **Potrzebujesz dodatkowej pomocy?**
 
-- Zapoznaj się z omówieniem [wystąpienia zarządzanego usługi SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
+- Zapoznaj się z [omówieniem SQL Database wystąpienia zarządzanego](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
 - Dowiedz się, jak [utworzyć sieć wirtualną dla wystąpienia zarządzanego usługi SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet).
 - Dowiedz się, jak [skonfigurować komunikację równorzędną](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering).
 - Dowiedz się, jak [zaktualizować ustawienia DNS usługi Azure Active Directory](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance).

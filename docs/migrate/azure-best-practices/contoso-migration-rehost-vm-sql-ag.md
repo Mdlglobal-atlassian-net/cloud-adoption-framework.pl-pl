@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c356554dbdca417708d7eb9698d9729270d8e981
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: e8ec09b9653af39e950dd5cbd814417b35022963
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401021"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023478"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -183,7 +183,7 @@ Administratorzy firmy Contoso konfigurują klaster w następujący sposób:
 **Potrzebujesz dodatkowej pomocy?**
 
 - [Uzyskaj pomoc](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings) przy aprowizacji maszyny wirtualnej programu SQL Server.
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms) o konfigurowaniu maszyn wirtualnych dla różnych jednostek SKU programu SQL Server.
+- Dowiedz się więcej o [konfigurowaniu maszyn wirtualnych dla różnych jednostek sku SQL Server](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms).
 
 ## <a name="step-2-deploy-and-set-up-the-cluster"></a>Krok 2. wdrażanie i Konfigurowanie klastra
 
@@ -312,8 +312,8 @@ Tworzą regułę w następujący sposób:
 
 **Potrzebujesz dodatkowej pomocy?**
 
-- [Zapoznaj się z omówieniem](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview) usługi Azure Load Balancer.
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal) na temat tworzenia modułu równoważenia obciążenia.
+- Zapoznaj się z [omówieniem Azure Load Balancer](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview).
+- Dowiedz się więcej [na temat tworzenia modułu równoważenia obciążenia](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal).
 
 ## <a name="step-4-prepare-azure-for-azure-migrate"></a>Krok 4. Przygotowywanie platformy Azure dla Azure Migrate
 
@@ -381,7 +381,7 @@ Po migracji firma Contoso chce nawiązać połączenie z maszynami wirtualnymi p
 
 5. Potrzebujesz dodatkowej pomocy?
 
-   - [Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration) przygotowywaniu maszyn wirtualnych do migracji.
+   - Dowiedz się więcej o [przygotowywaniu maszyn wirtualnych do migracji](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration).
 
 ## <a name="step-6-replicate-the-on-premises-vms-to-azure"></a>Krok 6. replikowanie lokalnych maszyn wirtualnych na platformę Azure
 
@@ -493,7 +493,7 @@ Po skonfigurowaniu wszystkich elementów firma Contoso ma teraz działającą gr
 
 - Dowiedz się więcej na temat [grupy dostępności](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group) i [odbiornika](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener).
 - Ręcznie [skonfiguruj klaster tak, aby używał adresu IP modułu równoważenia obciążenia](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address).
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2) na temat tworzenia i używania sygnatur dostępu współdzielonego.
+- Dowiedz się więcej na temat [tworzenia i używania sygnatur dostępu współdzielonego](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2).
 
 ## <a name="step-9-migrate-the-vm-with-azure-migrate"></a>Krok 9. Migrowanie maszyny wirtualnej za pomocą Azure Migrate
 
@@ -545,9 +545,9 @@ W ostatnim kroku procesu migracji administratorzy firmy Contoso aktualizują par
 
 **Potrzebujesz dodatkowej pomocy?**
 
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure) o próbnym uruchamianiu trybu failover.
+- Dowiedz się więcej o [uruchamianiu testowej pracy w trybie failover](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure).
 - [Dowiedz się](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans), jak utworzyć plan odzyskiwania.
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) na temat przechodzenia w tryb failover na platformie Azure.
+- Dowiedz się więcej o przełączaniu do trybu failover [na platformie Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover).
 
 ### <a name="clean-up-after-migration"></a>Czyszczenie zasobów po migracji
 

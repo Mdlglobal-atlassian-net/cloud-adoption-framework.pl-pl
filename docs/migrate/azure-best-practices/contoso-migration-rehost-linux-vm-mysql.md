@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 61398802202a33f9c514cf5a5b6a2528e7b662e4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ca635542f68a69d4e823b2917f69646074438550
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215997"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023529"
 ---
 <!-- cSpell:ignore givenscj OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
 
@@ -151,7 +151,7 @@ Składniki te są konfigurowane w następujący sposób:
 
 **Potrzebujesz dodatkowej pomocy?**
 
-[Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate) konfigurowaniu Azure Migrate: Narzędzia migracji serwera.
+Dowiedz się więcej na temat konfigurowania [Azure Migrate: Narzędzia migracji serwera](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool).
 
 ## <a name="step-2-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>Krok 2: Przygotowanie lokalnego programu VMware dla Azure Migrate: Migracja serwera
 
@@ -167,7 +167,7 @@ Po przeprowadzeniu migracji na platformę Azure firma Contoso chce mieć możliw
 
 **Potrzebujesz dodatkowej pomocy?**
 
-- [Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration) przygotowywaniu maszyn wirtualnych do migracji.
+- Dowiedz się więcej o [przygotowywaniu maszyn wirtualnych do migracji](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration).
 
 ## <a name="step-3-replicate-vm"></a>Krok 3. replikowanie maszyny wirtualnej
 
@@ -405,8 +405,8 @@ W ostatnim kroku procesu migracji Administratorzy firmy Contoso aktualizują par
 
 **Potrzebujesz dodatkowej pomocy?**
 
-- [Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) uruchamianiu migracji testowej.
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) o migracji maszyn wirtualnych do platformy Azure.
+- Dowiedz się więcej o [uruchamianiu migracji testowej](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration).
+- Dowiedz się więcej o [migrowaniu maszyn wirtualnych na platformę Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms).
 
 ## <a name="review-the-deployment"></a>Przegląd wdrożenia
 
@@ -438,9 +438,9 @@ Aby uzyskać więcej informacji, zobacz [najlepsze rozwiązania w zakresie zabez
 
 W celu zapewnienia ciągłości działania i odzyskiwania po awarii firma Contoso podejmuje następujące działania:
 
-- **Zachowaj bezpieczeństwo danych.** Firma Contoso tworzy kopie zapasowe danych na maszynie wirtualnej aplikacji za pomocą usługi Azure Backup. [Dowiedz się więcej](https://docs.microsoft.com/azure/backup/backup-overview). Nie trzeba konfigurować kopii zapasowej bazy danych. Usługa Azure Database for MySQL automatycznie tworzy kopie zapasowe i magazyny serwerów. Wybrano opcję użycia nadmiarowości geograficznej bazy danych, aby była odporna na awarie i gotowa do produkcji.
+- **Zachowaj bezpieczeństwo danych.** Firma Contoso tworzy kopię zapasową danych na maszynie wirtualnej aplikacji przy użyciu usługi [Azure Backup](https://docs.microsoft.com/azure/backup/backup-overview) . Nie trzeba konfigurować kopii zapasowej bazy danych. Usługa Azure Database for MySQL automatycznie tworzy kopie zapasowe i magazyny serwerów. Wybrano opcję użycia nadmiarowości geograficznej bazy danych, aby była odporna na awarie i gotowa do produkcji.
 
-- **Zapewnienie ciągłości działania aplikacji.** Firma Contoso replikuje maszyny wirtualne aplikacji w regionie pomocniczym platformy Azure za pomocą usługi Site Recovery. [Dowiedz się więcej](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
+- **Zapewnienie ciągłości działania aplikacji.** Firma Contoso replikuje maszyny wirtualne aplikacji w regionie pomocniczym platformy Azure za pomocą usługi Site Recovery. Aby uzyskać więcej informacji, zobacz [Szybki Start: Konfigurowanie odzyskiwania po awarii w regionie pomocniczym platformy Azure dla maszyny wirtualnej platformy Azure](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licencjonowanie i optymalizacja kosztów
 

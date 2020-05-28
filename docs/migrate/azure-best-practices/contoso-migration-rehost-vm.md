@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 61edff97499b0d9bf5b9d5e4349c548431bdf395
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 146760046dc82b80e347ca2b71ca2ac5f8c090e0
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223562"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023427"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -167,8 +167,7 @@ Składniki te są konfigurowane w następujący sposób:
 
 **Potrzebujesz dodatkowej pomocy?**
 
-[Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate) konfigurowaniu Azure Migrate: Narzędzia migracji serwera.
-
+Dowiedz się więcej na temat konfigurowania [Azure Migrate: Narzędzia migracji serwera](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool).
 ### <a name="prepare-on-premises-vms"></a>Przygotowywanie lokalnych maszyn wirtualnych
 
 Po migracji firma Contoso chce nawiązać połączenie z maszynami wirtualnymi platformy Azure i umożliwić platformie Azure zarządzanie maszynami wirtualnymi. W tym celu administratorzy firmy Contoso wykonują następujące czynności przed migracją:
@@ -196,7 +195,7 @@ Po migracji firma Contoso chce nawiązać połączenie z maszynami wirtualnymi p
 
 5. Potrzebujesz dodatkowej pomocy?
 
-   - [Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration) przygotowywaniu maszyn wirtualnych do migracji.
+   - Dowiedz się więcej o [przygotowywaniu maszyn wirtualnych do migracji](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration).
 
 ## <a name="step-2-replicate-the-on-premises-vms"></a>Krok 2. replikowanie lokalnych maszyn wirtualnych
 
@@ -283,8 +282,8 @@ Teraz Administratorzy firmy Contoso uruchamiają pełną migrację.
 
 **Potrzebujesz dodatkowej pomocy?**
 
-- [Dowiedz się więcej o](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) uruchamianiu migracji testowej.
-- [Dowiedz się więcej](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) o migracji maszyn wirtualnych do platformy Azure.
+- Dowiedz się więcej o [uruchamianiu migracji testowej](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration).
+- Dowiedz się więcej o [migrowaniu maszyn wirtualnych na platformę Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms).
 
 ## <a name="clean-up-after-migration"></a>Czyszczenie zasobów po migracji
 

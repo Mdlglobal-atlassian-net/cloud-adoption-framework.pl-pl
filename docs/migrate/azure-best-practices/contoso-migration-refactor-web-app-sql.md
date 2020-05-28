@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 24259e0d9f011241a503aca143f4d03c2dc1fe6a
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 3372db305c2353b10fb33deb43585ee182836efd
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756026"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023512"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -163,7 +163,7 @@ Firma Contoso przeprowadzi migrację w następujący sposób:
 **Potrzebujesz dodatkowej pomocy?**
 
 - [Uzyskaj pomoc](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) przy aprowizacji bazy danych SQL Database.
-- [Dowiedz się więcej na temat](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) limitów zasobów rdzeń wirtualny.
+- Dowiedz się więcej na temat [limitów zasobów rdzeń wirtualny](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools).
 
 ## <a name="step-2-assess-the-database-using-database-migration-assistant-dma-and-migrate-it-using-azure-database-migration-service-dms"></a>Krok 2. Ocena bazy danych przy użyciu Asystent migracji bazy danych (DMA) i migrowanie jej przy użyciu Azure Database Migration Service (DMS)
 

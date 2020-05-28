@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ba44b786e63a0f7a9c63a527b6abbb1074a410fb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 359282dc962c72334bd390324fab0ca66f62a65c
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219550"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023410"
 ---
 # <a name="create-update-schedules"></a>Tworzenie harmonogramów aktualizacji
 
@@ -20,7 +20,7 @@ Harmonogramy aktualizacji można zarządzać przy użyciu Azure Portal lub nowyc
 
 Aby utworzyć harmonogram aktualizacji za pośrednictwem Azure Portal, zobacz [Planowanie wdrożenia aktualizacji](https://docs.microsoft.com/azure/automation/automation-tutorial-update-management#schedule-an-update-deployment).
 
-Moduł AZ. Automation obsługuje teraz Konfigurowanie zarządzania aktualizacjami przy użyciu Azure PowerShell. [Wersja 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) modułu dodaje obsługę polecenia cmdlet [New-AzAutomationUpdateManagementAzureQuery](https://docs.microsoft.com/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) . To polecenie cmdlet umożliwia użycie tagów, lokalizacji i zapisanych wyszukiwań w celu skonfigurowania harmonogramów aktualizacji dla elastycznej grupy maszyn.
+`Az.Automation`Moduł obsługuje teraz Konfigurowanie zarządzania aktualizacjami przy użyciu Azure PowerShell. [Wersja 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) modułu dodaje obsługę polecenia cmdlet [New-AzAutomationUpdateManagementAzureQuery](https://docs.microsoft.com/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) . To polecenie cmdlet umożliwia użycie tagów, lokalizacji i zapisanych wyszukiwań w celu skonfigurowania harmonogramów aktualizacji dla elastycznej grupy maszyn.
 
 ## <a name="example-script"></a>Przykładowy skrypt
 

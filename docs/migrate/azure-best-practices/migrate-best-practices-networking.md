@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8e0c340e8d0dffb36c692ee3f3b8d4b0ece978a0
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 5064de8d3fe2ca435aba7aa6322d0e6e47e65c1a
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861093"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023461"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -376,9 +376,9 @@ _Przykład grupy zabezpieczeń aplikacji_
 
 | **Nazwa reguły** | **Przeznaczenie** | **Szczegóły** |
 | --- | --- | --- |
-| Allow-HTTP-Inbound-Internet | Zezwalanie na ruch z Internetu do serwerów internetowych. Ruch przychodzący z Internetu jest blokowany przez domyślną regułę zabezpieczeń DenyAllInbound, dlatego dodatkowa reguła nie jest potrzebna w przypadku grup zabezpieczeń aplikacji AsgLogic i AsgDb. | Priorytet: 100 <br><br> Źródło: Internet <br><br> Port źródłowy:\* <br><br> Miejsce docelowe: AsgWeb <br><br> Port docelowy: 80 <br><br> Protokół: TCP <br><br> Dostęp: Zezwalaj. |
-| Deny-Database-All | Domyślna reguła zabezpieczeń AllowVNetInBound zezwala na całą komunikację między zasobami w tej samej sieci wirtualnej, ta zasada jest potrzebna w celu blokowania ruchu ze wszystkich zasobów. | Priorytet: 120 <br><br> Źródło: \* <br><br> Port źródłowy:\* <br><br> Miejsce docelowe: AsgDb <br><br> Port docelowy: 1433 <br><br> Protokół: wszystkie <br><br> Dostęp: Odmów. |
-| Allow-Database-BusinessLogic | Zezwolenie na ruch z grupy zabezpieczeń aplikacji AsgLogic do grupy zabezpieczeń aplikacji AsgDb. Priorytet tej reguły jest wyższy niż reguła Odmów-Database-All, więc ta reguła jest przetwarzana jako pierwsza. W związku z tym, ruch z grupy zabezpieczeń aplikacji AsgLogic jest dozwolony i cały inny ruch jest blokowany. | Priorytet: 110 <br><br> Źródło: AsgLogic <br><br> Port źródłowy:\* <br><br> Miejsce docelowe: AsgDb <br><br> Port docelowy: 1433 <br><br> Protokół: TCP <br><br> Dostęp: Zezwalaj. |
+| `Allow-HTTP-Inbound-Internet` | Zezwalanie na ruch z Internetu do serwerów internetowych. Ruch przychodzący z Internetu jest odrzucany przez `DenyAllInbound` domyślną regułę zabezpieczeń, dlatego nie jest wymagana żadna dodatkowa reguła dla `AsgLogic` `AsgDb` grup zabezpieczeń aplikacji lub. | Priorytet`100`<br><br> Źródło: `internet`<br/><br/> Port źródłowy:`*`<br/><br/> Punktu`AsgWeb`<br/><br/> Port docelowy:`80`<br/><br/> Protokol`TCP`<br/><br/> Niego`Allow` |
+| `Deny-Database-All` | `AllowVNetInBound`domyślna reguła zabezpieczeń zezwala na wszelką komunikację między zasobami w tej samej sieci wirtualnej, aby uniemożliwić ruch ze wszystkich zasobów. | Priorytet`120`<br/><br/> Źródło: `*`<br/><br/> Port źródłowy:`*`<br/><br/> Punktu`AsgDb`<br/><br/> Port docelowy:`1433`<br/><br/> Protokol`All`<br/><br/> Dostęp: `Deny` . |
+| `Allow-Database-BusinessLogic` | Zezwalaj na ruch z `AsgLogic` grupy zabezpieczeń aplikacji do `AsgDb` grupy zabezpieczeń aplikacji. Priorytet tej reguły jest wyższy niż `Deny-Database-All` reguła, więc ta reguła jest przetwarzana jako pierwsza. W związku z tym, ruch z `AsgLogic` grupy zabezpieczeń aplikacji jest dozwolony i cały inny ruch jest blokowany. | Priorytet`110`<br/><br/> Źródło: `AsgLogic`<br/><br/> Port źródłowy:`*`<br/><br/> Punktu`AsgDb`<br/><br/> Port docelowy:`1433`<br/><br/> Protokol`TCP`<br/><br/> Niego`Allow` |
 
 <!--markdownlint-enable MD033 -->
 
