@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 574dba7b2c5db10b007dcf6cb7ecdd6dc93a0111
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: dd3d1b0bcbef071c1b5d819071a0f539948ec273
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401164"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861059"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -255,7 +255,7 @@ W [przewodniku po migracji bazy danych na platformę Azure](https://datamigratio
 
 Jeśli projekty nie są śledzone i zarządzane, istnieje większe prawdopodobieństwo wystąpienia problemów. Uważamy, że aby osiągnąć zamierzony cel, należy korzystać z narzędzia do zarządzania projektami. Dostępnych jest wiele różnych narzędzi i menedżerowie projektów w organizacji mogą już mieć swoje ulubione.
 
-Sugerowanym narzędziem do zarządzania projektami podczas migracji do chmury jest usługa Azure DevOps. Aby przyspieszyć korzystanie z usługi Azure DevOps, przewodnik Cloud Adoption Framework obejmuje narzędzie do automatycznego wdrażania szablonu projektu. Ten szablon obejmuje zadania często wykonywane podczas pracy związanej z migracją. Wdróż ten szablon przy użyciu [tych instrukcji](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template). Następnie możesz zmodyfikować ten szablon w celu odzwierciedlenia [obciążeń](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) i [zasobów](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) do zmigrowania.
+Sugerowanym narzędziem do zarządzania projektami podczas migracji do chmury jest usługa Azure DevOps. Aby przyspieszyć korzystanie z usługi Azure DevOps, przewodnik Cloud Adoption Framework obejmuje narzędzie do automatycznego wdrażania szablonu projektu. Ten szablon obejmuje zadania często wykonywane podczas pracy związanej z migracją. Wdróż szablon przy użyciu instrukcji w temacie [Plan wdrożenia chmury i usługi Azure DevOps](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template). Następnie możesz zmodyfikować ten szablon w celu odzwierciedlenia [obciążeń](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) i [zasobów](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) do zmigrowania.
 
 Firma Microsoft oferuje też następujące narzędzia do zarządzania projektami, które mogą ze sobą współdziałać, aby zapewnić szersze możliwości:
 

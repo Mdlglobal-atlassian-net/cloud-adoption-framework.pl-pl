@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 37826614e405ddb5cb15db62ffce7cfe43b2ec20
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 88f153d80df79098c4228a6012f513f42f3a2f64
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216643"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756417"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Specjalizacja platformy dotycząca zarządzania chmurą
 
@@ -32,7 +32,7 @@ W tej tabeli przedstawiono kilka typowych procesów i narzędzi oraz potencjalne
 
 | Proces | Narzędzie | Przeznaczenie  | Sugerowany poziom zarządzania |
 |---|---|---|---|
-| Ulepszanie projektu systemu | Azure Architecture Framework | Ulepszanie projektu architektury platformy w celu usprawnienia operacji | Nie dotyczy |
+| Ulepszanie projektu systemu | Dobrze zaprojektowana struktura platformy Microsoft Azure | Ulepszanie projektu architektury platformy w celu usprawnienia operacji | Nie dotyczy |
 | Automatyzacja korygowania | Azure Automation | Reagowanie na zaawansowane dane platformy przy użyciu automatyzacji specyficznej dla platformy | Operacje platformy |
 | Wykaz usług | Centrum aplikacji zarządzanych | Udostępnianie samoobsługowego katalogu zatwierdzonych rozwiązań, które spełniają standardy organizacji | Operacje platformy |
 | Wydajność kontenerów | Usługa Azure Monitor dla kontenerów | Monitorowanie i diagnostyka kontenerów | Operacje platformy |
@@ -61,9 +61,9 @@ Specjalizacja platformy obejmuje zdyscyplinowane wykonywanie czterech poniższyc
 
 Ulepszanie projektu systemu to najbardziej efektywne podejście do usprawnienia operacji na każdej typowej platformie. Ulepszenia projektu systemu sprzyjają wzrostowi stabilności i ograniczeniu przerw w działaniu. Projektowanie poszczególnych systemów jest poza zakresem widoku środowiska w rozwiązaniu Cloud Adoption Framework dla platformy Azure.
 
-W ramach uzupełnienia tego rozwiązania usługa Azure Architecture Framework oferuje najlepsze rozwiązania w zakresie poprawy odporności i projektowania określonego systemu. Te udoskonalenia projektowe można stosować do projektowania systemów platformy lub określonego obciążenia.
+W ramach uzupełnienia podręcznika Cloud Adoption Framework Dobrze zaprojektowana struktura platformy Microsoft Azure oferuje najlepsze rozwiązania w zakresie poprawy odporności i projektowania określonego systemu. Te udoskonalenia projektowe można stosować do projektowania systemów platformy lub określonego obciążenia.
 
-Usługa Azure Architecture Framework koncentruje się na poprawie pięciu filarów projektowania systemu:
+Dobrze zaprojektowana struktura platformy Microsoft Azure koncentruje się na poprawie pięciu filarów projektowania systemu:
 
 - **Skalowalność:** Skalowanie typowych zasobów platformy w celu obsługi zwiększonego obciążenia.
 - **Dostępność:** Ograniczenie przerw w działaniu przez zwiększenie potencjału czasu pracy.
@@ -75,7 +75,7 @@ Dług techniczny i błędy architektury powodują większość przerw w działal
 
 Na poniższej karcie **Zautomatyzowane korygowanie** pokazano sposoby korygowania długu technicznego, którego nie można lub nie należy się pozbywać.
 
-Dowiedz się więcej na temat usługi [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/guide/pillars), aby ulepszyć projektowanie systemu.
+Dowiedz się więcej na temat [Dobrze zaprojektowanej struktury platformy Microsoft Azure](https://docs.microsoft.com/azure/architecture/guide/pillars), aby ulepszyć projektowanie systemu.
 
 W miarę ulepszania projektu systemu wracaj do tego artykułu, aby znaleźć nowe możliwości ulepszania i skalowania tych ulepszeń w swoim środowisku.
 

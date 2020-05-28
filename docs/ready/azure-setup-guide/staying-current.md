@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: d0c3379da2962236dfb64ff45a5a9495b8a3fc36
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 25972ae001dd9cb153a2f6ae5e75f627ce86b7d6
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80808785"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756315"
 ---
 <!-- cSpell:ignore jelledruyts andym endjin -->
 
@@ -31,7 +31,7 @@ Tempo zmian platform w chmurze, takich jak Microsoft Azure, jest większe niż t
 Następujące zasoby mogą pomóc pozostać na bieżąco z platformą Azure:
 
 - [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview)
-  - Usługa Service Health i alerty oferują terminowe powiadomienia o aktualnych problemach z usługą, planowanej konserwacji i poradach dotyczących kondycji. Ten zasób zawiera również informacje o funkcjach usuwanych z platformy Azure.
+  - Alerty usługi Service Health oferują szybkie powiadomienia o aktualnych problemach z usługą, planowanej konserwacji i poradach dotyczących kondycji. Ten zasób zawiera również informacje o funkcjach usuwanych z platformy Azure.
 - [Aktualizacje platformy Azure](https://azure.microsoft.com/updates)
   - Zasubskrybuj aktualizacje platformy Azure, aby odbierać powiadomienia o aktualizacjach produktów. Link do skróconych podsumowań z dodatkowymi informacjami, które ułatwiają śledzenie aktualizacji.
   - Subskrybuj przy użyciu kanału informacyjnego [RSS](https://azurecomcdn.azureedge.net/updates/feed).
@@ -58,7 +58,7 @@ W przypadku bardziej zaawansowanej zawartości, która pomaga być na bieżąco 
   - Subskrybuj przy użyciu kanału informacyjnego [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed).
 - [Azure Charts](https://azurecharts.com)*
   - Ta wizualizacja przedstawia wszystkie aktualizacje platformy Azure w ciągu ostatnich sześciu miesięcy. Zawiera ona inne przydatne wykresy i narzędzia ułatwiające śledzenie zmian platformy Azure.
-- [AzAdvertizer](https://www.azadvertizer.net)*
+- [Azadvertizer](https://www.azadvertizer.net)*
   - Śledzenie wersji i zmian w możliwościach ładu platformy Azure (np. usługa Azure Policy, inicjatywy zasad, aliasy zasad i kontrola dostępu na podstawie ról).
 - [Azure Weekly](https://azureweekly.info)*
   - Ten biuletyn udostępniany przez witrynę [endjin](https://endjin.com) zawiera tygodniowe podsumowanie najważniejszych wiadomości o platformie Microsoft Azure. Obejmuje również interesującą zawartość historyczną.

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0be49567a459915dbe4b8e8db90feae9b47a1e5c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 857cc9622e71d6ee464fd9d324c6d94e77b0276e
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223188"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756349"
 ---
 <!-- cSpell:ignore timleyden tileyden -->
 
@@ -63,9 +63,9 @@ Aby dowiedzieć się więcej, zapoznaj się z [dokumentacją usługi Azure Monit
 
 # <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
-Usługa Azure Service Health udostępnia spersonalizowany widok kondycji usług platformy Azure i używanych regionów. Informacje na temat aktywnych problemów są publikowane w usłudze Service Health, aby ułatwić zrozumienie wpływu na zasoby. Dzięki regularnym aktualizacjom będziesz otrzymywać informacje o rozwiązaniu problemu.
+Usługa Azure Service Health udostępnia spersonalizowany widok kondycji usług platformy Azure i używanych regionów. Informacje na temat aktywnych problemów są publikowane w usłudze Azure Service Health, aby ułatwić zrozumienie wpływu na zasoby. Dzięki regularnym aktualizacjom będziesz otrzymywać informacje o rozwiązaniu problemu.
 
-Publikujemy też zdarzenia planowanej konserwacji usługi Service Health, aby informować Cię o zmianach, które mogą wpłynąć na dostępność zasobów. Skonfiguruj alerty usługi Service Health, aby otrzymywać powiadomienia, gdy problemy z usługą, planowana konserwacja lub inne zmiany mogą mieć wpływ na usługi platformy Azure i regiony, których używasz.
+Publikujemy też zdarzenia planowanej konserwacji usługi Azure Service Health, aby informować Cię o zmianach, które mogą wpłynąć na dostępność zasobów. Skonfiguruj alerty usługi Service Health, aby otrzymywać powiadomienia, gdy problemy z usługą, planowana konserwacja lub inne zmiany mogą mieć wpływ na usługi platformy Azure i regiony, których używasz.
 
 Usługa Azure Service Health udostępnia następujące dane:
 
@@ -83,7 +83,7 @@ Aby skonfigurować alert usługi Service Health:
 
 1. Przejdź do pozycji **Service Health**.
 2. Wybierz pozycję **Alerty dotyczące kondycji**.
-3. Utwórz alert dotyczący kondycji usługi.
+3. Utwórz alert usługi Service Health.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts]" submitText="Go to Service Health" :::
 
@@ -91,11 +91,11 @@ Aby skonfigurować alert usługi Service Health:
 
 ::: zone target="docs"
 
-Aby skonfigurować alert usługi Service Health, przejdź do witryny [Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts).
+Aby skonfigurować alert usługi Azure Service Health, przejdź do witryny [Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts).
 
 ## <a name="learn-more"></a>Dowiedz się więcej
 
-Aby dowiedzieć się więcej, zapoznaj się z [dokumentacją usługi Azure Service Health](https://docs.microsoft.com/azure/service-health).
+Aby uzyskać więcej informacji, zobacz [Azure Service Health](https://docs.microsoft.com/azure/service-health).
 
 ::: zone-end
 
@@ -107,7 +107,7 @@ Azure Advisor to bezpłatny, spersonalizowany konsultant, który ułatwia stosow
 - **Bezpieczeństwo:** w celu wykrywania zagrożeń i luk w zabezpieczeniach, które mogą prowadzić do naruszeń zabezpieczeń. Rekomendacje mogą obejmować stosowanie szyfrowania dysku i włączanie sieciowych grup zabezpieczeń.
 - **Wydajność:** w celu zwiększenia szybkości aplikacji. Rekomendacje mogą obejmować zwiększanie wydajności zapytań języka SQL przez tworzenie indeksów lub ponowne konfigurowanie ustawień usługi Traffic Manager.
 - **Koszty:** w celu zoptymalizowania i zredukowania ogólnych wydatków związanych z platformą Azure. Rekomendacje mogą obejmować zmianę rozmiaru lub zamykanie rzadko używanych maszyn wirtualnych lub przełączanie do rezerwacji platformy Azure w celu obniżenia całkowitego kosztu posiadania.
-- **Doskonałość operacyjna:** Poprawa wydajności procesów i przepływów pracy oraz możliwości zarządzania nimi. Zalecenia mogą obejmować konfigurowanie i wymuszanie reguł usługi Azure Policy, naprawianie nieprawidłowych reguł alertów dzienników oraz konfigurowanie alertów usługi Azure Service Health.
+- **Doskonałość operacyjna:** Poprawa wydajności procesów i przepływów pracy oraz możliwości zarządzania nimi. Zalecenia mogą obejmować konfigurowanie i wymuszanie reguł usługi Azure Policy, naprawianie nieprawidłowych reguł alertów dzienników oraz konfigurowanie alertów usługi Service Health.
 
 Rekomendacje w usłudze Advisor są tworzone w oparciu o wdrażane zasoby i akcje wykonywane na platformie Azure. Można regularnie zapoznawać się z najnowszymi rekomendacjami usługi Advisor.
 
@@ -135,7 +135,7 @@ Usługa Azure Security Center również odgrywa ważną rolę w strategii monito
 
 Gdy usługa Security Center zidentyfikuje zagrożenie, wyzwala alert zabezpieczeń z krokami, które należy wykonać w odpowiedzi na atak. Udostępnia również raport z informacjami na temat wykrytego zagrożenia.
 
-Usługa Azure Security Center jest oferowana w dwóch warstwach: bezpłatna i standardowa. Funkcje, takie jak rekomendacje dotyczące zabezpieczeń, są dostępne bezpłatnie. Warstwa standardowa zapewnia dodatkową ochronę, taką jak zaawansowane wykrywanie zagrożeń i ochrona obciążeń chmury hybrydowej.
+Usługa Azure Security Center jest oferowana w dwóch warstwach: bezpłatna i standardowa. Funkcje, takie jak rekomendacje dotyczące zabezpieczeń, są dostępne bezpłatnie. Warstwa Standardowa zapewnia dodatkową ochronę, taką jak zaawansowane wykrywanie zagrożeń i ochrona obciążeń chmury hybrydowej.
 
 ::: zone target="chromeless"
 

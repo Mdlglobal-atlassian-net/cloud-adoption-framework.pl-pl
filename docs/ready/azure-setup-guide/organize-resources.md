@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 93aec136df947f9df94d188dffce79f037cf8fed
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 0f85ccbd46587724cba23b859722c4f4fcdc3e88
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621559"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756332"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -55,21 +55,21 @@ Możesz utworzyć grupę zarządzania, dodatkowe subskrypcje lub grupy zasobów.
 
 Utwórz grupę zarządzania, która ułatwia zarządzanie dostępem, zasadami i zgodnością w wielu subskrypcjach.
 
-1. Przejdź do pozycji [Grupy zarządzania](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade).
+1. Przejdź do [grup zarządzania](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade).
 2. Wybierz pozycję **Dodaj grupę zarządzania**.
 
 ### <a name="create-a-subscription"></a>Tworzenie subskrypcji
 
 Subskrypcje umożliwiają zarządzanie kosztami i zasobami, które są tworzone przez użytkowników, zespoły lub projekty.
 
-1. Przejdź do pozycji [Subskrypcje](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade).
+1. Przejdź do [subskrypcji](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade).
 1. Wybierz pozycję **Dodaj**.
 
 ### <a name="create-a-resource-group"></a>Tworzenie grupy zasobów
 
 Utwórz grupę zasobów do przechowywania zasobów, takich jak aplikacje internetowe, bazy danych i konta magazynu, które współużytkują ten sam cykl życia, uprawnienia i zasady.
 
-1. Przejdź do pozycji [Grupy zasobów](https://portal.azure.com/#create/Microsoft.ResourceGroup).
+1. Przejdź do [grup zasobów](https://portal.azure.com/#create/Microsoft.ResourceGroup).
 1. Wybierz pozycję **Dodaj**.
 1. Wybierz **subskrypcję**, w ramach której chcesz utworzyć grupę zasobów.
 1. Wprowadź nazwę **grupy zasobów**.
@@ -146,20 +146,20 @@ Poniższa tabela zawiera wzorce nazewnictwa dla kilku przykładowych typów zaso
 
 | Jednostka | Zakres | Długość | Wielkość liter | Prawidłowe znaki | Sugerowany wzorzec | Przykład |
 | --- | --- | --- | --- | --- | --- | --- |
-| Grupa zasobów | Subskrypcja | 1-90 | Bez uwzględniania wielkości liter | Alfanumeryczne, podkreślenie, nawiasy, łącznik, kropka (z wyjątkiem znaków na końcu) i znaki Unicode | `<service short name>-<environment>-rg` | `profx-prod-rg` |
-| Zestaw dostępności | Grupa zasobów | 1-80 | Bez uwzględniania wielkości liter | Alfanumeryczne, podkreślenie i łącznik | `<service-short-name>-<context>-as` | `profx-sql-as` |
-| Tag | Skojarzona jednostka | 512 (nazwa), 256 (wartość) | Bez uwzględniania wielkości liter | Alfanumeryczne | `"key" : "value"` | `"department" : "Central IT"` |
+| Grupa zasobów | Subskrypcja | 1-90 | Bez uwzględniania wielkości liter | Alfanumeryczne, podkreślenie, nawiasy, łącznik, kropka (z wyjątkiem znaków na końcu) i znaki Unicode | `<service short name>-<environment>-Rg` | `profx-prod-rg` |
+| Zestaw dostępności | Grupa zasobów | 1-80 | Bez uwzględniania wielkości liter | Alfanumeryczne, podkreślenie i łącznik | `<service-short-name>-<context>-As` | `profx-SQL-as` |
+| Tag | Skojarzona jednostka | 512 (nazwa), 256 (wartość) | Bez uwzględniania wielkości liter | Alfanumeryczne | `"Key" : "value"` | `"Department" : "Central IT"` |
 
 # <a name="resource-tags"></a>[Tagi zasobów](#tab/ResourceTags)
 
-Tagi ułatwiają szybkie identyfikowanie zasobów i grup zasobów. Stosowanie tagów do zasobów platformy Azure umożliwia ich logiczne zorganizowanie według kategorii. Każdy tag składa się z nazwy i wartości. Na przykład można zastosować nazwę „Środowisko” i wartość „Produkcyjne” do wszystkich zasobów w środowisku produkcyjnym. Tagi powinny zawierać kontekst dotyczący obciążenia lub aplikacji skojarzonych z zasobem, wymagania operacyjne oraz informacje o własności.
+Tagi ułatwiają szybkie identyfikowanie zasobów i grup zasobów. Stosowanie tagów do zasobów platformy Azure umożliwia ich logiczne zorganizowanie według kategorii. Każdy tag składa się z nazwy i wartości. Na przykład można zastosować nazwę „środowisko” i wartość „produkcyjne” do wszystkich zasobów w środowisku produkcyjnym. Tagi powinny zawierać kontekst dotyczący obciążenia lub aplikacji skojarzonych z zasobem, wymagania operacyjne oraz informacje o własności.
 
 Po zastosowaniu tagów można pobrać wszystkie zasoby w subskrypcji o nazwie i wartości konkretnego tagu. Tagi umożliwiają pobieranie powiązanych zasobów z różnych grup zasobów, które są pomocne w przypadku organizowania zasobów na potrzeby rozliczeń lub zarządzania.
 
 Tagów można używać do wielu innych celów. Najczęstsze zastosowania to:
 
-- **Metadane i dokumentacja:** Administratorzy mogą łatwo wyświetlać szczegółowe informacje o zasobach, z którymi pracują, stosując tag, na przykład „ProjectOwner”.
-- **Automatyzacja:** Można używać regularnie uruchamianych skryptów, które mogą wykonywać akcję w oparciu o wartość tagu, taką jak „ShutdownTime” lub „DeprovisionDate”.
+- **Metadane i dokumentacja:** Administratorzy mogą łatwo wyświetlać szczegółowe informacje o zasobach, z którymi pracują, stosując tag, na przykład `projectowner`.
+- **Automatyzacja:** Można używać regularnie uruchamianych skryptów, które mogą wykonywać akcję w oparciu o wartość tagu, taką jak `shutdowntime` lub `deprovisiondate`.
 - **Optymalizacja kosztów:** Możesz przydzielić zasoby do zespołów i zasobów odpowiedzialnych za koszt. W usłudze Azure Cost Management można zastosować tag centrum kosztów jako filtr, aby uzyskać raport opłat na podstawie użycia zespołu lub działu.
 
 Każdy zasób lub grupa zasobów może mieć co najwyżej 50 par nazw i wartości tagów. To ograniczenie dotyczy tylko tagów stosowanych bezpośrednio do grupy zasobów lub zasobu.
@@ -172,7 +172,7 @@ Aby uzyskać więcej zaleceń i przykładów dotyczących tagowania, zobacz [Zal
 
 Aby zastosować tag do grupy zasobów:
 
-1. Przejdź do pozycji [Grupy zasobów](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups).
+1. Przejdź do [grup zasobów](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups).
 1. Wybierz grupę zasobów.
 1. Wybierz pozycję **Przypisz tagi**.
 1. Wprowadź nową nazwę i wartość lub użyj listy rozwijanej, aby wybrać istniejącą nazwę i wartość.

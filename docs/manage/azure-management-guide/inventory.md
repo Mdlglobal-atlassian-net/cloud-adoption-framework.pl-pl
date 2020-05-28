@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 126699d4d5e8d69f230047f16654d5ccb635a8e2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e6cae79ab54c4b1389f9f74ab291575e16831b38
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216728"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756434"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Spis i widoczność na platformie Azure
 
@@ -48,9 +48,9 @@ Poniższa tabela zawiera sugerowane wartości minimalne planu bazowego zarządza
 
 ::: zone-end
 
-Usługa Azure Service Health udostępnia spersonalizowany widok kondycji usług i regionów platformy Azure. Informacje na temat aktywnych problemów są publikowane w usłudze Service Health, aby ułatwić zrozumienie wpływu na zasoby. Dzięki regularnym aktualizacjom będziesz otrzymywać informacje o rozwiązaniu problemów.
+Usługa Azure Service Health udostępnia spersonalizowany widok kondycji usług i regionów platformy Azure. Informacje na temat aktywnych problemów są publikowane w usłudze Azure Service Health, aby ułatwić zrozumienie wpływu na zasoby. Dzięki regularnym aktualizacjom będziesz otrzymywać informacje o rozwiązaniu problemów.
 
-W usłudze Service Health publikujemy też zdarzenia planowanej konserwacji, aby informować Cię o zmianach, które mogą wpłynąć na dostępność zasobów. Skonfiguruj alerty usługi Service Health, aby otrzymywać powiadomienia, gdy problemy z usługą, planowana konserwacja lub inne zmiany mogą mieć wpływ na usługi i regiony platformy Azure.
+W usłudze Azure Service Health publikujemy też zdarzenia planowanej konserwacji, aby informować Cię o zmianach, które mogą wpłynąć na dostępność zasobów. Skonfiguruj alerty usługi Service Health, aby otrzymywać powiadomienia, gdy problemy z usługą, planowana konserwacja lub inne zmiany mogą mieć wpływ na usługi i regiony platformy Azure.
 
 Usługa Azure Service Health udostępnia następujące dane:
 
@@ -80,11 +80,11 @@ Aby skonfigurować alert usługi Service Health:
 
 ::: zone target="docs"
 
-Aby skonfigurować alert usługi Service Health, przejdź do witryny [Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts).
+Aby skonfigurować alerty usługi Service Health, przejdź do witryny [Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts).
 
 ### <a name="learn-more"></a>Dowiedz się więcej
 
-Aby dowiedzieć się więcej, zapoznaj się z [dokumentacją usługi Azure Service Health](https://docs.microsoft.com/azure/service-health).
+Aby uzyskać więcej informacji, zobacz [Azure Service Health](https://docs.microsoft.com/azure/service-health).
 
 ## <a name="log-analytics"></a>Log Analytics
 
